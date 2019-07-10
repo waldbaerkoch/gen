@@ -1,0 +1,435 @@
+@base <duff.ttl> .
+@prefix gen: <http://jjkoch.de/gen#> .
+@prefix wdata: <https://www.wikidata.org/wiki/> .
+@prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+
+#<#Alexander_Duff_of_Keithmore>
+  # Alexander Duff of Keithmore, 1623 - 1696
+  # oo Helen Grant, 1635 - 1694, daughter of Alexander Grant of Ballentomb
+  []
+    gen:spouse <#Alexander_Duff_of_Keithmore> , <#Helen_Grant> ;
+	gen:startDate "1650" .
+
+<#William_Duff>
+  # William Duff, 1653 - 1722-05-01
+  gen:father <#Alexander_Duff_of_Keithmore> ;
+  gen:mother <#Helen_Grant> .
+  # oo Helen Gordon, daughter of George Gordon of Edinglassie
+  []
+    gen:spouse <#William_Duff> , <#Helen_Gordon> ;
+	gen:startDate "1681" .
+<#Patrick_Duff,_of_Craigston>
+  # Patrick Duff, of Craigston, 1655 - 1731-08-03
+  gen:father <#Alexander_Duff_of_Keithmore> ;
+  gen:mother <#Helen_Grant> .
+  # oo Anne Innes
+  []
+    gen:spouse <#Patrick_Duff,_of_Craigston> , <innes.ttl#Anne_Innes> ;
+	gen:startDate "1687" .
+  # oo Mary Urquhart, d. 1764
+  []
+    gen:spouse <#Patrick_Duff,_of_Craigston> , <#Mary_Urquhart> ;
+	gen:startDate "1701-10-04" .
+
+<#Catherine_Duff>
+  # Catherine Duff, 1683 - 1758-12-20
+  gen:father <#William_Duff> ;
+  gen:mother <#Helen_Gordon> .
+  # oo 1709 Alexander Duff, 1st of Hatton, 1688-01-05 - 1753, #Alexander_Duff,_1st_of_Hatton
+<https://www.wikidata.org/wiki/Q8008060>
+  gen:name "William Duff, 1st Earl Fife"@en ;
+  # 1st Baron Braco of Kilbryde, co. Cavan 1735-07-28
+  # 1st Earl Fife, 1st Viscount MacDuff 1759-04-26
+  gen:birthDate "1697" ;
+  gen:deathDate "1763-09-30" ;
+  gen:father <#William_Duff> ;
+  gen:mother <#Helen_Gordon> .
+  # oo Lady Janet Ogilvy, 1695~ - 1720-12-25
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8008060> , <https://www.wikidata.org/wiki/Q15623951> ;
+	gen:startDate "1719-09-19" .
+  # oo Jean Grant, 1705-09-28 - 1788-01-16
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8008060> , <#Jean_Grant> ;
+	gen:startDate "1723" .
+<#Alexander_Duff,_1st_of_Hatton>
+  # Alexander Duff, 1st of Hatton, 1688-01-05 - 1753
+  gen:father <#Patrick_Duff,_of_Craigston> ;
+  gen:mother <innes.ttl#Anne_Innes> .
+  # oo Catherine Duff, 1683 - 1758-12-20
+  []
+    gen:spouse <#Alexander_Duff,_1st_of_Hatton> , <#Catherine_Duff> ;
+	gen:startDate "1709" .
+<#Jean_Duff_(died_1776)>
+  # Jean Duff, 1696 - 1776-05-23
+  gen:father <#Patrick_Duff,_of_Craigston> ;
+  gen:mother <innes.ttl#Anne_Innes> .
+  # oo 1720-03-30 John Innes, 7th of Edingight, 1692-10 - 1748, innes.ttl#John_Innes,_7th_of_Edingight
+<https://www.wikidata.org/wiki/Q648957>
+  # Robert Duff of Logie and Fetteresso, 1721 - 1787-06-06
+  gen:father <#Patrick_Duff,_of_Craigston> ;
+  gen:mother <#Mary_Urquhart> .
+  # oo Lady Helen Duff, 1739 - 1778-11-20
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q648957> , <#Lady_Helen_Duff> ;
+	gen:startDate "1764" .
+
+<#Lady_Anne_Duff>
+  # Lady Anne Duff, b. 1725 - 1805-06
+  gen:father <https://www.wikidata.org/wiki/Q8008060> ;
+  gen:mother <#Jean_Grant> .
+  # oo 1745 Alexander Duff, 2nd of Hatton, 1718-03-26 - 1764, #Alexander_Duff,_2nd_of_Hatton
+<#Lady_Janet_Duff>
+  # Lady Janet Duff, 1727 - 1758-03-03
+  gen:father <https://www.wikidata.org/wiki/Q8008060> ;
+  gen:mother <#Jean_Grant> .
+  # oo 1745 Sir William Gordon of Park, 3rd Baronet, 1712-04-23 - 1751-06-05, #Sir_William_Gordon_of_Park,_3rd_Baronet
+  # oo 1751a George Hay of Mountblary, 1727~ - 1771-07-02, son of Andrew Hay and Mary Allardice
+<https://www.wikidata.org/wiki/Q6132882>
+  gen:name "James Duff, 2nd Earl Fife"@en ;
+  # 2nd Earl Fife, 2nd Viscount MacDuff, 2nd Baron Braco of Kilbryde, co. Cavan 1763-09-30
+  # 1st Baron of Fife, co. Fife 1790-07-05
+  gen:birthDate "1729-09-29" ;
+  gen:deathDate "1809" ;
+  gen:father <https://www.wikidata.org/wiki/Q8008060> ;
+  gen:mother <#Jean_Grant> .
+  # oo Lady Dorothea Sinclair, 1739-04-04 - 1818-09-30
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6132882> , <#Lady_Dorothea_Sinclair> ;
+	gen:startDate "1759-06-04" .
+<https://www.wikidata.org/wiki/Q4718769>
+  gen:name "Alexander Duff, 3rd Earl Fife"@en ;
+  # 3rd Viscount MacDuff, 3rd Earl Fife, 3rd Baron Braco of Kilbryde, co. Cavan 1809-01-24
+  gen:birthDate "1731" ;
+  gen:deathDate "1811-04-17" ;
+  gen:father <https://www.wikidata.org/wiki/Q8008060> ;
+  gen:mother <#Jean_Grant> .
+  # oo Mary Skene, daughter of George Skene, 18th of Skene
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4718769> , <#Mary_Skene> ;
+	gen:startDate "1775-08-17" .
+<#Lady_Helen_Duff>
+  # Lady Helen Duff, 1739 - 1778-11-20
+  gen:father <https://www.wikidata.org/wiki/Q8008060> ;
+  gen:mother <#Jean_Grant> .
+  # oo 1764 Robert Duff of Logie and Fetteresso, 1721 - 1787-06-06, https://www.wikidata.org/wiki/Q648957
+<https://www.wikidata.org/wiki/Q17308981>
+  # Hon. Arthur Duff, 1743 - 1805-06-02
+  gen:father <https://www.wikidata.org/wiki/Q8008060> ;
+  gen:mother <#Jean_Grant> .
+<#Alexander_Duff,_2nd_of_Hatton>
+  # Alexander Duff, 2nd of Hatton, 1718-03-26 - 1764
+  gen:father <#Alexander_Duff,_1st_of_Hatton> ;
+  gen:mother <#Catherine_Duff> .
+  # oo Lady Anne Duff, b. 1725 - 1805-06
+  []
+    gen:spouse <#Alexander_Duff,_2nd_of_Hatton> , <#Lady_Anne_Duff> ;
+	gen:startDate "1745" .
+
+<https://www.wikidata.org/wiki/Q6132886>
+  # Sir James Duff, 1755~ - 1839-12-05
+  gen:father <https://www.wikidata.org/wiki/Q6132882> ;
+  gen:mother <#Margaret_Adam> .
+  # oo Basilia Dawes, d. 1849-05-28, daughter of James Dawes
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6132886> , <#Basilia_Dawes> ;
+	gen:startDate "1785-08-12" .
+<https://www.wikidata.org/wiki/Q6132888>
+  gen:name "James Duff, 4th Earl Fife"@en ;
+  gen:birthDate "1776-10-06" ;
+  gen:deathDate "1857-03-09" ;
+  # 3rd Baron Braco of Kilbryde, co. Cavan, 4th Earl Fife, 4th Viscount MacDuff 1811-04-17
+  # 1st Baron Fife, co. Fife 1827-04-27
+  gen:father <https://www.wikidata.org/wiki/Q4718769> ;
+  gen:mother <#Mary_Skene> .
+  # oo Lady Maria Caroline Manners, 1775 - 1805-12-20
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6132888> , <https://www.wikidata.org/wiki/Q15623948> ;
+	gen:startDate "1799-09-09" .
+<https://www.wikidata.org/wiki/Q4718772>
+  gen:name "Hon. Sir Alexander Duff"@en ;
+  gen:birthDate "1777" ;
+  gen:deathDate "1851-03-21" ;
+  gen:father <https://www.wikidata.org/wiki/Q4718769> ;
+  gen:mother <#Mary_Skene> .
+  # oo Anne Stein, 1789~ - 1859-02-14, daughter of James Stein of Kilbagie
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4718772> , <#Anne_Stein> ;
+	gen:startDate "1812-03-16" .
+<#Jean_Duff_(died_1805)>
+  # Jean Duff, 1746 - 1805-02-15
+  gen:father <#Alexander_Duff,_2nd_of_Hatton> ;
+  gen:mother <#Lady_Anne_Duff> .
+  # oo 1763-01-04 Sir James Grant of Grant, 8th Baronet, 1738-05-19 - 1811-02-18, https://www.wikidata.org/wiki/Q7527429
+
+<#Sir_James_Duff>
+  # Sir James Duff, of Kinstair, 1804-01-24 - 1837-02-10
+  gen:father <https://www.wikidata.org/wiki/Q6132886> ;
+  gen:mother <#Basilia_Dawes> .
+  # oo Elizabeth Charlotte Prescott, d. 1840-12-31
+  []
+    gen:spouse <#Sir_James_Duff> , <gordon.ttl#Elizabeth_Charlotte_Prescott> ;
+	gen:startDate "1827-02-22" .
+<#Eliza_Georgiana_Duff>
+  # Eliza Georgiana Duff, 1829-02-02 - 1918-08-04
+  gen:father <#Sir_James_Duff> ;
+  gen:mother <gordon.ttl#Elizabeth_Charlotte_Prescott> .
+  # oo 1850-01-17 John Tollemache, 1st Baron Tollemache of Helmingham, 1805-12-07 - 1890-12-09, https://www.wikidata.org/wiki/Q6260980
+<https://www.wikidata.org/wiki/Q11309157>
+  gen:name "James Duff, 5th Earl Fife"@en ;
+  gen:birthDate "1814-07-06" ;
+  gen:deathDate "1879-08-07" ;
+  gen:father <https://www.wikidata.org/wiki/Q4718772> ;
+  gen:mother <#Anne_Stein> .
+  # oo Lady Agnes Georgiana Elizabeth Hay, 1829-05-12 - 1869-12-18
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q11309157> , <https://www.wikidata.org/wiki/Q4693031> ;
+	gen:startDate "1846-03-16" .
+<https://www.wikidata.org/wiki/Q5544593>
+  # Hon. George Skene Duff, 1816-09-13 - 1889-03-12
+  gen:father <https://www.wikidata.org/wiki/Q4718772> ;
+  gen:mother <#Anne_Stein> .
+<#Lady_Louisa_Tollemache_Duff>
+  # Lady Louisa Tollemache Duff, 1824~ - 1864-09-23
+  gen:father <https://www.wikidata.org/wiki/Q4718772> ;
+  gen:mother <#Anne_Stein> .
+  # oo 1848-12-12 Sir Richard Brooke, 7th Baronet, 1814-12-13 - 1888-03-03, egerton.ttl#Sir_Richard_Brooke,_7th_Baronet
+
+<https://www.wikidata.org/wiki/Q64339284>
+  # Lady Anne Elizabeth Clementina Duff, 1847-08-16 - 1925-12-31
+  gen:father <https://www.wikidata.org/wiki/Q11309157> ;
+  gen:mother <https://www.wikidata.org/wiki/Q4693031> .
+  # oo 1865-10-17 John Villiers Stuart Townshend, 5th Marquess Townshend of Raynham, 1831-04-10 - 1899-10-26, https://www.wikidata.org/wiki/Q6261098
+<https://www.wikidata.org/wiki/Q332552>
+  gen:name "Alexander William George Duff, 1st Duke of Fife"@en ;
+  # 6th Baron Braco of Kilbryde, co. Cavan, 6th Earl Fife, 6th Viscount MacDuff 1879-08-07
+  # 1st Earl of Fife 1885-07-13
+  # 1st Duke of Fife 1889-07-29
+  # 1st Duke of Fife, 1st Earl of Macduff, co. Banff 1900-04-24
+  gen:birthDate "1849-11-10" ;
+  gen:deathDate "1912-01-29" ;
+  gen:father <https://www.wikidata.org/wiki/Q11309157> ;
+  gen:mother <https://www.wikidata.org/wiki/Q4693031> .
+  # oo Louise Victoria Alexandra Dagmar Saxe-Coburg and Gotha, Princess Royal of the United Kingdom, 1867-02-20 - 1931-01-04
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q332552> , <https://www.wikidata.org/wiki/Q233516> ;
+	gen:startDate "1889-07-27" .
+<#Lady_Alexina_Duff>
+  # Lady Alexina Duff, 1851-03-20 - 1882-04-30
+  gen:father <https://www.wikidata.org/wiki/Q11309157> ;
+  gen:mother <https://www.wikidata.org/wiki/Q4693031> .
+  # oo 1870-07-02 Henry Aubrey Coventry, 1845-10-10 - 1909-05-13, coventry.ttl#Henry_Aubrey_Coventry
+<#Lady_Agnes_Cecil_Emmeline_Duff>
+  # Lady Agnes Cecil Emmeline Duff, 1852-05-18 - 1925-01-11
+  gen:father <https://www.wikidata.org/wiki/Q11309157> ;
+  gen:mother <https://www.wikidata.org/wiki/Q4693031> .
+  # oo 1871-10-04 George Robert Hay-Drummond, Viscount Dupplin, 1849-05-27 - 1886-03-10, hay.ttl#George_Hay-Drummond,_Viscount_Dupplin
+  # oo 1876-08-05 Herbert Flower, 1853 - 1881-12-30, son of Philip William Flower and Mary Flower
+  # oo 1882-07-04 Sir Alfred Cooper, 1838-01-28 - 1908-03-03, https://www.wikidata.org/wiki/Q4722478
+
+<https://www.wikidata.org/wiki/Q255953>
+  gen:name "Alexandra Victoria Alberta Edwina Louise Duff, 2nd Duchess of Fife"@en ;
+  gen:birthDate "1891-05-17" ;
+  gen:deathDate "1959-02-26" ;
+  gen:father <https://www.wikidata.org/wiki/Q332552> ;
+  gen:mother <https://www.wikidata.org/wiki/Q233516> .
+  # oo 1913-10-15 Arthur Frederick Patrick Albert Windsor, Prince of Connaught, 1883-01-13 - 1938-09-12, https://www.wikidata.org/wiki/Q519332
+<https://www.wikidata.org/wiki/Q439167>
+  gen:name "Maud Alexandra Victoria Georgina Bertha Duff, Princess of Great Britain and Ireland"@en ;
+  gen:birthDate "1893-04-03" ;
+  gen:deathDate "1945-12-14" ;
+  gen:father <https://www.wikidata.org/wiki/Q332552> ;
+  gen:mother <https://www.wikidata.org/wiki/Q233516> .
+  # oo 1923-11-12 Charles Alexander Carnegie, 11th Earl of Southesk, 1893-09-23 - 1992-02-16, https://www.wikidata.org/wiki/Q3271148
+
+
+# ----
+<https://www.wikidata.org/wiki/Q15623951>
+  # Lady Janet Ogilvy, 1695~ - 1720-12-25
+  gen:father <https://www.wikidata.org/wiki/Q336713> .
+  # and Anne Dunbar
+  # oo 1719-09-19 William Duff, 1st Earl Fife, 1697 - 1763-09-30, https://www.wikidata.org/wiki/Q8008060
+
+# ----
+<#Jean_Grant>
+  # Jean Grant, 1705-09-28 - 1788-01-16
+  gen:father <https://www.wikidata.org/wiki/Q28962171> .
+  # and Anne Colquhoun
+  # oo 1723 William Duff, 1st Earl Fife, 1697 - 1763-09-30, https://www.wikidata.org/wiki/Q8008060
+
+# ----
+#<#Sir_John_Gordon_of_Park,_1st_Baronet>
+  # Sir John Gordon of Park, 1st Baronet, d. 1713-02
+  # 1st Baronet Gordon, of Park, co. Banff 1686-08-21
+  # son of Sir John Gordon, 2nd of Park
+  # and Helen Sibbald
+  # oo Lady Helen Ogilvy, b. 1650b
+  []
+    gen:spouse <#Sir_John_Gordon_of_Park,_1st_Baronet> , <#Lady_Helen_Ogilvy> ;
+	gen:startDate "1686-03-03" .
+
+<#Sir_James_Gordon_of_Park,_2nd_Baronet>
+  # Sir James Gordon of Park, 2nd Baronet, 1680~ - 1727-12-15
+  gen:father <#Sir_John_Gordon_of_Park,_1st_Baronet> ;
+  gen:mother <#Lady_Helen_Ogilvy> .
+  # oo Hon. Helen Fraser
+  []
+    gen:spouse <#Sir_James_Gordon_of_Park,_2nd_Baronet> , <fraser.ttl#Helen_Fraser> ;
+	gen:startDate "1709" .
+
+<#Sir_William_Gordon_of_Park,_3rd_Baronet>
+  # Sir William Gordon of Park, 3rd Baronet, 1712-04-23 - 1751-06-05
+  gen:father <#Sir_James_Gordon_of_Park,_2nd_Baronet> ;
+  gen:mother <fraser.ttl#Helen_Fraser> .
+  # oo Lady Janet Duff, 1727 - 1758-03-03
+  []
+    gen:spouse <#Sir_William_Gordon_of_Park,_3rd_Baronet> , <#Lady_Janet_Duff> ;
+	gen:startDate "1745" .
+# ----
+<#Lady_Helen_Ogilvy>
+  # Lady Helen Ogilvy, b. 1650b
+  gen:father <https://www.wikidata.org/wiki/Q18529901> .
+  # and Helen Ogilvy
+  # oo 1686-03-03 Sir John Gordon of Park, 1st Baronet, d. 1713-02, #Sir_John_Gordon_of_Park,_1st_Baronet
+
+# ----
+<#John_Sinclair,_Master_of_Caithness>
+  # John Sinclair, Master of Caithness, 1543~ - 1575-09
+  gen:father <https://www.wikidata.org/wiki/Q18527593> ;
+  gen:mother <graham.ttl#Lady_Elizabeth_Graham_(died_1576)> .
+  # oo Lady Jean Hepburn, d. 1599-07-27b
+  []
+    gen:spouse <#John_Sinclair,_Master_of_Caithness> , <https://www.wikidata.org/wiki/Q6170833> ;
+	gen:startDate "1566~" .
+
+<#Sir_James_Sinclair>
+  # Sir James Sinclair, b. 1567a
+  gen:father <#John_Sinclair,_Master_of_Caithness> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6170833> .
+  # oo Elizabeth Stewart
+  []
+    gen:spouse <#Sir_James_Sinclair> , <stuart.ttl#Elizabeth_Stewart_of_Orkney> .
+
+<#Sir_James_Sinclair,_2nd_of_Murkle>
+  # Sir James Sinclair, 2nd of Murkle, b. 1598
+  gen:father <#Sir_James_Sinclair> ;
+  gen:mother <stuart.ttl#Elizabeth_Stewart_of_Orkney> .
+  # oo Jean Stewart, 1623 - 1662-10-22
+  []
+    gen:spouse <#Sir_James_Sinclair,_2nd_of_Murkle> , <#Jean_Stewart> ;
+	gen:startDate "1640~" .
+
+<#John_Sinclair,_8th_Earl_of_Caithness>
+  # John Sinclair, 8th Earl of Caithness, d. 1705
+  # 8th Earl of Caithness 1698
+  gen:father <#Sir_James_Sinclair,_2nd_of_Murkle> ;
+  gen:mother <#Jean_Stewart> .
+  # oo Jean Carmichael
+
+<#Alexander_Sinclair,_9th_Earl_of_Caithness>
+  # Alexander Sinclair, 9th Earl of Caithness, 1684~ - 1765-12-09
+  gen:father <#John_Sinclair,_8th_Earl_of_Caithness> .
+  # and Jean Carmichael
+  # oo Lady Margaret Primrose, d. 1785-10-07
+  []
+    gen:spouse <#Alexander_Sinclair,_9th_Earl_of_Caithness> , <#Lady_Margaret_Primrose> ;
+	gen:startDate "1738-02-15" .
+
+<#Lady_Dorothea_Sinclair>
+  # Lady Dorothea Sinclair, 1739-04-04 - 1818-09-30
+  gen:father <#Alexander_Sinclair,_9th_Earl_of_Caithness> ;
+  gen:mother <#Lady_Margaret_Primrose> .
+  # oo 1759-06-04 James Duff, 2nd Earl Fife, 1729-09-29 - 1809, https://www.wikidata.org/wiki/Q6132882
+# ----
+<https://www.wikidata.org/wiki/Q6170833>
+  # Lady Jean Hepburn, d. 1599-07-27b
+  gen:father <https://www.wikidata.org/wiki/Q4497272> .
+  # and Agnes Sinclair
+  # oo 1566~ 
+# ----
+#<#William_Stewart,_of_Burray>
+  # William Stewart of Burray
+  # son of Sir Alexander Stewart, 6th of Garlies
+  # and Christian Douglas
+  # oo Barbara Stewart, daughter of James Stewart, of Burray and Janet MacLeod
+
+<#Jean_Stewart>
+  # Jean Stewart, 1623 - 1662-10-22
+  gen:father <#William_Stewart,_of_Burray> .
+  # and Barbara Stewart
+  # oo 1640~ Sir James Sinclair, 2nd of Murkle, b. 1598, #Sir_James_Sinclair,_2nd_of_Murkle
+# ----
+<https://www.wikidata.org/wiki/Q4786478>
+  # Archibald Primrose, 1st Earl of Rosebery, 1664-12-18 - 1723-10-20
+  # 1st Viscount of Rosebery, 1st Lord Primrose and Dalmeny 1700-04-01
+  # 1st Earl of Rosebery, 1st Viscount of Inverkeithing, 1st Lord Dalmeny and Primrose 1703-04-10
+  gen:father <https://www.wikidata.org/wiki/Q4786481> .
+  # and Agnes Gray
+  # oo Dorothea Cressy, daughter of Everingham Cressy
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4786478> , <#Dorothea_Cressy> ;
+	gen:startDate "1691-02-03" .
+
+<#Lady_Margaret_Primrose>
+  # Lady Margaret Primrose, d. 1785-10-07
+  gen:father <https://www.wikidata.org/wiki/Q4786478> ;
+  gen:mother <#Dorothea_Cressy> .
+  # oo 1738-02-15 Alexander Sinclair, 9th Earl of Caithness, 1684~ - 1765-12-09, #Alexander_Sinclair,_9th_Earl_of_Caithness
+
+# ----
+#<https://www.wikidata.org/wiki/Q15623957>
+  # Sir Ludovick Grant of Grant, 7th Baronet, 1707-01-13 - 1773-03-18
+  # oo Lady Margaret Ogilvy, d. 1757-02-20
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q15623957> , <hope.ttl#Lady_Margaret_Ogilvy> ;
+	gen:startDate "1735-10-31" .
+
+<https://www.wikidata.org/wiki/Q7527429>
+  # Sir James Grant of Grant, 8th Baronet, 1738-05-19 - 1811-02-18
+  gen:father <https://www.wikidata.org/wiki/Q15623957> ;
+  gen:mother <hope.ttl#Lady_Margaret_Ogilvy> .
+  # oo Jean Duff, 1746 - 1805-02-15
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7527429> , <#Jean_Duff_(died_1805)> ;
+	gen:startDate "1763-01-04" .
+
+# ----
+<https://www.wikidata.org/wiki/Q6261098>
+  # John Villiers Stuart Townshend, 5th Marquess Townshend of Raynham, 1831-04-10 - 1899-10-26
+  gen:father <https://www.wikidata.org/wiki/Q15725713> .
+  # and Elizabeth Jane Stuart
+  # oo Lady Anne Elizabeth Clementina Duff, 1847-08-16 - 1925-12-31
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6261098> , <https://www.wikidata.org/wiki/Q64339284> ;
+	gen:startDate "1865-10-17" .
+
+# ----
+<https://www.wikidata.org/wiki/Q233516>
+  # Louise Victoria Alexandra Dagmar Saxe-Coburg and Gotha, Princess Royal of the United Kingdom, 1867-02-20 - 1931-01-04
+  gen:father <https://www.wikidata.org/wiki/Q20875> ;
+  gen:mother <https://www.wikidata.org/wiki/Q152260> .
+  # oo 1889-07-27 Alexander William George Duff, 1st Duke of Fife, 1848-11-10 - 1912-01-29, https://www.wikidata.org/wiki/Q332552
+
+# ----
+<https://www.wikidata.org/wiki/Q519332>
+  gen:name "Arthur Frederick Patrick Albert Windsor, Prince of Connaught"@en ;
+  gen:birthDate "1883-01-13" ;
+  gen:deathDate "1938-09-12" ;
+  gen:father <https://www.wikidata.org/wiki/Q160558> ;
+  gen:mother <https://www.wikidata.org/wiki/Q235435> .
+  # oo Alexandra Victoria Alberta Edwina Louise Duff, 2nd Duchess of Fife, 1891-05-17 - 1959-02-26
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q519332> , <https://www.wikidata.org/wiki/Q255953> ;
+	gen:startDate "1913-10-15" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q4722478>
+  # Sir Alfred Cooper, 1838-01-28 - 1908-03-03
+  # son of William Cooper
+  # and Anna Marsh
+  # oo Lady Agnes Cecil Emmeline Duff, 1852-05-18 - 1925-01-11
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4722478> , <#Lady_Agnes_Cecil_Emmeline_Duff> ;
+	gen:startDate "1882-07-04" .
+
+# ----

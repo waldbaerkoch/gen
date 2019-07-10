@@ -1,0 +1,904 @@
+@base <elphinstone.ttl> .
+@prefix gen: <http://jjkoch.de/gen#> .
+@prefix wdata: <https://www.wikidata.org/wiki/> .
+@prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+
+#<#Sir_William_Elphinstone_of_that_Ilk>
+  # Sir William Elphinstone of that Ilk
+
+<#Sir_Henry_Elphinstone_of_Pittendriech>
+  # Sir Henry Elphinstone of Pittendriech, d. 1496b
+  gen:father <#Sir_William_Elphinstone_of_that_Ilk> .
+
+<#James_Elphinstone_of_Pittendriech,_younger>
+  # James Elphinstone of Pittendriech, younger
+  gen:father <#Sir_Henry_Elphinstone_of_Pittendriech> .
+<#Laurence_Elphinstone_of_Selmys> # ->
+  # Laurence Elphinstone of Selmys
+  gen:father <#Sir_Henry_Elphinstone_of_Pittendriech> .
+<#John_Elphinstone_(died_1488)> # -> 
+  # John Elphinstone, d. 1488-06-11
+  gen:father <#Sir_Henry_Elphinstone_of_Pittendriech> .
+
+<#John_Elphinstone_of_that_Ilk_and_of_Pittendriech>
+  # John Elphinstone of that Ilk and of Pittendriech, d. 1508-07a
+  gen:father <#James_Elphinstone_of_Pittendriech,_younger> .
+
+<https://www.wikidata.org/wiki/Q4718804>
+  # Alexander Elphinstone, 1st Lord Elphinstone, d. 1513-09-09
+  # 1st Lord Elphinstone 1509/1510-01-14
+  gen:father <#John_Elphinstone_of_that_Ilk_and_of_Pittendriech> .
+  # oo Elizabeth Barlow, d. 1518
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4718804> , <https://www.wikidata.org/wiki/Q21175599> ;
+	gen:startDate "1507b" .
+
+<https://www.wikidata.org/wiki/Q50823926>
+  # Alexander Elphinstone, 2nd Lord Elphinstone, 1510-05-22 - 1547-09-10
+  gen:father <https://www.wikidata.org/wiki/Q4718804> ;
+  gen:mother <https://www.wikidata.org/wiki/Q21175599> .
+  # oo Katherine Erskine, daughter of https://www.wikidata.org/wiki/Q6231896 and campbell.ttl#Margaret_Campbell,_Lady_Erskine
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q50823926> , <https://www.wikidata.org/wiki/Q50823920> ;
+	gen:startDate "1525-11-20" .
+<https://www.wikidata.org/wiki/Q7272957>
+  # Euphemia Elphinstone, 1509-05-11 - 1542
+  # Mistress of James V of Scotland, 1512-04-10 - 1542-12-14, https://www.wikidata.org/wiki/Q137814
+  gen:father <https://www.wikidata.org/wiki/Q4718804> ;
+  gen:mother <https://www.wikidata.org/wiki/Q21175599> .
+  # oo John Bruce, 3rd of Cultmalundy, son of Lucas Bruce, 2nd of Cultmalundy and Christian Ruthven
+
+<https://www.wikidata.org/wiki/Q50823981>
+  # Robert Elphinstone, 3rd Lord Elphinstone, 1530-09-09 - 1602-05-18
+  gen:father <https://www.wikidata.org/wiki/Q50823926> ;
+  gen:mother <https://www.wikidata.org/wiki/Q50823920> .
+  # oo Margaret Drummond
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q50823981> , <drummond.ttl#Margaret_Drummond_2> ;
+	gen:startDate "1546" .
+<#James_Elphinstone_(died_1599a)>
+  # James Elphinstone, 1538-07-12 - 1599a
+  gen:father <https://www.wikidata.org/wiki/Q50823926> ;
+  gen:mother <https://www.wikidata.org/wiki/Q50823920> .
+  # oo Lady Janet Leslie, d. 1591-12-17, daughter of https://www.wikidata.org/wiki/Q5541686 and Agnes Somerville
+  []
+    gen:spouse <#James_Elphinstone_(died_1599a)> , <leslie.ttl#Lady_Janet_Leslie> ;
+	gen:startDate "1589-06-10" .
+
+<#Elizabeth_Elphinstone_(died_1613)>
+  # Elizabeth Elphinstone, d. 1613-02-26
+  gen:father <https://www.wikidata.org/wiki/Q50823981> ;
+  gen:mother <drummond.ttl#Margaret_Drummond_2> .
+  # oo 1582-10-01 Robert Innes of that Ilk, 1562-04~ - 1596-09-25, innes.ttl#Robert_Innes_of_that_Ilk
+<https://www.wikidata.org/wiki/Q18575906>
+  # Alexander Elphinstone, 4th Lord Elphinstone, 1552-05-28 - 1637/1638-01-14
+  gen:father <https://www.wikidata.org/wiki/Q50823981> ;
+  gen:mother <drummond.ttl#Margaret_Drummond_2> .
+  # oo Jean Livingstone, d. 1621-09-15, daughter of https://www.wikidata.org/wiki/Q8014621 and https://www.wikidata.org/wiki/Q50823884
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q18575906> , <#Jean_Livingstone> ;
+	gen:startDate "1575-04-10" .
+<https://www.wikidata.org/wiki/Q6133453> # -> Lord Balmerinoch
+  # Sir James Elphinstone, 1st Lord Balmerinoch, 1557-08-19 - 1612-05
+  gen:father <https://www.wikidata.org/wiki/Q50823981> ;
+  gen:mother <drummond.ttl#Margaret_Drummond_2> .
+<#Agnes_Elphinstone_(born_1559)>
+  # Agnes Elphinstone, b. 1559-10-03
+  gen:father <https://www.wikidata.org/wiki/Q50823981> ;
+  gen:mother <drummond.ttl#Margaret_Drummond_2> .
+  # oo Walter Ogilvy, 1st Lord Ogilvy of Deskford, d. 1625-07-06a/1627-02-14b
+
+<https://www.wikidata.org/wiki/Q53870099>
+  # Alexander Elphinstone, 5th Lord Elphinstone, 1577-11-13 - 1648-08-27
+  gen:father <https://www.wikidata.org/wiki/Q18575906> ;
+  gen:mother <#Jean_Livingstone> .
+  # oo Elizabeth Drummond, 1581 - 1637-12-01
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q53870099> , <drummond.ttl#Elizabeth_Drummond_(died_1637)> ;
+	gen:startDate "1607-04-28" .
+<#Agnes_Elphinstone_(died_1617)>
+  # Agnes Elphinstone, 1579-10-27 - 1617-09-18
+  gen:father <https://www.wikidata.org/wiki/Q18575906> ;
+  gen:mother <#Jean_Livingstone> .
+  # oo 1600-02-01 John Gordon, 13th of Sutherland, 1575-07-20 - 1615-09-11, gordon.ttl#John_Gordon,_13th_Earl_of_Sutherland
+<#James_Elphinstone_(died_1628)>
+  # James Elphinstone, 1580-11-20 - 1628-05-06b
+  gen:father <https://www.wikidata.org/wiki/Q18575906> ;
+  gen:mother <#Jean_Livingstone> .
+  # oo Margaret Forbes, daughter of John Forbes of Brux
+  []
+    gen:spouse <#James_Elphinstone_(died_1628)> , <#Margaret_Forbes> ;
+	gen:startDate "1625-09-15b" .
+<#Jean_Elphinstone_(died_1628b)>
+  # Jean Elphinstone, 1582-02-17 - 1628n
+  gen:father <https://www.wikidata.org/wiki/Q18575906> ;
+  gen:mother <#Jean_Livingstone> .
+  # oo 1600-02-01 Arthur Forbes, 9th Lord Forbes, 1581-04-25 - 1641
+
+<#Lilias_Elphinstone>
+  # Lilias Elphinstone
+  gen:father <https://www.wikidata.org/wiki/Q53870099> ;
+  gen:mother <#Elizabeth_Drummond_(died_1637)> .
+  # oo Alexander Elphinstone, 6th Lord Elphinstone, d. 1654-10-26, #Alexander_Elphinstone,_6th_Lord_Elphinstone
+<#Alexander_Elphinstone,_6th_Lord_Elphinstone>
+  # Alexander Elphinstone, 6th Lord Elphinstone, d. 1654-10-26
+  gen:father <#James_Elphinstone_(died_1628)> ;
+  gen:mother <#Margaret_Forbes> .
+  []
+    gen:spouse <#Alexander_Elphinstone,_6th_Lord_Elphinstone> , <#Lilias_Elphinstone> .
+
+<#Alexander_Elphinstone,_7th_Lord_Elphinstone>
+  # Alexander Elphinstone, 7th Lord Elphinstone, 1649b - May 1669-05
+  gen:father <#Alexander_Elphinstone,_6th_Lord_Elphinstone> ;
+  gen:mother <#Lilias_Elphinstone> .
+  # oo Anne Burnet, daughter of Alexander Burnet
+  []
+    gen:spouse <#Alexander_Elphinstone,_7th_Lord_Elphinstone> , <#Anne_Burnet> ;
+	gen:startDate "1667-09-10" .
+<#John_Elphinstone,_8th_Lord_Elphinstone>
+  # John Elphinstone, 8th Lord Elphinstone, 1649-08-28 - 1718-03-24
+  gen:father <#Alexander_Elphinstone,_6th_Lord_Elphinstone> ;
+  gen:mother <#Lilias_Elphinstone> .
+  # oo Isabel Maitland, 1655 - 1706-10-07, daughter of https://www.wikidata.org/wiki/Q5080596 and Elizabeth Lauder
+  []
+    gen:spouse <#John_Elphinstone,_8th_Lord_Elphinstone> , <#Isabel_Maitland> ;
+	gen:startDate "1670-04-23" .
+
+<#Elizabeth_Elphinstone_(died_1758)>
+  # Elizabeth Elphinstone, 1673-05-24 - 1758-04-13
+  gen:father <#John_Elphinstone,_8th_Lord_Elphinstone> ;
+  gen:mother <#Isabel_Maitland> .
+  # oo 1692 Hon. John Campbell of Mamore, 1660~ - 1729-04-09, https://www.wikidata.org/wiki/Q6224993
+<#Charles_Elphinstone,_9th_Lord_Elphinstone>
+  # Charles Elphinstone, 9th Lord Elphinstone, 1682-04-14 - 1757-02-20
+  gen:father <#John_Elphinstone,_8th_Lord_Elphinstone> ;
+  gen:mother <#Isabel_Maitland> .
+  # oo Elizabeth Primrose, d. 1738-02-18, daughter of Sir William Primrose of Carrington, 2nd Baronet (1649-01-14 - 1687-09-23, son of Sir Archibald Primrose, 1st Baronet, Lord Carrington (1st Baronet Primrose, of Carrington 1651-08-01, 1616-05-16 – 1679-11-27, https://www.wikidata.org/wiki/Q4786481) and oo 1641b Elizabeth Keith (daughter of Sir James Keith of Benholme and Margaret Lindsay)) and 1677b Mary Scott (daughter of Patrick Scott)
+  []
+    gen:spouse <#Charles_Elphinstone,_9th_Lord_Elphinstone> , <#Elizabeth_Primrose> ;
+	gen:startDate "1702-09-12" .
+
+<#Charles_Elphinstone,_10th_Lord_Elphinstone>
+  # Charles Elphinstone, 10th Lord Elphinstone, d. 1781-04-02
+  gen:father <#Charles_Elphinstone,_9th_Lord_Elphinstone> ;
+  gen:mother <#Elizabeth_Primrose> .
+  # oo Lady Clementina Fleming, 1719~ - 1799-01-01, daughter of John Fleming, 6th Earl of Wigton and Lady Mary Keith)
+  []
+    gen:spouse <#Charles_Elphinstone,_10th_Lord_Elphinstone> , <#Lady_Clementina_Fleming> ;
+	gen:startDate "1735" .
+<#Primrose_Elphinstone>
+  # Primrose Elphinstone, d. 1759-12-18
+  gen:father <#Charles_Elphinstone,_9th_Lord_Elphinstone> ;
+  gen:mother <#Elizabeth_Primrose> .
+  # oo 1757 Rev. Alexander Home, 9th Earl of Home, d. 1786-10-08, https://www.wikidata.org/wiki/Q23613881
+
+<#Clementina_Elphinstone>
+  gen:name "Hon. Clementina Elphinstone"@en ;
+  gen:birthDate "1749-08-28" ;
+  gen:deathDate "1822-08-31" ;
+  gen:father <#Charles_Elphinstone,_10th_Lord_Elphinstone> ;
+  gen:mother <#Lady_Clementina_Fleming> .
+  # oo 1785-03-31 James Drummond, 1st Lord Drummond, Baron Drummond, 1744-02-12 - 1800-07-02, https://www.wikidata.org/wiki/Q6132841
+<https://www.wikidata.org/wiki/Q27151328>
+  # John Elphinstone, 11th Lord Elphinstone, 1737-01 - 1794-08-19
+  gen:father <#Charles_Elphinstone,_10th_Lord_Elphinstone> ;
+  gen:mother <#Lady_Clementina_Fleming> .
+  # oo Anne Ruthven, 1737-10-03 - 1801-10-28, daughter of James Ruthven, 5th Lord Ruthven of Freeland (d. 1783-07-03, son of Colonel James Ruthven of Graitney and Isabel Ruthven, Lady Ruthven of Freeland) and oo 1736-07 Lady Anne Stuart (d. 1786-11-28, daughter of https://www.wikidata.org/wiki/Q245654 and campbell.ttl#Lady_Anne_Campbell_(died_1736))
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q27151328> , <#Anne_Ruthven> ;
+	gen:startDate "1764" .
+<https://www.wikidata.org/wiki/Q44815723>
+  # Hon. William Fullerton Elphinstone, 1740-09-13 – 1834-05-03
+  gen:father <#Charles_Elphinstone,_10th_Lord_Elphinstone> ;
+  gen:mother <#Lady_Clementina_Fleming> .
+  # oo Elizabeth Fullerton, d. 1834-05-03, daughter of William Fullerton
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q44815723> , <#Elizabeth_Fullerton> ;
+	gen:startDate "1774-06-24" .
+<https://www.wikidata.org/wiki/Q337525>
+  # George Keith Elphinstone, 1st Viscount Keith, 1746-01-07 – 1823-03-10
+  # 1st Baron Keith, of Stonehaven Marischal 1797-03-16
+  # 1st Baron Keith, of Stonehaven Marischal, co. Kincardine 1801-12-18
+  # 1st Baron Keith, of Banheath, co. Dumbarton 1803-09-17
+  # 1st Viscount Keith 1814-06-01
+  gen:father <#Charles_Elphinstone,_10th_Lord_Elphinstone> ;
+  gen:mother <#Lady_Clementina_Fleming> .
+  # oo Jane Mercer, d. 1789-12-12
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q337525> , <murray.ttl#Jane_Mercer> ;
+	gen:startDate "1787-04-09" .
+  # oo Hester Maria Thrale, 1764-09-17 - 1857-03-31
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q337525> , <https://www.wikidata.org/wiki/Q5746326> ;
+	gen:startDate "1808-01-10" .
+<#Eleanor_Elphinstone>
+  # Hon. Eleanor Elphinstone, 1749 - 1800-02-04
+  gen:father <#Charles_Elphinstone,_10th_Lord_Elphinstone> ;
+  gen:mother <#Lady_Clementina_Fleming> .
+  # oo 1777-05-07 Rt. Hon. William Adam of Blair, 1751-08-02 - 1839-02-17, https://www.wikidata.org/wiki/Q8004134
+
+<#Keith_Elphinstone>
+  # Hon. Keith Elphinstone, d. 1841-08-04
+  gen:father <https://www.wikidata.org/wiki/Q27151328> ;
+  gen:mother <#Anne_Ruthven> .
+  # oo 1803-09-05 David Erskine, 1772-01-10 - 1847-11-28, erskine.ttl#David_Erskine_(died_1847)
+<https://www.wikidata.org/wiki/Q27151330>
+  # John Elphinstone, 12th Lord Elphinstone, 1764 - 1813-05-02
+  gen:father <https://www.wikidata.org/wiki/Q27151328> ;
+  gen:mother <#Anne_Ruthven> .
+  # oo Janet Hyndford Elliot, d. 1825-08-23, daughter of Cornelius Elliot of Woolflee
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q27151330> , <#Janet_Hyndford_Elliot> ;
+	gen:startDate "1806-07-31" .
+<https://www.wikidata.org/wiki/Q5077380>
+  # Hon. Charles Elphinstone-Fleeming, 1774-06-18 - 1840-10-30
+  gen:father <https://www.wikidata.org/wiki/Q27151328> ;
+  gen:mother <#Anne_Ruthven> .
+  # oo Doña Catalina Paulina Alesandro de Jiminez
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5077380> , <#Doña_Catalina_Paulina_Alesandro_de_Jiminez> ;
+	gen:startDate "1816-06" .
+<https://www.wikidata.org/wiki/Q910933>
+  # Hon. Mountstuart Elphinstone, 1779-10-06 - 1859-11-29
+  gen:father <https://www.wikidata.org/wiki/Q27151328> ;
+  gen:mother <#Anne_Ruthven> .
+<https://www.wikidata.org/wiki/Q376848>
+  # William George Keith Fullerton-Elphinstone, 1782 – 1842-04-24
+  gen:father <https://www.wikidata.org/wiki/Q44815723> ;
+  gen:mother <#Elizabeth_Fullerton> .
+<#Clementina_Fullerton-Elphinstone>
+  # Clementina Fullerton-Elphinstone, d. 1830-11-19
+  gen:father <https://www.wikidata.org/wiki/Q44815723> ;
+  gen:mother <#Elizabeth_Fullerton> .
+  # oo 1809-01-18 Sir Pulteney Malcolm, 1768-02-20 – 1838-07-20, https://www.wikidata.org/wiki/Q7259727
+<#James_Drummond_Buller-Fullerton-Elphinstone>
+  # James Drummond Buller-Fullerton-Elphinstone, 1788 - 1857-03-08
+  gen:father <https://www.wikidata.org/wiki/Q44815723> ;
+  gen:mother <#Elizabeth_Fullerton> .
+  # oo Diana Maria Clavering, d. 1821-12-24, daughter of Charles John Clavering
+  []
+    gen:spouse <#James_Drummond_Buller-Fullerton-Elphinstone> , <#Diana_Maria_Clavering> ;
+	gen:startDate "1820-09-30" .
+  # oo Anna Maria Buller, 1799-11-14 - 1845-02-16, daughter of https://www.wikidata.org/wiki/Q7526526 and Gertrude van Cortlandt
+  []
+    gen:spouse <#James_Drummond_Buller-Fullerton-Elphinstone> , <#Anna_Maria_Buller> ;
+	gen:startDate "1824-02-25" .
+<https://www.wikidata.org/wiki/Q6759721>
+  # Margaret Mercer Elphinstone, Baroness Keith, 1788-06-12 - 1867-11-11
+  # 2nd Baroness Keith, of Stonehaven Marischal, 2nd Baroness Keith, of Banheath, co. Dumbarton 1823-03-10
+  # 7th Lady Nairne 1837-12-07, de jure
+  gen:father <https://www.wikidata.org/wiki/Q337525> ;
+  gen:mother <murray.ttl#Jane_Mercer> .
+  # oo 1817-06-20 Auguste Charles Joseph de Flahault, Comte de Flahault de la Billardrie, 1785-04-21 - 1870-09-02, https://www.wikidata.org/wiki/Q375068
+<#Georgiana_Auguste_Henrietta_Elphinstone>
+  # Hon. Georgiana Auguste Henrietta Elphinstone, d. 1892-09-21
+  gen:father <https://www.wikidata.org/wiki/Q337525> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5746326> .
+  # oo 1870-05-10 Hon. William Godolphin Osborne, 1804-03-29 - 1888-12-28, osborne.ttl#William_Godolphin_Osborne
+
+<https://www.wikidata.org/wiki/Q6231706>
+  # John Elphinstone, 13th Lord Elphinstone, 1807-06-23 - 1860-07-19
+  # 13th Lord Elphinstone 1813-05-02
+  # 1st Baron Elphinstone, of Elphinstone, co. Stirling 1859-05-21
+  gen:father <https://www.wikidata.org/wiki/Q27151330> ;
+  gen:mother <#Janet_Hyndford_Elliot> .
+<#John_Elphinstone-Fleeming,_14th_Lord_Elphinstone>
+  # John Elphinstone-Fleeming, 14th Lord Elphinstone, 1819-12-11 - 1861-01-13
+  gen:father <https://www.wikidata.org/wiki/Q5077380> ;
+  gen:mother <#Doña_Catalina_Paulina_Alesandro_de_Jiminez> .
+<https://www.wikidata.org/wiki/Q2143075>
+  # Clementina Elphinstone-Fleeming, 1822-06-01 – 1865-01-19
+  gen:father <https://www.wikidata.org/wiki/Q5077380> ;
+  gen:mother <#Doña_Catalina_Paulina_Alesandro_de_Jiminez> .
+  # oo 1845-03-24 Cornwallis Maude, 1st Earl de Montalt, 1817-04-04 – 1905-01-09, https://www.wikidata.org/wiki/Q5172032
+<https://www.wikidata.org/wiki/Q8008580>
+  # William Buller Fullerton Elphinstone, 15th Lord Elphinstone and 1st Baron Elphinstone, 1828-11-18 – 1893-01-18
+  # 15th Lord Elphinstone 1861-01-13
+  # 1st Baron Elphinstone, of Elphinstone, co. Haddington 1885-12-30
+  gen:father <#James_Drummond_Buller-Fullerton-Elphinstone> ;
+  gen:mother <#Anna_Maria_Buller> .
+  # oo Lady Constance Euphemia Woronzow Murray, d. 1922-03-16, daughter of https://www.wikidata.org/wiki/Q4719715 and https://www.wikidata.org/wiki/Q1651756
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8008580> , <murray.ttl#Lady_Constance_Euphemia_Woronzow_Murray> ;
+	gen:startDate "1864-06-16" .
+<#Edward_Charles_Buller-Fullerton-Elphinstone>
+  # Hon. Edward Charles Buller-Fullerton-Elphinstone, 1832-11-17 - 1915-06-29
+  gen:father <#James_Drummond_Buller-Fullerton-Elphinstone> ;
+  gen:mother <#Anna_Maria_Buller> .
+  # oo Elizabeth Harriette Clerk, daughter of https://www.wikidata.org/wiki/Q7526860 and Maria Anne Law
+  []
+    gen:spouse <#Edward_Charles_Buller-Fullerton-Elphinstone> , <#Elizabeth_Harriette_Clerk> ;
+	gen:startDate "1859-05-05" .
+<#Elizabeth_Mary_Buller-Fullerton-Elphinstone>
+  # Hon. Elizabeth Mary Buller-Fullerton-Elphinstone, 1834 - 1902-09-24
+  gen:father <#James_Drummond_Buller-Fullerton-Elphinstone> ;
+  gen:mother <#Anna_Maria_Buller> .
+  # oo 1860-01-17 Very Rev. James Francis Montgomery, 1818-07-10 – 1897-09-21, https://www.wikidata.org/wiki/Q6139947
+<#Anna_Maria_Elphinstone>
+  # Hon. Anna Maria Elphinstone, d. 1914-03-20
+  gen:father <#James_Drummond_Buller-Fullerton-Elphinstone> ;
+  gen:mother <#Anna_Maria_Buller> .
+  # oo 1857-03-04 Thomas Henry Montgomery, 1828-08-21 - 1879-01-20, montgomery.ttl#Thomas_Henry_Montgomery
+<#Gertrude_Buller-Fullerton-Elphinstone>
+  # Hon. Gertrude Buller-Fullerton-Elphinstone, d. 1894-03-29
+  gen:father <#James_Drummond_Buller-Fullerton-Elphinstone> ;
+  gen:mother <#Anna_Maria_Buller> .
+  # oo 1850-04-16 James Hope, 1818-07-01 - 1903-07-10, hope.ttl#James_Hope_(died_1903)
+
+<https://www.wikidata.org/wiki/Q3960165>
+  # Sidney Herbert Elphinstone, 16th Lord Elphinstone, 1869-07-27 - 1955-11-28
+  gen:father <https://www.wikidata.org/wiki/Q8008580> ;
+  gen:mother <murray.ttl#Lady_Constance_Euphemia_Woronzow_Murray> .
+  # oo Lady Mary Frances Bowes-Lyon, 1883-08-30 - 1961-02-08
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3960165> , <https://www.wikidata.org/wiki/Q6779476> ;
+	gen:startDate "1910-07-14" .
+<#Sir_George_Keith_Buller-Fullerton-Elphinstone>
+  # Sir George Keith Buller-Fullerton-Elphinstone, 1865-05-11 - 1941-07-06
+  gen:father <#Edward_Charles_Buller-Fullerton-Elphinstone> ;
+  gen:mother <#Elizabeth_Harriette_Clerk> .
+  # oo Katherine Amy Wake, d. 1925-05-04, daughter of Colonel Alfred James Wake and Louisa Frances Rose, 1899-04-25
+  # oo Isobel Penrose Fry, d. 1953-01-08, daughter of https://www.wikidata.org/wiki/Q7781789 and Sophia Pease, 1926-02-16
+<#Elizabeth_Margaret_Buller-Fullerton-Elphinstone>
+  # Elizabeth Margaret Buller-Fullerton-Elphinstone, 1874-04-26 1945-01-30
+  gen:father <#Edward_Charles_Buller-Fullerton-Elphinstone> ;
+  gen:mother <#Elizabeth_Harriette_Clerk> .
+  # oo 1902-11-19 Montagu James Grant-Peterkin, 1871-07-02 - 1954-03-27, https://www.wikidata.org/wiki/Q28546618
+
+<https://www.wikidata.org/wiki/Q6231704>
+  # John Alexander Elphinstone, 17th Lord Elphinstone, 1914-03-22 - 1975-11-15
+  gen:father <https://www.wikidata.org/wiki/Q3960165> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6779476> .
+<#Jean_Constance_Elphinstone>
+  # Hon. Jean Constance Elphinstone, 1915-04-03 - 1999-11-29~
+  gen:father <https://www.wikidata.org/wiki/Q3960165> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6779476> .
+  # oo 1936-07-25 John Lycett Wills, 1910-05-29 - 1999, son of Arnold Stancomb Wills and Hilda Caroline Lyon
+<https://www.wikidata.org/wiki/Q54164320>
+  # Rev. Hon. Andrew Charles Victor Elphinstone, 1918-11-10 - 1975-03-19
+  gen:father <https://www.wikidata.org/wiki/Q3960165> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6779476> .
+  # oo Jean Frances Hambro, 1923-02-22 - 2017-12-07, daughter of Angus Valdimar Hambro (1883-07-08 - 1957-11-19, https://www.wikidata.org/wiki/Q4764262) and oo 1916-03-02 Vanda Dorothy Julia Charlton (d. 1981, daughter of St. John Charlton and Elizabeth Bronwen Hughes)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q54164320> , <https://www.wikidata.org/wiki/Q54162487> ;
+	gen:startDate "1946-05-29" .
+<https://www.wikidata.org/wiki/Q6759834>
+  # Hon. Margaret Elphinstone, 1925-06-09 - 2016-11-25
+  gen:father <https://www.wikidata.org/wiki/Q3960165> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6779476> .
+  # oo 1950-07-31 Denys Gravenor Rhodes, 1919-07-09 - 1981-11, https://www.wikidata.org/wiki/Q5259866
+
+<https://www.wikidata.org/wiki/Q26215204>
+  # James Alexander Elphinstone, 18th Lord Elphinstone, 1953-04-22 - 1994-12-19
+  gen:father <https://www.wikidata.org/wiki/Q54164320> ;
+  gen:mother <https://www.wikidata.org/wiki/Q54162487> .
+  # oo Willa Mary Gabrielle Chetwode, b. 1954-03-25, daughter of Major George David Chetwode (1914-08-24 - 1999-10) and oo 1946-10-09 Lady Willa Elliot-Murray-Kynynmound (b. 19234-03-21, daughter of https://www.wikidata.org/wiki/Q7925924 and Marion Cook)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q26215204> , <#Willa_Mary_Gabrielle_Chetwode> ;
+	gen:startDate "1978-04-22" .
+
+<https://www.wikidata.org/wiki/Q4718803>
+  # Alexander Mountstuart Elphinstone, 19th Lord Elphinstone, b. 1980-04-15
+  gen:father <https://www.wikidata.org/wiki/Q26215204> ;
+  gen:mother <#Willa_Mary_Gabrielle_Chetwode> .
+  # oo Nicola J. Hall, daughter of Michael Hall
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4718803> , <#Nicola_J._Hall> ;
+	gen:startDate "2007-07-07" .
+
+<#Isla_Elizabeth_Elphinstone>
+  # Hon. Isla Elizabeth Elphinstone, b. 2008-12-29
+  gen:father <https://www.wikidata.org/wiki/Q4718803> ;
+  gen:mother <#Nicola_J._Hall> .
+<#Jago_Alexander_Elphinstone,_Master_of_Elphinstone>
+  # Jago Alexander Elphinstone, Master of Elphinstone, b. 2011-08-19
+  gen:father <https://www.wikidata.org/wiki/Q4718803> ;
+  gen:mother <#Nicola_J._Hall> .
+<#Rafe_Mountstuart_Elphinstone>
+  # Hon. Rafe Mountstuart Elphinstone, b. 2015-01-22
+  gen:father <https://www.wikidata.org/wiki/Q4718803> ;
+  gen:mother <#Nicola_J._Hall> .
+
+
+# ====
+# Lord Balmerinoch
+<https://www.wikidata.org/wiki/Q6133453>
+  # Sir James Elphinstone, 1st Lord Balmerinoch, 1557-08-19 - 1612-05
+  # 1st Lord Balmerinoch 1606-07-11
+  gen:father <https://www.wikidata.org/wiki/Q50823981> ;
+  gen:mother <drummond.ttl#Margaret_Drummond_2> .
+  # oo Sarah Monteith, d. 1592-12-14a, daughter of Sir John Monteith of Carse
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6133453> , <#Sarah_Monteith> ;
+	gen:startDate "1589-04-10a" .
+  # oo Marjory Maxwell, 1573 - 1601-08-02a, daughter of Hugh Maxwell
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6133453> , <#Marjory_Maxwell> ;
+	gen:startDate "1597-12-23b" .
+
+<https://www.wikidata.org/wiki/Q4531359>
+  # John Elphinstone, 2nd Lord Balmerinoch, 1587b - 1649-02-28
+  gen:father <https://www.wikidata.org/wiki/Q6133453> ;
+  gen:mother <#Sarah_Monteith> .
+  # oo Ann Kerr, d. 1650-02-15
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4531359> , <kerr.ttl#Ann_Kerr> ;
+	gen:startDate "1613-08-30" .
+<#James_Elphinstone,_1st_Lord_Coupar>
+  # James Elphinstone, 1st Lord Coupar, 1587~ - 1669-01
+  gen:father <https://www.wikidata.org/wiki/Q6133453> ;
+  gen:mother <#Marjory_Maxwell> .
+  # oo Margaret Halyburton, b. 1586, daughter of https://www.wikidata.org/wiki/Q17984554 and Margaret Scrymgeour
+  []
+    gen:spouse <#James_Elphinstone,_1st_Lord_Coupar> , <#Margaret_Halyburton> .
+  # oo Lady Marion Ogilvy, d. 1695-09b, daughter of https://www.wikidata.org/wiki/Q18529901 and Helen Ogilvy
+    []
+    gen:spouse <#James_Elphinstone,_1st_Lord_Coupar> , <#Lady_Marion_Ogilvy> ;
+	gen:startDate "1666-10-11" .
+<#Margaret_Elphinstone>
+  # Margaret Elphinstone, b. 1591
+  gen:father <https://www.wikidata.org/wiki/Q6133453> ;
+  gen:mother <#Marjory_Maxwell> .
+  # oo 1618 Andrew Fraser, 2nd Lord Fraser, d. 1656-07a/1658-07b, son of Andrew Fraser, 1st Lord Fraser (d. 1636-12-10) and douglas.ttl#Lady_Elizabeth_Douglas_of_Buchan
+
+<https://www.wikidata.org/wiki/Q18576494>
+  # John Elphinstone, 3rd Lord Balmerinoch, 1623-02-18 - 1704-06-10
+  # 3rd Lord Balmerinoch 1649-02-28
+  # 2nd Lord Coupar 1669-01
+  gen:father <https://www.wikidata.org/wiki/Q4531359> ;
+  gen:mother <kerr.ttl#Ann_Kerr> .
+  # oo Lady Margaret Campbell, d. 1665-12
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q18576494> , <campbell.ttl#Lady_Margaret_Campbell_(died_1665)> ;
+	gen:startDate "1649-10-30" .
+
+<https://www.wikidata.org/wiki/Q19325316>
+  # John Elphinstone, 4th Lord Balmerinoch, 1652-12-26 - 1736-05-13
+  gen:father <https://www.wikidata.org/wiki/Q18576494> ;
+  gen:mother <campbell.ttl#Lady_Margaret_Campbell_(died_1665)> .
+  # oo Lady Christiana Montgomerie, d. 1687b
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q19325316> , <gordon.ttl#Lady_Christiana_Montgomerie> ;
+	gen:startDate "1672-02-15" .
+  # oo Anne Rose, d. 1712-11~, daughter of https://www.wikidata.org/wiki/Q4800167 and Barbara Barclay
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q19325316> , <#Anne_Rose> ;
+	gen:startDate "1687-06-12" .
+
+<#Jean_Elphinstone_(died_1739)>
+  # Jean Elphinstone, d. 1739-05-13
+  gen:father <https://www.wikidata.org/wiki/Q19325316> ;
+  gen:mother <gordon.ttl#Lady_Christiana_Montgomerie> .
+  # oo 1700-07 Francis Stuart, 7th Earl of Moray, 1673-09-04 - 1739-12-11, https://www.wikidata.org/wiki/Q7619280
+<#James_Elphinstone,_5th_Lord_Balmerinoch>
+  # James Elphinstone, 5th Lord Balmerinoch, 1675-11-24 - 1746-01-05
+  gen:father <https://www.wikidata.org/wiki/Q19325316> ;
+  gen:mother <gordon.ttl#Lady_Christiana_Montgomerie> .
+  # oo Lady Elizabeth Carnegie, 1699-01-02 - 1767-09-21
+  []
+    gen:spouse <#James_Elphinstone,_5th_Lord_Balmerinoch> , <carnegie.ttl#Lady_Elizabeth_Carnegie_(died_1767)> ;
+	gen:startDate "1718-04-28" .
+<https://www.wikidata.org/wiki/Q4798597>
+  # Arthur Elphinstone, 6th Lord Balmerinoch, 1688 - 1746-08-18
+  gen:father <https://www.wikidata.org/wiki/Q19325316> ;
+  gen:mother <#Anne_Rose> .
+  # oo Margaret Chalmers, 1710~ - 1765-08-24, daughter of Captain unknown Chalmers
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4798597> , <#Margaret_Chalmers> .
+
+
+# ====
+<#Laurence_Elphinstone_of_Selmys>
+  # Laurence Elphinstone of Selmys
+  gen:father <#Sir_Henry_Elphinstone_of_Pittendriech> .
+  # oo Margaret Hamilton
+
+<#Nicholas_Elphinstone_of_Glack>
+  # Nicholas Elphinstone of Glack
+  gen:father <#Laurence_Elphinstone_of_Selmys> .
+  # and Margaret Hamilton
+  # oo Elizabeth Abercrombie
+
+<#William_Elphinstone_of_Glack>
+  # William Elphinstone of Glack, d. 1586~
+  gen:father <#Nicholas_Elphinstone_of_Glack> .
+  # and Elizabeth Abercrombie
+  # oo Elizabeth Cromme
+
+<#James_Elphinstone_of_Glack_(died_1595~)>
+  # James Elphinstone of Glack, d. 1595~
+  gen:father <#William_Elphinstone_of_Glack> .
+  # and Elizabeth Cromme
+  # oo 1559 Marjorie Leslie, daughter of Alexander Leslie, 4th of Pitcaple
+
+<#Alexander_Elphinstone>
+  # Alexander Elphinstone, d. 1595b
+  gen:father <#James_Elphinstone_of_Glack_(died_1595~)> .
+  # and Marjorie Leslie
+
+<#James_Elphinstone_of_Glack_(died_1670)>
+  # James Elphinstone of Glack, d. 1670-06-02~
+  gen:father <#Alexander_Elphinstone> .
+  # oo Elizabeth Wood
+
+<#William_Elphinstone_(died_1664)>
+  # William Elphinstone, d. 1664-12-16~
+  gen:father <#James_Elphinstone_of_Glack_(died_1670)> .
+  # and Elizabeth Wood
+  # oo Margaret Forbes
+<#James_Elphinstone_of_Glack_(died_1676)>
+  # James Elphinstone of Glack, d. 1676-08-15~
+  gen:father <#James_Elphinstone_of_Glack_(died_1670)> .
+  # and Elizabeth Wood
+  # oo 1641 Janet Leslie
+
+<#Sir_James_Elphinstone_of_Logie,_1st_Baronet>
+  # Sir James Elphinstone of Logie, 1st Baronet, 1642 - 1722-03-10
+  # 1st Baronet Elphinstone, of Logie Elphinstone, co. Aberdeen and Nova Scotia 1701-12-02
+  gen:father <#William_Elphinstone_(died_1664)> .
+  # and Margaret Forbes
+  # oo Cecilia Denholme, 1647-01-15 - 1706-11-10, daughter of John Denholme of Muirhouse and West Shield and Catherine Nairne
+  []
+    gen:spouse <#Sir_James_Elphinstone_of_Logie,_1st_Baronet> , <#Cecilia_Denholme> ;
+	gen:startDate "1673-09-02" .
+<#John_Elphinstone_of_Glack_(died_1691)>
+  # John Elphinstone of Glack, d. 1691-10-22~
+  gen:father <#James_Elphinstone_of_Glack_(died_1676)> .
+  # and Janet Leslie
+  # oo Anna Irvine, d. 1703, daughter of James Irvine of Artamford
+
+<#Sir_John_Elphinstone,_2nd_Baronet>
+  # Sir John Elphinstone, 2nd Baronet, 1675 - 1732-03-14
+  gen:father <#Sir_James_Elphinstone_of_Logie,_1st_Baronet> ;
+  gen:mother <#Cecilia_Denholme> .
+  # oo Mary Elliot, 1679~ - 1767-05-18, daughter of https://www.wikidata.org/wiki/Q17309001 and Helen Stevenson
+  []
+    gen:spouse <#Sir_John_Elphinstone,_2nd_Baronet> , <#Mary_Elliot> ;
+	gen:startDate "1703-08-23" .
+<#John_Elphinstone_of_Glack_(died_1735)>
+  # John Elphinstone of Glack, d. 1735-01-15~
+  gen:father <#John_Elphinstone_of_Glack_(died_1691)> .
+  # and Anna Irvine
+  # oo 1691 Margaret Forbes, d. 1730, daughter of Alexander Forbes of Foveran
+
+<#Sir_James_Elphinstone,_3rd_Baronet>
+  # Sir James Elphinstone, 3rd Baronet, 1710~ - 1739-04
+  gen:father <#Sir_John_Elphinstone,_2nd_Baronet> ;
+  gen:mother <#Mary_Elliot> .
+  # oo Jean Rattray, d. 1765-09-25, daughter of Rt. Rev. Thomas Rattray, 20th of Craighall-Rattray (1684 – 1743, https://www.wikidata.org/wiki/Q7793417)
+  []
+    gen:spouse <#Sir_James_Elphinstone,_3rd_Baronet> , <#Jean_Rattray> ;
+	gen:startDate "1733-10-04" .
+<#Sir_John_Elphinstone,_4th_Baronet>
+  # Sir John Elphinstone, 4th Baronet, 1717-01-11 - 1743-01
+  gen:father <#Sir_John_Elphinstone,_2nd_Baronet> ;
+  gen:mother <#Mary_Elliot> .
+<#John_Elphinstone_of_Glack_(died_1758)>
+  # John Elphinstone of Glack, d. 1758-09
+  # 5th Baronet Elphinstone, of Logie Elphinstone, co. Aberdeen and Nova Scotia 1743-01, de jure
+  gen:father <#John_Elphinstone_of_Glack_(died_1735)> .
+  # and Margaret Forbes
+  # oo 1734 Jean Achyndachy, d. 1794, daughter of Alexander Achyndachy of that Ilk
+
+<#Mary_Elphinstone>
+  # Mary Elphinstone, d. 1774-03-03
+  gen:father <#Sir_James_Elphinstone,_3rd_Baronet> ;
+  gen:mother <#Jean_Rattray> .
+  # oo 1754-07-09 Robert Dalrymple-Horn-Elphinstone of Horn and Westhall, d. 1794, dalrymple.ttl#Robert_Dalrymple-Horn-Elphinstone_of_Horn_and_Westhall
+<#Alexander_Elphinstone_of_Glack_(died_1795)>
+  # Alexander Elphinstone of Glack, d. 1795-11-26
+  # 6th Baronet Elphinstone, of Logie Elphinstone, co. Aberdeen and Nova Scotia 1758-09, de jure
+  gen:father <#John_Elphinstone_of_Glack_(died_1758)> .
+  # and Jean Achyndachy
+  # oo Jean Mackenzie, daughter of Colin Mackenzie, 6th of Kilcoy and Martha Fraser, 8th of Inverallochy, 1766-10-25
+
+<#John_Elphinstone_of_Glack_(died_1835)>
+  # John Elphinstone of Glack, 1771-05-15 - 1835-04-16
+  # 7th Baronet Elphinstone, of Logie Elphinstone, co. Aberdeen and Nova Scotia 1795-11-26, de jure
+  gen:father <#Alexander_Elphinstone_of_Glack_(died_1795)> .
+  # and Jean Mackenzie
+  # oo 1799-03-19 Maria Prudence Robertson, d- 1869-08-12, daughter of James Robertson
+
+<#Alexander_Elphinstone_of_Glack_(died_1888)>
+  # Alexander Elphinstone of Glack, 1801-04-03 - 1888-11-28
+  # 8th Baronet Elphinstone, of Logie Elphinstone, co. Aberdeen and Nova Scotia 1835-04-16, de jure
+  gen:father <#John_Elphinstone_of_Glack_(died_1835)> .
+  # and Maria Prudence Robertson
+  # oo Charlotte Hunter, d. 1859-01-24, daughter of William Hunter and Charlotte Robertson
+  []
+    gen:spouse <#Alexander_Elphinstone_of_Glack_(died_1888)> , <#Charlotte_Hunter> ;
+	gen:startDate "1831-06-28" .
+  # oo Margaret Rachel Roberts
+  []
+    gen:spouse <#Alexander_Elphinstone_of_Glack_(died_1888)> , <#Margaret_Rachel_Roberts> ;
+	gen:startDate "1868-08-19" .
+
+<#John_Elphinstone_of_Glack_(died_1893)>
+  # John Elphinstone of Glack, 1834-12-16 - 1893-06-30
+  # 9th Baronet Elphinstone, of Logie Elphinstone, co. Aberdeen and Nova Scotia 1888-11-28, de jure
+  gen:father <#Alexander_Elphinstone_of_Glack_(died_1888)> ;
+  gen:mother <#Charlotte_Hunter> .
+  # oo Emma Eliza Betham, d. 1936-03-20, daughter of G. R. Betham
+  []
+    gen:spouse <#John_Elphinstone_of_Glack_(died_1893)> , <#Emma_Eliza_Betham> ;
+	gen:startDate "1875-03-20" .
+
+<#Sir_Alexander_Logie_Elphinstone_of_Glack,_10th_Baronet>
+  # Sir Alexander Logie Elphinstone of Glack, 10th Baronet, 1880-03-08 - 1970-12-16
+  # 10th Baronet Elphinstone, of Logie Elphinstone, co. Aberdeen and Nova Scotia 1927-11-30
+  gen:father <#John_Elphinstone_of_Glack_(died_1893)> ;
+  gen:mother <#Emma_Eliza_Betham> .
+  # oo Agnes Gertrude Blanche Durell King, d. 1961-04-29, daughter of Captain T. E. Charles King
+  []
+    gen:spouse <#Sir_Alexander_Logie_Elphinstone_of_Glack,_10th_Baronet> , <#Agnes_Gertrude_Blanche_Durell_King> ;
+	gen:startDate "1911-07-18" .
+  # oo Muriel Eileen MacComish, d. 1977-10-05, daughter of John MacComish
+  []
+    gen:spouse <#Sir_Alexander_Logie_Elphinstone_of_Glack,_10th_Baronet> , <#Muriel_Eileen_MacComish> ;
+	gen:startDate "1962-10-18" .
+<#Thomas_George_Elphinstone>
+  # Thomas George Elphinstone, 1882-08-07 - 1967-12-25
+  gen:father <#John_Elphinstone_of_Glack_(died_1893)> ;
+  gen:mother <#Emma_Eliza_Betham> .
+  # oo Gladys Mary Congdon, d. 1973, daughter of Colonel Ernest Charles Lambert Congdon
+  []
+    gen:spouse <#Thomas_George_Elphinstone> , <#Gladys_Mary_Congdon> ;
+	gen:startDate "1913-06-18" .
+
+<#Sir_John_Elphinstone_of_Glack,_11th_Baronet>
+  # Sir John Elphinstone of Glack, 11th Baronet, 1924-08-12 - 2015-05-28
+  gen:father <#Thomas_George_Elphinstone> ;
+  gen:mother <#Gladys_Mary_Congdon> .
+  # oo Margaret Doreen Tasker, daughter of Edric Tasker
+  []
+    gen:spouse <#Sir_John_Elphinstone_of_Glack,_11th_Baronet> , <#Margaret_Doreen_Tasker> ;
+	gen:startDate "1953-05-23" .
+
+<#Sir_Alexander_Elphinstone_of_Glack,_12th_Baronet>
+  # Sir Alexander Elphinstone of Glack, 12th Baronet, b. 1955-06-06
+  gen:father <#Sir_John_Elphinstone_of_Glack,_11th_Baronet> ;
+  gen:mother <#Margaret_Doreen_Tasker> .
+  # oo Ruth Mary Dunnett, daughter of Reverend Robert Curtis Dunnett
+  []
+    gen:spouse <#Sir_Alexander_Elphinstone_of_Glack,_12th_Baronet> , <#Ruth_Mary_Dunnett> ;
+	gen:startDate "1986-08-09" .
+
+
+# ====
+<#John_Elphinstone_(died_1488)>
+  # John Elphinstone, d. 1488-06-11
+  gen:father <#Sir_Henry_Elphinstone_of_Pittendriech> .
+  # oo Elizabeth Douglas
+
+<#Jock_Elphinstone>
+  # Jock Elphinstone
+  gen:father <#John_Elphinstone_(died_1488)> .
+  # and Elizabeth Douglas
+  # oo Catherine le Noble
+
+<#Michael_Elphinstone>
+  # Michael Elphinstone
+  gen:father <#Jock_Elphinstone> .
+  # and Catherine le Noble
+
+<#Peter_Elphinstone>
+  # Peter Elphinstone
+  gen:father <#Michael_Elphinstone> .
+  # oo Magdeleine le Lespine
+
+<#Rene_Elphinstone>
+  # Rene Elphinstone, d. 1587
+  gen:father <#Peter_Elphinstone> .
+  # and Magdeleine le Lespine
+  # oo Janet Halcro
+
+<#Robert_Elphinstone>
+  # Robert Elphinstone, d. 1628
+  gen:father <#Rene_Elphinstone> .
+  # and Janet Halcro
+  # oo Elizabeth Smyth
+
+<#John_Elphinstone_1>
+  # John Elphinstone
+  gen:father <#Robert_Elphinstone> .
+  # and Elizabeth Smyth
+  # oo Joanna Cock
+
+<#John_Elphinstone_2>
+  # John Elphinstone
+  gen:father <#John_Elphinstone_1> .
+  # and Joanna Cock
+  # oo Elizabeth Moore
+
+<#John_Elphinstone_3>
+  # John Elphinstone
+  gen:father <#John_Elphinstone_2> .
+  # and Elizabeth Moore
+  # oo Anne Williams
+
+<https://www.wikidata.org/wiki/Q4531554>
+  # John Elphinstone, 1722 - 1785-02-28
+  gen:father <#John_Elphinstone_3> .
+  # and Anne Williams
+  # oo Amelia Warburton, d. 1786-02, daughter of https://www.wikidata.org/wiki/Q6262964
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4531554> , <#Amelia_Warburton> ;
+	gen:startDate "1750-10-23" .
+
+<https://www.wikidata.org/wiki/Q7527284>
+  # Sir Howard Elphinstone, 1st Baronet, 1773-03-04 - 1846-04-28
+  # 1st Baronet Elphinstone, of Sowerby, Cumberland 1816-05-25
+  gen:father <https://www.wikidata.org/wiki/Q4531554> ;
+  gen:mother <#Amelia_Warburton> .
+  # oo Frances Warburton, d. 1858-08-24, daughter of John Warburton
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7527284> , <#Frances_Warburton> ;
+	gen:startDate "1803-02-14" .
+<#Anne_Charlotte_Maria_Elphinstone>
+  # Anne Charlotte Maria Elphinstone, d. 1809-06-06
+  gen:father <https://www.wikidata.org/wiki/Q4531554> ;
+  gen:mother <#Amelia_Warburton> .
+  # oo 1781-02-12 Sir Francis John Hartwell, 1st Baronet, 1757-02-15 – 1831-06-28, https://www.wikidata.org/wiki/Q60535488
+
+<https://www.wikidata.org/wiki/Q7527285>
+  # Sir Howard Elphinstone, 2nd Baronet, 1804-06-09 – 1893-03-16
+  gen:father <https://www.wikidata.org/wiki/Q7527284> ;
+  gen:mother <#Frances_Warburton> .
+  # oo Elizabeth Julia Curteis, d. 1891-01-14, daughter of E. J. Curteis
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7527285> , <#Elizabeth_Julia_Curteis> ;
+	gen:startDate "1829-09-30" .
+<#Frances_Elphinstone>
+  # Frances Elphinstone, d. 1905-10-31
+  gen:father <https://www.wikidata.org/wiki/Q7527284> ;
+  gen:mother <#Frances_Warburton> .
+  # oo 1836-09-06 William Masters Smith, 1802-03-20 – 1861-12-24, https://www.wikidata.org/wiki/Q16066097
+
+<https://www.wikidata.org/wiki/Q7527287>
+  # Sir Howard Warburton Elphinstone, 3rd Baronet, 1830-07-26 - 1917-01-03
+  gen:father <https://www.wikidata.org/wiki/Q7527285> ;
+  gen:mother <#Elizabeth_Julia_Curteis> .
+  # oo Constance Mary Alexander Hankey, 1841-04 - 1936-03-13, daughter of John Alexander Hankey and Ellen Hankey
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7527287> , <#Constance_Mary_Alexander_Hankey> ;
+	gen:startDate "1860-08-04" .
+<#Julia_Elphinstone>
+  # Julia Elphinstone, d. 1909-10-20
+  gen:father <https://www.wikidata.org/wiki/Q7527285> ;
+  gen:mother <#Elizabeth_Julia_Curteis> .
+  # oo 1855-04-23 Walter Douglas Phillips Patton-Bethune, 1821 – 1901-01-28, https://www.wikidata.org/wiki/Q22019224
+
+<#Graham_Warburton_Elphinstone>
+  # Graham Warburton Elphinstone, 1866-10-17 - 1903-02-21
+  gen:father <https://www.wikidata.org/wiki/Q7527287> ;
+  gen:mother <#Constance_Mary_Alexander_Hankey> .
+  # oo Susan Sophy Harley, d. 1962-10-01, daughter of Henry Casper Raper Harley
+  []
+    gen:spouse <#Graham_Warburton_Elphinstone> , <#Susan_Sophy_Harley> ;
+	gen:startDate "1896-10-13" .
+<#Maurice_Curteis_Elphinstone>
+  # Reverend Maurice Curteis Elphinstone, 1874-01-27 - 1969-05-14
+  gen:father <https://www.wikidata.org/wiki/Q7527287> ;
+  gen:mother <#Constance_Mary_Alexander_Hankey> .
+  # oo Christiana Georgiana Almond, d. 1975-01-05, daughter of https://www.wikidata.org/wiki/Q5710794 and Eleanor Frances Tristram
+  []
+    gen:spouse <#Maurice_Curteis_Elphinstone> , <#Christiana_Georgiana_Almond> ;
+	gen:startDate "1908-07-30" .
+<https://www.wikidata.org/wiki/Q16466749>
+  # Sir Lancelot Henry Elphinstone, 1879-09-02 - 1965-10-11
+  gen:father <https://www.wikidata.org/wiki/Q7527287> ;
+  gen:mother <#Constance_Mary_Alexander_Hankey> .
+  # oo Jane Edith Jamieson, d. 1959-10-08, daughter of Robert Jarvie Jamieson
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16466749> , <#Jane_Edith_Jamieson> ;
+	gen:startDate "1913-02-07" .
+
+<#Sir_Howard_Graham_Elphinstone,_4th_Baronet>
+  # Sir Howard Graham Elphinstone, 4th Baronet, 1898-12-28 - 1975-05-18
+  gen:father <#Graham_Warburton_Elphinstone> ;
+  gen:mother <#Susan_Sophy_Harley> .
+  # oo Alice Mary Emerton Brown, daughter of Philip John Emerton Brown, 1924-07-14
+<https://www.wikidata.org/wiki/Q23900933>
+  # Sir Maurice _Douglas_ Warburton Elphinstone, 5th Baronet, 1909-04-13 - 1995-12-05
+  gen:father <#Maurice_Curteis_Elphinstone> ;
+  gen:mother <#Christiana_Georgiana_Almond> .
+  # oo Helen Barbara Main, daughter of George Ramsay Main
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q23900933> , <#Helen_Barbara_Main> ;
+	gen:startDate "1943-06-30" .
+<#Norah_Christine_Elphinstone>
+  # Norah Christine Elphinstone, b. 1917-10-27
+  gen:father <#Maurice_Curteis_Elphinstone> ;
+  gen:mother <#Christiana_Georgiana_Almond> .
+  # oo 1968-07 George Rex Renouf, d. 1971, son of Charles Hugh Renouf
+  # oo 1973 Rt. Hon. William Joseph Browne, 1897-05-03 – 1989-01-10, https://www.wikidata.org/wiki/Q8013766
+
+<#Sir_John_Howard_Main_Elphinstone,_6th_Baronet>
+  # Sir John Howard Main Elphinstone, 6th Baronet, b. 1949-02-25
+  gen:father <https://www.wikidata.org/wiki/Q23900933> ;
+  gen:mother <#Helen_Barbara_Main> .
+  # oo Diane Barbara Quilliam Callow, daughter of Dr. Brian Quilliam Callow
+  []
+    gen:spouse <#Sir_John_Howard_Main_Elphinstone,_6th_Baronet> , <#Diane_Barbara_Quilliam_Callow> ;
+	gen:startDate "1990-10-20" .
+
+
+# ----
+#<https://www.wikidata.org/wiki/Q160499>
+  # Charles Maurice de Talleyrand-Périgord, Prince of Benevento, 1754-02-13 - 1838-05-17
+
+<https://www.wikidata.org/wiki/Q375068>
+  # Auguste Charles Joseph de Flahault, Comte de Flahault de la Billardrie, 1785-04-21 - 1870-09-02
+  gen:father <https://www.wikidata.org/wiki/Q160499> ;
+  gen:mother <https://www.wikidata.org/wiki/Q589562> . # Adelaide Filleul, Marquise de Souza-Botelho, 1761-05-14 - 1836-04-19
+  # oo Margaret Mercer Elphinstone, Baroness Keith, 1788-06-12 - 1867-11-11
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q375068> , <https://www.wikidata.org/wiki/Q6759721> ;
+	gen:startDate "1817-06-20" .
+
+<https://www.wikidata.org/wiki/Q1337618>
+  # Hon. Emily Jane Mercer-Elphinstone-de Flahault, Lady Nairne, 1819-05-16 - 1895-06-26
+  # 8th Lady Nairne 1874-08-04, suo jure
+  gen:father <https://www.wikidata.org/wiki/Q375068> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6759721> .
+  # oo 1843-11-01 Henry Petty-FitzMaurice, 4th Marquess of Lansdowne, 1816-01-07 - 1866-07-05, https://www.wikidata.org/wiki/Q5935407
+
+# ----
+#<#Arthur_Tahu_Gravenor_Rhodes>
+  # Arthur Tahu Gravenor Rhodes, d. 1947-03-11
+  # oo Hon. Helen Cecil Olive Plunket, 1895-04-15 - 1968-02-24
+  []
+    gen:spouse <#Arthur_Tahu_Gravenor_Rhodes> , <guinness.ttl#Helen_Cecil_Olive_Plunket> ;
+	gen:startDate "1916-01-24" .
+
+<https://www.wikidata.org/wiki/Q5259866>
+  # Denys Gravenor Rhodes, 1919-07-09 - 1981-11
+  gen:father <#Arthur_Tahu_Gravenor_Rhodes> ;
+  gen:mother <guinness.ttl#Helen_Cecil_Olive_Plunket> .
+  # oo Hon. Margaret Elphinstone, 1925-06-09 - 2016-11-25
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5259866> , <https://www.wikidata.org/wiki/Q6759834> ;
+	gen:startDate "1950-07-31" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q60535488>
+  # Sir Francis John Hartwell, 1st Baronet, 1757-02-15 – 1831-06-28
+  # 1st Baronet Hartwell, of Dale Hall, Essex 1805-10-26
+  # oo Anne Charlotte Maria Elphinstone, d. 1809-06-06
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q60535488> , <#Anne_Charlotte_Maria_Elphinstone> ;
+	gen:startDate "1781-02-12" .
+
+<#Houlton_Hartwell>
+  # Rev. Houlton Hartwell, 1783-02-12 - 1819-02-24
+  gen:father <https://www.wikidata.org/wiki/Q60535488> ;
+  gen:mother <#Anne_Charlotte_Maria_Elphinstone> .
+  # oo Ruth Ball, daughter of David Ball
+  []
+    gen:spouse <#Houlton_Hartwell> , <#Ruth_Ball> ;
+	gen:startDate "1812-02-29" .
+
+<#Sir_Broderick_Hartwell,_2nd_Baronet>
+  # Sir Broderick Hartwell, 2nd Baronet, 1813-07-17 - 1888-12-11
+  gen:father <#Houlton_Hartwell> ;
+  gen:mother <#Ruth_Ball> .
+  # oo Alicia Gunthorpe, 1815-04-14 - 1859-04-24, daughter of Rev. William Gunthorpe and Alicia Jackson
+  []
+    gen:spouse <#Sir_Broderick_Hartwell,_2nd_Baronet> , <#Alicia_Gunthorpe> ;
+	gen:startDate "1834-10-28" .
+
+<#Edward_Hughes_Brodrick_Hartwell>
+  # Edward Hughes Brodrick Hartwell, 1837-09-06 - 1895-01-14
+  gen:father <#Sir_Broderick_Hartwell,_2nd_Baronet> ;
+  gen:mother <#Alicia_Gunthorpe> .
+  # oo Augusta Henrietta Paget, d. 1883-07-22
+  []
+    gen:spouse <#Edward_Hughes_Brodrick_Hartwell> , <paget.ttl#Augusta_Henrietta_Paget> ;
+	gen:startDate "1873-12-04" .
+
+# ----
+<https://www.wikidata.org/wiki/Q5746326>
+  # Hester Maria Thrale, 1764-09-17 - 1857-03-31
+  gen:father <https://www.wikidata.org/wiki/Q3133110> ;
+  gen:mother <https://www.wikidata.org/wiki/Q291322> .
+  # oo 1808-01-10 George Keith Elphinstone, 1st Viscount Keith, 1746-01-07 – 1823-03-10, https://www.wikidata.org/wiki/Q337525

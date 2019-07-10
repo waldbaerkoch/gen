@@ -1,0 +1,979 @@
+@base <coke.ttl> .
+@prefix gen: <http://jjkoch.de/gen#> .
+@prefix wdata: <https://www.wikidata.org/wiki/> .
+@prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+
+#<https://www.wikidata.org/wiki/Q332435>
+  # Sir Edward Coke, 1552-02-01 - 1634-09-03
+  # oo Bridget Paston, daughter of John Paston
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q332435> , <#Bridget_Paston> ;
+	gen:startDate "1587b" .
+  # oo Lady Elizabeth Cecil, 1578 - 1646-01-03
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q332435> , <https://www.wikidata.org/wiki/Q5354690> ;
+	gen:startDate "1598-11-06" .
+
+<https://www.wikidata.org/wiki/Q24254932>
+  # Sir Robert Coke, 1587 – 1653-07-19
+  gen:father <https://www.wikidata.org/wiki/Q332435> ;
+  gen:mother <#Bridget_Paston> .
+  # oo Theophila Berkeley
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q24254932> , <howard.ttl#Theophila_Berkeley> ;
+	gen:startDate "1613" .
+<https://www.wikidata.org/wiki/Q5354865>
+  # Henry Coke, of Thorington, 1591 - 1661
+  gen:father <https://www.wikidata.org/wiki/Q332435> ;
+  gen:mother <#Bridget_Paston> .
+  # oo Margaret Lovelace, daughter of Richard Lovelace
+<#Clement_Coke>
+  # Clement Coke, d. 1629-05-23
+  gen:father <https://www.wikidata.org/wiki/Q332435> ;
+  gen:mother <#Bridget_Paston> .
+  # oo Sarah Reddish, daughter of Alexander Reddish and unknown daughter Langley
+<https://www.wikidata.org/wiki/Q16859679>
+  # Frances Coke, 1601 - 1645-06-04
+  gen:father <https://www.wikidata.org/wiki/Q332435> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5354690> .
+  # oo 1617-09-29 John Villiers, 1st Viscount Purbeck, 1591~ - 1658-02-18, https://www.wikidata.org/wiki/Q6262001
+
+<https://www.wikidata.org/wiki/Q52436764>
+  # Richard Coke, of Thorington, 1622-09-08b - 1669-11-11b
+  gen:father <https://www.wikidata.org/wiki/Q5354865> .
+  # and Margaret Lovelace
+  # oo Mary Rous
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q52436764> , <#Mary_Rous> ;
+	gen:startDate "1647~" .
+<#Sir_Edward_Coke,_1st_Baronet>
+  # Sir Edward Coke, of Langford, 1st Baronet, d. 1669b
+  # 1st Baronet Coke, of Langford, co. Derby 1611-12-30
+  gen:father <#Clement_Coke> .
+  # and Sarah Reddish
+  # oo Catherine Dyer, daughter of Sir William Dyer
+  []
+    gen:spouse <#Sir_Edward_Coke,_1st_Baronet> , <#Catherine_Dyer> ;
+	gen:startDate "1644" .
+
+<https://www.wikidata.org/wiki/Q24254934>
+  # Robert Coke, of Thorington, and later of Holkham, 1651~ - 1679-01-16
+  gen:father <https://www.wikidata.org/wiki/Q52436764> ;
+  gen:mother <#Mary_Rous> .
+  # oo Lady Anne Osborne, 1657 - 1722-08-05
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q24254934> , <osborne.ttl#Lady_Anne_Osborne> ;
+	gen:startDate "1674-11-26" .
+<https://www.wikidata.org/wiki/Q24254933>
+  # Sir Robert Coke, 2nd Baronet, 1645-04-29 – 1688
+  gen:father <#Sir_Edward_Coke,_1st_Baronet> ;
+  gen:mother <#Catherine_Dyer> .
+  # oo Sarah Barker, d. 1685-02~
+<#Sir_Edward_Coke,_3rd_Baronet>
+  # Sir Edward Coke, 3rd Baronet, 1646-10-06 - 1727-08-26
+  gen:father <#Sir_Edward_Coke,_1st_Baronet> ;
+  gen:mother <#Catherine_Dyer> .
+  # oo Catherine (?)
+
+<#Edward_Coke_(died_1707)>
+  # Edward Coke, of Holkham, d. 1707-04-13
+  gen:father <https://www.wikidata.org/wiki/Q24254934> ;
+  gen:mother <osborne.ttl#Lady_Anne_Osborne> .
+  # oo Cary Newton, 1680-06-09 - 1707-08-04
+  []
+    gen:spouse <#Edward_Coke> , <#Cary_Newton> ;
+	gen:startDate "1696~" .
+
+<#Anne_Coke>
+  # Anne Coke
+  gen:father <#Edward_Coke_(died_1707)> ;
+  gen:mother <#Cary_Newton> .
+  # oo Philip Roberts, #Philip_Roberts
+<#Robert_Coke_(died_1750)>
+  # Robert Coke, of Langford, d. 1750
+  gen:father <#Edward_Coke_(died_1707)> ;
+  gen:mother <#Cary_Newton> .
+  # oo Jane Wharton, d. 1757-12-22a/1761-01-19b
+  []
+    gen:spouse <#Robert_Coke_(died_1750)> , <#Jane_Wharton> ;
+	gen:startDate "1733-06-13" .
+<https://www.wikidata.org/wiki/Q337655>
+  # Thomas Coke, 1st Earl of Leicester, 1697-06-17 - 1759-04-20
+  # 1st Baron Lovel of Minster Lovel 1728-05-28
+  # 1st Earl of Leicester, 1st Viscount Coke of Holkham, co. Norfolk 1744-05-09
+  gen:father <#Edward_Coke_(died_1707)> ;
+  gen:mother <#Cary_Newton> .
+  # oo Margaret Tufton, 19th Baroness Clifford, 1700-06-16 - 1775-02-28
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q337655> , <https://www.wikidata.org/wiki/Q6759287> ;
+	gen:startDate "1718-07-03" .
+
+<https://www.wikidata.org/wiki/Q5342348>
+  # Edward Coke, Viscount Coke, 1719-02-02 - 1753-08-31
+  gen:father <https://www.wikidata.org/wiki/Q337655> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6759287> .
+  # oo 1747-04-01 Lady Mary Campbell, 1727-02-06 - 1811-09-30
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5342348> , <https://www.wikidata.org/wiki/Q3216012> .
+
+
+# ====
+#<#Philip_Roberts>
+  # Philip Roberts
+  # oo Anne Coke
+  []
+    gen:spouse <#Philip_Roberts> , <#Anne_Coke> .
+
+<https://www.wikidata.org/wiki/Q5610526>
+  # Wenman Coke, 1717~ - 1776-04-11
+  gen:father <#Philip_Roberts> ;
+  gen:mother <#Anne_Coke> .
+  # oo Elizabeth Chamberlayne, d. 1810
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5610526> , <#Elizabeth_Chamberlayne> .
+
+<https://www.wikidata.org/wiki/Q5944748>
+  # Thomas William Coke, 1st Earl of Leicester of Holkham, 1754-05-06 - 1842-06-30
+  # 1st Viscount Coke, 1st Earl of Leicester of Holkham, co. Norfolk 1837-08-12
+  gen:father <https://www.wikidata.org/wiki/Q5610526> ;
+  gen:mother <#Elizabeth_Chamberlayne> .
+  # oo Jane Dutton, 1753-11-29 - 1800-06-02
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5944748> , <dutton.ttl#Jane_Dutton> ;
+	gen:startDate "1775-10-05" .
+  # oo Lady Anne Amelia Keppel, 1803 - 1844-07-22
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5944748> , <keppel.ttl#Lady_Anne_Amelia_Keppel> ;
+	gen:startDate "1822-02-26" .
+<#Elizabeth_Coke_(died_1824)>
+  # Elizabeth Coke, 1753-05-28 - 1824-12-17
+  gen:father <https://www.wikidata.org/wiki/Q5610526> ;
+  gen:mother <#Elizabeth_Chamberlayne> .
+  # oo 1774-07-07 James Naper Dutton, 1st Baron Sherborne, 1744-10-22 – 1820-05-22, https://www.wikidata.org/wiki/Q6132984
+<#Edward_Coke,_of_Longford>
+  # Edward Coke, of Longford, 1758 - 1836-07-29
+  gen:father <https://www.wikidata.org/wiki/Q5610526> ;
+  gen:mother <#Elizabeth_Chamberlayne> .
+  # oo Grace Colhoun, daughter of William Colhoun
+  []
+    gen:spouse <#Edward_Coke,_of_Longford> , <#Grace_Colhoun> ;
+	gen:startDate "1792-04-09" .
+
+<#Lady_Jane_Elizabeth_Coke>
+  # Lady Jane Elizabeth Coke, 1777-12-02 - 1863-04-29
+  gen:father <https://www.wikidata.org/wiki/Q5944748> ;
+  gen:mother <dutton.ttl#Jane_Dutton> .
+  # oo 1796-06-21 Charles Nevinson Howard, Viscount Andover, 1775-05-13 - 1800-01-11, https://www.wikidata.org/wiki/Q50659345
+<https://www.wikidata.org/wiki/Q19620364>
+  # Lady Anne Margaret Coke, 1779-01-23 - 1843-05-23
+  gen:father <https://www.wikidata.org/wiki/Q5944748> ;
+  gen:mother <dutton.ttl#Jane_Dutton> .
+  # oo 1794-09-15 Thomas Anson, 1st Viscount Anson, 1767-02-14 - 1818-07-31, https://www.wikidata.org/wiki/Q7787093
+<https://www.wikidata.org/wiki/Q7612333>
+  # Thomas William Coke, 2nd Earl of Leicester of Holkham, 1822-12-26 - 1909-01-24
+  gen:father <https://www.wikidata.org/wiki/Q5944748> ;
+  gen:mother <keppel.ttl#Lady_Anne_Amelia_Keppel> .
+  # oo Juliana Whitbread, 1825-06-03 - 1870-04-21
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7612333> , <wemyss.ttl#Juliana_Whitbread> ;
+	gen:startDate "1843-04-20" .
+  # oo Hon. Georgina Caroline Cavendish, 1852-02-04 - 1937-02-26
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7612333> , <cavendish.ttl#Georgina_Caroline_Cavendish> ;
+	gen:startDate "1875-08-26" .
+<#Edward_Keppel_Coke>
+  # Hon. Edward Keppel Coke, 1824-08-20 - 1889-05-26
+  gen:father <https://www.wikidata.org/wiki/Q5944748> ;
+  gen:mother <keppel.ttl#Lady_Anne_Amelia_Keppel> .
+  # oo Hon. Diana Mary Blanche Georgiana Agar-Ellis, d. 1890-07-18
+  []
+    gen:spouse <#Edward_Keppel_Coke> , <howard.ttl#Diana_Mary_Blanche_Georgiana_Agar-Ellis> ;
+	gen:startDate "1851-08-05" .
+<#Henry_John_Coke>
+  # Hon. Henry John Coke, of Longford Hall, 1827-01-03 - 1916-11-12
+  gen:father <https://www.wikidata.org/wiki/Q5944748> ;
+  gen:mother <keppel.ttl#Lady_Anne_Amelia_Keppel> .
+  # oo Lady Katherine Grey Egerton, d. 1920-01-28
+  []
+    gen:spouse <#Henry_John_Coke> , <grosvenor.ttl#Lady_Katherine_Grey_Egerton> ;
+	gen:startDate "1861-07-22" .
+<#Lady_Margaret_Sophia_Coke>
+  # Lady Margaret Sophia Coke, 1829~ - 1868-11-04
+  gen:father <https://www.wikidata.org/wiki/Q5944748> ;
+  gen:mother <keppel.ttl#Lady_Anne_Amelia_Keppel> .
+  # oo 1849-05-01 Sir Archibald Keppel Macdonald, 3rd Baronet, 1820-10-15 - 1901-03-28, gower.ttl#Sir_Archibald_Keppel_Macdonald,_3rd_Baronet
+<#Eliza_Grace_Coke>
+  # Eliza Grace Coke, b. 1797
+  gen:father <#Edward_Coke,_of_Longford> ;
+  gen:mother <#Grace_Colhoun> .
+  # oo 1822-08-29 Hon. Henry Venables-Vernon, 1796 - 1845-12-12, howard.ttl#Henry_Venables-Vernon
+
+<https://www.wikidata.org/wiki/Q61754323>
+  # Lady Julia Coke, 1844-12-04 - 1931-08-07
+  gen:father <https://www.wikidata.org/wiki/Q7612333> ;
+  gen:mother <wemyss.ttl#Juliana_Whitbread> .
+  # oo 1864-04-26 Mervyn Wingfield, 7th Viscount Powerscourt, 1836-10-13 - 1904-06-05, https://www.wikidata.org/wiki/Q16031043
+<#Lady_Anne_Coke>
+  # Lady Anne Coke, 1845-12-11 - 1876-01-23
+  gen:father <https://www.wikidata.org/wiki/Q7612333> ;
+  gen:mother <wemyss.ttl#Juliana_Whitbread> .
+  # oo 1874-01-16 Edmund Manningham Manningham-Buller, 1828-06-11 - 1897-02-14, cavendish.ttl#Edmund_Manningham_Manningham-Buller
+<#Lady_Gertrude_Coke>
+  # Lady Gertrude Coke, 1847-07-05 - 1943-11-28
+  gen:father <https://www.wikidata.org/wiki/Q7612333> ;
+  gen:mother <wemyss.ttl#Juliana_Whitbread> .
+  # oo 1866-04-05 Charles Adolphus Murray, 7th Earl of Dunmore, 1841-03-24 - 1907-08-27, https://www.wikidata.org/wiki/Q1063510
+<https://www.wikidata.org/wiki/Q7612386>
+  # Thomas William Coke, 3rd Earl of Leicester of Holkham, 1848-07-20 – 1941-11-19
+  gen:father <https://www.wikidata.org/wiki/Q7612333> ;
+  gen:mother <wemyss.ttl#Juliana_Whitbread> .
+  # oo Hon. Alice Emily White, 1855-09-29 - 1936-04-24
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7612386> , <https://www.wikidata.org/wiki/Q4725783> ;
+	gen:startDate "1879-08-21" .
+<#Lady_Mary_Coke>
+  # Lady Mary Coke, 1849-09-18 - 1929-12-28
+  gen:father <https://www.wikidata.org/wiki/Q7612333> ;
+  gen:mother <wemyss.ttl#Juliana_Whitbread> .
+  # oo 1879-12-18 William Heneage Legge, 6th Earl of Dartmouth, 1851-05-06 – 1936-03-11, https://www.wikidata.org/wiki/Q8014457
+<#Lady_Winifred_Coke>
+  # Lady Winifred Coke, 1851-01-12 - 1940-03-22
+  gen:father <https://www.wikidata.org/wiki/Q7612333> ;
+  gen:mother <wemyss.ttl#Juliana_Whitbread> .
+  # oo 1873-09-02 Robert Bermingham Clements, 4th Earl of Leitrim, 1847-03-05 - 1892-04-05, https://www.wikidata.org/wiki/Q26218275
+<#Lady_Margaret_Coke>
+  # Lady Margaret Coke, 1852-04-24 - 1922-08-02
+  gen:father <https://www.wikidata.org/wiki/Q7612333> ;
+  gen:mother <wemyss.ttl#Juliana_Whitbread> .
+  # oo 1874-05-02 Henry Strutt, 2nd Baron Belper, 1840-05-20 – 1914-07-26, https://www.wikidata.org/wiki/Q5728825
+<#Lady_Mildred_Coke>
+  # Lady Mildred Coke, 1854 - 1941-05-12
+  gen:father <https://www.wikidata.org/wiki/Q7612333> ;
+  gen:mother <wemyss.ttl#Juliana_Whitbread> .
+  # oo 1878-11-05 Thomas Francis Anson, 3rd Earl of Lichfield, 1856-01-31 - 1918-07-29, gower.ttl#Thomas_Francis_Anson,_3rd_Earl_of_Lichfield
+<#Richard_Coke>
+  # Hon. Richard Coke, 1876-08-20 - 1964-06-14
+  gen:father <https://www.wikidata.org/wiki/Q7612333> ;
+  gen:mother <cavendish.ttl#Georgina_Caroline_Cavendish> .
+  # oo Hon. Doreen O'Brien, 1888-03-04 - 1960-06-10
+  []
+    gen:spouse <#Richard_Coke> , <#Doreen_O'Brien> ;
+	gen:startDate "1907-12-21" ;
+	gen:divorceDate "1927" .
+  # oo Elizabeth Vera Catherine Alice de Beaumont, 1898-03-06 - 1988
+  []
+    gen:spouse <#Richard_Coke> , <#Elizabeth_Vera_Catherine_Alice_de_Beaumont> ;
+	gen:startDate "1932-07-19" .
+<#Sir_John_Spencer_Coke>
+  # Hon. Sir John Spencer Coke, 1880-09-30 - 1957-12-23
+  gen:father <https://www.wikidata.org/wiki/Q7612333> ;
+  gen:mother <cavendish.ttl#Georgina_Caroline_Cavendish> .
+  # oo Hon. Dorothy Olive Levy-Lawson, 1885-01-26 - 1937-12-22
+  []
+    gen:spouse <#Sir_John_Spencer_Coke> , <#Dorothy_Olive_Levy-Lawson> ;
+	gen:startDate "1907-01-15" .
+<#Reginald_Coke>
+  # Hon. Reginald Coke, 1883-11-10 - 1969-04-30
+  gen:father <https://www.wikidata.org/wiki/Q7612333> ;
+  gen:mother <cavendish.ttl#Georgina_Caroline_Cavendish> .
+  # oo Katharine Ryder, 1899-01-16 - 1977-11
+  []
+    gen:spouse <#Reginald_Coke> , <#Katharine_Ryder> ;
+	gen:startDate "1924-07-17" .
+<#Sybil_Mary_Coke>
+  # Sybil Mary Coke, d. 1939-08-16
+  gen:father <#Henry_John_Coke> ;
+  gen:mother <grosvenor.ttl#Lady_Katherine_Grey_Egerton> .
+  # oo 1887-02-15 Sir Charles Crutchley, 1856-12-10 - 1920-12-01, https://www.wikidata.org/wiki/Q21557422
+
+<https://www.wikidata.org/wiki/Q7612491>
+  # Thomas William Coke, 4th Earl of Leicester of Holkham, 1880-07-09 – 1949-08-21
+  gen:father <https://www.wikidata.org/wiki/Q7612386> ;
+  gen:mother <https://www.wikidata.org/wiki/Q4725783> .
+  # oo Marion Gertrude Trefusis, 1882-08-03 - 1955-11-23
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7612491> , <#Marion_Gertrude_Trefusis> ;
+	gen:startDate "1905-12-02" .
+<#Arthur_George_Coke>
+  # Hon. Arthur George Coke, 1882-04-06 - 1915-05-21
+  gen:father <https://www.wikidata.org/wiki/Q7612386> ;
+  gen:mother <https://www.wikidata.org/wiki/Q4725783> .
+  # oo Phyllis Hermione Drury, d. 1976-09-22, daughter of Francis Saxham Elwas Drury
+  []
+    gen:spouse <#Arthur_George_Coke> , <#Phyllis_Hermione_Drury> ;
+	gen:startDate "1906-05-10" .
+<#Lady_Marjory_Alice_Coke>
+  # Lady Marjory Alice Coke, 1884 - 1946-12-24
+  gen:father <https://www.wikidata.org/wiki/Q7612386> ;
+  gen:mother <https://www.wikidata.org/wiki/Q4725783> .
+  # oo 1910-04-27 Sir North Victor Cecil Dalrymple-Hamilton, 1883-03-19 - 1953-02-16, dalrymple.ttl#Sir_North_Victor_Cecil_Dalrymple-Hamilton
+<#Lady_Alexandra_Marie_Bridget_Coke>
+  # Lady Alexandra Marie Bridget Coke, 1891 - 1984-03-06
+  gen:father <https://www.wikidata.org/wiki/Q7612386> ;
+  gen:mother <https://www.wikidata.org/wiki/Q4725783> .
+  # oo 1917-07-17 David Lyulph Gore Wolseley Ogilvy, 7th (12th) Earl of Airlie, 1893-07-18 - 1968-12-28, https://www.wikidata.org/wiki/Q5238204
+<#Richard_Lovel_Coke>
+  # Richard Lovel Coke, 1918-04-03 - 2001-04-25
+  gen:father <#Richard_Coke> ;
+  gen:mother <#Doreen_O'Brien> .
+  # oo Molly Fletcher, d. 1997-04-12, daughter of Walter Townshend Fletcher
+  []
+    gen:spouse <#Richard_Lovel_Coke> , <#Molly_Fletcher> ;
+	gen:startDate "1951-04-28" .
+<#Bridget_Doreen_Coke>
+  # Bridget Doreen Coke, 1924-02-24 - 2009-09-09
+  gen:father <#Richard_Coke> ;
+  gen:mother <#Doreen_O'Brien> .
+  # oo 1943-12-18 (div 1953) Thomas Richard Edwards-Moss, 1921-10-24 - 1974-11-02
+  # oo 1953-06-03 Phelim Robert Hugh O'Neill, 2nd Baron Rathcavan, 1909-11-02 - 1994-12-20, https://www.wikidata.org/wiki/Q7181222
+<#Elizabeth_Charmian_Coke>
+  # Elizabeth Charmian Coke, b. 1935-08-18
+  gen:father <#Richard_Coke> ;
+  gen:mother <#Elizabeth_Vera_Catherine_Alice_de_Beaumont> .
+  # oo 1960-02-13 Richard Francis Spickernell, 1930-11-29 - 2008-09-19, fitzgerald.ttl#Richard_Francis_Spickernell
+<#Rosemary_Olive_Coke>
+  # Rosemary Olive Coke, 1910-11-18 - 1993
+  gen:father <#Sir_John_Spencer_Coke> ;
+  gen:mother <#Dorothy_Olive_Levy-Lawson> .
+  # oo 1935-03-04 John d'Henin Hamilton, 3rd Baron Hamilton of Dalzell, 1911-05-01 - 1990-02, https://www.wikidata.org/wiki/Q25973115
+
+<https://www.wikidata.org/wiki/Q7612557>
+  # Thomas William Edward Coke, 5th Earl of Leicester of Holkham, 1908-05-16 – 1976-09-03
+  gen:father <https://www.wikidata.org/wiki/Q7612491> ;
+  gen:mother <#Marion_Gertrude_Trefusis> .
+  # oo Lady Elizabeth Mary Yorke, 1912-03-10 - 1985
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7612557> , <#Lady_Elizabeth_Mary_Yorke> ;
+	gen:startDate "1931-10-01" .
+<https://www.wikidata.org/wiki/Q5232459>
+  # Hon. David Arthur Coke, 1915-12-04 - 1941-12-09
+  gen:father <https://www.wikidata.org/wiki/Q7612491> ;
+  gen:mother <#Marion_Gertrude_Trefusis> .
+<https://www.wikidata.org/wiki/Q4772286>
+  # Anthony Louis Lovel Coke, 6th Earl of Leicester of Holkham, 1909-09-11 – 1994-06-19
+  gen:father <#Arthur_George_Coke> ;
+  gen:mother <#Phyllis_Hermione_Drury> .
+  # oo Moyra Joan Crossley, d. 1987, daughter of Douglas Crossley
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4772286> , <#Moyra_Joan_Crossley> ;
+	gen:startDate "1934-09-11" ;
+	gen:divorceDate "1947" .
+  # oo Vera Haigh, d. 1984, daughter of Herbert William Haigh
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4772286> , <#Vera_Haigh> ;
+	gen:startDate "1947" .
+  # oo Elizabeth Hope Smith Johnstone, daughter of Clifford Arthur Johnstone
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4772286> , <#Elizabeth_Hope_Smith_Johnstone> ;
+	gen:startDate "1985" .
+<#Diana_Caroline_Coke>
+  # Diana Caroline Coke, 1953-01-11 - 1994-01-08
+  gen:father <#Richard_Lovel_Coke> ;
+  gen:mother <#Molly_Fletcher> .
+  # oo 1975-01-09 Malcolm Ian Sinclair, 20th Earl of Caithness, b. 1948-11-03, https://www.wikidata.org/wiki/Q335726
+
+<#Lady_Anne_Veronica_Coke>
+  # Lady Anne Veronica Coke, b. 1932-07-16
+  gen:father <https://www.wikidata.org/wiki/Q7612557> ;
+  gen:mother<#Lady_Elizabeth_Mary_Yorke> .
+  # oo 1956-04-21 Colin Christopher Paget Tennant, 3rd Baron Glenconner, 1926-12-01 - 2010-08-27, https://www.wikidata.org/wiki/Q1108694
+<#Lady_Carey_Elizabeth_Coke>
+  # Lady Carey Elizabeth Coke, 1934-05-05 - 2018-05-14
+  gen:father <https://www.wikidata.org/wiki/Q7612557> ;
+  gen:mother<#Lady_Elizabeth_Mary_Yorke> .
+  # oo 1960-04-30 Bryan Ronald Basset, 1932-10-29 - 2010-11-08, #Bryan_Ronald_Basset
+<#Lady_Sarah_Marion_Coke>
+  # Lady Sarah Marion Coke, b. 1944-07-23
+  gen:father <https://www.wikidata.org/wiki/Q7612557> ;
+  gen:mother<#Lady_Elizabeth_Mary_Yorke> .
+  # oo 1970-06-27 David Finlayson Wylie-Hill Walter, b. 1934-01-21, son of Reginald Walter
+<https://www.wikidata.org/wiki/Q5342349>
+  # Edward Douglas Coke, 7th Earl of Leicester of Holkham, 1936-05-06 - 2015-04-25
+  gen:father <https://www.wikidata.org/wiki/Q4772286> ;
+  gen:mother <#Moyra_Joan_Crossley> .
+  # oo Valeria Phyllis Potter, daughter of Leonard A. Potter
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5342349> , <#Valeria_Phyllis_Potter> ;
+	gen:startDate "1962-04-28" ;
+	gen:divorceDate "1985" .
+  # oo Sarah Forde, daughter of Noel Henry Boys Forde
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5342349> , <#Sarah_Forde> ;
+	gen:startDate "1986" .
+
+<https://www.wikidata.org/wiki/Q7788516>
+  # Thomas Edward Coke, 8th Earl of Leicester of Holkham, b. 1965-07-06
+  gen:father <https://www.wikidata.org/wiki/Q5342349> ;
+  gen:mother <#Valeria_Phyllis_Potter> .
+  # oo Polly Maria Whately, b. 1967-05-30, daughter of Thomas David Whately and Belinda Bellville
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7788516> , <#Polly_Maria_Whately> ;
+	gen:startDate "1996-12-21" .
+
+<#Hermione_Belinda_Coke>
+  # Hon. Hermione Belinda Coke, b. 1998-12-29
+  gen:father <https://www.wikidata.org/wiki/Q7788516> ;
+  gen:mother <#Polly_Maria_Whately> .
+<#Juno_Carey_Coke>
+  # Hon. Juno Carey Coke, b. 2000-10-21
+  gen:father <https://www.wikidata.org/wiki/Q7788516> ;
+  gen:mother <#Polly_Maria_Whately> .
+<#Edward_Horatio_Coke,_Viscount_Coke>
+  # Edward Horatio Coke, Viscount Coke, b. 2003-06-11
+  gen:father <https://www.wikidata.org/wiki/Q7788516> ;
+  gen:mother <#Polly_Maria_Whately> .
+<#Elizabeth_Coke_(born_2006)>
+  # Hon. Elizabeth Coke, b. 2006-01-07
+  gen:father <https://www.wikidata.org/wiki/Q7788516> ;
+  gen:mother <#Polly_Maria_Whately> .
+
+
+# ----
+# villiers.ttl:
+<https://www.wikidata.org/wiki/Q6262001>
+  # John Villiers, 1st Viscount Purbeck, 1591~ - 1658-02-18
+  # 1st Baron Stoke, co. Buckingham, 1st Viscount Purbeck 1619-07-19
+  gen:father <https://www.wikidata.org/wiki/Q5545499> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6780887> .
+  # oo Frances Coke, 1601 - 1645-06-04
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6262001> , <https://www.wikidata.org/wiki/Q16859679> ;
+	gen:startDate "1617-09-29" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q7528040>
+  # Sir John Rous, 1st Baronet, 1608 - 1670-11-27
+  # 1st Baronet Rous, of Henham Hall 1660-08-17
+  # oo Elizabeth Knyvett, d. 1670-07-07, daughter of Thomas Knyvett
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7528040> , <#Elizabeth_Knyvett> ;
+	gen:startDate "1656" .
+
+<#Mary_Rous>
+  # Mary Rous
+  gen:father <https://www.wikidata.org/wiki/Q7528040> ;
+  gen:mother <#Elizabeth_Knyvett> .
+  # oo 1647~ Richard Coke, of Thorington, 1622-09-08b - 1669-11-11b, https://www.wikidata.org/wiki/Q52436764
+
+# ----
+<#Sir_John_Newton,_3rd_Baronet>
+  # Sir John Newton, 3rd Baronet, 1651~ - 1734-02-12
+  gen:father <https://www.wikidata.org/wiki/Q7527967> .
+  # and Mary Eyre
+  # oo Abigail Heveningham, d. 1686-05-11
+  []
+    gen:spouse <#Sir_John_Newton,_3rd_Baronet> , <#Abigail_Heveningham> ;
+	gen:startDate "1676-06-22" .
+
+<#Cary_Newton>
+  # Cary Newton, 1680-06-09 - 1707-08-04
+  gen:father <#Sir_John_Newton,_3rd_Baronet> ;
+  gen:mother <#Abigail_Heveningham> .
+  # oo 1696~ Edward Coke, d. 1707-04-13, #Edward_Coke
+# ----
+#<#William_Heveningham>
+  # William Heveningham, d. 1677-02-20
+  # oo Lady Mary Carey, 1631-10-06 - 1696-01-19
+  []
+    gen:spouse <#William_Heveningham> , <#Lady_Mary_Carey> ;
+	gen:startDate "1655-04-25" .
+
+<#Abigail_Heveningham>
+  # Abigail Heveningham, d. 1686-05-11
+  gen:father <#William_Heveningham> ;
+  gen:mother <#Lady_Mary_Carey> .
+  # oo 1676-06-22 Sir John Newton, 3rd Baronet, 1651~ - 1734-02-12, #Sir_John_Newton,_3rd_Baronet
+# ----
+<#Lady_Mary_Carey>
+  # Lady Mary Carey, 1631-10-06 - 1696-01-19
+  gen:father <https://www.wikidata.org/wiki/Q15438988> .
+  # and Abigail Cokayne
+  # oo 1655-04-25 William Heveningham, d. 1677-02-20, #William_Heveningham
+
+# ----
+#<https://www.wikidata.org/wiki/Q3018066>
+  # Thomas Wharton, 1st Marquess of Wharton, 1648-08 - 1716-04-12
+  # oo Lucy Loftus, 1670 - 1717
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3018066> , <#Lucy_Loftus> .
+
+<#Jane_Wharton>
+  # Jane Wharton, d. 1757-12-22a/1761-01-19b
+  gen:father <https://www.wikidata.org/wiki/Q3018066> ;
+  gen:mother <#Lucy_Loftus> .
+  # oo 1733-06-13 Robert Coke, #Robert_Coke
+# ----
+#<https://www.wikidata.org/wiki/Q4679419>
+  # Adam Loftus, 1st Viscount Lisburne, d. 1691-09-15
+  # 1st Viscount Lisburne, 1st Baron of Rathfarnham, co. Dublin 1686-01-29
+  # oo Lucy Brydges, d. 1689-07-12~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4679419> , <stanley.ttl#Lucy_Brydges> .
+
+<#Lucy_Loftus>
+  # Lucy Loftus, 1670 - 1717
+  gen:father <https://www.wikidata.org/wiki/Q4679419> ;
+  gen:mother <stanley.ttl#Lucy_Brydges> .
+  # oo Thomas Wharton, 1st Marquess of Wharton, 1648-08 - 1716-04-12, https://www.wikidata.org/wiki/Q3018066>
+
+# ----
+#<https://www.wikidata.org/wiki/Q28955431>
+  # George Chamberlayne, 1703~ – 1757
+
+<#Elizabeth_Chamberlayne>
+  # Elizabeth Chamberlayne, d. 1810
+  gen:father <https://www.wikidata.org/wiki/Q28955431> .
+  # oo Wenman Coke, 1717~ - 1776-04-11, https://www.wikidata.org/wiki/Q5610526
+
+# ----
+<https://www.wikidata.org/wiki/Q6132984>
+  # James Naper Dutton, 1st Baron Sherborne, 1744-10-22 – 1820-05-22
+  # 1st Baron Sherborne, co. Gloucester, 1784
+  gen:father <#James_Lenox_Dutton> ;
+  gen:mother <#Jane_Bond> .
+  # oo Elizabeth Coke, 1753-05-28 - 1824-12-17
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6132984> , <#Elizabeth_Coke_(died_1824)> ;
+	gen:startDate "1774-07-07" .
+<dutton.ttl#Jane_Dutton>
+  # Jane Dutton, 1753-11-29 - 1800-06-02
+  gen:father <#James_Lenox_Dutton> ;
+  gen:mother <#Jane_Bond> .
+  # oo 1775-10-05 Thomas William Coke, 1st Earl of Leicester of Holkham, 1754-05-06 – 1842-06-30, https://www.wikidata.org/wiki/Q5944748
+
+<https://www.wikidata.org/wiki/Q6230556>
+  # John Dutton, 2nd Baron Sherborne, 1779-06-24 - 1862-10-18
+  gen:father <https://www.wikidata.org/wiki/Q6132984> ;
+  gen:mother <#Elizabeth_Coke_(died_1824)> .
+  # oo Hon. Mary Legge, 1780 - 1864-10-21
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6230556> , <legge.ttl#Mary_Legge_(died_1864)> ;
+	gen:startDate "1803-08-11" .
+<dutton.ttl#Elizabeth_Jane_Dutton>
+  # Hon. Elizabeth Jane Dutton, 1775-05-28 - 1836-04-18
+  gen:father <https://www.wikidata.org/wiki/Q6132984> ;
+  gen:mother <#Elizabeth_Coke_(died_1824)> .
+  # oo 1803-01-14 Thomas Howard, 16th Earl of Suffolk, 1776-08-18 - 1851-12-04, https://www.wikidata.org/wiki/Q7790839
+
+<https://www.wikidata.org/wiki/Q6132982>
+  # James Henry Legge Dutton, 3rd Baron Sherborne, 1804-05-30 - 1883-03-08
+  gen:father <https://www.wikidata.org/wiki/Q6230556> ;
+  gen:mother <legge.ttl#Mary_Legge_(died_1864)> .
+  # oo Lady Elizabeth Howard, 1803-11-06 - 1845-07-28
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6132982> , <howard.rrl#Lady_Elizabeth_Howard_(died_1845)> ;
+	gen:startDate "1826-06-22" .
+# ----
+#<https://www.wikidata.org/wiki/Q5718192>
+  # Henry Bilson-Legge, 2nd Baron Stawel of Somerton, 1757-02-22 - 1820-08-25
+  # oo Hon. Mary Curzon, 1760 - 1804-09-12
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5718192> , <curzon.ttl#Mary_Curzon> ;
+	gen:startDate "1779-07-01" .
+
+<legge.ttl#Mary_Legge_(died_1864)>
+  # Hon. Mary Legge, 1780 - 1864-10-21
+  gen:father <https://www.wikidata.org/wiki/Q5718192> ;
+  gen:mother <curzon.ttl#Mary_Curzon> .
+  # oo 1803-08-11 John Dutton, 2nd Baron Sherborne, 1779-06-24 - 1862-10-18, https://www.wikidata.org/wiki/Q6230556
+
+<https://www.wikidata.org/wiki/Q8014457>
+  # William Heneage Legge, 6th Earl of Dartmouth, 1851-05-06 – 1936-03-11
+  gen:father <https://www.wikidata.org/wiki/Q7613861> ;
+  gen:mother <https://www.wikidata.org/wiki/Q18526579> .
+  # oo Lady Mary Coke, 1849-09-18 - 1929-12-28
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8014457> , <coke.ttl#Lady_Mary_Coke> ;
+	gen:startDate "1879-12-18" .
+
+<https://www.wikidata.org/wiki/Q6470120>
+  # Lady Elizabeth Legge, 1908-03-05 - 2000-11-30
+  gen:father <https://www.wikidata.org/wiki/Q8014459> .
+  # and Lady Ruperta Wynn-Carington
+  # oo 1931-10-31 Ronald Lambert Basset, 1898 - 1972, coke.ttl#Ronald_Lambert_Basset
+# ----
+#<https://www.wikidata.org/wiki/Q4808822>
+  # Assheton Curzon, 1st Viscount Curzon of Penn, 1730-02-02 -. 1820-03-21
+  # 1st Baron Curzon of Penn, co. Buckingham 1794-08-13
+  # 1st Viscount Curzon of Penn, co. Buckingham 1802-02-27
+  # oo Esther Hanmer, d. 1764-07-21, daughter of William Hanmer and Elizabeth Jennens
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4808822> , <#Esther_Hanmer> ;
+	gen:startDate "1756-02-21" .
+
+<curzon.ttl#Mary_Curzon>
+  # Hon. Mary Curzon, 1760 - 1804-09-12
+  gen:father <https://www.wikidata.org/wiki/Q4808822> ;
+  gen:mother <#Esther_Hanmer> .
+  # oo 1779-07-01 Henry Bilson-Legge, 2nd Baron Stawel of Somerton, 1757-02-22 - 1820-08-25, https://www.wikidata.org/wiki/Q5718192
+
+# ----
+<keppel.ttl#Lady_Anne_Amelia_Keppel>
+  # Lady Anne Amelia Keppel, 1803 - 1844-07-22
+  gen:father <https://www.wikidata.org/wiki/Q8013960> .
+  # and Hon. Elizabeth Southwell
+  # oo 1822-02-26 Thomas William Coke, 1st Earl of Leicester of Holkham, 1754-05-06 - 1842-06-30, https://www.wikidata.org/wiki/Q5944748
+
+# ----
+#<https://www.wikidata.org/wiki/Q27468351>
+  # Richard Wingfield, 5th Viscount Powerscourt, 1790-09-11 – 1823-08-09
+  # oo Lady Frances Theodosia Jocelyn, 1795 - 1820-05-10
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q27468351> , <#Lady_Frances_Theodosia_Jocelyn> ;
+	gen:startDate "1813-02-06" .
+
+<https://www.wikidata.org/wiki/Q7330043>
+  # Richard Wingfield, 6th Viscount Powerscourt, 1815-01-18 – 1844-08-11
+  gen:father <https://www.wikidata.org/wiki/Q27468351> ;
+  gen:mother <#Lady_Frances_Theodosia_Jocelyn> .
+  # oo Lady Elizabeth Frances Charlotte Jocelyn, d. 1884-09-02
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7330043> , <#Lady_Elizabeth_Frances_Charlotte_Jocelyn> ;
+	gen:startDate "1836-01-25" .
+
+<https://www.wikidata.org/wiki/Q16031043>
+  # Mervyn Wingfield, 7th Viscount Powerscourt, 1836-10-13 - 1904-06-05
+  gen:father <https://www.wikidata.org/wiki/Q7330043> ;
+  gen:mother <#Lady_Elizabeth_Frances_Charlotte_Jocelyn> .
+  # oo Lady Julia Coke, 1844-12-04 - 1931-08-07
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16031043> , <https://www.wikidata.org/wiki/Q61754323> ;
+	gen:startDate "1864-04-26" .
+# ----
+<https://www.wikidata.org/wiki/Q7346115>
+  # Robert Jocelyn, 3rd Earl of Roden, 1788-10-27 – 1870-03-20
+  gen:father <https://www.wikidata.org/wiki/Q7346114> .
+  # and Frances Theodosia Bligh
+  # oo Hon. Maria Frances Catherine Stapleton, 1793~ - 1861-02-25
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7346115> , <https://www.wikidata.org/wiki/Q30128096> ;
+	gen:startDate "1813-01-09" .
+<#Lady_Frances_Theodosia_Jocelyn>
+  # Lady Frances Theodosia Jocelyn, 1795 - 1820-05-10
+  gen:father <https://www.wikidata.org/wiki/Q7346114> .
+  # and Frances Theodosia Bligh
+  # oo 1813-02-06 Richard Wingfield, 5th Viscount Powerscourt, 1790-09-11 – 1823-08-09, https://www.wikidata.org/wiki/Q27468351
+
+<#Lady_Elizabeth_Frances_Charlotte_Jocelyn>
+  # Lady Elizabeth Frances Charlotte Jocelyn, d. 1884-09-02
+  gen:father <https://www.wikidata.org/wiki/Q7346115> ;
+  gen:mother <https://www.wikidata.org/wiki/Q30128096> .
+  # oo 1836-01-25 Richard Wingfield, 6th Viscount Powerscourt, 1815-01-18 – 1844-08-11, https://www.wikidata.org/wiki/Q7330043
+# ----
+#<https://www.wikidata.org/wiki/Q26905899>
+  # Sir Thomas Stapleton, 5th Baronet, 1727-02-24 - 1781-01-01
+  # oo Mary Fane, 1744~ - 1835-02-26, daughter of Henry Fane and Anne Wynn
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q26905899> , <#Mary_Fane> ;
+	gen:startDate "1765-11-27" .
+
+<https://www.wikidata.org/wiki/Q30123611>
+  # Thomas Stapleton, 12th Lord le Despenser, 1766-11-10 - 1831-10-03
+  # 6th Baronet Stapleton, of the Leeward Islands in America 1781-01-01
+  # 12th Lord le Despenser 1788-05-16
+  gen:father <https://www.wikidata.org/wiki/Q26905899> ;
+  gen:mother <#Mary_Fane> .
+  # oo Elizabeth Eliot, 1758~ - 1848-01-03, daughter of Samuel Eliot
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q30123611> , <#Elizabeth_Eliot> ;
+	gen:startDate "1791-07-29" .
+<#William_Stapleton>
+  # William Stapleton, 1770 - 1826
+  gen:father <https://www.wikidata.org/wiki/Q26905899> ;
+  gen:mother <#Mary_Fane> .
+
+<https://www.wikidata.org/wiki/Q30128162>
+  # Rev. Hon. Sir Francis Jarvis Stapleton, 7th Baronet, 1807-08-06 - 1874-02-11
+  gen:father <https://www.wikidata.org/wiki/Q30123611> ;
+  gen:mother <#Elizabeth_Eliot> .
+  # oo Margaret Airey, 1816~ - 1880-02-07
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q30128162> , <lennox.ttl#Margaret_Airey> ;
+	gen:startDate "1830-05-17" .
+<https://www.wikidata.org/wiki/Q30128096>
+  # Hon. Maria Frances Catherine Stapleton, 1793~ - 1861-02-25
+  gen:father <https://www.wikidata.org/wiki/Q30123611> ;
+  gen:mother <#Elizabeth_Eliot> .
+  # oo 1813-01-09 Robert Jocelyn, 3rd Earl of Roden, 1788-10-27 – 1870-03-20, https://www.wikidata.org/wiki/Q7346115
+<https://www.wikidata.org/wiki/Q30123577>
+  # Rev. Hon. Miles John Stapleton, 1801-03-21 - 1830-06-11
+  gen:father <https://www.wikidata.org/wiki/Q30123611> ;
+  gen:mother <#Elizabeth_Eliot> .
+  # oo Anne Byam Kerby, d. 1842-01-14
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q30123577> , <https://www.wikidata.org/wiki/Q30123632> ;
+	gen:startDate "1820-12-29" .
+<#John_Horace_Thomas_Stapleton>
+  # John Horace Thomas Stapleton, 1799b - 1836-12-07
+  gen:father <#William_Stapleton> ;
+  gen:mother <howard.ttl#Anna_Maria_Keppel> .
+  # oo Hon. Georgiana Maria FitzRoy, 1785-03-28 - 1830-08-08
+  []
+    gen:spouse <#John_Horace_Thomas_Stapleton> , <fitzroy.ttl#Georgiana_Maria_FitzRoy> ;
+	gen:startDate "1814-06-02" .
+  # oo Hon. Charlotte Georgiana Ponsonby, 1809-06-18 - 1883-09-07
+  []
+    gen:spouse <#John_Horace_Thomas_Stapleton> , <ponsonby.ttl#Charlotte_Georgiana_Ponsonby> ;
+	gen:startDate "1834-07-08" .
+
+<#Sir_Francis_George_Stapleton,_8th_Baronet>
+  # Sir Francis George Stapleton, 8th Baronet, 1831-03-19 - 1899-10-30
+  gen:father <https://www.wikidata.org/wiki/Q30128162> ;
+  gen:mother <lennox.ttl#Margaret_Airey> .
+  # oo Mary Catherine Gladstone, 1849 - 1924-04-22, daughter of Adam Steuart Gladstone and Caroline Walker
+  []
+    gen:spouse <#Sir_Francis_George_Stapleton,_8th_Baronet> , <#Mary_Catherine_Gladstone> ;
+	gen:startDate "1878-09-05" .
+<#Adelaide_Stapleton>
+  # Adelaide Stapleton, d. 1860-08-26
+  gen:father <https://www.wikidata.org/wiki/Q30123577> ;
+  gen:mother <https://www.wikidata.org/wiki/Q30123632> .
+  # oo 1851-10-23 Catesby Paget, 1809-11-29 - 1878-07-16, paget.ttl#Catesby_Paget
+
+<#Clare_Florence_Mary_Stapleton>
+  # Clare Florence Mary Stapleton, d. 1949-05-08
+  gen:father <#Sir_Francis_George_Stapleton,_8th_Baronet> ;
+  gen:mother <#Mary_Catherine_Gladstone> .
+  # oo 1914-01-19 Henry Arthur Mornington Wellesley, 3rd Earl Cowley, 1866-01-14 - 1919-01-15, https://www.wikidata.org/wiki/Q26356142
+# ----
+<https://www.wikidata.org/wiki/Q30123632>
+  # Anne Byam Kerby, d. 1842-01-14
+  gen:father <https://www.wikidata.org/wiki/Q30123678> .
+  # oo 1820-12-29 Rev. Hon. Miles John Stapleton, 1801-03-21 - 1830-06-11, https://www.wikidata.org/wiki/Q30123577
+
+# ----
+#<https://www.wikidata.org/wiki/Q6702449>
+  # Luke White, 2nd Baron Annaly of Annaly and Rathcline, 1829-09-26 – 1888-03-16
+  # oo Emily Stuart, d. 1915-01-22, daughter of James Stuart
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6702449> , <#Emily_Stuart> ;
+	gen:startDate "1853-08-24" .
+
+<https://www.wikidata.org/wiki/Q4725783>
+  # Hon. Alice Emily White, 1855-09-29 - 1936-04-24
+  gen:father <https://www.wikidata.org/wiki/Q6702449> ;
+  gen:mother <#Emily_Stuart> .
+  # oo 1879-08-21 Thomas William Coke, 3rd Earl of Leicester of Holkham, 1848-07-20 – 1941-11-19, https://www.wikidata.org/wiki/Q7612386
+<https://www.wikidata.org/wiki/Q21705473>
+  # Luke White, 3rd Baron Annaly of Annaly and Rathcline, 1857-02-25 - 1922-12-15
+  gen:father <https://www.wikidata.org/wiki/Q6702449> ;
+  gen:mother <#Emily_Stuart> .
+  # oo Hon. Lilah Georgiana Augusta Constance Agar-Ellis, 1862-08-06 - 1944-01-27
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q21705473> , <howard.ttl#Lilah_Georgiana_Augusta_Constance_Agar-Ellis> ;
+	gen:startDate "1884-07-24" .
+
+<#Luke_White,_4th_Baron_Annaly>
+  # Luke Henry White, 4th Baron Annaly of Annaly and Rathcline, 1885-08-07 - 1970-05-04
+  gen:father <https://www.wikidata.org/wiki/Q21705473> ;
+  gen:mother <howard.ttl#Lilah_Georgiana_Augusta_Constance_Agar-Ellis> .
+  # oo Lady Lavinia Emily Spencer, 1899-09-29 - 1955-05-09
+  []
+    gen:spouse <#Luke_White,_4th_Baron_Annaly> , <spencer.ttl#Lady_Lavinia_Emily_Spencer> ;
+	gen:startDate "1919-04-09" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q26218275>
+  # Robert Bermingham Clements, 4th Earl of Leitrim, 1847-03-05 - 1892-04-05
+  # son of Rev. Hon. Francis Nathanial Clements and Charlotte King
+  # oo Lady Winifred Coke, 1851-01-12 - 1940-03-22
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q26218275> , <#Lady_Winifred_Coke> ;
+	gen:startDate "1873-09-02" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q5345487>
+  # Edward Strutt, 1st Baron Belper, 1801-10-26 – 1880-06-30
+  # 1st Baron Belper, of Belper, co. Derby 1856-08-29
+  # oo Amelia Harriet Otter, 1817~ - 1890-12-12
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5345487> , <#Amelia_Harriet_Otter> ;
+	gen:startDate "1837-03-28" .
+
+<https://www.wikidata.org/wiki/Q5728825>
+  # Henry Strutt, 2nd Baron Belper, 1840-05-20 – 1914-07-26
+  gen:father <https://www.wikidata.org/wiki/Q5345487> ;
+  gen:mother <#Amelia_Harriet_Otter> .
+  # oo Lady Margaret Coke, 1852-04-24 - 1922-08-02
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5728825> , <#Lady_Margaret_Coke> ;
+	gen:startDate "1874-05-02" .
+# ----
+<#Amelia_Harriet_Otter>
+  # Amelia Harriet Otter, 1817~ - 1890-12-12
+  gen:father <https://www.wikidata.org/wiki/Q8016400> .
+  # and Nancy Sadleir Bruère
+  # oo 1837-03-28 Edward Strutt, 1st Baron Belper, 1801-10-26 – 1880-06-30, https://www.wikidata.org/wiki/Q5345487
+
+# ----
+#<https://www.wikidata.org/wiki/Q5344657>
+  # Edward Donough O'Brien, 14th Baron of Inchiquin, 1839-05-14 - 1900-04-09
+  # oo Hon. Ellen Harriet White, 1854 - 1913-03-02
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5344657> , <#Ellen_Harriet_White> ;
+	gen:startDate "1874-01-29" .
+
+<#Doreen_O'Brien>
+  # Hon. Doreen O'Brien, 1888-03-04 - 1960-06-10
+  gen:father <https://www.wikidata.org/wiki/Q5344657> ;
+  gen:mother <#Ellen_Harriet_White> .
+  # oo 1907-12-21 (div 1927) Hon. Richard Coke, 1876-08-20 - 1964-06-14, #Richard_Coke
+# ----
+<#Ellen_Harriet_White>
+  # Hon. Ellen Harriet White, 1854 - 1913-03-02
+  gen:father <https://www.wikidata.org/wiki/Q6702449> .
+  # and Emily Stuart
+  # oo 1874-01-29 Edward Donough O'Brien, 14th Baron of Inchiquin, 1839-05-14 - 1900-04-09, https://www.wikidata.org/wiki/Q5344657
+
+# ----
+#<#Louis_Leopold_Martial_Baynard_de_Beaumont>
+  # Louis Leopold Martial Baynard de Beaumont, d. 1934-04-06
+  # oo Hon. Kathleen Mary O'Hagan, 1876-05-13 - 1974-03-25
+  []
+    gen:spouse <#Louis_Leopold_Martial_Baynard_de_Beaumont> , <bertie.ttl#Kathleen_Mary_O'Hagan> ;
+	gen:startDate "1897-05-20" .
+
+<#Elizabeth_Vera_Catherine_Alice_de_Beaumont>
+  # Elizabeth Vera Catherine Alice de Beaumont, 1898-03-06 - 1988
+  gen:father <#Louis_Leopold_Martial_Baynard_de_Beaumont> ;
+  gen:mother <bertie.ttl#Kathleen_Mary_O'Hagan> .
+  # oo 1932-07-19 Hon. Richard Coke, 1876-08-20 - 1964-06-14, #Richard_Coke
+
+# ----
+#<https://www.wikidata.org/wiki/Q5590514>
+  # Harry Lawson Webster Levy-Lawson, 1st Viscount Burnham, 1862-12-18 - 1933-07-20
+  # 2nd Baronet Levy-Lawson, of Hall Barn, Beaconsfield, co. Bucks, 2nd Baron Burnham, of Hall Barn, Beaconsfield, co. Bucks 1916-01-09
+  # 1st Viscount Burnham 1919-05-16
+  # oo Olive de Bathe, 1862-11-20 - 1939-12-20
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5590514> , <#Olive_de_Bathe> ;
+	gen:startDate "1884-01-02" .
+
+<#Dorothy_Olive_Levy-Lawson>
+  # Hon. Dorothy Olive Levy-Lawson, 1885-01-26 - 1937-12-22
+  gen:father <https://www.wikidata.org/wiki/Q5590514> ;
+  gen:mother <#Olive_de_Bathe> .
+  # oo 1907-01-15 Hon. Sir John Spencer Coke, 1880-09-30 - 1957-12-23, #Sir_John_Spencer_Coke
+# ----
+<#Olive_de_Bathe>
+  # Olive de Bathe, 1862-11-20 - 1939-12-20
+  gen:father <https://www.wikidata.org/wiki/Q7527241> .
+  # and Charlotte Clare
+  # oo 1884-01-02 Harry Lawson Webster Levy-Lawson, 1st Viscount Burnham, 1862-12-18 - 1933-07-20, https://www.wikidata.org/wiki/Q5590514
+
+# ----
+<#Edward_Alan_Dudley_Ryder>
+  # Hon. Edward Alan Dudley Ryder, 1869-10-22 - 1949-04-04
+  gen:father <https://www.wikidata.org/wiki/Q5727842> .
+  # and Susan Juliana Maria Hamilton Dent
+  # oo 1893-07-19 Lady Mary Maud Anson, 1869 - 1961-09-22, daughter of https://www.wikidata.org/wiki/Q7787091 and hamilton.ttl#Lady_Harriett_Georgiana_Louisa_Hamilton
+  []
+    gen:spouse <#Edward_Alan_Dudley_Ryder> , <hamilton.ttl#Lady_Mary_Maud_Anson> ;
+	gen:startDate "1893-07-19" .
+
+<#Katharine_Ryder>
+  # Katharine Ryder, 1899-01-16 - 1977-11
+  gen:father <#Edward_Alan_Dudley_Ryder> ;
+  gen:mother <hamilton.ttl#Lady_Mary_Maud_Anson> .
+  # oo 1924-07-17 Hon. Reginald Coke, 1883-11-10 - 1969-04-30, #Reginald_Coke
+
+# ----
+#<https://www.wikidata.org/wiki/Q21557422>
+  # Sir Charles Crutchley, 1856-12-10 - 1920-12-01
+  # oo Sybil Mary Coke, d. 1939-08-16
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q21557422> , <#Sybil_Mary_Coke> ;
+	gen:startDate "1887-02-15" .
+
+# ----
+#<#Thomas_Richard_Edwards-Moss>
+  # Thomas Richard Edwards-Moss, 1921-10-24 - 1974-11-02
+  # son of John Edwards-Moss
+  # and Dorothy Kate Gwyllyam Watkins
+  # oo Bridget Doreen Coke, 1924-02-24 - 2009-09-09
+  []
+    gen:spouse <#Thomas_Richard_Edwards-Moss> , <#Bridget_Doreen_Coke> ;
+	gen:startDate "1943-12-18" ;
+	gen:divorceDate "1953" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q8016253>
+  # William O'Neill, 1st Baron O'Neill of Shane's Castle, 1813-03-04 - 1883-04-18
+  # 1st Baron O'Neill of Shane's Castle, co. Antrim 1868-04-18
+  # son of Rev. Edward Chichester
+  # and Catherine Young
+  # oo Henrietta Torrens, d. 1857-01-17, daughter of Robert Torrens
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8016253> , <#Henrietta_Torrens> ;
+	gen:startDate "1839-01-03" .
+
+<https://www.wikidata.org/wiki/Q5344670>
+  # Edward O'Neill, 2nd Baron O'Neill of Shane's Castle, 1839-12-31 - 1928-11-19
+  gen:father <https://www.wikidata.org/wiki/Q8016253> ;
+  gen:mother <#Henrietta_Torrens> .
+  # oo Lady Louisa Katherine Emma Cochrane, d. 1942-08-10
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5344670> , <cochrane.ttl#Lady_Louisa_Katherine_Emma_Cochrane> ;
+	gen:startDate "1873-06-30" .
+
+<https://www.wikidata.org/wiki/Q16010090>
+  # Robert William Hugh O'Neill, 1st Baron Rathcavan, 1883-06-08 - 1982-11-28
+  # 1st Baronet O'Neill 1929-06-17
+  # 1st Baron Rathcavan, of The Braid, co. Antrim 1953-02-11
+  gen:father <https://www.wikidata.org/wiki/Q5344670> ;
+  gen:mother <cochrane.ttl#Lady_Louisa_Katherine_Emma_Cochrane> .
+  # oo Sylvia Irene Sandeman, d. 1972-07-19, daughter of Walter Albert Sandeman
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16010090> , <#Sylvia_Irene_Sandeman> ;
+	gen:startDate "1909-02-11" .
+
+<https://www.wikidata.org/wiki/Q7181222>
+  # Phelim Robert Hugh O'Neill, 2nd Baron Rathcavan, 1909-11-02 - 1994-12-20
+  gen:father <https://www.wikidata.org/wiki/Q16010090> ;
+  gen:mother <#Sylvia_Irene_Sandeman> .
+  # oo Bridget Doreen Coke, 1924-02-24 - 2009-09-09
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7181222> , <#Bridget_Doreen_Coke> ;
+	gen:startDate "1953-06-03" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q21716170>
+  # Charles Alexander Yorke, 8th Earl of Hardwicke, 1869-11-11 - 1936-02-01
+  # oo Ellen Russell, d. 1968-02-16, daughter of James Russell
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q21716170> , <#Ellen_Russell> ;
+	gen:startDate "1911-04-27" ;
+	gen:divorceDate "1927" .
+
+<#Lady_Elizabeth_Mary_Yorke>
+  # Lady Elizabeth Mary Yorke, 1912-03-10 - 1985
+  gen:father <https://www.wikidata.org/wiki/Q21716170> ;
+  gen:mother <#Ellen_Russell> .
+  # oo 1931-10-01 Thomas William Edward Coke, 5th Earl of Leicester of Holkham, 1908-05-16 – 1976-09-03, https://www.wikidata.org/wiki/Q7612557
+
+# ----
+<https://www.wikidata.org/wiki/Q335726>
+  # Malcolm Ian Sinclair, 20th Earl of Caithness, b. 1948-11-03
+  gen:father <https://www.wikidata.org/wiki/Q7356679> .
+  # and Madeleine Gabrielle de Pury
+  # oo Diana Caroline Coke, 1953-01-11 - 1994-01-08
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q335726> , <coke.ttl#Diana_Caroline_Coke> ;
+	gen:startDate "1975-01-09" .
+
+# ----
+#<#Ronald_Lambert_Basset>
+  # Ronald Lambert Basset, 1898 - 1972
+  # oo Lady Elizabeth Legge, 1908-03-05 - 2000-11-30
+  []
+    gen:spouse <#Ronald_Lambert_Basset> , <https://www.wikidata.org/wiki/Q6470120> ;
+	gen:startDate "1931-10-31" .
+
+<#Bryan_Ronald_Basset>
+  # Bryan Ronald Basset, 1932-10-29 - 2010-11-08
+  gen:father <#Ronald_Lambert_Basset> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6470120> .
+  # oo Lady Carey Elizabeth Coke, 1934-05-05 - 2018-05-14
+  []
+    gen:spouse <#Bryan_Ronald_Basset> , <#Lady_Carey_Elizabeth_Coke> ;
+	gen:startDate "1960-04-30" .

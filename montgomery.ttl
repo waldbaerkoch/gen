@@ -1,0 +1,153 @@
+@base <montgomery.ttl> .
+@prefix wdata: <https://www.wikidata.org/wiki/> .
+@prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix gen: <http://jjkoch.de/gen#> .
+
+#<#William_Montgomery_of_Magbiehill>
+  # William Montgomery of Magbiehill, 1683~ - 1768
+  # son of William Montgomery of Magbiehill
+  # oo Barbara Rutherford, daughter of Robert Rutherford of Bowland, Stow, Midlothian
+
+<#Sir_William_Montgomery,_of_Magbiehill,_1st_Baronet>
+  # Sir William Montgomery, of Magbiehill, 1st Baronet, 1717-11-19
+  # 1st Baronet Montgomery, of Magbiehill 1774-10-29
+  gen:father <#William_Montgomery_of_Magbiehill> .
+  # and Barbara Rutherford
+  # oo Hannah Tomkyns, daughter of Alexander Tomkyns
+  []
+    gen:spouse <#Sir_William_Montgomery,_of_Magbiehill,_1st_Baronet> , <#Hannah_Tomkyns> ;
+	gen:startDate "1750-07-01" .
+  # oo Anne Evatt, d. 1777-06-19, daughter of Humphry Evatt
+  []
+    gen:spouse <#Sir_William_Montgomery,_of_Magbiehill,_1st_Baronet> , <#Anne_Evatt> ;
+	gen:startDate "1762-01-09" .
+<https://www.wikidata.org/wiki/Q7527468>
+  # Sir James Montgomery of Stanhope, 1st Baronet, 1721-10 – 1803-04-02
+  # 1st Baronet Montgomery, of Stanhope, co. Peebles 1801-07-16
+  gen:father <#William_Montgomery_of_Magbiehill> .
+  # and Barbara Rutherford
+  # oo Margaret Scot, daughter and heiress of Robert Scot of Killearn, Stirlingshire
+
+<https://www.wikidata.org/wiki/Q46152036>
+  gen:name "Anne Montgomery"@en ;
+  gen:birthDate "1752~" ;
+  gen:deathDate "1819-03-29" ;
+  gen:father <#Sir_William_Montgomery,_of_Magbiehill,_1st_Baronet> ;
+  gen:mother <#Hannah_Tomkyns> .
+  # oo 1773-05-19 George Townshend, 1st Marquess Townshend of Raynham, 1724-02-28 – 1807-09-14, https://www.wikidata.org/wiki/Q3101971
+<https://www.wikidata.org/wiki/Q26203986>
+  # Sir George Montgomery of Magbiehill, 2nd Baronet, 1763~ - 1831-07-09
+  gen:father <#Sir_William_Montgomery,_of_Magbiehill,_1st_Baronet> ;
+  gen:mother <#Anne_Evatt> .
+<https://www.wikidata.org/wiki/Q16859099>
+  # Sir James Montgomery of Stanhope, 2nd Baronet, 1766-10-09 - 1839-05-27
+  gen:father <https://www.wikidata.org/wiki/Q7527468> .
+  # and Margaret Scot
+  # oo Lady Elizabeth Douglas, 1789b - 1814-10-28
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16859099> , <douglas.ttl#Lady_Elizabeth_Douglas_(died_1814)> ;
+	gen:startDate "1804-08-01" .
+  # oo Helen Graham, d. 1828, daughter of Thomas Graham
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16859099> , <#Helen_Graham> ;
+	gen:startDate "1816" .
+<#Robert_Montgomery>
+  # Robert Montgomery, 1775-06-05 - 1854-12-02
+  gen:father <https://www.wikidata.org/wiki/Q7527468> .
+  # and Margaret Scot
+  # oo Elizabeth Mason, d. 1870-03-29, daughter of Bryant Mason
+  []
+    gen:spouse <#Robert_Montgomery> , <#Elizabeth_Mason> ;
+	gen:startDate "1817-04-24" .
+
+<https://www.wikidata.org/wiki/Q7526999>
+  # Sir Graham Graham-Montgomery, 3rd Baronet, 1823-07-08 - 1901-06-02
+  gen:father <https://www.wikidata.org/wiki/Q16859099> ;
+  gen:mother <#Helen_Graham> .
+  # oo Alice Hope Johnstone, d. 1890-12-16
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7526999> , <hope.ttl#Alice_Hope_Johnstone> ;
+	gen:startDate "1845-04-10" .
+<#Thomas_Henry_Montgomery>
+  # Thomas Henry Montgomery, 1828-08-21 - 1879-01-20
+  gen:father <https://www.wikidata.org/wiki/Q16859099> ;
+  gen:mother <#Helen_Graham> .
+  # oo Hon. Anna Maria Elphinstone, d. 1914-03-20
+  []
+    gen:spouse <#Thomas_Henry_Montgomery> , <elphinstone.ttl#Anna_Maria_Elphinstone> ;
+	gen:startDate "1857-03-04" .
+<https://www.wikidata.org/wiki/Q6139947>
+  # Very Rev. James Francis Montgomery, 1818-07-10 – 1897-09-21
+  gen:father <#Robert_Montgomery> ;
+  gen:mother <#Elizabeth_Mason> .
+  # oo Hon. Elizabeth Mary Buller-Fullerton-Elphinstone, 1834 - 1902-09-24
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6139947> , <elphinstone.ttl#Elizabeth_Mary_Buller-Fullerton-Elphinstone> ;
+	gen:startDate "1860-01-17" .
+
+<#Alice_Anne_Graham-Montgomery>
+  # Alice Anne Graham-Montgomery, 1847-09-29 - 1931-09-15
+  gen:father <https://www.wikidata.org/wiki/Q7526999> ;
+  gen:mother <hope.ttl#Alice_Hope_Johnstone> .
+  # oo 1894-08-08 Wilbraham Egerton, 1st Earl Egerton of Tatton, 1832-01-17 - 1909-03-16, https://www.wikidata.org/wiki/Q7619928
+<#Sir_James_Graham-Montgomery,_4th_Baronet>
+  # Sir James Gordon Henry Graham-Montgomery, 4th Baronet, 1850-02-06 - 1902-11-08
+  gen:father <https://www.wikidata.org/wiki/Q7526999> ;
+  gen:mother <hope.ttl#Alice_Hope_Johnstone> .
+<https://www.wikidata.org/wiki/Q17119352>
+  # Sir Basil Templer Graham-Montgomery, 5th Baronet, 1852-03-01 - 1928-10-04
+  gen:father <https://www.wikidata.org/wiki/Q7526999> ;
+  gen:mother <hope.ttl#Alice_Hope_Johnstone> .
+  # oo Mary Katherine Moncreiffe, 1859-12-03 - 1910-07-30
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q17119352> , <hay.ttl#Mary_Katherine_Moncreiffe> ;
+	gen:startDate "1880-10-26" ;
+	gen:divorceDate "1905" .
+  # oo Theresa Blanche Verschoyle, d. 1936-06-24, daughter of Henry William Verschoyle
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q17119352> , <#Theresa_Blanche_Verschoyle> ;
+	gen:startDate "1905-06-06" .
+<https://www.wikidata.org/wiki/Q17125594>
+  # Rev. Sir Charles Percy Graham-Montgomery, 6th Baronet, 1855-09-06 - 1930-04-01
+  gen:father <https://www.wikidata.org/wiki/Q7526999> ;
+  gen:mother <hope.ttl#Alice_Hope_Johnstone> .
+  # oo Minnie Gertrude Compton Walker, d. 1922-02-13, daughter of Maj.-Gen. Chamberlain Walker
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q17125594> , <#Minnie_Gertrude_Compton_Walker> ;
+	gen:startDate "1887" .
+  # oo Rose Kathleen Sullivan, daughter of Peter John Sullivan
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q17125594> , <#Rose_Kathleen_Sullivan> ;
+	gen:startDate "1923" .
+<#Sir_Henry_James_Purvis-Russell-Hamilton-Montgomery,_7th_Baronet>
+  # Sir Henry James Purvis-Russell-Hamilton-Montgomery, 7th Baronet, 1859-09-06 - 1947-08-06
+  gen:father <#Thomas_Henry_Montgomery> ;
+  gen:mother <elphinstone.ttl#Anna_Maria_Elphinstone> .
+  # oo Mary Maude Purvis-Russell, d. 1947-10-06, daughter of T. Purvis-Russell
+  []
+    gen:spouse <#Sir_Henry_James_Purvis-Russell-Hamilton-Montgomery,_7th_Baronet> , <#Mary_Maude_Purvis-Russell> ;
+	gen:startDate "1882" .
+
+<#Walter_Basil_Graham-Montgomery>
+  # Walter Basil Graham-Montgomery, 1881 - 1928-03-23
+  gen:father <https://www.wikidata.org/wiki/Q17119352> ;
+  gen:mother <hay.ttl#Mary_Katherine_Moncreiffe> .
+  # oo Fanny Zarifi, daughter of Theodore M. Zarifi
+  []
+    gen:spouse <#Walter_Basil_Graham-Montgomery> , <#Fanny_Zarifi> ;
+	gen:startDate "1912-11-02" ;
+	gen:divorceDate "1914" .
+
+
+# Montgomery baronets, of The Hall (1808)
+# https://www.wikidata.org/wiki/Q26196567, Sir Henry Montgomery, 1st Baronet, 1765-03-15 - 1830-01-21
+
+# https://www.wikidata.org/wiki/Q18730424, Sir Henry Conyngham Montgomery, 2nd Baronet, 1803 - 1878
+# https://www.wikidata.org/wiki/Q41131128, Alfred Montgomery, 1814-04-13 - 1896
+  # oo 1842 Hon. Fanny Charlotte Wyndham, 1820-05 30 - 1893-01-27, https://www.wikidata.org/wiki/Q41130610
+
+# Admiral Sir Alexander Leslie Montgomery, 3rd Baronet, 1807 – 1888
+
+# Rachel Mary Montgomery, d. 1929-10-02
+  # daughter of Sir Alexander Leslie Montgomery, 3rd Baronet
+  # oo 1885-05-26 Rev. Reginald Bridges Knatchbull-Hugessen, son of https://www.wikidata.org/wiki/Q9250977 and Fanny Catherine Knight

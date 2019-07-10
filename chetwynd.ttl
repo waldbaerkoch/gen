@@ -1,0 +1,485 @@
+@base <chetwynd.ttl> .
+@prefix gen: <http://jjkoch.de/gen#> .
+@prefix wdata: <https://www.wikidata.org/wiki/> .
+@prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+
+#<#Sir_William_Chetwynd>
+  # Sir William Chetwynd, d. 1547
+  # oo Elizabeth Ferrers, daughter of Sir John Ferrers and Dorothy Harper
+
+<#Thomas_Chetwynd_(died_1555)>
+  # Thomas Chetwynd, d. 1555
+  gen:father <#Sir_William_Chetwynd> .
+  # and Elizabeth Ferrers
+  # oo Joanna Salter, daughter of Sir John Salter
+<#Anthony_Chetwynd>
+  # Anthony Chetwynd
+  gen:father <#Sir_William_Chetwynd> .
+  # and Elizabeth Ferrers
+  # oo Katherine Thickness, daughter of Ralph Thickness
+
+<#John_Chetwynd_(died_1592)>
+  # John Chetwynd, d. 1592-04-15
+  gen:father <#Thomas_Chetwynd_(died_1555)> .
+  # and Joanna Salter
+  # oo Mary Meverill, daughter of Louis Meverill
+  # oo Marjory Middlemore, d. 1602-12-20, daughter of Robert Middlemore
+<#John_Chetwynd>
+  # John Chetwynd
+  gen:father <#Anthony_Chetwynd> .
+  # and Katherine Thickness
+  # oo Mary Welles, daughter of Richard Welles
+
+<https://www.wikidata.org/wiki/Q7964545>
+  # Sir Walter Chetwynd, d. 1638-05-31
+  gen:father <#John_Chetwynd_(died_1592)> .
+  # and Marjory Middlemore
+  # oo Mary Mullins, d. 1588
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7964545> , <#Mary_Mullins> .
+  # oo Catherine Hastings
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7964545> , <#Lady_Catherine_Hastings> ;
+	gen:startDate "1605" .
+<#Thomas_Chetwynd_(died_1633)>
+  # Thomas Chetwynd, d. 1633
+  gen:father <#John_Chetwynd_(died_1592)> .
+  # and Marjory Middlemore
+  # oo Dorothy Colman, daughter of Walter Colman
+<#John_Chetwynd_(died_1674)>
+  # John Chetwynd, d. 1674
+  gen:father <#John_Chetwynd> .
+  # and Mary Welles
+  # oo Susannah Broughton, daughter of John Broughton
+
+<#Ralph_Chetwynd>
+  # Ralph Chetwynd, d. 1653
+  gen:father <#Thomas_Chetwynd_(died_1633)> .
+  # and Dorothy Colman
+  # oo Dorothy Twysden, daughter of Sir William Twysden
+<https://www.wikidata.org/wiki/Q6225902> # -> Viscount Chetwynd of Bearhaven
+  # John Chetwynd, 1662b - 1702-12-09
+  gen:father <#John_Chetwynd_(died_1674)> .
+  # and Susannah Broughton
+
+<#Richard_Chetwynd>
+  # Richard Chetwynd, d. 1693
+  gen:father <#Ralph_Chetwynd> .
+  # and Dorothy Twysden
+  # oo Ann Launder, daughter of William Launder
+
+<#Walter_Chetwynd>
+  # Walter Chetwynd, d. 1750-11-07
+  gen:father <#Richard_Chetwynd> .
+  # and Ann Launder
+  # oo Mary Sneyd, d. 1761, daughter of William Sneyd
+
+<#William_Chetwynd>
+  # William Chetwynd
+  gen:father <#Walter_Chetwynd> .
+  # and Mary Sneyd
+  # oo Martha St. Amand, d. 1774-03-01, daughter of James St. Amand and Elizabeth Juxon
+  []
+    gen:spouse <#William_Chetwynd> , <#Martha_St._Amand> ;
+	gen:startDate "1738" .
+
+
+# Chetwynd Baronet
+<#Sir_George_Chetwynd,_1st_Baronet>
+  # Sir George Chetwynd, 1st Baronet, 1739-07-26 - 1824-03-24
+  # 1st Baronet Chetwynd, of Brocton Hall, co. Stafford 1795-05-01
+  gen:father <#William_Chetwynd> ;
+  gen:mother <#Martha_St._Amand> .
+  # oo Jane Bantin, 1758~ - 1841-06-17, daughter of Richard Bantin
+  []
+    gen:spouse <#Sir_George_Chetwynd,_1st_Baronet> , <#Jane_Bantin> ;
+	gen:startDate "1783-06-05" .
+
+<https://www.wikidata.org/wiki/Q24254869>
+  # Sir George Chetwynd, 2nd Baronet, 1783-07-28 - 1850-05-24
+  gen:father <#Sir_George_Chetwynd,_1st_Baronet> ;
+  gen:mother <#Jane_Bantin> .
+  # oo Hannah Maria Sparrow, 1789b - 1860-06-07, daughter of John Sparrow and Elizabeth Moreton
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q24254869> , <#Hannah_Maria_Sparrow> ;
+	gen:startDate "1804-08-30" .
+
+<#Sir_George_Chetwynd,_3rd_Baronet>
+  # Sir George Chetwynd, 3rd Baronet, 1809-09-06 - 1869-03-24
+  gen:father <https://www.wikidata.org/wiki/Q24254869> .
+  # and Hannah Maria Sparrow
+  # oo Lady Charlotte Augusta Hill, 1815-06-30 - 1861-11-24
+  []
+    gen:spouse <#Sir_George_Chetwynd,_3rd_Baronet> , <#Lady_Charlotte_Augusta_Hill> ;
+	gen:startDate "1843-08-02" .
+<https://www.wikidata.org/wiki/Q16062537>
+  # William Henry Chetwynd, 1811-09-17 - 1890-07-05
+  gen:father <https://www.wikidata.org/wiki/Q24254869> ;
+  gen:mother <#Hannah_Maria_Sparrow> .
+  # oo Blanche Chetwynd-Talbot, d. 1898
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16062537> , <talbot.ttl#Blanche_Chetwynd-Talbot> ;
+	gen:startDate "1854-08-15" ;
+	gen:divorceDate "1865" .
+<#Georgiana_Chetwynd_(died_1880)>
+  # Georgiana Chetwynd, 1813~ - 1880-03-21
+  gen:father <https://www.wikidata.org/wiki/Q24254869> ;
+  gen:mother <#Hannah_Maria_Sparrow> .
+  # oo 1833-09-03 John Hanmer, 1st Baron Hanmer of Hanmer and Flint, 1809-12-22 - 1881-03-08, https://www.wikidata.org/wiki/Q6237617
+
+<https://www.wikidata.org/wiki/Q16059287>
+  # Sir George Chetwynd, 4th Baronet, 1849-05-31 – 1917-03-10
+  gen:father <#Sir_George_Chetwynd,_3rd_Baronet> ;
+  gen:mother <#Lady_Charlotte_Augusta_Hill> .
+  # oo Lady Florence Cecilia Paget, 1842-08 - 1907-02-03
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16059287> , <paget.ttl#Lady_Florence_Cecilia_Paget> ;
+	gen:startDate "1870-06-09" .
+<#Isabel_Marian_Chetwynd>
+  # Isabel Marian Chetwynd, d. 1930-09-17
+  gen:father <#Sir_George_Chetwynd,_3rd_Baronet> ;
+  gen:mother <#Lady_Charlotte_Augusta_Hill> .
+  # oo 1880-06-22 Robert Wellington Stapleton-Cotton, 3rd Viscount Combermere of Bhurtpore, 1845-06-18 - 1898-02-20, https://www.wikidata.org/wiki/Q26218179
+<#Georgiana_Chetwynd_(died_1931)>
+  # Georgiana Chetwynd, d. 1931-05-13
+  gen:father <#Sir_George_Chetwynd,_3rd_Baronet> ;
+  gen:mother <#Lady_Charlotte_Augusta_Hill> .
+  # oo 1874-05-04 Dudley Francis North, 7th Earl of Guilford, 1851-07-14 - 1885-12-19, https://www.wikidata.org/wiki/Q26208233
+<#Walter_Hill_Chetwynd>
+  # Walter Hill Chetwynd, 1856-01-13 - 1916-02-23
+  gen:father <#Sir_George_Chetwynd,_3rd_Baronet> ;
+  gen:mother <#Lady_Charlotte_Augusta_Hill> .
+  # oo Hon. Edomé Eliza Theodosia Monson, 1870~ - 1950-05-30
+  []
+    gen:spouse <#Walter_Hill_Chetwynd> , <#Edomé_Eliza_Theodosia_Monson> ;
+	gen:startDate "1890-06-14" .
+<#Florence_Chetwynd>
+  # Florence Chetwynd, d. 1936-05-26
+  gen:father <https://www.wikidata.org/wiki/Q16062537> ;
+  gen:mother <talbot.ttl#Blanche_Chetwynd-Talbot> .
+  # oo 1877-06-05 Lord Berkeley Charles Sydney Paget, 1844-03-05 - 1913-11-25, paget.ttl#Lord_Berkeley_Charles_Sydney_Paget
+<#Arthur_Chetwynd>
+  # Arthur Chetwynd, 1857-07-22 - 1926-08-15
+  gen:father <https://www.wikidata.org/wiki/Q16062537> ;
+  gen:mother <talbot.ttl#Blanche_Chetwynd-Talbot> .
+  # oo Kinbarra Swene Seckham, d. 1930-07-23, daughter of Samuel Lipscombe Seckham and Kinbarra Sweene Smith
+  []
+    gen:spouse <#Arthur_Chetwynd> , <#Kinbarra_Swene_Seckham> ;
+	gen:startDate "1886-06-23" .
+
+<#Sir_George_Chetwynd,_5th_Baronet>
+  # Sir George Guy Chetwynd, 5th Baronet, 1874-12-06 - 1935-08-27
+  gen:father <https://www.wikidata.org/wiki/Q16059287> ;
+  gen:mother <paget.ttl#Lady_Florence_Cecilia_Paget> .
+  # oo Rosalind Secor, d. 1922-10-08, daughter of William Holt Secor
+  []
+    gen:spouse <#Sir_George_Chetwynd,_5th_Baronet> , <#Rosalind_Secor> ;
+	gen:startDate "1902-01-02" ;
+	gen:divorceDate "1909" .
+  # oo Constance Winifred Amor, daughter of Albert Amor
+  []
+    gen:spouse <#Sir_George_Chetwynd,_5th_Baronet> , <#Constance_Winifred_Amor> ;
+	gen:startDate "1917-10-11" .
+<#Lilian_Florence_Maud_Chetwynd>
+  # Lilian Florence Maud Chetwynd, 1876-03-10 – 1962-02-20
+  gen:father <https://www.wikidata.org/wiki/Q16059287> ;
+  gen:mother <paget.ttl#Lady_Florence_Cecilia_Paget> .
+  # oo 1898-01-20 (div 1900-11-07) Henry Cyril Paget, 5th Marquess of Anglesey, 1875-06-16 - 1905-03-14, https://www.wikidata.org/wiki/Q5726678
+<#Sir_Talbot_Chetwynd,_7th_Baronet>
+  # Sir Arthur Henry _Talbot_ Chetwynd, 7th Baronet, 1887-04-13 - 1972-07-24
+  gen:father <#Arthur_Chetwynd> ;
+  gen:mother <#Kinbarra_Swene_Seckham> .
+  # oo Evelyn Margaret Andrews, 1890~ - 1972-08-23, daughter of Leonard Wodehouse Andrews
+  []
+    gen:spouse <#Sir_Talbot_Chetwynd,_7th_Baronet> , <#Evelyn_Margaret_Andrews> ;
+	gen:startDate "1914-10-25 divorced 1940" .
+  # oo Violet Mary Cripps, d. 1955-10-13, daughter of William Charles Cripps
+  []
+    gen:spouse <#Sir_Talbot_Chetwynd,_7th_Baronet> , <#Violet_Mary_Cripps> ;
+	gen:startDate "1940-07-29" .
+  # oo Frances Audrey Flawith-Smith, daughter of Dr. Thomas Flawith-Smith
+  []
+    gen:spouse <#Sir_Talbot_Chetwynd,_7th_Baronet> , <#Frances_Audrey_Flawith-Smith> ;
+	gen:startDate "1956-04-04" .
+<https://www.wikidata.org/wiki/Q7287337>
+  # William Ralph Talbot Chetwynd, 1890 - 1957-04-03
+  gen:father <#Arthur_Chetwynd> ;
+  gen:mother <#Kinbarra_Swene_Seckham> .
+  # oo Frances Mary Jupe, d. 1986, daughter of James Jupe
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7287337> , <#Frances_Mary_Jupe> ;
+	gen:startDate "1912-10-08" .
+
+<#Sir_Victor_Chetwynd,_6th_Baronet>
+  # Sir Victor James Guy Chetwynd, 6th Baronet, 1902-11-14 - 1938-11-25
+  gen:father <#Sir_George_Chetwynd,_5th_Baronet> ;
+  gen:mother <#Rosalind_Secor> .
+  # oo Annie Dorothy Christian Greswolde-Williams, 1898~ - 1927-01-10, daughter of Francis Wigley Greswolde Greswolde-Williams and Anna Louisa Ross
+  []
+    gen:spouse <#Sir_Victor_Chetwynd,_6th_Baronet> , <#Annie_Dorothy_Christian_Greswolde-Williams> ;
+	gen:startDate "1926-07-08" .
+  # oo Valian Betty Masson, d. 1946-09-04
+  []
+    gen:spouse <#Sir_Victor_Chetwynd,_6th_Baronet> , <#Valian_Betty_Masson> ;
+	gen:startDate "1929-01-16" .
+<#Sir_Arthur_Chetwynd,_8th_Baronet>
+  # Sir Arthur Ralph Talbot Chetwynd, 8th Baronet, 1913-10-28 - 2004
+  gen:father <https://www.wikidata.org/wiki/Q7287337> ;
+  gen:mother <#Frances_Mary_Jupe> .
+  # oo Marjory May MacDonald Lang, daughter of Robert Bruce Lang
+  []
+    gen:spouse <#Sir_Arthur_Chetwynd,_8th_Baronet> , <#Marjory_May_MacDonald_Lang> ;
+	gen:startDate "1940-08-26" .
+
+<#Sir_Robin_Chetwynd,_9th_Baronet>
+  # Sir Robin John Talbot Chetwynd, 9th Baronet, 1941-08-21 - 2012-05-18
+  gen:father <#Sir_Arthur_Chetwynd,_8th_Baronet> ;
+  gen:mother <#Marjory_May_MacDonald_Lang> .
+  # oo Heather Louise Lothian, daughter of George Bayliss Lothian
+  []
+    gen:spouse <#Sir_Robin_Chetwynd,_9th_Baronet> , <#Heather_Louise_Lothian> ;
+	gen:startDate "1967-09-23" ;
+	gen:divorceDate "1985" .
+  # oo Donna Irene Davey, daughter of Herbert Elgin Davey
+  []
+    gen:spouse <#Sir_Robin_Chetwynd,_9th_Baronet> , <#Donna_Irene_Davey> ;
+	gen:startDate "1986-10-02" .
+
+<#Sir_Peter_Chetwynd,_10th_Baronet>
+  # Sir Peter James Talbot Chetwynd, 10th Baronet, b. 1973-09-21
+  gen:father <#Sir_Robin_Chetwynd,_9th_Baronet> ;
+  gen:mother <#Heather_Louise_Lothian> .
+
+
+# Viscount Chetwynd of Bearhaven
+<https://www.wikidata.org/wiki/Q6225902>
+  # John Chetwynd, 1662b - 1702-12-09
+  gen:father <#John_Chetwynd_(died_1674)> .
+  # and Susannah Broughton
+  # oo Lucy Roane, daughter of Thomas Roane
+
+<https://www.wikidata.org/wiki/Q7964544>
+  # Walter Chetwynd, 1st Viscount Chetwynd of Bearhaven, 1678~ - 1736-02-21
+  # 1st Baron of Rathdowne, co. Dublin, 1st Viscount Chetwynd of Bearhaven, co. Kerry 1717-06-29
+  gen:father <https://www.wikidata.org/wiki/Q6225902> .
+  # and Lucy Roane
+  # oo Hon. Mary Berkeley, 1671b - 1737-02-28
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7964544> , <#Mary_Berkeley> ;
+	gen:startDate "1703-05-27" .
+<https://www.wikidata.org/wiki/Q6225904>
+  # John Chetwynd, 2nd Viscount Chetwynd of Bearhaven, 1680~ – 1767-06-21
+  gen:father <https://www.wikidata.org/wiki/Q6225902> .
+  # and Lucy Roane
+  # oo Esther Kent, 1700~ - 1741-06-10, daughter of Richard Kent and unknown FitzJames
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6225904> , <#Esther_Kent> ;
+	gen:startDate "1716-07-25b" .
+<https://www.wikidata.org/wiki/Q8006763>
+  # William Richard Chetwynd, 3rd Viscount Chetwynd of Bearhaven, 1684~ - 1770-04-03
+  gen:father <https://www.wikidata.org/wiki/Q6225902> .
+  # and Lucy Roane
+  # oo Honora Baker, d. 1726-09-01, daughter of William Baker and Deborah Robinson
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8006763> , <#Honora_Baker> ;
+	gen:startDate "1715-06-03" .
+
+<#Catherine_Chetwynd>
+  # Hon. Catherine Chetwynd, d. 1785-01-20
+  gen:father <https://www.wikidata.org/wiki/Q6225904> ;
+  gen:mother <#Esther_Kent> .
+  # oo 1748-08 Hon. John Talbot, 1712~ - 1756-09-23, https://www.wikidata.org/wiki/Q112266
+<#William_Chetwynd,_4th_Viscount_Chetwynd>
+  # William Chetwynd, 4th Viscount Chetwynd of Bearhaven, 1721-11-25 - 1791-11-12
+  gen:father <https://www.wikidata.org/wiki/Q8006763> ;
+  gen:mother <#Honora_Baker> .
+  # oo Susannah Cope, d. 1790-03-03
+  []
+    gen:spouse <#William_Chetwynd,_4th_Viscount_Chetwynd> , <howard.ttl#Susannah_Cope> ;
+	gen:startDate "1751-10-28" .
+
+<https://www.wikidata.org/wiki/Q28085802>
+  # Richard Chetwynd, 5th Viscount Chetwynd of Bearhaven, 1757-09-29 - 1821-02-27
+  gen:father <#William_Chetwynd,_4th_Viscount_Chetwynd> ;
+  gen:mother <howard.ttl#Susannah_Cope> .
+  # oo Charlotte Cartwright, 1772-05 - 1845-04-07, daughter of Thomas Cartwright and Mary Catherine Desaguliers
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q28085802> , <#Charlotte_Cartwright> ;
+	gen:startDate "1791-07-30" .
+<#Anderlechtia_Clarissa_Chetwynd>
+  # Hon. Anderlechtia Clarissa Chetwynd, 1765~ - 1855-06-03
+  gen:father <#William_Chetwynd,_4th_Viscount_Chetwynd> ;
+  gen:mother <howard.ttl#Susannah_Cope> .
+  # oo 1806-05-02 Lord Robert Seymour, 1748-12-20 - 1831-11-23, https://www.wikidata.org/wiki/Q6679925
+
+<https://www.wikidata.org/wiki/Q28085803>
+  # Richard Walter Chetwynd, 6th Viscount Chetwynd of Bearhaven, 1800-12-13 - 1879-12-06
+  gen:father <https://www.wikidata.org/wiki/Q28085802> ;
+  gen:mother <#Charlotte_Cartwright> .
+  # oo Mary Moss, 1799-04-20 - 1857-12-05, daughter of Robert Moss and Sophia Weyland
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q28085803> , <#Mary_Moss> ;
+	gen:startDate "1822-08-30" .
+  # oo Mary Hussey, 1820~ - 1901-06-07, daughter of John Hussey and Mary Christina Arundell
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q28085803> , <#Mary_Hussey> ;
+	gen:startDate "1861-09-24" .
+
+<#Richard_Chetwynd,_7th_Viscount_Chetwynd>
+  # Richard Walter Chetwynd, 7th Viscount Chetwynd of Bearhaven, 1823-07-26 - 1911-01-23
+  gen:father <https://www.wikidata.org/wiki/Q28085803> ;
+  gen:mother <#Mary_Moss> .
+  # oo Harriet Johanna Campbell, 1829~ - 1898-01-12, daughter of Walter Campbell and Mary Ann King
+  []
+    gen:spouse <#Richard_Chetwynd,_7th_Viscount_Chetwynd> , <#Harriet_Johanna_Campbell> ;
+	gen:startDate "1858-03-16" .
+<#Henry_Weyland_Chetwynd>
+  # Hon. Henry Weyland Chetwynd, 1829-10-08 - 1893-11-27
+  gen:father <https://www.wikidata.org/wiki/Q28085803> ;
+  gen:mother <#Mary_Moss> .
+  # oo Julia Bosville Davidson, d. 1901-10-17
+  []
+    gen:spouse <#Henry_Weyland_Chetwynd> , <#Julia_Bosville_Davidson> ;
+	gen:startDate "1858-02-08" .
+
+<https://www.wikidata.org/wiki/Q5576399>
+  # Godfrey John Boyle Chetwynd, 8th Viscount Chetwynd of Bearhaven, 1863-10-03 - 1936-03-22
+  gen:father <#Henry_Weyland_Chetwynd> ;
+  gen:mother <#Julia_Bosville_Davidson> .
+  # oo Hilda von Alvensleben Rusteberg, daughter of George Baron von Alvensleben Rusteberg
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5576399> , <#Hilda_von_Alvensleben-Rusteberg> ;
+	gen:startDate "1893-04-12" .
+  # oo Hon. Mary Eden, 1867-05-15 - 1924-01-22
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5576399> , <#Mary_Eden> ;
+	gen:startDate "1904-02-10" .
+
+<https://www.wikidata.org/wiki/Q28085804>
+  # Adam Duncan Chetwynd, 9th Viscount Chetwynd of Bearhaven, 1904-11-14 - 1965-06-12
+  gen:father <https://www.wikidata.org/wiki/Q5576399> ;
+  gen:mother <#Mary_Eden> .
+  # oo Joan Gilbert Casson, 1898-10-15 - 1979, daughter of Herbert Alexander Casson and Gertrude Russell
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q28085804> , <#Joan_Gilbert_Casson> ;
+	gen:startDate "1928-04-28" ;
+	gen:divorceDate "1951" .
+  # oo Dorothea Marianne Duncan-Johnstone, d. 1990, daughter of Angus Colin Duncan-Johnstone
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q28085804> , <#Dorothea_Marianne_Duncan-Johnstone> ;
+	gen:startDate "1952-01-17" .
+
+<#Adam_Chetwynd,_10th_Viscount_Chetwynd>
+  # Adam Richard John Casson Chetwynd, 10th Viscount Chetwynd of Bearhaven, 1935-02-02 - 2015-08-20
+  gen:father <https://www.wikidata.org/wiki/Q28085804> ;
+  gen:mother <#Joan_Gilbert_Casson> .
+  # oo Celia Grace Ramsay, b. 1947-08-07, daughter of Alexander Robert Ramsay and Helen Macgregor Shaw
+  []
+    gen:spouse <#Adam_Chetwynd,_10th_Viscount_Chetwynd> , <#Celia_Grace_Ramsay> ;
+	gen:startDate "1966-02-19" ;
+	gen:divorceDate "1974" .
+  # oo Angela May McCarthy, daughter of Jack Payne McCarthy
+  []
+    gen:spouse <#Adam_Chetwynd,_10th_Viscount_Chetwynd> , <#Angela_May_McCarthy> ;
+	gen:startDate "1975-08-15" .
+
+<#Adam_Chetwynd,_11th_Viscount_Chetwynd>
+  # Adam Douglas Chetwynd, 11th Viscount Chetwynd of Bearhaven, b. 1969-02-26
+  gen:father <#Adam_Chetwynd,_10th_Viscount_Chetwynd> ;
+  gen:mother <#Celia_Grace_Ramsay> .
+  # oo Joanna Marie Karatau, daughter of Laurence Herbert Karatau
+  []
+    gen:spouse <#Adam_Chetwynd,_11th_Viscount_Chetwynd> , <#Joanna_Marie_Karatau> ;
+	gen:startDate "2000" .
+
+<#Connor_Adam_Chetwynd>
+  # Hon. Connor Adam Chetwynd, b. 2001-10-18
+  gen:father <#Adam_Chetwynd,_11th_Viscount_Chetwynd> ;
+  gen:mother <#Joanna_Marie_Karatau> .
+<#Lachlan_Alexander_Chetwynd>
+  # Hon. Lachlan Alexander Chetwynd, b. 2003
+  gen:father <#Adam_Chetwynd,_11th_Viscount_Chetwynd> ;
+  gen:mother <#Joanna_Marie_Karatau> .
+<#Cassidy_Grace_Chetwynd>
+  # Hon. Cassidy Grace Chetwynd, b. 2006
+  gen:father <#Adam_Chetwynd,_11th_Viscount_Chetwynd> ;
+  gen:mother <#Joanna_Marie_Karatau> .
+
+
+# ----
+<#Mary_Mullins>
+  # Mary Mullins, d. 1588
+  gen:father <https://www.wikidata.org/wiki/Q18732194> .
+  # oo Sir Walter Chetwynd, d. 1638-05-31, https://www.wikidata.org/wiki/Q7964545
+
+# ----
+<#Lady_Catherine_Hastings>
+  # Lady Catherine Hastings
+  gen:father <https://www.wikidata.org/wiki/Q5540309> .
+  # and Dorothy Port
+  # oo Edward Unton of Wadley, Berkshire, d. 1589, https://www.wikidata.org/wiki/Q5345685
+  # oo 1605 Sir Walter Chetwynd, d. 1638-05-31, https://www.wikidata.org/wiki/Q7964545
+
+# ----
+<#Lady_Charlotte_Augusta_Hill>
+  # Lady Charlotte Augusta Hill, 1815-06-30 - 1861-11-24
+  gen:father <https://www.wikidata.org/wiki/Q4799070> .
+  # and Lady Maria Windsor
+  # oo 1843-08-02 Sir George Chetwynd, 3rd Baronet, 1809-09-06 - 1869-03-24, #Sir_George_Chetwynd,_3rd_Baronet
+
+# ----
+#<https://www.wikidata.org/wiki/Q6237617>
+  # John Hanmer, 1st Baron Hanmer of Hanmer and Flint, 1809-12-22 - 1881-03-08
+  # oo Georgiana Chetwynd, 1813~ - 1880-03-21
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6237617> , <#Georgiana_Chetwynd_(died_1880)> ;
+	gen:startDate "1833-09-03" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q26208233>
+  # Dudley Francis North, 7th Earl of Guilford, 1851-07-14 - 1885-12-19
+  # oo Georgiana Chetwynd, d. 1931-05-13
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q26208233> , <#Georgiana_Chetwynd_(died_1931)> ;
+	gen:startDate "1874-05-04" .
+
+# ----
+<#Edomé_Eliza_Theodosia_Monson>
+  # Hon. Edomé Eliza Theodosia Monson, 1870~ - 1950-05-30
+  gen:father <https://www.wikidata.org/wiki/Q56240761> .
+  # and Augusta Louisa Caroline Ellis
+  # oo 1890-06-14 Walter Hill Chetwynd, 1856-01-13 - 1916-02-23, #Walter_Hill_Chetwynd
+
+# ----
+#<https://www.wikidata.org/wiki/Q28064913>
+  # John Berkeley, 4th Viscount Fitzhardinge of Berehaven, 1650 - 1712-12-19
+  # oo Barbara Villiers, 1653 - 1708-09-19
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q28064913> , <villiers.ttl#Barbara_Villiers> .
+
+<#Mary_Berkeley>
+  # Hon. Mary Berkeley, 1671b - 1737-02-28
+  gen:father <https://www.wikidata.org/wiki/Q28064913> ;
+  gen:mother <villiers.ttl#Barbara_Villiers> .
+  # oo 1703-05-27 Walter Chetwynd, 1st Viscount Chetwynd of Bearhaven, 1678~ - 1736-02-21, https://www.wikidata.org/wiki/Q7964544
+
+# ----
+#<#Duncan_Davidson,_4th_of_Tulloch>
+  # Duncan Davidson, 4th of Tulloch, 1800 - 1881-09-20
+  # oo Hon. Elizabeth Diana Bosville Macdonald, 1804-02-27 - 1839-06-09
+  []
+    gen:spouse <#Duncan_Davidson,_4th_of_Tulloch> , <willoughby.ttl#Elizabeth_Diana_Bosville_Macdonald> ;
+	gen:startDate "1825-06-20" .
+
+<#Julia_Bosville_Davidson>
+  # Julia Bosville Davidson, d. 1901-10-17
+  gen:father <#Duncan_Davidson,_4th_of_Tulloch> ;
+  gen:mother <willoughby.ttl#Elizabeth_Diana_Bosville_Macdonald> .
+  # oo 1858-02-08 Hon. Henry Weyland Chetwynd, 1829-10-08 - 1893-11-27, #Henry_Weyland_Chetwynd
+
+# ----
+<#Mary_Eden>
+  # Hon. Mary Eden, 1867-05-15 - 1924-01-22
+  gen:father <https://www.wikidata.org/wiki/Q62086191> .
+  # and Lucy Walbanke-Childers
+  # oo 1904-02-10 Godfrey John Boyle Chetwynd, 8th Viscount Chetwynd of Bearhaven, 1863-10-03 - 1936-03-22, https://www.wikidata.org/wiki/Q5576399

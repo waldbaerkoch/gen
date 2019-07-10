@@ -1,0 +1,1894 @@
+@base <graham.ttl> .
+@prefix gen: <http://jjkoch.de/gen#> .
+@prefix wdata: <https://www.wikidata.org/wiki/> .
+@prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+
+<#Sir_Patrick_Graham_of_Kincardine_and_of_Dundaff>
+  # oo (1) Matilda ???
+  # oo (2) Eupheme Stewart, daughter of Sir John Stewart of Ralston
+  gen:deathDate "1404~" .
+
+<#Sir_William_Graham_of_Kincardine>
+  gen:name "Sir William Graham of Kincardine"@en ;
+  gen:deathDate "1424" ;
+  gen:father <#Sir_Patrick_Graham_of_Kincardine_and_of_Dundaff> ;
+  gen:mother <#Matilda_???> .
+  # oo Gille Stewart, daughter of Sir John Stewart of Ralston
+  # oo 1413-11-13 Lady Mary Stewart, 1378a/1396b - 1458~, daughter of https://www.wikidata.org/wiki/Q294671 and https://www.wikidata.org/wiki/Q271434
+  # oo Mariot Oliphant, daughter of Sir John Oliphant of Aberdalgy
+<https://www.wikidata.org/wiki/Q18534244> # -> Earls of Menteith
+  # Patrick Graham, Earl of Strathearn
+  gen:father <#Sir_Patrick_Graham_of_Kincardine_and_of_Dundaff> ;
+  gen:mother <#Eupheme_Stewart> .
+
+<#Alexander_Graham>
+  # Alexander Graham, d. 1416a/1422b
+  gen:father <#Sir_William_Graham_of_Kincardine> ;
+  gen:mother <#Gille_Stewart> .
+<#Robert_Graham>
+  # Robert Graham
+  gen:father <#Sir_William_Graham_of_Kincardine> ;
+  gen:mother <stuart.ttl#Lady_Mary_Stewart> .
+  # oo Janet Lovel, daughter of Sir Richard Lovel
+  # oo Matilda Scrymgeour, d. 1440b, daughter of Sir James Scrymgeour
+
+<https://www.wikidata.org/wiki/Q19325067>
+  # Patrick Graham, 1st Lord Graham, d. 1466
+  # Lord Graham 1445
+  gen:father <#Alexander_Graham> .
+  # oo Hon. Christian Erskine
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q19325067> , <erskine.ttl#Christian_Erskine> .
+<#John_Graham_of_Balargus>
+  # John Graham of Balargus
+  gen:father <#Robert_Graham> ;
+  gen:mother <#Matilda_Scrymgeour> .
+
+<https://www.wikidata.org/wiki/Q21300144>
+  gen:name "William Graham, 2nd Lord Graham"@en ;
+  gen:deathDate "1471~" ;
+  gen:father <https://www.wikidata.org/wiki/Q19325067> ;
+  gen:mother <erskine.ttl#Christian_Erskine> .
+  # oo Lady Helen Douglas, d. 1486-11-20a
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q21300144> , <douglas.ttl#Lady_Helen_Douglas_(died_1486)> .
+<#John_Graham,_1st_of_Claverhouse> # -> Graham of Claverhouse
+  # John Graham, 1st of Claverhouse, d. 1547
+  gen:father <#John_Graham_of_Balargus> .
+
+<https://www.wikidata.org/wiki/Q419859>
+  gen:name "William Graham, 1st Earl of Montrose"@en ;
+  # 3rd Lord Graham 1471~
+  # Earl of Montrose 1503
+  gen:birthDate "1464" ;
+  gen:deathDate "1513-09-09" ;
+  gen:father <https://www.wikidata.org/wiki/Q21300144> ;
+  gen:mother <douglas.ttl#Lady_Helen_Douglas_(died_1486)> .
+  # oo Annabel Drummond
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q419859> , <drummond.ttl#Annabella_Drummond> ;
+	gen:startDate "1479-11-25" .
+  # oo Janet Edmonstone, daughter of Sir Archibald Edmonstone of Duntreath, 3rd of Edmonstone
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q419859> , <#Janet_Edmonstone> ;
+	gen:startDate "1504-03-03b" .
+  # oo Christian Wawane of Seggie, daughter of Thomas Wawane of Stevinston
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q419859> , <#Christian_Wawane_of_Seggie> ;
+	gen:startDate "1509-07-12b" .
+<#Isabella_Graham>
+  # Isabella Graham
+  gen:father <https://www.wikidata.org/wiki/Q21300144> ;
+  gen:mother <douglas.ttl#Lady_Helen_Douglas_(died_1486)> .
+  # oo Sir Walter Buchanan, 14th of Buchanan, 1443~ - 1526, buchanan.ttl#Sir_Walter_Buchanan,_14th_of_Buchanan
+
+<https://www.wikidata.org/wiki/Q4020028>
+  gen:name "William Graham, 2nd Earl of Montrose"@en ;
+  gen:birthDate "1492" ;
+  gen:deathDate "1572-05-24" ;
+  gen:father <https://www.wikidata.org/wiki/Q419859> ;
+  gen:mother <drummond.ttl#Annabella_Drummond> .
+  # oo Lady Janet Keith, d. 1546-08-27a/1547-08-23b
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4020028> , <keith.ttl#Lady_Janet_Keith_(died_1547)> ;
+	gen:startDate "1515-12" .
+<#Walter_Graham,_of_Little_Cairnie>
+  gen:father <https://www.wikidata.org/wiki/Q419859> ;
+  gen:mother <drummond.ttl#Annabella_Drummond> .
+<#Lady_Elizabeth_Graham>
+  # Lady Elizabeth Graham
+  gen:father <https://www.wikidata.org/wiki/Q419859> ;
+  gen:mother <#Janet_Edmonstone> .
+  # oo 1513/1514-02 Walter Drummond, Master of Drummond, d. 1518, drummond.ttl#Walter_Drummond,_Master_of_Drummond
+<#Patrick_Graham,_1st_of_Inchbrakie_and_Aberuthven> # -> Graham of Inchbrakie
+  # Patrick Graham, 1st of Inchbrakie and Aberuthven, 1508~ - 1536
+  gen:father <https://www.wikidata.org/wiki/Q419859> ;
+  gen:mother <#Christian_Wawane_of_Seggie> .
+
+<#Robert_Graham,_Master_of_Montrose>
+  gen:name "Robert Graham, Master of Montrose"@en ;
+  gen:deathDate "1547-09-10" ;
+  gen:father <https://www.wikidata.org/wiki/Q4020028> ;
+  gen:mother <keith.ttl#Lady_Janet_Keith_(died_1547)> .
+  # oo Margaret Fleming
+  []
+    gen:spouse <#Robert_Graham,_Master_of_Montrose> , <#Margaret_Fleming,_Countess_of_Montrose> .
+<#Lady_Elizabeth_Graham_(died_1576)>
+  # Lady Elizabeth Graham, d. 1576-04-04b
+  gen:father <https://www.wikidata.org/wiki/Q4020028> ;
+  gen:mother <keith.ttl#Lady_Janet_Keith_(died_1547)> .
+  # oo George Sinclair, 4th Earl of Caithness, d. 1582-09-09, https://www.wikidata.org/wiki/Q18527593
+<#Lady_Agnes_Graham>
+  # Lady Agnes Graham
+  gen:father <https://www.wikidata.org/wiki/Q4020028> ;
+  gen:mother <keith.ttl#Lady_Janet_Keith_(died_1547)> .
+  # oo 1547-04-15 Sir William Murray of Tullibardine, d. 1582/1583-03-16, https://www.wikidata.org/wiki/Q18736105
+<#Lady_Janet_Graham>
+  # Lady Janet Graham, d. 1547-08
+  gen:father <https://www.wikidata.org/wiki/Q4020028> ;
+  gen:mother <keith.ttl#Lady_Janet_Keith_(died_1547)> .
+  # oo 1542-09-28 Sir Andrew Murray of Arngask and Balvaird, d. 1572-04-30a/1573-07-23, murray.ttl#Sir_Andrew_Murray_of_Arngask_and_Balvaird
+  # oo 1573a Sir Harrie Graham of Morphie
+<#Lady_Margaret_Graham>
+  # Lady Margaret Graham
+  gen:father <https://www.wikidata.org/wiki/Q4020028> ;
+  gen:mother <keith.ttl#Lady_Janet_Keith_(died_1547)> .
+  # oo 1535-02-17~ Robert Erskine, Master of Erskine, d. 1547-09-10, erskine.ttl#Robert_Erskine,_Master_of_Erskine
+
+<https://www.wikidata.org/wiki/Q5992403>
+  gen:name "John Graham, 3rd Earl of Montrose"@en ;
+  gen:birthDate "1548" ;
+  gen:deathDate "1608-11-09" ;
+  gen:father <#Robert_Graham,_Master_of_Montrose> ;
+  gen:mother <#Margaret_Fleming,_Countess_of_Montrose> .
+  # oo Jean Drummond, d. 1598-03, daughter of David Drummond, 2nd Lord Drummond of Cargill (1515a/1517b - 1571, son of https://www.wikidata.org/wiki/Q6230177) and oo 1543-12-07b Lilias Ruthven (daughter of https://www.wikidata.org/wiki/Q8017874)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5992403> , <drummond.ttl#Jean_Drummond_(died_1598)> .
+
+<https://www.wikidata.org/wiki/Q6235930>
+  gen:name "John Graham, 4th Earl of Montrose"@en ;
+  gen:birthDate "1573" ;
+  gen:deathDate "1626-11-14" ;
+  gen:father <https://www.wikidata.org/wiki/Q5992403> ;
+  gen:mother <drummond.ttl#Jean_Drummond_(died_1598)> .
+  # oo Lady Margaret Ruthven d. 1618, daughter of William Ruthven, 1st Earl of Gowrie and Dorothea née Stewart
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6235930> , <#Lady_Mary_Ruthven,_Countess_of_Montrose> .
+<#Sir_William_Graham_of_Braco,_1st_Baronet> # -> Graham Baronets of Braco
+  # Sir William Graham, of Braco, 1st Baronet, d. 1636b
+  gen:father <https://www.wikidata.org/wiki/Q5992403> ;
+  gen:mother <drummond.ttl#Jean_Drummond_(died_1598)> .
+<#Lady_Lilias_Graham,_Countess_of_Wigtown>
+  # Lady Lilias Graham
+  gen:father <https://www.wikidata.org/wiki/Q5992403> ;
+  gen:mother <drummond.ttl#Jean_Drummond_(died_1598)> .
+  # oo John Fleming, 6th Lord Fleming, 1st Earl of Wigtown, 1566/1567- 1619-04, https://www.wikidata.org/wiki/Q19360709
+
+<https://www.wikidata.org/wiki/Q979180>
+  gen:name "James Graham, 1st Marquess of Montrose"@en ;
+  # 5th Earl of Montrose 1626-11-14
+  # Marquess of Montrose, Earl of Kincardine, Lord Graham and Mugdock 1644
+  gen:birthDate "1612" ;
+  gen:deathDate "1650-05-21" ;
+  gen:father <https://www.wikidata.org/wiki/Q6235930> ;
+  gen:mother <#Lady_Mary_Ruthven,_Countess_of_Montrose> .
+  # oo Lady Magdalene Carnegie, d. 1645-11
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q979180> , <https://www.wikidata.org/wiki/Q56043072> ;
+	gen:startDate "1629-11-10~" .
+<#Lady_Lilias_Graham>
+  # Lady Lilias Graham
+  gen:father <https://www.wikidata.org/wiki/Q6235930> ;
+  gen:mother <#Lady_Mary_Ruthven,_Countess_of_Montrose> .
+  # oo 1620-07-06 Sir John Colquhoun of Luss, 1st Baronet, 1596~ - 1647-11-08a, https://www.wikidata.org/wiki/Q7527674
+<https://www.wikidata.org/wiki/Q56043068>
+  # Lady Margaret Graham, d. 1626
+  gen:father <https://www.wikidata.org/wiki/Q6235930> ;
+  gen:mother <#Lady_Mary_Ruthven,_Countess_of_Montrose> .
+  # oo 1619-04-15 Archibald Napier, 1st Lord Napier of Merchistoun, 1575~ - 1645-11, https://www.wikidata.org/wiki/Q4786465
+
+<https://www.wikidata.org/wiki/Q16839861>
+  gen:name "James Graham, 2nd Marquess of Montrose"@en ;
+  gen:birthDate "1631~" ;
+  gen:deathDate "1669-02" ;
+  gen:father <https://www.wikidata.org/wiki/Q979180> ;
+  gen:mother <https://www.wikidata.org/wiki/Q56043072> .
+  # oo Lady Isabel Douglas, 1630 – 1672-12-16, daughter of https://www.wikidata.org/wiki/Q7617765
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16839861> , <douglas.ttl#Lady_Isabel_Douglas_(died_1672)> ;
+	gen:startDate "1656-12-20" .
+
+<#James_Graham,_3rd_Marquess_of_Montrose>
+  gen:name "James Graham, 3rd Marquess of Montrose"@en ;
+  gen:birthDate "1657-10-20" ;
+  gen:deathDate "1684-04-25" ;
+  gen:father <https://www.wikidata.org/wiki/Q16839861> ;
+  gen:mother <douglas.ttl#Lady_Isabel_Douglas_(died_1672)> .
+  # oo Lady Christian Leslie, 1661 - 1710-04-21, daughter of https://www.wikidata.org/wiki/Q6244629
+  []
+    gen:spouse <#James_Graham,_3rd_Marquess_of_Montrose> , <leslie.ttl#Lady_Christian_Leslie> ;
+	gen:startDate "1691-06-09a" .
+<#Lady_Grizel_Graham_(died_1728)>
+  # Lady Grizel Graham, d. 1728-06-30
+  gen:father <https://www.wikidata.org/wiki/Q16839861> ;
+  gen:mother <douglas.ttl#Lady_Isabel_Douglas_(died_1672)> .
+  # oo William Cochrane, 1661a - 1717-08, https://www.wikidata.org/wiki/Q8006940
+<#Lady_Anne_Graham>
+  # Lady Anne Graham, d. 1704-02a
+  gen:father <https://www.wikidata.org/wiki/Q16839861> ;
+  gen:mother <douglas.ttl#Lady_Isabel_Douglas_(died_1672)> .
+  # oo Alexander Livingston, 3rd Earl of Callendar, 1652a - 1692-12, hay.ttl#Alexander_Livingston,_3rd_Earl_of_Callendar
+
+<https://www.wikidata.org/wiki/Q2585405>
+  gen:name "James Graham, 1st Duke of Montrose"@en ;
+  # 4th Marquess of Montrose 1684-04-25
+  # Duke of Montrose, Marquess of Graham and Buchanan, Earl of Kincardine, Viscount of Dundaff, and Lord Aberuthven, Mugdock and Fintrie 1707
+  gen:birthDate "1682-04" ;
+  gen:deathDate "1742-01-07" ;
+  gen:father <#James_Graham,_3rd_Marquess_of_Montrose> ;
+  gen:mother <leslie.ttl#Lady_Christian_Leslie> .
+  # oo Lady Christian Carnegie, d. 1744-05-25
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2585405> , <carnegie.ttl#Lady_Christian_Carnegie> ;
+	gen:startDate "1702-03-31" .
+
+<#David_Graham,_1st_Earl_Graham>
+  # David Graham, 1st Earl Graham, 1705-06-08 - 1731-09-30
+  # 1st Earl Graham, 1st Baron Graham of Belford 1722-05-23
+  gen:father <https://www.wikidata.org/wiki/Q2585405> ;
+  gen:mother <carnegie.ttl#Lady_Christian_Carnegie> .
+<https://www.wikidata.org/wiki/Q7585597>
+  gen:name "William Graham, 2nd Duke of Montrose"@en ;
+  # 2nd Earl Graham 1731-09-30
+  # 2nd Duke of Montrose 1742-01-07
+  gen:birthDate "1712-08-27" ;
+  gen:deathDate "1790-09-23" ;
+  gen:father <https://www.wikidata.org/wiki/Q2585405> ;
+  gen:mother <carnegie.ttl#Lady_Christian_Carnegie> .
+  # oo Lady Lucy Manners, 1717~ - 1788-06-18
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7585597> , <manners.ttl#Lady_Lucy_Manners> ;
+	gen:startDate "1742-10-28" .
+<https://www.wikidata.org/wiki/Q16839863>
+  # Lord George Graham, 1715-09-26 - 1747-01-02
+  gen:father <https://www.wikidata.org/wiki/Q2585405> ;
+  gen:mother <carnegie.ttl#Lady_Christian_Carnegie> .
+
+<#Lady_Lucy_Graham>
+  # Lady Lucy Graham, 1751-07-28 - 1780-02-13
+  gen:father <https://www.wikidata.org/wiki/Q7585597> ;
+  gen:mother <manners.ttl#Lady_Lucy_Manners> .
+  # oo 1771-06-13 Archibald James Edward Douglas, 1st Baron Douglas of Douglas, 1748-07-10 - 1827-12-26, https://www.wikidata.org/wiki/Q4786286
+<https://www.wikidata.org/wiki/Q326693>
+  gen:name "James Graham, 3rd Duke of Montrose"@en ;
+  gen:birthDate "1755-09-08" ;
+  gen:deathDate "1836-12-30" ;
+  gen:father <https://www.wikidata.org/wiki/Q7585597> ;
+  gen:mother <manners.ttl#Lady_Lucy_Manners> .
+  # oo Lady Jemima Elizabeth Ashburnham, 1762-01-01 - 1786-09
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q326693> , <#Lady_Jemima_Elizabeth_Ashburnham> ;
+	gen:startDate "1785-03-03" .
+  # oo Lady Caroline Maria Montagu, 1770-08-10 - 1847-03-24
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q326693> , <https://www.wikidata.org/wiki/Q47487066> ;
+	gen:startDate "1790-07-24" .
+
+<https://www.wikidata.org/wiki/Q47487653>
+  gen:name "Lady Georgiana Charlotte Graham"@en ;
+  gen:birthDate "1791-06-03" ;
+  gen:deathDate "1835-02-13" ;
+  gen:father <https://www.wikidata.org/wiki/Q326693> ;
+  gen:mother <https://www.wikidata.org/wiki/Q47487066> .
+  # oo 1814-07-26 George Finch-Hatton, 10th Earl of Winchilsea, 1791-05-19 - 1858-01-08, https://www.wikidata.org/wiki/Q3101557
+<#Lady_Caroline_Graham>
+  gen:name "Lady Caroline Graham"@en ;
+  gen:birthDate "1792-09-30" ;
+  gen:deathDate "1875-03-24" ;
+  gen:father <https://www.wikidata.org/wiki/Q326693> ;
+  gen:mother <https://www.wikidata.org/wiki/Q47487066> .
+<https://www.wikidata.org/wiki/Q47486728>
+  gen:name "Lady Lucy Graham"@en ;
+  gen:birthDate "1793-09-25" ;
+  gen:deathDate "1875-09-16" ;
+  gen:father <https://www.wikidata.org/wiki/Q326693> ;
+  gen:mother <https://www.wikidata.org/wiki/Q47487066> .
+  # oo 1818-02-09 Edward Herbert, 2nd Earl of Powis, 1785-03-22 - 1848-01-17, https://www.wikidata.org/wiki/Q5343428
+<https://www.wikidata.org/wiki/Q495977>
+  gen:name "James Graham, 4th Duke of Montrose"@en ;
+  gen:birthDate "1799-07-16" ;
+  gen:deathDate "1874-12-30" ;
+  gen:father <https://www.wikidata.org/wiki/Q326693> ;
+  gen:mother <https://www.wikidata.org/wiki/Q47487066> .
+  # oo Hon. Caroline Agnes Horsley-Beresford, 1818-03-14 - 1894-11-16
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q495977> , <https://www.wikidata.org/wiki/Q18819378> ;
+	gen:startDate "1836-10-15" .
+<https://www.wikidata.org/wiki/Q19902274>
+  gen:name "Lady Emily Graham"@en ;
+  gen:birthDate "1805-06-23" ;
+  gen:deathDate "1900-01-01" ;
+  gen:father <https://www.wikidata.org/wiki/Q326693> ;
+  gen:mother <https://www.wikidata.org/wiki/Q47487066> .
+  # oo 1832-08-16 Edward Thomas Foley, 1791-12-21 - 1846-03-30, https://www.wikidata.org/wiki/Q5345591
+<#Lord_Montagu_William_Graham>
+  gen:name "Lord Montagu William Graham"@en ;
+  gen:birthDate "1807-02-02" ;
+  gen:deathDate "1878-06-21" ;
+  gen:father <https://www.wikidata.org/wiki/Q326693> ;
+  gen:mother <https://www.wikidata.org/wiki/Q47487066> .
+  # oo Hon. Harriet Anne Bateman-Hanbury, 1823-07-05 - 1884-04-18
+  []
+    gen:spouse <#Lord_Montagu_William_Graham> , <spencer.ttl#Harriet_Anne_Bateman-Hanbury> ;
+	gen:startDate "1867-02-14" .
+
+<#Lady_Agnes_Caroline_Graham>
+  # Lady Agnes Caroline Graham, 1839-04-19 - 1873-05-08
+  gen:father <https://www.wikidata.org/wiki/Q495977> ;
+  gen:mother <https://www.wikidata.org/wiki/Q18819378> .
+  # oo 1859-09-15 John Murray, of Touchadam and Polmaise, 1831-07-26 - 1903-08-11
+<#Lady_Beatrice_Violet_Graham>
+  gen:name "Lady Beatrice Violet Graham"@en ;
+  gen:birthDate "1852-11-07" ;
+  gen:deathDate "1932-02-29" ;
+  gen:father <https://www.wikidata.org/wiki/Q495977> ;
+  gen:mother <https://www.wikidata.org/wiki/Q18819378> .
+  # oo 1863-12-16 Algernon Greville, 2nd Baron Greville, 1841-02-11 - 1909-12-02, https://www.wikidata.org/wiki/Q4724146
+<https://www.wikidata.org/wiki/Q495606>
+  gen:name "Douglas Beresford Malise Ronald Graham, 5th Duke of Montrose"@en ;
+  gen:birthDate "1852-11-07" ;
+  gen:deathDate "1925-12-10" ;
+  gen:father <https://www.wikidata.org/wiki/Q495977> ;
+  gen:mother <https://www.wikidata.org/wiki/Q18819378> .
+  # oo Violet Hermione Graham, 1854-09-10 - 1940-11-21
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q495606> , <#Violet_Hermione_Graham,_Duchess_of_Montrose> ;
+	gen:startDate "1876-07-24" .
+<#Lady_Alma_Imogen_Leonora_Charlotta_Graham>
+  gen:name "Lady Alma Imogen Leonora Charlotta Graham"@en ;
+  gen:birthDate "1854-09-07" ;
+  gen:deathDate "1932-05-10" ;
+  gen:father <https://www.wikidata.org/wiki/Q495977> ;
+  gen:mother <https://www.wikidata.org/wiki/Q18819378> .
+  # oo 1872-07-27 Gavin Campbell, 1st Marquess of Breadalbane, 1851-04-09 - 1922-10-19, https://www.wikidata.org/wiki/Q5528093
+
+<https://www.wikidata.org/wiki/Q6134815>
+  gen:name "James Graham, 6th Duke of Montrose"@en ;
+  gen:birthDate "1878-05-01" ;
+  gen:deathDate "1954-01-20" ;
+  gen:father <https://www.wikidata.org/wiki/Q495606> ;
+  gen:mother <#Violet_Hermione_Graham,_Duchess_of_Montrose> .
+  # oo Lady Mary Louise Douglas-Hamilton, 1884-11-01 - 1957-02-21
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6134815> , <douglas.ttl#Lady_Mary_Louise_Douglas-Hamilton> ;
+	gen:startDate "1906-06-14" .
+<#Lady_Helen_Violet_Graham>
+  gen:name "Lady Helen Violet Graham"@en ;
+  gen:birthDate "1879-07-01" ;
+  gen:deathDate "1945-08-27" ;
+  gen:father <https://www.wikidata.org/wiki/Q495606> ;
+  gen:mother <#Violet_Hermione_Graham,_Duchess_of_Montrose> .
+<#Lady_Hermione_Emily_Graham>
+  gen:name "Lady Hermione Emily Graham"@en ;
+  gen:birthDate "1882-02-22" ;
+  gen:deathDate "1978-03-03" ;
+  gen:father <https://www.wikidata.org/wiki/Q495606> ;
+  gen:mother <#Violet_Hermione_Graham,_Duchess_of_Montrose> .
+  # oo 1906-03-29 Sir Donald Walter Cameron, of Lochiel, 1876-11-04 - 1951-10-11, https://www.wikidata.org/wiki/Q5294125
+<#Lord_Douglas_Malise_Graham>
+  gen:name "Lord Douglas Malise Graham"@en ;
+  gen:birthDate "1883-10-14" ;
+  gen:deathDate "1974-11-20" ;
+  gen:father <https://www.wikidata.org/wiki/Q495606> ;
+  gen:mother <#Violet_Hermione_Graham,_Duchess_of_Montrose> .
+  # oo Hon. Rachel Mary Holland, 1891-03-01 - 1977-06-06
+  []
+    gen:spouse <#Lord_Douglas_Malise_Graham> , <#Rachel_Mary_Holland> ;
+	gen:startDate "1919-07-29" .
+<#Lord_Alastair_Mungo_Graham>
+  gen:name "Lord Alastair Mungo Graham"@en ;
+  gen:birthDate "1886-05-12" ;
+  gen:deathDate "1976-11-26" ;
+  gen:father <https://www.wikidata.org/wiki/Q495606> ;
+  gen:mother <#Violet_Hermione_Graham,_Duchess_of_Montrose> .
+  # oo Lady Muriel Olivia Bathurst, 1894-09-03 - 1936-01-18
+  []
+    gen:spouse <#Lord_Alastair_Mungo_Graham> , <#Lady_Muriel_Olivia_Bathurst> ;
+	gen:startDate "1916-05-04" .
+  # oo Sheelah Violet Edgeworth Reade, 1903-07-12 - 1985-03-08
+  []
+    gen:spouse <#Lord_Alastair_Mungo_Graham> , <#Sheelah_Violet_Edgeworth_Reade> ;
+	gen:startDate "1944-10-24" .
+
+<https://www.wikidata.org/wiki/Q6134813>
+  gen:name "James Angus Graham, 7th Duke of Montrose"@en ;
+  gen:birthDate "1907-05-02" ;
+  gen:deathDate "1992-02-10" ;
+  gen:father <https://www.wikidata.org/wiki/Q6134815> ;
+  gen:mother <douglas.ttl#Lady_Mary_Louise_Douglas-Hamilton> .
+  # oo Isabel Veronia Sellar, 1907-10-13 - 1990
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6134813> , <#Isabel_Veronia_Sellar> ;
+	gen:startDate "1930-10-20" ;
+	gen:divorceDate "1950" .
+  # oo Susan Mary Joclyn Semple, 1928-11-15 - 2014-03-13
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6134813> , <#Susan_Mary_Joclyn_Semple> ;
+	gen:startDate "1952-04-17" .
+<#Lady_Mary_Helen_Alma_Graham>
+  gen:name "Lady Mary Helen Alma Graham"@en ;
+  gen:birthDate "1907-05-02" ;
+  gen:deathDate "1992-02-10" ;
+  gen:father <https://www.wikidata.org/wiki/Q6134815> ;
+  gen:mother <douglas.ttl#Lady_Mary_Louise_Douglas-Hamilton> .
+  # oo 1931-04-21 John Perceval Townshend Boscawen, 1906-02-14 - 1972-10-09, #John_Perceval_Townshend_Boscawen
+  # oo 1975-12-15 Leslie Colville Dunn, d. 1990
+<#Lord_Ronald_Graham>
+  gen:name "Lord Ronald Malise Hamilton Graham"@en ;
+  gen:birthDate "1912-09-20" ;
+  gen:deathDate "1978-06-11" ;
+  gen:father <https://www.wikidata.org/wiki/Q6134815> ;
+  gen:mother <douglas.ttl#Lady_Mary_Louise_Douglas-Hamilton> .
+  # oo 1938-09-16 Nancy Edith Baker, d. 1985
+<https://www.wikidata.org/wiki/Q50829115>
+  gen:name "Lady Jean Sibyl Violet Graham"@en ;
+  gen:birthDate "1920-11-11" ;
+  gen:deathDate "2017-10-13" ;
+  gen:father <https://www.wikidata.org/wiki/Q6134815> ;
+  gen:mother <douglas.ttl#Lady_Mary_Louise_Douglas-Hamilton> .
+  # oo 1947-10-08 (div 1957) John Patrick Ilbert Fforde, 1910-03-17 - 1993-03-26
+
+<#Lady_Fiona_Mary_Graham>
+  gen:name "Lady Fiona Mary Graham"@en ;
+  gen:birthDate "1932-01-01" ;
+  gen:deathDate "2017-05-21" ;
+  gen:father <https://www.wikidata.org/wiki/Q6134813> ;
+  gen:mother <#Isabel_Veronia_Sellar> .
+  # oo 1966-10-01 Peter Alexander O'Brien Hannon, 1928~ - 2017-03-21
+<https://www.wikidata.org/wiki/Q335692>
+  gen:name "James Graham, 8th Duke of Montrose"@en ;
+  gen:birthDate "1935-04-06" ;
+  gen:father <https://www.wikidata.org/wiki/Q6134813> ;
+  gen:mother <#Isabel_Veronia_Sellar> .
+  # oo Catherine Elizabeth MacDonell Young, 1935-09-25 - 2014-10-29
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q335692> , <https://www.wikidata.org/wiki/Q47487432> ;
+	gen:startDate "1970-01-31" .
+<#Lady_Cairistiona_Anne_Graham>
+  gen:name "Lady Cairistonia Anne Graham"@en ;
+  gen:birthDate "1955-01-07" ;
+  gen:father <https://www.wikidata.org/wiki/Q6134813> ;
+  gen:mother <#Susan_Mary_Joclyn_Semple> .
+  # oo 1982 Philip Patrick Saggers
+<#Lord_Donald_Alasdair_Graham>
+  gen:name "Lord Donald Alasdair Graham"@en ;
+  gen:birthDate "1956-10-28" ;
+  gen:father <https://www.wikidata.org/wiki/Q6134813> ;
+  gen:mother <#Susan_Mary_Joclyn_Semple> .
+  # oo 1981 Bridie Donalda Elspeth Cameron, b. 1956-10-15
+<#Lord_Calum_Ian_Graham>
+  gen:name "Lord Calum Ian Graham"@en ;
+  gen:birthDate "1958-07-20" ;
+  gen:father <https://www.wikidata.org/wiki/Q6134813> ;
+  gen:mother <#Susan_Mary_Joclyn_Semple> .
+  # oo (1) 1991 Catherine Beatrice Fraser-Mackenzie, 1966-03-28 - 2008
+  # oo (2) 2013-08-03 Estelle Baynes née Parry de Winton
+<#Lady_Lilias_Catriona_Maighearad_Graham>
+  gen:name "Lady Lilias Catriona Maighearad"@en ;
+  gen:birthDate "1960-02-16" ;
+  gen:father <https://www.wikidata.org/wiki/Q6134813> ;
+  gen:mother <#Susan_Mary_Joclyn_Semple> .
+  # oo 1990-07-07 Jonathan Dillon Bell, b. 1960
+
+<#Lady_Hermione_Elizabeth_Graham>
+  gen:name "Lady Hermione Elizabeth Graham"@en ;
+  gen:birthDate "1971-07-20" ;
+  gen:father <https://www.wikidata.org/wiki/Q335692> ;
+  gen:mother <https://www.wikidata.org/wiki/Q47487432> .
+  # oo 1998 Christopher John Thornhill
+<#James_Alexander_Norman_Graham,_Marquess_of_Graham>
+  gen:name "James Alexander Norman Graham, Marquess of Graham"@en ;
+  gen:birthDate "1973-08-16" ;
+  gen:father <https://www.wikidata.org/wiki/Q335692> ;
+  gen:mother <https://www.wikidata.org/wiki/Q47487432> .
+  # oo Cecilia Manfredi
+  []
+    gen:spouse <#James_Alexander_Norman_Graham,_Marquess_of_Graham> , <#Cecilia_Manfredi> ;
+	gen:startDate "2004" .
+<#Lord_Ronald_John_Christopher_Graham>
+  gen:name "Lord Ronald John Christopher Graham"@en ;
+  gen:birthDate "1975-10-13" ;
+  gen:father <https://www.wikidata.org/wiki/Q335692> ;
+  gen:mother <https://www.wikidata.org/wiki/Q47487432> .
+  # oo 2016-09-24 Florence Mary Arbuthnott
+<#Caitriana_Mary_Alice_Cameron_Graham>
+  gen:name "Caitriana Mary Alice Graham"@en ;
+  gen:birthDate "1984" ;
+  gen:father <#Lord_Donald_Alasdair_Graham> ;
+  gen:mother <#Bridie_Donalda_Elspeth_Cameron> .
+<#Alasdair_John_Cameron_Graham>
+  gen:name "Alasdair John Cameron Graham"@en ;
+  gen:birthDate "1986" ;
+  gen:deathDate "1988" ;
+  gen:father <#Lord_Donald_Alasdair_Graham> ;
+  gen:mother <#Bridie_Donalda_Elspeth_Cameron> .
+<#Violet_Elizabeth_Helen_Graham>
+  gen:name "Violet Elizabeth Helen Graham"@en ;
+  gen:birthDate "1992" ;
+  gen:father <#Lord_Donald_Alasdair_Graham> ;
+  gen:mother <#Bridie_Donalda_Elspeth_Cameron> .
+<#Jennie_Alexandra_Cameron_Graham>
+  gen:name "Jennie Alexandra Cameron Graham"@en ;
+  gen:birthDate "1993" ;
+  gen:father <#Lord_Donald_Alasdair_Graham> ;
+  gen:mother <#Bridie_Donalda_Elspeth_Cameron> .
+<#Finlay_Donald_Cameron_Graham>
+  gen:name "Finlay Donald Cameron Graham"@en ;
+  gen:birthDate "1996" ;
+  gen:father <#Lord_Donald_Alasdair_Graham> ;
+  gen:mother <#Bridie_Donalda_Elspeth_Cameron> .
+<#Iain_Angus_Graham>
+  gen:name "Iain Angus Graham"@en ;
+  gen:birthDate "1995-02-21" ;
+  gen:father <#Lord_Calum_Ian_Graham> ;
+  gen:mother <#Catherine_Beatrice_Fraser-Mackenzie> .
+<#Euan_Douglas_Graham>
+  gen:name "Euan Douglas Graham"@en ;
+  gen:birthDate "1996-05-24" ;
+  gen:father <#Lord_Calum_Ian_Graham> ;
+  gen:mother <#Catherine_Beatrice_Fraser-Mackenzie> .
+<#Christabel_Emily_Graham>
+  gen:name "Christabel Emily Graham"@en ;
+  gen:birthDate "2001" ;
+  gen:father <#Lord_Calum_Ian_Graham> ;
+  gen:mother <#Catherine_Beatrice_Fraser-Mackenzie> .
+
+
+# Graham of Inchbrakie
+<#Patrick_Graham,_1st_of_Inchbrakie_and_Aberuthven>
+  gen:name "Patrick Graham, 1st of Inchbrakie and Aberuthven"@en ;
+  gen:deathDate "1508~" ;
+  gen:deathDate "1536" ;
+  gen:father <https://www.wikidata.org/wiki/Q419859> ;
+  gen:mother <#Christian_Wawane_of_Seggie> .
+  # oo Margaret Stewart
+  []
+    gen:spouse <#Patrick_Graham,_1st_of_Inchbrakie_and_Aberuthven> , <stuart.ttl#Margaret_Stewart> .
+
+<#George_Graeme,_2nd_of_Inchbrakie>
+  gen:name "George Graham, 2nd of Inchbrakie"@en ;
+  gen:deathDate "1575" ;
+  gen:father <#Patrick_Graham,_1st_of_Inchbrakie_and_Aberuthven> ;
+  gen:mother <stuart.ttl#Margaret_Stewart> .
+  # oo Marion/Marjory/Mary Rollo, d. 1625-02-24, daughter of Andrew Rollo, 6th of Duncrub
+<#Nicola_Graham>
+  gen:name "Nicola Graham"@en ;
+  gen:deathDate "1560-08" ;
+  gen:father <#Patrick_Graham,_1st_of_Inchbrakie_and_Aberuthven> ;
+  gen:mother <stuart.ttl#Margaret_Stewart> .
+  # oo Patrick Murray, 5th of Ochtertyre, d. 1589, murray.ttl#Patrick_Murray,_5th_of_Ochtertyre
+
+<#Patrick_Graeme,_3rd_of_Inchbrakie>
+  # Patrick Graeme, 3rd of Inchbrakie
+  gen:father <#George_Graeme,_2nd_of_Inchbrakie> ;
+  gen:mother <#Marion_Rollo_of_Duncrub> .
+  # oo Nicola Brown, daughter of John Brown of Fordell and Elizabeth Adamson
+  []
+    gen:spouse <#Patrick_Graeme,_3rd_of_Inchbrakie> , <#Nicola_Brown> .
+  # oo 1613 Margaret Scott, d. 1613a, daughter of Patrick Scott, 4th of Monzie and Egidia Drummond
+<https://www.wikidata.org/wiki/Q5539844>
+  gen:name "Rev. George Graham of Myreside, Bishop of Dunblane"@en ;
+  gen:birthDate "1565" ;
+  gen:deathDate "1643" ;
+  gen:father <#George_Graeme,_2nd_of_Inchbrakie> ;
+  gen:mother <#Marion_Rollo_of_Duncrub> .
+  # oo 1595 Marion Crichton, daughter of Sir Robert Crichton of Eliock and Cluny, Perthshire, Lord Advocate of Scotland, and his wife Elizabeth Stewart, granddaughter of Andrew Stewart, 2nd Lord Avondale
+
+<#George_Graeme,_4th_of_Inchbrakie>
+  # George Graeme, 4th of Inchbrakie, d. 1654
+  gen:father <#Patrick_Graeme,_3rd_of_Inchbrakie> ;
+  gen:mother <#Nicola_Brown> .
+
+<#Patrick_Graeme,_5th_of_Inchbrakie>
+  # Patrick Graeme, 5th of Inchbrakie, d. 1644a
+  gen:father <#George_Graeme,_4th_of_Inchbrakie> .
+  # oo Jean Drummond
+  []
+    gen:spouse <#Patrick_Graeme,_5th_of_Inchbrakie> , <drummond.ttl#Jean_Drummond_Graeme> .
+
+<#George_Graeme,_6th_of_Inchbrakie>
+  # George Graeme, 6th of Inchbrakie, d. 1704
+  gen:father <#Patrick_Graeme,_5th_of_Inchbrakie> ;
+  gen:mother <drummond.ttl#Jean_Drummond_Graeme> .
+  # oo Mary Nicholl, daughter of Patrick Nicholl of Royston and Granton
+  []
+    gen:spouse <#George_Graeme,_6th_of_Inchbrakie> , <#Mary_Nicholl> .
+
+<#Patrick_Graeme,_7th_of_Inchbrakie>
+  # Patrick Graeme, 7th of Inchbrakie, d. 1740
+  gen:father <#George_Graeme,_6th_of_Inchbrakie> ;
+  gen:mother <#Mary_Nicholl> .
+
+<#George_Graeme_(died_1737)>
+  # George Graeme, 1697 - 1737
+  gen:father <#Patrick_Graeme,_7th_of_Inchbrakie> .
+
+<#Patrick_Graeme,_8th_of_Inchbrakie>
+  # Patrick Graeme, 8th of Inchbrakie, 1735~ - 1796
+  gen:father <#George_Graeme_(died_1737)> .
+  # oo Amelia Oliphant, d. 1785-07-06, daughter of Laurence Oliphant, 6th of Gask (1691 - 1767) and oo Hon. Amelia Anne Sophia Murray (daughter of https://www.wikidata.org/wiki/Q16859430)
+  []
+    gen:spouse <#Patrick_Graeme,_8th_of_Inchbrakie> , <#Amelia_Oliphant> ;
+	gen:startDate "1748-06" .
+
+<#George_Graeme,_9th_of_Inchbrakie>
+  # George Graeme, 9th of Inchbrakie, 1753-05 - 1840
+  gen:father <#Patrick_Graeme,_8th_of_Inchbrakie> ;
+  gen:mother <#Amelia_Oliphant> .
+  # oo Margaret Oliphant, d. 1839, daughter of Laurence Oliphant, 6th of Condie and Margaret Murray
+  []
+    gen:spouse <#George_Graeme,_9th_of_Inchbrakie> , <#Margaret_Oliphant> ;
+	gen:startDate "1792" .
+
+<#George_Drummond-Graeme,_10th_of_Inchbrakie>
+  # George Drummond-Graeme, 10th of Inchbrakie, 1796 - 1854-12-20
+  gen:father <#George_Graeme,_9th_of_Inchbrakie> ;
+  gen:mother <#Margaret_Oliphant> .
+  # oo Hon. Marianne Jane Drummond, 1811-07-06 - 1876-05-19
+  []
+    gen:spouse <#George_Drummond-Graeme,_10th_of_Inchbrakie> , <drummond.ttl#Marianne_Jane_Drummond> ;
+	gen:startDate "1842-01-18" .
+
+
+# Graham Baronets of Braco
+<#Sir_William_Graham_of_Braco,_1st_Baronet>
+  # Sir William Graham, of Braco, 1st Baronet, d. 1636b
+  # Baronet 1625
+  gen:father <https://www.wikidata.org/wiki/Q5992403> ;
+  gen:mother <drummond.ttl#Jean_Drummond_(died_1598)> .
+  # oo Mrs Mary Edmonstone, daughter of Sir James Edmonstone
+  []
+    gen:spouse <#Sir_William_Graham_of_Braco,_1st_Baronet> , <#Mary_Edmonstone> .
+
+<https://www.wikidata.org/wiki/Q44832722>
+  # Sir John Graham of Braco, 2nd Baronet, d. 1647
+  gen:father <#Sir_William_Graham_of_Braco,_1st_Baronet> ;
+  gen:mother <#Mary_Edmonstone> .
+  # oo Margaret Campbell
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q44832722> , <campbell.ttl#Margaret_Campbell_3> .
+
+<#Sir_William_Graham_of_Braco,_3rd_Baronet>
+  # Sir William Graham, of Braco, 3rd Baronet, d. 1689
+  gen:father <https://www.wikidata.org/wiki/Q44832722> ;
+  gen:mother <campbell.ttl#Margaret_Campbell_3> .
+  # oo Mary Cowan
+
+<#Sir_James_Graham_of_Braco,_4th_Baronet>
+  # Sir James Graham, of Braco, 4th Baronet, d. 1700~
+  gen:father <#Sir_William_Graham_of_Braco,_3rd_Baronet> .
+
+
+# Earls of Menteith
+<https://www.wikidata.org/wiki/Q18534244>
+  gen:name "Patrick Graham, Earl of Strathearn"@en ;
+  gen:deathDate "1413-08-10" ;
+  gen:father <#Sir_Patrick_Graham_of_Kincardine_and_of_Dundaff> ;
+  gen:mother <#Eupheme_Stewart> .
+  # oo Euphemia Stewart, Countess of Strathearn, d. 1434~, daughter of https://www.wikidata.org/wiki/Q4444832
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q18534244> , <https://www.wikidata.org/wiki/Q7620326> .
+
+<https://www.wikidata.org/wiki/Q6743817>
+  gen:name "Malise Graham, 1st Earl of Menteith"@en ;
+  gen:birthDate "1416" ;
+  gen:deathDate "1490" ;
+  gen:father <https://www.wikidata.org/wiki/Q18534244> ;
+  gen:mother <https://www.wikidata.org/wiki/Q7620326> .
+  # oo Janet ???
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6743817> , <#Janet_???> .
+  # oo Marion Campbell, d. 1530, daughter of https://www.wikidata.org/wiki/Q18576005
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6743817> , <campbell.ttl#Marion_Campbell_(died_1530)> .
+<#Lady_Eupheme_Graham>
+  # Lady Eupheme Graham, d. 1468
+  gen:father <https://www.wikidata.org/wiki/Q18534244> ;
+  gen:mother <https://www.wikidata.org/wiki/Q7620326> .
+  # oo 1425~ Archibald Douglas, 5th Earl of Douglas, Duc de Touraine, 1390 - 1439-06-26, https://www.wikidata.org/wiki/Q359901
+  # oo 1441 James Hamilton, 1st Lord Hamilton, 6th Laird of Cadzow, 1415~ - 1479-11-06, https://www.wikidata.org/wiki/Q1342958
+
+<#Patrick_Graham>
+  gen:name "Patrick Graham"@en ;
+  gen:deathDate "1482-03-03a" ;
+  gen:father <https://www.wikidata.org/wiki/Q6743817> ;
+  gen:mother <#Janet_???> .
+  # oo Isabel Erskine, daughter of https://www.wikidata.org/wiki/Q7789378 and Janet Douglas
+  []
+    gen:spouse <#Patrick_Graham> , <erskine.ttl#Isabel_Erskine> ;
+	gen:startDate "1466-01-24" .
+
+<https://www.wikidata.org/wiki/Q4718993>
+  gen:name "Alexander Graham, 2nd Earl of Menteith"@en ;
+  gen:birthDate "1472-05-06" ;
+  gen:deathDate "1537~" ;
+  gen:father <#Patrick_Graham> ;
+  gen:mother <erskine.ttl#Isabel_Erskine> .
+  # oo Margaret Buchanan, daughter of Walter Buchanan
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4718993> , <#Margaret_Buchanan> .
+
+<https://www.wikidata.org/wiki/Q7616848>
+  gen:name "William Graham, 3rd Earl of Menteith"@en ;
+  gen:birthDate "1500~" ;
+  gen:deathDate "1543~" ;
+  gen:father <https://www.wikidata.org/wiki/Q4718993> ;
+  gen:mother <#Margaret_Buchanan> .
+  # oo Margaret Moubray, daughter of John Moubray of Barnbougle
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7616848> , <#Margaret_Moubray> ;
+	gen:startDate "1521-06-16b" .
+
+<#Lady_Margaret_Graham,_Countess_of_Argyll>
+  # Lady Margaret Graham
+  gen:father <https://www.wikidata.org/wiki/Q7616848> ;
+  gen:mother <#Margaret_Moubray> .
+  # oo 1541-04-21 Archibald Campbell, 4th Earl of Argyll, 1507~ - 1558, https://www.wikidata.org/wiki/Q2627091
+<https://www.wikidata.org/wiki/Q6235926>
+  gen:name "John Graham, 4th Earl of Menteith"@en ;
+  gen:birthDate "1529~" ;
+  gen:deathDate "1564/1565-01" ;
+  gen:father <https://www.wikidata.org/wiki/Q7616848> ;
+  gen:mother <#Margaret_Moubray> .
+  # oo Marion Seton, d. 1567-07-23
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6235926> , <gordon.ttl#Marion_Seton> ;
+	gen:startDate "1548-10-08" .
+
+<https://www.wikidata.org/wiki/Q7619343>
+  gen:name "William Graham, 5th Earl of Menteith"@en ;
+  gen:deathDate "1555~" ;
+  gen:deathDate "1578-09" ;
+  gen:father <https://www.wikidata.org/wiki/Q6235926> ;
+  gen:mother <gordon.ttl#Marion_Seton> .
+  # oo Margaret Douglas, daughter of Sir James Douglas, 7th of Drumlanrig and Christian Montgomerie
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7619343> , <douglas.ttl#Margaret_Douglas,_Countess_of_Menteith> ;
+	gen:startDate "1571-05-16~" .
+<#Lady_Mary_Graham>
+  # Lady Mary Graham
+  gen:father <https://www.wikidata.org/wiki/Q6235926> ;
+  gen:mother <gordon.ttl#Marion_Seton> .
+  # oo 1560~ Sir George Buchanan, 16th of Buchanan, 1540~ - 1599b, buchanan.ttl#Sir_George_Buchanan,_16th_of_Buchanan
+
+<https://www.wikidata.org/wiki/Q7619376>
+  gen:name "John Graham, 6th Earl of Menteith"@en ;
+  gen:deathDate "1574~" ;
+  gen:deathDate "1598-12" ;
+  gen:father <https://www.wikidata.org/wiki/Q7619343> ;
+  gen:mother <douglas.ttl#Margaret_Douglas,_Countess_of_Menteith> .
+  # oo Mary Campbell, daughter of Sir Colin Campbell of Glenorchy and Catherine Ruthven
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7619376> , <campbell.ttl#Mary_Campbell> ;
+	gen:startDate "1589-10-22~" .
+
+<https://www.wikidata.org/wiki/Q7616870>
+  gen:name "William Graham, 7th Earl of Menteith, 1st Earl of Airth"@en ;
+  # Earl of Menteith 1598-12 
+  # Earl of Airth 1633-03-28
+  gen:birthDate "1591~" ;
+  gen:deathDate "1661-04-13a" ;
+  gen:father <https://www.wikidata.org/wiki/Q7619376> ;
+  gen:mother <campbell.ttl#Mary_Campbell> .
+  # oo Agnes Gray
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7616870> , <stuart.ttl#Agnes_Gray> ;
+	gen:startDate "1612-03-30a" .
+
+<#Lady_Mary_Graham_(died_1653)>
+  gen:name "Lady Mary Graham"@en ;
+  gen:deathDate "1653-01-28" ;
+  gen:father <https://www.wikidata.org/wiki/Q7616870> ;
+  gen:mother <stuart.ttl#Agnes_Gray> .
+  # oo 1635b Sir John Campbell, of Glenorchy, 4th Baronet, 1615~ - 1677-06b, campbell.ttl#Sir_John_Campbell_of_Glenorchy,_4th_Baronet
+<#Lady_Margaret_Graham,_Lady_Garlies>
+  gen:name "Lady Margaret Graham"@en ;
+  gen:father <https://www.wikidata.org/wiki/Q7616870> ;
+  gen:mother <stuart.ttl#Agnes_Gray> .
+  # oo (1) 1633-07-15 Alexander Stewart, Lord Garlies, son of https://www.wikidata.org/wiki/Q4720141 and Grizel Gordon
+  # oo (2) 1643-10-05 Ludovic Lindsay, 16th Earl of Crawford, https://www.wikidata.org/wiki/Q4262014
+<#Sir_James_Graham>
+  gen:name "Sir James Graham"@en ;
+  gen:father <https://www.wikidata.org/wiki/Q7616870> ;
+  gen:mother <stuart.ttl#Agnes_Gray> .
+  # oo () Isabella Bramhall, daughter of https://www.wikidata.org/wiki/Q429749 and Elinor Halley
+  # oo Lady Margaret Erskine
+  []
+    gen:spouse <#Sir_James_Graham> , <erskine.ttl#Lady_Margaret_Erskine_2> .
+<#John_Graham,_Lord_Graham_of_Kinpont>
+  gen:name "John Graham, Lord Graham of Kinpont"@en ;
+  gen:deathDate "1613~" ;
+  gen:deathDate "1644-09-06" ;
+  gen:father <https://www.wikidata.org/wiki/Q7616870> ;
+  gen:mother <stuart.ttl#Agnes_Gray> .
+  # oo Lady Mary Keith, d. 1683a
+  []
+    gen:spouse <#John_Graham,_Lord_Graham_of_Kinpont> , <keith.ttl#Lady_Mary_Keith_(died_1683a)> ;
+	gen:startDate "1643-04-11~" .
+
+<https://www.wikidata.org/wiki/Q7616905>
+  gen:name "William Graham, 8th Earl of Menteith, 2nd Earl of Airth"@en ;
+  gen:birthDate "1634~" ;
+  gen:deathDate "1694-09-12" ;
+  gen:father <#John_Graham,_Lord_Graham_of_Kinpont> ;
+  gen:mother <keith.ttl#Lady_Mary_Keith_(died_1683a)> .
+  # oo Anne Hewes
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7616905> , <#Anne_Hewes> ;
+	gen:startDate "1661-11" ;
+	gen:divorceDate "1684" .
+  # oo Catherine Bruce, d. 1692, daughter of Thomas Bruce of Blairhall and Jean Henderson
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7616905> , <#Catherine_Bruce> ;
+	gen:startDate "1685-04-04" .
+<#Mary_Graham_(died_1720)>
+  gen:name "Mary Graham"@en ;
+  gen:birthDate "1644b" ;
+  gen:deathDate "1720-12" ;
+  gen:father <#John_Graham,_Lord_Graham_of_Kinpont> ;
+  gen:mother <keith.ttl#Lady_Mary_Keith_(died_1683a)> .
+  # oo 1662-10-08 Sir John Allardice, son of James Allardyce and erskine.ttl#Marie_Erskine
+<#Elizabeth_Graham>
+  gen:name "Elizabeth Graham"@en ;
+  gen:birthDate "1644b" ;
+  gen:father <#John_Graham,_Lord_Graham_of_Kinpont> ;
+  gen:mother <keith.ttl#Lady_Mary_Keith_(died_1683a)> .
+  # oo 1663-12 Sir William Graham, of Gartmore, 1st Baronet, d. 1684
+
+
+# Graham of Claverhouse
+<#John_Graham,_1st_of_Claverhouse>
+  # John Graham, 1st of Claverhouse, d. 1547
+  gen:father <#John_Graham_of_Balargus> .
+  # oo Margaret Bethune, daughter of John Bethune, 6th of Balfour (1460~ - 1524) and oo Hon. Elizabeth Monypenny (1465~ - 1541, daughter of David Monypenny, 13th of Pitmilly and Jonet Monypenny)
+
+<#William_Graham,_3rd_of_Claverhouse>
+  # William Graham, 3rd of Claverhouse, d. 1572-11b
+  gen:father <#John_Graham,_1st_of_Claverhouse> ;
+  gen:mother <#Margaret_Bethune> .
+  # oo Egidia Gaw
+
+<#Sir_William_Graham,_4th_of_Claverhouse>
+  # Sir William Graham, 4th of Claverhouse, d. 1641
+  gen:father <#William_Graham,_3rd_of_Claverhouse> .
+  # and Egidia Gaw
+  # oo Agnes Lundie
+
+<#George_Graham,_5th_of_Claverhouse>
+  # George Graham, 5th of Claverhouse, d. 1645~
+  gen:father <#Sir_William_Graham,_4th_of_Claverhouse> .
+  # and Agnes Lundie
+  # oo Mariot Fotheringham, daughter of Thomas Fotheringham, 9th of Powrie and Barbara Scott
+  []
+    gen:spouse <#George_Graham,_5th_of_Claverhouse> , <#Mariot_Fotheringham> ;
+	gen:startDate "1620" .
+
+<#William_Graham,_6th_of_Claverhouse>
+  # William Graham, 6th of Claverhouse
+  gen:father <#George_Graham,_5th_of_Claverhouse> ;
+  gen:mother <#Mariot_Fotheringham> .
+  # oo Lady Magdalene Carnegie
+  []
+    gen:spouse <#William_Graham,_6th_of_Claverhouse> , <carnegie.ttl#Lady_Magdalene_Carnegie> ;
+	gen:startDate "1645-02-24" .
+
+<https://www.wikidata.org/wiki/Q892818>
+  # John Graham, 1st Viscount of Dundee, 1648-07 - 1689-07-27
+  # 7th of Claverhouse
+  # 1st Viscount Dundee 1688
+  gen:father <#William_Graham,_6th_of_Claverhouse> ;
+  gen:mother <carnegie.ttl#Lady_Magdalene_Carnegie> .
+  # oo Jean Cochrane, d. 1695-09-16
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q892818> , <cochrane.ttl#Jean_Cochrane> ;
+	gen:startDate "1684-05" .
+<#David_Graham,_3rd_Viscount_of_Dundee>
+  # David Graham, 3rd Viscount of Dundee, d. 1700
+  gen:father <#William_Graham,_6th_of_Claverhouse> ;
+  gen:mother <carnegie.ttl#Lady_Magdalene_Carnegie> .
+
+<#James_Graham,_2nd_Viscount_of_Dundee>
+  # James Graham, 2nd Viscount of Dundee, d. 1689
+  gen:father <https://www.wikidata.org/wiki/Q892818> ;
+  gen:mother <cochrane.ttl#Jean_Cochrane> .
+
+
+# ========
+# Graham Baronets of Esk, Viscounts Preston
+#<https://www.wikidata.org/wiki/Q7528586>
+  # Sir Richard Graham, of Esk, 1st Baronet, 1583 - 1654-01-28
+  # Baronet 1629
+  # oo Catherine Musgrave, d. 1649-03-23
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7528586> , <#Catherine_Musgrave> ;
+	gen:startDate "1624b" .
+
+<#Sir_George_Graham_of_Esk,_2nd_Baronet>
+  # Sir George Graham, of Esk, 2nd Baronet, 1624~ – 1658-03-19
+  gen:father <https://www.wikidata.org/wiki/Q7528586> ;
+  gen:mother <#Catherine_Musgrave> .
+  # oo Lady Mary Johnstone
+  []
+    gen:spouse <#Sir_George_Graham_of_Esk,_2nd_Baronet> , <hope.ttl#Lady_Mary_Johnstone> .
+<#Sir_Richard_Graham_of_Norton_Conyers,_1st_Baronet> # -> # Graham Baronets of Norton Conyers
+  # Sir Richard Graham, of Norton Conyers, 1st Baronet, 1636-03-11b - 1711-12-21b
+  gen:father <https://www.wikidata.org/wiki/Q7528586> ;
+  gen:mother <#Catherine_Musgrave> .
+
+<https://www.wikidata.org/wiki/Q5767350>
+  # Sir Richard Graham, 1st Viscount Preston, 1648-09-24 - 1695-11-22
+  # 3rd Baronet 1658-03-19
+  # Viscount Preston and Lord Graham of Esk 1681-05-12
+  gen:father <#Sir_George_Graham_of_Esk,_2nd_Baronet> ;
+  gen:mother <hope.ttl#Lady_Mary_Johnstone> .
+  # oo Lady Anne Howard, 1650 - 1707, daughter of https://www.wikidata.org/wiki/Q338284
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5767350> , <howard.ttl#Lady_Anne_Howard,_Viscountess_Preston> ;
+	gen:startDate "1670-08-02" .
+<https://www.wikidata.org/wiki/Q16839878>
+  # James Graham, of Levens, 1650-03 - 1730-01-26
+  gen:father <#Sir_George_Graham_of_Esk,_2nd_Baronet> ;
+  gen:mother <hope.ttl#Lady_Mary_Johnstone> .
+  # oo Dorothy Howard, d. 1700
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16839878> , <howard.ttl#Dorothy_Howard> ;
+	gen:startDate "1675-11-22" .
+  # oo Mrs Elizabeth Bromley, née Barton, d. 1709-09
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16839878> , <#Elizabeth_Barton> ;
+	gen:startDate "1702" .
+<https://www.wikidata.org/wiki/Q16239715>
+  # Very Rev. William Graham, Dean of Carlisle and of Wells, 1654~ - 1713-02-09
+  gen:father <#Sir_George_Graham_of_Esk,_2nd_Baronet> ;
+  gen:mother <hope.ttl#Lady_Mary_Johnstone> .
+  # oo 1688 Mary Offley
+  # oo Alice ???, d. 1741/1744
+<#Reginald_Graham>
+  # Reginald Graham, b. 1656
+  gen:father <#Sir_George_Graham_of_Esk,_2nd_Baronet> ;
+  gen:mother <hope.ttl#Lady_Mary_Johnstone> .
+  # oo Elizabeth ???
+  []
+    gen:spouse <#Reginald_Graham> , <#Elizabeth_???> .
+
+<#Edward_Graham,_2nd_Viscount_Preston>
+  # Edward Graham, 2nd Viscount Preston, 1679~ – 1710
+  gen:father <https://www.wikidata.org/wiki/Q5767350> ;
+  gen:mother <howard.ttl#Lady_Anne_Howard,_Viscountess_Preston> .
+  # oo Mary Dalton
+  []
+    gen:spouse <#Edward_Graham,_2nd_Viscount_Preston> , <#Mary_Dalton> ;
+	gen:startDate "1702-01-05" .
+<#Catherine_Graham,_Baroness_Widdrington>
+  # Hon. Catherine Graham, d. 1757-12-11
+  gen:father <https://www.wikidata.org/wiki/Q5767350> ;
+  gen:mother <howard.ttl#Lady_Anne_Howard,_Viscountess_Preston> .
+  # oo 1718-07~ William Widdrington, 4th Baron Widdrington of Blankney, 1678 - 1743-04-19, https://www.wikidata.org/wiki/Q8020338
+<#Henry_Graham>
+  # Henry Graham, d. 1707-01-07
+  gen:father <https://www.wikidata.org/wiki/Q16839878> ;
+  gen:mother <howard.ttl#Dorothy_Howard> .
+  # oo Lady Mary Tudor, 1673-10-16 - 1726-11-05
+  []
+    gen:spouse <#Henry_Graham> , <https://www.wikidata.org/wiki/Q4983566> ;
+	gen:startDate "1705-05-23" .
+<#Catherine_Graham_(died_1762)>
+  # Catherine Graham, d. 1762-02-13
+  gen:father <https://www.wikidata.org/wiki/Q16839878> ;
+  gen:mother <howard.ttl#Dorothy_Howard> .
+  # oo 1709-03-05 Henry Bowes Howard, 11th Earl of Suffolk and Berkshire, 1687-11-04 - 1757-03-21, https://www.wikidata.org/wiki/Q5723288
+<#Charles_Graham>
+  # Rev. Charles Graham, 1708~ - 1734-04-09~
+  gen:father <https://www.wikidata.org/wiki/Q16239715> .
+  # oo Priscilla Billingsley
+  []
+    gen:spouse <#Charles_Graham> , <#Priscilla_Billingsley> ;
+	gen:startDate "1729-01-06" .
+<#Robert_Graham_(died_1782)>
+  # Rev. Robert Graham, 1711~ - 1782-02-02
+  gen:father <https://www.wikidata.org/wiki/Q16239715> .
+  # oo Frances Graham, d. 1801-02-17
+  []
+    gen:spouse <#Robert_Graham_(died_1782)> , <#Frances_Graham> ;
+	gen:startDate "1752-06-01" .
+<#Metcalfe_Graham>
+  # Metcalfe Graham, 1680-08 - 1758-01-14
+  gen:father <#Reginald_Graham> ;
+  gen:mother <#Elizabeth_???> .
+  # oo Isabella Jacoba de Bons, d. 1720-05-25b
+  []
+    gen:spouse <#Metcalfe_Graham> , <#Isabella_Jacoba_de_Bons> ;
+	gen:startDate "1720b" .
+  # oo Elizabeth Nevill
+  []
+    gen:spouse <#Metcalfe_Graham> , <#Elizabeth_Nevill> ;
+	gen:startDate "1721-07-08" .
+
+<#Charles_Graham,_3rd_Viscount_Preston>
+  # Charles Graham, 3rd Viscount Preston, 1706-03-25 - 1738-02-22
+  gen:father <#Edward_Graham,_2nd_Viscount_Preston> ;
+  gen:mother <#Mary_Dalton> .
+<#Sir_William_Graham,_6th_Baronet>
+  # Rev. Sir William Graham, 6th Baronet, 1730~ - 1774-09-21
+  gen:father <#Charles_Graham> ;
+  gen:mother <#Priscilla_Billingsley> .
+  # oo Susannah Reeve, d. 1788
+  []
+    gen:spouse <#Sir_William_Graham,_6th_Baronet> , <#Susannah_Reeve> ;
+	gen:startDate "1761-11-07" .
+<https://www.wikidata.org/wiki/Q26448057> # -> Graham Baronets of Netherby
+  # Sir James Graham, of Netherby, 1st Baronet, 1761-04-22 - 1824-04-13
+  gen:father <#Robert_Graham_(died_1782)> ;
+  gen:mother <#Frances_Graham> .
+<#Jacoba_Catherine_Graham>
+  # Jacoba Catherine Graham, d. 1764-12-01b
+  gen:father <#Metcalfe_Graham> , <#Isabella_Jacoba_de_Bons> .
+  # oo 1727-06-05 Sir Reginald Graham, 4th Baronet, 1704-05-16 - 1755-10-29, #Sir_Reginald_Graham,_4th_Baronet
+
+<#Sir_Charles_Graham,_7th_Baronet>
+  # Sir Charles Graham, 7th Baronet, 1764-11-11b - 1795-11-26
+  gen:father <#Sir_William_Graham,_6th_Baronet> ;
+  gen:mother <#Susannah_Reeve> .
+<#Sir_Robert_Graham,_8th_Baronet>
+  # Sir Robert Graham, 8th Baronet, 1769-11-01b - 1852-01-27
+  gen:father <#Sir_William_Graham,_6th_Baronet> ;
+  gen:mother <#Susannah_Reeve> .
+  # oo Elizabeth Young, d. 1859-12-16
+  []
+    gen:spouse <#Sir_Robert_Graham,_8th_Baronet> , <#Elizabeth_Young> ;
+	gen:startDate "1810-04-25" .
+
+<https://www.wikidata.org/wiki/Q21931922>
+  # Sir Edward Graham, 9th Baronet, 1820-01-01 - 1864-05-27
+  gen:father <#Sir_Robert_Graham,_8th_Baronet> ;
+  gen:mother <#Elizabeth_Young> .
+  # oo Anne ???, Mrs Charles Henderson
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q21931922> , <#Anne_???> ;
+	gen:startDate "1841-06-05" .
+  # oo Adelaide Elizabeth Tully, d. 1852-03-12
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q21931922> , <#Adelaide_Elizabeth_Tully> ;
+	gen:startDate "1844-08-03" .
+  # oo Amelia Ellen Akers, d. 1877-04
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q21931922> , <#Amelia_Ellen_Akers> ;
+	gen:startDate "1855-01-20" .
+
+<#Sir_Robert_Graham,_10th_Baronet>
+  # Sir Robert James Stuart Graham, 10th Baronet, 1845-12-02 - 1917-05-11
+  gen:father <https://www.wikidata.org/wiki/Q21931922> ;
+  gen:mother <#Adelaide_Elizabeth_Tully> .
+  # oo Eliza Jane Burns (d. 1926-07-03
+  []
+    gen:spouse <#Sir_Robert_Graham,_10th_Baronet> , <#Eliza_Jane_Burns> ;
+	gen:startDate "1874-08-01" .
+
+<#Sir_Montrose_Stuart_Graham,_11th_Baronet>
+  # Sir Montrose Stuart Graham, 11th Baronet, 1875-05-20 - 1939-01-15
+  gen:father <#Sir_Robert_Graham,_10th_Baronet> ;
+  gen:mother <#Eliza_Jane_Burns> .
+  # oo Helen Ursula Henderson, d. 1968-09-14
+  []
+    gen:spouse <#Sir_Montrose_Stuart_Graham,_11th_Baronet> , <#Helen_Ursula_Henderson> ;
+	gen:startDate "1903-09-05" .
+<#Percival_Harris_Graham>
+  # Percival Harris Graham, 1877-09-17 - 1954
+  gen:father <#Sir_Robert_Graham,_10th_Baronet> ;
+  gen:mother <#Eliza_Jane_Burns> .
+  # oo Louise Wolfe, d. 1934-02-24
+  []
+    gen:spouse <#Percival_Harris_Graham> , <#Louise_Wolfe> ;
+	gen:startDate "1901-06-24" .
+
+<#Sir_Montrose_Stuart_Graham,_12th_Baronet>
+  # Sir Montrose Stuart Graham, 12th Baronet, 1904-08-04 - 1975
+  gen:father <#Sir_Montrose_Stuart_Graham,_11th_Baronet> ;
+  gen:mother <#Helen_Ursula_Henderson> .
+  # oo Elizabeth Ann Gerken
+  []
+    gen:spouse <#Sir_Montrose_Stuart_Graham,_12th_Baronet> , <#Elizabeth_Ann_Gerken> ;
+	gen:startDate "1932-10-08" .
+<#Sir_Ralph_Wolfe_Graham,_13th_Baronet>
+  # Sir Ralph Wolfe Graham, 13th Baronet, 1908-07-14 - 1988
+  gen:father <#Percival_Harris_Graham> ;
+  gen:mother <#Louise_Wolfe> .
+  # oo Gertrude Helen Kaminski
+  []
+    gen:spouse <#Sir_Ralph_Wolfe_Graham,_13th_Baronet> , <#Gertrude_Helen_Kaminski> ;
+	gen:startDate "1939-06-16" ;
+	gen:divorceDate "1949" .
+  # oo Geraldine Velour
+  []
+    gen:spouse <#Sir_Ralph_Wolfe_Graham,_13th_Baronet> , <#Geraldine_Velour> ;
+	gen:startDate "1949" .
+
+<#Lynne_Elizabeth_Graham>
+  # Lynne Elizabeth Graham, b. 1937-06-21
+  gen:father <#Sir_Montrose_Stuart_Graham,_12th_Baronet> ;
+  gen:mother <#Elizabeth_Ann_Gerken> .
+  # oo 1959-03-21 Robert H. Jager
+<#Dana_Stuart_Graham>
+  # Dana Stuart Graham, b. 1940-02-27
+  gen:father <#Sir_Montrose_Stuart_Graham,_12th_Baronet> ;
+  gen:mother <#Elizabeth_Ann_Gerken> .
+  # oo 1961-02-11 Robert G. Brust
+<#Sir_Ralph_Stuart_Graham,_14th_Baronet>
+  # Sir Ralph Stuart Graham, 14th Baronet, b. 1950-11-05
+  gen:father <#Sir_Ralph_Wolfe_Graham,_13th_Baronet> ;
+  gen:mother <#Geraldine_Velour> .
+  # oo Roxanne Gurzan, d. 1978
+  []
+    gen:spouse <#Sir_Ralph_Stuart_Graham,_14th_Baronet> , <#Roxanne_Gurzan> ;
+	gen:startDate "1972" .
+  # oo Denna Louise Vandergrift
+  []
+    gen:spouse <#Sir_Ralph_Stuart_Graham,_14th_Baronet> , <#Denna_Louise_Vandergrift> ;
+	gen:startDate "1979" .
+
+
+# Graham Baronets of Netherby
+<https://www.wikidata.org/wiki/Q26448057>
+  # Sir James Graham, of Netherby, 1st Baronet, 1761-04-22 - 1824-04-13
+  # Baronet 1783
+  gen:father <#Robert_Graham_(died_1782)> ;
+  gen:mother <#Frances_Graham> .
+  # oo Lady Catharine Stewart, 1765-03-18 - 1836-09-20
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q26448057> , <stuart.ttl#Lady_Catherine_Stewart> ;
+	gen:startDate "1785-06-09" .
+
+<https://www.wikidata.org/wiki/Q333983>
+  # Rt. Hon. Sir James Robert George Graham, 2nd Baronet, 1792-06-01 - 1861-10-25
+  gen:father <https://www.wikidata.org/wiki/Q26448057> ;
+  gen:mother <stuart.ttl#Lady_Catherine_Stewart> .
+  # oo Fanny Callander, d. 1857-10-25
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q333983> , <#Fanny_Callander> ;
+	gen:startDate "1819-07-08" .
+<https://www.wikidata.org/wiki/Q18783659>
+  # George Graham, 1801-09-13 - 1888-05-26
+  gen:father <https://www.wikidata.org/wiki/Q26448057> ;
+  gen:mother <stuart.ttl#Lady_Catherine_Stewart> .
+  # oo 1836-04-12 Maria Hasell, d. 1855-12
+
+<#Sir_Frederick_Ulric_Graham,_3rd_Baronet>
+  # Sir Frederick Ulric Graham, 3rd Baronet, 1820-04-02 – 1888-03-08
+  gen:father <https://www.wikidata.org/wiki/Q333983> ;
+  gen:mother <#Fanny_Callander> .
+  # oo Lady Jane Hermione St. Maur, 1832-01-01 - 1909-04-04
+  []
+    gen:spouse <#Sir_Frederick_Ulric_Graham,_3rd_Baronet> , <seymour.ttl#Lady_Jane_Hermione_St._Maur> ;
+	gen:startDate "1852-10-26" .
+<graham.ttl#Mabel_Violet_Graham>
+  # Mabel Violet Graham, 1833-02-15 - 1915-08-28
+  gen:father <https://www.wikidata.org/wiki/Q333983> ;
+  gen:mother <#Fanny_Callander> .
+  # oo 1851-08-07 William Ernest Duncombe, 1st Earl Feversham of Ryedale, 1829-01-28 - 1915-01-13, https://www.wikidata.org/wiki/Q8008114
+<#Helen_Graham>
+  # Helen Graham, 1835~ - 1914-01-17
+  gen:father <https://www.wikidata.org/wiki/Q333983> ;
+  gen:mother <#Fanny_Callander> .
+  # oo 1860-08-25 Charles Baring, 1829-06-26 - 1890-02-07, baring.ttl#Charles_Baring_(died_1890)
+
+<#Sir_Richard_James_Graham,_4th_Baronet>
+  # Sir Richard James Graham, 4th Baronet, 1859-02-24 - 1932-08-26
+  gen:father <#Sir_Frederick_Ulric_Graham,_3rd_Baronet> ;
+  gen:mother <seymour.ttl#Lady_Jane_Hermione_St._Maur> .
+  # oo Olivia Baring, 1863-05-14 - 1887-03-21
+  []
+    gen:spouse <#Sir_Richard_James_Graham,_4th_Baronet> , <baring.ttl#Olivia_Baring> ;
+	gen:startDate "1886-07-08" .
+  # oo Lady Mabel Cynthia Duncombe, 1869 - 1926-04-25
+  []
+    gen:spouse <#Sir_Richard_James_Graham,_4th_Baronet> , <dalrymple.ttl#Lady_Mabel_Cynthia_Duncombe> ;
+	gen:startDate "1889-06-27" .
+  # oo Florence Rose Wood, d. 1934-01-07
+  []
+    gen:spouse <#Sir_Richard_James_Graham,_4th_Baronet> , <#Florence_Rose_Wood> ;
+	gen:startDate "1927-01-01" .
+<#James_Reginald_Graham>
+  # James Reginald Graham, 1864-07-28 - 1910-09-26
+  gen:father <#Sir_Frederick_Ulric_Graham,_3rd_Baronet> ;
+  gen:mother <seymour.ttl#Lady_Jane_Hermione_St._Maur> .
+  # oo Florence Rose Wood, d. 1934-01-07
+  []
+    gen:spouse <#James_Reginald_Graham> , <#Florence_Rose_Wood> ;
+	gen:startDate "1892-01-16" .
+<#Margaret_Frances_Graham>
+  # Margaret Frances Graham, d. 1927-10-04
+  gen:father <#Sir_Frederick_Ulric_Graham,_3rd_Baronet> ;
+  gen:mother <seymour.ttl#Lady_Jane_Hermione_St._Maur> .
+  # oo 1875-05-04 Alexander Aeneas Mackintosh, 27th of Mackintosh, 1847-08-07 - 1875-12-17, #Alexander_Aeneas_Mackintosh,_27th_of_Mackintosh
+  # oo 1878-04-30 James Walter Grimston, 3rd Earl of Verulam, 1852-05-11 - 1924-11-11, https://www.wikidata.org/wiki/Q6135007
+<#Violet_Hermione_Graham,_Duchess_of_Montrose>
+  # Violet Hermione Graham, 1854-09-10 - 1940-11-21
+  gen:father <#Sir_Frederick_Ulric_Graham,_3rd_Baronet> ;
+  gen:mother <seymour.ttl#Lady_Jane_Hermione_St._Maur> .
+  # oo 1876-07-24 Douglas Graham, 5th Duke of Montrose, 1852-11-07, 1925-12-10, https://www.wikidata.org/wiki/Q495606
+<#Sibyl_Marcia_Graham>
+  # Sibyl Marcia Graham, 1857 - 1887-09-19
+  gen:father <#Sir_Frederick_Ulric_Graham,_3rd_Baronet> ;
+  gen:mother <seymour.ttl#Lady_Jane_Hermione_St._Maur> .
+  # oo 1880-06-03 Hon. Robert Offley Ashburton Milnes, 2nd Lord Houghton [later, Crewe-Milnes, Marquess of Crewe], 1858-01-12 - 1945-06-20, https://www.wikidata.org/wiki/Q336421
+<#Hilda_Georgiana_Graham>
+  # Hilda Georgiana Graham, d. 1946-02-01
+  gen:father <#Sir_Frederick_Ulric_Graham,_3rd_Baronet> ;
+  gen:mother <seymour.ttl#Lady_Jane_Hermione_St._Maur> .
+  # oo 1895-10-07 George Denison Faber, 1st Baron Wittenham, 1851-12-14 - 1931-02-01, https://www.wikidata.org/wiki/Q5539164
+
+<https://www.wikidata.org/wiki/Q7526665>
+  # Sir Fergus Frederick Graham, 5th Baronet, 1893-03-10 - 1978-08-01
+  gen:father <#Sir_Richard_James_Graham,_4th_Baronet> ;
+  gen:mother <dalrymple.ttl#Lady_Mabel_Cynthia_Duncombe> .
+  # oo Mary Spencer Revell Reade, 1897-08-07 - 1985
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7526665> , <#Mary_Spencer_Revell_Reade> ;
+	gen:startDate "1918-01-01" .
+
+<#Sir_Charles_Spencer_Richard_Graham,_6th_Baronet>
+  # Sir Charles Spencer Richard Graham, 6th Baronet, 1919-07-16 - 1997-07-11
+  gen:father <https://www.wikidata.org/wiki/Q7526665> ;
+  gen:mother <#Mary_Spencer_Revell_Reade> .
+  # oo Susan Surtees, d. 2012-01-22
+  []
+    gen:spouse <#Sir_Charles_Spencer_Richard_Graham,_6th_Baronet> , <#Susan_Surtees> ;
+	gen:startDate "1944-02-05" .
+
+<#Sir_James_Fergus_Surtees_Graham,_7th_Baronet>
+  # Sir James Fergus Surtees Graham, 7th Baronet, b. 1946-07-29
+  gen:father <#Sir_Charles_Spencer_Richard_Graham,_6th_Baronet> ;
+  gen:mother <#Susan_Surtees> .
+  # oo Serena Jane Kershaw, b. 1948-07-08
+  []
+    gen:spouse <#Sir_James_Fergus_Surtees_Graham,_7th_Baronet> , <#Serena_Jane_Kershaw> ;
+	gen:startDate "1975-02-05" .
+<#Malise_Charles_Richard_Graham>
+  # Malise Charles Richard Graham, b. 1948-09-19
+  gen:father <#Sir_Charles_Spencer_Richard_Graham,_6th_Baronet> ;
+  gen:mother <#Susan_Surtees> .
+  # oo Hon. Pamela Winifred Whitelaw, b. 1951-03-09
+  []
+    gen:spouse <#Malise_Charles_Richard_Graham> , <#Pamela_Winifred_Whitelaw> ;
+	gen:startDate "1974-04-27" .
+
+<#Catherine_Mary_Graham>
+  # Catherine Mary Graham, b. 1978-09-16
+  gen:father <#Sir_James_Fergus_Surtees_Graham,_7th_Baronet> ;
+  gen:mother <#Serena_Jane_Kershaw> .
+<#Iona_Susan_Alice_Graham>
+  # Iona Susan Alice Graham, b. 1980
+  gen:father <#Sir_James_Fergus_Surtees_Graham,_7th_Baronet> ;
+  gen:mother <#Serena_Jane_Kershaw> .
+<#Robert_Charles_Thomas_Graham>
+  # Robert Charles Thomas Graham, b. 1985-07-19
+  gen:father <#Sir_James_Fergus_Surtees_Graham,_7th_Baronet> ;
+  gen:mother <#Serena_Jane_Kershaw> .
+  # oo Emily K. Bell
+  []
+    gen:spouse <#Robert_Charles_Thomas_Graham> , <#Emily_K._Bell> .
+
+<#Frederick_James_Sam_Graham>
+  # Frederick James Sam Graham, b. 2017-03-16
+  gen:father <#Robert_Charles_Thomas_Graham> ;
+  gen:mother <#Emily_K._Bell> .
+
+
+# Graham Baronets of Norton Conyers
+<#Sir_Richard_Graham_of_Norton_Conyers,_1st_Baronet>
+  # Sir Richard Graham, of Norton Conyers, 1st Baronet, 1636-03-11b - 1711-12-21b
+  gen:father <https://www.wikidata.org/wiki/Q7528586> ;
+  gen:mother <#Catherine_Musgrave> .
+  # oo Elizabeth Fortescue, d. 1705-06-25a
+  []
+    gen:spouse <#Sir_Richard_Graham_of_Norton_Conyers,_1st_Baronet> , <#Elizabeth_Fortescue> ;
+	gen:startDate "1660~" .
+
+<#Sir_Reginald_Graham,_2nd_Baronet>
+  # Sir Reginald Graham, 2nd Baronet, 1670-07-30b - 1728-05-20
+  gen:father <#Sir_Richard_Graham_of_Norton_Conyers,_1st_Baronet> ;
+  gen:mother <#Elizabeth_Fortescue> .
+  # oo Frances Bellingham
+  []
+    gen:spouse <#Sir_Reginald_Graham,_2nd_Baronet> , <#Frances_Bellingham> ;
+	gen:startDate "1702" .
+  # oo Anne Foulis, 1669-09-16b - 1751-05-11b
+  []
+    gen:spouse <#Sir_Reginald_Graham,_2nd_Baronet> , <#Anne_Foulis> ;
+	gen:startDate "1724-04-09" .
+
+<#Sir_Bellingham_Graham,_3rd_Baronet>
+  # Sir Bellingham Graham, 3rd Baronet, 1702-08-20b - 1730-04-01b
+  gen:father <#Sir_Reginald_Graham,_2nd_Baronet> ;
+  gen:mother <#Frances_Bellingham> .
+<#Sir_Reginald_Graham,_4th_Baronet>
+  # Sir Reginald Graham, 4th Baronet, 1704-05-16 - 1755-10-29
+  gen:father <#Sir_Reginald_Graham,_2nd_Baronet> ;
+  gen:mother <#Frances_Bellingham> .
+  # oo Jacoba Catherine Graham, d. 1764-12-01b
+  []
+    gen:spouse <#Sir_Reginald_Graham,_4th_Baronet> , <#Jacoba_Catherine_Graham> ;
+	gen:startDate "1727-06-05" .
+
+<#Sir_Bellingham_Graham,_5th_Baronet>
+  # Sir Bellingham Graham, 5th Baronet, 1729-06-14b - 1790-10-03
+  gen:father <#Sir_Reginald_Graham,_4th_Baronet> ;
+  gen:mother <#Jacoba_Catherine_Graham> .
+  # oo Elizabeth Hudson, d. 1767-05-06
+  []
+    gen:spouse <#Sir_Bellingham_Graham,_5th_Baronet> , <#Elizabeth_Hudson> ;
+	gen:startDate "1763-06-24" .
+<#Frances_Graham>
+  # Frances Graham, d. 1801-02-17
+  gen:father <#Sir_Reginald_Graham,_4th_Baronet> ;
+  gen:mother <#Jacoba_Catherine_Graham> .
+  # oo 1752-06-01 Rev. Robert Graham, 1711~ - 1782-02-02, #Robert_Graham
+
+<#Sir_Bellingham_Graham,_6th_Baronet>
+  # Sir Bellingham Graham, 6th Baronet, 1764~ - 1796-04-13
+  gen:father <#Sir_Bellingham_Graham,_5th_Baronet> ;
+  gen:mother <#Elizabeth_Hudson> .
+  # oo Priscilla Whitworth, d. 1833-05-08
+  []
+    gen:spouse <#Sir_Bellingham_Graham,_6th_Baronet> , <#Priscilla_Whitworth> ;
+	gen:startDate "1785-10-31" .
+
+<#Sir_Bellingham_Reginald_Graham,_7th_Baronet>
+  # Sir Bellingham Reginald Graham, 7th Baronet, 1789-11-04 - 1866-06-15
+  gen:father <#Sir_Bellingham_Graham,_6th_Baronet> ;
+  gen:mother <#Priscilla_Whitworth> .
+  # oo Henrietta Clark, d. 1830-10-09
+  []
+    gen:spouse <#Sir_Bellingham_Reginald_Graham,_7th_Baronet> , <#Henrietta_Clark> ;
+	gen:startDate "1810-11-10" .
+  # oo Harriet Cottam, d. 1903-01-17
+  []
+    gen:spouse <#Sir_Bellingham_Reginald_Graham,_7th_Baronet> , <#Harriet_Cottam> ;
+	gen:startDate "1831-06-28" .
+
+<#Harriet_Graham>
+  # Harriet Graham, d. 1884-03-06
+  gen:father <#Sir_Bellingham_Reginald_Graham,_7th_Baronet> ;
+  gen:mother <#Henrietta_Clark> .
+  # oo 1833-10-20 Sir Frederick Ashworth, d. 1858-08-01
+  # oo 1862-02-26 Sir George Hamilton Chichester, 3rd Marquess of Donegall, 1797-02-10 - 1883-10-20, https://www.wikidata.org/wiki/Q5537863
+<#Sir_Reginald_Henry_Graham,_8th_Baronet>
+  # Sir Reginald Henry Graham, 8th Baronet, 1835-04-22 - 1920-12-27
+  gen:father <#Sir_Bellingham_Reginald_Graham,_7th_Baronet> ;
+  gen:mother <#Harriet_Cottam> .
+  # oo Annie Mary Shiffner, d. 1917-12-16
+  []
+    gen:spouse <#Sir_Reginald_Henry_Graham,_8th_Baronet> , <#Annie_Mary_Shiffner> ;
+	gen:startDate "1876-07-24" .
+
+<#Sir_Reginald_Guy_Graham,_9th_Baronet>
+  # Sir Reginald Guy Graham, 9th Baronet, 1878-06-28 - 1940-06-02
+  gen:father <#Sir_Reginald_Henry_Graham,_8th_Baronet> ;
+  gen:mother <#Annie_Mary_Shiffner> .
+  # oo Katherine Noel Stobart, d. 1966-06-08
+  []
+    gen:spouse <#Sir_Reginald_Guy_Graham,_9th_Baronet> , <#Katherine_Noel_Stobart> ;
+	gen:startDate "1911-07-18" .
+
+<#Sir_Richard_Bellingham_Graham,_10th_Baronet>
+  # Sir Richard Bellingham Graham, 10th Baronet, 1912-05-17 - 1982-01-29
+  gen:father <#Sir_Reginald_Guy_Graham,_9th_Baronet> ;
+  gen:mother <#Katherine_Noel_Stobart> .
+  # oo Beatrice Mary Spencer-Smith, 1909-03-27 - 1992
+  []
+    gen:spouse <#Sir_Richard_Bellingham_Graham,_10th_Baronet> , <#Beatrice_Mary_Spencer-Smith> ;
+	gen:startDate "1939-09-16" .
+
+<#Sir_James_Bellingham_Graham,_11th_Baronet>
+  # Sir James Bellingham Graham, 11th Baronet, b. 1940-10-08
+  gen:father <#Sir_Richard_Bellingham_Graham,_10th_Baronet> ;
+  gen:mother <#Beatrice_Mary_Spencer-Smith> .
+  # oo 1986 Halina Grubert
+<#William_Reginald_Graham>
+  # William Reginald Graham, 1942-07-07 - 1999-04-29
+  gen:father <#Sir_Richard_Bellingham_Graham,_10th_Baronet> ;
+  gen:mother <#Beatrice_Mary_Spencer-Smith> .
+<#Jeremy_Richard_Graham>
+  # [Jeremy] Richard Graham, b. 1949-01-23
+  gen:father <#Sir_Richard_Bellingham_Graham,_10th_Baronet> ;
+  gen:mother <#Beatrice_Mary_Spencer-Smith> .
+  # oo Judith McCann
+  []
+    gen:spouse <#Jeremy_Richard_Graham> , <#Judith_McCann> ;
+	gen:startDate "1976-01-03" .
+
+<#Sophia_Harriet_Graham>
+  # Sophia Harriet Graham, b. 1977
+  gen:father <#Jeremy_Richard_Graham> ;
+  gen:mother <#Judith_McCann> .
+  # oo Edward Guy Henson
+<#Samuel_Reginald_Graham>
+  # Samuel Reginald Graham, b.1979
+  gen:father <#Jeremy_Richard_Graham> ;
+  gen:mother <#Judith_McCann> .
+<#Edward_Richard_Graham>
+  # Edward Richard Graham, b.1985
+  gen:father <#Jeremy_Richard_Graham> ;
+  gen:mother <#Judith_McCann> .
+  # oo 2013 Olivia Hope Warburton, b. 1985
+
+
+# ========
+<https://www.wikidata.org/wiki/Q7527426>
+  # Sir James Graham, of Kirkstall, 1st Baronet
+  gen:birthDate "1753-11-18" ;
+  gen:deathDate "1825-03-21" .
+  # oo Anne Moore, 1744~ - 1821-08-28
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7527426> , <#Anne_Moore> ;
+	gen:startDate "1781" .
+
+<#Anne_Graham>
+  # Anne Graham, d. 1858-05-10
+  gen:father <https://www.wikidata.org/wiki/Q7527426> ;
+  gen:mother <#Anne_Moore> .
+  # oo 1812-06-23 Sir Adolphus John Dalrymple, 2nd Baronet, 1784-02-03 - 1866-03-03, https://www.wikidata.org/wiki/Q4684458
+<#Sandford_Graham,_2nd_Baronet>
+  # Sandford Graham, 2nd Baronet, 1788-03-10 - 1852-09-18
+  gen:father <https://www.wikidata.org/wiki/Q7527426> ;
+  gen:mother <#Anne_Moore> .
+  # oo Caroline Langston
+  []
+    gen:spouse <#Sandford_Graham,_2nd_Baronet> , <#Caroline_Langston> ;
+	gen:startDate "1819-05-11" .
+
+<#Sir_Sandford_Graham,_3rd_Baronet>
+  # Sir Sandford Graham, 3rd Baronet, 1821 - 1875-05-02
+  gen:father <#Sandford_Graham,_2nd_Baronet> ;
+  gen:mother <#Caroline_Langston> .
+  # oo 1847-02-04 Lady Eleanora Caroline Paget, 1828-05-13 - 1848-11-17
+  []
+    gen:spouse <#Sir_Sandford_Graham,_3rd_Baronet> , <paget.ttl#Lady_Eleanora_Caroline_Paget> .
+<#Sir_Lumley_Graham,_4th_Baronet>
+  # Sir Lumley Graham, 4th Baronet, 1828-02-27 - 1890-10
+  gen:father <#Sandford_Graham,_2nd_Baronet> ;
+  gen:mother <#Caroline_Langston> .
+  # oo Augusta Raymond-Barker, b. 1827-03-16 - 1895
+  []
+    gen:spouse <#Sir_Lumley_Graham,_4th_Baronet> , <#Augusta_Raymond-Barker> ;
+	gen:startDate "1856-01-01" .
+<#Sir_Cyril_Clerke_Graham,_5th_Baronet>
+  # Sir Cyril Clerke Graham, 5th Baronet, 1834-03-05 - 1895-04-08
+  gen:father <#Sandford_Graham,_2nd_Baronet> ;
+  gen:mother <#Caroline_Langston> .
+  # oo Louisa Frederica Hervey, 1842-05-09 - 1906-01-27
+  []
+    gen:spouse <#Sir_Cyril_Clerke_Graham,_5th_Baronet> , <#Louisa_Frederica_Hervey> .
+
+<#Violet_Evelyn_Cecilia_Graham>
+  # Violet Evelyn Cecilia Graham, b. 1876
+  gen:father <#Sir_Cyril_Clerke_Graham,_5th_Baronet> ;
+  gen:mother <#Louisa_Frederica_Hervey> .
+  # oo Sir William Montague Graham-Harrison, 1871-02-04 - 1949-10-29, https://www.wikidata.org/wiki/Q8010073
+<#Beatrix_Margaret_Irene_Graham>
+  # Beatrix Margaret Irene Graham, 1879-11-02 - 1921-01-12
+  gen:father <#Sir_Cyril_Clerke_Graham,_5th_Baronet> ;
+  gen:mother <#Louisa_Frederica_Hervey> .
+  # oo Canon William Herber McKean
+
+
+# --------
+<#Margaret_Fleming,_Countess_of_Montrose>
+  # Margaret Fleming
+  gen:father <https://www.wikidata.org/wiki/Q1886996> ;
+  gen:mother <https://www.wikidata.org/wiki/Q461721> .
+  # oo Robert Graham, Master of Montrose, d. 1547-09-10, #Robert_Graham,_Master_of_Montrose
+
+#<https://www.wikidata.org/wiki/Q19360709>
+  # John Fleming, 6th Lord Fleming, 1st Earl of Wigtown, 1566/1567- 1619-04
+  # oo Lady Lilias Graham
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q19360709> , <#Lady_Lilias_Graham,_Countess_of_Wigtown> .
+
+# --------
+#<https://www.wikidata.org/wiki/Q18527593>
+  # George Sinclair, 4th Earl of Caithness, d. 1582-09-09
+  # oo Lady Elizabeth Graham, d. 1576-04-04b
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q18527593> , <graham.ttl#Lady_Elizabeth_Graham_(died_1576)> .
+
+# --------
+<#Lady_Mary_Ruthven,_Countess_of_Montrose>
+  # Lady Margaret Ruthven d. 1618
+  gen:father <https://www.wikidata.org/wiki/Q3568922> ;
+  gen:mother <#Dorothea_Stewart,_Countess_of_Gowrie> . # Dorothea Stewart
+  # oo John Graham, 4th Earl of Montrose, 1573 - 1626-11-14, https://www.wikidata.org/wiki/Q6235930
+
+# --------
+#<https://www.wikidata.org/wiki/Q7527674>
+  # Sir John Colquhoun of Luss, 1st Baronet, 1596~ - 1647-11-08a
+  # oo Lady Lilias Graham
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7527674> , <#Lady_Lilias_Graham> ;
+	gen:startDate "1620-07-06" .
+
+# --------
+#<https://www.wikidata.org/wiki/Q6219558>
+  # John Ashburnham, 2nd Earl of Ashburnham, 30 October 1724, d. 8 April 1812
+  # oo Elizabeth Crowley, 1727~ - 1781-02-05, daughter of John Crowley and Theodosia Gascoyne
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6219558> , <#Elizabeth_Crowley> ;
+	gen:startDate "1756-06-28" .
+
+<https://www.wikidata.org/wiki/Q5536454>
+  # George Ashburnham, 3rd Earl of Ashburnham, 1760-12-25 - 1830-10-27
+  gen:father <https://www.wikidata.org/wiki/Q6219558> ;
+  gen:mother <#Elizabeth_Crowley> .
+  # oo Lady Charlotte Percy, 1776-06-03 - 1862-11-26
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5536454> , <https://www.wikidata.org/wiki/Q56651710> ;
+	gen:startDate "1795-07-25" .
+<#Lady_Jemima_Elizabeth_Ashburnham>
+  # Lady Jemima Elizabeth Ashburnham, 1762-01-01 - 1786-09
+  gen:father <https://www.wikidata.org/wiki/Q6219558> ;
+  gen:mother <#Elizabeth_Crowley> .
+  # oo 1785-03-03 James Graham, 3rd Duke of Montrose, 1755-09-08 - 1836-12-30, https://www.wikidata.org/wiki/Q326693
+<#Lady_Theodosia_Maria_Ashburnham>
+  # Lady Theodosia Maria Ashburnham, 1765-06-16 - 1822
+  gen:father <https://www.wikidata.org/wiki/Q6219558> ;
+  gen:mother <#Elizabeth_Crowley> .
+  # oo 1788-06-04 Robert Vyner, 1762-05-16 - 1810-03-13, https://www.wikidata.org/wiki/Q26403910
+
+<https://www.wikidata.org/wiki/Q21855104>
+  # Bertram Ashburnham, 4th Earl of Ashburnham, 1797-11-23 - 1878-06-22
+  gen:father <https://www.wikidata.org/wiki/Q5536454> ;
+  gen:mother <https://www.wikidata.org/wiki/Q56651710> .
+  # oo Lady Katherine Charlotte Baillie, 1819-05-10 - 1894-02-06
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q21855104> , <hamilton.ttl#Lady_Katherine_Charlotte_Baillie> ;
+	gen:startDate "1840-01-08" .
+<#Lady_Georgiana_Jemima_Ashburnham>
+  # Lady Georgiana Jemima Ashburnham, 1805-05-11 - 1882-05
+  gen:father <https://www.wikidata.org/wiki/Q5536454> ;
+  gen:mother <https://www.wikidata.org/wiki/Q56651710> .
+  # oo 1828-02-28 Henry Reveley Mitford, 1804-06-21 - 1883-12-21, #Henry_Reveley_Mitford
+
+<#Lady_Mary_Ashburnham>
+  # Lady Mary Ashburnham, 1859-12-21 - 1947-05-03
+  gen:father <https://www.wikidata.org/wiki/Q21855104> ;
+  gen:mother <hamilton.ttl#Lady_Katherine_Charlotte_Baillie> .
+  # oo 1883-01-23 Sydney George Holland, 2nd Viscount Knutsford, 1855-03-18 - 1931-07-27, https://www.wikidata.org/wiki/Q7659972
+
+# --------
+#<https://www.wikidata.org/wiki/Q16157445>
+  # William Beresford, 1st Baron Decies, 1743-04-16 - 1819-09-06
+  # Archbishop of Tuam
+  # 1st Baron Decies, of Decies, co. Waterford 1812-12-22
+  # oo Elizabeth FitzGibbon, 1736 - 1807, daughter of John FitzGibbon and unknown Minchin
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16157445> , <#Elizabeth_FitzGibbon> ;
+	gen:startDate "1763-06-16" .
+
+<#John_Horsley-Beresford,_2nd_Baron_Decies>
+  # John Horsley-Beresford, 2nd Baron Decies, 1773-01-20 - 1865-03-01
+  gen:father <https://www.wikidata.org/wiki/Q16157445> ;
+  gen:mother <#Elizabeth_FitzGibbon> .
+  # oo Charlotte Philadelphia Horsley, d. 1852-03-09
+  []
+    gen:spouse <#John_Horsley-Beresford,_2nd_Baron_Decies> , <#Charlotte_Philadelphia_Horsley> ;
+	gen:startDate "1810-07-26" .
+
+<#William_Horsley-Beresford,_3rd_Baron_Decies>
+  # William Robert John Horsley-Beresford, 3rd Baron Decies, 1811-06 - 1893-07-03
+  gen:father <#John_Horsley-Beresford,_2nd_Baron_Decies> ;
+  gen:mother <#Charlotte_Philadelphia_Horsley> .
+  # oo Catherine Anne Dent, d. 1941-02-27, daughter of William Dent Dent
+  []
+    gen:spouse <#William_Horsley-Beresford,_3rd_Baron_Decies> , <#Catherine_Anne_Dent> ;
+	gen:startDate "1860-07-31" .
+<https://www.wikidata.org/wiki/Q18819378>
+  # Hon. Caroline Agnes Horsley-Beresford, 1818-03-14 - 1894-11-16
+  gen:father <#John_Horsley-Beresford,_2nd_Baron_Decies> ;
+  gen:mother <#Charlotte_Philadelphia_Horsley> .
+  # oo 1836-10-15 James Graham, 4th Duke of Montrose, 1799-07-16 - 1874-12-30, https://www.wikidata.org/wiki/Q495977
+
+<#Charlotte_Ernestine_Horsley-Beresford>
+  # Hon. Charlotte Ernestine Horsley-Beresford, 1871-09-03 - 1923-09-28
+  gen:father <#William_Horsley-Beresford,_3rd_Baron_Decies> ;
+  gen:mother <#Catherine_Anne_Dent> .
+  # oo 1892-10-08 Cameron Barclay, 1866 - 1954-08-03
+
+# --------
+#<https://www.wikidata.org/wiki/Q5345591>
+  # Edward Thomas Foley, 1791-12-21 - 1846-03-30
+  # oo Lady Emily Graham, 1805-06-23 - 1900-01-01
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5345591> , <https://www.wikidata.org/wiki/Q19902274> ;
+	gen:startDate "1832-08-16" .
+
+# --------
+#<https://www.wikidata.org/wiki/Q5294124>
+  # Donald Cameron of Lochiel, 1835-04-05 – 1905-11-30
+  # oo Lady Margaret Elizabeth Montagu Douglas Scott, 1846-10-10 - 1918-02-05
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5294124> , <scott.ttl#Lady_Margaret_Elizabeth_Montagu_Douglas_Scott> ;
+	gen:startDate "1875-12-09" .
+
+<https://www.wikidata.org/wiki/Q5294125>
+  # Sir Donald Walter Cameron, of Lochiel, 1876-11-04 - 1951-10-11
+  gen:father <https://www.wikidata.org/wiki/Q5294124> ;
+  gen:mother <scott.ttl#Lady_Margaret_Elizabeth_Montagu_Douglas_Scott> .
+  # oo Lady Hermione Emily Graham, 1882-02-22 - 1978-03-03
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5294125> , <graham.ttl#Lady_Hermione_Emily_Graham> ;
+	gen:startDate "1906-03-29" .
+
+# --------
+#<https://www.wikidata.org/wiki/Q7659972>
+  # Sydney George Holland, 2nd Viscount Knutsford, 1855-03-18 - 1931-07-27
+  # oo 1883-01-23 Lady Mary Ashburnham (1859-12-21 - 1947-05-03
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7659972> , <#Lady_Mary_Ashburnham> ;
+	gen:startDate "1883-01-23" .
+
+<#Rachel_Mary_Holland>
+  # Hon. Rachel Mary Holland, 1891-03-01 - 1977-06-06
+  gen:father <https://www.wikidata.org/wiki/Q7659972> ;
+  gen:mother <#Lady_Mary_Ashburnham> .
+  # oo 1919-07-29 Lord Douglas Malise Graham, 1883-10-14 - 1974-11-20, #Lord_Douglas_Malise_Graham
+
+# --------
+<#Lady_Muriel_Olivia_Bathurst>
+  # Lady Muriel Olivia Bathurst, 1894-09-03 - 1936-01-18
+  gen:father <https://www.wikidata.org/wiki/Q7459129> .
+  # oo 1916-05-04 Lord Alastair Mungo Graham, 1886-05-12 - 1976-11-26, #Lord_Alastair_Mungo_Graham
+
+# --------
+#<https://www.wikidata.org/wiki/Q5537120>
+  # George Evelyn Boscawen, 3rd Viscount Falmouth, 1758-05-06 - 1808-02-08
+  # oo Elizabeth Anne Crewe, d. 1793-08-10
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5537120> , <#Elizabeth_Anne_Crewe> ;
+	gen:startDate "1784-06-26" .
+
+<#John_Evelyn_Boscawen>
+  # Rev. Hon. John Evelyn Boscawen, 1790 - 1851-04-12
+  gen:father <https://www.wikidata.org/wiki/Q5537120> ;
+  gen:mother <#Elizabeth_Anne_Crewe> .
+  # oo Catherine Elizabeth Annesley, d. 1859-07-30
+  []
+    gen:spouse <#John_Evelyn_Boscawen> , <#Catherine_Elizabeth_Annesley> ;
+	gen:startDate "1814" .
+
+<#John_Townshend_Boscawen>
+  # Rev. Hon. John Townshend Boscawen, 1820-10-30 - 1889-06-06
+  gen:father <#John_Evelyn_Boscawen> ;
+  gen:mother <#Catherine_Elizabeth_Annesley> .
+  # oo Mary Tremayne, d. 1895-11-25
+  []
+    gen:spouse <#John_Townshend_Boscawen> , <#Mary_Tremayne> ;
+	gen:startDate "1851-02-13" .
+
+<#Townshend_Evelyn_Boscawen>
+  # Townshend Evelyn Boscawen (1906-02-14 - 1972-10-09
+  gen:father <#John_Townshend_Boscawen> ;
+  gen:mother <#Mary_Tremayne> .
+  # oo Mary Sophia Dorrien-Smith, 1877-11-09 - 1948-12-22
+  []
+    gen:spouse <#Townshend_Evelyn_Boscawen> , <#Mary_Sophia_Dorrien-Smith> ;
+	gen:startDate "1902-07-03" .
+
+<#John_Perceval_Townshend_Boscawen>
+  # John Perceval Townshend Boscawen, 1906-02-14 - 1972-10-09
+  gen:father <#Townshend_Evelyn_Boscawen> .
+  # oo Lady Mary Helen Alma Graham, 1907-05-02 - 1992-02-10
+  []
+    gen:spouse <#John_Perceval_Townshend_Boscawen> , <#Lady_Mary_Helen_Alma_Graham> ;
+	gen:startDate "1931-04-21" .
+
+# --------
+<https://www.wikidata.org/wiki/Q47487432>
+  gen:name "Catherine Elizabeth MacDonell Young"@en ;
+  gen:birthDate "1935-09-05" ;
+  gen:deathDate "2014-10-29" ;
+  gen:father <#Norman_Andrew_Thomson_Young> ;
+  gen:mother <#Mary_Moody> .
+  # oo 1970-01-31 James Graham, 8th Duke of Montrose, b. 1935-04-06, https://www.wikidata.org/wiki/Q335692
+
+# ----
+#<https://www.wikidata.org/wiki/Q8020338>
+  # William Widdrington, 4th Baron Widdrington of Blankney, 1678 - 1743-04-19
+  # oo Hon. Catherine Graham, d. 1757-12-11
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8020338> , <#Catherine_Graham,_Baroness_Widdrington> ;
+	gen:startDate "1718-07~" .
+
+# ----
+#<#Alexander_Aeneas_Mackintosh,_27th_of_Mackintosh>
+  # Alexander Aeneas Mackintosh, 27th of Mackintosh, 1847-08-07 - 1875-12-17
+  # oo Margaret Frances Graham, d. 1927-10-04
+  []
+    gen:spouse <#Alexander_Aeneas_Mackintosh,_27th_of_Mackintosh> , <#Margaret_Frances_Graham> ;
+	gen:startDate "1875-05-04" .
+
+<#Eva_Hermione_Mackintosh>
+  # Eva Hermione Mackintosh, 1876-05 - 1934-06-09
+  gen:father <#Alexander_Aeneas_Mackintosh,_27th_of_Mackintosh> ;
+  gen:mother <#Margaret_Frances_Graham> .
+  # oo 1898-01-26 Sir Godfrey Baring, 1st Baronet, 1871-04-18 - 1957-11-24, https://www.wikidata.org/wiki/Q5576375
+
+# ----
+#<https://www.wikidata.org/wiki/Q6135007>
+  # James Walter Grimston, 3rd Earl of Verulam, 1852-05-11 - 1924-11-11
+  # oo Margaret Frances Graham, d. 1927-10-04
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6135007> , <#Margaret_Frances_Graham> ;
+	gen:startDate "1878-04-30" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q336421>
+  # Sir Robert Offley Ashburton Crewe-Milnes, 1st Marquess of Crewe (1858-01-12 - 1945-06-20
+  # 2nd Baron Houghton, of Great Houghton, West Riding Yorkshire 1885-08-11
+  # 1st Earl of Crewe, co. Palatine of Chester 1895-07-17
+  # 1st Marquess of Crewe, 1st Earl of Madeley, co. Stafford 1911-06-22
+  # oo Sibyl Marcia Graham, 1857 - 1887-09-19
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q336421> , <#Sibyl_Marcia_Graham> ;
+	gen:startDate "1880-06-03" .
+  # oo Lady Margaret Etienne Hannah Primrose, d. 1967-03-13
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q336421> , <#Lady_Margaret_Etienne_Hannah_Primrose> ;
+	gen:startDate "1899-04-20" .
+
+<#Lady_Annabel_Hungerford_Crewe-Milnes>
+  # Lady Annabel Hungerford Crewe-Milnes, 1881-08-31 - 1948-06-14
+  gen:father <https://www.wikidata.org/wiki/Q336421> ;
+  gen:mother <#Sibyl_Marcia_Graham> .
+  # oo 1902-01-21 Hon. Arthur Edward Bruce O'Neill, 1876-09-19 - 1914-11-05, https://www.wikidata.org/wiki/Q4799859 (wemyss.ttl)
+  # oo 1922-02-09 James Hugh Hamilton Crewe, d. 1956-07-28, cavendish.ttl#James_Hugh_Hamilton_Crewe
+<https://www.wikidata.org/wiki/Q6470059>
+  # Lady Helen Cynthia Crewe-Milnes, 1884-05-20 - 1968-06-15
+  gen:father <https://www.wikidata.org/wiki/Q336421> ;
+  gen:mother <#Sibyl_Marcia_Graham> .
+  # oo 1908-01-21 Hon. George Charles Colville, 1867-02-22 - 1943-09-19, https://www.wikidata.org/wiki/Q62027478 (gower.ttl)
+<https://www.wikidata.org/wiki/Q6779830>
+  # Lady Mary Evelyn Hungerford Crewe-Milnes, 1915-03-23 – 2014-07-02
+  gen:father <https://www.wikidata.org/wiki/Q336421> ;
+  gen:mother <#Lady_Margaret_Etienne_Hannah_Primrose> .
+  # oo 1935-10-24 (div 1953) George Victor Robert John Innes-Ker, 9th Duke of Roxburghe, 1913-09-07 - 1974-09-26, https://www.wikidata.org/wiki/Q5540947
+# ----
+<#Lady_Margaret_Etienne_Hannah_Primrose>
+  # Lady Margaret Etienne Hannah Primrose, d. 1967-03-13
+  gen:father <https://www.wikidata.org/wiki/Q244620> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5648935> .
+  # oo 1899-04-20 Sir Robert Crewe-Milnes, 1st Marquess of Crewe, 1858-01-12 - 1945-06-20, https://www.wikidata.org/wiki/Q336421
+
+# ----
+#<https://www.wikidata.org/wiki/Q5539164>
+  # George Denison Faber, 1st Baron Wittenham, 1851-12-14 - 1931-02-01
+  # oo Hilda Georgiana Graham, d. 1946-02-01
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5539164> , <#Hilda_Georgiana_Graham> ;
+	gen:startDate "1895-10-07" .
+
+# ----
+<#Mary_Spencer_Revell_Reade>
+  # Mary Spencer Revell Reade, 1897-08-07 - 1985
+  gen:father <https://www.wikidata.org/wiki/Q7299042> .
+  # oo 1918-01-01 Sir Fergus Frederick Graham, 5th Baronet, 1893-03-10 - 1978-08-01, https://www.wikidata.org/wiki/Q7526665
+
+# ----
+<#Pamela_Winifred_Whitelaw>
+  # Hon. Pamela Winifred Whitelaw, b. 1951-03-09
+  gen:father <https://www.wikidata.org/wiki/Q333963> .
+  # oo 1974-04-27 Malise Charles Richard Graham, b. 1948-09-19, #Malise_Charles_Richard_Graham
+
+# ----
+<#Anne_Foulis>
+  # Anne Foulis, 1669-09-16b - 1751-05-11b
+  gen:father <https://www.wikidata.org/wiki/Q53843759> .
+  # oo 1724-04-09 Sir Reginald Graham, 2nd Baronet, 1670-07-30b - 1728-05-20, #Sir_Reginald_Graham,_2nd_Baronet
+
+# ----
+<#Priscilla_Whitworth>
+  # Priscilla Whitworth, d. 1833-05-08
+  gen:father <https://www.wikidata.org/wiki/Q5083514> .
+  # oo 1785-10-31 Sir Bellingham Graham, 6th Baronet, 1764~ - 1796-04-13, #Sir_Bellingham_Graham,_6th_Baronet
+
+# ----
+#<https://www.wikidata.org/wiki/Q5537863>
+  # Sir George Hamilton Chichester, 3rd Marquess of Donegall, 1797-02-10 - 1883-10-20
+  # oo Harriet Graham, d. 1884-03-06
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5537863> , <#Harriet_Graham> ;
+	gen:startDate "1862-02-26" .
+
+# ----
+<https://www.wikidata.org/wiki/Q17198967>
+  # Rev. Lord Charles Amelius Hervey, 1814-11-01 - 1880-04-11
+  gen:father <https://www.wikidata.org/wiki/Q5498016> .
+  # oo Lady Harriet Charlotte Sophia Ryder, d. 1899-09-26
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q17198967> , <#Lady_Harriet_Charlotte_Sophia_Ryder> ;
+	gen:startDate "1839-08-15" .
+
+<#Louisa_Frederica_Hervey>
+  # Louisa Frederica Hervey, 1842-05-09 - 1906-01-27
+  gen:father <https://www.wikidata.org/wiki/Q17198967> ;
+  gen:mother <#Lady_Harriet_Charlotte_Sophia_Ryder> .
+  # oo Sir Cyril Clerke Graham, 5th Baronet, 1834-03-05 - 1895-04-08, #Sir_Cyril_Clerke_Graham,_5th_Baronet
+#----
+<#Lady_Harriet_Charlotte_Sophia_Ryder>
+  # Lady Harriet Charlotte Sophia Ryder, d. 1899-09-26
+  gen:father <https://www.wikidata.org/wiki/Q333011> .
+  # oo Rev. Lord Charles Amelius Hervey, 1814-11-01 - 1880-04-11, https://www.wikidata.org/wiki/Q17198967
+
+# ----
+#stuart.ttl:
+<https://www.wikidata.org/wiki/Q4720150>
+  # Alexander Stewart, 1477~ - 1537-12-19
+  gen:father <https://www.wikidata.org/wiki/Q1372616> .
+  # oo Margaret Stewart, b. 1497~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4720150> , <https://www.wikidata.org/wiki/Q16747640> .
+<https://www.wikidata.org/wiki/Q16747640>
+  # Margaret Stewart, b. 1497~
+  gen:father <https://www.wikidata.org/wiki/Q137906> ; # James IV, King of Scots
+  gen:mother <https://www.wikidata.org/wiki/Q13646786> . # Margaret Drummond
+  # oo 1512-11 John Gordon, Lord Gordon, d. 1517, https://www.wikidata.org/wiki/Q6235746
+  # oo Alexander Stewart, 1477~ - 1537-12-19, https://www.wikidata.org/wiki/Q4720150
+  # oo 1530-01-20 Sir John Drummond, 2nd of Innerpeffray, 1486~ - 1565~, https://www.wikidata.org/wiki/Q48816050
+
+<stuart.ttl#Margaret_Stewart>
+  # Margaret Stewart
+  gen:father <https://www.wikidata.org/wiki/Q4720150> ;
+  gen:mother <https://www.wikidata.org/wiki/Q16747640> .
+  # oo Patrick Graham, 1st of Inchbrakie and Aberuthven, 1508~ - 1536, graham.ttl#Patrick_Graham,_1st_of_Inchbrakie_and_Aberuthven
+
+#<https://www.wikidata.org/wiki/Q4720141>
+  # Alexander Stewart, 1st Earl of Galloway, 1580~ - 1649-10-09
+  # oo Grizel Gordon
+
+<stuart.ttl#Alexander_Stewart,_Lord_Garlies>
+  # Alexander Stewart, Lord Garlies, 1609~ - 1638
+  gen:father <https://www.wikidata.org/wiki/Q4720141> .
+  # and Grizel Gordon
+  # oo Lady Anne Howard, b. 1612~
+  []
+    gen:spouse <stuart.ttl#Alexander_Stewart,_Lord_Garlies> , <howard.ttl#Lady_Anne_Howard_(born_1612~)> ;
+	gen:startDate "1627-12-29" .
+  # oo Lady Margaret Graham
+  []
+    gen:spouse <stuart.ttl#Alexander_Stewart,_Lord_Garlies> , <graham.ttl#Lady_Margaret_Graham,_Lady_Garlies> ;
+	gen:startDate "1633-07-15" .
+
+<https://www.wikidata.org/wiki/Q4983566>
+  # Lady Mary Tudor, 1673-10-16 - 1726-11-05
+  gen:father <https://www.wikidata.org/wiki/Q122553> ; # Charles II, King of England, Ireland and Scotland
+  gen:mother <https://www.wikidata.org/wiki/Q440398> . # Mary (Moll) Davis, 1648~ - 1708
+  # oo 1705-05-23 Henry Graham, d. 1707-01-07, graham.ttl#Henry_Graham
+
+<stuart.ttl#Lady_Catherine_Stewart>
+  # Lady Catharine Stewart, 1765-03-18 - 1836-09-20
+  gen:father <https://www.wikidata.org/wiki/Q6259135> .
+  # oo 1785-06-09 Sir James Graham, of Netherby, 1st Baronet, 1761-04-22 - 1824-04-13, https://www.wikidata.org/wiki/Q26448057
+
+# --------
+# leslie.ttl:
+<leslie.ttl#Lady_Christian_Leslie>
+  # Lady Christian Leslie, 1661 - 1710-04-21
+  gen:father <https://www.wikidata.org/wiki/Q6244629> .
+  # oo 1691-06-09a James Graham, 3rd Marquess of Montrose, 1657-10-20 - 1684-04-25, graham.ttl#James_Graham,_3rd_Marquess_of_Montrose
+
+# --------
+#<https://www.wikidata.org/wiki/Q4262014>
+  # Ludovic Lindsay, 16th Earl of Crawford
+  # oo Lady Margaret Graham
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4262014> , <graham.ttl#Lady_Margaret_Graham,_Lady_Garlies> ;
+	gen:startDate "1643-10-05" .

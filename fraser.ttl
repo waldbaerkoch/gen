@@ -1,0 +1,1085 @@
+@base <fraser.ttl> .
+@prefix gen: <http://jjkoch.de/gen#> .
+@prefix wdata: <https://www.wikidata.org/wiki/> .
+@prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+
+# https://www.wikidata.org/wiki/Q19326013
+
+#<https://www.wikidata.org/wiki/Q5930838>
+  # Hugh Fraser, 1st Lord (Fraser of) Lovat, d. 1499-11-01a/1501-04-30b
+  # son of Hugh Fraser, 8th of Lovat and Janet Dunbar
+  # oo Violet Lyon, daughter of https://www.wikidata.org/wiki/Q16850543 and Elizabeth Scrymgeour
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5930838> , <https://www.wikidata.org/wiki/Q50824515> ;
+	gen:startDate "1464b" .
+
+<https://www.wikidata.org/wiki/Q41752298>
+  # Thomas Fraser, 2nd Lord (Fraser of) Lovat, 1461~ - 1524-10-21
+  gen:father <https://www.wikidata.org/wiki/Q5930838> ;
+  gen:mother <https://www.wikidata.org/wiki/Q50824515> .
+  # oo Janet Gordon, d. 1501-11a
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q41752298> , <gordon.ttl#Janet_Gordon_(died_1501)> ;
+	gen:startDate "1493-01" .
+
+<https://www.wikidata.org/wiki/Q41450386>
+  # Hugh Fraser, 3rd Lord (Fraser of) Lovat, 1494 - 1544-07-15
+  gen:father <https://www.wikidata.org/wiki/Q41752298> ;
+  gen:mother <gordon.ttl#Janet_Gordon_(died_1501)> .
+  # oo 1512~ Anne Grant, d. 1536b , daughter of John Grant, 2nd of Freuchie and Margaret Ogilvy
+  # oo Janet Ross, d. 1565, daughter of Walter Ross of Balnagowan and Marion Grant
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q41450386> , <#Janet_Ross> ;
+	gen:startDate "1536-07-19b" .
+
+<https://www.wikidata.org/wiki/Q42297154>
+  # Alexander Fraser, 4th Lord (Fraser of) Lovat, 1527 - 1557-12
+  gen:father <https://www.wikidata.org/wiki/Q41450386> ;
+  gen:mother <#Janet_Ross> .
+  # oo Janet Campbell, daughter of Sir John Campbell, 1st of Calder
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q42297154> , <campbell.ttl#Janet_Campbell> .
+
+<#Hugh_Fraser,_5th_Lord_Lovat>
+  # Hugh Fraser, 5th Lord (Fraser of) Lovat, d. 1576/1577
+  gen:father <https://www.wikidata.org/wiki/Q42297154> ;
+  gen:mother <campbell.ttl#Janet_Campbell> .
+  # oo Lady Elizabeth Stewart, d. 1595-09
+  []
+    gen:spouse <#Hugh_Fraser,_5th_Lord_Lovat> , <stuart.ttl#Lady_Elizabeth_Stewart_(died_1595)> ;
+	gen:startDate "1567-12-24" .
+<#Thomas_Fraser,_1st_of_Strichen>
+  # Thomas Fraser of Knockie, and 1st of Strichen, 1550~ - 1612-10-02
+  gen:father <https://www.wikidata.org/wiki/Q42297154> ;
+  gen:mother <campbell.ttl#Janet_Campbell> .
+  # oo Isobel Forbes, daughter of John Forbes of Corsindae
+
+<https://www.wikidata.org/wiki/Q58175576>
+  # Simon Fraser, 6th Lord (Fraser of) Lovat, 1569~ - 1633
+  gen:father <#Hugh_Fraser,_5th_Lord_Lovat> ;
+  gen:mother <stuart.ttl#Lady_Elizabeth_Stewart_(died_1595)> .
+  # oo Katherine Mackenzie, daughter of Sir Colin Mackenzie, 11th of Kintail and Barbara Grant
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q58175576> , <#Katherine_Mackenzie> ;
+	gen:startDate "1589-12" .
+  # oo Jean Stewart, d. 1622-07-01
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q58175576> , <stuart.ttl#Jean_Stewart> ;
+	gen:startDate "1596-04-04" .
+  # oo Katherine Rose, 1581~ - 1658-09-19, daughter of William Rose, 11th of Kilravock and Lilias Hay
+<#Thomas_Fraser,_2nd_of_Strichen>
+  # Thomas Fraser, 2nd of Strichen, d. 1648-03
+  gen:father <#Thomas_Fraser,_1st_of_Strichen> ;
+  gen:mother <#Isobel_Forbes> .
+  # oo Christian Forbes, d. 1628-08b, daughter of William Forbes, 8th of Tolquhoun and Janet Ogilvy
+  # oo 1629-02-17~ Margaret Macleod, daughter of Torquil 'Conanach' MacLeod
+
+<#Hugh_Fraser,_7th_Lord_Lovat>
+  # Hugh Fraser, 7th Lord (Fraser of) Lovat, 1592 - 1646-02-16
+  gen:father <https://www.wikidata.org/wiki/Q58175576> ;
+  gen:mother <#Katherine_Mackenzie> .
+  # oo Isabel Wemyss, d. 1636
+  []
+    gen:spouse <#Hugh_Fraser,_7th_Lord_Lovat> , <wemyss.ttl#Isabel_Wemyss> ;
+	gen:startDate "1614" .
+<#Sir_Simon_Fraser,_1st_of_Inverallochy> # -> Fraser of Inverallochy
+  # Sir Simon Fraser, 1st of Inverallochy, 1598~ - 1620
+  gen:father <https://www.wikidata.org/wiki/Q58175576> ;
+  gen:mother <stuart.ttl#Jean_Stewart> .
+<#Margaret_Fraser_(born_1601~)>
+  # Margaret Fraser, b. 1601~
+  gen:father <https://www.wikidata.org/wiki/Q58175576> ;
+  gen:mother <stuart.ttl#Jean_Stewart> .
+  # oo 1617-04-29 Sir Robert Arbuthnott of that Ilk, d. 1633-03-16, gordon.ttl#Sir_Robert_Arbuthnott_of_that_Ilk
+<#Thomas_Fraser,_3rd_of_Strichen>
+  # Thomas Fraser, 3rd of Strichen, d. 1656
+  gen:father <#Thomas_Fraser,_2nd_of_Strichen> ;
+  gen:mother <#Christian_Forbes_(died_1628)> .
+  # oo Christian Forbes, daughter of Sir John Forbes of Pitsligo, in 1628
+
+<#Catherine_Fraser_(died_1663)>
+  # Catherine Fraser, 1622 - 1663-10-18
+  gen:father <#Hugh_Fraser,_7th_Lord_Lovat> ;
+  gen:mother <wemyss.ttl#Isabel_Wemyss> .
+  # oo 1658-10-17 Andrew Fraser, 3rd Lord Fraser, d. 1674-05-22, erskine.ttl#Andrew_Fraser,_3rd_Lord_Fraser
+<#Hugh_Fraser,_Master_of_Lovat>
+  # Hugh Fraser, Master of Lovat, 1624 - 1643-04
+  gen:father <#Hugh_Fraser,_7th_Lord_Lovat> ;
+  gen:mother <wemyss.ttl#Isabel_Wemyss> .
+  # oo Lady Anne Leslie, daughter of https://www.wikidata.org/wiki/Q1376604
+  []
+    gen:spouse <#Hugh_Fraser,_Master_of_Lovat> , <leslie.ttl#Lady_Anne_Leslie> ;
+	gen:startDate "1642-04-30" .
+<https://www.wikidata.org/wiki/Q7789796>
+  # Thomas Fraser, 10th Lord Lovat, 1631 - 1699-05
+  # 10th Lord Lovat 1696
+  gen:father <#Hugh_Fraser,_7th_Lord_Lovat> ;
+  gen:mother <wemyss.ttl#Isabel_Wemyss> .
+  # oo Sibylla MacLeod, d. 1682-06
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7789796> , <#Sibylla_MacLeod> ;
+	gen:startDate "1665-04" .
+<#Anna_Fraser>
+  # Anna Fraser
+  gen:father <#Hugh_Fraser,_7th_Lord_Lovat> ;
+  gen:mother <wemyss.ttl#Isabel_Wemyss> .
+  # oo 1638/1639-01-24 John Gordon, 14th Earl of Sutherland, 1609- 1679, https://www.wikidata.org/wiki/Q6235733
+<#Thomas_Fraser,_4th_of_Strichen>
+  # Thomas Fraser, 4th of Strichen, d. 1685-02-26
+  gen:father <#Thomas_Fraser,_3rd_of_Strichen> ;
+  gen:mother <#Christian_Forbes> .
+  # oo 1656 Marion Irvine, daughter of Robert Irvine, 1st of Fedderet and Elizabeth Campbell
+
+<#Hugh_Fraser,_8th_Lord_Lovat>
+  # Hugh Fraser, 8th Lord (Fraser of) Lovat, 1643-05-02 - 1672-04-27
+  gen:father <#Hugh_Fraser,_Master_of_Lovat> ;
+  gen:mother <leslie.ttl#Lady_Anne_Leslie> .
+  # oo Anne Mackenzie, 1629~ - 1670-11-10
+  []
+    gen:spouse <#Hugh_Fraser,_8th_Lord_Lovat> , <erskine.ttl#Anne_Mackenzie> ;
+	gen:startDate "1659-07" .
+<https://www.wikidata.org/wiki/Q320286>
+  # Simon Fraser, 11th Lord Lovat, 1667~ – 1747-04-09
+  gen:father <https://www.wikidata.org/wiki/Q7789796> ;
+  gen:mother <#Sibylla_MacLeod> .
+  # oo 1716-12 Margaret Grant, d. 1729, daughter of Ludovic Grant, 8th of Freuchie and 1st of Grant and Janet Brodie
+  # oo 1733-07-01 (sep 1736) Primrose Campbell, 1710~ - 1796-05-23
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q320286> , <campbell.ttl#Primrose_Cambell_(died_1796)> .
+<#Alexander_Fraser,_5th_of_Strichen>
+  # Alexander Fraser, 5th of Strichen, d. 1699-11-03
+  gen:father <#Thomas_Fraser,_4th_of_Strichen> ;
+  gen:mother <#Marion_Irvine> .
+  # oo Elizabeth Cockburn, d. 1693-07-26, daughter of Sir Archibald Cockburn of Langton, 4th Bt. and Marion Sinclair
+  # oo Hon. Emilia Stuart, d. 1711-02-18
+  []
+    gen:spouse <#Alexander_Fraser,_5th_of_Strichen> , <stuart.ttl#Emilia_Stuart> ;
+	gen:startDate "1697" .
+
+<#Anne_Fraser>
+  # Hon. Anne Fraser, 1661-03-12 - 1684
+  gen:father <#Hugh_Fraser,_8th_Lord_Lovat> ;
+  gen:mother <erskine.ttl#Anne_Mackenzie> .
+  # oo 1679 Patrick Kinnaird, 2nd Lord Kinnaird of Inchture, d. 1701-02-18, murray.ttl#Patrick_Kinnaird,_2nd_Lord_Kinnaird
+<https://www.wikidata.org/wiki/Q23418866>
+  # Hugh Fraser, 9th Lord (Fraser of) Lovat, 1666-09-28 - 1696-09-14
+  gen:father <#Hugh_Fraser,_8th_Lord_Lovat> ;
+  gen:mother <erskine.ttl#Anne_Mackenzie> .
+  # oo Lady Amelia Murray, 1666 - 1743-05-06
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q23418866> , <murray.ttl#Lady_Amelia_Murray_(died_1743)> ;
+	gen:startDate "1685" .
+<https://www.wikidata.org/wiki/Q5964135>
+  # Simon Fraser, Master of Lovat, 1726-10-19 - 1782-02-08
+  gen:father <https://www.wikidata.org/wiki/Q320286> ;
+  gen:mother <#Margaret_Grant> .
+<#Janet_Fraser>
+  # Janet Fraser, d. 1765
+  gen:father <https://www.wikidata.org/wiki/Q320286> ;
+  gen:mother <#Margaret_Grant> .
+  # oo 1742-03-02 Ewan Macpherson of Cluny Macpherson, 12th Chief, 1706-02-11 – 1764-06-30, https://www.wikidata.org/wiki/Q5418985
+<https://www.wikidata.org/wiki/Q4786255>
+  # Archibald Campbell Fraser, 1736-08-16 - 1815-12-08
+  gen:father <https://www.wikidata.org/wiki/Q320286> ;
+  gen:mother <campbell.ttl#Primrose_Cambell_(died_1796)> .
+  # oo 1763 Jane Fraser, daughter of William Fraser of Leadclune
+<#Alexander_Fraser,_Lord_Strichen>
+  # Alexander Fraser, Lord Strichen, d. 1775-02-15
+  gen:father <#Alexander_Fraser,_5th_of_Strichen> ;
+  gen:mother <stuart.ttl#Emilia_Stuart> .
+  # oo Lady Anne Campbell, 1696b - 1736-10-20
+  []
+    gen:spouse <#Alexander_Fraser,_Lord_Strichen> , <campbell.ttl#Lady_Anne_Campbell_(died_1736)> ;
+	gen:startDate "1731-09-19" .
+
+<#Catherine_Fraser_(died_1771)>
+  # Catherine Fraser, 1690~ - 1771-03-04
+  gen:father <https://www.wikidata.org/wiki/Q23418866> ;
+  gen:mother <murray.ttl#Lady_Amelia_Murray_(died_1743)> .
+  # oo 1706-07-25 Sir William Murray of Ochtertyne, 3rd Baronet, 1682-02-22 - 1739-10-20, murray.ttl#Sir_William_Murray_of_Ochtertyne,_3rd_Baronet
+<#Alexander_Fraser,_8th_of_Strichen>
+  # Alexander Fraser, 8th of Strichen
+  gen:father <#Alexander_Fraser,_Lord_Strichen> ;
+  gen:mother <campbell.ttl#Lady_Anne_Campbell_(died_1736)> .
+  # oo 1764 Jean Menzies
+
+<#Alexander_Fraser,_9th_of_Strichen>
+  # Alexander Fraser, 9th of Strichen, d. 1803
+  gen:father <#Alexander_Fraser,_8th_of_Strichen> ;
+  gen:mother <#Jean_Menzies> .
+  # oo 1801 Amelia Mary Leslie, d. 1860-08, daughter of John Leslie of Balquhain
+
+<https://www.wikidata.org/wiki/Q7789797>
+  # Thomas Alexander Fraser, 12th Lord (Fraser of) Lovat, 1802-06-17 - 1875-06-28
+  # 1st Baron Lovat of Lovat, co. Inverness 1837-01-28
+  # 12th Lord Lovat 1857-08-13
+  gen:father <#Alexander_Fraser,_9th_of_Strichen> ;
+  gen:mother <#Amelia_Mary_Leslie> .
+  # oo Hon. Charlotte Georgina Stafford-Jerningham, 1800-10-08 - 1876-05-28
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7789797> , <howard.ttl#Charlotte_Georgina_Stafford-Jerningham> ;
+	gen:startDate "1823-08-06" .
+
+<https://www.wikidata.org/wiki/Q7518783>
+  # Simon Joseph Fraser, 13th Lord (Fraser of) Lovat, 1828-12-21 - 1887-09-06
+  gen:father <https://www.wikidata.org/wiki/Q7789797> ;
+  gen:mother <howard.ttl#Charlotte_Georgina_Stafford-Jerningham> .
+  # oo 1866-11-14 Alice Mary Weld-Blundell, daughter of Thomas Weld-Blundell and Theresa Mary Eleanora Vaughan
+<#Frances_Georgiana_Fraser>
+  # Hon. Frances Georgiana Fraser, 1826~ - 1899-12-25
+  gen:father <https://www.wikidata.org/wiki/Q7789797> ;
+  gen:mother <#Charlotte_Georgina_Stafford-Jerningham> .
+  # oo 1844-05-09 Sir Pyers Mostyn, 8th Baronet, 1811-09-27 - 1882-05-14, https://www.wikidata.org/wiki/Q28055302
+
+<#Mary_Laura_Fraser>
+  # Hon. Mary Laura Fraser, 1869-04-02 – 1946-12-03
+  gen:father <https://www.wikidata.org/wiki/Q7518783> ;
+  gen:mother <#Alice_Mary_Weld-Blundell> .
+  # oo 1898-05-25 John Scott, Viscount Encombe, 1870-05-08 - 1900-08-18, scott.ttl#John_Scott,_Viscount_Encombe
+<#Alice_Mary_Charlotte_Fraser>
+  # Hon. Alice Mary Charlotte Fraser, 1870-03-03 - 1958-08-07
+  gen:father <https://www.wikidata.org/wiki/Q7518783> ;
+  gen:mother <#Alice_Mary_Weld-Blundell> .
+  # oo 1890-04-30 Hon. Bernard Constable-Maxwell, b. 1848-04-03, #Bernard_Constable-Maxwell
+<https://www.wikidata.org/wiki/Q5964144>
+  # Simon Joseph Fraser, 14th Lord (Fraser of) Lovat, 1871-11-25 - 1933-02-18
+  gen:father <https://www.wikidata.org/wiki/Q7518783> ;
+  gen:mother <#Alice_Mary_Weld-Blundell> .
+  # oo Hon. Laura Lister, 1892-01-12 - 1965-03-24
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5964144> , <#Laura_Lister> ;
+	gen:startDate "1910-10-15" .
+<#Etheldreada_Mary_Fraser>
+  # Hon. Etheldreada Mary Fraser, 1872-11-22 – 1949-10-09
+  gen:father <https://www.wikidata.org/wiki/Q7518783> ;
+  gen:mother <#Alice_Mary_Weld-Blundell> .
+  # oo 1903-01-12 Rt. Hon. Sir Francis Oswald Lindley, 1872-06-12 - 1950-08-17, https://www.wikidata.org/wiki/Q4261995
+<#Alastair_Thomas_Joseph_Fraser>
+  # Hon. Alastair Thomas Joseph Fraser, 1877-08-01 – 1949-10-14
+  gen:father <https://www.wikidata.org/wiki/Q7518783> ;
+  gen:mother <#Alice_Mary_Weld-Blundell> .
+  # oo Lady Sybil Grimston, 1887 - 1968-08-01
+  []
+    gen:spouse <#Alastair_Thomas_Joseph_Fraser> , <#Lady_Sybil_Grimston> ;
+	gen:startDate "1915-03-16" .
+<#Margaret_Mary_Fraser>
+  # Hon. Margaret Mary Fraser, 1881-06-25 – 1972-08-04
+  gen:father <https://www.wikidata.org/wiki/Q7518783> ;
+  gen:mother <#Alice_Mary_Weld-Blundell> .
+  # oo 1910-04-14 Archibald Stirling of Keir, 1867-09-14 - 1931-02-18, https://www.wikidata.org/wiki/Q20054043
+
+<https://www.wikidata.org/wiki/Q336357>
+  # Simon Christopher Joseph Fraser, 15th Lord (Fraser of) Lovat, 1911-07-09 - 1995-03-16
+  gen:father <https://www.wikidata.org/wiki/Q5964144> ;
+  gen:mother <#Laura_Lister> .
+  # oo Rosamond Broughton, 1917-05-20 - 2912-03-03
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q336357> , <#Rosamond_Broughton> ;
+	gen:startDate "1938-10-10" .
+<#Magdalen_Mary_Charlotte_Fraser>
+  # Hon. Magdalen Mary Charlotte Fraser, 1913-08-01 - 1969-09-27
+  gen:father <https://www.wikidata.org/wiki/Q5964144> ;
+  gen:mother <#Laura_Lister> .
+  # oo 1934-04-10 John Scott, 4th Earl of Eldon, 1899-03-29 - 1976-10-20, https://www.wikidata.org/wiki/Q26257729
+<https://www.wikidata.org/wiki/Q5930848>
+  # Hon. Sir Hugh Charles Patrick Joseph Fraser, 1918-01-23 - 1984-03-06
+  gen:father <https://www.wikidata.org/wiki/Q5964144> ;
+  gen:mother <#Laura_Lister> .
+  # oo Lady Antonia Margaret Caroline Pakenham, b. 1932-08-27
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5930848> , <https://www.wikidata.org/wiki/Q242796> ;
+	gen:startDate "1956-09-25" .
+<https://www.wikidata.org/wiki/Q18808370>
+  # Hon. Veronica Nell Fraser, 1920 - 2005-01-07
+  gen:father <https://www.wikidata.org/wiki/Q5964144> ;
+  gen:mother <#Laura_Lister> .
+  # oo 1940-08-06 Alan Phipps, 1915-10-01 - 1943-11-16, #Alan_Phipps
+  # oo 1946-01-12 Sir FitzRoy Hew Maclean of Dunconnel, 1st Baronet, 1911-03-11 - 1996-06-15, https://www.wikidata.org/wiki/Q1263302
+<#Sir_Ian_James_Fraser>
+  # Sir Ian James Fraser, 1923-08-07 - 2003-05-08
+  gen:father <#Alastair_Thomas_Joseph_Fraser> ;
+  gen:mother <#Lady_Sybil_Grimston> .
+  # oo Evelyn Elizabeth Anne Grant, 1938-09-05 - 1984, daughter of Alastair Edward George Grant and Ann Bridgit Dominica Herbert
+  []
+    gen:spouse <#Sir_Ian_James_Fraser> , <#Evelyn_Elizabeth_Anne_Grant> ;
+	gen:startDate "1958-10-25" .
+  # oo Fiona Margaret Douglas-Home, b. 1936-01-07
+  []
+    gen:spouse <#Sir_Ian_James_Fraser> , <home.ttl#Fiona_Margaret_Douglas-Home> ;
+	gen:startDate "1993-06-25" .
+
+<https://www.wikidata.org/wiki/Q7518789>
+  # Simon Augustine Fraser, Master of Lovat, 1939-08-28 - 1994-03-26
+  gen:father <https://www.wikidata.org/wiki/Q336357> ;
+  gen:mother <#Rosamond_Broughton> .
+  # oo 1972-02-21 Virginia Grose, daughter of David Grose
+<#Annabel_Thérèse_Fraser>
+  # Hon. Annabel Thérèse Fraser, b. 1942-10-15
+  gen:father <https://www.wikidata.org/wiki/Q336357> ;
+  gen:mother <#Rosamond_Broughton> .
+  # oo 1964-09-14 (div 1978) Hugh William Mackay, 14th Lord Reay, Baron Mackay, 1937-07-19 – 2013-05-10, https://www.wikidata.org/wiki/Q336403
+  # oo 1985 Sir Henry Neville Keswick, b. 1938-09-29, https://www.wikidata.org/wiki/Q15990102
+<#Kim_Maurice_Fraser>
+  # Hon. Kim Maurice Fraser, b. 1946-01-04
+  gen:father <https://www.wikidata.org/wiki/Q336357> ;
+  gen:mother <#Rosamond_Broughton> .
+  # oo 1975-10-18 Joanna Katharine North, b. 1953-01-17, daughter of Major Geoffrey Edward Ford North and Hon. Margaret Isolda de Grey (b. 1926-08-14, daughter https://www.wikidata.org/wiki/Q40176845 and Hyacinth Lambart Bouwens)
+<#Andrew_Roy_Matthew_Fraser>
+  # Hon. Andrew Roy Matthew Fraser, 1952-02-24 - 1994-03-15
+  gen:father <https://www.wikidata.org/wiki/Q336357> ;
+  gen:mother <#Rosamond_Broughton> .
+  # oo Lady Charlotte Anne Greville, b. 1958-06-06
+  []
+    gen:spouse <#Andrew_Roy_Matthew_Fraser> , <#Lady_Charlotte_Anne_Greville> ;
+	gen:startDate "1979" .
+
+<https://www.wikidata.org/wiki/Q5896797>
+  # Hon. Honor Fraser, b. 1973/1974-12-18
+  gen:father <https://www.wikidata.org/wiki/Q7518789> ;
+  gen:mother <#Virginia_Grose> .
+  # oo 2004-04-23 Stavros Merjos
+<https://www.wikidata.org/wiki/Q7518787>
+  # Simon Christopher Joseph Fraser, 16th Lord Lovat and 5th Baron Lovat, b. 1977-02-13
+  gen:father <https://www.wikidata.org/wiki/Q7518789> ;
+  gen:mother <#Virginia_Grose> .
+  # oo Hon. Petra Louise Palumbo, b. 1989-07-22
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7518787> , <#Petra_Louise_Palumbo> ;
+	gen:startDate "2016-05-14" .
+
+
+# Fraser of Inverallochy
+<#Sir_Simon_Fraser,_1st_of_Inverallochy>
+  # Sir Simon Fraser, 1st of Inverallochy, 1598~ - 1620
+  gen:father <https://www.wikidata.org/wiki/Q58175576> ;
+  gen:mother <stuart.ttl#Jean_Stewart> .
+  # oo Jane Moncreiff, daughter of Sir John Moncreiff of that Ilk, 1st Baronet (d. 1651~, 1st Baronet Moncreiff 1626-04-22) and oo Anne Beaton (daughter of David Beaton of Creich)
+  []
+    gen:spouse <#Sir_Simon_Fraser,_1st_of_Inverallochy> , <#Jane_Moncreiff> ;
+	gen:startDate "1620b" .
+
+<#Simon_Fraser,_2nd_of_Inverallochy>
+  # Simon Fraser, 2nd of Inverallochy
+  gen:father <#Sir_Simon_Fraser,_1st_of_Inverallochy> ;
+  gen:mother <#Jane_Moncreiff> .
+  # oo Lady Marjory Mary Erskine
+  []
+    gen:spouse <#Simon_Fraser,_2nd_of_Inverallochy> , <erskine.ttl#Lady_Marjory_Mary_Erskine> ;
+	gen:startDate "1669" .
+
+<#Simon_Fraser,_3rd_of_Inverallochy>
+  # Simon Fraser, 3rd of Inverallochy
+  gen:father <#Simon_Fraser,_2nd_of_Inverallochy> ;
+  gen:mother <erskine.ttl#Lady_Marjory_Mary_Erskine> .
+
+<#Charles_Fraser,_6th_of_Inverallochy>
+  # Charles Fraser, 6th of Inverallochy, d. 1789-02-13a
+  gen:father <#Simon_Fraser,_3rd_of_Inverallochy> .
+  # oo Anne Martha Udny, 1704~ - 1753-08-24
+  []
+    gen:spouse <#Charles_Fraser,_6th_of_Inverallochy> , <#Anne_Martha_Udny> .
+
+<#Martha_Fraser,_8th_of_Inverallochy>
+  # Martha Fraser, 8th of Inverallochy, d. 1803
+  gen:father <#Charles_Fraser,_6th_of_Inverallochy> ;
+  gen:mother <#Anne_Martha_Udny> .
+  # oo Colin Mackenzie, 6th of Kilcoy, 1715a - 1758, hay.ttl#Colin_Mackenzie,_6th_of_Kilcoy
+
+
+# ----
+<stuart.ttl#Lady_Elizabeth_Stewart_(died_1595)>
+  # Lady Elizabeth Stewart, d. 1595-09
+  gen:father <https://www.wikidata.org/wiki/Q1701833> .
+  # and Lady Elizabeth Gordon
+  # oo 1567-12-24 Hugh Fraser, 5th Lord (Fraser of) Lovat, d. 1576/1577, fraser.ttl#Hugh_Fraser,_5th_Lord_Lovat
+
+
+<stuart.ttl#Sir_James_Stewart_of_Beath>
+  # Sir James Stewart of Beath, 1513b - 1544-06-02
+  gen:father <https://www.wikidata.org/wiki/Q4758641> .
+  # and Margaret Kennedy
+  # oo 1533-06-04b Margaret Lindsay, daughter of John Lindsay, 3rd Lord Lindsay of the Byres (son of https://www.wikidata.org/wiki/Q5236630) and Marion Baillie
+
+<stuart.ttl#James_Stewart,_1st_Lord_Doune>
+  # James Stewart, 1st Lord Doune, 1529~ - 1590-07-20
+  gen:father <stuart.ttl#Sir_James_Stewart_of_Beath> .
+  # and Margaret Lindsay
+  # oo Lady Margaret Campbell, d. 1572-02
+  []
+    gen:spouse <stuart.ttl#James_Stewart,_1st_Lord_Doune> , <campbell.ttl#Lady_Margaret_Campbell_(died_1572)> ;
+	gen:startDate "1564-01-11" .
+
+<stuart.ttl#Jean_Stewart>
+  # Jean Stewart, d. 1622-07-01
+  gen:father <stuart.ttl#James_Stewart,_1st_Lord_Doune> ;
+  gen:mother <campbell.ttl#Lady_Margaret_Campbell_(died_1572)> .
+  # oo 1596-04-04 Simon Fraser, 6th Lord (Fraser of) Lovat, 1569~ - 1633, https://www.wikidata.org/wiki/Q58175576
+<https://www.wikidata.org/wiki/Q6143627>
+  gen:father <stuart.ttl#James_Stewart,_1st_Lord_Doune> .
+
+
+<stuart.ttl#James_Stuart,_Lord_Doune>
+  # James Stuart, Lord Doune, 1660b - 1685
+  gen:father <https://www.wikidata.org/wiki/Q4720176> .
+  # oo Catherine Tollemache, d. 1703, daughter of Sir Lionel Tollemache, 3rd Bt. and Elizabeth Murray, Countess of Dysart (https://www.wikidata.org/wiki/Q15623774)
+  []
+    gen:spouse <stuart.ttl#James_Stuart,_Lord_Doune> , <#Catherine_Tollemache> ;
+	gen:startDate "1677-12-02" .
+
+<stuart.ttl#Emilia_Stuart>
+  # Hon. Emilia Stuart, d. 1711-02-18
+  gen:father <stuart.ttl#James_Stuart,_Lord_Doune> ;
+  gen:mother <#Catherine_Tollemache> .
+  # oo 1697 Alexander Fraser, 5th of Strichen, d. 1699-11-03, fraser.ttl#Alexander_Fraser,_5th_of_Strichen
+
+# ----
+<#Ian_Macleod,_16th_of_MacLeod>
+  # Ian 'Mor' Macleod, 16th of MacLeod, d. 1649-09
+  gen:father <https://www.wikidata.org/wiki/Q7356646> .
+  # oo Sybella Mackenzie
+
+<#Sibylla_MacLeod>
+  # Sibylla MacLeod, d. 1682-06
+  gen:father <#Ian_Macleod,_16th_of_MacLeod> .
+  # and Sybella Mackenzie
+  # oo 1665-04 Thomas Fraser of Lovat, 1627a - 1699-05, https://www.wikidata.org/wiki/Q7789796
+
+# ----
+<leslie.ttl#Lady_Anne_Leslie>
+  # Lady Anne Leslie
+  gen:father <https://www.wikidata.org/wiki/Q1376604> .
+  # and Agnes Renton
+  # oo 1642-04-30 Hugh Fraser, Master of Lovat, 1624 - 1643-04, fraser.ttl#Hugh_Fraser,_Master_of_Lovat
+
+# ----
+#<https://www.wikidata.org/wiki/Q5418985>
+  # Ewan Macpherson of Cluny Macpherson, 12th Chief, 1706-02-11 – 1764-06-30
+  # son of Lachlan Macpherson, of Cluny Macpherson and Nuide, 11th Chief
+  # and Jean Cameron
+  # oo Janet Fraser, d. 1765
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5418985> , <#Janet_Fraser> ;
+	gen:startDate "1742-03-02" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q28055302>
+  # Sir Pyers Mostyn, 8th Baronet, 1811-09-27 - 1882-05-14
+  # oo Hon. Frances Georgiana Fraser, 1826~ - 1899-12-25
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q28055302> , <#Frances_Georgiana_Fraser> ;
+	gen:startDate "1844-05-09" .
+
+# ----
+#<#William_Constable>
+  # William Constable, d. 1797-06-30
+  # son of Sir Carnaby Haggerston, 3rd Baronet
+  # and Elizabeth Midleton
+  # oo 1758-10-17 Lady Winifred Maxwell, 1736~ - 1801-07-13
+  []
+    gen:spouse <#William_Constable> , <#Lady_Winifred_Maxwell> ;
+	gen:startDate "1758-10-17" .
+
+<#Marmaduke_William_Constable-Maxwell>
+  # Marmaduke William Constable-Maxwell, 1760-01-02 - 1819-06-30
+  gen:father <#William_Constable> ;
+  gen:mother <#Lady_Winifred_Maxwell> .
+  # oo Theresa Apollonia Wakeman, d. 1846-11-08, daughter of Edmund Wakeman
+  []
+    gen:spouse <#Marmaduke_William_Constable-Maxwell> , <#Theresa_Apollonia_Wakeman> ;
+	gen:startDate "1800-11-26" .
+
+<https://www.wikidata.org/wiki/Q21674888>
+  # William Constable-Maxwell, 10th Lord Herries of Terregles, 1804-08-25 - 1876-11-12
+  # 10th Lord Herries of Terregles 1858-06-23
+  gen:father <#Marmaduke_William_Constable-Maxwell> ;
+  gen:mother <#Theresa_Apollonia_Wakeman> .
+  # oo Marcia Mary Vavasour, 1816-02-02 - 1883-11-13, daughter of Hon. Sir Edward Marmaduke Joseph Vavasour, 1st Baronet and Marcia Bridget Lane-Fox
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q21674888> , <#Marcia_Mary_Vavasour> ;
+	gen:startDate "1835-11-12" .
+
+<https://www.wikidata.org/wiki/Q24284560>
+  # Marmaduke Francis Constable-Maxwell, 11th Lord Herries of Terregles, 1837-10-04 - 1908-10-06
+  gen:father <https://www.wikidata.org/wiki/Q21674888> ;
+  gen:mother <#Marcia_Mary_Vavasour> .
+  # oo Hon. Angela Mary Charlotte Fitzalan-Howard, 1855-02-24 - 1919-03-01
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q24284560> , <howard.ttl#Angela_Mary_Charlotte_Fitzalan-Howard> ;
+	gen:startDate "1875-04-14" .
+<#Joseph_Constable-Maxwell-Scott>
+  # Hon. Joseph Constable-Maxwell-Scott, 1847-01-16 - 1923-08-29
+  gen:father <https://www.wikidata.org/wiki/Q21674888> ;
+  gen:mother <#Marcia_Mary_Vavasour> .
+  # oo Mary Monica Hope-Scott, 1852-10-02 - 1920-03-15
+  []
+    gen:spouse <#Joseph_Constable-Maxwell-Scott> , <hope.ttl#Mary_Monica_Hope-Scott> ;
+	gen:startDate "1874-07-21" .
+<#Bernard_Constable-Maxwell>
+  # Hon. Bernard Constable-Maxwell, b. 1848-04-03
+  gen:father <https://www.wikidata.org/wiki/Q21674888> ;
+  gen:mother <#Marcia_Mary_Vavasour> .
+  # oo Hon. Alice Mary Charlotte Fraser, 1870-03-03 - 1958-08-07
+  []
+    gen:spouse <#Bernard_Constable-Maxwell> , <#Alice_Mary_Charlotte_Fraser> ;
+	gen:startDate "1890-04-30" .
+
+<https://www.wikidata.org/wiki/Q5549386>
+  # Gerald Joseph Constable-Maxwell, 1895-09-08 - 1959-12-18
+  gen:father <#Bernard_Constable-Maxwell> ;
+  gen:mother <#Alice_Mary_Charlotte_Fraser> .
+  # oo Caroline Burns Carden, d. 1984-02-10, daughter of George Alexander Carden
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5549386> , <#Caroline_Burns_Carden> ;
+	gen:startDate "1920-03-08" .
+<#David_Turville-Constable-Maxwell>
+  # David Turville-Constable-Maxwell, 1904-06-28 - 1985-03-20
+  gen:father <#Bernard_Constable-Maxwell> ;
+  gen:mother <#Alice_Mary_Charlotte_Fraser> .
+  # oo Mary Alethea Elizabeth Evelyn Turville-Petre. 1904-10-31 - 1995-09-29
+  []
+    gen:spouse <#David_Turville-Constable-Maxwell> , <howard.ttl#Mary_Alethea_Elizabeth_Evelyn_Turville-Petre> ;
+	gen:startDate "1930-04-29" .
+
+<https://www.wikidata.org/wiki/Q4768331>
+  # Ann Mary Teresa Constable-Maxwell, 1927-08-30 - 2013-04-08
+  gen:father <https://www.wikidata.org/wiki/Q5549386> ;
+  gen:mother <#Caroline_Burns_Carden> .
+  # oo 1949-07-04 Miles Francis Stapleton Fitzalan Howard, 17th Duke of Norfolk, 1915-07-21 - 2002-06-24, https://www.wikidata.org/wiki/Q336947
+<#Christopher_Thomas_Bernard_Turville-Constable-Maxwell>
+  # Christopher Thomas Bernard Turville-Constable-Maxwell, b. 1940-10-12
+  gen:father <#David_Turville-Constable-Maxwell> ;
+  gen:mother <howard.ttl#Mary_Alethea_Elizabeth_Evelyn_Turville-Petre> .
+  # oo Lavinia Moira Howard, b. 1944-03-06
+  []
+    gen:spouse <#Christopher_Thomas_Bernard_Turville-Constable-Maxwell>, <howard.ttl#Lavinia_Moira_Howard> ;
+	gen:startDate "1963-09-21" .
+# ----
+<#Lady_Winifred_Maxwell>
+  # Lady Winifred Maxwell, 1736~ - 1801-07-13
+  gen:father <https://www.wikidata.org/wiki/Q8015262> .
+  # and Lady Catherine Stewart
+  # oo 1758-10-17 William Constable, d. 1797-06-30, #William_Constable
+
+# ----
+<#Laura_Lister>
+  # Hon. Laura Lister, 1892-01-12 - 1965-03-24
+  gen:father <https://www.wikidata.org/wiki/Q7791871> .
+  # and Charlotte Monkton Tennant
+  # oo 1910-10-15 Simon Joseph Fraser, 14th Lord (Fraser of) Lovat, 1871-11-25 - 1933-02-18, https://www.wikidata.org/wiki/Q5964144
+
+# ----
+#<https://www.wikidata.org/wiki/Q1650574>
+  # Nathaniel Lindley, Baron Lindley, 1828-11-29 - 1921-12-13
+  # oo 1858-08-05 Sarah Katherine Teale, d. 1912-02-08
+
+<https://www.wikidata.org/wiki/Q4261995>
+  # Rt. Hon. Sir Francis Oswald Lindley, 1872-06-12 - 1950-08-17
+  gen:father <https://www.wikidata.org/wiki/Q1650574> .
+  # and Sarah Katherine Teale
+  # oo Hon. Etheldreada Mary Fraser, 1872-11-22 – 1949-10-09
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4261995> , <#Etheldreada_Mary_Fraser> ;
+	gen:startDate "1903-01-12" .
+
+<#Mary_Ethelreda_Lindley>
+  # Mary Ethelreda Lindley, 1911 - 2009-07-08
+  gen:father <https://www.wikidata.org/wiki/Q4261995> ;
+  gen:mother <#Etheldreada_Mary_Fraser> .
+  # oo Sir William Johnston Keswick, 1903 - 1990, https://www.wikidata.org/wiki/Q12806344
+
+# ----
+#<https://www.wikidata.org/wiki/Q12806344>
+  # Sir William Johnston Keswick, 1903 - 1990
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q12806344> , <#Mary_Ethelreda_Lindley> .
+
+<https://www.wikidata.org/wiki/Q15990102>
+  # Sir Henry Neville Keswick, b. 1938-09-29
+  gen:father <https://www.wikidata.org/wiki/Q12806344> ;
+  gen:mother <#Mary_Ethelreda_Lindley> .
+  # oo Hon. Annabel Thérèse Fraser, b. 1942-10-15
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q15990102> , <#Annabel_Thérèse_Fraser> ;
+	gen:startDate "1985" .
+
+# ----
+<#Lady_Sybil_Grimston>
+  # Lady Sybil Grimston, 1887 - 1968-08-01
+  gen:father <https://www.wikidata.org/wiki/Q6135007> ;
+  gen:mother <graham.ttl#Margaret_Frances_Graham> .
+  # oo 1915-03-16 Hon. Alastair Thomas Joseph Fraser, 1877-08-01 – 1949-10-14, #Alastair_Thomas_Joseph_Fraser
+
+# ----
+<#Rosamond_Broughton>
+  # Rosamond Broughton, 1917-05-20 - 2912-03-03
+  gen:father <https://www.wikidata.org/wiki/Q15490687> .
+  # and Vera Edyth Griffith-Boscawen
+  # oo 1938-10-10 Simon Christopher Joseph Fraser, 15th Lord (Fraser of) Lovat, 1911-07-09 - 1995-03-16, https://www.wikidata.org/wiki/Q336357
+
+# ----
+#<https://www.wikidata.org/wiki/Q2295962>
+  # Francis Aungier Pakenham, 7th Earl of Longford, 1st Baron Pakenham, 1905-12-05 – 2001-08-03
+  # oo Elizabeth Harman, 1906-08-30 – 2002-10-23
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2295962> , <https://www.wikidata.org/wiki/Q530870> ;
+	gen:startDate "1931-11-03" .
+
+<https://www.wikidata.org/wiki/Q242796>
+  # Lady Antonia Margaret Caroline Pakenham, b. 1932-08-27
+  gen:father <https://www.wikidata.org/wiki/Q2295962> ;
+  gen:mother <https://www.wikidata.org/wiki/Q530870> .
+  # oo 1956-09-25 Hon. Sir Hugh Charles Patrick Joseph Fraser, 1918-01-23 - 1984-03-06, https://www.wikidata.org/wiki/Q5930848
+
+# ----
+<#Alan_Phipps>
+  # Alan Phipps, 1915-10-01 - 1943-11-16
+  gen:father <https://www.wikidata.org/wiki/Q831031> .
+  # and Frances Ward
+  # oo Hon. Veronica Nell Fraser, 1920 - 2005-01-07
+  []
+    gen:spouse <#Alan_Phipps> , <https://www.wikidata.org/wiki/Q18808370> ;
+	gen:startDate "1940-08-06" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q1263302>
+  # Sir FitzRoy Hew Maclean of Dunconnel, 1st Baronet, 1911-03-11 - 1996-06-15
+  # oo Hon. Veronica Nell Fraser, 1920 - 2005-01-07
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1263302> , <https://www.wikidata.org/wiki/Q18808370> ;
+	gen:startDate "1946-01-12" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q336403>
+  # Hugh William Mackay, 14th Lord Reay, Baron Mackay, 1937-07-19 – 2013-05-10
+  # oo Hon. Annabel Thérèse Fraser, b. 1942-10-15
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q336403> , <#Annabel_Thérèse_Fraser> ;
+	gen:startDate "1964-09-14" ;
+	gen:divorceDate "1978" .
+
+# ----
+<#Lady_Charlotte_Anne_Greville>
+  # Lady Charlotte Anne Greville, b. 1958-06-06
+  gen:father <https://www.wikidata.org/wiki/Q28054966> .
+  # and Sarah Anne Chester Beatty
+  # oo 1979 Hon. Andrew Roy Matthew Fraser, 1952-02-24 - 1994-03-15, #Andrew_Roy_Matthew_Fraser
+
+# ----
+<#Petra_Louise_Palumbo>
+  # Hon. Petra Louise Palumbo, b. 1989-07-22
+  gen:father <https://www.wikidata.org/wiki/Q337054> .
+  # and Hayat Morowa
+  # oo 2016-05-14 Simon Christopher Joseph Fraser, 16th Lord Lovat and 5th Baron Lovat, b. 1977-02-13, https://www.wikidata.org/wiki/Q7518787
+
+
+
+# ====
+#<https://www.wikidata.org/wiki/Q18592916>
+  # Sir Alexander Fraser of Philorth, 1537~ - 1623
+
+#<#Alexander_Fraser,_9th_of_Philorth>
+  # Alexander Fraser, 9th of Philorth, 1579~ - 1637~
+  # oo Hon. Margaret Abernethy
+  []
+    gen:spouse <#Alexander_Fraser,_9th_of_Philorth> , <#Margaret_Abernethy> ;
+	gen:startDate "1596-01-04" .
+
+<https://www.wikidata.org/wiki/Q4718887>
+  # Alexander Fraser, 11th Lord Saltoun of Abernethy, 1604-03 - 1693-08-11
+  gen:father <#Alexander_Fraser,_9th_of_Philorth> ;
+  gen:mother <#Margaret_Abernethy> .
+  # oo Isabel Forbes, daughter of William Forbes of Tolquhoun
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4718887> , <#Isabel_Forbes> ;
+	gen:startDate "1630b" .
+  # oo Elizabeth Seton, daughter of Alexander Seton of Meldrum
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4718887> , <#Elizabeth_Seton> ;
+	gen:startDate "1634-06-27" .
+
+<#Alexander_Fraser,_Master_of_Saltoun>
+  # Alexander Fraser, Master of Saltoun, 1630~ - 1682-11
+  gen:father <https://www.wikidata.org/wiki/Q4718887> ;
+  gen:mother <#Isabel_Forbes> .
+  # oo Lady Anne Kerr, 1631-11-26 - 1658-08-30
+  []
+    gen:spouse <#Alexander_Fraser,_Master_of_Saltoun> , <kerr.ttl#Lady_Anne_Kerr_(died_1658)> ;
+	gen:startDate "1651/1652-01-11~" .
+  # oo Lady Sophia Erskine
+  []
+    gen:spouse <#Alexander_Fraser,_Master_of_Saltoun> , <erskine.ttl#Lady_Sophia_Erskine_of_Kellie> ;
+	gen:startDate "1663-08-05" .
+
+<https://www.wikidata.org/wiki/Q8009354>
+  # William Fraser, 12th Lord Saltoun of Abernethy, 1654-11-21 - 1715-11-18
+  gen:father <#Alexander_Fraser,_Master_of_Saltoun> ;
+  gen:mother <kerr.ttl#Lady_Anne_Kerr_(died_1658)> .
+  # oo Margaret Sharp, d. 1734, daughter of Dr. James Sharp
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8009354> , <#Margaret_Sharp> ;
+	gen:startDate "1683-10-11" .
+
+<#Alexander_Fraser,_13th_Lord_Saltoun>
+  # Alexander Fraser, 13th Lord Saltoun of Abernethy, 1684 - 1748-07-24
+  gen:father <https://www.wikidata.org/wiki/Q8009354> ;
+  gen:mother <#Margaret_Sharp> .
+  # oo Lady Mary Gordon, 1682-03-28 - 1753-02-18
+  []
+    gen:spouse <#Alexander_Fraser,_13th_Lord_Saltoun> , <gordon.ttl#Lady_Mary_Gordon_(died_1753)> ;
+	gen:startDate "1707-10-26" .
+<#Henrietta_Fraser>
+  # Hon. Henrietta Fraser, 1688 - 1751-02-26
+  gen:father <https://www.wikidata.org/wiki/Q8009354> ;
+  gen:mother <#Margaret_Sharp> .
+  # oo 1718 John Gordon of Kinellar, 1679 - 1764, gordon.ttl#John_Gordon_of_Kinellar
+<#William_Fraser_of_Fraserfield_(died_1727)>
+  # Hon. William Fraser of Fraserfield, 1691-11-19 - 1727-03-23
+  gen:father <https://www.wikidata.org/wiki/Q8009354> ;
+  gen:mother <#Margaret_Sharp> .
+  # oo Lady Katherine Anne Erskine, d. 1733-03-05
+  []
+    gen:spouse <#William_Fraser_of_Fraserfield_(died_1727)> , <erskine.ttl#Lady_Katherine_Anne_Erskine> ;
+	gen:startDate "1724-10-25" .
+<#Helen_Fraser>
+  # Hon. Helen Fraser
+  gen:father <https://www.wikidata.org/wiki/Q8009354> ;
+  gen:mother <#Margaret_Sharp> .
+  # oo 1709 Sir James Gordon of Park, 2nd Baronet, 1680~ - 1727-12-15, duff.ttl#Sir_James_Gordon_of_Park,_2nd_Baronet
+
+<https://www.wikidata.org/wiki/Q4718888>
+  # Alexander Fraser, 14th Lord Saltoun of Abernethy, 1710 - 1751-10-10
+  gen:father <#Alexander_Fraser,_13th_Lord_Saltoun> ;
+  gen:mother <gordon.ttl#Lady_Mary_Gordon_(died_1753)> .
+<#George_Fraser,_15th_Lord_Saltoun>
+  # George Fraser, 15th Lord Saltoun of Abernethy, 1720-10-10 - 1781-08-30
+  gen:father <#Alexander_Fraser,_13th_Lord_Saltoun> ;
+  gen:mother <gordon.ttl#Lady_Mary_Gordon_(died_1753)> .
+  # oo Helen Gordon, d. 1800-09-13
+  []
+    gen:spouse <#George_Fraser,_15th_Lord_Saltoun> , <gordon.ttl#Helen_Gordon> ;
+	gen:startDate "1756-06-05" .
+<#William_Fraser_of_Fraserfield_(died_1788)>
+  gen:name "William Fraser of Fraserfield"@en ;
+  gen:birthDate "1725-09-28" ;
+  gen:deathDate "1788-10-31" ;
+  gen:father <#William_Fraser_of_Fraserfield_(died_1727)> ;
+  gen:mother <erskine.ttl#Lady_Katherine_Anne_Erskine> .
+  # oo Rachel Kennedy, d. 1800-06-03, daughter of Rev. Hugh Kennedy
+  []
+    gen:spouse <#William_Fraser_of_Fraserfield_(died_1788)> , <#Rachel_Kennedy> ;
+	gen:startDate "1752-01-05" .
+
+<#Alexander_Fraser,_16th_Lord_Saltoun>
+  # Alexander Fraser, 16th Lord Saltoun of Abernethy, 1758-06-27 - 1793-09-13
+  gen:father <#George_Fraser,_15th_Lord_Saltoun> ;
+  gen:mother <gordon.ttl#Helen_Gordon> .
+  # oo Margery Fraser, d. 1851-11-15, daughter of Simon Fraser
+  []
+    gen:spouse <#Alexander_Fraser,_16th_Lord_Saltoun> , <#Margery_Fraser> ;
+	gen:startDate "1784-06-09" .
+<#Eleanora_Fraser_(died_1821~)>
+  # Hon. Eleanora Fraser, d. 1821~
+  gen:father <#George_Fraser,_15th_Lord_Saltoun> ;
+  gen:mother <gordon.ttl#Helen_Gordon> .
+  # oo 1792-07-06 (div 1808) Duncan Campbell, 8th of Lochnell, 1763-06-29 – 1837-04-09, https://www.wikidata.org/wiki/Q19871831
+<#Margaret_Fraser_(died_1819)>
+  gen:name "Margaret Fraser"@en ;
+  gen:deathDate "1819-05-12" ;
+  gen:father <#William_Fraser_of_Fraserfield_(died_1788)> ;
+  gen:mother <#Rachel_Kennedy> .
+  # oo 1771-10-15 David Steuart Erskine, 11th Earl of Buchan, 1742-06-01 - 1829-04-19, https://www.wikidata.org/wiki/Q5233414
+
+<https://www.wikidata.org/wiki/Q4718889>
+  # Alexander George Fraser, 17th Lord Saltoun of Abernethy, 1785-04-22 - 1853-08-18
+  gen:father <#Alexander_Fraser,_16th_Lord_Saltoun> ;
+  gen:mother <#Margery_Fraser> .
+  # oo Catharine Thurlow, d. 1826-07-09
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4718889> , <#Catharine_Thurlow> ;
+	gen:startDate "1815-03-06" .
+<#William_Fraser>
+  # Hon. William Fraser, 1791-10-12 - 1845-03-21
+  gen:father <#Alexander_Fraser,_16th_Lord_Saltoun> ;
+  gen:mother <#Margery_Fraser> .
+  # oo Elizabeth Graham Macdowall, d. 1853-05-05, daughter of David Macdowall and Eleanor Mary Grant
+  []
+    gen:spouse <#William_Fraser> , <#Elizabeth_Graham_Macdowall> ;
+	gen:startDate "1818-04-09" .
+<#Eleanora_Fraser_(died_1852)>
+  # Hon. Eleanora Fraser, d. 1852-09-26
+  gen:father <#Alexander_Fraser,_16th_Lord_Saltoun> ;
+  gen:mother <#Margery_Fraser> .
+  # oo 1825-12-05 William Macdowall Grant, 6th of Arndilly, 1795-11-30 - 1849-01-29
+
+<#Alexander_Fraser,_18th_Lord_Saltoun>
+  # Alexander Fraser, 18th Lord Saltoun of Abernethy, 1820-05-05 - 1886-02-01
+  gen:father <#William_Fraser> ;
+  gen:mother <#Elizabeth_Graham_Macdowall> .
+  # oo Charlotte Evans, d. 1890-06-11, daughter of Thomas Browne Evans and Charlotte Simeon
+  []
+    gen:spouse <#Alexander_Fraser,_18th_Lord_Saltoun> , <#Charlotte_Evans> ;
+	gen:startDate "1849-04-25" .
+
+<#Charlotte_Elizabeth_Eleanor_Fraser>
+  # Hon. Charlotte Elizabeth Eleanor Fraser, 1851~ - 1923-02-25
+  gen:father <#Alexander_Fraser,_18th_Lord_Saltoun> ;
+  gen:mother <#Charlotte_Evans> .
+  # oo 1873-07-10 William Henry Augustus Keppel, 1845-08-06 - 1889-10-31, brudenell.ttl#William_Henry_Augustus_Keppel
+  # oo 1903-12-05 Sir Henry Frederick Stephenson, 1842-06-07 - 1919-12-16, https://www.wikidata.org/wiki/Q384190 # -> howard.ttl
+<https://www.wikidata.org/wiki/Q4718891>
+  # Alexander William Frederick Fraser, 19th Lord Saltoun of Abernethy, 1851-08-08 - 1933-06-19
+  gen:father <#Alexander_Fraser,_18th_Lord_Saltoun> ;
+  gen:mother <#Charlotte_Evans> .
+  # oo Mary Helena Grattan-Bellew, d. 1940-10-08, daughter of Thomas Arthur Grattan-Bellew and Pauline Grattan
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4718891> , <#Mary_Helena_Grattan-Bellew> ;
+	gen:startDate "1885-07-07" .
+
+<https://www.wikidata.org/wiki/Q4718892>
+  # Alexander Arthur Fraser, 20th Lord Saltoun of Abernethy, 1886-03-08 - 1979-08-31
+  gen:father <https://www.wikidata.org/wiki/Q4718891> ;
+  gen:mother <#Mary_Helena_Grattan-Bellew> .
+  # oo Dorothy Geraldine Welby, d. 1985
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4718892> , <#Dorothy_Geraldine_Welby> ;
+	gen:startDate "1920-06-08" .
+<https://www.wikidata.org/wiki/Q8009357>
+  # Hon. William Fraser, 1890-07-05 - 1964-11-11
+  gen:father <https://www.wikidata.org/wiki/Q4718891> ;
+  gen:mother <#Mary_Helena_Grattan-Bellew> .
+  # oo Pamela Cynthia Maude, 1893 - 1975-10-20
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8009357> , <#Pamela_Cynthia_Maude> ;
+	gen:startDate "1919-12-22" .
+
+<https://www.wikidata.org/wiki/Q336617>
+  # Marjorie Flora Fraser, Baroness Saltoun of Abernethy, b. 1930-10-18
+  gen:father <https://www.wikidata.org/wiki/Q4718892> ;
+  gen:mother <#Dorothy_Geraldine_Welby> .
+  # oo 1956-10-16 Alexander Arthur Alfonso David Maule Ramsay of Mar, 1919-12-21 - 2000-12-20, https://www.wikidata.org/wiki/Q4719913
+<https://www.wikidata.org/wiki/Q3703184>
+  # Sir David William Fraser, 1920-12-30 - 2012-07-15
+  gen:father <https://www.wikidata.org/wiki/Q8009357> ;
+  gen:mother <#Pamela_Cynthia_Maude> .
+  # oo Anne Balfour, 1923-08-10 - 2016-07-26
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3703184> , <https://www.wikidata.org/wiki/Q26502389> ;
+	gen:startDate "1947" ;
+	gen:divorceDate "1952" .
+  # oo Julia Frances Oldridge de la Hey, daughter of Cyril James Oldridge de la Hey
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3703184> , <#Julia_Frances_Oldridge_de_la_Hey> ;
+	gen:startDate "1957" .
+
+<#Lucy_Caroline_Fraser>
+  # Lucy Caroline Fraser
+  gen:father <https://www.wikidata.org/wiki/Q3703184> ;
+  gen:mother <#Julia_Frances_Oldridge_de_la_Hey> .
+  # oo 1992 Hon. Alexander Nicholas John Baring, b. 1964-02-15, baring.ttl#Alexander_Nicholas_John_Baring
+
+
+# ====
+<https://www.wikidata.org/wiki/Q4719913>
+  # Alexander Arthur Alfonso David Maule Ramsay of Mar, 1919-12-21 - 2000-12-20
+  gen:father <https://www.wikidata.org/wiki/Q4719910> ;
+  gen:mother <https://www.wikidata.org/wiki/Q256951> .
+  # oo Marjorie Flora Fraser, Baroness Saltoun of Abernethy, b. 1930-10-18
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4719913> , <https://www.wikidata.org/wiki/Q336617> ;
+	gen:startDate "1956-10-16" .
+
+<https://www.wikidata.org/wiki/Q6376186>
+  # Hon. Katharine Ingrid Mary Isabel Fraser, b. 1957-10-11
+  gen:father <https://www.wikidata.org/wiki/Q4719913> ;
+  gen:mother <https://www.wikidata.org/wiki/Q336617> .
+  # oo 1980-05-03 Mark Malise Nicolson, b. 1954-09-24, son of Malise Allen Nicolson
+
+# ----
+<#Catharine_Thurlow>
+  # Catharine Thurlow, d. 1826-07-09
+  gen:father <https://www.wikidata.org/wiki/Q44599> .
+  # oo 1815-03-06 Alexander George Fraser, 17th Lord Saltoun of Abernethy, 1785-04-22 - 1853-08-18, https://www.wikidata.org/wiki/Q4718889
+
+# ----
+<#Dorothy_Geraldine_Welby>
+  # Dorothy Geraldine Welby, d. 1985
+  gen:father <https://www.wikidata.org/wiki/Q13530066> .
+  # oo 1920-06-08 Alexander Arthur Fraser, 20th Lord Saltoun of Abernethy, 1886-03-08 - 1979-08-31, https://www.wikidata.org/wiki/Q4718892
+
+# ----
+<#Pamela_Cynthia_Maude>
+  # Pamela Cynthia Maude, 1893 - 1975-10-20
+  gen:father <https://www.wikidata.org/wiki/Q5200813> ;
+  gen:mother <https://www.wikidata.org/wiki/Q8025383> .
+  # oo 1919-12-22 Hon. William Fraser, 1890-07-05 - 1964-11-11, https://www.wikidata.org/wiki/Q8009357
+
+# ----
+#<#Edward_Balfour,_9th_of_Balbirnie>
+  # Edward William Sturgis Balfour, 9th of Balbirnie, 1884 - 1955-12-23
+  # oo Lady Ruth Balfour, d. 1967-08-30
+  []
+    gen:spouse <#Edward_Balfour,_9th_of_Balbirnie> , <#Lady_Ruth_Balfour> ;
+	gen:startDate "1914-12-26" .
+
+<https://www.wikidata.org/wiki/Q26502389>
+  # Anne Balfour, 1923-08-10 - 2016-07-26
+  gen:father <#Edward_Balfour,_9th_of_Balbirnie> ;
+  gen:mother <#Lady_Ruth_Balfour> .
+  # oo 1947 (div 1952) Sir David William Fraser, 1920-12-30 - 2012-07-15, https://www.wikidata.org/wiki/Q3703184
+# ----
+#<https://www.wikidata.org/wiki/Q2917086>
+  # Gerald William Balfour, 2nd Earl of Balfour, 1853-04-09 - 1945-01-14
+  # oo Lady Elizabeth Edith Bulwer-Lytton, 1903-03-27 – 1977-11-04
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2917086> , <#Lady_Elizabeth_Edith_Bulwer-Lytton> ;
+	gen:startDate "1887-12-21" .
+
+<#Lady_Ruth_Balfour>
+  # Lady Ruth Balfour, d. 1967-08-30
+  gen:father <https://www.wikidata.org/wiki/Q2917086> ;
+  gen:mother <#Lady_Elizabeth_Edith_Bulwer-Lytton> .
+  # oo 1914-12-26 Edward William Sturgis Balfour, 9th of Balbirnie, 1884 - 1955-12-23, #Edward_Balfour,_9th_of_Balbirnie
+# ----
+<#Lady_Elizabeth_Edith_Bulwer-Lytton>
+  # Lady Elizabeth Edith Bulwer-Lytton, 1903-03-27 – 1977-11-04
+  gen:father <https://www.wikidata.org/wiki/Q335493> .
+  # and Edith Villiers
+  # oo 1887-12-21 Gerald William Balfour, 2nd Earl of Balfour, 1853-04-09 - 1945-01-14, https://www.wikidata.org/wiki/Q2917086
+
+
+# ====
+#<#Laurence_Abernethy,_1st_Lord_Saltoun>
+  # Laurence Abernethy, 1st Lord Saltoun of Abernethy, 1400~ - 1461-03-31b
+  # 1st Lord Saltoun of Abernethy 1445-06-28
+  # oo 1448b Margaret (?)
+
+<#William_Abernethy,_2nd_Lord_Saltoun>
+  # William Abernethy, 2nd Lord Saltoun of Abernethy, d. 1488-06
+  gen:father <#Laurence_Abernethy,_1st_Lord_Saltoun> .
+  # and Margaret (?)
+  # oo unknown wife (?)
+  # oo 1464b Isabella Borthwick
+<#James_Abernethy,_3rd_Lord_Saltoun>
+  # James Abernethy, 3rd Lord Saltoun of Abernethy, d. 1504/1505
+  gen:father <#Laurence_Abernethy,_1st_Lord_Saltoun> .
+  # and Margaret (?)
+  # oo unknown wife (?)
+
+<#Alexander_Abernethy,_4th_Lord_Saltoun>
+  # Alexander Abernethy, 4th Lord Saltoun of Abernethy, d. 1527-07-25
+  gen:father <#James_Abernethy,_3rd_Lord_Saltoun> .
+  # and unknown wife (?)
+  # oo unknown daughter Stewart
+  []
+    gen:spouse <#Alexander_Abernethy,_4th_Lord_Saltoun> , <stuart.ttl#???_Stewart> .
+<#Janet_Abernethy>
+  # Janet Abernethy
+  gen:father <#James_Abernethy,_3rd_Lord_Saltoun> .
+  # and unknown wife (?)
+  # oo Alexander Ogilvy, 4th of Deskford and Findlater, d. 1544-07, son of James Ogilvy, 3rd of Deskford and Findlater (d. 1506-02-01) and oo Lady Agnes Gordon (daughter of https://www.wikidata.org/wiki/Q495643 and hay.ttl#Lady_Elizabeth_Hay_(born_1442~))
+<#Elizabeth_Abernethy>
+  # Elizabeth Abernethy
+  gen:father <#James_Abernethy,_3rd_Lord_Saltoun> .
+  # and unknown wife (?)
+  # oo 1510-05-31 Sir Gilbert Hay of Ardendraught and Delgaty, d. 1513-09-09, hay.ttl#Sir_Gilbert_Hay_of_Ardendraught_and_Delgaty
+
+<#Elizabeth_Abernethy_1>
+  # Elizabeth Abernethy
+  gen:father <#Alexander_Abernethy,_4th_Lord_Saltoun> ;
+  gen:mother <stuart.ttl#???_Stewart> .
+  # oo 1529b Alexander Innes, 14th of that Ilk, 1494 - 1553-09, innes.ttl#Alexander_Innes,_14th_of_that_Ilk
+<#William_Abernethy,_5th_Lord_Saltoun>
+  # William Abernethy, 5th Lord Saltoun of Abernethy, d. 1543-12
+  gen:father <#Alexander_Abernethy,_4th_Lord_Saltoun> ;
+  gen:mother <stuart.ttl#???_Stewart> .
+  # oo Lady Elizabeth Hay, d. 1574-10
+  []
+    gen:spouse <#William_Abernethy,_5th_Lord_Saltoun> , <hay.ttl#Lady_Elizabeth_Hay_(died_1574)> ;
+	gen:startDate "1512-07-23" .
+
+<#Elizabeth_Abernethy_(died_1581)>
+  # Hon. Elizabeth Abernethy, d. 1581-05b
+  gen:father <#William_Abernethy,_5th_Lord_Saltoun> ;
+  gen:mother <hay.ttl#Lady_Elizabeth_Hay_(died_1574)> .
+  # oo 1561-04-11 John Lyon, 8th Lord Glamis, 1544~ - 1578-03-18, https://www.wikidata.org/wiki/Q16863453
+<#Alexander_Abernethy,_6th_Lord_Saltoun>
+  # Alexander Abernethy, 6th Lord Saltoun of Abernethy, d. 1587-04
+  gen:father <#William_Abernethy,_5th_Lord_Saltoun> ;
+  gen:mother <hay.ttl#Lady_Elizabeth_Hay_(died_1574)> .
+  # oo Lady Alison Keith, d. 1567-08
+  []
+    gen:spouse <#Alexander_Abernethy,_6th_Lord_Saltoun> , <keith.ttl#Lady_Alison_Keith> ;
+	gen:startDate "1550-08-28" .
+
+<#Elizabeth_Abernethy_2>
+  # Hon. Elizabeth Abernethy
+  gen:father <#Alexander_Abernethy,_6th_Lord_Saltoun> ;
+  gen:mother <keith.ttl#Lady_Alison_Keith> .
+  # oo 1580 John Innes, 17th of that Ilk, 1556 - 1587~, innes.ttl#John_Innes,_17th_of_that_Ilk
+<#George_Abernethy,_7th_Lord_Saltoun>
+  # George Abernethy, 7th Lord Saltoun of Abernethy, 1555~ - 1590-04-27
+  gen:father <#Alexander_Abernethy,_6th_Lord_Saltoun> ;
+  gen:mother <keith.ttl#Lady_Alison_Keith> .
+  # oo Lady Margaret Stewart, daughter of https://www.wikidata.org/wiki/Q1701833 and gordon.ttl#Lady_Elizabeth_Gordon_(died_1557b)
+  []
+    gen:spouse <#George_Abernethy,_7th_Lord_Saltoun> , <stuart.ttl#Lady_Margaret_Stewart> ;
+	gen:startDate "1574-08-03b" .
+
+<#John_Abernethy,_8th_Lord_Saltoun>
+  # John Abernethy, 8th Lord Saltoun of Abernethy, 1577~ - 1612-09-21b
+  gen:father <#George_Abernethy,_7th_Lord_Saltoun> ;
+  gen:mother <stuart.ttl#Lady_Margaret_Stewart> .
+  # oo Magdalen Urquhart, d. 1603-04-04, daughter of Henry Urquhart of Cromarty, younger
+  []
+    gen:spouse <#John_Abernethy,_8th_Lord_Saltoun> , <#Magdalen_Urquhart> ;
+	gen:startDate "1601-09-30" .
+  # oo Lady Elizabeth Stuart, d. 1608, daughter of James Stuart, 2nd Lord Doune (d. 1591/1592-02-07) and oo 1580/1581-01-23 Elizabeth Stewart, Countess of Moray (d. 1591-11-18, https://www.wikidata.org/wiki/Q5363584)
+  []
+    gen:spouse <#John_Abernethy,_8th_Lord_Saltoun> , <stuart.ttl#Lady_Elizabeth_Stuart> ;
+	gen:startDate "1605-08-05" .
+  # oo Anne Stewart, 1581a/1604b - 1669-03-09a, daughter of Walter Stewart, 1st Lord of Blantyre (1565b - 1617-03-08, https://www.wikidata.org/wiki/Q7966195) and oo 1581-12-31 Nichola Somerville (d. 1614-08-30b, daughter of Sir James Somerville of Cambusnethan and Katherine Murray)
+  []
+    gen:spouse <#John_Abernethy,_8th_Lord_Saltoun> , <stuart.ttl#Anne_Stewart> ;
+	gen:startDate "1609-01-11b" .
+<#Margaret_Abernethy>
+  # Hon. Margaret Abernethy
+  gen:father <#George_Abernethy,_7th_Lord_Saltoun> ;
+  gen:mother <stuart.ttl#Lady_Margaret_Stewart> .
+  # oo 1596-01-04 Alexander Fraser, 9th of Philorth, 1579~ - 1637~, #Alexander_Fraser,_9th_of_Philorth
+
+<#Alexander_Abernethy,_9th_Lord_Saltoun>
+  # Alexander Abernethy, 9th Lord Saltoun of Abernethy, 1611-03-26 - 1668-12-15~
+  gen:father <#John_Abernethy,_8th_Lord_Saltoun> ;
+  gen:mother <stuart.ttl#Anne_Stewart> .
+<#Margaret_Abernethy,_Lady_Saltoun>
+  # Margaret Abernethy, Lady Saltoun of Abernethy, 1613-02-02 - 1669-03-09a
+  # 10th Lady Saltoun of Abernethy 1668-12-14~, de jure
+  gen:father <#John_Abernethy,_8th_Lord_Saltoun> ;
+  gen:mother <stuart.ttl#Anne_Stewart> .
+
+# ----
+<stuart.ttl#???_Stewart>
+  # unknown daughter Stewart
+  gen:father <https://www.wikidata.org/wiki/Q1316528> .
+  # and Margaret Ogilvy
+  # oo Alexander Abernethy, 4th Lord Saltoun of Abernethy, d. 1527-07-25, fraser.ttl#Alexander_Abernethy,_4th_Lord_Saltoun
+
+<stuart.ttl#Lady_Margaret_Stewart>
+  # Lady Margaret Stewart
+  gen:father <https://www.wikidata.org/wiki/Q1701833> ;
+  gen:mother <gordon.ttl#Lady_Elizabeth_Gordon_(died_1557b)> .
+  # oo 1574-08-03b George Abernethy, 7th Lord Saltoun of Abernethy, 1555~ - 1590-04-27, fraser.ttl#George_Abernethy,_7th_Lord_Saltoun
+
+# ----
+#<#John_Udny_of_that_Ilk>
+  # John Udny of that Ilk, b. 1678~
+  # oo Lady Martha Gordon, b. 1681-02-13
+  []
+    gen:spouse <#John_Udny_of_that_Ilk> , <gordon.ttl#Lady_Martha_Gordon> ;
+	gen:startDate "1701-03" .
+
+<#Anne_Martha_Udny>
+  # Anne Martha Udny, 1704~ - 1753-08-24
+  gen:father <#John_Udny_of_that_Ilk> ;
+  gen:mother <gordon.ttl#Lady_Martha_Gordon> .
+  # oo Charles Fraser, 6th of Inverallochy, d. 1789-02-13a, #Charles_Fraser,_6th_of_Inverallochy

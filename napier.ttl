@@ -1,0 +1,255 @@
+@base <napier.ttl> .
+@prefix gen: <http://jjkoch.de/gen#> .
+@prefix wdata: <https://www.wikidata.org/wiki/> .
+@prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+
+# https://www.wikidata.org/wiki/Q4719732, Sir Alexander Napier, 2nd of Merchistoun, 1410~ - 1474~
+  # oo Elizabeth Lauder, 1410 - 1470
+
+#<#Archibald_Napier,_4th_of_Merchistoun>
+  # Archibald Napier, 4th of Merchistoun, d. 1521
+  # oo Katherine Douglas, daughter of Sir William Douglas of Whittinghame and Euphemia ???
+  []
+    gen:spouse <#Archibald_Napier,_4th_of_Merchistoun> , <#Katherine_Douglas> .
+  # oo Margaret Campbell, daughter of https://www.wikidata.org/wiki/Q18576005 and Margaret Robertson
+  []
+    gen:spouse <#Archibald_Napier,_4th_of_Merchistoun> , <campbell.ttl#Margaret_Campbell_2> .
+
+<#Sir_Alexander_Napier,_5th_of_Merchistoun>
+  # Sir Alexander Napier, 5th of Merchistoun, d. 1513-09-09
+  gen:father <#Archibald_Napier,_4th_of_Merchistoun> ;
+  gen:mother <#Katherine_Douglas> .
+  # oo Janet Chisholm, daughter of Edmund Chisholm, 1st of Cromlix and Janet Drummond
+<#Alexander_Napier,_of_Inglestoun>
+  # Alexander Napier, of Inglestoun, d. 1572-12-17b
+  gen:father <#Archibald_Napier,_4th_of_Merchistoun> ;
+  gen:mother <campbell.ttl#Margaret_Campbell_2> .
+
+<#Alexander_Napier,_6th_of_Merchistoun>
+  # Alexander Napier, 6th of Merchistoun, 1509~ - 1547-09-10
+  gen:father <#Sir_Alexander_Napier,_5th_of_Merchistoun> .
+  # and Janet Chisholm
+  # oo Annabella Campbell, 1512~ - 1575-06-20
+  []
+    gen:spouse <#Alexander_Napier,_6th_of_Merchistoun> , <campbell.ttl#Annabella_Campbell> ;
+	gen:startDate "1533-10-09a" .
+<#James_Napier,_in_Swire>
+  # James Napier, in Swire
+  gen:father <#Alexander_Napier,_of_Inglestoun> .
+
+<https://www.wikidata.org/wiki/Q4786468>
+  # Sir Archibald Napier, 7th of Merchistoun, 1534~ - 1608-05-15
+  gen:father <#Alexander_Napier,_6th_of_Merchistoun> ;
+  gen:mother <campbell.ttl#Annabella_Campbell> .
+  # oo Janet Bothwell, d. 1563-12-20
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4786468> , <#Janet_Bothwell> ;
+	gen:startDate "1549" .
+  # oo Elizabeth Moubray, daughter of John Moubray of Barnbougle
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4786468> , <#Elizabeth_Moubray> ;
+	gen:startDate "1563a" .
+<#Alexander_Napier>
+  # Alexander Napier
+  gen:father <#Alexander_Napier,_6th_of_Merchistoun> ;
+  gen:mother <campbell.ttl#Annabella_Campbell> .
+  # oo Anne Birchley, daughter of Edward Birchley
+<https://www.wikidata.org/wiki/Q7347951>
+  # Sir Robert Napier, d. 1615
+  gen:father <#James_Napier,_in_Swire> .
+  # oo Catherine Warham
+  # oo Magdalen Denton
+
+<https://www.wikidata.org/wiki/Q159592>
+  # John Napier, 8th of Merchistoun, 1550 - 1617-04-03
+  gen:father <https://www.wikidata.org/wiki/Q4786468> ;
+  gen:mother <#Janet_Bothwell> .
+  # oo Elizabeth Stirling, d. 1579, daughter of Sir James Stirling, 4th of Keir and 1st of Cawder
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q159592> , <#Elizabeth_Stirling> ;
+	gen:startDate "1572" .
+  # oo Agnes Chisholm, daughter of James Chisholm, 3rd of Cromlix and Jean Drummond
+<https://www.wikidata.org/wiki/Q7328003>
+  # Richard Napier, 1559 – 1634-04-01
+  gen:father <#Alexander_Napier> .
+  # and Anne Birchley
+<https://www.wikidata.org/wiki/Q7528819> # -> Napier of Luton Hoo
+  # Sir Robert Napier, 1st Baronet, of Luton Hoo, 1560 – 1637-04-22
+  gen:father <#Alexander_Napier> .
+  # and Anne Birchley
+<https://www.wikidata.org/wiki/Q6969787>
+  # Sir Nathaniel Napier, d. 1635-09-06
+  gen:father <https://www.wikidata.org/wiki/Q7347951> .
+  # and Magdalen Denton
+  # oo Elizabeth Gerrard, d. 1624
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6969787> , <#Elizabeth_Gerrard> ;
+	gen:startDate "1599~" .
+
+<https://www.wikidata.org/wiki/Q4786465>
+  # Archibald Napier, 1st Lord Napier of Merchistoun, 1575~ - 1645-11
+  # 1st Baronet Napier, of Merchistoun 1627-03-02
+  # 1st Lord Napier of Merchistoun 1627-05-04
+  gen:father <https://www.wikidata.org/wiki/Q159592> ;
+  gen:mother <#Elizabeth_Stirling> .
+  # oo Lady Margaret Graham, d. 1626
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4786465> , <https://www.wikidata.org/wiki/Q56043068> ;
+	gen:startDate "1619-04-15" .
+<https://www.wikidata.org/wiki/Q7526958> # -> Napier of Middle Marsh
+  # Sir Gerrard Napier, 1st Baronet, of Middle Marsh, 1606-10-19 – 1673-05-14
+  gen:father <https://www.wikidata.org/wiki/Q6969787> ;
+  gen:mother <#Elizabeth_Gerrard> .
+
+<https://www.wikidata.org/wiki/Q4786466>
+  # Archibald Napier, 2nd Lord Napier of Merchistoun, 1625~ - 1658-09-04
+  gen:father <https://www.wikidata.org/wiki/Q4786465> ;
+  gen:mother <https://www.wikidata.org/wiki/Q56043068> .
+  # oo Lady Elizabeth Erskine
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4786466> , <erskine.ttl#Lady_Elizabeth_Erskine> ;
+	gen:startDate "1641-05a/-07b" .
+
+<#Jean_Napier>
+  # Jean Napier, d. 1680
+  gen:father <https://www.wikidata.org/wiki/Q4786466> ;
+  gen:mother <erskine.ttl#Lady_Elizabeth_Erskine> .
+  # oo 1668 Sir Thomas Nicolson of Carnock, 3rd Baronet, 1649-09-15 - 1670-01-20, kerr.ttl#Sir_Thomas_Nicolson_of_Carnock,_3rd_Baronet
+<https://www.wikidata.org/wiki/Q4786467>
+  # Archibald Napier, 3rd Lord Napier of Merchistoun, d. 1683-08-07b
+  gen:father <https://www.wikidata.org/wiki/Q4786466> ;
+  gen:mother <erskine.ttl#Lady_Elizabeth_Erskine> .
+<https://www.wikidata.org/wiki/Q6759211>
+  # Margaret Napier, Lady Napier of Merchistoun, d. 1706-09
+  gen:father <https://www.wikidata.org/wiki/Q4786466> ;
+  gen:mother <erskine.ttl#Lady_Elizabeth_Erskine> .
+  # oo 1676 John Brisbane, d. 1684, #John_Brisbane
+
+
+# Napier of Middle Marsh
+<https://www.wikidata.org/wiki/Q7526958>
+  # Sir Gerrard Napier, 1st Baronet, of Middle Marsh, 1606-10-19 – 1673-05-14
+  # 1st Baronet Napier of Moddle Marsh 1641-06-25
+  gen:father <https://www.wikidata.org/wiki/Q6969787> ;
+  gen:mother <#Elizabeth_Gerrard> .
+  # oo Margaret Collesm d. 1660, daughter of John Colles
+
+<https://www.wikidata.org/wiki/Q16859435>
+  # Sir Nathaniel Napier, 2nd Baronet, 1636 – 1709
+  gen:father <https://www.wikidata.org/wiki/Q7526958> .
+  # and Margaret Colles
+  # oo Blanch Wyndham, d. 1695, daughter of Sir Hugh Wyndham
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16859435> , <#Blanch_Wyndham> ;
+	gen:startDate "1656" .
+  # oo Susanna Guise
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16859435> , <#Susanna_Guise> ;
+	gen:startDate "1697" .
+
+<#Elizabeth_Napier>
+  # Elizabeth Napier
+  gen:father <https://www.wikidata.org/wiki/Q16859435> ;
+  gen:mother <#Blanch_Wyndham> .
+  # oo 1696-06-04~ Sir John Guise, 3rd Baronet, 1678~ - 1732-11-16, https://www.wikidata.org/wiki/Q26262857
+<https://www.wikidata.org/wiki/Q28227562>
+  # Sir Nathaniel Napier, 3rd Baronet, 1668~ – 1728-02-24
+  gen:father <https://www.wikidata.org/wiki/Q16859435> ;
+  gen:mother <#Blanch_Wyndham> .
+  # oo Hon. Catherine Alington, 1677 - 1724
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q28227562> , <russell.ttl#Catherine_Alington> ;
+	gen:startDate "1694-08-28" .
+
+
+# Napier of Luton Hoo
+<https://www.wikidata.org/wiki/Q7528819>
+  # Sir Robert Napier, 1st Baronet, of Luton Hoo, 1560 – 1637-04-22
+  # 1st Baronet Napier, of Luton Hoo 1611-09-24
+  gen:father <#Alexander_Napier> .
+  # and Anne Birchley
+  # oo Elizabeth Staper
+  # oo Margaret Barnes, daughter of Richard Barnes
+  # oo Mary Robinson, daughter of John Robinson
+
+<https://www.wikidata.org/wiki/Q7528824>
+  # Sir Robert Napier, 2nd Baronet, 1603~ – 1661-03-07
+  gen:father <https://www.wikidata.org/wiki/Q7528819> .
+  # and Mary Robinson
+  # oo Frances Thornhurst
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7528824> , <#Frances_Thornhurst> .
+  # oo Penelope Egerton, d. 1658
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7528824> , <egerton.ttl#Penelope_Egerton> .
+<#Mary_Napier>
+  # Mary Napier, 1598 - 1675
+  gen:father <https://www.wikidata.org/wiki/Q7528819> .
+  # and Mary Robinson
+  # oo Sir Thomas Myddelton, 1586 – 1666, https://www.wikidata.org/wiki/Q7792649
+<#Margaret_Napier>
+  # Margaret Napier
+  gen:father <https://www.wikidata.org/wiki/Q7528819> .
+  # and Mary Robinson
+  # oo Thomas Mytton, 1597~ – 1656-11-29b, https://www.wikidata.org/wiki/Q11802967
+
+<#Sir_Robert_Napier,_3rd_Baronet>
+  # Sir Robert Napier, 3rd Baronet, d. 1675
+  gen:father <https://www.wikidata.org/wiki/Q7528824> ;
+  gen:mother <#Frances_Thornhurst> .
+  # oo Margaret Littleton, daughter of Sir Edward Littleton, 1st Baronet (b. 1599-12-19 - 1657~, 1st Baronet Littleton, of Pillaton Hall, co. Staffs 1627-06-28, https://www.wikidata.org/wiki/Q7526585) and Hester Courteen (daughter of Sir William Courten and unknown daughter Tryon)
+<https://www.wikidata.org/wiki/Q16859434>
+  # Sir John Napier, 4th Baronet, 1636 – 1711
+  gen:father <https://www.wikidata.org/wiki/Q7528824> ;
+  gen:mother <egerton.ttl#Penelope_Egerton> .
+  # oo 1666-08-25 Elizabeth Biddulph, daughter of Simon Biddulph and Jane Birch
+<#Frances_Napier>
+  # Frances Napier, d. 1706-11~
+  gen:father <https://www.wikidata.org/wiki/Q7528824> ;
+  gen:mother <egerton.ttl#Penelope_Egerton> .
+  # oo Sir Edward Barkham, 2nd Baronet, 1628 - 1688, son of Sir Edward Barkham, 1st Baronet (1595~ - 1667-08-02, 1st Baronet Barkham, of Southacre, co. Norfolk 1623-06-26, https://www.wikidata.org/wiki/Q7526513) and oo 1622-07-31 Frances Berney (d. 1667-07-01, daughter of Sir Thomas Berney and Juliana Gawdy)
+  # oo Henry Richardson, 3rd Baron Cramond
+
+<https://www.wikidata.org/wiki/Q26817990>
+  # Sir Theophilus Napier, 5th Baronet, 1672-10-25 - 1719-05-05
+  gen:father <https://www.wikidata.org/wiki/Q16859434> .
+  # and Elizabeth Biddulph
+  # oo Elizabeth Rotheram, daughter of John Rotheram
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q26817990> , <howard.ttl#Elizabeth_Rotheram> ;
+	gen:startDate "1722b" .
+
+
+# ----
+<#Janet_Bothwell>
+  # oo Janet Bothwell, d. 1563-12-20
+  gen:father <https://www.wikidata.org/wiki/Q16197522> .
+  # and Katherine Bellenden
+  # oo 1549 Sir Archibald Napier, 7th of Merchistoun, 1534~ - 1608-05-15, https://www.wikidata.org/wiki/Q4786468
+
+# ----
+#<#John_Brisbane>
+  # John Brisbane, d. 1684
+  # oo Margaret Napier, Lady Napier of Merchistoun, d. 1706-09
+  []
+    gen:spouse <#John_Brisbane> , <https://www.wikidata.org/wiki/Q6759211> ;
+	gen:startDate "1676" .
+
+<#Elizabeth_Brisbane,_Mistress_of_Napier>
+  # Elizabeth Brisbane, Mistress of Napier, d. 1705-08-11
+  gen:father <#John_Brisbane> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6759211> .
+  # oo 1699-12-15 Sir William Scott, 2nd Baronet of Thirlestane, 1645-05-11 – 1725-10-08, https://www.wikidata.org/wiki/Q16859551
+
+# ----
+#<https://www.wikidata.org/wiki/Q7792649>
+  # Sir Thomas Myddelton, 1586 – 1666
+  # oo Mary Napier, 1598 - 1675
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7792649> , <#Mary_Napier> .
+
+<#Christian_Myddelton>
+  # Christian Myddelton
+  gen:father <https://www.wikidata.org/wiki/Q7792649> ;
+  gen:mother <#Mary_Napier> .
+  # oo 1650-01-23 Roger Grosvenor, 1628~ - 1651-08-22, grosvenor.ttl#Roger_Grosvenor

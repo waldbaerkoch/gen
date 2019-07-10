@@ -1,0 +1,1340 @@
+@base <innes.ttl> .
+@prefix gen: <http://jjkoch.de/gen#> .
+@prefix wdata: <https://www.wikidata.org/wiki/> .
+@prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+
+#<#Sir_Robert_Innes,_11th_of_that_Ilk>
+  # Sir Robert Innes, 11th of that Ilk, 1410~ - 1464-02-01b
+  # oo 1436~ unknown daughter Douglas, daughter of douglas.ttl#Sir_William_Douglas,_2nd_of_Drumlanrig
+
+<#Sir_James_Innes,_12th_of_that_Ilk>
+  # Sir James Innes, 12th of that Ilk, d. 1491~
+  gen:father <#Sir_Robert_Innes,_11th_of_that_Ilk> .
+  # oo Janet Gordon
+  []
+    gen:spouse <#Sir_James_Innes,_12th_of_that_Ilk> , <gordon.ttl#Janet_Gordon> .
+  # oo 1473~ Margaret Culane
+<#Walter_Innes,_1st_of_Invermarkie> # -> Innes of Invermarkie
+  # Walter Innes, 1st of Invermarkie, 1451 - 1499-11-03b
+  gen:father <#Sir_Robert_Innes,_11th_of_that_Ilk> .
+  # oo Christine Gordon
+
+<#Alexander_Innes,_13th_of_that_Ilk>
+  # Alexander Innes, 13th of that Ilk
+  gen:father <#Sir_James_Innes,_12th_of_that_Ilk> ;
+  gen:mother <gordon.ttl#Janet_Gordon> .
+  # oo 1493 Christian Dunbar, daughter of Sir James Dunbar and Eupheme Dunbar
+<#Robert_Innes_of_Rothmakenzie_and_Cromey>
+  # Robert Innes of Rothmakenzie and Cromey, d. 1536-03-06b
+  gen:father <#Sir_James_Innes,_12th_of_that_Ilk> ;
+  gen:mother <#Margaret_Culane> .
+  # oo Margaret Ann Meldrum, d. 1508-11-17, daughter of Sir William Meldrum of Fyvie
+
+<#Alexander_Innes,_14th_of_that_Ilk>
+  # Alexander Innes, 14th of that Ilk, 1494 - 1553-09
+  gen:father <#Alexander_Innes,_13th_of_that_Ilk> .
+  # and Christian Dunbar
+  # oo Elizabeth Abernethy
+  []
+    gen:spouse <#Alexander_Innes,_14th_of_that_Ilk> , <fraser.ttl#Elizabeth_Abernethy_1> ;
+	gen:startDate "1529b" .
+  # oo Elizabeth Forbes, d. 1570-12, daughter of John Forbes, 6th Lord Forbes and Christian Lundie
+  []
+    gen:spouse <#Alexander_Innes,_14th_of_that_Ilk> , <#Elizabeth_Forbes> ;
+	gen:startDate "1541b" .
+<#James_Innes,_2nd_of_Cromey>
+  # James Innes, 2nd of Cromey, d. 1547-09-10
+  gen:father <#Robert_Innes_of_Rothmakenzie_and_Cromey> .
+  # and Margaret Ann Meldrum
+  # oo 1533~ Catherine Gordon, daughter of Sir William Gordon, 1st of Gight and Janet Ogilvy
+<#Alexander_Innes_(died_1547b)>
+  # Alexander Innes, d. 1547b
+  gen:father <#Robert_Innes_of_Rothmakenzie_and_Cromey> .
+  # and Margaret Ann Meldrum
+  # oo unknown daughter Hay of Lochloy
+
+<#William_Innes,_15th_of_that_Ilk>
+  # William Innes, 15th of that Ilk, d. 1565-04
+  gen:father <#Alexander_Innes,_14th_of_that_Ilk> ;
+  gen:mother <fraser.ttl#Elizabeth_Abernethy_1> .
+  # oo 1544 Elizabeth Hepburn
+<#Margaret_Innes>
+  # Margaret Innes
+  gen:father <#Alexander_Innes,_14th_of_that_Ilk> ;
+  gen:mother <#Elizabeth_Forbes> .
+  # oo 1553-06 (div 1574-11-19) Robert Innes, 3rd of Invermarkie, 1532 - 1584-09
+<#Alexander_Innes,_18th_of_that_Ilk>
+  # Alexander Innes, 18th of that Ilk and 3rd of Cromey, 1537 - 1580-04-13
+  gen:father <#James_Innes,_2nd_of_Cromey> .
+  # and Catherine Gordon
+  # oo Beatrix Dunbar, daughter of Alexander Dunbar
+  # oo 1563 Janet Urquhart, daughter of Alexander Urquhart of Cromartie
+  # oo 1565-12-18 Isobel Forbes, daughter of Arthur Forbes of Logie and Balfour
+<#John_Innes_(died_1576b)>
+  # John Innes, d. 1576b
+  gen:father <#Alexander_Innes_(died_1547b)> .
+  # and unknown daughter Hay of Lochloy
+  # oo Jeronissa Gordon, daughter of John Gordon, 4th of Gight
+
+<#Alexander_Innes,_16th_of_that_Ilk>
+  # Alexander Innes, 16th of that Ilk, 1553-04~ - 1578-01-01
+  gen:father <#William_Innes,_15th_of_that_Ilk> .
+  # and Elizabeth Hepburn
+  # oo Lady Barbara Sinclair, d. 1576-07
+  []
+    gen:spouse <#Alexander_Innes,_16th_of_that_Ilk> , <#Lady_Barbara_Sinclair> ;
+	gen:startDate "1574-05" .
+  # oo Jean Gordon, d. 1584-01
+  []
+    gen:spouse <#Alexander_Innes,_16th_of_that_Ilk> , <gordon.ttl#Lady_Jean_Gordon_(died_1584)> ;
+	gen:startDate "1576a" .
+<#John_Innes,_17th_of_that_Ilk>
+  # John Innes, 17th of that Ilk, 1556 - 1587~
+  gen:father <#William_Innes,_15th_of_that_Ilk> .
+  # and Elizabeth Hepburn
+  # oo Hon. Elizabeth Abernethy
+  []
+    gen:spouse <#John_Innes,_17th_of_that_Ilk> , <fraser.ttl#Elizabeth_Abernethy_2> ;
+	gen:startDate "1580" .
+<#Robert_Innes_of_that_Ilk>
+  # Robert Innes of that Ilk, 1562-04~ - 1596-09-25
+  gen:father <#Alexander_Innes,_18th_of_that_Ilk> .
+  # and Isobel Forbes
+  # oo Elizabeth Elphinstone, d. 1613-02-26
+  []
+    gen:spouse <#Robert_Innes_of_that_Ilk> , <elphinstone.ttl#Elizabeth_Elphinstone_(died_1613)> ;
+	gen:startDate "1582-10-01" .
+<#Adam_Innes,_1st_of_Redhall>
+  # Adam Innes, 1st of Redhall, d. 1631a
+  gen:father <#John_Innes_(died_1576b)> .
+  # and Jeronissa Gordon
+  # oo Katharine Clerk
+
+<#Sir_Robert_Innes_of_that_Ilk,_1st_Baronet>
+  # Rt. Hon. Sir Robert Innes of that Ilk, 1st Baronet, 1583/1584 - 1658-11-17
+  # 1st Baronet Innes 1625-05-28
+  gen:father <#Robert_Innes_of_that_Ilk> ;
+  gen:mother <elphinstone.ttl#Elizabeth_Elphinstone_(died_1613)> .
+  # oo Lady Grizel Stuart
+  []
+    gen:spouse <#Sir_Robert_Innes_of_that_Ilk,_1st_Baronet> , <stuart.ttl#Lady_Grizel_Stuart> ;
+	gen:startDate "1611-12-18" .
+<#Marie_Innes_1>
+  # Marie Innes
+  gen:father <#Robert_Innes_of_that_Ilk> ;
+  gen:mother <elphinstone.ttl#Elizabeth_Elphinstone_(died_1613)> .
+  # oo William Hay of Fetterletter, hay.ttl#William_Hay_of_Fetterletter
+<#James_Innes>
+  # James Innes
+  gen:father <#Adam_Innes,_1st_of_Redhall> .
+  # and Katharine Clerk
+
+<#Sir_Robert_Innes_of_that_Ilk,_2nd_Baronet>
+  # Sir Robert Innes of that Ilk, 2nd Baronet, 1611a - 1689-02
+  gen:father <#Sir_Robert_Innes_of_that_Ilk,_1st_Baronet> ;
+  gen:mother <stuart.ttl#Lady_Grizel_Stuart> .
+  # oo Jean Ross
+  []
+    gen:spouse <#Sir_Robert_Innes_of_that_Ilk,_2nd_Baronet> , <#Jean_Ross> .
+<#Elizabeth_Innes_(died_1640)>
+  # Elizabeth Innes, d. 1640
+  gen:father <#Sir_Robert_Innes_of_that_Ilk,_1st_Baronet> ;
+  gen:mother <stuart.ttl#Lady_Grizel_Stuart> .
+  # oo 1635-10-28 Alexander Brodie of Brodie, Lord Brodie, 1617-07-25 - 1680-04-17, https://www.wikidata.org/wiki/Q18526368
+<#Jane_Innes>
+  # Jane Innes, d. 1727-01-10
+  gen:father <#James_Innes> .
+  # oo 1674 Thomas Pitt, 1653-07-05 - 1726-04-18, https://www.wikidata.org/wiki/Q2277355
+
+<#Sir_James_Innes,_3rd_Baronet>
+  # Sir James Innes of that Ilk, 3rd Baronet
+  gen:deathDate "1700~" ;
+  gen:father <#Sir_Robert_Innes_of_that_Ilk,_2nd_Baronet> ;
+  gen:mother <#Jean_Ross> .
+  # oo Margaret Ker
+  []
+    gen:spouse <#Sir_James_Innes,_3rd_Baronet> , <kerr.ttl#Margaret_Ker> ;
+	gen:startDate "1666-07-18" .
+<#Marie_Innes_2>
+  # Marie Innes
+  gen:father <#Sir_Robert_Innes_of_that_Ilk,_2nd_Baronet> ;
+  gen:mother <#Jean_Ross> .
+  # oo 1668 Duncan Forbes, 3rd of Culloden, 1644-03-02 - 1704-06-20, #Duncan_Forbes,_3rd_of_Culloden
+
+<https://www.wikidata.org/wiki/Q26222248>
+  gen:name "Sir Henry Innes of that Ilk, 4th Baronet"@en ;
+  gen:birthDate "1670~" ;
+  gen:deathDate "1721-11-05" ;
+  gen:father <#Sir_James_Innes,_3rd_Baronet> ;
+  gen:mother <kerr.ttl#Margaret_Ker> .
+  # oo Jean Forbes
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q26222248> , <#Jean_Forbes> ;
+	gen:startDate "1694-09" .
+
+<#Sir_Henry_Innes,_5th_Baronet>
+  gen:name "Sir Henry Innes of that Ilk, 5th Baronet"@en ;
+  gen:birthDate "1711~" ;
+  gen:deathDate "1762-10-31" ;
+  gen:father <https://www.wikidata.org/wiki/Q26222248> ;
+  gen:mother <#Jean_Forbes> .
+  # oo Anne Drummonda Grant, 1711 - 1771-02-15
+  []
+    gen:spouse <#Sir_Henry_Innes,_5th_Baronet> , <#Anne_Drummonda_Grant> ;
+	gen:startDate "1727-10-09" .
+
+<https://www.wikidata.org/wiki/Q6136564>
+  gen:name "James Innes-Ker, 5th Duke of Roxburghe"@en ;
+  # Innes-Norcliffe 1769
+  # Innes-Ker 1807
+  # 9th Lord Roxburghe 1805-10-22
+  # 9th Earl of Roxburghe, 9th Lord Ker of Cessford and Caverton, 1805-10-22
+  # 5th Duke of Roxburghe, 5th Marquess of Bowmont and Cessford, 5th Earl of Kelso, 5th Viscount of Broxmouth, 5th Lord Ker of Cessford and Caverton 1805-10-22
+  gen:birthDate "1736-01-10" ;
+  gen:deathDate "1823-07-19" ;
+  gen:father <#Sir_Henry_Innes,_5th_Baronet> ;
+  gen:mother <#Anne_Drummonda_Grant> .
+  # oo Mary Wray, 1730-03-24 - 1807-07-20
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6136564> , <#Mary_Wray> ;
+	gen:startDate "1769-04-19" .
+  # oo Harriet Charlewood, d. 1855-01-19, daughter of Benjamin Charlewood
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6136564> , <#Harriet_Charlewood> ;
+	gen:startDate "1807-07-28" .
+
+<https://www.wikidata.org/wiki/Q6136567>
+  gen:name "James Henry Robert Innes-Ker, 6th Duke of Roxburghe"@en ;
+  gen:birthDate "1816-07-12" ;
+  gen:deathDate "1879-04-23" ;
+  gen:father <https://www.wikidata.org/wiki/Q6136564> ;
+  gen:mother <#Harriet_Charlewood> .
+  # oo Susanna Stephenia Dalbiac, 1814-08-28 - 1895-05-06
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6136567> , <https://www.wikidata.org/wiki/Q3978248> ;
+	gen:startDate "1836-12-29" .
+
+<https://www.wikidata.org/wiki/Q47471765>
+  gen:name "Lady Susan Harriet Innes-Ker"@en ;
+  gen:birthDate "1837-11-13" ;
+  gen:deathDate "1909-10-16" ;
+  gen:father <https://www.wikidata.org/wiki/Q6136567> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3978248> .
+  # oo 1857-08-05 Sir James Grant-Suttie, 6th Baronet, 1830-05-25 - 1878-10-30, dalrymple.ttl#Sir_James_Grant-Suttie,_6th_Baronet
+<https://www.wikidata.org/wiki/Q1680597>
+  gen:name "James Henry Robert Innes-Ker, 7th Duke of Roxburghe"@en ;
+  gen:birthDate "1839-09-05" ;
+  gen:deathDate "1892-10-23" ;
+  gen:father <https://www.wikidata.org/wiki/Q6136567> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3978248> .
+  # oo Lady Anne Emily Spencer-Churchill, 1854-11-14 - 1923-06-20
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1680597> , <https://www.wikidata.org/wiki/Q1252146> ;
+	gen:startDate "1874-06-11" .
+<#Lady_Charlotte_Isabella_Innes-Ker>
+  gen:name "Lady Charlotte Isabella Innes-Ker"@en ;
+  gen:birthDate "1841-08-08" ;
+  gen:deathDate "1881-04-24" ;
+  gen:father <https://www.wikidata.org/wiki/Q6136567> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3978248> .
+  # oo 1862-10-28 George Russell, 1830-09-21 - 1911, russell.ttl#George_Russell
+
+<#Lady_Margaret_Frances_Susan_Innes-Ker>
+  gen:name "Lady Margaret Frances Susan Innes-Ker"@en ;
+  gen:birthDate "1875-05-13" ;
+  gen:deathDate "1930-12-15" ;
+  gen:father <https://www.wikidata.org/wiki/Q1680597> ;
+  gen:mother <https://www.wikidata.org/wiki/Q1252146> .
+  # oo 1898-07-25 James Alexander Orr Ewing, 1857-02-22 - 1900-05-28, #James_Alexander_Orr_Ewing
+<https://www.wikidata.org/wiki/Q7585599>
+  gen:name "Henry John Innes-Ker, 8th Duke of Roxburghe"@en ;
+  gen:birthDate "1876-07-24" ;
+  gen:deathDate "1932-09-29" ;
+  gen:father <https://www.wikidata.org/wiki/Q1680597> ;
+  gen:mother <https://www.wikidata.org/wiki/Q1252146> .
+  # oo Mary Goelet, 1878-10-06 - 1937-04-26
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7585599> , <https://www.wikidata.org/wiki/Q6779647> ;
+	gen:startDate "1903-11-10" .
+<#Lady_Victoria_Alexandrina_Innes-Ker>
+  gen:name "Lady Victoria Alexandrina Innes-Ker"@en ;
+  gen:birthDate "1877" ;
+  gen:deathDate "1970-05-22" ;
+  gen:father <https://www.wikidata.org/wiki/Q1680597> ;
+  gen:mother <https://www.wikidata.org/wiki/Q1252146> .
+  # oo 1901-08-17 Charles Hyde Villiers, 1862-09 – 1947-05-23, villiers.ttl#Charles_Hyde_Villiers
+<#Lady_Isabel_Innes-Ker>
+  gen:name "Lady Isabel Innes-Ker"@en ;
+  gen:birthDate "1879-01-14" ;
+  gen:deathDate "1905-10-12" ;
+  gen:father <https://www.wikidata.org/wiki/Q1680597> ;
+  gen:mother <https://www.wikidata.org/wiki/Q1252146> .
+  # oo 1904-06-23 Guy Greville Wilson, 1877-05-19 – 1943-02-01, https://www.wikidata.org/wiki/Q5622292
+<#Lady_Evelyn_Anne_Innes-Ker>
+  gen:name "Lady Evelyn Anne Innes-Ker"@en ;
+  gen:birthDate "1882-02-07" ;
+  gen:deathDate "1958" ;
+  gen:father <https://www.wikidata.org/wiki/Q1680597> ;
+  gen:mother <https://www.wikidata.org/wiki/Q1252146> .
+  # oo 1907-11-23 William Fellowes Collins, 1865-09-17 – 1948-02-15, stanley.ttl#William_Fellowes_Collins
+<#Lord_Robert_Edward_Innes-Ker>
+  gen:name "Lord Robert Edward Innes-Ker"@en ;
+  gen:birthDate "1885-07-22" ;
+  gen:deathDate "1958-07-19" ;
+  gen:father <https://www.wikidata.org/wiki/Q1680597> ;
+  gen:mother <https://www.wikidata.org/wiki/Q1252146> .
+  # oo Charlotte Josephine Cooney (Jose Collins), 1887-05-23 – 1958-12-06
+  []
+    gen:spouse <#Lord_Robert_Edward_Innes-Ker> , <https://www.wikidata.org/wiki/Q6279317> ;
+	gen:startDate "1920-10-27" ;
+	gen:divorceDate "1935" .
+  # oo Eleanor Marie Woodhead, 1887 – 1958-02-02, daughter of Aubrey Woodhead
+  []
+    gen:spouse <#Lord_Robert_Edward_Innes-Ker> , <#Eleanor_Marie_Woodhead> ;
+	gen:startDate "1939-07-28" .
+
+<https://www.wikidata.org/wiki/Q5540947>
+  gen:name "George Victor Robert John Innes-Ker, 9th Duke of Roxburghe"@en ;
+  gen:birthDate "1913-09-07" ;
+  gen:deathDate "1974-09-26" ;
+  gen:father <https://www.wikidata.org/wiki/Q7585599> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6779647> .
+  # oo Lady Mary Evelyn Hungerford Crewe-Milnes, 1915-03-23 – 2014-07-02
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5540947> , <https://www.wikidata.org/wiki/Q6779830> ;
+	gen:startDate "1935-10-24" ;
+	gen:divorceDate "1953" .
+  # oo Margaret Elisabeth McConnel, 1918-12-23 - 1983-06-02
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5540947> , <https://www.wikidata.org/wiki/Q6759547> ;
+	gen:startDate "1954-01-05" .
+
+<https://www.wikidata.org/wiki/Q335398>
+  gen:name "Guy David Innes-Ker, 10th Duke of Roxburghe"@en ;
+  gen:birthDate "1954-11-18" ;
+  gen:father <https://www.wikidata.org/wiki/Q5540947> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6759547> .
+  # oo Lady Jane Meriel Grosvenor, b. 1953-02-08
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q335398> , <grosvenor.ttl#Lady_Jane_Meriel_Grosvenor> ;
+	gen:startDate "1977-09-10" ;
+	gen:divorceDate "1990" .
+  # oo Virginia Mary Wynn-Williams, b. 1965~, daughter of David Wynn-Williams
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q335398> , <#Virginia_Mary_Wynn-Williams> ;
+	gen:startDate "1992-09-03" .
+<#Lord_Robert_Anthony_Innes-Ker>
+  gen:name "Lord Robert Anthony Innes-Ker"@en ;
+  gen:birthDate "1959-05-28" ;
+  gen:father <https://www.wikidata.org/wiki/Q5540947> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6759547> .
+  # oo Dr. Katherine Christina Mary Jones
+  []
+    gen:spouse <#Lord_Robert_Anthony_Innes-Ker> , <#Katherine_Christina_Mary_Jones> ;
+	gen:startDate "1996" ;
+	gen:divorceDate "2007~" .
+
+<#Lady_Rosanagh_Viola_Alexandra_Innes-Ker>
+  gen:name "Lady Rosanagh Viola Alexandra Innes-Ker"@en ;
+  gen:birthDate "1979-01-16" ;
+  gen:father <https://www.wikidata.org/wiki/Q335398> ;
+  gen:mother <grosvenor.ttl#Lady_Jane_Meriel_Grosvenor> .
+  # oo 2008-06-26 James Walter Grimston, Viscount Grimston, b. 1978-01-06, #James_Walter_Grimston,_Viscount_Grimston
+<https://www.wikidata.org/wiki/Q13582135>
+  gen:name "Charles Robert George Innes-Ker, Marquess of Bowmont and Cessford"@en ;
+  gen:birthDate "1981-02-18" ;
+  gen:father <https://www.wikidata.org/wiki/Q335398> ;
+  gen:mother <grosvenor.ttl#Lady_Jane_Meriel_Grosvenor> .
+  # oo Hon. Charlotte Susanna Aitken, b. 1982-02-15
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q13582135> , <#Charlotte_Susanna_Aitken> ;
+	gen:startDate "2011-07-22" ;
+	gen:divorceDate "2012" .
+<#Lord_Edward_Arthur_Gerald_Innes-Ker>
+  gen:name "Lord Edward Arthur Gerald Innes-Ker"@en ;
+  gen:birthDate "1984-02-02" ;
+  gen:father <https://www.wikidata.org/wiki/Q335398> ;
+  gen:mother <grosvenor.ttl#Lady_Jane_Meriel_Grosvenor> .
+  # oo 2017-07-29 Celia Brook
+<#Lady_Isabella_May_Innes-Ker>
+  gen:name "Lady Isabella May Innes-Ker"@en ;
+  gen:birthDate "1994-09-07" ;
+  gen:father <https://www.wikidata.org/wiki/Q335398> ;
+  gen:mother <#Virginia_Mary_Wynn-Williams>.
+<#Lord_George_Alastair_Innes-Ker>
+  gen:name "Lord George Alastair Innes-Ker"@en ;
+  gen:birthDate "1996-11-20" ;
+  gen:father <https://www.wikidata.org/wiki/Q335398> ;
+  gen:mother <#Virginia_Mary_Wynn-Williams>.
+<#Eliza_Henrietta_Innes-Ker>
+  # Eliza Henrietta Innes-Ker, b. 1997-07-23
+  gen:father <#Lord_Robert_Anthony_Innes-Ker> ;
+  gen:mother <#Katherine_Christina_Mary_Jones> .
+<#James_Mark_Innes-Ker>
+  # James Mark Innes-Ker, b. 1999-09-16
+  gen:father <#Lord_Robert_Anthony_Innes-Ker> ;
+  gen:mother <#Katherine_Christina_Mary_Jones> .
+
+
+# Innes of Invermarkie
+<#Walter_Innes,_1st_of_Invermarkie>
+  # Walter Innes, 1st of Invermarkie, 1451 - 1499-11-03b
+  gen:father <#Sir_Robert_Innes,_11th_of_that_Ilk> .
+  # oo Christine Gordon
+
+<#Robert_Innes,_2nd_of_Invermarkie>
+  # Robert Innes, 2nd of Invermarkie, d. 1551-10~
+  gen:father <#Walter_Innes,_1st_of_Invermarkie> .
+  # and Christine Gordon
+  # oo Lady Elspeth Stewart
+  []
+    gen:spouse <#Robert_Innes,_2nd_of_Invermarkie> , <stuart.ttl#Lady_Elspeth_Stewart> .
+<#Patrick_Innes>
+  # Patrick Innes, d. 1547
+  gen:father <#Walter_Innes,_1st_of_Invermarkie> .
+  # and Christine Gordon
+  # oo Christian Cockburn
+<#Walter_Innes_of_Touch_and_Auchintoul>
+  # Walter Innes of Touch and Auchintoul, 1472 - 1537
+  gen:father <#Walter_Innes,_1st_of_Invermarkie> .
+  # and Christine Gordon
+  # oo unknown daughter Forbes, daughter of William Forbes of Drumallachie, younger
+  # oo Janet Terrall of Inverbreaky
+
+<#Robert_Innes_of_Monycabok>
+  # Robert Innes of Monycabok, d. 1547-11-10b
+  gen:father <#Robert_Innes,_2nd_of_Invermarkie> ;
+  gen:mother <stuart.ttl#Lady_Elspeth_Stewart> .
+  # oo Marioun Ogilvy
+  []
+    gen:spouse <#Robert_Innes_of_Monycabok> , <#Marioun_Ogilvy> .
+<#John_Innes,_1st_of_Edingight> # -> Innes of Edingight
+  # John Innes, 1st of Edingight
+  gen:father <#Robert_Innes,_2nd_of_Invermarkie> ;
+  gen:mother <stuart.ttl#Lady_Elspeth_Stewart> .
+<#Alexander_Innes,_1st_of_Coxton> # -> Innes of Coxton
+  # Alexander Innes, 1st of Coxton, 1532 - 1612-10-05
+  gen:father <#Patrick_Innes> .
+  # and Christian Cockburn
+<#James_Innes_of_Toux>
+  # James Innes of Toux, 1514 - 1588
+  gen:father <#Walter_Innes_of_Touch_and_Auchintoul> .
+  # and unknown daughter Forbes
+  # oo Agnes Urquhart, b. 1516~
+  []
+    gen:spouse <#James_Innes_of_Toux> , <#Agnes_Urquhart> .
+
+<#Robert_Innes,_3rd_of_Invermarkie>
+  # Robert Innes, 3rd of Invermarkie, 1532 - 1584-09
+  gen:father <#Robert_Innes_of_Monycabok> ;
+  gen:mother <#Marioun_Ogilvy> .
+  # oo Margaret Innes
+  []
+    gen:spouse <#Robert_Innes,_3rd_of_Invermarkie> , <#Margaret_Innes> ;
+	gen:startDate "1553-06" ;
+	gen:divorceDate "1574-11-19" .
+<#Janet_Innes>
+  # Janet Innes, b. 1547~
+  gen:father <#James_Innes_of_Toux> ;
+  gen:mother <#Agnes_Urquhart> .
+  # oo Robert Gordon, 4th of Hallhead, gordon.ttl#Robert_Gordon,_4th_of_Hallhead
+
+<#Sir_Robert_Innes,_4th_of_Invermarkie>
+  # Sir Robert Innes, 4th of Invermarkie, d. 1595-07-12
+  gen:father <#Robert_Innes,_3rd_of_Invermarkie> ;
+  gen:mother <#Margaret_Innes> .
+  # oo Jean Barclay, d. 1607~, daughter of Walter Barclay of Towie Barclay
+
+<#Sir_Robert_Innes,_1st_of_Balvenie,_1st_Baronet>
+  # Sir Robert Innes, 5th of Invermarkie and 1st of Balvenie, 1st Baronet, d. 1642-02b
+  # 1st Baronet Innes, of Balvenie 1628-01-15
+  gen:father <#Sir_Robert_Innes,_4th_of_Invermarkie> .
+  # and Jean Barclay
+  # oo Jean Innes, daughter of James Innes of Minnonie
+  # oo 1607b Barbara Burnet, daughter of Alexander Burnet of Leys and Katherine Gordon
+  # oo 1626-02 Margaret Dunbar
+<#James_Innes_(died_1653b)>
+  # James Innes, d. 1653b
+  gen:father <#Sir_Robert_Innes,_4th_of_Invermarkie> .
+  # and Jean Barclay
+  # oo Isobel Grant
+<#William_Innes_(died_1634b)>
+  # William Innes, d. 1634b
+  gen:father <#Sir_Robert_Innes,_4th_of_Invermarkie> .
+  # and Jean Barclay
+  # oo Magdalene Falconer
+
+<#Sir_Walter_Innes_of_Balvenie,_2nd_Baronet>
+  # Sir Walter Innes of Balvenie, 2nd Baronet, d. 1650-12-10b
+  gen:father <#Sir_Robert_Innes,_1st_of_Balvenie,_1st_Baronet> ;
+  gen:mother <#Barbara_Burnet> .
+  # oo Lilias Grant
+  []
+    gen:spouse <#Sir_Walter_Innes_of_Balvenie,_2nd_Baronet> , <#Lilias_Grant> ;
+	gen:startDate "1623-04-28" .
+<#James_Innes_(died_1670)>
+  # James Innes, d. 1670-08-19b
+  gen:father <#James_Innes_(died_1653b)> .
+  # and Isobel Grant
+  # oo Barbara Maxwell
+<#Walter_Innes_of_Ortoun>
+  # Walter Innes of Ortoun, d. 1684
+  gen:father <#William_Innes_(died_1634b)> .
+  # and Magdalene Falconer
+  # oo Margaret Hamilton, daughter of Sir William Hamilton and Elizabeth Johnston
+  []
+    gen:spouse <#Walter_Innes_of_Ortoun> , <#Margaret_Hamilton> ;
+	gen:startDate "1661-11-01" .
+
+<#Sir_Robert_Innes_of_Balvenie,_3rd_Baronet>
+  # Sir Robert Innes of Balvenie, 3rd Baronet, d. 1689-06-08
+  gen:father <#Sir_Walter_Innes_of_Balvenie,_2nd_Baronet> ;
+  gen:mother <#Lilias_Grant> .
+  # oo Janet Gordon
+  []
+    gen:spouse <#Sir_Robert_Innes_of_Balvenie,_3rd_Baronet> , <gordon.ttl#Janet_Gordon_of_Haddo> .
+<#Sir_George_Innes_of_Balvenie,_4th_Baronet>
+  # Rev. Sir George Innes of Balvenie and Denoone, 4th Baronet, d. 1698-02-02
+  gen:father <#James_Innes_(died_1670)> .
+  # and Barbara Maxwell
+<#Sir_James_Innes_of_Balvenie,_5th_Baronet>
+  # Sir James Innes of Balvenie and Ortoun, 5th Baronet, d. 1722
+  gen:father <#Walter_Innes_of_Ortoun> ;
+  gen:mother <#Margaret_Hamilton> .
+  # oo Margaret Fraser, daughter of Thomas Fraser of Cairnbulg
+  []
+    gen:spouse <#Sir_James_Innes_of_Balvenie,_5th_Baronet> , <#Margaret_Fraser> ;
+	gen:startDate "1699-12-02" .
+
+<#Sir_Robert_Innes_of_Balvenie,_6th_Baronet>
+  # Sir Robert Innes of Balvenie, 6th Baronet, 1702 - 1758-08-31
+  gen:father <#Sir_James_Innes_of_Balvenie,_5th_Baronet> ;
+  gen:mother <#Margaret_Fraser> .
+  # oo Margery Winram, d. 1765-09-30, daughter of Colonel unknown Winram
+  []
+    gen:spouse <#Sir_Robert_Innes_of_Balvenie,_6th_Baronet> , <#Margery_Winram> ;
+	gen:startDate "1734" .
+<#Sir_Charles_Innes_of_Balvenie,_7th_Baronet>
+  # Sir Charles Innes of Balvenie, 7th Baronet, 1704-02-21 - 1768-04-08
+  gen:father <#Sir_James_Innes_of_Balvenie,_5th_Baronet> ;
+  gen:mother <#Margaret_Fraser> .
+  # oo Isobel Paton, daughter of Alexander Paton of Kinaldie
+<#Sir_William_Innes_of_Balvenie,_8th_Baronet>
+  # Sir William Innes of Balvenie, 8th Baronet, 1717~ - 1817-03-13
+  gen:father <#Sir_James_Innes_of_Balvenie,_5th_Baronet> ;
+  gen:mother <#Margaret_Fraser> .
+  # oo Sarah Hodges, d. 1770-05-15, daughter of Thomas Hodges
+  # oo Mary Maria Parsons, d. 1819, daughter of Major unknown Parsons, 1774-03-22
+
+<#Catherine_Innes>
+  # Catherine Innes, d. 1805-04-16
+  gen:father <#Sir_Robert_Innes_of_Balvenie,_6th_Baronet> ;
+  gen:mother <#Margery_Winram> .
+  # oo 1760-01 James Forbes, 16th Lord Forbes, 1725~ - 1804-07-29, https://www.wikidata.org/wiki/Q16212261
+
+
+# Innes of Edingight
+<#John_Innes,_1st_of_Edingight>
+  # John Innes, 1st of Edingight
+  gen:father <#Robert_Innes,_2nd_of_Invermarkie> ;
+  gen:mother <stuart.ttl#Lady_Elspeth_Stewart> .
+  # oo Marjorie Leslie, daughter of Alexander Leslie, 3rd of Wardis
+  []
+    gen:spouse <#John_Innes,_1st_of_Edingight> , <#Marjorie_Leslie> ;
+	gen:startDate "1545" .
+
+<#Thomas_Innes,_2nd_of_Edingight>
+  # Thomas Innes, 2nd of Edingight
+  gen:father <#John_Innes,_1st_of_Edingight> ;
+  gen:mother <#Marjorie_Leslie> .
+  # oo Janet Seton, daughter of John Seton of Auchenhuiff
+  # oo Janet Abercromby
+  # oo Isobel Ogilvie
+
+<#Thomas_Innes,_3rd_of_Edingight>
+  # Thomas Innes, 3rd of Edingight, d. 1618b
+  gen:father <#Thomas_Innes,_2nd_of_Edingight> .
+  # and Janet Seton
+  # oo Jean Innes
+  []
+    gen:spouse <#Thomas_Innes,_3rd_of_Edingight> , <#Jean_Innes> ;
+	gen:startDate "1611~" .
+
+<#John_Innes,_4th_of_Edingight>
+  # John Innes, 4th of Edingight, d. 1674-04
+  gen:father <#Thomas_Innes,_3rd_of_Edingight> ;
+  gen:mother <#Jean_Innes> .
+  # oo 1637-06 Christian Bruce, daughter of Sir John Bruce of Airth
+
+<#John_Innes,_5th_of_Edingight>
+  # John Innes, 5th of Edingight
+  gen:father <#John_Innes,_4th_of_Edingight> .
+  # and Christian Bruce
+  # oo Elizabeth Gordon, daughter of John Gordon of Ardlogie
+  # oo 1663-11 Isobel Hamilton, daughter of John Hamilton of Corse of Kinnoir
+
+<#John_Innes,_6th_of_Edingight>
+  # John Innes, 6th of Edingight, 1662-10 - 1719-06
+  gen:father <#John_Innes,_5th_of_Edingight> ;
+  gen:mother <#Elizabeth_Gordon> .
+  # oo 1691-08-07 Helen Strachan, daughter of Sir Michael Strachan of Auchnagatt
+<#Anne_Innes>
+  # Anne Innes, d. 1700
+  gen:father <#John_Innes,_5th_of_Edingight> ;
+  gen:mother <#Isobel_Hamilton> .
+  # oo 1687 Patrick Duff of Craigston, 1655 - 1731-08-03, duff.ttl#Patrick_Duff,_of_Craigston
+
+<#John_Innes,_7th_of_Edingight>
+  # John Innes, 7th of Edingight, 1692-10 - 1748
+  gen:father <#John_Innes,_6th_of_Edingight> .
+  # and Helen Strachan
+  # oo Jean Duff, 1696 - 1776-05-23
+  []
+    gen:spouse <#John_Innes,_7th_of_Edingight> , <duff.ttl#Jean_Duff_(died_1776)> ;
+	gen:startDate "1720-03-30" .
+
+<#John_Innes,_8th_of_Edingight>
+  # John Innes, 8th of Edingight, 1720/1721-02-21 1790-06-07
+  gen:father <#John_Innes,_7th_of_Edingight> ;
+  gen:mother <duff.ttl#Jean_Duff_(died_1776)> .
+  # oo Elizabeth Grant, d. 1803-03-22, daughter of Lewis Grant of Auchterblair and Carron
+  []
+    gen:spouse <#John_Innes,_8th_of_Edingight> , <#Elizabeth_Grant> ;
+	gen:startDate "1753-08-09" .
+<#Alexander_Innes_(died_1788)>
+  # Alexander Innes, 1727-07-12 - 1788-06-30
+  gen:father <#John_Innes,_7th_of_Edingight> ;
+  gen:mother <duff.ttl#Jean_Duff_(died_1776)> .
+  # oo Elizabeth Davidson, d. 1795-07-08, daughter of William Davidson
+  []
+    gen:spouse <#Alexander_Innes_(died_1788)> , <#Elizabeth_Davidson> ;
+	gen:startDate "1767-02-09" .
+
+<#Sir_John_Innes_of_Balvenie,_9th_Baronet>
+  # Sir John Innes of Balvenie and Edingight, 9th Baronet, 1757-06-23 - 1829-03-23
+  # 9th Baronet Innes, of Balvenie 1817-03-13
+  gen:father <#John_Innes,_8th_of_Edingight> ;
+  gen:mother <#Elizabeth_Grant> .
+  # oo Barbara Forbes, 1770 - 1844, daughter of George Forbes, 4th of Boyndlie and Christian Ker
+  []
+    gen:spouse <#Sir_John_Innes_of_Balvenie,_9th_Baronet> , <#Barbara_Forbes> ;
+	gen:startDate "1796-08-06" .
+<#William_Innes_(died_1863)>
+  # William Innes, 1781-03-29 - 1863-09-09
+  gen:father <#Alexander_Innes_(died_1788)> ;
+  gen:mother <#Elizabeth_Davidson> .
+  # oo Jane Brebner, 4th of Learney, d. 1872-06-19, daughter of Alexander Brebner of Learney
+  []
+    gen:spouse <#William_Innes_(died_1863)> , <#Jane_Brebner,_4th_of_Learney> ;
+	gen:startDate "1809-10-19" .
+
+<#Sir_John_Innes_of_Balvenie,_10th_Baronet>
+  # Sir John Innes of Balvenie and Edingight, 10th Baronet, 1801 - 1838-12-03
+  gen:father <#Sir_John_Innes_of_Balvenie,_9th_Baronet> ;
+  gen:mother <#Barbara_Forbes> .
+<#Sir_James_Milne_Innes_of_Balvenie,_11th_Baronet>
+  # Sir James Milne Innes of Balvenie and Edingight, 11th Baronet, 1808-02-24 - 1878-05-11
+  gen:father <#Sir_John_Innes_of_Balvenie,_9th_Baronet> ;
+  gen:mother <#Barbara_Forbes> .
+  # oo Elizabeth Thurburn, d. 1899-04-29, daughter of Alexander Thurburn of Keith
+  []
+    gen:spouse <#Sir_James_Milne_Innes_of_Balvenie,_11th_Baronet> , <#Elizabeth_Thurburn> ;
+	gen:startDate "1837-04-04" .
+<#Alexander_Innes_(died_1883)>
+  # Alexander Innes, 1812-03-29 - 1883-10-29
+  gen:father <#William_Innes_(died_1863)> ;
+  gen:mother <#Jane_Brebner,_4th_of_Learney> .
+  # oo Ann Katherine Leith, d. 1908-01-09
+  []
+    gen:spouse <#Alexander_Innes_(died_1883)> , <#Ann_Katherine_Leith> ;
+	gen:startDate "1842-04-05" .
+
+<#Sir_John_Innes_of_Balvenie,_12th_Baronet>
+  # Sir John Innes of Balvenie and Edingight, 12th Baronet, 1840-11-25 - 1912-05-02
+  gen:father <#Sir_James_Milne_Innes_of_Balvenie,_11th_Baronet> ;
+  gen:mother <#Elizabeth_Thurburn> .
+<#Sir_James_Innes_of_Balvenie,_13th_Baronet>
+  # Sir James Innes of Balvenie and Edingight, 13th Baronet, 1846-01-20 - 1919-01-07
+  gen:father <#Sir_James_Milne_Innes_of_Balvenie,_11th_Baronet> ;
+  gen:mother <#Elizabeth_Thurburn> .
+<#Thomas_Innes_(died_1911)>
+  # Thomas Innes, 1852-02-22 - 1911-04-23
+  gen:father <#Sir_James_Milne_Innes_of_Balvenie,_11th_Baronet> ;
+  gen:mother <#Elizabeth_Thurburn> .
+  # oo Virginia Bourchier, d. 1934-02-12, daughter of Colonel Hugh Plunket Bourchier
+  []
+    gen:spouse <#Thomas_Innes_(died_1911)> , <#Virginia_Bourchier> ;
+	gen:startDate "1880" .
+<#Hector_Innes>
+  # Hector Innes, 1860-10-27 - 1904-12-30
+  gen:father <#Sir_James_Milne_Innes_of_Balvenie,_11th_Baronet> ;
+  gen:mother <#Elizabeth_Thurburn> .
+  # oo Annie Jane Fraser, daughter of William Fraser
+  []
+    gen:spouse <#Hector_Innes> , <#Annie_Jane_Fraser> ;
+	gen:startDate "1895-11-20" .
+<#Alexander_Innes_(died_1882)>
+  # Alexander Innes, 1846-04-25 - 1882-11-12
+  gen:father <#Alexander_Innes_(died_1883)> ;
+  gen:mother <#Ann_Katherine_Leith> .
+  # oo Helen Eythan King, d. 1875-02-16, daughter of Rev. Samuel William King
+  []
+    gen:spouse <#Alexander_Innes_(died_1882)> , <#Helen_Eythan_King> ;
+	gen:startDate "1871-08-31" .
+  # oo Sylvia Christina Armitage Garrett, 1853-03-12 - 1887-12-16, daughter of Rev. James Perkins Garrett and Caroline Anne Elisabeth Moore
+  []
+    gen:spouse <#Alexander_Innes_(died_1882)> , <#Sylvia_Christina_Armitage_Garrett> ;
+	gen:startDate "1878-06-26" .
+
+<#Sir_James_Bourchier_Innes_of_Balvenie,_14th_Baronet>
+  # Sir James Bourchier Innes of Balvenie and Edingight, 14th Baronet, 1883-10-27 - 1950-12-20
+  # 14th Baronet Innes, of Balvenie 1919-01-07
+  gen:father <#Thomas_Innes_(died_1911)> ;
+  gen:mother <#Virginia_Bourchier> .
+<#Sir_Walter_James_Innes_of_Balvenie,_15th_Baronet>
+  # Sir Walter James Innes of Balvenie and Edingight, 15th Baronet, 1903-08-08 - 1978-09-02
+  # 15th Baronet Innes, of Balvenie 1950-12-20
+  gen:father <#Hector_Innes> ;
+  gen:mother <#Annie_Jane_Fraser> .
+<#James_William_Guy_Innes>
+  # James William Guy Innes, 1873-09-11 - 1939-10-01
+  gen:father <#Alexander_Innes_(died_1882)> ;
+  gen:mother <#Helen_Eythan_King> .
+  # oo Anna Orrok Stronach Sheila Foster Forbes, d. 1949-03-12, daughter of John Foster Forbes of Rothiemay and Mary Livesey
+  []
+    gen:spouse <#James_William_Guy_Innes> , <gordon.ttl#Anna_Orrok_Stronach_Sheila_Foster_Forbes> ;
+	gen:startDate "1906-08-28" .
+
+<#Sir_Ronald_Innes_of_Balvenie,_16th_Baronet>
+  # Sir Ronald Gordon Berowald Innes of Balvenie, 16th Baronet, 1907-07-24 - 1988-05-26
+  gen:father <#James_William_Guy_Innes> ;
+  gen:mother <gordon.ttl#Anna_Orrok_Stronach_Sheila_Foster_Forbes> .
+  # oo Elizabeth Haughton Fayle, d. 1958-02-03, daughter of Alfred Fayle
+  []
+    gen:spouse <#Sir_Ronald_Innes_of_Balvenie,_16th_Baronet> , <#Elizabeth_Haughton_Fayle> ;
+	gen:startDate "1933-10-17" .
+  # oo Elizabeth Christian Watson, 1924~ - 2006-09-24, daughter of Charles Henry Watson and Ethel Marguerite Piper
+  []
+    gen:spouse <#Sir_Ronald_Innes_of_Balvenie,_16th_Baronet> , <#Elizabeth_Christian_Watson> ;
+	gen:startDate "1961-05-27" .
+
+<#Sir_Peter_Innes_of_Balvenie,_17th_Baronet>
+  # Sir Peter Alexander Berowald Innes of Balvenie, 17th Baronet, b. 1937-01-06
+  gen:father <#Sir_Ronald_Innes_of_Balvenie,_16th_Baronet> ;
+  gen:mother <#Elizabeth_Haughton_Fayle> .
+  # oo Julia Mary Levesley, daughter of Alfred Stoyell Levesley
+  []
+    gen:spouse <#Sir_Peter_Innes_of_Balvenie,_17th_Baronet> , <#Julia_Mary_Levesley> ;
+	gen:startDate "1959-07-18" .
+
+
+# Innes of Coxton
+<#Alexander_Innes,_1st_of_Coxton>
+  # Alexander Innes, 1st of Coxton, 1532 - 1612-10-05
+  gen:father <#Patrick_Innes> .
+  # and Christian Cockburn
+  # oo Janet Reid
+  # oo Catherine Gordon, daughter of George Gordon, 2nd of Cairnborrow and Katharine Gordon
+
+<#John_Innes,_2nd_of_Coxton>
+  # John Innes, 2nd of Coxton, 1565~ - 1634
+  gen:father <#Alexander_Innes,_1st_of_Coxton> .
+  # and Janet Reid
+  # oo Margaret Kinnaird, daughter of Walter Kinnaird of Culbin
+  []
+    gen:spouse <#John_Innes,_2nd_of_Coxton> , <#Margaret_Kinnaird> ;
+	gen:startDate "1586-12-15" .
+  # oo Margaret Gordon
+
+<#James_Innes_of_Coxton,_younger>
+  # James Innes of Coxton, younger, d. 1621~
+  gen:father <#John_Innes,_2nd_of_Coxton> ;
+  gen:mother <#Margaret_Kinnaird> .
+  # oo Marjory Innes, daughter of Alexander Innes of Cotts and Leuchars, 1612-02
+<#Jean_Innes>
+  # Jean Innes
+  gen:father <#John_Innes,_2nd_of_Coxton> ;
+  gen:mother <#Margaret_Kinnaird> .
+  # oo 1611~ Thomas Innes, 3rd of Edingight, d. 1618b, #Thomas_Innes,_3rd_of_Edingight
+  # oo 1624-08-07b Robert Innes
+<#John_Innes_of_Coxton_1>
+  # John Innes
+  gen:father <#John_Innes,_2nd_of_Coxton> ;
+  gen:mother <#Margaret_Kinnaird> .
+  # oo unknown Innes, daughter of Walter Innes, 4th of Inverbreakie, 1633
+
+<#John_Innes_of_Coxton_2>
+  # John Innes
+  gen:father <#James_Innes_of_Coxton,_younger> .
+  # and Marjory Innes
+  # oo Helen Gordon, daughter of Sir Adam Gordon, 1st of Park and Helen Tyrie
+<#James_Innes_(died_1723)>
+  # James Innes, 1635 - 1723-01-21
+  gen:father <#John_Innes_of_Coxton_1> .
+  # and unknown Innes
+  # oo Elizabeth Gordon, daughter of George Gordon of Tewchiens, 1671~
+
+<#Sir_Alexander_Innes_of_Coxton,_1st_Baronet>
+  # Sir Alexander Innes of Coxton, 1st Baronet, d. 1709-01-28
+  # 1st Baronet Innes, of Coxton, co. Moray 1685/1686-03-20
+  gen:father <#John_Innes_of_Coxton_2> .
+  # and Helen Gordon
+  # oo Jean Rollo, daughter of Hon. Sir John Rollo of Bannockburn, 1678~
+  # oo Jean Neldrum, daughter of Patrick Neldrum of Laithers
+<#John_Innes_(died_1706)>
+  # John Innes, d. 1706
+  gen:father <#John_Innes_of_Coxton_2> .
+  # and Helen Gordon
+<#John_Innes_(died_1762)>
+  # John Innes, 1676 - 1762-04
+  gen:father <#James_Innes_(died_1723)> .
+  # and Elizabeth Gordon
+  # oo Mary Mendham, d. 1755-03-18
+  []
+    gen:spouse <#John_Innes_(died_1762)> , <#Mary_Mendham> ;
+	gen:startDate "1713-05-12" .
+
+<#Sir_George_Innes_of_Coxton,_2nd_Baronet>
+  # Sir George Innes of Coxton, 2nd Baronet, d. 1715-12~
+  gen:father <#Sir_Alexander_Innes_of_Coxton,_1st_Baronet> .
+  # and Jean Rollo
+  # oo Jean Gordon, daughter of John Gordon of Rothiemay and Elizabeth Barclay, Lady of Towie (d. 1702-03-31b, daughter of Patrick Barclay of Towie and Anne Douglas), 1706-01-10
+<#Alexander_Innes_(died_1767~)>
+  # Alexander Innes, d. 1767~
+  gen:father <#John_Innes_(died_1706)> .
+  # oo Isobel Anderson
+<#Berowald_Innes_of_Inchstellie>
+  # Rev. Berowald Innes of Inchstellie, 1644~ - 1722-03-27
+  gen:father <#Sir_Alexander_Innes_of_Coxton,_1st_Baronet> .
+  # oo Jean Falconer, daughter of https://www.wikidata.org/wiki/Q5145078
+  []
+    gen:spouse <#Berowald_Innes_of_Inchstellie> , <#Jean_Falconer> ;
+	gen:startDate "1678-08-15" .
+<#Edward_Innes_(died_1788)>
+  # Rev. Edward Innes, 1719-10-03 - 1788-11-18
+  gen:father <#John_Innes_(died_1762)> ;
+  gen:mother <#Mary_Mendham> .
+  # oo Elizabeth Moore, d. 1809-05-29, daughter of George Moore
+  []
+    gen:spouse <#Edward_Innes> , <#Elizabeth_Moore> ;
+	gen:startDate "1755-12-18" .
+
+<#Sir_Alexander_Barclay-Innes_of_Coxton,_3rd_Baronet>
+  # Sir Alexander Barclay-Innes of Coxton and Towie-Barclay, 3rd Baronet, d. 1735/1736
+  gen:father <#Sir_George_Innes_of_Coxton,_2nd_Baronet> .
+  # and Jean Gordon
+  # oo Helen Duff, daughter of James Duff of Cranvie
+  # oo Jean Ogilvy, daughter of Patrick Ogilvy of Balpur
+<#Sir_James_Innes_of_Coxton,_4th_Baronet>
+  # Sir James Innes of Coxton, 4th Baronet, d. 1790-06-03
+  gen:father <#Sir_George_Innes_of_Coxton,_2nd_Baronet> .
+  # and Jean Gordon
+  # oo Margaret Brodie, d. 1756-10-17, daughter of James Brodie of Muiresk
+<#George_Innes_of_Parkside>
+  # George Innes of Parkside, d. 1790-05-20
+  gen:father <#Alexander_Innes_(died_1767~)> .
+  # and Isobel Anderson
+  # oo Elizabeth Innes, d. 1823-01-04
+  []
+    gen:spouse <#George_Innes_of_Parkside> , <#Elizabeth_Innes_(died_1823)> .
+<#James_Innes_(born_1683)>
+  # James Innes, b. 1683-01-30
+  gen:father <#Berowald_Innes_of_Inchstellie> ;
+  gen:mother <#Jean_Falconer> .
+  # oo Katharine Falconer, daughter of Hugh Falconer
+<#Charles_Innes>
+  # Charles Innes, 1763-07-12 - 1824-11-10
+  gen:father <#Edward_Innes_(died_1788)> ;
+  gen:mother <#Elizabeth_Moore> .
+  # oo Anne Neate, d- 1796-09-19, daughter of Thomas Neate
+  []
+    gen:spouse <#Charles_Innes> , <#Anne_Neate> ;
+	gen:startDate "1792b" .
+  # oo Mary Stodart, d. 1845-04-05, daughter of Captain Henry Stodart
+  []
+    gen:spouse <#Charles_Innes> , <#Mary_Stodart> ;
+	gen:startDate "1798-06-12" .
+
+<#Sir_David_Innes_of_Coxton,_5th_Baronet>
+  # Sir David Innes of Coxton, 5th Baronet, d. 1803-10-09~
+  gen:father <#Sir_James_Innes_of_Coxton,_4th_Baronet> .
+  # and Margaret Brodie
+<#Elizabeth_Innes_(died_1823)>
+  # Elizabeth Innes, d. 1823-01-04
+  gen:father <#Sir_James_Innes_of_Coxton,_4th_Baronet> .
+  # and Margaret Brodie
+  # oo George Innes of Parkside, d. 1790-05-20, #George_Innes_of_Parkside
+<#Sir_Alexander_Innes_of_Coxton,_6th_Baronet>
+  # Sir Alexander Innes of Coxton, 6th Baronet, d. 1811-09-07
+  # 6th Baronet Innes, of Coxton, co. Moray 1803-10-09
+  gen:father <#George_Innes_of_Parkside> ;
+  gen:mother <#Elizabeth_Innes_(died_1823)> .
+<#Sir_David_Innes_of_Coxton,_7th_Baronet>
+  # Sir David Innes of Coxton, 7th Baronet, 1781 - 1866-08-11
+  gen:father <#George_Innes_of_Parkside> ;
+  gen:mother <#Elizabeth_Innes_(died_1823)> .
+  # oo Mary Anne Williamson, d. 1884-07-07, daughter of John Williamson of Stewarton
+  []
+    gen:spouse <#Sir_David_Innes_of_Coxton,_7th_Baronet> , <#Mary_Anne_Williamson> ;
+	gen:startDate "1833" .
+<#Hugh_Innes>
+  # Rev. Hugh Innes of Calton, 1727-07-30 - 1765
+  gen:father <#James_Innes_(born_1683)> .
+  # and Katharine Falconer
+  # oo Jean Graham, d. 1774, daughter of Thomas Graham of Bogton of Rednock
+<#Edward_Innes_(born_1792)>
+  # Edward Innes, b. 1792-08-17
+  gen:father <#Charles_Innes> ;
+  gen:mother <#Anne_Neate> .
+  # oo Jane Josepha Lightfoot, d. 1832-03-09, daughter of Samuel Lightfoot
+  []
+    gen:spouse <#Edward_Innes_(born_1792)> , <#Jane_Josepha_Lightfoot> ;
+	gen:startDate "1818-06-11" .
+  # oo Emma Webb, daughter of James Webb
+  []
+    gen:spouse <#Edward_Innes_(born_1792)> , <#Emma_Webb> ;
+	gen:startDate "1841-04-20" .
+
+<#Sir_George_Innes_of_Coxton,_8th_Baronet>
+  # Sir George Innes of Coxton, 8th Baronet, 1834 - 1886-08-25
+  gen:father <#Sir_David_Innes_of_Coxton,_7th_Baronet> ;
+  gen:mother <#Mary_Anne_Williamson> .
+  # oo Judith Stirling, d. 1864, daughter of William Colquhoun Stirling of Edinbarnet
+  []
+    gen:spouse <#Sir_George_Innes_of_Coxton,_8th_Baronet> , <#Judith_Stirling> ;
+	gen:startDate "1855-01-20" .
+  # oo Elsie Watts, daughter of H. Watts
+  []
+    gen:spouse <#Sir_George_Innes_of_Coxton,_8th_Baronet> , <#Elsie_Watts> ;
+	gen:startDate "1865" .
+<https://www.wikidata.org/wiki/Q17279361>
+  # Sir Hugh Innes, 1st Baronet, 1764~ – 1831-08-16/-09-14
+  # 1st Baronet Innes, of Lochalsh, Balmacara, Ross-shire and of Coxton, Morayshire 1818-10-29
+  # 1st Baronet, of Lochalsh and Coxton in the County of Moray 1819-04-28
+  gen:father <#Hugh_Innes> .
+  # and Jean Graham
+<#Charles_Innes_(died_1907)>
+  # Charles Innes, 1825-04-20 - 1907-07-15
+  # 9th Baronet Innes, of Coxton, co. Moray, de jure 1886-08-25
+  gen:father <#Edward_Innes_(born_1792)> ;
+  gen:mother <#Jane_Josepha_Lightfoot> .
+  # oo Adelaide Jane Deverell, d. 1914-07-14, daughter of Colonel T. J. Deverell
+  []
+    gen:spouse <#Charles_Innes_(died_1907)> , <#Adelaide_Jane_Deverell> ;
+	gen:startDate "1864-07-20" .
+
+<#Charles_Gordon_Deverell_Innes>
+  # Charles Gordon Deverell Innes, 1870-05-01 - 1953-10-22
+  # 10th Baronet Innes, of Coxton, co. Moray, de jure 1907-07-15
+  gen:father <#Charles_Innes_(died_1907)> , <#Adelaide_Jane_Deverell> .
+  # oo Ethel Hilda Earle, daughter of George Earle
+  []
+    gen:spouse <#Charles_Gordon_Deverell_Innes> , <#Ethel_Hilda_Earle> ;
+	gen:startDate "1901-06-25" .
+
+<#Sir_Charles_Innes,_11th_Baronet>
+  # Sir Charles Kenneth Gordon Innes, 11th Baronet, 1910-01-28 - 1990-12-27
+  # 11th Baronet Innes, of Coxton, co. Moray 1953-10-22
+  gen:father <#Charles_Gordon_Deverell_Innes> ;
+  gen:mother <#Ethel_Hilda_Earle> .
+  # oo Margaret Colquhoun Lockhart Robertson, d. 1992, daughter of Frederick Charles Lockhart Robertson and Constance Janet Sinclair Flora Abercromby Colquhoun
+  []
+    gen:spouse <#Sir_Charles_Innes,_11th_Baronet> , <#Margaret_Colquhoun_Lockhart_Robertson> ;
+	gen:startDate "1936-04-14" .
+
+<#Sir_David_Innes_of_Coxton,_12th_Baronet>
+  # Sir David Charles Kenneth Gordon Innes of Coxton, 12th Baronet, 1940-04-17 - 2010-08-21
+  gen:father <#Sir_Charles_Innes,_11th_Baronet> ;
+  gen:mother <#Margaret_Colquhoun_Lockhart_Robertson> .
+  # oo Marjorie Alison Parker, daughter of Ernest Walter Parker
+  []
+    gen:spouse <#Sir_David_Innes_of_Coxton,_12th_Baronet> , <#Marjorie_Alison_Parker> ;
+	gen:startDate "1969-05-17" .
+
+<#Sir_Alastair_Innes_of_Coxton,_13th_Baronet>
+  # Sir Alastair Charles Deverell Innes of Coxton, 13th Baronet, b. 1970-09-17
+  gen:father <#Sir_David_Innes_of_Coxton,_12th_Baronet> ;
+  gen:mother <#Marjorie_Alison_Parker> .
+  # oo Sarah Jones, daughter of Robin Jones
+  []
+    gen:spouse <#Sir_Alastair_Innes_of_Coxton,_13th_Baronet> , <#Sarah_Jones> .
+
+
+
+#<https://www.wikidata.org/wiki/Q23970511>
+  # James Alexander Seymour Innes, b. 1975-09-01
+
+
+# ----
+<#Lady_Barbara_Sinclair>
+  # Lady Barbara Sinclair, d. 1576-07
+  gen:father <https://www.wikidata.org/wiki/Q18527593> .
+  # and Lady Elizabeth Graham
+  # oo 1574-05 Alexander Innes, 16th of that Ilk, 1553-04~ - 1578-01-01, #Alexander_Innes,_16th_of_that_Ilk
+
+# ----
+#<stuart.ttl#Lady_Grizel_Stuart>
+  # Lady Grizel Stuart
+  # daughter of James Stuart, 2nd Lord Doune (d. 1591/1592-02-07)
+  # and oo 1580/1581-01-23 Elizabeth Stewart, Countess of Moray (d. 1591-11-18, https://www.wikidata.org/wiki/Q5363584)
+  # oo 1611-12-18 Rt. Hon. Sir Robert Innes of that Ilk, 1st Baronet, 1583/1584 - 1658-11-17, #Sir_Robert_Innes_of_that_Ilk,_1st_Baronet
+
+# ----
+<#Jean_Ross>
+  # Jean Ross
+  gen:father <https://www.wikidata.org/wiki/Q16203881> ;
+  gen:mother <scott.ttl#Margaret_Scott> .
+  # oo Sir Robert Innes of that Ilk, 2nd Baronet, 1611a - 1689-02, #Sir_Robert_Innes_of_that_Ilk,_2nd_Baronet
+
+# ----
+#<https://www.wikidata.org/wiki/Q18526368>
+  # Alexander Brodie of Brodie, Lord Brodie, 1617-07-25 - 1680-04-17
+  # oo Elizabeth Innes, d. 1640
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q18526368> , <#Elizabeth_Innes_(died_1640)> ;
+	gen:startDate "1635-10-28" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q2277355>
+  # Thomas Pitt, 1653-07-05 - 1726-04-18
+  # oo Jane Innes, d. 1727-01-10
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2277355> , <#Jane_Innes> ;
+	gen:startDate "1674" .
+
+<#Essex_Pitt>
+  # Essex Pitt
+  gen:father <https://www.wikidata.org/wiki/Q2277355> ;
+  gen:mother <#Jane_Innes> .
+  # oo 1714 Charles Cholmondeley, of Vale Royal, 1684 - 1759
+
+# ----
+#<#Duncan_Forbes,_3rd_of_Culloden>
+  # Duncan Forbes, 3rd of Culloden, 1644-03-02 - 1704-06-20
+  # son of John Forbes, 2nd of Culloden
+  # and Anne Dunbar
+  # oo Marie Innes
+  []
+    gen:spouse <#Duncan_Forbes,_3rd_of_Culloden> , <#Marie_Innes_2> ;
+	gen:startDate "1668" .
+
+<#Jean_Forbes>
+  # Jean Forbes
+  gen:father <#Duncan_Forbes,_3rd_of_Culloden> ;
+  gen:mother <#Marie_Innes_2> .
+  # oo 1694-09 Sir Henry Innes of that Ilk, 4th Baronet, 1670~ - 1721-11-05, https://www.wikidata.org/wiki/Q26222248
+
+# --------
+<#Anne_Drummonda_Grant>
+  gen:name "Anne Drummonda Grant"@en ;
+  gen:birthDate "1711" ;
+  gen:deathDate "1771-02-15" ;
+  gen:father <https://www.wikidata.org/wiki/Q28962171> .
+  # and Anne Colquhoun
+  # oo 1727-10-09 Sir Henry Innes of that Ilk, 5th Baronet, 1711~ - 1762-10-31, #Sir_Henry_Innes,_5th_Baronet
+
+# ----
+#<#Mary_Wray>
+  # Mary Wray, 1730-03-24 - 1807-07-20
+  # daughter of Sir John Wray, 12th Baronet, 1689-10-24 – 1752-01-26
+  # and oo 1728-03-04 Frances Norcliffe,d. 1770, daughter of Fairfax Norcliffe
+  # oo 1769-04-19 James Innes-Ker, 5th Duke of Roxburghe, 1736-01-10 - 1823-07-19, https://www.wikidata.org/wiki/Q6136564
+
+# --------
+<https://www.wikidata.org/wiki/Q3978248>
+  gen:name "Susanna Stephenia Dalbiac"@en ;
+  gen:birthDate "1814-08-28" ;
+  gen:deathDate "1895-05-06" ;
+  gen:father <https://www.wikidata.org/wiki/Q16741816> ; # Sir James Charles Dalbiac, 1776 – 1847-12-08
+  gen:mother <https://www.wikidata.org/wiki/Q47541945> . # Susanna Isabella Dalton, d. 1829-01-25
+  # oo 1836-12-29 James Henry Robert Innes-Ker, 6th Duke of Roxburghe, 1816-07-12 - 1879-04-23, https://www.wikidata.org/wiki/Q6136567
+
+# ----
+<#James_Alexander_Orr_Ewing>
+  # James Alexander Orr Ewing, 1857-02-22 - 1900-05-28
+  gen:father <https://www.wikidata.org/wiki/Q7526041> .
+  # and Elizabeth Lindsay Reid
+  # oo Lady Margaret Frances Susan Innes-Ker, 1875-05-13 - 1930-12-15
+  []
+    gen:spouse <#James_Alexander_Orr_Ewing> , <#Lady_Margaret_Frances_Susan_Innes-Ker> ;
+	gen:startDate "1898-07-25" .
+
+# --------
+<https://www.wikidata.org/wiki/Q27926012>
+  gen:name "Ogden Goelet"@en ;
+  gen:birthDate "1851-06-11" ;
+  gen:deathDate "1897-08-27" .
+  # oo Mary Wilson, 1855 – 1929
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q27926012> , <#Mary_Wilson> .
+
+<https://www.wikidata.org/wiki/Q6779647>
+  gen:name "Mary Goelet"@en ;
+  gen:birthDate "1878-10-06" ;
+  gen:deathDate "1937-04-26" ;
+  gen:father <https://www.wikidata.org/wiki/Q27926012> ;
+  gen:mother <#Mary_Wilson> .
+  # oo 1903-11-10 Henry John Innes-Ker, 8th Duke of Roxburghe, 1876-07-24 - 1932-09-29, https://www.wikidata.org/wiki/Q7585599
+
+# ----
+# villiers.ttl:
+<https://www.wikidata.org/wiki/Q5545500>
+  # Hon. George Villiers, 1759-11-23 - 1827-03-21
+  gen:father <https://www.wikidata.org/wiki/Q744389> .
+  # and Lady Charlotte Capell
+  # oo Hon. Theresa Parker, 1775-09-29 - 1856-01-12
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5545500> , <https://www.wikidata.org/wiki/Q56611689> ;
+	gen:startDate "1798-04-17" .
+
+<https://www.wikidata.org/wiki/Q15990334>
+  # Thomas Hyde Villiers, 1801-01-24 - 1832-12-03
+  gen:father <https://www.wikidata.org/wiki/Q5545500> ;
+  gen:mother <https://www.wikidata.org/wiki/Q56611689> .
+  # oo Charlotte Harte
+<https://www.wikidata.org/wiki/Q14945469>
+  # Rt. Rev. Hon. Henry Montagu Villiers, 1813-01-04 - 1861-08-09
+  # Bishop of Durham
+  gen:father <https://www.wikidata.org/wiki/Q5545500> ;
+  gen:mother <https://www.wikidata.org/wiki/Q56611689> .
+  # oo Amelia Maria Hulton, 1815 - 1871-02-05, daughter of William Hulton and Maria Ford
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q14945469> , <#Amelia_Maria_Hulton> ;
+	gen:startDate "1837-01-30" .
+
+<#Charles_Villiers>
+  # Rev. Charles Villiers, 1830 - 1893-10-15
+  gen:father <https://www.wikidata.org/wiki/Q15990334> .
+  # and Charlotte Harte
+  # oo Florence Mary Tyssen-Amherst, d. 1927-10-07
+  []
+    gen:spouse <#Charles_Villiers> , <cecil.ttl#Florence_Mary_Tyssen-Amherst> ;
+	gen:startDate "1860-10-19" .
+<villiers.ttl#Henry_Montagu_Villiers>
+  # Rev. Henry Montagu Villiers, 1837-11-13 - 1908-09-09
+  gen:father <https://www.wikidata.org/wiki/Q14945469> ;
+  gen:mother <#Amelia_Maria_Hulton> .
+  # oo Lady Victoria Russell, 1838-11-01 - 1880-05-09
+  []
+    gen:spouse <villiers.ttl#Henry_Montagu_Villiers> , <russell.ttl#Lady_Victoria_Russell> ;
+	gen:startDate "1861-04-16" .
+  # oo Charlotte Louisa Emily Cadogan, d. 1947-06-03
+  []
+    gen:spouse <villiers.ttl#Henry_Montagu_Villiers> , <paget.ttl#Charlotte_Louisa_Emily_Cadogan> ;
+	gen:startDate "1883-01-09" .
+<#Frederick_Ernest_Villiers>
+  # Frederick Ernest Villiers, 1840-11-16 - 1922-10-14
+  gen:father <https://www.wikidata.org/wiki/Q14945469> ;
+  gen:mother <#Amelia_Maria_Hulton> .
+  # oo Jane Isabella Baird, d. 1943-04-27
+  []
+    gen:spouse <#Frederick_Ernest_Villiers> , <#Jane_Isabella_Baird> ;
+	gen:startDate "1869-07-20" .
+<villiers.ttl#Gertrude_Fanny_Villiers>
+  # Gertrude Fanny Villiers, d. 1906-12-31
+  gen:father <https://www.wikidata.org/wiki/Q14945469> ;
+  gen:mother <#Amelia_Maria_Hulton> .
+  # oo 1865-08-22 Berkeley Paget, 1841-02-09 - 1910-01-21, paget.ttl#Berkeley_Paget
+
+<villiers.ttl#Charles_Hyde_Villiers>
+  # Charles Hyde Villiers, 1862-09 – 1947-05-23
+  gen:father <#Charles_Villiers> ;
+  gen:mother <cecil.ttl#Florence_Mary_Tyssen-Amherst> .
+  # oo Lady Victoria Alexandrina Innes-Ker, 1877 - 1970-05-22
+  []
+    gen:spouse <villiers.ttl#Charles_Hyde_Villiers> , <innes.ttl#Lady_Victoria_Alexandrina_Innes-Ker> ;
+	gen:startDate "1901-08-17" .
+<https://www.wikidata.org/wiki/Q5393944>
+  # Ernest Amherst Villiers, 1863-11-14 - 1923-09-26
+  gen:father <#Charles_Villiers> ;
+  gen:mother <cecil.ttl#Florence_Mary_Tyssen-Amherst> .
+  # oo Hon. Elaine Augusta Guest, 1871-08-12 - 1961~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5393944> , <bertie.ttl#Elaine_Augusta_Guest> ;
+	gen:startDate "1898-04-30" .
+<villiers.ttl#Gerald_Berkeley_Villiers>
+  # Gerald Berkeley Villiers, 1885-06-14 - 1959-02-21
+  gen:father <villiers.ttl#Henry_Montagu_Villiers> ;
+  gen:mother <paget.ttl#Charlotte_Louisa_Emily_Cadogan> .
+  # oo Rachel Joan Heber-Percy, b. 1893
+  []
+    gen:spouse <villiers.ttl#Gerald_Berkeley_Villiers> , <percy.ttl#Rachel_Joan_Heber-Percy> ;
+	gen:startDate "1918-10-10" .
+<villiers.ttl#Oliver_George_Graham_Villiers>
+  # Oliver George Graham Villiers, 1886-06-28 - 1981
+  gen:father <villiers.ttl#Henry_Montagu_Villiers> ;
+  gen:mother <paget.ttl#Charlotte_Louisa_Emily_Cadogan> .
+  # oo Aleen Judith Heber-Percy, 1889-11-24 - 1976
+  []
+    gen:spouse <villiers.ttl#Oliver_George_Graham_Villiers> , <percy.ttl#Aleen_Judith_Heber-Percy> ;
+	gen:startDate "1918-07-06" .
+<#Charles_Walter_Villiers>
+  # Charles Walter Villiers, 1873-09-23 - 1938-09-03
+  gen:father <#Frederick_Ernest_Villiers> ;
+  gen:mother <#Jane_Isabella_Baird> .
+  # oo Lady Kathleen Mary Cole, 1873-11-25 - 1956-06-17
+  []
+    gen:spouse <#Charles_Walter_Villiers> , <#Lady_Kathleen_Mary_Cole> ;
+	gen:startDate "1903-08-01" .
+
+<villiers.ttl#Veronica_Villiers>
+  # Veronica Villiers, 1909 - 1998-11-05
+  gen:father <https://www.wikidata.org/wiki/Q5393944> ;
+  gen:mother <bertie.ttl#Elaine_Augusta_Guest> .
+  # oo 1929-01-09 Desmond Wyndham Otho FitzGerald, 28th Knight of Glin, 1901-01-20 - 1949-04-02, https://www.wikidata.org/wiki/Q5264720
+<villiers.ttl#Florence_Angela_Villiers>
+  # Florence Angela Villiers, 1904-11-01 - 1979
+  gen:father <#Charles_Walter_Villiers> ;
+  gen:mother <#Lady_Kathleen_Mary_Cole> .
+  # oo 1930-07-31 Charles Ian Kerr, 1st Baron Teviot, 1874-05-03 - 1968-01-07. https://www.wikidata.org/wiki/Q5079771
+<villiers.ttl#Helen_Mary_Villiers>
+  # Helen Mary Villiers, 1915-04-17 – 1951-12-06
+  gen:father <#Charles_Walter_Villiers> ;
+  gen:mother <#Lady_Kathleen_Mary_Cole> .
+  # oo 1939-04-25 (div 1947) Nicholas Richard Michael Eliot, 9th Earl of Saint Germans, 1914-01-26 – 1988-03-11, https://www.wikidata.org/wiki/Q7620876
+# ----
+#<https://www.wikidata.org/wiki/Q6251892>
+  # John Parker, 1st Baron Boringdon of Boringdon, 1735~ - 1788-04-27
+  # oo Hon. Theresa Robinson, 1744/1745-01-01 - 1775-12-21
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6251892> , <#Theresa_Robinson> ;
+	gen:startDate "1769-05-18" .
+
+<https://www.wikidata.org/wiki/Q56611689>
+  # Hon. Theresa Parker, 1775-09-29 - 1856-01-12
+  gen:father <https://www.wikidata.org/wiki/Q6251892> ;
+  gen:mother <#Theresa_Robinson> .
+  # oo 1798-04-17 Hon. George Villiers, 1759-11-23 - 1827-03-21, https://www.wikidata.org/wiki/Q5545500
+# ----
+<#Theresa_Robinson>
+  # Hon. Theresa Robinson, 1744/1745-01-01 - 1775-12-21
+  gen:father <https://www.wikidata.org/wiki/Q337754> .
+  # and Frances Worsley
+  # oo 1769-05-18 John Parker, 1st Baron Boringdon of Boringdon, 1735~ - 1788-04-27, https://www.wikidata.org/wiki/Q6251892
+# ----
+#<#Douglas_Baird>
+  # Douglas Baird, 1808-03-31 - 1854-12-07
+  # oo Charlotte Acton, d. 1868-09-30, daughter of Henry Acton and Charlotte Clugston
+  []
+    gen:spouse <#Douglas_Baird> , <#Charlotte_Acton> ;
+	gen:startDate "1851-07-28" .
+
+<#Jane_Isabella_Baird>
+  # Jane Isabella Baird, d. 1943-04-27
+  gen:father <#Douglas_Baird> .
+  # oo 1869-07-20 Frederick Ernest Villiers, 1840-11-16 - 1922-10-14, #Frederick_Ernest_Villiers
+<#Charlotte_Marion_Baird>
+  # Charlotte Marion Baird, d. 1937-01-30
+  gen:father <#Douglas_Baird> ;
+  gen:mother <#Charlotte_Acton> .
+  # oo 1869-07-12 Lowry Egerton Cole, 4th Earl of Enniskillen, 1845-12-21 - 1924-04-28, https://www.wikidata.org/wiki/Q6694156
+# ----
+#<https://www.wikidata.org/wiki/Q6694156>
+  # Lowry Egerton Cole, 4th Earl of Enniskillen, 1845-12-21 - 1924-04-28
+  # oo Charlotte Marion Baird, d. 1937-01-30
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6694156> , <#Charlotte_Marion_Baird> ;
+	gen:startDate "1869-07-12" .
+
+<#Lady_Kathleen_Mary_Cole>
+  # Lady Kathleen Mary Cole, 1873-11-25 - 1956-06-17
+  gen:father <https://www.wikidata.org/wiki/Q6694156> ;
+  gen:mother <#Charlotte_Marion_Baird> .
+  # oo 1903-08-01 Charles Walter Villiers, 1873-09-23 - 1938-09-03, #Charles_Walter_Villiers
+
+# ----
+#<https://www.wikidata.org/wiki/Q5622292>
+  # Guy Greville Wilson, 1877-05-19 – 1943-02-01
+  # oo Lady Isabel Innes-Ker, 1879-01-14 - 1905-10-12
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5622292> , <#Lady_Isabel_Innes-Ker> ;
+	gen:startDate "1904-06-23" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q6279317>
+  # Charlotte Josephine Cooney (Jose Collins), 1887-05-23 – 1958-12-06
+  # daughter of Stephen Patrick Cooney
+  # oo 1920-10-27 (div 1935) Lord Robert Edward Innes-Ker, 1885-07-22 - 1958-07-19, #Lord_Robert_Edward_Innes-Ker
+
+# ----
+<https://www.wikidata.org/wiki/Q6759547>
+  gen:name "Margaret Elisabeth McConnel"@en ;
+  gen:birthDate "1918-12-23" ;
+  gen:deathDate "1983-06-02" .
+  # daughter of Frederick Bradshaw McConnel
+  # oo 1954-01-05 George Victor Robert John Innes-Ker, 9th Duke of Roxburghe, 1913-09-07 - 1974-09-26, https://www.wikidata.org/wiki/Q5540947
+
+# ----
+<#James_Walter_Grimston,_Viscount_Grimston>
+  # James Walter Grimston, Viscount Grimston, b. 1978-01-06
+  gen:father <https://www.wikidata.org/wiki/Q6236445> .
+  # and Dione Angela Smith
+  # oo Lady Rosanagh Viola Alexandra Innes-Ker, b. 1979-01-16
+  []
+    gen:spouse <#James_Walter_Grimston,_Viscount_Grimston> , <#Lady_Rosanagh_Viola_Alexandra_Innes-Ker> ;
+	gen:startDate "2008-06-26" .
+
+# ----
+<#Charlotte_Susanna_Aitken>
+  # Hon. Charlotte Susanna Aitken, b. 1982-02-15
+  gen:father <https://www.wikidata.org/wiki/Q254422> .
+  # and Susan Angela More O'Ferrall
+  # oo 2011-07-22 (div 2012) Charles Robert George Innes-Ker, Marquess of Bowmont and Cessford, 1981-02-18, https://www.wikidata.org/wiki/Q13582135
+
+# ----
+<stuart.ttl#Lady_Elspeth_Stewart>
+  # Lady Elspeth Stewart
+  gen:father <https://www.wikidata.org/wiki/Q1240207> .
+  # and Lady Eleanor Sinclair
+  # oo Robert Innes, 2nd of Invermarkie, d. 1551-10~, innes.ttl#Robert_Innes,_2nd_of_Invermarkie
+
+# ----
+#<#Alexander_Ogilvy,_4th_of_Deskford_and_Findlater>
+  # Alexander Ogilvy, 4th of Deskford and Findlater, d. 1544-07
+  # oo Janet Abernethy
+  []
+    gen:spouse <#Alexander_Ogilvy,_4th_of_Deskford_and_Findlater> , <#Janet_Abernethy> .
+
+<#Marioun_Ogilvy>
+  # Marioun Ogilvy
+  gen:father <#Alexander_Ogilvy,_4th_of_Deskford_and_Findlater> ;
+  gen:mother <#Janet_Abernethy> .
+  # oo Robert Innes of Monycabok, d. 1547-11-10b, innes.ttl#Robert_Innes_of_Monycabok
+
+# ----
+<#Agnes_Urquhart>
+  # Agnes Urquhart, b. 1516~
+  # daughter of Thomas Urquhart of Fischerie
+  gen:mother <#Helen_Abernethy> .
+  # oo James Innes of Toux, 1514 - 1588, #James_Innes_of_Toux
+
+# ----
+#<#John_Grant,_5th_of_Freuchie>
+  # John Grant, 5th of Freuchie, d. 1622-09-02
+  # son of Duncan Grant of Freuchie, younger
+  # and Margaret Mackintosh
+  # oo Lady Lilias Murray, 1576a - 1643-12-30
+  []
+    gen:spouse <#John_Grant,_5th_of_Freuchie> , <https://www.wikidata.org/wiki/Q18674100> ;
+	gen:startDate "1591-04-15~" .
+
+<#Lilias_Grant>
+  # Lilias Grant
+  gen:father <#John_Grant,_5th_of_Freuchie> ;
+  gen:mother <https://www.wikidata.org/wiki/Q18674100> .
+  # oo 1623-04-28 Sir Walter Innes of Balvenie, 2nd Baronet, d. 1650-12-10b, #Sir_Walter_Innes_of_Balvenie,_2nd_Baronet
+
+# ----
+#<https://www.wikidata.org/wiki/Q16212261>
+  # James Forbes, 16th Lord Forbes, 1725~ - 1804-07-29
+  # oo Catherine Innes, d. 1805-04-16
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16212261> , <#Catherine_Innes> ;
+	gen:startDate "1760-01" .
+
+# ----
+<#Ann_Katherine_Leith>
+  # Ann Katherine Leith, d. 1908-01-09
+  gen:father <https://www.wikidata.org/wiki/Q38170073> .
+  # and Maria Thorp
+  # oo 1842-04-05 Alexander Innes, 1812-03-29 - 1883-10-29, #Alexander_Innes_(died_1883)

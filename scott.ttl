@@ -1,0 +1,3057 @@
+@base <scott.ttl> .
+@prefix gen: <http://jjkoch.de/gen#> .
+@prefix wdata: <https://www.wikidata.org/wiki/> .
+@prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+
+#<#Richard_Scott>
+  # Richard Scott, 1265 - 1320
+  # oo heiress of Inglis, b. 1265
+
+<#Michael_Scott>
+  # Michael Scott, 1320~ - 1346-10-17
+  gen:father <#Richard_Scott> .
+
+<#Robert_Scott_(died_1389~)>
+  # Robert Scott of Rankilburn and Murthockston, 1346~ - 1389~ (#403081, #186320)
+  gen:father <#Michael_Scott> .
+<#John_Scott>
+  # John Scott
+  gen:father <#Michael_Scott> .
+
+<#Walter_Scott_(died_1402)>
+  # Walter Scott of Rankilburn and Murthockston, d. 1402-09-11
+  gen:father <#Robert_Scott_(died_1389~)> .
+<#Walter_Scott_(born_1355)>
+  # Walter Scott, b. 1355
+  gen:father <#John_Scott> .
+
+<#Robert_Scott_(died_1426)>
+  # Robert Scott of Rankilburn and Murthockston, 1406/1407-02-18b - 1426
+  gen:father <#Walter_Scott_(died_1402)> .
+<#George_Scott_(born_1380)>
+  # George Scott, b. 1380
+  gen:father <#Walter_Scott_(born_1355)> .
+  # oo ??? Turnbull, daughter of Sir John Turnbull of Falshope
+
+<#Sir_Walter_Scott_of_Branxholm>
+  # Sir Walter Scott of Branxholm, d. 1469-02-09
+  gen:father <#Robert_Scott_(died_1426)> .
+<#Walter_Scott_(born_1400)>
+  # Walter Scott b. 1400
+  gen:father <#George_Scott_(born_1380)> .
+
+<#Sir_David_Scott,_1st_of_Buccleuch> # -> Scott of Buccleuch
+  # Sir David Scott, 1st of Buccleuch, d. 1491/1492-03
+  gen:father <#Sir_Walter_Scott_of_Branxholm> .
+<#Alexander_Scott>
+  # Alexander Scott
+  gen:father <#Sir_Walter_Scott_of_Branxholm> .
+<#Walter_Scott_(died_1463~)>
+  # Walter Scott, 1418 - 1463~
+  gen:father <#Walter_Scott_(born_1400)> .
+  # oo ??? Johnston, daughter of Sir John Johnston
+
+<#Robert_Scott>
+  # Robert Scott
+  gen:father <#Alexander_Scott> .
+<#George_Scott_(died_1480)>
+  # George Scott, 1438 - 1480
+  gen:father <#Walter_Scott_(died_1463~)> .
+
+<#John_Scott_of_Thirlestane>
+  # John Scott of Thirlestane
+  gen:father <#Robert_Scott> .
+<#Walter_Scott_of_Sinton,_7th_Laird>
+  # Walter Scott of Sinton, 7th Laird, b. 1475
+  gen:father <#George_Scott_(died_1480)> .
+  # oo Marjorie Cockburn, daughter of William Cockburn
+  # oo Margaret Riddell, daughter of James Riddell
+
+<#Robert_Scott_of_Thirlestane>
+  # Robert Scott of Thirlestane
+  gen:father <#John_Scott_of_Thirlestane> .
+  # oo Margaret Scott, daughter of Sir Walter Scott of Buccleuch
+<#Robert_Scott_of_Stirches>
+  # Robert Scott of Stirches (Strickshaws), d. 1509
+  gen:father <#Walter_Scott_of_Sinton,_7th_Laird> .
+  # and Margaret Riddell
+
+<#Walter_Scott_of_Gamescleuch>
+  # Walter Scott of Gamescleuch, d. 1609
+  gen:father <#Robert_Scott_of_Thirlestane> .
+  # oo Janet Porteous
+<#William_Scott_of_Harden> # -> Scott of Harden
+  # William Scott of Harden, 1561-02
+  gen:father <#Robert_Scott_of_Stirches> .
+
+<#Patrick_Scott_of_Tanlawhill>
+  # Patrick Scott of Tanlawhill, d. 1666-06-21
+  gen:father <#Walter_Scott_of_Gamescleuch> .
+  # oo Isabel Murray, daughter of Sir John Murray of Blackbarony and Margaret Wauchope
+  []
+    gen:spouse <#Patrick_Scott_of_Tanlawhill> , <murray.ttl#Isabel_Murray> .
+
+<#Sir_Francis_Scott_of_Thirlestone,_1st_Baronet>
+  # Sir Francis Scott of Thirlestone, 1st Baronet, 1645-05-11 1712-04-07
+  # 1st Baronet Scott, of Thirlestane 1666-08-22
+  gen:father <#Patrick_Scott_of_Tanlawhill> ;
+  gen:mother <murray.ttl#Isabel_Murray> .
+  # oo Lady Henrietta Kerr 
+  []
+    gen:spouse <#Sir_Francis_Scott_of_Thirlestone,_1st_Baronet> , <kerr.ttl#Lady_Henrietta_Kerr> ;
+	gen:startDate "1673-11-27" .
+
+<https://www.wikidata.org/wiki/Q16859551>
+  # Sir William Scott, 2nd Baronet of Thirlestane, 1645-05-11 – 1725-10-08
+  gen:father <#Sir_Francis_Scott_of_Thirlestone,_1st_Baronet> ;
+  gen:mother <kerr.ttl#Lady_Henrietta_Kerr> .
+  # oo Elizabeth Brisbane, Mistress of Napier, d. 1705-08-11
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16859551> , <napier.ttl#Elizabeth_Brisbane,_Mistress_of_Napier> ;
+	gen:startDate "1699-12-15" .
+  # oo Jean Nisbet, daughter of Sir John Nisbet of Dirleton
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16859551> , <#Jean_Nisbet> ;
+	gen:startDate "1710-06-30" .
+
+<https://www.wikidata.org/wiki/Q5482004> # -> Napier
+  # Francis Napier, 6th Lord Napier of Merchistoun, 1702~ - 1773
+  gen:father <https://www.wikidata.org/wiki/Q16859551> ;
+  gen:mother <napier.ttl#Elizabeth_Brisbane,_Mistress_of_Napier> .
+
+
+# Scott of Buccleuch
+<#Sir_David_Scott,_1st_of_Buccleuch>
+  # Sir David Scott, 1st of Buccleuch, d. 1491/1492-03
+  # Baron of Buccleuch 1488-05-21
+  gen:father <#Sir_Walter_Scott_of_Branxholm> .
+
+<#David_Scott_of_Buccleuch,_younger>
+  # David Scott of Buccleuch, younger, d. 1491b
+  gen:father <#Sir_David_Scott,_1st_of_Buccleuch> .
+  # oo Lady Janet Douglas
+  []
+    gen:spouse <#David_Scott_of_Buccleuch,_younger> , <douglas.ttl#Lady_Janet_Douglas> .
+
+<#Sir_Walter_Scott_of_Buccleuch,_2nd_of_Buccleuch>
+  # Sir Walter Scott, 2nd of Buccleuch, d. 1504-04-15b
+  gen:father <#David_Scott_of_Buccleuch,_younger> ;
+  gen:mother <douglas.ttl#Lady_Janet_Douglas> .
+  # oo Elizabeth Kerr, d. 1548-10-19
+  []
+    gen:spouse <#Sir_Walter_Scott_of_Buccleuch,_2nd_of_Buccleuch> , <kerr.ttl#Elizabeth_Kerr_(died_1548)> .
+
+<https://www.wikidata.org/wiki/Q7966109>
+  gen:name "Walter Scott, 3rd of Buccleuch (of Branxholme)"@en ;
+  gen:birthDate "1495~" ;
+  gen:deathDate "1552-10-03" ;
+  gen:father <#Sir_Walter_Scott_of_Buccleuch,_2nd_of_Buccleuch> ;
+  gen:mother <kerr.ttl#Elizabeth_Kerr_(died_1548)> .
+  # oo Elizabeth Carmichael, d. 1530b
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7966109> , <#Elizabeth_Carmichael> ;
+	gen:startDate "1523-09-04b" .
+  # oo Janet Kerr
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7966109> , <kerr.ttl#Janet_Kerr> ;
+	gen:startDate "1530~" .
+  # oo Janet Bethune, d. 1569-01
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7966109> , <https://www.wikidata.org/wiki/Q4937801> ;
+	gen:startDate "1544-06b" .
+
+<#Sir_William_Scott_of_Kirkurd,_Younger_of_Buccleuch>
+  gen:name "Sir William Scott of Kirkurd and Buccleuch, younger"@en ;
+  gen:birthDate "1525~" ;
+  gen:deathDate "1552-05-19b" ;
+  gen:father <https://www.wikidata.org/wiki/Q7966109> ;
+  gen:mother <#Elizabeth_Carmichael> .
+  # oo 1548~ Grisel Betoun of Creich, 1520~ - 1579-08-18, second daughter of John Betoun, 2nd of Creich and Janet Hay
+<#Grissel_Scott>
+  # Grissel Scott, b. 1552b
+  gen:father <https://www.wikidata.org/wiki/Q7966109> ;
+  gen:mother <https://www.wikidata.org/wiki/Q4937801> .
+  # oo 1570b William Borthwick, 6th Lord Borthwick, d. 1582-10, son of John Borthwick, 5th Lord Borthwick (d. 1566-03-28, son of William Borthwick, 4th Lord Borthwick (d. 1543-05-28a/155-02-19b, https://www.wikidata.org/wiki/Q8005728) and hay.ttl#Margaret_Hay) and oo 1544b Isobel Lindsay (d. 1577-11-15, daughter of https://www.wikidata.org/wiki/Q5236634 and Isobel Lundie)
+  # oo 1593b Walter Cairncross
+
+<https://www.wikidata.org/wiki/Q7966089>
+  gen:name "Sir Walter Scott, 4th Baron of Buccleuch"@en ;
+  gen:birthDate "1549~" ;
+  gen:deathDate "1574-04-17" ;
+  gen:father <#Sir_William_Scott_of_Kirkurd,_Younger_of_Buccleuch> ;
+  gen:mother <#Grisel_Betoun_of_Creich> .
+  # oo Lady Margaret Douglas, d. 1640
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7966089> , <douglas.ttl#Lady_Margaret_Douglas_(died_1640)> ;
+	gen:startDate "1568" .
+
+<https://www.wikidata.org/wiki/Q3061347>
+  gen:name "Walter Scott, 1st Lord Scott of Buccleuch"@en ;
+  # 1st Lord Scott of Buccleuch 1605/1606-03-18
+  gen:birthDate "1565" ;
+  gen:deathDate "1611-12-15" ;
+  gen:father <https://www.wikidata.org/wiki/Q7966089> ;
+  gen:mother <douglas.ttl#Lady_Margaret_Douglas_(died_1640)> .
+  # oo Mary Kerr, d. 1611a
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3061347> , <kerr.ttl#Mary_Kerr> ;
+	gen:startDate "1586-10-01" .
+
+<https://www.wikidata.org/wiki/Q2080432>
+  gen:name "Walter Scott, 1st Earl of Buccleuch, 2nd Baron Scott of Buccleuch"@en ;
+  # 2nd Lord Scott of Buccleuch 1611-12-15
+  # 1st Lord Scott of Quhitchester and Eskdaill, 1st Earl of Buccleuch 1618/1619-03-16
+  gen:birthDate "1606b" ;
+  gen:deathDate "1633-11-20" ;
+  gen:father <https://www.wikidata.org/wiki/Q3061347> ;
+  gen:mother <kerr.ttl#Mary_Kerr> .
+  # oo Lady Mary Hay, d. 1631-04-11
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2080432> , <hay.ttl#Lady_Mary_Hay_(died_1631)> ;
+	gen:startDate "1616-10-15~" .
+<#Margaret_Scott>
+  gen:name "Margaret Scott"@en ;
+  gen:deathDate "1651-10-05" ;
+  gen:father <https://www.wikidata.org/wiki/Q3061347> ;
+  gen:mother <kerr.ttl#Mary_Kerr> .
+  # oo 1614/1615 James Ross, 6th Lord Ross of Halkhead, d. 1633-12-17, https://www.wikidata.org/wiki/Q16203881
+  # oo 1642-11a/1644-03b Alexander Montgomerie, 6th Earl of Eglinton, 1588 - 1661-01-07, https://www.wikidata.org/wiki/Q16146131
+<#Elizabeth_Scott>
+  # Elizabeth Scott
+  gen:father <https://www.wikidata.org/wiki/Q3061347> ;
+  gen:mother <kerr.ttl#Mary_Kerr> .
+  # oo 1616-11-22 John Cranstoun, 2nd Lord Cranstoun, d. 1648~, https://www.wikidata.org/wiki/Q6227519
+
+<#Lady_Elizabeth_Scott>
+  # Lady Elizabeth Scott
+  gen:father <https://www.wikidata.org/wiki/Q2080432> ;
+  gen:mother <hay.ttl#Lady_Mary_Hay_(died_1631)> .
+  # oo 1641~ John Erskine, 21st/4th Earl of Mar, d. 1668-09, https://www.wikidata.org/wiki/Q13650251
+<https://www.wikidata.org/wiki/Q2080050>
+  gen:name "Francis Scott, 2nd Earl of Buccleuch"@en ;
+  gen:birthDate "1626-12-21" ;
+  gen:deathDate "1651-11-22" ;
+  gen:father <https://www.wikidata.org/wiki/Q2080432> ;
+  gen:mother <hay.ttl#Lady_Mary_Hay_(died_1631)> .
+  # oo Lady Margaret Leslie, 1621 - 1688-02
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2080050> , <leslie.ttl#Lady_Margaret_Leslie> ;
+	gen:startDate "1646-07-25" .
+<#Lady_Jane_Scott>
+  # Lady Jane Scott, 1628/1629-02-13 - 1688-11~
+  gen:father <https://www.wikidata.org/wiki/Q2080432> ;
+  gen:mother <hay.ttl#Lady_Mary_Hay_(died_1631)> .
+  # oo 1644-09-24 John Hay, 1st Marquess of Tweeddale, 1625-08-13 - 1697-08-11, https://www.wikidata.org/wiki/Q6238332
+
+<https://www.wikidata.org/wiki/Q3296243>
+  gen:name "Mary Scott, 3rd Countess of Buccleuch"@en ;
+  # 4th Lady Scott of Buccleuch, 3rd Lady Scott of Quhitchester and Eskdaill, 3rd Countess of Buccleuch 1651-11-25, suo jure
+  gen:birthDate "1647-08-31" ;
+  gen:deathDate "1661-03-11" ;
+  gen:father <https://www.wikidata.org/wiki/Q2080050> ;
+  gen:mother <leslie.ttl#Lady_Margaret_Leslie> .
+  # oo 1659-02-09 Walter Scott, Earl of Tarras, 1644-12-25 – 1693-04-09, https://www.wikidata.org/wiki/Q7966091
+<#Walter_Scott,_Lord_Scott>
+  gen:name "Walter Scott, Lord Scott"@en ;
+  gen:birthDate "1648-11-05" ;
+  gen:deathDate "1650-05-06" ;
+  gen:father <https://www.wikidata.org/wiki/Q2080050> ;
+  gen:mother <leslie.ttl#Lady_Margaret_Leslie> .
+<https://www.wikidata.org/wiki/Q2080470>
+  gen:name "Anne Scott, 4th Countess of Buccleuch"@en ;
+  # 5th Lady Scott of Buccleuch, 4th Lady Scott of Quhitchester and Eskdaill, 4th Countess of Buccleuch 1661-03-12, suo jure
+  gen:birthDate "1651-02-11" ;
+  gen:deathDate "1732-02-06" ;
+  gen:father <https://www.wikidata.org/wiki/Q2080050> ;
+  gen:mother <leslie.ttl#Lady_Margaret_Leslie> .
+  # oo 1663-04-20 James Scott, 1st and last Duke of Monmouth, 1649-04-09 – 1685-07-15, https://www.wikidata.org/wiki/Q140235
+  # oo 1688-05-06 Charles Cornwallis, 3rd Baron Cornwallis of Eye, 1655-12-28 – 1698-04-29, https://www.wikidata.org/wiki/Q5076481
+
+
+# ====
+# Scott of Harden
+<#William_Scott_of_Harden>
+  # William Scott of Harden, 1561-02
+  gen:father <#Robert_Scott_of_Stirches> .
+
+<#Walter_Scott_of_Harden_(died_1563~)>
+  # Walter Scott of Harden, d. 1563~
+  gen:father <#William_Scott_of_Harden> .
+
+<https://www.wikidata.org/wiki/Q7966112>
+  # Walter Scott of Harden, 1550 – 1629/1631-06
+  gen:father <#Walter_Scott_of_Harden_(died_1563~)> .
+  # oo 1567-03-21 Mary Scott, daughter of John Scott of Dryhope
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7966112> , <#Mary_Scott_of_Dryhope> .
+
+<#Sir_William_Scott_of_Harden>
+  # Sir William Scott of Harden, d. 1655
+  gen:father <https://www.wikidata.org/wiki/Q7966112> ;
+  gen:mother <#Mary_Scott_of_Dryhope> .
+  # oo Agnes Murray
+  []
+    gen:spouse <#Sir_William_Scott_of_Harden> , <murray.ttl#Agnes_Murray_2> ;
+	gen:startDate "1611-07-14" .
+  # oo Margaret Kerr, daughter of William Kerr
+  []
+    gen:spouse <#Sir_William_Scott_of_Harden> , <#Margaret_Kerr> ;
+	gen:startDate "1633-04-15" .
+<#Hugh_Scott,_1st_of_Gala> # -> Scott of Gala
+  # Hugh Scott, 1st of Gala, d. 1644/1645
+  gen:father <https://www.wikidata.org/wiki/Q7966112> ;
+  gen:mother <#Mary_Scott_of_Dryhope> .
+
+<#Sir_William_Scott_(died_1699)>
+  # Sir William Scott, d. 1699-02-02
+  gen:father <#Sir_William_Scott_of_Harden> ;
+  gen:mother <murray.ttl#Agnes_Murray_2> .
+  # oo Christian Boyd
+  []
+    gen:spouse <#Sir_William_Scott_(died_1699)> , <boyd.ttl#Christian_Boyd> ;
+	gen:startDate "1641-10-26" .
+<#James_Scott,_1st_of_Thirlestane>
+  # James Scott, 1st of Thirlestane
+  gen:father <#Sir_William_Scott_of_Harden> ;
+  gen:mother <murray.ttl#Agnes_Murray_2> .
+  # oo Agnes Riddell, daughter of Sir Walter Riddell of that Ilk
+  []
+    gen:spouse <#James_Scott,_1st_of_Thirlestane> , <#Agnes_Riddell> ;
+	gen:startDate "1659-02-08" .
+<#Sir_Gideon_Scott_of_Highchester>
+  # Sir Gideon Scott of Highchester, d. 1673-08-05a
+  gen:father <#Sir_William_Scott_of_Harden> ;
+  gen:mother <murray.ttl#Agnes_Murray_2> .
+  # oo 1643-01-26 Margaret Hamilton (daughter of Sir Patrick Hamilton)
+
+<#William_Scott,_2nd_of_Thirlestane>
+  # William Scott, 2nd of Thirlestane, b. 1663-02-17
+  gen:father <#James_Scott,_1st_of_Thirlestane>;
+  gen:mother <#Agnes_Riddell> .
+  # oo Christian Don
+  []
+    gen:spouse <#William_Scott,_2nd_of_Thirlestane> , <#Christian_Don> ;
+	gen:startDate "1684" .
+<https://www.wikidata.org/wiki/Q7966091>
+  # Walter Scott, Earl of Tarras, 1644-12-25 – 1693-04-09
+  # Earl of Tarras, Lord Alemoor and Campcastell 1660-09-04
+  gen:father <#Sir_Gideon_Scott_of_Highchester> .
+  # and Margaret Hamilton
+  # oo Mary Scott, 3rd Countess of Buccleuch, 1647-08-31, 1661-03-11
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7966091> , <https://www.wikidata.org/wiki/Q3296243> ;
+	gen:startDate "1659-02-09" .
+  # oo Helen Hepburn, b. 1658-11-07, daughter of Thomas Hepburn (1631-11-14 - 1668b, son of Sir Adam Hepburn of Humbie and Agnes Foulis) and oo 1657-12-09 Elizabeth Johnston (daughter of Sir Archibald Johnston)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7966091> , <#Helen_Hepburn> ;
+	gen:startDate "1677-12-31" .
+
+<#Alexander_Scott_(died_1743)>
+  # Alexander Scott, 1691-04 - 1743
+  gen:father <#William_Scott,_2nd_of_Thirlestane> ;
+  gen:mother <#Christian_Don> .
+  # oo Barbara Kerr, d. 1781
+  []
+    gen:spouse <#Alexander_Scott_(died_1743)> , <#Barbara_Kerr> ;
+	gen:startDate "1729-01-28" .
+<#Walter_Scott_(died_1746)>
+  # Walter Scott, 1682-01-06 - 1746-01
+  gen:father <https://www.wikidata.org/wiki/Q7966091> ;
+  gen:mother <#Helen_Hepburn> .
+  # oo 1709-04-07 Agnes Nisbet, daughter of John Nisbet
+  # oo 1710-07-10 Agnes Scott, daughter of William Scott, 2nd of Thirlestane and Christian Don
+  # oo 1724-02-13 Ann Scott, daughter of John Scott
+  # oo 1736-10-05 Christian Ker, daughter of Henry Ker
+<#Gideon_Scott>
+  # Gideon Scott, 1678-10-18 - 1707
+  gen:father <https://www.wikidata.org/wiki/Q7966091> ;
+  gen:mother <#Helen_Hepburn> .
+  # oo Anne Kinloch, daughter of Sir Francis Kinloch of Gilmerton, 1st Baronet (d. 1691-12-14~, 1st Baronet Kinloch, of Gilmerton 1686-09-16) and Magdalen McNath of Newbyres (d. 1664-11-16)
+  []
+    gen:spouse <#Gideon_Scott> , <#Anne_Kinloch> ;
+	gen:startDate "1697-11-05" .
+  # oo Lady Mary Drummond, d. 1754-10-04, daughter of John Drummond, 1st Earl of Melfort and Sophia Maitland
+  []
+    gen:spouse <#Gideon_Scott> , <drummond.ttl#Lady_Mary_Drummond_(died_1754)> ;
+	gen:startDate "1700-02-28" .
+
+<#William_Kerr_Scott-Kerr>
+  # William Kerr Scott-Kerr, 1731 - 1782
+  gen:father <#Alexander_Scott_(died_1743)> ;
+  gen:mother <#Barbara_Kerr> .
+  # oo Elizabeth Graeme
+  []
+    gen:spouse <#William_Kerr_Scott-Kerr> , <#Elizabeth_Graeme> ;
+	gen:startDate "1762-06-24" .
+<#Walter_Scott_(died_1793)>
+  # Walter Scott, 1724-12-31 - 1793-01-25
+  gen:father <#Walter_Scott_(died_1746)> .
+  # and Ann Scott
+  # oo Hon. Diana Hume-Campbell, 1735-06-04 - 1827-07-20
+  []
+    gen:spouse <#Walter_Scott_(died_1793)> , <home.ttl#Diana_Hume-Campbell> ;
+	gen:startDate "1754-04-18" .
+<#John_Scott_(died_1734)>
+  # John Scott, d. 1734-06
+  gen:father <#Gideon_Scott> ;
+  gen:mother <drummond.ttl#Lady_Mary_Drummond_(died_1754)> .
+  # oo Lady Jean Erskine, d. 1735-07-17
+  []
+    gen:spouse <#John_Scott_(died_1734)> , <erskine.ttl#Lady_Jean_Erskine_(died_1735)> ;
+	gen:startDate "1719" .
+
+<#Robert_Scott-Kerr>
+  # Robert Scott-Kerr, 1770 - 1831-12-05
+  gen:father <#William_Kerr_Scott-Kerr> ;
+  gen:mother <#Elizabeth_Graeme> .
+  # oo Elizabeth Bell Fyffe, 1780 - 1867-01-10, daughter of David Fyffe
+  []
+    gen:spouse <#Robert_Scott-Kerr> , <#Elizabeth_Bell_Fyffe> ;
+	gen:startDate "1806-12-17" .
+<https://www.wikidata.org/wiki/Q26708770>
+  # Sir Hugh Hepburne-Scott of Harden, 6th Lord Polwarth, 1758-04-10 - 1841-12-29
+  # Hepburne-Scott 1820-12
+  # 6th Lord Polwarth 1827-07-20
+  gen:father <#Walter_Scott_(died_1793)> ;
+  gen:mother <home.ttl#Diana_Hume-Campbell> .
+  # oo Harriet (Henriette) Gräfin von Brühl, 1772-10-25 - 1853-08-19
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q26708770> , <#Henriette_von_Brühl> ;
+	gen:startDate "1795-09-29" .
+
+<#William_Scott-Kerr>
+  # William Scott-Kerr, 1807-10-03 - 1890-05
+  gen:father <#Robert_Scott-Kerr> ;
+  gen:mother <#Elizabeth_Bell_Fyffe> .
+  # oo Frances Louisa Fennessy, 1829-05-01 - 1884-09-29, daughter of Robert Fennessy and Charlotte Matilda Wilson
+  []
+    gen:spouse <#William_Scott-Kerr> , <#Frances_Louisa_Fennessy> ;
+	gen:startDate "1855" .
+<https://www.wikidata.org/wiki/Q5722860>
+  # Henry Francis Hepburne-Scott, 7th Lord Polwarth, 1800-01-01 - 1867-08-16
+  gen:father <https://www.wikidata.org/wiki/Q26708770> ;
+  gen:mother <#Henriette_von_Brühl> .
+  # oo Lady Georgina Baillie, 1816-07-20 - 1859-04-02
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5722860> , <https://www.wikidata.org/wiki/Q50824219> ;
+	gen:startDate "1841-12-28" .
+<#William_Hugh_Hepburne-Scott>
+  # Rev. Hon. William Hugh Hepburne-Scott, 1801-05-11 - 1868-04-11
+  gen:father <https://www.wikidata.org/wiki/Q26708770> ;
+  gen:mother <#Henriette_von_Brühl> .
+  # oo Eleanor Sophia Baillie, d. 1853-09-04
+  []
+    gen:spouse <#William_Hugh_Hepburne-Scott> , <hamilton.ttl#Eleanor_Sophia_Baillie-Hamilton> ;
+	gen:startDate "1833-07" .
+<#Anne_Hepburne-Scott>
+  # Hon. Anne Hepburne-Scott, d. 1880-08-15
+  gen:father <https://www.wikidata.org/wiki/Q26708770> ;
+  gen:mother <#Henriette_von_Brühl> .
+  # oo 1831-12-27 Charles Baillie, Lord Jerviswood, 1804-11-03 – 1879-07-23, https://www.wikidata.org/wiki/Q5075367
+<#Elizabeth_Anne_Hepburne-Scott>
+  # Hon. Elizabeth Anne Hepburne-Scott, 1803-02-21 - 1873-08-21
+  gen:father <https://www.wikidata.org/wiki/Q26708770> ;
+  gen:mother <#Henriette_von_Brühl> .
+  # oo 1835-10-03 Charles Wyndham, 1796 - 1866-02-18, #Charles_Wyndham
+
+<#Hyacinthe_Scott-Kerr>
+  # Hyacinthe Scott-Kerr, 1865 - 1930-12-04
+  gen:father <#William_Scott-Kerr> ;
+  gen:mother <#Frances_Louisa_Fennessy> .
+  # oo 1891-04-09 Francis Edward Fitzalan-Howard, 2nd Baron Howard of Glossop, 1859-05-09 - 1924-09-22, https://www.wikidata.org/wiki/Q23303549
+<https://www.wikidata.org/wiki/Q29378933>
+  # Walter Hugh Hepburne-Scott, 8th Lord Polwarth, 1838-11-30 - 1920-07-13
+  gen:father <https://www.wikidata.org/wiki/Q5722860> ;
+  gen:mother <https://www.wikidata.org/wiki/Q50824219> .
+  # oo Lady Mary Gordon, 1844-04-28 - 1914-02-13
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q29378933> , <https://www.wikidata.org/wiki/Q50824151> ;
+	gen:startDate "1863-01-30" .
+<#Harriet_Frances_Scott>
+  # Hon. Harriet Frances Scott, 1845 - 1925-03-18
+  gen:father <https://www.wikidata.org/wiki/Q5722860> ;
+  gen:mother <https://www.wikidata.org/wiki/Q50824219> .
+  # oo 1872-10-17 Hon. Henry Baillie-Hamilton, 1832-08-20 - 1895-11-20, hamilton.ttl#Henry_Baillie-Hamilton
+<#Henry_Robert_Hepburne-Scott>
+  # Hon. Henry Robert Hepburne-Scott, 1847-01-06 - 1914-03-04
+  gen:father <https://www.wikidata.org/wiki/Q5722860> ;
+  gen:mother <https://www.wikidata.org/wiki/Q50824219> .
+  # oo Lady Ada Home, 1846-09-08 - 1932-06-01
+  []
+    gen:spouse <#Henry_Robert_Hepburne-Scott> , <home.ttl#Lady_Ada_Home> ;
+	gen:startDate "1880-04-10" .
+
+<https://www.wikidata.org/wiki/Q29378674>
+  # Walter George Hepburne-Scott, 9th Lord Polwarth, 1864-02-07 - 1944-08-24
+  gen:father <https://www.wikidata.org/wiki/Q29378933> ;
+  gen:mother <https://www.wikidata.org/wiki/Q50824151> .
+  # oo Edith Frances Buxton, 1867-08-30 - 1930-03-25
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q29378674> , <#Edith_Frances_Buxton> ;
+	gen:startDate "1888-11-23" .
+<#James_Cospatrick_Hepburne-Scott>
+  # James Cospatrick Hepburne-Scott, 1882-05-24 - 1942-07-20
+  gen:father <#Henry_Robert_Hepburne-Scott> ;
+  gen:mother <home.ttl#Lady_Ada_Home> .
+  # oo Lady Isobel Alice Adelaide Kerr, 1881-09-25 - 1975-12-26
+  []
+    gen:spouse <#James_Cospatrick_Hepburne-Scott> , <kerr.ttl#Lady_Isobel_Alice_Adelaide_Kerr> ;
+	gen:startDate "1907-10-28" .
+<#Mary_Helen_Charlotte_Hepburne-Scott>
+  # Mary Helen Charlotte Hepburne-Scott, 1885-01-21 - 1922-09-29
+  gen:father <#Henry_Robert_Hepburne-Scott> ;
+  gen:mother <home.ttl#Lady_Ada_Home> .
+  # oo 1909-11-11 Reginald George Chetwynd-Talbot, 1881-01-25 - 1939-09-11, talbot.ttl#Reginald_George_Chetwynd-Talbot
+
+<#Walter_Thomas_Hepburne-Scott,_Master_of_Polwarth>
+  # Walter Thomas Hepburne-Scott, Master of Polwarth, 1890-04-22 - 1942-09-07
+  gen:father <https://www.wikidata.org/wiki/Q29378674> ;
+  gen:mother <#Edith_Frances_Buxton> .
+  # oo Elspeth Glencairn Campbell, 1889 - 1964-08-05
+  []
+    gen:spouse <#Walter_Thomas_Hepburne-Scott,_Master_of_Polwarth> , <campbell.ttl#Elspeth_Glencairn_Campbell> ;
+	gen:startDate "1914-11-03" .
+
+<https://www.wikidata.org/wiki/Q15453785>
+  # Henry Alexander Hepburne-Scott, 10th Lord Polwarth, 1916-11-17 - 2005-01-04
+  gen:father <#Walter_Thomas_Hepburne-Scott,_Master_of_Polwarth> ;
+  gen:mother <campbell.ttl#Elspeth_Glencairn_Campbell> .
+  # oo Caroline Margaret Hay, 1916-06-29 - 1982
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q15453785> , <hay.ttl#Caroline_Margaret_Hay> ;
+	gen:startDate "1943-06-04" ;
+	gen:divorceDate "1969" .
+  # oo Jean Cunninghame Graham
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q15453785> , <#Jean_Cunninghame_Graham> ;
+	gen:startDate "1969-08-08" .
+
+<#Andrew_Hepburne-Scott,_11th_Lord_Polwarth>
+  # Andrew Walter Hepburne-Scott, 11th Lord Polwarth, b. 1947-11-30
+  gen:father <https://www.wikidata.org/wiki/Q15453785> ;
+  gen:mother <#Jean_Cunninghame_Graham> .
+  # oo Isabel Anna Surtees, daughter of Major John Freville Henry Surtees
+  []
+    gen:spouse <#Andrew_Hepburne-Scott,_11th_Lord_Polwarth> , <#Isabel_Anna_Surtees> ;
+	gen:startDate "1971-03-20" .
+<#Mary_Jane_Hepburne-Scott>
+  # Hon. Mary Jane Hepburne-Scott, b. 1955-02-16
+  gen:father <https://www.wikidata.org/wiki/Q15453785> ;
+  gen:mother <#Jean_Cunninghame_Graham> .
+  # oo 1980-06-07 James McMoran Wilson, 3rd Baron Moran, b. 1952-08-06, https://www.wikidata.org/wiki/Q52269603
+
+<#William_Henry_Hepburne-Scott,_Master_of_Polwarth>
+  # William Henry Hepburne-Scott, Master of Polwarth, b. 1973-03-21
+  gen:father <#Andrew_Hepburne-Scott,_11th_Lord_Polwarth> ;
+  gen:mother <#Isabel_Anna_Surtees> .
+  # oo Donna Carlier, daughter of Maj.-Gen. Charles Carlier
+  []
+    gen:spouse <#William_Henry_Hepburne-Scott,_Master_of_Polwarth> , <#Donna_Carlier> .
+
+<#Harry_Walter_Hepburne-Scott>
+  # Harry Walter Hepburne-Scott, b. 2010-03-21
+  gen:father <#William_Henry_Hepburne-Scott,_Master_of_Polwarth> ;
+  gen:mother <#Donna_Carlier> .
+<#Rose_Florence_Hepburne-Scott>
+  # Rose Florence Hepburne-Scott, b. 2012-04-28
+  gen:father <#William_Henry_Hepburne-Scott,_Master_of_Polwarth> ;
+  gen:mother <#Donna_Carlier> .
+
+
+# Scott of Gala
+<#Hugh_Scott,_1st_of_Gala>
+  # Hugh Scott, 1st of Gala, d. 1644/1645 (#551955, )
+  gen:father <https://www.wikidata.org/wiki/Q7966112> ;
+  gen:mother <#Mary_Scott_of_Dryhope> .
+  # oo 1621-03-17 Jean Hoppringle, daughter of Sir James Hoppringle
+
+<#James_Scott,_2nd_of_Gala>
+  # James Scott, 2nd of Gala, d. 1672b
+  gen:father <#Hugh_Scott,_1st_of_Gala> .
+  # oo 1646 Janet Murray, daughter of Sir James Murray of Philiphaugh, younger and Anne Craig
+
+<#Hugh_Scott,_3rd_of_Gala>
+  # Hugh Scott, 3rd of Gala, 1648 - 1696~
+  gen:father <#James_Scott,_2nd_of_Gala> .
+  # oo 1670~ Isobel Ker, daughter of Sir Thomas Ker of Cavers
+
+<#Sir_James_Scott,_4th_of_Gala>
+  # Sir James Scott, 4th of Gala, d. 1721a
+  gen:father <#Hugh_Scott,_3rd_of_Gala> .
+  # and Isobel Ker
+  # oo Euphemia Douglas (of Cavers)
+  []
+    gen:spouse <#Sir_James_Scott,_4th_of_Gala> , <douglas.ttl#Euphemia_Douglas> ;
+	gen:startDate "1693" .
+<#Anne_Scott>
+  # Anne Scott, 1683 - 1739
+  gen:father <#Hugh_Scott,_3rd_of_Gala> .
+  # and Isobel Ker
+  # oo 1700 Walter Scott, 3rd of Raeburn, d. 1707
+  # oo 1710 Henry Makdougall, 14th of Makerstoun
+
+<#Hugh_Scott,_5th_of_Gala>
+  # Hugh Scott, 5th of Gala, d. 1771
+  gen:father <#Sir_James_Scott,_4th_of_Gala> ;
+  gen:mother <douglas.ttl#Euphemia_Douglas> .
+  # oo Elizabeth Stewart, daughter of Colonel John Stewart of Stewartfield
+  []
+    gen:spouse <#Hugh_Scott,_5th_of_Gala> , <#Elizabeth_Stewart> ;
+	gen:startDate "1727-08-27" .
+
+<#John_Scott,_6th_of_Gala>
+  # John Scott, 6th of Gala, 1732-04 - 1785
+  gen:father <#Hugh_Scott,_5th_of_Gala> ;
+  gen:mother <#Elizabeth_Stewart> .
+  # oo Anne Hay-Makdougall, b. 1733, daughter of Sir George Hay-Makdougall of Alderston, 3rd Baronet (d. 1777-02-24, son of Sir John Hay of Alderston, 1st Baronet (d. 1706, son of Thomas Hay of Alderston and Hermiston and Anna Gibson) and oo 1693-04-27 Catherine Suttie (daughter of Sir George Suttie of Balgone, 1st Baronet and Marion Elizabeth Semple)) and Barbara Makdougall (daughter of Henry Makdougall, 14th of Makerstoun and Anne Scott)
+  []
+    gen:spouse <#John_Scott,_6th_of_Gala> , <#Anne_Hay-Makdougall> .
+
+<#Hugh_Scott,_7th_of_Gala>
+  # Hugh Scott, 7th of Gala, 1764 - 1795-10-04
+  gen:father <#John_Scott,_6th_of_Gala> ;
+  gen:mother <#Anne_Hay-Makdougall> .
+  # oo Isabella Monro, daughter of https://www.wikidata.org/wiki/Q2622139
+  []
+    gen:spouse <#Hugh_Scott,_7th_of_Gala> , <#Isabella_Monro> ;
+	gen:startDate "1787-03-13" .
+
+<#John_Scott,_8th_of_Gala>
+  # John Scott, 8th of Gala, 1790 - 1840-08-09
+  gen:father <#Hugh_Scott,_7th_of_Gala> ;
+  gen:mother <#Isabella_Monro> .
+  # oo Magdalen Hope, 1792 - 1873-08-13
+  []
+    gen:spouse <#John_Scott,_8th_of_Gala> , <hope.ttl#Magdalen_Hope> ;
+	gen:startDate "1820-04-20" .
+
+<https://www.wikidata.org/wiki/Q54869887>
+  # Hugh Scott, 9th of Gala, 1822-12-09 - 1877-12-19
+  gen:father <#John_Scott,_8th_of_Gala> ;
+  gen:mother <hope.ttl#Magdalen_Hope> .
+  # oo Elizabeth Isabella Johnstone-Gordon, d. 1917, daughter of Charles Kinnaird Johnstone-Gordon and Elizabeth Gordon
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q54869887> , <#Elizabeth_Isabella_Johnstone-Gordon> ;
+	gen:startDate "1857-09-08" .
+
+<#John_Henry_Francis_Kinnaird_Scott,_10th_of_Gala>
+  # John Henry Francis Kinnaird Scott, 10th of Gala, 1859-05-10 - 1935-02-08
+  gen:father <https://www.wikidata.org/wiki/Q54869887> ;
+  gen:mother <#Elizabeth_Isabella_Johnstone-Gordon> .
+<#Magdalen_Augusta_Lavinia_Scott>
+  # Magdalen Augusta Lavinia Scott, 1862 - 1961-02-19
+  gen:father <https://www.wikidata.org/wiki/Q54869887> ;
+  gen:mother <#Elizabeth_Isabella_Johnstone-Gordon> .
+  # oo 1898-01-29 Sir Francis Davies, 1864 - 1948-03-18, https://www.wikidata.org/wiki/Q3750919
+<#Hugh_James_Elibank_Scott-Makdougall_of_Makerstoun>
+  # Hugh James Elibank Scott-Makdougall of Makerstoun, 1861-10-01 - 1934-05-04
+  gen:father <https://www.wikidata.org/wiki/Q54869887> ;
+  gen:mother <#Elizabeth_Isabella_Johnstone-Gordon> .
+  # oo Agnes Jenkinson, d. 1955-12-19, daughter of Henry Jenkinson
+  []
+    gen:spouse <#Hugh_James_Elibank_Scott-Makdougall_of_Makerstoun> , <#Agnes_Jenkinson> ;
+	gen:startDate "1893-02-05" .
+
+<#Jean_Winifred_Mary_Makdougall_Scott-Makdougall>
+  # Jean Winifred Mary Makdougall Scott-Makdougall, 1897-02-05 - 1990-05-11
+  gen:father <#Hugh_James_Elibank_Scott-Makdougall_of_Makerstoun> ;
+  gen:mother <#Agnes_Jenkinson> .
+  # oo 1922-04-29 Philip Beaumont Frere, 1897-07-11 - 1981-12-06
+<#Henry_John_Alexander_Makdougall_Scott,_11th_of_Gala>
+  # Henry John Alexander Makdougall Scott, 11th of Gala, 1901-02-06 - 1940-05-26
+  gen:father <#Hugh_James_Elibank_Scott-Makdougall_of_Makerstoun> ;
+  gen:mother <#Agnes_Jenkinson> .
+
+
+# ----
+#<#Philip_Beaumont_Frere>
+  # Philip Beaumont Frere, 1897-07-11 - 1981-12-06
+  # oo Jean Winifred Mary Makdougall Scott-Makdougall, 1897-02-05 - 1990-05-11
+  []
+    gen:spouse <#Philip_Beaumont_Frere> , <#Jean_Winifred_Mary_Makdougall_Scott-Makdougall> ;
+	gen:startDate "1922-04-29" .
+
+<#Christopher_Bartle_Hugh_Scott,_12th_of_Gala>
+  # Christopher Bartle Hugh Scott, 12th of Gala (1924-10-04 - 1997-04-13
+  gen:father <#Philip_Beaumont_Frere> ;
+  gen:mother <#Jean_Winifred_Mary_Makdougall_Scott-Makdougall> .
+  # oo Anne Margaret D'Arcy Kerr, 1923-04-30 - 1999-10-14
+  []
+    gen:spouse <#Christopher_Bartle_Hugh_Scott,_12th_of_Gala> , <kerr.ttl#Anne_Margaret_D'Arcy_Kerr> ;
+	gen:startDate "1948-09-16" .
+
+<#Rupert_Benjamin_Bartle_Frere_Scott>
+  # Rupert Benjamin Bartle Frere Scott, b. 1958-10-12
+  gen:father <#Christopher_Bartle_Hugh_Scott,_12th_of_Gala> ;
+  gen:mother <kerr.ttl#Anne_Margaret_D'Arcy_Kerr> .
+  # oo Hon. Mary Rachel Douglas-Scott-Montagu, b. 1964-11-16
+  []
+    gen:spouse <#Rupert_Benjamin_Bartle_Frere_Scott> , <https://www.wikidata.org/wiki/Q29033676> ;
+	gen:startDate "1997-06-21" .
+
+
+# ====
+<https://www.wikidata.org/wiki/Q140235>
+  gen:name "James Scott, 1st and last Duke of Monmouth"@en ;
+  # 1st Baron Scott of Tindall, Northumberland, 1st Duke of Monmouth, 1st Earl of Doncaster, co. York 1663-02-14
+  # 1st Lord Scott of Whitchester and Eskdale 1663-04-20
+  # 1st Earl of Dalkeith, 1st Duke of Buccleuch 1663-04-20
+  gen:birthDate "1649-04-09" ;
+  gen:deathDate "1685-07-10" ;
+  gen:father <https://www.wikidata.org/wiki/Q122553> ; # Charles II of England
+  gen:mother <https://www.wikidata.org/wiki/Q272539> .
+  # oo Anne Scott, Countess of Buccleuch, 1651-02-11 - 1732-02-06
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q140235> , <https://www.wikidata.org/wiki/Q2080470> ;
+	gen:startDate "1663-04-20" .
+
+<https://www.wikidata.org/wiki/Q362651>
+  gen:name "James Scott, Earl of Dalkeith"@en ;
+  gen:birthDate "1674-05-23" ;
+  gen:deathDate "1705-03-14" ;
+  gen:father <https://www.wikidata.org/wiki/Q140235> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2080470> .
+  # oo Lady Henrietta Hyde, 1677~ - 1730-05-30
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q362651> , <#Lady_Henrietta_Hyde> ;
+	gen:startDate "1693/1694-01-02" .
+<https://www.wikidata.org/wiki/Q5728124>
+  gen:name "Henry Scott, 1st Earl of Delorain"@en ;
+  # 1st Earl of Delorain, 1st Viscount of Hermitage, 1st Lord Goldielands 1706-03-29
+  gen:birthDate "1676" ;
+  gen:deathDate "1730-12-25" ;
+  gen:father <https://www.wikidata.org/wiki/Q140235> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2080470> .
+  # oo Anne Duncombe, d. 1720, the daughter of William Duncombe of Batthesden, Lord Chief Justice of Ireland
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5728124> , <#Anne_Duncombe> ;
+	gen:startDate "1693" .
+  # oo Mary Howard, 1700 - 1744-11-12
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5728124> , <howard.ttl#Mary_Howard_(died_1744)> ;
+	gen:startDate "1726-03-14" .
+
+<https://www.wikidata.org/wiki/Q335289>
+  gen:name "Francis Scott, 2nd Duke of Buccleuch"@en ;
+  gen:birthDate "1695-01-11" ;
+  gen:deathDate "1751-04-22" ;
+  gen:father <https://www.wikidata.org/wiki/Q362651> ;
+  gen:mother <#Lady_Henrietta_Hyde> .
+  # oo Lady Jane Douglas, 1701-05-24 – 1729-08-31
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q335289> , <https://www.wikidata.org/wiki/Q47508138> ;
+	gen:startDate "1720-04-05" .
+  # oo Alice Powell, d. 1765-12-31, daughter of Joseph Powell
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q335289> , <#Alice_Powell> ;
+	gen:startDate "1744-09-04" .
+<#Francis_Scott,_2nd_Earl_of_Deloraine>
+  gen:name "Francis Scott, 2nd Earl of Delorain"@en ;
+  gen:birthDate "1710-10-05" ;
+  gen:deathDate "1739-05-11" ;
+  gen:father <https://www.wikidata.org/wiki/Q5728124> ;
+  gen:mother <#Anne_Duncombe> .
+<#Henry_Scott,_3rd_Earl_of_Deloraine>
+  gen:name "Henry Scott, 3rd Earl of Delorain"@en ;
+  gen:birthDate "1712-02-11" ;
+  gen:deathDate "1740-01-31" ;
+  gen:father <https://www.wikidata.org/wiki/Q5728124> ;
+  gen:mother <#Anne_Duncombe> .
+  # oo Elizabeth Fenwick, d. 1794-06-05, daughter of John Fenwick
+  []
+    gen:spouse <#Henry_Scott,_3rd_Earl_of_Deloraine> , <#Elizabeth_Fenwick> .
+<#Lady_Georgiana_Caroline_Scott>
+  gen:name "Lady Georgiana Caroline Scott"@en ;
+  gen:birthDate "1727-02" ;
+  gen:deathDate "1809-10-13" ;
+  gen:father <https://www.wikidata.org/wiki/Q5728124> ;
+  gen:mother <howard.ttl#Mary_Howard_(died_1744)> .
+  # oo 1747-08-19 James Peachey, 1st Baron Selsey, 1723-03-08 – 1808-02-01, https://www.wikidata.org/wiki/Q6141090
+
+<https://www.wikidata.org/wiki/Q5482414>
+  gen:name "Francis Scott, Earl of Dalkeith"@en ;
+  gen:birthDate "1721-02-19" ;
+  gen:deathDate "1750-04-01" ;
+  gen:father <https://www.wikidata.org/wiki/Q335289> ;
+  gen:mother <https://www.wikidata.org/wiki/Q47508138> .
+  # oo Caroline Campbell, Baroness Greenwich, 1717-11-17 - 1794-01-11
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5482414> , <https://www.wikidata.org/wiki/Q5045242> ;
+	gen:startDate "1742-10-02" .
+<#Henry_Scott,_4th_Earl_of_Delorain>
+  # Henry Scott, 4th Earl of Delorain, 1737-02-08 - 1807-09-10
+  gen:father <#Henry_Scott,_3rd_Earl_of_Deloraine> ;
+  gen:mother <#Elizabeth_Fenwick> .
+  # oo Frances Heath, d. 1782-02~, daughter of Thomas Heath
+  []
+    gen:spouse <#Henry_Scott,_4th_Earl_of_Delorain> , <#Frances_Heath> ;
+	gen:startDate "1763-11-16" .
+
+<https://www.wikidata.org/wiki/Q335286>
+  gen:name "Henry Scott, 3rd Duke of Buccleuch"@en ;
+  # 6th Baron Scott of Quhitchester and Eskdaill, 7th Lord Scott of Buccleuch, 3rd Baron Scott of Tindall, Northumberland, 3rd Earl of Dalkeith, 3rd Duke of Buccleuch, 3rd Earl of Doncaster, co. York, 3rd Lord Scott of Whitchester and Eskdale 1751-04-22
+  # 5th Earl of Drumlanrig and Sanquhar, 5th Marquess of Dumfriesshire, 5th Viscount of Nith, Torthorwald and Ross, 5th Duke of Queensberry, 5th Lord Douglas of Kinmont, Midlebie and Dornock 1810-12-23
+  gen:birthDate "1746-09-02" ;
+  gen:deathDate "1812-01-11" ;
+  gen:father <https://www.wikidata.org/wiki/Q5482414> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5045242> .
+  # oo Lady Elizabeth Montagu, 1743-05-29 - 1827-11-21 # -> brudenell.ttl
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q335286> , <https://www.wikidata.org/wiki/Q28811505> ;
+	gen:startDate "1767-05-02" .
+<https://www.wikidata.org/wiki/Q47514975>
+  gen:name "Lady Frances Scott"@en ;
+  gen:birthDate "1750-07-25" ;
+  gen:deathDate "1817-03-31" ;
+  gen:father <https://www.wikidata.org/wiki/Q5482414> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5045242> .
+  # oo 1783-05-13 Archibald James Edward Douglas, 1st Baron Douglas of Douglas, 1748-07-10 - 1827-12-26, https://www.wikidata.org/wiki/Q4786286
+
+<https://www.wikidata.org/wiki/Q50849524>
+  gen:name "George Scott, Earl of Dalkeith"@en ;
+  gen:birthDate "1768-03-25" ;
+  gen:deathDate "1768-05-29" ;
+  gen:father <https://www.wikidata.org/wiki/Q335286> ;
+  gen:mother <https://www.wikidata.org/wiki/Q28811505> .
+<https://www.wikidata.org/wiki/Q16773606>
+  gen:name "Lady Mary Scott"@en ;
+  gen:birthDate "1769-05-21" ;
+  gen:deathDate "1823-04-21" ;
+  gen:father <https://www.wikidata.org/wiki/Q335286> ;
+  gen:mother <https://www.wikidata.org/wiki/Q28811505> .
+  # oo 1791-01-29 James George Stopford, 3d Earl of Courtown, 1765-08-15 - 1835-06-15, https://www.wikidata.org/wiki/Q6143716
+<#Lady_Elizabeth_Scott_(died_1837)>
+  gen:name "Lady Elizabeth Scott"@en ;
+  gen:birthDate "1770-10-10" ;
+  gen:deathDate "1837-06-29" ;
+  gen:father <https://www.wikidata.org/wiki/Q335286> ;
+  gen:mother <https://www.wikidata.org/wiki/Q28811505> .
+  # oo 1798-11-06 Alexander Ramey-Home, 10th Earl of Home, 1769-11-11 - 1841-10-21, https://www.wikidata.org/wiki/Q22020162
+<https://www.wikidata.org/wiki/Q337447>
+  gen:name "Charles William Henry Montagu Scott, 4th Duke of Buccleuch"@en ;
+  gen:birthDate "1772-05-24" ;
+  gen:deathDate "1819-04-20" ;
+  gen:father <https://www.wikidata.org/wiki/Q335286> ;
+  gen:mother <https://www.wikidata.org/wiki/Q28811505> .
+  # oo Hon. Harriet Katherine Townshend, 1773-11-29 - 1814-08-24
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q337447> , <#Harriet_Katherine_Townshend> ;
+	gen:startDate "1795-03-24" .
+<#Lady_Caroline_Scott>
+  gen:name "Lady Caroline Scott"@en ;
+  gen:birthDate "1774-07-06" ;
+  gen:deathDate "1854-04-29" ;
+  gen:father <https://www.wikidata.org/wiki/Q335286> ;
+  gen:mother <https://www.wikidata.org/wiki/Q28811505> .
+  # oo 1803-08-13 Charles Douglas, 6th Marquess of Queensberry, 1777-03 - 1837-12-03, https://www.wikidata.org/wiki/Q5076938
+<#Henry_James_Montagu-Scott,_2nd_Baron_Montagu_of_Boughton>
+  gen:name "Henry James Montagu-Scott, 2nd Baron Montagu of Boughton"@en ;
+  # 2nd Baron Montagu of Boughton 1790-05-23
+  gen:birthDate "1776-12-16" ;
+  gen:deathDate "1845-10-30" ;
+  gen:father <https://www.wikidata.org/wiki/Q335286> ;
+  gen:mother <https://www.wikidata.org/wiki/Q28811505> .
+  # oo Hon. Jane Margaret Douglas, 1779-12-21 - 1859-01-08, daughter of Archibald James Edward Douglas, 1st Baron Douglas of Douglas and Lady Lucy Graham
+  []
+    gen:spouse <#Henry_James_Montagu-Scott,_2nd_Baron_Montagu_of_Boughton> , <douglas.ttl#Jane_Margaret_Douglas> ;
+	gen:startDate "1804-11-22" .
+<#Lady_Harriet_Scott>
+  gen:name "Lady Harriet Scott"@en ;
+  gen:birthDate "1780-12-01" ;
+  gen:deathDate "1833-04-18" ;
+  gen:father <https://www.wikidata.org/wiki/Q335286> ;
+  gen:mother <https://www.wikidata.org/wiki/Q28811505> .
+  # oo 1806-12-01 William Kerr, 6th Marquess of Lothian, 1763-10-04 - 1824-04-27, https://www.wikidata.org/wiki/Q2782378
+
+<https://www.wikidata.org/wiki/Q16773613>
+  gen:name "Lady Charlotte Albina Montagu-Scott"@en ;
+  gen:birthDate "1799-07-16" ;
+  gen:deathDate "1828-02-29" ;
+  gen:father <https://www.wikidata.org/wiki/Q337447> ;
+  gen:mother <#Harriet_Katherine_Townshend> .
+  # oo 1822-07-04 James Thomas Stopford, 4th Earl of Courtown, 1794-03-27 - 1858-11-20, https://www.wikidata.org/wiki/Q6143718, son of https://www.wikidata.org/wiki/Q6143716 and https://www.wikidata.org/wiki/Q16773606
+<#Lady_Isabella_Mary_Montagu_Scott>
+  gen:name "Lady Isabella Mary Montagu-Scott"@en ;
+  gen:birthDate "1800-10-24" ;
+  gen:deathDate "1829-10-09" ;
+  gen:father <https://www.wikidata.org/wiki/Q337447> ;
+  gen:mother <#Harriet_Katherine_Townshend> .
+  # oo 1823-10-09 Hon. Peregrine Francis Cust, 1791-08-13 - 1873-09-15, son of https://www.wikidata.org/wiki/Q4976607 and Frances Bankes
+<https://www.wikidata.org/wiki/Q2702418>
+  gen:name "Walter Francis Montagu Douglas Scott, 5th Duke of Buccleuch"@en ;
+  gen:birthDate "1806-11-25" ;
+  gen:deathDate "1884-04-16" ;
+  gen:father <https://www.wikidata.org/wiki/Q337447> ;
+  gen:mother <#Harriet_Katherine_Townshend> .
+  # oo Lady Charlotte Anne Thynne, 1811-04-10 – 1895-03-18, daughter of https://www.wikidata.org/wiki/Q43942 and Hon. Isabella Elizabeth Byng
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2702418> , <https://www.wikidata.org/wiki/Q305512> ;
+	gen:startDate "1829-03-13" .
+<https://www.wikidata.org/wiki/Q23617099>
+  gen:name "Lord John Douglas Montagu-Scott"@en ;
+  gen:birthDate "1809-07-13" ;
+  gen:deathDate "1860-01-03" ;
+  gen:father <https://www.wikidata.org/wiki/Q337447> ;
+  gen:mother <#Harriet_Katherine_Townshend> .
+  # oo 1836-03-11 Alice Anne Spottiswoode, 1810-06-24 - 1900-03-12, https://www.wikidata.org/wiki/Q3931581, daughter of John Spottiswoode of Spottiswoode and Helen Wauchope
+<#Lady_Margaret_Harriet_Montagu_Scott>
+  gen:name "Lady Margaret Harriet Montagu-Scott"@en ;
+  gen:birthDate "1811-06-12" ;
+  gen:deathDate "1846-06-05" ;
+  gen:father <https://www.wikidata.org/wiki/Q337447> ;
+  gen:mother <#Harriet_Katherine_Townshend> .
+  # oo 1832-02-07 Charles Marsham, 3d Earl of Romney, 1808-07-30 - 1874-09-03, https://www.wikidata.org/wiki/Q5080686
+<#Lady_Harriet_Janet_Sarah_Scott>
+  gen:name "Lady Harriet Janet Sarah Montagu-Scott"@en ;
+  gen:birthDate "1814-08-13" ;
+  gen:deathDate "1870-02-16" ;
+  gen:father <https://www.wikidata.org/wiki/Q337447> ;
+  gen:mother <#Harriet_Katherine_Townshend> .
+  # oo 1842-03-29 Rev. Edward Moore, 1814 - 1889, son of Rev. George Moore (son of https://www.wikidata.org/wiki/Q744064 and Catherine Eden) and oo Harriet Mary Bridges (daughter of https://www.wikidata.org/wiki/Q7526145 and Fanny Fowler)
+<#Lucy_Elizabeth_Montagu-Scott>
+  # Hon. Lucy Elizabeth Montagu-Scott, 1805-11-14 - 1877-05-15
+  gen:father <#Henry_James_Montagu-Scott,_2nd_Baron_Montagu_of_Boughton> ;
+  gen:mother <douglas.ttl#Jane_Margaret_Douglas> .
+  # oo 1832-12-04 Cospatrick Alexander Home, 11th Earl of Home, 1799-10-27 - 1881-07-04, https://www.wikidata.org/wiki/Q5174670
+<#Mary_Margaret_Montagu-Scott>
+  # Mary Margaret Montagu-Scott, 1807-02-05 - 1885-06-30
+  gen:father <#Henry_James_Montagu-Scott,_2nd_Baron_Montagu_of_Boughton> ;
+  gen:mother <douglas.ttl#Jane_Margaret_Douglas> .
+  # oo 1840-07-09 Frederick Clinton, 1804-08-28 - 1870-11-09, son of https://www.wikidata.org/wiki/Q8011942 and stanley.ttl#Louisa_Dorothea_Holroyd
+<#Caroline_Georgiana_Montagu-Scott>
+  # Hon. Caroline Georgiana Montagu-Scott, 1811-03-03 - 1891-12-05
+  gen:father <#Henry_James_Montagu-Scott,_2nd_Baron_Montagu_of_Boughton> ;
+  gen:mother <douglas.ttl#Jane_Margaret_Douglas> .
+  # oo 1836-03-05 George William Hope, of Luffness, 1808-07-04 - 1863-10-18, hope.ttl#George_William_Hope,_of_Luffness
+
+<https://www.wikidata.org/wiki/Q337468>
+  gen:name "William Henry Walter Montagu Douglas Scott, 6th Duke of Buccleuch"@en ;
+  gen:birthDate "1831-09-09" ;
+  gen:deathDate "1914-11-05" ;
+  gen:father <https://www.wikidata.org/wiki/Q2702418> ;
+  gen:mother <https://www.wikidata.org/wiki/Q305512> .
+  # oo Lady Louisa Jane Hamilton, 1836-08-26 - 1912-03-16
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q337468> , <https://www.wikidata.org/wiki/Q3837639> ;
+	gen:startDate "1859-11-22" .
+<https://www.wikidata.org/wiki/Q664073> # -> Baron Montagu of Beaulieu
+  # Henry John Douglas-Scott-Montagu, 1st Baron Montagu of Beaulieu, 1832-11-05 - 1905-11-04
+  gen:father <https://www.wikidata.org/wiki/Q2702418> ;
+  gen:mother <https://www.wikidata.org/wiki/Q305512> .
+<#Lord_Walter_Charles_Montagu_Douglas_Scott>
+  gen:name "Lord Walter Charles Montagu-Douglas-Scott"@en ;
+  gen:birthDate "1834-03-02" ;
+  gen:deathDate "1895-03-03" ;
+  gen:father <https://www.wikidata.org/wiki/Q2702418> ;
+  gen:mother <https://www.wikidata.org/wiki/Q305512> .
+  # oo Anna Maria Hartopp, 1837-07-23 - 1886-05-29,  daughter of https://www.wikidata.org/wiki/Q27087917 and Jane Mary Keane
+  []
+    gen:spouse <#Lord_Walter_Charles_Montagu_Douglas_Scott> , <#Anna_Maria_Hartopp> ;
+	gen:startDate "1858-10-07" .
+<https://www.wikidata.org/wiki/Q6679052>
+  gen:name "Lord Sir Charles Thomas Montagu Douglas Scott"@en ;
+  gen:birthDate "1839-10-20" ;
+  gen:deathDate "1911-08-21" ;
+  gen:father <https://www.wikidata.org/wiki/Q2702418> ;
+  gen:mother <https://www.wikidata.org/wiki/Q305512> .
+  # oo Ada Mary Ryan, 1855-05-09 - 1943-11-21, daughter of Charles Ryan
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6679052> , <#Ada_Mary_Ryan> ;
+	gen:startDate "1883-02-23" .
+<#Lady_Victoria_Alexandrina_Montagu_Douglas_Scott>
+  gen:name "Lady Victoria Alexandrina Montagu Douglas Scott"@en ;
+  gen:birthDate "1844-11-20" ;
+  gen:deathDate "1938-06-19" ;
+  gen:father <https://www.wikidata.org/wiki/Q2702418> ;
+  gen:mother <https://www.wikidata.org/wiki/Q305512> .
+  # oo 1865-02-23 Schomberg Kerr, 9th Marquess of Lothian, 1833-12-02 - 1900-01-17, https://www.wikidata.org/wiki/Q2782520
+  # oo 1903-02-21 Bertram Chetwynd Talbot, 1865-04-27 - 1936-05-05, talbot.ttl#Bertram_Chetwynd_Talbot
+<#Lady_Margaret_Elizabeth_Montagu_Douglas_Scott>
+  gen:name "Lady Margaret Elizabeth Montagu-Douglas-Scott"@en ;
+  gen:birthDate "1846-10-10" ;
+  gen:deathDate "1918-02-05" ;
+  gen:father <https://www.wikidata.org/wiki/Q2702418> ;
+  gen:mother <https://www.wikidata.org/wiki/Q305512> .
+  # oo 1875-12-09 Donald Cameron of Lochiel, 24th Chief of Clan Cameron, 1835-04-05 - 1905-12-08, https://www.wikidata.org/wiki/Q5294124
+<#Lady_Mary_Charlotte_Montagu_Douglas_Scott>
+  gen:name "Lady Mary Charlotte Montagu-Douglas-Scott"@en ;
+  gen:birthDate "1851-08-06" ;
+  gen:deathDate "1908-12-13" ;
+  gen:father <https://www.wikidata.org/wiki/Q2702418> ;
+  gen:mother <https://www.wikidata.org/wiki/Q305512> .
+  # oo 1877-07-24 Hon. Walter Rodolph Trefusis, 1838-01-05 - 1885-12-03, kerr.ttl#Walter_Rodolph_Trefusis
+
+<https://www.wikidata.org/wiki/Q9370698>
+  gen:name "Walter Henry Montagu Douglas Scott, Earl of Dalkeith"@en ;
+  gen:birthDate "1861-01-17" ;
+  gen:deathDate "1886-09-18" ;
+  gen:father <https://www.wikidata.org/wiki/Q337468> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3837639> .
+<https://www.wikidata.org/wiki/Q337464>
+  gen:name "John Charles Montagu Douglas Scott, 7th Duke of Buccleuch"@en ;
+  gen:birthDate "1864-03-30" ;
+  gen:deathDate "1935-10-19" ;
+  gen:father <https://www.wikidata.org/wiki/Q337468> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3837639> .
+  # oo Lady Margaret Alice "Molly" Bridgeman, 1872-01-20 - 1954-08-07
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q337464> , <#Lady_Margaret_Alice_Bridgeman> ;
+	gen:startDate "1893-01-30" .
+<https://www.wikidata.org/wiki/Q9267268>
+  gen:name "Lord George William Montagu Douglas Scott"@en ;
+  gen:birthDate "1866-08-31" ;
+  gen:deathDate "1947-02-23" ;
+  gen:father <https://www.wikidata.org/wiki/Q337468> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3837639> .
+  # oo Lady Elizabeth Emily Manners, 1878-02-06 - 1924-07-22
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q9267268> , <https://www.wikidata.org/wiki/Q19403830> ;
+	gen:startDate "1903-04-30" .
+<#Lord_Henry_Francis_Montagu_Douglas_Scott>
+  gen:name "Lord Henry Francis Montagu Douglas Scott"@en ;
+  gen:birthDate "1868-01-15" ;
+  gen:deathDate "1945-04-19" ;
+  gen:father <https://www.wikidata.org/wiki/Q337468> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3837639> .
+<https://www.wikidata.org/wiki/Q6678918>
+  gen:name "Lord Herbert Andrew Montagu Douglas Scott"@en ;
+  gen:birthDate "1872-11-30" ;
+  gen:deathDate "1944-06-17" ;
+  gen:father <https://www.wikidata.org/wiki/Q337468> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3837639> .
+  # oo Marie Josephine Edwards, d. 1965-02-15
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6678918> , <#Marie_Josephine_Edwards> ;
+	gen:startDate "1905-04-26" .
+<#Lady_Katharine_Mary_Montagu_Douglas_Scott>
+  gen:name "Lady Katharine Mary Montagu Douglas Scott"@en ;
+  gen:birthDate "1875-03-25" ;
+  gen:deathDate "1951-03-07" ;
+  gen:father <https://www.wikidata.org/wiki/Q337468> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3837639> .
+  # oo 1899-04-29 Thomas Walter Brand, 3rd Viscount Hampden of Glynde, 1869-01-29 - 1958-09-04, https://www.wikidata.org/wiki/Q7787829
+<#Lady_Constance_Anne_Montagu_Douglas_Scott>
+  gen:name "Lady Constance Anne Montagu Douglas Scott"@en ;
+  gen:birthDate "1877-03-10" ;
+  gen:deathDate "1970-05-07" ;
+  gen:father <https://www.wikidata.org/wiki/Q337468> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3837639> .
+  # oo 1908-01-21 Hon. Douglas Halyburton Cairns, 1867-09-05 - 1936-03-06, son of https://www.wikidata.org/wiki/Q333804 and Mary Harriet McNeill
+<https://www.wikidata.org/wiki/Q9262123>
+  gen:name "Lord Sir Francis George Montagu Douglas Scott"@en ;
+  gen:birthDate "1879-11-01" ;
+  gen:deathDate "1952-07-26" ;
+  gen:father <https://www.wikidata.org/wiki/Q337468> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3837639> .
+  # oo Lady Eileen Nina Evelyn Sibell Elliot-Murray-Kynynmound, 1884-12-13 - 1938-05-29, daughter of https://www.wikidata.org/wiki/Q336280 and Lady Mary Caroline Grey
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q9262123> , <#Lady_Eileen_Nina_Evelyn_Sibell_Elliot-Murray-Kynynmound> ;
+	gen:startDate "1915-02-11" .
+<#Francis_Walter_Montagu_Douglas_Scott>
+  # Francis Walter Montagu Douglas Scott, 1860-03-05 - 1942-01-05
+  gen:father <#Lord_Walter_Charles_Montagu_Douglas_Scott> ;
+  gen:mother <#Anna_Maria_Hartopp> .
+  # oo 1896-04-06 Katherine Charlotte Portal, 1866-06-04 - 1917-11-12
+  # oo 1929-05-25 Ethelrada Marjory Bridges, 1877 - 1961-11-04, daughter of Rev. Thomas Lane Coulson Bridges (1844~ - 1932-10-11) and oo 1875-04-06 Catharine Eva Stuart (1854~ - 1897-06-01, daughter of Sir Simeon Henry Stuart, of Hartley Mauduit, 6th Baronet (1823-06-15 - 1891-08-21, son of Sir Simeon Henry Stuart, 5th Baronet (1790-10-23 - 1868-10-23, son of Sir Simeon Stuart, 4th Baronet (d. 1816-01-14, son of Sir Simeon Stuart, 3rd Baronet (1721~ - 1799-11-19, https://www.wikidata.org/wiki/Q26905830, son of Sir Simeon Stuart, 2nd Baronet (d. 1761-08-11, son of Charles Stuart (1657 - 1709b, son of Sir Nicholas Stuart, 1st Baronet (1st Baronet Stuart, of Hartley Mauduit, co. Southampton 1660-06-27, 1618-02-11 – 1710-02-15, https://www.wikidata.org/wiki/Q21166857, son of Simeon Stuart (son of Nicholas Stuart (son of Simeon Stuart (son of Nicholas Stuart (son of Richard Stuart (son of Thomas Stuart (son of Sir John Stuart (son of John Stuart (son of Alexander Stuart (son of Andrew Stuart (son of Alexander Stuart (son of Walter Stuart, Seneschal of Scotland (son of unknown Stuart (son of unknown Stuart (son of Walter fitz Alan, 1st High Steward of Scotland (d. 1177, son of Alan fitz Flaald and Aveline de Hesding)))))))) and Mary Talmache) and ??? Keyriell (daughter of Sir Thomas Keyriell)) and ??? Humerston (daughter of John Humerston)) and ??? Boreley (daughter of John Boreley)) and Cecilia Baskerville) and Johanna Bestney (daughter of Edward Bestney))) and oo 1616 Dorothy Ingoldsby (daughter of Sir Richard Ingoldsby and Elizabeth Palmer)) and oo 1641-04-29 Mary Sandys (daughter of Sir Miles Sandys)) and oo 1678-08-12 Clemence Hovell (daughter of Sir William Hovell (https://www.wikidata.org/wiki/Q53626975 ?))) and oo Elizabeth Dereham (daughter of Sir Richard Dereham, 3rd Baronet and Frances Danvers)) and oo ??? Hooke) and oo 1789-05-20 Lady Frances Maria Luttrell (1768-09 - 1848-01-04, daughter of https://www.wikidata.org/wiki/Q16274769 and Elizabeth Olmius)) and oo 1815-10-25 Georgiana Frances Gun (d. 1840-01-16, daughter of George Gun Cuninghame and Jean Gordon)) and oo 1850-10-15 Catherine Henrietta Worrall (1829-04-11 - 1897-12-14, daughter of Lt.-Gen. Henry Lechmere Worrall and Catharine Barron Spottiswood))
+<#Evelyn_Mary_Montagu_Douglas_Scott>
+  # Evelyn Mary Montagu Douglas Scott, 1865-08-04 - 1948-12-19
+  gen:father <#Lord_Walter_Charles_Montagu_Douglas_Scott> ;
+  gen:mother <#Anna_Maria_Hartopp> .
+  # oo 1898-11-16 Rev. Thomas Lane Coulson Bridges, 1844~ - 1932-10-11, son of Henry Thomas Bridges and Clara Greenly Coulson
+<#Sir_David_John_Montagu-Douglas-Scott>
+  # Sir David John Montagu-Douglas-Scott, 1887-03-07 - 1986-08-22
+  gen:father <https://www.wikidata.org/wiki/Q6679052> ;
+  gen:mother <#Ada_Mary_Ryan> .
+  # oo Dorothy Charlotte Drummond, 1885-09-13 - 1965-12-03
+  []
+    gen:spouse <#Sir_David_John_Montagu-Douglas-Scott> , <drummond.ttl#Dorothy_Charlotte_Drummond> ;
+	gen:startDate "1918-06-14" .
+  # oo 1970-07-31 Valerie Finnis, 1924-10-31 - 2006-10-17, daughter of Commander Steriker Finnis and Constance Mary Barford
+  []
+    gen:spouse <#Sir_David_John_Montagu-Douglas-Scott> , <#Valerie_Finnis> ;
+	gen:startDate "1970-07-31" .
+
+<#Lady_Margaret_Ida_Montagu_Douglas_Scott>
+  gen:name "Lady Margaret Ida Montagu Douglas Scott"@en ;
+  gen:birthDate "1893-11-13" ;
+  gen:deathDate "1976-12-17" ;
+  gen:father <https://www.wikidata.org/wiki/Q337464> ;
+  gen:mother <#Lady_Margaret_Alice_Bridgeman> .
+  # oo 1926-02-16 Sir Geoffrey Alan Brooke Hawkins, 1895-07-13 – 1980-10-05, https://www.wikidata.org/wiki/Q19664301
+<https://www.wikidata.org/wiki/Q2602495>
+  gen:name "Walter John Montagu Douglas Scott, 8th Duke of Buccleuch"@en ;
+  gen:birthDate "1894-12-30" ;
+  gen:deathDate "1973-10-04" ;
+  gen:father <https://www.wikidata.org/wiki/Q337464> ;
+  gen:mother <#Lady_Margaret_Alice_Bridgeman> .
+  # oo Vreda Esther Mary Lascelles, 1900-09-17 - 1993-02-09
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2602495> , <https://www.wikidata.org/wiki/Q6780362> ;
+	gen:startDate "1921-04-21" .
+<https://www.wikidata.org/wiki/Q6680030>
+  gen:name "Lord William Walter Montagu Douglas Scott"@en ;
+  gen:birthDate "1896-01-17" ;
+  gen:deathDate "1958-01-30" ;
+  gen:father <https://www.wikidata.org/wiki/Q337464> ;
+  gen:mother <#Lady_Margaret_Alice_Bridgeman> .
+  # oo Lady Rachel Douglas-Home, 1910-04-10 - 1996-04-04
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6680030> , <home.ttl#Lady_Rachel_Douglas-Home> ;
+	gen:startDate "1937-04-27" .
+<#Lady_Sybil_Anne_Montagu_Douglas_Scott>
+  gen:name "Lady Sybil Anne Montagu Douglas Scott"@en ;
+  gen:birthDate "1899-07-14" ;
+  gen:deathDate "1990-11-01" ;
+  gen:father <https://www.wikidata.org/wiki/Q337464> ;
+  gen:mother <#Lady_Margaret_Alice_Bridgeman> .
+  # oo 1919-05-14 Charles Bathurst Hele Phipps, 1889-03-29 - 1960-01-12, #Charles_Bathurst_Hele_Phipps
+<https://www.wikidata.org/wiki/Q246915>
+  gen:name "Lady Alice Christabel Montagu Douglas Scott"@en ;
+  gen:birthDate "1901-12-25" ;
+  gen:deathDate "2004-10-29" ;
+  gen:father <https://www.wikidata.org/wiki/Q337464> ;
+  gen:mother <#Lady_Margaret_Alice_Bridgeman> .
+  # oo 1935-11-06 Henry William Frederick Albert Windsor, 1st Duke of Gloucester, 1900-03-31 - 1974-06-10, https://www.wikidata.org/wiki/Q117174
+<#Lady_Mary_Theresa_Montagu_Douglas_Scott>
+  gen:name "Lady Mary Theresa Montagu Douglas Scott"@en ;
+  gen:birthDate "1904-03-04" ;
+  gen:deathDate "1984-06-01" ;
+  gen:father <https://www.wikidata.org/wiki/Q337464> ;
+  gen:mother <#Lady_Margaret_Alice_Bridgeman> .
+  # oo 1929-01-10 (div 1946) David George Brownlow Cecil, 6th Marquess of Exeter, 1905-02-09 - 1981-10-21, https://www.wikidata.org/wiki/Q1628
+<#Lady_Angela_Christine_Rose_Montagu_Douglas_Scott>
+  gen:name "Lady Angela Christine Rose Montagu Douglas Scott"@en ;
+  gen:birthDate "1906-12-26" ;
+  gen:deathDate "2000-09-28" ;
+  gen:father <https://www.wikidata.org/wiki/Q337464> ;
+  gen:mother <#Lady_Margaret_Alice_Bridgeman> .
+  # oo 1936-04-28 Sir Peter Dawnay, 1904-08-14 - 1989-07-01, #Sir_Peter_Dawnay
+<#Lord_George_Francis_John_Montagu_Douglas_Scott>
+  gen:name "Lord George Francis John Montagu Douglas Scott"@en ;
+  gen:birthDate "1911-07-08" ;
+  gen:deathDate "1999-06-08" ;
+  gen:father <https://www.wikidata.org/wiki/Q337464> ;
+  gen:mother <#Lady_Margaret_Alice_Bridgeman> .
+  # oo 1938-12-16 Mary Winona Mannin Bishop, 1911-12-12 - 1998-11-01, daughter of Lt.-Col. Harry Oswald Bishop
+<#Phyllis_Anne_Montagu_Douglas_Scott>
+  # Phyllis Anne Montagu Douglas Scott, 1904-03-03 - 1978-03-09
+  gen:father <https://www.wikidata.org/wiki/Q9267268> ;
+  gen:mother <https://www.wikidata.org/wiki/Q19403830> .
+  # oo 1924-06-14 (div 1944) Thomas Pitt Hamilton Cholmondeley, 4th Baron Delamere, 1900-08-19 - 1979-04-13, https://www.wikidata.org/wiki/Q7788405
+<#Jeanetta_Ruth_Montagu_Douglas_Scott>
+  # Jeanetta Ruth Montagu Douglas Scott, 1906-11-19 - 1997-09-06
+  gen:father <https://www.wikidata.org/wiki/Q9267268> ;
+  gen:mother <https://www.wikidata.org/wiki/Q19403830> .
+  # oo 1937-01-20 James William Stirling-Home-Drummond-Moray, 21st of Abercairny, 1900-11-08 - 1968-08-04, home.ttl#James_William_Stirling-Home-Drummond-Moray,_21st_of_Abercairny
+<#John_Henry_Montagu_Douglas_Scott>
+  # John Henry Montagu Douglas Scott, 1911-04-12 - 1991-10-13
+  gen:father <https://www.wikidata.org/wiki/Q9267268> ;
+  gen:mother <https://www.wikidata.org/wiki/Q19403830> .
+  # oo 1954-02-03 Anne Peace Arabella Mackintosh, 1918-09-24 - 2002, daughter of Captain Angus Alexander Mackintosh of Mackintosh, younger (1885 - 1918-10-13, son of Alfred Donald Mackintosh, 28th of Mackintosh and Harriet Diana Arabella Mary Richards) and oo 1917-11-03 Lady Maud Louisa Emma Cavendish (1896-04-20 - 1975-03-30, cavendish.ttl#Lady_Maud_Louisa_Emma_Cavendish)
+<#Claud_Everard_Walter_Montagu_Douglas_Scott>
+  # Claud Everard Walter Montagu Douglas Scott, b. 1915-10-12 - 1994-12-15
+  gen:father <https://www.wikidata.org/wiki/Q9267268> ;
+  gen:mother <https://www.wikidata.org/wiki/Q19403830> .
+  # oo Margaret Frances Philips, b. 1917-09-17, daughter of Brig.-Gen. Lewis Francis Philips and Margaret Aline Moreton Macdonald
+  []
+    gen:spouse <#Claud_Everard_Walter_Montagu_Douglas_Scott> , <#Margaret_Frances_Philips> ;
+	gen:startDate "1941-08-23" .
+<https://www.wikidata.org/wiki/Q5128621>
+  gen:name "Claud Andrew Montagu Douglas Scott"@en ;
+  gen:birthDate "1906-07-13" ;
+  gen:deathDate "1971-01-24" ;
+  gen:father <https://www.wikidata.org/wiki/Q6678918> ;
+  gen:mother <#Marie_Josephine_Edwards> .
+  # oo Lady Victoria Doris Rachel "Doria" Haig, 1908-11-07 - 1993-08-31
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5128621> , <#Lady_Victoria_Doris_Rachel_Haig> ;
+	gen:startDate "1929-08-10" ;
+	gen:divorceDate "1951" .
+  # oo Zalia Snagge, 1915-10 - 1986-01
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5128621> , <#Zalia_Snagge> ;
+	gen:startDate "1951-05-04" .
+<https://www.wikidata.org/wiki/Q4165911>
+  gen:name "Marian Louisa Montagu Douglas Scott"@en ;
+  gen:birthDate "1908-06-16" ;
+  gen:deathDate "1996-12-11" ;
+  gen:father <https://www.wikidata.org/wiki/Q6678918> ;
+  gen:mother <#Marie_Josephine_Edwards> .
+  # oo 1927-11-01 Andrew Henry Ferguson, 1899-10-10 - 1966-08-04, #Andrew_Henry_Ferguson
+  # oo 1968-10-30 Sir Thomas Walker Elmhirst, 1895-12-15 - 1982-12-06, https://www.wikidata.org/wiki/Q7789336
+<#Patricia_Katherine_Montagu_Douglas_Scott>
+  gen:name "Patricia Katherine Montagu Douglas Scott"@en ;
+  gen:birthDate "1910-10-09" ;
+  gen:deathDate "2012-12-03" ;
+  gen:father <https://www.wikidata.org/wiki/Q6678918> ;
+  gen:mother <#Marie_Josephine_Edwards> .
+  # oo 1931-07-08 Walter Douglas Faulkner, 1898-08-16 - 1940-05-14, son of James Faulkner
+  # oo 1940-09-09 Hon. David Scrymgeour-Wedderburn, 1912-04-02 - 1944-03-01, #David_Scrymgeour-Wedderburn
+  # oo 1946-10-30 Henry James Scrymgeour-Wedderburn, 11th Earl of Dundee, 1902-05-03 - 1983-06-29, https://www.wikidata.org/wiki/Q5728164
+
+<https://www.wikidata.org/wiki/Q5362685>
+  gen:name "Lady Elizabeth Diana Montagu Douglas Scott"@en ;
+  gen:birthDate "1922-01-20" ;
+  gen:deathDate "2012-09-19" ;
+  gen:father <https://www.wikidata.org/wiki/Q2602495> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6780362> .
+  # oo 1946-06-12 Hugh Algernon Percy, 10th Duke of Northumberland, 1914-04-06 - 1988-10-11, https://www.wikidata.org/wiki/Q6017961
+<https://www.wikidata.org/wiki/Q333214>
+  gen:name "Walter Francis _John_ Montagu Douglas Scott, 9th Duke of Buccleuch"@en ;
+  gen:birthDate "1923-09-28" ;
+  gen:deathDate "2007-09-04" ;
+  gen:father <https://www.wikidata.org/wiki/Q2602495> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6780362> .
+  # oo Jane McNeill, 1929-12-19 - 2011-04-18
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q333214> , <https://www.wikidata.org/wiki/Q6152730> ;
+	gen:startDate "1953-01-10" .
+<#Lady_Caroline_Margaret_Montagu_Douglas_Scott>
+  gen:name "Lady Caroline Margaret Montagu Douglas Scott"@en ;
+  gen:birthDate "1927-11-07" ;
+  gen:deathDate "2004-10-17" ;
+  gen:father <https://www.wikidata.org/wiki/Q2602495> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6780362> .
+  # oo 1951-07-10 Ian Hedworth John Little Gilmour, Baron Gilmour of Craigmillar, 1926-07-08 – 2007-09-21, https://www.wikidata.org/wiki/Q333362
+<#Margaret_Elizabeth_Montagu_Douglas_Scott>
+  gen:name "Margaret Elizabeth Montagu Douglas Scott"@en ;
+  gen:birthDate "1938-04-19" ;
+  gen:father <https://www.wikidata.org/wiki/Q6680030> ;
+  gen:mother <home.ttl#Lady_Rachel_Douglas-Home> .
+<#Frances_Henrietta_Montagu_Douglas_Scott>
+  gen:name "Frances Henrietta Montagu Douglas Scott"@en ;
+  gen:birthDate "1940-08-03" ;
+  gen:deathDate "2000-08-21" ;
+  gen:father <https://www.wikidata.org/wiki/Q6680030> ;
+  gen:mother <home.ttl#Lady_Rachel_Douglas-Home> .
+  # oo 1968-01-18 Philip Bertram Gurdon, 3rd Baron Cranworth of Letton and Cranworth, b. 1940-05-24, https://www.wikidata.org/wiki/Q26208373
+<#Rosemary_Alice_Montagu_Douglas_Scott>
+  gen:name "Rosemary Alice Montagu Douglas Scott"@en ;
+  gen:birthDate "1940-08-03" ;
+  gen:deathDate "2015-07-10" ;
+  gen:father <https://www.wikidata.org/wiki/Q6680030> ;
+  gen:mother <home.ttl#Lady_Rachel_Douglas-Home> .
+  # oo 1978-02-22 Samuel Alexander Mark Collins, #Samuel_Alexander_Mark_Collins
+<#Jean_Louise_Montagu_Douglas_Scott>
+  gen:name "Jean Louise Montagu Douglas Scott"@en ;
+  gen:birthDate "1943-06-06" ;
+  gen:father <https://www.wikidata.org/wiki/Q6680030> ;
+  gen:mother <home.ttl#Lady_Rachel_Douglas-Home> .
+  # oo 1968-03-14 Sir George Christopher Cadafael Tapps-Gervis-Meyrick, 7th Baronet, b. 1941-03-10, son of Sir George David Eliott Tapps Gervis Meyrick, 6th Baronet (1915-04-15 - 1988, son of Sir George Llewelyn Tapps Gervis Meyrick, 5th Baronet (1885-09-23 - 1960-04-22, son of Sir George Augustus Eliott Tapps Gervis Meyrick, 4th Baronet (1855-03-09 - 1928-05-12, son of Sir George Eliott Meyrick Tapps Gervis Meyrick, 3rd Baronet (1827-09-01 – 1896-03-07, https://www.wikidata.org/wiki/Q7526935) and oo 1849-12-04 Fanny Harland (1826~ - 1892-06-24)) and oo 1884-10-01 Jacintha Phipps (d. 1938-04-21)) and oo 1914-01-28 Marjorie Hamlin (1887~ - 1972-01-13)) and oo 1940-03-20 Ann Elizabeth Miller (d. 2007-05-06)
+<#Walter_William_Montagu_Douglas_Scott>
+  gen:name "Walter William Montagu Douglas Scott"@en ;
+  gen:birthDate "1946-06-24" ;
+  gen:father <https://www.wikidata.org/wiki/Q6680030> ;
+  gen:mother <home.ttl#Lady_Rachel_Douglas-Home> .
+  # oo 1991-09-16 Teresa Urbaniak, daughter of Anatole Urbaniak
+<#Georgina_Mary_Montagu_Douglas_Scott>
+  gen:name "Georgina Mary Montagu Douglas Scott"@en ;
+  gen:birthDate "1940-11-28" ;
+  gen:deathDate "2017-08-29" ;
+  gen:father <#Lord_George_Francis_John_Montagu_Douglas_Scott> ;
+  gen:mother <#Mary_Bishop> .
+  # oo 1963-06-10 Raymond O'Neill, 4th Baron O'Neill of Shane's Castle, b. 1933-09-01, https://www.wikidata.org/wiki/Q26214264
+<#Charmian_Rachel_Montagu_Douglas_Scott>
+  gen:name "Charmian Rachel Montagu Douglas Scott"@en ;
+  gen:birthDate "1942-07-18" ;
+  gen:deathDate "2009-04-05" ;
+  gen:father <#Lord_George_Francis_John_Montagu_Douglas_Scott> ;
+  gen:mother <#Mary_Bishop> .
+  # oo 1964-11-11 (div 1977) Archibald Hugh Stirling, Laird of Keir, b. 1941-09-18, https://www.wikidata.org/wiki/Q4786802
+  # oo 1987-03-26 Colin Guy Napier Campbell, b. 1930-07-14, campbell.ttl#Colin_Guy_Napier_Campbell
+<#David_Henry_George_Montagu_Douglas_Scott>
+  gen:name "David Henry George Montagu Douglas Scott"@en ;
+  gen:birthDate "1945-01-29" ;
+  gen:deathDate "2001-12-24" ;
+  gen:father <#Lord_George_Francis_John_Montagu_Douglas_Scott> ;
+  gen:mother <#Mary_Bishop> .
+  # oo Laura Jane Harmsworth, 1944-10-24 - 2009-04-15,  daughter of St. John Bernard Vyvyan Harmsworth and Jane Penelope Boothby
+  []
+    gen:spouse <#David_Henry_George_Montagu_Douglas_Scott> , <#Laura_Jane_Harmsworth> ;
+	gen:startDate "1967-06-10" .
+<#Douglas_Andrew_Montagu_Douglas_Scott>
+  gen:name "Douglas Andrew Montagu Douglas Scott"@en ;
+  gen:birthDate "1930-06-21" ;
+  gen:deathDate "2010-06-21" ;
+  gen:father <https://www.wikidata.org/wiki/Q5128621> ;
+  gen:mother <#Lady_Victoria_Doris_Rachel_Haig> .
+  # oo 1954-10-12 Bridget Elizabeth George, b.5 Feb 1931, daughter of https://www.wikidata.org/wiki/Q2157256
+  # oo 1977 (div 2000) Daphne Maureen Shortt, daughter of Dr. Cyril de Vere Shortt
+  # oo 2005-10-20 Monica Joan Hudson, daughter of James Edward Hudson
+<#Henrietta_Montagu_Douglas_Scott>
+  gen:name "Henrietta Montagu Douglas Scott"@en ;
+  gen:birthDate "1934-12-09" ;
+  gen:deathDate "2008-02-20" ;
+  gen:father <https://www.wikidata.org/wiki/Q5128621> ;
+  gen:mother <#Lady_Victoria_Doris_Rachel_Haig> .
+  # oo 1962-05-01 Sir Arthur John Stewart Griffin, 1924~ - 2009-04-01, son of Arthur Wilfred Michael Stewart Griffin
+<#Thomas_Walter_Montagu_Douglas_Scott>
+  # Thomas Walter Montagu Douglas Scott, b. 1943-07-01
+  gen:father <#Claud_Everard_Walter_Montagu_Douglas_Scott> ;
+  gen:mother <#Margaret_Frances_Philips> .
+  # oo 1973-06-09 Hon. Marion Miranda Phillimore, b. 1946-05-09, daughter of https://www.wikidata.org/wiki/Q5128641 and Anne Elizabeth Dorrien-Smith
+<#Katherine_Margaret_Montagu_Douglas_Scott>
+  # Katherine Margaret Montagu Douglas Scott, 1946-01-12 - 2008-11-01
+  gen:father <#Claud_Everard_Walter_Montagu_Douglas_Scott> ;
+  gen:mother <#Margaret_Frances_Philips> .
+  # oo 1975 (div 2003-01-19) Robert Vere Spencer Bernard, b. 1944-12-01, spencer.ttl#Robert_Vere_Spencer_Bernard
+<#Nicholas_Herbert_Montagu_Douglas_Scott>
+  gen:name "Nicholas Herbert Scott+"@en ;
+  gen:birthDate "1957-11-17" ;
+  gen:father <https://www.wikidata.org/wiki/Q5128621> ;
+  gen:mother <#Zalia_Snagge> .
+  # oo 2000 Slavka Brdar, daughter of Josip Brdar and Gojka (?)
+
+<https://www.wikidata.org/wiki/Q2079879>
+  gen:name "Richard Walter John Montagu Douglas Scott, 10th Duke of Buccleuch"@en ;
+  gen:birthDate "1954-02-14" ;
+  gen:father <https://www.wikidata.org/wiki/Q333214> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6152730> .
+  # oo Lady Elizabeth Marian Frances Kerr, b. 1954-06-08
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2079879> , <kerr.ttl#Lady_Elizabeth_Marion_Frances_Kerr> ;
+	gen:startDate "1981-10-31" .
+<#Lord_John_Montagu_Douglas_Scott>
+  gen:name "Lord William Henry John Montagu Douglas Scott"@en ;
+  gen:birthDate "1957-08-09" ;
+  gen:father <https://www.wikidata.org/wiki/Q333214> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6152730> .
+  # oo 1990-02-11 Hafize Berrin Torolsan, daughter of Halil Torolsan
+<#Lady_Charlotte-Anne_Montagu_Douglas_Scott>
+  gen:name "Lady Charlotte-Anne Montagu Douglas Scott"@en ;
+  gen:birthDate "1966-01-09" ;
+  gen:father <https://www.wikidata.org/wiki/Q333214> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6152730> .
+  # oo 1991-09-14 Comte Bernard de Castellane, b. 1959, son of Comte Albert de Castellane
+<#Lord_Damian_Torquil_Francis_Charles_Montagu_Douglas_Scott>
+  gen:name "Lord Damian Torquil Francis Charles Montagu Douglas Scott"@en ;
+  gen:birthDate "1969-10-08" ;
+  gen:father <https://www.wikidata.org/wiki/Q333214> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6152730> .
+  # oo 2001-04-21 Elisabeth Powis, daughter of Simon Powis
+<#Lucy_Rose_Montagu_Douglas_Scott>
+  gen:name "Lucy Rose Montagu Douglas Scott"@en ;
+  gen:birthDate "1969-05-18" ;
+  gen:father <#David_Henry_George_Montagu_Douglas_Scott> ;
+  gen:mother <#Laura_Jane_Harmsworth> .
+  # oo 1996 David C. Mabbs
+<#Harriet_Mary_Montagu_Douglas_Scott>
+  gen:name "Harriet Mary Montagu Douglas Scott"@en ;
+  gen:birthDate "1972" ;
+  gen:father <#David_Henry_George_Montagu_Douglas_Scott> ;
+  gen:mother <#Laura_Jane_Harmsworth> .
+  # oo 2006 Edward Luke John Daniel James
+
+<#Lady_Louisa_Jane_Therese_Montagu_Douglas_Scott>
+  gen:name "Lady Louisa Jane Therese Montagu Douglas Scott"@en ;
+  gen:birthDate "1982-10-01" ;
+  gen:father <https://www.wikidata.org/wiki/Q2079879> ;
+  gen:mother <kerr.ttl#Lady_Elizabeth_Marion_Frances_Kerr> .
+  # oo 2011-05-28 Rupert James Trotter, b. 1977-02-07, son of Alexander Richard Trotter, 14th of Mortonhall and 5th of Charterhall and Julia Henrietta Greenwell
+<https://www.wikidata.org/wiki/Q7966090>
+  gen:name "Walter John Francis Montagu Douglas Scott, Earl of Dalkeith"@en ;
+  gen:birthDate "1984-08-02" ;
+  gen:father <https://www.wikidata.org/wiki/Q2079879> ;
+  gen:mother <kerr.ttl#Lady_Elizabeth_Marion_Frances_Kerr> .
+  # oo 2014-11-22 Elizabeth Hanar Cobbe, daughter of Hugh Cobbe
+<#Charles_David_Peter_Montagu_Douglas_Scott>
+  gen:name "Hon. Charles David Peter Montagu Douglas Scott4"@en ;
+  gen:birthDate "1987-04-20" ;
+  gen:father <https://www.wikidata.org/wiki/Q2079879> ;
+  gen:mother <kerr.ttl#Lady_Elizabeth_Marion_Frances_Kerr> .
+<#Lady_Amabel_Clare_Alice_Montagu_Douglas_Scott>
+  gen:name "Lady Amabel Clare Alice Montagu Douglas Scott4"@en ;
+  gen:birthDate "1992-06-23" ;
+  gen:father <https://www.wikidata.org/wiki/Q2079879> ;
+  gen:mother <kerr.ttl#Lady_Elizabeth_Marion_Frances_Kerr> .
+<#Alexander_Edward_James_Montagu_Douglas_Scott>
+  gen:name "Alexander Edward James Montagu Douglas Scott"@en ;
+  gen:birthDate "2002-02-13" ;
+  gen:father <#Lord_Damian_Torquil_Francis_Charles_Montagu_Douglas_Scott> ;
+  gen:mother <#Elisabeth_Powis> .
+<#Georgia_Lucy_Alice_Montagu_Douglas_Scott>
+  gen:name "Georgia Lucy Alice Montagu Douglas Scott"@en ;
+  gen:birthDate "2006-08-11" ;
+  gen:father <#Lord_Damian_Torquil_Francis_Charles_Montagu_Douglas_Scott> ;
+  gen:mother <#Elisabeth_Powis> .
+<#Orlando_John_Sebastian_Montagu_Douglas_Scott>
+  gen:name "Orlando John Sebastian Montagu Douglas Scott"@en ;
+  gen:birthDate "2009-03-27" ;
+  gen:father <#Lord_Damian_Torquil_Francis_Charles_Montagu_Douglas_Scott> ;
+  gen:mother <#Elisabeth_Powis> .
+
+
+# Baron Montagu of Beaulieu
+<https://www.wikidata.org/wiki/Q664073>
+  gen:name "Henry John Douglas-Scott-Montagu, 1st Baron Montagu of Beaulieu"@en ;
+  # 1st Baron Montagu of Beaulieu, co. Southampton 1885-12-29
+  gen:birthDate "1832-11-05" ;
+  gen:deathDate "1905-11-04" ;
+  gen:father <https://www.wikidata.org/wiki/Q2702418> ;
+  gen:mother <https://www.wikidata.org/wiki/Q305512> .
+  # oo Hon. Cecily Susan Stuart-Wortley-Mackenzie, 1835-10-14 - 1915-05-02
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q664073> , <stuart.ttl#Cecily_Susan_Montagu-Stuart-Wortley> ;
+	gen:startDate "1865-08-04" .
+
+<https://www.wikidata.org/wiki/Q6229878>
+  gen:name "John Walter Edward Douglas-Scott-Montagu, 2nd Baron Montagu of Beaulieu"@en ;
+  gen:birthDate "1866-06-10" ;
+  gen:deathDate "1929-03-30" ;
+  gen:father <https://www.wikidata.org/wiki/Q664073> ;
+  gen:mother <stuart.ttl#Cecily_Susan_Montagu-Stuart-Wortley> .
+  # oo Lady Cecil Victoria Constance Kerr, 1866-02-14 - 1919-09-13
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6229878> , <kerr.ttl#Lady_Cecil_Victoria_Constance_Kerr> ;
+	gen:startDate "1889-06-04" .
+  # oo Alice Pearl Crake, 1895-01-06 – 1996-04-10, daughter of Major Edward Barrington Crake and Clara Alice Woodroffe
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6229878> , <#Alice_Pearl_Crake> ;
+	gen:startDate "1920-08-10" .
+<#Rachel_Cecily_Douglas-Scott-Montagu>
+  gen:name "Hon. Rachel Cecily Douglas-Scott-Montagu"@en ;
+  gen:birthDate "1868-08-15" ;
+  gen:deathDate "1962-04-12" ;
+  gen:father <https://www.wikidata.org/wiki/Q664073> ;
+  gen:mother <stuart.ttl#Cecily_Susan_Montagu-Stuart-Wortley> .
+  # oo 1890-06-03 Henry William Forster, 1st and last Baron Forster, 1866-01-31 – 1936-01-15, https://www.wikidata.org/wiki/Q333364
+
+<https://www.wikidata.org/wiki/Q22696461>
+  gen:name "Hon. Elizabeth Susan Douglas-Scott-Montagu"@en ;
+  gen:birthDate "1909-09-26" ;
+  gen:deathDate "2002-05-06" ;
+  gen:father <https://www.wikidata.org/wiki/Q6229878> ;
+  gen:mother <kerr.ttl#Lady_Cecil_Victoria_Constance_Kerr> .
+  # oo 1962-08-29 Arthur Noel Claude Varley, 1902 - 1985-07-11, son of Rev. John Edwin Varley
+<#Anne_Rachel_Pearl_Douglas-Scott-Montagu>
+  # Hon. Anne Rachel Pearl Douglas-Scott-Montagu, 1921-10-04 - 2015-02-01
+  gen:father <https://www.wikidata.org/wiki/Q6229878> ;
+  gen:mother <#Alice_Pearl_Crake> .
+  # oo 1946-03-02 Howel Joseph Moore-Gwyn, 1914-09-22 - 1947-09-20, son of Major Joseph Gwyn Moore-Gwyn
+  # oo 1950-09-23 Sir Edward John Chichester, 11th Baronet, 1916-04-14 - 2007-05-14, #Sir_Edward_John_Chichester,_11th_Baronet
+<https://www.wikidata.org/wiki/Q336243>
+  gen:name "Edward John Barrington Douglas-Scott-Montagu, 3rd Baron Montagu of Beaulieu"@en ;
+  gen:birthDate "1926-10-20" ;
+  gen:deathDate "2015-08-31" ;
+  gen:father <https://www.wikidata.org/wiki/Q6229878> ;
+  gen:mother <#Alice_Pearl_Crake> .
+  # oo Elizabeth Belinda Crossley, b. 1932-01-11 # -> drummond.ttl
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q336243> , <https://www.wikidata.org/wiki/Q4882877> ;
+	gen:startDate "1959-04-11" ;
+	gen:divorceDate "1974" .
+  # oo Fiona Margaret Herbert, b. 1943~, daughter of Richard Lionel Deane Herbert
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q336243> , <#Fiona_Margaret_Herbert> ;
+	gen:startDate "1974-09-26" .
+<#Mary_Clare_Douglas-Scott-Montagu>
+  # Hon. Mary Clare Douglas-Scott-Montagu, 1928-06-09 - 2016-04-05
+  gen:father <https://www.wikidata.org/wiki/Q6229878> ;
+  gen:mother <#Alice_Pearl_Crake> .
+  # oo 1953-10-31 (div 1968) David Lindsay-Bethune, Viscount Garnock [later, 15th Earl of Lindsay], 1926-02-09 - 1989, https://www.wikidata.org/wiki/Q5236618
+  # oo 1979 Timothy Charles Austin Horn, d. 2018-02-06
+
+<https://www.wikidata.org/wiki/Q21931825>
+  gen:name "Ralph Douglas-Scott-Montagu, 4th Baron Montagu of Beaulieu "@en ;
+  gen:birthDate "1961-03-13" ;
+  gen:father <https://www.wikidata.org/wiki/Q336243> ;
+  gen:mother <https://www.wikidata.org/wiki/Q4882877> .
+  # oo Ailsa J. Camm
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q21931825> , <#Ailsa_J._Camm> ;
+	gen:startDate "2005" .
+<https://www.wikidata.org/wiki/Q29033676>
+  gen:name "Hon. Mary Rachel Douglas-Scott-Montagu"@en ;
+  gen:birthDate "1964-11-16" ;
+  gen:father <https://www.wikidata.org/wiki/Q336243> ;
+  gen:mother <https://www.wikidata.org/wiki/Q4882877> .
+  # oo 1997-06-21 Rupert Benjamin Bartle Frere Scott, b. 1958-10-12, son of #Christopher_Bartle_Hugh_Scott,_12th_of_Gala and oo kerr.ttl#Anne_Margaret_D'Arcy_Kerr
+<#Jonathan_Deane_Douglas-Scott-Montagu>
+  gen:name "Hon. Jonathan Deane Douglas-Scott-Montagu"@en ;
+  gen:birthDate "1975-10-11" ;
+  gen:father <https://www.wikidata.org/wiki/Q336243> ;
+  gen:mother <#Fiona_Margaret_Herbert> .
+  # oo Nathalie Daoust, 1977-03-31, daughter of Armand Daoust
+  []
+    gen:spouse <#Jonathan_Deane_Douglas-Scott-Montagu> , <https://www.wikidata.org/wiki/Q3495414> ;
+	gen:startDate "2014" .
+
+
+# ====
+#<#William_Scott_(died_1776)>
+  # William Scott, 1696 - 1776
+  # oo Jane Atkinson, 1708~ - 1800, daughter of Henry Atkinson and unknown daughter Lawson
+
+<https://www.wikidata.org/wiki/Q6191717>
+  # William Scott, 1st and last Baron Stowell of Stowell Park, 1745-10-17 - 1836-01-28
+  # 1st Baron Stowell of Stowell Park, co. Gloucester [U.K.] on 17 July 1821
+  gen:father <#William_Scott_(died_1776)> .
+  # and Jane Atkinson
+  # oo Anna Maria Bagnall, d. 1809-09-04, daughter of John Bagnall
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6191717> , <#Anna_Maria_Bagnall> ;
+	gen:startDate "1781-04-07" .
+  # oo Lady Louisa Catherine Howe, 1767-12-09 - 1817-08-20
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6191717> , <#Lady_Louisa_Catherine_Howe> ;
+	gen:startDate "1813-04-10" .
+<https://www.wikidata.org/wiki/Q337737>
+  # John Scott, 1st Earl of Eldon, 1751-06-04 - 1838-01-13
+  # 1st Baron Eldon, of Eldon, co. Durham 1799-07-18
+  # 1st Earl of Eldon, co. Durham, 1st Viscount Encombe, of Encombe, co. Dorset 1821-07-07
+  gen:father <#William_Scott_(died_1776)> .
+  # and Jane Atkinson
+  # oo 1772-11-19 Elizabeth Surtees, 1750~ - 1831-06-28, daughter of Aubone Surtees and Elizabeth Stephenson
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q337737> , <https://www.wikidata.org/wiki/Q47494785> ;
+	gen:startDate "1772-11-19" .
+
+<#Marianne_Scott>
+  # Hon. Marianne Scott, d. 1842-04-26
+  gen:father <https://www.wikidata.org/wiki/Q6191717> ;
+  gen:mother <#Anna_Maria_Bagnall> .
+  # oo 1823b, Thomas Townshend, d. 1823b
+  # oo 1823-07-29 Henry Addington, 1st Viscount Sidmouth, 1757-05-30 - 1844-02-15, https://www.wikidata.org/wiki/Q312577
+<https://www.wikidata.org/wiki/Q26689394>
+  # Hon. John Scott, 1774-03-08 - 1805-12-24
+  gen:father <https://www.wikidata.org/wiki/Q337737> ;
+  gen:mother <https://www.wikidata.org/wiki/Q47494785> .
+  # oo Henrietta Elizabeth Ridley, d. 1853-10-10
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q26689394> , <#Henrietta_Elizabeth_Ridley> ;
+	gen:startDate "1804-08-22" .
+<#Lady_Elizabeth_Scott_(died_1862)>
+  # Lady Elizabeth Scott, 1790~ - 1862-04-16
+  gen:father <https://www.wikidata.org/wiki/Q337737> ;
+  gen:mother <https://www.wikidata.org/wiki/Q47494785> .
+  # oo 1817-11-27 George Stanley Repton, 1786 - 1858-06-29, https://www.wikidata.org/wiki/Q5544784
+<#Lady_Frances_Jane_Scott>
+  # Lady Frances Jane Scott, d. 1838-08-06
+  gen:father <https://www.wikidata.org/wiki/Q337737> ;
+  gen:mother <https://www.wikidata.org/wiki/Q47494785> .
+  # oo 1820-04-06 Rev. Edward Bankes, 1795~ - 1867-05-24, #Edward_Bankes
+<https://www.wikidata.org/wiki/Q26262870>
+  # Hon. William Scott, 1795-02-25 - 1832-07-06
+  gen:father <https://www.wikidata.org/wiki/Q337737> ;
+  gen:mother <https://www.wikidata.org/wiki/Q47494785> .
+
+<https://www.wikidata.org/wiki/Q6257037>
+  # John Scott, 2nd Earl of Eldon, 1805-12-10 - 1854-09-18
+  gen:father <https://www.wikidata.org/wiki/Q26689394> ;
+  gen:mother <#Henrietta_Elizabeth_Ridley> .
+  # oo Hon. Louisa Duncombe, d. 1852-11-18
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6257037> , <#Louisa_Duncombe> ;
+	gen:startDate "1831-10-01" .
+
+<#Lady_Gertrude_Louisa_Scott>
+  # Lady Gertrude Louisa Scott, d. 1919-04-30
+  gen:father <https://www.wikidata.org/wiki/Q6257037> ;
+  gen:mother <#Louisa_Duncombe> .
+  # oo 1860-09-18 Lord Eustace Brownlow Henry Gascoyne-Cecil, 1834-04-24 - 1921-07-03, https://www.wikidata.org/wiki/Q6679229
+<#Lady_Charlotte_Elizabeth_Scott>
+  # Lady Charlotte Elizabeth Scott, 1834-08-26 - 1864-02-22
+  gen:father <https://www.wikidata.org/wiki/Q6257037> ;
+  gen:mother <#Louisa_Duncombe> .
+  # oo 1856-10-09 Rev. Canon Eldon Surtees Bankes,1830~ - 1915-02-01, #Eldon_Surtees_Bankes
+<#Lady_Katharine_Frances_Scott>
+  # Lady Katharine Frances Scott, 1837-12-15 - 1903-05-19
+  gen:father <https://www.wikidata.org/wiki/Q6257037> ;
+  gen:mother <#Louisa_Duncombe> .
+  # oo 1858-09-02 Gustavus Russell Hamilton-Russell, 8th Viscount Boyne, 1830-05-28 - 1907-12-30, https://www.wikidata.org/wiki/Q26457118
+<#Lady_Augusta_Henrietta_Scott>
+  # Lady Augusta Henrietta Scott, 1836-05-13 - 1906-11-04
+  gen:father <https://www.wikidata.org/wiki/Q6257037> ;
+  gen:mother <#Louisa_Duncombe> .
+  # oo 1859-09-09 Thomas Francis Fremantle, 2nd Baron Cottesloe, 1830-01-30 - 1918-04-13, https://www.wikidata.org/wiki/Q7789824
+<#John_Scott,_3rd_Earl_of_Eldon>
+  # John Scott, 3rd Earl of Eldon, 1845-11-08 - 1926-08-10
+  gen:father <https://www.wikidata.org/wiki/Q6257037> ;
+  gen:mother <#Louisa_Duncombe> .
+  # oo Henrietta Minna Turnor, d. 1921-08-30
+  []
+    gen:spouse <#John_Scott,_3rd_Earl_of_Eldon> , <#Henrietta_Minna_Turnor> ;
+	gen:startDate "1869-07-01" .
+
+<#John_Scott,_Viscount_Encombe>
+  # John Scott, Viscount Encombe, 1870-05-08 - 1900-08-18
+  gen:father <#John_Scott,_3rd_Earl_of_Eldon> ;
+  gen:mother <#Henrietta_Minna_Turnor> .
+  # oo Hon. Mary Laura Fraser, 1869-04-02 – 1946-12-03
+  []
+    gen:spouse <#John_Scott,_Viscount_Encombe> , <fraser.ttl#Mary_Laura_Fraser> ;
+	gen:startDate "1898-05-25" .
+<#Lady_Margaret_Rachel_Scott>
+  # Lady Margaret Rachel Scott, 1874-04-05 - 1938-01-27
+  gen:father <#John_Scott,_3rd_Earl_of_Eldon> ;
+  gen:mother <#Henrietta_Minna_Turnor> .
+  # oo 1897-04-27 Hon. Frederick Gustavus Hamilton-Russell, 1867-06-12 - 1941-10-03, hamilton.ttl#Frederick_Gustavus_Hamilton-Russell
+<#Osmund_Scott>
+  # Hon. Osmund Scott, 1876-03-24 - 1948-09-09
+  gen:father <#John_Scott,_3rd_Earl_of_Eldon> ;
+  gen:mother <#Henrietta_Minna_Turnor> .
+  # oo Mary Cecilia Stuart, 1879-08-09 - 1941-11-20
+  []
+    gen:spouse <#Osmund_Scott> , <stuart.ttl#Mary_Cecilia_Stuart> ;
+	gen:startDate "1906-09-12" .
+<#Denys_Scott>
+  # Hon. Denys Scott, 1877-06-1 - 1962
+  gen:father <#John_Scott,_3rd_Earl_of_Eldon> ;
+  gen:mother <#Henrietta_Minna_Turnor> .
+  # oo Lillias Amy Stuart, 1881-11-19 - 1970
+  []
+    gen:spouse <#Denys_Scott> , <stuart.ttl#Lillias_Amy_Stuart> ;
+	gen:startDate "1907-06-19" .
+
+<https://www.wikidata.org/wiki/Q26257729>
+  # John Scott, 4th Earl of Eldon, 1899-03-29 - 1976-10-20
+  gen:father <#John_Scott,_Viscount_Encombe> ;
+  gen:mother <fraser.ttl#Mary_Laura_Fraser> .
+  # oo Hon. Magdalen Mary Charlotte Fraser, 1913-08-01 - 1969-09-27
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q26257729> , <fraser.ttl#Magdalen_Mary_Charlotte_Fraser> ;
+	gen:startDate "1934-04-10" .
+<#Eric_Surtees_Scott>
+  # Eric Surtees Scott, 1912-05-20 - 2005-08
+  gen:father <#Osmund_Scott> ;
+  gen:mother <stuart.ttl#Mary_Cecilia_Stuart> .
+  # oo Rose Anne Stewart
+  []
+    gen:spouse <#Eric_Surtees_Scott> , <stuart.ttl#Rose_Anne_Stewart> ;
+	gen:startDate "1938-09-26" .
+
+<#John_Scott,_5th_Earl_of_Eldon>
+  # John Joseph Nicholas Scott, 5th Earl of Eldon, 1937-04-24 - 2017-01-30
+  gen:father <https://www.wikidata.org/wiki/Q26257729> ;
+  gen:mother <fraser.ttl#Magdalen_Mary_Charlotte_Fraser> .
+  # oo Claudine de Montjoye-Vaufrey et de la Roche, Comtesse de Montjoye-Vaufrey et de la Roche, daughter of Franz de Montjoye-Vaufrey et de la Roche, Comte de Montjoye-Vaufrey et de la Roche
+  []
+    gen:spouse <#John_Scott,_5th_Earl_of_Eldon> , <#Claudine_de_Montjoye-Vaufrey> ;
+	gen:startDate "1961-07-01" .
+<#Simon_Peter_Scott>
+  # Hon. Simon Peter Scott, 1939-09-13 - 2009-05-30
+  gen:father <https://www.wikidata.org/wiki/Q26257729> ;
+  gen:mother <fraser.ttl#Magdalen_Mary_Charlotte_Fraser> .
+  # oo Mary Isabel de Bertodano, 1945-05-19 - 2015-11-08
+  []
+    gen:spouse <#Simon_Peter_Scott> , <#Mary_Isabel_de_Bertodano> ;
+	gen:startDate "1966-10-28" .
+
+<#John_Scott,_6th_Earl_of_Eldon>
+  # John Francis Scott, 6th Earl of Eldon, b. 1962-07-09
+  gen:father <#John_Scott,_5th_Earl_of_Eldon> ;
+  gen:mother <#Claudine_de_Montjoye-Vaufrey> .
+  # oo Charlotte de Vlaming, daughter of Bob de Vlaming
+  []
+    gen:spouse <#John_Scott,_6th_Earl_of_Eldon> , <#Charlotte_de_Vlaming> ;
+	gen:startDate "1993" .
+
+<#Lady_Helena_Rose_Columba_Scott>
+  # Lady Helena Rose Columba Scott, b. 1994
+  gen:father <#John_Scott,_6th_Earl_of_Eldon> ;
+  gen:mother <#Charlotte_de_Vlaming> .
+<#John_James_Robert_Columba_Scott,_Viscount_Encombe>
+  # John James Robert Columba Scott, Viscount Encombe, b. 1996
+  gen:father <#John_Scott,_6th_Earl_of_Eldon> ;
+  gen:mother <#Charlotte_de_Vlaming> .
+
+
+# --------
+#<#Elizabeth_Carmichael>
+  # oo 1530~ Walter Scott, 3rd of Buccleuch (of Branxholme), 1495~ - 1552-10-03, https://www.wikidata.org/wiki/Q7966109
+
+# ----
+#<https://www.wikidata.org/wiki/Q4937801>
+  # Janet Bethune, d. 1569-01
+  # daughter of Sir John Bethune, 2nd of Creich (d. 1524a)
+  # and Janet Hay
+  # oo 1544-06b Walter Scott, 3rd of Buccleuch (of Branxholme), 1495~ - 1552-10-03, https://www.wikidata.org/wiki/Q7966109
+#<#Grisel_Betoun_of_Creich>
+  # Grisel Betoun of Creich, 1520~ - 1579-08-18
+  # daughter of Sir John Bethune, 2nd of Creich (d. 1524a)
+  # and Janet Hay
+  # oo 1548~ Sir William Scott of Kirkurd and Buccleuch, younger, 1525~ - 1552-05-19b, #Sir_William_Scott_of_Kirkurd,_Younger_of_Buccleuch
+
+# --------
+<https://www.wikidata.org/wiki/Q16203881>
+  # James Ross, 6th Lord Ross of Halkhead, d. 1633-12-17
+  gen:father <https://www.wikidata.org/wiki/Q7349388> ; # Robert Ross, 5th Lord Ross of Halkhead, 1563 – 1595-10
+  gen:mother <hamilton.ttl#Jean_Hamilton_of_Raploch> .
+  # oo Margaret Scott, d. 1651-10-05
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16203881> , <#Margaret_Scott> ;
+	gen:startDate "1614/1615" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q6227519>
+  # John Cranstoun, 2nd Lord Cranstoun, d. 1648~
+  # oo Elizabeth Scott
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6227519> , <#Elizabeth_Scott> ;
+	gen:startDate "1616-11-22" .
+
+# ----
+# leslie.ttl:
+#<https://www.wikidata.org/wiki/Q4259452>
+  # John Leslie, 6th Earl of Rothes, 1600 – 1641-08-23
+  # oo Lady Anne Erskine, d. 1640
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4259452> , <erskine.ttl#Lady_Anne_Erskine_(died_1640)> ;
+	gen:startDate "1614-12-28" .
+
+<leslie.ttl#Lady_Margaret_Leslie>
+  gen:name "Lady Margaret Leslie"@en ;
+  gen:birthDate "1621" ;
+  gen:deathDate "1688-02" ;
+  gen:father <https://www.wikidata.org/wiki/Q4259452> ;
+  gen:mother <erskine.ttl#Lady_Anne_Erskine_(died_1640)> .
+  # oo (1) Alexander Leslie, Lord Balgony
+  # oo 1646-07-25 Francis Scott, 2nd Earl of Buccleuch, 1626-12-21 - 1651-11-22, https://www.wikidata.org/wiki/Q2080050
+  # oo 1653-01-13 David Wemyss, 2nd Earl of Wemyss, 1610-09-06 – 1679-07, https://www.wikidata.org/wiki/Q5240961
+
+# --------
+#<https://www.wikidata.org/wiki/Q5076481>
+  # Charles Cornwallis, 3rd Baron Cornwallis of Eye, 1655-12-28 – 1698-04-29
+  # oo Anne Scott, 4th Countess of Buccleuch, 1651-02-11 - 1732-02-06
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5076481> , <https://www.wikidata.org/wiki/Q2080470> ;
+	gen:startDate "1688-05-06" .
+
+# ----
+<https://www.wikidata.org/wiki/Q272539>
+  gen:name "Lucy Walter or Lucy Barlow"@en ;
+  # Mistres of Charles II of England (https://www.wikidata.org/wiki/Q122553)
+  gen:birthDate "1630~" ;
+  gen:deathDate "1658" ;
+  gen:father <#William_Walter> ;
+  gen:mother <#Elizabeth_Protheroe> .
+
+# --------
+<#Lady_Henrietta_Hyde>
+  gen:name "Lady Henrietta Hyde"@en ;
+  gen:birthDate "1677~" ;
+  gen:deathDate "1730-05-30" ;
+  gen:father <https://www.wikidata.org/wiki/Q3827905> ; # Laurence Hyde, 1st Earl of Rochester, 1642-03 – 1711-05-02, oo 1665
+  gen:mother <https://www.wikidata.org/wiki/Q5715966> . # Lady Henrietta Boyle, 1646 – 1687-04-12, daughter of Richard Boyle, 2nd Earl of Cork and Elizabeth Clifford, Baroness Clifford
+  # oo 1693/1694-01-02 James Scott, Earl of Dalkeith, 1674-05-23 - 1705-03-14, https://www.wikidata.org/wiki/Q362651
+
+# --------
+<#Harriet_Katherine_Townshend>
+  gen:name "Harriet Katherine Townshend"@en ;
+  gen:birthDate "1773-11-29" ;
+  gen:deathDate "1814-08-24" ;
+  gen:father <https://www.wikidata.org/wiki/Q332533> ;
+  gen:mother <https://www.wikidata.org/wiki/Q47516837> .
+  # oo 1795-03-24 Charles William Henry Montagu Scott, 4th Duke of Buccleuch, 1772-05-24 - 1819-04-20, https://www.wikidata.org/wiki/Q337447
+
+# --------
+<https://www.wikidata.org/wiki/Q305512>
+  gen:name "Lady Charlotte Anne Thynne"@en ;
+  gen:birthDate "1811-04-10" ;
+  gen:deathDate "1895-03-18" ;
+  gen:father <https://www.wikidata.org/wiki/Q43942> ;
+  gen:mother <#Isabella_Elizabeth_Byng> .
+  # oo 1829-03-13 William Henry Walter Montagu Douglas Scott, 6th Duke of Buccleuch, 1831-09-09 - 1914-11-05, https://www.wikidata.org/wiki/Q337468
+
+# --------
+<stuart.ttl#Cecily_Susan_Montagu-Stuart-Wortley>
+  gen:birthDate "1835" ;
+  gen:deathDate "1915-05-02" ;
+  gen:father <https://www.wikidata.org/wiki/Q6259508> ;
+  gen:mother <#Lady_Georgiana_Elizabeth_Ryder> .
+  # oo 1865-08-04 Henry John Douglas-Scott-Montagu, 1st Baron Montagu of Beaulieu, 1832-11-05 - 1905-11-04, https://www.wikidata.org/wiki/Q664073
+# --------
+<#Lady_Georgiana_Elizabeth_Ryder>
+  # Lady Georgiana Elizabeth Ryder
+  gen:father <https://www.wikidata.org/wiki/Q333011> ;
+  gen:mother <gower.ttl#Lady_Susanna_Leveson-Gower> .
+
+# --------
+#<https://www.wikidata.org/wiki/Q5537238>
+  # George Cecil Orlando Bridgeman, 4th Earl of Bradford, 1845-02-03 - 1915-01-02
+  # oo Lady Ida Frances Annabella Lumley, 28 November 1848, d. 22 August 1936
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5537238> , <#Lady_Ida_Frances_Annabella_Lumley> ;
+	gen:startDate "1869-09-07" .
+
+<#Lady_Margaret_Alice_Bridgeman>
+  # Lady Margaret Alice "Molly" Bridgeman, 1872-01-20 - 1954-08-07
+  gen:father <https://www.wikidata.org/wiki/Q5537238> ;
+  gen:mother <#Lady_Ida_Frances_Annabella_Lumley> .
+  # oo 1893-01-30 John Charles Montagu Douglas Scott, 7th Duke of Buccleuch, 1864-03-30 - 1935-10-19, https://www.wikidata.org/wiki/Q337464
+# ----
+<#Lady_Ida_Frances_Annabella_Lumley>
+  # Lady Ida Frances Annabella Lumley, 28 November 1848, d. 22 August 1936
+  gen:father <https://www.wikidata.org/wiki/Q26997638> .
+  # and Frederica Mary Adeliza Drummond
+  # oo 1869-09-07 George Cecil Orlando Bridgeman, 4th Earl of Bradford, 1845-02-03 - 1915-01-02, https://www.wikidata.org/wiki/Q5537238
+
+# --------
+<#Marie_Josephine_Edwards>
+  # Marie Josephine Edwards, d. 1965-02-15
+  gen:father <#James_Andrew_Edwards> ;
+  gen:mother <#Kate_Marion_Agnes_MacNamara> .
+  # oo 1905-04-26 Lord Herbert Andrew Montagu Douglas Scott, 1872-11-30 - 1944-06-17, https://www.wikidata.org/wiki/Q6678918
+
+# ====
+#<#Algernon_Francis_Holford_Ferguson>
+  # Algernon Francis Holford Ferguson, 1867 - 1943-11-05
+  # oo 1897-04-21 Hon. Margaret Brand, 1873 - 1948-09-27
+  []
+    gen:spouse <#Algernon_Francis_Holford_Ferguson> , <cavendish.ttl#Margaret_Brand> ;
+	gen:startDate "1897-04-21" .
+
+<#Andrew_Henry_Ferguson>
+  gen:name "Andrew Henry Ferguson"@en ;
+  gen:birthDate "1899-10-10" ;
+  gen:deathDate "1966-08-04" ;
+  gen:father <#Algernon_Francis_Holford_Ferguson> ;
+  gen:mother <cavendish.ttl#Margaret_Brand> .
+  # oo Marian Louisa Montagu Douglas Scott, 1908-06-16 - 1996-12-11
+  []
+    gen:spouse <#Andrew_Henry_Ferguson> , <https://www.wikidata.org/wiki/Q4165911> ;
+	gen:startDate "1927-11-01" .
+
+<#John_Andrew_Ferguson>
+  gen:name "John Andrew Ferguson"@en ;
+  gen:birthDate "1929-01-21" ;
+  gen:deathDate "1998" ;
+  gen:father <#Andrew_Henry_Ferguson> ;
+  gen:mother <https://www.wikidata.org/wiki/Q4165911> .
+<https://www.wikidata.org/wiki/Q775665>
+  gen:name "Ronald Ivor Ferguson"@en ;
+  gen:birthDate "1931-10-10" ;
+  gen:deathDate "2003-03-16" ;
+  gen:father <#Andrew_Henry_Ferguson> ;
+  gen:mother <https://www.wikidata.org/wiki/Q4165911> .
+  # oo Susan Mary Wright, 1937-06-09  1998-09-19, daughter of Fitzherbert Wright (1905-09-01 - 1975) and oo 1928-01-10 Hon. Doreen Julia Wingfield (1904-03-29 - 1991-05, daughter of https://www.wikidata.org/wiki/Q6820947 and Sybil Pleydell-Bouverie)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q775665> , <https://www.wikidata.org/wiki/Q4165785> ;
+	gen:startDate "1956-01-17" ;
+	gen:divorceDate "1974" .
+  # oo Susan Rosemary Deptford, b. 1946, daughter of Frederick William Deptford and Phyllis Maud Easy
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q775665> , <#Susan_Rosemary_Deptford> ;
+	gen:startDate "1976" .
+
+<#Jane_Louisa_Ferguson>
+  gen:name "Jane Louisa Ferguson"@en ;
+  gen:birthDate "1957-08-26" ;
+  gen:father <https://www.wikidata.org/wiki/Q775665> ;
+  gen:mother <https://www.wikidata.org/wiki/Q4165785> .
+  # oo 1976-07 (div 1991) William Alex Makim, d. 1967~
+  # oo 1994-01-01 Rainer Hans Luedecke, b. 1959~
+<https://www.wikidata.org/wiki/Q55720>
+  gen:name "Sarah Margaret Ferguson"@en ;
+  gen:birthDate "1959-10-15" ;
+  gen:father <https://www.wikidata.org/wiki/Q775665> ;
+  gen:mother <https://www.wikidata.org/wiki/Q4165785> .
+  # oo 1986-07-23 (1996) Andrew Albert Christian Edward Windsor, 1st Duke of York, b. 1960-02-19, https://www.wikidata.org/wiki/Q153330
+<#Andrew_Frederick_John_Ferguson>
+  gen:name "Andrew Frederick John Ferguson"@en ;
+  gen:birthDate "1978" ;
+  gen:father <https://www.wikidata.org/wiki/Q775665> ;
+  gen:mother <#Susan_Deptford> .
+<#Alice_Victoria_Ferguson>
+  gen:name "Alice Victoria Ferguson"@en ;
+  gen:birthDate "1980" ;
+  gen:father <https://www.wikidata.org/wiki/Q775665> ;
+  gen:mother <#Susan_Deptford> .
+  # oo 2010-08-28 Nicholas Stileman
+<#Elizabeth_Charlotte_Ferguson>
+  gen:name "Elizabeth Ferguson"@en ;
+  gen:birthDate "1985" ;
+  gen:father <https://www.wikidata.org/wiki/Q775665> ;
+  gen:mother <#Susan_Deptford> .
+  # oo 2017-09-02 Harry Timothy Cobb, b. 1985, son of Timothy B. Cobb and Emma Rose Holland-Martin
+
+# ====
+#<https://www.wikidata.org/wiki/Q7789336>
+  # Sir Thomas Walker Elmhirst, 1895-12-15 - 1982-12-06, 
+  # oo Marian Louisa Montagu Douglas Scott, 1908-06-16 - 1996-12-11
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7789336> , <https://www.wikidata.org/wiki/Q4165911> ;
+	gen:startDate "1968-10-30" .
+
+# ----
+#<#Henry_Scrymgeour-Wedderburn_of_Wedderburn_(died_1914)>
+  # Henry Scrymgeour-Wedderburn of Wedderburn and Birkhill, 1840-04-18 - 1914-02-01
+  # 9th Earl of Dundee, 11th Viscount Dudhope, de jure 1874-08-16
+  # oo Juliana Braddell, d. 1921-05-28, daughter of Thomas Braddell
+  []
+    gen:spouse <#Henry_Scrymgeour-Wedderburn_of_Wedderburn_(died_1914)> , <#Juliana_Braddell> ;
+	gen:startDate "1869-03-31" .
+
+<#Henry_Scrymgeour-Wedderburn_of_Wedderburn_(died_1924)>
+  # Henry Scrymgeour-Wedderburn of Wedderburn and Birkhill, 1872-06-28 - 1924-05-12
+  gen:father <#Henry_Scrymgeour-Wedderburn_of_Wedderburn_(died_1914)> ;
+  gen:mother <#Juliana_Braddell> .
+  # oo Edith Moffat, 1877~ - 1968-10-16, daughter of John Moffat and Jessie Fulton Arthur
+  []
+    gen:spouse <#Henry_Scrymgeour-Wedderburn_of_Wedderburn_(died_1924)> , <#Edith_Moffat> ;
+	gen:startDate "1901-07-30" .
+<#Frederick_Lewis_Scrymgeour-Wedderburn>
+  # Frederick Lewis Scrymgeour-Wedderburn, 1874-06-27 - 1936-05-22
+  gen:father <#Henry_Scrymgeour-Wedderburn_of_Wedderburn_(died_1914)> ;
+  gen:mother <#Juliana_Braddell> .
+  []
+    gen:spouse <#Frederick_Lewis_Scrymgeour-Wedderburn> , <erskine.ttl#Zaida_Grace_Erskine> ;
+	gen:startDate "1913-12-17" .
+
+<https://www.wikidata.org/wiki/Q5728164>
+  # Henry James Scrymgeour-Wedderburn, 11th Earl of Dundee, 1902-05-03 - 1983-06-29
+  gen:father <#Henry_Scrymgeour-Wedderburn_of_Wedderburn_(died_1924)> ;
+  gen:mother <#Edith_Moffat> .
+  # oo Patricia Katherine Montagu Douglas Scott, 1910-10-09 - 2012-12-03
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5728164> ,<#Patricia_Katherine_Montagu_Douglas_Scott>  ;
+	gen:startDate "1946-10-30" .
+<#David_Scrymgeour-Wedderburn>
+  # Hon. David Scrymgeour-Wedderburn, 1912-04-02 - 1944-03-01
+  gen:father <#Henry_Scrymgeour-Wedderburn_of_Wedderburn_(died_1924)> ;
+  gen:mother <#Edith_Moffat> .
+  # oo Patricia Katherine Montagu Douglas Scott, 1910-10-09 - 2012-12-03
+  []
+    gen:spouse <#David_Scrymgeour-Wedderburn> , <#Patricia_Katherine_Montagu_Douglas_Scott> ;
+	gen:startDate "1940-09-09" .
+
+<#Janet_Mary_Scrymgeour-Wedderburn>
+  # Janet Mary Scrymgeour-Wedderburn, b. 1941-08-14
+  gen:father <#David_Scrymgeour-Wedderburn> ;
+  gen:mother <#Patricia_Katherine_Montagu_Douglas_Scott> .
+  # oo 1962-01-18 Edward Arthur Mervyn Lane Fox-Pitt, b. 1935-11-26, boyd.ttl#Edward_Arthur_Mervyn_Lane_Fox-Pitt
+
+# --------
+<#Lady_Victoria_Doris_Rachel_Haig>
+  gen:name 'Lady Victoria Doris Rachel "Doria" Haig' ;
+  gen:birthDate "1908-11-07" ;
+  gen:deathDate "1993-08-31" ;
+  gen:father <https://www.wikidata.org/wiki/Q312564> ;
+  gen:mother <#Dorothy_Maud_Vivian> .
+  # oo 1929-08-10 (div 1951) Claud Andrew Montagu Douglas Scott, 1906-07-13 - 1971-01-24, https://www.wikidata.org/wiki/Q5128621
+
+# --------
+<https://www.wikidata.org/wiki/Q312564>
+  gen:name "Douglas Haig, 1st Earl Haig"@en ;
+  gen:birthDate "1861-06-19" ;
+  gen:deathDate "1928-01-29" .
+  # oo Hon. Dorothy Maud Vivian, 1879-07-09 - 1939-10-18
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q312564> , <#Dorothy_Maud_Vivian> ;
+	gen:startDate "1905-07-11" .
+<#Dorothy_Maud_Vivian>
+  gen:name "Hon. Dorothy Maud Vivian"@en ;
+  gen:birthDate "1879-07-09" ;
+  gen:deathDate "1939-10-18" ;
+  gen:father <https://www.wikidata.org/wiki/Q5949912> ; # Hussey Crespigny Vivian, 3rd Baron Vivian, 1834-06-19 – 1893-10-21
+  gen:mother <#Louisa_Duff> . # and oo 1876-06-08 Louisa Alice Duff, 1853~ - 1926-04-03
+  # oo 1905-07-11 Douglas Haig, 1st Earl Haig, 1861-06-19 - 1928-01-29, https://www.wikidata.org/wiki/Q312564
+
+# --------
+<#Zalia_Snagge>
+  gen:name "Zalia Snagge"@en ;
+  gen:birthDate "1915" ;
+  gen:deathDate "1986" ;
+  gen:father <#Sir_Harold_Edward_Snagge> ;
+  gen:mother <#Inez_Alfreda_Lubbock> .
+  # oo 1951-05-04 Claud Andrew Montagu Douglas Scott, 1906-07-13 - 1971-01-24, https://www.wikidata.org/wiki/Q5128621
+
+# --------
+#<https://www.wikidata.org/wiki/Q19664301>
+  # Sir Geoffrey Alan Brooke Hawkins, 1895-07-13 – 1980-10-05
+  # oo Lady Margaret Ida Montagu Douglas Scott, 1893-11-13 - 1976-12-17
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q19664301> , <#Lady_Margaret_Ida_Montagu_Douglas_Scott> ;
+	gen:startDate "1926-02-16" .
+
+# --------
+<#Charles_Bathurst_Hele_Phipps>
+  # Charles Bathurst Hele Phipps, 1889-03-29 - 1960-01-12
+  gen:father <https://www.wikidata.org/wiki/Q5081248> .
+  # and Clare Emily Hervey-Bathurst
+  # oo Lady Sybil Anne Montagu Douglas Scott, 1899-07-14 - 1990-11-01" ;
+  []
+    gen:spouse <#Charles_Bathurst_Hele_Phipps> , <#Lady_Sybil_Anne_Montagu_Douglas_Scott> ;
+	gen:startDate "1919-05-14" .
+
+# ----
+<#Hugh_Dawnay>
+  # Hon. Hugh Dawnay, 1875-09-19 - 1914-11-06
+  gen:father <https://www.wikidata.org/wiki/Q5930520> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3664112> .
+  # oo Lady Susan de la Poer Beresford (1877-04-30 - 1947-10-31, daughter of https://www.wikidata.org/wiki/Q6221627 and Lady Blanche Elizabeth Adelaide Somerset)
+  []
+    gen:spouse <#Hugh_Dawnay> , <#Lady_Susan_de_la_Poer_Beresford> ;
+	gen:startDate "1902-04-28" .
+
+<#Sir_Peter_Dawnay>
+  # Sir Peter Dawnay, 1904-08-14 - 1989-07-01
+  gen:father <#Hugh_Dawnay> ;
+  gen:mother <#Lady_Susan_de_la_Poer_Beresford> .
+  # oo Lady Angela Christine Rose Montagu Douglas Scott, 1906-12-26 - 2000-09-28
+  []
+    gen:spouse <#Sir_Peter_Dawnay> , <#Lady_Angela_Christine_Rose_Montagu_Douglas_Scott> ;
+	gen:startDate "1936-04-28" .
+# ----
+<#Lady_Susan_de_la_Poer_Beresford>
+  # Lady Susan de la Poer Beresford, 1877-04-30 - 1947-10-31
+  gen:father <https://www.wikidata.org/wiki/Q6221627> .
+  # and Lady Blanche Elizabeth Adelaide Somerset
+  # oo 1902-04-28 Hon. Hugh Dawnay, 1875-09-19 - 1914-11-06, #Hugh_Dawnay
+
+# ----
+#<https://www.wikidata.org/wiki/Q7788405>
+  # Thomas Pitt Hamilton Cholmondeley, 4th Baron Delamere, 1900-08-19 - 1979-04-13
+  # oo Phyllis Anne Montagu Douglas Scott, 1904-03-03 - 1978-03-09
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7788405> , <#Phyllis_Anne_Montagu_Douglas_Scott> ;
+	gen:startDate "1924-06-14" ;
+	gen:divorceDate "1944" .
+
+# ----
+<https://www.wikidata.org/wiki/Q6152730>
+  gen:name "Jane McNeill"@en ;
+  gen:birthDate "1929-12-19" ;
+  gen:deathDate "2011-04-18" ;
+  gen:father <https://www.wikidata.org/wiki/Q19665722> ; # John McNeill, b. 1899-05-18
+  gen:mother <#Amy_Maynard> . # Amy Yvonne Maynard
+  # oo 1953-01-10 John Montagu Douglas Scott, 9th Duke of Buccleuch, 1923-09-28 - 2007-09-04, https://www.wikidata.org/wiki/Q333214
+
+# ----
+#<https://www.wikidata.org/wiki/Q333362>
+  # Ian Hedworth John Little Gilmour, Baron Gilmour of Craigmillar, 1926-07-08 – 2007-09-21
+  # oo Lady Caroline Margaret Montagu Douglas Scott, 1927-11-07 - 2004-10-17
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q333362> , <#Lady_Caroline_Margaret_Montagu_Douglas_Scott> ;
+	gen:startDate "1951-07-10" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q26208373>
+  # Philip Bertram Gurdon, 3rd Baron Cranworth of Letton and Cranworth, b. 1940-05-24
+  # oo Frances Henrietta Montagu Douglas Scott, 1940-08-03 - 2000-08-21
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q26208373> , <#Frances_Henrietta_Montagu_Douglas_Scott> ;
+	gen:startDate "1968-01-18" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q26214264>
+  # Raymond O'Neill, 4th Baron O'Neill of Shane's Castle, b. 1933-09-01
+  # oo Georgina Mary Montagu Douglas Scott, 1940-11-28 - 2017-08-29
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q26214264> , <#Georgina_Mary_Montagu_Douglas_Scott> ;
+	gen:startDate "1963-06-10" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q4786802>
+  # Archibald Hugh Stirling, Laird of Keir, b. 1941-09-18
+  # oo Charmian Rachel Montagu Douglas Scott, 1942-07-18 - 2009-04-05
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4786802> , <#Charmian_Rachel_Montagu_Douglas_Scott> ;
+	gen:startDate "1964-11-11" ;
+	gen:divorceDate "1977" .
+
+# ----
+<#Samuel_Alexander_Mark_Collins>
+  # Samuel Alexander Mark Collins
+  gen:father <https://www.wikidata.org/wiki/Q18936304> .
+  # and Priscilla Marian Lloyd
+  # oo Rosemary Alice Montagu Douglas Scott, 1940-08-03 - 2015-07-10
+  []
+    gen:spouse <#Samuel_Alexander_Mark_Collins> , <#Rosemary_Alice_Montagu_Douglas_Scott> ;
+	gen:startDate "1978-02-22" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q110743>
+  # Hans Moritz Graf von Brühl, 1736-12-20 - 1809-06-09
+  # oo Hon. Alicia Maria Carpenter, 1726~ - 1794-06-01
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110743> , <https://www.wikidata.org/wiki/Q47462120> ;
+	gen:startDate "1767-06-06" .
+
+<#Henriette_von_Brühl>
+  # Harriet (Henriette) Gräfin von Brühl, 1772-10-25 - 1853-08-19
+  gen:father <https://www.wikidata.org/wiki/Q110743> ;
+  gen:mother <https://www.wikidata.org/wiki/Q47462120> .
+  # oo 1795-09-29 Sir Hugh Hepburne-Scott of Harden, 6th Lord Polwarth, 1758-04-10 - 1841-12-29, https://www.wikidata.org/wiki/Q26708770
+
+# ----
+<#Charles_Wyndham>
+  # Charles Wyndham, 1796 - 1866-02-18
+  gen:father <https://www.wikidata.org/wiki/Q5546569> ;
+  gen:mother <https://www.wikidata.org/wiki/Q23691658> .
+  # oo Hon. Elizabeth Anne Hepburne-Scott, 1803-02-21 - 1873-08-21
+  []
+    gen:spouse <#Charles_Wyndham> , <#Elizabeth_Anne_Hepburne-Scott> ;
+	gen:startDate "1835-10-03" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q334449>
+  # Sir Thomas Fowell Buxton, 3rd Baronet, 1837-01-26 - 1915-10-28
+  # oo Lady Victoria Noel, d. 1916-08-08
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q334449> , <#Lady_Victoria_Noel> ;
+	gen:startDate "1862-06-21" .
+
+<#Edith_Frances_Buxton>
+  # Edith Frances Buxton, 1867-08-30 - 1930-03-25
+  gen:father <https://www.wikidata.org/wiki/Q334449> ;
+  gen:mother <#Lady_Victoria_Noel> .
+  # oo 1888-11-23 Walter George Hepburne-Scott, 9th Lord Polwarth, 1864-02-07 - 1944-08-24, https://www.wikidata.org/wiki/Q29378674
+# ----
+<#Lady_Victoria_Noel>
+  # Lady Victoria Noel, d. 1916-08-08
+  gen:father <https://www.wikidata.org/wiki/Q5081256> .
+  # and Lady Frances Jocelyn
+  # oo 1862-06-21 Sir Thomas Fowell Buxton, 3rd Baronet, 1837-01-26 - 1915-10-28, https://www.wikidata.org/wiki/Q334449
+
+# ----
+<#Jean_Cunninghame_Graham>
+  # Jean Cunninghame Graham
+  gen:father <https://www.wikidata.org/wiki/Q4764097> .
+  # and Maria Patricia Hanbury
+  # oo 1969-08-08 Henry Alexander Hepburne-Scott, 10th Lord Polwarth, 1916-11-17 - 2005-01-04, https://www.wikidata.org/wiki/Q15453785
+
+# ----
+#<https://www.wikidata.org/wiki/Q52269603>
+  # James McMoran Wilson, 3rd Baron Moran, b. 1952-08-06
+  # oo Hon. Mary Jane Hepburne-Scott, b. 1955-02-16
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q52269603> , <#Mary_Jane_Hepburne-Scott> ;
+	gen:startDate "1980-06-07" .
+
+# ----
+#<#Sir_John_Hay_of_Alderston,_1st_Baronet>
+  # Sir John Hay of Alderston, 1st Baronet, d. 1706
+  # son of Thomas Hay of Alderston and Hermiston
+  # and oo Anna Gibson
+
+<#Sir_George_Hay-Makdougall_of_Alderston,_3rd_Baronet>
+  # Sir George Hay-Makdougall of Alderston, 3rd Baronet, d. 1777-02-24
+  gen:father <#Sir_John_Hay_of_Alderston,_1st_Baronet> .
+  # and oo 1693-04-27 Catherine Suttie (daughter of Sir George Suttie of Balgone, 1st Baronet and Marion Elizabeth Semple)
+
+<#Anne_Hay-Makdougall>
+  # Anne Hay-Makdougall, b. 1733
+  gen:father <#Sir_George_Hay-Makdougall_of_Alderston,_3rd_Baronet> .
+  # and oo Barbara Makdougall (daughter of Henry Makdougall, 14th of Makerstoun and #Anne_Scott)
+  # oo John Scott, 6th of Gala, 1732-04 - 1785, #John_Scott,_6th_of_Gala
+
+# ====
+<#Lady_Louisa_Catherine_Howe>
+  # Lady Louisa Catherine Howe, 1767-12-09 - 1817-08-20
+  gen:father <https://www.wikidata.org/wiki/Q332616> .
+  # and Mary Hartopp
+  # oo 1813-04-10 William Scott, 1st and last Baron Stowell of Stowell Park, 1745-10-17 - 1836-01-28, https://www.wikidata.org/wiki/Q6191717
+
+# ----
+#<https://www.wikidata.org/wiki/Q312577>
+  # Henry Addington, 1st Viscount Sidmouth, 1757-05-30 - 1844-02-15
+  # oo Hon. Marianne Scott, d. 26 April 1842
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q312577> , <#Marianne_Scott> ;
+	gen:startDate "1823-07-29" .
+
+# ----
+#<#Edward_Bankes>
+  # Rev. Edward Bankes, 1795~ - 1867-05-24
+  # oo Lady Frances Jane Scott, d. 1838-08-06
+  []
+    gen:spouse <#Edward_Bankes> , <#Lady_Frances_Jane_Scott> ;
+	gen:startDate "1820-04-06" .
+  # oo Hon. Maria Rice, 1808, d. 1886-04-17
+  []
+    gen:spouse <#Edward_Bankes> , <devereux.ttl#Maria_Rice> ;
+	gen:startDate "1839-09-03" .
+
+<#Eldon_Surtees_Bankes>
+  # Rev. Canon Eldon Surtees Bankes,1830~ - 1915-02-01
+  gen:father <#Edward_Bankes> ;
+  gen:mother <#Lady_Frances_Jane_Scott> .
+  # oo Lady Charlotte Elizabeth Scott, 1834-08-26 - 1864-02-22
+  []
+    gen:spouse <#Eldon_Surtees_Bankes> , <#Lady_Charlotte_Elizabeth_Scott> ;
+	gen:startDate "1856-10-09" .
+
+# ----
+<#Henrietta_Elizabeth_Ridley>
+  # Henrietta Elizabeth Ridley, d. 1853-10-10
+  gen:father <https://www.wikidata.org/wiki/Q7528316> .
+  # and Sarah Colborne
+  # oo 1804-08-22 Hon. John Scott, 1774-03-08 - 1805-12-24, https://www.wikidata.org/wiki/Q26689394
+
+# ----
+#<https://www.wikidata.org/wiki/Q5544784>
+  # George Stanley Repton, 1786 - 1858-06-29
+  # oo Lady Elizabeth Scott, 1790~ - 1862-04-16
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5544784> , <#Lady_Elizabeth_Scott_(died_1862)> ;
+	gen:startDate "1817-11-27" .
+
+<https://www.wikidata.org/wiki/Q5543813>
+  # George William John Repton, 1818 – 1906-08-30
+  gen:father <https://www.wikidata.org/wiki/Q5544784> ;
+  gen:mother <scott.ttl#Lady_Elizabeth_Scott_(died_1862)> .
+  # oo Lady Jane Seymour FitzGerald, 1824-02-05 - 1898-11-03
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5543813> , <fitzgerald.ttl#Lady_Jane_Seymour_FitzGerald> ;
+	gen:startDate "1848-09-05" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q5077002>
+  # Charles Duncombe, 1st Baron Feversham of Duncombe Park, 1764-12-05 - 1841-07-16
+  # 1st Baron Feversham of Duncombe Park, Yorkshire 1826-07-14
+  # oo Lady Charlotte Legge, d. 1848-11-05, daughter of https://www.wikidata.org/wiki/Q3568789 and Frances Catherine Nicoll
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5077002> , <#Lady_Charlotte_Legge> ;
+	gen:startDate "1795-09-24" .
+
+<https://www.wikidata.org/wiki/Q4821410>
+  # Very Rev. Augustus Duncombe, 1814-11-02 - 1880-01-26
+  # Dean of York
+  gen:father <https://www.wikidata.org/wiki/Q5077002> ;
+  gen:mother <#Lady_Charlotte_Legge> .
+  # oo Lady Harriet Christian Douglas, d. 1902-07-26
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4821410> , <douglas.ttl#Lady_Harriet_Christian_Douglas> ;
+	gen:startDate "1841-05-13" .
+<#Louisa_Duncombe>
+  # Hon. Louisa Duncombe, d. 1852-11-18
+  gen:father <https://www.wikidata.org/wiki/Q5077002> ;
+  gen:mother <#Lady_Charlotte_Legge> .
+  # oo 1831-10-01 John Scott, 2nd Earl of Eldon, 1805-12-10 - 1854-09-18, https://www.wikidata.org/wiki/Q6257037
+
+<#Alfred_Charles_Duncombe>
+  # Alfred Charles Duncombe, 1843-06-05 - 1925-02-22
+  gen:father <https://www.wikidata.org/wiki/Q4821410> ;
+  gen:mother <douglas.ttl#Lady_Harriet_Christian_Douglas> .
+  # oo Lady Anne Florence Adelaide Montagu, 1848-11-08 - 1940-01-16
+  []
+    gen:spouse <#Alfred_Charles_Duncombe> , <montagu.ttl#Lady_Anne_Florence_Adelaide_Montagu> ;
+	gen:startDate "1876-12-05" .
+# ----
+#<https://www.wikidata.org/wiki/Q7789824>
+  # Thomas Francis Fremantle, 2nd Baron Cottesloe, 1830-01-30 - 1918-04-13
+  # oo Lady Augusta Henrietta Scott, 1836-05-13 - 1906-11-04
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7789824> , <#Lady_Augusta_Henrietta_Scott> ;
+	gen:startDate "1859-09-09" .
+
+# ----
+#<#Henry_Martin_Turnor>
+  # Henry Martin Turnor, d. 1902-01-08
+  # oo Hon. Marianne Bosville Macdonald, 1816-07-27 - 1876-07-12
+  []
+    gen:spouse <#Henry_Martin_Turnor> , <#Marianne_Bosville_Macdonald> ;
+	gen:startDate "1840-07-28" .
+
+<#Henrietta_Minna_Turnor>
+  # Henrietta Minna Turnor, d. 1921-08-30
+  gen:father <#Henry_Martin_Turnor> ;
+  gen:mother <willoughby.ttl#Marianne_Bosville_Macdonald> .
+  # oo 1869-07-01 John Scott, 3rd Earl of Eldon, 1845-11-08 - 1926-08-10, #John_Scott,_3rd_Earl_of_Eldon
+
+# ----
+#stuart.ttl:
+<#Lord_George_Stuart>
+  # Lord George Stuart, 1780-03-01 - 1841-02-19
+  gen:father <https://www.wikidata.org/wiki/Q275336> ;
+  gen:mother <https://www.wikidata.org/wiki/Q16760635> .
+  # oo Jane Stewart, d. 1862-02-01, daughter of Maj.-Gen. James Stewart
+  []
+    gen:spouse <#Lord_George_Stuart> , <#Jane_Stewart_(died_1862)> ;
+	gen:startDate "1800-10-07" .
+
+<#Henry_Stuart>
+  # Henry Stuart, 1808-01-01 - 1880-05-19
+  gen:father <#Lord_George_Stuart> ;
+  gen:mother <#Jane_Stewart_(died_1862)> .
+  # oo Cecilia Hammersley, 1819 - 1890-02-28, daughter of Charles Hammersley and Emily Poulett-Thomson
+  []
+    gen:spouse <#Henry_Stuart> , <#Cecilia_Hammersley> ;
+	gen:startDate "1840-11-09" .
+
+<#Dudley_Charles_Stuart>
+  # Dudley Charles Stuart, 1844-11-20 - 1906-02-21
+  gen:father <#Henry_Stuart> ;
+  gen:mother <#Cecilia_Hammersley> .
+  # oo Amy Clara Page, d. 1943-01-31, daughter of Charles Harrison Page
+  []
+    gen:spouse <#Dudley_Charles_Stuart> , <#Amy_Clara_Page> ;
+	gen:startDate "1875-03-31" .
+
+<stuart.ttl#Mary_Cecilia_Stuart>
+  # Mary Cecilia Stuart, 1879-08-09 - 1941-11-20
+  gen:father <#Dudley_Charles_Stuart> ;
+  gen:mother <#Amy_Clara_Page> .
+  # oo 1906-09-12 Hon. Osmund Scott, 1876-03-24 - 1948-09-09, scott.ttl#Osmund_Scott
+<stuart.ttl#Lillias_Amy_Stuart>
+  # Lillias Amy Stuart, 1881-11-19 - 1970
+  gen:father <#Dudley_Charles_Stuart> ;
+  gen:mother <#Amy_Clara_Page> .
+  # oo 1907-06-19 Hon. Denys Scott, 1877-06-1 - 1962, scott.ttl#Denys_Scott
+
+
+<https://www.wikidata.org/wiki/Q48202061>
+  # Lady Susan Stewart, 1767-04-10 – 1841-04-02
+  gen:father <https://www.wikidata.org/wiki/Q6259135> ;
+  gen:mother <https://www.wikidata.org/wiki/Q47546716> .
+  # oo 1791-09-15 George Spencer-Churchill, 5th Duke of Marlborough, 1766-03-06 - 1840-03-05, https://www.wikidata.org/wiki/Q333347
+<https://www.wikidata.org/wiki/Q5345041>
+  # Hon. Edward Richard Stewart, 1782-05-05 – 1851-08-27
+  gen:father <https://www.wikidata.org/wiki/Q6259135> ;
+  gen:mother <https://www.wikidata.org/wiki/Q47546716> .
+  # oo Hon. Katherine Charteris, d. 1863-10-08
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5345041> , <wemyss.ttl#Katherine_Charteris> ;
+	gen:startDate "1805-11" .
+
+<#Algernon_Stewart>
+  # Algernon Stewart 1811-03-07 - 1875-11-04
+  gen:father <https://www.wikidata.org/wiki/Q5345041> ;
+  gen:mother <wemyss.ttl#Katherine_Charteris> .
+  # oo Charlotte Clement, d. 1861, daughter of J. Albeck Clement
+  []
+    gen:spouse <#Algernon_Stewart> , <#Charlotte_Clement> ;
+	gen:startDate "1833-10" .
+<stuart.ttl#Jane_Francis_Clinton_Stewart>
+  # Jane Francis Clinton Stewart, 1817-05-27 – 1897-03-24
+  gen:father <https://www.wikidata.org/wiki/Q5345041> ;
+  gen:mother <wemyss.ttl#Katherine_Charteris> .
+  # oo 1851-10-18 George Spencer-Churchill, 6th Duke of Marlborough, 1793-012-27 - 1857-07-01, https://www.wikidata.org/wiki/Q333601
+
+<#Charles_Edward_Stewart>
+  # Charles Edward Stewart, 1836-02-23 - 1904-12-26
+  gen:father <#Algernon_Stewart> ;
+  gen:mother <#Charlotte_Clement> .
+
+<stuart.ttl#Rose_Anne_Stewart>
+  # Rose Anne Stewart
+  gen:father <#Charles_Edward_Stewart> .
+  # oo 1938-09-26 Eric Surtees Scott, 1912-05-20 - 2005-08, scott.ttl#Eric_Surtees_Scott
+
+# ----
+#<#Andrew_Ramon_Dalzell_de_Bertodano>
+  # Andrew Ramon Dalzell de Bertodano, d. 1957
+  # oo Lady Mary Elspeth Sylvia Savile, 1914-05-29 - 1948-10-25
+  []
+    gen:spouse <#Andrew_Ramon_Dalzell_de_Bertodano> , <#Lady_Mary_Elspeth_Sylvia_Savile> ;
+	gen:startDate "1937-02-04" .
+
+<#Mary_Isabel_de_Bertodano>
+  # Mary Isabel de Bertodano, 1945-05-19 - 2015-11-08
+  gen:father <#Andrew_Ramon_Dalzell_de_Bertodano> ;
+  gen:mother <#Lady_Mary_Elspeth_Sylvia_Savile> .
+  # oo 1966-10-28 Hon. Simon Peter Scott, 1939-09-13 - 2009-05-30, #Simon_Peter_Scott
+# ----
+<#John_Savile,_6th_Earl_of_Mexborough>
+  # John Henry Savile, 6th Earl of Mexborough of Lifford, 1843-06-17 - 1916-06-08
+  gen:father <https://www.wikidata.org/wiki/Q6256763> .
+  # and Agnes Louisa Elizabeth Raphael
+  # oo Hon. Margaret Eva de Burgh Knatchbull-Hugessen, d. 1957-01-26
+  []
+    gen:spouse <#John_Savile,_6th_Earl_of_Mexborough> , <#Margaret_Eva_de_Burgh_Knatchbull-Hugessen> ;
+	gen:startDate "1905-07-15" .
+
+<#Lady_Mary_Elspeth_Sylvia_Savile>
+  # Lady Mary Elspeth Sylvia Savile, 1914-05-29 - 1948-10-25
+  gen:father <#John_Savile,_6th_Earl_of_Mexborough> ;
+  gen:mother <#Margaret_Eva_de_Burgh_Knatchbull-Hugessen> .
+  # oo 1937-02-04 Andrew Ramon Dalzell de Bertodano, d. 1957, #Andrew_Ramon_Dalzell_de_Bertodano
+# ----
+<#Margaret_Eva_de_Burgh_Knatchbull-Hugessen>
+  # Hon. Margaret Eva de Burgh Knatchbull-Hugessen, d. 1957-01-26
+  gen:father <https://www.wikidata.org/wiki/Q5343962> .
+  # and Hon. Amy Virginia Beaumont
+  # oo 1905-07-15 John Henry Savile, 6th Earl of Mexborough of Lifford, 1843-06-17 - 1916-06-08, #John_Savile,_6th_Earl_of_Mexborough
+
+# ----
+#<https://www.wikidata.org/wiki/Q333364>
+  # Henry William Forster, 1st and last Baron Forster, 1866-01-31 – 1936-01-15
+  # oo Hon. Rachel Cecily Douglas-Scott-Montagu, 1868-08-15 - 1962-04-12
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q333364> , <#Rachel_Cecily_Douglas-Scott-Montagu> ;
+	gen:startDate "1890-06-03" .
+
+#<https://www.wikidata.org/wiki/Q7527665>
+  # Sir John Chichester, of Raleigh, 4th Baronet, 1689-01-02 - 1740-09-02
+  # oo Anne Leigh, 1695~ - 1723-07~, daughter of John Leigh
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7527665> , <#Anne_Leigh> ;
+	gen:startDate "1733" .
+
+<#William_Chichester>
+  # Rev. William Chichester, 1722~ - 1770-09
+  gen:father <https://www.wikidata.org/wiki/Q7527665> ;
+  gen:mother <#Anne_Leigh> .
+  # oo Mary Bellamine, daughter of John Bellamine
+  []
+    gen:spouse <#William_Chichester> , <#Mary_Bellamine> ;
+	gen:startDate "1748-12-29" .
+
+<#John_Chichester>
+  # John Chichester, 1752~ - 1800-08-01
+  gen:father <#William_Chichester> ;
+  gen:mother <#Mary_Bellamine> .
+  # oo Elizabeth Cory, d. 1837-06
+  []
+    gen:spouse <#John_Chichester> , <#Elizabeth_Cory> ;
+	gen:startDate "1787-06-26" .
+
+<#Sir_Arthur_Chichester,_7th_Baronet>
+  # Sir Arthur Chichester, 7th Baronet, 1790-05-25 - 1842-05-30
+  gen:father <#John_Chichester> ;
+  gen:mother <#Elizabeth_Cory> .
+  # oo Charlotte Hamlyn-Williams, 1798~ - 1834-08-18
+  []
+    gen:spouse <#Sir_Arthur_Chichester,_7th_Baronet> , <#Charlotte_Hamlyn-Williams> ;
+	gen:startDate "1819-09-08" .
+
+<#Sir_Arthur_Chichester,_8th_Baronet>
+  # Sir Arthur Chichester, 8th Baronet, 1822-10-04 - 1898-07-13
+  gen:father <#Sir_Arthur_Chichester,_7th_Baronet> ;
+  gen:mother <#Charlotte_Hamlyn-Williams> .
+  # oo Mary Nicholetts, d. 1879-06-28, daughter of John Nicholetts
+  []
+    gen:spouse <#Sir_Arthur_Chichester,_8th_Baronet> , <#Mary_Nicholetts> ;
+	gen:startDate "1847-11-20" .
+
+<#Sir_Edward_Chichester,_9th_Baronet>
+  # Sir Edward Chichester, 9th Baronet, 1849-11-20 - 1906-09-17
+  gen:father <#Sir_Arthur_Chichester,_8th_Baronet> ;
+  gen:mother <#Mary_Nicholetts> .
+  # oo Catharina Emma Whyte, d. 1937-07-24, daughter of Robert Charles Whyte
+  []
+    gen:spouse <#Sir_Edward_Chichester,_9th_Baronet> , <#Catharina_Emma_Whyte> ;
+	gen:startDate "1880-10-12" .
+
+<#Sir_Edward_George_Chichester,_10th_Baronet>
+  # Sir Edward George Chichester, 10th Baronet, 1883-01-22 - 1940-09-26
+  gen:father <#Sir_Edward_Chichester,_9th_Baronet> ;
+  gen:mother <#Catharina_Emma_Whyte> .
+  # oo Phyllis Dorothy Compton, b. 1896, daughter of Henry Francis Compton and Dorothy Ann Musgrave
+  []
+    gen:spouse <#Sir_Edward_George_Chichester,_10th_Baronet> , <#Phyllis_Dorothy_Compton> ;
+	gen:startDate "1915-01-05" ;
+	gen:divorceDate "1923" .
+<#Victoria_May_Chichester>
+  # Victoria May Chichester, d. 1968-04-05
+  gen:father <#Sir_Edward_Chichester,_9th_Baronet> ;
+  gen:mother <#Catharina_Emma_Whyte> .
+  # oo 1914-12-02 Gilbert Alan Hamilton Wills, 1st Baron Dulverton, 1880-03-28 - 1956-12-01, https://www.wikidata.org/wiki/Q5561280
+
+<#Sir_Edward_John_Chichester,_11th_Baronet>
+  # Sir Edward John Chichester, 11th Baronet, 1916-04-14 - 2007-05-14
+  gen:father <#Sir_Edward_George_Chichester,_10th_Baronet> ;
+  gen:mother <#Phyllis_Dorothy_Compton> .
+  # oo Hon. Anne Rachel Pearl Douglas-Scott-Montagu, 1921-10-04 - 2015-02-01
+  []
+    gen:spouse <#Sir_Edward_John_Chichester,_11th_Baronet> , <#Anne_Rachel_Pearl_Douglas-Scott-Montagu> ;
+	gen:startDate "1950-09-23" .
+
+<#Mary_Rose_Chichester>
+  # Mary Rose Chichester, 1957-03-03 - 1980
+  gen:father <#Sir_Edward_John_Chichester,_11th_Baronet> ;
+  gen:mother <#Anne_Rachel_Pearl_Douglas-Scott-Montagu> .
+  # oo 1978-03-04 Greville Patrick Charles Howard, Baron Howard of Rising, b. 1941-04-22, https://www.wikidata.org/wiki/Q335720
+# ----
+<#Charlotte_Hamlyn-Williams>
+  # Charlotte Hamlyn-Williams, 1798~ - 1834-08-18
+  gen:father <https://www.wikidata.org/wiki/Q26403920> .
+  # and Diana Anne Whitaker
+  # oo 1819-09-08 Sir Arthur Chichester, 7th Baronet, 1790-05-25 - 1842-05-30, #Sir_Arthur_Chichester,_7th_Baronet
+
+# ----
+#<https://www.wikidata.org/wiki/Q5236618>
+  # David Lindsay-Bethune, Viscount Garnock [later, 15th Earl of Lindsay], 1926-02-09 - 1989
+  # oo Hon. Mary Clare Douglas-Scott-Montagu, 1928-06-09 - 2016-04-05
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5236618> , <#Mary_Clare_Douglas-Scott-Montagu> ;
+	gen:startDate "1953-10-31" ;
+	gen:divorceDate "1968" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q8005728>
+  # William Borthwick, 4th Lord Borthwick, d. 1543-05-28a/1555-02-19b
+  # oo Margaret Hay
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8005728> , <hay.ttl#Margaret_Hay> ;
+	gen:startDate "1491" .
+
+<#John_Borthwick,_5th_Lord_Borthwick>
+  # John Borthwick, 5th Lord Borthwick, d. 1566-03-28
+  gen:father <https://www.wikidata.org/wiki/Q8005728> ;
+  gen:mother <hay.ttl#Margaret_Hay> .
+  # oo  Isobel Lindsay, d. 1577-11-15
+  []
+    gen:spouse <#John_Borthwick,_5th_Lord_Borthwick> , <lindsay.ttl#Isobel_Lindsay> ;
+	gen:startDate "1544b" .
+
+<#William_Borthwick,_6th_Lord_Borthwick>
+  # William Borthwick, 6th Lord Borthwick, d. 1582-10
+  gen:father <#John_Borthwick,_5th_Lord_Borthwick> ;
+  gen:mother <lindsay.ttl#Isobel_Lindsay> .
+  # oo Grissel Scott, b. 1552b
+  []
+    gen:spouse <#William_Borthwick,_6th_Lord_Borthwick> , <#Grissel_Scott> ;
+	gen:startDate "1570b" .
+# ----
+<lindsay.ttl#Isobel_Lindsay>
+  # Isobel Lindsay, d. 1577-11-15
+  gen:father <https://www.wikidata.org/wiki/Q5236634> .
+  # and Isobel Lundie
+  # oo 1544b John Borthwick, 5th Lord Borthwick, d. 1566-03-28, scott.ttl#John_Borthwick,_5th_Lord_Borthwick
+
+
+# ====
+# ----
+
+
+# ====
+# Napier
+<https://www.wikidata.org/wiki/Q5482004>
+  # Francis Napier, 6th Lord Napier of Merchistoun, 1702~ - 1773
+  # 6th Lord Napier of Merchistoun 1706-09
+  # 3rd Baronet Scott, of Thirlestane 1725-10-08
+  gen:father <https://www.wikidata.org/wiki/Q16859551> ;
+  gen:mother <napier.ttl#Elizabeth_Brisbane,_Mistress_of_Napier> .
+  # oo Lady Henrietta Hope, 1706-02-21 - 1745-02-17
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5482004> , <hope.ttl#Lady_Henrietta_Hope> ;
+	gen:startDate "1729-03-14" .
+  # oo Henrietta Maria Johnston, daughter of George Johnston
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5482004> , <#Henrietta_Maria_Johnston> ;
+	gen:startDate "1750" .
+
+<https://www.wikidata.org/wiki/Q8016024>
+  # William Napier, 7th Lord Napier of Merchistoun, 1730-05-01 - 1775-01-02
+  gen:father <https://www.wikidata.org/wiki/Q5482004> ;
+  gen:mother <hope.ttl#Lady_Henrietta_Hope> .
+  # oo Marie Anne Cathcart, 1727-10-26 - 1774-07-11
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8016024> , <#Marie_Anne_Cathcart> ;
+	gen:startDate "1754-12-22" .
+<#Charles_Napier>
+  # Hon. Charles Napier, 1731-11-19 - 1807-12-09
+  gen:father <https://www.wikidata.org/wiki/Q5482004> ;
+  gen:mother <hope.ttl#Lady_Henrietta_Hope> .
+  # oo Grizel Warrender, d. 1774-11-15, daughter of Sir John Warrender of Lochend, 2nd Baronet and Henrietta Johnston
+  []
+    gen:spouse <#Charles_Napier> , <#Grizel_Warrender> ;
+	gen:startDate "1763-12-19" .
+  # oo Christian Hamilton, d. 1814, daughter of Gabriel Hamilton and Agnes Dundas
+  []
+    gen:spouse <#Charles_Napier> , <#Christian_Hamilton> ;
+	gen:startDate "1777-07-02" .
+<#Mark_Napier>
+  # Hon. Mark Napier, 1738-12-30 - 1809-06-10
+  gen:father <https://www.wikidata.org/wiki/Q5482004> ;
+  gen:mother <hope.ttl#Lady_Henrietta_Hope> .
+  # oo Anne Neilson, daughter of John Neilson
+  []
+    gen:spouse <#Mark_Napier> , <#Anne_Neilson> ;
+	gen:startDate "1761-02-24" .
+  # oo Margaret Simpson, d. 1829-08-08, daughter of Alexander Simpson of Concraig
+  []
+    gen:spouse <#Mark_Napier> , <#Margaret_Simpson> .
+<https://www.wikidata.org/wiki/Q5542792>
+  # Hon. George Napier, 1751-03-11 - 1804-10-13
+  gen:father <https://www.wikidata.org/wiki/Q5482004> ;
+  gen:mother <#Henrietta_Maria_Johnston> .
+  # oo Elizabeth Pollock, daughter of Robert Pollock
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5542792> , <#Elizabeth_Pollock> ;
+	gen:startDate "1775-01-22" .
+  # oo Lady Sarah Lennox, 1745-02-14 - 1826-08
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5542792> , <https://www.wikidata.org/wiki/Q2755928> ;
+	gen:startDate "1781-08-27" .
+
+<https://www.wikidata.org/wiki/Q5482005>
+  # Francis Napier, 8th Lord Napier of Merchistoun, 1758-02-23 - 1823-08-01
+  gen:father <https://www.wikidata.org/wiki/Q8016024> ;
+  gen:mother <#Marie_Anne_Cathcart> .
+  # oo Maria Margaret Clavering, 1756~ - 1821-12-29
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5482005> , <#Maria_Margaret_Clavering> ;
+	gen:startDate "1784-04-13" .
+<#Henrietta_Hope_Napier>
+  # Henrietta Hope Napier
+  gen:father <#Charles_Napier> ;
+  gen:mother <#Christian_Hamilton> .
+  # oo 1807-02-22 George Gordon, 4th of Esslemont and 15th of Hallhead, 1761-05-19 - 1823-09-27, gordon.ttl#George_Gordon,_15th_of_Hallhead
+<https://www.wikidata.org/wiki/Q212700>
+  # Sir Charles Napier, Count Napier St. Vincent, 1786-03-06 - 1860-11-05
+  # Viscount of Cape St. Vincent
+  # Count Napier St. Vincent
+  gen:father <#Charles_Napier> ;
+  gen:mother <#Christian_Hamilton> .
+  # oo Frances Elizabeth Younghusband, d. 1857-12-19, daughter of George Younghusband
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q212700> , <#Frances_Elizabeth_Younghusband> ;
+	gen:startDate "1815-06-12" .
+<https://www.wikidata.org/wiki/Q18612426>
+  # Sir Thomas Erskine Napier, 1790-05-10 - 1863-07-05
+  gen:father <#Charles_Napier> ;
+  gen:mother <#Christian_Hamilton> .
+  # oo Margaret Falconer,  d. 1885-10-18, daughter of Alexander Falconer
+<#Francis_Napier>
+  # Francis Napier, b. 1770-08-20
+  gen:father <#Mark_Napier> ;
+  gen:mother <#Margaret_Simpson> .
+  # oo Mary Elizabeth Jane Douglas Hamilton, daughter of Archibald Hamilton and Alice Colden
+  []
+    gen:spouse <#Francis_Napier> , <#Mary_Elizabeth_Jane_Douglas_Hamilton> ;
+	gen:startDate "1796-03-30" .
+<#Marcia_Anne_Napier>
+  # Marcia Anne Napier, d. 1861-04-01
+  gen:father <#Mark_Napier> ;
+  gen:mother <#Margaret_Simpson> .
+  # oo 1804-01-02 Alexander Ogilvy, 1770-09-17 - 1846-11-02, son of Sir John Ogilvy of Inverquharity, 5th Baronet and Charlotte Tulliedelph
+<https://www.wikidata.org/wiki/Q721083>
+  # Sir Charles James Napier, 1782-08-10 - 1853-08-29
+  gen:father <https://www.wikidata.org/wiki/Q5542792> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2755928> .
+  # oo Elizabeth Oakeley, 1755~ - 1833-07-31, daughter of Thomas Oakeley
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q721083> , <#Elizabeth_Oakeley> ;
+	gen:startDate "1827-04" .
+  # oo Frances Philipps, d. 1872-06-22, daughter of William Philipps
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q721083> , <#Frances_Philipps> ;
+	gen:startDate "1835" .
+<#Emily_Louisa_Augusta_Napier>
+  # Emily Louisa Augusta Napier, 1783-07-11 - 1863-03-18
+  gen:father <https://www.wikidata.org/wiki/Q5542792> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2755928> .
+  # oo 1830-09-22 Sir Henry Edward Bunbury, 7th Baronet, 1778-05-04 - 1860-04-13, https://www.wikidata.org/wiki/Q7527111
+<https://www.wikidata.org/wiki/Q1508367>
+  # Sir George Thomas Napier, 1784-06-30 - 1855-09-08
+  gen:father <https://www.wikidata.org/wiki/Q5542792> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2755928> .
+  # oo Margaret Craig, d. 1819-08-31, daughter of John Craig and Sarah Stark
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1508367> , <#Margaret_Craig> ;
+	gen:startDate "1812-10-22" .
+  # oo Frances Dorothea Blencowe, 1793-04-04 - 1881-07-11, daughter of Robert Willis Blencowe and Penelope Robinson
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1508367> , <#Frances_Dorothea_Blencowe> ;
+	gen:startDate "1839" .
+<https://www.wikidata.org/wiki/Q637730>
+  # Sir William Francis Patrick Napier, 1785-12-17 - 1860-02-12
+  gen:father <https://www.wikidata.org/wiki/Q5542792> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2755928> .
+  # oo Caroline Amelia Fox, d. 1860-03-26
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q637730> , <#Caroline_Amelia_Fox> ;
+	gen:startDate "1812-03-14" .
+<https://www.wikidata.org/wiki/Q5720761>
+  # Henry Edward Napier, 1789-03-05 - 1853-10-13
+  gen:father <https://www.wikidata.org/wiki/Q5542792> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2755928> .
+  # oo Caroline Bennett
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5720761> , <#Caroline_Bennett> ;
+	gen:startDate "1823-11-17" .
+
+<https://www.wikidata.org/wiki/Q8016028>
+  # William John Napier, 9th Lord Napier of Merchistoun, 1786-10-13 - 1834-10-11
+  gen:father <https://www.wikidata.org/wiki/Q5482005> ;
+  gen:mother <#Maria_Margaret_Clavering> .
+  # oo Eliza Cochrane-Johnstone, 1795~ - 1883-06-06
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8016028> , <cochrane.ttl#Eliza_Cochrane-Johnstone> ;
+	gen:startDate "1816-03-28" .
+<https://www.wikidata.org/wiki/Q6768996>
+  # Mark Napier, 1798-07-24 - 1869-11-22
+  gen:father <#Francis_Napier> ;
+  gen:mother <#Mary_Elizabeth_Jane_Douglas_Hamilton> .
+  # oo Charlotte Ogilvy, d. 1883-04-14, daughter of Alexander Ogilvy and Marcia Anne Napier (d. 1861-04-01)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6768996> , <#Charlotte_Ogilvy> ;
+	gen:startDate "1842-12-29" .
+<#Emily_Cephalonia_Napier>
+  # Emily Cephalonia Napier, d. 1908-02-29
+  gen:father <https://www.wikidata.org/wiki/Q721083> .
+  # oo 1845-04-21 William Craig Emilius Napier, 1818-03-18 - 1903-09-23, https://www.wikidata.org/wiki/Q8016025
+<https://www.wikidata.org/wiki/Q8016025>
+  # William Craig Emilius Napier, 1818-03-18 - 1903-09-23
+  gen:father <https://www.wikidata.org/wiki/Q1508367> ;
+  gen:mother <#Margaret_Craig> .
+  # oo Emily Cephalonia Napier, d. 1908-02-29
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8016025> , <#Emily_Cephalonia_Napier> ;
+	gen:startDate "1845-04-21" .
+<#Cecilia_Caroline_Napier>
+  # Cecilia Caroline Napier, 1819b - 1896-06-05
+  gen:father <https://www.wikidata.org/wiki/Q1508367> ;
+  gen:mother <#Margaret_Craig> .
+  # oo 1852-11-30 Henry William St. Pierre Bunbury, 1812-09-02 - 1875-09-18, https://www.wikidata.org/wiki/Q11708920
+<#Elizabeth_Marianne_Napier>
+  # Elizabeth Marianne Napier, d. 1899-04-27
+  gen:father <https://www.wikidata.org/wiki/Q637730> ;
+  gen:mother <#Caroline_Amelia_Fox> .
+  # oo 1838-03-01 Philip Yorke Gore, 4th Earl of Arran of the Arran Islands, 1801-11-23 - 1884-06-25, https://www.wikidata.org/wiki/Q7183632
+<#Louisa_Augusta_Napier>
+  # Louisa Augusta Napier, d. 1856-09-08
+  gen:father <https://www.wikidata.org/wiki/Q637730> ;
+  gen:mother <#Caroline_Amelia_Fox> .
+  # oo 1844-07-15 Patrick Leonard McDougall, 1819-08-10 – 1894-11-28, https://www.wikidata.org/wiki/Q7147011
+<#Pamela_Adelaide_Napier>
+  # Pamela Adelaide Napier, d. 1910-02-21
+  gen:father <https://www.wikidata.org/wiki/Q637730> ;
+  gen:mother <#Caroline_Amelia_Fox> .
+  # oo 1846-12-21 Philip William Skynner Miles, 1816 - 1881-10-01, https://www.wikidata.org/wiki/Q26265459
+<#Norah_Creina_Blanche_Napier>
+  # Norah Creina Blanche Napier, 1827~ - 1897-04-27
+  gen:father <https://www.wikidata.org/wiki/Q637730> ;
+  gen:mother <#Caroline_Amelia_Fox> .
+  # oo 1854-08-17 Henry Austin Bruce, 1st Baron Aberdare of Duffryn, 1815-04-16 - 1895-02-25, https://www.wikidata.org/wiki/Q335550
+
+<#Maria_Margaret_Napier>
+  # Hon. Maria Margaret Napier, 1817-03-18 - 1896-04-18
+  gen:father <https://www.wikidata.org/wiki/Q8016028> ;
+  gen:mother <cochrane.ttl#Eliza_Cochrane-Johnstone> .
+  # oo 1837-05-19 John Gellibrand Hubbard, 1st Baron Addington, 1805-03-21 - 1889-08-28, https://www.wikidata.org/wiki/Q6240199
+<https://www.wikidata.org/wiki/Q5482017>
+  # Francis Napier, 10th Lord Napier of Merchistoun, 1819-09-15 - 1898-12-19
+  # 7th Baronet Scott, of Thirlestane, 10th Lord Napier of Merchistoun 1834-10-11
+  # 1st Baron Ettrick of Ettrick, co. Selkirk 1872-07-16
+  gen:father <https://www.wikidata.org/wiki/Q8016028> ;
+  gen:mother <cochrane.ttl#Eliza_Cochrane-Johnstone> .
+  # oo Anne Jane Charlotte Lockwood, 1824 – 1911-08-24, daughter of Robert Manners Lockwood
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5482017> , <#Anne_Jane_Charlotte_Lockwood> ;
+	gen:startDate "1845-09-02" .
+<#William_Napier>
+  # Hon. William Napier, 1821-07-27 - 1876-01-21
+  gen:father <https://www.wikidata.org/wiki/Q8016028> ;
+  gen:mother <cochrane.ttl#Eliza_Cochrane-Johnstone> .
+  # oo Louisa May Lloyd, d. 1908-10-13, daughter of John H. Lloyd
+  []
+    gen:spouse <#William_Napier> , <#Louisa_May_Lloyd> ;
+	gen:startDate "1854-05-03" .
+<#Eliza_Napier>
+  # Hon. Eliza Napier, d. 1901-04-02
+  gen:father <https://www.wikidata.org/wiki/Q8016028> ;
+  gen:mother <cochrane.ttl#Eliza_Cochrane-Johnstone> .
+  # oo 1847-08-18 Sir John Charles Dalrymple-Hay, 3rd Baronet, 1821-02-11 – 1912-01-28, https://www.wikidata.org/wiki/Q7527707
+<#Anne_Carmichael_Napier>
+  # Hon. Anne Carmichael Napier, d. 1877-05-28
+  gen:father <https://www.wikidata.org/wiki/Q8016028> ;
+  gen:mother <cochrane.ttl#Eliza_Cochrane-Johnstone> .
+  # oo 1847-04-29 Hon. George Hope, 1811-04-12 - 1854-11-14, hope.ttl#George_Hope_(died_1854)
+<#Ellinor_Alice_Napier>
+  # Hon. Ellinor Alice Napier, d. 1903-05-11
+  gen:father <https://www.wikidata.org/wiki/Q8016028> ;
+  gen:mother <cochrane.ttl#Eliza_Cochrane-Johnstone> .
+  # oo 1853-10-30 Hon. George Grey Dalrymple, 1832-05-22 - 1900-11-30, dalrymple.ttl#George_Grey_Dalrymple
+<#Susan_Frances_Napier>
+  # Susan Frances Napier, d. 1878-11-06
+  gen:father <https://www.wikidata.org/wiki/Q8016025> ;
+  gen:mother <#Emily_Cephalonia_Napier> .
+  # oo 1873-02-12 Cecil Hanmer Bunbury, 1845-02-12 - 1909-12-22, #Cecil_Hanmer_Bunbury
+
+<https://www.wikidata.org/wiki/Q8016021>
+  # William John George Napier, 11th Lord Napier of Merchistoun, 1846-09-22 - 1913-12-06
+  gen:father <https://www.wikidata.org/wiki/Q5482017> ;
+  gen:mother <#Anne_Jane_Charlotte_Lockwood> .
+  # oo Harriet Blake Armstrong Lumb, d. 1897-06-05, daughter of Edward Lumb
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8016021> , <#Harriet_Blake_Armstrong_Lumb> ;
+	gen:startDate "1876-01-05" .
+  # oo Grace Burns, d. 1928-01-29, daughter of Jaems Cleland Burns
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8016021> , <#Grace_Burns> ;
+	gen:startDate "1898-07-19" .
+<#Mark_Francis_Napier>
+  # Mark Francis Napier, 1852-01-21 - 1919-08-19
+  gen:father <https://www.wikidata.org/wiki/Q5482017> ;
+  gen:mother <#Anne_Jane_Charlotte_Lockwood> .
+  # oo Emily Jones, d. 1922-10-20
+  []
+    gen:spouse <#Mark_Francis_Napier> , <#Emily_Jones> ;
+	gen:startDate "1878-05-30" .
+<#Francis_Horatio_Napier>
+  # Francis Horatio Napier, 1861-02-07 - 1949-09-10
+  gen:father <#William_Napier> ;
+  gen:mother <#Louisa_May_Lloyd> .
+  # oo Margaret Elizabeth Horatia Hope, 1873-11-24 - 1947-03
+  []
+    gen:spouse <#Francis_Horatio_Napier> , <hope.ttl#Margaret_Elizabeth_Horatia_Hope> ;
+	gen:startDate "1893-04-26" ;
+	gen:divorceDate "1923" .
+  # oo Isoline Richards Shotter, daughter of Frederick Barriff Shotter
+  []
+    gen:spouse <#Francis_Horatio_Napier> , <#Isoline_Richards_Shotter> ;
+	gen:startDate "1923-10-02" .
+
+<https://www.wikidata.org/wiki/Q5482001>
+  # Francis Edward Basil Napier, 12th Lord Napier of Merchistoun, 1876-11-19 - 1941-03-22
+  gen:father <https://www.wikidata.org/wiki/Q8016021> ;
+  gen:mother <#Harriet_Blake_Armstrong_Lumb> .
+  # oo Hon. Clarice Jessie Evelyn Hamilton, 1881-10-10 - 1951-05-11
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5482001> , <hamilton.ttl#Clarice_Jessie_Evelyn_Hamilton> ;
+	gen:startDate "1899-12-12" .
+
+<https://www.wikidata.org/wiki/Q8016023>
+  # William Francis Cyril James Hamilton Napier, 13th Lord Napier of Merchistoun, 1900-09-09 - 1954-08-23
+  gen:father <https://www.wikidata.org/wiki/Q5482001> ;
+  gen:mother <hamilton.ttl#Clarice_Jessie_Evelyn_Hamilton> .
+  # oo Violet Muir Newson, d. 1992
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8016023> , <#Violet_Muir_Newson> ;
+	gen:startDate "1928-09-28" .
+
+<https://www.wikidata.org/wiki/Q1989572>
+  # Francis Nigel Napier, 14th Lord Napier of Merchistoun, 1930-12-05 - 2012-03-15
+  gen:father <https://www.wikidata.org/wiki/Q8016023> ;
+  gen:mother <#Violet_Muir_Newson> .
+  # oo Delia Mary Pearson, daughter of Archibald David Barclay Pearson and Hilda Constance Helen Blackburn
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1989572> , <#Delia_Mary_Pearson> ;
+	gen:startDate "1958-10-30" .
+<#Charles_Malcolm_Napier>
+  # Hon. Charles Malcolm Napier, b. 1933-06-08
+  gen:father <https://www.wikidata.org/wiki/Q8016023> ;
+  gen:mother <#Violet_Muir_Newson> .
+  # oo Lady Mariota Cecilia Murray, 1945-01-16 - 2001-05-25
+  []
+    gen:spouse <#Charles_Malcolm_Napier> , <murray.ttl#Lady_Mariota_Cecilia_Murray> ;
+	gen:startDate "1969-01-25" .
+
+<https://www.wikidata.org/wiki/Q5482002>
+  # Francis David Charles Napier, 15th Lord Napier of Merchistoun, b. 1962-11-03
+  gen:father <https://www.wikidata.org/wiki/Q1989572> ;
+  gen:mother <#Delia_Mary_Pearson> .
+  # oo Zara Jane McCalmont, b. 1964-07-28, daughter of Hugh Dermot McCalmont and Gillian Mary Moore
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5482002> , <#Zara_Jane_McCalmont> ;
+	gen:startDate "1993-05-08" .
+
+<#William_Alexander_Hugh_Napier>
+  # Hon. William Alexander Hugh Napier, b. 1996-06-10
+  gen:father <https://www.wikidata.org/wiki/Q5482002> ;
+  gen:mother <#Zara_Jane_McCalmont> .
+<#Sophie_Eleanor_Rose_Napier>
+  # Hon. Sophie Eleanor Rose Napier, b. 1999-05-24
+  gen:father <https://www.wikidata.org/wiki/Q5482002> ;
+  gen:mother <#Zara_Jane_McCalmont> .
+
+
+# ----
+<#Marie_Anne_Cathcart>
+  # Marie Anne Cathcart, 1727-10-26 - 1774-07-11
+  gen:father <https://www.wikidata.org/wiki/Q5076140> .
+  # and Marion Shaw
+  # oo 1754-12-22 William Napier, 7th Lord Napier of Merchistoun, 1730-05-01 - 1775-01-02, https://www.wikidata.org/wiki/Q8016024
+
+# ----
+#<https://www.wikidata.org/wiki/Q6226265>
+  # Sir John Clavering, 1722 - 1777-08-30
+  # oo Lady Diana West
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6226265> , <grey.ttl#Lady_Diana_West> ;
+	gen:startDate "1756" .
+
+<#Maria_Margaret_Clavering>
+  # Maria Margaret Clavering, 1756~ - 1821-12-29
+  gen:father <https://www.wikidata.org/wiki/Q6226265> ;
+  gen:mother <grey.ttl#Lady_Diana_West> .
+  # oo 1784-04-13 Francis Napier, 8th Lord Napier of Merchistoun, 1758-02-23 - 1823-08-01, https://www.wikidata.org/wiki/Q5482005
+
+# ----
+#<https://www.wikidata.org/wiki/Q28047424>
+  # Rev. Sir William Bunbury, 5th Baronet, 1709-11-16 - 1764-06-11
+  # oo Eleanor Graham, d. 1764-02-14, daughter of Vere Graham and unknown daughter Warner
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q28047424> , <#Eleanor_Graham> ;
+	gen:startDate "1735b" .
+
+<https://www.wikidata.org/wiki/Q7526181>
+  # Sir Thomas Charles Bunbury, 6th Baronet, 1740-05 – 1821-03-31
+  gen:father <https://www.wikidata.org/wiki/Q28047424> ;
+  gen:mother <#Eleanor_Graham> .
+  # oo Lady Sarah Lennox, 1745-02-14 - 1826-08
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7526181> , <https://www.wikidata.org/wiki/Q2755928> ;
+	gen:startDate "1762-06-02" ;
+	gen:divorceDate "1776-05-14" .
+<https://www.wikidata.org/wiki/Q3133158>
+  # Henry William Bunbury, 1750 - 1811-05-07
+  gen:father <https://www.wikidata.org/wiki/Q28047424> ;
+  gen:mother <#Eleanor_Graham> .
+  # oo Catherine Horneck, 1753 - 1799, daughter of Kane William Horneck
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3133158> , <#Catherine_Horneck> ;
+	gen:startDate "1771" .
+
+<https://www.wikidata.org/wiki/Q7527111>
+  # Sir Henry Edward Bunbury, 7th Baronet, 1778-05-04 - 1860-04-13
+  gen:father <https://www.wikidata.org/wiki/Q3133158> ;
+  gen:mother <#Catherine_Horneck> .
+  # oo Louisa Amelia Fox, d. 1828-09
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7527111> , <#Louisa_Amelia_Fox> ;
+	gen:startDate "1807-04-04" .
+  # oo Emily Louisa Augusta Napier, 1783-07-11 - 1863-03-18
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7527111> , <#Emily_Louisa_Augusta_Napier> ;
+	gen:startDate "1830-09-22" .
+
+<https://www.wikidata.org/wiki/Q11708920>
+  # Henry William St. Pierre Bunbury, 1812-09-02 - 1875-09-18
+  gen:father <https://www.wikidata.org/wiki/Q7527111> ;
+  gen:mother <#Louisa_Amelia_Fox> .
+  # oo Cecilia Caroline Napier, 1819b - 1896-06-05
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q11708920> , <#Cecilia_Caroline_Napier> ;
+	gen:startDate "1852-11-30" .
+<#Richard_Hanmer_Bunbury>
+  # Richard Hanmer Bunbury, 1813-12-18 - 1857-12-23
+  gen:father <https://www.wikidata.org/wiki/Q7527111> ;
+  gen:mother <#Louisa_Amelia_Fox> .
+  # oo Sarah Susanna Sconce, daughter of Robert Clement Sconce
+  []
+    gen:spouse <#Richard_Hanmer_Bunbury> , <#Sarah_Susanna_Sconce> ;
+	gen:startDate "1838-12-19" .
+
+<#Cecil_Hanmer_Bunbury>
+  # Cecil Hanmer Bunbury, 1845-02-12 - 1909-12-22
+  gen:father <#Richard_Hanmer_Bunbury> ;
+  gen:mother <#Sarah_Susanna_Sconce> .
+  # oo Susan Frances Napier, d. 1878-11-06
+  []
+    gen:spouse <#Cecil_Hanmer_Bunbury> , <#Susan_Frances_Napier> ;
+	gen:startDate "1873-02-12" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q3498549>
+  # Rt. Hon. Sir Stephen Fox, 1627-03-27 - 1718-10-28
+  # oo Elizabeth Whittle, d. 1696-08-11, daughter of William Whittle
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3498549> , <#Elizabeth_Whittle> ;
+	gen:startDate "1651-12-08" .
+  # oo Christiana Hope, d. 1719-02-17, daughter of Rev. Francis Hope and Christian Palfeyman
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3498549> , <#Christiana_Hope> ;
+	gen:startDate "1703-07-11" .
+
+<#Jane_Fox>
+  # Jane Fox, d. 1721-07-11
+  gen:father <https://www.wikidata.org/wiki/Q3498549> ;
+  gen:mother <#Elizabeth_Whittle> .
+  # oo 1686-05-09 George Compton, 4th Earl of Northampton, 1664-10-18 - 1727-04-15, https://www.wikidata.org/wiki/Q5538076
+<https://www.wikidata.org/wiki/Q3289825>
+  # Henry Fox, 1st Baron Holland of Foxley, 1705-09-28 - 1774-07-01
+  # 1st Baron Holland of Foxley, co. Wilts 1763-04-17
+  gen:father <https://www.wikidata.org/wiki/Q3498549> ;
+  gen:mother <#Christiana_Hope> .
+  # oo Georgiana Carolina Lennox, Lady Holland, Baroness of Holland, 1723-03-27 - 1774-07-24
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3289825> , <https://www.wikidata.org/wiki/Q450627> ;
+	gen:startDate "1744-05-02" .
+
+<https://www.wikidata.org/wiki/Q5720742>
+  # Hon. Henry Edward Fox, 1755-03-04 - 1811-07-18
+  gen:father <https://www.wikidata.org/wiki/Q3289825> ;
+  gen:mother <https://www.wikidata.org/wiki/Q450627> .
+  # oo Marianne Clayton, d. 1808-10-15, daughter of William Clayton and Maria Eliza Catherine Lloyd
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5720742> , <#Marianne_Clayton> ;
+	gen:startDate "1786-02-14" .
+
+<#Caroline_Amelia_Fox>
+  # Caroline Amelia Fox, d. 1860-03-26
+  gen:father <https://www.wikidata.org/wiki/Q5720742> ;
+  gen:mother <#Marianne_Clayton> .
+  # oo 1812-03-14 Sir William Francis Patrick Napier, 1785-12-17 - 1860-02-12, https://www.wikidata.org/wiki/Q637730
+<#Louisa_Amelia_Fox>
+  # Louisa Amelia Fox, d. 1828-09
+  gen:father <https://www.wikidata.org/wiki/Q5720742> ;
+  gen:mother <#Marianne_Clayton> .
+  # oo 1807-04-04 Sir Henry Edward Bunbury, 7th Baronet, 1778-05-04 - 1860-04-13, https://www.wikidata.org/wiki/Q7527111
+
+# ----
+#<https://www.wikidata.org/wiki/Q7183632>
+  # Philip Yorke Gore, 4th Earl of Arran of the Arran Islands, 1801-11-23 - 1884-06-25
+  # son of Colonel Hon. William John Gore
+  # and Caroline Hales
+  # oo Elizabeth Marianne Napier, d. 1899-04-27
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7183632> , <#Elizabeth_Marianne_Napier> ;
+	gen:startDate "1838-03-01" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q18730177>
+  # Sir Duncan McDougall, 1787 - 1862
+
+<https://www.wikidata.org/wiki/Q7147011>
+  # Patrick Leonard McDougall, 1819-08-10 – 1894-11-28
+  gen:father <https://www.wikidata.org/wiki/Q18730177> .
+  # oo Louisa Augusta Napier, d. 1856-09-08
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7147011> , <#Louisa_Augusta_Napier> ;
+	gen:startDate "1844-07-15" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q25927689>
+  # Philip John Miles, 1774 - 1845-03-24
+  # oo Clarissa Peach, d. 1868-06-22, daughter of Samuel Peach Peach and Clarissa Partridge
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q25927689> , <#Clarissa_Peach> ;
+	gen:startDate "1813-05-11" .
+
+<https://www.wikidata.org/wiki/Q26265459>
+  # Philip William Skynner Miles, 1816 - 1881-10-01
+  gen:father <https://www.wikidata.org/wiki/Q25927689> ;
+  gen:mother <#Clarissa_Peach> .
+  # oo Pamela Adelaide Napier, d. 1910-02-21
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q26265459> , <#Pamela_Adelaide_Napier> ;
+	gen:startDate "1846-12-21" .
+
+<https://www.wikidata.org/wiki/Q7184124>
+  # Philip Napier Miles, 1865-01-21 – 1935-07-19
+  gen:father <https://www.wikidata.org/wiki/Q26265459> ;
+  gen:mother <#Pamela_Adelaide_Napier> .
+
+# ----
+#<https://www.wikidata.org/wiki/Q335550>
+  # Henry Austin Bruce, 1st Baron Aberdare of Duffryn, 1815-04-16 - 1895-02-25
+  # 1st Baron Aberdare of Duffryn, co. Glamorgan 1873-08-23
+  # oo Norah Creina Blanche Napier, 1827~ - 1897-04-27
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q335550> , <#Norah_Creina_Blanche_Napier> ;
+	gen:startDate "1854-08-17" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q6240199>
+  # John Gellibrand Hubbard, 1st Baron Addington, 1805-03-21 - 1889-08-28
+  # 1st Baron Addington, of Addington, Buckinghamshire 1887-07-22
+  # son of John Hubbard and Marianne Morgan
+  # oo Hon. Maria Margaret Napier, 1817-03-18 - 1896-04-18
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6240199> , <#Maria_Margaret_Napier> ;
+	gen:startDate "1837-05-19" .
+
+# ----
+<#Emily_Jones>
+  # Emily Jones, d. 1922-10-20
+  gen:father <https://www.wikidata.org/wiki/Q7791366> .
+  # oo 1878-05-30 Mark Francis Napier, 1852-01-21 - 1919-08-19, #Mark_Francis_Napier
+
+# ----
+<#Violet_Muir_Newson>
+  # Violet Muir Newson, d. 1992
+  gen:father <https://www.wikidata.org/wiki/Q13530004> .
+  # and Helena Franklin
+  # oo 1928-09-28 William Francis Cyril James Hamilton Napier, 13th Lord Napier of Merchistoun, 1900-09-09 - 1954-08-23, https://www.wikidata.org/wiki/Q8016023
+
+
+# https://www.wikidata.org/wiki/Q7528194, Rt. Hon. Sir Joseph Napier, 1st Baronet, of Merrion Square, 1804-12-26 – 1882-12-09
+# https://www.wikidata.org/wiki/Q7528195, Sir Joseph Napier, 2nd Baronet, 1841-05-28 – 1884-11-13
+# https://www.wikidata.org/wiki/Q7529707, Sir William Lennox Napier, 3rd Baronet of Merrion Square, 1867-10-12 – 1915-08-13
+# https://www.wikidata.org/wiki/Q7528197, Sir Joseph William Lennox Napier, 4th Baronet of Merrion Square, 1895-08-01 – 1986-10-13
+# https://www.wikidata.org/wiki/Q7528852, Sir Robert Surtees Napier, 5th Baronet of Merrion Square, 1932-03-05 – 1994-07-02

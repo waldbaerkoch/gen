@@ -1,0 +1,1239 @@
+@base <brudenell.ttl> .
+@prefix gen: <http://jjkoch.de/gen#> .
+@prefix wdata: <https://www.wikidata.org/wiki/> .
+@prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+
+<https://www.wikidata.org/wiki/Q7342463>
+  gen:name "Sir Robert Brudenell"@en ;
+  gen:birthDate "1461" ;
+  gen:deathDate "1531-01-30" .
+  # oo Margaret Entwhistle, d. 1502, daughter of Thomas Entwhistle, 1502b
+  # oo Philippa Power, d. 1532-03-28 1531b
+
+<#Sir_Thomas_Brudenell>
+  # Sir Thomas Brudenell, High Sheriff of Rutland, d. 1586-12-01
+  gen:father <https://www.wikidata.org/wiki/Q7342463> .
+  # and Margaret Entwhistle
+  # oo Elizabeth FitzWilliam, daughter of Sir William FitzWilliam
+
+<#Robert_Brudenell>
+  # Robert Brudenell, d. 1599-07-04
+  gen:father <#Sir_Thomas_Brudenell> .
+  # and Elizabeth FitzWilliam
+  # oo Catherine Taylarde, daughter of Sir Geoffrey Taylarde
+  []
+    gen:spouse <#Robert_Brudenell> , <#Catherine_Taylarde> ;
+	gen:startDate "1570-06-15" .
+
+<https://www.wikidata.org/wiki/Q7787976>
+  gen:name "Thomas Brudenell, 1st Earl of Cardigan"@en ;
+  #  1st Baron Brudenell of Stonton, co. Leicester 1627/1628-02-26
+  #  1st Earl of Cardigan 1661-04-20
+  gen:birthDate "1583~" ;
+  gen:deathDate "1663-09-16" ;
+  gen:father <#Robert_Brudenell> ;
+  gen:mother <#Catherine_Taylarde> .
+  # oo Mary Tresham, d. 1664-10-13
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7787976> , <#Mary_Tresham> ;
+	gen:startDate "1607b" .
+
+<#Robert_Brudenell,_2nd_Earl_of_Cardigan>
+  gen:name "Robert Brudenell, 2nd Earl of Cardigan"@en ;
+  gen:birthDate "1607-03-05" ;
+  gen:deathDate "1703-07-16" ;
+  gen:father <https://www.wikidata.org/wiki/Q7787976> ;
+  gen:mother <#Mary_Tresham> .
+  # oo (1) Hon. Mary Constable
+  []
+    gen:spouse <#Robert_Brudenell,_2nd_Earl_of_Cardigan> , <#Mary_Constable> .
+  # oo Anna Savage, d. 1696-06-16
+  []
+    gen:spouse <#Robert_Brudenell,_2nd_Earl_of_Cardigan> , <fitzgerald.ttl#Anna_Savage> .
+<#Lady_Mary_Brudenell_(died_1685)>
+  # Lady Mary Brudenell, 1610 - 1685
+  gen:father <https://www.wikidata.org/wiki/Q7787976> ;
+  gen:mother <#Mary_Tresham> .
+  # oo 1636-01 John Constable, 2nd Viscount of Dunbar, 1615 - 1668, #John_Constable,_2nd_Viscount_of_Dunbar
+  # oo 1668a John Dalton
+
+<#Lady_Mary_Brudenell_(died_1665~)>
+  gen:name "Lady Mary Brudenell"@en ;
+  gen:birthDate "1636-01-07" ;
+  gen:deathDate "1665~" ;
+  gen:father <#Robert_Brudenell,_2nd_Earl_of_Cardigan> ;
+  gen:mother <#Mary_Constable> .
+  # oo William Hay, 4th Earl of Kinnoull, d. 1677-03-28, https://www.wikidata.org/wiki/Q19874923
+<#Francis_Brudenell,_Lord_Brudenell>
+  gen:name "Francis Brudenell, Lord Brudenell"@en ;
+  gen:deathDate "1698" ;
+  gen:father <#Robert_Brudenell,_2nd_Earl_of_Cardigan> ;
+  gen:mother <fitzgerald.ttl#Anna_Savage> .
+  # oo Lady Frances Savile, d. 1695-06-06
+  []
+    gen:spouse <#Francis_Brudenell,_Lord_Brudenell> , <gower.ttl#Lady_Frances_Saville> ;
+	gen:startDate "1668-06-01~" .
+<#Lady_Catherine_Brudenell>
+  # Lady Catherine Brudenell
+  gen:father <#Robert_Brudenell,_2nd_Earl_of_Cardigan> ;
+  gen:mother <fitzgerald.ttl#Anna_Savage> .
+  # oo Charles Middleton, 2nd Earl of Middleton, 1649/1650 - 1719-07-28, https://www.wikidata.org/wiki/Q2959604
+<https://www.wikidata.org/wiki/Q4767529>
+  gen:name "Lady Anna Maria Brudenell"@en ;
+  gen:birthDate "1642-03-25" ;
+  gen:deathDate "1702-04-20" ;
+  gen:father <#Robert_Brudenell,_2nd_Earl_of_Cardigan> ;
+  gen:mother <fitzgerald.ttl#Anna_Savage> .
+  # oo 1658/1659-01-10 Francis Talbot, 11th Earl of Shrewsbury, 1623~ - 1667-03-16, https://www.wikidata.org/wiki/Q5482566
+<#Lady_Dorothy_Brudenell>
+  # Lady Dorothy Brudenell, 1646 - 1739/1740-01-26
+  gen:father <#Robert_Brudenell,_2nd_Earl_of_Cardigan> ;
+  gen:mother <fitzgerald.ttl#Anna_Savage> .
+  # oo 1691b Charles Fane, 3rd Earl of Westmorland, 1635-01-06 - 1691-09-18, https://www.wikidata.org/wiki/Q5077595
+  # oo 1697-08-01 Robert Constable, 3rd Viscount Dunbar, 1661 - 1714-11-23, #Robert_Constable,_3rd_Viscount_Dunbar
+
+<https://www.wikidata.org/wiki/Q5537353>
+  gen:name "George Brudenell, 3rd Earl of Cardigan"@en ;
+  # 3rd Baronet Brudenell, of Deene, co. Northampton, 3rd Earl of Cardigan, 3rd Baron Brudenell of Stonton, co. Leicester 1703-07-16
+  gen:birthDate "1685-09-29" ;
+  gen:deathDate "1732-07-05" ;
+  gen:father <#Francis_Brudenell,_Lord_Brudenell> ;
+  gen:mother <gower.ttl#Lady_Frances_Saville> .
+  # oo Lady Elizabeth Bruce, 1689-01 - 1745-12
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5537353> , <https://www.wikidata.org/wiki/Q48786421> ;
+	gen:startDate "1707-05-15" .
+<#James_Brudenell>
+  gen:name "James Brudenell"@en ;
+  gen:startDate "1687~" ;
+  gen:deathDate "1746-08-09" ;
+  gen:father <#Francis_Brudenell,_Lord_Brudenell> ;
+  gen:mother <gower.ttl#Lady_Frances_Saville> .
+<#Mary_Brudenell>
+  # Mary Brudenell, 1680 - 1766
+  gen:father <#Francis_Brudenell,_Lord_Brudenell> ;
+  gen:mother <gower.ttl#Lady_Frances_Saville> .
+  # oo Richard Molyneux, 5th Viscount Molyneux, 1679-05-29 - 1738-12-12, #Richard_Molyneux,_5th_Viscount_Molyneux
+<https://www.wikidata.org/wiki/Q56612426>
+  # Anne Brudenell, 1671 - 1722-12-09
+  gen:father <#Francis_Brudenell,_Lord_Brudenell> ;
+  gen:mother <gower.ttl#Lady_Frances_Saville> .
+  # oo (1) 1672-09b Henry Belasyse, 2nd Baron Belasyse of Worlaby, 1667~ - 1691-08~, #Henry_Belasyse,_2nd_Baron_Belasyse
+  # oo (2) 1692-01-08~ Charles Lennox, 1st Duke of Richmond, 1672-07-29 - 1723-05-27, https://www.wikidata.org/wiki/Q938207
+<https://www.wikidata.org/wiki/Q6470160>
+  gen:name "Lady Frances Brudenell"@en ;
+  gen:birthDate "1677b" ;
+  gen:deathDate "1736-02-23" ;
+  gen:father <#Francis_Brudenell,_Lord_Brudenell> ;
+  gen:mother <gower.ttl#Lady_Frances_Saville> .
+  # oo (1) 1692-09-12 Charles Livingston, 2nd Earl of Newburgh, 1664~ – 1694-04-06, #Charles_Livingston,_2nd_Earl_of_Newburgh
+  # oo (2) 1695-05 Richard Bellew, 3rd Baron Bellew of Duleek, 1664~ - 1715-03-22, #Richard_Bellew,_3rd_Baron_Bellew
+
+<https://www.wikidata.org/wiki/Q5542571>
+  gen:name "George Montagu, 1st Duke of Montagu"@en ;
+  # 4th Earl of Cardigan, 4th Baron Brudenell of Stonton, co. Leicester, 4th Baronet Brudenell, of Deene, co. Northampton, 1732-07-05
+  # 1st Duke of Montagu, 1st Marquess of Monthermer 1766-11-05
+  # 1st Baron Montagu of Boughton, co. Northampton 1786-08-21
+  gen:birthDate "1712-07-26" ;
+  gen:deathDate "1790-05-23" ;
+  gen:father <https://www.wikidata.org/wiki/Q5537353> ;
+  gen:mother <https://www.wikidata.org/wiki/Q48786421> .
+  # oo Lady Mary Montagu, 1711~ - 1775-05-02 # -> montagu.ttl
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5542571> , <https://www.wikidata.org/wiki/Q46371522> ;
+	gen:startDate "1730-07-07" .
+<https://www.wikidata.org/wiki/Q6130391>
+  gen:name "James Brudenell, 5th Earl of Cardigan"@en ;
+  # 1st Baron Brudenell of Deene, co. Northampton 1780-10-17
+  # 5th Baronet Brudenell, of Deene, co. Northampton, 5th Earl of Cardigan, 5th Baron Brudenell of Stonton, co. Leicester 1790-05-23
+  gen:birthDate "1725-04-20" ;
+  gen:deathDate "1811-02-24" ;
+  gen:father <https://www.wikidata.org/wiki/Q5537353> ;
+  gen:mother <https://www.wikidata.org/wiki/Q48786421> .
+  # oo Hon. Anne Legge, d. 1786-11-12
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6130391> , <#Anne_Legge> ;
+	gen:startDate "1760-11-24" .
+  # oo Lady Elizabeth Waldegrave, 1758-05-26 – 1823-06-23 (gower.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6130391> , <https://www.wikidata.org/wiki/Q47782452> ;
+	gen:startDate "1791-04-28" .
+<https://www.wikidata.org/wiki/Q7342459>
+  gen:name "Hon. Robert Brudenell"@en ;
+  gen:birthDate "1726-09-20" ;
+  gen:deathDate "1768-10-20" ;
+  gen:father <https://www.wikidata.org/wiki/Q5537353> ;
+  gen:mother <https://www.wikidata.org/wiki/Q48786421> .
+  # oo Anne Bishopp, 1728 - 1803-10-08
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7342459> , <#Anne_Bisshopp> ;
+	gen:startDate "1759-01-27" .
+<https://www.wikidata.org/wiki/Q7611139>
+  gen:name "Thomas Brudenell-Bruce, 1st Earl of Ailesbury"@en ;
+  # 2nd Baron Bruce of Tottenham, Wiltshire 1746/1747-02-10
+  # 1st Earl of Ailesbury, Buckinghamshire 1776-06-10
+  gen:birthDate "1729-04-30" ;
+  gen:deathDate "1814-04-19" ;
+  gen:father <https://www.wikidata.org/wiki/Q5537353> ;
+  gen:mother <https://www.wikidata.org/wiki/Q48786421> .
+  # oo Susanna Hoare, 1732-04-15 - 1783-02-04
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7611139> , <boyle.ttl#Susanna_Hoare> ;
+	gen:startDate "1761-02-17" .
+  # oo Lady Anne Elizabeth Rawdon, 1753-05-16 - 1813-01-08
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7611139> , <russell.ttl#Lady_Anne_Elizabeth_Rawdon> ;
+	gen:startDate "1788-02-14" .
+<#Lady_Mary_Brudenell_(died_1813)>
+  gen:name "Lady Mary Brudenell"@en ;
+  gen:startDate "1717" ;
+  gen:deathDate "1813-02-21" ;
+  gen:father <https://www.wikidata.org/wiki/Q5537353> ;
+  gen:mother <https://www.wikidata.org/wiki/Q48786421> .
+  # oo 1735-05-30 Richard Powys, 1710~ - 1743, kennedy.ttl#Richard_Powys_(died_1743)
+
+<https://www.wikidata.org/wiki/Q6249179>
+  gen:name "John Montagu, Marquess of Monthermer"@en ;
+  # 1st Baron Montagu of Boughton, co. Northampton 1762-05-08
+  gen:birthDate "1735-03-18" ;
+  gen:deathDate "1770-04-11" ;
+  gen:father <https://www.wikidata.org/wiki/Q5542571> ;
+  gen:mother <https://www.wikidata.org/wiki/Q46371522> .
+<https://www.wikidata.org/wiki/Q28811505>
+  gen:name "Lady Elizabeth Montagu"@en ;
+  gen:birthDate "1743-05-29" ;
+  gen:deathDate "1827-11-21" ;
+  gen:father <https://www.wikidata.org/wiki/Q5542571> ;
+  gen:mother <https://www.wikidata.org/wiki/Q46371522> .
+  # oo 1767-05-02 Henry Scott, 3rd Duke of Buccleuch, 1746-09-02 - 1812-01-11, https://www.wikidata.org/wiki/Q335286 -> scott.ttl
+<https://www.wikidata.org/wiki/Q7342461>
+  gen:name "Robert Brudenell, 6th Earl of Cardigan"@en ;
+  # 6th Earl of Cardigan, 6th Baron Brudenell of Stonton, co. Leicester, 6th Baronet Brudenell, of Deene, co. Northampton, 1811-02-24
+  gen:birthDate "1760-04-25" ;
+  gen:deathDate "1837-08-14" ;
+  gen:father <https://www.wikidata.org/wiki/Q7342459> ;
+  gen:mother <#Anne_Bisshopp> .
+  # oo Penelope Anne Cooke, 1770-02-14 - 1826-02-02
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7342461> , <https://www.wikidata.org/wiki/Q20019994> ;
+	gen:startDate "1794-03-08" .
+<https://www.wikidata.org/wiki/Q5075846>
+  gen:name "Charles Brudenell-Bruce, 1st Marquess of Ailesbury"@en ;
+  # 2nd Earl of Ailesbury, Buckinghamshire, 3rd Baron Bruce of Tottenham, Wiltshire 1814-04-19
+  # 1st Marquess of Ailesbury, Buckinghamshire, 1st Earl Bruce of Whorlton, co. York, 1st Viscount Savernake, of Savernake Forest, Wiltshire 1821-07-17
+  gen:birthDate "1773-02-14" ;
+  gen:deathDate "1856-01-04" ;
+  gen:father <https://www.wikidata.org/wiki/Q7611139> ;
+  gen:mother <boyle.ttl#Susanna_Hoare> .
+  # oo Hon. Henrietta Maria Hill, 1773~ - 1831-01-02
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5075846> , <#Henrietta_Maria_Hill> ;
+	gen:startDate "1793-04-10" .
+  # oo Maria Elizabeth Tollemache, 1809-10-27 - 1893-05-07
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5075846> , <manners.ttl#Maria_Elizabeth_Tollemache> ;
+	gen:startDate "1833-08-20" .
+
+<#Lady_Elizabeth_Anne_Brudenell>
+  gen:name "Lady Elizabeth Anne Brudenell"@en ;
+  gen:birthDate "1796-03-06" ;
+  gen:deathDate "1824-11-21" ;
+  gen:father <https://www.wikidata.org/wiki/Q7342461> ;
+  gen:mother <https://www.wikidata.org/wiki/Q20019994> .
+  # oo 1816-08-20 Hon. John Perceval, 1793-04-13 - 1818-03-15, #John_Perceval
+  # oo 1824-03-16 Rev. William John Brodrick, 7th Viscount Midleton of Midleton, 1798-07-08 - 1870-08-29, https://www.wikidata.org/wiki/Q8005968
+<https://www.wikidata.org/wiki/Q335449>
+  gen:name "James Thomas Brudenell, 7th Earl of Cardigan"@en ;
+  gen:birthDate "1797-10-16" ;
+  gen:deathDate "1868-03-28" ;
+  gen:father <https://www.wikidata.org/wiki/Q7342461> ;
+  gen:mother <https://www.wikidata.org/wiki/Q20019994> .
+  # oo Elizabeth Jane Henrietta Halliday, 1797-12-08 - 1858-07-15
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q335449> , <manners.ttl#Elizabeth_Jane_Henrietta_Halliday> ;
+	gen:startDate "1826-06-19" ;
+	gen:separatedDate "1837/1846" .
+  # oo Adeline Louisa Maria de Horsey, 1824-12-24 - 1915-05-24
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q335449> , <https://www.wikidata.org/wiki/Q4681952> ;
+	gen:startDate "1858-09-20" .
+<#Lady_Harriet_Georgiana_Brudenell>
+  gen:name "Lady Harriet Georgiana Brudenell"@en ;
+  gen:birthDate "1799-12-18" ;
+  gen:deathDate "1836-10-25" ;
+  gen:father <https://www.wikidata.org/wiki/Q7342461> ;
+  gen:mother <https://www.wikidata.org/wiki/Q20019994> .
+  # oo 1820-03-19 Richard William Penn Curzon-Howe, 1st Earl Howe, 1796-12-11 - 1870-05-12, https://www.wikidata.org/wiki/Q7325015
+<#Lady_Charlotte_Penelope_Brudenell>
+  gen:name "Lady Charlotte Penelope Brudenell"@en ;
+  gen:birthDate "1802-02-17" ;
+  gen:deathDate "1879-04-07" ;
+  gen:father <https://www.wikidata.org/wiki/Q7342461> ;
+  gen:mother <https://www.wikidata.org/wiki/Q20019994> .
+  # oo 1820~ Henry Charles Sturt, 1795-08-09 - 1866-04-14, https://www.wikidata.org/wiki/Q5728843 # -> bingham.ttl
+<#Lady_Mary_Brudenell_(died_1867)>
+  gen:name "Lady Mary Brudenell"@en ;
+  gen:birthDate "1806-07-04" ;
+  gen:deathDate "1867-05-22" ;
+  gen:father <https://www.wikidata.org/wiki/Q7342461> ;
+  gen:mother <https://www.wikidata.org/wiki/Q20019994> .
+  # oo 1828-08-18 Henry Thomas Pelham, 3rd Earl of Chichester, 1804-08-25 - 1886-03-15, https://www.wikidata.org/wiki/Q13530344
+<#Lady_Augusta_Brudenell>
+  gen:name "Lady Augusta Brudenell"@en ;
+  gen:birthDate "1808-01-26" ;
+  gen:deathDate "1853-01-08" ;
+  gen:father <https://www.wikidata.org/wiki/Q7342461> ;
+  gen:mother <https://www.wikidata.org/wiki/Q20019994> .
+  # oo 1827-06-30 Henry Bingham Baring, 1804-03-04 - 1869-04-25, https://www.wikidata.org/wiki/Q5718197
+<#Lady_Anne_Brudenell>
+  gen:name "Lady Anne Brudenell"@en ;
+  gen:birthDate "1809-06-29" ;
+  gen:deathDate "1877-04-02" ;
+  gen:father <https://www.wikidata.org/wiki/Q7342461> ;
+  gen:mother <https://www.wikidata.org/wiki/Q20019994> .
+  # oo 1829-02-21 George Charles Bingham, 3rd Earl of Lucan, 1800-04-16 - 1888-11-10, https://www.wikidata.org/wiki/Q335779
+<https://www.wikidata.org/wiki/Q5537356>
+  gen:name "Sir George William Frederick Brudenell-Bruce, 2nd Marquess of Ailesbury"@en ;
+  # 4th Baron Bruce of Tottenham, Wiltshire 1838-07-10
+  # 2nd Marquess of Ailesbury, Buckinghamshire, 2nd Viscount Savernake, of Savernake Forest, Wiltshire, 3rd Earl of Ailesbury, Buckinghamshire, 2nd Earl Bruce of Whorlton, co. York 1856-01-04
+  # 8th Earl of Cardigan, 8th Baron Brudenell of Stonton, co. Leicester, 8th Baronet Brudenell, of Deene, co. Northampton 1868-03-28
+  gen:birthDate "1804-11-20" ;
+  gen:deathDate "1878-01-06" ;
+  gen:father <https://www.wikidata.org/wiki/Q5075846> ;
+  gen:mother <#Henrietta_Maria_Hill> .
+  # oo Lady Mary Caroline Herbert, 1813-03-22 - 1892-01-20, daughter of https://www.wikidata.org/wiki/Q4111755 and https://www.wikidata.org/wiki/Q3911020
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5537356> , <herbert.ttl#Lady_Mary_Caroline_Herbert> ;
+	gen:startDate "1837-05-11" .
+<#Lady_Elizabeth_Brudenell-Bruce>
+  gen:name "Lady Elizabeth Brudenell-Bruce"@en ;
+  gen:birthDate "1807-04-24" ;
+  gen:deathDate "1847-11-06" ;
+  gen:father <https://www.wikidata.org/wiki/Q5075846> ;
+  gen:mother <#Henrietta_Maria_Hill> .
+  # oo 1833-07-25 Christian Danneskjold-Samsöe, 1800-09-16 - 1886-04-04, https://www.wikidata.org/wiki/Q12305879
+<https://www.wikidata.org/wiki/Q5392837>
+  gen:name "Ernest Augustus Charles Brudenell-Bruce, 3rd Marquess of Ailesbury"@en ;
+  gen:birthDate "1811-01-08" ;
+  gen:deathDate "1886-10-18" ;
+  gen:father <https://www.wikidata.org/wiki/Q5075846> ;
+  gen:mother <#Henrietta_Maria_Hill> .
+  # oo Hon. Louisa Elizabeth Horsley-Beresford, 1814-04 - 1891-10-14
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5392837> , <#Louisa_Elizabeth_Horsley-Beresford> ;
+	gen:startDate "1834-11-25" .
+<https://www.wikidata.org/wiki/Q6679038>
+  # Rt. Hon. Lord Charles William Brudenell-Bruce, 1834-06-18 - 1897-04-16
+  gen:father <https://www.wikidata.org/wiki/Q5075846> ;
+  gen:mother <manners.ttl#Maria_Elizabeth_Tollemache> .
+  # oo Augusta Georgiana Sophia Seymour, d. 1901-02-10
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6679038> , <seymour.ttl#Augusta_Georgiana_Sophia_Seymour> ;
+	gen:startDate "1860-02-02" .
+
+<#Lady_Louisa_Caroline_Brudenell-Bruce>
+  gen:name "Lady Louisa Caroline Brudenell-Bruce"@en ;
+  gen:birthDate "1836-10-03" ;
+  gen:deathDate "1894-12" ;
+  gen:father <https://www.wikidata.org/wiki/Q5392837> ;
+  gen:mother <#Louisa_Elizabeth_Horsley-Beresford> .
+  # oo 1856-01-19 Sir Henry Meux, 2nd Baronet, 1817-12-28 – 1883-01-01, https://www.wikidata.org/wiki/Q7527174
+<#Lord_George_John_Brudenell-Bruce>
+  gen:name "Lord George John Brudenell-Bruce"@en ;
+  gen:birthDate "1839-05-15" ;
+  gen:deathDate "1868-05-26" ;
+  gen:father <https://www.wikidata.org/wiki/Q5392837> ;
+  gen:mother <#Louisa_Elizabeth_Horsley-Beresford> .
+  # oo Lady Evelyn Mary Craven, 1839-12-09 - 1924-11-07
+  []
+    gen:spouse <#Lord_George_John_Brudenell-Bruce> , <#Lady_Evelyn_Mary_Craven> ;
+	gen:startDate "1862-08-07" .
+<https://www.wikidata.org/wiki/Q13529854>
+  gen:name "Henry Augustus Brudenell-Bruce, 5th Marquess of Ailesbury"@en ;
+  gen:birthDate "1842-04-11" ;
+  gen:deathDate "1911-03-10" ;
+  gen:father <https://www.wikidata.org/wiki/Q5392837> ;
+  gen:mother <#Louisa_Elizabeth_Horsley-Beresford> .
+  # oo Georgiana Sophia Maria Pinckney, d. 1902-06-23
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q13529854> , <#Georgiana_Sophia_Maria_Pinckney> ;
+	gen:startDate "1870-11-10" .
+<https://www.wikidata.org/wiki/Q27178421>
+  gen:name "Lord Robert Tohomas Brudenell-Bruce"@en ;
+  gen:birthDate "1845-01-25" ;
+  gen:deathDate "1912-02-15" ;
+  gen:father <https://www.wikidata.org/wiki/Q5392837> ;
+  gen:mother <#Louisa_Elizabeth_Horsley-Beresford> .
+  # oo Emma Chalotte Hanbury Leigh, 1849 - 1921-03-30, daughter of Capel Hanbury-Leigh and Emma Elizabeth Rous
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q27178421> , <#Emma_Chalotte_Hanbury_Leigh> ;
+	gen:startDate "1878-03-04" .
+<#Lady_Ernestine_Mary_Brudenell-Bruce>
+  gen:name "Lady Ernestine Mary Brudenell-Bruce"@en ;
+  gen:birthDate "1847-03-14" ;
+  gen:deathDate "1936-12-27" ;
+  gen:father <https://www.wikidata.org/wiki/Q5392837> ;
+  gen:mother <#Louisa_Elizabeth_Horsley-Beresford> .
+  # oo 1865-08-31 William Hare, 3rd Earl of Listowel, 1833-05-29 – 1924-06-05, https://www.wikidata.org/wiki/Q8010870
+<https://www.wikidata.org/wiki/Q20180839>
+  gen:name "Lord Charles Frederick Brudenell-Bruce"@en ;
+  gen:birthDate "1849-03-04" ;
+  gen:deathDate "1935-05-31" ;
+  gen:father <https://www.wikidata.org/wiki/Q5392837> ;
+  gen:mother <#Louisa_Elizabeth_Horsley-Beresford> .
+  # oo Margaret Renshaw, d. 1913-09-11, daughter of James Renshaw
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q20180839> , <#Margaret_Renshaw> ;
+	gen:startDate "1873-08-21" .
+
+<https://www.wikidata.org/wiki/Q5537357>
+  gen:name "Sir George William Thomas Brudenell-Bruce, 4th Marquess of Ailesbury"@en ;
+  gen:birthDate "1863-06-08" ;
+  gen:deathDate "1894-04-10" ;
+  gen:father <#Lord_George_John_Brudenell-Bruce> ;
+  gen:mother <#Lady_Evelyn_Mary_Craven> .
+  # oo Dorothy Julia Haseley, 1861~ - 1917-09-03, daughter of Thomas Haseley
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5537357> , <#Dorothy_Julia_Haseley> ;
+	gen:startDate "1884-05-06" .
+<#Lady_Mabel_Emily_Louise_Brudenell-Bruce>
+  gen:name "Lady Mabel Emily Louise Brudenell-Bruce"@en ;
+  gen:birthDate "1866-10-10" ;
+  gen:deathDate "1930-01-09" ;
+  gen:father <#Lord_George_John_Brudenell-Bruce> ;
+  gen:mother <#Lady_Evelyn_Mary_Craven> .
+  # oo 1892-10-01 (sep 1898) Robert Standish Sievier, 1860-05-30 - 1939-10-08, https://www.wikidata.org/wiki/Q21537558
+<https://www.wikidata.org/wiki/Q5537358>
+  gen:name "George William James Chandos Brudenell-Bruce, 6th Marquess of Ailesbury"@en ;
+  gen:birthDate "1873-05-21" ;
+  gen:deathDate "1961-08-04" ;
+  gen:father <https://www.wikidata.org/wiki/Q13529854> ;
+  gen:mother <#Georgiana_Sophia_Maria_Pinckney> .
+  # oo Caroline Sydney Anne Madden, d. 1941-05-05
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5537358> , <#Caroline_Sydney_Anne_Madden> ;
+	gen:startDate "1903-03-21" .
+  # oo Mabel Irene Lindsay, d. 1954-06-26, daughter of John Samuel Lindsay
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5537358> , <#Mabel_Irene_Lindsay> ;
+	gen:startDate "1945-02-21" .
+  # oo Alice Maude Emily Pinhey, d. 1960-02-09, daughter of John Forbes Pinhey
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5537358> , <#Alice_Maude_Emily_Pinhey> ;
+	gen:startDate "1955-07-09" .
+<#George_Lionel_Thomas_Brudenell>
+  # George Lionel Thomas Brudenell, 1880-08-26 - 1962-08-08
+  gen:father <https://www.wikidata.org/wiki/Q27178421> ;
+  gen:mother <#Emma_Chalotte_Hanbury_Leigh> .
+  # oo Mary Julia Schilizzi, d. 1972-01-20, daughter of Stephen Schilizzi and Julia Ralli
+  []
+    gen:spouse <#George_Lionel_Thomas_Brudenell> , <#Mary_Julia_Schilizzi> ;
+	gen:startDate "1923-11-06" .
+<#Robert_Hanbury_Brudenell-Bruce>
+  # Robert Hanbury Brudenell-Bruce, 1881-10-24 - 1955-02-12
+  gen:father <https://www.wikidata.org/wiki/Q27178421> ;
+  gen:mother <#Emma_Chalotte_Hanbury_Leigh> .
+  # oo Olive Ina Vera Richardson, d. 1920-04-21, daughter of Charles Herbert Richardson
+  []
+    gen:spouse <#Robert_Hanbury_Brudenell-Bruce> , <#Olive_Richardson> ;
+	gen:startDate "1913-10-22" .
+  # oo Judith Iris Keppel, 1900-11-05 - 1981
+  []
+    gen:spouse <#Robert_Hanbury_Brudenell-Bruce> , <#Judith_Iris_Keppel> ;
+	gen:startDate "1922-04-29" .
+
+<https://www.wikidata.org/wiki/Q5057078>
+  gen:name "Chandos Sydney Cedric Brudenell-Bruce, 7th Marquess of Ailesbury"@en ;
+  gen:birthDate "1904-01-26" ;
+  gen:deathDate "1974-07-15" ;
+  gen:father <https://www.wikidata.org/wiki/Q5537358> ;
+  gen:mother <#Caroline_Sydney_Anne_Madden> .
+  # oo Joan Houlton Salter, d. 1937-07-24
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5057078> , <#Joan_Houlton_Salter> ;
+	gen:startDate "1924-07-05" .
+  # oo Joyce Frances Warwick-Evans, daughter of Charles Warwick-Evans
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5057078> , <#Joyce_Frances_Warwick-Evans> ;
+	gen:startDate "1944-03-11" ;
+	gen:divorceDate "1948" .
+  # oo Jean Frances Margaret Wilson, d. 1999-02-14, daughter of John Addison Wilson
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5057078> , <#Jean_Frances_Margaret_Wilson> ;
+	gen:startDate "1950-02-20" .
+<#Edmund_Crispin_Brudenell>
+  # Edmund Crispin Stephen James George Brudenell, 1928-10-24 - 2014-10-19
+  gen:father <#George_Lionel_Thomas_Brudenell> ;
+  gen:mother <#Mary_Julia_Schilizzi> .
+  # oo Hon. Marion Cynthia Manningham-Buller, 1934-11-26 - 2013-08-10
+  []
+    gen:spouse <#Edmund_Crispin_Brudenell> , <#Marion_Cynthia_Manningham-Buller> ;
+	gen:startDate "1955-11-08" .
+<#Daphne_Helen_Brudenell-Bruce>
+  # Daphne Helen Anne Brudenell-Bruce, d. 1992-12-09
+  gen:father <#Robert_Hanbury_Brudenell-Bruce> ;
+  gen:mother <#Olive_Richardson> .
+  # oo 1934-12-20 (div 1946) Reginald Hughes-Onslow, 1895-08-08 - 1947-10-06, son of Major Denzil Hughes-Onslow and Marion Oliver
+  # oo 1946-08-15 John Edward Montague Bradish-Ellames, 1895-12-26 - 1984, son of William Bradish-Ellames
+  # oo 1970 Hon. Robert Francis Hubert Preston, 1915-12-07 - 1992-01-07, #Robert_Francis_Hubert_Preston
+<#Chandos_Robert_Henry_Brudenell-Bruce>
+  # Chandos Robert Henry Brudenell-Bruce, 1923-04-08 - 1993
+  gen:father <#Robert_Hanbury_Brudenell-Bruce> ;
+  gen:mother <#Judith_Iris_Keppel> .
+  # oo Dana Moira Angela Joel, 1929 - 2013-01-17, daughter of Stanhope Henry Joel Joel and Gladys MacFadden
+  []
+    gen:spouse <#Chandos_Robert_Henry_Brudenell-Bruce> , <#Dana_Moira_Angela_Joel> ;
+	gen:startDate "1949-11-12" .
+
+<https://www.wikidata.org/wiki/Q6828888>
+  gen:name "Sir Michael Sydney Cedric Brudenell-Bruce, 8th Marquess of Ailesbury"@en ;
+  gen:birthDate "1926-03-31" ;
+  gen:father <https://www.wikidata.org/wiki/Q5057078> ;
+  gen:mother <#Joan_Houlton_Salter> .
+  # oo Edwina Sylvia de Winton-Wills, b. 1933-03-13
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6828888> , <#Edwina_Sylvia_de_Winton-Wills> ;
+	gen:startDate "1952-03-17" ;
+	gen:divorceDate "1961" .
+  # oo Juliet Adrienne Lethbridge Kingsford, daughter of Edward Hilary Lethbridge Kingsford
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6828888> , <#Juliet_Adrienne_Lethbridge_Kingsford> ;
+	gen:startDate "1963-07-10" ;
+	gen:divorceDate "1974" .
+  # oo Caroline Elizabeth Wethered, b. 1937-04-12, daughter of Commander Owen Francis MacTier Wethered and Betty Baldwin
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6828888> , <#Caroline_Elizabeth_Wethered> ;
+	gen:startDate "1974-09-18" ;
+	gen:divorceDate "1992" .
+<#Joanna_Dana_Brudenell-Bruce>
+  # Joanna Dana Brudenell-Bruce, b. 1954-10-02
+  gen:father <#Chandos_Robert_Henry_Brudenell-Bruce> ;
+  gen:mother <#Dana_Moira_Angela_Joel> .
+  # oo 1975-08-07 Hon. Charles FitzRoy, 1954-01-18 - 1975-10-15, fitzroy.ttl#Charles_FitzRoy
+
+<https://www.wikidata.org/wiki/Q5231842>
+  gen:name "David Michael James Brudenell-Bruce, Earl of Cardigan"@en ;
+  gen:birthDate "1952-11-12" ;
+  gen:father <https://www.wikidata.org/wiki/Q6828888> ;
+  gen:mother <#Edwina_Sylvia_de_Winton-Wills> .
+  # oo (1) 1980 (div) Rosamond Jane Winkley, 1949~ - 2012-07-04, daughter of Captain W. R. M. Winkley
+  # oo (2) 2011 Catherine Joanne Powell
+<#Lady_Sylvia_Davina_Brudenell-Bruce>
+  gen:name "Lady Sylvia Davina Brudenell-Bruce2"@en ;
+  gen:birthDate "1954-06-19" ;
+  gen:father <https://www.wikidata.org/wiki/Q6828888> ;
+  gen:mother <#Edwina_Sylvia_de_Winton-Wills> .
+  # oo 1987 Peter M. Gould, son of R. C. L. Gould
+<#Lady_Carina_Doune_Brudenell-Bruce>
+  gen:name "Lady Carina Doune Brudenell-Bruce"@en ;
+  gen:birthDate "1956-01-13" ;
+  gen:father <https://www.wikidata.org/wiki/Q6828888> ;
+  gen:mother <#Edwina_Sylvia_de_Winton-Wills> .
+  # oo 1982-06-26  Anthony Le Brun, son of Basil Le Brun and Elaine (?)
+<#Lady_Louise_Brudenell-Bruce>
+  gen:name "Lady Louisa Brudenell-Bruce"@en ;
+  gen:birthDate "1964-07-13" ;
+  gen:father <https://www.wikidata.org/wiki/Q6828888> ;
+  gen:mother <#Juliet_Adrienne_Lethbridge_Kingsford> .
+<#Lady_Kathryn_Juliet_Brudenell-Bruce>
+  gen:name "Lady Kathryn Juliet Brudenell-Bruce2"@en ;
+  gen:birthDate "1965-08-24" ;
+  gen:father <https://www.wikidata.org/wiki/Q6828888> ;
+  gen:mother <#Juliet_Adrienne_Lethbridge_Kingsford> .
+
+<#Thomas_James_Brudenell-Bruce,_Viscount_Savernake>
+  gen:name "Thomas James Brudenell-Bruce, Viscount Savernake"@en ;
+  gen:birthDate "1982-02-11" ;
+  gen:father <https://www.wikidata.org/wiki/Q5231842> ;
+  gen:mother <#Rosamond_Winkley> .
+<https://www.wikidata.org/wiki/Q4931060>
+  gen:name "Lady Catherine Anna Brudenell-Bruce"@en ;
+  gen:birthDate "1984-11-25" ;
+  gen:father <https://www.wikidata.org/wiki/Q5231842> ;
+  gen:mother <#Rosamond_Winkley> .
+  # oo 2016 Henry Binns
+<#Lady_Sophie_Jane_Brudenell-Bruce>
+  gen:name "Lady Sophie Jane Brudenell-Bruce"@en ;
+  gen:birthDate "2013-10" ;
+  gen:father <https://www.wikidata.org/wiki/Q5231842> ;
+  gen:mother <#Catherine_Joanne_Powell> .
+
+
+# --------
+<#Catherine_Taylarde>
+  # Catherine Taylarde
+  gen:father <#Sir_Geoffrey_Taylarde> .
+  # oo 1570-06-15 Robert Brudenell, d. 1599-07-04, #Robert_Brudenell
+
+# --------
+<#Mary_Tresham>
+  gen:name "Mary Tresham"@en ;
+  gen:deathDate "1664-10-13" ;
+  gen:father <#Sir_Thomas_Tresham> .
+  # and Muriel Throckmorton
+  # oo 1607b Thomas Brudenell, 1st Earl of Cardigan, 1583~ - 1663-09-16, https://www.wikidata.org/wiki/Q7787976
+
+# ----
+<#Mary_Constable>
+  # Hon. Mary Constable
+  gen:father <https://www.wikidata.org/wiki/Q18528477> .
+  # oo Robert Brudenell, 2nd Earl of Cardigan, 1607-03-05 - 1703-07-16, #Robert_Brudenell,_2nd_Earl_of_Cardigan
+
+#<#John_Constable,_2nd_Viscount_of_Dunbar>
+  # John Constable, 2nd Viscount of Dunbar, 1615 - 1668 1636-01
+  # Lady Mary Brudenell, 1610 - 1685
+  []
+    gen:spouse <#John_Constable,_2nd_Viscount_of_Dunbar> , <#Lady_Mary_Brudenell_(died_1685)> ;
+	gen:startDate "1636-01" .
+
+<#Robert_Constable,_3rd_Viscount_Dunbar>
+  # Robert Constable, 3rd Viscount Dunbar, 1661 - 1714-11-23
+  gen:father <#John_Constable,_2nd_Viscount_of_Dunbar> ;
+  gen:mother <#Lady_Mary_Brudenell_(died_1685)> .
+  # oo Lady Dorothy Brudenell, 1646 - 1739/1740-01-26
+  []
+    gen:spouse <#Robert_Constable,_3rd_Viscount_Dunbar> , <#Lady_Dorothy_Brudenell> ;
+	gen:startDate "1697-08-01" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q2959604>
+  # Charles Middleton, 2nd Earl of Middleton, 1649/1650 - 1719-07-28
+  # oo Lady Catherine Brudenell
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2959604> , <#Lady_Catherine_Brudenell> .
+
+# ----
+#<https://www.wikidata.org/wiki/Q5482566>
+  # Francis Talbot, 11th Earl of Shrewsbury, 1623~ - 1667-03-16
+  # oo Lady Anna Maria Brudenell, 1642-03-25 - 1702-04-20
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5482566> , <https://www.wikidata.org/wiki/Q4767529> ;
+	gen:startDate "1658/1659-01-10" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q5077595>
+  # Charles Fane, 3rd Earl of Westmorland, 1635-01-06 - 1691-09-18
+  # oo Lady Dorothy Brudenell, 1646 - 1739/1740-01-26
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5077595> , <#Lady_Dorothy_Brudenell> ;
+	gen:startDate "1691b" .
+
+# ----
+<https://www.wikidata.org/wiki/Q48786421>
+  gen:name "Lady Elizabeth Bruce"@en ;
+  gen:birthDate "1689-01" ;
+  gen:deathDate "1745-12" ;
+  gen:father <https://www.wikidata.org/wiki/Q3524950> ;
+  gen:mother <seymour.ttl#Lady_Elizabeth_Seymour,_Countess_of_Ailesbury> .
+  # oo 1707-05-15 George Brudenell, 3rd Earl of Cardigan, 1685-09-29 - 1732-07-05, https://www.wikidata.org/wiki/Q5537353
+
+# --------
+<#William_Molyneux,_4th_Viscount_Molyneux>
+  # William Molyneux, 4th Viscount Molyneux, 1655~ - 1717/1718-03-08
+  gen:father <https://www.wikidata.org/wiki/Q5047696> .
+  # oo Bridget Lucy, d. 1713-04-23, daughter of Robert Lucy and Margaret Spencer
+  []
+    gen:spouse <#William_Molyneux,_4th_Viscount_Molyneux> , <#Bridget_Lucy> ;
+	gen:startDate "1675~" .
+
+<#Richard_Molyneux,_5th_Viscount_Molyneux>
+  # Richard Molyneux, 5th Viscount Molyneux, 1679-05-29 - 1738-12-12
+  gen:father <#William_Molyneux,_4th_Viscount_Molyneux> ;
+  gen:mother <#Bridget_Lucy> .
+  # oo Mary Brudenell, 1680 - 1766
+  []
+    gen:spouse <#Richard_Molyneux,_5th_Viscount_Molyneux> , <#Mary_Brudenell> .
+<#Thomas_Joseph_Molyneux>
+  # Thomas Joseph Molyneux, 1689-11-25 - 1756-12-03
+  gen:father <#William_Molyneux,_4th_Viscount_Molyneux> ;
+  gen:mother <#Bridget_Lucy> .
+  # oo Maria Leverly, daughter of Joseph Leverly
+
+<https://www.wikidata.org/wiki/Q5081022>
+  # Charles William Molyneux, 1st Earl of Sefton, 1749-09-03 - 1795-01-31
+  gen:father <#Thomas_Joseph_Molyneux> .
+  # and Maria Leverly
+  # oo Lady Isabella Stanhope, 1748~ - 1819-01-29
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5081022> , <fitzroy.ttl#Lady_Isabella_Stanhope> ;
+	gen:startDate "1768-11-27" .
+
+<https://www.wikidata.org/wiki/Q8015729>
+  gen:name "William Philip Molyneux, 2nd Earl of Sefton"@en ;
+  gen:birthDate "1772-09-18" ;
+  gen:deathDate "1838-11-20" ;
+  gen:father <https://www.wikidata.org/wiki/Q5081022> ;
+  gen:mother <fitzroy.ttl#Lady_Isabella_Stanhope> .
+  # oo Hon. Maria Margaret Craven, 1769-04-26 - 1851-03-09
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8015729> , <https://www.wikidata.org/wiki/Q15627492> ;
+	gen:startDate "1792-01-01" .
+
+<#Lady_Caroline_Harriett_Molyneux>
+  gen:name "Lady Caroline Harriett Molyneux"@en ;
+  gen:deathDate "1866-02-08" ;
+  gen:father <https://www.wikidata.org/wiki/Q8015729> ;
+  gen:mother <https://www.wikidata.org/wiki/Q15627492> .
+  # oo 1836-11-19 Charles Towneley, 1803-01 - 1876-11-05, https://www.wikidata.org/wiki/Q21165641
+<https://www.wikidata.org/wiki/Q5081023>
+  # Charles William Molyneux, 3rd Earl of Sefton, 1796-07-10 - 1855-08-02
+  gen:father <https://www.wikidata.org/wiki/Q8015729> ;
+  gen:mother <https://www.wikidata.org/wiki/Q15627492> .
+  # oo Mary Augusta Gregg-Hopwood, daughter of Robert Gregge Hopwood and Hon. Cecilia Byng
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5081023> , <#Mary_Augusta_Gregg-Hopwood> ;
+	gen:startDate "1834-06-19" .
+<#Lady_Georgiana_Frances_Molyneux>
+  # Lady Georgiana Frances Molyneux, d. 1826-06-28
+  gen:father <https://www.wikidata.org/wiki/Q8015729> ;
+  gen:mother <https://www.wikidata.org/wiki/Q15627492> .
+  # oo 1819-06-22 Charles Pascoe Grenfell, 1790-04-04 - 1867-03-21, https://www.wikidata.org/wiki/Q5078424
+
+<#Lady_Cecilia_Maria_Charlotte_Molyneux>
+  # Lady Cecilia Maria Charlotte Molyneux, 1838 - 1910-05-26
+  gen:father <https://www.wikidata.org/wiki/Q5081023> ;
+  gen:mother <#Mary_Augusta_Gregg-Hopwood> .
+  # oo 1869-07-12 Hugh Richard Dawnay, 8th Viscount Downe, 1844-07-20 - 1924-01-21, https://www.wikidata.org/wiki/Q5930520
+# ----
+#<https://www.wikidata.org/wiki/Q2152349>
+  # William Craven, 6th Baron Craven of Hampsted Marshall, 1736-09-11 - 1791-09-26
+  # oo Lady Elizabeth Berkeley, 1750-12-17 - 1828-01-13 (lennox.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2152349> , <https://www.wikidata.org/wiki/Q449738> ;
+	gen:startDate "1767-05-30" .
+
+<https://www.wikidata.org/wiki/Q15627492>
+  gen:name "Hon. Maria Margaret Craven"@en ;
+  gen:birthDate "1769-04-26" ;
+  gen:deathDate "1851-03-09" ;
+  gen:father <https://www.wikidata.org/wiki/Q2152349> ;
+  gen:mother <https://www.wikidata.org/wiki/Q449738> .
+  # oo 1792-01-01 William Philip Molyneux, 2nd Earl of Sefton, 1772-09-18 - 1838-11-20, https://www.wikidata.org/wiki/Q8015729
+
+
+#----
+#<https://www.wikidata.org/wiki/Q5717992>
+  # Sir Henry Belasyse, 1639~ - 1667-08-06a/15b
+  # oo Susan Armyne, Baroness Belasyse of Osgodby, 1649~ - 1712/1713-03-06
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5717992> , <#Susan_Armyne,_Baroness_Belasyse> ;
+	gen:startDate "1662-10-20" .
+
+<#Henry_Belasyse,_2nd_Baron_Belasyse>
+  # Henry Belasyse, 2nd Baron Belasyse of Worlaby, 1667~ - 1691-08~
+  gen:father <https://www.wikidata.org/wiki/Q5717992> ;
+  gen:mother <#Susan_Armyne,_Baroness_Belasyse> .
+  # oo Anne Brudenell, 1671 - 1722-12-09
+  []
+    gen:spouse <#Henry_Belasyse,_2nd_Baron_Belasyse> , <https://www.wikidata.org/wiki/Q56612426> ;
+	gen:startDate "1672-09b" .
+# ----
+<#Susan_Armyne,_Baroness_Belasyse>
+  # Susan Armyne, Baroness Belasyse of Osgodby, 1649~ - 1712/1713-03-06
+  gen:father <https://www.wikidata.org/wiki/Q7529465> .
+  # and Anne Crane
+  # 1662-10-20 Sir Henry Belasyse, 1639~ - 1667-08-06a/15b, https://www.wikidata.org/wiki/Q5717992
+
+# ----
+#<https://www.wikidata.org/wiki/Q938207>
+  # Charles Lennox, 1st Duke of Richmond, 1672-07-29 - 1723-05-27
+  # oo Anne Brudenell, 1671 - 1722-12-09
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q938207> , <https://www.wikidata.org/wiki/Q56612426> ;
+	gen:startDate "1692-01-08~" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q6138020>
+  # James Livingston, 1st Earl of Newburgh, 1622~ - 1670-12-04
+  # oo Anne Poole, 1640b - 1692-05-23~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6138020> , <#Anne_Poole> ;
+	gen:startDate "1660-04a" .
+
+<#Charles_Livingston,_2nd_Earl_of_Newburgh>
+  # Charles Livingston, 2nd Earl of Newburgh, 1664~ – 1694-04-06
+  gen:father <https://www.wikidata.org/wiki/Q6138020> ;
+  gen:mother <#Anne_Poole> .
+  # oo Lady Frances Brudenell, 1677b - 1736-02-23
+  []
+    gen:spouse <#Charles_Livingston,_2nd_Earl_of_Newburgh> , <https://www.wikidata.org/wiki/Q6470160> ;
+	gen:startDate "1692-09-12" .
+
+# ----
+#<#Richard_Bellew,_3rd_Baron_Bellew>
+  # Richard Bellew, 3rd Baron Bellew of Duleek, 1664~ - 1715-03-22
+  # son of John Bellew, 1st Baron Bellew of Duleek (d. 1692/1693-01-12)
+  # and oo 1663-11-28 Mary Bermingham (d. 1694)
+  # oo Lady Frances Brudenell, 1677b - 1736-02-23
+  []
+    gen:spouse <#Richard_Bellew,_3rd_Baron_Bellew> , <https://www.wikidata.org/wiki/Q6470160> ;
+	gen:startDate "1695-05" .
+
+# ----
+<#George_Legge,_Viscount_Lewisham>
+  # George Legge, Viscount Lewisham, d. 1732-08-29
+  gen:father <https://www.wikidata.org/wiki/Q9374853> .
+  # and Lady Anne Finch
+  # oo Elizabeth Kaye, d. 1745-04-21
+  []
+    gen:spouse <#George_Legge,_Viscount_Lewisham> , <#Elizabeth_Kaye> .
+
+<#Anne_Legge>
+  # Hon. Anne Legge, d. 1786-11-12
+  gen:father <#George_Legge,_Viscount_Lewisham> ;
+  gen:mother <#Elizabeth_Kaye> .
+  # oo 1760-11-24 James Brudenell, 5th Earl of Cardigan, 1725-04-20 - 1811-02-24, https://www.wikidata.org/wiki/Q6130391
+# ----
+<#Elizabeth_Kaye>
+  # Elizabeth Kaye, d. 1745-04-21
+  gen:father <https://www.wikidata.org/wiki/Q18716290> .
+  # and Anne Marowe
+
+# ----
+#<#Sir_Cecil_Bishopp,_5th_Baronet>
+  # Sir Cecil Bishopp, 5th Baronet, d. 1725-10-25
+  # oo Elizabeth Dunch, 1684 - 1751b, daughter of Henry Dunch
+  []
+    gen:spouse <#Sir_Cecil_Bishopp,_5th_Baronet> , <#Elizabeth_Dunch> ;
+	gen:startDate "1698-08-13" .
+
+<https://www.wikidata.org/wiki/Q7526160>
+  gen:name "Sir Cecil Bishopp, 6th Baronet"@en ;
+  gen:birthDate "1700-10-30" ;
+  gen:deathDate "1778-06-14" ;
+  gen:father <#Sir_Cecil_Bishopp,_5th_Baronet> ;
+  gen:mother <#Elizabeth_Dunch> .
+  # oo Hon. Anne Boscawen, 1703/1704-02-17 - 1749-05~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7526160> , <gower.ttl#Anne_Boscawen> ;
+	gen:startDate "1726" .
+<#Mary_Bishopp>
+  # Mary Bishopp, d. 1739-10-29
+  gen:father <#Sir_Cecil_Bishopp,_5th_Baronet> ;
+  gen:mother <#Elizabeth_Dunch> .
+  # oo 1719 John Dormer, 7th Baron Dormer of Wyng, 1691-06-02 - 1785-10-07, https://www.wikidata.org/wiki/Q28491150
+
+<#Sir_Cecil_Bishopp,_7th_Baronet>
+  gen:deathDate "1779" ;
+  gen:father <https://www.wikidata.org/wiki/Q7526160> ;
+  gen:mother <gower.ttl#Anne_Boscawen> .
+<#Anne_Bisshopp>
+  gen:birthDate "1728" ;
+  gen:deathDate "1803-10-08" ;
+  gen:father <https://www.wikidata.org/wiki/Q7526160> ;
+  gen:mother <gower.ttl#Anne_Boscawen> .
+  # oo 1759-01-27 Hon. Robert Brudenell, 1726-09-20 - 1768-10-20, https://www.wikidata.org/wiki/Q7342459
+<#Catherine_Bishopp>
+  gen:name "Catherine Bishopp"@en ;
+  gen:birthDate "1744-11-30" ;
+  gen:deathDate "1827-10-01" ;
+  gen:father <https://www.wikidata.org/wiki/Q7526160> ;
+  gen:mother <gower.ttl#Anne_Boscawen> .
+  # oo 1767 Sir Charles Cope, 2nd Baronet, 1743~ - 1781-06-14, https://www.wikidata.org/wiki/Q7526196
+  # oo (2) 1782 Charles Jenkinson, 1st Earl of Liverpool, 1729-04-26 – 1808-12-17, https://www.wikidata.org/wiki/Q2654558
+<#Edward_Bisshopp>
+  gen:deathDate "1792" ;
+  gen:father <https://www.wikidata.org/wiki/Q7526160> ;
+  gen:mother <gower.ttl#Anne_Boscawen> .
+  # oo Jane Atkinson, only daughter of William Atkinson
+
+<https://www.wikidata.org/wiki/Q16203246>
+  # Cecil Bisshopp, 12th Baron Zouche, 8th Baronet
+  gen:birthDate "1752" ;
+  gen:deathDate "1828-11-11" ;
+  gen:father <#Sir_Cecil_Bishopp,_7th_Baronet> .
+  # oo Harriet Anne Southwell, daughter and heiress of William Southwell of Frampton, Gloucestershire
+<https://www.wikidata.org/wiki/Q16204172>
+  # The Very Reverend Sir George Bisshopp, 9th Baronet
+  gen:birthDate "1791-07-05" ;
+  gen:deathDate "1834-03-22" ;
+  gen:father <#Edward_Bisshopp> ;
+  gen:mother <#Jane_Atkinson> .
+  # 1820-05-17 Catherine Elizabeth Sproule, daughter of Andrew Sproule
+
+<https://www.wikidata.org/wiki/Q5055959>
+  gen:name "Cecil Bisshopp"@en ;
+  gen:birthDate "1783-06-25" ;
+  gen:deathDate "1813-07-16~" ;
+  gen:father <https://www.wikidata.org/wiki/Q16203246> ;
+  gen:mother <#Harriet_Anne_Southwell> .
+<#Charles-Cecil_Bisshopp>
+  gen:father <https://www.wikidata.org/wiki/Q16203246> ;
+  gen:mother <#Harriet_Anne_Southwell> .
+<#Honourable_Harriet_Anne_Bisshopp,_13th_Baroness_Zouche>
+  gen:birthDate "1787-09-07" ;
+  gen:deathDate "1870-05-15" ;
+  gen:father <https://www.wikidata.org/wiki/Q16203246> ;
+  gen:mother <#Harriet_Anne_Southwell> .
+  # oo 1808 Hon. Robert Curzon, 1774-02-13 – 1863-05-14, https://www.wikidata.org/wiki/Q7343265
+<https://www.wikidata.org/wiki/Q7526162>
+  gen:name "Sir Cecil Bisshopp, 10th Baronet"@en ;
+  gen:birthDate "1821-07-06" ;
+  gen:deathDate "1849-01-19" ;
+  gen:father <https://www.wikidata.org/wiki/Q16204172> ;
+  gen:mother <#Catherine_Elizabeth_Sproule> .
+  # oo 1843-01 Mary Ann Hillyar, the eldest daughter of https://www.wikidata.org/wiki/Q1680561
+<#Sir_George_Curzon_Bisshopp,_11th_Baronet>
+  gen:birthDate "1823-04-10" ;
+  gen:deathDate "1865-12-15" ;
+  gen:father <https://www.wikidata.org/wiki/Q16204172> ;
+  gen:mother <#Catherine_Elizabeth_Sproule> .
+<#Sir_Edward_Cecil_Bisshopp,_12th_Baronet>
+  gen:birthDate "1826-02-23" ;
+  gen:deathDate "1870-01-27" ;
+  gen:father <https://www.wikidata.org/wiki/Q16204172> ;
+  gen:mother <#Catherine_Elizabeth_Sproule> .
+
+<#Cecil_Augustus_Hillyar_Bisshopp>
+  gen:birthDate "1844" ;
+  gen:deathDate "1845-05-05" ;
+  gen:father <https://www.wikidata.org/wiki/Q7526162> ;
+  gen:mother <#Mary_Ann_Hillyar> .
+<#Mary_Cecil_Augusta_Bisshopp>
+  gen:birthDate "1849-02" ;
+  gen:father <https://www.wikidata.org/wiki/Q7526162> ;
+  gen:mother <#Mary_Ann_Hillyar> .
+# ----
+#<https://www.wikidata.org/wiki/Q28491150>
+  # John Dormer, 7th Baron Dormer of Wyng, 1691-06-02 - 1785-10-07
+  # oo Mary Bishopp, d. 1739-10-29
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q28491150> , <#Mary_Bishopp> ;
+	gen:startDate "1719" .
+
+<#Elizabeth_Dormer>
+  # Elizabeth Dormer, 1724-05-15 - 1809-08-11
+  gen:father <https://www.wikidata.org/wiki/Q28491150> ;
+  gen:mother <#Mary_Bishopp> .
+  # oo 1753-11-21 George Talbot, 14th Earl of Shrewsbury, 1719-12-11 - 1787-07-21, talbot.ttl#George_Talbot,_14th_Earl_of_Shrewsbury
+<https://www.wikidata.org/wiki/Q21548504>
+  # Charles Dormer, 8th Baron Dormer of Wyng, 1725-04-30 - 1804-03-30
+  gen:father <https://www.wikidata.org/wiki/Q28491150> ;
+  gen:mother <#Mary_Bishopp> .
+  # oo Mary Talbot, 1723-08-18 - 1753-05-18
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q21548504> , <talbot.ttl#Mary_Talbot> ;
+	gen:startDate "1749-08-09" .
+# ----
+#<https://www.wikidata.org/wiki/Q7526196>
+  # Sir Charles Cope, 2nd Baronet, 1743~ - 1781-06-14
+  # oo Catherine Bishopp, 1744-11-30 - 1827-10-01
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7526196> , <#Catherine_Bishopp> ;
+	gen:startDate "1767" .
+
+<#Arabella_Diana_Cope>
+  gen:name "Arabella Diana Cope"@en ;
+  gen:birthDate "1767" ;
+  gen:deathDate "1825-08-01" ;
+  gen:father <https://www.wikidata.org/wiki/Q7526196> ;
+  gen:mother <#Catherine_Bishopp> .
+  # oo 1790-01-04 John Frederick Sackville, 3rd Duke of Dorset, 1745-03-25 - 1799-07-19, https://www.wikidata.org/wiki/Q1453083 (russell.ttl)
+
+# --------
+<boyle.ttl#Susanna_Hoare> # -> boyle.ttl?
+  gen:name "Susanna Hoare"@en ;
+  gen:birthDate "1732-04-15" ;
+  gen:deathDate "1783-02-04" ;
+  gen:father <https://www.wikidata.org/wiki/Q2622796> .
+  # and Susan Colt
+  # oo 1761-02-17 Thomas Brudenell-Bruce, 1st Earl of Ailesbury, 1729-04-30 - 1814-04-19, https://www.wikidata.org/wiki/Q7611139
+
+# --------
+<https://www.wikidata.org/wiki/Q20019994>
+  gen:name "Penelope Anne Cooke"@en ;
+  gen:birthDate "1770-02-14" ;
+  gen:deathDate "1826-02-02" ;
+  gen:father <#George_John_Cooke> ;
+  gen:mother <#Penelope_Bowyer> .
+  # oo 1794-03-08 Robert Brudenell, 6th Earl of Cardigan, 1760-04-25 - 1837-08-14, https://www.wikidata.org/wiki/Q7342461
+
+# --------
+<#Henrietta_Maria_Hill>
+  gen:name "Hon. Henrietta Maria Hill"@en ;
+  gen:birthDate "1773~" ;
+  gen:deathDate "1831-01-02" ;
+  gen:father <https://www.wikidata.org/wiki/Q7046991> ;
+  gen:mother <#Anna_Vernon> .
+  # oo 1793-04-10 Charles Brudenell-Bruce, 1st Marquess of Ailesbury, 1773-02-14 - 1856-01-04, https://www.wikidata.org/wiki/Q5075846
+# --------
+<#Anna_Vernon>
+  gen:father <#Henry_Vernon> ;
+  gen:mother <#Lady_Henrietta_Wentworth> .
+
+# ----
+<#John_Perceval>
+  # Hon. John Perceval, 1793-04-13 - 1818-03-15
+  gen:father <https://www.wikidata.org/wiki/Q15864799> .
+  # and Margaretta Elizabeth Wilson
+  # oo Lady Elizabeth Anne Brudenell, 1796-03-06- 1824-11-21
+  []
+    gen:spouse <#John_Perceval> , <#Lady_Elizabeth_Anne_Brudenell> ;
+	gen:startDate "1816-08-20" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q8005968>
+  # Rev. William John Brodrick, 7th Viscount Midleton of Midleton, 1798-07-08 - 1870-08-29
+  # oo Lady Elizabeth Anne Brudenell, 1796-03-06- 1824-11-21
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8005968> , <#Lady_Elizabeth_Anne_Brudenell> ;
+	gen:startDate "1824-03-16" .
+
+# ----
+<https://www.wikidata.org/wiki/Q4681952>
+  # Adeline Louisa Maria de Horsey, 1824-12-24 - 1915-05-24
+  gen:father <https://www.wikidata.org/wiki/Q7576081> .
+  # and Lady Louisa Maria Judith Rous
+  # oo 1858-09-20 James Thomas Brudenell, 7th Earl of Cardigan, 1797-10-16 - 1868-03-28, https://www.wikidata.org/wiki/Q335449
+
+# ----
+#<https://www.wikidata.org/wiki/Q13530344>
+  # Henry Thomas Pelham, 3rd Earl of Chichester, 1804-08-25 - 1886-03-15
+  # oo Lady Mary Brudenell, 1806-07-04 - 1867-05-22
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q13530344> , <#Lady_Mary_Brudenell_(died_1867)> ;
+	gen:startDate "1828-08-18" .
+
+# ----
+<herbert.ttl#Lady_Mary_Caroline_Herbert>
+  # Lady Mary Caroline Herbert, 1813-03-22 - 1892-01-20
+  gen:father <https://www.wikidata.org/wiki/Q4111755> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3911020> .
+  # oo 1837-05-11 Sir George William Frederick Brudenell-Bruce, 2nd Marquess of Ailesbury, 1804-11-20 - 1878-01-06, https://www.wikidata.org/wiki/Q5537356
+
+# ----
+#<https://www.wikidata.org/wiki/Q12305879>
+  # Christian Danneskjold-Samsöe, 1800-09-16 - 1886-04-04
+  # oo Lady Elizabeth Brudenell-Bruce, 1807-04-24 - 1847-11-06
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q12305879> , <#Lady_Elizabeth_Brudenell-Bruce> ;
+	gen:startDate "1833-07-25" .
+
+# --------
+<#John_Horsley-Beresford,_2nd_Baron_Decies>
+  gen:name "John Horsley-Beresford, 2nd Baron Decies"@en ;
+  gen:birthDate "1773-01-20" ;
+  gen:deathDate "1855-03-01" ;
+  gen:father <https://www.wikidata.org/wiki/Q16157445> ;
+  gen:mother <#Elizabeth_FitzGibbon> .
+  # oo 1810-07-26 Charlotte Philadelphia Horsley, d. 1852-03-09, daughter of Robert Horsley
+
+<#Louisa_Elizabeth_Horsley-Beresford>
+  gen:name "Hon. Louisa Elizabeth Horsley-Beresford" ;
+  gen:birthDate "1814-04" ;
+  gen:deathDate "1891-10-14" ;
+  gen:father <#John_Horsley-Beresford,_2nd_Baron_Decies> ;
+  gen:mother <#Charlotta_Philadelphia_Horsley> .
+  # oo 1834-11-25 Ernest Augustus Charles Brudenell-Bruce, 3rd Marquess of Ailesbury, 1811-01-08 - 1886-10-18, https://www.wikidata.org/wiki/Q5392837
+
+# ----
+#<https://www.wikidata.org/wiki/Q7527174>
+  # Sir Henry Meux, 2nd Baronet, 1817-12-28 – 1883-01-01
+  # oo Lady Louisa Caroline Brudenell-Bruce, 1836-10-03 - 1894-12
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7527174> , <#Lady_Louisa_Caroline_Brudenell-Bruce> ;
+	gen:startDate "1856-01-19" .
+
+# --------
+#<https://www.wikidata.org/wiki/Q8007257>
+  # William Craven, 2nd Earl of Craven, 1809-08-18 - 1866-08-25
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8007257> , <#Lady_Emily_Mary_Grimston> .
+
+<#Lady_Evelyn_Mary_Craven>
+  gen:name "Lady Evelyn Mary Craven"@en ;
+  gen:birthDate "1839-12-09" ;
+  gen:deathDate "1924-11-07" ;
+  gen:father <https://www.wikidata.org/wiki/Q8007257> ;
+  gen:mother <#Lady_Emily_Mary_Grimston> .
+  # oo 1862-08-07 Lord George John Brudenell-Bruce, 1839-05-15 - 1868-05-26, #Lord_George_John_Brudenell-Bruce
+# --------
+<https://www.wikidata.org/wiki/Q6135004>
+  gen:name "James Walter Grimston, 1st Earl of Verulam"@en ;
+  gen:birthDate "1775-09-26" ;
+  gen:deathDate "1845-11-17" .
+  # oo Lady Charlotte Jenkinson, d. 1862-04-16
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6135004> , <#Lady_Charlotte_Jenkinson> ;
+	gen:startDate "1807-08-11" .
+
+<#Lady_Katherine_Grimston>
+  gen:birthDate "1810-04-18" ;
+  gen:deathDate "1874-07-04" ;
+  gen:father <https://www.wikidata.org/wiki/Q6135004> ;
+  gen:mother <#Lady_Charlotte_Jenkinson> .
+  # oo 1839-06-04 George Villiers, 4th Earl of Clarendon, 1800-01-12 - 1870-06-27, https://www.wikidata.org/wiki/Q335305
+<#Lady_Emily_Mary_Grimston>
+  gen:name "Lady Emily Mary Grimston"@en ;
+  gen:birthDate "1815-02-04" ;
+  gen:deathDate "1901-05-21" ;
+  gen:father <https://www.wikidata.org/wiki/Q6135004> ;
+  gen:mother <#Lady_Charlotte_Jenkinson> .
+# ----
+<https://www.wikidata.org/wiki/Q2654558>
+  gen:name "Charles Jenkinson, 1st Earl of Liverpool"@en ;
+  gen:birthDate "1729-04-26" ;
+  gen:deathDate "1808-12-17" .
+  # oo Catherine Bishopp, 1744-11-30 - 1827-10-01
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2654558> , <#Catherine_Bishopp> ;
+	gen:startDate "1782-06-22" .
+
+<#Lady_Charlotte_Jenkinson>
+  gen:name "Lady Charlotte Jenkinson"@en ;
+  gen:deathDate "1862-04-16" ;
+  gen:father <https://www.wikidata.org/wiki/Q2654558> ;
+  gen:mother <#Catherine_Bishopp> .
+  # oo 1807-08-11 James Walter Grimston, 1st Earl of Verulam, 1775-09-26 - 1845-11-17, https://www.wikidata.org/wiki/Q6135004
+
+# --------
+<#Georgiana_Sophia_Maria_Pinckney>
+  gen:name "Georgiana Sophia Maria Pinckney"@en ;
+  gen:deathDate "1902-06-23" ;
+  gen:father <#George_Henry_Pinckney> .
+  # oo 1870-11-10 Henry Augustus Brudenell-Bruce, 5th Marquess of Ailesbury, 1842-04-11 - 1911-03-10, https://www.wikidata.org/wiki/Q13529854
+
+# ----
+#<https://www.wikidata.org/wiki/Q8010870>
+  # William Hare, 3rd Earl of Listowel, 1833-05-29 – 1924-06-05
+  # oo Lady Ernestine Mary Brudenell-Bruce, 1847-03-14 - 1936-12-27
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8010870> , <#Lady_Ernestine_Mary_Brudenell-Bruce> ;
+	gen:startDate "1865-08-31" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q21537558>
+  # Robert Standish Sievier, 1860-05-30 - 1939-10-08
+  # oo Lady Mabel Emily Louise Brudenell-Bruce, 1866-10-10 - 1930-01-09
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q21537558> , <#Lady_Mabel_Emily_Louise_Brudenell-Bruce> ;
+	gen:startDate "1892-10-01" ;
+	gen:separatedDate "1898" .
+
+# --------
+<#Caroline_Sydney_Anne_Madden>
+  gen:name "Caroline Sydney Anne Madden"@en ;
+  gen:deathDate "1941-05-05" ;
+  gen:father <#John_Madden> ;
+  gen:mother <#Lady_Caroline_Clements> . # Lady Caroline Clements (d. 1914-03-04, daughter of Rev. Hon. Francis Nathanial Clements (1812 - 1870-05-27, son of https://www.wikidata.org/wiki/Q6969544 and Mary Bermingham) and oo 1838-12-03 Charlotte King (d. 1868-10-23, daughter of Reverend Gilbert King))
+  # oo 1903-03-21 George William James Chandos Brudenell-Bruce, 6th Marquess of Ailesbury, 1873-05-21 - 1961-08-04, https://www.wikidata.org/wiki/Q5537358
+
+# ----
+<#William_Henry_Augustus_Keppel>
+  # William Henry Augustus Keppel, 1845-08-06 - 1889-10-31
+  gen:father <howard.ttl#William_Arnold_Walpole_Keppel> ;
+  gen:mother <#Frances_Georgiana_Sophia_Marsham> .
+  # oo Hon. Charlotte Elizabeth Eleanor Fraser, 1851~ - 1923-02-25
+  []
+    gen:spouse <#William_Henry_Augustus_Keppel> , <fraser.ttl#Charlotte_Elizabeth_Eleanor_Fraser> ;
+	gen:startDate "1873-07-10" .
+
+<#Bertram_William_Arnold_Keppel>
+  # Bertram William Arnold Keppel, 1876-01-12 - 1949-05-23
+  gen:father <#William_Henry_Augustus_Keppel> ;
+  gen:mother <fraser.ttl#Charlotte_Elizabeth_Eleanor_Fraser> .
+  # oo Hon. Alice Evelyn Agatha Hanbury-Tracy, 1877-08-12 - 1955-11-05
+  []
+    gen:spouse <#Bertram_William_Arnold_Keppel> , <#Alice_Evelyn_Agatha_Hanbury-Tracy> ;
+	gen:startDate "1898-10-04" .
+
+<#Judith_Iris_Keppel>
+  # Judith Iris Keppel, 1900-11-05 - 1981
+  gen:father <#Bertram_William_Arnold_Keppel> ;
+  gen:mother <#Alice_Evelyn_Agatha_Hanbury-Tracy> .
+  # oo 1922-04-29 Robert Hanbury Brudenell-Bruce, 1881-10-24 - 1955-02-12, #Robert_Hanbury_Brudenell-Bruce
+# ----
+<#Alice_Evelyn_Agatha_Hanbury-Tracy>
+  # Hon. Alice Evelyn Agatha Hanbury-Tracy, 1877-08-12 - 1955-11-05
+  gen:father <https://www.wikidata.org/wiki/Q5078743> .
+  # and Ada Maria Katherine Tollemache
+  # oo 1898-10-04 Bertram William Arnold Keppel, 1876-01-12 - 1949-05-23, #Bertram_William_Arnold_Keppel
+
+# --------
+<#Joan_Houlton_Salter>
+  gen:name "Joan Houlton Salter"@en ;
+  gen:deathDate "1937-07-24" ;
+  gen:father <#Stephen_Salter> .
+  # oo 1924-07-05 Chandos Sydney Cedric Brudenell-Bruce, 7th Marquess of Ailesbury, 1904-01-26 - 1974-07-15, https://www.wikidata.org/wiki/Q5057078
+
+# --------
+#<#Joyce_Frances_Warwick-Evans>
+  # Joyce Frances Warwick-Evans
+  # daughter of Charles Warwick-Evans
+  # oo 1944-03-11 (div 1948) Chandos Sydney Cedric Brudenell-Bruce, 7th Marquess of Ailesbury, 1904-01-26 - 1974-07-15, https://www.wikidata.org/wiki/Q5057078
+
+# --------
+<#Jean_Frances_Margaret_Wilson>
+  gen:name "Jean Frances Margaret Wilson"@en ;
+  gen:deathDate "1999-02-14" ;
+  gen:father <#John_Addison_Wilson> .
+  # oo 1950-02-20 Chandos Sydney Cedric Brudenell-Bruce, 7th Marquess of Ailesbury, 1904-01-26 - 1974-07-15, https://www.wikidata.org/wiki/Q5057078
+
+# ----
+#<https://www.wikidata.org/wiki/Q7528325>
+  # Sir Mervyn Edward Manningham-Buller, 3rd Baronet, 1876-01-16 - 1956-08-22
+  # oo Hon. Lilah Constance Cavendish, 1884-03-20 - 1944-04-27
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7528325> , <cavendish.ttl#Lilah_Constance_Cavendish> ;
+	gen:startDate "1903-07-08" .
+
+<https://www.wikidata.org/wiki/Q2271478>
+  # Reginald Edward Manningham-Buller, 1st Viscount Dilhorne, 1905-08-01 - 1980-09-07
+  gen:father <https://www.wikidata.org/wiki/Q7528325> ;
+  gen:mother <cavendish.ttl#Lilah_Constance_Cavendish> .
+  # oo Lady Mary Lilian Lindsay, 1910-09-27 - 2004-03-25
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2271478> , <lindsay.ttl#Lady_Mary_Lilian_Lindsay> ;
+	gen:startDate "1930-12-18" .
+
+<#Marion_Cynthia_Manningham-Buller>
+  # Hon. Marion Cynthia Manningham-Buller, 1934-11-26 - 2013-08-10
+  gen:father <https://www.wikidata.org/wiki/Q2271478> ;
+  gen:mother <lindsay.ttl#Lady_Mary_Lilian_Lindsay> .
+  # oo 1955-11-08 Edmund Crispin Stephen James George Brudenell, 1928-10-24 - 2014-10-19, #Edmund_Crispin_Brudenell
+# ----
+<lindsay.ttl#Lady_Mary_Lilian_Lindsay>
+  # oo Lady Mary Lilian Lindsay, 1910-09-27 - 2004-03-25
+  gen:father <https://www.wikidata.org/wiki/Q3703236> .
+  # and Constance Lilian Pelly
+  # oo 1930-12-18 Reginald Edward Manningham-Buller, 1st Viscount Dilhorne, 1905-08-01 - 1980-09-07, https://www.wikidata.org/wiki/Q2271478
+
+# ----
+<#Jenico_Preston,_15th_Viscount_Gormanston>
+  # Jenico Edward Joseph Preston, 15th Viscount Gormanston, 1879-07-16 - 1925-11-07
+  gen:father <https://www.wikidata.org/wiki/Q1686848> .
+  # and Georgina Jane Connelan
+  # oo Eileen Butler, 1883-10-03 - 1964-03-25
+  []
+    gen:spouse <#Jenico_Preston,_15th_Viscount_Gormanston> , <butler.ttl#Eileen_Butler> ;
+	gen:startDate "1911-10-26" .
+
+<#Robert_Francis_Hubert_Preston>
+  # Hon. Robert Francis Hubert Preston, 1915-12-07 - 1992-01-07
+  gen:father <#Jenico_Preston,_15th_Viscount_Gormanston> ;
+  gen:mother <butler.ttl#Eileen_Butler> .
+  # oo Daphne Helen Anne Brudenell-Bruce, d. 1992-12-09
+  []
+    gen:spouse <#Robert_Francis_Hubert_Preston> , <#Daphne_Helen_Brudenell-Bruce> ;
+	gen:startDate "1970" .
+# ----
+<butler.ttl#Eileen_Butler>
+  # Eileen Butler, 1883-10-03 - 1964-03-25
+  gen:father <https://www.wikidata.org/wiki/Q713249> .
+  # and Elizabeth Southerden Thompson
+  # oo 1911-10-26 Jenico Edward Joseph Preston, 15th Viscount Gormanston, 1879-07-16 - 1925-11-07, brudenell.ttl#Jenico_Preston,_15th_Viscount_Gormanston
+
+# --------
+<#Edwina_Sylvia_de_Winton-Wills>
+  # Edwina Sylvia de Winton-Wills, b. 1933-03-13
+  gen:father <#Sir_Ernest_Edward_de_Winton-Wills,_4th_Baronet_Wills> ; # Sir Ernest Edward de Winton Wills, 4th Baronet
+  gen:mother <#Sylvia_Margaret_Ogden> . # Sylvia Margaret Ogden
+  # oo 1952-03-17 (div 1961) Sir Michael Sydney Cedric Brudenell-Bruce, 8th Marquess of Ailesbury, b. 1926-03-31, https://www.wikidata.org/wiki/Q6828888
+
+# --------
+<#Juliet_Adrienne_Lethbridge_Kingsford>
+  gen:father <#Edward_Hilary_Lethbridge_Kingsford> .
+
+# --------
+<#Rosamond_Winkley>
+  gen:deathDate "2012" .

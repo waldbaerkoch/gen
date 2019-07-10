@@ -1,0 +1,4223 @@
+@base <cecil.ttl> .
+@prefix gen: <http://jjkoch.de/gen#> .
+@prefix wdata: <https://www.wikidata.org/wiki/> .
+@prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+
+<https://www.wikidata.org/wiki/Q2054032>
+  gen:name "David Cecil"@en ;
+  gen:birthDate "1460~" ;
+  gen:deathDate "1540-09~" ;
+  gen:father <#Richard_Cecil_ap_Philip_Seisyll_of_Alt-yr-Ynys> .
+  # and Margaret Vaughan
+  # oo Alice Dickons
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2054032> , <#Alice_Dicons> .
+  # oo Joan Roos
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2054032> , <#Jane_Roos> .
+
+<https://www.wikidata.org/wiki/Q2078204> # oo Jane Heckington
+  gen:name "Richard Cecil"@en ;
+  gen:birthDate "1495~" ;
+  gen:deathDate "1553-03-19" ;
+  gen:father <https://www.wikidata.org/wiki/Q2054032> ;
+  gen:mother <#Alice_Dicons> .
+  # oo Jane Heckington, 1501~ - 1587/1588-03-10
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2078204> , <#Jane_Heckington> .
+
+<https://www.wikidata.org/wiki/Q354309>
+  gen:name "William Cecil, 1st Baron Burghley"@en ;
+  # 1st Baron of Burghley, co. Northampton 1570/1571-02-25
+  gen:birthDate "1520-09-13" ;
+  gen:deathDate "1598-08-04" ;
+  gen:father <https://www.wikidata.org/wiki/Q2078204> ;
+  gen:mother <#Jane_Heckington> .
+  # oo Mary Cheke, d. 1542/1543-02-22
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q354309> , <#Mary_Cheke> ;
+	gen:startDate "1541-08-08" .
+  # oo Mildred Cooke, 1524-08-24 - 1589-04-05
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q354309> , <https://www.wikidata.org/wiki/Q13420582> ;
+	gen:startDate "1545-12-21" .
+
+<https://www.wikidata.org/wiki/Q1920626> # -> Exeter
+  # Thomas Cecil, 1st Earl of Exeter, 1542-05-05 - 1623-02-08
+  gen:father <https://www.wikidata.org/wiki/Q354309> ;
+  gen:mother <#Mary_Cheke> .
+<https://www.wikidata.org/wiki/Q4768218>
+  gen:name "Anne Cecil"@en ;
+  gen:birthDate "1556-12-05" ;
+  gen:deathDate "1588-06-05" ;
+  gen:father <https://www.wikidata.org/wiki/Q354309> ;
+  gen:mother <https://www.wikidata.org/wiki/Q13420582> .
+  # oo 1571-12-19 Edward de Vere, 17th Earl of Oxford, 1550-04-12 - 1604-06-24, https://www.wikidata.org/wiki/Q374210
+<https://www.wikidata.org/wiki/Q704171> # -> Salisbury
+  # Robert Cecil, 1st Earl of Salisbury, 1563-06-01~ - 1612-05-24
+  gen:father <https://www.wikidata.org/wiki/Q354309> ;
+  gen:mother <https://www.wikidata.org/wiki/Q13420582> .
+
+
+# Exeter
+<https://www.wikidata.org/wiki/Q1920626>
+  gen:name "Thomas Cecil, 1st Earl of Exeter"@en ;
+  # 2nd Baron of Burghley, co. Northampton 1598-08-04
+  # 1st Earl of Exeter 1605-05-04
+  gen:birthDate "1542-05-05" ;
+  gen:deathDate "1623-02-08" ;
+  gen:father <https://www.wikidata.org/wiki/Q354309> ;
+  gen:mother <#Mary_Cheke> .
+  # oo Dorothy Neville, 1547 – 1609-03-23
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1920626> , <nevill.ttl#Dorothy_Neville,_(died_1609)> ;
+	gen:startDate "1564-11-27" .
+  # oo Frances Brydges, 1580 - 1663
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1920626> , <#Frances_Brydges> ;
+	gen:startDate "1610" .
+
+<https://www.wikidata.org/wiki/Q7609327>
+  gen:name "William Cecil, 2nd Earl of Exeter"@en ;
+  gen:birthDate "1566" ;
+  gen:deathDate "1640-07-06" ;
+  gen:father <https://www.wikidata.org/wiki/Q1920626> ;
+  gen:mother <nevill.ttl#Dorothy_Neville,_(died_1609)> .
+  # oo Elizabeth Manners, 15th Baroness de Ros of Helmsley, 1575/1576-01~ - 1591-05-19
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7609327> , <https://www.wikidata.org/wiki/Q5362553> ;
+	gen:startDate "1589-01-13" .
+  # oo Elizabeth Drury, 1578 - 1654-02-26
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7609327> , <#Elizabeth_Drury> ;
+	gen:startDate "1591a" .
+<#Lady_Lucy_Cecil>
+  gen:name "Lady Lucy Cecil"@en ;
+  gen:birthDate "1568-03-07" ;
+  gen:deathDate "1614-10-01" ;
+  gen:father <https://www.wikidata.org/wiki/Q1920626> ;
+  gen:mother <nevill.ttl#Dorothy_Neville,_(died_1609)> .
+  # oo 1587-02-28 William Paulet, 4th Marquess of Winchester, 1560b – 1629-02-04, https://www.wikidata.org/wiki/Q8016687
+<https://www.wikidata.org/wiki/Q7324684>
+  gen:name "Sir Richard Cecil"@en ;
+  gen:birthDate "1570-12-07" ;
+  gen:deathDate "1633-09-04" ;
+  gen:father <https://www.wikidata.org/wiki/Q1920626> ;
+  gen:mother <nevill.ttl#Dorothy_Neville,_(died_1609)> .
+  # oo Elizabeth Cope, daughter of Sir Anthony Cope, 1st Baronet
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7324684> , <#Elizabeth_Cope> ;
+	gen:startDate "1603-03-23" .
+<https://www.wikidata.org/wiki/Q2976180>
+  gen:name "Edward Cecil, 1st Viscount Wimbledon"@en ;
+  gen:birthDate "1572-02-29" ;
+  gen:deathDate "1638-11-16" ;
+  gen:father <https://www.wikidata.org/wiki/Q1920626> ;
+  gen:mother <nevill.ttl#Dorothy_Neville,_(died_1609)> .
+  # oo Theodosia Noel, 1585-01-04 - 1616-03-20b
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2976180> , <#Theodosia_Noel> ;
+	gen:startDate "1601-07-10" .
+  # oo Diana Drury, d. 1631-05~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2976180> , <#Diana_Drury> ;
+	gen:startDate "1617-02-27" .
+  # oo (3) 1635-09 Sophia Zouche, 1618~ - 1691-11-12
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2976180> , <#Sophia_Zouche> ;
+	gen:startDate "1635-09" .
+<#Lady_Mary_Cecil_(died_1638)>
+  # Lady Mary Cecil, b. 1573-07-15 - 1638-03-18
+  gen:father <https://www.wikidata.org/wiki/Q1920626> ;
+  gen:mother <nevill.ttl#Dorothy_Neville,_(died_1609)> .
+  # oo 1590~ Edward Denny, 1st Earl of Norwich, 1569-08-15 – 1637-10-24, https://www.wikidata.org/wiki/Q5342571
+<https://www.wikidata.org/wiki/Q5354690>
+  gen:name "Lady Elizabeth Cecil"@en ;
+  gen:birthDate "1578" ;
+  gen:deathDate "1646-01-03" ;
+  gen:father <https://www.wikidata.org/wiki/Q1920626> ;
+  gen:mother <nevill.ttl#Dorothy_Neville,_(died_1609)> .
+  # oo 1597b Sir William Newport alias Hatton, 1550 - 1597
+  # oo 1598-11-06 Sir Edward Coke, 1552-02-01 – 1634-09-03, https://www.wikidata.org/wiki/Q332435
+<https://www.wikidata.org/wiki/Q26877874>
+  # Hon. Thomas Cecil, 1578 - 1662-12-03
+  gen:father <https://www.wikidata.org/wiki/Q1920626> ;
+  gen:mother <nevill.ttl#Dorothy_Neville,_(died_1609)> .
+<#Lady_Frances_Cecil_(died_1653)>
+  # Lady Frances Cecil, 1581-02-28 - 1653-06-12
+  gen:father <https://www.wikidata.org/wiki/Q1920626> ;
+  gen:mother <nevill.ttl#Dorothy_Neville,_(died_1609)> .
+  # oo 1602-09-03b Nicholas Tufton, 1st Earl of Thanet, 1578 – 1631, https://www.wikidata.org/wiki/Q7026329
+
+<https://www.wikidata.org/wiki/Q8006653>
+  gen:name "William Cecil, 16th Baron de Ros of Helmsley"@en ;
+  # 16th Lord de Ros of Helmsley 1591-05-19
+  gen:birthDate "1590-05" ;
+  gen:deathDate "1618-06-27" ;
+  gen:father <https://www.wikidata.org/wiki/Q7609327> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5362553> .
+  # oo (div) Ann Lake, d. 1630
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8006653> , <#Ann_Lake> ;
+	gen:startDate "1615-02-13" .
+<https://www.wikidata.org/wiki/Q22284349>
+  # Lady Anne Cecil, 1596 - 1625 (or 1603 - 1673)
+  gen:father <https://www.wikidata.org/wiki/Q7609327> ;
+  gen:mother <#Elizabeth_Drury> .
+  # oo 1620-07-19 Henry Grey, 1st Earl of Stamford, 1599~ – 1673-08-21, https://www.wikidata.org/wiki/Q5722225
+<#Lady_Elizabeth_Cecil>
+  gen:name "Lady Elizabeth Cecil"@en ;
+  gen:deathDate "1672-08~" ;
+  gen:father <https://www.wikidata.org/wiki/Q7609327> ;
+  gen:mother <#Elizabeth_Drury> .
+  # oo 1614-05-26 Thomas Howard, 1st Earl of Berkshire, 1587-10-08 – 1669-07-16, https://www.wikidata.org/wiki/Q7608066
+<#Lady_Diana_Cecil>
+  gen:name "Lady Diana Cecil"@en ;
+  gen:birthDate "1596" ;
+  gen:deathDate "1658-02-26" ;
+  gen:father <https://www.wikidata.org/wiki/Q7609327> ;
+  gen:mother <#Elizabeth_Drury> .
+  # oo 1624-01-01 Henry de Vere, 18th Earl of Oxford, 1593-02-24 – 1625-06, https://www.wikidata.org/wiki/Q3440414
+  # oo 1629-11-12 Thomas Bruce, 1st Earl of Elgin, 3rd Lord Bruce of Kinloss, 1599-02-02 – 1663-12-21, https://www.wikidata.org/wiki/Q7616265
+<https://www.wikidata.org/wiki/Q5232260>
+  gen:name "David Cecil, 3rd Earl of Exeter"@en ;
+  gen:birthDate "1600~" ;
+  gen:deathDate "1643-04-18" ;
+  gen:father <https://www.wikidata.org/wiki/Q7324684> ;
+  gen:mother <#Elizabeth_Cope> .
+  # oo Lady Elizabeth Egerton, d. 1688-03-20~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5232260> , <egerton.ttl#Lady_Elizabeth_Egerton_(died_1688)> .
+<#Albinia_Cecil>
+  gen:name "Albinia Cecil"@en ;
+  gen:deathDate "1660" ;
+  gen:father <https://www.wikidata.org/wiki/Q2976180> ;
+  gen:mother <#Theodosia_Noel> .
+  # oo 1623-08-03 Sir Christopher Wray, 1601 – 1646-02-06, https://www.wikidata.org/wiki/Q5113465
+<#Elizabeth_Cecil>
+  gen:name "Elizabeth Cecil"@en ;
+  gen:birthDate "1606" ;
+  gen:deathDate "1661" ;
+  gen:father <https://www.wikidata.org/wiki/Q2976180> ;
+  gen:mother <#Theodosia_Noel> .
+  # oo 1628-11-16 Francis Willoughby, 5th Lord Willoughby of Parham, 1614~ – 1666-07-23, https://www.wikidata.org/wiki/Q1772473
+<#Frances_Cecil_(died_1684)>
+  gen:name "Frances Cecil"@en ;
+  gen:deathDate "1684" ;
+  gen:father <https://www.wikidata.org/wiki/Q2976180> ;
+  gen:mother <#Theodosia_Noel> .
+  # oo 1631b James Fiennes, 2nd Viscount Saye and Sele, 1602~ – 1674-03-15, https://www.wikidata.org/wiki/Q6133872
+  # oo 1675 Rev. Joshua Sprigge, 1618 - 1684-07, https://www.wikidata.org/wiki/Q14949022
+
+<https://www.wikidata.org/wiki/Q6225592>
+  gen:name "John Cecil, 4th Earl of Exeter"@en ;
+  gen:birthDate "1628" ;
+  gen:deathDate "1678-03-18" ;
+  gen:father <https://www.wikidata.org/wiki/Q5232260> ;
+  gen:mother <egerton.ttl#Lady_Elizabeth_Egerton_(died_1688)> .
+  # oo Lady Frances Manners, 1630-12-02 - 1660-12-02
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6225592> , <https://www.wikidata.org/wiki/Q50374787> ;
+	gen:startDate "1646-12-08" .
+  # oo Lady Mary Fane, 1639 – 1681-10-16
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6225592> , <https://www.wikidata.org/wiki/Q6470423> ;
+	gen:startDate "1670-01-24" .
+<#Lady_Frances_Cecil_(died_1652)>
+  gen:name "Lady Frances Cecil"@en ;
+  gen:birthDate "1633" ;
+  gen:deathDate "1652-12-31" ;
+  gen:father <https://www.wikidata.org/wiki/Q5232260> ;
+  gen:mother <egerton.ttl#Lady_Elizabeth_Egerton_(died_1688)> .
+  # oo 1650-04-15 Anthony Ashley Cooper, 1st Earl of Shaftesbury, 1621-07-22 – 1683-01-21, https://www.wikidata.org/wiki/Q336002
+
+<https://www.wikidata.org/wiki/Q15989977>
+  gen:name "John Cecil, 5th Earl of Exeter"@en ;
+  gen:birthDate "1648~" ;
+  gen:deathDate "1700-08-29" ;
+  gen:father <https://www.wikidata.org/wiki/Q6225592> ;
+  gen:mother <https://www.wikidata.org/wiki/Q50374787> .
+  # oo Lady Anne Cavendish, 1649~ – 1704
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q15989977> , <https://www.wikidata.org/wiki/Q45826222> ;
+	gen:startDate "1670-05-02" .
+<https://www.wikidata.org/wiki/Q50347049>
+  gen:name "Lady Frances Cecil"@en ;
+  gen:birthDate "1652" ;
+  gen:deathDate "1694" ;
+  gen:father <https://www.wikidata.org/wiki/Q6225592> ;
+  gen:mother <https://www.wikidata.org/wiki/Q50374787> .
+  # oo 1672 John Scudamore, 2nd Viscount Scudamore, 1650~ – 1697-07, https://www.wikidata.org/wiki/Q6257152
+
+<https://www.wikidata.org/wiki/Q6225597>
+  gen:name "John Cecil, 6th Earl of Exeter"@en ;
+  gen:birthDate "1674-05-15" ;
+  gen:deathDate "1721-12-24" ;
+  gen:father <https://www.wikidata.org/wiki/Q15989977> ;
+  gen:mother <https://www.wikidata.org/wiki/Q45826222> .
+  # oo Hon. Annabella Bennet, d. 1698-07-30
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6225597> , <#Annabella_Bennet> ;
+	gen:startDate "1697-02-09" .
+  # oo Elizabeth Brownlow, 1681-05-18 - 1723-11-28
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6225597> , <#Elizabeth_Brownlow> ;
+	gen:startDate "1699-09-19" .
+<https://www.wikidata.org/wiki/Q28064728>
+  # William Cecil, of Snape Hill, 1682b - 1715-05-06
+  gen:father <https://www.wikidata.org/wiki/Q15989977> ;
+  gen:mother <https://www.wikidata.org/wiki/Q45826222> .
+<https://www.wikidata.org/wiki/Q28061671>
+  # Charles Cecil, of Snape Hill, 1683- 1726-03-14
+  gen:father <https://www.wikidata.org/wiki/Q15989977> ;
+  gen:mother <https://www.wikidata.org/wiki/Q45826222> .
+<#Lady_Elizabeth_Cecil_(died_1708)>
+  gen:name "Lady Elizabeth Cecil"@en ;
+  gen:birthDate "1687" ;
+  gen:deathDate "1708-06-12" ;
+  gen:father <https://www.wikidata.org/wiki/Q15989977> ;
+  gen:mother <https://www.wikidata.org/wiki/Q45826222> .
+  # oo 1706-03-30 Charles Boyle, 4th Earl of Orrery, 1674-07-28 – 1731-08-28, https://www.wikidata.org/wiki/Q2805655
+
+<https://www.wikidata.org/wiki/Q16850458>
+  gen:name "John Cecil, 7th Earl of Exeter"@en ;
+  gen:birthDate "1700~" ;
+  gen:deathDate "1722" ;
+  gen:father <https://www.wikidata.org/wiki/Q6225597> ;
+  gen:mother <#Elizabeth_Brownlow> .
+<https://www.wikidata.org/wiki/Q4976603>
+  gen:name "Brownlow Cecil, 8th Earl of Exeter"@en ;
+  gen:birthDate "1701-08-04" ;
+  gen:deathDate "1754-11-03" ;
+  gen:father <https://www.wikidata.org/wiki/Q6225597> ;
+  gen:mother <#Elizabeth_Brownlow> .
+  # oo Hannah Sophia Chambers, d. 1765-04-30
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4976603> , <#Hannah_Sophia_Chambers> ;
+	gen:startDate "1724-07-18" .
+<https://www.wikidata.org/wiki/Q17484646>
+  gen:name "Lady Elizabeth Cecil"@en ;
+  gen:birthDate "1706" ;
+  gen:deathDate "1733-04-06" ;
+  gen:father <https://www.wikidata.org/wiki/Q6225597> ;
+  gen:mother <#Elizabeth_Brownlow> .
+  # oo 1724-05-21 William Aislabie, of Studley Royal, 1699~ - 1781-05-17, https://www.wikidata.org/wiki/Q8004206
+
+<https://www.wikidata.org/wiki/Q4976605>
+  gen:name "Brownlow Cecil, 9th Earl of Exeter"@en ;
+  gen:birthDate "1725-09-21" ;
+  gen:deathDate "1793-12-26" ;
+  gen:father <https://www.wikidata.org/wiki/Q4976603> ;
+  gen:mother <#Hannah_Sophia_Chambers> .
+  # oo Letitia Townshend, d. 1756-04-17
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4976605> , <#Letitia_Townshend> ;
+	gen:startDate "1749-07-24" .
+  # oo Anne Maria Cheatham, daughter of Job Cheatham
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4976605> , <#Anne_Maria_Cheatham> ;
+	gen:startDate "1770-04-23" .
+<https://www.wikidata.org/wiki/Q26788995>
+  gen:name "Hon. Thomas Chambers Cecil"@en ;
+  gen:birthDate "1728-06-25" ;
+  gen:deathDate "1773-08-14" ;
+  gen:father <https://www.wikidata.org/wiki/Q4976603> ;
+  gen:mother <#Hannah_Sophia_Chambers> .
+  # oo Charlotte Garnier
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q26788995> , <#Charlotte_Garnier> ;
+	gen:startDate "1751-02-20" .
+
+<https://www.wikidata.org/wiki/Q5719247>
+  gen:name "Henry Cecil, 1st Marquess of Exeter"@en ;
+  # 10th Earl of Exeter, 11th Baron of Burghley, co. Northampton 1793-12-26
+  # 1st Marquess of Exeter 1801-02-04
+  gen:birthDate "1754-03-14" ;
+  gen:deathDate "1804-05-01" ;
+  gen:father <https://www.wikidata.org/wiki/Q26788995> ;
+  gen:mother <#Charlotte_Garnier> .
+  # oo Emma Vernon, 1756 – 1818
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5719247> , <#Emma_Vernon> ;
+	gen:startDate "1776-05-23" ;
+	gen:divorceDate "1791-06-10" .
+  # oo Sarah Hoggins, 1773-06-28 - 1797-01-18
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5719247> , <https://www.wikidata.org/wiki/Q56677629> ;
+	gen:startDate "1791-10-03" .
+  # oo Elizabeth Anne Burrell, 1757-04-20 – 1837-01-17 # -> douglas.ttl
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5719247> , <https://www.wikidata.org/wiki/Q19325542> ;
+	gen:startDate "1800-08-19" .
+
+<#Lady_Sophia_Cecil>
+  gen:name "Lady Sophia Cecil"@en ;
+  gen:birthDate "1782/1793-02-04" ;
+  gen:deathDate "1823-11-02" ;
+  gen:father <https://www.wikidata.org/wiki/Q5719247> ;
+  gen:mother <https://www.wikidata.org/wiki/Q56677629> .
+  # oo 1818-05-12 Rt. Hon. Henry Manvers Pierrepont, of Conbolt Park, 1780-03-18 - 1851-11-10, https://www.wikidata.org/wiki/Q5727009
+<https://www.wikidata.org/wiki/Q4976604>
+  gen:name "Brownlow Cecil, 2nd Marquess of Exeter"@en ;
+  gen:birthDate "1795-07-02" ;
+  gen:deathDate "1867-01-16" ;
+  gen:father <https://www.wikidata.org/wiki/Q5719247> ;
+  gen:mother <https://www.wikidata.org/wiki/Q56677629> .
+  # oo Isabella Poyntz, 1803-03-06 - 1879-03-06
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4976604> , <https://www.wikidata.org/wiki/Q48781946> ;
+	gen:startDate "1824-05-12" .
+<https://www.wikidata.org/wiki/Q22020000>
+  gen:name "Lord Thomas Cecil"@en ;
+  gen:birthDate "1797-01-01" ;
+  gen:deathDate "1873-11-29" ;
+  gen:father <https://www.wikidata.org/wiki/Q5719247> ;
+  gen:mother <https://www.wikidata.org/wiki/Q56677629> .
+  # oo Lady Sophia Georgiana Lennox, 1809-07-21 - 1902-01-17
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q22020000> , <lennox.ttl#Lady_Sophia_Georgiana_Lennox> ;
+	gen:startDate "1838-08-08" .
+
+<https://www.wikidata.org/wiki/Q8006657>
+  gen:name "William Alleyne Cecil, 3rd Marquess of Exeter"@en ;
+  gen:birthDate "1825-04-30" ;
+  gen:deathDate "1895-07-14" ;
+  gen:father <https://www.wikidata.org/wiki/Q4976604> ;
+  gen:mother <https://www.wikidata.org/wiki/Q48781946> .
+  # oo Lady Georgina Sophia Pakenham, 1828~ - 1909-03-26
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8006657> , <#Lady_Georgina_Sophia_Pakenham> ;
+	gen:startDate "1848-10-17" .
+<#Lady_Mary_Frances_Cecil>
+  gen:name "Lady Mary Frances Cecil"@en ;
+  gen:birthDate "1832-01-06" ;
+  gen:deathDate "1917-07-27" ;
+  gen:father <https://www.wikidata.org/wiki/Q4976604> ;
+  gen:mother <https://www.wikidata.org/wiki/Q48781946> .
+  # oo 1861-10-03 Dudley Francis Stuart Ryder, 3rd Earl of Harrowby, 1831-01-16 – 1900-03-26, https://www.wikidata.org/wiki/Q5311966
+<#Lady_Victoria_Cecil>
+  gen:name "Lady Victoria Cecil"@en ;
+  gen:birthDate "1843-11-06" ;
+  gen:deathDate "1932-02-22" ;
+  gen:father <https://www.wikidata.org/wiki/Q4976604> ;
+  gen:mother <https://www.wikidata.org/wiki/Q48781946> .
+  # oo 1866-12-15 William Charles Evans-Freke, 8th Baron Carbery, 1812-05-24 – 1894-11-07, #William_Charles_Evans-Freke,_8th_Baron_Carbery
+
+<https://www.wikidata.org/wiki/Q4976602>
+  gen:name "Brownlow Henry George Cecil, 4th Marquess of Exeter"@en ;
+  gen:birthDate "1849-12-20" ;
+  gen:deathDate "1898-04-09" ;
+  gen:father <https://www.wikidata.org/wiki/Q8006657> ;
+  gen:mother <#Lady_Georgina_Sophia_Pakenham> .
+  # oo Isabella Whichcote, d. 1917-07-12
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4976602> , <#Isabella_Whichcote> ;
+	gen:startDate "1875-09-07" .
+<#Lord_Francis_Horace_Pierrepont_Cecil>
+  gen:name "Lord Francis Horace Pierrepont Cecil"@en ;
+  gen:birthDate "1851-07-05" ;
+  gen:deathDate "1889-06-23" ;
+  gen:father <https://www.wikidata.org/wiki/Q8006657> ;
+  gen:mother <#Lady_Georgina_Sophia_Pakenham> .
+  # oo Edith Brookes, d. 1923-05-09
+  []
+    gen:spouse <#Lord_Francis_Horace_Pierrepont_Cecil> , <#Edith_Brookes> ;
+	gen:startDate "1874-10-14" .
+<#Lady_Isabella_Georgiana_Katherine_Cecil>
+  gen:name "Lady Isabella Georgiana Katherine Cecil"@en ;
+  gen:birthDate "1853~" ;
+  gen:deathDate "1917-10-29" ;
+  gen:father <https://www.wikidata.org/wiki/Q8006657> ;
+  gen:mother <#Lady_Georgina_Sophia_Pakenham> .
+  # oo 1884-08-07 William Battie-Wrightson, 1789-10-06 – 1879-02-10, https://www.wikidata.org/wiki/Q8005205
+<https://www.wikidata.org/wiki/Q6680023>
+  gen:name "Lord William Cecil"@en ;
+  gen:birthDate "1854-11-02" ;
+  gen:deathDate "1943-04-16" ;
+  gen:father <https://www.wikidata.org/wiki/Q8006657> ;
+  gen:mother <#Lady_Georgina_Sophia_Pakenham> .
+  # oo Mary Rothes Margaret Tyssen-Amherst, Baroness Amherst of Hackney, 1857-04-25 - 1919-12-21
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6680023> , <https://www.wikidata.org/wiki/Q1906390> ;
+	gen:startDate "1885-09-02" .
+  # oo Violet Maud Freer, d. 1957-01-09, daughter of Percy Freer
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6680023> , <#Violet_Maud_Freer> ;
+	gen:startDate "1924-08-14" .
+<#Lady_Mary_Louisa_Wellesley_Cecil>
+  gen:name "Lady Mary Louisa Wellesley Cecil"@en ;
+  gen:birthDate "1857-07-04" ;
+  gen:deathDate "1930-08-12" ;
+  gen:father <https://www.wikidata.org/wiki/Q8006657> ;
+  gen:mother <#Lady_Georgina_Sophia_Pakenham> .
+  # oo 1880-05-24 James Henry Hozier, 2nd Baron Newlands, 1851-04-04 – 1929-09-05, https://www.wikidata.org/wiki/Q6136337
+<#Lady_Catherine_Sarah_Cecil>
+  gen:name "Lady Catherine Sarah Cecil"@en ;
+  gen:birthDate "1861-04-08" ;
+  gen:deathDate "1918-03-14" ;
+  gen:father <https://www.wikidata.org/wiki/Q8006657> ;
+  gen:mother <#Lady_Georgina_Sophia_Pakenham> .
+  # oo 1881-06-28 Henry de Vere Vane, 9th Baron Barnard, 1854-05-10 – 1918-12-28, https://www.wikidata.org/wiki/Q14945542
+<https://www.wikidata.org/wiki/Q6679448>
+  gen:name "Lord John Pakenham Joicey-Cecil"@en ;
+  gen:birthDate "1867-03-03" ;
+  gen:deathDate "1942-06-25" ;
+  gen:father <https://www.wikidata.org/wiki/Q8006657> ;
+  gen:mother <#Lady_Georgina_Sophia_Pakenham> .
+  # oo Isabella Maud Joicey, d. 1949-11-18
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6679448> , <#Isabella_Maud_Joicey> ;
+	gen:startDate "1896-09-15" .
+
+<https://www.wikidata.org/wiki/Q8006654>
+  gen:name "William Thomas Brownlow Cecil, 5th Marquess of Exeter"@en ;
+  gen:birthDate "1876-10-27" ;
+  gen:deathDate "1956-08-06" ;
+  gen:father <https://www.wikidata.org/wiki/Q4976602> ;
+  gen:mother <#Isabella_Whichcote> .
+  # oo Hon. Myra Rowena Sibell Orde-Powlett, 1879-12-22 - 1973-10-27
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8006654> , <#Myra_Orde-Powlett> ;
+	gen:startDate "1901-04-16" .
+<#Ethel_Frances_Sophia_Cecil>
+  gen:name "Ethel Frances Sophia Cecil"@en ;
+  gen:birthDate "1875" ;
+  gen:deathDate "1953-05-20" ;
+  gen:father <#Lord_Francis_Horace_Pierrepont_Cecil> ;
+  gen:mother <#Edith_Brookes> .
+  # oo (1) 1899-04-13 Edward Crichton Parry Hawkshaw, d. 1928-10-23
+  # oo (2) 1928-11-28 Sir James Stanhope Cockburn of that Ilk, 10th Baronet, 1867-11-11 – 1947-04-01, #Sir_James_Stanhope_Cockburn_of_that_Ilk,_10th_Baronet
+<#Violet_Dorothea_Cecil>
+  gen:name "Violet Dorothea Cecil"@en ;
+  gen:birthDate "1878" ;
+  gen:deathDate "1953-02-02" ;
+  gen:father <#Lord_Francis_Horace_Pierrepont_Cecil> ;
+  gen:mother <#Edith_Brookes> .
+  # oo (1) 1901-09-05 Oswald Henry Ames, d. 1927-11-06, son of Lionel Ames
+  # oo (2) 1942-09-01 Sir Maurice Bromley-Wilson, 7th Baronet, 1875-06-27 – 1957-11-07, #Sir_Maurice_Bromley-Wilson,_7th_Baronet
+<#Ean_Francis_Cecil>
+  gen:name "Ean Francis Cecil"@en ;
+  gen:birthDate "1880-06-08" ;
+  gen:deathDate "1942-02-22" ;
+  gen:father <#Lord_Francis_Horace_Pierrepont_Cecil> ;
+  gen:mother <#Edith_Brookes> .
+  # oo Hilda Mary Daubeny Wemyss, d. 1939-07-13
+  []
+    gen:spouse <#Ean_Francis_Cecil> , <#Hilda_Mary_Daubeny_Wemyss> ;
+	gen:startDate "1901-12-12" .
+  # oo Minnie Reekie, daughter of William Reekie
+  []
+    gen:spouse <#Ean_Francis_Cecil> , <#Minnie_Reekie> ;
+	gen:startDate "1941-09-24" .
+<#Edith_Celandine_Cecil>
+  gen:name "Edith Celandine Cecil"@en ;
+  gen:birthDate "1886" ;
+  gen:deathDate "1975" ;
+  gen:father <#Lord_Francis_Horace_Pierrepont_Cecil> ;
+  gen:mother <#Edith_Brookes> .
+  # oo 1905-08-24 (div 1922> William Charles Frederick Hanbury-Tracy, 5th Baron Sudeley of Toddington, 1870-04-19 – 1932-09-05, https://www.wikidata.org/wiki/Q27959835
+  # oo 1922-09-26 Eric Henri Kennington, 1888-03-12 - 1960-04-13, son of Thomas Benjamin Kennington and Eliza Nilla Lindahl Steweni
+<#William_Amherst_Cecil>
+  gen:name "William Amherst Cecil"@en ;
+  gen:birthDate "1886-06-30" ;
+  gen:deathDate "1914-09-16" ;
+  gen:father <https://www.wikidata.org/wiki/Q6680023> ;
+  gen:mother <https://www.wikidata.org/wiki/Q1906390> .
+  # oo Gladys Evelyn Baggallay, 1884-02-03 - 1947-05-30
+  []
+    gen:spouse <#William_Amherst_Cecil> , <#Gladys_Evelyn_Baggallay> ;
+	gen:startDate "1910-04-14" .
+<https://www.wikidata.org/wiki/Q23305040>
+  gen:name "John Francis Amherst Cecil"@en ;
+  gen:birthDate "1890-06-30" ;
+  gen:deathDate "1954-10-22" ;
+  gen:father <https://www.wikidata.org/wiki/Q6680023> ;
+  gen:mother <https://www.wikidata.org/wiki/Q1906390> .
+  # oo Cornelia Stuyvesant Vanderbilt, 1900-08-22 - 1976-02-07
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q23305040> , <https://www.wikidata.org/wiki/Q5171182> ;
+	gen:startDate "1924-04-29" ;
+	gen:divorceDate "1934" .
+<#Henry_Mitford_Amherst_Cecil>
+  gen:name "Henry Mitford Amherst Cecil"@en ;
+  gen:birthDate "1893-03-09" ;
+  gen:deathDate "1962-01-06" ;
+  gen:father <https://www.wikidata.org/wiki/Q6680023> ;
+  gen:mother <https://www.wikidata.org/wiki/Q1906390> .
+  # oo Hon. Yvonne Cornwallis, 1896-01-13 - 1983-06-30
+  []
+    gen:spouse <#Henry_Mitford_Amherst_Cecil> , <#Yvonne_Cornwallis> ;
+	gen:startDate "1923-01-27" .
+<#Isabella_Rosamond_Georgiana_Joicey-Cecil>
+  gen:name "Isabella Rosamond Georgiana Joicey-Cecil"@en ;
+  gen:birthDate "1901-08-22" ;
+  gen:deathDate "1941-09-22" ;
+  gen:father <https://www.wikidata.org/wiki/Q6679448> ;
+  gen:mother <#Isabella_Maud_Joicey> .
+  # oo 1926-09-21 Sir John Noble Kennedy, 1893-08-31 – 1970-06-15, https://www.wikidata.org/wiki/Q6250569
+<#Edward_Wilfred_George_Joicey-Cecil>
+  gen:name "Edward Wilfred George Joicey-Cecil"@en ;
+  gen:birthDate "1912-01-14" ;
+  gen:deathDate "1985-10-06" ;
+  gen:father <https://www.wikidata.org/wiki/Q6679448> ;
+  gen:mother <#Isabella_Maud_Joicey> .
+  # oo Rosemary Luisa Bowes-Lyon, 1915-07-18 - 1989-01-18
+  []
+    gen:spouse <#Edward_Wilfred_George_Joicey-Cecil> , <lyon.ttl#Rosemary_Luisa_Bowes-Lyon> ;
+	gen:startDate "1945-04-28" .
+
+<#Lady_Letitia_Sibell_Winifred_Brownlow-Cecil>
+  gen:name "Lady Letitia Sibell Winifred Cecil"@en ;
+  gen:birthDate "1903-11-20" ;
+  gen:deathDate "1992-07-21" ;
+  gen:father <https://www.wikidata.org/wiki/Q8006654> ;
+  gen:mother <#Myra_Orde-Powlett> .
+  # oo 1937-12-16 Henry Frederick Hotham, 7th Baron Hotham of South Dalton, 1899-08-13 – 1967-11-18, https://www.wikidata.org/wiki/Q21693205
+<https://www.wikidata.org/wiki/Q1628>
+  gen:name "David George Brownlow Cecil, 6th Marquess of Exeter"@en ;
+  gen:birthDate "1905-02-09" ;
+  gen:deathDate "1981-10-22" ;
+  gen:father <https://www.wikidata.org/wiki/Q8006654> ;
+  gen:mother <#Myra_Orde-Powlett> .
+  # oo Lady Mary Theresa Montagu Douglas Scott, 1904-03-04 – 1984-06-01
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1628> , <scott.ttl#Lady_Mary_Theresa_Montagu_Douglas_Scott> ;
+	gen:startDate "1929-01-10" ;
+	gen:divorceDate "1946" .
+  # oo Diana Mary Henderson, 1911-01-10 - 1982-06-06
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1628> , <#Diana_Henderson> ;
+	gen:startDate "1946-12-12" .
+<https://www.wikidata.org/wiki/Q6775132>
+  gen:name "William Martin Alleyne Cecil, 7th Marquess of Exeter+"@en ;
+  gen:birthDate "1909-04-27" ;
+  gen:deathDate "1988-01-12" ;
+  gen:father <https://www.wikidata.org/wiki/Q8006654> ;
+  gen:mother <#Myra_Orde-Powlett> .
+  # oo Edith Csanady de Telegd, d. 1954-03-29
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6775132> , <#Edith_Csanady_de_Telegd> ;
+	gen:startDate "1934-01-17" .
+  # oo Lillian Johnson, daughter of Roy Peter Kopf Hohnson
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6775132> , <#Lillian_Johnson> ;
+	gen:startDate "1954-09-03" .
+<#Lady_Romayne_Elizabeth_Algitha_Brownlow-Cecil>
+  gen:name "Lady Romayne Elizabeth Algitha Cecil"@en ;
+  gen:birthDate "1915-03-22" ;
+  gen:deathDate "2001-06-27" ;
+  gen:father <https://www.wikidata.org/wiki/Q8006654> ;
+  gen:mother <#Myra_Orde-Powlett> .
+  # oo 1944-12-12 Hon. Peter Esmé Brassey, 1907-12-05 - 1995-03-14, #Peter_Esmé_Brassey
+<#Aileen_Hilda_Frances_Cecil>
+  gen:name "Aileen Hilda Frances Cecil"@en ;
+  gen:birthDate "1903-04-16" ;
+  gen:deathDate "1974" ;
+  gen:father <#Ean_Francis_Cecil> ;
+  gen:mother <#Hilda_Mary_Daubeny_Wemyss> .
+  # oo 1932-04-30 Hon. Gavin George Carew, 1906-09-21 – 1997-10-11, #Gavin_George_Carew
+<https://www.wikidata.org/wiki/Q26723782> # -> Baron Amherst
+  # William Alexander Evering Cecil, 3rd Baron Amherst of Hackney, 1912-05-31 - 1980-07-22
+  gen:father <#William_Amherst_Cecil> ;
+  gen:mother <#Gladys_Evelyn_Baggallay> .
+<#Henry_Kerr_Auchmuty_Cecil>
+  gen:name "Hon. Henry Kerr Auchmuty Cecil"@en ;
+  gen:birthDate "1914-04-01" ;
+  gen:deathDate "1942-12-02" ;
+  gen:father <#William_Amherst_Cecil> ;
+  gen:mother <#Gladys_Evelyn_Baggallay> .
+  # oo Elizabeth Rohays Mary Burnett, 1916-08-30 - 1993-05-17
+  []
+    gen:spouse <#Henry_Kerr_Auchmuty_Cecil> , <#Elizabeth_Rohays_Mary_Burnett> ;
+	gen:startDate "1938-12-15" .
+<https://www.wikidata.org/wiki/Q5540492>
+  gen:name "George Henry Vanderbilt Cecil"@en ;
+  gen:birthDate "1925-02-27" ;
+  gen:father <https://www.wikidata.org/wiki/Q23305040> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5171182> .
+  # oo Nancy Owen, 1930-10-14 - 2016-07-09
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5540492> , <#Nancy_Owen> ;
+	gen:startDate "1955-04-30" .
+<https://www.wikidata.org/wiki/Q15081023>
+  gen:name "William Amherst Vanderbilt Cecil"@en ;
+  gen:birthDate "1928-08-17" ;
+  gen:deathDate "2017-10-31" ;
+  gen:father <https://www.wikidata.org/wiki/Q23305040> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5171182> .
+  # oo Mary Lee Ryan
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q15081023> , <#Mary_Lee_Ryan> ;
+	gen:startDate "1957-10-05" .
+<https://www.wikidata.org/wiki/Q3341345>
+  gen:name "Sir Oswald _Nigel_ Amherst Cecil"@en ;
+  gen:birthDate "1925-11-11" ;
+  gen:deathDate "2017-03-10" ;
+  gen:father <#Henry_Mitford_Amherst_Cecil> ;
+  gen:mother <#Yvonne_Cornwallis> .
+  # oo Annette Barclay, 1934
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3341345> , <#Annette_Barclay> ;
+	gen:startDate "1961-04-06" .
+
+<#Lady_Davina_Mary_Cecil>
+  gen:name "Lady Davina Mary Cecil"@en ;
+  gen:birthDate "1931-06-29" ;
+  gen:father <https://www.wikidata.org/wiki/Q1628> ;
+  gen:mother <scott.ttl#Lady_Mary_Theresa_Montagu_Douglas_Scott> .
+  # oo 1952-10-08 (div 1992) John Vane, 11th Baron Barnard, 1923-09-21 - 2016-04-03, https://www.wikidata.org/wiki/Q11112644
+<#Lady_Gillian_Moyra_Katherine_Cecil>
+  gen:name "Lady Gillian Moyra Katherine Cecil"@en ;
+  gen:birthDate "1935-03-08" ;
+  gen:father <https://www.wikidata.org/wiki/Q1628> ;
+  gen:mother <scott.ttl#Lady_Mary_Theresa_Montagu_Douglas_Scott> .
+  # oo 1954-11-23 (div 1978) Sir Giles Henry Charles Floyd, 7th Baronet, b. 1932-02-27, #Sir_Giles_Henry_Charles_Floyd,_7th_Baronet
+  # oo 1979a George Michael Kertesz, son of Zultan Kertesz
+  # oo 2008-04-15 Jeremy F. R. Smith
+<https://www.wikidata.org/wiki/Q6470585>
+  gen:name "Lady Victoria Diana Cecil"@en ;
+  gen:birthDate "1947-06-28" ;
+  gen:father <https://www.wikidata.org/wiki/Q1628> ;
+  gen:mother <#Diana_Henderson> .
+  # oo 1967-04-25 Simon Patrick Leatham, son of Major Patrick Magor Leatham
+<https://www.wikidata.org/wiki/Q6829189>
+  gen:name "William Michael Anthony Cecil, 8th Marquess of Exeter"@en ;
+  gen:birthDate "1935-09-01" ;
+  gen:father <https://www.wikidata.org/wiki/Q6775132> ;
+  gen:mother <#Edith_Csanady_de_Telegd> .
+  # oo Nancy Rose Meeker, daughter of Lloyd Arthur Meeker
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6829189> , <#Nancy_Rose_Meeker> ;
+	gen:startDate "1967-05-03" ;
+	gen:divorceDate "1992" .
+  # oo Barbara Anne Magat, daughter of Eugene Magat
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6829189> , <#Barbara_Anne_Magat> ;
+	gen:startDate "1999-02-24" .
+<#Lady_Marina_June_Brownlow-Cecil>
+  gen:name "Lady Marina June Cecil"@en ;
+  gen:birthDate "1956-06-16" ;
+  gen:father <https://www.wikidata.org/wiki/Q6775132> ;
+  gen:mother <#Lillian_Johnson> .
+  # oo 1980 Peter Jules Workman Castonguay, son of Nelson Castonguay
+<#Janine_Dawn_Brownlow-Cecil>
+  gen:birthDate "1958-01-12" ;
+  gen:deathDate "1958-05-03" ;
+  gen:father <https://www.wikidata.org/wiki/Q6775132> ;
+  gen:mother <#Lillian_Johnson> .
+<https://www.wikidata.org/wiki/Q3132684>
+  gen:name "Sir Henry Richard Amherst Cecil"@en ;
+  gen:birthDate "1943-01-11" ;
+  gen:deathDate "2013-06-11" ;
+  gen:father <#Henry_Kerr_Auchmuty_Cecil> ;
+  gen:mother <#Elizabeth_Rohays_Mary_Burnett> .
+  # oo Julie Murless
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3132684> , <#Julie_Murless> ;
+	gen:startDate "1966-10-18" ;
+	gen:divorceDate "1990" .
+  # oo Natalie Payne
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3132684> , <#Natalie_Payne> ;
+	gen:startDate "1992" .
+  # oo Jane Guest
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3132684> , <#Jane_Guest> ;
+	gen:startDate "2008-06-14" .
+<#David_Henry_Amherst_Cecil>
+  gen:name "David Henry Amherst Cecil"@en ;
+  gen:birthDate "1943-01-11" ;
+  gen:deathDate "2000-11-09" ;
+  gen:father <#Henry_Kerr_Auchmuty_Cecil> ;
+  gen:mother <#Elizabeth_Rohays_Mary_Burnett> .
+  # oo Hon. Fiona Elizabeth Cameron Corbett, b. 1942-11-14
+  []
+    gen:spouse <#David_Henry_Amherst_Cecil> , <#Fiona_Elizabeth_Cameron_Corbett> ;
+	gen:startDate "1966-08-06" ;
+	gen:divorceDate "1972" .
+  # oo Vanessa Josephine Bronislawna Gallica
+  []
+    gen:spouse <#David_Henry_Amherst_Cecil> , <#Vanessa_Josephine_Bronislawna_Gallica> ;
+	gen:startDate "1973-03-19" ;
+	gen:divorceDate "1995" .
+
+<#Anthony_John_Cecil,_Lord_Burghley>
+  gen:name "Anthony John Cecil, Lord Burghley"@en ;
+  gen:birthDate "1970-08-09" ;
+  gen:father <https://www.wikidata.org/wiki/Q6829189> ;
+  gen:mother <#Nancy_Rose_Meeker> .
+  # oo Holly Stewart
+  []
+    gen:spouse <#Anthony_John_Cecil,_Lord_Burghley> , <#Holly_Stewart> ;
+	gen:startDate "1996" .
+<#Lady_Angela_Kathleen_Cecil>
+  gen:name "Lady Angela Kathleen Cecil"@en ;
+  gen:birthDate "1975-05-19" ;
+  gen:deathDate "2008-12-28" ;
+  gen:father <https://www.wikidata.org/wiki/Q6829189> ;
+  gen:mother <#Nancy_Rose_Meeker> .
+
+<#Siena_Rose_Cecil>
+  gen:name "Siena Rose Cecil1"@en ;
+  gen:birthDate "2001-01-16" ;
+  gen:father <#Anthony_John_Cecil,_Lord_Burghley> ;
+  gen:mother <#Holly_Stewart> .
+
+
+# Baron Amherst
+<https://www.wikidata.org/wiki/Q26723782>
+  gen:name "William Alexander Evering Cecil, 3rd Baron Amherst of Hackney"@en ;
+  # 3rd Baron Amherst of Hackney, co. London 1919-12-21
+  gen:birthDate "1912-05-31" ;
+  gen:deathDate "1980-07-22" ;
+  gen:father <#William_Amherst_Cecil> ;
+  gen:mother <#Gladys_Evelyn_Baggallay> .
+  # oo Margaret Eirene Clifton Brown, 1921-02-23 - 2009-09-22
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q26723782> , <#Margaret_Eirene_Clifton_Brown> ;
+	gen:startDate "1939-09-14" .
+
+<https://www.wikidata.org/wiki/Q25991674>
+  gen:name "William Hugh Amherst Cecil, 4th Baron Amherst of Hackney"@en ;
+  gen:birthDate "1940-12-28" ;
+  gen:deathDate "2009-04-02" ;
+  gen:father <https://www.wikidata.org/wiki/Q26723782> ;
+  gen:mother <#Margaret_Eirene_Clifton_Brown> .
+  # oo Elizabeth Merriman
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q25991674> , <#Elizabeth_Merriman> ;
+	gen:startDate "1965-03-30" .
+<#Anthony_Henry_Amherst_Cecil>
+  gen:name "Hon. Anthony Henry Amherst Cecil"@en ;
+  gen:birthDate "1947-04-01" ;
+  gen:father <https://www.wikidata.org/wiki/Q26723782> ;
+  gen:mother <#Margaret_Eirene_Clifton_Brown> .
+  # oo Fenella Jane Crichton, b. 1948-01-09
+  []
+    gen:spouse <#Anthony_Henry_Amherst_Cecil> , <#Fenella_Jane_Crichton> ;
+	gen:startDate "1969-10-23" ;
+	gen:divorceDate "1974" .
+  # oo Jane Elizabeth Holbrook
+  []
+    gen:spouse <#Anthony_Henry_Amherst_Cecil> , <#Jane_Elizabeth_Holbrook> ;
+	gen:startDate "1974-11-20" .
+<#Angela_Margaret_Amherst_Cecil>
+  gen:name "Hon. Angela Margaret Amherst Cecil" ;
+  gen:birthDate "1955-05-16" ;
+  gen:father <https://www.wikidata.org/wiki/Q26723782> ;
+  gen:mother <#Margaret_Eirene_Clifton_Brown> .
+  # oo 1980-06-07 Gavin Ian Reid, son of Colonel Percy Fergus Ivo Reid and Mary Armida MacIndoe
+
+<#Aurelia_Margaret_Amherst_Cecil>
+  gen:name "Hon. Aurelia Margaret Amherst Cecil"@en ;
+  gen:birthDate "1966-07-19" ;
+  gen:father <https://www.wikidata.org/wiki/Q25991674> ;
+  gen:mother <#Elizabeth_Merriman> .
+  # oo 1990 (div 1993) Giles Wilson Mervyn Crewdson,  b. 1959-06-11, #Giles_Wilson_Mervyn_Crewdson
+  # oo 2000-09-01 Rupert Nicholas Stephenson, b. 1964-12-24, son of Charles Lyon Stephenson and Margot Jane Tinker
+<#Hugh_William_Amherst_Cecil,_5th_Baron_Amherst>
+  gen:name "Hugh William Amherst Cecil, 5th Baron Amherst of Hackney"@en ;
+  gen:birthDate "1968-07-17" ;
+  gen:father <https://www.wikidata.org/wiki/Q25991674> ;
+  gen:mother <#Elizabeth_Merriman> .
+  # oo Nicola Jane Michels
+  []
+    gen:spouse <#Hugh_William_Amherst_Cecil,_5th_Baron_Amherst> , <#Nicola_Jane_Michels> ;
+	gen:startDate "1996" .
+<#Henry_Edward_Amherst_Cecil>
+  gen:name "Henry Edward Amherst Cecil"@en ;
+  gen:birthDate "1976-11-02" ;
+  gen:father <#Anthony_Henry_Amherst_Cecil> ;
+  gen:mother <#Jane_Elizabeth_Holbrook> .
+  # oo Clare D. Stephens, daughter of Nicholas Stephens
+  []
+    gen:spouse <#Henry_Edward_Amherst_Cecil> , <#Clare_D._Stephens> ;
+	gen:startDate "2006-05-20" .
+<#Georgiana_Helen_Amherst_Cecil>
+  gen:name "Georgiana Helen Amherst Cecil"@en ;
+  gen:birthDate "1979-06-04" ;
+  gen:father <#Anthony_Henry_Amherst_Cecil> ;
+  gen:mother <#Jane_Elizabeth_Holbrook> .
+<#Thomas_Anthony_Amherst_Cecil>
+  gen:name "Thomas Anthony Amherst Cecil"@en ;
+  gen:birthDate "1981" ;
+  gen:father <#Anthony_Henry_Amherst_Cecil> ;
+  gen:mother <#Jane_Elizabeth_Holbrook> .
+
+<#Amber_Mary_Amherst_Cecil>
+  gen:name "Hon. Amber Mary Amherst Cecil"@en ;
+  gen:birthDate "1999" ;
+  gen:father <#Hugh_William_Amherst_Cecil,_5th_Baron_Amherst> ;
+  gen:mother <#Nicola_Jane_Michels> .
+<#Jack_William_Cecil>
+  gen:name "Hon. Jack William Cecil"@en ;
+  gen:birthDate "2001-07-13" ;
+  gen:father <#Hugh_William_Amherst_Cecil,_5th_Baron_Amherst> ;
+  gen:mother <#Nicola_Jane_Michels> .
+<#Katherine_Violet_Amherst_Cecil>
+  gen:name "Hon. Katherine Violet Amherst Cecil"@en ;
+  gen:birthDate "2006-03-24" ;
+  gen:father <#Hugh_William_Amherst_Cecil,_5th_Baron_Amherst> ;
+  gen:mother <#Nicola_Jane_Michels> .
+<#Eleanor_Rose_Amherst_Cecil>
+  gen:birthDate "2008-01-21" ;
+  gen:father <#Henry_Edward_Amherst_Cecil> ;
+  gen:mother <#Clare_D._Stephens> .
+<#George_William_Amherst_Cecil>
+  gen:birthDate "2009-11-07" ;
+  gen:father <#Henry_Edward_Amherst_Cecil> ;
+  gen:mother <#Clare_D._Stephens> .
+
+
+
+# Salisbury
+<https://www.wikidata.org/wiki/Q704171>
+  gen:name "Robert Cecil, 1st Earl of Salisbury"@en ;
+  # 1st Baron Cecil of Essendon, co. Rutland 1603-05-13
+  # 1st Viscount Cranborne, co. Dorset 1604-08-20
+  # 1st Earl of Salisbury 1605-05-04
+  gen:birthDate "1563-06-01~" ;
+  gen:deathDate "1612-05-24" ;
+  gen:father <https://www.wikidata.org/wiki/Q354309> ;
+  gen:mother <https://www.wikidata.org/wiki/Q13420582> .
+  # oo Hon. Elizabeth Brooke, 1562-01-12 - 1597-01-24
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q704171> , <#Elizabeth_Brooke> ;
+    gen:startDate "1589-08-31" .
+
+<https://www.wikidata.org/wiki/Q4019960>
+  gen:name "William Cecil, 2nd Earl of Salisbury"@en ;
+  gen:birthDate "1591-03-28" ;
+  gen:deathDate "1668-12-03" ;
+  gen:father <https://www.wikidata.org/wiki/Q704171> ;
+  gen:mother <#Elizabeth_Brooke> .
+  # oo Lady Catherine Howard, 1590~ – 1673-01
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4019960> , <https://www.wikidata.org/wiki/Q50319483> ;
+	gen:startDate "1608-12-01" .
+<#Lady_Frances_Cecil_(died_1644)>
+  gen:name "Lady Frances Cecil"@en ;
+  gen:birthDate "1593" ;
+  gen:deathDate "1644-02-14" ;
+  gen:father <https://www.wikidata.org/wiki/Q704171> ;
+  gen:mother <#Elizabeth_Brooke> .
+  # oo 1610-07-25 Henry Clifford, 5th Earl of Cumberland, 1591-02-28 – 1643-12-11, https://www.wikidata.org/wiki/Q5719566
+
+<https://www.wikidata.org/wiki/Q16527030>
+  gen:name "Lady Anne Cecil"@en ;
+  gen:birthDate "1612-02-23" ;
+  gen:deathDate "1637-12-06" ;
+  gen:father <https://www.wikidata.org/wiki/Q4019960> ;
+  gen:mother <https://www.wikidata.org/wiki/Q50319483> .
+  # oo 1629 Algernon Percy, 10th Earl of Northumberland, 4th Baron Percy, 1602-09-29 – 1668-10-13, https://www.wikidata.org/wiki/Q762507
+<https://www.wikidata.org/wiki/Q3666359>
+  gen:name "Charles Cecil, Viscount Cranborne"@en ;
+  gen:birthDate "1619-07-15" ;
+  gen:deathDate "1660-12" ;
+  gen:father <https://www.wikidata.org/wiki/Q4019960> ;
+  gen:mother <https://www.wikidata.org/wiki/Q50319483> .
+  # oo Lady Diana Maxwell, 1619~ - 1675-06
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3666359> , <#Lady_Diana_Maxwell> ;
+	gen:startDate "1639-04-02" .
+<https://www.wikidata.org/wiki/Q7342835>
+  # Robert Cecil, d. 1657-08
+  gen:father <https://www.wikidata.org/wiki/Q4019960> ;
+  gen:mother <https://www.wikidata.org/wiki/Q50319483> .
+  # oo Catherine Hopton
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7342835> , <#Catherine_Hopton> ;
+	gen:startDate "1630~" .
+<#Lady_Catherine_Cecil_(died_1652)>
+  gen:name "Lady Catherine Cecil"@en ;
+  gen:birthDate "1628~" ;
+  gen:deathDate "1652-08-18" ;
+  gen:father <https://www.wikidata.org/wiki/Q4019960> ;
+  gen:mother <https://www.wikidata.org/wiki/Q50319483> .
+  # oo 1645-05-19 Philip Sidney, 3rd Earl of Leicester, 1619-01-10 – 1698-03-06, https://www.wikidata.org/wiki/Q3901475
+<https://www.wikidata.org/wiki/Q16551731>
+  gen:name "Lady Elizabeth Cecil"@en ;
+  gen:birthDate "1619" ;
+  gen:deathDate "1689-11-19" ;
+  gen:father <https://www.wikidata.org/wiki/Q4019960> ;
+  gen:mother <https://www.wikidata.org/wiki/Q50319483> .
+  # oo 1639-03-04 William Cavendish, 3rd Earl of Devonshire, 1617-10-10~ – 1684-11-23, https://www.wikidata.org/wiki/Q2084968
+<#Lady_Mary_Cecil_(died_1676~)>
+  gen:name "Lady Mary Cecil"@en ;
+  gen:birthDate "1631~" ;
+  gen:deathDate "1676~" ;
+  gen:father <https://www.wikidata.org/wiki/Q4019960> ;
+  gen:mother <https://www.wikidata.org/wiki/Q50319483> .
+  # oo William Sandys, 6th Baron Sandys, d. 1668, https://www.wikidata.org/wiki/Q38807309
+
+<#Lady_Catherine_Cecil_(died_1683~)>
+  # Lady Catherine Cecil, d. 1683~
+  gen:father <https://www.wikidata.org/wiki/Q3666359> ;
+  gen:mother <#Lady_Diana_Maxwell> .
+  # oo 1655a/1677b William Hay, 4th Earl of Kinnoull, d. 1677-03-28, https://www.wikidata.org/wiki/Q19874923
+<https://www.wikidata.org/wiki/Q3806491>
+  gen:name "James Cecil, 3rd Earl of Salisbury"@en ;
+  gen:birthDate "1648" ;
+  gen:deathDate "1683-05" ;
+  gen:father <https://www.wikidata.org/wiki/Q3666359> ;
+  gen:mother <#Lady_Diana_Maxwell> .
+  # oo Lady Margaret Manners, d. 1682-08-30b
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3806491> , <https://www.wikidata.org/wiki/Q50320887> ;
+	gen:startDate "1661" .
+<#Lady_Frances_Cecil_(died_1723)>
+  # Lady Frances Cecil, 1649~ - 1723-06-15
+  gen:father <https://www.wikidata.org/wiki/Q3666359> ;
+  gen:mother <#Lady_Diana_Maxwell> .
+  # oo 1679-12-24~ Sir William Bowyer, 2nd Baronet, 1639~ - 1721/1722-02-13, #Sir_William_Bowyer,_2nd_Baronet
+
+<https://www.wikidata.org/wiki/Q3806493>
+  gen:name "James Cecil, 4th Earl of Salisbury"@en ;
+  gen:birthDate "1666-09-25b" ;
+  gen:deathDate "1694-10-24" ;
+  gen:father <https://www.wikidata.org/wiki/Q3806491> ;
+  gen:mother <https://www.wikidata.org/wiki/Q50320887> .
+  # oo Frances Bennett, 1670-10-20 - 1713-07-08
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3806493> , <#Frances_Bennett> ;
+	gen:startDate "1683-07-13" .
+<https://www.wikidata.org/wiki/Q7342836>
+  gen:name "Hon. Robert Cecil"@en ;
+  gen:birthDate "1670-11-06" ;
+  gen:deathDate "1716-02-23" ;
+  gen:father <https://www.wikidata.org/wiki/Q3806491> ;
+  gen:mother <https://www.wikidata.org/wiki/Q50320887> .
+  # oo Elizabeth Meynell, daughter of Isaac Meynell
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7342836> , <#Elizabeth_Meynell> ;
+	gen:startDate "1716b" .
+<https://www.wikidata.org/wiki/Q6759258>
+  gen:name "Lady Margaret Cecil"@en ;
+  gen:birthDate "1672/1673-04-16" ;
+  gen:deathDate "1728-02-21" ;
+  gen:father <https://www.wikidata.org/wiki/Q3806491> ;
+  gen:mother <https://www.wikidata.org/wiki/Q50320887> .
+  # oo 1691 John Stawell, 2nd Lord Stawell of Somerton, 1668~ - 1692-11-30, #John_Stawell,_2nd_Baron_Stawell
+  # oo 1696-01-09 Richard Jones, 1st Earl of Ranelagh, 1640-02-08 - 1712-01-10, https://www.wikidata.org/wiki/Q7326921 (willoughby.ttl)
+<#Lady_Catherine_Cecil_(died_1688)>
+  gen:name "Lady Catherine Cecil"@en ;
+  gen:deathDate "1688-08-13" ;
+  gen:father <https://www.wikidata.org/wiki/Q3806491> ;
+  gen:mother <https://www.wikidata.org/wiki/Q50320887> .
+  # oo 1683-07-12 Sir George Thomas Downing, 2nd Baronet, 1656~ - 1711-06, https://www.wikidata.org/wiki/Q7526873
+<#Lady_Frances_Cecil,_Baronetess_Halford>
+  gen:name "Lady Frances Cecil"@en ;
+  gen:deathDate "1698" ;
+  gen:father <https://www.wikidata.org/wiki/Q3806491> ;
+  gen:mother <https://www.wikidata.org/wiki/Q50320887> .
+  # oo 1692 Sir William Halford, 1st Baronet, of Welham, 1663 – 1709-03-01
+<#Lady_Mary_Cecil_(died_1740)>
+  gen:name "Lady Mary Cecil"@en ;
+  gen:deathDate "1740-03-29" ;
+  gen:father <https://www.wikidata.org/wiki/Q3806491> ;
+  gen:mother <https://www.wikidata.org/wiki/Q50320887> .
+  # oo 1684 Sir William Forester, 1655-12-10 – 1718-02, https://www.wikidata.org/wiki/Q7529594
+<#Lady_Mildred_Cecil>
+  gen:name "Lady Mildred Cecil"@en ;
+  gen:deathDate "1727-01-18" ;
+  gen:father <https://www.wikidata.org/wiki/Q3806491> ;
+  gen:mother <https://www.wikidata.org/wiki/Q50320887> .
+  # oo (1) 1693-08-14 Sir Uvedale Corbet, 3rd Baronet, of Leighton, d. 1701-10-15, #Sir_Uvedale_Corbet,_3rd_Baronet
+  # oo (2) 1701a Sir Charles Hotham, 4th Baronet, 1663~ – 1723-01-08, https://www.wikidata.org/wiki/Q25636603
+
+<https://www.wikidata.org/wiki/Q3806496>
+  gen:name "James Cecil, 5th Earl of Salisbury"@en ;
+  gen:birthDate "1691-06-08" ;
+  gen:deathDate "1728-10-09" ;
+  gen:father <https://www.wikidata.org/wiki/Q3806493> ;
+  gen:mother <#Frances_Bennett> .
+  # oo Lady Anne Tufton, 1693-08-09 - 1750-04-22
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3806496> , <https://www.wikidata.org/wiki/Q50327194> ;
+	gen:startDate "1709-02-12" .
+<https://www.wikidata.org/wiki/Q20638932>
+  # Charles Cecil, Bishop of Bangor, d. 1737-05-29
+  gen:father <https://www.wikidata.org/wiki/Q7342836> ;
+  gen:mother <#Elizabeth_Meynell> .
+<https://www.wikidata.org/wiki/Q16205613>
+  # Margaret Cecil, 1698 - 1782-02-13
+  gen:father <https://www.wikidata.org/wiki/Q7342836> ;
+  gen:mother <#Elizabeth_Meynell> .
+  # oo Sir Robert Brown, 1st Baronet, d. 1760-10-05, https://www.wikidata.org/wiki/Q7528728
+
+<https://www.wikidata.org/wiki/Q3806495>
+  gen:name "James Cecil, 6th Earl of Salisbury"@en ;
+  gen:birthDate "1713-10-20" ;
+  gen:deathDate "1780-09-19" ;
+  gen:father <https://www.wikidata.org/wiki/Q3806496> ;
+  gen:mother <https://www.wikidata.org/wiki/Q50327194> .
+  # oo Elizabeth Keat, 1721~ - 1776-02-03
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3806495> , <#Elizabeth_Keat> ;
+	gen:startDate "1745-01-28" .
+<#Lady_Catherine_Cecil_(died_1752)>
+  gen:name "Lady Catherine Cecil"@en ;
+  gen:birthDate "1719-08-15" ;
+  gen:deathDate "1752-08-16" ;
+  gen:father <https://www.wikidata.org/wiki/Q3806496> ;
+  gen:mother <https://www.wikidata.org/wiki/Q50327194> .
+  # oo 1737-02-15 John Perceval, 2nd Earl of Egmont, 1711-02-25 – 1770-12-04, https://www.wikidata.org/wiki/Q1748680
+
+<https://www.wikidata.org/wiki/Q3806494>
+  gen:name "James Cecil, 1st Marquess of Salisbury"@en ;
+  # 7th Earl of Salisbury, 7th Viscount Cranborne, co. Dorset, 7th Baron Cecil of Essendon, co. Rutland 1780-09-19
+  # 1st Marquess of Salisbury 1789-08-25
+  gen:birthDate "1748-09-04" ;
+  gen:deathDate "1823-06-13" ;
+  gen:father <https://www.wikidata.org/wiki/Q3806495> ;
+  gen:mother <#Elizabeth_Keat> .
+  # oo Lady Emily Mary Hill, 1750-08-16 - 1835-11-22
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3806494> , <https://www.wikidata.org/wiki/Q28844111> ;
+	gen:startDate "1773-12-02" .
+
+<#Lady_Georgiana_Charlotte_Augusta_Cecil>
+  gen:name "Lady Georgiana Charlotte Augusta Cecil"@en ;
+  gen:birthDate "1786-03-20" ;
+  gen:deathDate "1860-01-18" ;
+  gen:father <https://www.wikidata.org/wiki/Q3806494> ;
+  gen:mother <https://www.wikidata.org/wiki/Q28844111> .
+  # oo 1816-02-27 Henry Wellesley, 1st Baron Cowley of Wesley, 1773-01-20 - 1847-04-27, https://www.wikidata.org/wiki/Q334543
+<https://www.wikidata.org/wiki/Q3724557>
+  gen:name "Lady Emily Anne Bennet Elizabeth Cecil"@en ;
+  gen:birthDate "1789-07-14" ;
+  gen:deathDate "1848-01-21" ;
+  gen:father <https://www.wikidata.org/wiki/Q3806494> ;
+  gen:mother <https://www.wikidata.org/wiki/Q28844111> .
+  # oo 1812-05-29 George Thomas John Nugent, 1st and last Marquess of Westmeath, 1785-07-17 – 1871-05-05, https://www.wikidata.org/wiki/Q5542944
+<https://www.wikidata.org/wiki/Q2479905>
+  gen:name "James Brownlow William Gascoyne-Cecil, 2nd Marquess of Salisbury+"@en ;
+  gen:birthDate "1791-04-17" ;
+  gen:deathDate "1868-04-12" ;
+  gen:father <https://www.wikidata.org/wiki/Q3806494> ;
+  gen:mother <https://www.wikidata.org/wiki/Q28844111> .
+  # oo Frances Mary Gascoyne, 1802-01-25 - 1839-10-15
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2479905> , <#Frances_Mary_Gascoyne> ;
+	gen:startDate "1821-02-02" .
+  # oo Lady Mary Catherine Sackville-West, 1824-07-23 - 1900-12-06
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2479905> , <https://www.wikidata.org/wiki/Q18648958> ;
+	gen:startDate "1847-04-29" .
+
+<#James_Emilius_William_Evelyn_Gascoyne-Cecil,_Viscount_Cranborne>
+  gen:name "James Emilius William Evelyn Gascoyne-Cecil, Viscount Cranborne"@en ;
+  gen:birthDate "1821-10-29" ;
+  gen:deathDate "1865-05-14" ;
+  gen:father <https://www.wikidata.org/wiki/Q2479905> ;
+  gen:mother <#Frances_Mary_Gascoyne> .
+<#Lady_Mildred_Arabella_Charlotte_Gascoyne-Cecil>
+  gen:name "Lady Mildred Arabella Charlotte Gascoyne-Cecil"@en ;
+  gen:birthDate "1822-10-21" ;
+  gen:deathDate "1881-03-18" ;
+  gen:father <https://www.wikidata.org/wiki/Q2479905> ;
+  gen:mother <#Frances_Mary_Gascoyne> .
+  # oo 1842-07-07 Sir Alexander James Beresford Beresford-Hope, 1820-01-25 - 1887-10-20, https://www.wikidata.org/wiki/Q1739864
+<#Lady_Blanche_Gascoyne-Cecil>
+  gen:name "Lady Blanche Mary Harriet Gascoyne-Cecil"@en ;
+  gen:birthDate "1825-03-05" ;
+  gen:deathDate "1872-05-16" ;
+  gen:father <https://www.wikidata.org/wiki/Q2479905> ;
+  gen:mother <#Frances_Mary_Gascoyne> .
+  # oo 1843-08-15 James Maitland Balfour, 1820-01-05 - 1856-02-23, https://www.wikidata.org/wiki/Q6138831
+<https://www.wikidata.org/wiki/Q243705>
+  gen:name "Robert Arthur Talbot Gascoyne-Cecil, 3rd Marquess of Salisbury"@en ;
+  gen:birthDate "1830-02-03" ;
+  gen:deathDate "1903-08-22" ;
+  gen:father <https://www.wikidata.org/wiki/Q2479905> ;
+  gen:mother <#Frances_Mary_Gascoyne> .
+  # oo Georgina Alderson, 1827 - 1899-11-20
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q243705> , <https://www.wikidata.org/wiki/Q5548243> ;
+	gen:startDate "1857-07-11" .
+<https://www.wikidata.org/wiki/Q6679229>
+  gen:name "Lord Eustace Brownlow Henry Gascoyne-Cecil"@en ;
+  gen:birthDate "1834-04-24" ;
+  gen:deathDate "1921-07-03" ;
+  gen:father <https://www.wikidata.org/wiki/Q2479905> ;
+  gen:mother <#Frances_Mary_Gascoyne> .
+  # oo Lady Gertrude Luisa Scott, d. 1919-04-30
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6679229> , <scott.ttl#Lady_Gertrude_Louisa_Scott> ;
+	gen:startDate "1860-09-18" .
+<https://www.wikidata.org/wiki/Q48658533>
+  gen:name "Lady Mary Arabella Arthur Gascoyne-Cecil"@en ;
+  gen:birthDate "1850-04-26" ;
+  gen:deathDate "1903-08-18" ;
+  gen:father <https://www.wikidata.org/wiki/Q2479905> ;
+  gen:mother <https://www.wikidata.org/wiki/Q18648958> .
+  # oo 1872-01-25 Alan Plantagenet Stewart, 10th Earl of Galloway, 1835-10-21 - 1901-02-07, https://www.wikidata.org/wiki/Q4707833
+<#Lord_Arthur_Gascoyne-Cecil>
+  gen:name "Lord Arthur Gascoyne-Cecil"@en ;
+  gen:birthDate "1851-07-03" ;
+  gen:deathDate "1913-07-16" ;
+  gen:father <https://www.wikidata.org/wiki/Q2479905> ;
+  gen:mother <https://www.wikidata.org/wiki/Q18648958> .
+  # oo Elizabeth Ann Wilson, d. 1901-10-11
+  []
+    gen:spouse <#Lord_Arthur_Gascoyne-Cecil> , <#Elizabeth_Ann_Wilson> ;
+	gen:startDate "1874-01-08" .
+  # oo Frederica von Klenck, d. 1941-03-17
+  []
+    gen:spouse <#Lord_Arthur_Gascoyne-Cecil> , <#Frederica_von_Klenck> ;
+	gen:startDate "1902-11-04" .
+
+<https://www.wikidata.org/wiki/Q19887415>
+  gen:name "Lady Beatrix Maud Cecil"@en ;
+  gen:birthDate "1858-04-11" ;
+  gen:deathDate "1950-04-27" ;
+  gen:father <https://www.wikidata.org/wiki/Q243705> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5548243> .
+  # oo 1883-10-27 William Waldegrave Palmer, 2nd Earl of Selborne, 1859-10-17 – 1942-02-26, https://www.wikidata.org/wiki/Q3643409
+<https://www.wikidata.org/wiki/Q19265353>
+  gen:name "Lady Gwendolen Cecil"@en ;
+  gen:birthDate "1860-07-28" ;
+  gen:deathDate "1945-09-28" ;
+  gen:father <https://www.wikidata.org/wiki/Q243705> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5548243> .
+<https://www.wikidata.org/wiki/Q4381482>
+  gen:name "James Edward Hubert Gascoyne-Cecil, 4th Marquess of Salisbury"@en ;
+  gen:birthDate "1861-10-23" ;
+  gen:deathDate "1947-04-04" ;
+  gen:father <https://www.wikidata.org/wiki/Q243705> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5548243> .
+  # oo Lady Cicely Alice Gore, 1867-07-15 - 1955-02-05
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4381482> , <https://www.wikidata.org/wiki/Q3676378> ;
+	gen:startDate "1887-05-17" .
+<https://www.wikidata.org/wiki/Q6680022>
+  gen:name "Rt. Rev. Lord Rupert Ernest _William_ Cecil"@en ;
+  # Bishop of Exeter
+  gen:birthDate "1863-03-09" ;
+  gen:deathDate "1936-06-23" ;
+  gen:father <https://www.wikidata.org/wiki/Q243705> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5548243> .
+  # oo Lady Florence ("Fluffy") Mary Bootle-Wilbraham
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6680022> , <#Lady_Florence_Mary_Bootle-Wilbraham> ;
+	gen:startDate "1887-08-16" .
+<https://www.wikidata.org/wiki/Q12702>
+  gen:name "Edgar Algernon _Robert_ Gascoyne-Cecil, 1st and last Viscount Cecil of Chelwood"@en ;
+  gen:birthDate "1864-09-14" ;
+  gen:deathDate "1958-11-24" ;
+  gen:father <https://www.wikidata.org/wiki/Q243705> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5548243> .
+  # oo Lady Eleanor Lambton, 1868 - 1959-04-24
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q12702> , <#Lady_Eleanor_Lambton> ;
+	gen:startDate "1889-01-22" .
+<https://www.wikidata.org/wiki/Q6679208>
+  gen:name "Lord Edward Herbert Gascoyne-Cecil"@en ;
+  gen:birthDate "1867-07-12" ;
+  gen:deathDate "1918-12-13" ;
+  gen:father <https://www.wikidata.org/wiki/Q243705> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5548243> .
+  # oo Violet Georgina Maxse, 1872 - 1958-10-10
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6679208> , <https://www.wikidata.org/wiki/Q7933266> ;
+	gen:startDate "1894-06-18" .
+<https://www.wikidata.org/wiki/Q334182>
+  gen:name "Hugh Richard Heathcote Gascoyne-Cecil, 1st and last Baron Quickswood"@en ;
+  # 1st Baron Quickswood, of Clothall, co. Hertford 1941-01-25
+  gen:birthDate "1869-10-14" ;
+  gen:deathDate "1956-12-10" ;
+  gen:father <https://www.wikidata.org/wiki/Q243705> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5548243> .
+<https://www.wikidata.org/wiki/Q5416293> # -> Baron Rockley
+  # Evelyn Cecil, 1st Baron Rockley, 1865-05-30 - 1941-04-01
+  gen:father <https://www.wikidata.org/wiki/Q6679229> ;
+  gen:mother <scott.ttl#Lady_Gertrude_Luisa_Scott> .
+<https://www.wikidata.org/wiki/Q15731756>
+  gen:name "Algernon Gascoyne-Cecil"@en ;
+  gen:birthDate "1879-01-31" ;
+  gen:deathDate "1953-04-13" ;
+  gen:father <https://www.wikidata.org/wiki/Q6679229> ;
+  gen:mother <scott.ttl#Lady_Gertrude_Luisa_Scott> .
+  # oo Lady Gwendolen Fanny Godolphin Osborne, 1885-03-02 - 1933-02-25
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q15731756> , <osborne.ttl#Lady_Gwendolen_Fanny_Godolphin_Osborne> ;
+	gen:startDate "1923-07-17" .
+<#Arthur_William_James_Gascoyne-Cecil>
+  gen:name "Arthur William James Gascoyne-Cecil"@en ;
+  gen:birthDate "1875-04-04" ;
+  gen:deathDate "1936-09-26" ;
+  gen:father <#Lord_Arthur_Gascoyne-Cecil> ;
+  gen:mother <#Elizabeth_Ann_Wilson> .
+  # oo Hon. Beatrice Susan Theodosia Stuart-Wortley
+  []
+    gen:spouse <#Arthur_William_James_Gascoyne-Cecil> , <stuart.ttl#Beatrice_Susan_Theodosia_Stuart-Wortley> ;
+	gen:startDate "1906-12-01" .
+
+<https://www.wikidata.org/wiki/Q3637270>
+  gen:name "Lady Beatrice Edith Mildred Gascoyne-Cecil"@en ;
+  gen:birthDate "1891-08-10" ;
+  gen:deathDate "1980-12-03" ;
+  gen:father <https://www.wikidata.org/wiki/Q4381482> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3676378> .
+  # oo 1913-04-12 William George Arthur Ormsby-Gore, 4th Lord Harlech, 1885-04-11 - 1964-02-14, https://www.wikidata.org/wiki/Q2908365
+<https://www.wikidata.org/wiki/Q333205>
+  gen:name "Robert Arthur James Gascoyne-Cecil, 5th Marquess of Salisbury"@en ;
+  gen:birthDate "1893-08-27" ;
+  gen:deathDate "1972-02-23" ;
+  gen:father <https://www.wikidata.org/wiki/Q4381482> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3676378> .
+  # oo Elizabeth Vere Cavendish, 1897-01-22 - 1982-06-05
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q333205> , <cavendish.ttl#Elizabeth_Vere_Cavendish> ;
+	gen:startDate "1915-12-08" .
+<https://www.wikidata.org/wiki/Q531983>
+  gen:name "Lady Mary Alice Gascoyne-Cecil"@en ;
+  gen:birthDate "1895-07-29" ;
+  gen:deathDate "1988-12-24" ;
+  gen:father <https://www.wikidata.org/wiki/Q4381482> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3676378> .
+  # oo 1917-04-21 Edward William Spencer Cavendish, 10th Duke of Devonshire, 1895-05-06 - 1950-11-26, https://www.wikidata.org/wiki/Q2761950
+<https://www.wikidata.org/wiki/Q523064>
+  gen:name "Lord Edward Christian _David_ Cecil"@en ;
+  gen:birthDate "1902-04-09" ;
+  gen:deathDate "1986-01-01" ;
+  gen:father <https://www.wikidata.org/wiki/Q4381482> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3676378> .
+  # oo Rachel MacCarthy, d. 1982-07-29
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q523064> , <#Rachel_MacCarthy> ;
+	gen:startDate "1932-10-13" .
+<https://www.wikidata.org/wiki/Q19560548>
+  gen:name "Victor Alexander Gascoyne-Cecil"@en ;
+  gen:birthDate "1891-05-21" ;
+  gen:deathDate "1977-01-17" ;
+  gen:father <https://www.wikidata.org/wiki/Q6680022> ;
+  gen:mother <#Lady_Florence_Mary_Bootle-Wilbraham> .
+  # oo Fairlie Estelle Caroline Watson, d. 1980
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q19560548> , <#Fairlie_Estelle_Caroline_Watson> ;
+	gen:startDate "1915-11-25" .
+<#Eve_Alice_Gascoyne-Cecil>
+  gen:name "Eve Alice Gascoyne-Cecil"@en ;
+  gen:birthDate "1900-01-13" ;
+  gen:deathDate "1995-02-03" ;
+  gen:father <https://www.wikidata.org/wiki/Q6680022> ;
+  gen:mother <#Lady_Florence_Mary_Bootle-Wilbraham> .
+  # oo 1929-04-16 Richard Shelley Benyon, 1892-01-18 - 1968-06-13, https://www.wikidata.org/wiki/Q41763634
+<#Mary_Edith_Gascoyne-Cecil>
+  gen:name "Mary Edith Gascoyne-Cecil"@en ;
+  gen:birthDate "1900-01-13" ;
+  gen:deathDate "1994" ;
+  gen:father <https://www.wikidata.org/wiki/Q6680022> ;
+  gen:mother <#Lady_Florence_Mary_Bootle-Wilbraham> .
+  # oo 1921-01-29 Francis Henry Manners, 4th Baron Manners of Foston, 1897-07-21 - 1972-11-25, manners.ttl#Francis_Henry_Manners,_4th_Baron_Manners
+<#Helen_Mary_Gascoyne-Cecil>
+  gen:name "Helen Mary Gascoyne-Cecil"@en ;
+  gen:birthDate "1901-05-11" ;
+  gen:deathDate "1979" ;
+  gen:father <https://www.wikidata.org/wiki/Q6679208> ;
+  gen:mother <https://www.wikidata.org/wiki/Q7933266> .
+  # oo 1921-02-08 Alexander Henry Louis Hardinge, 2nd Baron Hardinge of Penhurst, 1894-05-17 - 1960-04-29, https://www.wikidata.org/wiki/Q4719091 # -> bingham.ttl
+
+<https://www.wikidata.org/wiki/Q9310800>
+  gen:name "Robert Edward Peter Gascoyne-Cecil, 6th Marquess of Salisbury"@en ;
+  gen:birthDate "1916-10-24" ;
+  gen:deathDate "2003-07-11" ;
+  gen:father <https://www.wikidata.org/wiki/Q333205> ;
+  gen:mother <cavendish.ttl#Elizabeth_Vere_Cavendish> .
+  # oo Marjorie Olein Wyndham-Quin, 1922-07-15 - 2016-12-12
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q9310800> , <#Marjorie_Olein_Wyndham-Quin> ;
+	gen:startDate "1945-12-18" .
+<https://www.wikidata.org/wiki/Q1250868>
+  gen:name "Jonathan Hugh Cecil"@en ;
+  gen:birthDate "1939-02-22" ;
+  gen:deathDate "2011-09-22" ;
+  gen:father <https://www.wikidata.org/wiki/Q523064> ;
+  gen:mother <#Rachel_MacCarthy> .
+  # oo Vivien Sarah Frances Heilbron, b. 1944-05-13
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1250868> , <https://www.wikidata.org/wiki/Q7937856> ;
+	gen:startDate "1963-07" .
+  # oo Anna Sharkey
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1250868> , <#Anna_Sharkey> ;
+	gen:startDate "1976-11-03" .
+
+<https://www.wikidata.org/wiki/Q335589>
+  gen:name "Robert Michael James Gascoyne-Cecil, 7th Marquess of Salisbury"@en ;
+  gen:birthDate "1946-09-30" ;
+  gen:father <https://www.wikidata.org/wiki/Q9310800> ;
+  gen:mother <#Marjorie_Olein_Wyndham-Quin> .
+  # oo Hannah Ann Stirling, b. 1944-05-29
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q335589> , <#Hannah_Ann_Stirling> ;
+	gen:startDate "1970-01-07" .
+<https://www.wikidata.org/wiki/Q6679910>
+  gen:name "Lord Richard Valentine Gascoyne-Cecil"@en ;
+  gen:birthDate "1948-01-26" ;
+  gen:deathDate "1978-04-20" ;
+  gen:father <https://www.wikidata.org/wiki/Q9310800> ;
+  gen:mother <#Marjorie_Olein_Wyndham-Quin> .
+<#Lord_Michael_Hugh_Gascoyne-Cecil>
+  gen:name "Lord Michael Hugh Cecil"@en ;
+  gen:birthDate "1960-03-23" ;
+  gen:father <https://www.wikidata.org/wiki/Q9310800> ;
+  gen:mother <#Marjorie_Olein_Wyndham-Quin> .
+  # oo Camilla Julia Scott, b. 1958-04-17
+  []
+    gen:spouse <#Lord_Michael_Hugh_Gascoyne-Cecil> , <#Camilla_Julia_Scott> ;
+	gen:startDate "1986" .
+
+<#Robert_Edward_William_Gascoyne-Cecil,_Viscount_Cranborne>
+  gen:name "Robert Edward Gascoyne-Cecil, Viscount Cranborne"@en ;
+  gen:birthDate "1970-12-18" ;
+  gen:father <https://www.wikidata.org/wiki/Q335589> ;
+  gen:mother <#Hannah_Ann_Stirling> .
+<#Lady_Elizabeth_Ann_Gascoyne-Cecil>
+  gen:name "Lady Elizabeth Ann Gascoyne-Cecil"@en ;
+  gen:birthDate "1972-05-30" ;
+  gen:father <https://www.wikidata.org/wiki/Q335589> ;
+  gen:mother <#Hannah_Ann_Stirling> .
+<#Lord_James_Gascoyne-Cecil>
+  gen:name "Lord James Richard Gascoyne-Cecil"@en ;
+  gen:birthDate "1973" ;
+  gen:father <https://www.wikidata.org/wiki/Q335589> ;
+  gen:mother <#Hannah_Ann_Stirling> .
+  # oo Alexandra Hannah Issa
+  []
+    gen:spouse <#Lord_James_Gascoyne-Cecil> , <#Alexandra_Hannah_Issa> ;
+	gen:startDate "2007-03-23" .
+<#Lady_Georgiana_Gascoyne-Cecil>
+  gen:name "Lady Georgiana Gascoyne-Cecil"@en ;
+  gen:birthDate "1977" ;
+  gen:father <https://www.wikidata.org/wiki/Q335589> ;
+  gen:mother <#Hannah_Ann_Stirling> .
+  # oo 2002-09-14 Michael James Douglas Campbell-Grove, b. 1970-11-03, #Michael_James_Douglas_Campbell-Grove
+<#Lady_Katherine_Gascoyne-Cecil>
+  gen:name "Lady Katherine Gascoyne-Cecil"@en ;
+  gen:birthDate "1977" ;
+  gen:father <https://www.wikidata.org/wiki/Q335589> ;
+  gen:mother <#Hannah_Ann_Stirling> .
+<#Daisy_Alice_Julia_Cecil>
+  gen:name "Daisy Alice Julia Cecil1"@en ;
+  gen:birthDate "1989-10-23" ;
+  gen:father <#Lord_Michael_Hugh_Gascoyne-Cecil> ;
+  gen:mother <#Camilla_Julia_Scott> .
+<#Hubert_George_Cecil>
+  gen:name "Hubert George Cecil"@en ;
+  gen:birthDate "1992" ;
+  gen:father <#Lord_Michael_Hugh_Gascoyne-Cecil> ;
+  gen:mother <#Camilla_Julia_Scott> .
+<#Edward_William_James_Cecil>
+  gen:name "Edward William James Cecil"@en ;
+  gen:birthDate "1996-06-22" ;
+  gen:father <#Lord_Michael_Hugh_Gascoyne-Cecil> ;
+  gen:mother <#Camilla_Julia_Scott> .
+
+<#Iris_Sarah_Gascoyne-Cecil>
+  gen:name "Iris Sarah Gascoyne-Cecil"@en ;
+  gen:birthDate "2001-06" ;
+  gen:father <#Robert_Edward_William_Gascoyne-Cecil,_Viscount_Cranborne> ;
+  gen:mother <#Camilla_Mary_Davidson> . # Camilla Mary Davidson, b. 1968
+<#Thomas_Richard_James_Gascoyne-Cecil>
+  gen:name "Thomas Richard James Gascoyne-Cecil"@en ;
+  gen:birthDate "2009" ;
+  gen:father <#Lord_James_Gascoyne-Cecil> ;
+  gen:mother <#Alexandra_Hannah_Issa> .
+
+
+# Baron Rockley
+<https://www.wikidata.org/wiki/Q5416293>
+  gen:name "Evelyn Cecil, 1st Baron Rockley"@en ;
+  # 1st Baron Rockley, of Lytchett Heath, co. Dorset 1934-01-11
+  gen:birthDate "1865-05-30" ;
+  gen:deathDate "1941-04-01" ;
+  gen:father <https://www.wikidata.org/wiki/Q6679229> ;
+  gen:mother <scott.ttl#Lady_Gertrude_Luisa_Scott> .
+  # oo Hon. Alicia Margaret Tyssen-Amherst, 1865-07-30 - 1941-09-14
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5416293> , <https://www.wikidata.org/wiki/Q19324976> ;
+	gen:startDate "1898-02-16" .
+
+<https://www.wikidata.org/wiki/Q26736741>
+  gen:name "Robert William Evelyn Cecil, 2nd Baron Rockley"@en ;
+  gen:birthDate "1901-02-28" ;
+  gen:deathDate "1976-01-26" ;
+  gen:father <https://www.wikidata.org/wiki/Q5416293> ;
+  gen:mother <https://www.wikidata.org/wiki/Q19324976> .
+  # oo Anne Margaret Meade-Fetherstonhaugh, 1912-06-15 - 1980
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q26736741> , <#Anne_Margaret_Meade-Fetherstonhaugh> ;
+	gen:startDate "1933-05-09" .
+
+<https://www.wikidata.org/wiki/Q15820714>
+  gen:name "James Hugh Cecil, 3rd Baron Rockley"@en ;
+  gen:birthDate "1934-04-05" ;
+  gen:deathDate "2011-12-05" ;
+  gen:father <https://www.wikidata.org/wiki/Q26736741> ;
+  gen:mother <#Anne_Margaret_Meade-Fetherstonhaugh> .
+  # oo Lady Sarah Primrose Beatrix Cadogan, 1938-02-23 - 2017-12-19
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q15820714> , <#Lady_Sarah_Primrose_Beatrix_Cadogan> ;
+	gen:startDate "1958-11-18" .
+<#Charles_Evelyn_Cecil>
+  gen:birthDate "1936-11-15" ;
+  gen:father <https://www.wikidata.org/wiki/Q26736741> ;
+  gen:mother <#Anne_Margaret_Meade-Fetherstonhaugh> .
+  # oo Jennifer Anne Mackinnon, daughter of Captain Duncan Mackinnon
+  []
+    gen:spouse <#Charles_Evelyn_Cecil> , <#Jennifer_Anne_Mackinnon> ;
+	gen:startDate "1965-09-28" .
+<#Elizabeth_Anne_Cecil>
+  gen:name "Hon. Elizabeth Anne Cecil"@en ;
+  gen:birthDate "1939-07-06" ;
+  gen:deathDate "2016-01-15" ;
+  gen:father <https://www.wikidata.org/wiki/Q26736741> ;
+  gen:mother <#Anne_Margaret_Meade-Fetherstonhaugh> .
+  # oo 1961-01-19 Andrew Arnold Lyon Wills, 1937-08-15 - 1998-01, #Andrew_Arnold_Lyon_Wills
+
+<#Caroline_Anne_Cecil>
+  gen:name "Hon. Caroline Anne Cecil"@en ;
+  gen:birthDate "1960-03-27" ;
+  gen:father <https://www.wikidata.org/wiki/Q15820714> ;
+  gen:mother <#Lady_Sarah_Primrose_Beatrix_Cadogan> .
+  # oo 1985 Mark G. Preston, son of Simon Preston
+<#Anthony_Robert_Cecil,_4th_Baron_Rockley>
+  gen:name "Anthony Robert Cecil, 4th Baron Rockley"@en ;
+  gen:birthDate "1961-07-29" ;
+  gen:father <https://www.wikidata.org/wiki/Q15820714> ;
+  gen:mother <#Lady_Sarah_Primrose_Beatrix_Cadogan> .
+  # oo Katherine Jane Whalley, daughter of G. A. Whalley
+  []
+    gen:spouse <#Anthony_Robert_Cecil,_4th_Baron_Rockley> , <#Katherine_Jane_Whalley> ;
+	gen:startDate "1988-01-09" .
+<#Camilla_Sarah_Cecil>
+  gen:name "Hon. Camilla Sarah Cecil"@en ;
+  gen:birthDate "1965-02-08" ;
+  gen:father <https://www.wikidata.org/wiki/Q15820714> ;
+  gen:mother <#Lady_Sarah_Primrose_Beatrix_Cadogan> .
+  # oo 1998-10-03 Henry Nicholas Mountain, b. 1967-11-29, son of Nicholas Brian Edward Mountain and Penelope Shearme
+<#Arabella_Elizabeth_Cecil>
+  gen:name "Arabella Elizabeth Cecil"@en ;
+  gen:birthDate "1967-07-07" ;
+  gen:father <#Charles_Evelyn_Cecil> ;
+  gen:mother <#Jennifer_Anne_Mackinnon> .
+<#Lucinda_Rose_Cecil>
+  gen:name "Lucinda Rose Cecil"@en ;
+  gen:birthDate "1970-03-04" ;
+  gen:father <#Charles_Evelyn_Cecil> ;
+  gen:mother <#Jennifer_Anne_Mackinnon> .
+  # oo 2001-06-23 James George Stewart-Richardson, b. 1971-03-02, #James_George_Stewart-Richardson
+<#David_Cecil>
+  gen:birthDate "1971-06-14" ;
+  gen:father <#Charles_Evelyn_Cecil> ;
+  gen:mother <#Jennifer_Anne_Mackinnon> .
+  # oo Joanna Mary Shaw, b. 1972, daughter of Peter Shaw and Valerie Anne McAlpine
+  []
+    gen:spouse <#David_Cecil> , <#Joanna_Mary_Shaw> .
+
+<#Emily_Sarah_Cecil>
+  gen:name "Hon. Emily Sarah Cecil"@en ;
+  gen:birthDate "1991-11-15" ;
+  gen:father <#Anthony_Robert_Cecil,_4th_Baron_Rockley> ;
+  gen:mother <#Katherine_Jane_Whalley> .
+<#Lydia_Elizabeth_Cecil>
+  gen:name "Hon. Lydia Elizabeth Cecil"@en ;
+  gen:birthDate "1994-01-03" ;
+  gen:father <#Anthony_Robert_Cecil,_4th_Baron_Rockley> ;
+  gen:mother <#Katherine_Jane_Whalley> .
+<#William_Evelyn_Cecil>
+  gen:name "Hon. William Evelyn Cecil"@en ;
+  gen:birthDate "1996-07-07" ;
+  gen:father <#Anthony_Robert_Cecil,_4th_Baron_Rockley> ;
+  gen:mother <#Katherine_Jane_Whalley> .
+<#William_Cecil>
+  gen:name "William Thomas Cecil"@en ;
+  gen:birthDate "2006" ;
+  gen:father <#David_Cecil> ;
+  gen:mother <#Joanna_Mary_Shaw> .
+<#Jimmy_Charles_Cecil>
+  gen:name "Jimmy Charles Cecil"@en ;
+  gen:birthDate "2009-05-29" ;
+  gen:father <#David_Cecil> ;
+  gen:mother <#Joanna_Mary_Shaw> .
+
+
+# --------
+<#Alice_Dicons>
+  # Alice Dickons
+  gen:father <#John_Dicons_of_Stamford> . # Sir John Dickons
+  # oo David Cecil, 1460~ - 1540-09~, https://www.wikidata.org/wiki/Q2054032
+
+# --------
+<#Jane_Roos>
+  # Jane/Joan Roos
+  gen:father <#Thomas_Roos_of_Dowsby> .
+  # oo David Cecil, 1460~ - 1540-09~, https://www.wikidata.org/wiki/Q2054032
+
+# --------
+<#Jane_Heckington>
+  # Jane Heckington, 1501~ - 1587/1588-03-10
+  gen:father <#William_Heckington_of_Bourne> . # William Heckington
+  # oo Richard Cecil, 1495~ - 1553-03-19, https://www.wikidata.org/wiki/Q2078204
+
+# --------
+<#Mary_Cheke>
+  # Mary Cheke, d. 1542/1543-02-22
+  gen:father <#Sir_Peter_Cheke_of_Pirgo> ; # Peter Cheke
+  gen:mother <#Agnes_Duffield> . # Agnes Duffield
+  # oo 1541-08-08 William Cecil, 1st Baron Burghley, 1520-09-13 - 1598-08-04, https://www.wikidata.org/wiki/Q354309
+
+# --------
+<https://www.wikidata.org/wiki/Q4772299>
+  gen:name "Sir Anthony Cooke"@en ;
+  gen:birthDate "1504" ;
+  gen:deathDate "1576-06-11" .
+  # oo Anne FitzWilliam
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4772299> , <#Anne_Fitzwilliam> .
+
+<https://www.wikidata.org/wiki/Q13420582>
+  gen:name "Mildred Cooke"@en ;
+  gen:birthDate "1524-08-24" ;
+  gen:deathDate "1589-04-04" ;
+  gen:father <https://www.wikidata.org/wiki/Q4772299> ;
+  gen:mother <#Anne_Fitzwilliam> .
+  # oo 1545-12-21 William Cecil, 1st Baron Burghley, 1520-09-13 - 1598-08-04, https://www.wikidata.org/wiki/Q354309
+# ----
+<https://www.wikidata.org/wiki/Q8009133>
+  gen:name "Sir William Fitzwilliam"@en ;
+  gen:birthDate "1460~" ;
+  gen:deathDate "1534-08-09" .
+
+<#Anne_Fitzwilliam>
+  # Anne Fitzwilliam
+  gen:father <https://www.wikidata.org/wiki/Q8009133> ;
+  gen:mother <#Anne_Hawes> .
+  # oo Sir Anthony Cooke, 1504 - 1576-06-11, https://www.wikidata.org/wiki/Q4772299
+
+# --------
+<https://www.wikidata.org/wiki/Q8006077>
+  gen:name "William Brydges, 4th Baron Chandos"@en ;
+  gen:birthDate "1552~" ;
+  gen:deathDate "1602" .
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8006077> , <#Mary_Hopton> .
+
+<#Frances_Brydges>
+  # Frances Brydges, 1580 - 1663
+  gen:father <https://www.wikidata.org/wiki/Q8006077> ;
+  gen:mother <#Mary_Hopton> .
+  # oo 1610 Thomas Cecil, 1st Earl of Exeter, 1542-05-05 - 1623-02-08, https://www.wikidata.org/wiki/Q1920626
+# --------
+<https://www.wikidata.org/wiki/Q7114512>
+  gen:name "Sir Owen Hopton"@en ;
+  gen:birthDate "1519~" ;
+  gen:deathDate "1595" .
+
+<#Mary_Hopton>
+  # Mary Hopton, d. 1624-10~
+  gen:father <https://www.wikidata.org/wiki/Q7114512> ;
+  gen:mother <#Anne_Echingham> .
+  # oo William Brydges, 4th Baron Chandos, 1552~ - 1602, https://www.wikidata.org/wiki/Q8006077
+
+# --------
+<https://www.wikidata.org/wiki/Q11803182>
+  gen:name "Sir William Drury"@en ;
+  gen:birthDate "1550-03-08" ;
+  gen:deathDate "1590" .
+  # oo Elizabeth Stafford, 1556~ - 1599-02-06
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q11803182> , <https://www.wikidata.org/wiki/Q5363545> .
+
+<#Diana_Drury>
+  gen:name "Diana Drury"@en ;
+  gen:deathDate "1631-05~" ;
+  gen:father <https://www.wikidata.org/wiki/Q11803182> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5363545> .
+  # oo 1617-02-27 Edward Cecil, 1st Viscount Wimbledon, 1572-02-29 - 1638-11-16, https://www.wikidata.org/wiki/Q2976180
+<#Elizabeth_Drury>
+  gen:name "Elizabeth Drury"@en ;
+  gen:birthDate "1578" ;
+  gen:deathDate "1654-02-26" ;
+  gen:father <https://www.wikidata.org/wiki/Q11803182> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5363545> .
+  # oo 1591a William Cecil, 2nd Earl of Exeter, 1566 - 1640-07-06, https://www.wikidata.org/wiki/Q7609327
+<#Frances_Drury>
+  # Frances Drury
+  gen:father <https://www.wikidata.org/wiki/Q11803182> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5363545> .
+  # oo 1600~ Sir William Wray, 1st Baronet, of Glentworth, 1555~ - 1617-08-13, https://www.wikidata.org/wiki/Q7529837
+# ----
+<#Sir_Humphrey_Stafford>
+  gen:name "Sir Humphrey Stafford"@en ;
+  gen:deathDate "1545-09-22" .
+  # oo Margaret Fogge
+  []
+    gen:spouse <#Sir_Humphrey_Stafford> , <#Margaret_Fogge> .
+
+<https://www.wikidata.org/wiki/Q4020158>
+  gen:name "William Stafford"@en ;
+  gen:birthDate "1500~" ;
+  gen:deathDate "1556-05-05" ;
+  gen:father <#Sir_Humphrey_Stafford> ;
+  gen:mother <#Margaret_Fogge> .
+  # oo Dorothy Stafford, 1526-10-01 - 1604-09-22
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4020158> , <https://www.wikidata.org/wiki/Q1184760> .
+
+<https://www.wikidata.org/wiki/Q5363545>
+  gen:name "Elizabeth Stafford"@en ;
+  gen:birthDate "1556~" ;
+  gen:deathDate "1599-02-06" ;
+  gen:father <https://www.wikidata.org/wiki/Q4020158> ;
+  gen:mother <https://www.wikidata.org/wiki/Q1184760> .
+  # oo Sir William Drury, 1550-03-08 - 1590, https://www.wikidata.org/wiki/Q11803182
+# ----
+<https://www.wikidata.org/wiki/Q6233541>
+  gen:name "Sir John Fogge"@en ;
+  gen:birthDate "1417~" ;
+  gen:deathDate "1490" .
+
+<#Margaret_Fogge>
+  gen:name "Margaret Fogge"@en ;
+  gen:father <https://www.wikidata.org/wiki/Q6233541> .
+  # oo Sir Humphrey Stafford, d. 1545-09-22, #Sir_Humphrey_Stafford
+# ----
+<https://www.wikidata.org/wiki/Q726243>
+  gen:name "Edward Stafford, 3rd Duke of Buckingham"@en ;
+  gen:birthDate "1478-02-03" ;
+  gen:deathDate "1521-05-17" ;
+  gen:father <https://www.wikidata.org/wiki/Q714480> ;
+  gen:mother <https://www.wikidata.org/wiki/Q533098> .
+  # oo Lady Eleanor Percy, 1474 - 1531-02-13
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q726243> , <https://www.wikidata.org/wiki/Q5354355> ;
+	gen:startDate "1490-12-14~" .
+
+<https://www.wikidata.org/wiki/Q4252416>
+  # Lady Elizabeth Stafford, 1499 - 1558-11-11
+  gen:father <https://www.wikidata.org/wiki/Q726243> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5354355> .
+  # oo 1512-01-08 Thomas Howard, 3rd Duke of Norfolk, 1473-03-10 - 1554-08-25, https://www.wikidata.org/wiki/Q503816
+<https://www.wikidata.org/wiki/Q5728604>
+  gen:name "Henry Stafford, 1st Baron Stafford"@en ;
+  gen:birthDate "1501-09-18" ;
+  gen:deathDate "1563-04-30" ;
+  gen:father <https://www.wikidata.org/wiki/Q726243> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5354355> .
+  # oo Ursula Pole, 1504~ - 1570-08-12
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5728604> , <https://www.wikidata.org/wiki/Q7901273> ;
+	gen:startDate "1519-02-16".
+
+<https://www.wikidata.org/wiki/Q1184760>
+  gen:name "Dorothy Stafford"@en ;
+  gen:birthDate "1526-10-01" ;
+  gen:deathDate "1604-09-22" ;
+  gen:father <https://www.wikidata.org/wiki/Q5728604> ;
+  gen:mother <https://www.wikidata.org/wiki/Q7901273> .
+  # oo William Stafford, 1500~ - 1556-05-05, https://www.wikidata.org/wiki/Q4020158
+<https://www.wikidata.org/wiki/Q3048681>
+  # Edward Stafford, 3rd Baron Stafford, 1536-01-17 - 1603-10-18
+  gen:father <https://www.wikidata.org/wiki/Q5728604> ;
+  gen:mother <https://www.wikidata.org/wiki/Q7901273> .
+  # oo Lady Mary Stanley, d. 1609-09-03
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3048681> , <stanley.ttl#Lady_Mary_Stanley> ;
+	gen:startDate "1566-11-23b" .
+# ----
+<https://www.wikidata.org/wiki/Q7528649>
+  gen:name "Sir Richard Pole"@en ;
+  gen:birthDate "1462" ;
+  gen:deathDate "1505-12-18b" .
+  # oo Margaret Plantagenet, Countess of Salisbury, 1473-08-14 - 1541-05-28
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7528649> , <https://www.wikidata.org/wiki/Q241806> ;
+	gen:startDate "1494b" .
+
+<https://www.wikidata.org/wiki/Q7901273>
+  gen:name "Ursula Pole"@en ;
+  gen:birthDate "1504~" ;
+  gen:deathDate "1570-08-12" ;
+  gen:father <https://www.wikidata.org/wiki/Q7528649> ;
+  gen:mother <https://www.wikidata.org/wiki/Q241806> .
+  # oo 1519-02-16 Henry Stafford, 1st Baron Stafford, 1501-09-18 - 1563-04-30, https://www.wikidata.org/wiki/Q5728604
+# ----
+<https://www.wikidata.org/wiki/Q241806>
+  # Margaret Plantagenet, Countess of Salisbury, 1473-08-14 - 1541-05-28
+  gen:father <https://www.wikidata.org/wiki/Q356173> ;
+  gen:mother <https://www.wikidata.org/wiki/Q436627> .
+  # oo 1494b Sir Richard Pole, 1462~ - 1505-12-18b, https://www.wikidata.org/wiki/Q7528649
+
+# ----
+#<https://www.wikidata.org/wiki/Q5113464>
+  # Sir Christopher Wray, 1524 - 1592-05-08
+  # oo Ann Girlington, daughter of Nicholas Girlington
+
+<https://www.wikidata.org/wiki/Q7529837>
+  # Sir William Wray, 1st Baronet, of Glentworth, 1555~ - 1617-08-13
+  # 1st Baronet Wray, of Glentworth, Lincolnshire 1611-11-25
+  gen:father <https://www.wikidata.org/wiki/Q5113464> .
+  # and Ann Girlington
+  # oo Lucy Montagu, d. 1599-03-01
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7529837> , <montagu.ttl#Lucy_Montagu> ;
+	gen:startDate "1580-04-06" .
+  # oo Frances Drury
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7529837> , <#Frances_Drury> ;
+	gen:startDate "1600~" .
+
+<https://www.wikidata.org/wiki/Q7528154>
+  # Sir John Wray, 2nd Baronet, 1586-11-27 – 1655-12-31
+  gen:father <https://www.wikidata.org/wiki/Q7529837> ;
+  gen:mother <montagu.ttl#Lucy_Montagu> .
+  # oo Grisella Bethell, daughter of Sir Hugh Bethell
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7528154> , <#Grisella_Bethell> ;
+	gen:startDate "1607-09" .
+<https://www.wikidata.org/wiki/Q5113465>
+  # Sir Christopher Wray, 1601 – 1646-02-06
+  gen:father <https://www.wikidata.org/wiki/Q7529837> ;
+  gen:mother <#Frances_Drury> .
+  # oo Albinia Cecil, d. 1660
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5113465> , <#Albinia_Cecil> ;
+	gen:startDate "1623-08-03" .
+<#Frances_Wray>
+  # Frances Wray
+  gen:father <https://www.wikidata.org/wiki/Q7529837> ;
+  gen:mother <#Frances_Drury> .
+  # oo Sir Anthony Irby, 1605-01-17b - 1682-01-02, https://www.wikidata.org/wiki/Q4772789
+
+<https://www.wikidata.org/wiki/Q7528156>
+  # Sir John Wray, 3rd Baronet, 1619-09-21 – 1664-10
+  gen:father <https://www.wikidata.org/wiki/Q7528154> ;
+  gen:mother <#Grisella_Bethell> .
+  # oo Elizabeth Willoughby, daughter of Sir Henry Willoughby, 1st Baronet
+  # oo Sarah Evelyn, d. 1717-10~, daughter of Sir John Evelyn and Elizabeth Cockes
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7528156> , <#Sarah_Evelyn> ;
+	gen:startDate "1661" .
+<https://www.wikidata.org/wiki/Q7529835>
+  # Sir William Wray, 1st Baronet, 1625 – 1669-10-17
+  # 1st Baronet Wray, of Ashby, co. Lincoln 1660-06
+  # 4th Baronet Wray, of Glentworth 1664-10
+  gen:father <https://www.wikidata.org/wiki/Q5113465> ;
+  gen:mother <#Albinia_Cecil> .
+  # oo Olympia Tufton
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7529835> , <#Olympia_Tufton> ;
+	gen:startDate "1652b" .
+
+<#Tufton_Wray>
+  # Tufton Wray, 1667 - 1712
+  gen:father <https://www.wikidata.org/wiki/Q7529835> ;
+  gen:mother <#Olympia_Tufton> .
+# ----
+#<https://www.wikidata.org/wiki/Q5940771>
+  # Sir Humfrey Tufton, 1st Baronet, 1584 – 1659-10
+  # 1st Baronet Tufton, of The Mote, Kent 1641-12-24
+  # oo Margaret Morley, 1586~ - 1667~, daughter of Herbert Morley
+
+<#Olympia_Tufton>
+  # Olympia Tufton
+  gen:father <https://www.wikidata.org/wiki/Q5940771> .
+  # and Margaret Morley
+  # oo 1652b Sir William Wray, 1st Baronet, 1625 – 1669-10-17, https://www.wikidata.org/wiki/Q7529835
+
+# ----
+#<https://www.wikidata.org/wiki/Q8016687>
+  # William Paulet, 4th Marquess of Winchester, 1560b – 1629-02-04
+  # oo Lady Lucy Cecil, 1568-03-07 - 1614-10-01
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8016687> , <#Lady_Lucy_Cecil> ;
+	gen:startDate "1587-02-28" .
+
+# --------
+<https://www.wikidata.org/wiki/Q7526008>
+  gen:name "Sir Anthony Cope, 1st Baronet"@en ;
+  # 1st Baronet Cope, of Hanwell, Oxfordshire 1611
+  gen:birthDate "1548~" ;
+  gen:deathDate "1614" .
+
+<#Elizabeth_Cope>
+  gen:name "Elizabeth Cope"@en ;
+  gen:father <https://www.wikidata.org/wiki/Q7526008> .
+  # oo 1603-03-23 Sir Richard Cecil, 1570-12-07 - 1633-09-04, https://www.wikidata.org/wiki/Q7324684
+
+# --------
+#<https://www.wikidata.org/wiki/Q18670728>
+  # Sir Andrew Noel, 1552~ - 1607
+  # oo Mabel Harington
+
+<#Theodosia_Noel>
+  gen:name "Theodosia Noel"@en ;
+  gen:birthDate "1585-01-04" ;
+  gen:deathDate "1616-03-20b" ;
+  gen:father <https://www.wikidata.org/wiki/Q18670728> .
+  # and Mabel Harington
+  # oo 1601-07-10 Edward Cecil, 1st Viscount Wimbledon, 1572-02-29 - 1638-11-16, https://www.wikidata.org/wiki/Q2976180
+
+# --------
+<#Sophia_Zouche>
+  gen:name "Sophia Zouche"@en ;
+  gen:birthDate "1618~" ;
+  gen:deathDate "1691-11-12" ;
+  gen:father <#Sir_Edward_Zouche_of_Woking> . # Sir Edward Zouche
+  # oo 1635-09 Edward Cecil, 1st Viscount Wimbledon, 1572-02-29 - 1638-11-16, https://www.wikidata.org/wiki/Q2976180
+
+# ----
+#<https://www.wikidata.org/wiki/Q5342571>
+  # Edward Denny, 1st Earl of Norwich, 1569-08-15 – 1637-10-24
+  # 1st Lord Denny, of Waltham 1604-10-27
+  # 1st Earl of Norwich 1626-10-24
+  # oo Lady Mary Cecil, b. 1573-07-15 - 1638-03-18
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5342571> , <#Lady_Mary_Cecil_(died_1638)> ;
+	gen:startDate "1590~" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q7026329>
+  # Nicholas Tufton, 1st Earl of Thanet, 1578 – 1631
+  # oo Lady Frances Cecil, 1581-02-28 - 1653-06-12
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7026329> , <#Lady_Frances_Cecil_(died_1653)> ;
+	gen:startDate "1602-09-03b" .
+
+<https://www.wikidata.org/wiki/Q7794584>
+  gen:name "Thomas Tufton, 6th Earl of Thanet, 18th Baron de Clifford"@en ;
+  gen:birthDate "1644-08-30" ;
+  gen:deathDate "1729-07-30" .
+  # oo Lady Catherine Cavendish, 1665-01-14 – 1712-04-20
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7794584> , <cavendish.ttl#Lady_Catherine_Cavendish> ;
+	gen:startDate "1684-08-14" .
+
+<https://www.wikidata.org/wiki/Q50327194>
+  gen:name "Lady Anne Tufton"@en ;
+  gen:birthDate "1693-08-09" ;
+  gen:deathDate "1759-04-22" ;
+  gen:father <https://www.wikidata.org/wiki/Q7794584> ;
+  gen:mother <cavendish.ttl#Lady_Catherine_Cavendish> .
+  # oo 1709-02-12 James Cecil, 5th Earl of Salisbury, 1691-06-08 - 1728-10-09, https://www.wikidata.org/wiki/Q3806496
+<https://www.wikidata.org/wiki/Q6759287>
+  # Margaret Tufton, 19th Baroness Clifford, 1700-06-16 - 1775-02-28
+  # 19th Baroness Clifford 1734-08-03, suo jure
+  gen:father <https://www.wikidata.org/wiki/Q7794584> ;
+  gen:mother <cavendish.ttl#Lady_Catherine_Cavendish> .
+  # oo 1718-07-03 Thomas Coke, 1st Earl of Leicester, 1697-06-17 - 1759-04-20, https://www.wikidata.org/wiki/Q337655
+<https://www.wikidata.org/wiki/Q59836204>
+  # Lady Mary Tufton, 1701-07-06 – 1785-02-19
+  gen:father <https://www.wikidata.org/wiki/Q7794584> ;
+  gen:mother <cavendish.ttl#Lady_Catherine_Cavendish> .
+  # oo 1718-02-17 Anthony Grey, 3rd Baron Lucas of Crudwell, 1696-02-21 - 1723-07-21, https://www.wikidata.org/wiki/Q4772628
+  # oo 1736-05-16 John Leveson-Gower, 1st Earl Gower, 1694-08-10 - 1754-12-25, https://www.wikidata.org/wiki/Q336200
+
+# ----
+<#Ann_Lake>
+  #Ann Lake, d. 1630
+  gen:father <https://www.wikidata.org/wiki/Q7791667> .
+  # and Mary Ryder
+  # oo 1615-02-13 (div) William Cecil, 16th Baron de Ros of Helmsley, 1590-05 - 1618-06-27, https://www.wikidata.org/wiki/Q8006653
+
+# ----
+#<https://www.wikidata.org/wiki/Q7616265>
+  # Thomas Bruce, 1st Earl of Elgin, 3rd Lord Bruce of Kinloss, 1599-02-02 – 1663-12-21
+  # oo Lady Diana Cecil, 1596 - 1658-02-26
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7616265> , <#Lady_Diana_Cecil> ;
+	gen:startDate "1629-11-12" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q16863668>
+  # Richard Fiennes, 7th Baron Saye and Sele, 1557~ - 1613-02-06
+  # son of Richard Fiennes, de jure 6th Baron Saye and Sele, 1520~ – 1573-08-03
+  # and Ursula Fermor, daughter of Sir Richard Fermor and Anne Browne
+  # oo Constance Kingsmill, d. 1587-04a, daughter of Sir William Kingsmill
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16863668> , <#Constance_Kingsmill> ;
+	gen:startDate "1581~" .
+
+<https://www.wikidata.org/wiki/Q8009023>
+  # William Fiennes, 1st Viscount Saye and Sele 1582-06-28 – 1662-04-14
+  gen:father <https://www.wikidata.org/wiki/Q16863668> ;
+  gen:mother <#Constance_Kingsmill> .
+  # oo Elizabeth Temple, d. 1648, daughter of John Temple of Stowe and Susan Spencer
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8009023> , <#Elizabeth_Temple> ;
+	gen:startDate "1602~" .
+
+<https://www.wikidata.org/wiki/Q6133872>
+  # James Fiennes, 2nd Viscount Saye and Sele, 1602~ – 1674-03-15
+  gen:father <https://www.wikidata.org/wiki/Q8009023> ;
+  gen:mother <#Elizabeth_Temple> .
+  # oo Frances Cecil, d. 1684
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6133872> , <#Frances_Cecil_(died_1684)> ;
+	gen:startDate "1631b" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q14949022>
+  # Rev. Joshua Sprigge, 1618 - 1684-07
+  # oo Frances Cecil, d. 1684
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q14949022> , <#Frances_Cecil_(died_1684)> ;
+	gen:startDate "1675" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q6850916>
+  # Mildmay Fane, 2nd Earl of Westmorland, 1602-01-24 – 1666-02-12
+  # oo Hon. Mary de Vere, 1608 - 1669-11-15~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6850916> , <de_vere.ttl#Mary_de_Vere> ;
+	gen:startDate "1638-06-21" .
+
+<https://www.wikidata.org/wiki/Q6470423>
+  # Lady Mary Fane, 1639 – 1681-10-16
+  gen:father <https://www.wikidata.org/wiki/Q6850916> ;
+  gen:mother <de_vere.ttl#Mary_de_Vere> .
+  # oo 1670-01-24 John Cecil, 4th Earl of Exeter, 1628 - 1678-03-18, https://www.wikidata.org/wiki/Q6225592
+
+# ----
+#<https://www.wikidata.org/wiki/Q16205465>
+  # Sir John Cooper, 1st Baronet
+  # son of Sir John Cooper, 1552 – 1610
+  # and Martha Skutt
+  # oo Anne Ashley, d. 1628-07-20
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16205465> , <#Anne_Ashley> .
+
+<https://www.wikidata.org/wiki/Q336002>
+  # Anthony Ashley Cooper, 1st Earl of Shaftesbury, 1621-07-22 – 1683-01-21
+  gen:father <https://www.wikidata.org/wiki/Q16205465> ;
+  gen:mother <#Anne_Ashley> .
+  # oo Lady Frances Cecil, 1633 - 1652-12-31
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q336002> , <#Lady_Frances_Cecil_(died_1652)> ;
+	gen:startDate "1650-04-15" .
+  # oo Hon. Margaret Spencer, 1627 - 1693
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q336002> , <spencer.ttl#Margaret_Spencer_(died_1693)> ;
+	gen:startDate "1655-08-30" .
+
+<https://www.wikidata.org/wiki/Q4772027>
+  # Anthony Ashley-Cooper, 2nd Earl of Shaftesbury, 1652-01-16 - 1699-11-10
+  gen:father <https://www.wikidata.org/wiki/Q336002> ;
+  gen:mother <#Lady_Frances_Cecil_(died_1652)> .
+  # oo Lady Dorothy Manners, 1656~ - 1698-06
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4772027> , <https://www.wikidata.org/wiki/Q56715609> ;
+	gen:startDate "1669-09-22" .
+# ----
+#<https://www.wikidata.org/wiki/Q7526006>
+  # Sir Anthony Ashley, 1st and last Baronet, 1551 – 1628-01-13
+  # oo Jane Okeover
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7526006> , <#Jane_Okeover> ;
+	gen:startDate "1587a" .
+
+<#Anne_Ashley>
+  # Anne Ashley, d. 1628-07-20
+  gen:father <https://www.wikidata.org/wiki/Q7526006> ;
+  gen:mother <#Jane_Okeover> .
+  # oo Sir John Cooper, 1st Baronet, d. 1630-03-23, https://www.wikidata.org/wiki/Q16205465
+
+# ----
+#<https://www.wikidata.org/wiki/Q14945753>
+  # John Scudamore, 1st Viscount Scudamore, 1601-03-22 - 1671-05-19
+  # oo Elizabeth Porter, daughter of Sir Arthur Porter
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q14945753> , <#Elizabeth_Porter> .
+
+<#James_Scudamore>
+  # Hon. James Scudamore, d. 1668-06-18
+  gen:father <https://www.wikidata.org/wiki/Q14945753> ;
+  gen:mother <#Elizabeth_Porter> .
+  # oo Jane Bennet, d. 1699/1700-02-21, daughter of Richard Bennet
+  []
+    gen:spouse <#James_Scudamore> , <#Jane_Bennet> ;
+	gen:startDate "1648-09-14" .
+
+<https://www.wikidata.org/wiki/Q6257152>
+  # John Scudamore, 2nd Viscount Scudamore, 1650~ – 1697-07
+  gen:father <#James_Scudamore> ;
+  gen:mother <#Jane_Bennet> .
+  # oo Lady Frances Cecil, 1652 - 1694
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6257152> , <https://www.wikidata.org/wiki/Q50347049> ;
+	gen:startDate "1672" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q6221539>
+  # John Bennet, 1st Baron Ossulston, 1616-07-05 - 1695-02-11
+  # 1st Baron Ossulston 1682-11-24
+  # oo Lady Elizabeth Cranfield, b. 1608, daughter of Lionel Cranfield, 1st Earl of Middlesex (1575-03-13 - 1645-08-06, 1st Baron Cranfield, of Cranfield in the County of Bedford 1621-07, 1st Earl of Middlesex in 1622-09, https://www.wikidata.org/wiki/Q6555592) and oo 1596 Elizabeth Shepherd (d. 1617)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6221539> , <#Lady_Elizabeth_Cranfield> ;
+	gen:startDate "1661-10-28" .
+  # oo Bridget Howe, daughter of John Grubham Howe (1625 - 1679, https://www.wikidata.org/wiki/Q6236456) and oo Lady Annabella Scrope (1629 - 1703-03-21, illegitimate daughter of https://www.wikidata.org/wiki/Q5369143 and Martha Jeanes)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6221539> , <#Bridget_Howe> ;
+	gen:startDate "1673-05-01~" .
+
+<https://www.wikidata.org/wiki/Q5075537>
+  # Charles Bennet, 1st Earl of Tankerville, 1674~ - 1722-05-21
+  # 2nd Baron Ossulston, of Ossulston, co. Middlesex 1695-02-11
+  # 1st Earl of Tankerville 1714-10-19
+  gen:father <https://www.wikidata.org/wiki/Q6221539> ;
+  gen:mother <#Bridget_Howe> .
+  # oo Lady Mary Grey, 1678~ - 1710-05-31
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5075537> , <#Lady_Mary_Grey_(died_1710)> ;
+	gen:startDate "1695-07-03" .
+<#Annabella_Bennet>
+  # Hon. Annabella Bennet, 1682 - 1698-07-30
+  gen:father <https://www.wikidata.org/wiki/Q6221539> ;
+  gen:mother <#Bridget_Howe> .
+  # oo 1697-02-09 John Cecil, 6th Earl of Exeter, 1674-05-15 - 1721-12-24, https://www.wikidata.org/wiki/Q6225597
+
+# --------
+<https://www.wikidata.org/wiki/Q7527627>
+  gen:name "Sir John Brownlow, 3rd Baronet"@en ;
+  gen:birthDate "1659-06-26" ;
+  gen:deathDate "1697-07-16" .
+  # oo Alice Sherard, 1659 - 1721-07-27
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7527627> , <#Alice_Sherard> ;
+	gen:startDate "1676-03-27" .
+
+<#Elizabeth_Brownlow>
+  # Elizabeth Brownlow, 1681 - 1723, daughter of  and 
+  gen:birthDate "1681-05-18" ;
+  gen:deathDate "1723-11-28" ;
+  gen:father <https://www.wikidata.org/wiki/Q7527627> ;
+  gen:mother <#Alice_Sherard> .
+  # oo 1699-09-19 John Cecil, 6th Earl of Exeter, 1674-05-15 - 1721-12-24, https://www.wikidata.org/wiki/Q6225597
+<#Jane_Brownlow>
+  gen:name "Jane Brownlow"@en ;
+  gen:deathDate "1736-08-26" ;
+  gen:father <https://www.wikidata.org/wiki/Q7527627> ;
+  gen:mother <#Alice_Sherard> .
+  # oo 1711-06 Peregrine Bertie, 2nd Duke of Ancaster and Kesteven, 1686-04-29 - 1742-01-01, https://www.wikidata.org/wiki/Q16145961
+# ----
+<#Alice_Sherard>
+  gen:name "Alice Sherard"@en ;
+  gen:birthDate "1659" ;
+  gen:deathDate "1721-07-27" ;
+  gen:father <#Richard_Sherard> .
+  # oo 1676-03-27 Sir John Brownlow, 3rd Baronet, 1659-06-26 - 1697-07-16, https://www.wikidata.org/wiki/Q7527627
+
+# --------
+<#Hannah_Sophia_Chambers>
+  gen:name "Hannah Sophia Chambers"@en ;
+  gen:deathDate "1765-04-30" ;
+  gen:father <#Thomas_Chambers> . # Thomas Chambers
+  # oo 1724-07-18 Brownlow Cecil, 8th Earl of Exeter, 1701-08-04 - 1754-11-03, https://www.wikidata.org/wiki/Q4976603
+
+# ----
+#<https://www.wikidata.org/wiki/Q8004206>
+  # William Aislabie, of Studley Royal, 1699~ - 1781-05-17
+  # oo Lady Elizabeth Cecil, 1706 - 1733-04-06
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8004206> , <https://www.wikidata.org/wiki/Q17484646> ;
+	gen:startDate "1724-05-21" .
+# ----
+#<https://www.wikidata.org/wiki/Q5902810>
+  # Sir Horatio Townshend, Viscount Townshend of Raynham, 1630-12-16 - 1687
+  # 3rd Baronet 1648~
+  # Baron Townshend of Lynn Regis 1661
+  # Viscount Townshend of Raynham 1682
+  # oo Mary Ashe, d. 1685-12-17
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5902810> , <#Mary_Ashe> ;
+	gen:startDate "1673-11-27" .
+
+<https://www.wikidata.org/wiki/Q22336914>
+  # Hon. Horatio Townshend, 1683 - 1751-10-24
+  gen:father <https://www.wikidata.org/wiki/Q5902810> ;
+  gen:mother <#Mary_Ashe> .
+  # oo Alice Starkey, d. 1747-11-22
+
+<#Letitia_Townshend>
+  # Letitia Townshend, d. 1756-04-17
+  gen:father <https://www.wikidata.org/wiki/Q22336914> .
+  # and Alice Starkey
+  # oo 1749-07-24 Brownlow Cecil, 9th Earl of Exeter, 1725-09-21 - 1793-12-26, https://www.wikidata.org/wiki/Q4976605
+# ----
+<#Mary_Ashe>
+  # Mary Ashe, d. 1685-12-17
+  gen:father <https://www.wikidata.org/wiki/Q7528180> .
+  # oo 1673-11-27 Sir Horatio Townshend, Viscount Townshend of Raynham, 1630-12-16 - 1687, https://www.wikidata.org/wiki/Q5902810
+
+# --------
+#<https://www.wikidata.org/wiki/Q7794679>
+  # Thomas Vernon, 1724 – 1771
+  # oo Emma Cornwall, 1711 – 1777
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7794679> , <#Emma_Cornwall> .
+
+<#Emma_Vernon>
+  # Emma Vernon, 1756 – 1818
+  gen:father <https://www.wikidata.org/wiki/Q7794679> ;
+  gen:mother <#Emma_Cornwall> .
+  # oo 1776-05-23 (div 1791-06-10) Henry Cecil, 1st Marquess of Exeter, 1754-03-14 - 1804-05-01, https://www.wikidata.org/wiki/Q5719247
+# ----
+<#Emma_Cornwall>
+  # Emma Cornwall, 1711 – 1777
+  gen:father <https://www.wikidata.org/wiki/Q18534781> .
+  # oo Thomas Vernon, 1724 – 1771, https://www.wikidata.org/wiki/Q7794679
+
+# ----
+<https://www.wikidata.org/wiki/Q56677629>
+  gen:name "Sarah Hoggins"@en ;
+  gen:birthDate "1773-06-28" ;
+  gen:deathDate "1797-01-18" ;
+  gen:father <#Thomas_Hoggins> ; # Thomas Hoggins
+  gen:mother <#Jane_Bayley> . # Jane Bayley
+  # oo 1791-10-03 Henry Cecil, 1st Marquess of Exeter, 1754-03-14 - 1804-05-01, https://www.wikidata.org/wiki/Q5719247
+
+# --------
+<https://www.wikidata.org/wiki/Q7792977>
+  gen:name "Thomas Pakenham, 2nd Earl of Longford"@en ;
+  gen:birthDate "1774-05-14" ;
+  gen:deathDate "1835-05-28" .
+  # oo Lady Georgiana Emma Charlotte Lygon, d. 1880-02-12
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7792977> , <#Lady_Georgiana_Emma_Charlotte_Lygon> ;
+	gen:startDate "1817-01-23" .
+
+<#Lady_Georgina_Sophia_Pakenham>
+  gen:name "Lady Georgina Sophia Pakenham"@en ;
+  gen:birthDate "1828~" ;
+  gen:deathDate "1909-03-26" ;
+  gen:father <https://www.wikidata.org/wiki/Q7792977> ;
+  gen:mother <#Lady_Georgiana_Emma_Charlotte_Lygon> .
+  # oo 1848-10-17 William Alleyne Cecil, 3rd Marquess of Exeter, 1825-04-30 - 1895-07-14, https://www.wikidata.org/wiki/Q8006657
+# ----
+<https://www.wikidata.org/wiki/Q8014807>
+  gen:name "William Lygon, 1st Earl Beauchamp"@en ;
+  gen:birthDate "1747-07-25" ;
+  gen:deathDate "1816-10-21" .
+  # oo Catherine Denn
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8014807> , <#Catherine_Denn> ;
+	gen:startDate "1780" .
+
+<#Lady_Georgiana_Emma_Charlotte_Lygon>
+  gen:name "Lady Georgiana Emma Charlotte Lygon"@en ;
+  gen:deathDate "1880-02-12" ;
+  gen:father <https://www.wikidata.org/wiki/Q8014807> ;
+  gen:mother <#Catherine_Denn> .
+  # oo 1817-01-23 Thomas Pakenham, 2nd Earl of Longford, 1774-05-14 - 1835-05-28, https://www.wikidata.org/wiki/Q7792977
+
+# ----
+#<https://www.wikidata.org/wiki/Q5311965>
+  # Dudley Ryder, 2nd Earl of Harrowby, 1798-05-19 – 1882-11-19
+  # oo Lady Frances Stuart, d. 1859-03-29
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5311965> , <stuart.ttl#Lady_Frances_Stuart> ;
+	gen:startDate "1823-09-15" .
+
+<https://www.wikidata.org/wiki/Q5311966>
+  # Dudley Francis Stuart Ryder, 3rd Earl of Harrowby, 1831-01-16 – 1900-03-26
+  gen:father <https://www.wikidata.org/wiki/Q5311965> ;
+  gen:mother <stuart.ttl#Lady_Frances_Stuart> .
+  # oo Lady Mary Frances Cecil, 1832-01-06 - 1917-07-27
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5311966> , <#Lady_Mary_Frances_Cecil> ;
+	gen:startDate "1861-10-03" .
+
+# ----
+<#John_Evans>
+  # Hon. John Evans, d. 1758
+  gen:father <https://www.wikidata.org/wiki/Q5539041> .
+  # and Anne Stafford
+  # oo Grace Freke
+  []
+    gen:spouse <#John_Evans> , <#Grace_Freke> ;
+	gen:startDate "1741-06" .
+
+<#Sir_John_Evans-Freke,_1st_Baronet>
+  # Sir John Evans-Freke, 1st Baronet, d. 1777-03-20
+  # 1st Baronet Evans-Freke, of Castle Freke, co. Cork 1768-07-15
+  gen:father <#John_Evans> ;
+  gen:mother <#Grace_Freke> .
+  # oo 1764-07-15 Lady Elizabeth Gore
+  []
+    gen:spouse <#Sir_John_Evans-Freke,_1st_Baronet> , <#Lady_Elizabeth_Gore> ;
+	gen:startDate "1764-07-15" .
+
+<#Percy_Evans-Freke>
+  # Percy Evans-Freke, 1774-04 - 1844-09-09
+  gen:father <#Sir_John_Evans-Freke,_1st_Baronet> ;
+  gen:mother <#Lady_Elizabeth_Gore> .
+  # oo Dorothea Harvey, d. 1835-03-26, daughter of Rev. Christopher Harvey and Rachel Nickson
+  []
+    gen:spouse <#Percy_Evans-Freke> , <#Dorothea_Harvey> ;
+	gen:startDate "1797" .
+
+<#William_Charles_Evans-Freke,_8th_Baron_Carbery>
+  # William Charles Evans-Freke, 8th Baron Carbery, 1812-05-24 – 1894-11-07
+  gen:father <#Percy_Evans-Freke> ;
+  gen:mother <#Dorothea_Harvey> .
+  # oo Lady Victoria Cecil, 1843-11-06 - 1932-02-22
+  []
+    gen:spouse <#William_Charles_Evans-Freke,_8th_Baron_Carbery> , <#Lady_Victoria_Cecil> ;
+	gen:startDate "1866-12-15" .
+# ----
+<#Grace_Freke>
+  # Grace Freke
+  gen:father <https://www.wikidata.org/wiki/Q7287505> .
+  # oo 1741-06 Hon. John Evans, d. 1758, #John_Evans
+
+# --------
+<#Sir_Thomas_Whichcote,_7th_Baronet>
+  gen:name "Sir Thomas Whichcote, 7th Baronet"@en ;
+  gen:birthDate "1813" ;
+  gen:deathDate "1892-01-17" .
+  # oo Isabella Elizabeth Montgomery, d. 1892-08-29
+  []
+    gen:spouse <#Sir_Thomas_Whichcote,_7th_Baronet> , <#Isabella_Elizabeth_Montgomery> ;
+	gen:startDate "1856-03-25" .
+
+<#Isabella_Whichcote>
+  gen:name "Isabella Whichcote"@en ;
+  gen:deathDate "1917-07-12" ;
+  gen:father <#Sir_Thomas_Whichcote,_7th_Baronet> ;
+  gen:mother <#Isabella_Elizabeth_Montgomery> .
+  # oo 1875-09-07 Brownlow Henry George Cecil, 4th Marquess of Exeter, 1849-12-20 - 1898-04-09, https://www.wikidata.org/wiki/Q4976602
+# ----
+#<#Sir_Henry_Conyngham_Montgomery,_1st_Baronet>
+  # Sir Henry Conyngham Montgomery, 1st Baronet, d. 1830-01-21
+  # oo Sarah Mercer Grove, 1782 - 1854-12-08
+  []
+    gen:spouse <#Sir_Henry_Conyngham_Montgomery,_1st_Baronet> , <#Sarah_Mercer_Grove> ;
+	gen:startDate "1800-06-21" .
+
+<#Isabella_Elizabeth_Montgomery>
+  # Isabella Elizabeth Montgomery, d. 1892-08-29
+  gen:father <#Sir_Henry_Conyngham_Montgomery,_1st_Baronet> ;
+  gen:mother <#Sarah_Mercer_Grove> .
+  # oo 1856-03-25 Sir Thomas Whichcote, 7th Baronet, 1813 - 1892-01-17, #Sir_Thomas_Whichcote,_7th_Baronet
+
+# --------
+<https://www.wikidata.org/wiki/Q7529549>
+  gen:name "Sir William Cunliffe Brooks, 1st Baronet"@en ;
+  gen:birthDate "1819-09-30" ;
+  gen:deathDate "1900-06-09" .
+  # oo Jane Elizabeth Orrell, d. 1865-10-10
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7529549> , <#Jane_Elizabeth_Orrell> ;
+	gen:startDate "1842-07-25" .
+
+<#Edith_Brookes>
+  gen:name "Edith Brookes"@en ;
+  gen:deathDate "1923-05-09" ;
+  gen:father <https://www.wikidata.org/wiki/Q7529549> ;
+  gen:mother <#Jane_Elizabeth_Orrell> .
+  # oo 1874-10-14 Lord Francis Horace Pierrepont Cecil, 1851-07-05 - 1889-06-23, #Lord_Francis_Horace_Pierrepont_Cecil
+# ----
+<#Jane_Elizabeth_Orrell>
+  # Jane Elizabeth Orrell, d. 1865-10-10
+  gen:father <#Ralph_Orrell> .
+  # oo 1842-07-25 Sir William Cunliffe Brooks, 1st Baronet, 1819-09-30 - 1900-06-09, https://www.wikidata.org/wiki/Q7529549
+
+# ----
+#<https://www.wikidata.org/wiki/Q8005205>
+  # William Battie-Wrightson, 1789-10-06 – 1879-02-10
+  # oo Lady Isabella Georgiana Katherine Cecil, 1853~ - 1917-10-29
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8005205> , <#Lady_Isabella_Georgiana_Katherine_Cecil> ;
+	gen:startDate "1884-08-07" .
+	
+# ----
+#<#William_George_Daniel-Tyssen_(died_1838)>
+  # William George Daniel-Tyssen, d. 1838-01~
+  # oo Amelia Amherst, d. 1851-08~, daughter of Captain John Amherst and Mary Tyssen
+  []
+    gen:spouse <#William_George_Daniel-Tyssen_(died_1838)> , <#Amelia_Amherst> ;
+	gen:startDate "1794-06-21" .
+
+<#William_George_Daniel-Tyssen_(died_1885)>
+  # William George Daniel-Tyssen, 1801-12-18 - 1885-12-30
+  gen:father <#William_George_Daniel-Tyssen_(died_1838)> ;
+  gen:mother <#Amelia_Amherst> .
+  # oo Mary Fountaine, d. 1854-02-09, daughter of Andrew Fountaine
+  []
+    gen:spouse <#William_George_Daniel-Tyssen_(died_1885)> , <#Mary_Fountaine> ;
+	gen:startDate "1834-04-13" .
+
+<#Florence_Mary_Tyssen-Amherst>
+  # Florence Mary Tyssen-Amherst, d. 1927-10-07
+  gen:father <#William_George_Daniel-Tyssen_(died_1885)> ;
+  gen:mother <#Mary_Fountaine> .
+  # oo 1860-10-19 Rev. Charles Villiers, 1830 - 1893-10-15, villiers.ttl#Charles_Villiers, son of https://www.wikidata.org/wiki/Q15990334 and Charlotte Harte
+<https://www.wikidata.org/wiki/Q333839>
+  # William Amhurst Tyssen-Amherst, 1st Baron Amherst of Hackney, 1835-04-25 - 1909-01-16
+  # 1st Baron Amherst of Hackney, co. London 1892-08-26
+  gen:father <#William_George_Daniel-Tyssen_(died_1885)> ;
+  gen:mother <#Amelia_Mary_FountaineAmherst> .
+  # oo Margaret Susan Mitford, 1835-01-08 - 1919-11-02, daughter of Admiral Robert Mitford and Margaret Dunsmore
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q333839> , <#Margaret_Susan_Mitford> ;
+	gen:startDate "1856-06-04" .
+
+<https://www.wikidata.org/wiki/Q1906390>
+  # Mary Rothes Margaret Tyssen-Amherst, Baroness Amherst of Hackney, 1857-04-25 - 1919-12-21
+  gen:father <https://www.wikidata.org/wiki/Q333839> ;
+  gen:mother <#Margaret_Susan_Mitford> .
+  # oo 1885-09-02 Lord William Cecil, 1854-11-02 - 1943-04-16, https://www.wikidata.org/wiki/Q6680023
+<https://www.wikidata.org/wiki/Q19324976>
+  gen:name "Hon. Alicia Margaret Tyssen-Amherst"@en ;
+  gen:birthDate "1865-07-30" ;
+  gen:deathDate "1941-09-14" ;
+  gen:father <https://www.wikidata.org/wiki/Q333839> ;
+  gen:mother <#Margaret_Susan_Mitford> .
+  # oo 1898-02-16 Evelyn Cecil, 1st Baron Rockley, 1865-05-30, 1941-04-01, https://www.wikidata.org/wiki/Q5416293
+
+# ----
+#<https://www.wikidata.org/wiki/Q6136337>
+  # James Henry Hozier, 2nd Baron Newlands, 1851-04-04 – 1929-09-05
+  # oo Lady Mary Louisa Wellesley Cecil, 1857-07-04 - 1930-08-12
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6136337> , <#Lady_Mary_Louisa_Wellesley_Cecil> ;
+	gen:startDate "1880-05-24" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q14945542>
+  # Henry de Vere Vane, 9th Baron Barnard, 1854-05-10 – 1918-12-28
+  # oo Lady Catherine Sarah Cecil, 1861-04-08 - 1918-03-14
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q14945542> , <#Lady_Catherine_Sarah_Cecil> ;
+	gen:startDate "1881-06-28" .
+
+# --------
+<#Isabella_Maud_Joicey>
+  gen:name "Isabella Maud Joicey"@en ;
+  gen:deathDate "1949-11-18" ;
+  gen:father <#John_Joicey> .
+  # oo 1896-09-15 Lord John Pakenham Joicey-Cecil, 1867-03-03 - 1942-06-25, https://www.wikidata.org/wiki/Q6679448
+
+# --------
+<https://www.wikidata.org/wiki/Q26037164>
+  gen:name "William Thomas Orde-Powlett, 4th Baron Bolton of Bolton Castle"@en ;
+  gen:birthDate "1845-01-31" ;
+  gen:deathDate "1922-08-14" .
+  # oo Lady Algitha Frederica Mary Lumley, 1847-11-23 - 1919-06-22
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q26037164> , <#Lady_Algitha_Frederica_Lumley> ;
+	gen:startDate "1868-08-13" .
+
+<#Myra_Orde-Powlett>
+  gen:name "Hon. Myra Rowena Sibell Orde-Powlett"@en ;
+  gen:birthDate "1879-12-22" ;
+  gen:deathDate "1973-10-27" ;
+  gen:father <https://www.wikidata.org/wiki/Q26037164> ;
+  gen:mother <#Lady_Algitha_Frederica_Lumley> .
+  # oo 1901-04-16 William Thomas Brownlow Cecil, 5th Marquess of Exeter, 1876-10-27 - 1956-08-06, https://www.wikidata.org/wiki/Q8006654
+# ----
+<https://www.wikidata.org/wiki/Q26997638>
+  gen:name "Richard George Lumley, 9th Earl of Scarbrough"@en ;
+  gen:birthDate "1813-05-07" ;
+  gen:deathDate "1884-12-05" .
+  # oo Frederica Mary Adeliza Drummond, 1826-12-16 - 1907-04-02
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q26997638> , <drummond.ttl#Frederica_Mary_Adeliza_Drummond> ;
+	gen:startDate "1846-10-08" .
+
+<#Lady_Algitha_Frederica_Lumley>
+  gen:name "Lady Algitha Frederica Mary Lumley"@en ;
+  gen:birthDate "1847-11-23" ;
+  gen:deathDate "1919-06-22" ;
+  gen:father <https://www.wikidata.org/wiki/Q26997638> ;
+  gen:mother <drummond.ttl#Frederica_Mary_Adeliza_Drummond> .
+  # oo 1868-08-13 William Thomas Orde-Powlett, 4th Baron Bolton of Bolton Castle, 1845-01-31 - 1922-08-14, https://www.wikidata.org/wiki/Q26037164
+<#Lady_Lillian_Selina_Elizabeth_Lumley>
+  # Lady Lillian Selina Elizabeth Lumley, 1851 - 1943-12-24
+  gen:father <https://www.wikidata.org/wiki/Q26997638> ;
+  gen:mother <drummond.ttl#Frederica_Mary_Adeliza_Drummond> .
+  # oo 1871-08-03 Lawrence Dundas, 1st Marquess of Zetland, 1844-08-16 - 1929-03-11, https://www.wikidata.org/wiki/Q3828136
+<#Lady_Sibell_Mary_Lumley>
+  # Lady Sibell Mary Lumley, 1855-03-25 - 1929-02-04
+  gen:father <https://www.wikidata.org/wiki/Q26997638> ;
+  gen:mother <drummond.ttl#Frederica_Mary_Adeliza_Drummond> .
+  # oo 1874-11-03 Victor Alexander Grosvenor, Earl Grosvenor, 1853-04-28 - 1884-01-22, https://www.wikidata.org/wiki/Q7000535
+
+# ----
+#<#Sir_James_Stanhope_Cockburn_of_that_Ilk,_10th_Baronet>
+  # Sir James Stanhope Cockburn of that Ilk, 10th Baronet, 1867-11-11 – 1947-04-01
+  # son of Sir Edward Cludde Cockburn of that Ilk, 8th Baronet (1834-06-10 – 1903-12-24)
+  # and oo 1859-10-13 Mary Anne Frances Elliot (d. 1917-10-30, daughter of Robert Kerr Elliot)
+  # oo Ethel Frances Sophia Cecil, 1875 - 1953-05-20
+  []
+    gen:spouse <#Sir_James_Stanhope_Cockburn_of_that_Ilk,_10th_Baronet> , <#Ethel_Frances_Sophia_Cecil> ;
+	gen:startDate "1928-11-28" .
+
+# ----
+#<#Sir_Henry_Bromley,_5th_Baronet>
+  # Sir Henry Bromley, 5th Baronet, 1849-08-06 – 1905-03-11
+  # oo Adela Augusta Richards, d. 1936-09-23
+  []
+    gen:spouse <#Sir_Henry_Bromley,_5th_Baronet> , <#Adela_Augusta_Richards> ;
+	gen:startDate "1873-01-23" .
+
+<#Sir_Maurice_Bromley-Wilson,_7th_Baronet>
+  # Sir Maurice Bromley-Wilson, 7th Baronet, 1875-06-27 – 1957-11-07
+  gen:father <#Sir_Henry_Bromley,_5th_Baronet> ;
+  gen:mother <#Adela_Augusta_Richards> .
+  # oo Violet Dorothea Cecil, 1878 - 1953-02-02
+  []
+    gen:spouse <#Sir_Maurice_Bromley-Wilson,_7th_Baronet> , <#Violet_Dorothea_Cecil> ;
+	gen:startDate "1942-09-01" .
+# ----
+<#Adela_Augusta_Richards>
+  # Adela Augusta Richards, d. 1936-09-23
+  gen:father <#Westley_Richards> ;
+  gen:mother <fane.ttl#Emma_Fane> .
+  # oo 1873-01-23 Sir Henry Bromley, 5th Baronet, 1849-08-06 – 1905-03-11, #Sir_Henry_Bromley,_5th_Baronet
+
+# --------
+<#Hilda_Mary_Daubeny_Wemyss>
+  gen:name "Hilda Mary Daubeny Wemyss"@en ;
+  gen:deathDate "1939-07-13" ;
+  gen:father <#Francis_Charteris_Wemyss> ; # Francis Charteris Wemyss
+  gen:mother <#Louisa_Ann_Daubeny> . # oo 1865-05-20 Louisa Ann Daubeny (daughter of Joseph Walters Daubeny and Sarah Ann Savage Wait)
+  # oo 1901-12-12 Ean Francis Cecil, 1880-06-08 - 1942-02-22, #Ean_Francis_Cecil
+
+# ----
+#<https://www.wikidata.org/wiki/Q5078743>
+  # Charles Douglas Richard Hanbury-Tracy, 4th Baron Sudeley of Toddington, 1840-07-03 – 1922-12-09
+  # oo Ada Maria Katherine Tollemache, 1848-06-21 – 1928-01-06 (manners.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5078743> , <https://www.wikidata.org/wiki/Q27959813> ;
+	gen:startDate "1868-05-09" .
+
+<https://www.wikidata.org/wiki/Q27959835>
+  # William Charles Frederick Hanbury-Tracy, 5th Baron Sudeley of Toddington, 1870-04-19 – 1932-09-05
+  gen:father <https://www.wikidata.org/wiki/Q5078743> ;
+  gen:mother <https://www.wikidata.org/wiki/Q27959813> .
+  # oo Edith Celandine Cecil, 1886 - 1975
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q27959835> , <#Edith_Celandine_Cecil> ;
+	gen:startDate "1905-08-24" ;
+	gen:divorceDate "1922" .
+
+# --------
+<#Henry_Charles_Baggallay>
+  # Henry Charles Baggallay, d. 1863
+  gen:father <https://www.wikidata.org/wiki/Q7323902> .
+  # and Marianne Lacy
+  # oo Elizabeth Evelyn Richards, 1856~ - 1937, daughter of Alfred Richards
+  []
+    gen:spouse <#Henry_Charles_Baggallay> , <#Elizabeth_Evelyn_Richards> ;
+	gen:startDate "1882-01-07" .
+
+<#Gladys_Evelyn_Baggallay>
+  gen:name "Gladys Evelyn Baggallay"@en ;
+  gen:birthDate "1884-02-03" ;
+  gen:deathDate "1947-05-30" ;
+  gen:father <#Henry_Charles_Baggallay> ;
+  gen:mother <#Elizabeth_Evelyn_Richards> .
+  # oo 1910-04-14 William Amherst Cecil, 1886-06-30 - 1914-09-16, #William_Amherst_Cecil
+
+# --------
+<https://www.wikidata.org/wiki/Q2056147>
+  gen:name "George Washington Vanderbilt II"@en ;
+  gen:birthDate "1862-11-14" ;
+  gen:deathDate "1914-03-06" .
+  # oo Edith Stuyvesant Dresser, 1873-01-17 - 1958-12-21
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2056147> , <https://www.wikidata.org/wiki/Q1285182> ;
+	gen:startDate "1898-06-01" .
+
+<https://www.wikidata.org/wiki/Q5171182>
+  gen:name "Cornelia Stuyvesant Vanderbilt"@en ;
+  gen:birthDate "1900-08-22" ;
+  gen:deathDate "1976-02-07" ;
+  gen:father <https://www.wikidata.org/wiki/Q2056147> ;
+  gen:mother <https://www.wikidata.org/wiki/Q1285182> .
+  # oo 1924-04-29 (div 1934) John Francis Amherst Cecil, 1890-06-30 - 1954-10-22, https://www.wikidata.org/wiki/Q23305040
+# ----
+<#George_Warren_Dresser>
+  gen:name "George Warren Dresser"@en ;
+  gen:birthDate "1837" ;
+  gen:deathDate "1883" .
+  # oo Susan Fish Le Roy, 1834 - 1883
+
+<https://www.wikidata.org/wiki/Q1285182>
+  gen:name "Edith Stuyvesant Dresser"@en ;
+  gen:birthDate "1873-01-17" ;
+  gen:deathDate "1958-12-21" ;
+  gen:father <#George_Warren_Dresser> ;
+  gen:mother <#Susan_Fish_Le_Roy> .
+  # oo 1898-06-01 George Washington Vanderbilt II, 1862-11-14 - 1914-03-06
+
+# --------
+<https://www.wikidata.org/wiki/Q5447259>
+  gen:name "Fiennes Stanley Wykeham Cornwallis, 1st Baron Cornwallis"@en ;
+  # 1st Baron Cornwallis, of Linton, co. Kent 1927-01-31
+  gen:birthDate "1864-05-27" ;
+  gen:deathDate "1935-09-26" .
+  # oo Mabel Leigh, 1866~ - 1957-03-06, daughter of Oswald Peter Leigh
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5447259> , <#Mabel_Leigh> ;
+	gen:startDate "1886-02-10" .
+
+<#Yvonne_Cornwallis>
+  gen:name "Hon. Yvonne Cornwallis"@en ;
+  gen:birthDate "1896-01-13" ;
+  gen:deathDate "1983-06-30" ;
+  gen:father <https://www.wikidata.org/wiki/Q5447259> ;
+  gen:mother <#Mabel_Leigh> .
+  # oo 1923-01-27 Henry Mitford Amherst Cecil, 1893-03-09 - 1962-01-06, #Henry_Mitford_Amherst_Cecil
+
+# ----
+#<https://www.wikidata.org/wiki/Q6250569>
+  # Sir John Noble Kennedy, 1893-08-31 – 1970-06-15
+  # oo Isabella Rosamond Georgiana Joicey-Cecil, 1901-08-22 - 1941-09-22
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6250569> , <#Isabella_Rosamond_Georgiana_Joicey-Cecil> ;
+	gen:startDate "1926-09-21" .
+
+# ----
+<#Arnold_Henderson>
+  # Hon. Arnold Henderson, 1883-07-01 - 1933-03-12
+  gen:father <https://www.wikidata.org/wiki/Q4719112> .
+  # and Jane Ellen Davis
+  # oo Helen Madeline Gordon, d. 1961-05-02, daughter of General Evans Gordon
+  []
+    gen:spouse <#Arnold_Henderson> , <#Helen_Madeline_Gordon> ;
+	gen:startDate "1908-02-17" .
+
+<#Diana_Henderson>
+  # Diana Mary Henderson, 1911-01-10 - 1982-06-06
+  gen:father <#Arnold_Henderson> ;
+  gen:mother <#Helen_Madeline_Gordon> .
+  # oo 1946-12-12 David George Brownlow Cecil, 6th Marquess of Exeter, 1905-02-09 - 1981-10-22, https://www.wikidata.org/wiki/Q1628
+
+# --------
+<#Edith_Csanady_de_Telegd>
+  # Edith Csanady de Telegd, d. 1954-03-29
+  gen:father <#Aurél_Csanády> ; # Aurel Csanady de Telegd
+  gen:mother <#Matild_Kocsiss> .
+
+# ----
+#<https://www.wikidata.org/wiki/Q11802543>
+  # Henry Brassey, 1st Baron Brassey of Apethorpe, 1870-03-07 - 1958-10-22
+  # oo Lady Violet Mary Gordon-Lennox, 1874-01-15 - 1946-11-19
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q11802543> , <lennox.ttl#Lady_Violet_Mary_Gordon-Lennox> ;
+	gen:startDate "1894-06-30" .
+
+<#Peter_Esmé_Brassey>
+  # Hon. Peter Esmé Brassey, 1907-12-05 - 1995-03-14
+  gen:father <https://www.wikidata.org/wiki/Q11802543> ;
+  gen:mother <lennox.ttl#Lady_Violet_Mary_Gordon-Lennox> .
+  # oo Lady Romayne Elizabeth Algitha Cecil, 1915-03-22 - 2001-06-27
+  []
+    gen:spouse <#Peter_Esmé_Brassey> , <#Lady_Romayne_Elizabeth_Algitha_Brownlow-Cecil> ;
+	gen:startDate "1944-12-12" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q5548996>
+  # Gerald Shapland Carew, 5th Baron Carew, 1860-04-26 - 1927-10-03
+  # oo Catherine Conolly, 1871-10-20 - 1947-03-20, daughter of Thomas Conolly and Sarah Elizabeth Shaw
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5548996> , <#Catherine_Conolly> ;
+	gen:startDate "1904-04-21" .
+
+<#Gavin_George_Carew>
+  # Hon. Gavin George Carew, 1906-09-21 – 1997-10-11
+  gen:father <https://www.wikidata.org/wiki/Q5548996> ;
+  gen:mother <#Catherine_Conolly> .
+  # oo Aileen Hilda Frances Cecil, 1903-04-16 - 1974
+  []
+    gen:spouse <#Gavin_George_Carew> , <#Aileen_Hilda_Frances_Cecil> ;
+	gen:startDate "1932-04-30" .
+
+# --------
+<#James_Lauderdale_Gilbert_Burnett_of_Leys,_13th_Baronet>
+  gen:name "James Lauderdale Gilbert Burnett of Leys, 13th Baronet"@en ;
+  gen:birthDate "1880-04-01" ;
+  gen:deathDate "1953-08-13" .
+  # oo Sybil Aird Crozier Smith, d. 1960-04-06, daughter of William Crozier Smith
+  []
+    gen:spouse <#James_Lauderdale_Gilbert_Burnett_of_Leys,_13th_Baronet> , <#Sybil_Aird_Crozier_Smith> ;
+	gen:startDate "1913-07-10" .
+
+<#Elizabeth_Rohays_Mary_Burnett>
+  gen:birthDate "1916-08-30" ;
+  gen:deathDate "1993-05-17" ;
+  gen:father <#James_Lauderdale_Gilbert_Burnett_of_Leys,_13th_Baronet> ;
+  gen:mother <#Sybil_Aird_Crozier_Smith> .
+  # oo 1938-12-15 Hon. Henry Kerr Auchmuty Cecil, 1914-04-01 - 1942-12-02, #Henry_Kerr_Auchmuty_Cecil
+
+# --------
+<#Nancy_Owen>
+  gen:name "Nancy Owen"@en ;
+  gen:birthDate "1930-10-14" ;
+  gen:deathDate "2016-07-09" ;
+  gen:father <#Charles_Dexter_Owen,_Jr.> .
+  # oo 1955-04-30 George Henry Vanderbilt Cecil, b. 1925-02-27, https://www.wikidata.org/wiki/Q5540492
+
+# --------
+<#Mary_Lee_Ryan>
+  gen:name "Mary Lee Ryan"@en ;
+  gen:birthDate "1931-12-11" ;
+  gen:deathDate "2017-11-17" ;
+  gen:father <#John_J._Ryan,_Jr.> ;
+  gen:mother <#Marion_Norton_Lee> .
+  # oo 1957-10-05 William Amherst Vanderbilt Cecil, 1928-08-17 - 2017-10-31, https://www.wikidata.org/wiki/Q15081023
+
+# --------
+<#Robert_Edward_Barclay>
+  gen:name "Robert Edward Barclay of Mathers and Urie"@en ;
+  gen:birthDate "1906-08-12" ;
+  gen:deathDate "1959-03-26" .
+  # oo Nesta Anne Bury-Barry, 1909-10-02 - 2004-05-05
+  []
+    gen:spouse <#Robert_Edward_Barclay> , <#Nesta_Anne_Bury-Barry> ;
+	gen:startDate "1932-04-20" .
+
+<#Annette_Barclay>
+  gen:birthDate "1934" ;
+  gen:father <#Robert_Edward_Barclay> ;
+  gen:mother <#Nesta_Anne_Bury-Barry> .
+  # oo 1961-04-06 Sir Oswald Nigel Amherst Cecil, 1925-11-11 - 2017-03-10, https://www.wikidata.org/wiki/Q3341345
+
+# ----
+#<https://www.wikidata.org/wiki/Q11112644>
+  # John Vane, 11th Baron Barnard, 1923-09-21 - 2016-04-03
+  # oo Lady Davina Mary Cecil, b. 1931-06-29
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q11112644> , <#Lady_Davina_Mary_Cecil> ;
+	gen:startDate "1952-10-08" ;
+	gen:divorceDate "1992" .
+
+# ----
+#<#Sir_John_Duckett_Floyd,_6th_Baronet>
+  # Sir John Duckett Floyd, 6th Baronet, 1903-11-01 - 1975-04-01
+  # Sir Henry Robert Peel Floyd, 4th Baronet
+  # and oo Edith Anne Kincaid-Smith
+  # oo Jocelin Evadne Wyldbore-Smith, d. 1976-01-17, daughter of Sir Edmund Charles Wyldbore-Smith and Evadne Maude Kellett
+  []
+    gen:spouse <#Sir_John_Duckett_Floyd,_6th_Baronet> , <#Jocelin_Evadne_Wyldbore-Smith> ;
+	gen:startDate "1929-02-11" .
+
+<#Sir_Giles_Henry_Charles_Floyd,_7th_Baronet>
+  # Sir Giles Henry Charles Floyd, 7th Baronet, b. 1932-02-27
+  gen:father <#Sir_John_Duckett_Floyd,_6th_Baronet> ;
+  gen:mother <#Jocelin_Evadne_Wyldbore-Smith> .
+  # oo Lady Gillian Moyra Katherine Cecil, b. 1935-03-08
+  []
+    gen:spouse <#Sir_Giles_Henry_Charles_Floyd,_7th_Baronet> , <#Lady_Gillian_Moyra_Katherine_Cecil> ;
+	gen:startDate "1954-11-23" ;
+	gen:divorceDate "1978" .
+
+# --------
+<https://www.wikidata.org/wiki/Q7047130>
+  gen:name "Noel Murless"@en ;
+  gen:birthDate "1910-03-24" ;
+  gen:deathDate "1987-05-09" .
+
+<#Julie_Murless>
+  gen:name "Julie Murless"@en ;
+  gen:father <https://www.wikidata.org/wiki/Q7047130> .
+  # oo 1966-10-18 (div 1990) Sir Henry Richard Amherst Cecil, 1943-01-11 - 2013-06-11, https://www.wikidata.org/wiki/Q3132684
+
+# --------
+<https://www.wikidata.org/wiki/Q2423076>
+  gen:name "Thomas Corbett, 2nd Baron Rowallan"@en ;
+  gen:birthDate "1895-12-19" ;
+  gen:deathDate "1977-11-30" .
+  # oo Gwyn Mervyn Grimond
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2423076> , <#Gwyn_Mervyn_Grimond> ;
+	gen:startDate "1918-08-14" .
+
+<#Fiona_Elizabeth_Cameron_Corbett>
+  gen:name "Hon. Fiona Elizabeth Cameron Corbett"@en ;
+  gen:birthDate "1942-11-14" ;
+  gen:father <https://www.wikidata.org/wiki/Q2423076> ;
+  gen:mother <#Gwyn_Mervyn_Grimond> .
+  # oo 1966-08-06 (div 1972) David Henry Amherst Cecil, 1943-01-11 - 2000-11-09, #David_Henry_Amherst_Cecil
+
+# --------
+<#Vanessa_Josephine_Bronislawna_Gallica>
+  gen:name "Vanessa Josephine Bronislawna Gallica"@en ;
+  gen:father <#Captain_Wladyslaw_Gallica> .
+  # oo 1973-03-19 (div 1995) David Henry Amherst Cecil, 1943-01-11 - 2000-11-09, #David_Henry_Amherst_Cecil
+
+# --------
+<#Margaret_Eirene_Clifton_Brown>
+  gen:name "Margaret Eirene Clifton Brown"@en ;
+  gen:birthDate "1921-02-23" ;
+  gen:deathDate "2009-09-22" ;
+  gen:father <#Howard_Clifton_Brown> ; # Howard Clifton Brown
+  gen:mother <#Mary_Eirene_Hodges> . # Mary Eirene Hodges
+  # oo 1939-09-14 William Alexander Evering Cecil, 3rd Baron Amherst of Hackney, 1912-05-31 - 1980-07-22, https://www.wikidata.org/wiki/Q26723782
+
+# --------
+<#Elizabeth_Merriman>
+  # Elizabeth Merriman
+  gen:father <#Hugh_Humphrey_Merriman> . # Hugh Humphrey Merriman
+
+# --------
+<https://www.wikidata.org/wiki/Q6227624>
+  gen:name "John Henry Crichton, 4th Earl Erne of Crom Castle"@en ;
+  gen:birthDate "1839-10-16" ;
+  gen:deathDate "1914-12-02" .
+  # oo Lady Florence Mary Cole, d. 1924-03-23
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6227624> , <#Lady_Florence_Mary_Cole> ;
+	gen:startDate "1870-12-28" .
+
+<#Sir_George_Arthur_Charles_Crichton>
+  gen:name "Hon. Sir George Arthur Charles Crichton"@en ;
+  gen:birthDate "1874-09-06" ;
+  gen:deathDate "1952-03-05" ;
+  gen:father <https://www.wikidata.org/wiki/Q6227624> ;
+  gen:mother <#Lady_Florence_Mary_Cole> .
+  # oo Lady Mary Augusta Dawson, 1887-07-13 - 1961-07-23
+  []
+    gen:spouse <#Sir_George_Arthur_Charles_Crichton> , <#Lady_Mary_Augusta_Dawson> ;
+	gen:startDate "1913-06-12" .
+
+<#David_George_Crichton>
+  gen:name "David George Crichton"@en ;
+  gen:birthDate "1914-07-31" ;
+  gen:deathDate "1997-01-22" ;
+  gen:father <#Sir_George_Arthur_Charles_Crichton> ;
+  gen:mother <#Lady_Mary_Augusta_Dawson> .
+  # oo Joan Fenella Cleaver, d. 1992, daughter of Douglas Whyte Cleaver
+  []
+    gen:spouse <#David_George_Crichton> ,<#Joan_Fenella_Cleaver>  ;
+	gen:startDate "1941-08-09" .
+
+<#Fenella_Jane_Crichton>
+  gen:name "Fenella Jane Crichton"@en ;
+  gen:birthDate "1948-01-09" ;
+  gen:father <#David_George_Crichton> ;
+  gen:mother <#Joan_Fenella_Cleaver> .
+  # oo 1969-10-23 (div 1974) Hon. Anthony Henry Amherst Cecil, b. 1947-04-01 #Anthony_Henry_Amherst_Cecil
+# ----
+<https://www.wikidata.org/wiki/Q8006971>
+  gen:name "Rt. Hon. William Willoughby Cole, 3rd Earl of Enniskillen"@en ;
+  gen:birthDate "1807-01-25" ;
+  gen:deathDate "1886-11-21" .
+  # oo Jane Casamaijor, d. 1855-05-13, daughter of James A. Casamaijor
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8006971> , <#Jane_Casamaijor> ;
+	gen:startDate "1844-01-16" .
+
+<#Lady_Florence_Mary_Cole>
+  # Lady Florence Mary Cole, d. 1924-03-23
+  gen:father <https://www.wikidata.org/wiki/Q8006971> ;
+  gen:mother <#Jane_Casamaijor> .
+  # oo 1870-12-28 John Henry Crichton, 4th Earl Erne of Crom Castle, 1839-10-16 - 1914-12-02, https://www.wikidata.org/wiki/Q6227624
+# ----
+<#Lady_Mary_Augusta_Dawson>
+  # Lady Mary Augusta Dawson, 1887-07-13 - 1961-07-23
+  gen:father <https://www.wikidata.org/wiki/Q26220076> .
+  # and Julia Georgiana Sarah Wombwell
+  # oo 1913-06-12 Hon. Sir George Arthur Charles Crichton, 1874-09-06 - 1952-03-05, #Sir_George_Arthur_Charles_Crichton
+
+# --------
+<#Jane_Elizabeth_Holbrook>
+  # Jane Elizabeth Holbrook
+  gen:father <#Philip_Norman_Elston_Holbrook> .
+  # oo 1974-11-20 Hon. Anthony Henry Amherst Cecil, b. 1947-04-01 #Anthony_Henry_Amherst_Cecil
+
+# ----
+#<#Wilson_Peregrine_Nicholas_Crewdson>
+  # Wilson Peregrine Nicholas Crewdson, 1926 - 2014-01-05
+  # oo Hon. Lucy Clare Beckett, 1926-09-05 - 1999-05-13
+  []
+    gen:spouse <#Wilson_Peregrine_Nicholas_Crewdson> , <#Lucy_Clare_Beckett> ;
+	gen:startDate "1957-07-12" .
+
+<#Giles_Wilson_Mervyn_Crewdson>
+  # Giles Wilson Mervyn Crewdson, b. 1959-06-11
+  gen:father <#Wilson_Peregrine_Nicholas_Crewdson> ;
+  gen:mother <#Lucy_Clare_Beckett> .
+  # oo Hon. Aurelia Margaret Amherst Cecil, b. 1966-07-19
+  []
+    gen:spouse <#Giles_Wilson_Mervyn_Crewdson> , <#Aurelia_Margaret_Amherst_Cecil> ;
+	gen:startDate "1990" ;
+	gen:divorceDate "1993" .
+# ----
+<#Lucy_Clare_Beckett>
+  # Hon. Lucy Clare Beckett, 1926-09-05 - 1999-05-13
+  gen:father <https://www.wikidata.org/wiki/Q7287232> .
+  # and Mary Alice Archdale
+  # oo 1957-07-12 Wilson Peregrine Nicholas Crewdson, 1926 - 2014-01-05
+
+# --------
+<#Clare_D._Stephens>
+  gen:father <#Nicholas_Stephens> .
+
+# --------
+<https://www.wikidata.org/wiki/Q8005984>
+  gen:name "William Brooke, 10th Baron Cobham of Kent"@en ;
+  gen:birthDate "1527-11-01" ;
+  gen:deathDate "1597-03-06" .
+  # oo Frances Newton, 1539 - 1592-10-17
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8005984> , <https://www.wikidata.org/wiki/Q14949747> ;
+	gen:startDate "1560-02-25" .
+
+<#Elizabeth_Brooke>
+  gen:name "Hon. Elizabeth Brooke"@en ;
+  gen:birthDate "1562-01-12" ;
+  gen:deathDate "1597-01-24" ;
+  gen:father <https://www.wikidata.org/wiki/Q8005984> ;
+  gen:mother <https://www.wikidata.org/wiki/Q14949747> .
+  # oo 1589-08-31 Robert Cecil, 1st Earl of Salisbury, 1563-06-01~ - 1612-05-24, https://www.wikidata.org/wiki/Q704171
+<#Margaret_Brooke>
+  # Margaret Brooke, 1563-06-02 - 1621
+  gen:father <https://www.wikidata.org/wiki/Q8005984> ;
+  gen:mother <https://www.wikidata.org/wiki/Q14949747> .
+  # oo Thomas Sondes, 1544 – 1593, gower.ttl#Thomas_Sondes
+# --------
+<https://www.wikidata.org/wiki/Q14949747>
+  gen:name "Frances Newton"@en ;
+  gen:birthDate "1539" ;
+  gen:deathDate "1592-10-17" ;
+  gen:father <#Sir_John_Newton> ;
+  gen:mother <#Margaret_Poyntz> .
+  # oo 1560-02-25 William Brooke, 10th Baron Cobham of Kent, 1527-11-01 - 1597-03-06, https://www.wikidata.org/wiki/Q8005984
+
+# ----
+<https://www.wikidata.org/wiki/Q648968>
+  gen:name "Francis Clifford, 4th Earl of Cumberland"@en ;
+  gen:birthDate "1559" ;
+  gen:deathDate "1641-01-04" .
+  # oo 1589-03~ Grisold Hughes
+
+<https://www.wikidata.org/wiki/Q5719566>
+  gen:name "Henry Clifford, 5th Earl of Cumberland"@en ;
+  # 1st Lord Clifford 1628-02-17
+  # 5th Earl of Cumberland 1641-01-21
+  gen:birthDate "1591-02-28" ;
+  gen:deathDate "1643-12-11" ;
+  gen:father <https://www.wikidata.org/wiki/Q648968> ;
+  gen:mother <#Grisold_Hughes> .
+  # oo Lady Frances Cecil, 1593 - 1644-02-14
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5719566> , <#Lady_Frances_Cecil_(died_1644)> ;
+	gen:startDate "1610-07-25" .
+
+<https://www.wikidata.org/wiki/Q22998022>
+  # Elizabeth Clifford, 2nd Baroness Clifford (1613-09-18 - 1691-01-06
+  gen:father <https://www.wikidata.org/wiki/Q5719566> ;
+  gen:mother <#Lady_Frances_Cecil_(died_1644)> .
+  # oo 1635-07-05 Richard Boyle, 2nd Earl of Cork, 1612-10-20 – 1698-01-15, https://www.wikidata.org/wiki/Q5590389
+
+# --------
+<#Lady_Diana_Maxwell>
+  # Lady Diana Maxwell, 1619~ - 1675-06
+  gen:father <James_Maxwell,_1st_Earl_of_Dirletoun> . # James Maxwell, 1st Earl of Dirletoun (b. 1604b)
+  # and Elizabeth de Boussoyne
+  # oo 1639-04-02 Charles Cecil, Viscount Cranborne, 1619-07-15 - 1660-12, https://www.wikidata.org/wiki/Q3666359
+
+# --------
+#<https://www.wikidata.org/wiki/Q2158828>
+  # Robert Sydney, 1st Earl of Leicester. 1563-11-19 - 1626-07-13
+  # 1st Baron Sydney of Penshurst, co. Kent 1603-05-13
+  # 1st Viscount L'Isle 1605-05-04
+  # 1st Earl of Leicester 1618-08-02
+  # oo Barbara Gamage, 1562 - 1621-05, daughter of John Gamage and Wenllian verch Thomas
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2158828> , <https://www.wikidata.org/wiki/Q3634630> ;
+	gen:startDate "1584-09-23" .
+
+<https://www.wikidata.org/wiki/Q334620>
+  gen:name "Robert Sidney, 2nd Earl of Leicester"@en ;
+  gen:birthDate "1595-12-01" ;
+  gen:deathDate "1677-11-02" ;
+  gen:father <https://www.wikidata.org/wiki/Q2158828> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3634630> .
+  # oo Lady Dorothy Percy, 1598-08-20 - 1650-08-20
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q334620> , <https://www.wikidata.org/wiki/Q377337> ;
+	gen:startDate "1615-01~" .
+
+<https://www.wikidata.org/wiki/Q3714387>
+  # Lady Dorothy Sidney, 1617 - 1684-02-05
+  gen:father <https://www.wikidata.org/wiki/Q334620> ;
+  gen:mother <https://www.wikidata.org/wiki/Q377337> .
+  # oo 1639-07-20 Henry Spencer, 1st Earl of Sunderland, 1620-11-23 - 1643-09-20, https://www.wikidata.org/wiki/Q1622077
+<https://www.wikidata.org/wiki/Q3901475>
+  gen:name "Philip Sidney, 3rd Earl of Leicester"@en ;
+  gen:birthDate "1619-01-10" ;
+  gen:deathDate "1698-03-06" ;
+  gen:father <https://www.wikidata.org/wiki/Q334620> ;
+  gen:mother <https://www.wikidata.org/wiki/Q377337> .
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3901475> , <#Lady_Catherine_Cecil_(died_1652)> ;
+	gen:startDate "1645-05-19" .
+<#Lady_Lucy_Sydney>
+  # Lady Lucy Sydney, 1630 -  1685-10~
+  gen:father <https://www.wikidata.org/wiki/Q334620> ;
+  gen:mother <https://www.wikidata.org/wiki/Q377337> .
+  # oo 1647-01-20 Sir John Pelham, 3rd Baronet, 1627b - 1703-01~, https://www.wikidata.org/wiki/Q16845133
+
+<https://www.wikidata.org/wiki/Q3938422>
+  # Robert Sydney, 4th Earl of Leicester, 1649 – 1702-11-11
+  gen:father <https://www.wikidata.org/wiki/Q3901475> ;
+  gen:mother <#Lady_Catherine_Cecil_(died_1652)> .
+  # oo Lady Elizabeth Egerton, 1653-08-24 - 1709
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3938422> , <egerton.ttl#Lady_Elizabeth_Egerton_(died_1709)> ;
+	gen:startDate "1672" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q38807309>
+  # William Sandys, 6th Baron Sandys, d. 1668
+  # oo Lady Mary Cecil, 1631~ - 1676~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q38807309> , <#Lady_Mary_Cecil_(died_1676~)> .
+
+# ----
+<#Sir_William_Bowyer,_2nd_Baronet>
+  # Sir William Bowyer, 2nd Baronet, 1639~ - 1721/1722-02-13
+  gen:father <https://www.wikidata.org/wiki/Q7529510> .
+  # and Margaret Weld
+  # oo Lady Frances Cecil, 1649~ - 1723-06-15
+  []
+    gen:spouse <#Sir_William_Bowyer,_2nd_Baronet> , <#Lady_Frances_Cecil_(died_1723)> ;
+	gen:startDate "1679-12-24~" .
+
+# --------
+<#Frances_Bennett>
+  gen:name "Frances Bennett"@en ;
+  gen:birthDate "1670-10-20" ;
+  gen:deathDate "1713-07-08" ;
+  gen:father <#Simon_Bennett> ;
+  gen:mother <#Grace_Morehead> .
+  # oo 1683-07-13 James Cecil, 4th Earl of Salisbury, 1666-09-25b - 1694-10-24, https://www.wikidata.org/wiki/Q3806493
+
+# --------
+<#John_Stawell,_2nd_Baron_Stawell>
+  gen:name "John Stawell, 2nd Lord Stawell of Somerton"@en ;
+  gen:birthDate "1668~" ;
+  gen:deathDate "1692-11-30" ;
+  gen:father <https://www.wikidata.org/wiki/Q7288116> .
+  []
+    gen:spouse <#John_Stawell,_2nd_Baron_Stawell> , <https://www.wikidata.org/wiki/Q6759258> ;
+	gen:startDate "1691" .
+
+# --------
+<https://www.wikidata.org/wiki/Q7526873>
+  gen:name "Sir George Thomas Downing, 2nd Baronet"@en ;
+  gen:birthDate "1656~" ;
+  gen:deathDate "1711-06" .
+  # oo Lady Catherine Cecil, d. 1688-08-13
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7526873> , <#Lady_Catherine_Cecil_(died_1688)> ;
+	gen:startDate "1683-07-12" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q7529594>
+  # Sir William Forester, 1655-12-10 – 1718-02
+  # oo Lady Mary Cecil, d. 1740-03-29
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7529594> , <#Lady_Mary_Cecil_(died_1740)> ;
+	gen:startDate "1684" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q7528562>
+  # Sir Richard Corbet, 2nd Baronet, of Leighton, 1640 - 1683-08-01
+  # oo Victoria Uvedale, daughter of https://www.wikidata.org/wiki/Q8019635 and Victoria Price
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7528562> , <#Victoria_Uvedale> ;
+	gen:startDate "1662-01-05" .
+
+<#Sir_Uvedale_Corbet,_3rd_Baronet>
+  gen:name "Sir Uvedale Corbet, 3rd Baronet, of Leighton"@en ;
+  gen:birthDate "1668" ;
+  gen:deathDate "1701-10-15" ;
+  gen:father <https://www.wikidata.org/wiki/Q7528562> ;
+  gen:mother <#Victoria_Uvedale> .
+  # oo Lady Mildred Cecil, d. 1727-01-18
+  []
+    gen:spouse <#Sir_Uvedale_Corbet,_3rd_Baronet> , <#Lady_Mildred_Cecil> ;
+	gen:startDate "1693-08-14" .
+
+# ----
+<https://www.wikidata.org/wiki/Q25636603>
+  gen:name "Sir Charles Hotham, 4th Baronet" @en ;
+  gen:birthDate "1663~" ;
+  gen:deathDate "1723-01-08" .
+  # oo Lady Mildred Cecil, d. 1727-01-18
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q25636603> , <#Lady_Mildred_Cecil> ;
+	gen:startDate "1701a" .
+
+#<https://www.wikidata.org/wiki/Q21693205>
+  # Henry Frederick Hotham, 7th Baron Hotham of South Dalton, 1899-08-13 – 1967-11-18
+  # oo Lady Letitia Sibell Winifred Cecil, 1903-11-20 - 1992-07-21
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q21693205> , <#Lady_Letitia_Sibell_Winifred_Brownlow-Cecil> ;
+	gen:startDate "1937-12-16" .
+
+# --------
+#<https://www.wikidata.org/wiki/Q7528728>
+  # Sir Robert Brown, 1st Baronet, d. 1760-10-05
+  # oo Margaret Cecil, 1698 - 1782-02-13
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7528728> , <https://www.wikidata.org/wiki/Q16205613> .
+
+# --------
+<#Elizabeth_Keat>
+  gen:name "Elizabeth Keat"@en ;
+  gen:birthDate "1721~" ;
+  gen:deathDate "1776-02-03" ;
+  gen:father <#Edward_Keat> .
+  # oo 1745-01-28 James Cecil, 6th Earl of Salisbury, 1713-10-20 - 1780-09-19, https://www.wikidata.org/wiki/Q3806495
+
+# --------
+<https://www.wikidata.org/wiki/Q3182281>
+  gen:name "John Perceval, 1st Earl of Egmont"@en ;
+  gen:birthDate "1683-07-12" ;
+  gen:deathDate "1748-05-01" .
+  # oo Catherine Parker, 1690 – 1749
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3182281> , <#Catherine_Parker> ;
+	gen:startDate "1710-06-20" .
+
+<https://www.wikidata.org/wiki/Q1748680>
+  gen:name "John Perceval, 2nd Earl of Egmont"@en ;
+  gen:birthDate "1711-02-25" ;
+  gen:deathDate "1770-12-04" ;
+  gen:father <https://www.wikidata.org/wiki/Q3182281> ;
+  gen:mother <#Catherine_Parker> .
+  # oo Lady Catherine Cecil, 1719-08-15 - 1752-08-16
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1748680> , <#Lady_Catherine_Cecil_(died_1752)> ;
+	gen:startDate "1737-02-15" .
+  # oo Catherine Compton, 1st Baroness Arden, 1731-06-04 - 1784-06-11
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1748680> , <cavendish.ttl#Catherine_Compton,_1st_Baroness_Arden> ;
+	gen:startDate "1756-01-26" .
+<#Lady_Helena_Perceval>
+  # Lady Helena Perceval, d. 1746-06-11
+  gen:father <https://www.wikidata.org/wiki/Q3182281> ;
+  gen:mother <#Catherine_Parker> .
+  # oo 1741-11-10 John Rawdon, 1st Earl of Moira, 1720-03-17 - 1793-06-20, https://www.wikidata.org/wiki/Q6254308
+
+<#Lady_Mary_Perceval>
+  gen:name "Lady Mary Perceval"@en ;
+  gen:deathDate "1839-09-18" ;
+  gen:father <https://www.wikidata.org/wiki/Q1748680> ;
+  gen:mother <cavendish.ttl#Catherine_Compton,_1st_Baroness_Arden> .
+  # oo 1781-04-02 Andrew Berkeley Drummond, of Cadland, 1755-09-11 - 1833-12-27, drummond.ttl#Andrew_Berkeley_Drummond
+# ----
+<https://www.wikidata.org/wiki/Q7528489>
+  gen:name "Sir Philip Parker, 1st Baronet"@en ;
+  gen:birthDate "1625~" ;
+  gen:deathDate "1690-03" .
+
+<#Sir_Philip_Parker,_2nd_Baronet>
+  gen:name "Sir Philip Parker, 2nd Baronet"@en ;
+  gen:birthDate "1650~" ;
+  gen:deathDate "1698~" ;
+  gen:father <https://www.wikidata.org/wiki/Q7528489> .
+  # oo Mary Fortrey, daughter of https://www.wikidata.org/wiki/Q7411399
+  []
+    gen:spouse <#Sir_Philip_Parker,_2nd_Baronet> , <#Mary_Fortrey> ;
+	gen:startDate "1680-03-12" .
+
+<#Catherine_Parker>
+  # Catherine Parker, 1690 – 1749
+  gen:father <#Sir_Philip_Parker,_2nd_Baronet> ;
+  gen:mother <#Mary_Fortrey> .
+  # oo 1710-06-20 John Perceval, 1st Earl of Egmont, 1683-07-12 - 1748-05-01, https://www.wikidata.org/wiki/Q3182281
+# ----
+<#Mary_Fortrey>
+  # Mary Fortrey
+  gen:father <https://www.wikidata.org/wiki/Q7411399> .
+
+# ----
+<https://www.wikidata.org/wiki/Q5542945>
+  gen:name "George Frederick Nugent, 7th Earl of Westmeath"@en ;
+  gen:birthDate "1760-11-18" ;
+  gen:deathDate "1814-12-30" .
+  # oo Marianne Jefferyes
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5542945> , <#Marianne_Jefferyes> ;
+	gen:startDate "1784-04-27" ;
+	gen:divorceDate "1796" .
+
+<https://www.wikidata.org/wiki/Q5542944>
+  gen:name "George Thomas John Nugent, 1st and last Marquess of Westmeath"@en ;
+  gen:birthDate "1785-07-17" ;
+  gen:deathDate "1871-05-05" ;
+  gen:father <https://www.wikidata.org/wiki/Q5542945> ;
+  gen:mother <#Marianne_Jefferyes> .
+  # oo Lady Emily Anne Bennet Elizabeth Cecil, 1789-07-14 - 1848-01-21
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5542944> , <https://www.wikidata.org/wiki/Q3724557> ;
+	gen:startDate "1812-05-29" .
+# ----
+<#Marianne_Jefferyes>
+  gen:name "Marianne Jefferyes"@en ;
+  gen:deathDate "1871-05-05" ;
+  gen:father <#Major_James_St._John_Jefferyes> ;
+  gen:mother <#Arabella_Fitzgibbon> .
+  # oo 1784-04-27 (div 1796) George Frederick Nugent, 7th Earl of Westmeath, 1760-11-18 - 1814-12-30, https://www.wikidata.org/wiki/Q5542945
+
+# --------
+<https://www.wikidata.org/wiki/Q4853353>
+  gen:name "Bamber Gascoyne, elder"@en ;
+  gen:birthDate "1725-02" ;
+  gen:deathDate "1791-10-27" .
+  # oo Mary Greene, 1729 - 1799-05-08, daughter of Isaac Greene
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4853353> , <#Mary_Green> ;
+	gen:startDate "1757-01-24" .
+
+<https://www.wikidata.org/wiki/Q4853354>
+  gen:name "Bamber Gascoyne, younger"@en ;
+  gen:birthDate "1757-11-26" ;
+  gen:deathDate "1824-01-17" ;
+  gen:father <https://www.wikidata.org/wiki/Q4853353> ;
+  gen:mother <#Mary_Green> .
+  # oo Sarah Bridget Frances Price, b. 1767, daughter of Chase Price and Susan Glanvile
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4853354> , <#Sarah_Bridget_Frances_Price> ;
+	gen:startDate "1794-07-24" .
+
+<#Frances_Mary_Gascoyne>
+  gen:name "Frances Mary Gascoyne"@en ;
+  gen:birthDate "1802-01-25" ;
+  gen:deathDate "1839-10-15" ;
+  gen:father <https://www.wikidata.org/wiki/Q4853354> ;
+  gen:mother <#Sarah_Bridget_Frances_Price> .
+  # oo 1821-02-02 James Brownlow William Gascoyne-Cecil, 2nd Marquess of Salisbury, 1791-04-17 - 1868-04-12, https://www.wikidata.org/wiki/Q2479905
+
+# --------
+<https://www.wikidata.org/wiki/Q7614222>
+  gen:name "George John Sackville-West, 5th Earl de la Warr"@en ;
+  gen:birthDate "1791-10-26" ;
+  gen:deathDate "1869-02-23" .
+  # oo Elizabeth Sackville-West, 1st Baroness Buckhurst of Buckhurst, 1795-08-11 - 1870-01-09
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7614222> , <https://www.wikidata.org/wiki/Q5363467> ;
+	gen:startDate "1813-06-21" .
+
+<https://www.wikidata.org/wiki/Q1252298>
+  # Lady Elizabeth Sackville-West, 1818-09-23 - 1897-04-22
+  gen:father <https://www.wikidata.org/wiki/Q7614222> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5363467> .
+  # oo 1844-01-18 Francis Charles Hastings Russell, 9th Duke of Bedford, 1819-10-16 - 1891-01-14, https://www.wikidata.org/wiki/Q31178
+<https://www.wikidata.org/wiki/Q18648958>
+  gen:name "Lady Mary Catherine Sackville-West"@en ;
+  gen:birthDate "1824-07-23" ;
+  gen:deathDate "1900-12-06" ;
+  gen:father <https://www.wikidata.org/wiki/Q7614222> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5363467> .
+  # oo 1847-04-29 James Brownlow William Gascoyne-Cecil, 2nd Marquess of Salisbury, 1791-04-17 - 1868-04-12, https://www.wikidata.org/wiki/Q2479905
+  # oo 1870-07-05 Edward Henry Stanley, 15th Earl of Derby, 1826-07-21 - 1893-04-21, https://www.wikidata.org/wiki/Q332789
+<#Lady_Arabella_Diana_Sackville-West>
+  # Lady Arabella Diana Sackville-West, 1835-01-10 - 1869-02-10
+  gen:father <https://www.wikidata.org/wiki/Q7614222> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5363467> .
+  # oo 1860-09-25 Sir Alexander Bannerman of Elsick, 9th Baronet, 1823-04-06 - 1877-04-21, https://www.wikidata.org/wiki/Q50847340
+# ----
+<https://www.wikidata.org/wiki/Q1453083>
+  gen:name "John Frederick Sackville, 3rd Duke of Dorset"@en ;
+  gen:birthDate "1745-03-24" ;
+  gen:deathDate "1799-07-19" .
+  # oo Arabella Diana Cope, 1769 - 1825-08-01
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1453083> , <brudenell.ttl#Arabella_Diana_Cope> ;
+	gen:startDate "1790-01-04" .
+
+<https://www.wikidata.org/wiki/Q5363467>
+  gen:name "Elizabeth Sackville-West, 1st Baroness Buckhurst of Buckhurst"@en ;
+  # 1st Baroness Buckhurst of Buckhurst, co. Sussex 1864-04-27, suo jure
+  gen:birthDate "1795-08-11" ;
+  gen:deathDate "1870-01-09" ;
+  gen:father <https://www.wikidata.org/wiki/Q1453083> ;
+  gen:mother <brudenell.ttl#Arabella_Diana_Cope> .
+  # oo 1813-06-21 George John Sackville-West, 5th Earl de la Warr, 1791-10-26 - 1869-02-23, https://www.wikidata.org/wiki/Q7614222
+
+# ----
+<https://www.wikidata.org/wiki/Q1308730>
+  gen:name "Thomas Hope"@en ;
+  gen:birthDate "1769-08-30" ;
+  gen:deathDate "1830/1831-02-03" ;
+  gen:father <https://www.wikidata.org/wiki/Q2778750> .
+  # oo 1806-04-10 Hon. Louisa de la Poer Beresford, d. 1851-07-21
+
+<https://www.wikidata.org/wiki/Q62127106>
+  # Adrian John Hope, 1811-11-28 - 1863-12-18
+  gen:father <https://www.wikidata.org/wiki/Q1308730> ;
+  gen:mother <https://www.wikidata.org/wiki/Q62383951> .
+  # oo Emilie Mélanie Mathilde Rapp, 1817 - 1899
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q62127106> , <#Emilie_Mélanie_Mathilde_Rapp> .
+<https://www.wikidata.org/wiki/Q1739864>
+  gen:name "Sir Alexander James Beresford Beresford-Hope"@en ;
+  gen:birthDate "1820-01-25" ;
+  gen:deathDate "1887-10-20" ;
+  gen:father <https://www.wikidata.org/wiki/Q1308730> ;
+  gen:mother <https://www.wikidata.org/wiki/Q62383951> .
+  # oo Lady Mildred Arabella Charlotte Gascoyne-Cecil, 1822-10-21 - 1881-03-18
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1739864> , <#Lady_Mildred_Arabella_Charlotte_Gascoyne-Cecil> ;
+	gen:startDate "1842-07-07" .
+
+<#Louisa_Albertina_Hope>
+  # Louisa Albertina Hope
+  gen:father <https://www.wikidata.org/wiki/Q62127106> ;
+  gen:mother <#Emilie_Mélanie_Mathilde_Rapp> .
+  # oo 1858-09-29 (div 1872) Hon. Swynfen Thomas Carnegie, 1813-03-08 – 1879-11-20, https://www.wikidata.org/wiki/Q7659383
+# ----
+<https://www.wikidata.org/wiki/Q886223>
+  gen:name "Marcus Beresford, 1st Earl of Tyrone"@en ;
+  gen:birthDate "1694-07-16" ;
+  gen:deathDate "1763-04-04" .
+  # oo Catherine Power, Baroness la Poer, 1701-11-29 - 1769-07-27
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q886223> , <#Catherine_Power,_Baroness_la_Poer> ;
+	gen:startDate "1717-07-18" .
+
+<https://www.wikidata.org/wiki/Q16157445>
+  gen:name "William Beresford, 1st Baron Decies"@en ;
+  gen:birthDate "1743-04-16" ;
+  gen:deathDate "1819-09-06" ;
+  gen:father <https://www.wikidata.org/wiki/Q886223> ;
+  gen:mother <#Catherine_Power,_Baroness_la_Poer> .
+
+<https://www.wikidata.org/wiki/Q62383951>
+  gen:name "Hon. Louisa de la Poer Beresford"@en ;
+  gen:deathDate "1851-07-21" ;
+  gen:father <https://www.wikidata.org/wiki/Q16157445> .
+  # oo 1806-04-10 Thomas Hope, 1769-08-30 - 1830/1831-02-03, https://www.wikidata.org/wiki/Q1308730
+# ----
+<#James_Power,_3rd_Earl_of_Tyrone>
+  gen:name "James Power, 3rd Earl of Tyrone"@en ;
+  gen:birthDate "1667" ;
+  gen:deathDate "1704-08-19" .
+  # oo Anne Rickards
+  []
+    gen:spouse <#James_Power,_3rd_Earl_of_Tyrone> , <#Anne_Rickards> ;
+	gen:startDate "1692-12-13" .
+
+<#Catherine_Power,_Baroness_la_Poer>
+  gen:name "Catherine Power, Baroness la Poer"@en ;
+  gen:birthDate "1701-11-29" ;
+  gen:deathDate "1769-07-27" ;
+  gen:father <#James_Power,_3rd_Earl_of_Tyrone> ;
+  gen:mother <#Anne_Rickards> .
+  # oo 1717-07-18 Marcus Beresford, 1st Earl of Tyrone, 1694-07-16 - 1763-04-04, https://www.wikidata.org/wiki/Q886223
+# ----
+<#Emilie_Mélanie_Mathilde_Rapp>
+  # Emilie Mélanie Mathilde Rapp, 1817 - 1899
+  gen:father <https://www.wikidata.org/wiki/Q1351171> .
+  # and Albertine Charlotte Freiin von Rotberg
+  # oo Adrian John Hope, 1811-11-28 - 1863-12-18, https://www.wikidata.org/wiki/Q62127106
+
+# --------
+<https://www.wikidata.org/wiki/Q17308768>
+  gen:name "James Balfour"@en ;
+  gen:birthDate "1775~" ;
+  gen:deathDate "1845-04-19" .
+  # oo Lady Eleanor Maitland, 1790-10-03 - 1869-05-23
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q17308768> , <#Lady_Eleanor_Maitland> ;
+	gen:startDate "1815-01-19" .
+
+<https://www.wikidata.org/wiki/Q6138831>
+  gen:name "James Maitland Balfour"@en ;
+  gen:birthDate "1820-01-05" ;
+  gen:deathDate "1856-02-23" ;
+  gen:father <https://www.wikidata.org/wiki/Q17308768> ;
+  gen:mother <#Lady_Eleanor_Maitland> .
+  # oo 1843-08-15 
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6138831> , <#Lady_Blanche_Gascoyne-Cecil> ;
+	gen:startDate "1843-08-15" .
+# ----
+<https://www.wikidata.org/wiki/Q333300>
+  gen:name "James Maitland, 8th Earl of Lauderdale"@en ;
+  gen:birthDate "1759-01-26" ;
+  gen:deathDate "1839-09-10" .
+  # oo Eleanor Todd, 1762 - 1856-09-16
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q333300> , <#Eleanor_Todd> ;
+	gen:startDate "1782-08-15" .
+
+<#Lady_Eleanor_Maitland>
+  gen:name "Lady Eleanor Maitland"@en ;
+  gen:birthDate "1790-10-03" ;
+  gen:deathDate "1869-05-23" ;
+  gen:father <https://www.wikidata.org/wiki/Q333300> ;
+  gen:mother <#Eleanor_Todd> .
+  # oo 1815-01-19 James Balfour, 1775~ - 1845-04-19, https://www.wikidata.org/wiki/Q17308768
+<#Lady_Mary_Maitland>
+  # Lady Mary Maitland, d. 1877-11-08
+  gen:father <https://www.wikidata.org/wiki/Q333300> ;
+  gen:mother <#Eleanor_Todd> .
+  # oo 1819-09-03 Edward Stanley, of Cross Hall, 1789~ - 1870-03-08, stanley.ttl#Edward_Stanley,_of_Cross_Hall
+# ----
+<#Eleanor_Todd>
+  gen:name "Eleanor Todd"@en ;
+  gen:birthDate "1762" ;
+  gen:deathDate "1856-09-16" .
+  # oo 1782-08-15 James Maitland, 8th Earl of Lauderdale, 1759-01-26 - 1839-09-10, https://www.wikidata.org/wiki/Q333300
+
+# --------
+<https://www.wikidata.org/wiki/Q5343278>
+  gen:name "Sir Edward Hall Alderson"@en ;
+  gen:birthDate "1787-09-11b" ;
+  gen:deathDate "1857-01-27" .
+  # oo Georgina Drewe, d. 1871
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5343278> , <#Georgina_Drewe> ;
+	gen:startDate "1823-10-26" .
+
+<https://www.wikidata.org/wiki/Q5548243>
+  gen:name "Georgina Alderson"@en ;
+  gen:birthDate "1827" ;
+  gen:deathDate "1899-11-20" ;
+  gen:father <https://www.wikidata.org/wiki/Q5343278> ;
+  gen:mother <#Georgina_Drewe> .
+  # oo 1857-07-11 Robert Arthur Talbot Gascoyne-Cecil, 3rd Marquess of Salisbury, 1830-02-03 - 1903-08-22, https://www.wikidata.org/wiki/Q243705
+# ----
+<#Georgina_Drewe>
+  gen:name "Georgina Drewe"@en ;
+  gen:deathDate "1871" .
+  # oo 1823-10-26 Sir Edward Hall Alderson, 1787-09-11b - 1857-01-27, https://www.wikidata.org/wiki/Q5343278
+
+# --------
+<#Elizabeth_Ann_Wilson>
+  gen:name "Elizabeth Ann Wilson"@en ;
+  gen:deathDate "1901-10-11" ;
+  gen:father <#Joseph_Wilson> .
+  # oo 1874-01-08 Lord Arthur Gascoyne-Cecil, 1851-07-03 - 1913-07-16, #Lord_Arthur_Gascoyne-Cecil
+
+# --------
+<#Frederica_von_Klenck>
+  gen:name "Frederica von Klenck"@en ;
+  gen:deathDate "1941-03-17" ;
+  gen:father <#Otto_Baron_von_Klenck> .
+  # oo 1902-11-04 Lord Arthur Gascoyne-Cecil, 1851-07-03 - 1913-07-16, #Lord_Arthur_Gascoyne-Cecil
+
+# --------
+<https://www.wikidata.org/wiki/Q333413>
+  gen:name "Roundell Palmer, 1st Earl of Selborne"@en ;
+  gen:birthDate "1812-11-27" ;
+  gen:deathDate "1895-05-04" .
+  # oo Lady Laura Waldegrave, d. 1885-04-10
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q333413> , <waldegrave.ttl#Lady_Laura_Waldegrave> ;
+	gen:startDate "1848-04-10" .
+
+<https://www.wikidata.org/wiki/Q3643409>
+  gen:name "William Waldegrave Palmer, 2nd Earl of Selborne"@en ;
+  gen:birthDate "1859-10-17" ;
+  gen:deathDate "1942-02-26" ;
+  gen:father <https://www.wikidata.org/wiki/Q333413> ;
+  gen:mother <waldegrave.ttl#Lady_Laura_Waldegrave> .
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3643409> , <https://www.wikidata.org/wiki/Q19887415> ;
+	gen:startDate "1883-10-27" .
+
+<#Lady_Mabel_Laura_Georgiana_Palmer>
+  # Lady Mabel Laura Georgiana Palmer, 1884-10-06 - 1958-07-15
+  gen:father <https://www.wikidata.org/wiki/Q3643409> ;
+  gen:mother <https://www.wikidata.org/wiki/Q19887415> .
+  # oo 1906-06-16 Charles Robert Grey, 5th Earl Grey, 1879-12-15 - 1963-04-02, https://www.wikidata.org/wiki/Q1064624
+# ----
+#<https://www.wikidata.org/wiki/Q8019890>
+  # William Waldegrave, 8th Earl Waldegrave, 1788-10-27 – 1859-10-24
+
+<waldegrave.ttl#Lady_Laura_Waldegrave>
+  # Lady Laura Waldegrave, d. 1885-04-10
+  gen:father <https://www.wikidata.org/wiki/Q8019890> .
+  # oo 1848-04-10 Roundell Palmer, 1st Earl of Selborne, 1812-11-27 - 1895-05-04, https://www.wikidata.org/wiki/Q333413
+
+# --------
+<#Lady_Elizabeth_Gore>
+  # Lady Elizabeth Gore
+  gen:father <https://www.wikidata.org/wiki/Q4798849> .
+  # and Jane Saunders
+  # oo 1764-07-15 Sir John Evans-Freke, 1st Baronet, d. 1777-03-20, #Sir_John_Evans-Freke,_1st_Baronet
+
+<https://www.wikidata.org/wiki/Q4798856>
+  gen:name "Arthur Saunders William Charles Fox Gore, 5th Earl of Arran of the Arran Islands"@en ;
+  gen:birthDate "1839-01-06" ;
+  gen:deathDate "1901-03-14" .
+  # oo Hon. Edith Elizabeth Henrietta Jocelyn, 1845-02-10 - 1871-10-03
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4798856> , <#Edith_Elizabeth_Henrietta_Jocelyn> ;
+	gen:startDate "1865-02-21" .
+
+<https://www.wikidata.org/wiki/Q3676378>
+  gen:name "Lady Cicely Alice Gore"@en ;
+  gen:birthDate "1867-07-15" ;
+  gen:deathDate "1955-02-05" ;
+  gen:father <https://www.wikidata.org/wiki/Q4798856> ;
+  gen:mother <#Edith_Elizabeth_Henrietta_Jocelyn> .
+  # oo 1887-05-17 James Edward Hubert Gascoyne-Cecil, 4th Marquess of Salisbury, 1861-10-23 - 1947-04-04, https://www.wikidata.org/wiki/Q4381482
+# ----
+<https://www.wikidata.org/wiki/Q7346117>
+  gen:name "Robert Jocelyn, Viscount Jocelyn"@en ;
+  gen:birthDate "1816-02-20" ;
+  gen:deathDate "1854-08-12" .
+  # oo Lady Frances Elizabeth Cowper, 1820 - 1880-03-26
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7346117> , <https://www.wikidata.org/wiki/Q1651729> ;
+	gen:startDate "1841" .
+
+<#Edith_Elizabeth_Henrietta_Jocelyn>
+  gen:name "Hon. Edith Elizabeth Henrietta Jocelyn"@en ;
+  gen:birthDate "1845-02-10" ;
+  gen:deathDate "1871-10-03" ;
+  gen:father <https://www.wikidata.org/wiki/Q7346117> ;
+  gen:mother <https://www.wikidata.org/wiki/Q1651729> .
+  # oo 1865-02-21 Arthur Gore, 5th Earl of Arran of the Arran Islands, 1839-01-06 - 1901-03-14, https://www.wikidata.org/wiki/Q4798856
+# ----
+<https://www.wikidata.org/wiki/Q21165183>
+  gen:name "Peter Leopold Louis Francis Nassau Clavering-Cowper, 5th Earl Cowper"@en ;
+  gen:birthDate "1778-05-06" ;
+  gen:deathDate "1837-07-21" .
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q21165183> , <https://www.wikidata.org/wiki/Q5372252> .
+
+<https://www.wikidata.org/wiki/Q1651729>
+  gen:name "Lady Frances Elizabeth Cowper"@en ;
+  gen:birthDate "1820" ;
+  gen:deathDate "1880-03-26" ;
+  gen:father <https://www.wikidata.org/wiki/Q21165183> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5372252> .
+  # oo 1841 Robert Jocelyn, Viscount Jocelyn, 1816-02-20 - 1854-08-12, https://www.wikidata.org/wiki/Q7346117
+
+# --------
+<https://www.wikidata.org/wiki/Q5341949>
+  gen:name "Edward Bootle-Wilbraham, 1st Earl of Lathom"@en ;
+  gen:birthDate "1837-12-12" ;
+  gen:deathDate "1898-11-19" .
+  # oo Lady Alice Villiers, 1841-09-17 - 1897-11-23
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5341949> , <villiers.ttl#Lady_Alice_Villiers> ;
+	gen:startDate "1860-08-16" .
+
+<#Lady_Florence_Mary_Bootle-Wilbraham>
+  gen:name "Lady Florence Mary Bootle-Wilbraham"@en ;
+  gen:deathDate "1944-03-17" ;
+  gen:father <https://www.wikidata.org/wiki/Q5341949> ;
+  gen:mother <villiers.ttl#Lady_Alice_Villiers> .
+  # oo 1887-08-16 Rt. Rev. Lord William Cecil, 1863-03-09 - 1936-06-23, https://www.wikidata.org/wiki/Q6680022
+
+# --------
+<https://www.wikidata.org/wiki/Q5541508>
+  gen:name "George Frederick _D'Arcy_ Lambton, 2nd Earl of Durham"@en ;
+  gen:birthDate "1828-09-05" ;
+  gen:deathDate "1879-11-27" ;
+  gen:father <https://www.wikidata.org/wiki/Q336437> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5785109> .
+  # oo Lady Beatrix Frances Hamilton, 1835-07-21 - 1871-01-21
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5541508> , <hamilton.ttl#Lady_Beatrix_Frances_Hamilton> ;
+	gen:startDate "1854-05-23" .
+
+<#Lady_Katherine_Frances_Lambton>
+  gen:name "Lady Katherine Frances Lambton"@en ;
+  gen:birthDate "1862-09-05" ;
+  gen:deathDate "1952-12-06" ;
+  gen:father <https://www.wikidata.org/wiki/Q5541508> ;
+  gen:mother <hamilton.ttl#Lady_Beatrix_Frances_Hamilton> .
+  # oo 1884-02-13 George Godolphin Osborne, 10th Duke of Leeds, 1862-09-18 - 1927-05-10, https://www.wikidata.org/wiki/Q1508011
+<#Lady_Eleanor_Lambton>
+  gen:name "Lady Eleanor Lambton"@en ;
+  gen:birthDate "1868" ;
+  gen:deathDate "1959-04-24" ;
+  gen:father <https://www.wikidata.org/wiki/Q5541508> ;
+  gen:mother <hamilton.ttl#Lady_Beatrix_Frances_Hamilton> .
+  # oo 1889-01-22 Robert Gascoyne-Cecil, 1st Viscount Cecil of Chelwood, 1864-09-14 - 1958-11-24, https://www.wikidata.org/wiki/Q12702
+
+# --------
+<https://www.wikidata.org/wiki/Q16855600>
+  gen:name "Frederick Augustus Maxse" @en ;
+  gen:birthDate "1833-04-13" ;
+  gen:deathDate "1900-06-25" .
+  # oo Cecilia Steel, 1842-12-07 - 1918-02-07, daughter of James Steel and Adelaide Charlotte Christina Tremamondo
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16855600> , <#Cecilia_Steel> ;
+	gen:startDate "1862-03" .
+
+<https://www.wikidata.org/wiki/Q7933266>
+  gen:name "Violet Georgina Maxse"@en ;
+  gen:birthDate "1872" ;
+  gen:deathDate "1958-10-10" ;
+  gen:father <https://www.wikidata.org/wiki/Q16855600> ;
+  gen:mother <#Cecilia_Steel> .
+  # oo 1894-06-18 Lord Edward Herbert Gascoyne-Cecil, 1867-07-12 - 1918-12-13, https://www.wikidata.org/wiki/Q6679208
+
+# --------
+<https://www.wikidata.org/wiki/Q2908365>
+  gen:name "William George Arthur Ormsby-Gore, 4th Lord Harlech"@en ;
+  gen:birthDate "1885-04-11" ;
+  gen:deathDate "1964-20-14" .
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2908365> , <https://www.wikidata.org/wiki/Q3637270> ;
+	gen:startDate "1913-04-12" .
+
+# --------
+<https://www.wikidata.org/wiki/Q2239423>
+  gen:name "Sir Charles Otto Desmond MacCarthy"@en ;
+  gen:birthDate "1877-05-20" ;
+  gen:deathDate "1952-06-07" .
+  # oo Mary Warre-Cornish, 1882-08 - 1953-12-29
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2239423> , <https://www.wikidata.org/wiki/Q388781> ;
+	gen:startDate "1906" .
+
+<#Rachel_MacCarthy>
+  gen:name "Rachel MacCarthy"@en ;
+  gen:deathDate "1982-07-29" ;
+  gen:father <https://www.wikidata.org/wiki/Q2239423> ;
+  gen:mother <https://www.wikidata.org/wiki/Q388781> .
+  # oo 1932-10-13 Lord David Cecil, 1902-04-09 - 1986-01-01, https://www.wikidata.org/wiki/Q523064
+# ----
+<https://www.wikidata.org/wiki/Q5482703>
+  gen:name "Francis Warre-Cornish"@en ;
+  gen:birthDate "1839-05-08" ;
+  gen:deathDate "1916" .
+  # oo Blanche Ritchie
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5482703> , <https://www.wikidata.org/wiki/Q17986666> .
+
+<https://www.wikidata.org/wiki/Q388781>
+  gen:name "Mary Warre-Cornish"@en ;
+  gen:birthDate "1882-08" ;
+  gen:deathDate "1953-12-29" ;
+  gen:father <https://www.wikidata.org/wiki/Q5482703> ;
+  gen:mother <https://www.wikidata.org/wiki/Q17986666> .
+  # oo 1906 Sir Charles Otto Desmond MacCarthy, 1877-05-20 - 1952-06-07, https://www.wikidata.org/wiki/Q2239423
+# ----
+<https://www.wikidata.org/wiki/Q17986666>
+  gen:name "Blanche Ritchie"@en ;
+  gen:birthDate "1844" ;
+  gen:deathDate "1922" .
+  # oo Francis Warre-Cornish, 1839-05-08 - 1916, https://www.wikidata.org/wiki/Q5482703
+
+# --------
+<#Fairlie_Estelle_Caroline_Watson>
+  gen:name "Fairlie Estelle Caroline Watson"@en ;
+  gen:deathDate "1980" ;
+  gen:father <#Arthur_Watson> ;
+  gen:mother <#Fairlie_Caroline_Gordon_Anderson> .
+  # oo 1915-11-25 Victor Alexander Gascoyne-Cecil, 1891-05-21 - 1977-01-17, https://www.wikidata.org/wiki/Q19560548
+# ----
+<#Fairlie_Caroline_Gordon_Anderson>
+  gen:name "Fairlie Caroline Gordon Anderson"@en ;
+  gen:birthDate "1859" ;
+  gen:deathDate "1934" .
+
+# --------
+<#Sir_Frederick_Shelley,_8th_Baronet>
+  # Rev. Sir Frederick Shelley, 8th Baronet, 1809-05-05 - 1869-03-19
+  gen:father <https://www.wikidata.org/wiki/Q7528061> .
+  # and Frances Winckley
+  # oo Charlotte Martha Hippisley, d. 1893-05-20, daughter of Reverend Henry Hippisley
+  []
+    gen:spouse <#Sir_Frederick_Shelley,_8th_Baronet> , <#Charlotte_Martha_Hippisley> ;
+	gen:startDate "1845-02-04" .
+
+<#Sir_John_Shelley,_9th_Baronet>
+  gen:name "Sir John Shelley, 9th Baronet"@en ;
+  gen:birthDate "1848-08-31" ;
+  gen:deathDate "1931-03-29" ;
+  gen:father <#Sir_Frederick_Shelley,_8th_Baronet> ;
+  gen:mother <#Charlotte_Martha_Hippisley> .
+  # oo Marion Emma Benyon, d. 1948-03-30, daughter of Richard Benyon
+  []
+    gen:spouse <#Sir_John_Shelley,_9th_Baronet> , <#Marion_Emma_Benyon> ;
+	gen:startDate "1882-06-29" .
+
+<https://www.wikidata.org/wiki/Q41763634>
+  gen:name "Richard Shelley Benyon"@en ;
+  gen:birthDate "1892-01-18" ;
+  gen:deathDate "1968-06-13" ;
+  gen:father <#Sir_John_Shelley,_9th_Baronet> ;
+  gen:mother <#Marion_Emma_Benyon> .
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q41763634> , <#Eve_Alice_Gascoyne-Cecil> ;
+	gen:startDate "1929-04-16" .
+
+# --------
+<https://www.wikidata.org/wiki/Q8024207>
+  gen:name "Windham Henry Wyndham-Quin, 5th Earl of Dunraven and Mount-Earl"@en ;
+  gen:birthDate "1857-02-07" ;
+  gen:deathDate "1952-10-23" .
+  # oo Lady Eva Constance Aline Bourke, d. 1940-01-19
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8024207> , <#Lady_Eva_Constance_Aline_Bourke> ;
+	gen:startDate "1885-07-07" .
+
+<#Valentine_Maurice_Wyndham-Quin>
+  gen:name "Hon. Valentine Maurice Wyndham-Quin"@en ;
+  gen:birthDate "1890-05-22" ;
+  gen:deathDate "1983" ;
+  gen:father <https://www.wikidata.org/wiki/Q8024207> ;
+  gen:mother <#Lady_Eva_Constance_Aline_Bourke> .
+  # oo Marjorie Elizabeth Pretyman, 1897 - 1969-05-06
+  []
+    gen:spouse <#Valentine_Maurice_Wyndham-Quin> , <#Marjorie_Elizabeth_Pretyman> ;
+	gen:startDate "1919-07-21" .
+
+<#Marjorie_Olein_Wyndham-Quin>
+  gen:name "Marjorie Olein Wyndham-Quin"@en ;
+  gen:birthDate "1922-07-15" ;
+  gen:deathDate "2016-12-12" ;
+  gen:father <#Valentine_Maurice_Wyndham-Quin> ;
+  gen:mother <#Marjorie_Elizabeth_Pretyman> .
+  # oo 1945-12-18 Robert Edward Peter Gascoyne-Cecil, 6th Marquess of Salisbury, 1916-10-24 - 2003-07-11, https://www.wikidata.org/wiki/Q9310800
+# ----
+<https://www.wikidata.org/wiki/Q2614140>
+  gen:name "Richard Bourke, 6th Earl of Mayo"@en ;
+  gen:birthDate "1822-02-21" ;
+  gen:deathDate "1872-02-08" .
+  # oo Hon. Blanche Julia Wyndham, d. 1918
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2614140> , <guinness.ttl#Blanche_Julia_Wyndham> ;
+	gen:startDate "1848" .
+
+<#Lady_Eva_Constance_Aline_Bourke>
+  # Lady Eva Constance Aline Bourke, d. 1940-01-19
+  gen:father <https://www.wikidata.org/wiki/Q2614140> ;
+  gen:mother <guinness.ttl#Blanche_Julia_Wyndham> .
+  # oo 1885-07-07 Windham Henry Wyndham-Quin, 5th Earl of Dunraven and Mount-Earl, 1857-02-07 - 1952-10-23, https://www.wikidata.org/wiki/Q8024207
+# ----
+#<https://www.wikidata.org/wiki/Q5321871>
+  # Rt. Hon. Ernest George Pretyman, 1860-11-13 - 1931-11-26
+  # oo Lady Beatrice Adine Bridgeman, 1870-12-02 - 1952-06-27
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5321871> , <#Lady_Beatrice_Adine_Bridgeman> ;
+	gen:startDate "1894-06-28" .
+
+<#Marjorie_Elizabeth_Pretyman>
+  # Marjorie Elizabeth Pretyman, 1897 - 1969-05-06
+  gen:father <https://www.wikidata.org/wiki/Q5321871> ;
+  gen:mother <#Lady_Beatrice_Adine_Bridgeman> .
+  # oo 1919-07-21 Hon. Valentine Maurice Wyndham-Quin, 1890-05-22 - 1983, #Valentine_Maurice_Wyndham-Quin
+# ----
+<#Lady_Beatrice_Adine_Bridgeman>
+  # Lady Beatrice Adine Bridgeman, 1870-12-02 - 1952-06-27
+  gen:father <https://www.wikidata.org/wiki/Q5537238> .
+  # and Lady Ida Frances Annabella Lumley
+  # oo 1894-06-28 Rt. Hon. Ernest George Pretyman, 1860-11-13 - 1931-11-26
+
+# --------
+<https://www.wikidata.org/wiki/Q7937856>
+  gen:name "Vivien Sarah Frances Heilbron"@en ;
+  gen:birthDate "1944-05-13" .
+  # daughter of David G. Heilbron
+  # oo 1963-07 Jonathan Hugh Cecil, 1939-02-22 - 2011-09-22, https://www.wikidata.org/wiki/Q1250868
+
+# --------
+<https://www.wikidata.org/wiki/Q334215>
+  gen:name "Sir William Stirling-Maxwell, 9th Baronet"@en ;
+  gen:birthDate "1818-03-08" ;
+  gen:deathDate "1878-01-15" .
+  # oo 1865-04-26 Lady Anne Maria Leslie-Melville
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q334215> , <#Lady_Anne_Maria_Leslie-Melville> ;
+	gen:startDate "1865-04-26" .
+
+<https://www.wikidata.org/wiki/Q20054043>
+  gen:name "Archibald Stirling of Keir"@en ;
+  gen:birthDate "1867-09-14" ;
+  gen:deathDate "1931-02-18" ;
+  gen:father <https://www.wikidata.org/wiki/Q334215> .
+  # oo Hon. Margaret Mary Fraser, 1881-06-25 - 1972-08-04
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q20054043> , <fraser.ttl#Margaret_Mary_Fraser> ;
+	gen:startDate "1910-04-14" .
+
+<#William_Joseph_Stirling_of_Keir>
+  gen:name "William Joseph Stirling of Keir"@en ;
+  gen:birthDate "1911-05-09" ;
+  gen:deathDate "1983-01-01" ;
+  gen:father <https://www.wikidata.org/wiki/Q20054043> ;
+  gen:mother <fraser.ttl#Margaret_Mary_Fraser> .
+  # oo Susan Rachel Bligh, 1916-08-12 - 1983
+  []
+    gen:spouse <#William_Joseph_Stirling_of_Keir> , <#Susan_Rachel_Bligh> ;
+	gen:startDate "1940-11-22" .
+
+<#Hannah_Ann_Stirling>
+  gen:name "Hannah Ann Stirling"@en ;
+  gen:birthDate "1944-05-29" ;
+  gen:father <#William_Joseph_Stirling_of_Keir> ;
+  gen:mother <#Susan_Rachel_Bligh> .
+  # oo 1970-01-07 Robert Michael James Gascoyne-Cecil, 7th Marquess of Salisbury, b. 1946-09-30, https://www.wikidata.org/wiki/Q335589
+# ----
+#<https://www.wikidata.org/wiki/Q5236512>
+  # David Leslie-Melville, 10th Earl of Leven, 1785-06-22 - 1860-10-08
+  # oo Elizabeth Anne Campbell, 1804 - 1863-11-06
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5236512> , <#Elizabeth_Anne_Campbell> ;
+	gen:startDate "1824-06-21" .
+
+<#Lady_Anne_Maria_Leslie-Melville>
+  # Lady Anne Maria Leslie-Melville, d. 1874-12-08
+  gen:father <https://www.wikidata.org/wiki/Q5236512> ;
+  gen:mother <#Elizabeth_Anne_Campbell> .
+  # oo 1865-04-26 Sir William Stirling-Maxwell, 9th Baronet, 1818-03-08 - 1878-01-15, https://www.wikidata.org/wiki/Q334215
+# ----
+<#Elizabeth_Anne_Campbell>
+  # Elizabeth Anne Campbell, 1804 - 1863-11-06
+  gen:father <https://www.wikidata.org/wiki/Q7526031> .
+  # and Elizabeth Balfour
+  # oo 1824-06-21 David Leslie-Melville, 10th Earl of Leven, 1785-06-22 - 1860-10-08, https://www.wikidata.org/wiki/Q5236512
+# ----
+<#Noel_Gervase_Bligh>
+  # Hon. Noel Gervase Bligh, 1888-11-14 - 1984-07-04
+  gen:father <https://www.wikidata.org/wiki/Q3529459> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5460570> .
+  # oo Mary Jack Frost, d. 1940-06-09, daughter of George Alfred Frost
+  []
+    gen:spouse <#Noel_Gervase_Bligh> , <#Mary_Jack_Frost> ;
+	gen:startDate "1912-07-24" .
+
+<#Susan_Rachel_Bligh>
+  # Susan Rachel Bligh, 1916-08-12 - 1983
+  gen:birthDate "1916-08-12" ;
+  gen:deathDate "1983" ;
+  gen:father <#Noel_Gervase_Bligh> ;
+  gen:mother <#Mary_Jack_Frost> .
+  # oo 1940-11-22 William Joseph Stirling of Keir, 1911-05-09 - 1983-01-01, #William_Joseph_Stirling_of_Keir
+
+# --------
+#<#Sir_Jervoise_Bolitho_Scott,_1st_Baronet>
+  # Sir Jervoise Bolitho Scott, 1st Baronet, of Rotherfield Park, 1892-02-03 - 1965-06-21
+  # oo Kathleen Isabel Walter, daughter of Godfrey Walter
+  []
+    gen:spouse <#Sir_Jervoise_Bolitho_Scott,_1st_Baronet> , <#Kathleen_Isabel_Walter> ;
+	gen:startDate "1924-01-31" .
+
+<#Richard_Jervoise_Scott>
+  gen:name "Richard Jervoise Scott"@en ;
+  gen:birthDate "1929-05-23" ;
+  gen:deathDate "1974" ;
+  gen:father <#Sir_Jervoise_Bolitho_Scott,_1st_Baronet> ;
+  gen:mother <#Kathleen_Isabel_Walter> .
+  # oo 1955-01-19 (div 1972) Julia Maud Floyd
+
+<#Camilla_Julia_Scott>
+  gen:name "Camilla Julia Scott"@en ;
+  gen:birthDate "1958-04-17" ;
+  gen:father <#Richard_Jervoise_Scott> ;
+  gen:mother <#Julia_Maud_Floyd> .
+  # oo 1986 Lord Michael Hugh Cecil, b. 1960-03-23, #Lord_Michael_Hugh_Gascoyne-Cecil
+# ----
+<https://www.wikidata.org/wiki/Q7527136>
+  gen:name "Sir Henry Robert Kincaid Floyd, 5th Baronet"@en ;
+  gen:birthDate "1899-05-07" ;
+  gen:deathDate "1968-11-05" .
+  # oo Hon. Kathleen Fanny Gretton, d. 1976-05-03
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7527136> , <#Kathleen_Fanny_Gretton> ;
+	gen:startDate "1929-04-09" .
+
+<#Julia_Maud_Floyd>
+  gen:name "Julia Maud Floyd"@en ;
+  gen:birthDate "1934-06-06" ;
+  gen:deathDate "1934-06-06" ;
+  gen:father <https://www.wikidata.org/wiki/Q7527136> ;
+  gen:mother <#Kathleen_Fanny_Gretton> .
+  # oo 1955-01-19 (div 1972) Richard Jervoise Scott, 1929-05-23 - 1974, #Richard_Jervoise_Scott
+# ----
+<https://www.wikidata.org/wiki/Q4148675>
+  gen:name "John Gretton, 1st Baron Gretton"@en ;
+  gen:birthDate "1867-09-01" ;
+  gen:deathDate "1947-06-02" .
+  # oo Hon. Maud Helen Eveleigh-de Moleyns, d. 1934-07-29
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4148675> , <#Maud_Helen_Eveleigh-de_Moleyns> ;
+	gen:startDate "1900-04-24" .
+
+<#Kathleen_Fanny_Gretton>
+  gen:name "Hon. Kathleen Fanny Gretton"@en ;
+  gen:deathDate "1976-05-03" ;
+  gen:father <https://www.wikidata.org/wiki/Q4148675> ;
+  gen:mother <#Maud_Helen_Eveleigh-de_Moleyns> .
+  # oo 1929-04-09 Sir Henry Robert Kincaid Floyd, 5th Baronet, 1899-05-07 - 1968-11-05, https://www.wikidata.org/wiki/Q7527136
+# ----
+<https://www.wikidata.org/wiki/Q5243309>
+  gen:name "Dayrolles Blakeney Eveleigh-de-Moleyns, 4th Baron Ventry"@en ;
+  gen:birthDate "1828-01-22" ;
+  gen:deathDate "1914-02-08" .
+
+<#Maud_Helen_Eveleigh-de_Moleyns>
+  gen:name "Hon. Maud Helen Eveleigh-de Moleyns"@en ;
+  gen:deathDate "1934-07-29" ;
+  gen:father <https://www.wikidata.org/wiki/Q5243309> ;
+  gen:mother <#Harriet_Elizabeth_Frances_Wauchope> .
+  # oo 1900-04-24 John Gretton, 1st Baron Gretton, 1867-09-01 - 1947-06-02, https://www.wikidata.org/wiki/Q4148675
+
+# --------
+<https://www.wikidata.org/wiki/Q4718753>
+  gen:name "Sir Alexander Douglas Campbell"@en ;
+  gen:birthDate "1899-06-20" ;
+  gen:deathDate "1980-04-03" .
+  # oo Patience Loveday Carlyon
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4718753> , <#Patience_Loveday_Carlyon> ;
+	gen:startDate "1923" .
+
+<#Peter_Colin_Drummond_Campbell-Grove>
+  gen:name "Peter Colin Drummond Campbell-Grove"@en ;
+  gen:birthDate "1927-10-24" ;
+  gen:father <https://www.wikidata.org/wiki/Q4718753> ;
+  gen:mother <#Patience_Loveday_Carlyon> .
+  # oo 1966-11-12 Lady Moyra Kathleen Hamilton, b. 1930-07-22
+
+<#Michael_James_Douglas_Campbell-Grove>
+  gen:birthDate "1970-11-03" ;
+  gen:father <#Peter_Colin_Drummond_Campbell-Grove> ;
+  gen:mother <hamilton.ttl#Lady_Moyra_Kathleen_Hamilton> .
+  []
+    gen:spouse <#Michael_James_Douglas_Campbell-Grove> , <#Lady_Georgiana_Gascoyne-Cecil> ;
+	gen:startDate "2002-09-14" .
+
+# --------
+<https://www.wikidata.org/wiki/Q7327762>
+  gen:name "Richard Meade, 3rd Earl of Clanwilliam"@en ;
+  gen:birthDate "1795-08-15" ;
+  gen:deathDate "1879-10-07" .
+  # oo 1830-07-05 Lady Elizabeth Herbert, 1809-03-31 - 1858-09-20, daughter of https://www.wikidata.org/wiki/Q4111755
+
+<https://www.wikidata.org/wiki/Q7327763>
+  gen:name "Richard James Meade, 4th Earl of Clanwilliam"@en ;
+  gen:birthDate "1832-10-03" ;
+  gen:deathDate "1907-08-04" ;
+  gen:father <https://www.wikidata.org/wiki/Q7327762> ;
+  gen:mother <herbert.ttl#Lady_Elizabeth_Herbert> .
+  # oo Elizabeth Henrietta Kennedy, d. 1925-04-01
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7327763> , <#Elizabeth_Henrietta_Kennedy> ;
+	gen:startDate "1867-06-17" .
+
+<https://www.wikidata.org/wiki/Q18756766>
+  gen:name "Hon. Sir Herbert Meade-Fetherstonhaugh"@en ;
+  gen:birthDate "1875-11-03" ;
+  gen:deathDate "1964-10-27" ;
+  gen:father <https://www.wikidata.org/wiki/Q7327763> ;
+  gen:mother <#Elizabeth_Henrietta_Kennedy> .
+  # oo Margaret Isabel Frances Glyn, 1888-02-22 - 1977-06-15
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q18756766> , <grosvenor.ttl#Margaret_Isabel_Frances_Glyn> ;
+	gen:startDate "1911-07-06" .
+
+<#Anne_Margaret_Meade-Fetherstonhaugh>
+  gen:name "Anne Margaret Meade-Fetherstonhaugh"@en ;
+  gen:birthDate "1912-06-15" ;
+  gen:deathDate "1980" ;
+  gen:father <https://www.wikidata.org/wiki/Q18756766> ;
+  gen:mother <grosvenor.ttl#Margaret_Isabel_Frances_Glyn> .
+  # oo 1933-05-09 Robert William Evelyn Cecil, 2nd Baron Rockley, 1901-02-28 - 1976-01-26, https://www.wikidata.org/wiki/Q26736741
+# ----
+#<#Hugh_Kennedy>
+  # Hugh Kennedy, 1775 - 1852
+  # oo 1799 Grace Dorothea Hughes, d. 1819, daughter of Thomas Hughes
+  []
+    gen:spouse <#Hugh_Kennedy> , <#Grace_Dorothea_Hughes> ;
+	gen:startDate "" .
+
+<https://www.wikidata.org/wiki/Q330140>
+  gen:name "Sir Arthur Edward Kennedy"@en ;
+  gen:birthDate "1809-04-05" ;
+  gen:deathDate "1883-06-03" ;
+  gen:father <#Hugh_Kennedy> ;
+  gen:mother <#Grace_Dorothea_Hughes> .
+  # oo Georgina Mildred Macartney, d. 1874-10-03, daughter of Joseph Macartney and Maria Macartney
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q330140> , <#Georgina_Mildred_Macartney> ;
+	gen:startDate "1839" .
+<#William_Henry_Kennedy>
+  # William Henry Kennedy, 1812 - 1864-10-13
+  gen:father <#Hugh_Kennedy> ;
+  gen:mother <#Grace_Dorothea_Hughes> .
+  # oo Georgina Paget, 1815-06-14 - 1901-11-08
+  []
+    gen:spouse <#William_Henry_Kennedy> , <paget.ttl#Georgina_Paget> ;
+	gen:startDate "1841-04-08" .
+
+<#Elizabeth_Henrietta_Kennedy>
+  gen:name "Elizabeth Henrietta Kennedy"@en ;
+  gen:deathDate "1925-04-01" ;
+  gen:father <https://www.wikidata.org/wiki/Q330140> ;
+  gen:mother <#Georgina_Mildred_Macartney> .
+  # oo 1867-06-17 Richard James Meade, 4th Earl of Clanwilliam, 1832-10-03 - 1907-08-04, https://www.wikidata.org/wiki/Q7327763
+
+# --------
+<https://www.wikidata.org/wiki/Q7613615>
+  gen:name "William Gerald Charles Cadogan, 7th Earl of Cadogan"@en ;
+  gen:birthDate "1914-02-13" ;
+  gen:deathDate "1997-07-04" .
+  # oo Hon. Primrose Lilian Yarde-Buller, 1918-12-24 - 1970-12-06
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7613615> , <hope.ttl#Primrose_Lilian_Yarde-Buller> ;
+	gen:startDate "1936-06-11" ;
+	gen:divorceDate "1960" .
+
+<#Lady_Sarah_Primrose_Beatrix_Cadogan>
+  gen:name "Lady Sarah Primrose Beatrix Cadogan"@en ;
+  gen:birthDate "1938-02-23" ;
+  gen:deathDate "2017-12-19" ;
+  gen:father <https://www.wikidata.org/wiki/Q7613615> ;
+  gen:mother <hope.ttl#Primrose_Lilian_Yarde-Buller> .
+  # oo 1958-11-18 James Hugh Cecil, 3rd Baron Rockley, 1934-04-05 - 2011-12-05, https://www.wikidata.org/wiki/Q15820714
+
+# ----
+#<#John_Lycett_Wills>
+  # John Lycett Wills, 1910-05-29 - 1999
+  # oo Hon. Jean Constance Elphinstone, 1915-04-03 - 1999-11-29~, daughter of https://www.wikidata.org/wiki/Q3960165 and https://www.wikidata.org/wiki/Q6779476
+  []
+    gen:spouse  <#John_Lycett_Wills> , <elphinstone.ttl#Jean_Constance_Elphinstone> ;
+	gen:startDate "1936-07-25" .
+
+<#Andrew_Arnold_Lyon_Wills>
+  gen:name "Andrew Arnold Lyon Wills"@en ;
+  gen:birthDate "1937-08-15" ;
+  gen:deathDate "1998-01" ;
+  gen:father <#John_Lycett_Wills> ;
+  gen:mother <elphinstone.ttl#Jean_Constance_Elphinstone> .
+  []
+    gen:spouse <#Andrew_Arnold_Lyon_Wills> , <#Elizabeth_Anne_Cecil> ;
+	gen:startDate "1961-01-19" .
+
+# --------
+<#Sir_James_Thomas_Stewart-Richardson,_14th_Baronet>
+  gen:name "Sir James Thomas Stewart-Richardson of Pitfour, 14th Baronet"@en;
+  gen:birthDate "1840-12-24" ;
+  gen:deathDate "1895-02-14" .
+  # oo Harriett Georgina Alice Cochrane
+  []
+    gen:spouse <#Sir_James_Thomas_Stewart-Richardson,_14th_Baronet> , <#Harriett_Georgina_Alice_Cochrane> ;
+	gen:startDate "1868-10-20" .
+
+<#Neil_Graham_Stewart-Richardson>
+  gen:name "Neil Graham Stewart-Richardson"@en ;
+  gen:birthDate "1881-10-23" ;
+  gen:deathDate "1934-02-23" ;
+  gen:father <#Sir_James_Thomas_Stewart-Richardson,_14th_Baronet> ;
+  gen:mother <#Harriett_Georgina_Alice_Cochrane> .
+  # oo Alexandra Ralli, 1896-04-20 - 1972-08-02, daughter of Peter Ralli and Mary Ralli
+  []
+    gen:spouse <#Neil_Graham_Stewart-Richardson> , <#Alexandra_Ralli> ;
+	gen:startDate "1924-10-23" .
+
+<#Alastair_Lucas_Graham_Stewart-Richardson>
+  gen:name "Alastair Lucas Graham Stewart-Richardson"@en ;
+  gen:birthDate "1927-11-29" ;
+  gen:deathDate "2007-01-18" ;
+  gen:father <#Neil_Graham_Stewart-Richardson> ;
+  gen:mother <#Alexandra_Ralli> .
+  # oo Diana Claire Rawstorne, daughter of George Streynsham Rawstorne
+  []
+    gen:spouse <#Alastair_Lucas_Graham_Stewart-Richardson> , <#Diana_Claire_Rawstorne> ;
+	gen:startDate "1969-05-29" .
+
+<#James_George_Stewart-Richardson>
+  gen:birthDate "1971-03-02" ;
+  gen:father <#Alastair_Lucas_Graham_Stewart-Richardson> ;
+  gen:mother <#Diana_Claire_Rawstorne> .
+  []
+    gen:spouse <#James_George_Stewart-Richardson> , <#Lucinda_Rose_Cecil> ;
+	gen:startDate "2001-06-23" .
+
+
+
+# ====
+# villiers.ttl:
+<https://www.wikidata.org/wiki/Q335305>
+  gen:name "George Villiers, 4th Earl of Clarendon"@en ;
+  gen:birthDate "1800-01-12" ;
+  gen:deathDate "1870-06-27" .
+  # oo Lady Katherine Grimston, 1810-04-18 - 1874-07-04
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q335305> , <brudenell.ttl#Lady_Katherine_Grimston> ;
+	gen:startDate "1839-06-04" .
+
+<villiers.ttl#Lady_Alice_Villiers>
+  # Lady Alice Villiers, 1841-09-17 - 1897-11-23
+  gen:father <https://www.wikidata.org/wiki/Q335305> ;
+  gen:mother <brudenell.ttl#Lady_Katherine_Grimston> .
+  # oo 1860-08-16 Edward Bootle-Wilbraham, 1st Earl of Lathom, 1837-12-12 - 1898-11-19, https://www.wikidata.org/wiki/Q5341949
+
+
+# ====
+# stuart.ttl:
+#<https://www.wikidata.org/wiki/Q275336>
+  # John Stuart, 1st Marquess of the County of Bute, 1744-06-30 – 1814-11-16
+  # oo Frances Coutts, d. 1832-11-12, daughter of Thomas Coutts and Susan Starkie
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q275336> , <#Frances_Coutts> ;
+	gen:startDate "1800-09-17" .
+
+<stuart.ttl#Lady_Frances_Stuart>
+  # Lady Frances Stuart, d. 1859-03-29
+  gen:father <https://www.wikidata.org/wiki/Q275336> ;
+  gen:mother <#Frances_Coutts> .
+  # oo 1823-09-15  Dudley Ryder, 2nd Earl of Harrowby, 1798-05-19 – 1882-11-19, https://www.wikidata.org/wiki/Q5311965
+
+<stuart.ttl#Beatrice_Susan_Theodosia_Stuart-Wortley>
+  # Hon. Beatrice Susan Theodosia Stuart-Wortley, 1881-07-15 - 1973-12-30
+  gen:father <https://www.wikidata.org/wiki/Q5082737> .
+  # and Beatrice Trollope
+  # oo 1906-12-01 Arthur William James Gascoyne-Cecil, 1875-04-04 - 1936-09-26, #Arthur_William_James_Gascoyne-Cecil
+
+<https://www.wikidata.org/wiki/Q24284571>
+  gen:name "Randolph Stewart, 9th Earl of Galloway"@en ;
+  gen:birthDate "1800-09-16" ;
+  gen:deathDate "1873-01-02" .
+  # oo Lady Harriet Blanche Somerset, 1811-08-18 – 1885-05-25, daughter of https://www.wikidata.org/wiki/Q3784917 and https://www.wikidata.org/wiki/Q48474019
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q24284571> , <https://www.wikidata.org/wiki/Q48447824> ;
+	gen:startDate "1833-08-09" .
+
+<https://www.wikidata.org/wiki/Q4707833>
+  gen:name "Alan Plantagenet Stewart, 10th Earl of Galloway"@en ;
+  gen:birthDate "1835-10-21" ;
+  gen:deathDate "1901-02-07" ;
+  gen:father <https://www.wikidata.org/wiki/Q24284571> ;
+  gen:mother <https://www.wikidata.org/wiki/Q48447824> .
+  # oo Lady Mary Arabella Arthur Gascoyne-Cecil, 1850-04-26 - 1903-08-18
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4707833> , <https://www.wikidata.org/wiki/Q48658533> ;
+	gen:startDate "1872-01-25" .
+
+
+
+# ====
+# boyle.ttl:
+#<https://www.wikidata.org/wiki/Q2805655>
+  # Charles Boyle, 4th Earl of Orrery, 1674-07-28 – 1731-08-28
+  # oo Lady Elizabeth Cecil, 1687 - 1708-06-12
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2805655> , <cecil.ttl#Lady_Elizabeth_Cecil_(died_1708)> ;
+	gen:startDate "1706-03-30" .
+
+<https://www.wikidata.org/wiki/Q2485385>
+  gen:name "Richard Boyle, 1st Earl of Cork"@en ;
+  # 1st Lord Boyle, Baron of Youghal, co. Cork 1616-05-06
+  # 1st Earl of the County of Cork, 1st Viscount of Dungarvan, co. Waterford 1620-10-16
+  gen:birthDate "1566-10-13" ;
+  gen:deathDate "1643-09-15" .
+  # oo Catherine Fenton, d. 16 February 1629-02-16
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2485385> , <#Catherine_Fenton> ;
+	gen:startDate "1603-07-25" .
+
+<https://www.wikidata.org/wiki/Q5590389>
+  # Richard Boyle, 2nd Earl of Cork, 1612-10-20 – 1698-01-15
+  # 2nd Viscount Boyle of Kinalmeaky, co. Cork, 2nd Baron of Bandon Bridge, co. Cork 1642-09-02
+  # 2nd Viscount of Dungarvan, co. Waterford, 2nd Lord Boyle, Baron of Youghal, co. Cork, 2nd Earl of the County of Cork 1643-09-15
+  # 1st Baron Clifford of Lanesborough, co. York 1644-11-04
+  # 1st Earl of Burlington, co. York 1665-03-20
+  gen:father <https://www.wikidata.org/wiki/Q2485385> ;
+  gen:mother <#Catherine_Fenton> .
+  # oo Elizabeth Clifford, 2nd Baroness Clifford (1613-09-18 - 1691-01-06
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5590389> , <https://www.wikidata.org/wiki/Q22998022> ;
+	gen:startDate "1635-07-05" .
+<https://www.wikidata.org/wiki/Q6376433>
+  gen:name "Lady Katherine Boyle"@en ;
+  gen:birthDate "1615-03-22" ;
+  gen:deathDate "1691-12-03" ;
+  gen:father <https://www.wikidata.org/wiki/Q2485385> ;
+  gen:mother <#Catherine_Fenton> .
+  # oo Arthur Jones, 2nd Viscount Ranelagh, d. 1669, https://www.wikidata.org/wiki/Q4799286
+<https://www.wikidata.org/wiki/Q6780600>
+  # Lady Mary Boyle, 1625-11-08 - 1678-04-12
+  gen:father <https://www.wikidata.org/wiki/Q2485385> ;
+  gen:mother <#Catherine_Fenton> .
+  # oo 1641-07-21 Charles Rich, 4th Earl of Warwick, 1623~ – 1673-08-24, https://www.wikidata.org/wiki/Q3666584
+
+<boyle.ttl#Lady_Anne_Boyle>
+  # Lady Anne Boyle, d. 1671-09-14
+  gen:father <https://www.wikidata.org/wiki/Q5590389> ;
+  gen:mother <https://www.wikidata.org/wiki/Q22998022> .
+  # oo 1668-01 Edward Montagu, 2nd Earl of Sandwich, 1647-01-03 - 1688-11-29, https://www.wikidata.org/wiki/Q3719996
+# ----
+<https://www.wikidata.org/wiki/Q1502972>
+  gen:name "Sir Geoffrey Fenton"@en ;
+  gen:birthDate "1539~" ;
+  gen:deathDate "1608-10-19" .
+  # oo Alice Weston
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1502972> , <#Alice_Weston> ;
+	gen:startDate "1585-06" .
+
+<#Catherine_Fenton>
+  gen:name "Catherine Fenton"@en ;
+  gen:deathDate "1629-02-16" ;
+  gen:father <https://www.wikidata.org/wiki/Q1502972> ;
+  gen:mother <#Alice_Weston> .
+  # oo 1603-07-25 Richard Boyle, 1st Earl of Cork, 1566-10-13 - 1643-09-15, https://www.wikidata.org/wiki/Q2485385
+# ----
+<https://www.wikidata.org/wiki/Q7350984>
+  gen:name "Robert Weston"@en ;
+  gen:birthDate "1515~" ;
+  gen:deathDate "1573-05-20" .
+
+<#Alice_Weston>
+  gen:name "Alice Weston"@en ;
+  gen:father <https://www.wikidata.org/wiki/Q7350984> .
+  # oo 1585-06 Sir Geoffrey Fenton, 1539~ - 1608-10-19, https://www.wikidata.org/wiki/Q1502972
+
+
+# ====
+# nevill.ttl:
+<nevill.ttl#Dorothy_Neville,_(died_1609)> #Dorothy_Neville,_Countess_of_Exeter
+  # Dorothy Neville, 1547 – 1609-03-23
+  gen:father <https://www.wikidata.org/wiki/Q6250307> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6485877> .
+  # oo 1564-11-27 Thomas Cecil, 1st Earl of Exeter, 1542-05-05 - 1623-02-08, https://www.wikidata.org/wiki/Q1920626
+
+
+# ====
+#<https://www.wikidata.org/wiki/Q374210>
+  # Edward de Vere, 17th Earl of Oxford, 1550-04-12 - 1604-06-24
+  # oo Anne Cecil, 1556-12-05 - 1588-06-05
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q374210> , <https://www.wikidata.org/wiki/Q4768218> ;
+	gen:startDate "1571-12-19" .
+  # oo Elizabeth Trentham, d. 1612, daughter of https://www.wikidata.org/wiki/Q7794551
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q374210> , <https://www.wikidata.org/wiki/Q5363641> ;
+	gen:startDate "1591" .
+
+<https://www.wikidata.org/wiki/Q3440414>
+  # Henry de Vere, 18th Earl of Oxford, 1593-02-24 – 1625-06
+  gen:father <https://www.wikidata.org/wiki/Q374210> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5363641> .
+  # oo Lady Diana Cecil, 1596 - 1658-02-26
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3440414> , <#Lady_Diana_Cecil> ;
+	gen:startDate "1624-01-01" .
+
+#<https://www.wikidata.org/wiki/Q2753558>
+  # Horatio de Vere, 1st Baron Vere of Tilbury, 1565 - 1635-05-02
+  # 1st Baron Vere of Tilbury, co. Essex 1625-07-24
+  # oo Mary Tracy, 1581-05-18 - 1671-12-25, daughter of Sir John Tracy and Anne Throckmorton
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2753558> , <#Mary_Tracy> ;
+	gen:startDate "1607-11" .
+
+<de_vere.ttl#Mary_de_Vere>
+  # Hon. Mary de Vere, 1608 - 1669-11-15~
+  gen:father <https://www.wikidata.org/wiki/Q2753558> ;
+  gen:mother <#Mary_Tracy> .
+  # oo 1628 Sir Roger Townshend, 1st Baronet, 1596~ - 1637-01-01, https://www.wikidata.org/wiki/Q7528900
