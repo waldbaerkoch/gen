@@ -1,0 +1,466 @@
+@base <brydges.ttl> .
+@prefix gen: <http://jjkoch.de/gen#> .
+@prefix wdata: <https://www.wikidata.org/wiki/> .
+@prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+
+#<#Sir_Roger_de_Chaundos,_1st_Lord_Chaundos>
+  # Sir Roger de Chaundos, 1st Lord Chaundos, d. 1353-09-24
+  # 1st Lord Chaundos 1337-12-20
+  # oo Maud d'Acton, d. 1361-08-15
+  []
+    gen:spouse <#Sir_Roger_de_Chaundos,_1st_Lord_Chaundos> , <#Maud_d'Acton> ;
+	gen:startDate "1315-04-12b" .
+
+<#Sir_Thomas_Chaundos,_2nd_Lord_Chaundos>
+  # Sir Thomas Chaundos, 2nd Lord Chaundos, 1323~ -1375-10-08
+  gen:father <#Sir_Roger_de_Chaundos,_1st_Lord_Chaundos> ;
+  gen:mother <#Maud_d'Acton> .
+  # oo Lucy ???, d. 1396-08-30
+  []
+    gen:spouse <#Sir_Thomas_Chaundos,_2nd_Lord_Chaundos> , <#Lucy_???> ;
+	gen:startDate "1336-07-01" .
+
+<#Elizabeth_Chaundos>
+  # Elizabeth Chaundos
+  gen:father <#Sir_Thomas_Chaundos,_2nd_Lord_Chaundos> ;
+  gen:mother <#Lucy_???> .
+  # oo Thomas Berkeley, d. 1405-04-12, #Thomas_Berkeley
+
+# ====
+
+#<#Thomas_Berkeley>
+  # Thomas Berkeley, d. 1405-04-12
+  # oo Elizabeth Chaundos
+  []
+    gen:spouse <#Thomas_Berkeley> , <#Elizabeth_Chaundos> .
+
+<#Alice_Berkeley>
+  # Alice Berkeley, 1379b - 1414-05-12
+  gen:father <#Thomas_Berkeley> ;
+  gen:mother <#Elizabeth_Chaundos> .
+  # oo Thomas Brugge, d. 1408-04-07, #Thomas_Brugge
+
+# ====
+
+#<#Thomas_Brugge>
+  # Thomas Brugge, d. 1408-04-07
+  # oo Alice Berkeley, 1379b - 1414-05-12
+  []
+    gen:spouse <#Thomas_Brugge> , <#Alice_Berkeley> .
+
+<#Giles_Brugge,_4th_Lord_Chaundos>
+  # Giles Brugge, 4th Lord Chaundos, 1396-12-21 - 1467-04-13
+  gen:father <#Thomas_Brugge> ;
+  gen:mother <#Alice_Berkeley> .
+  # oo Katherine Clifford, daughter of James Clifford
+
+<https://www.wikidata.org/wiki/Q7787982>
+  # Thomas Brugge, 5th Lord Chaundos, 1427b - 1493-01-30
+  gen:father <#Giles_Brugge,_4th_Lord_Chaundos> .
+  # and Katherine Clifford
+  # oo Florence Darrell, daughter of William Darrell and Elizabeth Calstone
+
+<https://www.wikidata.org/wiki/Q5561611>
+  # Sir Giles Brugge, 6th Lord Chaundos, 1462b - 1511-12-01
+  gen:father <https://www.wikidata.org/wiki/Q7787982> .
+  # and Florence Darrell
+  # oo Isabel Baynham, 1475~ - 1511a, daughter of Thomas Baynham and Alice Walwyn
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5561611> , <#Isabel_Baynham> ;
+	gen:startDate "1490~" .
+
+<https://www.wikidata.org/wiki/Q6223695>
+  # John Brydges, 1st Baron Chandos of Sudeley, 1492-03-09 - 1557-04-12
+  # 7th Lord Chaundos, de jure 1511-12-01
+  # 1st Baron Chandos of Sudeley, co. Gloucester 1554-04-08
+  gen:father <https://www.wikidata.org/wiki/Q5561611> ;
+  gen:mother <#Isabel_Baynham> .
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6223695> , <grey.ttl#Elizabeth_Grey_(died_1559)> ;
+	gen:startDate "1512" .
+
+<https://www.wikidata.org/wiki/Q5339327>
+  # Edmund Brydges, 2nd Baron Chandos of Sudeley, 1522b - 1573-03-11
+  gen:father <https://www.wikidata.org/wiki/Q6223695> ;
+  gen:mother <grey.ttl#Elizabeth_Grey_(died_1559)> .
+  # oo Dorothy Bray, 1530~ - 1605-10-31
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5339327> , <https://www.wikidata.org/wiki/Q5298321> ;
+	gen:startDate "1548~" .
+<#Charles_Brydges>
+  # Hon. Charles Brydges, 1528 - 1619-04-09
+  gen:father <https://www.wikidata.org/wiki/Q6223695> ;
+  gen:mother <grey.ttl#Elizabeth_Grey_(died_1559)> .
+  # oo Jane Carne
+  []
+    gen:spouse <#Charles_Brydges> , <#Jane_Carne> .
+
+<https://www.wikidata.org/wiki/Q5561615>
+  # Giles Brydges, 3rd Baron Chandos of Sudeley, 1548~ – 1594-02-21
+  gen:father <https://www.wikidata.org/wiki/Q5339327> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5298321> .
+  # oo Lady Frances Clinton, d. 1623-09-12
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5561615> , <shirley.ttl#Lady_Frances_Clinton> ;
+	gen:startDate "1573-09b" .
+<https://www.wikidata.org/wiki/Q8006077>
+  gen:name "William Brydges, 4th Baron Chandos of Sudeley"@en ;
+  gen:birthDate "1552~" ;
+  gen:deathDate "1602-11-18" ;
+  gen:father <https://www.wikidata.org/wiki/Q5339327> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5298321> .
+  # oo Mary Hopton, d. 1624-10~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8006077> , <#Mary_Hopton> .
+<https://www.wikidata.org/wiki/Q7526979>
+  # Sir Giles Brydges, 1st Baronet, 1583~ - 1637-09-12
+  # 1st Baronet Brydges, of Wilton, co. Hereford 1627-05-17
+  gen:father <#Charles_Brydges> ;
+  gen:mother <#Jane_Carne> .
+  # oo Mary Scudamore, d. 1634-09b
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7526979> , <#Mary_Scudamore> .
+
+<https://www.wikidata.org/wiki/Q44344095>
+  # Hon. Elizabeth Brydges, 1578~ - 1617-10
+  gen:father <https://www.wikidata.org/wiki/Q5561615> ;
+  gen:mother <shirley.ttl#Lady_Frances_Clinton> .
+  # oo 1603 Sir John Kennedy
+<#Catharine_Brydges>
+  # Hon. Catharine Brydges, 1580~ - 1657-01-29
+  gen:father <https://www.wikidata.org/wiki/Q5561615> ;
+  gen:mother <shirley.ttl#Lady_Frances_Clinton> .
+  # oo 1609-02-26 Francis Russell, 4th Earl of Bedford, 1587-10-19 - 1641-05-09, https://www.wikidata.org/wiki/Q3750946
+<https://www.wikidata.org/wiki/Q5608123>
+  # Grey Brydges, 5th Baron Chandos of Sudeley, 1578-03-06 - 1621-08-10
+  gen:father <https://www.wikidata.org/wiki/Q8006077> ;
+  gen:mother <#Mary_Hopton> .
+  # oo Lady Anne Stanley, 1580-05 - 1647-10-08
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5608123> , <https://www.wikidata.org/wiki/Q1088338> ;
+	gen:startDate "1608-02-28" .
+<#Frances_Brydges>
+  # Frances Brydges, 1580 - 1663
+  gen:father <https://www.wikidata.org/wiki/Q8006077> ;
+  gen:mother <#Mary_Hopton> .
+  # oo 1603b Sir Thomas Smith, 1556~ – 1609, https://www.wikidata.org/wiki/Q7794048
+  # oo 1610 Thomas Cecil, 1st Earl of Exeter, 1542-05-05 - 1623-02-08, https://www.wikidata.org/wiki/Q1920626
+<#Sir_John_Brydges,_2nd_Baronet>
+  # Sir John Brydges, 2nd Baronet, 1623 - 1652-02-21
+  gen:father <https://www.wikidata.org/wiki/Q7526979> ;
+  gen:mother <#Mary_Scudamore> .
+  # oo Mary Pearle, daughter of James Pearle
+
+<https://www.wikidata.org/wiki/Q5537375>
+  # George Brydges, 6th Baron Chandos of Sudeley, 1620-08-09 - 1655-02
+  gen:father <https://www.wikidata.org/wiki/Q5608123> ;
+  gen:mother <https://www.wikidata.org/wiki/Q1088338> .
+  # oo Lady Susan Montagu, d. 1652-04~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5537375> , <montagu.ttl#Lady_Susan_Montagu_(died_1652)> ;
+	gen:startDate "1637-12-14" .
+  # oo Lady Jane Savage, d. 1676-06-06
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5537375> , <#Lady_Jane_Savage> ;
+	gen:startDate "1653-01-17" .
+<#Elizabeth_Brydges_(died_1679)>
+  # Hon. Elizabeth Brydges, d. 1679-03~
+  gen:father <https://www.wikidata.org/wiki/Q5608123> ;
+  gen:mother <https://www.wikidata.org/wiki/Q1088338> .
+  # oo 1631b James Tuchet, 3rd Earl of Castlehaven, 1617~ - 1684-10-11, https://www.wikidata.org/wiki/Q6144435
+<#William_Brydges,_7th_Baron_Chandos>
+  # William Brydges, 7th Baron Chandos of Sudeley, 1620a - 1676-08~
+  gen:father <https://www.wikidata.org/wiki/Q5608123> ;
+  gen:mother <https://www.wikidata.org/wiki/Q1088338> .
+  # oo Susan Kerr, d. 1672-10~
+<https://www.wikidata.org/wiki/Q6130425>
+  gen:name "James Brydges, 8th Baron Chandos of Sudeley"@en ;
+  # 3rd Baronet Brydges, of Wilton, co. Hereford 1652-02-21
+  # 8th Baron Chandos of Sudeley, co. Gloucester 1676-08-02
+  gen:birthDate "1642-09" ;
+  gen:deathDate "1714-10-16" ;
+  gen:father <#Sir_John_Brydges,_2nd_Baronet> .
+  # and Mary Pearle
+  # oo Elizabeth Barnard, 1643-02-05 - 1719-05-26
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6130425> , <#Elizabeth_Barnard> ;
+	gen:startDate "1665-05-04" .
+
+<https://www.wikidata.org/wiki/Q28837775>
+  # Elizabeth Brydges, 1651-03-25 - 1718-02-03
+  gen:father <https://www.wikidata.org/wiki/Q5537375> ;
+  gen:montagu <montagu.ttl#Lady_Susan_Montagu_(died_1652)> .
+  # oo 1673-08-20 Edward Herbert, 3rd Baron Herbert of Chirbury, 1633 - 1678-12-09, https://www.wikidata.org/wiki/Q5343430
+  # oo 1684a William O'Brien, 2nd Earl of Inchiquin, 1640~ - 1692-01, https://www.wikidata.org/wiki/Q8016212
+  # oo 1694-08b (div 1697a) Charles Howard, 4th Baron Howard of Escrick, d. 1715-04-29, howard.ttl#Charles_Howard,_4th_Baron_Howard_of_Escrick
+<#Catherine_Brydges_(died_1682)>
+  # Catherine Brydges, d. 1682-08-21~
+  gen:father <https://www.wikidata.org/wiki/Q5537375> ;
+  gen:montagu <montagu.ttl#Lady_Susan_Montagu_(died_1652)> .
+  # oo 1681-10-14 Richard Parsons, 1st Viscount Rosse, https://www.wikidata.org/wiki/Q44607232
+<#Lucy_Brydges>
+  # Lucy Brydges, d. 1689-07-12~
+  gen:father <https://www.wikidata.org/wiki/Q5537375> ;
+  gen:mother <#Lady_Jane_Savage> .
+  # oo Adam Loftus, 1st Viscount Lisburne, d. 1691-09-15, https://www.wikidata.org/wiki/Q4679419
+<https://www.wikidata.org/wiki/Q333238>
+  # 1st Viscount Wilton, co. Hereford, 1st Earl of Carnarvon 1714-10-09
+  # 9th Baron Chandos of Sudeley, co. Gloucester, 4th Baronet Brydges, of Wilton, co. Hereford 1714-10-16
+  # 1st Duke of Chandos, 1st Marquess of Carnarvon 1719-04-29
+  gen:name "James Brydges, 1st Duke of Chandos"@en ;
+  gen:birthDate "1673-01-06" ;
+  gen:deathDate "1744-08-09" ;
+  gen:father <https://www.wikidata.org/wiki/Q6130425> ;
+  gen:mother <#Elizabeth_Barnard> .
+  # oo Mary Lake, 1668-07-18 - 1712-12-15
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q333238> , <#Mary_Lake> ;
+	gen:startDate "1695-02-02/1696-02-27" .
+  # oo Cassandra Willoughby, 1670-04-23 - 1735-07-18
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q333238> , <https://www.wikidata.org/wiki/Q4990594> ;
+	gen:startDate "1713-08-04" .
+  # oo Lydia Catherine van Hatten, 1693-11-03 - 1750-11-19
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q333238> , <#Lydia_Catherine_van_Hatten> ;
+	gen:startDate "1736-04-18" .
+
+<https://www.wikidata.org/wiki/Q6223696>
+  gen:name "John Brydges, Marquess of Carnarvon"@en ;
+  gen:birthDate "1703-01-15" ;
+  gen:deathDate "1727-04-08" ;
+  gen:father <https://www.wikidata.org/wiki/Q333238> ;
+  gen:mother <#Mary_Lake> .
+  # oo Catherine Tollemache, d. 1754-01-17
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6223696> , <manners.ttl#Catherine_Tollemache> ;
+	gen:startDate "1724-09-01" .
+<https://www.wikidata.org/wiki/Q7585553>
+  gen:name "Henry Brydges, 2nd Duke of Chandos"@en ;
+  gen:birthDate "1708-01-17" ;
+  gen:deathDate "1771-11-28" ;
+  gen:father <https://www.wikidata.org/wiki/Q333238> ;
+  gen:mother <#Mary_Lake> .
+  # oo Lady Mary Bruce, 1710~ - 1738-08-14
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7585553> , <https://www.wikidata.org/wiki/Q56164503> ;
+	gen:startDate "1728-12-21" .
+  # oo Anne Wells, 1709 - 1759-08-09, daughter of John Wells
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7585553> , <#Anne_Wells> ;
+	gen:startDate "1744-12-25" .
+  # oo Elizabeth Major, 1731~ – 1813-03-30
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7585553> , <https://www.wikidata.org/wiki/Q56164483> ;
+	gen:startDate "1767-07-18" .
+
+<#Catherine_Brydges>
+  # Catherine Brydges
+  gen:father <https://www.wikidata.org/wiki/Q6223696> ;
+  gen:mother <manners.ttl#Catherine_Tollemache> .
+  # oo 1753b William Berkely Lyon, d. 1753b
+  # oo 1753-08-09 Edwyn Francis Stanhope, 1729 - 1807, hamilton.ttl#Edwyn_Francis_Stanhope
+<#Lady_Caroline_Brydges>
+  gen:name "Lady Caroline Brydges"@en ;
+  gen:birthDate "1729" ;
+  gen:deathDate "1789/1804" ;
+  gen:father <https://www.wikidata.org/wiki/Q7585553> ;
+  gen:mother <https://www.wikidata.org/wiki/Q56164503> .
+  # oo 1755-03-10 James Leigh, 1724-07-07 - 1774-03-31, gower.ttl#James_Leigh,_of_Adlestrop
+<https://www.wikidata.org/wiki/Q6130424>
+  gen:name "James Brydges, 3rd Duke of Chandos"@en ;
+  # 7th Lord Kinloss, de jure 1747-02-10
+  # 3rd Viscount Wilton, co. Hereford, 6th Baronet Brydges, of Wilton, co. Hereford, 11th Baron Chandos of Sudeley, co. Gloucester, 3rd Duke of Chandos, 3rd Marquess of Carnarvon, 3rd Earl of Carnarvon 1771-11-28
+  gen:birthDate "1731-12-27" ;
+  gen:deathDate "1789-09-29" ;
+  gen:father <https://www.wikidata.org/wiki/Q7585553> ;
+  gen:mother <https://www.wikidata.org/wiki/Q56164503> .
+  # oo Margaret Nicol, 1736~ - 1768-08-14
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6130424> , <#Margaret_Nicol> ;
+	gen:startDate "1753-03-22" .
+  # oo Anne Eliza Gamon, 1737 - 1813-01-20, daughter of Richard Gamon and Elizabeth Grace
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6130424> , <https://www.wikidata.org/wiki/Q27943345> ;
+	gen:startDate "1777-06-21" .
+
+<https://www.wikidata.org/wiki/Q27943431>
+  gen:name "Lady Anne Elizabeth Brydges"@en ;
+  # 8th Lady Kinloss, de jure 1789-09-29
+  gen:birthDate "1779-10-26" ;
+  gen:deathDate "1836-05-15" ;
+  gen:father <https://www.wikidata.org/wiki/Q6130424> ;
+  gen:mother <https://www.wikidata.org/wiki/Q27943345> .
+  # oo 1796-04-16 Richard Temple-Nugent-Brydges-Chandos-Grenville, 1st Duke of Buckingham and Chandos, 1776-03-20 - 1839-01-17, https://www.wikidata.org/wiki/Q5589390
+
+
+# ----
+<#Jane_Carne>
+  # Jane Carne
+  gen:father <https://www.wikidata.org/wiki/Q7526531> .
+  # oo Hon. Charles Brydges, 1528 - 1619-04-09, #Charles_Brydges
+
+# ----
+<https://www.wikidata.org/wiki/Q7114512>
+  gen:name "Sir Owen Hopton"@en ;
+  gen:birthDate "1519~" ;
+  gen:deathDate "1595" .
+
+<#Mary_Hopton>
+  # Mary Hopton, d. 1624-10~
+  gen:father <https://www.wikidata.org/wiki/Q7114512> ;
+  gen:mother <#Anne_Echingham> .
+  # oo William Brydges, 4th Baron Chandos, 1552~ - 1602, https://www.wikidata.org/wiki/Q8006077
+
+# ----
+<#Mary_Scudamore>
+  # Mary Scudamore, d. 1634-09b
+  gen:father <https://www.wikidata.org/wiki/Q7527487> .
+  # and Mary Throckmorton
+  # oo Sir Giles Brydges, 1st Baronet, 1583~ - 1637-09-12, https://www.wikidata.org/wiki/Q7526979
+
+# ----
+<#Lady_Jane_Savage>
+  # Lady Jane Savage, d. 1676-06-06
+  gen:father <https://www.wikidata.org/wiki/Q6256733> .
+  # and Catherine Parker
+  # oo George Brydges, 6th Baron Chandos of Sudeley, 1620-08-09 - 1655-02, 1653-01-17, https://www.wikidata.org/wiki/Q5537375
+
+# ----
+<#Elizabeth_Barnard>
+  gen:name "Elizabeth Barnard"@en ;
+  gen:birthDate "1643-02-05" ;
+  gen:deathDate "1719-05-26" .
+  # daughter of Sir Henry Barnard
+  # and Emma Charlton
+  # oo 1665-05-04 James Brydges, 8th Baron Chandos of Sudeley, 1642-09 - 1714-10-16, https://www.wikidata.org/wiki/Q6130425
+
+# ----
+# herbert.ttl:
+<https://www.wikidata.org/wiki/Q5343430>
+  # Edward Herbert, 3rd Baron Herbert of Chirbury, 1633 - 1678-12-09
+  gen:father <https://www.wikidata.org/wiki/Q7326418> ;
+  gen:mother <egerton.ttl#Lady_Mary_Egerton_(died_1659)> .
+  # oo Elizabeth Brydges, 1651-03-25 - 1718-02-03
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5343430> , <https://www.wikidata.org/wiki/Q28837775> ;
+	gen:startDate "1673-08-20" .
+
+# ----
+<#Mary_Lake>
+  gen:name "Mary Lake"@en ;
+  gen:birthDate "1668-07-18" ;
+  gen:deathDate "1712-09-15" ;
+  gen:father <#Sir_Thomas_Lake> ;
+  gen:mother <#Rebecca_Langham> .
+  # oo 1695-02-02/1696-02-27 James Brydges, 1st Duke of Chandos, 1673-01-06 - 1744-08-09, https://www.wikidata.org/wiki/Q333238
+
+# ----
+<#Lydia_Catherine_van_Hatten>
+  gen:name "Lydia Catherine van Hatten"@en ;
+  gen:birthDate "1693-11-03" ;
+  gen:deathDate "1750-11-19" ;
+  gen:father <John_van_Hatten> ;
+  gen:mother <#Lydia_Davall> .
+  # oo 1736-04-18 James Brydges, 1st Duke of Chandos, 1673-01-06 - 1744-08-09, https://www.wikidata.org/wiki/Q333238
+
+# ----
+<https://www.wikidata.org/wiki/Q5075841>
+  gen:name "Charles Bruce, 3rd Earl of Ailesbury and 4th Earl of Elgin"@en ;
+  gen:birthDate "1682-05-29" ;
+  gen:deathDate "1747-02-10" .
+  # oo Lady Anne Saville, 1691 - 1717-07-18
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5075841> , <#Lady_Anne_Savile> ;
+	gen:startDate "1706-02-07" .
+  # oo Lady Caroline Campbell, 1721-01-12 - 1803-01-17
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5075841> , <campbell.ttl#Lady_Caroline_Campbell> ;
+	gen:startDate "1739-06-18" .
+
+<https://www.wikidata.org/wiki/Q56164503>
+  gen:name "Lady Mary Bruce"@en ;
+  gen:birthDate "1710~" ;
+  gen:deathDate "1738-08-14" ;
+  gen:father <https://www.wikidata.org/wiki/Q5075841> ;
+  gen:mother <#Lady_Anne_Savile> .
+  # oo 1728-12-21 Henry Brydges, 2nd Duke of Chandos, 1708-01-17 - 1771-11-28, https://www.wikidata.org/wiki/Q7585553
+# ----
+<https://www.wikidata.org/wiki/Q8018148>
+  gen:name "William Savile, 2nd Marquess of Halifax"@en ;
+  gen:birthDate "1665" ;
+  gen:deathDate "1700-08-31" .
+  # oo Elizabeth Grimston, 1671-01-19 - 1694
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8018148> , <#Elizabeth_Grimston> ;
+	gen:startDate "1687-11-24" .
+
+<#Lady_Anne_Savile>
+  gen:name "Lady Anne Savile"@en ;
+  gen:birthDate "1691" ;
+  gen:deathDate "1717-07-18" ;
+  gen:father <https://www.wikidata.org/wiki/Q8018148> ;
+  gen:mother <#Elizabeth_Grimston> .
+  # oo 1706-02-07 Charles Bruce, 3rd Earl of Ailesbury and 4th Earl of Elgin, 1682-05-29 - 1747-02-10, https://www.wikidata.org/wiki/Q5075841
+# ----
+<https://www.wikidata.org/wiki/Q16840569>
+  gen:name "Sir Samuel Grimston, 3rd Baronet"@en ;
+  gen:birthDate "1643-01-07" ;
+  gen:deathDate "1700-10" .
+  # oo Lady Elizabeth Finch, 1650 - 1675
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16840569> , <finch.ttl#Lady_Elizabeth_Finch_(died_1675)> .
+
+<#Elizabeth_Grimston>
+  gen:name "Elizabeth Grimston"@en ;
+  gen:birthDate "1671-01-19" ;
+  gen:deathDate "1694" ;
+  gen:father <https://www.wikidata.org/wiki/Q16840569> ;
+  gen:mother <finch.ttl#Lady_Elizabeth_Finch_(died_1675)> .
+  # oo 1687-11-24 William Savile, 2nd Marquess of Halifax, 1665 - 1700-08-31, https://www.wikidata.org/wiki/Q8018148
+# ----
+<finch.ttl#Lady_Elizabeth_Finch_(died_1675)>
+  # Lady Elizabeth Finch, 1650 - 1675
+  gen:father <https://www.wikidata.org/wiki/Q3784808> .
+  # and Elizabeth Harvey
+  # oo Sir Samuel Grimston, 3rd Baronet, 1643-01-07 - 1700-10, https://www.wikidata.org/wiki/Q16840569
+
+# ----
+#<https://www.wikidata.org/wiki/Q7527920>
+  # Sir John Major, 1st Baronet, 1698-05-17 – 1781-02-22
+  # 1st Baronet Major, of Worlingworth Hall, Suffolk 1765-07-15
+  # oo Elizabeth Dale, d. 1780, daughter of Daniel Dale
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7527920> , <#Elizabeth_Dale> ;
+	gen:startDate "1724-01-20" .
+
+<https://www.wikidata.org/wiki/Q56164483>
+  # Elizabeth Major, 1731~ – 1813-03-30
+  gen:father <https://www.wikidata.org/wiki/Q7527920> ;
+  gen:mother <#Elizabeth_Dale> .
+  # oo 1767-07-18 Henry Brydges, 2nd Duke of Chandos, 1708-01-17 - 1771-11-28, https://www.wikidata.org/wiki/Q7585553
+
+# ----
+#<#John_Nicol>
+  # John Nicol
+  # oo Winifred Keck
+  []
+    gen:spouse <#John_Nicol> , <#Winifred_Keck> .
+
+<#Margaret_Nicol>
+  # Margaret Nicol, 1736~ - 1768-08-14
+  gen:father <#John_Nicol> ;
+  gen:mother <#Winifred_Keck> .
+  # oo 1753-03-22 James Brydges, 3rd Duke of Chandos, 1731-12-27 - 1789-09-29, https://www.wikidata.org/wiki/Q6130424
+# ----
+#<https://www.wikidata.org/wiki/Q4772869>
+  # Anthony Keck, 1726 – 1797
+
+<#Winifred_Keck>
+  # Winifred Keck
+  gen:father <https://www.wikidata.org/wiki/Q4772869> .
+  # oo John Nicol, #John_Nicol
+
+# ----
+
+# ----

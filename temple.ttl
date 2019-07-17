@@ -1,0 +1,613 @@
+@base <temple.ttl.ttl> .
+@prefix gen: <http://jjkoch.de/gen#> .
+@prefix wdata: <https://www.wikidata.org/wiki/> .
+@prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+
+#<#Peter_Temple>
+  # Peter Temple, d. 1577-05-28
+  # oo Millicent Kekyll, daughter of William Kekyll
+
+<#Anthony_Temple>
+  # Anthony Temple
+  gen:father <#Peter_Temple> .
+  # and Millicent Kekyll
+<#John_Temple>
+  # John Temple, d. 1603-05-09
+  gen:father <#Peter_Temple> .
+  # oo Susan Spencer, daughter of Thomas Spencer and Dorothy Spencer
+  []
+    gen:spouse <#John_Temple> , <#Susan_Spencer> .
+
+<https://www.wikidata.org/wiki/Q8019243>
+  # Sir William Temple, 1555 - 1627-01-15
+  gen:father <#Anthony_Temple> .
+  # oo Martha Harrison, daughter of Robert Harrison
+<https://www.wikidata.org/wiki/Q7529284> # -> Temple Baronets of Stowe
+  # Sir Thomas Temple, 1st Baronet, 1567-01-09 - 1637-02
+  gen:father <#John_Temple> ;
+  gen:mother <#Susan_Spencer> .
+<https://www.wikidata.org/wiki/Q23018828>
+  # Sir Alexander Temple, 1583-02-09b – 1629
+  gen:father <#John_Temple> ;
+  gen:mother <#Susan_Spencer> .
+  # oo Mary Sommer
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q23018828> , <#Mary_Sommer> ;
+	gen:startDate "1602" .
+
+<https://www.wikidata.org/wiki/Q6260433>
+  # Sir John Temple+2 b. 1600, d. 14 Nov 1677
+  gen:father <https://www.wikidata.org/wiki/Q8019243> .
+  # and Martha Harrison
+  # oo Mary Hammond, d. 1638-11, daughter of Dr. John Hammond
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6260433> , <#Mary_Hammond> ;
+	gen:startDate "1627" .
+<https://www.wikidata.org/wiki/Q3161442>
+  # James Temple, 1606 - 1680-02-17
+  gen:father <https://www.wikidata.org/wiki/Q23018828> ;
+  gen:mother <#Mary_Sommer> .
+
+<https://www.wikidata.org/wiki/Q2248538>
+  # Sir William Temple, 1st Baronet, 1626-04-20 - 1699-01-27
+  # 1st Baronet Temple 1666-01-31
+  gen:father <https://www.wikidata.org/wiki/Q6260433> ;
+  gen:mother <#Mary_Hammond> .
+  # oo Dorothy Osborne, 1627 - 1695
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2248538> , <https://www.wikidata.org/wiki/Q379445> ;
+	gen:startDate "1655-01-31" .
+<https://www.wikidata.org/wiki/Q6260435>
+  # Sir John Temple. 1632 - 1704-03-10
+  gen:father <https://www.wikidata.org/wiki/Q6260433> ;
+  gen:mother <#Mary_Hammond> .
+  # oo Jane Yarner, daughter of Sir Abraham Yarner
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6260435> , <#Jane_Yarner> ;
+	gen:startDate "1663-08-04" .
+
+<#John_Temple_(died_1689)>
+  # John Temple, d. 1689
+  gen:father <https://www.wikidata.org/wiki/Q2248538> ;
+  gen:mother <https://www.wikidata.org/wiki/Q379445> .
+  # oo Marie du Plessis-Rambouillet, daughter of Paul du Plessis-Rambouillet
+  []
+    gen:spouse <#John_Temple_(died_1689)> , <#Marie_du_Plessis-Rambouillet> ;
+	gen:startDate "1685" .
+<#Jane_Martha_Temple>
+  # Jane Martha Temple, 1672 - 1751-06-26
+  gen:father <https://www.wikidata.org/wiki/Q6260435> ;
+  gen:mother <#Jane_Yarner> .
+  # oo 1692-03-08 John Berkeley, 3rd Baron Berkeley of Stratton, 1663a - 1697-02-27, https://www.wikidata.org/wiki/Q2421797
+  # oo 1700-05-12 Hans William Bentinck, 1st Earl of Portland, 1649-07-20 - 1709-11-23, https://www.wikidata.org/wiki/Q336463
+<https://www.wikidata.org/wiki/Q5729056> # -> Viscount Palmerston
+  # Henry Temple, 1st Viscount Palmerston, 1673~ - 1757-01-10
+  gen:father <https://www.wikidata.org/wiki/Q6260435> ;
+  gen:mother <#Jane_Yarner> .
+<#Frances_Temple_(died_1707)>
+  # Frances Temple, d. 1707-07-16
+  gen:father <https://www.wikidata.org/wiki/Q6260435> ;
+  gen:mother <#Jane_Yarner> .
+  # oo William Berkeley, 4th Baron Berkeley of Stratton, d. 1741-03-24, https://www.wikidata.org/wiki/Q8005451
+<#Mary_Temple>
+  # Mary Temple
+  gen:father <https://www.wikidata.org/wiki/Q6260435> ;
+  gen:mother <#Jane_Yarner> .
+  # oo 1683-01 Thomas Flower
+<#Catherine_Temple>
+  # Catherine Temple, 1664-09-04 - 1694-08-04/-20
+  gen:father <https://www.wikidata.org/wiki/Q6260435> ;
+  gen:mother <#Jane_Yarner> .
+  # oo 1681-12-15 Charles Ward, d. 1691b, #Charles_Ward
+  # oo Charles King
+<#Dorothy_Temple>
+  # Dorothy Temple, d. 1718
+  gen:father <https://www.wikidata.org/wiki/Q6260435> ;
+  gen:mother <#Jane_Yarner> .
+  # oo Sir Basil Dixwell, 2nd Baronet, 1665 - 1750, https://www.wikidata.org/wiki/Q26203963
+<#John_Temple_(died_1742)>
+  # John Temple, d. 1742-02
+  gen:father <https://www.wikidata.org/wiki/Q6260435> ;
+  gen:mother <#Jane_Yarner> .
+  # oo Elizabeth Temple
+  []
+    gen:spouse <#John_Temple_(died_1742)> , <#Elizabeth_Temple> .
+
+<#Elizabeth_Temple>
+  # Elizabeth Temple
+  gen:father <#John_Temple_(died_1689)> ;
+  gen:mother <#Marie_du_Plessis-Rambouillet> .
+  # oo John Temple, d. 1742-02, #John_Temple_(died_1742)
+
+
+# Viscount Palmerston
+<https://www.wikidata.org/wiki/Q5729056>
+  # Henry Temple, 1st Viscount Palmerston, 1673~ - 1757-01-10
+  # 1st Viscount Palmerston, of Palmerston, co. Dublin, 1st Baron Temple, of Mount Temple, co. Sligo 1723-03-12
+  gen:father <https://www.wikidata.org/wiki/Q6260435> ;
+  gen:mother <#Jane_Yarner> .
+  # oo Anna Houblon, 1682 - 1735-12-08
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5729056> , <https://www.wikidata.org/wiki/Q27444233> .
+  # oo Isabella Gerard, d. 1762-08-10
+    []
+    gen:spouse <https://www.wikidata.org/wiki/Q5729056> , <#Isabella_Gerard> ;
+	gen:startDate "1738-05-11" .
+
+<https://www.wikidata.org/wiki/Q50819101>
+  # Hon. Henry Temple, 1704 - 1740-08-18
+  gen:father <https://www.wikidata.org/wiki/Q5729056> ;
+  gen:mother <https://www.wikidata.org/wiki/Q27444233> .
+  # oo Elizabeth Lee, d. 1736-10
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q50819101> , <fitzroy.ttl#Elizabeth_Lee> ;
+	gen:startDate "1735-06-18" .
+  # oo Jane Barnard
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q50819101> , <#Jane_Barnard> ;
+	gen:startDate "1738-09-12" .
+<temple.ttl#Richard_Temple>
+  # Hon. Richard Temple, d. 1753b
+  gen:father <https://www.wikidata.org/wiki/Q5729056> ;
+  gen:mother <https://www.wikidata.org/wiki/Q27444233> .
+  # oo Henrietta Pelham, 1730-08-01 - 1768-08-31
+  []
+    gen:spouse <temple.ttl#Richard_Temple> , <montagu.ttl#Henrietta_Pelham> ;
+	gen:startDate "1748-05-18" .
+
+<https://www.wikidata.org/wiki/Q5729064>
+  # Henry Temple, 2nd Viscount Palmerston, 1739-12-04 – 1802-04-17
+  gen:father <https://www.wikidata.org/wiki/Q50819101> ;
+  gen:mother <#Jane_Barnard> .
+  # oo Frances Poole, 1729~ - 1769-06-01
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5729064> , <#Frances_Poole> ;
+	gen:startDate "1767-10-06" .
+  # oo Mary Mee, d. 1805-01-20, daughter of Benjamin Thomas Mee
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5729064> , <#Mary_Mee> ;
+	gen:startDate "1783-01-05" .
+
+<https://www.wikidata.org/wiki/Q193656>
+  # Henry John Temple, 3rd Viscount Palmerston, 1784-10-20 - 1865-10-18
+  gen:father <https://www.wikidata.org/wiki/Q5729064> ;
+  gen:mother <#Mary_Mee> .
+  # oo Hon. Emily Mary Lamb, 1787 - 1869-09-11
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q193656> , <https://www.wikidata.org/wiki/Q5372252> ;
+	gen:startDate "1839-12-16" .
+<#Frances_Temple>
+  # Hon. Frances Temple
+  gen:father <https://www.wikidata.org/wiki/Q5729064> ;
+  gen:mother <#Mary_Mee> .
+  # oo 1820-08-09 Sir William Bowles, 1780 - 1869-07-02, https://www.wikidata.org/wiki/Q8005773
+<#Elizabeth_Temple-Sulivan>
+  # Hon. Elizabeth Temple
+  gen:father <https://www.wikidata.org/wiki/Q5729064> ;
+  gen:mother <#Mary_Mee> .
+  # oo Rt. Hon. Laurence Sulivan, 1783–1866, https://www.wikidata.org/wiki/Q16065830
+
+
+# Temple Baronets of Stowe
+<https://www.wikidata.org/wiki/Q7529284>
+  gen:name "Sir Thomas Temple, 1st Baronet"@en ;
+  # 1st Baronet Temple, of Stowe, Buckinghamshire 1611-09-24
+  gen:birthDate "1567-01-09" ;
+  gen:deathDate "1637-02" ;
+  gen:father <#John_Temple> ;
+  gen:mother <#Susan_Spencer> .
+  # oo Hester Sandys, d. 1656
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7529284> , <#Hester_Sandys> ;
+	gen:startDate "1595" .
+<#Elizabeth_Temple_(died_1648)>
+  # Elizabeth Temple, d. 1648
+  gen:father <#John_Temple> ;
+  gen:mother <#Susan_Spencer> .
+  # oo 1602~ William Fiennes, 1st Viscount Saye and Sele, 1582-05-28 - 1662-04-14, https://www.wikidata.org/wiki/Q8009023
+
+<https://www.wikidata.org/wiki/Q16191338>
+  gen:name "Sir Peter Temple, 2nd Baronet"@en ;
+  gen:birthDate "1592-10-10" ;
+  gen:deathDate "1653" ;
+  gen:father <https://www.wikidata.org/wiki/Q7529284> ;
+  gen:mother <#Hester_Sandys> .
+  # oo Ann Throckmorton, d. 1620-01-20~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16191338> , <#Ann_Throckmorton> ;
+	gen:startDate "1614-07-05" .
+  # oo Christian Leveson, 1612~ - 1655-04-01~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16191338> , <gower.ttl#Christian_Leveson> ;
+	gen:startDate "1630-05-20" .
+<#Sir_John_Temple>
+  gen:name "Sir John Temple"@en ;
+  gen:birthDate "1593-11-10" ;
+  gen:deathDate "1632" ;
+  gen:father <https://www.wikidata.org/wiki/Q7529284> ;
+  gen:mother <#Hester_Sandys> .
+  # oo Dorothy Lee, daughter of Edmund Lee and Dorothy Browne
+<#Martha_Temple>
+  # Martha Temple, b. 1595
+  gen:father <https://www.wikidata.org/wiki/Q7529284> ;
+  gen:mother <#Hester_Sandys> .
+  # oo 1611 Sir Thomas Penyston, 1st Baronet, 1591 – 1644, https://www.wikidata.org/wiki/Q7529238
+<#Margaret_Temple>
+  # Margaret Temple, b. 1606
+  gen:father <https://www.wikidata.org/wiki/Q7529284> ;
+  gen:mother <#Hester_Sandys> .
+  # oo 1627~ Sir Edward Longueville, 1st Baronet, 1604 – 1661, #Sir_Edward_Longueville,_1st_Baronet
+
+<#Anne_Temple_(died_1696)>
+  # Anne Temple, 1619-01-09 - 1696-08-13
+  gen:father <https://www.wikidata.org/wiki/Q16191338> ;
+  gen:mother <#Ann_Throckmorton> .
+  # oo 1637 Thomas Roper, 2nd Viscount Baltinglass, 1622b - 1666-04~, #Thomas_Roper,_2nd_Viscount_Baltinglass
+<https://www.wikidata.org/wiki/Q7528666>
+  gen:name "Sir Richard Temple, 3rd Baronet"@en ;
+  gen:birthDate "1634-03-28" ;
+  gen:deathDate "1697-05-08" ;
+  gen:father <https://www.wikidata.org/wiki/Q16191338> ;
+  gen:mother <gower.ttl#Christian_Leveson> .
+  # oo Mary Knapp, d. 1726-05-12~, daughter of Henry Knapp
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7528666> , <#Mary_Knapp> ;
+	gen:startDate "1675-08-25" .
+<#Frances_Temple_(died_1689)>
+  # Frances Temple, d. 1689
+  gen:father <https://www.wikidata.org/wiki/Q16191338> ;
+  gen:mother <gower.ttl#Christian_Leveson> .
+  # oo 1650-09-20 Weston Ridgeway, 3rd Earl of Londonderry, 1620 - 1672, #Weston_Ridgeway,_3rd_Earl_of_Londonderry
+<#Sir_Peter_Temple>
+  gen:name "Sir Peter Temple"@en ;
+  gen:birthDate "1613" ;
+  gen:deathDate "1660-01-11~" ;
+  gen:father <#Sir_John_Temple> .
+  # and Dorothy Lee
+  # oo Eleanor Tyrrell, d. 1671, daughter of Sir Timothy Tyrrell
+<https://www.wikidata.org/wiki/Q7794396>
+  # Sir Thomas Temple, 1st Baronet, 1614-06-10 - 1674-03-27
+  # 1st Baronet Temple 1662-07-07
+  gen:father <#Sir_John_Temple> .
+  # and Dorothy Lee
+
+<https://www.wikidata.org/wiki/Q2072512>
+  gen:name "Richard Temple, 1st Viscount Cobham"@en ;
+  # 4th Baronet Temple, of Stowe, Buckinghamshire 1697-05-08
+  # 1st Baron Cobham, of Cobham, co. Kent 1714-10-19
+  # 1st Viscount Cobham, 1st Baron Cobham, of Cobham, co. Kent 1718-05-23
+  gen:birthDate "1675-10-24" ;
+  gen:deathDate "1749-09-14" ;
+  gen:father <https://www.wikidata.org/wiki/Q7528666> ;
+  gen:mother <#Mary_Knapp> .
+  # oo Anne Halsey, d. 1760-03-20, daughter of Edmund Halsey
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2072512> , <#Anne_Halsey> ;
+	gen:startDate "1715-09" .
+<#Mary_Temple_(died_1763)>
+  # Mary Temple, 1688~ - 1763-11-16
+  gen:father <https://www.wikidata.org/wiki/Q7528666> ;
+  gen:mother <#Mary_Knapp> .
+  # oo Rev. Richard West, 1670~ – 1716, https://www.wikidata.org/wiki/Q7329904
+  # oo Sir John Langham, 4th Baronet, d. 1747-05, #Sir_John_Langham,_4th_Baronet
+<https://www.wikidata.org/wiki/Q5746302>
+  gen:name "Hester Temple, 1st Countess Temple"@en ;
+  # 2nd Viscountess Cobham 1749-09-13
+  # 1st Countess Temple, suo jure 1749-10-18
+  gen:birthDate "1690~" ;
+  gen:deathDate "1752-10-06" ;
+  gen:father <https://www.wikidata.org/wiki/Q7528666> ;
+  gen:mother <#Mary_Knapp> .
+  # oo 1710-11-25 Sir Richard Grenville, 1678 - 1727-02-17, https://www.wikidata.org/wiki/Q7326071
+<#Christian_Temple>
+  # Christian Temple. d. 1748~
+  gen:father <https://www.wikidata.org/wiki/Q7528666> ;
+  gen:mother <#Mary_Knapp> .
+  # oo 1708-05-08 Sir Thomas Lyttelton, 4th Baronet, 1686 – 1751-09-14, https://www.wikidata.org/wiki/Q7529197
+<#Eleanor_Temple>
+  gen:name "Eleanor Temple"@en ;
+  gen:deathDate "1729-03-22~" ;
+  gen:father <#Sir_Peter_Temple> .
+  # and Eleanor Tyrrell
+  # oo Richard Grenville, 1647-01-14 - 1719-07-01~, grenville.ttl#Sir_Richard_Grenville
+
+
+# ----
+#<https://www.wikidata.org/wiki/Q7176242>
+  # Sir Peter Osborne, of Chicksands, 1584 - 1653-03
+  # son of Sir John Osborne
+  # and Dorothy Barlee
+  # oo Dorothy Danvers, 1590 - 1650
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7176242> , <#Dorothy_Danvers> .
+
+<https://www.wikidata.org/wiki/Q379445>
+  # Dorothy Osborne, 1627 - 1695
+  gen:father <https://www.wikidata.org/wiki/Q7176242> ;
+  gen:mother <#Dorothy_Danvers> .
+  # oo 1655-01-31 Sir William Temple, 1st Baronet, 1626-04-20 - 1699-01-27, https://www.wikidata.org/wiki/Q2248538
+# ----
+#<https://www.wikidata.org/wiki/Q16828870>
+  # Sir John Danvers, 1540 - 1594-12-10
+  # oo Elizabeth Neville, 1545 - 1630-06-21~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16828870> , <https://www.wikidata.org/wiki/Q5362658> .
+
+<#Dorothy_Danvers>
+  # Dorothy Danvers, 1590 - 1650
+  gen:father <https://www.wikidata.org/wiki/Q16828870> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5362658> .
+  # oo Sir Peter Osborne, of Chicksands, 1584 - 1653-03, https://www.wikidata.org/wiki/Q7176242
+# ----
+# neville.ttl:
+<https://www.wikidata.org/wiki/Q5362658>
+  # Elizabeth Neville, 1545 - 1630-06-21~
+  gen:father <https://www.wikidata.org/wiki/Q6250307> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6485877> .
+  # oo Sir John Danvers, 1540 - 1594-12-10, https://www.wikidata.org/wiki/Q16828870
+
+# ----
+#<https://www.wikidata.org/wiki/Q3181045>
+  # John Berkeley, 1st Baron Berkeley of Stratton, 1607-02-01 - 1678-08-28
+  # 1st Baron Berkeley of Stratton, Cornwall 1658-05-19
+  # oo Christiana Riccard, 1639-03-19 - 1698-08-27, daughter of Sir Andrew Riccard and Katharine (?)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3181045> , <#Christiana_Riccard> ;
+	gen:startDate "1662b" .
+
+<https://www.wikidata.org/wiki/Q2421797>
+  # John Berkeley, 3rd Baron Berkeley of Stratton, 1663a - 1697-02-27
+  gen:father <https://www.wikidata.org/wiki/Q3181045> ;
+  gen:mother <#Christiana_Riccard> .
+  # oo Jane Martha Temple, 1672 - 1751-05-26
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2421797> , <#Jane_Martha_Temple> ;
+	gen:startDate "1692-03-08" .
+<https://www.wikidata.org/wiki/Q8005451>
+  # William Berkeley, 4th Baron Berkeley of Stratton, d. 1741-03-24
+  gen:father <https://www.wikidata.org/wiki/Q3181045> ;
+  gen:mother <#Christiana_Riccard> .
+  # oo Frances Temple, d. 1707-07-16
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8005451> , <#Frances_Temple_(died_1707)> .
+
+# ----
+#<#Thomas_Flower>
+  # Thomas Flower
+  # oo Mary Temple
+  []
+    gen:spouse <#Thomas_Flower> , <#Mary_Temple> ;
+	gen:startDate "1683-01" .
+
+<https://www.wikidata.org/wiki/Q8009173>
+  # William Flower, 1st Baron Castle Durrow, 1685-03-11 - 1746-04-29
+  # 1st Baron Castle-Durrow, co. Kilkenny 1733-10-27
+  gen:father <#Thomas_Flower> ;
+  gen:mother <#Mary_Temple> .
+
+# ----
+#<#Sir_Robert_Ward,_1st_Baronet>
+  # Sir Robert Ward, 1st Baronet, 1610 - 1691
+  # 1st Baronet Ward, of Killough, co. Down 1682-12-09
+  # oo Mary Leslie
+  []
+    gen:spouse <#Sir_Robert_Ward,_1st_Baronet> , <#Mary_Leslie> ;
+	gen:startDate "1661-04b" .
+
+<#Charles_Ward>
+  # Charles Ward, d. 1691b
+  gen:father <#Sir_Robert_Ward,_1st_Baronet> ;
+  gen:mother <#Mary_Leslie> .
+  # oo Catherine Temple, 1664-09-04 - 1694-08-04/-20
+  []
+    gen:spouse <#Charles_Ward> , <#Catherine_Temple> ;
+	gen:startDate "1681-12-15" .
+# ----
+<#Mary_Leslie>
+  # Mary Leslie
+  gen:father <https://www.wikidata.org/wiki/Q11805221> .
+  # and Jane Swinton
+  # oo 1661-04b Sir Robert Ward, 1st Baronet, 1610 - 1691, #Sir_Robert_Ward,_1st_Baronet
+
+# ----
+#<https://www.wikidata.org/wiki/Q50026244>
+  # Sir Basil Dixwell, 1st Baronet, d. 1641
+  # oo Dorothy Peyton
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q50026244> , <#Dorothy_Peyton> .
+
+<https://www.wikidata.org/wiki/Q26203963>
+  # Sir Basil Dixwell, 2nd Baronet, 1665 - 1750
+  gen:father <https://www.wikidata.org/wiki/Q50026244> ;
+  gen:mother <#Dorothy_Peyton> .
+  # oo Dorothy Temple, d. 1718
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q26203963> , <#Dorothy_Temple> .
+# ----
+<#Dorothy_Peyton>
+  # Dorothy Peyton
+  gen:father <https://www.wikidata.org/wiki/Q7529240> .
+  # and Cecilia Clerke
+  # oo Sir Basil Dixwell, 1st Baronet, d. 1641, https://www.wikidata.org/wiki/Q50026244
+
+# ----
+<https://www.wikidata.org/wiki/Q27444233>
+  # Anna Houblon, 1682 - 1735-12-08
+  gen:father <https://www.wikidata.org/wiki/Q22336843> .
+  # oo Henry Temple, 1st Viscount Palmerston, 1673~ - 1757-01-10, https://www.wikidata.org/wiki/Q5729056
+
+# ----
+#<https://www.wikidata.org/wiki/Q7526710>
+  # Sir Francis Gerard, 2nd Baronet, 1617-10-12 – 1680-12
+  # oo Isabel Cheek
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7526710> , <#Isabel_Cheek> .
+
+<#Sir_Francis_Gerard,_4th_Baronet>
+  # Sir Francis Gerard, 4th Baronet, d. 1704
+  gen:father <https://www.wikidata.org/wiki/Q7526710> ;
+  gen:mother <#Isabel_Cheek> .
+
+<#Isabella_Gerard>
+  # Isabella Gerard, d. 1762-08-10
+  gen:father <#Sir_Francis_Gerard,_4th_Baronet> .
+  # oo 1738-05-11 Henry Temple, 1st Viscount Palmerston, 1673~ - 1757-01-10, https://www.wikidata.org/wiki/Q5729056
+# ----
+<#Isabel_Cheek>
+  # Isabel Cheek
+  gen:father <https://www.wikidata.org/wiki/Q7788373> .
+  # oo Sir Francis Gerard, 2nd Baronet, 1617-10-12 – 1680-12, https://www.wikidata.org/wiki/Q7526710
+
+# ----
+<#Jane_Barnard>
+  # Jane Barnard
+  gen:father <https://www.wikidata.org/wiki/Q6220731> .
+  # and Jane Godschall
+  # oo 1738-09-12 Hon. Henry Temple, 1704 - 1740-08-18, https://www.wikidata.org/wiki/Q50819101
+
+# ----
+#<https://www.wikidata.org/wiki/Q26793339>
+  # Sir Francis Poole, 2nd Baronet, 1682~ – 1763-02-15
+  # son of Sir James Poole, 1st Baronet
+  # oo Frances Pelham, d. 1760-04-30
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q26793339> , <montagu.ttl#Frances_Pelham> .
+
+<#Frances_Poole>
+  # Frances Poole, 1729~ - 1769-06-01
+  gen:father <https://www.wikidata.org/wiki/Q26793339> ;
+  gen:mother <montagu.ttl#Frances_Pelham> .
+  # oo 1767-10-06 Henry Temple, 2nd Viscount Palmerston, 1739-12-04 – 1802-04-17, https://www.wikidata.org/wiki/Q5729064
+
+# ----
+#<https://www.wikidata.org/wiki/Q8005773>
+  # Sir William Bowles, 1780 - 1869-07-02
+  # son of William Bowles
+  # and Dinah Frankland
+  # oo Hon. Frances Temple
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8005773> , <#Frances_Temple> ;
+	gen:startDate "1820-08-09" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q16065830>
+  # Rt. Hon. Laurence Sulivan, 1783–1866
+  # oo Hon. Elizabeth Temple
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16065830> , <#Elizabeth_Temple-Sulivan> .
+
+# ----
+<#Hester_Sandys>
+  # Hester Sandys, d. 1656
+  gen:father <https://www.wikidata.org/wiki/Q6851537> .
+  # oo 1595 Sir Thomas Temple, 1st Baronet, 1567-01-09 - 1637-02, https://www.wikidata.org/wiki/Q7529284
+
+# ----
+#<https://www.wikidata.org/wiki/Q4800466>
+  # Sir Arthur Throckmorton of Paulerspury, 1557~ - 1626-07-21
+  # oo Anne Lucas, daughter of Sir Thomas Lucas
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4800466> , <#Anne_Lucas> ;
+	gen:startDate "1586~" .
+
+<#Ann_Throckmorton>
+  # Ann Throckmorton, d. 1620-01-20~
+  gen:father <https://www.wikidata.org/wiki/Q4800466> ;
+  gen:mother <#Anne_Lucas> .
+  # oo 1614-07-05 Sir Peter Temple, 2nd Baronet, 1592-10-10 - 1653, https://www.wikidata.org/wiki/Q16191338
+
+# ----
+#<https://www.wikidata.org/wiki/Q7529238>
+  # Sir Thomas Penyston, 1st Baronet, 1591 – 1644
+  # 1st Baronet Penyston 1611
+  # oo Martha Temple, b. 1595
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7529238> , <#Martha_Temple> ;
+	gen:startDate "1611" .
+
+# ----
+#<#Sir_Edward_Longueville,_1st_Baronet>
+  # Sir Edward Longueville, 1st Baronet, 1604 – 1661
+  # 1st Baronet Longueville 1638
+  # son of Sir Henry Longueville
+  # and Katherine Cary
+  # oo Margaret Temple, b. 1606
+  []
+    gen:spouse <#Sir_Edward_Longueville,_1st_Baronet> , <#Margaret_Temple> ;
+	gen:startDate "1627~" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q19520092>
+  # Thomas Roper, 1st Viscount Baltinglass, 1587b - 1638-02-18
+  # 1st Baron of Bantry, co. Cork, 1st Viscount Baltinglass, co. Wicklow 1627-06-27
+  # oo Ann Harington, d. 1640-01-07, daughter of Sir Henry Harington and Ruth Pilkington
+
+<#Thomas_Roper,_2nd_Viscount_Baltinglass>
+  # Thomas Roper, 2nd Viscount Baltinglass, 1622b - 1666-04~
+  gen:father <https://www.wikidata.org/wiki/Q19520092> .
+  # and Ann Harington
+  # oo Anne Temple, 1619-01-09 - 1696-08-13
+  []
+    gen:spouse <#Thomas_Roper,_2nd_Viscount_Baltinglass> , <#Anne_Temple_(died_1696)> ;
+	gen:startDate "1637" .
+
+# ----
+<#Mary_Knapp>
+  gen:name "Mary Knapp"@en ;
+  gen:deathDate "1726-05-12~" ;
+  gen:father <#Henry_Knapp> .
+  # oo 1675-08-25 Sir Richard Temple, 3rd Baronet, 1634-03-28 - 1697-05-08, https://www.wikidata.org/wiki/Q7528666
+
+# ----
+#<https://www.wikidata.org/wiki/Q7793547>
+  # Thomas Ridgeway, 1st Earl of Londonderry, 1565~ - 1632-01-24
+  # 1st Baronet Ridgway 1611-11-25
+  # 1st Baron Ridgeway of Gallen-Ridgeway 1616-05-25
+  # 1st Earl of Londonderry 1622-08-23
+  # oo Cicely MacWilliam, d. 1627
+
+<#Robert_Ridgeway,_2nd_Earl_of_Londonderry>
+  # Robert Ridgeway, 2nd Earl of Londonderry, d. 1641
+  gen:father <https://www.wikidata.org/wiki/Q7793547> .
+  # and Cicely MacWilliam
+
+<#Weston_Ridgeway,_3rd_Earl_of_Londonderry>
+  # Weston Ridgeway, 3rd Earl of Londonderry, 1620 - 1672
+  gen:father <#Robert_Ridgeway,_2nd_Earl_of_Londonderry> .
+  # oo Frances Temple, d. 1689
+  []
+    gen:spouse <#Weston_Ridgeway,_3rd_Earl_of_Londonderry> , <#Frances_Temple_(died_1689)> ;
+	gen:startDate "1650-09-20" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q7329904>
+  # Rev. Richard West, 1670~ – 1716
+  # oo Mary Temple, 1688~ - 1763-11-16
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7329904> , <#Mary_Temple_(died_1763)> .
+
+# ----
+#<https://www.wikidata.org/wiki/Q7527876>
+  # Sir John Langham, 1st Baronet, 1584 - 1671-05-16
+  # 1st Baronet Langham, of Cottesbrooke, co. Northampton 1660-06-07
+  # oo Mary Bunce, d. 1652-04-08, daughter of James Bunce and Mary Holmedon
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7527876> , <#Mary_Bunce> ;
+	gen:startDate "1620" .
+
+<https://www.wikidata.org/wiki/Q28099514>
+  # Sir William Langham, 3rd Baronet, 1725~/1631 - 1700-09-29
+  gen:father <https://www.wikidata.org/wiki/Q7527876> ;
+  gen:mother <#Mary_Bunce> .
+  # oo Martha Hay, daughter of Herbert Hay
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q28099514> , <#Martha_Hay> ;
+	gen:startDate "1666-07-10" .
+
+<#Sir_John_Langham,_4th_Baronet>
+  # Sir John Langham, 4th Baronet, d. 1747-05
+  gen:father <https://www.wikidata.org/wiki/Q28099514> ;
+  gen:mother <#Martha_Hay> .
+  # oo Mary Temple, 1688~ - 1763-11-16
+  []
+    gen:spouse <#Sir_John_Langham,_4th_Baronet> , <#Mary_Temple_(died_1763)> .

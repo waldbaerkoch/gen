@@ -2955,24 +2955,6 @@
   # oo 1554-05-28 Gerald FitzGerald, 1st/11th Earl of Kildare, 1525 - 1585-11-16, https://www.wikidata.org/wiki/Q3103872
 
 # ----
-#<https://www.wikidata.org/wiki/Q1291914>
-  # Edward Clinton, 1st Earl of Lincoln, 1512 - 1585-01-16
-  # 9th Lord Clinton 1517-08-07
-  # 1st Earl of Lincoln 1572-05-04
-  # son of Thomas Clinton, 8th Lord Clinton
-  # and Joan Poynings
-  # oo Lady Elizabeth FitzGerald, 1527 - 1590-03
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q1291914> , <https://www.wikidata.org/wiki/Q5362599> ;
-	gen:startDate "1552-10-01~" .
-
-<#Margaret_Clinton>
-  # Margaret Clinton, d. 1688-10~
-  gen:father <https://www.wikidata.org/wiki/Q15989912> .
-  # and Bridget Fiennes
-  # oo Hugh Boscawen, 1625-08-21 - 1701-06~, #Hugh_Boscawen
-
-# ----
 #<https://www.wikidata.org/wiki/Q7349023>
   # Robert Preston, 1st Viscount Gormanston, 1435 – 1503-04-09
   # 1st Viscount Gormanston 1478-08-07
@@ -3168,6 +3150,10 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q8016212> , <boyle.ttl#Lady_Margaret_Boyle> ;
 	gen:startDate "1665" .
+  # oo Elizabeth Brydges, 1651-03-25 - 1718-02-03
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8016212> , <https://www.wikidata.org/wiki/Q28837775> ;
+	gen:startDate "1684a" .
 
 <https://www.wikidata.org/wiki/Q8016214>
   # William MacWilliam O'Brien, 3rd Earl of Inchiquin, 1662/1666~ – 1719-12-24
@@ -3546,11 +3532,18 @@
   # 1st Baronet MacCarty 1638~
   # 2nd Viscount Muskerry 1640-02-20
   # 1st Earl of Clancarty, co. Cork 1658-11-27
+  # son of Charles MacCarty, 1st Viscount Muskerry
+  # and Margaret O'Brien
   # oo Eleanor Butler, d. 1682
   []
     gen:spouse <https://www.wikidata.org/wiki/Q3035972> , <butler.ttl#Eleanor_Butler_(died_1682)> ;
 	gen:startDate "1648b" .
 
+<#Lady_Margaret_MacCarty>
+  # Lady Margaret MacCarty, 1646 - 1703-01-04
+  gen:father <https://www.wikidata.org/wiki/Q3035972> ;
+  gen:mother <butler.ttl#Eleanor_Butler_(died_1682)> .
+  # oo Luke Plunkett, 3rd Earl of Fingall, 1639 - 1684~, grenville.ttl#Luke_Plunkett,_3rd_Earl_of_Fingall
 <#Callaghan_MacCarty,_3rd_Earl_of_Clancarty>
   # Callaghan MacCarty, 3rd Earl of Clancarty, d. 1676-11-21
   gen:father <https://www.wikidata.org/wiki/Q3035972> ;
@@ -3573,12 +3566,12 @@
   # Hugh Boscawen, 1625-08-21 - 1701-06~
   # oo Margaret Clinton, d. 1688-10~
   []
-    gen:spouse <#Hugh_Boscawen> , <#Margaret_Clinton> .
+    gen:spouse <#Hugh_Boscawen> , <shirley.ttl#Margaret_Clinton> .
 
 <#Hugh_Boscawen,_of_Tregothnan>
   # Hugh Boscawen, of Tregothnan
   gen:father <#Hugh_Boscawen> ;
-  gen:mother <#Margaret_Clinton> .
+  gen:mother <shirley.ttl#Margaret_Clinton> .
   # oo Lady Anne FitzGerald
   []
     gen:spouse <#Hugh_Boscawen,_of_Tregothnan> , <#Lady_Anne_FitzGerald_2> .
