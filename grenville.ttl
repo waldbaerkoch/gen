@@ -6,10 +6,19 @@
 
 #<#Sir_Richard_Grenville>
   # Richard Grenville, 1647-01-14 - 1719-07-01~
+  # son of Richard Grenville
+  # and Anne Borlase
   # oo Eleanor Temple, d. 1729-03-22~
   []
     gen:spouse <#Sir_Richard_Grenville> , <temple.ttl#Eleanor_Temple> .
 
+<#Penelope_Grenville>
+  gen:name "Penelope Grenville"@en ;
+  gen:birthDate "1674-04-06" ;
+  gen:deathDate "1745" ;
+  gen:father <#Sir_Richard_Grenville> ;
+  gen:mother <temple.ttl#Eleanor_Temple> .
+  # oo 1701 Sir John Conway, 2nd Baronet, 1663 - 1721-04-27, https://www.wikidata.org/wiki/Q28099583
 <https://www.wikidata.org/wiki/Q7326071>
   gen:name "Sir Richard Grenville"@en ;
   gen:birthDate "1678" ;
@@ -273,6 +282,25 @@
   gen:father <#Greville_Stewart_Parker_Freeman-Grenville> ;
   gen:mother <https://www.wikidata.org/wiki/Q1286271> .
 
+
+
+# ----
+#<https://www.wikidata.org/wiki/Q7527115>
+  # Sir Henry Conway, 1st Baronet, 1630 - 1669
+  # 1st Baronet Conway 1660-07-25
+  # oo Mary Lloyd, d. 1687b, daughter of Sir Richard Lloyd
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7527115> , <#Mary_Lloyd> ;
+	gen:startDate "1662~" .
+
+<https://www.wikidata.org/wiki/Q28099583>
+  # Sir John Conway, 2nd Baronet, 1663 - 1721-04-27
+  gen:father <https://www.wikidata.org/wiki/Q7527115> ;
+  gen:mother <#Mary_Lloyd> .
+  # oo Penelope Grenville, 1674-04-06 - 1745
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q28099583> , <#Penelope_Grenville> ;
+	gen:startDate "1701" .
 
 # ----
 #<#Thomas_Chambers>
