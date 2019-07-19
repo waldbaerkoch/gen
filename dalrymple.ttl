@@ -111,7 +111,7 @@
   # Lady Elizabeth Dalrymple
   gen:father <https://www.wikidata.org/wiki/Q8007550> ;
   gen:mother <#Penelope_Crichton,_Countess_of_Dumfries> .
-  # oo John McDouall -> Patrick MacDowall-Crichton, 6th Earl of Dumfries, (1726-10-15 - 1803-04-07, https://www.wikidata.org/wiki/Q7615881) oo 1771-09-12 Margaret Crauford, (d. 1799-05-05, daughter of Ronald Crauford) -> Lady Elizabeth Penelope MacDowall-Crichton (1772-11-25 - 1797-07-25, https://www.wikidata.org/wiki/Q16761120) oo 1792-10-12 John Stuart, Viscount Mount Stuart (1767-09-25 - 1794-01-22, https://www.wikidata.org/wiki/Q275288, son of https://www.wikidata.org/wiki/Q275336 and https://www.wikidata.org/wiki/Q16760635)
+  # oo John McDouall, #John_McDouall
 <https://www.wikidata.org/wiki/Q16859283>
   # John Dalrymple, 5th Earl of Stair, d. 1789-10-13
   gen:father <#Hon._George_Dalrymple> ;
@@ -474,7 +474,7 @@
   # Hew Dalrymple, 1717-01-07 - 1740-07-26
   gen:father <#Hew_Dalrymple,_Lord_Drummore> ;
   gen:mother <#Anne_Horn> .
-  # oo Anne Inglis, daughter of https://www.wikidata.org/wiki/Q7527853
+  # oo Anne Inglis
   []
     gen:spouse <#Hew_Dalrymple_(died_1740)> , <#Anne_Inglis> .
 <https://www.wikidata.org/wiki/Q51383433>
@@ -624,7 +624,7 @@
   # Helen Jane Dalrymple, d. 1882-01-04
   gen:father <https://www.wikidata.org/wiki/Q7527815> ;
   gen:mother <#Charlotte_Warrender> .
-  # oo 1833-02-14 Alexander Maclean of Ardgour, d. 1872-11-28, son of https://www.wikidata.org/wiki/Q16997149 ?
+  # oo 1833-02-14 Alexander Maclean of Ardgour, d. 1872-11-28, #Alexander_Maclean_of_Ardgour
 <#Georgina_Dalrymple>
   # Georgina Dalrymple, d. 1872-05-01
   gen:father <https://www.wikidata.org/wiki/Q7527815> ;
@@ -1094,6 +1094,28 @@
   # oo 1773b Sir Hew Hamilton-Dalrymple of Bargany, 3rd Baronet, 1746-10-26 - 1800-02-13, https://www.wikidata.org/wiki/Q7527270
 
 # ----
+#<#John_McDouall>
+  # John McDouall
+  # oo Lady Elizabeth Dalrymple
+  []
+    gen:spouse <#John_McDouall> , <#Lady_Elizabeth_Dalrymple> .
+
+<https://www.wikidata.org/wiki/Q7615881>
+  # Patrick MacDowall-Crichton, 6th Earl of Dumfries, 1726-10-15 - 1803-04-07
+  gen:father <#John_McDouall> ;
+  gen:mother <#Lady_Elizabeth_Dalrymple> .
+  # oo Margaret Crauford, d. 1799-05-05, daughter of Ronald Crauford
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7615881> , <#Margaret_Crauford> ;
+	gen:startDate "1771-09-12" .
+
+<https://www.wikidata.org/wiki/Q16761120>
+  # Lady Elizabeth Penelope MacDowall-Crichton, 1772-11-25 - 1797-07-25
+  gen:father <https://www.wikidata.org/wiki/Q7615881> ;
+  gen:mother <#Margaret_Crauford> .
+  # oo 1792-10-12 John Stuart, Viscount Mount Stuart 1767-09-25 - 1794-01-22, https://www.wikidata.org/wiki/Q275288
+
+# ----
 # lindsay.ttl:
 #<https://www.wikidata.org/wiki/Q7615693>
   # James Lindsay, 5th Earl of Balcarres, 1691-11.14 . 1768-02-20
@@ -1303,7 +1325,7 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q3938260> , <#Henrietta_Carmichael> ;
 	gen:startDate "1741-10-17" .
-  # oo Jean Grant, daughter of https://www.wikidata.org/wiki/Q8010099 and Grizel Millar
+  # oo Jean Grant
   []
     gen:spouse <https://www.wikidata.org/wiki/Q3938260> , <#Jean_Grant> ;
 	gen:startDate "1756" .
@@ -1438,7 +1460,7 @@
 <#Sir_Adolphus_Frederick_Octavious_Liddell>
   # Hon. Sir Adolphus Frederick Octavious Liddell, 1818-01-15 - 1885-06-27
   gen:father <https://www.wikidata.org/wiki/Q7791851> .
-  # oo Frederica Elizabeth Lane Fox, d. 1867-11-29, daughter of https://www.wikidata.org/wiki/Q5541527
+  # oo Frederica Elizabeth Lane Fox, d. 1867-11-29
   []
     gen:spouse <#Sir_Adolphus_Frederick_Octavious_Liddell> , <#Frederica_Elizabeth_Lane_Fox> ;
 	gen:startDate "1845-10-14" .
@@ -1448,6 +1470,11 @@
   gen:father <#Sir_Adolphus_Frederick_Octavious_Liddell> ;
   gen:mother <#Frederica_Elizabeth_Lane_Fox> .
   # oo 1880-09-07 Hon. North de Coigny Dalrymple-Hamilton, 1853-10-31 - 1906-11-04, #North_de_Coigny_Dalrymple-Hamilton
+# ----
+<#Frederica_Elizabeth_Lane_Fox>
+  # Frederica Elizabeth Lane Fox, d. 1867-11-29
+  gen:father <https://www.wikidata.org/wiki/Q5541527> .
+  # oo 1845-10-14 Hon. Sir Adolphus Frederick Octavious Liddell, 1818-01-15 - 1885-06-27, #Sir_Adolphus_Frederick_Octavious_Liddell
 
 # ----
 #<#Colonel_Frederick_Henry_Harford>
@@ -1554,10 +1581,20 @@
   gen:mother <https://www.wikidata.org/wiki/Q48229713> .
   # oo 1823-12-18 William Duncombe, 2nd Baron Feversham of Duncombe Park, 1798-01-14 - 1867-02-11, https://www.wikidata.org/wiki/Q8008115
 
+<https://www.wikidata.org/wiki/Q275288>
+  # John Stuart, Viscount Mount Stuart 1767-09-25 - 1794-01-22
+  gen:father <https://www.wikidata.org/wiki/Q275336> ;
+  gen:mother <https://www.wikidata.org/wiki/Q16760635> .
+  # oo Lady Elizabeth Penelope MacDowall-Crichton, 1772-11-25 - 1797-07-25
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q275288> , <https://www.wikidata.org/wiki/Q16761120> ;
+	gen:startDate "1792-10-12" .
 
-#<https://www.wikidata.org/wiki/Q6385074>
+<https://www.wikidata.org/wiki/Q6385074>
   # Hon. Keith Stewart of Glasserton, 1739 – 1795-03-03
-  # oo Georgiana Isabella d'Aguilar (daughter of https://www.wikidata.org/wiki/Q5382304)
+  gen:father <https://www.wikidata.org/wiki/Q4720146> ;
+  gen:mother <https://www.wikidata.org/wiki/Q59343588> .
+  # oo Georgiana Isabella d'Aguilar
   []
     gen:spouse <https://www.wikidata.org/wiki/Q6385074> , <#Georgiana_Isabella_d'Aguilar> ;
 	gen:startDate "1782-05-13" .
@@ -1579,6 +1616,11 @@
   []
     gen:spouse <stuart.ttl#James_Stewart> , <dalrymple.ttl#Sarah_Georgina_Dalrymple-Hay> ;
 	gen:startDate "1849-11-20" .
+# ----
+<#Georgiana_Isabella_d'Aguilar>
+  # Georgiana Isabella d'Aguilar
+  gen:father <https://www.wikidata.org/wiki/Q5382304> .
+  # oo 1782-05-13 Hon. Keith Stewart of Glasserton, 1739 – 1795-03-03, https://www.wikidata.org/wiki/Q6385074
 
 # ----
 <#Sir_James_Reginald_Lea_Rankin,_2nd_Baronet>
@@ -1757,6 +1799,15 @@
   gen:father <https://www.wikidata.org/wiki/Q7147813> .
   # and oo 1780 Helen Blair
   # oo 1806-07-30 Sir John Dalrymple of North Berwick, 5th Baronet, 1780-12-02 - 1835-03-26, https://www.wikidata.org/wiki/Q7527815
+
+# ----
+<#Alexander_Maclean_of_Ardgour>
+  # Alexander Maclean of Ardgour, d. 1872-11-28
+  gen:father <https://www.wikidata.org/wiki/Q16997149> . # ?
+  # oo Helen Jane Dalrymple, d. 1882-01-04
+  []
+    gen:spouse <#Alexander_Maclean_of_Ardgour> , <#Helen_Jane_Dalrymple> ;
+	gen:startDate "1833-02-14" .
 
 # ----
 #<https://www.wikidata.org/wiki/Q26266158>
