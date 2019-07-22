@@ -8,7 +8,7 @@
 #<https://www.wikidata.org/wiki/Q5930838>
   # Hugh Fraser, 1st Lord (Fraser of) Lovat, d. 1499-11-01a/1501-04-30b
   # son of Hugh Fraser, 8th of Lovat and Janet Dunbar
-  # oo Violet Lyon, daughter of https://www.wikidata.org/wiki/Q16850543 and Elizabeth Scrymgeour
+  # oo Violet Lyon
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5930838> , <https://www.wikidata.org/wiki/Q50824515> ;
 	gen:startDate "1464b" .
@@ -106,7 +106,7 @@
   # Hugh Fraser, Master of Lovat, 1624 - 1643-04
   gen:father <#Hugh_Fraser,_7th_Lord_Lovat> ;
   gen:mother <wemyss.ttl#Isabel_Wemyss> .
-  # oo Lady Anne Leslie, daughter of https://www.wikidata.org/wiki/Q1376604
+  # oo Lady Anne Leslie
   []
     gen:spouse <#Hugh_Fraser,_Master_of_Lovat> , <leslie.ttl#Lady_Anne_Leslie> ;
 	gen:startDate "1642-04-30" .
@@ -398,12 +398,15 @@
   # Sir James Stewart of Beath, 1513b - 1544-06-02
   gen:father <https://www.wikidata.org/wiki/Q4758641> .
   # and Margaret Kennedy
-  # oo 1533-06-04b Margaret Lindsay, daughter of John Lindsay, 3rd Lord Lindsay of the Byres (son of https://www.wikidata.org/wiki/Q5236630) and Marion Baillie
+  # oo Margaret Lindsay
+  []
+    gen:spouse <stuart.ttl#Sir_James_Stewart_of_Beath> , <lindsay.ttl#Margaret_Lindsay> ;
+	gen:startDate "1533-06-04b" .
 
 <stuart.ttl#James_Stewart,_1st_Lord_Doune>
   # James Stewart, 1st Lord Doune, 1529~ - 1590-07-20
-  gen:father <stuart.ttl#Sir_James_Stewart_of_Beath> .
-  # and Margaret Lindsay
+  gen:father <stuart.ttl#Sir_James_Stewart_of_Beath> ;
+  gen:mother <lindsay.ttl#Margaret_Lindsay> .
   # oo Lady Margaret Campbell, d. 1572-02
   []
     gen:spouse <stuart.ttl#James_Stewart,_1st_Lord_Doune> , <campbell.ttl#Lady_Margaret_Campbell_(died_1572)> ;
@@ -431,6 +434,16 @@
   gen:father <stuart.ttl#James_Stuart,_Lord_Doune> ;
   gen:mother <#Catherine_Tollemache> .
   # oo 1697 Alexander Fraser, 5th of Strichen, d. 1699-11-03, fraser.ttl#Alexander_Fraser,_5th_of_Strichen
+# ----
+<#John_Lindsay,_3rd_Lord_Lindsay>
+  # John Lindsay, 3rd Lord Lindsay of the Byres
+  gen:father <https://www.wikidata.org/wiki/Q5236630> .
+
+<lindsay.ttl#Margaret_Lindsay>
+  # Margaret Lindsay
+  gen:father <#John_Lindsay,_3rd_Lord_Lindsay> .
+  # and Marion Baillie
+  # oo 1533-06-04b Sir James Stewart of Beath, 1513b - 1544-06-02, stuart.ttl#Sir_James_Stewart_of_Beath
 
 # ----
 <#Ian_Macleod,_16th_of_MacLeod>
@@ -974,7 +987,7 @@
   # Janet Abernethy
   gen:father <#James_Abernethy,_3rd_Lord_Saltoun> .
   # and unknown wife (?)
-  # oo Alexander Ogilvy, 4th of Deskford and Findlater, d. 1544-07, son of James Ogilvy, 3rd of Deskford and Findlater (d. 1506-02-01) and oo Lady Agnes Gordon (daughter of https://www.wikidata.org/wiki/Q495643 and hay.ttl#Lady_Elizabeth_Hay_(born_1442~))
+  # oo Alexander Ogilvy, 4th of Deskford and Findlater, d. 1544-07, #Alexander_Ogilvy,_4th_of_Deskford
 <#Elizabeth_Abernethy>
   # Elizabeth Abernethy
   gen:father <#James_Abernethy,_3rd_Lord_Saltoun> .
@@ -1018,7 +1031,7 @@
   # George Abernethy, 7th Lord Saltoun of Abernethy, 1555~ - 1590-04-27
   gen:father <#Alexander_Abernethy,_6th_Lord_Saltoun> ;
   gen:mother <keith.ttl#Lady_Alison_Keith> .
-  # oo Lady Margaret Stewart, daughter of https://www.wikidata.org/wiki/Q1701833 and gordon.ttl#Lady_Elizabeth_Gordon_(died_1557b)
+  # oo Lady Margaret Stewart
   []
     gen:spouse <#George_Abernethy,_7th_Lord_Saltoun> , <stuart.ttl#Lady_Margaret_Stewart> ;
 	gen:startDate "1574-08-03b" .
@@ -1031,13 +1044,13 @@
   []
     gen:spouse <#John_Abernethy,_8th_Lord_Saltoun> , <#Magdalen_Urquhart> ;
 	gen:startDate "1601-09-30" .
-  # oo Lady Elizabeth Stuart, d. 1608, daughter of James Stuart, 2nd Lord Doune (d. 1591/1592-02-07) and oo 1580/1581-01-23 Elizabeth Stewart, Countess of Moray (d. 1591-11-18, https://www.wikidata.org/wiki/Q5363584)
+  # oo Lady Elizabeth Stuart, d. 1608
   []
-    gen:spouse <#John_Abernethy,_8th_Lord_Saltoun> , <stuart.ttl#Lady_Elizabeth_Stuart> ;
+    gen:spouse <#John_Abernethy,_8th_Lord_Saltoun> , <stuart.ttl#Lady_Elizabeth_Stuart_(died_1608)> ;
 	gen:startDate "1605-08-05" .
-  # oo Anne Stewart, 1581a/1604b - 1669-03-09a, daughter of Walter Stewart, 1st Lord of Blantyre (1565b - 1617-03-08, https://www.wikidata.org/wiki/Q7966195) and oo 1581-12-31 Nichola Somerville (d. 1614-08-30b, daughter of Sir James Somerville of Cambusnethan and Katherine Murray)
+  # oo Anne Stewart, 1581a/1604b - 1669-03-09a
   []
-    gen:spouse <#John_Abernethy,_8th_Lord_Saltoun> , <stuart.ttl#Anne_Stewart> ;
+    gen:spouse <#John_Abernethy,_8th_Lord_Saltoun> , <stuart.ttl#Anne_Stewart_(died_1669)> ;
 	gen:startDate "1609-01-11b" .
 <#Margaret_Abernethy>
   # Hon. Margaret Abernethy
@@ -1048,12 +1061,12 @@
 <#Alexander_Abernethy,_9th_Lord_Saltoun>
   # Alexander Abernethy, 9th Lord Saltoun of Abernethy, 1611-03-26 - 1668-12-15~
   gen:father <#John_Abernethy,_8th_Lord_Saltoun> ;
-  gen:mother <stuart.ttl#Anne_Stewart> .
+  gen:mother <stuart.ttl#Anne_Stewart_(died_1669)> .
 <#Margaret_Abernethy,_Lady_Saltoun>
   # Margaret Abernethy, Lady Saltoun of Abernethy, 1613-02-02 - 1669-03-09a
   # 10th Lady Saltoun of Abernethy 1668-12-14~, de jure
   gen:father <#John_Abernethy,_8th_Lord_Saltoun> ;
-  gen:mother <stuart.ttl#Anne_Stewart> .
+  gen:mother <stuart.ttl#Anne_Stewart_(died_1669)> .
 
 # ----
 <stuart.ttl#???_Stewart>
@@ -1067,6 +1080,47 @@
   gen:father <https://www.wikidata.org/wiki/Q1701833> ;
   gen:mother <gordon.ttl#Lady_Elizabeth_Gordon_(died_1557b)> .
   # oo 1574-08-03b George Abernethy, 7th Lord Saltoun of Abernethy, 1555~ - 1590-04-27, fraser.ttl#George_Abernethy,_7th_Lord_Saltoun
+
+#<#James_Stuart,_2nd_Lord_Doune>
+  # James Stuart, 2nd Lord Doune, d. 1591/1592-02-07
+  # oo Elizabeth Stewart, Countess of Moray, d. 1591-11-18
+  []
+    gen:spouse <#James_Stuart,_2nd_Lord_Doune> , <https://www.wikidata.org/wiki/Q5363584> ;
+	gen:startDate "1580/1581-01-23" .
+
+<stuart.ttl#Lady_Elizabeth_Stuart_(died_1608)>
+  # Lady Elizabeth Stuart, d. 1608
+  gen:father <#James_Stuart,_2nd_Lord_Doune> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5363584> .
+  # oo 1605-08-05 John Abernethy, 8th Lord Saltoun of Abernethy, 1577~ - 1612-09-21b, fraser.ttl#John_Abernethy,_8th_Lord_Saltoun
+
+#<https://www.wikidata.org/wiki/Q7966195>
+  # Walter Stewart, 1st Lord of Blantyre, 1565b - 1617-03-08
+  # oo Nichola Somerville, d. 1614-08-30b, daughter of Sir James Somerville of Cambusnethan and Katherine Murray
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7966195> , <#Nichola_Somerville> ;
+	gen:startDate "1581-12-31" .
+
+<stuart.ttl#Anne_Stewart_(died_1669)>
+  # Anne Stewart, 1581a/1604b - 1669-03-09a
+  gen:father <https://www.wikidata.org/wiki/Q7966195> ;
+  gen:mother <#Nichola_Somerville> .
+  # oo 1609-01-11b John Abernethy, 8th Lord Saltoun of Abernethy, 1577~ - 1612-09-21b, fraser.ttl#John_Abernethy,_8th_Lord_Saltoun
+
+# ----
+#<#James_Ogilvy,_3rd_of_Deskford>
+  # James Ogilvy, 3rd of Deskford and Findlater, d. 1506-02-01
+  # oo Lady Agnes Gordon
+  []
+    gen:spouse <#James_Ogilvy,_3rd_of_Deskford> , <gordon.ttl#Lady_Agnes_Gordon> .
+
+<#Alexander_Ogilvy,_4th_of_Deskford>
+  # Alexander Ogilvy, 4th of Deskford and Findlater, d. 1544-07
+  gen:father <#James_Ogilvy,_3rd_of_Deskford> ;
+  gen:mother <gordon.ttl#Lady_Agnes_Gordon> .
+  # oo Janet Abernethy
+  []
+    gen:spouse <#Alexander_Ogilvy,_4th_of_Deskford> , <#Janet_Abernethy> .
 
 # ----
 #<#John_Udny_of_that_Ilk>
