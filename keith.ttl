@@ -3,14 +3,35 @@
 @prefix wdata: <https://www.wikidata.org/wiki/> .
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
 
-#<#William_de_Keith,_1st_Earl_Marischal>
+#<#Sir_William_Keith>
+  # Sir William Keith, d. 1444-10
+  # oo Mary Hamilton
+  []
+    gen:spouse <#Sir_William_Keith> , <hamilton.ttl#Mary_Hamilton> ;
+	gen:startDate "1414-04-26" .
+
+<#Sir_Robert_de_Keith>
+  # Sir Robert de Keith, d. 1446-09-22b
+  gen:father <#Sir_William_Keith> ;
+  gen:mother <hamilton.ttl#Mary_Hamilton> .
+  # oo Janet Seton
+  []
+    gen:spouse <#Sir_Robert_de_Keith> , <gordon.ttl#Janet_Seton> .
+<#William_de_Keith,_1st_Earl_Marischal>
   # William de Keith, 1st Earl Marischal, d. 1483~
   # 1st Lord Keith 1451-07b
   # 1st Earl Marischal 1457-11-05a/1458-07-04b
+  gen:father <#Sir_William_Keith> ;
+  gen:mother <hamilton.ttl#Mary_Hamilton> .
   # oo Margaret Erskine
   []
     gen:spouse <#William_de_Keith,_1st_Earl_Marischal> , <erskine.ttl#Margaret_Erskine> .
 
+<#Janet_Keith_1>
+  # Janet Keith
+  gen:father <#Sir_Robert_de_Keith> ;
+  gen:mother <gordon.ttl#Janet_Seton> .
+  # oo 1463-03~ Andrew Gray, 2nd Lord Gray, d. 1513-02, gordon.ttl#Andrew_Gray,_2nd_Lord_Gray
 <https://www.wikidata.org/wiki/Q18672871>
   # William Keith, 2nd Earl Marischal, d. 1526/1527
   gen:father <#William_de_Keith,_1st_Earl_Marischal> ;
