@@ -6,22 +6,33 @@
 <https://www.wikidata.org/wiki/Q3809432>
   gen:name "John Lyon, Lord of Glamis"@en ;
   gen:birthDate "1340~" ;
-  gen:deathDate "1382-1104~" ;
+  gen:deathDate "1382a/1104~b" ;
   gen:father <#Sir_John_Lyon> .
-  # oo 1376 Princess Johanna (Jean) of Scotland
+  # oo Princess Johanna (Jean) of Scotland
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3809432> , <#Princess_Johanna_(Jean)_of_Scotland> ;
+	gen:startDate "1376" .
 
 <#Sir_John_Lyon_of_Glamis>
+  gen:name "Sir John Lyon of Glamis"@en ;
   gen:birthDate "1377~" ;
   gen:deathDate "1435~" ;
   gen:father <https://www.wikidata.org/wiki/Q3809432> ;
   gen:mother <#Princess_Johanna_(Jean)_of_Scotland> .
+  []
+    gen:spouse <#Sir_John_Lyon_of_Glamis> , <graham.ttl#Elizabeth_Graham> .
 
-<https://www.wikidata.org/wiki/Q7147044> # oo 1427~ Isabel Ogilvie
+<https://www.wikidata.org/wiki/Q7147044>
   gen:name "Patrick Lyon, 1st Lord Glamis"@en ;
+  # 1st Lord Glamis 1445-06-28
   gen:birthDate "1402" ;
   gen:deathDate "1459-03-21" ;
   gen:father <#Sir_John_Lyon_of_Glamis> ;
-  gen:mother <#Elizabeth_Graham> .
+  gen:mother <graham.ttl#Elizabeth_Graham> .
+  # oo Isabel Ogilvie
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7147044> , <#Isabel_Ogilvie> ;
+	gen:startDate "1427~" .
 
 <https://www.wikidata.org/wiki/Q16240355>
   gen:name "Alexander Lyon, 2nd Lord Glamis"@en ;
@@ -31,7 +42,8 @@
   gen:mother <#Isabel_Ogilvie> .
   # oo Agnes Crichton
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q16240355> , <#Agnes_Crichton> .
+    gen:spouse <https://www.wikidata.org/wiki/Q16240355> , <#Agnes_Crichton> ;
+	gen:startDate "1450-02-17b" .
 <https://www.wikidata.org/wiki/Q16850543>
   gen:name "John Lyon, 3rd Lord Glamis"@en ;
   gen:birthDate "1431" ;
@@ -53,9 +65,10 @@
   gen:deathDate "1500" ;
   gen:father <https://www.wikidata.org/wiki/Q16850543> ;
   gen:mother <#Elizabeth_Scrymgeour> .
-  # oo Elizabeth Gray
+  # oo Elizabeth Gray, d. 1526~
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q16200013> , <gordon.ttl#Elizabeth_Gray> .
+    gen:spouse <https://www.wikidata.org/wiki/Q16200013> , <gordon.ttl#Elizabeth_Gray> ;
+	gen:startDate "1487-05-18~" .
 <#David_Lyon_of_Cossins> # -> Lyon of Cossins
   # David Lyon of Baky and Cossins and Haltoun of Erse, d. 1513-09-09
   gen:father <https://www.wikidata.org/wiki/Q16850543> ;
@@ -78,7 +91,8 @@
   gen:mother <gordon.ttl#Elizabeth_Gray> .
   # oo Janet Douglas, 1498 - 1537-07-17
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q16200022> , <https://www.wikidata.org/wiki/Q6153306> .
+    gen:spouse <https://www.wikidata.org/wiki/Q16200022> , <https://www.wikidata.org/wiki/Q6153306> ;
+	gen:startDate "1527-12-12b" .
 
 <https://www.wikidata.org/wiki/Q16863452>
   gen:name "John Lyon, 7th Lord Glamis"@en ;
@@ -88,8 +102,17 @@
   gen:mother <https://www.wikidata.org/wiki/Q6153306> .
   # oo Janet Keith
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q16863452> , <keith.ttl#Janet_Keith_2> .
+    gen:spouse <https://www.wikidata.org/wiki/Q16863452> , <keith.ttl#Janet_Keith_2> ;
+	gen:startDate "1543-02-06" .
 
+<https://www.wikidata.org/wiki/Q7792008>
+  # Sir Thomas Lyon (of Auldbar), Master of Glamis, d. 1608
+  gen:father <https://www.wikidata.org/wiki/Q16863452> ;
+  gen:mother <keith.ttl#Janet_Keith_2> .
+  # oo Lady Euphemia Douglas
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7792008> , <douglas.ttl#Lady_Euphemia_Douglas> ;
+	gen:startDate "1586" .
 <https://www.wikidata.org/wiki/Q16863453>
   gen:name "John Lyon, 8th Lord Glamis"@en ;
   gen:birthDate "1544~" ;
@@ -106,14 +129,6 @@
   gen:mother <keith.ttl#Janet_Keith_2> .
   # oo 1566-09-30 Gilbert Kennedy, 4th Earl of Cassilis, 1541 - 1576-12-14, https://www.wikidata.org/wiki/Q5561028
   # oo 1577/1578 John Hamilton, 1st Marquess of Hamilton, 1537 - 1604-04-26, https://www.wikidata.org/wiki/Q4735
-<https://www.wikidata.org/wiki/Q7792008>
-  # Sir Thomas Lyon (of Auldbar), Master of Glamis, d. 1608
-  gen:father <https://www.wikidata.org/wiki/Q16863452> ;
-  gen:mother <keith.ttl#Janet_Keith_2> .
-  # oo Lady Euphemia Douglas
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q7792008> , <douglas.ttl#Lady_Euphemia_Douglas> ;
-	gen:startDate "1586" .
 
 <#Patrick_Lyon,_1st_Earl_of_Kinghorne>
   gen:name "Patrick Lyon, 1st Earl of Kinghorne"@en ;
@@ -166,7 +181,7 @@
   gen:deathDate "1695-05-15" ;
   gen:father <#John_Lyon,_2nd_Earl_of_Kinghorne> ;
   gen:mother <erskine.ttl#Lady_Elizabeth_Maule> .
-  # oo 1662-08-23 Lady Helen Middleton, d. 1708-05
+  # oo Lady Helen Middleton, d. 1708-05
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7147046> , <#Lady_Helen_Middleton> ;
 	gen:startDate "1662-08-23" .
@@ -182,9 +197,10 @@
   gen:deathDate "1712" ;
   gen:father <https://www.wikidata.org/wiki/Q7147046> ;
   gen:mother <#Lady_Helen_Middleton> .
-  # oo 1691-09-21 Lady Elizabeth Stanhope, 1663-05 - 1723-04-24
+  # oo Lady Elizabeth Stanhope, 1663-05 - 1723-04-24
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q6245623> , <https://www.wikidata.org/wiki/Q5363130> .
+    gen:spouse <https://www.wikidata.org/wiki/Q6245623> , <https://www.wikidata.org/wiki/Q5363130> ;
+	gen:startDate "1691-09-21" .
 <https://www.wikidata.org/wiki/Q7147047>
   # Patrick Lyon of Auchterhouse, 1669 - 1715-11-13
   gen:father <https://www.wikidata.org/wiki/Q7147046> ;
@@ -205,33 +221,40 @@
 
 <https://www.wikidata.org/wiki/Q6245625>
   gen:name "John Lyon, 5th Earl of Strathmore and Kinghorne"@en ;
-  gen:birthDate "1696" ;
+  gen:birthDate "1696-04-27" ;
   gen:deathDate "1715-11-13" ;
   gen:father <https://www.wikidata.org/wiki/Q6245623> ;
   gen:mother <https://www.wikidata.org/wiki/Q5363130> .
 <https://www.wikidata.org/wiki/Q5080420>
   gen:name "Charles Lyon, 6th Earl of Strathmore and Kinghorne"@en ;
-  gen:birthDate "1699" ;
+  gen:birthDate "1699-07-12" ;
   gen:deathDate "1728-05-11" ;
   gen:father <https://www.wikidata.org/wiki/Q6245623> ;
   gen:mother <https://www.wikidata.org/wiki/Q5363130> .
-  # oo 1725-07-25 Susan Cochrane, 1709~ - 1754-06-23
+  # oo Susan Cochrane, 1709~ - 1754-06-23
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q5080420> , <https://www.wikidata.org/wiki/Q7648129> .
+    gen:spouse <https://www.wikidata.org/wiki/Q5080420> , <https://www.wikidata.org/wiki/Q7648129> ;
+	gen:startDate "1725-07-25" .
 <https://www.wikidata.org/wiki/Q7620335>
   gen:name "James Lyon, 7th Earl of Strathmore and Kinghorne"@en ;
-  gen:birthDate "1702~" ;
+  gen:birthDate "1702-12-24" ;
   gen:deathDate "1735-01-04" ;
   gen:father <https://www.wikidata.org/wiki/Q6245623> ;
   gen:mother <https://www.wikidata.org/wiki/Q5363130> .
-  # oo 1731-03-06 Mary Oliphant, daughter of Charles Oliphant (brother of William Oliphant, 11th Lord Oliphant)
+  # oo Mary Oliphant, 1701-08-06 - 1731-09-07, daughter of Charles Oliphant (brother of William Oliphant, 11th Lord Oliphant) and ??? Young
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7620335> , <#Mary_Oliphant> ;
+	gen:startDate "1731-03-06" .
 <https://www.wikidata.org/wiki/Q7620341>
   gen:name "Thomas Lyon, 8th Earl of Strathmore and Kinghorne"@en ;
-  gen:birthDate "1704" ;
+  gen:birthDate "1704-07-06" ;
   gen:deathDate "1753-01-18" ;
   gen:father <https://www.wikidata.org/wiki/Q6245623> ;
   gen:mother <https://www.wikidata.org/wiki/Q5363130> .
-  # oo Jean Nicholsen
+  # oo Jean Nicholsen, 1713-09-22 - 1778-04-22, daughter of James Nicholson and Anne Allan
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7620341> , <#Jean_Nicholsen> ;
+	gen:startDate "1736-07-20" .
 
 <https://www.wikidata.org/wiki/Q3809433>
   gen:name "John Bowes, 9th Earl of Strathmore and Kinghorne"@en ;
@@ -239,13 +262,18 @@
   gen:deathDate "1776-03-07" ;
   gen:father <https://www.wikidata.org/wiki/Q7620341> ;
   gen:mother <#Jean_Nicholsen> .
-  # oo 1767 Mary Eleanor Bowes, 1749-02-24 - 1800-04-28
+  # oo Mary Eleanor Bowes, 1749-02-24 - 1800-04-28
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q3809433> , <https://www.wikidata.org/wiki/Q6779099> .
+    gen:spouse <https://www.wikidata.org/wiki/Q3809433> , <https://www.wikidata.org/wiki/Q6779099> ;
+	gen:startDate "1767-02-24" .
 <https://www.wikidata.org/wiki/Q26911899>
-  # Thomas Lyon, 1741 - 1796
+  # Hon. Thomas Lyon, 1741~ - 1796-09-13
   gen:father <https://www.wikidata.org/wiki/Q7620341> ;
   gen:mother <#Jean_Nicholsen> .
+  # oo Mary Elizabeth Wren, d. 1811-05-13, daughter of Farren Wren
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q26911899> , <#Mary_Elizabeth_Wren> ;
+	gen:startDate "1774-06-13" .
 <#Lady_Anne_Lyon_(died_1821)>
   # Lady Anne Lyon, d. 1821-03-20
   gen:father <https://www.wikidata.org/wiki/Q7620341> ;
@@ -254,30 +282,49 @@
 
 <https://www.wikidata.org/wiki/Q3809434>
   gen:name "John Bowes, 10th Earl of Strathmore and Kinghorne"@en ;
+  # 17th Lord Glamis, 10th Earl of Strathmore and Kinghorne, 10th Lord Lyon and Glamis 1776-03-07
+  # 1st Baron Bowes of Streatlam Castle, co. Durnam, and of Lunedale, co. York 1815-07-18
   gen:birthDate "1769-04-14" ;
   gen:deathDate "1820-07-03" ;
   gen:father <https://www.wikidata.org/wiki/Q3809433> ;
   gen:mother <https://www.wikidata.org/wiki/Q6779099> .
+  # oo Mary Milner, d. 1860-05-05, daughter of J. Milner
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3809434> , <#Mary_Milner> ;
+	gen:startDate "1820-07-02" .
 <https://www.wikidata.org/wiki/Q3990679>
   gen:name "Thomas Lyon-Bowes, 11th Earl of Strathmore and Kinghorne"@en ;
   gen:birthDate "1773-05-03" ;
   gen:deathDate "1846-08-27" ;
   gen:father <https://www.wikidata.org/wiki/Q3809433> ;
   gen:mother <https://www.wikidata.org/wiki/Q6779099> .
-  # oo 1800-03-25 Mary Elizabeth Louisa Rodney Carpenter
+  # oo Mary Elizabeth Louisa Rodney Carpenter, 1783-01-01 - 1811-06-01
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3990679> , <#Mary_Elizabeth_Louisa_Rodney_Carpenter> ;
+	gen:startDate "1800-03-25" .
+  # oo Eliza Northcote, daughter of ??? Northcote
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3990679> , <#Eliza_Northcote> ;
+	gen:startDate "1812" .
+  # oo Marianna Cheape, d. 1849-10-23, daughter of John Cheape of Sauchie
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3990679> , <#Marianna_Cheape> ;
+	gen:startDate "1817-12-08" .
 
 <https://www.wikidata.org/wiki/Q7784930>
   # John Bowes, 1811-06-19 - 1885-10-09
-  gen:father <https://www.wikidata.org/wiki/Q3809434> . # and Mary Millner
+  gen:father <https://www.wikidata.org/wiki/Q3809434> ;
+  gen:mother <#Mary_Milner> .
 <https://www.wikidata.org/wiki/Q533403>
-  gen:name "Thomas Lyon-Bowes, Lord Glamis"@en ;
+  gen:name "Thomas George Lyon-Bowes, Lord Glamis"@en ;
   gen:birthDate "1801-02-06" ;
   gen:deathDate "1834-01-27" ;
   gen:father <https://www.wikidata.org/wiki/Q3990679> ;
   gen:mother <#Mary_Elizabeth_Louisa_Rodney_Carpenter> .
   # oo Charlotte Grimstead, 1797-01-22 - 1881-01-19
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q533403> , <https://www.wikidata.org/wiki/Q2918041> .
+    gen:spouse <https://www.wikidata.org/wiki/Q533403> , <https://www.wikidata.org/wiki/Q2918041> ;
+	gen:startDate "1820-12-21".
 
 <https://www.wikidata.org/wiki/Q16203582>
   gen:name "Thomas Lyon-Bowes, Master of Glamis"@en ;
@@ -301,19 +348,21 @@
   gen:deathDate "1904-02-16" ;
   gen:father <https://www.wikidata.org/wiki/Q533403> ;
   gen:mother <https://www.wikidata.org/wiki/Q2918041> .
-  # oo 1853-09-28 Frances Dora Smith, 1832-07-29 - 1922-02-05
+  # oo Frances Dora Smith, 1832-07-29 - 1922-02-05
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q741870> , <https://www.wikidata.org/wiki/Q2592020> .
+    gen:spouse <https://www.wikidata.org/wiki/Q741870> , <https://www.wikidata.org/wiki/Q2592020> ;
+	gen:startDate "1853-09-28" .
 	
 <https://www.wikidata.org/wiki/Q335159>
-  gen:name "Claude Bowes-Lyon, 14th Earl of Strathmore and Kinghorne"@en ;
+  gen:name "Claude George Bowes-Lyon, 14th Earl of Strathmore and Kinghorne"@en ;
   gen:birthDate "1855-03-14" ;
   gen:deathDate "1944-11-07" ;
   gen:father <https://www.wikidata.org/wiki/Q741870> ;
   gen:mother <https://www.wikidata.org/wiki/Q2592020> .
-  # oo 1881-07-16 Cecilia Nina Cavendish-Bentinck, 1862-09-11 - 1938-06-23
+  # oo Cecilia Nina Cavendish-Bentinck, 1862-09-11 - 1938-06-23
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q335159> , <https://www.wikidata.org/wiki/Q238820> .
+    gen:spouse <https://www.wikidata.org/wiki/Q335159> , <https://www.wikidata.org/wiki/Q238820> ;
+	gen:startDate "1881-07-16" .
 <https://www.wikidata.org/wiki/Q439989>
   gen:name "Patrick Bowes-Lyon"@en ;
   gen:birthDate "1863-03-05" ;
@@ -329,9 +378,10 @@
   # Hon. Malcom Bowes-Lyon, 1874-04-23 - 1957-08-23
   gen:father <https://www.wikidata.org/wiki/Q741870> ;
   gen:mother <https://www.wikidata.org/wiki/Q2592020> .
-  # oo 1907-09-28 Winifred Gurdon-Rebow, 1876-10-10 - 1957-05-30
+  # oo Winifred Gurdon-Rebow, 1876-10-10 - 1957-05-30
   []
-    gen:spouse <#Malcom_Bowes-Lyon> , <#Winifred_Gurdon-Rebow> .
+    gen:spouse <#Malcom_Bowes-Lyon> , <#Winifred_Gurdon-Rebow> ;
+	gen:startDate "1907-09-28" .
 
 <https://www.wikidata.org/wiki/Q1758535>
   gen:name "Patrick Bowes-Lyon, 15th Earl of Strathmore and Kinghorne"@en ;
@@ -373,12 +423,16 @@
   gen:father <https://www.wikidata.org/wiki/Q335159> ;
   gen:mother <https://www.wikidata.org/wiki/Q238820> .
   # oo 1916-05-24 William Leveson-Gower, 4th Earl Granville, 1880-07-11 - 1953-06-25, https://www.wikidata.org/wiki/Q1149075
-<#Captain_The_Honourable_Michael_Claude_Hamilton_Bowes-Lyon>
+<#Michael_Claude_Hamilton_Bowes-Lyon>
+  gen:name "Hon. Michael Claude Hamilton Bowes-Lyon"@en ;
   gen:birthDate "1893-10-01" ;
   gen:deathDate "1953-05-01" ;
   gen:father <https://www.wikidata.org/wiki/Q335159> ;
   gen:mother <https://www.wikidata.org/wiki/Q238820> .
-  # oo 1928 Elizabeth Margaret Cator
+  # oo Elizabeth Margaret Cator, 1899-09-30 - 1959-02-19
+  []
+    gen:spouse <#Michael_Claude_Hamilton_Bowes-Lyon> , <#Elizabeth_Margaret_Cator> ;
+	gen:startDate "1928-02-02" .
 <https://www.wikidata.org/wiki/Q10633>
   gen:name "Queen Elizabeth The Queen Mother"@en ;
   gen:birthDate "1900-08-04" ;
@@ -401,12 +455,15 @@
   # oo 1931-04-18 (div 1952) Lord Malcolm Avondale Douglas-Hamilton, 1909-11-12 - 1964-07-21, https://www.wikidata.org/wiki/Q6679747
 
 <https://www.wikidata.org/wiki/Q3991503>
-  gen:name "Timothy Bowes-Lyon, 16th Earl of Strathmore and Kinghorne"@en ;
+  gen:name "Timothy Patrick Bowes-Lyon, 16th Earl of Strathmore and Kinghorne"@en ;
   gen:birthDate "1918-03-18" ;
   gen:deathDate "1972-09-13" ;
   gen:father <https://www.wikidata.org/wiki/Q1758535> ;
   gen:mother <osborne.ttl#Lady_Dorothy_Beatrix_Godolphin_Osborne> .
-  # oo 1958-06-18 Mary Bridget Brennan
+  # oo Mary Bridget Brennan, 1923~ - 1967-09-08
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3991503> , <#Mary_Bridget_Brennan> ;
+	gen:startDate "1958-06-18" .
 <https://www.wikidata.org/wiki/Q2871729>
   gen:name "Anne Ferelith Fenella Bowes-Lyon"@en ;
   gen:birthDate "1917-12-04" ;
@@ -421,57 +478,76 @@
   gen:mother <kennedy.ttl#Lady_Christian_Norah_Dawson-Damer> .
   # oo 1945-04-28 Edward Wilfred George Joicey-Cecil, 1912-01-14, 1985-10-06, cecil.ttl#Edward_Wilfred_George_Joicey-Cecil
 <https://www.wikidata.org/wiki/Q3856119>
-  gen:name "Michael Bowes-Lyon, 17th Earl of Strathmore and Kinghorne"@en ;
+  gen:name "Fergus _Michael_ Claude Bowes-Lyon, 17th Earl of Strathmore and Kinghorne"@en ;
   gen:birthDate "1928-12-31" ;
   gen:deathDate "1987-08-19" ;
-  gen:father <#Captain_The_Honourable_Michael_Claude_Hamilton_Bowes-Lyon> ;
+  gen:father <#Michael_Claude_Hamilton_Bowes-Lyon> ;
   gen:mother <#Elizabeth_Margaret_Cator> .
-  # oo 1956-04-10 Mary Pamela McCorquodale
+  # oo Mary Pamela McCorquodale, b. 1932-05-31
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3856119> , <spencer.ttl#Mary_Pamela_McCorquodale> ;
+	gen:startDate "1956-04-10" .
+<#Lady_Mary_Cecilia_Bowes-Lyon>
+  # Lady Mary Cecilia Bowes-Lyon, b. 1932-01-30
+  gen:father <#Michael_Claude_Hamilton_Bowes-Lyon> ;
+  gen:mother <#Elizabeth_Margaret_Cator> .
+  # oo 1951-11-30 Sir Timothy James Alan Colman, b. 1929-09-19, #Sir_Timothy_James_Alan_Colman
 <#Davina_Katherine_Bowes-Lyon>
   # Davina Katherine Bowes-Lyon, 1930-05-02 - 2017-11-01
   gen:father <https://www.wikidata.org/wiki/Q5231604> ;
   gen:mother <#Rachel_Pauline_Spender_Clay> .
   # oo 1960-01-14 John Aymer Dalrymple, 13th Earl of Stair, 1906-10-09 – 1996-02-26, https://www.wikidata.org/wiki/Q6228439
 
-<#Lady_Caroline_Frances_Bowes-Lyon>
-  gen:birthDate "1959-12-08" ;
-  gen:deathDate "1960-01-01" ;
-  gen:father <https://www.wikidata.org/wiki/Q3991503> ;
-  gen:mother <#Mary_Bridget_Brennan> .
 <https://www.wikidata.org/wiki/Q335615>
   gen:name "Michael Bowes-Lyon, 18th Earl of Strathmore and Kinghorne"@en ;
   gen:birthDate "1957-06-07" ;
   gen:deathDate "2016-02-27" ;
   gen:father <https://www.wikidata.org/wiki/Q3856119> ;
-  gen:mother <#Mary_Pamela_McCorquodale> .
-  # oo (1) 1984|2005 Isobel Charlotte Weatherall
-  # oo (2) 2005-11-24|2008 Dr. Damaris E. Stuart-William
-  # oo (3) 2012-08-04 Karen Baxter
+  gen:mother <spencer.ttl#Mary_Pamela_McCorquodale> .
+  # oo Isobel Charlotte Weatherall, b. 1963~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q335615> , <#Isobel_Charlotte_Weatherall> ;
+	gen:startDate "1984-11-14" ;
+	gen:divorceDate "2005" .
+  # oo Dr. Damaris E. Stuart-William
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q335615> , <#Dr._Damaris_E._Stuart-William> ;
+	gen:startDate "2005-11-24" ;
+	gen:divorceDate "2008" .
+  # oo Karen Heather Orrock, b. 1976-01-09, daughter of William Orrock and Heather Duncan
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q335615> , <#Karen_Heather_Orrock> ;
+	gen:startDate "2012-08-04" .
 <#Lady_Elizabeth_Mary_Cecilia_Bowes-Lyon>
+  gen:name "Lady Elizabeth Mary Cecilia Bowes-Lyon"@en ;
   gen:birthDate "1959-12-23" ;
   gen:father <https://www.wikidata.org/wiki/Q3856119> ;
-  gen:mother <#Mary_Pamela_McCorquodale> .
-  # oo 1990 Antony Richard Leeming
+  gen:mother <spencer.ttl#Mary_Pamela_McCorquodale> .
+  # oo 1990-09-01 Antony Richard Leeming, b. 1950-06-22, son of Richard Whiteside Leeming and Iris Mary Tempest
 <#Lady_Diana_Evelyn_Bowes-Lyon>
+  gen:name "Lady Diana Evelyn Bowes-Lyon"@en ;
   gen:birthDate "1966-12-29" ;
   gen:father <https://www.wikidata.org/wiki/Q3856119> ;
-  gen:mother <#Mary_Pamela_McCorquodale> .
-  # oo 1995 Christopher Godfrey-Faussett
+  gen:mother <spencer.ttl#Mary_Pamela_McCorquodale> .
+  # oo 1995-04-08 Christopher Godfrey-Faussett, son of Richard Hugh Godfrey-Faussett
 
 <https://www.wikidata.org/wiki/Q7518316>
-  gen:name "Simon Bowes-Lyon, 19th Earl of Strathmore and Kinghorne"@en ;
+  gen:name "Simon Patrick Bowes-Lyon, 19th Earl of Strathmore and Kinghorne"@en ;
   gen:birthDate "1986-06-18" ;
   gen:father <https://www.wikidata.org/wiki/Q335615> ;
   gen:mother <#Isobel_Charlotte_Weatherall> .
-<#Honourable_John_Fergus_Bowes-Lyon>
+<#John_Fergus_Bowes-Lyon>
+  gen:name "Hon. John Fergus Bowes-Lyon"@en ;
   gen:birthDate "1988" ;
   gen:father <https://www.wikidata.org/wiki/Q335615> ;
   gen:mother <#Isobel_Charlotte_Weatherall> .
-<#Honourable_George_Norman_Bowes-Lyon>
+<#George_Norman_Bowes-Lyon>
+  gen:name "Hon. George Norman Bowes-Lyon"@en ;
   gen:birthDate "1991" ;
   gen:father <https://www.wikidata.org/wiki/Q335615> ;
   gen:mother <#Isobel_Charlotte_Weatherall> .
-<#Honourable_Toby_Peter_Fergus_Bowes-Lyon>
+<#Toby_Peter_Fergus_Bowes-Lyon>
+  gen:name "Hon. Toby Peter Fergus Bowes-Lyon"@en ;
   gen:birthDate "2005-03" ;
   gen:father <https://www.wikidata.org/wiki/Q335615> ;
   gen:mother <#Dr._Damaris_E._Stuart-William> .
@@ -599,29 +675,23 @@
 <#Princess_Johanna_(Jean)_of_Scotland>
   gen:father <https://www.wikidata.org/wiki/Q312592> ; # Robert II of Scotland
   gen:mother <https://www.wikidata.org/wiki/Q1987004> . # Elizabeth Mure
+  # oo 1376 John Lyon, Lord of Glamis, 1340~ - 1382a/1104~b, https://www.wikidata.org/wiki/Q3809432
 <https://www.wikidata.org/wiki/Q4444832>
   # David Stewart, Earl of Strathearn, 1357 - 1386
   gen:father <https://www.wikidata.org/wiki/Q312592> ; # Robert II of Scotland
   gen:mother <https://www.wikidata.org/wiki/Q271445> . # Euphemia de Ross
 
-<https://www.wikidata.org/wiki/Q7620326>
-  # Euphemia Stewart, Countess of Strathearn, d. 1434
-  gen:father <https://www.wikidata.org/wiki/Q4444832> .
-
-# --------
-<#Elizabeth_Graham>
-  gen:father <#Sir_Patrick_Graham_of_Dundaff_and_Kincardine> ;
-  gen:mother <https://www.wikidata.org/wiki/Q7620326> .
-
 # --------
 <#Agnes_Crichton>
   # Agnes Crichton
   gen:father <https://www.wikidata.org/wiki/Q8007289> .
-  # oo Alexander Lyon, 2nd Lord Glamis, 1430~ - 1486, https://www.wikidata.org/wiki/Q16240355
+  # oo 1450-02-17b Alexander Lyon, 2nd Lord Glamis, 1430~ - 1486, https://www.wikidata.org/wiki/Q16240355
 
 # --------
 <#Isabel_Ogilvie>
+  # Isabel Ogilvie
   gen:father <#Sir_Walter_Ogilvie_of_Lintrethan> .
+  # oo 1427~ Patrick Lyon, 1st Lord Glamis, 1402 - 1459-03-21, https://www.wikidata.org/wiki/Q7147044
 
 # --------
 #<https://www.wikidata.org/wiki/Q360323>
@@ -658,6 +728,9 @@
   gen:name "William Bowes"@en ;
   gen:birthDate "1657-01-06" ;
   gen:deathDate "1707-01-16" .
+  # oo Elizabeth Blakiston
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8005764> , <#Elizabeth_Blakiston> .
 
 <https://www.wikidata.org/wiki/Q5537154>
   gen:name "George Bowes"@en ;
@@ -665,8 +738,14 @@
   gen:deathDate "1760-09-17" ;
   gen:father <https://www.wikidata.org/wiki/Q8005764> ;
   gen:mother <#Elizabeth_Blakiston> .
-  # oo (1) 1724-10 Eleanor Verney (d. 1724-12)
-  # oo (2) 1743 Mary Gilbert
+  # oo Eleanor Verney, d. 1724-12
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5537154> , <#Eleanor_Verney> ;
+	gen:startDate "1724-10" .
+  # oo Mary Gilbert
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5537154> , <#Mary_Gilbert> ;
+	gen:startDate "1743" .
 
 <https://www.wikidata.org/wiki/Q6779099>
   gen:name "Mary Eleanor Bowes"@en ;
@@ -674,23 +753,24 @@
   gen:deathDate "1800-04-28" ;
   gen:father <https://www.wikidata.org/wiki/Q5537154> ;
   gen:mother <#Mary_Gilbert> .
-  # oo 1767 John Bowes, 9th Earl of Strathmore and Kinghorne, 1737-07-17 - 1776-03-07 , https://www.wikidata.org/wiki/Q3809433
-
-# --------
+  # oo 1767-02-24 John Bowes, 9th Earl of Strathmore and Kinghorne, 1737-07-17 - 1776-03-07 , https://www.wikidata.org/wiki/Q3809433
+# ----
 <#Elizabeth_Blakiston>
+  # Elizabeth Blakiston
   gen:father <#Sir_Francis_Blakiston> ;
   gen:mother <#Ann_Bowes> .
-
-# --------
+# ----
 <#Ann_Bowes>
   gen:father <#Sir_George_Bowes_of_Bradley_Hall> .
 
 # --------
 <#Mary_Elizabeth_Louisa_Rodney_Carpenter>
+  gen:name "Mary Elizabeth Louisa Rodney Carpenter"@en ;
   gen:birthDate "1783-01-01" ;
   gen:deathDate "1811-06-01" ;
-  gen:father <#George_Carpenter> ; # 21 October 1713 – 10 November 1782
-  gen:mother <#Mary_Elizabeth_Walsh> . # bap. 18 May 1758, d. 27 November 1812
+  gen:father <#George_Carpenter> ; # 1713-10-21 – 1782-11-10
+  gen:mother <#Mary_Elizabeth_Walsh> . # 1758-05-18b - 1812-11-27
+  # oo 1800-03-25 Thomas Lyon-Bowes, 11th Earl of Strathmore and Kinghorne, 1773-05-03 - 1846-08-27, https://www.wikidata.org/wiki/Q3990679
 
 # --------
 <https://www.wikidata.org/wiki/Q2918041>
@@ -699,7 +779,7 @@
   gen:deathDate "1881-01-19" ;
   gen:father <#Joseph_Valentine_Grimstead> ;
   gen:mother <#Charlotte_Jane_Sarah_Walsh> .
-  # oo Thomas Lyon-Bowes, Lord Glamis, 1801-02-06 -  1834-01-27, https://www.wikidata.org/wiki/Q533403
+  # oo 1820-12-21 Thomas Lyon-Bowes, Lord Glamis, 1801-02-06 -  1834-01-27, https://www.wikidata.org/wiki/Q533403
 
 # --------
 #<https://www.wikidata.org/wiki/Q8005118>
@@ -745,18 +825,55 @@
   gen:mother <#Lady_Constance_Frances_Bowes-Lyon> .
   # oo 1935-02-26 Hon. James Duthac Carnegie, 1910-09-26 - 1996-01-14, carnegie.ttl#James_Duthac_Carnegie
 
+# ----
+#<#John_Cator>
+  # John Cator, 1862-09-24 - 1944-04-27
+  # son of Albemarle Cator
+  # and Mary Molesworth Cordelia Mohun-Harris
+  # oo Maud Adeane, d. 1943-06-15
+  []
+    gen:spouse <#John_Cator> , <stanley.ttl#Maud_Adeane> ;
+	gen:startDate "1895-10-07" .
+
+<#Elizabeth_Margaret_Cator>
+  # Elizabeth Margaret Cator, 1899-09-30 - 1959-02-19
+  gen:father <#John_Cator> ;
+  gen:mother <stanley.ttl#Maud_Adeane> .
+  # oo 1928-02-02 Hon. Michael Claude Hamilton Bowes-Lyon, 1893-10-01 - 1953-05-01, #Michael_Claude_Hamilton_Bowes-Lyon
+
 # --------
 <#Mary_Bridget_Brennan>
   gen:name "Mary Bridget Brennan"@en ;
   gen:birthDate "1923~" ;
   gen:deathDate "1967-09-08" .
+  # oo 1958-06-18 Timothy Bowes-Lyon, 16th Earl of Strathmore and Kinghorne, 1918-03-18 - 1972-09-13, https://www.wikidata.org/wiki/Q3991503
+
+# ----
+#<#Geoffrey_Russell_Rees_Colman>
+  # Geoffrey Russell Rees Colman, 1892 - 1935-03-18
+  # son of Russell James Colman
+  # and Edith Margaret Davies
+  # oo Lettice Elizabeth Evelyn Adeane
+  []
+    gen:spouse <#Geoffrey_Russell_Rees_Colman> , <stanley.ttl#Lettice_Elizabeth_Evelyn_Adeane> ;
+	gen:startDate "1919-02-25" .
+
+<#Sir_Timothy_James_Alan_Colman>
+  # Sir Timothy James Alan Colman, b. 1929-09-19
+  gen:father <#Geoffrey_Russell_Rees_Colman> ;
+  gen:mother <stanley.ttl#Lettice_Elizabeth_Evelyn_Adeane> .
+  # oo Lady Mary Cecilia Bowes-Lyon, b. 1932-01-30
+  []
+    gen:spouse <#Sir_Timothy_James_Alan_Colman> , <#Lady_Mary_Cecilia_Bowes-Lyon> ;
+	gen:startDate "1951-11-30" .
 
 # --------
 <#Isobel_Charlotte_Weatherall>
   gen:name "Isobel Charlotte Weatherall"@en ;
   gen:birthDate "1963~" ;
-  gen:father <#Captain_Anthony_Weatherall> ;
+  gen:father <#Anthony_Weatherall> ;
   gen:mother <#Sophy_Keswick> .
+  # oo 1984-11-14 (div 2005) Michael Bowes-Lyon, 18th Earl of Strathmore and Kinghorne, 1957-06-07 - 2016-02-27, https://www.wikidata.org/wiki/Q335615
 
 # ----
 <lindsay.ttl#Lady_Elizabeth_Lindsay>
