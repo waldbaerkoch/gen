@@ -3,15 +3,25 @@
 @prefix wdata: <https://www.wikidata.org/wiki/> .
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
 
-#<https://www.wikidata.org/wiki/Q26237732>
+#<#Sir_Robert_Carnegie_of_Kinnaird>
+  # Sir Robert Carnegie of Kinnaird, d. 1565-01-05
+  # don of John de Carnegie of Kinnaird and Eupheme Strachan
+  # oo Margaret Guthrie, daughter of unknown Guthrie of Lunan
+
+<https://www.wikidata.org/wiki/Q26237732>
   # Rt. Hon. David Carnegie of Kinnaird, d. 1598-04-19
-  # son of Sir Robert Carnegie of Kinnaird
+  gen:father <#Sir_Robert_Carnegie_of_Kinnaird> .
   # and Margaret Guthrie
   # oo Elizabeth Ramsay, daughter of Henry Ramsay and Isabel Kinloch
   # oo Eupheme Wemyss, d. 1593-11-16
   []
     gen:spouse <https://www.wikidata.org/wiki/Q26237732> , <wemyss.ttl#Eupheme_Wemyss> ;
 	gen:startDate "1568-10-04" .
+<#Margaret_Carnegie_(died_1576)>
+  # Margaret Carnegie, d. 1576-01-09
+  gen:father <#Sir_Robert_Carnegie_of_Kinnaird> .
+  # and Margaret Guthrie
+  # oo 1565-06-13 Sir James Scrymgeour, d. 1612-07-13, https://www.wikidata.org/wiki/Q18810817, son of John Scrymgeour and Margaret Campbell
 
 <https://www.wikidata.org/wiki/Q3703133> # -> Carnegie of Southesk
   # David Carnegie, 1st Earl of Southesk, 1575 - 1658-02
@@ -48,7 +58,7 @@
 # Carnegie of Southesk
 <https://www.wikidata.org/wiki/Q3703133>
   gen:name "David Carnegie, 1st Earl of Southesk"@en ;
-  # 1st Lord Carnegie of Kinnaird [Scotland] on 1616-04-14
+  # 1st Lord Carnegie of Kinnaird 1616-04-14
   # 1st Earl of Southesk, 1st Lord Carnegie of Kinnaird and Leuchars 1633-06-22
   gen:birthDate "1575" ;
   gen:deathDate "1658-02" ;
@@ -1062,6 +1072,62 @@
   gen:mother <#Holly_Louisa_J._Church> .
 
 
+
+# ----
+#<https://www.wikidata.org/wiki/Q18810817>
+  # Sir James Scrymgeour, d. 1612-07-13
+  # son of John Scrymgeour
+  # and Margaret Campbell
+  # oo Margaret Carnegie, d. 1576-01-09
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q18810817> , <#Margaret_Carnegie_(died_1576)> ;
+	gen:startDate "1565-06-13" .
+
+<https://www.wikidata.org/wiki/Q6257148>
+  # John Scrymgeour, 1st Viscount Dudhope, d. 1643-03-07
+  # 1st Viscount Dudhope, 1st Lord Scrymgeour 1641-11-15
+  gen:father <https://www.wikidata.org/wiki/Q18810817> ;
+  gen:mother <#Margaret_Carnegie_(died_1576)> .
+  # oo Margaret Seton, b. 1580~, daughter of David Seton, 7th of Parbroath and Mary Gray
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6257148> , <#Margaret_Seton> ;
+	gen:startDate "1596-09" .
+<#Margaret_Scrymgeour>
+  # Margaret Scrymgeour
+  gen:father <https://www.wikidata.org/wiki/Q18810817> ;
+  gen:mother <#Margaret_Carnegie_(died_1576)> .
+  # oo 1586-11a James Halyburton of Thorngreen, d. 1619-04-21b, https://www.wikidata.org/wiki/Q17984554
+
+<https://www.wikidata.org/wiki/Q19862679>
+  # James Scrymgeour, 2nd Viscount Dudhope, d. 1644-07-23
+  gen:father <https://www.wikidata.org/wiki/Q6257148> ;
+  gen:mother <#Margaret_Seton> .
+  # oo Lady Isabella Ker
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q19862679> , <kerr.ttl#Lady_Isabella_Ker> ;
+	gen:startDate "1618-08-04" .
+# ----
+#<https://www.wikidata.org/wiki/Q17984554>
+  # James Halyburton of Thorngreen, d. 1619-04-21b
+  # son of George Halyburton of Pitcur
+  # and Elizabeth Learmonth
+  # oo Margaret Scrymgeour
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q17984554> , <#Margaret_Scrymgeour> ;
+	gen:startDate "1586-11a" .
+
+<#Magdalen_Haliburton>
+  # Magdalen Haliburton, 1586a – 1650-03-10
+  gen:father <https://www.wikidata.org/wiki/Q17984554> ;
+  gen:mother <#Margaret_Scrymgeour> .
+  # oo John Erskine, 9th of Dun, d. 1610, erskine.ttl#John_Erskine,_9th_of_Dun
+  # oo 1627b John Carnegie, 1st Earl of Northesk, 1579- - 1667-01-08, https://www.wikidata.org/wiki/Q3809141
+<#Margaret_Halyburton>
+  # Margaret Halyburton, 1586a
+  gen:father <https://www.wikidata.org/wiki/Q17984554> ;
+  gen:mother <#Margaret_Scrymgeour> .
+  # oo James Elphinstone, 1st Lord Coupar, 1587~ - 1669-01, elphinstone.ttl#James_Elphinstone,_1st_Lord_Coupar
+
 # ----
 <#Alexander_Lindsay,_Master_of_Crawford>
   # Alexander Lindsay, Master of Crawford, d. 1542-07-05~
@@ -1485,13 +1551,6 @@
   gen:father <https://www.wikidata.org/wiki/Q4539002> ;
   gen:mother <#Minnie_Florence_Franklin> .
   # oo 1900-12-18 Bertrand Edward Dawson, 1st Viscount Dawson of Penn, 1865 - 1945-03-07, https://www.wikidata.org/wiki/Q4167328
-
-# ----
-<#Magdalen_Haliburton>
-  # Magdalen Haliburton, 15806a – 1650-03-10
-  gen:father <https://www.wikidata.org/wiki/Q17984554> .
-  # and Margaret Scrymgeour
-  # oo 1627b John Carnegie, 1st Earl of Northesk, 1579- - 1667-01-08, https://www.wikidata.org/wiki/Q3809141
 
 # ----
 <#Jamie_Scott>
