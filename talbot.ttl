@@ -1412,6 +1412,12 @@
     gen:spouse <https://www.wikidata.org/wiki/Q160341> , <https://www.wikidata.org/wiki/Q461871> ;
 	gen:startDate "1461~" . # in a alleged marriage
 
+<#Elizabeth_Plantagenet>
+  # Elizabeth Plantagenet, b. 1464~
+  gen:father <https://www.wikidata.org/wiki/Q160341> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5363126> .
+  # oo 1478b Thomas Lumley, d. 1487, talbot.ttl#Thomas_Lumley
+
 # ----
 #<https://www.wikidata.org/wiki/Q1265605>
   # Humphrey Stafford, 1st Duke of Buckingham, 1402-08-15 - 1460-07-10
@@ -1643,7 +1649,7 @@
 <#Henry_Windsor,_5th_Lord_Windsor>
   # Henry Windsor, 5th Lord Windsor, 1562-08 - 1605-04-06
   gen:father <https://www.wikidata.org/wiki/Q5345948> .
-  # and Lady Katherine de Vere, 1538 - 1600, daughter of https://www.wikidata.org/wiki/Q1773578
+  # and Lady Katherine de Vere, 1538 - 1600
   # oo Anne Rivett, d. 1615-11-27
   []
     gen:spouse <#Henry_Windsor,_5th_Lord_Windsor> , <#Anne_Rivett> ;
@@ -1696,10 +1702,20 @@
   gen:father <#Cuthbert_Ogle,_7th_Baron_Ogle> .
   # oo 1583 Edward Talbot, 8th Earl of Shrewsbury, 1561-02-25 - 1617-02-08, https://www.wikidata.org/wiki/Q83523
 # ----
-#<#Anne_Lumley>
-  # oo 1515-12-28b Anne Lumley
-  # daughter of Thomas Lumley, d. 1487, son of George de Lumley, 2nd Lord Lumley and Elizabeth Thornton
-  # and oo Elizabeth Plantagenet, b. 1464~, daughter of https://www.wikidata.org/wiki/Q160341 and Elizabeth Waite)
+#<#Thomas_Lumley>
+  # Thomas Lumley, d. 1487
+  # son of George de Lumley, 2nd Lord Lumley (1445~ – 1507)
+  # and Elizabeth Thornton
+  # oo Elizabeth Plantagenet, b. 1464~
+  []
+    gen:spouse <#Thomas_Lumley> , <#Elizabeth_Plantagenet> ;
+	gen:startDate "1478b" .
+
+<#Anne_Lumley>
+  # Anne Lumley
+  gen:father <#Thomas_Lumley> ;
+  gen:mother <#Elizabeth_Plantagenet> .
+  # oo 1515-12-28b Robert Ogle, 4th Baron Ogle, 1491~ - 1530-09-28a/1532-01-26b, #Robert_Ogle,_4th_Baron_Ogle
 
 # ----
 <https://www.wikidata.org/wiki/Q16863658>
@@ -1836,7 +1852,7 @@
 #<https://www.wikidata.org/wiki/Q7529803>
   # Sir William Twysden, 1st Baronet, 1566~ - 1628-01-08
   # 1st Baronet Twysden, of East Peckham, co. Kent 1611-06-29
-  # oo Lady Anne Finch, 1574-02-28 - 1638-11-14, daughter of Sir Moyle Finch, 1st Baronet (d. 1614-12-18, 1st Baronet Finch, of Eastwell, Kent 1611, https://www.wikidata.org/wiki/Q7528361) and oo 1573 Elizabeth Heneage, 1st Countess of Winchilsea (1556-07-09 - 1634-03-23, 1st Countess of Winchilsea 1629, https://www.wikidata.org/wiki/Q5362771, daughter of Sir Thomas Heneage (1532 – 1595-10-17, https://www.wikidata.org/wiki/Q5800654) and oo 1554 Anne Poyntz (d. 1592-11-30, daughter of https://www.wikidata.org/wiki/Q7026079 and Joan Berkeley))
+  # oo Lady Anne Finch, 1574-02-28 - 1638-11-14
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7529803> , <https://www.wikidata.org/wiki/Q18526500> .
 

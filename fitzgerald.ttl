@@ -209,9 +209,9 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5549130> , <#Margaret_Rocheford> ;
 	gen:startDate "1381~" .
-  # oo Agnes Darcy, d. 1439-09-29, daughter of Philip Darcy, 4th Lord Darcy de Knayth (1341–1398) and Elizabeth Gray (daughter of https://www.wikidata.org/wiki/Q7790200)
+  # oo Agnes Darcy, d. 1439-09-29
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q5549130> , <#Agnes_Darcy> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q5549130> , <grey.ttl#Agnes_Darcy> ;
 	gen:startDate "1397-11-18b" .
 <#John_fitz_Maurice_FitzGerald>
   # John fitz Maurice FitzGerald, d. 1434b
@@ -236,7 +236,7 @@
 <#Elizabeth_FitzGerald>
   # Elizabeth FitzGerald
   gen:father <https://www.wikidata.org/wiki/Q5549130> ;
-  gen:mother <#Agnes_Darcy> .
+  gen:mother <grey.ttl#Agnes_Darcy> .
   # oo Sir John de Grey, 2nd Lord Grey (of Codnor), 1396~ - 1430-09-14, https://www.wikidata.org/wiki/Q24760123
 <https://www.wikidata.org/wiki/Q7789614>
   gen:name "Thomas FitzMaurice FitzGerald, 7th Earl of Kildare"@en ;
@@ -1989,7 +1989,7 @@
   # Lady Honora FitzGerald
   gen:father <https://www.wikidata.org/wiki/Q6133923> ;
   gen:mother <#Móre_O'Carroll> .
-  # oo Donald MacCarthy Mor, 1st Earl of Clancare, d. 1597, 1st Earl of Clancare, 1st Baron Valentia, in Ireland 1565-06-24, son of Donald MacCormac Ladrach MacCarthy Mor
+  # oo Donald MacCarthy Mor, 1st Earl of Clancare, d. 1597, #Donald_MacCarthy_Mor,_1st_Earl_of_Clancare
 <#Lady_Margaret_FitzGerald>
   # Lady Margaret FitzGerald, d. 1563
   gen:father <https://www.wikidata.org/wiki/Q6133923> ;
@@ -1998,7 +1998,7 @@
 <#Lady_Eleanor_FitzGerald_2>
   # Lady Eleanor FitzGerald
   gen:father <https://www.wikidata.org/wiki/Q6133923> .
-  # oo John Power, 3rd Baron le Power and Coroghmore, 1529~ - 1592-11-08, son of Richard Power, 1st Baron le Power and Coroghmore (d. 1538-11-10, 1st Baron le Power and Coroghmore, co. Waterford 1535-09-13) and oo 1526b Lady Katherine Butler (d. 1553-03-17, daughter of https://www.wikidata.org/wiki/Q197540 and https://www.wikidata.org/wiki/Q208901)
+  # oo John Power, 3rd Baron le Power and Coroghmore, 1529~ - 1592-11-08, #John_Power,_3rd_Baron_le_Power
 <#Sir_Séamus-Sussex_FitzGerald>
   gen:name "Sir Séamus-Sussex FitzGerald"@en ;
   gen:deathDate "1580" ;
@@ -2735,6 +2735,7 @@
   # Lady Katherine Butler, 1506 – 1553-03-17
   gen:father <https://www.wikidata.org/wiki/Q197540> ;
   gen:mother <https://www.wikidata.org/wiki/Q208901> .
+  # oo 1526b Richard Power, 1st Baron le Power and Coroghmore, d. 1538-11-10, #Richard_Power,_1st_Baron_le_Power
   # oo James FitzJohn FitzGerald, 14th Earl of Desmond, d. 1558-10-27, https://www.wikidata.org/wiki/Q6133923
 <butler.ttl#Lady_Ellen_Butler>
   # Lady Ellen Butler, 1523 - 1597-07-02
@@ -3081,6 +3082,11 @@
   gen:father <https://www.wikidata.org/wiki/Q5726431> ;
   gen:mother <#Mary_Brereton> .
   # oo Sir Robert Howard, b. 1626-01 - 1698-09-03, https://www.wikidata.org/wiki/Q3435421
+<#Lady_Elizabeth_O'Brien>
+  # Lady Elizabeth O'Brien, d. 1656-04-09a/1659-06-30b
+  gen:father <https://www.wikidata.org/wiki/Q5726431> ;
+  gen:mother <#Mary_Brereton> .
+  # oo Dutton Gerard, 3rd Baron Gerard of Gerard's Bromley, 1613-03-04 - 1640-04-22, spencer.ttl#Dutton_Gerard,_3rd_Baron_Gerard
 
 #<#Connor_O'Brien,_2nd_Viscount_Clare>
   # Connor O'Brien, 2nd Viscount Clare, 1605~ - 1670~
@@ -3866,14 +3872,26 @@
   # oo Gerald FitzGerald, 8th Duke of Leinster, 1914-05-27 - 2004-12-03, https://www.wikidata.org/wiki/Q5549131
 
 # ----
-#<https://www.wikidata.org/wiki/Q5112470>
+#<#Christopher_Hamilton>
+  # Christopher Hamilton
+  # oo Sarah Handrock
+  []
+    gen:spouse <#Christopher_Hamilton> , <#Sarah_Handrock> .
+
+<https://www.wikidata.org/wiki/Q5112470>
   # Rt. Hon. Christopher Hamilton, 1810 – 1860
-  # son of Maj-Gen Christopher Hamilton
-  # and Sarah Handrock, daughter of https://www.wikidata.org/wiki/Q7326245 and Anne French
+  gen:father <#Christopher_Hamilton> ;
+  gen:mother <#Sarah_Handrock> .
   # oo Hon. Jane FitzGerald-de Ros, 1810/1813 - 1885
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5112470> , <#Jane_FitzGerald-de_Ros> ;
 	gen:startDate "1830" .
+# ----
+<#Sarah_Handrock>
+  # Sarah Handrock
+  gen:father <https://www.wikidata.org/wiki/Q7326245> .
+  # and Anne French
+  # oo Christopher Hamilton, #Christopher_Hamilton
 
 # ----
 #<https://www.wikidata.org/wiki/Q6141855>
@@ -4173,13 +4191,6 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7167325> , <#Lady_Mary_Caroline_Louisa_Thomas_Petty-FitzMaurice> ;
 	gen:startDate "1860-10-04" .
-
-# ----
-<https://www.wikidata.org/wiki/Q7933213>
-  # Lady Violet Mary Elliot-Murray-Kynynmound, 1889-05-28 - 1965-01-03
-  gen:father <https://www.wikidata.org/wiki/Q336280> .
-  # and Lady Mary Caroline Grey
-  # oo 1909-01-20 Lord Charles George Francis Mercer Nairne Petty-FitzMaurice, 1874-02-12 - 1914-10-30, https://www.wikidata.org/wiki/Q6679055
 
 # ----
 <#Charles_Lambton>
@@ -4574,3 +4585,29 @@
   # Amelia Catherine Bischoffsheim, d. 1947-11-12
   gen:father <https://www.wikidata.org/wiki/Q15430177> .
   # oo 1882-10-04 Sir Maurice FitzGerald, 2nd Baronet, 1844-02-05 - 1916-10-22, https://www.wikidata.org/wiki/Q34743384
+
+# ----
+#<#Donald_MacCarthy_Mor,_1st_Earl_of_Clancare>
+  # Donald MacCarthy Mor, 1st Earl of Clancare, d. 1597
+  # 1st Earl of Clancare, 1st Baron Valentia, in Ireland 1565-06-24
+  # son of Donald MacCormac Ladrach MacCarthy Mor
+  # oo Lady Honora FitzGerald
+  []
+    gen:spouse <#Donald_MacCarthy_Mor,_1st_Earl_of_Clancare> , <#Lady_Honora_FitzGerald> .
+
+# ----
+#<#Richard_Power,_1st_Baron_le_Power>
+  # Richard Power, 1st Baron le Power and Coroghmore, d. 1538-11-10
+  # 1st Baron le Power and Coroghmore, co. Waterford 1535-09-13
+  # oo Lady Katherine Butler, 1506 – 1553-03-17
+  []
+    gen:spouse <#Richard_Power,_1st_Baron_le_Power> , <butler.ttl#Lady_Katherine_Butler> ;
+	gen:startDate "1526b" .
+
+<#John_Power,_3rd_Baron_le_Power>
+  # John Power, 3rd Baron le Power and Coroghmore, 1529~ - 1592-11-08
+  gen:father <#Richard_Power,_1st_Baron_le_Power> ;
+  gen:mother <butler.ttl#Lady_Katherine_Butler> .
+  # oo Lady Eleanor FitzGerald
+  []
+    gen:spouse <#John_Power,_3rd_Baron_le_Power> , <#Lady_Eleanor_FitzGerald_2> .

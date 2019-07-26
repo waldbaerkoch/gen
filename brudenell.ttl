@@ -301,7 +301,7 @@
   gen:deathDate "1878-01-06" ;
   gen:father <https://www.wikidata.org/wiki/Q5075846> ;
   gen:mother <#Henrietta_Maria_Hill> .
-  # oo Lady Mary Caroline Herbert, 1813-03-22 - 1892-01-20, daughter of https://www.wikidata.org/wiki/Q4111755 and https://www.wikidata.org/wiki/Q3911020
+  # oo Lady Mary Caroline Herbert, 1813-03-22 - 1892-01-20
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5537356> , <herbert.ttl#Lady_Mary_Caroline_Herbert> ;
 	gen:startDate "1837-05-11" .
@@ -872,7 +872,10 @@
   gen:deathDate "1849-01-19" ;
   gen:father <https://www.wikidata.org/wiki/Q16204172> ;
   gen:mother <#Catherine_Elizabeth_Sproule> .
-  # oo 1843-01 Mary Ann Hillyar, the eldest daughter of https://www.wikidata.org/wiki/Q1680561
+  # oo Mary Ann Hillyar
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7526162> , <#Mary_Ann_Hillyar> ;
+	gen:startDate "1843-01" .
 <#Sir_George_Curzon_Bisshopp,_11th_Baronet>
   gen:birthDate "1823-04-10" ;
   gen:deathDate "1865-12-15" ;
@@ -929,6 +932,11 @@
   gen:father <https://www.wikidata.org/wiki/Q7526196> ;
   gen:mother <#Catherine_Bishopp> .
   # oo 1790-01-04 John Frederick Sackville, 3rd Duke of Dorset, 1745-03-25 - 1799-07-19, https://www.wikidata.org/wiki/Q1453083 (russell.ttl)
+# ----
+<#Mary_Ann_Hillyar>
+  # Mary Ann Hillyar
+  gen:father <https://www.wikidata.org/wiki/Q1680561> .
+  # oo 1843-01 Sir Cecil Bisshopp, 10th Baronet, 1821-07-06 - 1849-01-19, https://www.wikidata.org/wiki/Q7526162
 
 # --------
 <boyle.ttl#Susanna_Hoare> # -> boyle.ttl?
@@ -1111,12 +1119,33 @@
 	gen:separatedDate "1898" .
 
 # --------
+#<#John_Madden>
+  # John Madden
+  # oo Lady Caroline Clements, d. 1914-03-04
+  []
+    gen:spouse <#John_Madden> , <#Lady_Caroline_Clements> .
+
 <#Caroline_Sydney_Anne_Madden>
   gen:name "Caroline Sydney Anne Madden"@en ;
   gen:deathDate "1941-05-05" ;
   gen:father <#John_Madden> ;
-  gen:mother <#Lady_Caroline_Clements> . # Lady Caroline Clements (d. 1914-03-04, daughter of Rev. Hon. Francis Nathanial Clements (1812 - 1870-05-27, son of https://www.wikidata.org/wiki/Q6969544 and Mary Bermingham) and oo 1838-12-03 Charlotte King (d. 1868-10-23, daughter of Reverend Gilbert King))
+  gen:mother <#Lady_Caroline_Clements> .
   # oo 1903-03-21 George William James Chandos Brudenell-Bruce, 6th Marquess of Ailesbury, 1873-05-21 - 1961-08-04, https://www.wikidata.org/wiki/Q5537358
+# ----
+<#Francis_Nathanial_Clements>
+  # Rev. Hon. Francis Nathanial Clements, 1812 - 1870-05-27
+  gen:father <https://www.wikidata.org/wiki/Q6969544> .
+  # and Mary Bermingham
+  # oo Charlotte King, d. 1868-10-23, daughter of Rev. Gilbert King
+  []
+    gen:spouse <#Francis_Nathanial_Clements> , <#Charlotte_King> ;
+	gen:startDate "1838-12-03" .
+
+<#Lady_Caroline_Clements>
+  # Lady Caroline Clements, d. 1914-03-04
+  gen:father <#Francis_Nathanial_Clements> ;
+  gen:mother <#Charlotte_King> .
+  # oo John Madden, #John_Madden
 
 # ----
 <#William_Henry_Augustus_Keppel>

@@ -147,7 +147,7 @@
   gen:deathDate "1513-09-09" ;
   gen:father <#Sir_William_Murray_of_Tullibardine_(died_1525)> ;
   gen:mother <keith.ttl#Lady_Mary_Keith_1> .
-  # oo Lady Margaret Stewart, daughter of https://www.wikidata.org/wiki/Q1240207
+  # oo Lady Margaret Stewart
   []
     gen:spouse <#Sir_William_Murray_of_Castleton> , <stuart.ttl#Lady_Margaret_Stewart_Murray> .
 
@@ -1153,10 +1153,10 @@
   gen:father <https://www.wikidata.org/wiki/Q4719715> ;
   gen:mother <https://www.wikidata.org/wiki/Q1651756> .
   # oo 1860-11-29 James Carnegie, 9th Earl of Southeskm 1827-11-16 - 1905-02-21, https://www.wikidata.org/wiki/Q6131053
-<#Lady_Constance_Euphemia_Woronzow>
-  gen:name "Lady Constance Euphemia Woronzow"@en ;
+<#Lady_Constance_Euphemia_Woronzow_Murray>
+  gen:name "Lady Constance Euphemia Woronzow Murray"@en ;
   gen:deathDate "1838" ;
-  gen:deathDate "1922-03" ;
+  gen:deathDate "1922-03-16" ;
   gen:father <https://www.wikidata.org/wiki/Q4719715> ;
   gen:mother <https://www.wikidata.org/wiki/Q1651756> .
   # oo 1864-06-16 William Buller Fullerton Elphinstone, 15th Lord Elphinstone and 1st Baron Elphinstone, 1828-11-18 – 1893-01-18, https://www.wikidata.org/wiki/Q8008580
@@ -2443,7 +2443,7 @@
   gen:mother <#Elizabeth_Dundas> .
   # oo Lady Elizabeth Stewart
   []
-    gen:spouse <#Patrick_Murray,_2nd_Lord_Elibank> , <stuart.ttl#Lady_Elizabeth_Stewart> ;
+    gen:spouse <#Patrick_Murray,_2nd_Lord_Elibank> , <stuart.ttl#Lady_Elizabeth_Stewart_of_Traquair> ;
 	gen:startDate "1643-04-09" .
 <#Jean_Murray>
   # Jean Murray
@@ -2473,7 +2473,7 @@
 <#Patrick_Murray,_3rd_Lord_Elibank>
   # Patrick Murray, 3rd Lord Elibank, d. 1686
   gen:father <#Patrick_Murray,_2nd_Lord_Elibank> ;
-  gen:mother <stuart.ttl#Lady_Elizabeth_Stewart> .
+  gen:mother <stuart.ttl#Lady_Elizabeth_Stewart_of_Traquair> .
   # oo Anne Burnet, daughter of Alexander Burnet
 
 <#Alexander_Murray,_4th_Lord_Elibank>
@@ -3202,7 +3202,7 @@
     gen:spouse <https://www.wikidata.org/wiki/Q1252529> , <murray.ttl#Lady_Malvina_Dorothea_Murray> ;
 	gen:startDate "1964-01-27" .
 
-<stuart.ttl#Lady_Elizabeth_Stewart>
+<stuart.ttl#Lady_Elizabeth_Stewart_of_Traquair>
   # Lady Elizabeth Stewart
   gen:father <https://www.wikidata.org/wiki/Q4444828> ;
   gen:mother <https://www.wikidata.org/wiki/Q56043076> .
@@ -4114,36 +4114,16 @@
   # Rev. Hon. George Thomas Orlando Bridgeman, 1823-08-21 - 1895-11-25
   gen:father <https://www.wikidata.org/wiki/Q5537237> ;
   gen:mother <#Georgina_Elizabeth_Moncreiffe> .
-  # oo 1850-06-25 Emily Mary Bagot, d. 1853-12-13, daughter of Rt. Rev. Hon. Richard Bagot (1782-11-22 - 1854, Dean of Canterbury, Bishop of Oxford, https://www.wikidata.org/wiki/Q7323909) and oo 1806-12-22 Lady Harriet Villiers (d. 1870-10-18, daughter of https://www.wikidata.org/wiki/Q5545497 and Frances Twysden)
+  # oo 1850-06-25 Emily Mary Bagot, d. 1853-12-13
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q5545162> , <#Emily_Mary_Bagot> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q5545162> , <paget.ttl#Emily_Mary_Bagot> ;
 	gen:startDate "1850-06-25" .
 
 <#Harriet_Georgina_Isabel_Bridgeman>
   # Harriet Georgina Isabel Bridgeman, 1853-12-07 - 1921-11-11
   gen:father <https://www.wikidata.org/wiki/Q5545162> ;
-  gen:mother <#Emily_Mary_Bagot> .
+  gen:mother <paget.ttl#Emily_Mary_Bagot> .
   # oo 1879-04-22 Rev. Douglas Stuart Murray, 1853-05-28 - 1920-03-19, #Douglas_Stuart_Murray
-# ----
-#<https://www.wikidata.org/wiki/Q7323909>
-  # Rt. Rev. Hon. Richard Bagot, 1782-11-22 - 1854
-  # Dean of Canterbury, Bishop of Oxford
-  # oo 1806-12-22 Lady Harriet Villiers, d. 1870-10-18, daughter of https://www.wikidata.org/wiki/Q5545497 and Frances Twysden
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q7323909> , <villiers.ttl#Lady_Harriet_Villiers> ;
-	gen:startDate "1806-12-22" .
-
-<#Emily_Mary_Bagot>
-  # Emily Mary Bagot, d. 1853-12-13
-  gen:father <https://www.wikidata.org/wiki/Q7323909> ;
-  gen:mother <villiers.ttl#Lady_Harriet_Villiers> .
-  # oo 1850-06-25 Rev. Hon. George Thomas Orlando Bridgeman, 1823-08-21 - 1895-11-25, https://www.wikidata.org/wiki/Q5545162
-# ----
-<villiers.ttl#Lady_Harriet_Villiers>
-  # Lady Harriet Villiers, d. 1870-10-18
-  gen:father <https://www.wikidata.org/wiki/Q5545497> .
-  # and Frances Twysden
-  # oo 1806-12-22 Rt. Rev. Hon. Richard Bagot, 1782-11-22 - 1854, https://www.wikidata.org/wiki/Q7323909
 
 # ----
 #<#Edward_Colston>
@@ -4433,6 +4413,26 @@
     gen:spouse <#William_James_Barry> , <#Lady_Grace_Murray> ;
 	gen:startDate "1896-01-25" .
 
+<#Gerald_Barry>
+  # Gerald Barry, 1896-12-18 - 1977-02-21
+  gen:father <#William_James_Barry> ;
+  gen:mother <#Lady_Grace_Murray> .
+  # oo Lady Margaret Pleydell-Bouverie, 1903-06-26 - 2002-09-07
+  []
+    gen:spouse <#Gerald_Barry> , <#Lady_Margaret_Pleydell-Bouverie> ;
+	gen:startDate "1923-02-28" .
+
+<#Anne_Barry>
+  # Anne Barry, 1924-04-28 - 2007-04-27
+  gen:father <#Gerald_Barry> ;
+  gen:mother <#Lady_Margaret_Pleydell-Bouverie> .
+  # oo 1950-02-24 Alastair Ninian John Gordon, 6th Marquess of Aberdeen and Temair, 1920-07-20 - 2002-08-19, https://www.wikidata.org/wiki/Q2483097
+# ----
+<#Lady_Margaret_Pleydell-Bouverie>
+  # Lady Margaret Pleydell-Bouverie, 1903-06-26 - 2002-09-07
+  gen:father <https://www.wikidata.org/wiki/Q6119114> .
+  # oo 1923-02-28 Gerald Barry, 1896-12-18 - 1977-02-21, #Gerald_Barry
+
 # ----
 #<#Gilbert_Burrell_Spencer_Follett>
   # Gilbert Burrell Spencer Follett, d. 1918-09-27
@@ -4537,6 +4537,11 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q6500756> , <#Margaret_Robertson> ;
 	gen:startDate "1755" .
+<#Amelia_Oliphant>
+  # Amelia Oliphant, d. 1785-07-06
+  gen:father <#Laurence_Oliphant,_6th_of_Gask> ;
+  gen:mother <#Amelia_Anne_Sophia_Murray> .
+  # oo 1748-06 Patrick Graeme, 8th of Inchbrakie, 1735~ - 1796, graham.ttl#Patrick_Graeme,_8th_of_Inchbrakie
 
 <https://www.wikidata.org/wiki/Q5044865>
   # Caroline Oliphant, 1766-07-16 - 1845-10-27
@@ -4611,7 +4616,7 @@
 # ----
 #<#John_Grant>
   # John Grant, 1798-06-03 - 1873-01-20
-  # oo 1820-06-20 Margaret Gray, 1800 - 1822-04-24, daughter of https://www.wikidata.org/wiki/Q26207406 and Mary Anne Johnston
+  # oo 1820-06-20 Margaret Gray, 1800 - 1822-04-24
   []
     gen:spouse <#John_Grant> , <#Margaret_Gray> ;
 	gen:startDate "1820-06-20" .
@@ -4892,6 +4897,11 @@
   gen:father <https://www.wikidata.org/wiki/Q5542024> ;
   # and Anne Sinclair, d. 1699, 
   gen:mother <#Anne_Sinclair> .
+  # oo Lady Elizabeth Gordon
+  []
+    gen:spouse <#John_Mackenzie,_2nd_Earl_of_Cromartie> , <gordon.ttl#Lady_Elizabeth_Gordon,_Countess_of_Cromartie> ;
+	gen:startDate "1685-01-10" ;
+	gen:divorceDate "1698-07-28" .
   # oo Mary Murray, 1681-08-28 - 1717b
   []
     gen:spouse <#John_Mackenzie,_2nd_Earl_of_Cromartie> , <#Mary_Murray> ;
@@ -4939,12 +4949,12 @@
   # Patrick Leslie, 1st Lord Lindores, d. 1608-05-22a/-10-05b
   # oo Lady Jean Stewart, b. 1563~
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q7147013> , <stuart.ttl#Lady_Jean_Stewart> .
+    gen:spouse <https://www.wikidata.org/wiki/Q7147013> , <stuart.ttl#Lady_Jean_Stewart_(born_1563~)> .
 
 <#Elizabeth_Leslie>
   # Elizabeth Leslie
   gen:father <https://www.wikidata.org/wiki/Q7147013> ;
-  gen:mother <stuart.ttl#Lady_Jean_Stewart> .
+  gen:mother <stuart.ttl#Lady_Jean_Stewart_(born_1563~)> .
   # oo 1628-07-26 Sir James Sinclair of Mey, 1st Baronet, d. 1662-04-20, #Sir_James_Sinclair_of_Mey,_1st_Baronet
 # ----
 #<https://www.wikidata.org/wiki/Q26857655>
