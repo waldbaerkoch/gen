@@ -789,7 +789,7 @@
   # Evelyn Francis Edward Seymour, 17th Duke of Somerset, 1882-05-01 - 1954-04-26
   gen:father <https://www.wikidata.org/wiki/Q5345284> ;
   gen:mother <#Rowena_Wall> .
-  # oo Edith Mary Parker, d. 1962-04-19, daughter of William Parker and Lucinda Steeves (daughter of https://www.wikidata.org/wiki/Q977705)
+  # oo Edith Mary Parker, d. 1962-04-19
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5416431> , <#Edith_Mary_Parker> ;
 	gen:startDate "1906-01-03" .
@@ -1728,7 +1728,7 @@
   # Timothy Maurice Barnabas Seymour, 1932-06-16 - 1975-02-08
   gen:father <https://www.wikidata.org/wiki/Q4724169> ;
   gen:mother <#Ida_Grace_Hammick> .
-  # oo Monica Westall, daughter of https://www.wikidata.org/wiki/Q8001999
+  # oo Monica Westall
   []
     gen:spouse <#Timothy_Maurice_Barnabas_Seymour> , <#Monica_Westall> ;
 	gen:startDate "1954-06-07" .
@@ -2269,7 +2269,7 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q1986689> , <#Rachel_de_Massue> ;
 	gen:startDate "1634-08-18" .
-  # oo Lady Elizabeth Leigh, d. 1655, daughter of https://www.wikidata.org/wiki/Q5481704 and Hon. Audrey Boteler
+  # oo Lady Elizabeth Leigh, d. 1655
   []
     gen:spouse <https://www.wikidata.org/wiki/Q1986689> , <#Lady_Elizabeth_Leigh> ;
 	gen:startDate "1642-04-24~" .
@@ -2815,6 +2815,24 @@
   # oo 1881-07-28 Edward Hamilton Seymour, 16th Duke of Somerset, 1860-05-19 - 1931-05-05, https://www.wikidata.org/wiki/Q5345284
 
 # ----
+#<#William_Parker>
+  # William Parker
+  # oo Lucinda Steeves
+  []
+    gen:spouse <#William_Parker> , <#Lucinda_Steeves> .
+
+<#Edith_Mary_Parker>
+  # Edith Mary Parker, d. 1962-04-19
+  gen:father <#William_Parker> ;
+  gen:mother <#Lucinda_Steeves> .
+  # oo 1906-01-03 Evelyn Francis Edward Seymour, 17th Duke of Somerset, 1882-05-01 - 1954-04-26, https://www.wikidata.org/wiki/Q5416431
+# ----
+<#Lucinda_Steeves>
+  # Lucinda Steeves
+  gen:father <https://www.wikidata.org/wiki/Q977705> .
+  # oo William Parker, #William_Parker
+
+# ----
 #<https://www.wikidata.org/wiki/Q6237955>
   # John Harris, of Hayne, 1690~ - 1767-10-05
   # oo Anne Seymour-Conway, d. 1774-03-25
@@ -3082,13 +3100,36 @@
   gen:name "Anthony Joseph Browne, 7th Viscount Montagu"@en ;
   gen:birthDate "1728/1730" ;
   gen:deathDate "1787-04-09" .
-  # oo 1765-07-22 Frances Mackworth, 1731-08-28 - 1814-03-03, daughter of Herbert Mackworth (1687-09-07 - 1765-08-20, son of Sir Humphrey Mackworth and Mary Evans) and oo 1730-04-29 Hon. Juliana Digby (d. 1785-08-09, daughter of https://www.wikidata.org/wiki/Q8007836)
+  # oo Frances Mackworth, 1731-08-28 - 1814-03-03
+  []
+    gen:spouse <#Anthony_Browne,_7th_Viscount_Montagu> , <#Frances_Mackworth> ;
+	gen:startDate "1765-07-22" .
 
 <#Elizabeth_Mary_Browne>
   # Hon. Elizabeth Mary Browne, 1767-02-05 - 1830-12-30
-  gen:father <#Anthony_Browne,_7th_Viscount_Montagu> .
-  # and Frances Mackworth
+  gen:father <#Anthony_Browne,_7th_Viscount_Montagu> ;
+  gen:mother <#Frances_Mackworth> .
   # oo 1794-09-01 William Stephen Poyntz, 1770-01-20 - 1840-04-08, https://www.wikidata.org/wiki/Q8018781
+# ----
+#<#Herbert_Mackworth>
+  # Herbert Mackworth, 1687-09-07 - 1765-08-20
+  # son of Sir Humphrey Mackworth
+  # and Mary Evans
+  # oo Hon. Juliana Digby, d. 1785-08-09
+  []
+    gen:spouse <#Herbert_Mackworth> , <#Juliana_Digby> ;
+	gen:startDate "1730-04-29" .
+
+<#Frances_Mackworth>
+  # Frances Mackworth, 1731-08-28 - 1814-03-03
+  gen:father <#Herbert_Mackworth> ;
+  gen:mother <#Juliana_Digby> .
+  # oo 1765-07-22 Anthony Joseph Browne, 7th Viscount Montagu, 1728/1730 - 1787-04-09, #Anthony_Browne,_7th_Viscount_Montagu
+# ----
+<#Juliana_Digby>
+  # Hon. Juliana Digby, d. 1785-08-09
+  gen:father <https://www.wikidata.org/wiki/Q8007836> .
+  # oo 1730-04-29 Herbert Mackworth, 1687-09-07 - 1765-08-20, #Herbert_Mackworth
 
 # ----
 #<https://www.wikidata.org/wiki/Q5498016>
