@@ -363,7 +363,7 @@
 	gen:startDate "1631-04-13" .
   # oo Lady Mary Leslie, b. 1620
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q16239985> , <leslie.ttl#Lady_Mary_Leslie> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q16239985> , <leslie.ttl#Lady_Mary_Leslie_(born_1620)> ;
 	gen:startDate "1635-12-24" .
 <#Sir_Henry_Montgomerie>
   # Hon. Sir Henry Montgomerie, 1614-06-26 - 1643-05-03
@@ -401,12 +401,12 @@
 <#Lady_Margaret_Montgomerie>
   # Lady Margaret Montgomerie
   gen:father <https://www.wikidata.org/wiki/Q16239985> ;
-  gen:mother <leslie.ttl#Lady_Mary_Leslie> .
+  gen:mother <leslie.ttl#Lady_Mary_Leslie_(born_1620)> .
   # oo 1666-11-25a James Campbell, 2nd Earl of Loudoun, 1598 - 1662-03-15, campbell.ttl#James_Campbell,_2nd_Earl_of_Loudoun
 <#Alexander_Montgomerie,_8th_Earl_of_Eglinton>
   # Alexander Montgomerie, 8th Earl of Eglinton, d. 1701
   gen:father <https://www.wikidata.org/wiki/Q16239985> ;
-  gen:mother <leslie.ttl#Lady_Mary_Leslie> .
+  gen:mother <leslie.ttl#Lady_Mary_Leslie_(born_1620)> .
   # oo Lady Elizabeth Crichton, d. 1675~
   []
     gen:spouse <#Alexander_Montgomerie,_8th_Earl_of_Eglinton> , <#Lady_Elizabeth_Crichton> ;
@@ -422,18 +422,18 @@
 <#Francis_Montgomerie>
   # Hon. Francis Montgomerie, of Giffen, d. 1729-01
   gen:father <https://www.wikidata.org/wiki/Q16239985> ;
-  gen:mother <leslie.ttl#Lady_Mary_Leslie> .
+  gen:mother <leslie.ttl#Lady_Mary_Leslie_(born_1620)> .
   # oo 1673-10-10~ Margaret Leslie, 3rd Countess of Leven, d. 1674-11-06, leslie.ttl#Margaret_Leslie,_3rd_Countess_of_Leven
   # oo Elizabeth Sinclair, b. 1650-06-17, daughter of Sir Robert Sinclair of Longformacus, 1st Baronet and Elizabeth Douglas
 <#Lady_Christiana_Montgomerie>
   # Lady Christiana Montgomerie, d. 1687b
   gen:father <https://www.wikidata.org/wiki/Q16239985> ;
-  gen:mother <leslie.ttl#Lady_Mary_Leslie> .
+  gen:mother <leslie.ttl#Lady_Mary_Leslie_(born_1620)> .
   # oo 1672-02-15 John Elphinstone, 4th Lord Balmerinoch, 1652-12-26 - 1736-05-13, https://www.wikidata.org/wiki/Q19325316
 <#Lady_Mary_Montgomerie_(died_1703)>
   # Lady Mary Montgomerie, 1642 - 1703-11-18
   gen:father <https://www.wikidata.org/wiki/Q16239985> ;
-  gen:mother <leslie.ttl#Lady_Mary_Leslie> .
+  gen:mother <leslie.ttl#Lady_Mary_Leslie_(born_1620)> .
   # oo 1662-09-04 George Seton, 4th Earl of Winton, 1642-05-04 - 1704-03-06, https://www.wikidata.org/wiki/Q7620782
 
 <https://www.wikidata.org/wiki/Q4719686>
@@ -858,8 +858,8 @@
   gen:mother <stuart.ttl#Lady_Jean_Stewart_(died_1510)> .
   # oo Margaret Stewart, b. 1497~
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q6235746> , <stuart.ttl#Margaret_Stewart_(born_1497)> ;
-	gen:startDate "1510-03-26~" .
+    gen:spouse <https://www.wikidata.org/wiki/Q6235746> , <https://www.wikidata.org/wiki/Q16747640> ;
+	gen:startDate "1510-03-26~/1512-11" .
 <https://www.wikidata.org/wiki/Q7487048>
   # Hon. William Gordon, d. 1577
   # Bishop of Abercorn
@@ -879,7 +879,7 @@
 <https://www.wikidata.org/wiki/Q495531>
   # George Gordon, 4th Earl of Huntly, 1514 - 1562-10-28
   gen:father <https://www.wikidata.org/wiki/Q6235746> ;
-  gen:mother <stuart.ttl#Margaret_Stewart_(born_1497)> .
+  gen:mother <https://www.wikidata.org/wiki/Q16747640> .
   # oo Lady Elizabeth Keith, 1515~ - 1566a
   []
     gen:spouse <https://www.wikidata.org/wiki/Q495531> , <https://www.wikidata.org/wiki/Q4958466> ;
@@ -888,7 +888,7 @@
   # Alexander Gordon, Bishop of Galloway, 1516~ – 1575
   # Archbishop of Glasgow, Bishop of the Isles, Bishop of Galloway
   gen:father <https://www.wikidata.org/wiki/Q6235746> ;
-  gen:mother <stuart.ttl#Margaret_Stewart_(born_1497)> .
+  gen:mother <https://www.wikidata.org/wiki/Q16747640> .
 
 <#Alexander_Gordon,_Lord_Gordon>
   # Alexander Gordon, Lord Gordon, d. 1552-09-18a/1553-08-11b
@@ -3198,11 +3198,13 @@
   # oo 1504-04-24b Alexander Robertson, 9th of Glenerochie, 5th Chief of Clan Donnachaidh, d. 1506~, hay.ttl#Alexander_Robertson,_9th_of_Glenerochie
   # oo 1511-01-19 John Stuart, 3rd Earl of Lennox, 1490~ - 1526-09-04, https://www.wikidata.org/wiki/Q1701831
 
-<stuart.ttl#Margaret_Stewart_(born_1497)>
+<https://www.wikidata.org/wiki/Q16747640>
   # Margaret Stewart, b. 1497~
-  gen:father <https://www.wikidata.org/wiki/Q137906> ;
-  gen:mother <https://www.wikidata.org/wiki/Q13646786> .
-  # oo 1510-03-26~ John Gordon, Lord Gordon, d. 1517, https://www.wikidata.org/wiki/Q6235746
+  gen:father <https://www.wikidata.org/wiki/Q137906> ; # James IV, King of Scots
+  gen:mother <https://www.wikidata.org/wiki/Q13646786> . # Margaret Drummond
+  # oo 1510-03-26~/1512-11 John Gordon, Lord Gordon, d. 1517, https://www.wikidata.org/wiki/Q6235746
+  # oo Alexander Stewart, 1477~ - 1537-12-19, https://www.wikidata.org/wiki/Q4720150
+  # oo 1530-01-20 Sir John Drummond, 2nd of Innerpeffray, 1486~ - 1565~, https://www.wikidata.org/wiki/Q48816050
 
 #<https://www.wikidata.org/wiki/Q1701833>
   # John Stewart, 4th Earl of Atholl, 1533 - 1579-04-25
@@ -3278,7 +3280,7 @@
   # oo 1711 William Gordon, 6th Viscount Kenmure, d. 1716-02-24, https://www.wikidata.org/wiki/Q8010007
 
 # ----
-<leslie.ttl#Lady_Mary_Leslie>
+<leslie.ttl#Lady_Mary_Leslie_(born_1620)>
   # Lady Mary Leslie, b. 1620
   gen:father <https://www.wikidata.org/wiki/Q4259452> ;
   gen:mother <erskine.ttl#Lady_Anne_Erskine_(died_1640)> .
@@ -4188,20 +4190,6 @@
 	gen:startDate "1756-03" .
 
 # ----
-<lindsay.ttl#Hugh_Lindsay>
-  # Hon. Hugh Lindsay, 1765-10-30 - 1844-04-23
-  gen:father <https://www.wikidata.org/wiki/Q7615693> .
-  # oo Jane Gordon, d. 1865-05-26
-  []
-    gen:spouse <lindsay.ttl#Hugh_Lindsay> , <gordon.ttl#Jane_Gordon> ;
-	gen:startDate "1799-01-14" .
-
-<lindsay.ttl#Anne_Lindsay>
-  # Anne Lindsay, 1800~ - 1885-12-01
-  gen:father <lindsay.ttl#Hugh_Lindsay> ;
-  gen:mother <gordon.ttl#Jane_Gordon> .
-  # oo 1817-10-16 Sir Edmund Antrobus, 2nd Baronet, 1792-05-17 - 1870-05-04, https://www.wikidata.org/wiki/Q26623605
-
 #<https://www.wikidata.org/wiki/Q8014578>
   # William Alexander Lindsay, 1846-06-08 - 1926-09-13
   # son of Hon. Colin Lindsay, son of James 7th Earl of Balcarres, 24th Earl of Crawford
