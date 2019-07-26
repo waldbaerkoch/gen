@@ -1616,8 +1616,15 @@
   gen:deathDate "1545-08-22" ;
   gen:father <https://www.wikidata.org/wiki/Q2576899> ;
   gen:mother <https://www.wikidata.org/wiki/Q61913464> .
-  # oo (1) 1507-02-07b (annulled 1528-05-12) Margaret Neville (born 1466) daughter of https://www.wikidata.org/wiki/Q719793 and Isabel Ingaldesthorpe, daughter and heiress of Sir Edmund Ingaldsthorpe
-  # (2) 1508 Anne Browne (d. 1511) daughter of https://www.wikidata.org/wiki/Q4772162 and Eleanor Ughtred, the daughter of Sir Robert Ughtred (c. 1428 – c. 1487)
+  # oo Margaret Neville, b. 1466
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q337635> , <neville.ttl#Margaret_Neville> ;
+	gen:startDate "1507-02-07b" ;
+	gen:annulledDate "1528-05-12" .
+  # oo Anne Browne, d. 1511
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q337635> , <#Anne_Browne> ;
+	gen:startDate "1508" .
   # (3) Mary Tudor, Queen of France, 1496-03-18 – 1533-06-25
   []
     gen:spouse <https://www.wikidata.org/wiki/Q337635> , <https://www.wikidata.org/wiki/Q588852> .
@@ -1672,6 +1679,18 @@
   # Elizabeth Darcy
   gen:father <https://www.wikidata.org/wiki/Q61913550> .
   # oo Sir Henry Bruin, https://www.wikidata.org/wiki/Q61913505
+# ----
+<neville.ttl#Margaret_Neville>
+  # Margaret Neville, b. 1466
+  gen:father <https://www.wikidata.org/wiki/Q719793> .
+  # and Isabel Ingaldesthorpe, daughter of Sir Edmund Ingaldsthorpe
+  # oo 1507-02-07b (annulled 1528-05-12) Charles Brandon, 1st Duke of Suffolk, 1484~ - 1545-08-22, https://www.wikidata.org/wiki/Q337635
+# ----
+<#Anne_Browne>
+  # Anne Browne, d. 1511
+  gen:father <https://www.wikidata.org/wiki/Q4772162> .
+  # and Eleanor Ughtred, daughter of Sir Robert Ughtred (1428~ – 1487~)
+  # oo 1508 Charles Brandon, 1st Duke of Suffolk, 1484~ - 1545-08-22, https://www.wikidata.org/wiki/Q337635
 
 # ----
 <https://www.wikidata.org/wiki/Q5082714>
@@ -1791,7 +1810,9 @@
   gen:deathDate "1531-05-20" ;
   gen:father <https://www.wikidata.org/wiki/Q3175522> ;
   gen:mother <#Jeanne_du_Perrier> .
-  # oo Charlotte von Neapel, 1480-02 - 1506-10-16, daughter of https://www.wikidata.org/wiki/Q264060 and https://www.wikidata.org/wiki/Q756332
+  # oo Charlotte von Neapel, 1480-02 - 1506-10-16
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3122216> , <https://www.wikidata.org/wiki/Q750559> .
 
 <https://www.wikidata.org/wiki/Q585343>
   gen:name "Anne de Laval"@en ;
@@ -1800,11 +1821,17 @@
   gen:father <https://www.wikidata.org/wiki/Q3122216> ;
   gen:mother <https://www.wikidata.org/wiki/Q750559> .
   # oo François II de La Trémoille, 1505 - 1541, https://www.wikidata.org/wiki/Q2599824
+# ----
+<https://www.wikidata.org/wiki/Q750559>
+  # Charlotte von Neapel, 1480-02 - 1506-10-16
+  gen:father <https://www.wikidata.org/wiki/Q264060> ;
+  gen:mother <https://www.wikidata.org/wiki/Q756332> .
+  # oo Guy XVI de Laval, 1476-10-01 - 1531-05-20, https://www.wikidata.org/wiki/Q3122216
 
 # ----
 #<https://www.wikidata.org/wiki/Q4798858>
   # Sir Arthur Gorges, 1569~ - 1625-10-10
-  # oo Lady Elizabeth Clinton, daughter of https://www.wikidata.org/wiki/Q16859736
+  # oo Lady Elizabeth Clinton
   []
     gen:spouse <https://www.wikidata.org/wiki/Q4798858> , <#Lady_Elizabeth_Clinton> ;
 	gen:startDate "1597~" .
@@ -2010,41 +2037,14 @@
   # and Sidney Grosvenor
   # oo Elizabeth Spencer, b. 1640a
   []
-    gen:spouse <#Robert_Hesketh> , <#Elizabeth_Spencer> .
+    gen:spouse <#Robert_Hesketh> , <spencer.ttl#Elizabeth_Spencer> .
 
 <#Elizabeth_Hesketh>
   # Elizabeth Hesketh, d. 1776-02-24
   gen:deathDate "1776-02-24" ;
   gen:father <#Robert_Hesketh> ;
-  gen:mother <#Elizabeth_Spencer> .
+  gen:mother <spencer.ttl#Elizabeth_Spencer> .
   # oo 1714-09-14 Edward Stanley, 11th Earl of Derby, 1689-09-27 - 1776-02-22, https://www.wikidata.org/wiki/Q5345406
-# ----
-#<https://www.wikidata.org/wiki/Q4020155>
-  # William Spencer, 2nd Baron Spencer of Wormleighton, 1592-01-04 - 1636-12-19
-  # oo Lady Penelope Wriothesley, 1598-11-08b - 1667-07-16
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q4020155> , <#Lady_Penelope_Wriothesley> ;
-	gen:startDate "1615" .
-
-<#William_Spencer>
-  # Hon. William Spencer, b. 1622a
-  gen:father <https://www.wikidata.org/wiki/Q4020155> ;
-  gen:mother <#Lady_Penelope_Wriothesley> .
-  # oo Elizabeth Gerard, daughter of Dutton Gerard, 3rd Baron Gerard of Gerard's Bromley (1613-03-04 - 1640-04-22, son of Gilbert Gerard, 2nd Baron Gerard of Gerard's Bromley (son of Thomas Gerard, 1st Baron Gerard of Gerard's Bromley (1564~ - 1618-01-15, https://www.wikidata.org/wiki/Q7789992) and Alice Rivet) and oo 1609-09-16 Eleanor Dutton (1596 -1657-03-12, daughter of Thomas Dutton and Thomasine Anderton)) and oo Lady Elizabeth O'Brien (d. 1656-04-09a/1659-06-30b, daughter of https://www.wikidata.org/wiki/Q5726431 and Mary Brereton))
-  []
-    gen:spouse <#William_Spencer> , <#Elizabeth_Gerard> .
-
-<#Elizabeth_Spencer>
-  # Elizabeth Spencer, b. 1640a
-  gen:father <#William_Spencer> ;
-  gen:mother <#Elizabeth_Gerard> .
-  # oo Robert Hesketh, #Robert_Hesketh
-# ----
-<#Lady_Penelope_Wriothesley>
-  # Lady Penelope Wriothesley, 1598-11-08b - 1667-07-16
-  gen:father <https://www.wikidata.org/wiki/Q743492> ;
-  gen:mother <https://www.wikidata.org/wiki/Q3723434> .
-  # oo 1615 William Spencer, 2nd Baron Spencer of Wormleighton, 1592-01-04 - 1636-12-19, https://www.wikidata.org/wiki/Q4020155
 
 # ----
 #<https://www.wikidata.org/wiki/Q436775>
@@ -2253,7 +2253,7 @@
 # ----
 #<https://www.wikidata.org/wiki/Q5077296>
   # Hon. Charles Edward Pooley, 1845-02-08 – 1912-03-28
-  # oo Elizabeth Fisher, daughter of https://www.wikidata.org/wiki/Q8009074
+  # oo Elizabeth Fisher
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5077296> , <#Elizabeth_Fisher> ;
 	gen:startDate "1869" .
@@ -2540,7 +2540,7 @@
 # ----
 #<#George_Mathew>
   # George Mathew
-  # oo Eleanor Butler, daughter of https://www.wikidata.org/wiki/Q5338842 and Margaret Butler
+  # oo Eleanor Butler
   []
     gen:spouse <#George_Mathew> , <#Eleanor_Butler> .
 
@@ -2604,7 +2604,7 @@
   # Hon. Anne Frederica Holroyd, d. 1829-08-31
   gen:father <https://www.wikidata.org/wiki/Q6220354> ;
   gen:mother <#Lady_Anne_North> .
-  # oo 1827-06-14 Hon. Arthur Charles Legge, 1800-06-05 - 1890-05-18, https://www.wikidata.org/wiki/Q4799482, son of https://www.wikidata.org/wiki/Q5541651 and https://www.wikidata.org/wiki/Q51883197
+  # oo 1827-06-14 Hon. Arthur Charles Legge, 1800-06-05 - 1890-05-18, https://www.wikidata.org/wiki/Q4799482
 <https://www.wikidata.org/wiki/Q5540693>
   # George Augustus Frederick Charles Holroyd, 2nd Earl of Sheffield, 1802-03-16 - 1876-04-05
   gen:father <https://www.wikidata.org/wiki/Q6220354> ;
@@ -2618,6 +2618,15 @@
   # Henry North Holroyd, 3rd Earl of Sheffield, 1832-01-18 - 1909-04-21
   gen:father <https://www.wikidata.org/wiki/Q5540693> ;
   gen:mother <cavendish.ttl#Lady_Harriett_Lascelles> .
+# ----
+<https://www.wikidata.org/wiki/Q4799482>
+  # Hon. Arthur Charles Legge, 1800-06-05 - 1890-05-18
+  gen:father <https://www.wikidata.org/wiki/Q5541651> ;
+  gen:mother <https://www.wikidata.org/wiki/Q51883197> .
+  # oo Hon. Anne Frederica Holroyd, d. 1829-08-31
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4799482> , <#Anne_Frederica_Holroyd> ;
+	gen:startDate "1827-06-14" .
 
 # ----
 #<https://www.wikidata.org/wiki/Q7793086>
