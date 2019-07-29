@@ -2271,7 +2271,7 @@
 	gen:startDate "1634-08-18" .
   # oo Lady Elizabeth Leigh, d. 1655
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q1986689> , <#Lady_Elizabeth_Leigh> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q1986689> , <devereuc.ttl#Lady_Elizabeth_Leigh> ;
 	gen:startDate "1642-04-24~" .
   # oo Lady Frances Seymour, d. 1681-01-02~
   []
@@ -2291,16 +2291,9 @@
 <https://www.wikidata.org/wiki/Q16859793>
   # Lady Elizabeth Wriothesley, 1646 - 1690-09-19
   gen:father <https://www.wikidata.org/wiki/Q1986689> ;
-  gen:mother <#Lady_Elizabeth_Leigh> .
+  gen:mother <devereuc.ttl#Lady_Elizabeth_Leigh> .
   # oo 1662-12-23 Joceline Percy, 5th (11th) Earl of Northumberland, 1644-07-04 - 1670-05-21, https://www.wikidata.org/wiki/Q3810120
   # oo 1673-08-24 Ralph Montagu, 1st Duke of Montagu, 1638-12-24 - 1709-03-09, https://www.wikidata.org/wiki/Q7287871
-# ----
-<#Lady_Elizabeth_Leigh>
-  # Lady Elizabeth Leigh, d. 1655
-  gen:father <https://www.wikidata.org/wiki/Q5481704> .
-  # and Hon. Audrey Boteler
-  # oo 1642-04-24~ Thomas Wriothesley, 4th Earl of Southampton, 1607 - 1667-05-16, https://www.wikidata.org/wiki/Q1986689
-
 
 # ----
 #<https://www.wikidata.org/wiki/Q5166777>
@@ -3740,6 +3733,14 @@
     gen:spouse <https://www.wikidata.org/wiki/Q15989859> , <#Elizabeth_Simpson> ;
 	gen:startDate "1755-07-12" .
 
+<#John_Simpson>
+  # Hon. John Simpson, 1763-05-13 - 1850-06-05
+  gen:father <https://www.wikidata.org/wiki/Q15989859> ;
+  gen:mother <#Elizabeth_Simpson> .
+  # oo Henrietta Francis Worsley, d. 1791-07-25
+  []
+    gen:spouse <#John_Simpson> , <#Henrietta_Francis_Worsley> ;
+	gen:startDate "1784-06-03" .
 <#Elizabeth_Bridgeman>
   # Hon. Elizabeth Bridgeman, 1764 - 1810-05-05
   gen:father <https://www.wikidata.org/wiki/Q15989859> ;
@@ -3754,12 +3755,36 @@
     gen:spouse <#George_Bridgeman> , <boyle.ttl#Lady_Lucy_Isabella_Boyle> ;
 	gen:startDate "1792-07-28" .
 
+<#Henrietta_Anne_Maria_Charlotte_Bridgeman_Simpson>
+  # Henrietta Anne Maria Charlotte Bridgeman Simpson, 1788-04-24 - 1813-06-30
+  gen:father <#John_Simpson> ;
+  gen:mother <#Henrietta_Francis_Worsley> .
+  # oo 1806-08-11 Charles Anderson-Pelham, 1st Earl of Yarborough, 1781-08-08 – 1846-09-05, https://www.wikidata.org/wiki/Q5075114
 <#Anne_Charlotte_Bridgeman>
   # Anne Charlotte Bridgeman, d. 1858-02-09
   gen:father <#George_Bridgeman> ;
   gen:mother <boyle.ttl#Lady_Lucy_Isabella_Boyle> .
   # oo 1819-12-07 Charles Shirley, 1792-11-15 - 1855-12-12, shirley.ttl#Charles_Shirley
 # ----
+#<https://www.wikidata.org/wiki/Q52269095>
+  # Sir Thomas Worsley, 6th Baronet, 1728-04-22 - 1768
+  # oo Lady Elizabeth Boyle, 1731-05-07 - 1800-01-16
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q52269095> , <boyle.ttl#Lady_Elizabeth_Boyle> ;
+	gen:startDate "1749" .
+
+<#Henrietta_Francis_Worsley>
+  # Henrietta Francis Worsley, d. 1791-07-25
+  gen:father <https://www.wikidata.org/wiki/Q52269095> ;
+  gen:mother <boyle.ttl#Lady_Elizabeth_Boyle> .
+  # oo 1784-06-03 Hon. John Simpson, 1763-05-13 - 1850-06-05, #John_Simpson
+# ----
+<boyle.ttl#Lady_Elizabeth_Boyle>
+  # Lady Elizabeth Boyle, 1731-05-07 - 1800-01-16
+  gen:father <https://www.wikidata.org/wiki/Q1032335> .
+  # and Lady Henrietta Hamilton
+  # oo 1749 Sir Thomas Worsley, 6th Baronet, 1728-04-22 - 1768, https://www.wikidata.org/wiki/Q52269095
+
 <boyle.ttl#Lady_Lucy_Isabella_Boyle>
   # Lady Lucy Isabella Boyle, d. 1801-09-07
   gen:father <https://www.wikidata.org/wiki/Q2849925> .

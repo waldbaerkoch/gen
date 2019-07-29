@@ -1,0 +1,706 @@
+@base <anderson.ttl> .
+@prefix gen: <http://jjkoch.de/gen#> .
+@prefix wdata: <https://www.wikidata.org/wiki/> .
+@prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+
+#<#Sir_Edmund_Anderson>
+  # Sir Edmund Anderson
+  # oo Magdalen Smith
+
+<#Sir_Francis_Anderson>
+  # Sir Francis Anderson, 1581 - 1615-12-22
+  gen:father <#Sir_Edmund_Anderson> .
+  # and Magdalen Smith
+  # oo Judith Soame, 1586 - 1608-07-04, daughter of Sir Stephen Soame and Anne Stone
+  []
+    gen:spouse <#Sir_Francis_Anderson> , <#Judith_Soame> ;
+	gen:startDate "1606" .
+  # oo Hon. Audrey Boteler, 1595 - 1652-09-16
+  []
+    gen:spouse <#Sir_Francis_Anderson> , <howard.ttl#Audrey_Boteler> ;
+	gen:startDate "1611" .
+<#William_Anderson>
+  # William Anderson
+  gen:father <#Sir_Edmund_Anderson> .
+  # and Magdalen Smith
+  # oo Joan Essex
+  []
+    gen:spouse <#William_Anderson> , <#Joan_Essex> .
+  # oo Elizabeth Darnell
+<#Katharine_Anderson>
+  # Katharine Anderson, d. 1639-02~
+  gen:father <#Sir_Edmund_Anderson> .
+  # and Magdalen Smith
+  # oo 1590~ Sir George Booth, 1st Baronet, 1566-010-20 - 1652-10-24, https://www.wikidata.org/wiki/Q43283468
+<#Margaret_Anderson>
+  # Margaret Anderson, d. 1630-07-31~
+  gen:father <#Sir_Edmund_Anderson> .
+  # and Magdalen Smith
+  # oo 1590-07 Sir Thomas Monson, 1st Baronet, d. 1641-05-25, https://www.wikidata.org/wiki/Q7529213
+<#Grizel_Anderson>
+  # Grizel Anderson
+  gen:father <#Sir_Edmund_Anderson> .
+  # oo Sir John Sheffield, d. 1641-12, #Sir_John_Sheffield
+
+<#Stephen_Anderson>
+  # Stephen Anderson, of Eyworth, 1608 - 1774-06a
+  gen:father <#Sir_Francis_Anderson> ;
+  gen:mother <#Judith_Soame> .
+  # oo Catherine Sandys, d. 1656-03-08b, daughter of Sir Edwyn Sandys
+<#Sir_John_Anderson,_1st_Baronet>
+  # Sir John Anderson, 1st Baronet, 1612 - 1630-07
+  # 1st Baronet Anderson, of St. Ives, co. Huntingdon 1629-01-03
+  gen:father <#Sir_Francis_Anderson> ;
+  gen:mother <howard.ttl#Audrey_Boteler> .
+<#Sir_Edmund_Anderson,_1st_Baronet> # -> Anderson Baronets of Broughton
+  # Sir Edmund Anderson, 1st Baronet, 1605-08-10 - 1661-01~
+  gen:father <#William_Anderson> ;
+  gen:mother <#Joan_Essex> .
+
+<#Sir_Stephen_Anderson,_1st_Baronet> # -> Anderson of Eyworth
+  # Sir Stephen Anderson, 1st Baronet, 1644~ - 1707-01-19
+  gen:father <#Stephen_Anderson> .
+  # and Catherine Sandys
+<#Francis_Anderson_(died_1706)> # -> Anderson of Manby
+  # Francis Anderson, of Manby, 1646 - 1706-04-15
+  gen:father <#Stephen_Anderson> .
+  # and Catherine Sandys
+  # oo Elizabeth Lodington, d. 1694-06-02
+  []
+    gen:spouse <#Francis_Anderson_(died_1706)> , <#Elizabeth_Lodington> ;
+	gen:startDate "1674-06" .
+<#Penelope_Anderson>
+  # Penelope Anderson, d. 1681
+  gen:father <#Stephen_Anderson> .
+  # and Catherine Sandys
+  # oo 1660~ Sir William Glynne, 1st Baronet, 1638-01-20 - 1690-09-08, https://www.wikidata.org/wiki/Q7529608
+
+
+# Anderson of Eyworth
+<#Sir_Stephen_Anderson,_1st_Baronet>
+  # Sir Stephen Anderson, 1st Baronet, 1644~ - 1707-01-19
+  # 1st Baronet Anderson, of Eyworth, co. Bedford 1664-07-13
+  gen:father <#Stephen_Anderson> .
+  # and Catherine Sandys
+  # oo Mary Glynne, 1649~ - 1668-02-24
+  []
+    gen:spouse <#Sir_Stephen_Anderson,_1st_Baronet> , <#Mary_Glynne> ;
+	gen:startDate "1664-06-02" .
+  # oo Judith Laurence, 1648-05-04 - 1688-05~, daughter of Sir John Laurence and Abigail Cullen
+  []
+    gen:spouse <#Sir_Stephen_Anderson,_1st_Baronet> , <#Judith_Laurence> ;
+	gen:startDate "1673-04-08" .
+
+<#Sir_Stephen_Anderson,_2nd_Baronet>
+  # Sir Stephen Anderson, 2nd Baronet, 1678-10-01 - 1741-10-21
+  gen:father <#Sir_Stephen_Anderson,_1st_Baronet> ;
+  gen:mother <#Judith_Laurence> .
+  # oo Anne Lumley, 1684-09-06 - 1719-10-27, daughter of Sir Martin Lumley, 3rd Baronet and Elizabeth Dawes
+  []
+    gen:spouse <#Sir_Stephen_Anderson,_2nd_Baronet> , <#Anne_Lumley> ;
+	gen:startDate "1707b" .
+
+<#Sir_Stephen_Anderson,_3rd_Baronet>
+  # Sir Stephen Anderson, 3rd Baronet, 1708-11-15 - 1773-02-19
+  gen:father <#Sir_Stephen_Anderson,_2nd_Baronet> ;
+  gen:mother <#Anne_Lumley> .
+  # oo Elizabeth Barne, d. 1769-04-09, daughter of Miles Barne
+  []
+    gen:spouse <#Sir_Stephen_Anderson,_3rd_Baronet> , <#Elizabeth_Barne> ;
+	gen:startDate "1732-01-27" .
+  # oo Mary Elsegood, d. 1808, daughter of W. Elsgood
+  []
+    gen:spouse <#Sir_Stephen_Anderson,_3rd_Baronet> , <#Mary_Elsegood> ;
+	gen:startDate "1771-04-02" .
+
+
+# Anderson of Manby
+<#Francis_Anderson_(died_1706)>
+  # Francis Anderson, of Manby, 1646 - 1706-04-15
+  gen:father <#Stephen_Anderson> .
+  # and Catherine Sandys
+  # oo Elizabeth Lodington, d. 1694-06-02
+  []
+    gen:spouse <#Francis_Anderson_(died_1706)> , <#Elizabeth_Lodington> ;
+	gen:startDate "1674-06" .
+
+<#Francis_Anderson_(died_1747)>
+  # Francis Anderson, of Manby, d. 1747-09-29
+  gen:father <#Francis_Anderson_(died_1706)> ;
+  gen:mother <#Elizabeth_Lodington> .
+  # oo Mary Pelham, 1677 - 1732
+  []
+    gen:spouse <#Francis_Anderson_(died_1747)> , <pelham#Mary_Pelham> .
+
+<#Francis_Anderson_(died_1758)>
+  # Francis Anderson, of Manby, 1711-07-29b - 1758-10-23
+  gen:father <#Francis_Anderson_(died_1747)> ;
+  gen:mother <#Mary_Pelham> .
+  # oo Eleanor Carter, daughter of William Carter and Sarah Price
+  []
+    gen:spouse <#Francis_Anderson_(died_1758)> , <#Eleanor_Carter> ;
+	gen:startDate "1747-02-02" .
+
+<https://www.wikidata.org/wiki/Q5075115>
+  # Charles Anderson-Pelham, 1st Baron Yarborough, 1749-02-03 - 1823-09-22
+  # 1st Baron Yarborough, of Yarborough in the County of Lincoln 1794
+  gen:father <#Francis_Anderson_(died_1758)> ;
+  gen:mother <#Eleanor_Carter> .
+  # oo Sophia Aufrère, 1752~ - 1786-01-25
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5075115> , <https://www.wikidata.org/wiki/Q33261222> ;
+	gen:startDate "1770-07-21" .
+<https://www.wikidata.org/wiki/Q26451758>
+  # Francis Evelyn Anderson, 1752-04-08 – 1821
+  gen:father <#Francis_Anderson_(died_1758)> ;
+  gen:mother <#Eleanor_Carter> .
+  # oo Caroline Johnston, d. 1823-06-18
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q26451758> , <#Caroline_Johnston> ;
+	gen:startDate "1795" .
+
+<https://www.wikidata.org/wiki/Q5075114>
+  # Charles Anderson-Pelham, 1st Earl of Yarborough, 1781-08-08 – 1846-09-05
+  # 1st Baron Worsley, of Appuldurcombe on the Isle of Wight, 1st Earl of Yarborough 1837
+  gen:father <https://www.wikidata.org/wiki/Q5075115> ;
+  gen:mother <https://www.wikidata.org/wiki/Q33261222> .
+  # oo Henrietta Anne Maria Charlotte Bridgeman Simpson, 1788-04-24 - 1813-06-30
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5075114> , <seymout.ttl#Henrietta_Anne_Maria_Charlotte_Bridgeman_Simpson> ;
+	gen:startDate "1806-08-11" .
+<https://www.wikidata.org/wiki/Q26235930>
+  # George Anderson-Pelham, 1785-09-15 - 1835-06-14
+  gen:father <https://www.wikidata.org/wiki/Q5075115> ;
+  gen:mother <https://www.wikidata.org/wiki/Q33261222> .
+<#Arabella_Anderson-Pelham>
+  # Hon. Arabella Anderson-Pelham, 1783-01-20 - 1871-05-16
+  gen:father <https://www.wikidata.org/wiki/Q5075115> ;
+  gen:mother <https://www.wikidata.org/wiki/Q33261222> .
+  # oo 1802-07 Thomas Fieschi Heneage, 1771-09-28 - 1854-02-07, howard.ttl#Thomas_Fieschi_Heneage
+
+<https://www.wikidata.org/wiki/Q728007>
+  # Charles Anderson Worsley Anderson-Pelham, 2nd Earl of Yarborough, 1809-04-12 - 1862-01-07
+  gen:father <https://www.wikidata.org/wiki/Q5075114> ;
+  gen:mother <seymout.ttl#Henrietta_Anne_Maria_Charlotte_Bridgeman_Simpson> .
+  # oo Hon. Maria Adelaide Maude, 1814-12 - 1897-12-24
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q728007> , <#Maria_Adelaide_Maude> ;
+	gen:startDate "1831-12-19" .
+<#Lady_Charlotte_Anderson-Pelham>
+  # Lady Charlotte Anderson-Pelham, 1810-10-20/-22 - 1875-08-10
+  gen:father <https://www.wikidata.org/wiki/Q5075114> ;
+  gen:mother <seymout.ttl#Henrietta_Anne_Maria_Charlotte_Bridgeman_Simpson> .
+  # oo 1831-11-19 Sir Joseph William Copley, 4th Baronet, 1804-07-27 - 1883-01-03, grey.ttl#Sir_Joseph_Copley,_4th_Baronet
+<https://www.wikidata.org/wiki/Q5311943>
+  # Hon. Dudley Worsley Anderson-Pelham, 1812-04-20 - 1851-04-13
+  gen:father <https://www.wikidata.org/wiki/Q5075114> ;
+  gen:mother <seymout.ttl#Henrietta_Anne_Maria_Charlotte_Bridgeman_Simpson> .
+  # oo Madalina Sinclair, d. 1910-11-11
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5311943> , <#Madalina_Sinclair> ;
+	gen:startDate "1839-10-15" .
+
+<https://www.wikidata.org/wiki/Q5075117>
+  # Charles Anderson Pelham Anderson-Pelham, 3rd Earl of Yarborough, 1835-01-14 - 1875-02-06
+  gen:father <https://www.wikidata.org/wiki/Q728007> ;
+  gen:mother <#Maria_Adelaide_Maude> .
+  # oo Lady Victoria Alexandrina Hare, 1840-02-23 - 1927-03-07
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5075117> , <#Lady_Victoria_Alexandrina_Hare> ;
+	gen:startDate "1858-08-03" .
+<#Lady_Sophia_Adelaide_Theodosia_Anderson-Pelham>
+  # Lady Sophia Adelaide Theodosia Anderson-Pelham, 1840-07-26 - 1886-09-21
+  gen:father <https://www.wikidata.org/wiki/Q728007> ;
+  gen:mother <#Maria_Adelaide_Maude> .
+  # oo 1862-12-06 Archibald William Montgomerie, 14th Earl of Eglinton, 1841-12-03 - 1892-08-30, https://www.wikidata.org/wiki/Q4786455
+<#Evelyn_Cornwallis_Anderson-Pelham>
+  # Hon. Evelyn Cornwallis Anderson-Pelham, 1851-09-16 - 1908-03-06
+  gen:father <https://www.wikidata.org/wiki/Q728007> ;
+  gen:mother <#Maria_Adelaide_Maude> .
+  # oo Harriet Frances Hutton, d. 1913-07-13, daughter of Rev. George Hutton
+  []
+    gen:spouse <#Evelyn_Cornwallis_Anderson-Pelham> , <#Harriet_Frances_Hutton> ;
+	gen:startDate "1872-10-24" .
+
+<https://www.wikidata.org/wiki/Q5081569>
+  # Charles Alfred Worsley Pelham, 4th Earl of Yarborough, 1859-06-11 - 1936-07-12
+  # Anderson-Pelham
+  # Pelham 1905
+  gen:father <https://www.wikidata.org/wiki/Q5075117> ;
+  gen:mother <#Lady_Victoria_Alexandrina_Hare> .
+  # oo Marcia Amelia Mary Lane-Fox, 13th Baroness Conyers, 1863-10-18 - 1926-11-17
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5081569> , <https://www.wikidata.org/wiki/Q6757137> ;
+	gen:startDate "1886-08-05" .
+<#Lady_Gertrude_Augusta_Anderson-Pelham>
+  # Lady Gertrude Augusta Anderson-Pelham, 1861-05-11 - 1920-07-06
+  gen:father <https://www.wikidata.org/wiki/Q5075117> ;
+  gen:mother <#Lady_Victoria_Alexandrina_Hare> .
+  # oo 1882-06-05 Sir Francis Edmund George Astley, 4th Baronet, 1859-02-06 - 1939-02-05, #Sir_Francis_Astley,_4th_Baronet
+<#Cecil_Henry_Anderson-Pelham>
+  # Cecil Henry Anderson-Pelham, 1874-01-25 - 1945-11-14
+  gen:father <#Evelyn_Cornwallis_Anderson-Pelham> ;
+  gen:mother <#Harriet_Frances_Hutton> .
+  # oo Hon. Georgina Hamilton, d. 1970-12-20
+  []
+    gen:spouse <#Cecil_Henry_Anderson-Pelham> , <wellesley.ttl#Georgina_Hamilton> ;
+	gen:startDate "1902-11-12" .
+
+<https://www.wikidata.org/wiki/Q5081571>
+  # Charles Sackville Pelham, Lord Worsley, 1887-08-14 – 1914-10-10
+  gen:father <https://www.wikidata.org/wiki/Q5081569> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6757137> .
+  # oo Hon. Alexandra Mary Freesia Vivian, 1890-02-27 - 1963-09-21
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5081571> , <https://www.wikidata.org/wiki/Q4720726> ;
+	gen:startDate "1911-01-31" .
+<https://www.wikidata.org/wiki/Q7396861>
+  # Sackville George Pelham, 5th Earl of Yarborough, 1888-12-17 – 1948-02-07
+  # 14th Lord Conyers, 7th Baron Fauconberge, (10th) Conde de Mértola 1926-11-17
+  # 5th Earl of Yarborough 1936-07-12
+  gen:father <https://www.wikidata.org/wiki/Q5081569> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6757137> .
+  # oo Nancy Brocklehurst, d. 1977-10-27, daughter of Alfred Brocklehurst
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7396861> , <#Nancy_Brocklehurst> ;
+	gen:startDate "1919-09-23" .
+<https://www.wikidata.org/wiki/Q21705482>
+  # Marcus Herbert Pelham, 6th Earl of Yarborough, 1893-06-30 - 1966-12-02
+  gen:father <https://www.wikidata.org/wiki/Q5081569> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6757137> .
+  # oo Hon. Pamela Douglas-Pennant, 1896-05-11 - 1968-01-31
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q21705482> , <douglas.ttl#Pamela_Douglas-Pennant> ;
+	gen:startDate "1919-09-03" .
+
+<https://www.wikidata.org/wiki/Q5271238>
+  # Diana Mary Pelham, 15th Baroness Conyers, 1920-07-05 - 2013-03-02
+  # (11th) Condessa de Mértola 1948-02-07
+  # 15th Lady Conyers, 8th Baroness Fauconberge 2012-05-17
+  gen:father <https://www.wikidata.org/wiki/Q7396861> ;
+  gen:mother <#Nancy_Brocklehurst> .
+  # oo 1952-11-15 Robert Miller, d. 1990, #Robert_Miller
+<#Lady_June_Wendy_Pelham>
+  # Lady June Wendy Pelham+, 1924-01-06 - 2012-05-17
+  gen:father <https://www.wikidata.org/wiki/Q7396861> ;
+  gen:mother <#Nancy_Brocklehurst> .
+  # oo 1959-10-12 Michael Hildesley Lycett, d. 2016-12-17, #Michael_Hildesley_Lycett
+<#John_Pelham,_7th_Earl_of_Yarborough>
+  # John Edward Pelham, 7th Earl of Yarborough, 1920-06-02 - 1991-03-21
+  gen:father <https://www.wikidata.org/wiki/Q21705482> ;
+  gen:mother <douglas.ttl#Pamela_Douglas-Pennant> .
+  # oo Florence Anne Petronel Upton, 1924-01-25 - 2013-06-24, daughter of John Herbert Upton and Petronel Fursdon
+  []
+    gen:spouse <#John_Pelham,_7th_Earl_of_Yarborough> , <#Florence_Anne_Petronel_Upton> ;
+	gen:startDate "1957-12-12" .
+<#Lady_Janet_Marcia_Rose_Pelham>
+  # Lady Janet Marcia Rose Pelham, b. 1923-10-17
+  gen:father <https://www.wikidata.org/wiki/Q21705482> ;
+  gen:mother <douglas.ttl#Pamela_Douglas-Pennant> .
+  # oo 1948-03-20 John Charles Harper, d. 1998-09-11, #John_Charles_Harper
+
+<https://www.wikidata.org/wiki/Q5081570>
+  # Abdul Mateen Pelham, 8th Earl of Yarborough, b. 1963-11-05
+  # Charles John Pelham
+  gen:father <#John_Pelham,_7th_Earl_of_Yarborough> ;
+  gen:mother <#Florence_Anne_Petronel_Upton> .
+  # oo Anna-Karin Zecevic, daughter of George Zecevic
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5081570> , <#Anna-Karin_Zecevic> ;
+	gen:startDate "1990" .
+
+<#George_John_Sackville_Pelham,_Lord_Worsley>
+  # George John Sackville Pelham, Lord Worsley, b. 1990-08-09
+  gen:father <https://www.wikidata.org/wiki/Q5081570> ;
+  gen:mother <#Anna-Karin_Zecevic> .
+<#William_Charles_John_Walter_Pelham>
+  # Hon. William Charles John Walter Pelham, b. 1991
+  gen:father <https://www.wikidata.org/wiki/Q5081570> ;
+  gen:mother <#Anna-Karin_Zecevic> .
+<#James_Marcus_Pelham>
+  # Hon. James Marcus Pelham, b. 1994
+  gen:father <https://www.wikidata.org/wiki/Q5081570> ;
+  gen:mother <#Anna-Karin_Zecevic> .
+<#Lady_Margaret_Ann_Emily_Pelham>
+  # Lady Margaret Ann Emily Pelham, b. 1997-01
+  gen:father <https://www.wikidata.org/wiki/Q5081570> ;
+  gen:mother <#Anna-Karin_Zecevic> .
+<#Edward_John_Herbert_Pelham>
+  # Hon. Edward John Herbert Pelham, b. 2002
+  gen:father <https://www.wikidata.org/wiki/Q5081570> ;
+  gen:mother <#Anna-Karin_Zecevic> .
+
+
+# Anderson Baronets of Broughton
+<#Sir_Edmund_Anderson,_1st_Baronet>
+  # Sir Edmund Anderson, 1st Baronet, 1605-08-10 - 1661-01~
+  # 1st Baronet Anderson, of Broughton, co. Lincoln 1660-12-11
+  gen:father <#William_Anderson> ;
+  gen:mother <#Joan_Essex> .
+  # oo Mary Wood, 1606a - 1637-01-30, daughter of Thomas Wood and Mary Boteler
+  []
+    gen:spouse <#Sir_Edmund_Anderson,_1st_Baronet> , <#Mary_Wood> ;
+	gen:startDate "1623-12-03" .
+  # oo Sybilla Egerton, 1605~ - 1661-08a/-11b
+  []
+    gen:spouse <#Sir_Edmund_Anderson,_1st_Baronet> , <egerton.ttl#Sybilla_Egerton> ;
+	gen:startDate "1649-09-11" .
+
+<#Sir_John_Anderson,_2nd_Baronet>
+  # Sir John Anderson, 2nd Baronet, 1628-12-23 - 1670-03-18
+  gen:father <#Sir_Edmund_Anderson,_1st_Baronet> ;
+  gen:mother <#Mary_Wood> .
+  # oo Elizabeth Snawsell, d. 1698-07~, daughter of Hugh Snawsell and Isabel Beaumont
+  []
+    gen:spouse <#Sir_John_Anderson,_2nd_Baronet> , <#Elizabeth_Snawsell> ;
+	gen:startDate "1661b" .
+<#Sir_Edmund_Anderson,_4th_Baronet>
+  # Sir Edmund Anderson, 4th Baronet, 1629-01-07 - 1702-02a/1703-03b
+  gen:father <#Sir_Edmund_Anderson,_1st_Baronet> ;
+  gen:mother <#Mary_Wood> .
+  # oo Mary Cox,  b. 1641~, daughter of William Cox
+  []
+    gen:spouse <#Sir_Edmund_Anderson,_4th_Baronet> , <#Mary_Cox> ;
+	gen:startDate "1662-05-31" .
+  # oo Elizabeth Deane, 1660~ - 1716b, daughter of Sir Anthony Deane
+  []
+    gen:spouse <#Sir_Edmund_Anderson,_4th_Baronet> , <#Elizabeth_Deane> ;
+	gen:startDate "1686-03-26" .
+
+<#Sir_Edmund_Anderson,_3rd_Baronet>
+  # Sir Edmund Anderson, 3rd Baronet, 1661~  1676-12-17
+  gen:father <#Sir_John_Anderson,_2nd_Baronet> ;
+  gen:mother <#Elizabeth_Snawsell> .
+<#Sir_Edmund_Anderson,_5th_Baronet>
+  # Sir Edmund Anderson, 5th Baronet, 1687-11-04 - 1765-05-03
+  gen:father <#Sir_Edmund_Anderson,_4th_Baronet> ;
+  gen:mother <#Elizabeth_Deane> .
+  # oo Mary Harvey, d. 1758-08-16, daughter of William Harvey and Dorothy Dycer
+  []
+    gen:spouse <#Sir_Edmund_Anderson,_5th_Baronet> , <#Mary_Harvey> ;
+	gen:startDate "1721b" .
+  # oo Frances Batty, 1729~ - 1801-09-11, daughter of J. Batty
+  []
+    gen:spouse <#Sir_Edmund_Anderson,_5th_Baronet> , <#Frances_Batty> ;
+	gen:startDate "1754-02-11" .
+
+<#Sir_William_Anderson,_6th_Baronet>
+  # Rev. Sir William Anderson, 6th Baronet, 1722-03-31 - 1785-03-09
+  gen:father <#Sir_Edmund_Anderson,_5th_Baronet> ;
+  gen:mother <#Mary_Harvey> .
+  # oo Anne Maddison, 1727~ - 1783-08-31, daughter of John Maddison
+  []
+    gen:spouse <#Sir_William_Anderson,_6th_Baronet> , <#Anne_Maddison> ;
+	gen:startDate "1747-08-07" .
+
+<#Sir_Edmund_Anderson,_7th_Baronet>
+  # Sir Edmund Anderson, 7th Baronet, 1758-09-11 - 1799-05-30
+  gen:father <#Sir_William_Anderson,_6th_Baronet> ;
+  gen:mother <#Anne_Maddison> .
+  # oo Catherine Plumer, 1759~ - 1798-12-02, daughter of Thomas Plumer
+<#Sir_Charles_John_Anderson,_8th_Baronet>
+  # Rev. Sir Charles John Anderson, 8th Baronet, 1767-10-05 - 1846-03-24
+  gen:father <#Sir_William_Anderson,_6th_Baronet> ;
+  gen:mother <#Anne_Maddison> .
+  # oo Frances Mary Nelthorpe, 1776~ - 1836-08-18
+  []
+    gen:spouse <#Sir_Charles_John_Anderson,_8th_Baronet> , <#Frances_Mary_Nelthorpe> ;
+	gen:startDate "1802-12-13" .
+
+<#Sir_Charles_Anderson,_9th_Baronet>
+  # Sir Charles Henry John Anderson, 9th Baronet, 1804-11-24 - 1891-10-08
+  gen:father <#Sir_Charles_John_Anderson,_8th_Baronet> ;
+  gen:mother <#Frances_Mary_Nelthorpe> .
+  # oo Emma Foljambe, 1803-05-07 - 1870-08-08
+  []
+    gen:spouse <#Sir_Charles_Anderson,_9th_Baronet> , <willoughby.ttl#Emma_Foljambe> ;
+	gen:startDate "1832-09-11" .
+<#Frances_Maria_Anderson>
+  # Frances Maria Anderson, 1809-05-04 - 1885~
+  gen:father <#Sir_Charles_John_Anderson,_8th_Baronet> ;
+  gen:mother <#Frances_Mary_Nelthorpe> .
+  # oo 1838-06-24 Sir John Nelthorpe, 8th Baronet, 1814-09-27 - 1865-11-22, #Sir_John_Nelthorpe,_8th_Baronet
+
+# ====
+#<#Robert_Miller>
+  # Robert Miller, d. 1990
+  # son of Gordon Molineux Miller
+  # oo Diana Mary Pelham, 15th Baroness Conyers, 1920-07-05 - 2013-03-02
+  []
+    gen:spouse <#Robert_Miller> , <https://www.wikidata.org/wiki/Q5271238> ;
+	gen:startDate "1952-11-15" .
+
+<#Anthea_Theresa_Lycett>
+  # Anthea Theresa Lycett, b. 1954-06-21
+  # Marcia Anne Miller
+  gen:father <#Robert_Miller> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5271238> ;
+  gen:adoptedBy <#Michael_Hildesley_Lycett> , <#Moira_???> .
+<#Beatrix_Diana_Miller>
+  # Beatrix Diana Miller, b. 1955-08-23
+  gen:father <#Robert_Miller> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5271238> .
+  # oo 1991 Simon William Jones Armstrong, 1957-05-25 - 2012, #Simon_William_Jones_Armstrong
+
+# ====
+#<#Michael_Hildesley_Lycett>
+  # Michael Hildesley Lycett, d. 2016-12-17
+  # son of Rev. Norman Lycett Lycett
+  # and Ruth Edith Burns-Lindow
+  # oo Moira ???, d. 1958-08
+  []
+    gen:spouse <#Michael_Hildesley_Lycett> , <#Moira_???> .
+  # oo Lady June Wendy Pelham+, 1924-01-06 - 2012-05-17
+  []
+    gen:spouse <#Michael_Hildesley_Lycett> , <#Lady_June_Wendy_Pelham> ;
+	gen:startDate "1959-10-12" .
+
+
+# ----
+#<#Thomas_Essex>
+  # Thomas Essex
+  # oo Joan Harrison
+
+<https://www.wikidata.org/wiki/Q7529582>
+  # Sir William Essex, 1st Baronet, b. 1575
+  gen:father <#Thomas_Essex> .
+  # and Joan Harrison
+<#Joan_Essex>
+  # Joan Essex
+  gen:father <#Thomas_Essex> .
+  # and Joan Harrison
+  # oo William Anderson, #William_Anderson
+
+# ----
+#<https://www.wikidata.org/wiki/Q5339823>
+  # Edmund Sheffield, 1st Earl of Mulgrave, 1565-12-07 - 1646-10
+  # 3rd Baron Sheffield, of Butterwick, co. Lincoln 1568-12-10
+  # 1st Earl of Mulgrave, co. York 1626-02-05
+  # oo Ursula Tyrwhitt, d. 1618-08-04b, daughter of Sir Robert Tyrwhitt
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5339823> , <#Ursula_Tyrwhitt> ;
+	gen:startDate "1581-11-13b" .
+
+<#Sir_John_Sheffield>
+  # Sir John Sheffield, d. 1641-12
+  gen:father <https://www.wikidata.org/wiki/Q5339823> ;
+  gen:mother <#Ursula_Tyrwhitt> .
+  # oo Grizel Anderson
+  []
+    gen:spouse <#Sir_John_Sheffield> , <#Grizel_Anderson> .
+
+# ----
+#<https://www.wikidata.org/wiki/Q1192694>
+  # Sir John Glynne, 1602 - 1666
+  # oo Frances Squibb
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1192694> , <#Frances_Squibb> ;
+	gen:startDate "1633-05-02" .
+  # oo Anne Manning, daughter of John Manning
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1192694> , <#Anne_Manning> ;
+	gen:startDate "1659b" .
+
+<https://www.wikidata.org/wiki/Q7529608>
+  # Sir William Glynne, 1st Baronet, 1638-01-20 - 1690-09-08
+  # 1st Baronet Glynne 1661
+  gen:father <https://www.wikidata.org/wiki/Q1192694> ;
+  gen:mother <#Frances_Squibb> .
+  # oo Penelope Anderson, d. 1681
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7529608> , <#Penelope_Anderson> ;
+	gen:startDate "1660~" .
+
+<#Mary_Glynne>
+  # Mary Glynne, 1649~ - 1668-02-24
+  gen:father <https://www.wikidata.org/wiki/Q1192694> ;
+  gen:mother <#Anne_Manning> .
+  # oo 1664-06-02 Sir Stephen Anderson, 1st Baronet, 1644~ - 1707-01-19, #Sir_Stephen_Anderson,_1st_Baronet
+
+# ----
+<https://www.wikidata.org/wiki/Q33261222>
+  # Sophia Aufrère, 1753 - 1786-01-25
+  gen:father <https://www.wikidata.org/wiki/Q18671239> .
+  # and Arabella Bate
+  # oo 1770-07-21 Charles Anderson-Pelham, 1st Baron Yarborough, 1749-02-03 - 1823-09-22, https://www.wikidata.org/wiki/Q5075115
+
+# ----
+<#Caroline_Johnston>
+  # Caroline Johnston, d. 1823-06-18
+  # daughter of General James Johnston
+  gen:father <https://www.wikidata.org/wiki/Q6136918> . # ?
+  # oo 1795 Francis Evelyn Anderson, 1752-04-08 – 1821, https://www.wikidata.org/wiki/Q26451758
+
+# ----
+#<https://www.wikidata.org/wiki/Q5172034>
+  # Cornwallis Maude, 3rd Viscount Hawarden, 1780-03-28 - 1856-10-12
+  # oo Jane Crauford Bruce, d. 1852-03-24
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5172034> , <#Jane_Crauford_Bruce> ;
+	gen:startDate "1811-07-08" .
+
+<#Maria_Adelaide_Maude>
+  # Hon. Maria Adelaide Maude, 1820~ - 1897-12-24
+  gen:father <https://www.wikidata.org/wiki/Q5172034> ;
+  gen:mother <#Jane_Crauford_Bruce> .
+  # oo 1831-12-19 Charles Anderson Worsley Anderson-Pelham, 2nd Earl of Yarborough, 1809-04-12 - 1862-01-07, https://www.wikidata.org/wiki/Q728007
+
+# ----
+#<#Sir_Robert_Sinclair_of_Murkle,_7th_Baronet>
+  # Sir Robert Sinclair of Murkle, 7th Baronet, 1763~ - 1795-08-04
+  # Lady Madelina Gordon, 1772 - 1847-06-01
+  []
+    gen:spouse <#Sir_Robert_Sinclair_of_Murkle,_7th_Baronet> , <gordon.ttl#Lady_Madelaine_Gordon> ;
+	gen:startDate "1789-04-02" .
+
+<#Sir_John_Sinclair_of_Murkle,_8th_Baronet>
+  # Sir John Gordon Sinclair of Murkle, 8th Baronet, 1790-07-31 - 1863-11-13
+  gen:father <#Sir_Robert_Sinclair_of_Murkle,_7th_Baronet> ;
+  gen:mother <gordon.ttl#Lady_Madelaine_Gordon> .
+  # oo Anne de Courcy, d. 1857-09-23
+  []
+    gen:spouse <#Sir_John_Sinclair_of_Murkle,_8th_Baronet> , <#Anne_de_Courcy> ;
+	gen:startDate "1812-06-05" .
+
+<#Madalina_Sinclair>
+  # Madalina Sinclair, d. 1910-11-11
+  gen:father <#Sir_John_Sinclair_of_Murkle,_8th_Baronet> ;
+  gen:mother <#Anne_de_Courcy> .
+  # oo 1839-10-15 Hon. Dudley Worsley Anderson-Pelham, 1812-04-20 - 1851-04-13, https://www.wikidata.org/wiki/Q5311943
+# ----
+<#Anne_de_Courcy>
+  # Anne de Courcy, d. 1857-09-23
+  gen:father <https://www.wikidata.org/wiki/Q5802266> .
+  # and Anne Blennerhassett
+  # oo 1812-06-05 Sir John Gordon Sinclair of Murkle, 8th Baronet, 1790-07-31 - 1863-11-13, #Sir_John_Sinclair_of_Murkle,_8th_Baronet
+
+# ----
+#<https://www.wikidata.org/wiki/Q8010868>
+  # William Hare, 1st Earl of Listowel, 1751-09 – 1837-07-13
+  # 1st Baron Ennismore, co. Kerry 1800-07-21
+  # 1st Viscount Ennismore and Listowel 1816-01-15
+  # 1st Earl of Listowel 1822-02-05
+  # oo Mary Wrixon, d. 1810, daughter of Henry Wrixon
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8010868> , <#Mary_Wrixon> ;
+	gen:startDate "1772-05-30" .
+
+<#Richard_Hare,_Viscount_Ennismore>
+  # Richard Hare, Viscount Ennismore, 1773-03-20 - 1827-09-24
+  gen:father <https://www.wikidata.org/wiki/Q8010868> ;
+  gen:mother <#Mary_Wrixon> .
+  # oo Hon. Catherine Bridget Dillon, d. 1828-10-13
+  []
+    gen:spouse <#Richard_Hare,_Viscount_Ennismore> , <#Catherine_Bridget_Dillon> ;
+	gen:startDate "1797-06-10" .
+
+<https://www.wikidata.org/wiki/Q8010869>
+  # William Hare, 2nd Earl of Listowel, 1801-09-22 – 1856-02-04
+  gen:father <#Richard_Hare,_Viscount_Ennismore> ;
+  gen:mother <#Catherine_Bridget_Dillon> .
+  # oo Maria Augusta Windham, 1805 - 1871-10-31
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8010869> , <#Maria_Augusta_Windham> ;
+	gen:startDate "1831-07-23" .
+
+<#Lady_Victoria_Alexandrina_Hare>
+  # Lady Victoria Alexandrina Hare, 1840-02-23 - 1927-03-07
+  gen:father <https://www.wikidata.org/wiki/Q8010869> ;
+  gen:mother <#Maria_Augusta_Windham> .
+  # oo 1858-08-03 Charles Anderson Pelham Anderson-Pelham, 3rd Earl of Yarborough, 1835-01-14 - 1875-02-06, https://www.wikidata.org/wiki/Q5075117
+# ----
+#<https://www.wikidata.org/wiki/Q7343550>
+  # Robert Dillon, 1st Baron Clonbrock, 1754-02-27 – 1795-07-22
+  # 1st Baron Clonbrock, of Clonbrock, co. Galway 1790-06-05
+  # oo Letitia Greene, 1761 - 1841-05-28, daughter of John Greene and Catherine Toler
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7343550> , <#Letitia_Greene> ;
+	gen:startDate "1776-01-30" .
+
+<#Catherine_Bridget_Dillon>
+  # Hon. Catherine Bridget Dillon, d. 1828-10-13
+  gen:father <https://www.wikidata.org/wiki/Q7343550> ;
+  gen:mother <#Letitia_Greene> .
+  # oo 1797-06-10 Richard Hare, Viscount Ennismore, 1773-03-20 - 1827-09-24, #Richard_Hare,_Viscount_Ennismore
+# ----
+<#Maria_Augusta_Windham>
+  # Maria Augusta Windham, 1805 - 1871-10-31
+  gen:father <https://www.wikidata.org/wiki/Q8014784> .
+  # oo 1831-07-23 William Hare, 2nd Earl of Listowel, 1801-09-22 – 1856-02-04, https://www.wikidata.org/wiki/Q8010869
+
+# ----
+<#Sir_Francis_Astley,_4th_Baronet>
+  # Sir Francis Edmund George Astley, 4th Baronet, 1859-02-06 - 1939-02-05
+  gen:father <https://www.wikidata.org/wiki/Q7527742> .
+  # and Eleanor Blanche Mary Corbett
+  # oo Lady Gertrude Augusta Anderson-Pelham, 1861-05-11 - 1920-07-06
+  []
+    gen:spouse <#Sir_Francis_Astley,_4th_Baronet> , <#Lady_Gertrude_Augusta_Anderson-Pelham> ;
+	gen:startDate "1882-06-05" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q5949912>
+  # Hussey Crespigny Vivian, 3rd Baron Vivian of Glynn and of Truro, 1834-06-19 – 1893-10-21
+  # oo Louisa Alice Duff, 1853~ - 1926-04-03
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5949912> , <duff.ttl#Louisa_Alice_Duff> ;
+	gen:startDate "1876-06-08" .
+
+<https://www.wikidata.org/wiki/Q4720726>
+  # Hon. Alexandra Mary Freesia Vivian, 1890-02-27 - 1963-09-21
+  gen:father <https://www.wikidata.org/wiki/Q5949912> ;
+  gen:mother <duff.ttl#Louisa_Alice_Duff> .
+  # oo 1911-01-31 Charles Sackville Pelham, Lord Worsley, 1887-08-14 – 1914-10-10, https://www.wikidata.org/wiki/Q5081571
+
+# ----
+<#John_Charles_Harper>
+  # John Charles Harper, d. 1998-09-11
+  gen:father <https://www.wikidata.org/wiki/Q5078786> .
+  # oo Lady Janet Marcia Rose Pelham, b. 1923-10-17
+  []
+    gen:spouse <#John_Charles_Harper> , <#Lady_Janet_Marcia_Rose_Pelham> ;
+	gen:startDate "1948-03-20" .
+
+# ----
+#<#Sir_John_Nelthorpe,_6th_Baronet>
+  # Sir John Nelthorpe, 6th Baronet, 1744 - 1799
+  # oo Anne Maria Charlotte Willoughby, daughter of Andrew Willoughby
+  []
+    gen:spouse <#Sir_John_Nelthorpe,_6th_Baronet> , <#Anne_Maria_Charlotte_Willoughby> ;
+	gen:startDate "1772-01-01" .
+
+<#Sir_Henry_Nelthorpe,_7th_Baronet>
+  # Sir Henry Nelthorpe, 7th Baronet, 1773 – 1830
+  gen:father <#Sir_John_Nelthorpe,_6th_Baronet> ;
+  gen:mother <#Anne_Maria_Charlotte_Willoughby> .
+<#Frances_Mary_Nelthorpe>
+  # Frances Mary Nelthorpe, 1776~ - 1836-08-18
+  gen:father <#Sir_John_Nelthorpe,_6th_Baronet> ;
+  gen:mother <#Anne_Maria_Charlotte_Willoughby> .
+  # oo 1802-12-13 Rev. Sir Charles John Anderson, 8th Baronet, 1767-10-05 - 1846-03-24, #Sir_Charles_John_Anderson,_8th_Baronet
+<#John_Nelthorpe>
+  # John Nelthorpe, 1776 - 1824-06-17~
+  gen:father <#Sir_John_Nelthorpe,_6th_Baronet> .
+  # oo Christian Brown, d. 1843-12-01
+  []
+    gen:spouse <#John_Nelthorpe> , <#Christian_Brown> ;
+	gen:startDate "1812-08-26" .
+
+<#Sir_John_Nelthorpe,_8th_Baronet>
+  # Sir John Nelthorpe, 8th Baronet, 1814-09-27 - 1865-11-29
+  gen:father <#John_Nelthorpe> ;
+  gen:mother <#Christian_Brown> .
+  # oo Frances Maria Anderson, 1809-05-04 - 1885~
+  []
+    gen:spouse <#Sir_John_Nelthorpe,_8th_Baronet> , <#Frances_Maria_Anderson> ;
+	gen:startDate "1838-05-24" .
+
+# ----
+<#Simon_William_Jones_Armstrong>
+  # Simon William Jones Armstrong, 1957-05-25 - 2012
+  gen:father <https://www.wikidata.org/wiki/Q5006934> .
+  # and Hilde Ingeburg Kolz
+  # oo Beatrix Diana Miller, b. 1955-08-23
+  []
+    gen:spouse <#Simon_William_Jones_Armstrong> , <#Beatrix_Diana_Miller> ;
+	gen:startDate "1991" .
