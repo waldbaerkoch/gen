@@ -2775,7 +2775,7 @@
   gen:mother <#Frances_Courthope> .
   # oo Philadelphia Pelham, d. 1685-08-13
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q1441549> , <#Philadelphia_Pelham> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q1441549> , <pelham.ttl#Philadelphia_Pelham> ;
 	gen:startDate "1673-07-08" .
 <#George_Howard_of_Great_Bookham>
   gen:name "George Howard"@en ;
@@ -2791,7 +2791,7 @@
   gen:birthDate "1682-07-07" ;
   gen:deathDate "1725-07-13" ;
   gen:father <https://www.wikidata.org/wiki/Q1441549> ;
-  gen:mother <#Philadelphia_Pelham> .
+  gen:mother <pelham.ttl#Philadelphia_Pelham> .
   # oo Mary Wentworth, d. 1718-05-29, daughter of Ruishe Wentworth
   []
     gen:spouse <#Thomas_Howard,_7th_Baron_Howard_of_Effingham> , <#Mary_Wentworth> ;
@@ -2807,7 +2807,7 @@
   gen:birthDate "1683-10-20b" ;
   gen:deathDate "1743-02-12" ;
   gen:father <https://www.wikidata.org/wiki/Q1441549> ;
-  gen:mother <#Philadelphia_Pelham> .
+  gen:mother <pelham.ttl#Philadelphia_Pelham> .
   # oo Diana O'Farrell, daughter of Fergus O'Farrell
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5481333> , <#Diana_O'Farrell> ;
@@ -3789,6 +3789,12 @@
   gen:father <https://www.wikidata.org/wiki/Q2714210> ;
   gen:father <https://www.wikidata.org/wiki/Q3601370> .
   # oo 1688-07-25 Charles Howard, 3rd Earl of Carlisle, 1669 - 1738-05-01, https://www.wikidata.org/wiki/Q337634
+
+<#Lady_Mary_Capel>
+  # Lady Mary Capel, d. 1762-11-12
+  gen:father <https://www.wikidata.org/wiki/Q4724137> ;
+  gen:mother <https://www.wikidata.org/wiki/Q126734> .
+  # oo 1729-05-07 Alan Brodrick, 2nd Viscount Midleton of Midleton, 1702-01-31 - 1747-06-08, https://www.wikidata.org/wiki/Q4706251
 
 # ----
 <#Isabella_Byron>
@@ -5035,12 +5041,12 @@
     gen:spouse <#George_Robert_Heneage> , <#Frances_Anne_Ainslie> ;
 	gen:startDate "1798-08-18" .
 <#Thomas_Fieschi_Heneage>
-  # Thomas Fieschi Heneage, b. 1771-09-28
+  # Thomas Fieschi Heneage, 1771-09-28 - 1854-02-07
   gen:father <#George_Fieschi_Heneage> ;
   gen:mother <#Katherine_Petre> .
   # oo Hon. Arabella Anderson-Pelham, d. 1871-05-16
   []
-    gen:spouse <#Thomas_Fieschi_Heneage> , <#Arabella_Anderson-Pelham> ;
+    gen:spouse <#Thomas_Fieschi_Heneage> , <anderson.ttl#Arabella_Anderson-Pelham> ;
 	gen:startDate "1802-07" .
 
 <#Frances_Anne_Heneage>
@@ -5051,7 +5057,7 @@
 <#Charles_Fieschi_Heneage>
   # Charles Fieschi Heneage
   gen:father <#Thomas_Fieschi_Heneage> ;
-  gen:mother <#Arabella_Anderson-Pelham> .
+  gen:mother <anderson.ttl#Arabella_Anderson-Pelham> .
   # oo Hon. Louisa Elizabeth Graves, d. 1868-06-30
   []
     gen:spouse <#Charles_Fieschi_Heneage> , <paget.ttl#Louisa_Elizabeth_Graves> ;
@@ -5067,26 +5073,6 @@
   # Frances Anne Ainslie, d. 1807-03-13
   gen:father <https://www.wikidata.org/wiki/Q19663080> .
   # oo 1798-08-18 George Robert Heneage, 1768-12-21 - 1833-06-16, #George_Robert_Heneage
-# ----
-#<https://www.wikidata.org/wiki/Q5075115>
-  # Charles Anderson-Pelham, 1st Baron Yarborough, 1749-02-03 - 1823-09-22
-  # 1st Baron Yarborough, of Yarborough in the County of Lincoln 1794
-  # oo Sophia Aufrère, 1753 - 1786-01-25
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q5075115> , <https://www.wikidata.org/wiki/Q33261222> ;
-	gen:startDate "1770-07-21" .
-
-<#Arabella_Anderson-Pelham>
-  # Hon. Arabella Anderson-Pelham, d. 1871-05-16
-  gen:father <https://www.wikidata.org/wiki/Q5075115> ;
-  gen:mother <https://www.wikidata.org/wiki/Q33261222> .
-  # oo 1802-07 Thomas Fieschi Heneage, b. 1771-09-28, #Thomas_Fieschi_Heneage
-# ----
-<https://www.wikidata.org/wiki/Q33261222>
-  # Sophia Aufrère, 1753 - 1786-01-25
-  gen:father <https://www.wikidata.org/wiki/Q18671239> .
-  # and Arabella Bate
-  # oo 1770-07-21 Charles Anderson-Pelham, 1st Baron Yarborough, 1749-02-03 - 1823-09-22, https://www.wikidata.org/wiki/Q5075115
 
 # ----
 #<https://www.wikidata.org/wiki/Q335522>
@@ -6368,6 +6354,35 @@
   # oo 1873-11-05 Edward Mashiter Dansey, 1849-05-31 - 1934-01-13, #Edward_Mashiter_Dansey
 
 # ----
+<https://www.wikidata.org/wiki/Q6222537>
+  gen:name "John Boteler, 1st Baron Boteler of Brantfield"@en ;
+  # 1st Baronet Boteler 1620-04-12
+  # 1st Baron Boteler of Brantfield, co. Hertford 1628-07-30
+  gen:birthDate "1566~" ;
+  gen:deathDate "1637-05-27" .
+  # oo Elizabeth Villiers
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6222537> , <villiers.ttl#Elizabeth_Villiers_(died_1654)> ;
+	gen:startDate "1673-05-27" .
+
+<#Mary_Boteler>
+  # Hon. Mary Boteler, d. 1634-01~
+  gen:father <https://www.wikidata.org/wiki/Q6222537> ;
+  gen:mother <villiers.ttl#Elizabeth_Villiers_(died_1654)> .
+  # oo 1623-11-30 Edward Howard, 1st Baron Howard of Escrick, 1583a/1598b - 1675, https://www.wikidata.org/wiki/Q5343512
+<#Eleanor_Boteler>
+  # Hon. Eleanor Boteler, d. 1666-10-02
+  gen:father <https://www.wikidata.org/wiki/Q6222537> ;
+  gen:mother <villiers.ttl#Elizabeth_Villiers_(died_1654)> .
+  # oo 1616-05-18 Sir John Drake, 1st Baronet, 1625-04-04 – 1669-07-06, https://www.wikidata.org/wiki/Q7527732
+<#Audrey_Boteler>
+  # Hon. Audrey Boteler, 1595 - 1652-09-16
+  gen:father <https://www.wikidata.org/wiki/Q6222537> ;
+  gen:mother <villiers.ttl#Elizabeth_Villiers_(died_1654)> .
+  # oo 1611 Sir Francis Anderson, 1581 - 1615-12-22, anderson.ttl#Sir_Francis_Anderson
+  # oo 1617~ Francis Leigh, 1st Earl of Chichester, 1598-04-28 - 1653-12-21, https://www.wikidata.org/wiki/Q5481704
+
+# ----
 #<https://www.wikidata.org/wiki/Q6249346>
   # John Mordaunt, 1st Earl of Peterborough, 1599-01-18 1644-06-19
   # 5th Baron Mordaunt 1609-02-13
@@ -6460,28 +6475,6 @@
   gen:father <https://www.wikidata.org/wiki/Q1289573> .
   # and Mary Morris
   # oo 1620-04-22 Charles Howard, 2nd Earl of Nottingham, 1579-09-17 - 1642-10-03, https://www.wikidata.org/wiki/Q333189
-
-# ----
-#<https://www.wikidata.org/wiki/Q7529237>
-  # Sir Thomas Pelham, 2nd Baronet Pelham of Laughton, 1597-09-22 -1654-08~
-  # oo Margaret Vane
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q7529237> , <#Margaret_Vane> ;
-	gen:startDate "1640-06-03" .
-
-<#Philadelphia_Pelham>
-  # Philadelphia Pelham, d. 1685-08-13
-  gen:father <https://www.wikidata.org/wiki/Q7529237> ;
-  gen:mother <#Margaret_Vane> .
-  # oo 1673-07-08 Francis Howard, 6th Baron Howard of Effingham, 1643~ - 1694-03-30, https://www.wikidata.org/wiki/Q1441549
-# ----
-#<https://www.wikidata.org/wiki/Q5729478>
-  # Rt. Hon. Sir Henry Vane the Elder, 1589-02-18 - 1654
-
-<#Margaret_Vane>
-  # Margaret Vane
-  gen:father <https://www.wikidata.org/wiki/Q5729478> .
-  # oo 1640-06-03 Sir Thomas Pelham, 2nd Baronet Pelham of Laughton, 1597-09-22 -1654-08~, https://www.wikidata.org/wiki/Q7529237
 
 # ----
 <#Mary_Moreton>
