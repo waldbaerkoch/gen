@@ -1045,8 +1045,10 @@
 # --------
 #<https://www.wikidata.org/wiki/Q8007257>
   # William Craven, 2nd Earl of Craven, 1809-08-18 - 1866-08-25
+  # oo Lady Emily Mary Grimston, 1815-02-04 - 1901-05-21
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q8007257> , <#Lady_Emily_Mary_Grimston> .
+    gen:spouse <https://www.wikidata.org/wiki/Q8007257> , <#Lady_Emily_Mary_Grimston> ;
+	gen:startDate "1835-09-05" .
 
 <#Lady_Evelyn_Mary_Craven>
   gen:name "Lady Evelyn Mary Craven"@en ;
@@ -1058,37 +1060,76 @@
 # --------
 <https://www.wikidata.org/wiki/Q6135004>
   gen:name "James Walter Grimston, 1st Earl of Verulam"@en ;
+  # 10th Lord Forrester of Corstorphine, 4th Baron Dunboyne, co. Meath, 4th Viscount Grimston, 2nd Baron Verulam of Gorhambury, co. Hertford, 8th Baronet Luckyn, of Little Waltham, Essex 1808-12-30
+  # 1st Viscount Grimston, 1st Earl of Verulam 1815-11-24
   gen:birthDate "1775-09-26" ;
-  gen:deathDate "1845-11-17" .
-  # oo Lady Charlotte Jenkinson, d. 1862-04-16
+  gen:deathDate "1845-11-17" ;
+  gen:father <https://www.wikidata.org/wiki/Q6135010> .
+  # and Harriot Walter
+  # oo Lady Charlotte Jenkinson, 1783 - 1862-04-16
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q6135004> , <#Lady_Charlotte_Jenkinson> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q6135004> , <https://www.wikidata.org/wiki/Q16830090> ;
 	gen:startDate "1807-08-11" .
 
+<https://www.wikidata.org/wiki/Q6135005>
+  gen:name "James Walter Grimston, 2nd Earl of Verulam"@en ;
+  gen:birthDate "1809-02-22" ;
+  gen:deathDate "1895-07-27" ;
+  gen:father <https://www.wikidata.org/wiki/Q6135004> ;
+  gen:mother <https://www.wikidata.org/wiki/Q16830090> .
+  # oo Elizabeth Joanna Weyland, d. 1886-07-05, daughter of Major Richard Weyland
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6135005> , <#Elizabeth_Joanna_Weyland> ;
+	gen:startDate "1844-09-12" .
 <#Lady_Katherine_Grimston>
+  gen:name "Lady Katherine Grimston"@en ;
   gen:birthDate "1810-04-18" ;
   gen:deathDate "1874-07-04" ;
   gen:father <https://www.wikidata.org/wiki/Q6135004> ;
-  gen:mother <#Lady_Charlotte_Jenkinson> .
+  gen:mother <https://www.wikidata.org/wiki/Q16830090> .
   # oo 1839-06-04 George Villiers, 4th Earl of Clarendon, 1800-01-12 - 1870-06-27, https://www.wikidata.org/wiki/Q335305
 <#Lady_Emily_Mary_Grimston>
   gen:name "Lady Emily Mary Grimston"@en ;
   gen:birthDate "1815-02-04" ;
   gen:deathDate "1901-05-21" ;
   gen:father <https://www.wikidata.org/wiki/Q6135004> ;
-  gen:mother <#Lady_Charlotte_Jenkinson> .
+  gen:mother <https://www.wikidata.org/wiki/Q16830090> .
+  # oo 1835-09-05 William Craven, 2nd Earl of Craven, 1809-08-18 - 1866-08-25, https://www.wikidata.org/wiki/Q8007257
+
+<https://www.wikidata.org/wiki/Q6135007>
+  # James Walter Grimston, 3rd Earl of Verulam, 1852-05-11 - 1924-11-11
+  gen:father <https://www.wikidata.org/wiki/Q6135005> ;
+  gen:mother <#Elizabeth_Joanna_Weyland> .
+  # oo Margaret Frances Graham, d. 1927-10-04
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6135007> , <graham.ttl#Margaret_Frances_Graham> ;
+	gen:startDate "1878-04-30" .
+<#Robert_Grimston>
+  # Rev. Hon. Robert Grimston, 1860-04-18 - 1928-07-08
+  gen:father <https://www.wikidata.org/wiki/Q6135005> ;
+  gen:mother <#Elizabeth_Joanna_Weyland> .
+  # oo Gertrude Mary Amelia Villiers, 1861 - 1949-08-30
+  []
+    gen:spouse <#Robert_Grimston> , <villiers.ttl#Gertrude_Mary_Amelia_Villiers> ;
+	gen:startDate "1896-08-20" .
 # ----
 <https://www.wikidata.org/wiki/Q2654558>
   gen:name "Charles Jenkinson, 1st Earl of Liverpool"@en ;
+  # 1st Baron Hawkesbury, of Hawkesbury, co. Gloucester 1786-08-21
+  # 7th Baronet Jenkinson, of Walcot, co. Oxford and Hawkesbury, co. Gloucester 1789-07-22
+  # 1st Earl of Liverpool 1796-06-01
   gen:birthDate "1729-04-26" ;
   gen:deathDate "1808-12-17" .
+  # son of Charles Jenkinson, 1693-06-13 – 1750-06
+  # and oo Amarantha Cornewall, d. 1785-07, daughter of https://www.wikidata.org/wiki/Q21069449
   # oo Catherine Bishopp, 1744-11-30 - 1827-10-01
   []
     gen:spouse <https://www.wikidata.org/wiki/Q2654558> , <#Catherine_Bishopp> ;
 	gen:startDate "1782-06-22" .
 
-<#Lady_Charlotte_Jenkinson>
+<https://www.wikidata.org/wiki/Q16830090>
   gen:name "Lady Charlotte Jenkinson"@en ;
+  gen:birthDate "1783" ;
   gen:deathDate "1862-04-16" ;
   gen:father <https://www.wikidata.org/wiki/Q2654558> ;
   gen:mother <#Catherine_Bishopp> .
