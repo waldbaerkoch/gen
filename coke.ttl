@@ -292,7 +292,7 @@
   gen:mother <https://www.wikidata.org/wiki/Q4725783> .
   # oo Marion Gertrude Trefusis, 1882-08-03 - 1955-11-23
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q7612491> , <#Marion_Gertrude_Trefusis> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q7612491> , <clinton.ttl#Marion_Gertrude_Trefusis> ;
 	gen:startDate "1905-12-02" .
 <#Arthur_George_Coke>
   # Hon. Arthur George Coke, 1882-04-06 - 1915-05-21
@@ -340,7 +340,7 @@
 <https://www.wikidata.org/wiki/Q7612557>
   # Thomas William Edward Coke, 5th Earl of Leicester of Holkham, 1908-05-16 – 1976-09-03
   gen:father <https://www.wikidata.org/wiki/Q7612491> ;
-  gen:mother <#Marion_Gertrude_Trefusis> .
+  gen:mother <clinton.ttl#Marion_Gertrude_Trefusis> .
   # oo Lady Elizabeth Mary Yorke, 1912-03-10 - 1985
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7612557> , <#Lady_Elizabeth_Mary_Yorke> ;
@@ -348,7 +348,7 @@
 <https://www.wikidata.org/wiki/Q5232459>
   # Hon. David Arthur Coke, 1915-12-04 - 1941-12-09
   gen:father <https://www.wikidata.org/wiki/Q7612491> ;
-  gen:mother <#Marion_Gertrude_Trefusis> .
+  gen:mother <clinton.ttl#Marion_Gertrude_Trefusis> .
 <https://www.wikidata.org/wiki/Q4772286>
   # Anthony Louis Lovel Coke, 6th Earl of Leicester of Holkham, 1909-09-11 – 1994-06-19
   gen:father <#Arthur_George_Coke> ;
@@ -648,11 +648,22 @@
   gen:mother <https://www.wikidata.org/wiki/Q30128096> .
   # oo 1836-01-25 Richard Wingfield, 6th Viscount Powerscourt, 1815-01-18 – 1844-08-11, https://www.wikidata.org/wiki/Q7330043
 # ----
-#<https://www.wikidata.org/wiki/Q26905899>
-  # Sir Thomas Stapleton, 5th Baronet, 1727-02-24 - 1781-01-01
-  # oo Mary Fane, 1744~ - 1835-02-26, daughter of Henry Fane and Anne Wynn
+<https://www.wikidata.org/wiki/Q19799979>
+  # Sir William Stapleton, 4th Baronet, 1698 – 1740-01-12
+  gen:father <https://www.wikidata.org/wiki/Q30128283> .
+  # and Frances Russell
+  # oo Catherine Paul, d. 1753-06-28
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q26905899> , <#Mary_Fane> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q19799979> , <fane.ttl#Catherine_Paul> ;
+	gen:startDate "1724-04-28" .
+
+<https://www.wikidata.org/wiki/Q26905899>
+  # Sir Thomas Stapleton, 5th Baronet, 1727-02-24 - 1781-01-01
+  gen:father <https://www.wikidata.org/wiki/Q19799979> ;
+  gen:mother <fane.ttl#Catherine_Paul> .
+  # oo Mary Fane, 1744~ - 1835-02-26
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q26905899> , <fane.ttl#Mary_Fane> ;
 	gen:startDate "1765-11-27" .
 
 <https://www.wikidata.org/wiki/Q30123611>
@@ -660,7 +671,7 @@
   # 6th Baronet Stapleton, of the Leeward Islands in America 1781-01-01
   # 12th Lord le Despenser 1788-05-16
   gen:father <https://www.wikidata.org/wiki/Q26905899> ;
-  gen:mother <#Mary_Fane> .
+  gen:mother <fane.ttl#Mary_Fane> .
   # oo Elizabeth Eliot, 1758~ - 1848-01-03, daughter of Samuel Eliot
   []
     gen:spouse <https://www.wikidata.org/wiki/Q30123611> , <#Elizabeth_Eliot> ;
@@ -668,7 +679,7 @@
 <#William_Stapleton>
   # William Stapleton, 1770 - 1826
   gen:father <https://www.wikidata.org/wiki/Q26905899> ;
-  gen:mother <#Mary_Fane> .
+  gen:mother <fane.ttl#Mary_Fane> .
 
 <https://www.wikidata.org/wiki/Q30128162>
   # Rev. Hon. Sir Francis Jarvis Stapleton, 7th Baronet, 1807-08-06 - 1874-02-11

@@ -1,0 +1,1521 @@
+@base <fane.ttl> .
+@prefix gen: <http://jjkoch.de/gen#> .
+@prefix wdata: <https://www.wikidata.org/wiki/> .
+@prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+
+#<#John_Fane>
+  # John Fane
+  # oo Isabel Darell
+
+<#Richard_Fane>
+  # Richard Fane, d. 1541-03-20
+  gen:father <#John_Fane> .
+  # and Isabel Darell
+  # oo Agnes Stidolph, daughter of Thomas Henry Stidolph and Marion ???
+
+<#George_Fane>
+  # George Fane, d. 1571
+  gen:father <#Richard_Fane> .
+  # and Agnes Stidolph
+  # oo Joan Waller, daughter of William Waller and Ann Falconer
+  []
+    gen:spouse <#George_Fane> , <#Joan_Waller> ;
+	gen:startDate "1557" .
+
+<https://www.wikidata.org/wiki/Q7789512>
+  # Sir Thomas Fane, 1510~ – 1589-03-13
+  gen:father <#George_Fane> ;
+  gen:mother <#Joan_Waller> .
+  # oo Elizabeth Colepepper, daughter of Thomas Colepepper
+  # oo Mary Neville, 3rd Baroness le Despenser, 1554-03-25 - 1626-06-28
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7789512> , <neville.ttl#Mary_Neville,_3rd_Baroness_le_Despenser> ;
+	gen:startDate "1574-12-12" .
+
+<https://www.wikidata.org/wiki/Q5480881>
+  # Francis Fane, 1st Earl of Westmorland, 1580-02-01 – 1629-03-23
+  # 1st Baron Burghersh, co. Sussex, 1st Earl of Westmorland 1624-12-29
+  # 4th Lord le Despenser 1626-06-28
+  gen:father <https://www.wikidata.org/wiki/Q7789512> ;
+  gen:mother <neville.ttl#Mary_Neville,_3rd_Baroness_le_Despenser> .
+  # oo Mary Mildmay, 1582~ - 1640-04-09
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5480881> , <https://www.wikidata.org/wiki/Q36870470> ;
+	gen:startDate "1599-02-15~" .
+<https://www.wikidata.org/wiki/Q5539183>
+  # George Fane, of Burston, 1581 - 1640-06-26
+  gen:father <https://www.wikidata.org/wiki/Q7789512> ;
+  gen:mother <neville.ttl#Mary_Neville,_3rd_Baroness_le_Despenser> .
+  # oo Hon. Elizabeth Spencer, d. 1618-11-19b
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5539183> , <spencer.ttl#Elizabeth_Spencer_(died_1618)> ;
+	gen:startDate "1607-09-03" .
+  # oo Anne Boteler
+
+<https://www.wikidata.org/wiki/Q6850916>
+  # Mildmay Fane, 2nd Earl of Westmorland, 1602-01-24 – 1666-02-12
+  gen:father <https://www.wikidata.org/wiki/Q5480881> ;
+  gen:mother <https://www.wikidata.org/wiki/Q36870470> .
+  # oo Grace Thornhurst, daughter of Sir William Thornhurst and unknown Howard
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6850916> , <#Grace_Thornhurst> ;
+	gen:startDate "1626-07-06" .
+  # oo Hon. Mary de Vere, 1608 - 1669-11-15~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6850916> , <de_vere.ttl#Mary_de_Vere> ;
+	gen:startDate "1638-06-21" .
+<#Lady_Mary_Fane_(died_1634~)>
+  # Lady Mary Fane, 1606-08-03 - 1634~
+  gen:father <https://www.wikidata.org/wiki/Q5480881> ;
+  gen:mother <https://www.wikidata.org/wiki/Q36870470> .
+  # oo 1625-05-18a Dutton Gerard, 3rd Baron Gerard of Gerard's Bromley, 1613-03-04 - 1640-04-22, #Dutton_Gerard,_3rd_Baron_Gerard
+<https://www.wikidata.org/wiki/Q15994432>
+  # Sir Francis Fane, 1611 - 1681
+  gen:father <https://www.wikidata.org/wiki/Q5480881> ;
+  gen:mother <https://www.wikidata.org/wiki/Q36870470> .
+  # oo Elizabeth West, d. 1669-07~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q15994432> , <#Elizabeth_West> .
+<https://www.wikidata.org/wiki/Q26702282>
+  # Lady Rachael Fane, 1613-01-28 - 1680-11-11
+  gen:father <https://www.wikidata.org/wiki/Q5480881> ;
+  gen:mother <https://www.wikidata.org/wiki/Q36870470> .
+  # oo 1638-12-18 Henry Bourchier, 5th Earl of Bath, 1587~ - 1654-08-16, https://www.wikidata.org/wiki/Q5718416
+  # oo 1655-05-01 (separated 1661-06-13) Lionel Cranfield, 3rd Earl of Middlesex, 1625 - 1674-10-26, https://www.wikidata.org/wiki/Q6555593
+<#Anthony_Fane>
+  # Anthony Fane, 1613 – 1643
+  gen:father <https://www.wikidata.org/wiki/Q5480881> ;
+  gen:mother <https://www.wikidata.org/wiki/Q36870470> .
+  # oo Amabel Benn, 1607-09-03 - 1698-08-17
+  []
+    gen:spouse <#Anthony_Fane> , <grey.ttl#Amabel_Benn> ;
+	gen:startDate "1643b" .
+<https://www.wikidata.org/wiki/Q5539182>
+  # George Fane, 1616~ - 1663-04
+  gen:father <https://www.wikidata.org/wiki/Q5480881> ;
+  gen:mother <https://www.wikidata.org/wiki/Q36870470> .
+  # oo Dorothy Horsey, b. 1630-08-19~, daughter of James Horsey
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5539182> , <#Dorothy_Horsey> ;
+	gen:startDate "1650" .
+<#Lady_Grace_Fane>
+  # Lady Grace Fane, d. 1633
+  gen:father <https://www.wikidata.org/wiki/Q5480881> ;
+  gen:mother <https://www.wikidata.org/wiki/Q36870470> .
+  # oo 1633b James Home, 2nd Earl of Home, 1607~ - 1633-02~, https://www.wikidata.org/wiki/Q42119821
+<#Lady_Elizabeth_Fane>
+  # Lady Elizabeth Fane
+  gen:father <https://www.wikidata.org/wiki/Q5480881> ;
+  gen:mother <https://www.wikidata.org/wiki/Q36870470> .
+  # oo Sir John Cope, 3rd Baronet, 1608 – 1638, #Sir_John_Cope,_3rd_Baronet
+  # oo William Cope, #William_Cope
+<#Lady_Catherine_Fane_(died_1649~)>
+  # Lady Catherine Fane, d. 1649~
+  gen:father <https://www.wikidata.org/wiki/Q5480881> ;
+  gen:mother <https://www.wikidata.org/wiki/Q36870470> .
+  # oo 1649b Conyers Darcy, 2nd Earl of Holderness, 1622-03-03 - 1692-12-13, https://www.wikidata.org/wiki/Q5166778
+
+<https://www.wikidata.org/wiki/Q5077595>
+  # Charles Fane, 3rd Earl of Westmorland, 1635-01-06 – 1691-09-18
+  gen:father <https://www.wikidata.org/wiki/Q6850916> ;
+  gen:mother <#Grace_Thornhurst> .
+  # oo Elizabeth Nodes, b. 1648-08-01, daughter of Charles Nodes
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5077595> , <#Elizabeth_Nodes> ;
+	gen:startDate "1665-ß6-15" .
+  # oo Dorothy Brudenell, 1646 - 1740-01-26
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5077595> , <brudenell.ttl#Lady_Dorothy_Brudenell> ;
+	gen:startDate "1691b" .
+<#Lady_Frances_Fane>
+  # Lady Frances Fane
+  gen:father <https://www.wikidata.org/wiki/Q6850916> ;
+  gen:mother <#Grace_Thornhurst> .
+  # oo Sir Erasmus Harby, 2nd Baronet, 1628 - 1674-07, https://www.wikidata.org/wiki/Q21166210
+<https://www.wikidata.org/wiki/Q6470423>
+  # Lady Mary Fane, 1639 - 1681-10-16
+  gen:father <https://www.wikidata.org/wiki/Q6850916> ;
+  gen:mother <de_vere.ttl#Mary_de_Vere> .
+  # oo 1670b Francis Palmes, d. 1670b, son of Sir Brian Palmes
+  # oo 1670-01-24 John Cecil, 4th Earl of Exeter, 1628 - 1678-03-18, https://www.wikidata.org/wiki/Q6225592
+<https://www.wikidata.org/wiki/Q7921178>
+  # Vere Fane, 4th Earl of Westmorland, 1645-02-13 – 1693-12-29
+  gen:father <https://www.wikidata.org/wiki/Q6850916> ;
+  gen:mother <de_vere.ttl#Mary_de_Vere> .
+  # oo Rachel Bence, d. 1711-02-17, daughter of John Bence and Judith Andrews
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7921178> , <#Rachel_Bence> ;
+	gen:startDate "1671-07-13" .
+<https://www.wikidata.org/wiki/Q3081426>
+  # Sir Francis Fane, d. 1691-09b
+  gen:father <https://www.wikidata.org/wiki/Q15994432> ;
+  gen:mother <#Elizabeth_West> .
+  # oo Hannah Rushworth, daughter of John Rushworth
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3081426> , <#Hannah_Rushworth> ;
+	gen:startDate "1664-02-16" .
+<https://www.wikidata.org/wiki/Q16836243>
+  # Sir Henry Fane, d. 1706-01
+  gen:father <https://www.wikidata.org/wiki/Q5539182> ;
+  gen:mother <#Dorothy_Horsey> .
+  # oo Elizabeth Southcote, 1650-02-09b - 1724-12-15b, daughter of Thomas Southcote
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16836243> , <#Elizabeth_Southcote> ;
+	gen:startDate "1668-04-28" .
+
+<#Lady_Catherine_Fane_(died_1737)>
+  # Lady Catherine Fane, d. 1737
+  gen:father <https://www.wikidata.org/wiki/Q7921178> ;
+  gen:mother <#Rachel_Bence> .
+  # oo 1696 William Paul, #William_Paul
+<#Lady_Mary_Fane_(died_1710)>
+  # Lady Mary Fane, 1676 - 1710-08-19
+  gen:father <https://www.wikidata.org/wiki/Q7921178> ;
+  gen:mother <#Rachel_Bence> .
+  # oo 1705-05-30~ Sir Francis Dashwood, 1st Baronet, 1676 - 1710-08-19, https://www.wikidata.org/wiki/Q16828955
+<https://www.wikidata.org/wiki/Q21069486>
+  # Vere Fane, 5th Earl of Westmorland, 1678-05-25 - 1698-05-19
+  gen:father <https://www.wikidata.org/wiki/Q7921178> ;
+  gen:mother <#Rachel_Bence> .
+<https://www.wikidata.org/wiki/Q7789511>
+  # Thomas Fane, 6th Earl of Westmorland, 1681-10-03 - 1736-06-04
+  gen:father <https://www.wikidata.org/wiki/Q7921178> ;
+  gen:mother <#Rachel_Bence> .
+  # oo Catherine Stringer, daughter of Thomas Stringer
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7789511> , <#Catherine_Stringer> ;
+	gen:startDate "1707-06" .
+<https://www.wikidata.org/wiki/Q7611501>
+  # John Fane, 7th Earl of Westmorland, 1686-03-24 - 1762-08-26
+  # 1st Baron Catherlough, co. Catherlough 1733-10-04
+  # 7th Earl of Westmorland, 7th Baron Burghersh, co. Sussex, 10th Lord le Despenser 1736-06-04
+  gen:father <https://www.wikidata.org/wiki/Q7921178> ;
+  gen:mother <#Rachel_Bence> .
+  # oo Mary Cavendish, 1700-01-03 – 1778-07-29
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7611501> , <cavendish.ttl#Mary_Cavendish> ;
+	gen:startDate "1716-08" .
+<https://www.wikidata.org/wiki/Q16239527>
+  # Hon. Mildmay Fane, 1689-10-31 - 1715-09-11
+  gen:father <https://www.wikidata.org/wiki/Q7921178> ;
+  gen:mother <#Rachel_Bence> .
+<https://www.wikidata.org/wiki/Q5721098>
+  # Henry Fane, of Brympton, 1669 - 1726-12-19
+  gen:father <https://www.wikidata.org/wiki/Q3081426> ;
+  gen:mother <#Hannah_Rushworth> .
+  # oo Anne Scrope, d. 1720
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5721098> , <#Anne_Scrope> .
+<https://www.wikidata.org/wiki/Q5077593> # -> Viscount Fane
+  # Charles Fane, 1st Viscount Fane, 1676-01 – 1744-07-04
+  gen:father <https://www.wikidata.org/wiki/Q16836243> ;
+  gen:mother <#Elizabeth_Southcote> .
+
+<https://www.wikidata.org/wiki/Q5480886>
+  # Francis Fane, of Brympton, 1698~ - 1757-05-28
+  gen:father <https://www.wikidata.org/wiki/Q5721098> ;
+  gen:mother <#Anne_Scrope> .
+<https://www.wikidata.org/wiki/Q7611529>
+  # Thomas Fane, 8th Earl of Westmorland, 1701-03-08 – 1771-11-25
+  gen:father <https://www.wikidata.org/wiki/Q5721098> ;
+  gen:mother <#Anne_Scrope> .
+  # oo Elizabeth Swymmer, 1708-08 - 1782-11-17, daughter of William Swymmer
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7611529> , <#Elizabeth_Swymmer> ;
+	gen:startDate "1727-08-08" .
+<https://www.wikidata.org/wiki/Q14949387>
+  # Henry Fane, of Wormsley, 1703-10-16 - 1777-05-31
+  gen:father <https://www.wikidata.org/wiki/Q5721098> ;
+  gen:mother <#Anne_Scrope> .
+  # oo Charlotte Rowe, d. 1739-09-29
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q14949387> , <#Charlotte_Rowe> ;
+	gen:startDate "1735-07-17" .
+  # oo Anne Wynn, d. 1744
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q14949387> , <#Anne_Wynn> ;
+	gen:startDate "1742-05-20" .
+  # oo Charlotte Luther, d. 1758-04-18, daughter of John Luther or Richard Luther
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q14949387> , <#Charlotte_Luther> ;
+	gen:startDate "1748-09" .
+
+<https://www.wikidata.org/wiki/Q6232695>
+  # John Fane, 9th Earl of Westmorland, 1728-05-05 – 1774-04-25
+  gen:father <https://www.wikidata.org/wiki/Q7611529> ;
+  gen:mother <#Elizabeth_Swymmer> .
+  # oo Augusta Bertie, d. 1766-02-04
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6232695)> , <https://www.wikidata.org/wiki/Q28541773> ;
+	gen:startDate "1758-03-26" .
+  # oo Lady Susan Gordon, 1752~ - 1814-12-11
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6232695> , <https://www.wikidata.org/wiki/Q28541753> ;
+	gen:startDate "1767-05-28" .
+<https://www.wikidata.org/wiki/Q5721092>
+  # Henry Fane, 1739-05-04 - 1802-06-04
+  gen:father <https://www.wikidata.org/wiki/Q7611529> ;
+  gen:mother <#Elizabeth_Swymmer> .
+  # oo Anne Batson, 1759 - 1838-01-19, daughter of Edward Buckley Batson and Mary Michel
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5721092> , <#Anne_Batson> ;
+	gen:startDate "1778-01-12" .
+<#Charlotta_Fane>
+  # Charlotta Fane
+  gen:father <https://www.wikidata.org/wiki/Q14949387> ;
+  gen:mother <#Charlotte_Rowe> .
+  # oo 1758-05-14 Sir William St. Quintin, 5th Baronet, 1729-07-04 - 1795-07-02, https://www.wikidata.org/wiki/Q27154698
+<#Mary_Fane>
+  # Mary Fane, 1744~ - 1835-02-26
+  gen:father <https://www.wikidata.org/wiki/Q14949387> ;
+  gen:mother <#Anne_Wynn> .
+  # oo 1765-11-27 Sir Thomas Stapleton, 5th Baronet, 1727-02-24 - 1781-01-01, https://www.wikidata.org/wiki/Q26905899
+<https://www.wikidata.org/wiki/Q6232697>
+  # John Fane, 1751-01-06 – 1824-02-08
+  gen:father <https://www.wikidata.org/wiki/Q14949387> ;
+  gen:mother <#Charlotte_Luther> .
+  # oo Lady Elizabeth Parker, d. 1829-06-10
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6232697>, <#Lady_Elizabeth_Parker_(died_1829)> ;
+	gen:startDate "1773-11-16" .
+<https://www.wikidata.org/wiki/Q5480888>
+  # Francis Fane, of Spettisbury, 1752-12-05 – 1813-11-10
+  gen:father <https://www.wikidata.org/wiki/Q14949387> ;
+  gen:mother <#Charlotte_Luther> .
+  # oo Anne Cooke
+
+<https://www.wikidata.org/wiki/Q5949661>
+  gen:name "John Fane, 10th Earl of Westmorland"@en ;
+  gen:birthDate "1759-06-01" ;
+  gen:deathDate "1841-12-15" ;
+  gen:father <https://www.wikidata.org/wiki/Q6232695> ;
+  gen:mother <https://www.wikidata.org/wiki/Q28541773> .
+  # oo Sarah Anne Child, 1764-08-28 - 1793-11-09
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5949661> , <https://www.wikidata.org/wiki/Q7422292> ;
+	gen:startDate "1782-05-20" .
+  # oo Jane Huck-Saunders, 1783 - 1857-03-26, daughter of Richard Huck-Saunders and Jane Kinsey
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5949661> , <https://www.wikidata.org/wiki/Q56036877> ;
+	gen:startDate "1800-03-24" .
+<https://www.wikidata.org/wiki/Q22039644>
+  # Hon. Thomas Fane, 1760-07-06 - 1807-04-15
+  gen:father <https://www.wikidata.org/wiki/Q6232695> ;
+  gen:mother <https://www.wikidata.org/wiki/Q28541773> .
+  # oo Anne Lowe
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q22039644> , <#Anne_Lowe> ;
+	gen:startDate "1789-07-27" .
+<https://www.wikidata.org/wiki/Q28541791>
+  # Lady Augusta Fane, 1761-09-18 - 1838-03-06
+  gen:father <https://www.wikidata.org/wiki/Q6232695> ;
+  gen:mother <https://www.wikidata.org/wiki/Q28541773> .
+  # oo 1781-07-12 William Lowther, 1st Earl of Lonsdale, 1757-12-29 - 1844-03-19, https://www.wikidata.org/wiki/Q8014746
+<#Lady_Susan_Fane>
+  # Lady Susan Fane, 1768-10-03 - 1793-03-08
+  gen:father <https://www.wikidata.org/wiki/Q6232695> ;
+  gen:mother <https://www.wikidata.org/wiki/Q28541753> .
+  # oo 1788-07-20 John Drummond, 5th of Megginch Castle, 1754-10-18 - 1835-05-13, https://www.wikidata.org/wiki/Q26213289
+<#Lady_Elizabeth_Fane_(died_1844)>
+  # Lady Elizabeth Fane, 1770-01-07 - 1844-05-19
+  gen:father <https://www.wikidata.org/wiki/Q6232695> ;
+  gen:mother <https://www.wikidata.org/wiki/Q28541753> .
+  # oo 1790-09-04 Sir John Lowther, 1st Baronet, 1759-04-01 - 1844-05-11, https://www.wikidata.org/wiki/Q7527899
+<#Lady_Mary_Fane_(died_1855)>
+  # Lady Mary Fane, 1772-09-19 - 1855-06-27
+  gen:father <https://www.wikidata.org/wiki/Q6232695> ;
+  gen:mother <https://www.wikidata.org/wiki/Q28541753> .
+  # oo 1792-01-16 George Fludyer, 1761-09-02 - 1837-05-18, https://www.wikidata.org/wiki/Q23542197
+<https://www.wikidata.org/wiki/Q5721103>
+  # Sir Henry Fane, 1778-11-26 – 1840-03-24
+  gen:father <https://www.wikidata.org/wiki/Q5721092> ;
+  gen:mother <#Anne_Batson> .
+<#Anne_Fane>
+  # Anne Fane, 1780-01-19 – 1831-03
+  gen:father <https://www.wikidata.org/wiki/Q5721092> ;
+  gen:mother <#Anne_Batson> .
+  # oo 1803-09-29 John Michel, 1765-02-10 - 1844-04-05, https://www.wikidata.org/wiki/Q16873057
+<#Edward_Fane>
+  # Rev. Edward Fane, 1783-12-07 – 1862-12-28
+  gen:father <https://www.wikidata.org/wiki/Q5721092> ;
+  gen:mother <#Anne_Batson> .
+  # oo Maria Hodges, 1797~ - 1850-11-11, daughter of Walter Parry Hodges
+  []
+    gen:spouse <#Edward_Fane> , <#Maria_Hodges> ;
+	gen:startDate "1816-10-07" .
+<https://www.wikidata.org/wiki/Q21548847>
+  # Vere Fane, 1785-01-05 - 1863-01-18
+  gen:father <https://www.wikidata.org/wiki/Q5721092> ;
+  gen:mother <#Anne_Batson> .
+  # oo Elizabeth Chaplin, d. 1865-01-06
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q21548847> , <#Elizabeth_Chaplin> ;
+	gen:startDate "1815-06-02" .
+<https://www.wikidata.org/wiki/Q29023813>
+  # William Fane, 1789-04-05 - 1839-03-07
+  gen:father <https://www.wikidata.org/wiki/Q5721092> ;
+  gen:mother <#Anne_Batson> .
+  # oo Louisa Hay Dashwood, d. 1855-11-14, daughter of Thomas Dashwood and Charlotte Louisa Auriol
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q29023813> , <#Louisa_Hay_Dashwood> ;
+	gen:startDate "1811-01-12" .
+<#Caroline_Fane>
+  # Caroline Fane, 1790-12-28 – 1859
+  gen:father <https://www.wikidata.org/wiki/Q5721092> ;
+  gen:mother <#Anne_Batson> .
+  # oo 1812-09-17 Charles Chaplin, 1786-04-21 - 1859-05-31, https://www.wikidata.org/wiki/Q5076191
+<https://www.wikidata.org/wiki/Q2505262>
+  # Harriet Fane, 1793-09-10 - 1834-08-02
+  gen:father <https://www.wikidata.org/wiki/Q5721092> ;
+  gen:mother <#Anne_Batson> .
+  # oo 1814-01-31 Rt. Hon. Charles Arbuthnot, 1767-03-14 – 1850-08-18, https://www.wikidata.org/wiki/Q5075174
+<https://www.wikidata.org/wiki/Q29029648>
+  # Mildmay Fane, 1795-02-03 – 1868-03-12
+  gen:father <https://www.wikidata.org/wiki/Q5721092> ;
+  gen:mother <#Anne_Batson> .
+<https://www.wikidata.org/wiki/Q7344250>
+  # Robert George Cecil Fane, 1796-05-08 – 1864-10-04
+  gen:father <https://www.wikidata.org/wiki/Q5721092> ;
+  gen:mother <#Anne_Batson> .
+  # oo Isabella Mary Harvey, d. 1838-12-15
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7344250> , <grenville.ttl#Isabella_Mary_Harvey> ;
+	gen:startDate "1835-06-24" .
+  # oo Harriete Anne Blackwood
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7344250> , <#Harriete_Anne_Blackwood> ;
+	gen:startDate "1841-09-07" .
+<https://www.wikidata.org/wiki/Q6232699>
+  # John Fane, of Wormsley, 1775-07-09 – 1850-10-04
+  gen:father <https://www.wikidata.org/wiki/Q6232697> ;
+  gen:mother <#Lady_Elizabeth_Parker_(died_1829)> .
+  # oo Elizabeth Lowndes-Stone, d. 1865-11-20, daughter of William Lowndes-Stone-Norton and Elizabeth Garth
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6232699> , <#Elizabeth_Lowndes-Stone> ;
+	gen:startDate "1802-06-06" .
+<https://www.wikidata.org/wiki/Q5480882>
+  # Francis William Fane, 1778-10-14 – 1844-03-28
+  gen:father <https://www.wikidata.org/wiki/Q6232697> ;
+  gen:mother <#Lady_Elizabeth_Parker_(died_1829)> .
+  # oo Anne Flint, 1788-11-10 - 1874-10-22
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5480882> , <#Anne_Flint> ;
+	gen:startDate "1824-07-20" .
+<https://www.wikidata.org/wiki/Q26772519>
+  # Georgiana Fane, 1790-01-15 - 1864-06-15
+  gen:father <https://www.wikidata.org/wiki/Q6232697> ;
+  gen:mother <#Lady_Elizabeth_Parker_(died_1829)> .
+  # oo 1817.-12-09 Rt. Hon. Joseph Warner Henley, 1793-03-03 – 1884-12-08, https://www.wikidata.org/wiki/Q6107362
+
+<https://www.wikidata.org/wiki/Q5978904>
+  # John Fane, 11th Earl of Westmorland, 1784-02-02 – 1859-10-16
+  gen:father <https://www.wikidata.org/wiki/Q5949661> ;
+  gen:mother <https://www.wikidata.org/wiki/Q7422292> .
+  # oo Lady Priscilla Anne Wellesley-Pole, 1793 - 1879-02-18
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5978904> , <https://www.wikidata.org/wiki/Q7245589> ;
+	gen:startDate "1811-06-26" .
+<https://www.wikidata.org/wiki/Q7422868>
+  gen:name "Lady Sarah Sophia Fane"@en ;
+  gen:birthDate "1785-03-04" ;
+  gen:deathDate "1867-01-26" ;
+  gen:father <https://www.wikidata.org/wiki/Q5949661> ;
+  gen:mother <https://www.wikidata.org/wiki/Q7422292> .
+  # oo 1804-05-23 George Child-Villiers, 5th Earl of the Island of Jersey, 1773-08-19 - 1859-10-03, https://www.wikidata.org/wiki/Q5537866
+<#Lady_Augusta_Fane>
+  # Lady Augusta Fane, 1786-03-17 – 1871
+  gen:father <https://www.wikidata.org/wiki/Q5949661> ;
+  gen:mother <https://www.wikidata.org/wiki/Q7422292> .
+  # oo 1804-06-20 (div 1809-02-14) John Parker, 1st Earl of Morley, 1772-05-03 - 1840-03-14, https://www.wikidata.org/wiki/Q6251894
+  # oo 1809-02-16 Rt. Hon. Sir Arthur Paget, 1771-01-15 - 1840-07-26, https://www.wikidata.org/wiki/Q4799902
+<https://www.wikidata.org/wiki/Q56283468>
+  # Lady Maria Fane, 1787-05-11 – 1834-03-19
+  gen:father <https://www.wikidata.org/wiki/Q5949661> ;
+  gen:mother <https://www.wikidata.org/wiki/Q7422292> .
+  # oo 1805-11-16 John William Ponsonby, 4th Earl of Bessborough, 1781-08-31 - 1847-05-16, https://www.wikidata.org/wiki/Q6253138
+<https://www.wikidata.org/wiki/Q5722524>
+  # Henry Edward Hamlyn-Fane, 1817-09-05 – 1868-12-27
+  gen:father <#Edward_Fane> ;
+  gen:mother <#Maria_Hodges> .
+  # oo Susan Hester Hamlyn-Williams, 1824-01-01 - 1869-05-19
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5722524> , <carnegie.ttl#Susan_Hester_Hamlyn-Williams> ;
+	gen:startDate "1850-04-09" .
+<https://www.wikidata.org/wiki/Q5480883>
+  # Francis Augustus Fane, 1824-03-22 – 1893-02-01
+  gen:father <#Edward_Fane> ;
+  gen:mother <#Maria_Hodges> .
+  # oo Augusta Fane, 1831-11-03 - 1895-06-14
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5480883> , <#Augusta_Fane> ;
+	gen:startDate "1863-02-10" .
+<https://www.wikidata.org/wiki/Q7964818>
+  # Walter Fane, 1828-01-06 – 1885-06-17
+  gen:father <#Edward_Fane> ;
+  gen:mother <#Maria_Hodges> .
+  # oo Agnes Bold-Hoghton, d. 1912-11-17
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7964818> , <#Agnes_Bold-Hoghton> ;
+	gen:startDate "1879-08-04" .
+<#Emma_Fane>
+  # Emma Fane, d. 1847-12-14
+  gen:father <https://www.wikidata.org/wiki/Q21548847> ;
+  gen:mother <#Elizabeth_Chaplin> .
+  # oo Westley Richards, cecil.ttl#Westley_Richards
+<#Caroline_Fane>
+  # Caroline Fane, 1818-07-07 - 1895-01-08
+  gen:father <https://www.wikidata.org/wiki/Q29023813> ;
+  gen:mother <#Louisa_Hay_Dashwood> .
+  # oo 1838-01-22 Marcus Beresford, 1800-07-28 - 1876-03-22, https://www.wikidata.org/wiki/Q6758033
+<#Adeline_Fane>
+  # Adeline Fane, 1830-09-06 - 1897-06-19
+  gen:father <https://www.wikidata.org/wiki/Q29023813> ;
+  gen:mother <#Louisa_Hay_Dashwood> .
+  # oo 1864-11-24 William Earle Welby, 1823-10-13 - 1915-05-05, howard.ttl#William_Earle_Welby
+<#Augusta_Fane>
+  # Augusta Fane, 1831-11-03 - 1895-06-14
+  gen:father <https://www.wikidata.org/wiki/Q29023813> ;
+  gen:mother <#Louisa_Hay_Dashwood> .
+  # oo 1863-02-10 Francis Augustus Fane, 1824-03-22 – 1893-02-01, https://www.wikidata.org/wiki/Q5480883
+<#Cecil_Francis_William_Fane>
+  # Cecil Francis William Fane, 1856-10-07 - 1914-01-30
+  gen:father <https://www.wikidata.org/wiki/Q7344250> ;
+  gen:mother <#Harriete_Anne_Blackwood> .
+  # oo Lady Augusta Fanny Rous, d. 1950-02-10
+  []
+    gen:spouse <#Cecil_Francis_William_Fane> , <#Lady_Augusta_Fanny_Rous> ;
+	gen:startDate "1880-05-08" ;
+	gen:divorceDate "1904" .
+  # oo Muriel Ellen Harvey, daughter of John Selwyn Harvey
+  []
+    gen:spouse <#Cecil_Francis_William_Fane> , <#Muriel_Ellen_Harvey> ;
+	gen:startDate "1904-11-19" .
+<https://www.wikidata.org/wiki/Q6232701>
+  # John William Fane, 1804-09-01 - 1875-11-19
+  gen:father <https://www.wikidata.org/wiki/Q6232699> ;
+  gen:mother <#Elizabeth_Lowndes-Stone> .
+  # oo Catherine Hobhouse, d. 1828-11-06
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6232701> , <#Catherine_Hobhouse> ;
+	gen:startDate "1826-11-30" .
+  # oo Lady Ellen Catherine Parker, d. 1844-09
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6232701> , <#Lady_Ellen_Catherine_Parker> ;
+	gen:startDate "1829-11-03" .
+  # oo Charlotte Broadhead, d. 1855-05-19
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6232701> , <#Charlotte_Broadhead> ;
+	gen:startDate "1845-11-18" .
+  # oo Victoria Temple, 1912-02-28, daughter of William Temple
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6232701> , <#Victoria_Temple> ;
+	gen:startDate "1856-03" .
+<#Frederick_Adrian_Scrope_Fane>
+  # Rev. Frederick Adrian Scrope Fane, 1810-12-08 - 1894-10-05
+  gen:father <https://www.wikidata.org/wiki/Q6232699> ;
+  gen:mother <#Elizabeth_Lowndes-Stone> .
+  # oo Joanna Hobhouse, d. 1878-04-08
+  []
+    gen:spouse <#Frederick_Adrian_Scrope_Fane> , <hay.ttl#Joanna_Hobhouse> ;
+	gen:startDate "1834-06-10" .
+
+<https://www.wikidata.org/wiki/Q18527667>
+  # Lady Rose Sophia Mary Fane, d. 1921-02-14
+  gen:father <https://www.wikidata.org/wiki/Q5978904> ;
+  gen:mother <https://www.wikidata.org/wiki/Q7245589> .
+  # oo 1866-08-15 Henry Weigall, 1829 - 1925, https://www.wikidata.org/wiki/Q21453682
+<#Ernest_Fitroy_Neville_Fane,_Lord_Burghersh>
+  # Ernest Fitroy Neville Fane, Lord Burghersh, 1824-01-07 - 1851-06-22
+  gen:father <https://www.wikidata.org/wiki/Q5978904> ;
+  gen:mother <https://www.wikidata.org/wiki/Q7245589> .
+  # oo Augusta Selina Elizabeth Locke, d. 1906-11-04
+  []
+    gen:spouse <#Ernest_Fitroy_Neville_Fane,_Lord_Burghersh> , <manners.ttl#Augusta_Selina_Elizabeth_Locke> ;
+	gen:startDate "1849-10-17" .
+<https://www.wikidata.org/wiki/Q5480880>
+  # Francis William Henry Fane, 12th Earl of Westmorland, 1825-11-19 – 1891-08-03
+  gen:father <https://www.wikidata.org/wiki/Q5978904> ;
+  gen:mother <https://www.wikidata.org/wiki/Q7245589> .
+  # oo Lady Adelaide Ida Curzon, 1835 - 1903-03-22
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5480880> , <grosvenor.ttl#Lady_Adelaide_Ida_Curzon> ;
+	gen:startDate "1857-07-16" .
+<https://www.wikidata.org/wiki/Q6307142>
+  # Hon. Julian Henry Charles Fane, 1827-10-10 - 1870-04-19
+  gen:father <https://www.wikidata.org/wiki/Q5978904> ;
+  gen:mother <https://www.wikidata.org/wiki/Q7245589> .
+  # oo Lady Adine Eliza Anne Cowper, 1840~ - 1868-10-20
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6307142> , <howard.ttl#Lady_Adine_Eliza_Anne_Cowper> ;
+	gen:startDate "1866-09-29" .
+<#Henry_George_Fane>
+  # Henry George Fane, 1846-09-10 - 1924-05-19
+  gen:father <https://www.wikidata.org/wiki/Q6232701> ;
+  gen:mother <#Charlotte_Broadhead> .
+  # oo Blanche Louisa Spencer, 1850-09-20 - 1919-02-24
+  []
+    gen:spouse <fane.ttl#Henry_George_Fane> , <spencer.ttl#Blanche_Louisa_Spencer> ;
+	gen:startDate "1876-07-05" .
+<#Frederick_William_Fane>
+  # Frederick William Fane, 1857-07-26 - 1933-03-12
+  gen:father <https://www.wikidata.org/wiki/Q6232701> ;
+  gen:mother <#Victoria_Temple> .
+  # oo Annie Henrietta Scott, d. 1936-04-13
+  []
+    gen:spouse <#Frederick_William_Fane> , <spencer.ttl#Annie_Henrietta_Scott> ;
+	gen:startDate "1880-10-30" .
+<#Isabella_Elizabeth_Fane>
+  # Isabella Elizabeth Fane, d. 1924-12-08
+  gen:father <#Frederick_Adrian_Scrope_Fane> ;
+  gen:mother <hay.ttl#Joanna_Hobhouse> .
+  # oo 1857-06-18 Rev. Almeric John Spencer, 1834-01-23 - 1864-05-03, spencer.ttl#Almeric_John_Spencer
+
+<https://www.wikidata.org/wiki/Q4772479>
+  # Anthony Mildmay Julian Fane, 13th Earl of Westmorland, 1859-08-16 – 1922-06-09
+  gen:father <https://www.wikidata.org/wiki/Q5480880> ;
+  gen:mother <grosvenor.ttl#Lady_Adelaide_Ida_Curzon> .
+  # oo Lady Sybil Mary St Clair-Erskine, 1871-08-20 - 1910-07-21
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4772479> , <https://www.wikidata.org/wiki/Q7659512> ;
+	gen:startDate "1892-05-28" .
+  # oo Catherine Louise Geale, d. 1973-08-21, daughter of Rev. John Samuel Geale
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4772479> , <#Catherine_Louise_Geale> ;
+	gen:startDate "1916-04-22" .
+<#Lady_Grace_Adelaide_Fane>
+  # Lady Grace Adelaide Fane, 1860-10-03 – 1933-06-13
+  gen:father <https://www.wikidata.org/wiki/Q5480880> ;
+  gen:mother <grosvenor.ttl#Lady_Adelaide_Ida_Curzon> .
+  # oo 1887-08-11 William Francis Henry Denison, 2nd Earl of Londesborough, 1864-12-30 - 1917-10-30, https://www.wikidata.org/wiki/Q25975706 (egerton.ttl)
+<https://www.wikidata.org/wiki/Q3733729>
+  # Ethel Anne Priscilla Fane, 1867-06-27 - 1952-05-28
+  gen:father <https://www.wikidata.org/wiki/Q6307142> ;
+  gen:mother <howard.ttl#Lady_Adine_Eliza_Anne_Cowper> .
+  # oo 1887-02-17 William Henry Grenfell, 1st Baron Desborough, 1855-10-30 – 1945-01-09, https://www.wikidata.org/wiki/Q333887
+
+<https://www.wikidata.org/wiki/Q7921177>
+  # Vere Anthony Francis Fane, 14th Earl of Westmorland, 1893-03-25 – 1948-05-12
+  gen:father <https://www.wikidata.org/wiki/Q4772479> ;
+  gen:mother <https://www.wikidata.org/wiki/Q7659512> .
+  # oo Hon. Diana Lister, 1893-05-07 - 1983-12-03
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7921177> , <#Diana_Lister> ;
+	gen:startDate "1923-06-07" .
+<#Lady_Enid_Victoria_Rachel_Fane>
+  # Lady Enid Victoria Rachel Fane, 1894-04-24 - 1969-09-09
+  gen:father <https://www.wikidata.org/wiki/Q4772479> ;
+  gen:mother <https://www.wikidata.org/wiki/Q7659512> .
+  # oo 1914-08-25 Hon. Henry Cecil Vane, 1882-09-19 - 1917-10-09, https://www.wikidata.org/wiki/Q5719265
+  # oo 1922-09-01 Herbert Broke Turnor, 1885-08-22 - 1979-02-21, spencer.ttl#Herbert_Broke_Turnor
+
+<https://www.wikidata.org/wiki/Q5233540>
+  # David Anthony Thomas Fane, 15th Earl of Westmorland, 1924-03-31 – 1993-09-08
+  gen:father <https://www.wikidata.org/wiki/Q7921177> ;
+  gen:mother <#Diana_Lister> .
+  # oo Jane Barbara Findlay, 1928-09-25 - 2009-09-01
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5233540> , <#Jane_Barbara_Findlay> ;
+	gen:startDate "1950-06-20" .
+<https://www.wikidata.org/wiki/Q1711982>
+  # Hon. Julian Charles Fane, 1927-05-27 – 2009-12-13
+  gen:father <https://www.wikidata.org/wiki/Q7921177> ;
+  gen:mother <#Diana_Lister> .
+  # oo Gillian Swire, daughter of John Kidston Swire and Juliet Richenda Barclay
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1711982> , <#Gillian_Swire> ;
+	gen:startDate "1976-01-07" .
+<#Lady_Rose_Fane>
+  # Lady Rose Fane, 1931-01-04 - 1984
+  gen:father <https://www.wikidata.org/wiki/Q7921177> ;
+  gen:mother <#Diana_Lister> .
+  # oo 1950-11-03 (div 1969) John Macdonald-Buchanan, 1925-03-15 - 2014-10-11, buchanan.ttl#John_Macdonald-Buchanan
+  # oo 1972-05-09 John V. Bardsley, son of R. V. Bardsley
+
+<https://www.wikidata.org/wiki/Q19834694>
+  # Anthony David Francis Henry Fane, 16th Earl of Westmorland, b. 1951-08-01
+  gen:father <https://www.wikidata.org/wiki/Q5233540> ;
+  gen:mother <#Jane_Barbara_Findlay> .
+  # oo Caroline Eldred Hughes, daughter of Keon Hughes
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q19834694> , <#Caroline_Eldred_Hughes> ;
+	gen:startDate "1985" .
+<#Harry_St._Clair_Fane>
+  # Hon. Harry St. Clair Fane, b. 1953-03-19
+  gen:father <https://www.wikidata.org/wiki/Q5233540> ;
+  gen:mother <#Jane_Barbara_Findlay> .
+  # oo Tessa Forsyth-Forrest, b. 1955-02-25
+  []
+    gen:spouse <#Harry_St._Clair_Fane> , <grosvenor.ttl#Tessa_Forsyth-Forrest> ;
+	gen:startDate "1984-01-06" .
+
+<#Lady_Daisy_Caroline_Fane>
+  # Lady Daisy Caroline Fane, b. 1989-01-18
+  gen:father <https://www.wikidata.org/wiki/Q19834694> ;
+  gen:mother <#Caroline_Eldred_Hughes> .
+<#Sophie_Jane_Fane>
+  # Sophie Jane Fane, b. 1987
+  gen:father <#Harry_St._Clair_Fane> ;
+  gen:mother <grosvenor.ttl#Tessa_Forsyth-Forrest> .
+<#Sam_Michael_David_Fane>
+  # Sam Michael David Fane, b. 1989
+  gen:father <#Harry_St._Clair_Fane> ;
+  gen:mother <grosvenor.ttl#Tessa_Forsyth-Forrest> .
+
+
+# Viscount Fane
+<https://www.wikidata.org/wiki/Q5077593>
+  # Charles Fane, 1st Viscount Fane, 1676-01 – 1744-07-04
+  # 1st Baron of Loughguyre, in the county of Limerick, 1st Viscount Fane 1718-04-22
+  gen:father <https://www.wikidata.org/wiki/Q16836243> ;
+  gen:mother <#Elizabeth_Southcote> .
+  # oo Mary Stanhope, 1686 – 1762-08-21
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5077593> , <https://www.wikidata.org/wiki/Q26834384> ;
+	gen:startDate "1707-12-12" .
+
+<https://www.wikidata.org/wiki/Q5077594>
+  # Charles Fane, 2nd Viscount Fane, 1708~ - 1766-01-24~/-04-23
+  gen:father <https://www.wikidata.org/wiki/Q5077593> ;
+  gen:mother <https://www.wikidata.org/wiki/Q26834384> .
+  # oo Susanna Marriott, 1706 – 1792-04-10, daughter of John Marriott
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5077594> , <#Susanna_Marriott> ;
+	gen:startDate "1749-06-07" .
+<https://www.wikidata.org/wiki/Q19932204>
+  # Mary Fane, 1710-09 - 1785-03-31
+  gen:father <https://www.wikidata.org/wiki/Q5077593> ;
+  gen:mother <https://www.wikidata.org/wiki/Q26834384> .
+  # oo 1734-01-07 Jerome de Salis, 2nd Comte de Salis, 1709-07-08 - 1794-08, https://www.wikidata.org/wiki/Q6182512
+<https://www.wikidata.org/wiki/Q5298555>
+  # Dorothy Fane, 1716/1717-03-22 - 1797-07-17
+  gen:father <https://www.wikidata.org/wiki/Q5077593> ;
+  gen:mother <https://www.wikidata.org/wiki/Q26834384> .
+  # oo 1741-03-14 John Montagu, 4th Earl of Sandwich, 1718-11-13 - 1792-04-30, https://www.wikidata.org/wiki/Q334953
+
+
+  # illegitimate child of Henry Fane (1739-05-04 - 1802-06-04)
+<https://www.wikidata.org/wiki/Q2101502>
+  # Sir Henry Chamberlain, 1st Baronet, 1773– 1829-07-31
+  # 1st Baronet Chamberlain 1828
+  gen:father <https://www.wikidata.org/wiki/Q5721092> .
+  # oo Elizabeth Harrod
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2101502> , <#Elizabeth_Harrod> ;
+	gen:startDate "1795-01-01" ;
+	gen:divorceDate "1813" .
+  # oo Anne Eugenia Morgan, d. 1867-12-28, daughter of William Morgan
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2101502> , <#Anne_Eugenia_Morgan> ;
+	gen:startDate "1813-06-05" .
+
+<https://www.wikidata.org/wiki/Q17986360>
+  # Sir Henry Chamberlain, 2nd Baronet, 1796-10-02 – 1843-09-08
+  gen:father <https://www.wikidata.org/wiki/Q2101502> ;
+  gen:mother <#Elizabeth_Harrod> .
+  # oo Harriet Mullen, d. 1856-04-30, daughter of R. Mullen
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q17986360> , <#Harriet_Mullen> ;
+	gen:startDate "1826-05-11" .
+<#Eliza_Caroline_Chamberlain>
+  # Eliza Caroline Chamberlain, 1799~ - 1887-12-11
+  gen:father <https://www.wikidata.org/wiki/Q2101502> ;
+  gen:mother <#Elizabeth_Harrod> .
+  # oo 1819-01-02 Hon. Charles Orlando Bridgeman, 1791-02-05 - 1860-04-13, https://www.wikidata.org/wiki/Q20876043
+<https://www.wikidata.org/wiki/Q12379240>
+  # William Charles Chamberlain, 1818-04-21 – 1878-02-27
+  gen:father <https://www.wikidata.org/wiki/Q2101502> ;
+  gen:mother <#Anne_Eugenia_Morgan> .
+  # oo Elizabeth Jane Hall, d. 1856-08-29
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q12379240> , <#Elizabeth_Jane_Hall> ;
+	gen:startDate "1850b" .
+  # oo Sarah Morgan Holroyd, d. 1921-12-29, daughter of Thomas Holroyd
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q12379240> , <#Sarah_Morgan_Holroyd> ;
+	gen:startDate "1872-10-29" .
+<https://www.wikidata.org/wiki/Q1982244>
+  # Sir Neville Bowles Chamberlain, 1820-01-10 – 1902-02-18
+  gen:father <https://www.wikidata.org/wiki/Q2101502> ;
+  gen:mother <#Anne_Eugenia_Morgan> .
+  # oo Charlotte Cuyler Reid, d. 1896-12-26
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1982244> , <#Charlotte_Cuyler_Reid> ;
+	gen:startDate "1873-06-26" .
+<https://www.wikidata.org/wiki/Q5182836>
+  # Sir Crawford Trotter Chamberlain, 1821-05-09 – 1902-12-13
+  gen:father <https://www.wikidata.org/wiki/Q2101502> ;
+  gen:mother <#Anne_Eugenia_Morgan> .
+  # oo Elizabeth de Witt, d. 1894-01-19, daughter of J. de Witt
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5182836> , <#Elizabeth_de_Witt> ;
+	gen:startDate "1845" .
+  # oo Augusta Margaret Christie, daughter of John Christie
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5182836> , <#Augusta_Margaret_Christie> ;
+	gen:startDate "1896" .
+
+<#Sir_Henry_Chamberlain,_3rd_Baronet>
+  # Sir Henry Orlando Robert Chamberlain, 3rd Baronet, 1828 – 1870
+  gen:father <https://www.wikidata.org/wiki/Q17986360> ;
+  gen:mother <#Harriet_Mullen> .
+<https://www.wikidata.org/wiki/Q810029>
+  # Basil Hall Chamberlain, 1850-10-18 – 1935-02-15
+  gen:father <https://www.wikidata.org/wiki/Q12379240> ;
+  gen:mother <#Elizabeth_Jane_Hall> .
+<https://www.wikidata.org/wiki/Q57737>
+  # Houston Stewart Chamberlain, 1855-09-09 – 1927-01-09
+  gen:father <https://www.wikidata.org/wiki/Q12379240> ;
+  gen:mother <#Elizabeth_Jane_Hall> .
+  # oo Anna Horst
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q57737> , <#Anna_Horst> ;
+	gen:startDate "1878" ;
+	gen:divorceDate "1905" .
+  # oo Eva von Bülow-Wagner, 1867-02-17 – 1942-05-25~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q57737> , <https://www.wikidata.org/wiki/Q5852556> ;
+	gen:startDate "1908" .
+
+
+# illegitimate child of Sir Henry Fane (1778 – 1840)
+<#Arthur_Fane>
+  # Rev. Arthur Fane, 1811 - 1872
+  gen:father <https://www.wikidata.org/wiki/Q5721103> .
+  # and Isabella Gorges (oo 1791 Edward Cooke; daughter of Hamilton Gorges)
+  # oo Lucy Benett, b. 1806, daughter of John Benett and Lucy Lambert
+
+<https://www.wikidata.org/wiki/Q17309018>
+  # Sir Edmund Douglas Veitch Fane, 1837-05-06 - 1900-03-20
+  gen:father <#Arthur_Fane> .
+  # and Lucy Benett
+  # oo Constantia Eleanor Wood, b. 1852, daughter of R. Blucher Wood
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q17309018> , <#Constantia_Eleanor_Wood> ;
+	gen:startDate "1875" .
+
+<#Etheldred_Constantia_Fane>
+  # Etheldred Constantia Fane, d. 1964-10-23
+  gen:father <https://www.wikidata.org/wiki/Q17309018> ;
+  gen:mother <#Constantia_Eleanor_Wood> .
+  # oo 1905-07-18 Sir Horace George Montagu Rumbold, 9th Baronet, 1869-02-05 – 1941-05-24, https://www.wikidata.org/wiki/Q831742
+<#Lucy_Evelyn_Fane>
+  # Lucy Evelyn Fane, 1876 - 1977
+  gen:father <https://www.wikidata.org/wiki/Q17309018> ;
+  gen:mother <#Constantia_Eleanor_Wood> .
+  # oo 1905-03-07 Sir Charles John Fitz Roy Rhys Wingfield, 1877-02-18 - 1960-03-26, https://www.wikidata.org/wiki/Q15999537
+<#Henry_Nevile_Fane>
+  # Henry Nevile Fane, 1883-05-24 - 1947-08-02
+  gen:father <https://www.wikidata.org/wiki/Q17309018> ;
+  gen:mother <#Constantia_Eleanor_Wood> .
+  # oo Hon. Harriet Hepburn-Stuart-Forbes-Trefusis, 1887-11-14 - 1958-03-15
+  []
+    gen:spouse <#Henry_Nevile_Fane> , <clinton.ttl#Harriet_Hepburn-Stuart-Forbes-Trefusis> ;
+	gen:startDate "1910-04-28" .
+
+<#Charles_Nevile_Fane>
+  # Charles Nevile Fane, 1911-02-07 - 1940-05-21
+  gen:father <#Henry_Nevile_Fane> ;
+  gen:mother <clinton.ttl#Harriet_Hepburn-Stuart-Forbes-Trefusis> .
+  # oo Gladys Mabel Lowther, b. 1908-10-22
+  []
+    gen:spouse <#Charles_Nevile_Fane> , <bentinck.ttl#Gladys_Mabel_Lowther> ;
+	gen:startDate "1933-12-20" .
+
+<#Gerald_Trefusis,_22nd_Baron_Clinton>
+  # Gerald Nevile Mark Fane Trefusis, 22nd Lord Clinton, b. 1934-10-07
+  # 22nd Lord Clinton 1965-03-18
+  gen:father <#Charles_Nevile_Fane> ;
+  gen:mother <bentinck.ttl#Gladys_Mabel_Lowther> .
+  # oo Nicola Harriette Purdon Coote, b. 1937-01-06, daughter of Charles Robert Purdon Coote and Noel Margaret Jephson Stracey
+  []
+    gen:spouse <#Gerald_Trefusis,_22nd_Baron_Clinton> , <#Nicola_Harriette_Purdon_Coote> ;
+	gen:startDate "1959-07-18" .
+
+<#Caroline_Harriet_Fane_Trefusis>
+  # Hon. Caroline Harriet Fane Trefusis, b. 1960-05-23
+  gen:father <#Gerald_Trefusis,_22nd_Baron_Clinton> ;
+  gen:mother <#Nicola_Harriette_Purdon_Coote> .
+  # oo 1995-06-03 Charles Fowle, son of Anthony Fowle and Evelyn Impey
+<#Charles_Patrick_Rolle_Fane_Trefusis>
+  # Hon. Charles Patrick Rolle Fane Trefusis, b. 1962-03-21
+  gen:father <#Gerald_Trefusis,_22nd_Baron_Clinton> ;
+  gen:mother <#Nicola_Harriette_Purdon_Coote> .
+  # oo Rosanna E. Izat, b. 1963, daughter of Alexander John Rennie Izat and Frederika A. McNeil
+  []
+    gen:spouse <#Charles_Patrick_Rolle_Fane_Trefusis> , <#Rosanna_E._Izat> ;
+	gen:startDate "1992-06-06" .
+<#Henrietta_Jane_Fane_Trefusis>
+  # Hon. Henrietta Jane Fane Trefusis, b. 1964-01-31
+  gen:father <#Gerald_Trefusis,_22nd_Baron_Clinton> ;
+  gen:mother <#Nicola_Harriette_Purdon_Coote> .
+
+<#Edward_Charles_Rolle_Fane_Trefusis>
+  # Edward Charles Rolle Fane Trefusis, b. 1994-02-26
+  gen:father <#Charles_Patrick_Rolle_Fane_Trefusis> ;
+  gen:mother <#Rosanna_E._Izat> .
+<#James_Henry_Rolle_Fane_Trefusis>
+  # James Henry Rolle Fane Trefusis, b. 1996-07-16
+  gen:father <#Charles_Patrick_Rolle_Fane_Trefusis> ;
+  gen:mother <#Rosanna_E._Izat> .
+<#William_John_Fane_Trefusis>
+  # William John Fane Trefusis, b. 2001-04-21
+  gen:father <#Charles_Patrick_Rolle_Fane_Trefusis> ;
+  gen:mother <#Rosanna_E._Izat> .
+
+
+# ----
+<neville.ttl#Mary_Neville,_3rd_Baroness_le_Despenser>
+  # Mary Neville, 3rd Baroness le Despenser, 1554-03-25 - 1626-06-28
+  # 3rd Baroness le Despenser, suo jure 1604-05-25
+  gen:father <https://www.wikidata.org/wiki/Q5726274> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5478865> .
+  # oo 1574-12-12 Sir Thomas Fane, 1510~ – 1589-03-13, https://www.wikidata.org/wiki/Q7789512
+
+# ----
+<https://www.wikidata.org/wiki/Q4773099>
+  # Sir Anthony Mildmay, d. 1617-09-11
+  gen:father <https://www.wikidata.org/wiki/Q7965635> .
+  # and Mary Walsingham
+  # oo Grace Sherington, 1552~ - 1620-07-27, daughter of Sir Henry Sherington
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4773099> , <https://www.wikidata.org/wiki/Q5591307> .
+
+<https://www.wikidata.org/wiki/Q36870470>
+  # Mary Mildmay, 1582~ - 1640-04-09
+  gen:father <https://www.wikidata.org/wiki/Q4773099> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5591307> .
+  # oo 1599-02-15~ Francis Fane, 1st Earl of Westmorland, 1580-02-01 – 1629-03-23, https://www.wikidata.org/wiki/Q5480881
+
+# ----
+#<https://www.wikidata.org/wiki/Q7789992>
+  # Thomas Gerard, 1st Baron Gerard of Gerard's Bromley, 1564~ - 1618-01-15
+  # 1st Baron Gerard of Gerard's Bromley 1603
+  # oo Alice Rivet, daughter of Sir Thomas Rivet
+
+<#Gilbert_Gerard,_2nd_Baron_Gerard>
+  # Gilbert Gerard, 2nd Baron Gerard of Gerard's Bromley, d. 1622
+  gen:father <https://www.wikidata.org/wiki/Q7789992> .
+  # and Alice Rivet
+  # oo Eleanor Dutton, 1596 - 1657-03-12, daughter of Thomas Dutton and Thomasine Anderton
+  []
+    gen:spouse <#Gilbert_Gerard,_2nd_Baron_Gerard> , <#Eleanor_Dutton> ;
+	gen:startDate "1609-09-16" .
+
+<#Dutton_Gerard,_3rd_Baron_Gerard>
+  # Dutton Gerard, 3rd Baron Gerard of Gerard's Bromley, 1613-03-04 - 1640-04-22
+  gen:father <#Gilbert_Gerard,_2nd_Baron_Gerard> ;
+  gen:mother <#Eleanor_Dutton> .
+  # oo Lady Mary Fane, 1606-08-03 - 1634~
+  []
+    gen:spouse <#Dutton_Gerard,_3rd_Baron_Gerard> , <#Lady_Mary_Fane_(died_1634~)> ;
+	gen:startDate "1625-05-18a" .
+
+# ----
+#<#Elizabeth_West>
+  # Elizabeth West, d. 1669-07~
+  # daughter of William West
+  # oo John Darcy, 4th Lord Darcy de Darcy, 1579~ - 1635-07-05, son of Michael Darcy and Margaret Wentworth)
+  # oo Sir Francis Fane, 1611 - 1681, https://www.wikidata.org/wiki/Q15994432
+
+# ----
+#<https://www.wikidata.org/wiki/Q6555592>
+  # Lionel Cranfield, 1st Earl of Middlesex, 1575 – 1645-08-06
+  # 1st Baron Cranfield, of Cranfield in the County of Bedford 1621-07
+  # 1st Earl of Middlesex 1622-09
+  # oo Anne Brett, d. 1670
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6555592> , <#Anne_Brett> ;
+	gen:startDate "1621" .
+
+<https://www.wikidata.org/wiki/Q6555593>
+  # Lionel Cranfield, 3rd Earl of Middlesex, 1625 - 1674-10-26
+  gen:father <https://www.wikidata.org/wiki/Q6555592> ;
+  gen:mother <#Anne_Brett> .
+  # oo Lady Rachael Fane, 1613-01-28 - 1680-11-11
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6555593> , <https://www.wikidata.org/wiki/Q26702282> ;
+	gen:startDate "1655-05-01" ;
+	gen:separatedDate "1661-06-13" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q7526008>
+  # Sir Anthony Cope, 1st Baronet, 1549 - 1614-07-06
+  # 1st Baronet Cope, of Hanwell, Oxfordshire 1611
+  # oo Frances Lytton, d. 1600, daughter of Rowland Lytton and Anne Carleton
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7526008> , <#Frances_Lytton> .
+
+<https://www.wikidata.org/wiki/Q7529542>
+  # Sir William Cope, 2nd Baronet, 1577 - 1637-08-02
+  gen:father <https://www.wikidata.org/wiki/Q7526008> ;
+  gen:mother <#Frances_Lytton> .
+  # oo Elizabeth Chaworth, d. 1635-08-21~, daughter of Sir George Chaworth and Anne Paston
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7529542> , <#Elizabeth_Chaworth> ;
+	gen:startDate "1602-04-08" .
+
+<#Sir_John_Cope,_3rd_Baronet>
+  # Sir John Cope, 3rd Baronet, 1608 – 1638
+  gen:father <https://www.wikidata.org/wiki/Q7529542> ;
+  gen:mother <#Elizabeth_Chaworth> .
+  # oo Lady Elizabeth Fane
+  []
+    gen:spouse <#Sir_John_Cope,_3rd_Baronet> , <#Lady_Elizabeth_Fane> .
+
+# ----
+#<#William_Cope>
+  # William Cope
+  # oo Lady Elizabeth Fane
+  []
+    gen:spouse <#William_Cope> , <#Lady_Elizabeth_Fane> .
+
+<#Henry_Cope>
+  # Henry Cope, 1645 - 1724~
+  gen:father <#William_Cope> ;
+  gen:mother <#Lady_Elizabeth_Fane> .
+
+<#Sir_John_Cope>
+  # Sir John Cope, 1688-07-07 – 1760-07-28
+  gen:father <#Henry_Cope> .
+  # oo Jane Duncombe
+  []
+    gen:spouse <#Sir_John_Cope> , <#Jane_Duncombe> ;
+	gen:startDate "1712-12" .
+  # oo Elizabeth Waple
+  []
+    gen:spouse <#Sir_John_Cope> , <#Elizabeth_Waple> ;
+	gen:startDate "1736-08" .
+# ----
+<#Jane_Duncombe>
+  # Jane Duncombe
+  gen:father <https://www.wikidata.org/wiki/Q4772429> .
+  # and Jane Cornwallis
+  # oo 1712-12 Sir John Cope, 1688-07-07 – 1760-07-28, #Sir_John_Cope
+
+# ----
+#<https://www.wikidata.org/wiki/Q21166210>
+  # Sir Erasmus Harby, 2nd Baronet, 1628 - 1674-07
+  # son of Sir Job Harby, 1st Baronet
+  # oo Lady Frances Fane
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q21166210> , <#Lady_Frances_Fane> .
+
+# ----
+#<#William_Paul>
+  # William Paul
+  # son of James Paul
+  # and Martha Duppa
+  # oo Lady Catherine Fane, d. 1737
+  []
+    gen:spouse <#William_Paul> , <#Lady_Catherine_Fane_(died_1737)> ;
+	gen:startDate "1696" .
+
+<#Catherine_Paul>
+  # Catherine Paul, d. 1753-06-28
+  gen:father <#William_Paul> ;
+  gen:mother <#Lady_Catherine_Fane_(died_1737)> .
+  # oo 1724-04-28 Sir William Stapleton, 4th Baronet, 1698 – 1740-01-12, https://www.wikidata.org/wiki/Q19799979, son of https://www.wikidata.org/wiki/Q30128283 and Frances Russell
+
+# ----
+#<https://www.wikidata.org/wiki/Q16828955>
+  # Sir Francis Dashwood, 1st Baronet, 1676 - 1710-08-19
+  # 1st Baronet Dashwood, of West Wycombe, co. Bucks 1707-06-28
+  # son of Francis Dashwood
+  # and Alice Sleigh
+  # oo Lady Mary Fane, 1676 - 1710-08-19
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16828955> , <#Lady_Mary_Fane_(died_1710)> ;
+	gen:startDate "1705-05-30~" .
+
+<#Rachael_Dashwood>
+  # Rachael Dashwood, 1706~ - 1788-05-16
+  gen:father <https://www.wikidata.org/wiki/Q16828955> ;
+  gen:mother <#Lady_Mary_Fane_(died_1710)> .
+  # oo 1738-11-04Sir Robert Austen, 4th Baronet, 1697-10-06 - 1743-10-07, https://www.wikidata.org/wiki/Q7528708
+<https://www.wikidata.org/wiki/Q1388908>
+  # Francis Dashwood, 11th Lord le Despencer, 1708-12 – 1781-12-11
+  # 2nd Baronet Dashwood, of West Wycombe, co. Bucks 1724-11-04
+  # 11th Lord le Despenser 1763
+  gen:father <https://www.wikidata.org/wiki/Q16828955> ;
+  gen:mother <#Lady_Mary_Fane_(died_1710)> .
+# ----
+<https://www.wikidata.org/wiki/Q7528708>
+  # Sir Robert Austen, 4th Baronet, 1697-10-06 - 1743-10-07
+  gen:father <https://www.wikidata.org/wiki/Q15070054> .
+  # and Elizabeth Stawel
+  # oo Rachael Dashwood, 1706~ - 1788-05-16
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7528708> , <#Rachael_Dashwood> ;
+	gen:startDate "1738-11-04" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q4685345>
+  # Adrian Scrope, 1601~ – 1660-10-17
+
+<#Thomas_Scrope>
+  # Thomas Scrope
+  gen:father <https://www.wikidata.org/wiki/Q4685345> .
+
+<#Anne_Scrope>
+  # Anne Scrope, d. 1720
+  gen:father <#Thomas_Scrope> .
+  # oo Henry Fane, of Brympton, 1669 - 1726-12-19, https://www.wikidata.org/wiki/Q5721098
+
+# ----
+<#Charlotte_Rowe>
+  # Charlotte Rowe, d. 1739-09-29
+  gen:father <https://www.wikidata.org/wiki/Q1382306> .
+  # and Anne Devenish
+  # oo 1735-07-17 Henry Fane, of Wormsley, 1703-10-16 - 1777-05-31, https://www.wikidata.org/wiki/Q14949387
+
+# ----
+<#Anne_Wynn>
+  # Anne Wynn, d. 1744
+  gen:father <https://www.wikidata.org/wiki/Q16849924> .
+  # oo 1742-05-20 Henry Fane, of Wormsley, 1703-10-16 - 1777-05-31, https://www.wikidata.org/wiki/Q14949387
+
+# ----
+<https://www.wikidata.org/wiki/Q27154698>
+  # Sir William St. Quintin, 5th Baronet, 1729-07-04 - 1795-07-02
+  gen:father <https://www.wikidata.org/wiki/Q7529782> .
+  # and Rebecca Thompson
+  # oo Charlotta Fane
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q27154698> , <#Charlotta_Fane> ;
+	gen:startDate "1758-05-14" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q936766>
+  # Thomas Parker, 1st Earl of Macclesfield, 1667-07-23 - 1732-04-28
+  # 1st Baron Parker of Macclesfield, co. Chester 1716-03-10
+  # 1st Earl of Macclesfield, co. Chester, 1st Viscount Parker of Ewelm, co. Oxford 1721-11-15
+  # oo Janet Carrier, d. 1733-08-23, daughter of Charles Carrier
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q936766> , <#Janet_Carrier> ;
+	gen:startDate "1691-04-23" .
+
+<#George_Parker,_2nd_Earl_of_Macclesfield>
+  # George Parker, 2nd Earl of Macclesfield, 1697~ - 1764-03-17
+  gen:father <https://www.wikidata.org/wiki/Q936766> ;
+  gen:mother <#Janet_Carrier> .
+  # oo Mary Lane, d. 1753-06-04, daughter of Ralph Lane
+  []
+    gen:spouse <#George_Parker,_2nd_Earl_of_Macclesfield> , <#Mary_Lane> ;
+	gen:startDate "1722-08-18" .
+<#Lady_Elizabeth_Parker_(died_1747)>
+  # Lady Elizabeth Parker, d. 1747-02-21
+  gen:father <https://www.wikidata.org/wiki/Q936766> ;
+  gen:mother <#Janet_Carrier> .
+  # oo 1720-04-07 Sir William Heathcote, 1st Baronet, 1693-03-15 - 1751-05-10, https://www.wikidata.org/wiki/Q7529627
+
+<https://www.wikidata.org/wiki/Q7793012>
+  # Thomas Parker, 3rd Earl of Macclesfield, 1723-10-02 - 1795-02-09
+  gen:father <#George_Parker,_2nd_Earl_of_Macclesfield> ;
+  gen:mother <#Mary_Lane> .
+  # oo Mary Heathcote, d. 1812-05-20
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7793012> , <#Mary_Heathcote> ;
+	gen:startDate "1749-12-12" .
+
+<#Lady_Elizabeth_Parker_(died_1829)>
+  # Lady Elizabeth Parker, d. 1829-06-10
+  gen:father <https://www.wikidata.org/wiki/Q7793012> ;
+  gen:mother <#Mary_Heathcote> .
+  # oo 1773-11-16 John Fane, 1751-01-06 - 1824-02-08, https://www.wikidata.org/wiki/Q6232697
+<#Thomas_Parker,_5th_Earl_of_Macclesfield>
+  # Thomas Parker, 5th Earl of Macclesfield, 1763-06-09 - 1850-03-31
+  gen:father <https://www.wikidata.org/wiki/Q7793012> ;
+  gen:mother <#Mary_Heathcote> .
+  # oo ??? Edwards, d. 1803-04-09, daughter of Lewis Edwards
+  []
+    gen:spouse <#Thomas_Parker,_5th_Earl_of_Macclesfield> , <#???_Edwards> ;
+	gen:startDate "1796-03-16" .
+  # oo Eliza Wolstenholme, 1781 - 1862-01-01, daughter of William Breton Wolstenholme
+  []
+    gen:spouse <#Thomas_Parker,_5th_Earl_of_Macclesfield> , <#Eliza_Wolstenholme> ;
+	gen:startDate "1807-03-19" .
+
+<#Lady_Ellen_Catherine_Parker>
+  # Lady Ellen Catherine Parker, d. 1844-09
+  gen:father <#Thomas_Parker,_5th_Earl_of_Macclesfield> ;
+  gen:mother <#???_Edwards> .
+  # oo 1829-11-03 John William Fane, 1804-09-01 - 1875-11-19, https://www.wikidata.org/wiki/Q6232701
+<#Lady_Amelia_Elizabeth_Parker>
+  # Lady Amelia Elizabeth Parker, d. 1881-02-05
+  gen:father <#Thomas_Parker,_5th_Earl_of_Macclesfield> ;
+  gen:mother <#???_Edwards> .
+  # oo 1817-03 William Montgomerie, of Grey Abbey, d. 1831-05-03, montgomerie.ttl#William_Montgomerie,_of_Grey_Abbey_(died_1831)
+<#Lady_Matilda_Anna_Parker>
+  # Lady Matilda Anna Parker, d. 1883-05-25
+  gen:father <#Thomas_Parker,_5th_Earl_of_Macclesfield> ;
+  gen:mother <#???_Edwards> .
+  # oo 1825-05-26 Arthur Hill Montgomerie, d. 1867, montgomerie.ttl#Arthur_Hill_Montgomerie
+<#Lady_Laura_Cecilia_Parker>
+  # Lady Laura Cecilia Parker, 1809 - 1883-01-26
+  gen:father <#Thomas_Parker,_5th_Earl_of_Macclesfield> ;
+  gen:mother <#Eliza_Wolstenholme> .
+  # oo 1836-05-03 Hugh Seymour McDonnell, 4th Earl of Antrim, 1812-08-07 - 1855-07-19, kerr.ttl#Hugh_Seymour_McDonnell,_4th_Earl_of_Antrim
+# ----
+#<https://www.wikidata.org/wiki/Q7529627>
+  # Sir William Heathcote, 1st Baronet, 1693-03-15 - 1751-05-10
+  # 1st Baronet Heathcote, of Hursley, Hampshire 1733-08-16
+  # oo Lady Elizabeth Parker, d. 1747-02-21
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7529627> , <#Lady_Elizabeth_Parker_(died_1747)> ;
+	gen:startDate "1720-04-07" .
+
+<#Mary_Heathcote>
+  # Mary Heathcote, d. 1812-05-20
+  gen:father <https://www.wikidata.org/wiki/Q7529627> ;
+  gen:mother <#Lady_Elizabeth_Parker_(died_1747)> .
+  # oo 1749-12-12 Thomas Parker, 3rd Earl of Macclesfield, 1723-10-02 - 1795-02-09, https://www.wikidata.org/wiki/Q7793012
+
+# ----
+#<https://www.wikidata.org/wiki/Q16239281>
+  # Francis Child, 1642 - 1713
+
+<https://www.wikidata.org/wiki/Q22336794>
+  # Samuel Child, 1693 - 1752-10-01
+  gen:father <https://www.wikidata.org/wiki/Q16239281> .
+
+<https://www.wikidata.org/wiki/Q22020004>
+  gen:name "Robert Child"@en ;
+  gen:birthDate "1739-02" ;
+  gen:deathDate "1782-07-28" ;
+  gen:father <https://www.wikidata.org/wiki/Q22336794> .
+  # oo Sarah Jodrell, daughter of Gilbert Jodrell
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q22020004> , <#Sarah_Jodrell> ;
+	gen:startDate "1763-10" .
+
+<https://www.wikidata.org/wiki/Q7422292>
+  gen:name "Sarah Anne Child"@en ;
+  gen:birthDate "1764-08-28" ;
+  gen:deathDate "1793-11-09" ;
+  gen:father <https://www.wikidata.org/wiki/Q22020004> ;
+  gen:mother <#Sarah_Jodrell> .
+  # oo 1782-05-20 John Fane, 10th Earl of Westmorland, 1759-06-01 – 1841-12-15, https://www.wikidata.org/wiki/Q5949661
+
+# ----
+#<https://www.wikidata.org/wiki/Q3471114>
+  # Sir Samuel Fludyer, 1st Baronet, 1704~ – 1768-01-18
+  # 1st Baronet Fludyer, of Lee Place 1759-11-14
+  # oo Caroline Brudenell, d. 1803
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3471114> , <brudenell.ttl#Caroline_Brudenell> ;
+	gen:startDate "1758-09-02" .
+
+<https://www.wikidata.org/wiki/Q23542197>
+  # George Fludyer, 1761-09-02 - 1837-05-18
+  gen:father <https://www.wikidata.org/wiki/Q3471114> ;
+  gen:mother <brudenell.ttl#Caroline_Brudenell> .
+  # oo Lady Mary Fane, 1772-09-19 - 1855-06-27
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q23542197> , <#Lady_Mary_Fane_(died_1855)> ;
+	gen:startDate "1792-01-16" .
+
+# ----
+<https://www.wikidata.org/wiki/Q16873057>
+  # John Michel, 1765-02-10 - 1844-04-05
+  gen:father <https://www.wikidata.org/wiki/Q26693259> .
+  # oo Anne Fane, 1780-01-19 – 1831-03
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16873057> , <#Anne_Fane> ;
+	gen:startDate "1803-09-29" .
+
+<https://www.wikidata.org/wiki/Q4298260>
+  # Sir John Michel, 1804-09-01 – 1886-05-23
+  gen:father <https://www.wikidata.org/wiki/Q16873057> ;
+  gen:mother <#Anne_Fane> .
+
+# ----
+#<https://www.wikidata.org/wiki/Q5076190>
+  # Charles Chaplin, 1759-05-30 - 1816-08-28
+  # oo Elizabeth Taylor, daughter of Robert Taylor
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5076190> , <#Elizabeth_Taylor> ;
+	gen:startDate "1781" .
+
+<https://www.wikidata.org/wiki/Q5076191>
+  # Charles Chaplin, 1786-04-21 - 1859-05-31
+  gen:father <https://www.wikidata.org/wiki/Q5076190> ;
+  gen:mother <#Elizabeth_Taylor> .
+  # oo Caroline Fane, 1790-12-28 – 1859
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5076191> , <#Caroline_Fane> ;
+	gen:startDate "1812-09-17" .
+<#Elizabeth_Chaplin>
+  # Elizabeth Chaplin, d. 1865-01-06
+  gen:father <https://www.wikidata.org/wiki/Q5076190> ;
+  gen:mother <#Elizabeth_Taylor> .
+  # oo 1815-06-02 Vere Fane, 1785-01-05 - 1863-01-18, https://www.wikidata.org/wiki/Q21548847
+
+# ----
+<https://www.wikidata.org/wiki/Q5075174>
+  # Rt. Hon. Charles Arbuthnot, 1767-03-14 – 1850-08-18
+  gen:father <https://www.wikidata.org/wiki/Q6219281> .
+  # and Anne Stone
+  # oo Harriet Fane, 1793-09-10 - 1834-08-02
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5075174> , <https://www.wikidata.org/wiki/Q2505262> ;
+	gen:startDate "1814-01-31" .
+
+# ----
+#<#Sir_Robert_Blackwood,_1st_Baronet>
+  # Sir Robert Blackwood, 1st Baronet, 1694-11-05 - 1774
+  # 1st Baronet Blackwood, of Ballyleidy, co. Down 1763-07-01
+  # oo Joyce Leeson, daughter of Joseph Leeson and Margaret Brice
+  []
+    gen:spouse <#Sir_Robert_Blackwood,_1st_Baronet> , <#Joyce_Leeson> ;
+	gen:startDate "1719" .
+
+<https://www.wikidata.org/wiki/Q16850394>
+  # Sir John Blackwood, 2nd Baronet, 1722 - 1799-02-27
+  gen:father <#Sir_Robert_Blackwood,_1st_Baronet> ;
+  gen:mother <#Joyce_Leeson> .
+  # oo Dorcas Stevenson, 1st Baroness Dufferin and Claneboye, 1726 - 1807-02-08
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16850394> , <https://www.wikidata.org/wiki/Q5297559> ;
+	gen:startDate "1751-05-22" .
+
+<https://www.wikidata.org/wiki/Q527871>
+  # Hon. Sir Henry Blackwood, 1st Baronet, 1770-12-28 - 1832-12-14
+  # 1st Baronet Blackwood 1814-09-01
+  gen:father <https://www.wikidata.org/wiki/Q16850394> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5297559> .
+  # oo Harriet Gore, d. 1851-05-05, daughter of Francis Gore
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q527871> , <#Harriet_Gore> ;
+	gen:startDate "1803-05-09" .
+
+<#Harriete_Anne_Blackwood>
+  # Harriete Anne Blackwood
+  gen:father <https://www.wikidata.org/wiki/Q527871> ;
+  gen:mother <#Harriet_Gore> .
+  # oo 1841-09-07 Robert George Cecil Fane, 1796-05-08 – 1864-10-04, https://www.wikidata.org/wiki/Q7344250
+# ----
+#<https://www.wikidata.org/wiki/Q5297559>
+  # Dorcas Stevenson, 1st Baroness Dufferin and Claneboye, 1726 - 1807-02-08
+  # 1st Baroness Dufferin and Claneboye of Ballyleidy and Killyleagh, co. Down, suo jure 1800-07-31
+  # daughter of James Stevenson
+  # and Ann Price
+  # oo 1751-05-22 Sir John Blackwood, 2nd Baronet, 1722 - 1799-02-27, https://www.wikidata.org/wiki/Q16850394
+
+# ----
+#<#Anne_Flint>
+  # Anne Flint, 1788-11-10 - 1874-10-22
+  # daughter of William Flint
+  # and Anne Mill
+  # oo 1824-07-20 Francis William Fane, 1778-10-14 – 1844-03-28, https://www.wikidata.org/wiki/Q5480882
+  # oo 1847-01-05 James O'Brien, 3rd Marquess of Thomond, 1768~ - 1855-07-03, https://www.wikidata.org/wiki/Q16066273
+# ----
+<https://www.wikidata.org/wiki/Q16066273>
+  # James O'Brien, 3rd Marquess of Thomond, 1768~ - 1855-07-03
+  gen:father <https://www.wikidata.org/wiki/Q5342612> .
+  # and Mary Carrick
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16066273> , <#Anne_Flint> ;
+	gen:startDate "1847-01-05" .
+
+# ----
+<https://www.wikidata.org/wiki/Q6107362>
+  # Rt. Hon. Joseph Warner Henley, 1793-03-03 – 1884-12-08
+  gen:father <https://www.wikidata.org/wiki/Q18576585> .
+  # and Anne Rooke
+  # oo Georgiana Fane, 1790-01-15 - 1864-06-15
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6107362> , <https://www.wikidata.org/wiki/Q26772519> ;
+	gen:startDate "1817.-12-09" .
+
+# ----
+<#Sir_Henry_Bold-Hoghton,_8th_Baronet>
+  # Sir Henry Bold-Hoghton, 8th Baronet, 1799-01-03 - 1862-07-19
+  gen:father <https://www.wikidata.org/wiki/Q26420557> .
+  # and Susannah Brooke
+
+<#Agnes_Bold-Hoghton>
+  # Agnes Bold-Hoghton, d. 1912-11-17
+  gen:father <#Sir_Henry_Bold-Hoghton,_8th_Baronet> .
+  # oo 1879-08-04 Walter Fane, 1828-01-06 – 1885-06-17, https://www.wikidata.org/wiki/Q7964818
+
+# ----
+<#Lady_Augusta_Fanny_Rous>
+  # Lady Augusta Fanny Rous, d. 1950-02-10
+  gen:father <https://www.wikidata.org/wiki/Q7610919> .
+  # and Augusta Musgrave
+  # oo 1880-05-08 (div 1904) Cecil Francis William Fane, 1856-10-07 - 1914-01-30, #Cecil_Francis_William_Fane
+
+# ----
+#<https://www.wikidata.org/wiki/Q15994515>
+  # Sir Benjamin Hobhouse, 1st Baronet, 1757-03-29 - 1831-08-14
+  # 1st Baronet Hobhouse, of Broughton-Gifford, Bradford-on-Avon, and Monkton Farleigh, co. Wilts 1812-12-22
+  # oo Amelia Parry, d. 1880-01, daughter of Rev. Joshua Parry
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q15994515> , <#Amelia_Parry> ;
+	gen:startDate "1793-04-18" .
+
+<#Catherine_Hobhouse>
+  # Catherine Hobhouse, d. 1828-11-06
+  gen:father <https://www.wikidata.org/wiki/Q15994515> ;
+  gen:mother <#Amelia_Parry> .
+  # oo 1826-11-30 John William Fane, 1804-09-01 - 1875-11-19, https://www.wikidata.org/wiki/Q6232701
+
+# ----
+<#Charlotte_Broadhead>
+  # Charlotte Broadhead, d. 1855-05-19
+  gen:father <https://www.wikidata.org/wiki/Q20829505> .
+  # and Elizabeth Macdougall
+  # oo 1845-11-18 John William Fane, 1804-09-01 - 1875-11-19, https://www.wikidata.org/wiki/Q6232701
+
+# ----
+<https://www.wikidata.org/wiki/Q21453682>
+  # Henry Weigall, 1829 - 1925
+  gen:father <https://www.wikidata.org/wiki/Q36327640> .
+  # oo Lady Rose Sophia Mary Fane, d. 1921-02-14
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q21453682> , <https://www.wikidata.org/wiki/Q18527667> ;
+	gen:startDate "1866-08-15" .
+
+<https://www.wikidata.org/wiki/Q5553066>
+  # Gerald John Villiers Weigall, 1870-10-19 – 1944-05-17
+  gen:father <https://www.wikidata.org/wiki/Q21453682> ;
+  gen:mother <https://www.wikidata.org/wiki/Q18527667> .
+  # oo Josephine Harrison
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5553066> , <#Josephine_Harrison> ;
+	gen:startDate "1897" .
+<https://www.wikidata.org/wiki/Q633577>
+  # Sir William Ernest George Archibald Weigall, 1st Baronet, 1874-12-08 – 1952-06-03
+  # 1st Baronet Weigall of Woodhall Spa 1938
+  gen:father <https://www.wikidata.org/wiki/Q21453682> ;
+  gen:mother <https://www.wikidata.org/wiki/Q18527667> .
+  # oo Grace Emily Blundell Maple
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q633577> , <#Grace_Emily_Blundell_Maple> .
+
+<#Priscilla_Crystal_Frances_Blundell_Weigall>
+  # Priscilla Crystal Frances Blundell Weigall
+  gen:father <https://www.wikidata.org/wiki/Q633577> ;
+  gen:mother <#Grace_Emily_Blundell_Maple> .
+  # oo 1935-07-23 (div 1943) Edward Richard Assheton Penn Curzon, 6th Earl Howe, 1908-08-07 – 1984-05-29, https://www.wikidata.org/wiki/Q5342478
+# ----
+#<https://www.wikidata.org/wiki/Q5342478>
+  # Edward Richard Assheton Penn Curzon, 6th Earl Howe, 1908-08-07 – 1984-05-29
+  # oo Priscilla Crystal Frances Blundell Weigall
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5342478> , <#Priscilla_Crystal_Frances_Blundell_Weigall> ;
+	gen:startDate "1935-07-23" ;
+	gen:divorceDate "1943" .
+
+# ----
+<#Diana_Lister>
+  # Hon. Diana Lister, 1893-05-07 - 1983-12-03
+  gen:father <https://www.wikidata.org/wiki/Q7791871> .
+  # and Charlotte Monkton Tennant
+  # oo 1923-06-07 Vere Anthony Francis Fane, 14th Earl of Westmorland, 1893-03-25 – 1948-05-12, https://www.wikidata.org/wiki/Q7921177
+
+# ----
+#<https://www.wikidata.org/wiki/Q7528021>
+  # Sir John Ritchie Findlay of Aberlour, 1st Baronet, 1866-01-13 – 1930-04-13
+  # 1st Baronet Findlay of Aberlour in the County of Banff 1925
+  # oo Harriet Jane Backhouse, 1880-03-12 - 1954-07-24
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7528021> , <https://www.wikidata.org/wiki/Q5664125> ;
+	gen:startDate "1901-07-09" .
+
+<#Sir_Roland_Lewis_Findlay,_3rd_Baronet>
+  # Sir Roland Lewis Findlay, 3rd Baronet, 1903-07-14 - 1979-07-28
+  gen:father <https://www.wikidata.org/wiki/Q7528021> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5664125> .
+  # oo Barbara Joan Garrard, daughter of Harry Sebastian Garrard and May Cazenove
+  []
+    gen:spouse <#Sir_Roland_Lewis_Findlay,_3rd_Baronet> , <#Barbara_Joan_Garrard> ;
+	gen:startDate "1929-12-15" .
+
+<#Jane_Barbara_Findlay>
+  # Jane Barbara Findlay, 1928-09-25 - 2009-09-01
+  gen:father <#Sir_Roland_Lewis_Findlay,_3rd_Baronet> ;
+  gen:mother <#Barbara_Joan_Garrard> .
+  # oo 1950-06-20 David Anthony Thomas Fane, 15th Earl of Westmorland, 1924-03-31 – 1993-09-08, https://www.wikidata.org/wiki/Q5233540
+# ----
+#<https://www.wikidata.org/wiki/Q6272481>
+  # Sir Jonathan Edmund Backhouse, 1st Baronet, 1849-11-15 – 1918-07-27
+  # 1st Baronet Backhouse, of Uplands 1901-03-06
+  # oo Florence Salusbury-Trelawny, 1845 - 1902-10-11
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6272481> , <#Florence_Salusbury-Trelawny> ;
+	gen:startDate "1871-11-29" .
+
+<https://www.wikidata.org/wiki/Q5664125>
+  # Harriet Jane Backhouse, 1880-03-12 - 1954-07-24
+  gen:father <https://www.wikidata.org/wiki/Q6272481> ;
+  gen:mother <#Florence_Salusbury-Trelawny> .
+  # oo 1901-07-09 Sir John Ritchie Findlay of Aberlour, 1st Baronet, 1866-01-13 – 1930-04-13, https://www.wikidata.org/wiki/Q7528021
+# ----
+<#Florence_Salusbury-Trelawny>
+  # Florence Salusbury-Trelawny, 1845 - 1902-10-11
+  gen:father <https://www.wikidata.org/wiki/Q6256551> .
+  # and Harriet Jane Tremayne
+  # oo 1871-11-29 Sir Jonathan Edmund Backhouse, 1st Baronet, 1849-11-15 – 1918-07-27, https://www.wikidata.org/wiki/Q6272481
+
+# ----
+#<https://www.wikidata.org/wiki/Q19930919>
+  # Antonio de Salis-Soglio, 1649 – 1735
+  # oo Perpetua v. Planta-Zuoz
+
+<https://www.wikidata.org/wiki/Q19930898>
+  # Peter de Salis, 1st Comte de Salis, 1675-09-01 - 1749-11-14
+  gen:father <https://www.wikidata.org/wiki/Q19930919> .
+  # and Perpetua v. Planta-Zuoz
+  # oo Margaretha de Salis-Soglio, 1678 - 1747, daughter of Hercules de Salis-Soglio and Maria Magdalena de Salis-Seewis
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q19930898> , <#Margaretha_de_Salis-Soglio> ;
+	gen:startDate "1701-10-01" .
+
+<https://www.wikidata.org/wiki/Q6182512>
+  # Jerome de Salis, 2nd Comte de Salis, 1709-07-08 - 1794-08
+  gen:father <https://www.wikidata.org/wiki/Q19930898> ;
+  gen:mother <#Margaretha_de_Salis-Soglio> .
+  # oo Mary Fane, 1710-09 - 1785-03-31
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6182512> , <https://www.wikidata.org/wiki/Q19932204> ;
+	gen:startDate "1734-01-07" .
+
+# ----
+<#Elizabeth_Jane_Hall>
+  # Elizabeth Jane Hall, d. 1856-08-29
+  gen:father <https://www.wikidata.org/wiki/Q280479> .
+  # oo 1850b William Charles Chamberlain, 1818-04-21 – 1878-02-27, https://www.wikidata.org/wiki/Q12379240
+
+# ----
+<#Charlotte_Cuyler_Reid>
+  # Charlotte Cuyler Reid, d. 1896-12-26
+  gen:father <https://www.wikidata.org/wiki/Q3568904> .
+  # oo 1873-06-26 Sir Neville Bowles Chamberlain, 1820-01-10 – 1902-02-18, https://www.wikidata.org/wiki/Q1982244
+
+# ----
+<https://www.wikidata.org/wiki/Q5852556>
+  # Eva von Bülow-Wagner, 1867-02-17 – 1942-05-25~
+  gen:father <https://www.wikidata.org/wiki/Q1511> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75789> .
+  # oo 1908 Houston Stewart Chamberlain, 1855-09-09 – 1927-01-09, https://www.wikidata.org/wiki/Q57737
+
+# ----
+<https://www.wikidata.org/wiki/Q831742>
+  # Sir Horace George Montagu Rumbold, 9th Baronet, 1869-02-05 – 1941-05-24
+  gen:father <https://www.wikidata.org/wiki/Q7527276> .
+  # and Caroline Barney Harrington
+  # oo Etheldred Constantia Fane, d. 1964-10-23
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q831742> , <#Etheldred_Constantia_Fane> ;
+	gen:startDate "1905-07-18" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q15999537>
+  # Sir Charles John Fitz Roy Rhys Wingfield, 1877-02-18 - 1960-03-26
+  # son of Edward Rhys Wingfield
+  # and Edith Caroline Wood
+  # oo Lucy Evelyn Fane, 1876 - 1977
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q15999537> , <#Lucy_Evelyn_Fane> ;
+	gen:startDate "1905-03-07" .
