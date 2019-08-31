@@ -822,7 +822,7 @@
   gen:mother <#Lady_Elizabeth_Emma_Proby> .
   # oo Lady Margaret Frances Hely-Hutchinson, 1857-02-08 - 1937-03-02
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q5301898> , <#Lady_Margaret_Frances_Hely-Hutchinson> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q5301898> , <villiers.ttl#Lady_Margaret_Frances_Hely_Hutchinson> ;
 	gen:startDate "1882-07-06" .
 
 <https://www.wikidata.org/wiki/Q332813>
@@ -858,7 +858,7 @@
 <#Sir_Richard_George_Proby,_1st_Baronet> # -> Proby Baronets of Elton Hall
   # Sir Richard George Proby, 1st Baronet, 1886-07-21 - 1979-01-15
   gen:father <https://www.wikidata.org/wiki/Q5301898> ;
-  gen:mother <#Lady_Margaret_Frances_Hely-Hutchinson> .
+  gen:mother <villiers.ttl#Lady_Margaret_Frances_Hely_Hutchinson> .
 
 <#Lady_Mary_Cecilia_Rhodesia_Hamilton>
   # Lady Mary Cecilia Rhodesia Hamilton, 1896-01-21 - 1984-09-05
@@ -940,7 +940,7 @@
   # Sir Richard George Proby, 1st Baronet, 1886-07-21 - 1979-01-15
   # 1st Baronet Proby, of Elton Hall, co. Huntingdon 1952-01-30
   gen:father <https://www.wikidata.org/wiki/Q5301898> ;
-  gen:mother <#Lady_Margaret_Frances_Hely-Hutchinson> .
+  gen:mother <villiers.ttl#Lady_Margaret_Frances_Hely_Hutchinson> .
   # oo Betty Monica Murray, d. 1967-02-19, daughter of Alexander Henry Hallam Murray
   []
     gen:spouse <#Sir_Richard_George_Proby,_1st_Baronet> , <#Betty_Monica_Murray> ;
@@ -958,6 +958,11 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7528466> , <#Blanche_Harrison_Cripps> ;
 	gen:startDate "1944-01-15" .
+<#Mary_Proby>
+  # Mary Proby, 1913-10-06 - 1982-07-05~
+  gen:father <#Sir_Richard_George_Proby,_1st_Baronet> ;
+  gen:mother <#Betty_Monica_Murray> .
+  # oo 1949-07-28 William Morgan Fletcher-Vane, 1st Baron Inglewood, 1909-04-12 - 1989-06-22, https://www.wikidata.org/wiki/Q8009155
 
 <#Sir_William_Henry_Proby,_3rd_Baronet>
   # Sir William Henry Proby, 3rd Baronet, b. 1949-06-13
@@ -3528,13 +3533,29 @@
   gen:mother <#Selina_Louisa_Weld_Forester> .
   # oo 1887-02-22 Rt. Hon. William Slaney Kenyon-Slaney, 1847-08-24 - 1908-04-24, https://www.wikidata.org/wiki/Q2374406
 # ----
-#<https://www.wikidata.org/wiki/Q5056351>
+#<https://www.wikidata.org/wiki/Q26857642>
+  # Cecil Forester (d. 1774-08-22, son of William Forester and Catherine Brooke
+  # oo Anne Townshend, d. 1825-05-24, daughter of Robert Townshend
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q26857642> , <#Anne_Townshend> .
+
+<https://www.wikidata.org/wiki/Q5056351>
   # Cecil Weld Forester, 1st Baron Forester of Willey Park, 1767-04-07 - 1828-05-28
   # 1st Baron Forester of Willey Park, co. Shropshire 1821-07-17
+  gen:father <https://www.wikidata.org/wiki/Q26857642> ;
+  gen:mother <#Anne_Townshend> .
   # oo Lady Katherine Mary Manners, 1779-04-29 - 1829-05-01
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5056351> , <https://www.wikidata.org/wiki/Q50823986> ;
 	gen:startDate "1800-06-16" .
+<#Francis_Forester>
+  # Francis Forester, 1774-08-19 - 1861-10-21
+  gen:father <https://www.wikidata.org/wiki/Q26857642> ;
+  gen:mother <#Anne_Townshend> .
+  # oo Lady Louisa Catherine Barbara Vane, 1791-01-04 - 1821-01-08
+  []
+    gen:spouse <#Francis_Forester> , <fane.ttl#Lady_Louisa_Catherine_Barbara_Vane> ;
+	gen:startDate "1813-07-29" .
 
 <#Selina_Louisa_Weld_Forester>
   # Hon. Selina Louisa Weld Forester, d. 1894-11-25
@@ -3683,13 +3704,6 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q360808> , <#Louisa_Charlotte_Hamilton> ;
 	gen:startDate "1876-02-29" .
-
-# ----
-<#Lady_Margaret_Frances_Hely-Hutchinson>
-  # Lady Margaret Frances Hely-Hutchinson, 1857-02-08 - 1937-03-02
-  gen:father <https://www.wikidata.org/wiki/Q7326371> .
-  # and Thomasina Jocelyn Steele
-  # oo 1882-07-06 Douglas James Proby, 1856-09-23 – 1931-11-18, https://www.wikidata.org/wiki/Q5301898
 
 # ----
 <#Henry_William_Crichton,_Viscount_Crichton>
