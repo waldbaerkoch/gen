@@ -313,7 +313,7 @@
   gen:mother <#Georgiana_Charlotte_Emilia_Ward> .
   # oo Lady Amelia Elizabeth Parker, d. 1881-02-05
   []
-    gen:spouse <#William_Montgomerie,_of_Grey_Abbey_(died_1831)> , <#Lady_Amelia_Elizabeth_Parker> ;
+    gen:spouse <#William_Montgomerie,_of_Grey_Abbey_(died_1831)> , <fane.ttl#Lady_Amelia_Elizabeth_Parker> ;
 	gen:startDate "1817-03" .
 <#Arthur_Hill_Montgomerie>
   # Arthur Hill Montgomerie, d. 1867
@@ -321,13 +321,13 @@
   gen:mother <#Georgiana_Charlotte_Emilia_Ward> .
   # oo Lady Matilda Anna Parker, d. 1883-05-25
   []
-    gen:spouse <#Arthur_Hill_Montgomerie> , <#Lady_Matilda_Anna_Parker> ;
+    gen:spouse <#Arthur_Hill_Montgomerie> , <fane.ttl#Lady_Matilda_Anna_Parker> ;
 	gen:startDate "1825-05-26" .
 
 <#Hugh_Montgomerie,_of_Grey_Abbey_(died_1894)>
   # Hugh Montgomerie, of Grey Abbey, 1821-06-26 - 1894-05-29
   gen:father <#William_Montgomerie,_of_Grey_Abbey_(died_1831)> ;
-  gen:mother <#Lady_Amelia_Elizabeth_Parker> .
+  gen:mother <fane.ttl#Lady_Amelia_Elizabeth_Parker> .
   # oo Lady Charlotte Elizabeth Herbert, 1821 - 1906-05-15
   []
     gen:spouse <#Hugh_Montgomerie,_of_Grey_Abbey_(died_1894)> , <herbert.ttl#Lady_Charlotte_Elizabeth_Herbert> ;
@@ -498,32 +498,39 @@
   # oo 1793 Hugh Montgomery, 4th Earl of Mount Alexander, 1680~ - 1745-02-27, https://www.wikidata.org/wiki/Q5931983
 
 # ----
-#<https://www.wikidata.org/wiki/Q4893737>
+<https://www.wikidata.org/wiki/Q4893737>
   # Bernard Ward, 1st Viscount Bangor, 1719-08-18 - 1781-05-20
-  # oo Lady Ann Blighm, d. 1789-02-07
+  # 1st Baron Bangor, of Castle Ward, co. Down 1770-05-30
+  # 1st Viscount Bangor, of Castle Ward, co. Down 1781-01-11
+  gen:father <https://www.wikidata.org/wiki/Q6835213> .
+  # and Anne Catharina Hamilton
+  # oo Lady Ann Bligh, d. 1789-02-07
   []
     gen:spouse <https://www.wikidata.org/wiki/Q4893737> , <fitzgerald.ttl#Lady_Ann_Bligh> ;
 	gen:startDate "1747-12" .
 
+<https://www.wikidata.org/wiki/Q7350853>
+  # Hon. Robert Ward, 1754-07-14 - 1831-03
+  gen:father <https://www.wikidata.org/wiki/Q4893737> ;
+  gen:mother <fitzgerald.ttl#Lady_Ann_Bligh> .
+  # oo Sophia Frances Whaley, 1762~ - 1793, daughter of Richard Chapell Whaley and Anne Ward
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7350853> , <#Sophia_Frances_Whaley> ;
+	gen:startDate "1782" .
 <#Georgiana_Charlotte_Emilia_Ward>
   # Hon. Georgiana Charlotte Emilia Ward
   gen:father <https://www.wikidata.org/wiki/Q4893737> ;
   gen:mother <fitzgerald.ttl#Lady_Ann_Bligh> .
   # oo 1782 Rev. Hugh Montgomerie, of Grey Abbey, 1754 - 1815-03-30, #Hugh_Montgomerie,_of_Grey_Abbey_(died_1815)
 
-# ----
-#<#Thomas_Parker,_5th_Earl_of_Macclesfield>
-  # Thomas Parker, 5th Earl of Macclesfield, 1763-06-09 - 1850-03-31
-  # oo ??? Edwards, d. 1803-04-09, daughter of Lewis Edwards
-
-<#Lady_Amelia_Elizabeth_Parker>
-  # Lady Amelia Elizabeth Parker, d. 1881-02-05
-  gen:father <#Thomas_Parker,_5th_Earl_of_Macclesfield> .
-  # oo 1817-03 William Montgomerie, of Grey Abbey, d. 1831-05-03, #William_Montgomerie,_of_Grey_Abbey_(died_1831)
-<#Lady_Matilda_Anna_Parker>
-  # Lady Matilda Anna Parker, d. 1883-05-25
-  gen:father <#Thomas_Parker,_5th_Earl_of_Macclesfield> .
-  # oo 1825-05-26 Arthur Hill Montgomerie, d. 1867, #Arthur_Hill_Montgomerie
+<https://www.wikidata.org/wiki/Q5344450>
+  # Michael Edward Ward, 1789-02-05 - 1832-09-01
+  gen:father <https://www.wikidata.org/wiki/Q7350853> ;
+  gen:mother <#Sophia_Frances_Whaley> .
+  # oo Lady Matilda Stewart, d. 1842-10-03
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5344450> , <fane.ttl#Lady_Matilda_Stewart> ;
+	gen:startDate "1815-09-14" .
 
 # ====
 # butler.ttl:

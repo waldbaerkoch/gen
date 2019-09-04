@@ -788,7 +788,7 @@
   gen:mother <https://www.wikidata.org/wiki/Q3611688> .
   # oo Lady Maureen Helen Vane-Tempest-Stewart, 1900-12-06 - 1942-06-20
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q3497552> , <#Lady_Maureen_Helen_Vane-Tempest-Stewart> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q3497552> , <fane.ttl#Lady_Maureen_Helen_Vane-Tempest-Stewart> ;
 	gen:startDate "1920-11-04" .
 <#Frederick_Arthur_Stanley>
   # Frederick Arthur Stanley, 1905-03-03 - 1978-01-02
@@ -845,7 +845,7 @@
   gen:birthDate "1923-11-04" ;
   gen:deathDate "2004-03-12" ;
   gen:father <https://www.wikidata.org/wiki/Q3497552> ;
-  gen:mother <#Lady_Maureen_Helen_Vane-Tempest-Stewart> .
+  gen:mother <fane.ttl#Lady_Maureen_Helen_Vane-Tempest-Stewart> .
   # oo 1956-07-25 Sir John Robert Stratford Dugdale, 1923-05-10 – 1994-12-13, #Sir_John_Robert_Stratford_Dugdale
 
 <https://www.wikidata.org/wiki/Q5345408>
@@ -1829,25 +1829,6 @@
   # oo Guy XVI de Laval, 1476-10-01 - 1531-05-20, https://www.wikidata.org/wiki/Q3122216
 
 # ----
-#<https://www.wikidata.org/wiki/Q4798858>
-  # Sir Arthur Gorges, 1569~ - 1625-10-10
-  # oo Lady Elizabeth Clinton
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q4798858> , <#Lady_Elizabeth_Clinton> ;
-	gen:startDate "1597~" .
-
-<#Elizabeth_Gorges>
-  # Elizabeth Gorges, d. 1675-05~
-  gen:father <https://www.wikidata.org/wiki/Q4798858> ;
-  gen:mother <#Lady_Elizabeth_Clinton> .
-  # oo Sir Robert Stanley, of Brickills, d. 1632-06-03, https://www.wikidata.org/wiki/Q7349997
-# ----
-<#Lady_Elizabeth_Clinton>
-  # Lady Elizabeth Clinton
-  gen:father <https://www.wikidata.org/wiki/Q16859736> .
-  # oo 1597~ Sir Arthur Gorges, 1569~ - 1625-10-10, https://www.wikidata.org/wiki/Q4798858
-
-# ----
 #<#Sir_John_Portman,_1st_Baronet>
   #Sir John Portman, 1st Baronet, d. 1612-12-04
   # 1st Baronet Portman, of Orchard Portman, co. Somerset 1612-11-25
@@ -2037,13 +2018,13 @@
   # and Sidney Grosvenor
   # oo Elizabeth Spencer, b. 1640a
   []
-    gen:spouse <#Robert_Hesketh> , <spencer.ttl#Elizabeth_Spencer> .
+    gen:spouse <#Robert_Hesketh> , <spencer.ttl#Elizabeth_Spencer_(born_1640a)> .
 
 <#Elizabeth_Hesketh>
   # Elizabeth Hesketh, d. 1776-02-24
   gen:deathDate "1776-02-24" ;
   gen:father <#Robert_Hesketh> ;
-  gen:mother <spencer.ttl#Elizabeth_Spencer> .
+  gen:mother <spencer.ttl#Elizabeth_Spencer_(born_1640a)> .
   # oo 1714-09-14 Edward Stanley, 11th Earl of Derby, 1689-09-27 - 1776-02-22, https://www.wikidata.org/wiki/Q5345406
 
 # ----
@@ -2402,34 +2383,6 @@
   gen:mother <bingham.ttl#Lady_Augusta_Bingham> .
   # oo 1892-04-30 Henry Arthur Cadogan, Viscount Chelsea, 1868-06-13 - 1908-07-02, https://www.wikidata.org/wiki/Q9287820
 
-# --------
-#<https://www.wikidata.org/wiki/Q333368>
-  # Charles Stewart Henry Vane-Tempest-Stewart, 7th Marquess of Londonderry, 1878-05-13 - 1949-02-11
-  # oo 1899-11-28 Hon. Edith Helen Chaplin, 1879-12-03 - 1959-04-23
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q333368> , <https://www.wikidata.org/wiki/Q5338688> ;
-	gen:startDate "1899-11-28" .
-
-<#Lady_Maureen_Helen_Vane-Tempest-Stewart>
-  # Lady Maureen Helen Vane-Tempest-Stewart, 1900-12-06 - 1942-06-20
-  gen:father <https://www.wikidata.org/wiki/Q333368> ;
-  gen:mother <https://www.wikidata.org/wiki/Q5338688> .
-  # oo 1920-11-04 Rt. Hon. Oliver Frederick George Stanley, 1896-05-04 - 1950-12-10, https://www.wikidata.org/wiki/Q3497552
-# ----
-#<https://www.wikidata.org/wiki/Q5719311>
-  # Henry Chaplin, 1st Viscount Chaplin, 1840-12-22 - 1923-05-29
-  # 1st Viscount Chaplin, of St. Oswald's, Blankney, co. Lincoln 1916-06-20
-  # oo 1876-11-15 Lady Florence Sutherland-Leveson-Gower, 1855-04-17 - 1881-10-10
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q5719311> , <gower.ttl#Lady_Florence_Sutherland-Leveson-Gower> ;
-	gen:startDate "1876-11-15" .
-
-<https://www.wikidata.org/wiki/Q5338688>
-  # Hon. Edith Helen Chaplin, 1879-12-03 - 1959-04-23
-  gen:father <https://www.wikidata.org/wiki/Q5719311> ;
-  gen:mother <gower.ttl#Lady_Florence_Sutherland-Leveson-Gower> .
-  # oo 1899-11-28 Charles Stewart Henry Vane-Tempest-Stewart, 7th Marquess of Londonderry, 1878-05-13 - 1949-02-11, https://www.wikidata.org/wiki/Q333368
-
 # ----
 #<#William_Fellowes_Collins>
   # William Fellowes Collins, 1865-09-17 – 1948-02-15
@@ -2677,72 +2630,6 @@
   gen:father <https://www.wikidata.org/wiki/Q312593> .
   # and Anne Speke
   # oo 1798-01-20 John Baker-Holroyd, 1st Earl of Sheffield, 1735-12-21 - 1821-05-30, https://www.wikidata.org/wiki/Q6220354
-
-# ----
-<#Sir_Edward_Clinton>
-  # Sir Edward Clinton
-  gen:father <https://www.wikidata.org/wiki/Q16859736> .
-  # and Lady Catherine Hastings
-  # oo Mary Dighton
-
-<#Francis_Clinton>
-  # Francis Clinton
-  gen:father <#Sir_Edward_Clinton> .
-  # and Mary Dighton
-  # oo Priscilla Hill, daughter of John Hill
-
-<#Francis_Clinton,_6th_Earl_of_Lincoln>
-  # Francis Clinton, 6th Earl of Lincoln, 1635~ - 1693-08~
-  # 6th Earl of Lincoln 1692-11-25
-  gen:father <#Francis_Clinton> .
-  # and Priscilla Hill
-  # oo Susanna Penyston, d. 1720-09-23, daughter of Anthony Penyston
-  []
-    gen:spouse <#Francis_Clinton,_6th_Earl_of_Lincoln> , <#Susanna_Penyston> ;
-	gen:startDate "1683~" .
-
-<https://www.wikidata.org/wiki/Q5537983>
-  # Admiral George Clinton, 1686 - 1761-07-10
-  gen:father <#Francis_Clinton,_6th_Earl_of_Lincoln> ;
-  gen:mother <#Susanna_Penyston> .
-  # oo Anne Carle, d. 1761-08-05
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q5537983> , <#Anne_Carle> .
-
-<https://www.wikidata.org/wiki/Q450734>
-  # Sir Henry Clinton, 1730-04-16 - 1795-12-13
-  gen:father <https://www.wikidata.org/wiki/Q5537983> ;
-  gen:mother <#Anne_Carle> .
-  # oo Harriet Carter, d. 1772-08-29, daughter of Thomas Carter
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q450734> , <#Harriet_Carter> ;
-	gen:startDate "1767-02" .
-
-<https://www.wikidata.org/wiki/Q8011942>
-  # Sir William Henry Clinton, 1769-12-23 - 1846-02-15
-  gen:father <https://www.wikidata.org/wiki/Q450734> ;
-  gen:mother <#Harriet_Carter> .
-  # oo Hon. Louisa Dorothea Holroyd, d. 1854-05-14
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q8011942> , <#Louisa_Dorothea_Holroyd> ;
-	gen:startDate "1797-03-14" .
-
-<#Frederick_Clinton>
-  # Frederick Clinton, 1804-08-28 - 1870-11-09
-  gen:father <https://www.wikidata.org/wiki/Q8011942> ;
-  gen:mother <#Louisa_Dorothea_Holroyd> .
-  # oo Mary Margaret Montagu-Scott, 1807-02-05 - 1885-06-30
-  []
-    gen:spouse <#Frederick_Clinton> , <scott.ttl#Mary_Margaret_Montagu-Scott> ;
-	gen:startDate "1840-07-09" .
-# ----
-#<https://www.wikidata.org/wiki/Q50369015>
-  # Peter Carle
-
-<#Anne_Carle>
-  # oo Anne Carle, d. 1761-08-05
-  gen:father <https://www.wikidata.org/wiki/Q50369015> .
-
 
 # ====
 

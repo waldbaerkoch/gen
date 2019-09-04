@@ -787,11 +787,11 @@
   gen:father <https://www.wikidata.org/wiki/Q16230382> ;
   gen:mother <#Charlotte_MacDonnell,_3rd_Countess_of_Antrim> .
   # oo 1825-10-17 Rev. Hon. Frederic Bertie, 1793-02-12 - 1868-02-04, bertie.ttl#Frederic_Bertie
-<#Lady_Charlotte_Elizabeth_Kerr>
+<https://www.wikidata.org/wiki/Q64686648>
   # Lady Charlotte Elizabeth Kerr, 1811-01-31 - 1866-01-17
   gen:father <https://www.wikidata.org/wiki/Q16230382> ;
   gen:mother <#Charlotte_MacDonnell,_3rd_Countess_of_Antrim> .
-  # oo 1835-08-22 Sir George Robert Osborn, 6th Baronet, 1813-10-29 - 1892-01-11, #Sir_George_Osborn,_6th_Baronet
+  # oo 1835-08-22 Sir George Robert Osborn, 6th Baronet, 1813-10-29 - 1892-01-11, https://www.wikidata.org/wiki/Q64686642
 <#Hugh_Seymour_McDonnell,_4th_Earl_of_Antrim> # -> McDonnell of Antrim
   # Hugh Seymour McDonnell, 4th Earl of Antrim, 1812-08-07 - 1855-07-19
   gen:father <https://www.wikidata.org/wiki/Q16230382> ;
@@ -1306,7 +1306,7 @@
   gen:mother <#Charlotte_MacDonnell,_3rd_Countess_of_Antrim> .
   # oo Lady Laura Cecilia Parker, 1809 - 1883-01-26
   []
-    gen:spouse <#Hugh_Seymour_McDonnell,_4th_Earl_of_Antrim> , <#Lady_Laura_Cecilia_Parker> ;
+    gen:spouse <#Hugh_Seymour_McDonnell,_4th_Earl_of_Antrim> , <fane.ttl#Lady_Laura_Cecilia_Parker> ;
 	gen:startDate "1836-05-03" .
 <#Mark_McDonnell,_5th_Earl_of_Antrim>
   # Mark McDonnell, 5th Earl of Antrim, 1814-04-03 - 1869-12-19
@@ -1320,7 +1320,7 @@
 <#Lady_Helen_Laura_McDonnell>
   # Lady Helen Laura McDonnell, 1837-05-02 - 1922-03-17
   gen:father <#Hugh_Seymour_McDonnell,_4th_Earl_of_Antrim> ;
-  gen:mother <#Lady_Laura_Cecilia_Parker> .
+  gen:mother <fane.ttl#Lady_Laura_Cecilia_Parker> .
   # oo 1864-10-26 Sir Malcolm Mac Gregor of Mac Gregor, 4th Baronet, 1834-08-29 - 1879-08-31, #Sir_Malcolm_Mac_Gregor_of_Mac_Gregor,_4th_Baronet
 <https://www.wikidata.org/wiki/Q18195696>
   # William Randal McDonnell, 6th Earl of Antrim, 1851-01-08 - 1918-07-19
@@ -1336,7 +1336,7 @@
   gen:mother <#Jane_Emma_Hannah_Macan> .
   # oo Emily Fanny Dorothy Osborn, 1851-06-09 - 1925-07-12
   []
-    gen:spouse <#Mark_Henry_Horace_McDonnell> , <#Emily_Fanny_Osborn> ;
+    gen:spouse <#Mark_Henry_Horace_McDonnell> , <https://www.wikidata.org/wiki/Q64685851> ;
 	gen:startDate "1892-08-19" .
 <#Lady_Caroline_Elizabeth_McDonnell>
   # Lady Caroline Elizabeth McDonnell, 1853-11-23 - 1930-02-23
@@ -1636,13 +1636,26 @@
 	gen:startDate "1793-06-02" .
 
 # --------
-#<https://www.wikidata.org/wiki/Q16199143>
+<https://www.wikidata.org/wiki/Q16199143>
   # Sir Randal William Mac Donnell, 1st Marquess of Antrim, 1749-11-04 - 1791-07-29
+  # 6th Earl of Antrim, 6th Viscount Dunluce, co. Antrim 1775-10-13
+  # 1st Viscount Dunluce, 1st Earl of Antrim 1785-06-19
+  # 1st Marquess of Antrim 1789-08-18
+  gen:father <https://www.wikidata.org/wiki/Q8731696> ;
+  gen:mother <https://www.wikidata.org/wiki/Q21069484> .
   # oo Hon. Letitia Morres, d. 1801-12-07
   []
     gen:spouse <https://www.wikidata.org/wiki/Q16199143> , <ponsonby.ttl#Letitia_Morres> ;
 	gen:startDate "1774-07-03" .
 
+<#Anne_Katherine_Mac_Donnell,_2nd_Countess_of_Antrim>
+  gen:name "Anne Katherine Mac Donnell, 2nd Countess of Antrim"@en ;
+  gen:birthDate "1778-02-11" ;
+  gen:deathDate "1834-06-30" ;
+  # 2nd Viscountess Dunluce, 2nd Countess of Antrim, suo jure 1791-07-29
+  gen:father <https://www.wikidata.org/wiki/Q16199143> ;
+  gen:mother <ponsonby.ttl#Letitia_Morres> .
+  # oo 1799-04-25 Sir Henry Vane-Tempest, 2nd Baronet, 1771-01-25 - 1813-08-01, https://www.wikidata.org/wiki/Q7527218
 <#Charlotte_MacDonnell,_3rd_Countess_of_Antrim>
   gen:name "Charlotte MacDonnell, 3rd Countess of Antrim"@en ;
   gen:birthDate "1778-02-11" ;
@@ -1652,35 +1665,18 @@
   # oo 1799-07-18 Lord Mark Robert Kerr, 1776-11-12 - 1840-09-09, https://www.wikidata.org/wiki/Q16230382
 
 # ----
-#<https://www.wikidata.org/wiki/Q5083023>
-  # Charles Rodolph Trefusis, 19th Baron Clinton, 1791-11-09 - 1866-04-10
-  # oo Lady Elizabeth Georgiana Kerr, 1807-09-25 - 1871-03-19
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q5083023> , <#Lady_Elizabeth_Georgiana_Kerr> ;
-	gen:startDate "1831-10-25" .
-
-<#Walter_Rodolph_Trefusis>
-  # Hon. Walter Rodolph Trefusis, 1838-01-05 - 1885-12-03
-  gen:father <https://www.wikidata.org/wiki/Q5083023> ;
-  gen:mother <#Lady_Elizabeth_Georgiana_Kerr> .
-  # oo Lady Mary Charlotte Montagu Douglas Scott, 1851-08-06 - 1908-12-13
-  []
-    gen:spouse <#Walter_Rodolph_Trefusis> , <scott.ttl#Lady_Mary_Charlotte_Montagu_Douglas_Scott> ;
-	gen:startDate "1877-07-24" .
-
-<#Marion_Gertrude_Trefusis>
-  # Marion Gertrude Trefusis, 1882-08-03 - 1955-11-23
-  gen:father <#Walter_Rodolph_Trefusis> ;
-  gen:mother <scott.ttl#Lady_Mary_Charlotte_Montagu_Douglas_Scott> .
-  # oo 1905-12-02 Thomas William Coke, 4th Earl of Leicester of Holkham, 1880-07-09 – 1949-08-21, https://www.wikidata.org/wiki/Q7612491
-
-# ----
 #<https://www.wikidata.org/wiki/Q24288346>
   # Sir John Stuart Hepburn-Forbes of Invermay, 8th Baronet, 1804-09-25 - 1866-05-27
   # oo Lady Harriet Louise Anne Kerr, 1808-10-19 - 1884-04-24
   []
     gen:spouse <https://www.wikidata.org/wiki/Q24288346> , <#Lady_Harriet_Louise_Anne_Kerr> ;
 	gen:startDate "1834-06-13" .
+
+<#Harriet_Williamina_Hepburn-Forbes>
+  # Harriet Williamina Hepburn-Forbes, 1835-05-17 - 1869-07-04
+  gen:father <https://www.wikidata.org/wiki/Q24288346> ;
+  gen:mother <#Lady_Harriet_Louise_Anne_Kerr> .
+  # oo 1858-07-29 Charles Henry Rolle Hepburn-Stuart-Forbes-Trefusis, 20th Lord Clinton, 1834-03-02 – 1904-03-29, https://www.wikidata.org/wiki/Q5078989
 
 # ----
 <#Thomas_Hanmer>
@@ -1696,19 +1692,19 @@
   # oo 1839-10-22 Lord Charles Lennox Kerr, 1814-07-01 - 1898-03-15, #Lord_Charles_Lennox_Kerr
 
 # ----
-<#Sir_George_Osborn,_6th_Baronet>
+<https://www.wikidata.org/wiki/Q64686642>
   # Sir George Robert Osborn, 6th Baronet, 1813-10-29 - 1892-01-11
   gen:father <https://www.wikidata.org/wiki/Q7527980> .
   # and Augusta Frederica Louisa Valentina Davers
   # oo Lady Charlotte Elizabeth Kerr, 1811-01-31 - 1866-01-17
   []
-    gen:spouse <#Sir_George_Osborn,_6th_Baronet> , <#Lady_Charlotte_Elizabeth_Kerr> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q64686642> , <https://www.wikidata.org/wiki/Q64686648> ;
 	gen:startDate "1835-08-22" .
 
-<#Emily_Fanny_Osborn>
+<https://www.wikidata.org/wiki/Q64685851>
   # Emily Fanny Dorothy Osborn, 1851-06-09 - 1925-07-12
-  gen:father <#Sir_George_Osborn,_6th_Baronet> ;
-  gen:mother <#Lady_Charlotte_Elizabeth_Kerr> .
+  gen:father <https://www.wikidata.org/wiki/Q64686642> ;
+  gen:mother <https://www.wikidata.org/wiki/Q64686648> .
   # oo 1892-08-19 Hon. Mark Henry Horace McDonnell, 1852-08-18 - 1909-04-23, #Mark_Henry_Horace_McDonnell
 
 # ----
@@ -2023,22 +2019,6 @@
 	gen:startDate "2010-08" .
 
 # ----
-<#Thomas_Parker,_5th_Earl_of_Macclesfield>
-  # Thomas Parker, 5th Earl of Macclesfield, 1763-06-09 - 1850-03-31
-  gen:father <https://www.wikidata.org/wiki/Q7793012> .
-  # and Mary Heathcote
-  # oo Eliza Wolstenholme, 1781 - 1862-01-01, daughter of William Breton Wolstenholme
-  []
-    gen:spouse <#Thomas_Parker,_5th_Earl_of_Macclesfield> , <#Eliza_Wolstenholme> ;
-	gen:startDate "1807-03-19" .
-
-<#Lady_Laura_Cecilia_Parker>
-  # Lady Laura Cecilia Parker, 1809 - 1883-01-26
-  gen:father <#Thomas_Parker,_5th_Earl_of_Macclesfield> ;
-  gen:mother <#Eliza_Wolstenholme> .
-  # oo 1836-05-03 Hugh Seymour McDonnell, 4th Earl of Antrim, 1812-08-07 - 1855-07-19, #Hugh_Seymour_McDonnell,_4th_Earl_of_Antrim
-
-# ----
 #<#Sir_John_MacGregor_of_Mac_Gregor,_1st_Baronet>
   # Sir John Murray MacGregor of Mac Gregor, 1st Baronet, 1745-04-10 - 1822-06-28
   # 18th Chief of the Clan Gregor 1795
@@ -2098,22 +2078,6 @@
   gen:father <https://www.wikidata.org/wiki/Q745286> .
   # and Louisa Emily Anne Berkeley
   # oo 1833-11-14 Sir John Athol Bannatyne Mac Gregor of Mac Gregor, 3rd Baronet, 1810-01-20 - 1851-05-11, #Sir_John_Mac_Gregor_of_Mac_Gregor,_3rd_Baronet
-
-# ----
-#<https://www.wikidata.org/wiki/Q746464>
-  # Charles John Robert Hepburn-Stuart-Forbes-Trefusis, 21st Baron Clinton, 1863-01-18 - 1957-07-05
-  # oo Lady Jane Grey McDonnell, 1863-06-15 - 1953-08-27
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q746464> , <#Lady_Jane_Grey_McDonnell> ;
-	gen:startDate "1886-06-01" .
-
-<#Fenella_Hepburn-Stuart-Forbes-Trefusis>
-  gen:name "Hon. Fenella Hepburn-Stuart-Forbes-Trefusis"@en ;
-  gen:birthDate "1889-08-19" ;
-  gen:deathDate "1966-07-19" ;
-  gen:father <https://www.wikidata.org/wiki/Q746464> ;
-  gen:mother <#Lady_Jane_Grey_McDonnell> .
-  # oo 1914-09-29 John Herbert Bowes-Lyon, 1886-04-01 - 1930-02-07, https://www.wikidata.org/wiki/Q75411
 
 # ----
 #<https://www.wikidata.org/wiki/Q5075441>

@@ -2,6 +2,7 @@
 @prefix gen: <http://jjkoch.de/gen#> .
 @prefix wdata: <https://www.wikidata.org/wiki/> .
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 #<https://www.wikidata.org/wiki/Q3809147>
 #  gen:name "Sir John Cavendish"@en ;
@@ -1358,16 +1359,6 @@
 
 
 # ----
-<https://www.wikidata.org/wiki/Q7611501>
-  # John Fane, 7th Earl of Westmorland, 1686-03-24 - 1762-08-26
-  gen:father <https://www.wikidata.org/wiki/Q7921178> .
-  # and Rachel Bence
-  # oo Mary Cavendish, 1700-01-03 – 1778-07-29
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q7611501> , <#Mary_Cavendish> ;
-	gen:startDate "1716-08" .
-
-# ----
 #<https://www.wikidata.org/wiki/Q3101971>
   # George Townshend, 1st Marquess Townshend of Raynham, 1724-02-28 – 1807-09-14
   # 4th Baron Townshend of Lynn Regis, co. Norfolk, 6th Baronet Townshend, of Rainham, co. Norfolk, 4th Viscount Townshend of Raynham, co. Norfolk 1764-03-12
@@ -1593,6 +1584,11 @@
   gen:father <https://www.wikidata.org/wiki/Q8014327> ;
   gen:mother <howard.ttl#Lady_Caroline_Georgiana_Howard> .
   # oo 1865-08-03 Lord Edward Cavendish, 1838-01-28 - 1891-05-18, https://www.wikidata.org/wiki/Q337905
+<#Georgiana_Caroline_Lascelles>
+  # Georgiana Caroline Lascelles, d. 1911-02-02
+  gen:father <https://www.wikidata.org/wiki/Q8014327> ;
+  gen:mother <howard.ttl#Lady_Caroline_Georgiana_Howard> .
+  # oo 1852-07-20 Charles William Grenfell, 1823-03-17 – 1861-05-04, https://www.wikidata.org/wiki/Q5078425
 <#Walter_Richard_Lascelles>
   # Walter Richard Lascelles, 1837-10-30 - 1906-05-23
   gen:father <#Arthur_Lascelles> ;
@@ -2281,6 +2277,11 @@
   gen:father <#Sir_Henry_Lindsay_Bethune_of_Kilconquhar,_1st_Baronet> ;
   gen:mother <#Coutts_Trotter> .
   # oo 1856-04-29 John Thomas Campbell, #John_Thomas_Campbell
+<lindsay.ttl#Lady_Steuart_Bethune>
+  # 1848-11-07 Lady Steuart Bethune, d. 1904-03-05
+  gen:father <#Sir_Henry_Lindsay_Bethune_of_Kilconquhar,_1st_Baronet> ;
+  gen:mother <#Coutts_Trotter> .
+  # oo Hector John Graham-Toler, 3rd Earl of Norbury, 1810-09-17 - 1873-12-26, https://www.wikidata.org/wiki/Q44832045
 
 #<https://www.wikidata.org/wiki/Q5236632>
   # David Alexander Robert Lindsay, 28th Earl of Crawford, 1900-11-20 - 1975-12-13
@@ -2483,13 +2484,21 @@
   gen:mother <russell.ttl#Lady_Helena_Rawdon> .
   # oo Lady Margaret King, 1773 - 1835-01-29
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q7610018> , <fitzgerald.ttl#Lady_Margaret_King> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q7610018> , <https://www.wikidata.org/wiki/Q6759592> ;
 	gen:startDate "1791-09-12" .
 
+<#Edward_George_Moore>
+  # Rev. Hon. Edward George Moore, 1798-08-18 - 1876-02-08
+  gen:father <https://www.wikidata.org/wiki/Q7610018> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6759592> .
+  # oo Hon. Anne Matilda Trefusis, d. 1876-02-24
+  []
+    gen:spouse <#Edward_George_Moore> , <clinton.ttl#Anne_Matilda_Trefusis> ;
+	gen:startDate "1827-03-27" .
 <#Lady_Jane_Elizabeth_Moore>
   # Lady Jane Elizabeth Moore, d. 1847-09-05
   gen:father <https://www.wikidata.org/wiki/Q7610018> ;
-  gen:mother <fitzgerald.ttl#Lady_Margaret_King> .
+  gen:mother <https://www.wikidata.org/wiki/Q6759592> .
   # oo 1819-07-06 Rt. Hon. William Yates Peel, 1789-08-03 - 1858-06-01, https://www.wikidata.org/wiki/Q6107323
 
 # ----
@@ -2826,7 +2835,7 @@
   gen:mother <#Lady_Jane_Pratt> .
   # oo 1814-06-29 Lady Emily Jane Stewart, 1789 - 1865-10-18
   []
-    gen:spouse <#John_James> , <stuart.ttl#Lady_Emily_Jane_Stewart> ;
+    gen:spouse <#John_James> , <fane.ttl#Lady_Emily_Jane_Stewart> ;
 	gen:startDate "1814-06-29" .
 
 <https://www.wikidata.org/wiki/Q7965252>
@@ -2834,7 +2843,7 @@
   # 2nd Baronet James, of Langley Hall and Denford Court, co. Berks 1829
   # 1st Baron Northbourne of Betteshanger, co. Kent and of Jarrow Grange, co. Palatine of Durham 1884-11-05
   gen:father <#John_James> ;
-  gen:mother <stuart.ttl#Lady_Emily_Jane_Stewart> .
+  gen:mother <fane.ttl#Lady_Emily_Jane_Stewart> .
   # oo Sarah Caroline Ellison, 1812 - 1890-01-21, daughter of Cuthbert Ellison
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7965252> , <#Sarah_Caroline_Ellison> ;
@@ -2846,10 +2855,12 @@
   gen:mother <#Sarah_Caroline_Ellison> .
   # oo 1871-09-26 John Arthur Godley, 1st Baron Kilbracken, 1847-06-17 - 1932-06-27, https://www.wikidata.org/wiki/Q4798831
 # ----
-#<https://www.wikidata.org/wiki/Q4376484>
+<https://www.wikidata.org/wiki/Q4376484>
   # Charles Pratt, 1st Earl Camden, 1714-03-21 - 1794-04-18
   # 1st Baron Camden of Camden Place, in Chislehurst, co. Kent 1765-07-17
   # 1st Earl Camden, 1st Viscount Bayham of Bayham Abbey, co. Sussex 1786-05-13
+  gen:father <https://www.wikidata.org/wiki/Q6253333> .
+  # and Elizabeth Wilson
   # oo Elizabeth Jeffreys, 1725~ - 1779-12-10, daughter of Nicholas Jeffreys
   []
     gen:spouse <https://www.wikidata.org/wiki/Q4376484> , <#Elizabeth_Jeffreys> ;
@@ -2861,36 +2872,11 @@
   gen:mother <#Elizabeth_Jeffreys> .
   # oo 1780-04-25 Sir Walter James, 1st Baronet, 1759 - 1829, #Sir_Walter_James,_1st_Baronet
 <https://www.wikidata.org/wiki/Q50819243>
+  owl:sameAs <https://www.wikidata.org/wiki/Q61750833> ;
   # Lady Frances Pratt, 1751~ - 1833-01-18
   gen:father <https://www.wikidata.org/wiki/Q4376484> ;
   gen:mother <#Elizabeth_Jeffreys> .
-  # oo 1775-06-07 Robert Stewart, 1st Marquess of Londonderry, 1739-09-27 - 1821-04-08, https://www.wikidata.org/wiki/Q5192091
-# ----
-#<https://www.wikidata.org/wiki/Q5192091>
-  # Robert Stewart, 1st Marquess of Londonderry, 1739-09-27 - 1821-04-08
-  # 1st Baron Londonderry 1789-09-20
-  # 1st Viscount Castlereagh, 1795-10-01
-  # 1st Earl of Londonderry 1796-08-08
-  # 1st Marquess of Londonderry 1816-03-03
-  # oo Lady Sarah Frances Seymour, 1747-09-17 - 1770-07-18
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q5192091> , <seymour.ttl#Lady_Sarah_Frances_Seymour-Conway> ;
-	gen:startDate "1766-06-03" .
-  # oo Lady Frances Pratt, 1751~ - 1833-01-18
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q5192091> , <https://www.wikidata.org/wiki/Q50819243> ;
-	gen:startDate "1775-06-07" .
-
-<stuart.ttl#Lady_Frances_Anne_Stewart>
-  # Lady Frances Anne Stewart, 1777-06-24 - 1810-02-09
-  gen:father <https://www.wikidata.org/wiki/Q5192091> ;
-  gen:mother <https://www.wikidata.org/wiki/Q50819243> .
-  # oo 1799-03-10 Lord Charles FitzRoy, 1764-07-17 - 1829-12-20, https://www.wikidata.org/wiki/Q6679043
-<stuart.ttl#Lady_Emily_Jane_Stewart>
-  # Lady Emily Jane Stewart, 1789 - 1865-10-18
-  gen:father <https://www.wikidata.org/wiki/Q5192091> ;
-  gen:mother <https://www.wikidata.org/wiki/Q50819243> .
-  # oo 1814-06-29 John James, d. 1818-06-04, seymour.ttl#John_James
+  # oo 1775-06-07 Robert Stewart, 1st Marquess of Londonderry, 1739-09-27 - 1821-04-06/-08, https://www.wikidata.org/wiki/Q5192091
 
 # ----
 #<https://www.wikidata.org/wiki/Q6130471>
@@ -3092,6 +3078,11 @@
   gen:father <https://www.wikidata.org/wiki/Q6239618> ;
   gen:mother <#Elizabeth_de_Vere> .
   # oo 1653-07~ Sir John Lort, 2nd Baronet, 1637?–1678, son of Sir Roger Lort, 1st Baronet (1607/8 – 1664, 1st Baronet of Stackpoole Court 1662, https://www.wikidata.org/wiki/Q18535773) and oo Jane Wyndham (d. 1692b, daughter of Humphrey Wyndham)
+<#Lady_Anne_Holles>
+  # Lady Anne Holles, d. 1707-10
+  gen:father <https://www.wikidata.org/wiki/Q6239618> ;
+  gen:mother <#Elizabeth_de_Vere> .
+  # oo 1652-03-30~ Edward Clinton, Lord Clinton, 1624-12-30 - 1657-04-21b, https://www.wikidata.org/wiki/Q5342325
 <#Lady_Elizabeth_Holles>
   # Lady Elizabeth Holles
   gen:father <https://www.wikidata.org/wiki/Q6239618> ;
