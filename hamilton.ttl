@@ -2953,7 +2953,7 @@
   gen:mother <#Hannah_Howard> .
   # oo 1768-04-04 Jane Maitland, 1748-12-21 - 1817, daughter of Captain Thomas Maitland
 <https://www.wikidata.org/wiki/Q18603644>
-  # Jane Elizabeth Leslie, Countess of Rothes, 1750-05-05 - 1810-06-02
+  # Jane Elizabeth Leslie, 12th Countess of Rothes, 1750-05-05 - 1810-06-02
   # 12th Countess of Rothes , 12th Lady Leslie 1773-07-18
   gen:father <https://www.wikidata.org/wiki/Q6244627> ;
   gen:mother <#Hannah_Howard> .
@@ -3229,19 +3229,35 @@
 
 # --------
 <https://www.wikidata.org/wiki/Q6131858>
+  # James Craggs the Elder, 1657 – 1721-03-16
   gen:father <#Anthony_Craggs_of_Holbeck,_Durham> .
 <#Elizabeth_Richards>
   gen:father <https://www.wikidata.org/wiki/Q47005469> .
 
 <https://www.wikidata.org/wiki/Q6131860>
+  # James Craggs the Younger, 1686-04-09 – 1721-02-16
   gen:father <https://www.wikidata.org/wiki/Q6131858> ;
   gen:mother <#Elizabeth_Richards> .
 
 <#Harriet_Craggs>
   # Harriet Craggs, 1713~ - 1769-02-01
   gen:father <https://www.wikidata.org/wiki/Q6131860> ;
-  gen:mother <https://www.wikidata.org/wiki/Q5746320>.
+  gen:mother <https://www.wikidata.org/wiki/Q5746320> . # Hester Santlow, 1690~ – 1773
+  # oo 1726-03-04 Richard Eliot, 1694 - 1748-11-19 https://www.wikidata.org/wiki/Q28802397
   # oo 1749-10-13 Hon. John Hamilton, 1714~ - 1755-12-18, https://www.wikidata.org/wiki/Q3809311
+# ----
+#<https://www.wikidata.org/wiki/Q28802397>
+  # Richard Eliot, 1694 - 1748-11-19
+  # oo Harriet Craggs, 1713~ - 1769-02-01
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q28802397> , <#Harriet_Craggs> ;
+	gen:startDate "1726-03-04" .
+
+<#Elizabeth_Eliot>
+  # Elizabeth Eliot, d. 1771-01-01
+  gen:father <https://www.wikidata.org/wiki/Q28802397> ;
+  gen:mother <#Harriet_Craggs> .
+  # oo 1759-08-08 Charles Cocks, 1st Lord Sommers, Baron of Evesham (1725-06-29 – 1806-01-30, https://www.wikidata.org/wiki/Q5076351
 
 # ----
 <#Elizabeth_Onslow>
@@ -4363,13 +4379,110 @@
 	gen:startDate "1855-07-21" .
 
 # ----
-#<https://www.wikidata.org/wiki/Q14945452>
+<#George_Raymond_Evelyn>
+  # George Raymond Evelyn, d. 1770-12-23
+  gen:father <https://www.wikidata.org/wiki/Q26857649> . # William Glanville
+  # and Bridget Raymond, daughter of Hugh Raymond
+  # oo Jane Elizabeth Leslie, 12th Countess of Rothes, 1750-05-05 - 1810-06-02
+  []
+    gen:spouse <#George_Raymond_Evelyn> , <https://www.wikidata.org/wiki/Q18603644> ;
+	gen:startDate "1766-01-02" .
+
+<#George_William_Evelyn-Leslie,_13th_Earl_of_Rothes>
+  # George William Evelyn-Leslie, 13th Earl of Rothes, 1768-03-28 - 1817
+  # 13th Earl of Rothes, 13th Lord Leslie 1810
+  gen:father <leslie.ttl#George_Raymond_Evelyn> ;
+  gen:mother <https://www.wikidata.org/wiki/Q18603644> .
+  # oo Hon. Henrietta Anne Pelham, d. 1797
+  []
+    gen:spouse <#George_William_Evelyn-Leslie,_13th_Earl_of_Rothes> , <pelham.ttl#Henrietta_Anne_Pelham> ;
+	gen:startDate "1789-05-24" .
+
+<#Henrietta_Anne_Evelyn-Leslie,_14th_Countess_of_Rothes>
+  # Henrietta Anne Evelyn-Leslie, 14th Countess of Rothes, 1790-12-26 - 1819-01-30
+  gen:father <#George_William_Evelyn-Leslie,_13th_Earl_of_Rothes> ;
+  gen:mother <pelham.ttl#Henrietta_Anne_Pelham> .
+  # oo 1806 George Leslie, d. 1829-03-24, #George_Leslie
+# ----
+#<#George_Leslie>
+  # George Leslie, d. 1829-03-24
+  # oo Henrietta Anne Evelyn-Leslie, 14th Countess of Rothes, 1790-12-26 - 1819-01-30
+  []
+    gen:spouse <#George_Leslie> , <#Henrietta_Anne_Evelyn-Leslie,_14th_Countess_of_Rothes> ;
+	gen:startDate "1806" .
+
+<#Lady_Anna_Maria_Leslie>
+  # Lady Anna Maria Leslie, 1815-07-19 - 1897-02-18
+  gen:father <#George_Leslie> ;
+  gen:mother <#Henrietta_Anne_Evelyn-Leslie,_14th_Countess_of_Rothes> .
+  # oo 1835-01-06 Rev. Henry Hugh Courtenay, 13th Earl of Devon, 1811-07-15 - 1904-01-29, https://www.wikidata.org/wiki/Q25984337
+
+# ----
+#<#William_Pepys>
+  # William Pepys, 1698-10-03 - 1743-09
+  # oo Susanna ???, d. 1742b
+  []
+    gen:spouse <#William_Pepys> , <#Susanna_???> ;
+	gen:startDate "1735-01-15" .
+  # oo Hannah Russell, d. 1760-07-29a/1761-11-08b, daughter of Dr. Richard Russell
+  []
+    gen:spouse <#William_Pepys> , <#Hannah_Russell> ;
+	gen:startDate "1742b" .
+
+<https://www.wikidata.org/wiki/Q18672957>
+  # Sir William Weller Pepys, 1st Baronet, 1741-01-01 - 1825-06-02
+  # 1st Baronet Pepys, of Wimpole Street 1801-06-23
+  gen:father <#William_Pepys> ;
+  gen:mother <#Susanna_???> .
+  # oo Elizabeth Dowdeswell, d. 1830-10-21
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q18672957> , <#Elizabeth_Dowdeswell> ;
+	gen:startDate "1777-06-24" .
+<https://www.wikidata.org/wiki/Q14945452>
   # Sir Lucas Pepys, 1st Baronet, 1742-05-24 - 1830-06-17
-  # 1st Baronet Pepys 1784
+  # 1st Baronet Pepys, of Brook Street 1784-01-22
+  gen:father <#William_Pepys> ;
+  gen:mother <#Hannah_Russell> .
   # oo Jane Elizabeth Leslie, 12th Countess of Rothes, 1750-05-05 - 1810-06-02
   []
     gen:spouse <https://www.wikidata.org/wiki/Q14945452> , <https://www.wikidata.org/wiki/Q18603644> ;
 	gen:startDate "1772-10-30" .
+
+<https://www.wikidata.org/wiki/Q4670298>
+  # Charles Christopher Pepys, 1st Earl of Cottenham, 1781-04-29 – 1851-04-29
+  # 1st Baron Cottenham, of Cottenham, co. Cambridge 1836-01-20
+  # 3rd Baronet Pepys [U.K., 1801] 1845-10-05
+  # 4th Baronet Pepys [G.B., 1784] 1849-07-08
+  # 1st Viscount Crowhurst, of Crowhurst, co. Surrey, 1st Earl of Cottenham 1850-06-11
+  gen:father <https://www.wikidata.org/wiki/Q18672957> ;
+  gen:mother <#Elizabeth_Dowdeswell> .
+  # oo Caroline Elizabeth Wingfield, 1801-11-02 - 1868-04-06
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4670298> , <https://www.wikidata.org/wiki/Q64686637> ;
+	gen:startDate "1821-06-30" .
+<#Henrietta_Leslie_Pepys>
+  # Henrietta Leslie Pepys, 1777-06-01 - 1839-12-16
+  gen:father <https://www.wikidata.org/wiki/Q14945452> ;
+  gen:mother <https://www.wikidata.org/wiki/Q18603644> .
+  # oo William Courtenay, 10th Earl of Devon, 1777-06-19 – 1859-03-19, https://www.wikidata.org/wiki/Q8007167
+
+<#Lady_Evelyn_Pepys>
+  # Lady Evelyn Pepys, 1839-01-19 - 1910-10-07
+  gen:father <https://www.wikidata.org/wiki/Q4670298> ;
+  gen:mother <https://www.wikidata.org/wiki/Q64686637> .
+  # oo 1862-06-12 Henry Reginald Courtenay, Lord Courtenay, 1836-01-20 - 1898-05-27, courtenay.ttl#Henry_Reginald_Courtenay,_Lord_Courtenay
+
+# ----
+<#Elizabeth_Dowdeswell>
+  # Elizabeth Dowdeswell, d. 1830-10-21
+  gen:father <https://www.wikidata.org/wiki/Q2484094> .
+  # oo 1777-06-24 Sir William Weller Pepys, 1st Baronet, 1741-01-01 - 1825-06-02, https://www.wikidata.org/wiki/Q18672957
+# ----
+<https://www.wikidata.org/wiki/Q64686637>
+  # Caroline Elizabeth Wingfield, 1801-11-02 - 1868-04-06
+  gen:father <https://www.wikidata.org/wiki/Q8020473> .
+  # and Lady Charlotte Maria Digby
+  # oo 1821-06-30 Charles Christopher Pepys, 1st Earl of Cottenham, 1781-04-29 – 1851-04-29, https://www.wikidata.org/wiki/Q4670298
 
 # ----
 #<https://www.wikidata.org/wiki/Q3638242>
