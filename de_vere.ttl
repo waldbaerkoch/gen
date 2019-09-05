@@ -1,0 +1,934 @@
+@base <de_vere.ttl> .
+@prefix gen: <http://jjkoch.de/gen#> .
+@prefix wdata: <https://www.wikidata.org/wiki/> .
+@prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+#<https://www.wikidata.org/wiki/Q4329885>
+  # Aubrey de Vere, 1040b - 1112~
+  # oo Beatrice ???
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4329885> , <https://www.wikidata.org/wiki/Q61764396> .
+
+<https://www.wikidata.org/wiki/Q434657>
+  # Aubrey de Vere II, 1080a - 1141-05-15
+  gen:father <https://www.wikidata.org/wiki/Q4329885> ;
+  gen:mother <https://www.wikidata.org/wiki/Q61764396> .
+  # oo Alice fitz Gilbert, 1092 - 1162
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q434657> , <https://www.wikidata.org/wiki/Q61764401> .
+
+<https://www.wikidata.org/wiki/Q3439788>
+  # Aubrey de Vere, 1st Earl of Oxford, 1110 - 1194-12-26
+  # 1st Earl of Oxford 1142
+  gen:father <https://www.wikidata.org/wiki/Q434657> ;
+  gen:mother <https://www.wikidata.org/wiki/Q61764401> .
+  # oo Beatrice de Guises, daughter of Henry, Comte de Guises
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3439788> , <#Beatrice_de_Guises> ;
+	gen:startDate "1139 divorced 1146~" .
+  # oo Eufeme de Cauntelo, d. 1153a/1154b, daughter of William de Cauntelo
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3439788> , <#Eufeme_de_Cauntelo> ;
+	gen:startDate "1152b" .
+  # oo Agnes of Essex, 1151~ - 1212~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3439788> , <https://www.wikidata.org/wiki/Q4693146> ;
+	gen:startDate "1163~" .
+<https://www.wikidata.org/wiki/Q7359735>
+  # Rohese de Vere, 1110~ - 1170~
+  gen:father <https://www.wikidata.org/wiki/Q434657> ;
+  gen:mother <https://www.wikidata.org/wiki/Q61764401> .
+  # oo Geoffrey de Mandeville, 1st Earl of Essex, 1092 - 1144-09, https://www.wikidata.org/wiki/Q936911
+  # oo Payn de Beauchamp, lord of Bedford
+<https://www.wikidata.org/wiki/Q2581169>
+  # William de Vere, Bishop of Hereford, 1120 - 1198
+  # Bishop of Hereford 1186-05-25
+  gen:father <https://www.wikidata.org/wiki/Q434657> ;
+  gen:mother <https://www.wikidata.org/wiki/Q61764401> .
+<https://www.wikidata.org/wiki/Q61911672>
+  # Juliane de Vere, d. 1199~
+  gen:father <https://www.wikidata.org/wiki/Q434657> ;
+  gen:mother <https://www.wikidata.org/wiki/Q61764401> .
+  # oo Hugh Bigod, 1st Earl of Norfolk, 1095 - 1177-03-09b, https://www.wikidata.org/wiki/Q2424672
+
+<https://www.wikidata.org/wiki/Q4819209>
+  # Aubrey de Vere, 2nd Earl of Oxford, 1163~ - 1214
+  gen:father <https://www.wikidata.org/wiki/Q3439788> ;
+  gen:mother <https://www.wikidata.org/wiki/Q4693146> .
+  # oo Isabel de Bolebec, d. 1206/1207
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4819209>, <#Isabel_de_Bolebec> ;
+	gen:startDate "1206b" .
+  # oo Alice Bigod of Norfolk, d. 1214a
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4819209>, <#Alice_Bigod_of_Norfolk> ;
+	gen:startDate "1207a" .
+<https://www.wikidata.org/wiki/Q7351441>
+  owl:sameAs <https://www.wikidata.org/wiki/Q23061332> ;
+  # Robert de Vere, 3rd Earl of Oxford, 1165a - 1221-10-25b
+  gen:father <https://www.wikidata.org/wiki/Q3439788> ;
+  gen:mother <https://www.wikidata.org/wiki/Q4693146> .
+  # oo Isabel de Bolebec, 1165 - 1245-02-03
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7351441> , <https://www.wikidata.org/wiki/Q6077812> ;
+	gen:startDate "1207" .
+
+<https://www.wikidata.org/wiki/Q1412613>
+  # Hugh de Vere, 4th Earl of Oxford, 1208 - 1263-12
+  gen:father <https://www.wikidata.org/wiki/Q7351441> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6077812> .
+  # oo Hawise de Quincy
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1412613> , <#Hawise_de_Quincy> ;
+	gen:startDate "1223-02-11a" .
+
+<https://www.wikidata.org/wiki/Q673774>
+  # Robert de Vere, 5th Earl of Oxford, 1240~ - 1296-09-07
+  gen:father <https://www.wikidata.org/wiki/Q1412613> ;
+  gen:mother <#Hawise_de_Quincy> .
+  # oo Alice de Sanford, daughter of Gilbert de Sandford and Loretta ???
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q673774> , <#Alice_de_Sanford> ;
+	gen:startDate "1252-02-22b" .
+<#Lady_Isabel_de_Vere>
+  # Lady Isabel de Vere, d. 1299a
+  gen:father <https://www.wikidata.org/wiki/Q1412613> ;
+  gen:mother <#Hawise_de_Quincy> .
+  # oo John de Courtenay, of Okehampton, d. 1274-05-03, courtenay.ttl#John_de_Courtenay
+
+<https://www.wikidata.org/wiki/Q7351443>
+  # Robert de Vere, 6th Earl of Oxford, 1257-06-24 - 1331-04-17
+  gen:father <https://www.wikidata.org/wiki/Q673774> ;
+  gen:mother <#Alice_de_Sanford> .
+  # oo Margaret de Mortimer, d. 1296~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7351443> , <#Margaret_de_Mortimer> .
+<#Hugh_de_Vere_(died_1319)>
+  # Sir Hugh de Vere, 1st Lord de Vere, 1259-03 - 1319-05-22a
+  gen:father <https://www.wikidata.org/wiki/Q673774> ;
+  gen:mother <#Alice_de_Sanford> .
+  # oo Denise de Munchensy, daughter and heiress of Sir William de Munchensy
+<https://www.wikidata.org/wiki/Q28927515>
+  # Sir Alphonse de Vere, 1257a - 1328-12-20b
+  gen:father <https://www.wikidata.org/wiki/Q673774> ;
+  gen:mother <#Alice_de_Sanford> .
+  # oo Joan Foliot, daughter of Sir Jordan Foliot, Lord Foliot
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q28927515> , <#Joan_Foliot> .
+<#Joan_de_Vere>
+  # Joan de Vere, d. 1293-11-23~
+  gen:father <https://www.wikidata.org/wiki/Q673774> ;
+  gen:mother <#Alice_de_Sanford> .
+  # oo 1285-06~ William de Warenne, 1256-02-09 - 1286-12-15, https://www.wikidata.org/wiki/Q16863340
+
+<#Sir_Thomas_de_Vere>
+  # Sir Thomas de Vere, 1282~ - 1329-05-12b
+  gen:father <https://www.wikidata.org/wiki/Q7351443> ;
+  gen:mother <#Margaret_de_Mortimer> .
+  # oo Agnes de Ros, daughter of William de Ros
+  []
+    gen:spouse <#Sir_Thomas_de_Vere>, <#Agnes_de_Ros> ;
+	gen:startDate "1315-06-17b" .
+<https://www.wikidata.org/wiki/Q3390008>
+  # John de Vere, 7th Earl of Oxford, 1312-03-12 - 1360-01-23/-24
+  gen:father <https://www.wikidata.org/wiki/Q28927515> ;
+  gen:mother <#Joan_Foliot> .
+  # oo Maud de Badlesmere, 1310 - 1366-05-24
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3390008> , <https://www.wikidata.org/wiki/Q6792272> ;
+	gen:startDate "1336-03-27b" .
+
+<#John_de_Vere_(died_1350)>
+  # John de Vere, 1335-12~ - 1350-06-23b
+  gen:father <https://www.wikidata.org/wiki/Q3390008> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6792272> .
+  # oo Lady Elizabeth de Courtenay, 1333 - 1395-08-07
+  []
+    gen:spouse <#John_de_Vere_(died_1350)> , <https://www.wikidata.org/wiki/Q18576132> ;
+	gen:startDate "1341-07~" .
+<https://www.wikidata.org/wiki/Q3390508>
+  gen:name "Thomas de Vere, 8th Earl of Oxford"@en ;
+  gen:birthDate "1336~" ;
+  gen:deathDate "1371-09" ;
+  gen:father <https://www.wikidata.org/wiki/Q3390008> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6792272> .
+  # oo Maud de Ufford, 1345 - 1413-01-25
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3390508> , <https://www.wikidata.org/wiki/Q6729515> ;
+	gen:startDate "1350-06-10" .
+<https://www.wikidata.org/wiki/Q2870639>
+  # Aubrey de Vere, 10th Earl of Oxford, 1338~ - 1400-02-15
+  gen:father <https://www.wikidata.org/wiki/Q3390008> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6792272> .
+  # oo Alice FitzWalter, d. 1401-04-29
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2870639> , <percy.ttl#Alice_FitzWalter> .
+<https://www.wikidata.org/wiki/Q5363798>
+  # Elizabeth de Vere, d. 1375-08-14/-16/-09-23
+  gen:father <https://www.wikidata.org/wiki/Q3390008> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6792272> .
+  # oo 1341-09-03b Sir Hugh Courtenay, 1327-03-22 - 1348, https://www.wikidata.org/wiki/Q2783494
+  # oo 1351-05-04b John de Mowbray, 3rd Baron Mowbray, 1310-11-29 - 1361-10-04, https://www.wikidata.org/wiki/Q6265601
+<https://www.wikidata.org/wiki/Q16207660>
+  # Margaret de Vere, d. 1398-06-16
+  gen:father <https://www.wikidata.org/wiki/Q3390008> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6792272> .
+  # oo Henry de Beaumont, 3rd Baron Beaumont, d. 1369-07-25, #Henry_de_Beaumont,_3rd_Baron_Beaumont
+  # oo 1369a Sir Nicholas de Loveyne, d. 1375-09-24, https://www.wikidata.org/wiki/Q16829072
+  # oo 1379b John Devereux, 1st Baron Devereux, 1337 - 1393-02-22, https://www.wikidata.org/wiki/Q6229279
+
+<https://www.wikidata.org/wiki/Q352566>
+  # Robert de Vere, Duke of Ireland, 9th Earl of Oxford, 1362-01-16 - 1392-11-22
+  # 9th Earl of Oxford 1371-09 - 1388
+  # 1st Marquess of Dublin 1385-12-01 - 1388
+  # 1st Duke of Ireland 1386-10-13 - 1388
+  gen:father <https://www.wikidata.org/wiki/Q3390508> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6729515> .
+  # oo Philippa de Coucy, 1367 - 1411-10~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q352566> , <https://www.wikidata.org/wiki/Q7184743> ;
+	gen:startDate "1376-10-05b" ;
+	gen:divorceDate "1387" .
+  # oo Agnes de Launcekrona
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q352566> , <https://www.wikidata.org/wiki/Q4693136> ;
+	gen:startDate "1387a" ;
+	gen:annulledDate "1398" .
+<https://www.wikidata.org/wiki/Q659733>
+  # Richard de Vere, 11th Earl of Oxford, 1385-08-15 - 1417-02-15
+  gen:father <https://www.wikidata.org/wiki/Q2870639> ;
+  gen:mother <percy.ttl#Alice_FitzWalter> .
+  # oo Lady Alice de Holand, 1392~ - 1406~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q659733> , <#Lady_Alice_de_Holand> ;
+	gen:startDate "1400b" .
+  # oo Alice Serjeaux, d. 1452-05-18
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q659733> , <fitzalan.ttl#Alice_Sergeaux> ;
+	gen:startDate "1406a" .
+
+<https://www.wikidata.org/wiki/Q3441095>
+  # John de Vere, 12th Earl of Oxford, 1408-04-23 - 1462-02-26
+  gen:father <https://www.wikidata.org/wiki/Q659733> ;
+  gen:mother <fitzalan.ttl#Alice_Sergeaux> .
+  # oo Elizabeth Howard, 1410~ - 1473/1474
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3441095> , <howard.ttl#Elizabeth_Howard_(died_1473)> ;
+	gen:startDate "1425" .
+<#Sir_Robert_de_Vere>
+  # Sir Robert de Vere, d. 1455
+  gen:father <https://www.wikidata.org/wiki/Q659733> ;
+  gen:mother <fitzalan.ttl#Alice_Sergeaux> .
+  # oo Joan Courtenay
+  []
+    gen:spouse <#Sir_Robert_de_Vere> , <courtenay.ttl#Joan_Courtenay> .
+
+<https://www.wikidata.org/wiki/Q26260198>
+  # Sir Aubrey de Vere, d. 1462-02-20
+  gen:father <https://www.wikidata.org/wiki/Q3441095> ;
+  gen:mother <howard.ttl#Elizabeth_Howard_(died_1473)> .
+  # oo Lady Anne Stafford, 1446 - 1472-04-14~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q26260198> , <talbot.ttl#Lady_Anne_Stafford> ;
+	gen:startDate "1460-04" .
+<https://www.wikidata.org/wiki/Q1332495>
+  # John de Vere, 13th Earl of Oxford, 1442-09-08 - 1513-03-10
+  gen:father <https://www.wikidata.org/wiki/Q3441095> ;
+  gen:mother <howard.ttl#Elizabeth_Howard_(died_1473)> .
+  # oo Lady Margaret Neville, d. 1506-11-20a
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1332495> , <neville.ttl#Lady_Margaret_Neville_(died_1506)> ;
+	gen:startDate "1506b" .
+  # oo Elizabeth Scrope, d. 1537-06-26
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1332495> , <#Elizabeth_Scrope> ;
+	gen:startDate "1508-11-28a/1509-04-10b" .
+<#Sir_George_de_Vere>
+  # Sir George de Vere, d. 1503
+  gen:father <https://www.wikidata.org/wiki/Q3441095> ;
+  gen:mother <howard.ttl#Elizabeth_Howard_(died_1473)> .
+  # oo Margaret Talbot
+  []
+    gen:spouse <#Sir_George_de_Vere> , <talbot.ttl#Margaret_Talbot> ;
+	gen:startDate "1459" .
+  # oo Margaret Stafford, the daughter of Sir William Stafford
+  []
+    gen:spouse <#Sir_George_de_Vere> , <#Margaret_Stafford> .
+<#John_de_Vere>
+  # John de Vere
+  gen:father <#Sir_Robert_de_Vere> ;
+  gen:mother <courtenay.ttl#Joan_Courtenay> .
+  # oo Alice Kilrington, daughter of Sir Walter Kilrington
+  []
+    gen:spouse <#John_de_Vere> , <#Alice_Kilrington> .
+<#Sir_Richard_de_Vere>
+  # Sir Richard de Vere
+  gen:father <https://www.wikidata.org/wiki/Q3441095> ;
+  gen:mother <howard.ttl#Elizabeth_Howard_(died_1473)> .
+  # oo Margaret Percy, d. 1464-09-28
+  []
+    gen:spouse <#Sir_Richard_de_Vere> , <percy.ttl#Margaret_Percy> .
+
+<https://www.wikidata.org/wiki/Q6265654>
+  # John de Vere, 14th Earl of Oxford, 1499-08-14 - 1526-07-14
+  gen:father <#Sir_George_de_Vere> ;
+  gen:mother <#Margaret_Stafford> .
+  # oo Lady Anne Howard, d. 1559-02-22b
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6265654> , <howard.ttl#Lady_Anne_Howard_(died_1589)> .
+<#Elizabeth_de_Vere>
+  # Elizabeth de Vere
+  gen:father <#Sir_George_de_Vere> ;
+  gen:mother <#Margaret_Stafford> .
+  # oo 1528b Sir Anthony Wingfield, 1488~ - 1552-08-15, https://www.wikidata.org/wiki/Q4773725
+<#Dorothy_de_Vere>
+  # Dorothy de Vere, d. 1527
+  gen:father <#Sir_George_de_Vere> ;
+  gen:mother <#Margaret_Stafford> .
+  # oo 1520b John Neville, 3rd Baron Latimer, 1493-11-17 - 1543-03-02, https://www.wikidata.org/wiki/Q15281133, son of https://www.wikidata.org/wiki/Q7328033 and Anne Stafford
+<#Ursula_de_Vere>
+  # Ursula de Vere, d. 1560
+  gen:father <#Sir_George_de_Vere> ;
+  gen:mother <#Margaret_Stafford> .
+  # oo Sir George Windsor, d. 1543b, #Sir_George_Windsor
+  # oo Sir Edmond Knightley, d. 1543-09-12, son of Sir Richard Knightley and Jane Skenard
+<https://www.wikidata.org/wiki/Q6265659>
+  # John de Vere, 15th Earl of Oxford, 1482~ - 1540-03-21
+  gen:father <#John_de_Vere> ;
+  gen:mother <#Alice_Kilrington> .
+  # oo Christian Foderingey, d. 1498-11-04b, daughter of Thomas Foderingey
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6265659> , <#Christian_Foderingey> ;
+	gen:startDate "1493/1494" .
+  # oo Elizabeth Trussell, 1496 - 1527-07
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6265659> , <https://www.wikidata.org/wiki/Q7605603> ;
+	gen:startDate "1507-04-29a/1509-07-04b" .
+
+<#Lady_Elizabeth_de_Vere>
+  # Lady Elizabeth de Vere, b. 1512~
+  gen:father <https://www.wikidata.org/wiki/Q6265659> ;
+  gen:mother <https://www.wikidata.org/wiki/Q7605603> .
+  # oo Thomas Darcy, 1st Baron Darcy of Chiche, 1506-12-04 - 1558-06-28, https://www.wikidata.org/wiki/Q7788853
+<https://www.wikidata.org/wiki/Q1773578>
+  # John de Vere, 16th Earl of Oxford, 1516 - 1562-08-03
+  gen:father <https://www.wikidata.org/wiki/Q6265659> ;
+  gen:mother <https://www.wikidata.org/wiki/Q7605603> .
+  # oo Lady Dorothy Neville, d. 1545-12-17a/1547-06-27, daughter of https://www.wikidata.org/wiki/Q7287908 and Lady Catherine Stafford
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1773578> , <neville.ttl#Lady_Dorothy_Neville> ;
+	gen:startDate "1536-07-03" .
+  # oo Margery Golding, 1528 - 1568-12-02
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1773578> , <https://www.wikidata.org/wiki/Q16932428> ;
+	gen:startDate "1548-08-01" .
+<https://www.wikidata.org/wiki/Q6818520>
+  # Lady Frances de Vere, 1516 - 1577-06-30
+  gen:father <https://www.wikidata.org/wiki/Q6265659> ;
+  gen:mother <https://www.wikidata.org/wiki/Q7605603> .
+  # oo 1532 Henry Howard, Earl of Surrey, 1516 - 1547-01-19, https://www.wikidata.org/wiki/Q372211
+  # oo Thomas Staynings
+<#Aubrey_de_Vere>
+  # Aubrey de Vere, 1519~ - 1579
+  gen:father <https://www.wikidata.org/wiki/Q6265659> ;
+  gen:mother <https://www.wikidata.org/wiki/Q7605603> .
+  # oo Margaret Spring
+  []
+    gen:spouse <#Aubrey_de_Vere> , <#Margaret_Spring> .
+<#Lady_Anne_de_Vere>
+  # Lady Anne de Vere, 1522~ - 1572-02-14~
+  gen:father <https://www.wikidata.org/wiki/Q6265659> ;
+  gen:mother <https://www.wikidata.org/wiki/Q7605603> .
+  # oo 1538-01-31b Edmund Sheffield, 1st Baron Sheffield of Butterwicke, 1521-11-22 - 1549-07-19, https://www.wikidata.org/wiki/Q5339822
+  # oo John Brock
+<#Geoffrey_de_Vere>
+  # Geoffrey de Vere, b. 1523~
+  gen:father <https://www.wikidata.org/wiki/Q6265659> ;
+  gen:mother <https://www.wikidata.org/wiki/Q7605603> .
+  # oo Elizabeth Hardkyn, b. 1526~, daughter of Sir John Hardkyn
+  []
+    gen:spouse <#Geoffrey_de_Vere> , <#Elizabeth_Hardkyn> ;
+	gen:startDate "1547~" .
+
+<#Lady_Katherine_de_Vere>
+  # Lady Katherine de Vere, d. 1599-01-17
+  gen:father <https://www.wikidata.org/wiki/Q1773578> ;
+  gen:mother <neville.ttl#Lady_Dorothy_Neville> .
+  # oo 1553a/1558b Edward Windsor, 3rd Lord Windsor, 1532 - 1574-01-24, https://www.wikidata.org/wiki/Q5345948
+<https://www.wikidata.org/wiki/Q374210>
+  # Edward de Vere, 17th Earl of Oxford, 1550-04-12 - 1604-06-24
+  gen:father <https://www.wikidata.org/wiki/Q1773578> ;
+  gen:mother <https://www.wikidata.org/wiki/Q16932428> .
+  # oo Anne Cecil, 1556-12-05 - 1588-06-05
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q374210> , <https://www.wikidata.org/wiki/Q4768218> ;
+	gen:startDate "1571-12-19" .
+  # oo Elizabeth Trentham, 1562 - 1612
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q374210> , <https://www.wikidata.org/wiki/Q5363641> ;
+	gen:startDate "1591" .
+<https://www.wikidata.org/wiki/Q6781021>
+  # Lady Mary de Vere, d. 1624-06-24~
+  gen:father <https://www.wikidata.org/wiki/Q1773578> ;
+  gen:mother <https://www.wikidata.org/wiki/Q16932428> .
+  # oo 1577 Peregrine Bertie, 13th Baron Willoughby de Eresby, 1555-10-12 - 1601-06-25, https://www.wikidata.org/wiki/Q3459641
+<#Hugh_de_Vere>
+  # Hugh de Vere
+  gen:father <#Aubrey_de_Vere> ;
+  gen:mother <#Margaret_Spring> .
+  # oo Eleanor Walsh
+  []
+    gen:spouse <#Hugh_de_Vere>, <#Eleanor_Walsh> ;
+	gen:startDate "1575" .
+<#Anne_de_Vere>
+  # Anne de Vere, d. 1617
+  gen:father <#Aubrey_de_Vere> ;
+  gen:mother <#Margaret_Spring> .
+  # oo 1575b Christopher Shernborne, d. 1575-07-07
+  # oo 1575a John Stubbs, 1544~ - 1589-09-25a, https://www.wikidata.org/wiki/Q334476
+<https://www.wikidata.org/wiki/Q2435779>
+  # Sir Francis de Vere, 1560 - 1609-08-28
+  gen:father <#Geoffrey_de_Vere> ;
+  gen:mother <#Elizabeth_Hardkyn> .
+  # oo Elizabeth Dent, 1591-10-18 - 1656-02~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2435779>, <murray.ttl#Elizabeth_Dent> ;
+	gen:startDate "1609b" .
+<https://www.wikidata.org/wiki/Q2753558>
+  # Horatio de Vere, 1st Baron Vere of Tilbury, 1565 - 1635-05-02
+  # 1st Baron Vere of Tilbury, co. Essex 1625-07-24
+  gen:father <#Geoffrey_de_Vere> ;
+  gen:mother <#Elizabeth_Hardkyn> .
+  # oo Mary Tracy, 1581-05-18 - 1671-12-25, daughter of Sir John Tracy and Anne Throckmorton
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2753558> , <#Mary_Tracy> ;
+	gen:startDate "1607-11" .
+<#Frances_de_Vere>
+  # Frances de Vere
+  gen:father <#Geoffrey_de_Vere> ;
+  gen:mother <#Elizabeth_Hardkyn> .
+  # oo Sir Robert Harcourt, 1574~ – 1631-05-20, https://www.wikidata.org/wiki/Q16210651 (paget.ttl)
+
+<https://www.wikidata.org/wiki/Q760788>
+  # Lady Elizabeth de Vere, 1575-07-02 - 1627-03-10
+  gen:father <https://www.wikidata.org/wiki/Q374210> ;
+  gen:mother <https://www.wikidata.org/wiki/Q4768218> .
+  # oo 1595-01-26 William Stanley, 6th Earl of Derby, 1561 - 1642-09-29, https://www.wikidata.org/wiki/Q2032636
+<https://www.wikidata.org/wiki/Q4966759>
+  # Lady Bridget de Vere, 1584-04-06 - 1630-12/1631-03
+  gen:father <https://www.wikidata.org/wiki/Q374210> ;
+  gen:mother <https://www.wikidata.org/wiki/Q4768218> .
+  # oo 1599-04-28 Francis Norris, 1st Earl of Berkshire, 1579-07-06 - 1622-01-31, https://www.wikidata.org/wiki/Q5482066
+<https://www.wikidata.org/wiki/Q3978238>
+  # Lady Susan de Vere, 1587-05-26 - 1629
+  gen:father <https://www.wikidata.org/wiki/Q374210> ;
+  gen:mother <https://www.wikidata.org/wiki/Q4768218> .
+  # oo 1604-06-24 Philip Herbert, 4th Earl of Pembroke, 1584-10-10 - 1650-01-23, https://www.wikidata.org/wiki/Q1620547
+<https://www.wikidata.org/wiki/Q3440414>
+  # Henry de Vere, 18th Earl of Oxford, 1593-02-24 - 1625-06
+  gen:father <https://www.wikidata.org/wiki/Q374210> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5363641> .
+  # oo Lady Diana Cecil, 1596 - 1658-02-26
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3440414> , <cecil.ttl#Lady_Diana_Cecil> ;
+	gen:startDate "1624-01-01" .
+<https://www.wikidata.org/wiki/Q3439967>
+  gen:name "Robert de Vere, 19th Earl of Oxford"@en ;
+  gen:birthDate "1575-08-23" ;
+  gen:deathDate "1632-08-07" ;
+  gen:father <#Hugh_de_Vere> ;
+  gen:mother <#Eleanor_Walsh> .
+  # oo Beatrix van Hemmema, 1600 - 1655, daughter of Sijerck van Hemmema
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3439967> , <#Beatrix_van_Hemmena> ;
+	gen:startDate "1626b" .
+<#Elizabeth_de_Vere_(died_1683)>
+  # Hon. Elizabeth de Vere, 1608~ - 1683-12
+  gen:father <https://www.wikidata.org/wiki/Q2753558> ;
+  gen:mother <#Mary_Tracy> .
+  # oo 1626-09-04 John Holles, 2nd Earl of Clare, 1595-06-13 - 1666-01-02, https://www.wikidata.org/wiki/Q6239618
+<#Mary_de_Vere>
+  # Hon. Mary de Vere, 1608 - 1669-11-15~
+  gen:father <https://www.wikidata.org/wiki/Q2753558> ;
+  gen:mother <#Mary_Tracy> .
+  # oo 1628 Sir Roger Townshend, 1st Baronet, 1596~ - 1637-01-01, https://www.wikidata.org/wiki/Q7528900 (cecil.ttl)
+  # oo 1638-06-21 Mildmay Fane, 2nd Earl of Westmorland, 1602-01-24 – 1666-02-12, https://www.wikidata.org/wiki/Q6850916
+<#Catharine_de_Vere>
+  # Hon. Catharine de Vere, 1613~ 1648-03-27a
+  gen:father <https://www.wikidata.org/wiki/Q2753558> ;
+  gen:mother <#Mary_Tracy> .
+  # oo Oliver St. John, 1613~ - 1641-11, #Oliver_St._John
+  # oo 1640-03 John Poulett, 2nd Baron Poulett, 1615 - 1665-09-15, https://www.wikidata.org/wiki/Q14945629
+<https://www.wikidata.org/wiki/Q18572250>
+  gen:name "Hon. Anne de Vere"@en ;
+  gen:birthDate "1618" ;
+  gen:deathDate "1665-10-16" ;
+  gen:father <https://www.wikidata.org/wiki/Q2753558> ;
+  gen:mother <#Mary_Tracy> .
+  # oo 1637-06-20 Thomas Fairfax, 3rd Lord Fairfax of Cameron, 1612-01-17 - 1671-11-12, https://www.wikidata.org/wiki/Q550612
+
+<https://www.wikidata.org/wiki/Q3440458>
+  gen:name "Aubrey de Vere, 20th Earl of Oxford"@en ;
+  gen:birthDate "1627-02-28" ;
+  gen:deathDate "1703-03-12" ;
+  gen:father <https://www.wikidata.org/wiki/Q3439967> ;
+  gen:mother <#Beatrix_van_Hemmena> .
+  # oo Hon. Anne Bayning, 1637-05-01 - 1659-09-14
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3440458> , <#Anne_Bayning> ;
+	gen:startDate "1647-06-18" .
+  # oo Diana Kirke, daughter of George Kirke
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3440458> , <#Diana_Kirke> ;
+	gen:startDate "1673-04-12b" .
+
+<https://www.wikidata.org/wiki/Q135113>
+  gen:name "Lady Diana de Vere"@en ;
+  gen:birthDate "1679~" ;
+  gen:deathDate "1742-01-15" ;
+  gen:father <https://www.wikidata.org/wiki/Q3440458> ;
+  gen:mother <#Diana_Kirke> .
+  # oo 1694-04-17 Charles Beauclerk, 1st Duke of Saint Albans, 1670-05-08 - 1726-05-10, https://www.wikidata.org/wiki/Q135152
+
+
+# ----
+<https://www.wikidata.org/wiki/Q4693146>
+  # Agnes of Essex, 1151~ - 1212~
+  gen:father <https://www.wikidata.org/wiki/Q1430664> .
+  # oo 1163~ Aubrey de Vere, 1st Earl of Oxford, 1110 - 1194-12-26, https://www.wikidata.org/wiki/Q3439788
+
+# ----
+#<https://www.wikidata.org/wiki/Q936911>
+  # Geoffrey de Mandeville, 1st Earl of Essex, 1092 - 1144-09
+  # oo Rohese de Vere, 1110~ - 1170~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q936911> , <https://www.wikidata.org/wiki/Q7359735> .
+
+# ----
+<https://www.wikidata.org/wiki/Q2424672>
+  # Hugh Bigod, 1st Earl of Norfolk, 1095 - 1177-03-09b
+  gen:father <https://www.wikidata.org/wiki/Q3438706> ;
+  gen:mother <https://www.wikidata.org/wiki/Q61807212> .
+  # oo Juliane de Vere, d. 1199~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2424672> , <https://www.wikidata.org/wiki/Q61911672> .
+
+<https://www.wikidata.org/wiki/Q3438704>
+  # Roger Bigod, 2nd Earl of Norfolk (1143 - 1221
+  gen:father <https://www.wikidata.org/wiki/Q2424672> ;
+  gen:mother <https://www.wikidata.org/wiki/Q61911672> .
+  # oo Ida de Tosny
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3438704> , <https://www.wikidata.org/wiki/Q4529990> ;
+	gen:startDate "1181" .
+
+<#Alice_Bigod_of_Norfolk>
+  # Alice Bigod of Norfolk, d. 1214a
+  gen:father <https://www.wikidata.org/wiki/Q3438704> ;
+  gen:mother <https://www.wikidata.org/wiki/Q4529990> .
+  # oo 1207a Aubrey de Vere, 2nd Earl of Oxford, 1163~ - 1214, https://www.wikidata.org/wiki/Q4819209
+# ----
+<https://www.wikidata.org/wiki/Q4529990>
+  # Ida de Tosny
+  gen:father <https://www.wikidata.org/wiki/Q59154669> ;
+  gen:mother <https://www.wikidata.org/wiki/Q59154744> .
+  # oo 1181 Roger Bigod, 2nd Earl of Norfolk (1143 - 1221, https://www.wikidata.org/wiki/Q3438704
+
+# ----
+#<#Hugh_II_de_Bolebec>
+  # Hugh II de Bolebec, d. 1165
+  # oo Margaret de Montfichet
+
+<https://www.wikidata.org/wiki/Q6077812>
+  # Isabel de Bolebec, 1165 - 1245-02-03
+  gen:father <#Hugh_II_de_Bolebec> .
+  # and Margaret de Montfichet
+  # oo 1207 Robert de Vere, 3rd Earl of Oxford, 1165a - 1221-10-25b, https://www.wikidata.org/wiki/Q7351441
+<#Walter_de_Bolebec>
+  # Walter de Bolebec
+  gen:father <#Hugh_II_de_Bolebec> .
+  # and Margaret de Montfichet
+
+<#Isabel_de_Bolebec>
+  # Isabel de Bolebec, d. 1206/1207
+  gen:father <#Walter_de_Bolebec> .
+  # oo 1206b Aubrey de Vere, 2nd Earl of Oxford, 1163~ - 1214, https://www.wikidata.org/wiki/Q4819209
+
+# ----
+#<https://www.wikidata.org/wiki/Q1703908>
+  # Saher de Quency, 1st Earl of Winchester, 1170~ – 1219-11-03
+  # 1st Earl of Winchester 1206
+  # oo Margaret Beaumont
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1703908> , <#Margaret_Beaumont> .
+
+<#Hawise_de_Quincy>
+  # Hawise de Quincy
+  gen:father <https://www.wikidata.org/wiki/Q1703908> ;
+  gen:mother <#Margaret_Beaumont> .
+  # oo 1223-02-11a Hugh de Vere, 4th Earl of Oxford, 1208 - 1263-12, https://www.wikidata.org/wiki/Q1412613
+# ----
+<#Margaret_Beaumont>
+  # Margaret Beaumont
+  gen:father <https://www.wikidata.org/wiki/Q975812> .
+  # and Pernel de Grandmesnil
+  # oo Saher de Quency, 1st Earl of Winchester, 1170~ – 1219-11-03, https://www.wikidata.org/wiki/Q1703908
+
+# ----
+<#Margaret_de_Mortimer>
+  # Margaret de Mortimer, d. 1296~
+  gen:father <https://www.wikidata.org/wiki/Q934504> ;
+  gen:mother <https://www.wikidata.org/wiki/Q939952> .
+  # oo Robert de Vere, 6th Earl of Oxford, 1257-06-24 - 1331-04-17, https://www.wikidata.org/wiki/Q7351443
+
+# ----
+<https://www.wikidata.org/wiki/Q16863340>
+  # William de Warenne, 1256-02-09 - 1286-12-15
+  gen:father <https://www.wikidata.org/wiki/Q976367> ;
+  gen:mother <https://www.wikidata.org/wiki/Q4726170> .
+  # oo Joan de Vere, d. 1293-11-23~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16863340> , <de_vere.ttl#Joan_de_Vere> ;
+	gen:startDate "1285-06~" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q18527376>
+  # Robert d'Ufford, 1235~ - 1298
+  # oo Mary ???
+
+<#Sir_Robert_d'Ufford,_Lord_Ufford>
+ # Sir Robert d'Ufford, Lord Ufford, 1279-06-11 - 1316-09-09
+ # Lord Ufford 1308-01-13
+ gen:father <https://www.wikidata.org/wiki/Q18527376> .
+ # and Mary ???
+ # oo Cecily de Valoignes, daughter of Robert de Valoignes and Eve ???
+
+<#Sir_Ralph_de_Ufford>
+  # Sir Ralph de Ufford, d. 1346-04-09
+  gen:father <#Sir_Robert_d'Ufford,_Lord_Ufford> .
+  # and Cecily de Valoignes
+  # oo Maud of Lancaster, Countess of Ulster, 1310 - 1377-05-05
+  []
+    gen:spouse <#Sir_Ralph_de_Ufford> , <https://www.wikidata.org/wiki/Q6487725> ;
+	gen:startDate "1343-08-08b" .
+
+<https://www.wikidata.org/wiki/Q6729515>
+  # Maud de Ufford, 1345 - 1413-01-25
+  gen:father <#Sir_Ralph_de_Ufford> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6487725> .
+  # oo 1350-06-10 Thomas de Vere, 8th Earl of Oxford, 1336~ - 1371-09, https://www.wikidata.org/wiki/Q3390508
+
+# ----
+<#Henry_de_Beaumont,_3rd_Baron_Beaumont>
+  # Henry de Beaumont, 3rd Baron Beaumont, 1340-04-04 - 1369-07-25
+  gen:father <https://www.wikidata.org/wiki/Q1624654> .
+  # and Lady Eleanor Plantagenet
+  # oo Margaret de Vere, d. 1398-06-16
+  []
+    gen:spouse <#Henry_de_Beaumont,_3rd_Baron_Beaumont> , <https://www.wikidata.org/wiki/Q16207660> .
+
+# ----
+#<https://www.wikidata.org/wiki/Q16829072>
+  # Sir Nicholas de Loveyne, d. 1375-09-24
+  # oo Margaret de Vere, d. 1398-06-16
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16829072> , <https://www.wikidata.org/wiki/Q16207660> ;
+	gen:startDate "1369a" .
+
+# ----
+<https://www.wikidata.org/wiki/Q7184743>
+  # Philippa de Coucy, 1367 - 1411-10~
+  gen:father <https://www.wikidata.org/wiki/Q1342999> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2278840> .
+  # oo 1376-10-05b (div 1387) Robert de Vere, Duke of Ireland, 9th Earl of Oxford, 1362-01-16 - 1392-11-22, https://www.wikidata.org/wiki/Q352566
+
+# ----
+<#Lady_Alice_de_Holand>
+  # Lady Alice de Holand, 1392~ - 1406~
+  gen:father <https://www.wikidata.org/wiki/Q715919> ;
+  gen:mother <https://www.wikidata.org/wiki/Q456462> .
+  # oo 1400b Richard de Vere, 11th Earl of Oxford, 1385-08-15 - 1417-02-15, https://www.wikidata.org/wiki/Q659733
+
+# ----
+<neville.ttl#Lady_Margaret_Neville_(died_1506)>
+  # Lady Margaret Neville, d. 1506-11-20a
+  gen:father <https://www.wikidata.org/wiki/Q384856> ;
+  gen:mother <https://www.wikidata.org/wiki/Q4726013> .
+  # oo 1506b John de Vere, 13th Earl of Oxford, 1442-09-08 - 1513-03-10, https://www.wikidata.org/wiki/Q1332495
+
+<https://www.wikidata.org/wiki/Q15281133>
+  # John Neville, 3rd Baron Latimer, 1493-11-17 - 1543-03-02
+  gen:father <https://www.wikidata.org/wiki/Q7328033> .
+  # and Anne Stafford
+  # oo Dorothy de Vere, d. 1527
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q15281133> , <de_vere.ttl#Dorothy_de_Vere> ;
+	gen:startDate "1520b" .
+
+<neville.ttl#Lady_Dorothy_Neville>
+  # Lady Dorothy Neville, d. 1545-12-17a/1547-06-27
+  gen:father <https://www.wikidata.org/wiki/Q7287908> .
+  # and Lady Catherine Stafford
+  # oo 1536-07-03 1548-08-01 John de Vere, 16th Earl of Oxford, 1516 - 1562-08-03, https://www.wikidata.org/wiki/Q1773578
+
+# ----
+<#Sir_Richard_Scrope>
+  # Sir Richard Scrope
+  gen:father <https://www.wikidata.org/wiki/Q27493876> .
+  # and Elizabeth Scrope
+  # oo Eleanor Washbourne, d. 1505,  daughter of Norman Washbourne
+
+<#Elizabeth_Scrope>
+  # Elizabeth Scrope, d. 1537-06-26
+  gen:father <#Sir_Richard_Scrope> .
+  # and Eleanor Washbourne
+  # oo 1508-11-28a/1509-04-10b John de Vere, 13th Earl of Oxford, 1442-09-08 - 1513-03-10, https://www.wikidata.org/wiki/Q1332495
+
+# ----
+#<https://www.wikidata.org/wiki/Q4773725>
+  # Sir Anthony Wingfield, 1488~ - 1552-08-15
+  # son of Sir John Wingfield
+  # and Ann Touchet
+  # oo Elizabeth de Vere
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4773725> , <#Elizabeth_de_Vere> ;
+	gen:startDate "1528b" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q4758954>
+  # Andrew Windsor, 1st Lord Windsor, 1467~ - 1543~
+  # 1st Lord Windsor 1529
+  # oo Elizabeth Blount, daughter of William Blount and Margaret Echingham
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4758954> , <#Elizabeth_Blount> ;
+	gen:startDate "1485" .
+
+<https://www.wikidata.org/wiki/Q29951767>
+  # William Windsor, 2nd Lord Windsor, d. 1558-08-20
+  gen:father <https://www.wikidata.org/wiki/Q4758954> ;
+  gen:mother <#Elizabeth_Blount> .
+  # oo Margaret Sambourne, daughter of William Sambourne
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q29951767> , <#Margaret_Sambourne> ;
+	gen:startDate "1536-05-16b" .
+<#Sir_George_Windsor>
+  # Sir George Windsor, d. 1543b
+  gen:father <https://www.wikidata.org/wiki/Q4758954> ;
+  gen:mother <#Elizabeth_Blount> .
+  # oo Ursula de Vere, d. 1560
+  []
+    gen:spouse <#Sir_George_Windsor> , <#Ursula_de_Vere> .
+
+<https://www.wikidata.org/wiki/Q5345948>
+  # Edward Windsor, 3rd Lord Windsor, 1532 - 1574-01-24
+  gen:father <https://www.wikidata.org/wiki/Q29951767> ;
+  gen:mother <#Margaret_Sambourne> .
+  # oo Lady Katherine de Vere, d. 1599-01-17
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5345948> , <#Lady_Katherine_de_Vere> ;
+	gen:startDate "1553a/1558b" .
+
+<#Henry_Windsor,_5th_Lord_Windsor>
+  # Henry Windsor, 5th Lord Windsor, 1562-08 - 1605-04-06
+  gen:father <https://www.wikidata.org/wiki/Q5345948> ;
+  gen:mother <#Lady_Katherine_de_Vere> .
+  # oo Anne Rivett, d. 1615-11-27
+  []
+    gen:spouse <#Henry_Windsor,_5th_Lord_Windsor> , <#Anne_Rivett> ;
+	gen:startDate "1586b" .
+
+<#Margaret_Windsor>
+  # Margaret Windsor
+  gen:father <#Henry_Windsor,_5th_Lord_Windsor> ;
+  gen:mother <#Anne_Rivett> .
+  # oo Sir John Talbot, of Grafton, 1545 - 1611-01-28, https://www.wikidata.org/wiki/Q6260200
+# ----
+#<#Sir_Thomas_Rivett>
+  # Sir Thomas Rivett
+  # oo Hon. Griselda Paget
+  []
+    gen:spouse <#Sir_Thomas_Rivett> , <paget.ttl#Griselda_Paget> .
+
+<#Anne_Rivett>
+  # Anne Rivett, d. 1615-11-27
+  gen:father <#Sir_Thomas_Rivett> ;
+  gen:mother <paget.ttl#Griselda_Paget> .
+  # oo 1586b Henry Windsor, 5th Lord Windsor, 1562-08 - 1605-04-06, #Henry_Windsor,_5th_Lord_Windsor
+
+# ----
+<https://www.wikidata.org/wiki/Q7605603>
+  # Elizabeth Trussell, 1496 - 1527-07
+  gen:father <#Edward_Trussell> ;
+  gen:mother <#Margaret_Donne> .
+  # oo John de Vere, 15th Earl of Oxford, 1482~ - 1540-03-21, https://www.wikidata.org/wiki/Q6265659
+
+# ----
+#<https://www.wikidata.org/wiki/Q7788853>
+  # Thomas Darcy, 1st Baron Darcy of Chiche, 1506-12-04 - 1558-06-28
+  # 1st Baron Darcy of Chiche 1551-04-05
+  # son of Roger Darcy
+  # and Elizabeth Wentworth
+  # oo Lady Elizabeth de Vere, b. 1512~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7788853> , <#Lady_Elizabeth_de_Vere> .
+
+# ----
+<https://www.wikidata.org/wiki/Q16932428>
+  # Margery Golding, 1528 - 1568-12-02
+  gen:father <#Sir_John_Golding> ;
+  gen:mother <#Elizabeth_Hammond> .
+  # oo 1548-08-01 John de Vere, 16th Earl of Oxford, 1516 - 1562-08-03, https://www.wikidata.org/wiki/Q1773578
+
+# ----
+<#Margaret_Spring>
+  # Margaret Spring
+  gen:father <https://www.wikidata.org/wiki/Q6258698> .
+  # oo Aubrey de Vere, 1519~ - 1579, #Aubrey_de_Vere
+
+# ----
+<https://www.wikidata.org/wiki/Q5363641>
+  # Elizabeth Trentham, 1562 - 1612
+  gen:father <https://www.wikidata.org/wiki/Q7794551> .
+  # and Jane Sneyd
+  # oo 1591 Edward de Vere, 17th Earl of Oxford, 1550-04-12 - 1604-06-24, https://www.wikidata.org/wiki/Q374210
+
+# ----
+#<https://www.wikidata.org/wiki/Q334476>
+  # John Stubbs, 1544~ - 1589-09-25a
+  # oo Anne de Vere, d. 1617
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q334476> , <#Anne_de_Vere> ;
+	gen:startDate "1575a" .
+
+# ----
+<https://www.wikidata.org/wiki/Q2044691>
+  # Henry Norris, 1st Lord Norris, 1525~ - 1601-06-27
+  # 1st Lord Norris 1572-05-06
+  gen:father <https://www.wikidata.org/wiki/Q1607100> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6779530> .
+  # oo Margaret Williams, d. 1599-12, daughter of John Williams, 1st Baron Williams of Thame (1500 - 1558-10-14, https://www.wikidata.org/wiki/Q6264298)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2044691> , <https://www.wikidata.org/wiki/Q18762036> .
+
+<https://www.wikidata.org/wiki/Q8016177>
+  # Sir William Norris, 15452 - 1579-12-25
+  gen:father <https://www.wikidata.org/wiki/Q2044691> ;
+  gen:mother <https://www.wikidata.org/wiki/Q18762036> .
+  # oo Elizabeth Morrison, d. 1611-07-04~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8016177> , <clinton.ttl#Elizabeth_Morrison> ;
+	gen:startDate "1576~" .
+
+<https://www.wikidata.org/wiki/Q5482066>
+  # Francis Norris, 1st Earl of Berkshire, 1579-07-06 - 1622-01-31
+  # 2nd Lord Norris 1601-10-17
+  # 1st Viscount Thame, 1st Earl of Berkshire 1621-01-28
+  gen:father <https://www.wikidata.org/wiki/Q8016177> ;
+  gen:mother <clinton.ttl#Elizabeth_Morrison> .
+  # oo Lady Bridget de Vere, 1584-04-06 - 1630-12/1631-03
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5482066> , <https://www.wikidata.org/wiki/Q4966759> ;
+	gen:startDate "1599-04-28" .
+# ----
+#<https://www.wikidata.org/wiki/Q6264298>
+  # John Williams, 1st Baron Williams of Thame, 1500 - 1558-10-14
+
+<https://www.wikidata.org/wiki/Q18762036>
+  # Margaret Williams, d. 1599-12
+  gen:father <https://www.wikidata.org/wiki/Q6264298> .
+  # oo Henry Norris, 1st Lord Norris, 1525~ - 1601-06-27, https://www.wikidata.org/wiki/Q2044691
+
+# ----
+#<https://www.wikidata.org/wiki/Q7528081>
+  # Sir John St. John, 1st Baronet, 1585-11-05 - 1648
+  # 1st Baronet St. John, of Lidiard Tregoze, co. Wilts 1611-05-22
+  # oo Anne Leighton, daughter of Sir Thomas Leighton and Elizabeth Knollys
+
+<#Oliver_St._John>
+  # Oliver St. John, 1613~ - 1641-11
+  gen:father <https://www.wikidata.org/wiki/Q7528081> .
+  # and Anne Leighton
+  # oo Hon. Catharine de Vere, 1613~ 1648-03-27a
+  []
+    gen:spouse <#Oliver_St._John> , <#Catharine_de_Vere> .
+
+# ----
+<https://www.wikidata.org/wiki/Q6253253>
+  # John Poulett, 1st Baron Poulett, 1586 - 1649-03-20
+  # 1st Baron Poulett, of Hinton St. George, Somerset 1627-06-23
+  gen:father <https://www.wikidata.org/wiki/Q4773253> .
+  # oo Elizabeth Kenn, 1593 - 1663, daughter of Christopher Kenn
+
+<https://www.wikidata.org/wiki/Q14945629>
+  # John Poulett, 2nd Baron Poulett, 1615 - 1665-09-15
+  gen:father <https://www.wikidata.org/wiki/Q6253253> .
+  # and Elizabeth Kenn
+  # oo Hon. Catharine de Vere, 1613~ 1648-03-27a
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q14945629> , <#Catharine_de_Vere> ;
+	gen:startDate "1640-03" .
+
+# ----
+<https://www.wikidata.org/wiki/Q550612>
+  gen:name "Thomas Fairfax, 3rd Lord Fairfax of Cameron"@en ;
+  gen:birthDate "1612-01-17" ;
+  gen:deathDate "1671-11-12" ;
+  gen:father <https://www.wikidata.org/wiki/Q3068722> .
+  # and Lady Mary Sheffield
+  # oo Hon. Anne de Vere, 1618 - 1665-10-16
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q550612> , <https://www.wikidata.org/wiki/Q18572250> ;
+	gen:startDate "1637-06-20" .
+
+<https://www.wikidata.org/wiki/Q16576791>
+  gen:name "Hon. Mary Fairfax"@en ;
+  gen:birthDate "1638-07-30" ;
+  gen:deathDate "1704-10-20" ;
+  gen:father <https://www.wikidata.org/wiki/Q550612> ;
+  gen:mother <https://www.wikidata.org/wiki/Q18572250> .
+  # oo 1657-09-15 George Villiers, 2nd Duke of Buckingham, 1628-01-30 - 1687-04-16, https://www.wikidata.org/wiki/Q336101
+
+# ----
+#<https://www.wikidata.org/wiki/Q16156972>
+  # Paul Bayning, 1st Viscount Bayning of Sudbury, 1588-04-28 - 1629-07-29
+  # 1st Baronet Bayning, of Bentley Parva, co. Essex 1611-09-24
+  # 1st Baron Bayning of Horkesley, Essex 1628-02-27
+  # 1st Viscount Bayning of Sudbury, Suffolk 1628-03-08
+  # son of Paul Bayning
+  # and Susanna Norden
+  # oo Anne Glemham, d. 1639-01-10
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16156972> , <https://www.wikidata.org/wiki/Q21556532> ;
+	gen:startDate "1613b" .
+
+<#Paul_Bayning,_2nd_Viscount_Bayning>
+  # Paul Bayning, 2nd Viscount Bayning of Sudbury, 1616~ - 1638-06-11
+  gen:father <https://www.wikidata.org/wiki/Q16156972> ;
+  gen:mother <https://www.wikidata.org/wiki/Q21556532> .
+  # oo Penelope Naunton, 1620-10-02 - 1647b
+  []
+    gen:spouse <#Paul_Bayning,_2nd_Viscount_Bayning> , <#Penelope_Naunton> ;
+	gen:startDate "1624-08-25" .
+
+<#Anne_Bayning>
+  # Hon. Anne Bayning, 1637-05-01 - 1659-09-14
+  gen:father <#Paul_Bayning,_2nd_Viscount_Bayning> ;
+  gen:mother <#Penelope_Naunton> .
+  # oo 1647-06-18 Aubrey de Vere, 20th Earl of Oxford, 1627-02-28 - 1703-03-12, https://www.wikidata.org/wiki/Q3440458
+# ----
+#<https://www.wikidata.org/wiki/Q15527976>
+  # Sir Robert Naunton, 1563 – 1635-03-27
+  # oo Penelope Perrot
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q15527976> , <devereux.ttl#Penelope_Perrot> ;
+	gen:startDate "1615a" .
+
+<#Penelope_Naunton>
+  # Penelope Naunton, 1620-10-02 - 1647b
+  gen:father <https://www.wikidata.org/wiki/Q15527976> .
+  # and Penelope Perrot
+  # oo 1624-08-25 Paul Bayning, 2nd Viscount Bayning of Sudbury, 1616~ - 1638-06-11, #Paul_Bayning,_2nd_Viscount_Bayning
+  # oo 1639-03-28 Philip Herbert, 5th Earl of Pembroke, 1621 - 1669-12-11, https://www.wikidata.org/wiki/Q4018412
+
+# ----
