@@ -270,6 +270,17 @@
   gen:mother <#Jemima_Crew> .
   # oo 1670 Sir Richard Edgcumbe, 1640-02-13 - 1688-04-03, https://www.wikidata.org/wiki/Q7325442
   # oo 1688a Christopher Montagu, b. 1660~, #Christopher_Montagu
+<https://www.wikidata.org/wiki/Q26203966>
+  # Hon. Charles Montagu, 1658~ - 1721
+  gen:father <https://www.wikidata.org/wiki/Q335182> ;
+  gen:mother <#Jemima_Crew> .
+  # oo Elizabeth Forster, daughter of Francis Forster
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q26203966> , <#Elizabeth_Forster> ;
+	gen:startDate "1685-09-03" .
+  # oo Sarah Rogers
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q26203966> , <#Sarah_Rogers> .
 <#Lady_Catherine_Montagu>
   gen:name "Lady Catherine Montagu"@en ;
   gen:birthDate "1661-08-20" ;
@@ -302,6 +313,14 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7526634> , <https://www.wikidata.org/wiki/Q235121> ;
 	gen:startDate "1712-08-12" .
+<https://www.wikidata.org/wiki/Q5344493>
+  # Edward Montagu, 1692 – 1776
+  gen:father <https://www.wikidata.org/wiki/Q26203966> ;
+  gen:mother <#Sarah_Rogers> .
+  # oo Elizabeth Robinson, 1718-10-02 – 1800-08-25
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5344493> , <https://www.wikidata.org/wiki/Q443320> ;
+	gen:startDate "1742" .
 
 <https://www.wikidata.org/wiki/Q5344489>
   gen:name "Edward Richard Montagu, Viscount Hinchinbroke"@en ;
@@ -360,7 +379,7 @@
 	gen:startDate "1766-03-08" .
   # oo Lady Mary Henrietta Powlett, 1753-10 - 1779-03-30
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q6249175> , <#Lady_Mary_Henrietta_Powlett> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q6249175> , <paulet.ttl#Lady_Mary_Henrietta_Powlett> ;
 	gen:startDate "1772-04-25" .
 <https://www.wikidata.org/wiki/Q24036569>
   # Hon. William Augustus Montagu, 1752 - 1776-01-14
@@ -397,7 +416,7 @@
   gen:birthDate "1773-02-04" ;
   gen:deathDate "1818-05-21" ;
   gen:father <https://www.wikidata.org/wiki/Q6249175> ;
-  gen:mother <#Lady_Mary_Henrietta_Powlett> .
+  gen:mother <paulet.ttl#Lady_Mary_Henrietta_Powlett> .
   # oo Lady Louisa Mary Ann Julia Harriet Lowry-Corry, 1781-04-03 - 1862-04-19
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5542572> , <https://www.wikidata.org/wiki/Q6688543> ;
@@ -405,7 +424,7 @@
 <#Lady_Mary_Montagu_(died_1824)>
   # Lady Mary Montagu, 1774-02-27 - 1824-10-04
   gen:father <https://www.wikidata.org/wiki/Q6249175> ;
-  gen:mother <#Lady_Mary_Henrietta_Powlett> .
+  gen:mother <paulet.ttl#Lady_Mary_Henrietta_Powlett> .
   # oo 1796-10-07 John Henry Upton, 1st Viscount Templetown, 1771-11-08 - 1846-09-21, https://www.wikidata.org/wiki/Q6261593>
 <https://www.wikidata.org/wiki/Q8004697>
   gen:name "William Augustus Montagu"@en ;
@@ -1501,55 +1520,16 @@
   # Sir Nicholas Bacon, b. 1630~
   # oo Bridgett Tollemache
   []
-    gen:spouse <#Sir_Nicholas_Bacon> , <#Bridgett_Tollemache> ;
+    gen:spouse <#Sir_Nicholas_Bacon> , <manners.ttl#Bridgett_Tollemache> ;
 	gen:startDate "1650-09-10" .
 
 <https://www.wikidata.org/wiki/Q7024997>
   # Nicholas Bacon, 1622~ – 1687
   gen:father <#Sir_Nicholas_Bacon> ;
-  gen:mother <#Bridgett_Tollemache> .
+  gen:mother <manners.ttl#Bridgett_Tollemache> .
   # Lady Catherine Montagu, 1661-08-20 - 1757-01-15
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7024997> , <#Lady_Catherine_Montagu> .
-# ----
-#<#Sir_Lionel_Tollemache,_1st_Baronet>
-  # Sir Lionel Tollemache, 1st Baronet, 1562-12-14 - 1617a/1621b
-  # oo Katharine Cromwell, 1562 - 1620-03-24
-  []
-    gen:spouse <#Sir_Lionel_Tollemache,_1st_Baronet> , <https://www.wikidata.org/wiki/Q15623776> ;
-	gen:startDate "1581-02-10" .
-
-<https://www.wikidata.org/wiki/Q15623775>
-  # Sir Lionel Tollemache, 2nd Baronet, 1591-08-01 - 1640-09-06
-  gen:father <#Sir_Lionel_Tollemache,_1st_Baronet> ;
-  gen:mother <https://www.wikidata.org/wiki/Q15623776> .
-  # oo Hon. Elizabeth Stanhope, d. 1661~
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q15623775> , <#Elizabeth_Stanhope> ;
-	gen:startDate "1612-12-16" .
-
-<#Bridgett_Tollemache>
-  # Bridgett Tollemache
-  gen:father <https://www.wikidata.org/wiki/Q15623775> ;
-  gen:mother <#Elizabeth_Stanhope> .
-  # oo 1650-09-10 Sir Nicholas Bacon, b. 1630~, #Sir_Nicholas_Bacon
-# ----
-<https://www.wikidata.org/wiki/Q15623776>
-  # Katharine Cromwell, 1562 - 1620-03-24
-  gen:father <https://www.wikidata.org/wiki/Q5719975> ;
-  gen:mother <https://www.wikidata.org/wiki/Q15378578> .
-  # oo 1581-02-10 Sir Lionel Tollemache, 1st Baronet, 1562-12-14 - 1617a/1621b, #Sir_Lionel_Tollemache,_1st_Baronet
-# ----
-#<https://www.wikidata.org/wiki/Q6258824>
-  # John Stanhope, 1st Baron Stanhope of Harrington, 1540~ - 1620-03-09
-  # 1st Baron Stanhope of Harrington, co. Northants. 1605
-  # oo Margaret MacWilliams
-
-<#Elizabeth_Stanhope>
-  # Hon. Elizabeth Stanhope, d. 1661~
-  gen:father <https://www.wikidata.org/wiki/Q6258824> .
-  # and Margaret MacWilliams
-  # oo 1612-12-16 Sir Lionel Tollemache, 2nd Baronet, 1591-08-01 - 1640-09-06, https://www.wikidata.org/wiki/Q15623775
 
 # ----
 #<#Sir_Philip_de_Carteret,_Seigneur_de_St._Owen>
@@ -1607,13 +1587,6 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q294651> , <https://www.wikidata.org/wiki/Q245833> ;
 	gen:startDate "1736-08-13" .
-
-# ----
-<#Lady_Mary_Henrietta_Powlett>
-  # Lady Mary Henrietta Powlett, 1753-10 - 1779-03-30
-  gen:father <https://www.wikidata.org/wiki/Q7585528> .
-  # and Mary Nunn
-  # oo 1772-04-25 John Montagu, 5th Earl of Sandwich, 1744-01-26 - 1814-06-06, https://www.wikidata.org/wiki/Q6249175
 
 # ----
 #<https://www.wikidata.org/wiki/Q6774525>
@@ -2183,3 +2156,300 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q1354575> , <#Lady_Sydney_Charlotte_Montagu> ;
 	gen:startDate "1873-08-14" .
+
+
+# ====
+#<#Thomas_Robinson>
+  # https://www.wikidata.org/wiki/Q18530858 d. 1683 ?
+  # Thomas Robinson
+  # son of William Robinson
+  # and Mary Hall
+  # oo Frances Smelt
+
+<#Sir_Leonard_Robinson>
+  # Sir Leonard Robinson, d. 1696
+  gen:father <#Thomas_Robinson> .
+  # and Frances Smelt
+  # oo Deborah Collet
+<#William_Robinson>
+  # William Robinson
+  gen:father <#Thomas_Robinson> .
+  # and Frances Smelt
+  # oo Mary Layton, daughter of Francis Layton
+
+<#Thomas_Robinson_(died_1700)>
+  # Thomas Robinson, d. 1700
+  gen:father <#Sir_Leonard_Robinson> .
+  # and Deborah Collet
+<#Thomas_Robinson_(died_1719)>
+  # Thomas Robinson, d. 1719
+  gen:father <#William_Robinson> .
+  # and Mary Layton
+  # oo Grace Stapylton
+  []
+    gen:spouse <#Thomas_Robinson_(died_1719)> , <#Grace_Stapylton> .
+
+<https://www.wikidata.org/wiki/Q24546381>
+  # Matthew Robinson, 1695 - 1778
+  gen:father <#Thomas_Robinson_(died_1700)> .
+  # oo Elizabeth Drake, 1693–1746, daughter of Thomas Drake and Sarah Morris
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q24546381> , <#Elizabeth_Drake> ;
+	gen:startDate "1712" .
+<#William_Robinson_(died_1720)>
+  # William Robinson, 1675 - 1720-02-24
+  gen:father <#Thomas_Robinson_(died_1719)> ;
+  gen:mother <#Grace_Stapylton> .
+  # oo Anne Walters, 1677 - 1730-07-20, daughter of Robert Walters
+  []
+    gen:spouse <#William_Robinson_(died_1720)> , <#Anne_Walters> ;
+	gen:startDate "1699" .
+
+<https://www.wikidata.org/wiki/Q1675101>
+  # Matthew Robinson-Morris, 2nd Baron Rokeby, 1713-04-12 – 1800-11-30
+  # 2nd Baron Rokeby, of Armagh, 4th Baronet Robinson 1794-10-10
+  gen:father <https://www.wikidata.org/wiki/Q24546381> ;
+  gen:mother <#Elizabeth_Drake> .
+<https://www.wikidata.org/wiki/Q20742526>
+  # Thomas Robinson, 1714 - 1747
+  gen:father <https://www.wikidata.org/wiki/Q24546381> ;
+  gen:mother <#Elizabeth_Drake> .
+<#Morris_Robinson>
+  # Morris Robinson, 1714a - 1777-10-17
+  gen:father <https://www.wikidata.org/wiki/Q24546381> ;
+  gen:mother <#Elizabeth_Drake> .
+  # oo Jane Greenland, daughter of John Greenland
+<https://www.wikidata.org/wiki/Q7422765>
+  # Sarah Robinson, 1720-09-21/1723 - 1795-11-03
+  gen:father <https://www.wikidata.org/wiki/Q24546381> ;
+  gen:mother <#Elizabeth_Drake> .
+  # oo 1751-06 (sep 1752-04) George Lewis Scott, 1708-05-01 - 1780-12-07, https://www.wikidata.org/wiki/Q5541712
+<https://www.wikidata.org/wiki/Q443320>
+  # Elizabeth Robinson, 1718-10-02 – 1800-08-25
+  gen:father <https://www.wikidata.org/wiki/Q24546381> ;
+  gen:mother <#Elizabeth_Drake> .
+  # oo 1742 Edward Montagu, 1692 – 1776, https://www.wikidata.org/wiki/Q5344493
+<https://www.wikidata.org/wiki/Q18811391>
+  # Rev. William Robinson, 1727 - 1803
+  gen:father <https://www.wikidata.org/wiki/Q24546381> ;
+  gen:mother <#Elizabeth_Drake> .
+  # oo Mary Richardson, daughter of Adam Richardson
+<https://www.wikidata.org/wiki/Q7529252>
+  # Sir Thomas Robinson, 1st Baronet, 1703 - 1777-03-03
+  # 1st Baronet Robinson, of Rokeby Park, Yorkshire 1730-03-10
+  gen:father <#William_Robinson_(died_1720)> ;
+  gen:mother <#Anne_Walters> .
+  # oo Lady Elizabeth Howard, 1701 - 1739-04-10
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7529252> , <howard.ttl#Lady_Elizabeth_Anne_Howard> ;
+	gen:startDate "1728-10-25" .
+<#Sir_William_Robinson,_2nd_Baronet>
+  # Sir William Robinson, 2nd Baronet, 1704 - 1785
+  gen:father <#William_Robinson_(died_1720)> ;
+  gen:mother <#Anne_Walters> .
+<https://www.wikidata.org/wiki/Q259994>
+  # Most Rev. Richard Robinson, 1st Baron Rokeby, 1708-07-13 - 1794-10-10
+  # Archbishop of Armagh 1765
+  # 1st Baron Rokeby, of Armagh 1777-02-26
+  # 3rd Baronet Robinson 1785
+  gen:father <#William_Robinson_(died_1720)> ;
+  gen:mother <#Anne_Walters> .
+<https://www.wikidata.org/wiki/Q14945459>
+  # Sir Septimus Robinson, 1710-01-30 – 1765-09-06
+  gen:father <#William_Robinson_(died_1720)> ;
+  gen:mother <#Anne_Walters> .
+<#Grace_Robinson>
+  # Grace Robinson, 1718-01-05 - 1776-12-28
+  gen:father <#William_Robinson_(died_1720)> ;
+  gen:mother <#Anne_Walters> .
+  # oo 1739-04 Very Rev. William Freind, 1715 - 1767-11-26, https://www.wikidata.org/wiki/Q8009425
+
+<https://www.wikidata.org/wiki/Q6913869>
+  # Morris Robinson, 3rd Baron Rokeby, 1757-07-14 – 1829-05-10
+  gen:father <#Morris_Robinson> .
+  # and Jane Greenland
+<https://www.wikidata.org/wiki/Q6790983>
+  # Matthew Montagu, 4th Baron Rokeby, 1762-11-23 – 1831-09-01
+  gen:father <#Morris_Robinson> .
+  # and Jane Greenland
+  # oo Elizabeth Charlton, d. 1817-03-07, daughter of Francis Charlton
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6790983> , <#Elizabeth_Charlton> ;
+	gen:startDate "1785-07-09" .
+
+<#Edward_Montagu,_5th_Baron_Rokeby>
+  # Edward Montagu, 5th Baron Rokeby, 1787-07-06 - 1847-04-07
+  gen:father <https://www.wikidata.org/wiki/Q6790983> ;
+  gen:mother <#Elizabeth_Charlton> .
+<https://www.wikidata.org/wiki/Q5725955>
+  # Henry Robinson-Montagu, 6th Baron Rokeby, 1798-02-02 – 1883-05-25
+  gen:father <https://www.wikidata.org/wiki/Q6790983> ;
+  gen:mother <#Elizabeth_Charlton> .
+  # oo Magdalen Huxley, d. 1868-12-07, daughter of Thomas Hurley and Mary Dallas
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5725955> , <#Magdalen_Huxley> ;
+	gen:startDate "1826-12-18" .
+<https://www.wikidata.org/wiki/Q66091814>
+  # Hon. Spencer Dudley Montagu, 1807 – 1882-03-31
+  gen:father <https://www.wikidata.org/wiki/Q6790983> ;
+  gen:mother <#Elizabeth_Charlton> .
+  # oo Anna Louisa Flint, d. 1865, daughter of Sir C. W. Flint
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q66091814> , <#Anna_Louisa_Flint> ;
+	gen:startDate "1842" .
+  # oo Henrietta Elizabeth Harriet Pemberton, daughter of C. R. Pemberton
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q66091814> , <#Henrietta_Elizabeth_Harriet_Pemberton> ;
+	gen:startDate "1868" .
+<#Caroline_Montagu>
+  # Hon. Caroline Montagu, d. 1867-11-10
+  gen:father <https://www.wikidata.org/wiki/Q6790983> ;
+  gen:mother <#Elizabeth_Charlton> .
+  # oo 1843-06-07 Hon. William Godolphin Osborne, 1804-03-29 - 1888-12-28, osborne.ttl#William_Godolphin_Osborne
+<#Catherine_Montagu>
+  # Hon. Catherine Montagu, d. 1865
+  gen:father <https://www.wikidata.org/wiki/Q6790983> ;
+  gen:mother <#Elizabeth_Charlton> .
+  # oo 1831 Edward Goulburn, 1787 - 1868-08-24, https://www.wikidata.org/wiki/Q18671035
+<#Jane_Montagu>
+  # Hon. Jane Montagu, d. 1857
+  gen:father <https://www.wikidata.org/wiki/Q6790983> ;
+  gen:mother <#Elizabeth_Charlton> .
+  # oo 1811-12-20 Rt. Hon. Henry Goulburn, 1784-03-19 – 1856-01-12, https://www.wikidata.org/wiki/Q5722116
+<#Mary_Montagu_(died_1877)>
+  # Hon. Mary Montagu, d. 1877
+  gen:father <https://www.wikidata.org/wiki/Q6790983> ;
+  gen:mother <#Elizabeth_Charlton> .
+  # oo 1820 Robert Ellison, 1783 – 1843-07-03, https://www.wikidata.org/wiki/Q21287557
+<#Eleanor_Montagu>
+  # Hon. Eleanor Montagu, d. 1847-07-26
+  gen:father <https://www.wikidata.org/wiki/Q6790983> ;
+  gen:mother <#Elizabeth_Charlton> .
+  # oo 1822 John Nicholas Fazakerley, 1787-03-07 – 1852-07-16, https://www.wikidata.org/wiki/Q6250416
+
+<#Mary_Montagu_(died_1868)>
+  # Hon. Mary Montagu, 1828 – 1868-09-06
+  gen:father <https://www.wikidata.org/wiki/Q5725955> ;
+  gen:mother <#Magdalen_Huxley> .
+  # oo 1855-11-29 John Paulet, 14th Marquess of Winchester, 1801-06-03 - 1887-07-04, https://www.wikidata.org/wiki/Q26222237
+<#Harriet_Lydia_Montagu>
+  # Hon. Harriet Lydia Montagu, 1829-07-23 - 1894-11-23
+  gen:father <https://www.wikidata.org/wiki/Q5725955> ;
+  gen:mother <#Magdalen_Huxley> .
+  # oo 1855-04-19 Lionel Seymour William Dawson-Damer, 4th Earl of Portarlington, 1832-04-07 – 1892-12-17, https://www.wikidata.org/wiki/Q6555615 (erskine.ttl)
+<#Magdalen_Montagu>
+  # Hon. Magdalen Montagu, d. 1919-09-30
+  gen:father <https://www.wikidata.org/wiki/Q5725955> ;
+  gen:mother <#Magdalen_Huxley> .
+  # oo 1856-09-16 Very Rev. Hon. Gerald Valerian Wellesley, 1809 - 1882-09-17, https://www.wikidata.org/wiki/Q5549678
+<#Henrietta_Mary_Montagu>
+  # Henrietta Mary Montagu, d. 1936-09-13
+  gen:father <https://www.wikidata.org/wiki/Q66091814> ;
+  gen:mother <#Henrietta_Elizabeth_Harriet_Pemberton> .
+  # oo 1891-04-29 Hon. Alfred Nathaniel Curzon, 1860-03-12 - 1920-09-20, #Alfred_Nathaniel_Curzon
+  # oo 1922-08-03 Brig.-Gen. Claude Julian Hawker
+
+# ----
+<https://www.wikidata.org/wiki/Q16211027>
+  # Sir Henry Stapylton, 1st Baronet, 1617~ – 1679-03-26
+  # 1st Baronet Stapylton, of Myton, co. Yorks 1660-06-22
+  gen:father <https://www.wikidata.org/wiki/Q7526141> .
+  # and Frances Slingsby
+  # oo Lady Elizabeth Darcy, d. 1729
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16211027> , <howard.ttl#Lady_Elizabeth_Darcy> ;
+	gen:startDate "1650-10-18" .
+
+<#Grace_Stapylton>
+  # Grace Stapylton
+  gen:father <https://www.wikidata.org/wiki/Q16211027> ;
+  gen:mother <howard.ttl#Lady_Elizabeth_Darcy> .
+  # oo Thomas Robinson, d. 1719, #Thomas_Robinson_(died_1719)
+
+# ----
+#<https://www.wikidata.org/wiki/Q5541712>
+  # George Lewis Scott, 1708-05-01 - 1780-12-07
+  # son of James (or George) Scott
+  # and Marion Stewart
+  # oo Sarah Robinson, 1720-09-21/1723 - 1795-11-03
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5541712> , <https://www.wikidata.org/wiki/Q7422765> ;
+	gen:startDate "1751-06" ;
+	gen:separatedDate "1752-04" .
+
+# ----
+<https://www.wikidata.org/wiki/Q8009425>
+  # Very Rev. William Freind, 1715 - 1767-11-26
+  gen:father <https://www.wikidata.org/wiki/Q15972261> .
+  # and Jane de l'Angle
+  # oo Grace Robinson, 1718-01-05 - 1776-12-28
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8009425> , <#Grace_Robinson> ;
+	gen:startDate "1739-04" .
+
+<https://www.wikidata.org/wiki/Q55615178>
+  # Ven. Sir John Friend Robinson, 1st Baronet, 1754-02-15 – 1832-04-16
+  # 1st Baronet Robinson, of Rokeby Hall 1819-10-14
+  gen:father <https://www.wikidata.org/wiki/Q8009425> ;
+  gen:mother <#Grace_Robinson> .
+  # oo Mary Anne Spencer, 1766 - 1834-01-19, daughter of James Spencer and Jane Mercier
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q55615178> , <#Mary_Anne_Spencer> ;
+	gen:startDate "1786" .
+
+<https://www.wikidata.org/wiki/Q7349960>
+  # Sir Robert Spencer Robinson, 1809-01-06 – 1889-07-27
+  gen:father <https://www.wikidata.org/wiki/Q55615178> ;
+  gen:mother <#Mary_Anne_Spencer> .
+  # oo Clementina Louis, daughter of Sir John Finney Louis, 2nd Baronet and Maria Clementina Kirkpatrick
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7349960> , <#Clementina_Louis> ;
+	gen:startDate "1841-05-10" .
+
+# ----
+#<#Munbee_Goulburn>
+  # Munbee Goulburn
+  # oo Hon. Susannah Chetwynd
+
+<https://www.wikidata.org/wiki/Q18671035>
+  # Edward Goulburn, 1787 - 1868-08-24
+  gen:father <#Munbee_Goulburn> .
+  # and Hon. Susannah Chetwynd
+  # oo Hon. Catherine Montagu, d. 1865
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q18671035> , <#Catherine_Montagu> ;
+	gen:startDate "1831" .
+<https://www.wikidata.org/wiki/Q5722116>
+  # Rt. Hon. Henry Goulburn, 1784-03-19 – 1856-01-12
+  gen:father <#Munbee_Goulburn> .
+  # and Hon. Susannah Chetwynd
+  # oo Hon. Jane Montagu, d. 1857
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5722116> , <#Jane_Montagu> ;
+	gen:startDate "1811-12-20" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q21287557>
+  # Robert Ellison, 1783 – 1843-07-03
+  # oo Hon. Mary Montagu, d. 1877
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q21287557> , <#Mary_Montagu_(died_1877)> ;
+	gen:startDate "1820" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q6250416>
+  # John Nicholas Fazakerley, 1787-03-07 – 1852-07-16
+  # oo Hon. Eleanor Montagu, d. 1847-07-26
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6250416> , <#Eleanor_Montagu> ;
+	gen:startDate "1822" .
+
+# ----
+<#Alfred_Nathaniel_Curzon>
+  # Hon. Alfred Nathaniel Curzon, 1860-03-12 - 1920-09-20
+  gen:father <https://www.wikidata.org/wiki/Q54313927> .
+  # and Blanche Senhouse
+  # oo Henrietta Mary Montagu, d. 1936-09-13
+  []
+    gen:spouse <#Alfred_Nathaniel_Curzon> , <#Henrietta_Mary_Montagu> ;
+	gen:startDate "1891-04-29" .
