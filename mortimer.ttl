@@ -1,0 +1,410 @@
+@base <mortimer.ttl> .
+@prefix gen: <http://jjkoch.de/gen#> .
+@prefix wdata: <https://www.wikidata.org/wiki/> .
+@prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+
+#<https://www.wikidata.org/wiki/Q3142598>
+  # Hugues I, bishop of Coutance
+#  gen:deathDate "1025" .
+
+<https://www.wikidata.org/wiki/Q7359223>
+  # Roger de Mortemer
+#  gen:birthDate "990" ;
+#  gen:deathDate "1074~" ;
+  gen:father <https://www.wikidata.org/wiki/Q3142598> .
+  # oo ???
+
+<https://www.wikidata.org/wiki/Q3419321>
+  # Ranulph de Mortimer
+#  gen:deathDate "1104a" ;
+  gen:father <https://www.wikidata.org/wiki/Q7359223> ;
+  gen:mother <https://www.wikidata.org/wiki/Q61896459> .
+  # oo Millicent, d. 1088b
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3419321> , <https://www.wikidata.org/wiki/Q61896462> .
+  # oo Mabel
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3419321> , <https://www.wikidata.org/wiki/Q61896465> ;
+	gen:startDate "1088b" .
+
+<https://www.wikidata.org/wiki/Q19358260>
+  # Hugh I de Mortimer
+#  gen:deathDate "1148a/1150b" ;
+  gen:father <https://www.wikidata.org/wiki/Q3419321> .
+<#Hawise_de_Mortimer>
+  # Hawise de Mortimer
+  gen:father <https://www.wikidata.org/wiki/Q3419321> .
+  # oo Étienne d'Aumale, 1070b – 1127a, https://www.wikidata.org/wiki/Q2344017
+
+<https://www.wikidata.org/wiki/Q4151497>
+  # Hugh II de Mortimer
+#  gen:birthDate "1117~" ;
+#  gen:deathDate "1180~" ;
+  gen:father <https://www.wikidata.org/wiki/Q19358260> .
+  # oo Maud le Meschin
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4151497> , <https://www.wikidata.org/wiki/Q4151497> .
+
+<https://www.wikidata.org/wiki/Q7358690>
+  # Roger Mortimer of Wigmore
+#  gen:birthDate "1153b" ;
+#  gen:deathDate "1214-07-08b" ;
+  gen:father <https://www.wikidata.org/wiki/Q4151497> ;
+  gen:mother <https://www.wikidata.org/wiki/Q4151497> .
+  # oo Millicent de Ferrers
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7358690> , <ferrers.ttl#Millicent_de_Ferrers> .
+  # oo Isabel de Ferriers, d. 1252-04-19
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7358690> , <https://www.wikidata.org/wiki/Q56526476> ;
+	gen:startDate "1196b" .
+
+<https://www.wikidata.org/wiki/Q19326009>
+  # Hugh de Mortimer
+#  gen:deathDate "1227" ;
+  gen:father <https://www.wikidata.org/wiki/Q7358690> ;
+  gen:mother <https://www.wikidata.org/wiki/Q56526476> .
+  # oo Annora (Eleanor) de Braose
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q19326009> , <#Annora_de_Braose> .
+<https://www.wikidata.org/wiki/Q7288322>
+  # Ralph de Mortimer
+#  gen:birthDate "1198b" ;
+#  gen:deathDate "1246-08-06b" ;
+  gen:father <https://www.wikidata.org/wiki/Q7358690> ;
+  gen:mother <https://www.wikidata.org/wiki/Q56526476> .
+  # oo Gwladus Ddu, d. 1251
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7288322> , <https://www.wikidata.org/wiki/Q449142> ;
+	gen:startDate "1230~" .
+<https://www.wikidata.org/wiki/Q61911551>
+  # Joan de Mortimer
+#  gen:deathDate "1225" ;
+  gen:father <https://www.wikidata.org/wiki/Q7358690> ;
+  gen:mother <https://www.wikidata.org/wiki/Q56526476> .
+  # oo 1212-05 Walter de Beauchamp, 1195/1197 - 1236-04-11, https://www.wikidata.org/wiki/Q7966494
+
+<https://www.wikidata.org/wiki/Q934504>
+  # Roger Mortimer, 1st Baron Mortimer
+#  gen:birthDate "1231" ;
+#  gen:deathDate "1282-10-30" ;
+  gen:father <https://www.wikidata.org/wiki/Q7288322> ;
+  gen:mother <https://www.wikidata.org/wiki/Q449142> .
+  # oo Maud de Braose, 1224 – 1301-03-23b
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q934504> , <https://www.wikidata.org/wiki/Q939952> .
+<#Hugh_Mortimer>
+  # Hugh Mortimer
+  gen:father <https://www.wikidata.org/wiki/Q7288322> ;
+  gen:mother <https://www.wikidata.org/wiki/Q449142> .
+  # oo Agatha de Ferrers, d. 1306-05
+  []
+    gen:spouse <#Hugh_Mortimer> , <ferrers.ttl#Agatha_de_Ferrers> .
+<https://www.wikidata.org/wiki/Q61896368>
+  # Isolt de Mortimer, d. 1336a
+  gen:father <https://www.wikidata.org/wiki/Q7288322> ;
+  gen:mother <https://www.wikidata.org/wiki/Q449142> .
+  # oo 1288a/1293-01-07b Hugh Audley, 1st Baron Audley, 1267~ - 1325-11a/1326-03b, https://www.wikidata.org/wiki/Q23890898
+
+<https://www.wikidata.org/wiki/Q2240022>
+  # Edmund Mortimer, 2nd Baron Mortimer
+#  gen:birthDate "1251" ;
+#  gen:deathDate "1304-07-17" ;
+  gen:father <https://www.wikidata.org/wiki/Q934504> ;
+  gen:mother <https://www.wikidata.org/wiki/Q939952> .
+  # oo Margaret Fiennes, 1269a – 1333-02-07
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2240022> , <https://www.wikidata.org/wiki/Q11067934> ;
+	gen:startDate "1285-09" .
+<https://www.wikidata.org/wiki/Q3802282>
+  # Isabella Mortimer
+#  gen:birthDate "1247a" ;
+#  gen:deathDate "1292-04-01b" ;
+  gen:father <https://www.wikidata.org/wiki/Q934504> ;
+  gen:mother <https://www.wikidata.org/wiki/Q939952> .
+  # oo 1260-05-13 John FitzAlan, 7th Earl of Arundel, 1246-09-14 - 1272-03-18, https://www.wikidata.org/wiki/Q1529709
+<#Margaret_de_Mortimer>
+  # Margaret de Mortimer
+#  gen:deathDate "1297" ;
+  gen:father <https://www.wikidata.org/wiki/Q934504> ;
+  gen:mother <https://www.wikidata.org/wiki/Q939952> .
+  # oo Robert de Vere, 6th Earl of Oxford, 1257-06-24 - 1331-04-17, https://www.wikidata.org/wiki/Q7351443
+<https://www.wikidata.org/wiki/Q3940090>
+  # Roger Mortimer de Chirk
+#  gen:birthDate "1256~" ;
+#  gen:deathDate "1326-08-03" ;
+  gen:father <https://www.wikidata.org/wiki/Q934504> ;
+  gen:mother <https://www.wikidata.org/wiki/Q939952> .
+
+<https://www.wikidata.org/wiki/Q312990>
+  # Roger de Mortimer, 1st Earl of March
+  # 1st Earl of March 1328-08
+#  gen:birthDate "1287-04-25" ;
+#  gen:deathDate "1330-11-29" ;
+  gen:father <https://www.wikidata.org/wiki/Q2240022> ;
+  gen:mother <https://www.wikidata.org/wiki/Q11067934> .
+  # oo Joan de Geneville, 2nd Baroness Geneville, 1286-02-02 - 1356-10-19
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q312990> , <https://www.wikidata.org/wiki/Q3766298> ;
+	gen:startDate "1301" .
+<#Maud_de_Mortimer>
+  # Maud de Mortimer
+  gen:father <https://www.wikidata.org/wiki/Q2240022> ;
+  gen:mother <https://www.wikidata.org/wiki/Q11067934> .
+  # oo 1302-07-29 Sir Theobald de Verdun, 2nd Lord Verdun, 1278-09-08 - 1316-07-27, https://www.wikidata.org/wiki/Q18917476
+
+<https://www.wikidata.org/wiki/Q4303435>
+  # Sir Edmund Mortimer
+#  gen:birthDate "1302/1303" ;
+#  gen:deathDate "1331-12-16" ;
+  gen:father <https://www.wikidata.org/wiki/Q312990> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3766298> .
+  # oo Elizabeth de Badlesmere, 1313 – 1356-06-08
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4303435> , <https://www.wikidata.org/wiki/Q3723436> ;
+	gen:startDate "1316-06-27" .
+<https://www.wikidata.org/wiki/Q3813372>
+  # Katherine Mortimer, Countess of Warwick
+#  gen:birthDate "1314" ;
+#  gen:deathDate "1369-08-04" ;
+  gen:father <https://www.wikidata.org/wiki/Q312990> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3766298> .
+  # oo Thomas de Beauchamp, 11th Earl of Warwick, 1313-02-14 - 1369-11-13 , https://www.wikidata.org/wiki/Q923162
+<https://www.wikidata.org/wiki/Q4693088>
+  # Lady Agnes Mortimer
+#  gen:birthDate "1317" ;
+#  gen:deathDate "1368-07-25" ;
+  gen:father <https://www.wikidata.org/wiki/Q312990> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3766298> .
+  # oo Laurence Hastings, 1st Earl of Pembroke, 1319-03-20 - 1348-08-20, https://www.wikidata.org/wiki/Q6500641
+<#Beatrice_de_Mortimer>
+  # Beatrice de Mortimer
+#  gen:deathDate "1383-10-16" ;
+  gen:father <https://www.wikidata.org/wiki/Q312990> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3766298> .
+  # oo 1328-05~ Edward of Norfolk, 1320~ - 1334-08-09, https://www.wikidata.org/wiki/Q16834711
+<https://www.wikidata.org/wiki/Q6759745>
+  # Margaret Mortimer
+#  gen:birthDate "1304-05-02" ;
+#  gen:deathDate "1337-05-05" ;
+  gen:father <https://www.wikidata.org/wiki/Q312990> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3766298> .
+  # oo Thomas de Berkeley, 3rd Baron Berkeley, 1290 - 1361-10-27, https://www.wikidata.org/wiki/Q7795452
+
+<https://www.wikidata.org/wiki/Q679266>
+  # Roger Mortimer, 2nd Earl of March
+#  gen:birthDate "1328-11-11" ;
+#  gen:deathDate "1360-02-26" ;
+  gen:father <https://www.wikidata.org/wiki/Q4303435> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3723436> .
+  # oo Philippa de Montagu, 1332 – 1381, daughter of William Montagu, 1st Earl of Salisbury (1301 – 1344-01-30, https://www.wikidata.org/wiki/Q2481359) and oo Catherine Grandison (c. 1304 – 1349-11-23, https://www.wikidata.org/wiki/Q275660)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q679266> , <https://www.wikidata.org/wiki/Q42158820> .
+
+<https://www.wikidata.org/wiki/Q17102129>
+  # Thomas Mortimer
+#  gen:birthDate "1350" ;
+#  gen:deathDate "1403" ;
+  gen:father <https://www.wikidata.org/wiki/Q679266> .
+<https://www.wikidata.org/wiki/Q42159165>
+  # Roger Mortimer
+  gen:father <https://www.wikidata.org/wiki/Q679266> ;
+  gen:mother <https://www.wikidata.org/wiki/Q42158820> .
+<https://www.wikidata.org/wiki/Q282493>
+  # Edmund Mortimer, 3rd Earl of March
+#  gen:birthDate "1352-02-01" ;
+#  gen:deathDate "1381-12-27" ;
+  gen:father <https://www.wikidata.org/wiki/Q679266> ;
+  gen:mother <https://www.wikidata.org/wiki/Q42158820> .
+  # oo Philippa Plantagenet, 5th Countess of Ulster, 1355-08-16 - 1382-01-05
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q282493> , <https://www.wikidata.org/wiki/Q447899> ;
+	gen:startDate "1359-02-15a" .
+<https://www.wikidata.org/wiki/Q42159304>
+  # Margery Mortimer
+  gen:father <https://www.wikidata.org/wiki/Q679266> ;
+  gen:mother <https://www.wikidata.org/wiki/Q42158820> .
+<https://www.wikidata.org/wiki/Q42159717>
+  # Janet Mortimer
+  gen:father <https://www.wikidata.org/wiki/Q679266> ;
+  gen:mother <https://www.wikidata.org/wiki/Q42158820> .
+  # oo Andrew Gray of Fowlis, d. 1445, https://www.wikidata.org/wiki/Q42159812
+
+<https://www.wikidata.org/wiki/Q5363245>
+  # Elizabeth de Mortimer
+#  gen:birthDate "1371-02-12" ;
+#  gen:deathDate "1417-04-20" ;
+  gen:father <https://www.wikidata.org/wiki/Q282493> ;
+  gen:mother <https://www.wikidata.org/wiki/Q447899> .
+  # oo 1380-05-01b Sir Henry Percy, Lord Percy, 1364-05-20 - 1403-07-21, https://www.wikidata.org/wiki/Q471421
+  # oo 1406-06a Sir Thomas de Camoys, 1st Lord Camoys, 1360~ - 1421-03-28, 1st Lord Camoys 1383-08-20, https://www.wikidata.org/wiki/Q2893387, son of Sir John Camoys and Elizabeth de Latimer
+<https://www.wikidata.org/wiki/Q953078>
+  # Roger Mortimer, 4th Earl of March
+#  gen:birthDate "1374-04-11" ;
+#  gen:deathDate "1398-07-20" ;
+  gen:father <https://www.wikidata.org/wiki/Q282493> ;
+  gen:mother <https://www.wikidata.org/wiki/Q447899> .
+  # oo Lady Alianore de Holand, 1370-10-13 - 1405-10-23
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q953078> , <https://www.wikidata.org/wiki/Q4725569> ;
+	gen:startDate "1388-10-07~" .
+<#Philippa_de_Mortimer>
+  # Philippa de Mortimer
+#  gen:birthDate "1375-11-21" ;
+#  gen:deathDate "1401-09-24" ;
+  gen:father <https://www.wikidata.org/wiki/Q282493> ;
+  gen:mother <https://www.wikidata.org/wiki/Q447899> .
+  # oo 1385~ John de Hastings, 3rd Earl of Pembroke, 1372-10 – 1389-12-30, https://www.wikidata.org/wiki/Q1700393 (plantagenet.ttl)
+  # oo 1390-08-15 Richard FitzAlan, 4th/11th Earl of Arundel, 1346 - 1397-09-21, https://www.wikidata.org/wiki/Q348932
+  # oo 1398-04a/1399-11-24b Thomas Poynings, 5th Lord St. John of Basing, d. 1429-03-07, son of Luke de Poynings, Baron St. John and Isabella St. John
+<https://www.wikidata.org/wiki/Q3402270>
+  # Sir Edmund de Mortimer
+#  gen:birthDate "1376-11-09" ;
+#  gen:deathDate "1411-05-13b" ;
+  gen:father <https://www.wikidata.org/wiki/Q282493> ;
+  gen:mother <https://www.wikidata.org/wiki/Q447899> .
+  # oo Catrin ferch Owain Glyndŵr, d. 1413-12-01b, daughter of https://www.wikidata.org/wiki/Q317279 and https://www.wikidata.org/wiki/Q6759490
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3402270> , <https://www.wikidata.org/wiki/Q5053950> ;
+	gen:startDate "1402-11~" .
+
+<https://www.wikidata.org/wiki/Q256983>
+  # Lady Anne de Mortimer
+#  gen:birthDate "1390-12-27" ;
+#  gen:deathDate "1411-09-22~" ;
+  gen:father <https://www.wikidata.org/wiki/Q953078> ;
+  gen:mother <https://www.wikidata.org/wiki/Q4725569> .
+  # oo 1408-05-28 Richard of Conisburgh, 3rd Earl of Cambridge, 1375-07-20~ - 1415-08-15, https://www.wikidata.org/wiki/Q469002
+<https://www.wikidata.org/wiki/Q1286673>
+  # Edmund de Mortimer, 5th Earl of March
+#  gen:birthDate "1391-11-06" ;
+#  gen:deathDate "1425-01-18~" ;
+  gen:father <https://www.wikidata.org/wiki/Q953078> ;
+  gen:mother <https://www.wikidata.org/wiki/Q4725569> .
+  # oo Lady Anne Stafford, 1398a/1403b - 1432-09-20
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1286673>, <plantagenet.ttl#Lady_Anne_Stafford> ;
+	gen:startDate "1415~" .
+<https://www.wikidata.org/wiki/Q9311774>
+  # Roger de Mortimer
+#  gen:birthDate "1393-03-24" ;
+#  gen:deathDate "1409~" ;
+  gen:father <https://www.wikidata.org/wiki/Q953078> ;
+  gen:mother <https://www.wikidata.org/wiki/Q4725569> .
+<#Lady_Eleanor_de_Mortimer>
+  # Lady Eleanor de Mortimer
+#  gen:birthDate "1395~" ;
+#  gen:deathDate "1414-01a" ;
+  gen:father <https://www.wikidata.org/wiki/Q953078> ;
+  gen:mother <https://www.wikidata.org/wiki/Q4725569> .
+  # oo 1408a/1409-11-20b Sir Edward Courtenay, Lord Courtenay, 1385~ – 1418-08, https://www.wikidata.org/wiki/Q7526633
+  # oo 1418a Sir John Harpeden, d. 1438-05-08, https://www.wikidata.org/wiki/Q61649183
+
+# ----
+<https://www.wikidata.org/wiki/Q2344017>
+  # Étienne d'Aumale, 1070b – 1127a
+  gen:father <https://www.wikidata.org/wiki/Q952865> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2415527> .
+  # oo Hawise de Mortimer
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2344017> , <#Hawise_de_Mortimer> .
+
+# ----
+<https://www.wikidata.org/wiki/Q4151497>
+  # Maud le Meschin
+  gen:father <https://www.wikidata.org/wiki/Q16201585> ;
+  gen:mother <https://www.wikidata.org/wiki/Q56526093> .
+  # oo Hugh II de Mortimer, 1117~ - 1180~, https://www.wikidata.org/wiki/Q4151497
+
+# ----
+<https://www.wikidata.org/wiki/Q7308920>
+  # Reginald de Braose, 1176 - 1228-06-09
+  gen:father <https://www.wikidata.org/wiki/Q3779058> ;
+  gen:mother <https://www.wikidata.org/wiki/Q942269> .
+  # oo Gwladus Ddu, d. 1251
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7308920> , <https://www.wikidata.org/wiki/Q449142> ;
+	gen:startDate "1215~" .
+<#Annora_de_Braose>
+  # oo Annora (Eleanor) de Braose
+  gen:father <https://www.wikidata.org/wiki/Q3779058> ;
+  gen:mother <https://www.wikidata.org/wiki/Q942269> .
+  # oo Hugh de Mortimer, d. 1227, https://www.wikidata.org/wiki/Q19326009
+
+<https://www.wikidata.org/wiki/Q939952>
+  # Maud de Braose, 1224 – 1301-03-23b
+  gen:father <https://www.wikidata.org/wiki/Q3402278> ;
+  gen:mother <https://www.wikidata.org/wiki/Q530524> .
+  # oo Roger Mortimer, 1st Baron Mortimer, 1231 - 1282-10-30, https://www.wikidata.org/wiki/Q934504
+
+# ----
+<https://www.wikidata.org/wiki/Q56285117>
+  # Guillaume II de Fiennes, baron de Tingry, 1245 - 1302-07-08
+  gen:father <https://www.wikidata.org/wiki/Q56285638> ;
+  gen:mother <https://www.wikidata.org/wiki/Q56285642> .
+  # oo Blanche of Brienne, 1252~ – 1302~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q56285117> , <https://www.wikidata.org/wiki/Q2583415> ;
+	gen:startDate "1266" .
+
+<https://www.wikidata.org/wiki/Q11067934>
+  # Margaret Fiennes, 1269a – 1333-02-07
+  gen:father <https://www.wikidata.org/wiki/Q56285117> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2583415> .
+  # oo 1285-09 Edmund Mortimer, 2nd Baron Mortimer, 1251 - 1304-07-17, https://www.wikidata.org/wiki/Q2240022
+# ----
+#<https://www.wikidata.org/wiki/Q1167368>
+  # Jean de Brienne, Grand Butler of France
+  # oo Jeanne, Dame de Chateaudun, 1227~ – 1252a
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1167368> , <https://www.wikidata.org/wiki/Q6171996> .
+
+<https://www.wikidata.org/wiki/Q2583415>
+  # Blanche of Brienne, 1252~ – 1302~
+  gen:father <https://www.wikidata.org/wiki/Q1167368> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6171996> .
+  # oo 1266 Guillaume II de Fiennes, baron de Tingry, 1245 - 1302-07-08, https://www.wikidata.org/wiki/Q56285117
+
+# ----
+#<#Sir_Piers_de_Geneville>
+  # Sir Piers de Geneville, 1256 - 1292-06b
+  # oo Jeanne de Lusignan, 1260 – 1323-04-13
+  []
+    gen:spouse <#Sir_Piers_de_Geneville> , <https://www.wikidata.org/wiki/Q10795576> ;
+	gen:startDate "1283-10-11b" .
+
+<https://www.wikidata.org/wiki/Q3766298>
+  # Joan de Geneville, 2nd Baroness Geneville, 1286-02-02 - 1356-10-19
+  gen:father <#Sir_Piers_de_Geneville> ;
+  gen:mother <https://www.wikidata.org/wiki/Q10795576> .
+  # oo 1301 Roger de Mortimer, 1st Earl of March, 1287-04-25 - 1330-11-29, https://www.wikidata.org/wiki/Q312990
+
+# ----
+<https://www.wikidata.org/wiki/Q18917476>
+  # Sir Theobald de Verdun, 2nd Lord Verdun, 1278-09-08 - 1316-07-27
+  gen:father <https://www.wikidata.org/wiki/Q18811270> .
+  # and Margery de Bohun
+  # oo Maud de Mortimer
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q18917476> , <#Maud_de_Mortimer> ;
+	gen:startDate "1302-07-29" .
+  # oo Elizabeth de Clare, 1295-09-23 - 1360-11-12
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q18917476> , <https://www.wikidata.org/wiki/Q2002250> ;
+	gen:startDate "1313a" .
+
+<#Joan_de_Verdun>
+  # Joan de Verdun, 1303-08-10~ - 1334-10-02
+  gen:father <https://www.wikidata.org/wiki/Q18917476> ;
+  gen:mother <#Maud_de_Mortimer> .
+  # oo John de Montagu, d. 1317-08, son of https://www.wikidata.org/wiki/Q7262160
+<#Elizabeth_de_Verdun>
+  # Elizabeth de Verdun, d. 1360
+  gen:father <https://www.wikidata.org/wiki/Q18917476> ;
+  gen:mother <#Maud_de_Mortimer> .
+  # oo 1320-06-11b Bartholomew Burghersh, 1st Lord Burghersh, d. 1355-08-03, 1st Lord Burghersh 1330-01-25, https://www.wikidata.org/wiki/Q4573248, son of https://www.wikidata.org/wiki/Q7351388 and Maud Badlesmere
+<https://www.wikidata.org/wiki/Q6077823>
+  # Isabel de Verdon, 1317-03-21 – 1349-07-25
+  gen:father <https://www.wikidata.org/wiki/Q18917476> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2002250> .
+  # oo 1331b Henry de Ferrers, 2nd Lord Ferrers (of Groby), 1303b - 1343-09-15, https://www.wikidata.org/wiki/Q18954241

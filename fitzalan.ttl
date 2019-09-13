@@ -94,6 +94,11 @@
   gen:father <https://www.wikidata.org/wiki/Q2034626> ;
   gen:mother <https://www.wikidata.org/wiki/Q3611717> .
   # oo 1294-06b Henry de Percy, 1st Baron Percy of Alnwick, 1273-03-25~ - 1314-10, https://www.wikidata.org/wiki/Q3785021 -> percy.ttl
+<#Lady_Alice_FitzAlan_(born_1289)>
+  # Lady Alice FitzAlan, b. 1289
+  gen:father <https://www.wikidata.org/wiki/Q2034626> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3611717> .
+  # oo Stephen de Segrave, 3rd Lord Segrave, 1304b - 1325-12-12b, https://www.wikidata.org/wiki/Q46998171
 
 <https://www.wikidata.org/wiki/Q3934800>
   gen:name "Richard FitzAlan, 3rd/10th Earl of Arundel and 8th Earl of Surrey"@en ;
@@ -108,11 +113,11 @@
     gen:spouse <https://www.wikidata.org/wiki/Q3934800> , <https://www.wikidata.org/wiki/Q6077837> ;
 	gen:startDate "1321-02-09" ;
 	gen:annulledDate "1344-12-04".
-  # oo Lady Eleanor Plantagenet, 1318-09-11 - 1372-01-11
+  # oo Eleanor of Lancaster, 1318-09-11 - 1372-01-11
   []
     gen:spouse <https://www.wikidata.org/wiki/Q3934800> , <https://www.wikidata.org/wiki/Q1325750> ;
 	gen:startDate "1344-02-05" .
-<#Lady_Alice_FitzAlan>
+<#Lady_Alice_FitzAlan_(died_1385)>
   gen:name "Lady Alice FitzAlan"@en ;
   gen:birthDate "1314" ;
   gen:deathDate "1385/1386" ;
@@ -158,7 +163,7 @@
 	gen:startDate "1359-09" .
   # oo Philippa de Mortimer, 1375-11-21 - 1401-09-24
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q348932> , <#Philippa_de_Mortimer> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q348932> , <mortimer.ttl#Philippa_de_Mortimer> ;
 	gen:startDate "1390-08-15" .
 <https://www.wikidata.org/wiki/Q6205592>
   gen:name "Lady Joan FitzAlan"@en ;
@@ -262,7 +267,7 @@
   gen:mother <#Eleanor_Berkeley> .
   # oo Constance Cornwall, d. 1429
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q3809262> , <#Constance_Cornwall> .
+    gen:spouse <https://www.wikidata.org/wiki/Q3809262> , <plantagenet.ttl#Constance_Cornwall> .
   # oo Maud Lovell, d. 1436-05-19, daughter of Sir Robert Lovell and Elizabeth de Bryan
   []
     gen:spouse <https://www.wikidata.org/wiki/Q3809262> , <#Maud_Lovell> ;
@@ -407,23 +412,28 @@
     gen:spouse <#William_le_Botiler> , <#Lady_Margaret_FitzAlan> .
 
 # ----
-<https://www.wikidata.org/wiki/Q3802282>
-  # Isabella Mortimer, 1247a - 1300
-  gen:father <https://www.wikidata.org/wiki/Q934504> ;
-  gen:mother <https://www.wikidata.org/wiki/Q939952> .
-  # oo 1260-05-14b John FitzAlan, 7th Earl of Arundel, 1246-09-14 - 1272-03-18, https://www.wikidata.org/wiki/Q1529709
+<https://www.wikidata.org/wiki/Q46998171>
+  # Stephen de Segrave, 3rd Lord Segrave, 1304b - 1325-12-12b
+  gen:father <https://www.wikidata.org/wiki/Q7528055> .
+  # and Christine de Plessis
+  # oo Lady Alice FitzAlan, b. 1289
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q46998171> , <#Lady_Alice_FitzAlan_(born_1289)> .
+
+<https://www.wikidata.org/wiki/Q16863364>
+  # John Segrave, 4th Baron Segrave, 1315-05-04 - 1353-04-01
+  gen:father <https://www.wikidata.org/wiki/Q46998171> ;
+  gen:mother <#Lady_Alice_FitzAlan_(born_1289)> .
+  # oo Margaret Marshall of Brotherton, Duchess of Norfolk, 1320 - 1399-03-24
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16863364> , <https://www.wikidata.org/wiki/Q2559464> ;
+	gen:startDate "1335~" .
 
 # ----
 <https://www.wikidata.org/wiki/Q3611717>
   # Alice of Saluzzo, d. 1292-09-25
   gen:father <https://www.wikidata.org/wiki/Q922316> .
   # oo 1285b Richard FitzAlan, 1st/8th Earl of Arundel, 1267-02-03 - 1302-03-09, https://www.wikidata.org/wiki/Q2034626
-
-# ----
-<https://www.wikidata.org/wiki/Q4726175>
-  # Alice de Warenne, 1287-06-15 - 1338-05-23
-  gen:father <https://www.wikidata.org/wiki/Q16863340> .
-  # oo 1305 Edmund FitzAlan, 2nd/9th Earl of Arundel, 1285-05-01 - 1326-11-17, https://www.wikidata.org/wiki/Q2004845
 
 # ----
 <https://www.wikidata.org/wiki/Q6077837>
@@ -439,25 +449,11 @@
   # oo 1385b John FitzAlan, 2nd Baron Arundel, 1364-11-30 - 1390-08-14, https://www.wikidata.org/wiki/Q6233261
 
 # ----
-# plantagenet.ttl:
-<https://www.wikidata.org/wiki/Q1325750>
-  # Lady Eleanor Plantagenet, 1318-09-11 - 1372-01-11
-  gen:father <https://www.wikidata.org/wiki/Q950456> ;
-  gen:mother <https://www.wikidata.org/wiki/Q3852373> .
-  # oo 1344-02-05 Richard FitzAlan, 3rd/10th Earl of Arundel and 8th Earl of Surrey, 1306~ - 1376-01-24, https://www.wikidata.org/wiki/Q3934800
-
-<#Constance_Cornwall>
-  # Constance Cornwall, d. 1429
-  gen:father <https://www.wikidata.org/wiki/Q6227170> ;
-  gen:mother <https://www.wikidata.org/wiki/Q456462> .
-  # oo John d'Arundel, 7th/14th Earl of Arundel, 1408-02-14 - 1435-06-12, https://www.wikidata.org/wiki/Q3809262
-
-# ----
 #<https://www.wikidata.org/wiki/Q4089851>
   # John de Bohun, 5th Earl of Hereford, 1306-11-23 – 1336-01-20
   # oo Lady Alice FitzAlan, 1314 - 1385/1386
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q4089851> , <#Lady_Alice_FitzAlan> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q4089851> , <#Lady_Alice_FitzAlan_(died_1385)> ;
 	gen:startDate "1325" .
 
 # ----
@@ -496,21 +492,6 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q2379648> , <https://www.wikidata.org/wiki/Q6205592> ;
 	gen:startDate "1359~" .
-
-# ----
-<#Philippa_de_Mortimer>
-  # Philippa de Mortimer, 1375-11-21 - 1401-09-24
-  gen:father <https://www.wikidata.org/wiki/Q282493> ;
-  gen:mother <https://www.wikidata.org/wiki/Q447899> .
-  # oo 1390-08-15 Richard FitzAlan, 4th/11th Earl of Arundel, 1346 - 1397-09-21, https://www.wikidata.org/wiki/Q348932
-
-# ----
-#<https://www.wikidata.org/wiki/Q933789>
-  # Thomas de Holand, 2nd/5th Earl of Kent, 1451~ - 1397-04-25
-  # oo Lady Alice FitzAlan, 1350 - 1416-03-17
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q933789> , <https://www.wikidata.org/wiki/Q1702633> ;
-	gen:startDate "1364-04-10~" .
 
 # ----
 <#Sir_John_Mautravers>
@@ -562,14 +543,7 @@
   gen:father <https://www.wikidata.org/wiki/Q201575> ;
   gen:mother <https://www.wikidata.org/wiki/Q2098219> .
   # oo 1405-11-26 Thomas Fitzalan, 5th/12th Earl of Arundel, 1381-10-13 - 1415-10-13, https://www.wikidata.org/wiki/Q715792
-
-# ----
-#<https://www.wikidata.org/wiki/Q8020820>
-  # William de Ros, 6th Lord de Ros of Helmsley, 1370~ – 1414-11-01
-  # oo Margaret d'Arundel, 1372 - 1439-07-07
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q8020820> , <#Margaret_d'Arundel> ;
-	gen:startDate "1394-10-09" .
+  # oo 1433-01-20 John Holland, 2nd Duke of Exeter, 1395-03-29 - 1447-08-05, https://www.wikidata.org/wiki/Q3172556
 
 # ----
 <nevill.tll#Lady_Joan_Neville>
@@ -632,10 +606,19 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q717276> , <https://www.wikidata.org/wiki/Q236994> .
 
+<#Alice_d'Aubigny>
+  # Alice d'Aubigny, 1141 - 1188-09-11
+  gen:father <https://www.wikidata.org/wiki/Q717276> ;
+  gen:mother <https://www.wikidata.org/wiki/Q236994> .
+  # oo Jean d'Eu, Comte d'Eu, 1130~ - 1170-06-26, https://www.wikidata.org/wiki/Q3175211
 <https://www.wikidata.org/wiki/Q1311712>
   # William d'Aubigny, 2nd Earl of Arundel, 1150 - 1193-12-24
   gen:father <https://www.wikidata.org/wiki/Q717276> ;
   gen:mother <https://www.wikidata.org/wiki/Q236994> .
+  # oo Matilda de St. Hilary du Harcouet, daughter of Jacques de St. Hilary du Harcouet
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1311712> , <#Matilda_de_St_Hilary> ;
+	gen:startDate "1173a" .
 
 <https://www.wikidata.org/wiki/Q2581181>
   # William d'Aubigny, 3rd Earl of Arundel, 1180b – 1221-02-01
@@ -644,6 +627,11 @@
   # oo Mabel of Chester
   []
     gen:spouse <https://www.wikidata.org/wiki/Q2581181> , <#Mabel_of_Chester> .
+<#Matilda_d'Aubigny>
+  # Matilda d'Aubigny
+  gen:father <https://www.wikidata.org/wiki/Q1311712> ;
+  gen:mother <#Matilda_de_St_Hilary> .
+  # oo 1207b William de Warenne, 5th Earl of Surrey, 1166 - 1240-05-27, https://www.wikidata.org/wiki/Q1344508
 
 <https://www.wikidata.org/wiki/Q7606571>
   # William d'Aubigny, 4th Earl of Arundel, 1203~ - 1224-08-07b
@@ -653,6 +641,10 @@
   # Hugh d'Aubigny, 5th Earl of Arundel, 1215 - 1243-05-07
   gen:father <https://www.wikidata.org/wiki/Q2581181> ;
   gen:mother <#Mabel_of_Chester> .
+  # oo Isabel de Warenne, d. 1282-09-20b
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5933150> , <https://www.wikidata.org/wiki/Q18529204> ;
+	gen:startDate "1234" .
 <#Isabel_d%27Aubigny>
   gen:father <https://www.wikidata.org/wiki/Q2581181> ;
   gen:mother <#Mabel_of_Chester> .

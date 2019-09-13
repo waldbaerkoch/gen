@@ -232,10 +232,10 @@
     gen:spouse <https://www.wikidata.org/wiki/Q1360375> , <https://www.wikidata.org/wiki/Q4726173> ;
 	gen:startDate "1253" ;
 	gen:annulledDate "1285" .
-  # oo Jeanne d'Acre, 1272 - 1307-04-23
+  # oo Joan of Acre, 1272 - 1307-04-23
   []
     gen:spouse <https://www.wikidata.org/wiki/Q1360375> , <https://www.wikidata.org/wiki/Q257968> ;
-	gen:startDate "1290-04-30" .
+	gen:startDate "1290-04-30/-05-02" .
 <https://www.wikidata.org/wiki/Q2428399>
   # Thomas de Clare, 1st Lord of Thomond, 1st Lord of Inchiquin and Youghal, 1245~ - 1287-08-29
   gen:father <https://www.wikidata.org/wiki/Q661604> ;
@@ -426,34 +426,46 @@
     gen:spouse <https://www.wikidata.org/wiki/Q1670013> , <#Basilia_de_Clare> .
 
 # ----
-<https://www.wikidata.org/wiki/Q101384>
-  # Henry I of England, 1068 - 1135-12-01
-  gen:father <https://www.wikidata.org/wiki/Q37594> ;
-  gen:mother <https://www.wikidata.org/wiki/Q391944> .
-
 <https://www.wikidata.org/wiki/Q462997>
   # Robert FitzRoy, 1st Earl of Gloucester, 1100b - 1147-10-31
-  gen:father <https://www.wikidata.org/wiki/Q101384> .
+  # 1st Earl of Gloucester 1122
+  gen:father <https://www.wikidata.org/wiki/Q101384> . # illegitimate
   # oo Mabel FitzRobert, 1100~ – 1157-09-29
   []
     gen:spouse <https://www.wikidata.org/wiki/Q462997> , <https://www.wikidata.org/wiki/Q3841908> .
 
 <https://www.wikidata.org/wiki/Q330360>
-  # William Fitz Robert, 2nd Earl of Gloucester, 1112/1116/1122 - 1183-11-23
+  # William Fitz Robert, 2nd Earl of Gloucester, 1112-11-23/1116-11-23/1122 - 1183-11-23
   gen:father <https://www.wikidata.org/wiki/Q462997> ;
   gen:mother <https://www.wikidata.org/wiki/Q3841908> .
+  # oo Hawise de Beaumont, d. 1197-04-24
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q330360> , <https://www.wikidata.org/wiki/Q55973888> ;
+	gen:startDate "1150~" .
 
 <#Amice_fitz_William>
   # Amice fitz William, 1160 - 1220
-  gen:father <https://www.wikidata.org/wiki/Q330360> .
-  # and Hawise de Beaumont
+  gen:father <https://www.wikidata.org/wiki/Q330360> ;
+  gen:mother <https://www.wikidata.org/wiki/Q55973888> .
   # oo 1172~ Richard de Clare, 3rd Earl of Hertford, 1153 - 1217-11-08, https://www.wikidata.org/wiki/Q2151007
+<https://www.wikidata.org/wiki/Q242636>
+  # Isabel, Countess of Gloucester, 1173~ – 1217-10-14
+  # Countess of Gloucester 1183-11-23 - 1199, 1213
+  gen:father <https://www.wikidata.org/wiki/Q330360> ;
+  gen:mother <https://www.wikidata.org/wiki/Q55973888> .
+  # oo 1189-08-29 (div 1199) John I 'Lackland', King of England, 1166-12-24 - 1216-10-19, https://www.wikidata.org/wiki/Q129308
 # ----
 <https://www.wikidata.org/wiki/Q3841908>
   # Mabel FitzRobert, 1100~ – 1157-09-29
   gen:father <https://www.wikidata.org/wiki/Q1255756> ;
   gen:mother <https://www.wikidata.org/wiki/Q56599142> .
   # oo Robert FitzRoy, 1st Earl of Gloucester, 1100b - 1147-10-31, https://www.wikidata.org/wiki/Q462997
+# ----
+<https://www.wikidata.org/wiki/Q55973888>
+  # Hawise de Beaumont, d. 1197-04-24
+  gen:father <https://www.wikidata.org/wiki/Q1364180> ;
+  gen:mother <https://www.wikidata.org/wiki/Q59154776> .
+  # oo 1150~ William Fitz Robert, 2nd Earl of Gloucester, 1112/1116/1122 - 1183-11-23, https://www.wikidata.org/wiki/Q330360
 
 # ----
 <#William_de_Munchensy>
@@ -480,11 +492,20 @@
     gen:spouse <https://www.wikidata.org/wiki/Q348911> , <https://www.wikidata.org/wiki/Q783126> ;
 	gen:startDate "1189-08" .
 
+<https://www.wikidata.org/wiki/Q731389>
+  # William Marshal, 2nd Earl of Pembroke, 1190~ - 1231-04-05
+  gen:father <https://www.wikidata.org/wiki/Q348911> ;
+  gen:mother <https://www.wikidata.org/wiki/Q783126> .
+  # oo Eleanor of England, 1215 - 1275-04-13
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q731389> , <https://www.wikidata.org/wiki/Q271382> ;
+	gen:startDate "1224-04-23" .
 <https://www.wikidata.org/wiki/Q449884>
   # Isabel Marshal, 1200-10-09 - 1240-01-17
   gen:father <https://www.wikidata.org/wiki/Q348911> ;
   gen:mother <https://www.wikidata.org/wiki/Q783126> .
   # oo 1217 Gilbert de Clare, 5th Earl of Gloucester, 1180-10-25 - 1230-10-25, https://www.wikidata.org/wiki/Q463491
+  # oo 1231-03-30 Richard Plantagenet, 1st Earl of Cornwall, 1209-01-05 - 1272-04-02, https://www.wikidata.org/wiki/Q314527
 <#Lady_Sibyl_Marshal>
   # Lady Sibyl Marshal, 1201 - 1238b
   gen:father <https://www.wikidata.org/wiki/Q348911> ;
@@ -537,23 +558,6 @@
   gen:father <https://www.wikidata.org/wiki/Q1385956> ;
   gen:mother <https://www.wikidata.org/wiki/Q2262964> .
   # oo 1253 (ann 1285) Gilbert de Clare, 7th Earl of Gloucester, 1243-09-02 - 1295-12-07, https://www.wikidata.org/wiki/Q1360375
-
-# ----
-<https://www.wikidata.org/wiki/Q257968>
-  # Jeanne d'Acre, 1272 - 1307-04-23
-  gen:father <https://www.wikidata.org/wiki/Q57798> ;
-  gen:mother <https://www.wikidata.org/wiki/Q59604> .
-  # oo 1290-04-30 Gilbert de Clare, 7th Earl of Gloucester, 1243-09-02 - 1295-12-07, https://www.wikidata.org/wiki/Q1360375
-
-# ----
-<https://www.wikidata.org/wiki/Q283151>
-  # Edmund Plantagenet, 2nd Earl of Cornwall (Edmund of Almain), 1249-12-26 - 1300-09-25
-  gen:father <https://www.wikidata.org/wiki/Q314527> ;
-  gen:mother <https://www.wikidata.org/wiki/Q267295> .
-  # oo Margaret de Clare, 1250 - 1312-02
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q283151> , <https://www.wikidata.org/wiki/Q19959200> ;
-	gen:startDate "1272-10-06" .
 
 # ----
 #<https://www.wikidata.org/wiki/Q6793554>
@@ -630,14 +634,6 @@
 	gen:startDate "1313b" .
 
 # ----
-#<https://www.wikidata.org/wiki/Q18917476>
-  # Theobald de Verdon, 1278-09-08 - 1316-07-27
-  # oo Elizabeth de Clare, 1295-09-23 - 1360-11-12
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q18917476> , <https://www.wikidata.org/wiki/Q2002250> ;
-	gen:startDate "1313a" .
-
-# ----
 #<https://www.wikidata.org/wiki/Q2380126>
   # Roger d'Amory, 1290 - 1322-03-14
   # oo Elizabeth de Clare, 1295-09-23 - 1360-11-12
@@ -680,3 +676,9 @@
   gen:mother <https://www.wikidata.org/wiki/Q3846899> .
   # oo 1336b Robert FitzPayn, d. 1336b
   # oo 1336-03-27b John de Vere, 7th Earl of Oxford, 1312-03-12 - 1360-01-23/-24, https://www.wikidata.org/wiki/Q3390008
+<https://www.wikidata.org/wiki/Q3723436>
+  # Elizabeth de Badlesmere, 1313 – 1356-06-08
+  gen:father <https://www.wikidata.org/wiki/Q4865294> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3846899> .
+  # oo 1316-06-27 Edmund Mortimer, 1302/1303 - 1331-12-16, https://www.wikidata.org/wiki/Q4303435
+  # oo William de Bohun, 1st Earl of Northampton, 1311~ - 1360-09-16, 1st Earl of Northampton 1337, https://www.wikidata.org/wiki/Q3120286, son of https://www.wikidata.org/wiki/Q2527958 and https://www.wikidata.org/wiki/Q2435894
