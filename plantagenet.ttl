@@ -1850,16 +1850,6 @@
 	gen:startDate "1235-07-20" .
 
 # ----
-<https://www.wikidata.org/wiki/Q310092>
-  # Simon de Montfort, 6th Earl of Leicester, 1208-05-23 - 1265-08-04
-  gen:father <https://www.wikidata.org/wiki/Q303703> ;
-  gen:mother <https://www.wikidata.org/wiki/Q1244221> .
-  # oo Eleanor of England, 1215 - 1275-04-13
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q310092> , <https://www.wikidata.org/wiki/Q271382> ;
-	gen:startDate "1238-01-07" .
-
-# ----
 <https://www.wikidata.org/wiki/Q453989>
   # Jean II, duc de Bretagne, 1239-01-03 - 1305-11-16/-18
   gen:father <https://www.wikidata.org/wiki/Q381851> ;
@@ -2211,12 +2201,18 @@
   # oo 1342-09-09 Lionel of Antwerp, 1st Duke of Clarence, 1338-11-29 - 1368-10-17, https://www.wikidata.org/wiki/Q313846
 
 # ----
-#<https://www.wikidata.org/wiki/Q645900>
+<https://www.wikidata.org/wiki/Q6537248>
+  # Lewis de Beaumont, Bishop of Durham, 1270 - 1333-09-24
+  gen:father <https://www.wikidata.org/wiki/Q1390153> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2827021> .
+<https://www.wikidata.org/wiki/Q645900>
   # Henry de Beaumont, 1st Baron Beaumont
   # 1st Lord Beaumont 1309-03-04
   # 1st Earl of Buchan 1334-01-22
 #  gen:birthDate "1280b" ;
 #  gen:deathDate "1340-03-10" .
+  gen:father <https://www.wikidata.org/wiki/Q1390153> ; # Louis de Brienne
+  gen:mother <https://www.wikidata.org/wiki/Q2827021> . # Agnès de Beaumont-au-Maine
   # oo Alice Comyn, Countess of Buchan, 1289 - 1349-07-03
   []
     gen:spouse <https://www.wikidata.org/wiki/Q645900> , <https://www.wikidata.org/wiki/Q3437811> .
@@ -2245,6 +2241,73 @@
   # oo Margaret de Vere, d. 1398-06-16
   []
     gen:spouse <https://www.wikidata.org/wiki/Q61927377> , <https://www.wikidata.org/wiki/Q16207660> .
+
+<https://www.wikidata.org/wiki/Q1699295>
+  # John Beaumont, 4th Baron Beaumont, 1361~ – 1396-09-09
+  gen:father <https://www.wikidata.org/wiki/Q61927377> ;
+  gen:mother <https://www.wikidata.org/wiki/Q16207660> .
+  # oo Catherine Everingham, 1367 – 1426/1428, daughter of Sir Thomas Everingham
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1699295> , <#Catherine_Everingham> ;
+	gen:startDate "1389" .
+<https://www.wikidata.org/wiki/Q61927370>
+  # Elizabeth Beaumont, 1389 - 1477
+  gen:father <https://www.wikidata.org/wiki/Q61927377> ;
+  gen:mother <https://www.wikidata.org/wiki/Q16207660> .
+  # oo Sir Richard de Hastings, https://www.wikidata.org/wiki/Q61927367, son of Sir Ralph Hastinges and Maud de St. John
+  # -> ????? Edith de Stourton, d. 1441-06-13, https://www.wikidata.org/wiki/Q61927337
+  #    oo d. 1412/1414, https://www.wikidata.org/wiki/Q61927334, son of https://www.wikidata.org/wiki/Q61927343 and https://www.wikidata.org/wiki/Q61927344
+  #    -> Margaret Beauchamp of Bletso, 1405-01-01 - 1482~, https://www.wikidata.org/wiki/Q2075948
+
+<#Henry_Beaumont,_5th_Baron_Beaumont>
+  # Henry Beaumont, 5th Baron Beaumont, 1380~ - 1413-06
+  gen:father <https://www.wikidata.org/wiki/Q1699295> ;
+  gen:mother <#Catherine_Everingham> .
+  # oo Elizabeth Willoughby of Eresby, 1384~ - 1428-11-12b
+  []
+    gen:spouse <#Henry_Beaumont,_5th_Baron_Beaumont> , <willoughby.ttl#Elizabeth_Willoughby_of_Eresby> ;
+	gen:startDate "1405-07b" .
+<#Elizabeth_Beaumont>
+  # Elizabeth Beaumont, d. 1415-07-20a
+  gen:father <https://www.wikidata.org/wiki/Q1699295> ;
+  gen:mother <#Catherine_Everingham> .
+  # oo 1411b William de Botreaux, 3rd Lord Botreaux, 1389 - 1462, https://www.wikidata.org/wiki/Q8020765 (de_vere.ttl)
+
+<https://www.wikidata.org/wiki/Q1699294>
+  # John de Beaumont, 1st Viscount Beaumont, 1410-08-16 - 1460-07-10
+  # 6th Baron Beaumont 1413-06
+  # Comte de Boulogne 1436-07-27
+  # 1st Viscount Beaumont 1440-02-12
+  # Vicomte de Beaumont, in Maine 1441-01-18
+  gen:father <#Henry_Beaumont,_5th_Baron_Beaumont> ;
+  gen:mother <willoughby.ttl#Elizabeth_Willoughby_of_Eresby> .
+  # oo Elizabeth Phelip, d. 1441-10-30b
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1699294> , <#Elizabeth_Phelip> ;
+	gen:startDate "1425-07-24a/1436-07-03b".
+  # oo Lady Katherine Neville, 1397~ - 1483a
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1699294> , <https://www.wikidata.org/wiki/Q252569> ;
+	gen:startDate "1442a" .
+
+<https://www.wikidata.org/wiki/Q2578004>
+  # Sir William de Beaumont, 2nd Viscount Beaumont, 1438-04 – 1507-12-19
+  gen:father <https://www.wikidata.org/wiki/Q1699294> ;
+  gen:mother <#Elizabeth_Phelip> .
+  # oo Lady Joan Stafford
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2578004>, <talbot.ttl#Lady_Joan_Stafford> ;
+	gen:startDate "1461-03-04b" ;
+	gen:annulledDate "1477b" .
+  # oo Elizabeth Scrope, d. 1537-06-26, daughter of Sir Richard Scrope (son of https://www.wikidata.org/wiki/Q27493876 and Elizabeth Scrope) and Eleanor Washbourne
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2578004>, <#Elizabeth_Scrope> ;
+	gen:startDate "1486-04-24" .
+<#Joan_Beaumont>
+  # Joan Beaumont, d. 1466-08-05
+  gen:father <https://www.wikidata.org/wiki/Q1699294> ;
+  gen:mother <#Elizabeth_Phelip> .
+  # oo 1465 Sir William Stanley, 1437 - 1495-02-16, https://www.wikidata.org/wiki/Q2580640
 # ----
 <https://www.wikidata.org/wiki/Q3437811>
   # Alice Comyn, Countess of Buchan
@@ -2253,6 +2316,12 @@
 #  gen:deathDate "1349-07-03" ;
   gen:father <https://www.wikidata.org/wiki/Q29587346> ;
   gen:mother <https://www.wikidata.org/wiki/Q61566585> .
+# ----
+<#Elizabeth_Phelip>
+  # oo Elizabeth Phelip, d. 1441-10-30b
+  gen:father <https://www.wikidata.org/wiki/Q8016848> .
+  # and Joan Bardolf
+  # oo 1425-07-24a/1436-07-03b John de Beaumont, 1st Viscount Beaumont, 1410-08-16 - 1460-07-10, https://www.wikidata.org/wiki/Q1699294
 
 # ----
 <https://www.wikidata.org/wiki/Q1342999>
