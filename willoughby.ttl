@@ -110,7 +110,7 @@
   # Elizabeth Willoughby of Eresby, 1384~ - 1428-11-12b
   gen:father <https://www.wikidata.org/wiki/Q2581065> ;
   gen:mother <#Lucy_Lestrange> .
-  # oo 1405-07b Henry Beaumont, 5th Baron Beaumont, 1380~ - 1413-06, plantagenet.ttl#Henry_Beaumont,_5th_Baron_Beaumont
+  # oo 1405-07b Henry Beaumont, 5th Baron Beaumont, 1380~ - 1413-06, brienne.ttl#Henry_Beaumont,_5th_Baron_Beaumont
 <#John_Willoughby>
   # John Willoughby, 1400~ - 1437-02-24
   # 7th Lord Latimer, of Corby [E., 1290] 1430-12-10, de jure
@@ -400,6 +400,10 @@
   # and Eleanor Hobson
   # oo 1798-10-30 John Savile Foljambe, 1805-01-14
 
+<#Octavia_Willoughby>
+  # Octavia Willoughby, d. 1901-06-19
+  gen:father <https://www.wikidata.org/wiki/Q5275592> .
+  # oo 1872-04-04 Sir George Howland Beaumont, 9th Baronet, 1828-09-12 - 1882-06-08, brienne.ttl#Sir_George_Beaumont,_9th_Baronet
 <#Harriet_Cassandra_Willoughby>
   # Hon. Harriet Cassandra Willoughby, d. 1903-09-28
   gen:father <#Henry_Willoughby> ;
@@ -1339,8 +1343,26 @@
 	gen:startDate "1679-08-25" .
 
 # ----
-#<#Sir_Beaumont_Dixie,_2nd_Baronet>
+#<https://www.wikidata.org/wiki/Q7529868>
+  # Sir Wolstan Dixie of Appleby Magna and then Market Bosworth, 1576 – 1650-07-25
+  # oo Frances Beaumont
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7529868> , <brienne.ttl#Frances_Beaumont> .
+
+<#Sir_Wolstan_Dixie,_1st_Baronet>
+  # Sir Wolstan Dixie, 1st Baronet, d. 1682-02-13
+  # 1st Baronet Dixie, of Market Bosworth, co. Leicester 1660-07-14
+  gen:father <https://www.wikidata.org/wiki/Q7529868> ;
+  gen:mother <brienne.ttl#Frances_Beaumont> .
+  # oo Barbara Beaumont, 1605-09 - 1666-12-28~
+  []
+    gen:spouse <#Sir_Wolstan_Dixie,_1st_Baronet> , <brienne.ttl#Barbara_Beaumont> ;
+	gen:startDate "1629" .
+
+<#Sir_Beaumont_Dixie,_2nd_Baronet>
   # Sir Beaumont Dixie, 2nd Baronet, 1629 - 1692-05
+  gen:father <#Sir_Wolstan_Dixie,_1st_Baronet> ;
+  gen:mother <brienne.ttl#Barbara_Beaumont> .
   # oo Mary Willoughby, d. 1710-11-30~, daughter of William Willoughby
   []
     gen:spouse <#Sir_Beaumont_Dixie,_2nd_Baronet> , <#Mary_Willoughby> .

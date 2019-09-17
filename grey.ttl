@@ -3369,9 +3369,37 @@
   # oo 1418 Sir John Grey, 1st Comte de Tancarville, 1384a - 1421-03-22, https://www.wikidata.org/wiki/Q6236303
 
 # ----
-#<https://www.wikidata.org/wiki/Q646476>
+#<#Sir_John_Tuchet>
+  # Sir John Tuchet, 1327 — 1371
+  # oo Joan Audley, 1331 - 1393
+  []
+    gen:spouse <#Sir_John_Tuchet> , <plantagenet.ttl#Joan_Audley> .
+
+<#John_Tuchet>
+  # John Tuchet
+  gen:father <#Sir_John_Tuchet> ;
+  gen:mother <plantagenet.ttl#Joan_Audley> .
+  # oo Maud
+
+<https://www.wikidata.org/wiki/Q16150122>
+  # John Tuchet 4th Lord Audley (of Heleigh), 1371-04-23 - 1408-12-19
+  # 1st Baron Tuchet 1403
+  # 4th Lord Audley, of Heleigh 1403-10-20
+  gen:father <#John_Tuchet> .
+  # and Maud
+  # oo Elizabeth Stafford, daughter of Sir Humphrey Stafford and Alice Grenville
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16150122> , <#Elizabeth_Stafford> ;
+	gen:startDate "1398b" .
+
+<https://www.wikidata.org/wiki/Q646476>
   # James Tuchet, 5th Baron Audley, 1398~ – 1459-09-23
-  # 5th Baron Audley, 2nd Baron Tuchet
+  gen:father <https://www.wikidata.org/wiki/Q16150122> ;
+  gen:mother <#Elizabeth_Stafford> .
+  # oo Margaret de Ros, d. 1423-09a
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q646476> , <de_ros.ttl#Margaret_de_Ros_(died_1423a)> ;
+	gen:startDate "1415-03" .
   # oo Eleanor Holland, b. 1407~
   []
     gen:spouse <https://www.wikidata.org/wiki/Q646476> , <#Eleanor_Holland> ;
