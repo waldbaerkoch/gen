@@ -1,0 +1,573 @@
+@base <beaumont.ttl> .
+@prefix gen: <http://jjkoch.de/gen#> .
+@prefix wdata: <https://www.wikidata.org/wiki/> .
+@prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+
+#<https://www.wikidata.org/wiki/Q18239110>
+  # Bruno Ier de Harcourt, d. 775
+
+<https://www.wikidata.org/wiki/Q9667604>
+  # Bruno II de Harcourt, 756 - 813
+  gen:father <https://www.wikidata.org/wiki/Q18239110> .
+
+<https://www.wikidata.org/wiki/Q826238>
+  # Bernard the Dane, 880 - 960
+  gen:father <https://www.wikidata.org/wiki/Q9667604> .
+
+<https://www.wikidata.org/wiki/Q762329>
+  # Torf, Baron of Tourville
+  gen:father <https://www.wikidata.org/wiki/Q826238> .
+
+<https://www.wikidata.org/wiki/Q18121898>
+  # Turold de Pont-Audemer, 945 - 1040
+  gen:father <https://www.wikidata.org/wiki/Q762329> .
+
+<https://www.wikidata.org/wiki/Q1282350>
+  # Humphrey de Vielles, d. 1050~
+  gen:father <https://www.wikidata.org/wiki/Q18121898> .
+
+<https://www.wikidata.org/wiki/Q1370334>
+  gen:name "Roger de Beaumont, Seigneur de Portaudemer"@en ;
+  gen:birthDate "1015~" ;
+  gen:deathDate "1094-11-29" ;
+  gen:father <https://www.wikidata.org/wiki/Q1282350> .
+  # oo Adeline of Meulan, 1081-04-08
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1370334> , <https://www.wikidata.org/wiki/Q18606253> .
+
+<https://www.wikidata.org/wiki/Q1386498> # -> Earl of Leicester
+  # Robert de Beaumont, 1st Earl of Leicester, 1046~ - 1118-06-05
+  gen:father <https://www.wikidata.org/wiki/Q1370334> ;
+  gen:mother <https://www.wikidata.org/wiki/Q18606253> .
+<https://www.wikidata.org/wiki/Q973978> # -> Earl of Warwick
+  # Henry de Beaumont, 1st Earl of Warwick, 1050~ - 1119-06-20
+  gen:father <https://www.wikidata.org/wiki/Q1370334> ;
+  gen:mother <https://www.wikidata.org/wiki/Q18606253> .
+
+
+# Earl of Leicester
+<https://www.wikidata.org/wiki/Q1386498>
+  gen:name "Robert de Beaumont, 1st Earl of Leicester"@en ;
+  # Comte de Meulan
+  # 1st Earl of Leicester 1107
+  gen:birthDate "1046~" ;
+  gen:deathDate "1118-06-05" ;
+  gen:father <https://www.wikidata.org/wiki/Q1370334> ;
+  gen:mother <https://www.wikidata.org/wiki/Q18606253> .
+  # oo Isabelle de Vermandois, 1085~ - 1131-02-13
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1386498> , <https://www.wikidata.org/wiki/Q204351> ;
+	gen:startDate "1096" .
+
+<https://www.wikidata.org/wiki/Q1363300> # -> Comte de Meulan
+  # Waleran de Beaumont, 1st Earl of Worcester, 1104 – 1166-04-09
+  gen:father <https://www.wikidata.org/wiki/Q1386498> ;
+  gen:mother <https://www.wikidata.org/wiki/Q204351> .
+<https://www.wikidata.org/wiki/Q1364180>
+  # Robert de Beaumont, 2nd Earl of Leicester, 1104 – 1168-04-05
+  gen:father <https://www.wikidata.org/wiki/Q1386498> ;
+  gen:mother <https://www.wikidata.org/wiki/Q204351> .
+  # oo Amice de Montfort (de Gaël), d. 1168-08-31a, daughter or sister of Raoul II de Montfort (de Gaël), Seigneur de Montfort et Gaël (https://www.wikidata.org/wiki/Q59262163, son of Raoul Ier de Gaël (1040b - 1099b, https://www.wikidata.org/wiki/Q1382635, son of Ralph l'Écuyer (1010 - 1068~, https://www.wikidata.org/wiki/Q1973101)) and Emma de Guader (https://www.wikidata.org/wiki/Q640060))
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1364180> , <https://www.wikidata.org/wiki/Q59154776> ;
+	gen:startDate "1120a" .
+<https://www.wikidata.org/wiki/Q3787454>
+  # Hugh de Beaumont, 1st Earl of Bedford, 1106 - 1141
+  # 1st Earl of Bedford 1138
+  gen:father <https://www.wikidata.org/wiki/Q1386498> ;
+  gen:mother <https://www.wikidata.org/wiki/Q204351> .
+
+<https://www.wikidata.org/wiki/Q975812>
+  # Robert de Beaumont, 3rd Earl of Leicester, d. 1190
+  gen:father <https://www.wikidata.org/wiki/Q1364180> ;
+  gen:mother <https://www.wikidata.org/wiki/Q59154776> .
+  # oo Pernel de Grandmesnil, 1139~ - 1212-04-01, daughter of Guillaume de Grandmesnil and Beatrix of Rye
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q975812> , <https://www.wikidata.org/wiki/Q7179034> ;
+	gen:startDate "1155a/1159b" .
+<https://www.wikidata.org/wiki/Q55973888>
+  # Hawise de Beaumont, d. 1197-04-24
+  gen:father <https://www.wikidata.org/wiki/Q1364180> ;
+  gen:mother <https://www.wikidata.org/wiki/Q59154776> .
+  # oo 1150~ William Fitz Robert, 2nd Earl of Gloucester, 1112/1116/1122 - 1183-11-23, https://www.wikidata.org/wiki/Q330360
+<#Isabel_de_Beaumont>
+  # Isabel de Beaumont
+  gen:father <https://www.wikidata.org/wiki/Q1364180> ;
+  gen:mother <https://www.wikidata.org/wiki/Q59154776> .
+  # oo Simon II de Senlis, 4th Earl of the Honour of Huntingdon and Northampton, 1098~ – 1153-08, https://www.wikidata.org/wiki/Q3484316
+<https://www.wikidata.org/wiki/Q59154744>
+  # Marguerite de Beaumont
+  gen:father <https://www.wikidata.org/wiki/Q1364180> ;
+  gen:mother <https://www.wikidata.org/wiki/Q59154776> .
+  # oo Raoul IV de Tosny, d. 1162, https://www.wikidata.org/wiki/Q59154669
+
+<https://www.wikidata.org/wiki/Q2159274>
+  # Robert de Beaumont, 4th Earl of Leicester, d. 1204-10-21~
+  gen:father <https://www.wikidata.org/wiki/Q975812> ;
+  gen:mother <https://www.wikidata.org/wiki/Q7179034> .
+  # oo Loretta de Braose, 1185~ - 1266~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2159274> , <https://www.wikidata.org/wiki/Q6680998> ;
+	gen:startDate "1196" .
+<https://www.wikidata.org/wiki/Q7359183>
+  # Roger de Beaumont (died 1202
+  # Bishop of St Andrews 1189
+  gen:father <https://www.wikidata.org/wiki/Q975812> ;
+  gen:mother <https://www.wikidata.org/wiki/Q7179034> .
+<https://www.wikidata.org/wiki/Q48548201>
+  # Amicie de Beaumont, d. 1215-09-03
+  gen:father <https://www.wikidata.org/wiki/Q975812> ;
+  gen:mother <https://www.wikidata.org/wiki/Q7179034> .
+  # oo Simon IV de Montfort, d. 1188, https://www.wikidata.org/wiki/Q2287587
+  # oo 1188-01-13b Guillaume II des Barres, https://www.wikidata.org/wiki/Q48548344
+<https://www.wikidata.org/wiki/Q61497599>
+  # Margaret de Beaumont, d. 1235-01-12~
+  gen:father <https://www.wikidata.org/wiki/Q975812> ;
+  gen:mother <https://www.wikidata.org/wiki/Q7179034> .
+  # oo Saher de Quency, 1st Earl of Winchester, d. 1219-11-03, https://www.wikidata.org/wiki/Q1703908
+
+
+# Comte de Meulan
+<https://www.wikidata.org/wiki/Q1363300>
+  # Waleran de Beaumont, 1st Earl of Worcester, 1104 – 1166-04-09
+  # Comte de Meulan 1118-06-05
+  # 1st Earl of Worcester 1138~
+  gen:father <https://www.wikidata.org/wiki/Q1386498> ;
+  gen:mother <https://www.wikidata.org/wiki/Q204351> .
+  # oo Matilda de Blois, 1133~ - 1137a/1141b
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1363300> , <#Matilda_de_Blois> ;
+	gen:startDate "1136-03~" .
+  # oo Agnès de Montfort, d. 1181-12-15
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1363300> , <https://www.wikidata.org/wiki/Q18606821> ;
+	gen:startDate "1141~" .
+
+<https://www.wikidata.org/wiki/Q717427>
+  # Robert de Beaumont, Comte de Meulan, 1142~ – 1207-07
+  # Comte de Meulan 1166-04-09
+  gen:father <https://www.wikidata.org/wiki/Q1363300> ;
+  gen:mother <https://www.wikidata.org/wiki/Q18606821> .
+  # oo 1165~ Maud FitzRoy de Dunstanville, b. 1143 (cortenay.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q717427> , <https://www.wikidata.org/wiki/Q18607568> ;
+	gen:startDate "1165~" .
+<https://www.wikidata.org/wiki/Q6078295>
+  # Isabelle de Meulan, 1148~ – 1220-05-10
+  gen:father <https://www.wikidata.org/wiki/Q1363300> ;
+  gen:mother <https://www.wikidata.org/wiki/Q18606821> .
+  # oo 1161 Geoffroy III de Mayenne, 1135 - 1169-02-18, https://www.wikidata.org/wiki/Q3101135
+  # oo 1170~ Maurice II de Craon, 1132~ – 1196, https://www.wikidata.org/wiki/Q511542
+<https://www.wikidata.org/wiki/Q2841401>
+  # Amaury Ier de Meulan, 1150 - 1196
+  # seigneur de Beaumont, de Gournay-sur-Marne, de la Queue-en-Brie
+  gen:father <https://www.wikidata.org/wiki/Q1363300> ;
+  gen:mother <https://www.wikidata.org/wiki/Q18606821> .
+<https://www.wikidata.org/wiki/Q3439613>
+  # Roger de Meulan, vicomte d'Évreux
+  gen:father <https://www.wikidata.org/wiki/Q1363300> ;
+  gen:mother <https://www.wikidata.org/wiki/Q18606821> .
+  # oo Élisabeth d'Aubergenville
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3439613> , <#Élisabeth_d'Aubergenville> ;
+	gen:startDate "1190" .
+
+<#Mabel_de_Beaumont>
+  # Mabel de Beaumont, d. 1204-05-01a
+  gen:father <https://www.wikidata.org/wiki/Q717427> ;
+  gen:mother <https://www.wikidata.org/wiki/Q18607568> .
+  # oo William de Redvers, 5th Earl of Devon, d. 1217-09-10, https://www.wikidata.org/wiki/Q2581164
+<https://www.wikidata.org/wiki/Q1492837>
+  # Galeran V de Beaumont, Comte de Meulan, d. 1190~
+  gen:father <https://www.wikidata.org/wiki/Q717427> ;
+  gen:mother <https://www.wikidata.org/wiki/Q18607568> .
+  # oo Marguerite de Fougeres, daughter of Raoul II de Fougères
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1492837> , <#Marguerite_de_Fougeres> ;
+	gen:startDate "1189" .
+<https://www.wikidata.org/wiki/Q18607755>
+  # Jeanne de Meulan, Dame de Beaumont-le-ROger, de Neaumesnil et de Brionne
+  gen:father <https://www.wikidata.org/wiki/Q717427> ;
+  gen:mother <https://www.wikidata.org/wiki/Q18607568> .
+  # oo 1179 Robert II 'le Vaillant' d'Harcourt, 1142 - 1212a, https://www.wikidata.org/wiki/Q2214929
+
+
+# Earl of Warwick
+<https://www.wikidata.org/wiki/Q973978>
+  gen:name "Henry de Beaumont, 1st Earl of Warwick"@en ;
+  gen:birthDate "1050~" ;
+  gen:deathDate "1119-06-20" ;
+  gen:father <https://www.wikidata.org/wiki/Q1370334> ;
+  gen:mother <https://www.wikidata.org/wiki/Q18606253> .
+  # oo Marguerite du Perche
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q973978> , <https://www.wikidata.org/wiki/Q18606566> .
+
+<https://www.wikidata.org/wiki/Q1392289>
+  gen:name "Roger de Beaumont, 2nd Earl of Warwick"@en ;
+  gen:birthDate "1102" ;
+  gen:deathDate "1153-06-12" ;
+  gen:father <https://www.wikidata.org/wiki/Q973978> ;
+  gen:mother <https://www.wikidata.org/wiki/Q18606566> .
+  # oo Gundred de Warenne, 1120~ - 1166 (beauchamp.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1392289> , <https://www.wikidata.org/wiki/Q61911606> ;
+	gen:startDate "1130" .
+<https://www.wikidata.org/wiki/Q3436707>
+  # Robert de Neubourg, d. 1159
+  gen:father <https://www.wikidata.org/wiki/Q973978> ;
+  gen:mother <https://www.wikidata.org/wiki/Q18606566> .
+  # oo Godehildis de Toni (or Conches)
+<https://www.wikidata.org/wiki/Q2892027>
+  # Rotrou de Beaumont, d. 1183-11-27~
+  # Archbishop of Rouen 1165
+  gen:father <https://www.wikidata.org/wiki/Q973978> ;
+  gen:mother <https://www.wikidata.org/wiki/Q18606566> .
+
+<https://www.wikidata.org/wiki/Q4020195>
+  gen:name "William de Beaumont, 3rd Earl of Warwick"@en ;
+  gen:birthDate "1140" ;
+  gen:deathDate "1184-11-15" ;
+  gen:father <https://www.wikidata.org/wiki/Q1392289> ;
+  gen:mother <https://www.wikidata.org/wiki/Q61911606> .
+  # oo Maud de Percy, d. 1204-10-13b
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4020195> , <https://www.wikidata.org/wiki/Q18176337> ;
+	gen:startDate "1175-12-28b" .
+<https://www.wikidata.org/wiki/Q1779797>
+  gen:name "Waleran de Beaumont, 4th Earl of Warwick"@en ;
+  gen:birthDate "1153" ;
+  gen:deathDate "1204-12-12" ;
+  gen:father <https://www.wikidata.org/wiki/Q1392289> ;
+  gen:mother <https://www.wikidata.org/wiki/Q61911606> .
+  # oo Margery de Bohun, d. 1194a
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1779797> , <https://www.wikidata.org/wiki/Q63184336> .
+  # oo Alice de Harcourt
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1779797> , <https://www.wikidata.org/wiki/Q61911586> .
+<#Gundred_de_Beaumont>
+  # Gundred de Beaumont, 1135~ – 1200
+  gen:father <https://www.wikidata.org/wiki/Q1392289> ;
+  gen:mother <https://www.wikidata.org/wiki/Q61911606> .
+  # oo Hugh Bigod, 1st Earl of Norfolk, 1095 – 1177-03-09b, https://www.wikidata.org/wiki/Q2424672 (de_vere.ttl)
+<https://www.wikidata.org/wiki/Q21055121>
+  # Roger de Newburgh, 1135 - 1192
+  gen:father <https://www.wikidata.org/wiki/Q3436707> .
+  # and Godehildis de Toni (or Conches)
+  # oo Matilda ??? 1170
+
+<https://www.wikidata.org/wiki/Q3785020>
+  gen:name "Henry de Beaumont, 5th Earl of Warwick"@en ;
+  gen:birthDate "1192" ;
+  gen:deathDate "1229-10-10" ;
+  gen:father <https://www.wikidata.org/wiki/Q1779797> ;
+  gen:mother <https://www.wikidata.org/wiki/Q63184336> .
+  # oo Margaret D'Oilly, daughter of Henry de Oilly
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3785020> , <#Margaret_D'Oilly> ;
+	gen:startDate "1205a" .
+  # oo Philippa Basset, d. 1265-11-29b, daughter of Thomas Basset
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3785020> , <#Philippa_Basset> ;
+	gen:startDate "1220-05-01b" .
+<https://www.wikidata.org/wiki/Q61911575>
+  gen:name "Lady Alice de Beaumont"@en ;
+  gen:deathDate "1263b" ;
+  gen:father <https://www.wikidata.org/wiki/Q1779797> ;
+  gen:mother <https://www.wikidata.org/wiki/Q61911586> .
+  # oo William de Maudit, https://www.wikidata.org/wiki/Q61911574
+
+<https://www.wikidata.org/wiki/Q3846903>
+  gen:name "Margaret de Newburg, 7th Countess of Warwick"@en ;
+  gen:deathDate "1252-06-03" ;
+  gen:father <https://www.wikidata.org/wiki/Q3785020> ;
+  gen:mother <#Margaret_D'Oilly> .
+  # oo John Marshal, Earl of Warwick, 1242-10, https://www.wikidata.org/wiki/Q23874298
+  # oo John du Plessis, 7th Earl of Warwick, d. 1263-02-26, https://www.wikidata.org/wiki/Q17479233
+<https://www.wikidata.org/wiki/Q3990748>
+  gen:name "Thomas de Beaumont, 6th Earl of Warwick"@en ;
+  gen:birthDate "1208" ;
+  gen:deathDate "1242-06-26" ;
+  gen:father <https://www.wikidata.org/wiki/Q3785020> ;
+  gen:mother <#Philippa_Basset> .
+  # oo Ela Longespée, d. 1298-02-09 (plantagenet.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3990748> , <https://www.wikidata.org/wiki/Q44817184> .
+
+# ----
+#<https://www.wikidata.org/wiki/Q3094903>
+  # Galéran Ier de Meulan
+
+<https://www.wikidata.org/wiki/Q3094902>
+  # Galéran II de Meulan
+  gen:father <https://www.wikidata.org/wiki/Q3094903> .
+
+<https://www.wikidata.org/wiki/Q2565089>
+  # Hugues Ier de Meulan, b. 965
+  gen:father <https://www.wikidata.org/wiki/Q3094902> .
+  # oo Oda de Vexin
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2565089> , <https://www.wikidata.org/wiki/Q18606390> .
+
+<https://www.wikidata.org/wiki/Q2195516>
+  # Galéran III de Meulan
+  gen:father <https://www.wikidata.org/wiki/Q2565089> ;
+  gen:mother <https://www.wikidata.org/wiki/Q18606390> .
+
+<https://www.wikidata.org/wiki/Q18606253>
+  gen:name "Adeline of Meulan"@en ;
+  gen:deathDate "1081-04-08" ;
+  gen:father <https://www.wikidata.org/wiki/Q2195516> ;
+  gen:mother <#Oda_de_Conteville> .
+  # oo Roger de Beaumont, 1015~ - 1094-11-29, https://www.wikidata.org/wiki/Q1370334
+
+# ----
+<https://www.wikidata.org/wiki/Q3484316>
+  # Simon II de Senlis, 4th Earl of the Honour of Huntingdon and Northampton, 1098~ – 1153-08
+  gen:father <https://www.wikidata.org/wiki/Q1793104> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2327302> .
+  # oo Isabel de Beaumont
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3484316> , <#Isabel_de_Beaumont> .
+
+# ----
+<https://www.wikidata.org/wiki/Q59154669>
+  # Raoul IV de Tosny, d. 1162
+  gen:father <https://www.wikidata.org/wiki/Q1771641> ;
+  gen:mother <https://www.wikidata.org/wiki/Q59154538> .
+  # oo Marguerite de Beaumont
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q59154669> , <https://www.wikidata.org/wiki/Q59154744> .
+
+<https://www.wikidata.org/wiki/Q4529990>
+  # Ida de Tosny, d. 1181a
+  gen:father <https://www.wikidata.org/wiki/Q59154669> ;
+  gen:mother <https://www.wikidata.org/wiki/Q59154744> .
+  # oo 1181-12 Roger Bigod, 2nd Earl of Norfolk, 1144~/1150 - 1221, https://www.wikidata.org/wiki/Q3438704
+<https://www.wikidata.org/wiki/Q3439099>
+  # Roger IV de Tosny
+  gen:father <https://www.wikidata.org/wiki/Q59154669> .
+  # oo Constance de Beaumont-au-Maine
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3439099> , <https://www.wikidata.org/wiki/Q2994819> .
+
+# ----
+<https://www.wikidata.org/wiki/Q6680998>
+  # Loretta de Braose, 1185~ - 1266~
+  gen:father <https://www.wikidata.org/wiki/Q3779058> ;
+  gen:mother <https://www.wikidata.org/wiki/Q942269> .
+  # oo 1196 Robert de Beaumont, 4th Earl of Leicester, d. 1204-10-21~, https://www.wikidata.org/wiki/Q2159274
+
+# ----
+#<https://www.wikidata.org/wiki/Q48548344>
+  # Guillaume II des Barres
+  # oo Amicie de Beaumont, d. 1215-09-03
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q48548344> , <https://www.wikidata.org/wiki/Q48548201> ;
+	gen:startDate "1188-01-13b" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q1703908>
+  # Saher de Quency, 1st Earl of Winchester, d. 1219-11-03
+  # son of Robert de Quency
+  # and Orable ???
+  # oo Margaret de Beaumont, d. 1235-01-12~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1703908> , <https://www.wikidata.org/wiki/Q61497599> .
+
+# ----
+<#Matilda_de_Blois>
+  # Matilda de Blois, 1133~ - 1137a/1141b
+  gen:father <https://www.wikidata.org/wiki/Q60849> ;
+  gen:mother <https://www.wikidata.org/wiki/Q229592> .
+  # oo 1136-03~ Waleran de Beaumont, 1st Earl of Worcester, 1104 – 1166-04-09, https://www.wikidata.org/wiki/Q1363300
+
+# ----
+<https://www.wikidata.org/wiki/Q3101135>
+  # Geoffroy III de Mayenne, 1135 - 1169-02-18
+  gen:father <https://www.wikidata.org/wiki/Q3188142> ;
+  gen:mother <https://www.wikidata.org/wiki/Q63184400> .
+  # oo Isabelle de Meulan, 1148~ – 1220-05-10
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3101135> , <https://www.wikidata.org/wiki/Q6078295> ;
+	gen:startDate "1161" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q511542>
+  # Maurice II de Craon, 1132~ – 1196
+  # oo Isabelle de Meulan, 1148~ – 1220-05-10
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q511542> , <https://www.wikidata.org/wiki/Q6078295> ;
+	gen:startDate "1170~" .
+
+# ----
+<https://www.wikidata.org/wiki/Q2214929>
+  # Robert II 'le Vaillant' d'Harcourt, 1142 - 1212a
+  # Sire d'Harcourt, Seigneur de Renneville, de Cailleville, de Beauficel, de La Saussaye, de Potigny et d'Elbeuf
+  gen:father <https://www.wikidata.org/wiki/Q3120265> .
+  # and Hue d'Amboise
+  # oo Jeanne de Meulan, Dame de Beaumont-le-ROger, de Neaumesnil et de Brionne
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2214929> , <https://www.wikidata.org/wiki/Q18607755> ;
+	gen:startDate "1179" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q2457064>
+  # Geoffroy Ier de Châteaudun
+
+<https://www.wikidata.org/wiki/Q3090725>
+  # Fulcois du Perche, d. 1004
+  gen:father <https://www.wikidata.org/wiki/Q2457064> .
+  # oo Mélisende de Nogent
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3090725> , <https://www.wikidata.org/wiki/Q1828619> .
+
+<https://www.wikidata.org/wiki/Q2480295>
+  # Geoffroy Ier, comte du Perche, d. 1040
+  gen:father <https://www.wikidata.org/wiki/Q3090725> ;
+  gen:mother <https://www.wikidata.org/wiki/Q1828619> .
+
+<https://www.wikidata.org/wiki/Q24970780>
+  # Rotrou I, Viscount of Châteaudun, d. 1080-03-10
+  gen:father <https://www.wikidata.org/wiki/Q2480295> .
+
+<https://www.wikidata.org/wiki/Q2021689>
+  gen:name "Geoffroy II, comte du Perche"@fr ;
+  gen:deathDate "1100-10" ;
+  gen:father <https://www.wikidata.org/wiki/Q24970780> .
+  # oo Béatrice de Roucy
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2021689> , <https://www.wikidata.org/wiki/Q18606609> .
+
+<https://www.wikidata.org/wiki/Q18606566>
+  gen:name "Marguerite du Perche"@fr ;
+  gen:father <https://www.wikidata.org/wiki/Q2021689> ;
+  gen:mother <https://www.wikidata.org/wiki/Q18606609> .
+  # oo Henry de Beaumont, 1st Earl of Warwick, d. 1119-06-20, https://www.wikidata.org/wiki/Q973978
+# ----
+#<https://www.wikidata.org/wiki/Q24970630>
+  # Hilduin Ier de Montdidier
+
+<https://www.wikidata.org/wiki/Q24970647>
+  # Hildouin II de Montdidier
+  gen:father <https://www.wikidata.org/wiki/Q24970630> .
+
+<https://www.wikidata.org/wiki/Q10295569>
+  # Hildouin III de Montdidier, d. 1032a
+  gen:father <https://www.wikidata.org/wiki/Q24970647> .
+
+<https://www.wikidata.org/wiki/Q3135626>
+  # Hildouin IV de Montdidier, d. 1063
+  gen:father <https://www.wikidata.org/wiki/Q10295569> .
+  # oo Alix de Roucy, 1015a/1020b - 1062
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3135626> , <https://www.wikidata.org/wiki/Q18606694> .
+
+<https://www.wikidata.org/wiki/Q18606609>
+  # Béatrice de Roucy
+  gen:father <https://www.wikidata.org/wiki/Q3135626> ;
+  gen:mother <https://www.wikidata.org/wiki/Q18606694> .
+  # oo Geoffroy II du Perche, d. 1100-10, https://www.wikidata.org/wiki/Q2021689
+# ----
+#<https://www.wikidata.org/wiki/Q3024596>
+  # Ebles Ier de Roucy, d. 1033-05-11
+  # oo Béatrix de Hainaut, b. 996~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3024596> , <https://www.wikidata.org/wiki/Q48925204> .
+
+<https://www.wikidata.org/wiki/Q18606694>
+  # Alix de Roucy, 1015a/1020b - 1062
+  gen:father <https://www.wikidata.org/wiki/Q3024596> ;
+  gen:mother <https://www.wikidata.org/wiki/Q48925204> .
+  # oo Hildouin IV de Montdidier, d. 1063, https://www.wikidata.org/wiki/Q3135626
+# ----
+<https://www.wikidata.org/wiki/Q128208>
+  # Régnier IV, comte de Mons, d. 1013
+  gen:father <https://www.wikidata.org/wiki/Q128210> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2315828> .
+  # oo Hedwige de France, 970 - 1013
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q128208> , <https://www.wikidata.org/wiki/Q3129344> .
+
+<https://www.wikidata.org/wiki/Q48925204>
+  # Béatrix de Hainaut, b. 996~
+  gen:father <https://www.wikidata.org/wiki/Q128208> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3129344> .
+  # oo Ebles Ier de Roucy, d. 1033-05-11, https://www.wikidata.org/wiki/Q3024596
+
+# ----
+<https://www.wikidata.org/wiki/Q63184336>
+  # Margery de Bohun, d. 1194a
+  gen:father <https://www.wikidata.org/wiki/Q4495336> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6760064> .
+  # oo Waleran de Beaumont, 4th Earl of Warwick, 1153 - 1204-12-12, https://www.wikidata.org/wiki/Q1779797
+
+# ----
+#<https://www.wikidata.org/wiki/Q61911587>
+  # Robert de Harcourt
+  # oo Millicent de Camville
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q61911587> , <https://www.wikidata.org/wiki/Q61911588> .
+
+<https://www.wikidata.org/wiki/Q61911586>
+  # Alice de Harcourt
+  gen:father <https://www.wikidata.org/wiki/Q61911587> ;
+  gen:mother <https://www.wikidata.org/wiki/Q61911588> .
+  # oo Waleran de Beaumont, 4th Earl of Warwick, 1153 - 1204-12-12, https://www.wikidata.org/wiki/Q1779797
+
+# ----
+<https://www.wikidata.org/wiki/Q61911578>
+  #
+  gen:father <https://www.wikidata.org/wiki/Q61911581> ;
+  gen:mother <https://www.wikidata.org/wiki/Q61911582> .
+
+<https://www.wikidata.org/wiki/Q61911574>
+  # William de Maudit
+  gen:father <https://www.wikidata.org/wiki/Q61911578> ;
+  gen:mother <https://www.wikidata.org/wiki/Q61911579> .
+  # oo Lady Alice de Beaumont, d. 1263b
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q61911574> , <https://www.wikidata.org/wiki/Q61911575> .
+
+<https://www.wikidata.org/wiki/Q4020096>
+  gen:name "William Maudit, 8th Earl of Warwick"@en ;
+  gen:birthDate "1220~" ;
+  gen:deathDate "1267-01-08" ;
+  gen:father <https://www.wikidata.org/wiki/Q61911574> ;
+  gen:mother <https://www.wikidata.org/wiki/Q61911575> .
+  # oo Alice de Segrave
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4020096> , <#Alice_de_Segrave> .
+<https://www.wikidata.org/wiki/Q61911546>
+  gen:name "Isabel de Maudit"@en ;
+  gen:father <https://www.wikidata.org/wiki/Q61911574> ;
+  gen:mother <https://www.wikidata.org/wiki/Q61911575> .
+  # oo William de Beauchamp, 1215~ - 1268, https://www.wikidata.org/wiki/Q8020752
+# ----
+<https://www.wikidata.org/wiki/Q18810751>
+  # Gilbert de Segrave, d. 1254
+  gen:father <https://www.wikidata.org/wiki/Q3498645> .
+  # and his first wife
+  # oo Amabil de Chaucombe
+
+<#Alice_de_Segrave>
+  # Alice de Segrave
+  gen:father <https://www.wikidata.org/wiki/Q18810751> .
+  # and Amabil de Chaucombe
+  # oo William Maudit, 8th Earl of Warwick, 1220~ - 1267-01-08, https://www.wikidata.org/wiki/Q4020096
+
+# ----
+<https://www.wikidata.org/wiki/Q23874298>
+  # John Marshal, 7th Earl of Warwick jure uxoris, 1242-10
+  gen:father <https://www.wikidata.org/wiki/Q18731675> .
+  # oo Margaret de Newburg, 7th Countess of Warwick, d. 1252-06-03
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q23874298> , <https://www.wikidata.org/wiki/Q3846903> .
+
+# ----
+#<https://www.wikidata.org/wiki/Q17479233>
+  # John du Plessis, 7th Earl of Warwick jure uxoris, d. 1263-02-26
+  # oo Margaret de Newburg, 7th Countess of Warwick, d. 1252-06-03
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q17479233> , <https://www.wikidata.org/wiki/Q3846903> .
