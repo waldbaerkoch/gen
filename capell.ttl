@@ -1,0 +1,863 @@
+@base <capell.ttl> .
+@prefix gen: <http://jjkoch.de/gen#> .
+@prefix wdata: <https://www.wikidata.org/wiki/> .
+@prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+
+#<https://www.wikidata.org/wiki/Q8006525>
+  # Sir William Capell, 1446~ – 1515
+  # son of John Capell, 1398 – 1449
+  # oo Margaret Arundell
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8006525> , <howard.ttl#Margaret_Arundell> .
+
+<#Sir_Giles_Capell>
+  # Sir Giles Capell
+  gen:father <https://www.wikidata.org/wiki/Q8006525> ;
+  gen:mother <howard.ttl#Margaret_Arundell> .
+  # oo Isabel Newton, daughter of Sir Thomas Newton
+<#Elizabeth_Capell_(died_1558)>
+  # Elizabeth Capell, d. 1558-12-25
+  gen:father <https://www.wikidata.org/wiki/Q8006525> ;
+  gen:mother <howard.ttl#Margaret_Arundell> .
+  # oo 1503 William Paulet, 1st Marquess of Winchester, 1483~ - 1572, https://www.wikidata.org/wiki/Q8016685
+
+<#Sir_Edward_Capell>
+  # Sir Edward Capell
+  gen:father <#Sir_Giles_Capell> .
+  # and Isabel Newton
+  # oo Anne Pelham, daughter of Sir William Pelham
+
+<https://www.wikidata.org/wiki/Q16239247>
+  # Sir Henry Capell, 1537b – 1588
+  gen:father <#Sir_Edward_Capell> .
+  # and Anne Pelham
+  # oo Lady Catherine Manners
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16239247> , <manners.ttl#Lady_Catherine_Manners> .
+  # oo Mary Browne
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16239247> , <grey.ttl#Mary_Browne> .
+
+<#Sir_Arthur_Capell>
+  # Sir Arthur Capell, of Hadham, d. 1632-04
+  gen:father <https://www.wikidata.org/wiki/Q16239247> ;
+  gen:mother <manners.ttl#Lady_Catherine_Manners> .
+  # oo Margaret Grey, daughter of Lord John Grey
+  []
+    gen:spouse <seymour.ttl#Sir_Arthur_Capell> , <grey.ttl#Margaret_Grey> ;
+	gen:startDate "1592" .
+<#Mary_Capell>
+  # Mary Capell, d. 1633-10-12
+  gen:father <https://www.wikidata.org/wiki/Q16239247> ;
+  gen:mother <manners.ttl#Lady_Catherine_Manners> .
+  # oo 1586-07-10 Humphrey Mildmay, 1555 - 1613-08-09, https://www.wikidata.org/wiki/Q54019124 (fane.ttl)
+
+<https://www.wikidata.org/wiki/Q24254749>
+  # Sir Henry Capell, 1579 - 1622-04-29
+  gen:father <#Sir_Arthur_Capell> ;
+  gen:mother <grey.ttl#Margaret_Grey> .
+  # oo Theodosia Montagu
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q24254749> , <montagu.ttl#Theodosia_Montagu> .
+<https://www.wikidata.org/wiki/Q52847771>
+  # Arthur Capell, of Little Hadham and Whitehall, 1585-11-28b - 1653-12-24b
+  gen:father <#Sir_Arthur_Capell> ;
+  gen:mother <grey.ttl#Margaret_Grey> .
+
+<#Elizabeth_Capell_(died_1660)>
+  # Elizabeth Capell, d. 1660-04-06
+  gen:father <https://www.wikidata.org/wiki/Q24254749> ;
+  gen:mother <montagu.ttl#Theodosia_Montagu> .
+  # oo 1628-11-06 Sir William Wiseman, 1st Baronet, d. 1643-07-01, 1st Baronet Wiseman 1628-08-29, son of Thomas Wiseman and Alice Myles
+<https://www.wikidata.org/wiki/Q1960974>
+  # Arthur Capell, 1st Baron Capell of Hadham, 1604-02-20 - 1649-03-09
+  # 1st Baron Capell of Hadham, co. Hertford 1641-08-05
+  gen:father <https://www.wikidata.org/wiki/Q24254749> ;
+  gen:mother <montagu.ttl#Theodosia_Montagu> .
+  # oo Elizabeth Morrison, 1611-03-23 - 1661-01-26
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1960974> , <#Elizabeth_Morrison> ;
+	gen:startDate "1627-11-28" .
+
+<#Anne_Capell>
+  # Anne Capell, d. 1675-12-03
+  gen:father <https://www.wikidata.org/wiki/Q1960974> ;
+  gen:mother <#Elizabeth_Morrison> .
+  # oo 1672-07-04 John Strangways, 1636-10-15 – 1676-04-06, https://www.wikidata.org/wiki/Q6259387
+<https://www.wikidata.org/wiki/Q3850445>
+  # Mary Capell, 1630-12-16b - 1715-01-07
+  gen:father <https://www.wikidata.org/wiki/Q1960974> ;
+  gen:mother <#Elizabeth_Morrison> .
+  # oo 1648-06-28 Henry Seymour, Lord Beauchamp, 1626~ – 1654-03-14, https://www.wikidata.org/wiki/Q933212
+  # oo 1657-08-17 Henry Somerset, 1st Duke of Beaufort, 1629 - 1700-01-21, https://www.wikidata.org/wiki/Q456519
+<https://www.wikidata.org/wiki/Q2714210>
+  # Arthur Capell, 1st Earl of Essex, 1632-01-28 - 1683-07-13
+  # 2nd Baron Capell of Hadham, co. Hertford 1649-03-09
+  # 1st Earl of Essex, 1st Viscount Malden, co. Essex 1661-04-20
+  gen:father <https://www.wikidata.org/wiki/Q1960974> ;
+  gen:mother <#Elizabeth_Morrison> .
+  # oo Lady Elizabeth Percy, 1636-12-01 - 1718-02-05
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2714210> , <https://www.wikidata.org/wiki/Q3601370> ;
+	gen:startDate "1653-05-19" .
+<#Elizabeth_Capell_(died_1678)>
+  # Elizabeth Capell, 1633-06-04 - 1678-07-30
+  gen:father <https://www.wikidata.org/wiki/Q1960974> ;
+  gen:mother <#Elizabeth_Morrison> .
+  # oo 1653b Charles Dormer, 2nd Earl of Carnarvon, 1632-10-25 - 1709-11-29, https://www.wikidata.org/wiki/Q3666382 (bertie.ttl)
+<https://www.wikidata.org/wiki/Q5719169>
+  # Henry Capell, 1st Baron Capell of Tewkesbury, 1638-03-06 - 1696-05-30
+  # 1st Baron Capell of Tewksbury, co. Gloucester 1692-04-11
+  gen:father <https://www.wikidata.org/wiki/Q1960974> ;
+  gen:mother <#Elizabeth_Morrison> .
+  # oo Dorothy Bennet, d. 1721-06-07, daughter of Richard Bennet and Mary Leman
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5719169> , <#Dorothy_Bennet> ;
+	gen:startDate "1659-02-16~" .
+<#Theodosia_Capell>
+  # Theodosia Capell, 1640-01-03 - 1662-03~
+  gen:father <https://www.wikidata.org/wiki/Q1960974> ;
+  gen:mother <#Elizabeth_Morrison> .
+  # oo 1661-01-26~ Henry Hyde, 2nd Earl of Clarendon, 1638-06-02 - 1709-10-31, https://www.wikidata.org/wiki/Q3784948
+
+<https://www.wikidata.org/wiki/Q4724137>
+  # Algernon Capell, 2nd Earl of Essex, 1670-12-28 - 1710-01-10
+  gen:father <https://www.wikidata.org/wiki/Q2714210> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3601370> .
+  # oo Lady Mary Bentinck, 1679-08-20 - 1726-08-20
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4724137> , <https://www.wikidata.org/wiki/Q126734> ;
+	gen:startDate "1692-02-28" .
+<#Lady_Anne_de_Vere_Capell>
+  # Lady Anne de Vere Capell, 1675~ - 1752-10-14
+  gen:father <https://www.wikidata.org/wiki/Q2714210> ;
+  gen:father <https://www.wikidata.org/wiki/Q3601370> .
+  # oo 1688-07-25 Charles Howard, 3rd Earl of Carlisle, 1669 - 1738-05-01, https://www.wikidata.org/wiki/Q337634
+
+<https://www.wikidata.org/wiki/Q7609264>
+  gen:name "William Capell, 3rd Earl of Essex"@en ;
+  gen:birthDate "1697-01-11" ;
+  gen:deathDate "1743-01-08" ;
+  gen:father <https://www.wikidata.org/wiki/Q4724137> ;
+  gen:mother <https://www.wikidata.org/wiki/Q126734> .
+  # oo Lady Jane Hyde, 1694 - 1724-01
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7609264> , <https://www.wikidata.org/wiki/Q3806993> ;
+	gen:startDate "1718-11-27" .
+  # oo Lady Elizabeth Russell, 1704 - 1784-06-08
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7609264> , <https://www.wikidata.org/wiki/Q46594130> ;
+	gen:startDate "1726-02-03" .
+<#Lady_Mary_Capel>
+  # Lady Mary Capel, d. 1762-11-12
+  gen:father <https://www.wikidata.org/wiki/Q4724137> ;
+  gen:mother <https://www.wikidata.org/wiki/Q126734> .
+  # oo 1729-05-07 Alan Brodrick, 2nd Viscount Midleton of Midleton, 1702-01-31 - 1747-06-08, https://www.wikidata.org/wiki/Q4706251 (pelham.ttl)
+<#Lady_Elizabeth_Diana_Capell>
+  # Lady Elizabeth Diana Capell, d. 1759
+  gen:father <https://www.wikidata.org/wiki/Q4724137> ;
+  gen:mother <https://www.wikidata.org/wiki/Q126734> .
+  # oo 1717-04-05 Rt. Hon. Samuel Molyneux, 1689-07-16 - 1728-04-13, https://www.wikidata.org/wiki/Q325984 (lennox.ttl)
+  # oo 1730 Nathaniel St. André, 1680~ – 1776-03, https://www.wikidata.org/wiki/Q1966801
+
+<https://www.wikidata.org/wiki/Q46734896>
+  gen:name "Lady Charlotte Capell"@en ;
+  gen:birthDate "1721-10-02" ;
+  gen:deathDate "1790-09-03" ;
+  gen:father <https://www.wikidata.org/wiki/Q7609264> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3806993> .
+  # oo 1752-03-30 Thomas Villiers, 1st Earl of Clarendon, 1709-06-19 - 1786-12-11, https://www.wikidata.org/wiki/Q744389
+<#Lady_Mary_Capell>
+  gen:name "Lady Mary Capell"@en ;
+  gen:birthDate "1722" ;
+  gen:deathDate "1782-04-09" ;
+  gen:father <https://www.wikidata.org/wiki/Q7609264> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3806993> .
+  # oo 1758-09-02 Hon. John Forbes, 1714-07-17 - 1796-03-10, https://www.wikidata.org/wiki/Q3181515 (wellesley.ttl)
+<https://www.wikidata.org/wiki/Q7607210>
+  # William Anne Capell, 4th Earl of Essex, 1732-10-07 – 1799-03-04
+  gen:father <https://www.wikidata.org/wiki/Q7609264> ;
+  gen:mother <https://www.wikidata.org/wiki/Q46594130> .
+  # oo Frances Hanbury-Williams, 1735 - 1759-07-19
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7607210> , <fitzgerald.ttl#Frances_Hanbury-Williams> ;
+	gen:startDate "1754-08-01" .
+  # oo Harriet Bladen, 1734 - 1821-03-12
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7607210> , <#Harriet_Bladen> ;
+	gen:startDate "1767-03-03" .
+
+<https://www.wikidata.org/wiki/Q56233136>
+  # Lady Elizabeth Capell, 1755-08-10 - 1834-02-23
+  gen:father <https://www.wikidata.org/wiki/Q7607210> ;
+  gen:mother <fitzgerald.ttl#Frances_Hanbury-Williams> .
+  # oo 1777-07-13 John Monson, 3rd Baron Monson of Burton, 1753-05-25 - 1806-05-20, https://www.wikidata.org/wiki/Q56233134 (greville.ttl)
+<https://www.wikidata.org/wiki/Q5537665>
+  # George Capel-Coningsby, 5th Earl of Essex, 1757-11-13 – 1839-04-23
+  gen:father <https://www.wikidata.org/wiki/Q7607210> ;
+  gen:mother <fitzgerald.ttl#Frances_Hanbury-Williams> .
+  # oo Sarah Bazett, 1759-07-11 – 1838-01-16, daughter of Henry William Bazett and Clarissa Penelope Pritchard
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5537665> , <https://www.wikidata.org/wiki/Q16859078> ;
+	gen:startDate "1786-06-06" .
+  # oo Catherine Kitty Stephens, 1794-09-18 - 1882-02-22, daughter of Edward Stephens
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5537665> , <https://www.wikidata.org/wiki/Q5052928> ;
+	gen:startDate "1838-04-14" .
+<#John_Thomas_Capel>
+  # Hon. John Thomas Capel, 1769-03-02 - 1819-03-05
+  gen:father <https://www.wikidata.org/wiki/Q7607210> ;
+  gen:mother <#Harriet_Bladen> .
+  # oo Lady Caroline Paget, 1773 - 1847-07-09
+  []
+    gen:spouse <#John_Thomas_Capel> , <paget.ttl#Lady_Caroline_Paget> ;
+	gen:startDate "1792-04-02" .
+<https://www.wikidata.org/wiki/Q8006529>
+  # Hon. Rev. William Robert Capel, 1775-04-28 – 1854-12-03
+  gen:father <https://www.wikidata.org/wiki/Q7607210> ;
+  gen:mother <#Harriet_Bladen> .
+  # oo Sarah Salter, d. 1874-04-19, daughter of Samuel Salter
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8006529> , <#Sarah_Salter> ;
+	gen:startDate "1802-06-07" .
+<https://www.wikidata.org/wiki/Q7787673>
+  # Sir Thomas Bladen Capel, 1776-08-25 – 1853-03-04
+  gen:father <https://www.wikidata.org/wiki/Q7607210> ;
+  gen:mother <#Harriet_Bladen> .
+  # oo Harriet Catherine Smyth, d. 1866-07-30
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7787673> , <#Harriet_Catherine_Smyth> ;
+	gen:startDate "1816-05-10" .
+
+<https://www.wikidata.org/wiki/Q16528761>
+  # Arthur Algernon Capell, 6th Earl of Essex, 1803-01-27 - 1892-09-11
+  # 6th Earl of Essex 1839-04-23
+  gen:father <#John_Thomas_Capel> ;
+  gen:mother <paget.ttl#Lady_Caroline_Paget> .
+  # oo Lady Caroline Janetta Beauclerk, 1804-06-28 - 1862-08-22
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16528761> , <beauclerk.ttl#Lady_Caroline_Janetta_Beauclerk> ;
+	gen:startDate "1825-07-14" .
+  # oo Louisa Caroline Elizabeth Boyle, d. 1876-05-05
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16528761> , <boyle.ttl#Louisa_Caroline_Elizabeth_Boyle> ;
+	gen:startDate "1863-06-03" .
+  # oo Louisa Elizabeth Heneage, d. 1914-01-25
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16528761> , <howard.ttl#Louisa_Elizabeth_Heneage> ;
+	gen:startDate "1881-04-25" .
+<#Algernon_Henry_Champagne_Capell>
+  # Hon. Algernon Henry Champagne Capell, 1807-10-23 - 1886-11-21
+  gen:father <#John_Thomas_Capel> ;
+  gen:mother <paget.ttl#Lady_Caroline_Paget> .
+  # oo Caroline Paget, 1808-07-23 - 1880-06-11
+  []
+    gen:spouse <#Algernon_Henry_Champagne_Capell> , <paget.ttl#Caroline_Paget_(died_1880)> ;
+	gen:startDate "1832-12-10" .
+<#Adolphus_Frederick_Charles_Molyneux_Capell>
+  # Hon. Adolphus Frederick Charles Molyneux Capell, 1813-06-28 - 1899-08-13
+  gen:father <#John_Thomas_Capel> ;
+  gen:mother <paget.ttl#Lady_Caroline_Paget> .
+  # oo Hon. Charlotte Mary Maynard, d. 1871-06-27
+  []
+    gen:spouse <#Adolphus_Frederick_Charles_Molyneux_Capell> , <fitzroy.ttl#Charlotte_Mary_Maynard> ;
+	gen:startDate "1834-12-15" .
+<#Lady_Amelia_Capell>
+  # Lady Amelia Capell, d. 1892-05-29
+  gen:father <#John_Thomas_Capel> ;
+  gen:mother <paget.ttl#Lady_Caroline_Paget> .
+  # oo 1857-04-25 Hon. Henry Stevenson Blackwood, 1819-08-04 - 1865-10-25, #Henry_Stevenson_Blackwood
+
+<#Arthur_de_Vere_Capell,_Viscount_Malden>
+  # Arthur de Vere Capell, Viscount Malden, 1826-07-22 - 1879-03-10
+  gen:father <https://www.wikidata.org/wiki/Q16528761> ;
+  gen:mother <beauclerk.ttl#Lady_Caroline_Janetta_Beauclerk> .
+  # oo Emma Martha Meux, d. 1905-11-22
+  []
+    gen:spouse <#Arthur_de_Vere_Capell,_Viscount_Malden> , <#Emma_Martha_Meux> ;
+	gen:startDate "1853-01-23" .
+<#Lady_Adela_Caroline_Harriett_Capel>
+  # Lady Adela Caroline Harriett Capel, 1828-03-04 - 1860-12-31
+  gen:father <https://www.wikidata.org/wiki/Q16528761> ;
+  gen:mother <beauclerk.ttl#Lady_Caroline_Janetta_Beauclerk> .
+  # oo 1858-11-03 Archibald Montgomerie, 13th Earl of Eglinton, 1812-09-29 - 1861-10-04, https://www.wikidata.org/wiki/Q4786454
+<#Charles_Horatio_Algernon_Capell>
+  # Charles Horatio Algernon Capell, 1845-08-05 - 1924-10-14
+  gen:father <#Algernon_Henry_Champagne_Capell> ;
+  gen:mother <paget.ttl#Caroline_Paget_(died_1880)> .
+  # oo Alice Peel Bellairs, d. 1936-01-18, daughter of Frederick Bellairs
+  []
+    gen:spouse <#Charles_Horatio_Algernon_Capell> , <#Alice_Peel_Bellairs> ;
+	gen:startDate "1868-06-28" .
+<#Harriet_Mary_Capell>
+  # Harriet Mary Capell, d. 1868-04-30
+  gen:father <#Adolphus_Frederick_Charles_Molyneux_Capell> ;
+  gen:mother <fitzroy.ttl#Charlotte_Mary_Maynard> .
+  # oo 1855-10-24 (sep 1858) George Henry Charles Francis Malcolm Drummond, Viscount Forth, 1834-05-13 - 1861-10-08, drummond.ttl#George_Henry_Drummond,_Viscount_Forth
+<#Horatio_Bladen_Capell>
+  # Rev. Horatio Bladen Capell, 1839-10-10 - 1933-04-17
+  gen:father <#Adolphus_Frederick_Charles_Molyneux_Capell> ;
+  gen:mother <fitzroy.ttl#Charlotte_Mary_Maynard> .
+  # oo Ada Augusta Hawkins, d. 1916-08-18, daughter of Theophilus Hawkins
+  []
+    gen:spouse <#Horatio_Bladen_Capell> , <#Ada_Augusta_Hawkins> ;
+	gen:startDate "1866-08-16" .
+  # oo Violet Annie Frost, d. 1960, daughter of Robert Frost
+  []
+    gen:spouse <#Horatio_Bladen_Capell> , <#Violet_Annie_Frost> ;
+	gen:startDate "1916" .
+
+<#Lady_Evelyn_de_Vere_Capell>
+  # Lady Evelyn de Vere Capell, d. 1939-11-14
+  gen:father <#Arthur_de_Vere_Capell,_Viscount_Malden> ;
+  gen:mother <#Emma_Martha_Meux> .
+  # oo 1883-09-05 Hon. Eustace Henry Dawnay, 1850-04-15 - 1928-12-15, grey.ttl#Eustace_Henry_Dawnay
+<https://www.wikidata.org/wiki/Q19587211>
+  # George Devereux de Vere Capell, 7th Earl of Essex, 1857-10-24 – 1916-09-25
+  gen:father <#Arthur_de_Vere_Capell,_Viscount_Malden> ;
+  gen:mother <#Emma_Martha_Meux> .
+  # oo Ellenor Harriet Maria Harford, 1860-05-28 - 1885-12-31, daughter of William Henry Harford and Ellen Tower
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q19587211> , <#Ellenor_Harriet_Maria_Harford> ;
+	gen:startDate "1882-07-12" .
+  # oo Adela Grant, d. 1922-07-28, daughter of Beach Grant
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q19587211> , <https://www.wikidata.org/wiki/Q4681873> ;
+	gen:startDate "1893-12-14" .
+<#Lady_Sybil_de_Vere_Capell>
+  # Lady Sybil de Vere Capell, 1858-11-29 - 1934-02-20
+  gen:father <#Arthur_de_Vere_Capell,_Viscount_Malden> ;
+  gen:mother <#Emma_Martha_Meux> .
+  # oo 1890-09-18 Thomas Brassey, 1st Earl Brassey, 1836-02-11 - 1918-02-23, https://www.wikidata.org/wiki/Q337691 (egerton.ttl)
+<#Arthur_Algernon_de_Vere_Capell>
+  # Arthur Algernon de Vere Capell, 1869-04-06 - 1924-04-14
+  gen:father <#Charles_Horatio_Algernon_Capell> ;
+  gen:mother <#Alice_Peel_Bellairs> .
+  # oo Alice Ann Pine, d. 1913, daughter of William Yewett Pine
+  []
+    gen:spouse <#Arthur_Algernon_de_Vere_Capell> , <#Alice_Ann_Pine> ;
+	gen:startDate "1890" .
+  # oo Alice Mabel Currie, d. 1951-06, daughter of James Currie
+  []
+    gen:spouse <#Arthur_Algernon_de_Vere_Capell> , <#Alice_Mabel_Currie> ;
+	gen:startDate "1916" .
+<#Horace_Charles_George_Arthur_Capell>
+  # Horace Charles George Arthur Capell, 1868-07-08 - 1953-02-08
+  gen:father <#Horatio_Bladen_Capell> ;
+  gen:mother <#Ada_Augusta_Hawkins> .
+  # oo Clara Isabel Jackson, d. 1939-02-25, daughter of Ozro Jackson
+  []
+    gen:spouse <#Horace_Charles_George_Arthur_Capell> , <#Clara_Isabel_Jackson> ;
+	gen:startDate "1896-10-18" .
+
+<https://www.wikidata.org/wiki/Q26208353>
+  # Algernon George de Vere Capell, 8th Earl of Essex, 1884-02-21 - 1966-12-08
+  gen:father <https://www.wikidata.org/wiki/Q19587211> ;
+  gen:mother <#Ellenor_Harriet_Maria_Harford> .
+  # oo Mary Eveline Stewart Freeman, d. 1955-10-30, daughter of William Russell Stewart Freeman
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q26208353> , <#Mary_Eveline_Stewart_Freeman> ;
+	gen:startDate "1905-09-28" ;
+	gen:divorceDate "1926" .
+  # oo Alys Montgomery Falkiner, d. 1977-03-19, daughter of Robert Hayes Falkiner
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q26208353> , <#Alys_Montgomery_Falkiner> ;
+	gen:startDate "1926-02-10" ;
+	gen:divorceDate "1950" .
+  # oo Mildred Carlson
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q26208353> , <#Mildred_Carlson> ;
+	gen:startDate "1950-12-10" ;
+	gen:divorceDate "1956" .
+  # oo Christine Mary Davis, d. 1985, daughter of George Frederick Davis
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q26208353> , <#Christine_Mary_Davis> ;
+	gen:startDate "1957" .
+<#Lady_Joan_Rachel_de_Vere_Capell>
+  # Lady Joan Rachel de Vere Capell, 1899-02-28 - 1979
+  gen:father <https://www.wikidata.org/wiki/Q19587211> ;
+  gen:mother <https://www.wikidata.org/wiki/Q4681873> .
+  # oo 1922-06-19 Osbert Peake, 1st Viscount Ingleby, 1897-12-30 - 1966-10-11, https://www.wikidata.org/wiki/Q11799507 (hay.ttl)
+<https://www.wikidata.org/wiki/Q7342736>
+  # Robert Edward de Vere Capell, 10th Earl of Essex, 1920-01-13 – 2005-06-05
+  # 10th Earl of Essex 1981-05-18
+  gen:father <#Arthur_Algernon_de_Vere_Capell> ;
+  gen:mother <#Alice_Mabel_Currie> .
+  # oo Doris Margaret Tomlinson, daughter of George Frederick Tomlinson
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7342736> , <#Doris_Margaret_Tomlinson> ;
+	gen:startDate "1942-01-03" .
+<#Bladen_Ozro_Capell>
+  # Bladen Ozro Capell, 1897-07-10 - 1959-08-27
+  gen:father <#Horace_Charles_George_Arthur_Capell> ;
+  gen:mother <#Clara_Isabel_Jackson> .
+  # oo Madge Elizabeth Crawford, d. 1956, daughter of Ruel Crawford
+  []
+    gen:spouse <#Bladen_Ozro_Capell> , <#Madge_Elizabeth_Crawford> ;
+	gen:startDate "1920-06-14 divorced 1929" .
+  # oo Hazel Kruse
+  []
+    gen:spouse <#Bladen_Ozro_Capell> , <#Hazel_Kruse> ;
+	gen:startDate "1929a" .
+
+<https://www.wikidata.org/wiki/Q7308632>
+  # Reginald George de Vere Capell, 9th Earl of Essex, 1906-10-09 - 1981-05-18
+  # 9th Earl of Essex 1966-12-08
+  gen:father <https://www.wikidata.org/wiki/Q26208353> ;
+  gen:mother <#Mary_Eveline_Stewart_Freeman> .
+  # oo Mary Reeve Ward, daughter of F. Gibson Ward
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7308632> , <#Mary_Reeve_Ward> ;
+	gen:startDate "1937-03-02" ;
+	gen:divorceDate "1957" .
+  # oo Nona Isobel Miller, 1906-01-31 - 1997-01, daughter of David Wilson Miller
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7308632> , <#Nona_Isobel_Miller> ;
+	gen:startDate "1957-11-14" .
+<https://www.wikidata.org/wiki/Q16106618>
+  # Frederick Paul de Vere Capell, 11th Earl of Essex, b. 1944-05-29
+  gen:father <https://www.wikidata.org/wiki/Q7342736> ;
+  gen:mother <#Doris_Margaret_Tomlinson> .
+<#Bladen_Horace_Capell>
+  # Bladen Horace Capell, 1922-08-26 - 1978
+  gen:father <#Bladen_Ozro_Capell> ;
+  gen:mother <#Madge_Elizabeth_Crawford> .
+  # oo Mae Elizabeth Walley, , daughter of William J. Walley
+  []
+    gen:spouse <#Bladen_Horace_Capell>, <#Mae_Elizabeth_Walley> ;
+	gen:startDate "1945-02-12" .
+
+<https://www.wikidata.org/wiki/Q8013554>
+  # William Jennings Capell, b. 1952-08-09
+  gen:father <#Bladen_Horace_Capell>;
+  gen:mother <#Mae_Elizabeth_Walley> .
+  # oo Sandra Elaine Matson, daughter of Chester M. Matson
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8013554> , <#Sandra_Elaine_Matson> ;
+	gen:startDate "1971" .
+
+<#Jennifer_Elaine_Capell>
+  # Jennifer Elaine Capell, b. 1974
+  gen:father <https://www.wikidata.org/wiki/Q8013554> ;
+  gen:mother <#Sandra_Elaine_Matson> .
+  # oo 2004 Alfred Cabrera
+<#Kevin_Devereux_Capell>
+  # Kevin Devereux Capell, b. 1982
+  gen:father <https://www.wikidata.org/wiki/Q8013554> ;
+  gen:mother <#Sandra_Elaine_Matson> .
+
+
+# ----
+#<https://www.wikidata.org/wiki/Q7526263>
+  # Sir Charles Morrison, 1st Baronet, 1587-04-18 - 1628-08-20
+  # 1st Baronet Morrison, of Cashiobury 1611-06-29
+  # oo Hon. Mary Hicks
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7526263> , <#Mary_Hicks> ;
+	gen:startDate "1606-12-04" .
+
+<#Elizabeth_Morrison> 
+  # Elizabeth Morrison, 1611-03-23 - 1661-01-26
+  gen:father <https://www.wikidata.org/wiki/Q7526263> ;
+  gen:mother <#Mary_Hicks> .
+  # oo 1627-11-28 Arthur Capell, 1st Baron Capell of Hadham, 1608-02-20 – 1649-03-09, https://www.wikidata.org/wiki/Q1960974
+# ----
+#<https://www.wikidata.org/wiki/Q4857643>
+  # Baptist Hicks, 1st Viscount Campden, 1551~ - 1629-10-18
+  # 1st Baronet Hicks 1620-07-01
+  # 1st Baron Hicks of Ilmington, co. Warwick, 1st Viscount Campden, co. Gloucester 1628-05-05
+  # oo Elizabeth May, d. 1643-06-26, daughter of Richard May and Mary Hillersdon
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4857643> , <#Elizabeth_May> ;
+	gen:startDate "1584-09-06" .
+
+<#Juliana_Hicks>
+  # Hon. Juliana Hicks, d. 1680-11-25
+  gen:father <https://www.wikidata.org/wiki/Q4857643> ;
+  gen:mother <seymour.ttl#Elizabeth_May> .
+  # oo 1605-12-20 Edward Noel, 2nd Viscount Campden, d. 1643-03-08, https://www.wikidata.org/wiki/Q51881872
+<#Mary_Hicks>
+  # Hon. Mary Hicks
+  gen:father <https://www.wikidata.org/wiki/Q4857643> ;
+  gen:mother <#Elizabeth_May> .
+  # oo 1606-12-04 Sir Charles Morrison, 1st Baronet, 1587-04-18 - 1628-08-20, https://www.wikidata.org/wiki/Q7526263
+
+# ----
+#<#John_Strangways>
+  # John Strangways, of Melbury Sampford, 1548~ - 1593
+  # oo Dorothy Thynne, d. 1592-09-25b
+  []
+    gen:spouse <#John_Strangways> , <#Dorothy_Thynne> .
+
+<https://www.wikidata.org/wiki/Q6259386>
+  # Sir John Strangways, 1585-09-27 – 1666-12-30
+  gen:father <#John_Strangways> ;
+  gen:mother <#Dorothy_Thynne> .
+
+<https://www.wikidata.org/wiki/Q5561708>
+  # Giles Strangways, 1615-06-03 – 1675-07-20
+  gen:father <https://www.wikidata.org/wiki/Q6259386> .
+  # oo Susanna Edwards, daughter of Thomas Edwards
+
+<https://www.wikidata.org/wiki/Q6259387>
+  # John Strangways, 1636-10-15 – 1676-04-06
+  gen:father <https://www.wikidata.org/wiki/Q5561708> .
+  # and Susanna Edwards
+  # oo Anne Capell, d. 1675-12-03
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6259387> , <#Anne_Capell> ;
+	gen:startDate "1672-07-04" .
+# ----
+#<https://www.wikidata.org/wiki/Q38200>
+  # Sir John Thynne, 1515~ - 1580-05-21
+  # oo Christiana Gresham
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q38200> , <#Christiana_Gresham> ;
+	gen:startDate "1549-01" .
+
+<#Dorothy_Thynne>
+  # Dorothy Thynne, d. 1592-09-25b
+  gen:father <https://www.wikidata.org/wiki/Q38200> ;
+  gen:mother <#Christiana_Gresham> .
+  # oo John Strangways, of Melbury Sampford, 1548~ - 1593, #John_Strangways
+# ----
+#<https://www.wikidata.org/wiki/Q7326075>
+  # Sir Richard Gresham, 1485~ – 1549-02-21
+  # oo Audrey Lynne, d. 1522-12-28, daughter of William Lynne
+
+<#Christiana_Gresham>
+  # Christiana Gresham
+  gen:father <https://www.wikidata.org/wiki/Q7326075> .
+  # and Audrey Lynne
+  # oo 1549-01 Sir John Thynne, 1515~ - 1580-05-21, https://www.wikidata.org/wiki/Q38200
+
+
+# ====
+# Hyde
+
+#<https://www.wikidata.org/wiki/Q61313609>
+  # Lawrence Hyde, d. 1590-06-07
+  # son of Robert Hyde
+  # and Catherine Boydell
+  # oo Anne Sybill, daughter of Nicholas Sybill
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q61313609> , <https://www.wikidata.org/wiki/Q61313610> .
+
+<https://www.wikidata.org/wiki/Q5723492>
+  # Henry Hyde, 1563~ - 1634-09-29
+  gen:father <https://www.wikidata.org/wiki/Q61313609> ;
+  gen:mother <https://www.wikidata.org/wiki/Q61313610> .
+  # oo Mary Langford, 1578-09-13 - 1661-12-28
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5723492> , <https://www.wikidata.org/wiki/Q61313612> ;
+	gen:startDate "1597-04-03" .
+
+<https://www.wikidata.org/wiki/Q335173>
+  # Edward Hyde, 1st Earl of Clarendon, 1609-02-18 - 1674-12-19
+  # 1st Baron Hyde of Hindon, co. Wilts 1660-11-03
+  # 1st Viscount Cornbury, co. Oxford, 1st Earl of Clarendon 1661-04-20
+  gen:father <https://www.wikidata.org/wiki/Q5723492> ;
+  gen:mother <https://www.wikidata.org/wiki/Q61313612> .
+  # oo Frances Aylesbury, 1617-08-25 - 1667-08-17
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q335173> , <https://www.wikidata.org/wiki/Q4943005> ;
+	gen:startDate "1634-07-10" .
+
+<https://www.wikidata.org/wiki/Q3784948>
+  # Henry Hyde, 2nd Earl of Clarendon, 1638-06-02 - 1709-10-31
+  gen:father <https://www.wikidata.org/wiki/Q335173> ;
+  gen:mother <https://www.wikidata.org/wiki/Q4943005> .
+  # oo Theodosia Capell, 1640-01-03 - 1662-03~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3784948> , <#Theodosia_Capell> ;
+	gen:startDate "1661-01-26~" .
+<https://www.wikidata.org/wiki/Q3827905>
+  # Laurence Hyde, 1st Earl of Rochester, 1642-03-15 - 1711-05-02
+  # 1st Earl of Rochester, 1st Viscount Hyde of Kenilworth, 1st Baron Wotton Basset 1682-11-29
+  gen:father <https://www.wikidata.org/wiki/Q335173> ;
+  gen:mother <https://www.wikidata.org/wiki/Q4943005> .
+  # oo Lady Henrietta Boyle, 1646~ - 1687-04-12
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3827905> , <https://www.wikidata.org/wiki/Q5715966> ;
+	gen:startDate "1665" .
+<https://www.wikidata.org/wiki/Q53581579>
+  # Hon. Edward Hyde, 1645-04-01b - 1665-01-10
+  gen:father <https://www.wikidata.org/wiki/Q335173> ;
+  gen:mother <https://www.wikidata.org/wiki/Q4943005> .
+<https://www.wikidata.org/wiki/Q145609>
+  # Lady Anne Hyde, 1637-03-12 – 1671-03-31
+  gen:father <https://www.wikidata.org/wiki/Q335173> ;
+  gen:mother <https://www.wikidata.org/wiki/Q4943005> .
+  # oo 1659-11-24 James II Stuart, King of Great Britain, 1633-10-14 – 1701-09-16, https://www.wikidata.org/wiki/Q126188
+<#Lady_Frances_Hyde>
+  # Lady Frances Hyde
+  gen:father <https://www.wikidata.org/wiki/Q335173> ;
+  gen:mother <https://www.wikidata.org/wiki/Q4943005> .
+  # oo 1675 Rt. Hon. Thomas Keightley, 1650-01-23 – 1719-01-19, https://www.wikidata.org/wiki/Q7791454
+
+<https://www.wikidata.org/wiki/Q333577>
+  # Edward Hyde, 3rd Earl of Clarendon, 1661-11-28 – 1723-03-31
+  gen:father <https://www.wikidata.org/wiki/Q3784948> ;
+  gen:mother <#Theodosia_Capell> .
+  # oo Katherine O'Brien, 8th Baroness Clifton (of Leighton Bromswold), 1673-01-29 - 1706-08-11
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q333577> , <fitzgerald.ttl#Katherine_O'Brien,_8th_Baroness_Clifton> ;
+	gen:startDate "1688-07-10" .
+<#Lady_Anne_Hyde>
+  # Lady Anne Hyde, d. 1685-06-25
+  gen:father <https://www.wikidata.org/wiki/Q3827905> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5715966> .
+  # oo 1682-07-20 James Butler, 2nd Duke of Ormonde, 1665-04-29 – 1745-11-16, https://www.wikidata.org/wiki/Q610327
+<#Lady_Mary_Hyde>
+  # Lady Mary Hyde, 1669 - 1709-01-25
+  gen:father <https://www.wikidata.org/wiki/Q3827905> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5715966> .
+  # oo 1704-02-17 Francis Seymour-Conway, 1st Baron Conway of Ragley, 1679-05-28 - 1732-02-03, https://www.wikidata.org/wiki/Q5482442
+<https://www.wikidata.org/wiki/Q5723485>
+  # Henry Hyde, 4th Earl of Clarendon, 1672 - 1753-12-10
+  # 2nd Earl of Rochester, 2nd Viscount Hyde of Kenilworth, 2nd Baron Wotton Basset 1711-05-02
+  # 4th Earl of Clarendon, 4th Baron Hyde of Hindon, co. Wilts, 4th Viscount Cornbury, co. Oxford 1723-03-31
+  gen:father <https://www.wikidata.org/wiki/Q3827905> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5715966> .
+  # oo Jane Leveson-Gower, 1669 - 1725-05-24
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5723485> , <https://www.wikidata.org/wiki/Q18529948> ;
+	gen:startDate "1692-03-02~" .
+<#Lady_Henrietta_Hyde>
+  gen:name "Lady Henrietta Hyde"@en ;
+  gen:birthDate "1677~" ;
+  gen:deathDate "1730-05-30" ;
+  gen:father <https://www.wikidata.org/wiki/Q3827905> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5715966> .
+  # oo 1693/1694-01-02 James Scott, Earl of Dalkeith, 1674-05-23 - 1705-03-14, https://www.wikidata.org/wiki/Q362651
+
+<https://www.wikidata.org/wiki/Q55538431>
+  # Theodosia Hyde, 10th Baroness Clifton (of Leighton Bromswold), 1695-11-09 – 1722-07-30
+  gen:father <https://www.wikidata.org/wiki/Q333577> ;
+  gen:mother <fitzgerald.ttl#Katherine_O'Brien,_8th_Baroness_Clifton> .
+  # oo 1713-08-24 John Bligh, 1st Earl of Darnley, 1687-12-28 - 1728-09-12, #John_Bligh,_1st_Earl_of_Darnley
+<https://www.wikidata.org/wiki/Q3806993>
+  gen:name "Lady Jane Hyde"@en ;
+  gen:birthDate "1694" ;
+  gen:deathDate "1724-01" ;
+  gen:father <https://www.wikidata.org/wiki/Q5723485> ;
+  gen:mother <https://www.wikidata.org/wiki/Q18529948> .
+  # oo 1718-11-27 William Capell, 3rd Earl of Essex, 1697-01-11 - 1743-01-08, https://www.wikidata.org/wiki/Q7609264
+<https://www.wikidata.org/wiki/Q5052743>
+  # Lady Catherine Hyde, 1701 – 1777-06-17
+  gen:father <https://www.wikidata.org/wiki/Q5723485> ;
+  gen:mother <https://www.wikidata.org/wiki/Q18529948> .
+  # oo 1720-03-10 Charles Douglas, 3rd Duke of Queensberry, 1698-11-24 - 1778-10-22, https://www.wikidata.org/wiki/Q335630
+<https://www.wikidata.org/wiki/Q5723487>
+  # Henry Hyde, Viscount Cornbury, 1710-11-28 - 1753-05-28
+  gen:father <https://www.wikidata.org/wiki/Q5723485> ;
+  gen:mother <https://www.wikidata.org/wiki/Q18529948> .
+  # oo Lady Frances Lee, 1721-01-21 - 1761-01-29
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5723487> , <#Lady_Frances_Lee> ;
+	gen:startDate "1737-11-09" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q61313615>
+  # Edward Langford
+  # son of Alexander Langford
+  # oo Mary St. Barbe, daughter of Thomas St. Barbe and Joan ???
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q61313615> , <https://www.wikidata.org/wiki/Q61313617> .
+
+<https://www.wikidata.org/wiki/Q61313612>
+  # Mary Langford, 1578-09-13 - 1661-12-28
+  gen:father <https://www.wikidata.org/wiki/Q61313615> ;
+  gen:mother <https://www.wikidata.org/wiki/Q61313617> .
+  # oo 1597-04-03 Henry Hyde, 1563~ - 1634-09-29, https://www.wikidata.org/wiki/Q5723492
+
+# ----
+#<https://www.wikidata.org/wiki/Q61313622>
+  # William Aylesbury, 1536~ - 1620-12
+  # son of Thomas Aylesbury
+  # and Agnes Hobbins
+  # oo Anne Poole, daughter of John Poole
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q61313622> , <https://www.wikidata.org/wiki/Q61313625> .
+
+<https://www.wikidata.org/wiki/Q7529036>
+  # Sir Thomas Aylesbury, 1st Baronet, 1576 - 1657
+  # 1st Baronet Aylesbury 1627-04-19
+  gen:father <https://www.wikidata.org/wiki/Q61313622> ;
+  gen:mother <https://www.wikidata.org/wiki/Q61313625> .
+  # oo Anne Denman, 1587 - 1661-11~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7529036> , <https://www.wikidata.org/wiki/Q55418353> ;
+	gen:startDate "1611-10-03" .
+
+<https://www.wikidata.org/wiki/Q4943005>
+  # Frances Aylesbury, 1617-08-25 - 1667-08-17
+  gen:father <https://www.wikidata.org/wiki/Q7529036> ;
+  gen:mother <https://www.wikidata.org/wiki/Q55418353> .
+  # oo 1634-07-10 Edward Hyde, 1st Earl of Clarendon, 1609-02-18 - 1674-12-19, https://www.wikidata.org/wiki/Q335173
+
+# ----
+#<https://www.wikidata.org/wiki/Q61466166>
+  # Rev. Francis Denman, d. 1599-04~
+  # oo Anne Blount, daughter of Robert Blount and Elizabeth Columbel
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q61466166> , <https://www.wikidata.org/wiki/Q61466168> .
+
+<https://www.wikidata.org/wiki/Q55418353>
+  # Anne Denman, 1587 - 1661-11~
+  gen:father <https://www.wikidata.org/wiki/Q61466166> ;
+  gen:mother <https://www.wikidata.org/wiki/Q61466168> .
+  # oo 1611-10-03 Sir Thomas Aylesbury, 1st Baronet, 1576 - 1657, https://www.wikidata.org/wiki/Q7529036
+
+# ----
+<#John_Bligh,_1st_Earl_of_Darnley>
+  # John Bligh, 1st Earl of Darnley, 1687-12-28 - 1728-09-12
+  # 1st Baron Clifton of Rathmore, co. Meath 1721-09-14
+  # 1st Viscount Darnley of Athboy, co. Meath 1723-03-07
+  # 1st Earl of Darnley, co. Meath 1725-06-29
+  gen:father <https://www.wikidata.org/wiki/Q7787695> .
+  # and Elizabeth Naper
+  # oo Theodosia Hyde, 10th Baroness Clifton (of Leighton Bromswold), 1695-11-09 – 1722-07-30
+  []
+    gen:spouse <#John_Bligh,_1st_Earl_of_Darnley> , <https://www.wikidata.org/wiki/Q55538431> ;
+	gen:startDate "1713-08-24" .
+
+<#Lady_Ann_Bligh>
+  # Lady Ann Bligh, d. 1789-02-07
+  gen:father <#John_Bligh,_1st_Earl_of_Darnley> ;
+  gen:mother <https://www.wikidata.org/wiki/Q55538431> .
+  # oo 1742-09-17 Robert Hawkins-Magill, 1704 - 1745-04-10, montagu.ttl#Robert_Hawkins-Magill
+  # oo 1747-12 Bernard Ward, 1st Viscount Bangor, 1719-08-18 - 1781-05-20, https://www.wikidata.org/wiki/Q4893737
+<#Lady_Theodosia_Bligh>
+  # Lady Theodosia Bligh, d. 1777-05-20
+  gen:father <#John_Bligh,_1st_Earl_of_Darnley> ;
+  gen:mother <https://www.wikidata.org/wiki/Q55538431> .
+  # oo 1745-11 William Crosbie, 1st Earl of Glandore, 1716-05 – 1781-04-11, https://www.wikidata.org/wiki/Q8007316
+
+# ----
+# boyle.ttl:
+<https://www.wikidata.org/wiki/Q5715966>
+  # Lady Henrietta Boyle, 1646~ - 1687-04-12
+  gen:father <https://www.wikidata.org/wiki/Q5590389> ;
+  gen:mother <https://www.wikidata.org/wiki/Q22998022> .
+  # oo 1665 Laurence Hyde, 1st Earl of Rochester, 1642-03-15 - 1711-05-02, https://www.wikidata.org/wiki/Q3827905
+
+# ----
+# stuart.ttl:
+<https://www.wikidata.org/wiki/Q126188>
+  # James II Stuart, King of Great Britain, 1633-10-14 – 1701-09-16
+  gen:father <https://www.wikidata.org/wiki/Q81506> ;
+  gen:mother <https://www.wikidata.org/wiki/Q848615> .
+  # oo Lady Anne Hyde, 1637-03-12 – 1671-03-31
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q126188> , <https://www.wikidata.org/wiki/Q145609> ;
+	gen:startDate "1659-11-24" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q7791454>
+  # Rt. Hon. Thomas Keightley, 1650-01-23 – 1719-01-19
+  # son of William Keightley
+  # and Amy Williams
+  # oo Lady Frances Hyde
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7791454> , <#Lady_Frances_Hyde> ;
+	gen:startDate "1675" .
+
+# ----
+# butler.ttl:
+<https://www.wikidata.org/wiki/Q610327>
+  # James Butler, 2nd Duke of Ormonde, 1665-04-29 – 1745-11-16
+  gen:father <https://www.wikidata.org/wiki/Q6159088> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2058767> .
+  # oo Lady Anne Hyde, d. 1685-06-25
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q610327> , <capell.ttl#Lady_Anne_Hyde> ;
+	gen:startDate "1682-07-20" .
+
+# ----
+<#Lady_Frances_Lee>
+  # Lady Frances Lee, 1721-01-21 - 1761-01-29
+  gen:father <https://www.wikidata.org/wiki/Q5541620> ;
+  gen:mother <https://www.wikidata.org/wiki/Q59174591> .
+  # oo 1737-11-09 Henry Hyde, Viscount Cornbury, 1710-11-28 - 1753-05-28, https://www.wikidata.org/wiki/Q5723487
+
+# ====
+
+#<https://www.wikidata.org/wiki/Q1966801>
+  # Nathaniel St. André, 1680~ – 1776-03, 
+  # oo Lady Elizabeth Diana Capell, d. 1759
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1966801> , <#Lady_Elizabeth_Diana_Capell> ;
+	gen:startDate "1730" .
+
+# ----
+<#Harriet_Bladen>
+  # Harriet Bladen, 1734 - 1821-03-12
+  gen:father <https://www.wikidata.org/wiki/Q7787672> .
+  # oo 1767-03-03 William Anne Capell, 4th Earl of Essex, 1732-10-07 – 1799-03-04, https://www.wikidata.org/wiki/Q7607210
+
+# ----
+<https://www.wikidata.org/wiki/Q3666349>
+  # Charles Boyle, Viscount Dungarvan, 1800-12-06 - 1834-08-25
+  gen:father <https://www.wikidata.org/wiki/Q2850198> ;
+  gen:mother <https://www.wikidata.org/wiki/Q48781311> .
+  # oo Lady Catherine St. Lawrence, d. 1879
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3666349> , <#Lady_Catherine_St._Lawrence> ;
+	gen:startDate "1828-03-10" .
+
+<boyle.ttl#Louisa_Caroline_Elizabeth_Boyle>
+  # Louisa Caroline Elizabeth Boyle, d. 1876-05-05
+  gen:father <https://www.wikidata.org/wiki/Q3666349> ;
+  gen:mother <#Lady_Catherine_St._Lawrence> .
+  # oo 1863-06-03 Arthur Algernon Capell, 6th Earl of Essex, 1803-01-27 - 1892-09-11, https://www.wikidata.org/wiki/Q16528761
+# ----
+<https://www.wikidata.org/wiki/Q16845276>
+  # Thomas St. Lawrence, 1st Earl of Howth, 1730-05-10 - 1801-09-29
+  # 15th Baron Howth 1748-04-04
+  # 1st Earl of Howth, 1st Viscount St. Lawrence 1767-09-03
+  gen:father <https://www.wikidata.org/wiki/Q17479328> ;
+  gen:mother <https://www.wikidata.org/wiki/Q18911329> .
+  # oo Isabella King, 1729-08-02 - 1794-10-20
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16845276> , <#Isabella_King> ;
+	gen:startDate "1750-11-17" .
+
+<#William_St._Lawrence,_2nd_Earl_of_Howth>
+  # William St. Lawrence, 2nd Earl of Howth, 1752-10-04 - 1822-04-04
+  gen:father <https://www.wikidata.org/wiki/Q16845276> ;
+  gen:mother <#Isabella_King> .
+  # oo Margaret Burke, 1775~ - 1856-09-19, daughter of William Burke and Magaret Coleman
+
+<#Lady_Catherine_St._Lawrence>
+  # Lady Catherine St. Lawrence, d. 1879
+  gen:father <#William_St._Lawrence,_2nd_Earl_of_Howth> .
+  # and Margaret Burke
+  # oo 1828-03-10 Charles Boyle, Viscount Dungarvan, 1800-12-06 - 1834-08-25, https://www.wikidata.org/wiki/Q3666349
+# ----
+<#Isabella_King>
+  # Isabella King, 1729-08-02 - 1794-10-20
+  gen:father <https://www.wikidata.org/wiki/Q27493874> .
+  # and Isabella Wingfield
+  # oo 1750-11-17 Thomas St. Lawrence, 1st Earl of Howth, 1730-05-10 - 1801-09-29, https://www.wikidata.org/wiki/Q16845276
+
+# ----
+<#Henry_Stevenson_Blackwood>
+  # Hon. Henry Stevenson Blackwood, 1819-08-04 - 1865-10-25
+  gen:father <https://www.wikidata.org/wiki/Q5649831> .
+  # and Elizabeth Finlay
+  # oo Lady Amelia Capell, d. 1892-05-29
+  []
+    gen:spouse <#Henry_Stevenson_Blackwood> , <#Lady_Amelia_Capell> ;
+	gen:startDate "1857-04-25" .
+
+# ----
+<https://www.wikidata.org/wiki/Q18528631>
+  # Sir Henry Meux, 1st Baronet, 1770 - 1841
+  # 1st Baronet Meux, of Theobald's Park in the County of Hertford 1831-09-30
+  gen:father <https://www.wikidata.org/wiki/Q18526810> .
+
+<#Emma_Martha_Meux>
+  # Emma Martha Meux, d. 1905-11-22
+  gen:father <https://www.wikidata.org/wiki/Q18528631> .
+  # oo 1853-01-23 Arthur de Vere Capell, Viscount Malden, 1826-07-22 - 1879-03-10, #Arthur_de_Vere_Capell,_Viscount_Malden
