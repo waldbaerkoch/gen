@@ -740,16 +740,50 @@
   # oo 1863-08-08 George Grant Gordon, 1836-01-29 - 1912-01-24, gordon.ttl#George_Grant_Gordon
 
 # ----
-#<https://www.wikidata.org/wiki/Q7529211>
+#<https://www.wikidata.org/wiki/Q18162883>
+  # Sir Thomas Molyneux, 1531 - 1596/1597
+  # oo Catherine Salaboethe, daughter of Lodowick Salaboethe
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q18162883> , <#Catherine_Salaboethe> ;
+	gen:startDate "1568" .
+
+<#Daniel_Molyneux>
+  # Daniel Molyneux, d. 1632-06-13
+  gen:father <https://www.wikidata.org/wiki/Q18162883> ;
+  gen:mother <#Catherine_Salaboethe> .
+  # oo Jane Ussher, d. 1674-05-17
+  []
+    gen:spouse <#Daniel_Molyneux> , <#Jane_Ussher> .
+
+<#Samuel_Molyneux>
+  # Samuel Molyneux, 1616 - 1692/1693
+  gen:father <#Daniel_Molyneux> ;
+  gen:mother <#Jane_Ussher> .
+  # oo Anne Dowdall, daughter of William Dowdall
+
+<https://www.wikidata.org/wiki/Q2096504>
+  # William Molyneux, 1656-04-17 - 1698-10-11
+  gen:father <#Samuel_Molyneux> .
+  # and Anne Dowdall
+  # oo Lucy Domvile, daughter of Sir William Domvile, Baronet
+<https://www.wikidata.org/wiki/Q7529211>
   # Sir Thomas Molyneux, 1st Baronet, 1661-04-14 - 1733
   # 1st Baronet Molyneux, of Castle Dillon, co. Armagh 1730-07-04
-  # son of Samuel Molyneux, d. 1692, son of Daniel Molyneux (d. 1632-06-13, son of Sir Thomas Molyneux (1531 - 1596) and Catherine Salaboethe (daughter of Lodowick Salaboethe)) and oo Jane Ussher (d. 1674-05-17, daughter of Sir William Ussher and Isabella Loftus)
-  # and oo Anne Dowdall, daughter of William Dowdall
+  gen:father <#Samuel_Molyneux> .
+  # and Anne Dowdall
   # oo Catherine Howard, daughter of Ralph Howard
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7529211> , <#Catherine_Howard> ;
 	gen:startDate "1694" .
 
+<https://www.wikidata.org/wiki/Q325984>
+  # Rt. Hon. Samuel Molyneux, 1689-07-16 - 1728-04-13
+  gen:father <https://www.wikidata.org/wiki/Q2096504> .
+  # and Lucy Domvile
+  # oo Lady Elizabeth Diana Capell, d. 1759
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q325984> , <capell.ttl#Lady_Elizabeth_Diana_Capell> ;
+	gen:startDate "1717-04-05" .
 <https://www.wikidata.org/wiki/Q7526155>
   # Rt. Hon. Sir Capel Molyneux, 3rd Baronet, 1717 - 1797-08
   gen:father <https://www.wikidata.org/wiki/Q7529211> ;
@@ -782,6 +816,25 @@
   gen:father <#Capel_Molyneux> ;
   gen:mother <#Maria_Carpenter> .
   # oo 1863-11-17 Lord William Pitt Lennox, 1799-09-20 - 1881-02-18, https://www.wikidata.org/wiki/Q6680026
+# ----
+#<#Sir_William_Ussher>
+  # Sir William Ussher, 1561 - 1659
+  # oo Isabella Loftus, d. 1597-11-11
+  []
+    gen:spouse <#Sir_William_Ussher> , <#Isabella_Loftus> .
+
+<#Jane_Ussher>
+  # Jane Ussher, d. 1674-05-17
+  gen:father <#Sir_William_Ussher> ;
+  gen:mother <#Isabella_Loftus> .
+  # oo Daniel Molyneux, d. 1632-06-13, #Daniel_Molyneux
+# ----
+<#Isabella_Loftus>
+  # Isabella Loftus, d. 1597-11-11
+  gen:father <https://www.wikidata.org/wiki/Q1243510> .
+  # and Jane Purdon
+  # oo Sir William Ussher, 1561 - 1659, #Sir_William_Ussher
+
 # ----
 <#Elizabeth_Adlercron>
   # Elizabeth Adlercron
