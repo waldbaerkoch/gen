@@ -205,7 +205,7 @@
   gen:mother <#Mary_Dudley> .
   # oo Hon. Catherine Cary, 1609 – 1626
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q42119821> , <#Catherine_Cary> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q42119821> , <https://www.wikidata.org/wiki/Q28059790> ;
 	gen:startDate "1622-08-02" .
   # oo Lady Grace Fane, d. 1633
   []
@@ -1752,8 +1752,13 @@
   gen:father <#Sir_Edward_Cary> .
   # and Katherine Knyvett
   # oo 1586-11-20 John Savile, 1st Baron Savile of Pomfret, 1556 - 1630-08-31, https://www.wikidata.org/wiki/Q6256753
+<#Anne_Cary>
+  # Anne Cary, 1585-08-10 - 1660b
+  gen:father <#Sir_Edward_Cary> .
+  # and Katherine Knyvett
+  # oo 1607-09-16 Francis Leke, 1st Earl of Scarsdale, 1561 - 1665-04-09, 1st Baronet Leke, of Sutton, co. Derby 1611-05-22, 1st Baron Deincourt, of Sutton, co. Derby 1624-10-26, 1st Earl of Scarsdale 1645-11-11, https://www.wikidata.org/wiki/Q5481718, son of https://www.wikidata.org/wiki/Q46250615 and Frances Swift
 
-<#Catherine_Cary>
+<https://www.wikidata.org/wiki/Q28059790>
   # Hon. Catherine Cary, 1609 – 1626
   gen:father <https://www.wikidata.org/wiki/Q332284> ;
   gen:mother <https://www.wikidata.org/wiki/Q331855> .
@@ -1776,16 +1781,33 @@
   # Edward Cary, 1656-04-25 - 1692-11-24b
   gen:father <https://www.wikidata.org/wiki/Q7146212> ;
   gen:mother <#Susan_Uvedale> .
-  # oo Hon. Anne Lucas, d. 1709, daughter of Charles Lucas, 2nd Baron Lucas of Shenfield and Lady Penelope Leke
+  # oo Hon. Anne Lucas, d. 1709
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q40767120> , <#Anne_Lucas> .
+    gen:spouse <https://www.wikidata.org/wiki/Q40767120> , <cavendish.ttl#Anne_Lucas> .
 
 <#Frances_Cary>
   gen:name "Frances Cary"@en ;
   gen:deathDate "1768-02-17" ;
   gen:father <https://www.wikidata.org/wiki/Q40767120> ;
-  gen:mother <#Anne_Lucas> .
+  gen:mother <cavendish.ttl#Anne_Lucas> .
   # oo 1706-02 John Villiers, 1st Earl Grandison, 1684~ - 1766-05-14, https://www.wikidata.org/wiki/Q16859315
+# ----
+<https://www.wikidata.org/wiki/Q5481718>
+  # Francis Leke, 1st Earl of Scarsdale, 1561 - 1665-04-09
+  # 1st Baronet Leke, of Sutton, co. Derby 1611-05-22
+  # 1st Baron Deincourt, of Sutton, co. Derby 1624-10-26
+  # 1st Earl of Scarsdale 1645-11-11
+  gen:father <https://www.wikidata.org/wiki/Q46250615> .
+  # and Frances Swift
+  # oo Anne Cary, 1585-08-10 - 1660b
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5481718> , <#Anne_Cary> ;
+	gen:startDate "1607-09-16" .
+
+<#Lady_Penelope_Leke>
+  # Lady Penelope Leke
+  gen:father <https://www.wikidata.org/wiki/Q5481718> ;
+  gen:mother <#Anne_Cary> .
 
 # ----
 <#John_Sinclair,_Master_of_Caithness>
