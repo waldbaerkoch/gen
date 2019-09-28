@@ -1,6 +1,5 @@
 @base <herbert.ttl> .
 @prefix gen: <http://jjkoch.de/gen#> .
-@prefix wen: <https://en.wikipedia.org/wiki/> .
 @prefix wdata: <https://www.wikidata.org/wiki/> .
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
 
@@ -631,14 +630,14 @@
 <https://www.wikidata.org/wiki/Q14949745>
   # Lady Patricia Herbert, 1904-11-12 - 1994-03-19
   gen:father <https://www.wikidata.org/wiki/Q7308745> ;
-  gen:mother <#Lady_Beatrice_Eleanor_Paget> .
+  gen:mother <paget.ttl#Lady_Beatrice_Eleanor_Paget> .
   # oo 1928-09-26 William Henry Smith, 3rd Viscount Hambleden, 1903-07-25 – 1948-03-31, https://www.wikidata.org/wiki/Q8018524
 <https://www.wikidata.org/wiki/Q7509122>
   # Sidney Herbert, 16th Earl of Pembroke
   gen:birthDate "1906-01-09" ;
   gen:deathDate "1969-03-16" ;
   gen:father <https://www.wikidata.org/wiki/Q7308745> ;
-  gen:mother <#Lady_Beatrice_Eleanor_Paget> .
+  gen:mother <paget.ttl#Lady_Beatrice_Eleanor_Paget> .
   # oo Lady Mary Dorothea Hope, 1903 - 1995-01-16
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7509122> , <hope.ttl#Lady_Mary_Dorothea_Hope> ;
@@ -646,7 +645,7 @@
 <https://www.wikidata.org/wiki/Q3018058>
   # Hon. David Alexander Reginald Herbert, 1908-10-03 – 1995-04-03
   gen:father <https://www.wikidata.org/wiki/Q7308745> ;
-  gen:mother <#Lady_Beatrice_Eleanor_Paget> .
+  gen:mother <paget.ttl#Lady_Beatrice_Eleanor_Paget> .
 
 <https://www.wikidata.org/wiki/Q7607335>
   # Henry George Charles Alexander Herbert, 17th Earl of Pembroke
@@ -1980,16 +1979,6 @@
 	gen:startDate "1848-06-06" .
 
 # ----
-
-# ----
-
-# ----
-
-# ----
-
-# ----
-
-# ----
 #<https://www.wikidata.org/wiki/Q5729784>
   # Sir Henry Wallop, 1531 - 1599-04-14
   # oo Katherine Gifford
@@ -2428,25 +2417,73 @@
 
 
 # ====
-<wen:Robert_Clive>
+#<#Robert_Clive,_of_Styche>
+  # Robert Clive, of Styche
+  # oo Elizabeth Amphlett
+
+<#Richard_Clive>
+  # Richard Clive, of Styche, 1693~ - 1771-04
+  gen:father <#Robert_Clive,_of_Styche> .
+  # and Elizabeth Amphlett
+  # oo Rebecca Gaskell
+  []
+    gen:spouse <#Richard_Clive> , <#Rebecca_Gaskell> .
+<#Benjamin_Clive>
+  # Rev. Benjamin Clive, b. 1695-12-27
+  gen:father <#Robert_Clive,_of_Styche> .
+  # and Elizabeth Amphlett
+  # oo Susannah Floyer
+
+<https://www.wikidata.org/wiki/Q162296>
+  # Robert Clive, 1st Baron Clive of Plassey
+  # 1st Baron Clive of Plassey, co. Clare 1762-03-15
   gen:birthDate "1725-09-29" ;
   gen:deathDate "1774-11-22" ;
   gen:father <#Richard_Clive> ;
-  gen:mother <#Rebecca_Gaskell_Clive> .
+  gen:mother <#Rebecca_Gaskell> .
+  # oo Margaret Maskelyne, 1735-10-26 - 1817-12-28
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q162296> , <#Margaret_Maskelyne> ;
+	gen:startDate "1753-03-15" .
+<https://www.wikidata.org/wiki/Q5537990>
+  # George Clive, d. 1779-03-23
+  gen:father <#Benjamin_Clive> .
+  # and Susannah Floyer
+  # oo Sidney Bolton, d. 1779, daughter of Thomas Bolton and Sydney Fortescue
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5537990> , <#Sidney_Bolton> ;
+	gen:startDate "1763-06-01" .
 
 <https://www.wikidata.org/wiki/Q165770>
   # Edward Clive, 1st Earl of Powis
+  # 2nd Baron Clive of Plassey, co. Clare 1774-11-22
+  # 1st Baron Clive of Walcot, co. Shropshire 1794-08-13
+  # 1st Baron Powis, of Powis Castle, co. Montgomery, 1st Viscount Clive of Ludlow, co. Montgomery, 1st Earl of Powis, in co. Montgomery, 1st Baron Herbert of Chirbury, co. Shropshire 1804-05-14
   gen:birthDate "1754-03-07" ;
   gen:deathDate "1839-05-16" ;
-  gen:father <wen:Robert_Clive> ;
+  gen:father <https://www.wikidata.org/wiki/Q162296> ;
   gen:mother <#Margaret_Maskelyne> .
   # oo Lady Henrietta Antonia Herbert, 1758-09-03 - 1830-06-03
   []
     gen:spouse <https://www.wikidata.org/wiki/Q165770> , <https://www.wikidata.org/wiki/Q3784877> ;
 	gen:startDate "1784-05-07" .
+<https://www.wikidata.org/wiki/Q11801709>
+  # Edward Bolton Clive, 1765~ – 1845-07-22
+  gen:father <https://www.wikidata.org/wiki/Q5537990> ;
+  gen:mother <#Sidney_Bolton> .
+  # oo Hon. Harriet Archer
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q11801709> , <howard.ttl#Harriet_Archer> ;
+	gen:startDate "1790-12" .
+<#Louisa_Clive>
+  # Louisa Clive, 1766 - 1832-03-16
+  gen:father <https://www.wikidata.org/wiki/Q5537990> ;
+  gen:mother <#Sidney_Bolton> .
+  # oo 1796-08-05 Frederick Keppel, of Lexham Hall, 1762-11-12 - 1830-04-12, https://www.wikidata.org/wiki/Q62685987
 
 <https://www.wikidata.org/wiki/Q5343428>
   gen:name "Edward Herbert, 2nd Earl of Powis"@en ;
+  # Herbert 1807-03-09
   gen:birthDate "1785-03-22" ;
   gen:deathDate "1848-01-17" ;
   gen:father <https://www.wikidata.org/wiki/Q165770> ;
@@ -2456,350 +2493,582 @@
     gen:spouse <https://www.wikidata.org/wiki/Q5343428> , <https://www.wikidata.org/wiki/Q47486728> ;
 	gen:startDate "1818-02-09" .
 <#Lady_Henrietta_Antonia_Clive>
+  # Lady Henrietta Antonia Clive
+  gen:birthDate "1786-09-05" ;
   gen:deathDate "1835-12-22" ;
   gen:father <https://www.wikidata.org/wiki/Q165770> ;
   gen:mother <https://www.wikidata.org/wiki/Q3784877> .
-  # oo wen:Sir_Watkin_Williams-Wynn,_5th_Baronet
-<wen:Charlotte_Percy,_Duchess_of_Northumberland>
+  # oo 1817-02-04 Sir Watkin Williams-Wynn, 5th Baronet, 1772-10-15 – 1840-01-06, https://www.wikidata.org/wiki/Q7529424
+<https://www.wikidata.org/wiki/Q1754479>
+  # Lady Charlotte Florentia Clive
   gen:birthDate "1787-09-12" ;
   gen:deathDate "1888-07-27" ;
   gen:father <https://www.wikidata.org/wiki/Q165770> ;
   gen:mother <https://www.wikidata.org/wiki/Q3784877> .
-  # oo 1817-04-29 wen:Hugh_Percy,_3rd_Duke_of_Northumberland
-<wen:Robert_Clive_(1789%E2%80%931854)>
+  # oo 1817-04-29 Hugh Percy, 3rd Duke of Northumberland, 1785-04-20 - 1847-02-11, https://www.wikidata.org/wiki/Q151352
+<https://www.wikidata.org/wiki/Q7342986>
+  # Hon. Robert Henry Clive, of Oakly Park
   gen:birthDate "1789-01-15" ;
   gen:deathDate "1854-01-20" ;
   gen:father <https://www.wikidata.org/wiki/Q165770> ;
   gen:mother <https://www.wikidata.org/wiki/Q3784877> .
-  # oo 1819 wen:Harriet_Windsor-Clive,_13th_Baroness_Windsor
+  # oo Harriet Windsor, 13th Baroness Windsor, 1797-07-30 - 1869-11-09
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7342986> , <https://www.wikidata.org/wiki/Q23022905> ;
+	gen:startDate "1819-06-19" .
+<https://www.wikidata.org/wiki/Q5537991>
+  # George Clive, 1805-10 - 1880-06-08
+  gen:father <https://www.wikidata.org/wiki/Q11801709> ;
+  gen:mother <howard.ttl#Harriet_Archer> .
+  # oo Ann Sybella Martha Farquhar, d. 1907-02-16
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5537991> , <bertie.ttl#Ann_Sybella_Martha_Farquhar> ;
+	gen:startDate "1835-05-02" .
 
-<wen:Edward_Herbert,_3rd_Earl_of_Powis>
+<https://www.wikidata.org/wiki/Q5343429>
+  # Edward James Herbert, 3rd Earl of Powis
   gen:birthDate "1818-11-05" ;
   gen:deathDate "1891-05-07" ;
   gen:father <https://www.wikidata.org/wiki/Q5343428> ;
   gen:mother <https://www.wikidata.org/wiki/Q47486728> .
-<wen:Percy_Egerton_Herbert>
+<#Lady_Lucy_Caroline_Herbert>
+  # Lady Lucy Caroline Herbert, 1819-12-10 - 1884-05-03
+  gen:father <https://www.wikidata.org/wiki/Q5343428> ;
+  gen:mother <https://www.wikidata.org/wiki/Q47486728> .
+  # oo 1865-09-14 Frederick Calvert, 1806-06-09 - 1891-06-06, https://www.wikidata.org/wiki/Q26732784 (hope.ttl)
+<#Lady_Charlotte_Elizabeth_Herbert>
+  # Lady Charlotte Elizabeth Herbert, 1821-02-06 - 1906-05-15
+  gen:father <https://www.wikidata.org/wiki/Q5343428> ;
+  gen:mother <https://www.wikidata.org/wiki/Q47486728> .
+  # oo 1846-10-20 Hugh Montgomerie, of Grey Abbey, 1821-06-26 - 1894-05-29, montgomerie.ttl#Hugh_Montgomerie,_of_Grey_Abbey_(died_1894)
+<https://www.wikidata.org/wiki/Q7167325>
+  # Rt. Hon. Sir Percy Egerton Herbert
   gen:birthDate "1822-04-15" ;
   gen:deathDate "1876-10-07" ;
   gen:father <https://www.wikidata.org/wiki/Q5343428> ;
   gen:mother <https://www.wikidata.org/wiki/Q47486728> .
-  # oo 1860-10-04 Lady Mary Caroline Louisa Petty-Fitzmaurice
-<#Honourable_Robert_Charles_Herbert>
+  # oo Lady Mary Caroline Louisa Thomas Petty-FitzMaurice, 1835-04-25 - 1927-09-17
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7167325> , <fitzgerald.ttl#Lady_Mary_Caroline_Louisa_Thomas_Petty-FitzMaurice> ;
+	gen:startDate "1860-10-04" .
+<https://www.wikidata.org/wiki/Q5540516>
+  # Very Rev. Hon. George Herbert
+  # Dean of Hereford 1867
+  gen:birthDate "1825-11-25" ;
+  gen:deathDate "1894-03-15" ;
+  gen:father <https://www.wikidata.org/wiki/Q5343428> ;
+  gen:mother <https://www.wikidata.org/wiki/Q47486728> .
+  # oo Elizabeth Beatrice Sykes, d. 1883-07-04
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5540516> , <#Elizabeth_Beatrice_Sykes> ;
+	gen:startDate "1869-10-15" .
+<#Robert_Charles_Herbert>
+  # Hon. Robert Charles Herbert
   gen:birthDate "1827-06-24" ;
   gen:deathDate "1902-10-31" ;
   gen:father <https://www.wikidata.org/wiki/Q5343428> ;
   gen:mother <https://www.wikidata.org/wiki/Q47486728> .
-  # oo 1854-06-22 Anna Maria Cludde
-<#Honourable_William_Herbert>
+  # oo Anna Maria Cludde, d. 1906-03-13, daughter of Edward Cludde
+  []
+    gen:spouse <#Robert_Charles_Herbert> , <#Anna_Maria_Cludde> ;
+	gen:startDate "1854-06-22" .
+<#William_Henry_Herbert>
+  # Hon. William Henry Herbert
   gen:birthDate "1834-02-08" ;
   gen:deathDate "1909-01-29" ;
   gen:father <https://www.wikidata.org/wiki/Q5343428> ;
   gen:mother <https://www.wikidata.org/wiki/Q47486728> .
-  # oo Sybella Milbank
-<wen:Robert_Windsor-Clive_(MP)>
+  # oo Sybella Augusta Milbank, d. 1926-10-28, daughter of Mark William Vane Milbank and Barbarina Sophia Farquhar
+  []
+    gen:spouse <#William_Henry_Herbert> , <#Sybella_Augusta_Milbank> ;
+	gen:startDate "1871-11-30" .
+<#Henrietta_Sarah_Windsor-Clive>
+  # Hon. Henrietta Sarah Windsor-Clive, 1820-03-28 - 1899-01-30
+  gen:father <https://www.wikidata.org/wiki/Q7342986> ;
+  gen:mother <https://www.wikidata.org/wiki/Q23022905> .
+  # oo 1853-11-24 Edward Hussey, of Scotney Castle, 1807-07-13 - 1894-09-03, #Edward_Hussey
+<https://www.wikidata.org/wiki/Q7351171>
+  # Hon. Robert Windsor-Clive
   gen:birthDate "1824-05-24" ;
   gen:deathDate "1859-08-04" ;
-  gen:father <wen:Robert_Clive_(1789%E2%80%931854)> ;
-  gen:mother <wen:Harriet_Windsor-Clive,_13th_Baroness_Windsor> .
-  # oo 1852-10-20 Lady Mary Selina Louisa Bridgeman
-<wen:George_Windsor-Clive_(politician,_born_1835)>
+  gen:father <https://www.wikidata.org/wiki/Q7342986> ;
+  gen:mother <https://www.wikidata.org/wiki/Q23022905> .
+  # oo Lady Mary Selina Louisa Bridgeman, 1829-11-24 - 1889-07-12
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7351171> , <#Lady_Mary_Selina_Louisa_Bridgeman> ;
+	gen:startDate "1852-10-20" .
+<https://www.wikidata.org/wiki/Q5546432>
+  # Hon. George Herbert Windsor-Clive
   gen:birthDate "1835-03-12" ;
   gen:deathDate "1918-04-26" ;
-  gen:father <wen:Robert_Clive_(1789%E2%80%931854)> ;
-  gen:mother <wen:Harriet_Windsor-Clive,_13th_Baroness_Windsor> .
-  # oo 1876 Hon. Gertrude Albertine Trefusis (d. 1878-04), daughter of Charles Rodolph Trefusis, 19th Baron Clinton
+  gen:father <https://www.wikidata.org/wiki/Q7342986> ;
+  gen:mother <https://www.wikidata.org/wiki/Q23022905> .
+  # oo Hon. Gertrude Albertina Trefusis, 1846~ - 1878-04-11
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5546432> , <clinton.ttl#Gertrude_Albertina_Trefusis> ;
+	gen:startDate "1876-10-17" .
+<#Sybella_Harriet_Clive>
+  # Sybella Harriet Clive, 1836-06-20 - 1900-12-09
+  gen:father <https://www.wikidata.org/wiki/Q5537991> ;
+  gen:mother <bertie.ttl#Ann_Sybella_Martha_Farquhar> .
+  # oo 1869-06-10 George William Lyttelton, 4th Lord Lyttelton, Baron of Frankley, 1817-03-31 - 1876-04-19, https://www.wikidata.org/wiki/Q1401295
+<#Mary_Kathleen_Clive>
+  # Mary Kathleen Clive, 1856-02-27 - 1907-01-12
+  gen:father <https://www.wikidata.org/wiki/Q5537991> ;
+  gen:mother <bertie.ttl#Ann_Sybella_Martha_Farquhar> .
+  # oo 1880-08-03 Rt. Rev. Hon. Arthur Temple Lyttelton, 1852-01-07 – 1903-02-19, https://www.wikidata.org/wiki/Q4799595
 
-<#Henry_Herbert_2>
-  gen:birthDate "1861-06-28" ;
-  gen:deathDate "1865-08-08" ;
-  gen:father <wen:Percy_Egerton_Herbert> ;
-  gen:mother <#Lady_Mary_Caroline_Louisa_Petty-Fitzmaurice> .
-<wen:George_Herbert,_4th_Earl_of_Powis>
+<https://www.wikidata.org/wiki/Q5540512>
+  # George Charles Herbert, 4th Earl of Powis
   gen:birthDate "1862-06-24" ;
   gen:deathDate "1952-11-09" ;
-  gen:father <wen:Percy_Egerton_Herbert> ;
-  gen:mother <#Lady_Mary_Caroline_Louisa_Petty-Fitzmaurice> .
-  # oo 1890 wen:Violet_Herbert,_Countess_of_Powis (1 June 1865 – 29 April 1929) daughter of wen:Sackville_Lane-Fox,_12th_Baron_Conyers and Mary Curteis
-<#Magdalen_Herbert_(died_1957)>
-  gen:birthDate "1864-07-28" ;
-  gen:deathDate "1957-10-27" ;
-  gen:father <wen:Percy_Egerton_Herbert> ;
-  gen:mother <#Lady_Mary_Caroline_Louisa_Petty-Fitzmaurice> .
-<#Margaret_Augusta_Herbert>
-  gen:deathDate "1952" ;
-  gen:father <wen:Percy_Egerton_Herbert> ;
-  gen:mother <#Lady_Mary_Caroline_Louisa_Petty-Fitzmaurice> .
-  # oo Thomas Richard Cholmondeley (b. 1856, d. 7 Feb 1922)
-<#Colonel_Edward_William_Herbert>
+  gen:father <https://www.wikidata.org/wiki/Q7167325> ;
+  gen:mother <fitzgerald.ttl#Lady_Mary_Caroline_Louisa_Thomas_Petty-FitzMaurice> .
+  # oo Violet Ida Evelyn Lane-Fox, 16th Baroness Darcy de Knayth, 1865-06-01 – 1929-04-29 (osborne.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5540512> , <https://www.wikidata.org/wiki/Q7933242> ;
+	gen:startDate "1890-08-21" .
+<#Lady_Margaret_Augusta_Herbert>
+  # Lady Margaret Augusta Herbert
+  gen:birthDate "1868" ;
+  gen:deathDate "1952-07-07" ;
+  gen:father <https://www.wikidata.org/wiki/Q7167325> ;
+  gen:mother <fitzgerald.ttl#Lady_Mary_Caroline_Louisa_Thomas_Petty-FitzMaurice> .
+  # oo 1897-02-16 Thomas Richard Cholmondeley, 1856 - 1922-02-07, drummond.ttl#Thomas_Richard_Cholmondeley
+<#Mary_Anne_Herbert>
+  # Mary Anne Herbert, 1864 - 1942-07-10
+  gen:father <https://www.wikidata.org/wiki/Q5540516> ;
+  gen:mother <#Elizabeth_Beatrice_Sykes> .
+  # oo 1898-10-26 William Clive Hussey, 1858 - 1928-06-20, #William_Clive_Hussey
+<#Edward_William_Herbert>
   gen:birthDate "1855-03-22" ;
   gen:deathDate "1924-12-28" ;
-  gen:father <#Honourable_Robert_Charles_Herbert> ;
+  gen:father <#Robert_Charles_Herbert> ;
   gen:mother <#Anna_Maria_Cludde> .
-  # oo 1887-01-12 Beatrice Anne Williamson
-<#Percy_Herbert>
+  # oo Beatrice Anne Williamson, d. 1928-06-08
+  []
+    gen:spouse <#Edward_William_Herbert> , <seymour.ttl#Beatrice_Anne_Williamson> ;
+	gen:startDate "1887-01-12" .
+<https://www.wikidata.org/wiki/Q7167394>
+  # Rt. Rev. Percy Mark Herbert
+  # Bishop of Blackburn from 1927 - 1942
+  # Bishop of Norwich 1942 - 1959
   gen:birthDate "1885-04-24" ;
   gen:deathDate "1968-01-22" ;
-  gen:father <#Honourable_William_Herbert> ;
-  gen:mother <#Sybella_Milbank> .
-  # oo Hon. Elaine Orde-Powlett
-<wen:Robert_Windsor-Clive,_1st_Earl_of_Plymouth> # -> Earl of Plymouth
-  # Robert Windsor-Clive, 1st Earl of Plymouth, 1857-08-27 - 1923-03-06
-  gen:father <wen:Robert_Windsor-Clive_(MP)> ;
+  gen:father <#William_Henry_Herbert> ;
+  gen:mother <#Sybella_Augusta_Milbank> .
+  # oo Hon. Elaine Letitia Algitha Orde-Powlett, 1895-02-20 - 1984
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7167394> , <paulet.ttl#Elaine_Letitia_Algitha_Orde-Powlett> ;
+	gen:startDate "1922-09-19" .
+<https://www.wikidata.org/wiki/Q7351172> # -> Earl of Plymouth
+  # Robert George Windsor-Clive, 1st Earl of Plymouth, 1857-08-27 - 1923-03-06
+  gen:father <https://www.wikidata.org/wiki/Q7351171> ;
   gen:mother <#Lady_Mary_Selina_Louisa_Bridgeman> .
 
-<wen:Edward_Robert_Henry_Herbert,_5th_Earl_of_Powis>
+<#Lady_Hermione_Gwladys_Herbert>
+  # Lady Hermione Gwladys Herbert, 1900-09-17 - 1995-05-25
+  gen:father <https://www.wikidata.org/wiki/Q5540512> ;
+  gen:mother <https://www.wikidata.org/wiki/Q7933242> .
+  # oo 1924-11-06 Roberto Lucchesi-Palli, 11th Duca della Grazia, Principe di Campofranco, 1897 - 1979, son of Carlo Lucchesi-Palli, Duca della Grazia and Sidonie Gräfin von Funfkirchen
+<https://www.wikidata.org/wiki/Q6820904>
+  # Mervyn Horatio Herbert, 17th Baron Darcy de Knayth, 1904-05-07 – 1943-03-23
+  gen:father <https://www.wikidata.org/wiki/Q5540512> ;
+  gen:mother <https://www.wikidata.org/wiki/Q7933242> .
+  # oo Vida Cuthbert, 1910~ - 2003-02-15, daughter of James Harold Cuthbert
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6820904> , <#Vida_Cuthbert> ;
+	gen:startDate "1934-10-18" .
+<#Edward_Herbert,_5th_Earl_of_Powis>
+  # Edward Robert Henry Herbert, 5th Earl of Powis
   gen:birthDate "1889-05-19" ;
   gen:deathDate "1974-01-15" ;
-  gen:father <#Colonel_Edward_William_Herbert> ;
-  gen:mother <#Beatrice_Anne_Williamson> .
-<wen:Christian_Victor_Charles_Herbert,_6th_Earl_of_Powis>
+  gen:father <#Edward_William_Herbert> ;
+  gen:mother <seymour.ttl#Beatrice_Anne_Williamson> .
+  # oo Ella Mary Rathborne, d. 1985~, daughter of William Hans Rathborne and Bella Grace MacNeale
+  []
+    gen:spouse <#Edward_Herbert,_5th_Earl_of_Powis>, <#Ella_Mary_Rathborne> ;
+	gen:startDate "1932-03-12" .
+<#Lady_Dorothy_Marguerite_Elizabeth_Herbert>
+  # Lady Dorothy Marguerite Elizabeth Herbert, 1894~ - 1956-12-25
+  gen:father <#Edward_William_Herbert> ;
+  gen:mother <seymour.ttl#Beatrice_Anne_Williamson> .
+  # oo 1914-08-05 Hon. Robert Henry Hepburn-Stuart-Forbes-Trefusis, 1888-07-01 - 1958-07-01, clinton.ttl#Robert_Henry_Hepburn-Stuart-Forbes-Trefusis
+<#Lady_Phyllis_Hedworth_Camilla_Herbert>
+  # Lady Phyllis Hedworth Camilla Herbert, 1898~ - 1972-10-08
+  gen:father <#Edward_William_Herbert> ;
+  gen:mother <seymour.ttl#Beatrice_Anne_Williamson> .
+  # oo 1918-06-01 Martin Drummond Vesey Holt, 1881 - 1956-11-02, #Martin_Drummond_Vesey_Holt
+<https://www.wikidata.org/wiki/Q25998486>
+  # Christian Victor Charles Herbert, 6th Earl of Powis
   gen:birthDate "1904-05-28" ;
   gen:deathDate "1988-10" ;
-  gen:father <#Colonel_Edward_William_Herbert> ;
-  gen:mother <#Beatrice_Anne_Williamson> .
-<wen:George_William_Herbert,_7th_Earl_of_Powis>
-  gen:birthDate "1925" ;
-  gen:deathDate "1993" ;
-  gen:father <#Percy_Herbert> ;
-  gen:mother <#Honourable_Elaine_Orde-Powlett> .
-  # oo Honourable Katharine Odeyne de Grey
+  gen:father <#Edward_William_Herbert> ;
+  gen:mother <seymour.ttl#Beatrice_Anne_Williamson> .
+<https://www.wikidata.org/wiki/Q26327646>
+  # George William Herbert, 7th Earl of Powis
+  gen:birthDate "1925-06-04" ;
+  gen:deathDate "1993-08-13" ;
+  gen:father <https://www.wikidata.org/wiki/Q7167394> ;
+  gen:mother <paulet.ttl#Elaine_Letitia_Algitha_Orde-Powlett> .
+  # oo Hon. Katharine Odeyne de Grey, d. 1928-04-26
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q26327646> , <grey.ttl#Katharine_Odeyne_de_Grey> ;
+	gen:startDate "1949-08-26" .
 
-<wen:John_Herbert,_8th_Earl_of_Powis>
+<https://www.wikidata.org/wiki/Q537661>
+  # Davina Marcia Herbert Ingrams, 18th Baroness Darcy de Knayth, 1938-07-10 – 2008-02-24
+  gen:father <https://www.wikidata.org/wiki/Q6820904> ;
+  gen:mother <#Vida_Cuthbert> .
+  # oo 1960-03-01 Rupert George Ingrams, 1939-03-16 - 1964-02-28, #Rupert_George_Ingrams
+<https://www.wikidata.org/wiki/Q6239026>
+  # John George Herbert, 8th Earl of Powis
   gen:birthDate "1952-03-19" ;
-  gen:father <wen:George_William_Herbert,_7th_Earl_of_Powis> ;
-  gen:mother <#Honourable_Katharine_Odeyne_de_Grey> .
-  # oo 1977 Marijke Sofia Guther
+  gen:father <https://www.wikidata.org/wiki/Q26327646> ;
+  gen:mother <grey.ttl#Katharine_Odeyne_de_Grey> .
+  # oo Marijke Sofia Guther
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6239026> , <#Marijke_Sofia_Guther> ;
+	gen:startDate "1977" .
 
 <#Jonathan_Nicholas_William_Herbert,_Viscount_Clive>
-  gen:birthDate "1979" ;
-  gen:father <wen:John_Herbert,_8th_Earl_of_Powis> ;
+  # Jonathan Nicholas William Herbert, Viscount Clive
+  gen:birthDate "1979-12-05" ;
+  gen:father <https://www.wikidata.org/wiki/Q6239026> ;
   gen:mother <#Marijke_Sofia_Guther> .
 <#Lady_Stephanie_Moira_Herbert>
+  # Lady Stephanie Moira Christina Herbert
   gen:birthDate "1982" ;
-  gen:father <wen:John_Herbert,_8th_Earl_of_Powis> ;
+  gen:father <https://www.wikidata.org/wiki/Q6239026> ;
   gen:mother <#Marijke_Sofia_Guther> .
 <#Lady_Samantha_Julie_Esther_Herbert>
+  # Lady Samantha Julie Esther Herbert
   gen:birthDate "1988" ;
-  gen:father <wen:John_Herbert,_8th_Earl_of_Powis> ;
+  gen:father <https://www.wikidata.org/wiki/Q6239026> ;
   gen:mother <#Marijke_Sofia_Guther> .
-<#Honourable_Alexander_Herbert>
+<#Alexander_Sebastian_George_Herbert>
+  # Hon. Alexander Sebastian George Herbert
   gen:birthDate "1994" ;
-  gen:father <wen:John_Herbert,_8th_Earl_of_Powis> ;
+  gen:father <https://www.wikidata.org/wiki/Q6239026> ;
   gen:mother <#Marijke_Sofia_Guther> .
 
 
 # Earl of Plymouth
-<wen:Robert_Windsor-Clive,_1st_Earl_of_Plymouth>
+<https://www.wikidata.org/wiki/Q7351172>
   # Robert Windsor-Clive, 1st Earl of Plymouth
+  # 14th Lord Windsor 1869-11-09
+  # 1st Viscount Windsor, of Saint Fagans, co. Glamorgan, 1st Earl of Plymouth, co. Devon 1905-12-18
   gen:birthDate "1857-08-27" ;
   gen:deathDate "1923-03-06" ;
-  gen:father <wen:Robert_Windsor-Clive_(MP)> ;
+  gen:father <https://www.wikidata.org/wiki/Q7351171> ;
   gen:mother <#Lady_Mary_Selina_Louisa_Bridgeman> .
-  # oo 1883 Alberta Victoria Sarah Caroline Paget
+  # oo Alberta Victoria Sarah Caroline Paget, 1863-08-07 - 1944-08-22
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7351172> , <paget.ttl#Alberta_Victoria_Sarah_Caroline_Paget> ;
+	gen:startDate "1883-08-11" .
 
-<#Other_Robert_Windsor-Clive,_Viscount_Windsor>
-  gen:birthDate "1884" ;
-  gen:deathDate "1908" ;
-  gen:father <wen:Robert_Windsor-Clive,_1st_Earl_of_Plymouth> ;
-  gen:mother <#Alberta_Victoria_Sarah_Caroline_Paget> .
-<#Lieutenant_Archer_Windsor-Clive>
-  gen:father <wen:Robert_Windsor-Clive,_1st_Earl_of_Plymouth> ;
-  gen:mother <#Alberta_Victoria_Sarah_Caroline_Paget> .
-<wen:Ivor_Windsor-Clive,_2nd_Earl_of_Plymouth>
+<https://www.wikidata.org/wiki/Q6099555>
+  # Ivor Miles Windsor-Clive, 2nd Earl of Plymouth
   gen:birthDate "1889-02-04" ;
   gen:deathDate "1943-10-01" ;
-  gen:father <wen:Robert_Windsor-Clive,_1st_Earl_of_Plymouth> ;
-  gen:mother <#Alberta_Victoria_Sarah_Caroline_Paget> .
-  # oo 1921-07-14 Irene Corona Charteris
+  gen:father <https://www.wikidata.org/wiki/Q7351172> ;
+  gen:mother <paget.ttl#Alberta_Victoria_Sarah_Caroline_Paget> .
+  # oo Lady Irene Corona Charteris, 1902-05-31 - 1989
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6099555> , <wemyss.ttl#Lady_Irene_Corona_Charteris> ;
+	gen:startDate "1921-07-14" .
+<https://www.wikidata.org/wiki/Q64759389>
+  # Hon. Archer Windsor-Clive, 1890-11-06 – 1914-08-25
+  gen:father <https://www.wikidata.org/wiki/Q7351172> ;
+  gen:mother <paget.ttl#Alberta_Victoria_Sarah_Caroline_Paget> .
 
-<wen:Other_Windsor-Clive,_3rd_Earl_of_Plymouth>
+<https://www.wikidata.org/wiki/Q62072007>
+  # Other Robert Ivor Windsor-Clive, 3rd Earl of Plymouth
   gen:birthDate "1923-10-09" ;
-  gen:father <wen:Ivor_Windsor-Clive,_2nd_Earl_of_Plymouth> ;
-  gen:mother <#Irene_Corona_Charteris> .
-  # oo 1950-10-11 Caroline Helen Rice, daughter of Edward Denis Rice and Grace Lucille Marcella Duggan
+  gen:father <https://www.wikidata.org/wiki/Q6099555> ;
+  gen:mother <wemyss.ttl#Lady_Irene_Corona_Charteris> .
+  # oo Caroline Helen Rice, 1931-05-21 - 2016-11-09, daughter of Edward Denis Rice and Grace Lucille Marcella Duggan
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q62072007> , <#Caroline_Helen_Rice> ;
+	gen:startDate "1950-10-11" .
+<#Richard_Archer_Alan_Windsor-Clive>
+  # Hon. Richard Archer Alan Windsor-Clive, 1928-02-05 - 2014-09-05
+  gen:father <https://www.wikidata.org/wiki/Q6099555> ;
+  gen:mother <wemyss.ttl#Lady_Irene_Corona_Charteris> .
+  # oo Joanna Mary Woodall, daughter of Edward Corbet Woodall and Janet Inez Crawley
+  []
+    gen:spouse <#Richard_Archer_Alan_Windsor-Clive> , <#Joanna_Mary_Woodall> ;
+	gen:startDate "1955-04-30" ;
+	gen:divorceDate "1968" .
+  # oo Hon. Mary Alice Jolliffe, 1937-11-01 - 2009-08-22
+  []
+    gen:spouse <#Richard_Archer_Alan_Windsor-Clive> , <paget.ttl#Mary_Alice_Jolliffe> ;
+	gen:startDate "1968-08-05" ;
+	gen:divorceDate "1997" .
 
-<#Ivor_Edward_Other_Windsor-Clive,_Viscount_Windsor>
+<#Ivor_Windsor-Clive,_4th_Earl_of_Plymouth>
+  # Ivor Edward Other Windsor-Clive, 4th Earl of Plymouth
   gen:birthDate "1951-11-19" ;
-  gen:father <wen:Other_Windsor-Clive,_3rd_Earl_of_Plymouth> ;
+  gen:father <https://www.wikidata.org/wiki/Q62072007> ;
   gen:mother <#Caroline_Helen_Rice> .
-  # oo 1979-07-06 Caroline Anne Nettlefold, daughter of Frederick Nettleford and Hon. Juliana Eveline Curzon
+  # oo Caroline Anne Nettlefold, b. 1954-02-28
+  []
+    gen:spouse <#Ivor_Windsor-Clive,_4th_Earl_of_Plymouth> , <#Caroline_Anne_Nettlefold> ;
+	gen:startDate "1979-07-06" .
 <#Lady_Emma_Windsor-Clive>
+  # Lady Emma Windsor-Clive
   gen:birthDate "1954-02-13" ;
-  gen:father <wen:Other_Windsor-Clive,_3rd_Earl_of_Plymouth> ;
+  gen:father <https://www.wikidata.org/wiki/Q62072007> ;
   gen:mother <#Caroline_Helen_Rice> .
-  # oo 1975-04-12  Robert Arthur Dorrien Smith, son of Lt.-Cdr. Thomas Mervyn Dorrien Smith and Princess Tamara Imeretinsky
-<#Honourable_Simon_Percy_Windsor-Clive>
+  # oo 1975-04-12 Robert Arthur Dorrien Smith, b- 1951-05-15, son of Thomas Mervyn Dorrien Smith (1913-05-12 - 1973-12-05, son of Arthur Algernon Dorrien-Smith and Eleanor Salvin Bowlby) and oo 1945-07-21 (div 1967) Princess Tamara Imeretinsky (b. 1926-12-06, daughter of Prince Michael Imeretinsky and Margaret Stella Wright)
+<#Simon_Percy_Windsor-Clive>
+  # Hon. Simon Percy Windsor-Clive
   gen:birthDate "1956-11-19" ;
-  gen:father <wen:Other_Windsor-Clive,_3rd_Earl_of_Plymouth> ;
+  gen:father <https://www.wikidata.org/wiki/Q62072007> ;
   gen:mother <#Caroline_Helen_Rice> .
-  # oo 2002 Umaworn Hutacharem, daughter of Colonel Yanwijit Hutacharem
-<#Honourable_David_Justin_Windsor-Clive>
+  # oo Umaworn Hutacharem, daughter of Yanwijit Hutacharem
+  []
+    gen:spouse <#Simon_Percy_Windsor-Clive> , <#Umaworn_Hutacharem> ;
+	gen:startDate "2002" .
+<#David_Justin_Windsor-Clive>
+  # Hon. David Justin Windsor-Clive
   gen:birthDate "1960-09-04" ;
-  gen:father <wen:Other_Windsor-Clive,_3rd_Earl_of_Plymouth> ;
+  gen:father <https://www.wikidata.org/wiki/Q62072007> ;
   gen:mother <#Caroline_Helen_Rice> .
-  # oo 1986 Camilla Jane Squire, daughter of Christopher John Squire and Jennifer Cosbie Ross
+  # oo Camilla Jane Squire, b. 1962, daughter of Christopher John Squire and Jennifer Cosbie Ross
+  []
+    gen:spouse <#David_Justin_Windsor-Clive> , <#Camilla_Jane_Squire> ;
+	gen:startDate "1986" .
 
-<#Honourable_Robert_Other_Ivor_Windsor-Clive>
+<#Robert_Windsor-Clive,_Viscount_Windsot>
+  # Robert Other Ivor Windsor-Clive, Viscount Windsot
   gen:birthDate "1981-03-25" ;
-  gen:father <#Ivor_Edward_Other_Windsor-Clive,_Viscount_Windsor> ;
+  gen:father <#Ivor_Windsor-Clive,_4th_Earl_of_Plymouth> ;
   gen:mother <#Caroline_Anne_Nettlefold> .
-  # oo 2015 Alice Rose Llewellyn, daughter of Henry Bolitho Llewellyn and Caroline E. Bell
-<#Honourable_Frederick_John_Richard_Windsor-Clive>
+  # oo Alice Rose Llewellyn, b. 1980, daughter of Henry Bolitho Llewellyn and Caroline E. Bell
+  []
+    gen:spouse <#Robert_Windsor-Clive,_Viscount_Windsot> , <#Alice_Rose_Llewellyn> ;
+	gen:startDate "2015" .
+<#Frederick_John_Richard_Windsor-Clive>
+  # Hon. Frederick John Richard Windsor-Clive
   gen:birthDate "1983-04-21" ;
-  gen:father <#Ivor_Edward_Other_Windsor-Clive,_Viscount_Windsor> ;
+  gen:father <#Ivor_Windsor-Clive,_4th_Earl_of_Plymouth> ;
   gen:mother <#Caroline_Anne_Nettlefold> .
   # oo Elizabeth Watson, daughter of Peter Watson
-<#Honourable_India_Windsor-Clive>
+  []
+    gen:spouse <#Frederick_John_Richard_Windsor-Clive> , <#Elizabeth_Watson> ;
+	gen:startDate "2014-11-01" .
+<#Lady_India_Windsor-Clive>
+  # Lady India Windsor-Clive
   gen:birthDate "1988-09-03" ;
-  gen:father <#Ivor_Edward_Other_Windsor-Clive,_Viscount_Windsor> ;
+  gen:father <#Ivor_Windsor-Clive,_4th_Earl_of_Plymouth> ;
   gen:mother <#Caroline_Anne_Nettlefold> .
-<#Honourable_Edward_James_Archer_Windsor-Clive>
+<#Edward_James_Archer_Windsor-Clive>
+  # Hon. Edward James Archer Windsor-Clive
   gen:birthDate "1994-07-18" ;
-  gen:father <#Ivor_Edward_Other_Windsor-Clive,_Viscount_Windsor> ;
+  gen:father <#Ivor_Windsor-Clive,_4th_Earl_of_Plymouth> ;
   gen:mother <#Caroline_Anne_Nettlefold> .
 <#Sofia_Windsor-Clive>
+  # Sofia Windsor-Clive
   gen:birthDate "2004-08-28" ;
-  gen:father <#Honourable_Simon_Percy_Windsor-Clive> ;
+  gen:father <#Simon_Percy_Windsor-Clive> ;
   gen:mother <#Umaworn_Hutacharem> .
 <#Serena_Windsor-Clive>
+  # Serena Windsor-Clive
   gen:birthDate "2007-02-09" ;
-  gen:father <#Honourable_Simon_Percy_Windsor-Clive> ;
+  gen:father <#Simon_Percy_Windsor-Clive> ;
   gen:mother <#Umaworn_Hutacharem> .
 <#James_Windsor-Clive>
+  # James Windsor-Clive
   gen:birthDate "1991" ;
-  gen:father <#Honourable_David_Justin_Windsor-Clive> ;
+  gen:father <#David_Justin_Windsor-Clive> ;
   gen:mother <#Camilla_Jane_Squire> .
 <#Alexander_Windsor-Clive>
+  # Alexander Windsor-Clive
   gen:birthDate "1993" ;
-  gen:father <#Honourable_David_Justin_Windsor-Clive> ;
+  gen:father <#David_Justin_Windsor-Clive> ;
   gen:mother <#Camilla_Jane_Squire> .
 
 <#Grace_Bell_Windsor-Clive>
+  # Grace Bell Windsor-Clive
   gen:birthDate "2016-01-25" ;
-  gen:father <#Honourable_Robert_Other_Ivor_Windsor-Clive> ;
+  gen:father <#Robert_Windsor-Clive,_Viscount_Windsot> ;
   gen:mother <#Alice_Rose_Llewellyn> .
 <#Olive_Mary_Windsor-Clive>
+  # Olive Mary Windsor-Clive
   gen:birthDate "2017-03-25" ;
-  gen:father <#Honourable_Robert_Other_Ivor_Windsor-Clive> ;
+  gen:father <#Robert_Windsor-Clive,_Viscount_Windsot> ;
+  gen:mother <#Alice_Rose_Llewellyn> .
+<#Edward_Other_Ivor_Llewellyn_Windsor-Clive>
+  # Edward Other Ivor Llewellyn Windsor-Clive
+  gen:birthDate "2019-04-26" ;
+  gen:father <#Robert_Windsor-Clive,_Viscount_Windsot> ;
   gen:mother <#Alice_Rose_Llewellyn> .
 <#Florence_Anne_Windsor-Clive>
+  # Florence Anne Windsor-Clive
   gen:birthDate "2017-04-22" ;
-  gen:father <#Honourable_Frederick_John_Richard_Windsor-Clive> ;
+  gen:father <#Frederick_John_Richard_Windsor-Clive> ;
   gen:mother <#Elizabeth_Watson> .
 
 
-# --------
-<#Margaret_Maskelyne>
+# ----
+<https://www.wikidata.org/wiki/Q450757>
+  # Rev. Dr. Nevil Maskelyne, 1732-10-05 - 1811-02-09
   gen:father <#Edmund_Maskelyne> .
+  # and Elizabeth Booth
+<#Margaret_Maskelyne>
+  # Margaret Maskelyne, 1735-10-26 - 1817-12-28
+  gen:father <#Edmund_Maskelyne> .
+  # and Elizabeth Booth
+  # oo 1753-03-15 Robert Clive, 1st Baron Clive of Plassey, 1725-09-29 - 1774-11-22, https://www.wikidata.org/wiki/Q162296
 
-# --------
-<wen:Other_Windsor,_6th_Earl_of_Plymouth>
+# ----
+#<https://www.wikidata.org/wiki/Q7108641>
+  # Other Hickman Windsor, 5th Earl of Plymouth, 1751-05-30 - 1799-06-12
+  # 11th Baron Windsor, 5th Earl of Plymouth 1771-04-20
+  # oo Sarah Archer, 1762-07-19 - 1838-05-27
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7108641> , <https://www.wikidata.org/wiki/Q29145383> ;
+	gen:startDate "1778-05-20" .
+
+<https://www.wikidata.org/wiki/Q7108642>
+  # Other Archer Windsor, 6th Earl of Plymouth
   gen:birthDate "1789-07-02" ;
   gen:deathDate "1833-07-20" ;
-  gen:father <wen:Other_Windsor,_5th_Earl_of_Plymouth> ; # married 1778-05-20
-  gen:mother <#Honourable_Sarah_Archer> .
+  gen:father <https://www.wikidata.org/wiki/Q7108641> ;
+  gen:mother <https://www.wikidata.org/wiki/Q29145383> .
+  # oo Lady Mary Sackville, 1792-07-30 - 1864-07-20
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7108642> , <sackville.ttl#Lady_Mary_Sackville_(died_1864)> ;
+	gen:startDate "1811-08-05" .
 <#Lady_Maria_Windsor>
+  # Lady Maria Windsor
   gen:birthDate "1790" ;
   gen:deathDate "1855-04-07" ;
-  gen:father <wen:Other_Windsor,_5th_Earl_of_Plymouth> ;
-  gen:mother <#Honourable_Sarah_Archer> .
-  # oo 1811 wen:Arthur_Hill,_3rd_Marquess_of_Downshire
-<wen:Harriet_Windsor-Clive,_13th_Baroness_Windsor>
+  gen:father <https://www.wikidata.org/wiki/Q7108641> ;
+  gen:mother <https://www.wikidata.org/wiki/Q29145383> .
+  # oo 1811-10-25 Arthur Blundell Sandys Trumbull Hill, 3rd Marquess of Downshire, 1788-10-08 – 1845-09-12, https://www.wikidata.org/wiki/Q4799070, son of https://www.wikidata.org/wiki/Q4799069 and https://www.wikidata.org/wiki/Q59557482
+<https://www.wikidata.org/wiki/Q23022905>
+  # Harriet Windsor, 13th Baroness Windsor
+  # 13th Baroness Windsor 1855-10-25, suo jure
   gen:birthDate "1797-07-30" ;
   gen:deathDate "1869-11-09" ;
-  gen:father <wen:Other_Windsor,_5th_Earl_of_Plymouth> ;
-  gen:mother <#Honourable_Sarah_Archer> .
+  gen:father <https://www.wikidata.org/wiki/Q7108641> ;
+  gen:mother <https://www.wikidata.org/wiki/Q29145383> .
+  # oo 1819-06-19 Hon. Robert Henry Clive, 1789-01-15 - 1854-01-20, https://www.wikidata.org/wiki/Q7342986
 
-# --------
-<#Honourable_Sarah_Archer>
-  gen:father <wen:Andrew_Archer,_2nd_Baron_Archer> .
+# ----
+<#Elizabeth_Beatrice_Sykes>
+  # Elizabeth Beatrice Sykes, d. 1883-07-04
+  gen:father <https://www.wikidata.org/wiki/Q16065990> .
+  # and Mary Anne Foulis
+  # oo 1869-10-15 Very Rev. Hon. George Herbert, 1825-11-25 - 1894-03-15, https://www.wikidata.org/wiki/Q5540516
 
-# --------
+# ----
+#<#Edward_Hussey>
+  # Edward Hussey, of Scotney Castle, 1807-07-13 - 1894-09-03
+  # oo Hon. Henrietta Sarah Windsor-Clive, 1820-03-28 - 1899-01-30
+  []
+    gen:spouse <#Edward_Hussey> , <#Henrietta_Sarah_Windsor-Clive> ;
+	gen:startDate "1853-11-24" .
+
+<#William_Clive_Hussey>
+  # William Clive Hussey, 1858 - 1928-06-20
+  gen:father <#Edward_Hussey> ;
+  gen:mother <#Henrietta_Sarah_Windsor-Clive> .
+  # oo Mary Anne Herbert, 1864 - 1942-07-10
+  []
+    gen:spouse <#William_Clive_Hussey> , <#Mary_Anne_Herbert> ;
+	gen:startDate "1898-10-26" .
+
+# ----
 <#Lady_Mary_Selina_Louisa_Bridgeman>
-  gen:deathDate "1889-07" ;
-  gen:father <wen:George_Bridgeman,_2nd_Earl_of_Bradford> ;
+  # Lady Mary Selina Louisa Bridgeman
+  gen:birthDate "1829-11-24" ;
+  gen:deathDate "1889-07-12" ;
+  gen:father <https://www.wikidata.org/wiki/Q5537237> ;
   gen:mother <#Georgina_Elizabeth_Moncreiffe> .
+  # oo 1852-10-20 Hon. Robert Windsor-Clive, 1824-05-24 - 1859-08-04, https://www.wikidata.org/wiki/Q7351171
 
-# --------
-<#Alberta_Victoria_Sarah_Caroline_Paget>
-  gen:birthDate "1863" ;
-  gen:deathDate "1944" ;
-  gen:father <wen:Augustus_Paget> ; # married 1860
-  gen:mother <wen:Walburga,_Lady_Paget> .
+# ----
+#<#Sir_Vesey_George_Mackenzie_Holt>
+  # Sir Vesey George Mackenzie Holt, d. 1923-12-06
+  # oo Mabel Mary Drummond, d. 1930-08-10
+  []
+    gen:spouse <#Sir_Vesey_George_Mackenzie_Holt> , <drummond.ttl#Mabel_Mary_Drummond> ;
+	gen:startDate "1880-03-09" .
 
-# --------
-<#Irene_Corona_Charteris>
-  gen:birthDate "1902-05-31" ;
-  gen:deathDate "1989" ;
-  gen:father <wen:Hugo_Charteris,_11th_Earl_of_Wemyss> ;
-  gen:mother <wen:Mary_Constance_Wyndham> .
+<#Martin_Drummond_Vesey_Holt>
+  # Martin Drummond Vesey Holt, 1881 - 1956-11-02
+  gen:father <#Sir_Vesey_George_Mackenzie_Holt> ;
+  gen:mother <drummond.ttl#Mabel_Mary_Drummond> .
+  # oo Lady Phyllis Hedworth Camilla Herbert, 1898~ - 1972-10-08
+  []
+    gen:spouse <#Martin_Drummond_Vesey_Holt> , <#Lady_Phyllis_Hedworth_Camilla_Herbert> ;
+	gen:startDate "1918-06-01" .
 
-# --------
-<#Mary_Elizabeth_Catherine_Gibbs>
-  gen:father <#Abraham_Gibbs> .
+# ----
+#<#Rupert_George_Ingrams>
+  # Rupert George Ingrams, 1939-03-16 - 1964-02-28
+  # son of Leonard St. Clare Ingrams
+  # and Victoria Susan Beatrice Reid
+  # oo Davina Marcia Herbert Ingrams, 18th Baroness Darcy de Knayth, 1938-07-10 – 2008-02-24
+  []
+    gen:spouse <#Rupert_George_Ingrams> , <https://www.wikidata.org/wiki/Q537661> ;
+	gen:startDate "1960-03-01" .
 
-# --------
-<#Lady_Mary_Caroline_Louisa_Petty-Fitzmaurice>
-  gen:deathDate "1927" ;
-  gen:father <wen:William_Petty-FitzMaurice,_Earl_of_Kerry> ;
-  gen:mother <ponsonby.ttl#Lady_Augusta_Lavinia_Priscilla_Ponsonby> .
+<#Miranda_Ingrams>
+  # Hon. Miranda Ingrams, b. 1960-10-23
+  gen:father <#Rupert_George_Ingrams> ;
+  gen:mother <https://www.wikidata.org/wiki/Q537661> .
+<#Caspar_David_Ingrams,_19th_Lord_Darcy_de_Knayth>
+  # Caspar David Ingrams, 19th Lord Darcy de Knayth, b. 1962-01-05
+  gen:father <#Rupert_George_Ingrams> ;
+  gen:mother <https://www.wikidata.org/wiki/Q537661> .
+  # oo Catherine Baker, daughter of Bryan Baker
+  []
+    gen:spouse <#Caspar_David_Ingrams,_19th_Lord_Darcy_de_Knayth> , <#Catherine_Baker> ;
+	gen:startDate "1996-09-14" .
+<#Catriona_Ingrams>
+  # Hon. Catriona Ingrams, b. 1963-11-18
+  gen:father <#Rupert_George_Ingrams> ;
+  gen:mother <https://www.wikidata.org/wiki/Q537661> .
 
-# --------
-<#Anna_Maria_Cludde>
-  gen:father <#Edward_Cludde> .
+<#Thomas_Rupert_Ingrams>
+  # Hon. Thomas Rupert Ingrams, b. 1999-10-23
+  gen:father <#Caspar_David_Ingrams,_19th_Lord_Darcy_de_Knayth> ;
+  gen:mother <#Catherine_Baker> .
+<#Henry_St._Clair_Ingrams>
+  # Hon. Henry St. Clair Ingrams, b. 2001-09-12
+  gen:father <#Caspar_David_Ingrams,_19th_Lord_Darcy_de_Knayth> ;
+  gen:mother <#Catherine_Baker> .
+<#George_Richard_Ingrams>
+  # Hon. George Richard Ingrams, b. 2004-03-21
+  gen:father <#Caspar_David_Ingrams,_19th_Lord_Darcy_de_Knayth> ;
+  gen:mother <#Catherine_Baker> .
 
-# --------
-<#Sybella_Milbank>
-  gen:father <#Mark_Milbank> ;
-  gen:mother <#Barbarina_Farquhar> .
-
-# --------
-<#Beatrice_Anne_Williamson>
-  gen:father <#Sir_Hedworth_Williamson,_8th_Baronet> ;
-  gen:mother <#Lady_Elizabeth_Liddell> .
-
-# --------
-<#Honourable_Elaine_Orde-Powlett>
-  gen:father <wen:William_Orde-Powlett,_5th_Baron_Bolton> ;
-  gen:mother <#Honourable_Elizabeth_Gibson> .
-
-# --------
-<#Honourable_Elizabeth_Gibson>
-  gen:father <wen:Edward_Gibson,_1st_Baron_Ashbourne> ;
-  gen:mother <#Frances_Colles> .
-
-# --------
-<#Lord_Alexander_Victor_Paget>
-  gen:birthDate "1839-04-25" ;
-  gen:deathDate "1886-10-26" ;
-  gen:father <wen:Henry_Paget,_2nd_Marquess_of_Anglesey> ; # married 1833-08-27
-  gen:mother <#Henrietta_Bagot> .
-
-<#Lady_Beatrice_Eleanor_Paget>
-  gen:father <#Lord_Alexander_Victor_Paget> ;
-  gen:mother <#Hester_Alice_Stapleton-Cotton> .
-
-# --------
-<#Henrietta_Bagot>
-  gen:father <wen:Charles_Bagot> ; # married 1806-07-22
-  gen:mother <wellesley.ttl#Lady_Mary_Charlotte_Anne_Wellesley> . # daughter of wen:William_Wellesley-Pole,_3rd_Earl_of_Mornington
-
-# --------
-<#Honourable_Katharine_Odeyne_de_Grey>
-  gen:father <#Lieutenant-Colonel_George_de_Grey,_8th_Baron_Walsingham> ;
-  gen:mother <#Hyacinth_Bouwens> .
-
-# --------
+# ----
 <#Marijke_Sofia_Guther>
   gen:father <#Maarten_Nanne_Guther> ;
   gen:mother <#Woutertje_Bouw> .
 
-# --------
-<#Claire_Rose_Pelly>
-  gen:father <#Douglas_Gurney_Pelly> .
+# ----
+#<#Frederick_Nettleford>
+  # Frederick Nettleford
+  # oo Hon. Juliana Eveline Curzon, 1927 - 2006-07-16
+  []
+    gen:spouse <#Frederick_Nettleford> , <#Juliana_Eveline_Curzon> ;
+	gen:startDate "1953" ;
+	gen:divorceDate "1956" .
 
-# --------
-
-# --------
-
-# --------
+<#Caroline_Anne_Nettlefold>
+  # Caroline Anne Nettlefold, b. 1954-02-28
+  gen:father <#Frederick_Nettleford> ;
+  gen:mother <#Juliana_Eveline_Curzon> .
+  # oo 1979-07-06 Ivor Edward Other Windsor-Clive, 4th Earl of Plymouth, b. 1951-11-19, #Ivor_Windsor-Clive,_4th_Earl_of_Plymouth
+# ----
+<#Juliana_Eveline_Curzon>
+  # Hon. Juliana Eveline Curzon, 1927 - 2006-07-16
+  gen:father <https://www.wikidata.org/wiki/Q21684728> .
+  # and Mildred Carson Dunbar
+  # oo 1953 (div 1956) Frederick Nettleford, #Frederick_Nettleford
