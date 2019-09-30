@@ -141,7 +141,7 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5944748> , <dutton.ttl#Jane_Dutton> ;
 	gen:startDate "1775-10-05" .
-  # oo Lady Anne Amelia Keppel, 1803 - 1844-07-22
+  # oo Lady Anne Amelia Keppel, 1803-06-16 - 1844-07-22
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5944748> , <keppel.ttl#Lady_Anne_Amelia_Keppel> ;
 	gen:startDate "1822-02-26" .
@@ -150,6 +150,11 @@
   gen:father <https://www.wikidata.org/wiki/Q5610526> ;
   gen:mother <#Elizabeth_Chamberlayne> .
   # oo 1774-07-07 James Naper Dutton, 1st Baron Sherborne, 1744-10-22 – 1820-05-22, https://www.wikidata.org/wiki/Q6132984
+<#Margaret_Coke>
+  # Margaret Coke, d. 1821-01-22
+  gen:father <https://www.wikidata.org/wiki/Q5610526> ;
+  gen:mother <#Elizabeth_Chamberlayne> .
+  # oo 1769-12-21 Sir Henry Hunloke, 4th Baronet, 1724 – 1804-11-15, #Sir_Henry_Hunloke,_4th_Baronet, son of Sir Thomas Windsor Hunloke, 3rd Baronet (1684 – 1752) and oo Charlotte Throckmorton (daughter of Sir Robert Throckmorton, 3rd Baronet and Mary Yate)
 <#Edward_Coke,_of_Longford>
   # Edward Coke, of Longford, 1758 - 1836-07-29
   gen:father <https://www.wikidata.org/wiki/Q5610526> ;
@@ -250,7 +255,7 @@
   # Lady Mildred Coke, 1854 - 1941-05-12
   gen:father <https://www.wikidata.org/wiki/Q7612333> ;
   gen:mother <wemyss.ttl#Juliana_Whitbread> .
-  # oo 1878-11-05 Thomas Francis Anson, 3rd Earl of Lichfield, 1856-01-31 - 1918-07-29, gower.ttl#Thomas_Francis_Anson,_3rd_Earl_of_Lichfield
+  # oo 1878-11-05 Thomas Francis Anson, 3rd Earl of Lichfield, 1856-01-31 - 1918-07-29, https://www.wikidata.org/wiki/Q52267685 (gower.ttl)
 <#Richard_Coke>
   # Hon. Richard Coke, 1876-08-20 - 1964-06-14
   gen:father <https://www.wikidata.org/wiki/Q7612333> ;
@@ -596,6 +601,22 @@
   # oo 1779-07-01 Henry Bilson-Legge, 2nd Baron Stawel of Somerton, 1757-02-22 - 1820-08-25, https://www.wikidata.org/wiki/Q5718192
 
 # ----
+#<#Sir_Henry_Hunloke,_4th_Baronet>
+  # Sir Henry Hunloke, 4th Baronet, 1724 – 1804-11-15
+  # son of Sir Thomas Windsor Hunloke, 3rd Baronet, 1684 – 1752
+  # and oo Charlotte Throckmorton, daughter of Sir Robert Throckmorton, 3rd Baronet and Mary Yate
+  # oo Margaret Coke, d. 1821-01-22
+  []
+    gen:spouse <#Sir_Henry_Hunloke,_4th_Baronet> , <#Margaret_Coke> ;
+	gen:startDate "1769-12-21" .
+
+<#Charlotte_Susanna_Hunloke>
+  # Charlotte Susanna Hunloke, 1774-09-20 - 1862-10-11
+  gen:father <#Sir_Henry_Hunloke,_4th_Baronet> ;
+  gen:mother <#Margaret_Coke> .
+  # oo 1822-02-11 William Charles Keppel, 4th Earl of Albemarle, 1772-05-14 – 1849-10-30, https://www.wikidata.org/wiki/Q8013960
+
+# ----
 #<https://www.wikidata.org/wiki/Q27468351>
   # Richard Wingfield, 5th Viscount Powerscourt, 1790-09-11 – 1823-08-09
   # oo Lady Frances Theodosia Jocelyn, 1795 - 1820-05-10
@@ -671,9 +692,13 @@
     gen:spouse <https://www.wikidata.org/wiki/Q30123611> , <#Elizabeth_Eliot> ;
 	gen:startDate "1791-07-29" .
 <#William_Stapleton>
-  # William Stapleton, 1770 - 1826
+  # William Stapleton, 1770-06-06 - 1826
   gen:father <https://www.wikidata.org/wiki/Q26905899> ;
   gen:mother <fane.ttl#Mary_Fane> .
+  # oo Anna Maria Keppel, 1759-06-17 - 1836
+  []
+    gen:spouse <#William_Stapleton> , <keppel.ttl#Anna_Maria_Keppel> ;
+	gen:startDate "1790" .
 
 <https://www.wikidata.org/wiki/Q30128162>
   # Rev. Hon. Sir Francis Jarvis Stapleton, 7th Baronet, 1807-08-06 - 1874-02-11
