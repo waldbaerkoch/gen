@@ -1,0 +1,282 @@
+@base <legge.ttl> .
+@prefix gen: <http://jjkoch.de/gen#> .
+@prefix wdata: <https://www.wikidata.org/wiki/> .
+@prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+
+
+# howard.ttl:
+<https://www.wikidata.org/wiki/Q3760572>
+  # George Legge, 1st Baron Dartmouth, 1647 - 1691-10-25
+  # 1st Baron Dartmouth, of Dartmouth, Devon 1682-12-02
+  gen:father <https://www.wikidata.org/wiki/Q8014452> .
+  # oo Barbara Archibald, d. 1718-01-28, daughter of Sir Henry Archibald
+
+# howard.ttl:
+<legge.ttl#Mary_Legge>
+  # Hon. Mary Legge
+  gen:father <https://www.wikidata.org/wiki/Q3760572> .
+  # and Barbara Archibald
+  # oo 1685 Philip Musgrave, d. 1689, howard.ttl#Philip_Musgrave
+# hay.ttl:
+<https://www.wikidata.org/wiki/Q9374853>
+  # William Legge, 1st Earl of Dartmouth, 1672-10-14 - 1750-12-15
+  # 2nd Baron Dartmouth, of Dartmouth, Devon 1691-10-25
+  # 1st Viscount Lewisham, of co. Kent, 1st Earl of Dartmouth 1711-09-05
+  gen:father <https://www.wikidata.org/wiki/Q3760572> .
+  # oo Lady Anne Finch, 1680~ - 1751-11-30
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q9374853> , <finch.ttl#Lady_Anne_Finch> ;
+	gen:startDate "1700-07-18" .
+
+# hay.ttl / paget.ttl:
+<#Lady_Barbara_Legge>
+  # Lady Barbara Legge, 1709 - 1765-10-29
+  gen:father <https://www.wikidata.org/wiki/Q9374853> ;
+  gen:mother <finch.ttl#Lady_Anne_Finch> .
+  # oo 1724-07-27 Sir Walter Wagstaffe Bagot, 5th Baronet, 1702-08-03 - 1768-01-28, https://www.wikidata.org/wiki/Q7529360
+# brudenell.ttl:
+<#George_Legge,_Viscount_Lewisham>
+  # George Legge, Viscount Lewisham, d. 1732-08-29
+  gen:father <https://www.wikidata.org/wiki/Q9374853> ;
+  gen:mother <finch.ttl#Lady_Anne_Finch> .
+  # oo Elizabeth Kaye, d. 1745-04-21
+  []
+    gen:spouse <#George_Legge,_Viscount_Lewisham> , <#Elizabeth_Kaye> .
+
+<#Anne_Legge>
+  # Hon. Anne Legge, d. 1786-11-12
+  gen:father <#George_Legge,_Viscount_Lewisham> ;
+  gen:mother <#Elizabeth_Kaye> .
+  # oo 1760-11-24 James Brudenell, 5th Earl of Cardigan, 1725-04-20 - 1811-02-24, https://www.wikidata.org/wiki/Q6130391
+# scott.ttl:
+<#Lady_Charlotte_Legge>
+  # Lady Charlotte Legge, d. 1848-11-05
+  gen:father <https://www.wikidata.org/wiki/Q3568789> .
+  # and Frances Catherine Nicoll
+  # oo 1795-09-24 Charles Duncombe, 1st Baron Feversham of Duncombe Park, 1764-12-05 - 1841-07-16, https://www.wikidata.org/wiki/Q5077002
+
+
+# talbot.ttl:
+<https://www.wikidata.org/wiki/Q7613834>
+  # William Legge, 4th Earl of Dartmouth, 1784-11-29 - 1853-11-22
+  gen:father <https://www.wikidata.org/wiki/Q5541651> ;
+  gen:mother <https://www.wikidata.org/wiki/Q51883197> .
+  # oo Lady Frances Charlotte Chetwynd-Talbot, 1801-05-17 - 1823-10-04
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7613834> , <talbot.ttl#Lady_Frances_Charlotte_Chetwynd-Talbot> ;
+	gen:startDate "1820-04-05" .
+# paget.ttl:
+<#Lady_Louisa_Legge>
+  # Lady Louisa Legge, 1787-03-08 - 1816-08-13
+  gen:father <https://www.wikidata.org/wiki/Q5541651> ;
+  gen:mother <https://www.wikidata.org/wiki/Q51883197> .
+  # oo 1807-02-17 William Bagot, 2nd Baron Bagot of Bagot's Bromley, 1773-09-11 - 1856-02-12, https://www.wikidata.org/wiki/Q8004922
+<#Lady_Harriet_Legge>
+  # Lady Harriet Legge, 1790-09-07 - 1855-03-11
+  gen:father <https://www.wikidata.org/wiki/Q5541651> ;
+  gen:mother <https://www.wikidata.org/wiki/Q51883197> .
+  # oo 1815-02-22 Hon. Sir Edward Paget, 1775-11-03 - 1849-05-13, https://www.wikidata.org/wiki/Q4385579
+# shirley.ttl:
+<#Lady_Barbara_Maria_Legge>
+  # Lady Barbara Maria Legge, 1791-11-29 - 1840-04-22
+  gen:father <https://www.wikidata.org/wiki/Q5541651> ;
+  gen:mother <https://www.wikidata.org/wiki/Q51883197> .
+  # oo 1820-04 Francis Newdigate, 1774 - 1863-05-21, shirley.ttl#Francis_Newdigate
+# hay.ttl:
+<https://www.wikidata.org/wiki/Q24760732>
+  # Lady Charlotte Legge, 1795-02-12 - 1877-06-15
+  gen:father <https://www.wikidata.org/wiki/Q5541651> ;
+  gen:mother <https://www.wikidata.org/wiki/Q51883197> .
+  # oo 1816-05-09 Very Rev. Hon. George Neville-Grenville, 1789-08-17 - 1854-06-10, https://www.wikidata.org/wiki/Q5542846
+# stanley.ttl:
+<https://www.wikidata.org/wiki/Q4799482>
+  # Hon. Arthur Charles Legge, 1800-06-05 - 1890-05-18
+  gen:father <https://www.wikidata.org/wiki/Q5541651> ;
+  gen:mother <https://www.wikidata.org/wiki/Q51883197> .
+  # oo Hon. Anne Frederica Holroyd, d. 1829-08-31
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4799482> , <stanley.ttl#Anne_Frederica_Holroyd> ;
+	gen:startDate "1827-06-14" .
+
+# talbot.ttl:
+<https://www.wikidata.org/wiki/Q4821478>
+  # Rt. Rev. Hon. Augustus Legge, 1839-11-28 - 1913-03-15
+  gen:father <https://www.wikidata.org/wiki/Q7613834> .
+  # and Hon. Frances Barrington
+  # oo Fanny Louisa Stopford Sackville, d. 1911-12-23
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4821478> , <kennedy.ttl#Fanny_Louisa_Stopford_Sackville> ;
+	gen:startDate "1877-01-03" .
+# talbot.ttl:
+<https://www.wikidata.org/wiki/Q47516729>
+  # Hon. Charles Gounter Legge, 1842-05-09 - 1907-11-15
+  gen:father <https://www.wikidata.org/wiki/Q7613834> .
+  # and Hon. Frances Barrington
+  # oo Mary Garnier, 1836-02-26 - 1896-12-13
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q47516729> , <#Mary_Garnier> ;
+	gen:startDate "1868-06-02" .
+
+# coke.ttl:
+<https://www.wikidata.org/wiki/Q8014457>
+  # William Heneage Legge, 6th Earl of Dartmouth, 1851-05-06 – 1936-03-11
+  gen:father <https://www.wikidata.org/wiki/Q7613861> ;
+  gen:mother <https://www.wikidata.org/wiki/Q18526579> .
+  # oo Lady Mary Coke, 1849-09-18 - 1929-12-28
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8014457> , <coke.ttl#Lady_Mary_Coke> ;
+	gen:startDate "1879-12-18" .
+# talbot.ttl:
+<#Francis_Augustus_Legge>
+  # Francis Augustus Legge, 1880-01-02 - 1966-06-02
+  gen:father <https://www.wikidata.org/wiki/Q4821478> ;
+  gen:mother <kennedy.ttl#Fanny_Louisa_Stopford_Sackville> .
+  # oo Mabel Clara Arden Lucena, d. 1963-03-17, daughter of Charles Lucena
+  []
+    gen:spouse <#Francis_Augustus_Legge> , <#Mabel_Clara_Arden_Lucena> ;
+	gen:startDate "1909-06-03" .
+# talbot.ttl:
+<#John_Augustus_Legge>
+  # John Augustus Legge, 1871-07-31 - 1945-03-21
+  gen:father <https://www.wikidata.org/wiki/Q47516729> ;
+  gen:mother <#Mary_Garnier> .
+  # oo Grace Margaret Dunsmure, d. 1957-01-28, daughter of Alexander Henderson Dunsmure
+  []
+    gen:spouse <#John_Augustus_Legge> , <#Grace_Margaret_Dunsmure> ;
+	gen:startDate "1908-01-04" .
+
+# hamilton.ttl:
+<https://www.wikidata.org/wiki/Q8014459>
+  # William Legge, 7th Earl of Dartmouth, 1881-02-22 - 1958-02-28
+  gen:father <https://www.wikidata.org/wiki/Q8014457> ;
+  gen:mother <coke.ttl#Lady_Mary_Coke> .
+  # oo Lady Ruperta Wynn-Carington, 1883-07-19 - 1963-06-26
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8014459> , <#Lady_Ruperta_Wynn-Carington> ;
+	gen:startDate "1905-12-07" .
+# talbot.ttl:
+<legge.ttl#Fanny_Angela_Mary_Legge>
+  # Fanny Angela Mary Legge, 1912-12-18  - 1997-04-19
+  gen:father <#Francis_Augustus_Legge> ;
+  gen:mother <#Mabel_Clara_Arden_Lucena> .
+  # oo 1940-04-04 Philip Lewis, d. 1968, howard.ttl#Philip_Lewis
+# talbot.ttl:
+<#David_Alexander_Keppel_Legge>
+  # David Alexander Keppel Legge, 1916-01-07 - 2001-04-01
+  gen:father <#John_Augustus_Legge> ;
+  gen:mother <#Grace_Margaret_Dunsmure> .
+  # oo Patria Hornung, 1919 - 2014-06-01, daughter of Charles Bernard Raphael Hornung and Olive Phillpotts
+  []
+    gen:spouse <#David_Alexander_Keppel_Legge> , <#Patria_Hornung> ;
+	gen:startDate "1944-12-02" .
+
+# coke.ttl:
+<https://www.wikidata.org/wiki/Q6470120>
+  # Lady Elizabeth Legge, 1908-03-05 - 2000-11-30
+  gen:father <https://www.wikidata.org/wiki/Q8014459> ;
+  gen:mother <#Lady_Ruperta_Wynn-Carington> .
+  # oo 1931-10-31 Ronald Lambert Basset, 1898 - 1972, coke.ttl#Ronald_Lambert_Basset
+# hamilton.ttl:
+<#Lady_Diana_Legge>
+  # Lady Diana Legge, 1910-11-14 - 1970-02-25
+  gen:father <https://www.wikidata.org/wiki/Q8014459> ;
+  gen:mother <#Lady_Ruperta_Wynn-Carington> .
+  # oo 1937-09-27 Hon. John Hamilton-Russell, 1911-04-22 - 1943-08-19, hamilton.ttl#John_Hamilton-Russell
+# talbot.ttl:
+<legge.ttl#Anthea_Frances_Legge>
+  # Anthea Frances Legge, b. 1946-05-15
+  gen:father <#David_Alexander_Keppel_Legge> ;
+  gen:mother <#Patria_Hornung> .
+  # oo Richard Charles Roundell, cavensish.ttl#Richard_Charles_Roundell
+
+
+
+
+
+
+# Baron Stawel of Somerton
+
+# coke.ttl:
+<https://www.wikidata.org/wiki/Q5718192>
+  # Henry Bilson-Legge, 2nd Baron Stawel of Somerton, 1757-02-22 - 1820-08-25
+  gen:father <https://www.wikidata.org/wiki/Q5718189> ;
+  gen:mother <https://www.wikidata.org/wiki/Q16199541> .
+  # oo Hon. Mary Curzon, 1760 - 1804-09-12
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5718192> , <curzon.ttl#Mary_Curzon> ;
+	gen:startDate "1779-07-01" .
+
+# coke.ttl:
+<legge.ttl#Mary_Legge_(died_1864)>
+  # Hon. Mary Legge, 1780 - 1864-10-21
+  gen:father <https://www.wikidata.org/wiki/Q5718192> ;
+  gen:mother <curzon.ttl#Mary_Curzon> .
+  # oo 1803-08-11 John Dutton, 2nd Baron Sherborne, 1779-06-24 - 1862-10-18, https://www.wikidata.org/wiki/Q6230556
+
+
+
+# ----
+# hay.ttl:
+#<https://www.wikidata.org/wiki/Q5714099>
+  # Heneage Finch, 1st Earl of Aylesford, 1649~ - 1719-07-22
+  # 1st Baron of Guernsey 1703-03-15
+  # 1st Earl of Aylesford, co. Kent 1714-10-19
+  # oo Elizabeth Banks
+
+<finch.ttl#Lady_Anne_Finch>
+  # oo 1700-07-18 Lady Anne Finch, 1680~ - 1751-11-30
+  gen:father <https://www.wikidata.org/wiki/Q5714099> .
+  # and Elizabeth Banks
+  # oo 1700-07-18 William Legge, 1st Earl of Dartmouth, 1672-10-14 - 1750-12-15, https://www.wikidata.org/wiki/Q9374853
+
+
+# ----
+# brudenell.ttl:
+<#Elizabeth_Kaye>
+  # Elizabeth Kaye, d. 1745-04-21
+  gen:father <https://www.wikidata.org/wiki/Q18716290> .
+  # and Anne Marowe
+  # oo George Legge, Viscount Lewisham, d. 1732-08-29, #George_Legge,_Viscount_Lewisham
+
+
+# ---
+# talbot.ttl:
+#<https://www.wikidata.org/wiki/Q7789938>
+  # Very Rev. Thomas Garnier, 1809-04-15 - 1863-12-07
+  # oo Lady Caroline Elizabeth Keppel, 1814-04-03 - 1898-05-26
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7789938> , <keppel.ttl#Lady_Caroline_Elizabeth_Keppel> ;
+	gen:startDate "1835-05-23" .
+
+<#Mary_Garnier>
+  # Mary Garnier, 1836-02-26 - 1896-12-13
+  gen:father <https://www.wikidata.org/wiki/Q7789938> ;
+  gen:mother <keppel.ttl#Lady_Caroline_Elizabeth_Keppel> .
+  # oo 1868-06-02 Hon. Charles Gounter Legge, 1842-05-09 - 1907-11-15, https://www.wikidata.org/wiki/Q47516729
+
+
+# ----
+# hamilton.ttl:
+<#Lady_Ruperta_Wynn-Carington>
+  # Lady Ruperta Wynn-Carington, 1883-07-19 - 1963-06-26
+  gen:father <https://www.wikidata.org/wiki/Q56180309> .
+  # oo 1905-12-07 William Legge, 7th Earl of Dartmouth, 1881-02-22 - 1958-02-28, https://www.wikidata.org/wiki/Q8014459
+
+
+# ----
+# coke.ttl:
+#<https://www.wikidata.org/wiki/Q4808822>
+  # Assheton Curzon, 1st Viscount Curzon of Penn, 1730-02-02 -. 1820-03-21
+  # 1st Baron Curzon of Penn, co. Buckingham 1794-08-13
+  # 1st Viscount Curzon of Penn, co. Buckingham 1802-02-27
+  # oo Esther Hanmer, d. 1764-07-21, daughter of William Hanmer and Elizabeth Jennens
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4808822> , <#Esther_Hanmer> ;
+	gen:startDate "1756-02-21" .
+
+<curzon.ttl#Mary_Curzon>
+  # Hon. Mary Curzon, 1760 - 1804-09-12
+  gen:father <https://www.wikidata.org/wiki/Q4808822> ;
+  gen:mother <#Esther_Hanmer> .
+  # oo 1779-07-01 Henry Bilson-Legge, 2nd Baron Stawel of Somerton, 1757-02-22 - 1820-08-25, https://www.wikidata.org/wiki/Q5718192
+
