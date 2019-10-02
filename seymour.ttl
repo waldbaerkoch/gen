@@ -512,7 +512,8 @@
     gen:spouse <https://www.wikidata.org/wiki/Q3909873> , <#Mary_Anne_Bonnell> ;
 	gen:startDate "1769-12-11" .
 <https://www.wikidata.org/wiki/Q6679254>
-  # Very Rev. Lord Francis Seymour, Dean of Wells Cathedral, 1726 - 1799-02-16
+  # Very Rev. Lord Francis Seymour, 1726 - 1799-02-16
+  # Dean of Wells Cathedral 1766
   gen:father <https://www.wikidata.org/wiki/Q3784268> ;
   gen:mother <https://www.wikidata.org/wiki/Q56599570> .
   # oo Catherine Payne, 1726-06-12 - 1801-12-24, daughter of Reverend Thomas Payne and Sarah Andrews
@@ -556,6 +557,12 @@
   []
     gen:spouse <#Francis_Compton_Seymour> , <#Leonora_Perkins> ;
 	gen:startDate "1787" .
+<#Mary_Seymour_(died_1814)>
+  # Mary Seymour, 1751-10-05 - 1814-04-12
+  gen:father <https://www.wikidata.org/wiki/Q6679254> ;
+  gen:mother <#Catherine_Payn> .
+  # oo 1773-09 John Hyde, 1737 - 1796, #John_Hyde
+  # oo 1798-02-04 Rev. John Payne, d. 1819-03-10, #John_Payne
 <#Edward_William_Seymour_(died_1874)>
   # Edward William Seymour, 1791 - 1874-07-06
   gen:father <https://www.wikidata.org/wiki/Q6679254> ;
@@ -2184,6 +2191,12 @@
     gen:spouse <https://www.wikidata.org/wiki/Q5714108> , <https://www.wikidata.org/wiki/Q53869533> ;
 	gen:startDate "1750-10-06" .
 
+<https://www.wikidata.org/wiki/Q51883197>
+  # Lady Frances Finch, 1761-02-09 - 1838-11-21
+  gen:father <https://www.wikidata.org/wiki/Q5714108> ;
+  gen:mother <https://www.wikidata.org/wiki/Q53869533> .
+  # oo 1782-09-24 George Legge, 3rd Earl of Dartmouth, 1755-10-03 – 1810-11-10, https://www.wikidata.org/wiki/Q5541651
+
 # ----
 # boyle.ttl:
 #<https://www.wikidata.org/wiki/Q3543085>
@@ -2461,6 +2474,27 @@
   # Henrietta Nassau d'Auverquerque, d. 1747-09-23
   gen:father <https://www.wikidata.org/wiki/Q3725947> ;
   gen:mother <https://www.wikidata.org/wiki/Q56226087> .
+
+# ----
+#<#John_Hyde>
+  # John Hyde, 1737 - 1796, son of John Hyde and Rachel Roberts
+  # oo Mary Seymour, 1751-10-05 - 1814-04-12
+  []
+    gen:spouse <#John_Hyde> , <#Mary_Seymour_(died_1814)> ;
+	gen:startDate "1773-09" .
+
+<#Maria_Catherine_Hyde>
+  # Maria Catherine Hyde, 1783 - 1865-08-19
+  gen:father <#John_Hyde> ;
+  gen:mother <#Mary_Seymour_(died_1814)> .
+  # oo 1805-04-02 Augstus Barrington Price Anne Powell Douglas-Hamilton, 1781-05-22 - 1849-08-27, douglas.ttl#Augustus_Douglas-Hamilton
+
+# ----
+#<#John_Payne>
+  # Rev. John Payne, d. 1819-03-10
+  []
+    gen:spouse <#John_Payne> , <#Mary_Seymour_(died_1814)> ;
+	gen:startDate "1798-02-04" .
 
 # ----
 #<#William_Macdowall_Grant,_6th_of_Arndilly>

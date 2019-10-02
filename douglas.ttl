@@ -827,7 +827,10 @@
   # Augstus Barrington Price Anne Powell Douglas-Hamilton, 1781-05-22 - 1849-08-27
   gen:father <https://www.wikidata.org/wiki/Q2579421> ;
   gen:mother <#Lucretia_Prosser> .
-  # oo 1805-04-02 Maria Catherine Hyde, 1783 - 1865-08-19
+  # oo Maria Catherine Hyde, 1783 - 1865-08-19
+  []
+    gen:spouse <#Augustus_Douglas-Hamilton> , <seymour.ttl#Maria_Catherine_Hyde> ;
+	gen:startDate "1805-04-02" .
 <https://www.wikidata.org/wiki/Q18526613>
   # Basil William Douglas, Lord Daer, 1763-03-16 - 1794-11-09
   gen:father <https://www.wikidata.org/wiki/Q3041208> ;
@@ -864,10 +867,27 @@
 <https://www.wikidata.org/wiki/Q21094813>
   # Charles Henry Douglas-Hamilton, 1808-10-07 - 1873-11-30
   gen:father <#Augustus_Douglas-Hamilton> ;
-  gen:mother <#Maria_Catherine_Hyde> .
-  # oo 1854-12-01 Anna Apthorp, 1826 - 1856-02
-  # oo 1860-01-31 Elizabeth Ann Hill, 1831 - 1867-06-27
-  # oo 1873-10-21 Sarah Julia Spence, 1852 - 1880-02-29
+  gen:mother <seymour.ttl#Maria_Catherine_Hyde> .
+  # oo Anna Apthorp, 1826 - 1856-02
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q21094813> , <#Anna_Apthorp> ;
+	gen:startDate "1854-12-01" .
+  # oo Elizabeth Ann Hill, 1831 - 1867-06-27
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q21094813> , <#Elizabeth_Ann_Hill> ;
+	gen:startDate "1860-01-31" .
+  # oo Sarah Julia Spence, 1852 - 1880-02-29
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q21094813> , <#Sarah_Julia_Spence> ;
+	gen:startDate "1873-10-21" .
+<#Alfred_Douglas-Hamilton>
+  # Alfred Douglas-Hamilton, 1818-04-21 - 1895-03-25
+  gen:father <#Augustus_Douglas-Hamilton> ;
+  gen:mother <seymour.ttl#Maria_Catherine_Hyde> .
+  # oo Adelaide Black, 1818-07-23 - 1870-04-17, daughter of Alexander Black and Alice Waynman
+  []
+    gen:spouse <#Alfred_Douglas-Hamilton> , <#Adelaide_Black> ;
+	gen:startDate "1845-07-17" .
 <https://www.wikidata.org/wiki/Q5314138>
   # Dunbar Douglas, 6th Earl of Selkirk, 1809-04-22 - 1885-04-11
   gen:father <https://www.wikidata.org/wiki/Q335434> ;
@@ -920,6 +940,14 @@
   gen:father <https://www.wikidata.org/wiki/Q21094813> ;
   gen:mother <#Elizabeth_Ann_Hill> .
   # oo 1898-09-29 Robert Montagu Poore, 1866-03-20 - 1938-07-14, https://www.wikidata.org/wiki/Q7348969
+<#William_Arthur_Douglas-Hamilton>
+  # 1923-04-12 Rev. William Arthur Douglas-Hamilton, 1864-09-06 - 1948-04-17
+  gen:father <#Alfred_Douglas-Hamilton> ;
+  gen:mother <#Adelaide_Black> .
+  # oo Alice Georgina Legge, 1875-06-10 - 1958-02-01
+  []
+    gen:spouse <#William_Arthur_Douglas-Hamilton> , <legge.ttl#Alice_Georgina_Legge> ;
+	gen:startDate "1923-04-12" .
 
 <#Lady_Mary_Louise_Douglas-Hamilton>
   # Lady Mary Louise Douglas-Hamilton, 1884-11-01 - 1957-02-21
@@ -1518,7 +1546,7 @@
   # Charles James Sholto Douglas
   gen:father <https://www.wikidata.org/wiki/Q16200179> ;
   gen:mother <#Christian_Cunningham> .
-  # oo Basilia Dawes
+  # oo Basilia Dawes, daughter of James Dawes
 
 <https://www.wikidata.org/wiki/Q3847262>
   gen:name "Maria Emilia Fagnani"@en ;
@@ -1570,7 +1598,19 @@
 <#James_Sholto_Douglas>
   # James Sholto Douglas, 1757-07-03 - 1830-01-12
   gen:father <#Charles_James_Sholto_Douglas> .
-  # oo 1784-03-13 Sarah Dawes, d. 1829-08
+  # and Basilia Dawes
+  # oo Sarah Dawes, d. 1829-08, daughter of James Dawes
+  []
+    gen:spouse <#James_Sholto_Douglas> , <#Sarah_Dawes> ;
+	gen:startDate "1784-03-13" .
+<#Stair_Douglas>
+  # Stair Douglas, 1764-10-27 - 1826-11-22
+  gen:father <#Charles_James_Sholto_Douglas> .
+  # and Basilia Dawes
+  # oo Anne Payne, d. 1865-06-04, daughter of John Payne
+  []
+    gen:spouse <#Stair_Douglas> , <#Anne_Payne> ;
+	gen:startDate "1802-07-24" .
 
 <#Lady_Jane_Margaret_Mary_Douglas>
   # Lady Jane Margaret Mary Douglas, 1811-01-15 - 1881-04-15
@@ -1634,8 +1674,14 @@
   gen:mother <#Elizabeth_Irvine> .
 <#Sarah_Douglas>
   # Sarah Douglas, d. 1864-11-13
-  gen:father <#James_Sholto_Douglas> .
+  gen:father <#James_Sholto_Douglas> ;
+  gen:mother <#Sarah_Dawes> .
   # oo 1817-07-16 John Douglas, 7th Marquess of Queensberry, 1779 - 1856-12-19, https://www.wikidata.org/wiki/Q6229871
+<#Elizabeth_Louisa_Douglas>
+  # Elizabeth Louisa Douglas, 1803-07-07 - 1840-10-28
+  gen:father <#Stair_Douglas> ;
+  gen:mother <#Anne_Payne> .
+  # oo 1830-05-04 Rev. Henry Legge, 1803-06-29 - 1879-11-08, legge.ttl#Henry_Legge_(died_1879)
 
 <https://www.wikidata.org/wiki/Q335896>
   gen:name "John Sholto Douglas, 9th Marquess of Queensberry"@en ;
