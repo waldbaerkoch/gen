@@ -1064,7 +1064,7 @@
   # Lady Georgiana Frederica Montagu, 1803-03-16 - 1892-07-30
   gen:father <https://www.wikidata.org/wiki/Q860011> ;
   gen:mother <https://www.wikidata.org/wiki/Q50755863> .
-  # oo 1823-10-11 Evan Baillie of Dochfour, 1798-04-01 - 1883-04-06, https://www.wikidata.org/wiki/Q5415317
+  # oo 1823-10-11 Evan Baillie of Dochfour, 1798-04-01 - 1883-04-06, #Evan_Baillie_of_Dochfour
 <https://www.wikidata.org/wiki/Q50133584>
   # Lady Caroline Catherine Montagu, 1804-09-27 - 1892-09-10
   gen:father <https://www.wikidata.org/wiki/Q860011> ;
@@ -2115,17 +2115,38 @@
 
 # ----
 #<https://www.wikidata.org/wiki/Q5415317>
+  # Evan Baillie of Dochfour, 1741 – 1835-06-28
+  # oo Mary Gurley, b. 1751~, daughter of Peter Gurley
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5415317> , <#Mary_Gurley> ;
+	gen:startDate "1770" .
+
+<https://www.wikidata.org/wiki/Q7172639>
+  # Peter Baillie of Dochfour, 1771~ - 1811-09-01
+  gen:father <https://www.wikidata.org/wiki/Q5415317> ;
+  gen:mother <#Mary_Gurley> .
+  # oo Elizabeth Pinney, 1774-01-17 - 1852-06-27, daughter of John Pinney
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7172639> , <#Elizabeth_Pinney> ;
+	gen:startDate "1797-03-09" .
+
+<#Evan_Baillie_of_Dochfour>
   # Evan Baillie of Dochfour, 1798-04-01 - 1883-04-06
-  # son of Peter Baillie of Dochfour
-  # and Elizabeth Pinney
+  gen:father <https://www.wikidata.org/wiki/Q7172639> ;
+  gen:mother <#Elizabeth_Pinney> .
   # oo Lady Georgiana Frederica Montagu, 1803-03-16 - 1892-07-30
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q5415317> , <#Lady_Georgiana_Frederica_Montagu> ;
+    gen:spouse <#Evan_Baillie_of_Dochfour> , <#Lady_Georgiana_Frederica_Montagu> ;
 	gen:startDate "1823-10-11" .
+<#Jane_Baillie>
+  # Jane Baillie, 1799-08-03~ - 1889-05-18
+  gen:father <https://www.wikidata.org/wiki/Q7172639> ;
+  gen:mother <#Elizabeth_Pinney> .
+  # oo 1826-10-17 Rev. Hon. Baptist Wriothesley Noel, 1799-07-10 - 1873-01-19, https://www.wikidata.org/wiki/Q4857705
 
 <https://www.wikidata.org/wiki/Q5852596>
   # Evan Peter Montagu Baillie of Dochfour, 1824-08-27 - 1874-11-09
-  gen:father <https://www.wikidata.org/wiki/Q5415317> ;
+  gen:father <#Evan_Baillie_of_Dochfour> ;
   gen:mother <#Lady_Georgiana_Frederica_Montagu> .
   # oo Lady Frances Anne Bruce, 1831-10-11 - 1894-08-16
   []
@@ -2133,7 +2154,7 @@
 	gen:startDate "1855-02-15" .
 <#Georgiana_Mary_Montagu_Baillie>
   # Georgiana Mary Montagu Baillie, d. 1918-03-29
-  gen:father <https://www.wikidata.org/wiki/Q5415317> ;
+  gen:father <#Evan_Baillie_of_Dochfour> ;
   gen:mother <#Lady_Georgiana_Frederica_Montagu> .
   # oo 1857-01-20 Hon. Sir William James Colville, 1827-03-09 - 1903-10-16, spencer.ttl#Sir_William_James_Colville
 

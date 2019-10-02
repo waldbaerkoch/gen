@@ -1923,7 +1923,10 @@
   # William Richard Hamilton, 1777-01-09 - 1859-07-11
   gen:father <https://www.wikidata.org/wiki/Q19610305> ;
   gen:mother <grey.ttl#Anne_Terrick> .
-  # oo 1804-09-03 Juliana Udny, daughter of John Fullarton Udny and Selina Shore Cleveland
+  # oo Juliana Udny, daughter of John Fullarton Udny and Selina Shore Cleveland
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8017525> , <#Juliana_Udny> ;
+	gen:startDate "1804-09-03" .
 <https://www.wikidata.org/wiki/Q19610307>
   # Venerable Anthony Hamilton, Archdeacon of Taunton, 1778-07-12 - 1851-09-10
   gen:father <https://www.wikidata.org/wiki/Q19610305> ;
@@ -1955,6 +1958,14 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q15469> , <stanley.ttl#Margaret_Frances_Florence_Dillon> ;
 	gen:startDate "1838-07-26" .
+<#Henry_George_Hamilton>
+  # Henry George Hamilton, 1808-02-22 - 1879-03-25
+  gen:father <https://www.wikidata.org/wiki/Q8017525> ;
+  gen:mother <#Juliana_Udny> .
+  # oo Fanny Elizabeth Tower, d. 1875-12-14, daughter of Rev. Charles Tower
+  []
+    gen:spouse <#Henry_George_Hamilton> , <#Fanny_Elizabeth_Tower> ;
+	gen:startDate "1845-06-07" .
 <https://www.wikidata.org/wiki/Q7965065>
   # Rt. Rev. Walter Kerr Hamilton, Bishop of Salisbury, 1808-11-12 - 1869-08-01
   gen:father <https://www.wikidata.org/wiki/Q19610307> ;
@@ -1997,6 +2008,14 @@
   gen:father <https://www.wikidata.org/wiki/Q15469> ;
   gen:mother <stanley.ttl#Margaret_Frances_Florence_Dillon> .
   # oo James Graham Goodenough, d. 1875-08-20, stanley.ttl#James_Graham_Goodenough
+<https://www.wikidata.org/wiki/Q5497951>
+  # Sir Frederick Tower Hamilton, 1856-03-08 – 1917-10-04
+  gen:father <#Henry_George_Hamilton> ;
+  gen:mother <#Fanny_Elizabeth_Tower> .
+  # oo Maria Walpole Keppel, 1865-05-06 - 1952-11-20
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5497951> , <keppel.ttl#Maria_Walpole_Keppel> ;
+	gen:startDate "1889-12-03" .
 
 <#Clarice_Jessie_Evelyn_Hamilton>
   # Hon. Clarice Jessie Evelyn Hamilton, 1881-10-10 - 1951-05-11
@@ -3384,16 +3403,48 @@
   # oo 1677-09 John Hamilton, 2nd Lord Bargany, 1640~ - 1693-05-15, https://www.wikidata.org/wiki/Q6237426
 
 # ----
-#<https://www.wikidata.org/wiki/Q7346111>
+#<#Sir_Robert_Jocelyn,_1st_Baronet>
+  # Sir Robert Jocelyn, 1st Baronet, 1623-01-14 - 1712-06-09~
+  # 1st Baronet Jocelyn, of Hyde Hall, co. Herts 1665-06-08
+  # oo Jane Strange, d. 1706-03-26~, daughter of Robert Strange
+  []
+    gen:spouse <#Sir_Robert_Jocelyn,_1st_Baronet> , <#Jane_Strange> ;
+	gen:startDate "1650" .
+
+<#Thomas_Jocelyn>
+  # Thomas Jocelyn
+  gen:father <#Sir_Robert_Jocelyn,_1st_Baronet> ;
+  gen:mother <#Jane_Strange> .
+  # oo Anne Bray, daughter of Thomas Bray
+
+<https://www.wikidata.org/wiki/Q7346112>
+  # Robert Jocelyn, 1st Viscount Jocelyn, 1688~ - 1756-12-03
+  # 1st Baron Newport of Newport, co. Tipperary 1743-11-29
+  # 1st Viscount Jocelyn 1755-12-06
+  gen:father <#Thomas_Jocelyn> .
+  # and Anne Bray
+  # oo Charlotte Anderson, d. 1747-02-23, daughter of Charles Anderson
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7346112> , <#Charlotte_Anderson> ;
+	gen:startDate "1730-07-24~" .
+
+<https://www.wikidata.org/wiki/Q7346111>
   # Robert Jocelyn, 1st Earl of Roden, 1731-07-31b – 1797-06-21
   # 2nd Viscount Jocelyn, 2nd Baron Newport of Newport, co. Tipperary 1756-12-03
   # 1st Earl of Roden, of High Roding, co. Tipperary 1771-12-01
   # 5th Baronet Jocelyn, of Hyde Hall, co. Herts 1778-05-24
+  gen:father <https://www.wikidata.org/wiki/Q7346112> ;
+  gen:mother <#Charlotte_Anderson> .
   # oo Lady Anne Hamilton, d. 1818-01-09
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7346111> , <#Lady_Anne_Hamilton_(died_1818)> ;
 	gen:startDate "1752-12-11" .
 
+<#George_Jocelyn>
+  # Hon. George Jocelyn, 1764-12-07 - 1798-04
+  gen:father <https://www.wikidata.org/wiki/Q7346111> ;
+  gen:mother <#Lady_Anne_Hamilton_(died_1818)> .
+  # oo Thomasine Bowen, d. 1818-10-15, daughter of Henry Cole Bowen and Margaret Wilson
 <#John_Jocelyn>
   # Hon. John Jocelyn, 1769 - 1828-01-21
   gen:father <https://www.wikidata.org/wiki/Q7346111> ;
@@ -3403,11 +3454,29 @@
     gen:spouse <#John_Jocelyn> , <#Margaret_FitzGerald> ;
 	gen:startDate "1795" .
 
+<#Mary_Sophia_Jocelyn>
+  # Mary Sophia Jocelyn, d. 1856
+  gen:father <#George_Jocelyn> .
+  # and Thomasine Bowen
+  # oo 1818 Walter Steele, #Walter_Steele
 <#Anne_Charlotte_Jocelyn>
   # Anne Charlotte Jocelyn, d. 1867-01-26
   gen:father <#John_Jocelyn> ;
   gen:mother <#Margaret_FitzGerald> .
   # oo 1820-08-03 Robert Bourke, 5th Earl of Mayo, 1797-01-12 - 1867-08-12, ponsonby.ttl#Robert_Bourke,_5th_Earl_of_Mayo
+# ----
+#<#Walter_Steele>
+  # Walter Steele
+  # oo Mary Sophia Jocelyn, d. 1856, daughter of Hon. George Jocelyn (7 December 1764, d. April 1798, son of Robert Jocelyn, 1st Earl of Roden and Lady Anne Hamilton) and oo Thomasine Bowen (d. 1818-10-15, daughter of Henry Cole Bowen and Margaret Wilson)
+  []
+    gen:spouse <#Walter_Steele> , <#Mary_Sophia_Jocelyn> ;
+	gen:startDate "1818" .
+
+<#Thomasina_Jocelyn_Steele>
+  # Thomasina Jocelyn Steele, d. 1890-05-08
+  gen:father <#Walter_Steele> ;
+  gen:mother <#Mary_Sophia_Jocelyn> .
+  # oo 1847-04-07 Richard John Hely Hutchinson, 4th Earl of Donoughmore of Knocklofty, 1823-04-04 - 1866-02-22, https://www.wikidata.org/wiki/Q7326371 (villiers.ttl)
 
 # ----
 #<https://www.wikidata.org/wiki/Q7789693>
