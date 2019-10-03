@@ -3575,21 +3575,6 @@
   gen:mother <https://www.wikidata.org/wiki/Q19325911> .
   # oo 1661-12-14b Henry O'Brien, Lord O'Brien, 1642 - 1678-09-01, https://www.wikidata.org/wiki/Q5726440
  
-<#Lord_George_Stuart>
-  # Lord George Stuart, 1780-03-01 - 1841-02-19
-  gen:father <https://www.wikidata.org/wiki/Q275336> .
-  # and Hon. Charlotte Jane Windsor
-  # oo Jane Stewart, d. 1862-02-01, daughter of Maj.-Gen. James Stewart
-  []
-    gen:spouse <#Lord_George_Stuart> , <#Jane_Stewart> ;
-	gen:startDate "1800-10-07" .
-
-<stuart.ttl#Elizabeth_Jane_Stuart>
-  # Elizabeth Jane Stuart, 1803-07-18 - 1877-01-27
-  gen:father <#Lord_George_Stuart> ;
-  gen:mother <#Jane_Stewart> .
-  # oo 1825-08-18 John Townshend, 4th Marquess Townshend of Raynham, 1798-03-28 - 1863-09-10, https://www.wikidata.org/wiki/Q15725713
-
 #<https://www.wikidata.org/wiki/Q4758644>
   # Andrew Stewart, 2nd Lord Stewart of Ochiltree, 1521a - 1602-03-21
   # oo Agnes Cuninghame. daughter of Sir John Cuninghame, 4th of Caprington
@@ -4168,9 +4153,11 @@
   # oo 1720 Thomas Howard, d. 1740, #Thomas_Howard_(died_1740)
 
 # ----
-#<https://www.wikidata.org/wiki/Q7787119>
+<https://www.wikidata.org/wiki/Q7787119>
   # Thomas Archer, 1st Lord Archer, Baron of Umberslade, 1695-07-21 - 1768-10-19
   # 1st Lord Archer, Baron of Umberslade, co. Warwick 1747-07-14
+  gen:father <https://www.wikidata.org/wiki/Q4756218> .
+  # and Elizabeth Dashwood
   # oo Catherine Tipping, d. 1754-07-20
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7787119> , <#Catherine_Tipping> ;
@@ -4180,10 +4167,15 @@
   # Andrew Archer, 2nd Lord Archer, Baron of Umberslade, 1736-07-29 - 1778-04-18
   gen:father <https://www.wikidata.org/wiki/Q7787119> ;
   gen:mother <#Catherine_Tipping> .
-  # oo Sarah West, 1741-05-11 - 1801-02-18, daughter of James West and Sarah Steavens
+  # oo Sarah West, 1741-05-11 - 1801-02-18, daughter of https://www.wikidata.org/wiki/Q6145348 and Sarah Steavens
   []
     gen:spouse <https://www.wikidata.org/wiki/Q4756217> , <https://www.wikidata.org/wiki/Q61980582> ;
 	gen:startDate "1761-07-23" .
+<#Catherine_Archer>
+  # Hon. Catherine Archer, d. 1790-08-12
+  gen:father <https://www.wikidata.org/wiki/Q7787119> ;
+  gen:mother <#Catherine_Tipping> .
+  # oo 1750-08-11 Other Lewis Windsor, 4th Earl of Plymouth, 1731-05-12 – 1771-04-21, https://www.wikidata.org/wiki/Q7108640
 
 <#Maria_Archer>
   # Hon. Maria Archer, d. 1789-11-09
@@ -4195,6 +4187,12 @@
   gen:father <https://www.wikidata.org/wiki/Q4756217> ;
   gen:mother <https://www.wikidata.org/wiki/Q61980582> .
   # oo 1790-12 Edward Bolton Clive, 1765~ – 1845-07-22, https://www.wikidata.org/wiki/Q11801709
+<https://www.wikidata.org/wiki/Q29145383>
+  # Hon. Sarah Archer, 1762-07-19 - 1838-05-27
+  gen:father <https://www.wikidata.org/wiki/Q4756217> ;
+  gen:mother <https://www.wikidata.org/wiki/Q61980582> .
+  # oo 1778-05-20 Other Hickman Windsor, 5th Earl of Plymouth, 1751-05-30 - 1799-06-12, https://www.wikidata.org/wiki/Q7108641
+  # oo 1800-07-24 William Pitt Amherst, 1st Earl Amherst of Arracan, 1773-01-14 – 1857-03-13, https://www.wikidata.org/wiki/Q142609
 # ----
 #<https://www.wikidata.org/wiki/Q7529287>
   # Sir Thomas Tipping, 1st Baronet, 1653 - 1718-07-01
@@ -4220,10 +4218,15 @@
   gen:father <#Thomas_Cheeke> ;
   gen:mother <russell.ttl#Laetitia_Russell> .
   # oo Sir Thomas Tipping, 1st Baronet, 1653 - 1718-07-01, https://www.wikidata.org/wiki/Q7529287
+# ----
+<https://www.wikidata.org/wiki/Q61980582>
+  # Sarah West, 1741-05-11 - 1801-02-18
+  gen:father <https://www.wikidata.org/wiki/Q6145348> .
+  # and Sarah Steavens
+  # oo 1761-07-23 Andrew Archer, 2nd Lord Archer, Baron of Umberslade, 1736-07-29 - 1778-04-18, https://www.wikidata.org/wiki/Q4756217
 
 # ----
-# russell.ttl:
-<russell.ttl#Sarah_Russell>
+<#Sarah_Russell>
   # Sarah Russell, 1639-09-19 - 1715
   gen:father <https://www.wikidata.org/wiki/Q7526726> .
   # and Catherine Wheatley
@@ -5548,13 +5551,13 @@
   # Henry O'Brien, 6th Earl of Thomond, 1620~ - 1691-05-02
   # oo Sarah Russell, 1639-09-19 - 1715
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q5726429> , <russell.ttl#Sarah_Russell> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q5726429> , <#Sarah_Russell> ;
 	gen:startDate "1660" .
 
 <#Lady_Auberie_Anne_Penelope_O'Brien>
   # Lady Auberie Anne Penelope O'Brien, d. 1703-12-02
   gen:father <https://www.wikidata.org/wiki/Q5726429> ;
-  gen:mother <russell.ttl#Sarah_Russell> .
+  gen:mother <#Sarah_Russell> .
   # oo Henry Howard, 6th Earl of Suffolk, 1670 - 1718-09-19, https://www.wikidata.org/wiki/Q5723313
 
 # ----
