@@ -27,6 +27,11 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7528167> , <https://www.wikidata.org/wiki/Q61911016> .
   # oo Joane (?) 1251-10
+<#William_de_Grey>
+  # William de Grey
+  gen:father <https://www.wikidata.org/wiki/Q5730764> ;
+  gen:mother <https://www.wikidata.org/wiki/Q61911012> .
+  # oo Amice ???
 <#Hugh_de_Grey>
   # Hugh de Grey, b. 1203~
   gen:father <https://www.wikidata.org/wiki/Q5730764> ;
@@ -40,6 +45,11 @@
   # Reginald de Grey, 1st Baron Grey de Wilton, d. 1308-04-05
   gen:father <https://www.wikidata.org/wiki/Q7528167> ;
   gen:mother <https://www.wikidata.org/wiki/Q61911016> .
+<#Sir_John_de_Grey>
+  # Sir John de Grey
+  gen:father <#William_de_Grey> .
+  # and Amice ???
+  # oo Margaret Odyngseles
 <#John_Grey_1>
   # John Grey
   gen:father <#Hugh_de_Grey> .
@@ -55,7 +65,15 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q15815165> , <#Joan_de_la_Mare> ;
 	gen:startDate "1301-06-06b" .
-<#Thomas_de_Grey>
+<#Sir_Thomas_de_Grey_(died_1321)>
+  # Sir Thomas de Grey, d. 1321
+  gen:father <#Sir_John_de_Grey> .
+  # and Margaret Odyngseles
+  # oo Alice de Cornerth, daughter of Sir Richard de Cornerth
+  []
+    gen:spouse <#Sir_Thomas_de_Grey_(died_1321)> , <#Alice_de_Cornerth> ;
+	gen:startDate "1306~" .
+<#Thomas_de_Grey_(died_1310)>
   # Thomas de Grey, 1266~ - 1310
   gen:father <#John_Grey_1> .
 
@@ -65,9 +83,14 @@
   gen:father <https://www.wikidata.org/wiki/Q15815165> .
   # and Eleanor de Courtenay
   # oo Joan FitzPayne, daughter of Robert FitzPayne, 1st Lord FitzPayne
+<#Sir_Thomas_de_Grey>
+  # Sir Thomas de Grey
+  gen:father <#Sir_Thomas_de_Grey_(died_1321)> ;
+  gen:mother <#Alice_de_Cornerth> .
+  # oo Isabel Baynard, daughter of Fulk Baynard
 <https://www.wikidata.org/wiki/Q21824634>
   # Sir Thomas de Grey, of Heaton, 1297~ - 1344-03-12b
-  gen:father <#Thomas_de_Grey> .
+  gen:father <#Thomas_de_Grey_(died_1310)> .
   # oo Agnes de Beyle, d. 1301~
   []
     gen:spouse <https://www.wikidata.org/wiki/Q21824634> , <#Agnes_de_Beyle> ;
@@ -85,6 +108,11 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q22954623> , <#Alice_de_Lisle> ;
 	gen:startDate "1330-10-20b" .
+<#Fulke_de_Grey_1>
+  # Fulke de Grey
+  gen:father <#Sir_Thomas_de_Grey> .
+  # and Isabel Baynard
+  # oo Margaret Vernon, daughter of Sir Thomas Vernon
 <https://www.wikidata.org/wiki/Q7790200>
   # Sir Thomas Grey, 1328~ - 1369-10-22b
   gen:father <https://www.wikidata.org/wiki/Q21824634> ;
@@ -99,6 +127,11 @@
   gen:father <https://www.wikidata.org/wiki/Q22954623> ;
   gen:mother <#Alice_de_Lisle> .
   # oo Joan de Cobham, daughter of Reynold de Cobham, 1st Lord Cobham (of Sterborough) and Joan de Berkeley
+<#Fulke_de_Grey_2>
+  # Fulke de Grey
+  gen:father <#Fulke_de_Grey_1> .
+  # and Margaret Vernon
+  # oo Eleanor Barnardiston
 <https://www.wikidata.org/wiki/Q17138972>
   # Sir Thomas Grey, of Berwick and Chillingham Castle, 1359 - 1400-11-26
   gen:father <https://www.wikidata.org/wiki/Q7790200> ;
@@ -122,7 +155,11 @@
   # Sir Richard de Grey, 1st Lord Grey (of Codnor), 1371~ - 1418-08-01
   gen:father <#Sir_Henry_de_Grey_(died_1379)> .
   # and Joan de Cobham
-
+<#William_de_Grey_(died_1474)>
+  # William de Grey, d. 1474
+  gen:father <#Fulke_de_Grey_2> .
+  # and Eleanor Barnardiston
+  # oo Christian Manynge, daughter of John Manynge
 <https://www.wikidata.org/wiki/Q7790197>
   # Sir Thomas Grey, 1384-11-30 - 1415-08-03
   gen:father <https://www.wikidata.org/wiki/Q17138972> ;
@@ -140,6 +177,12 @@
   gen:father <https://www.wikidata.org/wiki/Q17138972> ;
   gen:mother <https://www.wikidata.org/wiki/Q17138647> .
 
+<#William_de_Grey_(died_1495)>
+  # William de Grey, d. 1495
+  gen:father <#William_de_Grey_(died_1474)> .
+  # and Christian Manynge
+  # oo Mary Bedingfeld, daughter of Thomas Bedingfeld
+  # oo Grace Teye, daughter of Thomas Teye
 <https://www.wikidata.org/wiki/Q17139168>
   # Sir Thomas Grey, 1402~ - 1443-07-26b
   gen:father <https://www.wikidata.org/wiki/Q7790197> ;
@@ -162,6 +205,11 @@
   gen:father <https://www.wikidata.org/wiki/Q7790197> ;
   gen:mother <https://www.wikidata.org/wiki/Q17139117> .
 
+<#Thomas_de_Grey_(died_1556)>
+  # Thomas de Grey, d. 1556-09-01b
+  gen:father <#William_de_Grey_(died_1495)> .
+  # and Mary Bedingfeld
+  # oo Elizabeth Lewes, d. 1515, daughter of Sir Richard fitz Lewes
 <#Ralph_Grey>
   # Ralph Grey, 1432~ - 1464-07-15
   gen:father <https://www.wikidata.org/wiki/Q17139915> ;
@@ -176,18 +224,39 @@
     gen:spouse <#Sir_Thomas_Grey> , <neville.ttl#Alice_Neville> ;
 	gen:startDate "1460-02-04" .
 
+<#Edmund_de_Grey>
+  # Edmund de Grey, d. 1548
+  gen:father <#Thomas_de_Grey_(died_1556)> .
+  # and Elizabeth Lewes
+  # oo Elizabeth Spelman, daughter of Sir John Spelman and Elizabeth Frowyke
+  []
+    gen:spouse <#Edmund_de_Grey> , <#Elizabeth_Spelman> ;
+	gen:startDate "1531" .
 <#Thomas_Grey_(died_1498)>
   # Thomas Grey, 1446 - 1498-08-14
   gen:father <#Ralph_Grey> .
   # and Jacquetta ???
   # oo Margaret Greystoke, b. 1442~, daughter of Ralph Greystoke and Elizabeth FitzHugh
 
+<#Robert_de_Grey_(died_1601)>
+  # Robert de Grey, d. 1601
+  gen:father <#Edmund_de_Grey> ;
+  gen:mother <#Elizabeth_Spelman> .
+  # oo Anne Lovell, daughter of Sir Thomas Lovell
 <#Sir_Ralph_Grey_1>
   # Sir Ralph Grey
   gen:father <#Thomas_Grey_(died_1498)> .
   # and Margaret Greystoke
   # oo Isabel Grey, daughter of Sir Thomas Grey
 
+<#Sir_William_de_Grey>
+  # Sir William de Grey, d. 1632
+  gen:father <#Robert_de_Grey_(died_1601)> .
+  # and Anne Lovell
+  # oo Anne Calthorpe, daughter of Sir James Calthorpe
+  []
+    gen:spouse <#Sir_William_de_Grey> , <#Anne_Calthorpe> ;
+	gen:startDate "1617" .
 <#Sir_Ralph_Grey_2>
   # Sir Ralph Grey
   gen:father <#Sir_Ralph_Grey_1> .
@@ -199,6 +268,11 @@
   # and Isabel Grey
   # oo Catherine le Strange, daughter of Roger le Strange
 
+<#James_de_Grey>
+  # James de Grey, d. 1665
+  gen:father <#Sir_William_de_Grey> ;
+  gen:mother <#Anne_Calthorpe> .
+  # oo Elizabeth Stuteville, daughter of Sir Martin Stuteville
 <https://www.wikidata.org/wiki/Q8010203> # -> Baron Grey of Warke
   # William Grey, 1st Baron Grey of Warke, 1593 - 1674-07-29
   gen:father <#Sir_Ralph_Grey_2> .
@@ -209,18 +283,45 @@
   # and Catherine le Strange
   # oo ??? Westwood
 
+<https://www.wikidata.org/wiki/Q50217222>
+  # William de Grey, 1652-10-21 - 1687-02-27
+  gen:father <#James_de_Grey> .
+  # and Elizabeth Stuteville
+  # oo Elizabeth Bedingfield
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q50217222> , <#Elizabeth_Bedingfield> .
 <#Edward_Grey>
   # Edward Grey, d. 1653
   gen:father <#Philip_Grey> .
   # and ??? Westwood
   # oo ??? Fenwick, daughter of Martin Fenwick
 
+<https://www.wikidata.org/wiki/Q26775793>
+  # Thomas de Grey, 1680-08-13b – 1765-12-18b
+  gen:father <https://www.wikidata.org/wiki/Q50217222> ;
+  gen:mother <#Elizabeth_Bedingfield> .
+  # oo Elizabeth Windham
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q26775793> , <#Elizabeth_Windham> ;
+	gen:startDate "1706-09-10" .
 <#John_Grey_2>
   # John Grey
   gen:father <#Edward_Grey> .
   # and ??? Fenwick
   # oo Dorothy Lisle
 
+<https://www.wikidata.org/wiki/Q26775789>
+  # Thomas de Grey, 1717~ – 1781
+  gen:father <https://www.wikidata.org/wiki/Q26775793> ;
+  gen:mother <#Elizabeth_Windham> .
+  # oo Elizabeth Fisher, daughter of Samuel Fisher
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q26775789> , <#Elizabeth_Fisher> ;
+	gen:startDate "1746" .
+<https://www.wikidata.org/wiki/Q8020788> # -> Baron Walsingham
+  # William de Grey, 1st Baron Walsingham, 1719-07-07 – 1781-05-09
+  gen:father <https://www.wikidata.org/wiki/Q26775793> ;
+  gen:mother <#Elizabeth_Windham> .
 <#John_Grey_3>
   # John Grey
   gen:father <#John_Grey_2> .
@@ -668,6 +769,178 @@
   # Thomas Jasper Grey, b. 1998-04-30
   gen:father <#Sir_Anthony_Grey,_7th_Baronet> ;
   gen:mother <#Alison_Turner> .
+
+
+# Baron Walsingham
+<https://www.wikidata.org/wiki/Q8020788>
+  # William de Grey, 1st Baron Walsingham, 1719-07-07 – 1781-05-09
+  # 1st Baron Walsingham, of Walsingham in the County of Norfolk 1780-10-17
+  gen:father <https://www.wikidata.org/wiki/Q26775793> ;
+  gen:mother <#Elizabeth_Windham> .
+  # oo Mary Cowper, d. 1800-09-02, daughter of William Cowper
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8020788> , <#Mary_Cowper> ;
+	gen:startDate "1743-11-12" .
+
+<https://www.wikidata.org/wiki/Q7795476>
+  # Thomas de Grey, 2nd Baron Walsingham, 1748-07-14 – 1818-01-16
+  gen:father <https://www.wikidata.org/wiki/Q8020788> ;
+  gen:mother <#Mary_Cowper> .
+  # oo Hon. Augusta Georgina Elizabeth Irby, 1848-07-15 - 1818-05-28
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7795476> , <paget.ttl#Augusta_Georgina_Elizabeth_Irby> ;
+	gen:startDate "1772-04-30" .
+
+<https://www.wikidata.org/wiki/Q35829052>
+  # George de Grey, 3rd Baron Walsingham, 1776-06-11 – 1831-04-26
+  gen:father <https://www.wikidata.org/wiki/Q7795476> ;
+  gen:mother <paget.ttl#Augusta_Georgina_Elizabeth_Irby> .
+  # oo Matilda Methuen, d. 1831-04-27, daughter of Paul Cobb Methuen and Matilda Gooch
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q35829052> , <#Matilda_Methuen> ;
+	gen:startDate "1804-05-16" .
+<https://www.wikidata.org/wiki/Q35829040>
+  # Ven. Thomas de Grey, 4th Baron Walsingham, 1778-04-10 – 1839-09-08
+  # Archdeacon of Winchester
+  gen:father <https://www.wikidata.org/wiki/Q7795476> ;
+  gen:mother <paget.ttl#Augusta_Georgina_Elizabeth_Irby> .
+  # oo Elizabeth North, 1776-10-26 - 1845-05-18
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q35829040> , <montagu.ttl#Elizabeth_North> ;
+	gen:startDate "1802-08-12" .
+
+<https://www.wikidata.org/wiki/Q35829065>
+  # Thomas de Grey, 5th Baron Walsingham, 1804-07-06 – 1870-12-31
+  gen:father <https://www.wikidata.org/wiki/Q35829040> ;
+  gen:mother <montagu.ttl#Elizabeth_North> .
+  # oo Augusta Louisa Frankland, 1818-12-03 - 1844-04-28
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q35829065> , <murray.ttl#Augusta_Louisa_Frankland> ;
+	gen:startDate "1842-08-06" .
+  # oo Hon. Emily Elizabeth Julia Thellusson, 1817-08-31 - 1879-05-13
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q35829065> , <#Emily_Elizabeth_Julia_Thellusson> ;
+	gen:startDate "1847-10-25" .
+<#Henrietta_Maria_de_Grey>
+  # Hon. Henrietta Maria de Grey, 1809-09-10 - 1833-05-18
+  gen:father <https://www.wikidata.org/wiki/Q35829040> ;
+  gen:mother <montagu.ttl#Elizabeth_North> .
+  # oo 1825-12-03 Brownlow North Garnier, 1803-07-09 - 1847-06-28, montagu.ttl#Brownlow_North_Garnier
+<#Georgiana_de_Grey>
+  # Hon. Georgiana de Grey, 1813-07-07 - 1874-04-22
+  gen:father <https://www.wikidata.org/wiki/Q35829040> ;
+  gen:mother <montagu.ttl#Elizabeth_North> .
+  # oo 1833-06-29 Lloyd Kenyon, 3rd Baron Kenyon, Baron of Gredington, 1805-04-01 – 1869-07-14, https://www.wikidata.org/wiki/Q6662539
+
+<https://www.wikidata.org/wiki/Q3814537>
+  # Thomas de Grey, 6th Baron Walsingham, 1843-07-29 - 1919-12-03
+  gen:father <https://www.wikidata.org/wiki/Q35829065> ;
+  gen:mother <murray.ttl#Augusta_Louisa_Frankland> .
+  # oo Augusta Selina Elizabeth Locke, d. 1906-11-04
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3814537> , <manners.ttl#Augusta_Selina_Elizabeth_Locke> ;
+	gen:startDate "1877-03-19" .
+  # oo Marion Gytherne-Williams, d. 1913-10-31, daughter of Thomas Rhys Withers
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3814537> , <#Marion_Gytherne-Williams> ;
+	gen:startDate "1908" .
+  # oo Agnes Baird Hemming, d. 1926-04-25, daughter of Frederick Shand Hemming
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3814537> , <#Agnes_Baird_Hemming> ;
+	gen:startDate "1914-11-12" .
+<https://www.wikidata.org/wiki/Q21705653>
+  # John Augustus de Grey, 7th Baron Walsingham, 1849 - 1929
+  gen:father <https://www.wikidata.org/wiki/Q35829065> ;
+  gen:mother <#Emily_Elizabeth_Julia_Thellusson> .
+  # oo Elizabeth Henrietta Grant, 1860~ - 1927-04-12, daughter of Patrick Grant
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q21705653> , <#Elizabeth_Henrietta_Grant> ;
+	gen:startDate "1883-04-24" .
+  # oo Marguerite Vernon, d. 1931, daughter of Walter Vernon
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q21705653> , <#Marguerite_Vernon> ;
+	gen:startDate "1928" .
+<#Emily_Augusta_Louisa_de_Grey>
+  # Hon. Emily Augusta Louisa de Grey, 1852-03-18 - 1912-01-26
+  gen:father <https://www.wikidata.org/wiki/Q35829065> ;
+  gen:mother <#Emily_Elizabeth_Julia_Thellusson> .
+  # oo 1882-06-28 Hon. Alfred Chetwynd-Talbot, 1848-09-14 - 1913-05-09, talbot.ttl#Alfred_Chetwynd-Talbot
+<#Beatrice_de_Grey>
+  # Hon. Beatrice de Grey, 1853-11-16 - 1927-10-16
+  gen:father <https://www.wikidata.org/wiki/Q35829065> ;
+  gen:mother <#Emily_Elizabeth_Julia_Thellusson> .
+  # oo 1887-02-10 Hon. Walter Cecil Carpenter, 1834-03-27 - 1904-05-13, https://www.wikidata.org/wiki/Q19664755
+<#Arnald_de_Grey>
+  # Rev. Hon. Arnald de Grey, 1856-09-11 - 1889-11-15
+  gen:father <https://www.wikidata.org/wiki/Q35829065> ;
+  gen:mother <#Emily_Elizabeth_Julia_Thellusson> .
+  # oo Margaret Maria Ponsonby-Fane, 1857-11-04 - 1935-12-14
+  []
+    gen:spouse <#Arnald_de_Grey> , <ponsonby.ttl#Margaret_Maria_Ponsonby-Fane> ;
+	gen:startDate "1882-04-17" .
+
+<https://www.wikidata.org/wiki/Q40176845>
+  # George de Grey, 8th Baron Walsingham, 1884-05-09 - 1965-11-29
+  gen:father <https://www.wikidata.org/wiki/Q21705653> ;
+  gen:mother <#Elizabeth_Henrietta_Grant> .
+  # oo Hyacinth Lambart Bouwens, d. 1968-02-06, daughter of Lambart Henry Bouwens
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q40176845> , <#Hyacinth_Lambart_Bouwens> ;
+	gen:startDate "1919-04-29" .
+<#Nigel_de_Grey>
+  # Nigel de Grey, 1886-03-27 - 1951-05-25
+  gen:father <#Arnald_de_Grey> ;
+  gen:mother <ponsonby.ttl#Margaret_Maria_Ponsonby-Fane> .
+  # oo Florence Emily Frances Gore, d. 1963-05-28
+  []
+    gen:spouse <#Nigel_de_Grey> , <ponsonby.ttl#Florence_Emily_Frances_Gore> ;
+	gen:startDate "1910-12-29" .
+
+<https://www.wikidata.org/wiki/Q26422734>
+  # John de Grey, 9th Baron Walsingham, b. 1925-02-21
+  gen:father <https://www.wikidata.org/wiki/Q40176845> ;
+  gen:mother <#Hyacinth_Lambart_Bouwens> .
+  # oo Wendy Elizabeth Hoare, daughter of Edward Sidney Hoare
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q26422734> , <#Wendy_Elizabeth_Hoare> ;
+	gen:startDate "1963-07-20" .
+<#Katharine_Odeyne_de_Grey>
+  # Hon. Katharine Odeyne de Grey, d. 1928-04-26
+  gen:father <https://www.wikidata.org/wiki/Q40176845> ;
+  gen:mother <#Hyacinth_Lambart_Bouwens> .
+  # oo 1949-08-26 George William Herbert, 7th Earl of Powis, 1925-06-04 - 1993-08-13, https://www.wikidata.org/wiki/Q26327646
+
+<#Sarah_Jane_de_Grey>
+  # Hon. Sarah Jane de Grey, b. 1964-09-24
+  gen:father <https://www.wikidata.org/wiki/Q26422734> ;
+  gen:mother <#Wendy_Elizabeth_Hoare> .
+  # oo 1990 Bryan Muggeridge, son of Percy Muggeridge
+<#Elizabeth_Anne_de_Grey>
+  # Hon. Elizabeth Anne de Grey, b. 1966-07-24
+  gen:father <https://www.wikidata.org/wiki/Q26422734> ;
+  gen:mother <#Wendy_Elizabeth_Hoare> .
+  # oo 1993 Stefan Jones, son of Roger Jones
+<#Robert_de_Grey_(born_1969)>
+  # Hon. Robert de Grey, b. 1969-06-21
+  gen:father <https://www.wikidata.org/wiki/Q26422734> ;
+  gen:mother <#Wendy_Elizabeth_Hoare> .
+  # oo Josephine Elizabeth Haryott, daughter of Richard Haryott
+  []
+    gen:spouse <#Robert_de_Grey_(born_1969)> , <#Josephine_Elizabeth_Haryott> ;
+	gen:startDate "1995-07-15" .
+
+<#Thomas_de_Grey_(born_1997)>
+  # Thomas de Grey, b. 1997-01-23
+  gen:father <#Robert_de_Grey_(born_1969)> ;
+  gen:mother <#Josephine_Elizabeth_Haryott> .
+<#Ella_Rose_de_Grey>
+  # Ella Rose de Grey, b. 1999-07-06
+  gen:father <#Robert_de_Grey_(born_1969)> ;
+  gen:mother <#Josephine_Elizabeth_Haryott> .
+<#Georgina_Elizabeth_de_Grey>
+  # Georgina Elizabeth de Grey, b. 2002-06-24
+  gen:father <#Robert_de_Grey_(born_1969)> ;
+  gen:mother <#Josephine_Elizabeth_Haryott> .
 
 
 # Baron Grey of Warke
@@ -2685,6 +2958,26 @@
   # oo Philip Darcy, 6th Lord Darcy de Knayth, 1398~ - 1418-01-16, https://www.wikidata.org/wiki/Q60559509
 
 # ----
+<#Thomas_Bedingfield>
+  # Thomas Bedingfield
+  gen:father <https://www.wikidata.org/wiki/Q7787526> .
+  # and Elizabeth Hoskins
+  # oo Hannah Bacon
+
+<#Elizabeth_Bedingfield>
+  # Elizabeth Bedingfield
+  gen:father <#Thomas_Bedingfield> .
+  # and Hannah Bacon
+  # oo William de Grey, 1652-10-21 - 1687-02-27, https://www.wikidata.org/wiki/Q50217222
+
+# ----
+<#Elizabeth_Windham>
+  # Elizabeth Windham
+  gen:father <https://www.wikidata.org/wiki/Q3569033> .
+  # and Mary Morgan
+  # oo 1706-09-10 Thomas de Grey, 1680-08-13b – 1765-12-18b, https://www.wikidata.org/wiki/Q26775793
+
+# ----
 #<https://www.wikidata.org/wiki/Q24238874>
   # Sir James Pennyman, of Ormesby, 6th Baronet, 1736-12-06b - 1808-03-27
   # oo Elizabeth Grey, d. 1801b
@@ -3210,6 +3503,75 @@
   # Margaret Dysart Hunter, d. 1877
   gen:father <https://www.wikidata.org/wiki/Q16230370> .
   # oo 1850-04-09 Charles Samuel Grey, 1811-01-22 - 1860-06-12, #Charles_Samuel_Grey
+
+# ----
+<https://www.wikidata.org/wiki/Q7177285>
+  # Peter Isaac Thellusson, 1st Baron Rendlesham of Rendlesham, 1761-10-13 – 1808-09-16
+  # 1st Baron Rendlesham of Rendlesham 1806-02-01
+  gen:father <https://www.wikidata.org/wiki/Q7177284> .
+  # and Anne Woodford
+  # oo Elizabeth Eleanor Cornwall, daughter of John Cornwall
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7177285> , <#Elizabeth_Eleanor_Cornwall> ;
+	gen:startDate "1783-06-14" .
+
+<#John_Thellusson,_2nd_Baron_Rendlesham>
+  # John Thellusson, 2nd Baron Rendlesham of Rendlesham, 1785-09-12 - 1832-07-03
+  gen:father <https://www.wikidata.org/wiki/Q7177285> ;
+  gen:mother <#Elizabeth_Eleanor_Cornwall> .
+  # oo Ann Sophia Tatnall, 1794-10-02 - 1856-08-31, daughter of William Tatnall and Mary Carter
+  []
+    gen:spouse <#John_Thellusson,_2nd_Baron_Rendlesham> , <#Ann_Sophia_Tatnall> ;
+	gen:startDate "1816-03-26" .
+
+<#Emily_Elizabeth_Julia_Thellusson>
+  # Hon. Emily Elizabeth Julia Thellusson, 1817-08-31 - 1879-05-13
+  gen:father <#John_Thellusson,_2nd_Baron_Rendlesham> ;
+  gen:mother <#Ann_Sophia_Tatnall> .
+  # oo 1847-10-25 Thomas de Grey, 5th Baron Walsingham, 1804-07-06 – 1870-12-31, https://www.wikidata.org/wiki/Q35829065
+
+# ----
+#<https://www.wikidata.org/wiki/Q6662537>
+  # Lloyd Kenyon, 1st Baron Kenyon, Baron of Gredington, 1732-10-05 - 1802-04-04
+  # 1st Baronet Kenyon, of Gredington, co. Flint 1784-07-28
+  # 1st Baron Kenyon, Baron of Gredington, co. Flint 1788-06-09
+  # son of Lloyd Kenyon
+  # and Jane Eddowes
+  # oo Mary Kenyon, d. 1808-08-08, daughter of George Kenyon and Peregrina Eddowes
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6662537> , <#Mary_Kenyon> ;
+	gen:startDate "1773-10-16" .
+
+<https://www.wikidata.org/wiki/Q18527444>
+  # George Kenyon, 2nd Baron Kenyon, Baron of Gredington, 1776-07-22 - 1855-02-25
+  gen:father <https://www.wikidata.org/wiki/Q6662537> ;
+  gen:mother <#Mary_Kenyon> .
+  # oo Margaret Emma Hanmer, d. 1816-02-24
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q18527444> , <#Margaret_Emma_Hanmer> ;
+	gen:startDate "1803-02-01" .
+
+<https://www.wikidata.org/wiki/Q6662539>
+  # Lloyd Kenyon, 3rd Baron Kenyon, Baron of Gredington, 1805-04-01 – 1869-07-14
+  gen:father <https://www.wikidata.org/wiki/Q18527444> ;
+  gen:mother <#Margaret_Emma_Hanmer> .
+  # oo Hon. Georgiana de Grey, 1813-07-07 - 1874-04-22
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6662539> , <#Georgiana_de_Grey> ;
+	gen:startDate "1833-06-29" .
+# ----
+#<https://www.wikidata.org/wiki/Q7529161>
+  # Sir Thomas Hanmer, 2nd Baronet, 1747-04-05 - 1828-10-04
+  # oo Margaret Kenyon, d. 1830-11-06, daughter of George Kenyon
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7529161> , <#Margaret_Kenyon> ;
+	gen:startDate "1779-12-03" .
+
+<#Margaret_Emma_Hanmer>
+  # Margaret Emma Hanmer, d. 1816-02-24
+  gen:father <https://www.wikidata.org/wiki/Q7529161> ;
+  gen:mother <#Margaret_Kenyon> .
+  # oo 1803-02-01 George Kenyon, 2nd Baron Kenyon, Baron of Gredington, 1776-07-22 - 1855-02-25, https://www.wikidata.org/wiki/Q18527444
 
 # ----
 #<https://www.wikidata.org/wiki/Q7526593>
