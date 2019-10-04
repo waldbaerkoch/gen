@@ -1254,6 +1254,68 @@
   gen:father <#Oliver_Lambart> ;
   gen:mother <#Eleanor_Crane> .
   # oo 1708-08-28 Sir Edward Bayly, 1st Baronet, 1684-02-20 - 1741-09-28, https://www.wikidata.org/wiki/Q5341813
+<#Charles_Lambart_(died_1753)>
+  # Charles Lambart, of Painstown, d. 1753-09-01
+  gen:father <#Oliver_Lambart> ;
+  gen:mother <#Eleanor_Crane> .
+  # oo Hon. Elizabeth Hamilton
+  []
+    gen:spouse <#Charles_Lambart_(died_1753)> , <hamilton.ttl#Elizabeth_Hamilton_3> .
+
+<#Gustavus_Lambart>
+  # Gustavus Lambart
+  gen:father <#Charles_Lambart_(died_1753)> ;
+  gen:mother <hamilton.ttl#Elizabeth_Hamilton_3> .
+  # oo Thomasine Rochfort, b. 1716-09-05
+  []
+    gen:spouse <#Gustavus_Lambart> , <#Thomasine_Rochfort> .
+
+<#Charles_Lambart_(died_1819)>
+  # Charles Lambart, d. 1819-12-30
+  gen:father <#Gustavus_Lambart> ;
+  gen:mother <#Thomasine_Rochfort> .
+  # oo Frances Dutton, d. 1806, daughter of James Lenox Dutton and Jane Bond
+  []
+    gen:spouse <#Charles_Lambart_(died_1819)> , <#Frances_Dutton> ;
+	gen:startDate "1771-09" .
+
+<#Gustavus_Lambart_(died_1850)>
+  # Gustavus Lambart, 1772-09-16 - 1850-09-22
+  gen:father <#Charles_Lambart_(died_1819)> ;
+  gen:mother <#Frances_Dutton> .
+  # oo Anna Butler Stevenson, d. 1821-03-21, daughter of Sir John Andrew Stevenson
+  []
+    gen:spouse <#Gustavus_Lambart_(died_1850)> , <#Anna_Butler_Stevenson> ;
+	gen:startDate "1810" .
+<#Frances_Thomasine_Lambart>
+  # Frances Thomasine Lambart, 1782-07-11 - 1819-12-30
+  gen:father <#Charles_Lambart_(died_1819)> ;
+  gen:mother <#Frances_Dutton> .
+  # oo 1800-08-28 Charles Chetwynd-Talbot, 2nd Earl Talbot of Hensol, 1777-04-25 - 1849-01-10, https://www.wikidata.org/wiki/Q93594
+
+<#Gustavus_William_Lambart>
+  # Gustavus William Lambart, 1814-08-07 - 1886-11-01
+  gen:father <#Gustavus_Lambart_(died_1850)> ;
+  gen:mother <#Anna_Butler_Stevenson> .
+  # oo Lady Frances Caroline Maria Conyngham, 1827 - 1898-06-17
+  []
+    gen:spouse <#Gustavus_William_Lambart> , <#Lady_Frances_Caroline_Maria_Conyngham> ;
+	gen:startDate "1847-06-05" .
+
+<#Amy_Gwendoline_Lambart>
+  # Amy Gwendoline Lambart, 1852-08-10 - 1927-01-28
+  gen:father <#Gustavus_William_Lambart> ;
+  gen:mother <#Lady_Frances_Caroline_Maria_Conyngham> .
+  # oo 1884-10-25 Hon. Sir Henry Charles Legge, 1852-11-04 – 1924-06-20, https://www.wikidata.org/wiki/Q5724827
+<https://www.wikidata.org/wiki/Q46705169>
+  # Sir Gustavus Francis William Lambart, 1st Baronet, 1848-03-25 - 1926-06-16
+  # 1st Baronet Lambart, of Beau Parc, co. Meath 1911-07-13
+  gen:father <#Gustavus_William_Lambart> ;
+  gen:mother <#Lady_Frances_Caroline_Maria_Conyngham> .
+  # oo Kathleen Barbara Sophia Moore-Brabazon, b. 1882-03-26, daughter of John Arthur Henry Moore-Brabazon and Emma Sophia Richards
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q46705169> , <https://www.wikidata.org/wiki/Q46704698> ;
+	gen:startDate "1911-09-13" .
 # ----
 #<#Richard_Robartes,_1st_Baron_Robartes>
   # Richard Robartes, 1st Baron Robartes of Truro, 1580 - 1634-04-19
@@ -1288,6 +1350,21 @@
   # oo Lady Anne FitzGerald
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5482310> , <fitzgerald.ttl#Lady_Anne_FitzGerald_2> .
+# ----
+#<https://www.wikidata.org/wiki/Q18910672>
+  # Rt. Hon. George Rochfort, 1682-01-21 - 1730-07-08
+  # son of Robert Rochfort
+  # and Hannah Handcock
+  # oo Lady Elizabeth Moore
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q18910672> , <ponsonby.ttl#Lady_Elizabeth_Moore> ;
+	gen:startDate "1704-01-24" .
+
+<#Thomasine_Rochfort>
+  # Thomasine Rochfort, b. 1716-09-05
+  gen:father <https://www.wikidata.org/wiki/Q18910672> ;
+  gen:mother <ponsonby.ttl#Lady_Elizabeth_Moore> .
+  # oo Gustavus Lambart, #Gustavus_Lambart
 
 # ----
 <#George_Forbes,_5th_Earl_of_Granard>
@@ -1601,7 +1678,7 @@
   # Lady Frances Caroline Maria Conyngham, 1827 - 1898-06-17
   gen:father <https://www.wikidata.org/wiki/Q5480600> ;
   gen:mother <#Lady_Jane_Paget> .
-  # oo 1847-06-05 Gustavus William Lambart, 1814-08-07 - 1886-11-01, legge.ttl#Gustavus_William_Lambart
+  # oo 1847-06-05 Gustavus William Lambart, 1814-08-07 - 1886-11-01, #Gustavus_William_Lambart
 
 # ----
 #<https://www.wikidata.org/wiki/Q7526537>
@@ -1671,6 +1748,36 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q14945465> , <#Laura_Caroline_Jane_Paget> ;
 	gen:startDate "1842-08-03" .
+
+<https://www.wikidata.org/wiki/Q46993495>
+  # Arthur Henry Chichester, 3rd Baron Templemore, 1854-09-16 - 1924-09-28
+  gen:father <https://www.wikidata.org/wiki/Q14945465> ;
+  gen:mother <#Laura_Caroline_Jane_Paget> .
+  # oo Evelyn Stracey, d. 1883-12-03, daughter of Rev. William James Stracey-Clitherow and Maria Diana Bourchier
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q46993495> , <#Evelyn_Stracey> ;
+	gen:startDate "1879-08-14" .
+
+<https://www.wikidata.org/wiki/Q4798258>
+  # Arthur Claud Spencer Chichester, 4th Baron Templemore, 1880-09-12 – 1953-10-02
+  gen:father <https://www.wikidata.org/wiki/Q46993495> ;
+  gen:mother <#Evelyn_Stracey> .
+  # oo 1911-01-10 Hon. Clare Meriel Wingfield, 1886-06-05 - 1969
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4798258> , <coke.ttl#Clare_Meriel_Wingfield> ;
+	gen:startDate "1911-01-10" .
+
+<https://www.wikidata.org/wiki/Q5262796>
+  # Dermot Richard Claud Chichester, 7th Marquess of Donegall, 1916-04-18 – 2007-04-19
+  # 5th Baron Templemore, of Templemore, co. Donegal 1953-10-02
+  # 7th Earl of Belfast, 12th Baron Chichester of Belfast, co. Antrim, 7th Marquess of Donegall, 7th Baron Fisherwick, co. Stafford, 11th Earl of Donegall, 12th Viscount Chichester of Carrickfergus, co. Antrim 1975-05-24
+  gen:father <https://www.wikidata.org/wiki/Q4798258> ;
+  gen:mother <coke.ttl#Clare_Meriel_Wingfield> .
+  # oo Lady Josceline Gabrielle Legge, 1918-05-22 - 1995-06-19
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5262796> , <legge.ttl#Lady_Josceline_Gabrielle_Legge> ;
+	gen:startDate "1946-09-16" .
+# ----
 
 # ----
 <#Frances_de_Rottenburg>
