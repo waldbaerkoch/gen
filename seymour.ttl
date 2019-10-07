@@ -1912,6 +1912,13 @@
   gen:father <https://www.wikidata.org/wiki/Q7529231> ;
   gen:mother <https://www.wikidata.org/wiki/Q6792225> .
   # oo 1547-05~ Thomas Seymour, 1st Baron Seymour of Sudeley, 1508~ - 1549-03-20, https://www.wikidata.org/wiki/Q380513
+<https://www.wikidata.org/wiki/Q1089921>
+  # Anne Parr
+  gen:birthDate "1515-06-15" ;
+  gen:deathDate "1552-02-20" ;
+  gen:father <https://www.wikidata.org/wiki/Q7529231> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6792225> .
+  # oo 1538 William Herbert, 1st Earl of Pembroke, 1501~ - 1570-03-17, https://www.wikidata.org/wiki/Q971331
 # ----
 #<https://www.wikidata.org/wiki/Q23661898>
   # Henry FitzHugh, 5th Lord FitzHugh, 1429~ - 1472-06-03
@@ -2117,13 +2124,37 @@
   # oo 1628-02-17 Humble Ward, 1st Baron Ward of Birmingham, 1614~ - 1670-10-14, https://www.wikidata.org/wiki/Q5940213
 
 # ----
-#<https://www.wikidata.org/wiki/Q7327860>
+<#William_Molyneux>
+  # William Molyneux, 1544b - 1567
+  gen:father <https://www.wikidata.org/wiki/Q28322725> .
+  # and Eleanor Radcliffe
+  # oo Bridget Caryll
+
+<https://www.wikidata.org/wiki/Q7528625>
+  # Sir Richard Molyneux, 1st Baronet, 1560~ - 1623-02-08
+  # 1st Baronet Molyneux, of Sefton, Lancashire 1611-05-22
+  gen:father <#William_Molyneux> .
+  # and Bridget Caryll
+  # oo Frances Gerard, d. 1621, daughter of Sir Gilbert Gerard and Anne Ratcliffe
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7528625> , <#Frances_Gerard> ;
+	gen:startDate "1590~" .
+
+<https://www.wikidata.org/wiki/Q7327860>
   # Richard Molyneux, 1st Viscount Molyneux, 1594-02-21 - 1636-05-08
+  # 2nd Baronet Molyneux, of Sefton, Lancashire 1623-02-08
   # 1st Viscount Molyneux, of Maryborough in the Queen's County 1628-12-22
+  gen:father <https://www.wikidata.org/wiki/Q7528625> ;
+  gen:mother <#Frances_Gerard> .
   # oo Mary Caryll, b. 1596-08-12
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7327860> , <#Mary_Caryll> ;
 	gen:startDate "1614-12-07a" .
+<#Alice_Molyneux>
+  # Alice Molyneux
+  gen:father <https://www.wikidata.org/wiki/Q7528625> ;
+  gen:mother <#Frances_Gerard> .
+  # oo Sir William Dormer, d. 1616-10-19~, herbert.ttl#Sir_William_Dormer
 
 <https://www.wikidata.org/wiki/Q7327861>
   # Richard Molyneux, 2nd Viscount Molyneux, 1619 - 1654-06-30~
@@ -2133,6 +2164,25 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7327861> , <#Lady_Frances_Seymour_(died_1681)> ;
 	gen:startDate "1652-10-28" .
+<https://www.wikidata.org/wiki/Q5047696>
+  # Caryll Molyneux, 3rd Viscount Molyneux, 1624 – 1700
+  gen:father <https://www.wikidata.org/wiki/Q7327860> ;
+  gen:mother <#Mary_Caryll> .
+  # oo Mary Barlow, daughter of Sir Alexander Barlow and Dorothy Gresley
+
+<#Richard_Molyneux>
+  # Hon. Richard Molyneux, d. 1672
+  gen:father <https://www.wikidata.org/wiki/Q5047696> .
+  # and Mary Barlow
+  # oo Lady Mary Herbert, 1661 - 1744-10-30
+  []
+    gen:spouse <#Richard_Molyneux> , <herbert.ttl#Lady_Mary_Herbert_(died_1744)> ;
+	gen:startDate "1672b" .
+<#Mary_Molyneux>
+  # Mary Molyneux
+  gen:father <https://www.wikidata.org/wiki/Q5047696> .
+  # and Mary Barlow
+  # oo Sir Thomas Preston, 3rd Baronet, 1641~ – 1709, herbert.ttl#Sir_Thomas_Preston,_3rd_Baronet
 
 # ----
 <https://www.wikidata.org/wiki/Q1986689>
@@ -2314,6 +2364,18 @@
     gen:spouse <https://www.wikidata.org/wiki/Q3569043> , <#Lady_Catherine_Seymour_(died_1731)> ;
 	gen:startDate "1708-07-15" .
 
+<https://www.wikidata.org/wiki/Q337680>
+  gen:name "Charles Wyndham, 2nd Earl of Egremont"@en ;
+  gen:birthDate "1710-08-19" ;
+  gen:deathDate "1763-08-21" ;
+  # 4th Baronet Wyndham, of Orchard Windham, co. Somerset 1740-06-17
+  # 2nd Earl of Egremont, co. Cumberland, 2nd Baron Cockermouth, co. Cumberland 1750-02-07
+  gen:father <https://www.wikidata.org/wiki/Q3569043> ;
+  gen:mother <#Lady_Catherine_Seymour_(died_1731)> .
+  # oo Hon. Alicia Maria Carpenter, 1726~ –  1794-06-01
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q337680> , <https://www.wikidata.org/wiki/Q47462120> ;
+	gen:startDate "1751-03-12" .
 <https://www.wikidata.org/wiki/Q17391648>
   gen:name "Elizabeth Wyndham"@en ;
   gen:birthDate "1731b" ;
@@ -2321,6 +2383,28 @@
   gen:father <https://www.wikidata.org/wiki/Q3569043> ;
   gen:mother <#Lady_Catherine_Seymour_(died_1731)> .
   # oo 1749 Rt. Hon. George Grenville, 1712-10-14 - 1770-11-13, https://www.wikidata.org/wiki/Q244616
+
+<https://www.wikidata.org/wiki/Q47462245>
+  # Lady Elizabeth Alicia Maria Wyndham, 1752-11-29 - 1826-02-10
+  gen:father <https://www.wikidata.org/wiki/Q337680> ;
+  gen:mother <https://www.wikidata.org/wiki/Q47462120> .
+  # oo 1771-07-15 Henry Herbert, 1st Earl of Carnarvon, 1741-08-20 - 1811-06-03, https://www.wikidata.org/wiki/Q3784941
+<#Charles_William_Wyndham>
+  gen:name "Hon. Charles William Wyndham"@en ;
+  gen:birthDate "1760-10-08" ;
+  gen:deathDate "1828-07-08" ;
+  gen:father <https://www.wikidata.org/wiki/Q337680> ;
+  gen:mother <https://www.wikidata.org/wiki/Q47462120> .
+  []
+    gen:spouse <#Charles_William_Wyndham> , <villiers.ttl#Lady_Anne_Barbara_Frances_Villiers> ;
+	gen:startDate "1801" .
+# ----
+<https://www.wikidata.org/wiki/Q47462120>
+  # Hon. Alicia Maria Carpenter, 1726~ –  1794-06-01
+  gen:father <https://www.wikidata.org/wiki/Q5537703> .
+  # and Elizabeth Petty
+  # oo 1751-03-12 Charles Wyndham, 2nd Earl of Egremont, 1710-08-19 – 1763-08-21, https://www.wikidata.org/wiki/Q337680
+  # oo 1767-06-06 Hans Moritz Graf von Brühl, 1736-12-20 - 1809-06-09, https://www.wikidata.org/wiki/Q110743
 
 # ----
 #<https://www.wikidata.org/wiki/Q4798223>
@@ -2725,13 +2809,6 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q6237955> , <#Anne_Seymour-Conway> ;
 	gen:startDate "1755-03-10" .
-
-# ----
-<https://www.wikidata.org/wiki/Q47496575>
-  # Hon. Alice Elizabeth Windsor, 1749-05-10 - 1772-02-11
-  gen:father <https://www.wikidata.org/wiki/Q5735955> .
-  # and Alice Clavering
-  # oo 1768-02-04 Francis Seymour-Ingram, 2nd Marquess of Hertford, 1743-02-12 - 1822-06-28, https://www.wikidata.org/wiki/Q4297289
 
 # ----
 <https://www.wikidata.org/wiki/Q1673614>
@@ -3207,20 +3284,14 @@
   # Duca di Bronté 1873-01-29
   # oo 1838-08-02 Lady Mary Penelope Hill, 1817-09-03 - 1884-07-15
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q4719152> , <#Lady_Mary_Penelope_Hill> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q4719152> , <hill.ttl#Lady_Mary_Penelope_Hill> ;
 	gen:startDate "1838-08-02" .
 
 <https://www.wikidata.org/wiki/Q47516496>
   # Hon. Mary Hood, 1846-06-04 - 1909-04-06
   gen:father <https://www.wikidata.org/wiki/Q4719152> ;
-  gen:mother <#Lady_Mary_Penelope_Hill> .
+  gen:mother <hill.ttl#Lady_Mary_Penelope_Hill> .
   # oo 1868-04-16 Hugh de Grey Seymour, 6th Marquess of Hertford, 1843-10-22 - 1912-03-23, https://www.wikidata.org/wiki/Q13529937
-# ----
-<#Lady_Mary_Penelope_Hill>
-  # Lady Mary Penelope Hill, 1817-09-03 - 1884-07-15
-  gen:father <https://www.wikidata.org/wiki/Q4799070> .
-  # and Lady Maria Windsor
-  # oo 1838-08-02 Alexander Hood, 1st Viscount Bridport of Cricket St. Thomas, 1814-12-23 - 1904-06-04, https://www.wikidata.org/wiki/Q4719152
 
 # ----
 #<https://www.wikidata.org/wiki/Q27089372>
@@ -3255,6 +3326,11 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5359607> , <#Elizabeth_Geale> ;
 	gen:startDate "1841-07-26" .
+<#Lady_Catherine_Fortescue>
+  # Lady Catherine Fortescue, 1786-08-30 - 1854-04-17
+  gen:father <https://www.wikidata.org/wiki/Q5930801> ;
+  gen:mother <https://www.wikidata.org/wiki/Q15699697> .
+  # oo 1820-06-24 Newton Fellowes, 4th Earl of Portsmouth, 1772-06-26 – 1854-01-09, https://www.wikidata.org/wiki/Q7020238 (wallop.ttl)
 <#Lady_Mary_Fortescue>
   # Lady Mary Fortescue, 1792-09-15 - 1874-08-12
   gen:father <https://www.wikidata.org/wiki/Q5930801> ;
@@ -3282,6 +3358,14 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5930822> , <erskine.ttl#Georgiana_Augusta_Charlotte_Caroline_Dawson-Damer> ;
 	gen:startDate "1847-03-11" .
+<https://www.wikidata.org/wiki/Q5311875>
+  # Hon. Dudley Francis Fortescue, 1820-08-04 - 1909-03-02
+  gen:father <https://www.wikidata.org/wiki/Q5359607> ;
+  gen:mother <#Lady_Susan_Ryder> .
+  # oo Lady Camilla Eleanor Fellowes, d. 1920-08-05
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5311875> , <wallop.ttl#Lady_Camilla_Eleanor_Fellowes> ;
+	gen:startDate "1852-05-08" .
 <#Hester_Emily_Fortescue>
   # Hester Emily Fortescue, d. 1913-07-17
   gen:father <#John_Fortescue> ;

@@ -173,7 +173,7 @@
   gen:deathDate "1709-06-30" ;
   gen:father <https://www.wikidata.org/wiki/Q3861098> ;
   gen:mother <#Bridget_Wray,_4th_Baroness_Norreys> .
-  # oo 1675b Charles Dormer, 2nd Earl of Carnarvon, 1632-10-25 - 1709-11-29, https://www.wikidata.org/wiki/Q3666382
+  # oo 1675b Charles Dormer, 2nd Earl of Carnarvon, 1632-10-25 - 1709-11-29, https://www.wikidata.org/wiki/Q3666382 (herbert.ttl)
 <https://www.wikidata.org/wiki/Q5718142>
   # Henry Bertie, 1656~ – 1734-12-04
   gen:father <https://www.wikidata.org/wiki/Q3861098> ;
@@ -1078,27 +1078,6 @@
   gen:father <#Peter_Tryon> .
   # oo 1674 Hon. Charles Bertie, 1635~ - 1711-03-22, https://www.wikidata.org/wiki/Q5075583
 
-# --------
-<https://www.wikidata.org/wiki/Q3666382>
-  gen:name "Charles Dormer, 2nd Earl of Carnarvon"@en ;
-  # 3rd Baronet Dormer, of Wyng, co. Buckingham, 3rd Baron Dormer of Wyng, co. Buckingham, 2nd Earl of Carnarvon, 2nd Viscount Ascott, co. Bucks 1643-09-20
-  gen:birthDate "1632-10-25" ;
-  gen:deathDate "1709-11-29" .
-  # oo Elizabeth Capell, 1633-06-04 - 1678-07-30
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q3666382> , <capell.ttl#Elizabeth_Capell_(died_1678)> ;
-	gen:startDate "1653b" .
-  # oo Lady Mary Bertie, 1655-09-01 - 1709-06-30
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q3666382> , <#Lady_Mary_Bertie_(died_1709)> ;
-	gen:startDate "1675b" .
-
-<https://www.wikidata.org/wiki/Q21500838>
-  # Lady Elizabeth Dormer, 1653 - 1677-10-24~
-  gen:father <https://www.wikidata.org/wiki/Q3666382> ;
-  gen:mother <capell.ttl#Elizabeth_Capell_(died_1678)> .
-  # oo 1665a Philip Stanhope, 2nd Earl of Chesterfield, 1634~ - 1714-01-28, https://www.wikidata.org/wiki/Q1026694
-
 # ----
 #<https://www.wikidata.org/wiki/Q28092649>
   # Sir Edward Norreys, 1634 - 1712
@@ -1164,7 +1143,16 @@
   gen:father <https://www.wikidata.org/wiki/Q7792649> ;
   gen:mother <napier.ttl#Mary_Napier> .
   # oo 1654 Sir Richard Wynn, 4th Baronet, 1625 - 1674-11-18, https://www.wikidata.org/wiki/Q7528688
-
+<#Christian_Myddelton>
+  # Christian Myddelton
+  gen:father <https://www.wikidata.org/wiki/Q7792649> ;
+  gen:mother <napier.ttl#Mary_Napier> .
+  # oo 1650-01-23 Roger Grosvenor, 1628~ - 1651-08-22, grosvenor.ttl#Roger_Grosvenor
+<#Anne_Myddelton>
+  # Anne Myddelton, d. 1660a
+  gen:father <https://www.wikidata.org/wiki/Q7792649> ;
+  gen:mother <napier.ttl#Mary_Napier> .
+  # oo 1660b Edward Herbert, 3rd Baron Herbert of Chirbury, 1633~ - 1678-12-09, https://www.wikidata.org/wiki/Q5343430
 # --------
 <https://www.wikidata.org/wiki/Q27825592>
   gen:name "Thomas Farrington"@en ;
@@ -1468,6 +1456,7 @@
   gen:deathDate "1978-10-24" ;
   gen:father <https://www.wikidata.org/wiki/Q3048565> ;
   gen:mother <#Violet_Hunter_Guthrie> .
+  # oo 1917-08-14 (div 1922) Alastair Edward George Grant, 1892-08-30 - 1947-09-27, grosvenor.ttl#Alastair_Edward_George_Grant
   # oo 1928-08-11 Montagu Henry Edmund Cecil Towneley-Bertie, 13th Earl of Lindsey and 8th Earl of Abingdon, 1887-11-02 - 1963-09-11, https://www.wikidata.org/wiki/Q6904078
 
 <https://www.wikidata.org/wiki/Q468736>
@@ -1856,8 +1845,17 @@
     gen:spouse <https://www.wikidata.org/wiki/Q3107199> , <#Lady_Elizabeth_Peregrine_Bertie> .
 
 # ----
-#<https://www.wikidata.org/wiki/Q7184537>
+#<https://www.wikidata.org/wiki/Q7184536>
+  # Philip Wenman, 6th Viscount Wenman, 1719-11-23 - 1760-08-16
+  # oo Sophia Herbert, 1717~ - 1787-07-19
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7184536> , <herbert.ttl#Sophia_Herbert> ;
+	gen:startDate "1741-07-13" .
+
+<https://www.wikidata.org/wiki/Q7184537>
   # Philip Wenman, 7th Viscount Wenman, 1742-04-18 – 1800-03-26
+  gen:father <https://www.wikidata.org/wiki/Q7184536> ;
+  gen:mother <herbert.ttl#Sophia_Herbert> .
   # oo Lady Anne Eleanora Bertie, 1737~ – 1804-04-19
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7184537> , <#Lady_Anne_Eleanora_Bertie> ;
@@ -2163,41 +2161,6 @@
   gen:name "Frances Isabella Stephens"@en ;
   gen:deathDate "1924-04-27" .
   # oo 1874-05-19 John Luke George Hely Hutchinson, 5th Earl of Donoughmore of Knocklofty, 1848-03-02 - 1900-12-05, https://www.wikidata.org/wiki/Q6238592
-# ----
-<https://www.wikidata.org/wiki/Q11801709>
-  # Edward Bolton Clive, 1765~ – 1845-07-22
-  gen:father <https://www.wikidata.org/wiki/Q5537990> .
-  # and Sidney Bolton
-  # oo Hon. Harriet Archer
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q11801709> , <#Harriet_Archer> ;
-	gen:startDate "1790-12" .
-
-<https://www.wikidata.org/wiki/Q5537991>
-  # George Clive, 1805-10 - 1880-06-08
-  gen:father <https://www.wikidata.org/wiki/Q11801709> ;
-  gen:mother <#Harriet_Archer> .
-  # oo Ann Sybella Martha Farquhar, d. 1907-02-16
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q5537991> , <#Ann_Sybella_Martha_Farquhar> ;
-	gen:startDate "1835-05-02" .
-
-<#Sybella_Harriet_Clive>
-  # Sybella Harriet Clive, 1836-06-20 - 1900-12-09
-  gen:father <https://www.wikidata.org/wiki/Q5537991> ;
-  gen:mother <#Ann_Sybella_Martha_Farquhar> .
-  # oo 1869-06-10 George William Lyttelton, 4th Lord Lyttelton, Baron of Frankley, 1817-03-31 - 1876-04-19, https://www.wikidata.org/wiki/Q1401295
-<#Mary_Kathleen_Clive>
-  # Mary Kathleen Clive, 1856-02-27 - 1907-01-12
-  gen:father <https://www.wikidata.org/wiki/Q5537991> ;
-  gen:mother <#Ann_Sybella_Martha_Farquhar> .
-  # oo 1880-08-03 Rt. Rev. Hon. Arthur Temple Lyttelton, 1852-01-07 – 1903-02-19, https://www.wikidata.org/wiki/Q4799595
-# ----
-<#Harriet_Archer>
-  # Hon. Harriet Archer
-  gen:father <https://www.wikidata.org/wiki/Q4756217> ;
-  gen:mother <https://www.wikidata.org/wiki/Q61980582> .
-  # oo 1790-12 Edward Bolton Clive, 1765~ – 1845-07-22, https://www.wikidata.org/wiki/Q11801709
 
 # ----
 <#Alec_Puleston_Henderson>

@@ -502,6 +502,14 @@
   gen:father <https://www.wikidata.org/wiki/Q336771> ;
   gen:mother <carnegie.ttl#Lady_Constance_Mary_Carnegie> .
   # oo 1911-12-07 Sir Harry Calvert Williams Verney, 4th Baronet, 1881-06-07 – 1974-12-23, https://www.wikidata.org/wiki/Q7527066
+<#John_Bernard_Bruce>
+  # Hon. John Bernard Bruce, 1892-04-09 - 1971-08-03
+  gen:father <https://www.wikidata.org/wiki/Q336771> ;
+  gen:mother <carnegie.ttl#Lady_Constance_Mary_Carnegie> .
+  # oo Helen Rachel Rawstorne, d. 1983-11-04, daughter of Henry Feilden Rawstorne
+  []
+    gen:spouse <#John_Bernard_Bruce> , <#Helen_Rachel_Rawstorne> ;
+	gen:startDate "1923-06-02" .
 <#Lewis_Bruce>
   # Lewis Bruce, 1880-03-12 - 1961-03-23
   gen:father <#Frederick_John_Bruce> ;
@@ -555,8 +563,16 @@
   gen:mother <cochrane.ttl#Katherine_Elizabeth_Cochrane> .
   # oo Sarah Elizabeth Wallop William-Powlett, 1936-06-23 - 2015-03-26
   []
-    gen:spouse <#Edward_David_Bruce> , <#Sarah_Elizabeth_Wallop_William-Powlett> ;
+    gen:spouse <#Edward_David_Bruce> , <wallop.ttl#Sarah_Elizabeth_Wallop_William-Powlett> ;
 	gen:startDate "1960-04-30" .
+<#Henry_Victor_Bruce_of_Salloch>
+  # Henry Victor Bruce of Salloch, 1924-04-03 - 2011-07-11
+  gen:father <#John_Bernard_Bruce> ;
+  gen:mother <#Helen_Rachel_Rawstorne> .
+  # oo Helen Vernon Wallop William-Powlett, b. 1927-12-16
+  []
+    gen:spouse <#Henry_Victor_Bruce_of_Salloch> , <wallop.ttl#Helen_Vernon_Wallop_William-Powlett> ;
+	gen:startDate "1951-05-17" .
 <#John_Frederick_Lambton_Bruce>
   # John Frederick Lambton Bruce, 1912-10-20 - 2002-09-20
   gen:father <#Lewis_Bruce> ;
@@ -595,7 +611,7 @@
 <#Newton_Edward_John_Bruce>
   # Newton Edward John Bruce, b. 1964-08-27
   gen:father <#Edward_David_Bruce> ;
-  gen:mother <#Sarah_Elizabeth_Wallop_William-Powlett> .
+  gen:mother <herbert.ttl#Sarah_Elizabeth_Wallop_William-Powlett> .
   # oo Joanna Christian Erskine, b. 1968-07-06
   []
     gen:spouse <#Newton_Edward_John_Bruce> , <erskine.ttl#Joanna_Christian_Erskine> ;
@@ -975,104 +991,3 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7527066> , <#Lady_Rachel_Catherine_Bruce> ;
 	gen:startDate "1911-12-07" .
-
-# ----
-#<https://www.wikidata.org/wiki/Q15438612>
-  # John Wallop, 1st Earl of Portsmouth, 1690-04-15 - 1762-11-23
-  # 1st Baron Wallop, of Farley Wallop, co. Southampton, 1st Viscount Lymington, County of Southampton 1720-06-11
-  # 1st Earl of Portsmouth, co. Southampton 1743-04-11
-  # oo Lady Bridget Bennet, d. 1738-10-12
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q15438612> , <cecil.ttl#Lady_Bridget_Bennet> ;
-	gen:startDate "1716-05-20" .
-
-<https://www.wikidata.org/wiki/Q6262841>
-  # John Wallop, Viscount Lymington, 1718-08-03 - 1749-11-19
-  gen:father <https://www.wikidata.org/wiki/Q15438612> ;
-  gen:mother <cecil.ttl#Lady_Bridget_Bennet> .
-  # oo Catherine Conduitt, 1719 - 1750-04-15, daughter of John Conduitt and Catherine Barton
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q6262841> , <#Catherine_Conduitt> ;
-	gen:startDate "1740-07-12" .
-
-<https://www.wikidata.org/wiki/Q55979301>
-  # Rev. Hon. Dr. Barton Wallop, 1744-11-05 - 1781-09-01
-  gen:father <https://www.wikidata.org/wiki/Q6262841> ;
-  gen:mother <#Catherine_Conduitt> .
-  # oo Camilla Powlett Smyth, 1755-12-09 - 1820-09-29
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q55979301> , <paulet.ttl#Camilla_Powlett_Smyth> ;
-	gen:startDate "1771-05-14" .
-
-<#William_Barton_Wallop>
-  # William Barton Wallop, 1781-12-24 - 1824-12
-  gen:father <https://www.wikidata.org/wiki/Q55979301> ;
-  gen:mother <paulet.ttl#Camilla_Powlett_Smyth> .
-  # oo Elizabeth Ward, d. 1812-11, daughter of Major unknown Ward
-  []
-    gen:spouse <#William_Barton_Wallop> , <#Elizabeth_Ward> ;
-	gen:startDate "1807" .
-
-<#William_Barton_Powlett_William-Powlett>
-  # William Barton Powlett William-Powlett, 1808-09-06 - 1886-12-07
-  gen:father <#William_Barton_Wallop> ;
-  gen:mother <#Elizabeth_Ward> .
-  # oo Ellinor Fleming, 1853 - 1881, daughter of John Willis Fleming
-  []
-    gen:spouse <#William_Barton_Powlett_William-Powlett> , <#Ellinor_Fleming> ;
-	gen:startDate "1870-11-10" .
-
-<#Barton_Newton_Wallop_William-Powlett>
-  # Barton Newton Wallop William-Powlett, 1871 - 1954
-  gen:father <#William_Barton_Powlett_William-Powlett> ;
-  gen:mother <#Ellinor_Fleming> .
-  # oo Emily Charlotte Reibey, 1870 - 1954-03-17, daughter of James Clack Reibey and Emily Stuart Tyndall
-  []
-    gen:spouse <#Barton_Newton_Wallop_William-Powlett> , <#Emily_Charlotte_Reibey> ;
-	gen:startDate "1895" .
-
-<#Newton_James_Wallop_William-Powlett>
-  # Newton James Wallop William-Powlett, 1896-01-26 - 1963-11-10
-  gen:father <#Barton_Newton_Wallop_William-Powlett> ;
-  gen:mother <#Emily_Charlotte_Reibey> .
-  # oo Barbara Patience Greenwell, 1906-08-29 - 1997-10-11
-  []
-    gen:spouse <#Newton_James_Wallop_William-Powlett> , <#Barbara_Patience_Greenwell> ;
-	gen:startDate "1929-04-24" .
-
-<#Sarah_Elizabeth_Wallop_William-Powlett>
-  # Sarah Elizabeth Wallop William-Powlett, 1936-06-23 - 2015-03-26
-  gen:father <#Newton_James_Wallop_William-Powlett> ;
-  gen:mother <#Barbara_Patience_Greenwell> .
-  # oo 1960-04-30 Hon. Edward David Bruce, b. 1936-02-29, #Edward_David_Bruce
-# ----
-#<#Sir_Walpole_Greenwell,_1st_Baronet>
-  # Sir Walpole Lloyd Greenwell, 1st Baronet, 1847-06-09 - 1919-10-24
-  # 1st Baronet Greenwell, of Marden Park, Godstone, co. Surrey 1906-07-19
-  # son of Walpole Eyre Greenwell
-  # and Eliza Theophila Morris
-  # oo Kathleen Eugenie Tizard, d. 1932-01-11, daughter of John Tizard
-  []
-    gen:spouse <#Sir_Walpole_Greenwell,_1st_Baronet> , <#Kathleen_Eugenie_Tizard> ;
-	gen:startDate "1873-01-21" .
-
-<#Sir_Bernard_Greenwell,_2nd_Baronet>
-  # Sir Bernard Eyre Greenwell, 2nd Baronet, 1874-05-29 - 1939-11-28
-  gen:father <#Sir_Walpole_Greenwell,_1st_Baronet> ;
-  gen:mother <#Kathleen_Eugenie_Tizard> .
-  # oo Anna Elizabeth McClintock, 1873 - 1957-06-22
-  []
-    gen:spouse <#Sir_Bernard_Greenwell,_2nd_Baronet> , <#Anna_Elizabeth_McClintock> ;
-	gen:startDate "1902-11-19" .
-
-<#Barbara_Patience_Greenwell>
-  # Barbara Patience Greenwell, 1906-08-29 - 1997-10-11
-  gen:father <#Sir_Bernard_Greenwell,_2nd_Baronet> ;
-  gen:mother <#Anna_Elizabeth_McClintock> .
-  # oo 1929-04-24 Newton James Wallop William-Powlett, 1896-01-26 - 1963-11-10, #Newton_James_Wallop_William-Powlett
-# ----
-<#Anna_Elizabeth_McClintock>
-  # Anna Elizabeth McClintock, 1873 - 1957-06-22
-  gen:father <https://www.wikidata.org/wiki/Q969207> .
-  # and Annette Elizabeth Delap
-  # oo 1902-11-19 Sir Bernard Eyre Greenwell, 2nd Baronet, 1874-05-29 - 1939-11-28, #Sir_Bernard_Greenwell,_2nd_Baronet
