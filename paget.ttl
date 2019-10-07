@@ -357,7 +357,7 @@
 	gen:startDate "1805-05-22" .
   # oo Lady Harriet Legge, 1790-09-07 - 1855-03-11
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q4385579> , <#Lady_Harriet_Legge> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q4385579> , <legge.ttl#Lady_Harriet_Legge> ;
 	gen:startDate "1815-02-22" .
 <#Lady_Louisa_Paget>
   gen:name "Lady Louisa Paget"@en ;
@@ -548,7 +548,7 @@
 <#Henry_William_Paget>
   # Henry William Paget, 1816-02-14 - 1853-01-17
   gen:father <https://www.wikidata.org/wiki/Q4385579> ;
-  gen:mother <#Lady_Harriet_Legge> .
+  gen:mother <legge.ttl#Lady_Harriet_Legge> .
   # oo Anne Matilda Catherine Walker, 1831~ - 1901-06-23
   []
     gen:spouse <#Henry_William_Paget> , <#Anne_Matilda_Catherine_Walker> ;
@@ -556,17 +556,17 @@
 <#Frances_Jane_Paget>
   # Frances Jane Paget, 1817-05-02 - 1903-08-26
   gen:father <https://www.wikidata.org/wiki/Q4385579> ;
-  gen:mother <#Lady_Harriet_Legge> .
+  gen:mother <legge.ttl#Lady_Harriet_Legge> .
   # oo 1843-09-19 John Butler, 2nd Marquess of Ormonde, 1808-08-24 - 1854-09-25, https://www.wikidata.org/wiki/Q6224109
 <#Caroline_Paget_(died_1894)>
   # Caroline Paget, 1823-10 - 1894-07-17
   gen:father <https://www.wikidata.org/wiki/Q4385579> ;
-  gen:mother <#Lady_Harriet_Legge> .
+  gen:mother <legge.ttl#Lady_Harriet_Legge> .
   # oo 1853-12-15 Rev. Hon. John Venables-Vernon, 1798-03-08 - 1875-12-11, howard.ttl#John_Venables-Vernon
 <#Edward_Heneage_Paget>
   # Edward Heneage Paget, 1828-07-23 - 1884-09-29
   gen:father <https://www.wikidata.org/wiki/Q4385579> ;
-  gen:mother <#Lady_Harriet_Legge> .
+  gen:mother <legge.ttl#Lady_Harriet_Legge> .
   # oo Hon. Emma Mary Eden, 1836~ - 1895-03-30
   []
     gen:spouse <#Edward_Heneage_Paget> , <#Emma_Mary_Eden> ;
@@ -1254,6 +1254,68 @@
   gen:father <#Oliver_Lambart> ;
   gen:mother <#Eleanor_Crane> .
   # oo 1708-08-28 Sir Edward Bayly, 1st Baronet, 1684-02-20 - 1741-09-28, https://www.wikidata.org/wiki/Q5341813
+<#Charles_Lambart_(died_1753)>
+  # Charles Lambart, of Painstown, d. 1753-09-01
+  gen:father <#Oliver_Lambart> ;
+  gen:mother <#Eleanor_Crane> .
+  # oo Hon. Elizabeth Hamilton
+  []
+    gen:spouse <#Charles_Lambart_(died_1753)> , <hamilton.ttl#Elizabeth_Hamilton_3> .
+
+<#Gustavus_Lambart>
+  # Gustavus Lambart
+  gen:father <#Charles_Lambart_(died_1753)> ;
+  gen:mother <hamilton.ttl#Elizabeth_Hamilton_3> .
+  # oo Thomasine Rochfort, b. 1716-09-05
+  []
+    gen:spouse <#Gustavus_Lambart> , <#Thomasine_Rochfort> .
+
+<#Charles_Lambart_(died_1819)>
+  # Charles Lambart, d. 1819-12-30
+  gen:father <#Gustavus_Lambart> ;
+  gen:mother <#Thomasine_Rochfort> .
+  # oo Frances Dutton, d. 1806, daughter of James Lenox Dutton and Jane Bond
+  []
+    gen:spouse <#Charles_Lambart_(died_1819)> , <#Frances_Dutton> ;
+	gen:startDate "1771-09" .
+
+<#Gustavus_Lambart_(died_1850)>
+  # Gustavus Lambart, 1772-09-16 - 1850-09-22
+  gen:father <#Charles_Lambart_(died_1819)> ;
+  gen:mother <#Frances_Dutton> .
+  # oo Anna Butler Stevenson, d. 1821-03-21, daughter of Sir John Andrew Stevenson
+  []
+    gen:spouse <#Gustavus_Lambart_(died_1850)> , <#Anna_Butler_Stevenson> ;
+	gen:startDate "1810" .
+<#Frances_Thomasine_Lambart>
+  # Frances Thomasine Lambart, 1782-07-11 - 1819-12-30
+  gen:father <#Charles_Lambart_(died_1819)> ;
+  gen:mother <#Frances_Dutton> .
+  # oo 1800-08-28 Charles Chetwynd-Talbot, 2nd Earl Talbot of Hensol, 1777-04-25 - 1849-01-10, https://www.wikidata.org/wiki/Q93594
+
+<#Gustavus_William_Lambart>
+  # Gustavus William Lambart, 1814-08-07 - 1886-11-01
+  gen:father <#Gustavus_Lambart_(died_1850)> ;
+  gen:mother <#Anna_Butler_Stevenson> .
+  # oo Lady Frances Caroline Maria Conyngham, 1827 - 1898-06-17
+  []
+    gen:spouse <#Gustavus_William_Lambart> , <#Lady_Frances_Caroline_Maria_Conyngham> ;
+	gen:startDate "1847-06-05" .
+
+<#Amy_Gwendoline_Lambart>
+  # Amy Gwendoline Lambart, 1852-08-10 - 1927-01-28
+  gen:father <#Gustavus_William_Lambart> ;
+  gen:mother <#Lady_Frances_Caroline_Maria_Conyngham> .
+  # oo 1884-10-25 Hon. Sir Henry Charles Legge, 1852-11-04 – 1924-06-20, https://www.wikidata.org/wiki/Q5724827
+<https://www.wikidata.org/wiki/Q46705169>
+  # Sir Gustavus Francis William Lambart, 1st Baronet, 1848-03-25 - 1926-06-16
+  # 1st Baronet Lambart, of Beau Parc, co. Meath 1911-07-13
+  gen:father <#Gustavus_William_Lambart> ;
+  gen:mother <#Lady_Frances_Caroline_Maria_Conyngham> .
+  # oo Kathleen Barbara Sophia Moore-Brabazon, b. 1882-03-26, daughter of John Arthur Henry Moore-Brabazon and Emma Sophia Richards
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q46705169> , <https://www.wikidata.org/wiki/Q46704698> ;
+	gen:startDate "1911-09-13" .
 # ----
 #<#Richard_Robartes,_1st_Baron_Robartes>
   # Richard Robartes, 1st Baron Robartes of Truro, 1580 - 1634-04-19
@@ -1288,6 +1350,21 @@
   # oo Lady Anne FitzGerald
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5482310> , <fitzgerald.ttl#Lady_Anne_FitzGerald_2> .
+# ----
+#<https://www.wikidata.org/wiki/Q18910672>
+  # Rt. Hon. George Rochfort, 1682-01-21 - 1730-07-08
+  # son of Robert Rochfort
+  # and Hannah Handcock
+  # oo Lady Elizabeth Moore
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q18910672> , <ponsonby.ttl#Lady_Elizabeth_Moore> ;
+	gen:startDate "1704-01-24" .
+
+<#Thomasine_Rochfort>
+  # Thomasine Rochfort, b. 1716-09-05
+  gen:father <https://www.wikidata.org/wiki/Q18910672> ;
+  gen:mother <ponsonby.ttl#Lady_Elizabeth_Moore> .
+  # oo Gustavus Lambart, #Gustavus_Lambart
 
 # ----
 <#George_Forbes,_5th_Earl_of_Granard>
@@ -1407,7 +1484,7 @@
   gen:mother <#Frances_Wagstaffe> .
   # oo Lady Barbara Legge, 1709 - 1765-10-29
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q7529360> , <#Lady_Barbara_Legge> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q7529360> , <legge.ttl#Lady_Barbara_Legge> ;
 	gen:startDate "1724-07-27" .
 
 <https://www.wikidata.org/wiki/Q8004921>
@@ -1415,11 +1492,27 @@
   # 6th Baronet Bagot, of Blithfield, co. Stafford 1768-01-20
   # 1st Baron Bagot of Bagot's Bromley, co. Stafford 1780-10-17
   gen:father <https://www.wikidata.org/wiki/Q7529360> ;
-  gen:mother <#Lady_Barbara_Legge> .
+  gen:mother <legge.ttl#Lady_Barbara_Legge> .
   # oo Hon. Elizabeth Louisa St. John, 1744~ - 1820-02-04
   []
     gen:spouse <https://www.wikidata.org/wiki/Q8004921> , <#Elizabeth_Louisa_St._John> ;
 	gen:startDate "1760-08-20" .
+<#Walter_Bagot>
+  # Rev. Walter Bagot, 1731-11-02 - 1808
+  gen:father <https://www.wikidata.org/wiki/Q7529360> ;
+  gen:mother <legge.ttl#Lady_Barbara_Legge> .
+  # oo Anne Swinnerton, daughter of William Swinnerton
+  []
+    gen:spouse <#Walter_Bagot> , <#Anne_Swinnerton> ;
+	gen:startDate "1773-09-07" .
+<https://www.wikidata.org/wiki/Q6536288>
+  # Lewis Bagot, 1740-01-01 - 1802-06-04
+  # Bishop of St. Asaph, Bristol and Norwich
+  gen:father <https://www.wikidata.org/wiki/Q7529360> ;
+  gen:mother <legge.ttl#Lady_Barbara_Legge> .
+  # oo Mary Hay, 1754-07-25 - 1799-08-17
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6536288> , <hay.ttl#Mary_Hay_(died_1799)> .
 
 <https://www.wikidata.org/wiki/Q8004922>
   # William Bagot, 2nd Baron Bagot of Bagot's Bromley, 1773-09-11 - 1856-02-12
@@ -1431,7 +1524,7 @@
 	gen:startDate "1799-05-30" .
   # oo Lady Louisa Legge, 1787-03-08 - 1816-08-13
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q8004922> , <#Lady_Louisa_Legge> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q8004922> , <legge.ttl#Lady_Louisa_Legge> ;
 	gen:startDate "1807-02-17" .
 <https://www.wikidata.org/wiki/Q2958465>
   # Rt. Hon. Sir Charles Bagot, 1781-09-23 - 1843-05-19
@@ -1455,11 +1548,16 @@
   gen:father <https://www.wikidata.org/wiki/Q8004921> ;
   gen:mother <#Elizabeth_Louisa_St._John> .
   # oo 1805-05-22 Hon. Sir Edward Paget, 1775-11-03 - 1849-05-13, https://www.wikidata.org/wiki/Q4385579
+<#Honora_Bagot>
+  # Honora Bagot, 1775 - 1863-10-02
+  gen:father <#Walter_Bagot> ;
+  gen:mother <#Anne_Swinnerton> .
+  # oo 1795-12-15 Ven. Hon. Augustus George Legge, 1773-08-21 – 1828-08-21, https://www.wikidata.org/wiki/Q39079010
 
 <https://www.wikidata.org/wiki/Q8004924>
   # William Bagot, 3rd Baron Bagot of Bagot's Bromley, 1811-03-27 - 1887-01-19
   gen:father <https://www.wikidata.org/wiki/Q8004922> ;
-  gen:mother <#Lady_Louisa_Legge> .
+  gen:mother <legge.ttl#Lady_Louisa_Legge> .
   # oo 1851-08-13 Hon. Lucia Caroline Elizabeth Agar-Ellis, 1827-01-09 - 1895-01-22
   []
     gen:spouse <https://www.wikidata.org/wiki/Q8004924> , <howard.ttl#Lucia_Caroline_Elizabeth_Agar-Ellis> ;
@@ -1467,7 +1565,7 @@
 <#Agnes_Bagot>
   # Hon. Agnes Bagot
   gen:father <https://www.wikidata.org/wiki/Q8004922> ;
-  gen:mother <#Lady_Louisa_Legge> .
+  gen:mother <legge.ttl#Lady_Louisa_Legge> .
   # oo 1828-01-08 John Newton Lane, 1800-12-04 - 1869-10-13, bertie.ttl#John_Newton_Lane
 <#Henrietta_Maria_Bagot>
   # Henrietta Maria Bagot, 1815-09 - 1844-03-22
@@ -1496,23 +1594,6 @@
   # daughter of Sir Thomas Wagstaffe, 1633 - 1709-01-22, https://www.wikidata.org/wiki/Q40861382 ?
   # and oo Frances Samwell, daughter of Richard Samwell and Frances Wenman
   # oo 1697-04-15 Sir Edward Bagot, 4th Baronet, 1674-01-21 - 1712-05, https://www.wikidata.org/wiki/Q7526510
-# ----
-<#Lady_Barbara_Legge>
-  # Lady Barbara Legge, 1709 - 1765-10-29
-  gen:father <https://www.wikidata.org/wiki/Q9374853> .
-  # and Lady Anne Finch
-  # oo 1724-07-27 Sir Walter Wagstaffe Bagot, 5th Baronet, 1702-08-03 - 1768-01-28, https://www.wikidata.org/wiki/Q7529360
-
-<#Lady_Louisa_Legge>
-  # Lady Louisa Legge, 1787-03-08 - 1816-08-13
-  gen:father <https://www.wikidata.org/wiki/Q5541651> ;
-  gen:mother <https://www.wikidata.org/wiki/Q51883197> .
-  # oo 1807-02-17 William Bagot, 2nd Baron Bagot of Bagot's Bromley, 1773-09-11 - 1856-02-12, https://www.wikidata.org/wiki/Q8004922
-<#Lady_Harriet_Legge>
-  # Lady Harriet Legge, 1790-09-07 - 1855-03-11
-  gen:father <https://www.wikidata.org/wiki/Q5541651> ;
-  gen:mother <https://www.wikidata.org/wiki/Q51883197> .
-  # oo 1815-02-22 Hon. Sir Edward Paget, 1775-11-03 - 1849-05-13, https://www.wikidata.org/wiki/Q4385579
 # ----
 <#Elizabeth_Louisa_St._John>
   # Hon. Elizabeth Louisa St. John, 1744~ - 1820-02-04
@@ -1593,6 +1674,11 @@
   gen:father <https://www.wikidata.org/wiki/Q5480600> ;
   gen:mother <#Lady_Jane_Paget> .
   # oo 1849-05-19 Francis George Spencer, 2nd Baron Churchill of Whichwood, 1802-10-06 - 1886-11-24, https://www.wikidata.org/wiki/Q27927450
+<#Lady_Frances_Caroline_Maria_Conyngham>
+  # Lady Frances Caroline Maria Conyngham, 1827 - 1898-06-17
+  gen:father <https://www.wikidata.org/wiki/Q5480600> ;
+  gen:mother <#Lady_Jane_Paget> .
+  # oo 1847-06-05 Gustavus William Lambart, 1814-08-07 - 1886-11-01, #Gustavus_William_Lambart
 
 # ----
 #<https://www.wikidata.org/wiki/Q7526537>
@@ -1662,6 +1748,36 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q14945465> , <#Laura_Caroline_Jane_Paget> ;
 	gen:startDate "1842-08-03" .
+
+<https://www.wikidata.org/wiki/Q46993495>
+  # Arthur Henry Chichester, 3rd Baron Templemore, 1854-09-16 - 1924-09-28
+  gen:father <https://www.wikidata.org/wiki/Q14945465> ;
+  gen:mother <#Laura_Caroline_Jane_Paget> .
+  # oo Evelyn Stracey, d. 1883-12-03, daughter of Rev. William James Stracey-Clitherow and Maria Diana Bourchier
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q46993495> , <#Evelyn_Stracey> ;
+	gen:startDate "1879-08-14" .
+
+<https://www.wikidata.org/wiki/Q4798258>
+  # Arthur Claud Spencer Chichester, 4th Baron Templemore, 1880-09-12 – 1953-10-02
+  gen:father <https://www.wikidata.org/wiki/Q46993495> ;
+  gen:mother <#Evelyn_Stracey> .
+  # oo 1911-01-10 Hon. Clare Meriel Wingfield, 1886-06-05 - 1969
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4798258> , <coke.ttl#Clare_Meriel_Wingfield> ;
+	gen:startDate "1911-01-10" .
+
+<https://www.wikidata.org/wiki/Q5262796>
+  # Dermot Richard Claud Chichester, 7th Marquess of Donegall, 1916-04-18 – 2007-04-19
+  # 5th Baron Templemore, of Templemore, co. Donegal 1953-10-02
+  # 7th Earl of Belfast, 12th Baron Chichester of Belfast, co. Antrim, 7th Marquess of Donegall, 7th Baron Fisherwick, co. Stafford, 11th Earl of Donegall, 12th Viscount Chichester of Carrickfergus, co. Antrim 1975-05-24
+  gen:father <https://www.wikidata.org/wiki/Q4798258> ;
+  gen:mother <coke.ttl#Clare_Meriel_Wingfield> .
+  # oo Lady Josceline Gabrielle Legge, 1918-05-22 - 1995-06-19
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5262796> , <legge.ttl#Lady_Josceline_Gabrielle_Legge> ;
+	gen:startDate "1946-09-16" .
+# ----
 
 # ----
 <#Frances_de_Rottenburg>
