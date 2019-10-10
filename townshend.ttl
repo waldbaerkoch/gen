@@ -1,0 +1,602 @@
+@base <townshend.ttl> .
+@prefix gen: <http://jjkoch.de/gen#> .
+@prefix wdata: <https://www.wikidata.org/wiki/> .
+@prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+
+#<https://www.wikidata.org/wiki/Q7359026>
+  # Sir Roger Townshend, 1430 - 1493-11-09
+  # son of John Townshend
+  # oo Anne de Brewse, d. 1489-10-31, daughter of William de Brewse
+  # oo Eleanor Lunsford, d. 1500-09-05, daughter of William Lunsford and Thomasine Barrington
+
+<https://www.wikidata.org/wiki/Q7359022>
+  # Sir Roger Townshend, 1477 - 1552-05-10
+  gen:father <https://www.wikidata.org/wiki/Q7359026> .
+  # and Anne de Brewse
+  # oo Amy Brewes, daughter of William de Brewse
+
+<#John_Townshend>
+  # Sir John Townshend, 1493 - 1540
+  gen:father <https://www.wikidata.org/wiki/Q7359022> .
+  # and Amy Brewse
+  # oo Eleanor Heydon, daughter of Sir John Heydon (d. 1551) and Catherine Willoughby (d. 1542)
+<https://www.wikidata.org/wiki/Q7350445>
+  # Sir Robert Townshend, of Ludlow, d. 1556-02-08
+  gen:father <https://www.wikidata.org/wiki/Q7359022> .
+  # and Amy Brewse
+<#Katherine_Townshend>
+  # Katherine Townshend, d. 1581
+  gen:father <https://www.wikidata.org/wiki/Q7359022> .
+  # and Amy Brewse
+  # oo Sir Henry Bedingfield, 1509 – 1583, https://www.wikidata.org/wiki/Q5717960, son of https://www.wikidata.org/wiki/Q5339282
+
+<#Richard_Townshend>
+  # Richard Townshend, d. 1551
+  gen:father <#John_Townshend> .
+  # and Eleanor Heydon
+  # oo Catherine Brown, daughter of https://www.wikidata.org/wiki/Q19326037
+  []
+    gen:spouse <#Richard_Townshend> , <#Catherine_Brown> .
+
+<https://www.wikidata.org/wiki/Q7359024>
+  # Sir Roger Townshend, 1544~ - 1590-06-30
+  gen:father <#Richard_Townshend> ;
+  gen:mother <#Catherine_Brown> .
+  # oo Ursula Heydon, d. 1564b, daughter of Sir Christopher Heydon and oo Anne Drury (daughter of https://www.wikidata.org/wiki/Q8008017)
+  # oo Jane Stanhope, 1547~ – 1618-01-03, daughter of Sir Michael Stanhope (1508b –  1552-02-26, https://www.wikidata.org/wiki/Q7528341) and oo 1537-11b Anne Rawson (1515~ – 1588-02-20)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7359024> , <#Jane_Stanhope> ;
+	gen:startDate "1590b" .
+
+<https://www.wikidata.org/wiki/Q6261102>
+  # Sir John Townshend, 1568 - 1603-08-02
+  gen:father <https://www.wikidata.org/wiki/Q7359024> ;
+  gen:mother <#Jane_Stanhope> .
+  # oo Anne Bacon, 1573-08 - 1622-11, daughters of Sir Nathaniel Bacon (1547 – 1622-11-07, https://www.wikidata.org/wiki/Q6969488, son of Sir Nicholas Bacon (1510-12-28 – 1579-02-20, https://www.wikidata.org/wiki/Q608866) and oo Jane Fernley (daughter of William Fernley)) and oo Anne Gresham (d. 1594, daughter of https://www.wikidata.org/wiki/Q318673)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6261102> , <https://www.wikidata.org/wiki/Q18559693> .
+
+<https://www.wikidata.org/wiki/Q7528900>
+  # Sir Roger Townshend, 1st Baronet, 1596~ - 1637-01-01
+  # 1st Baronet Townshend, of Rainham, co. Norfolk 1617-04-16
+  gen:father <https://www.wikidata.org/wiki/Q6261102> ;
+  gen:mother <https://www.wikidata.org/wiki/Q18559693> .
+  # oo Hon. Mary de Vere, 1608 - 1669-11-15~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7528900> , <de_vere.ttl#Mary_de_Vere> ;
+	gen:startDate "1628" .
+
+<#Sir_Roger_Townshend,_2nd_Baronet>
+  # Sir Roger Townshend, 2nd Baronet, 1628-12-21 - 1648
+  gen:father <https://www.wikidata.org/wiki/Q7528900> ;
+  gen:mother <de_vere.ttl#Mary_de_Vere> .
+<https://www.wikidata.org/wiki/Q5902810>
+  # Sir Horatio Townshend, 1st Viscount Townshend of Raynham, 1630-12-16 - 1687
+  # 3rd Baronet Townshend, of Rainham, co. Norfolk 1648
+  # 1st Baron Townshend of Lynn Regis, co. Norfolk 1661-04-20
+  # 1st Viscount Townshend of Raynham, co. Norfolk 1682-12-11
+  gen:father <https://www.wikidata.org/wiki/Q7528900> ;
+  gen:mother <de_vere.ttl#Mary_de_Vere> .
+  # oo Mary Lewkenor, 1634-09 - 1673, daughter of Sir Edward Lewkenor (son of Sir Edward Lewknor (1587-01-04 - 1618-03-01, https://www.wikidata.org/wiki/Q53742435, son of https://www.wikidata.org/wiki/Q16843467 and Susan Heigham) and oo Mary Neville (1613 – 1642-10-28, daughter of Sir Henry Neville (1564~ - 1615-07-10, https://www.wikidata.org/wiki/Q2775812, son of Sir Henry Neville (1520~ –  1593-01-13, https://www.wikidata.org/wiki/Q5726285, son of Sir Edward Neville (1471 - 1538-12-08, https://www.wikidata.org/wiki/Q5344604, son of George Neville, 4th and de jure 2nd Baron Abergavenny (1440~ - 1492-09-20, https://www.wikidata.org/wiki/Q5542841) and oo 1469b  Margaret Fenne (d. 1485-09-28, https://www.wikidata.org/wiki/Q19302315)) and oo 1529-04-06b Eleanor Windsor (1479 - 1531-03-25, daughter of https://www.wikidata.org/wiki/Q4758954 and Elizabeth Blount)) and oo Elizabeth Gresham (d. 1573-11-04, daughter of Sir John Gresham (d. 1560, son of https://www.wikidata.org/wiki/Q7326075) and oo Frances Thwaytes (daughter of Sir Henry Thwaytes))) and oo Anne Killigrew (daughter of Sir Henry Killigrew and Catherine Cooke))) and oo Elizabeth Russell (daughter of https://www.wikidata.org/wiki/Q7529760 and Elizabeth Gerard)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5902810> , <#Mary_Lewkenor> ;
+	gen:startDate "1659-04-13b" .
+  # oo Mary Ashe, d. 1685-12-17
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5902810> , <#Mary_Ashe> ;
+	gen:startDate "1673-11-27" .
+<#Mary_Townshend_(died_1668)>
+  # Mary Townshend, d. 1668-07-04
+  gen:father <https://www.wikidata.org/wiki/Q7528900> ;
+  gen:mother <de_vere.ttl#Mary_de_Vere> .
+  # oo 1650 Thomas Crew, 2nd Baron Crew of Stene, 1624~ - 1697-09-30, https://www.wikidata.org/wiki/Q7788699
+
+<https://www.wikidata.org/wiki/Q336529>
+  # Charles Townshend, 2nd Viscount Townshend of Raynham, 1675-04-18 - 1738-06-21
+  gen:father <https://www.wikidata.org/wiki/Q5902810> ;
+  gen:mother <#Mary_Ashe> .
+  # oo Hon. Elizabeth Pelham, 1681 - 1711-05-11
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q336529> , <pelham.ttl#Elizabeth_Pelham_(died_1711)> ;
+	gen:startDate "1698-07-03" .
+  # oo Dorothy Walpole, 1686-09-18 – 1726-03-29
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q336529> , <https://www.wikidata.org/wiki/Q16859606> ;
+	gen:startDate "1713-07-25b" .
+<https://www.wikidata.org/wiki/Q22336914>
+  # Hon. Horatio Townshend, 1683 - 1751-10-24
+  gen:father <https://www.wikidata.org/wiki/Q5902810> ;
+  gen:mother <#Mary_Ashe> .
+  # oo Alice Starkey, d. 1747-11-22
+
+<#Elizabeth_Townshend>
+  # Hon. Elizabeth Townshend, d. 1785-12-01
+  gen:father <https://www.wikidata.org/wiki/Q336529> ;
+  gen:mother <pelham.ttl#Elizabeth_Pelham_(died_1711)> .
+  # oo 1722-11-28 Charles Cornwallis, 1st Earl Cornwallis, 1700-03-29 - 1762-06-23, 5th Baronet Cornwallis, 5th Baron Cornwallis of Eye, Suffolk 1722-01-20, 1st Viscount Brome, of co. Suffolk, 1st Earl of Cornwallis 1753-06-30, https://www.wikidata.org/wiki/Q5076478, son of Charles Cornwallis, 4th Baron Cornwallis (1675 – 1722-01-20, https://www.wikidata.org/wiki/Q5076482, son of https://www.wikidata.org/wiki/Q5076481 and Elizabeth Fox) and oo 1699-06-06 Lady Charlotte Butler (1679 – 1725-08-08, daughter of https://www.wikidata.org/wiki/Q7324496)
+<https://www.wikidata.org/wiki/Q5083011>
+  # Charles Townshend, 3rd Viscount Townshend, 1700-07-11 – 1764-03-12
+  gen:father <https://www.wikidata.org/wiki/Q336529> ;
+  gen:mother <pelham.ttl#Elizabeth_Pelham_(died_1711)> .
+  # oo Audrey Ethelreda Harrison, d. 1788-03-09, daughter of https://www.wikidata.org/wiki/Q5343337 and Frances Bray
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5083011> , <https://www.wikidata.org/wiki/Q18730269> ;
+	gen:startDate "1723-05-29" ;
+	gen:divorceDate "1740~" .
+<https://www.wikidata.org/wiki/Q7794524>
+  # Hon. Thomas Townshend, 1701-06-02 – 1780-05-21
+  gen:father <https://www.wikidata.org/wiki/Q336529> ;
+  gen:mother <pelham.ttl#Elizabeth_Pelham_(died_1711)> .
+  # oo Albinia Selwyn, 1705 - 1739-09-07, daughter of John Selwyn
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7794524> , <#Albinia_Selwyn> ;
+	gen:startDate "1730-05-02" .
+<https://www.wikidata.org/wiki/Q8019485>
+  # Hon. William Townshend, 1702-06-09 - 1738-01-29
+  gen:father <https://www.wikidata.org/wiki/Q336529> ;
+  gen:mother <pelham.ttl#Elizabeth_Pelham_(died_1711)> .
+  # oo Henrietta Powlett, 1705 - 1755
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8019485> , <paulet.ttl#Henrietta_Powlett> ;
+	gen:startDate "1725-05-29" .
+<https://www.wikidata.org/wiki/Q7359025>
+  # Hon. Roger Townshend, 1708-06-05 – 1760-08-07
+  gen:father <https://www.wikidata.org/wiki/Q336529> ;
+  gen:mother <pelham.ttl#Elizabeth_Pelham_(died_1711)> .
+<https://www.wikidata.org/wiki/Q5545292>
+  # Hon. George Townshend, 1716-10-29 – 1769-08-19
+  gen:father <https://www.wikidata.org/wiki/Q336529> ;
+  gen:mother <https://www.wikidata.org/wiki/Q16859606> .
+<https://www.wikidata.org/wiki/Q46996277>
+  # Very Rev. Hon. Edward Townshend, 1719-10-25 - 1765-01-27
+  # Dean of Norwich 1761
+  gen:father <https://www.wikidata.org/wiki/Q336529> ;
+  gen:mother <https://www.wikidata.org/wiki/Q16859606> .
+  # oo Mary Price, d. 1816-02-21, daughter of General unknown Price
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q46996277> , <#Mary_Price> ;
+	gen:startDate "1747-05-11" .
+<#Mary_Townshend_(died_1776)>
+  # Hon. Mary Townshend, d. 1776-12-29
+  gen:father <https://www.wikidata.org/wiki/Q336529> ;
+  gen:mother <https://www.wikidata.org/wiki/Q16859606> .
+  # oo 1763 Hon. Edward Cornwallis, 1713-02-22 - 1776-01-14, https://www.wikidata.org/wiki/Q3048487, son of Charles Cornwallis, 4th Baron Cornwallis (1675 – 1722-01-20, https://www.wikidata.org/wiki/Q5076482, son of https://www.wikidata.org/wiki/Q5076481 and Elizabeth Fox) and oo 1699-06-06 Lady Charlotte Butler (1679 – 1725-08-08, daughter of https://www.wikidata.org/wiki/Q7324496)
+<#Letitia_Townshend>
+  # Letitia Townshend, d. 1756-04-17
+  gen:father <https://www.wikidata.org/wiki/Q22336914> .
+  # and Alice Starkey
+  # oo 1749-07-24 Brownlow Cecil, 9th Earl of Exeter, 1725-09-21 - 1793-12-26, https://www.wikidata.org/wiki/Q4976605
+
+<https://www.wikidata.org/wiki/Q3101971>
+  # George Townshend, 1st Marquess Townshend of Raynham, 1724-02-28 – 1807-09-14
+  # 4th Baron Townshend of Lynn Regis, co. Norfolk, 6th Baronet Townshend, of Rainham, co. Norfolk, 4th Viscount Townshend of Raynham, co. Norfolk 1764-03-12
+  # 1st Marquess Townshend of Raynham, co. Norfolk 1787-10-31
+  gen:father <https://www.wikidata.org/wiki/Q5083011> ;
+  gen:mother <https://www.wikidata.org/wiki/Q18730269> .
+  # oo Charlotte Compton, 15th Baroness Ferrers of Chartley, d. 1770-09-03
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3101971> , <https://www.wikidata.org/wiki/Q5086169> ;
+	gen:startDate "1751-12-19" .
+  # oo Anne Montgomery, 1752~ - 1819-03-29
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3101971> , <https://www.wikidata.org/wiki/Q46152036> ;
+	gen:startDate "1773-05-19" .
+<https://www.wikidata.org/wiki/Q2600750>
+  # Rt. Hon. Charles Townshend, 1725-08-29 - 1767-09-04
+  gen:father <https://www.wikidata.org/wiki/Q5083011> ;
+  gen:mother <https://www.wikidata.org/wiki/Q18730269> .
+  # oo Lady Caroline Campbell, 1717-11-17 - 1794-01-11
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2600750> , <https://www.wikidata.org/wiki/Q5045242> ;
+	gen:startDate "1755-09-18" .
+<#Audrey_Townshend>
+  # Hon. Audrey Townshend, d. 1781-02
+  gen:father <https://www.wikidata.org/wiki/Q5083011> ;
+  gen:mother <https://www.wikidata.org/wiki/Q18730269> .
+  # oo 1766-10 Robert Orme, 1725~ – 1781/1790, https://www.wikidata.org/wiki/Q24340576
+<https://www.wikidata.org/wiki/Q332533> # -> Viscount Sydney
+  # Thomas Townshend, 1st Viscount Sydney, 1733-02-24 – 1800-06-30
+  gen:father <https://www.wikidata.org/wiki/Q7794524> ;
+  gen:mother <#Albinia_Selwyn> .
+<#Albinia_Townshend>
+  # Albinia Townshend, d. 1808-09-18
+  gen:father <https://www.wikidata.org/wiki/Q7794524> ;
+  gen:mother <#Albinia_Selwyn> .
+  # oo 1752-05-01 George Brodrick, 3rd Viscount Midleton of Midleton, 1730-10-03 - 1765-08-22, https://www.wikidata.org/wiki/Q5537274
+<https://www.wikidata.org/wiki/Q5083009>
+  # Charles Townshend, 1st Baron Bayning of Foxley, 1728-08-27 - 1810-05-19
+  # 1st Baron Bayning of Foxley, Berkshire 1797-10-20
+  gen:father <https://www.wikidata.org/wiki/Q8019485> ;
+  gen:mother <paulet.ttl#Henrietta_Powlett> .
+  # oo Annabella Powlett Smyth, 1754 - 1825-01-03
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5083009> , <paulet.ttl#Annabella_Powlett_Smyth> ;
+	gen:startDate "1777-08-21" .
+
+<https://www.wikidata.org/wiki/Q2754772>
+  # George Townshend, 2nd Marquess Townshend of Raynham, 1753-04-18 - 1811-07-27
+  # 8th Lord Compton, 16th Lord Ferrers, of Chartley 1770-09-03
+  # 1st Earl of Leicester 1784-05-08
+  # 5th Viscount Townshend of Raynham, co. Norfolk, 2nd Marquess of Townshend of Raynham, co. Norfolk, 5th Baron Townshend of Lynn Regis, co. Norfolk, 7th Baronet Townshend, of Rainham, co. Norfolk 1807-09-14
+  gen:father <https://www.wikidata.org/wiki/Q3101971> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5086169> .
+  # oo Charlotte Ellerker, 1755 - 1802-02-02, daughter of Eaton Mainwaring-Ellerker and Barbara Dixon
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2754772> , <#Charlotte_Ellerker> ;
+	gen:startDate "1777-12-24" .
+<https://www.wikidata.org/wiki/Q6679459>
+  # Rt. Hon. Lord John Townshend, 1757-01-19 – 1833-02-23
+  gen:father <https://www.wikidata.org/wiki/Q3101971> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5086169> .
+  # oo Georgina Ann Poyntz, 1763-04-21 - 1851-05-04
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6679459> , <seymour.ttl#Georgina_Ann_Poyntz> ;
+	gen:startDate "1787-04-10" .
+<#Lady_Elizabeth_Townshend>
+  # Lady Elizabeth Townshend, 1766-08 - 1811-03-21
+  gen:father <https://www.wikidata.org/wiki/Q3101971> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5086169> .
+  # oo 1790-05-07 William Loftus, of Stiffkey, 1752 – 1831-06-15, https://www.wikidata.org/wiki/Q16230400
+<https://www.wikidata.org/wiki/Q6679066>
+  # Lord Charles Townshend, 1768-01-06 – 1796-05-27
+  gen:father <https://www.wikidata.org/wiki/Q3101971> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5086169> .
+<https://www.wikidata.org/wiki/Q6679423>
+  # Lord James Nugent Boyle Bernardo Townshend, 1785-09-11 – 1842-06-28
+  gen:father <https://www.wikidata.org/wiki/Q3101971> ;
+  gen:mother <https://www.wikidata.org/wiki/Q46152036> .
+  # oo Elizabeth Wallis, d. 1873-07-15, daughter of P. Wallis
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6679423> , <#Elizabeth_Wallis> ;
+	gen:startDate "1813-05-08" .
+<https://www.wikidata.org/wiki/Q46114700>
+  gen:name "Lady Charlotte Townshend"@en ;
+  gen:birthDate "1776-03-16" ;
+  gen:deathDate "1856-07-30" ;
+  gen:father <https://www.wikidata.org/wiki/Q3101971> ;
+  gen:mother <https://www.wikidata.org/wiki/Q46152036> .
+  # oo 1797-08-17 George William Frederick Osborne, 6th Duke of Leeds, 1775-07-21 - 1838-07-10, https://www.wikidata.org/wiki/Q71795
+<#Lady_Henrietta_Townshend>
+  # Lady Henrietta Townshend, 1782-04-20 - 1848-11-09
+  gen:father <https://www.wikidata.org/wiki/Q3101971> ;
+  gen:mother <https://www.wikidata.org/wiki/Q46152036> .
+  # oo 1811-09-14 (div 1814-06) William de Blaquiere, 3rd Baron de Blaquiere of Ardkill, 1778-01-27 - 1851-11-12, son of John Blaquiere, 1st Baron de Blaquiere of Ardkill (15 May 1732, d. 27 August 1812,  1st Baronet Blaquiere [Ireland] on 16 July 1784,  1st Baron de Blaquiere of Ardkill, co. Londonderry [Ireland] on 30 July 1800, https://www.wikidata.org/wiki/Q6222195, son of Jean de Blaquiere and Marie Elizabeth de Varennes) and oo 1775-11-30 Eleanor Dobson (irca 1756, d. 20 December 1833, daughter of Robert Dobson and Maria Tomkins)
+
+<https://www.wikidata.org/wiki/Q5545294>
+  # George Ferrars Townshend, 3rd Marquess Townshend, 1778-12-13 – 1855-12-31
+  gen:father <https://www.wikidata.org/wiki/Q2754772> ;
+  gen:mother <#Charlotte_Ellerker> .
+  # oo Sarah Dunn-Gardner, d. 1858-09-11, daughter of William Dunn-Gardner
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5545294> , <#Sarah_Dunn-Gardner> ;
+	gen:startDate "1807-05-12" ;
+	gen:divorceDate "1808-05-08" .
+<#Lady_Charlotte_Barbara_Townshend>
+  # Lady Charlotte Barbara Townshend, 1781-06-26 - 1807-10-03
+  gen:father <https://www.wikidata.org/wiki/Q2754772> ;
+  gen:mother <#Charlotte_Ellerker> .
+  # oo 1805-04-06 Cecil Bisshopp, 1783-06-25 - 1813-07-11, https://www.wikidata.org/wiki/Q5055959, son of Cecil Bisshopp, 12th Lord Zouche (of Hayngworth) (1753-12-29 - 1828-11-11, https://www.wikidata.org/wiki/Q16203246) and oo 1782-06-27 Harriet Anne Southwell (1760~ - 1839-12-10, daughter of William Southwell and Arabella Pye)
+<https://www.wikidata.org/wiki/Q6679068>
+  # Lord Charles Vere Ferrers Townshend, 1785-09-16 – 1853-11-05
+  gen:father <https://www.wikidata.org/wiki/Q2754772> ;
+  gen:mother <#Charlotte_Ellerker> .
+  # oo Charlotte Loftus, d. 1866-03-21, daughter of https://www.wikidata.org/wiki/Q16230400 and #Lady_Elizabeth_Townshend
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6679068> , <#Charlotte_Loftus> ;
+	gen:startDate "1812-03-24" .
+<#Lady_Elizabeth_Frances_Townshend>
+  # Lady Elizabeth Frances Townshend, 1789-08-02 - 1862-04-10
+  gen:father <https://www.wikidata.org/wiki/Q6679459> ;
+  gen:mother <seymour.ttl#Georgina_Ann_Poyntz> .
+  # oo 1813-10-20 Sir Augustus William James Clifford, 1st Baronet, 1788-05-26 - 1877-02-08, https://www.wikidata.org/wiki/Q4821399 (cavendish.ttl)
+<https://www.wikidata.org/wiki/Q5077763>
+  # Charles Fox Townshend, 1795-06-28 – 1817-04-02
+  gen:father <https://www.wikidata.org/wiki/Q6679459> ;
+  gen:mother <seymour.ttl#Georgina_Ann_Poyntz> .
+<https://www.wikidata.org/wiki/Q15725713>
+  # John Townshend, 4th Marquess Townshend, 1798-03-28 – 1863-09-10
+  gen:father <https://www.wikidata.org/wiki/Q6679459> ;
+  gen:mother <seymour.ttl#Georgina_Ann_Poyntz> .
+  # oo Elizabeth Jane Crichton-Stuart, 1803-07-18 - 1877-01-27, daughter of Lord George Stuart (1780-03-01 – 1841-02-19, son of https://www.wikidata.org/wiki/Q275336)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q15725713> , <stuart.ttl#Elizabeth_Jane_Crichton-Stuart> ;
+	gen:startDate "1825-08-18" .
+
+<https://www.wikidata.org/wiki/Q6261098>
+  # John Villiers Stuart Townshend, 5th Marquess Townshend of Raynham, 1831-04-10 - 1899-10-26
+  gen:father <https://www.wikidata.org/wiki/Q15725713> ;
+  gen:mother <stuart.ttl#Elizabeth_Jane_Crichton-Stuart> .
+  # oo Lady Anne Elizabeth Clementina Duff, 1847-08-16 - 1925-12-31
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6261098> , <https://www.wikidata.org/wiki/Q64339284> ;
+	gen:startDate "1865-10-17" .
+# ponsonby.ttl
+<#Lady_Elizabeth_Clementina_Townshend>
+  # Lady Elizabeth Clementina Townshend, 1834-08-23 - 1910-11-18
+  gen:father <https://www.wikidata.org/wiki/Q15725713> ;
+  gen:mother <stuart.ttl#Elizabeth_Jane_Crichton-Stuart> .
+  # oo 1856 John St Aubyn, 1st Baron St Levan, 1829-10-23 - 1908-05-14, https://www.wikidata.org/wiki/Q13581086
+# howard.ttl
+<#Lady_Audrey_Jane_Charlotte_Townshend>
+  # Lady Audrey Jane Charlotte Townshend, 1844-11-10 - 1926-02-20
+  gen:father <https://www.wikidata.org/wiki/Q15725713> ;
+  gen:mother <stuart.ttl#Elizabeth_Jane_Crichton-Stuart> .
+  # oo 1873-09-18 Hon. Greville Theophilus Howard, 1836-12-22 - 1880-07-28, howard.ttl#Greville_Theophilus_Howard
+  # oo 1882-08-10 Rt. Hon. Sir Redvers Henry Buller, 1839-12-07 – 1908-06-02, https://www.wikidata.org/wiki/Q726293, son of https://www.wikidata.org/wiki/Q6145332 (howard.ttl) and howard.ttl#Charlotte_Juliana_Jane_Howard
+
+<https://www.wikidata.org/wiki/Q6261100>
+  # John James Dudley Stuart Townshend, 6th Marquess Townshend, 1866-10-17 – 1921-11-17
+  gen:father <https://www.wikidata.org/wiki/Q6261098> ;
+  gen:mother <https://www.wikidata.org/wiki/Q64339284> .
+  # oo Gwladys Ethel Gwendolen Eugénie Sutherst, 1884 – 1959-10-10, daughter of Thomas Sutherst
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6261100> , <https://www.wikidata.org/wiki/Q47092257> ;
+	gen:startDate "1905-08-09" .
+
+<https://www.wikidata.org/wiki/Q336147>
+  # George John Patrick Dominic Townshend, 7th Marquess Townshend, 1916-05-13 – 2010-04-23
+  gen:father <https://www.wikidata.org/wiki/Q6261100> ;
+  gen:mother <https://www.wikidata.org/wiki/Q47092257> .
+  # oo Elizabeth Pamela Audrey Luby, d. 1989, daughter of Thomas Luby
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q336147> , <#Elizabeth_Pamela_Audrey_Luby> ;
+	gen:startDate "1939-09-02" ;
+	gen:divorceDate "1960" .
+  # oo Ann Frances Darlow, d. 1988, daughter of Arthur Pellew Darlow
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q336147> , <#Ann_Frances_Darlow> ;
+	gen:startDate "1960-12-22" .
+  # oo Philippa Sophia Montgomerie of Southannan, b. 1935-04-28, daughter of George Jardine Kidston-Montgomerie of Southannan and Lydia Cecilia Mason
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q336147> , <#Philippa_Sophia_Montgomerie_of_Southannan> ;
+	gen:startDate "2004" .
+<#Lady_Elizabeth_Mary_Gladys_Townshend>
+  # Lady Elizabeth Mary Gladys Townshend, 1917-10-16 - 1950-12-31
+  gen:father <https://www.wikidata.org/wiki/Q6261100> ;
+  gen:mother <https://www.wikidata.org/wiki/Q47092257> .
+  # oo 1939-10-29 (div 1947) Sir Eric Richard Meadows White, 2nd Baronet, 1910-06-29 - 1972-04-26, son of Robert Eaton White, 1st Baronet (1864-11-06 - 1940-08-05, 1st Baronet White, of Boulge Hall 1937-06-14) and oo 1903-06-06 Rose Dorothy Pearce-Serocold (d. 1967-05-15, daughter of Charles Pearce-Serocold)
+  # oo 1949-03-15 John Clifford Roberts, son of John Joseph Roberts
+
+<https://www.wikidata.org/wiki/Q5083012>
+  # Charles George Townshend, 8th Marquess Townshend, b. 1945-09-26
+  gen:father <https://www.wikidata.org/wiki/Q336147> ;
+  gen:mother <#Elizabeth_Pamela_Audrey_Luby> .
+  # oo Hermione Ponsonby, 1945-01-23 - 1985
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5083012> , <ponsonby.ttl#Hermione_Ponsonby> ;
+	gen:startDate "1975-10-09" .
+  # oo Alison Combs, daughter of Sir Willis Ide Combs
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5083012> , <#Alison_Combs> ;
+	gen:startDate "1990-12-06" .
+
+<#Thomas_Charles_Townshend,_Viscount_Raynham>
+  # Thomas Charles Townshend, Viscount Raynham, b. 1977-11-02
+  gen:father <https://www.wikidata.org/wiki/Q5083012> ;
+  gen:mother <ponsonby.ttl#Hermione_Ponsonby> .
+  # oo Octavia Christina Legge, b. 1980, daughter of Christopher David Legge and Sarah Gilmour Marshall
+  []
+    gen:spouse <#Thomas_Charles_Townshend,_Viscount_Raynham> , <#Octavia_Christina_Legge> ;
+	gen:startDate "2011" .
+<#Lady_Louise_Elizabeth_Townshend>
+  # Lady Louise Elizabeth Townshend, b. 1979-07-23
+  gen:father <https://www.wikidata.org/wiki/Q5083012> ;
+  gen:mother <ponsonby.ttl#Hermione_Ponsonby> .
+
+
+
+# Viscount Sydney
+<https://www.wikidata.org/wiki/Q332533>
+  # Thomas Townshend, 1st Viscount Sydney of St. Leonards, 1733-02-24 – 1800-06-30
+  # 1st Baron Sydney, of Chiselhurst, co. Kent 1783-03-06
+  # 1st Viscount Sydney of St. Leonards, co. Gloucester 1789-06-11
+  gen:father <https://www.wikidata.org/wiki/Q7794524> ;
+  gen:mother <#Albinia_Selwyn> .
+  # oo Elizabeth Powys, 1736-04-07 – 1826-05-01, daughter of Richard Powys (1710~ - 1743, https://www.wikidata.org/wiki/Q30322613, son of Richard Powys and Anne Singleton) and oo 1735-05-30oo Lady Mary Brudenell (d. 1813-02-21, daughter of https://www.wikidata.org/wiki/Q5537353 and https://www.wikidata.org/wiki/Q48786421)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q332533> , <https://www.wikidata.org/wiki/Q47516837> ;
+	gen:startDate "1760-05-19" .
+
+<#Mary_Elizabeth_Townshend>
+  # Hon. Mary Elizabeth Townshend, 1762-09-02 - 1821-05-21
+  gen:father <https://www.wikidata.org/wiki/Q332533> ;
+  gen:mother <https://www.wikidata.org/wiki/Q47516837> .
+  # oo 1783-07-10 John Pitt, 2nd Earl of Chatham, 1756-10-09 – 1835-09-24, https://www.wikidata.org/wiki/Q335642, son of William Pitt, 1st Earl of Chatham (1708-11-15 – 1778-05-11, 1st Earl of Chatham, co. Kent, 1st Viscount Pitt of Burton Pynsent, co. Somerset 1766-08-04, https://www.wikidata.org/wiki/Q208663, innes.ttl) and https://www.wikidata.org/wiki/Q5746314
+<https://www.wikidata.org/wiki/Q6261096>
+  # John Thomas Townshend, 2nd Viscount Sydney of St. Leonards, 1764-02-21 - 1831-01-20
+  gen:father <https://www.wikidata.org/wiki/Q332533> ;
+  gen:mother <https://www.wikidata.org/wiki/Q47516837> .
+  # oo Hon. Sophia Southwell, 1771-06-10 - 1795-11-09, daughter of https://www.wikidata.org/wiki/Q5345376 (russell.ttl) and Sophia Campbell
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6261096> , <russell.ttl#Sophia_Southwell> ;
+	gen:startDate "1790-04-13" .
+  # oo Lady Caroline Elizabeth Letitia Clements, d. 1805-08-09
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6261096> , <#Lady_Caroline_Elizabeth_Letitia_Clements> ;
+	gen:startDate "1802-05-27" .
+<#Frances_Townshend>
+  # Hon. Frances Townshend, 1772-02-20 - 1854-08-13
+  gen:father <https://www.wikidata.org/wiki/Q332533> ;
+  gen:mother <https://www.wikidata.org/wiki/Q47516837> .
+  # oo 1794-10-20 George Rice, 3rd Baron Dynevor, 1765-10-08 - 1852-04-09, https://www.wikidata.org/wiki/Q5543832
+<#Harriet_Katherine_Townshend>
+  gen:name "Hon. Harriet Katherine Townshend"@en ;
+  gen:birthDate "1773-11-29" ;
+  gen:deathDate "1814-08-24" ;
+  gen:father <https://www.wikidata.org/wiki/Q332533> ;
+  gen:mother <https://www.wikidata.org/wiki/Q47516837> .
+  # oo 1795-03-24 Charles William Henry Montagu Scott, 4th Duke of Buccleuch, 1772-05-24 - 1819-04-20, https://www.wikidata.org/wiki/Q337447
+
+<#Sophia_Mary_Townshend>
+  # Hon. Sophia Mary Townshend, 1792-02-16 - 1852-12-06
+  gen:father <https://www.wikidata.org/wiki/Q6261096> ;
+  gen:mother <russell.ttl#Sophia_Southwell> .
+  # oo 1833-01-15 Hon. Peregrine Francis Cust, 1791-08-13 - 1873-09-15, https://www.wikidata.org/wiki/Q7167793, son of Brownlow Cust, 1st Baron Brownlow of Belton (1744-12-03 – 1807-12-25, 1st Baron Brownlow of Belton, co. Lincoln 1776-05-20, https://www.wikidata.org/wiki/Q4976607, son of https://www.wikidata.org/wiki/Q7527700 and Etheldred Payne) and oo 1775-08-31 Frances Bankes (1756-08-06 - 1847-04-13, daughter of Sir Henry Bankes and Frances Pembrooke)
+<https://www.wikidata.org/wiki/Q47522686>
+  # Hon. Mary Elizabeth Townshend, 1794-03-06 – 1847-12-25
+  gen:father <https://www.wikidata.org/wiki/Q6261096> ;
+  gen:mother <#Lady_Caroline_Elizabeth_Letitia_Clements> .
+  # oo 1825-10-04 George James Cholmondeley, 1752-02-22 - 1830-11-05, son of Rev. Hon. Robert Cholmondeley (1727-11-01 - 1804-06-05, son of George Cholmondeley, 3rd Earl of Cholmondeley (1703-01-02 – 1770-06-10, https://www.wikidata.org/wiki/Q5537888) and oo 1723-09-14 Lady Mary Walpole (1705~ - 1732-01-02, daughter of https://www.wikidata.org/wiki/Q104190 and Catherine Shorter)) and oo 1746-11-30 Mary Woffington (d- 1811-04-04, daughter of John Woffington)
+  # oo 1832-02-08 Charles Marsham, 2nd Earl of Romney, 1777-11-22 – 1845-03-29, https://www.wikidata.org/wiki/Q5080685, son of Charles Marsham, 1st Earl of Romney (1744-09-28 – 1811-03-01, 3rd Baron of Romney, co. Kent [G.B., 1716] on 16 November 1793.1 He succeeded as the 5th Baronet Marsham, of Whorn's Place, Cuxton, Kent [E., 1663] on 16 November 1793.1 He held the office of Lord-Lieutenant of Kent between 1797 and 1808.1 He was created 1st Viscount Marsham [U.K.] on 22 June 1801.1 He was created 1st Earl of Romney, of the Mote [U.K.] on 22 June 1801, https://www.wikidata.org/wiki/Q5080683) and oo 1776-08-30 Lady Frances Wyndham (9 July 1755 – 15 January 1795, https://www.wikidata.org/wiki/Q47542129, daughter of https://www.wikidata.org/wiki/Q337680 and https://www.wikidata.org/wiki/Q47462120)
+<https://www.wikidata.org/wiki/Q15990309>
+  # John Robert Townshend, 1st Earl Sydney, 1805-08-09 – 1890-02-14
+  # 3rd Baron Sydney, of Chiselhurst, co. Kent, 3rd Viscount Sydney of St. Leonards, co. Gloucester 1831-01-20
+  # 1st Earl Sydney of Scadbury, co. Kent 1874-02-27
+  gen:father <https://www.wikidata.org/wiki/Q6261096> ;
+  gen:mother <#Lady_Caroline_Elizabeth_Letitia_Clements> .
+  # oo Lady Emily Caroline Paget, 1810-03-04 - 1893-03-06
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q15990309> , <paget.ttl#Lady_Emily_Caroline_Paget> ;
+	gen:startDate "1832-08-04" .
+
+
+# ----
+#<https://www.wikidata.org/wiki/Q5538076>
+  # George Compton, 4th Earl of Northampton, 1664-10-18 - 1727-04-15
+  # oo Jane Fox, d. 1721-07-11
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5538076> , <scott.ttl#Jane_Fox> ;
+	gen:startDate "1686-05-09" .
+
+<https://www.wikidata.org/wiki/Q6131611>
+  # James Compton, 5th Earl of Northampton, 1687-05-02 - 1754-10-03
+  gen:father <https://www.wikidata.org/wiki/Q5538076> ;
+  gen:mother <scott.ttl#Jane_Fox> .
+  # oo Elizabeth Shirley, 14th Baroness Ferrers (of Chartley), 1694-08-19 - 1741-03-13
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6131611> , <https://www.wikidata.org/wiki/Q5362616> ;
+	gen:startDate "1716-03-07" .
+<compton.ttl#Lady_Anne_Compton_(died_1766)>
+  # Lady Anne Compton, 1695 - 1766-12-20
+  gen:father <https://www.wikidata.org/wiki/Q5538076> ;
+  gen:mother <scott.ttl#Jane_Fox> .
+  # oo 1729-10-16 Rt. Hon. Sir John Rushout, 4th Baronet, 1685 - 1775-02-02, https://www.wikidata.org/wiki/Q16859523 (west.ttl)
+<https://www.wikidata.org/wiki/Q26788598>
+  # Hon. Charles Compton, 1698-01-30 - 1755-11-20
+  gen:father <https://www.wikidata.org/wiki/Q5538076> ;
+  gen:mother <scott.ttl#Jane_Fox> .
+  # oo Mary Lucy, b. 1709-11-09
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q26788598>, <#Mary_Lucy> ;
+	gen:startDate "1727-08-14" .
+
+<#James_Compton,_Lord_Compton>
+  # James Compton, Lord Compton, 1723-07-06 - 1739-11-28
+  gen:father <https://www.wikidata.org/wiki/Q6131611> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5362616> .
+<#Lady_Jane_Compton>
+  # Lady Jane Compton, d. 1749-05-08
+  gen:father <https://www.wikidata.org/wiki/Q6131611> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5362616> .
+<#Lady_Anne_Compton>
+  # Lady Anne Compton, d. 1746
+  gen:father <https://www.wikidata.org/wiki/Q6131611> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5362616> .
+<https://www.wikidata.org/wiki/Q5086169>
+  # Charlotte Compton, 15th Baroness Ferrers of Chartley, d. 1770-09-03
+  # 15th Baroness Ferrers of Chartley 1741-03-13
+  # 7th Baroness Compton 1754-10-03
+  gen:father <https://www.wikidata.org/wiki/Q6131611> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5362616> .
+  # oo 1751-12-19 George Townshend, 1st Marquess Townshend of Raynham, 1724-02-28 – 1807-09-14, https://www.wikidata.org/wiki/Q3101971
+<compton.ttl#Jane_Compton>
+  # Jane Compton, 1730-01-11 - 1757-01
+  gen:father <https://www.wikidata.org/wiki/Q26788598> ;
+  gen:mother <#Mary_Lucy> .
+  # oo 1753-01-31 George Brydges Rodney, 1st Baron Rodney of Rodney Stoke, 1718-02-13b – 1792-05-24, https://www.wikidata.org/wiki/Q332426
+<compton.ttl#Catherine_Compton,_1st_Baroness_Arden>
+  gen:name "Catherine Compton, 1st Baroness Arden"@en ;
+  gen:birthDate "1731-06-04" ;
+  gen:deathDate "1784-06-11" ;
+  gen:father <https://www.wikidata.org/wiki/Q26788598> ;
+  gen:mother <#Mary_Lucy> .
+  # oo 1756-01-26 John Perceval, 2nd Earl of Egmont, 1711-02-25 - 1770-12-04, https://www.wikidata.org/wiki/Q1748680 (cecil.ttl)
+<https://www.wikidata.org/wiki/Q5076407>
+  # Charles Compton, 7th Earl of Northampton, 1737-07-22 - 1763-10-18
+  gen:father <https://www.wikidata.org/wiki/Q26788598> ;
+  gen:mother <#Mary_Lucy> .
+  # oo Lady Anne Somerset, 1741-03-11 – 1763-05-18
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5076407> , <beaufort.ttl#Lady_Anne_Somerset_(died_1763)> ;
+	gen:startDate "1759-09-13" .
+<compton.ttl#Elizabeth_Compton>
+  # Elizabeth Compton, d. 1819-03-25
+  gen:father <https://www.wikidata.org/wiki/Q26788598> ;
+  gen:mother <#Mary_Lucy> .
+  # oo 1761-03-21 Hon. Henry Drummond, 1730-02-07 - 1795, drummond.ttl#Henry_Drummond_(died_1795)
+
+<compton#Lady_Elizabeth_Compton>
+  # Lady Elizabeth Compton, 1760-06-25 - 1835-04-07
+  gen:father <https://www.wikidata.org/wiki/Q5076407> ;
+  gen:mother <beaufort.ttl#Lady_Anne_Somerset_(died_1763)> .
+  # oo 1782-02-27 George Cavendish, 1st Earl of Burlington, 1754-03-31 - 1834-05-09, https://www.wikidata.org/wiki/Q337887
+# ----
+#<https://www.wikidata.org/wiki/Q21165398>
+  # Sir Berkeley Lucy, 3rd Baronet, 1672~ - 1759-11-19
+  # oo Catharine Cotton, d. 1740-06~, daughter of Charles Cotton and Isabella Hutchinson
+
+<#Mary_Lucy>
+  # Mary Lucy, b. 1709-11-09
+  gen:father <https://www.wikidata.org/wiki/Q21165398> .
+  # and Catharine Cotton
+  # oo 1727-08-17 Hon. Charles Compton, 1698-01-30 - 1755-11-20, https://www.wikidata.org/wiki/Q26788598
+
+# ----
+#<https://www.wikidata.org/wiki/Q7528180>
+  # Sir Joseph Ashe, 1st Baronet, 1618 - 1686-04-15
+  # 1st Baronet Ashe, of Tittenham, co. Middlesex 1660-09-19
+  # oo Mary Wilson, 1632 - 1705-11-27, daughter of Robert Wilson and Katharine Rudd
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7528180> , <#Mary_Wilson> ;
+	gen:startDate "1658b" .
+
+<#Mary_Ashe>
+  # Mary Ashe, d. 1685-12-17
+  gen:father <https://www.wikidata.org/wiki/Q7528180> ;
+  gen:mother <#Mary_Wilson> .
+  # oo 1673-11-27 Sir Horatio Townshend, 1st Viscount Townshend of Raynham, 1630-12-16 - 1687, https://www.wikidata.org/wiki/Q5902810
+
+
+# ----
+#<https://www.wikidata.org/wiki/Q7342970>
+  # Robert Clements, 1st Earl of Leitrim, 1732-11-25 - 1804-07-27
+  # 1st Baron Leitrim, of Manor Hamilton, co. Leitrim 1783-10-11
+  # 1st Viscount Leitrim 1793-12-03
+  # 1st Earl of Leitrim 1795-09-30
+  # oo Lady Elizabeth Skeffington, d. 1817-05-29
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7342970> , <#Lady_Elizabeth_Skeffington> ;
+	gen:startDate "1765-05-31" .
+
+<#Lady_Caroline_Elizabeth_Letitia_Clements>
+  # Lady Caroline Elizabeth Letitia Clements, d. 1805-08-09
+  gen:father <https://www.wikidata.org/wiki/Q7342970> ;
+  gen:mother <#Lady_Elizabeth_Skeffington> .
+  # oo 1802-05-27 John Thomas Townshend, 2nd Viscount Sydney of St. Leonards, 1764-02-21 - 1831-01-20, https://www.wikidata.org/wiki/Q6261096
+# ----
+#<https://www.wikidata.org/wiki/Q24288363>
+  # Clotworthy Skeffington, 1st Earl of Massereene, 1715 - 1757-09-17
+  # 7th Baronet Skeffington, of Fisherwicke, co. Staffs, 5th Viscount Massereene, co. Antrim, 5th Baron of Loughneagh, co. Antrim 1738-02-11
+  # 1st Earl of Massereene 1756-07-28
+  # oo Anne Eyre, d. 1805-05-20, daughter of Henry Eyre
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q24288363> , <#Anne_Eyre> ;
+	gen:startDate "1741-11-25" .
+
+<#Lady_Elizabeth_Skeffington>
+  # Lady Elizabeth Skeffington, d. 1817-05-29
+  gen:father <https://www.wikidata.org/wiki/Q24288363> ;
+  gen:mother <#Anne_Eyre> .
+  # oo 1765-05-31 Robert Clements, 1st Earl of Leitrim, 1732-11-25 - 1804-07-27, https://www.wikidata.org/wiki/Q7342970
+
+
+# ponsonby.ttl
+# ----
+#<https://www.wikidata.org/wiki/Q13581086>
+  # John St Aubyn, 1st Baron St Levan, 1829-10-23 - 1908-05-14
+  # son of Sir Edward St Aubyn, 1st Baronet, of St Michael's Mount, Cornwall, 6 November 1799, d. 30 November 1872, 1st Baronet St. Aubyn, of St. Michaels Mount, Cornwall [U.K.] on 31 July 1866
+  # and oo 1828-01-26Emma Knollys, daughter of General William Knollys, 1806~ - 1887-03-03, daughter of General William Knollys and Charlotte Martha Blackwell
+  # oo Lady Elizabeth Clementina Townshend, d. 1910
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q13581086> , <#Lady_Elizabeth_Clementina_Townshend> ;
+	gen:startDate "1856" .
