@@ -2250,21 +2250,48 @@
   gen:mother <fitzroy.ttl#Selina_Rice-Trevor> .
   # oo 1904-01-27 Hon. William Lyonel Vane, 1859-08-30 - 1920-01-23, fane.ttl#William_Lyonel_Vane
 # ----
+#<#Reginald_Pyndar>
+  # Reginald Pyndar, 1687~ - 1721
+  # oo Margaret Lygon, 1690~ - 1734
+  []
+    gen:spouse <#Reginald_Pyndar> , <#Margaret_Lygon> .
+
+<#Reginald_Lygon>
+  # Reginald Lygon, 1712 - 1788-12-25
+  gen:father <#Reginald_Pyndar> ;
+  gen:mother <#Margaret_Lygon> .
+  # oo Susanna Hanmer, 1711-12-04~ - 1784, daughter of William Hanmer and Esther Jennens
+
 <https://www.wikidata.org/wiki/Q8014807>
   gen:name "William Lygon, 1st Earl Beauchamp"@en ;
+  # 1st Baron Beauchamp of Powyk, co. Gloucestershire 1806-02-26
+  # 1st Earl Beauchamp, 1st Viscount Elmley 1815-12-01
   gen:birthDate "1747-07-25" ;
-  gen:deathDate "1816-10-21" .
-  # oo Catherine Denn
+  gen:deathDate "1816-10-21" ;
+  gen:father <#Reginald_Lygon> .
+  # and Susanna Hanmer
+  # oo Catharine Denn, 1760 - 1844-03-02, daughter of James Denn and Margaret Brice
   []
     gen:spouse <https://www.wikidata.org/wiki/Q8014807> , <#Catherine_Denn> ;
-	gen:startDate "1780" .
+	gen:startDate "1780-11-01" .
 
+<#Emma_Susanna_Lygon>
+  # Hon. Emma Susanna Lygon, d. 1810-08-08
+  gen:father <https://www.wikidata.org/wiki/Q8014807> ;
+  gen:mother <#Catharine_Denn> .
+  # oo 1808-01-16 George Coventry, 8th Earl of Coventry, 1784-10-16 – 1843-05-15, https://www.wikidata.org/wiki/Q5538165
 <#Lady_Georgiana_Emma_Charlotte_Lygon>
   gen:name "Lady Georgiana Emma Charlotte Lygon"@en ;
   gen:deathDate "1880-02-12" ;
   gen:father <https://www.wikidata.org/wiki/Q8014807> ;
   gen:mother <#Catherine_Denn> .
   # oo 1817-01-23 Thomas Pakenham, 2nd Earl of Longford, 1774-05-14 - 1835-05-28, https://www.wikidata.org/wiki/Q7792977
+# ----
+#<#Margaret_Lygon>
+  # Margaret Lygon, 1690~ - 1734
+  # daughter of William Lygon, of Madresfield Court, 1642 - 1721
+  # and oo Margaret Corbyn, d. 1699
+  # oo Reginald Pyndar, 1687~ - 1721, #Reginald_Pyndar
 
 # ----
 #<https://www.wikidata.org/wiki/Q5311965>
@@ -2282,6 +2309,32 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5311966> , <#Lady_Mary_Frances_Cecil> ;
 	gen:startDate "1861-10-03" .
+<https://www.wikidata.org/wiki/Q5727842>
+  # Henry Dudley Ryder, 4th Earl of Harrowby, 1836-05-03 – 1900-12-11
+  gen:father <https://www.wikidata.org/wiki/Q5311965> ;
+  gen:mother <stuart.ttl#Lady_Frances_Stuart> .
+  # oo Susan Juliana Maria Hamilton Dent, d. 1913-03-18, daughter of John Villiers Dent and Susan Orde
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5727842> , <#Susan_Juliana_Maria_Hamilton_Dent> ;
+	gen:startDate "1859-05-17" .
+
+<https://www.wikidata.org/wiki/Q6256112>
+  # John Herbert Dudley Ryder, 5th Earl of Harrowby, 1864-08-22 – 1956-03-30
+  gen:father <https://www.wikidata.org/wiki/Q5727842> ;
+  gen:mother <#Susan_Juliana_Maria_Hamilton_Dent> .
+  # oo 1887-11-16 Hon. Mabel Danvers Smith, d. 1956-03-27
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6256112> , <seymour.ttl#Mabel_Danvers_Smith> ;
+	gen:startDate "1887-11-16" .
+
+<https://www.wikidata.org/wiki/Q5311969>
+  # Dudley Ryder, 6th Earl of Harrowby, 1892-10-11 – 1987-05-07
+  gen:father <https://www.wikidata.org/wiki/Q6256112> ;
+  gen:mother <seymour.ttl#Mabel_Danvers_Smith> .
+  # oo Lady Helena Blanche Coventry, 1895-01-19 - 1974
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5311969> , <coventry.ttl#Lady_Helena_Blanche_Coventry> ;
+	gen:startDate "1922-01-31" .
 
 # ----
 <#John_Evans>
@@ -3339,6 +3392,15 @@
   gen:father <#William_Horsley-Beresford,_3rd_Baron_Decies> ;
   gen:mother <#Catherine_Anne_Dent> .
   # oo 1892-10-08 Cameron Barclay, 1866 - 1954-08-03
+<#William_Arthur_de_la_Poer_Horsley-Beresford>
+  # Hon. William Arthur de la Poer Horsley-Beresford, 1878-08-09 - 1949-07-11
+  gen:father <#William_Horsley-Beresford,_3rd_Baron_Decies> ;
+  gen:mother <#Catherine_Anne_Dent> .
+  # oo Laura Coventry, 1899-08-31 - 1958
+  []
+    gen:spouse <#William_Arthur_de_la_Poer_Horsley-Beresford> , <coventry.ttl#Laura_Coventry> ;
+	gen:startDate "1919-07-22" ;
+	gen:divorceDate "1928" .
 # ----
 <#James_Power,_3rd_Earl_of_Tyrone>
   gen:name "James Power, 3rd Earl of Tyrone"@en ;
