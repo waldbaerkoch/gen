@@ -893,7 +893,7 @@
   gen:deathDate "1829-10-09" ;
   gen:father <https://www.wikidata.org/wiki/Q337447> ;
   gen:mother <townshend.ttl#Harriet_Katherine_Townshend> .
-  # oo 1823-10-09 Hon. Peregrine Francis Cust, 1791-08-13 - 1873-09-15, egerton.ttl#Peregrine_Francis_Cust
+  # oo 1823-10-09 Hon. Peregrine Francis Cust, 1791-08-13 - 1873-09-15, https://www.wikidata.org/wiki/Q7167793
 <https://www.wikidata.org/wiki/Q2702418>
   gen:name "Walter Francis Montagu Douglas Scott, 5th Duke of Buccleuch"@en ;
   gen:birthDate "1806-11-25" ;
@@ -1744,10 +1744,59 @@
 # --------
 #<https://www.wikidata.org/wiki/Q5076481>
   # Charles Cornwallis, 3rd Baron Cornwallis of Eye, 1655-12-28 – 1698-04-29
+  # oo 1673-12-27 Elizabeth Fox, 1655~ - 1681-02-28
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5076481> , <#Elizabeth_Fox> ;
+	gen:startDate "1673-12-27" .
   # oo Anne Scott, 4th Countess of Buccleuch, 1651-02-11 - 1732-02-06
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5076481> , <https://www.wikidata.org/wiki/Q2080470> ;
 	gen:startDate "1688-05-06" .
+
+<https://www.wikidata.org/wiki/Q5076482>
+  # Charles Cornwallis, 4th Baron Cornwallis, 1675 – 1722-01-20
+  gen:father <https://www.wikidata.org/wiki/Q5076481> ;
+  gen:mother <#Elizabeth_Fox> .
+  # oo Lady Charlotte Butler, 1679 – 1725-08-08
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5076482> , <butler.ttl#Lady_Charlotte_Butler> ;
+	gen:startDate "1699-06-06" .
+
+<https://www.wikidata.org/wiki/Q5076478>
+  # Charles Cornwallis, 1st Earl Cornwallis, 1700-03-29 - 1762-06-23
+  # 5th Baronet Cornwallis, 5th Baron Cornwallis of Eye, Suffolk 1722-01-20
+  # 1st Viscount Brome, of co. Suffolk, 1st Earl of Cornwallis 1753-06-30
+  gen:father <https://www.wikidata.org/wiki/Q5076482> ;
+  gen:mother <butler.ttl#Lady_Charlotte_Butler> .
+  # oo Hon. Elizabeth Townshend, d. 1785-12-01
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5076478> , <townshend.ttl#Elizabeth_Townshend> ;
+	gen:startDate "1722-11-28" .
+<https://www.wikidata.org/wiki/Q3048487>
+  # Hon. Edward Cornwallis, 1713-02-22 - 1776-01-14
+  gen:father <https://www.wikidata.org/wiki/Q5076482> ;
+  gen:mother <butler.ttl#Lady_Charlotte_Butler> .
+  # oo Hon. Mary Townshend, d. 1776-12-29
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3048487> , <townshend.ttlMary_Townshend_(died_1776)> ;
+	gen:startDate "1763" .
+
+<#Lady_Mary_Cornwall>
+  # Lady Mary Cornwall, 1736-06-06 - 1770-12-27
+  gen:father <https://www.wikidata.org/wiki/Q5076478> ;
+  gen:mother <townshend.ttl#Elizabeth_Townshend> .
+  # oo 1769-08-13 Samuel Whitbread, 1720-08-30 - 1796-06-11, https://www.wikidata.org/wiki/Q3471265
+# ----
+<#Elizabeth_Fox>
+  # Elizabeth Fox, 1655~ - 1681-02-28
+  gen:father <https://www.wikidata.org/wiki/Q3498549> .
+  # and Elizabeth Whittle
+  # oo 1673-12-27 Charles Cornwallis, 3rd Baron Cornwallis of Eye, 1655-12-28 – 1698-04-29, https://www.wikidata.org/wiki/Q5076481
+# ----
+<butler.ttl#Lady_Charlotte_Butler>
+  # Lady Charlotte Butler, 1679 – 1725-08-08
+  gen:father <https://www.wikidata.org/wiki/Q7324496> .
+  # oo 1699-06-06 Charles Cornwallis, 4th Baron Cornwallis, 1675 – 1722-01-20, https://www.wikidata.org/wiki/Q5076482
 
 # ----
 <https://www.wikidata.org/wiki/Q272539>
