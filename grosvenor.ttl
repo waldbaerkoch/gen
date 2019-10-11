@@ -559,7 +559,7 @@
   gen:mother <stanley.ttl#Lady_Mary_Margaret_Stanley> .
   # oo Lady Elizabeth Charlotte Louisa Craven, 1836-06-13 - 1919-03-08
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q4798586> , <#Lady_Elizabeth_Charlotte_Louisa_Craven> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q4798586> , <brudenell.ttl#Lady_Elizabeth_Charlotte_Louisa_Craven> ;
 	gen:startDate "1858-08-11" .
 <#Lady_Katherine_Grey_Egerton>
   # Lady Katherine Grey Egerton, 1835-03-17 - 1920-01-28
@@ -580,7 +580,7 @@
   # Lady Alice Magdalene Grey Egerton, 1842-09-13 - 1925-12-21
   gen:father <https://www.wikidata.org/wiki/Q2423647> ;
   gen:mother <stanley.ttl#Lady_Mary_Margaret_Stanley> .
-  # oo 1863-08-13 Sir Henry Dalrymple Des Voeux, 5th Baronet, 1822-09-07 - 1894-01-20, https://www.wikidata.org/wiki
+  # oo 1863-08-13 Sir Henry Dalrymple Des Vœux, 5th Baronet, 1822-09-07 - 1894-01-20, https://www.wikidata.org/wiki
 
 <#Arthur_George_Egerton,_5th_Earl_of_Wilton>
   gen:name "Arthur George Egerton, 5th Earl of Wilton"@en ;
@@ -1459,40 +1459,45 @@
 	gen:startDate "2010-11-27" .
 
 # ----
-<#Lady_Elizabeth_Charlotte_Louisa_Craven>
-  # Lady Elizabeth Charlotte Louisa Craven, 1836-06-13 - 1919-03-08
-  gen:father <https://www.wikidata.org/wiki/Q8007257> .
-  # and Lady Emily Mary Grimston
-  # oo 1858-08-11 Arthur Edward Holland Grey Egerton, 3rd Earl of Wilton of Wilton Castle, 1833-11-25 - 1885-01-18, https://www.wikidata.org/wiki/Q4798586
-
-# ----
-#<#Sir_Charles_Philip_Vinchon_Des_Voeux,_1st_Baronet>
-  # Sir Charles Philip Vinchon Des Voeux, 1st Baronet, 1746~ – 1814
+#<#Sir_Charles_Philip_Vinchon_Des_Vœux,_1st_Baronet>
+  # Sir Charles Philip Vinchon Des Vœux, 1st Baronet, 1746~ – 1814
   # oo Mary Anne Champagné
   []
-    gen:spouse <#Sir_Charles_Philip_Vinchon_Des_Voeux,_1st_Baronet> , <#Mary_Anne_Champagné> ;
+    gen:spouse <#Sir_Charles_Philip_Vinchon_Des_Vœux,_1st_Baronet> , <#Mary_Anne_Champagné> ;
 	gen:startDate "1778-11-13" .
 
-<#Sir_Charles_des_Voeux,_2nd_Baronet>
-  # Sir Charles des Voeux, 2nd Baronet, 1779-09-05 - 1858-09-28
-  gen:father <#Sir_Charles_Philip_Vinchon_Des_Voeux,_1st_Baronet> ;
+<#Sir_Charles_Des_Vœux,_2nd_Baronet>
+  # Sir Charles des Vœux, 2nd Baronet, 1779-09-05 - 1858-09-28
+  gen:father <#Sir_Charles_Philip_Vinchon_Des_Vœux,_1st_Baronet> ;
   gen:mother <#Mary_Anne_Champagné> .
+  # oo Christina Hird, d. 1841-07, daughter of Richard Hird
+  []
+    gen:spouse <#Sir_Charles_Des_Vœux,_2nd_Baronet> , <#Christina_Hird> ;
+	gen:startDate "1801-06-01" .
   # oo Cecilia Paulet, 1806-11-21 - 1890-08-23
   []
-    gen:spouse <#Sir_Charles_des_Voeux,_2nd_Baronet> , <paulet.ttl#Cecilia_Paulet> ;
+    gen:spouse <#Sir_Charles_Des_Vœux,_2nd_Baronet> , <paulet.ttl#Cecilia_Paulet> ;
 	gen:startDate "1842-12" .
-<#Henry_Des_Voeux>
-  # Rev. Henry Des Voeux, 1786 - 1857-09-30
-  gen:father <#Sir_Charles_Philip_Vinchon_Des_Voeux,_1st_Baronet> ;
+<#Henry_Des_Vœux>
+  # Rev. Henry Des Vœux, 1786 - 1857-09-30
+  gen:father <#Sir_Charles_Philip_Vinchon_Des_Vœux,_1st_Baronet> ;
   gen:mother <#Mary_Anne_Champagné> .
   # oo Frances Dalrymple, 1796-07-08 - 1827-01-13
   []
-    gen:spouse <#Henry_Des_Voeux> , <dalrymple.ttl#Frances_Dalrymple> ;
+    gen:spouse <#Henry_Des_Vœux> , <dalrymple.ttl#Frances_Dalrymple> ;
 	gen:startDate "1812-12-01" .
 
+<#Sir_Henry_Des_Vœux,_3rd_Baronet>
+  # Sir Henry William Des Vœux, 3rd Baronet, 1806-12-16 - 1868-01-04
+  gen:father <#Sir_Charles_Des_Vœux,_2nd_Baronet> ;
+  gen:mother <#Christina_Hird> .
+  # oo Lady Sophia Catherine Coventry, d. 1875-03-29
+  []
+    gen:spouse <#Sir_Henry_Des_Vœux,_3rd_Baronet> , <coventry.ttl#Lady_Sophia_Catherine_Coventry> ;
+	gen:startDate "1839-07-16" .
 <https://www.wikidata.org/wiki/Q16060031>
-  # Sir Henry Dalrymple Des Voeux, 5th Baronet, 1822-09-07 - 1894-01-20
-  gen:father <#Henry_Des_Voeux> , <dalrymple.ttl#Frances_Dalrymple> .
+  # Sir Henry Dalrymple Des Vœux, 5th Baronet, 1822-09-07 - 1894-01-20
+  gen:father <#Henry_Des_Vœux> , <dalrymple.ttl#Frances_Dalrymple> .
   # oo Lady Alice Magdalene Grey Egerton, 1842-09-13 - 1925-12-21
   []
     gen:spouse <https://www.wikidata.org/wiki/Q16060031> , <#Lady_Alice_Magdalene_Grey_Egerton> ;
@@ -1501,7 +1506,7 @@
 <#Mary_Anne_Champagné>
   # Mary Anne Champagné
   gen:father <https://www.wikidata.org/wiki/Q63086626> .
-  # oo 1778-11-13 Sir Charles Philip Vinchon Des Voeux, 1st Baronet, 1746~ – 1814, #Sir_Charles_Philip_Vinchon_Des_Voeux,_1st_Baronet
+  # oo 1778-11-13 Sir Charles Philip Vinchon Des Vœux, 1st Baronet, 1746~ – 1814, #Sir_Charles_Philip_Vinchon_Des_Vœux,_1st_Baronet
 
 # ----
 <#Emilie_Beaujolais_White>

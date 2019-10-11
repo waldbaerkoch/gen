@@ -2657,17 +2657,19 @@
   # and Mary Alston
   # oo 1670-07-07 Henry Booth, 1st Earl of Warrington, 1652-01-13 - 1694-01-02, https://www.wikidata.org/wiki/Q5718391
 
-# ----
+# ====
 #<https://www.wikidata.org/wiki/Q5940213>
   # Humble Ward, 1st Baron Ward of Birmingham, 1614~ - 1670-10-14
   # 1st Baron Ward of Birmingham 1644-03-23
-  # oo Frances Dudley, 6th Baroness Dudley, 1611-07-23 - 1697
+  # oo Frances Dudley, 6th Baroness Dudley, 1611-07-23 - 1697-07-11
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5940213> , <https://www.wikidata.org/wiki/Q58806800> ;
 	gen:startDate "1628-02-17" .
 
 <https://www.wikidata.org/wiki/Q58894427>
   # Edward Ward, 7th Lord Dudley, 1631~ - 1701-08-03
+  # 2nd Baron Ward of Birmingham, co. Warwick 1670-10-14
+  # 7th Lord Dudley 1697-07-11
   gen:father <https://www.wikidata.org/wiki/Q5940213> ;
   gen:mother <https://www.wikidata.org/wiki/Q58806800> .
   # oo Frances Brereton, d. 1676-11~
@@ -2681,7 +2683,19 @@
   []
     gen:spouse <#William_Ward_(died_1713)> , <#Anna_Parkes> ;
 	gen:startDate "1672-12-30" .
+<#Honor_Ward>
+  # Honor Ward, b. 1636~
+  gen:father <https://www.wikidata.org/wiki/Q5940213> ;
+  gen:mother <https://www.wikidata.org/wiki/Q58806800> .
+  # oo William Dilke, d. 1669-08-31, #William_Dilke
 
+<#William_Ward_(died_1692)>
+  # Hon. William Ward, 1660-01-05 - 1692-05~
+  gen:father <https://www.wikidata.org/wiki/Q58894427> ;
+  gen:mother <#Frances_Brereton> .
+  # oo Frances Dilke, b. 1664~
+  []
+    gen:spouse <#William_Ward_(died_1692)> , <#Frances_Dilke> .
 <#Catherine_Ward>
   # Hon. Catherine Ward, b. 1663~
   gen:father <https://www.wikidata.org/wiki/Q58894427> ;
@@ -2696,17 +2710,23 @@
     gen:spouse <https://www.wikidata.org/wiki/Q8019999> , <#Mary_Grey_(born_1685a)> ;
 	gen:startDate "1700-05-25" .
 
+<#Frances_Ward_(died_1737)>
+  # Frances Ward, 1687-12-05 - 1737-01-24
+  gen:father <#William_Ward_(died_1692)> ;
+  gen:mother <#Frances_Dilke> .
+  # oo 1709-11-09 William Lea, 1677~ - 1741-01-21, #William_Lea
 <#William_Ward>
   # Rev. William Ward, d. 1758-07-21
   gen:father <https://www.wikidata.org/wiki/Q8019999> ;
   gen:mother <#Mary_Grey_(born_1685a)> .
   # oo Elizabeth Hawkes, daughter of John Hawkes
 
-<#Frances_Ward>
+<#Frances_Ward_(died_1812)>
   # Frances Ward, d. 1812-03-04
   gen:father <#William_Ward> .
   # and Elizabeth Hawkes
   # oo 1781-07-24 Washington Shirley, 8th Earl Ferrers, 1760-11-13 – 1842-10-02, https://www.wikidata.org/wiki/Q16836628
+
 # ----
 #<https://www.wikidata.org/wiki/Q1955282>
   # Sir William Brereton, 1st Baronet, 1604-09-13 - 1661-04-07
@@ -2721,6 +2741,85 @@
   gen:father <https://www.wikidata.org/wiki/Q1955282> ;
   gen:mother <#Susan_Booth> .
   # oo Edward Ward, 7th Lord Dudley, 1631~ - 1701-08-03, https://www.wikidata.org/wiki/Q58894427
+
+# ----
+#<#William_Dilke>
+  # William Dilke, d. 1669-08-31
+  # oo Honor Ward, b. 1636~
+  []
+    gen:spouse <#William_Dilke> , <#Honor_Ward> .
+
+<#Frances_Dilke>
+  # Frances Dilke, b. 1664~
+  gen:father <#William_Dilke> ;
+  gen:mother <#Honor_Ward> .
+  # oo Hon. William Ward, 1660-01-05 - 1692-05~, #William_Ward_(died_1692)
+
+# ----
+#<#William_Lea>
+  # William Lea, 1677~ - 1741-01-21
+  # oo Frances Ward, 1687-12-05 - 1737-01-24
+  []
+    gen:spouse <#William_Lea> , <#Frances_Ward_(died_1737)> ;
+	gen:startDate "1709-11-09" .
+
+<https://www.wikidata.org/wiki/Q60793150>
+  # Ferdinando Dudley Lea, 11th Baron Dudley, 1710-09-14 - 1757-10-21
+  # 11th Lord Dudley 1740-05-21
+  gen:father <#William_Lea> ;
+  gen:mother <#Frances_Ward_(died_1737)> .
+<#Anne_Lea>
+  # Anne Lea, 1714-03-24 - 1762-04-29
+  gen:father <#William_Lea> ;
+  gen:mother <#Frances_Ward_(died_1737)> .
+  # oo 1737-05-18 William Smith, d. 1784-05-19, #William_Smith
+
+# ----
+#<#William_Smith>
+  # William Smith, d. 1784-05-19
+  # oo Anne Lea, 1714-03-24 - 1762-04-29
+  []
+    gen:spouse <#William_Smith> , <#Anne_Lea> ;
+	gen:startDate "1737-05-18" .
+
+<#Ferdinando_Smith_(died_1794)>
+  # Ferdinando Smith, 1747-01-23 - 1794-01~
+  gen:father <#William_Smith> ;
+  gen:mother <#Anne_Lea> .
+  # oo Elizabeth Lyttelton, d. 1805-09~, daughter of Humphrey Lyttelton
+  []
+    gen:spouse <#Ferdinando_Smith_(died_1794)> , <#Elizabeth_Lyttelton> ;
+	gen:startDate "1774-12-27" .
+
+<#Ferdinano_Smith_(died_1841)>
+  # Ferdinano Smith, 1779-03-26 - 1841-07-20
+  gen:father <#Ferdinando_Smith_(died_1794)> ;
+  gen:mother <#Elizabeth_Lyttelton> .
+  # oo Elizabeth Grazebrook, d. 1875-01-23, daughter of Michael Grazebrook
+  []
+    gen:spouse <#Ferdinano_Smith_(died_1841)> , <#Elizabeth_Grazebrook> ;
+	gen:startDate "1830-10-05" .
+
+<#Ferdinando_Dudley_Lea_Smith>
+  # Ferdinando Dudley Lea Smith, 1834-06-15 - 1905-02-08
+  gen:father <#Ferdinano_Smith_(died_1841)> ;
+  gen:mother <#Elizabeth_Grazebrook> .
+  # oo Amy Sophia Leigh, daughter of James Heath Leigh and Frances Mosley
+  []
+    gen:spouse <#Ferdinando_Dudley_Lea_Smith> , <#Amy_Sophia_Leigh> ;
+	gen:startDate "1865-02-23" .
+
+<#Ferdinando_Smith,_12th_Lord_Dudley>
+  # Ferdinando Dudley William Lea Smith, 12th Lord Dudley, 1872-04-04 - 1936-12-05
+  # 12th Lord Dudley 1916-05-09
+  gen:father <#Ferdinando_Dudley_Lea_Smith> ;
+  gen:mother <#Amy_Sophia_Leigh> .
+  # oo Sybil Augusta Coventry, d. 1958-11-05
+  []
+    gen:spouse <#Ferdinando_Smith,_12th_Lord_Dudley> , <coventry.ttl#Sybil_Augusta_Coventry> ;
+	gen:startDate "1904-02-03" .
+
+# ====
 
 # ----
 <https://www.wikidata.org/wiki/Q24196082>
