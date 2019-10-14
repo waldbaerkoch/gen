@@ -1,0 +1,171 @@
+@base <cooper.ttl> .
+@prefix gen: <http://jjkoch.de/gen#> .
+@prefix wdata: <https://www.wikidata.org/wiki/> .
+@prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+
+
+
+# cecil.ttl
+#<https://www.wikidata.org/wiki/Q16205465>
+  # Sir John Cooper, 1st Baronet, d. 1630-03-23
+  # 1st Baronet Cooper, of Rockbourne, Hampshire 1622-07-04
+  # son of Sir John Cooper, 1552 – 1610
+  # and Martha Skutt
+  # oo Anne Ashley, d. 1628-07-20
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16205465> , <#Anne_Ashley> .
+
+# cecil.ttl
+<https://www.wikidata.org/wiki/Q336002>
+  # Anthony Ashley Cooper, 1st Earl of Shaftesbury, 1621-07-22 – 1683-01-21
+  # 2nd Baronet Cooper, of Rockbourne, Hampshire 1630-03-23
+  # 1st Baron Cooper of Pawlett, co. Somerset, 1st Baron Ashley of Wimborne St. Giles, co. Dorset 1661-04-20
+  # 1st Earl of Shaftesbury 1672-04-23
+  gen:father <https://www.wikidata.org/wiki/Q16205465> ;
+  gen:mother <#Anne_Ashley> .
+  # oo Hon. Margaret Coventry, d. 1649-07-11
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q336002> , <coventry.ttl#Margaret_Coventry_(died_1649)> ;
+	gen:startDate "1639-02-25" .
+  # oo Lady Frances Cecil, 1633 - 1652-12-31
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q336002> , <cecil.ttl#Lady_Frances_Cecil_(died_1652)> ;
+	gen:startDate "1650-04-15" .
+  # oo Hon. Margaret Spencer, 1627 - 1693
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q336002> , <spencer.ttl#Margaret_Spencer_(died_1693)> ;
+	gen:startDate "1655-08-30" .
+
+# cecil.ttl
+<https://www.wikidata.org/wiki/Q4772027>
+  # Anthony Ashley-Cooper, 2nd Earl of Shaftesbury, 1652-01-16 - 1699-11-10
+  gen:father <https://www.wikidata.org/wiki/Q336002> ;
+  gen:mother <#Lady_Frances_Cecil_(died_1652)> .
+  # oo Lady Dorothy Manners, 1656~ - 1698-06
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4772027> , <https://www.wikidata.org/wiki/Q56715609> ;
+	gen:startDate "1669-09-22" .
+
+
+
+# spencer.ttl
+<https://www.wikidata.org/wiki/Q5187969>
+  # Cropley Ashley-Cooper, 6th Earl of Shaftesbury, 1768-12-21 – 1851-06-02
+  gen:father <https://www.wikidata.org/wiki/Q4772032> .
+  # and Hon. Mary Bouverie
+  # oo Lady Anne Spencer, 1773-11-05 - 1865-08-07
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5187969> , <spencer.ttl#Lady_Anne_Spencer_(died_1865)> ;
+	gen:startDate "1796-12-10" .
+
+# paget.ttl
+<#Lady_Harriet_Anne_Ashley-Cooper>
+  # Lady Harriet Anne Ashley-Cooper, d. 1868-03-25
+  gen:father <https://www.wikidata.org/wiki/Q5187969> ;
+  gen:mother <spencer.ttl#Lady_Anne_Spencer_(died_1865)> .
+  # oo 1830-03-18 Rt. Hon. Henry Thomas Lowry-Corry, 1803-03-09 - 1873-03-05, https://www.wikidata.org/wiki/Q333378
+
+
+# ponsonby.ttl
+<#Lady_Barbara_Ashley-Cooper>
+  # Lady Barbara Ashley-Cooper, 1788-10-19 - 1844-06-05
+  gen:father <https://www.wikidata.org/wiki/Q4772028> .
+  # and Barbara Webb
+  # oo 1814-08-08 William Francis Spencer Ponsonby, 1st Baron de Mauley of Canford, 1787-07-31 - 1856-05-16, https://www.wikidata.org/wiki/Q8016999
+
+
+
+# erskine.ttl
+<https://www.wikidata.org/wiki/Q4772029>
+  gen:name "Anthony Ashley-Cooper, 8th Earl of Shaftesbury"@en ;
+  gen:birthDate "1831-06-27" ;
+  gen:deathDate "1886-04-13" ;
+  gen:father <https://www.wikidata.org/wiki/Q333294> .
+  # oo Lady Harriet Augusta Anna Seymourina Chichester, d. 1898-04-14
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4772029> , <#Lady_Harriet_Augusta_Anna_Seymourina_Chichester> ;
+	gen:startDate "1857-08-22" .
+
+# baring.ttl
+<#Lady_Evelyn_Harriet_Ashley-Cooper>
+  # Lady Evelyn Harriet Ashley-Cooper, 1865-06-27 - 1931-01-22
+  gen:father <https://www.wikidata.org/wiki/Q4772029> ;
+  gen:mother <#Lady_Harriet_Augusta_Anna_Seymourina_Chichester> .
+  # oo 1905-03-01 Hon. Hugo Baring, 1876-10-06 - 1949-08-20, baring.ttl#Hugo_Baring
+# erskine.ttl
+<#Lady_Violet_Ashley-Cooper>
+  gen:name "Lady Violet Ashley-Cooper"@en ;
+  gen:birthDate "1868-07-18" ;
+  gen:deathDate "1938-12-16" ;
+  gen:father <https://www.wikidata.org/wiki/Q4772029> ;
+  gen:mother <#Lady_Harriet_Augusta_Anna_Seymourina_Chichester> .
+  # oo 1892-07-14 Walter John Francis Erskine, 12th Earl of Mar and 14th Earl of Kellie, 1865-08-29 - 1955-06-03, https://www.wikidata.org/wiki/Q7617303
+# erskine.ttl
+<https://www.wikidata.org/wiki/Q4772030>
+  # Anthony Ashley-Cooper, 9th Earl of Shaftesbury, 1869-08-31 - 1961-03-25
+  gen:father <https://www.wikidata.org/wiki/Q4772029> ;
+  gen:mother <#Lady_Harriet_Augusta_Anna_Seymourina_Chichester> .
+  # oo Lady Constance Sibell Grosvenor, 1875-08-22 - 1957-07-08
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4772030> , <https://www.wikidata.org/wiki/Q3687591> ;
+	gen:startDate "1899-07-15" .
+
+
+
+
+
+
+# cecil.ttl
+# ----
+#<https://www.wikidata.org/wiki/Q7526006>
+  # Sir Anthony Ashley, 1st Baronet, 1551 – 1628-01-13
+  # 1st Baronet Ashley, of St. Giles', Wimborn, co. Dorset 1623-07-03
+  # oo Jane Okeover, daughter of Philip Okeover and Margaret Dethick
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7526006> , <#Jane_Okeover> ;
+	gen:startDate "1587a" .
+
+<#Anne_Ashley>
+  # Anne Ashley, d. 1628-07-20
+  gen:father <https://www.wikidata.org/wiki/Q7526006> ;
+  gen:mother <#Jane_Okeover> .
+  # oo Sir John Cooper, 1st Baronet, d. 1630-03-23, https://www.wikidata.org/wiki/Q16205465
+
+
+# erskine.ttl
+# ----
+<https://www.wikidata.org/wiki/Q5537863>
+  gen:name "George Hamilton Chichester, 3rd Marquess of Donegall"@en ;
+  gen:birthDate "1797-02-10" ;
+  gen:deathDate "1883-10-20" .
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5537863> , <butler.ttl#Lady_Harriet_Anne_Butler> ;
+	gen:startDate "1822-12-08" .
+
+<#Lady_Harriet_Augusta_Anna_Seymourina_Chichester>
+  gen:name "Lady Harriet Augusta Anna Seymourina Chichester"@en ;
+  gen:deathDate "1898-04-14" ;
+  gen:father <https://www.wikidata.org/wiki/Q5537863> ;
+  gen:mother <butler.ttl#Lady_Harriet_Anne_Butler> .
+  # oo 1857-08-22 Anthony Ashley-Cooper, 8th Earl of Shaftesbury, 1831-06-27 - 1886-04-13, https://www.wikidata.org/wiki/Q4772029
+# ----
+<https://www.wikidata.org/wiki/Q24288385>
+  gen:name "Richard Butler, 1st Earl of Glengall"@en ;
+  gen:birthDate "1775-11-13" ;
+  gen:deathDate "1819-01-30" .
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q24288385> , <#Emilia_Jefferyes> ;
+	gen:startDate "1793-08-13" .
+
+<butler.ttl#Lady_Harriet_Anne_Butler>
+  gen:name "Lady Harriet Anne Butler"@en ;
+  gen:deathDate "1860-09-14" ;
+  gen:father <https://www.wikidata.org/wiki/Q24288385> ;
+  gen:mother <Emilia_Jefferyes> .
+  # oo 1822-12-08 George Hamilton Chichester, 3rd Marquess of Donegall, 1797-02-10 - 1883-10-20, https://www.wikidata.org/wiki/Q5537863
+# ----
+<#Emilia_Jefferyes>
+  gen:name "Emilia Jefferyes"@en ;
+  gen:deathDate "1836" .
+  # oo 1793-08-13 Richard Butler, 1st Earl of Glengall, 1775-11-13 - 1819-01-30, https://www.wikidata.org/wiki/Q24288385
+
