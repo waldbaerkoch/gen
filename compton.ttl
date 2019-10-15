@@ -1,0 +1,500 @@
+@base <compton.ttl> .
+@prefix gen: <http://jjkoch.de/gen#> .
+@prefix wdata: <https://www.wikidata.org/wiki/> .
+@prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+
+#<https://www.wikidata.org/wiki/Q1523981>
+  # William Compton, 1482 - 1528-05-31/-06-30
+  # son of Edmund Compton of Compton of Warwickshire
+  # and Joan Aylworth, daughter of Walter Aylworth
+  # oo oo 1512-05 Werburga Brereton, the daughter of Sir John Brereton
+  # oo 1522-05-08a, Elizabeth Stonor, the daughter of https://www.wikidata.org/wiki/Q16205562
+
+<#Peter_Compton>
+  # Peter Compton, 1523 - 1539-01-30
+  gen:father <https://www.wikidata.org/wiki/Q1523981> .
+  # and Werburge Brereton
+  # oo Lady Anne Talbot
+  []
+    gen:spouse <#Peter_Compton> , <talbot.ttl#Lady_Anne_Talbot_(died_1588)> .
+
+<https://www.wikidata.org/wiki/Q5719725>
+  # Sir Henry Compton, 1st Lord Compton, 1538-02-16 - 1589-12-10
+  # 1st Lord Compton 1572-05-08
+  gen:father <#Peter_Compton> ;
+  gen:mother <talbot.ttl#Lady_Anne_Talbot_(died_1588)> .
+  # oo Lady Frances Hastings, 1533 – 1574, daughter of https://www.wikidata.org/wiki/Q3909917 and Catherine Pole
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5719725> , <#Lady_Frances_Hastings> .
+  # oo Anne Spencer, d. 1618-09-22
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5719725> , <https://www.wikidata.org/wiki/Q50568859> ;
+	gen:startDate "1589b" .
+
+<https://www.wikidata.org/wiki/Q2578296>
+  # William Compton, 1st Earl of Northampton, 1568~ - 1630-06-24
+  # 2nd Lord Compton 1589-12-10
+  # 1st Earl of Northampton 1618-08-02
+  gen:father <https://www.wikidata.org/wiki/Q5719725> ;
+  gen:mother <#Lady_Frances_Hastings> .
+  # oo Elizabeth Spencer, daughter of https://www.wikidata.org/wiki/Q16863731 and Alice Bromfield
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2578296> , <#Elizabeth_Spencer> ;
+	gen:startDate "1594" .
+<#Margaret_Compton>
+  # Hon. Margaret Compton
+  gen:father <https://www.wikidata.org/wiki/Q5719725> ;
+  gen:mother <#Lady_Frances_Hastings> .
+  # oo 1593-10-01b Henry Mordaunt, 4th Lord Mordaunt, 1568~ - 1609-02-13, https://www.wikidata.org/wiki/Q52034522, son of https://www.wikidata.org/wiki/Q6536895 and Elizabeth Darcy
+<#Sir_Thomas_Compton>
+  # Hon. Sir Thomas Compton, d. 1626-04
+  gen:father <https://www.wikidata.org/wiki/Q5719725> ;
+  gen:mother <#Lady_Frances_Hastings> .
+  # oo Mary Beaumont, 1st Countess of Buckingham, 1570~ – 1632-04-19, https://www.wikidata.org/wiki/Q6780887 (villiers.ttl)
+<https://www.wikidata.org/wiki/Q5719731>
+  # Hon. Sir Henry Compton, of Brambletye, and later of Minstead, 1583 - 1648
+  gen:father <https://www.wikidata.org/wiki/Q5719725> ;
+  gen:mother <https://www.wikidata.org/wiki/Q50568859> .
+  # oo Lady Cicely Sackville
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5719731> , <sackville.ttl#Lady_Cicely_Sackville> .
+
+<https://www.wikidata.org/wiki/Q337036>
+  # Spencer Compton, 2nd Earl of Northampton, 1601-05 – 1643-03-19
+  gen:father <https://www.wikidata.org/wiki/Q2578296> ;
+  gen:mother <#Elizabeth_Spencer> .
+  # oo Mary Beaumont, d. 1654-03-18, daughter of Sir Francis Beaumont (son of Anthony Beaumont (son of William Beaumont (d. 1529) and oo Mary Basset (d. 1539-07-02, daughter of Sir William Basset)) and oo Anne Armstrong (daughter of Thomas Armstrong))
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q337036> , <#Mary_Beaumont> ;
+	gen:startDate "1621" .
+<#Lady_Anne_Compton_(died_1675)>
+  # Lady Anne Compton, d. 1675-08-17
+  gen:father <https://www.wikidata.org/wiki/Q2578296> ;
+  gen:mother <#Elizabeth_Spencer> .
+  # oo 1622-12 Ulick Burke, 1st Marquess of Clanricarde, 1604-12-08b – 1657-07/1658-04-29,  2nd Viscount Tunbridge, Kent [E., 1624] on 12 November 1635.3 He succeeded as the 5th Baron of Dunkellin [I., 1543] on 12 November 1635.3 He succeeded as the 5th Earl of Clanricarde [I., 1543] on 12 November 1635.3 He succeeded as the 2nd Baron of Somerhill [E., 1624] on 12 November 1635.3 He succeeded as the 2nd Earl of Saint Albans, co. Hertford [E., 1628] on 12 November 1635.3 He succeeded as the 2nd Baron of Imanney, in the Province of Connaught [I., 1628] on 12 November 1635.3 He succeeded as the 2nd Viscount Galway, in the Province of Connaught [I., 1628] on 12 November 1635, 1st Marquess of Clanricarde [Ireland] on 21 February 1645/46.3 He succeeded as the 3rd Viscount Bourke of Clanmories, co. Mayo [I., 1629] circa 1650, https://www.wikidata.org/wiki/Q556274, son of https://www.wikidata.org/wiki/Q7608108 and https://www.wikidata.org/wiki/Q1983356
+<#Cicely_Compton>
+  # Cicely Compton, 1610~ - 1676-03-24
+  gen:father <https://www.wikidata.org/wiki/Q5719731> ;
+  gen:mother <sackville.ttl#Lady_Cicely_Sackville> .
+  # oo Sir John Fermor, of Somerton
+  # oo Henry Arundell, 3rd Baron Arundell of Wardour, 1608-02-23 – 1694-12-28, https://www.wikidata.org/wiki/Q5717443, son of https://www.wikidata.org/wiki/Q7787154 (howard.ttl) and https://www.wikidata.org/wiki/Q3640852
+<#Mary_Compton_(died_1666a)>
+  # Mary Compton, d. 1666-03-26a
+  gen:father <https://www.wikidata.org/wiki/Q5719731> ;
+  gen:mother <sackville.ttl#Lady_Cicely_Sackville> .
+  # oo Hon. John Lumley, d. 1658-10-07~, son of Richard Lumley, 1st Viscount Lumley of Waterford (1589-04-07 - 1663-03-12b, 1st Viscount Lumley of Waterford 1628-07-12, https://www.wikidata.org/wiki/Q18672122) and oo 1630 Frances Shelley (daughter of Henry Shelley and Barbara Cromer)
+  # -> Richard Lumley, 1st Earl of Scarbrough, 1650 – 1721-12-17, 2nd Viscount Lumley of Waterford 1663-03-12, 1st Baron Lumley, of Lumley Castle 1681-05-31, https://www.wikidata.org/wiki/Q3934835 oo Frances Jones, 1665 - 1722, daughter of https://www.wikidata.org/wiki/Q16199488 and Frances ???
+
+<https://www.wikidata.org/wiki/Q6131610>
+  # James Compton, 3rd Earl of Northampton, 1622-08-19 - 1681-12-15
+  gen:father <https://www.wikidata.org/wiki/Q337036> ;
+  gen:mother <#Mary_Beaumont> .
+  # oo Lady Isabella Sackville, 1622-10-06 - 1661-10-14
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6131610> , <sackville.ttl#Lady_Isabella_Sackville> ;
+	gen:startDate "1647-07-05" .
+  # oo Hon. Mary Noel, d. 1719-08-22
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6131610> , <bentinck.ttl#Mary_Noel> ;
+	gen:startDate "1664b" .
+<https://www.wikidata.org/wiki/Q26790658>
+  # Hon. Sir Charles Compton, d. 1661-11
+  gen:father <https://www.wikidata.org/wiki/Q337036> ;
+  gen:mother <#Mary_Beaumont> .
+  # oo Mary Fermor
+<https://www.wikidata.org/wiki/Q4230107>
+  # Hon. Sir William Compton, 1625 – 1663-10-18
+  gen:father <https://www.wikidata.org/wiki/Q337036> ;
+  gen:mother <#Mary_Beaumont> .
+  # oo Elizabeth Tollemache, d. 1671-04~, daughter of Sir Lionel Tollemache, 2nd Baronet (1591-08-01 - 1640-09-06, https://www.wikidata.org/wiki/Q15623775, son of Sir Lionel Tollemache, 1st Baronet (1562-12-14 - 1617a/1621b, 1st Baronet Tokkemache, of Helmingham Hall in the County of Suffolk 1611-05-22, https://www.wikidata.org/wiki/Q16848106) and oo 1581-02-10 Katharine Cromwell (d. 1620-03-24, https://www.wikidata.org/wiki/Q15623776, daughter of https://www.wikidata.org/wiki/Q5719975 and Mary Paulet)) and oo 1612-12-16 Hon. Elizabeth Stanhope (d. 1661~, daughter of John Stanhope, 1st Baron Stanhope of Harrington (1549~ – 1621-03-09, 1st Baron Stanhope of Harrington, co. Northants. 1605-05-02, https://www.wikidata.org/wiki/Q6258824, son of https://www.wikidata.org/wiki/Q7528341 and Ann Rawson) and oo 1589-05-06 Margaret MacWilliams (daughter of Henry MacWilliams))
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4230107> , <russell.ttl#Elizabeth_Tollemache> ;
+	gen:startDate "1651~" .
+<https://www.wikidata.org/wiki/Q2347142>
+  # Rt. Rev. Hon. Henry Compton, 1632 – 1713-07-07
+  # Bishop of Oxford 1674 – 1676
+  # Bishop of London 1675 - 1712
+  gen:father <https://www.wikidata.org/wiki/Q337036> ;
+  gen:mother <#Mary_Beaumont> .
+<#Lady_Anne_Compton_(died_1705)>
+  # Lady Anne Compton, 1637~ - 1705-05-26
+  gen:father <https://www.wikidata.org/wiki/Q337036> ;
+  gen:mother <#Mary_Beaumont> .
+  # oo 1666-02-19 Sir Hugh Cholmley, 4th Baronet, 1632-07-21 - 1689-01-09, son of Sir Hugh Cholmley, 1st Baronet (1600-07-22 - 1657-11-20, 1st Baronet Cholmley, of Whitby, co. York 1641-08-10, https://www.wikidata.org/wiki/Q7527299, son of Sir Richard Cholmley and Susanna Legard) and oo 1622-12-10 Elizabeth Twysden (1600-08-18 - 1655-04-17, daughter of Sir William Twysden, 1st Baronet and Lady Anne Finch)
+
+<#Lady_Alethea_Compton>
+  # Lady Alethea Compton, 1661-03-14 - 1678-10-14
+  gen:father <https://www.wikidata.org/wiki/Q6131610> ;
+  gen:mother <sackville.ttl#Lady_Isabella_Sackville> .
+  # oo 1678b Edward Hungerford, d. 1681-09, son of https://www.wikidata.org/wiki/Q3184114 and Jane Helle
+<https://www.wikidata.org/wiki/Q5538076>
+  # George Compton, 4th Earl of Northampton, 1664-10-18 - 1727-04-15
+  gen:father <https://www.wikidata.org/wiki/Q6131610> ;
+  gen:mother <bentinck.ttl#Mary_Noel> .
+  # oo Jane Fox, d. 1721-07-11
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5538076> , <scott.ttl#Jane_Fox> ;
+	gen:startDate "1686-05-09" .
+  # oo Elizabeth Rushout, 1683-02-20 - 1750-01-15, daughter of Sir James Rushout, 1st Baronet and Alice Pitt (west.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5538076> , <#Elizabeth_Rushout> ;
+	gen:startDate "1726-07-03" .
+<https://www.wikidata.org/wiki/Q6779246>
+  # Lady Mary Compton, 1669 – 1691-08-06
+  gen:father <https://www.wikidata.org/wiki/Q6131610> ;
+  gen:mother <bentinck.ttl#Mary_Noel> .
+  # oo 1685-03-07 Charles Sackville, 6th Earl of Dorset, 1643-01-24 – 1706-01-29, https://www.wikidata.org/wiki/Q337761
+<https://www.wikidata.org/wiki/Q270415>
+  # Spencer Compton, 1st Earl of Wilmington, 1673~ – 1743-07-02
+  # 1st Baron Wilmington, co. Sussex 1728-01-08
+  # 1st Earl of Wilmington, 1st Viscount Pevensey 1730-03-14
+  gen:father <https://www.wikidata.org/wiki/Q6131610> ;
+  gen:mother <bentinck.ttl#Mary_Noel> .
+<#Hatton_Compton>
+  # Hatton Compton, d. 1741-01-22
+  gen:father <https://www.wikidata.org/wiki/Q26790658> .
+  # and Mary Fermor
+  # oo Penelope Nicholas
+<#Mary_Compton_(died_1738)>
+  # Mary Compton, d. 1738-01-08
+  gen:father <https://www.wikidata.org/wiki/Q26790658> .
+  # and Mary Fermor
+  # oo 1676-05-15 James Lane, 2nd Viscount Lanesborough, 1650-01-07 - 1724-08-02, son of George Lane, 1st Viscount Lanesborough (1620~ – 1683-12-11, https://www.wikidata.org/wiki/Q5541523) abd oo 1644-03-21 Dorcas Brabazon (daughter of Sir Anthony Brabazon (d. 1636-07-01, son of Edward Brabazon, 1st Lord Brabazon, Baron of Ardee (1548~ - 1625-08-07, 1st Lord Brabazon, Baron of Ardee, co. Louth 1616-07-19, https://www.wikidata.org/wiki/Q16821743, son of https://www.wikidata.org/wiki/Q16824103 and Elizabeth Clifford) and oo Mary Smythe (d. 1625-08.13, daughter of Edward Smith)) and oo Margaret Hovendon (d. 1636-08, daughter of Christopher Hovendon))
+<#Anne_Compton>
+  # Anne Compton, 1730-01-08b
+  gen:father <https://www.wikidata.org/wiki/Q26790658> .
+  # and Mary Fermor
+  # oo 1686~ Sir Thomas Domvile, 1st Baronet, d. 1721-03-29a/-11-27b, 1st Baronet Domvile, of Templeogue, co. Dublin 1686, son of Rt. Hon. Sir William Domville (1609 - 1689-07, https://www.wikidata.org/wiki/Q8007883) and oo Bridget Lake (daughter of https://www.wikidata.org/wiki/Q7791667 and Mary Ryder)
+
+<https://www.wikidata.org/wiki/Q6131611>
+  # James Compton, 5th Earl of Northampton, 1687-05-02 - 1754-10-03
+  gen:father <https://www.wikidata.org/wiki/Q5538076> ;
+  gen:mother <scott.ttl#Jane_Fox> .
+  # oo Elizabeth Shirley, 14th Baroness Ferrers (of Chartley), 1694-08-19 - 1741-03-13
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6131611> , <https://www.wikidata.org/wiki/Q5362616> ;
+	gen:startDate "1716-03-07" .
+<https://www.wikidata.org/wiki/Q5538077>
+  # George Compton, 6th Earl of Northampton, 1692 – 1758-12-06
+  gen:father <https://www.wikidata.org/wiki/Q5538076> ;
+  gen:mother <scott.ttl#Jane_Fox> .
+  # oo Frances Payne, 1719 - 1800-12-25, daughter of Rev. Thomas Payne and Sarah Andrews
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5538077> , <#Frances_Payne> ;
+	gen:startDate "1748-03-06" .
+<#Lady_Anne_Compton_(died_1766)>
+  # Lady Anne Compton, 1695 - 1766-12-20
+  gen:father <https://www.wikidata.org/wiki/Q5538076> ;
+  gen:mother <scott.ttl#Jane_Fox> .
+  # oo 1729-10-16 Rt. Hon. Sir John Rushout, 4th Baronet, 1685 - 1775-02-02, https://www.wikidata.org/wiki/Q16859523 (west.ttl)
+<https://www.wikidata.org/wiki/Q26788598>
+  # Hon. Charles Compton, 1698-01-30 - 1755-11-20
+  gen:father <https://www.wikidata.org/wiki/Q5538076> ;
+  gen:mother <scott.ttl#Jane_Fox> .
+  # oo Mary Lucy, b. 1709-11-09
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q26788598>, <#Mary_Lucy> ;
+	gen:startDate "1727-08-14" .
+<#Mary_Compton_(died_1780)>
+  # Mary Compton, d. 1780-04-19/-05-14
+  gen:father <#Hatton_Compton> .
+  # and Penelope Nicholas
+  # oo Rt Rev. Sir Thomas Gooch, 2nd Baronet, 1675-01-19 - 1754-02-14, Bishop of Bristol 1737 – 1738, Bishop of Norwich 1738 – 1748, Bishop of Ely 1748, https://www.wikidata.org/wiki/Q7790094, brother of Sir William Gooch, 1st Baronet (1681-10-21 – 1751-12-17, 1st Baronet Gooch, of Benacre Hall, Suffolk 1746-11-04, https://www.wikidata.org/wiki/Q7529611; oo Rebecca Stanton (d. 1775-04, daughter of William Stanton)) and son of Thomas Gooch (d. 1688) and oo Frances Lone (d. 1696-07-25, daughter of Thomas Lone)
+<#Penelope_Compton>
+  # Penelope Compton
+  gen:father <#Hatton_Compton> .
+  # and Penelope Nicholas
+  # oo Matthias Mawson, 1683 - 1770, Bishop of Llandaff 1738 – 1740, Bishop of Chichester 1740 – 1754, Bishop of Ely 1754 – 1771, https://www.wikidata.org/wiki/Q6791577
+
+<https://www.wikidata.org/wiki/Q5086169>
+  # Charlotte Compton, 15th Baroness Ferrers of Chartley, d. 1770-09-03
+  # 15th Baroness Ferrers of Chartley 1741-03-13
+  # 7th Baroness Compton 1754-10-03
+  gen:father <https://www.wikidata.org/wiki/Q6131611> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5362616> .
+  # oo 1751-12-19 George Townshend, 1st Marquess Townshend of Raynham, 1724-02-28 – 1807-09-14, https://www.wikidata.org/wiki/Q3101971
+<#Jane_Compton>
+  # Jane Compton, 1730-01-11 - 1757-01
+  gen:father <https://www.wikidata.org/wiki/Q26788598> ;
+  gen:mother <#Mary_Lucy> .
+  # oo 1753-01-31 George Brydges Rodney, 1st Baron Rodney of Rodney Stoke, 1718-02-13b – 1792-05-24, https://www.wikidata.org/wiki/Q332426
+  # TODO de_vere.ttl / lennox.ttl
+<#Catherine_Compton,_1st_Baroness_Arden>
+  gen:name "Catherine Compton, 1st Baroness Arden"@en ;
+  # 1st Baroness Arden, of Lohort Castle, co. Cork 1770-05-23, suo jure
+  gen:birthDate "1731-06-04" ;
+  gen:deathDate "1784-06-11" ;
+  gen:father <https://www.wikidata.org/wiki/Q26788598> ;
+  gen:mother <#Mary_Lucy> .
+  # oo 1756-01-26 John Perceval, 2nd Earl of Egmont, 1711-02-25 - 1770-12-04, https://www.wikidata.org/wiki/Q1748680 (cecil.ttl)
+<https://www.wikidata.org/wiki/Q5076407>
+  # Charles Compton, 7th Earl of Northampton, 1737-07-22 - 1763-10-18
+  gen:father <https://www.wikidata.org/wiki/Q26788598> ;
+  gen:mother <#Mary_Lucy> .
+  # oo Lady Anne Somerset, 1741-03-11 – 1763-05-18
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5076407> , <beaufort.ttl#Lady_Anne_Somerset_(died_1763)> ;
+	gen:startDate "1759-09-13" .
+<https://www.wikidata.org/wiki/Q7576023>
+  # Spencer Compton, 8th Earl of Northampton, 1738-08-16 – 1796-04-07
+  gen:father <https://www.wikidata.org/wiki/Q26788598> ;
+  gen:mother <#Mary_Lucy> .
+  # oo Jane Lawton, d. 1767-11-26, daughter of Henry Lawton
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7576023> , <#Jane_Lawton> ;
+	gen:startDate "1758" .
+  # oo Anne Hougham, d. 1781-07b, daughter of Culpeper Hougham
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7576023> , <#Anne_Hougham> ;
+	gen:startDate "1769-05-16" .
+<#Elizabeth_Compton>
+  # Elizabeth Compton, d. 1819-03-25
+  gen:father <https://www.wikidata.org/wiki/Q26788598> ;
+  gen:mother <#Mary_Lucy> .
+  # oo 1761-03-21 Hon. Henry Drummond, 1730-02-07 - 1795, drummond.ttl#Henry_Drummond_(died_1795)
+
+<#Lady_Elizabeth_Compton_(died_1835)>
+  # Lady Elizabeth Compton, 1760-06-25 - 1835-04-07
+  gen:father <https://www.wikidata.org/wiki/Q5076407> ;
+  gen:mother <beaufort.ttl#Lady_Anne_Somerset_(died_1763)> .
+  # oo 1782-02-27 George Cavendish, 1st Earl of Burlington, 1754-03-31 - 1834-05-09, https://www.wikidata.org/wiki/Q337887
+<https://www.wikidata.org/wiki/Q5076406>
+  # Charles Compton, 1st Marquess of Northampton, 1760-03-24 – 1828-05-24
+  # 9th Earl of Northampton 1796-04-07
+  # 1st Earl Compton of Compton, co. Warwick, 1st Baron Wilmington, of Wilmington, co. Sussex, 1st Marquess of the county of Northampton 1812-09-07
+  gen:father <https://www.wikidata.org/wiki/Q7576023> ;
+  gen:mother <#Jane_Lawton> .
+  # oo Maria Smith, 1766 - 1843-03-14, daughter of https://www.wikidata.org/wiki/Q6290206 and Sarah Gilbert
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5076406> , <#Maria_Smith> ;
+	gen:startDate "1787-08-18" .
+
+<https://www.wikidata.org/wiki/Q338197>
+  # Spencer Joshua Alwyne Compton, 2nd Marquess of Northampton, 1790-01-02 – 1851-01-17
+  gen:father <https://www.wikidata.org/wiki/Q5076406> ;
+  gen:mother <#Maria_Smith> .
+  # oo Margaret Douglas-Maclean-Clephane, d. 1830-04-02, daughter of https://www.wikidata.org/wiki/Q26450493 and Marianne Maclean
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q338197> , <#Margaret_Douglas-Maclean-Clephane> ;
+	gen:startDate "1815-07-24" .
+
+<https://www.wikidata.org/wiki/Q5076937>
+  # Charles Douglas-Compton, 3rd Marquess of Northampton, 1816-05-26 – 1877-03-03
+  gen:father <https://www.wikidata.org/wiki/Q338197> ;
+  gen:mother <#Margaret_Douglas-Maclean-Clephane> .
+  # oo Theodosia Harriett Elizabeth Vyner, 1834 -. 1864-11-18, daughter of Henry Vyner (1805-08-26 - 1861-01-22, son of Robert Vyner (d. 1810-03-13) and oo 1788-06-04 Lady Theodosia Maria Ashburnham (1765-06-16 - 1822, daughter of https://www.wikidata.org/wiki/Q6219558 (graham.ttl) and Elizabeth Crowley)) and oo 1832-07-05 Lady Mary Gertrude Weddell (1809-02-05 - 1892-07-11, daughter of https://www.wikidata.org/wiki/Q337676 (campbell.ttl) and Lady Henrietta Frances Cole)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5076937> , <#Theodosia_Harriett_Elizabeth_Vyner> ;
+	gen:startDate "1859-07-05" .
+<#Lady_Marianne_Margaret_Compton>
+  # Lady Marianne Margaret Compton, 1817-06-21 - 1888-02-09
+  gen:father <https://www.wikidata.org/wiki/Q338197> ;
+  gen:mother <#Margaret_Douglas-Maclean-Clephane> .
+  # oo 1841-02-10 John Hume Egerton, Viscount Alford, 1812-10-15 – 1851-01-03, https://www.wikidata.org/wiki/Q6231485 (egerton,ttl)
+<https://www.wikidata.org/wiki/Q8007034>
+  # William Compton, 4th Marquess of Northampton, 1818-08-20 – 1897-09-11
+  gen:father <https://www.wikidata.org/wiki/Q338197> ;
+  gen:mother <#Margaret_Douglas-Maclean-Clephane> .
+  # oo Eliza Elliot, 1820~ - 1877-12-04, daughter of Hon. Sir George Elliot (dalrymple.ttl) and Eliza Cecilia Ness
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8007034> , <dalrymple.ttl#Eliza_Elliot> ;
+	gen:startDate "1844-08-21" .
+<#Lady_Margaret_Mary_Frances_Elizabeth_Compton>
+  # Lady Margaret Mary Frances Elizabeth Compton, 1830-03-15 - 1858-05-22
+  gen:father <https://www.wikidata.org/wiki/Q338197> ;
+  gen:mother <#Margaret_Douglas-Maclean-Clephane> .
+  # oo 1851-06-01 Hon. Edward Frederick Leveson-Gower, 1819-05-03 - 1907-05-30, https://www.wikidata.org/wiki/Q5498271
+<https://www.wikidata.org/wiki/Q6678913>
+  # Rt. Rev. Lord Alwyne Compton, 1825-07-18 – 1906-04-04
+  # Dean of Worcester 1879 – 1886
+  # Bishop of Ely between 1886 - 1905
+  gen:father <https://www.wikidata.org/wiki/Q338197> ;
+  gen:mother <#Margaret_Douglas-Maclean-Clephane> .
+  # oo Florence Caroline Anderson, d. 1918-03-24, daughter of Rev. Robert Anderson and oo Hon. Caroline Dorothea Shore (daughter of John Shore, 1st Baron Teignmouth (1751-10-05 – 1834-02-14, 1st 1st Baron Teignmouth, of Teignmouth 1798-03-03, https://www.wikidata.org/wiki/Q1390829) and oo 1786-02-14 Charlotte Cornish (daughter of James Cornish))
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6678913> , <#Florence_Caroline_Anderson> ;
+	gen:startDate "1850-08-28" .
+
+<#Lady_Katrine_Cecilia_Compton>
+  # Lady Katrine Cecilia Compton, 1845-07-26 - 1913-03-23
+  gen:father <https://www.wikidata.org/wiki/Q8007034> ;
+  gen:mother <dalrymple.ttl#Eliza_Elliot> .
+  # oo 1870-10-25 Francis Thomas de Grey Cowper, 7th Earl Cowper, 1834-06-11 – 1905-07-18, https://www.wikidata.org/wiki/Q4247435, son of https://www.wikidata.org/wiki/Q5538175 (campbell.ttl) and Anne Florence Weddell, Baroness Lucas
+<#Lady_Margaret_Georgiana_Compton>
+  # Lady Margaret Georgiana Compton, 1847-07-01 - 1931-11-15
+  gen:father <https://www.wikidata.org/wiki/Q8007034> ;
+  gen:mother <dalrymple.ttl#Eliza_Elliot> .
+  # oo 1884-12-30 Sir Henry John Lowndes Graham, 1842-01-15 –  1930-12-05, https://www.wikidata.org/wiki/Q60792680
+<https://www.wikidata.org/wiki/Q8007035>
+  # William George Spencer Scott Compton, 5th Marquess of Northampton, 1851-04-23 - 1913-06-15
+  gen:father <https://www.wikidata.org/wiki/Q8007034> ;
+  gen:mother <dalrymple.ttl#Eliza_Elliot> .
+  # oo Hon. Mary Florence Baring, 1860-06-26 - 1902-06-01
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8007035> , <baring.ttl#Mary_Florence_Baring> ;
+	gen:startDate "1884-04-30" .
+<#Lord_Alwyne_Frederick_Compton>
+  # Lord Alwyne Frederick Compton, 1855-06-05 - 1911-12-16
+  gen:father <https://www.wikidata.org/wiki/Q8007034> ;
+  gen:mother <dalrymple.ttl#Eliza_Elliot> .
+  # oo Mary Evelyn Violet Vyner, d. 1957-10-22
+  []
+    gen:spouse <#Lord_Alwyne_Frederick_Compton> , <erskine.ttl#Mary_Evelyn_Violet_Vyner> ;
+	gen:startDate "1886-07-31" .
+
+<https://www.wikidata.org/wiki/Q8007036>
+  # William Bingham Compton, 6th Marquess of Northampton, 1885-08-06 – 1978-01-30
+  gen:father <https://www.wikidata.org/wiki/Q8007035> ;
+  gen:mother <baring.ttl#Mary_Florence_Baring> .
+  # oo Lady Emma Margery Thynne, 1893-07-05 - 1980, daughter of https://www.wikidata.org/wiki/Q338382 and Violet Caroline Mordaunt
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8007036> , <#Lady_Emma_Margery_Thynne> ;
+	gen:startDate "1921-10-15 divorced 1942" .
+  # oo Virginia Lucie Heaton, 1919 - 1997, daughter of David Rimington Heaton and Louisa M. Freeman
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8007036> , <#Virginia_Lucie_Heaton> ;
+	gen:startDate "1942-06-18 divorced 1958" .
+  # oo Elspeth Grace Whitaker, d. 1976-05-14, daughter of William Ingham Whitaker (d. 1936-07-10) and oo 1903-09-22 Hon. Hilda Guilhermina Dundas (1877-05-19 - 1971-12-18, daughter of https://www.wikidata.org/wiki/Q64216452 and Grace Selina Marion Scully)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8007036> , <#Elspeth_Grace_Whitaker> ;
+	gen:startDate "1958-12-02" .
+<#Lady_Margaret_Louisa_Lizzie_Compton>
+  # Lady Margaret Louisa Lizzie Compton, 1886-08-09 - 1970-04-09
+  gen:father <https://www.wikidata.org/wiki/Q8007035> ;
+  gen:mother <baring.ttl#Mary_Florence_Baring> .
+  # oo 1905-06-06 Edward Douglas Loch, 2nd Baron Loch, 1873-04-04 - 1942-08-14, https://www.wikidata.org/wiki/Q5344192 (lennox.ttl)
+<#Edward_Robert_Francis_Compton>
+  # Edward Robert Francis Compton, 1891-12-14 - 1977-02-07
+  gen:father <#Lord_Alwyne_Frederick_Compton> ;
+  gen:mother <erskine.ttl#Mary_Evelyn_Violet_Vyner> .
+  # oo Sylvia Farquharson of Invercauld, 1899 - 1950-03-17, daughter of Alexander Haldane Farquharson of Invercauld and Zoë Caroline Musgrave
+  []
+    gen:spouse <#Edward_Robert_Francis_Compton> , <#Sylvia_Farquharson_of_Invercauld> ;
+	gen:startDate "1918-07-03" .
+  # oo Mary Elizabeth Dawson, d. 1957-06-23, daughter of Sydney Dawson
+  []
+    gen:spouse <#Edward_Robert_Francis_Compton> , <#Mary_Elizabeth_Dawson> ;
+	gen:startDate "1952-10-23" .
+  # oo Sallie Whitney Sanford, d. 1979
+  []
+    gen:spouse <#Edward_Robert_Francis_Compton> , <ponsonby.ttl#Sallie_Whitney_Sanford> ;
+	gen:startDate "1958-02-15" .
+<#Clare_George_Vyner>
+  # Clare George Vyner, 1894-03-31 - 1989-10-29
+  gen:father <#Lord_Alwyne_Frederick_Compton> ;
+  gen:mother <erskine.ttl#Mary_Evelyn_Violet_Vyner> .
+  # oo Lady Doris Hilda Gordon-Lennox, 1896-09-06 - 1980-02-05
+  []
+    gen:spouse <#Clare_George_Vyner> , <lennox.ttl#Lady_Doris_Hilda_Gordon-Lennox> ;
+	gen:startDate "1923-04-10" .
+
+<#Lady_Judith_Compton>
+  # Lady Judith Compton, b. 1943-09-26
+  gen:father <https://www.wikidata.org/wiki/Q8007036> ;
+  gen:mother <#Virginia_Lucie_Heaton> .
+  # oo 1970-09-28 Sir Adrian Christopher Swire, 1932-02-15 – 2018-08-24, https://www.wikidata.org/wiki/Q19840880, son of https://www.wikidata.org/wiki/Q18527655 and Juliet Richenda Barclay
+<#Lady_Elizabeth_Compton_(died_1944)>
+  # Lady Elizabeth Compton, b. 1944-12-07
+  gen:father <https://www.wikidata.org/wiki/Q8007036> ;
+  gen:mother <#Virginia_Lucie_Heaton> .
+  # oo 1968-03-30 Ian Hamish Leslie-Melville, b. 1944-08-22, son of Major Michael Ian Leslie-Melville (1918-08-12 - 1997-01-22, son of Hon. Ian Leslie-Melville (1894-08-14 - 1967-02-10, son of Ronald Ruthven Leslie-Melville, 13th Earl of Leven (1835-12-19 - 1906-08-21) and oo 1885-05-07 Hon. Emma Selina Portman (1863-04-05 - 1941-03-01, daughter of William Henry Berkeley Portman, 2nd Viscount Portman of Bryanston (1829-07-12 - 1919-10-16, https://www.wikidata.org/wiki/Q12066246, son of Edward Berkley Portman, 1st Viscount Portman of Bryanston (1799-07-09 – 1888-11-19, 1st Baron Portman of Orchard Portman, co. Somerset 1837-01-27, 1st Viscount Portman of Bryanston, co. Dorset 1873-03-28, https://www.wikidata.org/wiki/Q5344887, son of https://www.wikidata.org/wiki/Q5344886 and Lucy Whitby) and oo 1827-06-16 Lady Emma Lascelles (16 March 1809 – 8 February 1865, daughter of https://www.wikidata.org/wiki/Q13554485 and Henrietta Sebright)) and oo 1855-06-21 Hon. Mary Selina Charlotte FitzWilliam (1836~ - 1899-01-04, daughter of William Charles FitzWilliam, Viscount Milton (1812-01-18 - 1835-11-08, son of https://www.wikidata.org/wiki/Q5083446 (ponsonby.ttl) and Hon. Mary Dundas) and oo 1833-08-15 Lady Selina Charlotte Jenkinson (daughter of Charles Cecil Cope Jenkinson, 3rd Earl of Liverpool (29 May 1784 – 3 October 1851, https://www.wikidata.org/wiki/Q5079495, son of https://www.wikidata.org/wiki/Q2654558 (son of Charles Jenkinson (1693-06-13 - 1750-06, son of https://www.wikidata.org/wiki/Q26213321 and Sarah Tomlins) and oo Amarantha Cornewall (d. 1785-07, daughter of https://www.wikidata.org/wiki/Q21069449)) and oo 1782-06-22 Catherine Bishopp) and oo 1810-07-19 Julia Evelyn Medley Shuckburgh-Evelyn (d. 1814-04-08, daughter of Sir George Augustus William Shuckburgh-Evelyn, 6th Baronet (1751-08-23 - 1804-08-11, https://www.wikidata.org/wiki/Q3300195) and oo 1785-10-06 Julia Annabella Evelyn (d. 1797-09-20~, daughter of John Evelyn and Annabella Medley)))))) and oo 1915-08-26 Charlotte Isabel Stirling (d. 1968-11-07, daughter of Major William Stirling and Charlotte Eva Mackintosh)) and oo 1943-07-31 Cynthia Hambro (1921-02-13 - 1986, daughter of https://www.wikidata.org/wiki/Q5079515 and Pamela Cobbold)
+<https://www.wikidata.org/wiki/Q7576022>
+  # Spencer "Spenny" Douglas David Compton, 7th Marquess of Northampton, b. 1946-04-02
+  gen:father <https://www.wikidata.org/wiki/Q8007036> ;
+  gen:mother <#Virginia_Lucie_Heaton> .
+  # oo Henriette Luisa Maria Bentinck, 1959-01-30 - 2010-11-29, daughter of Adolph Willem Carel Baron Bentinck (1905-09-03 - 1970-03-07 (son of Rudolf baron Bentinck van Schoonheten, 1869-10-06 - 1942-02-11) and oo 1904-07-14 Jonkvrouw Maria Sigrid van Karnebeek (1878-11-29 - 1913-11-24)) and oo 1938-08-31 Gabrielle Baronin Thyssen-Bornemisza de Kászon (1915-12-20 - 1999, https://www.wikidata.org/wiki/Q61446519, daughter of Heinrich Baron Thyssen-Bornemisza de Kászon (1875-10-31 - 1947-06-26, https://www.wikidata.org/wiki/Q65299, son of https://www.wikidata.org/wiki/Q64349) and oo 1906 Margit Freiin Bornemisza de Kászon et Impérfalva (1887 – 1971))
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7576022> , <#Henriette_Luisa_Maria_Bentinck> ;
+	gen:startDate "1967-06-13" ;
+	gen:divorceDate "1973" .
+  # oo Annette Marie Smallwood (oo 1983 (div 2000) Hon. Simon Bartholomew Geoffrey Howard, b. 1956-01-26, son of https://www.wikidata.org/wiki/Q5540777 (howard.ttl) and Lady Cecilia Blanche Genevieve FitzRoy), daughter of Charles Anthony Russell Smallwood
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7576022> , <#Annette_Marie_Smallwood> ;
+	gen:startDate "1974" ;
+	gen:divorceDate "1977" .
+  # oo Rosemary Ashley Morritt Hancock (oo 1965-12-19 Hon. Lionel John Charles Seymour Dawson-Damer, 1940-10-12 - 2000-06-24, son of George Lionel Seymour Dawson-Damer, Viscount Carlow (1907-12-20 - 1944-04-17, son of https://www.wikidata.org/wiki/Q21682513 and Winnifreda Yuill) and Peggy Cambie), daughter of P. G. M. Hancock
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7576022> , <#Rosemary_Ashley_Morritt_Hancock> ;
+	gen:startDate "1977" ;
+	gen:divorceDate "1983" .
+  # oo Hannelore Ellen Erhardt, d. 2015-04-16 (oo 1977 Michael Orlando Weetman Pearson, 4th Viscount Cowdray, b. 1944-06-17, https://www.wikidata.org/wiki/Q16106591, son of Lt.-Col. Weetman John Churchill Pearson, 3rd Viscount Cowdray (1910-02-27 - 1995-01-19, https://www.wikidata.org/wiki/Q14945412) and oo 1939-07-19 (1950) Lady Anne Pamela Bridgeman (1913-06-12 - 2009-05-21, daughter of Orlando Bridgeman, 5th Earl of Bradford (6 October 1873 – 21 March 1957, https://www.wikidata.org/wiki/Q7103054, son of https://www.wikidata.org/wiki/Q5537238 and https://www.wikidata.org/wiki/Q3791741) and oo 1904-07-21 Hon. Margaret Cecilia Bruce (1882-10-28 - 1949-04-16, daughter of Major Henry Campbell Bruce, 2nd Baron Aberdare of Duffryn (19 June 1851 – 20 February 1929, https://www.wikidata.org/wiki/Q5718742, son of https://www.wikidata.org/wiki/Q335550 (scott.ttl) and Annabella Beadon) and oo 1880-02-10 Constance Mary Beckett (d. 1932-02-08 daughter of Hamilton Beckett (1829-10-15 - 1883) and oo 1854-12-14 Hon. Sophia Clarence Copley (d. 1911-12-25, daughter of John Singleton Copley, 1st Baron Lyndhurst (21 May 1772 – 12 October 1863, 1st Baron Lyndhurst, of Lyndhurst in the County of Southampton 1827, https://www.wikidata.org/wiki/Q333136, son of https://www.wikidata.org/wiki/Q316016 and Susannah Farnum Clarke) and oo 1819-03 Sarah Garay Brunsden (d. 1834-01, daughter of Charles Brunsden)))))), daughter of Hermann Erhardt
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7576022> , <#Hannelore_Ellen_Erhardt> ;
+	gen:startDate "1985-01-12" ;
+	gen:divorceDate "1988" .
+  # oo Pamela Martina Raphaela Haworth, b. 1951, daughter of James Haworth
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7576022> , <#Pamela_Martina_Raphaela_Haworth> ;
+	gen:startDate "1990-12-10" ;
+	gen:divorceDate "2013-01" .
+  # oo Tracey Goodman, b. 1965~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7576022> , <#Tracey_Goodman> ;
+	gen:startDate "2013-09-04" .
+<#Robert_Edward_John_Compton>
+  # Robert Edward John Compton, 1922-07-11 - 2009-11-14
+  gen:father <#Edward_Robert_Francis_Compton> ;
+  gen:mother <#Sylvia_Farquharson_of_Invercauld> .
+  # oo Ursula Jane Kenyon-Slaney, 1920-01-15 - 2012-04-07, daughter of hamilton.ttl#Robert_Orlando_Rodolph_Kenyon-Slaney and Lady Mary Cecilia Rhodesia Hamilton
+  []
+    gen:spouse <#Robert_Edward_John_Compton> , <hamilton.ttl#Ursula_Jane_Kenyon-Slaney> ;
+	gen:startDate "1951-07-05" .
+
+<#Lady_Lara_Katrina_Compton>
+  # Lady Lara Katrina Compton, b. 1968-04-26
+  gen:father <https://www.wikidata.org/wiki/Q7576022> ;
+  gen:mother <#Henriette_Luisa_Maria_Bentinck> .
+  # oo 1994 (div 1996) Peter Falter
+  # oo 1999 Junaid Jan
+<#Daniel_Bingham_Compton,_Earl_Compton>
+  # Daniel Bingham Compton, Earl Compton, b. 1973-01-16
+  gen:father <https://www.wikidata.org/wiki/Q7576022> ;
+  gen:mother <#Henriette_Luisa_Maria_Bentinck> .
+  # oo (div) Elizabeth Lucy Cardozo, daughter of Lt.-Col. Benedict Cardozo
+  []
+    gen:spouse <#Daniel_Bingham_Compton,_Earl_Compton> , <#Elizabeth_Lucy_Cardozo> ;
+	gen:startDate "2001-04-21" .
+<#Lady_Emily_Rose_Compton>
+  # Lady Emily Rose Compton, b. 1980
+  gen:father <https://www.wikidata.org/wiki/Q7576022> ;
+  gen:mother <#Rosemary_Ashley_Morritt_Hancock> .
+  # oo Edward M. J. Horner, son of Brian Horner
+<#Lady_Louisa_Cecilia_Compton>
+  # Lady Louisa Cecilia Compton, b. 1985
+  gen:father <https://www.wikidata.org/wiki/Q7576022> ;
+  gen:mother <#Hannelore_Ellen_Erhardt> .
+<#James_Alwyn_Compton>
+  # James Alwyn Compton, b. 1953-05-30
+  gen:father <#Robert_Edward_John_Compton> ;
+  gen:mother <hamilton.ttl#Ursula_Jane_Kenyon-Slaney> .
+  # oo Rebecca Wigan, b. 1953, daughter of Sir Alan Lewis Wigan, 5th Baronet and Robina Colquhoun
+  []
+    gen:spouse <#James_Alwyn_Compton> , <#Rebecca_Wigan> ;
+	gen:startDate "1980" ;
+	gen:divorceDate "1986" .
+  # oo Lady Tania Frances Meade, b. 1963-10-06, daughter of https://www.wikidata.org/wiki/Q20712782 and Maxine Hayden-Scott
+  []
+    gen:spouse <#James_Alwyn_Compton> , <#Lady_Tania_Frances_Meade> ;
+	gen:startDate "1989" .
+
+<#Lady_Anastasia_Henrietta_Grace_Compton>
+  # Lady Anastasia Henrietta Grace Compton, b. 2002-03-26
+  gen:father <#Daniel_Bingham_Compton,_Earl_Compton> ;
+  gen:mother <#Elizabeth_Lucy_Cardozo> .
+<#Lady_Theodora_Virginia_Lucy_Compton>
+  # Lady Theodora Virginia Lucy Compton, b. 2003-08-19
+  gen:father <#Daniel_Bingham_Compton,_Earl_Compton> ;
+  gen:mother <#Elizabeth_Lucy_Cardozo> .
+
+
+
+# ----
+#<https://www.wikidata.org/wiki/Q21165398>
+  # Sir Berkeley Lucy, 3rd Baronet, 1672~ - 1759-11-19
+  # oo Catharine Cotton, d. 1740-06~, daughter of Charles Cotton and Isabella Hutchinson
+
+<#Mary_Lucy>
+  # Mary Lucy, b. 1709-11-09
+  gen:father <https://www.wikidata.org/wiki/Q21165398> .
+  # and Catharine Cotton
+  # oo 1727-08-17 Hon. Charles Compton, 1698-01-30 - 1755-11-20, https://www.wikidata.org/wiki/Q26788598
