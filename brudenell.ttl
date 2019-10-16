@@ -191,7 +191,7 @@
   gen:deathDate "1813-02-21" ;
   gen:father <https://www.wikidata.org/wiki/Q5537353> ;
   gen:mother <https://www.wikidata.org/wiki/Q48786421> .
-  # oo 1735-05-30 Richard Powys, 1710~ - 1743, kennedy.ttl#Richard_Powys_(died_1743)
+  # oo 1735-05-30 Richard Powys, 1710~ - 1743, https://www.wikidata.org/wiki/Q30322613
 <#Caroline_Brudenell>
   # Caroline Brudenell, d. 1803
   gen:father <#James_Brudenell> .
@@ -784,7 +784,7 @@
   gen:father <https://www.wikidata.org/wiki/Q7526160> ;
   gen:mother <gower.ttl#Anne_Boscawen> .
   # oo 1767 Sir Charles Cope, 2nd Baronet, 1743~ - 1781-06-14, https://www.wikidata.org/wiki/Q7526196
-  # oo (2) 1782 Charles Jenkinson, 1st Earl of Liverpool, 1729-04-26 – 1808-12-17, https://www.wikidata.org/wiki/Q2654558
+  # oo 1782 Charles Jenkinson, 1st Earl of Liverpool, 1729-04-26 – 1808-12-17, https://www.wikidata.org/wiki/Q2654558
 <#Edward_Bisshopp>
   gen:deathDate "1792" ;
   gen:father <https://www.wikidata.org/wiki/Q7526160> ;
@@ -796,7 +796,10 @@
   gen:birthDate "1752" ;
   gen:deathDate "1828-11-11" ;
   gen:father <#Sir_Cecil_Bishopp,_7th_Baronet> .
-  # oo Harriet Anne Southwell, daughter and heiress of William Southwell of Frampton, Gloucestershire
+  # oo Harriet Anne Southwell, 1760~ - 1839-12-10, daughter of William Southwell and Arabella Pye
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16203246> , <#Harriet_Anne_Southwell> ;
+	gen:startDate "1782-06-27" .
 <https://www.wikidata.org/wiki/Q16204172>
   # The Very Reverend Sir George Bisshopp, 9th Baronet
   gen:birthDate "1791-07-05" ;
@@ -811,15 +814,22 @@
   gen:deathDate "1813-07-16~" ;
   gen:father <https://www.wikidata.org/wiki/Q16203246> ;
   gen:mother <#Harriet_Anne_Southwell> .
-<#Charles-Cecil_Bisshopp>
-  gen:father <https://www.wikidata.org/wiki/Q16203246> ;
-  gen:mother <#Harriet_Anne_Southwell> .
-<#Honourable_Harriet_Anne_Bisshopp,_13th_Baroness_Zouche>
+  # oo Lady Charlotte Barbara Townshend, 1781-06-26 - 1807-10-03
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5055959> , <townshend.ttl#Lady_Charlotte_Barbara_Townshend> ;
+	gen:startDate "1805-04-06" .
+<#Harriet_Anne_Bisshopp,_13th_Baroness_Zouche>
+  gen:name "Harriet Anne Bisshopp, 13th Baroness Zouche"@en ;
   gen:birthDate "1787-09-07" ;
   gen:deathDate "1870-05-15" ;
   gen:father <https://www.wikidata.org/wiki/Q16203246> ;
   gen:mother <#Harriet_Anne_Southwell> .
   # oo 1808 Hon. Robert Curzon, 1774-02-13 – 1863-05-14, https://www.wikidata.org/wiki/Q7343265
+<#Katherine_Annabella_Bishopp>
+  # Katherine Annabella Bishopp, 1791-12-01 - 1871-07-29
+  gen:father <https://www.wikidata.org/wiki/Q16203246> ;
+  gen:mother <#Harriet_Anne_Southwell> .
+  # oo 1826-08-01 Sir George Richard Brooke-Pechell, 4th Baronet, 1789-06-30 - 1860-06-29, https://www.wikidata.org/wiki/Q7526846
 <https://www.wikidata.org/wiki/Q7526162>
   gen:name "Sir Cecil Bisshopp, 10th Baronet"@en ;
   gen:birthDate "1821-07-06" ;
@@ -1087,15 +1097,23 @@
     gen:spouse <#Robert_Grimston> , <villiers.ttl#Gertrude_Mary_Amelia_Villiers> ;
 	gen:startDate "1896-08-20" .
 # ----
+<#Charles_Jenkinson>
+  # Charles Jenkinson, 1693-06-13 – 1750-06
+  gen:father <https://www.wikidata.org/wiki/Q26213321> .
+  # and Sarah Tomlins
+  # oo Amarantha Cornewall, d. 1785-07
+  []
+    gen:spouse <#Charles_Jenkinson> , <#Amarantha_Cornewall> .
+
 <https://www.wikidata.org/wiki/Q2654558>
   gen:name "Charles Jenkinson, 1st Earl of Liverpool"@en ;
   # 1st Baron Hawkesbury, of Hawkesbury, co. Gloucester 1786-08-21
   # 7th Baronet Jenkinson, of Walcot, co. Oxford and Hawkesbury, co. Gloucester 1789-07-22
   # 1st Earl of Liverpool 1796-06-01
   gen:birthDate "1729-04-26" ;
-  gen:deathDate "1808-12-17" .
-  # son of Charles Jenkinson, 1693-06-13 – 1750-06
-  # and oo Amarantha Cornewall, d. 1785-07, daughter of https://www.wikidata.org/wiki/Q21069449
+  gen:deathDate "1808-12-17" ;
+  gen:father <#Charles_Jenkinson> ;
+  gen:mother <#Amarantha_Cornewall> .
   # oo Catherine Bishopp, 1744-11-30 - 1827-10-01
   []
     gen:spouse <https://www.wikidata.org/wiki/Q2654558> , <#Catherine_Bishopp> ;
@@ -1108,6 +1126,38 @@
   gen:father <https://www.wikidata.org/wiki/Q2654558> ;
   gen:mother <#Catherine_Bishopp> .
   # oo 1807-08-11 James Walter Grimston, 1st Earl of Verulam, 1775-09-26 - 1845-11-17, https://www.wikidata.org/wiki/Q6135004
+<https://www.wikidata.org/wiki/Q5079495>
+  # Charles Cecil Cope Jenkinson, 3rd Earl of Liverpool, 1784-05-29 – 1851-10-03
+  gen:father <https://www.wikidata.org/wiki/Q2654558> ;
+  gen:mother <#Catherine_Bishopp> .
+  # oo Julia Evelyn Medley Shuckburgh-Evelyn, d. 1814-04-08
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5079495> , <#Julia_Evelyn_Medley_Shuckburgh-Evelyn> ;
+	gen:startDate "1810-07-19" .
+
+<#Lady_Selina_Charlotte_Jenkinson>
+  # Lady Selina Charlotte Jenkinson, 1812-07-03 - 1883-09-24
+  gen:father <https://www.wikidata.org/wiki/Q5079495> ;
+  gen:mother <#Julia_Evelyn_Medley_Shuckburgh-Evelyn> .
+  # oo 1833-08-15 William Charles FitzWilliam, Viscount Milton, 1812-01-18 - 1835-11-08, https://www.wikidata.org/wiki/Q26254028
+# ----
+<#Amarantha_Cornewall>
+  # Amarantha Cornewall, d. 1785-07
+  gen:father <https://www.wikidata.org/wiki/Q21069449> .
+  # oo Charles Jenkinson, 1693-06-13 – 1750-06, #Charles_Jenkinson
+# ----
+#<https://www.wikidata.org/wiki/Q3300195>
+  # Sir George Augustus William Shuckburgh-Evelyn, 6th Baronet, 1751-08-23 - 1804-08-11
+  # oo Julia Annabella Evelyn, d. 1797-09-20~, daughter of John Evelyn and Annabella Medley
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3300195> , <#Julia_Annabella_Evelyn> ;
+	gen:startDate "1785-10-06" .
+
+<#Julia_Evelyn_Medley_Shuckburgh-Evelyn>
+  # Julia Evelyn Medley Shuckburgh-Evelyn, d. 1814-04-08
+  gen:father <https://www.wikidata.org/wiki/Q3300195> ;
+  gen:mother <#Julia_Annabella_Evelyn> .
+  # oo 1810-07-19 Charles Cecil Cope Jenkinson, 3rd Earl of Liverpool, 1784-05-29 – 1851-10-03, https://www.wikidata.org/wiki/Q5079495
 
 # --------
 <#Georgiana_Sophia_Maria_Pinckney>

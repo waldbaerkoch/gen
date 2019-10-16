@@ -388,7 +388,7 @@
   # Lady Doris Hilda Gordon-Lennox, 1896-09-06 - 1980-02-05
   gen:father <https://www.wikidata.org/wiki/Q335594> ;
   gen:mother <https://www.wikidata.org/wiki/Q5761350> .
-  # oo 1923-04-10 Clare George Vyner, 1894-03-31 - 1989-10-29, #Clare_George_Vyner
+  # oo 1923-04-10 Clare George Vyner, 1894-03-31 - 1989-10-29, compton.ttl#Clare_George_Vyner
 <https://www.wikidata.org/wiki/Q35999863>
   # Lieutenant Charles Henry Gordon-Lennox, Lord Settrington, 1899-01-26 - 1919-08-24
   gen:father <https://www.wikidata.org/wiki/Q335594> ;
@@ -691,11 +691,23 @@
   # George Brydges Rodney, 1st Baron Rodney of Rodney Stoke, 1719-02-13 - 1792-05-24
   # 1st Baronet Rodney 1764-01-22
   # 1st Baron Rodney of Rodney Stoke, co. Somerset 1782-06-19
+  # oo Jane Compton, 1730-01-11 - 1757-01
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q332426> , <compton.ttl#Jane_Compton> ;
+	gen:startDate "1753-01-31" .
   # oo Henrietta Clies, 1739~ - 1829-03, daughter of John Clies and Margaretta Gower
   []
     gen:spouse <https://www.wikidata.org/wiki/Q332426> , <#Henrietta_Clies> ;
 	gen:startDate "1764" .
 
+<https://www.wikidata.org/wiki/Q5543984>
+  # George Rodney, 2nd Baron Rodney of Rodney Stoke, 1753-12-25 – 1802-01-02
+  gen:father <https://www.wikidata.org/wiki/Q332426> ;
+  gen:mother <compton.ttl#Jane_Compton> .
+  # oo Anne Harley, d. 1840-08-15
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5543984> , <de_vere.ttl#Anne_Harley> ;
+	gen:startDate "1781-04-10" .
 <#John_Rodney>
   # Hon. John Rodney, 1765-05-10 - 1847-04-09
   gen:father <https://www.wikidata.org/wiki/Q332426> ;
@@ -1391,13 +1403,13 @@
   gen:mother <villiers.ttl#Elizabeth_Villiers_(died_1938)> .
   # oo Lady Margaret Louisa Lizzie Compton, 1886-08-09 - 1970-04-09
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q5344192> , <baring.ttl#Lady_Margaret_Louisa_Lizzie_Compton> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q5344192> , <compton.ttl#Lady_Margaret_Louisa_Lizzie_Compton> ;
 	gen:startDate "1905-06-06" .
 
 <https://www.wikidata.org/wiki/Q26161891>
   # Spencer Douglas Loch, 4th Baron Loch, 1920-08-12 - 1991-06-24
   gen:father <https://www.wikidata.org/wiki/Q5344192> ;
-  gen:mother <baring.ttl#Lady_Margaret_Louisa_Lizzie_Compton> .
+  gen:mother <compton.ttl#Lady_Margaret_Louisa_Lizzie_Compton> .
   # oo Hon. Rachel Cooper, 1921-02-25 - 1976-11-06
   []
     gen:spouse <https://www.wikidata.org/wiki/Q26161891> , <howard.ttl#Rachel_Cooper> ;
@@ -1428,25 +1440,6 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q6131500> , <#Lady_Amy_Gwendolin_Gordon-Lennox> ;
 	gen:startDate "1917-12-11" .
-
-# ----
-<#Lord_Alwyne_Frederick_Compton>
-  # Lord Alwyne Frederick Compton, 1855-06-05 - 1911-12-16
-  gen:father <https://www.wikidata.org/wiki/Q8007034> .
-  # and Eliza Elliot
-  # oo Mary Evelyn Violet Vyner, d. 1957-10-22
-  []
-    gen:spouse <#Lord_Alwyne_Frederick_Compton> , <erskine.ttl#Mary_Evelyn_Violet_Vyner> ;
-	gen:startDate "1886-07-31" .
-
-<#Clare_George_Vyner>
-  # Clare George Vyner, 1894-03-31 - 1989-10-29
-  gen:father <#Lord_Alwyne_Frederick_Compton> ;
-  gen:mother <erskine.ttl#Mary_Evelyn_Violet_Vyner> .
-  # oo Lady Doris Hilda Gordon-Lennox, 1896-09-06 - 1980-02-05
-  []
-    gen:spouse <#Clare_George_Vyner> , <#Lady_Doris_Hilda_Gordon-Lennox> ;
-	gen:startDate "1923-04-10" .
 
 # ----
 #<#Thomas_William_Hudson>
