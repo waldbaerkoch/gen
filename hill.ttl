@@ -1,0 +1,208 @@
+@base <hill.ttl> .
+@prefix gen: <http://jjkoch.de/gen#> .
+@prefix wdata: <https://www.wikidata.org/wiki/> .
+@prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+
+#<https://www.wikidata.org/wiki/Q7839214>
+  # Trevor Hill, 1st Viscount Hillsborough, 1693 - 1742-05-03
+  # 1st Viscount Hillsborough, co. Down, 1st Baron Hill of Kilwarlin, co. Down 1717-08-21
+  # oo Mary Rowe, d. 1742-08-23, daughter of Anthony Rowe
+
+<#Anne_Hill>
+  # Hon. Anne Hill, d. 1751-08-01
+  gen:father <https://www.wikidata.org/wiki/Q7839214> .
+  # and Mary Rowe
+  # oo 1746-12-23 John Rawdon, 1st Earl of Moira, 1720-03-17 - 1793-06-20, https://www.wikidata.org/wiki/Q6254308
+<https://www.wikidata.org/wiki/Q4020235>
+  gen:name "Wills Hill, 1st Marquess of Downshire"@en ;
+  # 2nd Baron Hill of Kilwarlin, co. Down, 2nd Viscount Hillsborough, co. Down 1742-05-03
+  # 1st Viscount Kilwarlin, co. Down, 1st Earl of Hillsborough, co. Down 1751-10-03
+  # 1st Lord Harwich, Baron of Harwich, co. Essex 1756-11-17
+  # 1st Viscount Fairford, co. Gloucester, 1st Earl of Hillsborough 1772-08-28
+  # 1st Marquess of Downshire 1789-08-20
+  gen:birthDate "1718-05-30" ;
+  gen:deathDate "1793-10-07" ;
+  gen:father <https://www.wikidata.org/wiki/Q7839214> .
+  # and Mary Rowe
+  # oo Lady Margaretta FitzGerald, d. 1766-01-19
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4020235> , <fitzgerald.ttl#Lady_Margaretta_FitzGerald> ;
+	gen:startDate "1747-03-01" .
+  # oo Mary Stawel, 1st Baroness Stawel of Somerton, 1726-01-27 - 1780-07-29 (legge.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4020235> , <https://www.wikidata.org/wiki/Q16199541> ;
+	gen:startDate "1768-09" .
+
+<https://www.wikidata.org/wiki/Q28844111>
+  gen:name "Lady Emily Mary Hill"@en ;
+  gen:birthDate "1750-08-16" ;
+  gen:deathDate "1835-11-22" ;
+  gen:father <https://www.wikidata.org/wiki/Q4020235> ;
+  gen:mother <fitzgerald.ttl#Lady_Margaretta_Fitzgerald> .
+  # oo 1773-12-02 James Cecil, 1st Marquess of Salisbury, 1748-09-04 - 1823-06-13, https://www.wikidata.org/wiki/Q3806494
+<https://www.wikidata.org/wiki/Q4799069>
+  # Arthur Hill, 2nd Marquess of Downshire, 1753-03-03 - 1801-09-07
+  gen:father <https://www.wikidata.org/wiki/Q4020235> ;
+  gen:mother <fitzgerald.ttl#Lady_Margaretta_Fitzgerald> .
+  # oo Mary Sandys, 1st Lady Sandys, Baroness of Ombersley, 1764-02-19 – 1836-08-01
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4799069> , <https://www.wikidata.org/wiki/Q59557482> ;
+	gen:startDate "1786-06-29" .
+<#Lady_Charlotte_Hill>
+  # Lady Charlotte Hill, 1754-05-15 - 1804-01-17
+  gen:father <https://www.wikidata.org/wiki/Q4020235> ;
+  gen:mother <fitzgerald.ttl#Lady_Margaretta_FitzGerald> .
+  # oo 1776-05-07 John Chetwynd-Talbot, 1st Earl Talbot of Hensol, 1749-02-25 - 1793-05-19, https://www.wikidata.org/wiki/Q112411
+
+<https://www.wikidata.org/wiki/Q24153864>
+ # Lord George Augusta Hill, 1801-12-09 - 1879-04-06
+ gen:father <https://www.wikidata.org/wiki/Q4799069> ;
+ gen:mother <https://www.wikidata.org/wiki/Q59557482> .
+ # oo Cassandra Jane Knight, 1806-11-16 - 1842-03-14
+ []
+   gen:spouse <https://www.wikidata.org/wiki/Q24153864> , <#Cassandra_Jane_Knight> ;
+   gen:startDate "1834-10-21" .
+
+<#Arthur_Blundell_George_Sandys_Hill>
+  # Arthur Blundell George Sandys Hill, 1837-05-13 - 1923-06-16
+  gen:father <https://www.wikidata.org/wiki/Q24153864> ;
+  gen:mother <#Cassandra_Jane_Knight> .
+  # oo Helen Emily Trench, 1846 - 1935-06-25
+  []
+    gen:spouse <#Arthur_Blundell_George_Sandys_Hill> , <#Helen_Emily_Trench> ;
+	gen:startDate "1871-02-16" .
+
+<#George_Chenevix_Hill>
+  # Hon. George Chenevix Hill, 1887-05-04 - 1963-10-12
+  gen:father <#Arthur_Blundell_George_Sandys_Hill> ;
+  gen:mother <#Helen_Emily_Trench> .
+  # oo Hon. Patricia Irene Wilmot Tufton, b. 1900-03-18
+  []
+    gen:spouse <#George_Chenevix_Hill> , <tufton.ttl#Patricia_Irene_Wilmot_Tufton> ;
+	gen:startDate "1921-12-14" .
+<#Cicely_Mary_Isabel_Hill>
+  # Cicely Mary Isabel Hill, d. 1912-06-26
+  gen:father <#Arthur_Blundell_George_Sandys_Hill> ;
+  gen:mother <#Helen_Emily_Trench> .
+  # oo 1911-04-22 Hon. Sackville Philip Tufton, 1875-05-05 - 1936-01-24, tufton.ttl#Sackville_Philip_Tufton
+
+
+# ----
+#<#Edwin_Sandys>
+  # Edwin Sandys, 1659 – 1699
+  # oo Alice Rushout
+  []
+    gen:spouse <#Edwin_Sandys> , <west.ttl#Alice_Rushout> .
+
+<https://www.wikidata.org/wiki/Q3471224>
+  # Samuel Sandys, 1st Lord Sandys, Baron of Ombersley, 1695-08-10 - 1770-05-21
+  # 1st Lord Sandys, Baron of Ombersley, co. Worcester 1743-12-20
+  gen:father <#Edwin_Sandys> ;
+  gen:mother <west.ttl#Alice_Rushout> .
+  # oo Laetitia Tipping, d. 1779-05-26
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3471224> , <howard.ttl#Laetitia_Tipping> ;
+	gen:startDate "1725-06-09" .
+
+<#Martin_Sandys>
+  # Hon. Martin Sandys, 1729-11-24b - 1768-12-26
+  gen:father <https://www.wikidata.org/wiki/Q3471224> ;
+  gen:mother <howard.ttl#Laetitia_Tipping> .
+  # oo Mary Trumbull, d. 1769
+  []
+    gen:spouse <#Martin_Sandys> , <#Mary_Trumbull> ;
+	gen:startDate "1760" .
+
+<https://www.wikidata.org/wiki/Q59557482>
+  # Mary Sandys, 1st Lady Sandys, Baroness of Ombersley, 1764-02-19 – 1836-08-01
+  # 1st Lady Sandys, Baroness of Ombersley, co. Worcester 1802-06-19, suo jure
+  gen:father <#Martin_Sandys> ;
+  gen:mother <#Mary_Trumbull> .
+  # oo 1786-06-29 Arthur Hill, 2nd Marquess of Downshire, 1753-03-03 - 1801-09-07, https://www.wikidata.org/wiki/Q4799069
+# ----
+#<#Sir_William_Trumbull>
+  # Sir William Trumbull, 1639 - 1716-12-14
+  # oo Hon. Judith Alexander, d. 1724
+  []
+    gen:spouse <#Sir_William_Trumbull> , <#Judith_Alexander> ;
+	gen:startDate "1706-10" .
+
+<#William_Trumbull>
+  # William Trumbull
+  gen:father <#Sir_William_Trumbull> ;
+  gen:mother <#Judith_Alexander> .
+  # oo Hon. Mary Blundell
+  []
+    gen:spouse <#William_Trumbull> , <bertie.ttl#Mary_Blundell> ;
+	gen:startDate "1733-06-04" .
+
+<#Mary_Trumbull>
+  # Mary Trumbull, d. 1769
+  gen:father <#William_Trumbull> ;
+  gen:mother <bertie.ttl#Mary_Blundell> .
+  # oo 1760 Hon. Martin Sandys, 1729-11-24b - 1768-12-26, #Martin_Sandys
+# ----
+#<https://www.wikidata.org/wiki/Q61782020>
+  # Henry Alexander, 4th Earl of Stirling, 1633 - 1690
+  # oo Judith Lee
+
+<#Judith_Alexander>
+  # Hon. Judith Alexander, d. 1724
+  gen:father <https://www.wikidata.org/wiki/Q61782020> .
+  # and Judith Lee
+  # oo 1706-10 Sir William Trumbull, 1639 - 1716-12-14, #Sir_William_Trumbull
+
+# ----
+<#Cassandra_Jane_Knight>
+ # Cassandra Jane Knight, 1806-11-16 - 1842-03-14
+ gen:father <https://www.wikidata.org/wiki/Q5341645> .
+ # and Elizabeth Bridges
+ # oo 1834-10-21 Lord George Augusta Hill, 1801-12-09 - 1879-04-06, https://www.wikidata.org/wiki/Q24153864
+
+# ----
+#<#Frederick_Trench>
+  # Frederick Trench, 1724-11-03 - 1797-11-27
+  # son of Frederick Trench
+  # and Mary Geering
+  # oo Mary Sadleir, d. 1819, daughter of Francis Sadleir and Catherine Wall
+  []
+    gen:spouse <#Frederick_Trench> , <#Mary_Sadleir> ;
+	gen:startDate "1754-08-20" .
+
+<#Francis_Trench>
+  # Francis Trench, 1757-07-29 - 1829-11
+  gen:father <#Frederick_Trench> ;
+  gen:mother <#Mary_Sadleir> .
+  # oo Mary Mason, daughter of Henry Mason
+  []
+    gen:spouse <#Francis_Trench> , <#Mary_Mason> ;
+	gen:startDate "1802-06-11" .
+<#Richard_Trench>
+  # Richard Trench, 1774 - 1860-04-16
+  gen:father <#Frederick_Trench> ;
+  gen:mother <#Mary_Sadleir> .
+  # oo Melesina Chenevix, 1768-03-22 - 1827-05-27, daughter of Rev. Philip Chenevix and Mary Elizabeth Gervais
+  []
+    gen:spouse <#Richard_Trench> , <https://www.wikidata.org/wiki/Q6812196> ;
+	gen:startDate "1803-03-03" .
+
+<#Frances_Mary_Trench>
+  # Hon. Frances Mary Trench, 1809 - 1890-11-05
+  gen:father <#Francis_Trench> ;
+  gen:mother <#Mary_Mason> .
+  # oo 1832-06-01 Most Rev. and Rt. Hon. Richard Chenevix Trench, 1807-09-09 - 1886-03-27, https://www.wikidata.org/wiki/Q11703211
+<https://www.wikidata.org/wiki/Q11703211>
+  # Most Rev. and Rt. Hon. Richard Chenevix Trench, 1807-09-09 - 1886-03-27
+  # Archbishop of Dublin 1864 - 1884
+  gen:father <#Richard_Trench> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6812196> .
+  # oo Hon. Frances Mary Trench, 1809 - 1890-11-05
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q11703211> , <#Frances_Mary_Trench> ;
+	gen:startDate "1832-06-01" .
+
+<#Helen_Emily_Trench>
+  # Helen Emily Trench, 1846 - 1935-06-25
+  gen:father <https://www.wikidata.org/wiki/Q11703211> ;
+  gen:mother <#Frances_Mary_Trench> .
+  # oo 1871-02-16 Arthur Blundell George Sandys Hill, 1837-05-13 - 1923-06-16, #Arthur_Blundell_George_Sandys_Hill

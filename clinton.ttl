@@ -162,7 +162,7 @@
   gen:mother <#Ursula_Stourton> .
   # oo Lady Catherine Hastings, 1542-08-11 - 1586-10-20b
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q16859736> , <#Lady_Catherine_Hastings> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q16859736> , <hastings.ttl#Lady_Catherine_Hastings_(died_1586)> ;
 	gen:startDate "1555-12-10a/1557-04-30b" .
   # oo Elizabeth Morrison, d. 1611-07-04~, daughter of https://www.wikidata.org/wiki/Q7327910 and Bridget Hussey
   []
@@ -177,7 +177,7 @@
 <https://www.wikidata.org/wiki/Q7788471>
   # Thomas Clinton, 3rd Earl of Lincoln, 1568~ - 1619-01-15
   gen:father <https://www.wikidata.org/wiki/Q16859736> ;
-  gen:mother <#Lady_Catherine_Hastings> .
+  gen:mother <hastings.ttl#Lady_Catherine_Hastings_(died_1586)> .
   # oo Elizabeth Knyvett, d. 1630
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7788471> , <https://www.wikidata.org/wiki/Q18576121> ;
@@ -185,7 +185,7 @@
 <#Sir_Edward_Clinton>
   # Sir Edward Clinton
   gen:father <https://www.wikidata.org/wiki/Q16859736> ;
-  gen:mother <#Lady_Catherine_Hastings> .
+  gen:mother <hastings.ttl#Lady_Catherine_Hastings_(died_1586)> .
   # oo Mary Dighton, daughter of Thomas Dighton
 <#Lady_Elizabeth_Clinton>
   # Lady Elizabeth Clinton
@@ -833,13 +833,6 @@
     gen:spouse <https://www.wikidata.org/wiki/Q26897915> , <#Lady_Katharine_Clinton> .
 
 # ----
-<#Lady_Catherine_Hastings>
-  # Lady Catherine Hastings, 1542-08-11 - 1586-10-20b
-  gen:father <https://www.wikidata.org/wiki/Q3909917> .
-  # and Catherine Pole
-  # oo 1555-12-10a/1557-04-30b Henry Clinton, 2nd Earl of Lincoln, 1540 - 1616-09-29, https://www.wikidata.org/wiki/Q16859736
-
-# ----
 <#Elizabeth_Morrison>
   # Elizabeth Morrison, d. 1611-07-04~
   gen:father <https://www.wikidata.org/wiki/Q7327910> .
@@ -973,21 +966,6 @@
 	gen:startDate "1859-03-01" .
 
 # ----
-<#Lady_Arabella_Georgina_Hastings>
-  # Lady Arabella Georgina Hastings, 1811-04-29 - 1899-01-29
-  gen:father <https://www.wikidata.org/wiki/Q16230372> .
-  # and Frances Cobbe
-  # oo 1833-04-25 George Augustus Frederick Brooke, 1805 - 1874-02-20, #George_Augustus_Frederick_Brooke
-<#Richard_Godolphin_Henry_Hastings>
-  # Rev. Hon. Richard Godolphin Henry Hastings, 1820-03-26 - 1865-03-10
-  gen:father <https://www.wikidata.org/wiki/Q16230372> .
-  # and Frances Cobbe
-  # oo Agnes Fynes-Clinton, 1827-08-22 - 1872-03-06
-  []
-    gen:spouse <#Richard_Godolphin_Henry_Hastings> , <#Agnes_Fynes-Clinton> ;
-	gen:startDate "1846-11-26" .
-
-# ----
 <#Matilda_Jane_Cradock-Hartopp>
   # Matilda Jane Cradock-Hartopp, d. 1892-10-23
   gen:father <https://www.wikidata.org/wiki/Q27087917> .
@@ -1004,18 +982,27 @@
     gen:spouse <#John_Campbell_of_Stonefield> , <#Adela_Harriett_Pelham-Clinton> ;
 	gen:startDate "1871-08-02" .
 
+<#Colin_George_Pelham_Campbell,_6th_of_Stonefield>
+  # Colin George Pelham Campbell, 6th of Stonefield, 1872-05-31 - 1955-02-08
+  gen:father <#John_Campbell_of_Stonefield> ;
+  gen:mother <#Adela_Harriett_Pelham-Clinton> .
+  # oo Lady Ileene Frances Cairne Hastings, 1872-05-20 - 1946-06-15
+  []
+    gen:spouse <#Colin_George_Pelham_Campbell,_6th_of_Stonefield> , <hastings.ttl#Lady_Ileene_Frances_Cairne_Hastings> ;
+	gen:startDate "1893-11-15" .
+
 # ----
 #<#George_Augustus_Frederick_Brooke>
   # George Augustus Frederick Brooke, 1805 - 1874-02-20
   # oo Lady Arabella Georgina Hastings, 1811-04-29 - 1899-01-29
   []
-    gen:spouse <#George_Augustus_Frederick_Brooke> , <#Lady_Arabella_Georgina_Hastings> ;
+    gen:spouse <#George_Augustus_Frederick_Brooke> , <hastings.ttl#Lady_Arabella_Georgina_Hastings> ;
 	gen:startDate "1833-04-25" .
 
 <#George_Hastings_Brooke>
   # George Hastings Brooke, 1842-06-21 - 1922-04-05
   gen:father <#George_Augustus_Frederick_Brooke> ;
-  gen:mother <#Lady_Arabella_Georgina_Hastings> .
+  gen:mother <hastings.ttl#Lady_Arabella_Georgina_Hastings> .
   # oo Adela Harriett Pelham-Clinton, 1850-08-22 - 1915-05-21
   []
     gen:spouse <#George_Hastings_Brooke> , <#Adela_Harriett_Pelham-Clinton> ;
