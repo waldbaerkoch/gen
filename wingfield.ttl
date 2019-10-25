@@ -1,0 +1,85 @@
+@base <wingfield.ttl> .
+@prefix gen: <http://jjkoch.de/gen#> .
+@prefix wdata: <https://www.wikidata.org/wiki/> .
+@prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+
+#<https://www.wikidata.org/wiki/Q27493855>
+  # Richard Wingfield, 3rd Viscount Powerscourt, 1730-12-24 - 1788-08-08
+  # oo 1760-09-07 Lady Amelia Stratford, d. 1831-10-11
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q27493855> , <#Lady_Amelia_Stratford> ;
+	gen:startDate "1760-09-07" .
+
+<#Richard_Wingfield,_4th_Viscount_Powerscourt>
+  # Richard Wingfield, 4th Viscount Powerscourt, 1762-10-29 - 1809-07-19
+  gen:father <https://www.wikidata.org/wiki/Q27493855> ;
+  gen:mother <#Lady_Amelia_Stratford> .
+  # oo Lady Catherine Meade, 1770-10-07 - 1793-02-17 (montagu.ttl)
+  []
+    gen:spouse <#Richard_Wingfield,_4th_Viscount_Powerscourt> , <https://www.wikidata.org/wiki/Q63677113> ;
+	gen:startDate "1789-06-30" .
+  # oo Isabella Brownlow, d. 1848-04-05
+  []
+    gen:spouse <#Richard_Wingfield,_4th_Viscount_Powerscourt> , <hamilton.ttl#Isabella_Brownlow> ;
+	gen:startDate "1796-02-09" .
+
+<https://www.wikidata.org/wiki/Q27468351>
+  # Richard Wingfield, 5th Viscount Powerscourt, 1790-09-11 – 1823-08-09
+  gen:father <#Richard_Wingfield,_4th_Viscount_Powerscourt> ;
+  gen:mother <https://www.wikidata.org/wiki/Q63677113> .
+  # oo Lady Frances Theodosia Jocelyn, 1795 - 1820-05-10
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q27468351> , <https://www.wikidata.org/wiki/Q43840699> ;
+	gen:startDate "1813-02-06" .
+<#Emily_Wingfield>
+  # Hon. Emily Wingfield, d. 1837-06-20
+  gen:father <#Richard_Wingfield,_4th_Viscount_Powerscourt> ;
+  gen:mother <hamilton.ttl#Isabella_Brownlow> .
+  # oo 1827-06-04 Rev. Frederick Benjamin Twisleton-Wykeham-Fiennes, 10th Baron Saye and Sele, 1799-07-04 - 1887-05-26, https://www.wikidata.org/wiki/Q16062774
+
+<https://www.wikidata.org/wiki/Q7330043>
+  # Richard Wingfield, 6th Viscount Powerscourt, 1815-01-18 – 1844-08-11
+  gen:father <https://www.wikidata.org/wiki/Q27468351> ;
+  gen:mother <https://www.wikidata.org/wiki/Q43840699> .
+  # oo Lady Elizabeth Frances Charlotte Jocelyn, d. 1884-09-02
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7330043> , <jocelyn.ttl#Lady_Elizabeth_Frances_Charlotte_Jocelyn> ;
+	gen:startDate "1836-01-25" .
+
+<https://www.wikidata.org/wiki/Q16031043>
+  # Mervyn Wingfield, 7th Viscount Powerscourt, 1836-10-13 - 1904-06-05
+  gen:father <https://www.wikidata.org/wiki/Q7330043> ;
+  gen:mother <jocelyn.ttl#Lady_Elizabeth_Frances_Charlotte_Jocelyn> .
+  # oo Lady Julia Coke, 1844-12-04 - 1931-08-07
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16031043> , <https://www.wikidata.org/wiki/Q61754323> ;
+	gen:startDate "1864-04-26" .
+
+<https://www.wikidata.org/wiki/Q6820947>
+  # Mervyn Richard Wingfield, 8th Viscount Powerscourt, 1880-07-16 - 1947-03-21
+  gen:father <https://www.wikidata.org/wiki/Q16031043> ;
+  gen:mother <https://www.wikidata.org/wiki/Q61754323> .
+  # oo Sybil Pleydell-Bouverie, 1878-12-13 - 1946-12-06
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6820947> , <https://www.wikidata.org/wiki/Q54867884> ;
+	gen:startDate "1903-06-09" .
+<#Clare_Meriel_Wingfield>
+  # Hon. Clare Meriel Wingfield, 1886-06-05 - 1969
+  gen:father <https://www.wikidata.org/wiki/Q16031043> ;
+  gen:mother <https://www.wikidata.org/wiki/Q61754323> .
+  # oo 1911-01-10 Arthur Claud Spencer Chichester, 4th Baron Templemore, 1880-09-12 – 1953-10-02, https://www.wikidata.org/wiki/Q4798258
+
+
+# ----
+#<https://www.wikidata.org/wiki/Q6259389>
+  # John Stratford, 1st Earl of Aldborough, 1698 - 1777-06-29
+  # 1st Baron of Baltinglass, co. Wicklow 1763-05-21
+  # 1st Viscount Aldborough, of Belan, co. Kildare 1776-07-22
+  # 1st Earl of Aldborough, of the Palatinate of Upper Ormond, 1st Viscount Amiens 1777-02-09
+  # oo Martha O'Neale, 1707~ - 1796-03-11, daughter of Venerable Benjamin O'Neale and Hannah Paul
+
+<#Lady_Amelia_Stratford>
+  # Lady Amelia Stratford, d. 1831-10-11
+  gen:father <https://www.wikidata.org/wiki/Q6259389> .
+  # and Martha O'Neale
+  # oo 1760-09-07 Richard Wingfield, 3rd Viscount Powerscourt, 1730-12-24 - 1788-08-08, https://www.wikidata.org/wiki/Q27493855

@@ -2155,21 +2155,115 @@
   gen:mother <#Lady_Melosina_Adelaide_Meade> .
   # oo 1832-06-22 Archibald Acheson, 3rd Earl of Gosford, 1806-08-20 - 1864-06-15, https://www.wikidata.org/wiki/Q4786188
 # ----
-#<https://www.wikidata.org/wiki/Q20712776>
+#<https://www.wikidata.org/wiki/Q16859406>
+  # Sir John Meade, 1st Baronet, 1642 - 1707-01-12
+  # 1st Baronet Meade, of Ballintubber, co. Cork 1703-05-29
+  # son of William Meade
+  # and Elizabeth Travers
+  # oo Mary Coppinger, daughter of James Coppinger
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16859406> , <#Mary_Coppinger> ;
+	gen:startDate "1671" .
+  # oo Elizabeth Redman, daughter of Daniel Redman
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16859406> , <#Elizabeth_Redman> ;
+	gen:startDate "1680-06-14" .
+  # oo Hon. Elizabeth Butler, 1673b - 1757-12
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16859406> , <butler.ttl#Elizabeth_Butler_(died_1757)> ;
+	gen:startDate "1688-06-14" .
+
+<#Elizabeth_Meade_(died_1750)>
+  # Elizabeth Meade, d. 1750-10-06
+  gen:father <https://www.wikidata.org/wiki/Q16859406> ;
+  gen:mother <#Elizabeth_Redman> .
+  # oo 1699-03-05 Sir Ralph Freke, 1st Baronet, 1675~ – 1717, https://www.wikidata.org/wiki/Q7287505
+  # oo James King, 4th Baron Kingston, 1693 — 1761-12-26, https://www.wikidata.org/wiki/Q55164902
+<#Sir_Richard_Meade,_3rd_Baronet>
+  # Sir Richard Meade, 3rd Baronet, 1697 - 1744-05-26
+  gen:father <https://www.wikidata.org/wiki/Q16859406> ;
+  gen:mother <butler.ttl#Elizabeth_Butler_(died_1757)> .
+  # oo Catherine Prittie, 1710~ - 1779-03-21
+  []
+    gen:spouse <#Sir_Richard_Meade,_3rd_Baronet> , <cavendish.ttl#Catherine_Prittie> ;
+	gen:startDate "1736" .
+
+<https://www.wikidata.org/wiki/Q20712776>
   # John Meade, 1st Earl of Clanwilliam, 1744-04-21 - 1800-10-19
   # 4th Baronet Meade, of Ballintubber, co. Cork 1744-05-26
   # 1st Baron Gillford, of the Manor of Gillford, co. Down, 1st Viscount Clanwilliam, of co. Tipperary 1766-11-17
   # 1st Earl of Clanwilliam 1776-07-20
+  gen:father <#Sir_Richard_Meade,_3rd_Baronet> ;
+  gen:mother <cavendish.ttl#Catherine_Prittie> .
   # oo Theodosia Magill, 1743-09-05 - 1817-03-02
   []
     gen:spouse <https://www.wikidata.org/wiki/Q20712776> , <https://www.wikidata.org/wiki/Q7782175> ;
 	gen:startDate "1765-08-29" .
+<#Elizabeth_Meade_(died_1807)>
+  # Elizabeth Meade, d. 1807-03-13
+  gen:father <#Sir_Richard_Meade,_3rd_Baronet> ;
+  gen:mother <cavendish.ttl#Catherine_Prittie> .
+  # 1760 Most Rev. Joseph Deane Bourke, 3rd Earl of Mayo, 1736 - 1794-08-20, https://www.wikidata.org/wiki/Q6281628
 
+<https://www.wikidata.org/wiki/Q63677113>
+  # Lady Catherine Meade, 1770-10-07 - 1793-02-17
+  gen:father <https://www.wikidata.org/wiki/Q20712776> ;
+  gen:mother <https://www.wikidata.org/wiki/Q7782175> .
+  # oo 1789-06-30 Richard Wingfield, 4th Viscount Powerscourt, 1762-10-29 - 1809-07-19, wingfield.ttl#Richard_Wingfield,_4th_Viscount_Powerscourt
 <#Lady_Melosina_Adelaide_Meade>
   # Lady Melosina Adelaide Meade, 1781~ - 1866-03-26
   gen:father <https://www.wikidata.org/wiki/Q20712776> ;
   gen:mother <https://www.wikidata.org/wiki/Q7782175> .
   # oo 1801-12-31 John Chambré Brabazon, 10th Earl of Meath, 1772-04-09 - 1851-03-15, https://www.wikidata.org/wiki/Q6222805
+# ----
+#<https://www.wikidata.org/wiki/Q29995787>
+  # Pierce Butler, 1st Viscount of Ikerrin, d. 1661-04-20b
+  # 1st Viscount of Ikerrin, co. Tipperary 1629-05-12
+  # oo Lady Helen Butler, d. 1663-06-16a
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q29995787> , <#Lady_Helen_Butler_(died_1663)> .
+
+<#James_Butler_(died_1638)>
+  # Hon. James Butler, d. 1638
+  gen:father <https://www.wikidata.org/wiki/Q29995787> ;
+  gen:mother <#Lady_Helen_Butler_(died_1663)> .
+  # oo Ellen Butler
+  []
+    gen:spouse <#James_Butler_(died_1638)> , <#Ellen_Butler> .
+
+<#Pierce_Butler,_2nd_Viscount_of_Ikerrin>
+  # Pierce Butler, 2nd Viscount of Ikerrin, b. 1637-09-03
+  gen:father <#James_Butler_(died_1638)> ;
+  gen:mother <#Ellen_Butler> .
+  # oo Eleanor Bryan, d. 1673-12-01a, daughter of John Bryan and Jane Loftus
+
+<butler.ttl#Elizabeth_Butler_(died_1757)>
+  # Hon. Elizabeth Butler, 1673b - 1757-12
+  gen:father <#Pierce_Butler,_2nd_Viscount_of_Ikerrin> .
+  # and Eleanor Bryan
+  # oo 1688-06-14 Sir John Meade, 1st Baronet, 1642 - 1707-01-12, https://www.wikidata.org/wiki/Q16859406
+# ----
+<#Lady_Helen_Butler_(died_1663)>
+  # Lady Helen Butler, d. 1663-06-16a
+  gen:father <https://www.wikidata.org/wiki/Q208819> .
+  # and Hon. Helen Butler
+  # oo Pierce Butler, 1st Viscount of Ikerrin, d. 1661-04-20b, https://www.wikidata.org/wiki/Q29995787
+# ----
+<#Ellen_Butler>
+  # Ellen Butler
+  gen:father <https://www.wikidata.org/wiki/Q5338842> .
+  # and Margaret Butler
+  # oo Hon. James Butler, d. 1638, #James_Butler_(died_1638)
+# ----
+<https://www.wikidata.org/wiki/Q7287505>
+  # Sir Ralph Freke, 1st Baronet, 1675~ – 1717
+  # 1st Baronet Freke, of Rathbarry 1713-06-04
+  gen:father <https://www.wikidata.org/wiki/Q7167353> .
+  # and Elizabeth Freke
+  # oo Elizabeth Meade, d. 1750-10-06
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7287505> , <#Elizabeth_Meade_(died_1750)> ;
+	gen:startDate "1699-03-05" .
 # ----
 #<#Robert_Hawkins-Magill>
   # Robert Hawkins-Magill, 1704 - 1745-04-10
