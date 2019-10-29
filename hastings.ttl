@@ -1,8 +1,9 @@
 @base <hastings.ttl> .
 @prefix gen: <http://jjkoch.de/gen#> .
-@prefix wen: <https://en.wikipedia.org/wiki/> .
 @prefix wdata: <https://www.wikidata.org/wiki/> .
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix wen: <https://en.wikipedia.org/wiki/> .
 
 <#Sir_Leonard_Hastings>
   # Sir Leonard Hastinges
@@ -1325,37 +1326,71 @@
 
 # ========
 <#Francis_Rawdon>
+  # Francis Rawdon
   gen:birthDate "1581~" ;
-  gen:deathDate "1668" .
-  # oo 1603 Dorothy Aldborough
+  gen:deathDate "1668-04~" .
+  # oo Dorothy Aldborough, daughter of William Aldborough
+  []
+    gen:spouse <#Francis_Rawdon> , <#Dorothy_Aldborough> ;
+	gen:startDate "1603" .
 
-<wen:Sir_George_Rawdon,_1st_Baronet>
+<https://www.wikidata.org/wiki/Q16863589>
+  # Sir George Rawdon, 1st Baronet
+  # 1st Baronet Rawdon 1665-05
   gen:birthDate "1604" ;
-  gen:deathDate "1684" ;
+  gen:deathDate "1684-08-18" ;
   gen:father <#Francis_Rawdon> ;
   gen:mother <#Dorothy_Aldborough> .
-  # oo 1635 Ursula Stafford (d. 1636), daughter of Sir Francis Stafford
-  # oo 1654-09-04 Dorothy Conway
+  # oo Ursula Stafford, d. 1636, daughter of Sir Francis Stafford
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16863589> , <#Ursula_Stafford> ;
+	gen:startDate "1635" .
+  # oo Hon. Dorothy Conway, d. 1665
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16863589> , <de_vere.ttl#Dorothy_Conway> ;
+	gen:startDate "1654-09-04" .
 
-<wen:Arthur_Rawdon>
+<#Mary_Rawdon>
+  # Mary Rawdon, 1661 - 1724-04-01
+  gen:father <https://www.wikidata.org/wiki/Q16863589> ;
+  gen:mother <de_vere.ttl#Dorothy_Conway> .
+  # oo 1678 Arthur Forbes, 2nd Earl of Granard, 1656~ - 1734-08-24, #Arthur_Forbes,_2nd_Earl_of_Granard
+<https://www.wikidata.org/wiki/Q4800084>
+  # Sir Arthur Rawdon, 2nd Baronet, 1662-10-17 - 1695-10-17
   gen:birthDate "1662-10-17" ;
   gen:deathDate "1695-10-17" ;
-  gen:father <wen:Sir_George_Rawdon,_1st_Baronet> ;
-  gen:mother <#Dorothy_Conway> .
+  gen:father <https://www.wikidata.org/wiki/Q16863589> ;
+  gen:mother <de_vere.ttl#Dorothy_Conway> .
+  # oo Helena Graham, 1663~ - 1710-03-17
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4800084> , <graham.ttl#Helena_Graham> ;
+	gen:startDate "1682-02-15~" .
 
-<wen:Sir_John_Rawdon,_3rd_Baronet>
+<#Sir_John_Rawdon,_3rd_Baronet>
+  # Sir John Rawdon, 3rd Baronet
   gen:birthDate "1690" ;
-  gen:deathDate "1724" ;
-  gen:father <wen:Arthur_Rawdon> .
-  # oo Dorothy Levinge
+  gen:deathDate "1724-02" ;
+  gen:father <https://www.wikidata.org/wiki/Q4800084> ;
+  gen:mother <graham.ttl#Helena_Graham> .
+  # oo Dorothy Levinge, d. 1733-09-12
+  []
+    gen:spouse <#Sir_John_Rawdon,_3rd_Baronet> , <#Dorothy_Levinge> ;
+	gen:startDate "1717-03-03" .
+<#Isabella_Rawdon>
+  # Isabella Rawdon, d. 1731-11-02
+  gen:father <https://www.wikidata.org/wiki/Q4800084> ;
+  gen:mother <graham.ttl#Helena_Graham> .
+  # oo 1718 Sir Richard Levinge, 2nd Baronet, 1685 - 1748-02-27, https://www.wikidata.org/wiki/Q17388542
 
 <https://www.wikidata.org/wiki/Q6254308>
   # John Rawdon, 1st Earl of Moira
+  # 4th Baronet Rawdon 1724-02
+  # 1st Earl of Moira 1761
   gen:birthDate "1720-03-17" ;
   gen:deathDate "1793-06-20" ;
-  gen:father <wen:Sir_John_Rawdon,_3rd_Baronet> ;
+  gen:father <#Sir_John_Rawdon,_3rd_Baronet> ;
   gen:mother <#Dorothy_Levinge> .
-  # oo Lady Helena Perceval, d. 1746-06-11
+  # oo Lady Helena Perceval, 1718-02-14 - 1746-06-11
   []
     gen:spouse <https://www.wikidata.org/wiki/Q6254308> , <cecil.ttl#Lady_Helena_Perceval> ;
 	gen:startDate "1741-11-10" .
@@ -1369,25 +1404,22 @@
 	gen:startDate "1752-02-26" .
 
 <#Lady_Helena_Rawdon>
-  # Lady Helena Rawdon
+  # Lady Helena Rawdon, 1744-03-27 - 1792-06-03
   gen:father <https://www.wikidata.org/wiki/Q6254308> ;
   gen:mother <cecil.ttl#Lady_Helena_Perceval> .
-  # oo 1769-06-03 Stephen Moore, 1st Earl Mount Cashell, 1730-07-25 - 1790-05-14, https://www.wikidata.org/wiki/Q7610016
+  # oo 1769-06-03 Stephen Moore, 1st Earl Mount Cashell, 1730-07-25 - 1790-05-14, https://www.wikidata.org/wiki/Q7610016 (cavendish.ttl)
 <#Lady_Catherine_Rawdon>
   # Lady Catherine Rawdon
   gen:father <https://www.wikidata.org/wiki/Q6254308> ;
   gen:mother <cecil.ttl#Lady_Helena_Perceval> .
   # oo 1764-04-30 Joseph Henry, 1727 - 1797, talbot.ttl#Joseph_Henry
 <#Lady_Selina_Frances_Rawdon>
-  gen:deathDate "1827" ;
+  # Lady Selina Frances Rawdon
+  gen:birthDate "1759-04-09" ;
+  gen:deathDate "1827-05" ;
   gen:father <https://www.wikidata.org/wiki/Q6254308> ;
   gen:mother <https://www.wikidata.org/wiki/Q5363409> .
-  # oo 1779-05-10 wen:George_Forbes,_6th_Earl_of_Granard (1760 – 1837-06-09)
-<#Lady_Charlotte_Adelaide_Constantia_Rawdon>
-  gen:deathDate "1834" ;
-  gen:father <https://www.wikidata.org/wiki/Q6254308> ;
-  gen:mother <https://www.wikidata.org/wiki/Q5363409> .
-  # oo Hamilton Fitzgerald
+  # oo 1779-05-10 George Forbes, 6th Earl of Granard, 1760-06-14 – 1837-06-09, https://www.wikidata.org/wiki/Q5539338
 <#Lady_Anne_Elizabeth_Rawdon>
   # Lady Anne Elizabeth Rawdon
   gen:birthDate "1753-05-16" ;
@@ -1397,6 +1429,10 @@
   # oo 1788-02-14 Thomas Brudenell-Bruce, 1st Earl of Ailesbury, 1729-04-30 - 1814-04-19, https://www.wikidata.org/wiki/Q7611139
 <https://www.wikidata.org/wiki/Q692434>
   # Francis Rawdon-Hastings, 1st Marquess of Hastings
+  # 5th Baronet Rawdon, 2nd Earl of Moira 1793-06-20
+  # 1st Baron Rawdon of Rawdon, co. York 1783-03-04
+  # 13th Baron Hastings, 12th Baron Hastings, of Hungerford, 16th Baron Hungerford,, de jure, 17th Baron Botreaux, 14th Baron Moleyns, de jure 1808-04-11
+  # 1st Viscount Loudoun, 1st Earl of Rawdon, 1st Marquess of Hastings 1817-04-13
   gen:birthDate "1754-12-09" ;
   gen:deathDate "1826-11-28" ;
   gen:father <https://www.wikidata.org/wiki/Q6254308> ;
@@ -1405,7 +1441,7 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q692434> , <https://www.wikidata.org/wiki/Q5460339> ;
 	gen:startDate "1804-07-12" .
-<#John_Theophilus_Rawdon>
+<https://www.wikidata.org/wiki/Q26454828>
   # Hon. John Theophilus Rawdon
   gen:birthDate "1756-11-19" ;
   gen:deathDate "1808-05-05" ;
@@ -1413,17 +1449,13 @@
   gen:mother <https://www.wikidata.org/wiki/Q5363409> .
   # oo Frances Stevenson, daughter of Joseph William Hall-Stevenson
   []
-    gen:spouse <#John_Theophilus_Rawdon> , <#Frances_Stevenson> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q26454828> , <#Frances_Stevenson> ;
 	gen:startDate "1792-10-30" .
 
-<wen:Lady_Flora_Hastings>
+<https://www.wikidata.org/wiki/Q1429262>
+  # Lady Flora Elizabeth Rawdon-Hastings
   gen:birthDate "1806-02-11" ;
   gen:deathDate "1839-07-05" ;
-  gen:father <https://www.wikidata.org/wiki/Q692434> ;
-  gen:mother <https://www.wikidata.org/wiki/Q5460339> .
-<#Honourable_Francis_George_Augustus_Rawdon-Hastings>
-  gen:birthDate "1807" ;
-  gen:deathDate "1807" ;
   gen:father <https://www.wikidata.org/wiki/Q692434> ;
   gen:mother <https://www.wikidata.org/wiki/Q5460339> .
 <https://www.wikidata.org/wiki/Q5543740>
@@ -1432,22 +1464,24 @@
   gen:deathDate "1844-01-13" ;
   gen:father <https://www.wikidata.org/wiki/Q692434> ;
   gen:mother <https://www.wikidata.org/wiki/Q5460339> .
-  # oo 
+  # oo Barbara Yelverton, Baroness Grey (of Ruthin), 1810-05-20 - 1858-11-19 (talbot.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5543740> , <https://www.wikidata.org/wiki/Q4859241> ;
 	gen:startDate "1831-08-01" .
-<#Sophia_Frederica_Christina_Rawdon-Hastings>
+<https://www.wikidata.org/wiki/Q64686762>
+  # Lady Sophia Frederica Christina Rawdon-Hastings
   gen:birthDate "1809-02-01" ;
   gen:deathDate "1859-12-28" ;
   gen:father <https://www.wikidata.org/wiki/Q692434> ;
   gen:mother <https://www.wikidata.org/wiki/Q5460339> .
-  # oo 1834 wen:John_Crichton-Stuart,_2nd_Marquess_of_Bute (1793-08-10 – 1848-03-18)
-<#Selina_Constance_Rawdon-Hastings>
+  # oo 1845-04-19 John Crichton-Stuart, 2nd Marquess of the County of Bute, 1793-08-10 – 1848-03-18, https://www.wikidata.org/wiki/Q284238
+<#Lady_Selina_Constance_Rawdon-Hastings>
+  # Lady Selina Constance Rawdon-Hastings
   gen:birthDate "1810" ;
   gen:deathDate "1867-11-08" ;
   gen:father <https://www.wikidata.org/wiki/Q692434> ;
   gen:mother <https://www.wikidata.org/wiki/Q5460339> .
-  # oo Charles Henry
+  # oo 1838-06-25 Charles John Henry, talbot.ttl#Charles_John_Henry
 <#Lady_Adelaide_Augusta_Lavinia_Rawdon-Hastings>
   # Lady Adelaide Augusta Lavinia Rawdon-Hastings
   gen:birthDate "1812-02-25" ;
@@ -1456,28 +1490,33 @@
   gen:mother <https://www.wikidata.org/wiki/Q5460339> .
   # oo 1854-07-08 Sir William Keith-Murray of Ochtertyre, 7th Baronet, 1801-07-19 - 1861-10-16, https://www.wikidata.org/wiki/Q42305838
 <https://www.wikidata.org/wiki/Q6470598>
-  # Elizabeth Anne Rawdon, d. 1874-08-10
-  gen:father <#John_Theophilus_Rawdon> ;
+  owl:sameAs <https://www.wikidata.org/wiki/Q46595529> ;
+  # Elizabeth Anne Rawdon, 1793 - 1874-08-10
+  gen:father <https://www.wikidata.org/wiki/Q26454828> ;
   gen:mother <#Frances_Stevenson> .
   # oo 1817-06-21 Lord Sir George William Russell, 1790-05-08 - 1846-07-17, https://www.wikidata.org/wiki/Q337622
 
-<#Paulyn_Reginald_Serlo_Rawdon-Hastings,_3rd_Marquess_of_Hastings,_8th_Earl_of_Loudoun>
-  gen:birthDate "1832" ;
-  gen:deathDate "1851" ;
+<https://www.wikidata.org/wiki/Q26000609>
+  # Paulyn Reginald Serlo Rawdon-Hastings, 3rd Marquess of Hastings
+  gen:birthDate "1832-06-02" ;
+  gen:deathDate "1851-01-17" ;
   gen:father <https://www.wikidata.org/wiki/Q5543740> ;
   gen:mother <https://www.wikidata.org/wiki/Q4859241> .
-<wen:Edith_Rawdon-Hastings,_10th_Countess_of_Loudoun>
+<https://www.wikidata.org/wiki/Q5338652>
+  # Edith Maud Rawdon-Hastings, 10th Countess of Loudoun
   gen:birthDate "1833-12-10" ;
   gen:deathDate "1874-01-23" ;
   gen:father <https://www.wikidata.org/wiki/Q5543740> ;
   gen:mother <https://www.wikidata.org/wiki/Q4859241> .
-  # oo 1853-04-30 Charles Frederick Abney-Hastings, 1st Baron Donington, 1822-06-17 - 1895-07-24, #Charles_Frederick_Abney-Hastings,_1st_Baron_Donington
-<wen:Bertha_Clifton,_22nd_Baroness_Grey_de_Ruthyn>
-  gen:name "Lady Bertha Lelgarde Rawdon-Hastings"@en ;
-  gen:birthDate "1835" ;
-  gen:deathDate "1887" ;
+  # oo 1853-04-30 Charles Frederick Abney-Hastings, 1st Baron Donington, 1822-06-17 - 1895-07-24, https://www.wikidata.org/wiki/Q62068203
+<#Bertha_Lelgarde_Rawdon-Hastings,_22nd_Baroness_Grey_de_Ruthyn>
+  gen:name "Bertha Lelgarde Rawdon-Hastings, 22nd Baroness Grey (of Ruthin)"@en ;
+  # 22nd Baroness Grey, of Ruthin 1885-12-29
+  gen:birthDate "1835-04-30" ;
+  gen:deathDate "1887-12-15" ;
   gen:father <https://www.wikidata.org/wiki/Q5543740> ;
   gen:mother <https://www.wikidata.org/wiki/Q4859241> .
+  # oo 1855-12-11 Augustus Wykeham Clifton, 1829-03-02 - 1915-05-09, #Augustus_Wykeham_Clifton
 <#Lady_Victoria_Maria_Louisa_Rawdon-Hastings>
   gen:birthDate "1837" ;
   gen:deathDate "1888" ;
@@ -1499,71 +1538,236 @@
   gen:deathDate "1910-09-01" ;
   gen:father <https://www.wikidata.org/wiki/Q5543740> ;
   gen:mother <https://www.wikidata.org/wiki/Q4859241> .
-  # oo 1863-07-30 Charles Marsham, 4th Earl of Romney, 1841-03-07 - 1905-08-21, https://www.wikidata.org/wiki/Q5080688
+  # oo 1863-07-30 Charles Marsham, 4th Earl of Romney, 1841-03-07 - 1905-08-21, https://www.wikidata.org/wiki/Q5080688 (scott.ttl)
 
 
 # --------
 <#Dorothy_Aldborough>
+  # Dorothy Aldborough
   gen:deathDate "1660" ;
   gen:father <#William_Aldborough> .
+  # oo 1603 Francis Rawdon, 1581~ - 1668-04~, #Francis_Rawdon
+
+# ----
+#<https://www.wikidata.org/wiki/Q2490559>
+  # Sir Arthur Forbes, 1st Baronet, 1590~ - 1632-04-14
+  # 1st Baronet Forbes, of Castle Forbes, Co. Longford, Ireland 1628-09-29
+  # son of William Forbes of Corse
+  # and Elizabeth Strachan
+  # oo Jane Lauder
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2490559> , <#Jane_Lauder> ;
+	gen:startDate "1618-02-12a/1623b" .
+
+<https://www.wikidata.org/wiki/Q2491208>
+  # Arthur Forbes, 1st Earl of Granard, 1623~ - 1695
+  # 2nd Baronet Forbes, of Castle Forbes, Co. Longford, Ireland 1652-04-14
+  # 1st Baron Clanehugh, co. Longford, 1st Viscount of Granard, co. Longford 1675-11-22
+  # 1st Earl of Granard 1684-12-30
+  gen:father <https://www.wikidata.org/wiki/Q2490559> ;
+  gen:mother <#Jane_Lauder> .
+  # oo Catherine Newcomen, d. 1714-12-08
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2491208> , <#Catherine_Newcomen> ;
+	gen:startDate "1655~" .
+
+<#Arthur_Forbes,_2nd_Earl_of_Granard>
+  # Arthur Forbes, 2nd Earl of Granard, 1656~ - 1734-08-24
+  gen:father <https://www.wikidata.org/wiki/Q2491208> ;
+  gen:mother <#Catherine_Newcomen> .
+  # oo Mary Rawdon, 1661 - 1724-04-01
+  []
+    gen:spouse <#Arthur_Forbes,_2nd_Earl_of_Granard> , <#Mary_Rawdon> ;
+	gen:startDate "1678" .
+
+<https://www.wikidata.org/wiki/Q2491203>
+  # George Forbes, 3rd Earl of Granard, 1685-10-21 - 1765-10-29
+  gen:father <#Arthur_Forbes,_2nd_Earl_of_Granard> ;
+  gen:mother <#Mary_Rawdon> .
+  # oo Hon. Mary Stewart, 1677~ - 1758-10-04
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2491203> , <stuart.ttl#Mary_Stewart_(died_1758)> ;
+	gen:startDate "1709" .
+
+<https://www.wikidata.org/wiki/Q5539337>
+  # George Forbes, 4th Earl of Granard, 1710-03-15 - 1769-10-16
+  gen:father <https://www.wikidata.org/wiki/Q2491203> ;
+  gen:mother <stuart.ttl#Mary_Stewart_(died_1758)> .
+  # oo Letitia Davys, d. 1778-05-19
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5539337> , <https://www.wikidata.org/wiki/Q46992730> ;
+	gen:startDate "1736-07-16" .
+
+<#George_Forbes,_5th_Earl_of_Granard>
+  # George Forbes, 5th Earl of Granard, 1740-04-02 - 1780-04-16
+  gen:father <https://www.wikidata.org/wiki/Q5539337> ;
+  gen:mother <https://www.wikidata.org/wiki/Q46992730> .
+  # oo Dorothea Bayly, 1738-03-15 - 1764-02-24
+  []
+    gen:spouse <#George_Forbes,_5th_Earl_of_Granard> , <paget.ttl#Dorothea_Bayly> ;
+	gen:startDate "1759-07-12" .
+  # oo Lady Georgiana Augusta Berkeley, 1749-09-18 - 1820-01-24
+  []
+    gen:spouse <#George_Forbes,_5th_Earl_of_Granard> , <lennox.ttl#Lady_Georgiana_Augusta_Berkeley> ;
+	gen:startDate "1766-04-20" .
+
+<https://www.wikidata.org/wiki/Q5539338>
+  # George Forbes, 6th Earl of Granard, 1760-06-14 – 1837-06-09
+  gen:father <#George_Forbes,_5th_Earl_of_Granard> ;
+  gen:mother <paget.ttl#Dorothea_Bayly> .
+  # oo Lady Selina Frances Rawdon, 1759-04-09 - 1827-05
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5539338> , <#Lady_Selina_Frances_Rawdon> ;
+	gen:startDate "1779-05-10" .
+<#Lady_Louisa_Georgiana_Forbes>
+  # Lady Louisa Georgiana Forbes, 1779-12 – 1830-01-25
+  gen:father <#George_Forbes,_5th_Earl_of_Granard> ;
+  gen:mother <lennox.ttl#Lady_Georgiana_Augusta_Berkeley> .
+  # oo 1806-06-19 Sir William Pratt Call, 2nd Baronet, 1781-09-28 - 1851-12-03, https://www.wikidata.org/wiki/Q7529520
+# ----
+#<#Sir_Robert_Newcomen,_1st_Baronet>
+  # Sir Robert Newcomen, 1st Baronet, d. 1629-09-28
+  # 1st Baronet Newcomen
+  # son of Charles Newcomen
+  # and Jane Nightingale
+  # oo Catherine Molyneux
+  []
+    gen:spouse <#Sir_Robert_Newcomen,_1st_Baronet> , <lennox.ttl#Catherine_Molyneux> ;
+	gen:startDate "1600b" .
+
+<#Sir_Robert_Newcomen,_4th_Baronet>
+  # Sir Robert Newcomen, 4th Baronet, d. 1677-08-12
+  gen:father <#Sir_Robert_Newcomen,_1st_Baronet> ;
+  gen:mother <lennox.ttl#Catherine_Molyneux> .
+  # oo Anne Boleyn
+<#Frances_Newcomen>
+  # Frances Newcomen
+  gen:father <#Sir_Robert_Newcomen,_1st_Baronet> .
+  # oo Sir William Stewart, 1st Baronet, d. 1646-10-08a/1647-07-28b, stuart.ttl#Sir_William_Stewart,_1st_Baronet
+
+<#Catherine_Newcomen>
+  # Catherine Newcomen, d. 1714-12-08
+  gen:father <#Sir_Robert_Newcomen,_4th_Baronet> .
+  # and Anne Boleyn
+  # oo 1648~ Sir Alexander Stewart, 2nd Baronet, d. 1650-09-03, stuart.ttl#Sir_Alexander_Stewart,_2nd_Baronet
+  # oo 1655~ Arthur Forbes, 1st Earl of Granard, 1623~ - 1695, https://www.wikidata.org/wiki/Q2491208
+# ----
+#<stuart.ttl#Sir_William_Stewart,_1st_Baronet>
+  # Sir William Stewart, 1st Baronet, d. 1646-10-08a/1647-07-28b
+  # 1st Baronet Stewart, of Ramelton, co. Donegal 1623-05-02
+  # oo Frances Newcomen, daughter of Sir Robert Newcomen, 1st Baronet
+  []
+    gen:spouse <stuart.ttl#Sir_William_Stewart,_1st_Baronet> , <hastings.ttl#Frances_Newcomen> .
+
+<stuart.ttl#Sir_Alexander_Stewart,_2nd_Baronet>
+  # Sir Alexander Stewart, 2nd Baronet, d. 1650-09-03
+  gen:father <stuart.ttl#Sir_William_Stewart,_1st_Baronet> ;
+  gen:mother <hastings.ttl#Frances_Newcomen> .
+  # oo Catherine Newcomen
+  []
+    gen:spouse <stuart.ttl#Sir_Alexander_Stewart,_2nd_Baronet> , <hastings.ttl#Catherine_Newcomen> ;
+	gen:startDate "1648~" .
+
+<https://www.wikidata.org/wiki/Q16859774>
+  # William Stewart, 1st Viscount Mountjoy, 1650-10 - 1692-08-03
+  # 3rd Baronet Stewart, of Ramelton, co. Donegal 1650-10
+  # 1st Baron Stewart of Ramalton, co. Donegal, 1st Viscount Mountjoy, of co. Tyrone 1683-03-19
+  gen:father <stuart.ttl#Sir_Alexander_Stewart,_2nd_Baronet> ;
+  gen:mother <hastings.ttl#Catherine_Newcomen> .
+  # oo Hon. Mary Coote
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16859774> , <#Mary_Coote> .
+
+<stuart.ttl#Mary_Stewart_(died_1758)>
+  # Hon. Mary Stewart, 1677~ - 1758-10-04
+  gen:father <https://www.wikidata.org/wiki/Q16859774> ;
+  gen:mother <#Mary_Coote> .
+  # oo 1709 George Forbes, 3rd Earl of Granard, 1685-10-21 - 1765-10-29, https://www.wikidata.org/wiki/Q2491203
+<stuart.ttl#Catherine_Stewart>
+  # Hon. Catherine Stewart
+  gen:father <https://www.wikidata.org/wiki/Q16859774> ;
+  gen:mother <#Mary_Coote> .
+  # oo Arthur Davys, d. 1733-10, https://www.wikidata.org/wiki/Q4798425
+# ----
+#<https://www.wikidata.org/wiki/Q17279241>
+  # Sir Charles Coote, 1st Baronet, 1581 - 1642-05
+  # 1st Baronet Coote, of Castle Cuffe, Queen's Co. 1621-04-02
+  # son of Sir Nicholas Coote
+  # and Anne Cooper
+  # oo Dorothea Cuffe, daughter of Hugh Cuffe
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q17279241> , <#Dorothea_Cuffe> ;
+	gen:startDate "1604~" .
+
+<#Richard_Coote,_1st_Lord_Coote>
+  # Richard Coote, 1st Lord Coote, Baron of Coloony, 1620 - 1683-07-10
+  # 1st Lord Coote, Baron of Coloony, co. Sligo 1660-09-06
+  gen:father <https://www.wikidata.org/wiki/Q17279241> ;
+  gen:mother <#Dorothea_Cuffe> .
+  # oo Mary St. George, d. 1701-11-05, daughter of Sir George St. George and Katherine Gifford
+
+<#Mary_Coote>
+  # Hon. Mary Coote
+  gen:father <#Richard_Coote,_1st_Lord_Coote> .
+  # and Mary St. George
+  # oo William Stewart, 1st Viscount Mountjoy, 1650-10 - 1692-08-03, https://www.wikidata.org/wiki/Q16859774
+# ----
+#<https://www.wikidata.org/wiki/Q4798425>
+  # Arthur Davys, d. 1733-10
+  # oo Hon. Catherine Stewart
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4798425> , <stuart.ttl#Catherine_Stewart> .
+
+<https://www.wikidata.org/wiki/Q46992730>
+  # Letitia Davys, d. 1778-05-19
+  gen:father <https://www.wikidata.org/wiki/Q4798425> ;
+  gen:mother <stuart.ttl#Catherine_Stewart> .
+  # oo 1736-07-16 George Forbes, 4th Earl of Granard, 1710-03-15 - 1769-10-16, https://www.wikidata.org/wiki/Q5539337
 
 # --------
-<wen:Edward_Conway,_2nd_Viscount_Conway>
-  gen:birthDate "1594-08-10b" ;
-  gen:deathDate "1655-06-26" .
-  # oo Frances Popham
-
-<#Dorothy_Conway>
-  gen:father <wen:Edward_Conway,_2nd_Viscount_Conway> ;
-  gen:mother <#Frances_Popham> .
-
-# --------
-<#Frances_Popham>
-  gen:father <wen:Francis_Popham_(1573%E2%80%931644)> .
-
-# --------
-<wen:Sir_Richard_Levinge,_1st_Baronet>
+<https://www.wikidata.org/wiki/Q7528615>
+  # Rt. Hon. Sir Richard Levinge, 1st Baronet
+  # 1st Baronet Levinge, of High Park, co. Westmeath 1704-10-26
   gen:birthDate "1656-05-02" ;
   gen:deathDate "1724-07-13" .
+  # oo Mary Corbyn, daughter of Sir Gawen Corbyn
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7528615> , <#Mary_Corbyn> ;
+	gen:startDate "1680" .
 
 <#Dorothy_Levinge>
-  gen:father <wen:Sir_Richard_Levinge,_1st_Baronet> .
-
-# --------
-<wen:John_Perceval,_1st_Earl_of_Egmont>
-  gen:birthDate "1683-07-12" ;
-  gen:deathDate "1748-05-01" .
-
-<cecil.ttl#Lady_Helena_Perceval>
-  gen:deathDate "1746-06-12" ;
-  gen:father <wen:John_Perceval,_1st_Earl_of_Egmont> ;
-  gen:mother <#Lady_Catherine_Parker> .
-
-# --------
-<wen:Henry_Yelverton,_19th_Baron_Grey_de_Ruthyn>
-  gen:birthDate "1780-09-08" ;
-  gen:deathDate "1810-10-29" .
-
-<https://www.wikidata.org/wiki/Q4859241>
-  gen:birthDate "1810-05-20" ;
-  gen:deathDate "1858-11-18" ;
-  gen:father <wen:Henry_Yelverton,_19th_Baron_Grey_de_Ruthyn> ;
-  gen:mother <#Anna_Maria_Kelham> .
-
-# --------
-<#Anna_Maria_Kelham>
-  gen:birthDate "1792" ;
-  gen:deathDate "1875" .
+  # Dorothy Levinge, d. 1733-09-12
+  gen:father <https://www.wikidata.org/wiki/Q7528615> ;
+  gen:mother <#Mary_Corbyn> .
+  # oo 1717-03-03 Sir John Rawdon, 3rd Baronet, 1690 - 1724-02, #Sir_John_Rawdon,_3rd_Baronet
+  # oo 1730 Most Rev. Charles Cobbe, 1686 - 1765-04-14, https://www.wikidata.org/wiki/Q5076343
+<https://www.wikidata.org/wiki/Q17388542>
+  # Sir Richard Levinge, 2nd Baronet, 1685 - 1748-02-27
+  gen:father <https://www.wikidata.org/wiki/Q7528615> ;
+  gen:mother <#Mary_Corbyn> .
+  # oo Isabella Rawdon, d. 1731-11-02
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q17388542> , <#Isabella_Rawdon> ;
+	gen:startDate "1718" .
+# ----
+#<https://www.wikidata.org/wiki/Q5076343>
+  # Most Rev. Charles Cobbe, 1686 - 1765-04-14
+  # son of Thomas Cobbe
+  # and Veriana Chaloner
+  # oo Dorothy Levinge, d. 1733-09-12
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5076343> , <#Dorothy_Levinge> ;
+	gen:startDate "1730" .
 
 
 # ========
 <wen:John_Talbot_Clifton_(MP)>
   gen:birthDate "1819-03-05" ;
   gen:deathDate "1882-04-16" ;
-  gen:father <#Thomas_Joseph_Clifton> ;
-  gen:mother <#Hatty_Treves> .
+  gen:father <#Thomas_Joseph_Clifton> ; # son of Thomas Joseph Clifton
+  gen:mother <#Hatty_Treves> . # Hetty Treves
   # oo 1844-04-22 Eleanor Cecily Lowther
-<#Charles_Frederick_Abney-Hastings,_1st_Baron_Donington>
+<https://www.wikidata.org/wiki/Q62068203>
   # Charles Frederick Abney-Hastings, 1st Baron Donington
   # 1st Baron Donington, of Donington Park, co. Leicester [U.K.] on 4 May 1880
   gen:birthDate "1822-06-17" ;
@@ -1572,8 +1776,16 @@
   gen:mother <#Hatty_Treves> .
   # oo Edith Rawdon-Hastings, 10th Countess of Loudoun, 1833-12-10 - 1874-01-23
   []
-    gen:spouse <#Charles_Frederick_Abney-Hastings,_1st_Baron_Donington> , <wen:Edith_Rawdon-Hastings,_10th_Countess_of_Loudoun> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q62068203> , <https://www.wikidata.org/wiki/Q5338652> ;
 	gen:startDate "1853-04-30" .
+<#Augustus_Wykeham_Clifton>
+  # Augustus Wykeham Clifton, 1829-03-02 - 1915-05-09
+  gen:father <#Thomas_Joseph_Clifton> ;
+  gen:mother <#Hatty_Treves> .
+  # oo Bertha Lelgarde Rawdon-Hastings, 22nd Baroness Grey (of Ruthin), 1835-04-30 - 1887-12-15
+  []
+    gen:spouse <#Augustus_Wykeham_Clifton> , <#Bertha_Lelgarde_Rawdon-Hastings,_22nd_Baroness_Grey_de_Ruthyn> ;
+	gen:startDate "1855-12-11" .
 
 <wen:Thomas_Henry_Clifton>
   gen:birthDate "1845-03-03" ;
@@ -1585,15 +1797,15 @@
   # Lady Flora Paulyna Hetty Barbara Abney-Hastings
   gen:birthDate "1854-02-13" ;
   gen:deathDate "1887-04-11" ;
-  gen:father <Charles_Frederick_Abney-Hastings,_1st_Baron_Donington> ;
-  gen:mother <wen:Edith_Rawdon-Hastings,_10th_Countess_of_Loudoun> .
+  gen:father <https://www.wikidata.org/wiki/Q62068203> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5338652> .
   # oo 1877-11-21 Henry Fitzalan-Howard, 15th Duke of Norfolk, 1847-12-27 - 1917-02-11, https://www.wikidata.org/wiki/Q547536
 <https://www.wikidata.org/wiki/Q5081946>
   # Charles Edward Rawdon-Hastings, 11th Earl of Loudoun
   gen:birthDate "1855-01-05" ;
   gen:deathDate "1920-05-17" ;
-  gen:father <#Charles_Frederick_Abney-Hastings,_1st_Baron_Donington> ;
-  gen:mother <wen:Edith_Rawdon-Hastings,_10th_Countess_of_Loudoun> .
+  gen:father <https://www.wikidata.org/wiki/Q62068203> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5338652> .
   # oo Hon. Alice Mary Elizabeth Fitzalan-Howard, 1856-06-20 - 1915-05-10
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5081946> , <howard.ttl#Alice_Elizabeth_Fitzalan-Howard> ;
@@ -1601,24 +1813,24 @@
 <#Major_Paulyn_Francis_Cuthbert_Rawdon-Hastings>
   gen:birthDate "1856" ;
   gen:deathDate "1907" ;
-  gen:father <#Charles_Frederick_Abney-Hastings,_1st_Baron_Donington> ;
-  gen:mother <wen:Edith_Rawdon-Hastings,_10th_Countess_of_Loudoun> .
+  gen:father <https://www.wikidata.org/wiki/Q62068203> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5338652> .
   # oo Lady Maud Grimston
 <wen:Gilbert_Clifton-Hastings-Campbell,_3rd_Baron_Donington>
   gen:birthDate "1859" ;
   gen:deathDate "1927" ;
-  gen:father <#Charles_Frederick_Abney-Hastings,_1st_Baron_Donington> ;
-  gen:mother <wen:Edith_Rawdon-Hastings,_10th_Countess_of_Loudoun> .
+  gen:father <https://www.wikidata.org/wiki/Q62068203> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5338652> .
 <#Henry_Cecil_Plantagenet_Clifton>
   gen:birthDate "1860" ;
   gen:deathDate "1886" ;
-  gen:father <#Charles_Frederick_Abney-Hastings,_1st_Baron_Donington> ;
-  gen:mother <wen:Edith_Rawdon-Hastings,_10th_Countess_of_Loudoun> .
+  gen:father <https://www.wikidata.org/wiki/Q62068203> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5338652> .
 <#Lady_Egidia_Sophia_Frederica_Christina_Clifton>
   gen:birthDate "1870" ;
   gen:deathDate "1892" ;
-  gen:father <#Charles_Frederick_Abney-Hastings,_1st_Baron_Donington> ;
-  gen:mother <wen:Edith_Rawdon-Hastings,_10th_Countess_of_Loudoun> .
+  gen:father <https://www.wikidata.org/wiki/Q62068203> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5338652> .
 
 <wen:John_Talbot_Clifton>
   gen:birthDate "1868-12-01" ;
