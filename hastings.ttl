@@ -1232,6 +1232,7 @@
   # oo 1944-06-17 Wogan Philipps, 2nd Baron Milford, 1902-02-25 - 1993-11-30, https://www.wikidata.org/wiki/Q335851
 # ----
 #<#Sir_James_Philipps,_12th_Baronet>
+# see coventry.ttl
   # Rev. Sir James Erasmus Philipps, 12th Baronet, 1824-10-23 - 1912-20-21
   # oo Hon. Mary Margaret Best, 1837~ - 1913-09-05, daughter of Rev. Hon. Samuel Best and Emma Duke
   []
@@ -1518,8 +1519,9 @@
   gen:mother <https://www.wikidata.org/wiki/Q4859241> .
   # oo 1855-12-11 Augustus Wykeham Clifton, 1829-03-02 - 1915-05-09, #Augustus_Wykeham_Clifton
 <#Lady_Victoria_Maria_Louisa_Rawdon-Hastings>
-  gen:birthDate "1837" ;
-  gen:deathDate "1888" ;
+  # Lady Victoria Maria Louisa Rawdon-Hastings
+  gen:birthDate "1837-07-18" ;
+  gen:deathDate "1888-03-30" ;
   gen:father <https://www.wikidata.org/wiki/Q5543740> ;
   gen:mother <https://www.wikidata.org/wiki/Q4859241> .
 <https://www.wikidata.org/wiki/Q5727394>
@@ -1761,15 +1763,50 @@
 
 
 # ========
-<wen:John_Talbot_Clifton_(MP)>
+#<#Thomas_Clifton>
+  # Thomas Clifton, 1728-01-09 - 1783-05-11
+  # oo Lady Jane Bertie, 1730~ - 1791-02-25
+  []
+    gen:spouse <#Thomas_Clifton> , <bertie.ttl#Lady_Jane_Bertie_(died_1791)> ;
+	gen:startDate "1760" .
+
+<#John_Clifton>
+  # John Clifton, 1764-01-25 - 1832-03-23
+  gen:father <#Thomas_Clifton> ;
+  gen:mother <bertie.ttl#Lady_Jane_Bertie_(died_1791)> .
+  # oo Elizabeth Riddell
+  []
+    gen:spouse <#John_Clifton> , <#Elizabeth_Riddell> ;
+	gen:startDate "1785-11-22" .
+<#Catherine_Clifton>
+  # Catherine Clifton, 1766-12-01 - 1791-05
+  gen:father <#Thomas_Clifton> ;
+  gen:mother <bertie.ttl#Lady_Jane_Bertie_(died_1791)> .
+  # oo 1789-05-29 John Joseph Talbot, 1765-06-09 - 1815-08-08, talbot.ttl#John_Joseph_Talbot
+
+<#Thomas_Joseph_Clifton>
+  # Thomas Joseph Clifton, 1788-01-29 - 1851-07
+  gen:father <#John_Clifton> ;
+  gen:mother <#Elizabeth_Riddell> .
+  # oo Hetty Treves, d. 1864-06-04, daughter of Peregrine Treves
+  []
+    gen:spouse <#Thomas_Joseph_Clifton> , <#Hatty_Treves> ;
+	gen:startDate "1817-03-17" .
+
+<https://www.wikidata.org/wiki/Q6260189>
+  # John Talbot Clifton
   gen:birthDate "1819-03-05" ;
   gen:deathDate "1882-04-16" ;
-  gen:father <#Thomas_Joseph_Clifton> ; # son of Thomas Joseph Clifton
-  gen:mother <#Hatty_Treves> . # Hetty Treves
-  # oo 1844-04-22 Eleanor Cecily Lowther
+  gen:father <#Thomas_Joseph_Clifton> ;
+  gen:mother <#Hatty_Treves> .
+  # oo Lady Eleanor Cecily Lowther, 1822-12-20 - 1894-11-24
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6260189> , <bentinck.ttl#Lady_Eleanor_Cecily_Lowther> ;
+	gen:startDate "1844-04-22" .
 <https://www.wikidata.org/wiki/Q62068203>
   # Charles Frederick Abney-Hastings, 1st Baron Donington
-  # 1st Baron Donington, of Donington Park, co. Leicester [U.K.] on 4 May 1880
+  # Charles Frederick Clifton 1859
+  # 1st Baron Donington, of Donington Park, co. Leicester 1880-05-04
   gen:birthDate "1822-06-17" ;
   gen:deathDate "1895-07-24" ;
   gen:father <#Thomas_Joseph_Clifton> ;
@@ -1787,12 +1824,16 @@
     gen:spouse <#Augustus_Wykeham_Clifton> , <#Bertha_Lelgarde_Rawdon-Hastings,_22nd_Baroness_Grey_de_Ruthyn> ;
 	gen:startDate "1855-12-11" .
 
-<wen:Thomas_Henry_Clifton>
+<https://www.wikidata.org/wiki/Q26702418>
+  # Thomas Henry Clifton
   gen:birthDate "1845-03-03" ;
   gen:deathDate "1880-03-31" ;
-  gen:father <wen:John_Talbot_Clifton_(MP)> ;
-  gen:mother <#Eleanor_Cecily_Lowther> .
-  # oo 1867 Madeline Agnew
+  gen:father <https://www.wikidata.org/wiki/Q6260189> ;
+  gen:mother <bentinck.ttl#Lady_Eleanor_Cecily_Lowther> .
+  # oo Madeline Diana Elizabeth Agnew, 1847-08-22 - 1907-10-19
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q26702418> , <carnegie.ttl#Madeline_Diana_Elizabeth_Agnew> ;
+	gen:startDate "1867-02-07" .
 <#Lady_Flora_Paulyna_Hetty_Barbara_Abney_Hastings>
   # Lady Flora Paulyna Hetty Barbara Abney-Hastings
   gen:birthDate "1854-02-13" ;
@@ -1802,6 +1843,8 @@
   # oo 1877-11-21 Henry Fitzalan-Howard, 15th Duke of Norfolk, 1847-12-27 - 1917-02-11, https://www.wikidata.org/wiki/Q547536
 <https://www.wikidata.org/wiki/Q5081946>
   # Charles Edward Rawdon-Hastings, 11th Earl of Loudoun
+  # 21st Baron Hungerford, 19th Baron Moleyns, 12th Lord Campbell of Loudoun, 11th Earl of Loudoun, 11th Lord Tarrinzean and Mauchline 1874-01-23
+  # 2nd Baron Donington, of Donington Park, co. Leicester 1895-07-24
   gen:birthDate "1855-01-05" ;
   gen:deathDate "1920-05-17" ;
   gen:father <https://www.wikidata.org/wiki/Q62068203> ;
@@ -1810,166 +1853,221 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5081946> , <howard.ttl#Alice_Elizabeth_Fitzalan-Howard> ;
 	gen:startDate "1880-02-04" .
-<#Major_Paulyn_Francis_Cuthbert_Rawdon-Hastings>
-  gen:birthDate "1856" ;
-  gen:deathDate "1907" ;
+<#Paulyn_Francis_Cuthbert_Rawdon-Hastings>
+  # Paulyn Francis Cuthbert Rawdon-Hastings
+  gen:birthDate "1856-10-21" ;
+  gen:deathDate "1907-10-19" ;
   gen:father <https://www.wikidata.org/wiki/Q62068203> ;
   gen:mother <https://www.wikidata.org/wiki/Q5338652> .
-  # oo Lady Maud Grimston
-<wen:Gilbert_Clifton-Hastings-Campbell,_3rd_Baron_Donington>
-  gen:birthDate "1859" ;
-  gen:deathDate "1927" ;
+  # oo Lady Maud Grimston, 1857-06-16 - 1929-09-03
+  []
+    gen:spouse <#Paulyn_Francis_Cuthbert_Rawdon-Hastings> , <brudenell.ttl#Lady_Maud_Grimston> ;
+	gen:startDate "1881-12-20" .
+<https://www.wikidata.org/wiki/Q26254013>
+  # Gilbert Theophilus Clifton Clifton-Hastings-Campbell, 3rd Baron Donington
+  # 3rd Baron Donington, of Donington Park, co. Leicester 1920-05-17
+  gen:birthDate "1859-05-29" ;
+  gen:deathDate "1927-05-31" ;
   gen:father <https://www.wikidata.org/wiki/Q62068203> ;
   gen:mother <https://www.wikidata.org/wiki/Q5338652> .
-<#Henry_Cecil_Plantagenet_Clifton>
-  gen:birthDate "1860" ;
-  gen:deathDate "1886" ;
-  gen:father <https://www.wikidata.org/wiki/Q62068203> ;
-  gen:mother <https://www.wikidata.org/wiki/Q5338652> .
-<#Lady_Egidia_Sophia_Frederica_Christina_Clifton>
-  gen:birthDate "1870" ;
-  gen:deathDate "1892" ;
-  gen:father <https://www.wikidata.org/wiki/Q62068203> ;
-  gen:mother <https://www.wikidata.org/wiki/Q5338652> .
+  # oo Maud Kemble Hamilton, d. 1947-11-18
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q26254013> , <#Maud_Kemble_Hamilton> ;
+	gen:startDate "1894-07-12" .
+<#Ella_Cicely_Mary_Clifton>
+  # Hon. Ella Cicely Mary Clifton, 1856-11-22 - 1912-07-02
+  gen:father <#Augustus_Wykeham_Clifton> ;
+  gen:mother <#Bertha_Lelgarde_Rawdon-Hastings,_22nd_Baroness_Grey_de_Ruthyn> .
+  # oo 1879-07-30 Lancelot George Butler-Bowdon, d. 1909-09-12, #Lancelot_George_Butler-Bowdon
+<https://www.wikidata.org/wiki/Q26123820>
+  # Rawdon George Grey Clifton, 23rd Lord Grey (of Ruthin), 1858-11-14 - 1912-08-29
+  gen:father <#Augustus_Wykeham_Clifton> ;
+  gen:mother <#Bertha_Lelgarde_Rawdon-Hastings,_22nd_Baroness_Grey_de_Ruthyn> .
+  # oo Evelyn Isobel Ida Charlotte Foster, d. 1905-10-02, daughter of James Foster
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q26123820> , <#Evelyn_Isobel_Ida_Charlotte_Foster> ;
+	gen:startDate "1892-09-01" .
+<https://www.wikidata.org/wiki/Q26267943>
+  # Cecil Talbot Clifton, 24th Lord Grey (of Ruthin), 1862-01-09 - 1934-05-21
+  gen:father <#Augustus_Wykeham_Clifton> ;
+  gen:mother <#Bertha_Lelgarde_Rawdon-Hastings,_22nd_Baroness_Grey_de_Ruthyn> .
+<#Lelgarde_Harry_Florence_Clifton>
+  # Hon. Lelgarde Harry Florence Clifton, 1870-02-16 - 1939-10-15
+  gen:father <#Augustus_Wykeham_Clifton> ;
+  gen:mother <#Bertha_Lelgarde_Rawdon-Hastings,_22nd_Baroness_Grey_de_Ruthyn> .
+  # oo 1895-06-11 Sir Alan Henry Bellingham, 4th Baronet, 1846-08-23 - 1921-06-09, https://www.wikidata.org/wiki/Q7527100
 
-<wen:John_Talbot_Clifton>
+<#Madeline_Edith_Clifton>
+  # Madeline Edith Clifton, 1867-11-24 - 1946-09-21
+  gen:father <https://www.wikidata.org/wiki/Q26702418> ;
+  gen:mother <#carnegie.ttl#Madeline_Diana_Elizabeth_Agnew> .
+  # oo 1897-02-10 Gerard Cecil Noel, 1864-12-04 - 1925-06-28, douglas.ttl#Gerard_Cecil_Noel
+<https://www.wikidata.org/wiki/Q15989911>
+  # John Talbot Clifton
   gen:birthDate "1868-12-01" ;
   gen:deathDate "1928-03-23" ;
-  gen:father <wen:Thomas_Henry_Clifton> ;
-  gen:mother <#Madeline_Agnew> .
-  # oo 1907-02-01 wen:Violet_Clifton
-<wen:Edith_Abney-Hastings,_12th_Countess_of_Loudoun>
+  gen:father <https://www.wikidata.org/wiki/Q26702418> ;
+  gen:mother <#carnegie.ttl#Madeline_Diana_Elizabeth_Agnew> .
+  # oo Violet Mary Beauclerk, 1883-11-02 – 1961-11-20
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q15989911> , <https://www.wikidata.org/wiki/Q7933226> ;
+	gen:startDate "1907-02-01" .
+<#Constance_Gertrude_Cecily_Clifton>
+  # Constance Gertrude Cecily Clifton, 1871-10/-11 1954-03-29
+  gen:father <https://www.wikidata.org/wiki/Q26702418> ;
+  gen:mother <#carnegie.ttl#Madeline_Diana_Elizabeth_Agnew> .
+  # oo 1891-12-08 Hon. James Frederick Cumming-Bruce, 1867-07-24 - 1899-12-11, bruce.ttl#James_Frederick_Cumming-Bruce
+  # oo 1910-01-01 Edward Boustead Cuthbertson, d. 1942-05-13, son of Thomas Cuthbertson
+<#Frances_Victoria_Clifton>
+  # Frances Victoria Clifton, 1876-04-27 - 1960-07-27
+  gen:father <https://www.wikidata.org/wiki/Q26702418> ;
+  gen:mother <#carnegie.ttl#Madeline_Diana_Elizabeth_Agnew> .
+  # oo 1903-06-25 Kenneth Fitzgerald Kinnaird, 12th Baron Kinnaird, 1880-07-31 - 1972-07-05, https://www.wikidata.org/wiki/Q26741959
+<https://www.wikidata.org/wiki/Q5338484>
+  # Edith Maud Abney-Hastings, 12th Countess of Loudoun
   gen:birthDate "1883-05-13" ;
   gen:deathDate "1960-02-24" ;
-  gen:father <#Major_Paulyn_Francis_Cuthbert_Rawdon-Hastings> ;
-  gen:mother <#Lady_Maud_Grimston> .
-  # oo 1916-12-12|1947 Captain Reginald Mowbray Chichester Huddleston
-<wen:Elizabeth_Philipps,_Viscountess_St_Davids>
+  gen:father <#Paulyn_Francis_Cuthbert_Rawdon-Hastings> ;
+  gen:mother <brudenell.ttl#Lady_Maud_Grimston> .
+  # oo 1916-12-12 (div 1947) Reginald Mowbray Chichester Huddleston (later Reginald Mowbray Chichester), #Reginald_Mowbray_Chichester_Huddleston
+<https://www.wikidata.org/wiki/Q5363345s>
+  # Lady Elizabeth Frances Abney-Hastings
   gen:birthDate "1884-06-10" ;
   gen:deathDate "1974-12-12" ;
-  gen:father <#Major_Paulyn_Francis_Cuthbert_Rawdon-Hastings> ;
-  gen:mother <#Lady_Maud_Grimston> .
-  # oo 1916-04-27 wen:John_Philipps,_1st_Viscount_St_Davids
+  gen:father <#Paulyn_Francis_Cuthbert_Rawdon-Hastings> ;
+  gen:mother <brudenell.ttl#Lady_Maud_Grimston> .
+  # oo 1916-04-27 John Wynford Philipps, 1st Viscount Saint Davids, 1860-05-30 – 1938-03-28, 13th Baronet Philipps, of Picton Castle 1912-02-21, 1st Viscount Saint Davids, of Lydstep Haven, co. Pembroke 1918-06-17, https://www.wikidata.org/wiki/Q16023302, son of Rev. Sir James Erasmus Philipps, 12th Baronet and Hon. Mary Margaret Best
+<#Margaret_Selina_Flora_Maud_Clifton-Hastings-Campbell>
+  # Hon. Margaret Selina Flora Maud Clifton-Hastings-Campbell, 1895-07-07 - 1975-02-27
+  gen:father <https://www.wikidata.org/wiki/Q26254013> ;
+  gen:mother <#Maud_Kemble_Hamilton> .
+  # oo 1917-07-15 Sir Edward Orde MacTaggart-Stewart, 2nd Baronet, d. 1948-10-19, son of Sir Mark John McTaggart-Stewart, 1st Baronet (1834-10-02 – 1923-09-26, https://www.wikidata.org/wiki/Q6768687 (see kennedy.ttl?), 1st Baronet McTaggart-Stewart of Southwick in the Stewartry of Kirkcudbright and Blairderry in the County of Wigtown 1892-10-07) and oo 1866 Marianne Susanna Ommanney (daughter and heiress of John Orde Ommanney (d. 1846, son of Sir Francis Molyneux Ommanney (1774-10-04 – 1840-11-07, https://www.wikidata.org/wiki/Q26262767) and oo 1801 Georgiana Frances Hawkes) and oo 1839 Susanna MacTaggart (1812~ – 1902-09-25, daughter of Sir John McTaggart, 1st Baronet (1789-03-15 – 1867-08-13, 1st Baronet McTaggart 1841, https://www.wikidata.org/wiki/Q7527928)))
 
-<wen:Harry_Clifton_(producer)>
+<https://www.wikidata.org/wiki/Q16749844>
   gen:name "Henry Talbot de Vere Clifton"@en ;
   gen:birthDate "1907-12-16" ;
   gen:deathDate "1979" ;
-  gen:father <wen:John_Talbot_Clifton> ;
-  gen:mother <wen:Violet_Clifton> .
-  # oo 1937|1943 Lilian Lowell Griswold
+  gen:father <https://www.wikidata.org/wiki/Q15989911> ;
+  gen:mother <https://www.wikidata.org/wiki/Q7933226> .
+  # oo Lilian Lowell Griswold
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16749844> , <#Lilian_Lowell_Griswold> ;
+	gen:startDate "1937" ;
+	gen:divorceDate "1943" .
 
 
-# --------
-<wen:Henry_Lowther_(politician)>
-  gen:birthDate "1790" ;
-  gen:deathDate "1867" .
-  # oo 1817-05-19 Lady Lucy Eleanor Sherard
+# ----
+#<https://www.wikidata.org/wiki/Q7526211>
+  # Sir Charles Edward Hamilton, 1st Baronet, 1845-05-28 - 1928-11-15
+  # 1st Baronet Hamilton, of Cadogan Square 1892-11-21
+  # son of John Hamilton
+  # and Jessy Kemble
+  # oo Lucia McCorquodale
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7526211> , <#Lucia_McCorquodale> ;
+	gen:startDate "1876" .
 
-<#Eleanor_Cecily_Lowther>
-  gen:deathDate "1894-11-24" ;
-  gen:father <wen:Henry_Lowther_(politician)> ;
-  gen:mother <#Lady_Lucy_Eleanor_Sherard> .
+<#Maud_Kemble_Hamilton>
+  # Maud Kemble Hamilton, d. 1947-11-18
+  gen:father <https://www.wikidata.org/wiki/Q7526211> ;
+  gen:mother <#Lucia_McCorquodale> .
+  # oo 1894-07-12 Gilbert Theophilus Clifton Clifton-Hastings-Campbell, 3rd Baron Donington, 1859-05-29 - 1927-05-31, https://www.wikidata.org/wiki/Q26254013
 
-# --------
-<wen:Philip_Sherard,_5th_Earl_of_Harborough>
-  gen:birthDate "1767" ;
-  gen:deathDate "1807" .
+# ----
+#<#Lancelot_George_Butler-Bowdon>
+  # Lancelot George Butler-Bowdon, d. 1909-09-12
+  # oo Hon. Ella Cicely Mary Clifton, 1856-11-22 - 1912-07-02
+  []
+    gen:spouse <#Lancelot_George_Butler-Bowdon> , <#Ella_Cicely_Mary_Clifton> ;
+	gen:startDate "1879-07-30" .
 
-<#Lady_Lucy_Eleanor_Sherard>
-  gen:father <wen:Philip_Sherard,_5th_Earl_of_Harborough> .
+<https://www.wikidata.org/wiki/Q26419525>
+  # John Lancelot Butler-Bowdon, 25th Lord Grey (of Ruthin), 1883-10-25 - 1963-10-25
+  gen:father <#Lancelot_George_Butler-Bowdon> ;
+  gen:mother <#Ella_Cicely_Mary_Clifton> .
 
-# --------
-<wen:Sir_Andrew_Agnew,_8th_Baronet>
-  gen:birthDate "1818-01-02" ;
-  gen:deathDate "1892-03-25" .
-  # oo 1846-08-20 Lady Mary Arabella Louisa Noel
+# ----
+#<#Sir_Alan_Edward_Bellingham,_3rd_Baronet>
+  # Sir Alan Edward Bellingham, 3rd Baronet, 1800-10-08 - 1889-04-19
+  # oo Elizabeth Clarke, 1810~ - 1887-04-11, daughter of Henry Clarke
+  []
+    gen:spouse <#Sir_Alan_Edward_Bellingham,_3rd_Baronet> , <#Elizabeth_Clarke> ;
+	gen:startDate "1841-01-12" .
 
-<#Madeline_Agnew>
-  gen:father <wen:Sir_Andrew_Agnew,_8th_Baronet> ;
-  gen:mother <#Lady_Mary_Arabella_Louisa_Noel> .
+<https://www.wikidata.org/wiki/Q7527100>
+  # Sir Alan Henry Bellingham, 4th Baronet, 1846-08-23 - 1921-06-09
+  gen:father <#Sir_Alan_Edward_Bellingham,_3rd_Baronet> ;
+  gen:mother <#Elizabeth_Clarke> .
+  # oo Lady Constance Julia Eleanor Georgiana Noel, 1847-10-10 - 1891-04-08
+    []
+    gen:spouse <https://www.wikidata.org/wiki/Q7527100> , <douglas.ttl#Lady_Constance_Julia_Eleanor_Georgiana_Noel> ;
+	gen:startDate "1874-01-13" .
+  # oo Hon. Lelgarde Harry Florence Clifton, 1870-02-16 - 1939-10-15
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7527100> , <#Lelgarde_Harry_Florence_Clifton> ;
+	gen:startDate "1895-06-11" .
 
-# --------
-<wen:Charles_Noel,_1st_Earl_of_Gainsborough>
-  gen:birthDate "1781-10-02" ;
-  gen:deathDate "1866-06-10" .
-  # oo 1820 Arabella Williams
+# ----
+#<https://www.wikidata.org/wiki/Q930953>
+  # Arthur Fitzgerald Kinnaird, 11th Baron Kinnaird, 1847-02-16 - 1923-01-30
+  # son of Arthur Fitzgerald Kinnaird, 10th Baron Kinnaird
+  # and Mary Jane Hoare
+  # oo Mary Alma Victoria Agnew, 1854-09-02 - 1923-01-19
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q930953> , <carnegie.ttl#Mary_Alma_Victoria_Agnew> ;
+	gen:startDate "1875-08-10" .
 
-<#Lady_Mary_Arabella_Louisa_Noel>
-  gen:father <wen:Charles_Noel,_1st_Earl_of_Gainsborough> ;
-  gen:mother <#Arabella_Williams> .
+<https://www.wikidata.org/wiki/Q26741959>
+  # Kenneth Fitzgerald Kinnaird, 12th Baron Kinnaird, 1880-07-31 - 1972-07-05
+  gen:father <https://www.wikidata.org/wiki/Q930953> ;
+  gen:mother <carnegie.ttl#Mary_Alma_Victoria_Agnew> .
+  # oo Frances Victoria Clifton, 1876-04-27 - 1960-07-27
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q26741959> , <#Frances_Victoria_Clifton> ;
+	gen:startDate "1903-06-25" .
 
-# --------
-<wen:Sir_James_Hamlyn-Williams,_2nd_Baronet>
-  gen:birthDate "1765" ;
-  gen:deathDate "1829" .
 
-<#Arabella_Williams>
-  gen:deathDate "1829-10" ;
-  gen:father <wen:Sir_James_Hamlyn-Williams,_2nd_Baronet> .
-
-# --------
-<wen:Violet_Clifton>
-  gen:birthDate "1883-11-02" ;
-  gen:deathDate "1961-11-20" ;
-  gen:father <#William_Nelthorpe_Beauclerk> .
-
-# --------
-<wen:James_Grimston,_2nd_Earl_of_Verulam>
-  gen:birthDate "1809-02-20" ;
-  gen:deathDate "1895-07-27" .
-  # oo 1844 Elizabeth Joanna Weyland
-
-<#Lady_Maud_Grimston>
-  gen:birthDate "1857~" ;
-  gen:deathDate "1929-09-03" ;
-  gen:father <wen:James_Grimston,_2nd_Earl_of_Verulam> ;
-  gen:mother <#Elizabeth_Joanna_Weyland> .
-
-# --------
-<#Elizabeth_Joanna_Weyland>
-  gen:father <#Richard_Weyland> .
 
 
 # ========
-<#Captain_Ian_Huddleston_Abney-Hastings,_Lord_Mauchline>
+<#Ian_Huddleston_Abney-Hastings,_Lord_Mauchline>
   gen:birthDate "1918" ;
   gen:deathDate "1944-07-11" ;
-  gen:father <#Captain_Reginald_Mowbray_Chichester_Huddleston> ;
-  gen:mother <wen:Edith_Abney-Hastings,_12th_Countess_of_Loudoun> .
+  gen:father <#Reginald_Mowbray_Chichester_Huddleston> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5338484> .
 <wen:Barbara_Abney-Hastings,_13th_Countess_of_Loudoun>
   gen:birthDate "1919-07-03" ;
   gen:deathDate "2002-11-01" ;
-  gen:father <#Captain_Reginald_Mowbray_Chichester_Huddleston> ;
-  gen:mother <wen:Edith_Abney-Hastings,_12th_Countess_of_Loudoun> .
+  gen:father <#Reginald_Mowbray_Chichester_Huddleston> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5338484> .
   # oo 1939 Captain Walter Strickland Lord
   # oo 1945 Captain Gilbert Frederick Greenwood
   # oo 1954 Peter Griffiths
 <#Lady_Jean_Huddleston_Abney-Hastings>
   gen:birthDate "1920" ;
   gen:deathDate "1961" ;
-  gen:father <#Captain_Reginald_Mowbray_Chichester_Huddleston> ;
-  gen:mother <wen:Edith_Abney-Hastings,_12th_Countess_of_Loudoun> .
+  gen:father <#Reginald_Mowbray_Chichester_Huddleston> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5338484> .
   # oo (1) Edgar Wakefield
   # oo (2) Arthur Hubble
 <#Lady_Iona_Mary_Huddleston_Abney-Hastings>
   gen:birthDate "1922" ;
   gen:deathDate "1990" ;
-  gen:father <#Captain_Reginald_Mowbray_Chichester_Huddleston> ;
-  gen:mother <wen:Edith_Abney-Hastings,_12th_Countess_of_Loudoun> .
+  gen:father <#Reginald_Mowbray_Chichester_Huddleston> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5338484> .
   # oo Robert French
 <#Lady_Fiona_Huddleston_Abney-Hastings>
   gen:birthDate "1923" ;
   gen:deathDate "1993" ;
-  gen:father <#Captain_Reginald_Mowbray_Chichester_Huddleston> ;
-  gen:mother <wen:Edith_Abney-Hastings,_12th_Countess_of_Loudoun> .
+  gen:father <#Reginald_Mowbray_Chichester_Huddleston> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5338484> .
   # oo Robert Conroy-Robertson (later de Fresnes), 12th baron de Fresnes
 <wen:Lady_Edith_Maclaren>
   gen:name "Lady Edith Huddleston Abney-Hastings"@en ;
   gen:birthDate "1925" ;
   gen:deathDate "2006" ;
-  gen:father <#Captain_Reginald_Mowbray_Chichester_Huddleston> ;
-  gen:mother <wen:Edith_Abney-Hastings,_12th_Countess_of_Loudoun> .
+  gen:father <#Reginald_Mowbray_Chichester_Huddleston> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5338484> .
   # oo David Maclaren
 
 
@@ -2036,7 +2134,7 @@
   gen:father <wen:Sir_James_Erasmus_Philipps,_12th_Baronet> ;
   gen:mother <#Mary_Margaret_Best> .
   # oo 1888-02-14 wen:Leonora_Philipps
-  # oo 1916-04-27 wen:Elizabeth_Philipps,_Viscountess_St_Davids
+  # oo 1916-04-27 https://www.wikidata.org/wiki/Q5363345s
 <wen:Ivor_Philipps>
   gen:birthDate "1861-09-09" ;
   gen:deathDate "1940-08-15" ;
@@ -2070,13 +2168,13 @@
   gen:birthDate "1917-02-19" ;
   gen:deathDate "1991-06-10" ;
   gen:father <wen:John_Philipps,_1st_Viscount_St_Davids> ;
-  gen:mother <wen:Elizabeth_Philipps,_Viscountess_St_Davids> .
+  gen:mother <https://www.wikidata.org/wiki/Q5363345s> .
   # oo 1938-05-05|1954 Doreen Guinness Jowett
   # oo 1954-10-15|1959 Elisabeth Joyce Woolf
 <#Honourable_Lelgarde_De_Clare_Elizabeth_Philipps>
   gen:birthDate "1918" ;
   gen:father <wen:John_Philipps,_1st_Viscount_St_Davids> ;
-  gen:mother <wen:Elizabeth_Philipps,_Viscountess_St_Davids> .
+  gen:mother <https://www.wikidata.org/wiki/Q5363345s> .
   # oo 1950-06-19 ?
 <#Honourable_Nesta_Donne_Philipps>
   gen:birthDate "1903" ;
