@@ -1,0 +1,281 @@
+@base <thynne.ttl> .
+@prefix gen: <http://jjkoch.de/gen#> .
+@prefix wdata: <https://www.wikidata.org/wiki/> .
+@prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+
+# capell.ttl
+#<https://www.wikidata.org/wiki/Q38200>
+  # Sir John Thynne, of Longleat, 1515~ - 1580-05-21
+  # oo Christiana Gresham
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q38200> , <#Christiana_Gresham> ;
+	gen:startDate "1549-01" .
+
+# capell.ttl
+<#Dorothy_Thynne>
+  # Dorothy Thynne, d. 1592-09-25b
+  gen:father <https://www.wikidata.org/wiki/Q38200> ;
+  gen:mother <#Christiana_Gresham> .
+  # oo John Strangways, of Melbury Sampford, 1548~ - 1593, capell.ttl#John_Strangways
+
+# villiers.ttl
+#<https://www.wikidata.org/wiki/Q23059944>
+  # Sir Henry Frederick Thynne, 1st Baronet, 1615-03-01 - 1680-03-06
+  # 1st Baronet Thynne, of Kempsford, co. Gloucester 1641-07-15
+  # oo Hon. Mary Coventry
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q23059944> , <coventry.ttl#Mary_Coventry> .
+
+# seymour.ttl
+<https://www.wikidata.org/wiki/Q38278>
+  # Thomas Thynne, 1st Viscount Weymouth, 1640 -1714-07-28
+  # 2nd Baronet Thynne, of Kempsford, co. Gloucester 1680-03-06
+  # 1st Baron Thynne of Wermister, co. Wilts, 1st Viscount Weymouth, co. Dorset 1682-12-11
+  gen:father <https://www.wikidata.org/wiki/Q23059944> ;
+  gen:mother <coventry.ttl#Mary_Coventry> .
+  # oo Lady Frances Finch, 1650-04-02b - 1712-04-17
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q38278> , <https://www.wikidata.org/wiki/Q16774018> ;
+	gen:startDate "1673b" .
+# villiers.ttl
+<#Henry_Frederick_Thynne>
+  # Henry Frederick Thynne, 1642a - 1705
+  gen:father <https://www.wikidata.org/wiki/Q23059944> ;
+  gen:mother <coventry.ttl#Mary_Coventry> .
+  # oo Dorothy Philips, daughter of Francis Philips
+# villiers.ttl
+<#Katherine_Thynne>
+  # Katherine Thynne, d. 1713-06-25a
+  gen:father <https://www.wikidata.org/wiki/Q23059944> ;
+  gen:mother <coventry.ttl#Mary_Coventry> .
+  # oo 1664-12-03 John Lowther, 1st Viscount Lonsdale, 1655-04-25 - 1700-07-10, https://www.wikidata.org/wiki/Q6245447
+
+# seymour.ttl
+<https://www.wikidata.org/wiki/Q5729185>
+  # Hon. Henry Thynne, 1675-02-08 - 1708-12-20
+  gen:father <https://www.wikidata.org/wiki/Q38278> ;
+  gen:mother <https://www.wikidata.org/wiki/Q16774018> .
+  # oo 1695-04-29 Grace Strode, d. 1725-04-03
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5729185> , <#Grace_Strode> ;
+	gen:startDate "1695-04-29" .
+# villiers.ttl
+<#Thomas_Thynne>
+  gen:name "Thomas Thynne"@en ;
+  gen:birthDate "1687~" ;
+  gen:deathDate "1710-04-24" ;
+  gen:father <#Henry_Frederick_Thynne> ;
+  gen:mother <#Dorothy_Philips> .
+  # oo Lady Mary Villiers, d. 1735-01-17
+  []
+    gen:spouse <#Thomas_Thynne> , <villiers.ttl#Lady_Mary_Villiers> .
+
+# seymour.ttl
+<https://www.wikidata.org/wiki/Q3850506>
+  # Mary Thynne, 1702~ - 1720-03-29
+  gen:father <https://www.wikidata.org/wiki/Q5729185> ;
+  gen:mother <#Grace_Strode> .
+  # oo 1716-11-08 William Greville, 7th Baron Brooke of Beauchamps Court, 1694~ - 1727-07-28, greville.ttl#William_Greville,_7th_Baron_Brooke
+# seymour.ttl
+<https://www.wikidata.org/wiki/Q18529123>
+  # Frances Thynne, d. 1754-07-07
+  gen:father <https://www.wikidata.org/wiki/Q5729185> ;
+  gen:mother <#Grace_Strode> .
+  # oo 1715-03-01a Algernon Seymour, 7th Duke of Somerset, 1684-11-11 – 1750-02-07, https://www.wikidata.org/wiki/Q3611562
+# villiers.ttl
+<https://www.wikidata.org/wiki/Q38163>
+  # Thomas Thynne, 2nd Viscount Weymouth, 1710-05-21 – 1751
+  gen:father <#Thomas_Thynne> ;
+  gen:mother <villiers.ttl#Lady_Mary_Villiers> .
+  # oo Lady Elizabeth Sackville, 1712-03-20 - 1729-06-19
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q38163> , <https://www.wikidata.org/wiki/Q46635727> ;
+	gen:startDate "1726-12-06" .
+  # oo Lady Louisa Carteret, 1714 - 1736-12-25
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q38163> , <https://www.wikidata.org/wiki/Q46637392> ;
+	gen:startDate "1733-07-03" .
+
+# villiers.ttl
+<https://www.wikidata.org/wiki/Q38308>
+  # Thomas Thynne, 1st Marquess of Bath, 1734 - 1796-11-19
+  # 4th Baronet Thynne, of Kempsford, co. Gloucester, 3rd Baron Thynne of Wermister, co. Wilts, 3rd Viscount Weymouth, co. Dorset 1751-01-12
+  # 1st Marquess of Bath 1789-08-18
+  gen:father <https://www.wikidata.org/wiki/Q38163> ;
+  gen:mother <https://www.wikidata.org/wiki/Q46637392> .
+  # oo Lady Elizabeth Cavendish-Bentinck, 1735-07-27 - 1825-12-25
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q38308> , <https://www.wikidata.org/wiki/Q3723379> ;
+	gen:startDate "1759-03-22" .
+
+# villiers.ttl
+<https://www.wikidata.org/wiki/Q46995750>
+  # Lady Louisa Thynne
+  gen:birthDate "1760-03-25" ;
+  gen:deathDate "1832-12-28" ;
+  gen:father <https://www.wikidata.org/wiki/Q38308> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3723379> .
+  # oo 1781-11-18 Heneage Finch, 4th Earl of Aylesford, 1751-07-04 - 1812-10-21, https://www.wikidata.org/wiki/Q5714113
+# villiers.ttl
+<https://www.wikidata.org/wiki/Q3784883>
+  # Lady Henrietta Thynne, 1762-11-17 – 1813-05-31
+  gen:father <https://www.wikidata.org/wiki/Q38308> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3723379> .
+  # oo 1799-05-02 Philip Stanhope, 5th Earl of Chesterfield, 1755-11-10 – 1815-08-29, https://www.wikidata.org/wiki/Q1026379 (west.ttl)
+# villiers.ttl
+<https://www.wikidata.org/wiki/Q5545226>
+  # George Thynne, 2nd Baron Carteret of Hawnes, 1770-01-23 – 1838-02-19
+  # 2nd Baron Carteret of Hawnes, co. Bedford 1826-06-17
+  gen:father <https://www.wikidata.org/wiki/Q38308> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3723379> .
+  # oo Hon. Harriet Courtenay, 1771-09-07 – 1826-04-14
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5545226> , <courtenay.ttl#Harriet_Courtenay> ;
+	gen:startDate "1797-05-09" .
+
+
+# campbell.ttl
+<https://www.wikidata.org/wiki/Q43378349>
+  # Lady Elizabeth Thynne, 1795-02-27 - 1866-02-16
+  gen:father <https://www.wikidata.org/wiki/Q43942> .
+  # oo 1816-09-05 John Frederick Campbell, 1st Earl Cawdor, 1790-11-08 - 1860-11-07, https://www.wikidata.org/wiki/Q6224952
+# baring.ttl
+<https://www.wikidata.org/wiki/Q43895>
+  # Henry Frederick Thynne, 3rd Marquess of Bath, 1797-05-24 – 1837-06-24
+  gen:father <https://www.wikidata.org/wiki/Q43942> .
+  # and Hon. Isabella Elizabeth Byng
+  # oo Hon. Harriet Baring, 1804-05-03 - 1892-01-02
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q43895> , <baring.ttl#Harriet_Baring> ;
+	gen:startDate "1830-04-10" .
+# campbell.ttl
+<https://www.wikidata.org/wiki/Q23060053>
+  # Rev. Lord John Thynne, 1798-11-07 - 1881-02-09
+  gen:father <https://www.wikidata.org/wiki/Q43942> .
+  # and Hon. Isabella Elizabeth Byng
+  # oo Anne Constantia Beresford, 1806 - 1866-04-22, daughter of Rev. Charles Cobbe Beresford and Amelia Montgomery
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q23060053> , <https://www.wikidata.org/wiki/Q4768850> ;
+	gen:startDate "1824-03-02" .
+# murray.ttl
+<#Lady_Louisa_Thynne>
+  # Lady Louisa Thynne, 1801-03-25 - 1859-11-07
+  gen:father <https://www.wikidata.org/wiki/Q43942> .
+  # and Hon. Isabella Elizabeth Byng
+  # oo 1823-07-05 Henry Lascelles, 3rd Earl of Harewood, 1797-06-11 - 1857-02-22, https://www.wikidata.org/wiki/Q5724684
+# scott.ttl
+<https://www.wikidata.org/wiki/Q305512>
+  gen:name "Lady Charlotte Anne Thynne"@en ;
+  gen:birthDate "1811-04-10" ;
+  gen:deathDate "1895-03-18" ;
+  gen:father <https://www.wikidata.org/wiki/Q43942> ;
+  gen:mother <#Isabella_Elizabeth_Byng> .
+  # oo 1829-03-13 William Henry Walter Montagu Douglas Scott, 6th Duke of Buccleuch, 1831-09-09 - 1914-11-05, https://www.wikidata.org/wiki/Q337468
+
+# wemyss.ttl
+<#Lady_Louisa_Isabella_Harriet_Thynne>
+  # Lady Louisa Isabella Harriet Thynne, d. 1919-06-26
+  gen:father <https://www.wikidata.org/wiki/Q43895> ;
+  gen:mother <baring.ttl#Harriet_Baring> .
+  # oo 1862-04-29 Hon. Sir Percy Robert Basil Feilding, 1827-06-26 - 1904-01-09, wemyss.ttl#Sir_Percy_Robert_Basil_Feilding
+# seymour.ttl
+<https://www.wikidata.org/wiki/Q6679354>
+  # Rt. Hon. Lord Henry Frederick Thynne, 1832-08-02 - 1904-01-28
+  gen:father <https://www.wikidata.org/wiki/Q43895> ;
+  gen:mother <baring.ttl#Harriet_Baring> .
+  # oo Lady Ulrica Frederica Jane St. Maur, 1833-01-12 - 1916-01-26
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6679354> , <seymour.ttl#Lady_Ulrica_Frederica_Jane_St._Maur> ;
+	gen:startDate "1858-06-01" .
+# campbell.ttl
+<#John_Charles_Thynne>
+  # John Charles Thynne, 1838-04-14 - 1918-03-11
+  gen:father <https://www.wikidata.org/wiki/Q23060053> ;
+  gen:mother <https://www.wikidata.org/wiki/Q4768850> .
+  # oo 1871-04-25 Mary Elizabeth MacGregor
+# campbell.ttl
+<thynne.ttl#Emily_Constantia_Thynne>
+  # Emily Constantia Thynne, 1840 - 1926-07-16
+  gen:father <https://www.wikidata.org/wiki/Q23060053> ;
+  gen:mother <https://www.wikidata.org/wiki/Q4768850> .
+  # oo 1863-08-12 Eustace John Wilson Patten, 1836-02-08 - 1873-12-17, stanley.ttl#Eustace_John_Wilson_Patten
+  # oo 1875-11-29 Thomas Taylour, 3rd Marquess of Headfort, 1822-11-01 - 1894-07-22, https://www.wikidata.org/wiki/Q7794388
+
+# campbell.ttl
+<#Joan_Emily_Mary_Thynne>
+  # Joan Emily Mary Thynne, 1872 - 1945-07-26
+  gen:father <#John_Charles_Thynne> .
+  # and Mary Elizabeth MacGregor
+  # oo 1898-06-11 Hugh Frederick Vaughan Campbell, 4th Earl Cawdor, 1870-06-21 - 1914-01-07, campbell.ttl#Hugh_Frederick_Vaughan_Campbell,_4th_Earl_Cawdor
+
+
+
+# baring.ttl
+<#Gertrude_Harriet_Thynne>
+  # Gertrude Harriet Thynne, d. 1913-02-28
+  gen:father <https://www.wikidata.org/wiki/Q53672656> ;
+  gen:mother <https://www.wikidata.org/wiki/Q53672451> .
+  # oo 1858-04-28 Valentine Augustus Browne, 4th Earl of Kenmare, 1825-05-16 - 1905-02-09, https://www.wikidata.org/wiki/Q7910943
+
+# baring.ttl
+<#Lady_Katherine_Georgina_Louisa_Thynne>
+  # Lady Katherine Georgina Louisa Thynne, 1865-07-22 - 1933-03-04
+  gen:father <https://www.wikidata.org/wiki/Q43902> .
+  # and Hon. Frances Isabella Catherine Vesey
+  # oo 1901-10-22 Rt. Hon. Evelyn Baring, 1st Earl of Cromer, 1841-02-26 - 1917-01-29, https://www.wikidata.org/wiki/Q336487
+
+# beaufort.ttl
+<#Lady_Caroline_Jane_Thynne>
+  # Lady Caroline Jane Thynne, 1928-08-28 – 1995-04-22
+  gen:father <https://www.wikidata.org/wiki/Q5729188> .
+  # oo 1950-07-05 David Robert Somerset, 11th Duke of Beaufort, 1928-02-23 - 2017-08-16, https://www.wikidata.org/wiki/Q5239949
+
+
+
+
+# stanley.ttl
+<thynne.ttl#Lady_Alice_Kathleen_Violet_Thynne>
+  # Lady Alice Kathleen Violet Thynne, 1891-03-27 - 1977-10-04
+  gen:father <https://www.wikidata.org/wiki/Q338382> .
+  # and Violet Caroline Mordaunt
+  # oo 1919-07-08 Hon. Oliver Hugh Stanley, 1879-10-23 - 1952-02-13, stanley.ttl#Oliver_Hugh_Stanley
+
+
+
+
+
+
+
+
+
+
+# capell.ttl
+# ----
+#<https://www.wikidata.org/wiki/Q7326075>
+  # Sir Richard Gresham, 1485~ – 1549-02-21
+  # oo Audrey Lynne, d. 1522-12-28, daughter of William Lynne
+
+<#Christiana_Gresham>
+  # Christiana Gresham
+  gen:father <https://www.wikidata.org/wiki/Q7326075> .
+  # and Audrey Lynne
+  # oo 1549-01 Sir John Thynne, 1515~ - 1580-05-21, https://www.wikidata.org/wiki/Q38200
+
+
+
+# seymour.ttl
+# ----
+#<#Grace_Strode>
+  # Grace Strode, d. 1725-04-03
+  # Sir George Strode (1626-11-26 - 1701-10-24, https://www.wikidata.org/wiki/Q27464943 ?)
+  # and Grace FitzJames
+  # oo 1695-04-29 Hon. Henry Thynne, 1675-02-08 - 1708-12-20, https://www.wikidata.org/wiki/Q5729185
+
+
+# villiers.ttl
+# ----
+<https://www.wikidata.org/wiki/Q46637392>
+  # Lady Louisa Carteret, 1714 - 1736-12-25
+  gen:father <https://www.wikidata.org/wiki/Q335274> ;
+  gen:mother <https://www.wikidata.org/wiki/Q18912511> .
+  # oo 1733-07-03 Thomas Thynne, 2nd Viscount Weymouth, 1710-05-21 – 1751, https://www.wikidata.org/wiki/Q38163
