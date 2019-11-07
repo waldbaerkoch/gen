@@ -1,0 +1,443 @@
+@base <marsham.ttl> .
+@prefix gen: <http://jjkoch.de/gen#> .
+@prefix wdata: <https://www.wikidata.org/wiki/> .
+@prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+#<https://www.wikidata.org/wiki/Q7527919>
+  # Sir John Marsham, 1st Baronet, 1602-08-23 - 1685-05-25
+  # 1st Baronet Marsham, of Whorn's Place, Cuxton, Kent 1663-08-12
+  # son of Thomas Marsham
+  # and Magdalen Springham
+  # oo Elizabeth Hammond, daughter of Sir William Hammond
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7527919> , <#Elizabeth_Hammond> ;
+	gen:startDate "1631-01-13" .
+
+<#Sir_John_Marsham,_2nd_Baronet>
+  # Sir John Marsham, 2nd Baronet, 1637-09-15 - 1692-12-21
+  gen:father <https://www.wikidata.org/wiki/Q7527919> ;
+  gen:mother <#Elizabeth_Hammond> .
+  # oo Anne Danvers, d. 1672, daughter of Sir Samuel Danvers, 1st Baronet (1st Baronet Danvers, of Culworth, Northamptonshire)
+  []
+    gen:spouse <#Sir_John_Marsham,_2nd_Baronet> , <#Anne_Danvers> ;
+	gen:startDate "1665-01-11" .
+  # oo Hester Sayer, d. 1716, daughter of Sir George Sayer
+  []
+    gen:spouse <#Sir_John_Marsham,_2nd_Baronet> , <#Hester_Sayer> ;
+	gen:startDate "1675-03-10" .
+<#Margaret_Marsham>
+  # Margaret Marsham, 1647~ - 1687-01-30
+  gen:father <https://www.wikidata.org/wiki/Q7527919> ;
+  gen:mother <#Elizabeth_Hammond> .
+  # oo 1667-12-07 Sir Roger Twisden, 2nd Baronet, 1640~ - 1703-02-28, son of Sir Thomas Twisden, 1st Baronet (1602-01-08 - 1683-01-02, 1st Baronet Twisden, of Bradbourne, Kent 1666-06-13, https://www.wikidata.org/wiki/Q7529294, son of Sir William Twysden, 1st Baronet (1566~ - 1628-01-08, 1st Baronet Twysden, of East Peckham, co. Kent 1611-06-29, https://www.wikidata.org/wiki/Q7529803) and https://www.wikidata.org/wiki/Q18526500) and oo 1639-12-26 Jane Thomlinson (d. 1702-09-24, daughter of John Thomlinson)
+<https://www.wikidata.org/wiki/Q16843602>
+  # Sir Robert Marsham, 4th Baronet, 1650-12-16 - 1703-07-26
+  gen:father <https://www.wikidata.org/wiki/Q7527919> ;
+  gen:mother <#Elizabeth_Hammond> .
+  # oo Margaret Bosville, d. 1710, daughter of Thomas Bosville and Elizabeth Wyatt
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16843602> , <#Margaret_Bosville> ;
+	gen:startDate "1681-12-12" .
+
+<#Sir_John_Marsham,_3rd_Baronet>
+  # Sir John Marsham, 3rd Baronet, 1679-10-12 - 1696-05-13
+  gen:father <#Sir_John_Marsham,_2nd_Baronet> ;
+  gen:mother <#Hester_Sayer> .
+<#Elizabeth_Marsham_(died_1714)>
+  # Elizabeth Marsham, 1683-09-21 - 1714
+  gen:father <https://www.wikidata.org/wiki/Q16843602> ;
+  gen:mother <#Margaret_Bosville> .
+  # oo 1700-11-18 Sir Thomas Palmer, 4th Baronet, 1682-07-05 - 1723-11-08, https://www.wikidata.org/wiki/Q7529228
+<#Margaretta_Marsham>
+  # Margaretta Marsham, 1684-09-04 - 1719
+  gen:father <https://www.wikidata.org/wiki/Q16843602> ;
+  gen:mother <#Margaret_Bosville> .
+  # oo 1707-06-23 Sir Brook Bridges, 1st Baronet, 1679-08-12 - 1728-03-16, 1st Baronet Bridges, of Goodneston, co. Kent 1718-04-19, https://www.wikidata.org/wiki/Q7526143, son of Brook Bridges and Mary Lewen
+<https://www.wikidata.org/wiki/Q7347382>
+  # Robert Marsham, 1st Baron of Romney, 1685-09-17 - 1724-11-28
+  # 5th Baronet Marsham, of Whorn's Place, Cuxton, Kent 1703-07-26
+  # 1st Baron of Romney, co. Kent 1716-06-22
+  gen:father <https://www.wikidata.org/wiki/Q16843602> ;
+  gen:mother <#Margaret_Bosville> .
+  # oo Elizabeth Shovell, 1692-11-02 - 1750-11-17
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7347382> , <#Elizabeth_Shovell> ;
+	gen:startDate "1708-ß8-19" .
+<#Mary_Marsham>
+  # Mary Marsham, 1698-05-18 - 1769-08-04
+  gen:father <https://www.wikidata.org/wiki/Q16843602> ;
+  gen:mother <#Margaret_Bosville> .
+  # oo 1723-06-22 Sir Thomas Hales, 3rd Baronet, 1694~ - 1762-10-06, https://www.wikidata.org/wiki/Q7529157 (dalrymple.ttl)
+
+<#Elizabeth_Marsham_(died_1782)>
+  # Hon. Elizabeth Marsham, 1711-08-15 - 1782-09-25
+  gen:father <https://www.wikidata.org/wiki/Q7347382> ;
+  gen:mother <#Elizabeth_Shovell> .
+  # oo 1741-04-21 Jacob des Bouverie, 1st Viscount Folkestone, 1694-10-14 - 1761-02-17, https://www.wikidata.org/wiki/Q6118400
+<https://www.wikidata.org/wiki/Q21165696>
+  # Robert Marsham, 2nd Baron Romney, 1712-08-22 - 1793-11-26
+  gen:father <https://www.wikidata.org/wiki/Q7347382> ;
+  gen:mother <#Elizabeth_Shovell> .
+  # oo Priscilla Pym, d. 1771-02-27, daughter of Charles Pym
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q21165696> , <#Priscilla_Pym> ;
+	gen:startDate "1742-06-08" .
+
+<https://www.wikidata.org/wiki/Q5080683>
+  # Charles Marsham, 1st Earl of Romney, 1744-09-28 – 1811-03-01
+  # 3rd Baron of Romney, co. Kent, 5th Baronet Marsham, of Whorn's Place, Cuxton, Kent 1793-11-16
+  # 1st Viscount Marsham, 1st Earl of Romney, of the Mote 1801-06-22
+  gen:father <https://www.wikidata.org/wiki/Q21165696> ;
+  gen:mother <#Priscilla_Pym> .
+  # oo Lady Frances Wyndham, 1755-07-09 – 1795-01-15
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5080683> , <https://www.wikidata.org/wiki/Q47542129> ;
+	gen:startDate "1776-08-30" .
+<https://www.wikidata.org/wiki/Q17199051>
+  # Rev. Hon. Jacob Marsham, 1759-02-28 - 1840-01-28
+  gen:father <https://www.wikidata.org/wiki/Q21165696> ;
+  gen:mother <#Priscilla_Pym> .
+  # oo Amelia Frances Bullock, d. 1836-03-30, daughter of Joseph Bullock
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q17199051> , <https://www.wikidata.org/wiki/Q49778638> ;
+	gen:startDate "1784-06-28" .
+
+<https://www.wikidata.org/wiki/Q5080685>
+  # Charles Marsham, 2nd Earl of Romney, 1777-11-22 – 1845-03-29
+  gen:father <https://www.wikidata.org/wiki/Q5080683> ;
+  gen:mother <https://www.wikidata.org/wiki/Q47542129> .
+  # oo Sophia Pitt, d. 1812-09-09, daughter of William Morton Pitt (1754-05-16 – 1836-02-28, https://www.wikidata.org/wiki/Q21166782, son of John Pitt (~1706 – 1787, https://www.wikidata.org/wiki/Q6252982, son of George Pitt (c. 1663–1735, https://www.wikidata.org/wiki/Q28092061, son of George Pitt (1625-05-09 – 1694-07-27, https://www.wikidata.org/wiki/Q5543452, son of Edward Pitt (d. 1643, https://www.wikidata.org/wiki/Q5344866, son of Sir William Pitt (1559 – 1636-05-29, https://www.wikidata.org/wiki/Q8016930) and his wife Edith Cadbury) and oo Rachel Morton (daughter of Sir George Morton, 1st Baronet (d. 1662, 1st Baronet of Milborne St. Andrew, Dorset 1619-03-01, https://www.wikidata.org/wiki/Q16859771))) and oo 1657 Lady Jane Savage (daughter of https://www.wikidata.org/wiki/Q6256733)) and oo 1700~ Lora Grey (daughter of Audley Grey of Kingston Marwood, in Stinsford, Dorset)) and oo 1753-01-26 Marcia Morgan (daughter of Mark Anthony Morgan of Cottelstown County Sligo)) and oo Margaret Gambier (daughter of John Gambier)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5080685> , <https://www.wikidata.org/wiki/Q47501510> ;
+	gen:startDate "1806-09-09" .
+  # oo Hon. Mary Elizabeth Townshend, 1794-03-06 – 1847-12-25
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5080685> , <https://www.wikidata.org/wiki/Q47522686> ;
+	gen:startDate "1832-02-08" .
+<#Lady_Frances_Marsham>
+  # Lady Frances Marsham, 1778-10-25 - 1868-06-30
+  gen:father <https://www.wikidata.org/wiki/Q5080683> ;
+  gen:mother <https://www.wikidata.org/wiki/Q47542129> .
+  # oo 1805-08-17 Sir John Buchanan Riddell of that Ilk, 9th Baronet, 1768~ - 1819-04-21, https://www.wikidata.org/wiki/Q26265228, son of Sir John Riddell of that Ilk, 6th Baronet (1726 - 1768-04-16, son of Sir Walter Riddell of that Ilk, 5th Baronet (1695 - 1765-05-13, son of https://www.wikidata.org/wiki/Q43444224 and Mary Watt) and oo 1725 Jane Turnbull (d. 1744b, daughter of John Turnbull of Houndwood)) and oo 1762 Jane Buchanan (d. 1798-02-24, daughter of James Buchanan)
+<https://www.wikidata.org/wiki/Q49775435>
+  # Rev. Robert Bullock-Marsham, of Caversfield, 1786-06-17 - 1880-12-27
+  gen:father <https://www.wikidata.org/wiki/Q17199051> ;
+  gen:mother <https://www.wikidata.org/wiki/Q49778638> .
+  # oo Janet Dewar, 1793-12-30 - 1881-11-10, daughter of https://www.wikidata.org/wiki/Q49787582 and Mary Cutler
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q49775435> , <https://www.wikidata.org/wiki/Q49780401> ;
+	gen:startDate "1828-03-27" .
+<#Emily_Eleanor_Marsham>
+  # Emily Eleanor Marsham, 1803-02-10 - 1838-04-12
+  gen:father <https://www.wikidata.org/wiki/Q17199051> ;
+  gen:mother <https://www.wikidata.org/wiki/Q49778638> .
+  # oo 1831-05-10 Sir Charles Fitzroy Maclean, 9th Baronet, 1798-10-14 - 1883-01-27, https://www.wikidata.org/wiki/Q7526248
+<#George_Frederick_John_Marsham>
+  # Rev. George Frederick John Marsham, 1806-06-02 - 1852-01-29
+  gen:father <https://www.wikidata.org/wiki/Q17199051> ;
+  gen:mother <https://www.wikidata.org/wiki/Q49778638> .
+  # oo Elizabeth Marcia Jones, d. 1849-04-20, daughter of Walter Jones and Catherine Penelope Iremonger
+  []
+    gen:spouse <#George_Frederick_John_Marsham> , <#Elizabeth_Marcia_Jones> ;
+	gen:startDate "1833-06-04" .
+
+<#Lady_Sophia_Marsham>
+  # Lady Sophia Marsham, 1807-07-13 - 1863-01-04
+  gen:father <https://www.wikidata.org/wiki/Q5080685> ;
+  gen:mother <https://www.wikidata.org/wiki/Q47501510> .
+  # oo 1837-04-17 Peter Richard Hoare, 1803-05-08 - 1877-05-30, son of Peter Richard Hoare (1772-10-13 - 1849-09-10, https://www.wikidata.org/wiki/Q30125426, son of https://www.wikidata.org/wiki/Q30125563 (lyttelton.ttl) and Frances Anne Acland) and oo 1799-09-23 Arabella Penelope Eliza Greene (1781~ - 1865-04-26, daughter of James Greene)
+<https://www.wikidata.org/wiki/Q5080686>
+  # Charles Marsham, 3d Earl of Romney, 1808-07-30 - 1874-09-03
+  gen:father <https://www.wikidata.org/wiki/Q5080685> ;
+  gen:mother <https://www.wikidata.org/wiki/Q47501510> .
+  # oo Lady Margaret Harriet Montagu-Scott, 1811-06-12 - 1846-06-05
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5080686> , <scott.ttl#Lady_Margaret_Harriet_Montagu_Scott> ;
+	gen:startDate "1832-02-07" .
+<https://www.wikidata.org/wiki/Q27942532>
+  # Lady Mary Marsham, 1811-04-15 - 1871-02-23
+  gen:father <https://www.wikidata.org/wiki/Q5080685> ;
+  gen:mother <https://www.wikidata.org/wiki/Q47501510> .
+  # oo 1836-05-03 Henry Hoare, 1807-12-27 - 1866-04-16, son of douglas.ttl#William_Henry_Hoare and Louisa Elizabeth Noel
+  # -> Hugh Edward Hoare, 1854-03-26 - 1929-07-15, https://www.wikidata.org/wiki/Q5930649
+  #   oo Elizabeth Catherine Mary Wolfe Murray, 1857-09-30 - 1905-04-14, daughter of murray.ttl#James_Wolfe_Murray and Elizabeth Charlotte Whyte-Melville, 1886
+<https://www.wikidata.org/wiki/Q5080682>
+  # Charles Jacob Bullock Marsham, 1829-01-18 – 1901-09-20
+  gen:father <https://www.wikidata.org/wiki/Q49775435> ;
+  gen:mother <https://www.wikidata.org/wiki/Q49780401> .
+<https://www.wikidata.org/wiki/Q7347383>
+  # Robert Henry Bullock-Marsham, 1833-09-03 - 1913-04-05
+  gen:father <https://www.wikidata.org/wiki/Q49775435> ;
+  gen:mother <https://www.wikidata.org/wiki/Q49780401> .
+  # oo Laura Field, d. 1926-07-25, daughter of George Field
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7347383> , <#Laura_Field> ;
+	gen:startDate "1871-01-26" .
+<https://www.wikidata.org/wiki/Q5006361>
+  # Rev. Cloudesley Dewar Bullock Marsham, 1835-01-30 – 1915-03-23
+  gen:father <https://www.wikidata.org/wiki/Q49775435> ;
+  gen:mother <https://www.wikidata.org/wiki/Q49780401> .
+  # oo Frances Penelope Marsham, 1841-12-28 - 1890-02-08
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5006361> , <#Frances_Penelope_Marsham> ;
+	gen:startDate "1876-06-20" .
+  # oo Edith Matilda Birch Reynardson, d. 1929-06-10, daughter of Rev. George Birch Reynardson and Julia Trollope
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5006361> , <#Edith_Matilda_Birch_Reynardson> ;
+	gen:startDate "1897-02-16" .
+<#Catherine_Elizabeth_Marsham>
+  # Catherine Elizabeth Marsham, 1838-01-12 - 1903-06-16
+  gen:father <#George_Frederick_John_Marsham> ;
+  gen:mother <#Elizabeth_Marcia_Jones> .
+  # oo 1866-01-23 Rev. William Gale Townley, 1827 - 1869-09-04, son of Richard Greaves Townley
+  # oo 1880-05-11 Hon. Edward Kenyon, 1810-06-11 - 1894-10-21, son of https://www.wikidata.org/wiki/Q18527444 and Margaret Emma Hanmer
+<#Frances_Penelope_Marsham>
+  # Frances Penelope Marsham, 1841-12-28 - 1890-02-08
+  gen:father <#George_Frederick_John_Marsham> ;
+  gen:mother <#Elizabeth_Marcia_Jones> .
+  # oo 1876-06-20 Rev. Cloudesley Dewar Bullock Marsham, 1835-01-30 – 1915-03-23, https://www.wikidata.org/wiki/Q5006361
+
+<https://www.wikidata.org/wiki/Q5080688>
+  # Charles Marsham, 4th Earl of Romney, 1841-03-07 - 1905-08-21
+  gen:father <https://www.wikidata.org/wiki/Q5080686> ;
+  gen:mother <scott.ttl#Lady_Margaret_Harriet_Montagu_Scott> .
+  # oo Lady Frances Augusta Constance Muir Rawdon-Hastings, 1844-03-16 - 1910-09-01
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5080688> , <hastings.ttl#Lady_Frances_Augusta_Constance_Muir_Rawdon-Hastings> ;
+	gen:startDate "1863-07-30" .
+<https://www.wikidata.org/wiki/Q28844151>
+  # Rev. Hon. John Marsham, 1842-07-25 - 1926-09-16
+  gen:father <https://www.wikidata.org/wiki/Q5080686> ;
+  gen:mother <scott.ttl#Lady_Margaret_Harriet_Montagu_Scott> .
+  # oo Penelope Jane Hume, d. 1936-05-01, daughter of Rev. William Wheler Hume
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q28844151> , <#Penelope_Jane_Hume> ;
+	gen:startDate "1866-06-21" .
+<#Charles_George_Field-Marsham>
+  # Charles George Field-Marsham, 1872-12-03 - 1956-10-07
+  gen:father <https://www.wikidata.org/wiki/Q7347383> ;
+  gen:mother <#Laura_Field> .
+  # oo Mary Dorothea Knight, d. 1970-01-26, daughter of Edward Knight
+  []
+    gen:spouse <#Charles_George_Field-Marsham> , <#Mary_Dorothea_Knight> ;
+	gen:startDate "1904-10-25" .
+<#Cloudesley_Henry_Bullock-Marsham>
+  # Cloudesley Henry Bullock-Marsham, 1879-02-10 - 1928-07-19
+  gen:father <https://www.wikidata.org/wiki/Q5006361> ;
+  gen:mother <#Frances_Penelope_Marsham> .
+  # oo Algitha Parker, 1880-11-18 - 1972-04-14, daughter of Rev. Hon. Algernon Robert Parker (1849-11-17 - 1940-05-20, son of https://www.wikidata.org/wiki/Q7614508 (grosvenor.ttl) and Lady Mary Frances Grosvenor) and oo 1877-04-26 Emma Jane Anne Kenyon (d. 1933-05-17, daughter of Hon. Edward Kenyon (1810-06-11 - 1894-10-21, son of George Kenyon, 2nd Baron Kenyon, Baron of Gredington (1776-07-22 - 1855-02-25, https://www.wikidata.org/wiki/Q18527444, son of Lloyd Kenyon, 1st Baron Kenyon, Baron of Gredington (1732-10-05 - 1802-04-04, 1st Baronet Kenyon, of Gredington, co. Flint 1784-07-28, 1st Baron Kenyon, Baron of Gredington, co. Flint 1788-06-09, https://www.wikidata.org/wiki/Q6662537, son of Lloyd Kenyon and Jane Eddowes) and oo 1773-10-16 Mary Kenyon (d. 1808-08-08, daughter of George Kenyon and Peregrina Eddowes)) and oo 1803-02-01 Margaret Emma Hanmer (d. 1815-02-24, daughter of Sir Thomas Hanmer, 2nd Baronet (1747-04-05 - 1828-10-04, https://www.wikidata.org/wiki/Q21166240, son of Sir Walden Hanmer, 1st Baronet (1717-03-19 - 1783-10-20, 1st Baronet Hanmer, of Hanmer, co. Flint 1774-05-21, https://www.wikidata.org/wiki/Q26857700) and oo Anne Graham (d. 1778-02-02, daughter of Henry Vere Graham)) and oo 1779-12-03 Margaret Kenyon (d. 1830-11-06, daughter of George Kenyon))) and oo 1840-09-19 Caroline Susan Catherine Beresford (1814-03-29 - 1866-03-08, daughter of Rt. Hon. Lord George Thomas Beresford (1781-02-12 - 1839-10-26, https://www.wikidata.org/wiki/Q16239044, son of https://www.wikidata.org/wiki/Q886541 (courtenay.ttl) and Elizabeth Monck) and oo 1808-11-22 Harriet Schutz (d. 1860-04-28, daughter of John Bacon Schutz))), on 14 February 1911
+<#Francis_William_Bullock-Marsham>
+  # Francis William Bullock-Marsham, 1883-07-13 - 1971-12-22
+  gen:father <https://www.wikidata.org/wiki/Q5006361> ;
+  gen:mother <#Frances_Penelope_Marsham> .
+  # oo Finovola Marianne Eleanor Maclean, 1887-02-14 - 1935, daughter of Sir Fitzroy Donald Maclean, 10th Baronet (1835-05-18 - 1936-11-22, https://www.wikidata.org/wiki/Q7526668, son of https://www.wikidata.org/wiki/Q7526248 and #Emily_Eleanor_Marsham) and oo 1872-01-17 Constance Marianne Ackers (d. 1920-03-08, daughter of George Holland Ackers)
+  []
+    gen:spouse <#Francis_William_Bullock-Marsham> , <#Finovola_Marianne_Eleanor_Maclean> ;
+	gen:startDate "1922-04-19" .
+
+<#Charles_Marsham,_5th_Earl_of_Romney>
+  # Charles Marsham, 5th Earl of Romney, 1864-10-25 - 1933-03-13
+  gen:father <https://www.wikidata.org/wiki/Q5080688> ;
+  gen:mother <hastings.ttl#Lady_Frances_Augusta_Constance_Muir_Rawdon-Hastings> .
+  # oo Anne Louisa Scott, d. 1936-02-05, daughter of Sir Edward Henry Scott, 5th Baronet, of Lytchet Minster
+  []
+    gen:spouse <#Charles_Marsham,_5th_Earl_of_Romney> , <#Anne_Louisa_Scott> ;
+	gen:startDate "1890-06-12" .
+<#Reginald_Hastings_Marsham>
+  # Hon. Reginald Hastings Marsham, 1865-12-19 - 1922-11-08
+  gen:father <https://www.wikidata.org/wiki/Q5080688> ;
+  gen:mother <hastings.ttl#Lady_Frances_Augusta_Constance_Muir_Rawdon-Hastings> .
+  # oo Dora Hermione North, d. 1923-08-14, daughter of Charles North (1828-03-25 - 1906-05-10, son of Frederick North (1800-07-02 - 1869-10-29, son of Francis Frederick North (1778-07-02 - 1821-10-08, son of Fountain North (b. 14 March 1749, son of Roger North (b. 1703-01-26, son of Roger North (1653-09-03 - 1734-03-01, son of https://www.wikidata.org/wiki/Q5311931 (montagu.ttl) and Anne Montagu) and oo Mary Gayer (daughter of Sir Robert Gayer)) and oo Jane Lake (daughter of W. Lake)) and oo Arabella Strutt (daughter of Isaac Strutt)) and oo 1799-03-05 Elizabeth Whitear (daughter of Reverend William Whitear)) and oo 1825-06-16 Janet Marjoribanks ( daughter of Sir John Marjoribanks, 1st Baronet (1763-01-13 - 1833-02-05, 1st Baronet Marjoribanks, of Lees, co. Berwick 1815-05-06, https://www.wikidata.org/wiki/Q23463437, son of Edward Marjoribanks and Grizel Stewart) and oo 1791-04-15 Alison Ramsay (daughter of William Ramsay and Janet Mansfield))) and oo 1859-03-16 Augusta Keppel (1839~ - 1917-02-17, daughter of keppel.ttl#Thomas_Robert_Keppel and Frances Barrett-Lennard)
+  []
+    gen:spouse <#Reginald_Hastings_Marsham> , <keppel.ttl#Dora_Hermione_North> ;
+	gen:startDate "1908-02-04" .
+<#Lady_Florence_Mary_Constance_Marsham>
+  # Lady Florence Mary Constance Marsham, 1868-02-09 - 1954-10-04
+  gen:father <https://www.wikidata.org/wiki/Q5080688> ;
+  gen:mother <hastings.ttl#Lady_Frances_Augusta_Constance_Muir_Rawdon-Hastings> .
+  # oo Sir George Ralph Leigh Hare, 3rd Baronet, 1866-03-16 - 1933-05-19, son of Sir Thomas Hare, 2nd Baronet (1807-07-18 - 1880-11-14) and oo 1864-10-01 Grace Norman (d. 1879-01-16, daughter of Hon. George Lawrence Vaughan (1802-02-08 - 1879-08-19, son of https://www.wikidata.org/wiki/Q6261853 (seymour.ttl) and Hon. Lucy Courtenay) and Harriet Norman), on 3 December 1891
+<#Sydney_Edward_Marsham>
+  # Hon. Sydney Edward Marsham, 1879-12-29 - 1952-01-06
+  gen:father <https://www.wikidata.org/wiki/Q5080688> ;
+  gen:mother <hastings.ttl#Lady_Frances_Augusta_Constance_Muir_Rawdon-Hastings> .
+  # oo Joan Warry, d. 1972-03-13, daughter of William Warry
+  []
+    gen:spouse <#Sydney_Edward_Marsham> , <#Joan_Warry> ;
+	gen:startDate "1911-02-02" .
+<#Mabel_Pensée_Marsham>
+  # Mabel Pensée Marsham, 1867 - 1928-04-14
+  gen:father <https://www.wikidata.org/wiki/Q28844151> ;
+  gen:mother <#Penelope_Jane_Hume> .
+  # oo 1902-08-07 Rev. Arthur Robertson Hoare, 1871-10-17 – 1941-03-18, https://www.wikidata.org/wiki/Q65559795, son of Rev. Walter Marsham Hoare (son of Henry Hoare and Lady Mary Marsham (https://www.wikidata.org/wiki/Q27942532))
+<https://www.wikidata.org/wiki/Q15995765>
+  # Walter John Marsham, 1869-10-24 - 1945-03-08
+  gen:father <https://www.wikidata.org/wiki/Q28844151> ;
+  gen:mother <#Penelope_Jane_Hume> .
+  # oo Frances Leonora Monckton, 1882-03-16 - 1956-11-16, daughter of Edward Philip Monckton (1840-07-18 - 1916-04-17, son of Edward Henry Cradock Monckton (1812-09-12 - 1878-07-14, son of Philip Monckton (1787-03-03 - 1820-01-06, son of Hon. Edward Monckton (1744-11-03 - 1832-07-21, https://www.wikidata.org/wiki/Q5344483, son of https://www.wikidata.org/wiki/Q6249138 (manners.ttl, grosvenor.ttl) and Jane Westenra) and oo 1776-03-14 Sophia Pigot (1763~ - 1834-01-01, daughter of George Pigot, 1st Baron Pigot of Patshull (1719-03-04 - 1777-05-11, 1st Baronet Pigot, of Patshull, Staffordshire 1764-12-05, 1st Baron Pigot of Patshull, co. Dublin 1766-01-18, https://www.wikidata.org/wiki/Q5543413))) and oo 1811 Henrietta Carter (daughter of Michael Carter)) and oo 1839-10-07 Maria Catherine Tydd (d. 1896-10-07, daughter of H. W. Tydd)) and oo 1866-09-25 Christabel Francis (d. 1899-05-23, daughter of Rev. C. D. Francis)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q15995765> , <#Frances_Leonora_Monckton> ;
+	gen:startDate "1908-07-15" .
+<#Evelyn_Florence_Marsham>
+  # Evelyn Florence Marsham, 1874 - 1956-06-24
+  gen:father <https://www.wikidata.org/wiki/Q28844151> ;
+  gen:mother <#Penelope_Jane_Hume> .
+  # oo 1930-10-21 Rev. Arthur Robertson Hoare, 1871-10-17 – 1941-03-18, https://www.wikidata.org/wiki/Q65559795
+<#Grace_Margaret_Marsham>
+  # Grace Margaret Marsham, 1877-09-17 - 1971
+  gen:father <https://www.wikidata.org/wiki/Q28844151> ;
+  gen:mother <#Penelope_Jane_Hume> .
+  # oo 1904-09-29 Brien Ibrican Cokayne, 1st Baron Cullen of Ashbourne, 1864-07-12 – 1932-11-03, 1st Baron Cullen of Ashbourne, of Roehampton, co. Surrey 1920-04-21, son of George Edward Cokayne (1825-04-29 – 1911-08-06, https://www.wikidata.org/wiki/Q1238190, son of William Adams (d. 1851-06-11) and oo 1811-04-06 Hon. Mary Anne Cokayne (1781-12-11 - 1873-06-16, daughter of Hon. William Cokayne (manners.ttl) and Barbara Hill)) and oo 1856-12-02 Mary Dorothea Gibbs (1833-05-04 - 1906-03-11, daughter of George Henry Gibbs and Caroline Crawley)
+<#Robert_Edward_Field-Marsham>
+  # Robert Edward Field-Marsham, 1905-08-03 - 1996-11-23
+  gen:father <#Charles_George_Field-Marsham> ;
+  gen:mother <#Mary_Dorothea_Knight> .
+  # oo Katherine Dorothea Gearaldine Mary Wrohan, daughter of Henry Wrohan and Kathleen (?)
+  []
+    gen:spouse <#Robert_Edward_Field-Marsham> , <#Katherine_Dorothea_Gearaldine_Mary_Wrohan> ;
+	gen:startDate "1936-06-24" ;
+	gen:divorceDate "1950" .
+  # oo Joan Helen Nevill, 1906-04-26 - 1998-03-18, daughter of Percy Llewelyn Nevill (1877-05-11 1927-04-24, son of Hon. Ralph Pelham Nevill (1832-11-28 - 1914-08-17, https://www.wikidata.org/wiki/Q45844089, son of William Nevill, 4th Earl of Abergavenny (1702-06-28 - 1868-08-17, https://www.wikidata.org/wiki/Q7611188) and Caroline Leeke) and oo 1860-07-12 Louisa Marianne Maclean (d. 1919-07-06, daughter of https://www.wikidata.org/wiki/Q7526248 and #Emily_Eleanor_Marsham)) and oo 1905-06-10 Marjorie Nevill (1886-10-11 - 1945-03-08, daughter of Lord George Montacute Nevill (1856-09-23 - 1920-08-10, son of https://www.wikidata.org/wiki/Q8016084 (fitzgerald.ttl, son of https://www.wikidata.org/wiki/Q7611188) and Caroline Vanden-Bempde-Johnstone) and oo 1882-10-19 Florence Mary Soanes (d. 1929-12-19, daughter of Temple Soanes and Alice Burford Womersley))
+  []
+    gen:spouse <#Robert_Edward_Field-Marsham> , <neville.ttl#Joan_Helen_Nevill> ;
+	gen:startDate "1950-10-02" .
+<#Charles_Austin_Field-Marsham>
+  # Charles Austin Field-Marsham+1 b. 1910-11-03 - 1941-01-15
+  gen:father <#Charles_George_Field-Marsham> ;
+  gen:mother <#Mary_Dorothea_Knight> .
+  # oo Joan Helen Nevill, 1906-04-26 - 1998-03-18
+  []
+    gen:spouse <#Charles_Austin_Field-Marsham> , <neville.ttl#Joan_Helen_Nevill> ;
+	gen:startDate "1935-02-14" .
+
+<https://www.wikidata.org/wiki/Q21715512>
+  # Charles Marsham, 6th Earl of Romney, 1892-07-09 - 1975-09-06
+  gen:father <#Charles_Marsham,_5th_Earl_of_Romney> ;
+  gen:mother <#Anne_Louisa_Scott> .
+  # oo Marie Henrietta Margaret Keppel, 1891-01-06 - 1976-01-21
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q21715512> , <keppel.ttl#Marie_Henrietta_Margaret_Keppel> ;
+	gen:startDate "1918-07-24" .
+<https://www.wikidata.org/wiki/Q19653699>
+  # Michael Henry Marsham, 7th Earl of Romney, 1910-11-22 – 2004-06-05
+  gen:father <#Reginald_Hastings_Marsham> ;
+  gen:mother <keppel.ttl#Dora_Hermione_North> .
+  # oo Frances Aileen Landale, d. 1995-10-02, daughter of Captain James Russell Landale and Lilian Constance Sheila Walker
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q19653699> , <#Frances_Aileen_Landale> ;
+	gen:startDate "1939-06-28" .
+<#Peter_William_Marsham>
+  # Peter William Marsham, 1913-06-08 - 1970-11-03
+  gen:father <#Sydney_Edward_Marsham> ;
+  gen:mother <#Joan_Warry> .
+  # oo Hersey Coke, 1915-03-23 - 2012-02-12, daughter of coke.ttl#Richard_Coke and Hon. Doreen O'Brien
+  []
+    gen:spouse <#Peter_William_Marsham> , <coke.ttl#Hersey_Coke> ;
+	gen:startDate "1946-07-18" .
+
+<https://www.wikidata.org/wiki/Q27517669>
+  # Julian Charles Marsham, 8th Earl of Romney, b. 1948-03-28
+  gen:father <#Peter_William_Marsham> ;
+  gen:mother <coke.ttl#Hersey_Coke> .
+  # oo Catriona Ann Stewart, b. 1954, daughter of Sir Robert Christie Stewart (d. 2019-09-25) and oo 1953-05-21 Ann Grizel Cochrane (b. 1932-06-26, daughter of Hon. Sir Ralph Alexander Cochrane (1895-02-24 - 1977-12-17, https://www.wikidata.org/wiki/Q3331858, son of https://www.wikidata.org/wiki/Q377175 and Lady Gertrude Julia Georgina Boyle) and oo 1930-12-22 Hilda Frances Holme Wiggin (d. 1982, daughter of Francis Holme Wiggin))
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q27517669> , <#Catriona_Ann_Stewart> ;
+	gen:startDate "1975-09-06" .
+<#Lady_Sarah_Marsham>
+  # Lady Sarah Marsham, b. 1954-10-03
+  gen:father <#Peter_William_Marsham> ;
+  gen:mother <coke.ttl#Hersey_Coke> .
+  # oo 1982-04-17 Maxwell Colin Bernard Ward, b. 1949-08-22, son of Bernard Maxwell Ward (1921-04-28 - 1991, son of Maxwell William Bernard Ward (1889-08-24 - 1960-01-12, son of Hon. Bernard Matthew Ward (1831-08-26 - 1918-06-27, son of Edward Southwell Ward, 3rd Viscount Bangor (1790-03 - 1837-08-01, https://www.wikidata.org/wiki/Q33131401, son of Hon. Edward Ward (1753-04-30 - 1812-11, https://www.wikidata.org/wiki/Q5345803, son of Bernard Ward, 1st Viscount Bangor (1719-08-18 - 1781-05-20, https://www.wikidata.org/wiki/Q4893737 (montgoemerie.ttl), 1st Baron Bangor, of Castle Ward, co. Down 1770-05-30, 1st Viscount Bangor, of Castle Ward, co. Down 1781-01-11, son of Michael Ward and Anne Catharina Hamilton) and oo 1747-12 Lady Ann Bligh (d. 1789-02-07, daughter of John Bligh, 1st Earl of Darnley (capell.ttl) and Theodosia Hyde, Baroness Clifton (of Leighton Bromswold))) and oo 1783-02-15 Lady Arabella Crosbie (1757-10-21 - 1813-11-10, daughter of https://www.wikidata.org/wiki/Q8007316 (fitzgerald.ttl) and Lady Theodosia Bligh)) and oo 1826-02-14 Hon. Harriet Margaret Maxwell (1805-02-11 - 1880-07-04, daughter of Rev. Henry Maxwell, 6th Baron Farnham (1768a - 1838-10-19, https://www.wikidata.org/wiki/Q16836319) and oo 1798-09-08 Lady Anne Butler (d. 1831-05-29, daughter of https://www.wikidata.org/wiki/Q16239253 and Sarah Elizabeth Taylor))) and oo 1873-02-11 Laura Maberly (1850 - 1928-02-12, daughter of Evan Maberly and Laura Charlotte Smith)) and oo 1919-08-28 Ruth Elizabeth Whittingdale (daughter of John Flasby Laurence Whittingdale)) and oo 1948-06-01 Sunniva Neven-Spence (d. 1962-01-29, daughter of Sir Basil Hamilton Hebden Neven-Spence)
+
+<#David_Charles_Marsham,_Viscount_Marsham>
+  # David Charles Marsham, Viscount Marsham, b. 1977-04-18
+  gen:father <https://www.wikidata.org/wiki/Q27517669> ;
+  gen:mother <#Catriona_Ann_Stewart> .
+  # oo Katherine F. Phillips, daughter of Timothy Phillips
+  []
+    gen:spouse <#David_Charles_Marsham,_Viscount_Marsham> , <#Katherine_F._Phillips> ;
+	gen:startDate "2012-05" .
+<#Michael_Julian_Marsham>
+  # Hon. Michael Julian Marsham, b. 1979-03-03
+  gen:father <https://www.wikidata.org/wiki/Q27517669> ;
+  gen:mother <#Catriona_Ann_Stewart> .
+  # oo Hon. Lucy Harriet Beaumont, b. 1981-04-30, daughter of Wentworth Peter Ismay Beaumont, 4th Viscount Allendale (b. 1948-11-13, son of Wentworth Hubert Charles Beaumont, 3rd Viscount Allendale (1922-09-12 - 2002-12-27, https://www.wikidata.org/wiki/Q18737260, son of https://www.wikidata.org/wiki/Q7983012 (erskine.ttl) and Violet Lucy Emily Seely) and oo 1948-02-10 (div 1984) Hon. Sarah Field Ismay (b. 1928-05-16, daughter of Hastings Lionel Ismay, 1st Baron Ismay (seymour.ttl) and Laura Kathleen Clegg)) and oo 1975-02-14 Theresa Mary Magdalene More O'Ferrall (b. 1950-03-08, daughter of Francis Ambrose More O'Ferrall and Angela Mary Mather-Jackson)
+  []
+    gen:spouse <#Michael_Julian_Marsham> , <#Lucy_Harriet_Beaumont> ;
+	gen:startDate "2013-04-27" .
+<#Lady_Laura_Clare_Marsham>
+  # Lady Laura Clare Marsham, b. 1984-03-18
+  gen:father <https://www.wikidata.org/wiki/Q27517669> ;
+  gen:mother <#Catriona_Ann_Stewart> .
+  # oo 2013-09-14 James Richard Meade, b. 1981, son of Richard John Hannay Meade and Angela Dorothy Farquhar
+
+<#Isabella_Marsham>
+  # Hon. Isabella Marsham, b. 2013
+  gen:father <#David_Charles_Marsham,_Viscount_Marsham> ;
+  gen:mother <#Katherine_F._Phillips> .
+<#James_Julian_Marsham>
+  # Hon. James Julian Marsham, b. 2014-08-04
+  gen:father <#David_Charles_Marsham,_Viscount_Marsham> ;
+  gen:mother <#Katherine_F._Phillips> .
+<#Louis_Alexander_Marsham>
+  # Louis Alexander Marsham, b. 2014-10-04
+  gen:father <#Michael_Julian_Marsham> ;
+  gen:mother <#Lucy_Harriet_Beaumont> .
+<#Molly_Tessa_Cici_Marsham>
+  # Molly Tessa Cici Marsham, b. 2017-02-01
+  gen:father <#Michael_Julian_Marsham> ;
+  gen:mother <#Lucy_Harriet_Beaumont> .
+
+
+# ----
+#<https://www.wikidata.org/wiki/Q7529228>
+  # Sir Thomas Palmer, 4th Baronet, of Wingham, 1682-07-05 – 1723-11-08
+  # son of Herbert Palmer
+  # oo Elizabeth Marsham, 1683-09-21 - 1714
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7529228> ,<#Elizabeth_Marsham_(died_1714)> .
+
+<#Elizabeth/Anne_Palmer>
+  # Elizabeth/Anne Palmer, b. 1709-08-21
+  gen:father <https://www.wikidata.org/wiki/Q7529228> ;
+  gen:mother <#Elizabeth_Marsham_(died_1714)> .
+  # oo 1746-09-06 Hon. Edward Finch-Hatton, 1697~ - 1771-05-16, https://www.wikidata.org/wiki/Q5342901
+<#Elizabeth_Palmer>
+  # Elizabeth Palmer, 1714-07-26 - 1743-02-16
+  gen:father <https://www.wikidata.org/wiki/Q7529228> ;
+  gen:mother <#Elizabeth_Marsham_(died_1714)> .
+  # oo 1737-08-28 Hon. Charles Feilding, 1717b - 1746-02-06, fitzgerald.ttl#Charles_Feilding_(died_1746)
+
+# ----
+<#Elizabeth_Shovell>
+  # Elizabeth Shovell, 1692-11-02 - 1750-11-17
+  gen:father <https://www.wikidata.org/wiki/Q1102640> .
+  # and Elizabeth Hill
+  # oo 1708-ß8-19 Robert Marsham, 1st Baron of Romney, 1685-09-17 - 1724-11-28, https://www.wikidata.org/wiki/Q7347382
+
+# ----
+<https://www.wikidata.org/wiki/Q47542129>
+  # Lady Frances Wyndham, 1755-07-09 – 1795-01-15
+  gen:father <https://www.wikidata.org/wiki/Q337680> ;
+  gen:mother <https://www.wikidata.org/wiki/Q47462120> .
+  # oo 1776-08-30 Charles Marsham, 1st Earl of Romney, 1744-09-28 – 1811-03-01, https://www.wikidata.org/wiki/Q5080683
+
+# ----
+#<https://www.wikidata.org/wiki/Q7526248>
+  # Sir Charles Fitzroy Maclean, 9th Baronet, 1798-10-14 - 1883-01-27
+  # son of Sir Fitzroy Jeffreys Grafton Maclean, 8th Baronet
+  # and Elizabeth Kidd
+  # oo Emily Eleanor Marsham, 1803-02-10 - 1838-04-12
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7526248> , <#Emily_Eleanor_Marsham> ;
+	gen:startDate "1831-05-10" .
+
+<#Louisa_Marianne_Maclean>
+  # Louisa Marianne Maclean, d. 1919-07-06
+  gen:father <https://www.wikidata.org/wiki/Q7526248> ;
+  gen:mother <marsham.ttl#Emily_Eleanor_Marsham> .
+  # oo 1860-07-12 Hon. Ralph Pelham Nevill, 1832-11-28 - 1914-08-17, bingham.ttl#Ralph_Pelham_Nevill
+
+# ----
+
+
