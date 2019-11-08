@@ -1,0 +1,212 @@
+@base <cadogan.ttl> .
+@prefix gen: <http://jjkoch.de/gen#> .
+@prefix wdata: <https://www.wikidata.org/wiki/> .
+@prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+# lennox.ttl
+<https://www.wikidata.org/wiki/Q3278281>
+  # William Cadogan, 1st Earl Cadogan, 1672 - 1726-07-17
+  # 1st Baron Cadogan of Reading, co. Berks 1716-06-21
+  # 1st Earl Cadogan, co. Denbigh, 1st Viscount Caversham, co. Oxford, 1st Baron Cadogan of Oakley, co. Buckingham 1718-05-08
+  gen:father <https://www.wikidata.org/wiki/Q4400917> .
+  # oo Margaretta Cecilia Munter, 1675-07-27 - 1749-10-22, daughter of Jan Munter and Margaretha Trip
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3278281> , <#Margaretta_Cecilia_Munter> ;
+	gen:startDate "1704-04" .
+
+# lennox.ttl
+<https://www.wikidata.org/wiki/Q1388169>
+  # Lady Sarah Cadogan, 1705-09-18 - 1751-08-25
+  gen:father <https://www.wikidata.org/wiki/Q3278281> ;
+  gen:mother <#Margaretta_Cecilia_Munter> .
+  # oo 1719-12-04 Charles Lennox, 2nd Duke of Richmond, 1701-05-18 - 1750-08-08, https://www.wikidata.org/wiki/Q966008
+# lennox.ttl
+<#Lady_Margaret_Cadogan>
+  # Lady Margaret Cadogan, b. 1707-02-21
+  gen:father <https://www.wikidata.org/wiki/Q3278281> ;
+  gen:mother <#Margaretta_Cecilia_Munter> .
+  # oo 1738-01-11 Hon. Charles John Bentinck, 1708-06-02 - 1779-03-18, bentinck.ttl#Charles_John_Bentinck
+
+
+# paget.ttl
+<https://www.wikidata.org/wiki/Q4400978>
+  gen:name "Charles Sloane Cadogan, 1st Earl Cadogan"@en ;
+  # 3rd Baron Cadogan of Oakley, co. Buckingham 1776-09-24
+  # 1st Earl Cadogan, 1st Viscount Chelsea, co. Middlesex 1800-12-27
+  gen:birthDate "1728-09-29" ;
+  gen:deathDate "1807-04-03" ;
+  gen:father <https://www.wikidata.org/wiki/Q5076030> .
+  # oo Hon. Frances Bromley
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4400978> , <#Frances_Bromley> ;
+	gen:startDate "1747-05-30" .
+  # oo Mary Churchill, 1758-02-23 - 1797a
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4400978> , <https://www.wikidata.org/wiki/Q34135389> ;
+	gen:startDate "1777-05-10" ;
+	gen:divorceDate "1796" .
+
+# paget.ttl
+<#Lady_Emily_Mary_Cadogan>
+  gen:name "Lady Emily Mary Cadogan"@en ;
+  gen:birthDate "1778-05-26" ;
+  gen:deathDate "1839-12-22" ;
+  gen:father <https://www.wikidata.org/wiki/Q4400978> ;
+  gen:mother <https://www.wikidata.org/wiki/Q34135389> .
+  # oo 1802-06-02 Rev. Hon. Gerald Valerian Wellesley, 1770-12-07 - 1848-10-24, wellesley.ttl#Gerald_Valerian_Wellesley
+# paget.ttl
+<https://www.wikidata.org/wiki/Q46996626>
+  gen:name "Lady Charlotte Cadogan"@en ;
+  gen:birthDate "1781-07-01" ;
+  gen:deathDate "1853-07-08" ;
+  gen:father <https://www.wikidata.org/wiki/Q4400978> ;
+  gen:mother <https://www.wikidata.org/wiki/Q34135389> .
+  # oo 1803-09-20 (div 1810) Henry Wellesley, 1st Baron Cowley of Wesley, 1773-01-20 - 1847-04-27, https://www.wikidata.org/wiki/Q334543
+  # oo 1810 Henry William Paget, 1st Marquess of Anglesey, 1768-05-17 - 1854-04-29, https://www.wikidata.org/wiki/Q335133
+
+
+# wellesley.ttl
+<https://www.wikidata.org/wiki/Q5719091>
+  # Henry Charles Cadogan, 4th Earl Cadogan, 1812-02-15 - 1873-06-08
+  gen:father <https://www.wikidata.org/wiki/Q5537609> .
+  # and Honoria Louisa Blake
+  # oo Mary Sarah Wellesley, 1808-01-16 - 1873-02-11
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5719091> , <wellesley.ttl#Mary_Sarah_Wellesley> ;
+	gen:startDate "1836-07-13" .
+# paget.ttl
+<https://www.wikidata.org/wiki/Q5499057>
+  # Hon. Frederick William Cadogan, 1821-12-16 - 1904-11-30
+  gen:father <https://www.wikidata.org/wiki/Q5537609> .
+  # and Honoria Louisa Blake
+  # oo Lady Adelaide Paget, d. 1890-08-21
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5499057> , <paget.ttl#Lady_Adelaide_Paget> ;
+	gen:startDate "1851-11-29" .
+
+# wellesley.ttl
+<#Charles_George_Henry_Cadogan>
+  # Hon. Charles George Henry Cadogan, 1850-06-14 - 1901-09-30
+  gen:father <https://www.wikidata.org/wiki/Q5719091> ;
+  gen:mother <wellesley.ttl#Mary_Sarah_Wellesley> .
+  # oo Henriette Wilhelmina Montgomery, d. 1913-09-24, daughter of Henry Montgomery
+  []
+    gen:spouse <#Charles_George_Henry_Cadogan> , <#Henriette_Wilhelmina_Montgomery> ;
+	gen:startDate "1874-06-20" .
+# paget.ttl
+<#Charlotte_Louisa_Emily_Cadogan>
+  # Charlotte Louisa Emily Cadogan, d. 1947-06-03
+  gen:father <https://www.wikidata.org/wiki/Q5499057> ;
+  gen:mother <paget.ttl#Lady_Adelaide_Paget> .
+  # oo 1883-01-09 Rev. Henry Montagu Villiers, 1837-11-13 - 1908-09-09, villiers.ttl#Henry_Montagu_Villiers_(died_1908)
+
+# wellesley.ttl
+<#Francis_Charles_Cadogan>
+  # Francis Charles Cadogan, 1885-01-01 - 1970-03-15
+  gen:father <#Charles_George_Henry_Cadogan> ;
+  gen:mother <#Henriette_Wilhelmina_Montgomery> .
+  # oo Ruth Evelyn Howard, 1877-12-10 - 1962-03-14
+  []
+    gen:spouse <#Francis_Charles_Cadogan> , <howard.ttl#Ruth_Evelyn_Howard> ;
+	gen:startDate "1913-09-02" .
+
+# wellesley.ttl
+<#Henriette_Alice_Cadogan>
+  # Henriette Alice Cadogan, 1914-06-06 - 2005-05-03
+  gen:father <#Francis_Charles_Cadogan> ;
+  gen:mother <howard.ttl#Ruth_Evelyn_Howard> .
+  # oo 1939-09-04 Sir Anthony Frederick Mark Palmer, 4th Baronet, 1914-08-29 - 1941-05-18, #Sir_Anthony_Palmer,_4th_Baronet
+
+
+
+# gordon.ttl
+<https://www.wikidata.org/wiki/Q9287820>
+  # Henry Cadogan, Viscount Chelsea, 1868-06-13 - 1908-07-02
+  gen:father <https://www.wikidata.org/wiki/Q3760457> .
+  # oo Hon. Mildred Cecilia Harriet Sturt
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q9287820> , <bingham.ttl#Mildred_Cecilia_Harriet_Sturt> ;
+	gen:startDate "1892-04-30" .
+
+# gordon.ttl
+<#Sibyl_Louise_Beatrix_Cadogan>
+  # Hon. Sibyl Louise Beatrix Cadogan, 1893-01-07 - 1969-06-21
+  gen:father <https://www.wikidata.org/wiki/Q9287820> ;
+  gen:mother <bingham.ttl#Mildred_Cecilia_Harriet_Sturt> .
+  # oo 1917-07-17 Rt. Hon. Sir Edward Montagu Cavendish Stanley, Lord Stanley, 1894-07-09 - 1938-10-16, https://www.wikidata.org/wiki/Q5345413
+# gordon.ttl
+<https://www.wikidata.org/wiki/Q34134981>
+  # Hon. Alexandra Mary Cadogan, 1900-02-22 - 1961-05-23rt
+  gen:father <https://www.wikidata.org/wiki/Q9287820> ;
+  gen:mother <bingham.ttl#Mildred_Cecilia_Harriet_Sturt> .
+  # oo 1920-02-17 John Albert William Spencer-Churchill, 10th Duke of Marlborough, 1897-09-18 - 1972-03-11, https://www.wikidata.org/wiki/Q335808
+# gordon.ttl
+<#Victoria_Laura_Cadogan>
+  # Hon. Victoria Laura Cadogan, 1901-10-22 - 1991
+  gen:father <https://www.wikidata.org/wiki/Q9287820> ;
+  gen:mother <bingham.ttl#Mildred_Cecilia_Harriet_Sturt> .
+  # oo 1922-07-22 Sir John Little Gilmour of Craigmillar, 2nd Baronet, 1899-06-05 - 1977-02-13, gordon.ttl#Sir_John_Little_Gilmour_of_Craigmillar,_2nd_Baronet
+
+
+# cecil.ttl
+<https://www.wikidata.org/wiki/Q7613615>
+  gen:name "William Gerald Charles Cadogan, 7th Earl of Cadogan"@en ;
+  gen:birthDate "1914-02-13" ;
+  gen:deathDate "1997-07-04" ;
+  gen:father <https://www.wikidata.org/wiki/Q7613580> .
+  # oo Hon. Primrose Lilian Yarde-Buller, 1918-12-24 - 1970-12-06
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7613615> , <hope.ttl#Primrose_Lilian_Yarde-Buller> ;
+	gen:startDate "1936-06-11" ;
+	gen:divorceDate "1960" .
+
+# cecil.ttl
+<#Lady_Sarah_Primrose_Beatrix_Cadogan>
+  gen:name "Lady Sarah Primrose Beatrix Cadogan"@en ;
+  gen:birthDate "1938-02-23" ;
+  gen:deathDate "2017-12-19" ;
+  gen:father <https://www.wikidata.org/wiki/Q7613615> ;
+  gen:mother <hope.ttl#Primrose_Lilian_Yarde-Buller> .
+  # oo 1958-11-18 James Hugh Cecil, 3rd Baron Rockley, 1934-04-05 - 2011-12-05, https://www.wikidata.org/wiki/Q15820714
+# cecil.ttl
+<https://www.wikidata.org/wiki/Q336239>
+  gen:name "Charles Gerald John Cadogan, 8th Earl of Cadogan"@en ;
+  gen:birthDate "1937-03-24" ;
+  gen:father <https://www.wikidata.org/wiki/Q7613615> ;
+  gen:mother <hope.ttl#Primrose_Lilian_Yarde-Buller> .
+  # oo Lady Philippa Dorothy Bluet Wallop, 1937-08-21 - 1984
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q336239> , <wallop.ttl#Lady_Philippa_Dorothy_Bluet_Wallop> ;
+	gen:startDate "1963-06-06" .
+
+
+
+
+
+# paget.ttl
+# ----
+<#Frances_Bromley>
+  # Hon. Frances Bromley
+  gen:father <https://www.wikidata.org/wiki/Q5718665> .
+  # and Frances Wyndham
+  # oo 1747-05-30 Charles Cadogan, 1st Earl Cadogan, 1728-09-29 - 1807-04-03, https://www.wikidata.org/wiki/Q4400978
+
+
+# wellesley.ttl
+# ----
+#<#Sir_Anthony_Palmer,_4th_Baronet>
+  # Sir Anthony Frederick Mark Palmer, 4th Baronet, 1914-08-29 - 1941-05-18
+  # son of Frederick Charles Palmer
+  # and Mabel Frances Hughes-Hallett
+  # oo Henriette Alice Cadogan, 1914-06-06 - 2005-05-03
+  []
+    gen:spouse <#Sir_Anthony_Palmer,_4th_Baronet> , <#Henriette_Alice_Cadogan> ;
+	gen:startDate "1939-09-04" .
+
+<#Antonia_Mary_Palmer>
+  # Antonia Mary Palmer, b. 1940-08-02
+  gen:father <#Sir_Anthony_Palmer,_4th_Baronet> ;
+  gen:mother <#Henriette_Alice_Cadogan> .
+  # oo 1968-06-06 Lord Christopher John Thynne, 1934-04-09 - 2017-01-27, thynne.ttl#Lord_Christopher_John_Thynne
+
