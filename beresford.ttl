@@ -3,7 +3,53 @@
 @prefix wdata: <https://www.wikidata.org/wiki/> .
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
 
-# cecil.ttl
+#<https://www.wikidata.org/wiki/Q7529334>
+  # Sir Tristram Beresford, 1st Baronet, d. 1673-01-15
+  # 1st Baronet Beresford, of Coleraine, co. Londonderry 1665-05-05
+  # son of Tristram Beresford, b. 1574, son of Michael Beresford and Rose Knyvett
+  # and Susannah Brooke
+  # oo Anne Rowley, daughter of John Rowley and Mary Gage
+  # oo Sarah Sackville
+
+<https://www.wikidata.org/wiki/Q7291457>
+  # Sir Randal Beresford, 2nd Baronet, 1636~ - 1681-10-19
+  gen:father <https://www.wikidata.org/wiki/Q7529334> .
+  # and Anne Rowley
+  # oo Hon. Catherine Annesley, 1634-01-05 - 1701-04-03
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7291457> , <#Catherine_Annesley> ;
+	gen:startDate "1662-02-20" .
+<#Michael_Beresford>
+  # Michael Beresford
+  gen:father <https://www.wikidata.org/wiki/Q7529334> .
+  # and Sarah Sackville
+  # oo Jane ???
+
+<https://www.wikidata.org/wiki/Q7529335>
+  # Sir Tristram Beresford, 3rd Baronet, 1669 – 1701-06-16
+  gen:father <https://www.wikidata.org/wiki/Q7291457> ;
+  gen:mother <#Catherine_Annesley> .
+  # oo Hon. Nichola Sophia Hamilton, 1666-02-23 - 1713-02-23, daughter of Hugh Hamilton, 1st Viscount of Glenawly (1600~ – 1678-04, Baron Hamilton de Deserf 1654, 1st Lord Hamilton, Baron of Glenawly, co. Fermanagh 1661-03-02, https://www.wikidata.org/wiki/Q5786156, (see bertie.ttl), son of Malcolm Hamilton and Mary Wilkie) and oo 1659-05-11 Susan Balfour (d. 1687-12-11, daughter of Sir William Balfour of Pitcullo and Isabella ???)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7529335> , <#Nichola_Sophia_Hamilton> ;
+	gen:startDate "1687-02" .
+<#Catherine_Beresford>
+  # Catherine Beresford
+  gen:father <https://www.wikidata.org/wiki/Q7291457> ;
+  gen:mother <#Catherine_Annesley> .
+  # oo 1697 Matthew Pennefather, son of Matthew Pennefather and Levina Kingsmill
+  # -> Elizabeth Pennefather, 1713~ - 1737-03-18
+  #  oo 1735-04-10 Alexander MacDonnell, 5th Earl of Antrim, 1713-07-22 - 1775-10-13, https://www.wikidata.org/wiki/Q71680049, son of Randal MacDonnell, 4th Earl of Antrim (1680 - 1721-10-19, https://www.wikidata.org/wiki/Q20713850, son of https://www.wikidata.org/wiki/Q4719470 and Helena Burke) and oo Hon. Rachael Skeffington (d. 1739-04-14, daughter of Clotworthy Skeffington, 3rd Viscount Massereene (1660~ - 1714-03-14, https://www.wikidata.org/wiki/Q38220458) and oo 1680-03-07 Rachael Hungerford (1662~ - 1732-02-02, daughter of Sir Edward Hungerford (1632-10-20 - 1711-07-05~) and oo Jane Helle (d. 1664-05-18, daughter of Sir John Helle)))
+<#Anne_Beresford>
+  # Anne Beresford, 1725 - 1820
+  gen:father <#Michael_Beresford> .
+  # and Jane ???
+  # oo 1747-10-17 Thomas Taylor, 1707 - 1763
+  #  -> Elizabeth Taylor, 1756 - 1849
+  #    oo Very Rev. Cadogan Keatinge, b. 1721, Dean of Clogher, https://www.wikidata.org/wiki/Q17007287
+  #  -> Annabella Taylor, 1767 - 1833
+  #    oo Sir Hugh Robert Rollo Gillespie, 1766-01-21 – 1814-10-31, https://www.wikidata.org/wiki/Q7361287
+
 <https://www.wikidata.org/wiki/Q886223>
   gen:name "Marcus Beresford, 1st Earl of Tyrone"@en ;
   # 4th Baronet Beresford, of Coleraine, co. Londonderry 1701-06-16
@@ -11,27 +57,48 @@
   # 1st Earl of Tyrone 1746-07-18
   gen:birthDate "1694-07-16" ;
   gen:deathDate "1763-04-04" ;
-  gen:father <https://www.wikidata.org/wiki/Q7529335> .
-  # and Hon. Nichola Sophia Hamilton
+  gen:father <https://www.wikidata.org/wiki/Q7529335> ;
+  gen:mother <#Nichola_Sophia_Hamilton> .
   # oo Catherine Power, Baroness la Poer, 1701-11-29 - 1769-07-27
   []
     gen:spouse <https://www.wikidata.org/wiki/Q886223> , <#Catherine_Power,_Baroness_la_Poer> ;
 	gen:startDate "1717-07-18" .
+<#Susanna_Catherina_Beresford>
+  # Susanna Catherina Beresford, 1689~ - 1763-03-08
+  gen:father <https://www.wikidata.org/wiki/Q7529335> ;
+  gen:mother <#Nichola_Sophia_Hamilton> .
+  # oo 1703 Hyacinth Richard Nugent, 1684a - 1738-03-05, son of Thomas Nugent, 1st Baron Nugent of Riverston (d. 1715-04-02, 1st Baron Nugent of Riverston, co. Westmeath 1689-04-03, https://www.wikidata.org/wiki/Q7792781, son of Richard Nugent, 2nd Earl of Westmeath (1621a/1623b – 1684-02-26, https://www.wikidata.org/wiki/Q7328108, son of Christopher Nugent, Lord Delvin (1604 - 1625-07-10, son of Richard Nugent, 1st Earl of Westmeath (1583 – 1642-06a, 6th Baron Delvin 1602-08-26, 1st Earl of Westmeath 1621-09-04, https://www.wikidata.org/wiki/Q7328107, son of https://www.wikidata.org/wiki/Q5112972 (fitzgerald.ttl) and Lady Mary FitzGerald) and oo 1694b Jane Plunkett (d. 1627-01-24a, daughter of Christopher Plunkett, 8th Lord Killeen and Genet Dillon)) and oo Lady Anne MacDonnell (daughter of Randal Mac Sorley Mac Donnell, 1st Earl of Antrim (d. 1636-12-10, 1st Viscount Dunluce, co. Antrim 1618-05-28, 1st Earl of Antrim 1620-12-12, https://www.wikidata.org/wiki/Q8731696, son of https://www.wikidata.org/wiki/Q2834684 and Mary O'Neill) and oo 1604 Alice O'Neill (1583~ - 1663-08-19a, https://www.wikidata.org/wiki/Q21069484, daughter of Hugh O'Neill, 3rd Earl of Tyrone (1550 - 1616-07-20, https://www.wikidata.org/wiki/Q225649) and oo Siobhan O'Donnell (d. 1591-01-31b, daughter of Sir Aodh O'Donnell)))) and oo 1641b Mary Nugent (d. 1672-05-19, daughter of Sir Thomas Nugent, 1st Baronet (1st Baronet Nugent, of Moyrath, son of Christopher Nugent))) and oo 1680-09~ Marianna Barnewall (d. 1735-09-16, daughter of Henry Barnewall, 2nd Viscount Barnewall of Kingsland (d. 1688-06-01, son of Nicholas Barnewall, 1st Viscount Barnewall of Kingsland (1582 - 1663-08-20, 1st Baron Turvey, 1st Viscount Barnewall of Kingsland, in the parish of Donabate, co. Dublin 1646-06-29, https://www.wikidata.org/wiki/Q7025023, fitzgerald.ttl) and Lady Bridget FitzGerald) and oo 1661 Hon. Mary Netterville (d. 1773-10-28, daughter of John Netterville, 2nd Viscount Netterville (d. 1659, https://www.wikidata.org/wiki/Q6250285, son of Nicolas Netterville, 1st Viscount Netterville (1581 - 1654, 1st Viscount Netterville, of Dowth, co. Meath 1622-04-03, https://www.wikidata.org/wiki/Q7025958, son of John Netterville and Eleanor Gernon) and oo Eleanor Bathe (d. 1634-10-27, daughter of Sir John Bathe)) and oo Lady Elizabeth Weston (daughter of Richard Weston, 1st Earl of Portland (1577-03-01 - 1635-03-13, 1st Baron Weston, of Neyland 1628-04-13, 1st Earl of Portland 1633-02-17, https://www.wikidata.org/wiki/Q3934897, son of Sir Jerome Weston and Mary Cave) and oo Elizabeth Pincheon (d. 1603-02~, daughter of William Pincheon and Rose Reding))))
+<#Jane_Beresford_(died_1764)>
+  # Jane Beresford, d. 1764-10-20
+  gen:father <https://www.wikidata.org/wiki/Q7529335> ;
+  gen:mother <#Nichola_Sophia_Hamilton> .
+  # oo 1711-03-30~ Gorges Lowther, d. 1716-06-11 (oo Jane Power, daughter of John Power, 5th Baron le Power and Coroghmore (1599 - 1662) and oo Ruth Pypho (d. 1642-06-17b, daughter of Robert Pypho)), hill.ttl#Gorges_Lowther_(died_1716)
+  # -> Sir Marcus Lowther-Crofton, 1st Baronet d. 1784-01-16
+  #  oo Catherine Crofton, d. 1767-04-09, daughter of Sir Edward Crofton, 3rd Baronet (1687-05-25 - 1739-11-11, son of Sir Edward Crofton, 2nd Baronet (d. 1729-11-24, https://www.wikidata.org/wiki/Q21069470) and oo 1684-02-02 Katherine St. George (daughter of Sir Oliver St. George, 1st Baronet (1695-10, 1st Baronet St. George, of Carrickdrumrusk, co. Leitrim 1660-09-05, https://www.wikidata.org/wiki/Q7528403) and oo 1652b Olivia Beresford (daughter of Michael Beresford of Coleraine and Mary Leak))) and oo 1711-03-04 Mary Nixon (d. 1756-02-10, daughter of Anthony Nixon), "1743-09-09" .
+  #  -> Sir Edward Crofton, 2nd Baronet, 1748-1011 - 1797-09-30, https://www.wikidata.org/wiki/Q7526537 (paget.ttl)
 
-# courtenay.ttl
+<#Lady_Anne_Beresford>
+  # Lady Anne Beresford, 1718 - 1770-05-12
+  gen:father <https://www.wikidata.org/wiki/Q886223> ;
+  gen:mother <#Catherine_Power,_Baroness_la_Poer> .
+  # oo 1738-08-16 William Annesley, 1st Viscount Glerawly, 1710~ - 1770-09-12, 1st Baron Annesley, of Castle Wellan, co. Down 1758-09-20, 1st Viscount Glerawly, of co. Fermanagh 1766-11-14, https://www.wikidata.org/wiki/Q8004465, son of Francis Annesley (1663-10-24 - 1750-04-07, son of Hon. Francis Annesley (b. 1629-01-23, son of https://www.wikidata.org/wiki/Q5480011 and Jane Stanhope) and oo 1662-12-29 Deborah Jones (d. 1672-09-04, daughter of Henry Jones)) and oo 1695-07-05 Elizabeth Martin (daughter of Sir Joseph Martin)
 <https://www.wikidata.org/wiki/Q886541>
   # George de la Poer Beresford, 1st Marquess of Waterford, 1735-01-08 – 1800-12-03
-  # 5th Baronet Beresford, of Coleraine, co. Londonderry 1763
+  # 2nd Earl of Tyrone, 2nd Baron Beresford, of Beresford, co. Cavan, 5th Baronet Beresford, of Coleraine, co. Londonderry 1763-04-04
+  # 2nd Baron la Poer 1769-07-17
+  # 1st Baron Tyrone, of Haverfordwest, co. Pembroke 1786-08-21
   # 1st Marquess of Waterford 1789-08-19
   gen:father <https://www.wikidata.org/wiki/Q886223> ;
   gen:mother <#Catherine_Power,_Baroness_la_Poer> .
-# cecil.ttl
+  # oo 1769-04-19 Elizabeth Monck, 1742 - 1816-01-15, daughter of bentinck.ttl#Henry_Monck and Lady Isabella Bentinck
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q886541> , <bentinck.ttl#Elizabeth_Monck> ;
+	gen:startDate "1769-04-19" .
 <#Lady_Eliza_Beresford>
   # Lady Eliza Beresford, 1736-08-08 - 1806-05-06
   gen:father <https://www.wikidata.org/wiki/Q886223> ;
   gen:mother <#Catherine_Power,_Baroness_la_Poer> .
-  # oo 1751 Thomas Cobbe, 1733 - 1798a, pelham.ttl#Thomas_Cobbe
-# cecil.ttl
+  # oo 1751-05-01 Thomas Cobbe, 1733 - 1814, pelham.ttl#Thomas_Cobbe
 <https://www.wikidata.org/wiki/Q15039906>
   # Rt. Hon. John de la Poer Beresford, 1738-03-14 - 1805-11-05
   gen:father <https://www.wikidata.org/wiki/Q886223> ;
@@ -40,39 +107,119 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q15039906> , <#Anne_Constantia_de_Ligondes> ;
 	gen:startDate "1760-11-12" .
-# cecil.ttl
+  # oo Barbara Montgomery, 1757~ - 16788-12-02, daughter of montgomery.ttl#Sir_William_Montgomery,_of_Magbiehill,_1st_Baronet and Hannah Tomkyns
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q15039906> , <montgomery.ttl#Barbara_Montgomery> ;
+	gen:startDate "1774-06-04" .
 <https://www.wikidata.org/wiki/Q16157445> # -> Baron Decies
   # William Beresford, 1st Baron Decies, 1743-04-16 - 1819-09-06
   gen:father <https://www.wikidata.org/wiki/Q886223> ;
   gen:mother <#Catherine_Power,_Baroness_la_Poer> .
+<#Lady_Catharine_Beresford>
+  # Lady Catharine Beresford, d. 1763-03-28
+  gen:father <https://www.wikidata.org/wiki/Q886223> ;
+  gen:mother <#Catherine_Power,_Baroness_la_Poer> .
+  # oo 1748-12-08 Thomas Christmas, d. 1749-03-28
+  # oo 1754-03-29 Rt. Hon. Theophilus Jones, 1729~ – 1811-12-08, https://www.wikidata.org/wiki/Q17285412 (murray.ttl)
+<#Lady_Frances_Maria_Beresford>
+  # Lady Frances Maria Beresford, 1731-10-09 - 1815
+  gen:father <https://www.wikidata.org/wiki/Q886223> ;
+  gen:mother <#Catherine_Power,_Baroness_la_Poer> .
+  # oo 1762-04-13 Rt. Hon. Henry Flood, 1732 – 1791-12-02, https://www.wikidata.org/wiki/Q3132779, son of Rt. Hon. Warden Flood (1694 – 1764-04-16, https://www.wikidata.org/wiki/Q7969131)
 
 # courtenay.ttl
 <https://www.wikidata.org/wiki/Q6661642>
   # Sir John de la Poer Beresford, 1st Baronet, 1766 - 1844-10-02
   # 1st Baronet Beresford, of Bagnall, co. Waterford 1814-05-21
   gen:father <https://www.wikidata.org/wiki/Q886541> .
+  # oo Mary Molloy, d. 1813-07, daughter of https://www.wikidata.org/wiki/Q4772826
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6661642> , <#Mary_Molloy> ;
+	gen:startDate "1809-05" .
   # oo Harriet Elizabeth Peirse, d. 1825-02-28, daughter of Henry Peirse
   []
     gen:spouse <https://www.wikidata.org/wiki/Q6661642> , <#Harriet_Elizabeth_Peirse> ;
 	gen:startDate "1815-08-17" .
-# talbot.ttl
+  # oo Amelia Baillie, d. 1862-12-17, daughter of James Baillie
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6661642> , <#Amelia_Baillie> ;
+	gen:startDate "1836-05-26" .
+<https://www.wikidata.org/wiki/Q332633>
+  # William Carr Beresford, 1st Viscount Beresford, 1st Marquis of Campo Maior, 1768-10-02 – 1854-01-08
+  # Conde de Trancoso 1811-05-13
+  # Duque de Elbas
+  # Marquez de Campo Mayor 1812-12.17
+  # 1st Baron Beresford of Albuera and Dungarvan, co. Waterford 1814-05-17
+  # 1st Viscount Beresford of Beresford, co. Stafford 1823-03-28
+  gen:father <https://www.wikidata.org/wiki/Q886541> .
+  # oo Hon. Louisa de la Poer Beresford, d. 1851-07-21
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q332633> , <https://www.wikidata.org/wiki/Q62383951> ;
+	gen:startDate "1832-11-29" .
 <https://www.wikidata.org/wiki/Q886239>
   # Henry de la Poer Beresford, 2nd Marquess of Waterford, 1772-05-23 – 1826-07-16
-  gen:father <https://www.wikidata.org/wiki/Q886541> .
+  gen:father <https://www.wikidata.org/wiki/Q886541> ;
+  gen:mother <bentinck.ttl#Elizabeth_Monck> .
   # oo Susanna Carpenter, d. 1827-06-07
   []
     gen:spouse <https://www.wikidata.org/wiki/Q886239> , <#Susanna_Carpenter> ;
 	gen:startDate "1805-08-29" .
-# courtenay.ttl
+<https://www.wikidata.org/wiki/Q6679435>
+  # Most Rev. Lord John George de la Poer Beresford, 1773-11-22 – 1862-07-18
+  # Dean of Clogher 1799 – 1805
+  # Bishop of Cork and Ross 1805 – 1807
+  # Bishop of Raphoe 1807 – 1819
+  # Bishop of Clogher 1819 – 1820
+  # Archbishop of Dublin 1820 – 1822
+  # Archbishop of Armagh 1822 – 1862
+  gen:father <https://www.wikidata.org/wiki/Q886541> ;
+  gen:mother <bentinck.ttl#Elizabeth_Monck> .
+<#Lady_Isabella_Anne_Beresford>
+  # Lady Isabella Anne Beresford, 1776-05-28 - 1850-05-07
+  gen:father <https://www.wikidata.org/wiki/Q886541> ;
+  gen:mother <bentinck.ttl#Elizabeth_Monck> .
+  # oo 1812-04-01 Sir John William Head Brydges,  1764 - 1839-09-06, https://www.wikidata.org/wiki/Q24254865, son of Edward Brydges (d. 1780, son of John Brydges and Jane Gibbon) and oo Jemima Egerton (daughter of Rev. William Egerton (son of Hon. Thomas Egerton (son of https://www.wikidata.org/wiki/Q6231483 and Lady Elizabeth Cavendish)))
 <https://www.wikidata.org/wiki/Q16239044>
   # Rt. Hon. Lord George Thomas Beresford, 1781-02-12 - 1839-10-26
-  gen:father <https://www.wikidata.org/wiki/Q886541> .
-  # and Elizabeth Monck
+  gen:father <https://www.wikidata.org/wiki/Q886541> ;
+  gen:mother <bentinck.ttl#Elizabeth_Monck> .
   # oo Harriet Schutz, d. 1860-04-28, daughter of John Bacon Schutz
   []
     gen:spouse <https://www.wikidata.org/wiki/Q16239044> , <#Harriet_Schutz> ;
 	gen:startDate "1808-11-22" .
-# cecil.ttl
+<#Lady_Elizabeth_Louisa_Beresford>
+  # Lady Elizabeth Louisa Beresford, 1783-02-02 - 1856-01-06
+  gen:father <https://www.wikidata.org/wiki/Q886541> ;
+  gen:mother <bentinck.ttl#Elizabeth_Monck> .
+  # oo 1816-07-10 Sir Denis Pack, 1775-10-07 – 1823-07-24, https://www.wikidata.org/wiki/Q5641356, son of Very Rev. Thomas Pack and Catherine Sullivan
+  # oo 1831-02-12 Sir Thomas Reynell, 6th Baronet, 1777-04-09 – 1848-02-10, https://www.wikidata.org/wiki/Q42586294
+<https://www.wikidata.org/wiki/Q16239047>
+  # Marcus Beresford, 1764-02-14 – 1797-11-16
+  gen:father <https://www.wikidata.org/wiki/Q15039906> ;
+  gen:mother <#Anne_Constantia_de_Ligondes> .
+  # oo Frances Arabella Leeson, d. 1840-05-09, daughter of Joseph Leeson, 1st Earl of Milltown (1701-03-11 – 1783-10-02, 1st Baron Russborough, in the County of Wicklow 1756-05-05, 1st Viscount Russborough, of Russellstown in the County of Wicklow 1760-09-08, 1st Earl of Milltown, in the County of Dublin 1763-05-10, https://www.wikidata.org/wiki/Q6284897, son of Joseph Leeson) and oo 1768-02-10 Elizabeth French (1742~ - 1842-01-23, daughter of Very Rev. William French and Arabella Frances Marsh)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16239047> , <#Frances_Arabella_Leeson> ;
+	gen:startDate "1791-02-25" .
+<https://www.wikidata.org/wiki/Q5536920>
+  # Rt. Rev. George de la Poer Beresford, 1765-07-19 – 1841-10-16
+  # Bishop of Clonfert and Kilmacduagh 1801 – 1802
+  # Bishop of Kilmore 1802 – 1839
+  # Bishop of Kilmore and Ardagh 1839
+  gen:father <https://www.wikidata.org/wiki/Q15039906> ;
+  gen:mother <#Anne_Constantia_de_Ligondes> .
+  # oo Frances Bushe, d. 1843-05, daughter of https://www.wikidata.org/wiki/Q17308857 and Mary Grattan
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5536920> , <#Frances_Bushe> ;
+	gen:startDate "1794" .
+<https://www.wikidata.org/wiki/Q6226258>
+  # John Claudius Beresford, 1766-10-23 – 1846-07-20
+  gen:father <https://www.wikidata.org/wiki/Q15039906> ;
+  gen:mother <#Anne_Constantia_de_Ligondes> .
+  # oo Elizabeth McKenzie Menzies, b. 1777, daughter of Archibald Menzies and Frances Rutherford
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6226258> , <#Elizabeth_McKenzie_Menzies> ;
+	gen:startDate "1795-03-03" .
 <#Charles_Cobbe_Beresford>
   # Rev. Charles Cobbe Beresford, b. 1770-10-02
   gen:father <https://www.wikidata.org/wiki/Q15039906> ;
@@ -81,44 +228,241 @@
   []
     gen:spouse <#Charles_Cobbe_Beresford> , <montgomery.ttl#Amelia_Montgomery> ;
 	gen:startDate "1795-11-22" .
+<#Annette_Constantia_Beresford>
+  # Annette Constantia Beresford, 1768-04-16 - 1836-08-08
+  gen:father <https://www.wikidata.org/wiki/Q15039906> ;
+  gen:mother <#Anne_Constantia_de_Ligondes> .
+  # oo 1790 Robert Uniacke, of Woodhouse, d. 1802
+  # oo 1805-07-02 Robert Doyne, 1782-03-02 - 1850-12, son of Robert Doyne and Mary Ram
+<#Jane_Beresford_(died_1836)>
+  # Jane Beresford, 1769-06-13 - 1836-11-02
+  gen:father <https://www.wikidata.org/wiki/Q15039906> ;
+  gen:mother <#Anne_Constantia_de_Ligondes> .
+  # oo 1788-09-10 Rt. Hon. Sir George Fitzgerald Hill, 2nd Baronet, 1763-06-01 – 1839-03-08, https://www.wikidata.org/wiki/Q17318673, son of Sir Hugh Hill, 1st Baronet (b. 1727-01-01, 1st Baronet Hill, of Brook Hall, co. Londonderry 1779-08-17, son of Rowley Hill (son of Samuel Hill and Mary Rowley) and oo 1726-02-09 Sophia Beresford Lowther (daughter of hill.ttl#Gorges_Lowther_(died_1716) and beresford.ttl#Jane_Beresford_(died_1764))) and oo 1762-06-17 Hannah McClintock (daughter of John McClintock and Susannah Maria Chambers)
+<#Henry_Barré_Beresford>
+  # Henry Barré Beresford, 1784-09-25 - 1837-12-15
+  gen:father <https://www.wikidata.org/wiki/Q15039906> ;
+  gen:mother <montgomery.ttl#Barbara_Montgomery> .
+  # oo Eliza Baily, d. 1831-12-22, daughter of John Baily
+  []
+    gen:spouse <#Henry_Barré_Beresford> , <#Eliza_Baily> ;
+	gen:startDate "1812-02-29" .
 
-# courtenay.ttl
+<https://www.wikidata.org/wiki/Q26197699>
+  # Sir George de la Poer Beresford, 2nd Baronet, 1811-03-01 – 1873-02-11
+  gen:father <https://www.wikidata.org/wiki/Q6661642> ;
+  gen:mother <#Mary_Molloy> .
+  # oo Elizabeth Lucas, d. 1898-12-23, daughter of Davis Lucas
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q26197699> , <#Elizabeth_Lucas> ;
+	gen:startDate "1846-03-01" .
 <#Georgiana_Beresford>
   # Georgiana Beresford, d. 1870-09-07
   gen:father <https://www.wikidata.org/wiki/Q6661642> ;
   gen:mother <#Harriet_Elizabeth_Peirse> .
   # oo 1842-07-22 Rt. Rev. Reginald Courtenay, 1813-02-26 - 1906-04-13, https://www.wikidata.org/wiki/Q7308652
-# talbot.ttl
 <#Lady_Sarah_Elizabeth_Beresford>
   # Lady Sarah Elizabeth Beresford, 1807-11-10 – 1884-10-13
   gen:father <https://www.wikidata.org/wiki/Q886239> ;
   gen:mother <#Susanna_Carpenter> .
   # oo 1828-11-08 Henry John Chetwynd-Talbot, 18th Earl of Shrewsbury, 1803-11-08 - 1868-06-04, https://www.wikidata.org/wiki/Q93669
-# courtenay.ttl, kerr.ttl
+<https://www.wikidata.org/wiki/Q5718086>
+  # Henry Beresford, 3rd Marquess of Waterford, 1811-04-26 – 1859-03-29
+  gen:father <https://www.wikidata.org/wiki/Q886239> ;
+  gen:mother <#Susanna_Carpenter> .
+  # oo  Hon. Louisa Stuart, 1818-04-14 - 1891-05-12, daughter of Charles Stuart, 1st Baron Stuart de Rothesay (1779-01-02 – 1845-11-06, Marquez d'Angara, Conde de Machico,  1st Baron Stuart de Rothesay, of the Isle of Bute 1828-01-22, https://www.wikidata.org/wiki/Q275110, son of https://www.wikidata.org/wiki/Q275334 and bertie.ttl#Anne_Louisa_Bertie) and oo 1816-02-06 Lady Elizabeth Margaret Yorke (d. 1867-06-23, daughter of https://www.wikidata.org/wiki/Q5790337 and Lady Elizabeth Scot Lindsay)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5718086> , <https://www.wikidata.org/wiki/Q275137> ;
+	gen:startDate "1842-06-08" .
+<https://www.wikidata.org/wiki/Q6221623>
+  # John Beresford, 4th Marquess of Waterford, 1814-04-27 – 1866-11-06
+  gen:father <https://www.wikidata.org/wiki/Q886239> ;
+  gen:mother <#Susanna_Carpenter> .
+  # oo Christiana Leslie, d. 1905-05-19, daughter of Charles Powell Leslie (1769 – 1831-11-15, https://www.wikidata.org/wiki/Q21079150, son of Charles Powell Leslie (1731 – 1800-08, https://www.wikidata.org/wiki/Q21182809, son of Robert Leslie and Frances Ludlow) and oo 1765-05-22 Hon. Prudence Penelope Hill-Trevor (b. 1745-03-17, daughter of Arthur Hill-Trevor, 1st Viscount of Dungannon (1694 - 1771-01-30, 1st Viscount of Dungannon, 1st Baron Hill of Olderfleet, of Belvior, co. Down and Brynkinalt 1766-02-17, https://www.wikidata.org/wiki/Q4799071, son of https://www.wikidata.org/wiki/Q6831136 and Anne Trevor) and oo 1737-01-12 Anne Stafford (b. 1715-12-22, daughter of Edmund Francis Stafford and Penelope Leslie))) and oo 1819-05-24 Christiana Fosbery (d. 1869-04-24, daughter of George Fosbery)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6221623> , <https://www.wikidata.org/wiki/Q61994931> ;
+	gen:startDate "1843-02-20" .
+<#Elizabeth_Harriet_Georgiana_Beresford>
+  # Elizabeth Harriet Georgiana Beresford, 1810-07-06 - 25 Jan 1889
+  gen:father <https://www.wikidata.org/wiki/Q16239044> ;
+  gen:mother <#Harriet_Schutz> .
+  # oo 1849-02-08 Henry Eden, 1797-08-09 – 1888-01-30, https://www.wikidata.org/wiki/Q16062708, son of Thomas Eden (d. 1805-05-01, son of Sir Robert Eden, 3rd Baronet and Mary Davison) and oo 1783-07-07 Mariana Jones (daughter of Arthur Jones)
 <#Caroline_Susan_Catherine_Beresford>
   # Caroline Susan Catherine Beresford, 1814-03-29 - 1866-03-08
   gen:father <https://www.wikidata.org/wiki/Q16239044> ;
   gen:mother <#Harriet_Schutz> .
   # oo 1840-09-19 Hon. Edward Kenyon, 1810-06-11 - 1894-10-21, grey.ttl#Edward_Kenyon, kerr.ttl#Edward_Kenyon
-# cecil.ttl
+<#Elizabeth_Beresford>
+  # Elizabeth Beresford, 1795 - 1856-12-07
+  gen:father <https://www.wikidata.org/wiki/Q16239047> ;
+  gen:mother <#Frances_Arabella_Leeson> .
+  # oo 1827-06-26 Felix Ladbroke, 1808-08-22 - 1889-11-06, son of Felix Calvert Ladbroke (1771 - 1840-03-14, https://www.wikidata.org/wiki/Q5442258, son of Robert Ladbroke (1730 - 1814-07-01, https://www.wikidata.org/wiki/Q20737933, son of Sir Robert Ladbroke (1713 – 1773-10-31, https://www.wikidata.org/wiki/Q18160477) and oo 1734-11-07 Elizabeth Brown (d. 1768-10-01)) and oo 1769-09-19 Elizabeth Hannah Kingscote (b. 1751-03-22, daughter of Robert Fitzhardinge Kingscote and Mary Hammond)) and oo Mary Anne Shubrick
+<https://www.wikidata.org/wiki/Q8005441>
+  # Rt, Hon. William Beresford, 1797-04-17 – 1883-10-06
+  gen:father <https://www.wikidata.org/wiki/Q16239047> ;
+  gen:mother <#Frances_Arabella_Leeson> .
+  # oo Catherine Heneage, 1807~ - 1895-06-16, daughter of howard.ttl#George_Robert_Heneage and Frances Anne Ainslie
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8005441> , <howard.ttl#Catherine_Heneage> ;
+	gen:startDate "1833-12-19" .
+<#Charlotte_Mary_Beresford>
+  # Charlotte Mary Beresford, 1795 - 1851
+  gen:father <https://www.wikidata.org/wiki/Q5536920> ;
+  gen:mother <#Frances_Bushe> .
+  # oo 1812-05-02 Frederick Lumley-Savile, 1788-01-14 - 1837-02-27, son of Hon. Frederick Lumley (1761-10-17 - 1831-09-20, son of https://www.wikidata.org/wiki/Q7327503 and Barbara Savile) and oo 1786-02-20 Harriet Anne Boddington (d. 1810-07-20, daughter of John Boddington and Anne West)
+  # oo 1839-07-20 Robert Henry Southwell, b. 1789-07-09, son of Hon. Robert Henry Southwell (1745-10 - 1817-08-29, son of Thomas George Southwell, 1st Viscount Southwell of Castle Mattress (1721-05-04 - 1780-08-29, 3rd Baron Southwell of Castle Mattress, co. Limerick, 4th Baronet Southwell, of Castle Mattress, co. Limerick 1766-11-19, 1st Viscount Southwell of Castle Mattress, co. Limerick 1776-07-18, https://www.wikidata.org/wiki/Q7794103, son of https://www.wikidata.org/wiki/Q15994757 and Mary Coke) and oo 1741-06-18 Margaret Hamilton (d. 1802-07-18, daughter of Arthur Cecil Hamilton)) and oo 1796 Frideswide Moore (daughter of Dr. John Moore and Frideswide Coddington)
+<https://www.wikidata.org/wiki/Q6758035>
+  # Most Rev. Marcus Gervais Beresford, 1801-02-14 – 1885-12-26
+  # Bishop of Kilmore, Elphin and Ardagh 1854 – 1862
+  # Archbishop of Armagh 1862-10-15
+  gen:father <https://www.wikidata.org/wiki/Q5536920> ;
+  gen:mother <#Frances_Bushe> .
+  # oo Mary L'Estrange, d. 1845-12-31, daughter of Colonel Henry Peisley L'Estrange and Grace Burdett
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6758035> , <#Mary_L'Estrange> ;
+	gen:startDate "1824-10-25" .
+  # oo Elizabeth Kennedy, d. 1870-07-01, daughter of Jason Trail Kennedy
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6758035> , <#Elizabeth_Kennedy> ;
+	gen:startDate "1850-06-06" .
+<#Frances_Beresford>
+  # Frances Beresford, d. 1835-11-17
+  gen:father <https://www.wikidata.org/wiki/Q5536920> ;
+  gen:mother <#Frances_Bushe> .
+  # oo 1824-06-19 Rev. Hon. Francis Howard, 1797-01-12 - 1857-02-16
+<#John_Isaac_Beresford>
+  # Rev. John Isaac Beresford, 1796-10-13 - 1847-02-09
+  gen:father <#Charles_Cobbe_Beresford> ;
+  gen:mother <montgomery.ttl#Amelia_Montgomery> .
+  # oo Sophia White, d. 1858-11-27, daughter of Robert White
+  []
+    gen:spouse <#John_Isaac_Beresford> , <#Sophia_White> ;
+	gen:startDate "1824-06-13" .
+<#Selina_Griselda_Beresford>
+  # Selina Griselda Beresford, 1804-12-05 - 1884-09-06
+  gen:father <#Charles_Cobbe_Beresford> ;
+  gen:mother <montgomery.ttl#Amelia_Montgomery> .
+  # oo 1837-07-06 John Crichton, 3rd Earl Erne of Crom Castle, 1802-07-30 - 1885-10-03, https://www.wikidata.org/wiki/Q6227622, son of Hon. John Crichton (1772-06-28 - 1833-05-10, son of John Creighton, 1st Earl Erne of Crom Castle (1731 – 1828-09-15, 2nd Baron Erne of Crom Castle, co. Fermanagh 1772-06-10, 1st Viscount Erne of Crom Castle, co. Fermanagh 1781-01-06, 1st Earl Erne of Crom Castle 1789-08-10, https://www.wikidata.org/wiki/Q6227586, talbot.ttl, son of Abraham Creighton, 1st Baron Erne of Crom Castle (1703-12 – 1772-06-10, 1st Baron Erne of Crom Castle, co. Fermanagh 1768-07-15, https://www.wikidata.org/wiki/Q4668819, son of David Creighton, of Crom Castle (d. 1728-06-01) and oo 1695b Katherine Southwell (d. 1759.03, daughter of Richard Southwell (d. 1688-09, https://www.wikidata.org/wiki/Q7329168, son of Sir Thomas Southwell, 1st Baronet (d. 1680-12-07, 1st Baronet Southwell, of Castle Mattress, co. Limerick 1662-08-04, https://www.wikidata.org/wiki/Q21069485, son of Edmund Southwell and Catherine Herbert) and oo Elizabeth Starkey (d. 1705-09-19, daughter of William Starkey)) and oo Lady Elizabeth O'Brien (d. 1688-09, daughter of Morrogh O'Brien, 1st Earl of Inchiquin (1614 – 1674-09-09, 1st Earl of Inchiquin 1654-10-21, 1st Baron O'Brien of Burren, co. Clare 1654-10-21, https://www.wikidata.org/wiki/Q246733, son of Dermot O'Brien, 5th Baron of Inchiquin (1594-10 – 1624-12-29, https://www.wikidata.org/wiki/Q5262735, son of Murrough O'Brien, 4th Baron of Inchiquin (1562 – 1597-07-24, https://www.wikidata.org/wiki/Q6939617, son of Murrough Macdermot O'Brien, 3rd Baron of Inchiquin (1550~ - 1573-04-20, https://www.wikidata.org/wiki/Q6939612, son of Dermod O'Brien, 2nd Baron of Inchiquin (d. 1552-01-31, 2nd Baron Inchiquin 1551-10, https://www.wikidata.org/wiki/Q5262734, son of Murrough O'Brien, 1st Earl of Thomond (d. 1551-11-07, King Murrough of Thomond - 1542-03, 1st Earl of Thomond 1543-07-01, 1st Baron of Inchiquin 1543-07-01, https://www.wikidata.org/wiki/Q6939613, son Toirdhealbhach Donn Ó Briain (d. 1528, King of Thomond 1499, https://www.wikidata.org/wiki/Q65079200) and oo Raghnailt Macnamara (daughter of John Macnamara)) and oo Eleanor fitz John (d. 1550-03-11a, daughter of Rev. John fitz Thomas, 12th Knight of Glin)) and oo 1550b Lady Margaret O'Brien (d. 1568, daughter of Donough O'Brien, 1st (2nd) Earl of Thomond (d. 1553-04-01, 1st Baron of Ibracken 1543-07-01, 2nd Earl of Thomond 1551, 1st Earl of Thomond 1552-01-07, https://www.wikidata.org/wiki/Q5296815, son of Conchobhar mac Toirdhealbaig Ó Briain, King of Thomond (d. 1540, https://www.wikidata.org/wiki/Q5162038, son of https://www.wikidata.org/wiki/Q65079200 and Raghnailt Macnamara) and oo Anabel de Burgh (daughter of Ulick Bourke, Lord of Clanricarde (d. 1509))) and oo 1533 Lady Ellen Butler (1523 – 1597-07-02, daughter of https://www.wikidata.org/wiki/Q197540 and https://www.wikidata.org/wiki/Q208901))) and oo Mabel Nugent (daughter of https://www.wikidata.org/wiki/Q5112972 and fitzgerald.ttl#Lady_Mary_FitzGerald)) and oo Margaret Cusack (d. 1610a, daughter of Sir Thomas Cusack (1490 – 1571, https://www.wikidata.org/wiki/Q7788764))) and oo 1614b Ellen FitzGerald (daughter of Sir Edmond fitz John FitzGerald and Honora FitzGerald)) and oo 1635-10-01 Elizabeth St. Leger (d. 1685-05-22, daughter of Sir William St. Leger (1586 – 1642-07-02, https://www.wikidata.org/wiki/Q15038295))))) and oo 1729-07-31 Elizabeth Rogerson (d. 1761-08-06, daughter of Rt. Hon. John Rogerson (1676 – 1741, https://www.wikidata.org/wiki/Q6255458) and oo Elizabeth Ludlow (daughter of Stephen Ludlow))) and oo 1761-02-25 Catherine Howard (d. 1775-06-15, daughter of Rt. Rev. Robert Howard (1683-09-24 - 1740-04-08)) and Jane Weldon
 <https://www.wikidata.org/wiki/Q4768850>
   # Anne Constantia Beresford, 1806 - 1866-04-22
   gen:father <#Charles_Cobbe_Beresford> ;
   gen:mother <montgomery.ttl#Amelia_Montgomery> .
   # oo 1824-03-02 Rev. Lord John Thynne, 1798-11-07 - 1881-02-09, https://www.wikidata.org/wiki/Q23060053
+<#George_John_Beresford>
+  # George John Beresford, 1807-07-21 - 1864-02-11
+  gen:father <#Charles_Cobbe_Beresford> ;
+  gen:mother <montgomery.ttl#Amelia_Montgomery> .
+  # oo Jane Charlotte Riall, d. 1842-04-06, daughter of Charles Riall
+  []
+    gen:spouse <#George_John_Beresford> , <#Jane_Charlotte_Riall> ;
+	gen:startDate "1839-12-12" .
+  # oo Frances Constantia Uniacke, d. 1867-10-20, daughter of Robert Uniacke, of Woodhouse (d. 1802) and oo 1790 Annette Constantia Beresford (1768-04-16 - 1836-08-08, #Annette_Constantia_Beresford)
+  []
+    gen:spouse <#George_John_Beresford> , <#Frances_Constantia_Uniacke> ;
+	gen:startDate "1844-11-15" .
+<#John_Barré_Beresford>
+  # John Barré Beresford, 1815-10-19 - 1895-08-30
+  gen:father <#Henry_Barré_Beresford> ;
+  gen:mother <#Eliza_Baily> .
+  # oo Sophia Lyons-Montgomery, 1819 - 1850-03-12, daughter of Hugh Lyons-Montgomery (1780 - 1826-04-26, son of Hugh Montgomery Lyons (1750 - 1792) and oo Hon. Catherine Hamilton (b. 1754-08-28, daughter of https://www.wikidata.org/wiki/Q7326228 (hamilton.ttl) and Georgiana Bury)) and oo 1812-01-27 Eliza Blacker (b. 1790, daughter of Very Rev. Stewart Blacker (1740 - 1826-12-01, Dean of Leighlin, son of William Blacker and Letitia Cary) and oo 1774-11-19 Elizabeth Hill (d. 1797-02-27, daughter of Sir Hugh Hill, 1st Bt. and Mary Hodgson))
+  []
+    gen:spouse <#John_Barré_Beresford> , <#Sophia_Lyons-Montgomery> ;
+	gen:startDate "1840-04-23" .
+  # oo Caroline Hamilton Ash, 1830-11-30 - 1901-01-13, daughter of William Hamilton Ash (1803 - 1867-02-02, son of William Hamilton Ash and Elizabeth Harriet Henderson) and oo 1827-07-10 Lady Elizabeth Emma Douglas (1794-10-08 - 1857-02-02, daughter of douglas.ttl#John_Douglas and Lady Frances Lascelles)
+  []
+    gen:spouse <#John_Barré_Beresford> , <#Caroline_Hamilton_Ash> ;
+	gen:startDate "1853-07-07" .
 
-
-
-# beaufort,ttl
+<#Marcia_Mary_Ann_Harriet_Wilhelmina_de_la_Poer_Beresford>
+  # Marcia Mary Ann Harriet Wilhelmina de la Poer Beresford, d. 1908-06-29
+  gen:father <https://www.wikidata.org/wiki/Q26197699> ;
+  gen:mother <#Elizabeth_Lucas> .
+  # oo 1875-06-23 Francis Colebrooke Beresford-Drummond, 1846-11-06 - 1926-04-09, son of https://www.wikidata.org/wiki/Q5339418 (drummond.ttl) and Julia Mary Sutherland
 <https://www.wikidata.org/wiki/Q6221627>
   # John Henry de la Poer Beresford, 5th Marquess of Waterford, 1844-05-21 - 1895-10-23
-  gen:father <https://www.wikidata.org/wiki/Q6221623> .
+  gen:father <https://www.wikidata.org/wiki/Q6221623> ;
+  gen:mother <https://www.wikidata.org/wiki/Q61994931> .
+  # oo Florence Grosvenor Rowley, d. 1873-04-04 (oo 1861-06-18 Hon. John Cranch Walker Vivian, 1818-04-18 - 1879-01-22, https://www.wikidata.org/wiki/Q6227494, son of Richard Hussey Vivian, 1st Baron Vivian of Glynn and of Truro (1775-07-28 – 1842-08-20, https://www.wikidata.org/wiki/Q3787726, 1st Baronet Vivian 1828-01-19, 1st Baron Vivian of Glynn and of Truro, co. Cornwall 1841-08-19, son of https://www.wikidata.org/wiki/Q18879428 and Elizabeth Cranch) and oo 1804-09-14 Eliza Champion de Crespigny (d. 1831-07-15, daughter of Philip Champion de Crespigny)), daughter of George Rowley and Emily Isabella Honner
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6221627> , <#Florence_Grosvenor_Rowley> ;
+	gen:startDate "1872-08-09" .
   # oo Lady Elizabeth Adelaide Blanche Somerset, 1856-03-26 - 1897-02-22
   []
     gen:spouse <https://www.wikidata.org/wiki/Q6221627> , <beaufort.ttl#Lady_Elizabeth_Adelaide_Blanche_Somerset> ;
 	gen:startDate "1874-07-21" .
+<https://www.wikidata.org/wiki/Q323773>
+  # Charles William de la Poer Beresford, 1st Baron Beresford, 1846-02-10 - 1919-09-06
+  # 1st Baron Beresford, of Metemmeh and Curarghmore, co. Waterford 1916-01-22
+  gen:father <https://www.wikidata.org/wiki/Q6221623> ;
+  gen:mother <https://www.wikidata.org/wiki/Q61994931> .
+  # oo Mina Gardner, d. 1922-05-26, daughter of Richard Gardner and Lucy Mandesloh
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q323773> , <#Mina_Gardner> ;
+	gen:startDate "1878-06-25" .
+<https://www.wikidata.org/wiki/Q16030255>
+  # Lord William Leslie de la Poer Beresford, 1847-07-20 - 1900-12-28
+  gen:father <https://www.wikidata.org/wiki/Q6221623> ;
+  gen:mother <https://www.wikidata.org/wiki/Q61994931> .
+  # oo Lilian Warren Price, 1854-06-10 - 1909-01-11
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16030255> , <https://www.wikidata.org/wiki/Q15429306> .
+<https://www.wikidata.org/wiki/Q16031681>
+  # Lord Marcus Talbot de la Poer Beresford, 1848-12-25 - 1922-12-16
+  gen:father <https://www.wikidata.org/wiki/Q6221623> ;
+  gen:mother <https://www.wikidata.org/wiki/Q61994931> .
+  # oo Louisa Catherine Ridley, d. 1920-10-01, daughter of Charles William Ridley (1812 – 1867-02-01, https://www.wikidata.org/wiki/Q21182520, son of Sir Matthew White Ridley, 3rd Baronet (1778-04-18 – 1836-07-14, https://www.wikidata.org/wiki/Q7528317, son of https://www.wikidata.org/wiki/Q7528316 and Sarah Colborne) and oo 1803-08-13 Laura Hawkins (d. 1864-07-22, daughter of George Edward Hawkins and Louisa Lane)) and oo 1845-04-17 Hon. Henrietta Araminta Monck Browne (d. 1869-03-01, daughter of Dominick Browne, 1st Baron Oranmore and Browne (1787-05-28 – 1860-01-30, 1st Baron Oranmore and Browne of Carra Browne Castle in Oranmore, in the county of the town of Galway and of Castle Mac Garrett in the county of Mayo 1836-05-04, https://www.wikidata.org/wiki/Q5290904) and oo 1811-05-05 Catherine Anne Isabella Monck (d. 1865-07-22, daughter of Henry Monck and oo Lady Elizabeth Araminta Gore (daughter of Arthur Saunders Gore, 2nd Earl of Arran of the Arran Islands and Hon. Catherine Annesley)))
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16031681> , <#Louisa_Catherine_Ridley> ;
+	gen:startDate "1895-08-28" .
+<https://www.wikidata.org/wiki/Q61995073>
+  # Lord Delaval James de la Poer Beresford, 1862-01-19 - 1906-12-22
+  gen:father <https://www.wikidata.org/wiki/Q6221623> ;
+  gen:mother <https://www.wikidata.org/wiki/Q61994931> .
+<#Frances_Arabella_Beresford>
+  # Frances Arabella Beresford, 1838-11-04 - 1924-05-07
+  gen:father <https://www.wikidata.org/wiki/Q8005441> ;
+  gen:mother <howard.ttl#Catherine_Heneage> .
+  # oo 1867-08-27 Hon. Reginald Grimston Standish O'Grady, 1839 - 1874-12-25, son of https://www.wikidata.org/wiki/Q7598650 (paget.ttl) and Gertrude Jane Paget
+<#Charlotte_Henrietta_Beresford>
+  # Charlotte Henrietta Beresford, 1827-05-17 - 1884-09-15
+  gen:father <https://www.wikidata.org/wiki/Q6758035> ;
+  gen:mother <#Mary_L'Estrange> .
+  # oo 1853-08-16 Henry Beilby William Milner, 1823-12-17 - 1876-05-06, son of egerton.ttl#Sir_William_Mordaunt_Sturt_Milner,_4th_Baronet and bentinck.ttl#Harriet_Elizabeth_Cavendish-Bentinck
+<https://www.wikidata.org/wiki/Q5536922>
+  # George de la Poer Beresford, 1831-04-22 – 1906-08-03
+  gen:father <https://www.wikidata.org/wiki/Q6758035> ;
+  gen:mother <#Mary_L'Estrange> .
+  # oo Mary Annabella Harcourt, d. 1917-07-11, daughter of Rev. William Vernon Harcourt (1789-06 – 1871-04-01, https://www.wikidata.org/wiki/Q8019713, son of https://www.wikidata.org/wiki/Q3048710 (howard.ttl) and Lady Anne Leveson-Gower) and sister of Sir William George Granville Venables Vernon Harcourt (1827-10-14 – 1904-10-01, https://www.wikidata.org/wiki/Q775821)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5536922> , <howard.ttl#Mary_Annabella_Harcourt> ;
+	gen:startDate "1860-04-24" .
+<#Henry_Marcus_Beresford>
+  # Henry Marcus Beresford, 1835-03-02 - 1895-02-05
+  gen:father <https://www.wikidata.org/wiki/Q6758035> ;
+  gen:mother <#Mary_L'Estrange> .
+  # oo Julia Ellen Maunsell, d. 1923-10-13, daughter of Rev. Francis Richard Maunsell and Sarah Kelly
+  []
+    gen:spouse <#Henry_Marcus_Beresford> , <#Julia_Ellen_Maunsell> ;
+	gen:startDate "1861-04-10" .
+<#Emily_Sarah_Beresford>
+  # Emily Sarah Beresford, 1827-10-30 - 1893-07-29
+  gen:father <#John_Isaac_Beresford> ;
+  gen:mother <#Sophia_White> .
+  # oo 1851-05-06 Very Rev. John Maunsell Massy-Beresford, Dean of Kilmore, 1823-09-26 - 1886-09-22, son of Hon. John Massy (d. 1869-07-08, son of Hugh Massy, 2nd Baron Massy of Duntrileague (14 April 1733 - 10 May 1790, https://www.wikidata.org/wiki/Q16859400, son of Hugh Massy, 1st Baron Massy of Duntrileague (1700 – 1788-01-30, 1st Baron Massy of Duntrileague, co. Limerick 1776-08-04, https://www.wikidata.org/wiki/Q16859399, son of Hugh Massy and Elizabeth Evans) and oo 1733b Mary Dawson (daughter of James Dawson)) and oo 1760-09 Catherine Taylor (d. 1791-08-16, daughter of Edward Taylor and Anne Maunsell)) and oo 1817-06-16 Maria Maunsell (1796~ - 1880-05-28, daughter of Robert Maunsell and Anne Stone)
+<#Emily_Frances_Louisa_Beresford>
+  # Emily Frances Louisa Beresford, d. 1933-02-14
+  gen:father <#George_John_Beresford> ;
+  gen:mother <#Frances_Constantia_Uniacke> .
+  # oo 1911-04-20 Sir Robert Adair Hodson, 4th Baronet, 1853-09-29 - 1921-01-03, son of Sir George Frederick John Hodson, 3rd Baronet and Meriel Anne Neville
+<#William_Randal_Hamilton_Beresford-Ash>
+  # William Randal Hamilton Beresford-Ash, 1859-07-19 - 1938-03-08
+  gen:father <#John_Barré_Beresford> ;
+  gen:mother <#Caroline_Hamilton_Ash> .
+  # oo Lady Florence Marion Browne, 1863-01-13 - 1946-11-22, daughter of Henry Ulick Browne, 5th Marquess of Sligo (1831-03-14 - 1913-02-24, https://www.wikidata.org/wiki/Q5718718 (see baring.ttl), son of Howe Peter Browne, 2nd Marquess of Sligo (1788-05-18 – 1845-01-26, https://www.wikidata.org/wiki/Q15377163, son of John Denis Browne, 1st Marquess of Sligo (1756-06-11 – 1809-01-02, 3rd Earl of Altamont, co. Mayo, 3rd Viscount Westport, of Westport, co. Mayo, 3rd Baron Mount Eagle, of Westport, co. Mayo 1780-12-28, 1st Marquess of Sligo 1800-12-31, 1st Baron Monteagle of Westport, co. Mayo 1806-02-20, https://www.wikidata.org/wiki/Q6223574, son of Peter Browne, 2nd Earl of Altamont (1731~ - 1780-12-28, https://www.wikidata.org/wiki/Q7173003, son of John Browne, 1st Earl of Altamont (1709~ – 1776-07-04, 1st Baron Mount Eagle, of Westport, co. Mayo 1760-09-10, 1st Viscount Westport, of Westport, co. Mayo 1768-08-24, 1st Earl of Altamont, co. Mayo 1771-12-04, https://www.wikidata.org/wiki/Q6223572, son of Peter Browne and Mary Daly) and oo 1729-12 Anne Gore (d. 1771-03-07, daughter of Sir Arthur Gore, 2nd Baronet (1685~ - 1742-02-10, https://www.wikidata.org/wiki/Q7526068, son of Paul Gore (d. 1689-10-20, son of Sir Arthur Gore, 1st Baronet (1640~ - 1697-12-20, 1st Baronet Gore, of Newtown Gore, co. Mayo 1662-04-10, https://www.wikidata.org/wiki/Q7526065, son of Sir Paul Gore, 1st Baronet (1567 – 1629-09, 1st Baronet Gore, of Magherabegg, co. Donegal 1622-02-02, https://www.wikidata.org/wiki/Q7528437, son of Gerard Gore and Helen Davenant) and oo Isabella Wickliffe (daughter of Francis Wickliffe and ??? Wentworth)) and oo Eleanor St. George (daughter of Sir George St. George and Katherine Gifford)) and oo 1682-12-23 Anne Gore (d. 1725-03-03, daughter of Sir John Gore)) and oo Elizabeth Annesley (daughter of Maurice Annesley (d. 1718-02-17, son of Hon. John Annesley (1717-09-11 - 1695, son of Francis Annesley, 1st Viscount of Valentia and Dorothy Philipps) and oo Charity Warren (daughter of Henry Warren)) and oo Sarah Blayney (d. 1705-07-05, daughter of Richard Blayney, 4th Lord Blayney, Baron of Monaghan (1625a - 1670-11-03, son of Henry Blayney, 2nd Lord Blayney, Baron of Monaghan (d. 1646-06-09, https://www.wikidata.org/wiki/Q28777255, son of Edward Blayney, 1st Lord Blayney, Baron of Monaghan (1570 – 1629-02-11,  1st Lord Blayney, Baron of Monaghan, co. Monaghan 1621-07-29, https://www.wikidata.org/wiki/Q5341916, son of David Lloyd Blayney and Elizabeth Jones) and oo 1605-06-13b  Anne Loftus (d. 1630-06-05a, daughter of Most Rev. Adam Loftus (1533~ – 1605-04-05, Archbishop of Armagh 1562 – 1567, Archbishop of Dublin 1567, https://www.wikidata.org/wiki/Q1243510, son of Edward Loftus) and oo 1560 Jane Purdon (1540~ – 1595, daughter of James Purdon and Jane Little))) and oo 1623-01 Jane Moore (d. 1686-10-22, daughter of https://www.wikidata.org/wiki/Q18671234 and Mary Colley)))))) and oo 1752-04-16 Elizabeth Kelly (d. 1765-08-01, daughter of Denis Kelly)) and oo 17887-05-21 Lady Louisa Catherine Howe (1767-12-09 - 1817-08-20, daughter of Richard Howe, 1st Earl Howe (1726-03-08 – 1799-08-05, 4th Viscount Howe, 6th Baronet Howe, 4th Baron of Glenawly, co. Fermanagh 1758-07-06, 1st Viscount Howe of Langar, co. Nottingham 1782-04-20, 1st Earl Howe, 1st Baron Howe of Langar, co. Nottingham 1788-08-19, https://www.wikidata.org/wiki/Q332616, son of Emanuel Scrope Howe, 2nd Viscount Howe (1700~ – 1735-03-29, https://www.wikidata.org/wiki/Q5369081, son of https://www.wikidata.org/wiki/Q7439299 (cecil.ttl, son of John Grubham Howe (1625–1679, ir John Howe, 1st Baronet (d. 1671, 1st Baronet Howe 1660-09-22, https://www.wikidata.org/wiki/Q7527848) and oo Bridget Rich (daughter of Thomas Rich)) oo and Lady Annabella Scrope (1629 - 1703-03-21, illegitimate daughter of Emmanuel Scrope, 1st Earl of Sunderland (1584-08-01 - 1630-05-30, 1st Earl of Sunderland 1627-06-19, https://www.wikidata.org/wiki/Q5369143 (manners.ttl), son of https://www.wikidata.org/wiki/Q7793844 and Philadelphia Carey) and Martha Jeanes)) and oo 1698 Hon. Juliana Alington (d. 1747-09, daughter of https://www.wikidata.org/wiki/Q8004320 (russell.ttl) and Hon. Juliana Noel)) and oo 1719-04-08 Mary Sophia Charlotte von Kielmansegg (23 September 1703 – 13 June 1782, https://www.wikidata.org/wiki/Q5086017, daughter of Johann Adolph Freiherr von Kielmansegg (1668-09-30 - 1717-11-25, https://www.wikidata.org/wiki/Q34151403, son of Friedrich Christian Kielman von Kielmansegg (1639-02-01 - 1714-09-25, https://www.wikidata.org/wiki/Q15428995, son of Johann Adolph (I.) Kielmann von Kielmannsegg (1612-10-15 - 1676-07-08, https://www.wikidata.org/wiki/Q1692292) and oo Margarete von Hatten (1617-08-25 - 1656-12-12)) and oo 1666 Maria Elisabeth von Ahlefeldt (1643 - 1709-09-23)) and oo  Charlotte Sophia von Platen-Hallermund, Countess of Darlington (1675-04-10 - 1725-04-20, Countess of Leinster 1721, Countess of Darlington, Baroness Brentford 1722, https://www.wikidata.org/wiki/Q74001, daughter of Ernst August, Kurfürst von Braunschweig-Calenberg (1629-11-20 - 1698-01-23, https://www.wikidata.org/wiki/Q372190) and Clara Elisabeth von Meisenburg (1648-01-14 - 1700-01-30, https://www.wikidata.org/wiki/Q77931 (oo 1673-09 Franz Ernst Freiherr (ab 1689 Graf) von Platen (1631 - 1709-06-14, https://www.wikidata.org/wiki/Q1445768)), Georg Philipp von Meysenbug (1620–1669) and oo Anna Elisabeth von Meysenbug (1625 – 1680))))) and oo 1758-03-10 Mary Hartopp (d. 1800-08-09, daughter of Chiverton Hartopp))) and oo 1816-03-04 Lady Hester Catherine de Burgh (1800~ - 1878-02-17, daughter of John Thomas de Burgh, 13th Earl of Clanricarde (1744-09-22 – 1808-07-27, https://www.wikidata.org/wiki/Q6265506, son of https://www.wikidata.org/wiki/Q6258404 and Hester Amelia Vincent) and oo 1799-03-17 Elizabeth Burke (1764~ - 1854-03-26, daughter of Sir Thomas Burke, 1st Baronet (d. 1813-05-22, 1st Baronet Burke, of Marble Hill, co. Galway 1797-12-05) and oo 1774-04 Christian Browne (d. 1833-06-24, daughter of James Browne)))) and oo 1855-10-25 Catherine Henrietta Dicken (d. 1914-11-26, daughter of William Stephens Dicken)
+  []
+    gen:spouse <#William_Randal_Hamilton_Beresford-Ash> , <#Lady_Florence_Marion_Browne> ;
+	gen:startDate "1886-10-23" .
 
-# beaufort,ttl
 <https://www.wikidata.org/wiki/Q5718077>
   # Henry de la Poer Beresford, 6th Marquess of Waterford, 1875-04-28 - 1911-12-01
   gen:father <https://www.wikidata.org/wiki/Q6221627> ;
@@ -127,13 +471,117 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5718077> , <https://www.wikidata.org/wiki/Q4877228> ;
 	gen:startDate "1897-10-16" .
-# beaufort,ttl, scott.ttl
 <#Lady_Susan_de_la_Poer_Beresford>
   # Lady Susan de la Poer Beresford, 1877-04-30 - 1947-10-31
   gen:father <https://www.wikidata.org/wiki/Q6221627> ;
   gen:mother <beaufort.ttl#Lady_Elizabeth_Adelaide_Blanche_Somerset> .
-  # oo 1902-04-28 Hon. Hugh Dawnay, 1875-09-19 - 1914-11-06, grosvenor.ttl#Hugh_Dawnay, scott.ttl#Hugh_Dawnay
+  # oo 1902-04-28 Hon. Hugh Dawnay, 1875-09-19 - 1914-11-06, grosvenor.ttl#Hugh_Dawnay
+<https://www.wikidata.org/wiki/Q21556635>
+  # Lady Clodagh Beresford, 1879-08-06 - 1957-04-17
+  gen:father <https://www.wikidata.org/wiki/Q6221627> ;
+  gen:mother <beaufort.ttl#Lady_Elizabeth_Adelaide_Blanche_Somerset> .
+  # oo 1901-02-27 Hon. Claud Anson, 1864-01-11 - 1847-12-25, son of https://www.wikidata.org/wiki/Q7787091 (hamilton.ttl) and Lady Harriett Georgiana Louisa Hamilton
+<#Edward_Beresford>
+  # Edward Beresford, 1863-09-11 - 1939-06-08
+  gen:father <https://www.wikidata.org/wiki/Q5536922> ;
+  gen:mother <howard.ttl#Mary_Annabella_Harcourt> .
+  # oo Emily Constance Frederica Milner, 1866-09-26 - 1889-10-30, daughter of Henry Beilby William Milner and #Charlotte_Henrietta_Beresford
+  []
+    gen:spouse <#Edward_Beresford> , <#Emily_Constance_Frederica_Milner> ;
+	gen:startDate "1886" .
+  # oo Florence Lillian Moreton, d. 1940-1216, daughter of Hon. Reynolds Reynolds-Moreton (1835-12-21 - 1919-06-19, son of Henry George Francis Reynolds-Moreton, 2nd Earl of Ducie (8 May 1802 – 2 June 1853, https://www.wikidata.org/wiki/Q5727490, son of https://www.wikidata.org/wiki/Q16833879 (murray.ttl) and Lady Frances Herbert) and oo 1826-06-29 Hon. Elizabeth Dutton (1807-02-19 - 1865-03-15, daughter of https://www.wikidata.org/wiki/Q6230556 (coke.ttl) and Hon. Mary Legge)) and oo 1866-10-18 Margaret Mahony (d. 1892-03-19, daughter of Rev. Denis Mahony and Jane Margaret Blake)
+  []
+    gen:spouse <#Edward_Beresford> , <#Florence_Lillian_Moreton> ;
+	gen:startDate "1903-04-30" .
+<#Kathleen_Mathilda_Beresford>
+  # Kathleen Mathilda Beresford, 1876-08-03 - 1948-11-12
+  gen:father <https://www.wikidata.org/wiki/Q5536922> ;
+  gen:mother <howard.ttl#Mary_Annabella_Harcourt> .
+  # oo 1925-09-03 Henry Edward Harcourt Rice, 1864-12-16 - 1944-04-10, son of Sir Edward Bridges Rice (1819-10-30 - 1902-10-30, https://www.wikidata.org/wiki/Q5345035, son of https://www.wikidata.org/wiki/Q16063633 and Elizabeth Knight) and oo 1864-02-18 Cecilia Caroline Harcourt (1831-10-06 - 1912-02-17, daughter of Rev. William Harcourt (1789-06 - 1871-04-01, son of https://www.wikidata.org/wiki/Q3048710 (howard.ttl) and Lady Anne Leveson-Gower) and oo 1814-07-12 Matilda Mary Gooch (d. 1876-11-19, daughter of William Gooch and Jane Wilkinson))
+<#Marcus_Francis_Beresford>
+  # Marcus Francis Beresford, 1862-12-26 - 1896-12-14
+  gen:father <#Henry_Marcus_Beresford> ;
+  gen:mother <#Julia_Ellen_Maunsell> .
+  # oo Fanny Catherine Wingfield, 1860~ - 1914-02-03 (oo 1880-06-02 Cecil Ralph Howard, 6th Earl of Wicklow, 1842-03-26 – 1891-07-24, https://www.wikidata.org/wiki/Q24578878, son of Rev. Hon. Francis Howard (1797-01-12 - 1857-02-16 (oo Frances Beresford, d. 1835-11-17, #Frances_Beresford, "1824-06-19"), son of William Howard, 3rd Earl of Wicklow (1761-01 – 1818-09-27, https://www.wikidata.org/wiki/Q24288391, son of Ralph Howard, 1st Viscount Wicklow (1726 – 1786-06-26, 1st Baron Clonmore, of Clonmore Castle, co. Carlow 1776-07-21, 1st Viscount Wicklow, of co. Wicklow 1785-06-21, https://www.wikidata.org/wiki/Q16859641, son of Rt. Rev. Robert Howard (1670-09-24 – 1740-04-03, https://www.wikidata.org/wiki/Q17050400, son of Ralph Howard) and oo 1724 Patience Boleyn (d. 1764-06-05)) and oo 1755-08-11 Alice Forward, 1st Countess of Wicklow (d. 1807-03-07, 1st Countess of Wicklow 1793-12-05, https://www.wikidata.org/wiki/Q24288397, daughter of William Forward and Isabella Stewart)) and oo 1787-03-31 Eleanor Caulfeild (d. 1807-04-02, daughter of Hon. Francis Caulfeild (d. 1775-11, son of James Caulfeild, 3rd Viscount Charlemont (1682-07-29 - 1734-04-21, son of William Caulfeild, 2nd Viscount Charlemont (1655~ – 1726-07-21, https://www.wikidata.org/wiki/Q17308879, son of https://www.wikidata.org/wiki/Q8006637 (ponsonby.ttl) and Hon. Sarah Moore) and oo 1678-07-11 Anne Margetson (d. 1729, daughter of https://www.wikidata.org/wiki/Q6138911)) and oo Elizabeth Bernard (1703-02-21 - 1743-05-20, daughter of Francis Bernard and Alice Ludlow)) and oo 1760-10 Hon. Mary Eyre (d. 1775-11, daughter of John Eyre, 1st Baron Eyre (1720~ – 1781-09-30, 1st Baron Eyre, of Eyrecourt, co. Galway 1768-07-16, https://www.wikidata.org/wiki/Q15039927, son of https://www.wikidata.org/wiki/Q59622660 and Mary Cox) and oo 1746 Eleanor Staunton (daughter of James Staunton)))) and oo 1836-06-21 Sarah Hamilton (d. 1892-03-13, daughter of Charles Hamilton and Marianne Caroline TIghe)), daughter of Richard Robert Wingfield (1820-08-20 - 1896-03-21, son of Rev. Hon. Edward Wingfield (1792-11-20 - 1874-06-17, son of wingfield.ttl#Richard_Wingfield,_4th_Viscount_Powerscourt and Lady Catherine Meade) and oo 1819-04-12 Louisa Joan Jocelyn (d. 1874-06-17, daughter of jocelyn.ttl#George_Jocelyn and Thomasine Bowen)) and oo 1845-06-21 Fanny Castle (1821-09-14 - 1904-10-28, daughter of Michael Hinton Castle and Frances Boddam)
+  []
+    gen:spouse <#Marcus_Francis_Beresford> , <wingfield.ttl#Fanny_Catherine_Wingfield> ;
+	gen:startDate "1894-04-10" .
+<https://www.wikidata.org/wiki/Q983504>
+  # George Charles Beresford, 1864-07-10 – 1938-02-21
+  gen:father <#Henry_Marcus_Beresford> ;
+  gen:mother <#Julia_Ellen_Maunsell> .
+<#Eva_Emily_Beresford>
+  # Eva Emily Beresford, d. 1960-02-18
+  gen:father <#Henry_Marcus_Beresford> ;
+  gen:mother <#Julia_Ellen_Maunsell> .
+  # oo 1895-04-27 Anthony Fitz Maude, 1862-08 - 1935-06-07, son of Maurice Cely Maude (1820-06-25 - 1904-12-24, son of Rev. Hon. John Charles Maude (1792-09-16 - 1860-06-21, son of https://www.wikidata.org/wiki/Q5172033 (ponsonby,ttk) and oo 1777-06-03 Anne Isabella Monck (1759 - 1851-07-26, daughter of Thomas Monck (bentinck.ttl) and Judith Mason)) and oo 1813-09-10 Mary Cely Trevilian (1797-10-18 - 1865-10-26, daughter of William Cely Trevilian and Emilia Harrison Jesse)) and oo 1860-05-18 Marie Elise Wehren (daughter of Chrétien Wehren)
+<#Douglas_Beresford-Ash>
+  # Douglas Beresford-Ash, 1887-09-08 - 1976
+  gen:father <#William_Randal_Hamilton_Beresford-Ash> ;
+  gen:mother <#Lady_Florence_Marion_Browne> .
+  # oo Lady Betty Helena Joanna Rous, 1901-04-24 - 1969-11-04, daughter of George Edward John Mowbray Rous, 3rd Earl of Stradbroke (1862-11-19 - 1947-12-20, https://www.wikidata.org/wiki/Q1508207, son of John Edward Cornwallis Rous, 2nd Earl of Stradbroke (1794-02-13 – 1886-01-27, https://www.wikidata.org/wiki/Q7610919, son of https://www.wikidata.org/wiki/Q6255763 (hill.ttl) and Charlotte Maria Whittaker) and oo 1857-05-26 Augusta Musgrave (1830 - 1901-10-11, daughter of Rev. Sir Christopher Musgrave, 9th Baronet (1797-08-06 - 1834-05-11, son of Sir John Chardin Musgrave, 7th Baronet (1757-01-15 - 1806-07-24, son of Sir Philip Musgrave, 6th Baronet (1712~ – 1795-07-05, https://www.wikidata.org/wiki/Q16844278) and oo 1742-06-24 Jane Turton (1721 - 1802, daughter of John Turton)) and oo 1791 Mary Filmer (daughter of Rev. Sir Edmund Filmer, 6th Baronet ((1727 – 1834, son of Sir Edward Filmer, 3rd Baronet and Mary Wallis) and oo Annabella Christiana Honywood (d. 1798, daughter of Sir John Honywood, 3rd Bt. and Annabella Goodenough))) and oo 1825-09 Mary Anne Hasell (daughter of Edward Hasell and Elizabeth Carus))) and oo 1898-07-23 Helena Violet Alice Fraser (d. 1949-04-14, daughter of James Keith Fraser (d. 1895-07-30, son of Sir James John Fraser, 3rd Baronet (1789 – 1834-06-05, https://www.wikidata.org/wiki/Q16239601, son of Sir William Fraser, 1st Baronet (d. 1818, 1st Baronet Fraser, of Leadclune 1806-11-27)) and oo Charlotte Anne Craufurd (d. 1867-05-07, daughter of Daniel Craufurd and Bridget Holland)) and oo 1865-06-10 Amelia Alice Julia Ward (daughter of Hon. Humble Dudley Ward (1821-12-20 - 1870-12-14, son of William Humble Ward, 10th Baron Ward of Birmingham (,1781-01-09 - 1835-12-06, 10th Baron Ward of Birmingham, co. Warwick 1833-03-06, https://www.wikidata.org/wiki/Q20741565, son of Humble Ward (1755-12-01 - 1785-01-09, son of grey.ttl#William_Ward and Elizabeth Hawkes) and oo 1779~ Susannah Beecroft) and oo 1816-05-22 Amelia Pillans (1797~ - 1882-05-23, daughter of William Cooch Pillans)) and oo 1843-12-17 Eleanor Louisa Hawkes (d. 1899-12-16, daughter of Thomas Hawkes)))
+  []
+    gen:spouse <#Douglas_Beresford-Ash> , <#Lady_Betty_Helena_Joanna_Rous> ;
+	gen:startDate "1930-09-17" .
 
+<https://www.wikidata.org/wiki/Q68298575>
+  # Lady Blanche Maud de la Poer Beresford, 1898-10-13 - 1940-09-29
+  gen:father <https://www.wikidata.org/wiki/Q5718077> ;
+  gen:mother <https://www.wikidata.org/wiki/Q4877228> .
+  # oo 1927-10-26 Richard Desiré Girouard, 1905 - 1989, son of Sir Edward Percy Cranwell Girouard and Mary Gwendolen Solomon
+<#Lady_Katharine_Nora_de_la_Poer_Beresford>
+  # Lady Katharine Nora de la Poer Beresford, 1899-12-23 - 1991
+  gen:father <https://www.wikidata.org/wiki/Q5718077> ;
+  gen:mother <https://www.wikidata.org/wiki/Q4877228> .
+  # oo 1926-10-14 Sir David Dawnay, 1903-07-10 - 1971-10-09, https://www.wikidata.org/wiki/Q4414806, son of Hon. Hugh Dawnay and beresford.ttl#Lady_Susan_de_la_Poer_Beresford
+<https://www.wikidata.org/wiki/Q20714109>
+  # John Charles de La Poer Beresford, 7th Marquess of Waterford, 1901-01-06 – 1934-09-25
+  gen:father <https://www.wikidata.org/wiki/Q5718077> ;
+  gen:mother <https://www.wikidata.org/wiki/Q4877228> .
+  # oo Juliet Mary Lindsay, 1904-01-27 - 1987, daughter of David Balcarres Lindsay (1863-02-15 - 1943-03-09, son of Henry Gore Lindsay (1830-08-26 - 1914-12-15, lindsay.ttl#Henry_Gore_Lindsay, son of George Hayward Lindsay (1799-06-10 - 1886-01-05, son of Rt. Rev. Hon. Charles Dalrymple Lindsay (1760-12-15 – 1846-08-08,  Bishop of Killaloe and Kilfenora 1803 - 1804, Dean of Christ Church Cathedral, Dublin 1804 - 1846, https://www.wikidata.org/wiki/Q5080260, son of https://www.wikidata.org/wiki/Q7615693 (dalrymple.ttl) and Anne Dalrymple) and oo 1798-06-02 Catherine Eliza Coussmaker (daughter of Evert George Coussmaker and Mary Heyward)) and oo 1828-09-03 Lady Mary Catherine Gore (1806 - 1885-04-28, daughter of Hon. William John Gore (1767-11-16 - 1836-01-15, son of Arthur Saunders Gore, 2nd Earl of Arran of the Arran Islands (1734-07-25 – 1809-10-08, https://www.wikidata.org/wiki/Q4798851) and oo 1760-07-14 Hon. Catherine Annesley (1739 - 1770-11-23, daughter of https://www.wikidata.org/wiki/Q8004465 and Lady Anne Beresford)) and oo 1798-05-30 Caroline Hales (1772 - 1836-06-07, daughter of Sir Thomas Pym Hales, 4th Baronet (1726 - 1773, https://www.wikidata.org/wiki/Q16239785, son of https://www.wikidata.org/wiki/Q7529157 (bouverie.ttl, dalrymple.ttl) and Mary Marsham) and oo 1764-10-11 Mary Heyward (b. 1735-11-02b)))) and oo 1856-05-14 Hon. Ellen Sarah Morgan (1836 - 1912-05-19, devereux.ttlEllen_Sarah_Morgan, daughter of https://www.wikidata.org/wiki/Q5081069 (devereux.ttl) and Rosamund Mundy)) and oo 1898-01-11 Grace Maud Miller (d. 1945-07-11, daughter of George Miller)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q20714109> , <lindsay.ttl#Juliet_Mary_Lindsay> ;
+	gen:startDate "1930-10-14" .
+<#Mary_Emily_Beresford>
+  # Mary Emily Beresford, d. 1935-03-06
+  gen:father <#Edward_Beresford> ;
+  gen:mother <#Emily_Constance_Frederica_Milner> .
+  # oo 1907-08-08 Reginald Reynolds-Moreton, 1869-01-26 - 1929, son of Hon. Reynolds Reynolds-Moreton and Margaret Mahony
+
+<https://www.wikidata.org/wiki/Q6221629>
+  # John Hubert de la Poer Beresford, 8th Marquess of Waterford, 1933-07-14 – 2015-02-11
+  gen:father <https://www.wikidata.org/wiki/Q20714109> ;
+  gen:mother <lindsay.ttl#Juliet_Mary_Lindsay> .
+  # oo Lady Caroline Olein Geraldine Wyndham-Quin, b. 1936-09-14, daughter of Richard Southwell Windham Robert Wyndham-Quin, 6th Earl of Dunraven and Mount-Earl (1887-05-18 – 1965-08-28, https://www.wikidata.org/wiki/Q7330112, son of Windham Henry Wyndham-Quin, 5th Earl of Dunraven and Mount-Earl (1857-02-07 – 1952-10-23, https://www.wikidata.org/wiki/Q8024207 (cecil.ttl), son of Hon. Windham Henry Wyndham-Quin (1829-11-02 - 1865-10-24, son of Windham Henry Wyndham-Quin, 2nd Earl of Dunraven and Mount-Earl (1782-09-29 – 1850-08-06, https://www.wikidata.org/wiki/Q8024197 (see paget.ttl), son of Valentine Richard Quin, 1st Earl of Dunraven and Mount-Earl (1752-07-30 – 1824-08-24, 1st Baronet Quin, of Adare, co. Limerick 1781-06-08, 1st Baron Adare, of Adare 1800-07-31, 1st Viscount Mount-Earl 1816-02-05, 1st Earl of Dunraven and Mount-Earl, 1st Viscount Adare 1822-02-05, https://www.wikidata.org/wiki/Q7911001, son of Windham Quin and Frances Dawson) and oo 1777-08-24 Lady Frances Muriel Fox-Strangways (d. 1814-05, daughter of https://www.wikidata.org/wiki/Q7609225 (scott.ttl) and Elizabeth Horner)) and oo 1810-12-27 Caroline Wyndham (1789 - 1870-05-26, https://www.wikidata.org/wiki/Q54666326, daughter of Thomas Wyndham (1763~ - 1814-11-28, https://www.wikidata.org/wiki/Q17181078, son of https://www.wikidata.org/wiki/Q17180578 and Eleanor Rooke) and oo Anna Maria Charlotte Ashby)) and oo 1856-01-24 Caroline Tyler (daughter of Sir George Tyler (1792-12-28 – 1862-06-04, https://www.wikidata.org/wiki/Q16886998, son of Sir Charles Tyler (1760 – 1835-09-28, https://www.wikidata.org/wiki/Q5083062, son of Peter Tyler (1715 - 1763) and oo Hon. Anna Maria Roper (1719-08-20 - 1782, daughter of Henry Roper, 8th Baron Teynham (cavendish.ttl) and Anne Lennard, Baroness Dacre)) and oo 1788-11-25 Margaret Leach (d. 1835-07-15, daughter of Alexander Leach)) and oo 1819-09-21 Harriet Margaret Sullivan (daughter of Rt. Hon. John Sullivan (1749-04-07 - 1839-10-31, https://www.wikidata.org/wiki/Q18527646) and oo 1789-05-24 Lady Henrietta Anne Barbara Hobart (1762~ - 1828-12-12, daughter of https://www.wikidata.org/wiki/Q5540642 (bertie.ttl) and Albinia Bertie)))) and oo 1885-07-05 Lady Eva Constance Aline Bourke (d. 1940-01-19, daughter of https://www.wikidata.org/wiki/Q2614140 (cecil.ttl) and Hon. Blanche Julia Wyndham)) and oo 1934-03-07 Nancy Yuille (1902-01-07 - 1994-03-02, daughter of Thomas B. Yuille)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6221629> , <#Lady_Caroline_Olein_Geraldine_Wyndham-Quin> ;
+	gen:startDate "1957-07-23" .
+
+<https://www.wikidata.org/wiki/Q20714114>
+  # Henry Nicholas de la Poer Beresford, 9th Marquess of Waterford, b. 1958-03-23
+  gen:father <https://www.wikidata.org/wiki/Q6221629> ;
+  gen:mother <#Lady_Caroline_Olein_Geraldine_Wyndham-Quin> .
+  # oo Amanda Thompson, daughter of Norman Thompson
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q20714114> , <#Amanda_Thompson> ;
+	gen:startDate "1986" .
+
+<#Richard_John_Beresford,_Earl_of_Tyrone>
+  # Richard John Beresford, Earl of Tyrone, b. 1987-08-19
+  gen:father <https://www.wikidata.org/wiki/Q20714114> ;
+  gen:mother <#Amanda_Thompson> .
+  # oo Flora Richardson
+  []
+    gen:spouse <#Richard_John_Beresford,_Earl_of_Tyrone> , <#Flora_Richardson> ;
+	gen:startDate "2017-09-30" .
+<#Lord_Marcus_Patrick_Beresford>
+  # Lord Marcus Patrick Beresford, b. 1990
+  gen:father <https://www.wikidata.org/wiki/Q20714114> ;
+  gen:mother <#Amanda_Thompson> .
+<#Lady_Camilla_Juliet_Beresford>
+  # Lady Camilla Juliet Beresford, b. 1995-07-25
+  gen:father <https://www.wikidata.org/wiki/Q20714114> ;
+  gen:mother <#Amanda_Thompson> .
 
 
 # Baron Decies
@@ -153,8 +601,10 @@
     gen:spouse <https://www.wikidata.org/wiki/Q16157445> , <#Elizabeth_FitzGibbon> ;
 	gen:startDate "1763-06-16" .
 
-# cecil.ttl
-# brudenell.ttl
+<https://www.wikidata.org/wiki/Q6758031>
+  # Marcus Beresford, 1764-06-01 – 1803-01-06
+  gen:father <https://www.wikidata.org/wiki/Q16157445> ;
+  gen:mother <#Elizabeth_FitzGibbon> .
 <#John_Horsley-Beresford,_2nd_Baron_Decies>
   gen:name "John Horsley-Beresford, 2nd Baron Decies"@en ;
   gen:birthDate "1773-01-20" ;
@@ -165,21 +615,41 @@
   []
     gen:spouse <#John_Horsley-Beresford,_2nd_Baron_Decies> , <#Charlotte_Philadelphia_Horsley> ;
 	gen:startDate "1810-07-26" .
-# cecil.ttl
 <https://www.wikidata.org/wiki/Q62383951>
   gen:name "Hon. Louisa de la Poer Beresford"@en ;
   gen:deathDate "1851-07-21" ;
   gen:father <https://www.wikidata.org/wiki/Q16157445> ;
   gen:mother <#Elizabeth_FitzGibbon> .
   # oo 1806-04-10 Thomas Hope, 1769-08-30 - 1830/1831-02-03, https://www.wikidata.org/wiki/Q1308730
-# drummond.ttl
+  # oo 1832-11-29 William Carr Beresford, 1st Viscount Beresford, 1st Marquis of Campo Maior, 1768-10-02 – 1854-01-08, https://www.wikidata.org/wiki/Q332633
+<#Araminta_Anne_Beresford>
+  # Hon. Araminta Anne Beresford, d. 1816-09-26
+  gen:father <https://www.wikidata.org/wiki/Q16157445> ;
+  gen:mother <#Elizabeth_FitzGibbon> .
+  # oo 1794-05-26 Very Rev. Arthur John Preston, 1761-04-26 – 1844-11-03, Dean of Kildare in 1808, Dean of Limerick 1809, https://www.wikidata.org/wiki/Q60761514
 <#Harriet_Beresford>
   # Hon. Harriet Beresford, d. 1834-06-11
   gen:father <https://www.wikidata.org/wiki/Q16157445> ;
   gen:mother <#Elizabeth_FitzGibbon> .
   # oo 1796-01 Thomas Bermingham Daly Henry Sewell, b. 1774-02-13, drummond.ttl#Thomas_Bermingham_Daly_Henry_Sewell
+<https://www.wikidata.org/wiki/Q20810827>
+  # Rev. Hon. George de la Poer Beresford, 1776-05-21 - 1842-08-10/-09-10
+  # Provost of Tuam 1816
+  gen:father <https://www.wikidata.org/wiki/Q16157445> ;
+  gen:mother <#Elizabeth_FitzGibbon> .
+  # oo Susan Gorges, 1773 - 1848-01, daughter of Hamilton Gorges (1739 - 1802-06-14, https://www.wikidata.org/wiki/Q26454944) and oo Anne Howard (daughter of Gorges Edmond Howard)
+  []
+    gen:spouse <#George_Beresford> , <#Susan_Gorges> ;
+	gen:startDate "1798-05-21" .
+<#William_Beresford>
+  # Rev. Hon. William Beresford, 1780-11-20 1830-06-27
+  gen:father <https://www.wikidata.org/wiki/Q16157445> ;
+  gen:mother <#Elizabeth_FitzGibbon> .
+  # oo Lady Anna Bennet, 1774-04-28 - 1836-09, daughter of Charles Bennet, 4th Earl of Tankerville (1743-11-15 – 1822 12-10, https://www.wikidata.org/wiki/Q5075541 (see russell.ttl), son of Charles Bennet, 3rd Earl of Tankerville (1716-09-06 – 1767-10-27, https://www.wikidata.org/wiki/Q5075540, son of Charles Bennet, 2nd Earl of Tankerville (1697-12-21 – 1753-03-14, https://www.wikidata.org/wiki/Q5075539, son of https://www.wikidata.org/wiki/Q5075537 (cecil.ttl) and Lady Mary Grey) and oo 1715~ Camilla Colville (daughter of Edward Colville)) and oo 1742-09-23 Alicia Astley (d. 1791-02-29, daughter of Sir John Astley, 2nd Baronet (1687-01-24 – 1771-12-29, https://www.wikidata.org/wiki/Q7527562, son of Sir Richard Astley, 1st Baronet (1625~ - 1688-02-24, 1st Baronet Astley, of Patshull, co. Stafford 1662-08-13) and oo 1680~ Henrietta Borlase (1660-09-04 - 1711-06-27, daughter of William Borlase and Joanna Bankes)) and oo 1711-05-27 Mary Prynce (d. 1764, daughter of Francis Prynce and Mary Gilly))) and oo 1771-10-07 Emma Colebrooke (1752 - 1836-11-20, daughter of Sir James Colebrooke, 1st Baronet (1722-07-21 — 1761-05-10, 1st Baronet Colebrooke, of Gatton, co. Surrey 1759-10-12, https://www.wikidata.org/wiki/Q15059148, son of https://www.wikidata.org/wiki/Q38010197 and Mary Hudson) and oo 1747-05 Mary Skynner (daughter of Stephen Skynner and Mary Remington))
+  []
+    gen:spouse <#William_Beresford> , <cecil.ttl#Lady_Anna_Bennet> ;
+	gen:startDate "1804-07-19" .
 
-# cecil.ttl
 <#William_Horsley-Beresford,_3rd_Baron_Decies>
   # William Robert John Horsley-Beresford, 3rd Baron Decies, 1811-06 - 1893-07-03
   gen:father <#John_Horsley-Beresford,_2nd_Baron_Decies> ;
@@ -188,7 +658,6 @@
   []
     gen:spouse <#William_Horsley-Beresford,_3rd_Baron_Decies> , <#Catherine_Anne_Dent> ;
 	gen:startDate "1860-07-31" .
-# brudenell.ttl
 <#Louisa_Elizabeth_Horsley-Beresford>
   gen:name "Hon. Louisa Elizabeth Horsley-Beresford" ;
   gen:birthDate "1814-04" ;
@@ -196,54 +665,167 @@
   gen:father <#John_Horsley-Beresford,_2nd_Baron_Decies> ;
   gen:mother <#Charlotta_Philadelphia_Horsley> .
   # oo 1834-11-25 Ernest Augustus Charles Brudenell-Bruce, 3rd Marquess of Ailesbury, 1811-01-08 - 1886-10-18, https://www.wikidata.org/wiki/Q5392837
-# cecil.ttl
 <https://www.wikidata.org/wiki/Q18819378>
   # Hon. Caroline Agnes Horsley-Beresford, 1818-03-14 - 1894-11-16
   gen:father <#John_Horsley-Beresford,_2nd_Baron_Decies> ;
   gen:mother <#Charlotte_Philadelphia_Horsley> .
   # oo 1836-10-15 James Graham, 4th Duke of Montrose, 1799-07-16 - 1874-12-30, https://www.wikidata.org/wiki/Q495977
-# spencer.ttl
-#<https://www.wikidata.org/wiki/Q6758033>
+  # oo 1876-01-22 William Stuart Stirling-Crawford, d. 1883-02-23
+  # oo 1888-07-26 Marcus Henry Milner, 1864-04-16 - 1939-01-16, son of Henry Beilby William Milner (1823-12-17 - 1876-05-06, son of Sir William Mordaunt Sturt Milner, 4th Baronet and Harriet Elizabeth Cavendish-Bentinck) and #Charlotte_Henrietta_Beresford
+<https://www.wikidata.org/wiki/Q6758033>
   # Marcus Beresford, 1800-07-28 - 1876-03-22
-  # son of Rev. George Beresford, son of https://www.wikidata.org/wiki/Q16157445
-  # and Susan Gorges, daughter of https://www.wikidata.org/wiki/Q26454944
+  gen:father <#George_Beresford> ;
+  gen:mother <#Susan_Gorges> .
+  # oo Isabella Sewell, d. 1836-08, daughter of drummond.ttl#Thomas_Bermingham_Daly_Henry_Sewell and beresford.ttl#Harriet_Beresford
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6758033> , <drummond.ttl#Isabella_Sewell> ;
+	gen:startDate "1828-10" .
   # oo Caroline Fane, 1818-07-07 - 1895-01-08
   []
     gen:spouse <https://www.wikidata.org/wiki/Q6758033> , <fane.ttl#Caroline_Fane> ;
 	gen:startDate "1838-01-22" .
+<#George_Hamilton_de_la_Poer_Beresford>
+  # Rev. George Hamilton de la Poer Beresford, 1801 - 1869-03-02
+  gen:father <#George_Beresford> ;
+  gen:mother <#Susan_Gorges> .
+  # oo Elizabeth Nisbet, d. 1847-11, daughter of Matthew Nisbet
+  []
+    gen:spouse <#George_Hamilton_de_la_Poer_Beresford> , <#Elizabeth_Nisbet> ;
+	gen:startDate "1829-11" .
+  # oo Marianne Sarah Saunderson, d. 1884-02-01, daughter of Robert Saunderson
+  []
+    gen:spouse <#George_Hamilton_de_la_Poer_Beresford> , <#Marianne_Sarah_Saunderson> ;
+	gen:startDate "1853-03-02" .
 
-# cecil.ttl
+<#William_Horsley-Beresford,_4th_Baron_Decies>
+  # William Marcus de la Poer Horsley-Beresford, 4th Baron Decies, 1865-01-12 - 1910-07-30
+  gen:father <#William_Horsley-Beresford,_3rd_Baron_Decies> ;
+  gen:mother <#Catherine_Anne_Dent> .
+  # oo Maria Gertrude Willoughby, d. 1939, daughter of Sir John Pollard Willoughby, 4th Baronet
+  []
+    gen:spouse <#William_Horsley-Beresford,_4th_Baron_Decies> , <#Maria_Gertrude_Willoughby> ;
+	gen:startDate "1901-03-12" .
+<https://www.wikidata.org/wiki/Q6221625>
+  # John Graham Hope de la Poer Beresford, 5th Baron Decies, 1866-12-05 – 1944-01-31
+  gen:father <#William_Horsley-Beresford,_3rd_Baron_Decies> ;
+  gen:mother <#Catherine_Anne_Dent> .
+  # oo Helen Vivien Gould, 1893 - 1931-02-03, daughter of George Jay Gould I (1864-02-06 – 1923-05-16, https://www.wikidata.org/wiki/Q3101668, son of Jay Gould (1836-05-27 – 1892-12-02, https://www.wikidata.org/wiki/Q709595, son of John Burr Gould and Mary Moore) and oo 1863 Helen Day Miller (1838 - 1889)) and oo 1885 Edith Mary Kingdon (1864-08-24 - 1921-11-13, https://www.wikidata.org/wiki/Q5338588, daughter of Charles Dennis Kingdon and Mary Carter)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6221625> , <https://www.wikidata.org/wiki/Q1601874> ;
+	gen:startDate "1911-02-07" .
+  # oo Elizabeth Wharton Drexel, 1868-04-22 - 1944-06-13, daughter of Joseph William Drexel (1833-01-24 – 1888-03-25, https://www.wikidata.org/wiki/Q14566175, son of https://www.wikidata.org/wiki/Q5481870 (finch.ttl) and Catherine Hookey) and oo Lucy Wharton (1841 - 1912, daughter of Thomas Lloyd Wharton and Sarah Ann Smith)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6221625> , <https://www.wikidata.org/wiki/Q1331340> ;
+	gen:startDate "1936-05-25" .
+<#Seton_Robert_de_la_Poer_Horsley-Beresford>
+  # Hon. Seton Robert de la Poer Horsley-Beresford, 1868 - 1928-05-28
+  gen:father <#William_Horsley-Beresford,_3rd_Baron_Decies> ;
+  gen:mother <#Catherine_Anne_Dent> .
+  # oo Delia Dorothy O'Sullivan, daughter of Daniel John O'Sullivan
+  []
+    gen:spouse <#Seton_Robert_de_la_Poer_Horsley-Beresford> , <#Delia_Dorothy_O'Sullivan> ;
+	gen:startDate "1899" ;
+	gen:divorceDate "1909" .
+  # oo Joan Rosemary Graves-Sawle, daughter of Rear-Admiral Sir Charles John Graves-Sawle, 4th Baronet, https://www.wikidata.org/wiki/Q47038434
+  []
+    gen:spouse <#Seton_Robert_de_la_Poer_Horsley-Beresford> , <#Joan_Rosemary_Graves-Sawle> ;
+	gen:startDate "1915-06-28" .
 <#Charlotte_Ernestine_Horsley-Beresford>
   # Hon. Charlotte Ernestine Horsley-Beresford, 1871-09-03 - 1923-09-28
   gen:father <#William_Horsley-Beresford,_3rd_Baron_Decies> ;
   gen:mother <#Catherine_Anne_Dent> .
   # oo 1892-10-08 Cameron Barclay, 1866 - 1954-08-03, hay.ttl#Cameron_Barclay
-# cecil.ttl
 <#William_Arthur_de_la_Poer_Horsley-Beresford>
   # Hon. William Arthur de la Poer Horsley-Beresford, 1878-08-09 - 1949-07-11
   gen:father <#William_Horsley-Beresford,_3rd_Baron_Decies> ;
   gen:mother <#Catherine_Anne_Dent> .
+  # oo Florence Miller, d. 1969, daughter of Gardner L. Miller
+  []
+    gen:spouse <#William_Arthur_de_la_Poer_Horsley-Beresford> , <#Florence_Miller> ;
+	gen:startDate "1901-06-17" ;
+	gen:divorceDate "1919" .
   # oo Laura Coventry, 1899-08-31 - 1958
   []
     gen:spouse <#William_Arthur_de_la_Poer_Horsley-Beresford> , <coventry.ttl#Laura_Coventry> ;
 	gen:startDate "1919-07-22" ;
 	gen:divorceDate "1928" .
-# spencer.ttl
+  # oo Georgina Leonora Mosselmans, d. 1969-04-30
+  []
+    gen:spouse <#William_Arthur_de_la_Poer_Horsley-Beresford> , <douglas.ttl#Georgina_Leonora_Mosselmans> ;
+	gen:startDate "1933-08-18" ;
+	gen:divorceDate "1940" .
+  # oo Ida Kaye, d. 1990-08-20
+  []
+    gen:spouse <#William_Arthur_de_la_Poer_Horsley-Beresford> , <#Ida_Kaye> ;
+	gen:startDate "1941" .
 <#Ethel_Louisa_Beresford>
   # Ethel Louisa Beresford, 1856-01-20 - 1925-11-05
   gen:father <https://www.wikidata.org/wiki/Q6758033> ;
   gen:mother <fane.ttl#Caroline_Fane> .
   # oo 1880-09-07 Henry Montagu Spencer, 1851-11-13 - 1924-10-26, spencer.ttl#Henry_Montagu_Spencer
+<#Henry_Tristram_de_la_Poer_Beresford>
+  # Henry Tristram de la Poer Beresford, 1841-07-29 - 1930-08-12
+  gen:father <#George_Hamilton_de_la_Poer_Beresford> ;
+  gen:startDate <#Elizabeth_Nisbet> .
+  # oo Louisa Margaret Coventry, d. 1933-10-01, daughter of William Coventry
+  []
+    gen:spouse <#Henry_Tristram_de_la_Poer_Beresford> , <#Louisa_Margaret_Coventry> ;
+	gen:startDate "1884" .
+
+<#Arthur_Beresford,_6th_Baron_Decies>
+  # Arthur George Marcus Douglas de la Poer Beresford, 6th Baron Decies, 1915-04-24 - 1992-11-07
+  gen:father <https://www.wikidata.org/wiki/Q6221625> ;
+  gen:mother <https://www.wikidata.org/wiki/Q1601874> .
+  # oo Ann Christina Margo Trevor, d. 1945-03-28, daughter of Sidney Walter Trevor
+  []
+    gen:spouse <#Arthur_Beresford,_6th_Baron_Decies> , <#Ann_Christina_Margo_Trevor> ;
+	gen:startDate "1937-10-21" .
+  # oo Diana Mary Turner-Cain, d. 2004-03-14, daughter of George Turner-Cain
+  []
+    gen:spouse <#Arthur_Beresford,_6th_Baron_Decies> , <#Diana_Mary_Turner-Cain> ;
+	gen:startDate "1945-09-12" .
+<#Sir_George_de_la_Poer_Beresford>
+  # Sir George de la Poer Beresford, 1885-07-21 - 1964-09-29
+  gen:father <#Henry_Tristram_de_la_Poer_Beresford> ;
+  gen:mother <#Louisa_Margaret_Coventry> .
+  # oo Margaret Ethel Granville Thynne, 1883-10-09 - 1963-12-30, daughter of thynne.ttl#Arthur_Christopher_Thynne and Gwenllian Elizabeth Fanny Isabel Kendall
+  []
+    gen:spouse <#Sir_George_de_la_Poer_Beresford> , <thynne.ttl#Margaret_Ethel_Granville_Thynne> ;
+	gen:startDate "1916-11-15" .
+
+<https://www.wikidata.org/wiki/Q6758030>
+  # Marcus Hugh Tristram de la Poer Beresford, 7th Baron Decies, b. 1948-08-05
+  gen:father <#Arthur_Beresford,_6th_Baron_Decies> ;
+  gen:mother <#Diana_Mary_Turner-Cain> .
+  # oo Sarah Jane Gunnell, daughter of Basil Gunnell
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6758030> , <#Sarah_Jane_Gunnell> ;
+	gen:startDate "1970-04-11" ;
+	gen:divorceDate "1974" .
+  # oo Edel Jeannette Hendron, daughter of Vincent Ambrose Hendron
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6758030> , <#Edel_Jeannette_Hendron> ;
+	gen:startDate "1981" .
+
+<#Louisa_Katherine_de_la_Poer_Beresford>
+  # Hon. Louisa Katherine de la Poer Beresford, b. 1984-10-12
+  gen:father <https://www.wikidata.org/wiki/Q6758030> ;
+  gen:mother <#Edel_Jeannette_Hendron> .
+<#Robert_Marcus_Duncan_de_la_Poer_Beresford>
+  # Hon. Robert Marcus Duncan de la Poer Beresford, b. 1988-07-14
+  gen:father <https://www.wikidata.org/wiki/Q6758030> ;
+  gen:mother <#Edel_Jeannette_Hendron> .
+<#David_George_Morley_Hugh_de_la_Poer_Beresford>
+  # Hon. David George Morley Hugh de la Poer Beresford, b. 1991-05-04
+  gen:father <https://www.wikidata.org/wiki/Q6758030> ;
+  gen:mother <#Edel_Jeannette_Hendron> .
+<#Jessica_Laragh_de_la_Poer_Beresford>
+  # Hon. Jessica Laragh de la Poer Beresford, b. 1996-11-16
+  gen:father <https://www.wikidata.org/wiki/Q6758030> ;
+  gen:mother <#Edel_Jeannette_Hendron> .
 
 
 
-
-
-
-
-
-
-# cecil.ttl
 # ----
 #<https://www.wikidata.org/wiki/Q16863560>
   # Richard Power, 1st Earl of Tyrone, 1630 - 1690-10-14
@@ -302,6 +884,11 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q708421> , <#Elizabeth_Altham> ;
 	gen:startDate "1638-04-24" .
+<#Catherine_Annesley>
+  # Hon. Catherine Annesley, 1634-01-05 - 1701-04-03
+  gen:father <https://www.wikidata.org/wiki/Q5480011> ;
+  gen:mother <#Dorothy_Philipps> .
+  # oo 1663-02-20 Sir Randal Beresford, 2nd Baronet, d. 1681-10-19, https://www.wikidata.org/wiki/Q7291457
 
 <#Lady_Dorothy_Annesley>
   # Lady Dorothy Annesley
@@ -337,10 +924,18 @@
   # oo 1638-04-24 Arthur Annesley, 1st Earl of Anglesey, 1614-07-10 - 1686-04-06, https://www.wikidata.org/wiki/Q708421
 
 
-# talbot.ttl
 # ----
+# manners.ttl
+#<https://www.wikidata.org/wiki/Q5537704>
+  # George Carpenter, 2nd Earl of Tyrconnell, 1750 – 1805-04-15
+  # son of George Carpenter, 1st Earl of Tyrconnell (1723-08-26 – 1762-03-09, 3rd Baron Carpenter of Killaghy, co. Kilkenny 1749-07-12, 1st Earl of Tyrconnell, in the province of Ulster, 1st Viscount Carlingford, co. Louth 1761-05-01, https://www.wikidata.org/wiki/Q5537702, son of George Carpenter, 2nd Baron Carpenter of Killaghy (1702-08-26~ – 1749-07-12, https://www.wikidata.org/wiki/Q5537703, son of George Carpenter, 1st Baron Carpenter of Killaghy (1657-02-10 – 1731-02-10, 1st Baron Carpenter of Killaghy, co. Kilkenny 1719-05-29, https://www.wikidata.org/wiki/Q5537699, son of Warncombe Carpenter and Eleanor Taylor) and oo 1694-01-23 Hon. Alice Caulfeild (1660~ - 1731-10-07, daughter of William Caulfeild, 1st Viscount Charlemont (1624 – 1671-04, 5th Lord Caulfeild, Baron of Charlemont, co. Armagh 1644-01-01, 1st Viscount Charlemont, co. Armagh 1665-10-08, https://www.wikidata.org/wiki/Q8006637, son of William Caulfeild, 2nd Lord Caulfeild, Baron of Charlemont (1587-10-08 - 1640-12-04, 2nd Lord Caulfeild, Baron of Charlemont, co. Armagh 1627-08-17, https://www.wikidata.org/wiki/Q30283819, son of George Caulfeild and Martha Taverner) and oo Mary King (d. 1663-07-16a/-08-15b, daughter of Sir John King and Catherine Drury)) and oo 1653 Hon. Sarah Moore (d. 1712-11~, daughter of Charles Moore, 2nd Viscount Moore of Drogheda (1603~ - 1643-08-07, https://www.wikidata.org/wiki/Q18730077, son of Garret Moore, 1st Viscount Moore of Drogheda (1564~ - 1627-11-09, 1st Baron Moore of Mellefont, co. Louth 1616-07-20, 1st Viscount Moore of Drogheda 1622-02-07, https://www.wikidata.org/wiki/Q18671234, son of Sir Edward Moore and Elizabeth Clifford) and oo Mary Colley (d. 1654-06-03, daughter of Sir Henry Colley and Katherine Cusack))))) and oo 1722-08-26 Elizabeth Petty (1711~ - 1791-05-21, daughter of David Petty and Mary Crokes)) and oo 1747-03 Frances Clifton (daughter of Sir Robert Clifton, 5th Baronet (1690 - 1762-12-07, https://www.wikidata.org/wiki/Q7528741, son of Sir Gervase Clifton, 4th Baronet and Ann Bagenal) and oo 1723-06-28 Lady Frances Coote (d. 1733, daughter of Nanfan Coote, 2nd Earl of Bellomont (1681~ - 1708-06-14, son of Richard Coote, 1st Earl of Bellomont (1636 - 1700-03-05, 2nd Lord Coote, Baron of Coloony, co. Sligo 1683-07-10, 1st Earl of Bellomont, in our Kingdom of Ireland 1689-11-02, https://www.wikidata.org/wiki/Q3934786, son of hastings.ttl#Richard_Coote,_1st_Lord_Coote and Mary St. George) and oo 1680-08-19 Catherine Nanfan (1665-02-09 - 1738-03-12, daughter of Bridges Nanfan and Catharine Hastings)) and oo 1706-02-17 Lucia Anna Nassau (1684-03-26b - 1744-09-04, nassau.ttl#Lucia_Anne_Nassau)))
+  # oo Sarah Delaval, 1763-07-01 - 1800-10-07, daughter of John Hussey Delaval, 1st Baron Delaval of Seaton Delaval (1728-03-17 – 1808-05-17, 1st Baronet Delaval 1761-07-01, 1st Baron Delaval of Redford, co. Wicklow 1783-10-17, 1st Lord Delaval of Seaton Delaval, co. Northumberland 1786-08-21, https://www.wikidata.org/wiki/Q6229108, son of https://www.wikidata.org/wiki/Q5480258 and Rhoda Apreece) and oo Susannah Robinson (1730 - 1783-10-01)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5537704> , <#Sarah_Delaval> ;
+	gen:startDate "1780-07-03" .
+
 <#Susanna_Carpenter>
   # Susanna Carpenter, d. 1827-06-07
-  gen:father <https://www.wikidata.org/wiki/Q5537704> .
-  # and Sarah Delaval
+  gen:father <https://www.wikidata.org/wiki/Q5537704> ;
+  gen:mother <#Sarah_Delaval> .
   # oo 1805-08-29 Henry de la Poer Beresford, 2nd Marquess of Waterford, 1772-05-23 – 1826-07-16, https://www.wikidata.org/wiki/Q886239
