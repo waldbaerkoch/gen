@@ -3,13 +3,62 @@
 @prefix wdata: <https://www.wikidata.org/wiki/> .
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
 
-#<https://www.wikidata.org/wiki/Q7839214>
+
+##<#Sir_Moyses_Hill>
+  # Sir Moyses Hill, d. 1630-02
+  # oo Alice MacDonnel, daughter of Alexander 'Cathanach' Macdonald and Katherine MacDonnell
+
+<#Penelope_Hill>
+  # Penelope Hill, d. 1694-07~
+  gen:father <#Sir_Moyses_Hill> .
+  # and Alice MacDonnel
+  # oo 1643a Hon. Edward Russell, d. 1665-09-21 russell.ttl#Edward_Russell
+<#Arthur_Hill>
+  # Rt. Hon. Arthur Hill, 1601~ - 1663-04
+  gen:father <#Sir_Moyses_Hill> .
+  # and Alice MacDonnel
+  # oo Mary Parsons, daughter of Sir William Parsons, 1st Baronet (1570 - 1650-02-28~, 1st Baronet Parsons 1620-11-10, https://www.wikidata.org/wiki/Q16859808) and oo Elizabeth Lany (daughter of John Lany)
+  []
+    gen:spouse <#Arthur_Hill> , <#Mary_Parsons> .
+
+<#William_Hill>
+  # Rt. Hon. William Hill, of Hillsborough, d. 1692-07-07a/1693-11-20b
+  gen:father <#Arthur_Hill> ;
+  gen:mother <#Mary_Parsons> .
+  # oo Eleanor Boyle
+  []
+    gen:spouse <#William_Hill> , <boyle.ttl#Eleanor_Boyle> .
+  # oo Hon. Mary Trevor
+  []
+    gen:spouse <#William_Hill> , <#Mary_Trevor> .
+
+<https://www.wikidata.org/wiki/Q6831136>
+  # Rt. Hon. Michael Hill, 1672~ - 1699
+  gen:father <#William_Hill> .
+  # and Eleanor Boyle
+  # oo Anne Trevor, d. 1747-01-05
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6831136> , <#Anne_Trevor> ;
+	gen:startDate "1690" .
+
+<#Anne_Hill_(died_1752)>
+  # Anne Hill, d. 1752-04-25
+  gen:father <https://www.wikidata.org/wiki/Q6831136> ;
+  gen:mother <#Anne_Trevor> .
+  # oo Rt. Hon. St. John Brodrick, of Ballyanan, 1685 - 1728-02-21, son of https://www.wikidata.org/wiki/Q4706248 and oo (1) Catherine Barry (daughter of Redmond Barry)
+<https://www.wikidata.org/wiki/Q7839214>
   # Trevor Hill, 1st Viscount Hillsborough, 1693 - 1742-05-03
   # 1st Viscount Hillsborough, co. Down, 1st Baron Hill of Kilwarlin, co. Down 1717-08-21
+  gen:father <https://www.wikidata.org/wiki/Q6831136> ;
+  gen:mother <#Anne_Trevor> .
   # oo Mary Rowe, d. 1742-08-23, daughter of Anthony Rowe
+<https://www.wikidata.org/wiki/Q4799071> # -> Viscount of Dungannon
+  # Arthur Hill-Trevor, 1st Viscount of Dungannon, 1694~ – 1771-01-30
+  gen:father <https://www.wikidata.org/wiki/Q6831136> ;
+  gen:mother <#Anne_Trevor> .
 
-<#Anne_Hill>
-  # Hon. Anne Hill, d. 1751-08-01
+<#Anne_Hill_(died_1751)>
+  # Hon. Anne Hill, 1716-07-05 - 1751-08-01
   gen:father <https://www.wikidata.org/wiki/Q7839214> .
   # and Mary Rowe
   # oo 1746-12-23 John Rawdon, 1st Earl of Moira, 1720-03-17 - 1793-06-20, https://www.wikidata.org/wiki/Q6254308
@@ -54,15 +103,82 @@
   gen:mother <fitzgerald.ttl#Lady_Margaretta_FitzGerald> .
   # oo 1776-05-07 John Chetwynd-Talbot, 1st Earl Talbot of Hensol, 1749-02-25 - 1793-05-19, https://www.wikidata.org/wiki/Q112411
 
+<https://www.wikidata.org/wiki/Q4799070>
+  # Arthur Blundell Sandys Trumbull Hill, 3rd Marquess of Downshire, 1788-10-08 – 1845-09-12
+  gen:father <https://www.wikidata.org/wiki/Q4799069> ;
+  gen:mother <https://www.wikidata.org/wiki/Q59557482> .
+  # oo Lady Maria Windsor, 1790-05-30 - 1855-04-07
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4799070> , <herbert.ttl#Lady_Maria_Windsor> ;
+	gen:startDate "1811-10-25" .
+<https://www.wikidata.org/wiki/Q4799783>
+  # Arthur Moyses William Hill, 2nd Lord Sandys, Baron of Ombersley, 1792-01-10 – 1860-07-16
+  gen:father <https://www.wikidata.org/wiki/Q4799069> ;
+  gen:mother <https://www.wikidata.org/wiki/Q59557482> .
+<https://www.wikidata.org/wiki/Q6758436>
+  # Marcus Sandys, 3rd Lord Sandys, Baron of Ombersley, 1798-01-28 – 1863-04-10
+  # Sandys 1861-02-11
+  gen:father <https://www.wikidata.org/wiki/Q4799069> ;
+  gen:mother <https://www.wikidata.org/wiki/Q59557482> .
+  # oo Louisa Blake, d. 1886-04-06, daughter of Joseph Blake
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6758436> , <#Louisa_Blake> ;
+	gen:startDate "1837-04-12" .
 <https://www.wikidata.org/wiki/Q24153864>
  # Lord George Augusta Hill, 1801-12-09 - 1879-04-06
- gen:father <https://www.wikidata.org/wiki/Q4799069> ;
- gen:mother <https://www.wikidata.org/wiki/Q59557482> .
- # oo Cassandra Jane Knight, 1806-11-16 - 1842-03-14
- []
-   gen:spouse <https://www.wikidata.org/wiki/Q24153864> , <#Cassandra_Jane_Knight> ;
-   gen:startDate "1834-10-21" .
+  gen:father <https://www.wikidata.org/wiki/Q4799069> ;
+  gen:mother <https://www.wikidata.org/wiki/Q59557482> .
+  # oo Cassandra Jane Knight, 1806-11-16 - 1842-03-14
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q24153864> , <#Cassandra_Jane_Knight> ;
+	gen:startDate "1834-10-21" .
+  # oo Louisa Knight, 1804 - 1889-07-29, daughter of Edward Knight and Elizabeth Bridges
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q24153864> , <#Louisa_Knight> ;
+	gen:startDate "1847-05-11" .
 
+<https://www.wikidata.org/wiki/Q4799073>
+  # Arthur Wills Blundell Sandys Trumbull Windsor Hill, 4th Marquess of Downshire, 1812-08-06 – 1868-08-06
+  gen:father <https://www.wikidata.org/wiki/Q4799070> ;
+  gen:mother <herbert.ttl#Lady_Maria_Windsor> .
+  # oo Hon. Caroline Frances Stapleton-Cotton, 1822~ - 1893-05-10, daughter of https://www.wikidata.org/wiki/Q607265 (paget.ttl) and Caroline Greville
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4799073> , <paget.ttl#Caroline_Frances_Stapleton-Cotton> ;
+	gen:startDate "1837-08-23" .
+<#Lady_Charlotte_Augusta_Hill>
+  # Lady Charlotte Augusta Hill, 1815-06-30 - 1861-11-24
+  gen:father <https://www.wikidata.org/wiki/Q4799070> ;
+  gen:mother <herbert.ttl#Lady_Maria_Windsor> .
+  # oo 1843-08-02 Sir George Chetwynd, 3rd Baronet, 1809-09-06 - 1869-03-24, chetwynd.ttl#Sir_George_Chetwynd,_3rd_Baronet
+<#Lady_Mary_Penelope_Hill>
+  # Lady Mary Penelope Hill, 1817-09-03 - 1884-07-15
+  gen:father <https://www.wikidata.org/wiki/Q4799070> ;
+  gen:mother <herbert.ttl#Lady_Maria_Windsor> .
+  # oo 1838-08-02 Alexander Hood, 1st Viscount Bridport of Cricket St. Thomas, 1814-12-23 - 1904-06-04, https://www.wikidata.org/wiki/Q4719152 (seymour.ttl)
+<https://www.wikidata.org/wiki/Q5346516> # -> Baron Trevor of Brynkinalt
+  # Arthur Edwin Hill-Trevor, 1st Baron Trevor of Brynkinalt, 1819-11-04 – 1894-12-25
+  gen:father <https://www.wikidata.org/wiki/Q4799070> ;
+  gen:mother <herbert.ttl#Lady_Maria_Windsor> .
+<https://www.wikidata.org/wiki/Q7961568>
+  # Hon. Mary Georgiana Caroline Sandys, 1838-04-04 - 1903-03-18
+  gen:father <https://www.wikidata.org/wiki/Q6758436> ;
+  gen:mother <#Louisa_Blake> .
+  # oo 1858-10-21 Sir Edmund Filmer, 9th Baronet, 1835-07-11 - 1886-12-17, https://www.wikidata.org/wiki/Q7526476, son of Sir Edmund Filmer, 8th Baronet (1809-06-14 - 1857-01-08, https://www.wikidata.org/wiki/Q7526475, son of Edmund Filmer) and oo Emelia Skene (daughter of https://www.wikidata.org/wiki/Q16741850)
+<https://www.wikidata.org/wiki/Q21907052>
+  # Augustus Frederick Arthur Sandys, 4th Lord Sandys, Baron of Ombersley, 1840-03-02 - 1940-07-26
+  gen:father <https://www.wikidata.org/wiki/Q6758436> ;
+  gen:mother <#Louisa_Blake> .
+<#Anna_Maria_Frances_Sandys>
+  # Hon. Anna Maria Frances Sandys, 1841-10-21 - 1876-05-27
+  gen:father <https://www.wikidata.org/wiki/Q6758436> ;
+  gen:mother <#Louisa_Blake> .
+  # oo 1868-08-25 Sir Herbert Hay Langham, 12th Baronet, 1840-04-28 - 1909-12-13, son of Herbert Langham (1804-06-12 - 1874-02-27, son of https://www.wikidata.org/wiki/Q26265486 and Elizabeth Burdett) and oo 1839-06-25 Laura Charlotte Micklethwait (1819 - 1861-09-03, daughter of Nathaniel Micklethwait (1784-01-25 - 1856-01-07) and oo 1810-12-27 Lady Charlotte Marianne Harriet Rous (d. 1830-04-29, daughter of John Rous, 1st Earl of Stradbroke (1750-05-30 – 1827-08-27, 6th Baronet Rous, of Henham Hall 1771-10-31, 1st Earl of Stradbroke, co. Suffolk, 1st Viscount Dunwich, co. Suffolk, 1st Baron Rous of Dennington, co. Suffolk 1821-07-18, https://www.wikidata.org/wiki/Q6255763, on of Sir John Rous, 5th Baronet (d. 1771-10-31, https://www.wikidata.org/wiki/Q26905880, son of Sir Robert Rous, 4th Baronet and Lydia Smith) and oo 1749-06-05 Judith Bedingfeld (d. 1794-09-10, daughter of John Bedingfeld)) and oo 1792-02-23 Charlotte Maria Whittaker (1769-03-17 - 1856-01-15, daughter of Abraham Whittaker and Penelope Tempest)))
+  # -> Sir Herbert Charles Arthur Langham, 13th Baronet, 1870-05-24 - 1951-10-03, https://www.wikidata.org/wiki/Q7526236
+  #  oo Ethel Sarah Emerson-Tennent, 1871-10-26 - 1951-11-19, daughter of Sir William Emerson-Tennent, 2nd Baronet (son of Sir James Emerson Tennent, 1st Baronet (1804-04-07 – 1869-03-06, https://www.wikidata.org/wiki/Q3161065, son of William Emerson and Sarah Arbuthnot) and oo Letitia Tennent (daughter of William Tennent)), "1893-06-01"
+<https://www.wikidata.org/wiki/Q57860563>
+  # Michael Edwin Marcus Sandys, 5th Lord Sandys, Baron of Ombersley, 1855-12-31 - 1948-08-04
+  gen:father <https://www.wikidata.org/wiki/Q6758436> ;
+  gen:mother <#Louisa_Blake> .
 <#Arthur_Blundell_George_Sandys_Hill>
   # Arthur Blundell George Sandys Hill, 1837-05-13 - 1923-06-16
   gen:father <https://www.wikidata.org/wiki/Q24153864> ;
@@ -71,7 +187,45 @@
   []
     gen:spouse <#Arthur_Blundell_George_Sandys_Hill> , <#Helen_Emily_Trench> ;
 	gen:startDate "1871-02-16" .
+<#Norah_Mary_Elizabeth_Hill>
+  # Norah Mary Elizabeth Hill, d. 1920-04-24
+  gen:father <https://www.wikidata.org/wiki/Q24153864> ;
+  gen:mother <#Cassandra_Jane_Knight> .
+  # oo 1859-04-26 Hon. Somerset Ward, 1833-03-09 - 1912-12-26, son of https://www.wikidata.org/wiki/Q33131401 (montgomerie.ttl) and Hon. Harriet Margaret Maxwell
 
+<#Lady_Alice_Maria_Hill>
+  # Lady Alice Maria Hill, 1842-11-07 - 1928-02-25
+  gen:father <https://www.wikidata.org/wiki/Q4799073> ;
+  gen:mother <paget.ttl#Caroline_Frances_Stapleton-Cotton> .
+  # oo 1867-10-09 Thomas Taylour, Earl of Bective, 1844-02-11 – 1893-12-15, https://www.wikidata.org/wiki/Q7794391, son of https://www.wikidata.org/wiki/Q7794388 and Amelia Thompson
+<https://www.wikidata.org/wiki/Q21548480>
+  # Arthur Wills Blundell Trumbull Sandys Roden Hill, 5th Marquess of Downshire, 1844-12-24 – 1874-03-31
+  gen:father <https://www.wikidata.org/wiki/Q4799073> ;
+  gen:mother <paget.ttl#Caroline_Frances_Stapleton-Cotton> .
+  # oo Georgiana Elizabeth Balfour, d. 1919-01-12, daughter of fraser.ttl#John_Balfour,_7th_of_Balbirnie and Lady Georgiana Isabel Campbell
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q21548480> , <fraser.ttl#Georgiana_Elizabeth_Balfour> ;
+	gen:startDate "1870-07-26" .
+<https://www.wikidata.org/wiki/Q6678928>
+  # Lord Arthur William Hill, 1846-07-28 – 1931-01-13
+  gen:father <https://www.wikidata.org/wiki/Q4799073> ;
+  gen:mother <paget.ttl#Caroline_Frances_Stapleton-Cotton> .
+  # oo Annie Nisida Denham Cookes, d. 1874-01-16, daughter of George Denham Cookes
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6678928> , <#Annie_Nisida_Denham_Cookes> ;
+	gen:startDate "1873-01-16" .
+  # oo Annie Harrison, d. 1944-02-12, daughter of https://www.wikidata.org/wiki/Q6134098
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6678928> , <https://www.wikidata.org/wiki/Q4769283> ;
+	gen:startDate "1877-03-14" .
+<https://www.wikidata.org/wiki/Q57862094>
+  # Arthur FitzGerald Sandys Hill, 6th Lord Sandys, Baron of Ombersley, 1876-12-04 - 1961-11-24
+  gen:father <#Arthur_Blundell_George_Sandys_Hill> ;
+  gen:mother <#Helen_Emily_Trench> .
+  # oo Cynthia Mary Trench-Gascoigne, 1898-02-06 - 1990
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q57862094> , <#Cynthia_Mary_Trench-Gascoigne> ;
+	gen:startDate "1924-04-10" .
 <#George_Chenevix_Hill>
   # Hon. George Chenevix Hill, 1887-05-04 - 1963-10-12
   gen:father <#Arthur_Blundell_George_Sandys_Hill> ;
@@ -86,6 +240,304 @@
   gen:mother <#Helen_Emily_Trench> .
   # oo 1911-04-22 Hon. Sackville Philip Tufton, 1875-05-05 - 1936-01-24, tufton.ttl#Sackville_Philip_Tufton
 
+<https://www.wikidata.org/wiki/Q21548483>
+  # Arthur Wills John Wellington Trumbull Blundell Hill, 6th Marquess of Downshire, 1871-07-02 – 1918-05-29
+  gen:father <https://www.wikidata.org/wiki/Q21548480> ;
+  gen:mother <fraser.ttl#Georgiana_Elizabeth_Balfour> .
+  # oo Katherine Mary Hare, 1872-10-01 - 1959-02-02, daughter of Hon. Hugh Henry Hare (1839-04-01 - 1927-01-25, son of William Hare, 2nd Earl of Listowel (1801-09-22 – 1856-02-04, https://www.wikidata.org/wiki/Q8010869, son of Richard Hare, Viscount Ennismore (1773-03-10 - 1827-09-24, son of William Hare, 1st Earl of Listowel (1751-09 – 1837-07-13, 1st Baron Ennismore, co. Kerry 1800-07-21, 1st Viscount Ennismore and Listowel 1816-01-15, 1st Earl of Listowel 1822-02-05, https://www.wikidata.org/wiki/Q8010868, son of Richard Hare and oo Catherine Maylor (daughter of Samuel Maylor)) and oo 1772-05-30 Mary Wrixon (d. 1810, daughter of Henry Wrixon)) and oo 1797-06-10 Hon. Catherine Bridget Dillon (d. 1828-10-13, daughter of Robert Dillon, 1st Baron Clonbrock (1754-02-27 – 1795-07-22, 1st Baron Clonbrock, of Clonbrock, co. Galway 1790-06-05, https://www.wikidata.org/wiki/Q7343550, son of Luke Dillon and Bridget Kelly) and oo 1776-01-30 Letitia Greene (1761 - 1841-05-28, daughter of John Greene and Catherine Toler))) and oo 1831-07-23 Maria Augusta Windham (1805 - 1871-10-31, daughter of William Windham (William Lukin, 1768-09-20 – 1833-01-12, https://www.wikidata.org/wiki/Q8014784 (see anderson.ttl), son of Very Rev. George William Lukin (1739-09-25 - 1812-11-27, Dean of Wells 1799, https://www.wikidata.org/wiki/Q5541874) and oo Susan Katherine Doughty (1748 - 1814)))) and oo 1860-06-18 Georgiana Caroline Browne (d. 1920-01-12, daughter of Birnie Browne)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q21548483> , <#Katherine_Mary_Hare> ;
+	gen:startDate "1893-06-22" ;
+	gen:divorceDate "1902" .
+  # oo Evelyn Grace Mary Foster, d. 1942-12-30, daughter of Edmund Benson Foster
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q21548483> , <#Evelyn_Grace_Mary_Foster> ;
+	gen:startDate "1907-05-16" .
+<https://www.wikidata.org/wiki/Q4799074>
+  # Arthur Hill, 1873-12-30 – 1913-06-27
+  gen:father <https://www.wikidata.org/wiki/Q6678928> ;
+  gen:mother <#Annie_Nisida_Denham_Cookes> .
+  # oo Roberta Menges
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4799074> , <#Roberta_Menges> ;
+	gen:startDate "1908" .
+<https://www.wikidata.org/wiki/Q7326454>
+  # Richard Michael Oliver Hill, 7th Lord Sandys, Baron of Ombersley, 1931-07-21 – 2013-02-11
+  gen:father <https://www.wikidata.org/wiki/Q57862094> ;
+  gen:mother <#Cynthia_Mary_Trench-Gascoigne> .
+  # oo Patricia Simpson Hall, 1926~ - 2015-05-04, daughter of Lionel Hall
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7326454> , <#Patricia_Simpson_Hall> ;
+	gen:startDate "1961-09-16" .
+
+<https://www.wikidata.org/wiki/Q21548486>
+  # Arthur Wills Percy Wellington Blundell Trumbull Hill, 7th Marquess of Downshire, 1894-04-07 – 1989-03-28
+  gen:father <https://www.wikidata.org/wiki/Q21548483> ;
+  gen:mother <#Katherine_Mary_Hare> .
+  # oo Noreen Barraclough, daughter of William Barraclough
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q21548486> , <#Noreen_Barraclough> ;
+	gen:startDate "1953-07-23" .
+<#Lord_Arthur_Francis_Henry_Hill>
+  # Lord Arthur Francis Henry Hill, 1895-08-28 - 1953-12-25
+  gen:father <https://www.wikidata.org/wiki/Q21548483> ;
+  gen:mother <#Katherine_Mary_Hare> .
+  # oo Ishabel Wilhelmina Sheila MacDougall, d. 1961-03-26, daughter of Lt.-Col. Stewart MacDougall
+  []
+    gen:spouse <#Lord_Arthur_Francis_Henry_Hill> , <#Ishabel_Wilhelmina_Sheila_MacDougall> ;
+	gen:startDate "1927-10-15" .
+<#Lady_Kathleen_Nina_Hill>
+  # Lady Kathleen Nina Hill, 1898-09-15 - 1960-11-30
+  gen:father <https://www.wikidata.org/wiki/Q21548483> ;
+  gen:mother <#Katherine_Mary_Hare> .
+  # oo 1917-02-14 (div 1946) Hon. William Hereward Charles Rollo, 1890-06-23 - 1962-10-03, son of Hon. Eric Norman Rollo (1861-02-17 - 1930-04-12, son of John Rogerson Rollo, 10th Lord Rollo of Duncrub (1835-10-24 - 1916-10-03, https://www.wikidata.org/wiki/Q26722342, son of William Rollo, 9th Lord Rollo of Duncrub (1809-05-28 - 1852-10-08, https://www.wikidata.org/wiki/Q66364870 son of https://www.wikidata.org/wiki/Q66364858 and Agnes Greig) and oo 1834-10-21 Elizabeth Rogerson (d. 1836-06-10, daughter of John Rogerson)) and oo 1857-10-15 Agnes Bruce Trotter (d. 1906-05-02,  daughter of Robert Knox Trotter (d. 11 July 1876) and oo 1833-03-27 Hon. Mary Rollo (d. 1886-10-09, daughter of https://www.wikidata.org/wiki/Q66364858 and Agnes Greig))) and oo 1888-04-30 Constance Maud Hohler (d. 1939-12-18, daughter of Henry Booth Hohler)
+  # oo 1949-12-12 Daniel Vincent Hanson Asquith, 1905-01-10 - 1974, son of Bentley Asquith
+
+<https://www.wikidata.org/wiki/Q16015807>
+  # Arthur Robin Ian Hill, 8th Marquess of Downshire, 1929-05-10 – 2003-12-18
+  gen:father <#Lord_Arthur_Francis_Henry_Hill> ;
+  gen:mother <#Ishabel_Wilhelmina_Sheila_MacDougall> .
+  # oo Hon. Juliet Mary Weld Forester, 1934-08-01 - 1986-04-28, daughter of Cecil George Wilfred Weld Forester, 7th Baron Forester of Willey Park (1899-07-12 - 1977-01-04, https://www.wikidata.org/wiki/Q26720045, son of George Cecil Beaumont Weld Forester, 6th Baron Forester of Willey Park (1867-09-09 - 1932-10-10, https://www.wikidata.org/wiki/Q26720042, son of https://www.wikidata.org/wiki/Q5056352 (home.ttl) and Emma Georgina Dixie) and oo 1896-02-08 Christine Isabel Davidson (1876~ - 1948-04-01, daughter of Duncan Henry Caithness Reay Davidson of Tulloch (1836-06-30 - 1889-03-29, son of https://www.wikidata.org/wiki/Q5314327 (chetwynd.ttl) and Hon. Elizabeth Diana Bosville Macdonald) and Georgina Elizabeth Mackenzie)) and oo 1931-06-02 Marie Louise Priscilla Perrott (1909 - 1988, daughter of Sir Herbert Charles Perrott, 6th Baronet (1849-10-26 - 1922-02-15, son of Sir Edward George Lambert Perrott (1811-05-10 - 1886-06-04, son of Sir Edward Bindloss Perrott and Louisa Augusta Bayly) and oo Emma Maria Evelyn Houghton (1825~ - 1878)) and oo 1901-12-10 Ethel Lucy Hare (1876 - 1939, daughter of Marcus Augustus Stanley Hare (1836-06-25 - 1878-03-24) and oo 1873-06-17 Matilda Jane Tollemache (1840 - 1918-03-14, daughter of manners.ttl#William_Tollemache and Lady Anna Maria Jane St. Maur)))
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16015807> , <home.ttl#Juliet_Mary_Weld_Forester> ;
+	gen:startDate "1957-10-05" .
+  # oo Diana Marion Cross, d. 1998-08-01, daughter of Rt. Hon. Sir Ronald Hibbert Cross, 1st Baronet (1896-05-09 – 1968-06-03, 1st Baronet Cross, of Bolton-le-Moors, Lancaster 1941-08-15, https://www.wikidata.org/wiki/Q2165584, son of James Carlton Cross and Marian Gertrude Hibbert.) and oo 1925-01-07 Louise Marion Green-Emmott (daughter of Walter Egerton John Green-Emmott and Kathleen Louise Vereker)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16015807> , <#Diana_Marion_Cross> ;
+	gen:startDate "1989-09-18" .
+  # oo Tessa Helen Murray Prain, b. 1940-01-28, daughter of John Murray Prain and Lorina Helen Elspeth Skene
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16015807> , <#Tessa_Helen_Murray_Prain> ;
+	gen:startDate "2002" .
+<#Venice_Marigold_Hill>
+  # Venice Marigold Hill, 1930-07-31 - 2016-08-10
+  gen:father <#Lord_Arthur_Francis_Henry_Hill> ;
+  gen:mother <#Ishabel_Wilhelmina_Sheila_MacDougall> .
+  # oo 1954-09-04 Robert Hugh Molesworth Kindersley, 3rd Baron Kindersley, 1929-08-18 – 2013-10-09, https://www.wikidata.org/wiki/Q4170587, son of Hugh Kenyon Molesworth Kindersley, 2nd Baron Kindersley (1899-05-07 – 1976-10-06, https://www.wikidata.org/wiki/Q5931398, son of https://www.wikidata.org/wiki/Q7346352 (hastings.ttl) and Gladys Margaret Beadle) and oo 1921-10-12 Nancy Farnsworth Boyd (d. 1977-10-05, daughter of Dr. Geoffrey Boyd)
+
+<https://www.wikidata.org/wiki/Q16193085>
+  # Arthur Francis Nicholas Wills Hill, 9th Marquess of Downshire, b. 1959-02-04
+  # 9th Viscount Fairford, co. Gloucester, 9th Lord Harwich, Baron of Harwich, co. Essex, 9th Marquess of Downshire, 9th Earl of Hillsborough, 9th Earl of Hillsborough, co. Down, 10th Viscount Hillsborough, co. Down, 10th Baron Hill of Kilwarlin, co. Down, 9th Viscount Kilwarlin, co. Down 2003-12-18
+  # 8th Lord Sandys, Baron of Ombersley, co. Worcester 2013-02-11
+  gen:father <https://www.wikidata.org/wiki/Q16015807> ;
+  gen:mother <home.ttl#Juliet_Mary_Weld_Forester> .
+  # oo Diana Jane Bunting, b. 1962-09-12, daughter of Gerald Leeson Bunting and Diana Middleton
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16193085> , <#Diana_Jane_Bunting> ;
+	gen:startDate "1990-04-28" .
+<#Lord_Anthony_Ian_Hill>
+  # Lord Anthony Ian Hill, b. 1961-10-20
+  gen:father <https://www.wikidata.org/wiki/Q16015807> ;
+  gen:mother <home.ttl#Juliet_Mary_Weld_Forester> .
+  # oo Annabel Priscilla Angela Nall-Cain, b. 1965-12-07, daughter of Hon. David Lawrence Robert Nall-Cain (1930-09-01 - 2004-12-04, son of Arthur Ronald Nall Nall-Cain, 2nd Baron Brocket (1904-08-04 – 1967-03-24, https://www.wikidata.org/wiki/Q7365140, son of Charles Alexander Nall-Cain, 1st Baron Brocket (1866-05-29 – 1934-11-21, 1st Baronet Nall-Cain, of Brocket Hall, co. Hertford 1921-07-01, 1st Baron Brocket, of Brocket Hall, co. Hertford 1933-01-19, https://www.wikidata.org/wiki/Q5081205, son of https://www.wikidata.org/wiki/Q7342684 and Anne Newall) and oo 1888-09-13 Florence Nall (d. 1927-10-21, daughter of William Nall and Ann Peet)) and oo 1927-11-01 Angela Beatrix Pennyman (1906-01-09 - 1975, daughter of Rev. William Geoffrey Pennyman and Beatrix Jane Frances Walker)) and 1958-06-16 Hon. Katherine Elizabeth Palmer (1938-07-24 - 2005-01-20, daughter of William Matthew Palmer, Viscount Wolmer (1912-05-27 - 1942-10-02, son of Roundell Cecil Palmer, 3rd Earl of Selborne (1887-04-15 – 1971-09-03, https://www.wikidata.org/wiki/Q3443398 (howard.ttl), son of https://www.wikidata.org/wiki/Q3643409 (cecil.ttl) and https://www.wikidata.org/wiki/Q19887415) and oo 1910-06-09 Hon. Grace Ridley (1889 - 1959-09-22, daughter of Matthew White Ridley, 1st Viscount Ridley (1842-07-25 – 1904-11-28, 5th Baronet White 1877-09-25, 1st Viscount Ridley 1900-12-19, 1st Baron Wensleydale, of Blagdon and Blyth, co. Northumberland 1900-12-19, https://www.wikidata.org/wiki/Q337696 (gordon.ttl, villiers.ttl), son of https://www.wikidata.org/wiki/Q11802686 (see gordon.ttl) and Cecilia Anne Parke) and oo 1873-12-10 Hon. Mary Georgiana Marjoribanks (1850 - 1909-03-14, daughter of https://www.wikidata.org/wiki/Q337059 (gordon.ttl) and Isabella Hogg))) and oo 1936--07-16 Priscilla Egerton-Warburton (1915-11-05 - 2010-02-05, daughter of John Egerton-Warburton (1883-12-13 - 1915-08-30, son of https://www.wikidata.org/wiki/Q7192594 (egerton.ttl) and Hon. Antoinette Elizabeth Saumarez) and oo 1908-06-11 Hon. Lettice Legh (1885-11-07 - 1968-04-30, daughter of Thomas Wodehouse Legh, 2nd Baron Newton (1857-03-18 – 1942-03-21, https://www.wikidata.org/wiki/Q17326575, son of William John Legh, 1st Baron Newton (1828-12-19 – 1898-12-15, 1st Baron Legh, of Newton-in-Makerfield, co. Lancaster 1892-08-27, https://www.wikidata.org/wiki/Q8014460, son of William Legh and Mary Wilkinson) and oo 1856-05-29 Emily Jane Wodehouse (1826-05-07 - 1901-04-17, daughter of Venerable Charles Nourse Wodehouse (1790-09-08 - 1870-03) and oo boyd.ttl#Lady_Dulcibella_Jane_Hay)) and oo 1880-07-24 Evelyn Caroline Bromley Davenport (1859-09-13 - 1931-09-13, daughter of William Bromley Davenport (1821-08-20 - 1884-06-15) and oo 1858-07-06 Augusta Elizabeth Campbell (d. 1916, daughter of https://www.wikidata.org/wiki/Q7964877 (campbell.ttl) and Catherine Cole)))))
+  []
+    gen:spouse <#Lord_Anthony_Ian_Hill> , <#Annabel_Priscilla_Angela_Nall-Cain> ;
+	gen:startDate "1992" .
+
+<#Lady_Isabella_Diana_Juliet_Hill>
+  # Lady Isabella Diana Juliet Hill, b. 1991-04-03
+  gen:father <https://www.wikidata.org/wiki/Q16193085> ;
+  gen:mother <#Diana_Jane_Bunting> .
+<#Lady_Beatrice_Hannah_Georgina_Hill>
+  # Lady Beatrice Hannah Georgina Hill, b. 1994-02-10
+  gen:father <https://www.wikidata.org/wiki/Q16193085> ;
+  gen:mother <#Diana_Jane_Bunting> .
+<#Edmund_Robin_Arthur_Hill,_Earl_of_Hillsborough>
+  # Edmund Robin Arthur Hill, Earl of Hillsborough, b. 1996-05-21
+  gen:father <https://www.wikidata.org/wiki/Q16193085> ;
+  gen:mother <#Diana_Jane_Bunting> .
+<#Lady_Claudia_Lucy_Helena_Hill>
+  # Lady Claudia Lucy Helena Hill, b. 1998-03-15
+  gen:father <https://www.wikidata.org/wiki/Q16193085> ;
+  gen:mother <#Diana_Jane_Bunting> .
+
+
+
+# Baron Trevor of Brynkinalt
+<https://www.wikidata.org/wiki/Q5346516>
+  # Arthur Edwin Hill-Trevor, 1st Baron Trevor of Brynkinalt, 1819-11-04 – 1894-12-25
+  # 1st Baron Trevor of Brynkinalt, co. Denbigh 1880-05-05
+  gen:father <https://www.wikidata.org/wiki/Q4799070> ;
+  gen:mother <herbert.ttl#Lady_Maria_Windsor> .
+  # oo Mary Emily Sutton, d. 1855-01-24, daughter of Sir Richard Sutton, 2nd Baronet (1799-12-16 - 1855-11-13, https://www.wikidata.org/wiki/Q18880201, son of John Sutton (1770 - 1801-09-15, son of https://www.wikidata.org/wiki/Q7528664 (manners.ttl) and Ann Williams) and oo Sophia Frances Chaplin (d. 1844-02-09, daughter of Charles Chaplin)) and oo 1819-12-19 Mary Elizabeth Burton (1797-11-02 - 1842-01-01, daughter of Benjamin Burton and Anne Mainwaring)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5346516> , <#Mary_Emily_Sutton> ;
+	gen:startDate "1848-06-27" .
+  # oo Hon. Mary Catherine Curzon, d. 1911-08-20, daughter of Rev. Hon. Alfred Curzon (1801-04-17 - 1850-01-12, son of https://www.wikidata.org/wiki/Q6969565 (shirley.ttl) and oo 1798-11-18 Felicite Anne Josephe de Wattines (d. 1850-12-16, daughter of François Josèphe de Wattines)) and oo 1825-07-14 Sophia Holden (1803 - 1890-02-09, daughter of Robert Holden and Mary Anne Drury-Lowe)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5346516> , <shirley.ttl#Mary_Catherine_Curzon> ;
+	gen:startDate "1858-04-15" .
+
+<#Arthur_William_Hill-Trevor,_2nd_Baron_Trevor>
+  # Arthur William Hill-Trevor, 2nd Baron Trevor of Brynkinalt, 1852-11-19 - 1923-05-19
+  gen:father <https://www.wikidata.org/wiki/Q5346516> ;
+  gen:mother <#Mary_Emily_Sutton> .
+  # oo Hon. Annie Mary Eleanor Fraser, 1857-02-08 - 1895-05-10, daughter of fraser.ttl#Alexander_Fraser,_18th_Lord_Saltoun and Charlotte Evans
+  []
+    gen:spouse <#Arthur_William_Hill-Trevor,_2nd_Baron_Trevor> , <fraser.ttl#Annie_Mary_Eleanor_Fraser> ;
+	gen:startDate "1893-08-30" .
+  # oo Rosamond Catharine Petre, 1857-08-25 - 1942-02-05, daughter of Hon. Edmund George Petre (1829-06-23 - 1889-09-01, son of William Henry Francis Petre, 11th Baron Petre (1793-01-22 – 1850-07-03, https://www.wikidata.org/wiki/Q8016830, son of https://www.wikidata.org/wiki/Q7348863 (howard.ttl) and Mary Bridget Howard) and oo 1823-04-14 Emma Agnes Howard (1803-11-05 - 1861-02-10, daughter of howard.ttl#Henry_Howard_(died_1842) and Catherine Mary Neave)) and oo 1851-06-03 Mary Anne Jane Kerr (d. 1895-08-04, daughter of Loraine M. Kerr)
+  []
+    gen:spouse <#Arthur_William_Hill-Trevor,_2nd_Baron_Trevor> , <howard.ttl#Rosamond_Catharine_Petre> ;
+	gen:startDate "1897-12-07" .
+<#Charles_Edward_Hill-Trevor,_3rd_Baron_Trevor>
+  # Charles Edward Hill-Trevor, 3rd Baron Trevor of Brynkinalt, 1863-12-22 - 1950-12-22
+  gen:father <https://www.wikidata.org/wiki/Q5346516> ;
+  gen:mother <shirley.ttl#Mary_Catherine_Curzon> .
+  # oo Phyllis May Sims, d. 1990, daughter of James Arthur Sims
+  []
+    gen:spouse <#Charles_Edward_Hill-Trevor,_3rd_Baron_Trevor> , <#Phyllis_May_Sims> ;
+	gen:startDate "1927-07-27" .
+
+<https://www.wikidata.org/wiki/Q26399532>
+  # Charles Edwin Hill-Trevor, 4th Baron Trevor of Brynkinalt, 1928-08-13 - 1997-01-01
+  gen:father <#Charles_Edward_Hill-Trevor,_3rd_Baron_Trevor> ;
+  gen:mother <#Phyllis_May_Sims> .
+  # oo Susan Janet Elizabeth Bence, daughter of Ronald Ivor Bence
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q26399532> , <#Susan_Janet_Elizabeth_Bence> ;
+	gen:startDate "1967-01-04" .
+
+<https://www.wikidata.org/wiki/Q26250682>
+  # Marke Charles Hill-Trevor, 5th Baron Trevor of Brynkinalt, b. 1970-01-08
+  gen:father <https://www.wikidata.org/wiki/Q26399532> ;
+  gen:mother <#Susan_Janet_Elizabeth_Bence> .
+
+
+
+
+# Viscount of Dungannon
+# wellesley.ttl
+<https://www.wikidata.org/wiki/Q4799071>
+  # Arthur Hill-Trevor, 1st Viscount of Dungannon, 1694~ – 1771-01-30
+  # 1st Viscount of Dungannon, 1st Baron Hill of Olderfleet, of Belvior, co. Down and Brynkinalt 1766-02-17
+  gen:father <https://www.wikidata.org/wiki/Q6831136> ;
+  gen:mother <#Anne_Trevor> .
+  # oo Anne Stafford, b. 1715-12-22, daughter of Edmund Francis Stafford and Penelope Leslie
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4799071> , <#Anne_Stafford> ;
+	gen:startDate "1737-01-12" .
+
+# wellesley.ttl
+<#Arthur_Hill_Trevor>
+  # Arthur Hill Trevor, 1738-12-24 - 1770-06-19
+  gen:father <https://www.wikidata.org/wiki/Q4799071> ;
+  gen:mother <#Anne_Stafford> .
+  # oo Hon. Letitia Morres, d. 1801-12-07
+  []
+    gen:spouse <#Arthur_Hill_Trevor> , <ponsonby.ttl#Letitia_Morres> ;
+	gen:startDate "1762-02-27" .
+# wellesley.ttl
+<https://www.wikidata.org/wiki/Q66349619>
+#<#Anne_Hill>
+  # Hon. Anne Hill, 1742-06-23 - 1831-09-10
+  gen:father <https://www.wikidata.org/wiki/Q4799071> ;
+  gen:mother <#Anne_Stafford> .
+  # oo 1759-02-06 Garret Wesley, 1st Earl of Mornington, 1735-07-19 - 1781-05-22, https://www.wikidata.org/wiki/Q3758414
+<#Prudence_Penelope_Hill-Trevor>
+  # Hon. Prudence Penelope Hill-Trevor, b. 1745-03-17
+  gen:father <https://www.wikidata.org/wiki/Q4799071> ;
+  gen:mother <#Anne_Stafford> .
+  # oo 1765-05-22 Charles Powell Leslie, 1732 - 1800-08, son of Robert Leslie and Frances Ludlow
+
+# wellesley.ttl
+<#Arthur_Hill-Trevor,_2nd_Viscount_of_Dungannon>
+  # Arthur Hill-Trevor, 2nd Viscount of Dungannon, 1763-10-03 - 1837-12-14
+  gen:father <#Arthur_Hill_Trevor> ;
+  gen:mother <ponsonby.ttl#Letitia_Morres> .
+  # oo Hon. Charlotte Fitzroy, 1767-07-03 - 1828-11-22
+  []
+    gen:spouse <#Arthur_Hill-Trevor,_2nd_Viscount_of_Dungannon> , <fitzroy.ttl#Charlotte_Fitzroy> ;
+	gen:startDate "1795-07-30" .
+
+<https://www.wikidata.org/wiki/Q16066023>
+  # Arthur Hill-Trevor, 3rd Viscount of Dungannon, 1798-11-09 - 1862-08-11
+  gen:father <#Arthur_Hill-Trevor,_2nd_Viscount_of_Dungannon> ;
+  gen:mother <fitzroy.ttl#Charlotte_Fitzroy> .
+  # oo Sophia Irvine, 1799 - 1880-03-21, sister of (Harriet) Letitia D'Arcy Irvine (1805 - 1884-04-05, https://www.wikidata.org/wiki/Q21589497) and daughter of Gorges Marcus Irvine (1760-11-26 - 1847-11-28, son of William Irvine (d. 1814-05) and oo Sophia Lowther (daughter of Gorges Lowther (son of Gorges Lowther (d. 1716-06-11) and oo 1711-03-30~ Jane Beresford (d. 1764-10-20, daughter of Sir Tristram Beresford, 3rd Baronet and Hon. Nichola Sophia Hamilton)) and oo Judith Ussher (daughter of John Ussher (1682~ - 1741) and oo 1714-12-20 Hon. Mary St. George (1693-05-10 - 1741-05, daughter of George St. George, 1st Baron Saint George of Hatley Saint George (1658~ – 1735-08-04, 2nd Baronet St. George, of Carrickdrumrusk, co. Leitrim 1695-10, 1st Baron Saint George of Hatley Saint George, in the counties of Roscommon and Leitrim 1715-04-18, https://www.wikidata.org/wiki/Q5544759, son of Sir Oliver St. George, 1st Baronet (d. 1695-10, 1st Baronet St. George, of Carrickdrumrusk, co. Leitrim 1660-09-05, https://www.wikidata.org/wiki/Q7528403, son of Sir George St. George and Katherine Gifford) and oo 1651b Olivia Beresford (daughter of Michael Beresford)) and oo 1681-11-29 Hon. Margaret Skeffington (d. 1711, daughter of John Skeffington, 2nd Viscount Massereene (1632 - 1695-06-21, 4th Baronet Skeffington, of Fisherwicke, co. Staffs 1652-04-04~, 2nd Viscount Massereene, co. Antrim, 2nd Baron of Loughneagh, co. Antrim 1665-09-23, https://www.wikidata.org/wiki/Q18673977, son of Sir Richard Skeffington and Anne Newdigate) and oo 1654-07-20 Hon. Mary Clotworthy (d. 1686-09-20, daughter of John Clotworthy, 1st Viscount Massereene (d. 1665-09-23, 1st Viscount Massereene, of co. Antrim, 1st Baron of Loughneagh, co. Antrim 1660-11-21, https://www.wikidata.org/wiki/Q6226405, son of Sir Hugh Clotworthy and Mary Langford) and oo 1643b Lady Margaret Jones (d. 1683-08-18a, https://www.wikidata.org/wiki/Q30333609, daughter of Roger Jones, 1st Viscount Ranelagh (1589b - 1643, 1st Baron Jones of Navan, co. Neath, 1st Viscount Ranelagh 1628-08-25, https://www.wikidata.org/wiki/Q7358417, son of Most Rev. Thomas Jones (1550~ – 1619-04-10, Bishop of Meath 1584-05-10 - 1605, Archbishop of Dublin 1605-10-08, https://www.wikidata.org/wiki/Q7791372, son of Henry Jones and ??? Daniel) and oo Margaret Purdon (d. 1618-12-05, daughter of Adam Purdon)) and oo Frances Moore (d. 1620-11-13, daughter of Garret Moore, 1st Viscount Moore of Drogheda (1564~ - 1627-11-09, 1st Baron Moore of Mellefont, co. Louth 1616-07-20, 1st Viscount Moore of Drogheda 1622-02-07, https://www.wikidata.org/wiki/Q18671234 (wellesley.ttl), son of Sir Edward Moore and Elizabeth Clifford))))))))) and oo 1788-03-31 Elizabeth D'Arcy (d. 1829, daughter of Judge D'Arcy and Elizabeth Nugent)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16066023> , <#Sophia_Irvine> ;
+	gen:startDate "1821-09-10" .
+
+
+
+# ----
+<boyle.ttl#Eleanor_Boyle>
+  # Eleanor Boyle
+  gen:father <https://www.wikidata.org/wiki/Q6828776> .
+  # and Hon. Mary O'Brien
+  # oo Rt. Hon. William Hill, of Hillsborough, d. 1692-07-07a/1693-11-20b, hill.ttl#William_Hill
+
+# ----
+#<https://www.wikidata.org/wiki/Q16511791>
+  # Sir Edward Trevor, 1580 - 1642
+  # oo Rose Ussher
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16511791> , <#Rose_Ussher> ;
+	gen:startDate "1612" .
+  # oo Anne Balle, daughter of Nicholas Balle
+
+<https://www.wikidata.org/wiki/Q6758494>
+  # Mark Trevor, 1st Viscount Dungannon, d. 1670~
+  # 1st Viscount Dungannon 1661
+  gen:father <https://www.wikidata.org/wiki/Q16511791> ;
+  gen:mother <#Rose_Ussher> .
+<#John_Trevor>
+  # John Trevor
+  gen:father <https://www.wikidata.org/wiki/Q16511791> .
+  # and Anne Balle
+  # oo Margaret Jeffreys, daughter of John Jeffreys
+
+<#Mary_Trevor>
+  # Hon. Mary Trevor, d. 1711-07-09
+  gen:father <https://www.wikidata.org/wiki/Q6758494> .
+  # oo Rt. Hon. William Hill, of Hillsborough, d. 1692-07-07a/1693-11-20b, #William_Hill
+<https://www.wikidata.org/wiki/Q6215184>
+  # Sir John Trevor, d. 1717-05-20
+  gen:father <#John_Trevor> .
+  # and Margaret Jeffreys
+  # oo Jane Mostyn
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6215184> , <#Jane_Mostyn> .
+
+<#Anne_Trevor>
+  # Anne Trevor, d. 1747-01-05
+  gen:father <https://www.wikidata.org/wiki/Q6215184> ;
+  gen:mother <#Jane_Mostyn> .
+  # oo 1690 Rt. Hon. Michael Hill, 1672~ - 1699, https://www.wikidata.org/wiki/Q6831136
+  # oo 1716-12-01 Alan Brodrick, 1st Viscount Midleton of Midleton, 1656~ – 1728-08-29, https://www.wikidata.org/wiki/Q4706248 (pelham.ttl), son of https://www.wikidata.org/wiki/Q7593649 and Alice Clayton
+# ----
+<#Rose_Ussher>
+  # Rose Ussher
+  gen:father <https://www.wikidata.org/wiki/Q5729406> .
+  # and Margery Eliot
+  # oo 1612 Sir Edward Trevor, 1580 - 1642, https://www.wikidata.org/wiki/Q16511791
+# ----
+#<https://www.wikidata.org/wiki/Q18734615>
+  # Sir Roger Mostyn, 1st Baronet, 1620~ - 1690-10-04
+  # 1st Baronet Mostyn, of Mostyn, co. Flint 1660-08-03
+  # son of Sir Thomas Mostyn
+  # and Elizabeth Whitlock
+  # oo 1642 Prudence Lumley
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q18734615> , <#Prudence_Lumley> ;
+	gen:startDate "" .
+
+<#Jane_Mostyn>
+  # Jane Mostyn
+  gen:father <https://www.wikidata.org/wiki/Q18734615> ;
+  gen:mother <#Prudence_Lumley> .
+  # oo Sir John Trevor, d. 1717-05-20, https://www.wikidata.org/wiki/Q6215184
+# ----
+<https://www.wikidata.org/wiki/Q7528302>
+  # Sir Martin Lumley, 1st Baronet, 1596~ – 1651~
+  # 1st Baronet Lumley, of Great Bradfield, Essex 1641-01-08
+  gen:father <https://www.wikidata.org/wiki/Q6776035> .
+
+<#Prudence_Lumley>
+  # Prudence Lumley
+  gen:father <https://www.wikidata.org/wiki/Q7528302> .
+  # oo 1642 Sir Roger Mostyn, 1st Baronet, 1620~ - 1690-10-04, https://www.wikidata.org/wiki/Q18734615
 
 # ----
 #<#Edwin_Sandys>
@@ -120,16 +572,20 @@
   gen:mother <#Mary_Trumbull> .
   # oo 1786-06-29 Arthur Hill, 2nd Marquess of Downshire, 1753-03-03 - 1801-09-07, https://www.wikidata.org/wiki/Q4799069
 # ----
-#<#Sir_William_Trumbull>
-  # Sir William Trumbull, 1639 - 1716-12-14
+#<https://www.wikidata.org/wiki/Q8019541>
+  # Sir William Trumbull, 1639-09-08 - 1716-12-14
+  # oo Elisabeth/Katherine Cotterell, 1652 - 1704
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8019541> , <#Katherine_Cotterell> ;
+	gen:startDate "1670" .
   # oo Hon. Judith Alexander, d. 1724
   []
-    gen:spouse <#Sir_William_Trumbull> , <#Judith_Alexander> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q8019541> , <#Judith_Alexander> ;
 	gen:startDate "1706-10" .
 
 <#William_Trumbull>
   # William Trumbull
-  gen:father <#Sir_William_Trumbull> ;
+  gen:father <https://www.wikidata.org/wiki/Q8019541> ;
   gen:mother <#Judith_Alexander> .
   # oo Hon. Mary Blundell
   []
@@ -142,6 +598,19 @@
   gen:mother <bertie.ttl#Mary_Blundell> .
   # oo 1760 Hon. Martin Sandys, 1729-11-24b - 1768-12-26, #Martin_Sandys
 # ----
+#<https://www.wikidata.org/wiki/Q16828151>
+  # Sir Charles Cotterell, 1615-04-07 – 1701-06-07
+  # oo Frances West, 1614 – 1657~, daughter of Edward West
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16828151> , <#Frances_West> ;
+	gen:startDate "1642" .
+
+<#Katherine_Cotterell>
+  # Elisabeth/Katherine Cotterell, 1652 - 1704
+  gen:father <https://www.wikidata.org/wiki/Q16828151> ;
+  gen:mother <#Frances_West> .
+  # oo 1670 Sir William Trumbull, 1639 - 1716-12-14, https://www.wikidata.org/wiki/Q8019541
+# ----
 #<https://www.wikidata.org/wiki/Q61782020>
   # Henry Alexander, 4th Earl of Stirling, 1633 - 1690
   # oo Judith Lee
@@ -150,14 +619,19 @@
   # Hon. Judith Alexander, d. 1724
   gen:father <https://www.wikidata.org/wiki/Q61782020> .
   # and Judith Lee
-  # oo 1706-10 Sir William Trumbull, 1639 - 1716-12-14, #Sir_William_Trumbull
+  # oo 1706-10 Sir William Trumbull, 1639 - 1716-12-14, https://www.wikidata.org/wiki/Q8019541
 
 # ----
+<#Louisa_Knight>
+  # Louisa Knight, 1804 - 1889-07-29
+  gen:father <https://www.wikidata.org/wiki/Q5341645> .
+  # and Elizabeth Bridges
+  # oo 1847-05-11 Lord George Augusta Hill, 1801-12-09 - 1879-04-06, https://www.wikidata.org/wiki/Q24153864
 <#Cassandra_Jane_Knight>
- # Cassandra Jane Knight, 1806-11-16 - 1842-03-14
- gen:father <https://www.wikidata.org/wiki/Q5341645> .
- # and Elizabeth Bridges
- # oo 1834-10-21 Lord George Augusta Hill, 1801-12-09 - 1879-04-06, https://www.wikidata.org/wiki/Q24153864
+  # Cassandra Jane Knight, 1806-11-16 - 1842-03-14
+  gen:father <https://www.wikidata.org/wiki/Q5341645> .
+  # and Elizabeth Bridges
+  # oo 1834-10-21 Lord George Augusta Hill, 1801-12-09 - 1879-04-06, https://www.wikidata.org/wiki/Q24153864
 
 # ----
 #<#Frederick_Trench>
@@ -177,6 +651,14 @@
   []
     gen:spouse <#Francis_Trench> , <#Mary_Mason> ;
 	gen:startDate "1802-06-11" .
+<#Charles_Trench>
+  # Charles Trench, 1772 - 1840-04-06
+  gen:father <#Frederick_Trench> ;
+  gen:mother <#Mary_Sadleir> .
+  # oo Anna Maria White, d. 1847-12-19, daughter of Luke White and Elizabeth de la Mazière
+  []
+    gen:spouse <#Charles_Trench> , <#Anna_Maria_White> ;
+	gen:startDate "1807-11-27" .
 <#Richard_Trench>
   # Richard Trench, 1774 - 1860-04-16
   gen:father <#Frederick_Trench> ;
@@ -191,6 +673,14 @@
   gen:father <#Francis_Trench> ;
   gen:mother <#Mary_Mason> .
   # oo 1832-06-01 Most Rev. and Rt. Hon. Richard Chenevix Trench, 1807-09-09 - 1886-03-27, https://www.wikidata.org/wiki/Q11703211
+<#Frederick_Charles_Trench-Gascoigne>
+  # Frederick Charles Trench-Gascoigne, 1814-05 - 1905-06-12
+  gen:father <#Charles_Trench> ;
+  gen:mother <#Anna_Maria_White> .
+  # oo Mary Isabella Oliver-Gascoigne, 1810-03-21 - 1891-10-22, daughter of Richard Philip Oliver-Gascoigne and Mary Turner
+  []
+    gen:spouse <#Frederick_Charles_Trench-Gascoigne> , <#Mary_Isabella_Oliver-Gascoigne> ;
+	gen:startDate "1850-01-16" .
 <https://www.wikidata.org/wiki/Q11703211>
   # Most Rev. and Rt. Hon. Richard Chenevix Trench, 1807-09-09 - 1886-03-27
   # Archbishop of Dublin 1864 - 1884
@@ -201,8 +691,22 @@
     gen:spouse <https://www.wikidata.org/wiki/Q11703211> , <#Frances_Mary_Trench> ;
 	gen:startDate "1832-06-01" .
 
+<#Frederick_Richard_Thomas_Trench-Gascoigne>
+  # Frederick Richard Thomas Trench-Gascoigne, 1851-07-04 - 1937-06-02
+  gen:father <#Frederick_Charles_Trench-Gascoigne> ;
+  gen:mother <#Mary_Isabella_Oliver-Gascoigne> .
+  # oo Laura Gwendolen Douglas Galton, d. 1949-07-10, daughter of Sir Douglas Strutt Galton
+  []
+    gen:spouse <#Frederick_Richard_Thomas_Trench-Gascoigne> , <#Laura_Gwendolen_Douglas_Galton> ;
+	gen:startDate "1892-02-16" .
 <#Helen_Emily_Trench>
   # Helen Emily Trench, 1846 - 1935-06-25
   gen:father <https://www.wikidata.org/wiki/Q11703211> ;
   gen:mother <#Frances_Mary_Trench> .
   # oo 1871-02-16 Arthur Blundell George Sandys Hill, 1837-05-13 - 1923-06-16, #Arthur_Blundell_George_Sandys_Hill
+
+<#Cynthia_Mary_Trench-Gascoigne>
+  # Cynthia Mary Trench-Gascoigne, 1898-02-06 - 1990
+  gen:father <#Frederick_Richard_Thomas_Trench-Gascoigne> ;
+  gen:mother <#Laura_Gwendolen_Douglas_Galton> .
+  # oo Arthur FitzGerald Sandys Hill, 6th Lord Sandys, Baron of Ombersley, 1876-12-04 - 1961-11-24, https://www.wikidata.org/wiki/Q57862094
