@@ -271,7 +271,7 @@
   gen:deathDate "1848-08-10" ;
   gen:father <https://www.wikidata.org/wiki/Q7528376> ;
   gen:mother <#Anne_Hunter> .
-  # oo Frances Wilson, daughter https://www.wikidata.org/wiki/Q817749
+  # oo Frances Wilson
   []
     gen:spouse <https://www.wikidata.org/wiki/Q26404459> , <#Frances_Wilson> ;
 	gen:startDate "1802-06-03" .
@@ -280,6 +280,11 @@
   # Henry Bayly, 1769 – 1846-04-20
   gen:father <https://www.wikidata.org/wiki/Q16238990> .
   # and Fanny Nettlefold
+<#Louisa_Augusta_Bayly>
+  # Louisa Augusta Bayly, 1779 - 1860-06-15
+  gen:father <https://www.wikidata.org/wiki/Q16238990> .
+  # and Fanny Nettlefold
+  # oo 1810-05-10 Sir Edward Bindloss Perrott, 3rd Baronet, 1784-09-01 - 1859-03-24, #Sir_Edward_Perrott,_3rd_Baronet
 
 
 # Paget
@@ -1408,6 +1413,45 @@
   # oo Gustavus Lambart, #Gustavus_Lambart
 
 # ----
+<#Frances_Wilson>
+  # Frances Wilson
+  gen:father <https://www.wikidata.org/wiki/Q817749> .
+  # oo 1802-06-03 Lewis Bayly Wallis, 1775 - 1848-08-10, https://www.wikidata.org/wiki/Q26404459
+
+# ----
+#<#Sir_Edward_Perrott,_3rd_Baronet>
+  # Sir Edward Bindloss Perrott, 3rd Baronet, 1784-09-01 - 1859-03-24
+  # oo 1810-05-10 Louisa Augusta Bayly, 1779 - 1860-06-15
+  []
+    gen:spouse <#Sir_Edward_Perrott,_3rd_Baronet> , <#Louisa_Augusta_Bayly> ;
+	gen:startDate "" .
+
+<#Sir_Edward_Perrott,_4th_Baronet>
+  # Sir Edward George Lambert Perrott, 4th Baronet, 1811-05-10 - 1886-06-04
+  gen:father <#Sir_Edward_Perrott,_3rd_Baronet> ;
+  gen:mother <#Louisa_Augusta_Bayly> .
+  # oo Emma Maria Evelyn Houghton, 1825~ - 1878
+  []
+    gen:spouse <#Sir_Edward_Perrott,_4th_Baronet> , <#Emma_Maria_Evelyn_Houghton> .
+
+<https://www.wikidata.org/wiki/Q7527254>
+  # Sir Herbert Charles Perrott, 5th Baronet, 1849-10-26 - 1922-02-15
+  # 5th Baronet Perrott, of Plumstead, Kent 1886-06-04
+  # 1st Baronet Perrott, of Plumstead, Kent 1911
+  gen:father <#Sir_Edward_Perrott,_4th_Baronet> ;
+  gen:mother <#Emma_Maria_Evelyn_Houghton> .
+  # oo Ethel Lucy Hare, 1876 - 1939
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7527254> , <manners.ttl#Ethel_Lucy_Hare> ;
+	gen:startDate "1901-12-10" .
+
+<#Marie_Louise_Priscilla_Perrott>
+  # Marie Louise Priscilla Perrott, 1909-12-20 - 1988
+  gen:father <https://www.wikidata.org/wiki/Q7527254> ;
+  gen:mother <manners.ttl#Ethel_Lucy_Hare> .
+  # oo 1931-06-02 Cecil George Wilfred Weld Forester, 7th Baron Forester of Willey Park, 1899-07-12 - 1977-01-04, https://www.wikidata.org/wiki/Q26720045
+
+# ----
 <#Jane_Champagné>
   # Jane Champagné, 1742 - 1817-03-09
   gen:father <https://www.wikidata.org/wiki/Q63086626> .
@@ -1990,13 +2034,59 @@
   # oo 1880-06-26 Henry Paget, 4th Marquess of Anglesey, 1835-12-25 - 1898-10-13, https://www.wikidata.org/wiki/Q5726662
 
 # ----
+#<https://www.wikidata.org/wiki/Q7528747>
+  # Sir Robert Cotton, 1st Baronet, 1635~ – 1712-12-18
+  # 1st Baronet Cotton, of Combermere, co. Chester 1677-03-29
+  # oo Hester Salusbury, d. 1710
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7528747> , <#Hester_Salusbury> .
+
+<https://www.wikidata.org/wiki/Q21694517>
+  # Sir Thomas Cotton, 2nd Baronet, of Combermere, 1672~ – 1715-06-17
+  gen:father <https://www.wikidata.org/wiki/Q7528747> ;
+  gen:mother <#Hester_Salusbury> .
+  # oo Philadelphia Lynch, 1675-05-05 – 1758-12-30
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q21694517> , <#Philadelphia_Lynch> ;
+	gen:startDate "1689-11-18~" .
+
+<https://www.wikidata.org/wiki/Q16239357>
+  # Sir Lynch Cotton, 4th Baronet, 1705~ – 1775-08-14
+  gen:father <https://www.wikidata.org/wiki/Q21694517> ;
+  gen:mother <#Philadelphia_Lynch> .
+  # oo Elizabeth Abigail Cotton, d. 1777-01-04, daughter of Rowland Cotton
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16239357> , <#Elizabeth_Abigail_Cotton> ;
+	gen:startDate "1738b" .
+
+<https://www.wikidata.org/wiki/Q7528844>
+  # Sir Robert Salusbury Cotton, 5th Baronet, 1739~ - 1809-08-24
+  gen:father <https://www.wikidata.org/wiki/Q16239357> ;
+  gen:mother <#Elizabeth_Abigail_Cotton> .
+  # oo Frances Stapleton, 1746~ - 1825-04-20, daughter of James Russell Stapleton and Penelope Conway
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7528844> , <#Frances_Stapleton> ;
+	gen:startDate "1767" .
+  # oo Mary Joye
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7528844> , <#Mary_Joye> ;
+	gen:startDate "1777-07-28" .
+<#Rowland_Cotton>
+  # Rowland Cotton, 1740a - 1794-11-03
+  gen:father <https://www.wikidata.org/wiki/Q16239357> ;
+  gen:mother <#Elizabeth_Abigail_Cotton> .
+  # oo Elizabeth Aston
+  []
+    gen:spouse <#Rowland_Cotton> , <#Elizabeth_Aston> ;
+	gen:startDate "1792-06-29" .
+
 <https://www.wikidata.org/wiki/Q607265>
   # Stapleton Stapleton-Cotton, 1st Viscount Combermere of Bhurtpore, 1773-11-14 - 1865-02-21
   # 6th Baronet Cotton, of Combermere, co. Chester 1809-08-24
   # 1st Baron Combermere, of Combermere, co. Chester 1814-05-17
   # 1st Viscount Combermere of Bhurtpore 1827-02-08
-  gen:father <https://www.wikidata.org/wiki/Q7528844> .
-  # and Frances Stapleton
+  gen:father <https://www.wikidata.org/wiki/Q7528844> ;
+  gen:mother <#Frances_Stapleton> .
   # oo Lady Anna Maria Pelham-Clinton, d. 1807-05-31
   []
     gen:spouse <https://www.wikidata.org/wiki/Q607265> , <clinton.ttl#Lady_Anna_Maria_Pelham-Clinton> ;
@@ -2009,6 +2099,14 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q607265> , <#Mary_Woolley_Gibbings> ;
 	gen:startDate "1838 -10-02" .
+<https://www.wikidata.org/wiki/Q8022214>
+  # Sir Willoughby Cotton, 1783-05-04 - 1860-05-04
+  gen:father <#Rowland_Cotton> ;
+  gen:mother <#Elizabeth_Aston> .
+  # oo Lady Augusta Maria Coventry, 1785-09-11 - 1865-11-01
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8022214> , <coventry.ttl#Lady_Augusta_Maria_Coventry> ;
+	gen:startDate "1806-05-16" .
 
 <https://www.wikidata.org/wiki/Q7981501>
   gen:name "Wellington Henry Stapleton-Cotton, 2nd Viscount Combermere of Bhurtpore"@en ;
@@ -2020,6 +2118,11 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7981501> , <https://www.wikidata.org/wiki/Q45358083> ;
 	gen:startDate "1844-07-29" .
+<#Caroline_Frances_Stapleton-Cotton>
+  # Hon. Caroline Frances Stapleton-Cotton, 1822~ - 1893-05-10
+  gen:father <https://www.wikidata.org/wiki/Q607265> ;
+  gen:mother <greville.ttl#Caroline_Greville> .
+  # oo 1837-08-23 Arthur Wills Blundell Sandys Trumbull Windsor Hill, 4th Marquess of Downshire, 1812-08-06 – 1868-08-06, https://www.wikidata.org/wiki/Q4799073
 
 <https://www.wikidata.org/wiki/Q26218179>
   # Robert Wellington Stapleton-Cotton, 3rd Viscount Combermere of Bhurtpore, 1845-06-18 - 1898-02-20
@@ -2034,6 +2137,47 @@
   gen:father <https://www.wikidata.org/wiki/Q7981501> ;
   gen:mother <https://www.wikidata.org/wiki/Q45358083> .
   # oo 1880-08-26 Lord Alexander Victor Paget, 1839-04-25 - 1896-10-26, https://www.wikidata.org/wiki/Q52155204
+# ----
+#<https://www.wikidata.org/wiki/Q7529259>
+  # Sir Thomas Salusbury, 2nd Baronet, 1612-03 - 1643
+  # oo Hester Tyrrell, b. 1613-05-12
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7529259> , <#Hester_Tyrrell> ;
+	gen:startDate "1632a" .
+
+<#Hester_Salusbury>
+  # Hester Salusbury, d. 1710
+  gen:father <https://www.wikidata.org/wiki/Q7529259> ;
+  gen:mother <#Hester_Tyrrell> .
+  # oo Sir Robert Cotton, 1st Baronet, 1635~ – 1712-12-18, https://www.wikidata.org/wiki/Q7528747
+# ----
+#<https://www.wikidata.org/wiki/Q5345677>
+  # Sir Edward Tyrrell, 1551 - 1606-01-29
+  # oo Mary Lee, daughter of Benedict Lee
+
+<#Sir_Edward_Tyrrell,_1st_Baronet>
+  # Sir Edward Tyrrell, 1st Baronet, 1573-02-26 - 1656-07-02
+  # 1st Baronet Tyrrell 1627
+  gen:father <https://www.wikidata.org/wiki/Q5345677> .
+  # and Mary Lee
+  # oo Elizabeth Kingsmill
+
+<#Hester_Tyrrell>
+  # Hester Tyrrell, b. 1613-05-12
+  gen:father <#Sir_Edward_Tyrrell,_1st_Baronet> .
+  # and Elizabeth Kingsmill
+  # oo 1632a Sir Thomas Salusbury, 2nd Baronet, 1612-03 - 1643, https://www.wikidata.org/wiki/Q7529259
+# ----
+<#Philadelphia_Lynch>
+  # Philadelphia Lynch, 1675-05-05 – 1758-12-30
+  gen:father <https://www.wikidata.org/wiki/Q2425904> .
+  # oo 1689-11-18~ Sir Thomas Cotton, 2nd Baronet, of Combermere, 1672~ – 1715-06-17, https://www.wikidata.org/wiki/Q21694517
+# ----
+<#Elizabeth_Aston>
+  # Elizabeth Aston
+  gen:father <https://www.wikidata.org/wiki/Q26622701> .
+  # and Elizabeth Pye
+  # oo 1792-06-29 Rowland Cotton, 1740a - 1794-11-03, #Rowland_Cotton
 
 # ----
 <https://www.wikidata.org/wiki/Q27151450>
