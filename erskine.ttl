@@ -609,12 +609,15 @@
 
 #<https://www.wikidata.org/wiki/Q5236634>
   # David Lindsay, 8th Earl of Crawford, d. 1542-11-27
-  # oo 1500-11-06b Lady Elizabeth Hay, daughter of William Hay, 3rd Earl of Erroll (1449~ – 1507-01-14, https://www.wikidata.org/wiki/Q19873052) and oo (2) Lady Elizabeth Leslie (daughter of George Leslie, 1st Earl of Rothes (1406/1417 – 1490, https://www.wikidata.org/wiki/Q5541683) and Christian Haliburton)
+  # oo Lady Elizabeth Hay
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5236634> , <hay.ttl#Lady_Elizabeth_Hay_1> ;
+	gen:startDate "1500-11-06b" .
 
 <lindsay.ttl#Lady_Elizabeth_Lindsay_(died_1538)>
   # Lady Elizabeth Lindsay, d. 1538-07-29
-  gen:father <https://www.wikidata.org/wiki/Q5236634> .
-  # and Lady Elizabeth Hay
+  gen:father <https://www.wikidata.org/wiki/Q5236634> ;
+  gen:mother <hay.ttl#Lady_Elizabeth_Hay_1> .
   # oo 1525-12-25 Sir John Erskine, 5th of Dun, 1509 - 1590-03-22, #Sir_John_Erskine,_5th_of_Dun
 
 # ----
@@ -656,23 +659,6 @@
   # Magdalen Livingston
   gen:father <https://www.wikidata.org/wiki/Q4719421> .
   # oo 1562-01-07 Arthur Erskine of Blackgrange, #Arthur_Erskine_of_Blackgrange
-
-# ----
-#<https://www.wikidata.org/wiki/Q5237500>
-  # David Leslie, 5th Earl of Leven, 1660-05-05 - 1728-06-06
-  # oo Anne Wemyss, 1675-10-18 - 1702-01-09
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q5237500> , <wemyss.ttl#Anne_Wemyss> ;
-	gen:startDate "1691-09-03" .
-
-<https://www.wikidata.org/wiki/Q4719644>
-  # Alexander Leslie, 7th Earl of Leven, 1696a - 1754-09-02
-  gen:father <https://www.wikidata.org/wiki/Q5237500> ;
-  gen:mother <wemyss.ttl#Anne_Wemyss> .
-  # oo Mary Erskine, d. 1723-07-12
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q4719644> , <erskine.ttl#Mary_Erskine_(died_1723)> ;
-	gen:startDate "1721-02-23" .
 
 # ----
 #<#Sir_John_Mackenzie_of_Tarbat,_1st_Baronet>
@@ -2588,7 +2574,7 @@
 <#Magdalene_Erskine>
   # Hon. Magdalene Erskine
   gen:father <https://www.wikidata.org/wiki/Q2227936> .
-  # oo 1687-04-23 Alexander Monypenny, 20th of Pitmilly, 1642 - 1715, carnegie.ttl#Alexander_Monypenny,_20th_of_Pitmilly
+  # oo 1687-04-23 Alexander Monypenny, 20th of Pitmilly, 1642 - 1715, leslie.ttl#Alexander_Monypenny,_20th_of_Pitmilly
 
 <https://www.wikidata.org/wiki/Q17321118>
   gen:name "David Erskine, 9th Earl of Buchan"@en ;
