@@ -298,6 +298,15 @@
   # 5th Earl of Morton 1586-01
   gen:father <https://www.wikidata.org/wiki/Q5233044> ;
   gen:mother <hamilton.ttl#Margaret_Hamilton_of_Samuelston> .
+  # oo Lady Mary Erskine, d. 1575-05-03
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q360323> , <erskine.ttl#Lady_Mary_Erskine_(died_1575)> ;
+	gen:startDate "1573-06-13" .
+  # oo Lady Margaret Leslie
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q360323> , <leslie.ttl#Lady_Margaret_Leslie> ;
+	gen:startDate "1575-12-25" ;
+	gen:divorceDate "1587-07-12" .
   # oo Jean Lyon
   []
     gen:spouse <https://www.wikidata.org/wiki/Q360323> , <lyon.ttl#Jean_Lyon> ;
@@ -2392,12 +2401,12 @@
   # Lady Frances Harriet Douglas, 1819-10-07 - 1895-06-16
   gen:father <https://www.wikidata.org/wiki/Q5538592> ;
   gen:mother <#Frances_Theodora_Rose> .
-  # oo 1838-09-10 William Thomas Spencer Fitzwilliam, 6th Earl Fitzwilliam, 1815-10-12 – 1902-02-20, https://www.wikidata.org/wiki/Q8020195
+  # oo 1838-09-10 William Thomas Spencer Fitzwilliam, 6th Earl Fitzwilliam, 1815-10-12 – 1902-02-20, https://www.wikidata.org/wiki/Q8020195 (ponsonby.ttl)
 <#George_Henry_Douglas>
   # Hon. George Henry Douglas, 1821-10-05 - 1905-06-19
   gen:father <https://www.wikidata.org/wiki/Q5538592> ;
   gen:mother <#Frances_Theodora_Rose> .
-  # oo Charlotte Martha Parker, d. 1909-12-20, daughter of Admiral of the Fleet Sir William Parker, 1st Baronet (1781-12-01 - 1866-11-13, 1st Baronet Parker, of Blackbrook House, co. Southampton and Shenstone Lodge, co. Stafford 1844-12-18, https://www.wikidata.org/wiki/Q715051) and oo 1810-06-09 Frances Anne Biddulph (d. 1871-01-09, daughter of Sir Theophilus Biddulph, 5th Baronet and Hannah Prestridge)
+  # oo Charlotte Martha Parker, d. 1909-12-20
   []
     gen:spouse <#George_Henry_Douglas> , <#Charlotte_Martha_Parker> ;
 	gen:startDate "1850-07-15" .
@@ -2477,7 +2486,15 @@
   # Blanche Douglas, d. 1922-03-19
   gen:father <#George_Henry_Douglas> ;
   gen:mother <#Charlotte_Martha_Parker> .
-  # oo 1887-09-29 George Ponsonby Talbot, 1853-04-29 - 1924-02-28, talbot.#George_Ponsonby_Talbot
+  # oo 1887-09-29 George Ponsonby Talbot, 1853-04-29 - 1924-02-28, talbot.ttl#George_Ponsonby_Talbot
+<#George_Sholto_Douglas>
+  # George Sholto Douglas, 1858-04-27 - 1916-02-10
+  gen:father <#George_Henry_Douglas> ;
+  gen:mother <#Charlotte_Martha_Parker> .
+  # oo Lady Laura Mary Wentworth-Fitzwilliam, 1869-02-01 - 1936-03-02
+  []
+    gen:spouse <#George_Sholto_Douglas> , <ponsonby.ttl#Lady_Laura_Mary_Wentworth-Fitzwilliam> ;
+	gen:startDate "1889-04-30" .
 <https://www.wikidata.org/wiki/Q5342629>
   # Hon. Edward Douglas-Pennant, 3rd Baron Penrhyn of Llandegai, 1864-06-10 - 1927-08-22
   gen:father <https://www.wikidata.org/wiki/Q3401240> ;
@@ -2541,6 +2558,11 @@
   []
     gen:spouse <#William_Sholto_Douglas> , <beaufort.ttl#Ethel_Georgiana_Frances_Somerset> ;
 	gen:startDate "1914-11-26" .
+<#Katharine_Charlotte_Douglas>
+  # Katharine Charlotte Douglas
+  gen:father <#George_Sholto_Douglas> ;
+  gen:mother <ponsonby.ttl#Lady_Laura_Mary_Wentworth-Fitzwilliam> .
+  # oo 1921-02-07 Sir Henry Walter Houldsworth, 1896-01-28 - 1963-10-09, #Sir_Henry_Walter_Houldsworth
 <https://www.wikidata.org/wiki/Q43377756>
   # Alan George Sholto Douglas-Pennant, 1890-06-11 - 1914-10-29
   gen:father <https://www.wikidata.org/wiki/Q5342629> ;
@@ -3191,6 +3213,27 @@
   # oo 1833-08-06 Edward Gordon Douglas-Pennant, 1st Baron Penrhyn, 1800-06-20 - 1886-03-31, https://www.wikidata.org/wiki/Q3401219
 
 # ----
+#<https://www.wikidata.org/wiki/Q715051>
+  # Sir William Parker, 1st Baronet, 1781-12-01 - 1866-11-13
+  # 1st Baronet Parker, of Blackbrook House, co. Southampton and Shenstone Lodge, co. Stafford 1844-12-18
+  # oo Frances Anne Biddulph, d. 1871-01-09
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q715051> , <#Frances_Anne_Biddulph> ;
+	gen:startDate "1810-06-09" .
+
+<#Charlotte_Martha_Parker>
+  # Charlotte Martha Parker, d. 1909-12-20
+  gen:father <https://www.wikidata.org/wiki/Q715051> ;
+  gen:mother <#Frances_Anne_Biddulph> .
+  # oo 1850-07-15 Hon. George Henry Douglas, 1821-10-05 - 1905-06-19, #George_Henry_Douglas
+# ----
+<#Frances_Anne_Biddulph>
+  # Frances Anne Biddulph, d. 1871-01-09
+  gen:father <https://www.wikidata.org/wiki/Q75438431> .
+  # and Hannah Prestridge
+  # oo 1810-06-09 Sir William Parker, 1st Baronet, 1781-12-01 - 1866-11-13, https://www.wikidata.org/wiki/Q715051
+
+# ----
 <#Harriet_Ella_Gifford>
   # Hon. Harriet Ella Gifford, 1847 - 1942-02-12
   gen:father <https://www.wikidata.org/wiki/Q7344760> .
@@ -3199,6 +3242,21 @@
 
 <#Elizabeth_Gifford_of_Sheriffhall>
   gen:father <#James_Gifford_of_Sheriffhall> .
+
+# ----
+#<#Sir_Henry_Walter_Houldsworth>
+  # Sir Henry Walter Houldsworth, 1896-01-28 - 1963-10-09
+  # son of James Hamilton Houldsworth
+  # oo Katharine Charlotte Douglas
+  []
+    gen:spouse <#Sir_Henry_Walter_Houldsworth> , <#Katharine_Charlotte_Douglas> ;
+	gen:startDate "1921-02-07" .
+
+<#Diana_Mary_Houldsworth>
+  # Diana Mary Houldsworth, 1929-08-07 - 2017-11-25
+  gen:father <#Sir_Henry_Walter_Houldsworth> ;
+  gen:mother <#Katharine_Charlotte_Douglas> .
+  # oo 1955-04-30 Hon. George David Leslie-Melville, 1924-05-13 - 1997-06-23, leslie.ttl#George_David_Leslie-Melville
 
 # ----
 <#Janet_Crichton_of_Cranston-Riddel>
