@@ -929,6 +929,10 @@
   []
     gen:spouse <#John_Margetson> , <#Alice_Caulfeild> ;
 	gen:startDate "1694b" .
+<#Anne_Margetson>
+  # Anne Margetson, d. 1729
+  gen:father <https://www.wikidata.org/wiki/Q6138911> .
+  # oo 1678-07-11 William Caulfeild, 2nd Viscount Charlemont, 1655~ – 1726-07-21, https://www.wikidata.org/wiki/Q17308879
 
 <#Sarah_Margetson>
   # Sarah Margetson, d. 1733-05-21
@@ -937,18 +941,75 @@
   # oo 1704b Brabazon Ponsonby, 1st Earl of Bessborough, 1679 – 1758-07-04, https://www.wikidata.org/wiki/Q4953166
 
 # ----
-#<https://www.wikidata.org/wiki/Q8006637>
+#<https://www.wikidata.org/wiki/Q30283819>
+  # William Caulfeild, 2nd Lord Caulfeild, Baron of Charlemont, 1587-10-08 - 1640-12-04
+  # 2nd Lord Caulfeild, Baron of Charlemont, co. Armagh 1627-08-17
+  # son of George Caulfeild
+  # and Martha Taverner
+  # oo Mary King, d. 1663-07-16a/-08-15b, daughter of Sir John King and Catherine Drury
+
+<https://www.wikidata.org/wiki/Q8006637>
   # William Caulfeild, 1st Viscount Charlemont, 1624~ - 1671-04
+  # 5th Lord Caulfeild, Baron of Charlemont, co. Armagh 1644-01-01
+  # 1st Viscount Charlemont, co. Armagh 1665-10-08
+  gen:father <https://www.wikidata.org/wiki/Q30283819> .
+  # and Mary King
   # oo Hon. Sarah Moore, d. 1712-11~
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q8006637> , <#Sarah_Moore> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q8006637> , <wellesley.ttl#Sarah_Moore> ;
 	gen:startDate "1653" .
 
+<https://www.wikidata.org/wiki/Q17308879>
+  # William Caulfeild, 2nd Viscount Charlemont, 1655~ – 1726-07-21
+  gen:father <https://www.wikidata.org/wiki/Q8006637> ;
+  gen:father <wellesley.ttl#Sarah_Moore> .
+  # oo Anne Margetson, d. 1729
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q17308879> , <#Anne_Margetson> ;
+	gen:startDate "1678-07-11" .
 <#Alice_Caulfeild>
   # Hon. Alice Caulfeild, 1660~ - 1731-10-07
   gen:father <https://www.wikidata.org/wiki/Q8006637> ;
-  gen:father <#Sarah_Moore> .
+  gen:father <wellesley.ttl#Sarah_Moore> .
   # oo 1694b John Margetson, b. 1656-01-15, #John_Margetson
+  # oo 1694-01-23 George Carpenter, 1st Baron Carpenter of Killaghy, 1657-02-10 – 1731-02-10, https://www.wikidata.org/wiki/Q5537699 (manners.ttl)
+
+<#James_Caulfeild,_3rd_Viscount_Charlemont>
+  # James Caulfeild, 3rd Viscount Charlemont, 1682-07-29 - 1734-04-21
+  gen:father <https://www.wikidata.org/wiki/Q17308879> ;
+  gen:mother <#Anne_Margetson> .
+  # oo Elizabeth Bernard, 1703-02-21 - 1743-05-20, daughter of Francis Bernard and Alice Ludlow
+
+<#Francis_Caulfeild>
+  # Hon. Francis Caulfeild, d. 1775-11
+  gen:father <#James_Caulfeild,_3rd_Viscount_Charlemont> .
+  # and Elizabeth Bernard
+  # oo Hon. Mary Eyre, d. 1775-11
+  []
+    gen:spouse <#Francis_Caulfeild> , <#Mary_Eyre> ;
+	gen:startDate "1760-10" .
+
+<#Eleanor_Caulfeild>
+  # Eleanor Caulfeild, d. 1807-04-02
+  gen:father <#Francis_Caulfeild> ;
+  gen:mother <#Mary_Eyre> .
+  # oo 1787-03-31 William Howard, 3rd Earl of Wicklow, 1761-01 – 1818-09-27, https://www.wikidata.org/wiki/Q24288391
+# ----
+<https://www.wikidata.org/wiki/Q15039927>
+  # John Eyre, 1st Baron Eyre, 1720~ – 1781-09-30
+  # 1st Baron Eyre, of Eyrecourt, co. Galway 1768-07-16
+  gen:father <https://www.wikidata.org/wiki/Q59622660> .
+  # and Mary Cox
+  # oo Eleanor Staunton, daughter of James Staunton
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q15039927> , <#Eleanor_Staunton> ;
+	gen:startDate "1746" .
+
+<#Mary_Eyre>
+  # Hon. Mary Eyre, d. 1775-11
+  gen:father <https://www.wikidata.org/wiki/Q15039927> ;
+  gen:mother <#Eleanor_Staunton> .
+  # oo 1760-10" Hon. Francis Caulfeild, d. 1775-11, #Francis_Caulfeild
 
 # ----
 <#Lady_Frances_Brabazon>
@@ -1127,23 +1188,59 @@
   # oo 1795-03-20 Rt. Rev. Hon. Richard Bourke, 1767-04-23 - 1832-11-15, https://www.wikidata.org/wiki/Q7324275
 
 # ----
+<#Lady_Anne_Jane_Gore>
+  # Lady Anne Jane Gore, 1763-04 - 1827-05-08
+  gen:father <https://www.wikidata.org/wiki/Q4798851> .
+  # oo 1800-04-03 John James Hamilton, 1st Marquess of Abercorn, 1756-07 - 1818-01-27, https://www.wikidata.org/wiki/Q3809310
+<#Lady_Elizabeth_Araminta_Gore>
+  # Lady Elizabeth Araminta Gore, 1764-04 - 1845-06-27
+  gen:father <https://www.wikidata.org/wiki/Q4798851> .
+  # and Hon. Catherine Annesley
+  # oo 1783-08-06 Henry Monck, of Fowre, d. 1815-12-29, #Henry_Monck
 <#William_John_Gore>
   # Hon. William John Gore, 1767-11-16 - 1836-01-15
+  # daughter of Hon. William John Gore, 1767-11-16 - 1836-01-15, son of Arthur Saunders Gore, 2nd Earl of Arran of the Arran Islands (1734-07-25 – 1809-10-08, https://www.wikidata.org/wiki/Q4798851) and oo 1760-07-14 Hon. Catherine Annesley (1739 - 1770-11-23, daughter of https://www.wikidata.org/wiki/Q8004465 and Lady Anne Beresford)
   gen:father <https://www.wikidata.org/wiki/Q4798851> .
   # and Hon. Catherine Annesley
   # oo Caroline Hales, 1772 - 1836
   []
-    gen:spouse <#William_John_Gore> , <#Caroline_Hales> ;
+    gen:spouse <#William_John_Gore> , <marsham.ttl#Caroline_Hales> ;
 	gen:startDate "1798-05-30" .
+<https://www.wikidata.org/wiki/Q2960256>
+  # Hon. Sir Charles Stephen Gore, 1793-12-26 - 1869-09-04
+  gen:father <https://www.wikidata.org/wiki/Q4798851> .
+  # and Elizabeth Underwood
+  # oo Sarah Rachel Fraser, d. 1880-10-17, daughter of James Fraser
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2960256> , <#Sarah_Rachel_Fraser> ;
+	gen:startDate "1824-05-13" .
 
+<#Lady_Mary_Catherine_Gore>
+  # Lady Mary Catherine Gore, 1806 - 1885-04-28
+  gen:father <#William_John_Gore> ;
+  gen:mother <marsham.ttl#Caroline_Hales> .
+  # oo 1828-09-03 George Hayward Lindsay, 1799-06-10 - 1886-01-05, dalrymple.ttl#George_Hayward_Lindsay
 <#Charles_Alexander_Gore>
   # Hon. Charles Alexander Gore, 1811-10-10 - 1897-07-06
   gen:father <#William_John_Gore> ;
-  gen:mother <#Caroline_Hales> .
+  gen:mother <marsham.ttl#Caroline_Hales> .
   # oo Lady Augusta Lavinia Priscilla Ponsonby, 1814-05-11 – 1904-11-19
   []
     gen:spouse <#Charles_Alexander_Gore> , <#Lady_Augusta_Lavinia_Priscilla_Ponsonby> ;
 	gen:startDate "1845-04-02" .
+<https://www.wikidata.org/wiki/Q3723364>
+  # Eliza Amelia Gore, d. 1916-03-11
+  gen:father <https://www.wikidata.org/wiki/Q2960256> ;
+  gen:mother <#Sarah_Rachel_Fraser> .
+  # oo 1848-09-20 William Harry Hay, 19th Earl of Erroll, 1823-05-03 - 1891-12-03, https://www.wikidata.org/wiki/Q27986488
+<#Charles_Clitheroe_Gore>
+  # Charles Clitheroe Gore, 1839-09-07 - 1926-08-13
+  gen:father <https://www.wikidata.org/wiki/Q2960256> ;
+  gen:mother <#Sarah_Rachel_Fraser> .
+  # oo Lavinia FitzRoy, 1837-05-17 - 1912-05-16
+  []
+    gen:spouse <#Charles_Clitheroe_Gore> , <fitzroy.ttl#Lavinia_FitzRoy> ;
+	gen:startDate "1882-10-24" .
 
 <#Spencer_William_Gore>
   # Spencer William Gore, 1850-03-10 - 1906
@@ -1159,12 +1256,6 @@
   gen:father <#Spencer_William_Gore> ;
   gen:mother <#Amy_Margaret_Smith> .
   # oo 1910-12-29 Nigel de Grey, 1886-03-27 - 1951-05-25, grey.ttl#Nigel_de_Grey
-# ----
-<#Caroline_Hales>
-  # Caroline Hales, 1772 - 1836
-  gen:father <https://www.wikidata.org/wiki/Q16239785> .
-  # and Mary Heyward
-  # oo 1798-05-30 Hon. William John Gore, 1767-11-16 - 1836-01-15, #William_John_Gore
 
 # ----
 <#Lady_Louisa_Susan_Cornwallis_Eliot>
@@ -1185,13 +1276,13 @@
   # Daniel Bunbury-Tighe, 1796 - 1874-03-26
   # oo Hon. Frances Crofton, d. 1881-12-20
   []
-    gen:spouse <#Daniel_Bunbury-Tighe> , <paget.ttl#Frances_Crofton> ;
+    gen:spouse <#Daniel_Bunbury-Tighe> , <hill.ttl#Frances_Crofton> ;
 	gen:startDate "1825-03-03" .
 
 <#Frederick_Edward_Banbury_Tighe>
   # Frederick Edward Banbury Tighe, 1826-06 - 1891-01-06
   gen:father <#Daniel_Bunbury-Tighe> ;
-  gen:mother <paget.ttl#Frances_Crofton> .
+  gen:mother <hill.ttl#Frances_Crofton> .
   # oo Lady Kathleen Louisa Georgina Ponsonby, 1826-08-30 - 1863-07-09
   []
     gen:spouse <#Frederick_Edward_Banbury_Tighe> , <#Lady_Kathleen_Louisa_Georgina_Ponsonby> ;
@@ -1589,12 +1680,42 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5172033> , <#Mary_Allen> ;
 	gen:startDate "1766-06-10" .
+  # oo Anne Isabella Monck, 1759 - 1851-07-26
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5172033> , <bentinck.ttl#Anne_Isabella_Monck> ;
+	gen:startDate "1777-06-03" .
 
 <#Sophia_Maria_Maude>
   # Hon. Sophia Maria Maude, d. 1812-01-23
   gen:father <https://www.wikidata.org/wiki/Q5172033> ;
   gen:mother <#Mary_Allen> .
   # oo 1807-06-25 George Hay Dawkins-Pennant, 1764 - 1840-12-17, https://www.wikidata.org/wiki/Q16239402
+<#John_Charles_Maude>
+  # Rev. Hon. John Charles Maude, 1792-09-16 - 1860-06-21
+  gen:father <https://www.wikidata.org/wiki/Q5172033> ;
+  gen:mother <bentinck.ttl#Anne_Isabella_Monck> .
+  # oo Mary Cely Trevilian, 1797-10-18 - 1865-10-26, daughter of William Cely Trevilian and Emilia Harrison Jesse
+  []
+    gen:spouse <#John_Charles_Maude> , <#Mary_Cely_Trevilian> ;
+	gen:startDate "1813-09-10" .
+
+<#Maurice_Cely_Maude>
+  # Maurice Cely Maude, 1820-06-25 - 1904-12-24
+  gen:father <#John_Charles_Maude> ;
+  gen:mother <#Mary_Cely_Trevilian> .
+  # oo Marie Elise Wehren, daughter of Chrétien Wehren
+  []
+    gen:spouse <#Maurice_Cely_Maude> , <#Marie_Elise_Wehren> ;
+	gen:startDate "1860-05-18" .
+
+<#Anthony_Fitz_Maude>
+  # Anthony Fitz Maude, 1862-08 - 1935-06-07
+  gen:father <#Maurice_Cely_Maude> ;
+  gen:mother <#Marie_Elise_Wehren> .
+  # oo Eva Emily Beresford, d. 1960-02-18
+  []
+    gen:spouse <#Anthony_Fitz_Maude> , <beresford.ttl#Eva_Emily_Beresford> ;
+	gen:startDate "1895-04-27" .
 
 # ----
 <#Frederica_Sylvia_Darley>
