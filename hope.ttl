@@ -1434,24 +1434,24 @@
   gen:mother <#Jean_Fullarton> .
   # oo Alice Dundas, d. 1831-06-24
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q6263346> , <#Alice_Dundas> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q6263346> , <hamilton.ttl#Alice_Dundas> ;
 	gen:startDate "1780-12-27" .
 
 <#Louisa_Dorothea_Wedderburn>
   # Louisa Dorothea Wedderburn, 1786-06-08 - 1836-07-16
   gen:father <https://www.wikidata.org/wiki/Q6263346> ;
-  gen:mother <#Alice_Dundas> .
+  gen:mother <hamilton.ttl#Alice_Dundas> .
   # oo 1803-02-09 John Hope, 4th Earl of Hopetoun, 1765-08-17 - 1823-08-27, https://www.wikidata.org/wiki/Q336953
 <#Anne_Wedderburn>
   # Anne Wedderburn, 1788-02-14 - 1867-03-17
   gen:father <https://www.wikidata.org/wiki/Q6263346> ;
-  gen:mother <#Alice_Dundas> .
+  gen:mother <hamilton.ttl#Alice_Dundas> .
   # oo 1805-06-17 Sir John Hope of Craighall, 11th Baronet, 1781-04-13 - 1853-06-05, https://www.wikidata.org/wiki/Q26695941
 <#Sir_John_Wedderburn,_2nd_Baronet>
   # Sir John Wedderburn, 2nd Baronet, 1789-05-01 - 1862-07-02
   # 2nd Baronet Wedderburn, of Ballindean, Perthshire 1858-04-07
   gen:father <https://www.wikidata.org/wiki/Q6263346> ;
-  gen:mother <#Alice_Dundas> .
+  gen:mother <hamilton.ttl#Alice_Dundas> .
   # oo Henrietta Louisa Milburn, d. 1881-04-07, daughter of William Milburn
   []
     gen:spouse <#Sir_John_Wedderburn,_2nd_Baronet> , <#Henrietta_Louisa_Milburn> ;
@@ -1476,27 +1476,40 @@
   gen:father <#Sir_William_Wedderburn,_4th_Baronet> ;
   gen:mother <#Mary_Blanche_Hoskyns> .
   # oo 1904-02-11 Hugh Courtenay Fownes-Luttrell, d. 1918-01-14, shirley.ttl#Hugh_Courtenay_Fownes-Luttrell
-# ----
-#<#James_Dundas,_24th_of_Dundas>
-  # James Dundas, 24th of Dundas, 1721 - 1780
-  # oo Hon. Jean Forbes, d. 1774-07-28, daughter of William Forbes, 13th Lord Forbes and Dorothy Dale
+
+# ====
+<https://www.wikidata.org/wiki/Q6132938>
+  # Sir James Dundas, Lord Arniston, 1620 - 1670
+  gen:father <boyd.ttl#Sir_James_Dundas_of_Arniston> ;
+  gen:mother <home.ttl#Marie_Home> .
+  # oo Marion Boyd
   []
-    gen:spouse <#James_Dundas,_24th_of_Dundas> , <#Jean_Forbes> ;
-	gen:startDate "1748-04-22" .
+    gen:spouse <https://www.wikidata.org/wiki/Q6132938> , <boyd.ttl#Marion_Boyd> ;
+	gen:startDate "1641" .
 
-<#Alice_Dundas>
-  # Alice Dundas, d. 1831-06-24
-  gen:father <#James_Dundas,_24th_of_Dundas> ;
-  gen:mother <#Jean_Forbes> .
-  # oo 1780-12-27 John Wedderburn, 1729-02-21 - 1803-06-14, https://www.wikidata.org/wiki/Q6263346
+<https://www.wikidata.org/wiki/Q7343688>
+  # Robert Dundas, Lord Arniston, 1650 - 1726
+  gen:father <https://www.wikidata.org/wiki/Q6132938> ;
+  gen:mother <boyd.ttl#Marion_Boyd> .
+  # oo Margaret Sinclair, daughter of Sir Robert Sinclair of Stevenson
 
-#<https://www.wikidata.org/wiki/Q3938258>
-  # Robert Dundas, Lord Arniston, 1685-09-09 - 1753-08-26
+<https://www.wikidata.org/wiki/Q3938258>
+  # Robert Dundas, Lord Arniston, the younger, 1685-09-09 - 1753-08-26
+  gen:father <https://www.wikidata.org/wiki/Q7343688> .
+  # and Margaret Sinclair
+  # oo Elizabeth Watson, daughter of Robert Watson of Muirhouse
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3938258> , <#Elizabeth_Watson> ;
+	gen:startDate "1712" .
   # oo Anne Gordon
   []
     gen:spouse <https://www.wikidata.org/wiki/Q3938258> , <#Anne_Gordon> ;
 	gen:startDate "1734-06-03" .
 
+<https://www.wikidata.org/wiki/Q3938260>
+  # Robert Dundas of Arniston, the younger, 1713-07-18 – 1787-12-13
+  gen:father <https://www.wikidata.org/wiki/Q3938258> ;
+  gen:mother <#Elizabeth_Watson> .
 <https://www.wikidata.org/wiki/Q335351>
   # Henry Dundas, 1st Viscount Melville of Melville, 1742-04-28 - 1811-05-29
   gen:father <https://www.wikidata.org/wiki/Q3938258> ;
@@ -1511,6 +1524,7 @@
   gen:father <https://www.wikidata.org/wiki/Q335351> .
   # and Elizabeth Rannie
   # oo 1786-02-13 Henry Drummond, 1762-01-13 - 1794-07-04, drummond.ttl#Henry_Drummond_(died_1794)
+
 # ----
 #<https://www.wikidata.org/wiki/Q26857655>
   # Sir William Gordon of Invergordon, 1st Baronet, d. 1742-06-09
@@ -1521,6 +1535,8 @@
   gen:father <https://www.wikidata.org/wiki/Q26857655> .
   # and Christian Hamilton
   # oo 1734-06-03 Robert Dundas, Lord Arniston, 1685-09-09 - 1753-08-26, https://www.wikidata.org/wiki/Q3938258
+
+# ====
 
 # ----
 #<https://www.wikidata.org/wiki/Q8008407>
@@ -2556,7 +2572,7 @@
 # ----
 <#Adam_Alexander_Duncan_Dundas_of_Dundas>
   # Adam Alexander Duncan Dundas of Dundas, 1822-01-22 - 1904-03-05
-  gen:father <howard.ttl#James_Dundas_of_Dundas> ;
+  gen:father <howard.ttlhttps://www.wikidata.org/wiki/Q66384761> ;
   gen:mother <dalrymple.ttl#Mary_Tufton_Duncan> .
   # oo Charlotte Maria Hope, 1831-03-25 - 1905-01-24
   []
