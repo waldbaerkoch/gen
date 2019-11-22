@@ -3,7 +3,6 @@
 @prefix wdata: <https://www.wikidata.org/wiki/> .
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix wen: <https://en.wikipedia.org/wiki/> .
 
 <#Sir_Leonard_Hastings>
   # Sir Leonard Hastinges
@@ -770,12 +769,15 @@
   gen:deathDate "1535" ;
   gen:father <https://www.wikidata.org/wiki/Q5542841> ;
   gen:mother <https://www.wikidata.org/wiki/Q19302315> .
-  # oo Joan FitzAlan (d. 1508-11-14) daughter of wen:Thomas_FitzAlan,_17th_Earl_of_Arundel and Margaret Woodville, daughter of wen:Richard_Woodville,_1st_Earl_Rivers
+  # oo Lady Joan FitzAlan, d. 1508-11-14
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1507985> , <fitzalan.ttl#Lady_Joan_FitzAlan> ;
+	gen:startDate "1494b" .
 
 <neville.ttl#Jane_Neville>
   # Jane Neville, d. 1538-10-26b
   gen:father <https://www.wikidata.org/wiki/Q1507985> ;
-  gen:mother <howard.ttl#Joan_FitzAlan> .
+  gen:mother <fitzalan.ttl#Lady_Joan_FitzAlan> .
   # oo 1510-05/1520-05b Henry Pole, 1st Baron Montagu, 1492 - 1539-01, https://www.wikidata.org/wiki/Q5727081
 # ----
 <https://www.wikidata.org/wiki/Q4726013>
@@ -818,10 +820,22 @@
 # --------
 # beaufort.ttl
 <https://www.wikidata.org/wiki/Q1637267>
+  # Humphrey Stafford, Earl of Stafford
   gen:birthDate "1425~" ;
   gen:deathDate "1458-05-22~" ;
-  gen:father <wen:Humphrey_Stafford,_1st_Duke_of_Buckingham> ;
-  gen:mother <wen:Anne_Stafford,_Duchess_of_Buckingham> .
+  gen:father <https://www.wikidata.org/wiki/Q1265605> ;
+  gen:mother <https://www.wikidata.org/wiki/Q565662> .
+  # oo Lady Margaret Beaufort, 1437~ - 1474
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1637267> , <https://www.wikidata.org/wiki/Q273111> .
+<https://www.wikidata.org/wiki/Q15088507>
+  # Sir Henry Stafford, 1425 - 1471
+  gen:father <https://www.wikidata.org/wiki/Q1265605> ;
+  gen:mother <https://www.wikidata.org/wiki/Q565662> .
+  # oo Lady Margaret Beaufort, 1443-05-31 - 1509-06-29
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q15088507> , <https://www.wikidata.org/wiki/Q229202> ;
+	gen:startDate "1458-01-03" .
 
 <https://www.wikidata.org/wiki/Q714480>
   # Henry Stafford, 2nd Duke of Buckingham
@@ -847,8 +861,8 @@
   # Catherine Woodville
   gen:birthDate "1458" ;
   gen:deathDate "1497-05-18" ;
-  gen:father <wen:Richard_Woodville,_1st_Earl_Rivers> ;
-  gen:mother <wen:Jacquetta_of_Luxembourg> .
+  gen:father <https://www.wikidata.org/wiki/Q934384> ;
+  gen:mother <https://www.wikidata.org/wiki/Q448289> .
   # oo 1483-11-02 Henry Stafford, 2nd Duke of Buckingham, 1454-09-04 - 1483-11-02, https://www.wikidata.org/wiki/Q714480
 
 # --------
@@ -971,7 +985,7 @@
   # oo 1604-11 Sir Christopher Dillon, d. 1624-02-28, #Sir_Christopher_Dillon
 # ----
 <https://www.wikidata.org/wiki/Q7781528>
-  gen:owl:sameAs <https://www.wikidata.org/wiki/Q75517803> .
+  owl:sameAs <https://www.wikidata.org/wiki/Q75517803> .
   # Theobald Dillon, 1st Viscount Dillon of Costello-Gallin, d. 1624-03-15
   # 1st Viscount Dillon of Costello-Gallin, co. Mayo 1622-03-16
   # son of Thomas Dillon
@@ -1639,7 +1653,7 @@
   gen:name "Maria Eleanor Forbes"@en ;
   gen:birthDate "1761-01-23" ;
   gen:deathDate "1844-03-18" ;
-  gen:father <wen:John_Forbes_(Royal_Navy_officer)> ;
+  gen:father <https://www.wikidata.org/wiki/Q3181515> ;
   gen:mother <capell.ttl#Lady_Mary_Capell> .
   # oo 1791-01-05 John Charles Villiers, 3rd Earl of Clarendon, 1757-11-14 - 1838-12-22, https://www.wikidata.org/wiki/Q15989904
 
