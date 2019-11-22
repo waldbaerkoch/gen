@@ -1,0 +1,205 @@
+@base <annesley.ttl> .
+@prefix gen: <http://jjkoch.de/gen#> .
+@prefix wdata: <https://www.wikidata.org/wiki/> .
+@prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+
+#<https://www.wikidata.org/wiki/Q5480011>
+  # Francis Annesley, 1st Viscount of Valentia, 1584-02-01b - 1660-11-22
+  # 1st Baronet Annesley, of Mountnorris, co. Armagh 1620-08-07
+  # 1st Viscount of Valentia, co. Kerry 1622-03-11
+  # 1st Baron Mountnorris, of Mountnorris, co. Armagh 1629-02-08
+  # son of Robert Annesley
+  # and Beatrix Cornwall
+  # oo Dorothy Philipps, d. 1614-05-03
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5480011> , <#Dorothy_Philipps> ;
+	gen:startDate "1608~" .
+  # oo Jane Stanhope, 1606 – 1683-03-12
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5480011> , <cavendish.ttl#Jane_Stanhope> ;
+	gen:startDate "1629" .
+
+<https://www.wikidata.org/wiki/Q708421>
+  # Arthur Annesley, 1st Earl of Anglesey, 1614-07-10 - 1686-04-06
+  # 2nd Viscount of Valentia, co. Kerry, 2nd Baron Mountnorris, of Mountnorris, co. Armagh, 2nd Baronet Annesley, of Mountnorris, co. Armagh 1660-11-22
+  # 1st Earl of Anglesey, in Wales, 1st Baron Annesley, of Newport Pagnel, Buckinghamshire 1661-04-20
+  gen:father <https://www.wikidata.org/wiki/Q5480011> ;
+  gen:mother <#Dorothy_Philipps> .
+  # oo Elizabeth Altham, 1620-01-09 - 1698-01~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q708421> , <https://www.wikidata.org/wiki/Q44961429> ;
+	gen:startDate "1638-04-24" .
+<#John_Annesley>
+  # Hon. John Annesley, 1617-09-11 - 1695
+  gen:father <https://www.wikidata.org/wiki/Q5480011> ;
+  gen:mother <#Dorothy_Philipps> .
+  # oo Charity Warren, daughter of Henry Warren
+<#Francis_Annesley_(born_1629)>
+  # Hon. Francis Annesley, b. 1629-01-23
+  gen:father <https://www.wikidata.org/wiki/Q5480011> ;
+  gen:mother <cavendish.ttl#Jane_Stanhope> .
+  # oo Deborah Jones, d. 1672-09-04, daughter of Henry Jones
+  []
+    gen:spouse <#Francis_Annesley_(born_1629)> , <#Deborah_Jones> ;
+	gen:startDate "1662-12-29" .
+<#Catherine_Annesley_(died_1701)>
+  # Hon. Catherine Annesley, 1634-01-05 - 1701-04-03
+  gen:father <https://www.wikidata.org/wiki/Q5480011> ;
+  gen:mother <cavendish.ttl#Jane_Stanhope> .
+  # oo 1663-02-20 Sir Randal Beresford, 2nd Baronet, d. 1681-10-19, https://www.wikidata.org/wiki/Q7291457
+
+<https://www.wikidata.org/wiki/Q6128760>
+  # James Annesley, 2nd Earl of Anglesey, 1645~ - 1690-04-01
+  gen:father <https://www.wikidata.org/wiki/Q708421> ;
+  gen:mother <https://www.wikidata.org/wiki/Q44961429> .
+  # Lady Elizabeth Manners, 1654~ – 1700-12-07
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6128760> , <manners.ttl#Lady_Elizabeth_Manners_(died_1700)> ;
+	gen:startDate "1669-09-17" .
+<#Lady_Dorothy_Annesley>
+  # Lady Dorothy Annesley
+  gen:father <https://www.wikidata.org/wiki/Q708421> ;
+  gen:mother <https://www.wikidata.org/wiki/Q44961429> .
+  # oo 1654 Richard Power, 1st Earl of Tyrone, 1630 - 1690-10-14, https://www.wikidata.org/wiki/Q16863560
+<#Lady_Elizabeth_Annesley>
+  # Lady Elizabeth Annesley, d. 1672-09-04
+  gen:father <https://www.wikidata.org/wiki/Q708421> ;
+  gen:mother <https://www.wikidata.org/wiki/Q44961429> .
+  # oo 1672b Alexander MacDonnell, 3rd Earl of Antrim, 1615 - 1699-12-10, https://www.wikidata.org/wiki/Q4719470
+<https://www.wikidata.org/wiki/Q75279228>
+  # Maurice Annesley, d. 1718-02-17
+  gen:father <#John_Annesley> .
+  # and Charity Warren
+  # oo Sarah Blayney, d. 1705-07-05
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75279228> , <wellesley.ttl#Sarah_Blayney> .
+<https://www.wikidata.org/wiki/Q21166281>
+  # Francis Annesley, 1663-10-24 - 1750-04-07
+  gen:father <#Francis_Annesley_(born_1629)> ;
+  gen:mother <#Deborah_Jones> .
+  # oo Elizabeth Martin, daughter of Sir Joseph Martin
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q21166281> , <#Elizabeth_Martin> ;
+	gen:startDate "1695-07-05" .
+
+<https://www.wikidata.org/wiki/Q6219152>
+  # John Annesley, 4th Earl of Anglesey, 1676-01-18 – 1710-09-18
+  gen:father <https://www.wikidata.org/wiki/Q6128760> ;
+  gen:mother <manners.ttl#Lady_Elizabeth_Manners_(died_1700)> .
+  # oo Henrietta Maria Stanley, 4th Baroness Strange, 1687~ - 1718-06-26
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6219152> , <https://www.wikidata.org/wiki/Q5716032> ;
+	gen:startDate "1706-05-21" .
+<#Elizabeth_Annesley>
+  # Elizabeth Annesley
+  gen:father <https://www.wikidata.org/wiki/Q75279228> ;
+  gen:mother <wellesley.ttl#Sarah_Blayney> .
+  # oo Sir Arthur Gore, 2nd Baronet, 1685~ - 1741-02-10, https://www.wikidata.org/wiki/Q7526068
+<https://www.wikidata.org/wiki/Q8004465>
+  # William Annesley, 1st Viscount Glerawly, 1710~ - 1770-09-12
+  # 1st Baron Annesley, of Castle Wellan, co. Down 1758-09-20
+  # 1st Viscount Glerawly, of co. Fermanagh 1766-11-14
+  gen:father <https://www.wikidata.org/wiki/Q21166281> ;
+  gen:mother <#Elizabeth_Martin> .
+  # oo Lady Anne Beresford, 1718 - 1770-05-12
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8004465> , <beresford.ttl#Lady_Anne_Beresford> ;
+	gen:startDate "1738-08-16" .
+
+# ponsonby.ttl
+<#Catherine_Annesley_(died_1770)>
+  # Hon. Catherine Annesley, 1739 - 1770-11-23
+  gen:father <https://www.wikidata.org/wiki/Q8004465> ;
+  gen:mother <beresford.ttl#Lady_Anne_Beresford> .
+  # oo 1760-07-14 Arthur Saunders Gore, 2nd Earl of Arran of the Arran Islands, 1734-07-25 – 1809-10-08, https://www.wikidata.org/wiki/Q4798851
+
+
+
+# courtenay.ttl
+#<https://www.wikidata.org/wiki/Q4797827>
+  # Arthur Annesley, 1st Earl of Mountnorris, 1744-08-07 – 1816-07-04
+  # 8th Baron Mountnorris, of Mountnorris, co. Armagh, 8th Baronet Annesley, of Mountnorris, co. Armagh, 8th Viscount of Valentia, co. Kerry, 6th Baron Altham, of Altham, co. Cork 1761-02-14
+  # 1st Earl of Mountnorris 1793-12-03
+  # oo Hon. Lucy Lyttelton, 1743-03-13 - 1783-05-20
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4797827> , <lyttelton.ttl#Lucy_Lyttelton> ;
+	gen:startDate "1767-05-10" .
+
+# courtenay.ttl
+<https://www.wikidata.org/wiki/Q5536270>
+  # George Annesley, 2nd Earl of Mountnorris, 1770-12-04 – 1844-07-23
+  gen:father <https://www.wikidata.org/wiki/Q4797827> ;
+  gen:mother <lyttelton.ttl#Lucy_Lyttelton> .
+  # oo Hon. Anne Courtenay, 1774-07-02 – 1835-01-06
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5536270> , <courtenay.ttl#Anne_Courtenay> ;
+	gen:startDate "1790-09-03" .
+# beaufort.ttl
+<#Lady_Catherine_Annesley>
+  # Lady Catherine Annesley, 1790-07-18 - 1865-06-25
+  gen:father <https://www.wikidata.org/wiki/Q4797827> .
+  # oo 1814-10-04 Lord John Thomas Henry Somerset, 1787-08-30 - 1846-10-03, https://www.wikidata.org/wiki/Q19351777
+
+
+# graham.ttl
+#<#Catherine_Elizabeth_Annesley>
+  # Catherine Elizabeth Annesley, d. 1859-07-30, daughter of Arthur Annesley (1760 - 1841-01-20, https://www.wikidata.org/wiki/Q17308753, son of Arthur Annesley (1733 - 1773-02, https://www.wikidata.org/wiki/Q75608341, son of Rev. Francis Annesley (1701b - 1740-05-01, https://www.wikidata.org/wiki/Q75250843, son of <https://www.wikidata.org/wiki/Q21166281> , <#Elizabeth_Martin>) and oo Anne Gayer (daughter of Robert Gayer (son of https://www.wikidata.org/wiki/Q75654168) and oo Lady Elizabeth Annesley (d. 1725-12, daughter of <https://www.wikidata.org/wiki/Q6128760> , <manners.ttl#Lady_Elizabeth_Manners_(died_1700)>))) and oo Elizabeth Baldwin (daughter of Charles Baldwin)) and oo 1785-02-01 Catherine Hardy (daughter of Charles Hardy (1714 - 1780-05-18, https://www.wikidata.org/wiki/Q2959316, son of https://www.wikidata.org/wiki/Q18563003) and oo 1759-01-04 Catherine Stanyan (1727 - 1801))
+  # oo 1814 Rev. Hon. John Evelyn Boscawen, 1790 - 1851-04-12, graham.ttl#John_Evelyn_Boscawen
+
+
+# montagu.ttl
+#<https://www.wikidata.org/wiki/Q3132978>
+  # Rt. Hon. Sir Henry Norman, 1st Baronet, 1858-09-19 – 1939-06-04
+  # 1st Baronet Norman, of Honeyhanger, Parish of Shottermill, co. Surrey 1915-06-22
+  # son of Henry Norman
+  # and Sarah Edna Riddington
+  # oo Menie Muriel Dowie, 1867-07-15 – 1945-03-25, daughter of James Muir Dowie
+#  []
+#    gen:spouse <https://www.wikidata.org/wiki/Q3132978> , <https://www.wikidata.org/wiki/Q554629> ;
+#	gen:startDate "1891-08-28" ;
+#	gen:divorceDate "1903" .
+
+#<https://www.wikidata.org/wiki/Q15968671>
+  # Sir Henry Nigel St. Valery Norman, 2nd Baronet, 1897-05-21 – 1943-05-19
+#  gen:father <https://www.wikidata.org/wiki/Q3132978> ;
+#  gen:mother <https://www.wikidata.org/wiki/Q554629> .
+  # oo Patricia Moyra Annesley, b. 1904-04-26, daughter of James Howard Adolphus Annesley (3 March 1868, d. 22 April 1919, son of Francis Charles Annesley (13 February 1845, d. 6 March 1878, son of James Annesley (1799, d. 29 September 1859, son of Hon. Robert Annesley (1 June 1773, d. 21 April 1825, son of Richard Annesley, 2nd Earl Annesley and Anne Lambert) and oo 1798-03-12 Mary Anne Gandon (d. 31 March 1845, daughter of James Gandon)) and oo 1826-06-21 Clementine de Brockhausen (d. 12 October 1868, daughter of Graf (?) de Brockhausen)) and oo 1865-09-10 Matilda Rochfort (d. 4 September 1872, daughter of Cowper Rochfort)) and oo 1900-11-29 Helene Marie Johnston (d. 13 April 1949, daughter of Charles Edward Johnston)
+#  []
+#    gen:spouse <https://www.wikidata.org/wiki/Q15968671> , <annesley.ttl#Patricia_Moyra_Annesley> ;
+#	gen:startDate "1926-02-04" .
+
+#<#Sir_Torquil_Patrick_Alexander_Norman>
+  # Sir Torquil Patrick Alexander Norman, b. 1933-04-11
+#  gen:father <https://www.wikidata.org/wiki/Q15968671> ;
+#  gen:mother <annesley.ttl#Patricia_Moyra_Annesley> .
+
+
+# ----
+#<https://www.wikidata.org/wiki/Q7528002>
+  # Sir John Philipps, 1st Baronet, 1566~ - 1629-03-27
+  # 1st Baronet Philipps, of Picton Castle 1621-11-09
+  # son of Morgan Philipps
+  # and Elizabeth Fletcher
+  # oo Anne Perrot
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7528002> , <https://www.wikidata.org/wiki/Q17464574> ;
+	gen:startDate "1585-11-11a" .
+
+<#Dorothy_Philipps>
+  # Dorothy Philipps, d. 1614-05-03
+  gen:father <https://www.wikidata.org/wiki/Q7528002> ;
+  gen:mother <https://www.wikidata.org/wiki/Q17464574> .
+  # oo 1608~ Francis Annesley, 1st Viscount of Valentia, 1584-02-01b - 1660-11-22, https://www.wikidata.org/wiki/Q5480011
+# ----
+<https://www.wikidata.org/wiki/Q17464574>
+  # Anne Perrot
+  gen:father <https://www.wikidata.org/wiki/Q2058500> .
+  # oo 1585-11-11a Sir John Philipps, 1st Baronet, 1566~ - 1629-03-27, https://www.wikidata.org/wiki/Q7528002
+
+# ----
+#<https://www.wikidata.org/wiki/Q44961429>
+  # Elizabeth Altham, 1620-01-09 - 1698-01~
+  # daughter of Sir James Altham
+  # and Elizabeth Sutton
+  # oo 1638-04-24 Arthur Annesley, 1st Earl of Anglesey, 1614-07-10 - 1686-04-06, https://www.wikidata.org/wiki/Q708421
+
