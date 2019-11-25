@@ -2,6 +2,7 @@
 @prefix gen: <http://jjkoch.de/gen#> .
 @prefix wdata: <https://www.wikidata.org/wiki/> .
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 #<#Sir_Robert_Jocelyn,_1st_Baronet>
   # Sir Robert Jocelyn, 1st Baronet, 1623-01-14 - 1712-06-09~
@@ -152,6 +153,7 @@
 	gen:startDate "1765-11-27" .
 
 <https://www.wikidata.org/wiki/Q30123611>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75279425> ;
   # Thomas Stapleton, 12th Lord le Despenser, 1766-11-10 - 1831-10-03
   # 6th Baronet Stapleton, of the Leeward Islands in America 1781-01-01
   # 12th Lord le Despenser 1788-05-16
@@ -196,6 +198,11 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q30123577> , <https://www.wikidata.org/wiki/Q30123632> ;
 	gen:startDate "1820-12-29" .
+<#Emma_Stapleton>
+  # Hon. Emma Stapleton, d. 1879-12-29
+  gen:father <https://www.wikidata.org/wiki/Q30123611> ;
+  gen:mother <#Elizabeth_Eliot> .
+  # oo 1825-05-05 Charles Brodrick, 6th Viscount Midleton of Midleton, 1791-09-14 - 1863-12-02, https://www.wikidata.org/wiki/Q45379165
 <#John_Horace_Thomas_Stapleton>
   # John Horace Thomas Stapleton, 1799b - 1836-12-07
   gen:father <#William_Stapleton> ;

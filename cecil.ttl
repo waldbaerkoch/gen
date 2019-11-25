@@ -1464,6 +1464,7 @@
     gen:spouse <https://www.wikidata.org/wiki/Q15820714> , <cadogan.ttl#Lady_Sarah_Primrose_Beatrix_Cadogan> ;
 	gen:startDate "1958-11-18" .
 <#Charles_Evelyn_Cecil>
+  gen:name "Hon. Charles Evelyn Cecil"@en ;
   gen:birthDate "1936-11-15" ;
   gen:father <https://www.wikidata.org/wiki/Q26736741> ;
   gen:mother <#Anne_Margaret_Meade-Fetherstonhaugh> .
@@ -1510,7 +1511,7 @@
   gen:birthDate "1970-03-04" ;
   gen:father <#Charles_Evelyn_Cecil> ;
   gen:mother <#Jennifer_Anne_Mackinnon> .
-  # oo 2001-06-23 James George Stewart-Richardson, b. 1971-03-02, #James_George_Stewart-Richardson
+  # oo 2001-06-23 James George Stewart-Richardson, b. 1971-03-02, https://www.wikidata.org/wiki/Q75731258
 <#David_Cecil>
   gen:birthDate "1971-06-14" ;
   gen:father <#Charles_Evelyn_Cecil> ;
@@ -3890,25 +3891,6 @@
   gen:mother <#Susan_Rachel_Bligh> .
   # oo 1970-01-07 Robert Michael James Gascoyne-Cecil, 7th Marquess of Salisbury, b. 1946-09-30, https://www.wikidata.org/wiki/Q335589
 # ----
-#<https://www.wikidata.org/wiki/Q5236512>
-  # David Leslie-Melville, 10th Earl of Leven, 1785-06-22 - 1860-10-08
-  # oo Elizabeth Anne Campbell, 1804 - 1863-11-06
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q5236512> , <#Elizabeth_Anne_Campbell> ;
-	gen:startDate "1824-06-21" .
-
-<#Lady_Anne_Maria_Leslie-Melville>
-  # Lady Anne Maria Leslie-Melville, d. 1874-12-08
-  gen:father <https://www.wikidata.org/wiki/Q5236512> ;
-  gen:mother <#Elizabeth_Anne_Campbell> .
-  # oo 1865-04-26 Sir William Stirling-Maxwell, 9th Baronet, 1818-03-08 - 1878-01-15, https://www.wikidata.org/wiki/Q334215
-# ----
-<#Elizabeth_Anne_Campbell>
-  # Elizabeth Anne Campbell, 1804 - 1863-11-06
-  gen:father <https://www.wikidata.org/wiki/Q7526031> .
-  # and Elizabeth Balfour
-  # oo 1824-06-21 David Leslie-Melville, 10th Earl of Leven, 1785-06-22 - 1860-10-08, https://www.wikidata.org/wiki/Q5236512
-# ----
 <#Noel_Gervase_Bligh>
   # Hon. Noel Gervase Bligh, 1888-11-14 - 1984-07-04
   gen:father <https://www.wikidata.org/wiki/Q3529459> ;
@@ -4111,43 +4093,71 @@
 	gen:startDate "1961-01-19" .
 
 # --------
-<#Sir_James_Thomas_Stewart-Richardson,_14th_Baronet>
+#<#James_Richardson>
+  # James Richardson, d. 1823-07-26
+  # oo Elizabeth Stewart, daughter of James Stewart
+
+<https://www.wikidata.org/wiki/Q75668127>
+  # Sir John Stewart-Richardson of Pitfour, 13th Baronet, 1797-09-01 - 1881-12-01
+  gen:father <#James_Richardson> .
+  # and Elizabeth Stewart
+  # oo Mary Hay, d. 1886-07-31, daughter of James Hay
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75668127> , <#Mary_Hay> ;
+	gen:startDate "1826-12-20" .
+<https://www.wikidata.org/wiki/Q75286125>
+  # Robert Richardson-Robertson, 1809-11-14 - 1883-11-01
+  gen:father <#James_Richardson> .
+  # and Elizabeth Stewart
+  # oo Hon. Martha Rollo, d. 1857-09-17
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75286125> , <hill.ttl#Martha_Rollo> ;
+	gen:startDate "1850-09-26" .
+  # oo Lady Julia Louisa Leslie-Melville, 1829-03-04 - 1870-10-24
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75286125> , <leslie.ttl#Lady_Julia_Louisa_Leslie-Melville> ;
+	gen:startDate"1869-03-29" .
+
+<https://www.wikidata.org/wiki/Q75297043>
   gen:name "Sir James Thomas Stewart-Richardson of Pitfour, 14th Baronet"@en;
   gen:birthDate "1840-12-24" ;
-  gen:deathDate "1895-02-14" .
-  # oo Harriett Georgina Alice Cochrane
+  gen:deathDate "1895-02-14" ;
+  gen:father <https://www.wikidata.org/wiki/Q75668127> ;
+  gen:mother <#Mary_Hay> .
+  # oo Harriett Georgina Alice Cochrane, 1841-12-07 - 1924-10-26, daughter of Rupert John Cochrane and Isabella Macomb Clarke
   []
-    gen:spouse <#Sir_James_Thomas_Stewart-Richardson,_14th_Baronet> , <#Harriett_Georgina_Alice_Cochrane> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75297043> , <#Harriett_Georgina_Alice_Cochrane> ;
 	gen:startDate "1868-10-20" .
 
-<#Neil_Graham_Stewart-Richardson>
+<https://www.wikidata.org/wiki/Q75731214>
   gen:name "Neil Graham Stewart-Richardson"@en ;
   gen:birthDate "1881-10-23" ;
   gen:deathDate "1934-02-23" ;
-  gen:father <#Sir_James_Thomas_Stewart-Richardson,_14th_Baronet> ;
+  gen:father <https://www.wikidata.org/wiki/Q75297043> ;
   gen:mother <#Harriett_Georgina_Alice_Cochrane> .
   # oo Alexandra Ralli, 1896-04-20 - 1972-08-02, daughter of Peter Ralli and Mary Ralli
   []
-    gen:spouse <#Neil_Graham_Stewart-Richardson> , <#Alexandra_Ralli> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75731214> , <#Alexandra_Ralli> ;
 	gen:startDate "1924-10-23" .
 
-<#Alastair_Lucas_Graham_Stewart-Richardson>
+<https://www.wikidata.org/wiki/Q75731251>
   gen:name "Alastair Lucas Graham Stewart-Richardson"@en ;
   gen:birthDate "1927-11-29" ;
   gen:deathDate "2007-01-18" ;
-  gen:father <#Neil_Graham_Stewart-Richardson> ;
+  gen:father <https://www.wikidata.org/wiki/Q75731214> ;
   gen:mother <#Alexandra_Ralli> .
   # oo Diana Claire Rawstorne, daughter of George Streynsham Rawstorne
   []
-    gen:spouse <#Alastair_Lucas_Graham_Stewart-Richardson> , <#Diana_Claire_Rawstorne> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75731251> , <#Diana_Claire_Rawstorne> ;
 	gen:startDate "1969-05-29" .
 
-<#James_George_Stewart-Richardson>
+<https://www.wikidata.org/wiki/Q75731258>
+  gen:name "James George Stewart-Richardson"@en ;
   gen:birthDate "1971-03-02" ;
-  gen:father <#Alastair_Lucas_Graham_Stewart-Richardson> ;
+  gen:father <https://www.wikidata.org/wiki/Q75731251> ;
   gen:mother <#Diana_Claire_Rawstorne> .
   []
-    gen:spouse <#James_George_Stewart-Richardson> , <#Lucinda_Rose_Cecil> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75731258> , <#Lucinda_Rose_Cecil> ;
 	gen:startDate "2001-06-23" .
 
 

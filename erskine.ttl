@@ -173,6 +173,11 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q6540282> , <https://www.wikidata.org/wiki/Q50824401> ;
 	gen:startDate "1592-12-07" .
+<#Lady_Mary_Erskine_(died_1575)>
+  # Lady Mary Erskine, d. 1575-05-03
+  gen:father <https://www.wikidata.org/wiki/Q2389496> ;
+  gen:mother <murray.ttl#Annabel_Murray> .
+  # oo 1573-06-13 Archibald Douglas, 8th Earl of Angus and 5th Earl of Morton, 1555 - 1588-08-04, https://www.wikidata.org/wiki/Q360323
 <https://www.wikidata.org/wiki/Q7617163> # -> Erskine of Kellie
   # Thomas Erskine, 1st Earl of Kellie, 1566 - 1639-06-12
   gen:father <https://www.wikidata.org/wiki/Q4718808> ;
@@ -244,7 +249,7 @@
   # Anne Erskine
   gen:father <#Sir_George_Erskine_of_Innerteil> .
   # and Isobel Brown, Lady Murray
-  # oo 1627-10-27~ John Melville, 3rd Lord Melville of Monymaill, d. 1643-05-22, son of John Melville, 6th of Raith and Margaret Scott
+  # oo 1627-10-27~ John Melville, 3rd Lord Melville of Monymaill, d. 1643-05-22, https://www.wikidata.org/wiki/Q75853880
 <#Margaret_Erskine_of_Innerteil>
   # Margaret Erskine
   gen:father <#Sir_George_Erskine_of_Innerteil> .
@@ -609,12 +614,15 @@
 
 #<https://www.wikidata.org/wiki/Q5236634>
   # David Lindsay, 8th Earl of Crawford, d. 1542-11-27
-  # oo 1500-11-06b Lady Elizabeth Hay, daughter of William Hay, 3rd Earl of Erroll (1449~ – 1507-01-14, https://www.wikidata.org/wiki/Q19873052) and oo (2) Lady Elizabeth Leslie (daughter of George Leslie, 1st Earl of Rothes (1406/1417 – 1490, https://www.wikidata.org/wiki/Q5541683) and Christian Haliburton)
+  # oo Lady Elizabeth Hay
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5236634> , <hay.ttl#Lady_Elizabeth_Hay_1> ;
+	gen:startDate "1500-11-06b" .
 
 <lindsay.ttl#Lady_Elizabeth_Lindsay_(died_1538)>
   # Lady Elizabeth Lindsay, d. 1538-07-29
-  gen:father <https://www.wikidata.org/wiki/Q5236634> .
-  # and Lady Elizabeth Hay
+  gen:father <https://www.wikidata.org/wiki/Q5236634> ;
+  gen:mother <hay.ttl#Lady_Elizabeth_Hay_1> .
   # oo 1525-12-25 Sir John Erskine, 5th of Dun, 1509 - 1590-03-22, #Sir_John_Erskine,_5th_of_Dun
 
 # ----
@@ -656,23 +664,6 @@
   # Magdalen Livingston
   gen:father <https://www.wikidata.org/wiki/Q4719421> .
   # oo 1562-01-07 Arthur Erskine of Blackgrange, #Arthur_Erskine_of_Blackgrange
-
-# ----
-#<https://www.wikidata.org/wiki/Q5237500>
-  # David Leslie, 5th Earl of Leven, 1660-05-05 - 1728-06-06
-  # oo Anne Wemyss, 1675-10-18 - 1702-01-09
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q5237500> , <wemyss.ttl#Anne_Wemyss> ;
-	gen:startDate "1691-09-03" .
-
-<https://www.wikidata.org/wiki/Q4719644>
-  # Alexander Leslie, 7th Earl of Leven, 1696a - 1754-09-02
-  gen:father <https://www.wikidata.org/wiki/Q5237500> ;
-  gen:mother <wemyss.ttl#Anne_Wemyss> .
-  # oo Mary Erskine, d. 1723-07-12
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q4719644> , <erskine.ttl#Mary_Erskine_(died_1723)> ;
-	gen:startDate "1721-02-23" .
 
 # ----
 #<#Sir_John_Mackenzie_of_Tarbat,_1st_Baronet>
@@ -2588,7 +2579,7 @@
 <#Magdalene_Erskine>
   # Hon. Magdalene Erskine
   gen:father <https://www.wikidata.org/wiki/Q2227936> .
-  # oo 1687-04-23 Alexander Monypenny, 20th of Pitmilly, 1642 - 1715, carnegie.ttl#Alexander_Monypenny,_20th_of_Pitmilly
+  # oo 1687-04-23 Alexander Monypenny, 20th of Pitmilly, 1642 - 1715, leslie.ttl#Alexander_Monypenny,_20th_of_Pitmilly
 
 <https://www.wikidata.org/wiki/Q17321118>
   gen:name "David Erskine, 9th Earl of Buchan"@en ;
@@ -3177,9 +3168,9 @@
   # John Erskine, of Carnock and Cardross, 1695-11-04 - 1768-03-01
   gen:father <#John_Edmund_Erskine> ;
   gen:mother <#Anna_Dundas> .
-  # oo Margaret Melville, d. 1768-03-01, daughter of James Melville
+  # oo Margaret Melville, d. 1768-03-01
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q6231910> , <#Margaret_Melville> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q6231910> , <leslie.ttl#Margaret_Melville_(died_1768)> ;
 	gen:startDate "1719-03" .
   # oo Anne Stirling, daughter of James Stirling of Keir
   []
@@ -3194,7 +3185,7 @@
 <https://www.wikidata.org/wiki/Q6231904>
   # Rev. John Erskine, of Carnock, 1719-06-02 - 1803-01-19
   gen:father <https://www.wikidata.org/wiki/Q6231910> ;
-  gen:mother <#Margaret_Melville> .
+  gen:mother <leslie.ttl#Margaret_Melville_(died_1768)> .
   # oo Hon. Christian Mackay, d. 1800-05-20
   []
     gen:spouse <https://www.wikidata.org/wiki/Q6231904> , <#Christian_Mackay> ;
@@ -3215,6 +3206,11 @@
   []
     gen:spouse <#Archibald_Erskine,_of_Venlaw> , <#Margaret_Barclay-Maitland> ;
 	gen:startDate "1781-04-07" .
+<#Christian_Erskine_(died_1788)>
+  # Christian Erskine, d. 1788-02-01
+  gen:father <https://www.wikidata.org/wiki/Q6231910> ;
+  gen:mother <#Anne_Stirling> .
+  # oo 1762-04-17 Sir William Stirling of Ardoch, 4th Baronet, d. 1799-07-26, https://www.wikidata.org/wiki/Q75825156, son of https://www.wikidata.org/wiki/Q75903072
 
 <#Mary_Erskine_(died_1817)>
   # Mary Erskine, d. 1817-04-15
@@ -4011,6 +4007,21 @@
   gen:father <#Charles_Barclay-Maitland_of_Tillicoultrie> ;
   gen:mother <#Isabel_Barclay_of_Towie> .
   # oo 1781-04-07 Archibald Erskine, of Venlaw, d. 1804-08-01, #Archibald_Erskine,_of_Venlaw
+
+# ----
+<https://www.wikidata.org/wiki/Q75825156>
+  # Sir William Stirling of Ardoch, 4th Baronet, d. 1799-07-26
+  gen:father <https://www.wikidata.org/wiki/Q75903072> .
+  # oo Christian Erskine, d. 1788-02-01
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75825156> , <#Christian_Erskine_(died_1788)> ;
+	gen:startDate "1762-04-17" .
+
+<#Christian_Stirling>
+  # Christian Stirling, 1761~ - 1832-09-14
+  gen:father <https://www.wikidata.org/wiki/Q75825156> ;
+  gen:mother <#Christian_Erskine_(died_1788)> .
+  # oo 1784-12-24 George Dundas of Dundas, 1752 - 1792-08-22, hamilton.ttl#George_Dundas_of_Dundas_(died_1792)
 
 # ----
 <#Rosemary_Freda_Baird>

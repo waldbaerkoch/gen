@@ -140,6 +140,10 @@
 <https://www.wikidata.org/wiki/Q3161131>
   # Sir James Hamilton of Finnart, 1495~ – 1540-08-16
   gen:father <https://www.wikidata.org/wiki/Q1342958> .
+  # oo 1529b Margaret Livingston of Easter Wemyss
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3161131> , <#Margaret_Livingston_of_Easter_Wemyss> ;
+	gen:startDate "" .
 <https://www.wikidata.org/wiki/Q708980>
   # Patrick Hamilton, 1504 – 1528-02-29
   gen:father <https://www.wikidata.org/wiki/Q7146647> .
@@ -195,6 +199,11 @@
   gen:mother <douglas.ttl#Lady_Margaret_Douglas_of_Morton> .
   # oo 1546~ Alexander Gordon, Lord Gordon, d. 1552-09-18a/1553-08-11b, gordon.ttl#Alexander_Gordon,_Lord_Gordon
   # oo 1553-12-23b James Fleming, 4th Lord Fleming, d. 1558-12-15, https://www.wikidata.org/wiki/Q6133970
+<#Grizel_Hamilton_1>
+  # Grizel Hamilton
+  gen:father <https://www.wikidata.org/wiki/Q3161131> ;
+  gen:mother <#Margaret_Livingston_of_Easter_Wemyss> .
+  # oo 1547-12 Andrew Leslie, 5th Earl of Rothes, 1541b – 1611, https://www.wikidata.org/wiki/Q4757744
 <#Margaret_Hamilton_(died_1614)>
   # Margaret Hamilton, d. 1614
   gen:father <https://www.wikidata.org/wiki/Q711983> .
@@ -236,6 +245,14 @@
   gen:father <https://www.wikidata.org/wiki/Q3679786> ;
   gen:mother <gordon.ttl#Margaret_Seton> .
   # oo Janet Hamilton, d. 1613-09, daughter of Sir Robert Hamilton of Leckprevick and Easter Greenlees
+<#Sir_George_Hamilton_(died_1657b)>
+  # Sir George Hamilton, 1577a - 1657b
+  gen:father <https://www.wikidata.org/wiki/Q3679786> ;
+  gen:mother <gordon.ttl#Margaret_Seton> .
+  # oo Isobel Leslie
+  []
+    gen:spouse <#Sir_George_Hamilton_(died_1657b)> , <https://www.wikidata.org/wiki/Q76006662> ;
+	gen:startDate "1609-02-24b" .
 <https://www.wikidata.org/wiki/Q16840891>
   # Sir Frederick Hamilton, 1590~ - 1646-03-31
   gen:father <https://www.wikidata.org/wiki/Q3679786> ;
@@ -259,7 +276,7 @@
   # Lady Margaret Hamilton, b. 1605a/1625b
   gen:father <https://www.wikidata.org/wiki/Q335611> ;
   gen:mother <https://www.wikidata.org/wiki/Q4813> .
-  # oo 1640 John Lindsay, 17th Earl of Crawford, 1611~ - 1678, https://www.wikidata.org/wiki/Q4262007
+  # oo 1630~ John Lindsay, 17th Earl of Crawford, 1611~ - 1678, https://www.wikidata.org/wiki/Q4262007
 <#Lady_Mary_Hamilton_(died_1633)>
   # Lady Mary Hamilton, d. 1633-10-29
   gen:father <https://www.wikidata.org/wiki/Q335611> ;
@@ -445,13 +462,14 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q3702050> , <#Elizabeth_Colepeper> ;
 	gen:startDate "1661" .
-<#Sir_George_Hamilton>
+<#Sir_George_Hamilton_(died_1676)>
   # Sir George Hamilton, 1621b – 1676, Comte de Hamilton
   gen:father <https://www.wikidata.org/wiki/Q3760518> ;
   gen:mother <butler.ttl#Lady_Mary_Butler_(died_1680)> .
-  # oo 1665 Frances Jennings, 1647~ - 1730-03-09
+  # oo Frances Jennings, 1647~ - 1730-03-09, daughter of https://www.wikidata.org/wiki/Q3430912 and Frances Thornhurst
   []
-    gen:spouse <#Sir_George_Hamilton> , <https://www.wikidata.org/wiki/Q957116> .
+    gen:spouse <#Sir_George_Hamilton_(died_1676)> , <https://www.wikidata.org/wiki/Q957116> ;
+	gen:startDate "1665" .
 <https://www.wikidata.org/wiki/Q670524>
   # Elizabeth Hamilton, 1640 - 1708-06-03
   gen:father <https://www.wikidata.org/wiki/Q3760518> ;
@@ -537,18 +555,18 @@
     gen:spouse <#William_Hamilton_of_Chilston_Park> , <#Margaret_Colepeper> .
 <#Elizabeth_Hamilton_(died_1724)>
   # Elizabeth Hamilton, d. 1724-06
-  gen:father <#Sir_George_Hamilton> ;
+  gen:father <#Sir_George_Hamilton_(died_1676)> ;
   gen:mother <https://www.wikidata.org/wiki/Q957116> .
   # oo 1685-12 Richard Parsons, Viscount Rosse, 1656~ - 1703-01-30, https://www.wikidata.org/wiki/Q44607232
 <#Frances_Hamilton_(died_1751)>
   # Frances Hamilton, d. 1751-11-16
-  gen:father <#Sir_George_Hamilton> ;
+  gen:father <#Sir_George_Hamilton_(died_1676)> ;
   gen:mother <https://www.wikidata.org/wiki/Q957116> .
   # oo 1687 Henry Dillon, 8th Viscount Dillon, 1668 - 1714-01-13, https://www.wikidata.org/wiki/Q16169317
   # oo Patrick Bellew, of Barmeath, d. 1720-06-12
 <#Mary_Hamilton_(died_1736)>
   # Mary Hamilton, 1676b - 1736-02-15
-  gen:father <#Sir_George_Hamilton> ;
+  gen:father <#Sir_George_Hamilton_(died_1676)> ;
   gen:mother <https://www.wikidata.org/wiki/Q957116> .
   # oo 1688-05-15 Nicholas Barnewall, 3rd Viscount Barnewall of Kingsland, 1668-04-15 - 1725-06-14, https://www.wikidata.org/wiki/Q6042575
 <#Julius_Frank_Xavier_Leopold_Graf_Hamilton>
@@ -1569,7 +1587,7 @@
   gen:father <#Gavin_Hamilton,_7th_of_Raploch> ;
   gen:mother <#Jean_Dishington> .
   # oo Robert Ross, 5th Lord Ross of Halkhead, 1563 – 1595-10, https://www.wikidata.org/wiki/Q7349388
-  # oo 1601-02-24b Robert Melville, 2nd Lord Melville of Monymaill, d. 1635-03-09, #Robert_Melville,_2nd_Lord_Melville_of_Monymaill
+  # oo 1601-02-24b Robert Melville, 2nd Lord Melville of Monymaill, d. 1635-03-09, https://www.wikidata.org/wiki/Q75258606
 
 <https://www.wikidata.org/wiki/Q16274788>
   # James Hamilton, 1st Earl of Clanbrassill, d. 1659-06-20
@@ -2374,6 +2392,11 @@
   # oo Isabel Home
   []
     gen:spouse <#Alexander_Hamilton_of_Innerwick> , <home.ttl#Isabel_Home_3> .
+<#Elizabeth_Hamilton_4>
+  # Elizabeth Hamilton
+  gen:father <#Alexander_Hamilton,_of_Innerwick,_younger> ;
+  gen:mother <kerr.ttl#Lady_Elizabeth_Kerr-Hamilton> .
+  # oo George Dundas of Dundas, d. 1689a, https://www.wikidata.org/wiki/Q75902944
 <#Sir_Charles_Hamilton,_2nd_Baronet>
   # Sir Charles Hamilton, 2nd Baronet, 1641b - 1689-05-09b
   # 2nd Baronet Hamilton, of Castle Hamilton, co. Cavan 1673
@@ -2472,7 +2495,7 @@
   # Lady Christian Hamilton, 1594b - 1646-01-22b
   gen:father <https://www.wikidata.org/wiki/Q7613963> ;
   gen:mother <#Margaret_Borthwick> .
-  # oo 1610 Robert Lindsay, 9th Lord Lindsay of the Byres, d. 1616-07-09
+  # oo 1610-06-26 Robert Lindsay, 9th Lord Lindsay of the Byres, d. 1616-07-09, https://www.wikidata.org/wiki/Q75342358
   # oo 1617-12-09 Robert Boyd, 7th Lord Boyd, 1595-11 - 1628-08-28, https://www.wikidata.org/wiki/Q7342264
 <#Lady_Isabel_Hamilton>
   # Lady Isabel Hamilton, 1596-02-18 - 1665a
@@ -3026,7 +3049,7 @@
     gen:spouse <#William_Hamilton_of_Airdrie> , <#Margaret_Bogle> ;
 	gen:startDate "1714b" .
 
-<#Grizel_Hamilton_1>
+<#Grizel_Hamilton_3>
   # Grizel Hamilton
   gen:father <https://www.wikidata.org/wiki/Q26838322> .
   # and Jean Hay of Haystoun
@@ -3229,6 +3252,18 @@
   gen:father <https://www.wikidata.org/wiki/Q6226649> ;
   gen:mother <#Judith_Culpeper> .
   # oo 1661 James Hamilton, 1620~ - 1673-06-06, https://www.wikidata.org/wiki/Q3702050
+
+# ----
+<https://www.wikidata.org/wiki/Q957116>
+  # Frances Jennings, 1647~ - 1730-03-09
+  gen:father <https://www.wikidata.org/wiki/Q3430912> ;
+  gen:mother <https://www.wikidata.org/wiki/Q61813364> .
+  # oo 1665 Sir George Hamilton, 1621b – 1676, Comte de Hamilton, #Sir_George_Hamilton_(died_1676)
+<https://www.wikidata.org/wiki/Q19176>
+  # Sarah Jenyns, 1660-06-05 - 1744-10-18
+  gen:father <https://www.wikidata.org/wiki/Q3430912> ;
+  gen:mother <https://www.wikidata.org/wiki/Q61813364> .
+  # oo 1678-10-01 John Churchill, 1st Duke of Marlborough, 1650-05-26 - 1722-06-16, https://www.wikidata.org/wiki/Q153803
 
 # --------
 #<https://www.wikidata.org/wiki/Q7349188>
@@ -3686,12 +3721,24 @@
   # oo 1831-10-06 Sir Robert North Collie Hamilton of Silvertonhill, 6th Baronet, 1802-04-07 - 1887-05-31, https://www.wikidata.org/wiki/Q7528788
 
 # ----
-#<#William_Nisbet_of_Dirleton_(died_1783)>
-  # William Nisbet of Dirleton, 1720~ - 1783-03-01, son of William Nisbet of Dirleton
+#<#William_Nisbet_of_Dirleton_(born_1700b)>
+  # William Nisbet of Dirleton, b. 1700b
+
+<#Janet_Nisbet>
+  # Janet Nisbet, b. 1718b
+  gen:father <#William_Nisbet_of_Dirleton_(born_1700b)> .
+  # oo 1732~ James Ruthven, 5th Lord Ruthven of Freeland, d. 1783-07-03, https://www.wikidata.org/wiki/Q75274772 (elphinstone.ttl)
+<#William_Nisbet_of_Dirleton_(died_1783)>
+  # William Nisbet of Dirleton, 1720~ - 1783-03-01
+  gen:father <#William_Nisbet_of_Dirleton_(born_1700b)> .
   # oo Mary Hamilton, d. 1797-03-13
   []
     gen:spouse <#William_Nisbet_of_Dirleton_(died_1783)> , <#Mary_Hamilton_(died_1797)> ;
 	gen:startDate "1747-02-02" .
+<#Wilhelmina_Nisbet>
+  # Wilhelmina Nisbet, 1724 - 1798-05-10
+  gen:father <#William_Nisbet_of_Dirleton_(born_1700b)> .
+  # oo 1747-07-29 David Melville, 6th Earl of Leven, 1722-05-04 - 1802-06-09, https://www.wikidata.org/wiki/Q5237499
 
 <#Mary_Nisbet>
   # Mary Nisbet, daughter of William Nisbet of Dirleton (1720~ - 1783-03-01, son of William Nisbet of Dirleton) and hamilton.ttl#Mary_Hamilton_(died_1797)
@@ -3713,13 +3760,6 @@
   gen:mother <manners.ttl#Mary_Manners> .
   # oo 1799-03-11 (div 1808) Thomas Bruce, 7th Earl of Elgin and 11th Earl of Kincardine, 1766-07-20 - 1841-11-14, https://www.wikidata.org/wiki/Q335098
   # oo 1808-04-20 Robert Ferguson of Raith, 1769-09-08 – 1840-12-01, https://www.wikidata.org/wiki/Q7344305
-
-# ----
-<leslie.ttl#Lady_Emily_Eleanor_Leslie-Melville>
-  # Lady Emily Eleanor Leslie-Melville, 1840-05-22 - 1882-11-11
-  gen:father <https://www.wikidata.org/wiki/Q5236512> .
-  # and Elizabeth Anne Campbell
-  # oo 1864-03-29 John Glencairn Carter Hamilton, 1st Baron Hamilton of Dalzell, 1829-11-16 - 1900-10-15, https://www.wikidata.org/wiki/Q6237418
 
 # ----
 #<https://www.wikidata.org/wiki/Q8008387>
@@ -4209,20 +4249,6 @@
 	gen:startDate "1614/1615" .
 
 # ----
-<#Robert_Melville,_2nd_Lord_Melville_of_Monymaill>
-  # Robert Melville, 2nd Lord Melville of Monymaill, d. 1635-03-09
-  gen:father <https://www.wikidata.org/wiki/Q18527347> .
-  # and Catherine Adamson
-  # oo Margaret Kerr, d. 1594-05-24
-  []
-    gen:spouse <#Robert_Melville,_2nd_Lord_Melville_of_Monymaill> , <kerr.ttl#Margaret_Kerr_(died_1594)> ;
-	gen:startDate "1584-10-28" .
-  # oo Jean Hamilton, d. 1631-05
-  []
-    gen:spouse <#Robert_Melville,_2nd_Lord_Melville_of_Monymaill> , <hamilton.ttl#Jean_Hamilton_of_Raploch> ;
-	gen:startDate "1601-02-24b" .
-
-# ----
 <#Lady_Anne_Carey>
   # Lady Anne Carey, d. 1688-01-15
   gen:father <https://www.wikidata.org/wiki/Q5719179> .
@@ -4314,13 +4340,112 @@
   # and Dorothea Cuffe
   # oo 1640b Sir Francis Hamilton, 1st Baronet, 1610b - 1673, #Sir_Francis_Hamilton,_1st_Baronet
 
-# ----
-<https://www.wikidata.org/wiki/Q30645132>
-  # Margaret Leslie, 8th Countess of Rothes, d. 1700-08-20
-  gen:father <https://www.wikidata.org/wiki/Q6244629> .
-  # oo 1674-10-08 Charles Hamilton, 5th Earl of Haddington, 1650~ - 1685-05, https://www.wikidata.org/wiki/Q5078719
+# ====
+<https://www.wikidata.org/wiki/Q75902944>
+  # George Dundas, 19th of Dundas, d. 1689a
+  gen:father <https://www.wikidata.org/wiki/Q75902917> .
+  # and Anne Monteith
+  # oo Elizabeth Hamilton
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75902944> , <#Elizabeth_Hamilton_4> .
+
+<#Walter_Dundas,_20th_of_Dundas>
+  # Walter Dundas, 20th of Dundas
+  gen:father <https://www.wikidata.org/wiki/Q75902944> ;
+  gen:mother <#Elizabeth_Hamilton_4> .
+  # oo Lady Christian Leslie, d. 1689
+  []
+    gen:spouse <#Walter_Dundas,_20th_of_Dundas> ,  <leslie.ttl#Lady_Christian_Leslie_(died_1689)> .
+<#Christian_Dundas>
+  # Christian Dundas
+  gen:father <https://www.wikidata.org/wiki/Q75902944> ;
+  gen:mother <#Elizabeth_Hamilton_4> .
+  # oo Sir Walter Seton of Abercorn, 1st Baronet, d. 1692-02-20, gordon.ttl#Sir_Walter_Seton_of_Abercorn,_1st_Baronet
+<https://www.wikidata.org/wiki/Q75903004>
+  # George Dundas, 22nd of Dundas
+  gen:father <https://www.wikidata.org/wiki/Q75902944> ;
+  gen:mother <#Elizabeth_Hamilton_4> .
+  # oo Margaret Durie
+  # oo Margaret Hay, daughter of George Hay of Monckton
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75903004> , <#Margaret_Hay> ;
+	gen:startDate "1643" .
+
+<#Ralph_Dundas,_21st_of_Dundas>
+  # Ralph Dundas, 21st of Dundas, d. 1696-01-10
+  gen:father <#Walter_Dundas,_20th_of_Dundas> ;
+  gen:mother <leslie.ttl#Lady_Christian_Leslie_(died_1689)> .
+  # oo Elizabeth Sharp
+<#Barbara_Dundas>
+  # Barbara Dundas, d. 1719-02-23
+  gen:father <#Walter_Dundas,_20th_of_Dundas> ;
+  gen:mother <leslie.ttl#Lady_Christian_Leslie_(died_1689)> .
+  # oo 1689-08-27 Alexander Melville, Lord Raith, 1655-12-23 - 1698-03-27, https://www.wikidata.org/wiki/Q75853895
+<https://www.wikidata.org/wiki/Q26213297>
+  # George Dundas, 21st of Dundas, 1690 - 1762
+  gen:father <https://www.wikidata.org/wiki/Q75903004> ;
+  gen:mother <#Margaret_Hay> .
+  # oo Alison Bruce, d. 1754-07-31, daughter of James Bruce, 6th of Kennet and Mary Swinton
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q26213297> , <#Alison_Bruce> ;
+	gen:startDate "1718-06-20" .
+
+<https://www.wikidata.org/wiki/Q26857627>
+  # James Dundas, 24th of Dundas, 1721-06-18 - 1780-07-20
+  gen:father <https://www.wikidata.org/wiki/Q26213297> ;
+  gen:mother <#Alison_Bruce> .
+  # oo Hon. Jean Forbes, d. 1774-07-28
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q26857627> , <#Jean_Forbes> ;
+	gen:startDate "1748-04-22" .
+
+<#George_Dundas_of_Dundas_(died_1792)>
+  # George Dundas of Dundas, 1752 - 1792-08-22
+  # 25th Chief of the Name and Arms of Dundas 1780
+  gen:father <https://www.wikidata.org/wiki/Q26857627> ;
+  gen:mother <#Jean_Forbes> .
+  # oo Christian Stirling, 1761~ - 1832-09-14
+  []
+    gen:spouse <#George_Dundas_of_Dundas_(died_1792)> , <erskine.ttl#Christian_Stirling> ;
+	gen:startDate "1784-12-24" .
+<#Alice_Dundas>
+  # Alice Dundas, d. 1831-06-24
+  gen:father <https://www.wikidata.org/wiki/Q26857627> ;
+  gen:mother <#Jean_Forbes> .
+  # oo 1780-12-27 John Wedderburn, 1729-02-21 - 1803-06-14, https://www.wikidata.org/wiki/Q6263346 (hope.ttl)
+
+<https://www.wikidata.org/wiki/Q66384761>
+  # James Dundas of Dundas, 1793-01-14 - 1881-03-09
+  # 28th of Dundas Castle
+  # 26th Chief of the Name and Arms of Dundas 1793
+  gen:father <#George_Dundas_of_Dundas_(died_1792)> ;
+  gen:mother <erskine.ttl#Christian_Stirling> .
+  # oo Hon. Mary Tufton Duncan, d. 1867-05-24
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q66384761> , <dalrymple.ttl#Mary_Tufton_Duncan> ;
+	gen:startDate "1813-07-20" .
+
+<#Caroline_Stirling_Dundas>
+  # Caroline Stirling Dundas, 1815-05-06 - 1862-01-01
+  gen:father <https://www.wikidata.org/wiki/Q66384761> ;
+  gen:mother <dalrymple.ttl#Mary_Tufton_Duncan> .
+  # oo 1837-08-02 Hon. Henry Amelius Coventry, 1815-10-15 - 1873-04-03, coventry.ttl#Henry_Amelius_Coventry
 
 # ----
+#<https://www.wikidata.org/wiki/Q75903096>
+  # William Forbes, 13th Lord Forbes, 1689b - 1730-06-26
+  # oo Dorothy Dale, daughter of William Dale
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75903096> , <#Dorothy_Dale> ;
+	gen:startDate "1720-09-03" .
+
+<#Jean_Forbes>
+  # Hon. Jean Forbes, d. 1774-07-28
+  gen:father <https://www.wikidata.org/wiki/Q75903096> ;
+  gen:mother <#Dorothy_Dale> .
+  # oo 1748-04-22 James Dundas, 24th of Dundas, 1721-06-18 - 1780-07-20, https://www.wikidata.org/wiki/Q26857627
+
+# ====
 #<https://www.wikidata.org/wiki/Q8004477>
   # Sir William Anstruther, d. 1711-01-24
   # oo Lady Helen Hamilton, b. 1656-06-28b
@@ -4548,7 +4673,7 @@
   # Benjamin Bell of Hunthill, 1749-09-06 – 1806-04-05
   # oo Grizel Hamilton
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q3638242> , <#Grizel_Hamilton_1> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q3638242> , <#Grizel_Hamilton_3> ;
 	gen:startDate "1774" .
 
 # ----

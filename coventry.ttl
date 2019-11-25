@@ -321,7 +321,7 @@
   gen:mother <beauclerk.ttl#Lady_Mary_Beauclerk> .
   # oo Caroline Stirling Dundas, 1815-05-06 - 1862-01-01
   []
-    gen:spouse <#Henry_Amelius_Coventry> , <#Caroline_Stirling_Dundas> ;
+    gen:spouse <#Henry_Amelius_Coventry> , <hamilton.ttl#Caroline_Stirling_Dundas> ;
 	gen:startDate "1837-08-02" .
 <#Eleonora_Julia_Coventry>
   # Eleonora Julia Coventry, d. 1897-12-15
@@ -376,7 +376,7 @@
 <#Henry_Amelius_Beauclerk_Coventry>
   # Henry Amelius Beauclerk Coventry, 1842-05-15 - 1885-06-29
   gen:father <#Henry_Amelius_Coventry> ;
-  gen:mother <#Caroline_Stirling_Dundas> .
+  gen:mother <hamilton.ttl#Caroline_Stirling_Dundas> .
   # oo Lady Evelyn Mary Craven, 1839 - 1924-11-07
   []
     gen:spouse <#Henry_Amelius_Beauclerk_Coventry> , <brudenell.ttl#Lady_Evelyn_Mary_Craven> ;
@@ -384,7 +384,7 @@
 <#Henry_Aubrey_Coventry>
   # Henry Aubrey Coventry, 1845-10-10 - 1909-05-13
   gen:father <#Henry_Amelius_Coventry> ;
-  gen:mother <#Caroline_Stirling_Dundas> .
+  gen:mother <hamilton.ttl#Caroline_Stirling_Dundas> .
   # oo Lady Alexina Duff, 1851-03-20 - 1882-04-30
   []
     gen:spouse <#Henry_Aubrey_Coventry> , <duff.ttl#Lady_Alexina_Duff> ;
@@ -392,7 +392,7 @@
 <#Mary_Eleanor_Lauderdale_Coventry>
   # Mary Eleanor Lauderdale Coventry, 1847-09-25 - 1928-10-31
   gen:father <#Henry_Amelius_Coventry> ;
-  gen:mother <#Caroline_Stirling_Dundas> .
+  gen:mother <hamilton.ttl#Caroline_Stirling_Dundas> .
   # oo 1868-12-02 Henry Charles Howard, 18th Earl of Suffolk, 1833-09-10 - 1898-03-31, https://www.wikidata.org/wiki/Q13582499
 <#Gilbert_William_Coventry>
   # Gilbert William Coventry, 1868-04-17 - 1947-11-11
@@ -751,6 +751,14 @@
   gen:mother <https://www.wikidata.org/wiki/Q62027802> .
   # oo 1764-09-27 George William Coventry, 6th Earl of Coventry, 1722-04-26 - 1809-09-03, https://www.wikidata.org/wiki/Q5538164
 
+<https://www.wikidata.org/wiki/Q5728589>
+  # Henry Beauchamp St. John, 13th Baron St. John of Bletso, 1758-08-02 - 1805-12-18
+  gen:father <https://www.wikidata.org/wiki/Q16859528> .
+  # and Susanna Simond
+  # oo Emma Maria Elizabeth Whitbread, d. 1825-07-10
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5728589> , <grey.ttl#Emma_Maria_Elizabeth_Whitbread> ;
+	gen:startDate "1780-12-02" .
 <#George_St._John>
   # Hon. George St. John, 1764-10-19 - 1802
   gen:father <https://www.wikidata.org/wiki/Q16859528> ;
@@ -765,11 +773,29 @@
   gen:mother <#Susanne_Louise_Simond> .
   # oo Robert Cotton Trefusis, 1742b - 1778-08-04~, clinton.ttl#Robert_Cotton_Trefusis
 
+<#Margaret_Letitia_Matilda_St._John>
+  # Hon. Margaret Letitia Matilda St. John, d. 1868-03-05
+  gen:father <https://www.wikidata.org/wiki/Q5728589> ;
+  gen:mother <grey.ttl#Emma_Maria_Elizabeth_Whitbread> .
+  # oo 1813-04-20 Sir Albert Pell, d. 1832-09-06, #Sir_Albert_Pell
 <#Elizabeth_Barbara_St._John>
   # Elizabeth Barbara St. John, d. 1833-06-17
   gen:father <#George_St._John> ;
   gen:mother <#Lavinia_Breton-Wolstenholme> .
   # oo 1796-03-31 Sir Henry Vaughan Halford, 1st Baronet, 1766-10-02 - 1844-03-09, https://www.wikidata.org/wiki/Q5722464
+# ----
+#<#Sir_Albert_Pell>
+  # Sir Albert Pell, d. 1832-09-06
+  # oo 1813-04-20 Hon. Margaret Letitia Matilda St. John, d. 1868-03-05
+  []
+    gen:spouse <#Sir_Albert_Pell> , <#Margaret_Letitia_Matilda_St._John> ;
+	gen:startDate "" .
+
+<#Eliza_Elizabeth_Pell>
+  # Eliza Elizabeth Pell, 1822-02-01 - 1888-06-09
+  gen:father <#Sir_Albert_Pell> ;
+  gen:mother <#Margaret_Letitia_Matilda_St._John> .
+  # oo 1847-12-21 Alexander Pym, 1820-01-08 - 1889-08-13, leslie.ttl#Alexander_Pym
 
 # ----
 <https://www.wikidata.org/wiki/Q28920962>
@@ -952,21 +978,6 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q9287833> , <#Lady_Mary_Augusta_Coventry> ;
 	gen:startDate "1833-05-09" .
-
-# ----
-#<#James_Dundas_of_Dundas>
-  # James Dundas of Dundas, 1793-01-14 - 1881-03-09
-  # 28th of Dundas Castle
-  # oo Hon. Mary Tufton Duncan, d. 1867-05-24
-  []
-    gen:spouse <#James_Dundas_of_Dundas> , <dalrymple.ttl#Mary_Tufton_Duncan> ;
-	gen:startDate "1813-07-20" .
-
-<#Caroline_Stirling_Dundas>
-  # Caroline Stirling Dundas, 1815-05-06 - 1862-01-01
-  gen:father <#James_Dundas_of_Dundas> ;
-  gen:mother <dalrymple.ttl#Mary_Tufton_Duncan> .
-  # oo 1837-08-02 Hon. Henry Amelius Coventry, 1815-10-15 - 1873-04-03, #Henry_Amelius_Coventry
 
 # ----
 #<#George_Seaham_Tucker_de_Windt>
