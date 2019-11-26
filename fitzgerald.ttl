@@ -2,6 +2,7 @@
 @prefix gen: <http://jjkoch.de/gen#> .
 @prefix wdata: <https://www.wikidata.org/wiki/> .
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 <https://www.wikidata.org/wiki/Q2394789>
   gen:name "Gerald de Windsor"@en ;
@@ -3939,6 +3940,47 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7789696> , <#Lady_Cecilia_Olivia_Geraldine_FitzGerald> ;
 	gen:startDate "1806-08-18" .
+<#Caroline_Georgina_Harriet_Foley>
+  # Hon. Caroline Georgina Harriet Foley, 1777~ - 1843-01-01
+  gen:father <https://www.wikidata.org/wiki/Q7789695> .
+  # and Lady Henrietta Stanhope
+  # oo 1796-08-16 Christopher Bethell-Codrington, 1764-10 - 1843-02-04, #Christopher_Bethell-Codrington
+# ----
+#<#Christopher_Bethell-Codrington>
+  # Christopher Bethell-Codrington, 1764-10 - 1843-02-04
+  # oo Hon. Caroline Georgina Harriet Foley, 1777~ - 1843-01-01
+  []
+    gen:spouse <#Christopher_Bethell-Codrington> , <#Caroline_Georgina_Harriet_Foley> ;
+	gen:startDate "1796-08-16" .
+
+<#Georgina_Elizabeth_Bethell-Codrington>
+  # Georgina Elizabeth Bethell-Codrington, 1799~ - 1866-11-07
+  gen:father <#Christopher_Bethell-Codrington> ;
+  gen:mother <#Caroline_Georgina_Harriet_Foley> .
+  # oo 1828-04-18 Sir Henry Peyton, 3rd Baronet, 1804-06-30 – 1866-02-18, https://www.wikidata.org/wiki/Q17013960
+# ----
+<https://www.wikidata.org/wiki/Q17013960>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75308840> .
+  # Sir Henry Peyton, 3rd Baronet, 1804-06-30 – 1866-02-18
+  # oo Georgina Elizabeth Bethell-Codrington, 1799~ - 1866-11-07
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q17013960> , <#Georgina_Elizabeth_Bethell-Codrington> ;
+	gen:startDate "1828-04-18" .
+
+<https://www.wikidata.org/wiki/Q75308927>
+  # Sir Algernon William Peyton, 4th Baronet, 1833-04-13 - 1872-03-25
+  gen:father <https://www.wikidata.org/wiki/Q17013960> ;
+  gen:mother <#Georgina_Elizabeth_Bethell-Codrington> .
+  # oo Laura Sarah Webb, 1850-07-23 - 1933-11-16
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75308927> , <https://www.wikidata.org/wiki/Q75299186> ;
+	gen:startDate "1870-11-24" .
+# ----
+#<https://www.wikidata.org/wiki/Q75299186>
+  # Laura Sarah Webb, 1850-07-23 - 1933-11-16
+  # daughter of Daniel Hale Webb
+  # oo 1870-11-24 Sir Algernon William Peyton, 4th Baronet, 1833-04-13 - 1872-03-25, https://www.wikidata.org/wiki/Q75308927
+  # oo 1878-01-30 Arthur Annesley, 11th Viscount of Valentia, 1843-08-23 – 1927-01-20, https://www.wikidata.org/wiki/Q4797826
 
 # ----
 <#Lady_Charlotte_Augusta_Stanhope>
