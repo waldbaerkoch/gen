@@ -1762,14 +1762,31 @@
   # oo 1833-06-20 Sir Thomas Barrett-Lennard, 1st Baronet, 1762-06-06 - 1857-06-25, https://www.wikidata.org/wiki/Q7529041
 
 # ====
-#<#Henry_Roper,_8th_Baron_Teynham>
+#<#Christopher_Roper,_5th_Baron_Teynham>
+  # Christopher Roper, 5th Baron Teynham, d. 1689-07-24b
+  # oo Hon. Elizabeth Browne, d. 1686a
+  []
+    gen:spouse <#Christopher_Roper,_5th_Baron_Teynham> , <#Elizabeth_Browne> ;
+	gen:startDate "1674" .
+
+<#Henry_Roper,_8th_Baron_Teynham>
   # Henry Roper, 8th Baron Teynham, 1676~ - 1723-05-16
-  # son of Christopher Roper, 5th Baron Teynham
-  # and Hon. Elizabeth Browne
+  gen:father <#Christopher_Roper,_5th_Baron_Teynham> ;
+  gen:mother <#Elizabeth_Browne> .
   # oo Anne Lennard, 16th Baroness Dacre, 1684-08-17 - 1755-06-26
   []
     gen:spouse <#Henry_Roper,_8th_Baron_Teynham> , <#Anne_Lennard,_16th_Baroness_Dacre> ;
 	gen:startDate "1718-03" .
+<#Anne_Roper>
+  # Hon. Anne Roper, d. 1744/1746
+  gen:father <#Christopher_Roper,_5th_Baron_Teynham> ;
+  gen:mother <#Elizabeth_Browne> .
+  # oo 1710-06-24 Bernard Howard, 1674-03-14 - 1735-04-22, howard.ttl#Bernard_Howard_(died_1735)
+<#Winifred_Roper>
+  # Hon. Winifred Roper
+  gen:father <#Christopher_Roper,_5th_Baron_Teynham> ;
+  gen:mother <#Elizabeth_Browne> .
+  # oo 1705-07-14 Thomas Stonor, 1677-06-20 - 1724-08-10, #Thomas_Stonor
 
 <#Anna_Maria_Roper>
   # Hon. Anna Maria Roper, 1719-08-20 - 1782
@@ -1790,6 +1807,25 @@
   gen:father <#Charles_Roper> ;
   gen:mother <#Gertrude_Trevor> .
   # oo 1771-04-20 Thomas Brand, 1749-09-17 – 1794-02-21, https://www.wikidata.org/wiki/Q26790476
+# ----
+<#Elizabeth_Browne>
+  # Hon. Elizabeth Browne, d. 1686a
+  gen:father <https://www.wikidata.org/wiki/Q5480347> ;
+  gen:mother <beaufort.ttl#Lady_Elizabeth_Somerset_(died_1684)> .
+  # oo 1674 Christopher Roper, 5th Baron Teynham, d. 1689-07-24b, #Christopher_Roper,_5th_Baron_Teynham
+# ----
+#<#Thomas_Stonor>
+  # Thomas Stonor, 1677-06-20 - 1724-08-10
+  # oo Hon. Winifred Roper
+  []
+    gen:spouse <#Thomas_Stonor> , <#Winifred_Roper> ;
+	gen:startDate "1705-07-14" .
+
+<#Winifrede_Stonor>
+  # oo Winifrede Stonor, d. 1731-02-03
+  gen:father <#Thomas_Stonor> ;
+  gen:mother <#Winifred_Roper> .
+  # oo 1724-01-07 Philip Howard, 1688-01-24 - 1750-01-23, howard.ttl#Philip_Howard_(died_1750)
 # ----
 #<#Peter_Tyler>
   # Peter Tyler, 1715 - 1763

@@ -150,7 +150,7 @@
   # Lady Elizabeth Howard, d. 1537-09-18
   gen:father <https://www.wikidata.org/wiki/Q709340> ;
   gen:mother <https://www.wikidata.org/wiki/Q239441> .
-  # oo 1524-05-21b Henry Radcliffe, 2nd Earl of Sussex, 1506~ - 1557-02-17, https://www.wikidata.org/wiki/Q16863513
+  # oo 1524-05-21b Henry Radcliffe, 2nd Earl of Sussex, 1506~ - 1557-02-17, https://www.wikidata.org/wiki/Q16863513 (stanley.ttl)
 
 <https://www.wikidata.org/wiki/Q372211>
   # Henry Howard, Earl of Surrey, 1516 - 1547-01-19
@@ -1037,7 +1037,7 @@
   gen:mother <#Catherine_Tattershall> .
   # oo Hon. Anne Roper, d. 1744/1746
   []
-    gen:spouse <#Bernard_Howard_(died_1735)> , <#Anne_Roper> ;
+    gen:spouse <#Bernard_Howard_(died_1735)> , <cavendish.ttl#Anne_Roper> ;
 	gen:startDate "1710-06-24" .
 
 <https://www.wikidata.org/wiki/Q3990644>
@@ -1067,7 +1067,7 @@
   gen:mother <#Mary_Elizabeth_Savile> .
   # oo Winifrede Stonor, d. 1731-02-03
   []
-    gen:spouse <#Philip_Howard_(died_1750)> , <#Winifrede_Stonor> ;
+    gen:spouse <#Philip_Howard_(died_1750)> , <cavendish.ttl#Winifrede_Stonor> ;
 	gen:startDate "1724-01-07" .
   # oo Henrietta Blount, d. 1782-03-26
   []
@@ -1088,7 +1088,7 @@
 <#Henry_Howard_(died_1787)>
   # Henry Howard, 1713-04-09 - 1787-11-11
   gen:father <#Bernard_Howard_(died_1735)> ;
-  gen:mother <#Anne_Roper> .
+  gen:mother <cavendish.ttl#Anne_Roper> .
   # oo Juliana Molyneux, d. 1808-06-12, daughter of Sir William Molyneux, 6th Baronet (d. 1781)
   []
     gen:spouse <#Henry_Howard_(died_1787)> , <#Juliana_Molyneux> ;
@@ -1097,7 +1097,7 @@
 <#Winifrede_Howard_(died_1753)>
   # Winifrede Howard, 1726-08-31 - 1753-07-19
   gen:father <#Philip_Howard_(died_1750)> ;
-  gen:mother <#Winifrede_Stonor> .
+  gen:mother <cavendish.ttl#Winifrede_Stonor> .
   # oo 1749-10-11 William Stourton, 16th Baron Stourton, 1704-08 - 1781-10-03, https://www.wikidata.org/wiki/Q8018886
 <#Anne_Howard_(died_1787)>
   # Anne Howard, 1742-08-29 - 1787-01-15
@@ -3151,18 +3151,12 @@
   # Robert Morley, 6th Baron Morley, 1418-11-20 - 1442-09-25
   # oo Elizabeth de Ros
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q7351417> , <#Elizabeth_de_Ros> .
+    gen:spouse <https://www.wikidata.org/wiki/Q7351417> , <de_ros.ttl#Elizabeth_de_Ros> .
 
 <#Eleanor_Morley,_7th_Baroness_Morley>
   # Eleanor Morley, 7th Baroness Morley, 1442 - 1476
   gen:father <https://www.wikidata.org/wiki/Q7351417> ;
-  gen:mother <#Elizabeth_de_Ros> .
-# ----
-<#Elizabeth_de_Ros>
-  # Elizabeth de Ros
-  gen:father <https://www.wikidata.org/wiki/Q8020820> .
-  # and Margaret d'Arundel
-  # oo Robert Morley, 6th Baron Morley, 1418-11-20 - 1442-09-25, https://www.wikidata.org/wiki/Q7351417
+  gen:mother <de_ros.ttl#Elizabeth_de_Ros> .
 
 # ----
 <https://www.wikidata.org/wiki/Q527147>
@@ -3263,15 +3257,6 @@
     gen:spouse <https://www.wikidata.org/wiki/Q5720194> , <#Lady_Katharine_Howard_(died_1554)> .
 
 # ----
-<https://www.wikidata.org/wiki/Q16863513>
-  # Henry Radcliffe, 2nd Earl of Sussex, 1506~ - 1557-02-17
-  gen:father <https://www.wikidata.org/wiki/Q16863513> ;
-  gen:mother <https://www.wikidata.org/wiki/Q5363546> .
-  # oo Lady Elizabeth Howard, d. 1537-09-18
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q16863513> , <#Lady_Elizabeth_Howard_(died_1537)> ;
-	gen:startDate "1524-05-21b" .
-
 #<https://www.wikidata.org/wiki/Q26912340>
   # John Radcliffe, of Hitchin, 1738 – 1783
   # oo Lady Frances Howard, b. 1745
@@ -3996,22 +3981,6 @@
   gen:father <#William_Ayshford_Sanford> ;
   gen:mother <seymour.ttl#Sarah_Ellen_Seymour> .
   # oo 1884-01-09 Paul Sanford Methuen, 3rd Baron Methuen, 1845-09-01 – 1932-10-30, https://www.wikidata.org/wiki/Q336745
-# ----
-# seymour.ttl:
-<#Henry_Seymour_(died_1849)>
-  # Henry Seymour, of Knoyle House, of Trent, and of Northbrook, 1776-11-10 - 1849-11-27
-  gen:father <#Henry_Seymour_(died_1805)> .
-  # and Louise de Ponthon, Comtesse de Ponthon
-  # oo Jane Hopkinson, d. 1869-03-14, daughter of Benjamin Hopkinson
-  []
-    gen:spouse <#Henry_Seymour_(died_1849)> , <#Jane_Hopkinson> ;
-	gen:startDate "1817-01-12" .
-
-<seymour.ttl#Sarah_Ellen_Seymour>
-  # Sarah Ellen Seymour, 1823-04-24 - 1867-08-14
-  gen:father <#Henry_Seymour_(died_1849)> .
-  # and oo Jane Hopkinson
-  # oo 1857-05-14 William Ayshford Sanford, 1818-12-02 - 1902-10-28, howard.ttl#William_Ayshford_Sanford
 
 # ----
 #<https://www.wikidata.org/wiki/Q26212950>
@@ -4308,31 +4277,6 @@
   # oo Lord George Howard, d. 1721-03-06, #Lord_George_Howard
 
 # ----
-#<#Christopher_Roper,_5th_Baron_Teynham>
-  # Christopher Roper, 5th Baron Teynham, d. 1689-07-24b
-  # oo Hon. Elizabeth Browne, d. 1686a
-  []
-    gen:spouse <#Christopher_Roper,_5th_Baron_Teynham> , <#Elizabeth_Browne> ;
-	gen:startDate "1674" .
-
-<#Anne_Roper>
-  # Hon. Anne Roper, d. 1744/1746
-  gen:father <#Christopher_Roper,_5th_Baron_Teynham> ;
-  gen:mother <#Elizabeth_Browne> .
-  # oo 1710-06-24 Bernard Howard, 1674-03-14 - 1735-04-22, #Bernard_Howard_(died_1735)
-<#Winifred_Roper>
-  # Hon. Winifred Roper
-  gen:father <#Christopher_Roper,_5th_Baron_Teynham> ;
-  gen:mother <#Elizabeth_Browne> .
-  # oo 1705-07-14 Thomas Stonor, 1677-06-20 - 1724-08-10, #Thomas_Stonor
-# ----
-<#Elizabeth_Browne>
-  # Hon. Elizabeth Browne, d. 1686a
-  gen:father <https://www.wikidata.org/wiki/Q5480347> ;
-  gen:mother <beaufort.ttl#Lady_Elizabeth_Somerset_(died_1684)> .
-  # oo 1674 Christopher Roper, 5th Baron Teynham, d. 1689-07-24b, #Christopher_Roper,_5th_Baron_Teynham
-
-# ----
 #<#Sir_Nicholas_Sherburne,_1st_Baronet>
   # Sir Nicholas Sherburne, 1st Baronet, 1658-07-19 - 1717-12-16
   # 1st Baronet, of Stonyhurst Hall 1685-02-04
@@ -4400,20 +4344,6 @@
   gen:father <#Edward_Blount> ;
   gen:mother <#Anne_Guise> .
   # oo 1739-11-08 Philip Howard, 1688-01-24 - 1750-01-23, #Philip_Howard_(died_1750)
-
-# ----
-#<#Thomas_Stonor>
-  # Thomas Stonor, 1677-06-20 - 1724-08-10
-  # oo Hon. Winifred Roper
-  []
-    gen:spouse <#Thomas_Stonor> , <#Winifred_Roper> ;
-	gen:startDate "1705-07-14" .
-
-<#Winifrede_Stonor>
-  # oo Winifrede Stonor, d. 1731-02-03
-  gen:father <#Thomas_Stonor> ;
-  gen:mother <#Winifred_Roper> .
-  # oo 1724-01-07 Philip Howard, 1688-01-24 - 1750-01-23, #Philip_Howard_(died_1750)
 
 # ----
 #<https://www.wikidata.org/wiki/Q8018886>
@@ -6004,20 +5934,6 @@
   # oo 1845-04-24 Hon. Henry Thomas Howard, 1808-11-16 - 1851-01-29, https://www.wikidata.org/wiki/Q5729143
 
 # ----
-#<https://www.wikidata.org/wiki/Q15725713>
-  # John Townshend, 4th Marquess Townshend of Raynham, 1798-03-28 - 1863-09-10
-  # oo Elizabeth Jane Stuart, 1803-07-18 - 1877-01-27
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q15725713> , <stuart.ttl#Elizabeth_Jane_Stuart> ;
-	gen:startDate "1825-08-18" .
-
-<#Lady_Audrey_Jane_Charlotte_Townshend>
-  # Lady Audrey Jane Charlotte Townshend, 1844-11-10 - 1926-02-20
-  gen:father <https://www.wikidata.org/wiki/Q15725713> ;
-  gen:mother <stuart.ttl#Elizabeth_Jane_Stuart> .
-  # oo 1873-09-18 Hon. Greville Theophilus Howard, 1836-12-22 - 1880-07-28, #Greville_Theophilus_Howard
-
-# ----
 #<https://www.wikidata.org/wiki/Q6535458>
   # Levi Ziegler Leiter, 1834-11-02 – 1904-06-09
   # oo Mary Theresa Carver, 1844 – 1913
@@ -6144,8 +6060,9 @@
 	gen:startDate "1573" .
 
 # ----
-#<https://www.wikidata.org/wiki/Q6259721>
+<https://www.wikidata.org/wiki/Q6259721>
   # John Sutton, 3rd Lord Dudley, 1494~ – 1553-09~
+  gen:father <https://www.wikidata.org/wiki/Q16833892> .
   # oo Lady Cicely Grey, d. 1554-04~
   []
     gen:spouse <https://www.wikidata.org/wiki/Q6259721> , <grey.ttl#Lady_Cicely_Grey> ;
