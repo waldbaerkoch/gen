@@ -833,19 +833,13 @@
   # Sir William Ussher, 1561 - 1659
   # oo Isabella Loftus, d. 1597-11-11
   []
-    gen:spouse <#Sir_William_Ussher> , <#Isabella_Loftus> .
+    gen:spouse <#Sir_William_Ussher> , <wellesley.ttl#Isabella_Loftus> .
 
 <#Jane_Ussher>
   # Jane Ussher, d. 1674-05-17
   gen:father <#Sir_William_Ussher> ;
-  gen:mother <#Isabella_Loftus> .
+  gen:mother <wellesley.ttl#Isabella_Loftus> .
   # oo Daniel Molyneux, d. 1632-06-13, #Daniel_Molyneux
-# ----
-<#Isabella_Loftus>
-  # Isabella Loftus, d. 1597-11-11
-  gen:father <https://www.wikidata.org/wiki/Q1243510> .
-  # and Jane Purdon
-  # oo Sir William Ussher, 1561 - 1659, #Sir_William_Ussher
 
 # ----
 <#Elizabeth_Adlercron>
@@ -1354,11 +1348,39 @@
   gen:mother <#Lady_Katherine_Nugent> .
   # oo James O'Reilly, #James_O'Reilly
 # ----
+<https://www.wikidata.org/wiki/Q7792782>
+  # Thomas Nugent, 4th Earl of Westmeath, 1669 - 1752-06-30
+  gen:father <https://www.wikidata.org/wiki/Q5112973> .
+  # and Mary Butler
+  # oo Margaret Bellew, d. 1700
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7792782> , <#Margaret_Bellew> ;
+	gen:startDate "1684" .
+
+<#Lady_Mary_Nugent>
+  # Lady Mary Nugent, 1694 - 1725-07
+  gen:father <https://www.wikidata.org/wiki/Q7792782> ;
+  gen:mother <#Margaret_Bellew> .
+  # oo 1716-09-22 Francis Bermingham, 14th Lord Athenry, 1692 – 1749-03-04, https://www.wikidata.org/wiki/Q5480206
 <#Lady_Katherine_Nugent>
   # Lady Katherine Nugent, b. 1700b
-  gen:father <https://www.wikidata.org/wiki/Q7792782> .
-  # and Margaret Bellew
+  gen:father <https://www.wikidata.org/wiki/Q7792782> ;
+  gen:mother <#Margaret_Bellew> .
   # oo Andrew Nugent, #Andrew_Nugent
+# ----
+#<https://www.wikidata.org/wiki/Q75290433>
+  # John Bellew, 1st Baron Bellew of Duleek, d. 1693-01-12
+  # 1st Baron Bellew of Duleek 1686-10-29
+  # oo Mary Bermingham, d. 1694
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75290433> , <capell.ttl#Mary_Bermingham> ;
+	gen:startDate "1663-11-28" .
+
+<#Margaret_Bellew>
+  # Margaret Bellew, d. 1700
+  gen:father <https://www.wikidata.org/wiki/Q75290433> ;
+  gen:mother <capell.ttl#Mary_Bermingham> .
+  # oo 1684 Thomas Nugent, 4th Earl of Westmeath, 1669 - 1752-06-30, https://www.wikidata.org/wiki/Q7792782
 
 # ----
 #<https://www.wikidata.org/wiki/Q8008975>

@@ -441,7 +441,7 @@
   gen:deathDate "1875-11-09" ;
   gen:father <https://www.wikidata.org/wiki/Q335133> ;
   gen:mother <https://www.wikidata.org/wiki/Q16537349> .
-  # oo 1833-10-19 Edward Crofton, 2nd Baron Crofton of Mote, 1806-08-01 - 1869-12-27, https://www.wikidata.org/wiki/Q5342459
+  # oo 1833-10-19 Edward Crofton, 2nd Baron Crofton of Mote, 1806-08-01 - 1869-12-27, https://www.wikidata.org/wiki/Q5342459 (hill.ttl)
 <#Lady_Augusta_Paget>
   gen:name "Lady Augusta Paget"@en ;
   gen:birthDate "1802-01-26" ;
@@ -1652,20 +1652,57 @@
   # Henry Monck, of Fowre, d. 1815-12-29
   # oo Lady Elizabeth Araminta Gore, 1764-04 - 1845-06-27
   []
-    gen:spouse <#Henry_Monck> , <#Lady_Elizabeth_Araminta_Gore> ;
+    gen:spouse <#Henry_Monck> , <ponsonby.ttl#Lady_Elizabeth_Araminta_Gore> ;
 	gen:startDate "1783-08-06" .
 
 <#Elizabeth_Araminta_Monck>
   # Elizabeth Araminta Monck, d. 1843-08-17
   gen:father <#Henry_Monck> ;
-  gen:mother <#Lady_Elizabeth_Araminta_Gore> .
+  gen:mother <ponsonby.ttl#Lady_Elizabeth_Araminta_Gore> .
   # oo 1805-03-07 Sir Charles Paget, 1775-11-03 - 1849-05-13, https://www.wikidata.org/wiki/Q5081469
+<#Catherine_Anne_Isabella_Monck>
+  # Catherine Anne Isabella Monck, d. 1865-07-22
+  gen:father <#Henry_Monck> ;
+  gen:mother <ponsonby.ttl#Lady_Elizabeth_Araminta_Gore> .
+  # oo 1811-05-05 Dominick Browne, 1st Baron Oranmore and Browne, 1787-05-28 – 1860-01-30, https://www.wikidata.org/wiki/Q5290904
 # ----
-<#Lady_Elizabeth_Araminta_Gore>
-  # Lady Elizabeth Araminta Gore, 1764-04 - 1845-06-27
-  gen:father <https://www.wikidata.org/wiki/Q4798851> .
-  # and Hon. Catherine Annesley
-  # oo 1783-08-06 Henry Monck, of Fowre, d. 1815-12-29, #Henry_Monck
+#<https://www.wikidata.org/wiki/Q5290904>
+  # Dominick Browne, 1st Baron Oranmore and Browne, 1787-05-28 – 1860-01-30
+  # 1st Baron Oranmore and Browne of Carra Browne Castle in Oranmore, in the county of the town of Galway and of Castle Mac Garrett in the county of Mayo 1836-05-04
+  # oo Catherine Anne Isabella Monck, d. 1865-07-22
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5290904> , <#Catherine_Anne_Isabella_Monck> ;
+	gen:startDate "1811-05-05" .
+
+<#Henrietta_Araminta_Monck_Browne>
+  # Hon. Henrietta Araminta Monck Browne, d. 1869-03-01
+  gen:father <https://www.wikidata.org/wiki/Q5290904> ;
+  gen:mother <#Catherine_Anne_Isabella_Monck> .
+  # oo 1845-04-17 Charles William Ridley, 1812 – 1867-02-01, https://www.wikidata.org/wiki/Q21182520
+# ----
+<https://www.wikidata.org/wiki/Q7528317>
+  # Sir Matthew White Ridley, 3rd Baronet, 1778-04-18 – 1836-07-14
+  gen:father <https://www.wikidata.org/wiki/Q7528316> .
+  # and Sarah Colborne
+  # oo Laura Hawkins, d. 1864-07-22, daughter of George Edward Hawkins and Louisa Lane
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7528317> , <#Laura_Hawkins> ;
+	gen:startDate "1803-08-13" .
+
+<https://www.wikidata.org/wiki/Q21182520>
+  # Charles William Ridley, 1812 – 1867-02-01
+  gen:father <https://www.wikidata.org/wiki/Q7528317> ;
+  gen:mother <#Laura_Hawkins> .
+  # oo Hon. Henrietta Araminta Monck Browne, d. 1869-03-01
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q21182520> , <#Henrietta_Araminta_Monck_Browne> ;
+	gen:startDate "1845-04-17" .
+
+<#Louisa_Catherine_Ridley>
+  # Louisa Catherine Ridley, d. 1920-10-01
+  gen:father <https://www.wikidata.org/wiki/Q21182520> ;
+  gen:mother <#Henrietta_Araminta_Monck_Browne> .
+  # oo 1895-08-28 Lord Marcus Talbot de la Poer Beresford, 1848-12-25 - 1922-12-16, https://www.wikidata.org/wiki/Q16031681
 
 # ----
 <https://www.wikidata.org/wiki/Q26420153>
@@ -1730,46 +1767,6 @@
   gen:father <https://www.wikidata.org/wiki/Q5480600> ;
   gen:mother <#Lady_Jane_Paget> .
   # oo 1882-02-16 George James Finch-Hatton, 11th Earl of Winchilsea, 1815-05-31 - 1887-06-09, https://www.wikidata.org/wiki/Q5539271
-
-# ----
-#<https://www.wikidata.org/wiki/Q7526537>
-  # Sir Edward Crofton, 2nd Baronet, 1748-10-11 - 1797-09-30
-  # oo 1767-04-13 Anne Croker, 1st Baroness Crofton of Mote, 1751-01-11 - 1817-08-12
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q7526537> , <https://www.wikidata.org/wiki/Q4768250> ;
-	gen:startDate "1767-04-13" .
-
-<#Sir_Edward_Crofton,_3rd_Baronet>
-  # Hon. Sir Edward Crofton, 3rd Baronet, 1778-10-23 - 1816-01-08
-  gen:father <https://www.wikidata.org/wiki/Q7526537> ;
-  gen:mother <https://www.wikidata.org/wiki/Q4768250> .
-  # oo Lady Charlotte Stewart, d. 1842-05
-  []
-    gen:spouse <#Sir_Edward_Crofton,_3rd_Baronet> , <stuart.ttl#Lady_Charlotte_Stewart_(died_1842)> ;
-	gen:startDate "1801-09-12" .
-
-<https://www.wikidata.org/wiki/Q5342459>
-  # Edward Crofton, 2nd Baron Crofton of Mote, 1806-08-01 - 1869-12-27
-  # 4th Baronet Lowther-Crofton, of The Moate, co. Roscommon 1816-01-08
-  # 2nd Baron Crofton of Mote, co. Roscommon 1817-08-12
-  gen:father <#Sir_Edward_Crofton,_3rd_Baronet> ;
-  gen:mother <stuart.ttl#Lady_Charlotte_Stewart_(died_1842)> .
-  # oo Lady Georgina Paget, 1800-08-29 - 1875-11-09
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q5342459> , <#Lady_Georgina_Paget> ;
-	gen:startDate "1833-10-19" .
-<#Frances_Crofton>
-  # Hon. Frances Crofton, d. 1881-12-20
-  gen:father <#Sir_Edward_Crofton,_3rd_Baronet> ;
-  gen:mother <stuart.ttl#Lady_Charlotte_Stewart_(died_1842)> .
-  # oo 1825-03-03 Daniel Bunbury-Tighe, 1796 - 1874-03-26, #Daniel_Bunbury-Tighe
-# ----
-#<https://www.wikidata.org/wiki/Q4768250>
-  # Anne Croker, 1st Baroness Crofton of Mote, 1751-01-11 - 1817-08-12
-  # 1st Baroness Crofton of Mote, co. Roscommon 1798-03-08
-  # daughter of Thomas Croker
-  # and Anne Ryves
-  # oo 1767-04-13 Sir Edward Crofton, 2nd Baronet, 1748-10-11 - 1797-09-30, https://www.wikidata.org/wiki/Q7526537
 
 # ----
 <https://www.wikidata.org/wiki/Q26272176>
@@ -1915,6 +1912,14 @@
     gen:spouse <https://www.wikidata.org/wiki/Q7598650> , <#Gertrude_Jane_Paget> ;
 	gen:startDate "1828-12-16" .
 
+<#Reginald_Grimston_Standish_O'Grady>
+  # Hon. Reginald Grimston Standish O'Grady, 1839 - 1874-12-25
+  gen:father <https://www.wikidata.org/wiki/Q7598650> ;
+  gen:mother <#Gertrude_Jane_Paget> .
+  # oo Frances Arabella Beresford, 1838-11-04 - 1924-05-07
+  []
+    gen:spouse <#Reginald_Grimston_Standish_O'Grady> , <beresford.ttl#Frances_Arabella_Beresford> ;
+	gen:startDate "1867-08-27" .
 <#Frederick_O'Grady,_6th_Viscount_Guillamore>
   # Frederick Standish O'Grady, 6th Viscount Guillamore, 1847 - 1927-10-11
   gen:father <https://www.wikidata.org/wiki/Q7598650> ;
@@ -1983,17 +1988,8 @@
   # Anne Lambert, d. 1917-10-30
   gen:father <#Henry_Lambert> ;
   gen:mother <#Catherine_Talbot> .
-  # oo 1870-01-27 Edwin Richard Wyndham-Quin, 3rd Earl of Dunraven and Mount-Earl, 1812-05-19 - 1871-10-06, https://www.wikidata.org/wiki/Q5346929
+  # oo 1870-01-27 Edwin Richard Wyndham-Quin, 3rd Earl of Dunraven and Mount-Earl, 1812-05-19 - 1871-10-06, https://www.wikidata.org/wiki/Q5346929 (scott.ttl)
   # oo 1879-04-26 Hedworth Hylton Jolliffe, 2nd Baron Hylton of Hylton, 1829-06-23 - 1899-10-31, https://www.wikidata.org/wiki/Q5697772
-# ----
-<https://www.wikidata.org/wiki/Q5346929>
-  # Edwin Richard Wyndham-Quin, 3rd Earl of Dunraven and Mount-Earl, 1812-05-19 - 1871-10-06
-  gen:father <https://www.wikidata.org/wiki/Q8024197> .
-  # and Caroline Wyndham
-  # oo Anne Lambert, d. 1917-10-30
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q5346929> , <#Anne_Lambert> ;
-	gen:startDate "1870-01-27" .
 # ----
 <#Lady_Alice_Adeliza_Hervey>
   # Lady Alice Adeliza Hervey, d. 1962-08-27
@@ -2049,6 +2045,10 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q21694517> , <#Philadelphia_Lynch> ;
 	gen:startDate "1689-11-18~" .
+<#Mary_Cotton>
+  # Mary Cotton
+  gen:father <https://www.wikidata.org/wiki/Q7528747> .
+  # oo Sir William Fowler, 1st Baronet, d. 1717, #Sir_William_Fowler,_1st_Baronet
 
 <https://www.wikidata.org/wiki/Q16239357>
   # Sir Lynch Cotton, 4th Baronet, 1705~ – 1775-08-14
@@ -2167,6 +2167,22 @@
   gen:father <#Sir_Edward_Tyrrell,_1st_Baronet> .
   # and Elizabeth Kingsmill
   # oo 1632a Sir Thomas Salusbury, 2nd Baronet, 1612-03 - 1643, https://www.wikidata.org/wiki/Q7529259
+# ----
+#<#Sir_William_Fowler,_1st_Baronet>
+  # Sir William Fowler, 1st Baronet, d. 1717
+  # 1st Baronet Fowler of Harnage Grange 1704-11-01
+  # oo Mary Cotton
+  []
+    gen:spouse <#Sir_William_Fowler,_1st_Baronet> , <#Mary_Cotton> .
+
+<https://www.wikidata.org/wiki/Q16887510>
+  # Sir Richard Fowler, 2nd Baronet, 1681 – 1731
+  gen:father <#Sir_William_Fowler,_1st_Baronet> ;
+  gen:mother <#Mary_Cotton> .
+  # oo Sarah Sloane, d. 1763-09-13
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16887510> , <https://www.wikidata.org/wiki/Q43012185> ;
+	gen:startDate "1737b" .
 # ----
 <#Philadelphia_Lynch>
   # Philadelphia Lynch, 1675-05-05 – 1758-12-30
@@ -2728,7 +2744,5 @@
   gen:father <https://www.wikidata.org/wiki/Q8013949> .
   # and Mary Chamberlain
   # oo 1892-11-08 Sir Ernest Ridley Debenham, 1st Baronet, 1865-05-26 - 1952-12-25, https://www.wikidata.org/wiki/Q5392960
-
-
 
 # ====

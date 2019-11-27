@@ -3,7 +3,6 @@
 @prefix wdata: <https://www.wikidata.org/wiki/> .
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix wen: <https://en.wikipedia.org/wiki/> .
 
 <#Sir_Leonard_Hastings>
   # Sir Leonard Hastinges
@@ -770,12 +769,15 @@
   gen:deathDate "1535" ;
   gen:father <https://www.wikidata.org/wiki/Q5542841> ;
   gen:mother <https://www.wikidata.org/wiki/Q19302315> .
-  # oo Joan FitzAlan (d. 1508-11-14) daughter of wen:Thomas_FitzAlan,_17th_Earl_of_Arundel and Margaret Woodville, daughter of wen:Richard_Woodville,_1st_Earl_Rivers
+  # oo Lady Joan FitzAlan, d. 1508-11-14
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1507985> , <fitzalan.ttl#Lady_Joan_FitzAlan> ;
+	gen:startDate "1494b" .
 
 <neville.ttl#Jane_Neville>
   # Jane Neville, d. 1538-10-26b
   gen:father <https://www.wikidata.org/wiki/Q1507985> ;
-  gen:mother <howard.ttl#Joan_FitzAlan> .
+  gen:mother <fitzalan.ttl#Lady_Joan_FitzAlan> .
   # oo 1510-05/1520-05b Henry Pole, 1st Baron Montagu, 1492 - 1539-01, https://www.wikidata.org/wiki/Q5727081
 # ----
 <https://www.wikidata.org/wiki/Q4726013>
@@ -818,10 +820,22 @@
 # --------
 # beaufort.ttl
 <https://www.wikidata.org/wiki/Q1637267>
+  # Humphrey Stafford, Earl of Stafford
   gen:birthDate "1425~" ;
   gen:deathDate "1458-05-22~" ;
-  gen:father <wen:Humphrey_Stafford,_1st_Duke_of_Buckingham> ;
-  gen:mother <wen:Anne_Stafford,_Duchess_of_Buckingham> .
+  gen:father <https://www.wikidata.org/wiki/Q1265605> ;
+  gen:mother <https://www.wikidata.org/wiki/Q565662> .
+  # oo Lady Margaret Beaufort, 1437~ - 1474
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1637267> , <https://www.wikidata.org/wiki/Q273111> .
+<https://www.wikidata.org/wiki/Q15088507>
+  # Sir Henry Stafford, 1425 - 1471
+  gen:father <https://www.wikidata.org/wiki/Q1265605> ;
+  gen:mother <https://www.wikidata.org/wiki/Q565662> .
+  # oo Lady Margaret Beaufort, 1443-05-31 - 1509-06-29
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q15088507> , <https://www.wikidata.org/wiki/Q229202> ;
+	gen:startDate "1458-01-03" .
 
 <https://www.wikidata.org/wiki/Q714480>
   # Henry Stafford, 2nd Duke of Buckingham
@@ -847,8 +861,8 @@
   # Catherine Woodville
   gen:birthDate "1458" ;
   gen:deathDate "1497-05-18" ;
-  gen:father <wen:Richard_Woodville,_1st_Earl_Rivers> ;
-  gen:mother <wen:Jacquetta_of_Luxembourg> .
+  gen:father <https://www.wikidata.org/wiki/Q934384> ;
+  gen:mother <https://www.wikidata.org/wiki/Q448289> .
   # oo 1483-11-02 Henry Stafford, 2nd Duke of Buckingham, 1454-09-04 - 1483-11-02, https://www.wikidata.org/wiki/Q714480
 
 # --------
@@ -965,6 +979,36 @@
   []
     gen:spouse <#Robert_Dillon,_2nd_Earl_of_Roscommon> , <https://www.wikidata.org/wiki/Q66497776> ;
 	gen:startDate "1609a" .
+<#Lady_Jane_Dillon>
+  # Lady Jane Dillon
+  gen:father <https://www.wikidata.org/wiki/Q16863610> .
+  # oo 1604-11 Sir Christopher Dillon, d. 1624-02-28, #Sir_Christopher_Dillon
+# ----
+<https://www.wikidata.org/wiki/Q7781528>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75517803> .
+  # Theobald Dillon, 1st Viscount Dillon of Costello-Gallin, d. 1624-03-15
+  # 1st Viscount Dillon of Costello-Gallin, co. Mayo 1622-03-16
+  # son of Thomas Dillon
+  # and Mary Dillon
+  # oo Eleanora Tuite, d. 1638-04-08, daughter of Sir Edward Tuite
+
+<#Sir_Christopher_Dillon>
+  # Sir Christopher Dillon, d. 1624-02-28
+  gen:father <https://www.wikidata.org/wiki/Q7781528> .
+  # and Eleanora Tuite
+  # oo Lady Jane Dillon
+  []
+    gen:spouse <#Sir_Christopher_Dillon> , <#Lady_Jane_Dillon> ;
+	gen:startDate "1604-11" .
+
+<https://www.wikidata.org/wiki/Q75256409>
+  # Lucas Dillon, 2nd Viscount Dillon of Costello-Gallin, 1610-03 - 1629-04-13
+  gen:father <#Sir_Christopher_Dillon> ;
+  gen:mother <#Lady_Jane_Dillon> .
+  # oo Lady Mary MacDonnell
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75256409> , <macdonald.ttl#Lady_Mary_MacDonnell> ;
+	gen:startDate "1625" .
 
 # ----
 <#Alice_Freke>
@@ -1609,7 +1653,7 @@
   gen:name "Maria Eleanor Forbes"@en ;
   gen:birthDate "1761-01-23" ;
   gen:deathDate "1844-03-18" ;
-  gen:father <wen:John_Forbes_(Royal_Navy_officer)> ;
+  gen:father <https://www.wikidata.org/wiki/Q3181515> ;
   gen:mother <capell.ttl#Lady_Mary_Capell> .
   # oo 1791-01-05 John Charles Villiers, 3rd Earl of Clarendon, 1757-11-14 - 1838-12-22, https://www.wikidata.org/wiki/Q15989904
 
@@ -1708,11 +1752,51 @@
   gen:mother <#Dorothea_Cuffe> .
   # oo Mary St. George, d. 1701-11-05, daughter of Sir George St. George and Katherine Gifford
 
+<https://www.wikidata.org/wiki/Q3934786>
+  # Richard Coote, 1st Earl of Bellomont, 1636 - 1700-03-05
+  # 2nd Lord Coote, Baron of Coloony, co. Sligo 1683-07-10
+  # 1st Earl of Bellomont, in our Kingdom of Ireland 1689-11-02
+  gen:father <#Richard_Coote,_1st_Lord_Coote> .
+  # and Mary St. George
+  # oo Catherine Nanfan, 1665-02-09 - 1738-03-12, daughter of Bridges Nanfan and Catharine Hastings
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3934786> , <#Catherine_Nanfan> ;
+	gen:startDate "1680-08-19" .
 <#Mary_Coote>
   # Hon. Mary Coote
   gen:father <#Richard_Coote,_1st_Lord_Coote> .
   # and Mary St. George
   # oo William Stewart, 1st Viscount Mountjoy, 1650-10 - 1692-08-03, https://www.wikidata.org/wiki/Q16859774
+
+<#Nanfan_Coote,_2nd_Earl_of_Bellomont>
+  # Nanfan Coote, 2nd Earl of Bellomont, 1681~ - 1708-06-14
+  gen:father <https://www.wikidata.org/wiki/Q3934786> ;
+  gen:mother <#Catherine_Nanfan> .
+  # oo Lucia Anna Nassau, 1684-03-26b - 1744-09-04
+  []
+    gen:spouse <#Nanfan_Coote,_2nd_Earl_of_Bellomont> , <nassau.ttl#Lucia_Anne_Nassau> ;
+	gen:startDate "1706-02-17" .
+
+<#Lady_Frances_Coote>
+  # Lady Frances Coote, d. 1733
+  gen:father <#Nanfan_Coote,_2nd_Earl_of_Bellomont> ;
+  gen:mother <nassau.ttl#Lucia_Anne_Nassau> .
+  # oo 1723-06-28 Sir Robert Clifton, 5th Baronet, 1690 - 1762-12-07, https://www.wikidata.org/wiki/Q7528741
+# ----
+#<https://www.wikidata.org/wiki/Q7528741>
+  # Sir Robert Clifton, 5th Baronet, 1690 - 1762-12-07
+  # son of Sir Gervase Clifton, 4th Baronet
+  # and Ann Bagenal
+  # oo Lady Frances Coote, d. 1733
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7528741> , <#Lady_Frances_Coote> ;
+	gen:startDate "1723-06-28" .
+
+<#Frances_Clifton>
+  # Frances Clifton
+  gen:father <https://www.wikidata.org/wiki/Q7528741> ;
+  gen:mother <#Lady_Frances_Coote> .
+  # oo 1747-03 George Carpenter, 1st Earl of Tyrconnell, 1723-08-26 – 1762-03-09, https://www.wikidata.org/wiki/Q5537702
 # ----
 #<https://www.wikidata.org/wiki/Q4798425>
   # Arthur Davys, d. 1733-10
@@ -1751,15 +1835,6 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q17388542> , <#Isabella_Rawdon> ;
 	gen:startDate "1718" .
-# ----
-#<https://www.wikidata.org/wiki/Q5076343>
-  # Most Rev. Charles Cobbe, 1686 - 1765-04-14
-  # son of Thomas Cobbe
-  # and Veriana Chaloner
-  # oo Dorothy Levinge, d. 1733-09-12
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q5076343> , <#Dorothy_Levinge> ;
-	gen:startDate "1730" .
 
 
 # ========

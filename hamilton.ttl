@@ -684,7 +684,7 @@
 	gen:divorceDate "1799-04" .
   # oo Lady Anne Jane Gore, 1763-04 - 1827-05-08
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q3809310> , <#Lady_Anne_Jane_Gore> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q3809310> , <ponsonby.ttl#Lady_Anne_Jane_Gore> ;
 	gen:startDate "1800-04-03" .
 <#Anne_Hamilton_(died_1795)>
   # Anne Hamilton, 1755-10-06 - 1795-12-18
@@ -1165,6 +1165,11 @@
   []
     gen:spouse <#Gustavus_Hamilton,_5th_Viscount_Boyne> , <#Martha_Matilda_Somerville> ;
 	gen:startDate "1773-04-01" .
+<#Catherine_Hamilton_(born_1754)>
+  # Hon. Catherine Hamilton, b. 1754-08-28
+  gen:father <https://www.wikidata.org/wiki/Q7326228> ;
+  gen:mother <#Georgiana_Bury> .
+  # oo Hugh Montgomery Lyons, 1750 - 1792, beresford.ttl#Hugh_Montgomery_Lyons
 
 <#Gustavus_Hamilton,_6th_Viscount_Boyne>
   # Gustavus Hamilton, 6th Viscount Boyne, 1777-04-12 - 1855-03-30
@@ -3381,12 +3386,6 @@
 	gen:startDate "1756-06-08" .
 
 # ----
-<#Lady_Anne_Jane_Gore>
-  # Lady Anne Jane Gore, 1763-04 - 1827-05-08
-  gen:father <https://www.wikidata.org/wiki/Q4798851> .
-  # oo 1800-04-03 John James Hamilton, 1st Marquess of Abercorn, 1756-07 - 1818-01-27, https://www.wikidata.org/wiki/Q3809310
-
-# ----
 #<https://www.wikidata.org/wiki/Q5464674>
   # Very Rev. Folliott Herbert Walker Cornewall, 1754 - 1831
   # Dean of Canterbury
@@ -3433,42 +3432,104 @@
   gen:mother <#Isabella_Howard> .
   # oo 1844-08-07 Lord Claud Hamilton, 1813-07-27 - 1884-06-03, https://www.wikidata.org/wiki/Q6679103
 # ----
-#<https://www.wikidata.org/wiki/Q16859641>
-  # Ralph Howard, 1st Viscount Wicklow, 1726 - 1786-06-26
+<https://www.wikidata.org/wiki/Q17050400>
+  # Rt. Rev. Robert Howard, 1670-09-24 – 1740-04-03
+  # Bishop of Killala and Achonry 1727 – 1730
+  # Bishop of Elphin 1730
+  gen:father <https://www.wikidata.org/wiki/Q21309227> .
+  # oo Patience Boleyn, d. 1764-06-05
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q17050400> , <#Patience_Boleyn> ;
+	gen:startDate "1724" .
 
+<https://www.wikidata.org/wiki/Q16859641>
+  # Ralph Howard, 1st Viscount Wicklow, 1726 – 1786-06-26
+  # 1st Baron Clonmore, of Clonmore Castle, co. Carlow 1776-07-21
+  # 1st Viscount Wicklow, of co. Wicklow 1785-06-21
+  gen:father <https://www.wikidata.org/wiki/Q17050400> ;
+  gen:mother <#Patience_Boleyn> .
+  # oo Alice Forward, 1st Countess of Wicklow, d. 1807-03-07
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16859641> , <https://www.wikidata.org/wiki/Q24288397> ;
+	gen:startDate "1755-08-11" .
+
+<https://www.wikidata.org/wiki/Q24288391>
+  # William Howard, 3rd Earl of Wicklow, 1761-01 – 1818-09-27
+  gen:father <https://www.wikidata.org/wiki/Q16859641> ;
+  gen:mother <https://www.wikidata.org/wiki/Q24288397> .
+  # oo Eleanor Caulfeild, d. 1807-04-02
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q24288391> , <ponsonby.ttl#Eleanor_Caulfeild> ;
+	gen:startDate "1787-03-31" .
 <#Hugh_Howard>
   # Hon. Hugh Howard, 1761 - 1840-11-03
-  gen:father <https://www.wikidata.org/wiki/Q16859641> .
+  gen:father <https://www.wikidata.org/wiki/Q16859641> ;
+  gen:mother <https://www.wikidata.org/wiki/Q24288397> .
   # oo Catherine Bligh
   []
     gen:spouse <#Hugh_Howard> , <#Catherine_Bligh> ;
 	gen:startDate "1792-12-20" .
 
-#<https://www.wikidata.org/wiki/Q8012558>
+<https://www.wikidata.org/wiki/Q8012558>
   # William Howard, 4th Earl of Wicklow, 1791-02-13 - 1869-03-22
+  gen:father <https://www.wikidata.org/wiki/Q24288391> ;
+  gen:mother <ponsonby.ttl#Eleanor_Caulfeild> .
   # oo Lady Cecil Frances Hamilton, 1795-07-19 - 1860-07-07
   []
     gen:spouse <https://www.wikidata.org/wiki/Q8012558> , <#Lady_Cecil_Frances_Hamilton> ;
 	gen:startDate "1816-02-16" .
-
-<#Lady_Frances_Howard>
-  # Lady Frances Howard, d. 1897-08-20
-  gen:father <https://www.wikidata.org/wiki/Q8012558> ;
-  gen:mother <#Lady_Cecil_Frances_Hamilton> .
-  # oo 1845-07-29 Hon. Colin Lindsay, 1819-12-06 - 1892-01-28, lindsay.ttl#Colin_Lindsay
-
+<#Francis_Howard>
+  # Rev. Hon. Francis Howard, 1797-01-12 - 1857-02-16
+  gen:father <https://www.wikidata.org/wiki/Q24288391> ;
+  gen:mother <ponsonby.ttl#Eleanor_Caulfeild> .
+  # oo Frances Beresford, d. 1835-11-17
+  []
+    gen:spouse <#Francis_Howard> , <beresford.ttl#Frances_Beresford> ;
+	gen:startDate "1824-06-19" .
+  # oo Sarah Hamilton, d. 1892-03-13, daughter of Charles Hamilton and Marianne Caroline TIghe
+  []
+    gen:spouse <#Francis_Howard> , <#Sarah_Hamilton> ;
+	gen:startDate "1836-06-21" .
 <#Isabella_Howard>
   # Isabella Howard, 1783-08-07 - 1836-01-22
   gen:father <#Hugh_Howard> ;
   gen:mother <#Catherine_Bligh> .
   # oo 1818-04-05 Granville Proby, 3rd Earl of Carysfort, 1782-11-12 - 1868-11-03, https://www.wikidata.org/wiki/Q5596931
 
-#<https://www.wikidata.org/wiki/Q7287658>
+<#Lady_Frances_Howard>
+  # Lady Frances Howard, d. 1897-08-20
+  gen:father <https://www.wikidata.org/wiki/Q8012558> ;
+  gen:mother <#Lady_Cecil_Frances_Hamilton> .
+  # oo 1845-07-29 Hon. Colin Lindsay, 1819-12-06 - 1892-01-28, lindsay.ttl#Colin_Lindsay
+<https://www.wikidata.org/wiki/Q24578878>
+  # Cecil Ralph Howard, 6th Earl of Wicklow, 1842-03-26 – 1891-07-24
+  gen:father <#Francis_Howard> ;
+  gen:mother <#Sarah_Hamilton> .
+  # oo Fanny Catherine Wingfield, 1860~ - 1914-02-03
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q24578878> , <wingfield.ttl#Fanny_Catherine_Wingfield> ;
+	gen:startDate "1880-06-02" .
+
+<https://www.wikidata.org/wiki/Q7287658>
   # Ralph Francis Howard, 7th Earl of Wicklow, 1877-12-24 - 1946-10-11
+  gen:father <https://www.wikidata.org/wiki/Q24578878> .
+  # and Francesca Maria Chamberlayne
   # oo Lady Gladys Mary Hamilton, 1880-12-10 - 1917-03-12
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7287658> , <#Lady_Gladys_Mary_Hamilton> ;
 	gen:startDate "1902-01-14" .
+  # oo Lady Beatrix Frances Gertrude Herbert, 1878 - 1957-12-03
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7287658> , <herbert.ttl#Lady_Beatrix_Frances_Gertrude_Herbert> ;
+	gen:startDate "1942-03-05" .
+# ----
+#<https://www.wikidata.org/wiki/Q24288397>
+  # Alice Forward, 1st Countess of Wicklow, d. 1807-03-07
+  # 1st Countess of Wicklow 1793-12-05
+  # daughter of William Forward
+  # and Isabella Stewart
+  # oo 1755-08-11 Ralph Howard, 1st Viscount Wicklow, 1726 – 1786-06-26, https://www.wikidata.org/wiki/Q16859641
+# ----
 
 # ----
 <#Lady_Margaret_Cunningham>
@@ -3788,14 +3849,22 @@
   # Thomas George Anson, 2nd Earl of Lichfield, 1825-08-15 - 1892-01-07
   # oo Lady Harriett Georgiana Louisa Hamilton, 1834-07-06 - 1913-04-23
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q7787091> , <hamilton.ttl#Lady_Harriett_Georgiana_Louisa_Hamilton> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q7787091> , <#Lady_Harriett_Georgiana_Louisa_Hamilton> ;
 	gen:startDate "1855-04-10" .
 
 <#Lady_Mary_Maud_Anson>
   # Lady Mary Maud Anson, 1869 - 1961-09-22
   gen:father <https://www.wikidata.org/wiki/Q7787091> ;
-  gen:mother <hamilton.ttl#Lady_Harriett_Georgiana_Louisa_Hamilton> .
+  gen:mother <#Lady_Harriett_Georgiana_Louisa_Hamilton> .
   # oo 1893-07-19 Hon. Edward Alan Dudley Ryder, 1869-10-22 - 1949-04-04, coke.ttl#Edward_Alan_Dudley_Ryder
+<#Claud_Anson>
+  # Hon. Claud Anson, 1864-01-11 - 1847-12-25
+  gen:father <https://www.wikidata.org/wiki/Q7787091> ;
+  gen:mother <#Lady_Harriett_Georgiana_Louisa_Hamilton> .
+  # oo Lady Clodagh Beresford, 1879-08-06 - 1957-04-17
+  []
+    gen:spouse <#Claud_Anson> , <https://www.wikidata.org/wiki/Q21556635> ;
+	gen:startDate "1901-02-27" .
 
 # ----
 #<https://www.wikidata.org/wiki/Q5345667>

@@ -707,9 +707,29 @@
   # oo 1805-07-20 Peter Leopold Louis Francis Nassau Clavering-Cowper, 5th Earl Cowper, 1778-05-06 - 1837-07-21, https://www.wikidata.org/wiki/Q21165183
   # oo 1839-12-16 Henry John Temple, 3rd Viscount Palmerston, 1784-10-20 - 1865-10-18, https://www.wikidata.org/wiki/Q193656
 # ----
-#<https://www.wikidata.org/wiki/Q7788520>
+#<https://www.wikidata.org/wiki/Q13426377>
+  # Sir John Coke, of Melbourne Hall, 1563-03-05 – 1644-09-08
+  # oo Mary Powell, daughter of John Powell
+
+<https://www.wikidata.org/wiki/Q7788517>
+  # Thomas Coke, of Melbourne, d. 1656
+  gen:father <https://www.wikidata.org/wiki/Q13426377> .
+  # and Mary Powell
+  # oo Mary Pope, daughter of Richard Pope of Woolstaston
+
+<https://www.wikidata.org/wiki/Q16199911>
+  # John Coke, 1653~ – 1692
+  gen:father <https://www.wikidata.org/wiki/Q7788517> .
+  # and Mary Pope
+  # oo Mary Leventhorpe, daughter of Sir Thomas Leventhorpe, 4th Baronet and Mary Bedell
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16199911> , <#Mary_Leventhorpe> ;
+	gen:startDate "1672" .
+
+<https://www.wikidata.org/wiki/Q7788520>
   # Rt. Hon. Thomas Coke, 1674-02-19 - 1727-05-16
-  # son of John Coke and Mary Leventhorpe
+  gen:father <https://www.wikidata.org/wiki/Q16199911> ;
+  gen:mother <#Mary_Leventhorpe> .
   # oo Lady Mary Stanhope, d. 1704-01-10
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7788520> , <percy.ttl#Lady_Mary_Stanhope> ;
@@ -719,6 +739,11 @@
     gen:spouse <https://www.wikidata.org/wiki/Q7788520> , <#Mary_Hale> ;
 	gen:startDate "1709-10-13" .
 
+<#Mary_Coke>
+  # Mary Coke, d. 1766-08-17
+  gen:father <https://www.wikidata.org/wiki/Q7788520> ;
+  gen:mother <percy.ttl#Lady_Mary_Stanhope> .
+  # oo 1719-03 Thomas Southwell, 2nd Baron Southwell, 1698-01-07 - 1766-11-19, https://www.wikidata.org/wiki/Q15994757
 <#Charlotte_Coke>
   gen:name "Charlotte Coke"@en ;
   gen:birthDate "1719-01-26" ;
