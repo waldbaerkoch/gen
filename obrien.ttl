@@ -1,0 +1,484 @@
+@base <obrien.ttl> .
+@prefix gen: <http://jjkoch.de/gen#> .
+@prefix wdata: <https://www.wikidata.org/wiki/> .
+@prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+
+# fitzgerald.ttl
+#<https://www.wikidata.org/wiki/Q65079200>
+  # Toirdhealbhach Donn Ó Briain, King of Thomond, d. 1528
+  # King of Thomond 1499
+  # oo Joan Fitzmaurice, daughter of Thomas Fitzmaurice 8th Lord of Kerry
+  # oo Raghnailt Macnamara, d. 1486, daughter of John Macnamara (Seán Mac Conmara)
+
+# fitzgerald.ttl
+<https://www.wikidata.org/wiki/Q5162038>
+  # Conchobhar mac Toirdhealbaig Ó Briain
+  # Connor O'Brien, King of Thomond, d. 1540
+  # King of Thomond 1528
+  gen:father <https://www.wikidata.org/wiki/Q65079200> .
+  # and Raghnailt Macnamara
+  # oo Ellis FitzGerald
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5162038> , <fitzgerald.ttl#Ellis_FitzGerald> .
+  # oo Anabel de Burgh, daughter of Ulick Bourke, Lord of Clanricarde (d. 1509)
+# fitzgerald.ttl
+<https://www.wikidata.org/wiki/Q6939613>
+  # Murrough O'Brien, 1st Earl of Thomond, d. 1551-11-07
+  # King of Thomond 1539 - 1543-07-01
+  # 1st Earl of Thomond, 1st Baron of Inchiquin 1543-07-01
+  gen:father <https://www.wikidata.org/wiki/Q65079200> .
+  # and Raghnailt Macnamara
+  # oo Eleanor fitz John, d. 1550-03-11a
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6939613> , <fitzgerald.ttl#Eleanor_fitz_John> .
+
+# fitzgerald.ttl
+<https://www.wikidata.org/wiki/Q5296815>
+  # Donough O'Brien, 1st (2nd) Earl of Thomond, d. 1553-04-01
+  # 1st Baron of Ibracken 1543-07-01
+  # 2nd Earl of Thomond 1551
+  # 1st Earl of Thomond 1552-01-07
+  gen:father <https://www.wikidata.org/wiki/Q5162038> .
+  # and Anabel de Burgh
+  # oo Lady Ellen Butler, 1523 - 1597-07-02
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5296815> , <butler.ttl#Lady_Ellen_Butler> ;
+	gen:startDate "1533" .
+<https://www.wikidata.org/wiki/Q5262734> # -> Baron of Inchiquin
+  # Dermod O'Brien, 2nd Baron of Inchiquin, d. 1552-01-31
+  gen:father <https://www.wikidata.org/wiki/Q6939613> ;
+  gen:mother <fitzgerald.ttl#Eleanor_fitz_John> .
+# fitzgerald.ttl
+<#Slany_O'Brien>
+  # Slany O'Brien, d. 1569
+  gen:father <https://www.wikidata.org/wiki/Q6939613> ;
+  gen:mother <fitzgerald.ttl#Eleanor_fitz_John> .
+  # oo Patrick FitzMaurice, 10th Baron of Kerry and Lixnaw, 1519b - 1542~, #Patrick_FitzMaurice,_10th_Baron_of_Kerry
+
+# fitzgerald.ttl
+<https://www.wikidata.org/wiki/Q5162039>
+  # Conor O'Brien, 2nd Earl of Thomond, 1535~ - 1591-01
+  gen:father <https://www.wikidata.org/wiki/Q5296815> ;
+  gen:mother <butler.ttl#Lady_Ellen_Butler> .
+  # oo Una O'Brien
+# fitzgerald.ttl
+<#Lady_Margaret_O'Brien_(died_1568)>
+  # Lady Margaret O'Brien, d. 1568
+  gen:father <https://www.wikidata.org/wiki/Q5296815> ;
+  gen:mother <butler.ttl#Lady_Ellen_Butler> .
+  # oo 1550b Dermod O'Brien, 2nd Baron of Inchiquin, d. 1552-01-31, https://www.wikidata.org/wiki/Q5262734
+
+# fitzgerald.ttl
+<https://www.wikidata.org/wiki/Q5296776>
+  # Donough O'Brien, 3rd Earl of Thomond, d. 1624-09-05
+  gen:father <https://www.wikidata.org/wiki/Q5162039> .
+  # and Una O'Brien
+  # oo Lady Elizabeth FitzGerald, d. 1617-01-12
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5296776> , <fitzgerald.ttl#Lady_Elizabeth_FitzGerald_(died_1617)> ;
+	gen:startDate "1585-11-06a" .
+# fitzgerald.ttl
+<#Lady_Honor_O'Brien>
+  # Lady Honor O'Brien, d. 1600
+  gen:father <https://www.wikidata.org/wiki/Q5162039> .
+  # and Una O'Brien
+  # oo 1594~ Thomas FitzMaurice, 16th Baron of Kerry and Lixnaw, 1574 - 1630-06-03, https://www.wikidata.org/wiki/Q7789633
+# fitzgerald.ttl
+<https://www.wikidata.org/wiki/Q5218286>
+  # Daniel O'Brien, 1st Viscount Clare, 1577 - 1666
+  # 1st Viscount Clare, co. Clare, 1st Baron Moyarta 1662-07-11
+  gen:father <https://www.wikidata.org/wiki/Q5162039> .
+  # and Una O'Brien
+  # oo Lady Catherine FitzGerald
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5218286> , <#Lady_Catherine_FitzGerald_2> ;
+	gen:startDate "1600a" .
+
+# fitzgerald.ttl
+<https://www.wikidata.org/wiki/Q5726431>
+  # Henry O'Brien, 4th (5th) Earl of Thomond, 1588~ - 1639-04-22b
+  gen:father <https://www.wikidata.org/wiki/Q5296776> ;
+  gen:mother <fitzgerald.ttl#Lady_Elizabeth_FitzGerald_(died_1617)> .
+  # oo Mary Brereton, 1580-12-28 - 1640-04
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5726431> , <manners.ttl#Mary_Brereton> ;
+	gen:startDate "1608-07-13" .
+# fitzgerald.ttl
+<https://www.wikidata.org/wiki/Q4861332>
+  # Barnabas O'Brien, 6th Earl of Thomond, 1590 - 1667
+  gen:father <https://www.wikidata.org/wiki/Q5296776> ;
+  gen:mother <fitzgerald.ttl#Lady_Elizabeth_FitzGerald_(died_1617)> .
+# fitzgerald.ttl
+<#Connor_O'Brien,_2nd_Viscount_Clare>
+# https://www.wikidata.org/wiki/Q5162036
+  # Connor O'Brien, 2nd Viscount Clare, 1605~ - 1670~
+  gen:father <https://www.wikidata.org/wiki/Q5218286> ;
+  gen:mother <#Lady_Catherine_FitzGerald_2> .
+  # oo Honora O'Brien, daughter of Donal O'Brien and Ellen FitzGerald
+
+# fitzgerald.ttl
+<#Lady_Anne_O'Brien>
+  # Lady Anne O'Brien, d. 1644-09-13~
+  gen:father <https://www.wikidata.org/wiki/Q5726431> ;
+  gen:mother <manners.ttl#Mary_Brereton> .
+  # oo 1641 Henry O'Brien, 6th (7th) Earl of Thomond, 1620~ - 1691-05-02, https://www.wikidata.org/wiki/Q5726429
+# fitzgerald.ttl
+<#Lady_Honoria_O'Brien>
+  # Lady Honoria O'Brien
+  gen:father <https://www.wikidata.org/wiki/Q5726431> ;
+  gen:mother <manners.ttl#Mary_Brereton> .
+  # oo Sir Robert Howard, b. 1626-01 - 1698-09-03, https://www.wikidata.org/wiki/Q3435421
+# fitzgerald.ttl
+<#Lady_Elizabeth_O'Brien>
+  # Lady Elizabeth O'Brien, d. 1656-04-09a/1659-06-30b
+  gen:father <https://www.wikidata.org/wiki/Q5726431> ;
+  gen:mother <manners.ttl#Mary_Brereton> .
+  # oo Dutton Gerard, 3rd Baron Gerard of Gerard's Bromley, 1613-03-04 - 1640-04-22, fane.ttl#Dutton_Gerard,_3rd_Baron_Gerard
+# beaufort.ttl
+<#Lady_Margaret_O'Brien_(died_1681)>
+  # Lady Margaret O'Brien, d. 1681-07-26
+  gen:father <https://www.wikidata.org/wiki/Q5726431> .
+  # oo 1639-08 Edward Somerset, 2nd Marquess of Worcester, 1601 - 1667-04-03, https://www.wikidata.org/wiki/Q1439372
+# fitzgerald.ttl
+# howard.ttl
+<https://www.wikidata.org/wiki/Q5726429>
+  # Henry O'Brien, 6th (7th) Earl of Thomond, 1620~ - 1691-05-02
+  gen:father <https://www.wikidata.org/wiki/Q4861332> .
+  # and Anne Fermor
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5726429> , <#Lady_Anne_O'Brien> ;
+	gen:startDate "1641" .
+  # oo Sarah Russell, 1639-09-19 - 1715
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5726429> , <#Sarah_Russell> ;
+	gen:startDate "1660" .
+# fitzgerald.ttl
+<#Honora_O'Brien_2>
+# https://www.wikidata.org/wiki/Q75804230
+  # Honora O'Brien
+  gen:father <#Connor_O'Brien,_2nd_Viscount_Clare> .
+  # and Honora O'Brien
+  # oo John FitzGerald, 13th Knight of Kerry, fitzgerald.ttl#John_FitzGerald,_13th_Knight_of_Kerry, https://www.wikidata.org/wiki/Q75804226
+
+# fitzgerald.ttl
+<https://www.wikidata.org/wiki/Q5726440>
+  # Henry O'Brien, Lord O'Brien, 1642 - 1678-09-01
+  gen:father <https://www.wikidata.org/wiki/Q5726429> ;
+  gen:mother <#Lady_Anne_O'Brien> .
+  # oo Katherine Stuart, 7th Baroness Clifton (of Leighton Bromswold), 1640-12-05 - 1702-11-02, https://www.wikidata.org/wiki/Q75243328
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5726440> , <stuart.ttl#Katherine_Stuart,_7th_Baroness_Clifton> ;
+	gen:startDate "1661-12-14b" .
+# beaufort.ttl
+<https://www.wikidata.org/wiki/Q75278628>
+  # Henry Horatio O'Brien, Lord Ibrackan, 1670~ - 1690-07-10
+  gen:father <https://www.wikidata.org/wiki/Q5726429> ;
+  gen:mother <#Sarah_Russell> .
+  # oo Lady Henrietta Somerset, d. 1715-08-10
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75278628> , <https://www.wikidata.org/wiki/Q50326866> ;
+	gen:startDate "1686-06-24" .
+# howard.ttl
+<#Lady_Auberie_Anne_Penelope_O'Brien>
+# https://www.wikidata.org/wiki/Q75278631
+  # Lady Auberie Anne Penelope O'Brien, d. 1703-12-02
+  gen:father <https://www.wikidata.org/wiki/Q5726429> ;
+  gen:mother <#Sarah_Russell> .
+  # oo Henry Howard, 6th Earl of Suffolk, 1670 - 1718-09-19, https://www.wikidata.org/wiki/Q5723313
+
+# fitzgerald.ttl
+<#Mary_O'Brien>
+# https://www.wikidata.org/wiki/Q75607342
+  # Hon. Mary O'Brien, 1662-05-07 - 1683-11-24
+  gen:father <https://www.wikidata.org/wiki/Q5726440> ;
+  gen:mother <stuart.ttl#Katherine_Stuart,_7th_Baroness_Clifton> .
+  # oo 1683b John FitzGerald, 18th Earl of Kildare, 1661 - 1707-11-09, https://www.wikidata.org/wiki/Q15440117
+# fitzgerald.ttl
+<#Donogh_O'Brien,_Lord_Ibracken>
+# https://www.wikidata.org/wiki/Q75278624
+  # Donogh O'Brien, Lord Ibracken, 1663-09-16 - 1682-05-05
+  gen:father <https://www.wikidata.org/wiki/Q5726440> ;
+  gen:mother <stuart.ttl#Katherine_Stuart,_7th_Baroness_Clifton> .
+  # oo Lady Sophia Osborne, 1661 - 1746-12-08, https://www.wikidata.org/wiki/Q75278625
+  []
+    gen:spouse <#Donogh_O'Brien,_Lord_Ibracken> , <osborne.ttl#Lady_Sophia_Osborne> ;
+	gen:startDate "1679-05-26" .
+# fitzgerald.ttl
+<#Katherine_O'Brien,_8th_Baroness_Clifton>
+# https://www.wikidata.org/wiki/Q75273408
+  # Katherine O'Brien, 8th Baroness Clifton (of Leighton Bromswold), 1673-01-29 - 1706-08-11
+  gen:father <https://www.wikidata.org/wiki/Q5726440> ;
+  gen:mother <stuart.ttl#Katherine_Stuart,_7th_Baroness_Clifton> .
+  # oo 1688-07-10 Edward Hyde, 3rd Earl of Clarendon, 1661-11-28 – 1723-03-31, https://www.wikidata.org/wiki/Q333577 (capell.ttl)
+# seymour.ttl
+<https://www.wikidata.org/wiki/Q22569335>
+  # Henry O'Brien, 7th/8th Earl of Thomond, 1688-08-14 - 1741-04-20
+  gen:father <https://www.wikidata.org/wiki/Q75278628> ;
+  gen:mother <https://www.wikidata.org/wiki/Q50326866> .
+  # oo Lady Elizabeth Seymour, 1685 - 1734-04-02
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q22569335> , <seymour.ttl#Lady_Elizabeth_Seymour_(died_1734)> ;
+	gen:startDate "1707-06-04" .
+
+
+# Baron of Inchiquin
+# fitzgerald.ttl
+<https://www.wikidata.org/wiki/Q5262734>
+  # Dermod O'Brien, 2nd Baron of Inchiquin, d. 1552-01-31
+  # 2nd Baron Inchiquin 1551-10
+  gen:father <https://www.wikidata.org/wiki/Q6939613> ;
+  gen:mother <fitzgerald.ttl#Eleanor_fitz_John> .
+  # oo Lady Margaret O'Brien, d. 1568
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5262734> , <#Lady_Margaret_O'Brien_(died_1568)> ;
+	gen:startDate "1550b" .
+
+# fitzgerald.ttl
+<https://www.wikidata.org/wiki/Q6939612>
+  # Murrough Macdermot O'Brien, 3rd Baron of Inchiquin, 1550~ - 1573-04-20
+  gen:father <https://www.wikidata.org/wiki/Q5262734> ;
+  gen:mother <#Lady_Margaret_O'Brien_(died_1568)> .
+  # oo Mabel Nugent
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6939612> , <fitzgerald.ttl#Mabel_Nugent> .
+
+# fitzgerald.ttl
+<https://www.wikidata.org/wiki/Q6939617>
+  # Murrough O'Brien, 4th Baron of Inchiquin, 1562 – 1597-07-24
+  gen:father <https://www.wikidata.org/wiki/Q6939612> ;
+  gen:mother <fitzgerald.ttl#Mabel_Nugent> .
+  # oo Margaret Cusack, d. 1610a
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6939617> , <#Margaret_Cusack> .
+
+# fitzgerald.ttl
+<https://www.wikidata.org/wiki/Q5262735>
+  # Dermot O'Brien, 5th Baron of Inchiquin, 1594-10 – 1624-12-29
+  gen:father <https://www.wikidata.org/wiki/Q6939617> ;
+  gen:mother <#Margaret_Cusack> .
+  # oo Ellen FitzGerald, daughter of Sir Edmond fitz John FitzGerald and Honora FitzGerald
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5262735> , <fitzgerald.ttl#Ellen_FitzGerald_3> ;
+	gen:startDate "1614b" .
+
+# fitzgerald.ttl
+<https://www.wikidata.org/wiki/Q246733>
+  # Murrogh O'Brien, 1st Earl of Inchiquin, 1614-10 - 1674-09-09
+  # 6th Baron of Inchiquin 1624-12-29
+  # 1st Earl of Inchiquin, 1st Baron O'Brien of Burren, co. Clare 1654-10-21
+  gen:father <https://www.wikidata.org/wiki/Q5262735> ;
+  gen:mother <fitzgerald.ttl#Ellen_FitzGerald_3> .
+  # oo Elizabeth St. Leger, d. 1685-05-22, daughter of Sir William St. Leger
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q246733> , <#Elizabeth_St._Leger> ;
+	gen:startDate "1635-10-01" .
+
+# fitzgerald.ttl
+<#Lady_Elizabeth_O'Brien>
+# https://www.wikidata.org/wiki/Q75756668
+  # Lady Elizabeth O'Brien, d. 1688-09
+  gen:father <https://www.wikidata.org/wiki/Q246733> ;
+  gen:mother <#Elizabeth_St._Leger> .
+  # oo Richard Southwell, d. 1688-09, https://www.wikidata.org/wiki/Q7329168 (talbot.ttl)
+# fitzgerald.ttl
+<https://www.wikidata.org/wiki/Q75858548>
+  # Lady Mary O'Brien
+  gen:father <https://www.wikidata.org/wiki/Q246733> ;
+  gen:mother <#Elizabeth_St._Leger> .
+  # oo Henry Boyle, 1648 - 1693, https://www.wikidata.org/wiki/Q75588457
+# fitzgerald.ttl
+<https://www.wikidata.org/wiki/Q8016212>
+  # William O'Brien, 2nd Earl of Inchiquin, 1640~ - 1692-01
+  gen:father <https://www.wikidata.org/wiki/Q246733> ;
+  gen:mother <#Elizabeth_St._Leger> .
+  # oo Lady Margaret Boyle, d. 1683-12-24~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8016212> , <boyle.ttl#Lady_Margaret_Boyle> ;
+	gen:startDate "1665" .
+  # oo Elizabeth Brydges, 1651-03-25 - 1718-02-03
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8016212> , <https://www.wikidata.org/wiki/Q28837775> ;
+	gen:startDate "1684a" .
+
+# fitzgerald.ttl
+<https://www.wikidata.org/wiki/Q8016214>
+  gen:name "William MacWilliam O'Brien, 3rd Earl of Inchiquin"@en ;
+  gen:birthDate "1662/1666~" ;
+  gen:deathDate "1719-12-24" ;
+  gen:father <https://www.wikidata.org/wiki/Q8016212> ;
+  gen:mother <boyle.ttl#Lady_Margaret_Boyle> .
+  # oo Mary Villiers, d. 1753-04-17
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8016214> , <villiers.ttl#Mary_Villiers_(died_1753)> ;
+	gen:startDate "1691-04" .
+
+# fitzgerald.ttl
+<https://www.wikidata.org/wiki/Q8016216>
+  # William O'Brien, 4th Earl of Inchiquin, 1700 - 1777-07-18
+  gen:father <https://www.wikidata.org/wiki/Q8016214> ;
+  gen:mother <villiers.ttl#Mary_Villiers_(died_1753)> .
+  # oo Anne Hamilton, 2nd Countess of Orkney, 1696 - 1756-12-07 (douglas.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8016216> , <https://www.wikidata.org/wiki/Q4768688> ;
+	gen:startDate "1720-03-29" .
+# fitzgerald.ttl
+<#Lady_Mary_O'Brian_of_Inchiquin>
+# https://www.wikidata.org/wiki/Q75269772
+  # Lady Mary O'Brien of Inchiquin
+  gen:father <https://www.wikidata.org/wiki/Q8016214> ;
+  gen:mother <villiers.ttl#Mary_Villiers_(died_1753)> .
+  # oo 1708-03-07 Robert FitzGerald, 19th Earl of Kildare, 1675-05-04 - 1743-02-20, https://www.wikidata.org/wiki/Q7344362
+# fitzgerald.ttl
+<https://www.wikidata.org/wiki/Q16859447>
+  # Lord James O'Brien, 1701 - 1771-12-17
+  gen:father <https://www.wikidata.org/wiki/Q8016214> ;
+  gen:mother <villiers.ttl#Mary_Villiers_(died_1753)> .
+  # oo Mary Jephson
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16859447> , <#Mary_Jephson> .
+
+# fitzgerald.ttl
+<https://www.wikidata.org/wiki/Q6780433>
+  # Mary O'Brien, 3rd Countess of Orkney, 1721~ - 1791-05-10
+  # 3rd Countess of Orkney 1756-12-07
+  gen:father <https://www.wikidata.org/wiki/Q8016216> ;
+  gen:mother <https://www.wikidata.org/wiki/Q4768688> .
+  # oo 1753-03-05 Murrough O'Brien, 1st Marquess of Thomond, 1726 - 1808-02-10, https://www.wikidata.org/wiki/Q6939614
+# fitzgerald.ttl
+<https://www.wikidata.org/wiki/Q6939614>
+  # Murrough O'Brien, 1st Marquess of Thomond, 1726 - 1808-02-10
+  # 5th Earl of Inchiquin, 10th Baron of Inchiquin, 5th Baron O'Brien of Burren, co. Clare 1777-07-18
+  # 1st Marquess of Thomond 1800-12-29
+  # 1st Baron Thomond of Taplow, co. Bucks 1801-10-02
+  gen:father <https://www.wikidata.org/wiki/Q16859447> ;
+  gen:mother <#Mary_Jephson> .
+  # oo Mary O'Brien, 3rd Countess of Orkney, 1721~ - 1791-05-10
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6939614> , <https://www.wikidata.org/wiki/Q6780433> ;
+	gen:startDate "1753-03-05" .
+
+# fitzgerald.ttl
+<https://www.wikidata.org/wiki/Q6779542>
+  # Mary O'Brien, 4th Countess of Orkney, 1755-09-04 - 1831-12-30
+  gen:father <https://www.wikidata.org/wiki/Q6939614> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6780433> .
+  # oo 1777-12-21 Hon. Thomas Fitzmaurice, of Llewenny Hall, 1742-07 - 1793-10-28, https://www.wikidata.org/wiki/Q7789619
+
+
+# fane.ttl
+<https://www.wikidata.org/wiki/Q16066273>
+  # James O'Brien, 3rd Marquess of Thomond, 1768~ - 1855-07-03
+  gen:father <https://www.wikidata.org/wiki/Q5342612> . # Edward Dominic O'Brien, 1735 - 1801-03-01, son of James O'Brien (1695 - 1771-12-18, https://www.wikidata.org/wiki/Q16859447)
+  # and Mary Carrick
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16066273> , <fane.ttl#Anne_Flint> ;
+	gen:startDate "1847-01-05" .
+
+
+
+
+# hamilton.ttl
+<#Lucia_Hamilton>
+# https://www.wikidata.org/wiki/Q75285497
+  # Lucia Hamilton, 1648a - 1676
+  gen:father <https://www.wikidata.org/wiki/Q3760518> ;
+  gen:mother <butler.ttl#Lady_Mary_Butler_(died_1680)> .
+  # oo 1674-07-24 Sir Donough O'Brien, 1st Baronet, 1642 - 1717-11-17, 1st Baronet O'Brien, of Lemeneagh and Dromoland, co. Clare 1686-11-09, https://www.wikidata.org/wiki/Q7526433 (https://www.wikidata.org/wiki/Q75285445, http://www.thepeerage.com/p3836.htm#i38355)
+
+
+# howard.ttl
+<#Henry_O'Brien>
+# https://www.wikidata.org/wiki/Q75983284
+  # Rev. Hon. Henry O'Brien, 1813-04-15 - 1895-02-12
+  gen:father <https://www.wikidata.org/wiki/Q7526596> . # Sir Edward O'Brien, 4th Baronet, 1773 - 1837, son of Sir Lucius O'Brien, 3rd Baronet (1731-09-02 - 1705-01-15, https://www.wikidata.org/wiki/Q7528276, son of Sir Edward O'Brien, 2nd Baronet (1705-04-07 - 1765-11-26, https://www.wikidata.org/wiki/Q7526597, son of Lucius O'Brien (d. 1717-01-06, https://www.wikidata.org/wiki/Q75285447, son of https://www.wikidata.org/wiki/Q75285445 and https://www.wikidata.org/wiki/Q75285497) and oo Catherine Keightley (https://www.wikidata.org/wiki/Q75285494, daughter of Rt. Hon. Thomas Keightley (1650-01-23 - 1718-01-19, https://www.wikidata.org/wiki/Q75285495, son of https://www.wikidata.org/wiki/Q75822994))) and oo Mary Hickman (d. 1760-02-20, https://www.wikidata.org/wiki/Q75285490, daughter of https://www.wikidata.org/wiki/Q75285492))
+  # and Charlotte Smith
+  # oo Henrietta Godley, d. 1872-05-01, https://www.wikidata.org/wiki/Q75983307, daughter of John Godley (https://www.wikidata.org/wiki/Q75596538)
+  []
+    gen:spouse <#Henry_O'Brien> , <#Henrietta_Godley> ;
+	gen:startDate "1839-05-23" .
+
+# howard.ttl
+<#Angelina_Rose_Geraldine_O'Brien>
+# https://www.wikidata.org/wiki/Q76035192
+  # Angelina Rose Geraldine O'Brien, d. 1941-08-18
+  gen:father <#Henry_O'Brien> ;
+  gen:mother <#Henrietta_Godley> .
+  # oo 1873-06-04 John Gerald Wilson, d. 1902-03-08, howard.ttl#John_Gerald_Wilson
+
+
+
+# coke.ttl
+<https://www.wikidata.org/wiki/Q5344657>
+  # Edward Donough O'Brien, 14th Baron of Inchiquin, 1839-05-14 - 1900-04-09
+  gen:father <https://www.wikidata.org/wiki/Q6697588> . # Lucius O'Brien, 13th Baron Inchiquin, 1800-12-05 - 1872-03-22, son of https://www.wikidata.org/wiki/Q7526596
+  # oo Hon. Ellen Harriet White, 1854 - 1913-03-02, https://www.wikidata.org/wiki/Q75271427, daughter of Luke White, 2nd Baron Annaly of Annaly and Rathcline (https://www.wikidata.org/wiki/Q6702449, https://www.wikidata.org/wiki/Q75258855)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5344657> , <#Ellen_Harriet_White> ;
+	gen:startDate "1874-01-29" .
+
+# coke.ttl
+<#Henry_Barnaby_O'Brien>
+# https://www.wikidata.org/wiki/Q75298171
+  # Hon. Henry Barnaby O'Brien, 1887-01-09 - 1969-01-07
+  gen:father <https://www.wikidata.org/wiki/Q5344657> ;
+  gen:mother <#Ellen_Harriet_White> .
+  # oo Lady Helen Baillie-Hamilton, 1893-10-10 - 1959-09-17
+  []
+    gen:spouse <#Henry_Barnaby_O'Brien> , <hamilton.ttl#Lady_Helen_Baillie-Hamilton> ;
+	gen:startDate "1925-04-23" .
+# coke.ttl
+<#Doreen_O'Brien>
+# https://www.wikidata.org/wiki/Q75258841
+  # Hon. Doreen O'Brien, 1888-03-04 - 1960-06-10
+  gen:father <https://www.wikidata.org/wiki/Q5344657> ;
+  gen:mother <#Ellen_Harriet_White> .
+  # oo 1907-12-21 (div 1927) Hon. Richard Coke, 1876-08-20 - 1964-06-14, coke.ttl#Richard_Coke
+
+
+
+# hill.ttl
+#  gen:father <https://www.wikidata.org/wiki/Q6828776> . # Rt. Rev. Michael Boyle
+  # and Hon. Mary O'Brien
+
+# howard.ttl
+#  gen:father <https://www.wikidata.org/wiki/Q5726004> . # Henry Mordaunt, 2nd Earl of Peterborough, 1621-11-15 - 1697-06-19, son of https://www.wikidata.org/wiki/Q6249346
+  # and Lady Penelope O'Brien
+
+
+# fitzgerald.ttl
+# ----
+#<https://www.wikidata.org/wiki/Q7788764>
+  # Sir Thomas Cusack, 1490 – 1571
+
+<#Margaret_Cusack>
+  # Margaret Cusack, d. 1610a
+  gen:father <https://www.wikidata.org/wiki/Q7788764> .
+  # oo Murrough O'Brien, 4th Baron of Inchiquin, 1562 – 1597-07-24, https://www.wikidata.org/wiki/Q6939617
+
+# fitzgerald.ttl
+# ----
+<#Mary_Jephson>
+  # Mary Jephson, 
+  gen:father <https://www.wikidata.org/wiki/Q15039949> .
+  # and Anne Barry
+  # oo Lord James O'Brien, 1701 - 1771-12-17, https://www.wikidata.org/wiki/Q16859447
+
+
+# howard.ttl
+# ----
+<#Sarah_Russell>
+  # Sarah Russell, 1639-09-19 - 1715
+  gen:father <https://www.wikidata.org/wiki/Q7526726> .
+  # and Catherine Wheatley
+  # oo 1660 Henry O'Brien, 6th Earl of Thomond, 1620~ - 1691-05-02, https://www.wikidata.org/wiki/Q5726429
+
+
+# coke.ttl
+# ----
+<#Ellen_Harriet_White>
+  # Hon. Ellen Harriet White, 1854 - 1913-03-02
+  gen:father <https://www.wikidata.org/wiki/Q6702449> .
+  # and Emily Stuart
+  # oo 1874-01-29 Edward Donough O'Brien, 14th Baron of Inchiquin, 1839-05-14 - 1900-04-09, https://www.wikidata.org/wiki/Q5344657
