@@ -2,6 +2,7 @@
 @prefix gen: <http://jjkoch.de/gen#> .
 @prefix wdata: <https://www.wikidata.org/wiki/> .
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 #<https://www.wikidata.org/wiki/Q5562002>
   # Gilleasbaig of Menstrie
@@ -1065,18 +1066,24 @@
   # oo 1836-12-10 Hon. Charles James Fox Stanley, 1808-04-25 - 1884-10-13, stanley.ttl#Charles_James_Fox_Stanley
 
 <https://www.wikidata.org/wiki/Q6224958>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75250304> ;
   # John Frederick Vaughan Campbell, 2nd Earl Cawdor, 1817-06-11 - 1898-04-02
   gen:father <https://www.wikidata.org/wiki/Q6224952> ;
   gen:mother <https://www.wikidata.org/wiki/Q43378349> .
   # oo Sarah Mary Cavendish, 1813-08-27 - 1881-04-21
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q6224958> , <cavendish.ttl#Sarah_Mary_Cavendish> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q6224958> , <https://www.wikidata.org/wiki/Q75249414> ;
 	gen:startDate "1842-06-28" .
 <#Lady_Georgiana_Isabel_Campbell>
   # Lady Georgiana Isabel Campbell, 1820-05-01 - 1884-12-03
   gen:father <https://www.wikidata.org/wiki/Q6224952> ;
   gen:mother <https://www.wikidata.org/wiki/Q43378349> .
   # oo 1840-06-25 John Balfour, 7th of Balbirnie, 1811 - 1895, fraser.ttl#John_Balfour,_7th_of_Balbirnie
+<https://www.wikidata.org/wiki/Q75272613>
+  # Lady Emily Caroline Campbell, 1821~ - 1911-05-22
+  gen:father <https://www.wikidata.org/wiki/Q6224952> ;
+  gen:mother <https://www.wikidata.org/wiki/Q43378349> .
+  # oo 1842-03-31 Hon. Octavius Duncombe, 1817-04-08 - 1879-12-03, https://www.wikidata.org/wiki/Q7076834 (scott.ttl)
 <#Lady_Mary_Louisa_Campbell>
   # Lady Mary Louisa Campbell, 1825-01-07 - 1926-11-24
   gen:father <https://www.wikidata.org/wiki/Q6224952> ;
@@ -1091,10 +1098,15 @@
     gen:spouse <#Archibald_George_Campbell> , <howard.ttl#Charlotte_Henrietta_Howard> ;
 	gen:startDate "1853-09-29" .
 
+<https://www.wikidata.org/wiki/Q75299267>
+  # Lady Muriel Sarah Campbell, 1845 - 1934-09-30
+  gen:father <https://www.wikidata.org/wiki/Q6224958> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75249414> .
+  # oo 1876-04-20 Sir Courtenay Edmund Boyle, 1845-10-23 - 1901-05-19, https://www.wikidata.org/wiki/Q18756632
 <https://www.wikidata.org/wiki/Q5497491>
   # Frederick Archibald Vaughan Campbell, 3rd Earl Cawdor, 1847-02-13 - 1911-02-08
   gen:father <https://www.wikidata.org/wiki/Q6224958> ;
-  gen:mother <cavendish.ttl#Sarah_Mary_Cavendish> .
+  gen:mother <https://www.wikidata.org/wiki/Q75249414> .
   # oo Edith Georgiana Turnor, 1844-01-20 - 1926-09-02
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5497491> , <#Edith_Georgiana_Turnor> ;
@@ -1102,7 +1114,7 @@
 <#Lady_Rachel_Anne_Georgina_Campbell>
   # Lady Rachel Anne Georgina Campbell, 1853-09-04 - 1906-10-06
   gen:father <https://www.wikidata.org/wiki/Q6224958> ;
-  gen:mother <cavendish.ttl#Sarah_Mary_Cavendish> .
+  gen:mother <https://www.wikidata.org/wiki/Q75249414> .
   # oo 1876-09-21 Sir Edward Stafford Howard, 1851-11-28 - 1916-04-08, https://www.wikidata.org/wiki/Q7596635
 
 <#Hugh_Frederick_Vaughan_Campbell,_4th_Earl_Cawdor>
@@ -1940,13 +1952,13 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q18528947> , <dalrymple.ttl#Lady_Margaret_Dalrymple> ;
 	gen:startDate "1700-04-06" .
-<#Sir_James_Campbell_of_Lawers_(died_1745)>
+<https://www.wikidata.org/wiki/Q75278543>
   # Sir James Campbell, of Lawers, 1680 - 1745-04-29
   gen:father <#James_Campbell,_2nd_Earl_of_Loudoun> ;
   gen:mother <gordon.ttl#Lady_Margaret_Montgomerie> .
   # oo Lady Jane Boyle, d. 1729-12-19
   []
-    gen:spouse <#Sir_James_Campbell_of_Lawers_(died_1745)> , <boyle.ttl#Lady_Jane_Boyle> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75278543> , <https://www.wikidata.org/wiki/Q75278544> ;
 	gen:startDate "1720-12-13" .
 <#Lady_Jane_Campbell>
   # Lady Jane Campbell
@@ -1970,8 +1982,8 @@
   # oo 1728-08-04 John Campbell, younger of Shawfield, d. 1746-07-28, #John_Campbell,_younger_of_Shawfield
 <https://www.wikidata.org/wiki/Q6140171>
   # James Mure-Campbell, 5th Earl of Loudoun, 1726-02-11 - 1786-04-28
-  gen:father <#Sir_James_Campbell_of_Lawers_(died_1745)> ;
-  gen:mother <boyle.ttl#Lady_Jane_Boyle> .
+  gen:father <https://www.wikidata.org/wiki/Q75278543> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75278544> .
   # oo 1777-04-30 Flora Macleod, d. 1780-09-02
 
 <https://www.wikidata.org/wiki/Q5460339>

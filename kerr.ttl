@@ -2,6 +2,7 @@
 @prefix gen: <http://jjkoch.de/gen#> .
 @prefix wdata: <https://www.wikidata.org/wiki/> .
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 #<#Andrew_Kerr_of_Altonburn_and_Cessford>
   # Andrew Kerr of Auldtounburn and Cessford, 1405 - 1481-05-08a
@@ -560,7 +561,7 @@
   gen:father <https://www.wikidata.org/wiki/Q2741463> ;
   gen:mother <campbell.tt.#Lady_Jean_Campbell_(died_1712)> .
   # oo 1703b William Cranstoun, 5th Lord Cranstoun, d. 1726/1727-01-27, #William_Cranstoun,_5th_Lord_Cranstoun
-<#Lady_Elizabeth_Kerr_(died_1758)>
+<https://www.wikidata.org/wiki/Q75254958>
   gen:name "Lady Elizabeth Kerr"@en ;
   gen:deathDate "1758-05-22" ;
   gen:father <https://www.wikidata.org/wiki/Q2741463> ;
@@ -1551,12 +1552,19 @@
 	gen:startDate "1703b" .
 
 # ----
-#<https://www.wikidata.org/wiki/Q5544053>
+<https://www.wikidata.org/wiki/Q5544053>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75302484> .
   # George Ross, 13th Lord Ross of Halkhead, 1682~ - 1754-06-17
   # oo Lady Elizabeth Kerr, d. 1758-05-22
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q5544053> , <#Lady_Elizabeth_Kerr_(died_1758)> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q5544053> , <https://www.wikidata.org/wiki/Q75254958> ;
 	gen:startDate "1711~" .
+
+<https://www.wikidata.org/wiki/Q75302477>
+  # Elizabeth Ross, d. 1791-10-17
+  gen:father <https://www.wikidata.org/wiki/Q5544053> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75254958> .
+  # oo 1755-07-11 John Boyle, 3rd Earl of Glasgow, 1714-11-04 - 1775-03-07, https://www.wikidata.org/wiki/Q6222776
 
 # ----
 #<#James_Hamilton_of_Ballencrieff>

@@ -2,6 +2,7 @@
 @prefix wdata: <https://www.wikidata.org/wiki/> .
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
 @prefix gen: <http://jjkoch.de/gen#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 #<#James_Dalrymple_of_Stair_and_Drummurchie>
   # James Dalrymple of Stair and Drummurchie, d. 1625-01
@@ -740,7 +741,7 @@
   []
     gen:spouse <#Hew_Drummond_Elphinstone-Dalrymple> , <#Helenora_Catherine_Heron-Maxwell> ;
 	gen:startDate "1838-11-06" .
-<#Mary_Frances_Elphinstone-Dalrymple>
+<https://www.wikidata.org/wiki/Q75302496>
   # Mary Frances Elphinstone-Dalrymple, 1808-12-19 - 1880-09-15
   gen:father <#Sir_Robert_Dalrymple-Horn-Elphinstone_of_Horn_and_Westhall,_1st_Baronet> ;
   gen:mother <#Graeme_Hepburn> .
@@ -828,6 +829,7 @@
   gen:mother <#Janet_Rochead> .
 
 <https://www.wikidata.org/wiki/Q5232806>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75283631> ;
   # Sir David Dalrymple, Lord Hailes, 3rd Baronet of Hailes, 1726-10-23 – 1792-11-29
   gen:father <https://www.wikidata.org/wiki/Q7527403> ;
   gen:mother <hamilton.ttl#Lady_Christian_Hamilton_(died_1770)> .
@@ -837,7 +839,7 @@
 	gen:startDate "1763-11-12" .
   # oo Helen Fergusson, 1741-05-16 - 1810-11-10
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q5232806> , <#Helen_Fergusson> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q5232806> , <https://www.wikidata.org/wiki/Q75923538> ;
 	gen:startDate "1770-03-20" .
 <#John_Dalrymple,_Lord_Provost_of_Edinburgh>
   # John Dalrymple, Lord Provost of Edinburgh, d. 1779-08-08
@@ -864,6 +866,11 @@
   gen:father <#Hugh_Dalrymple-Murray-Kynynmound_of_Melgund_and_Kynynmound> .
   # oo 1746-12-14 Rt. Hon. Sir Gilbert Elliot of Minto, 3rd Baronet, 1722 - 1777-02-11, https://www.wikidata.org/wiki/Q5988700
 
+<https://www.wikidata.org/wiki/Q75283629>
+  # Jean Dalrymple, 1777-06-12 - 1803-05-06
+  gen:father <https://www.wikidata.org/wiki/Q5232806> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75923538> .
+  # oo 1799-11-08 Sir James Fergusson of Kilkerran, 4th Baronet, 1765-10-20 - 1838-04-14, https://www.wikidata.org/wiki/Q75329993
 <#Sir_James_Dalrymple,_4th_Baronet>
   # Sir James Dalrymple, 4th Baronet, d. 1800-12
   gen:father <#John_Dalrymple,_Lord_Provost_of_Edinburgh> ;
@@ -1818,11 +1825,63 @@
     gen:spouse <https://www.wikidata.org/wiki/Q3161419> , <#Janet_Dalrymple> .
 
 # ----
-<#Helen_Fergusson>
+<https://www.wikidata.org/wiki/Q6133846>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75274033> .
+  # Sir James Fergusson of Kilkerran, 2nd Baronet, Lord Kilkerran, 1688 - 1759
+  # oo Jane Maitland
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6133846> , <https://www.wikidata.org/wiki/Q75274031> .
+
+<https://www.wikidata.org/wiki/Q75283633>
+  # Charles Fergusson, 1740-01-26 - 1804-12-09
+  gen:father <https://www.wikidata.org/wiki/Q6133846> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75274031> .
+  # oo Anne Fordyce, d. 1782, daughter of Thomas Fordyce
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75283633> , <https://www.wikidata.org/wiki/Q75283635> ;
+	gen:startDate "1764-12-21" .
+<https://www.wikidata.org/wiki/Q75923538>
   # Helen Fergusson, 1741-05-16 - 1810-11-10
-  gen:father <https://www.wikidata.org/wiki/Q6133846> .
-  # and Jane Maitland
+  gen:father <https://www.wikidata.org/wiki/Q6133846> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75274031> .
   # oo 1770-03-20 Sir David Dalrymple, Lord Hailes, 3rd Baronet of Hailes, 1726-10-23 – 1792-11-29, https://www.wikidata.org/wiki/Q5232806
+
+<https://www.wikidata.org/wiki/Q75329993>
+  # Sir James Fergusson of Kilkerran, 4th Baronet, 1765-10-20 - 1838-04-14
+  gen:father <https://www.wikidata.org/wiki/Q75283633> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75283635> .
+  # oo Jean Dalrymple, 1777-06-12 - 1803-05-06
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75329993> , <https://www.wikidata.org/wiki/Q75283629> ;
+	gen:startDate "1799-11-08" .
+
+<https://www.wikidata.org/wiki/Q7526201>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75302611> ;
+  # Sir Charles Dalrymple-Fergusson of Kilkerran, 5th Baronet, 1800-08-26 - 1849-03-18
+  gen:father <https://www.wikidata.org/wiki/Q75329993> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75283629> .
+  # oo Helen Boyle, 1808~ - 1869-06-26
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7526201> , <https://www.wikidata.org/wiki/Q75302609> ;
+	gen:startDate "1829-06-01" .
+
+<https://www.wikidata.org/wiki/Q333781>
+  # Rt. Hon. Sir James Fergusson of Kilkerran, 6th Baronet, 1832-03-14 – 1907-01-14
+  gen:father <https://www.wikidata.org/wiki/Q7526201> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75302609> .
+  # oo Lady Edith Christian Ramsay, d. 1871-10-28 (hay.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q333781> , <https://www.wikidata.org/wiki/Q75605606> ;
+	gen:startDate "1859-08-09" .
+
+<https://www.wikidata.org/wiki/Q5464685>
+  # Sir Charles Fergusson of Kilkerran, 7th Baronet, 1865-01-17 – 1951-02-20
+  gen:father <https://www.wikidata.org/wiki/Q333781> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75605606> .
+  # oo Lady Alice Mary Boyle, 1877-12-18 - 1958-01-01
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5464685> , <https://www.wikidata.org/wiki/Q75307603> ;
+	gen:startDate "1901-07-18" .
 
 # ----
 #<https://www.wikidata.org/wiki/Q17309002>

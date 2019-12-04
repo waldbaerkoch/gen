@@ -2,6 +2,7 @@
 @prefix gen: <http://jjkoch.de/gen#> .
 @prefix wdata: <https://www.wikidata.org/wiki/> .
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 
 #<#William_de_Haya>
@@ -1629,12 +1630,12 @@
   gen:father <https://www.wikidata.org/wiki/Q5540329> ;
   gen:mother <#Lady_Hannah_Charlotte_Maitland> .
   # oo 1828-07-28 John Cam Hobhouse, Lord Broughton of Broughton-de-Gyfford, 1786-06-27 - 1869-06-03, https://www.wikidata.org/wiki/Q332595
-<#Dorothea_Hay-Mackenzie>
+<https://www.wikidata.org/wiki/Q75283558>
   # Dorothea Hay-Mackenzie, d. 1820-05-22
   gen:father <#Edward_Hay-MacKenzie_of_Newhall_and_Cromartie> ;
   gen:mother <murray.ttl#Maria_Murray-Mackenzie> .
-  # oo 1813-07-02 Sir David Hunter Blair of Blairquhan, 3rd Baronet, 1778-10-03 - 1857-12-26, #Sir_David_Hunter_Blair_of_Blairquhan,_3rd_Baronet
-<#Georgina_Ann_Hay-Mackenzie>
+  # oo 1813-07-02 Sir David Hunter Blair of Blairquhan, 3rd Baronet, 1778-10-03 - 1857-12-26, https://www.wikidata.org/wiki/Q75283560
+<https://www.wikidata.org/wiki/Q75283565>
   # Georgina Ann Hay-Mackenzie, d. 1895-03-14
   gen:father <#Edward_Hay-MacKenzie_of_Newhall_and_Cromartie> ;
   gen:mother <murray.ttl#Maria_Murray-Mackenzie> .
@@ -2016,8 +2017,8 @@
   # Elizabeth Hay, 1797-02-04 - 1859-08-03
   gen:father <#Sir_John_Hay,_5th_Baronet> ;
   gen:mother <#Mary_Elizabeth_Forbes> .
-  # oo 1825-01-15 Sir David Hunter Blair of Blairquhan, 3rd Baronet, 1778-10-03 - 1857-12-26, #Sir_David_Hunter_Blair_of_Blairquhan,_3rd_Baronet
-<#Jane_Hay_(died_1861)>
+  # oo 1825-01-15 Sir David Hunter Blair of Blairquhan, 3rd Baronet, 1778-10-03 - 1857-12-26, https://www.wikidata.org/wiki/Q75283560
+<https://www.wikidata.org/wiki/Q76057320>
   # Jane Hay, 1799-07-10 - 1861-01-12
   gen:father <#Sir_John_Hay,_5th_Baronet> ;
   gen:mother <#Mary_Elizabeth_Forbes> .
@@ -3228,18 +3229,33 @@
     gen:spouse <https://www.wikidata.org/wiki/Q7527442> , <#Jean_Blair> ;
 	gen:startDate "1770" .
 
-<#Sir_David_Hunter_Blair_of_Blairquhan,_3rd_Baronet>
+<https://www.wikidata.org/wiki/Q75283560>
   # Sir David Hunter Blair of Blairquhan, 3rd Baronet, 1778-10-03 - 1857-12-26
   gen:father <https://www.wikidata.org/wiki/Q7527442> ;
   gen:mother <#Jean_Blair> .
   # oo Dorothea Hay-Mackenzie, d. 1820-05-22
   []
-    gen:spouse <#Sir_David_Hunter_Blair_of_Blairquhan,_3rd_Baronet> , <#Dorothea_Hay-Mackenzie> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75283560> , <https://www.wikidata.org/wiki/Q75283558> ;
 	gen:startDate "1813-07-02" .
   # oo Elizabeth Hay, 1797-02-04 - 1859-08-03
   []
-    gen:spouse <#Sir_David_Hunter_Blair_of_Blairquhan,_3rd_Baronet> , <#Elizabeth_Hay_(died_1859)> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75283560> , <#Elizabeth_Hay_(died_1859)> ;
 	gen:startDate "1825-01-15" .
+
+<https://www.wikidata.org/wiki/Q75356766>
+  # Sir Edward Hunter Blair of Blairquhan and Dunskey, 4th Baronet, 1818-03-24 - 1896-10-07
+  gen:father <https://www.wikidata.org/wiki/Q75283560> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75283558> .
+  # oo Elizabeth Wauchope, d. 1899-09-05, daughter of George Wauchope
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75356766> , <https://www.wikidata.org/wiki/Q75356767> ;
+	gen:startDate "1850-06-04" .
+
+<https://www.wikidata.org/wiki/Q75273201>
+  # Dorothea Elizabeth Thomasina Hunter Blair, d. 1923-01-23
+  gen:father <https://www.wikidata.org/wiki/Q75356766> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75356767> .
+  # oo 1873-07-23 David Boyle, 7th Earl of Glasgow, 1833-05-31 - 1915-12-13, https://www.wikidata.org/wiki/Q335705
 
 # ----
 #<https://www.wikidata.org/wiki/Q18529845>
@@ -3265,6 +3281,12 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q333117> , <https://www.wikidata.org/wiki/Q50762239> ;
 	gen:startDate "1836-01-21" .
+
+<https://www.wikidata.org/wiki/Q75605606>
+  # Lady Edith Christian Ramsay, d. 1871-10-28
+  gen:father <https://www.wikidata.org/wiki/Q333117> ;
+  gen:mother <https://www.wikidata.org/wiki/Q50762239> .
+  # oo 1859-08-09 Rt. Hon. Sir James Fergusson of Kilkerran, 6th Baronet, 1832-03-14 – 1907-01-14, https://www.wikidata.org/wiki/Q333781 (dalrymple.ttl)
 
 # ----
 #<https://www.wikidata.org/wiki/Q16030681>
@@ -3529,43 +3551,55 @@
   # oo 1846-05-05 Charles Manner Lushington, 1819-08-01 - 1864-11, #Charles_Manner_Lushington
 
 # ----
-#<https://www.wikidata.org/wiki/Q6038822>
-  # Sir Cyril Arthur Pearson, 1st Baronet, 1866-02-24 - 1921-12-09
+<https://www.wikidata.org/wiki/Q6038822>
+  owl:sameAs <https://www.wikidata.org/wiki/Q76116645> .
+  # Sir Cyril Arthur Pearson, 1st Baronet, 1866-02-24 – 1921-12-09
   # 1st Baronet Pearson of St Dunstan's, London 1916-07-12
-  # oo Ethel Maud Fraser
+  # son of Rev. Arthur Cyril Pearson
+  # and Philippa Massingberd Maxwell-Lyte
+  # oo Dame Ethel Maud Fraser, 1870-11-03 – 1959-04-10, daughter of William John Fraser abd Jane ???
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6038822> , <https://www.wikidata.org/wiki/Q5403054> ;
+	gen:startDate "1897-06-03" .
 
-<#Sir_Neville_Arthur_Pearson,_2nd_Baronet>
-  # Sir Neville Arthur Pearson, 2nd Baronet, d. 1975
-  gen:father <https://www.wikidata.org/wiki/Q6038822> .
-  # and Ethel Maud Fraser
+<https://www.wikidata.org/wiki/Q7528365>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75576961> ;
+  # Sir Neville Arthur Pearson, 2nd Baronet, 1898-02-13 – 1982-11-06
+  gen:father <https://www.wikidata.org/wiki/Q6038822> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5403054> .
   # oo Hon. Mary Angela Mond, 1901-06-20 - 1937-10-29
   []
-    gen:spouse <#Sir_Neville_Arthur_Pearson,_2nd_Baronet> , <#Mary_Angela_Mond> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q7528365> , <https://www.wikidata.org/wiki/Q75576958> ;
 	gen:startDate "1922-03-29" ;
 	gen:divorceDate "1928" .
 
 <#Nigel_Arthur_Pearson>
   # Nigel Arthur Pearson, d. 1975-12-08
-  gen:father <#Sir_Neville_Arthur_Pearson,_2nd_Baronet> ;
-  gen:mother <#Mary_Angela_Mond> .
+  gen:father <https://www.wikidata.org/wiki/Q7528365> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75576958> .
   # oo Lady Frances Elizabeth Ann Hay, b. 1926-10-27
   []
     gen:spouse <#Nigel_Arthur_Pearson> , <#Lady_Frances_Elizabeth_Ann_Hay> ;
 	gen:startDate "1956-10-27" .
+<https://www.wikidata.org/wiki/Q76116646>
+  # Anne Pearson
+  gen:father <https://www.wikidata.org/wiki/Q7528365> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75576958> .
+  # oo Rt. Hon. Michael Anthony Cristobal Noble, Baron Glenkinglas, 1913-03-19 - 1984-05-15, https://www.wikidata.org/wiki/Q6833078 (boyle.ttl)
 # ----
 #<https://www.wikidata.org/wiki/Q333591>
   # Alfred Moritz Mond, 1st Baron Melchett, 1868-10-23 - 1930-12-27
   # 1st Baron Melchett, of Landford, co. Southampton 1928-06-15
   # oo Violet Florence Mabel Goetze, d. 1945-09-25, daughter of James Henry Goetze
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q333591> , <#Violet_Florence_Mabel_Goetze> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q333591> , <https://www.wikidata.org/wiki/Q7933267> ;
 	gen:startDate "1894-06-16" .
 
-<#Mary_Angela_Mond>
+<https://www.wikidata.org/wiki/Q75576958>
   # Hon. Mary Angela Mond, 1901-06-20 - 1937-10-29
   gen:father <https://www.wikidata.org/wiki/Q333591> ;
-  gen:mother <#Violet_Florence_Mabel_Goetze> .
-  # oo 1922-03-29 (div 1928) Sir Neville Arthur Pearson, 2nd Baronet, d. 1975, #Sir_Neville_Arthur_Pearson,_2nd_Baronet
+  gen:mother <https://www.wikidata.org/wiki/Q7933267> .
+  # oo 1922-03-29 (div 1928) Sir Neville Arthur Pearson, 2nd Baronet, 1898-02-13 – 1982-11-06, https://www.wikidata.org/wiki/Q7528365
 
 # ----
 #<#Algernon_Richard_Trotter,_12th_of_Mortonhall>
@@ -3673,8 +3707,14 @@
   gen:mother <#Helen_Mackenzie> .
   # oo Jane Hay, 1799-07-10 - 1861-01-12
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q26257744> , <#Jane_Hay_(died_1861)> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q26257744> , <https://www.wikidata.org/wiki/Q76057320> ;
 	gen:startDate "1817-04-25" .
+
+<https://www.wikidata.org/wiki/Q75281954>
+  # Augusta Charlotte Mackenzie-Fraser, d. 1911-09-20
+  gen:father <https://www.wikidata.org/wiki/Q26257744> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76057320> .
+  # oo 1854-04-25 Robert Drummond, 1822-07-26 - 1881-04-29, https://www.wikidata.org/wiki/Q75281952
 
 # ----
 #<https://www.wikidata.org/wiki/Q18716109>
