@@ -2,6 +2,7 @@
 @prefix gen: <http://jjkoch.de/gen#> .
 @prefix wdata: <https://www.wikidata.org/wiki/> .
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 #<https://www.wikidata.org/wiki/Q1781786>
   # Somerled, 1100~ - 1164
@@ -197,7 +198,7 @@
   # 4th Lord of the Isles 1449-05-07 – 1493
   gen:father <https://www.wikidata.org/wiki/Q2833745> ;
   gen:mother <gordon.ttl#Elizabeth_Seton,_Countess_of_Ross> .
-<https://www.wikidata.org/wiki/Q5933254>
+<https://www.wikidata.org/wiki/Q5933254> # -> Macdonald of Sleat
   # Uisdean Macdonald, 1st of Sleat, 1437~ – 1498
   gen:father <https://www.wikidata.org/wiki/Q2833745> . # illegitimate
 <https://www.wikidata.org/wiki/Q6249320>
@@ -227,6 +228,13 @@
   gen:father <https://www.wikidata.org/wiki/Q6225521> .
   # and Sheela (Cecelia) Savage
   # oo Catherine Macdonald, daughter of John Macdonald of Ardnamurchan
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4719465> , <https://www.wikidata.org/wiki/Q75256207> .
+<https://www.wikidata.org/wiki/Q75446804>
+  # Agnes Macdonald
+  gen:father <https://www.wikidata.org/wiki/Q6225521> .
+  # and Sheela (Cecelia) Savage
+  # oo Donald 'Gallach' Macdonald, 3rd of Sleat, d. 1506, https://www.wikidata.org/wiki/Q75446726
 
 <https://www.wikidata.org/wiki/Q6138621>
   # James MacDonald, 6th of Dunnyveg, d. 1565
@@ -238,31 +246,36 @@
 <https://www.wikidata.org/wiki/Q4764162>
   # Aonghas Uaimhreach Mac Dhòmhnaill
   # Angus MacDonnell, d. 1565-05-02
-  gen:father <https://www.wikidata.org/wiki/Q4719465> .
-  # and Catherine Macdonald
+  gen:father <https://www.wikidata.org/wiki/Q4719465> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75256207> .
 <https://www.wikidata.org/wiki/Q5145782>
   # Colla MacDonnell, d. 1558
-  gen:father <https://www.wikidata.org/wiki/Q4719465> .
-  # and Catherine Macdonald
+  gen:father <https://www.wikidata.org/wiki/Q4719465> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75256207> .
   # oo Evelyn MacQuillan
 <https://www.wikidata.org/wiki/Q2834684>
   # Sorley Boy McDonnell
   # Somhairle Buidhe Mac Domhnaill, 1505~ – 1590
-  gen:father <https://www.wikidata.org/wiki/Q4719465> .
-  # and Catherine Macdonald
+  gen:father <https://www.wikidata.org/wiki/Q4719465> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75256207> .
   # oo Mary Ó Neill, d. 1590
   []
     gen:spouse <https://www.wikidata.org/wiki/Q2834684> , <#Mary_Ó_Neill> .
 <#Meve_MacDonnell>
   # Meve MacDonnell
-  gen:father <https://www.wikidata.org/wiki/Q4719465> .
-  # and Catherine Macdonald
+  gen:father <https://www.wikidata.org/wiki/Q4719465> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75256207> .
   # oo Hector Maclean of Coll, d. 1560a, https://www.wikidata.org/wiki/Q5696793
 <#Mary_MacDonnell>
   # Mary MacDonnell
-  gen:father <https://www.wikidata.org/wiki/Q4719465> .
-  # and Catherine Macdonald
+  gen:father <https://www.wikidata.org/wiki/Q4719465> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75256207> .
   # oo Hector Mor Maclean, 12th Chief, 8th of Duart, 1497 – 1568, https://www.wikidata.org/wiki/Q16842103
+<https://www.wikidata.org/wiki/Q75256213>
+  # Alice MacDonnel
+  gen:father <https://www.wikidata.org/wiki/Q4719465> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75256207> .
+  # oo Sir Moyses Hill, d. 1630-02, https://www.wikidata.org/wiki/Q75256221
 
 <https://www.wikidata.org/wiki/Q4786413>
   # Archibald MacDonald, 7th of Dunnyveg, d. 1569
@@ -449,6 +462,441 @@
   # oo 1799-07-18 Lord Mark Robert Kerr, 1776-11-12 - 1840-09-09, https://www.wikidata.org/wiki/Q16230382
 
 
+
+# Macdonald of Sleat
+<https://www.wikidata.org/wiki/Q5933254>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75446727> ;
+  # Uisdean Macdonald, 1st of Sleat, 1437~ – 1498
+  gen:father <https://www.wikidata.org/wiki/Q2833745> . # illegitimate
+  # oo Finvola MacIan
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5933254> , <https://www.wikidata.org/wiki/Q75446798> .
+
+<https://www.wikidata.org/wiki/Q75446800>
+  # John Macdonald, 2nd of Sleat, d. 1502
+  gen:father <https://www.wikidata.org/wiki/Q5933254> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75446798> .
+<https://www.wikidata.org/wiki/Q75446726>
+  # Donald 'Gallach' Macdonald, 3rd of Sleat, d. 1506
+  gen:father <https://www.wikidata.org/wiki/Q5933254> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75446798> .
+  # oo Agnes Macdonald
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75446726> , <https://www.wikidata.org/wiki/Q75446804> .
+
+<https://www.wikidata.org/wiki/Q75446725>
+  # Donald 'Gruamach' Macdonald, 4th of Sleat, d. 1539
+  gen:father <https://www.wikidata.org/wiki/Q75446726> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75446804> .
+  # oo Catherine Macdonald of Clanranald, daughter of Alexander Macallan Macdonald, 7th of Clanranald and Moidart
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75446725> , <https://www.wikidata.org/wiki/Q75446806> .
+
+<https://www.wikidata.org/wiki/Q75446724>
+  # Donald 'Gorm' Macdonald, 5th of Sleat, d. 1546a
+  gen:father <https://www.wikidata.org/wiki/Q75446725> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75446806> .
+  # oo Mary Macleod, daughter of John MacTorquil MacLeod
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75446724> , <https://www.wikidata.org/wiki/Q75446808> .
+
+<https://www.wikidata.org/wiki/Q75446723>
+  # Donald 'Gormeson' Macdonald, 6th of Sleat, d. 1573
+  gen:father <https://www.wikidata.org/wiki/Q75446724> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75446808> .
+  # Mary Maclean, daughter of Hector 'Mor' Maclean, 8th of Duart (d. 1568, https://www.wikidata.org/wiki/Q16842103) and oo Morvern and Mary Macdonald (https://www.wikidata.org/wiki/Q76064596, daughter of Alexander Macdonald of Islay)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75446723> , <https://www.wikidata.org/wiki/Q75446810> .
+
+<https://www.wikidata.org/wiki/Q75446812>
+  # Donald 'Gorm Mor' Macdonald, 7th of Sleat, d. 1616-12
+  gen:father <https://www.wikidata.org/wiki/Q75446723> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75446810> .
+  # oo Margaret Macleod, daughter of Tormod MacLeod, 12th of MacLeod (d. 1585, https://www.wikidata.org/wiki/Q75446814) and oo Jill Maclean (https://www.wikidata.org/wiki/Q76064973, daughter of Hector 'Mor' Maclean, 8th of Duart and Morvern and Mary Macdonald)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75446812> , <https://www.wikidata.org/wiki/Q75446813> .
+  # oo Mary Mackenzie, daughter of Sir Colin Mackenzie, 11th of Kintail (1556 - 1594-06-14/-19, https://www.wikidata.org/wiki/Q5144942) and oo Barbara Grant (https://www.wikidata.org/wiki/Q75516300)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75446812> , <https://www.wikidata.org/wiki/Q75446815> .
+<https://www.wikidata.org/wiki/Q75446685>
+  # Archibald Macdonald
+  gen:father <https://www.wikidata.org/wiki/Q75446723> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75446810> .
+  # oo Margaret Macdonald, daughter of Archibald Macdonald (https://www.wikidata.org/wiki/Q75446687)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75446685> , <https://www.wikidata.org/wiki/Q75446686> .
+
+<https://www.wikidata.org/wiki/Q7526431> # -> Macdonald baronets of Sleat
+  # Sir Donald Macdonald, 8th of Sleat, 1st Baronet, d. 1643-10
+  gen:father <https://www.wikidata.org/wiki/Q75446685> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75446686> .
+
+
+
+# Macdonald baronets of Sleat
+<https://www.wikidata.org/wiki/Q7526431>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75446684> ;
+  # Sir Donald Macdonald, 8th of Sleat, 1st Baronet, d. 1643-10
+  # 1st Baronet Macdonald, of Sleat, in the Isle of Skye, co. Inverness 1625-07-14
+  gen:father <https://www.wikidata.org/wiki/Q75446685> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75446686> .
+  # oo Janet Mackenzie, daughter of Kenneth Mackenzie, 1st Lord Mackenzie of Kintail (1573 - 1611-02-27, https://www.wikidata.org/wiki/Q6390425) and oo Jean Anne Ross (1572 - 1604-05-09,  daughter of George Ross, 10th of Balnagowan and Marion Campbell)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7526431> , <https://www.wikidata.org/wiki/Q75446688> .
+
+<https://www.wikidata.org/wiki/Q7527471>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75446683> ;
+  # Sir James 'Mor' Macdonald, 9th of Sleat, 2nd Baronet, 1605~ – 1678-12-08
+  gen:father <https://www.wikidata.org/wiki/Q7526431> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75446688> .
+  # oo Margaret Mackenzie, daughter of Sir Roderick Mackenzie of Castle Leod (https://www.wikidata.org/wiki/Q75446694) and Margaret Macleod (https://www.wikidata.org/wiki/Q75446691)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7527471> , <https://www.wikidata.org/wiki/Q75446689> .
+<https://www.wikidata.org/wiki/Q75446816>
+  # Sir Donald John Macdonald, 1st of Castleton, 1624~ - 1690~
+  gen:father <https://www.wikidata.org/wiki/Q7526431> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75446688> .
+  # oo Margaret Cameron, b. 1624~, daughter of John Cameron and Margaret Campbell
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75446816> , <https://www.wikidata.org/wiki/Q76061572> .
+
+<https://www.wikidata.org/wiki/Q75421163>
+  # Sir Donald Macdonald, 10th of Sleat, 3rd Baronet, d. 1695-02-05
+  gen:father <https://www.wikidata.org/wiki/Q7527471> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75446689> .
+  # oo Lady Mary/Margaret Douglas, daughter of Robert Douglas, 8th Earl of Morton and Elizabeth Villiers
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75421163> , <https://www.wikidata.org/wiki/Q75421164> ;
+	gen:startDate "1662-07-24" .
+<https://www.wikidata.org/wiki/Q76190199>
+  # John Macdonald, 2nd of Castleton
+  gen:father <https://www.wikidata.org/wiki/Q75446816> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76061572> .
+  # oo Anne MacLean, daughter of John MacLean, 8th of Boreray and Marion Campbell of Strond
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76190199> , <https://www.wikidata.org/wiki/Q76318961> .
+
+<https://www.wikidata.org/wiki/Q75446698>
+  # Sir Donald Macdonald, 11th of Sleat, 4th Baronet, d. 1718
+  gen:father <https://www.wikidata.org/wiki/Q75421163> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75421164> .
+  # oo Mary Macdonald
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75446698> , <https://www.wikidata.org/wiki/Q75446700> .
+<https://www.wikidata.org/wiki/Q75446703>
+  # Sir James Macdonald, 13th of Sleat, 6th Baronet, d. 1723
+  gen:father <https://www.wikidata.org/wiki/Q75421163> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75421164> .
+  # oo Janet Macleod, daughter of Alasdair MacLeod, 2nd of Grishornish and Margaret MacQueen
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75446703> , <https://www.wikidata.org/wiki/Q75446704> .
+  # oo Margaret Macdonald, daughter of John Macdonald
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75446703> , <https://www.wikidata.org/wiki/Q75446707> .
+<https://www.wikidata.org/wiki/Q75446700>
+  # Mary Macdonald
+  gen:father <https://www.wikidata.org/wiki/Q76190199> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76318961> .
+  # oo Sir Donald Macdonald, 11th of Sleat, 4th Baronet, d. 1718, https://www.wikidata.org/wiki/Q75446698
+
+<https://www.wikidata.org/wiki/Q75446702>
+  # Sir Donald Macdonald, 12th of Sleat, 5th Baronet, 1697~ - 1720
+  gen:father <https://www.wikidata.org/wiki/Q75446698> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75446700> .
+<https://www.wikidata.org/wiki/Q75446832>
+  # Janet Macdonald
+  gen:father <https://www.wikidata.org/wiki/Q75446698> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75446700> .
+  # oo Norman MacLeod, 22nd of MacLeod, 1705 - 1772, https://www.wikidata.org/wiki/Q15435225
+<https://www.wikidata.org/wiki/Q75240743>
+  # Sir Alexander Macdonald, 14th of Sleat, 7th Baronet, 1711 - 1746-11-23
+  gen:father <https://www.wikidata.org/wiki/Q75446703> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75446704> .
+  # oo Lady Margaret Montgomerie, d. 1799-03-30
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75240743> , <https://www.wikidata.org/wiki/Q75264209> ;
+	gen:startDate "1739-04-24" .
+<https://www.wikidata.org/wiki/Q75446838>
+  # Margaret Macdonald, d. 1723
+  gen:father <https://www.wikidata.org/wiki/Q75446703> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75446704> .
+  # oo 1738~ Sir Robert Douglas of Glenbervie, 6th Baronet, 1694 – 1770-04-24, https://www.wikidata.org/wiki/Q7528758
+<https://www.wikidata.org/wiki/Q76062674>
+  # Janet Macdonald, d. 1723
+  gen:father <https://www.wikidata.org/wiki/Q75446703> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75446704> .
+  # oo Sir Alexander Mackenzie of Coul, 5th Baronet, d. 1792, https://www.wikidata.org/wiki/Q76062672, son of Sir Colin Mackenzie of Coul, 4th Baronet (https://www.wikidata.org/wiki/Q76062669) and Henrietta Houston (https://www.wikidata.org/wiki/Q76062671)
+
+<https://www.wikidata.org/wiki/Q75446709>
+  # Sir James Macdonald, 15th of Sleat, 8th Baronet, 1742~ - 1766-07-26
+  gen:father <https://www.wikidata.org/wiki/Q75240743> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75264209> .
+<https://www.wikidata.org/wiki/Q4719486> # -> Baron Macdonald of Slate
+  # Alexander Macdonald, 1st Baron Macdonald of Slate, 1745~ - 1795-09-12
+  gen:father <https://www.wikidata.org/wiki/Q75240743> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75264209> .
+<https://www.wikidata.org/wiki/Q7526038> # -> Macdonald baronets of East Sheen
+  # Sir Archibald Macdonald, 1st Baronet, 1747-07-13 - 1826-05-18
+  gen:father <https://www.wikidata.org/wiki/Q75240743> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75264209> .
+
+
+# Baron Macdonald of Slate
+<https://www.wikidata.org/wiki/Q4719486>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75293235> ;
+  # Alexander Macdonald, 1st Baron Macdonald of Slate, 1745~ - 1795-09-12
+  # 9th Baronet Macdonald, of Sleat, in the Isle of Skye, co. Inverness 1766-07-26
+  # 1st Baron Macdonald of Slate, co. Antrim 1776-07-25
+  gen:father <https://www.wikidata.org/wiki/Q75240743> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75264209> .
+  # oo Elizabeth Diana Bosville, 1748-07-25 - 1789-10-18, sister of William Bosville (1745-07-21 – 1813-12-10, https://www.wikidata.org/wiki/Q18531053) and daughter of Godfrey Bosville and Diana Wentworth
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4719486> , <https://www.wikidata.org/wiki/Q75293237> ;
+	gen:startDate "1768-05-03" .
+
+<https://www.wikidata.org/wiki/Q76009076>
+  # Diana Macdonald, 1769-09-28 - 1845-04-22
+  gen:father <https://www.wikidata.org/wiki/Q4719486> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75293237> .
+  # oo 1788-03-06 Rt. Hon. Sir John Sinclair of Ulbster, 1st Baronet, 1754-05-10 – 1835-12-21, https://www.wikidata.org/wiki/Q337499 (gordon.ttl)
+<https://www.wikidata.org/wiki/Q4719487>
+  # Alexander Wentworth Macdonald, 2nd Baron Macdonald of Slate, 1773-12-09 - 1824-06-19
+  gen:father <https://www.wikidata.org/wiki/Q4719486> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75293237> .
+<https://www.wikidata.org/wiki/Q5576499>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75388748> ;
+  # Godfrey Bosville Macdonald, 3rd Baron Macdonald of Slate, 1775-10-14 - 1832-10-13
+  gen:father <https://www.wikidata.org/wiki/Q4719486> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75293237> .
+  # oo Louisa Maria la Coast, 1782-01-06 - 1835-02-10
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5576499> , <https://www.wikidata.org/wiki/Q75388746> ;
+	gen:startDate "1803-12-29" .
+
+<https://www.wikidata.org/wiki/Q75292893>
+  # Alexander William Robert Bosville, 1800-09-12 - 1847-09-22
+  gen:father <https://www.wikidata.org/wiki/Q5576499> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75388746> .
+  # oo Matilda Eliza Moffat Bayard, d. 1839-07, daughter of John Bayard
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75292893> , <https://www.wikidata.org/wiki/Q75292896> ;
+	gen:startDate "1823-07-10" .
+<https://www.wikidata.org/wiki/Q75292905>
+  # Louisa Bosville Macdonald, 1802-04-16 - 1854-09-01
+  gen:father <https://www.wikidata.org/wiki/Q5576499> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75388746> .
+  # oo 1826-06-04 John Hope, 5th Earl of Hopetoun, 1803-11-15 - 1843-04-08, https://www.wikidata.org/wiki/Q3809350
+<https://www.wikidata.org/wiki/Q75292907>
+  # Hon. Elizabeth Diana Bosville Macdonald, 1804-02-27 - 1839-06-09
+  gen:father <https://www.wikidata.org/wiki/Q5576499> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75388746> .
+  # oo 1825-06-20 Duncan Davidson, 4th of Tulloch, 1800 - 1881-09-20, https://www.wikidata.org/wiki/Q5314327 (chetwynd.ttl)
+<https://www.wikidata.org/wiki/Q75292837>
+  # Hon. Julia Bosville Macdonald, 1805-10-30 - 1884-06-11
+  gen:father <https://www.wikidata.org/wiki/Q5576499> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75388746> .
+  # oo 1838-10-11 Rev. Charles Walter Hudson, 1807 - 1900-10-26, https://www.wikidata.org/wiki/Q75292839, son of Harrington Hudson (1772 - 1826-11, https://www.wikidata.org/wiki/Q76257833, son of John Hudson and Susanna Trevelyan) and oo 1795-10-26 Lady Anne Townshend (1775-02-01 - 1826-11-29, https://www.wikidata.org/wiki/Q76255865, daughter of https://www.wikidata.org/wiki/Q3101971 and Anne Montgomery)
+<https://www.wikidata.org/wiki/Q75292841>
+  # Hon. Susan Hussey Bosville Macdonald, 1807-08-25 - 1879-11-05
+  gen:father <https://www.wikidata.org/wiki/Q5576499> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75388746> .
+  # oo 1832-02-09 Richard Beaumont, 1799-01-25 - 1877-11-02, https://www.wikidata.org/wiki/Q75292842, son of https://www.wikidata.org/wiki/Q7793500 (erskine.ttl) and Diana Wentworth (https://www.wikidata.org/wiki/Q75298541)
+<https://www.wikidata.org/wiki/Q75292899>
+  # Godfrey William Wentworth Bosville Macdonald, 4th Baron Macdonald of Slate, 1809-03-16 - 1863-07-25
+  gen:father <https://www.wikidata.org/wiki/Q5576499> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75388746> .
+  # oo Maria Anne Wyndham, 1819 - 1892-04-21, daughter of George Thomas Wyndham (https://www.wikidata.org/wiki/Q75271695) and oo 1819b Maria Augusta Windham (1805 - 1871-10-31 (oo https://www.wikidata.org/wiki/Q8010869 (anderson.ttl)), https://www.wikidata.org/wiki/Q75271694, daughter of Vice-Admiral William Windham (https://www.wikidata.org/wiki/Q52269641))
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75292899> , <https://www.wikidata.org/wiki/Q3847119> ;
+	gen:startDate "1845-08-21" .
+<https://www.wikidata.org/wiki/Q21679906>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75293050> ;
+  # Hon. James William Bosville Macdonald, 1810-10-01 - 1882-01-04
+  gen:father <https://www.wikidata.org/wiki/Q5576499> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75388746> .
+  # oo Hon. Elizabeth Nina Blake, 1830-12-12 - 1890-07-21
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q21679906> , <https://www.wikidata.org/wiki/Q75293064> ;
+	gen:startDate "1859-09-26" .
+<https://www.wikidata.org/wiki/Q75270920>
+  # Hon. Diana Bosville Macdonald, 1812-04-12 - 1880-12-08
+  gen:father <https://www.wikidata.org/wiki/Q5576499> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75388746> .
+  # oo 1837-04-25 John George Smyth, 1815-02-05 - 1859-06-10, https://www.wikidata.org/wiki/Q75252909, son of John Henry Smyth (1780-03-20 - 1822-10-20, https://www.wikidata.org/wiki/Q26262800, son of Rt. Hon. John Smyth (https://www.wikidata.org/wiki/Q75249814) and Lady Georgiana Fitzroy (https://www.wikidata.org/wiki/Q75249813)) and oo 1814 Lady Elizabeth Anne FitzRoy (d. 1867-10-27, https://www.wikidata.org/wiki/Q75249780, daughter of George Henry FitzRoy, 4th Duke of Grafton and Lady Charlotte Maria Waldegrave)
+<https://www.wikidata.org/wiki/Q75292610>
+  # Hon. Marianne Bosville Macdonald, 1816-07-27 - 1876-07-12
+  gen:father <https://www.wikidata.org/wiki/Q5576499> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75388746> .
+  # oo 1840-07-28 Henry Martin Turnor, d. 1902-01-08, https://www.wikidata.org/wiki/Q75281266 (scott.ttl)
+<https://www.wikidata.org/wiki/Q75292850>
+  # Hon. Octavia Sophia Bosville Macdonald, d. 1897-01-22
+  gen:father <https://www.wikidata.org/wiki/Q5576499> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75388746> .
+  # oo 1841-12-07 William James Hope Johnstone, 1819 - 1850-03-17, https://www.wikidata.org/wiki/Q75292853 (hope.ttl)
+
+<https://www.wikidata.org/wiki/Q75276663>
+  # Julia Louisa Bosville, 1824-04-05 - 1901-10-11
+  gen:father <https://www.wikidata.org/wiki/Q75292893> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75292896> .
+  # oo 1843-08-03 Henry Willoughby, 8th Baron Middleton of Middleton, 1817-08-28 - 1877-12-20, https://www.wikidata.org/wiki/Q5730319
+<https://www.wikidata.org/wiki/Q75276665>
+  # Godfrey Wentworth Bayard Bosville, 1826-01-06 - 1865-10-11
+  gen:father <https://www.wikidata.org/wiki/Q75292893> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75292896> .
+  # oo Hon. Harriet Cassandra Willoughby, d. 1903-09-28
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75276665> , <https://www.wikidata.org/wiki/Q75292969> ;
+	gen:startDate "1864-07-05" .
+<https://www.wikidata.org/wiki/Q75293073>
+  # Hon. Eva Maria Louisa Bosville Macdonald, d. 1930-02-07
+  gen:father <https://www.wikidata.org/wiki/Q75292899> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3847119> .
+  # oo 1873-06-07 Henry Algernon Langham, 1850-01-11 - 1874-12-20, https://www.wikidata.org/wiki/Q75293074, son of hill.ttl#Herbert_Langham (https://www.wikidata.org/wiki/Q75823725) and Laura Charlotte Micklethwait (https://www.wikidata.org/wiki/Q76048694)
+  # oo 1885-01-27 Robert William Napier, 2nd Baron Napier of Magdala, 1845-02-11 - 1921-12-11, https://www.wikidata.org/wiki/Q75293075, son of Robert Cornelis Napier, 1st Baron Napier of Magdala (1810-12-06 – 1890-01-14, 1st Baron Napier of Magdala, in Abyssinia and of Caryngton, co. Palatine of Chester 1868-07-17, https://www.wikidata.org/wiki/Q336474 (see murray.ttl), son of Charles Frederick Napier and Catherine Carrington) and oo 1840-09-03 Anne Sarah Pearse (1820-10-01 - 1849-12-30, https://www.wikidata.org/wiki/Q75342385, daughter of Dr. George Pearse and Anne Sarah McCulloch)
+<https://www.wikidata.org/wiki/Q75293081>
+  # Hon. Alexandrina Victoria Bosville Macdonald, d. 1953-03-04
+  gen:father <https://www.wikidata.org/wiki/Q75292899> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3847119> .
+  # oo 1886-11-11 Sir Anthony Charles Sykes Abdy, 3rd Baronet, 1848-09-19 - 1921-05-17, https://www.wikidata.org/wiki/Q54874836, son of Sir Thomas Neville Abdy, 1st Baronet (1810-12-21 - 1877-07-20, 1st Baronet Abdy, of Albyns, Essex 1850-06-08, https://www.wikidata.org/wiki/Q7529022, son of Anthony Thomas Abdy and Grace Rich) and oo 1841-10-19 Hariot Alston (d. 1877-07-08, https://www.wikidata.org/wiki/Q75274800, daughter of Rowland Alston)
+<https://www.wikidata.org/wiki/Q75293067>
+  # Somerled James Brudenell Bosville Macdonald, 5th Baron Macdonald of Slate, 1849-10-02 - 1874-12-25
+  gen:father <https://www.wikidata.org/wiki/Q75292899> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3847119> .
+<https://www.wikidata.org/wiki/Q56560401>
+  # Ronald Archibald Bosville Macdonald, 6th Baron Macdonald of Slate, 1853-01-09 - 1947-01-20
+  gen:father <https://www.wikidata.org/wiki/Q75292899> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3847119> .
+  # oo Louisa Jane Hamilton Ross, d. 1922-08-20, daughter of George William Holmes Rose of Cromarty and Adelaide Lucy Davidson
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q56560401> , <https://www.wikidata.org/wiki/Q75293070> ;
+	gen:startDate "1875-10-01" .
+<https://www.wikidata.org/wiki/Q75252770>
+  # Hon. Lilian Janet Bosville Macdonald, 1856-01-21 - 1926-11-20
+  gen:father <https://www.wikidata.org/wiki/Q75292899> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3847119> .
+  # oo 1876-08-02 Francis Mackenzie Sutherland-Leveson-Gower, 2nd Earl of Cromartie, 1852-08-03 - 1893-11-24, https://www.wikidata.org/wiki/Q25974150
+  # oo 1895-11-07 Reginald Frederick Cazenove, 1872~ -September 1905-09-05, https://www.wikidata.org/wiki/Q75293078, son of Frederick Cazenove
+<https://www.wikidata.org/wiki/Q75293027>
+  # Mary Selina Honoria Bosville Macdonald, 1865-04-05 - 1925-01-12
+  gen:father <https://www.wikidata.org/wiki/Q21679906> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75293064> .
+  # oo 1889-08-14 Hon. Alexander Hugh Willoughby, 1863-09-18 - 1927-12-05, https://www.wikidata.org/wiki/Q75293026
+
+<https://www.wikidata.org/wiki/Q75303777>
+  # Hon. Godfrey Evan Hugh Bosville Macdonald, 1879-03-05 - 1914-11-02
+  gen:father <https://www.wikidata.org/wiki/Q56560401> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75293070> .
+  # oo Helen Holme Bankes, 1877 - 1928-11-07, daughter of William Meyrick Bankes and Helen Macpherson
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75303777> , <https://www.wikidata.org/wiki/Q75303778> ;
+	gen:startDate "1908-04-28" .
+<https://www.wikidata.org/wiki/Q75303792>
+  # Hon. Ronald Ian Bosville Macdonald, 1884-10-01 - 1918-10-17
+  gen:father <https://www.wikidata.org/wiki/Q56560401> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75293070> .
+  # oo Helen Elizabeth Swinnerton Dyer, d. 1966-04-30, daughter of Sir Thomas Swinnerton Dyer, 11th Baronet (1859-10-03 - 1907-08-23, https://www.wikidata.org/wiki/Q75303795, son of Sir Swinnerton Halliday Dyer, 10th Baronet (https://www.wikidata.org/wiki/Q75277072) and Helen Maria Croker (https://www.wikidata.org/wiki/Q75719932)) and oo 1886-01-21 Dona Edith McGrigor (d. 1909-02-03, https://www.wikidata.org/wiki/Q75303802, daughter of Sir Charles Rhoderic McGrigor, 2nd Baronet (1811-05-02 - 1890-01-13, https://www.wikidata.org/wiki/Q75303804, son of Sir James McGrigor, 1st Baronet (1771-04-09 - 1858-04-02, 1st Baronet McGrigor, of Campden Hill, co. Middlesex 1831-09-30, https://www.wikidata.org/wiki/Q7527464, son of Colquhoun McGrigor and Ann Grant) and oo 1810-06-23 Mary Grant (d. 1872-04-01, https://www.wikidata.org/wiki/Q76062491, daughter of Duncan Grant of Mullochard, Strathspey)) and oo 1850-11-17 Mary Grant (d. 1872-04-01, https://www.wikidata.org/wiki/Q75303805, daughter of Duncan Grant))
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75303792> , <https://www.wikidata.org/wiki/Q75303793> ;
+	gen:startDate "1915-05-05" .
+
+<https://www.wikidata.org/wiki/Q4719489>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75303781> ;
+  # Alexander Godfrey Macdonald, 7th Baron Macdonald of Slate, 1909-06-27 - 1970-11-29
+  gen:father <https://www.wikidata.org/wiki/Q75303777> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75303778> .
+  # oo Anne Whitaker, d. 1988, daughter of Alfred Whitaker
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4719489> , <https://www.wikidata.org/wiki/Q75303783> ;
+	gen:startDate "1945-06-14" .
+
+<https://www.wikidata.org/wiki/Q27517620>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75303785> ;
+  # Godfrey James Macdonald, 8th Baron Macdonald of Slate, b. 1947-11-28
+  gen:father <https://www.wikidata.org/wiki/Q4719489> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75303783> .
+  # oo Claire Catlow, daughter of Thomas Noel Catlow and Jean Meriel Nuttall
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q27517620> , <https://www.wikidata.org/wiki/Q50555154> ; # or https://www.wikidata.org/wiki/Q75303808
+	gen:startDate "1969-06-14" .
+
+<https://www.wikidata.org/wiki/Q75303809>
+  # Hon. Alexandra Louise Macdonald, b. 1973-08-19
+  gen:father <https://www.wikidata.org/wiki/Q27517620> ;
+  gen:mother <https://www.wikidata.org/wiki/Q50555154> .
+  # oo Philipp Franz Freiherr von und zu Guttenberg, b. 1973-05-10, son of Georg Enoch Freiherr von und zu Guttenberg (b. 1946-07-29, https://www.wikidata.org/wiki/Q102772, son of Karl Theodor Freiherr von und zu Guttenberg (1921-05-23 - 1972-10-04, https://www.wikidata.org/wiki/Q97122, son of https://www.wikidata.org/wiki/Q1376806 and https://www.wikidata.org/wiki/Q1329913) and oo 1943-07-06 Rose-Sofie Prinzessin von Arenberg (1922-12-23 - 2012-11-17, https://www.wikidata.org/wiki/Q75329136, daughter of Robert Prosper Paul Jean Antoine Engelbert Eugene Marie Ernest Joseph Gaspard Etienne Herzog von Arenberg (1895-08-10 - 1972-02-24, ligne.ttl#Robert-Prosper_von_Arenberg or https://www.wikidata.org/wiki/Q75392172, son of Jean Herzog von Arenberg (ligne.ttl#Jean-Baptiste_Engelbert_von_Arenberg or https://www.wikidata.org/wiki/Q66370739, son of ligne.ttl#Pierre_Antoine-François_d'Arenberg (https://www.wikidata.org/wiki/Q66370748) and Marie-Ghislaine Comtesse de Mérode) and ligne.ttl#Sophie_von_Arenberg (https://www.wikidata.org/wiki/Q66370774)) and oo 1922-03-20 Gabrielle Prinzessin von Wrede (1895-06-26 - 1971-11-14, https://www.wikidata.org/wiki/Q75392174, daughter of https://www.wikidata.org/wiki/Q55828434 or https://www.wikidata.org/wiki/Q75335641 and oo Anna Prinzessin von Lobkowicz (https://www.wikidata.org/wiki/Q75294957)))) and oo 1971-02-14 (div 1977) Christiane Gräfin und Edle Herrin von und zu Eltz genannt Faust von Stromberg (b. 1951-11-27, https://www.wikidata.org/wiki/Q75296150, daughter of Jacob Edler Herr von und zu Eltz genannt Faust von Stromberg (https://www.wikidata.org/wiki/Q75287837) and Ladislaja Baronin Mayr von Melnhof (https://www.wikidata.org/wiki/Q75287835))
+<https://www.wikidata.org/wiki/Q76255860>
+  # Hon. Isabella Claire Macdonald, b. 1975-10-02
+  gen:father <https://www.wikidata.org/wiki/Q27517620> ;
+  gen:mother <https://www.wikidata.org/wiki/Q50555154> .
+<https://www.wikidata.org/wiki/Q76252930>
+  # Hon. Meriel Iona Macdonald, b. 1978
+  gen:father <https://www.wikidata.org/wiki/Q27517620> ;
+  gen:mother <https://www.wikidata.org/wiki/Q50555154> .
+  # oo Peter Brodie Strang Steel, b. 1977, son of Colin Brodie Strang Steel and April Eileen Studd
+<https://www.wikidata.org/wiki/Q76255859>
+  # Hon. Godfrey Evan Hugo Thomas Macdonald of Macdonald, younger, b. 1982-02-24
+  gen:father <https://www.wikidata.org/wiki/Q27517620> ;
+  gen:mother <https://www.wikidata.org/wiki/Q50555154> .
+
+
+
+# Macdonald baronets of East Sheen
+<https://www.wikidata.org/wiki/Q7526038>
+  # Sir Archibald Macdonald, 1st Baronet, 1747-07-13 - 1826-05-18
+  # 1st Baronet Macdonald, of East Sheen 1813-11-27
+  gen:father <https://www.wikidata.org/wiki/Q75240743> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75264209> .
+  # oo Lady Louisa Leveson-Gower, 1757 - 1827-01-29
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7526038> , <https://www.wikidata.org/wiki/Q75249086> ;
+	gen:startDate "1777-11-26" .
+
+<https://www.wikidata.org/wiki/Q7527460>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75354580> ;
+  # Sir James Macdonald, 2nd Baronet, 1784-02-14 - 1832-06-29
+  gen:father <https://www.wikidata.org/wiki/Q7526038> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75249086> .
+  # oo Elizabeth Sparrow, 1789b - 1819b, daughter of John Sparrow
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7527460> , <https://www.wikidata.org/wiki/Q75446845> ;
+	gen:startDate "1805-09-05" .
+  # oo Lady Sophia Keppel, 1797-03-28 - 1824-09-29
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7527460> , <https://www.wikidata.org/wiki/Q75257469> ;
+	gen:startDate "1819-08-10" .
+  # oo Anne Charlotte Ogle, 1803~ - 1886-09-21, daughter of Rev. John Saville Ogle and Catherine Hannah Sneyd
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7527460> , <https://www.wikidata.org/wiki/Q75446847> ;
+	gen:startDate "1826-04-20" .
+<https://www.wikidata.org/wiki/Q75446852>
+  # Caroline Diana Macdonald, 1791 - 1867-12-13
+  gen:father <https://www.wikidata.org/wiki/Q7526038> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75249086> .
+  # oo Rev. Thomas Randolph, 1789~ - 1875, https://www.wikidata.org/wiki/Q75446853, son of https://www.wikidata.org/wiki/Q6254210 (or https://www.wikidata.org/wiki/Q75446854) and https://www.wikidata.org/wiki/Q76270592
+
+<https://www.wikidata.org/wiki/Q75354581>
+  # Sir Archibald Keppel Macdonald, 3rd Baronet, 1820-10-15 - 1901-03-28
+  gen:father <https://www.wikidata.org/wiki/Q7527460> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75257469> .
+  # oo Lady Margaret Sophia Coke, 1829~ - 1868-11-04
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75354581> , <https://www.wikidata.org/wiki/Q75258835> ;
+	gen:startDate "1849-05-01" .
+  # oo Catherine Mary Coulthurst, d. 1894-11-27, daughter of John Coulthurst
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75354581> , <https://www.wikidata.org/wiki/Q75354582> ;
+	gen:startDate "1869-11-25" .
+
+<https://www.wikidata.org/wiki/Q75354584>
+  # Sir Archibald John Macdonald, 4th Baronet, 1871-02-02 - 1919-10-11
+  gen:father <https://www.wikidata.org/wiki/Q75354581> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75354582> .
+  # oo Constance Mary Burgess, daughter of Rev. Henry Martyn Burgess
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75354584> , <https://www.wikidata.org/wiki/Q75354586> ;
+	gen:startDate "1900-01-10" .
+
+
 # ----
 <https://www.wikidata.org/wiki/Q266044>
   # Magnús Óláfsson, d. 1265-11-24
@@ -629,3 +1077,30 @@
   # oo Lady Catherine MacDonnell
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75904217> , <#Lady_Catherine_MacDonnell> .
+
+
+# ----
+#<https://www.wikidata.org/wiki/Q680982>
+  # William Henry Hanover, 1st Duke of Gloucester, 1743-11-14 - 1805-08-25
+
+<https://www.wikidata.org/wiki/Q75388746>
+  # Louisa Maria la Coast, 1782-01-06 - 1835-02-10
+  gen:father <https://www.wikidata.org/wiki/Q680982> ;
+  gen:mother <https://www.wikidata.org/wiki/Q18526435> . # Lady Almeria Carpenter, 1752 – 1809
+  # oo 1803-12-29 Godfrey Bosville Macdonald, 3rd Baron Macdonald of Slate, 1775-10-14 - 1832-10-13, https://www.wikidata.org/wiki/Q5576499
+
+# ----
+<https://www.wikidata.org/wiki/Q6281560>
+  # Joseph Henry Blake, 3rd Baron Wallscourt, 1797-06-02 - 1849
+  gen:father <https://www.wikidata.org/wiki/Q75619936> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75655722> .
+  # oo Elizabeth Lock, 1806 - 1877-01-02, daughter of William Lock and Elizabeth Jennings
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6281560> , <https://www.wikidata.org/wiki/Q75655727> ;
+	gen:startDate "1822-09-23" .
+
+<https://www.wikidata.org/wiki/Q75293064>
+  # Hon. Elizabeth Nina Blake, 1830-12-12 - 1890-07-21
+  gen:father <https://www.wikidata.org/wiki/Q6281560> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75655727> .
+  # oo 1859-09-26 Hon. James William Bosville Macdonald, 1810-10-01 - 1882-01-04, https://www.wikidata.org/wiki/Q21679906
