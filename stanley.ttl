@@ -1728,11 +1728,11 @@
   gen:father <https://www.wikidata.org/wiki/Q7795320> ;
   gen:mother <#Mary_Throckmorton> .
   # oo 1641 Jan Polyander van der Kerchhove, Heer van Henvliet, 1594-08-24 - 1660-03-07, https://www.wikidata.org/wiki/Q14851914
-<#Hester_Wotton>
+<https://www.wikidata.org/wiki/Q75255451>
   # Hon. Hester Wotton, 1616-01-11 - 1655a
   gen:father <https://www.wikidata.org/wiki/Q7795320> ;
   gen:mother <#Mary_Throckmorton> .
-  # oo 1639-12-21 Baptist Noel, 3rd Viscount Campden, 1611 - 1682-10-29, https://www.wikidata.org/wiki/Q4857668
+  # oo 1639-12-21 Baptist Noel, 3rd Viscount Campden, 1611 - 1682-10-29, https://www.wikidata.org/wiki/Q4857668 (bentinck.ttl)
 # ----
 <#Mary_Throckmorton>
   # Mary Throckmorton, d. 1658-04-25
@@ -1741,7 +1741,7 @@
   # oo 1608 Thomas Wotton, 2nd Baron Wotton of Marley, 1587 - 1630-04-02, https://www.wikidata.org/wiki/Q7795320
 
 # ----
-#<#Sir_William_Wentworth,_1st_Baronet>
+#<https://www.wikidata.org/wiki/Q75939882>
   # Sir William Wentworth, 1st Baronet, d. 1614
   # 1st Baronet Wentworth, of Wentworth Woodhouse 1611-06-20
   # oo Anne Atkinson
@@ -1752,8 +1752,8 @@
   # 1st Baron Wentworth, of Wentworth-Woodhouse 1628
   # 1st Viscount Wentworth 1629
   # 1st Earl of Strafford, 1st Baron Raby 1640
-  gen:father <#Sir_William_Wentworth,_1st_Baronet> .
-  # and Anne Atkinson
+  gen:father <https://www.wikidata.org/wiki/Q75939882> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75939884> .
   # oo Lady Margaret Clifford, d. 1622
   []
     gen:spouse <https://www.wikidata.org/wiki/Q336091> , <https://www.wikidata.org/wiki/Q75939871> .
@@ -1763,9 +1763,14 @@
 	gen:startDate "1625-02".
 <#Anne_Wentworth>
   # Anne Wentworth, d. 1633-07-30
-  gen:father <#Sir_William_Wentworth,_1st_Baronet> .
-  # and Anne Atkinson
+  gen:father <https://www.wikidata.org/wiki/Q75939882> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75939884> .
   # oo 1607-09-14 Sir George Savile, 1583 - 1614-08-24, https://www.wikidata.org/wiki/Q18527571
+<#Elizabeth_Wentworth>
+  # Elizabeth Wentworth
+  gen:father <https://www.wikidata.org/wiki/Q75939882> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75939884> .
+  # oo James Dillon, 3rd Earl of Roscommon, d. 1649-02-08, https://www.wikidata.org/wiki/Q6132633
 
 <https://www.wikidata.org/wiki/Q8020191>
   # William Wentworth, 2nd Earl of Strafford, 1626-06-08 – 1695-10-16
@@ -1902,33 +1907,15 @@
   # Hugh Smith
   # oo Dorothy Barrett
   []
-    gen:spouse <#Hugh_Smith> , <#Dorothy_Barrett> ;
+    gen:spouse <#Hugh_Smith> , <cavendish.ttl#Dorothy_Barrett> ;
 	gen:startDate "1722" .
 
 <#Lucy_Smith>
   gen:name "Lucy Smith"@en ;
   gen:deathDate "1759-02-05" ;
   gen:father <#Hugh_Smith> ;
-  gen:mother <#Dorothy_Barrett> .
+  gen:mother <cavendish.ttl#Dorothy_Barrett> .
   # oo 1747-03-17 Rt. Hon. James Smith-Stanley, 1717-01-07 - 1771-06-01, https://www.wikidata.org/wiki/Q11716794
-# ----
-#<#Dacre_Barrett>
-  # Dacre Barrett, d. 1733
-  # oo Lady Jane Chichester
-  []
-    gen:spouse <#Dacre_Barrett> , <#Lady_Jane_Chichester> .
-
-<#Dorothy_Barrett>
-  # Dorothy Barrett
-  gen:father <#Dacre_Barrett> ;
-  gen:mother <#Lady_Jane_Chichester> .
-  # oo 1722 Hugh Smith, #Hugh_Smith
-# ----
-<#Lady_Jane_Chichester>
-  # Lady Jane Chichester
-  gen:father <https://www.wikidata.org/wiki/Q4798253> . # Arthur Chichester, 2nd Earl of Donegall
-  # and Jane Itchingham
-  # oo Dacre Barrett, d. 1733, #Dacre_Barrett
 
 # --------
 #<#Geoffrey_Hornby>

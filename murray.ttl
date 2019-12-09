@@ -2,6 +2,7 @@
 @prefix gen: <http://jjkoch.de/gen#> .
 @prefix wdata: <https://www.wikidata.org/wiki/> .
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 # William de Moravia, 1164 - 1226-10-05
   # son of William of Sutherland (1138 - 1203~)
@@ -714,7 +715,7 @@
   # Augusta Anne Murray, 1817-03-18 - 1848-02-23
   gen:father <https://www.wikidata.org/wiki/Q5542716> ;
   gen:mother <#Lady_Sara_Hay-Drummond> .
-  # oo 1844-06-04 John Somerset Pakington, 1st Baron Hampton, 1799-02-20 - 1880-04-09, https://www.wikidata.org/wiki/Q333339
+  # oo 1844-06-04 John Somerset Pakington, 1st Baron Hampton, 1799-02-20 - 1880-04-09, https://www.wikidata.org/wiki/Q333339 (boyle.ttl)
 <#George_Edward_Murray>
   # Rev George Edward Murray, 1818-09-01 - 1854-09-14
   gen:father <https://www.wikidata.org/wiki/Q5542716> ;
@@ -2698,9 +2699,9 @@
   # Charles Gideon Murray, 2nd Viscount Elibank, 1877-08-07 - 1951-03-11
   gen:father <https://www.wikidata.org/wiki/Q6906118> ;
   gen:mother <#Blanche_Alice_Scott> .
-  # oo Ermine Mary Katharine Madocks, d. 1955-03-22, daughter of Henry Robarts Madocks and Hon. Amelia Anne Napier (daughter of Field Marshal Robert Cornelis Napier, 1st Baron Napier of Magdala and Anne Sarah Pearse)
+  # oo Ermine Mary Katharine Madocks, d. 1955-03-22 (macdonald.ttl)
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q5559635> , <#Ermine_Mary_Katharine_Madocks> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q5559635> , <https://www.wikidata.org/wiki/Q75596777> ;
 	gen:startDate "1908-01-23" .
 <https://www.wikidata.org/wiki/Q4799794>
   # Arthur Cecil Murray, 3rd Viscount Elibank, 1879-03-27 - 1962-12-05
@@ -4143,39 +4144,6 @@
   # oo 1839-09-05 John Cotes, 1799 - 1874, https://www.wikidata.org/wiki/Q26128201
 
 # ----
-#<#William_Russell>
-  # William Russell
-  # oo Elizabeth Pakington, d. 1813-05
-  []
-    gen:spouse <#William_Russell> , <#Elizabeth_Pakington> .
-
-<https://www.wikidata.org/wiki/Q333339>
-  # John Somerset Pakington, 1st Baron Hampton, 1799-02-20 - 1880-04-09
-  # 1st Baronet Pakington 1846-07-13
-  # 1st Baron Hampton of Hampton Lovett and of Westwood, co. Worcester 1874-03-06
-  gen:father <#William_Russell> ;
-  gen:mother <#Elizabeth_Pakington> .
-  # oo Augusta Anne Murray, 1817-03-18 - 1848-02-23
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q333339> , <#Augusta_Anne_Murray> ;
-	gen:startDate "1844-06-04" .
-# ----
-<#Sir_Herbert_Perrott_Pakington,_7th_Baronet>
-  # Sir Herbert Perrott Pakington, 7th Baronet, d. 1795-05-02
-  gen:father <https://www.wikidata.org/wiki/Q19974207> .
-  # and Elizabeth Conyers
-  # oo Elizabeth Hawkins, d. 1783-06, daughter of Cæsar Hawkins and Ann Bright
-  []
-    gen:spouse <#Sir_Herbert_Perrott_Pakington,_7th_Baronet> , <#Elizabeth_Hawkins> ;
-	gen:startDate "1759" .
-
-<#Elizabeth_Pakington>
-  # Elizabeth Pakington, d. 1813-05
-  gen:father <#Sir_Herbert_Perrott_Pakington,_7th_Baronet> ;
-  gen:mother <#Elizabeth_Hawkins> .
-  # oo William Russell, #William_Russell
-
-# ----
 <#Charlotte_Letitia_Caroline_Arbuthnot>
   # Charlotte Letitia Caroline Arbuthnot, d. 1884
   gen:father <https://www.wikidata.org/wiki/Q5078004> .
@@ -4656,13 +4624,13 @@
   gen:father <https://www.wikidata.org/wiki/Q13554485> .
   # oo 1823-07-05 Lady Louisa Thynne, d. 1859-11-07
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q5724684> , <thynne.ttl#Lady_Louisa_Thynne> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q5724684> , <https://www.wikidata.org/wiki/Q75248860> ;
 	gen:startDate "1823-07-05" .
 
 <#George_Edwin_Lascelles>
   # Hon. George Edwin Lascelles, 1826-10-19 - 1911-03-09
   gen:father <https://www.wikidata.org/wiki/Q5724684> ;
-  gen:mother <thynne.ttl#Lady_Louisa_Thynne> .
+  gen:mother <https://www.wikidata.org/wiki/Q75248860> .
   # oo Lady Louisa Nina Murray, d. 1909-12-30
   []
     gen:spouse <#George_Edwin_Lascelles> , <#Lady_Louisa_Nina_Murray> ;
@@ -4670,20 +4638,25 @@
 <#Lady_Louisa_Isabella_Lascelles>
   # Lady Louisa Isabella Lascelles, 1830-07-20 - 1918-11-30
   gen:father <https://www.wikidata.org/wiki/Q5724684> ;
-  gen:mother <thynne.ttl#Lady_Louisa_Thynne> .
+  gen:mother <https://www.wikidata.org/wiki/Q75248860> .
   # oo 1853-08-25 Charles Henry Mills, 1st Baron Hillingdon of Hillingdon, 1830-04-26 – 1898-04-03, https://www.wikidata.org/wiki/Q5080952 (talbot.ttl)
 <#James_Walter_Lascelles>
   # Rev. Hon. James Walter Lascelles, 1831-11-14 - 1901-11-25
   gen:father <https://www.wikidata.org/wiki/Q5724684> ;
-  gen:mother <thynne.ttl#Lady_Louisa_Thynne> .
+  gen:mother <https://www.wikidata.org/wiki/Q75248860> .
   # oo Emma Clara Miles, d. 1911-04-30
   []
     gen:spouse <#James_Walter_Lascelles> , <#Emma_Clara_Miles> ;
 	gen:startDate "1856-07-17" .
+<https://www.wikidata.org/wiki/Q75250672>
+  # Lady Blanche Emma Lascelles, 1837-08-18 - 1863-12-26
+  gen:father <https://www.wikidata.org/wiki/Q5724684> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75248860> .
+  # oo 1859-07-12 Henry Bentinck Boyle, 5th Earl of Shannon, 1833-11-22 – 1890-02-08, https://www.wikidata.org/wiki/Q5718491
 <https://www.wikidata.org/wiki/Q16854735>
   # Lady Maud Caroline Lascelles, 1846-11-26 - 1938-04-14
   gen:father <https://www.wikidata.org/wiki/Q5724684> ;
-  gen:mother <thynne.ttl#Lady_Louisa_Thynne> .
+  gen:mother <https://www.wikidata.org/wiki/Q75248860> .
   # oo 1871-11-28 Rt. Hon. Lord Sir George Francis Hamilton, 1845-12-17 - 1927-09-22, https://www.wikidata.org/wiki/Q333628
 
 <https://www.wikidata.org/wiki/Q15998188>
@@ -5344,12 +5317,13 @@
     gen:spouse <https://www.wikidata.org/wiki/Q6105456> , <#Evelyn_Izmé_Murray> ;
 	gen:startDate "1917-07-31" .
 <https://www.wikidata.org/wiki/Q15990274>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75346333> ;
   # Sir Victor Basil John Seely, 4th Baronet, 1900-05-18 - 1980-05-10
   gen:father <https://www.wikidata.org/wiki/Q7526292> ;
   gen:mother <#Emily_Evans> .
   # oo Mary Frances Margaret Collins, daughter of William Ronald Collins
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q15990274> , <#Mary_Frances_Margaret_Collins> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q15990274> , <https://www.wikidata.org/wiki/Q75351550> ;
 	gen:startDate "1937-06-08" .
 
 <#Violet_Lucy_Emily_Seely>
@@ -5362,8 +5336,9 @@
   gen:father <#Frank_Evelyn_Seely> ;
   gen:mother <russell.ttl#Leila_Eliza_Russell> .
   # oo 1923-07-26 Thomas Henry Brand, 4th Viscount Hampden of Glynde, 1900-03-30 - 1965-10-17, https://www.wikidata.org/wiki/Q7787830
-<#Alexandra_Mary_Hilda_Seely>
+<https://www.wikidata.org/wiki/Q75351531>
   # Alexandra Mary Hilda Seely, b. 1938-09-16
   gen:father <https://www.wikidata.org/wiki/Q15990274> ;
-  gen:mother <#Mary_Frances_Margaret_Collins> .
-  # oo 1966-11-21 Henry Charles Seymour, b. 1936-10-09, seymour.ttl#Henry_Charles_Seymour
+  gen:mother <https://www.wikidata.org/wiki/Q75351550> .
+  # oo 1966-11-21 Henry Charles Seymour, b. 1936-10-09, https://www.wikidata.org/wiki/Q75310928
+  # oo 1995 Michael Patrick Radcliffe Boyle, b. 1934-01-25, https://www.wikidata.org/wiki/Q75312229

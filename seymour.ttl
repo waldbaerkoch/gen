@@ -2,6 +2,7 @@
 @prefix gen: <http://jjkoch.de/gen#> .
 @prefix wdata: <https://www.wikidata.org/wiki/> .
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 <https://www.wikidata.org/wiki/Q6257374>
   # Sir John Seymour, 1395~/1400~/1402 – 1464-12-20
@@ -262,11 +263,11 @@
   gen:father <https://www.wikidata.org/wiki/Q336579> ;
   gen:mother <https://www.wikidata.org/wiki/Q5478935> .
   # oo 1649b Heneage Finch, 3rd Earl of Winchilsea, 1627~ - 1689-09, https://www.wikidata.org/wiki/Q5714116
-<#Lady_Jane_Seymour>
+<https://www.wikidata.org/wiki/Q75251992>
   # Lady Jane Seymour, 1637-07-06 - 1679-11-23
   gen:father <https://www.wikidata.org/wiki/Q336579> ;
   gen:mother <https://www.wikidata.org/wiki/Q5478935> .
-  # oo 1661-05-07 Charles Boyle, 2nd Baron Clifford of Lanesborough, 1639-12-12 - 1694-10-12, https://www.wikidata.org/wiki/Q3543085
+  # oo 1661-05-07 Charles Boyle, 3rd Viscount Dungarvan, 1639-12-12 - 1694-10-12, https://www.wikidata.org/wiki/Q3543085
 <https://www.wikidata.org/wiki/Q3718529>
   # John Seymour, 4th Duke of Somerset, 1626a - 1675-04-29
   gen:father <https://www.wikidata.org/wiki/Q336579> ;
@@ -1067,7 +1068,7 @@
   gen:father <https://www.wikidata.org/wiki/Q6679281> ;
   gen:mother <hamilton.ttl#Isabella_Hamilton> .
   # oo 1820-11-09 Henry Thomas Liddell, 1st Earl of Ravensworth, 1797-03-10 - 1878-03-19, https://www.wikidata.org/wiki/Q5724916
-<#Emily_Henrietta_Seymour>
+<https://www.wikidata.org/wiki/Q75310975>
   # Emily Henrietta Seymour, 1803 - 1887-12-01
   gen:father <https://www.wikidata.org/wiki/Q6679281> ;
   gen:mother <hamilton.ttl#Isabella_Hamilton> .
@@ -1411,18 +1412,18 @@
   []
     gen:spouse <#George_Raymond_Seymour> , <#Mary_Quenelda_Stanley_Ismay> ;
 	gen:startDate "1957-09-09" .
-<#Henry_Charles_Seymour>
+<https://www.wikidata.org/wiki/Q75310928>
   # Henry Charles Seymour, b. 1936-10-09
   gen:father <#Sir_Reginald_Henry_Seymour> ;
   gen:mother <hamilton.ttl#Lady_Katharine_Hamilton> .
   # oo Yolande Murray, daughter of Richard B. Murray
   []
-    gen:spouse <#Henry_Charles_Seymour> , <#Yolande_Murray> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75310928> , <#Yolande_Murray> ;
 	gen:startDate "1960-04-07" ;
 	gen:divorceDate "1965" .
   # oo Alexandra Mary Hilda Seely, b. 1938-09-16
   []
-    gen:spouse <#Henry_Charles_Seymour> , <murray.ttl#Alexandra_Mary_Hilda_Seely> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75310928> , <https://www.wikidata.org/wiki/Q75351531> ;
 	gen:startDate "1966-11-21" .
 
 <https://www.wikidata.org/wiki/Q5932648>
@@ -1991,6 +1992,73 @@
     gen:spouse <https://www.wikidata.org/wiki/Q5606868> , <https://www.wikidata.org/wiki/Q2059605> ;
 	gen:startDate "1538b" .
 
+<https://www.wikidata.org/wiki/Q5719975>
+  # Henry Cromwell, 2nd Baron Cromwell, 1538 - 1592-11-20
+  gen:father <https://www.wikidata.org/wiki/Q5606868> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2059605> .
+  # oo Lady Mary Paulet, 1540~ – 1592-10-10
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5719975> , <https://www.wikidata.org/wiki/Q15378578> ;
+	gen:startDate "1560b" .
+
+<https://www.wikidata.org/wiki/Q5342462>
+  # Edward Cromwell, 3rd Baron Cromwell, 1560~ - 1607-09-24
+  gen:father <https://www.wikidata.org/wiki/Q5719975> ;
+  gen:mother <https://www.wikidata.org/wiki/Q15378578> .
+  # oo Frances Rugge, d. 1631-11-30b, daughter of William Rugge
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5342462> , <https://www.wikidata.org/wiki/Q75279216> ;
+	gen:startDate "1593~" .
+<https://www.wikidata.org/wiki/Q15623776>
+  # Katharine Cromwell, 1562 - 1620-03-24
+  gen:father <https://www.wikidata.org/wiki/Q5719975> ;
+  gen:mother <https://www.wikidata.org/wiki/Q15378578> .
+  # oo 1581-02-10 Sir Lionel Tollemache, 1st Baronet, 1562-12-14 - 1617a/1621b, https://www.wikidata.org/wiki/Q16848106
+
+<https://www.wikidata.org/wiki/Q7788714>
+  # Thomas Cromwell, 1st Earl of Ardglass, 1594-06-11 - 1653
+  # 4th Baron Cromwell 1607-09-24
+  # 1st Viscount Lecale, in Ulster 1624-11-22
+  # 1st Earl of Ardglass 1645-04-15
+  gen:father <https://www.wikidata.org/wiki/Q5342462> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75279216> .
+  # oo Elizabeth Meverell, d. 1653, daughter of Robert Meverell and Elizabeth Fleming
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7788714> , <https://www.wikidata.org/wiki/Q75260831> .
+
+<https://www.wikidata.org/wiki/Q8025198>
+  # Wingfield Cromwell, 2nd Earl of Ardglass, 1624-09-12 - 1668-10-03
+  gen:father <https://www.wikidata.org/wiki/Q7788714> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75260831> .
+  # oo Mary Russell, 1634b - 1687-09-12a
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8025198> , <https://www.wikidata.org/wiki/Q75260837> .
+
+<https://www.wikidata.org/wiki/Q7788715>
+  # Thomas Cromwell, 3rd Earl of Ardglass, 1653-11-29 - 1682-04-11
+  gen:father <https://www.wikidata.org/wiki/Q8025198> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75260837> .
+  # oo Honora Boyle, d. 1710-11~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7788715> , <https://www.wikidata.org/wiki/Q75260846> .
+# ----
+<https://www.wikidata.org/wiki/Q7529758>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75260839> ;
+  # Sir William Russell, 1st Baronet, 1602~ - 1669-11-30
+  # 1st Baronet Russell, of Strensham, co. Worcester 1627-03-12
+  gen:father <https://www.wikidata.org/wiki/Q7793684> .
+  # and Elizabeth Spencer
+  # oo Frances Reade, daughter of Sir Thomas Reade and Mary Brocket
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7529758> , <https://www.wikidata.org/wiki/Q75260840> ;
+	gen:startDate "1624-12-01" .
+
+<https://www.wikidata.org/wiki/Q75260837>
+  # Mary Russell, 1634b - 1687-09-12a
+  gen:father <https://www.wikidata.org/wiki/Q7529758> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75260840> .
+  # oo Wingfield Cromwell, 2nd Earl of Ardglass, 1624-09-12 - 1668-10-03, https://www.wikidata.org/wiki/Q8025198
+
 # ----
 #<https://www.wikidata.org/wiki/Q18819389>
   # Sir Clement Smith, 1515~ – 1552-08-26
@@ -2251,15 +2319,6 @@
   gen:mother <devereux.ttl#Lady_Elizabeth_Leigh> .
   # oo 1662-12-23 Joceline Percy, 5th (11th) Earl of Northumberland, 1644-07-04 - 1670-05-21, https://www.wikidata.org/wiki/Q3810120
   # oo 1673-08-24 Ralph Montagu, 1st Duke of Montagu, 1638-12-24 - 1709-03-09, https://www.wikidata.org/wiki/Q7287871
-
-# ----
-# boyle.ttl:
-#<https://www.wikidata.org/wiki/Q3543085>
-  # Charles Boyle, 2nd Baron Clifford of Lanesborough, 1639-12-12 - 1694-10-12
-  # oo Lady Jane Seymour, 1637-07-06 - 1679-11-23
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q3543085> , <seymour.ttl#Lady_Jane_Seymour> ;
-	gen:startDate "1661-05-07" .
 
 # ----
 #<#William_Ducie,_1st_Viscount_Downe>
@@ -2907,6 +2966,11 @@
   gen:father <https://www.wikidata.org/wiki/Q48780590> ;
   gen:mother <https://www.wikidata.org/wiki/Q48781239> .
   # oo 1787-04-10 Rt. Hon. Lord John Townshend, 1757-01-19 – 1833-02-23, https://www.wikidata.org/wiki/Q6679459
+<https://www.wikidata.org/wiki/Q75271712>
+  # Charlotte Louisa Poyntz, 1766-11-14 - 1840-01-26
+  gen:father <https://www.wikidata.org/wiki/Q48780590> ;
+  gen:mother <https://www.wikidata.org/wiki/Q48781239> .
+  # oo 1809-08-16 Rev. Hon. George Bridgeman, 1765-08-11 - 1832-10-27, https://www.wikidata.org/wiki/Q75271709
 <https://www.wikidata.org/wiki/Q8018781>
   gen:name "William Stephen Poyntz"@en ;
   gen:birthDate "1770-01-20" ;
@@ -2917,6 +2981,16 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q8018781> , <#Elizabeth_Mary_Browne> ;
 	gen:startDate "1794-09-01" .
+<https://www.wikidata.org/wiki/Q75299271>
+  # Carolina Amelia Poyntz, 1773-12-19 - 1851-10-07
+  gen:father <https://www.wikidata.org/wiki/Q48780590> ;
+  gen:mother <https://www.wikidata.org/wiki/Q48781239> .
+  # oo 1799-04-16 Hon. Sir Courtenay Boyle, 1770-09-03 - 1844-05-21, https://www.wikidata.org/wiki/Q5178462
+<https://www.wikidata.org/wiki/Q48781311>
+  # Isabella Henrietta Poyntz, d. 1843-11-29
+  gen:father <https://www.wikidata.org/wiki/Q48780590> ;
+  gen:mother <https://www.wikidata.org/wiki/Q48781239> .
+  # oo 1795-10-09 Edmund Boyle, 8th Earl of Cork, 1767-10-21 - 1856-06-29, https://www.wikidata.org/wiki/Q2850198
 
 <#Frances_Selina_Isabella_Poyntz>
   # Frances Selina Isabella Poyntz, 1795 - 1875-08-29
@@ -2956,6 +3030,11 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q27573194> , <montagu.ttl#Elizabeth_Montagu_(died_1672-12-11)> .
 
+<https://www.wikidata.org/wiki/Q75271619>
+  # Anne Courtenay, d. 1785-12-11
+  gen:father <https://www.wikidata.org/wiki/Q27573194> ;
+  gen:mother <montagu.ttl#Elizabeth_Montagu_(died_1672-12-11)> .
+  # oo 1764-08-31 (div 1782) Edmund Boyle, 7th Earl of Cork, 1742-11-21 - 1796-05-30, https://www.wikidata.org/wiki/Q2849925
 <https://www.wikidata.org/wiki/Q48781239>
   # Isabella Courtenay, 1740 - 1805-04-22
   gen:father <https://www.wikidata.org/wiki/Q27573194> ;
@@ -3119,15 +3198,6 @@
   gen:father <https://www.wikidata.org/wiki/Q7527086> ;
   gen:mother <#Lady_Elizabeth_Liddell> .
   # oo 1887-01-12 Edward William Herbert, 1855-03-22 - 1924-12-28, herbert.ttl#Edward_William_Herbert
-
-# ----
-# boyle.ttl:
-#<https://www.wikidata.org/wiki/Q7324298>
-  # Richard Boyle, 4th Earl of Shannon, 1809-05-12 - 1868-08-01
-  # oo Emily Henrietta Seymour, 1803 - 1887-12-01
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q7324298> , <seymour.ttl#Emily_Henrietta_Seymour> ;
-	gen:startDate "1832-05-28" .
 
 # ----
 #<https://www.wikidata.org/wiki/Q55855433>
@@ -3714,16 +3784,16 @@
   # 1st Baron Bradford of Bradford, co. Shropshire 1794-08-13
   # oo Elizabeth Simpson, 1735-11-14 - 1806-03-06, daughter of Rev. John Simpson and unknown daughter Stringer
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q15989859> , <#Elizabeth_Simpson> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q15989859> , <https://www.wikidata.org/wiki/Q469974> ;
 	gen:startDate "1755-07-12" .
 
 <#John_Simpson>
   # Hon. John Simpson, 1763-05-13 - 1850-06-05
   gen:father <https://www.wikidata.org/wiki/Q15989859> ;
-  gen:mother <#Elizabeth_Simpson> .
+  gen:mother <https://www.wikidata.org/wiki/Q469974> .
   # oo Henrietta Francis Worsley, d. 1791-07-25
   []
-    gen:spouse <#John_Simpson> , <#Henrietta_Francis_Worsley> ;
+    gen:spouse <#John_Simpson> , <boyle.ttl#Henrietta_Francis_Worsley> ;
 	gen:startDate "1784-06-03" .
   # oo Grace Estwick, d. 1839-01-01, daughter of Samuel Estwick and Grace Langford
   []
@@ -3732,21 +3802,25 @@
 <#Elizabeth_Bridgeman>
   # Hon. Elizabeth Bridgeman, 1764 - 1810-05-05
   gen:father <https://www.wikidata.org/wiki/Q15989859> ;
-  gen:mother <#Elizabeth_Simpson> .
+  gen:mother <https://www.wikidata.org/wiki/Q469974> .
   # oo 1794-02-10 Sir George William Gunning, 2nd Baronet, 1763-02-15 - 1823-04-07, https://www.wikidata.org/wiki/Q5539972
-<#George_Bridgeman>
+<https://www.wikidata.org/wiki/Q75271709>
   # Rev. Hon. George Bridgeman, 1765-08-11 - 1832-10-27
   gen:father <https://www.wikidata.org/wiki/Q15989859> ;
-  gen:mother <#Elizabeth_Simpson> .
-  # oo Lady Lucy Isabella Boyle, d. 1801-09-07
+  gen:mother <https://www.wikidata.org/wiki/Q469974> .
+  # oo Lady Lucy Isabella Boyle, 1766-08-10 - 1801-09-07
   []
-    gen:spouse <#George_Bridgeman> , <boyle.ttl#Lady_Lucy_Isabella_Boyle> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75271709> , <https://www.wikidata.org/wiki/Q75271711> ;
 	gen:startDate "1792-07-28" .
+  # oo Charlotte Louisa Poyntz, 1766-11-14 - 1840-01-26
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75271709> , <https://www.wikidata.org/wiki/Q75271712> ;
+	gen:startDate "1809-08-16" .
 
 <#Henrietta_Anne_Maria_Charlotte_Bridgeman_Simpson>
   # Henrietta Anne Maria Charlotte Bridgeman Simpson, 1788-04-24 - 1813-06-30
   gen:father <#John_Simpson> ;
-  gen:mother <#Henrietta_Francis_Worsley> .
+  gen:mother <boyle.ttl#Henrietta_Francis_Worsley> .
   # oo 1806-08-11 Charles Anderson-Pelham, 1st Earl of Yarborough, 1781-08-08 – 1846-09-05, https://www.wikidata.org/wiki/Q5075114
 <#William_Bridgeman-Simpson>
   # Rev. William Bridgeman-Simpson, 1813-09-09 - 1895-04-01
@@ -3758,8 +3832,8 @@
 	gen:startDate "1837-06-23" .
 <#Anne_Charlotte_Bridgeman>
   # Anne Charlotte Bridgeman, d. 1858-02-09
-  gen:father <#George_Bridgeman> ;
-  gen:mother <boyle.ttl#Lady_Lucy_Isabella_Boyle> .
+  gen:father <https://www.wikidata.org/wiki/Q75271709> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75271711> .
   # oo 1819-12-07 Charles Shirley, 1792-11-15 - 1855-12-12, shirley.ttl#Charles_Shirley
 
 <#Mary_Bridgeman-Simpson>
@@ -3767,31 +3841,6 @@
   gen:father <#William_Bridgeman-Simpson> ;
   gen:mother <ponsonby.ttl#Lady_Frances_Laura_Wentworth_FitzWilliam> .
   # oo 1876-02-22 Walter Pleydell-Bouverie, 1848-07-05 - 1893-05-20, #Walter_Pleydell-Bouverie
-# ----
-#<https://www.wikidata.org/wiki/Q52269095>
-  # Sir Thomas Worsley, 6th Baronet, 1728-04-22 - 1768
-  # oo Lady Elizabeth Boyle, 1731-05-07 - 1800-01-16
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q52269095> , <boyle.ttl#Lady_Elizabeth_Boyle_(died_1800)> ;
-	gen:startDate "1749" .
-
-<#Henrietta_Francis_Worsley>
-  # Henrietta Francis Worsley, d. 1791-07-25
-  gen:father <https://www.wikidata.org/wiki/Q52269095> ;
-  gen:mother <boyle.ttl#Lady_Elizabeth_Boyle_(died_1800)> .
-  # oo 1784-06-03 Hon. John Simpson, 1763-05-13 - 1850-06-05, #John_Simpson
-# ----
-<boyle.ttl#Lady_Elizabeth_Boyle_(died_1800)>
-  # Lady Elizabeth Boyle, 1731-05-07 - 1800-01-16
-  gen:father <https://www.wikidata.org/wiki/Q1032335> .
-  # and Lady Henrietta Hamilton
-  # oo 1749 Sir Thomas Worsley, 6th Baronet, 1728-04-22 - 1768, https://www.wikidata.org/wiki/Q52269095
-
-<boyle.ttl#Lady_Lucy_Isabella_Boyle>
-  # Lady Lucy Isabella Boyle, d. 1801-09-07
-  gen:father <https://www.wikidata.org/wiki/Q2849925> .
-  # and Anne Courtenay
-  # oo 1792-07-28 Rev. Hon. George Bridgeman, 1765-08-11 - 1832-10-27, seymour.ttl#George_Bridgeman
 
 # ----
 <#George_Carr>
@@ -3842,20 +3891,28 @@
     gen:spouse <https://www.wikidata.org/wiki/Q7794385> , <#Mary_Quin> ;
 	gen:startDate "1778-12-05" .
 
-<#Lord_George_Quin>
+<https://www.wikidata.org/wiki/Q75384939>
   # Lord George Quin, 1792-03-10 - 1888-02-06
   gen:father <https://www.wikidata.org/wiki/Q7794385> ;
   gen:mother <#Mary_Quin> .
   # oo Lady Georgiana Charlotte Spencer, 1794-08-10 - 1823-02-21
   []
-    gen:spouse <#Lord_George_Quin> , <spencer.ttl#Lady_Georgiana_Charlotte_Spencer> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75384939> , <https://www.wikidata.org/wiki/Q75384938> ;
 	gen:startDate "1814-04-14" .
 
 <#Lavinia_Jane_Quin>
   # Lavinia Jane Quin, 1816-03-21 - 1888-02-20
-  gen:father <#Lord_George_Quin> ;
-  gen:mother <spencer.ttl#Lady_Georgiana_Charlotte_Spencer> .
+  gen:father <https://www.wikidata.org/wiki/Q75384939> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75384938> .
   # oo 1839-12-21 Hon. Richard Watson, 1800-01-06 - 1852-07-24, https://www.wikidata.org/wiki/Q7329841
+<https://www.wikidata.org/wiki/Q75384942>
+  # Richard Robert Quin, 1820-08-23 - 1870-09-22
+  gen:father <https://www.wikidata.org/wiki/Q75384939> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75384938> .
+  # oo Georgiana Olivia Boyle, 1843-01-27 - 1931-01-15
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75384942> , <https://www.wikidata.org/wiki/Q75269722> ;
+	gen:startDate "1868-06-16" .
 # ----
 #<#George_Quin>
   # George Quin, 1729-02-23 - 1791

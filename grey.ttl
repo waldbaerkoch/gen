@@ -1231,11 +1231,11 @@
     gen:spouse <https://www.wikidata.org/wiki/Q8010201> , <https://www.wikidata.org/wiki/Q6485520> ;
 	gen:startDate "1535~" .
 
-<#Honora_Grey>
+<https://www.wikidata.org/wiki/Q75854182>
   # Honora Grey
   gen:father <https://www.wikidata.org/wiki/Q8010201> ;
   gen:mother <https://www.wikidata.org/wiki/Q6485520> .
-  # oo Henry Denny, d. 1574, #Henry_Denny
+  # oo Henry Denny, d. 1574, https://www.wikidata.org/wiki/Q75854180
 <https://www.wikidata.org/wiki/Q4798891>
   # Arthur Grey, 14th Lord Grey (of Wilton), 1536 - 1593-10-14
   gen:father <https://www.wikidata.org/wiki/Q8010201> ;
@@ -2268,12 +2268,70 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q3888459> , <https://www.wikidata.org/wiki/Q6204937> .
 
-<#Henry_Denny>
+<https://www.wikidata.org/wiki/Q75854180>
   # Henry Denny, d. 1574
-  gen:father <https://www.wikidata.org/wiki/Q3888459> , <https://www.wikidata.org/wiki/Q6204937> .
+  gen:father <https://www.wikidata.org/wiki/Q3888459> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6204937> .
   # oo Honora Grey
   []
-    gen:spouse <#Henry_Denny> , <#Honora_Grey> .
+    gen:spouse <https://www.wikidata.org/wiki/Q75854180> , <https://www.wikidata.org/wiki/Q75854182> .
+
+<https://www.wikidata.org/wiki/Q5342571>
+  # Edward Denny, 1st Earl of Norwich, 1569-08-15 – 1637-10-24
+  # 1st Lord Denny, of Waltham 1604-10-27
+  # 1st Earl of Norwich 1626-10-24
+  gen:father <https://www.wikidata.org/wiki/Q75854180> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75854182> .
+<https://www.wikidata.org/wiki/Q76020044>
+  # Anne Denny
+  gen:father <https://www.wikidata.org/wiki/Q75854180> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75854182> .
+  # oo George Goring, d. 1602, https://www.wikidata.org/wiki/Q5539825
+# ----
+<https://www.wikidata.org/wiki/Q6204937>
+  # Joan Champernowne, 1514 - 1553
+  gen:father <https://www.wikidata.org/wiki/Q75854179> .
+  # oo Rt. Hon. Sir Anthony Denny, 1501-01-16 - 1549-09-10, https://www.wikidata.org/wiki/Q3888459
+# ----
+#<https://www.wikidata.org/wiki/Q5539824>
+  # George Goring, 1522a – 1594/1601-02-07
+  # son of Sir William Goring
+  # and Elizabeth Covert
+  # oo Mary Everard, daughter of William Everard
+
+<https://www.wikidata.org/wiki/Q5539825>
+  # George Goring, d. 1602
+  gen:father <https://www.wikidata.org/wiki/Q5539824> .
+  # and Mary EverardEverard
+  # oo Anne Denny
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5539825> , <https://www.wikidata.org/wiki/Q76020044> .
+
+<https://www.wikidata.org/wiki/Q5539826>
+  # George Goring, 1st Earl of Norwich, 1585-04-28 – 1663-01-06
+  # 1st Baron Goring of Hurstpierpoint, co. Sussex 1628-04-14
+  # 1st Earl of Norwich 1644-11-28
+  gen:father <https://www.wikidata.org/wiki/Q5539825> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76020044> .
+  # oo 1608b Mary Neville, d. 1648-07~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5539826> , <https://www.wikidata.org/wiki/Q75238631> ;
+	gen:startDate "" .
+
+<https://www.wikidata.org/wiki/Q5539827>
+  # George Goring, Lord Goring, 1608-07-14 – 1657
+  gen:father <https://www.wikidata.org/wiki/Q5539826> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75238631> .
+  # oo Lady Lettice Boyle, 1610-04-25 - 1657-07
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5539827> , <https://www.wikidata.org/wiki/Q75588350> ;
+	gen:startDate "1629-07-25" .
+# ----
+<https://www.wikidata.org/wiki/Q75238631>
+  # Mary Neville, d. 1648-07~
+  gen:father <https://www.wikidata.org/wiki/Q5344603> .
+  # and Rachel Lennard
+  # oo 1608b George Goring, 1st Earl of Norwich, 1585-04-28 – 1663-01-06, https://www.wikidata.org/wiki/Q5539826
 
 # ----
 #<https://www.wikidata.org/wiki/Q5481103>
@@ -2892,83 +2950,17 @@
   gen:mother <#Matilda_Arbuthnot> .
   # oo Lady Caroline Pepys, d. 1902-01-21
   []
-    gen:spouse <#Lister_Lister-Kaye> , <#Lady_Caroline_Pepys> ;
+    gen:spouse <#Lister_Lister-Kaye> , <hamilton.ttl#Lady_Caroline_Pepys> ;
 	gen:startDate "1852-05-25" .
 
 <#Sir_Cecil_Edmund_Lister-Kaye,_4th_Baronet>
   # Sir Cecil Edmund Lister-Kaye, 4th Baronet, 1854-01-16 - 1931-01-27
   gen:father <#Lister_Lister-Kaye> ;
-  gen:mother <#Lady_Caroline_Pepys> .
+  gen:mother <hamilton.ttl#Lady_Caroline_Pepys> .
   # oo Lady Beatrice Adeline Pelham-Clinton, 1862-02-12 - 1935-06-16
   []
     gen:spouse <#Sir_Cecil_Edmund_Lister-Kaye,_4th_Baronet> , <clinton.ttl#Lady_Beatrice_Adeline_Pelham-Clinton> ;
 	gen:startDate "1880-09-16" .
-# ----
-#<https://www.wikidata.org/wiki/Q4670298>
-  # Charles Christopher Pepys, 1st Earl of Cottenham, 1781-04-29 - 1851-04-29
-  # 1st Baron Cottenham, of Cottenham, co. Cambridge 1836-01-20
-  # 3rd Baronet Pepys  [U.K., 1801] 1845-10-05
-  # 4th Baronet Pepys [G.B., 1784] 1849-07-08
-  # 1st Viscount Crowhurst, of Crowhurst, co. Surrey, 1st Earl of Cottenham 1850-06-11
-  # oo Caroline Elizabeth Wingfield, 1801-11-02 - 1868-04-06
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q4670298> , <#Caroline_Elizabeth_Wingfield> ;
-	gen:startDate "1821-06-30" .
-
-<#Lady_Caroline_Pepys>
-  # Lady Caroline Pepys, d. 1902-01-21
-  gen:father <https://www.wikidata.org/wiki/Q4670298> ;
-  gen:mother <#Caroline_Elizabeth_Wingfield> .
-  # oo 1852-05-25 Lister Lister-Kaye, 1827-09-03 - 1855-04-12, #Lister_Lister-Kaye
-# ----
-#<#William_Wingfield-Baker>
-  # William Wingfield-Baker, d. 1858-03-21
-  # oo Lady Charlotte Maria Digby, d. 1807-05-15
-  []
-    gen:spouse <#William_Wingfield-Baker> , <#Lady_Charlotte_Maria_Digby> ;
-	gen:startDate "1796-07-22" .
-
-<#Caroline_Elizabeth_Wingfield>
-  # Caroline Elizabeth Wingfield, 1801-11-02 - 1868-04-06
-  gen:father <#William_Wingfield-Baker> ;
-  gen:mother <#Lady_Charlotte_Maria_Digby> .
-  # oo 1821-06-30 Charles Christopher Pepys, 1st Earl of Cottenham, 1781-04-29 - 1851-04-29, https://www.wikidata.org/wiki/Q4670298
-# ----
-<https://www.wikidata.org/wiki/Q8007836>
-  # William Digby, 5th Baron Digby, 1661 - 1752-11-29
-  gen:father <https://www.wikidata.org/wiki/Q20639035> .
-  # and Mary Gardiner
-  # oo Lady Jane Noel, d. 1733-09
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q8007836> , <bentinck.ttl#Lady_Jane_Noel> ;
-	gen:startDate "1686-05-22" .
-
-<https://www.wikidata.org/wiki/Q20639034>
-  # Hon. Edward Digby, d. 1746-10-02
-  gen:father <https://www.wikidata.org/wiki/Q8007836> ;
-  gen:mother <bentinck.ttl#Lady_Jane_Noel> .
-  # oo Charlotte Fox, d. 1778-11
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q20639034> , <scott.ttl#Charlotte_Fox> ;
-	gen:startDate "1729-07-05" .
-
-<https://www.wikidata.org/wiki/Q16169303>
-  # Henry Digby, 1st Earl Digby, 1731-07-21 - 1793-09-25
-  # 7th Baron Digby, of Geashill, King's County 1757-11-30
-  # 1st Baron Digby, of Sherborne, co. Dorset 1765-08-13
-  # 1st Earl Digby, co. Lincoln, 1st Viscount Coleshill, co. Warwick 1790-11-01
-  gen:father <https://www.wikidata.org/wiki/Q20639034> ;
-  gen:mother <scott.ttl#Charlotte_Fox> .
-  # oo Mary Knowler, d. 1794-02-26, daughter of John Knowler
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q16169303> , <#Mary_Knowler> ;
-	gen:startDate "1770-11-10" .
-
-<#Lady_Charlotte_Maria_Digby>
-  # Lady Charlotte Maria Digby, d. 1807-05-15
-  gen:father <https://www.wikidata.org/wiki/Q16169303> ;
-  gen:mother <#Mary_Knowler> .
-  # oo 1796-07-22 William Wingfield-Baker, d. 1858-03-21, #William_Wingfield-Baker
 
 # ----
 #<https://www.wikidata.org/wiki/Q5541566>
@@ -3707,20 +3699,33 @@
 	gen:startDate "1667-04-06" .
 
 # ----
-#<https://www.wikidata.org/wiki/Q5536924>
+<https://www.wikidata.org/wiki/Q5536924>
   # George Berkeley, 1st Earl of Berkeley, 1627~ - 1698-10-14
   # 9th Lord Berkeley 1658-08-10
   # 1st Earl of Berkeley, co. Gloucester, 1st Viscount Dursley, co. Gloucester 1679-09-11
-  # oo Elizabeth Massingberd, d. 1708-12~, daughter of John Massingberd and Cecilia Pettit
+  gen:father <https://www.wikidata.org/wiki/Q5540228> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75271906> .
+  # oo Elizabeth Massingberd, d. 1708-12~
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q5536924> , <#Elizabeth_Massingberd> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q5536924> , <https://www.wikidata.org/wiki/Q75271903> ;
 	gen:startDate "1646-08-11" .
 
 <#Lady_Mary_Berkeley>
   # Lady Mary Berkeley, d. 1719-05-19
   gen:father <https://www.wikidata.org/wiki/Q5536924> ;
-  gen:mother <#Elizabeth_Massingberd> .
+  gen:mother <https://www.wikidata.org/wiki/Q75271903> .
   # oo Ford Grey, 1st Earl of Tankerville, 1655-07-20 – 1701-06-24, https://www.wikidata.org/wiki/Q5467797
+<https://www.wikidata.org/wiki/Q75272416>
+  # Lady Arethusa Berkeley, 1664 – 1743-02-11
+  gen:father <https://www.wikidata.org/wiki/Q5536924> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75271903> .
+  # oo 1688-05-12b Charles Boyle, 3rd Viscount Dungarvan, 1639-12-12 - 1694-10-12, https://www.wikidata.org/wiki/Q3543085
+# ----
+<https://www.wikidata.org/wiki/Q75271903>
+  # Elizabeth Massingberd, d. 1708-12~
+  gen:father <https://www.wikidata.org/wiki/Q75269854> .
+  # and Cecilia Pettit
+  # oo 1646-08-11 George Berkeley, 1st Earl of Berkeley, 1627~ - 1698-10-14, https://www.wikidata.org/wiki/Q5536924
 
 # ----
 #<https://www.wikidata.org/wiki/Q5342275>
