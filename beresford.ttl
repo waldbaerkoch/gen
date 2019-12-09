@@ -2,6 +2,7 @@
 @prefix gen: <http://jjkoch.de/gen#> .
 @prefix wdata: <https://www.wikidata.org/wiki/> .
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 #<https://www.wikidata.org/wiki/Q7529334>
   # Sir Tristram Beresford, 1st Baronet, d. 1673-01-15
@@ -1183,13 +1184,18 @@
   # and Elizabeth Evans
   # oo Mary Dawson, daughter of James Dawson
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q16859399> , <#Mary_Dawson> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q16859399> , <https://www.wikidata.org/wiki/Q75455478> ;
 	gen:startDate "1733b" .
 
+<https://www.wikidata.org/wiki/Q75617941>
+  # Hon. Elizabeth Massy, 1728 - 1825-03-12
+  gen:father <https://www.wikidata.org/wiki/Q16859399> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75455478> .
+  # oo 1762 Sir Michael Cox, 3rd Baronet, 1730~ – 1772-07-18, https://www.wikidata.org/wiki/Q20810703
 <https://www.wikidata.org/wiki/Q16859400>
   # Hugh Massy, 2nd Baron Massy of Duntrileague, 1733-04-14 - 1790-05-10
   gen:father <https://www.wikidata.org/wiki/Q16859399> ;
-  gen:mother <#Mary_Dawson> .
+  gen:mother <https://www.wikidata.org/wiki/Q75455478> .
   # oo Catherine Taylor, d. 1791-08-16, daughter of Edward Taylor and Anne Maunsell
   []
     gen:spouse <https://www.wikidata.org/wiki/Q16859400> , <#Catherine_Taylor> ;
@@ -1238,12 +1244,13 @@
 	gen:startDate "1729-12" .
 
 <https://www.wikidata.org/wiki/Q7173003>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75280627> ;
   # Peter Browne, 2nd Earl of Altamont, 1731~ - 1780-12-28
   gen:father <https://www.wikidata.org/wiki/Q6223572> ;
   gen:mother <#Anne_Gore_(died_1771)> .
   # oo Elizabeth Kelly, d. 1765-08-01, daughter of Denis Kelly
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q7173003> , <#Elizabeth_Kelly> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q7173003> , <https://www.wikidata.org/wiki/Q75280628> ;
 	gen:startDate "1752-04-16" .
 <https://www.wikidata.org/wiki/Q75280647>
   # Lady Anne Browne, 1740~ - 1815-02-21
@@ -1257,15 +1264,23 @@
   # 1st Marquess of Sligo 1800-12-31
   # 1st Baron Monteagle of Westport, co. Mayo 1806-02-20
   gen:father <https://www.wikidata.org/wiki/Q7173003> ;
-  gen:mother <#Elizabeth_Kelly> .
+  gen:mother <https://www.wikidata.org/wiki/Q75280628> .
   # oo Lady Louisa Catherine Howe, 1767-12-09 - 1817-08-20
   []
     gen:spouse <https://www.wikidata.org/wiki/Q6223574> , <cecil.ttl#Lady_Louisa_Catherine_Howe> ;
 	gen:startDate "1787-05-21" .
+<https://www.wikidata.org/wiki/Q5257126>
+  # Rt. Hon. Denis Browne, 1763 - 1828-08-14
+  gen:father <https://www.wikidata.org/wiki/Q7173003> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75280628> .
+  # oo Anne Mahon, d. 1833-12-30
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5257126> , <https://www.wikidata.org/wiki/Q75284035> ;
+	gen:startDate "1790-12-07" .
 <https://www.wikidata.org/wiki/Q75284032>
   # Lady Charlotte Browne, d. 1849-01-23
   gen:father <https://www.wikidata.org/wiki/Q7173003> ;
-  gen:mother <#Elizabeth_Kelly> .
+  gen:mother <https://www.wikidata.org/wiki/Q75280628> .
   # oo 1794-01-09 John Mahon, 1764-11-24 - 1834-11-23, https://www.wikidata.org/wiki/Q75284034
 
 <https://www.wikidata.org/wiki/Q15377163>
@@ -1276,6 +1291,14 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q15377163> , <#Lady_Hester_Catherine_de_Burgh> ;
 	gen:startDate "1816-03-04" .
+<https://www.wikidata.org/wiki/Q76338465>
+  # Rev. George Browne, 1803-05-29 - 1886
+  gen:father <https://www.wikidata.org/wiki/Q5257126> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75284035> .
+  # oo Elizabeth Anne Day, d. 1870-12-08, daughter of Rev. Edward Day
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76338465> , <https://www.wikidata.org/wiki/Q76338630> ;
+	gen:startDate "1828" .
 
 <https://www.wikidata.org/wiki/Q5718718>
   # Henry Ulick Browne, 5th Marquess of Sligo, 1831-03-14 - 1913-02-24
@@ -1285,6 +1308,14 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5718718> , <#Catherine_Henrietta_Dicken> ;
 	gen:startDate "1855-10-25".
+<https://www.wikidata.org/wiki/Q75534394>
+  # George Robert Browne, 1833-10-10 - 1904-03-24
+  gen:father <https://www.wikidata.org/wiki/Q76338465> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76338630> .
+  # oo Emma Frances Gun, d. 1932-10-26, daughter of William Gun
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75534394> , <https://www.wikidata.org/wiki/Q76338633> ;
+	gen:startDate "1862-10-01" .
 
 <#Lady_Edith_Hester_Browne>
   # Lady Edith Hester Browne, 1860-03-12 - 1936-03-06
@@ -1296,6 +1327,11 @@
   gen:father <https://www.wikidata.org/wiki/Q5718718> ;
   gen:mother <#Catherine_Henrietta_Dicken> .
   # oo 1886-10-23 William Randal Hamilton Beresford-Ash, 1859-07-19 - 1938-03-08, #William_Randal_Hamilton_Beresford-Ash
+<https://www.wikidata.org/wiki/Q76035223>
+  # Henrietta Ethne Browne, d. 1950-12-18
+  gen:father <https://www.wikidata.org/wiki/Q75534394> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76338633> .
+  # oo 1901-06-01 Hon. William Henry Ernest Robert Turlough O'Brien, 1863-04-20 - 1943-11-07, https://www.wikidata.org/wiki/Q76035220
 # ----
 #<https://www.wikidata.org/wiki/Q7528437>
   # Sir Paul Gore, 1st Baronet, 1567 – 1629-09
@@ -1354,6 +1390,11 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75284034> , <https://www.wikidata.org/wiki/Q75284032> ;
 	gen:startDate "1794-01-09" .
+<https://www.wikidata.org/wiki/Q75284035>
+  # Anne Mahon, d. 1833-12-30
+  gen:father <https://www.wikidata.org/wiki/Q75280648> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75280647> .
+  # oo 1790-12-07 Rt. Hon. Denis Browne, 1763 - 1828-08-14, https://www.wikidata.org/wiki/Q5257126
 
 <https://www.wikidata.org/wiki/Q75252039>
   # Elizabeth Mahon, 1797~ - 1863-02-26

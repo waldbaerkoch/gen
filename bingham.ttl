@@ -2,6 +2,7 @@
 @prefix gen: <http://jjkoch.de/gen#> .
 @prefix wdata: <https://www.wikidata.org/wiki> .
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 <https://www.wikidata.org/wiki/Q7324168>
   gen:name "Sir Richard Bingham"@en ;
@@ -570,11 +571,14 @@
   # Ven. Thomas Vesey, 1603 - 1662
 
 <https://www.wikidata.org/wiki/Q16208463>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75313440> ;
   # Most Rev. John Vesey, 1638-03-10 - 1716-03-28
   # Archbishop of Tuam
   gen:father <#Thomas_Vesey> .
   # and unknown daughter Walker
-  # oo Anne Muschamp
+  # oo Anne Muschamp, daughter of Agmondisham Muschamp
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16208463> , <https://www.wikidata.org/wiki/Q75298304> .
 <#Lettice_Vesey>
   # Lettice Vesey
   gen:father <#Thomas_Vesey> .
@@ -585,21 +589,21 @@
   gen:name "Rt. Hon. Agmondesham Vesey"@en ;
   gen:birthDate "1673~" ;
   gen:deathDate "1738-03-23" ;
-  gen:father <https://www.wikidata.org/wiki/Q16208463> .
-  # and Anne Muschamp
+  gen:father <https://www.wikidata.org/wiki/Q16208463> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75298304> .
   # oo Charlotte Sarsfield, 1673~ - 1699-10-07, daughter of William Sarsfield and Mary Stuart
   []
     gen:spouse <#Agmondesham_Vesey> , <#Charlotte_Sarsfield> ;
 	gen:startDate "1699-10-07" .
-<#Elizabeth_Vesey>
+<https://www.wikidata.org/wiki/Q75595797>
   # Elizabeth Vesey, d. 1730-09-04
-  gen:father <https://www.wikidata.org/wiki/Q16208463> .
-  # and Anne Muschamp
+  gen:father <https://www.wikidata.org/wiki/Q16208463> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75298304> .
   # oo 1724-02-25 Richard Dawson, 1693~ - 1766-12-29, https://www.wikidata.org/wiki/Q16853444
-<#Anne_Vesey_>
+<#Anne_Vesey>
   # Anne Vesey
-  gen:father <https://www.wikidata.org/wiki/Q16208463> .
-  # and Anne Muschamp
+  gen:father <https://www.wikidata.org/wiki/Q16208463> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75298304> .
   # oo 1726 Rt. Hon. Henry Bingham, #Henry_Bingham
 
 <#Anne_Vesey_(died_1761)>
@@ -1013,12 +1017,15 @@
 
 # ========
 <https://www.wikidata.org/wiki/Q16853444>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75301508> ;
   gen:name "Richard Dawson"@en ;
   gen:birthDate "1693~" ;
   gen:deathDate "1766-12-29" .
+  # son of Walter Dawson
+  # and Frances Dawson
   # oo Elizabeth Vesey, d. 1730-09-04
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q16853444> , <#Elizabeth_Vesey> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q16853444> , <https://www.wikidata.org/wiki/Q75595797> ;
 	gen:startDate "1724-02-25" .
 
 <https://www.wikidata.org/wiki/Q16828379>
@@ -1029,7 +1036,7 @@
   gen:birthDate "1725-02-25" ;
   gen:deathDate "1813-03-01" ;
   gen:father <https://www.wikidata.org/wiki/Q16853444> ;
-  gen:mother <#Elizabeth_Vesey> .
+  gen:mother <https://www.wikidata.org/wiki/Q75595797> .
   # oo Lady Anne Fermor, 1733-05-25 - 1769-03-01
   []
     gen:spouse <https://www.wikidata.org/wiki/Q16828379> , <#Lady_Anne_Fermor> ;
@@ -1038,14 +1045,14 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q16828379> , <#Philadelphia_Hannah_Freame> ;
 	gen:startDate "1770-05-08" .
-<#Richard_Dawson_of_Ardee>
+<https://www.wikidata.org/wiki/Q75301499>
   gen:name "Richard Dawson, of Ardee"@en ;
   gen:deathDate "1782" ;
   gen:father <https://www.wikidata.org/wiki/Q16853444> ;
-  gen:mother <#Elizabeth_Vesey> .
+  gen:mother <https://www.wikidata.org/wiki/Q75595797> .
   # Anne O'Brien
   []
-    gen:spouse <#Richard_Dawson_of_Ardee> , <#Anne_O'Brian> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75301499> , <https://www.wikidata.org/wiki/Q75595802> ;
 	gen:startDate "1758-08-22" .
 
 <#Richard_Dawson>
@@ -1063,8 +1070,8 @@
   gen:name "Richard Dawson"@en ;
   gen:birthDate "1762-04-16" ;
   gen:deathDate "1807-09-03" ;
-  gen:father <#Richard_Dawson_of_Ardee> ;
-  gen:mother <#Anne_O'Brian> .
+  gen:father <https://www.wikidata.org/wiki/Q75301499> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75595802> .
   # oo Catherine Graham, daughter of Arthur Graham and Penelope Ligonier
   []
     gen:spouse <https://www.wikidata.org/wiki/Q16239404> , <#Catherine_Graham> ;
@@ -1133,13 +1140,13 @@
 	gen:startDate "1682-06" .
   # oo Lady Sophia Osborne, 1661 - 1746-12-08
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q8008998> , <osborne.ttl#Lady_Sophia_Osborne> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q8008998> , <https://www.wikidata.org/wiki/Q75278625> ;
 	gen:startDate "1692-03-05" .
 
 <https://www.wikidata.org/wiki/Q42087302>
   # Thomas Fermor, 1st Earl Pomfret, 1698-03-23 - 1753-07-15
   gen:father <https://www.wikidata.org/wiki/Q8008998> ;
-  gen:mother <osborne.ttl#Lady_Sophia_Osborne> .
+  gen:mother <https://www.wikidata.org/wiki/Q75278625> .
   # oo Hon. Henrietta Louisa Jeffreys, d. 1761-12-17 (herbert.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q42087302> , <https://www.wikidata.org/wiki/Q5715992> ;
@@ -1169,12 +1176,6 @@
 <#Margaretta_Penn>
   # Margaretta Penn
   gen:father <https://www.wikidata.org/wiki/Q209152> .
-# ----
-<#Anne_O'Brian>
-  # Anne O'Brien
-  gen:father <https://www.wikidata.org/wiki/Q7526597> .
-  # and Mary Hickman
-  # oo 1758-08-22 Richard Dawson, of Ardee, d. 1782, #Richard_Dawson_of_Ardee
 # ----
 #<#John_Whaley>
   # John Whaley, 1762~ - 1847

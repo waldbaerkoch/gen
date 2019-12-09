@@ -337,7 +337,7 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q3611562> , <https://www.wikidata.org/wiki/Q18529123> ;
 	gen:startDate "1715-03-01a" .
-<#Lady_Elizabeth_Seymour_(died_1734)>
+<https://www.wikidata.org/wiki/Q75249880>
   # Lady Elizabeth Seymour, 1685 - 1734-04-02
   gen:father <https://www.wikidata.org/wiki/Q1066062> ;
   gen:mother <https://www.wikidata.org/wiki/Q529441> .
@@ -774,7 +774,7 @@
   gen:mother <#Susanah_Biscoe_Tritton> .
   # oo Hon. Helen Smith, 1860-12-28 - 1944-01-17
   []
-    gen:spouse <#Henry_Sydney_Seymour> , <#Helen_Smith> ;
+    gen:spouse <#Henry_Sydney_Seymour> , <herbert.ttl#Helen_Smith> ;
 	gen:startDate "1896-04-16" .
 <#Emmeline_St._Maur_Seymour>
   # Emmeline St. Maur Seymour, 1860-09-23 - 1912-06-07
@@ -806,7 +806,7 @@
 <#Edward_William_Seymour_(died_1979)>
   # Edward William Seymour, 1897-03-27 - 1979-02-24
   gen:father <#Henry_Sydney_Seymour> ;
-  gen:mother <#Helen_Smith> .
+  gen:mother <herbert.ttl#Helen_Smith> .
   # oo Barbara Judith Lascelles, 1903-03-28 - 1992-05-08
   []
     gen:spouse <#Edward_William_Seymour_(died_1979)> , <cavendish.ttl#Barbara_Judith_Lascelles> ;
@@ -1874,25 +1874,39 @@
     gen:spouse <#Sir_Edward_Stanhope> , <https://www.wikidata.org/wiki/Q16204889> .
 
 <https://www.wikidata.org/wiki/Q7528341>
-  # Sir Michael Stanhope, 1502a/1512b - 1552-02-25
+  owl:sameAs <https://www.wikidata.org/wiki/Q76031811> ;
+  # Sir Michael Stanhope, of Elvaston and Shelford, 1502a/1512b - 1552-02-25
   gen:father <#Sir_Edward_Stanhope> ;
   gen:mother <#Avelina_Clifton> .
-  # oo Ann Rawson, daughter of Nicholas Rawson
+  # oo Ann Rawson, 1515~ – 1587-02-20, daughter of Nicholas Rawson
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7528341> , <#Anne_Rawson> ;
+	gen:startDate "1537-11b" .
 <https://www.wikidata.org/wiki/Q455209>
   # Anne Stanhope, 1510~ – 1587-04-16
   gen:father <#Sir_Edward_Stanhope> ;
   gen:mother <https://www.wikidata.org/wiki/Q16204889> .
   # oo 1535-03-09b Edward Seymour, 1st Duke of Somerset, 1500~ - 1552-01-22, https://www.wikidata.org/wiki/Q163936
 
+<#Jane_Stanhope>
+  # Jane Stanhope, 1547~ – 1618-01-03
+  gen:father <https://www.wikidata.org/wiki/Q7528341> ;
+  gen:mother <#Anne_Rawson> .
+  # oo 1590b Sir Roger Townshend, 1544~ - 1590-06-30, https://www.wikidata.org/wiki/Q7359024
 <https://www.wikidata.org/wiki/Q6258824>
   # John Stanhope, 1st Baron Stanhope of Harrington, 1549? – 1620-03-09
   # 1st Baron Stanhope of Harrington, co. Northants. 1605
-  gen:father <https://www.wikidata.org/wiki/Q7528341> .
-  # and Ann Rawson
+  gen:father <https://www.wikidata.org/wiki/Q7528341> ;
+  gen:mother <#Anne_Rawson> .
   # oo Margaret MacWilliams, daughter of Henry MacWilliams
   []
     gen:spouse <https://www.wikidata.org/wiki/Q6258824> , <#Margaret_MacWilliams> ;
 	gen:startDate "1589-05-06" .
+<https://www.wikidata.org/wiki/Q76031812>
+  # Julian Stanhope
+  gen:father <https://www.wikidata.org/wiki/Q7528341> ;
+  gen:mother <#Anne_Rawson> .
+  # oo John Hotham, 1540-09 - 1609-06-15, https://www.wikidata.org/wiki/Q75980604 (obrien.ttl)
 
 <#Elizabeth_Stanhope>
   # Hon. Elizabeth Stanhope, d. 1661~
@@ -2639,25 +2653,6 @@
   gen:father <https://www.wikidata.org/wiki/Q6702449> .
   # and Emily Stuart
   # oo 1899-03-18 Lord Percy St. Maur, 1847-11-11 - 1907-07-16, #Lord_Percy_St._Maur
-
-# ----
-#<https://www.wikidata.org/wiki/Q176472>
-  # Rt. Hon. William Henry Smith, 1825-06-24 - 1891-10-06
-  # oo Emily Danvers, Viscountess Hambleden, d. 1913-08-12, 1st Viscountess Hambleden, of Hambleden, co. Buckingham 1891-11-10, daughter of Frederick Dawes Danvers
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q176472> , <#Emily_Danvers,_Viscountess_Hambleden> ;
-	gen:startDate "1858-04-13" .
-
-<#Helen_Smith>
-  # Hon. Helen Smith, 1860-12-28 - 1944-01-17
-  gen:father <https://www.wikidata.org/wiki/Q176472> ;
-  gen:mother <#Emily_Danvers,_Viscountess_Hambleden> .
-  # oo 1896-04-16 Henry Sydney Seymour, 1855-09-15 - 1930-03-26, #Henry_Sydney_Seymour
-<#Mabel_Danvers_Smith>
-  # Hon. Mabel Danvers Smith, d. 1956-03-27
-  gen:father <https://www.wikidata.org/wiki/Q176472> ;
-  gen:mother <#Emily_Danvers,_Viscountess_Hambleden> .
-  # oo 1887-11-16 John Herbert Dudley Ryder, 5th Earl of Harrowby, 1864-08-22 – 1956-03-30, https://www.wikidata.org/wiki/Q6256112
 
 # ----
 #<https://www.wikidata.org/wiki/Q5537518>
