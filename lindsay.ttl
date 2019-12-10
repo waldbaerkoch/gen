@@ -4,36 +4,87 @@
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
+#<https://www.wikidata.org/wiki/Q19325372>
+  # Sir David Lindsay, lord of Crawford
+  # oo Maria Abernethy, dau of Sir Alexander Abernethy (https://www.wikidata.org/wiki/Q76159050), and widow of Andrew Leslie
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q19325372> , <https://www.wikidata.org/wiki/Q75263360> .
+
+<https://www.wikidata.org/wiki/Q18924963>
+  # Sir Alexander Lindsay, of Glenesk, d. 1381-10
+  gen:father <https://www.wikidata.org/wiki/Q19325372> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75263360> .
+  # oo Catherine Stirling
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q18924963> , <https://www.wikidata.org/wiki/Q75388294> ;
+	gen:startDate "1358" .
+  # oo Margery Stuart, d. by 1442, niece of King Robert II
+<https://www.wikidata.org/wiki/Q75263366> # -> Lindsay of the Byres
+  # Sir William Lindsay, lord of Abercorn and Byres, d. 1393-07-01b
+  gen:father <https://www.wikidata.org/wiki/Q19325372> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75263360> .
+
+<https://www.wikidata.org/wiki/Q5236627>
+  # David Lindsay, 1st Earl of Crawford, 1360 - 1407
+  gen:father <https://www.wikidata.org/wiki/Q18924963> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75388294> .
+  # oo Elizabeth Stewart
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5236627> , <https://www.wikidata.org/wiki/Q4769859> .
+<https://www.wikidata.org/wiki/Q76055212> # -> Lindsay of Dowhill
+  # Sir William Lindsay of Rossie and 1st of Dowhill, b. 1350~
+  gen:father <https://www.wikidata.org/wiki/Q18924963> .
+  # and Marjory ???
 
 # erskine.ttl
 <#Lady_Elizabeth_Lindsay,_Countess_of_Mar>
   # Lady Elizabeth Lindsay
-  gen:father <https://www.wikidata.org/wiki/Q5236627> . # David Lindsay, 1st Earl of Crawford, 1360 - 1407, son of https://www.wikidata.org/wiki/Q18924963 and https://www.wikidata.org/wiki/Q75388294
-  # and Elizabeth Stewart, https://www.wikidata.org/wiki/Q4769859
+  gen:father <https://www.wikidata.org/wiki/Q5236627> ;
+  gen:mother <https://www.wikidata.org/wiki/Q4769859> .
   # oo 1440-12-20a Robert Erskine, 1st Lord Erskine, d. 1452~, https://www.wikidata.org/wiki/Q15842664
+<https://www.wikidata.org/wiki/Q4719410>
+  # Alexander Lindsay, 2nd Earl of Crawford, 1387 - 1438
+  gen:father <https://www.wikidata.org/wiki/Q5236627> ;
+  gen:mother <https://www.wikidata.org/wiki/Q4769859> .
+  # oo Marjorie Dunbar
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4719410> , <https://www.wikidata.org/wiki/Q75388325> .
 
+<https://www.wikidata.org/wiki/Q5236633>
+  # David Lindsay, 3rd Earl of Crawford, d. 1446-01-17
+  gen:father <https://www.wikidata.org/wiki/Q4719410> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75388325> .
+  # oo Marjory Ogilvy, daughter of https://www.wikidata.org/wiki/Q75262342
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5236633> , <https://www.wikidata.org/wiki/Q75262319> .
 
+<https://www.wikidata.org/wiki/Q4719411>
+  # Alexander Lindsay, 4th Earl of Crawford, 1423 - 1453
+  gen:father <https://www.wikidata.org/wiki/Q5236633> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75262319> .
+  # oo Margaret Dunbar, daughter of https://www.wikidata.org/wiki/Q75262343
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4719411> , <https://www.wikidata.org/wiki/Q61466231> .
 # carnegie.ttl
-<#Walter_Lindsay_(died_1476)>
-  # Walter Lindsay, d. 1476
-  gen:father <https://www.wikidata.org/wiki/Q5236633> . # David Lindsay, 3rd Earl of Crawford, d. 1446-01-17, son of Alexander Lindsay, 2nd Earl of Crawford (1387 - 1438, https://www.wikidata.org/wiki/Q4719410, son of https://www.wikidata.org/wiki/Q5236627 and https://www.wikidata.org/wiki/Q4769859) and https://www.wikidata.org/wiki/Q75388325
-  # and Marjory Ogilvy
-  # oo Isabel Livingstone
 # hay.ttl
-<#Walter_Lindsay_of_Beaufort_and_Edzell>
+<#Walter_Lindsay_(died_1476)>
   # Walter Lindsay of Beaufort and Edzell, d. 1476
-  gen:father <https://www.wikidata.org/wiki/Q5236633> .
-  # and Marjory Ogilvy
+  gen:father <https://www.wikidata.org/wiki/Q5236633> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75262319> .
   # oo Isabel Livingstone
   []
-    gen:spouse <#Walter_Lindsay_of_Beaufort_and_Edzell> , <hay.ttl#Isabel_Livingstone> ;
+    gen:spouse <#Walter_Lindsay_(died_1476)> , <hay.ttl#Isabel_Livingstone> ;
 	gen:startDate "1470" .
+<https://www.wikidata.org/wiki/Q75262535> # -> Lindsay of Evelick
+  # William Lindsay, of Lekoquhay
+  gen:father <https://www.wikidata.org/wiki/Q5236633> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75262319> .
 
 # hamilton.ttl
 <https://www.wikidata.org/wiki/Q3018299>
   # David Lindsay, 1st Duke of Montrose, 1440 - 1495-12-25
-  gen:father <https://www.wikidata.org/wiki/Q4719411> ; # Alexander Lindsay, 4th Earl of Crawford, 1423 - 1453, son of https://www.wikidata.org/wiki/Q5236633 and https://www.wikidata.org/wiki/Q75262319
-  gen:mother <https://www.wikidata.org/wiki/Q61466231> . # Margaret Dunbar, daughter of https://www.wikidata.org/wiki/Q75262343
+  gen:father <https://www.wikidata.org/wiki/Q4719411> ;
+  gen:mother <https://www.wikidata.org/wiki/Q61466231> .
   # oo Elizabeth Hamilton, 1442~ – 1517~
   []
     gen:spouse <https://www.wikidata.org/wiki/Q3018299> , <hamilton.ttl#Elizabeth_Hamilton_(died_1517)> ;
@@ -57,8 +108,8 @@
 # carnegie.ttl
 <#Sir_David_Lindsay,_of_Beaufort_and_Edzell>
   # Sir David Lindsay, of Beaufort and Edzell, d.1528
-  gen:father <#Walter_Lindsay_(died_1476)> .
-  # and Isabel Livingstone
+  gen:father <#Walter_Lindsay_(died_1476)> ;
+  gen:mother <hay.ttl#Isabel_Livingstone> .
   # oo Katherine Fotheringham
 
 # gordon.ttl
@@ -145,13 +196,33 @@
   gen:father <https://www.wikidata.org/wiki/Q5236636> ;
   gen:mother <https://www.wikidata.org/wiki/Q18922085> .
   # oo 1572-10-21b Patrick Drummond, 3rd Lord Drummond, 1550 - 1602a, drummond.ttl#Patrick_Drummond,_3rd_Lord_Drummond
+<https://www.wikidata.org/wiki/Q6244884> # -> Lindsay of Balcarres
+  # John Lindsay of Balcarres, Lord Menmuir, 1552 - 1598
+  gen:father <https://www.wikidata.org/wiki/Q5236636> ;
+  gen:mother <https://www.wikidata.org/wiki/Q18922085> .
 
+<https://www.wikidata.org/wiki/Q64031638>
+  # Henry Lindsay, 13th Earl of Crawford, d. 1623
+  gen:father <#David_Lindsay,_10th_Earl_of_Crawford> ;
+  gen:mother <#Margaret_Bethune_(died_1583a)> .
+  # oo Helen Chisholm
+<https://www.wikidata.org/wiki/Q16859737> # -> Lord Spynie
+  # Alexander Lindsay, 1st Lord Spynie, 1563 - 1607-06-16~
+  gen:father <#David_Lindsay,_10th_Earl_of_Crawford> ;
+  gen:mother <#Margaret_Bethune_(died_1583a)> .
 # carnegie.ttl
 <#Lady_Helen_Lindsay>
   # Lady Helen Lindsay
   gen:father <#David_Lindsay,_10th_Earl_of_Crawford> ;
   gen:mother <#Margaret_Bethune_(died_1583a)> .
   # oo Sir David Lindsay, Lord Edzell, d. 1610-12, https://www.wikidata.org/wiki/Q16859740
+<https://www.wikidata.org/wiki/Q75740989>
+  # Alexander Lindsay, 1st of Canterland
+  gen:father <https://www.wikidata.org/wiki/Q16859740> ;
+  gen:mother <#Lady_Helen_Lindsay> .
+  # oo Jean Murray, daughter of https://www.wikidata.org/wiki/Q76295936 (James Murray of Pardewis) and https://www.wikidata.org/wiki/Q76295938 (Agnes Lindsay)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75740989> , <https://www.wikidata.org/wiki/Q76295934> .
 # carnegie.ttl
 <https://www.wikidata.org/wiki/Q56043084>
   # Margaret Lindsay, d. 1614-07-09
@@ -160,20 +231,20 @@
   # oo 1595-10-08 David Carnegie, 1st Earl of Southesk, 1575 - 1658-02, https://www.wikidata.org/wiki/Q3703133
 
 # graham.ttl
-#<https://www.wikidata.org/wiki/Q4262014>
+<https://www.wikidata.org/wiki/Q4262014>
   # Ludovic Lindsay, 16th Earl of Crawford
-  # son of Henry Lindsay, 13th Earl of Crawford, d. 1623, https://www.wikidata.org/wiki/Q64031638, son of #David_Lindsay,_10th_Earl_of_Crawford and #Margaret_Bethune_(died_1583a)
+  gen:father <https://www.wikidata.org/wiki/Q64031638> .
   # and Helen Chisholm
   # oo Lady Margaret Graham
   []
     gen:spouse <https://www.wikidata.org/wiki/Q4262014> , <graham.ttl#Lady_Margaret_Graham,_Lady_Garlies> ;
 	gen:startDate "1643-10-05" .
 # carnegie.ttl
-#<#John_Lindsay,_6th_of_Edzell>
+<#John_Lindsay,_6th_of_Edzell>
 # https://www.wikidata.org/wiki/Q75591951
   # John Lindsay, 6th of Edzell, d. 1671-04
-  # son of Alexander Lindsay, 1st of Canterland, https://www.wikidata.org/wiki/Q75740989, son of https://www.wikidata.org/wiki/Q16859740 and https://www.wikidata.org/wiki/Q75262471
-  # and Jean Murray, https://www.wikidata.org/wiki/Q76295934, daughter of https://www.wikidata.org/wiki/Q76295936 (James Murray of Pardewis) and https://www.wikidata.org/wiki/Q76295938 (Agnes Lindsay, )
+  gen:father <https://www.wikidata.org/wiki/Q75740989> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76295934> .
   # oo Lady Jean Carnegie, d. 1659-03-23b
   []
     gen:spouse <#John_Lindsay,_6th_of_Edzell> , <carnegie.ttl#Lady_Jean_Carnegie_(died_1659)> ;
@@ -181,18 +252,28 @@
 
 
 
-
-
-
-
-
-
 # Lindsay of Balcarres
+<https://www.wikidata.org/wiki/Q6244884>
+  # John Lindsay of Balcarres, Lord Menmuir, 1552 - 1598
+  gen:father <https://www.wikidata.org/wiki/Q5236636> ;
+  gen:mother <https://www.wikidata.org/wiki/Q18922085> .
+  # oo Marion Guthrie
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6244884> , <https://www.wikidata.org/wiki/Q75262472> .
+
+<https://www.wikidata.org/wiki/Q5236628>
+  # David Lindsay, 1st Lord Balcarres, 1587-03-17 - 1642-03
+  gen:father <https://www.wikidata.org/wiki/Q6244884> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75262472> .
+  # oo Lady Sophia Seton
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5236628> , <https://www.wikidata.org/wiki/Q75262485> .
+
 # campbell.ttl
 <https://www.wikidata.org/wiki/Q4719408>
   # Alexander Lindsay, 1st Earl of Balcarres, 1618-07-06 - 1659-08-30
-  gen:father <https://www.wikidata.org/wiki/Q5236628> ; # David Lindsay, 1st Lord Balcarres, 1587-03-17 - 1642-03, son of https://www.wikidata.org/wiki/Q6244884 (John Lindsay of Balcarres, Lord Menmuir, 1552 - 1598, son of https://www.wikidata.org/wiki/Q5236636 and https://www.wikidata.org/wiki/Q18922085) and https://www.wikidata.org/wiki/Q75262472 (Marion Guthrie)
-  gen:mother <https://www.wikidata.org/wiki/Q75262485> . # Lady Sophia Seton
+  gen:father <https://www.wikidata.org/wiki/Q5236628> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75262485> .
   # oo Lady Anne Mackenzie, 1621 - 1707
   []
     gen:spouse <https://www.wikidata.org/wiki/Q4719408> , <https://www.wikidata.org/wiki/Q4836326> ;
@@ -222,12 +303,15 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5145288> , <drummond.ttl#Lady_Jean_Ker> ;
 	gen:startDate "1680a" .
+  # oo Lady Margaret Campbell, daughter of https://www.wikidata.org/wiki/Q75262426 (James Campbell, 2nd Earl of Loudoun) and https://www.wikidata.org/wiki/Q75263586 (Lady Margaret Montgomerie)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5145288> , <https://www.wikidata.org/wiki/Q75262424> .
 
 # dalrymple.ttl
 <https://www.wikidata.org/wiki/Q7615693>
   # James Lindsay, 5th Earl of Balcarres, 1691-11.14 . 1768-02-20
   gen:father <https://www.wikidata.org/wiki/Q5145288> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75262424> . # Lady Margaret Campbell, daughter of https://www.wikidata.org/wiki/Q75262426 (James Campbell, 2nd Earl of Loudoun) and https://www.wikidata.org/wiki/Q75263586 (Lady Margaret Montgomerie)
+  gen:mother <https://www.wikidata.org/wiki/Q75262424> .
   # oo Anne Dalrymple, 1727-12-25 - 1820-11-20
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7615693> , <dalrymple.ttl#Anne_Dalrymple_(died_1820)> ;
@@ -238,7 +322,7 @@
   # Alexander Lindsay, 6th Earl of Balcarres, 1752-01-18 - 1825-03-27
   gen:father <https://www.wikidata.org/wiki/Q7615693> ;
   gen:mother <dalrymple.ttl#Anne_Dalrymple_(died_1820)> .
-  # oo Elizabeth Dalrymple, 1759-07-05 - 1816-08-10
+  # oo Elizabeth Dalrymple, 1759-07-05 - 1816-08-10, https://www.wikidata.org/wiki/Q75262388
   []
     gen:spouse <https://www.wikidata.org/wiki/Q4719412> , <dalrymple.ttl#Elizabeth_Dalrymple_(died_1816)> ;
 	gen:startDate "1780-06-01" .
@@ -280,6 +364,13 @@
     gen:spouse <#Hugh_Lindsay> , <gordon.ttl#Jane_Gordon> ;
 	gen:startDate "1799-01-14" .
 
+<https://www.wikidata.org/wiki/Q6138078>
+  # James Lindsay, 24th Earl of Crawford, 1783-04-24 - 1869-12-15
+  gen:father <https://www.wikidata.org/wiki/Q4719412> ;
+  gen:mother <dalrymple.ttl#Elizabeth_Dalrymple_(died_1816)> .
+  # oo Hon. Maria Margaret Francis Pennington
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6138078> , <https://www.wikidata.org/wiki/Q75262389> .
 # dalrymple.ttl
 <#Charles_Robert_Lindsay_(died_1835)>
   # Hon. Charles Robert Lindsay, 1784-08-20 - 1835-07-04
@@ -329,11 +420,23 @@
   gen:mother <gordon.ttl#Jane_Gordon> .
   # oo 1817-10-16 Sir Edmund Antrobus, 2nd Baronet, 1792-05-17 - 1870-05-04, https://www.wikidata.org/wiki/Q26623605 (devereux.ttl, gordon.ttl)
 
+<https://www.wikidata.org/wiki/Q4262008>
+  # Alexander Lindsay, 25th Earl of Crawford, 1812-10-16 - 1880-12-13
+  gen:father <https://www.wikidata.org/wiki/Q6138078> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75262389> .
+  # oo Margaret Lindsay, 1824-12-31 - 1909-12-28, daughter of https://www.wikidata.org/wiki/Q75262552 (Sir James Lindsay) and https://www.wikidata.org/wiki/Q75262554 (https://www.wikidata.org/wiki/Q75262554)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4262008> , <https://www.wikidata.org/wiki/Q75262392> .
+<https://www.wikidata.org/wiki/Q5080257>
+  # Hon. Charles Lindsay, 1816-11-11 - 1889-03-25
+  gen:father <https://www.wikidata.org/wiki/Q6138078> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75262389> .
+  # oo Emilia Anne Browne
 # hamilton.ttl
 <#Colin_Lindsay_(died_1892)>
   # Hon. Colin Lindsay, 1819-12-06 - 1892-01-28
-  gen:father <https://www.wikidata.org/wiki/Q6138078> . # James Lindsay, 24th Earl of Crawford, 1783-04-24 - 1869-12-15, son of https://www.wikidata.org/wiki/Q4719412 and https://www.wikidata.org/wiki/Q75262388 (Elizabeth Dalrymple)
-  # and Hon. Maria Margaret Francis Pennington
+  gen:father <https://www.wikidata.org/wiki/Q6138078> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75262389> .
   # oo Lady Frances Howard, d. 1897-08-20
   []
     gen:spouse <#Colin_Lindsay_(died_1892)> , <hamilton.ttl#Lady_Frances_Howard> ;
@@ -384,22 +487,22 @@
 # grey.ttl
 <#Lady_Mary_Susan_Félicie_Lindsay>
   # Lady Mary Susan Félicie Lindsay, d. 1937-11-27
-  gen:father <https://www.wikidata.org/wiki/Q4262008> ; # Alexander Lindsay, 25th Earl of Crawford, 1812-10-16 - 1880-12-13, son of https://www.wikidata.org/wiki/Q6138078 and https://www.wikidata.org/wiki/Q75262389 (Hon. Maria Margaret Francis Pennington)
-  gen:mother <https://www.wikidata.org/wiki/Q75262392> . # Margaret Lindsay, 1824-12-31 - 1909-12-28, daughter of https://www.wikidata.org/wiki/Q75262552 (Sir James Lindsay) and https://www.wikidata.org/wiki/Q75262554 (https://www.wikidata.org/wiki/Q75262554)
+  gen:father <https://www.wikidata.org/wiki/Q4262008> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75262392> .
   # oo 1878-05-09 Hon. Frederick George Lindley Meynell, 1846-06-04 - 1910-11-04, grey.ttl#Frederick_George_Lindley_Meynell
 # kennedy.ttl
 <https://www.wikidata.org/wiki/Q336404>
   # James Ludovic Lindsay, 26th Earl of Crawford, 1847-07-28 - 1913-01-31
   gen:father <https://www.wikidata.org/wiki/Q4262008> ;
   gen:mother <https://www.wikidata.org/wiki/Q75262392> .
-  # oo Emily Florence Bootle-Wilbraham, 1848-04-03 - 1934-01-15
+  # oo Emily Florence Bootle-Wilbraham, 1848-04-03 - 1934-01-15, https://www.wikidata.org/wiki/Q75262395
   []
     gen:spouse <https://www.wikidata.org/wiki/Q336404> , <kennedy.ttl#Emily_Florence_Bootle-Wilbraham> ;
 	gen:startDate "1869-07-22" .
 # manners.ttl
 <https://www.wikidata.org/wiki/Q529608>
   # Marion Margaret Violet Lindsay, 1856-03-07 - 1937-12-22
-  gen:father <https://www.wikidata.org/wiki/Q5080257> . # Hon. Charles Lindsay, 1816-11-11 - 1889-03-25, son of https://www.wikidata.org/wiki/Q6138078 and https://www.wikidata.org/wiki/Q75262389
+  gen:father <https://www.wikidata.org/wiki/Q5080257> .
   # and Emilia Anne Browne
   # oo 1882-11-25 Henry John Brinsley Manners, 8th Duke of Rutland, 1852-04-16 - 1925-05-08, https://www.wikidata.org/wiki/Q3784973
 # gordon.ttl
@@ -445,6 +548,11 @@
     gen:spouse <#David_Balcarres_Lindsay> , <#Grace_Maud_Miller> ;
 	gen:startDate "1898-01-11" .
 
+<https://www.wikidata.org/wiki/Q3703236>
+  # David Alexander Edward Lindsay, 27th Earl of Crawford, 1871-10-10 - 1940-03-08
+  gen:father <https://www.wikidata.org/wiki/Q336404> ;
+  gen:mother <kennedy.ttl#Emily_Florence_Bootle-Wilbraham> .
+  # oo Constance Lilian Pelly
 # howard.ttl
 <#Robert_Hamilton_Lindsay>
   # Hon. Robert Hamilton Lindsay, 1874-03-30 - 1911-12-08
@@ -488,7 +596,7 @@
 # cavendish.ttl
 <https://www.wikidata.org/wiki/Q5236632>
   # David Alexander Robert Lindsay, 28th Earl of Crawford, 1900-11-20 - 1975-12-13
-  gen:father <https://www.wikidata.org/wiki/Q3703236> . # David Alexander Edward Lindsay, 27th Earl of Crawford, 1871-10-10 - 1940-03-08, son of https://www.wikidata.org/wiki/Q336404 and https://www.wikidata.org/wiki/Q75262395
+  gen:father <https://www.wikidata.org/wiki/Q3703236> .
   # and Constance Lilian Pelly
   # oo Mary Katherine Cavendish, 1903-07-20 - 1994-11-20
   []
@@ -509,6 +617,10 @@
   gen:mother <#Mary_Janet_Clarke> .
   # oo 1932-12-15 Sir Martin Alexander Lindsay, 1st Baronet, 1905-08-22 – 1981-05-05, https://www.wikidata.org/wiki/Q7528299
 
+<https://www.wikidata.org/wiki/Q335822>
+  # Robert Lindsay, 29th Earl of Crawford, b. 1927-03-05
+  gen:father <https://www.wikidata.org/wiki/Q5236632> .
+  # oo Ruth Beatrice Meyer-Bechtler
 # buchanan.ttl
 <#Hugh_John_Alexander_Lindsay>
   # Hugh John Alexander Lindsay, b. 1934-07-30
@@ -531,7 +643,7 @@
 # hay.ttl
 <#Lady_Bettina_Mary_Lindsay>
   # Lady Bettina Mary Lindsay, b. 1950-06-26
-  gen:father <https://www.wikidata.org/wiki/Q335822> . # Robert Lindsay, 29th Earl of Crawford, b. 1927-03-05, son of https://www.wikidata.org/wiki/Q5236632
+  gen:father <https://www.wikidata.org/wiki/Q335822> .
   # and Ruth Beatrice Meyer-Bechtler
   # oo 1975 Peter Charles Drummond-Hay, b. 1948-11-18, hay.ttl#Peter_Charles_Drummond-Hay
 # buchanan.ttl
@@ -544,26 +656,275 @@
     gen:spouse <#Andrew_James_Ronald_Lindsay> , <gordon.ttl#Lady_Amy_Jane_Gordon> .
 
 
+# Lord Spynie
+# lyon.ttl
+<https://www.wikidata.org/wiki/Q16859737>
+  # Alexander Lindsay, 1st Lord Spynie, 1563 - 1607-06-16~
+  gen:father <#David_Lindsay,_10th_Earl_of_Crawford> ;
+  gen:mother <#Margaret_Bethune_(died_1583a)> .
+  # oo Jean Lyon, d. 1610-03b
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16859737> , <lyon.ttl#Jean_Lyon> .
+
+# hay.ttl
+<https://www.wikidata.org/wiki/Q16859738>
+  # Alexander Lindsay, 2nd Lord Spynie, 1597~ - 1646
+  gen:father <https://www.wikidata.org/wiki/Q16859737> ;
+  gen:mother <lyon.ttl#Jean_Lyon> .
+  # oo Lady Margaret Hay, d. 1650-08-16b
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16859738> , <hay.ttl#Lady_Margaret_Hay_(died_1650)> .
+
+# hay.ttl
+<#Alexander_Lindsay,_Master_of_Spynie>
+  # Alexander Lindsay, Master of Spynie, 1643-06-29a
+  gen:father <https://www.wikidata.org/wiki/Q16859738> ;
+  gen:mother <#Lady_Margaret_Hay_(died_1650)> .
+  # oo Lady Jean Carnegie, d. 1659-03-23b
+  []
+    gen:spouse <#Alexander_Lindsay,_Master_of_Spynie> , <carnegie.ttl#Lady_Jean_Carnegie_(died_1659)> .
+
+
+
+# Lindsay of Evelick
+<https://www.wikidata.org/wiki/Q75262535>
+  # William Lindsay, of Lekoquhay
+  gen:father <https://www.wikidata.org/wiki/Q5236633> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75262319> .
+
+
+#<#John_Lindsay_of_Evelix>
+  # John Lindsay of Evelix
+  # oo Isabella Blair, daughter of Thomas Blair
+
+<https://www.wikidata.org/wiki/Q4719414>
+  owl:sameAs <https://www.wikidata.org/wiki/Q76297628> ;
+  # Alexander Lindsay of Evelick, 1561~ – 1639-10
+  # Bishop of Dunkeld 1607 - 1638
+  gen:father <#John_Lindsay_of_Evelix> .
+  # oo Barbara Bruce, d. 1626~, daughter of William Bruce of Fingask and Rait and Helen Hay
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4719414> , <https://www.wikidata.org/wiki/Q76297629> .
+  # oo Nichola Dundas
+
+<https://www.wikidata.org/wiki/Q76294548>
+  # Sir Alexander Lindsay of Evelick, 1597/1604-11-19 - 1663-08-25~
+  gen:father <https://www.wikidata.org/wiki/Q4719414> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76297629> .
+  # oo Marjorie Falconer, daughter of Alexander Falconer of Glenfarquhar, 1st Baronet (1635~ - 1717-03-17) and oo Helen Grahame (d. 1720-03-03, daughter of John Grahame of Crigie)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76294548> , <https://www.wikidata.org/wiki/Q76294550> .
+
+<https://www.wikidata.org/wiki/Q76294546>
+  # Sir Alexander Lindsay of Evelick, 1st Baronet, d. 1690~/1695
+  gen:father <https://www.wikidata.org/wiki/Q76294548> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76294550> .
+  # oo Jean Fotheringham, d. 1670a, daughter of Thomas Fotheringham, 10th of Powrie and Margaret Gibson
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76294546> , <https://www.wikidata.org/wiki/Q75264062> .
+
+<https://www.wikidata.org/wiki/Q76296186>
+  # Sir Alexander Lindsay of Evelick, 2nd Baronet, 1660-02-26 - 1709a
+  gen:father <https://www.wikidata.org/wiki/Q76294546> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75264062> .
+  # oo Katherine Wardlaw
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76296186> , <https://www.wikidata.org/wiki/Q76296191> ;
+	gen:startDate "1681-03-04" .
+
+# murray.ttl
+<https://www.wikidata.org/wiki/Q7525948>
+  owl:sameAs <https://www.wikidata.org/wiki/Q76027176> ;
+  # Sir Alexander Lindsay of Evelick, 3rd Baronet, 1683-05-11 - 1762-05-04
+  gen:father <https://www.wikidata.org/wiki/Q76296186> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76296191> .
+  # oo Hon. Amelia Murray, d. 1774-02-08, https://www.wikidata.org/wiki/Q76027175
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7525948> , <murray.ttl#Amelia_Murray_(died_1774)> ;
+	gen:startDate "1720-04-22" .
+
+
+
+# Lindsay of Dowhill
+<https://www.wikidata.org/wiki/Q76055212>
+  # Sir William Lindsay of Rossie and 1st of Dowhill, b. 1350~
+  gen:father <https://www.wikidata.org/wiki/Q18924963> .
+  # and Marjory ???
+  # oo Agnes ???
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76055212> , <https://www.wikidata.org/wiki/Q76055215> ;
+	gen:startDate "1376~" .
+
+<https://www.wikidata.org/wiki/Q76055216>
+  # John Lindsay, 2nd of Dowhill, d. 1447
+  gen:father <https://www.wikidata.org/wiki/Q76055212> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76055215> .
+
+<https://www.wikidata.org/wiki/Q76055217>
+  # David Lindsay, 3rd of Dowhill, d. 1472
+  gen:father <https://www.wikidata.org/wiki/Q76055216> .
+
+<https://www.wikidata.org/wiki/Q76055218>
+  # John Lindsay, 4th of Dowhill
+  gen:father <https://www.wikidata.org/wiki/Q76055217> .
+
+<https://www.wikidata.org/wiki/Q76055220>
+  # Adam Lindsay, 5th of Dowhill, d. 1544
+  gen:father <https://www.wikidata.org/wiki/Q76055218> .
+
+<https://www.wikidata.org/wiki/Q76055221>
+  # John Lindsay, 6th of Dowhill, d. 1566
+  gen:father <https://www.wikidata.org/wiki/Q76055220> .
+  # oo Marjory Stewart, daughter of Sir James Stewart of Beath and Margaret Lindsay
+
+<https://www.wikidata.org/wiki/Q76055222>
+  # James Lindsay, 7th of Dowhill, d. 1591
+  gen:father <https://www.wikidata.org/wiki/Q76055221> .
+  # oo Janet Ross, daughter of James Ross of Craigie
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76055222> , <https://www.wikidata.org/wiki/Q76055226> .
+
+<https://www.wikidata.org/wiki/Q76055227>
+  # John Lindsay, 9th of Dowhill
+  gen:father <https://www.wikidata.org/wiki/Q76055222> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76055226> .
+
+<https://www.wikidata.org/wiki/Q76055228>
+  # James Lindsay, 10th of Dowhill, 1601 - 1638
+  gen:father <https://www.wikidata.org/wiki/Q76055227> .
+
+<https://www.wikidata.org/wiki/Q76055236>
+  # Rt. Rev. William Lindsay, d. 1679
+  # Bishop of Dunkeld in 1677
+  gen:father <https://www.wikidata.org/wiki/Q76055228> .
+  # oo Katharine Skene, daughter of Sir Andrew Skene of Halyards
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76055236> , <https://www.wikidata.org/wiki/Q76055238> .
+
+<https://www.wikidata.org/wiki/Q76055240>
+  # James Lindsay, 13th of Dowhill
+  gen:father <https://www.wikidata.org/wiki/Q76055236> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76055238> .
+  # oo Mary Watson
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76055240> , <https://www.wikidata.org/wiki/Q76055241> .
+
+<https://www.wikidata.org/wiki/Q76055242>
+  # Martin Lindsay, 14th of Dowhill, 1710 - 1790
+  gen:father <https://www.wikidata.org/wiki/Q76055240> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76055241> .
+  # oo Jean Smythe, daughter of Dr. James Smythe
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76055242> , <https://www.wikidata.org/wiki/Q76055246> .
+
+<https://www.wikidata.org/wiki/Q76055247>
+  # James Lindsay, 15th of Dowhill, 1753 - 1837
+  gen:father <https://www.wikidata.org/wiki/Q76055242> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76055246> .
+  # oo Ann Pillance
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76055247> , <https://www.wikidata.org/wiki/Q76055248> .
+
+<https://www.wikidata.org/wiki/Q76055249>
+  # Martin Lindsay, 16th of Dowhill, 1782 - 1847
+  gen:father <https://www.wikidata.org/wiki/Q76055247> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76055248> .
+  # oo Elspeth Hadden, daughter of James Hadden of Persley
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76055249> , <https://www.wikidata.org/wiki/Q76055252> ;
+	gen:startDate "1817" .
+
+<https://www.wikidata.org/wiki/Q76055293>
+  # Alexander Hadden Lindsay, 1830-08-10 - 1887
+  gen:father <https://www.wikidata.org/wiki/Q76055249> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76055252> .
+  # oo Isabella Mary Frances Harris, d. 1874, daughter of Maj.-Gen. Philip Harris
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76055293> , <https://www.wikidata.org/wiki/Q76055296> ;
+	gen:startDate "1870" .
+
+<https://www.wikidata.org/wiki/Q75348981>
+  # Alexander Bertram Lindsay, 1872-12-11 - 1914-09-16
+  gen:father <https://www.wikidata.org/wiki/Q76055293> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76055296> .
+  # oo Gladys Hutton, d. 1961-01-11, daughter of William Hutton
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75348981> , <https://www.wikidata.org/wiki/Q76055300> ;
+	gen:startDate "1904" .
+
+# howard.ttl
+# ponsonby.ttl
+<https://www.wikidata.org/wiki/Q7528299>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75268078> ;
+  # Sir Martin Alexander Lindsay of Dowhill, 1st Baronet, 1905-08-22 – 1981-05-05
+  # 1st Baronet Lindsay, of Dowhill, co. Kinross 1962-02-27
+  gen:father <https://www.wikidata.org/wiki/Q75348981> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76055300> .
+  # oo Joyce Emily Lindsay, 1904-05-05 - 1998-04-19
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7528299> , <#Joyce_Emily_Lindsay> ;
+	gen:startDate "1932-12-15" .
+  # oo Hon. Loelia Mary Ponsonby, 1902-02-06 - 1993-11-01
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7528299> , <https://www.wikidata.org/wiki/Q6666556> ;
+	gen:startDate "1969-08-01" .
+
+# howard.ttl
+<#Jacynth_Rosemary_Lindsay>
+  # Jacynth Rosemary Lindsay, b. 1934-12-01
+  gen:father <https://www.wikidata.org/wiki/Q7528299> ;
+  gen:mother <#Joyce_Emily_Lindsay>.
+  # oo 1961-11-17 Lord Mark Fitzalan-Howard, b. 1934-03-28, howard.ttl#Lord_Mark_Fitzalan-Howard
+
 
 
 
 # Lindsay of the Byres
+<https://www.wikidata.org/wiki/Q75263366>
+  # Sir William Lindsay, lord of Abercorn and Byres, d. 1393-07-01b
+  gen:father <https://www.wikidata.org/wiki/Q19325372> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75263360> .
+  # oo Christiana Mure, daughter of https://www.wikidata.org/wiki/Q75263374
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75263366> , <https://www.wikidata.org/wiki/Q75263372> .
+
+<https://www.wikidata.org/wiki/Q75263375>
+  # Sir William, of the Byres, d. 1414
+  gen:father <https://www.wikidata.org/wiki/Q75263366> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75263372> .
+  # oo Christiana Keith, daughter of https://www.wikidata.org/wiki/Q75388150 and https://www.wikidata.org/wiki/Q75388152
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75263375> , <https://www.wikidata.org/wiki/Q75263377> .
+
+<https://www.wikidata.org/wiki/Q75388171>
+  owl:sameAs <https://www.wikidata.org/wiki/Q19325494> ;
+  # John Lindsay, 1st Lord Lindsay of the Byres, d. 1482
+  gen:father <https://www.wikidata.org/wiki/Q75263375> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75263377> .
+  # oo Agnes Stewart
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75388171> , <https://www.wikidata.org/wiki/Q75389576> .
+
+<https://www.wikidata.org/wiki/Q5236630>
+  # David Lindsay, 2nd Lord Lindsay of the Byres, d. 1490
+  gen:father <https://www.wikidata.org/wiki/Q75388171> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75389576> .
 # cavendish.ttl
 <https://www.wikidata.org/wiki/Q7147023>
   owl:sameAs <https://www.wikidata.org/wiki/Q75263396> ;
   # Patrick Lindsay, 4th Lord Lindsay of the Byres, d. 1526-03-08
-  gen:father <https://www.wikidata.org/wiki/Q75388171> ; # John Lindsay, 1st Lord Lindsay of the Byres
-  gen:mother <https://www.wikidata.org/wiki/Q75389576> . # Agnes Stewart
+  gen:father <https://www.wikidata.org/wiki/Q75388171> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75389576> .
   # oo Isabella Pitcairn, daughter of Henry Pitcairn, 10th of Pitcairn and Forthar
 # hay.ttl
 <#Mary_Lindsay>
   # Mary Lindsay, d. 1467~
-  gen:father <https://www.wikidata.org/wiki/Q19325494> . # John Lindsay, 1st Lord Lindsay of the Byres, d. 1482
+  gen:father <https://www.wikidata.org/wiki/Q75388171> .
   # oo 1462-07-07b John Hay, 1st Lord Hay of Yester, 1450~ - 1508-10a, https://www.wikidata.org/wiki/Q1103474
 # keith.ttl
 <#Margaret_Lindsay_(died_1482)>
   # Margaret Lindsay, d. 1482-02-06
-  gen:father <https://www.wikidata.org/wiki/Q19325494> ;
+  gen:father <https://www.wikidata.org/wiki/Q75388171> ;
   gen:mother <https://www.wikidata.org/wiki/Q75389576> .
   # oo Walter Stewart, 1st Lord Innermeath, d. 1481-07a/1489-02b, stuart.ttl#Walter_Stewart,_1st_Lord_Innermeath
 # gordon.ttl
@@ -576,7 +937,11 @@
 # fraser.ttl
 <https://www.wikidata.org/wiki/Q75389581>
   # John Lindsay, 3rd Lord Lindsay of the Byres
-  gen:father <https://www.wikidata.org/wiki/Q5236630> . # David Lindsay, 2nd Lord Lindsay of the Byres, d. 1490
+  gen:father <https://www.wikidata.org/wiki/Q5236630> .
+<https://www.wikidata.org/wiki/Q75263399>
+  # John Lindsay of Pitcruvy, Master of Lindsay, d. 1525-08-18~
+  gen:father <https://www.wikidata.org/wiki/Q7147023> .
+  # oo Elizabeth Lundie
 # cavendish.ttl
 <#William_Lindsay>
   # William Lindsay, d. 1547-03b
@@ -590,21 +955,37 @@
   gen:father <https://www.wikidata.org/wiki/Q75389581> .
   # and Marion Baillie
   # oo 1533-06-04b Sir James Stewart of Beath, 1513b - 1544-06-02, stuart.ttl#Sir_James_Stewart_of_Beath
-# leslie.ttl
-<https://www.wikidata.org/wiki/Q16854092>
-  # Patrick Lindsay, 6th Lord Lindsay of the Byres, 1521 - 1589-12-11
-  gen:father <https://www.wikidata.org/wiki/Q16200005> . # John Lindsay, 5th Lord Lindsay of the Byres, d. 1563-12, son of John Lindsay of Pitcruvy, the Master of Lindsay (son of https://www.wikidata.org/wiki/Q7147023)
-  # and Helen Stewart, daughter of https://www.wikidata.org/wiki/Q1701828
-  # oo Euphemia Douglas, daughter of Sir Robert Douglas of Lochleven and Margaret Erskine
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q16854092> , <#Euphemia_Douglas> ;
-	gen:startDate "1545-05~" .
+<https://www.wikidata.org/wiki/Q16200005>
+  # John Lindsay, 5th Lord Lindsay of the Byres, d. 1563-12
+  gen:father <https://www.wikidata.org/wiki/Q75263399> .
+  # and Elizabeth Lundie
+# murray.ttl
+<#Janet_Lindsay>
+  # Janet Lindsay
+  gen:father <https://www.wikidata.org/wiki/Q75263399> .
+  # and Elizabeth Lundie
+  # oo Sir David Murray of Arngask, Balvaird and Kippo, d. 1550, murray.ttl#Sir_David_Murray_of_Arngask,_Balvaird_and_Kippo
 # cavendish.ttl
 <#John_Lindsay_(died_1580)>
   # John Lindsay, d. 1580-07-12b
   gen:father <#William_Lindsay> .
   # and Isabel Logan
   # oo Janet Williamson
+
+# leslie.ttl
+<https://www.wikidata.org/wiki/Q16854092>
+  # Patrick Lindsay, 6th Lord Lindsay of the Byres, 1521 - 1589-12-11
+  gen:father <https://www.wikidata.org/wiki/Q16200005> .
+  # and Helen Stewart, daughter of https://www.wikidata.org/wiki/Q1701828
+  # oo Euphemia Douglas, daughter of Sir Robert Douglas of Lochleven and Margaret Erskine
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16854092> , <#Euphemia_Douglas> ;
+	gen:startDate "1545-05~" .
+# cavendish.ttl
+<#Patrick_Lindsay_(died_1625)>
+  # Patrick Lindsay, 1571~ - 1625
+  gen:father <#John_Lindsay_(died_1580)> .
+  # and Janet Williamson
 
 # leslie.ttl
 <https://www.wikidata.org/wiki/Q75257552>
@@ -622,10 +1003,10 @@
     gen:spouse <https://www.wikidata.org/wiki/Q18529884> , <leslie.ttl#Lady_Euphemia_Leslie> ;
 	gen:startDate "1573-05-09~" .
 # cavendish.ttl
-<#Patrick_Lindsay_(died_1625)>
-  # Patrick Lindsay, 1571~ - 1625
-  gen:father <#John_Lindsay_(died_1580)> .
-  # and Janet Williamson
+<#John_Lindsay_(died_1666)>
+  # John Lindsay, d. 1666-02
+  gen:father <#Patrick_Lindsay_(died_1625)> .
+  # oo Elspeth Lentron, daughter of David Lentron of Newgrange
 
 # leslie.ttl
 <https://www.wikidata.org/wiki/Q75262795>
@@ -646,10 +1027,15 @@
     gen:spouse <https://www.wikidata.org/wiki/Q75342358> , <hamilton.ttl#Lady_Christian_Hamilton_(died_1646)> ;
 	gen:startDate "1610-06-26" .
 # cavendish.ttl
-<#John_Lindsay_(died_1666)>
-  # John Lindsay, d. 1666-02
-  gen:father <#Patrick_Lindsay_(died_1625)> .
-  # oo Elspeth Lentron, daughter of David Lentron of Newgrange
+<#Patrick_Lindsay,_3rd_of_Wormiston>
+# https://www.wikidata.org/wiki/Q75263498
+  # Patrick Lindsay, 3rd of Wormiston
+  gen:father <#John_Lindsay_(died_1666)> .
+  # and Elspeth Lentron
+  # oo Catherine Bethune, 1640~ - 1730-03-06, https://www.wikidata.org/wiki/Q75263499
+  []
+    gen:spouse <#Patrick_Lindsay,_3rd_of_Wormiston> , <#Catherine_Bethune> ;
+	gen:startDate "1657-06-18" .
 
 # leslie.ttl
 <#Ann_Lindsay>
@@ -668,14 +1054,14 @@
     gen:spouse <https://www.wikidata.org/wiki/Q4262007> , <https://www.wikidata.org/wiki/Q75390088> ;
 	gen:startDate "1630~" .
 # cavendish.ttl
-<#Patrick_Lindsay,_3rd_of_Wormiston>
-  # Patrick Lindsay, 3rd of Wormiston
-  gen:father <#John_Lindsay_(died_1666)> .
-  # and Elspeth Lentron
-  # oo Catherine Bethune, 1640~ - 1730-03-06
+<#John_Lindsay_(died_1715)>
+# https://www.wikidata.org/wiki/Q75263501
+  # John Lindsay, d. 1715-09-23
+  gen:father <#Patrick_Lindsay,_3rd_of_Wormiston> ;
+  gen:mother <#Catherine_Bethune> .
+  # oo Margaret Haliburton, daughter of https://www.wikidata.org/wiki/Q75263505
   []
-    gen:spouse <#Patrick_Lindsay,_3rd_of_Wormiston> , <#Catherine_Bethune> ;
-	gen:startDate "1657-06-18" .
+    gen:spouse <#John_Lindsay_(died_1715)> , <https://www.wikidata.org/wiki/Q75263504> .
 
 # leslie.ttl
 <https://www.wikidata.org/wiki/Q4768245>
@@ -714,12 +1100,24 @@
   gen:mother <https://www.wikidata.org/wiki/Q75390088> .
   # oo 1648-04-13 John Hamilton, 4th Earl of Haddington, 1626 - 1669-08-31, https://www.wikidata.org/wiki/Q6237428
 # cavendish.ttl
-<#John_Lindsay_(died_1715)>
-  # John Lindsay, d. 1715-09-23
-  gen:father <#Patrick_Lindsay,_3rd_of_Wormiston> ;
-  gen:mother <#Catherine_Bethune> .
-  # oo Margaret Haliburton, daughter of George Haliburton
+<#George_Lindsay>
+# https://www.wikidata.org/wiki/Q75263508
+  # George Lindsay, d. 1764-02-10
+  gen:father <#John_Lindsay_(died_1715)> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75263504> .
+  # oo Margaret Bethune, 1704-06-07 - 1778-12-23, https://www.wikidata.org/wiki/Q75263509, daughter of Thomas Bethune of Tarvet (https://www.wikidata.org/wiki/Q75263511) and Ann Paterson (https://www.wikidata.org/wiki/Q75585244)
+  []
+    gen:spouse <#George_Lindsay> , <#Margaret_Bethune_(died_1778)> ;
+	gen:startDate "1721-09-02" .
 
+<https://www.wikidata.org/wiki/Q7616201>
+  # John Lindsay, 19th Earl of Crawford, d. 1713-12
+  gen:father <https://www.wikidata.org/wiki/Q16853352> ;
+  gen:mother <hope.ttl#Lady_Mary_Johnstone_(died_1681)> .
+<https://www.wikidata.org/wiki/Q27586594> # -> Viscount Garnock
+  # John Crawford, 1st Viscount Garnock, 1669 - 1708
+  gen:father <https://www.wikidata.org/wiki/Q75263448> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75263449> .
 # leslie.ttl
 <https://www.wikidata.org/wiki/Q75263469>
   # Margaret Lindsay-Crawford, d. 1695
@@ -727,19 +1125,20 @@
   gen:mother <https://www.wikidata.org/wiki/Q75263449> .
   # oo 1687-04-19 David Boyle, 1st Earl of Glasgow, 1666 - 1733-10-31, https://www.wikidata.org/wiki/Q5231625
 # cavendish.ttl
-<#George_Lindsay>
-  # George Lindsay, d. 1764-02-10
-  gen:father <#John_Lindsay_(died_1715)> .
-  # and Margaret Haliburton
-  # oo Margaret Bethune, 1704-06-07 - 1778-12-23, daughter of Thomas Bethune of Tarvet and Ann Paterson
-  []
-    gen:spouse <#George_Lindsay> , <#Margaret_Bethune_(died_1778)> ;
-	gen:startDate "1721-09-02" .
+<#Henry_Bethune>
+  # Henry Bethune, 1736~ - 1819-03-11
+  gen:father <#George_Lindsay> ;
+  gen:mother <#Margaret_Bethune_(died_1778)> .
+  # oo Margaret Eccles, daughter of Martin Eccles
+<https://www.wikidata.org/wiki/Q75263533>
+  # Patrick Lindsay, 1745 - 1823
+  gen:father <#George_Lindsay> ;
+  gen:mother <#Margaret_Bethune_(died_1778)> .
 
 # murray.ttl
 <https://www.wikidata.org/wiki/Q6244872>
   # John Lindsay, 20th Earl of Crawford, 1702-10-04 - 1749-12-25
-  gen:father <https://www.wikidata.org/wiki/Q7616201> . # John Lindsay, 19th Earl of Crawford, d. 1713-12, son of https://www.wikidata.org/wiki/Q16853352 and Lady Mary Johnstone
+  gen:father <https://www.wikidata.org/wiki/Q7616201> .
   # and oo 1700~ Emilia Stuart, daughter of James Stuart, Lord Doune
   # oo Lady Jane Murray, 1730-06-07 - 1747-10-10
   []
@@ -752,18 +1151,17 @@
   # and Hon. Emilia Stuart
   # oo John Wemyss, b. 1686-06-25, wemyss.ttl#John_Wemyss_(born_1686)
 # cavendish.ttl
-<#Henry_Bethune>
-  # Henry Bethune, 1736~ - 1819-03-11
-  gen:father <#George_Lindsay> ;
-  gen:mother <#Margaret_Bethune_(died_1778)> .
-  # oo Margaret Eccles, daughter of Martin Eccles
-
-# cavendish.ttl
 <#Martin_Eccles_Lindsay_Bethune>
   # Martin Eccles Lindsay Bethune, d. 1813-07-22
   gen:father <#Henry_Bethune> .
   # and Margaret Eccles
   # oo Margaret Augusta Tovey, daughter of James Tovey
+<https://www.wikidata.org/wiki/Q75263534>
+  # David Ayton-Lindsay of Wormiston, 1796-12-31 - 1872-05-05
+  gen:father <https://www.wikidata.org/wiki/Q75263533> .
+  # oo Jane Emilia Ayton, d. 1872-11-22, daughter of https://www.wikidata.org/wiki/Q75263536
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75263534> , <https://www.wikidata.org/wiki/Q75263535> .
 
 # cavendish.ttl
 <#Sir_Henry_Lindsay_Bethune_of_Kilconquhar,_1st_Baronet>
@@ -776,6 +1174,11 @@
   []
     gen:spouse <#Sir_Henry_Lindsay_Bethune_of_Kilconquhar,_1st_Baronet> , <#Coutts_Trotter> ;
 	gen:startDate "1822-07-09" .
+<https://www.wikidata.org/wiki/Q75263538>
+  # David Clarke Bethune, 11th Earl of Lindsay, 1832-04-18 - 1917-03-20
+  gen:father <https://www.wikidata.org/wiki/Q75263534> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75263535> .
+  # oo Emily Marian Crosse, d. 1920-10-17, daughter of https://www.wikidata.org/wiki/Q75263541
 
 # cavendish.ttl
 <#Lady_Anne_Katherine_Bethune>
@@ -789,32 +1192,73 @@
   gen:father <#Sir_Henry_Lindsay_Bethune_of_Kilconquhar,_1st_Baronet> ;
   gen:mother <#Coutts_Trotter> .
   # oo Hector John Graham-Toler, 3rd Earl of Norbury, 1810-09-17 - 1873-12-26, https://www.wikidata.org/wiki/Q44832045
+<https://www.wikidata.org/wiki/Q75263546>
+  # Archibald Lionel Bethune, 13th Earl of Lindsay, 1872-08-14 - 1943-10-15
+  gen:father <https://www.wikidata.org/wiki/Q75263538> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75263539> .
+  # oo Ethel Tucker, d. 1942-05-31, daughter of https://www.wikidata.org/wiki/Q75263549
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75263546> , <https://www.wikidata.org/wiki/Q75263547> .
+
+<https://www.wikidata.org/wiki/Q75263550>
+  # William Tucker Lindesay-Bethune, 14th Earl of Lindsay, 1901-04-28 - 1985
+  gen:father <https://www.wikidata.org/wiki/Q75263546> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75263547> .
+  # oo Marjory Cross, d. 1988, daughter of https://www.wikidata.org/wiki/Q75331410 and https://www.wikidata.org/wiki/Q75851986
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75263550> , <https://www.wikidata.org/wiki/Q75331408> .
+
+# scott.ttl
+<https://www.wikidata.org/wiki/Q5236618>
+  # David Lindsay-Bethune, 15th Earl of Lindsay, 1926-02-09 - 1989
+  gen:father <https://www.wikidata.org/wiki/Q75263550> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75331408> .
+  # oo Hon. Mary Clare Douglas-Scott-Montagu, 1928-06-09 - 2016-04-05
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5236618> , <scott.ttl#Mary_Clare_Douglas-Scott-Montagu> ;
+	gen:startDate "1953-10-31" ;
+	gen:divorceDate "1968" .
 
 
 
+# Viscount Garnock
+<https://www.wikidata.org/wiki/Q27586594>
+  # John Crawford, 1st Viscount Garnock, 1669 - 1708
+  gen:father <https://www.wikidata.org/wiki/Q75263448> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75263449> .
+  # oo Lady Margaret Stuart, d. 1738-04-27, daughter of James Stuart, 1st Earl of Bute (https://www.wikidata.org/wiki/Q245693) and Agnes Mackenzie (https://www.wikidata.org/wiki/Q75267034)
 
-# douglas.ttl
-#<#Sir_William_Douglas_of_Lochleven>
-  # Sir William Douglas, of Lochleven, d. 1421
-#  gen:father <#Sir_Henry_Douglas_of_Lugton_and_Lochleven> .
-  # oo Lady Elizabeth Lindsay
+<https://www.wikidata.org/wiki/Q75263454>
+  owl:sameAs <https://www.wikidata.org/wiki/Q67497558> ;
+  # Patrick Lindsay-Crawford, 2nd Viscount Garnock, 1697-11-30 - 1735-05-24
+  gen:father <https://www.wikidata.org/wiki/Q27586594> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75263452> .
+  # oo Margaret Home
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75263454> , <https://www.wikidata.org/wiki/Q75263456> .
 
-
-
-
-
-
-
-
-
+<https://www.wikidata.org/wiki/Q75263459>
+  # George Lindsay-Crawford, 21st Earl of Crawford, 1729-03-14 - 1781-08-11
+  gen:father <https://www.wikidata.org/wiki/Q75263454> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75263456> .
+  # oo Jean Hamilton, 1735~ - 1809-10-06, daughter of https://www.wikidata.org/wiki/Q75263462 and https://www.wikidata.org/wiki/Q75591878
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75263459> , <https://www.wikidata.org/wiki/Q75263461> ;
+	gen:startDate "1755-12-26" .
 
 # gordon.ttl
-#<#Lady_Joan_Lindsay>
+<#Lady_Joan_Lindsay>
 # https://www.wikidata.org/wiki/Q75263465
   # Lady Joan Lindsay, 1756-11-06 - 1778-01-22
-  # daughter of George Lindsay-Crawford, 21st Earl of Crawford, 1729-03-14 - 1781-08-11, https://www.wikidata.org/wiki/Q75263459, son of Patrick Lindsay-Crawford, 2nd Viscount Garnock (https://www.wikidata.org/wiki/Q75263454) and Margaret Home (https://www.wikidata.org/wiki/Q75263456)
-  # and oo 1755-12-26 Jean Hamilton, 1735~ - 1809-10-06, https://www.wikidata.org/wiki/Q75263461, daughter of https://www.wikidata.org/wiki/Q75263462 and https://www.wikidata.org/wiki/Q75591878
+  gen:father <https://www.wikidata.org/wiki/Q75263459> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75263461> .
   # oo 1772-03-30 Archibald Montgomerie, 11th Earl of Eglinton, 1726-05-18 - 1796-10-30, https://www.wikidata.org/wiki/Q4786453
+
+
+
+
+
+
 
 # gordon.ttl
 #<#Sir_John_Gordon_of_Lochinvar_(died_1517)>
@@ -826,37 +1270,11 @@
 #	gen:startDate "1489-05-19b" .
 
 
-
-
-
-
-
-
-# lyon.ttl
-#<https://www.wikidata.org/wiki/Q16859737>
-  # Alexander Lindsay, 1st Lord Spynie
-  # oo Jean Lyon
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q16859737> , <lyon.ttl#Jean_Lyon> .
-
-# hay.ttl
-#<https://www.wikidata.org/wiki/Q16859738>
-  # Alexander Lindsay, 2nd Lord Spynie, 1597~ - 1646
-  # oo Lady Margaret Hay, d. 1650-08-16b
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q16859738> , <hay.ttl#Lady_Margaret_Hay_(died_1650)> .
-
-# hay.ttl
-<lindsay.ttl#Alexander_Lindsay,_Master_of_Spynie>
-  # Alexander Lindsay, Master of Spynie, 1643-06-29a
-  gen:father <https://www.wikidata.org/wiki/Q16859738> ;
-  gen:mother <#Lady_Margaret_Hay_(died_1650)> .
-  # oo Lady Jean Carnegie, d. 1659-03-23b
-  []
-    gen:spouse <lindsay.ttl#Alexander_Lindsay,_Master_of_Spynie> , <carnegie.ttl#Lady_Jean_Carnegie_(died_1659)> .
-
-
-
+# douglas.ttl
+#<#Sir_William_Douglas_of_Lochleven>
+  # Sir William Douglas, of Lochleven, d. 1421
+#  gen:father <#Sir_Henry_Douglas_of_Lugton_and_Lochleven> .
+  # oo Lady Elizabeth Lindsay
 
 
 # home.ttl
@@ -865,23 +1283,6 @@
   # oo Elizabeth Lundie, daughter of Walter Lundie of that Ilk (b. 1490~) and Elizabeth Lindsay (daughter of Sir John Lindsay, Master of Lindsay and Elizabeth Lundie)
 #  []
 #    gen:spouse <#John_Haldane,_7th_of_Gleneagles> , <#Elizabeth_Lundie> .
-
-
-# howard.ttl
-#<https://www.wikidata.org/wiki/Q7528299>
-  # Sir Martin Alexander Lindsay, 1st Baronet, 1905-08-22 – 1981-05-05
-  # 1st Baronet Lindsay, of Dowhill, co. Kinross 1962-02-27
-  # oo Joyce Emily Lindsay, 1904-05-05 - 1998-04-19
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q7528299> , <#Joyce_Emily_Lindsay> ;
-	gen:startDate "1932-12-15" .
-
-# howard.ttl
-<#Jacynth_Rosemary_Lindsay>
-  # Jacynth Rosemary Lindsay, b. 1934-12-01
-  gen:father <https://www.wikidata.org/wiki/Q7528299> ;
-  gen:mother <#Joyce_Emily_Lindsay>.
-  # oo 1961-11-17 Lord Mark Fitzalan-Howard, b. 1934-03-28, howard.ttl#Lord_Mark_Fitzalan-Howard
 
 
 # lennox.ttl
@@ -903,42 +1304,8 @@
 
 
 
-# murray.ttl
-#<#Janet_Lindsay>
-  # Janet Lindsay
-  # daughter of Sir John Lindsay, Master of Lindsay, d. 1525-08-18~
-  # and Elizabeth Lundie
-  # oo Sir David Murray of Arngask, Balvaird and Kippo, d. 1550, murray.ttl#Sir_David_Murray_of_Arngask,_Balvaird_and_Kippo
 
 
-# murray.ttl
-#<https://www.wikidata.org/wiki/Q7525948>
-  # Sir Alexander Lindsay of Evelick, 3rd Baronet, 1683-05-11 - 1762-05-04
-  # oo Hon. Amelia Murray, d. 1774-02-08
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q7525948> , <murray.ttl#Amelia_Murray_(died_1774)> ;
-	gen:startDate "1720-04-22" .
-
-
-# ponsonby.ttl
-#<https://www.wikidata.org/wiki/Q7528299>
-  # Sir Martin Alexander Lindsay of Dowhill, 1st Baronet, 1905-08-22 – 1981-05-05
-  # oo Hon. Loelia Mary Ponsonby, 1902-02-06 - 1993-11-01
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q7528299> , <https://www.wikidata.org/wiki/Q6666556> ;
-	gen:startDate "1969-08-01" .
-
-
-# scott.ttl
-<https://www.wikidata.org/wiki/Q5236618>
-  # David Lindsay-Bethune, 15th Earl of Lindsay, 1926-02-09 - 1989
-  gen:father <https://www.wikidata.org/wiki/Q75263550> ; # William Tucker Lindesay-Bethune, 14th Earl of Lindsay, 1901-04-28 - 1985, son of https://www.wikidata.org/wiki/Q75263546 and https://www.wikidata.org/wiki/Q75263547
-  gen:mother <https://www.wikidata.org/wiki/Q75331408> . # Marjory Cross, d. 1988, daughter of https://www.wikidata.org/wiki/Q75331410 and https://www.wikidata.org/wiki/Q75851986
-  # oo Hon. Mary Clare Douglas-Scott-Montagu, 1928-06-09 - 2016-04-05
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q5236618> , <scott.ttl#Mary_Clare_Douglas-Scott-Montagu> ;
-	gen:startDate "1953-10-31" ;
-	gen:divorceDate "1968" .
 
 
 
