@@ -147,7 +147,12 @@
 
 <https://www.wikidata.org/wiki/Q2578489>
   # William Douglas, 6th Earl of Douglas, 1424 - 1440-11-24
-  gen:father <https://www.wikidata.org/wiki/Q359901> .
+  gen:father <https://www.wikidata.org/wiki/Q359901> ;
+  gen:mother <graham.ttl#Lady_Eupheme_Graham> .
+  # oo Janet Lindsay, d. 1484~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2578489> , <https://www.wikidata.org/wiki/Q75264053> ;
+	gen:startDate "1440b" .
 <https://www.wikidata.org/wiki/Q1783503>
   # Margaret Douglas, Fair Maid of Galloway, 1432 - 1474~
   gen:father <https://www.wikidata.org/wiki/Q359901> ;
@@ -2488,10 +2493,12 @@
   gen:father <#Sir_John_Douglas> .
   # oo Marjory Stewart, d. 1438
 
-<#Sir_William_Douglas_of_Lochleven>
+<https://www.wikidata.org/wiki/Q76006578>
   # Sir William Douglas, of Lochleven, d. 1421
   gen:father <#Sir_Henry_Douglas_of_Lugton_and_Lochleven> .
-  # oo Lady Elizabeth Lindsay
+  # oo Lady Marjorie Lindsay
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76006578> , <https://www.wikidata.org/wiki/Q75388331> .
 <#Helen_Douglas_of_Lochleven>
   # Helen Douglas of Lochleven
   gen:father <#Sir_Henry_Douglas_of_Lugton_and_Lochleven> .
@@ -2499,7 +2506,8 @@
 
 <#Sir_Henry_Douglas_of_Lochleven>
   # Sir Henry Douglas, of Lochleven
-  gen:father <#Sir_William_Douglas_of_Lochleven> .
+  gen:father <https://www.wikidata.org/wiki/Q76006578> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75388331> .
   # oo Elizabeth Erskine, daughter of Sir Robert Erskine of Erskine
 
 <#Sir_Robert_Douglas_of_Lochleven_(died_1513)>
@@ -2596,12 +2604,15 @@
   gen:mother <https://www.wikidata.org/wiki/Q4693073> .
   # oo Laurence, Master of Oliphant, d. 1585-03
   # oo Alexander Home, 1st Earl of Home, 1566~ - 1619-04-05, https://www.wikidata.org/wiki/Q16844561
-<#Robert_Douglas,_Master_of_Morton>
+<https://www.wikidata.org/wiki/Q75389882>
   gen:name "Robert Douglas, Master of Morton"@en ;
   gen:deathDate "1585-03" ;
   gen:father <https://www.wikidata.org/wiki/Q7617726> ;
   gen:mother <https://www.wikidata.org/wiki/Q4693073> .
-  # oo Jean Lyon of Glamis
+  # oo Jean Lyon, d. 1610-03b
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75389882> , <https://www.wikidata.org/wiki/Q75388586> ;
+	gen:startDate "1583-03-19" .
 <#Lady_Elizabeth_Douglas,_Countess_of_Erroll>
   # Lady Elizabeth Douglas
   gen:father <https://www.wikidata.org/wiki/Q7617726> ;
@@ -2641,8 +2652,8 @@
   gen:name "William Douglas, 7th Earl of Morton"@en ;
   gen:birthDate "1582" ;
   gen:deathDate "1648-08-07" ;
-  gen:father <#Robert_Douglas,_Master_of_Morton> ;
-  gen:mother <#Jean_Lyon_of_Glamis> .
+  gen:father <https://www.wikidata.org/wiki/Q75389882> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75388586> .
   # oo Lady Anne Keith, d. 1648-05-30
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7617765> , <keith.ttl#Lady_Anne_Keith_(died_1648)> ;
