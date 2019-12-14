@@ -2,54 +2,94 @@
 @prefix gen: <http://jjkoch.de/gen#> .
 @prefix wdata: <https://www.wikidata.org/wiki/> .
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://www.wikidata.org/wiki/Q75713359>
+  # Andrew Noel
+  gen:father <https://www.wikidata.org/wiki/Q75713361> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75521690> .
+  # oo Elizabeth Hopton, daughter of John Hopton
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75713359> , <https://www.wikidata.org/wiki/Q75712963> .
+  # oo Dorothy Conyers, daughter of Richard Conyers
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75713359> , <https://www.wikidata.org/wiki/Q75712973> .
 
 # cecil.ttl
-#<https://www.wikidata.org/wiki/Q18670728>
-  # Sir Andrew Noel, 1552~ - 1607
-  # oo Mabel Harington
+<https://www.wikidata.org/wiki/Q18670728>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75299389> ;
+  # Sir Andrew Noel, 1552~ - 1607-10-09
+  gen:father <https://www.wikidata.org/wiki/Q75713359> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75712963> .
+  # oo Mabel Harington, daughter of Sir James Harington
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q18670728> , <https://www.wikidata.org/wiki/Q75299393> .
+<https://www.wikidata.org/wiki/Q75713012> # -> Noel of Whellesburgh
+  # John Noel, of Whellesburgh
+  gen:father <https://www.wikidata.org/wiki/Q75713359> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75712973> .
 
 # cecil.ttl
 <#Theodosia_Noel>
+# https://www.wikidata.org/wiki/Q75257529
   gen:name "Theodosia Noel"@en ;
   gen:birthDate "1585-01-04" ;
   gen:deathDate "1616-03-20b" ;
-  gen:father <https://www.wikidata.org/wiki/Q18670728> .
-  # and Mabel Harington
+  gen:father <https://www.wikidata.org/wiki/Q18670728> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75299393> .
   # oo 1601-07-10 Edward Cecil, 1st Viscount Wimbledon, 1572-02-29 - 1638-11-16, https://www.wikidata.org/wiki/Q2976180
-
-
-
-
-
 # bentinck.ttl
-#<https://www.wikidata.org/wiki/Q51881872>
+<https://www.wikidata.org/wiki/Q51881872>
   # Edward Noel, 2nd Viscount Campden, d. 1643-03-08
-  # oo Hon. Juliana Hicks, d. 1680-11-25 (capell.ttl)
+  # 1st Baronet Noel 1611-06-29
+  # 1st Baron Noel of Ridlington, co. Rutland 1617-03-23
+  # 2nd Viscount Campden, co. Gloucester, 2nd Baron Hicks of Ilmington, co. Warwick 1629-10-18
+  gen:father <https://www.wikidata.org/wiki/Q18670728> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75299393> .
+  # oo Hon. Juliana Hicks, d. 1680-11-25
   []
     gen:spouse <https://www.wikidata.org/wiki/Q51881872> , <https://www.wikidata.org/wiki/Q75441347> ;
 	gen:startDate "1605-12-20" .
+<https://www.wikidata.org/wiki/Q76358697>
+  # Lucy Noel, d. 1616-01-20a
+  gen:father <https://www.wikidata.org/wiki/Q18670728> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75299393> .
+  # oo 1601-09-15 William Eure, 4th Lord Eure, 1579~ - 1646-06~, https://www.wikidata.org/wiki/Q75252587, son of Ralph Eure, 3rd Lord Eure (https://www.wikidata.org/wiki/Q7287471) and Mary Dawnay (https://www.wikidata.org/wiki/Q76280886)
+<https://www.wikidata.org/wiki/Q75299383>
+  # Elizabeth Noel, 1590 - 1644-12-08a
+  gen:father <https://www.wikidata.org/wiki/Q18670728> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75299393> .
+  # oo 1611-04-29 George Tuchet, 1st Earl of Castlehaven, 1551~ - 1617-02-20, https://www.wikidata.org/wiki/Q5545345 (stanley.ttl)
+  # oo 1619-03-06 Sir Pierse Crosbie, 1st Baronet, 1646-11a/1647-11b, https://www.wikidata.org/wiki/Q75299400, son of Patrick Crosbie and Catherine O'Mores
 
 # bentinck.ttl
 <#Elizabeth_Noel>
+# https://www.wikidata.org/wiki/Q75411866
   # Hon. Elizabeth Noel, d. 1638-06~
   gen:father <https://www.wikidata.org/wiki/Q51881872> ;
   gen:mother <https://www.wikidata.org/wiki/Q75441347> .
   # oo 1632b John Chaworth, 2nd Viscount Chaworth of Armagh, 1605 – 1644-06, https://www.wikidata.org/wiki/Q16274780 (bentinck.ttl)
 # brienne.ttl
-<#Mary_Noel>
-# https://www.wikidata.org/wiki/Q75441346
+<https://www.wikidata.org/wiki/Q75441346>
   # Hon. Mary Noel, b. 1609-04-20
   gen:father <https://www.wikidata.org/wiki/Q51881872> ;
   gen:mother <https://www.wikidata.org/wiki/Q75441347> .
-  # oo Sir Erasmus de la Fontaine, 1601-10-04 - 1672-03-16, #Sir_Erasmus_de_la_Fontaine
+  # oo Sir Erasmus de la Fontaine, 1601-10-04 - 1672-03-16, https://www.wikidata.org/wiki/Q75403558
 # bentinck.ttl
 <https://www.wikidata.org/wiki/Q4857668>
   gen:name "Baptist Noel, 3rd Viscount Campden"@en ;
-  # 3rd Viscount Campden, co. Gloucester, 2nd Baronet Noel, 3rd Baron Hicks of Ilmington, co. Warwick, 2nd Baron Noel of Ridlington, co. Rutland 1643-03-08
   gen:birthDate "1611" ;
   gen:deathDate "1682-10-29" ;
   gen:father <https://www.wikidata.org/wiki/Q51881872> ;
   gen:mother <https://www.wikidata.org/wiki/Q75441347> .
+  # oo Lady Anne Feilding, d. 1636-03-24, daughter of https://www.wikidata.org/wiki/Q4020000 (villiers.ttl) and https://www.wikidata.org/wiki/Q6690023
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4857668> , <https://www.wikidata.org/wiki/Q75255453> ;
+	gen:startDate "1632-12-25" .
+  # oo Ann Lovett, d. 1639-01~ (oo 1633 Edward Bourchier, 4th Earl of Bath, 1590-03-01 - 1636-03-02, https://www.wikidata.org/wiki/Q5341960 (grey.ttl)), daughter of Sir Robert Lovett and Anne Saunders
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4857668> , <https://www.wikidata.org/wiki/Q75255455> ;
+	gen:startDate "1636-06~" .
   # oo Hon. Hester Wotton, 1616-01-11 - 1655a (stanley.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q4857668> , <https://www.wikidata.org/wiki/Q75255451> ;
@@ -67,11 +107,11 @@
   # 1st Earl of Gainsborough, co. Lincoln 1682-12-01
   gen:father <https://www.wikidata.org/wiki/Q4857668> ;
   gen:mother <https://www.wikidata.org/wiki/Q75255451> .
-  # oo Lady Elizabeth Wriothesley, d. 1680
+  # oo Lady Elizabeth Wriothesley, d. 1680, https://www.wikidata.org/wiki/Q75255443
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5344630> , <seymour.ttl#Lady_Elizabeth_Wriothesley> ;
 	gen:startDate "1661-05" .
-  # oo Mary Herbert, d. 1693-04-06
+  # oo Mary Herbert, d. 1693-04-06, https://www.wikidata.org/wiki/Q75255444, daughter of https://www.wikidata.org/wiki/Q13522485 and https://www.wikidata.org/wiki/Q75582807
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5344630> ,  <herbert.ttl#Mary_Herbert_(died_1693)> ;
 	gen:startDate "1683-04-23" .
@@ -93,10 +133,16 @@
 	gen:startDate "1671-05-14" .
 # bentinck.ttl
 <#Juliana_Noel>
+# https://www.wikidata.org/wiki/Q75242360
   # Hon. Juliana Noel, 1646-02-04 - 1667-09-14
   gen:father <https://www.wikidata.org/wiki/Q4857668> ;
   gen:mother <https://www.wikidata.org/wiki/Q75255451> .
   # oo 1664-07-30 William Alington, 3rd Baron Alington of Killard, 1641b - 1685-02-01, https://www.wikidata.org/wiki/Q8004320
+<https://www.wikidata.org/wiki/Q75251922>
+  # Hon. Elizabeth Noel, 1654~ - 1719-07-30
+  gen:father <https://www.wikidata.org/wiki/Q4857668> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75255451> .
+  # oo 1677-08-16 Charles Berkeley, 2nd Earl of Berkeley, 1649-04-08 - 1710-09-24, https://www.wikidata.org/wiki/Q5075564, son of https://www.wikidata.org/wiki/Q5536924 (grey.ttl) and https://www.wikidata.org/wiki/Q75271903
 # bentinck.ttl
 <https://www.wikidata.org/wiki/Q15623928>
   # Hon. Catherine Wriothesley Noel, 1657-08-10 - 1733-01-24
@@ -108,27 +154,39 @@
   # Hon. Baptist Noel, 1658-11-02 - 1690-07-28
   gen:father <https://www.wikidata.org/wiki/Q4857668> ;
   gen:mother <https://www.wikidata.org/wiki/Q56753680> .
-  # oo Susannah Fanshawe
+  # oo Susannah Fanshawe, d. 1714
   []
     gen:spouse <https://www.wikidata.org/wiki/Q4857671> , <https://www.wikidata.org/wiki/Q51881855> ;
 	gen:startDate "1682" .
+<https://www.wikidata.org/wiki/Q75713423>
+  # Hon. John Noel, 1659-11-07 - 1718-12-26
+  gen:father <https://www.wikidata.org/wiki/Q4857668> ;
+  gen:mother <https://www.wikidata.org/wiki/Q56753680> .
+  # oo Hon. Elizabeth Sherard, d. 1747-03-01, daughter of Bennet Sherard, 2nd Baron Sherard (1621-12-18 - 1700-01-30, https://www.wikidata.org/wiki/Q75259490, son of William Sherard, 1st Baron Sherard (1588-08-01 - 1640-04-16, 1st Baron Sherard, of Leitrim 1627-07-10, https://www.wikidata.org/wiki/Q75340918, son of Francis Sherard and Anne Moore) and oo 1621 Abigail Cave (d. 1659, https://www.wikidata.org/wiki/Q75340931, daughter of Cecil Cave and Anne Bennet))
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75713423> , <https://www.wikidata.org/wiki/Q75713430> ;
+	gen:startDate "1696-06-11" .
 
 # bentinck.ttl
 <https://www.wikidata.org/wiki/Q8038357>
   # Wriothesley Baptist Noel, 2nd Earl of Gainsborough, 1661 - 1690-09-21
   gen:father <https://www.wikidata.org/wiki/Q5344630> ;
   gen:mother <seymour.ttl#Lady_Elizabeth_Wriothesley> .
-  # oo Hon. Catherine Greville, d. 1704-02-07
+  # oo Hon. Catherine Greville, d. 1704-02-07, https://www.wikidata.org/wiki/Q75255448
   []
     gen:spouse <https://www.wikidata.org/wiki/Q8038357> , <greville.ttl#Catherine_Greville> ;
 	gen:startDate "1687-12-30" .
+<https://www.wikidata.org/wiki/Q75318842>
+  # Lady Frances Noel, d. 1684-09-29
+  gen:father <https://www.wikidata.org/wiki/Q5344630> ;
+  gen:mother <seymour.ttl#Lady_Elizabeth_Wriothesley> .
+  # oo 1683-08-27 Simon Digby, 4th Baron Digby, 1657-07-18 - 1686-01-10, https://www.wikidata.org/wiki/Q7518617
 # bentinck.ttl
-<#Lady_Jane_Noel>
-# https://www.wikidata.org/wiki/Q75318846
+<https://www.wikidata.org/wiki/Q75318846>
   # Lady Jane Noel, d. 1733-09
   gen:father <https://www.wikidata.org/wiki/Q5344630> ;
   gen:mother <seymour.ttl#Lady_Elizabeth_Wriothesley> .
-  # oo 1686-05-22 William Digby, 5th Baron Digby, 1661 - 1752-11-29, https://www.wikidata.org/wiki/Q8007836 (bentinck.ttl)
+  # oo 1686-05-22 William Digby, 5th Baron Digby, 1661 - 1752-11-29, https://www.wikidata.org/wiki/Q8007836
 # bentinck.ttl
 <https://www.wikidata.org/wiki/Q75251993>
   # Juliana Noel, 1672-05-19 - 1750-10-17
@@ -141,139 +199,314 @@
   # 6th Baron Hicks of Ilmington, co. Warwick, 6th Viscount Campden, co. Gloucester, 5th Baron Noel of Ridlington, co. Rutland, 3rd Earl of Gainsborough, co. Lincoln, 3rd Baron Noel of Titchfield, co. Southampton 1690-09-21
   gen:father <https://www.wikidata.org/wiki/Q4857671> ;
   gen:mother <https://www.wikidata.org/wiki/Q51881855> .
-  # oo Lady Dorothy Manners, 1681-09-13/1690~ - 1734-04-27
+  # oo Lady Dorothy Manners, 1681-09-13/1690~ - 1734-04-27, https://www.wikidata.org/wiki/Q75255450
   []
     gen:spouse <https://www.wikidata.org/wiki/Q4857667> , <manners.ttl#Lady_Dorothy_Manners> ;
 	gen:startDate "1707-02-13b" .
+<https://www.wikidata.org/wiki/Q75712977>
+  # Thomas Noel, 1703 - 1788-06-18
+  gen:father <https://www.wikidata.org/wiki/Q75713423> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75713430> .
+  # oo Elizabeth Chapman, d. 1771-12-13, daughter of Christopher Chapman
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75712977> , <https://www.wikidata.org/wiki/Q75540489> ;
+	gen:startDate "1756-11-06" .
+<https://www.wikidata.org/wiki/Q75713433>
+  # Bridget Noel, d. 1729-08-22
+  gen:father <https://www.wikidata.org/wiki/Q75713423> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75713430> .
+  # oo 1724-11-20 David Colyear, Viscount Milsington, 1698-12-17 - 1729-03-10, https://www.wikidata.org/wiki/Q75713436, son of https://www.wikidata.org/wiki/Q5232496 (osborne.ttl) and https://www.wikidata.org/wiki/Q275061
 
 # bentinck.ttl
 <#Lady_Elizabeth_Noel>
+# https://www.wikidata.org/wiki/Q75248662
   # Lady Elizabeth Noel, 1688~ - 1737-03-19
   gen:father <https://www.wikidata.org/wiki/Q8038357> ;
   gen:mother <greville.ttl#Catherine_Greville> .
   # oo 1704-06-09 Henry Bentinck, 1st Duke of Portland, 1682-03-17 - 1726-07-04, https://www.wikidata.org/wiki/Q126107
 # beaufort.ttl
 <#Lady_Rachel_Noel>
+# https://www.wikidata.org/wiki/Q75253582
   # Lady Rachel Noel, d. 1709-09-13
-  gen:father <https://www.wikidata.org/wiki/Q8038357> .
+  gen:father <https://www.wikidata.org/wiki/Q8038357> ;
+  gen:mother <greville.ttl#Catherine_Greville> .
   # oo 1706-02-26 Henry Somerset, 2nd Duke of Beaufort, 1684-04-02 - 1714-05-24, https://www.wikidata.org/wiki/Q3784998
+<https://www.wikidata.org/wiki/Q4857670>
+  # Baptist Noel, 4th Earl of Gainsborough, 1708 - 1751-03-21
+  gen:father <https://www.wikidata.org/wiki/Q4857667> ;
+  gen:mother <manners.ttl#Lady_Dorothy_Manners> .
+  # oo Elizabeth Chapman, d. 1771-12-13, daughter of Christopher Chapman (https://www.wikidata.org/wiki/Q75509654)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4857670> , <https://www.wikidata.org/wiki/Q75540489> ;
+	gen:startDate "1728" .
 # bentinck.ttl
 <#Lady_Susan_Noel>
+# https://www.wikidata.org/wiki/Q75271040
   # Lady Susan Noel, 1710 - 1758-06-20
   gen:father <https://www.wikidata.org/wiki/Q4857667> ;
   gen:mother <manners.ttl#Lady_Dorothy_Manners> .
   # oo 1724-03-12 Anthony Ashley Cooper, 4th Earl of Shaftesbury, 1711-02-09 – 1771-05-27, https://www.wikidata.org/wiki/Q4772032
-
-# bentinck.ttl
-<#Lady_Norah_Ida_Emily_Noel>
-  # Lady Norah Ida Emily Noel, 1881-01-04 - 1939-05-23
-  gen:father <https://www.wikidata.org/wiki/Q5081259> .
-  # and Mary Elizabeth Dease
-  # oo 1915-09-08 Robert Charles Bentinck, 6th Count Bentinck, 1875-12-05 - 1932-03-12, #Robert_Charles_Bentinck,_6th_Count_Bentinck
-
+<https://www.wikidata.org/wiki/Q36624672>
+  # Hon. James Noel, 1711 - 1752
+  gen:father <https://www.wikidata.org/wiki/Q4857667> ;
+  gen:mother <manners.ttl#Lady_Dorothy_Manners> .
 
 # douglas.ttl
-<#Lady_Jane_Noel>
-# https://www.wikidata.org/wiki/Q75389729
+<https://www.wikidata.org/wiki/Q75389729>
   # Lady Jane Noel, 1733 - 1811
-  gen:father <https://www.wikidata.org/wiki/Q4857670> .
-  # and Elizabeth Chapman
-  # oo 1754-10-08 Gerard Anne Edwardes, 1734-03-28 - 1773-10-29, douglas.ttl#Gerard_Anne_Edwardes
+  gen:father <https://www.wikidata.org/wiki/Q4857670> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75540489> .
+  # oo 1754-10-08 Gerard Anne Edwardes, 1734-03-28 - 1773-10-29, https://www.wikidata.org/wiki/Q75389724 (douglas.ttl)
+<https://www.wikidata.org/wiki/Q75539101>
+  # Lady Juliana Noel, 1734 - 1760-12-18
+  gen:father <https://www.wikidata.org/wiki/Q4857670> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75540489> .
+  # oo 1760-02-07 George Evans, 3rd Baron Carbery, d. 1783-05-26, https://www.wikidata.org/wiki/Q23583492 or https://www.wikidata.org/wiki/Q75539097, son of George Evans, 2nd Baron Carbery (d. 1759-02-02, https://www.wikidata.org/wiki/Q23583486, son of George Evans, 1st Baron Carbery (1680~ - 1749-08-28, 1st Baron Carbery, of Carbery, co. Cork 1715-05-09, https://www.wikidata.org/wiki/Q5539041, son of Rt. Hon. George Evans (https://www.wikidata.org/wiki/Q75456138) and Mary Eyre (https://www.wikidata.org/wiki/Q75538470)) and oo 1703-05-04 Anne Stafford (d. 1757-12-30, https://www.wikidata.org/wiki/Q75539089, daughter of William Stafford)) and 1732-05-23 Hon. Frances FitzWilliam (d. 1789-07-30, https://www.wikidata.org/wiki/Q75539095, daughter of Richard FitzWilliam, 5th Viscount FitzWilliam of Merrion (1677~ – 1743-06-06, https://www.wikidata.org/wiki/Q7325690 (see herbert.ttl), son of https://www.wikidata.org/wiki/Q7789623 and https://www.wikidata.org/wiki/Q76158720) and oo 1704-02-26 Frances Shelley (1672~ - 1771-11-15~, https://www.wikidata.org/wiki/Q75238007, daughter of Sir John Shelley, 3rd Baronet (d. 1703-04-25, https://www.wikidata.org/wiki/Q75238005, son of Sir Charles Shelley, 2nd Baronet and Elizabeth Weston) and Bridget Neville (https://www.wikidata.org/wiki/Q75238004, daughter of https://www.wikidata.org/wiki/Q5542836 and https://www.wikidata.org/wiki/Q75254326)))
+<https://www.wikidata.org/wiki/Q75486576>
+  # Lady Lucy Noel
+  gen:father <https://www.wikidata.org/wiki/Q4857670> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75540489> .
+  # oo 1765-04-13 Sir Horatio Mann, 2nd Baronet, 1744-02-02 - 1814-04-02, son of Galfridus Mann and Sarah Gregory
+<https://www.wikidata.org/wiki/Q75713492>
+  # Baptist Noel, 5th Earl of Gainsborough, 1740-06-08 - 1759-05-27
+  gen:father <https://www.wikidata.org/wiki/Q4857670> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75540489> .
+<https://www.wikidata.org/wiki/Q7609402>
+  # Henry Noel, 6th Earl of Gainsborough, 1743 - 1798-04-08
+  gen:father <https://www.wikidata.org/wiki/Q4857670> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75540489> .
 
+
+# Noel of Whellesburgh
+<https://www.wikidata.org/wiki/Q75713012>
+  # John Noel, of Whellesburgh
+  gen:father <https://www.wikidata.org/wiki/Q75713359> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75712973> .
+  # oo Anne Fowler
+
+<https://www.wikidata.org/wiki/Q76184036>
+  # William Noel, of Kirkby Mallory, d.1641
+  gen:father <https://www.wikidata.org/wiki/Q75713012> .
+  # oo Frances Fulwood
+
+<https://www.wikidata.org/wiki/Q76019997>
+  # Sir Varney Noel, 1st Baronet, d. 1670
+  # 1st Baronet Noel, of Kirkby Mallery 1660-07-06
+  gen:father <https://www.wikidata.org/wiki/Q76184036> .
+  # oo Elizabeth Dixie, daughter of Sir Wolstan Dixie (https://www.wikidata.org/wiki/Q7529868 (willoughby.ttl) or https://www.wikidata.org/wiki/Q76020001)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76019997> , <https://www.wikidata.org/wiki/Q76019999> ;
+	gen:startDate "1641b" .
+
+<https://www.wikidata.org/wiki/Q75240638>
+  # Sir William Noel, 2nd Baronet, 1642~ - 1675-04-23
+  gen:father <https://www.wikidata.org/wiki/Q76019997> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76019999> .
+  # oo Hon. Margaret Lovelace, 1644~ - 1671-04-14, daughter of John Lovelace, 2nd Baron Lovelace of Hurley (d. 1670-11-14, https://www.wikidata.org/wiki/Q76019992) and oo 1638-07-11 Anne Wentworth, 7th Baroness Wentworth (1623-07-29 - 1697-05-07, 7th Baroness Wentworth, 11th Lord Despenser 1686-04-23 de jure, https://www.wikidata.org/wiki/Q76019991, daughter of Thomas Wentworth, 1st Earl of Cleveland (1594 - 1667-03-25, 9th Lord Despenser de jure, 4th Lord Wentworth 1593-08-16, https://www.wikidata.org/wiki/Q5609974, son of https://www.wikidata.org/wiki/Q75803714 and https://www.wikidata.org/wiki/Q75782785) and oo 1611 Anne Croftes (1623-07-29 -  1638-01-17, https://www.wikidata.org/wiki/Q75879143, daughter of Sir John Croftes and Mary Shirley))
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75240638> , <https://www.wikidata.org/wiki/Q76019996> ;
+	gen:startDate "1660-10-30" .
+  # oo Frances Ward, d. 1698-03-13, daughter of https://www.wikidata.org/wiki/Q5940213 (grey.ttl) and https://www.wikidata.org/wiki/Q58806800 (or https://www.wikidata.org/wiki/Q75240566)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75240638> , <https://www.wikidata.org/wiki/Q75240637> ;
+	gen:startDate "1672-07-09" .
+
+<https://www.wikidata.org/wiki/Q76020002>
+  # Sir Thomas Noel, 3rd Baronet, 1662 - 1688
+  gen:father <https://www.wikidata.org/wiki/Q75240638> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76019996> .
+  # oo Anne Whitlock, d. 1737-01-08, daughter of Sir William Whitlock
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76020002> , <https://www.wikidata.org/wiki/Q76020003> .
+<https://www.wikidata.org/wiki/Q76020006>
+  # Sir John Noel, 4th Baronet, 1668~ - 1697-07-01
+  gen:father <https://www.wikidata.org/wiki/Q75240638> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76019996> .
+  # oo Mary Clobery, daughter of Sir John Clobery
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76020006> , <https://www.wikidata.org/wiki/Q76020007> .
+<https://www.wikidata.org/wiki/Q75240640>
+  # Frances Noel, 1673-04-14 - 1751-02
+  gen:father <https://www.wikidata.org/wiki/Q75240638> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75240637> .
+  # oo Ralph Sneyd, b. 1669-12-22, https://www.wikidata.org/wiki/Q75525602, son of Ralph Sneyd
+  # oo 1714b Sir Charles Skrimshire, d. 1714b, https://www.wikidata.org/wiki/Q75467878
+  # oo 1714-04 Sir John Chester, 4th Baronet, 1666-06-24 - 1726-02-06, https://www.wikidata.org/wiki/Q75462099, son of Sir Anthony Chester, 3rd Baronet and Mary Cranmer
+  # oo 1726a Charles Adderley, of Hams Hall, 1667-09-28 - 1746-02-02, https://www.wikidata.org/wiki/Q75467879, son of Arden Adderley and Mary Draper
+
+<https://www.wikidata.org/wiki/Q7526352>
+  owl:sameAs <https://www.wikidata.org/wiki/Q76020010> ;
+  # Sir Clobery Noel, 5th Baronet, 1695~ - 1733-07-30
+  gen:father <https://www.wikidata.org/wiki/Q76020006> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76020007> .
+  # oo Elizabeth Rowney, d. 1743-06-25, daughter of Thomas Rowney
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7526352> , <https://www.wikidata.org/wiki/Q76020011> ;
+	gen:startDate "1714-08-24" .
+<https://www.wikidata.org/wiki/Q75271934>
+  # William Noel, 1695-03-19 - 1762-12-08
+  gen:father <https://www.wikidata.org/wiki/Q76020006> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76020007> .
+  # oo Elizabeth Trollope, daughter of Sir Thomas Trollope, 3rd Baronet (d. 1729-11-22, https://www.wikidata.org/wiki/Q75736622, son of Thomas Trollope (https://www.wikidata.org/wiki/Q75736616) and Anne Collins (https://www.wikidata.org/wiki/Q75736621)) and oo 1690 Susannah Clobery (d. 1724-06-02a/1725b, https://www.wikidata.org/wiki/Q75736642, daughter of Sir John Clobery (https://www.wikidata.org/wiki/Q75736570) and Anne Cranmer (https://www.wikidata.org/wiki/Q75736572))
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75271934> , <https://www.wikidata.org/wiki/Q75737000> .
 
 # shirley.ttl
-<#Edward_Noel,_1st_Viscount_Wentworth>
+<https://www.wikidata.org/wiki/Q75271335>
   # Edward Noel, 1st Viscount Wentworth, 1715-08-30 – 1774-10-31
   # 6th Baronet Noel 1733-07-30
   # 13th Lord Despenser, de jure 1745-07-18
   # 9th Lord Wentworth 1745-07-18
   # 1st Viscount Wentworth of Wellesborough, co. Leicester 1762-05-05
-  gen:father <https://www.wikidata.org/wiki/Q7526352> .
-  # and Elizabeth Rowney
+  gen:father <https://www.wikidata.org/wiki/Q7526352> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76020011> .
   # oo Judith Lamb, d. 1761-12-03, daughter of William Lamb
   []
-    gen:spouse <#Edward_Noel,_1st_Viscount_Wentworth> , <#Judith_Lamb> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75271335> , <https://www.wikidata.org/wiki/Q75271337> ;
 	gen:startDate "1744-07-20" .
+<https://www.wikidata.org/wiki/Q75271932>
+  # Susanna Maria Noel, d. 1760-02-14
+  gen:father <https://www.wikidata.org/wiki/Q75271934> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75737000> .
+  # oo 1740-05-03 Thomas Hill (Harwood), of Shenstone, 1694~ - 1782-06, son of Thomas Harwood and Margaret Hill
+  # -> Noel Hill, 1st Baron Berwick of Attingham, 1745-04-16 - 1789-01-06, 1st Baron Berwick of Attingham, co. Shropshire 1784-05-19, https://www.wikidata.org/wiki/Q7046991 or https://www.wikidata.org/wiki/Q75268251
+  #   oo 1768-11-17 Anna Vernon, d. 1797-03-23, https://www.wikidata.org/wiki/Q75271580, daughter of Henry Vernon (b. 1718-08-13, https://www.wikidata.org/wiki/Q75248700, son of Henry Vernon (https://www.wikidata.org/wiki/Q26774901) and Penelope Phillips (https://www.wikidata.org/wiki/Q75448107)) and oo 1743-12-26 Lady Henrietta Wentworth (1720 - 1786-04-12, https://www.wikidata.org/wiki/Q75420760, daughter of https://www.wikidata.org/wiki/Q3990734 (grosvenor.ttl) and Anne Johnson (https://www.wikidata.org/wiki/Q75448109))
+<https://www.wikidata.org/wiki/Q75945248>
+  # Frances Noel, d. 1760-12-15
+  gen:father <https://www.wikidata.org/wiki/Q75271934> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75737000> .
+  # oo 1757-07-03 Bennet Sherard, 3rd Earl of Harborough, 1709-09-03 - 1770-02-23, https://www.wikidata.org/wiki/Q75945227, son of Philip Sherard, 2nd Earl of Harborough (1680~ – 1750-07-20, https://www.wikidata.org/wiki/Q7184375 or https://www.wikidata.org/wiki/Q75945229, son of Bennet Sherard (1649 - 1701, https://www.wikidata.org/wiki/Q75966269, son of Hon. Philip Sherard (b. 1634, https://www.wikidata.org/wiki/Q75608777, son of William Sherard, 1st Baron Sherard and Abigail Cave)) and oo Hon. Dorothy Fairfax (d. 1744, https://www.wikidata.org/wiki/Q75966121, daughter of Henry Fairfax, 4th Lord Fairfax of Cameron (https://www.wikidata.org/wiki/Q5721051) and Frances Barwick (https://www.wikidata.org/wiki/Q75966041))) and oo Anne Pedley (https://www.wikidata.org/wiki/Q75945232, daughter of Nicholas Pedley)
 
+<https://www.wikidata.org/wiki/Q7792758>
+  # Thomas Noel, 2nd Viscount Wentworth of Wellesborough, 1745-11-18 - 1815-04-17
+  gen:father <https://www.wikidata.org/wiki/Q75271335> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75271337> .
+  # oo Lady Mary Henley, 1753 - 1814-06-29, daughter of Robert Henley, 1st Earl of Northington (1708~ - 1772-01-14, 1st Baron Henley of Grange in the County of Southampton 1760, 1st Earl of Northington 1764, https://www.wikidata.org/wiki/Q7345402) oo 1743 Jane Huband (daughter of Sir John Huband)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7792758> , <https://www.wikidata.org/wiki/Q75930451> ;
+	gen:startDate "1788-02-02" .
+<https://www.wikidata.org/wiki/Q75271334>
+  # Hon. Judith Noel, 1751 - 1822-01-22
+  gen:father <https://www.wikidata.org/wiki/Q75271335> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75271337> .
+  # oo 1777-01-09 Sir Ralph Noel, 6th Baronet, 1747-07-28 - 1825-03-19, https://www.wikidata.org/wiki/Q26326946, son of Sir Ralph Milbanke, 5th Baronet (https://www.wikidata.org/wiki/Q75467180) and Elizabeth Hedworth (https://www.wikidata.org/wiki/Q75467181)
+  # -> Anne Isabella Noel, 11th Baroness Wentworth, 1792-05-17 - 1860-05-16, 11th Baroness Wentworth suo jure, 15th Baroness le Despenser, de jure 1856-11-12, https://www.wikidata.org/wiki/Q272161
+  #   oo 1815-01-02 (div 1816) George Gordon Byron, 6th Baron Byron of Rochdale, 1788-01-22 – 1824-04-19, George Gordon Noel-Byron 1815-04, George Gordon Noel 1822-02-27, https://www.wikidata.org/wiki/Q5679, son of John Byron (https://www.wikidata.org/wiki/Q6217401) and Catherine Gordon (https://www.wikidata.org/wiki/Q63645174)
+<https://www.wikidata.org/wiki/Q75517249>
+  # Hon. Elizabeth Noel, d. 1779-01-21
+  gen:father <https://www.wikidata.org/wiki/Q75271335> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75271337> .
+  # oo 1777-06-19 Sir James Bland Lamb, 1st Baronet, 1752-06-08 - 1824-10-13, https://www.wikidata.org/wiki/Q7527448 or https://www.wikidata.org/wiki/Q75262573, son of George Burgess (d. 1786-03-16, https://www.wikidata.org/wiki/Q75517244) and oo 1748-12 Hon. Anne Whichnour Somerville (1725 - 1778, https://www.wikidata.org/wiki/Q75517246, daughter of James Somerville, 12th Lord Somerville (https://www.wikidata.org/wiki/Q75517247) and Anne Bayntun (https://www.wikidata.org/wiki/Q75428189))
 # shirley.ttl
 <#Sophia-Susanna_Noel>
-  # Hon. Sophia-Susanna Noel, d. 1782-06-28
-  gen:father <#Edward_Noel,_1st_Viscount_Wentworth> ;
-  gen:mother <#Judith_Lamb> .
+# https://www.wikidata.org/wiki/Q75304295
+  # Hon. Sophia-Susanna Noel, 1758-03-24 - 1782-06-28
+  gen:father <https://www.wikidata.org/wiki/Q75271335> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75271337> .
   # oo 1777-07 Nathaniel Curzon, 2nd Baron Scarsdale, 1752-09-27 – 1837, https://www.wikidata.org/wiki/Q6969565 (shirley.ttl)
 
 
-# grenville.ttl
-<https://www.wikidata.org/wiki/Q15627549>
-  # Lady Mary Berkeley
-  gen:father <https://www.wikidata.org/wiki/Q5075564> .
-  # and Hon. Elizabeth Noel
-  # oo Thomas Chambers, #Thomas_Chambers
+# ----
+#<https://www.wikidata.org/wiki/Q4857643>
+  # Baptist Hicks, 1st Viscount Campden, 1551~ - 1629-10-18
+  # 1st Baronet Hicks 1620-07-01
+  # 1st Baron Hicks of Ilmington, co. Warwick, 1st Viscount Campden, co. Gloucester 1628-05-05
+  # oo Elizabeth May, d. 1643-06-26, daughter of Richard May and Mary Hillersdon
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4857643> , <https://www.wikidata.org/wiki/Q75492387> ;
+	gen:startDate "1584-09-06" .
+
+<https://www.wikidata.org/wiki/Q75441347>
+  # Hon. Juliana Hicks, d. 1680-11-25
+  gen:father <https://www.wikidata.org/wiki/Q4857643> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75492387> .
+  # oo 1605-12-20 Edward Noel, 2nd Viscount Campden, d. 1643-03-08, https://www.wikidata.org/wiki/Q51881872
+<https://www.wikidata.org/wiki/Q75536008>
+  # Hon. Mary Hicks
+  gen:father <https://www.wikidata.org/wiki/Q4857643> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75492387> .
+  # oo 1606-12-04 Sir Charles Morrison, 1st Baronet, 1587-04-18 - 1628-08-20, https://www.wikidata.org/wiki/Q7526263
+# ----
+#<https://www.wikidata.org/wiki/Q7526263>
+  # Sir Charles Morrison, 1st Baronet, 1587-04-18 - 1628-08-20
+  # 1st Baronet Morrison, of Cashiobury 1611-06-29
+  # oo Hon. Mary Hicks
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7526263> , <https://www.wikidata.org/wiki/Q75536008> ;
+	gen:startDate "1606-12-04" .
+
+<#Elizabeth_Morrison>
+# https://www.wikidata.org/wiki/Q75400969
+  # Elizabeth Morrison, 1611-03-23 - 1661-01-26
+  gen:father <https://www.wikidata.org/wiki/Q7526263> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75536008> .
+  # oo 1627-11-28 Arthur Capell, 1st Baron Capell of Hadham, 1608-02-20 – 1649-03-09, https://www.wikidata.org/wiki/Q1960974
 
 
 # bentinck.ttl
 # ----
 <https://www.wikidata.org/wiki/Q51881855>
-  # Susannah Fanshawe
+  # Susannah Fanshawe, d. 1714
   gen:father <https://www.wikidata.org/wiki/Q20015699> .
-  # and Margaret Heath
+  # and Margaret Heath, daughter of Sir Edward Heath of Cottesmore
   # oo 1682 Hon. Baptist Noel, 1658-11-02 - 1690-07-28, https://www.wikidata.org/wiki/Q4857671
 
 
 # brienne.ttl
 # ----
-#<#Sir_Erasmus_de_la_Fontaine>
+#<https://www.wikidata.org/wiki/Q75403558>
   # Sir Erasmus de la Fontaine, 1601-10-04 - 1672-03-16
   # oo Hon. Mary Noel, b. 1609-04-20
   []
-    gen:spouse <#Sir_Erasmus_de_la_Fontaine> , <#Mary_Noel> .
+    gen:spouse <https://www.wikidata.org/wiki/Q75403558> , <https://www.wikidata.org/wiki/Q75441346> .
 
 <#Mary_de_la_Fontaine>
+# https://www.wikidata.org/wiki/Q75403556
   # Mary de la Fontaine, d. 1671-10a
-  gen:father <#Sir_Erasmus_de_la_Fontaine> ;
-  gen:mother <#Mary_Noel> .
+  gen:father <https://www.wikidata.org/wiki/Q75403558> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75441346> .
   # oo Thomas Beaumont, 3rd Viscount Beaumont of Swords, 1634-04-10 - 1702-06-11, brienne.ttl#Thomas_Beaumont,_3rd_Viscount_Beaumont_of_Swords
 
 
-# fitzroy.ttl
-# ----
-<#Frances_Digby>
-# https://www.wikidata.org/wiki/Q75318843
-  # Hon. Frances Digby, d. 1729-05-03
-  gen:father <https://www.wikidata.org/wiki/Q7518617> .
-  # and Lady Frances Noel, d. 1684-09-29, https://www.wikidata.org/wiki/Q75318842, daughter of https://www.wikidata.org/wiki/Q5344630 and https://www.wikidata.org/wiki/Q75255443 (Lady Elizabeth Wriothesley)
-  # oo 1706-03-07 James Scudamore, 3rd Viscount Scudamore, 1684-07-15 - 1716-12-02, https://www.wikidata.org/wiki/Q6142883
-# ----
-#<https://www.wikidata.org/wiki/Q6142883>
-  # James Scudamore, 3rd Viscount Scudamore, 1684-07-15 - 1716-12-02
-  # oo Hon. Frances Digby, d. 1729-05-03
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q6142883> , <#Frances_Digby> ;
-	gen:startDate "1706-03-07" .
 
-<https://www.wikidata.org/wiki/Q18671175>
-  # Hon. Frances Scudamore, 1711-08-01 - 1750-02-15
-  gen:father <https://www.wikidata.org/wiki/Q6142883> ;
-  gen:mother <#Frances_Digby> .
-  # oo 1729-06-28 (div 1744) Henry Somerset-Scudamore, 3rd Duke of Beaufort, 1707-03-23 - 1745-02-26, https://www.wikidata.org/wiki/Q7585516
-  # oo 1744 Charles FitzRoy-Scudamore, 1713~ - 1782-08-22, https://www.wikidata.org/wiki/Q5077689
 
 
 # bentinck.ttl
 # ----
+<https://www.wikidata.org/wiki/Q20639035>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75318830> .
+  # Kildare Digby, 2nd Baron Digby
+  # oo Mary Gardiner
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q20639035> , <https://www.wikidata.org/wiki/Q75318832> .
+
+<https://www.wikidata.org/wiki/Q7518617>
+  # Simon Digby, 4th Baron Digby, 1657-07-18 - 1686-01-10
+  gen:father <https://www.wikidata.org/wiki/Q20639035> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75318832> .
+  # oo Lady Frances Noel, d. 1684-09-29
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7518617> , <https://www.wikidata.org/wiki/Q75318842> .
 <https://www.wikidata.org/wiki/Q8007836>
   # William Digby, 5th Baron Digby, 1661 - 1752-11-29
-  gen:father <https://www.wikidata.org/wiki/Q20639035> .
-  # and Mary Gardiner
+  gen:father <https://www.wikidata.org/wiki/Q20639035> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75318832> .
   # oo Lady Jane Noel, d. 1733-09
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q8007836> , <#Lady_Jane_Noel> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q8007836> , <https://www.wikidata.org/wiki/Q75318846> ;
 	gen:startDate "1686-05-22" .
 
+# fitzroy.ttl
+<#Frances_Digby>
+# https://www.wikidata.org/wiki/Q75318843
+  # Hon. Frances Digby, d. 1729-05-03
+  gen:father <https://www.wikidata.org/wiki/Q7518617> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75318842> .
+  # oo 1706-03-07 James Scudamore, 3rd Viscount Scudamore, 1684-07-15 - 1716-12-02, https://www.wikidata.org/wiki/Q6142883
 <https://www.wikidata.org/wiki/Q20639034>
   # Hon. Edward Digby, d. 1746-10-02
   gen:father <https://www.wikidata.org/wiki/Q8007836> ;
-  gen:mother <#Lady_Jane_Noel> .
+  gen:mother <https://www.wikidata.org/wiki/Q75318846> .
   # oo Charlotte Fox, d. 1778-11
   []
     gen:spouse <https://www.wikidata.org/wiki/Q20639034> , <scott.ttl#Charlotte_Fox> ;
@@ -281,7 +514,7 @@
 <#Wriothesly_Digby>
   # Hon. Wriothesly Digby, d. 1767-05
   gen:father <https://www.wikidata.org/wiki/Q8007836> ;
-  gen:mother <#Lady_Jane_Noel> .
+  gen:mother <https://www.wikidata.org/wiki/Q75318846> .
   # oo Mary Cotes, b. 1715-06-09
   []
     gen:spouse <#Wriothesly_Digby> , <shirley.ttl#Mary_Cotes> .
@@ -308,6 +541,20 @@
   gen:father <https://www.wikidata.org/wiki/Q16169303> ;
   gen:mother <#Mary_Knowler> .
   # oo 1796-07-22 William Wingfield-Baker, d. 1858-03-21, https://www.wikidata.org/wiki/Q8020473
+# ----
+#<https://www.wikidata.org/wiki/Q6142883>
+  # James Scudamore, 3rd Viscount Scudamore, 1684-07-15 - 1716-12-02
+  # oo Hon. Frances Digby, d. 1729-05-03
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6142883> , <#Frances_Digby> ;
+	gen:startDate "1706-03-07" .
+
+<https://www.wikidata.org/wiki/Q18671175>
+  # Hon. Frances Scudamore, 1711-08-01 - 1750-02-15
+  gen:father <https://www.wikidata.org/wiki/Q6142883> ;
+  gen:mother <#Frances_Digby> .
+  # oo 1729-06-28 (div 1744) Henry Somerset-Scudamore, 3rd Duke of Beaufort, 1707-03-23 - 1745-02-26, https://www.wikidata.org/wiki/Q7585516
+  # oo 1744 Charles FitzRoy-Scudamore, 1713~ - 1782-08-22, https://www.wikidata.org/wiki/Q5077689
 # ----
 #<https://www.wikidata.org/wiki/Q8020473>
   # William Wingfield-Baker, d. 1858-03-21

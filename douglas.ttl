@@ -2,6 +2,7 @@
 @prefix gen: <http://jjkoch.de/gen#> .
 @prefix wdata: <https://www.wikidata.org/wiki/> .
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 #<https://www.wikidata.org/wiki/Q4170065>
   # William I, Lord of Douglas, d. 1214
@@ -764,7 +765,7 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q2579421> , <#Lucretia_Prosser> ;
 	gen:startDate "1777-05" .
-<#Gerard_Anne_Edwardes> # -> Noel of Gainborough
+<https://www.wikidata.org/wiki/Q75389724> # -> Noel of Gainborough
   # Gerard Anne Edwardes, 1734-03-28 - 1773-10-29
   gen:father <https://www.wikidata.org/wiki/Q2579891> .
   # and Mary Edwardes
@@ -1076,25 +1077,34 @@
 
 # ====
 # Noel of Gainborough
-
-<#Gerard_Anne_Edwardes>
+<https://www.wikidata.org/wiki/Q75389724>
   # Gerard Anne Edwardes, 1734-03-28 - 1773-10-29
-  gen:father <https://www.wikidata.org/wiki/Q2579891> .
-  # and Mary Edwardes
+  gen:father <https://www.wikidata.org/wiki/Q2579891> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75389725> . # Mary Edwardes, d. 1743-08-23, daughter of Francis Edwardes (https://www.wikidata.org/wiki/Q75389728)
   # oo Lady Jane Noel, 1733 - 1811
   []
-    gen:spouse <#Gerard_Anne_Edwardes> , <noel.ttl#Lady_Jane_Noel> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75389724> , <https://www.wikidata.org/wiki/Q75389729> ;
 	gen:startDate "1754-10-08" .
 
 <https://www.wikidata.org/wiki/Q7526957>
   # Sir Gerard Noel Noel, 2nd Baronet, 1759-07-17 - 1838-02-25
+  # Gerard Noel Edwardes
+  # Gerard Noel Noel 1798-05-05
   # 2nd Baronet Middleton, of Barham Court and Teston, Kent 1813-06-17
-  gen:father <#Gerard_Anne_Edwardes> ;
-  gen:mother <noel.ttl#Lady_Jane_Noel> .
+  gen:father <https://www.wikidata.org/wiki/Q75389724> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75389729> .
   # oo Diana Middleton, 2nd Baroness Barham, 1762-09-18 - 1823-04-12
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7526957> , <https://www.wikidata.org/wiki/Q18559715> ;
 	gen:startDate "1780-12-20" .
+  # oo Harriet Gill, d. 1826-08-11, daughter of Rev. J. Gill
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7526957> , <https://www.wikidata.org/wiki/Q75308636> ;
+	gen:startDate "1823-05-04" .
+  # oo Isabella Evans Raymond, d. 1867-06-09
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7526957> , <https://www.wikidata.org/wiki/Q75308640> ;
+	gen:startDate "1831-08-13" .
 
 <https://www.wikidata.org/wiki/Q5081256>
   # Charles Noel, 1st Earl of Gainsborough, 1781-10-02 - 1866-06-10
@@ -1103,13 +1113,17 @@
   # 1st Viscount Campden of Campden, co. Gloucester, 1st Earl of Gainsborough, co. Lincoln, 1st Baron Noel of Ridlington, co. Rutland 1841-08-16
   gen:father <https://www.wikidata.org/wiki/Q7526957> ;
   gen:mother <https://www.wikidata.org/wiki/Q18559715> .
+  # oo Elizabeth Welman, d. 1811-12-01, daughter of Thomas Welman
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5081256> , <https://www.wikidata.org/wiki/Q75316269> ;
+	gen:startDate "1809-07-01" .
   # oo Elizabeth Grey, 1800-11-04 - 1818-09-20
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q5081256> , <grey.ttl#Elizabeth_Grey_(died_1818)> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q5081256> , <https://www.wikidata.org/wiki/Q75316273> ;
 	gen:startDate "1817-05-13" .
   # oo 1820-06-29 Arabella Hamlyn-Williams, 1793~ - 1829-10-04
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q5081256> , <#Arabella_Hamlyn-Williams> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q5081256> , <https://www.wikidata.org/wiki/Q75306091> ;
 	gen:startDate "1820-06-29" .
   # oo Lady Frances Jocelyn, 1814 - 1885-05-12
   []
@@ -1119,95 +1133,383 @@
   # Rev. Gerard Thomas Noel, 1782-12-02 - 1851
   gen:father <https://www.wikidata.org/wiki/Q7526957> ;
   gen:mother <https://www.wikidata.org/wiki/Q18559715> .
-  # oo Charlotte Sophia O'Brien, d. 1838-08-31
+  # oo Charlotte Sophia O'Brien, 1787 - 1838-08-31
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75712281> , <https://www.wikidata.org/wiki/Q75285666> ;
 	gen:startDate "1806-02" .
+  # oo Susan Kennaway, d. 1890-02-14, daughter of Sir John Kennaway, 1st Baronet (1758-03-06 - 1836-01-01, 1st Baronet Kennaway, of Escot, Devon 1791-02-25, https://www.wikidata.org/wiki/Q18593249 or https://www.wikidata.org/wiki/Q75712311) and oo 1797 Charlotte Amyatt (d. 1845, https://www.wikidata.org/wiki/Q75971980, daughter of https://www.wikidata.org/wiki/Q19870717)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75712281> , <https://www.wikidata.org/wiki/Q75712313> ;
+	gen:startDate "1841" .
+<https://www.wikidata.org/wiki/Q75712937>
+  # Louisa Elizabeth Noel, 1786-01-20 - 1816-04-06
+  gen:father <https://www.wikidata.org/wiki/Q7526957> ;
+  gen:mother <https://www.wikidata.org/wiki/Q18559715> .
+  # oo 1807-02-10 William Henry Hoare, 1766 - 1819-09-18, https://www.wikidata.org/wiki/Q75712940
+<https://www.wikidata.org/wiki/Q8016160>
+  # Hon. William Middleton Noel, 1789-05-02 – 1859-01-20
+  gen:father <https://www.wikidata.org/wiki/Q7526957> ;
+  gen:mother <https://www.wikidata.org/wiki/Q18559715> .
+  # oo Anne Yates, d. 1851-10-06, daughter of Joseph Yates
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8016160> , <https://www.wikidata.org/wiki/Q75712315> ;
+	gen:startDate "1817-05-20" .
+<https://www.wikidata.org/wiki/Q75308643>
+  # Frederick Noel, 1790-02-25 - 1833-12-27
+  gen:father <https://www.wikidata.org/wiki/Q7526957> ;
+  gen:mother <https://www.wikidata.org/wiki/Q18559715> .
+  # oo Mary Woodley, 1793 - 1867-01-24, daughter of William Woodley
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75308643> , <https://www.wikidata.org/wiki/Q75308645> ;
+	gen:startDate "1815-09-07" .
+<https://www.wikidata.org/wiki/Q75712317>
+  # Rev. Francis James Noel, 1793-05-04 - 1854-07-30
+  gen:father <https://www.wikidata.org/wiki/Q7526957> ;
+  gen:mother <https://www.wikidata.org/wiki/Q18559715> .
+  # oo Cecilia Penelope Methuen, 1798~ - 1885-06-27, daughter of Paul Cobb Methuen and Matilda Gooch
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75712317> , <https://www.wikidata.org/wiki/Q75712320> ;
+	gen:startDate "1822-04-24" .
+<https://www.wikidata.org/wiki/Q75712694>
+  # Berkeley Octavius Noel, 1794-12-03 - 1841-03-28
+  gen:father <https://www.wikidata.org/wiki/Q7526957> ;
+  gen:mother <https://www.wikidata.org/wiki/Q18559715> .
+  # oo Letitia Penelope Adderley, 1779-05-03 - 1860-01-18. daughter of Ralph Adderley and Dorothy Kynnersley
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75712694> , <https://www.wikidata.org/wiki/Q75712699> ;
+	gen:startDate "1820-06-22" .
+<https://www.wikidata.org/wiki/Q75279499>
+  # Reverend Leland Noel Noel, 1797-08-21 - 1870-11-10
+  gen:father <https://www.wikidata.org/wiki/Q7526957> ;
+  gen:mother <https://www.wikidata.org/wiki/Q18559715> .
+  # oo Mary Arabella Foljambe, d. 1859-05-02, daughter of John Savile Foljambe (https://www.wikidata.org/wiki/Q75279501, willoughby.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75279499> , <https://www.wikidata.org/wiki/Q75279500> ;
+	gen:startDate "1824-12-30" .
 <https://www.wikidata.org/wiki/Q4857705>
   # Rev. Hon. Baptist Wriothesley Noel, 1799-07-10 - 1873-01-19
   gen:father <https://www.wikidata.org/wiki/Q7526957> ;
   gen:mother <https://www.wikidata.org/wiki/Q18559715> .
-  # oo Jane Baillie, 1799-08-03~ - 1889-05-18, daughter of Peter Baillie of Dochfour and Elizabeth Pinney
+  # oo Jane Baillie, 1799-08-03~ - 1889-05-18, https://www.wikidata.org/wiki/Q75521688, daughter of Peter Baillie of Dochfour and Elizabeth Pinney
   []
     gen:spouse <https://www.wikidata.org/wiki/Q4857705> , <montagu.ttl#Jane_Baillie> ;
 	gen:startDate "1826-10-17" .
-<#Louisa_Elizabeth_Noel>
-  # Louisa Elizabeth Noel, d. 1816-04-06
-  gen:father <https://www.wikidata.org/wiki/Q7526957> ;
-  gen:mother <https://www.wikidata.org/wiki/Q18559715> .
-  # oo 1807-02-10 William Henry Hoare, 1766 - 1819-09-18, https://www.wikidata.org/wiki/Q75712940
 
 <https://www.wikidata.org/wiki/Q5081258>
   # Charles George Noel, 2nd Earl of Gainsborough, 1818-09-05 - 1881-08-13
   gen:father <https://www.wikidata.org/wiki/Q5081256> ;
-  gen:mother <grey.ttl#Elizabeth_Grey_(died_1818)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75316273> .
   # oo Lady Adelaide Harriet Augusta “Ida” Hay, 1821-10-18 - 1867-10-22
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q5081258> , <boyd.ttl#Lady_Ida_Hay> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q5081258> , <https://www.wikidata.org/wiki/Q75271545> ;
 	gen:startDate "1841-11-01" .
-<#Lady_Mary_Arabella_Louisa_Noel>
+<https://www.wikidata.org/wiki/Q64166219>
   # Lady Mary Arabella Louisa Noel, 1822-03-16 - 1883-06-27
   gen:father <https://www.wikidata.org/wiki/Q5081256> ;
-  gen:mother <#Arabella_Hamlyn-Williams> .
-  # oo 1846-08-20 Sir Andrew Agnew of Lochnaw, 8th Baronet, 1818-01-02 - 1892-03-25, https://www.wikidata.org/wiki/Q7525995
+  gen:mother <https://www.wikidata.org/wiki/Q75306091> .
+  # oo 1846-08-20 Sir Andrew Agnew of Lochnaw, 8th Baronet, 1818-01-02 - 1892-03-25, https://www.wikidata.org/wiki/Q7525995 (carnegie.ttl)
 <https://www.wikidata.org/wiki/Q13530009>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75610814> ;
   # Rt. Hon. Gerard James Noel, 1823-08-28 - 1911-05-19
   gen:father <https://www.wikidata.org/wiki/Q5081256> ;
-  gen:mother <#Arabella_Hamlyn-Williams> .
-  # oo Lady Augusta Mary Lowther, 1825-12-23 - 1916-01-11
+  gen:mother <https://www.wikidata.org/wiki/Q75306091> .
+  # oo Lady Augusta Mary Lowther, 1825-12-23 - 1916-01-11 (bentinck.ttl)
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q13530009> , <bentinck.ttl#Lady_Augusta_Mary_Lowther> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q13530009> , <https://www.wikidata.org/wiki/Q75251634> ;
 	gen:startDate "1863-06-30" .
-<#Lady_Catherine_Hamilton_Noel>
+<https://www.wikidata.org/wiki/Q75610819>
+  # Hon. Henry Lewis Noel, 1824-11-30 - 1898-06-07
+  gen:father <https://www.wikidata.org/wiki/Q5081256> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75306091> .
+  # oo Emily Elizabeth Noel, 1830-05-19 - 1890-10-03
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75610819> , <https://www.wikidata.org/wiki/Q75712925> ;
+	gen:startDate "1852-05-27" .
+  # oo Anne Adelaide Burnside, d. 1904-04-30, daughter of Rev. John Burnside
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75610819> , <https://www.wikidata.org/wiki/Q75713351> ;
+	gen:startDate "1892-08-31" .
+<https://www.wikidata.org/wiki/Q75281988>
   # Lady Catherine Hamilton Noel, 1829-09-29 - 1855-03-09
   gen:father <https://www.wikidata.org/wiki/Q5081256> ;
-  gen:mother <#Arabella_Hamlyn-Williams> .
+  gen:mother <https://www.wikidata.org/wiki/Q75306091> .
   # oo 1849-06-19 James Carnegie, 9th Earl of Southesk, 1827-11-16 - 1905-02-21, https://www.wikidata.org/wiki/Q6131053
-<#Lady_Victoria_Noel>
-  # Lady Victoria Noel, d. 1916-08-08
+<https://www.wikidata.org/wiki/Q16059136>
+  # Lady Victoria Noel, 1839-06-30 - 1916-08-08
   gen:father <https://www.wikidata.org/wiki/Q5081256> ;
   gen:mother <https://www.wikidata.org/wiki/Q43840394> .
   # oo 1862-06-21 Sir Thomas Fowell Buxton, 3rd Baronet, 1837-01-26 - 1915-10-28, https://www.wikidata.org/wiki/Q334449
+<https://www.wikidata.org/wiki/Q75308649>
+  # Rev. Augustus William Noel, 1816-07-30 - 1884
+  gen:father <https://www.wikidata.org/wiki/Q75308643> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75308645> .
+  # oo Lucy Elizabeth Tonge, d. 1874, daughter of Norris William Tonge
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75308649> , <https://www.wikidata.org/wiki/Q75308650> ;
+	gen:startDate "1841-06-16" .
+<https://www.wikidata.org/wiki/Q75712323>
+  # Edward Andrew Noel, 1825-01-02 - 1899-02-18
+  gen:father <https://www.wikidata.org/wiki/Q75712317> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75712320> .
+  # oo Sarah Gay Forbes Darwin, 1830-02-13 - 1889-06-15, daughter of William Brown Darwin
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75712323> , <https://www.wikidata.org/wiki/Q75712328> ;
+	gen:startDate "1848-08-24" .
+<https://www.wikidata.org/wiki/Q75712685>
+  # Millicent Mary Noel, 1832-02-21 - 1913-10-18
+  gen:father <https://www.wikidata.org/wiki/Q75712317> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75712320> .
+  # oo 1852-06-08 Rt. Hon. Berkeley Plantagenet Guilford Charles Noel, 1821-07-29 - 1906-03-15, https://www.wikidata.org/wiki/Q75712703
+<https://www.wikidata.org/wiki/Q75712703>
+  # Rt. Hon. Berkeley Plantagenet Guilford Charles Noel, 1821-07-29 - 1906-03-15
+  gen:father <https://www.wikidata.org/wiki/Q75712694> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75712699> .
+  # oo Millicent Mary Noel, 1832-02-21 - 1913-10-18
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75712703> , <https://www.wikidata.org/wiki/Q75712685> ;
+	gen:startDate "1852-06-08" .
+<https://www.wikidata.org/wiki/Q75279500>
+  # Mary Penelope Noel, 1830-01-12 - 1859-01-24
+  gen:father <https://www.wikidata.org/wiki/Q75279499> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75279500> .
+  # oo 1849-04-24 Rev. Hon. Andrew Godfrey Stuart, 1812-09-24 - 1889-09-19, https://www.wikidata.org/wiki/Q75279496, son of Robert Stewart, 2nd Earl Castle Stewart (https://www.wikidata.org/wiki/Q75279503) and Jemima Robison (https://www.wikidata.org/wiki/Q75279504)
+<https://www.wikidata.org/wiki/Q75712925>
+  # Emily Elizabeth Noel, 1830-05-19 - 1890-10-03
+  gen:father <https://www.wikidata.org/wiki/Q4857705> ;
+  gen:mother <montagu.ttl#Jane_Baillie> .
+  # oo 1852-05-27 Hon. Henry Lewis Noel, 1824-11-30 - 1898-06-07, https://www.wikidata.org/wiki/Q75610819
 <https://www.wikidata.org/wiki/Q5393618>
   # Ernest Noel, 1831-08-18 - 1931-05-20
   gen:father <https://www.wikidata.org/wiki/Q4857705> ;
   gen:mother <montagu.ttl#Jane_Baillie> .
+  # oo Louisa Hope Milne, d. 1870-08-22, daughter of Thomas Milne
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5393618> , <https://www.wikidata.org/wiki/Q75712807> ;
+	gen:startDate "1857-06-24" .
   # oo Lady Augusta Keppel, 1838-04-26 - 1902-01-31
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5393618> , <keppel.ttl#Lady_Augusta_Keppel> ;
 	gen:startDate "1873-10-15" .
+  # oo Sidney Emily Georgiana Saunders, daughter of Rev. W. S. Saunders
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5393618> , <https://www.wikidata.org/wiki/Q75713840> ;
+	gen:startDate "1909-12-30" .
+<https://www.wikidata.org/wiki/Q75712809>
+  # Albert Leland Noel, 1835-11-04 - 1916-09-27
+  gen:father <https://www.wikidata.org/wiki/Q4857705> ;
+  gen:mother <montagu.ttl#Jane_Baillie> .
+  # oo Ella Molyneux, 1836-09-01 - 1915-08-15, daughter of Rev. Capel Molyneux (1804-12-02 - 1877-12-27, https://www.wikidata.org/wiki/Q21595884, son of John Molyneux (1769 - 1832-03-21, https://www.wikidata.org/wiki/Q75712811, son of Rt. Hon. Sir Capel Molyneux, 3rd Baronet (https://www.wikidata.org/wiki/Q75497045, lennox.ttl) and Elizabeth Adlercron (https://www.wikidata.org/wiki/Q75978643)) and oo 1800-08-07 Ella Young (1782-04-06 - 1836-05-03, https://www.wikidata.org/wiki/Q76261510. daughter of John Young)) and oo 1831-06 Maria Carpenter (d. 1869-03-15, https://www.wikidata.org/wiki/Q75495043, daughter of James Carpenter)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75712809> , <https://www.wikidata.org/wiki/Q75712813> ;
+	gen:startDate "1859-06-21" .
+<https://www.wikidata.org/wiki/Q75712932>
+  # Gertrude Noel, d. 1858-02-26
+  gen:father <https://www.wikidata.org/wiki/Q4857705> ;
+  gen:mother <montagu.ttl#Jane_Baillie> .
+  # oo 1855-02-08 Sir Henry Flower Every, 10th Baronet, 1830-12-23 - 1893-02-26, https://www.wikidata.org/wiki/Q75441865, son of Henry Every (1799-11-26 - 1853-02-27, https://www.wikidata.org/wiki/Q75255565) and oo 1829-03-26 Hon. Caroline Flower (d. 1840-04-17, https://www.wikidata.org/wiki/Q75273895, daughter of Henry Jeffery Flower, 4th Viscount Ashbrook (https://www.wikidata.org/wiki/Q75385644) and Deborah Susannah Freind (https://www.wikidata.org/wiki/Q75269838))
 
-<#Lady_Constance_Julia_Eleanor_Georgiana_Noel>
+<https://www.wikidata.org/wiki/Q75271546>
   # Lady Constance Julia Eleanor Georgiana Noel, 1847-10-10 - 1891-04-08
   gen:father <https://www.wikidata.org/wiki/Q5081258> ;
-  gen:mother <boyd.ttl#Lady_Ida_Hay> .
-  # oo 1874-01-13 Sir Alan Henry Bellingham, 4th Baronet, 1846-08-23 - 1921-06-09, https://www.wikidata.org/wiki/Q7527100
-<#Gerard_Cecil_Noel>
+  gen:mother <https://www.wikidata.org/wiki/Q75271545> .
+  # oo 1874-01-13 Sir Alan Henry Bellingham, 4th Baronet, 1846-08-23 - 1921-06-09, https://www.wikidata.org/wiki/Q7527100 (hastings.ttl)
+<https://www.wikidata.org/wiki/Q5081259>
+  # Charles Noel, 3rd Earl of Gainsborough, 1850-10-20 - 1926-04-17
+  gen:father <https://www.wikidata.org/wiki/Q5081258> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75271545> .
+  # oo Augusta Mary Catherine Berkeley, d. 1877-11-05, daughter of Robert Berkeley (1823-10-09 - 1897-09-09, https://www.wikidata.org/wiki/Q75265712) and oo 1851-03-24 Lady Mary Caroline Browne (1829 - 1924-08-26, https://www.wikidata.org/wiki/Q75271537, daughter of Thomas Browne, 3rd Earl of Kenmore (https://www.wikidata.org/wiki/Q75271538) and Catherine O'Callaghan (https://www.wikidata.org/wiki/Q75271540))
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5081259> , <https://www.wikidata.org/wiki/Q75271535> ;
+	gen:startDate "1876-05-09" .
+  # oo Mary Elizabeth Dease, d. 1937-11-18, daughter of James Arthur Dease and Charlotte Jerningham
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5081259> , <https://www.wikidata.org/wiki/Q75279815> ;
+	gen:startDate "1880-02-02" .
+<https://www.wikidata.org/wiki/Q75712980>
   # Gerard Cecil Noel, 1864-12-04 - 1925-06-28
   gen:father <https://www.wikidata.org/wiki/Q13530009> ;
-  gen:mother <bentinck.ttl#Lady_Augusta_Mary_Lowther> .
+  gen:mother <https://www.wikidata.org/wiki/Q75251634> .
   # oo Madeline Edith Clifton, 1867-11-24 - 1946-09-21
   []
-    gen:spouse <#Gerard_Cecil_Noel> , <hastings.ttl#Madeline_Edith_Clifton> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75712980> , <https://www.wikidata.org/wiki/Q75712985> ;
 	gen:startDate "1897-02-10" .
+<https://www.wikidata.org/wiki/Q75530677>
+  # Gerard Thomas Noel, 1856-05-13 - 1941-11-09
+  gen:father <https://www.wikidata.org/wiki/Q75610819> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75712925> .
+  # oo Edith Mary Byron, d. 1917-05-29, daughter of Rev. Hon. William Byron (carnegie.ttl#William_Byron or https://www.wikidata.org/wiki/Q75260575) and Mary Elizabeth Kindersley (https://www.wikidata.org/wiki/Q75339631)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75530677> , <https://www.wikidata.org/wiki/Q75530676> ;
+	gen:startDate "1888-01-19" .
+<https://www.wikidata.org/wiki/Q75712298>
+  # Emma Noel, d. 1843-10-10
+  gen:father <https://www.wikidata.org/wiki/Q75712281> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75285666> .
+  # oo 1830-06-17 Rev. Charles Edward Kennaway, 1800-01-03 - 1875-11-03, https://www.wikidata.org/wiki/Q28854992 or https://www.wikidata.org/wiki/Q75712300, son of https://www.wikidata.org/wiki/Q18593249 and https://www.wikidata.org/wiki/Q75971980
+<https://www.wikidata.org/wiki/Q3103952>
+  # Sir Gerard Henry Uctred Noel, 1845-03-05 - 1918-05-23
+  gen:father <https://www.wikidata.org/wiki/Q75308649> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75308650> .
+  # oo Charlotte Rachel Frederica Cresswell, d. 1927-07-15, daughter of Francis Joseph Cresswell and Hon. Charlotte Gough-Calthorpe
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3103952> , <https://www.wikidata.org/wiki/Q75308654> ;
+	gen:startDate "1875-08-11" .
+<https://www.wikidata.org/wiki/Q75712529>
+  # Robert Lascelles Gambier Noel, 1855-06-27 - 1935-10-07
+  gen:father <https://www.wikidata.org/wiki/Q75712323> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75712328> .
+  # oo Letitia Louisa Carmela Koelle, d. 1940, daughter of Rev. S. W. Koelle
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75712529> , <https://www.wikidata.org/wiki/Q75712534> ;
+	gen:startDate "1887-03-23" .
+
+<https://www.wikidata.org/wiki/Q75248649>
+  # Lady Norah Ida Emily Noel, 1881-01-04 - 1939-05-23
+  gen:father <https://www.wikidata.org/wiki/Q5081259> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75279815> .
+  # oo 1915-09-08 Robert Charles Bentinck, 6th Count Bentinck, 1875-12-05 - 1932-03-12, https://www.wikidata.org/wiki/Q75248647
+<https://www.wikidata.org/wiki/Q4799841>
+  # Arthur Edward Joseph Noel, 4th Earl of Gainsborough, 1884-06-30 - 1927-08-27
+  gen:father <https://www.wikidata.org/wiki/Q5081259> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75279815> .
+  # oo Alice Mary Eyre, 1886-10-17 - 1970-06-11, daughter of Edward Eyre
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4799841> , <https://www.wikidata.org/wiki/Q75279820> ;
+	gen:startDate "1915-11-10" .
+<https://www.wikidata.org/wiki/Q75713511>
+  # Charlotte Ida Frederica Noel, 1878-03-11 - 1961-06-28
+  gen:father <https://www.wikidata.org/wiki/Q3103952> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75308654> .
+  # oo 1929-01-05 Charles Alfred Edward Winnington, 1882-06-28 - 1968-01-19, https://www.wikidata.org/wiki/Q75713514, son of Sir Francis Salwey Winnington, 5th Baronet (1849-09-24 - 1931-03-04, https://www.wikidata.org/wiki/Q60442133, son of https://www.wikidata.org/wiki/Q11803732 and https://www.wikidata.org/wiki/Q75281537) and oo 1879-02-05 Jane Spencer-Churchill (d. 1940-06-20, https://www.wikidata.org/wiki/Q75385945, daughter of https://www.wikidata.org/wiki/Q24288427 and Hon. Harriet Louisa Hester Gough-Calthorpe (https://www.wikidata.org/wiki/Q75385941))
+<https://www.wikidata.org/wiki/Q75308660>
+  # Francis Arthur Gerard Noel, 1880-12-03 - 1955-07-07
+  gen:father <https://www.wikidata.org/wiki/Q3103952> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75308654> .
+  # oo Evelyn Bond-Cabbell, d. 1988, daughter of Benjamin Bond-Cabbell
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75308660> , <https://www.wikidata.org/wiki/Q75337566> ;
+	gen:startDate "1913-07-24" .
+<https://www.wikidata.org/wiki/Q75712538>
+  # Gambier Baptist Edward Noel, 1888-06-24 - 1957
+  gen:father <https://www.wikidata.org/wiki/Q75712529> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75712534> .
+  # oo Beatrice Eva Tytler Byng, 1893-01-10 - 1966, daughter of John Clarke Byng (1824-03-21 - 1896-07-02, https://www.wikidata.org/wiki/Q75713534, son of Vice-Admiral Hon. Henry Dilkes Byng (d. 1860-09-24, https://www.wikidata.org/wiki/Q76193867, son of John Byng, 5th Viscount Torrington (https://www.wikidata.org/wiki/Q75545145) and Bridget Forrest (https://www.wikidata.org/wiki/Q75895327)) and oo Maria Jane Clerke (d. 1874-05-17, https://www.wikidata.org/wiki/Q76193870, daughter of J. B. Clerke)) and oo 1891-07-16 Ethel Frances Tytler (https://www.wikidata.org/wiki/Q75994234, daughter of John Adam Tytler)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75712538> , <https://www.wikidata.org/wiki/Q75712541> ;
+	gen:startDate "1914-01-10" ;
+	gen:divorceDate "1922" .
+  # oo Rosalie Sybilla Flower, 1897-07-20 - 1982-02-20, daughter of Stanley Smyth Flower and Sybilla Mary Peckham Wallace
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75712538> , <https://www.wikidata.org/wiki/Q75713528> ;
+	gen:startDate "1924-03-15" ;
+	gen:divorceDate "1931" .
+
+<https://www.wikidata.org/wiki/Q75279824>
+  # Lady Maureen Thérèse Josephine Noel, 1917-03-07 - 2009-11-25
+  gen:father <https://www.wikidata.org/wiki/Q4799841> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75279820> .
+  # oo 1944-02-19 Charles Walter James Dormer, 15th Baron Dormer of Wyng, 1903-12-20 - 1975-08-27, https://www.wikidata.org/wiki/Q75279826, son of Charles Joseph Thaddeus Dormer, 14th Baron Dormer of Wyng (https://www.wikidata.org/wiki/Q26271224 or https://www.wikidata.org/wiki/Q75279830) and Caroline May Clifford (https://www.wikidata.org/wiki/Q75279831)
+  # oo 1982-07-22 Peregrine Edward Launcelot Fellowes, 1912-07-09 - 1999-02-15, https://www.wikidata.org/wiki/Q75313836, son of Henry Shirley Morant Fellowes (https://www.wikidata.org/wiki/Q75861070) and Georgiana Maria Hulton Wrightson (https://www.wikidata.org/wiki/Q75861099)
+  #   oo Olwen Mary Stuart-Jones, 1912 - 1980, https://www.wikidata.org/wiki/Q76093818, daughter of James Stuart-Jones, 1935
+  #   -> Julian Alexander Kitchener-Fellowes, Baron Fellowes of West Stafford, b. 1949-08-17, Baron Fellowes of West Stafford, of West Stafford in the County of Dorset 2011-08-12, https://www.wikidata.org/wiki/Q336018 or https://www.wikidata.org/wiki/Q75816836
+<https://www.wikidata.org/wiki/Q18645735>
+  # Anthony Gerard Edward Noel, 5th Earl of Gainsborough, 1923-10-24 - 2009-12-29
+  gen:father <https://www.wikidata.org/wiki/Q4799841> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75279820> .
+  # oo Mary Stourton, 1925-09-24 - 2018-12-30, daughter of Hon. John Joseph Stourton (1899-03-05 - 1992-02-02, https://www.wikidata.org/wiki/Q75297719, son of https://www.wikidata.org/wiki/Q5082712 (howard.ttl) and Mary Constable (https://www.wikidata.org/wiki/Q75297726)) and oo 1923-12-18 (div 1933) Kathleen Alice Gunther (https://www.wikidata.org/wiki/Q75297720, daughter of Robert Louis George Gunther)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q18645735> , <https://www.wikidata.org/wiki/Q75297717> ;
+	gen:startDate "1947-07-23" .
+<https://www.wikidata.org/wiki/Q27110359>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75279823> ;
+  # Hon. Gerard Eyre Wriothesley Noel, 1926-11-20 - 2016-07-27
+  gen:father <https://www.wikidata.org/wiki/Q4799841> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75279820> .
+  # oo Adèle Julie Patricia Were, daughter of Vivian Nicholas Bonville Were
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q27110359> , <https://www.wikidata.org/wiki/Q75297759> ;
+	gen:startDate "1958-02-01" .
+<https://www.wikidata.org/wiki/Q75337557>
+  # Evelyn Diana Noel, 1914-05-20 - 1996
+  gen:father <https://www.wikidata.org/wiki/Q75308660> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75337566> .
+  # oo 1936-11-07 John Vivien Bailey, 1909-02-03 - 1943-07-12, https://www.wikidata.org/wiki/Q75337564, son of Brig.-Gen. Vivien Telford Bailey
+  # oo 1946-04-13 Sir Hector Wrath Lethbridge, 6th Baronet, https://www.wikidata.org/wiki/Q75337555, 1898-08-26 - 1978-06-29, son of Sir Wroth Periam Christopher Lethbridge, 5th Baronet (https://www.wikidata.org/wiki/Q75337546) and Alianore Chandos-Pole (https://www.wikidata.org/wiki/Q75293285)
+  # oo 1979-01-16 David James Douglas Nugent, Baron Nugent, 1917-11-24 - 1988, https://www.wikidata.org/wiki/Q75713500, son of Albert Beauchamp Nugent (1874-02-12 - 1938-02-26, https://www.wikidata.org/wiki/Q75713503, son of Albert Llewellyn Nugent, 3rd Baron Nugent (https://www.wikidata.org/wiki/Q75349539) and Elizabeth Baltazzi (https://www.wikidata.org/wiki/Q75349542)) and oo 1914-04-29 Frances Every Douglas-Campbell (d. 1950, https://www.wikidata.org/wiki/Q76099120, daughter of Robert Douglas-Campbell (1842 - 1896-06-01, https://www.wikidata.org/wiki/Q75306374, son of Archibald Campbell, 17th of Mains and 12th of Blythswood (https://www.wikidata.org/wiki/Q75304406, see paget.ttl) and Caroline Agnes Dick (https://www.wikidata.org/wiki/Q75304407)) and oo 1869 Catherine Ellen Miller (https://www.wikidata.org/wiki/Q75443611, daughter of Thomas Hamilton Lindsay Miller))
+
+<https://www.wikidata.org/wiki/Q75297737>
+  # Lady Juliana Mary Alice Noel, b. 1949-01-27
+  gen:father <https://www.wikidata.org/wiki/Q18645735> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75297717> .
+  # oo 1970-01-29 (div 1994) Edward Peter Bertram Savile Foljambe, 5th Earl of Liverpool, b. 1944-11-14, https://www.wikidata.org/wiki/Q1292220 or https://www.wikidata.org/wiki/Q75278900, son of Peter George William Savile Foljambe (1919-04-23 - 1944-09-02, https://www.wikidata.org/wiki/Q75278898, son of Hon. Bertram Marmaduke Osbert Savile Foljambe (1891-01-06 - 1955-10-13, https://www.wikidata.org/wiki/Q75278903, son of https://www.wikidata.org/wiki/Q5056078 (howard.ttl) and Susan Louisa Cavendish (https://www.wikidata.org/wiki/Q75286005)) and oo 1916-01-15 Joyce Norton Edmondson (d. 1963-05-21, https://www.wikidata.org/wiki/Q75278905, daughter of W. B. Edmondson)) and oo 1942-08-15 Elizabeth Joan Flint (b. 1921-10-04, https://www.wikidata.org/wiki/Q75278896, daughter of Eric Charles Montagu Flint and Frances Sarah Nancy Hulbert)
+<https://www.wikidata.org/wiki/Q75297730>
+  # Anthony Baptist Noel, 6th Earl of Gainsborough, b. 1950-01-17
+  gen:father <https://www.wikidata.org/wiki/Q18645735> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75297717> .
+  # oo Sarah Rose Winnington, b. 1951-04-29, daughter of Thomas Foley Churchill Winnington (1910-08-16 - 1999-04, https://www.wikidata.org/wiki/Q75254828) and oo 1944-05-20 Lady Betty Marjorie Anson (b. 1917-03-12, https://www.wikidata.org/wiki/Q75250646, daughter of https://www.wikidata.org/wiki/Q21694541 (gower.ttl) and Evelyn Maud Keppel (https://www.wikidata.org/wiki/Q75249488))
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75297730> , <https://www.wikidata.org/wiki/Q75250540> ;
+	gen:startDate "1972-05-23" .
+<https://www.wikidata.org/wiki/Q75297732>
+  # Hon. Gerard Edward Joseph Noel, b. 1955-01-23
+  gen:father <https://www.wikidata.org/wiki/Q18645735> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75297717> .
+  # oo Charlotte Dugdale, b. 1955-05-15, daughter of Sir William Stratford Dugdale, 2nd Baronet (https://www.wikidata.org/wiki/Q75270728) and Lady Belinda Pleydell-Bouverie (https://www.wikidata.org/wiki/Q75280258)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75297732> , <https://www.wikidata.org/wiki/Q75297745> ;
+	gen:startDate "1985" .
+<https://www.wikidata.org/wiki/Q75297736>
+  # Hon. Edward Andrew Noel, b. 1960-10-22
+  gen:father <https://www.wikidata.org/wiki/Q18645735> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75297717> .
+  # oo Lavinia Jane Bingham, daughter of Commander George Edward Bingham
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75297736> , <https://www.wikidata.org/wiki/Q75313830> ;
+	gen:startDate "1990 divorced 1994" .
+  # oo Sarah Kate Yeats-Brown, b. 1961-07-09, daughter of David George Warre Yeats-Brown (d. 1990~, https://www.wikidata.org/wiki/Q75297562) and oo 1949-08-09 Annesley Kathleen Eden (1928 - 2001-12-30, https://www.wikidata.org/wiki/Q75297536, daughter of George Henley Eden (1904-05-03 - 1982, https://www.wikidata.org/wiki/Q75297445, son of William Annesley Eden (1868-04-21 - 1939-08-05, https://www.wikidata.org/wiki/Q75281042, son of Hon. Robert Henley Shaw Eden (1840-09-25 - 1916-12-28, https://www.wikidata.org/wiki/Q75280906, son of https://www.wikidata.org/wiki/Q7343952 and Mary Hurt (https://www.wikidata.org/wiki/Q75279812)) and oo 1862-11-27 Jessie Ellen Hildyard (1842 - 1927-01-23, https://www.wikidata.org/wiki/Q75280907, daughter of Rev. Frederick Hildyard)) and oo 1895-01-23 Mabel Louisa Homfray Pinsent (d. 1951-02-13, https://www.wikidata.org/wiki/Q75281044, daughter of Sir Robert Pinsent)) and oo 1928 (div 1949) Avril Edith Simmons (d. 1966-01-18, https://www.wikidata.org/wiki/Q75297446, daughter of R. O. Simmons))
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75297736> , <https://www.wikidata.org/wiki/Q75297591> ;
+	gen:startDate "1997-07-19" .
+
+<https://www.wikidata.org/wiki/Q75297743>
+  # Henry Robert Anthony Noel, Viscount Campden, b. 1977-07-01
+  gen:father <https://www.wikidata.org/wiki/Q75297730> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75250540> .
+  # oo Zara van Cutsem, b. 1978-12-11, daughter of Geoffrey Neil van Cutsem and Sarah McCorquodale
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75297743> , <https://www.wikidata.org/wiki/Q75717066> .
+
+<https://www.wikidata.org/wiki/Q75717068>
+  # Hon. Edward Noel, b. 2007-04-30
+  gen:father <https://www.wikidata.org/wiki/Q75297743> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75717066> .
+<https://www.wikidata.org/wiki/Q75933792>
+  # Hon. Violet Ruth Noel, b. 2009-11-12
+  gen:father <https://www.wikidata.org/wiki/Q75297743> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75717066> .
+<https://www.wikidata.org/wiki/Q76303081>
+  # Hon. William Henry Noel, b. 2015-09-03
+  gen:father <https://www.wikidata.org/wiki/Q75297743> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75717066> .
+
 
 # ----
-#<https://www.wikidata.org/wiki/Q1617371>
+<https://www.wikidata.org/wiki/Q1617371>
   # Charles Middleton, 1st Baron Barham, 1726-10-14 - 1813-06-17
   # 1st Baronet Middleton, of Barham Court and Teston, Kent 1781-10-23
   # 1st Baron Barham, of Barham Court and Teston, Kent 1805-05-01
-  # son of Robert Middleton
-  # and Helen Dundas
+  gen:father <https://www.wikidata.org/wiki/Q75308631> ; # Robert Middleton
+  gen:mother <https://www.wikidata.org/wiki/Q75297092> . # Helen Dundas, daughter of Charles Dundas
   # oo Margaret Gambier, d. 1792-10-10, daughter of James Gambier and Mary Mead
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q1617371> , <#Margaret_Gambier> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q1617371> , <https://www.wikidata.org/wiki/Q75308635> ;
 	gen:startDate "1761-12-21" .
 
 <https://www.wikidata.org/wiki/Q18559715>
   # Diana Middleton, 2nd Baroness Barham, 1762-09-18 - 1823-04-12
   # 2nd Baroness Barham 1813-06-17
   gen:father <https://www.wikidata.org/wiki/Q1617371> ;
-  gen:mother <#Margaret_Gambier> .
+  gen:mother <https://www.wikidata.org/wiki/Q75308635> .
   # oo 1780-12-20 Sir Gerard Noel Noel, 2nd Baronet, 1759-07-17 - 1838-02-25, https://www.wikidata.org/wiki/Q7526957
 
 # ----
@@ -1236,7 +1538,7 @@
   []
     gen:spouse <#Sir_James_Hamlyn-Williams,_3rd_Baronet> , <seymour.ttl#Lady_Mary_Fortescue> ;
 	gen:startDate "1823-02-15" .
-<#Arabella_Hamlyn-Williams>
+<https://www.wikidata.org/wiki/Q75306091>
   # Arabella Hamlyn-Williams, 1793~ - 1829-10-04
   gen:father <#Sir_James_Hamlyn-Williams,_2nd_Baronet> ;
   gen:mother <#Diana_Anne_Whitaker> .
@@ -1256,16 +1558,16 @@
 # ----
 #<https://www.wikidata.org/wiki/Q334449>
   # Sir Thomas Fowell Buxton, 3rd Baronet, 1837-01-26 - 1915-10-28
-  # oo Lady Victoria Noel, d. 1916-08-08
+  # oo Lady Victoria Noel, 1839-06-30 - 1916-08-08
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q334449> , <#Lady_Victoria_Noel> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q334449> , <https://www.wikidata.org/wiki/Q16059136> ;
 	gen:startDate "1862-06-21" .
 
-<#Edith_Frances_Buxton>
+<https://www.wikidata.org/wiki/Q75529830>
   # Edith Frances Buxton, 1867-08-30 - 1930-03-25
   gen:father <https://www.wikidata.org/wiki/Q334449> ;
-  gen:mother <#Lady_Victoria_Noel> .
-  # oo 1888-11-23 Walter George Hepburne-Scott, 9th Lord Polwarth, 1864-02-07 - 1944-08-24, https://www.wikidata.org/wiki/Q29378674
+  gen:mother <https://www.wikidata.org/wiki/Q16059136> .
+  # oo 1888-11-23 Walter George Hepburne-Scott, 9th Lord Polwarth, 1864-02-07 - 1944-08-24, https://www.wikidata.org/wiki/Q29378674 (scott.ttl)
 
 # ----
 
