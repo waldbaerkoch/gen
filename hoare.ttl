@@ -1,0 +1,221 @@
+@base <hoare.ttl> .
+@prefix gen: <http://jjkoch.de/gen#> .
+@prefix wdata: <https://www.wikidata.org/wiki/> .
+@prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+#<https://www.wikidata.org/wiki/Q75743877>
+  # Henry Hoare, d. 1665
+
+<https://www.wikidata.org/wiki/Q75743871>
+  # Henry Hoare, d. 1669
+  gen:father <https://www.wikidata.org/wiki/Q75743877> . 
+  # oo Cecilia ???
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75743871> , <https://www.wikidata.org/wiki/Q75821689> .
+
+<https://www.wikidata.org/wiki/Q3430869>
+  # Sir Richard Hoare, 1649-09 - 1719-01-06
+  gen:father <https://www.wikidata.org/wiki/Q75743871> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75821689> . 
+  # oo Susannah Austin, d. 1720-09-24, daughter of John Austin
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3430869> , <https://www.wikidata.org/wiki/Q75743808> ;
+	gen:startDate "1672-07-27" .
+
+<https://www.wikidata.org/wiki/Q5723062>
+  # Henry Hoare, 1677-07-21 - 1725-03-12
+  gen:father <https://www.wikidata.org/wiki/Q3430869> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75743808> .
+  # oo Jane Benson, d. 1741-06-25, daughter of Sir William Benson
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5723062> , <https://www.wikidata.org/wiki/Q75743833> ;
+	gen:startDate "1702-05-19" .
+<https://www.wikidata.org/wiki/Q75743810>
+  # Richard Hoare
+  gen:father <https://www.wikidata.org/wiki/Q3430869> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75743808> .
+
+<https://www.wikidata.org/wiki/Q2622796>
+  # Henry Hoare, 1705-07-07 - 1785-09-08
+  gen:father <https://www.wikidata.org/wiki/Q5723062> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75743833> .
+  # oo Susan Colt, d. 1743-05-17, daughter of Stephen Colt
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2622796> , <https://www.wikidata.org/wiki/Q75397011> ;
+	gen:startDate "1728-07-06" .
+<https://www.wikidata.org/wiki/Q19325209>
+  # Sir Richard Hoare, 1709-03-02 - 1754-10-12
+  gen:father <https://www.wikidata.org/wiki/Q5723062> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75743833> .
+  # oo Sarah Tully, d. 1736-09-20, daughter of James Tully
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q19325209> , <#Sarah_Tully> ;
+	gen:startDate "1732-04-24" .
+<https://www.wikidata.org/wiki/Q76070443>
+  # Jane Hoare, 1702-02-24 - 1762-12-25
+  gen:father <https://www.wikidata.org/wiki/Q5723062> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75743833> .
+  # oo 1719-01-07 Henry Cornelisen, https://www.wikidata.org/wiki/Q76070447
+<https://www.wikidata.org/wiki/Q76334509>
+  # William Hoare
+  gen:father <https://www.wikidata.org/wiki/Q75743810> .
+  # oo Martha Cornelisen, 1720 - 1777-09-25
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76334509> , <https://www.wikidata.org/wiki/Q76070448> .
+
+<https://www.wikidata.org/wiki/Q75268238>
+  gen:name "Susanna Hoare"@en ;
+  gen:birthDate "1732-04-15" ;
+  gen:deathDate "1783-02-04" ;
+  gen:father <https://www.wikidata.org/wiki/Q2622796> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75397011> .
+  # oo 1753-05-11 Charles Boyle, Viscount Dungarvan, 1729-02-20 - 1759-09-16, https://www.wikidata.org/wiki/Q75268239
+  # oo 1761-02-17 Thomas Brudenell-Bruce, 1st Earl of Ailesbury, 1729-04-30 - 1814-04-19, https://www.wikidata.org/wiki/Q7611139
+<#Anne_Hoare>
+  # Anne Hoare, d. 1759-05-05
+  gen:father <https://www.wikidata.org/wiki/Q2622796> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75397011> .
+  # oo 1756-03-20 Sir Richard Hoare, 1st Baronet, 1735-03-07 - 1787-10-11, https://www.wikidata.org/wiki/Q30125563
+<https://www.wikidata.org/wiki/Q30125563>
+  # Sir Richard Hoare, 1st Baronet, 1735-03-07 - 1787-10-11
+  # 1st Baronet Hoare, of Barn Elms, co. Surrey 1786-06-27
+  gen:father <https://www.wikidata.org/wiki/Q19325209> ;
+  gen:mother <#Sarah_Tully> .
+  # oo Anne Hoare, d. 1759-05-05
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q30125563> , <#Anne_Hoare> ;
+	gen:startDate "1756-03-20" .
+  # oo Frances Anne Acland, 1735 - 1800-09-10
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q30125563> , <https://www.wikidata.org/wiki/Q75239065> ;
+	gen:startDate "1761-05-07" .
+<https://www.wikidata.org/wiki/Q75272507>
+  # Henry Hoare
+  gen:father <https://www.wikidata.org/wiki/Q76334509> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76070448> .
+  # oo Lydia Henrietta Mallortie, daughter of Isaac Mallortie
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75272507> , <https://www.wikidata.org/wiki/Q75239068> .
+
+<https://www.wikidata.org/wiki/Q2363258>
+  # Sir Richard Colt Hoare, 2nd Baronet, 1758-12-09 - 1838-05-19
+  gen:father <https://www.wikidata.org/wiki/Q30125563> ;
+  gen:mother <#Anne_Hoare> .
+  # oo Hon. Hester Lyttelton, d. 1785-08-22
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2363258> , <lyttelton.ttl#Hester_Lyttelton> ;
+	gen:startDate "1783-08-18" .
+<https://www.wikidata.org/wiki/Q75272506>
+  # Henrietta Anne Hoare, 1765 - 1841-09-02
+  gen:father <https://www.wikidata.org/wiki/Q30125563> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75239065> .
+  # oo 1785-07-04 Sir Thomas Dyke Acland, 5th/9th Baronet, 1752-04-18 – 1794-05-17, https://www.wikidata.org/wiki/Q7529113
+<https://www.wikidata.org/wiki/Q30125426>
+  # Peter Richard Hoare, 1772-10-13 - 1849-09-10
+  gen:father <https://www.wikidata.org/wiki/Q30125563> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75239065> .
+  # oo Arabella Penelope Eliza Greene, 1781~ - 1865-04-26, daughter of James Greene
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q30125426> , <#Arabella_Penelope_Eliza_Greene> ;
+	gen:startDate "1799-09-23" .
+<https://www.wikidata.org/wiki/Q75712940>
+  # William Henry Hoare, 1766 - 1819-09-18
+  gen:father <https://www.wikidata.org/wiki/Q75272507> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75239068> .
+  # oo Louisa Elizabeth Noel, d. 1816-04-06
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75712940> , <douglas.ttl#Louisa_Elizabeth_Noel> ;
+	gen:startDate "1807-02-10" .
+<https://www.wikidata.org/wiki/Q57384952>
+  # Lydia Elizabeth Hoare, 1786-09-16 - 1856-06-23
+  gen:father <https://www.wikidata.org/wiki/Q75272507> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75239068> .
+  # oo 1808-04-07 Sir Thomas Dyke Acland, 6th/10th Baronet, 1787-03-29 – 1871-07-22, https://www.wikidata.org/wiki/Q3525076
+
+<#Peter_Richard_Hoare>
+  # Peter Richard Hoare, 1803-05-08 - 1877-05-30
+  gen:father <https://www.wikidata.org/wiki/Q30125426> ;
+  gen:mother <#Arabella_Penelope_Eliza_Greene> .
+  # oo Lady Sophia Marsham, 1807-07-13 - 1863-01-04
+  []
+    gen:spouse <#Peter_Richard_Hoare> , <marsham.ttl#Lady_Sophia_Marsham> ;
+	gen:startDate "1837-04-17" .
+<#Henry_Hoare_(died_1866)>
+  # Henry Hoare, 1807-12-27 - 1866-04-16
+  gen:father <https://www.wikidata.org/wiki/Q75712940> ;
+  gen:mother <douglas.ttl#Louisa_Elizabeth_Noel> .
+  # oo Lady Mary Marsham, 1811-04-15 - 1871-02-23
+  []
+    gen:spouse <#Henry_Hoare_(died_1866)> , <https://www.wikidata.org/wiki/Q27942532> ;
+	gen:startDate "1836-05-03" .
+<#Mary_Jane_Hoare>
+  # Mary Jane Hoare, 1816, - 1888
+  gen:father <https://www.wikidata.org/wiki/Q75712940> ;
+  gen:mother <douglas.ttl#Louisa_Elizabeth_Noel> .
+  # oo 843-06-28 Arthur Fitzgerald Kinnaird, 10th Baron Kinnaird, 1814-07-08 - 1887-04-26, hope.ttl#Arthur_Fitzgerald_Kinnaird,_10th_Baron_Kinnaird
+
+<#Henry_Hoare_(died_1898)>
+  # Henry Hoare, 1838 - 1898
+  gen:father <#Henry_Hoare_(died_1866)> ;
+  gen:mother <https://www.wikidata.org/wiki/Q27942532> .
+  # oo Beatrice Anne Paley, 1838-08-06 - 1898-08-05, daughter of Rev. George Barber Paley and Catherine Anne Robertson
+  []
+    gen:spouse <#Henry_Hoare_(died_1898)> , <#Beatrice_Anne_Paley> ;
+	gen:startDate "1865-01-31" .
+<https://www.wikidata.org/wiki/Q5930649>
+  # Hugh Edward Hoare, 1854-03-26 - 1929-07-15
+  gen:father <#Henry_Hoare_(died_1866)> ;
+  gen:mother <https://www.wikidata.org/wiki/Q27942532> .
+  # oo Elizabeth Catherine Mary Wolfe Murray, 1857-09-30 - 1905-04-14
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5930649> , <murray.ttl#Elizabeth_Catherine_Mary_Wolfe_Murray> ;
+	gen:startDate "1886" .
+<#Walter_Marsham_Hoare>
+  # Rev. Walter Marsham Hoare
+  gen:father <#Henry_Hoare_(died_1866)> ;
+  gen:mother <https://www.wikidata.org/wiki/Q27942532> .
+
+<#Henry_Hoare_(died_1956)>
+  # Henry Hoare, 1866-12-25 - 1956-07-29
+  gen:father <#Henry_Hoare_(died_1898)> ;
+  gen:mother <#Beatrice_Anne_Paley> .
+  # oo 1898-12-28 Lady Geraldine Mariana Hervey, d. 1955-06-03
+  []
+    gen:spouse <#Henry_Hoare_(died_1956)> , <manners.ttl#Lady_Geraldine_Mariana_Hervey> ;
+	gen:startDate "1898-12-28" .
+<https://www.wikidata.org/wiki/Q65559795>
+  # Rev. Arthur Robertson Hoare, 1871-10-17 – 1941-03-18
+  gen:father <#Walter_Marsham_Hoare> .
+  # oo Mabel Pensée Marsham, 1867 - 1928-04-14
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q65559795> , <marsham.ttl#Mabel_Pensée_Marsham> ;
+	gen:startDate "1902-08-07" .
+  # Evelyn Florence Marsham, 1874 - 1956-06-24
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q65559795> , <marsham.ttl#Evelyn_Florence_Marsham> ;
+	gen:startDate "1930-10-21" .
+
+<#Henry_Peregrine_Rennie_Hoare>
+  # Henry Peregrine Rennie Hoare, 1901 - 1981
+  gen:father <#Henry_Hoare_(died_1956)> ;
+  gen:mother <manners.ttl#Lady_Geraldine_Mariana_Hervey> .
+  # oo Lady Beatrice Lilian Ethel Cadogan, 1912-05-12 - 1999
+  []
+    gen:spouse <#Henry_Peregrine_Rennie_Hoare> , <cadogan.ttl#Lady_Beatrice_Lilian_Ethel_Cadogan> ;
+	gen:startDate "1931-01-22" ;
+	gen:divorceDate "1941" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q76070447>
+  # Henry Cornelisen
+  # oo Jane Hoare, 1702-02-24 - 1762-12-25
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76070447> , <https://www.wikidata.org/wiki/Q76070443> ;
+	gen:startDate "1719-01-07" .
+
+<https://www.wikidata.org/wiki/Q76070448>
+  # Martha Cornelisen, 1720 - 1777-09-25
+  gen:father <https://www.wikidata.org/wiki/Q76070447> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76070443> .
+  # oo William Hoare, https://www.wikidata.org/wiki/Q76334509
