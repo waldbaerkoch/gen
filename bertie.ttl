@@ -2,6 +2,7 @@
 @prefix gen: <http://jjkoch.de/gen#> .
 @prefix wdata: <https://www.wikidata.org/wiki/> .
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 <https://www.wikidata.org/wiki/Q54087346>
   gen:name "Thomas Bertie"@en ;
@@ -252,7 +253,7 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q20313261> , <#Mary_Marshall> ;
 	gen:startDate "1726-02-13" .
-<#Mary_Bertie>
+<https://www.wikidata.org/wiki/Q76340991>
   # Mary Bertie
   gen:father <https://www.wikidata.org/wiki/Q7167781> ;
   gen:mother <#Susan_Monins> .
@@ -561,7 +562,7 @@
 	gen:startDate "1708-07-17" .
   # oo Mary Bertie
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q5718149> , <#Mary_Bertie> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q5718149> , <https://www.wikidata.org/wiki/Q76340991> ;
 	gen:startDate "1711a" .
 <#Lady_Anne_Bertie>
   gen:name "Lady Anne Bertie"@en ;
@@ -1155,33 +1156,39 @@
   # oo 1705-07-06 Robert Bertie, 1st Duke of Ancaster and Kesteven, 1660-10-20 - 1723-07-26, https://www.wikidata.org/wiki/Q7342072
 
 # --------
-#<https://www.wikidata.org/wiki/Q16842415>
+<https://www.wikidata.org/wiki/Q16842415>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75525532> .
   # Anthony Henley, 1667 - 1711
   # oo Mary Bertie
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q16842415> , <#Mary_Bertie> .
+    gen:spouse <https://www.wikidata.org/wiki/Q16842415> , <https://www.wikidata.org/wiki/Q76340991> .
 
 <https://www.wikidata.org/wiki/Q7345402>
   # Robert Henley, 1st Earl of Northington, 1708 - 1772-01-14
   # 1st Baron Henley of Grange in the County of Southampton 1760
   # 1st Earl of Northington 1764
   gen:father <https://www.wikidata.org/wiki/Q16842415> ;
-  gen:mother <#Mary_Bertie> .
+  gen:mother <https://www.wikidata.org/wiki/Q76340991> .
   # oo Jane Huband, 1716 - 1787
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q7345402> , <#Jane_Huband> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q7345402> , <https://www.wikidata.org/wiki/Q75305331> ;
 	gen:startDate "1743" .
 
 <#Lady_Catherine_Henley>
   # Lady Catherine Henley, d. 1779-01-09
   gen:father <https://www.wikidata.org/wiki/Q7345402> ;
-  gen:mother <#Jane_Huband> .
+  gen:mother <https://www.wikidata.org/wiki/Q75305331> .
   # oo 1777-03-18 George Coventry, 7th Earl of Coventry, 1758-04-25 - 1831-03-26, https://www.wikidata.org/wiki/Q5538166
 <#Lady_Elizabeth_Henley>
   # Lady Elizabeth Henley, d. 1821-08-20
   gen:father <https://www.wikidata.org/wiki/Q7345402> ;
-  gen:mother <#Jane_Huband> .
+  gen:mother <https://www.wikidata.org/wiki/Q75305331> .
   # oo 1783-08-07 Morton Frederick Eden, 1st Baron Henley of Chardstock, 1752-07-08 - 1830-12-06, https://www.wikidata.org/wiki/Q6914846
+<https://www.wikidata.org/wiki/Q75930451>
+  # Lady Mary Henley, 1753 - 1814-06-29
+  gen:father <https://www.wikidata.org/wiki/Q7345402> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75305331> .
+  # oo 1788-02-02 Thomas Noel, 2nd Viscount Wentworth of Wellesborough, 1745-11-18 - 1815-04-17, https://www.wikidata.org/wiki/Q7792758
 # ----
 #<https://www.wikidata.org/wiki/Q53798011>
   # Sir John Huband, 1st Baronet, d. 1710
@@ -1192,12 +1199,12 @@
   gen:father <https://www.wikidata.org/wiki/Q53798011> .
   # oo Rhoda Broughton
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q53798040> , <#Rhoda_Broughton> .
+    gen:spouse <https://www.wikidata.org/wiki/Q53798040> , <https://www.wikidata.org/wiki/Q75504343> .
 
-<#Jane_Huband>
+<https://www.wikidata.org/wiki/Q75305331>
   # Jane Huband, 1716 - 1787
   gen:father <https://www.wikidata.org/wiki/Q53798040> ;
-  gen:mother <#Rhoda_Broughton> .
+  gen:mother <https://www.wikidata.org/wiki/Q75504343> .
   # oo 1743 Robert Henley, 1st Earl of Northington, 1708 - 1772-01-14, https://www.wikidata.org/wiki/Q7345402
 # ----
 #<#Sir_Brian_Broughton,_1st_Baronet>
@@ -1219,7 +1226,7 @@
     gen:spouse <#Sir_Thomas_Broughton,_2nd_Baronet> , <#Rhoda_Amcotts> ;
 	gen:startDate "1672-07-10" .
 
-<#Rhoda_Broughton>
+<https://www.wikidata.org/wiki/Q75504343>
   # Rhoda Broughton
   gen:father <#Sir_Thomas_Broughton,_2nd_Baronet> ;
   gen:mother <#Rhoda_Amcotts> .
