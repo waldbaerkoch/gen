@@ -494,11 +494,11 @@
   gen:mother <#Mary_Fortescue> .
   # oo Charles Arundell, talbot.ttl#Charles_Arundell
   # oo Mervyn Tuchet, 4th Earl of Castlehaven, d. 1686-11-02, https://www.wikidata.org/wiki/Q6820940
-<#Barbara_Talbot>
+<https://www.wikidata.org/wiki/Q75260002>
   # Barbara Talbot, 1671~ - 1763-01-31
   gen:father <#Sir_John_Talbot_(died_1714)> ;
   gen:mother <#Barbara_Slingsby> .
-  # oo 1689-07-11 Henry Yelverton, 1st Viscount de Longueville, 1664~ - 1704-03-24, #Henry_Yelverton,_1st_Viscount_de_Longueville
+  # oo 1689-07-11 Henry Yelverton, 1st Viscount de Longueville, 1664~ - 1704-03-24, https://www.wikidata.org/wiki/Q75260004
 <https://www.wikidata.org/wiki/Q5082846>
   gen:name "Charles Talbot, 1st Baron Talbot of Hensol"@en ;
   # 1st Baron Talbot of Hensol, co. Glamorgan 1733-12-05
@@ -559,7 +559,7 @@
   gen:mother <#Jane_Flatsbury> .
   # oo Hon. Mary FitzWilliam, d. 1752-09-20
   []
-    gen:spouse <#George_Talbot_(died_1733)> , <#Mary_FitzWilliam> ;
+    gen:spouse <#George_Talbot_(died_1733)> , <noel.ttl#Mary_FitzWilliam_(died_1752)> ;
 	gen:startDate "1719-03-11" .
 <https://www.wikidata.org/wiki/Q7615037>
   gen:name "William Talbot, 1st Earl Talbot"@en ;
@@ -601,7 +601,7 @@
   gen:birthDate "1719-12-11" ;
   gen:deathDate "1787-07-21" ;
   gen:father <#George_Talbot_(died_1733)> ;
-  gen:mother <#Mary_FitzWilliam> .
+  gen:mother <noel.ttl#Mary_FitzWilliam_(died_1752)> .
   # oo Elizabeth Dormer, 1724-05-15 - 1809-08-11
   []
     gen:spouse <#George_Talbot,_14th_Earl_of_Shrewsbury> , <brudenell.ttl#Elizabeth_Dormer> ;
@@ -609,14 +609,14 @@
 <#Barbara_Maria_Talbot>
   # Barbara Maria Talbot, 1720-02-12 - 1759-11-09
   gen:father <#George_Talbot_(died_1733)> ;
-  gen:mother <#Mary_FitzWilliam> .
+  gen:mother <noel.ttl#Mary_FitzWilliam_(died_1752)> .
   # oo 1742-06-30 James Aston, 5th Lord Aston of Forfar, 1723-05-23 - 1751-08-24, https://www.wikidata.org/wiki/Q6128918 (howard.ttl)
 <#Charles_Talbot>
   gen:name "Charles Talbot"@en ;
   gen:birthDate "1722-04-12" ;
   gen:deathDate "1766-04-11" ;
   gen:father <#George_Talbot_(died_1733)> ;
-  gen:mother <#Mary_FitzWilliam> .
+  gen:mother <noel.ttl#Mary_FitzWilliam_(died_1752)> .
   # oo Mary Alwyn, d. 1750-06-08, daughter of Robert Alwyn
   []
     gen:spouse <#Charles_Talbot> , <#Mary_Alwyn> ;
@@ -628,14 +628,14 @@
 <#Mary_Talbot>
   # Mary Talbot, 1723-08-18 - 1753-05-18
   gen:father <#George_Talbot_(died_1733)> ;
-  gen:mother <#Mary_FitzWilliam> .
+  gen:mother <noel.ttl#Mary_FitzWilliam_(died_1752)> .
   # oo 1749-08-09 Charles Dormer, 8th Baron Dormer of Wyng, 1725-04-30 - 1804-03-30, https://www.wikidata.org/wiki/Q21548504 (brudenell.ttl)
 <#Francis_Jerome_Talbot>
   gen:name "Francis Jerome Talbot"@en ;
   gen:birthDate "1728-09-30" ;
   gen:deathDate "1813-11-22" ;
   gen:father <#George_Talbot_(died_1733)> ;
-  gen:mother <#Mary_FitzWilliam> .
+  gen:mother <noel.ttl#Mary_FitzWilliam_(died_1752)> .
   # oo Lady Anne Belasyse, 1746b - 1768-09-13
   []
     gen:spouse <#Francis_Jerome_Talbot> , <murray.ttl#Lady_Anne_Belasyse> ;
@@ -1745,7 +1745,7 @@
   # 14th Lord Grey, of Ruthin 1676-01-28
   gen:father <https://www.wikidata.org/wiki/Q7527235> ;
   gen:mother <https://www.wikidata.org/wiki/Q30277493> .
-<#Henry_Yelverton,_1st_Viscount_de_Longueville>
+<https://www.wikidata.org/wiki/Q75260004>
   # Henry Yelverton, 1st Viscount de Longueville, 1664~ - 1704-03-24
   # 4th Baronet Yelverton 1679-05-17
   # 15th Lord Grey, of Ruthin 1679-05-17
@@ -1754,18 +1754,24 @@
   gen:mother <https://www.wikidata.org/wiki/Q30277493> .
   # oo Barbara Talbot, 1671~ - 1763-01-31
   []
-    gen:spouse <#Henry_Yelverton,_1st_Viscount_de_Longueville> , <talbot.ttl#Barbara_Talbot> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75260004> , <https://www.wikidata.org/wiki/Q75260002> ;
 	gen:startDate "1689-07-11" .
 
 <https://www.wikidata.org/wiki/Q7679050>
   # Talbot Yelverton, 1st Earl of Sussex, 1690-05-02 – 1731-10-27
   # 2nd Viscount de Longueville, 5th Baronet Yelverton, 16th Lord Grey, of Ruthin 1704-03-24
-  gen:father <#Henry_Yelverton,_1st_Viscount_de_Longueville> ;
-  gen:mother <talbot.ttl#Barbara_Talbot> .
+  # 1st Earl of Sussex 1717-09-26
+  gen:father <https://www.wikidata.org/wiki/Q75260004> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75260002> .
   # oo Lucy Pelham, 1696-01-15 - 1730-05-25
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7679050> , <pelham.ttl#Lucy_Pelham_(died_1730)> ;
 	gen:startDate "1726-11-01" .
+<https://www.wikidata.org/wiki/Q75775542>
+  # Hon. Barbara Yelverton, 1692~ – 1724
+  gen:father <https://www.wikidata.org/wiki/Q75260004> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75260002> .
+  # oo 1715 Reynolds Calthorpe, 1655-08-12 – 1719, https://www.wikidata.org/wiki/Q16859261
 
 <#Henry_Yelverton,_3rd_Earl_of_Sussex>
   # Henry Yelverton, 3rd Earl of Sussex, 1728-07-07 - 1779-04-22
@@ -1781,7 +1787,20 @@
   # Lady Barbara Yelverton, 1760-06-19 - 1781-04-08
   gen:father <#Henry_Yelverton,_3rd_Earl_of_Sussex> ;
   gen:mother <#Hester_Hall> .
-  # oo 1775-10 Edward Thoroton Gould, d. 1830-02-15
+  # oo 1775-10 Edward Thoroton Gould, d. 1830-02-15, #Edward_Thoroton_Gould
+# ----
+#<https://www.wikidata.org/wiki/Q16859261>
+  # Reynolds Calthorpe, 1655-08-12 – 1719
+  # oo Hon. Barbara Yelverton, 1692~ – 1724
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16859261> , <https://www.wikidata.org/wiki/Q75775542> ;
+	gen:startDate "1715" .
+
+<https://www.wikidata.org/wiki/Q75534878>
+  # Barbara Calthorpe, 1716~ – 1782
+  gen:father <https://www.wikidata.org/wiki/Q16859261> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75775542> .
+  # oo 1741-07-02 Sir Henry Gough, 1st Baronet, d. 1774-06-08, https://www.wikidata.org/wiki/Q75534876 (beaufort.ttl)
 
 # ----
 #<#Edward_Thoroton_Gould>
@@ -1890,13 +1909,6 @@
   []
     gen:spouse <#John_Stonor,_of_Stonor> , <#Lady_Mary_Talbot_2> ;
 	gen:startDate "1675-07-08" .
-
-# ----
-<#Mary_FitzWilliam>
-  # Hon. Mary FitzWilliam, d. 1752-09-20
-  gen:father <https://www.wikidata.org/wiki/Q7789623> .
-  # and Elizabeth Pitt
-  # oo Hon. George Talbot, d. 1733-12-12, #George_Talbot_(died_1733)
 
 # ----
 #<https://www.wikidata.org/wiki/Q18526302>

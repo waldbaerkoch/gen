@@ -2,6 +2,7 @@
 @prefix gen: <http://jjkoch.de/gen#> .
 @prefix wdata: <https://www.wikidata.org/wiki/> .
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 #<#Sir_John_Howard_of_Wiggenhall>
   # Sir John Howard of Wiggenhall, 1357~ - 1437-11-17
@@ -605,7 +606,7 @@
   # Louisa Blanche Howard, 1842-02-23 - 1871-10-07
   gen:father <https://www.wikidata.org/wiki/Q5498154> ;
   gen:mother <cavendish.ttl#Lady_Fanny_Cavendish> .
-  # oo 1869-07-22 Cecil George Savile Foljambe, 1st Earl of Liverpool, 1846-11-07 - 1907-03-23, https://www.wikidata.org/wiki/Q5056078
+  # oo 1869-07-22 Cecil George Savile Foljambe, 1st Earl of Liverpool, 1846-11-07 - 1907-03-23, https://www.wikidata.org/wiki/Q5056078 (willoughby.ttl)
 <#Margaret_Fanny_Howard>
   # Margaret Fanny Howard, 1844-10-24 - 1919
   gen:father <https://www.wikidata.org/wiki/Q5498154> ;
@@ -3905,41 +3906,6 @@
   # oo 1845-05-29 Hon. Henry George Howard, 1818-05-22 - 1879-08-10, #Henry_George_Howard
 
 # ----
-#<#George_Savile_Foljambe>
-  # George Savile Foljambe, 1800-06-04 - 1869-12-18
-  # oo 1845-08-28 Lady Selina Charlotte Jenkinson, 1812-07-03 - 1883-09-24
-  []
-    gen:spouse <#George_Savile_Foljambe> , <#Lady_Selina_Charlotte_Jenkinson> ;
-	gen:startDate "1845-08-28" .
-
-<https://www.wikidata.org/wiki/Q5056078>
-  # Cecil George Savile Foljambe, 1st Earl of Liverpool, 1846-11-07 - 1907-03-23
-  # 1st Baron Hawkesbury of Haselbech, co. Northampton and of Ollerton, Sherwood Forest, co. Nottingham 1893-06-24
-  # 1st Viscount Hawkesbury of Kirkham, co. York and of Mansfield, co. Nottingham, 1st Earl of Liverpool 1905-12-02
-  gen:father <#George_Savile_Foljambe> ;
-  gen:mother <#Lady_Selina_Charlotte_Jenkinson> .
-  # oo Louisa Blanche Howard, 1842-02-23 - 1871-10-07
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q5056078> , <#Louisa_Blanche_Howard> ;
-	gen:startDate "1869-07-22" .
-  # oo Susan Louisa Cavendish, 1848-05-16 - 1917-12-19
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q5056078> , <cavendish.ttl#Susan_Louisa_Cavendish> ;
-	gen:startDate "1877-07-21" .
-
-<#Lady_Rosamond_Sylvia_Diana_Mary_Foljambe>
-  # Lady Rosamond Sylvia Diana Mary Foljambe, 1893 - 1974-04-12
-  gen:father <https://www.wikidata.org/wiki/Q5056078> ;
-  gen:mother <cavendish.ttl#Susan_Louisa_Cavendish> .
-  # oo 1918-09-03 Archibald Leslie-Melville, 13th Earl of Leven, 1890-08-06 – 1947-01-15, https://www.wikidata.org/wiki/Q4786401
-# ----
-<#Lady_Selina_Charlotte_Jenkinson>
-  # Lady Selina Charlotte Jenkinson, 1812-07-03 - 1883-09-24
-  gen:father <https://www.wikidata.org/wiki/Q5079495> .
-  # and Julia Evelyn Medley Shuckburgh-Evelyn
-  # oo 1845-08-28 George Savile Foljambe, 1800-06-04 - 1869-12-18, #George_Savile_Foljambe
-
-# ----
 #<https://www.wikidata.org/wiki/Q538478>
   # George Gilbert Aimé Murray, 1866-01-02 - 1957-05-20
   # oo Lady Mary Henrietta Howard, 1865-07-20 - 1956-09-02
@@ -4447,7 +4413,7 @@
   gen:mother <#Mary_Margaret_Corbally> .
   # oo Mary Constable, 1870-06-22 - 1961-12-09, daughter of Thomas Angus Constable and Elizabeth Ducarel de la Pasture
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q5082712> , <#Mary_Constable> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q5082712> , <https://www.wikidata.org/wiki/Q75297726> ;
 	gen:startDate "1893-07-26" .
 <#Auberon_Joseph_Stourton>
   # Auberon Joseph Stourton, 1867-04-28 - 1923-12-21
@@ -4470,11 +4436,20 @@
 <https://www.wikidata.org/wiki/Q8018888>
   # William Marmaduke Stourton, 26th Baron Segrave, 1895-08-31 - 1965-05-07
   gen:father <https://www.wikidata.org/wiki/Q5082712> ;
-  gen:mother <#Mary_Constable> .
+  gen:mother <https://www.wikidata.org/wiki/Q75297726> .
   # oo Sheila Gully, 1902-09-01 - 1975-02-19
   []
     gen:spouse <https://www.wikidata.org/wiki/Q8018888> , <#Sheila_Gully> ;
 	gen:startDate "1921-12-06" .
+<https://www.wikidata.org/wiki/Q75297719>
+  # Hon. John Joseph Stourton, 1899-03-05 - 1992-02-02
+  gen:father <https://www.wikidata.org/wiki/Q5082712> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75297726> .
+  # oo Kathleen Alice Gunther, daughter of Robert Louis George Gunther
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75297719> , <https://www.wikidata.org/wiki/Q75297720> ;
+	gen:startDate "1923-12-18" ;
+	gen:divorceDate "1933" .
 <#Eudo_Philip_Joseph_Stourton>
   # Eudo Philip Joseph Stourton, 1900-10-24 - 1975-02-27
   gen:father <#Auberon_Joseph_Stourton> ;
@@ -4504,6 +4479,11 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q10567452> , <#Joan_Marian_Street> ;
 	gen:startDate "1999-02-24" .
+<https://www.wikidata.org/wiki/Q75297717>
+  # Mary Stourton, 1925-09-24 - 2018-12-30
+  gen:father <https://www.wikidata.org/wiki/Q75297719> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75297720> .
+  # oo Anthony Gerard Edward Noel, 5th Earl of Gainsborough, 1923-10-24 - 2009-12-29, https://www.wikidata.org/wiki/Q18645735 (douglas.ttl)
 <#Veronica_Philippa_Stourton>
   # Veronica Philippa Stourton, b. 1929-10-31
   gen:father <#Eudo_Philip_Joseph_Stourton> ;
