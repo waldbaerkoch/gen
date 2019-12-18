@@ -2,6 +2,7 @@
 @prefix gen: <http://jjkoch.de/gen#> .
 @prefix wdata: <https://www.wikidata.org/wiki/> .
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 # https://www.wikidata.org/wiki/Q19326013
 
@@ -387,13 +388,6 @@
 
 
 # ----
-<stuart.ttl#Lady_Elizabeth_Stewart_(died_1595)>
-  # Lady Elizabeth Stewart, d. 1595-09
-  gen:father <https://www.wikidata.org/wiki/Q1701833> .
-  # and Lady Elizabeth Gordon
-  # oo 1567-12-24 Hugh Fraser, 5th Lord (Fraser of) Lovat, d. 1576/1577, fraser.ttl#Hugh_Fraser,_5th_Lord_Lovat
-
-
 <https://www.wikidata.org/wiki/Q75389585>
   # Sir James Stewart of Beath, 1513b - 1544-06-02
   gen:father <https://www.wikidata.org/wiki/Q4758641> .
@@ -705,18 +699,19 @@
 	gen:startDate "1663-08-05" .
 
 <https://www.wikidata.org/wiki/Q8009354>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75258655> ;
   # William Fraser, 12th Lord Saltoun of Abernethy, 1654-11-21 - 1715-11-18
   gen:father <#Alexander_Fraser,_Master_of_Saltoun> ;
   gen:mother <kerr.ttl#Lady_Anne_Kerr_(died_1658)> .
   # oo Margaret Sharp, d. 1734, daughter of Dr. James Sharp
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q8009354> , <#Margaret_Sharp> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q8009354> , <https://www.wikidata.org/wiki/Q75275370> ;
 	gen:startDate "1683-10-11" .
 
 <#Alexander_Fraser,_13th_Lord_Saltoun>
   # Alexander Fraser, 13th Lord Saltoun of Abernethy, 1684 - 1748-07-24
   gen:father <https://www.wikidata.org/wiki/Q8009354> ;
-  gen:mother <#Margaret_Sharp> .
+  gen:mother <https://www.wikidata.org/wiki/Q75275370> .
   # oo Lady Mary Gordon, 1682-03-28 - 1753-02-18
   []
     gen:spouse <#Alexander_Fraser,_13th_Lord_Saltoun> , <gordon.ttl#Lady_Mary_Gordon_(died_1753)> ;
@@ -724,20 +719,28 @@
 <#Henrietta_Fraser>
   # Hon. Henrietta Fraser, 1688 - 1751-02-26
   gen:father <https://www.wikidata.org/wiki/Q8009354> ;
-  gen:mother <#Margaret_Sharp> .
+  gen:mother <https://www.wikidata.org/wiki/Q75275370> .
   # oo 1718 John Gordon of Kinellar, 1679 - 1764, gordon.ttl#John_Gordon_of_Kinellar
 <#William_Fraser_of_Fraserfield_(died_1727)>
   # Hon. William Fraser of Fraserfield, 1691-11-19 - 1727-03-23
   gen:father <https://www.wikidata.org/wiki/Q8009354> ;
-  gen:mother <#Margaret_Sharp> .
+  gen:mother <https://www.wikidata.org/wiki/Q75275370> .
   # oo Lady Katherine Anne Erskine, d. 1733-03-05
   []
     gen:spouse <#William_Fraser_of_Fraserfield_(died_1727)> , <erskine.ttl#Lady_Katherine_Anne_Erskine> ;
 	gen:startDate "1724-10-25" .
+<https://www.wikidata.org/wiki/Q75262980>
+  # Hon. James Fraser, d. 1729-08-10
+  gen:father <https://www.wikidata.org/wiki/Q8009354> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75275370> .
+  # oo Lady Eleanor Lindsay, d. 1735-08-07
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75262980> , <https://www.wikidata.org/wiki/Q75262977> ;
+	gen:startDate "1726-03" .
 <#Helen_Fraser>
   # Hon. Helen Fraser
   gen:father <https://www.wikidata.org/wiki/Q8009354> ;
-  gen:mother <#Margaret_Sharp> .
+  gen:mother <https://www.wikidata.org/wiki/Q75275370> .
   # oo 1709 Sir James Gordon of Park, 2nd Baronet, 1680~ - 1727-12-15, duff.ttl#Sir_James_Gordon_of_Park,_2nd_Baronet
 
 <https://www.wikidata.org/wiki/Q4718888>
@@ -1049,19 +1052,19 @@
   gen:father <#Alexander_Abernethy,_6th_Lord_Saltoun> ;
   gen:mother <keith.ttl#Lady_Alison_Keith> .
   # oo 1580 John Innes, 17th of that Ilk, 1556 - 1587~, innes.ttl#John_Innes,_17th_of_that_Ilk
-<#George_Abernethy,_7th_Lord_Saltoun>
+<https://www.wikidata.org/wiki/Q75268394>
   # George Abernethy, 7th Lord Saltoun of Abernethy, 1555~ - 1590-04-27
   gen:father <#Alexander_Abernethy,_6th_Lord_Saltoun> ;
   gen:mother <keith.ttl#Lady_Alison_Keith> .
   # oo Lady Margaret Stewart
   []
-    gen:spouse <#George_Abernethy,_7th_Lord_Saltoun> , <stuart.ttl#Lady_Margaret_Stewart> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75268394> , <https://www.wikidata.org/wiki/Q75268392> ;
 	gen:startDate "1574-08-03b" .
 
 <#John_Abernethy,_8th_Lord_Saltoun>
   # John Abernethy, 8th Lord Saltoun of Abernethy, 1577~ - 1612-09-21b
-  gen:father <#George_Abernethy,_7th_Lord_Saltoun> ;
-  gen:mother <stuart.ttl#Lady_Margaret_Stewart> .
+  gen:father <https://www.wikidata.org/wiki/Q75268394> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75268392> .
   # oo Magdalen Urquhart, d. 1603-04-04, daughter of Henry Urquhart of Cromarty, younger
   []
     gen:spouse <#John_Abernethy,_8th_Lord_Saltoun> , <#Magdalen_Urquhart> ;
@@ -1076,9 +1079,14 @@
 	gen:startDate "1609-01-11b" .
 <#Margaret_Abernethy>
   # Hon. Margaret Abernethy
-  gen:father <#George_Abernethy,_7th_Lord_Saltoun> ;
-  gen:mother <stuart.ttl#Lady_Margaret_Stewart> .
+  gen:father <https://www.wikidata.org/wiki/Q75268394> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75268392> .
   # oo 1596-01-04 Alexander Fraser, 9th of Philorth, 1579~ - 1637~, #Alexander_Fraser,_9th_of_Philorth
+<https://www.wikidata.org/wiki/Q75264095>
+  # Hon. Jean Abernethy
+  gen:father <https://www.wikidata.org/wiki/Q75268394> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75268392> .
+  # oo 1608-12-08~, Sir John Lindsay of Kinfauns, d. 1615, https://www.wikidata.org/wiki/Q75264093
 
 <#Alexander_Abernethy,_9th_Lord_Saltoun>
   # Alexander Abernethy, 9th Lord Saltoun of Abernethy, 1611-03-26 - 1668-12-15~
@@ -1096,12 +1104,6 @@
   gen:father <https://www.wikidata.org/wiki/Q1316528> .
   # and Margaret Ogilvy
   # oo Alexander Abernethy, 4th Lord Saltoun of Abernethy, d. 1527-07-25, fraser.ttl#Alexander_Abernethy,_4th_Lord_Saltoun
-
-<stuart.ttl#Lady_Margaret_Stewart>
-  # Lady Margaret Stewart
-  gen:father <https://www.wikidata.org/wiki/Q1701833> ;
-  gen:mother <gordon.ttl#Lady_Elizabeth_Gordon_(died_1557b)> .
-  # oo 1574-08-03b George Abernethy, 7th Lord Saltoun of Abernethy, 1555~ - 1590-04-27, fraser.ttl#George_Abernethy,_7th_Lord_Saltoun
 
 #<#James_Stuart,_2nd_Lord_Doune>
   # James Stuart, 2nd Lord Doune, d. 1591/1592-02-07

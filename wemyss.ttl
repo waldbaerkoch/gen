@@ -2,6 +2,7 @@
 @prefix gen: <http://jjkoch.de/gen#> .
 @prefix wdata: <https://www.wikidata.org/wiki/> .
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 #<#Sir_David_Wemyss_of_Wemyss_(died_1544)>
   # Sir David Wemyss of Wemyss, d. 1544-05-27b
@@ -548,7 +549,7 @@
   gen:father <https://www.wikidata.org/wiki/Q5480498> ;
   gen:mother <#Lady_Anne_Frederica_Anson> .
   # oo 1872-06-04 John Robert William Vesey, 4th Viscount de Vesci of Abbey Leix, 1844-05-21 – 1903-07-06, https://www.wikidata.org/wiki/Q23614621
-<#Lady_Lilian_Harriet_Charteris>
+<https://www.wikidata.org/wiki/Q75250149>
   # Lady Lilian Harriet Charteris, 1851-10-17 - 1914-04-11
   gen:father <https://www.wikidata.org/wiki/Q5480498> ;
   gen:mother <#Lady_Anne_Frederica_Anson> .
@@ -713,18 +714,40 @@
 
 
 # ----
-#<#Henry_Sinclair,_3rd_Lord_Sinclair>
+#<https://www.wikidata.org/wiki/Q75389596>
   # Henry Sinclair, 3rd Lord Sinclair, d. 1513-09-09
-  # oo Margaret Hepburn, 1456~ - 1542
+  # oo Margaret Hepburn, 1456~ - 1542-06-11a/-12-14b, daughter of Adam Hepburn, Master of Hailes and Helen Home
   []
-    gen:spouse <#Henry_Sinclair,_3rd_Lord_Sinclair> , <#Margaret_Hepburn> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75389596> , <https://www.wikidata.org/wiki/Q75242707> ;
 	gen:startDate "1488-12-04b" .
 
+<https://www.wikidata.org/wiki/Q75426806>
+  # William Sinclair, 4th Lord Sinclair, d. 1570-07-17a
+  gen:father <https://www.wikidata.org/wiki/Q75389596> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75242707> .
+  # oo Lady Elizabeth Keith, d. 1549-11-24a
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75426806> , <https://www.wikidata.org/wiki/Q75532227> ;
+	gen:startDate "1524-04-17a" .
 <#Katherine_Sinclair>
   # Katherine Sinclair
-  gen:father <#Henry_Sinclair,_3rd_Lord_Sinclair> ;
-  gen:mother <#Margaret_Hepburn> .
+  gen:father <https://www.wikidata.org/wiki/Q75389596> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75242707> .
   # oo 1512~ Sir David Wemyss of Wemyss, d. 1544-05-27b, #Sir_David_Wemyss_of_Wemyss_(died_1544)
+<https://www.wikidata.org/wiki/Q75262455>
+  # Jean Sinclair, d. 1546a/1562b
+  gen:father <https://www.wikidata.org/wiki/Q75389596> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75242707> .
+  # oo Alexander Lindsay, Master of Crawford, the "Wicked Master", d. 1542-07-05~, https://www.wikidata.org/wiki/Q75262453
+
+<https://www.wikidata.org/wiki/Q75426807>
+  # Henry Sinclair, 5th Lord Sinclair, 1527a/1528b - 1601-10-21
+  gen:father <https://www.wikidata.org/wiki/Q75426806> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75532227> .
+  # oo Janet Lindsay, d. 1569-04-08
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75426807> , <https://www.wikidata.org/wiki/Q75532232> ;
+	gen:startDate "1547-06~" .
 
 # ----
 #<https://www.wikidata.org/wiki/Q8017874>
@@ -1041,19 +1064,26 @@
   # oo 1769-04-24 Thomas Vesey, 1st Viscount de Vesci of Abbey Leix, 1735 - 1804-10-13, https://www.wikidata.org/wiki/Q23619248
 
 # ----
-#<https://www.wikidata.org/wiki/Q26034503>
+<https://www.wikidata.org/wiki/Q26034503>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75253558> .
   # Sir Henry Carstairs Pelly, 3rd Baronet, 1844-04-23 - 1877-06-04
   # oo Lady Lilian Harriet Charteris, 1851-10-17 - 1914-04-11
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q26034503> , <#Lady_Lilian_Harriet_Charteris> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q26034503> , <https://www.wikidata.org/wiki/Q75250149> ;
 	gen:startDate "1872-11-27" .
+
+<https://www.wikidata.org/wiki/Q75262399>
+  # Constance Lilian Pelly, d. 1947-01-08
+  gen:father <https://www.wikidata.org/wiki/Q26034503> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75250149> .
+  # oo 1900-01-25 David Alexander Edward Lindsay, 27th Earl of Crawford, 1871-10-10 - 1940-03-08, https://www.wikidata.org/wiki/Q3703236
 
 # ----
 #<#Sir_Henry_Francis_Redhead_Yorke>
   # Sir Henry Francis Redhead Yorke, d. 1914-01-12
   # oo Lady Lilian Harriet Charteris, 1851-10-17 - 1914-04-11
   []
-    gen:spouse <#Sir_Henry_Francis_Redhead_Yorke> , <#Lady_Lilian_Harriet_Charteris> ;
+    gen:spouse <#Sir_Henry_Francis_Redhead_Yorke> , <https://www.wikidata.org/wiki/Q75250149> ;
 	gen:startDate "1882-07-31" .
 
 # ----

@@ -2,67 +2,96 @@
 @prefix gen: <http://jjkoch.de/gen#> .
 @prefix wdata: <https://www.wikidata.org/wiki/> .
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
-#<#Sir_William_Keith>
+#<https://www.wikidata.org/wiki/Q75388150>
+  # Sir William Keith, 1315 - 1407-05-13a/1413-06-02b
+  # son of Sir William Keith
+  # oo Margaret Fraser, b. 1337, daughter of John Fraser of Touchfraser
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75388150> , <https://www.wikidata.org/wiki/Q75388152> ;
+	gen:startDate "1351-05-03" .
+
+<https://www.wikidata.org/wiki/Q75778459>
+  # Sir Robert Keith, d. 1430-07-20b
+  gen:father <https://www.wikidata.org/wiki/Q75388150> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75388152> .
+<https://www.wikidata.org/wiki/Q75263377>
+  # Christiana Keith
+  gen:father <https://www.wikidata.org/wiki/Q75388150> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75388152> .
+  # oo Sir William Lindsay, of the Byres, d. 1414, https://www.wikidata.org/wiki/Q75263375
+
+<https://www.wikidata.org/wiki/Q73756835>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75389572> ;
   # Sir William Keith, d. 1444-10
+  gen:father <https://www.wikidata.org/wiki/Q75778459> .
   # oo Mary Hamilton
   []
-    gen:spouse <#Sir_William_Keith> , <hamilton.ttl#Mary_Hamilton> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q73756835> , <https://www.wikidata.org/wiki/Q75778457> ;
 	gen:startDate "1414-04-26" .
 
-<#Sir_Robert_de_Keith>
+<https://www.wikidata.org/wiki/Q75261291>
   # Sir Robert de Keith, d. 1446-09-22b
-  gen:father <#Sir_William_Keith> ;
-  gen:mother <hamilton.ttl#Mary_Hamilton> .
+  gen:father <https://www.wikidata.org/wiki/Q73756835> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75778457> .
   # oo Janet Seton
   []
-    gen:spouse <#Sir_Robert_de_Keith> , <gordon.ttl#Janet_Seton> .
-<#William_de_Keith,_1st_Earl_Marischal>
+    gen:spouse <https://www.wikidata.org/wiki/Q75261291> , <gordon.ttl#Janet_Seton> .
+<https://www.wikidata.org/wiki/Q18672869>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75257547> ;
   # William de Keith, 1st Earl Marischal, d. 1483~
   # 1st Lord Keith 1451-07b
   # 1st Earl Marischal 1457-11-05a/1458-07-04b
-  gen:father <#Sir_William_Keith> ;
-  gen:mother <hamilton.ttl#Mary_Hamilton> .
+  gen:father <https://www.wikidata.org/wiki/Q73756835> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75778457> .
   # oo Margaret Erskine
   []
-    gen:spouse <#William_de_Keith,_1st_Earl_Marischal> , <erskine.ttl#Margaret_Erskine> .
+    gen:spouse <https://www.wikidata.org/wiki/Q18672869> , <erskine.ttl#Margaret_Erskine> .
 
 <#Janet_Keith_1>
   # Janet Keith
-  gen:father <#Sir_Robert_de_Keith> ;
+  gen:father <https://www.wikidata.org/wiki/Q75261291> ;
   gen:mother <gordon.ttl#Janet_Seton> .
   # oo 1463-03~ Andrew Gray, 2nd Lord Gray, d. 1513-02, gordon.ttl#Andrew_Gray,_2nd_Lord_Gray
-<https://www.wikidata.org/wiki/Q18672871>
+
+<https://www.wikidata.org/wiki/Q73672502>
+  owl:sameAs <https://www.wikidata.org/wiki/Q18672871> , <https://www.wikidata.org/wiki/Q75260747> ;
   # William Keith, 2nd Earl Marischal, d. 1526/1527
-  gen:father <#William_de_Keith,_1st_Earl_Marischal> ;
+  gen:father <https://www.wikidata.org/wiki/Q18672869> ;
   gen:mother <erskine.ttl#Margaret_Erskine> .
   # oo Lady Elizabeth Gordon
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q18672871> , <gordon.ttl#Lady_Elizabeth_Gordon,_Countess_Marischal> .
+    gen:spouse <https://www.wikidata.org/wiki/Q73672502> , <https://www.wikidata.org/wiki/Q75270570> .
 <#Lady_Janet_Keith_(died_1504b)>
   # Lady Janet Keith, d. 1504b
-  gen:father <#William_de_Keith,_1st_Earl_Marischal> ;
+  gen:father <https://www.wikidata.org/wiki/Q18672869> ;
   gen:mother <#Marjorie_Fraser> .
   # oo 1481-06-23 Thomas Stewart, 2nd Lord Innermeath, 1461b - 1513-09-09, #Thomas Stewart,_2nd_Lord_Innermeath
 <#Lady_Mary_Keith_1>
   # Lady Mary Keith
-  gen:father <#William_de_Keith,_1st_Earl_Marischal> ;
+  gen:father <https://www.wikidata.org/wiki/Q18672869> ;
   gen:mother <erskine.ttl#Margaret_Erskine> .
   # oo Sir William Murray of Tullibardine, 1444~ - 1524/1525-02-10, murray.ttl#Sir_William_Murray_of_Tullibardine_(died_1525)
 
 <#Robert_Keith,_Master_of_Marischal>
   # Robert Keith, Master of Marischal, d. 1524-08-24a/1525-04-22b
-  gen:father <https://www.wikidata.org/wiki/Q18672871> ;
-  gen:mother <gordon.ttl#Lady_Elizabeth_Gordon,_Countess_Marischal> .
+  gen:father <https://www.wikidata.org/wiki/Q73672502> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75270570> .
   # oo Lady Elizabeth Douglas, d. 1527-05-02
   []
     gen:spouse <#Robert_Keith,_Master_of_Marischal> , <douglas.ttl#Lady_Elizabeth_Douglas_(died_1527)> ;
 	gen:startDate "1505-01-08b" .
 <#Lady_Janet_Keith_(died_1547)>
   # Lady Janet Keith, d. 1546-08-27a/1547-08-23b
-  gen:father <https://www.wikidata.org/wiki/Q18672871> ;
-  gen:mother <gordon.ttl#Lady_Elizabeth_Gordon,_Countess_Marischal> .
+  gen:father <https://www.wikidata.org/wiki/Q73672502> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75270570> .
   # oo 1515-12 William Graham, 2nd Earl of Montrose, 1492 - 1572-05-24, https://www.wikidata.org/wiki/Q4020028
+<https://www.wikidata.org/wiki/Q75532227>
+  # Lady Elizabeth Keith, d. 1549-11-24a
+  gen:father <https://www.wikidata.org/wiki/Q73672502> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75270570> .
+  # oo 1524-04-17a William Sinclair, 4th Lord Sinclair, d. 1570-07-17a, https://www.wikidata.org/wiki/Q75426806
 
 <https://www.wikidata.org/wiki/Q4958466>
   # Lady Elizabeth Keith, 1515~ - 1566a
@@ -78,30 +107,42 @@
   # William Keith, 3rd Earl Marischal, 1506 - 1581-10-07
   gen:father <#Robert_Keith,_Master_of_Marischal> ;
   gen:mother <douglas.ttl#Lady_Elizabeth_Douglas_(died_1527)> .
-  # oo 1538-06b Margaret Keith, daughter of William Keith of Inverugie, younger and Janet Gray
+  # oo Margaret Keith, daughter of William Keith of Inverugie, younger and Janet Gray
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7616592> , <https://www.wikidata.org/wiki/Q75389914> ;
+	gen:startDate "1538-06b" .
 
 <#Lady_Alison_Keith>
   # Lady Alison Keith, d. 1567-08
-  gen:father <https://www.wikidata.org/wiki/Q7616592> .
-  # and Margaret Keith
+  gen:father <https://www.wikidata.org/wiki/Q7616592> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75389914> .
   # oo 1550-08-28 Alexander Abernethy, 6th Lord Saltoun of Abernethy, d. 1587-04, fraser.ttl#Alexander_Abernethy,_6th_Lord_Saltoun
 <#William_Keith,_Master_of_Marischal>
   # William Keith, Master of Marischal, d. 1580-08-09~
-  gen:father <https://www.wikidata.org/wiki/Q7616592> .
-  # and Margaret Keith
+  gen:father <https://www.wikidata.org/wiki/Q7616592> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75389914> .
   # oo Lady Elizabeth Hay, b. 1531
   []
     gen:spouse <#William_Keith,_Master_of_Marischal> , <hay.ttl#Lady_Elizabeth_Hay_(born_1531)> ;
 	gen:startDate "1544-01-13" .
 <#Lady_Mary_Keith_2>
   # Lady Mary Keith
-  gen:father <https://www.wikidata.org/wiki/Q7616592> .
-  # and Margaret Keith
+  gen:father <https://www.wikidata.org/wiki/Q7616592> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75389914> .
   # oo 1575 John Campbell, 3rd of Cawdor, d. 1591-02, campbell.ttl#John_Campbell,_3rd_of_Cawdor
+<https://www.wikidata.org/wiki/Q75243582>
+  # Robert Keith, 1st Lord Altrie, 1529~ - 1596-03-18a/-05-19b
+  # 1st Lord Altrie 1587-07-29
+  gen:father <https://www.wikidata.org/wiki/Q7616592> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75389914> .
+  # oo Elizabeth Lundie, daughter of Robert Lundie
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75243582> , <https://www.wikidata.org/wiki/Q75243583> ;
+	gen:startDate "1566-05-24" .
 <https://www.wikidata.org/wiki/Q4693069>
   # Lady Agnes (Anne) Keith, 1540 - 1588-07-16
-  gen:father <https://www.wikidata.org/wiki/Q7616592> .
-  # and Margaret Keith
+  gen:father <https://www.wikidata.org/wiki/Q7616592> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75389914> .
   # oo 1562-02-08 James Stewart, 1st Earl of Moray, 1531 - 1570-01-20, https://www.wikidata.org/wiki/Q937415, 1st Lord Abernethy, 1st Earl of Moray 1562-01-30, 1st Earl of Mar 1562-02-07, 1st Lord Strathdearn 1563
   # oo 1571-01-13a/1572-02-26b Colin Campbell, 6th Earl of Argyll, 1545 - 1584, https://www.wikidata.org/wiki/Q2556649
 
@@ -114,6 +155,12 @@
     gen:spouse <https://www.wikidata.org/wiki/Q5541264> , <home.ttl#Margaret_Home_(died_1598)> ;
 	gen:startDate "1581-02-04" .
   # oo Margaret Ogilvy, daughter of James Ogilvy, 5th Lord Ogilvy of Airlie and Jean Forbes
+<https://www.wikidata.org/wiki/Q76307405>
+  # Margaret Keith, d. 1602-01
+  gen:father <https://www.wikidata.org/wiki/Q75243582> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75243583> .
+  # oo John Erskine of Dun, d. 1592-10-22, https://www.wikidata.org/wiki/Q76268086
+  # oo Sir John Lindsay of Ballinsho, d. 1609-01-06, https://www.wikidata.org/wiki/Q75262481
 
 <https://www.wikidata.org/wiki/Q7616626>
   # William Keith, 5th Earl Marischal, 1585~ - 1635-10-28
@@ -171,14 +218,20 @@
   gen:father <https://www.wikidata.org/wiki/Q7616659> ;
   gen:mother <gordon.ttl#Lady_Elizabeth_Seton> .
   # oo 1658-03-25 Robert Arbuthnott, 2nd Viscount of Arbuthnott, 1638 - 1682-06-16, gordon.ttl#Robert_Arbuthnott,_2nd_Viscount_of_Arbuthnott
-<#William_Keith,_8th_Earl_Marischal>
+<https://www.wikidata.org/wiki/Q75269347>
   # William Keith, 8th Earl Marischal, 1664~ - 1712-05-27
   gen:father <https://www.wikidata.org/wiki/Q52268554> ;
   gen:mother <hay.ttl#Lady_Mary_Hay_(died_1667)> .
   # oo Lady Mary Drummond, 1675-07-14 - 1729-03-07
   []
-    gen:spouse <#William_Keith,_8th_Earl_Marischal> , <drummond.ttl#Lady_Mary_Drummond_(died_1729)> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75269347> , <https://www.wikidata.org/wiki/Q18674187> ;
 	gen:startDate "1690~" .
+
+<https://www.wikidata.org/wiki/Q75274766>
+  # Lady Mary Keith, 1695-05~ - 1721
+  gen:father <https://www.wikidata.org/wiki/Q75269347> ;
+  gen:mother <https://www.wikidata.org/wiki/Q18674187> .
+  # oo 1710-02-08 John Fleming, 6th Earl of Wigton, 1674~ - 1744-02-10, https://www.wikidata.org/wiki/Q75262976 (drummond.ttl)
 
 
 # Keith of Kintore
