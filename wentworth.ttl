@@ -1,0 +1,529 @@
+@base <wentworth.ttl> .
+@prefix gen: <http://jjkoch.de/gen#> .
+@prefix wdata: <https://www.wikidata.org/wiki/> .
+@prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+#<https://www.wikidata.org/wiki/Q76019969>
+  # Sir William Wentworth III, of Wentworth Woodhouse, 1283~ - 1308
+  # oo Isabel Pollington, 1285 - 1360
+
+<#William_Wentworth_IV>
+  # William Wentworth, IV, of Wentworth Woodhouse, 1309 - 1335
+  gen:father <https://www.wikidata.org/wiki/Q76019969> .
+  # and Isabel Pollington
+  # oo Isabelle Hooten
+<https://www.wikidata.org/wiki/Q76019968> # -> Wentworth of North Elmsal
+  # Sir John Wentworth, of North Elmsal, 1320 - 1413
+  gen:father <https://www.wikidata.org/wiki/Q76019969> .
+  # and Isabel Pollington
+
+<#William_(the_younger)_Wentworth>
+  # William (the younger) Wentworth, 1330~ - 1355
+  gen:father <#William_Wentworth_IV> .
+  # and Isabelle Hooten
+  # oo Lucy Tinsley or Tynneslow
+
+<#William_Wentworth_(born_1350)>
+  # William Wentworth, of Wentworth Woodhouse, b. 1350
+  gen:father <#William_(the_younger)_Wentworth> .
+  # and Lucy Tinsley
+  # oo Johanna Fleming
+
+<#William_Wentworth_(born_1365)>
+  # William Wentworth, of Wentworth Woodhouse, b. 1365
+  gen:father <#William_Wentworth_(born_1350)> .
+  # and Johanna Fleming
+  # oo Lucy Sheffield
+
+<#William_Wentworth_(died_1461)>
+  # William Wentworth, of Wentworth Woodhouse, 1395 - 1461-06-11
+  gen:father <#William_Wentworth_(born_1365)> .
+  # and Lucy Sheffield
+  # oo Isabella Durrant
+
+<#Sir_Thomas_Wentworth_(died_1489)>
+  # Sir Thomas Wentworth, of Wentworth Woodhouse, Kt., 1414~ - 1489-09-21
+  gen:father <#William_Wentworth_(died_1461)> .
+  # and Isabella Durrant
+  # oo Jane Redman, 1416~ - 1454
+
+<#Sir_William_Wentworth_(died_1509)>
+  # Sir William Wentworth, of Wentworth Woodhouse, 1440 - 1509-01
+  gen:father <#Sir_Thomas_Wentworth_(died_1489)> .
+  # and Jane Redman
+  # oo Isabel FitzWilliam, 1450 - 1508-01
+
+<#Thomas_Wentworth_(died_1548)>
+  # Thomas "Golden Thomas" Wentworth, of Wentworth Woodhouse, d. 1548-12-05
+  gen:father <#Sir_William_Wentworth_(died_1509)> .
+  # and Isabel FitzWilliam
+  # oo Beatrix Woodruff, 1486~ - 1528
+
+<#William_Wentworth_(died_1549)>
+  # William Wentworth, of Wentworth Woodhouse, 1490 - 1549-07-04
+  gen:father <#Thomas_Wentworth_(died_1548)> .
+  # and Beatrix Woodruff
+  # oo Katherine Beeston, 1488 - 1545, daughter of Ralph Beeston, Esquire and Jane Green
+
+<https://www.wikidata.org/wiki/Q75273374>
+  # Thomas Wentworth, of Wentworth Woodhouse, 1522 - 1587-02-14
+  gen:father <#William_Wentworth_(died_1549)> .
+  # and Katherine Beeston
+  # oo Margaret Gascoigne, 1538~ - 1593, daughter of William Gascoigne, XVII and Beatrice Tempest
+
+<https://www.wikidata.org/wiki/Q75939882>
+  # Sir William Wentworth, 1st Baronet, d. 1614
+  # 1st Baronet Wentworth, of Wentworth Woodhouse 1611-06-20
+  gen:father <https://www.wikidata.org/wiki/Q75273374> .
+  # oo Anne Atkinson
+
+<https://www.wikidata.org/wiki/Q336091>
+  # Thomas Wentworth, 1st Earl of Strafford, 1593-04-13 - 1641-05-12
+  # 2nd Baronet of Wentworth Woodhous 1614
+  # 1st Baron Wentworth, of Wentworth-Woodhouse 1628
+  # 1st Viscount Wentworth 1629
+  # 1st Earl of Strafford, 1st Baron Raby 1640
+  gen:father <https://www.wikidata.org/wiki/Q75939882> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75939884> .
+  # oo Lady Margaret Clifford, d. 1622
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q336091> , <https://www.wikidata.org/wiki/Q75939871> .
+  # oo Lady Arabella Holles, d. 1631-10
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q336091> , <cavendish.ttl#Lady_Arabella_Holles> ;
+	gen:startDate "1625-02".
+<#Sir_William_Wentworth_of_Ashby_Puerorum>
+  # Sir William Wentworth of Ashby Puerorum, 1595~ - 1644-07-03
+  gen:father <https://www.wikidata.org/wiki/Q75939882> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75939884> .
+  # oo Elizabeth Savile, d. 1666, daughter of Thomas Savile
+<#Anne_Wentworth>
+  # Anne Wentworth, d. 1633-07-30
+  gen:father <https://www.wikidata.org/wiki/Q75939882> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75939884> .
+  # oo 1607-09-14 Sir George Savile, 1583 - 1614-08-24, https://www.wikidata.org/wiki/Q18527571 (talbot.ttl)
+<#Elizabeth_Wentworth>
+  # Elizabeth Wentworth
+  gen:father <https://www.wikidata.org/wiki/Q75939882> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75939884> .
+  # oo James Dillon, 3rd Earl of Roscommon, d. 1649-02-08, https://www.wikidata.org/wiki/Q6132633 (boyle.ttl)
+
+<https://www.wikidata.org/wiki/Q8020191>
+  # William Wentworth, 2nd Earl of Strafford, 1626-06-08 – 1695-10-16
+  gen:father <https://www.wikidata.org/wiki/Q336091> ;
+  gen:mother <cavendish.ttl#Lady_Arabella_Holles> .
+  # oo Lady Henrietta Maria Stanley, 1630-11-17 - 1685-12-27
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8020191> , <stanley.ttl#Lady_Henrietta_Maria_Stanley> ;
+	gen:startDate "1654-02-27" .
+<https://www.wikidata.org/wiki/Q75939892>
+  # Lady Anne Wentworth
+  gen:father <https://www.wikidata.org/wiki/Q336091> ;
+  gen:mother <cavendish.ttl#Lady_Arabella_Holles> .
+  # oo 1654 Edward Watson, 2nd Baron Rockingham, 1630-06-30 - 1689-06-22, manners.ttl#Edward_Watson,_2nd_Baron_Rockingham
+<#Sir_William_Wentworth>
+# https://www.wikidata.org/wiki/Q75266782
+  # Sir William Wentworth, 1627 - 1693
+  gen:father <#Sir_William_Wentworth_of_Ashby_Puerorum> .
+  # and Elizabeth Savile
+  # oo Isabella Apsley
+  []
+    gen:spouse <#Sir_William_Wentworth> , <courtenay.ttl#Isabella_Apsley> .
+
+<https://www.wikidata.org/wiki/Q3990734>
+  # Thomas Wentworth, 1st Earl of Strafford, 1672-09-17 - 1739-11-15
+  # 3rd Baron Raby 1695-10-16
+  # 1st Viscount Wentworth of Wentworth-Woodhouse and of Stainborough, 1st Earl of Strafford 1711-06-29
+  gen:father <#Sir_William_Wentworth> ;
+  gen:mother <courtenay.ttl#Isabella_Apsley> .
+  # oo 1711-09-06 Anne Johnson, 1686a - 1754-09-19
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3990734> , <https://www.wikidata.org/wiki/Q75448109> ;
+	gen:startDate "1711-09-06" .
+
+<https://www.wikidata.org/wiki/Q75420760>
+  # Lady Henrietta Wentworth, 1720 - 1786-04-12
+  gen:father <https://www.wikidata.org/wiki/Q3990734> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75448109> .
+  # TODO move here
+  # oo 1743-12-26 Henry Vernon, of Hilton Park, Staffordshire, 1718-09-13 - 1765-05-25, https://www.wikidata.org/wiki/Q26779669 (grosvenor.ttl)
+<https://www.wikidata.org/wiki/Q75272314>
+  # Lady Anne Wentworth
+  gen:father <https://www.wikidata.org/wiki/Q3990734> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75448109> .
+  # TODO move here
+  # oo 1733-04-28 Rt. Hon. William James Conolly, d. 1754-01-02, https://www.wikidata.org/wiki/Q8013442 (lennox.ttl)
+
+
+
+# Wentworth of North Elmsal
+<https://www.wikidata.org/wiki/Q76019968>
+  # Sir John Wentworth, of North Elmsal, 1320 - 1413
+  gen:father <https://www.wikidata.org/wiki/Q76019969> .
+  # oo Joan de Tyas
+
+<https://www.wikidata.org/wiki/Q76019965>
+  # unknown Wentworth
+  # Sir John Wentworth, of North Elmsal, 1369-06-27 - 1425-10-15
+  gen:father <https://www.wikidata.org/wiki/Q76019968> .
+  # oo Agnes Dronsfield
+
+<https://www.wikidata.org/wiki/Q75241284>
+  # Sir Roger Wentworth, 1395~ - 1452-10-21b/-24a
+  gen:father <https://www.wikidata.org/wiki/Q76019965> .
+  # and Agnes Dronsfield
+  # oo Margaret Despenser, 1397 - 1478-04-20 (de_ros.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75241284> , <https://www.wikidata.org/wiki/Q6760316> ;
+	gen:startDate "1423-03-02b" .
+
+<https://www.wikidata.org/wiki/Q7184538>
+  # Philip Wentworth, 1424 - 1464-05-18
+  gen:father <https://www.wikidata.org/wiki/Q75241284> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6760316> .
+  # oo Lady Mary de Clifford, 1416 - 1478
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7184538> , <https://www.wikidata.org/wiki/Q48931610> ;
+	gen:startDate "1447" .
+
+<https://www.wikidata.org/wiki/Q5730011>
+  # Sir Henry Wentworth, 1478~ – 1550-10-18
+  # 4th Lord Despenser 1478-04-20, de jure
+  gen:father <https://www.wikidata.org/wiki/Q7184538> ;
+  gen:mother <https://www.wikidata.org/wiki/Q48931610> .
+  # oo Anne Say, d. 1494-10-22b
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5730011> , <https://www.wikidata.org/wiki/Q15623905> .
+
+<https://www.wikidata.org/wiki/Q76019963>
+  # Sir Richard Wentworth, 1458~ – 1528
+  # 5th Lord Despenser 1500-02-27, de jure
+  gen:father <https://www.wikidata.org/wiki/Q5730011> ;
+  gen:mother <https://www.wikidata.org/wiki/Q15623905> .
+  # oo Anne Tyrrell
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76019963> , <https://www.wikidata.org/wiki/Q76019974> .
+<https://www.wikidata.org/wiki/Q2060421>
+  # Marjory Wentworth, d. 1550-10
+  gen:father <https://www.wikidata.org/wiki/Q5730011> ;
+  gen:mother <https://www.wikidata.org/wiki/Q15623905> .
+  # oo 1494-10-22 Sir John Seymour, 1474~ – 1536-12-21, https://www.wikidata.org/wiki/Q961790
+<https://www.wikidata.org/wiki/Q75299187>
+  # Elizabeth Wentworth, d. 1545-09-22a
+  gen:father <https://www.wikidata.org/wiki/Q5730011> ;
+  gen:mother <https://www.wikidata.org/wiki/Q15623905> .
+  # oo Roger Darcy, d. 1508-09-30, https://www.wikidata.org/wiki/Q75497723 (de_vere.ttl)
+
+<https://www.wikidata.org/wiki/Q75875162>
+  # Thomas Wentworth, 1st Baron Wentworth, 1501 - 1551-03-03
+  # 6th Lord Despenser, de jure
+  # 1st Baron Wentworth 1529-11-03a
+  gen:father <https://www.wikidata.org/wiki/Q76019963> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76019974> .
+  # oo Margaret Fortescue (sackville.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75875162> , <https://www.wikidata.org/wiki/Q75566637> ;
+	gen:startDate "1520~" .
+
+<https://www.wikidata.org/wiki/Q75672762>
+  # Thomas Wentworth, 2nd Baron Wentworth, 1525 - 1584-01-13
+  gen:father <https://www.wikidata.org/wiki/Q75875162> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75566637> .
+  # oo Mary Wentworth, d. 1554
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75672762> , <https://www.wikidata.org/wiki/Q76019977> ;
+	gen:startDate "1546-02-09" .
+  # oo Anne Wentworth, d. 1571-09-02
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75672762> , <https://www.wikidata.org/wiki/Q76019980> ;
+	gen:startDate "1556" .
+
+<https://www.wikidata.org/wiki/Q75803714>
+  # Henry Wentworth, 3rd Baron Wentworth, 1558-08-20b - 1593-08-16
+  gen:father <https://www.wikidata.org/wiki/Q75672762> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76019980> .
+  # oo Anne Hopton, 1561 - 1625-05-07~, daughter of Sir Owen Hopton
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75803714> , <https://www.wikidata.org/wiki/Q75782785> ;
+	gen:startDate "1585~" .
+
+<https://www.wikidata.org/wiki/Q5609974>
+  # Thomas Wentworth, 1st Earl of Cleveland, 1594 - 1667-03-25
+  # 9th Lord Despenser de jure, 4th Baron Wentworth 1593-08-16
+  gen:father <https://www.wikidata.org/wiki/Q75803714> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75782785> .
+  # oo Anne Croftes, 1623-07-29 -  1638-01-17, daughter of Sir John Croftes and Mary Shirley
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5609974> , <https://www.wikidata.org/wiki/Q75879143> ;
+	gen:startDate "1611" .
+  # oo Lucy Wentworth, d. 1651-11-23
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5609974> , <https://www.wikidata.org/wiki/Q76019986> ;
+	gen:startDate "1638-10-25b" .
+
+<https://www.wikidata.org/wiki/Q6236215>
+  # Thomas Wentworth, 5th Baron Wentworth, 1613-02-02 - 1665-03-01
+  # 5th Baron Wentworth 1640-11-03
+  gen:father <https://www.wikidata.org/wiki/Q5609974> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75879143> .
+  # oo Philadelphia Carey, d. 1696-05-04
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6236215> , <https://www.wikidata.org/wiki/Q76019988> ;
+	gen:startDate "1658-03-11b" .
+<https://www.wikidata.org/wiki/Q76019991>
+  # Anne Wentworth, 7th Baroness Wentworth, 1623-07-29 - 1697-05-07
+  # 7th Baroness Wentworth, 11th Lady Despenser 1686-04-23 de jure
+  gen:father <https://www.wikidata.org/wiki/Q5609974> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75879143> .
+  # oo 1638-07-11 John Lovelace, 2nd Baron Lovelace of Hurley, d. 1670-11-14, https://www.wikidata.org/wiki/Q76019992
+
+<https://www.wikidata.org/wiki/Q1606129>
+  # Henrietta Maria Wentworth, 6th Baroness Wentworth, 1660-08-11 - 1686-04-23
+  # 6th Baroness Wentworth, suo jure 1665-03-01
+  # 10th Lady Despenser, de jure 1667-03-25
+  gen:father <https://www.wikidata.org/wiki/Q6236215> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76019988> .
+
+
+
+
+# howard.ttl
+<#Thomas_Howard,_7th_Baron_Howard_of_Effingham>
+# https://www.wikidata.org/wiki/Q75270899
+  gen:name "Thomas Howard, 7th Baron Howard of Effingham"@en ;
+  gen:birthDate "1682-07-07" ;
+  gen:deathDate "1725-07-13" ;
+  gen:father <https://www.wikidata.org/wiki/Q1441549> ;
+  gen:mother <pelham.ttl#Philadelphia_Pelham> .
+  # oo Mary Wentworth, d. 1718-05-29, https://www.wikidata.org/wiki/Q75277746, daughter of Ruishe Wentworth, of Sarre (1651~ - 1686-06-08, https://www.wikidata.org/wiki/Q75634420, son of Sir George Wentworth (d. 1666~, https://www.wikidata.org/wiki/Q75634422. son of wentworth.ttl#Sir_William_Wentworth and courtenay.ttl#Isabella_Apsley) and oo Anne Ruisshe) and oo 1680 Susanna Adye (d. 1681-09-23)
+  []
+    gen:spouse <#Thomas_Howard,_7th_Baron_Howard_of_Effingham> , <#Mary_Wentworth> ;
+	gen:startDate "1706/1707-02-25" .
+
+
+# cavendish.ttl
+<#Lady_Elizabeth_Cavendish>
+# https://www.wikidata.org/wiki/Q75249405
+  # Lady Elizabeth Cavendish
+  gen:father <https://www.wikidata.org/wiki/Q2697139> ;
+  gen:mother <butler.ttl#Lady_Mary_Butler,_Duchess_of_Devonshire> .
+  # oo Sir John Wentworth, 1st Baronet 1673 – 1720, 1st Baronet Wentworth, of North Elmsal 1692-07-28, https://www.wikidata.org/wiki/Q75619053 (oo Hon. Mary Lowther, d. 1706-04-16, https://www.wikidata.org/wiki/Q75254839, daughter of https://www.wikidata.org/wiki/Q6245447 (drummond.ttl) and https://www.wikidata.org/wiki/Q18762022, 1692)
+
+
+#<https://www.wikidata.org/wiki/Q75323610>
+  # Sir Thomas Wentworth, 1st Baronet, 1615~ - 1675b
+  # 1st Baronet Wentworth, of Bretton Hall 1664-09-27
+  # son of George Wentworth (1576~ - 1638-06~, https://www.wikidata.org/wiki/Q75497823)
+  # and Mary Ashburnham (b. 1599b, https://www.wikidata.org/wiki/Q75497825, daughter of Sir John Ashburnham (1572~ - 1620-06-29 brienne.ttl#Sir_John_Ashburnham or https://www.wikidata.org/wiki/Q75497826) and oo Elizabeth Beaumont, 1st Baroness of Cramond (d. 1651-04-03b, 1st Baroness of Cramond 1628-02-29, https://www.wikidata.org/wiki/Q5363424))
+  # oo Grace Popeley, d. 1698-04-18a, https://www.wikidata.org/wiki/Q75323607 (oo 1679-02-02 Alexander Montgomerie, 8th Earl of Eglinton, son of Hugh Montgomerie, 7th Earl of Eglinton and Lady Mary Leslie), daughter of Francis Popeley and Elizabeth Gomersal, 1675b
+
+
+# macdonald.ttl
+#<https://www.wikidata.org/wiki/Q75246772>
+  # Godfrey Bosville
+  # oo Diana Wentworth, b. 1732b, daughter of Sir William Wentworth, 4th Baronet (1686-10-29 - 1763-03-01, https://www.wikidata.org/wiki/Q28062234 or https://www.wikidata.org/wiki/Q75446716, son of Sir Mathew Wentworth, 3rd Baronet (1663a - 1706-02, https://www.wikidata.org/wiki/Q75497820, son of Sir Matthew Wentworth, 2nd Baronet (1615a - 1678-08-01, https://www.wikidata.org/wiki/Q75497822, son of George Wentworth (1576~ - 1638-06~, https://www.wikidata.org/wiki/Q75497823) and Mary Ashburnham (b. 1599b, https://www.wikidata.org/wiki/Q75497825, daughter of Sir John Ashburnham (1572~ - 1620-06-29 brienne.ttl#Sir_John_Ashburnham or https://www.wikidata.org/wiki/Q75497826) and oo Elizabeth Beaumont, 1st Baroness of Cramond (d. 1651-04-03b, 1st Baroness of Cramond 1628-02-29, https://www.wikidata.org/wiki/Q5363424))) and oo 1663b Judith Rhodes (d. 1663a, https://www.wikidata.org/wiki/Q75497828, daughter of https://www.wikidata.org/wiki/Q75497830 (Thomas Rhodes))) and oo 1677-05-22 Elizabeth Osbaldeston (b. 1658-04-13, https://www.wikidata.org/wiki/Q75497834, daughter of William Osbaldeston (1631 - 1707, https://www.wikidata.org/wiki/Q28099312, son of Sir Richard Osbaldeston and Elinor Ann Westropp) and oo Anne Wentworth (1633 - 1718, https://www.wikidata.org/wiki/Q75497835, daughter of https://www.wikidata.org/wiki/Q75497836 (Sir George Wentworth)))) and oo 1720-06-23 Diana Blackett (d. 1742-04~, https://www.wikidata.org/wiki/Q75497818, daughter of Sir William Blackett, 1st Baronet (1657~ - 1705-12, 1st Baronet Blackett, of Newcastle-upon-Tyne, co. Northumberland 1685-01-23, https://www.wikidata.org/wiki/Q75397008, son of Sir William Blackett, 1st Baronet (1620~ - 1680-05-16, 1st Baronet Blackett, of Newcastle, co. Northumberland 1673-12-12, https://www.wikidata.org/wiki/Q75441097, son of William Blackett and Isabella Croke) and oo 1645-07-10 Elizabeth Kirkley (d. 1674-04-07, https://www.wikidata.org/wiki/Q75441107, daughter of Michael Kirkley)) and oo 1685-01-27 Julia Conyers (1669~ - 1722-08-16, https://www.wikidata.org/wiki/Q75441204, daughter of Sir Christopher Conyers, 2nd Baronet (1621 - 1693-10-12, https://www.wikidata.org/wiki/Q75441207, son of Sir John Conyers, 1st Baronet (1599 - 1664-12, 1st Baronet Conyers, https://www.wikidata.org/wiki/Q18671704, son of https://www.wikidata.org/wiki/Q76373750 (Christopher Conyers)) and Frances Groves (1596 - 1635-01-24, https://www.wikidata.org/wiki/Q76252846)) and oo Hon. Julia Lumley (https://www.wikidata.org/wiki/Q75300576, daughter of https://www.wikidata.org/wiki/Q75257239 (Richard Lumley, 1st Viscount Lumley of Waterford) and https://www.wikidata.org/wiki/Q75827564 (Frances Shelley))))
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75246772> , <https://www.wikidata.org/wiki/Q75446715> .
+
+
+# erskine.ttl
+<#Sir_Thomas_Wentworth,_5th_Baronet>
+  # Sir Thomas Wentworth, 5th Baronet, 1726-04-12 - 1792-07-10
+  gen:father <https://www.wikidata.org/wiki/Q28062234> .
+
+<https://www.wikidata.org/wiki/Q75298541>
+  # Diana Wentworth, 1776b - 1831-08-10
+  gen:father <#Sir_Thomas_Wentworth,_5th_Baronet> .
+  # oo Thomas Richard Beaumont, 1758-04-29 – 1829-07-31, https://www.wikidata.org/wiki/Q7793500 (erskine.ttl)
+
+
+# ----
+#<https://www.wikidata.org/wiki/Q6256800>
+  # Sir John Say, d. 1478-04-12
+  # oo Elizabeth Cheney, 1422-04 - 1473-09-25
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6256800> , <https://www.wikidata.org/wiki/Q5362574> .
+
+<https://www.wikidata.org/wiki/Q15623905>
+  # Anne Say, d. 1494-10-22b
+  gen:father <https://www.wikidata.org/wiki/Q6256800> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5362574> .
+  # oo Sir Henry Wentworth, 1478~ – 1550-10-18, https://www.wikidata.org/wiki/Q5730011
+# ----
+<https://www.wikidata.org/wiki/Q5362574>
+  # Elizabeth Cheney, 1422-04 - 1473-09-25
+  gen:father <#Sir_Laurence_Cheney> ;
+  gen:mother <#Elizabeth_Cockayne> .
+  # oo Frederick Tilney, 1416 - 1445, https://www.wikidata.org/wiki/Q5498863
+  # oo Sir John Say, d. 1478-04-12, https://www.wikidata.org/wiki/Q6256800
+# ----
+#<https://www.wikidata.org/wiki/Q5498863>
+  # Frederick Tilney, 1416 - 1445
+  # Lord of Ashwellthorpe, Norfolk, and Boston, Lincolnshire
+  # oo Elizabeth Cheney, 1422-04 - 1473-09-25
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5498863> , <https://www.wikidata.org/wiki/Q5362574> .
+
+<https://www.wikidata.org/wiki/Q3435025>
+  # Elizabeth Tilney, 1446b - 1497-04-13
+  gen:father <https://www.wikidata.org/wiki/Q5498863> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5362574> .
+  # oo 1472-05-09 Thomas Howard, 2nd Duke of Norfolk, 1443 - 1524-05-21, https://www.wikidata.org/wiki/Q709340
+
+# ----
+<https://www.wikidata.org/wiki/Q76019974>
+  # Anne Tyrrell
+  gen:father <https://www.wikidata.org/wiki/Q1439554> .
+  # oo Sir Richard Wentworth, 1458~ – 1528, https://www.wikidata.org/wiki/Q76019963
+
+# ----
+<https://www.wikidata.org/wiki/Q76019977>
+  # Mary Wentworth, d. 1554
+  gen:father <https://www.wikidata.org/wiki/Q76019978> . # Sir John Wentworth
+  # oo 1546-02-09 Thomas Wentworth, 2nd Lord Wentworth, 1525 - 1584-01-13, https://www.wikidata.org/wiki/Q75672762
+
+# ----
+<https://www.wikidata.org/wiki/Q76019980>
+  # Anne Wentworth, d. 1571-09-02
+  gen:father <https://www.wikidata.org/wiki/Q76019981> . # Henry Wentworth
+  # oo 1556 Thomas Wentworth, 2nd Lord Wentworth, 1525 - 1584-01-13, https://www.wikidata.org/wiki/Q75672762
+
+# ----
+#<https://www.wikidata.org/wiki/Q75438340>
+  # Sir John Wentworth, 1st Baronet, 1583~ – 1631
+  # 1st Baronet Wentworth, of Gosfield 1611-06-29
+  # son of John Wentworth
+  # and Cicely Unton
+
+<https://www.wikidata.org/wiki/Q76019986>
+  # Lucy Wentworth, d. 1651-11-23
+  gen:father <https://www.wikidata.org/wiki/Q75438340> .
+  # oo 1638-10-25b Thomas Wentworth, 1st Earl of Cleveland, 1594 - 1667-03-25, https://www.wikidata.org/wiki/Q5609974
+
+# ----
+<https://www.wikidata.org/wiki/Q76019988>
+  # Philadelphia Carey, d. 1696-05-04
+  gen:father <https://www.wikidata.org/wiki/Q75241368> ; # Ferdinand Carey
+  gen:mother <https://www.wikidata.org/wiki/Q75468134> . # Philippa Throckmorton
+  # oo 1658-03-11b Thomas Wentworth, 5th Baron Wentworth, 1613-02-02 - 1665-03-01, https://www.wikidata.org/wiki/Q6236215
+
+# ----
+<https://www.wikidata.org/wiki/Q7327465>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75517253> .
+  # Richard Lovelace, 1st Baron Lovelace of Hurley, 1564 – 1634-04-22
+  # 1st Baron Lovelace of Hurley 1627-05-31
+  # son of Richard Lovelace
+  # and Anne Warde, daughter of https://www.wikidata.org/wiki/Q7329811
+  # oo Katherine Gyll, daughter of Sir George Gyll
+  # oo Margaret Dodsworth, daughter of William Dodsworth
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75517253> , <https://www.wikidata.org/wiki/Q76343720> .
+
+<https://www.wikidata.org/wiki/Q15436448>
+  owl:sameAs <https://www.wikidata.org/wiki/Q76019992> ;
+  # John Lovelace, 2nd Baron Lovelace of Hurley, 1616-02 - 1670-11-14/-25
+  gen:father <https://www.wikidata.org/wiki/Q75517253> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76343720> .
+  # oo Anne Wentworth, 7th Baroness Wentworth, 1623-07-29 - 1697-05-07
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q15436448> , <https://www.wikidata.org/wiki/Q76019991> ;
+	gen:startDate "1638-07-11" .
+<#Francis_Lovelace>
+  # Francis Lovelace, 1618~ - 1675~
+  gen:father <https://www.wikidata.org/wiki/Q75517253> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76343720> .
+  # oo Mary King, daughter of William King
+  []
+    gen:spouse <#Francis_Lovelace> , <https://www.wikidata.org/wiki/Q76343722> .
+<https://www.wikidata.org/wiki/Q75517251>
+  # Hon. Margaret Lovelace
+  gen:father <https://www.wikidata.org/wiki/Q75517253> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76343720> .
+  # oo 1633-04-22 Sir George Stonhouse, 1st/3rd Baronet, 1603-08-28 - 1675-03-31, https://www.wikidata.org/wiki/Q5544877
+
+<https://www.wikidata.org/wiki/Q6245372>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75934545> ;
+  # John Lovelace, 3rd Baron Lovelace of Hurley, 1640~ - 1693-09-27
+  gen:father <https://www.wikidata.org/wiki/Q15436448> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76019991> .
+  # oo Martha Pye (cavendish.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6245372> , <https://www.wikidata.org/wiki/Q75934541> ;
+	gen:startDate "1662-08-28" .
+<https://www.wikidata.org/wiki/Q76019996>
+  # Hon. Margaret Lovelace, 1644~ - 1671-04-14
+  gen:father <https://www.wikidata.org/wiki/Q15436448> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76019991> .
+  # oo 1660-10-30 Sir William Noel, 2nd Baronet, 1642~ - 1675-04-23, https://www.wikidata.org/wiki/Q75240638
+<https://www.wikidata.org/wiki/Q76343724>
+  # William Lovelace
+  gen:father <#Francis_Lovelace> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76343722> .
+
+<https://www.wikidata.org/wiki/Q76019994>
+  # Martha Lovelace, 8th Baroness Wentworth, 1667~ - 1745-07-18
+  # 8th Baroness Wentworth, suo jure, 12th Baroness Despenser, de jure 1697-05-07
+  gen:father <https://www.wikidata.org/wiki/Q6245372> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75934541> .
+  # oo 1693-03-11 Sir Henry Johnson, 1661-08-13 – 1719-09-29, https://www.wikidata.org/wiki/Q5724015
+<https://www.wikidata.org/wiki/Q6245375>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75252425> ;
+  # John Lovelace, 4th Baron Lovelace, 1672 - 1709-05-06
+  gen:father <https://www.wikidata.org/wiki/Q76343724> .
+  # oo Charlotte Clayton, daughter of Sir John Clayton
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6245375> , <https://www.wikidata.org/wiki/Q76343716> ;
+	gen:startDate "1702-10-20" .
+
+<https://www.wikidata.org/wiki/Q76343718>
+  # John Lovelace, 5th Baron Lovelace, d. 1709
+  gen:father <https://www.wikidata.org/wiki/Q6245375> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76343716> .
+<https://www.wikidata.org/wiki/Q75252423>
+  # Hon. Martha Lovelace, d. 1788-03-05
+  gen:father <https://www.wikidata.org/wiki/Q6245375> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76343716> .
+  # oo 1739-06-25 Lord Henry Beauclerk, 1701-08-11 - 1761-01-05, https://www.wikidata.org/wiki/Q24238793
+<https://www.wikidata.org/wiki/Q75252427>
+  # Neville Lovelace, 6th Baron Lovelace, d. 1736
+  gen:father <https://www.wikidata.org/wiki/Q6245375> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76343716> .
+# ----
+#<https://www.wikidata.org/wiki/Q76178802>
+  # Sir William Stonhouse, 1st Baronet, 1556~ - 1632-02-05
+  # 1st Baronet Stonhouse, of Radley, Berkshire 1628-05-07
+  # son of George Stonhouse
+  # and Elizabeth Woodroffe
+  # oo Elizabeth Powell, daughter of John Powell
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76178802> , <https://www.wikidata.org/wiki/Q76178834> ;
+	gen:startDate "1592-06-07" .
+
+<https://www.wikidata.org/wiki/Q5544877>
+  # Sir George/John Stonhouse, 1st/3rd Baronet, 1603-08-28 - 1675-03-31
+  # 3rd Baronet Stonhouse, of Radley, Berkshire 1632-06-14~
+  # 1st Baronet Stonhouse, of Radley, Berkshire 1670-05-05
+  gen:father <https://www.wikidata.org/wiki/Q76178802> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76178834> .
+  # oo Hon. Margaret Lovelace
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5544877> , <https://www.wikidata.org/wiki/Q75517251> ;
+	gen:startDate "1633-04-22" .
+# ----
+#<https://www.wikidata.org/wiki/Q5724015>
+  # Sir Henry Johnson, 1661-08-13 – 1719-09-29
+  # oo Ann Smithson, daughter of Hugh Smithson
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5724015> , <https://www.wikidata.org/wiki/Q76103444> ;
+	gen:startDate "1686-05-20" .
+  # oo Martha Lovelace, 8th Baroness Wentworth, 1667~ - 1745-07-18
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5724015> , <https://www.wikidata.org/wiki/Q76019994> ;
+	gen:startDate "1693-03-11" .
+
+<https://www.wikidata.org/wiki/Q75448109>
+  # Anne Johnson, 1686a - 1754-09-19
+  gen:father <https://www.wikidata.org/wiki/Q5724015> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76103444> .
+  # oo 1711-09-06 Thomas Wentworth, 1st Earl of Strafford, 1672-09-17 - 1739-11-15, https://www.wikidata.org/wiki/Q3990734 (grosvenor.ttl)
