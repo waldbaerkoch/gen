@@ -5,26 +5,29 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 
-#<#Sir_Andrew_de_Leslie_of_Leslie>
+#<https://www.wikidata.org/wiki/Q76320886>
+  # Norman Leslie, 1st of Leslie, d. 1317b
+
+<https://www.wikidata.org/wiki/Q75591940>
   # Sir Andrew de Leslie of Leslie, d. 1324-11-28b
-  # son of Norman Leslie, 1st of Leslie (d. 1317b)
-  # oo Maria Abernethy, oo 1325~ Sir David de Lindsay of Crawford; daughter of Alexander Abernethy of that Ilk
+  gen:father <https://www.wikidata.org/wiki/Q76320886> .
+  # oo Maria Abernethy
   []
-    gen:spouse <#Sir_Andrew_de_Leslie_of_Leslie> , <#Maria_Abernethy> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75591940> , <https://www.wikidata.org/wiki/Q75263360> ;
 	gen:startDate "1313" .
 
 <#John_Leslie_of_Rothes> # -> Leslie of Rothes
   # John Leslie of Rothes, 1318a/1320b 1396-10-24b
-  gen:father <#Sir_Andrew_de_Leslie_of_Leslie> ;
-  gen:mother <#Maria_Abernethy> .
+  gen:father <https://www.wikidata.org/wiki/Q75591940> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75263360> .
 <#Sir_George_Leslie,_1st_of_Balquhain> # -> Leslie of Balquhain
   # Sir George Leslie, 1st of Balquhain, d. 1351
-  gen:father <#Sir_Andrew_de_Leslie_of_Leslie> ;
-  gen:mother <#Maria_Abernethy> .
+  gen:father <https://www.wikidata.org/wiki/Q75591940> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75263360> .
 <https://www.wikidata.org/wiki/Q7965443>
   # Sir Walter Leslie, 1320 - 1382-02-27
-  gen:father <#Sir_Andrew_de_Leslie_of_Leslie> ;
-  gen:mother <#Maria_Abernethy> .
+  gen:father <https://www.wikidata.org/wiki/Q75591940> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75263360> .
   # oo Euphemia I, Countess of Ross, 1345 - 1398~
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7965443> , <https://www.wikidata.org/wiki/Q3007670> .
@@ -39,8 +42,8 @@
 # Leslie of Rothes
 <#John_Leslie_of_Rothes>
   # John Leslie of Rothes, 1318a/1320b 1396-10-24b
-  gen:father <#Sir_Andrew_de_Leslie_of_Leslie> ;
-  gen:mother <#Maria_Abernethy> .
+  gen:father <https://www.wikidata.org/wiki/Q75591940> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75263360> .
 
 <#Sir_George_Leslie_of_Rothes>
   # Sir George Leslie of Rothes, 1350 - 1412-02a
@@ -132,6 +135,14 @@
     gen:spouse <https://www.wikidata.org/wiki/Q5541686> , <#Isobel_Lundie> ;
 	gen:startDate "1543-04-10b" .
 
+<https://www.wikidata.org/wiki/Q75272101>
+  # Norman Leslie, Master of Rothes, d. 1554-08-31
+  gen:father <https://www.wikidata.org/wiki/Q5541686> ;
+  gen:mother <#Margaret_Crichton> .
+  # oo Isabel Lindsay
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75272101> , <https://www.wikidata.org/wiki/Q75272103> ;
+	gen:startDate "1541-02~" .
 <#Robert_Leslie,_1st_of_Findrassie>
   # Robert Leslie, 1st of Findrassie, 1520~ - 1588-09-22
   gen:father <https://www.wikidata.org/wiki/Q5541686> ;
@@ -204,7 +215,7 @@
   # Patrick Leslie, 1st Lord Lindores, d. 1608-05-22a/-10-05b
   gen:father <https://www.wikidata.org/wiki/Q4757744> ;
   gen:mother <hamilton.ttl#Grizel_Hamilton_1> .
-<#Lady_Euphemia_Leslie>
+<https://www.wikidata.org/wiki/Q75262792>
   # Lady Euphemia Leslie
   gen:father <https://www.wikidata.org/wiki/Q4757744> ;
   gen:mother <hamilton.ttl#Grizel_Hamilton_1> .
@@ -371,8 +382,8 @@
 # Leslie of Balquhain
 <#Sir_George_Leslie,_1st_of_Balquhain>
   # Sir George Leslie, 1st of Balquhain, d. 1351
-  gen:father <#Sir_Andrew_de_Leslie_of_Leslie> ;
-  gen:mother <#Maria_Abernethy> .
+  gen:father <https://www.wikidata.org/wiki/Q75591940> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75263360> .
 
 <#Sir_Hamelin_Leslie,_2nd_of_Balquhain>
   # Sir Hamelin Leslie, 2nd of Balquhain, d. 1378
@@ -1244,6 +1255,13 @@
 
 
 # ----
+<https://www.wikidata.org/wiki/Q75263360>
+  # Maria Abernethy
+  gen:father <https://www.wikidata.org/wiki/Q76159050> . # Sir Alexander Abernethy of that Ilk
+  # oo 1313 Sir Andrew de Leslie of Leslie, d. 1324-11-28b, https://www.wikidata.org/wiki/Q75591940
+  # oo 1325~ Sir David Lindsay, lord of Crawford, 1314 - 1355, https://www.wikidata.org/wiki/Q19325372
+
+# ----
 <https://www.wikidata.org/wiki/Q3007670>
   # Euphemia I, Countess of Ross, 1345 - 1398~
   gen:father <https://www.wikidata.org/wiki/Q7613001> .
@@ -1283,93 +1301,6 @@
   # oo 1517 (div 1520-12-27) George Leslie, 4th Earl of Rothes, 1484-08-02 - 1558-11-28, https://www.wikidata.org/wiki/Q5541686
 
 # ----
-#<https://www.wikidata.org/wiki/Q16854092>
-  # Patrick Lindsay, 6th Lord Lindsay of the Byres, 1521 - 1589-12-11
-  # oo Euphemia Douglas, daughter of Sir Robert Douglas of Lochleven and Margaret Erskine
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q16854092> , <#Euphemia_Douglas> ;
-	gen:startDate "1545-05~" .
-
-<https://www.wikidata.org/wiki/Q75257552>
-  # Margaret Lindsay
-  gen:father <https://www.wikidata.org/wiki/Q16854092> ;
-  gen:mother <#Euphemia_Douglas> .
-  # oo James Leslie, Master of Rothes, d. 1607, https://www.wikidata.org/wiki/Q75257550
-<https://www.wikidata.org/wiki/Q18529884>
-  # James Lindsay, 7th Lord Lindsay of the Byres, 1554 - 1601-11-05
-  gen:father <https://www.wikidata.org/wiki/Q16854092> ;
-  gen:mother <#Euphemia_Douglas> .
-  # oo Lady Euphemia Leslie
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q18529884> , <leslie.ttl#Lady_Euphemia_Leslie> ;
-	gen:startDate "1573-05-09~" .
-
-<https://www.wikidata.org/wiki/Q75262795>
-  # John Lindsay, 8th Lord Lindsay of the Byres
-  gen:father <https://www.wikidata.org/wiki/Q18529884> ;
-  gen:mother <leslie.ttl#Lady_Euphemia_Leslie> .
-  # oo Anna Oliphant, daughter of Laurence Oliphant, Master of Oliphant
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q75262795> , <#Anna_Oliphant> ;
-	gen:startDate "1599-07-04~" .
-<https://www.wikidata.org/wiki/Q75342358>
-  # Robert Lindsay, 9th Lord Lindsay of the Byres, d. 1616-07-09
-  gen:father <https://www.wikidata.org/wiki/Q18529884> ;
-  gen:mother <leslie.ttl#Lady_Euphemia_Leslie> .
-  # oo Lady Christian Hamilton, 1594b - 1646-01-22b
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q75342358> , <hamilton.ttl#Lady_Christian_Hamilton_(died_1646)> ;
-	gen:startDate "1610-06-26" .
-
-<lindsay.ttl#Ann_Lindsay>
-  # Ann Lindsay
-  gen:father <https://www.wikidata.org/wiki/Q75262795> ;
-  gen:mother <#Anna_Oliphant> .
-  # oo 1619 Alexander Falconer, 1st Lord Falconer of Halkertoun, 1595 - 1671, https://www.wikidata.org/wiki/Q75342285
-<https://www.wikidata.org/wiki/Q4262007>
-  # John Lindsay, 17th Earl of Crawford, 1596/1611~ - 1678
-  gen:father <https://www.wikidata.org/wiki/Q75342358> ;
-  gen:mother <hamilton.ttl#Lady_Christian_Hamilton_(died_1646)> .
-  # oo Lady Margaret Hamilton, d. 1605a/1625b
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q4262007> , <https://www.wikidata.org/wiki/Q75390088> ;
-	gen:startDate "1630~" .
-
-<https://www.wikidata.org/wiki/Q4768245>
-  # Lady Anne Lindsay, 1631-09-01 – 1689-07-01a
-  gen:father <https://www.wikidata.org/wiki/Q4262007> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75390088> .
-  # oo 1648-02-02 John Leslie, 1st Duke of Rothes, 1630~ - 1681-07-26, https://www.wikidata.org/wiki/Q6244629
-<https://www.wikidata.org/wiki/Q75263448>
-  # Hon. Patrick Crawford, d. 1681-10
-  gen:father <https://www.wikidata.org/wiki/Q4262007> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75390088> .
-  # oo Margaret Crawfurd
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q75263448> , <https://www.wikidata.org/wiki/Q75263449> ;
-	gen:startDate "1664-12-27" .
-
-<https://www.wikidata.org/wiki/Q75263469>
-  # Margaret Lindsay-Crawford
-  gen:father <https://www.wikidata.org/wiki/Q75263448> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75263449> .
-  # oo 1687-04-19 David Boyle, 1st Earl of Glasgow, 1666 - 1733-10-31, https://www.wikidata.org/wiki/Q5231625
-# ----
-#<https://www.wikidata.org/wiki/Q75342285>
-  # Alexander Falconer, 1st Lord Falconer of Halkertoun, 1595 - 1671
-  # 1st Lord Falconer of Halkertoun 1647-12-20
-  # oo Ann Lindsay
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q75342285> , <lindsay.ttl#Ann_Lindsay> ;
-	gen:startDate "1619" .
-
-<#Agnes_Falconer>
-  # Agnes Falconer, 1626 - 1708-03
-  gen:father <https://www.wikidata.org/wiki/Q75342285> ;
-  gen:mother <lindsay.ttl#Ann_Lindsay> .
-  # oo 1648-08-12 Sir George Ogilvy, 2nd Lord Banff, d. 1668-03, https://www.wikidata.org/wiki/Q5543011
-
-# ----
 #<https://www.wikidata.org/wiki/Q16859797>
   # Sir George Ogilvy, 1st Lord Banff, d. 1663-08-11
   # 1st Baronet Ogilvie 1627-07-30
@@ -1385,13 +1316,13 @@
   gen:mother <#Janet_Sutherland> .
   # oo Agnes Falconer, 1626 - 1708-03
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q5543011> , <#Agnes_Falconer> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q5543011> , <https://www.wikidata.org/wiki/Q75342281> ;
 	gen:startDate "1648-08-12" .
 
 <https://www.wikidata.org/wiki/Q75342861>
   # Hon. Sir Alexander Ogilvy, Lord Forglen, 1649a - 1727-03-30
   gen:father <https://www.wikidata.org/wiki/Q5543011> ;
-  gen:mother <#Agnes_Falconer> .
+  gen:mother <https://www.wikidata.org/wiki/Q75342281> .
   # oo Mary Leslie, d. 1748-03-24
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75342861> , <#Mary_Leslie_(died_1748)> ;

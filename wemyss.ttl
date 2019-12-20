@@ -2,6 +2,7 @@
 @prefix gen: <http://jjkoch.de/gen#> .
 @prefix wdata: <https://www.wikidata.org/wiki/> .
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 #<#Sir_David_Wemyss_of_Wemyss_(died_1544)>
   # Sir David Wemyss of Wemyss, d. 1544-05-27b
@@ -31,11 +32,11 @@
   []
     gen:spouse <#Sir_David_Wemyss_of_Wemyss_(died_1597)> , <#Cecilia_Ruthven> ;
 	gen:startDate "1556-05-07" .
-<#Eupheme_Wemyss>
+<https://www.wikidata.org/wiki/Q75266888>
   # Eupheme Wemyss, d. 1593-11-16
   gen:father <#Sir_John_Wemyss_of_Wemyss_(died_1572)> ;
   gen:mother <#Margaret_Otterburn> .
-  # oo 1568-10-04 Rt. Hon. David Carnegie of Kinnaird, d. 1598-04-19, 
+  # oo 1568-10-04 Rt. Hon. David Carnegie of Kinnaird, d. 1598-04-19, https://www.wikidata.org/wiki/Q26237732
 <#James_Wemyss_(died_1608b)>
   # James Wemyss, d. 1608b
   gen:father <#James_Wemyss> .
@@ -108,11 +109,12 @@
     gen:spouse <https://www.wikidata.org/wiki/Q6145328> , <https://www.wikidata.org/wiki/Q7620396> ;
 	gen:startDate "1672-03-28" .
 
-<#Lady_Anne_Wemyss_(died_1643)>
+<https://www.wikidata.org/wiki/Q76027117>
   # Lady Anne Wemyss, d. 1643-09-20
   gen:father <https://www.wikidata.org/wiki/Q4470154> ;
   gen:mother <#Jane_Gray> .
-  # oo 1639-10-18~ Mungo Murray, 2nd Viscount of Stormont, 1580 - 1642-03-11b, murray.ttl#Sir_Mungo_Murray,_2nd_Viscount_of_Stormont
+  # oo 1631-12-30a Alexander Lindsay of Edzell, younger, d. 1638-01-07, https://www.wikidata.org/wiki/Q75262545
+  # oo 1639-10-18~ Mungo Murray, 2nd Viscount of Stormont, 1580 - 1642-03-11b, https://www.wikidata.org/wiki/Q75437317
 <https://www.wikidata.org/wiki/Q5240961>
   # David Wemyss, 2nd Earl of Wemyss, 1610-09-06 - 1679-07
   gen:father <https://www.wikidata.org/wiki/Q4470154> ;
@@ -223,13 +225,13 @@
   gen:father <#Sir_James_Wemyss_of_Bogie,_1st_Baronet> ;
   gen:mother <#Anne_Aytoun> .
   # oo Anne Lockhart, daughter of Sir William Lockhart
-<#John_Wemyss_(born_1686)>
+<https://www.wikidata.org/wiki/Q75866490>
   # John Wemyss, b. 1686-06-25
   gen:father <#John_Wemyss> .
   # and Sarah Keir
-  # oo Lady Catherine Lindsay, b. 1697-02-14
+  # oo Lady Catherine Lindsay, 1697-02-14 - 1768-02-28
   []
-    gen:spouse <#John_Wemyss_(born_1686)> , <lindsay.ttl#Lady_Catherine_Lindsay> .
+    gen:spouse <https://www.wikidata.org/wiki/Q75866490> , <https://www.wikidata.org/wiki/Q75866488> .
 <https://www.wikidata.org/wiki/Q5240964>
   # David Wemyss, 6th Earl of Wemyss, 1721-08-12 – 1787-04-29
   gen:father <https://www.wikidata.org/wiki/Q6145325> ;
@@ -547,7 +549,7 @@
   gen:father <https://www.wikidata.org/wiki/Q5480498> ;
   gen:mother <#Lady_Anne_Frederica_Anson> .
   # oo 1872-06-04 John Robert William Vesey, 4th Viscount de Vesci of Abbey Leix, 1844-05-21 – 1903-07-06, https://www.wikidata.org/wiki/Q23614621
-<#Lady_Lilian_Harriet_Charteris>
+<https://www.wikidata.org/wiki/Q75250149>
   # Lady Lilian Harriet Charteris, 1851-10-17 - 1914-04-11
   gen:father <https://www.wikidata.org/wiki/Q5480498> ;
   gen:mother <#Lady_Anne_Frederica_Anson> .
@@ -712,18 +714,40 @@
 
 
 # ----
-#<#Henry_Sinclair,_3rd_Lord_Sinclair>
+#<https://www.wikidata.org/wiki/Q75389596>
   # Henry Sinclair, 3rd Lord Sinclair, d. 1513-09-09
-  # oo Margaret Hepburn, 1456~ - 1542
+  # oo Margaret Hepburn, 1456~ - 1542-06-11a/-12-14b, daughter of Adam Hepburn, Master of Hailes and Helen Home
   []
-    gen:spouse <#Henry_Sinclair,_3rd_Lord_Sinclair> , <#Margaret_Hepburn> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75389596> , <https://www.wikidata.org/wiki/Q75242707> ;
 	gen:startDate "1488-12-04b" .
 
+<https://www.wikidata.org/wiki/Q75426806>
+  # William Sinclair, 4th Lord Sinclair, d. 1570-07-17a
+  gen:father <https://www.wikidata.org/wiki/Q75389596> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75242707> .
+  # oo Lady Elizabeth Keith, d. 1549-11-24a
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75426806> , <https://www.wikidata.org/wiki/Q75532227> ;
+	gen:startDate "1524-04-17a" .
 <#Katherine_Sinclair>
   # Katherine Sinclair
-  gen:father <#Henry_Sinclair,_3rd_Lord_Sinclair> ;
-  gen:mother <#Margaret_Hepburn> .
+  gen:father <https://www.wikidata.org/wiki/Q75389596> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75242707> .
   # oo 1512~ Sir David Wemyss of Wemyss, d. 1544-05-27b, #Sir_David_Wemyss_of_Wemyss_(died_1544)
+<https://www.wikidata.org/wiki/Q75262455>
+  # Jean Sinclair, d. 1546a/1562b
+  gen:father <https://www.wikidata.org/wiki/Q75389596> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75242707> .
+  # oo Alexander Lindsay, Master of Crawford, the "Wicked Master", d. 1542-07-05~, https://www.wikidata.org/wiki/Q75262453
+
+<https://www.wikidata.org/wiki/Q75426807>
+  # Henry Sinclair, 5th Lord Sinclair, 1527a/1528b - 1601-10-21
+  gen:father <https://www.wikidata.org/wiki/Q75426806> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75532227> .
+  # oo Janet Lindsay, d. 1569-04-08
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75426807> , <https://www.wikidata.org/wiki/Q75532232> ;
+	gen:startDate "1547-06~" .
 
 # ----
 #<https://www.wikidata.org/wiki/Q8017874>
@@ -839,13 +863,6 @@
   # Helen Swinton
   gen:father <https://www.wikidata.org/wiki/Q4720190> .
   # and Alison Skene
-
-# ----
-<lindsay.ttl#Lady_Catherine_Lindsay>
-  # Lady Catherine Lindsay, b. 1697-02-14
-  gen:father <https://www.wikidata.org/wiki/Q7616201> .
-  # and Hon. Emilia Stuart
-  # oo John Wemyss, b. 1686-06-25, wemyss.ttl#John_Wemyss_(born_1686)
 
 # ----
 #<https://www.wikidata.org/wiki/Q17285420>
@@ -1047,19 +1064,26 @@
   # oo 1769-04-24 Thomas Vesey, 1st Viscount de Vesci of Abbey Leix, 1735 - 1804-10-13, https://www.wikidata.org/wiki/Q23619248
 
 # ----
-#<https://www.wikidata.org/wiki/Q26034503>
+<https://www.wikidata.org/wiki/Q26034503>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75253558> .
   # Sir Henry Carstairs Pelly, 3rd Baronet, 1844-04-23 - 1877-06-04
   # oo Lady Lilian Harriet Charteris, 1851-10-17 - 1914-04-11
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q26034503> , <#Lady_Lilian_Harriet_Charteris> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q26034503> , <https://www.wikidata.org/wiki/Q75250149> ;
 	gen:startDate "1872-11-27" .
+
+<https://www.wikidata.org/wiki/Q75262399>
+  # Constance Lilian Pelly, d. 1947-01-08
+  gen:father <https://www.wikidata.org/wiki/Q26034503> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75250149> .
+  # oo 1900-01-25 David Alexander Edward Lindsay, 27th Earl of Crawford, 1871-10-10 - 1940-03-08, https://www.wikidata.org/wiki/Q3703236
 
 # ----
 #<#Sir_Henry_Francis_Redhead_Yorke>
   # Sir Henry Francis Redhead Yorke, d. 1914-01-12
   # oo Lady Lilian Harriet Charteris, 1851-10-17 - 1914-04-11
   []
-    gen:spouse <#Sir_Henry_Francis_Redhead_Yorke> , <#Lady_Lilian_Harriet_Charteris> ;
+    gen:spouse <#Sir_Henry_Francis_Redhead_Yorke> , <https://www.wikidata.org/wiki/Q75250149> ;
 	gen:startDate "1882-07-31" .
 
 # ----

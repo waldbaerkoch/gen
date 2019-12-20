@@ -2,6 +2,7 @@
 @prefix gen: <http://jjkoch.de/gen#> .
 @prefix wdata: <https://www.wikidata.org/wiki/> .
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 #<#Sir_Robert_Carnegie_of_Kinnaird>
   # Sir Robert Carnegie of Kinnaird, d. 1565-01-05
@@ -9,13 +10,14 @@
   # oo Margaret Guthrie, daughter of unknown Guthrie of Lunan
 
 <https://www.wikidata.org/wiki/Q26237732>
+  owl:sameAs <https://www.wikidata.org/wiki/Q26237732> ;
   # Rt. Hon. David Carnegie of Kinnaird, d. 1598-04-19
   gen:father <#Sir_Robert_Carnegie_of_Kinnaird> .
   # and Margaret Guthrie
   # oo Elizabeth Ramsay, daughter of Henry Ramsay and Isabel Kinloch
   # oo Eupheme Wemyss, d. 1593-11-16
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q26237732> , <wemyss.ttl#Eupheme_Wemyss> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q26237732> , <https://www.wikidata.org/wiki/Q75266888> ;
 	gen:startDate "1568-10-04" .
 <#Margaret_Carnegie_(died_1576)>
   # Margaret Carnegie, d. 1576-01-09
@@ -26,16 +28,21 @@
 <https://www.wikidata.org/wiki/Q3703133> # -> Carnegie of Southesk
   # David Carnegie, 1st Earl of Southesk, 1575 - 1658-02
   gen:father <https://www.wikidata.org/wiki/Q26237732> ;
-  gen:mother <wemyss.ttl#Eupheme_Wemyss> .
+  gen:mother <https://www.wikidata.org/wiki/Q75266888> .
 <https://www.wikidata.org/wiki/Q3809141> # Carnegie of Northesk
   # John Carnegie, 1st Earl of Northesk, 1579~ - 1667-01-08
   gen:father <https://www.wikidata.org/wiki/Q26237732> ;
-  gen:mother <wemyss.ttl#Eupheme_Wemyss> .
+  gen:mother <https://www.wikidata.org/wiki/Q75266888> .
 <#Alexander_Carnegie,_of_Vayne_and_Balnamoon>
   # Alexander Carnegie, of Vayne and Balnamoon, d. 1657-10
   gen:father <https://www.wikidata.org/wiki/Q26237732> ;
-  gen:mother <wemyss.ttl#Eupheme_Wemyss> .
+  gen:mother <https://www.wikidata.org/wiki/Q75266888> .
   # oo Giles Blair, daughter of Alexander Blair, 10th of Balthayoch and Elizabeth Halyburton
+<https://www.wikidata.org/wiki/Q75704242>
+  # Agnes Carnegie, d. 1634-12-08
+  gen:father <https://www.wikidata.org/wiki/Q26237732> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75266888> .
+  # oo 1594-12-26 Sir Alexander Falconer, 7th of Halkerton, 1575~ - 1645-06-12a/1646-06-24b, https://www.wikidata.org/wiki/Q75496992 (lindsay.ttl)
 
 <#Sir_John_Carnegie,_2nd_of_Balnamoon>
   # Sir John Carnegie, 2nd of Balnamoon, d. 1662-11-04b
@@ -63,7 +70,7 @@
   gen:birthDate "1575" ;
   gen:deathDate "1658-02" ;
   gen:father <https://www.wikidata.org/wiki/Q26237732> ;
-  gen:mother <wemyss.ttl#Eupheme_Wemyss> .
+  gen:mother <https://www.wikidata.org/wiki/Q75266888> .
   # oo Margaret Lindsay, d. 1614-07-09
   []
     gen:spouse <https://www.wikidata.org/wiki/Q3703133> , <https://www.wikidata.org/wiki/Q56043084> ;
@@ -529,10 +536,10 @@
   gen:birthDate "1579-" ;
   gen:deathDate "1667-01-08" ;
   gen:father <https://www.wikidata.org/wiki/Q26237732> ;
-  gen:mother <wemyss.ttl#Eupheme_Wemyss> .
+  gen:mother <https://www.wikidata.org/wiki/Q75266888> .
   # oo Magdalen Haliburton, 15806a – 1650-03-10
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q3809141> , <#Magdalen_Haliburton> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q3809141> , <https://www.wikidata.org/wiki/Q75274629> ;
 	gen:startDate "1627b" .
   # oo Margery Maule, daughter of Andrew Maule of Guildie
   []
@@ -544,27 +551,27 @@
   gen:birthDate "1627-" ;
   gen:deathDate "1679-12-12" ;
   gen:father <https://www.wikidata.org/wiki/Q3809141> ;
-  gen:mother <#Magdalen_Haliburton> .
+  gen:mother <https://www.wikidata.org/wiki/Q75274629> .
   # oo Lady Jean Maule, d. 1685-11
   []
     gen:spouse <https://www.wikidata.org/wiki/Q3703131> , <erskine.ttl#Lady_Jean_Maule> ;
 	gen:startDate "1637-10-19" .
-<#Lady_Jean_Carnegie_(died_1659)>
+<https://www.wikidata.org/wiki/Q75264086>
   # Lady Jean Carnegie, d. 1659-03-23b
   gen:father <https://www.wikidata.org/wiki/Q3809141> ;
-  gen:mother <#Magdalen_Haliburton> .
-  # oo Alexander Lindsay, Master of Spynie, 1643-06-29a, lindsay.ttl#Alexander_Lindsay,_Master_of_Spynie
-  # oo 1647-08-09 John Lindsay, 6th of Edzell, d. 1671-04, lindsay.ttl#John_Lindsay,_6th_of_Edzell
-<#Lady_Marjorie_Carnegie>
+  gen:mother <https://www.wikidata.org/wiki/Q75274629> .
+  # oo Alexander Lindsay, Master of Spynie, 1643-06-29a, https://www.wikidata.org/wiki/Q75264085
+  # oo 1647-08-09 John Lindsay, 6th of Edzell, d. 1671-04, https://www.wikidata.org/wiki/Q75591951
+<https://www.wikidata.org/wiki/Q76286084>
   # Lady Marjorie Carnegie
   gen:father <https://www.wikidata.org/wiki/Q3809141> ;
-  gen:mother <#Magdalen_Haliburton> .
-  # oo 1637 Jamie Scott, #Jamie_Scott
+  gen:mother <https://www.wikidata.org/wiki/Q75274629> .
+  # oo 1637 Jamie Scott, https://www.wikidata.org/wiki/Q76286085
   # oo 1652-03-26 John Preston, younger of Aidrie
 <#Lady_Magdalene_Carnegie>
   # Lady Magdalene Carnegie
   gen:father <https://www.wikidata.org/wiki/Q3809141> ;
-  gen:mother <#Magdalen_Haliburton> .
+  gen:mother <https://www.wikidata.org/wiki/Q75274629> .
   # oo 1645-02-24 William Graham, 6th of Claverhouse, graham.ttl#William_Graham,_6th_of_Claverhouse
 
 <https://www.wikidata.org/wiki/Q3703130>
@@ -575,7 +582,7 @@
   gen:mother <erskine.ttl#Lady_Jean_Maule> .
   # oo Lady Elizabeth Lindsay, d. 1688-01
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q3703130> , <lindsay.ttl#Lady_Elizabeth_Lindsay_(died_1688)> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q3703130> , <https://www.wikidata.org/wiki/Q75266326> ;
 	gen:startDate "1669-09-02" .
 <#Patrick_Carnegie_of_Lour> # -> Carnegie of Lour
   #Hon. Patrick Carnegie of Lour, 1643a - 1723-12-07
@@ -601,7 +608,7 @@
   []
     gen:spouse <#Alexander_Blair_of_Kinfauns> , <#Margaret_Nairne> ;
 	gen:startDate "1688a" .
-<#Lady_Jean_Carnegie_(died_1680~)>
+<https://www.wikidata.org/wiki/Q75261073>
   # Lady Jean Carnegie, d. 1680~
   gen:father <https://www.wikidata.org/wiki/Q3703131> ;
   gen:mother <erskine.ttl#Lady_Jean_Maule> .
@@ -612,7 +619,7 @@
   gen:birthDate "1675" ;
   gen:deathDate "1729-01-14" ;
   gen:father <https://www.wikidata.org/wiki/Q3703130> ;
-  gen:mother <lindsay.ttl#Lady_Elizabeth_Lindsay_(died_1688)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75266326> .
   # oo Margaret Wemyss, Countess of Wemyss, 1677-04-01 - 1763-03-29
   []
     gen:spouse <https://www.wikidata.org/wiki/Q3703132> , <wemyss.ttl#Margaret_Wemyss,_Countess_of_Wemyss> ;
@@ -621,7 +628,7 @@
   gen:name "Lady Christian Carnegie"@en ;
   gen:deathDate "1744-05-25" ;
   gen:father <https://www.wikidata.org/wiki/Q3703130> ;
-  gen:mother <lindsay.ttl#Lady_Elizabeth_Lindsay_(died_1688)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75266326> .
   # oo 1702-03-31 James Graham, 1st Duke of Montrose, 1682-04 - 1742-01-07, https://www.wikidata.org/wiki/Q2585405
 <#Margaret_Carnegie_(died_1742)>
   # Margaret Carnegie, d. 1742-04-14
@@ -1116,7 +1123,7 @@
     gen:spouse <https://www.wikidata.org/wiki/Q17984554> , <#Margaret_Scrymgeour> ;
 	gen:startDate "1586-11a" .
 
-<#Magdalen_Haliburton>
+<https://www.wikidata.org/wiki/Q75274629>
   # Magdalen Haliburton, 1586a – 1650-03-10
   gen:father <https://www.wikidata.org/wiki/Q17984554> ;
   gen:mother <#Margaret_Scrymgeour> .
@@ -1127,95 +1134,6 @@
   gen:father <https://www.wikidata.org/wiki/Q17984554> ;
   gen:mother <#Margaret_Scrymgeour> .
   # oo James Elphinstone, 1st Lord Coupar, 1587~ - 1669-01, elphinstone.ttl#James_Elphinstone,_1st_Lord_Coupar
-
-# ----
-<#Alexander_Lindsay,_Master_of_Crawford>
-  # Alexander Lindsay, Master of Crawford, d. 1542-07-05~
-  gen:father <https://www.wikidata.org/wiki/Q5236634> ;
-  gen:mother <hay.ttl#Lady_Elizabeth_Hay_1> .
-  # oo Jean Sinclair
-
-<#David_Lindsay,_10th_Earl_of_Crawford>
-  # David Lindsay, 10th Earl of Crawford, 1507~ - 1584-11-01b
-  gen:father <#Alexander_Lindsay,_Master_of_Crawford> .
-  # and Jean Sinclair
-  # oo Margaret Bethune, 1525~ - 1583a
-  []
-    gen:spouse <#David_Lindsay,_10th_Earl_of_Crawford> , <#Margaret_Bethune> ;
-	gen:startDate "1546-04-10~" .
-
-<#Lady_Helen_Lindsay>
-  # Lady Helen Lindsay
-  gen:father <#David_Lindsay,_10th_Earl_of_Crawford> ;
-  gen:mother <#Margaret_Bethune> .
-  # oo Sir David Lindsay, Lord Edzell, d. 1610-12, https://www.wikidata.org/wiki/Q16859740
-
-<#Walter_Lindsay_(died_1476)>
-  # Walter Lindsay, d. 1476
-  gen:father <https://www.wikidata.org/wiki/Q5236633> .
-  # and Marjory Ogilvy
-  # oo Isabel Livingstone
-
-<#Sir_David_Lindsay,_of_Beaufort_and_Edzell>
-  # Sir David Lindsay, of Beaufort and Edzell, d.1528
-  gen:father <#Walter_Lindsay_(died_1476)> .
-  # and Isabel Livingstone
-  # oo Katherine Fotheringham
-
-<#Walter_Lindsay_(died_1513)>
-  # Walter Lindsay, d. 1513-09-09
-  gen:father <#Sir_David_Lindsay,_of_Beaufort_and_Edzell> .
-  # and Katherine Fotheringham
-  # oo ??? Erskine
-
-<https://www.wikidata.org/wiki/Q5236636>
-  # David Lindsay, 9th Earl of Crawford, 1513b - 1558-09-20
-  gen:father <#Walter_Lindsay_(died_1513)> .
-  # and ??? Erskine
-  # oo Katherine Campbell, d. 1578-10-01, daughter of Sir John Campbell, 1st of Cawdor and Muriel Calder
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q5236636> , <https://www.wikidata.org/wiki/Q18922085> ;
-	gen:startDate "1550" .
-
-<https://www.wikidata.org/wiki/Q16859740>
-  # Sir David Lindsay, Lord Edzell, d. 1610-12
-  gen:father <https://www.wikidata.org/wiki/Q5236636> ;
-  gen:mother <https://www.wikidata.org/wiki/Q18922085> .
-  # oo Lady Helen Lindsay
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q16859740> , <#Lady_Helen_Lindsay> .
-
-<https://www.wikidata.org/wiki/Q56043084>
-  # Margaret Lindsay, d. 1614-07-09
-  gen:father <https://www.wikidata.org/wiki/Q16859740> ;
-  gen:mother <#Lady_Helen_Lindsay> .
-  # oo 1595-10-08 David Carnegie, 1st Earl of Southesk, 1575 - 1658-02, https://www.wikidata.org/wiki/Q3703133
-
-#<lindsay.ttl#John_Lindsay,_6th_of_Edzell>
-  # John Lindsay, 6th of Edzell, d. 1671-04
-  # son of Alexander Lindsay, 1st of Canterland
-  # and Jean Murray
-  # oo Lady Jean Carnegie, d. 1659-03-23b
-  []
-    gen:spouse <lindsay.ttl#John_Lindsay,_6th_of_Edzell> , <carnegie.ttl#Lady_Jean_Carnegie_(died_1659)> ;
-	gen:startDate "1647-08-09" .
-
-<lindsay.ttl#Lady_Elizabeth_Lindsay_(died_1688)>
-  # Lady Elizabeth Lindsay, d. 1688-01
-  gen:father <https://www.wikidata.org/wiki/Q4262007> ;
-  gen:mother <hamilton.ttl#Lady_Margaret_Hamilton_(born_1605a)> .
-  # oo 1669-09-02 David Carnegie, 3rd Earl of Northesk, 1643-11 - 1688-10-03, https://www.wikidata.org/wiki/Q3703130
-<https://www.wikidata.org/wiki/Q50824369>
-  # Lady Christian Lindsay, d. 1704-10-26
-  gen:father <https://www.wikidata.org/wiki/Q4262007> ;
-  gen:mother <hamilton.ttl#Lady_Margaret_Hamilton_(born_1605a)> .
-  # oo 1648-04-13 John Hamilton, 4th Earl of Haddington, 1626 - 1669-08-31, https://www.wikidata.org/wiki/Q6237428
-# ----
-<#Margaret_Bethune>
-  # Margaret Bethune, 1525~ - 1583a
-  gen:father <https://www.wikidata.org/wiki/Q1173680> .
-  # and Marion Ogilvy
-  # oo 1546-04-10~ 
 
 # ----
 #<https://www.wikidata.org/wiki/Q4444828>
@@ -1254,10 +1172,10 @@
 	gen:startDate "1640a" .
 
 <https://www.wikidata.org/wiki/Q75263449>
-  # Margaret Crawfurd
+  # Margaret Crawfurd, d. 1680
   gen:father <https://www.wikidata.org/wiki/Q75263451> ;
   gen:mother <https://www.wikidata.org/wiki/Q75417993> .
-  # oo 1664-12-27 Hon. Patrick Crawford, d. 1681-10, , https://www.wikidata.org/wiki/Q75263448
+  # oo 1664-12-27 Hon. Patrick Crawford, , 1646-09 - 1681-10, https://www.wikidata.org/wiki/Q75263448 (lindsay.ttl)
 
 # ----
 <#Lady_Mary_Maitland>
@@ -1485,13 +1403,34 @@
   # oo 1900-12-18 Bertrand Edward Dawson, 1st Viscount Dawson of Penn, 1865 - 1945-03-07, https://www.wikidata.org/wiki/Q4167328
 
 # ----
-<#Jamie_Scott>
-  # Jamie Scott
-  gen:father <https://www.wikidata.org/wiki/Q7528051> .
+<https://www.wikidata.org/wiki/Q76286087>
+  owl:sameAs <https://www.wikidata.org/wiki/Q7528051> .
+  # Sir John Scot, of Knightspottie, later of Tarvit (Scotstarvit), 1585 - 1670
+  # son of Robert Scot, younger of Knights-Spottie
+  # oo Anna Drummond
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76286087> , <drummond.ttl#Anna_Drummond> .
+
+<https://www.wikidata.org/wiki/Q76286085>
+  # Sir James Scot, d. 1650
+  gen:father <https://www.wikidata.org/wiki/Q76286087> ;
+  gen:mother <drummond.ttl#Anna_Drummond> .
   # oo Lady Marjorie Carnegie
   []
-    gen:spouse <#Jamie_Scott> , <#Lady_Marjorie_Carnegie> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q76286085> , <https://www.wikidata.org/wiki/Q76286084> ;
 	gen:startDate "1637" .
+
+<https://www.wikidata.org/wiki/Q75262512>
+  # David Scott of Scotstarvet, d. 1718
+  gen:father <https://www.wikidata.org/wiki/Q76286085> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76286084> .
+  # oo Elizabeth Ellis, daughter of John Ellis, of Elliston
+
+<https://www.wikidata.org/wiki/Q75262510>
+  # Elizabeth Scott, d. 1768-09-04
+  gen:father <https://www.wikidata.org/wiki/Q75262512> .
+  # and Elizabeth Ellis
+  # oo 1718-07-31 Alexander Lindsay, 4th Earl of Balcarres, d. 1736-07-25, https://www.wikidata.org/wiki/Q7615670
 
 # ----
 #<https://www.wikidata.org/wiki/Q18168555>
