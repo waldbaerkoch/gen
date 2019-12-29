@@ -56,7 +56,7 @@
   # 2nd Duke of Norfolk 1514-02-01
   gen:father <https://www.wikidata.org/wiki/Q953120> ;
   gen:mother <https://www.wikidata.org/wiki/Q61492901> .
-  # oo Elizabeth Tilney, 1446b - 1497-04-13
+  # oo Elizabeth Tilney, 1446b - 1497-04-13 (wentworth.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q709340> , <https://www.wikidata.org/wiki/Q3435025> ;
 	gen:startDate "1472-04-30" .
@@ -2811,19 +2811,19 @@
   []
     gen:spouse <#George_Howard_of_Great_Bookham> , <#Ann_Kidder> .
 
-<#Thomas_Howard,_7th_Baron_Howard_of_Effingham>
+<https://www.wikidata.org/wiki/Q75270899>
   gen:name "Thomas Howard, 7th Baron Howard of Effingham"@en ;
   gen:birthDate "1682-07-07" ;
   gen:deathDate "1725-07-13" ;
   gen:father <https://www.wikidata.org/wiki/Q1441549> ;
   gen:mother <pelham.ttl#Philadelphia_Pelham> .
-  # oo Mary Wentworth, d. 1718-05-29, daughter of Ruishe Wentworth
+  # oo Mary Wentworth, d. 1718-05-29
   []
-    gen:spouse <#Thomas_Howard,_7th_Baron_Howard_of_Effingham> , <#Mary_Wentworth> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75270899> , <https://www.wikidata.org/wiki/Q75277746> ;
 	gen:startDate "1706/1707-02-25" .
   # oo Elizabeth Rotheram, d. 1741-11-30, daughter of John Rotheram
   []
-    gen:spouse <#Thomas_Howard,_7th_Baron_Howard_of_Effingham> , <#Elizabeth_Rotheram> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75270899> , <#Elizabeth_Rotheram> ;
 	gen:startDate "1722-01-25" .
 <https://www.wikidata.org/wiki/Q5481333>
   gen:name "Francis Howard, 1st Earl of Effingham"@en ;
@@ -2854,13 +2854,13 @@
 
 <#Mary_Howard_(died_1740)>
   # Hon. Mary Howard, 1710 - 1740-02-23
-  gen:father <#Thomas_Howard,_7th_Baron_Howard_of_Effingham> ;
-  gen:mother <#Mary_Wentworth> .
+  gen:father <https://www.wikidata.org/wiki/Q75270899> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75277746> .
   # oo 1733-06-21 George Venables-Vernon, 1st Baron Vernon, 1709-02-09 - 1780-08-21, https://www.wikidata.org/wiki/Q5545473
 <#Anne_Howard_(died_1775)>
   # Hon. Anne Howard, d. 1775-09-12
-  gen:father <#Thomas_Howard,_7th_Baron_Howard_of_Effingham> ;
-  gen:mother <#Mary_Wentworth> .
+  gen:father <https://www.wikidata.org/wiki/Q75270899> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75277746> .
   # oo 1729-04-14 Rt. Hon. Sir William Yonge, 4th Baronet, 1693~ - 1755-08-10, https://www.wikidata.org/wiki/Q7529839
 <https://www.wikidata.org/wiki/Q7619942>
   gen:name "Thomas Howard, 2nd Earl of Effingham"@en ;
@@ -2876,9 +2876,9 @@
   # Rt. Hon. Sir George Howard, 1718-06-17 - 1796-07-16
   gen:father <https://www.wikidata.org/wiki/Q16845227> ;
   gen:mother <#Mary_Moreton> .
-  # oo Lady Lucy Wentworth, d. 1771-04-27, daughter of Sir William Wentworth and Isabella Apsley
+  # oo Lady Lucy Wentworth, d. 1771-04-27
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q4140861> , <#Lady_Lucy_Wentworth> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q4140861> , <https://www.wikidata.org/wiki/Q75280510> ;
 	gen:startDate "1747" .
   # oo Elizabeth Beckford, 1725-02-18 - 1791-10-13, daughter of Peter Beckford and Bathsuba Hering
   []
@@ -5639,6 +5639,11 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5166776> , <https://www.wikidata.org/wiki/Q126734> ;
 	gen:startDate "1714-08~" .
+<https://www.wikidata.org/wiki/Q75253459>
+  # Elizabeth Darcy, d. 1720-10
+  gen:father <https://www.wikidata.org/wiki/Q53215035> ;
+  gen:mother <#Bridget_Sutton> .
+  # oo 1708-05 Sir Ralph Milbanke, 4th Baronet, 1688~ - 1748-05-09, https://www.wikidata.org/wiki/Q75468092
 # ----
 #<https://www.wikidata.org/wiki/Q7174092>
   # Sir Peter Frescheville of Staveley, 1571~ – 1634-04-09
@@ -5680,6 +5685,21 @@
   gen:father <https://www.wikidata.org/wiki/Q7350164> ;
   gen:mother <#Mary_St._Leger> .
   # oo Hon. John Darcy, 1659-11-05 - 1688-06-07, https://www.wikidata.org/wiki/Q53215035
+# ----
+<https://www.wikidata.org/wiki/Q75468092>
+  # Sir Ralph Milbanke, 4th Baronet, 1688~ - 1748-05-09
+  gen:father <https://www.wikidata.org/wiki/Q75468096> ; # Sir Mark Milbanke, 2nd Baronet
+  gen:mother <https://www.wikidata.org/wiki/Q75468097> . # Jane Carr
+  # oo Elizabeth Darcy, d. 1720-10
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75468092> , <https://www.wikidata.org/wiki/Q75253459> ;
+	gen:startDate "1708-05" .
+
+<https://www.wikidata.org/wiki/Q76291203>
+  # Bridget Milbanke
+  gen:father <https://www.wikidata.org/wiki/Q75468092> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75253459> .
+  # oo Sir Butler Cavendish Wentworth, 2nd Baronet, 1710~ – 1741-12-03, https://www.wikidata.org/wiki/Q76291202
 
 # ----
 #<#Sir_Thomas_Parker>

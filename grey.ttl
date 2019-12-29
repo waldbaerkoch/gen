@@ -2,6 +2,7 @@
 @prefix gen: <http://jjkoch.de/gen#> .
 @prefix wdata: <https://www.wikidata.org/wiki/> .
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
   # Richard de Grey
 
@@ -2344,7 +2345,7 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5481103> , <#Elizabeth_Grey> .
 
-# ----
+# ====
 <https://www.wikidata.org/wiki/Q3133191>
   # Henry de Hastings, 1st Baron Hastings, 1235 - 1269-03-05
   gen:father <https://www.wikidata.org/wiki/Q23969848> ;
@@ -2354,24 +2355,98 @@
     gen:spouse <https://www.wikidata.org/wiki/Q3133191> , <https://www.wikidata.org/wiki/Q61911167> .
 
 <https://www.wikidata.org/wiki/Q6238201>
-  # Sir John de Hastings, 1st Lord Hastings, 1262-05-06 - 1313-20-28
+  # Sir John de Hastings, 1st Lord Hastings, 1262-05-06 - 1313-02-10
+  # 1st Lord Hastings 1295-05-24
   gen:father <https://www.wikidata.org/wiki/Q3133191> ;
   gen:mother <https://www.wikidata.org/wiki/Q61911167> .
   # oo Isabel de Valence, d. 1305-10-05
   []
     gen:spouse <https://www.wikidata.org/wiki/Q6238201> , <https://www.wikidata.org/wiki/Q61911164> .
+  # oo Isabel le Despenser, d. 1334-12-04
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6238201> , <https://www.wikidata.org/wiki/Q24089269> .
 
 <https://www.wikidata.org/wiki/Q61911161>
   # Elizabeth de Hastings
   gen:father <https://www.wikidata.org/wiki/Q6238201> ;
   gen:mother <https://www.wikidata.org/wiki/Q61911164> .
   # oo Sir Roger de Grey, 1st Lord Grey (of Ruthin), 1298 - 1353-03-06, https://www.wikidata.org/wiki/Q7358266
+<https://www.wikidata.org/wiki/Q18671482>
+  # Sir Hugh de Hastings, of Sutton, 1310~ - 1347-07-30~
+  gen:father <https://www.wikidata.org/wiki/Q6238201> ;
+  gen:mother <https://www.wikidata.org/wiki/Q24089269> .
+  # oo Margery Foliot, b. 1312~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q18671482> , <https://www.wikidata.org/wiki/Q75757719> ;
+	gen:startDate "1330-05-18" .
+
+<https://www.wikidata.org/wiki/Q75677176>
+  # Sir Hugh Hastings, d. 1369~
+  gen:father <https://www.wikidata.org/wiki/Q18671482> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75757719> .
+  # oo Margaret de Everingham
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75677176> , <https://www.wikidata.org/wiki/Q75757722> .
+
+<https://www.wikidata.org/wiki/Q75757724>
+  # Sir Hugh Hastings, d. 1386-11-06
+  gen:father <https://www.wikidata.org/wiki/Q75677176> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75757722> .
+  # oo Anne le Despenser, d. 1426-11-31~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75757724> , <https://www.wikidata.org/wiki/Q75757727> ;
+	gen:startDate "1376-11-01b" .
+
+<https://www.wikidata.org/wiki/Q18528181>
+  # Sir Edward Hastings, 1382-05-21 - 1438-01-06
+  # 8th Lord Hastings, de jure 1396-11-02
+  gen:father <https://www.wikidata.org/wiki/Q75757724> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75757727> .
+  # oo Muriel de Dinham
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q18528181> , <https://www.wikidata.org/wiki/Q75738131> .
+
+<https://www.wikidata.org/wiki/Q75746129>
+  # John Hastings, 1410 - 1477-04-09
+  # 9th Lord Hastings, de jure 1438-01-06
+  gen:father <https://www.wikidata.org/wiki/Q18528181> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75738131> .
+  # oo Anne Morley
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75746129> , <https://www.wikidata.org/wiki/Q75746131> ;
+	gen:startDate "1434-04-21a" .
+
+<https://www.wikidata.org/wiki/Q24029567>
+  # Sir Hugh Hastings, 1437 - 1488-06-07
+  # 10th Lord Hastings, de jure 1477-04-09
+  gen:father <https://www.wikidata.org/wiki/Q75746129> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75746131> .
+  # oo Anne Gascoigne
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q24029567> , <https://www.wikidata.org/wiki/Q75757729> ;
+	gen:startDate "1455-04-12b" .
+
+<https://www.wikidata.org/wiki/Q75793814>
+  # Sir Bryan Hastings, 1476~ - 1537~/1540-10
+  gen:father <https://www.wikidata.org/wiki/Q24029567> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75757729> .
+  # oo Agnes Portington, b. 1489
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75793814> , <https://www.wikidata.org/wiki/Q75792683> .
+
+<https://www.wikidata.org/wiki/Q75939637>
+  # Anne Hastings, 1510~ - 1603
+  gen:father <https://www.wikidata.org/wiki/Q75793814> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75792683> .
+  # oo John Wentworth, 1506 - 1544-08, https://www.wikidata.org/wiki/Q75939647
+
 # ----
 <https://www.wikidata.org/wiki/Q61911167>
   # Joan de Cantilupe
   gen:father <https://www.wikidata.org/wiki/Q61911170> ;
   gen:mother <https://www.wikidata.org/wiki/Q61911171> .
   # oo Henry de Hastings, 1st Baron Hastings, 1235 - 1269-03-05, https://www.wikidata.org/wiki/Q3133191
+
 # ----
 <https://www.wikidata.org/wiki/Q940171>
   # William de Valence, 1st Earl of Pembroke, 1225 - 1296-05-16
@@ -2392,6 +2467,84 @@
   gen:father <https://www.wikidata.org/wiki/Q61911174> ;
   gen:mother <https://www.wikidata.org/wiki/Q61911175> .
   # oo William de Valence, 1st Earl of Pembroke, 1225 - 1296-05-16, https://www.wikidata.org/wiki/Q940171
+
+# ----
+<https://www.wikidata.org/wiki/Q24089269>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75259982> ;
+  # Isabel le Despenser, d. 1334-12-04
+  gen:father <https://www.wikidata.org/wiki/Q2685455> ; # Hugh le Despenser, 1st Earl of Winchester
+  gen:mother <https://www.wikidata.org/wiki/Q3802304> . # Isabella de Beauchamp
+  # oo Sir John de Hastings, 1st Lord Hastings, 1262-05-06 - 1313-20-28, https://www.wikidata.org/wiki/Q6238201
+
+<https://www.wikidata.org/wiki/Q4208487>
+  # Edward le Despenser, 1st Lord le Despenser, 1336-03-24 - 1375-11-11
+  # 1st Lord le Despenser 1357-12-15
+  gen:father <https://www.wikidata.org/wiki/Q3432590> ; # Sir Edward le Despenser
+  gen:mother <https://www.wikidata.org/wiki/Q68110236> . # Anne de Ferrers
+  # oo Elizabeth de Burghersh, 3rd Baroness Burghersh, 1342~ - 1402-08/1409-07-26 (fitzgerald.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4208487> , <https://www.wikidata.org/wiki/Q5363795> ;
+	gen:startDate "1354-08-02b" .
+
+<https://www.wikidata.org/wiki/Q75757727>
+  # Anne le Despenser, d. 1426-11-31~
+  gen:father <https://www.wikidata.org/wiki/Q4208487> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5363795> .
+  # oo 1376-11-01b Sir Hugh Hastings, d. 1386-11-06, https://www.wikidata.org/wiki/Q75757724
+
+# ----
+#<https://www.wikidata.org/wiki/Q19059447>
+  # Jordan Foliot, 1249~ - 1298
+  # oo Margery de Newmarch, daughter of Adam de Newmarch and Isabel de Mowbray
+
+<https://www.wikidata.org/wiki/Q75431436>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75650602> ;
+  # Sir Richard Foliot, d. 1317-04-18a/-07-23b
+  gen:father <https://www.wikidata.org/wiki/Q19059447> .
+  # and Margery de Newmarch
+  # oo Joan de Braose, 1290b - 1324-05-11
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75431436> , <https://www.wikidata.org/wiki/Q75431434> ;
+	gen:startDate "1310-09-16a" .
+
+<https://www.wikidata.org/wiki/Q75757719>
+  # Margery Foliot, b. 1312~
+  gen:father <https://www.wikidata.org/wiki/Q75431436> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75431434> .
+  # oo 1330-05-18 Sir Hugh de Hastings, of Sutton, 1310~ - 1347-07-30~, https://www.wikidata.org/wiki/Q18671482
+# ----
+<https://www.wikidata.org/wiki/Q75431434>
+  # Joan de Braose, 1290b - 1324-05-11
+  gen:father <https://www.wikidata.org/wiki/Q542597> ;
+  gen:mother <https://www.wikidata.org/wiki/Q61963426> .
+  # oo 1310-09-16a Sir Richard Foliot, d. 1317-04-18a/-07-23b, https://www.wikidata.org/wiki/Q75431436
+
+# ----
+<https://www.wikidata.org/wiki/Q75738131>
+  # Muriel de Dinham
+  gen:father <https://www.wikidata.org/wiki/Q75744090> . # Sir John de Dinham
+  # oo Sir Edward Hastings, 1382-05-21 - 1438-01-06, https://www.wikidata.org/wiki/Q18528181
+
+# ----
+<https://www.wikidata.org/wiki/Q75746131>
+  # Anne Morley
+  gen:father <https://www.wikidata.org/wiki/Q7795490> ; # Thomas Morley, 5th Baron Morley
+  gen:mother <https://www.wikidata.org/wiki/Q75793739> . # Isabel de la Pole
+  # oo 1434-04-21a John Hastings, 1410 - 1477-04-09, https://www.wikidata.org/wiki/Q75746129
+
+# ----
+<https://www.wikidata.org/wiki/Q75757729>
+  # Anne Gascoigne
+  gen:father <https://www.wikidata.org/wiki/Q75746132> . # Sir William Gascoigne
+  # oo 1455-04-12b Sir Hugh Hastings, 1437 - 1488-06-07, https://www.wikidata.org/wiki/Q24029567
+
+# ----
+<https://www.wikidata.org/wiki/Q75792683>
+  # Agnes Portington, b. 1489
+  gen:father <https://www.wikidata.org/wiki/Q75939634> . # Thomas Portyngton
+  # oo Sir Bryan Hastings, 1476~ - 1537~/1540-10, https://www.wikidata.org/wiki/Q75793814
+
+# ====
 
 # ----
 #<https://www.wikidata.org/wiki/Q61911193>
