@@ -4,21 +4,21 @@
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
 
 <https://www.wikidata.org/wiki/Q3809432>
-  gen:name "John Lyon, Lord of Glamis"@en ;
+  gen:name "John Lyon, 1st of Glamis"@en ;
   gen:birthDate "1340~" ;
   gen:deathDate "1382a/1104~b" ;
   gen:father <#Sir_John_Lyon> .
-  # oo Princess Johanna (Jean) of Scotland
+  # oo Jean Stewart, Princess of Scotland, 1351a/1355b - 1404a
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q3809432> , <#Princess_Johanna_(Jean)_of_Scotland> ;
-	gen:startDate "1376" .
+    gen:spouse <https://www.wikidata.org/wiki/Q3809432> , <https://www.wikidata.org/wiki/Q75382392> ;
+	gen:startDate "1376-06-27a/-10-04b" .
 
 <#Sir_John_Lyon_of_Glamis>
   gen:name "Sir John Lyon of Glamis"@en ;
   gen:birthDate "1377~" ;
   gen:deathDate "1435~" ;
   gen:father <https://www.wikidata.org/wiki/Q3809432> ;
-  gen:mother <#Princess_Johanna_(Jean)_of_Scotland> .
+  gen:mother <https://www.wikidata.org/wiki/Q75382392> .
   []
     gen:spouse <#Sir_John_Lyon_of_Glamis> , <graham.ttl#Elizabeth_Graham> .
 
@@ -676,16 +676,6 @@
     gen:spouse <#John_George_Lyon> , <wemyss.ttl#Lady_Mary_Pamela_Madeline_Sibell_Charteris> ;
 	gen:startDate "1943-04-14" .
 
-
-# --------
-<#Princess_Johanna_(Jean)_of_Scotland>
-  gen:father <https://www.wikidata.org/wiki/Q312592> ; # Robert II of Scotland
-  gen:mother <https://www.wikidata.org/wiki/Q1987004> . # Elizabeth Mure
-  # oo 1376 John Lyon, Lord of Glamis, 1340~ - 1382a/1104~b, https://www.wikidata.org/wiki/Q3809432
-<https://www.wikidata.org/wiki/Q4444832>
-  # David Stewart, Earl of Strathearn, 1357 - 1386
-  gen:father <https://www.wikidata.org/wiki/Q312592> ; # Robert II of Scotland
-  gen:mother <https://www.wikidata.org/wiki/Q271445> . # Euphemia de Ross
 
 # --------
 <#Agnes_Crichton>
