@@ -2,6 +2,7 @@
 @prefix gen: <http://jjkoch.de/gen#> .
 @prefix wdata: <https://www.wikidata.org/wiki/> .
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 #<#Sir_Malcolm_de_Drummond,_10th_Thane_of_Lennox>
   # Sir Malcolm de Drummond, 10th Thane of Lennox, 1295a – 1346-10-17
@@ -1813,31 +1814,38 @@
   # Sir Hugh Cholmondeley, 1513 - 1601-07-23
   # oo Mary Holford, 1563-01-20 - 1626-08-15, daughter of Christopher Holford
 
-<#Thomas_Cholmondeley_(died_1652)>
+<https://www.wikidata.org/wiki/Q75328483>
   # Thomas Cholmondeley, of Vale Royal, 1601b - 1652
   gen:father <https://www.wikidata.org/wiki/Q5930321> .
   # and Mary Holford
   # oo Elizabeth Minshull, daughter of John Minshull
   []
-    gen:spouse <#Thomas_Cholmondeley_(died_1652)> , <#Elizabeth_Minshull> .
+    gen:spouse <https://www.wikidata.org/wiki/Q75328483> , <https://www.wikidata.org/wiki/Q75826593> .
 
 <https://www.wikidata.org/wiki/Q28099930>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75826598> ;
+  owl:sameAs <https://www.wikidata.org/wiki/Q76105484> ;
   # Thomas Cholmondeley, of Vale Royal, 1627-09-15 - 1702-02-26
-  gen:father <#Thomas_Cholmondeley_(died_1652)> ;
-  gen:mother <#Elizabeth_Minshull> .
+  gen:father <https://www.wikidata.org/wiki/Q75328483> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75826593> .
   # oo Jane Tollemache
-  # oo Anne St. John, daughter of Sir Walter St. John, 3rd Baronet (1622-05 – 1708-07-03, https://www.wikidata.org/wiki/Q7529409) and 1651b Johanna St John (1631 - 1705, daughter of https://www.wikidata.org/wiki/Q3374708 and Johanna Altham)
+  # oo Anne St. John, d. 1742-12
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q28099930> , <#Anne_St._John> .
+    gen:spouse <https://www.wikidata.org/wiki/Q28099930> , <https://www.wikidata.org/wiki/Q75826599> .
 
 <https://www.wikidata.org/wiki/Q24249784>
   # Charles Cholmondeley, of Vale Royal, 1685-01-12 - 1756-03-30
   gen:father <https://www.wikidata.org/wiki/Q28099930> ;
-  gen:mother <#Anne_St._John> .
+  gen:mother <https://www.wikidata.org/wiki/Q75826599> .
   # oo Essex Pitt
   []
     gen:spouse <https://www.wikidata.org/wiki/Q24249784> , <innes.ttl#Essex_Pitt> ;
 	gen:startDate "1714-07-22" .
+<https://www.wikidata.org/wiki/Q76105483>
+  # Joanna Cholmondeley, b. 1692
+  gen:father <https://www.wikidata.org/wiki/Q28099930> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75826599> .
+  # oo Amos Meredith, 1688 - 1744-05-06, https://www.wikidata.org/wiki/Q75674990 (curzon.ttl)
 
 <https://www.wikidata.org/wiki/Q26791861>
   # Thomas Cholmondeley, of Vale Royal, 1726-06-24 - 1779-06-02
@@ -1888,6 +1896,32 @@
   []
     gen:spouse <#Thomas_Richard_Cholmondeley> , <herbert.ttl#Lady_Margaret_Augusta_Herbert> ;
 	gen:startDate "1897-02-16" .
+# ----
+#<https://www.wikidata.org/wiki/Q7529409>
+  # Sir Walter St. John, 3rd Baronet, 1622-05 – 1708-07-03
+  # oo Joanna St John, 1631 - 1705
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7529409> , <https://www.wikidata.org/wiki/Q75275174> ;
+	gen:startDate "1651b" .
+
+<https://www.wikidata.org/wiki/Q75826599>
+  # Anne St. John, d. 1742-12
+  gen:father <https://www.wikidata.org/wiki/Q7529409> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75275174> .
+  # oo Thomas Cholmondeley, of Vale Royal, 1627-09-15 - 1702-02-26, https://www.wikidata.org/wiki/Q28099930
+# ----
+<https://www.wikidata.org/wiki/Q3374708>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75434836> .
+  # Sir Oliver St. John, of Longthorpe, 1598~ - 1673-12-31
+  # oo Johanna Altham
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3374708> , <https://www.wikidata.org/wiki/Q75443626> .
+
+<https://www.wikidata.org/wiki/Q75275174>
+  # Johanna St John, 1631 - 1705
+  gen:father <https://www.wikidata.org/wiki/Q3374708> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75443626> .
+  # oo 1651b Sir Walter St. John, 3rd Baronet, 1622-05 – 1708-07-03, https://www.wikidata.org/wiki/Q7529409
 
 # ----
 #<https://www.wikidata.org/wiki/Q30322514>
