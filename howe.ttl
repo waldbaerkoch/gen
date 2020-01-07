@@ -2,52 +2,61 @@
 @prefix gen: <http://jjkoch.de/gen#> .
 @prefix wdata: <https://www.wikidata.org/wiki/> .
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 
 #<https://www.wikidata.org/wiki/Q7527848>
   # Sir John Howe, 1st Baronet, d. 1671
   # 1st Baronet Howe 1660-09-22
+  # son of John Howe
+  # and Jane Grobham, daughter of Nicholas Grobham
   # oo Bridget Rich, daughter of Thomas Rich
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7527848> , <https://www.wikidata.org/wiki/Q75761367> .
 
 <https://www.wikidata.org/wiki/Q7528590>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75761365> ;
   # Sir Richard Grubman Howe, 2nd Baronet, 1621-08-28 – 1703-05-03
-  gen:father <https://www.wikidata.org/wiki/Q7527848> .
-  # and Bridget Rich
+  gen:father <https://www.wikidata.org/wiki/Q7527848> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75761367> .
   # oo Anne King, daughter of Dr. John King and Joan Freeman
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7528590> , <https://www.wikidata.org/wiki/Q75761370> .
 <https://www.wikidata.org/wiki/Q6236456>
   # John Grubham Howe, 1625 - 1679
-  gen:father <https://www.wikidata.org/wiki/Q7527848> .
-  # and Bridget Rich
+  gen:father <https://www.wikidata.org/wiki/Q7527848> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75761367> .
   # oo Lady Annabella Scrope, 1629 - 1703-03-21 (manners.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q6236456> , <https://www.wikidata.org/wiki/Q75502033> .
 
 <https://www.wikidata.org/wiki/Q16843257>
   # Sir Richard Grobham Howe, 3rd Baronet, 1651~ - 1730-07-03
-  gen:father <https://www.wikidata.org/wiki/Q7528590> .
-  # and Anne King
+  gen:father <https://www.wikidata.org/wiki/Q7528590> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75761370> .
   # oo Mary Thynne, d. 1735-09-05
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q16843257> , <thynne.ttl#Mary_Thynne> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q16843257> , <https://www.wikidata.org/wiki/Q75761379> ;
 	gen:startDate "1673-08-12" .
-<https://www.wikidata.org/wiki/Q7439299>
+<https://www.wikidata.org/wiki/Q7439299> # -> Viscount Howe
   # Scrope Howe, 1st Viscount Howe, 1648-11 - 1712-01-26
-  # 1st Viscount Howe, 1st Baron of Glenawly, co. Fermanagh 1701-05-16
   gen:father <https://www.wikidata.org/wiki/Q6236456> ;
   gen:mother <https://www.wikidata.org/wiki/Q75502033> .
-  # oo Lady Anne Manners, b. 1655~
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q7439299> , <manners.ttl#Lady_Anne_Manners_(born_1655~)> ;
-	gen:startDate "1672-04" .
-  # oo Hon. Juliana Alington, d. 1747-09
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q7439299> , <russell.ttl#Juliana_Alington> ;
-	gen:startDate "1698" .
 <https://www.wikidata.org/wiki/Q14949392>
   # Rt. Hon. John Grubham Howe, 1657 - 1721
   gen:father <https://www.wikidata.org/wiki/Q6236456> ;
   gen:mother <https://www.wikidata.org/wiki/Q75502033> .
   # oo Mary Baskerville, daughter of Humphrey Baskerville
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q14949392> , <https://www.wikidata.org/wiki/Q75565420> .
+<https://www.wikidata.org/wiki/Q5079189>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75733265> ;
+  # Charles Howe, 1661 -  1742
+  gen:father <https://www.wikidata.org/wiki/Q6236456> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75502033> .
+  # oo Eleanor Pargiter, daughter of Sir William Pargiter
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5079189> , <https://www.wikidata.org/wiki/Q75761385> .
 <https://www.wikidata.org/wiki/Q5369144>
   # Emanuel Scrope Howe, d. 1709-09-26
   gen:father <https://www.wikidata.org/wiki/Q6236456> ;
@@ -55,47 +64,36 @@
   # oo Ruperta Hughes, 1671 - 1741-07-24~
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5369144> , <https://www.wikidata.org/wiki/Q75374636> .
-<#Bridget_Howe>
+<https://www.wikidata.org/wiki/Q75761394>
   # Bridget Howe
   gen:father <https://www.wikidata.org/wiki/Q6236456> ;
   gen:mother <https://www.wikidata.org/wiki/Q75502033> .
   # oo 1673-05-01~ John Bennet, 1st Baron Ossulston, 1616-07-05 - 1695-02-11, https://www.wikidata.org/wiki/Q6221539 (cecil.ttl)
   # TODO move here
-<#Elizabeth_Howe>
+<https://www.wikidata.org/wiki/Q75497191>
   # Elizabeth Howe
   gen:father <https://www.wikidata.org/wiki/Q6236456> ;
-  gen:mother <#Lady_Annabella_Scrope> .
+  gen:mother <https://www.wikidata.org/wiki/Q75502033> .
   # oo 1674 Sir John Guise, 2nd Baronet, 1654~ – 1695-11, https://www.wikidata.org/wiki/Q26262856 (howard.ttl)
   # TODO move here
 
-<https://www.wikidata.org/wiki/Q5369081>
-  # Emanuel Scrope Howe, 2nd Viscount Howe, 1700~ – 1735-03-29
-  gen:father <https://www.wikidata.org/wiki/Q7439299> ;
-  gen:mother <russell.ttl#Juliana_Alington> .
-  # oo Mary Sophia Charlotte von Kielmansegg, 1703-09-23 – 1782-06-13
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q5369081> , <https://www.wikidata.org/wiki/Q5086017> ;
-	gen:startDate "1719-04-08" .
-<#Mary_Howe_(died_1749)>
-  # Hon. Mary Howe, d. 1749-09-12
-  gen:father <https://www.wikidata.org/wiki/Q7439299> ;
-  gen:mother <russell.ttl#Juliana_Alington> .
-  # oo 1725-06-14 Thomas Herbert, 8th Earl of Pembroke, 1656~ - 1733-01-22, https://www.wikidata.org/wiki/Q334112
-  # oo 1735-11 John Mordaunt, 1709~ - 1767-07-01, https://www.wikidata.org/wiki/Q6249354 (gordon.ttl)
-<https://www.wikidata.org/wiki/Q6240105>
+<https://www.wikidata.org/wiki/Q6240105> # -> Baron of Chedworth
   # John Howe, 1st Lord Chedworth, Baron of Chedworth, d. 1742-04-03
-  # 1st Lord Chedworth, Baron of Chedworth, co. Gloucester 1741-05-12
-  gen:father <https://www.wikidata.org/wiki/Q14949392> .
-  # and Mary Baskerville
-  # oo Dorothy Thynne, 1692-09-22 – 1777-02-14
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q6240105> , <thynne.ttl#Dorothy_Thynne_(died_1777)> .
+  gen:father <https://www.wikidata.org/wiki/Q14949392> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75565420> .
 <#Mary_Howe_(died_1745)>
+# https://www.wikidata.org/wiki/Q75527931
   # Mary Howe, d. 1745-04-26
-  gen:father <https://www.wikidata.org/wiki/Q14949392> .
-  # and Mary Baskerville
-  # oo 1711-03-28 Sir Edmond Thomas, 2nd Baronet, of Wenvoe, 1667 - 1723, keppel.ttl#Sir_Edmond_Thomas,_2nd_Baronet
+  gen:father <https://www.wikidata.org/wiki/Q14949392> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75565420> .
+  # oo 1711-03-28 Sir Edmond Thomas, 2nd Baronet, of Wenvoe, 1667 - 1723, keppel.ttl#Sir_Edmond_Thomas,_2nd_Baronet or https://www.wikidata.org/wiki/Q75260550
   # TODO move here
+<https://www.wikidata.org/wiki/Q75761392>
+  # Leonora Maria Howe
+  gen:father <https://www.wikidata.org/wiki/Q5079189> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75761385> .
+  # oo Peter Bathurst, 1687-05-02 – 1748, https://www.wikidata.org/wiki/Q19609273 (shirley.ttl)
+  # TODO add
 <https://www.wikidata.org/wiki/Q75374639>
   # William Howe, 1700-03-24 - 1733-07-28
   gen:father <https://www.wikidata.org/wiki/Q5369144> ;
@@ -104,6 +102,60 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75374639> , <https://www.wikidata.org/wiki/Q75374640> .
 
+<https://www.wikidata.org/wiki/Q75374641>
+  # Mary Howe, 1725-11-03 - 1761-05-18
+  gen:father <https://www.wikidata.org/wiki/Q75374639> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75374640> .
+  # oo 1747-08-18 Sir George Smith, 1st Baronet, 1715~ - 1769-09-05, https://www.wikidata.org/wiki/Q75374643
+
+
+# Viscount Howe
+<https://www.wikidata.org/wiki/Q7439299>
+  # Scrope Howe, 1st Viscount Howe, 1648-11 - 1712-01-26
+  # 1st Viscount Howe, 1st Baron of Glenawly, co. Fermanagh 1701-05-16
+  gen:father <https://www.wikidata.org/wiki/Q6236456> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75502033> .
+  # oo Lady Anne Manners, b. 1655~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7439299> , <https://www.wikidata.org/wiki/Q75256307> ;
+	gen:startDate "1672-04" .
+  # oo Hon. Juliana Alington, d. 1747-09 (russell.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7439299> , <https://www.wikidata.org/wiki/Q75761360> ;
+	gen:startDate "1698" .
+
+<https://www.wikidata.org/wiki/Q5369081>
+  # Emanuel Scrope Howe, 2nd Viscount Howe, 1700~ – 1735-03-29
+  # 2nd Viscount Howe, 2nd Baron of Glenawly, co. Fermanagh 1712-01-26
+  # 4th Baronet Howe 1730-07-03
+  gen:father <https://www.wikidata.org/wiki/Q7439299> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75761360> .
+  # oo Mary Sophia Charlotte von Kielmansegg, 1703-09-23 – 1782-06-13
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5369081> , <https://www.wikidata.org/wiki/Q5086017> ;
+	gen:startDate "1719-04-08" .
+<#Mary_Howe_(died_1749)>
+# https://www.wikidata.org/wiki/Q75276134
+  # Hon. Mary Howe, d. 1749-09-12
+  gen:father <https://www.wikidata.org/wiki/Q7439299> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75761360> .
+  # oo 1725-06-14 Thomas Herbert, 8th Earl of Pembroke, 1656~ - 1733-01-22, https://www.wikidata.org/wiki/Q334112
+  # oo 1735-11 John Mordaunt, 1709~ - 1767-07-01, https://www.wikidata.org/wiki/Q6249354 (gordon.ttl)
+<https://www.wikidata.org/wiki/Q75761888>
+  # Hon. Judith Howe, d. 1780-07-02
+  gen:father <https://www.wikidata.org/wiki/Q7439299> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75761360> .
+  # oo 1725-05-29 Thomas Page, of Battlesden, d. 1763-11-04b, https://www.wikidata.org/wiki/Q75761891, son of Sir Gregory Page, 1st Baronet (1669~ – 1720-05-25, 1st Baronet Page, of East Greenwich 1714-12-03, https://www.wikidata.org/wiki/Q7527010 or https://www.wikidata.org/wiki/Q75761893, son of Gregory Page (d. 1693) and Elizabeth Burton) and oo 1690-01-21 Mary Trotman (1672~ - 1729-03-04, daughter of Thomas Trotman and Mary ???)
+<https://www.wikidata.org/wiki/Q75761894>
+  # Hon. Anne Howe
+  gen:father <https://www.wikidata.org/wiki/Q7439299> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75761360> .
+  # oo 1728-05-08 Charles Mordaunt, https://www.wikidata.org/wiki/Q75761897, son of Hon. Lewis Mordaunt (d. 1713-02-02, https://www.wikidata.org/wiki/Q75384895, son of https://www.wikidata.org/wiki/Q15463333 (gordon.ttl) and spencer.ttl#Elizabeth_Carey or https://www.wikidata.org/wiki/Q75407887) and Anne Martin
+
+<https://www.wikidata.org/wiki/Q5540784>
+  # George Augustus Howe, 3rd Viscount Howe, 1724~ - 1758-07-06
+  gen:father <https://www.wikidata.org/wiki/Q5369081> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5086017> .
 <https://www.wikidata.org/wiki/Q332616>
   # Richard Howe, 1st Earl Howe, 1726-03-08 – 1799-08-05
   # 4th Viscount Howe, 6th Baronet Howe, 4th Baron of Glenawly, co. Fermanagh 1758-07-06
@@ -115,11 +167,14 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q332616> , <https://www.wikidata.org/wiki/Q63088903> ;
 	gen:startDate "1758-03-10" .
-<https://www.wikidata.org/wiki/Q75374641>
-  # Mary Howe, 1725-11-03 - 1761-05-18
-  gen:father <https://www.wikidata.org/wiki/Q75374639> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75374640> .
-  # oo 1747-08-18 Sir George Smith, 1st Baronet, 1715~ - 1769-09-05, https://www.wikidata.org/wiki/Q75374643
+<https://www.wikidata.org/wiki/Q333422>
+  # William Howe, 5th Viscount Howe, 1729-08-10 - 1814-07-12
+  gen:father <https://www.wikidata.org/wiki/Q5369081> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5086017> .
+  # oo Frances Conolly, d. 1817-09, daughter of https://www.wikidata.org/wiki/Q8013442 (lennox.ttl) and https://www.wikidata.org/wiki/Q75272314
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q333422> , <https://www.wikidata.org/wiki/Q75761804> ;
+	gen:startDate "1765-06-02" .
 
 <https://www.wikidata.org/wiki/Q75273268>
   # Sophia Charlotte Howe, 2nd Baroness Howe of Langar, 1762-02-19 - 1835-12-03
@@ -128,11 +183,50 @@
   gen:mother <https://www.wikidata.org/wiki/Q63088903> .
   # oo 1787-07-31 Hon. Penn Assheton Curzon, 1757-01-21 - 1797-09-03, https://www.wikidata.org/wiki/Q22340495
 <#Lady_Louisa_Catherine_Howe>
+# https://www.wikidata.org/wiki/Q75280658
   # Lady Louisa Catherine Howe, 1767-12-09 - 1817-08-20
   gen:father <https://www.wikidata.org/wiki/Q332616> ;
   gen:mother <https://www.wikidata.org/wiki/Q63088903> .
-  # oo 1787-05-21 John Denis Browne, 1st Marquess of Sligo, 1756-06-11 – 1809-01-02, https://www.wikidata.org/wiki/Q6223574
+  # oo 1787-05-21 John Denis Browne, 1st Marquess of Sligo, 1756-06-11 – 1809-01-02, https://www.wikidata.org/wiki/Q6223574 (beresford.ttl)
   # oo 1813-04-10 William Scott, 1st and last Baron Stowell of Stowell Park, 1745-10-17 - 1836-01-28, https://www.wikidata.org/wiki/Q6191717
+
+
+
+# Baron of Chedworth
+<https://www.wikidata.org/wiki/Q6240105>
+  # John Howe, 1st Lord Chedworth, Baron of Chedworth, d. 1742-04-03
+  # 1st Lord Chedworth, Baron of Chedworth, co. Gloucester 1741-05-12
+  gen:father <https://www.wikidata.org/wiki/Q14949392> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75565420> .
+  # oo Dorothy Thynne, 1692-09-22 – 1777-02-14, https://www.wikidata.org/wiki/Q75399475
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6240105> , <thynne.ttl#Dorothy_Thynne_(died_1777)> ;
+	gen:startDate "1712" .
+
+<https://www.wikidata.org/wiki/Q6240107>
+  # John Thynne Howe, 2nd Lord Chedworth, Baron of Chedworth, 1715-02-18 - 1762-05-09
+  gen:father <https://www.wikidata.org/wiki/Q6240105> ;
+  gen:mother <thynne.ttl#Dorothy_Thynne_(died_1777)> .
+  # oo Martha Parker-à-Morley-Long, 1716-03-23 - 1775-11-30, daughter of https://www.wikidata.org/wiki/Q7528491 (Sir Philip Parker-à-Morley-Long, 3rd Baronet, 1682-03-23 – 1741-01-20) and oo 1715-07-11 https://www.wikidata.org/wiki/Q75565451 (Martha East, daughter of William East)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6240107> , <https://www.wikidata.org/wiki/Q75565430> ;
+	gen:startDate "1751-09-21" .
+<https://www.wikidata.org/wiki/Q75565455>
+  # Henry Frederick Howe, 3rd Lord Chedworth, Baron of Chedworth, 1716-02-17 - 1781-10-07
+  gen:father <https://www.wikidata.org/wiki/Q6240105> ;
+  gen:mother <thynne.ttl#Dorothy_Thynne_(died_1777)> .
+<https://www.wikidata.org/wiki/Q75565460>
+  # Rev. Hon. Thomas Howe, 1717~ - 1770-06-03
+  gen:father <https://www.wikidata.org/wiki/Q6240105> ;
+  gen:mother <thynne.ttl#Dorothy_Thynne_(died_1777)> .
+  # oo Frances White, d. 1778-02-17, daughter of Thomas White
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75565460> , <https://www.wikidata.org/wiki/Q75565462> .
+
+<https://www.wikidata.org/wiki/Q6240108>
+  # John Howe, 4th Lord Chedworth, Baron of Chedworth, 1754-08-22 - 1804-10-29
+  gen:father <https://www.wikidata.org/wiki/Q75565460> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75565462> .
 
 
 # ----
