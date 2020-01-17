@@ -2,6 +2,7 @@
 @prefix gen: <http://jjkoch.de/gen#> .
 @prefix wdata: <https://www.wikidata.org/wiki/> .
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 <https://www.wikidata.org/wiki/Q15842664>
   gen:name "Robert Erskine, 1st Lord Erskine"@en ;
@@ -504,7 +505,7 @@
   gen:mother <cooper.ttl#Lady_Susan_Violet_Ashley-Cooper> .
   # oo Lady Marjorie Hervey, 1898-10-16 - 1967-11-22
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q6231898> , <#Lady_Marjorie_Hervey> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q6231898> , <https://www.wikidata.org/wiki/Q75288342> ;
 	gen:startDate "1919-12-02" .
 <#Francis_Walter_Erskine>
   # Hon. Francis Walter Erskine, 1899-01-09 - 1972-09-20
@@ -520,7 +521,7 @@
   gen:birthDate "1921-02-15" ;
   gen:deathDate "1993-12-22" ;
   gen:father <https://www.wikidata.org/wiki/Q6231898> ;
-  gen:mother <#Lady_Marjorie_Hervey> .
+  gen:mother <https://www.wikidata.org/wiki/Q75288342> .
   # oo Pansy Constance Thorne, 1921-12-16 - 1996-08-09
   []
     gen:spouse <#John_Erskine,_13th_Earl_of_Mar> , <#Pansy_Constance_Thorne> ;
@@ -528,7 +529,7 @@
 <#David_Hervey_Erskine>
   # Hon. David Hervey Erskine, 1924-11-05 - 2004-05-25
   gen:father <https://www.wikidata.org/wiki/Q6231898> ;
-  gen:mother <#Lady_Marjorie_Hervey> .
+  gen:mother <https://www.wikidata.org/wiki/Q75288342> .
   # oo Jean Violet Douglas, 1928-03-15 - 1983
   []
     gen:spouse <#David_Hervey_Erskine> , <#Jean_Violet_Douglas> ;
@@ -982,29 +983,6 @@
   gen:father <#James_Stewart_Forbes> ;
   gen:mother <https://www.wikidata.org/wiki/Q57293323> .
   # oo 1939-06-17 (div 1958) Sir Alexander Hay Seton of Abercorn, 10th Baronet, 1904-08-14 - 1963-02-07, gordon.ttl#Sir_Alexander_Seton_of_Abercorn,_10th_Baronet
-
-# --------
-<https://www.wikidata.org/wiki/Q5498019>
-  gen:name "Frederick Hervey, 4th Marquess of Bristol"@en ;
-  gen:birthDate "1863-11-08" ;
-  gen:deathDate "1951-10-24" .
-  # oo Alice Frances Theodora Wythes, d. 1957-09-15
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q5498019> , <#Alice_Frances_Theodora_Wythes> ;
-	gen:startDate "1896-12-06" .
-
-<#Lady_Marjorie_Hervey>
-  gen:name "Lady Marjorie Hervey"@en ;
-  gen:birthDate "1898-10-16" ;
-  gen:deathDate "1967-11-22" ;
-  gen:father <https://www.wikidata.org/wiki/Q5498019> ;
-  gen:mother <#Alice_Frances_Theodora_Wythes> .
-  # oo 1919-12-02 John Francis Ashley Erskine, Lord Erskine, 1895-04-12 - 1953-05-03, https://www.wikidata.org/wiki/Q6231898
-# ----
-<#Alice_Frances_Theodora_Wythes>
-  gen:name "Alice Frances Theodora Wythes"@en ;
-  gen:deathDate "1957-09-15" .
-  # oo 1896-12-06 Frederick Hervey, 4th Marquess of Bristol, 1863-11-08 - 1951-10-24, https://www.wikidata.org/wiki/Q5498019
 
 # --------
 <https://www.wikidata.org/wiki/Q3438209>
@@ -1820,13 +1798,13 @@
   gen:father <https://www.wikidata.org/wiki/Q5416411> ;
   gen:mother <https://www.wikidata.org/wiki/Q27912179> .
   # oo 1712-03-13 John Leveson-Gower, 1st Earl Gower, 1694-08-10 – 1754-12-25, https://www.wikidata.org/wiki/Q336200
-<#William_Pierrepont,_Earl_of_Kingston>
+<https://www.wikidata.org/wiki/Q75540217>
   # William Pierrepont, Earl of Kingston, 1692 – 1713-07
   gen:father <https://www.wikidata.org/wiki/Q5416411> ;
   gen:mother <https://www.wikidata.org/wiki/Q27912179> .
   # oo Rachel Hall, 1695-04-14 - 1722-05-18
   []
-    gen:spouse <#William_Pierrepont,_Earl_of_Kingston> , <#Rachel_Hall> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75540217> , <https://www.wikidata.org/wiki/Q75540218> ;
 	gen:startDate "1711" .
 <#Lady_Caroline_Pierrepont>
   # Lady Caroline Pierrepont, d. 1753
@@ -1834,10 +1812,18 @@
   gen:mother <https://www.wikidata.org/wiki/Q27912179> .
   # oo Thomas Brand, 1717~ – 1770, https://www.wikidata.org/wiki/Q16205045
 
+<https://www.wikidata.org/wiki/Q5416407>
+  # Evelyn Pierrepont, 2nd Duke of Kingston-upon-Hull, 1711 - 1773-09-23
+  gen:father <https://www.wikidata.org/wiki/Q75540217> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75540218> .
+  # oo Elizabeth Chudleigh, 1720~ - 1788-08-26 (hervey.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5416407> , <https://www.wikidata.org/wiki/Q3051201> ;
+	gen:startDate "1769-03-08" .
 <#Lady_Frances_Pierrepont>
   # Lady Frances Pierrepont
-  gen:father <#William_Pierrepont,_Earl_of_Kingston> ;
-  gen:mother <#Rachel_Hall> .
+  gen:father <https://www.wikidata.org/wiki/Q75540217> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75540218> .
   # oo 1734 Philip Meadows, 1708 - 1781-08-15, https://www.wikidata.org/wiki/Q51643179
 
 # ====
@@ -2101,6 +2087,15 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5729236> , <https://www.wikidata.org/wiki/Q5415001> ;
 	gen:startDate "1889-08-24" .
+<https://www.wikidata.org/wiki/Q75336142>
+  # Sir FitzRoy Hamilton Anstruther-Gough-Calthorpe, 1st Baronet, 1872-07-05 - 1957-09-29
+  # 1st Baronet Anstruther-Gough-Calthorpe, of Elvetham Hall, in the parish of Elvetham, Hampshire 1929-07-01
+  gen:father <https://www.wikidata.org/wiki/Q7345214> ;
+  gen:mother <fitzroy.ttl#Gertrude_Louisa_Georgiana_FitzRoy> .
+  # oo Hon. Rachel Gough-Calthorpe, 1871-10-11 - 1951-05-25 (beaufort.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75336142> , <https://www.wikidata.org/wiki/Q75282238> ;
+	gen:startDate "1898-10-11" .
 <#Rosalind_Gertrude_Lloyd-Anstruther>
   # Rosalind Gertrude Lloyd-Anstruther, d. 1903-06-02
   gen:father <https://www.wikidata.org/wiki/Q7345214> ;
@@ -2120,6 +2115,31 @@
   gen:mother <https://www.wikidata.org/wiki/Q5415001> .
   # oo 1923-07-04 (div 1947) Anthony James Oliphant Maxtone Graham, 16th of Coltoquhey, 23 July 1900, d. 8 June 1971, son of James Maxtone Graham, 15th of Cultoquhey and Redgorton and Margaret Ethel Kington-Blair-Oliphant
   # oo 1948-03-01 Adolf Kurt Placzek, son of Oswald Placzek
+<https://www.wikidata.org/wiki/Q75336147>
+  # Sir Richard Hamilton Anstruther-Gough-Calthorpe, 2nd Baronet, 1908-03-28 - 1985-02-07
+  gen:father <https://www.wikidata.org/wiki/Q75336142> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75282238> .
+  # oo Nancy Moireach Malcolmson, 1912-08-11 - 1976-12-15 (coke.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75336147> , <https://www.wikidata.org/wiki/Q75340301> ;
+	gen:startDate "1939-07-20" .
+
+<https://www.wikidata.org/wiki/Q6219174>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75333675> ;
+  # John Austen Anstruther-Gough-Calthorpe, b. 1947-07-14
+  gen:father <https://www.wikidata.org/wiki/Q75336147> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75340301> .
+  # oo Lady Mary-Gaye Georgiana Lorna Curzon, b. 1947-02-21
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6219174> , <https://www.wikidata.org/wiki/Q75303340> ;
+	gen:startDate "1977-05-27" ;
+	gen:divorceDate "1986" .
+
+<https://www.wikidata.org/wiki/Q6077952>
+  # Isabella Amaryllis Charlotte Anstruther-Gough-Calthorpe, b. 1980-03-03
+  gen:father <https://www.wikidata.org/wiki/Q6219174> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75303340> .
+  # oo 2013-03-06 Sam Edward C. Branson, b. 1985, https://www.wikidata.org/wiki/Q76241750
 # ----
 <#Mary_Jane_Torrens>
   # Mary Jane Torrens, 1811-02-01 - 1886-08-26
@@ -2132,6 +2152,15 @@
   gen:birthDate "1863-06-06" ;
   gen:deathDate "1952-04-29" .
   # oo 1885-08-05 Sir Ralph William Anstruther of Balcaskie, 6th Baronet, 1858-07-05 - 1934-09-30, Sir_Ralph_William_Anstruther,_6th_Baronet
+# ----
+<https://www.wikidata.org/wiki/Q76241750>
+  # Sam Edward C. Branson, b. 1985
+  gen:father <https://www.wikidata.org/wiki/Q194419> ; # Sir Richard Charles Nicholas Branson
+  gen:mother <https://www.wikidata.org/wiki/Q76241744> . # oo 1989 Joan Templeman
+  # oo Isabella Amaryllis Charlotte Anstruther-Gough-Calthorpe, b. 1980-03-03
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76241750> , <https://www.wikidata.org/wiki/Q6077952> ;
+	gen:startDate "2013-03-06" .
 
 # --------
 <#Margaret_Chiene>

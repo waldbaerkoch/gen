@@ -2,6 +2,7 @@
 @prefix gen: <http://jjkoch.de/gen#> .
 @prefix wdata: <https://www.wikidata.org/wiki/> .
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 #<#Sir_Fulke_Greville>
   # Sir Fulke Greville, of Beauchamp’s Court, d. 1569-11-10
@@ -102,12 +103,13 @@
   gen:mother <#Sarah_Dashwood> .
   # oo 1695-02-25 Francis North, 2nd Baron Guilford, 1673-12-14 - 1729-10-17, https://www.wikidata.org/wiki/Q5482070
 <https://www.wikidata.org/wiki/Q4724147>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75315565> ;
   # Hon. Algernon Greville, 1677~ - 1720-04-28
   gen:father <https://www.wikidata.org/wiki/Q53336751> ;
   gen:mother <#Sarah_Dashwood> .
   # oo Hon. Mary Somerset
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q4724147> , <beaufort.ttl#Mary_Somerset> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q4724147> , <https://www.wikidata.org/wiki/Q75315566> ;
 	gen:startDate "1711-12-24" .
 <https://www.wikidata.org/wiki/Q75255448>
   # Hon. Catherine Greville, d. 1704-02-07
@@ -142,7 +144,7 @@
 <https://www.wikidata.org/wiki/Q5507951>
   # Fulke Greville, 1717 - 1805a
   gen:father <https://www.wikidata.org/wiki/Q4724147> ;
-  gen:mother <beaufort.ttl#Mary_Somerset> .
+  gen:mother <https://www.wikidata.org/wiki/Q75315566> .
   # oo Frances Macartney, 1727 - 1789
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5507951> , <https://www.wikidata.org/wiki/Q5478677> ;
@@ -150,7 +152,7 @@
 <#Mary_Greville>
   # Mary Greville
   gen:father <https://www.wikidata.org/wiki/Q4724147> ;
-  gen:mother <beaufort.ttl#Mary_Somerset> .
+  gen:mother <https://www.wikidata.org/wiki/Q75315566> .
   # oo Shuckburgh Boughton, 1703~ - 1763, #Shuckburgh_Boughton
 
 <https://www.wikidata.org/wiki/Q3266409>
@@ -177,16 +179,17 @@
   []
     gen:spouse <#William_Fulke_Greville> , <talbot.ttl#Meliora_Southwell> .
 <https://www.wikidata.org/wiki/Q20032080>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75316316> ;
   # Henry Francis Greville, 1760-08-10 – 1816-01-13
   gen:father <https://www.wikidata.org/wiki/Q5507951> ;
   gen:mother <https://www.wikidata.org/wiki/Q5478677> .
   # oo Catherine Graham, d. 1803-01-18
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q20032080> , <graham.ttl#Catherine_Graham_(died_1803)> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q20032080> , <https://www.wikidata.org/wiki/Q75353103> ;
 	gen:startDate "1791-08-18" .
   # oo Sophia Whyte, d. 1839-03-21, daughter of James Francis Xavier Whyte
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q20032080> , <#Sophia_Whyte> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q20032080> , <https://www.wikidata.org/wiki/Q75353098> ;
 	gen:startDate "1805-02-25" .
 <https://www.wikidata.org/wiki/Q26420157>
   # Charles Greville, 1762-11-02 - 1832-08-26
@@ -249,10 +252,18 @@
   gen:father <#William_Fulke_Greville> ;
   gen:mother <talbot.ttl#Meliora_Southwell> .
   # oo 1814-06-18 Stapleton Stapleton-Cotton, 1st Viscount Combermere of Bhurtpore, 1773-11-14 - 1865-02-21, https://www.wikidata.org/wiki/Q607265
+<https://www.wikidata.org/wiki/Q76270083>
+  # George Macartney Greville, 1793 - 1834-04-26
+  gen:father <https://www.wikidata.org/wiki/Q20032080> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75353103> .
+  # oo Elizabeth Mary Pearson, d. 1848-12-29, daughter of John Pearson
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76270083> , <https://www.wikidata.org/wiki/Q76270080> ;
+	gen:startDate "1826b" .
 <#Henry_Francis_Greville>
   # Henry Francis Greville, 1796 - 1864-10-18
   gen:father <https://www.wikidata.org/wiki/Q20032080> ;
-  gen:mother <graham.ttl#Catherine_Graham_(died_1803)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75353103> .
   # oo Harriet Dorothea Despard, d. 1856-12-28
   []
     gen:spouse <#Henry_Francis_Greville>, <#Harriet_Dorothea_Despard> ;
@@ -260,7 +271,7 @@
 <#Brooke_Greville>
   # Brooke Greville, 1798 - 1884
   gen:father <https://www.wikidata.org/wiki/Q20032080> ;
-  gen:mother <graham.ttl#Catherine_Graham_(died_1803)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75353103> .
   # oo Emilie Anne Bouchez, d. 1875-11-03
   []
     gen:spouse <#Brooke_Greville> , <#Emilie_Anne_Bouchez> ;
@@ -331,6 +342,14 @@
   # Fulke Southwell Greville-Nugent, 1st Baron Greville, 1821-02-17 – 1883-01-25
   gen:father <#Algernon_Greville_(died_1857)> ;
   gen:mother <graham.ttl#Caroline_Graham> .
+<#Stapleton_John_Greville>
+  # Stapleton John Greville, 1826-06-28 - 1903-03-26
+  gen:father <https://www.wikidata.org/wiki/Q76270083> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76270080> .
+  # oo Henriette Kolimunzer, d. 1897-11-13, daughter of G. Kolimunzer
+  []
+    gen:spouse <#Stapleton_John_Greville> , <#Henriette_Kolimunzer> ;
+	gen:startDate "1852-10-26" .
 <#Emma_Maria_Greville>
   # Emma Maria Greville, d. 1902-01-01
   gen:father <#Henry_Francis_Greville> ;
@@ -368,6 +387,14 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q3313247> , <wemyss.ttl#Lady_Anne_Charteris> ;
 	gen:startDate "1852-02-18" .
+<https://www.wikidata.org/wiki/Q75970901>
+  # Henry Brooke Macartney Crewe Greville, 1870-02-01 - 1944-01-03
+  gen:father <#Stapleton_John_Greville> ;
+  gen:mother <#Henriette_Kolimunzer> .
+  # oo Cecilia Ada Hervey-Bathurst, 1874-10-14 - 1959-07-03
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75970901> , <https://www.wikidata.org/wiki/Q75970899> ;
+	gen:startDate "1906-08-21" .
 <#Denise_Dorothy_Marie_Emilie_Greville>
   # Denise Dorothy Marie Emilie Greville, d. 1959-08-24
   gen:father <#Henry_Algernon_Fulke_Charles_Ferdinand_Stephen_Greville> ;
@@ -684,7 +711,7 @@
 	gen:startDate "1663-06-14~" .
   # oo Emma Barnard, d. 1725-10-16, daughter of Sir Henry Barnard
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q707695> , <#Emma_Barnard> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q707695> , <willoughby.ttl#Emma_Barnard> ;
 	gen:startDate "1676-08-08~" .
 
 <#Elizabeth_Child>
@@ -704,7 +731,7 @@
   # 1st Baron Newtown, co. Donegal, 1st Viscount Castlemaine, co. Kerry 1718-04-24
   # 1st Earl Tylney of Castlemaine, co. Kerry 1731-06-11
   gen:father <https://www.wikidata.org/wiki/Q707695> ;
-  gen:mother <#Emma_Barnard> .
+  gen:mother <willoughby.ttl#Emma_Barnard> .
   # oo Dorothy Glynne, 1682~ - 1744-02-23, daughter of John Glynne and Dorothy Tylney
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7324732> , <#Dorothy_Glynne> ;
@@ -718,6 +745,7 @@
 
 # ----
 <https://www.wikidata.org/wiki/Q5478677>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75315570> ;
   # Frances Macartney, 1727 - 1789
   gen:father <https://www.wikidata.org/wiki/Q17388555> .
   # oo 1734-01-26 Fulke Greville, 1717 - 1805a, https://www.wikidata.org/wiki/Q5507951
