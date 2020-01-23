@@ -2,10 +2,12 @@
 @prefix gen: <http://jjkoch.de/gen#> .
 @prefix wdata: <https://www.wikidata.org/wiki/> .
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
-
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 <https://www.wikidata.org/wiki/Q4020000>
   gen:name "William Feilding, 1st Earl of Denbigh"@en ;
+  # 1st Baron of Newnham Paddockes, co. Warwick 1620-12-30
+  # 1st Earl of Denbigh, 1st Viscount Feilding 1622-09-14
   gen:birthDate "1587~" ;
   gen:deathDate "1643-04-08" ;
   gen:father <https://www.wikidata.org/wiki/Q75497717> ; # Sir Basil Feilding
@@ -15,12 +17,40 @@
     gen:spouse <https://www.wikidata.org/wiki/Q4020000>, <https://www.wikidata.org/wiki/Q6690023> ;
 	gen:startDate "1607~" .
 
-# https://www.wikidata.org/wiki/Q5539225
-  # George Feilding, 1st Earl of Desmond, 1614 - 1665
-  # son of https://www.wikidata.org/wiki/Q4020000
-  # and https://www.wikidata.org/wiki/Q6690023>
-  # oo https://www.wikidata.org/wiki/Q75265679 Bridget Stanhope
+<https://www.wikidata.org/wiki/Q4867155>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75265677> ;
+  # Basil Feilding, 2nd Earl of Denbigh, 1608~ – 1675-11-28
+  # 2nd Baron of Newnham Paddockes, co. Warwick 1628-03-21
+  # 2nd Earl of Denbigh, 2nd Viscount Feilding 1643-04-08
+  # 1st Baron St. Liz 1665-02-02
+  gen:father <https://www.wikidata.org/wiki/Q4020000> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6690023> .
+  # oo Lady Anne Weston, daughter of Richard Weston, 1st Earl of Portland (1577-03-01 - 1635-03-13, https://www.wikidata.org/wiki/Q3934897, 1st Baron Weston, of Neyland 1628-04-13, 1st Earl of Portland, 1633-02-17, son https://www.wikidata.org/wiki/Q75933850 of Sir Jerome Weston and https://www.wikidata.org/wiki/Q75933852 Mary Cave) and oo 1605b Frances Waldegrave (d. 1645, https://www.wikidata.org/wiki/Q75933837, daughter of Nicholas Waldegrave and Catherine Browne)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4867155> , <https://www.wikidata.org/wiki/Q75613216> ;
+	gen:startDate "1639b" .
+  # oo Barbara Lamb, d. 1641-04-02, daughter of Sir John Lamb
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4867155> , <https://www.wikidata.org/wiki/Q75265684> ;
+	gen:startDate "1639-08-12" .
+  # oo Lady Elizabeth Bourchier, d. 1670-09-22, daughter of Edward Bourchier, 4th Earl of Bath (1590-03-01 - 1637-03-02, https://www.wikidata.org/wiki/Q5341960, son of  https://www.wikidata.org/wiki/Q7606767 William Bourchier, 3rd Earl of Bath and https://www.wikidata.org/wiki/Q46595335 Lady Elizabeth Russell) and oo 1623-07-14 Hon. Dorothy St. John (d. 1632-08-20, https://www.wikidata.org/wiki/Q75275723, daughter of https://www.wikidata.org/wiki/Q7087848 Oliver St. John, 3rd Baron Saint John of Bletso and https://www.wikidata.org/wiki/Q75275727 Dorothy Read)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4867155> , <https://www.wikidata.org/wiki/Q75265685> ;
+	gen:startDate "1641-07-08" .
+  # oo Dorothy Lane, daughter of Francis Lane
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4867155> , <https://www.wikidata.org/wiki/Q75613217> ;
+	gen:startDate "1670a" .
+<https://www.wikidata.org/wiki/Q5539225>
+  # George Feilding, 1st Earl of Desmond, 1614 - 1665-01-31
+  # 1st Viscount Callan, co. Kerry, 1st Earl of Desmond, co. Kerry, 1st Baron Feilding of Lecagh, co. Tipperary 1622-11-07
+  gen:father <https://www.wikidata.org/wiki/Q4020000> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6690023> .
+  # oo Bridget Stanhope, d. 1701-07~, daughter of Sir Michael Stanhope (1549~ – 1621~, https://www.wikidata.org/wiki/Q16847430 or https://www.wikidata.org/wiki/Q75258326) and oo Anne Reade (1579~ - 1616, https://www.wikidata.org/wiki/Q75418828, daughter of Sir William Reade and Gertrude Paston)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5539225> , <https://www.wikidata.org/wiki/Q75265679> .
 <https://www.wikidata.org/wiki/Q5362456>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75447517> ;
   # Elizabeth Feilding, 1st Countess of Guildford, d. 1667-09-03~
   # 1st Countess of Guildford, co. Surrey 1660-07-14
   gen:father <https://www.wikidata.org/wiki/Q4020000> ;
@@ -37,168 +67,326 @@
   gen:mother <https://www.wikidata.org/wiki/Q6690023> .
   # oo 1622-06-16 James Hamilton, 1st Duke of Hamilton, 1606-06-19 - 1649-03-09, https://www.wikidata.org/wiki/Q336106
 
-# https://www.wikidata.org/wiki/Q7608140
+<https://www.wikidata.org/wiki/Q7608140>
   # William Feilding, 3rd Earl of Denbigh, 1640-12-29 - 1685-08-23
-  # son of https://www.wikidata.org/wiki/Q5539225
-  # and https://www.wikidata.org/wiki/Q75265679
-  # oo Mary King
+  # 2nd Viscount Callan, co. Kerry, 2nd Baron Feilding of Lecagh, co. Tipperary, 2nd Earl of Desmond, co. Kerry 1665-01-31
+  # 3rd Earl of Denbigh, 3rd Viscount Feilding, 3rd Baron of Newnham Paddockes, co. Warwick, 2nd Baron St. Liz 1675-11-28
+  gen:father <https://www.wikidata.org/wiki/Q5539225> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75265679> .
+  # oo Mary King, d. 1669
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7608140> , <https://www.wikidata.org/wiki/Q75257565> .
+  # oo Lady Mary Carey, d. 1719-12-09, daughter of Henry Carey, 2nd Earl of Monmouth (1596-01-27 - 1661, https://www.wikidata.org/wiki/Q5719179)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7608140> , <https://www.wikidata.org/wiki/Q75258117> ;
+	gen:startDate "1669a" .
+<https://www.wikidata.org/wiki/Q75613625>
+  # Lady Frances Feilding, d. 1680
+  gen:father <https://www.wikidata.org/wiki/Q5539225> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75265679> .
+  # oo 1675 Sir Edward Gage, 1st Baronet, 1617 - 1707-01-31, https://www.wikidata.org/wiki/Q19519967 or https://www.wikidata.org/wiki/Q75613626, 1st Baronet Gage, of Hengrave 1662-07-15, son of Sir John Gage, 1st Baronet (d. 1633-10-03, https://www.wikidata.org/wiki/Q19605743 or https://www.wikidata.org/wiki/Q75455218, 1st Baronet Gage, of Firley, co. Sussex 1622-03-26, son of https://www.wikidata.org/wiki/Q76002203 Thomas Gage and https://www.wikidata.org/wiki/Q76002249 Elizabeth Guilford) and oo 1611-06-28~ Penelope Darcy (https://www.wikidata.org/wiki/Q75455215, daughter of https://www.wikidata.org/wiki/Q75455217 Thomas Darcy, 1st Earl Rivers and https://www.wikidata.org/wiki/Q75488753 Mary Kitson)
 
 <https://www.wikidata.org/wiki/Q27912179>
   gen:name "Lady Mary Feilding"@en ;
   gen:birthDate "1668~" ;
   gen:deathDate "1697-12~" ;
   gen:father <https://www.wikidata.org/wiki/Q7608140> ;
-  gen:mother <#Mary_King> .
+  gen:mother <https://www.wikidata.org/wiki/Q75257565> .
   # oo 1687-06-27 Evelyn Pierrepont, 1st Duke of Kingston-upon-Hull, 1655~ - 1726-03-05, https://www.wikidata.org/wiki/Q5416411 (erskine.ttl)
 <https://www.wikidata.org/wiki/Q4867157>
   # Basil Feilding, 4th Earl of Denbigh
   gen:birthDate "1668" ;
   gen:deathDate "1717-03-18" ;
   gen:father <https://www.wikidata.org/wiki/Q7608140> ;
-  gen:mother <#Mary_King> .
-  # oo Hester Firebrace, d. 1726-01-01
+  gen:mother <https://www.wikidata.org/wiki/Q75257565> .
+  # oo Hester Firebrace, 1675~ - 1726-01-01
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q4867157> , <#Hester_Firebrace> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q4867157> , <https://www.wikidata.org/wiki/Q75265688> ;
 	gen:startDate "1695-06-22" .
 
-# https://www.wikidata.org/wiki/Q43271831
-  # William Feilding, 5th Earl of Denbigh, 1697 - 1755
-  # son of https://www.wikidata.org/wiki/Q4867157
-  # and https://www.wikidata.org/wiki/Q75265688
-  # oo https://www.wikidata.org/wiki/Q75385400 (Isabella Haeck de Jong)
 <https://www.wikidata.org/wiki/Q59197765>
   # Lady Frances Feilding, 1690~ – 1734-09~
   gen:father <https://www.wikidata.org/wiki/Q4867157> ;
-  gen:mother <#Hester_Firebrace> .
+  gen:mother <https://www.wikidata.org/wiki/Q75265688> .
   # oo 1729-12-28 Daniel Finch, 8th Earl of Winchilsea, 1689-05-24 - 1769-08-02, https://www.wikidata.org/wiki/Q5217140
+<https://www.wikidata.org/wiki/Q43271831>
+  # William Feilding, 5th Earl of Denbigh, 1697-10-26 - 1755-08-02
+  gen:father <https://www.wikidata.org/wiki/Q4867157> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75265688> .
+  # oo Isabella Haeck de Jong, 1694-05-07 - 1769-05-16, daughter of Peter Haeck de Jong and Anna Maria van Weede
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q43271831> , <https://www.wikidata.org/wiki/Q75385400> .
 <#Charles_Feilding_(died_1746)>
+# https://www.wikidata.org/wiki/Q75319191
   # Hon. Charles Feilding, 1717b - 1746-02-06
   gen:father <https://www.wikidata.org/wiki/Q4867157> ;
-  gen:mother <#Hester_Firebrace> .
-  # oo 1737-08-28 Elizabeth Palmer, 1714-07-26 - 1743-02-16
+  gen:mother <https://www.wikidata.org/wiki/Q75265688> .
+  # oo 1737-08-28 Elizabeth Palmer, 1714-07-26 - 1743-02-16, https://www.wikidata.org/wiki/Q75319192
   []
     gen:spouse <#Charles_Feilding_(died_1746)> , <marsham.ttl#Elizabeth_Palmer> ;
 	gen:startDate "1737-08-28" .
 
-# https://www.wikidata.org/wiki/Q16829347
+<https://www.wikidata.org/wiki/Q16829347>
   # Basil Feilding, 6th Earl of Denbigh, 1719-01-03 - 1800-07-14
-  # son of https://www.wikidata.org/wiki/Q43271831
-  # and https://www.wikidata.org/wiki/Q75385400
-  # oo https://www.wikidata.org/wiki/Q75249550 (Mary Cotton)
+  gen:father <https://www.wikidata.org/wiki/Q43271831> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75385400> .
+  # oo Mary Cotton, d. 1782-10-14, daughter of Sir John Cotton, 6th Baronet (d. 1752-03-27, https://www.wikidata.org/wiki/Q75269931, son of https://www.wikidata.org/wiki/Q75826249 Sir Robert Cotton, 5th Baronet and https://www.wikidata.org/wiki/Q75826284 Elizabeth Wigston) and oo Jane Burdett (d. 1769b, https://www.wikidata.org/wiki/Q75826289, daughter of https://www.wikidata.org/wiki/Q75258331 (hervey.ttl) and https://www.wikidata.org/wiki/Q75272349)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16829347> , <https://www.wikidata.org/wiki/Q75249550> ;
+	gen:startDate "1757-04-12" .
+  # oo Sarah Farnham, d. 1814-10-02, daughter of Edward Farnham
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16829347> , <https://www.wikidata.org/wiki/Q75265704> ;
+	gen:startDate "1783-07-21" .
+<https://www.wikidata.org/wiki/Q75319186>
+  # Elizabeth Feilding, d. 1765-01-19
+  gen:father <#Charles_Feilding_(died_1746)> ;
+  gen:mother <marsham.ttl#Elizabeth_Palmer> .
+  # oo 1763-09-05 Henry Digby, 1st Earl Digby, 1731-07-21 - 1793-09-25, https://www.wikidata.org/wiki/Q16169303, son of Hon. Edward Digby (d. 1746-10-02, https://www.wikidata.org/wiki/Q20639034, son of https://www.wikidata.org/wiki/Q8007836 William Digby, 5th Baron Digby and https://www.wikidata.org/wiki/Q75318846 Lady Jane Noel) and oo 1729-07-05 Charlotte Fox (d. 1778-11, https://www.wikidata.org/wiki/Q75318848, daughter of https://www.wikidata.org/wiki/Q3498549 Rt. Hon. Sir Stephen Fox and https://www.wikidata.org/wiki/Q75318851 Christiana Hope)
 <#Charles_Feilding>
+# https://www.wikidata.org/wiki/Q75319188
   # Charles Feilding
   gen:father <#Charles_Feilding_(died_1746)> ;
   gen:mother <marsham.ttl#Elizabeth_Palmer> .
-  # oo 1772-07 Sophia Finch
+  # oo Sophia Finch, https://www.wikidata.org/wiki/Q75319190
   []
     gen:spouse <#Charles_Feilding> , <finch.ttl#Sophia_Finch> ;
 	gen:startDate "1772-07" .
 
-# https://www.wikidata.org/wiki/Q8008968
-  # William Feilding, Viscount Feilding, 1760 - 1799-08-08
-  # son of https://www.wikidata.org/wiki/Q16829347
-  # and https://www.wikidata.org/wiki/Q75249550
-  # oo https://www.wikidata.org/wiki/Q75265705 Anne Catherine Powys
+<https://www.wikidata.org/wiki/Q8008968>
+  # William Robert Basil Feilding, Viscount Feilding, 1760 - 1799-08-08
+  gen:father <https://www.wikidata.org/wiki/Q16829347> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75249550> .
+  # oo Anne Catherine Powys, d. 1852-01, daughter of Thomas Jelf Powys
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8008968> , <https://www.wikidata.org/wiki/Q75265705> ;
+	gen:startDate "1791-04-20" .
 <#Sophia_Charlotte_Feilding>
+# https://www.wikidata.org/wiki/Q75299089
   # Sophia Charlotte Feilding, d. 1834-09-19
   gen:father <#Charles_Feilding> ;
   gen:mother <finch.ttl#Sophia_Finch> .
-  # oo 1792-07-22 Lord Robert Stephen FitzGerald, 1765-01-15 - 1833-01-02, fitzgerald.ttl#Lord_Robert_Stephen_FitzGerald
+  # oo 1792-07-22 Lord Robert Stephen FitzGerald, 1765-01-15 - 1833-01-02, fitzgerald.ttl#Lord_Robert_Stephen_FitzGerald or https://www.wikidata.org/wiki/Q26220079
+<https://www.wikidata.org/wiki/Q56641495>
+  # Charles Feilding, 1780 - 1837-09-02
+  gen:father <#Charles_Feilding> ;
+  gen:mother <finch.ttl#Sophia_Finch> .
+  # oo Lady Elizabeth Theresa Fox-Strangways, d. 1846-03-12 (oo 1796-04-17 William Davenport Talbot, d. 1800-07-30, https://www.wikidata.org/wiki/Q75319198, son of Rev. William Davenport (1725 - 1781, https://www.wikidata.org/wiki/Q76045360, son of Henry Davenport (1677 - 1731, https://www.wikidata.org/wiki/Q76089061, son of https://www.wikidata.org/wiki/Q76104356 Henry Davenport and https://www.wikidata.org/wiki/Q76113690 Elizabeth Talbot) and oo Barbara Ivory (d. 1748, https://www.wikidata.org/wiki/Q76089060, daughter of daughter of Sir John Ivory and Anne Talbot)) and oo Martha Talbot (1722 - 1790, https://www.wikidata.org/wiki/Q76045357, daughter of John Ivory Talbot (1691 - 1772, https://www.wikidata.org/wiki/Q16873040, son of https://www.wikidata.org/wiki/Q76089058 Sir John Ivory and https://www.wikidata.org/wiki/Q75259985 Anne Talbot) and oo Hon. Mary Mansell (https://www.wikidata.org/wiki/Q75912470, daughter of https://www.wikidata.org/wiki/Q75912456 Sir Thomas Mansell, 1st Baron Mansell of Margam and https://www.wikidata.org/wiki/Q75912457 Martha Millington))), daughter of https://www.wikidata.org/wiki/Q5721520 Henry Thomas Fox-Strangways, 2nd Earl of Ilchester and https://www.wikidata.org/wiki/Q75319084 Mary Theresa O'Grady
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q56641495> , <https://www.wikidata.org/wiki/Q21457397> ;
+	gen:startDate "1804-04-24" .
 
 <https://www.wikidata.org/wiki/Q8008969>
   # William Basil Percy Feilding, 7th Earl of Denbigh, 1796-03-25 - 1865-06-25
   gen:father <https://www.wikidata.org/wiki/Q8008968> ;
   gen:mother <https://www.wikidata.org/wiki/Q75265705> .
-  # oo Lady Mary Elizabeth Kitty Moreton, d. 1842-12-16
-# TODO move to herbert.ttl
+  # oo Lady Mary Elizabeth Kitty Moreton, d. 1842-12-16 (herbert.ttl)
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q8008969> , <herbert.ttl#Lady_Mary_Elizabeth_Kitty_Moreton> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q8008969> , <https://www.wikidata.org/wiki/Q75265707> ;
 	gen:startDate "1822-05-08" .
+<https://www.wikidata.org/wiki/Q3660556>
+  # Caroline Augusta Feilding, 1808 - 1881-11-02
+  gen:father <https://www.wikidata.org/wiki/Q56641495> ;
+  gen:mother <https://www.wikidata.org/wiki/Q21457397> .
+  # oo 1831-12-06 Ernest Augustus Edgcumbe, 3rd Earl of Mount Edgcumbe, 1797-03-23 - 1861-09-03, https://www.wikidata.org/wiki/Q6814689, son of https://www.wikidata.org/wiki/Q4285555 Richard Edgcumbe, 2nd Earl of Mount Edgcumbe and https://www.wikidata.org/wiki/Q56641417 Lady Sophia Hobart
 
-# https://www.wikidata.org/wiki/Q7377411
-  # Rudolph Feilding, 8th Earl of Denbigh, 1823-04-09 - 1892-03-10
-  # son of https://www.wikidata.org/wiki/Q8008969
-  # and #Lady_Mary_Elizabeth_Kitty_Moreton https://www.wikidata.org/wiki/Q75265707
-  # oo Mary Berkeley
+<https://www.wikidata.org/wiki/Q7377411>
+  # Rudolph William Basil Feilding, 8th Earl of Denbigh, 1823-04-09 - 1892-03-10
+  gen:father <https://www.wikidata.org/wiki/Q8008969> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75265707> .
+  # oo Louisa Pennant, d. 1853-05-01, daughter of David Pennant (d. 1835-02-15, https://www.wikidata.org/wiki/Q75269936) and oo 1827-10-10 Lady Emma Brudenell (d. 1847-12-02, https://www.wikidata.org/wiki/Q76364574, daughter of https://www.wikidata.org/wiki/Q7342461 Robert Brudenell, 6th Earl of Cardigan and https://www.wikidata.org/wiki/Q20019994 Penelope Anne Cooke)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7377411> , <https://www.wikidata.org/wiki/Q75265708> ;
+	gen:startDate "1846-06-16" .
+  # oo Mary Berkeley, d. 1901-06-03, daughter of Robert Berkeley and Henrietta Sophia Benfield
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7377411> , <https://www.wikidata.org/wiki/Q75265710> ;
+	gen:startDate "1857-09-29" .
 <#Sir_Percy_Robert_Basil_Feilding>
+# https://www.wikidata.org/wiki/Q25323648
+# https://www.wikidata.org/wiki/Q75267170
   # Hon. Sir Percy Robert Basil Feilding, 1827-06-26 - 1904-01-09
   gen:father <https://www.wikidata.org/wiki/Q8008969> ;
-  gen:mother <herbert.ttl#Lady_Mary_Elizabeth_Kitty_Moreton> .
-  # oo Lady Louisa Isabella Harriet Thynne, d. 1919-06-26
+  gen:mother <https://www.wikidata.org/wiki/Q75265707> .
+  # oo Lady Louisa Isabella Harriet Thynne, d. 1919-06-26, https://www.wikidata.org/wiki/Q75267784
   []
     gen:spouse <#Sir_Percy_Robert_Basil_Feilding> , <thynne.ttl#Lady_Louisa_Isabella_Harriet_Thynne> ;
 	gen:startDate "1862-04-29" .
+<#Lady_Jane_Lissy_Harriott_Feilding>
+# https://www.wikidata.org/wiki/Q75613733
+  # Lady Jane Lissy Harriott Feilding, 1829 - 1912-04-26
+  gen:father <https://www.wikidata.org/wiki/Q8008969> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75265707> .
+  # oo 1856-01-10 Theophilus John Levett, of Wychnor Park, 1829-12-11 – 1899-02-27, https://www.wikidata.org/wiki/Q7782304 (legge.ttl)
 <#Charles_William_Alexander_Feilding>
+# https://www.wikidata.org/wiki/Q75313934
   # Rev. Hon. Charles William Alexander Feilding, 1833-04-28 - 1893-11-30
   gen:father <https://www.wikidata.org/wiki/Q8008969> ;
-  gen:mother <herbert.ttl#Lady_Mary_Elizabeth_Kitty_Moreton> .
-  # oo Lucy Grant, 1836-10-05 - 1875-01-16
+  gen:mother <https://www.wikidata.org/wiki/Q75265707> .
+  # oo Lucy Grant, 1836-10-05 - 1875-01-16, https://www.wikidata.org/wiki/Q75313936
   []
     gen:spouse <#Charles_William_Alexander_Feilding> , <bruce.ttl#Lucy_Grant> ;
 	gen:startDate "1866-09-27" .
-  # oo Emily Margaret Egerton, d. 1894-03-19
+  # oo Emily Margaret Egerton, d. 1894-03-19, https://www.wikidata.org/wiki/Q75613730
   []
     gen:spouse <#Charles_William_Alexander_Feilding> , <egerton.ttl#Emily_Margaret_Egerton> ;
 	gen:startDate "1882-09-21" .
+<https://www.wikidata.org/wiki/Q15053832>
+  # Hon. William Henry Adelbert Feilding, 1836-01-06 - 1895-03-24
+  gen:father <https://www.wikidata.org/wiki/Q8008969> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75265707> .
+  # oo Charlotte Leighton, d. 1928-06-28, daughter of https://www.wikidata.org/wiki/Q7526095 (seymour.ttl) Sir Baldwin Leighton, 7th Baronet and https://www.wikidata.org/wiki/Q76052752 Mary Parker
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q15053832> , <https://www.wikidata.org/wiki/Q75613731> ;
+	gen:startDate "1893-04-07" .
 <#Lady_Adelaide_Emily_Feilding>
+# https://www.wikidata.org/wiki/Q75297013
   # Lady Adelaide Emily Feilding, 1836 - 1870-05-24
   gen:father <https://www.wikidata.org/wiki/Q8008969> ;
-  gen:mother <herbert.ttl#Lady_Mary_Elizabeth_Kitty_Moreton> .
-  # oo 1865-04-25 Charles Archibald Murray, 1836-10-10 - 1924-08-23, murray.ttl#Charles_Archibald_Murray
-<#Lady_Jane_Lissy_Harriott_Feilding>
-  # Lady Jane Lissy Harriott Feilding, d. 1912-04-26
+  gen:mother <https://www.wikidata.org/wiki/Q75265707> .
+  # oo 1865-04-25 Charles Archibald Murray, 1836-10-10 - 1924-08-23, murray.ttl#Charles_Archibald_Murray or https://www.wikidata.org/wiki/Q75297010
+<https://www.wikidata.org/wiki/Q75533995>
+  # Lady Ida Matilda Alice Feilding, 1840 - 1915-12-16
   gen:father <https://www.wikidata.org/wiki/Q8008969> ;
-  gen:mother <herbert.ttl#Lady_Mary_Elizabeth_Kitty_Moreton> .
-  # oo 1856-01-10 Theophilus John Levett, of Wychnor Park, 1829-12-11 – 1899-02-27, https://www.wikidata.org/wiki/Q7782304 (legge.ttl)
+  gen:mother <https://www.wikidata.org/wiki/Q75265707> .
+  # oo 1872-07-30 William Malcolm Low, 1835 – 1923-06-14, https://www.wikidata.org/wiki/Q13529976, son of Sir John Low (1788-12-13 – 1880-01-10, https://www.wikidata.org/wiki/Q18672002) and oo 1829-04-10 Augusta Ludlow Shakespear (1809 - 1892)
 
+<https://www.wikidata.org/wiki/Q75613750>
+  # Lady Agnes Mary Feilding, d. 1921-07-20
+  gen:father <https://www.wikidata.org/wiki/Q7377411> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75265710> .
+  # oo 1892-10-15 Charles Edmund de Trafford, 1864-05-21 - 1951-11-11, https://www.wikidata.org/wiki/Q5084037, son of https://www.wikidata.org/wiki/Q7527330 (seymour.ttl) and https://www.wikidata.org/wiki/Q75252209 Lady Annette Mary Talbot
 <https://www.wikidata.org/wiki/Q7377413>
   # Rudolph Robert Basil Aloysius Augustine Feilding, 9th Earl of Denbigh, 1859-05-26 – 1939-11-25
-  gen:father <https://www.wikidata.org/wiki/Q7377411> .
-  # and Mary Berkeley
+  gen:father <https://www.wikidata.org/wiki/Q7377411> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75265710> .
   # oo Hon. Cecilia Mary Clifford, 1860 - 1919-12-08
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7377413> , <https://www.wikidata.org/wiki/Q75265690> ;
 	gen:startDate "1884-09-24" .
-<#Percy_Henry_Feilding>
+  # oo Kathleen Emmet, d. 1952-02-13, daughter of Thomas Addis Emmet and Cathrine Rebecca Duncan
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7377413> , <https://www.wikidata.org/wiki/Q75265692> ;
+	gen:startDate "1928-02-12" .
+<https://www.wikidata.org/wiki/Q28924138>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75613739> ;
+  # Hon. Francis Henry Everard Joseph Feilding, 1867-03-06 - 1936-02-08
+  gen:father <https://www.wikidata.org/wiki/Q7377411> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75265710> .
+  # oo Stanislawa Janina Tomczyk, d. 1975-04-02, daughter of Eustachiusz Tomczyk
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q28924138> , <https://www.wikidata.org/wiki/Q75613740> ;
+	gen:startDate "1919-11-27" .
+<https://www.wikidata.org/wiki/Q75255107>
+  # Lady Winefride Mary Elizabeth Feilding, 1868-09-24 - 1959-02-24
+  gen:father <https://www.wikidata.org/wiki/Q7377411> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75265710> .
+  # oo 1889-05-11 Gervase Henry Elwes, 1866-11-15 – 1921-01-12, https://www.wikidata.org/wiki/Q5553476, son of Valentine Dudley Henry Cary Elwes and Alice Geraldine Ward
+<https://www.wikidata.org/wiki/Q75339312>
+  # Grace Feilding, 1865-06-15 - 1946-05-11
+  gen:father <#Sir_Percy_Robert_Basil_Feilding> ;
+  gen:mother <thynne.ttl#Lady_Louisa_Isabella_Harriet_Thynne> .
+  # oo 1898-04-21 Frederick Keppel North, 1860-05-07 - 1948-03-24, https://www.wikidata.org/wiki/Q75339309, son of montagu.ttl#Charles_North or https://www.wikidata.org/wiki/Q75257972 and keppel.ttl#Augusta_Keppel or https://www.wikidata.org/wiki/Q75257866
+<https://www.wikidata.org/wiki/Q21557370>
   # Percy Henry Feilding, 1867-12-23 - 1929-06-29
   gen:father <#Sir_Percy_Robert_Basil_Feilding> ;
   gen:mother <thynne.ttl#Lady_Louisa_Isabella_Harriet_Thynne> .
   # oo Clotilde Brewster, d. 1937-02-25, daughter of Henry Brewster
   []
-    gen:spouse <#Percy_Henry_Feilding> , <#Clotilde_Brewster> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q21557370> , <https://www.wikidata.org/wiki/Q75313946> ;
 	gen:startDate "1904-05-03" .
-<#Rowland_Charles_Feilding>
+<https://www.wikidata.org/wiki/Q56641763>
   # Rowland Charles Feilding, 1871-05-18 - 1945-09-05
   gen:father <#Charles_William_Alexander_Feilding> ;
   gen:mother <bruce.ttl#Lucy_Grant> .
   # oo 1903-04-29 Edith Mary Stapleton-Bretherton, d. 1961-07-31
   []
-    gen:spouse <#Rowland_Charles_Feilding> , <#Edith_Mary_Stapleton-Bretherton> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q56641763> , <https://www.wikidata.org/wiki/Q75282636> ;
 	gen:startDate "1903-04-29" .
 
-<#Basil_Percy_Terence_Henry_Feilding>
+<https://www.wikidata.org/wiki/Q17180887>
+  # Rudolph Edmund Aloysius Feilding, Viscount Feilding, 1885-10-12 - 1937-01-10
+  gen:father <https://www.wikidata.org/wiki/Q7377413> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75265690> .
+  # oo Agnes Imelda Mary Harding, 1885 - 1937-05-06, daughter of Francis Egerton Harding and Frances Pauline Somers Cocks
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q17180887> , <https://www.wikidata.org/wiki/Q75265691> ;
+	gen:startDate "1911-02-28" .
+<https://www.wikidata.org/wiki/Q75279925>
+  # Lady Mary Alice Clara Feilding, 1888-03-31 - 1973-03-07
+  gen:father <https://www.wikidata.org/wiki/Q7377413> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75265690> .
+  # oo 1915-02-25 Sir Cecil Francis Joseph Dormer, 1883-02-14 - 1979-07-28, https://www.wikidata.org/wiki/Q5056050, son of Hon. Hubert Francis Dormer (1837-11-04 - 1913-04-16, https://www.wikidata.org/wiki/Q75279848, son of https://www.wikidata.org/wiki/Q75273723 Joseph Thaddeus Dormer, 11th Baron Dormer of Wyng and https://www.wikidata.org/wiki/Q75273725 Elizabeth Anne Tichborne) and oo 1865-11-11 Mary Jane Elizabeth Digby (d. 1938-08-15, https://www.wikidata.org/wiki/Q75279850, daughter of Kenelm Henry Digby (1800 - 1880-03-22, https://www.wikidata.org/wiki/Q6389134, son of William Digby (https://www.wikidata.org/wiki/Q76292877, Dean of Clonfert, son of John Digby (https://www.wikidata.org/wiki/Q75321351, son of Rt. Rev. Simon Digby (d. 1720-04-07, https://www.wikidata.org/wiki/Q7518618, Bishop of Elphin, on of Rt. Rev. Essex Digby (d. 1683-05-12, https://www.wikidata.org/wiki/Q22083947, Bishop of Dromore, son of https://www.wikidata.org/wiki/Q75318814 Sir Robert Digby and https://www.wikidata.org/wiki/Q75318812 Lettice FitzGerald, Baroness Offaly) and oo Lettice Brereton (https://www.wikidata.org/wiki/Q75321346)) and oo Elizabeth Westenra (https://www.wikidata.org/wiki/Q75321349, daughter of Warner Westenra and Elizabeth Wybrantz)) and oo 1717-03-20 May Marsh (d. 1731-03-17, https://www.wikidata.org/wiki/Q75321353, daughter of Very Rev. Jeremy Marsh (https://www.wikidata.org/wiki/Q75321355, Dean of Kilmore)))) and oo 1833~ Jane Mary Dillon (https://www.wikidata.org/wiki/Q75279938, daughter of Thomas Dillon))
+<https://www.wikidata.org/wiki/Q5298275>
+  # Lady Dorothie Mary Evelyn Feilding, 1889-10-06 - 1935-10-24
+  gen:father <https://www.wikidata.org/wiki/Q7377413> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75265690> .
+  # oo 1917-07-05 Charles Joseph Henry O'Hara Moore, d. 1965-04-25
+<https://www.wikidata.org/wiki/Q75343439>
+  # Lady Elizabeth Mary Feilding, b. 1899-08-22
+  gen:father <https://www.wikidata.org/wiki/Q7377413> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75265690> .
+  # oo 1926-07-26 Eric Sherbrooke Walker, 1887 – 1976, https://www.wikidata.org/wiki/Q5387495 or https://www.wikidata.org/wiki/Q75343440, son of Rev. G. Walker
+<https://www.wikidata.org/wiki/Q75313944>
   # Basil Percy Terence Henry Feilding, 1907-04-18 - 1986
-  gen:father <#Percy_Henry_Feilding> ;
-  gen:mother <#Clotilde_Brewster> .
+  gen:father <https://www.wikidata.org/wiki/Q21557370> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75313946> .
   # oo Margaret Mary Feilding, 1908 - 1989
   []
-    gen:spouse <#Basil_Percy_Terence_Henry_Feilding> , <#Margaret_Mary_Feilding> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75313944> , <https://www.wikidata.org/wiki/Q75313943> ;
 	gen:startDate "1931-06-30" .
-<#Margaret_Mary_Feilding>
+<https://www.wikidata.org/wiki/Q75282635>
+  # Anita Mary Feilding, b. 1907
+  gen:father <https://www.wikidata.org/wiki/Q56641763> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75282636> .
+  # oo 1931-06-10 (div 1949) Sir Basil Antony Trevor Mostyn, 13th Baronet, 1902-02-06 - 1956-03-19, https://www.wikidata.org/wiki/Q75282631, son of George Trevor Basil Mostyn (1857-06-13 - 1913-04-17, https://www.wikidata.org/wiki/Q75342526, son of https://www.wikidata.org/wiki/Q75320813 Sir Pyers Mostyn, 8th Baronet and https://www.wikidata.org/wiki/Q75320814 Hon. Frances Georgiana Fraser) and oo 1901-04-30 Mary Hermione de Trafford (d. 1955-03-14, https://www.wikidata.org/wiki/Q75342547, daughter of Augustus Henry de Trafford and Gertrude Mary Walmesley,)
+<https://www.wikidata.org/wiki/Q75313943>
   # Margaret Mary Feilding, 1908 - 1989
-  gen:father <#Rowland_Charles_Feilding> ;
-  gen:mother <#Edith_Mary_Stapleton-Bretherton> .
-  # oo 1931-06-30 Basil Percy Terence Henry Feilding, 1907-04-18 - 1986, #Basil_Percy_Terence_Henry_Feilding
+  gen:father <https://www.wikidata.org/wiki/Q56641763> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75282636> .
+  # oo 1931-06-30 Basil Percy Terence Henry Feilding, 1907-04-18 - 1986, https://www.wikidata.org/wiki/Q75313944
 
+<https://www.wikidata.org/wiki/Q17422014>
+  # William Rudolph Stephen Feilding, 10th Earl of Denbigh, 1912-04-17 - 1966-12-31
+  gen:father <https://www.wikidata.org/wiki/Q17180887> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75265691> .
+  # oo Betty Price, d. 1995-02-28, daughter of William Edward Price
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q17422014> , <https://www.wikidata.org/wiki/Q75265695> ;
+	gen:startDate "1940-05-13" .
 <#Amanda_Claire_Marian_Feilding>
+# https://www.wikidata.org/wiki/Q4947737
   # Amanda Claire Marian Feilding, b. 1943-01-30
-  gen:father <#Basil_Percy_Terence_Henry_Feilding> ;
-  gen:mother <#Margaret_Mary_Feilding> .
+  gen:father <https://www.wikidata.org/wiki/Q75313944> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75313943> .
   # oo 1995-01-29 James Donald Charteris, 13th Earl of Wemyss, b. 1948-06-22, https://www.wikidata.org/wiki/Q7620438 (wemyss.ttl)
 
+<https://www.wikidata.org/wiki/Q21151689>
+  # William Rudolph Michael Feilding, 11th Earl of Denbigh, 1943-08-02 - 1995-03-23
+  gen:father <https://www.wikidata.org/wiki/Q17422014> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75265695> .
+  # oo Caroline Judith Vivienne Cooke, d. 2012-09-30, daughter of Geoffrey Cooke
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q21151689> , <https://www.wikidata.org/wiki/Q75265470> ;
+	gen:startDate "1965-09-02" .
 
+<https://www.wikidata.org/wiki/Q75265471>
+  # Alexander Steven Rudolph Feilding, 12th Earl of Denbigh, b. 1970-11-04
+  gen:father <https://www.wikidata.org/wiki/Q21151689> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75265470> .
+  # oo Suzanne Jane Allen, daughter of Gregory R. Allen
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75265471> , <https://www.wikidata.org/wiki/Q75272944> ;
+	gen:startDate "1996-01-27" .
 
-
+<https://www.wikidata.org/wiki/Q75669529>
+  # Peregrine Rudolph Henry Feilding, Viscount Feilding, b. 2005-02-19
+  gen:father <https://www.wikidata.org/wiki/Q75265471> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75272944> .
+<https://www.wikidata.org/wiki/Q75669532>
+  # Lady Hester Imelda Florence Feilding, b. 2006-07-05
+  gen:father <https://www.wikidata.org/wiki/Q75265471> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75272944> .
 
 
 
@@ -217,41 +405,48 @@
 
 
 # finch.ttl
-# --------
-<#Mary_King>
-# https://www.wikidata.org/wiki/Q75257565
-  # Mary King
-  gen:father <#Sir_Robert_King> ;
-  gen:mother <#Frances_Folliott> .
-# --------
-#<#Sir_Basil_Firebrace,_1st_Baronet>
-  # Sir Basil Firebrace, 1st Baronet
-  # 1st Baronet Firebrace 1698
+# ----
+<https://www.wikidata.org/wiki/Q75257565>
+  # Mary King, d. 1669
+  gen:father <https://www.wikidata.org/wiki/Q75269927> ; # Sir Robert King
+  gen:mother <https://www.wikidata.org/wiki/Q75398624> . # Frances Folliott
 
-<#Hester_Firebrace>
-# https://www.wikidata.org/wiki/Q75265688
-  # Hester Firebrace, d. 1726-01-01
-  gen:father <#Sir_Basil_Firebrace,_1st_Baronet> .
+# ----
+<https://www.wikidata.org/wiki/Q7526098>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75269926> .
+  # Sir Basil Firebrace, 1st Baronet, 1652 – 1724-05-07
+  # 1st Baronet Firebrace, of London 1698-07-28
+  # oo Elizabeth Hough, daughter of Thomas Hough
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7526098> , <#Elizabeth_Hough> ;
+	gen:startDate "1671-09-07" .
+
+<https://www.wikidata.org/wiki/Q75265688>
+  # Hester Firebrace, 1675~ - 1726-01-01
+  gen:father <https://www.wikidata.org/wiki/Q7526098> ;
+  gen:mother <#Elizabeth_Hough> .
   # oo 1695-06-22 Basil Feilding, 4th Earl of Denbigh, 1668 - 1717-03-18, https://www.wikidata.org/wiki/Q4867157
 
 
 # wemyss.ttl:
 # ----
-#<#Frederick_Annesley_Stapleton-Bretherton>
+#<https://www.wikidata.org/wiki/Q75282638>
+# 
   # Frederick Annesley Stapleton-Bretherton, 1841 - 1919-04-13
   # oo Hon. Isabella Mary Petre, 1849~ - 1919-07-15
   []
-    gen:spouse <#Frederick_Annesley_Stapleton-Bretherton> , <#Isabella_Mary_Petre> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75282638> , <https://www.wikidata.org/wiki/Q75282639> ;
 	gen:startDate "1869-09-14" .
 
-<#Edith_Mary_Stapleton-Bretherton>
+<https://www.wikidata.org/wiki/Q75282636>
   # Edith Mary Stapleton-Bretherton, d. 1961-07-31
-  gen:father <#Frederick_Annesley_Stapleton-Bretherton> ;
-  gen:mother <#Isabella_Mary_Petre> .
-  # oo 1903-04-29 Rowland Charles Feilding, 1871-05-18 - 1945-09-05, #Rowland_Charles_Feilding
+  gen:father <https://www.wikidata.org/wiki/Q75282638> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75282639> .
+  # oo 1903-04-29 Rowland Charles Feilding, 1871-05-18 - 1945-09-05, https://www.wikidata.org/wiki/Q56641763
 # ----
-<#Isabella_Mary_Petre>
+# TODO move to howard.ttl
+<https://www.wikidata.org/wiki/Q75282639>
   # Hon. Isabella Mary Petre, 1849~ - 1919-07-15
-  gen:father <https://www.wikidata.org/wiki/Q8016828> .
-  # and Mary Theresa Clifford
-  # oo 1869-09-14 Frederick Annesley Stapleton-Bretherton, 1841 - 1919-04-13, #Frederick_Annesley_Stapleton-Bretherton
+  gen:father <https://www.wikidata.org/wiki/Q8016828> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75282641> .
+  # oo 1869-09-14 Frederick Annesley Stapleton-Bretherton, 1841 - 1919-04-13, https://www.wikidata.org/wiki/Q75282638
