@@ -1380,24 +1380,41 @@
 # ----
 #<https://www.wikidata.org/wiki/Q16859389>
   # Herbert Mackworth, 1687-09-07 – 1765-08-20
+  # son of Sir Humphrey Mackworth
+  # and Mary Evans
   # oo Hon. Juliana Digby, d. 1785-08-09
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q16859389> , <#Juliana_Digby> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q16859389> , <https://www.wikidata.org/wiki/Q76063886> ;
 	gen:startDate "1730-04-29" .
 
+<#Frances_Mackworth>
+  # Frances Mackworth, 1731-08-28 - 1814-03-03
+  gen:father <#Herbert_Mackworth> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76063886> .
+  # oo 1765-07-22 Anthony Joseph Browne, 7th Viscount Montagu, 1728/1730 - 1787-04-09, #Anthony_Browne,_7th_Viscount_Montagu
 <https://www.wikidata.org/wiki/Q7527249>
   # Sir Herbert Mackworth, 1st Baronet, 1737-01-01 . 1791-10-25
   gen:father <https://www.wikidata.org/wiki/Q16859389> ;
-  gen:mother <#Juliana_Digby> .
+  gen:mother <https://www.wikidata.org/wiki/Q76063886> .
   # oo Eliza Trefusis, 1738-01-24 - 1799-12-19
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7527249> , <#Eliza_Trefusis> ;
 	gen:startDate "1759" .
 # ----
-<#Juliana_Digby>
-  # Hon. Juliana Digby, d. 1785-08-09
-  gen:father <https://www.wikidata.org/wiki/Q8007836> .
-  # oo 1730-04-29 Herbert Mackworth, 1687-09-07 – 1765-08-20, https://www.wikidata.org/wiki/Q16859389
+<#Anthony_Browne,_7th_Viscount_Montagu>
+  gen:name "Anthony Joseph Browne, 7th Viscount Montagu"@en ;
+  gen:birthDate "1728/1730" ;
+  gen:deathDate "1787-04-09" .
+  # oo Frances Mackworth, 1731-08-28 - 1814-03-03
+  []
+    gen:spouse <#Anthony_Browne,_7th_Viscount_Montagu> , <#Frances_Mackworth> ;
+	gen:startDate "1765-07-22" .
+
+<#Elizabeth_Mary_Browne>
+  # Hon. Elizabeth Mary Browne, 1767-02-05 - 1830-12-30
+  gen:father <#Anthony_Browne,_7th_Viscount_Montagu> ;
+  gen:mother <#Frances_Mackworth> .
+  # oo 1794-09-01 William Stephen Poyntz, 1770-01-20 - 1840-04-08, https://www.wikidata.org/wiki/Q8018781 (seymour.ttl)
 
 # ----
 #<#John_Rolle>
