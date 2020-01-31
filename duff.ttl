@@ -2,6 +2,7 @@
 @prefix gen: <http://jjkoch.de/gen#> .
 @prefix wdata: <https://www.wikidata.org/wiki/> .
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 #<#Alexander_Duff_of_Keithmore>
   # Alexander Duff of Keithmore, 1623 - 1696
@@ -313,42 +314,43 @@
   # oo 1686-03-03 Sir John Gordon of Park, 1st Baronet, d. 1713-02, #Sir_John_Gordon_of_Park,_1st_Baronet
 
 # ----
-<#John_Sinclair,_Master_of_Caithness>
+<https://www.wikidata.org/wiki/Q85771752>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75262764> ;
   # John Sinclair, Master of Caithness, 1543~ - 1575-09
   gen:father <https://www.wikidata.org/wiki/Q18527593> ;
   gen:mother <graham.ttl#Lady_Elizabeth_Graham_(died_1576)> .
   # oo Lady Jean Hepburn, d. 1599-07-27b
   []
-    gen:spouse <#John_Sinclair,_Master_of_Caithness> , <https://www.wikidata.org/wiki/Q6170833> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q85771752> , <https://www.wikidata.org/wiki/Q6170833> ;
 	gen:startDate "1566~" .
 
-<#Sir_James_Sinclair>
+<https://www.wikidata.org/wiki/Q75272465>
   # Sir James Sinclair, b. 1567a
-  gen:father <#John_Sinclair,_Master_of_Caithness> ;
+  gen:father <https://www.wikidata.org/wiki/Q85771752> ;
   gen:mother <https://www.wikidata.org/wiki/Q6170833> .
   # oo Elizabeth Stewart
   []
-    gen:spouse <#Sir_James_Sinclair> , <stuart.ttl#Elizabeth_Stewart_of_Orkney> .
+    gen:spouse <https://www.wikidata.org/wiki/Q75272465> , <https://www.wikidata.org/wiki/Q75532497> .
 
-<#Sir_James_Sinclair,_2nd_of_Murkle>
+<https://www.wikidata.org/wiki/Q75532498>
   # Sir James Sinclair, 2nd of Murkle, b. 1598
-  gen:father <#Sir_James_Sinclair> ;
-  gen:mother <stuart.ttl#Elizabeth_Stewart_of_Orkney> .
+  gen:father <https://www.wikidata.org/wiki/Q75272465> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75532497> .
   # oo Jean Stewart, 1623 - 1662-10-22
   []
-    gen:spouse <#Sir_James_Sinclair,_2nd_of_Murkle> , <#Jean_Stewart> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75532498> , <https://www.wikidata.org/wiki/Q75532503> ;
 	gen:startDate "1640~" .
 
-<#John_Sinclair,_8th_Earl_of_Caithness>
+<https://www.wikidata.org/wiki/Q75532505>
   # John Sinclair, 8th Earl of Caithness, d. 1705
   # 8th Earl of Caithness 1698
-  gen:father <#Sir_James_Sinclair,_2nd_of_Murkle> ;
-  gen:mother <#Jean_Stewart> .
+  gen:father <https://www.wikidata.org/wiki/Q75532498> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75532503> .
   # oo Jean Carmichael
 
 <#Alexander_Sinclair,_9th_Earl_of_Caithness>
   # Alexander Sinclair, 9th Earl of Caithness, 1684~ - 1765-12-09
-  gen:father <#John_Sinclair,_8th_Earl_of_Caithness> .
+  gen:father <https://www.wikidata.org/wiki/Q75532505> .
   # and Jean Carmichael
   # oo Lady Margaret Primrose, d. 1785-10-07
   []
@@ -360,24 +362,6 @@
   gen:father <#Alexander_Sinclair,_9th_Earl_of_Caithness> ;
   gen:mother <#Lady_Margaret_Primrose> .
   # oo 1759-06-04 James Duff, 2nd Earl Fife, 1729-09-29 - 1809, https://www.wikidata.org/wiki/Q6132882
-# ----
-<https://www.wikidata.org/wiki/Q6170833>
-  # Lady Jean Hepburn, d. 1599-07-27b
-  gen:father <https://www.wikidata.org/wiki/Q4497272> .
-  # and Agnes Sinclair
-  # oo 1566~ 
-# ----
-#<#William_Stewart,_of_Burray>
-  # William Stewart of Burray
-  # son of Sir Alexander Stewart, 6th of Garlies
-  # and Christian Douglas
-  # oo Barbara Stewart, daughter of James Stewart, of Burray and Janet MacLeod
-
-<#Jean_Stewart>
-  # Jean Stewart, 1623 - 1662-10-22
-  gen:father <#William_Stewart,_of_Burray> .
-  # and Barbara Stewart
-  # oo 1640~ Sir James Sinclair, 2nd of Murkle, b. 1598, #Sir_James_Sinclair,_2nd_of_Murkle
 # ----
 <https://www.wikidata.org/wiki/Q4786478>
   # Archibald Primrose, 1st Earl of Rosebery, 1664-12-18 - 1723-10-20

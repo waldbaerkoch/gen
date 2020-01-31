@@ -84,7 +84,7 @@
   # oo Anne Hardeby, daughter of Daniel Hardeby
   []
     gen:spouse <#Sir_Peregrine_Bertie> , <#Anne_Hardeby> .
-<#Lady_Katherine_Bertie>
+<https://www.wikidata.org/wiki/Q75908763>
   gen:name "Lady Katherine Bertie"@en ;
   gen:deathDate "1636-01-03" ;
   gen:father <https://www.wikidata.org/wiki/Q7342073> ;
@@ -401,7 +401,7 @@
   gen:father <https://www.wikidata.org/wiki/Q28064915> ;
   gen:mother <#Anne_Casey> .
   # oo 1757-05-16 George Hobart, 3rd Earl of Buckinghamshire, 1731-09-08 - 1804-11-14, https://www.wikidata.org/wiki/Q5540642
-<#Anne_Louisa_Bertie>
+<https://www.wikidata.org/wiki/Q75267041>
   # Anne Louisa Bertie
   gen:father <https://www.wikidata.org/wiki/Q28064915> ;
   gen:mother <#Anne_Casey> .
@@ -824,13 +824,13 @@
   gen:mother <#Gwendoline_Mary_Dormer> .
   # oo 1914-04-21 Sigismund William Joseph Trafford, 1883-03-15 - 1953-09-08, https://www.wikidata.org/wiki/Q75333481 (petre.ttl)
   # oo 1956-09-05 Henry Antrobus Cartwright, d. 1984, son of Rev. Arthur Rogers Cartwright
-<#James_Willoughby_Bertie>
+<https://www.wikidata.org/wiki/Q75267068>
   # Hon. James Willoughby Bertie, 1901-09-22 – 1966-05-11
   gen:father <https://www.wikidata.org/wiki/Q3322373> ;
   gen:mother <#Gwendoline_Mary_Dormer> .
-  # oo Lady Jean Crichton-Stuart
+  # oo Lady Jean Crichton-Stuart, 1908-10-28 - 1995-10-23
   []
-    gen:spouse <#James_Willoughby_Bertie> , <stuart.ttl#Lady_Jean_Crichton-Stuart> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75267068> , <https://www.wikidata.org/wiki/Q75267069> ;
 	gen:startDate "1928-06-12" .
 <https://www.wikidata.org/wiki/Q21548844>
   gen:name "Vere Frederick Bertie, 2nd Viscount Bertie of Thame"@en ;
@@ -856,9 +856,9 @@
   gen:deathDate "1963-09-11" ;
   gen:father <#Montagu_Charles_Francis_Towneley-Bertie,_Lord_Norreys> ;
   gen:mother <grosvenor.ttl#Rose_Riversdale_Glyn> .
-  # oo Elizabeth Valetta Montagu-Stuart-Wortley, 1896-08-01 - 1978-10-24
+  # oo Elizabeth Valetta Montagu-Stuart-Wortley, 1896-08-01 - 1978-10-24 (stuart.ttl)
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q6904078> , <stuart.ttl#Elizabeth_Valetta_Montagu-Stuart-Wortley> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q6904078> , <https://www.wikidata.org/wiki/Q75250980> ;
 	gen:startDate "1928-08-11" .
 <https://www.wikidata.org/wiki/Q19958987>
   gen:name "Richard Henry Rupert Bertie, 14th Earl of Lindsey and 9th Earl of Abingdon"@en ;
@@ -872,8 +872,8 @@
 <https://www.wikidata.org/wiki/Q433924>
   # Andrew Willoughby Ninian Bertie, 1929-05-15 – 2008-02-07
   # Prince and Grand Master of the Sovereign Military Order of Malta 1988
-  gen:father <#James_Willoughby_Bertie> ;
-  gen:mother <stuart.ttl#Lady_Jean_Crichton-Stuart> .
+  gen:father <https://www.wikidata.org/wiki/Q75267068> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75267069> .
 
 <#Henry_Mark_Willoughby_Bertie,_Lord_Norreys>
   gen:name "Henry Mark Willoughby Bertie, Lord Norreys"@en ;
@@ -992,11 +992,36 @@
 # --------
 <https://www.wikidata.org/wiki/Q26821757>
   gen:name "William Paston, 1st baronet"@en ;
-  gen:birthDate "1528" ;
-  gen:deathDate "1610" .
+  # 1st Baronet Paston, of Oxnead, Norfolk 1641-06-07
+  gen:birthDate "1610~" ;
+  gen:deathDate "1663-02-22" .
+  # son of Sir Edmund Paston
+  # and Katherine Knyvett
+  # oo Lady Katherine Bertie, d. 1636-01-03
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q26821757> , <#Lady_Katherine_Bertie> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q26821757> , <https://www.wikidata.org/wiki/Q75908763> ;
 	gen:startDate "1631~" .
+
+<https://www.wikidata.org/wiki/Q15072659>
+  # Sir Robert Paston, 1st Earl of Yarmouth, 1631-05-29 - 1683-03-08
+  # 2nd Baronet Paston, of Oxnead, Norfolk 1663-02-22
+  # 1st Viscount Yarmouth, of Norfolk, 1st Baron Paston, of Norfolk 1673-08-19
+  # 1st Earl of Yarmouth 1679-07-30
+  gen:father <https://www.wikidata.org/wiki/Q26821757> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75908763> .
+  # oo Rebecca Clayton, daughter of Sir Jasper Clayton
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q15072659> , <https://www.wikidata.org/wiki/Q75908769> ;
+	gen:startDate "1650-06-15~" .
+
+<https://www.wikidata.org/wiki/Q8016621>
+  # William Paston, 2nd Earl of Yarmouth, 1653 - 1732-12-25
+  gen:father <https://www.wikidata.org/wiki/Q15072659> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75908769> .
+  # oo Charlotte Jemima Henrietta Maria FitzRoy, 1650 - 1684-07-28 (stuart.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8016621> , <https://www.wikidata.org/wiki/Q5086024> ;
+	gen:startDate "1672-07-17" .
 
 # ----
 #<https://www.wikidata.org/wiki/Q18759366>
@@ -1482,29 +1507,54 @@
   # oo Jane Cataneo, daughter of Horace Cataneo
   []
     gen:spouse <https://www.wikidata.org/wiki/Q27868456> , <https://www.wikidata.org/wiki/Q75272340> .
-<#Lady_Henrietta_Anne_Barbara_Hobart>
+<https://www.wikidata.org/wiki/Q16753016>
+  # Lady Maria Frances Mary Hobart, 1762~ - 1794-04-23
+  gen:father <https://www.wikidata.org/wiki/Q5540642> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75272338> .
+  # oo 1785-09-30 George Augustus North, 3rd Earl of Guilford, 1757-09-11 - 1802-04-20, https://www.wikidata.org/wiki/Q5542932 (montagu.ttl)
+<https://www.wikidata.org/wiki/Q75452957>
   # Lady Henrietta Anne Barbara Hobart, 1762~ - 1828-12-12
   gen:father <https://www.wikidata.org/wiki/Q5540642> ;
   gen:mother <https://www.wikidata.org/wiki/Q75272338> .
   # oo 1789-05-24 Rt. Hon. John Sullivan, 1749-04-07 - 1839-10-31, https://www.wikidata.org/wiki/Q18527646
+<https://www.wikidata.org/wiki/Q5723072>
+  # Very Rev. Hon. Henry Lewis Hobart, 1774 - 1846-05-08
+  # Dean of Windsor 1816
+  gen:father <https://www.wikidata.org/wiki/Q5540642> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75272338> .
+  # oo Charlotte Selina Moore, d. 1867-01-12, daughter of Richard Moore and Selina Kirby
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5723072> , <https://www.wikidata.org/wiki/Q75514777> ;
+	gen:startDate "1824-10-05" .
 
 <https://www.wikidata.org/wiki/Q75514767>
   # Lady Albinia Jane Hobart, d. 1867-04-28
   gen:father <https://www.wikidata.org/wiki/Q27868456> ;
   gen:mother <https://www.wikidata.org/wiki/Q75272340> .
   # oo 1815-03-18 Sir Augustus John Foster, 1st Baronet, 1780-12-04 - 1848-08-01, https://www.wikidata.org/wiki/Q7526089
+<https://www.wikidata.org/wiki/Q75514789>
+  # Sophia Anne Eleanor Hobart, d. 1919-10-20
+  gen:father <https://www.wikidata.org/wiki/Q5723072> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75514777> .
+  # oo 1864-10-25 Algernon Augustus Stewart, 1839-01-31 - 1905-07-23, https://www.wikidata.org/wiki/Q75514791
 # ----
-#<https://www.wikidata.org/wiki/Q18527646>
+<https://www.wikidata.org/wiki/Q18527646>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75267150> .
   # Rt. Hon. John Sullivan, 1749-04-07 - 1839-10-31
   # oo Lady Henrietta Anne Barbara Hobart, 1762~ - 1828-12-12
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q18527646> , <#Lady_Henrietta_Anne_Barbara_Hobart> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q18527646> , <https://www.wikidata.org/wiki/Q75452957> ;
 	gen:startDate "1789-05-24" .
 
+<https://www.wikidata.org/wiki/Q75267149>
+  # Albinia Sullivan, d. 1827-06-03
+  gen:father <https://www.wikidata.org/wiki/Q18527646> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75452957> .
+  # oo 1807-09-26 John James Stuart, 1782-08-29 - 1811-03-18, https://www.wikidata.org/wiki/Q75267147
 <https://www.wikidata.org/wiki/Q75341265>
   # Harriet Margaret Sullivan
   gen:father <https://www.wikidata.org/wiki/Q18527646> ;
-  gen:mother <#Lady_Henrietta_Anne_Barbara_Hobart> .
+  gen:mother <https://www.wikidata.org/wiki/Q75452957> .
   # oo 1819-09-21 Sir George Tyler, 1792-12-28 – 1862-06-04, https://www.wikidata.org/wiki/Q16886998 (roper.ttl)
 
 # ----
@@ -1555,6 +1605,14 @@
   []
     gen:spouse <#Thomas_Merthyr_Guest> , <grosvenor.ttl#Lady_Theodora_Grosvenor> ;
 	gen:startDate "1877-03-08" .
+<https://www.wikidata.org/wiki/Q4798916>
+  # Arthur Edward Guest, 1841-11-07 - 1898-07-17
+  gen:father <https://www.wikidata.org/wiki/Q6242277> ; # Sir Josiah John Guest, 1st Baronet
+  gen:mother <https://www.wikidata.org/wiki/Q272542> . # Lady Charlotte Elizabeth Bertie
+  # oo Adeline Mary Chapman, 1847 - 1931-01-20
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4798916> , <https://www.wikidata.org/wiki/Q75353305> ;
+	gen:startDate "1867-04-23" .
 
 <https://www.wikidata.org/wiki/Q75272663>
   # Hon. Frances Charlotte Guest, 1869-03-22 - 1957-09-24
@@ -1585,6 +1643,14 @@
   []
     gen:spouse <#Christian_Henry_Charles_Guest> , <lyttelton.ttl#Frances_Henrietta_Lyttelton> ;
 	gen:startDate "1911-07-12" .
+<https://www.wikidata.org/wiki/Q75335166>
+  # Arthur Rhuven Guest, 1869-12-16 - 1946-02-24
+  gen:father <https://www.wikidata.org/wiki/Q4798916> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75353305> .
+  # oo Hilda Eugenia Stewart, 1868 - 1959-04-15
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75335166> , <https://www.wikidata.org/wiki/Q75335164> ;
+	gen:startDate "1901-04-22" .
 
 <#Rosemary_Sibell_Guest>
   # Hon. Rosemary Sibell Guest, 1906-03-07 - 1971-03-21
@@ -2023,25 +2089,41 @@
   # oo 1838-06-28
 
 # ----
-#<#John_Newton_Lane>
+#<https://www.wikidata.org/wiki/Q75350664>
   # John Newton Lane, 1800-12-04 - 1869-10-13
+  # son of John Lane
+  # and Sarah Lloyd
   # oo Hon. Agnes Bagot
   []
-    gen:spouse <#John_Newton_Lane> , <paget.ttl#Agnes_Bagot> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75350664> , <https://www.wikidata.org/wiki/Q75567238> ;
 	gen:startDate "1828-01-08" .
 
+<https://www.wikidata.org/wiki/Q75321477>
+  # Sidney Leveson Lane, b. 1831-04-13
+  gen:father <https://www.wikidata.org/wiki/Q75350664> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75567238> .
+  # oo Mary Isabel Bagot, d. 1900-04-14
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75321477> , <https://www.wikidata.org/wiki/Q75321476> ;
+	gen:startDate "1863-01-06" .
 <#Cecil_Newton_Lane>
   # Cecil Newton Lane, 1833-05-27 - 1897
-  gen:father <#John_Newton_Lane> ;
-  gen:mother <paget.ttl#Agnes_Bagot> .
+  gen:father <https://www.wikidata.org/wiki/Q75350664> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75567238> .
   []
     gen:spouse <#Cecil_Newton_Lane> , <#Adela_Mary_Bertie> ;
 	gen:startDate "1876-12-12" .
 <#Edith_Emeline_Mary_Lane>
   # Edith Emeline Mary Lane, d. 1929-03-12
-  gen:father <#John_Newton_Lane> ;
-  gen:mother <paget.ttl#Agnes_Bagot> .
-  # oo 1868-08-25 Walter Henry James, 2nd Baron Northbourne of Betteshanger, 1846-03-25 - 1923-01-27, https://www.wikidata.org/wiki/Q7965251
+  gen:father <https://www.wikidata.org/wiki/Q75350664> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75567238> .
+  # oo 1868-08-25 Walter Henry James, 2nd Baron Northbourne of Betteshanger, 1846-03-25 - 1923-01-27, https://www.wikidata.org/wiki/Q7965251 (wellesley.ttl)
+
+<https://www.wikidata.org/wiki/Q75321523>
+  # Mary Beatrice Sydney Lane, d. 1943-09-11
+  gen:father <https://www.wikidata.org/wiki/Q75321477> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75321476> .
+  # oo 1891-10-24 Walter Richard Shaw-Stewart, 1861-06-27 - 1934-09-25, https://www.wikidata.org/wiki/Q29888762 (stuart.ttl)
 
 # ----
 <https://www.wikidata.org/wiki/Q21165641>
