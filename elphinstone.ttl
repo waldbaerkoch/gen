@@ -2,6 +2,7 @@
 @prefix gen: <http://jjkoch.de/gen#> .
 @prefix wdata: <https://www.wikidata.org/wiki/> .
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 #<#Sir_William_Elphinstone_of_that_Ilk>
   # Sir William Elphinstone of that Ilk
@@ -302,6 +303,7 @@
   gen:father <https://www.wikidata.org/wiki/Q5077380> ;
   gen:mother <#Doña_Catalina_Paulina_Alesandro_de_Jiminez> .
 <https://www.wikidata.org/wiki/Q2143075>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75305361> ;
   # Clementina Elphinstone-Fleeming, 1822-06-01 – 1865-01-19
   gen:father <https://www.wikidata.org/wiki/Q5077380> ;
   gen:mother <#Doña_Catalina_Paulina_Alesandro_de_Jiminez> .
@@ -946,14 +948,46 @@
   # oo 1843-11-01 Henry Petty-FitzMaurice, 4th Marquess of Lansdowne, 1816-01-07 - 1866-07-05, https://www.wikidata.org/wiki/Q5935407
 
 # ----
-#<https://www.wikidata.org/wiki/Q5172032>
-  # Cornwallis Maude, 1st Earl de Montaltof Dundrum, 1817-04-04 – 1905-01-09
+<https://www.wikidata.org/wiki/Q5172032>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75305363> .
+  # Cornwallis Maude, 1st Earl de Montalt of Dundrum, 1817-04-04 – 1905-01-09
   # 4th Viscount Hawarden, of Hawarden, co. Tipperary, 4th Baron de Montalt of Hawarden, co. Tipperary, 6th Baronet Maude 1856-10-12
   # 1st Earl de Montalt of Dundrum, co. Tipperary 1886-09-09
   # oo Clementina Elphinstone-Fleeming, 1822-06-01 – 1865-01-19
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5172032> , <https://www.wikidata.org/wiki/Q2143075> ;
 	gen:startDate "1845-03-24" .
+
+<https://www.wikidata.org/wiki/Q75321636>
+  # Lady Leucha Diana Maude, d. 1917-08-23
+  gen:father <https://www.wikidata.org/wiki/Q5172032> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2143075> .
+  # oo 1883-12-06 Sir Thomas Courtenay Theydon Warner, 1st Baronet, 1857-07-19 - 1934-12-15, https://www.wikidata.org/wiki/Q75321635
+# ----
+#<https://www.wikidata.org/wiki/Q75321635>
+  # Sir Thomas Courtenay Theydon Warner, 1st Baronet, 1857-07-19 - 1934-12-15
+  # 1st Baronet Warner, of Brettenham Park, Suffolk 1910-07-09
+  # son of Edward Warner
+  # and Maria Carr
+  # oo Lady Leucha Diana Maude, d. 1917-08-23
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75321635> , <https://www.wikidata.org/wiki/Q75321636> ;
+	gen:startDate "1883-12-06" .
+
+<https://www.wikidata.org/wiki/Q75307694>
+  # Sir Edward Courtenay Thomas Warner, 2nd Baronet, 1886-01-04 - 1955-10-02
+  gen:father <https://www.wikidata.org/wiki/Q75321635> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75321636> .
+  # oo Hon. Nesta Douglas-Pennant, 1888-03-21 - 1970-03-04 (douglas.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75307694> , <https://www.wikidata.org/wiki/Q75307692> ;
+	gen:startDate "1920-02-16" .
+
+<https://www.wikidata.org/wiki/Q75307708>
+  # Anne Philippa Warner, b. 1927-02-27
+  gen:father <https://www.wikidata.org/wiki/Q75307694> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75307692> .
+  # oo 1951-07-14 Hon. Henry Edward Boscawen, 1921-10-04 - 2015-01-13, https://www.wikidata.org/wiki/Q75307709 (gower.ttl)
 
 # ----
 <#Elizabeth_Harriette_Clerk>

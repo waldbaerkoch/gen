@@ -2,6 +2,7 @@
 @prefix wdata: <https://www.wikidata.org/wiki/> .
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
 @prefix gen: <http://jjkoch.de/gen#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 #<#Sir_John_Ponsonby>
   # Sir John Ponsonby, of Haile, Co. Cumberland, and of Bessborough, 1608~ - 1668
@@ -321,7 +322,7 @@
   # Hon. Charlotte Georgiana Ponsonby, 1809-06-18 - 1883-09-07
   gen:father <https://www.wikidata.org/wiki/Q327264> ;
   gen:mother <fitzroy.ttl#Georgiana_Fitzroy> .
-  # oo 1834-07-08 John Horace Thomas Stapleton, 1799b - 1836-12-07, jocelyn.ttl#John_Horace_Thomas_Stapleton
+  # oo 1834-07-08 John Horace Thomas Stapleton, 1799b - 1836-12-07, fane.ttl#John_Horace_Thomas_Stapleton
   # oo 1838-12-11 Sir Charles Talbot, 1801-11-01 - 1876-08-08, https://www.wikidata.org/wiki/Q5082844
 <#Mary_Elizabeth_Ponsonby>
   # Mary Elizabeth Ponsonby, d. 1838-09-14
@@ -1901,7 +1902,7 @@
   gen:father <#Mary_Dundas> .
   # oo Lady Frances Harriet Douglas, 1819-10-07 - 1895-06-16
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q8020195> , <douglas.ttl#Lady_Frances_Harriet_Douglas> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q8020195> , <https://www.wikidata.org/wiki/Q75271001> ;
 	gen:startDate "1838-09-10" .
 <#George_Wentworth_FitzWilliam>
   # Hon. George Wentworth FitzWilliam, 1817-05-03 - 1874-03-04
@@ -1920,15 +1921,21 @@
 <https://www.wikidata.org/wiki/Q8020193>
   # William Charles Wentworth-Fitzwilliam, Viscount Milton, 1839-07-27 - 1877-01-17
   gen:father <https://www.wikidata.org/wiki/Q8020195> ;
-  gen:mother <douglas.ttl#Lady_Frances_Harriet_Douglas> .
+  gen:mother <https://www.wikidata.org/wiki/Q75271001> .
   # oo Laura Maria Theresa Beauclerk, 1849-01-03 - 1886-03-20
   []
     gen:spouse <https://www.wikidata.org/wiki/Q8020193> , <beauclerk.ttl#Laura_Beauclerk> ;
 	gen:startDate "1867-08-10" .
+<https://www.wikidata.org/wiki/Q6470425>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75288349> ;
+  # Lady Mary FitzWilliam, 1851~ - 1921-07-01
+  gen:father <https://www.wikidata.org/wiki/Q8020195> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75271001> .
+  # oo 1872-05-23 Hon. Hugh le Despenser Boscawen, 1849-02-28 - 1908-04-08, https://www.wikidata.org/wiki/Q75298756 (gower.ttl)
 <#William_Hugh_Spencer_Wentworth_FitzWilliam>
   # Hon. William Hugh Spencer Wentworth FitzWilliam, 1860-01-10 - 1917-03-28
   gen:father <https://www.wikidata.org/wiki/Q8020195> ;
-  gen:mother <douglas.ttl#Lady_Frances_Harriet_Douglas> .
+  gen:mother <https://www.wikidata.org/wiki/Q75271001> .
   # oo Lady Ada Charlotte Godolphin Osborne, 1870-05-30 - 1944-04-09
   []
     gen:spouse <#William_Hugh_Spencer_Wentworth_FitzWilliam> , <osborne.ttl#Lady_Ada_Charlotte_Godolphin_Osborne> ;
