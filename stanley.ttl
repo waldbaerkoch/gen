@@ -213,7 +213,7 @@
   # Lady Margaret Stanley, d. 1586
   gen:father <https://www.wikidata.org/wiki/Q377029> ;
   gen:mother <howard.ttl#Lady_Dorothy_Howard> .
-  # oo Sir Nicholas Poyntz, 1535~ - 1585-09-01, https://www.wikidata.org/wiki/Q7026080
+  # oo Sir Nicholas Poyntz, 1535~ - 1585-09-01, https://www.wikidata.org/wiki/Q7026080 (berkeley.ttl)
 <#Lady_Jane_Stanley>
   # Lady Jane Stanley, d. 1569-08~
   gen:father <https://www.wikidata.org/wiki/Q377029> ;
@@ -1532,60 +1532,6 @@
   # oo 1591-02-25~ Sir Gervase Clifton, 1st Lord Clifton (of Leighton Bromswold), 1569~ - 1618-10-14, https://www.wikidata.org/wiki/Q5553472
 
 # ----
-#<https://www.wikidata.org/wiki/Q7026079>
-  # Sir Nicholas Poyntz, d. 1557-07b
-  # oo Joan Berkeley, 1526b - 1563-03-31
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q7026079> , <https://www.wikidata.org/wiki/Q75620468> .
-
-<https://www.wikidata.org/wiki/Q7026080>
-  # Sir Nicholas Poyntz, 1528~/1535~ - 1585-09-01
-  gen:father <https://www.wikidata.org/wiki/Q7026079> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75620468> .
-  # oo Anne Verney, daughter of Sir Ralph Verney of Penley
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q7026080> , <#Anne_Verney> .
-  # oo Lady Margaret Stanley, d. 1586
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q7026080> , <#Lady_Margaret_Stanley_(died_1586)> .
-<#Anne_Poyntz>
-  # Anne Poyntz, d. 1592-11-30
-  gen:father <https://www.wikidata.org/wiki/Q7026079> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75620468> .
-  # oo 1554 Sir Thomas Heneage, 1532 – 1595-10-17, https://www.wikidata.org/wiki/Q5800654
-<#Jane_Poyntz>
-  # Jane or Joan Poyntz
-  gen:father <https://www.wikidata.org/wiki/Q7026079> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75620468> .
-  # oo 1568-03 Sir John Seymour, 1530~ – 1599-08b, seymour.ttl#Sir_John_Seymour_(died_1599)
-
-<https://www.wikidata.org/wiki/Q6253090>
-  # Sir John Poyntz, 1560~ - 1633
-  gen:father <https://www.wikidata.org/wiki/Q7026080> ;
-  gen:mother <#Anne_Verney> .
-  # oo Elizabeth Sydenham
-
-<https://www.wikidata.org/wiki/Q5362224>
-  # Elizabeth Poyntz, 1587 - 1673-05
-  gen:father <https://www.wikidata.org/wiki/Q6253090> .
-  # and Elizabeth Sydenham
-  # oo Thomas Butler, Viscount Thurles, 1596 - 1619-12-15, https://www.wikidata.org/wiki/Q245836
-<https://www.wikidata.org/wiki/Q7348943>
-  # Sir Robert Poyntz, 1588-10-26 - 1666-07b
-  gen:father <https://www.wikidata.org/wiki/Q6253090> .
-  # and Elizabeth Sydenham
-  # oo Frances Gibbons, d. 1638-03-13, daughter of Gervase Gibbons
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q7348943> , <#Frances_Gibbons> ;
-	gen:startDate "1604-06-13" .
-
-<#Margaret_Poyntz>
-  # Margaret Poyntz
-  gen:father <https://www.wikidata.org/wiki/Q7348943> ;
-  gen:mother <#Frances_Gibbons> .
-  # oo 1647-02-16 Sir Richard Hastings, 1st Baronet, 1610 - 1668-08~, hastings.ttl#Sir_Richard_Hastings,_1st_Baronet
-
-# ----
 <https://www.wikidata.org/wiki/Q245836>
   # Thomas Butler, Viscount Thurles, 1596 - 1619-12-15
   gen:father <https://www.wikidata.org/wiki/Q208819> ;
@@ -1786,9 +1732,9 @@
 
 # ----
 #<#Sir_John_Portman,_1st_Baronet>
-  #Sir John Portman, 1st Baronet, d. 1612-12-04
+  # Sir John Portman, 1st Baronet, d. 1612-12-04
   # 1st Baronet Portman, of Orchard Portman, co. Somerset 1612-11-25
-  # oo Anne Gifford
+  # oo Anne Gifford, d. 1651/1652, daughter of Sir Henry Gifford and Susanna Brouncker
 
 <#Sir_Henry_Portman,_2nd_Baronet>
   # Sir Henry Portman, 2nd Baronet, 1595~ -1624-02
@@ -1798,6 +1744,11 @@
   []
     gen:spouse <#Sir_Henry_Portman,_2nd_Baronet> , <#Lady_Anne_Stanley_(died_1657)> ;
 	gen:startDate "1615-07-20" .
+<https://www.wikidata.org/wiki/Q75267361>
+  # Anne Portman, 1609 - 1695
+  gen:father <stanley.ttl#Sir_John_Portman,_1st_Baronet> .
+  # and Anne Gifford
+  # oo 1630~ Sir Edward Seymour, 3rd Baronet, 1610-09-10 - 1688-12-07, https://www.wikidata.org/wiki/Q6840045
 
 # --------
 #<https://www.wikidata.org/wiki/Q14851914>
@@ -2350,15 +2301,15 @@
   # William Stratford Dugdale, 1800-05-01 – 1871-09-15
   gen:father <https://www.wikidata.org/wiki/Q26213077> ;
   gen:mother <https://www.wikidata.org/wiki/Q75901347> .
-  # oo Harriet Ella Portman, d. 1903-04-17, daughter of Edward Berkeley Portman and Lucy Whitby
+  # oo Harriet Ella Portman, d. 1903-04-17 (berkeley.ttl)
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q8018902> , <#Harriet_Ella_Portman> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q8018902> , <https://www.wikidata.org/wiki/Q75901349> ;
 	gen:startDate "1827-03-01" .
 
 <#William_Stratford_Dugdale>
   # William Stratford Dugdale, 1828-05-02 - 1882-05-09
   gen:father <https://www.wikidata.org/wiki/Q8018902> ;
-  gen:mother <#Harriet_Ella_Portman> .
+  gen:mother <https://www.wikidata.org/wiki/Q75901349> .
   # oo Alice Frances Trevelyan, 1843-05-27 - 1902-01-02
   []
     gen:spouse <#William_Stratford_Dugdale> , <#Alice_Frances_Trevelyan> ;
