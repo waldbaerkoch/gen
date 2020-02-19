@@ -2,6 +2,7 @@
 @prefix gen: <http://jjkoch.de/gen#> .
 @prefix wdata: <https://www.wikidata.org/wiki/> .
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 <#William_Spencer_of_Rodburn>
   gen:name "William Spencer"@en ;
@@ -2753,7 +2754,7 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5076266> , <manners.ttl#Lady_Maria_Walpole_(died_1801)> ;
 	gen:startDate "1746" .
-<#Harriet_Churchill>
+<https://www.wikidata.org/wiki/Q76321191>
   # Harriet Churchill, 1726 - 1777-02-06
   gen:father <https://www.wikidata.org/wiki/Q5076265> .
   # oo 1747-02 Sir Everard Fawkener, 1694 – 1758, https://www.wikidata.org/wiki/Q5416908
@@ -2819,13 +2820,22 @@
   # Sir Everard Fawkener, 1694 – 1758
   # oo Harriet Churchill, 1726 - 1777-02-06
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q5416908> , <#Harriet_Churchill> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q5416908> , <https://www.wikidata.org/wiki/Q76321191> ;
 	gen:startDate "1747-02" .
 
+<https://www.wikidata.org/wiki/Q8004690>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75384905> ;
+  # William Augustus Fawkener,  1750~ - 1811
+  gen:father <https://www.wikidata.org/wiki/Q5416908> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76321191> .
+  # oo Georgina Ann Poyntz, 1763-04-21 - 1851-05-04
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8004690> , <https://www.wikidata.org/wiki/Q75267092> ;
+	gen:annulledDate "1787-04" .
 <#Henrietta_Fawkener>
   # Henrietta Fawkener, 1751 - 1825
   gen:father <https://www.wikidata.org/wiki/Q5416908> ;
-  gen:mother <#Harriet_Churchill> .
+  gen:mother <https://www.wikidata.org/wiki/Q76321191> .
   # oo 1764-06-30 Hon. Edward Bouverie, 1738 – 1810-09-03, https://www.wikidata.org/wiki/Q17318482
   # oo 1811 Robert Spencer, d. 1831, #Robert_Spencer
 
@@ -2834,5 +2844,5 @@
   # Thomas Pownall, 1722-09-04b – 1805-02-25
   # oo Harriet Churchill, 1726 - 1777-02-06
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q12066351> , <#Harriet_Churchill> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q12066351> , <https://www.wikidata.org/wiki/Q76321191> ;
 	gen:startDate "1765-08-03" .
