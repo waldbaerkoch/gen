@@ -2,38 +2,51 @@
 @prefix gen: <http://jjkoch.de/gen#> .
 @prefix wdata: <https://www.wikidata.org/wiki/> .
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
-<#Sir_Patrick_Graham_of_Kincardine_and_of_Dundaff>
-  # oo (1) Matilda ???
-  # oo (2) Egidia Stewart, daughter of Sir John Stewart of Ralston
+<https://www.wikidata.org/wiki/Q75824776>
+  # Sir Patrick Graham of Kincardine and of Dundaff, d. 1404~
   gen:deathDate "1404~" .
+  # oo (1) Matilda ???
+  # oo (2) Egidia/Ergadia Stewart
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75824776> , <https://www.wikidata.org/wiki/Q76132519> .
 
-<#Sir_William_Graham_of_Kincardine>
+<https://www.wikidata.org/wiki/Q75243152>
   gen:name "Sir William Graham of Kincardine"@en ;
   gen:deathDate "1424" ;
-  gen:father <#Sir_Patrick_Graham_of_Kincardine_and_of_Dundaff> ;
+  gen:father <https://www.wikidata.org/wiki/Q75824776> ;
   gen:mother <#Matilda_???> .
   # oo Gille Stewart, daughter of Sir John Stewart of Ralston
-  # oo Lady Mary Stewart, 1378a/1396b - 1458~
   []
-    gen:spouse <#Sir_William_Graham_of_Kincardine> , <stuart.ttl#Lady_Mary_Stewart_(died_1458~)> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75243152> , <https://www.wikidata.org/wiki/Q75243150> .
+  # oo Mary Stewart, Princess of Scotland, 1378a/1396b - 1458~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75243152> , <https://www.wikidata.org/wiki/Q75385107> ;
 	gen:startDate "1413-11-13" .
   # oo Mariot Oliphant, daughter of Sir John Oliphant of Aberdalgy
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75243152> , <https://www.wikidata.org/wiki/Q76112897> .
 <https://www.wikidata.org/wiki/Q18534244> # -> Earls of Menteith
   # Patrick Graham, Earl of Strathearn
-  gen:father <#Sir_Patrick_Graham_of_Kincardine_and_of_Dundaff> ;
-  gen:mother <#Egidia_Stewart> .
+  gen:father <https://www.wikidata.org/wiki/Q75824776> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76132519> .
 
 <#Alexander_Graham>
   # Alexander Graham, d. 1416a/1422b
-  gen:father <#Sir_William_Graham_of_Kincardine> ;
+  gen:father <https://www.wikidata.org/wiki/Q75243152> ;
   gen:mother <#Gille_Stewart> .
 <#Robert_Graham>
   # Robert Graham
-  gen:father <#Sir_William_Graham_of_Kincardine> ;
-  gen:mother <stuart.ttl#Lady_Mary_Stewart_(died_1458~)> .
+  gen:father <https://www.wikidata.org/wiki/Q75243152> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75385107> .
   # oo Janet Lovel, daughter of Sir Richard Lovel
   # oo Matilda Scrymgeour, d. 1440b, daughter of Sir James Scrymgeour
+<https://www.wikidata.org/wiki/Q75388317>
+  # Elizabeth Graham
+  gen:father <https://www.wikidata.org/wiki/Q75243152> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76112897> .
+  # oo 1404-08-01~ Walter Stewart, 1st Earl of Atholl, 1360~ – 1437-03-26, https://www.wikidata.org/wiki/Q360709
 
 <https://www.wikidata.org/wiki/Q19325067>
   # Patrick Graham, 1st Lord Graham, d. 1466
@@ -60,6 +73,7 @@
   gen:father <#John_Graham_of_Balargus> .
 
 <https://www.wikidata.org/wiki/Q419859>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75274830> ;
   gen:name "William Graham, 1st Earl of Montrose"@en ;
   # 3rd Lord Graham 1471~
   # Earl of Montrose 1503
@@ -73,7 +87,7 @@
 	gen:startDate "1479-11-25" .
   # oo Janet Edmonstone, daughter of Sir Archibald Edmonstone of Duntreath, 3rd of Edmonstone
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q419859> , <#Janet_Edmonstone> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q419859> , <https://www.wikidata.org/wiki/Q75274834> ;
 	gen:startDate "1504-03-03b" .
   # oo Christian Wawane of Seggie, daughter of Thomas Wawane of Stevinston
   []
@@ -106,9 +120,14 @@
 <https://www.wikidata.org/wiki/Q61467412>
   # Lady Elizabeth Graham
   gen:father <https://www.wikidata.org/wiki/Q419859> ;
-  gen:mother <#Janet_Edmonstone> .
+  gen:mother <https://www.wikidata.org/wiki/Q75274834> .
   # oo 1513/1514-02 Walter Drummond, Master of Drummond, d. 1518, https://www.wikidata.org/wiki/Q61467410
-<#Patrick_Graham,_1st_of_Inchbrakie_and_Aberuthven> # -> Graham of Inchbrakie
+<https://www.wikidata.org/wiki/Q75614183>
+  # Lady Katherine Graham
+  gen:father <https://www.wikidata.org/wiki/Q419859> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75274834> .
+  # oo 1514-02 Humphrey Colquhoun of Luss, d. 1538-01, https://www.wikidata.org/wiki/Q75614179
+<https://www.wikidata.org/wiki/Q75388570> # -> Graham of Inchbrakie
   # Patrick Graham, 1st of Inchbrakie and Aberuthven, 1508~ - 1536
   gen:father <https://www.wikidata.org/wiki/Q419859> ;
   gen:mother <#Christian_Wawane_of_Seggie> .
@@ -166,7 +185,7 @@
   # Sir William Graham, of Braco, 1st Baronet, d. 1636b
   gen:father <https://www.wikidata.org/wiki/Q5992403> ;
   gen:mother <https://www.wikidata.org/wiki/Q61466944> .
-<#Lady_Lilias_Graham,_Countess_of_Wigtown>
+<https://www.wikidata.org/wiki/Q75276077>
   # Lady Lilias Graham
   gen:father <https://www.wikidata.org/wiki/Q5992403> ;
   gen:mother <https://www.wikidata.org/wiki/Q61466944> .
@@ -267,11 +286,11 @@
   gen:father <https://www.wikidata.org/wiki/Q2585405> ;
   gen:mother <carnegie.ttl#Lady_Christian_Carnegie> .
 
-<#Lady_Lucy_Graham>
+<https://www.wikidata.org/wiki/Q75333099>
   # Lady Lucy Graham, 1751-07-28 - 1780-02-13
   gen:father <https://www.wikidata.org/wiki/Q7585597> ;
   gen:mother <manners.ttl#Lady_Lucy_Manners> .
-  # oo 1771-06-13 Archibald James Edward Douglas, 1st Baron Douglas of Douglas, 1748-07-10 - 1827-12-26, https://www.wikidata.org/wiki/Q4786286
+  # oo 1771-06-13 Archibald James Edward Douglas, 1st Baron Douglas of Douglas, 1748-07-10 - 1827-12-26, https://www.wikidata.org/wiki/Q4786286 (stuart.ttl)
 <https://www.wikidata.org/wiki/Q326693>
   gen:name "James Graham, 3rd Duke of Montrose"@en ;
   gen:birthDate "1755-09-08" ;
@@ -564,7 +583,7 @@
 
 
 # Graham of Inchbrakie
-<#Patrick_Graham,_1st_of_Inchbrakie_and_Aberuthven>
+<https://www.wikidata.org/wiki/Q75388570>
   gen:name "Patrick Graham, 1st of Inchbrakie and Aberuthven"@en ;
   gen:deathDate "1508~" ;
   gen:deathDate "1536" ;
@@ -572,25 +591,25 @@
   gen:mother <#Christian_Wawane_of_Seggie> .
   # oo Margaret Stewart
   []
-    gen:spouse <#Patrick_Graham,_1st_of_Inchbrakie_and_Aberuthven> , <stuart.ttl#Margaret_Stewart> .
+    gen:spouse <https://www.wikidata.org/wiki/Q75388570> , <https://www.wikidata.org/wiki/Q75388569> .
 
 <#George_Graeme,_2nd_of_Inchbrakie>
   gen:name "George Graham, 2nd of Inchbrakie"@en ;
   gen:deathDate "1575" ;
-  gen:father <#Patrick_Graham,_1st_of_Inchbrakie_and_Aberuthven> ;
-  gen:mother <stuart.ttl#Margaret_Stewart> .
+  gen:father <https://www.wikidata.org/wiki/Q75388570> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75388569> .
   # oo Marion/Marjory/Mary Rollo, d. 1625-02-24, daughter of Andrew Rollo, 6th of Duncrub
 <#Nicola_Graham>
   gen:name "Nicola Graham"@en ;
   gen:deathDate "1560-08" ;
-  gen:father <#Patrick_Graham,_1st_of_Inchbrakie_and_Aberuthven> ;
-  gen:mother <stuart.ttl#Margaret_Stewart> .
+  gen:father <https://www.wikidata.org/wiki/Q75388570> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75388569> .
   # oo Patrick Murray, 5th of Ochtertyre, d. 1589, murray.ttl#Patrick_Murray,_5th_of_Ochtertyre
 <#Janet_Graham_(died_1575)>
   gen:name "Janet Graham"@en ;
   gen:deathDate "1575-08" ;
-  gen:father <#Patrick_Graham,_1st_of_Inchbrakie_and_Aberuthven> ;
-  gen:mother <stuart.ttl#Margaret_Stewart> .
+  gen:father <https://www.wikidata.org/wiki/Q75388570> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75388569> .
   # oo 1518~ Dougal Campbell of Ardaillour, 1493~ - 1550-05-10b, campbell.ttl#Dougal_Campbell_of_Ardaillour
 
 <#Patrick_Graeme,_3rd_of_Inchbrakie>
@@ -602,17 +621,28 @@
     gen:spouse <#Patrick_Graeme,_3rd_of_Inchbrakie> , <#Nicola_Brown> .
   # oo 1613 Margaret Scott, d. 1613a, daughter of Patrick Scott, 4th of Monzie and Egidia Drummond
 <https://www.wikidata.org/wiki/Q5539844>
+  owl:sameAs <https://www.wikidata.org/wiki/Q76319486> ;
   gen:name "Rev. George Graham of Myreside, Bishop of Dunblane"@en ;
   gen:birthDate "1565" ;
   gen:deathDate "1643" ;
   gen:father <#George_Graeme,_2nd_of_Inchbrakie> ;
   gen:mother <#Marion_Rollo_of_Duncrub> .
-  # oo 1595 Marion Crichton, daughter of Sir Robert Crichton of Eliock and Cluny, Perthshire, Lord Advocate of Scotland, and his wife Elizabeth Stewart, granddaughter of Andrew Stewart, 2nd Lord Avondale
+  # oo Marion Crichton, d. 1632-04-10, daughter of Sir Robert Crichton of Eliock and Cluny, Perthshire, Lord Advocate of Scotland, and his wife Elizabeth Stewart, granddaughter of Andrew Stewart, 2nd Lord Avondale
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5539844> , <https://www.wikidata.org/wiki/Q76319487> ;
+	gen:startDate "1595-01-29b" .
 
 <#George_Graeme,_4th_of_Inchbrakie>
   # George Graeme, 4th of Inchbrakie, d. 1654
   gen:father <#Patrick_Graeme,_3rd_of_Inchbrakie> ;
   gen:mother <#Nicola_Brown> .
+<https://www.wikidata.org/wiki/Q76321199>
+  # Patrick Graham of Rothiesholm and 1st of Graemeshall
+  gen:father <https://www.wikidata.org/wiki/Q5539844> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76319487> .
+  # oo Anna Stewart
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76321199> , <https://www.wikidata.org/wiki/Q76321204> .
 
 <#Patrick_Graeme,_5th_of_Inchbrakie>
   # Patrick Graeme, 5th of Inchbrakie, d. 1644a
@@ -698,8 +728,8 @@
 <https://www.wikidata.org/wiki/Q18534244>
   gen:name "Patrick Graham, Earl of Strathearn"@en ;
   gen:deathDate "1413-08-10" ;
-  gen:father <#Sir_Patrick_Graham_of_Kincardine_and_of_Dundaff> ;
-  gen:mother <#Egidia_Stewart> .
+  gen:father <https://www.wikidata.org/wiki/Q75824776> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76132519> .
   # oo Euphemia Stewart, Countess of Strathearn, d. 1434~
   []
     gen:spouse <https://www.wikidata.org/wiki/Q18534244> , <https://www.wikidata.org/wiki/Q7620326> .
@@ -816,12 +846,12 @@
     gen:spouse <https://www.wikidata.org/wiki/Q7616870> , <#Agnes_Gray> ;
 	gen:startDate "1612-03-30a" .
 
-<#Lady_Mary_Graham_(died_1653)>
+<https://www.wikidata.org/wiki/Q75451598>
   gen:name "Lady Mary Graham"@en ;
   gen:deathDate "1653-01-28" ;
   gen:father <https://www.wikidata.org/wiki/Q7616870> ;
   gen:mother <#Agnes_Gray> .
-  # oo 1635b Sir John Campbell, of Glenorchy, 4th Baronet, 1615~ - 1677-06b, campbell.ttl#Sir_John_Campbell_of_Glenorchy,_4th_Baronet
+  # oo 1635b Sir John Campbell, of Glenorchy, 4th Baronet, 1615~ - 1677-06b, https://www.wikidata.org/wiki/Q75451595
 <https://www.wikidata.org/wiki/Q75484951>
   gen:name "Lady Margaret Graham"@en ;
   gen:father <https://www.wikidata.org/wiki/Q7616870> ;
@@ -1012,13 +1042,13 @@
   gen:father <https://www.wikidata.org/wiki/Q5767350> ;
   gen:mother <howard.ttl#Lady_Anne_Howard_(died_1707)> .
   # oo 1718-07~ William Widdrington, 4th Baron Widdrington of Blankney, 1678 - 1743-04-19, https://www.wikidata.org/wiki/Q8020338
-<#Henry_Graham>
+<https://www.wikidata.org/wiki/Q75388722>
   # Henry Graham, d. 1707-01-07
   gen:father <https://www.wikidata.org/wiki/Q16839878> ;
   gen:mother <howard.ttl#Dorothy_Howard> .
   # oo Lady Mary Tudor, 1673-10-16 - 1726-11-05
   []
-    gen:spouse <#Henry_Graham> , <https://www.wikidata.org/wiki/Q4983566> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75388722> , <https://www.wikidata.org/wiki/Q4983566> ;
 	gen:startDate "1705-05-23" .
 <#Catherine_Graham_(died_1762)>
   # Catherine Graham, d. 1762-02-13
@@ -1183,13 +1213,13 @@
   gen:mother <#Frances_Graham> .
   # oo Lady Catharine Stewart, 1765-03-18 - 1836-09-20
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q26448057> , <stuart.ttl#Lady_Catherine_Stewart> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q26448057> , <https://www.wikidata.org/wiki/Q75628635> ;
 	gen:startDate "1785-06-09" .
 
 <https://www.wikidata.org/wiki/Q333983>
   # Rt. Hon. Sir James Robert George Graham, 2nd Baronet, 1792-06-01 - 1861-10-25
   gen:father <https://www.wikidata.org/wiki/Q26448057> ;
-  gen:mother <stuart.ttl#Lady_Catherine_Stewart> .
+  gen:mother <https://www.wikidata.org/wiki/Q75628635> .
   # oo Fanny Callander, d. 1857-10-25
   []
     gen:spouse <https://www.wikidata.org/wiki/Q333983> , <#Fanny_Callander> ;
@@ -1197,7 +1227,7 @@
 <https://www.wikidata.org/wiki/Q18783659>
   # George Graham, 1801-09-13 - 1888-05-26
   gen:father <https://www.wikidata.org/wiki/Q26448057> ;
-  gen:mother <stuart.ttl#Lady_Catherine_Stewart> .
+  gen:mother <https://www.wikidata.org/wiki/Q75628635> .
   # oo 1836-04-12 Maria Hasell, d. 1855-12
 
 <#Sir_Frederick_Ulric_Graham,_3rd_Baronet>
@@ -1538,16 +1568,23 @@
   # oo Robert Graham, Master of Montrose, d. 1547-09-10, #Robert_Graham,_Master_of_Montrose
 
 #<https://www.wikidata.org/wiki/Q19360709>
-  # John Fleming, 6th Lord Fleming, 1st Earl of Wigtown, 1566/1567- 1619-04
+  # John Fleming, 1st Earl of Wigtown, 1566/1567 - 1619-04
+  # 6th Lord Fleming
+  # 1st Earl of Wigtown
   # oo Lady Lilias Graham
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q19360709> , <#Lady_Lilias_Graham,_Countess_of_Wigtown> .
+    gen:spouse <https://www.wikidata.org/wiki/Q19360709> , <https://www.wikidata.org/wiki/Q75276077> .
 
+<https://www.wikidata.org/wiki/Q76313027>
+  # Lady Mary Fleming
+  gen:father <https://www.wikidata.org/wiki/Q75276076> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75276077> .
+  # oo 1634 Archibald Stewart, younger of Castlemilk, d. 1643-05, https://www.wikidata.org/wiki/Q75428770
 <#Lady_Jean_Fleming>
   # Lady Jean Fleming
   gen:father <https://www.wikidata.org/wiki/Q19360709> ;
-  gen:mother <#Lady_Lilias_Graham,_Countess_of_Wigtown> .
-  # oo George Campbell, Master of Loudoun, d. 1612-03, #George_Campbell,_Master_of_Loudoun
+  gen:mother <https://www.wikidata.org/wiki/Q75276077> .
+  # oo George Campbell, Master of Loudoun, d. 1612-03, campbell.ttl#George_Campbell,_Master_of_Loudoun
 
 # --------
 #<https://www.wikidata.org/wiki/Q18527593>
@@ -1791,55 +1828,26 @@
 	gen:startDate "1862-02-26" .
 
 # ----
-#stuart.ttl:
-<stuart.ttl#Lady_Mary_Stewart_(died_1458~)>
-  # Lady Mary Stewart, 1378a/1396b - 1458~
-  gen:father <https://www.wikidata.org/wiki/Q294671> ;
-  gen:mother <https://www.wikidata.org/wiki/Q271434> .
-  # oo 1405 Sir James Kennedy, younger, d. 1408-11-08b, https://www.wikidata.org/wiki/Q18534816
-  # oo 1413-11-13 Sir William Graham of Kincardine, d. 1424, graham.ttl#Sir_William_Graham_of_Kincardine
-
-#<https://www.wikidata.org/wiki/Q4720141>
-  # Alexander Stewart, 1st Earl of Galloway, 1580~ - 1649-10-09
-  # oo Grizel Gordon
-
-<https://www.wikidata.org/wiki/Q75484948>
-  # Alexander Stewart, Lord Garlies, 1609~ - 1638
-  gen:father <https://www.wikidata.org/wiki/Q4720141> .
-  # and Grizel Gordon
-  # oo Lady Anne Howard, b. 1612~
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q75484948> , <howard.ttl#Lady_Anne_Howard_(born_1612~)> ;
-	gen:startDate "1627-12-29" .
-  # oo Lady Margaret Graham
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q75484948> , <https://www.wikidata.org/wiki/Q75484951> ;
-	gen:startDate "1633-07-15" .
-
-<https://www.wikidata.org/wiki/Q4983566>
-  # Lady Mary Tudor, 1673-10-16 - 1726-11-05
-  gen:father <https://www.wikidata.org/wiki/Q122553> ; # Charles II, King of England, Ireland and Scotland
-  gen:mother <https://www.wikidata.org/wiki/Q440398> . # Mary (Moll) Davis, 1648~ - 1708
-  # oo 1705-05-23 Henry Graham, d. 1707-01-07, graham.ttl#Henry_Graham
-
-<https://www.wikidata.org/wiki/Q7620326>
-  # Euphemia Stewart, Countess of Strathearn, d. 1434~
-  gen:father <https://www.wikidata.org/wiki/Q4444832> .
-  # oo Patrick Graham, Earl of Strathearn, d. 1413-08-10, https://www.wikidata.org/wiki/Q18534244
-
-# ----
-#<https://www.wikidata.org/wiki/Q7146600>
+<https://www.wikidata.org/wiki/Q7146600>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75253140> ;
   # Patrick Gray, 6th Lord Gray, 1558 - 1611-09-04
+  gen:father <https://www.wikidata.org/wiki/Q75272216> ; # Patrick Gray, 5th Lord Gray
+  gen:mother <https://www.wikidata.org/wiki/Q75272217> . # Barbara Ruthven
   # oo Lady Mary Stewart
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q7146600> , <stuart.ttl#Lady_Mary_Stewart_of_Orkney> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q7146600> , <https://www.wikidata.org/wiki/Q75272219> ;
 	gen:startDate "1585-11-25" .
 
 <#Agnes_Gray>
   # Agnes Gray
   gen:father <https://www.wikidata.org/wiki/Q7146600> ;
-  gen:mother <stuart.ttl#Lady_Mary_Stewart_of_Orkney> .
+  gen:mother <https://www.wikidata.org/wiki/Q75272219> .
   # oo 1612-03-30a William Graham, 7th Earl of Menteith, 1st Earl of Airth, 1591~ - 1661-04-13a, https://www.wikidata.org/wiki/Q7616870
+<https://www.wikidata.org/wiki/Q76310553>
+  # Elizabeth Gray
+  gen:father <https://www.wikidata.org/wiki/Q7146600> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75272219> .
+  # oo Sir John Leslie of Newton, d. 1651-09-01, https://www.wikidata.org/wiki/Q76310552
 
 # ----
 <#Isabella_Bramhall>

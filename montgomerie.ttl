@@ -2,6 +2,7 @@
 @prefix wdata: <https://www.wikidata.org/wiki/> .
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
 @prefix gen: <http://jjkoch.de/gen#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 #<#Sir_John_Montgomerie_of_Ardrossan>
   # Sir John Montgomerie of Ardrossan, d. 1429-11b
@@ -10,59 +11,62 @@
     gen:spouse <#Sir_John_Montgomerie_of_Ardrossan> , <#Agnes_of_the_Isles> .
 
 <https://www.wikidata.org/wiki/Q16863394>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75243233> ;
   # Alexander Montgomerie, 1st Lord Montgomerie, 1413b - 1469/1470
   # 1st Lord Montgomerie 1445-07-03~
   gen:father <#Sir_John_Montgomerie_of_Ardrossan> ;
   gen:mother <#Agnes_of_the_Isles> .
-  # oo Margaret Boyd, d. 1453-09a, daughter of Sir Thomas Boyd, 5th of Kilmarnock
+  # oo Margaret Boyd, d. 1453-09a
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q16863394> , <boyd.ttl#Margaret_Boyd_(died_1453)> .
+    gen:spouse <https://www.wikidata.org/wiki/Q16863394> , <https://www.wikidata.org/wiki/Q75243234> .
 <#Joan_Montgomerie>
   # Joan Montgomerie
   gen:father <#Sir_John_Montgomerie_of_Ardrossan> ;
   gen:mother <#Agnes_of_the_Isles> .
   # oo Thomas Boyd, 4th of Kilmarnock, d. 1432-07-07, boyd.ttl#Thomas_Boyd,_4th_of_Kilmarnock
 
-<#Alexander_Montgomerie,_Master_of_Montgomerie_(died_1452)>
+<https://www.wikidata.org/wiki/Q75263810>
   # Alexander Montgomerie, Master of Montgomerie, 1404 - 1452
   gen:father <https://www.wikidata.org/wiki/Q16863394> ;
-  gen:mother <boyd.ttl#Margaret_Boyd_(died_1453)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75243234> .
   # oo Elizabeth Hepburn, daughter of Sir Adam Hepburn of Hailes and Janet Borthwick
-<#Margaret_Montgomerie_1>
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75263810> , <https://www.wikidata.org/wiki/Q75263812> .
+<https://www.wikidata.org/wiki/Q75243232>
   # Margaret Montgomerie
   gen:father <https://www.wikidata.org/wiki/Q16863394> ;
-  gen:mother <boyd.ttl#Margaret_Boyd_(died_1453)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75243234> .
   # oo 1438-05-15 John Stewart, 1st Earl of Lennox, 1430b – 1495-07-08/-09-11, https://www.wikidata.org/wiki/Q1701827
 <#Elizabeth_Montgomerie>
   # Elizabeth Montgomerie
   gen:father <https://www.wikidata.org/wiki/Q16863394> ;
-  gen:mother <boyd.ttl#Margaret_Boyd_(died_1453)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75243234> .
   # oo 1460-03-25 John Kennedy, 2nd Lord Kennedy, 1454-10-12 – 1508-12-29, https://www.wikidata.org/wiki/Q6242820
 <#George_Montgomery,_1st_of_Skelmorlie> # -> Montgomerie of Skelmorlie
   # George Montgomery, 1st of Skelmorlie, d. 1505
   gen:father <https://www.wikidata.org/wiki/Q16863394> ;
-  gen:mother <boyd.ttl#Margaret_Boyd_(died_1453)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75243234> .
 
 <#Alexander_Montgomerie,_Master_of_Montgomerie_(died_1468~)>
   # Alexander Montgomerie, Master of Montgomerie, 1445~ - 1468~
-  gen:father <#Alexander_Montgomerie,_Master_of_Montgomerie_(died_1452)> ;
-  gen:mother <#Elizabeth_Hepburn> .
+  gen:father <https://www.wikidata.org/wiki/Q75263810> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75263812> .
   # oo 1459b Catherine Kennedy
   []
     gen:spouse <#Alexander_Montgomerie,_Master_of_Montgomerie_(died_1468~)> , <kennedy.ttl#Catherine_Kennedy> ;
 	gen:startDate "1459b" .
 <#Hugh_Montgomerie_(born_1452b)>
   # Hugh Montgomerie, b. 1452b
-  gen:father <#Alexander_Montgomerie,_Master_of_Montgomerie_(died_1452)> ;
-  gen:mother <#Elizabeth_Hepburn> .
+  gen:father <https://www.wikidata.org/wiki/Q75263810> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75263812> .
 <#Robert_Montgomerie,_1st_of_Braidstane> # -> Montgomerie of Braidstane
   # Robert Montgomerie, 1st of Braidstane
-  gen:father <#Alexander_Montgomerie,_Master_of_Montgomerie_(died_1452)> ;
-  gen:mother <#Elizabeth_Hepburn> .
-<#Margaret_Montgomerie_2>
+  gen:father <https://www.wikidata.org/wiki/Q75263810> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75263812> .
+<https://www.wikidata.org/wiki/Q61466185>
   # Margaret Montgomerie
-  gen:father <#Alexander_Montgomerie,_Master_of_Montgomerie_(died_1452)> ;
-  gen:mother <#Elizabeth_Hepburn> .
+  gen:father <https://www.wikidata.org/wiki/Q75263810> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75263812> .
   # oo 1461b Alexander Home, 1st Lord Home, d. 1490-02a/1491-04b, https://www.wikidata.org/wiki/Q4719148
 
 <https://www.wikidata.org/wiki/Q5931973>
@@ -146,7 +150,7 @@
   gen:father <https://www.wikidata.org/wiki/Q16844117> ;
   gen:mother <drummond.ttl#Agnes_Drummond> .
   # oo 1582-04-10 Robert Seton, 1st Earl of Winton, 1553 - 1603-03-22, https://www.wikidata.org/wiki/Q7349694
-<#Lady_Agnes_Montgomerie>
+<https://www.wikidata.org/wiki/Q75488508>
   # Lady Agnes Montgomerie, d. 1601-1-28b
   gen:father <https://www.wikidata.org/wiki/Q16844117> ;
   gen:mother <drummond.ttl#Agnes_Drummond> .
@@ -172,8 +176,8 @@
 # Montgomerie of Braidstane
 <#Robert_Montgomerie,_1st_of_Braidstane>
   # Robert Montgomerie, 1st of Braidstane
-  gen:father <#Alexander_Montgomerie,_Master_of_Montgomerie_(died_1452)> ;
-  gen:mother <#Elizabeth_Hepburn> .
+  gen:father <https://www.wikidata.org/wiki/Q75263810> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75263812> .
   
 <#Robert_Montgomerie,_2nd_of_Braidstane>
   # Robert Montgomerie, 2nd of Braidstane
@@ -196,6 +200,7 @@
   gen:father <#Adam_Montgomerie,_4th_of_Braidstane> .
 
 <https://www.wikidata.org/wiki/Q5931989>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75276081> ;
   # Sir Hugh Montgomery, 1st Viscount Montgomery of the Great Ards, 1560~ – 1636-05-15
   # 1st Viscount Montgomery of the Great Ards 1622
   gen:father <#Adam_Montgomerie,_5th_of_Braidstane> .
@@ -210,6 +215,13 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5931977> , <erskine.ttl#Lady_Jean_Alexander> ;
 	gen:startDate "1620-08-03" .
+<https://www.wikidata.org/wiki/Q76177555>
+  # Sir James Montgomery, b. 1600
+  gen:father <https://www.wikidata.org/wiki/Q5931989> .
+  # oo Catherine Stewart
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76177555> , <https://www.wikidata.org/wiki/Q76177552> ;
+	gen:startDate "1631" .
 
 <https://www.wikidata.org/wiki/Q16859773>
   # Hugh Montgomery, 1st Earl of Mount Alexander, 1623 - 1663-09-15
@@ -347,7 +359,7 @@
 <#George_Montgomery,_1st_of_Skelmorlie>
   # George Montgomery, 1st of Skelmorlie, 1433 - 1505
   gen:father <https://www.wikidata.org/wiki/Q16863394> ;
-  gen:mother <boyd.ttl#Margaret_Boyd_(died_1453)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75243234> .
   # oo Margaret Houstoun, daughter of Sir John Houstoun, 12th of that Ilk and Agnes Campbell (b. 1397, daughter of Colin Óg Campbell, 1st of Ardkinglass and Christina Lamont)
 
 <#John_Montgomerie,_2nd_of_Skelmorlie>
@@ -433,17 +445,24 @@
   gen:father <https://www.wikidata.org/wiki/Q3024016> .
 
 # ----
-#<https://www.wikidata.org/wiki/Q7349684>
+<#Dorothy_Sempill>
+  # Dorothy Sempill, d. 1600-05-02b
+  gen:father <https://www.wikidata.org/wiki/Q7349682> . # Robert Sempill, 3rd Lord Sempill
+  # oo 1567-05-24b Robert Montgomery, 6th of Skelmorlie, 1534 - 1583, #Robert_Montgomery,_6th_of_Skelmorlie
+
+<https://www.wikidata.org/wiki/Q7349684>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75390825> .
   # Robert Sempill, 4th Lord Sempill, 1569b - 1611-03-15
   # oo Lady Agnes Montgomerie, d. 1601-1-28b
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q7349684> , <#Lady_Agnes_Montgomerie> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q7349684> , <https://www.wikidata.org/wiki/Q75488508> ;
 	gen:startDate "1583-09-11" .
 
-<#Dorothy_Sempill>
-  # Dorothy Sempill, d. 1600-05-02b
-  gen:father <https://www.wikidata.org/wiki/Q7349682> .
-  # oo 1567-05-24b Robert Montgomery, 6th of Skelmorlie, 1534 - 1583, #Robert_Montgomery,_6th_of_Skelmorlie
+<https://www.wikidata.org/wiki/Q76163674>
+  # Anne Sempill, d. 1631-12
+  gen:father <https://www.wikidata.org/wiki/Q7349684> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75488508> .
+  # oo 1603-06-08 Sir Archibald Stewart, 12th of Castlemilk, 1574~ - 1660-01-12, https://www.wikidata.org/wiki/Q76163675
 
 # ----
 <#Mary_Moore>
@@ -507,9 +526,9 @@
   # Hon. Robert Ward, 1754-07-14 - 1831-03
   gen:father <https://www.wikidata.org/wiki/Q4893737> ;
   gen:mother <capell.ttl#Lady_Ann_Bligh> .
-  # oo Sophia Frances Whaley, 1762~ - 1793, daughter of Richard Chapell Whaley and Anne Ward
+  # oo Sophia Frances Whaley, 1762~ - 1793
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q7350853> , <#Sophia_Frances_Whaley> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q7350853> , <https://www.wikidata.org/wiki/Q75357770> ;
 	gen:startDate "1782" .
 <#Georgiana_Charlotte_Emilia_Ward>
   # Hon. Georgiana Charlotte Emilia Ward
@@ -528,7 +547,7 @@
 <https://www.wikidata.org/wiki/Q5344450>
   # Michael Edward Ward, 1789-02-05 - 1832-09-01
   gen:father <https://www.wikidata.org/wiki/Q7350853> ;
-  gen:mother <#Sophia_Frances_Whaley> .
+  gen:mother <https://www.wikidata.org/wiki/Q75357770> .
   # oo Lady Matilda Charlotte Stewart, 1787 - 1842-10-03
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5344450> , <fane.ttl#Lady_Matilda_Stewart> ;
@@ -578,6 +597,24 @@
     gen:spouse <#Maxwell_Colin_Bernard_Ward> , <marsham.ttl#Lady_Sarah_Marsham> ;
 	gen:startDate "1982-04-17" .
 # ----
+#<https://www.wikidata.org/wiki/Q75357846>
+  # Richard Chapell Whaley, 1705~ - 1769-01-16
+  # oo Anne Ward, 1735 - 1827, daughter of Rev. Bernard Ward and Barbara Knox
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75357846> , <https://www.wikidata.org/wiki/Q75567411> ;
+	gen:startDate "1759-02-17" .
+
+<https://www.wikidata.org/wiki/Q76177324>
+  # Mary Susanna Whaley, b. 1758~
+  gen:father <https://www.wikidata.org/wiki/Q75357846> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75567411> .
+  # oo 1778-12-19 Sir James Stewart, 7th Baronet, 1760~ - 1827-05-20, https://www.wikidata.org/wiki/Q15039992
+<https://www.wikidata.org/wiki/Q75357770>
+  # Sophia Frances Whaley, 1762~ - 1793
+  gen:father <https://www.wikidata.org/wiki/Q75357846> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75567411> .
+  # oo 1782 Hon. Robert Ward, 1754-07-14 - 1831-03, https://www.wikidata.org/wiki/Q7350853
+# ----
 #<https://www.wikidata.org/wiki/Q16836319>
   # Rev. Henry Maxwell, 6th Baron Farnham, 1768a - 1838-10-19
   # oo Lady Anne Butler, d. 1831-05-29
@@ -619,12 +656,3 @@
   gen:father <https://www.wikidata.org/wiki/Q16239253> .
   # and Sarah Elizabeth Taylor
   # oo 1798-09-08 Rev. Henry Maxwell, 6th Baron Farnham, 1768a - 1838-10-19, https://www.wikidata.org/wiki/Q16836319
-
-# ----
-# stuart.ttl:
-#<https://www.wikidata.org/wiki/Q1701827>
-  # John Stuart, 1st Earl of Lennox, 1430b – 1495-07-08/-09-11
-  # oo Margaret Montgomerie
-  []
-    gen:spouse <stuart.ttl#John_Stuart,_1st_Earl_of_Lennox> , <montgomerie.ttl#Margaret_Montgomerie_1> ;
-	gen:startDate "1438-05-15" .

@@ -90,28 +90,33 @@
   gen:mother <kennedy.ttl#Agnes_Kennedy> .
   # oo 1495~ Isobel Wallace, daughter of John Wallace, 8th of Craigie, 13th of Riccarton and Sibella Cathcart
 
-<#Sir_Hugh_Campbell_of_Loudoun_(died_1561)>
+<https://www.wikidata.org/wiki/Q75636090>
   # Sir Hugh Campbell of Loudoun, 1502 - 1561-02
   gen:father <#Hugh_Campbell_of_Loudoun> .
   # oo Lady Elizabeth Stuart
   []
-    gen:spouse <#Sir_Hugh_Campbell_of_Loudoun_(died_1561)> , <stuart.ttl#Lady_Elizabeth_Stuart_of_Lennox> .
+    gen:spouse <https://www.wikidata.org/wiki/Q75636090> , <https://www.wikidata.org/wiki/Q75243263> .
   # oo Agnes Drummond, 1531~ - 1590-01-21
   []
-    gen:spouse <#Sir_Hugh_Campbell_of_Loudoun_(died_1561)> , <drummond.ttl#Agnes_Drummond> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75636090> , <https://www.wikidata.org/wiki/Q75243310> ;
 	gen:startDate "1561b" .
 
-<#Sir_Matthew_Campbell_of_Loudoun>
+<https://www.wikidata.org/wiki/Q75243307>
   # Sir Matthew Campbell of Loudoun
-  gen:father <#Sir_Hugh_Campbell_of_Loudoun_(died_1561)> .
-  # and Lady Elizabeth Stuart
+  gen:father <https://www.wikidata.org/wiki/Q75636090> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75243263> .
   # oo Isabel Drummond, b. 1533~
   []
-    gen:spouse <#Sir_Matthew_Campbell_of_Loudoun> , <drummond.ttl#Isabel_Drummond> .
+    gen:spouse <https://www.wikidata.org/wiki/Q75243307> , <drummond.ttl#Isabel_Drummond> .
+<https://www.wikidata.org/wiki/Q75243306>
+  # Jean Campbell, d. 1610-12-15b
+  gen:father <https://www.wikidata.org/wiki/Q75243307> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75243310> .
+  # oo 1598-08~ Ludovic Stuart, 2nd Duke of Lennox, 1574-09-29 - 1624-02-16, https://www.wikidata.org/wiki/Q335979
 
 <#Hugh_Campbell,_1st_Lord_Campbell_of_Loudoun>
   # Hugh Campbell, 1st Lord Campbell of Loudoun, d. 1622-12-15
-  gen:father <#Sir_Matthew_Campbell_of_Loudoun> ;
+  gen:father <https://www.wikidata.org/wiki/Q75243307> ;
   gen:mother <drummond.ttl#Isabel_Drummond> .
   # oo Margaret Gordon
   []
@@ -127,12 +132,12 @@
 	gen:startDate "1617-10-11~" .
 <#Jean_Campbell_(died_1610)>
   # Jean Campbell d. 1610-12-15b
-  gen:father <#Sir_Matthew_Campbell_of_Loudoun> ;
+  gen:father <https://www.wikidata.org/wiki/Q75243307> ;
   gen:mother <drummond.ttl#Isabel_Drummond> .
   # oo Robert Montgomerie, 1574b -  1596-08, montgomerie.ttl#Robert_Montgomerie_(died_1596)
 <#Marion_Campbell_of_Loudoun>
   # Marion Campbell
-  gen:father <#Sir_Matthew_Campbell_of_Loudoun> ;
+  gen:father <https://www.wikidata.org/wiki/Q75243307> ;
   gen:mother <drummond.ttl#Isabel_Drummond> .
   # oo 1568b Thomas Boyd, 6th Lord Boyd of Kilmarnock, 1547~ - 1611-06, https://www.wikidata.org/wiki/Q7787800
 
@@ -177,132 +182,149 @@
 <https://www.wikidata.org/wiki/Q19325325>
   # Colin Campbell of Lochawe, d. 1412/1413
   gen:father <https://www.wikidata.org/wiki/Q27958390> .
-<#Helena_Campbell>
+<https://www.wikidata.org/wiki/Q61483336>
+  # Helen Campbell
   gen:father <https://www.wikidata.org/wiki/Q27958390> .
+  # oo Duncan (Donnchadh), 8th Earl of Lennox, d. 1425-05-24, https://www.wikidata.org/wiki/Q3041265
 <#Duncan_Skeodanasach_Campbell>
   gen:father <https://www.wikidata.org/wiki/Q27958390> .
 <#Mariota_Campbell>
   gen:father <#John_Campbell> .
 
 <https://www.wikidata.org/wiki/Q1265364>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75388179> ;
   # Sir Duncan Campbell, 1st Lord Campbell, d. 1453
-  # Lord 1445
+  # 1st Lord Campbell 1445
   gen:father <https://www.wikidata.org/wiki/Q19325325> ;
   gen:mother <#Mariota_Campbell> .
   # oo Lady Marjory Stewart, d. 1432-08b
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q1265364> , <stuart.ttl#Lady_Marjory_Stewart_(died_1432)> .
+    gen:spouse <https://www.wikidata.org/wiki/Q1265364> , <https://www.wikidata.org/wiki/Q75388177> .
   # oo Margaret Stewart of Ardgowan, d. 1442-08a
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q1265364> , <stuart.ttl#Margaret_Stewart_of_Ardgowan> .
+    gen:spouse <https://www.wikidata.org/wiki/Q1265364> , <https://www.wikidata.org/wiki/Q75260923> .
 <#Colin_Og_Campbell,_1st_of_Ardkinglas> # -> Campbell of Ardkinglas
   # Colin Og Campbell, 1st of Ardkinglas, d. 1434
   gen:father <https://www.wikidata.org/wiki/Q19325325> ;
   gen:mother <#Mariota_Campbell> .
 
-<#Archibald_Campbell,_Master_of_Campbell>
-  # Archibald, Master of Campbell
+<https://www.wikidata.org/wiki/Q75388180>
+  # Archibald Campbell, Master of Campbell, d. 1431-08a/1440-03b
   gen:father <https://www.wikidata.org/wiki/Q1265364> ;
-  gen:mother <stuart.ttl#Lady_Marjory_Stewart_(died_1432)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75388177> .
   # oo Elizabeth Somerville
-  # oo a daughter of Murdoch, Duke of Albany?
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75388180> , <#Elizabeth_Somerville> .
+  # oo ??? Stewart
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75388180> , <https://www.wikidata.org/wiki/Q75261018> .
+<https://www.wikidata.org/wiki/Q76143410>
+  # ??? Campbell
+  gen:father <https://www.wikidata.org/wiki/Q1265364> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75388177> .
+  # oo Walter Stewart, Master of Fife, stuart.ttl#Walter_Stewart,_Master_of_Fife
 <https://www.wikidata.org/wiki/Q18576005> # -> Campbell of Glenorchy (Earls of Breadalbane and Holland, Earls of Loudoun)
   # Sir Colin Campbell, 1st of Glenorchy, d. 1475-09-26b
   gen:father <https://www.wikidata.org/wiki/Q1265364> ;
-  gen:mother <stuart.ttl#Margaret_Stewart_of_Ardgowan> .
+  gen:mother <https://www.wikidata.org/wiki/Q75260923> .
 <#Duncan_Campbell_of_Kilmichael> # -> Campbell of Auchinbreck
   # Duncan Campbell of Kilmichael
   gen:father <https://www.wikidata.org/wiki/Q1265364> ;
-  gen:mother <stuart.ttl#Margaret_Stewart_of_Ardgowan> .
+  gen:mother <https://www.wikidata.org/wiki/Q75260923> .
 
 <https://www.wikidata.org/wiki/Q2365478>
   # Colin Campbell, 1st Earl of Argyll, 1433~ – 1493-05-10
-  # Earl 1457
-  gen:father <#Archibald_Campbell,_Master_of_Campbell> ;
+  # 1st Earl of Argyll 1457
+  gen:father <https://www.wikidata.org/wiki/Q75388180> ;
   gen:mother <#Elizabeth_Somerville> .
-  # oo Elizabeth Stewart, d. 1510-10-26, daughter of John Stewart, Lord Lorne
+  # oo Elizabeth/Isabel Stewart, d. 1510-10-26
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2365478> , <https://www.wikidata.org/wiki/Q75389561> .
 
 <https://www.wikidata.org/wiki/Q2413185>
   # Archibald Campbell, 2nd Earl of Argyll, 1465~ - 1513-09-09
   gen:father <https://www.wikidata.org/wiki/Q2365478> ;
-  gen:mother <#Isabel_Stewart> .
+  gen:mother <https://www.wikidata.org/wiki/Q75389561> .
   # oo Lady Elizabeth Stuart
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q2413185> , <stuart.ttl#Lady_Elizabeth_Stuart,_Countess_of_Argyll> .
+    gen:spouse <https://www.wikidata.org/wiki/Q2413185> , <https://www.wikidata.org/wiki/Q75389499> .
 <#Lady_Margaret_Campbell_Seton>
   # Lady Margaret Campbell
   gen:father <https://www.wikidata.org/wiki/Q2365478> ;
-  gen:mother <#Isabel_Stewart> .
+  gen:mother <https://www.wikidata.org/wiki/Q75389561> .
   # oo 1469-09-14 George Seton, 4th Lord Seton, d. 1507/1508, https://www.wikidata.org/wiki/Q19325816
 <https://www.wikidata.org/wiki/Q50824431>
   # Lady Helen Campbell
   gen:father <https://www.wikidata.org/wiki/Q2365478> ;
-  gen:mother <#Isabel_Stewart> .
+  gen:mother <https://www.wikidata.org/wiki/Q75389561> .
   # oo 1478-04-21 Hugh Montgomerie, 1st Earl of Eglinton, 1460~ - 1545-06, https://www.wikidata.org/wiki/Q5931973
 <#Lady_Mary_Campbell>
   # Lady Mary Campbell
   gen:father <https://www.wikidata.org/wiki/Q2365478> ;
-  gen:mother <#Isabel_Stewart> .
+  gen:mother <https://www.wikidata.org/wiki/Q75389561> .
   # oo Aonghas Óg (Angus Macdonald), d. 1490, https://www.wikidata.org/wiki/Q2849815
 <#Lady_Catherine_Campbell_1>
   # Lady Catherine Campbell
   gen:father <https://www.wikidata.org/wiki/Q2365478> ;
-  gen:mother <#Isabel_Stewart> .
+  gen:mother <https://www.wikidata.org/wiki/Q75389561> .
   # oo 1498 Torquil Macleod of Lewis, https://www.wikidata.org/wiki/Q7826811
 <#Margaret_Campbell_1>
   # Margaret Campbell
   gen:father <https://www.wikidata.org/wiki/Q2365478> ;
-  gen:mother <#Isabel_Stewart> .
+  gen:mother <https://www.wikidata.org/wiki/Q75389561> .
   # oo 1486 Patrick Buchanan, younger of Buchanan, 1458~ - 1513-09-09, buchanan.ttl#Patrick_Buchanan,_younger_of_Buchanan
 <#Lady_Isabel_Campbell>
   # Lady Isabel Campbell
   gen:father <https://www.wikidata.org/wiki/Q2365478> ;
-  gen:mother <#Isabel_Stewart> .
+  gen:mother <https://www.wikidata.org/wiki/Q75389561> .
   # oo 1478/1479-03-05b William Drummond, Master of Drummond, d. 1503-07a/1504-07b, drummond.ttl#William_Drummond,_Master_of_Drummond
 
 <https://www.wikidata.org/wiki/Q1801768>
   # Colin Campbell, 3rd Earl of Argyll, 1486~ - 1529-10-09
   gen:father <https://www.wikidata.org/wiki/Q2413185> ;
-  gen:mother <stuart.ttl#Lady_Elizabeth_Stuart,_Countess_of_Argyll> .
+  gen:mother <https://www.wikidata.org/wiki/Q75389499> .
   # oo 1506/1507 Lady Jean Gordon
   []
     gen:spouse <https://www.wikidata.org/wiki/Q1801768> , <gordon.ttl#Lady_Jean_Gordon,_Countess_of_Argyll> .
-<#Archibald_Campbell,_1st_of_Skipness>
+<https://www.wikidata.org/wiki/Q75389925>
   # Archibald Campbell, 1st of Skipness, d. 1537-07-18
   gen:father <https://www.wikidata.org/wiki/Q2413185> ;
-  gen:mother <stuart.ttl#Lady_Elizabeth_Stuart,_Countess_of_Argyll> .
+  gen:mother <https://www.wikidata.org/wiki/Q75389499> .
+  # oo Jonet Stewart, 1477b - 1554a
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75389925> , <stuart.ttl#Jonet_Stewart> .
   # oo Janet Douglas, 1498 - 1537-07-17
   []
-    gen:spouse <#Archibald_Campbell,_1st_of_Skipness> , <https://www.wikidata.org/wiki/Q6153306> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75389925> , <https://www.wikidata.org/wiki/Q6153306> ;
 	gen:startDate "1535~" .
 <https://www.wikidata.org/wiki/Q18530221> # -> Campbell of Cawdor
   # Sir John Campbell, of Calder [Cawdor], 1490~ - 1546-05-01
   gen:father <https://www.wikidata.org/wiki/Q2413185> ;
-  gen:mother <stuart.ttl#Lady_Elizabeth_Stuart,_Countess_of_Argyll> .
+  gen:mother <https://www.wikidata.org/wiki/Q75389499> .
 <https://www.wikidata.org/wiki/Q5294141>
   # Donald Campbell
   gen:father <https://www.wikidata.org/wiki/Q2413185> ;
-  gen:mother <stuart.ttl#Lady_Elizabeth_Stuart,_Countess_of_Argyll> .
+  gen:mother <https://www.wikidata.org/wiki/Q75389499> .
   # oo Elizabeth Blacklock
 <#Lady_Margaret_Campbell,_Lady_Erskine>
   # Lady Margaret Campbell
   gen:father <https://www.wikidata.org/wiki/Q2413185> ;
-  gen:mother <stuart.ttl#Lady_Elizabeth_Stuart,_Countess_of_Argyll> .
+  gen:mother <https://www.wikidata.org/wiki/Q75389499> .
   # oo John Erskine, 5th Lord Erskine, d. 1555, https://www.wikidata.org/wiki/Q6231896
 <#Lady_Isabel_Campbell,_Countess_of_Cassilis>
   # Lady Isabel Campbell
   gen:father <https://www.wikidata.org/wiki/Q2413185> ;
-  gen:mother <stuart.ttl#Lady_Elizabeth_Stuart,_Countess_of_Argyll> .
+  gen:mother <https://www.wikidata.org/wiki/Q75389499> .
   # oo Gilbert Kennedy, 2nd Earl of Cassillis, 1494-09-29 – 1527-08-27, https://www.wikidata.org/wiki/Q7616166
-<#Lady_Janet_Campbell,_Countess_of_Atholl>
-  # Lady Janet Campbell
+<https://www.wikidata.org/wiki/Q61467006>
+  # Lady Janet Campbell, d. 1546-02-02~
   gen:father <https://www.wikidata.org/wiki/Q2413185> ;
-  gen:mother <stuart.ttl#Lady_Elizabeth_Stuart,_Countess_of_Argyll> .
+  gen:mother <https://www.wikidata.org/wiki/Q75389499> .
   # oo John Stewart, 2nd Earl of Atholl, d. 1521, https://www.wikidata.org/wiki/Q1701828
 <#Lady_Catherine_Campbell_2>
   # Lady Catherine Campbell
   gen:father <https://www.wikidata.org/wiki/Q2413185> ;
-  gen:mother <stuart.ttl#Lady_Elizabeth_Stuart,_Countess_of_Argyll> .
+  gen:mother <https://www.wikidata.org/wiki/Q75389499> .
   # oo Lachlan 'Cattanach' Maclean, 7th of Duart, d. 1523, son of Hector 'Odhar' Maclean, 6th of Duart and unknown daughter Mackintosh
   # oo Archibald Campbell of Auchinbreck and Kilmichael, son of Dugald Campbell of Auchinbreck and Kilmichael and Agnes Lamont
 
@@ -335,7 +357,7 @@
   # oo (2) 1569 Turlough Luineach O'Neill, 1532 - 1595-09-10, https://www.wikidata.org/wiki/Q2750123
 <#John_Campbell,_2nd_of_Skipness>
   # John Campbell, 2nd of Skipness
-  gen:father <#Archibald_Campbell,_1st_of_Skipness> ;
+  gen:father <https://www.wikidata.org/wiki/Q75389925> ;
   gen:mother <https://www.wikidata.org/wiki/Q6153306> .
   # oo Marion Montgomerie, b. 1500b
   []
@@ -352,7 +374,9 @@
   gen:mother <hamilton.ttl#Lady_Helen_Hamilton> .
   # oo (1) Lady Jean Stewart, 1530 - 1588
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q2368509> , <https://www.wikidata.org/wiki/Q6470274> .
+    gen:spouse <https://www.wikidata.org/wiki/Q2368509> , <https://www.wikidata.org/wiki/Q6470274> ;
+	gen:startDate "1553-07-01" ;
+	gen:divorceDate "1573-06-23".
   # oo (2) Janet Cunningham, daughter of the Earl of Glencairn
 <#Lady_Janet_Campbell>
   # Lady Janet Campbell
@@ -365,7 +389,7 @@
   gen:mother <graham.ttl#Lady_Margaret_Graham,_Countess_of_Argyll> .
   # oo Joan Stewart, b. 1533a
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q2556649> , <stuart.ttl#Joan_Stewart> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q2556649> , <https://www.wikidata.org/wiki/Q75264592> ;
 	gen:startDate "1551-10-14" .
   # oo Lady Agnes (Anne) Keith, 1540 - 1588-07-16
   []
@@ -376,11 +400,15 @@
   gen:father <https://www.wikidata.org/wiki/Q2627091> ;
   gen:mother <graham.ttl#Lady_Margaret_Graham,_Countess_of_Argyll> .
   # oo Hector Og Maclean, 13th Chief, 1540~ - 1573, https://www.wikidata.org/wiki/Q5696886
-<#Lady_Margaret_Campbell_(died_1572)>
+<https://www.wikidata.org/wiki/Q75264606>
   # Lady Margaret Campbell, d. 1572-02
   gen:father <https://www.wikidata.org/wiki/Q2627091> ;
   gen:mother <graham.ttl#Lady_Margaret_Graham,_Countess_of_Argyll> .
-  # oo 1564-01-11 James Stewart, 1st Lord Doune, 1529~ - 1590-07-20, stuart.ttl#James_Stewart,_1st_Lord_Doune ?
+  # oo 1564-01-11 James Stewart, 1st Lord Doune, 1529~ - 1590-07-20, https://www.wikidata.org/wiki/Q75268485
+<https://www.wikidata.org/wiki/Q75523284>
+  # Mary Campbell
+  gen:father <https://www.wikidata.org/wiki/Q2627091> .
+  # oo Sir James Stewart of Ardmaleish, d. 1570, https://www.wikidata.org/wiki/Q75523283
 <#Jane_Campbell_of_Skipness>
   # Jane Campbell
   gen:father <#John_Campbell,_2nd_of_Skipness> ;
@@ -462,13 +490,18 @@
     gen:spouse <https://www.wikidata.org/wiki/Q2557180> , <https://www.wikidata.org/wiki/Q4836326> ;
 	gen:startDate "1670-01-28" .
 <https://www.wikidata.org/wiki/Q6679810>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75254942> ;
   # Lord Neill Campbell, 1610 - 1682-04
   gen:father <https://www.wikidata.org/wiki/Q977300> ;
   gen:mother <douglas.ttl#Lady_Margaret_Douglas_(died_1678)> .
-  # oo 1668-01-23 Lady Vere Kerr, 1649-04-24 - 1674-04-17
+  # oo Lady Vere Kerr, 1649-04-24 - 1674-04-17
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q6679810> , <kerr.ttl#Lady_Vere_Kerr> .
-  # oo 1685 Susan Menzies, daughter of Sir Alexander Menzies of Weem
+    gen:spouse <https://www.wikidata.org/wiki/Q6679810> , <kerr.ttl#Lady_Vere_Kerr> ;
+	gen:startDate "1668-01-23" .
+  # oo Susan Menzies
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6679810> , <https://www.wikidata.org/wiki/Q76258903> ;
+	gen:startDate "1685-03-20a" .
 <#Lady_Jean_Campbell_(died_1700)>
   # Lady Jean/Jane Campbell, d. 1700-07-31
   gen:father <https://www.wikidata.org/wiki/Q977300> ;
@@ -518,7 +551,7 @@
   # oo 1696 Hon. Margaret Leslie, d. 1755-04-19
   []
     gen:spouse <https://www.wikidata.org/wiki/Q19871834> , <leslie.ttl#Margaret_Leslie_(died_1755)> .
-<#Lady_Anne_Campbell_(died_1734)>
+<https://www.wikidata.org/wiki/Q75268518>
   # Lady Anne Campbell, d. 1734-09-18
   gen:father <https://www.wikidata.org/wiki/Q2557180> ;
   gen:mother <https://www.wikidata.org/wiki/Q56697313> .
@@ -533,6 +566,11 @@
   # Archibald Campbell, Bishop of Aberdeen, 1669 - 1744-06-15
   gen:father <https://www.wikidata.org/wiki/Q6679810> ;
   gen:mother <kerr.ttl#Lady_Vere_Kerr> .
+<https://www.wikidata.org/wiki/Q75987450>
+  # Christian Campbell, d. 1736-04
+  gen:father <https://www.wikidata.org/wiki/Q6679810> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76258903> .
+  # oo Sir Alexander Menzies of that Ilk, 2nd Baronet, d. 1730a/1736b, https://www.wikidata.org/wiki/Q75987624
 
 <https://www.wikidata.org/wiki/Q335974>
   # John Campbell, 2nd Duke of Argyll, 1st Duke of Greenwich, 1678-10-10 - 1743-10-04
@@ -548,12 +586,12 @@
   gen:father <https://www.wikidata.org/wiki/Q2635358> ;
   gen:mother <https://www.wikidata.org/wiki/Q42559205> .
   # oo 1712~ Anne Whitfield, d. 1723-09-01
-<#Lady_Anne_Campbell_(died_1736)>
+<https://www.wikidata.org/wiki/Q75264853>
   # Lady Anne Campbell, 1696b - 1736-10-20
   gen:father <https://www.wikidata.org/wiki/Q2635358> ;
   gen:mother <https://www.wikidata.org/wiki/Q42559205> .
   # oo 1711-02-19~ James Stuart, 2nd Earl of Bute, 1696b - 1723-01-28, https://www.wikidata.org/wiki/Q245654
-  # oo 1731-09-19 Alexander Fraser, Lord Strichen, d. 1775-02-15, fraser.ttl#Alexander_Fraser,_Lord_Strichen
+  # oo 1731-09-19 Alexander Fraser, Lord Strichen, d. 1775-02-15, https://www.wikidata.org/wiki/Q76057356
 <https://www.wikidata.org/wiki/Q335577>
   # John Campbell, 4th Duke of Argyll, 1693 - 1770-12-09
   gen:father <https://www.wikidata.org/wiki/Q6224993> ;
@@ -591,6 +629,11 @@
   gen:mother <https://www.wikidata.org/wiki/Q75264544> .
   # oo (1) 1742-10-02 Francis Scott, Earl of Dalkeith, 1721-02-19 - 1750-04-01, https://www.wikidata.org/wiki/Q5482414
   # oo (2) 1755-09-18 Rt Hon Charles Townshend, 1725-08-29 - 1767-09-04, https://www.wikidata.org/wiki/Q2600750
+<https://www.wikidata.org/wiki/Q75267031>
+  # Lady Elizabeth Campbell, 1718a - 1799-07-16
+  gen:father <https://www.wikidata.org/wiki/Q335974> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75264544> .
+  # oo 1749-02-16 Rt. Hon. James Stuart-Mackenzie, 1717~/1719 - 1800-04-06, https://www.wikidata.org/wiki/Q245968
 <https://www.wikidata.org/wiki/Q75777766>
   # Lady Anne Campbell, 1720~ - 1785-02-07
   gen:father <https://www.wikidata.org/wiki/Q335974> ;
@@ -835,22 +878,29 @@
   []
     gen:spouse <#John_Campbell,_1st_of_Lochnell> , <#Mary_Campbell_of_Ardkinglass> .
 
-<#Archibald_Campbell,_2nd_of_Lochnell>
+<https://www.wikidata.org/wiki/Q76064184>
   # Archibald Campbell, 2nd of Lochnell, 1530~ - 1594-10-04
   gen:father <#John_Campbell,_1st_of_Lochnell> ;
   gen:mother <#Mary_Campbell_of_Ardkinglass> .
   # oo Janet Macdougall, b. 1532~, daughter of Duncan 'na mein' Macdougall of Dunollie
   []
-    gen:spouse <#Archibald_Campbell,_2nd_of_Lochnell> , <#Janet_Macdougall> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q76064184> , <#Janet_Macdougall> ;
 	gen:startDate "1560~" .
+  # oo Sibylla Drummond, b. 1553~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76064184> , <https://www.wikidata.org/wiki/Q76072267> .
 
 <#Alexander_Campbell,_3rd_of_Lochnell>
   # Alexander Campbell, 3rd of Lochnell, 1566~ - 1638
-  gen:father <#Archibald_Campbell,_2nd_of_Lochnell> ;
+  gen:father <https://www.wikidata.org/wiki/Q76064184> ;
   gen:mother <#Janet_Macdougall> .
   # oo Isabel MacDougall, daughter of Allan MacDougall of Raray
   []
     gen:spouse <#Alexander_Campbell,_3rd_of_Lochnell> , <#Isabel_MacDougall> .
+<https://www.wikidata.org/wiki/Q76309805>
+  # James Campbell of Frackersaig, 1575~ - 1628-12-05a
+  gen:father <https://www.wikidata.org/wiki/Q76064184> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76072267> .
 
 <#John_Campbell,_4th_of_Lochnell>
   # John Campbell, 4th of Lochnell, d. 1645-02-02
@@ -859,6 +909,13 @@
   # oo Anne Campbell of Auchinbreck
   []
     gen:spouse <#John_Campbell,_4th_of_Lochnell> , <#Anne_Campbell_of_Auchinbreck> .
+<https://www.wikidata.org/wiki/Q75451635>
+  # Archibald Campbell
+  gen:father <https://www.wikidata.org/wiki/Q76309805> .
+  # oo Catherine Stewart, daughter of John Stewart of Lettirshewnay
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75451635> , <https://www.wikidata.org/wiki/Q75536089> ;
+	gen:startDate "1664-12-08a" .
 
 <#Colin_Campbell,_5th_of_Lochnell>
   # Colin Campbell, 5th of Lochnell, d. 1671-03-31
@@ -868,6 +925,14 @@
   []
     gen:spouse <#Colin_Campbell,_5th_of_Lochnell> , <#Anne_Campbell_(died_1680)> ;
 	gen:startDate "1650-05-08b" .
+<https://www.wikidata.org/wiki/Q75884136>
+  # Rev. Alexander Campbell, 2nd of Auchincloich, d. 1698
+  gen:father <https://www.wikidata.org/wiki/Q75451635> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75536089> .
+  # oo Elspeth Campbell
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75884136> , <https://www.wikidata.org/wiki/Q75884137> ;
+	gen:startDate "1670-11" .
 
 <#Isobel_Campbell_of_Lochnell>
   # Isobel Campbell
@@ -884,6 +949,14 @@
   gen:father <#Colin_Campbell,_5th_of_Lochnell> ;
   gen:mother <#Anne_Campbell_(died_1680)> .
   # oo Margaret Stewart, daughter of Duncan Stewart, 7th of Appin and campbell.ttl#Jean_Campbell_(died_1665a)
+<https://www.wikidata.org/wiki/Q75884132>
+  # Archibald Campbell, 2nd of Stonefield, 1697~ - 1777-08-19
+  gen:father <https://www.wikidata.org/wiki/Q75884136> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75884137> .
+  # oo Jane Frend, d. 1753, daughter of Benjamin Frend and Bridget Kynaston
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75884132> , <https://www.wikidata.org/wiki/Q75898792> ;
+	gen:startDate "1732-10-14" .
 
 <#Isabel_Campbell_of_Lochnell>
   # Isabel Campbell
@@ -906,6 +979,14 @@
   gen:father <#Sir_Alexander_Campbell,_6th_of_Lochnell> .
   # and Margaret Stewart
   # oo 1709~ Ann Campbell, daughter of Dougall Campbell, 1st of Shirvan (d. 1723, son of Dougall Campbell, 6th of Inverawe and Janet MacNeill) and oo 1689~ Isobel Campbell (aughter of Archibald Campbell of Glen Carradale and Barbara Campbell)
+<https://www.wikidata.org/wiki/Q51542318>
+  owl:sameAs <https://www.wikidata.org/wiki/Q76310987> ;
+  # John Campbell, Lord Stonefield, 1720~ - 1801-06-19
+  gen:father <https://www.wikidata.org/wiki/Q75884132> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75898792> .
+  # oo Lady Grace Stuart, d. 1783-06-05
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q51542318> , <https://www.wikidata.org/wiki/Q76310985> .
 
 <#Dugald_Campbell_of_Ballimore>
   # Dugald Campbell of Ballimore
@@ -931,7 +1012,7 @@
 <https://www.wikidata.org/wiki/Q18530221>
   # Sir John Campbell, 1st of Calder [Cawdor], 1490~ - 1546-05-01
   gen:father <https://www.wikidata.org/wiki/Q2413185> ;
-  gen:mother <stuart.ttl#Lady_Elizabeth_Stuart,_Countess_of_Argyll> .
+  gen:mother <https://www.wikidata.org/wiki/Q75389499> .
   # oo 1510~ Muriel Calder, heiress of the ancient Thanes of Cawdor, d. 1575~
 
 <#Archibald_Campbell,_2nd_of_Cawdor>
@@ -986,14 +1067,15 @@
 <https://www.wikidata.org/wiki/Q18759291>
   # Sir Hugh Campbell, 5th of Cawdor, 1639 - 1716-03-11
   gen:father <#Colin_Campbell_of_Cawdor> .
-  # oo 1662 Lady Henrietta Stewart
+  # oo Lady Henrietta Stewart
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q18759291> , <stuart.ttl#Lady_Henrietta_Stewart> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q18759291> , <https://www.wikidata.org/wiki/Q75268504> ;
 	gen:startDate "1662" .
 
 <https://www.wikidata.org/wiki/Q18935967>
   # Sir Alexander Campbell or Cawdor, younger, d. 1697-08-27
-  gen:father <https://www.wikidata.org/wiki/Q18759291> .
+  gen:father <https://www.wikidata.org/wiki/Q18759291> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75268504> .
   # oo Elizabeth Lort, d. 1714-09-28
   []
     gen:spouse <https://www.wikidata.org/wiki/Q18935967> , <cavendish.ttl#Elizabeth_Lort> ;
@@ -1429,16 +1511,19 @@
 <https://www.wikidata.org/wiki/Q18576005>
   # Sir Colin Campbell, 1st of Glenorchy, 1395~ - 1475-09-26b
   gen:father <https://www.wikidata.org/wiki/Q1265364> ;
-  gen:mother <stuart.ttl#Margaret_Stewart_of_Ardgowan> .
+  gen:mother <https://www.wikidata.org/wiki/Q75260923> .
   # oo Mariot Stewart (dsp)
-  # oo Jonet Stewart, daughter of John Stewart, Lord Lorne
+  # oo Janet Stewart
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q18576005> , <https://www.wikidata.org/wiki/Q75389557> ;
+	gen:startDate "1448~" .
   # oo Margaret Robertson
   # oo Margaret Stirling
 
 <https://www.wikidata.org/wiki/Q18576062>
   # Sir Duncan Campbell, 2nd of Glenorchy, 1443~ - 1513-09-09
   gen:father <https://www.wikidata.org/wiki/Q18576005> ;
-  gen:mother <#Jonet_Stewart> .
+  gen:mother <https://www.wikidata.org/wiki/Q75389557> .
   # oo Margaret Douglas
   []
     gen:spouse <https://www.wikidata.org/wiki/Q18576062> , <douglas.ttl#Margaret_Douglas_1> ;
@@ -1469,7 +1554,7 @@
   gen:mother <douglas.ttl#Margaret_Douglas_1> .
   # oo Marjory Stewart, d. 1524-07-26
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q18576006> , <stuart.ttl#Marjory_Stewart_(died_1524)> .
+    gen:spouse <https://www.wikidata.org/wiki/Q18576006> , <https://www.wikidata.org/wiki/Q75451712> .
 <#Katherine_Campbell>
   gen:name "Katherine Campbell"@en ;
   gen:father <https://www.wikidata.org/wiki/Q18576062> ;
@@ -1486,7 +1571,7 @@
   gen:father <https://www.wikidata.org/wiki/Q18576006> .
   # oo 1548-04-16b Margaret Stewart
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q18576007> , <stuart.ttl#Margaret_Stewart> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q18576007> , <https://www.wikidata.org/wiki/Q75388569> ;
 	gen:startDate "1548-04-16b" .
   # oo Katherine Ruthven, daughter of Lord Ruthven
   []
@@ -1496,20 +1581,20 @@
 <#Beatrix_Campbell>
   # Beatrix Campbell
   gen:father <https://www.wikidata.org/wiki/Q18576007> ;
-  gen:mother <stuart.ttl#Margaret_Stewart> .
+  gen:mother <https://www.wikidata.org/wiki/Q75388569> .
   # oo Sir John Campbell, of Lawers, d. 1611, #Sir_John_Campbell_of_Lawers
-<#Sir_Duncan_Campbell_of_Glenorchy,_1st_Baronet>
+<https://www.wikidata.org/wiki/Q75268398>
   # Sir Duncan Campbell of Glenorchy, 1st Baronet, 1550~ - 1631-06-23
   # 1st Baronet of Glenorchy 1625
   gen:father <https://www.wikidata.org/wiki/Q18576007> ;
   gen:mother <#Catherine_Ruthven> .
   # oo Lady Jean Stewart, d. 1593-09
   []
-    gen:spouse <#Sir_Duncan_Campbell_of_Glenorchy,_1st_Baronet> , <stuart.ttl#Lady_Jean_Stewart_(died_1593)> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75268398> , <https://www.wikidata.org/wiki/Q75268396> ;
 	gen:startDate "1573-11-18" .
   # oo Elizabeth Sinclair, d. 1654-10, daughter of Henry Sinclair, 5th Lord Sinclair and Elizabeth Forbes
   []
-    gen:spouse <#Sir_Duncan_Campbell_of_Glenorchy,_1st_Baronet> , <#Elizabeth_Sinclair> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75268398> , <#Elizabeth_Sinclair> ;
 	gen:startDate "1597-10-20" .
 <#Mary_Campbell>
   # Mary Campbell
@@ -1520,35 +1605,38 @@
 
 <https://www.wikidata.org/wiki/Q7526356>
   # Sir Colin Campbell, 2nd Baronet, 1577~ - 1640
-  gen:father <#Sir_Duncan_Campbell_of_Glenorchy,_1st_Baronet> ;
-  gen:mother <stuart.ttl#Lady_Jean_Stewart_(died_1593)> .
+  gen:father <https://www.wikidata.org/wiki/Q75268398> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75268396> .
   # oo Juliana Campbell, 1581~ - 1648a
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7526356> , <#Juliana_Campbell> .
 <#Sir_Robert_Campbell_of_Glenorchy,_3rd_Baronet>
   # Sir Robert Campbell, 3rd Baronet, 1580~ - 1647~/1650
-  gen:father <#Sir_Duncan_Campbell_of_Glenorchy,_1st_Baronet> ;
-  gen:mother <stuart.ttl#Lady_Jean_Stewart_(died_1593)> .
+  gen:father <https://www.wikidata.org/wiki/Q75268398> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75268396> .
   # oo Isabel Mcintosh, daughter of Lachlan 'Mor' Mackintosh, 16th of Mackintosh, 17th Chief of Clan Chattan (https://www.wikidata.org/wiki/Q21282922)
 <#Jean_Campbell_(died_1622)>
   # Jean Campbell, d. 1622-08-09b
-  gen:father <#Sir_Duncan_Campbell_of_Glenorchy,_1st_Baronet> ;
-  gen:mother <stuart.ttl#Lady_Jean_Stewart_(died_1593)> .
+  gen:father <https://www.wikidata.org/wiki/Q75268398> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75268396> .
   # oo 1601 Sir John Campbell, of Cawdor, d. 1642, https://www.wikidata.org/wiki/Q6224962
 <#Jean_Campbell_1>
   # Jean Campbell
-  gen:father <#Sir_Duncan_Campbell_of_Glenorchy,_1st_Baronet> ;
+  gen:father <https://www.wikidata.org/wiki/Q75268398> ;
   gen:mother <#Elizabeth_Sinclair> .
   # oo 1630-06-06 John Murray, 1st Earl of Atholl, 1610~ - 1642-06, murray.ttl#John_Murray,_1st_Earl_of_Atholl
 
-<#Sir_John_Campbell_of_Glenorchy,_4th_Baronet>
+<https://www.wikidata.org/wiki/Q75451595>
   # Sir John Campbell, of Glenorchy, 4th Baronet, 1615~ - 1677-06b
   gen:father <#Sir_Robert_Campbell_of_Glenorchy,_3rd_Baronet> ;
   gen:mother <#Isabel_Mcintosh> .
-  # oo 1635b Lady Mary Graham
+  # oo Lady Mary Graham, d. 1653-01-28
   []
-    gen:spouse <#Sir_John_Campbell_of_Glenorchy,_4th_Baronet> , <graham.ttl#Lady_Mary_Graham_(died_1653)> .
-  # oo Elizabeth Campbell
+    gen:spouse <https://www.wikidata.org/wiki/Q75451595> , <https://www.wikidata.org/wiki/Q75451598> ;
+	gen:startDate "1635b" .
+  # oo Elizabeth Campbell, daughter of Patrick Dow More Campbell of Edinchip
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75451595> , <https://www.wikidata.org/wiki/Q75451806> .
   # oo Christian Muschet, daughter of John Muschet
 <#Isobel_Campbell_(born_1617~)>
   # Isobel Campbell, b. 1617~
@@ -1571,13 +1659,18 @@
   gen:mother <#Isabel_Mcintosh> .
   # oo Duncan Stewart, 7th of Appin
 
+<https://www.wikidata.org/wiki/Q76009316>
+  # Agnes Campbell, b. 1634~
+  gen:father <https://www.wikidata.org/wiki/Q75451595> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75451598> .
+  # oo Sir Alexander Menzies of that Ilk, 1st Baronet, 1623 - 1695-04-16b, https://www.wikidata.org/wiki/Q76062362, 1st Baronet Menzies 1665-09-02, son of Duncan Menzies of Menzies and Weem and Jean Leslie
 <https://www.wikidata.org/wiki/Q5585592>
   # John Campbell, 1st Earl of Breadalbane and Holland, 1636 - 1717-03-19
   # 5th Baronet of Glenorchy 1677-06b
   # Earl of Caithness, Viscount Breadalbane, Lord St.Clair of Berriedale and Glenurchy 1677 - 1681
   # Earl of Breadalbane and Holland, Viscount of Tay and Paintland, Lord Glenurchy, Benederaloch, Ormelie and Weick 1681
-  gen:father <#Sir_John_Campbell_of_Glenorchy,_4th_Baronet> ;
-  gen:mother <graham.ttl#Lady_Mary_Graham_(died_1653)> .
+  gen:father <https://www.wikidata.org/wiki/Q75451595> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75451598> .
   # oo Lady Mary Rich, 1636~ - 1666-02-08
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5585592> , <cavendish.ttl#Lady_Mary_Rich> ;
@@ -1586,9 +1679,14 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5585592> , <#Lady_Mary_Campbell_(died_1691)> ;
 	gen:startDate "1678-04-07" .
+<https://www.wikidata.org/wiki/Q75884137>
+  # Elspeth Campbell
+  gen:father <https://www.wikidata.org/wiki/Q75451595> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75451806> .
+  # oo 1670-11 Rev. Alexander Campbell, 2nd of Auchincloich, d. 1698, https://www.wikidata.org/wiki/Q75884136
 <#Jean_Campbell_of_Glenorchy>
   # Jean Campbell
-  gen:father <#Sir_John_Campbell_of_Glenorchy,_4th_Baronet> ;
+  gen:father <https://www.wikidata.org/wiki/Q75451595> ;
   gen:mother <#Christian_Muschet> .
   # oo 1699-05-13a Alexander Campbell, 3rd of Airds, 1670~ - 1734b, #Alexander_Campbell,_3rd_of_Airds
 <#Robert_Campbell_of_Borland>
@@ -2115,7 +2213,7 @@
 <#Duncan_Campbell_of_Kilmichael>
   # Duncan Campbell of Kilmichael
   gen:father <https://www.wikidata.org/wiki/Q1265364> ;
-  gen:mother <stuart.ttl#Margaret_Stewart_of_Ardgowan> .
+  gen:mother <https://www.wikidata.org/wiki/Q75260923> .
 
 <#Dugald_Campbell_of_Auchinbreck_and_Kilmichael>
   # Dugald Campbell of Auchinbreck and Kilmichael, 1460 - 1497
@@ -2206,6 +2304,11 @@
   gen:father <https://www.wikidata.org/wiki/Q7526447> ;
   gen:mother <boyd.ttl#Isabella_Boyd> .
   # oo John Campbell, 4th of Lochnell, d. 1645-02-02, #John_Campbell,_4th_of_Lochnell
+<https://www.wikidata.org/wiki/Q75523309>
+  # Grizel Campbell
+  gen:father <https://www.wikidata.org/wiki/Q7526447> ;
+  gen:mother <boyd.ttl#Isabella_Boyd> .
+  # oo Sir James Stuart of Ardmaleish, 1st Baronet, d. 1662, https://www.wikidata.org/wiki/Q75523306
 <#John_Campbell_(died_1706~)>
   # John Campbell, d. 1706~
   gen:father <#Dugald_Campbell> ;
@@ -2411,17 +2514,27 @@
   gen:mother <#Jane_Campbell_of_Skipness> .
   # oo Elizabeth Campbell, daughter of Colin Campbell, 2nd of Kilberrie
 
-<#Walter_Campbell,_5th_of_Skipness>
+<https://www.wikidata.org/wiki/Q76104746>
   # Walter Campbell, 5th of Skipness, d. 1702~
   gen:father <#Matthew_Campbell,_4th_of_Skipness> .
   # and Elizabeth Campbell
-  # oo Ann Stewart, daughter of Sir James Stewart of Ardmaleish (d. 1570, son of Ninian Stewart of Ardmaleish (d. 1539, son of James Stewart of Kilcattan (d. 1477, son of William Stewart of Fennock (d. 1465~, son of Sir John Stewart (1345a/1390b - 1445a/1449-07b, son of Robert II Stewart, King of Scotland and Moira Leitch)) and Margaret Stewart)) and Elizabeth Blair)
+  # oo Ann Stewart
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76104746> , <https://www.wikidata.org/wiki/Q76104747> .
   # oo 1655-01-18 Jean Campbell, daughter of Captain John Campbell
   # oo 1681-01-17 Anne Stewart
 
+<https://www.wikidata.org/wiki/Q76104760>
+  # Angus Campbell, 6th of Skipness
+  gen:father <https://www.wikidata.org/wiki/Q76104746> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76104747> .
+  # oo Jean Stuart
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76104760> , <https://www.wikidata.org/wiki/Q76104775> ;
+	gen:startDate "1682-09-16" .
 <https://www.wikidata.org/wiki/Q5216741>
   # Daniel Campbell, 1st of Shawfield, 1672~ - 1753
-  gen:father <#Walter_Campbell,_5th_of_Skipness> .
+  gen:father <https://www.wikidata.org/wiki/Q76104746> .
   # and Jean Campbell
   # oo Margaret Leckie, d. 1711
   []
@@ -2623,110 +2736,6 @@
   # oo Sir George Campbell of Loudoun, 1449~ - 1492~, #Sir_George_Campbell_of_Loudoun
 
 # ----
-<stuart.ttl#Lady_Elizabeth_Stuart_of_Lennox>
-  # Lady Elizabeth Stuart
-  gen:father <https://www.wikidata.org/wiki/Q1909599> ;
-  gen:mother <hamilton.ttl#Lady_Elizabeth_Hamilton_(died_1531)> .
-  # oo Sir Hugh Campbell of Loudoun, 1502 - 1561-02, campbell.ttl#Sir_Hugh_Campbell_of_Loudoun_(died_1561)
-
-<stuart.ttl#Lady_Elizabeth_Stuart,_Countess_of_Argyll>
-  # Lady Elizabeth Stuart
-  gen:father <https://www.wikidata.org/wiki/Q1701827> .
-  # oo Archibald Campbell, 2nd Earl of Argyll, 1465~ - 1513-09-09, https://www.wikidata.org/wiki/Q2413185
-
-#<https://www.wikidata.org/wiki/Q1701828>
-  # John Stewart, 2nd Earl of Atholl, d. 1521
-  # oo Lady Janet Campbell
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q1701828> , <campbell.ttl#Lady_Janet_Campbell,_Countess_of_Atholl> .
-
-<stuart.ttl#Lady_Janet_Stewart,_of_Atholl>
-  # Lady Janet Stewart
-  gen:father <https://www.wikidata.org/wiki/Q1701828> ;
-  gen:mother <campbell.ttl#Janet_Campbell,_Countess_of_Atholl> .
-  # oo 1520-06-16 Alexander Gordon, Master of Sutherland, 1505~ - 1530, https://www.wikidata.org/wiki/Q4718971
-  # oo Henry Stewart, 1st Lord Methven, 1495 - 1552, https://www.wikidata.org/wiki/Q5728721
-
-<https://www.wikidata.org/wiki/Q4444820>
-  # James Stewart, 1st Earl of Moray, 1499 - 1544
-  gen:father <https://www.wikidata.org/wiki/Q137906> ;
-  gen:mother <https://www.wikidata.org/wiki/Q1682662> .
-  # oo Lady Elizabeth Campbell
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q4444820> , <https://www.wikidata.org/wiki/Q7655744> ;
-	gen:startDate "1529-08" .
-
-<https://www.wikidata.org/wiki/Q6470274>
-  # Lady Jean Stewart, 1530 - 1588
-  gen:father <https://www.wikidata.org/wiki/Q137814> ;
-  gen:mother <https://www.wikidata.org/wiki/Q5362419> .
-  # oo Archibald Campbell, 5th Earl of Argyll, 1532 - 1573, https://www.wikidata.org/wiki/Q2368509
-
-<stuart.ttl#Joan_Stewart>
-  # Joan Stewart, b. 1533a
-  gen:father <https://www.wikidata.org/wiki/Q5728721> ;
-  gen:mother <#Janet_Stewart,_of_Atholl> .
-  # oo Colin Campbell, 6th Earl of Argyll, 1545 - 1584, https://www.wikidata.org/wiki/Q2556649
-
-<https://www.wikidata.org/wiki/Q56697313>
-  # Lady Mary Stuart, 1628 - 1668-05
-  gen:father <https://www.wikidata.org/wiki/Q6143788> .
-  # oo 1650-05-13 Archibald Campbell, 9th Earl of Argyll, 1629-02-26 - 1685-06-30, https://www.wikidata.org/wiki/Q2557180
-
-#<https://www.wikidata.org/wiki/Q5082732>
-  # Charles Stuart, 6th Earl of Moray, 1683b - 1735-10-07
-  # oo Lady Anne Campbell, d. 1734-09-18
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q5082732> , <campbell.ttl#Lady_Anne_Campbell_(died_1734)> ;
-	gen:startDate "1695a" .
-
-<stuart.ttl#Lady_Marjory_Stewart_(died_1432)>
-  # Lady Marjory Stewart, d. 1432-08b
-  gen:father <https://www.wikidata.org/wiki/Q665161> .
-  # oo Sir Duncan Campbell, 1st Lord Campbell, d. 1453, https://www.wikidata.org/wiki/Q1265364
-
-<#Sir_John_Stewart,_of_Blackhall>
-  # Sir John Stewart, of Blackhall
-  gen:father <https://www.wikidata.org/wiki/Q294671> .
-
-<stuart.ttl#Margaret_Stewart_of_Ardgowan>
-  # Margaret Stewart of Ardgowan, d. 1442-08a
-  gen:father <#Sir_John_Stewart,_of_Blackhall> .
-  # oo Sir Duncan Campbell, 1st Lord Campbell, d. 1453, https://www.wikidata.org/wiki/Q1265364
-
-<stuart.ttl#Lady_Henrietta_Stewart>
-  # Lady Henrietta Stewart
-  gen:father <https://www.wikidata.org/wiki/Q6143788> ;
-  gen:mother <home.ttl#Lady_Margaret_Home_(died_1683)> .
-  # oo 1662 Sir Hugh Campbell, 5th of Cawdor, 1639 - 1716-03-11, https://www.wikidata.org/wiki/Q18759291
-
-<stuart.ttl#Marjory_Stewart_(died_1524)>
-  # Marjory Stewart, d. 1524-07-26
-  gen:father <https://www.wikidata.org/wiki/Q1240207> .
-  # oo Sir Colin Campbell, 3rd of Glenorchy, 1468~ - 1523-08-12, https://www.wikidata.org/wiki/Q18576006
-
-#<https://www.wikidata.org/wiki/Q1372616>
-  # Alexander Stewart, 1st Duke of Albany, 1454 - 1485-08-07
-  # oo Catherine Sinclair
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q1372616> , <douglas.ttl#Catherine_Sinclair> ;
-	gen:startDate "1477b" .
-
-<https://www.wikidata.org/wiki/Q4720150>
-  # Alexander Stewart, 1477~ - 1537-12-19
-  gen:father <https://www.wikidata.org/wiki/Q1372616> .
-  # oo Margaret Stewart, b. 1497~
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q4720150> , <https://www.wikidata.org/wiki/Q16747640> .
-
-<stuart.ttl#Margaret_Stewart>
-  # Margaret Stewart
-  gen:father <https://www.wikidata.org/wiki/Q4720150> ;
-  gen:mother <https://www.wikidata.org/wiki/Q16747640> .
-  # oo Patrick Graham, 1st of Inchbrakie and Aberuthven, 1508~ - 1536, graham.ttl#Patrick_Graham,_1st_of_Inchbrakie_and_Aberuthven
-  # oo 1548-04-16b Sir Colin Campbell of Glenorchy, 1489 - 1583-04-11, https://www.wikidata.org/wiki/Q18576007
-
-# ----
 <#Lady_Isabel_Ruthven>
   # Lady Isabel Ruthven
   gen:father <https://www.wikidata.org/wiki/Q3568922> .
@@ -2801,7 +2810,7 @@
   # Richard Maitland, 4th Earl of Lauderdale, 1653-06-20 - 1695
   # oo Lady Anne Campbell, d. 1734-09-18
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q7327606> , <campbell.ttl#Lady_Anne_Campbell_(died_1734)> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q7327606> , <https://www.wikidata.org/wiki/Q75268518> ;
 	gen:startDate "1678-07-01" .
 
 # ----
@@ -2879,6 +2888,46 @@
   # Lady Isabella Stanhope, b. 1966-10-01
   gen:father <https://www.wikidata.org/wiki/Q8018716> .
   # oo 1994-10-21 Colin Campbell, 7th Earl Cawdor, b. 1962-06-30, https://www.wikidata.org/wiki/Q5144947
+
+# ----
+#<https://www.wikidata.org/wiki/Q76062362>
+  # oo Sir Alexander Menzies of that Ilk, 1st Baronet, 1623 - 1695-04-16b
+  # 1st Baronet Menzies 1665-09-02
+  # son of Duncan Menzies of Menzies and Weem
+  # and Jean Leslie
+  # Agnes Campbell, b. 1634~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76062362> , <https://www.wikidata.org/wiki/Q76009316> .
+
+<https://www.wikidata.org/wiki/Q76193513>
+  # Robert Menzies, 1660~ - 1691
+  gen:father <https://www.wikidata.org/wiki/Q76062362> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76009316> .
+  # oo Hon. Anne Sandilands, b. 1663-02-22, daughter of https://www.wikidata.org/wiki/Q75389779 Walter Sandilands, 6th Lord Torphichen and https://www.wikidata.org/wiki/Q76266585 Catherine Alexander
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76193513> , <https://www.wikidata.org/wiki/Q76193512> .
+<https://www.wikidata.org/wiki/Q76258903>
+  # Susan Menzies
+  gen:father <https://www.wikidata.org/wiki/Q76062362> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76009316> .
+  # oo 1675-03-20a Lord Neill Campbell, 1610 - 1682-04, https://www.wikidata.org/wiki/Q6679810
+
+<https://www.wikidata.org/wiki/Q75987624>
+  # Sir Alexander Menzies of that Ilk, 2nd Baronet, d. 1730a/1736b
+  gen:father <https://www.wikidata.org/wiki/Q76193513> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76193512> .
+  # oo Christian Campbell, d. 1736-04
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75987624> , <https://www.wikidata.org/wiki/Q75987450> .
+
+<https://www.wikidata.org/wiki/Q76258930>
+  # Sir Robert Menzies of that Ilk, 3rd Baronet, 1704 - 1786-09-04
+  gen:father <https://www.wikidata.org/wiki/Q75987624> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75987450> .
+  # oo Lady Mary Stuart, 1713~ - 1773-12-30
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76258930> , <https://www.wikidata.org/wiki/Q76258931> ;
+	gen:startDate "1729-10-31" .
 
 # ----
 #<https://www.wikidata.org/wiki/Q5790329>
@@ -3290,3 +3339,16 @@
   gen:father <https://www.wikidata.org/wiki/Q127010> ; # Sir Theophilus Metcalfe, 4th Baronet
   gen:mother <https://www.wikidata.org/wiki/Q75299121> . # Felicite Anne Browne
   # oo 1853-10-25 Sir Edward Fitzgerald Campbell, 2nd Baronet, 1822-10-25 - 1882-11-23, https://www.wikidata.org/wiki/Q14622473
+
+# ----
+#<https://www.wikidata.org/wiki/Q3041265>
+  # Duncan (Donnchadh), 8th Earl of Lennox, d. 1425-05-24
+  # oo Helen Campbell
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3041265> , <https://www.wikidata.org/wiki/Q61483336> .
+
+<https://www.wikidata.org/wiki/Q61483322>
+  # Elizabeth of Lennox, d. 1429-11~
+  gen:father <https://www.wikidata.org/wiki/Q3041265> ;
+  gen:mother <https://www.wikidata.org/wiki/Q61483336> .
+  # oo 1406-09-23 John Stewart of Darnley, 1380 - 1429-02-21, https://www.wikidata.org/wiki/Q3182538

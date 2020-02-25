@@ -241,7 +241,7 @@
   # Lady Octavia Grosvenor, 1829-09-22 - 1921-05-29
   gen:father <https://www.wikidata.org/wiki/Q4171078> ;
   gen:mother <gower.ttl#Lady_Elizabeth_Mary_Leveson-Gower> .
-  # oo 1852-12-28 Sir Michael Robert Shaw-Stewart of Greenock and Blackhall, 7th Baronet, 1826-11-26 - 1903-12-10, https://www.wikidata.org/wiki/Q11803653
+  # oo 1852-12-28 Sir Michael Robert Shaw-Stewart of Greenock and Blackhall, 7th Baronet, 1826-11-26 - 1903-12-10, https://www.wikidata.org/wiki/Q11803653 (stuart.ttl)
 <#Lady_Agnes_Grosvenor>
   # Lady Agnes Grosvenor, 1831-01-24 – 1909-01-22
   gen:father <https://www.wikidata.org/wiki/Q4171078> ;
@@ -651,7 +651,7 @@
   gen:deathDate "1898-11-21" ;
   gen:father <https://www.wikidata.org/wiki/Q14945417> ;
   gen:mother <wellesley.ttl#Charlotte_Arbuthnot_Wellesley> .
-  # oo Caroline Susan Theodora Stuart-Wortley, 1858-06-15 - 1940-08-07 (talbot.ttl)
+  # oo Caroline Susan Theodora Stuart-Wortley, 1858-06-15 - 1940-08-07
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7052295> , <https://www.wikidata.org/wiki/Q5045088> ;
 	gen:startDate "1881-06-25" .
@@ -934,11 +934,13 @@
   # oo 1870-05-24 Hon. Cecil Thomas Parker, 1845-03-27 - 1931-01-12, #Cecil_Thomas_Parker
 
 # ----
-#<https://www.wikidata.org/wiki/Q7153985>
+<https://www.wikidata.org/wiki/Q7153985>
   # Paul Beilby Lawley-Thompson, 1st Baron Wenlock, 1784-07-01 - 1852-05-09
   # 8th Baronet Lawley, of Spoonhill, Shropshire 1831-01-30
   # 1st Baron Wenlock, of Wenlock, co. Shropshire 1839-05-13
-  # oo Hon. Caroline Neville, 1790 - 1868-05-02
+  gen:father <https://www.wikidata.org/wiki/Q16240242> ; # Sir Robert Lawley, 5th Baronet
+  gen:mother <https://www.wikidata.org/wiki/Q76022821> . # Jane Thompson
+  # oo Hon. Caroline Neville, 1790 - 1868-05-02 (grenville.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7153985> , <https://www.wikidata.org/wiki/Q47486897> ;
 	gen:startDate "1817-05-10" .
@@ -951,63 +953,17 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q4881234> , <https://www.wikidata.org/wiki/Q63850723> ;
 	gen:startDate "1846-11-28" .
+<https://www.wikidata.org/wiki/Q18224293>
+  # Hon. Jane Thompson, 1820-12-05 - 1900-02-04
+  gen:father <https://www.wikidata.org/wiki/Q7153985> ;
+  gen:mother <https://www.wikidata.org/wiki/Q47486897> .
+  # oo 1846-05-06 Rt. Hon. James Archibald Stuart-Wortley, 1805-07-03 - 1881-08-22, https://www.wikidata.org/wiki/Q6143798
 
 <#Constance_Mary_Lawley>
   # Hon. Constance Mary Lawley, 1854 - 1951-05-04
   gen:father <https://www.wikidata.org/wiki/Q4881234> ;
   gen:mother <https://www.wikidata.org/wiki/Q63850723> .
   # oo 1877-06-19 Hon. Eustace Vesey, 1851 - 1886-11-18, wemyss.ttl#Eustace_Vesey
-# ----
-<https://www.wikidata.org/wiki/Q47486897>
-  # Hon. Caroline Neville, 1790 - 1868-05-02
-  gen:father <https://www.wikidata.org/wiki/Q17423462> .
-  # and Catherine Grenville
-  # oo 1817-05-10 Paul Beilby Lawley-Thompson, 1st Baron Wenlock, 1784-07-01 - 1852-05-09, https://www.wikidata.org/wiki/Q7153985
-
-# ----
-#<https://www.wikidata.org/wiki/Q64005549>
-  # Sir Michael Shaw-Stewart of Greenock and Blackhall, 5th Baronet, 1766-02-10 - 1825-08-25
-  # oo Catharine Maxwell, 1767-01-07 - 1849-05-10, daughter of Sir William Maxwell of Springkell, 3rd Baronet and Margaret Stewart
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q64005549> , <#Catharine_Maxwell> ;
-	gen:startDate "1787-09-24" .
-
-<https://www.wikidata.org/wiki/Q26258168>
-  # Sir Michael Shaw-Stewart of Greenhall and Blackhall, 6th Baronet, 1788 - 1836-12-19
-  gen:father <https://www.wikidata.org/wiki/Q64005549> ;
-  gen:mother <#Catharine_Maxwell> .
-  # oo Eliza Mary Farquhar, d. 1852-01-25, daughter of Robert Farquhar
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q26258168> , <#Eliza_Mary_Farquhar> ;
-	gen:startDate "1819-09-16" .
-<#Margaret_Shaw-Stewart>
-  # Margaret Shaw-Stewart, d. 1880-07-18
-  gen:father <https://www.wikidata.org/wiki/Q64005549> ;
-  gen:mother <#Catharine_Maxwell> .
-  # oo 1836-07-28 Edward Adolphus St. Maur, 11th Duke of Somerset, 1775-02-24 - 1855-08-15, https://www.wikidata.org/wiki/Q3909922
-
-<https://www.wikidata.org/wiki/Q11803653>
-  # Sir Michael Robert Shaw-Stewart of Greenock and Blackhall, 7th Baronet, 1826-11-26 - 1903-12-10
-  gen:father <https://www.wikidata.org/wiki/Q26258168> ;
-  gen:mother <#Eliza_Mary_Farquhar> .
-  # oo Lady Octavia Grosvenor, 1829-09-22 - 1921-05-29
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q11803653> , <https://www.wikidata.org/wiki/Q54859517> ;
-	gen:startDate "1852-12-28" .
-<#Katherine_Mary_Shaw-Stewart>
-  # Katherine Mary Shaw-Stewart, d. 1889-12-03
-  gen:father <https://www.wikidata.org/wiki/Q26258168> ;
-  gen:mother <#Eliza_Mary_Farquhar> .
-  # oo 1848-05-02 Hon. Robert Bruce, 1813-03-15 - 1862-06-27, https://www.wikidata.org/wiki/Q16066014
-
-<https://www.wikidata.org/wiki/Q7527315>
-  # Sir Michael Hugh Shaw-Stewart of Greenhall and Blackhall, 8th Baronet, 1854-07-11 – 1942-06-29
-  gen:father <https://www.wikidata.org/wiki/Q11803653> ;
-  gen:mother <https://www.wikidata.org/wiki/Q54859517> .
-  # oo Lady Alice Emma Thynne, 1864 - 1942-01-26
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q7527315> , <thynne.ttl#Lady_Alice_Emma_Thynne> ;
-	gen:startDate "1883-11-14" .
 
 # ----
 #<https://www.wikidata.org/wiki/Q5997251>
@@ -1073,16 +1029,63 @@
 # ----
 #<https://www.wikidata.org/wiki/Q61087159>
   # Sir Robert Sheffield, 5th Baronet, 1824-12-08 - 1886
-  # oo Priscilla Isabel Laura Dumaresq, 1845~ - 1900-05-30, daughter of Henry Dumaresq and Elizabeth Sophia Butler-Danvers
+  # oo Priscilla Isabel Laura Dumaresq, 1845~ - 1900-05-30
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q61087159> , <#Priscilla_Isabel_Laura_Dumaresq> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q61087159> , <https://www.wikidata.org/wiki/Q75271767> ;
 	gen:startDate "1867-01-30" .
 
 <#Helen_Sheffield>
   # Helen Sheffield, 1872~ - 1950-07-12
   gen:father <https://www.wikidata.org/wiki/Q61087159> ;
-  gen:mother <#Priscilla_Isabel_Laura_Dumaresq> .
+  gen:mother <https://www.wikidata.org/wiki/Q75271767> .
   # oo 1893-04-12 Lord Arthur Hugh Grosvenor, 1860-05-31 - 1929-04-29, #Lord_Arthur_Hugh_Grosvenor
+<https://www.wikidata.org/wiki/Q75319236>
+  # Sir Berkeley Digby George Sheffield, 6th Baronet, 1876-01-19 - 1946-11-26
+  gen:father <https://www.wikidata.org/wiki/Q61087159> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75271767> .
+  # oo Julie Marie Barones van Tuyll van Serooskerken, 1883-01-08 - 1952-07-14
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75319236> , <https://www.wikidata.org/wiki/Q75319237> ;
+	gen:startDate "1904-07-19" .
+
+<https://www.wikidata.org/wiki/Q75319235>
+  # Diana Mary Sheffield, 1907-01-17 - 1969-07-17
+  gen:father <https://www.wikidata.org/wiki/Q75319236> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75319237> .
+  # oo 1928-12-11 Hon. Robert Henry Digby, 1903-11-24 - 1959-04-04, https://www.wikidata.org/wiki/Q75319233
+# ----
+<https://www.wikidata.org/wiki/Q75271767>
+  # Priscilla Isabel Laura Dumaresq, 1845~ - 1900-05-30
+  gen:father <https://www.wikidata.org/wiki/Q76181401> ; # Henry Dumaresq
+  gen:mother <https://www.wikidata.org/wiki/Q76370832> . # Elizabeth Sophia Butler-Danvers
+  # oo 1867-01-30 Sir Robert Sheffield, 5th Baronet, 1824-12-08 - 1886, https://www.wikidata.org/wiki/Q61087159
+<https://www.wikidata.org/wiki/Q75611711>
+  # Harriet Maria Amelia Dumaresq, d. 1926-06-06
+  gen:father <https://www.wikidata.org/wiki/Q76181401> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76370832> .
+  # oo 1854-03-21 Rowland Winn, 1st Baron Saint Oswald of Nostell, 1820-02-19 – 1893-01-17, https://www.wikidata.org/wiki/Q7372210
+# ----
+#<https://www.wikidata.org/wiki/Q7372210>
+  # Rowland Winn, 1st Baron Saint Oswald of Nostell, 1820-02-19 – 1893-01-17
+  # 1st Baron Saint Oswald of Nostell, in the West Riding of co. York 1885-07-06
+  # son of Charles Winn
+  # and Priscilla Strickland
+  # oo 1854-03-21 Harriet Maria Amelia Dumaresq, d. 1926-06-06
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7372210> , <https://www.wikidata.org/wiki/Q75611711> ;
+	gen:startDate "1854-03-21" .
+
+<https://www.wikidata.org/wiki/Q75676580>
+  # Hon. Maud Julia Mary Winn, d. 1938-06-17
+  gen:father <https://www.wikidata.org/wiki/Q7372210> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75611711> .
+  # oo 1900-05-31 Hon. Sir. Alan Richard Montagu-Stuart-Wortley, 1868-01-20 - 1949-09-23, https://www.wikidata.org/wiki/Q75450008 (stuart.ttl)
+# ----
+<https://www.wikidata.org/wiki/Q75319237>
+  # Julie Marie Barones van Tuyll van Serooskerken, 1883-01-08 - 1952-07-14
+  gen:father <https://www.wikidata.org/wiki/Q75319238> ; # Willem Karel Reginald Baron van Tuyll van Serooskerken
+  gen:mother <https://www.wikidata.org/wiki/Q76244513> . # Anna Mathilde van Limburg Stirum
+  # oo 1904-07-19 Sir Berkeley Digby George Sheffield, 6th Baronet, 1876-01-19 - 1946-11-26, https://www.wikidata.org/wiki/Q75319236
 
 # ----
 <https://www.wikidata.org/wiki/Q336084>
@@ -1152,18 +1155,18 @@
   []
     gen:spouse <#Josceline_Charles_Henry_Grant> , <#Eleanor_Lilian_Grosvenor> ;
 	gen:startDate "1906-07-26" .
-<#Alastair_Edward_George_Grant>
+<https://www.wikidata.org/wiki/Q75313627>
   # Alastair Edward George Grant, 1892-08-30 - 1947-09-27
   gen:father <https://www.wikidata.org/wiki/Q18810631> ;
   gen:mother <https://www.wikidata.org/wiki/Q75321568> .
-  # oo Elizabeth Valetta Montagu-Stuart-Wortley, 1896-08-01 - 1978-10-24
+  # oo Elizabeth Valetta Montagu-Stuart-Wortley, 1896-08-01 - 1978-10-24 (stuart.ttl)
   []
-    gen:spouse <#Alastair_Edward_George_Grant> , <stuart.ttl#Elizabeth_Valetta_Montagu-Stuart-Wortley> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75313627> , <https://www.wikidata.org/wiki/Q75250980> ;
 	gen:startDate "1917-08-14" ;
 	gen:divorceDate "1922" .
   # oo Ann Bridgit Dominica Herbert, 1914-02-22 - 2005-07
   []
-    gen:spouse <#Alastair_Edward_George_Grant> , <herbert.ttl#Ann_Bridgit_Dominica_Herbert> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75313627> , <herbert.ttl#Ann_Bridgit_Dominica_Herbert> ;
 	gen:startDate "1935-11-20" .
 # ----
 #<https://www.wikidata.org/wiki/Q5717706>
@@ -1549,13 +1552,13 @@
   []
     gen:spouse <#Maurice_George_Carr_Glyn> , <#Maud_Grosvenor> ;
 	gen:startDate "1897-10-06" .
-<#Margaret_Isabel_Frances_Glyn>
+<https://www.wikidata.org/wiki/Q75281958>
   gen:name "Margaret Isabel Frances Glyn"@en ;
   gen:birthDate "1888-02-22" ;
   gen:deathDate "1977-06-15" ;
   gen:father <https://www.wikidata.org/wiki/Q5343123> ;
   gen:mother <campbell.ttl#Lady_Mary_Emma_Campbell> .
-  # oo 1911-07-06 Hon. Sir Herbert Meade-Fetherstonhaugh, 1875-11-03 - 1964-10-27, https://www.wikidata.org/wiki/Q18756766
+  # oo 1911-07-06 Hon. Sir Herbert Meade-Fetherstonhaugh, 1875-11-03 - 1964-10-27, https://www.wikidata.org/wiki/Q18756766 (cecil.ttl)
 <#Alice_Mary_Sybil_Glyn>
   # Alice Mary Sybil Glyn, 1889-05-01 - 1970-03-31
   gen:father <https://www.wikidata.org/wiki/Q5343123> ;
@@ -1658,13 +1661,13 @@
   gen:father <https://www.wikidata.org/wiki/Q5078424> ;
   gen:mother <brudenell.ttl#Lady_Georgiana_Frances_Molyneux> .
   # oo 1856-11-26 Frederick Paget, 1807-03-09 - 1866-01-04, https://www.wikidata.org/wiki/Q5498507
-<#Pascoe_du_Pré_Grenfell>
+<https://www.wikidata.org/wiki/Q75261478>
   # Pascoe du Pré Grenfell, 1828-07-04 - 1896-11-29
   gen:father <#Pascoe_St._Leger_Grenfell> ;
   gen:mother <#Catherine_Anne_Dupré> .
   # oo Sophia Grenfell, 1833 - 1898-08-19
   []
-    gen:spouse <#Pascoe_du_Pré_Grenfell> , <#Sophia_Grenfell> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75261478> , <https://www.wikidata.org/wiki/Q75266410> ;
 	gen:startDate "1858-05-13" .
 <#Charles_Seymour_Grenfell>
   # Charles Seymour Grenfell, 1839-09-14 - 1924-01-11
@@ -1674,11 +1677,11 @@
   []
     gen:spouse <#Charles_Seymour_Grenfell> , <#Elizabeth_Graham> ;
 	gen:startDate "1862-09-30" .
-<#Sophia_Grenfell>
+<https://www.wikidata.org/wiki/Q75266410>
   # Sophia Grenfell, 1833 - 1898-08-19
   gen:father <https://www.wikidata.org/wiki/Q646542> ;
   gen:mother <#Maria_Dolores_Masini> .
-  # oo 1858-05-13 Pascoe du Pré Grenfell, 1828-07-04 - 1896-11-29, #Pascoe_du_Pré_Grenfell
+  # oo 1858-05-13 Pascoe du Pré Grenfell, 1828-07-04 - 1896-11-29, https://www.wikidata.org/wiki/Q75261478
 
 <https://www.wikidata.org/wiki/Q333887>
   # William Henry Grenfell, 1st Baron Desborough, 1855-10-30 – 1945-01-09
@@ -1689,18 +1692,23 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q333887> , <https://www.wikidata.org/wiki/Q3733729> ;
 	gen:startDate "1887-02-17" .
+<https://www.wikidata.org/wiki/Q75953618>
+  # Maraquita Masini Grenfell, 1862 - 1895-10-03
+  gen:father <https://www.wikidata.org/wiki/Q75261478> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75266410> .
+  # oo 1889-10-10 John George Bulteel, 1856 - 1920-05-08, https://www.wikidata.org/wiki/Q75321516 (ponsonby.ttl)
 <https://www.wikidata.org/wiki/Q5056099>
   # Cecil Alfred Grenfell, 1864-02-13 – 1924-08-11
-  gen:father <#Pascoe_du_Pré_Grenfell> ;
-  gen:mother <#Sophia_Grenfell> .
+  gen:father <https://www.wikidata.org/wiki/Q75261478> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75266410> .
   # oo Lady Lillian Maud Spencer-Churchill, 1873-07-09 - 1951-01-04
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5056099> , <spencer.ttl#Lady_Lillian_Maud_Spencer-Churchill> ;
 	gen:startDate "1898-10-08" .
 <#Arthur_Morton_Grenfell>
   # Arthur Morton Grenfell, 1873-10-21 - 1958-11-24
-  gen:father <#Pascoe_du_Pré_Grenfell> ;
-  gen:mother <#Sophia_Grenfell> .
+  gen:father <https://www.wikidata.org/wiki/Q75261478> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75266410> .
   # oo Hilda Margaret Lyttelton, 1886-01-13 - 1972-06-10
   []
     gen:spouse <#Arthur_Morton_Grenfell> , <lyttelton.ttl#Hilda_Margaret_Lyttelton> ;
@@ -1719,11 +1727,11 @@
   gen:father <https://www.wikidata.org/wiki/Q333887> ;
   gen:mother <https://www.wikidata.org/wiki/Q3733729> .
   # oo 1924-06-02 Sir John Maitland Salmond, 1881-07-17 - 1968-04-16, https://www.wikidata.org/wiki/Q11037030
-<#Esmé_Winifred_Mary_Grenfell>
+<https://www.wikidata.org/wiki/Q75252464>
   # Esmé Winifred Mary Grenfell
   gen:father <#Riversdale_Francis_John_Grenfell> ;
   gen:mother <#Cecil_Blanche_Lubbock> .
-  # oo 1914-01-17 Walter Robert Stewart, 1888-02-07 - 1918-04-08, stuart.ttl#Walter_Robert_Stewart
+  # oo 1914-01-17 Walter Robert Stewart, 1888-02-07 - 1918-04-08, https://www.wikidata.org/wiki/Q75355383
 # ----
 <https://www.wikidata.org/wiki/Q11037030>
   # Sir John Maitland Salmond, 1881-07-17 - 1968-04-16

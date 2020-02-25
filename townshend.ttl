@@ -2,6 +2,7 @@
 @prefix gen: <http://jjkoch.de/gen#> .
 @prefix wdata: <https://www.wikidata.org/wiki/> .
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 #<https://www.wikidata.org/wiki/Q7359026>
   # Sir Roger Townshend, 1430 - 1493-11-09
@@ -304,15 +305,15 @@
   # John Townshend, 4th Marquess Townshend, 1798-03-28 – 1863-09-10
   gen:father <https://www.wikidata.org/wiki/Q6679459> ;
   gen:mother <seymour.ttl#Georgina_Ann_Poyntz> .
-  # oo Elizabeth Jane Crichton-Stuart, 1803-07-18 - 1877-01-27
+  # oo Elizabeth Jane Stuart, 1803-07-18 - 1877-01-27
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q15725713> , <stuart.ttl#Elizabeth_Jane_Crichton-Stuart> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q15725713> , <https://www.wikidata.org/wiki/Q75267928> ;
 	gen:startDate "1825-08-18" .
 
 <https://www.wikidata.org/wiki/Q6261098>
   # John Villiers Stuart Townshend, 5th Marquess Townshend of Raynham, 1831-04-10 - 1899-10-26
   gen:father <https://www.wikidata.org/wiki/Q15725713> ;
-  gen:mother <stuart.ttl#Elizabeth_Jane_Crichton-Stuart> .
+  gen:mother <https://www.wikidata.org/wiki/Q75267928> .
   # oo Lady Anne Elizabeth Clementina Duff, 1847-08-16 - 1925-12-31
   []
     gen:spouse <https://www.wikidata.org/wiki/Q6261098> , <https://www.wikidata.org/wiki/Q64339284> ;
@@ -320,12 +321,12 @@
 <https://www.wikidata.org/wiki/Q75322948>
   # Lady Elizabeth Clementina Townshend, 1834-08-23 - 1910-11-18
   gen:father <https://www.wikidata.org/wiki/Q15725713> ;
-  gen:mother <stuart.ttl#Elizabeth_Jane_Crichton-Stuart> .
+  gen:mother <https://www.wikidata.org/wiki/Q75267928> .
   # oo 1856-07-15 John St Aubyn, 1st Baron St Levan, 1829-10-23 - 1908-05-14, https://www.wikidata.org/wiki/Q13581086
 <#Lady_Audrey_Jane_Charlotte_Townshend>
   # Lady Audrey Jane Charlotte Townshend, 1844-11-10 - 1926-02-20
   gen:father <https://www.wikidata.org/wiki/Q15725713> ;
-  gen:mother <stuart.ttl#Elizabeth_Jane_Crichton-Stuart> .
+  gen:mother <https://www.wikidata.org/wiki/Q75267928> .
   # oo 1873-09-18 Hon. Greville Theophilus Howard, 1836-12-22 - 1880-07-28, howard.ttl#Greville_Theophilus_Howard
   # oo 1882-08-10 Rt. Hon. Sir Redvers Henry Buller, 1839-12-07 – 1908-06-02, https://www.wikidata.org/wiki/Q726293
 
@@ -617,15 +618,6 @@
 	gen:divorceDate "1814-06" .
 
 # ----
-#<https://www.wikidata.org/wiki/Q275336>
-  # Lord George Stuart, 1780-03-01 – 1841-02-19
-
-<stuart.ttl#Elizabeth_Jane_Crichton-Stuart>
-  # Elizabeth Jane Crichton-Stuart, 1803-07-18 - 1877-01-27
-  gen:father <https://www.wikidata.org/wiki/Q275336> .
-  # oo 1825-08-18 John Townshend, 4th Marquess Townshend, 1798-03-28 – 1863-09-10, https://www.wikidata.org/wiki/Q15725713
-
-# ----
 #<#Sir_Edward_St_Aubyn,_1st_Baronet>
   # Sir Edward St Aubyn, 1st Baronet, of St Michael's Mount, Cornwall, 1799-11-06 - 1872-11-30
   # 1st Baronet St. Aubyn, of St. Michaels Mount, Cornwall 1866-07-31
@@ -635,6 +627,7 @@
 	gen:startDate "1828-01-26" .
 
 <https://www.wikidata.org/wiki/Q13581086>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75322949> ;
   # John St Aubyn, 1st Baron St Levan, 1829-10-23 - 1908-05-14
   # 2nd Baronet St. Aubyn, of St. Michaels Mount, Cornwall 1872-11-30
   # 1st Baron St. Levan of St. Michaels Mount, co. Cornwall 1887-07-04
@@ -677,7 +670,12 @@
   gen:father <https://www.wikidata.org/wiki/Q75356083> ;
   gen:mother <https://www.wikidata.org/wiki/Q76085835> .
   # oo 1987 Hon. Robert William Boyle, b. 1948-03-05, https://www.wikidata.org/wiki/Q75353210
-
+# ----
+#<https://www.wikidata.org/wiki/Q75310955>
+  # Helen Katherine Phillipps, d. 1948-03-10
+  # daughter of John J. C. Phillipps
+  # oo 1894-06-30 Hon. Sir Arthur James Dudley Stuart St. Aubyn, 1867-10-05 - 1897-09-30, https://www.wikidata.org/wiki/Q75310958
+  # oo 1904-10-06 Patrick James Crichton-Stuart, 1868-01-06 - 1935-10-25, https://www.wikidata.org/wiki/Q75310951
 
 # ----
 #<#Robert_Eaton_White,_1st_Baronet>

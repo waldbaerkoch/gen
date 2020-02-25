@@ -2,6 +2,7 @@
 @prefix gen: <http://jjkoch.de/gen#> .
 @prefix wdata: <https://www.wikidata.org/wiki/> .
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 #<#Thomas_Montagu>
   # Thomas Montague, of Hemington, Northamptonshire, d. 1516-09-05
@@ -341,7 +342,8 @@
     gen:spouse <https://www.wikidata.org/wiki/Q5345996> , <#Sally_???> ;
 	gen:startDate "1730~" .
 <https://www.wikidata.org/wiki/Q245833>
-  # Mary Wortley-Montagu, Baroness Mount Stuart of Wortley, 1718-02 - 1794-11-06
+  # Mary Wortley-Montagu, 1st Baroness Mount Stuart of Wortley, 1718-02 - 1794-11-06
+  # 1st Baroness Mount Stuart of Wortley, co. York 1761-04-03
   gen:father <https://www.wikidata.org/wiki/Q7526634> ;
   gen:mother <https://www.wikidata.org/wiki/Q235121> .
   # oo 1736-08-13 John Stuart, 3rd Earl of Bute, 1713-05-25 - 1792-03-10, https://www.wikidata.org/wiki/Q294651
@@ -684,13 +686,13 @@
   gen:deathDate "1670/1677" ;
   gen:father <https://www.wikidata.org/wiki/Q5725963> ;
   gen:mother <spencer.ttl#Catharine_Spencer> .
-<#James_Montagu_(died_1665)>
+<https://www.wikidata.org/wiki/Q76024769>
   # James Montagu, of Lackham, Wilts, d. 1665-02
   gen:father <https://www.wikidata.org/wiki/Q5725963> ;
   gen:mother <spencer.ttl#Catharine_Spencer> .
   # oo Mary Baynard, daughter of Sir Robert Baynard
   []
-    gen:spouse <#James_Montagu_(died_1665)> , <#Mary_Baynard> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q76024769> , <https://www.wikidata.org/wiki/Q76024771> ;
 	gen:startDate "1635-11-11" .
 <https://www.wikidata.org/wiki/Q5542576>
   gen:name "Hon. George Montagu"@en ;
@@ -733,13 +735,13 @@
   gen:father <https://www.wikidata.org/wiki/Q2702018> ;
   gen:mother <cavendish.ttl#Essex_Cheeke> .
   # oo John Bright, 1658~ - 1688b, #John_Bright
-<#James_Montagu_(died_1676)>
+<https://www.wikidata.org/wiki/Q76024772>
   # James Montagu, of Lackham, d. 1676-03
-  gen:father <#James_Montagu_(died_1665)> ;
-  gen:mother <#Mary_Baynard> .
+  gen:father <https://www.wikidata.org/wiki/Q76024769> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76024771> .
   # oo Diana Hungerford, 1648-11-19 - 1736, daughter of Anthony Hungerford and Rachel Jones
   []
-    gen:spouse <#James_Montagu_(died_1676)> , <#Diana_Hungerford> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q76024772> , <https://www.wikidata.org/wiki/Q76024774> ;
 	gen:startDate "1671-05-30" .
 <#Edward_Montagu_(born_1649)>
   # Edward Montagu, b. 1649
@@ -823,13 +825,13 @@
   # Heneage Montagu, 1675-11-16 – 1698-04
   gen:father <https://www.wikidata.org/wiki/Q7347752> ;
   gen:mother <talbot.ttl#Anne_Yelverton> .
-<#James_Montagu_(died_1747)>
+<https://www.wikidata.org/wiki/Q26212970>
   # James Montagu, of Lackham, 1673 - 1747-08-04
-  gen:father <#James_Montagu_(died_1676)> ;
-  gen:mother <#Diana_Hungerford> .
+  gen:father <https://www.wikidata.org/wiki/Q76024772> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76024774> .
   # oo Elizabeth Eyles, daughter of Sir John Eyles
   []
-    gen:spouse <#James_Montagu_(died_1747)> , <#Elizabeth_Eyles> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q26212970> , <https://www.wikidata.org/wiki/Q76024778> ;
 	gen:startDate "1716" .
 <https://www.wikidata.org/wiki/Q5542570>
   gen:name "George Montagu, 1st Earl of Halifax"@en ;
@@ -887,11 +889,11 @@
   # oo 1724-06-11 Pattee Byng, 2nd Viscount Torrington, 1699-05-25 – 1747-01-23, https://www.wikidata.org/wiki/Q7148339
 <https://www.wikidata.org/wiki/Q16844103>
   # John Montagu, 1719 - 1795-09
-  gen:father <#James_Montagu_(died_1747)> ;
-  gen:mother <#Elizabeth_Eyles> .
-  # oo Sophia Wroughton, d. 1802-04-14
+  gen:father <https://www.wikidata.org/wiki/Q26212970> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76024778> .
+  # oo Sophia Wroughton, d. 1802-04-14 (manners.ttl)
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q16844103> , <manners.ttl#Sophia_Wroughton> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q16844103> , <https://www.wikidata.org/wiki/Q75346219> ;
 	gen:startDate "1748-12-11" .
 <https://www.wikidata.org/wiki/Q75269349>
   # Lady Lucy Montague, d. 1734-05-07
@@ -928,7 +930,7 @@
   # and Arabella Trevor
   # oo Elizabeth Villiers, Countess Grandison, d. 1782-05-29
   []
-    gen:spouse <#Sir_Charles_Montagu> , <villiers.ttl#Elizabeth_Villiers,_1st_Countess_Grandison> ;
+    gen:spouse <#Sir_Charles_Montagu> , <https://www.wikidata.org/wiki/Q75270016> ;
 	gen:startDate "1763-02-15" .
 
 <#Lady_Caroline_Montagu>
@@ -961,19 +963,19 @@
 <https://www.wikidata.org/wiki/Q5542575>
   # Sir George Montagu, 1750-12-12 – 1829-12-24
   gen:father <https://www.wikidata.org/wiki/Q16844103> ;
-  gen:mother <manners.ttl#Sophia_Wroughton> .
+  gen:mother <https://www.wikidata.org/wiki/Q75346219> .
   # oo Charlotte Wroughton, daughter of George Wroughton
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q5542575> , <#Charlotte_Wroughton> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q5542575> , <https://www.wikidata.org/wiki/Q75346215> ;
 	gen:startDate "1783-10-09" .
 <https://www.wikidata.org/wiki/Q6139926>
   # James Montagu, 1752-08-12 – 1794-06
   gen:father <https://www.wikidata.org/wiki/Q16844103> ;
-  gen:mother <manners.ttl#Sophia_Wroughton> .
+  gen:mother <https://www.wikidata.org/wiki/Q75346219> .
 <https://www.wikidata.org/wiki/Q5344494>
   # Edward Montagu, 1755-02-20 – 1799-05-08
   gen:father <https://www.wikidata.org/wiki/Q16844103> ;
-  gen:mother <manners.ttl#Sophia_Wroughton> .
+  gen:mother <https://www.wikidata.org/wiki/Q75346219> .
   # oo Barbara Fleetwood, d. 1848-06-03, daughter of John Fleetwood
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5344494> , <#Barbara_Fleetwood> ;
@@ -981,7 +983,7 @@
 <#Sophia_Montagu>
   # Sophia Montagu, d. 1854-10-21
   gen:father <https://www.wikidata.org/wiki/Q16844103> ;
-  gen:mother <manners.ttl#Sophia_Wroughton> .
+  gen:mother <https://www.wikidata.org/wiki/Q75346219> .
   # oo 1782-12-20 Sir George Thomas, 3rd Baronet, of Yapton, 1740~ - 1815-05-06, https://www.wikidata.org/wiki/Q7526936
 <#Lady_Elizabeth_Montague-Dunk>
   gen:name "Lady Elizabeth Montagu"@en ;
@@ -1014,15 +1016,15 @@
   gen:deathDate "1827-10-04" ;
   gen:father <https://www.wikidata.org/wiki/Q793580> ;
   gen:mother <https://www.wikidata.org/wiki/Q47622984> .
-<#Georgiana_Montagu>
+<https://www.wikidata.org/wiki/Q75346273>
   # Georgiana Montagu, 1786~ - 1854-11-14
   gen:father <https://www.wikidata.org/wiki/Q5542575> ;
-  gen:mother <#Charlotte_Wroughton> .
+  gen:mother <https://www.wikidata.org/wiki/Q75346215> .
   # oo 1808-08-15 Sir John Gore, 1772-02-09 - 1836-08-21, https://www.wikidata.org/wiki/Q4143362
 <#John_William_Montagu>
   # John William Montagu, 1790-01-18 - 1882-12-12
   gen:father <https://www.wikidata.org/wiki/Q5542575> ;
-  gen:mother <#Charlotte_Wroughton> .
+  gen:mother <https://www.wikidata.org/wiki/Q75346215> .
   # oo Isabella Elizabeth Beauclerk, 1808-10-30 - 1864-07-21
   []
     gen:spouse <#John_William_Montagu> , <beauclerk.ttl#Isabella_Elizabeth_Beauclerk> ;
@@ -1507,6 +1509,19 @@
     gen:spouse <#Francis_Frederick_North> , <#Elizabeth_Whitear> ;
 	gen:startDate "1799-03-05" .
 
+<https://www.wikidata.org/wiki/Q5542932>
+  # George Augustus North, 3rd Earl of Guilford, 1757-09-11 - 1802-04-20
+  gen:father <https://www.wikidata.org/wiki/Q312593> ;
+  gen:mother <https://www.wikidata.org/wiki/Q17453130> .
+  # oo Lady Maria Frances Mary Hobart, 1762~ - 1794-04-23 (bertie.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5542932> , <https://www.wikidata.org/wiki/Q16753016> ;
+	gen:startDate "1785-09-30" .
+<https://www.wikidata.org/wiki/Q75272966>
+  # Lady Anne North, d. 1832-01-18
+  gen:father <https://www.wikidata.org/wiki/Q312593> ;
+  gen:mother <https://www.wikidata.org/wiki/Q17453130> .
+  # oo 1798-01-20 John Baker-Holroyd, 1st Earl of Sheffield, 1735-12-21 - 1821-05-30, https://www.wikidata.org/wiki/Q6220354 (stanley.ttl)
 <https://www.wikidata.org/wiki/Q75262564>
   # Lady Charlotte North, d. 1849-10-25
   gen:father <https://www.wikidata.org/wiki/Q312593> ;
@@ -1531,6 +1546,11 @@
     gen:spouse <#Frederick_North> , <egerton.ttl#Janet_Marjoribanks> ;
 	gen:startDate "1825-06-16" .
 
+<https://www.wikidata.org/wiki/Q75266996>
+  # Lady Maria North, 1793-12-26 - 1841-09-11
+  gen:father <https://www.wikidata.org/wiki/Q5542932> ;
+  gen:mother <https://www.wikidata.org/wiki/Q16753016> .
+  # oo 1818-07-29 John Crichton-Stuart, 2nd Marquess of the County of Bute, 1793-08-10 – 1848-03-18, https://www.wikidata.org/wiki/Q284238
 <https://www.wikidata.org/wiki/Q75257972>
   # Charles North, 1828-03-25 - 1906-05-10
   gen:father <#Frederick_North> ;
@@ -1782,16 +1802,6 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q3378985> , <#Lady_Jemima_Montagu> ;
 	gen:startDate "1665-07-29~" .
-
-# ----
-<https://www.wikidata.org/wiki/Q294651>
-  # John Stuart, 3rd Earl of Bute, 1713-05-25 - 1792-03-10
-  gen:father <https://www.wikidata.org/wiki/Q245654> ;
-  gen:mother <campbell.ttl#Lady_Anne_Campbell_(died_1736)> .
-  # oo Mary Wortley-Montagu, Baroness Mount Stuart of Wortley, 1718-02 - 1794-11-06
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q294651> , <https://www.wikidata.org/wiki/Q245833> ;
-	gen:startDate "1736-08-13" .
 
 # ----
 #<https://www.wikidata.org/wiki/Q6774525>
@@ -2219,18 +2229,77 @@
 	gen:startDate "1782-12-20" .
 
 # ----
-#<https://www.wikidata.org/wiki/Q4143362>
+<https://www.wikidata.org/wiki/Q75261282>
+  # Gerard Gore, Alderman of London, 1516~ - 1607-12-11
+  gen:father <https://www.wikidata.org/wiki/Q75261287> . # John Gore, Esq.
+  # oo Helen Davenant, 1518~ - 1608-02-13
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75261282> , <https://www.wikidata.org/wiki/Q75261292> .
+
+<#Ralph_Gore_(died_1637)>
+  # Ralph Gore, of Southall, 1566~ - 1637-09
+  gen:father <https://www.wikidata.org/wiki/Q75261282> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75261292> .
+  # oo Agnes Young
+
+<https://www.wikidata.org/wiki/Q75261328>
+  # Sir John Gore, of Sacombe, d. 1697
+  gen:father <#Ralph_Gore_(died_1637)> .
+  # and Agnes Young
+  # oo Catherine Botiler
+
+<#Ralph_Gore_(died_1721)>
+  # Ralph Gore, 1653 - 1721
+  gen:father <https://www.wikidata.org/wiki/Q75261328> .
+  # and Catherine Botiler
+  # oo Hannah Gore, daughter of William Gore, of Magherabegg, 3rd Baronet and Hannah Gore
+
+<#William_Gore>
+  # William Gore, 1692~ - 1748-02-18
+  gen:father <#Ralph_Gore_(died_1721)> .
+  # and Hannah Gore
+  # oo Dorothy Manly, b. 1694~
+  []
+    gen:spouse <#William_Gore> , <#Dorothy_Manly> .
+<https://www.wikidata.org/wiki/Q75531300>
+  # Ralph Gore, of Barrowmount, d. 1778
+  gen:father <#Ralph_Gore_(died_1721)> .
+  # and Hannah Gore
+  # oo Elizabeth Gorges
+
+<#John_Gore>
+  # John Gore, 1724 - 1794-03-05
+  gen:father <#William_Gore> ;
+  gen:mother <#Dorothy_Manly> .
+  # oo Bellamira Munbee, 1725 - 1791, daughter of Valentine Munbee and Bridget Beckford
+  []
+    gen:spouse <#John_Gore> , <#Bellamira_Munbee> .
+
+<https://www.wikidata.org/wiki/Q4143362>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75390778> ;
   # Sir John Gore, 1772-02-09 - 1836-08-21
+  gen:father <#John_Gore> ;
+  gen:mother <#Bellamira_Munbee> .
   # oo Georgiana Montagu, 1786~ - 1854-11-14
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q4143362> , <#Georgiana_Montagu> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q4143362> , <https://www.wikidata.org/wiki/Q75346273> ;
 	gen:startDate "1808-08-15" .
 
+<https://www.wikidata.org/wiki/Q75267153>
+  # Hon. Georgiana Stuart Gore, d. 1877-07-18
+  gen:father <https://www.wikidata.org/wiki/Q4143362> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75346273> .
+  # oo 1839-09-04 Charles Stuart, 1810-03-16 - 1892-09-07, https://www.wikidata.org/wiki/Q19901677
 <https://www.wikidata.org/wiki/Q75381687>
   # Anne Gore, d. 1877-07-23
   gen:father <https://www.wikidata.org/wiki/Q4143362> ;
-  gen:mother <#Georgiana_Montagu> .
+  gen:mother <https://www.wikidata.org/wiki/Q75346273> .
   # oo 1845-10-09 Richard William Penn Curzon-Howe, 1st Earl Howe, 1796-12-11 - 1870-05-12, https://www.wikidata.org/wiki/Q7325015
+# ----
+<https://www.wikidata.org/wiki/Q75261292>
+  # Helen Davenant, 1518~ - 1608-02-13
+  gen:father <https://www.wikidata.org/wiki/Q75261295> . # Ralph Davenant
+  # oo Gerard Gore, Alderman of London, 1516~ - 1607-12-11, https://www.wikidata.org/wiki/Q75261282
 
 # ----
 #<#Thomas_Steele>
