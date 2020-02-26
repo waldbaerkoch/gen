@@ -2,6 +2,7 @@
 @prefix gen: <http://jjkoch.de/gen#> .
 @prefix wdata: <https://www.wikidata.org/wiki/> .
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 #<#Richard_Scott>
   # Richard Scott, 1265 - 1320
@@ -2261,19 +2262,28 @@
   # oo Anna Gibson, daughter of Sir John Gibson of Pentland
 
 <https://www.wikidata.org/wiki/Q7527825>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75964669> ;
   # Sir John Hay of Alderston, 1st Baronet, d. 1706
   # 1st Baronet Hay, of Alderston, East Lothian 1703-02-22
   gen:father <#Thomas_Hay_of_Alderston_and_Hermiston> .
   # and Anna Gibson
   # oo Catherine Suttie, daughter of Sir George Suttie of Balgone, 1st Baronet and Marion Elizabeth Semple
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q7527825> , <#Catherine_Suttie> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q7527825> , <https://www.wikidata.org/wiki/Q75964672> ;
 	gen:startDate "1693-04-27" .
 
+<https://www.wikidata.org/wiki/Q75271323>
+  # Sir Thomas Hay of Alderston, 2nd Baronet, d. 1769-11-26
+  gen:father <https://www.wikidata.org/wiki/Q7527825> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75964672> .
+  # oo Hon. Frances Berkeley, d. 1757-09~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75271323> , <https://www.wikidata.org/wiki/Q58824349> ;
+	gen:startDate "1740-07-31" .
 <#Sir_George_Hay-Makdougall_of_Alderston,_3rd_Baronet>
   # Sir George Hay-Makdougall of Alderston, 3rd Baronet, d. 1777-02-24
   gen:father <https://www.wikidata.org/wiki/Q7527825> ;
-  gen:mother <#Catherine_Suttie> .
+  gen:mother <https://www.wikidata.org/wiki/Q75964672> .
   # oo Barbara Makdougall, daughter of Henry Makdougall, 14th of Makerstoun and Anne Scott
 
 <https://www.wikidata.org/wiki/Q75940562>
