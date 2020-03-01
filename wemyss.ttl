@@ -4,25 +4,39 @@
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
-#<#Sir_David_Wemyss_of_Wemyss_(died_1544)>
+<https://www.wikidata.org/wiki/Q75535673>
+  # Sir David Wemyss of that Ilk, d. 1513-09-09
+  gen:father <https://www.wikidata.org/wiki/Q76297965> ; # Sir John Wemyss of Wemyss
+  gen:mother <https://www.wikidata.org/wiki/Q76297968> . # Christian Abernethy
+  # oo Euphemia Lundie
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75535673> , <https://www.wikidata.org/wiki/Q76297962> .
+  # oo Janet Gray, d. 1539-10
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75535673> , <https://www.wikidata.org/wiki/Q75262380> ;
+	gen:startDate "1512~" .
+
+<https://www.wikidata.org/wiki/Q75252061>
   # Sir David Wemyss of Wemyss, d. 1544-05-27b
+  gen:father <https://www.wikidata.org/wiki/Q75535673> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76297962> .
   # oo Katherine Sinclair
   []
-    gen:spouse <#Sir_David_Wemyss_of_Wemyss_(died_1544)> , <#Katherine_Sinclair> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75252061> , <https://www.wikidata.org/wiki/Q75252063> ;
 	gen:startDate "1512~" .
 
 <#Sir_John_Wemyss_of_Wemyss_(died_1572)>
   # Sir John Wemyss of Wemyss, d. 1572-01-25~
-  gen:father <#Sir_David_Wemyss_of_Wemyss_(died_1544)> ;
-  gen:mother <#Katherine_Sinclair> .
+  gen:father <https://www.wikidata.org/wiki/Q75252061> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75252063> .
   # oo Margaret Otterburn, daughter of Sir Adam Otterburn
   []
     gen:spouse <#Sir_John_Wemyss_of_Wemyss_(died_1572)> , <#Margaret_Otterburn> ;
 	gen:startDate "1534-10-20~" .
 <#James_Wemyss>
   # James Wemyss
-  gen:father <#Sir_David_Wemyss_of_Wemyss_(died_1544)> ;
-  gen:mother <#Katherine_Sinclair> .
+  gen:father <https://www.wikidata.org/wiki/Q75252061> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75252063> .
 
 <#Sir_David_Wemyss_of_Wemyss_(died_1597)>
   # Sir David Wemyss of Wemyss, d. 1597-02-22
@@ -30,7 +44,7 @@
   gen:mother <#Margaret_Otterburn> .
   # oo Cecilia Ruthven, d. 1589-07-08
   []
-    gen:spouse <#Sir_David_Wemyss_of_Wemyss_(died_1597)> , <#Cecilia_Ruthven> ;
+    gen:spouse <#Sir_David_Wemyss_of_Wemyss_(died_1597)> , <douglas.ttl#Cecilia_Ruthven> ;
 	gen:startDate "1556-05-07" .
 <https://www.wikidata.org/wiki/Q75266888>
   # Eupheme Wemyss, d. 1593-11-16
@@ -45,7 +59,7 @@
 <https://www.wikidata.org/wiki/Q75252069>
   # Sir John Wemyss of Wemyss, d. 1622-06b
   gen:father <#Sir_David_Wemyss_of_Wemyss_(died_1597)> ;
-  gen:mother <#Cecilia_Ruthven> .
+  gen:mother <douglas.ttl#Cecilia_Ruthven> .
   # oo Mary Stewart
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75252069> , <https://www.wikidata.org/wiki/Q75252071> ;
@@ -53,7 +67,7 @@
 <#Sir_James_Wemyss_of_Bogie>
   # Sir James Wemyss of Bogie, 1560 - 1640
   gen:father <#Sir_David_Wemyss_of_Wemyss_(died_1597)> ;
-  gen:mother <#Cecilia_Ruthven> .
+  gen:mother <douglas.ttl#Cecilia_Ruthven> .
   # oo Margaret Melville, d. 1598, daughter of John Melville, 5th of Raith and Isobel Lundie
   []
     gen:spouse <#Sir_James_Wemyss_of_Bogie> , <#Margaret_Melville> ;
@@ -65,7 +79,7 @@
 <#David_Wemyss_of_Fingask>
   # David Wemyss of Fingask
   gen:father <#Sir_David_Wemyss_of_Wemyss_(died_1597)> ;
-  gen:mother <#Cecilia_Ruthven> .
+  gen:mother <douglas.ttl#Cecilia_Ruthven> .
 <#Sir_James_Wemyss_(died_1666)>
   # Sir James Wemyss, d. 1666
   gen:father <#James_Wemyss_(died_1608b)> .
@@ -80,9 +94,9 @@
   # 1st Earl of Wemyss 1633
   gen:father <https://www.wikidata.org/wiki/Q75252069> ;
   gen:mother <https://www.wikidata.org/wiki/Q75252071> .
-  # oo Jane Gray
+  # oo Jane Gray, 1589~ - 1639-08-17
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q4470154> , <#Jane_Gray> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q4470154> , <https://www.wikidata.org/wiki/Q75250178> ;
 	gen:startDate "1609-09~" .
 <#Isabel_Wemyss>
   # Isabel Wemyss, d. 1636
@@ -112,13 +126,13 @@
 <https://www.wikidata.org/wiki/Q76027117>
   # Lady Anne Wemyss, d. 1643-09-20
   gen:father <https://www.wikidata.org/wiki/Q4470154> ;
-  gen:mother <#Jane_Gray> .
+  gen:mother <https://www.wikidata.org/wiki/Q75250178> .
   # oo 1631-12-30a Alexander Lindsay of Edzell, younger, d. 1638-01-07, https://www.wikidata.org/wiki/Q75262545
   # oo 1639-10-18~ Mungo Murray, 2nd Viscount of Stormont, 1580 - 1642-03-11b, https://www.wikidata.org/wiki/Q75437317
 <https://www.wikidata.org/wiki/Q5240961>
   # David Wemyss, 2nd Earl of Wemyss, 1610-09-06 - 1679-07
   gen:father <https://www.wikidata.org/wiki/Q4470154> ;
-  gen:mother <#Jane_Gray> .
+  gen:mother <https://www.wikidata.org/wiki/Q75250178> .
   # oo Hon. Anna Balfour, d. 1649-11-10
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5240961> , <leslie.ttl#Anna_Balfour> ;
@@ -134,7 +148,7 @@
 <#Elizabeth_Wemyss>
   # Elizabeth Wemyss, 1610~ - 1634~
   gen:father <https://www.wikidata.org/wiki/Q4470154> ;
-  gen:mother <#Jane_Gray> .
+  gen:mother <https://www.wikidata.org/wiki/Q75250178> .
   # oo Sir John Aytoun, of that Ilk, 1590~ - 1678, #Sir_John_Aytoun,_of_that_Ilk
 <#Lady_Catherine_Wemyss>
   # Lady Catherine Wemyss, d. 1668-02-24
@@ -729,11 +743,11 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75426806> , <https://www.wikidata.org/wiki/Q75532227> ;
 	gen:startDate "1524-04-17a" .
-<#Katherine_Sinclair>
+<https://www.wikidata.org/wiki/Q75252063>
   # Katherine Sinclair
   gen:father <https://www.wikidata.org/wiki/Q75389596> ;
   gen:mother <https://www.wikidata.org/wiki/Q75242707> .
-  # oo 1512~ Sir David Wemyss of Wemyss, d. 1544-05-27b, #Sir_David_Wemyss_of_Wemyss_(died_1544)
+  # oo 1512~ Sir David Wemyss of Wemyss, d. 1544-05-27b, https://www.wikidata.org/wiki/Q75252061
 <https://www.wikidata.org/wiki/Q75262455>
   # Jean Sinclair, d. 1546a/1562b
   gen:father <https://www.wikidata.org/wiki/Q75389596> ;
@@ -748,26 +762,6 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75426807> , <https://www.wikidata.org/wiki/Q75532232> ;
 	gen:startDate "1547-06~" .
-
-# ----
-#<https://www.wikidata.org/wiki/Q8017874>
-  # William Ruthven, 2nd Lord Ruthven, 1510~ - 1552-10-29b
-  # oo Janet Halyburton, 5th Lady Dirletoun, daughter of Patrick Halyburton, 4th Lord Dirletoun and Margaret Douglas
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q8017874> , <https://www.wikidata.org/wiki/Q61467394> .
-
-<#Cecilia_Ruthven>
-  # Cecilia Ruthven, d. 1589-07-08
-  gen:father <https://www.wikidata.org/wiki/Q8017874> ;
-  gen:mother <https://www.wikidata.org/wiki/Q61467394> .
-  # oo 1556-05-07 Sir David Wemyss of Wemyss, d. 1597-02-22, #Sir_David_Wemyss_of_Wemyss_(died_1597)
-
-# ----
-<#Jane_Gray>
-  # Jane Gray
-  gen:father <https://www.wikidata.org/wiki/Q7146600> ;
-  gen:mother <stuart.ttl#Lady_Mary_Stewart_of_Orkney> .
-  # oo 1609-09~ John Wemyss, 1st Earl of Wemyss, 1586 - 1649-11-22, https://www.wikidata.org/wiki/Q4470154
 
 # ----
 <#John_Fleming,_2nd_Earl_of_Wigton>
