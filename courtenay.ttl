@@ -385,19 +385,14 @@
     gen:spouse <https://www.wikidata.org/wiki/Q7528475> , <https://www.wikidata.org/wiki/Q75248362> ;
 	gen:startDate "1426~" .
 
-<https://www.wikidata.org/wiki/Q25910260>
-  # Sir Philip Courtenay, of Molland, 1403~ - 1489
+<https://www.wikidata.org/wiki/Q25910260> # -> Courtenay of Molland
+  # Sir Philip Courtenay, of Molland, 1403~/1430 - 1489
   gen:father <https://www.wikidata.org/wiki/Q7528475> ;
   gen:mother <https://www.wikidata.org/wiki/Q75248362> .
-  # oo Elizabeth Hingeston, daughter of Robert Hingeston
-<https://www.wikidata.org/wiki/Q75248122>
+<https://www.wikidata.org/wiki/Q75248122> # -> Courtenay of Powderham
   # Sir William Courtenay, of Powderham, 1428~ – 1485-09
   gen:father <https://www.wikidata.org/wiki/Q7528475> ;
   gen:mother <https://www.wikidata.org/wiki/Q75248362> .
-  # oo Margaret Bonville, 1425~ - 1487-07b (grey.ttl)
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q75248122> , <https://www.wikidata.org/wiki/Q75248275> ;
-	gen:startDate "1450~" .
 <https://www.wikidata.org/wiki/Q7173413>
   # Peter Courtenay, 1432~ – 1492-09-23
   # Dean of Exeter 1476-10 –1477-03
@@ -425,11 +420,164 @@
   # oo Thomas Rogers, 1435 - 1489
   # oo Sir William Huddesfield, d. 1499, https://www.wikidata.org/wiki/Q20811018
 
+<#Richard_Courtenay_(born_1460)>
+  # Richard Courtenay, b. 1460
+  gen:father <https://www.wikidata.org/wiki/Q75248379> .
+  # and Jane Devioke
+
+<#John_Courtenay_(died_1560~)>
+  # John Courtenay, 1520~ - 1560~
+  gen:father <#Richard_Courtenay_(born_1460)> .
+
+<#Richard_Courtenay_(died_1632~)>
+  # Richard Courtenay, 1553~ - 1632~
+  gen:father <#John_Courtenay_(died_1560~)> .
+  # oo Thomasine Kendall, b. 1556~, daughter of Nicholas Kendall and Loveday Kellow
+
+<#William_Courtenay>
+  # William Courtenay, b. 1583~
+  gen:father <#Richard_Courtenay_(died_1632~)> .
+  # and Thomasine Kendall
+  # oo Jane Basset, b. 1580~
+  []
+    gen:spouse <#William_Courtenay> , <#Jane_Basset> ;
+	gen:startDate "1613-07-22" .
+
+<#Richard_Courtenay_(died_1660)>
+  # Richard Courtenay, 1614~ - 1660-07-19
+  gen:father <#William_Courtenay> ;
+  gen:mother <#Jane_Basset> .
+  # oo Philippa Prouz, d. 1674
+  []
+    gen:spouse <#Richard_Courtenay_(died_1660)> , <#Philippa_Prouz> ;
+	gen:startDate "1637-06-06" .
+
+<#Humphrey_Courtenay>
+  # Humphrey Courtenay, 1641 - 1696
+  gen:father <#Richard_Courtenay_(died_1660)> ;
+  gen:mother <#Philippa_Prouz> .
+  # oo Alice Courtenay, 1641~ - 1684
+  []
+    gen:spouse <#Humphrey_Courtenay> , <#Alice_Courtenay> ;
+	gen:startDate "1666-12-27" .
+
+<https://www.wikidata.org/wiki/Q76328949>
+  # William Courtenay, 1678~ - 1716-04-08b
+  gen:father <#Humphrey_Courtenay> ;
+  gen:mother <#Alice_Courtenay> .
+  # oo Susanna Kelland, 1676~ - 1716, daughter of John Kelland and Fownes
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76328949> , <#Susanna_Kelland> ;
+	gen:startDate "1704-06-17" .
+
+<https://www.wikidata.org/wiki/Q27573194>
+  # Kelland Courtenay, 1707~ - 1747-03-04
+  gen:father <https://www.wikidata.org/wiki/Q76328949> ;
+  gen:mother <#Susanna_Kelland> .
+  # oo Hon. Elizabeth Montagu, d. 1672-12-11
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q27573194> , <https://www.wikidata.org/wiki/Q75588369> ;
+	gen:startDate "1737-09-06" .
+
+<https://www.wikidata.org/wiki/Q48781239>
+  # Isabella Courtenay, 1740 - 1805-04-22
+  gen:father <https://www.wikidata.org/wiki/Q27573194> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75588369> .
+  # oo 1762-04-22 William Poyntz, 1734-04 - 1809-05-13, https://www.wikidata.org/wiki/Q48780590
+<https://www.wikidata.org/wiki/Q75271619>
+  # Anne Courtenay, 1742 - 1785-12-11
+  gen:father <https://www.wikidata.org/wiki/Q27573194> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75588369> .
+  # oo 1764-08-31 (div 1782) Edmund Boyle, 7th Earl of Cork, 1742-11-21 - 1796-05-30, https://www.wikidata.org/wiki/Q2849925
+
+
+
+# Courtenay of Molland
+<https://www.wikidata.org/wiki/Q25910260>
+  # Sir Philip Courtenay, of Molland, 1403~/1430 - 1489
+  gen:father <https://www.wikidata.org/wiki/Q7528475> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75248362> .
+  # oo Elizabeth de Wonwell, 1438 - 1482, daughter of Sir John de Wonwell
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q25910260> , <#Elizabeth_de_Wonwell> ;
+	gen:startDate "1459" .
+
+<#John_Courtenay_(died_1510)>
+  # John Courtenay, of Molland, 1466~ - 1510-03-27
+  gen:father <https://www.wikidata.org/wiki/Q25910260> ;
+  gen:mother <#Elizabeth_de_Wonwell> .
 <#Elizabeth_Courtenay_(died_1509b)>
   # Elizabeth Courtenay, d. 1509b
-  gen:father <https://www.wikidata.org/wiki/Q25910260> .
-  # and Elizabeth Hingeston
+  gen:father <https://www.wikidata.org/wiki/Q25910260> ;
+  gen:mother <#Elizabeth_de_Wonwell> .
   # oo Edward Courtenay, 1st Earl of Devon, d. 1509-05-28, https://www.wikidata.org/wiki/Q5342427
+
+<#Philip_Courtenay_(died_1548)>
+  # Philip Courtenay II, of Molland, 1493 - 1548
+  gen:father <#John_Courtenay_(died_1510)> .
+  # oo Alice Mathew, 1500~ - 1536a, daughter of Edmond Matthew and Cicily Reynell
+  []
+    gen:spouse <#Philip_Courtenay_(died_1548)> , <#Alice_Mathew> ;
+	gen:startDate "1514" .
+
+<#Robert_Courtenay_(died_1583)>
+  # Robert Courtenay, d. 1583
+  gen:father <#Philip_Courtenay_(died_1548)> ;
+  gen:mother <#Alice_Mathew> .
+  # oo Dorothy Pollard, 1526~ - 1560, daughter of Hugh Pollard and Dorothy Carew
+
+<#Philip_Courtenay_(died_1611)>
+  # Philip Courtenay, 1547~ - 1611
+  gen:father <#Robert_Courtenay_(died_1583)> .
+  # and Dorothy Pollard
+  # oo Joane Boyes, d. 1586
+
+<#Charles_Courtenay_(died_1612)>
+  # Charles Courtenay, d. 1612
+  gen:father <#Philip_Courtenay_(died_1611)> .
+  # and Joane Boyes
+  # oo Ann Coles, d. 1627
+
+<#John_Courtenay_(died_1661)>
+  # John Courtenay, d. 1661
+  gen:father <#Charles_Courtenay_(died_1612)> .
+  # and Ann Coles
+  # oo Margaret Wyndham, d. 1684
+  []
+    gen:spouse <#John_Courtenay_(died_1661)> , <stanley.ttl#Margaret_Wyndham> .
+
+<#John_Courtenay_(died_1684)>
+  # John Courtenay of Molland, III, 1630 - 1684-04-24
+  gen:father <#John_Courtenay_(died_1661)> ;
+  gen:mother <stanley.ttl#Margaret_Wyndham> .
+  # oo Mary Stucley
+
+<#John_Courtenay_(died_1724)>
+  # John Courtenay Of Molland, IV, 1659-09-23 - 1724-09-14
+  gen:father <#John_Courtenay_(died_1684)> .
+  # and Mary Stucley
+  # oo Amy Clifford, 1661 - 1693
+  []
+    gen:spouse <#John_Courtenay_(died_1724)> , <clifford.ttl#Amy_Clifford> ;
+	gen:startDate "1681-10" .
+
+<#Elizabeth_Courtenay_(died_1766)>
+  # Elizabeth Courtenay, 1693-11-26b - 1766-10-16
+  gen:father <#John_Courtenay_(died_1724)> ;
+  gen:mother <clifford.ttl#Amy_Clifford> .
+  # oo John Chichester, 1707 – 1783-07-31, courtenay.ttl#John_Chichester_(died_1783)
+
+
+# Courtenay of Powderham
+<https://www.wikidata.org/wiki/Q75248122>
+  # Sir William Courtenay, of Powderham, 1428~ – 1485-09
+  gen:father <https://www.wikidata.org/wiki/Q7528475> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75248362> .
+  # oo Margaret Bonville, 1425~ - 1487-07b (grey.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75248122> , <https://www.wikidata.org/wiki/Q75248275> ;
+	gen:startDate "1450~" .
+
 <https://www.wikidata.org/wiki/Q8007177>
   owl:sameAs <https://www.wikidata.org/wiki/Q75248120> ;
   # Sir William Courtenay, of Powderham, 1451 – 1512
@@ -447,10 +595,6 @@
   []
     gen:spouse <#Edward_Courtenay_(died_1509)> , <#Alice_Wotton> ;
 	gen:startDate "1493~" .
-<#Richard_Courtenay_(born_1460)>
-  # Richard Courtenay, b. 1460
-  gen:father <https://www.wikidata.org/wiki/Q75248379> .
-  # and oo Jane Devioke
 
 <https://www.wikidata.org/wiki/Q8007172>
   # Sir William Courtenay, of Powderham, 1477 – 1535-11-24
@@ -472,9 +616,6 @@
   []
     gen:spouse <#Edward_Courtenay_(died_1540)> , <#Margaret_Trethurffe> ;
 	gen:startDate "1529-11" .
-<#John_Courtenay>
-  # John Courtenay, 1520~ - 1560~
-  gen:father <#Richard_Courtenay_(born_1460)> .
 
 <#George_Courtenay>
   # George Courtenay, d. 1533
@@ -499,10 +640,6 @@
   []
     gen:spouse <#Peter_Courtenay_(died_1606)> , <#Katherine_Reskimer> ;
 	gen:startDate "1564~" .
-<#Richard_Courtenay_(died_1632~)>
-  # Richard Courtenay, 1553~ - 1632~
-  gen:father <#John_Courtenay> .
-  # oo Thomasine Kendall, b. 1556~, daughter of Nicholas Kendall and Loveday Kellow
 
 <https://www.wikidata.org/wiki/Q8007173>
   # Sir William Courtenay, of Powderham, 1529~ – 1557-09-29
@@ -521,14 +658,6 @@
   []
     gen:spouse <#Edward_Courtenay_(died_1622)> , <#Elizabeth_Gorges> ;
 	gen:startDate "1614-08-01" .
-<#William_Courtenay>
-  # William Courtenay, b. 1583~
-  gen:father <#Richard_Courtenay_(died_1632~)> .
-  # and Thomasine Kendall
-  # oo Jane Basset, b. 1580~
-  []
-    gen:spouse <#William_Courtenay> , <#Jane_Basset> ;
-	gen:startDate "1613-07-22" .
 
 <https://www.wikidata.org/wiki/Q8007174>
   # Sir William Courtenay, of Powderham, 1553 – 1630-06-24
@@ -537,7 +666,7 @@
   gen:mother <https://www.wikidata.org/wiki/Q16845045> .
   # oo Lady Elizabeth Manners, 1553~ – 1590~
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q8007174> , <manners.ttl#Lady_Elizabeth_Manners_(died_1590~)> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q8007174> , <manners.ttlmanners.ttl#Lady_Elizabeth_Manners_(died_1590~)> ;
 	gen:startDate "1573-01-18" .
   # oo Elizabeth Sydenham, 1562 - 1598-06-09 (poyntz.ttl)
   []
@@ -551,20 +680,12 @@
   []
     gen:spouse <#Peter_Courtenay_(died_1670)> , <#Alice_Rashleigh> ;
 	gen:startDate "1638-12-27" .
-<#Richard_Courtenay_(died_1660)>
-  # Richard Courtenay, 1614~ - 1660-07-19
-  gen:father <#William_Courtenay> ;
-  gen:mother <#Jane_Basset> .
-  # oo Philippa Prouz, d. 1674
-  []
-    gen:spouse <#Richard_Courtenay_(died_1660)> , <#Philippa_Prouz> ;
-	gen:startDate "1637-06-06" .
 
 <https://www.wikidata.org/wiki/Q5480628>
   # Francis Courtenay, of Powderham, 1576~ - 1638-06-03
   # de jure 4th Earl of Devon
   gen:father <https://www.wikidata.org/wiki/Q8007174> ;
-  gen:mother <#Lady_Elizabeth_Manners_(died_1590~)> .
+  gen:mother <manners.ttl#Lady_Elizabeth_Manners_(died_1590~)> .
   # oo Mary Pole, b. 1586-06-26
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5480628> , <#Mary_Pole> ;
@@ -572,16 +693,16 @@
   # oo Elizabeth Seymour, d. 1669-09-03
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5480628> , <seymour.ttl#Elizabeth_Seymour_(died_1669)> .
-<#Elizabeth_Courtenay_2>
+<https://www.wikidata.org/wiki/Q75618674>
   # Elizabeth Courtenay
   gen:father <https://www.wikidata.org/wiki/Q8007174> ;
-  gen:mother <#Lady_Elizabeth_Manners_(died_1590~)> .
-  # oo 1600 Sir William Wrey, 1st Baronet, d. 1636-06, 1st Baronet Wrey, of Trebitch, co. Cornwall 1628-06-20, https://www.wikidata.org/wiki/Q16863863, son of https://www.wikidata.org/wiki/Q16863536 and Blanche Killigrew
+  gen:mother <manners.ttl#Lady_Elizabeth_Manners_(died_1590~)> .
+  # oo 1600 Sir William Wrey, 1st Baronet, d. 1636-06, https://www.wikidata.org/wiki/Q16863863
 <#Sir_George_Courtenay,_1st_Baronet>
   # Sir George Oughtred Courtenay, 1st Baronet, b. 1580a/1585b - 1644
   # 1st Baronet Courtenay, of Newcastle, co. Limerick 1622-01
   gen:father <https://www.wikidata.org/wiki/Q8007174> ;
-  gen:mother <#Lady_Elizabeth_Manners_(died_1590~)> .
+  gen:mother <manners.ttl#Lady_Elizabeth_Manners_(died_1590~)> .
   # oo Catherine Berkeley, daughter of Francis Berkeley
   []
     gen:spouse <#Sir_George_Courtenay,_1st_Baronet> , <#Catherine_Berkeley> ;
@@ -591,14 +712,6 @@
   gen:father <#Peter_Courtenay_(died_1670)> ;
   gen:mother <#Alice_Rashleigh> .
   # oo 1666-12-27 Humphrey Courtenay, 1641 - 1696, #Humphrey_Courtenay
-<#Humphrey_Courtenay>
-  # Humphrey Courtenay, 1641 - 1696
-  gen:father <#Richard_Courtenay_(died_1660)> ;
-  gen:mother <#Philippa_Prouz> .
-  # oo Alice Courtenay, 1641~ - 1684
-  []
-    gen:spouse <#Humphrey_Courtenay> , <#Alice_Courtenay> ;
-	gen:startDate "1666-12-27" .
 
 <https://www.wikidata.org/wiki/Q7529544>
   # Sir William Courtenay, 1st Baronet, 1628-09-07 - 1702-08-04
@@ -612,14 +725,6 @@
   # Sir William Courtenay, 2nd Baronet, 1616~ - 1651~
   gen:father <#Sir_George_Courtenay,_1st_Baronet> ;
   gen:mother <#Catherine_Berkeley> .
-<https://www.wikidata.org/wiki/Q76328949>
-  # William Courtenay, 1678~ - 1716-04-08b
-  gen:father <#Humphrey_Courtenay> ;
-  gen:mother <#Alice_Courtenay> .
-  # oo Susanna Kelland, 1676~ - 1716, daughter of John Kelland and Fownes
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q76328949> , <#Susanna_Kelland> ;
-	gen:startDate "1704-06-17" .
 
 <https://www.wikidata.org/wiki/Q16828253>
   # Francis Courtenay, 1652-02-27b – 1699-05-12
@@ -641,14 +746,6 @@
   gen:father <https://www.wikidata.org/wiki/Q7529544> ;
   gen:mother <dacre.ttl#Margaret_Waller> .
   # oo 1690 Sir Thomas Lear, 2nd Baronet, of Lindridge, 1672~ - 1705-12, https://www.wikidata.org/wiki/Q40850156
-<https://www.wikidata.org/wiki/Q27573194>
-  # Kelland Courtenay, 1707~ - 1747-03-04
-  gen:father <https://www.wikidata.org/wiki/Q76328949> ;
-  gen:mother <#Susanna_Kelland> .
-  # oo Hon. Elizabeth Montagu, d. 1672-12-11
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q27573194> , <https://www.wikidata.org/wiki/Q75588369> ;
-	gen:startDate "1737-09-06" .
 
 <https://www.wikidata.org/wiki/Q7529547>
   gen:name "Sir William Courtenay, 2nd Baronet"@en ;
@@ -660,16 +757,6 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7529547> , <bertie.ttl#Lady_Anne_Bertie> ;
 	gen:startDate "1704-07-20" .
-<https://www.wikidata.org/wiki/Q48781239>
-  # Isabella Courtenay, 1740 - 1805-04-22
-  gen:father <https://www.wikidata.org/wiki/Q27573194> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75588369> .
-  # oo 1762-04-22 William Poyntz, 1734-04 - 1809-05-13, https://www.wikidata.org/wiki/Q48780590
-<https://www.wikidata.org/wiki/Q75271619>
-  # Anne Courtenay, 1742 - 1785-12-11
-  gen:father <https://www.wikidata.org/wiki/Q27573194> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75588369> .
-  # oo 1764-08-31 (div 1782) Edmund Boyle, 7th Earl of Cork, 1742-11-21 - 1796-05-30, https://www.wikidata.org/wiki/Q2849925
 
 <https://www.wikidata.org/wiki/Q8007169>
   # William Courtenay, 1st Viscount Courtenay, 1709-02-11 – 1762-05-16
@@ -1536,6 +1623,26 @@
   gen:father <https://www.wikidata.org/wiki/Q8016979> .
   # and Mary Periam
   # oo 1606-11-07 Francis Courtenay, of Powderham, 1576~ - 1638-06-03, https://www.wikidata.org/wiki/Q5480628
+
+# ----
+<https://www.wikidata.org/wiki/Q16863863>
+  # Sir William Wrey, 1st Baronet, d. 1636-06
+  # 1st Baronet Wrey, of Trebitch, co. Cornwall 1628-06-20
+  gen:father <https://www.wikidata.org/wiki/Q16863536> .
+  # and Blanche Killigrew
+  # oo Elizabeth Courtenay
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16863863> , <https://www.wikidata.org/wiki/Q75618674> ;
+	gen:startDate "1600" .
+
+<https://www.wikidata.org/wiki/Q16863865>
+  # Sir William Wrey, 2nd Baronet, d. 1645-08
+  gen:father <https://www.wikidata.org/wiki/Q16863863> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75618674> .
+  # oo Elizabeth Chichester
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16863865> , <https://www.wikidata.org/wiki/Q76220118> ;
+	gen:startDate "1624-10-06" .
 
 # ----
 #<https://www.wikidata.org/wiki/Q40850156>

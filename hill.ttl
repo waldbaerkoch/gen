@@ -2,7 +2,7 @@
 @prefix gen: <http://jjkoch.de/gen#> .
 @prefix wdata: <https://www.wikidata.org/wiki/> .
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
-
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 #<https://www.wikidata.org/wiki/Q75256221>
   # Sir Moyses Hill, d. 1630-02
@@ -1084,6 +1084,11 @@
     gen:spouse <https://www.wikidata.org/wiki/Q75270679> , <https://www.wikidata.org/wiki/Q75270680> ;
 	gen:startDate "1801-09-12" .
 
+<https://www.wikidata.org/wiki/Q75563976>
+  # Hon. Susannah Anne Crofton, 1802~ - 1894-01-10
+  gen:father <https://www.wikidata.org/wiki/Q75270679> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75270680> .
+  # oo 1830-08-17 Francis St. George Caulfeild, 1806-03-08 - 1896-10-28, https://www.wikidata.org/wiki/Q75388697
 <https://www.wikidata.org/wiki/Q5342459>
   # Edward Crofton, 2nd Baron Crofton of Mote, 1806-08-01 - 1869-12-27
   # 4th Baronet Lowther-Crofton, of The Moate, co. Roscommon 1816-01-08
@@ -1092,13 +1097,45 @@
   gen:mother <https://www.wikidata.org/wiki/Q75270680> .
   # oo Lady Georgina Paget, 1800-08-29 - 1875-11-09
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q5342459> , <paget.ttl#Lady_Georgina_Paget> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q5342459> , <https://www.wikidata.org/wiki/Q75302924> ;
 	gen:startDate "1833-10-19" .
 <https://www.wikidata.org/wiki/Q75315818>
   # Hon. Frances Crofton, d. 1881-12-20
   gen:father <https://www.wikidata.org/wiki/Q75270679> ;
   gen:mother <https://www.wikidata.org/wiki/Q75270680> .
-  # oo 1825-03-03 Daniel Bunbury-Tighe, 1796 - 1874-03-26, https://www.wikidata.org/wiki/Q75315816 (ponsonby.ttl)
+  # oo 1825-03-03 Daniel Bunbury-Tighe, 1796 - 1874-03-26, https://www.wikidata.org/wiki/Q75315816
+
+<https://www.wikidata.org/wiki/Q75308552>
+  # Hon. Charles St. George Crofton, 1836-02-01 - 1895-02-02
+  gen:father <https://www.wikidata.org/wiki/Q5342459> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75302924> .
+  # oo Theresa Augusta Bunbury-Tighe
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75308552> , <https://www.wikidata.org/wiki/Q75308553> ;
+	gen:startDate "1864-10-19" .
+
+<https://www.wikidata.org/wiki/Q75375324>
+  # Hon. Theresa Diana Crofton, d. 1923-03-26
+  gen:father <https://www.wikidata.org/wiki/Q75308552> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75308553> .
+  # oo 1912-12-28 Reginald de Blaquiere Chichester, 1862-08-15 - 1923-09-11, https://www.wikidata.org/wiki/Q75619164
+
+# ----
+#<https://www.wikidata.org/wiki/Q75388697>
+  # Francis St. George Caulfeild, 1806-03-08 - 1896-10-28
+  # oo Hon. Susannah Anne Crofton, 1802~ - 1894-01-10
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75388697> , <https://www.wikidata.org/wiki/Q75563976> ;
+	gen:startDate "1830-08-17" .
+
+<https://www.wikidata.org/wiki/Q75385961>
+  # Alfred Henry Caulfeild, 1834-12-29 - 1904-07-14
+  gen:father <https://www.wikidata.org/wiki/Q75388697> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75563976> .
+  # oo Hon. Augusta Chichester, 1831-01-15 - 1873-04-01
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75385961> , <https://www.wikidata.org/wiki/Q75296887> ;
+	gen:startDate "1872-11-14" .
 
 # ----
 #<#Rowley_Hill>
@@ -1138,10 +1175,11 @@
     gen:spouse <https://www.wikidata.org/wiki/Q17318673> , <beresford.ttl#Jane_Beresford_(died_1836)> ;
 	gen:startDate "1788-09-10" .
 
-#<https://www.wikidata.org/wiki/Q75315816>
+# ----
+<https://www.wikidata.org/wiki/Q75315816>
   # Daniel Bunbury-Tighe, 1796 - 1874-03-26
-  # son of William Tighe
-  # oo Hon. Frances Crofton, d. 1881-12-20 (hill.ttl)
+  gen:father <https://www.wikidata.org/wiki/Q75267160> . # William Tighe
+  # oo Hon. Frances Crofton, d. 1881-12-20
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75315816> , <https://www.wikidata.org/wiki/Q75315818> ;
 	gen:startDate "1825-03-03" .
@@ -1159,6 +1197,11 @@
   gen:father <https://www.wikidata.org/wiki/Q75315816> ;
   gen:mother <https://www.wikidata.org/wiki/Q75315818> .
   # oo 1852-08-07 Hon. Frederick Arthur Henry Chichester, 1824-02-22 - 1863-05-18, https://www.wikidata.org/wiki/Q75315814
+<https://www.wikidata.org/wiki/Q75308553>
+  # Theresa Augusta Bunbury-Tighe
+  gen:father <https://www.wikidata.org/wiki/Q75315816> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75315818> .
+  # oo 1864-10-19 Hon. Charles St. George Crofton, 1836-02-01 - 1895-02-02, https://www.wikidata.org/wiki/Q75308552
 
 # ----
 #<#John_Power,_5th_Baron_le_Power>
@@ -1234,18 +1277,28 @@
   gen:mother <#Mary_Clotworthy> .
   # oo 1681-11-29 George St. George, 1st Baron Saint George of Hatley Saint George, 1658~ – 1735-08-04, https://www.wikidata.org/wiki/Q5544759
 <https://www.wikidata.org/wiki/Q38220458>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75255353> ;
   # Clotworthy Skeffington, 3rd Viscount Massereene, 1660~ - 1714-03-14
   gen:father <https://www.wikidata.org/wiki/Q18673977> ;
   gen:mother <#Mary_Clotworthy> .
   # oo Rachael Hungerford, 1662~ - 1732-02-02
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q38220458> , <#Rachael_Hungerford> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q38220458> , <https://www.wikidata.org/wiki/Q75255384> ;
 	gen:startDate "1680-03-07" .
 
+<https://www.wikidata.org/wiki/Q24266247>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75619838> ;
+  # Clotworthy Skeffington, 4th Viscount Massereene, d. 1738-02-11
+  gen:father <https://www.wikidata.org/wiki/Q38220458> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75255384> .
+  # oo Lady Katherine Chichester, 1687-09-09b - 1749-07-01
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q24266247> , <https://www.wikidata.org/wiki/Q75619836> ;
+	gen:startDate "1713-09-08" .
 <#Rachael_Skeffington>
   # Hon. Rachael Skeffington, d. 1739-04-14
   gen:father <https://www.wikidata.org/wiki/Q38220458> ;
-  gen:mother <#Rachael_Hungerford> .
+  gen:mother <https://www.wikidata.org/wiki/Q75255384> .
   # oo Randal MacDonnell, 4th Earl of Antrim, 1680 - 1721-10-19, https://www.wikidata.org/wiki/Q20713850 (manners.ttl)
 # ----
 #<https://www.wikidata.org/wiki/Q6226405>
@@ -1286,12 +1339,17 @@
   gen:father <https://www.wikidata.org/wiki/Q7358417> ;
   gen:mother <wellesley.ttl#Frances_Moore> .
   # oo 1643b John Clotworthy, 1st Viscount Massereene, d. 1665-09-23, https://www.wikidata.org/wiki/Q6226405
+<https://www.wikidata.org/wiki/Q75467649>
+  # Lady Mary Jones, d. 1673-11-03b
+  gen:father <https://www.wikidata.org/wiki/Q7358417> ;
+  gen:mother <wellesley.ttl#Frances_Moore> .
+  # oo Hon. John Chichester, 1609-02-22 - 1648~, https://www.wikidata.org/wiki/Q75467647
 # ----
 #<#Sir_Edward_Hungerford>
   # Sir Edward Hungerford, 1632-10-20 - 1711-07-05~
   # oo Jane Helle, d. 1664-05-18, daughter of Sir John Helle
 
-<#Rachael_Hungerford>
+<https://www.wikidata.org/wiki/Q75255384>
   # Rachael Hungerford, 1662~ - 1732-02-02
   gen:father <#Sir_Edward_Hungerford> .
   # and Jane Helle
