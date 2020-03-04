@@ -442,7 +442,7 @@
   gen:deathDate "1859-10-24" ;
   gen:father <https://www.wikidata.org/wiki/Q5537866> ;
   gen:mother <https://www.wikidata.org/wiki/Q7422868> .
-  # oo Julia Peel, 1821-04-30 - 1893-08-14
+  # oo Julia Peel, 1821-04-30 - 1893-08-14 (cavendish.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5537867> , <https://www.wikidata.org/wiki/Q49600412> ;
 	gen:startDate "1841-07-12" .
@@ -1379,9 +1379,9 @@
   # Sir James Palmer, 1585-01-29 - 1658-03-15
   gen:father <https://www.wikidata.org/wiki/Q7792988> .
   # and Margaret Pooley
-  # oo Lady Catherine Herbert
+  # oo Catherine Herbert
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q18756800> , <herbert.ttl#Katherine_Herbert> .
+    gen:spouse <https://www.wikidata.org/wiki/Q18756800> , <https://www.wikidata.org/wiki/Q75551874> .
 
 <https://www.wikidata.org/wiki/Q3439334>
   gen:name "Roger Palmer, 1st Earl of Castlemaine"@en ;
@@ -1389,10 +1389,23 @@
   gen:birthDate "1634-09-04" ;
   gen:deathDate "1705-07-28" ;
   gen:father <https://www.wikidata.org/wiki/Q18756800> ;
-  gen:mother <herbert.ttl#Katherine_Herbert> .
+  gen:mother <https://www.wikidata.org/wiki/Q75551874> .
   []
     gen:spouse <https://www.wikidata.org/wiki/Q3439334> , <https://www.wikidata.org/wiki/Q235092> ;
 	gen:startDate "1659-04-14" .
+<#James_Palmer>
+  # James Palmer
+  gen:father <https://www.wikidata.org/wiki/Q18756800> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75551874> .
+  # oo Katherine Southcote, daughter of Sir George Southcote, 1st Baronet of Bliborough (d. 1663, 1st Baronet Southcote, of Bliborough 1662-01-24) und Katherine Elliott
+  []
+    gen:spouse <#James_Palmer> , <#Katherine_Southcote> .
+
+<#Katherine_Palmer>
+  # Katherine Palmer, b. 1632
+  gen:father <#James_Palmer> ;
+  gen:mother <#Katherine_Southcote> .
+  # oo Giles Chichester, of Arlington, 1678 - 1723~, chichester.ttl#Giles_Chichester,_of_Arlington
 
 # --------
 #<#Sir_John_FitzGerald>

@@ -2,6 +2,7 @@
 @prefix gen: <http://jjkoch.de/gen#> .
 @prefix wdata: <https://www.wikidata.org/wiki/> .
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 #<#Sir_John_Paulet_(died_1378)>
 # Sir John Paulet, d. 1378
@@ -12,14 +13,15 @@
   gen:father <#Sir_John_Paulet_(died_1378)> .
   # oo Margaret Boulton
 
-<#Sir_William_Paulett>
+<https://www.wikidata.org/wiki/Q75562045>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75619746> ;
   # Sir William Paulett
   gen:father <#Sir_Thomas_Paulett> .
   # oo Elizabeth Denehand
 
 <https://www.wikidata.org/wiki/Q18670717>
   # Sir Amias Paulet, 1457~ - 1538
-  gen:father <#Sir_William_Paulett> .
+  gen:father <https://www.wikidata.org/wiki/Q75562045> .
   # and Elizabeth Denehand
   # oo Margaret Paulet
   []
@@ -29,9 +31,13 @@
     gen:spouse <https://www.wikidata.org/wiki/Q18670717> , <#Laura_Kellaway> .
 <#Alice_Paulett>
   # Alice Paulett
-  gen:father <#Sir_William_Paulett> .
+  gen:father <https://www.wikidata.org/wiki/Q75562045> .
   # and Elizabeth Denehand
   # oo Sir John Paulet, https://www.wikidata.org/wiki/Q18756876
+<https://www.wikidata.org/wiki/Q75619744>
+  # Christina Paulet, 1449 - 1505a
+  gen:father <https://www.wikidata.org/wiki/Q75562045> .
+  # oo Nicholas Chichester, 1447~/1452 – 1496b/1498b/1498-12-25, https://www.wikidata.org/wiki/Q75619676
 
 <https://www.wikidata.org/wiki/Q11801322>
   # Sir Hugh Paulet, 1510b - 1573-12-06
