@@ -2,7 +2,7 @@
 @prefix gen: <http://jjkoch.de/gen#> .
 @prefix wdata: <https://www.wikidata.org/wiki/> .
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
-@prefix wen: <https://en.wikipedia.org/wiki/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 <https://www.wikidata.org/wiki/Q1245756>
   gen:name "William Paget, 1st Lord Paget (of Beaudesert)"@en ;
@@ -689,7 +689,7 @@
   gen:mother <#Henrietta_Maria_Bagot> .
   # oo 1864-07-16 Henry Weysford Charles Plantagenet Rawdon-Hastings, 4th Marquess of Hastings, 1842-07-22 – 1868-11-10, https://www.wikidata.org/wiki/Q5727394
   # oo 1870-06-09 Sir George Chetwynd, 4th Baronet, 1849-05-31 – 1917-03-10, https://www.wikidata.org/wiki/Q16059287
-<#Lord_Berkeley_Charles_Sydney_Paget>
+<https://www.wikidata.org/wiki/Q57915611>
   gen:name "Lord Berkeley Charles Sydney Paget"@en ;
   gen:birthDate "1844-03-05" ;
   gen:deathDate "1913-11-25" ;
@@ -697,7 +697,7 @@
   gen:mother <#Henrietta_Maria_Bagot> .
   # oo Florence Chetwynd, d. 1936-05-26
   []
-    gen:spouse <#Lord_Berkeley_Charles_Sydney_Paget> , <chetwynd.ttl#Florence_Chetwynd> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q57915611> , <https://www.wikidata.org/wiki/Q75284219> ;
 	gen:startDate "1877-06-05" .
 <#Alma_Martha_Paget>
   # Alma Martha Paget, d. 1947-03-07
@@ -893,10 +893,10 @@
   []
     gen:spouse <#Lord_Victor_William_Paget> , <#Mavis_Crockford> ;
 	gen:startDate "1935-10-07" .
-<#Muriel_Helen_Florence_Paget>
+<https://www.wikidata.org/wiki/Q75310923>
   # Muriel Helen Florence Paget, 1878-01-03 - 1941-04-20
-  gen:father <#Lord_Berkeley_Charles_Sydney_Paget> ;
-  gen:mother <chetwynd.ttl#Florence_Chetwynd> .
+  gen:father <https://www.wikidata.org/wiki/Q57915611> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75284219> .
   # oo 1896-12-21 Hon. Rupert Evelyn Beckett, 1870-11-02 - 1955-04-25, https://www.wikidata.org/wiki/Q18527740
 <https://www.wikidata.org/wiki/Q6688893>
   gen:name "Dame Louise Margaret Leila Wemyss Paget"@en ;
@@ -2326,19 +2326,20 @@
 
 # ----
 <https://www.wikidata.org/wiki/Q18954643>
+  owl:sameAs <https://www.wikidata.org/wiki/Q8005295> ;
   # William Beckett-Denison, 1826-09-10 - 1890-11-23
-  gen:father <https://www.wikidata.org/wiki/Q7526465> .
-  # and Maria Beverley
+  gen:father <https://www.wikidata.org/wiki/Q7526465> ; # Sir Edmund Beckett, 4th Baronet
+  gen:mother <https://www.wikidata.org/wiki/Q75955397> . # Maria Beverley
   # oo Hon. Helen Duncombe, d. 1896-11-22
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q18954643> , <dalrymple.ttl#Helen_Duncombe> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q18954643> , <https://www.wikidata.org/wiki/Q75662172> ;
 	gen:startDate "1855-02-17" .
 
 <https://www.wikidata.org/wiki/Q5553468>
   # Sir William Gervase Beckett, 1st Baronet, 1866-01-14 - 1937-08-24
   # 1st Baronet Beckett, of Kirkdale, co. York 1921-06-28
   gen:father <https://www.wikidata.org/wiki/Q18954643> ;
-  gen:mother <dalrymple.ttl#Helen_Duncombe> .
+  gen:mother <https://www.wikidata.org/wiki/Q75662172> .
   # oo Hon. Mabel Theresa Duncombe, 1877-10-16 - 1913-04-02
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5553468> , <dalrymple.ttl#Mabel_Theresa_Duncombe> ;
@@ -2350,10 +2351,10 @@
 <https://www.wikidata.org/wiki/Q18527740>
   # Hon. Rupert Evelyn Beckett, 1870-11-02 - 1955-04-25
   gen:father <https://www.wikidata.org/wiki/Q18954643> ;
-  gen:mother <dalrymple.ttl#Helen_Duncombe> .
+  gen:mother <https://www.wikidata.org/wiki/Q75662172> .
   # oo Muriel Helen Florence Paget, 1878-01-03 - 1941-04-20
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q18527740> , <#Muriel_Helen_Florence_Paget> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q18527740> , <https://www.wikidata.org/wiki/Q75310923> ;
 	gen:startDate "1896-12-21" .
 
 <#Marion_Frances_Theresa_Beckett>
@@ -2366,6 +2367,16 @@
   gen:father <https://www.wikidata.org/wiki/Q5553468> ;
   gen:mother <dalrymple.ttl#Mabel_Theresa_Duncombe> .
   # oo 1923-11-05 (div 1950) Robert Anthony Eden, 1st Earl of Avon, 1897-06-12 - 1977-01-14, https://www.wikidata.org/wiki/Q128995
+<https://www.wikidata.org/wiki/Q75579542>
+  # Marjorie Nell Beckett, d. 1965-02-10
+  gen:father <https://www.wikidata.org/wiki/Q18527740> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75310923> .
+  # oo 1948-12-21 Lord George Hugo Cholmondeley, 1887-10-17 - 1958-08-26, https://www.wikidata.org/wiki/Q75357689
+<https://www.wikidata.org/wiki/Q75338067>
+  # Gwladys Helen Beckett, d. 1943-02-22
+  gen:father <https://www.wikidata.org/wiki/Q18527740> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75310923> .
+  # oo 1928-05-28 Hugh Cholmondeley, 3rd Baron Delamere, 1870-04-28 - 1931-11-13, https://www.wikidata.org/wiki/Q5930315
 
 # ----
 <https://www.wikidata.org/wiki/Q333378>
@@ -2655,7 +2666,7 @@
   gen:mother <#Richenda_Rachel_Collins> .
 <#Camilla_Mary_Paget>
   gen:birthDate "1991-05-05" ;
-  gen:father <wen:Sir_Richard_Herbert_Paget,_4th_Baronet> ;
+  gen:father <#Sir_Richard_Herbert_Paget,_4th_Baronet> ;
   gen:mother <#Richenda_Rachel_Collins> .
 <#Antonia_Paget>
   gen:birthDate "1992-06-10" ;
