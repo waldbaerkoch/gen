@@ -58,10 +58,10 @@
     gen:spouse <#Alexander_Home,_Master_of_Home> , <#Agnes_Hepburn> ;
 	gen:startDate "1448-02-02" .
 <#Katharine_Home>
-  # Katharine Home
+  # Katharine Home, b. 1428
   gen:father <https://www.wikidata.org/wiki/Q4719148> ;
   gen:mother <#Marion_Lauder> .
-  # oo John St. Clair of Herdmandston and Polwarth, d. 1466-12-20b, #John_St._Clair_of_Herdmandston_and_Polwarth
+  # oo John St. Clair of Herdmandston and Polwarth, 1415 - 1466-12-20b, https://www.wikidata.org/wiki/Q76168103 (sinclair.ttl)
 <#Elizabeth_Home_1>
   # Elizabeth Home
   gen:father <https://www.wikidata.org/wiki/Q4719148> ;
@@ -587,17 +587,20 @@
   # oo Elizabeth Carmichael, d. 1495
 
 <#George_Home_of_Wedderburn>
-  # George Home of Wedderburn, d. 1497-05-18
+  # George Home of Wedderburn, 1432 - 1497-05-18
   gen:father <#David_Home_of_Wedderburn,_younger> .
   # and Elizabeth Carmichael
-  # oo Marian St. Clair
+  # oo Marian St. Clair, 1445~ - 1496 (sinclair.ttl)
+  []
+    gen:spouse <#George_Home_of_Wedderburn> , <https://www.wikidata.org/wiki/Q76168104> ;
+	gen:startDate "1470" .
 <#Patrick_Home_(died_1503)>
   # Patrick Home, 1434 - 1503-11
   gen:father <#David_Home_of_Wedderburn,_younger> .
   # and Elizabeth Carmichael
-  # oo Margaret St. Clair, d. 1490
+  # oo Margaret St. Clair, 1435~ - 1490 (sinclair.ttl)
   []
-    gen:spouse <#Patrick_Home_(died_1503)> , <#Margaret_St._Clair> ;
+    gen:spouse <#Patrick_Home_(died_1503)> , <https://www.wikidata.org/wiki/Q76168108> ;
 	gen:startDate "1490b" .
   # oo Helen Shaw
   []
@@ -606,12 +609,13 @@
 
 <#Sir_David_Home,_3rd_of_Wedderburn>
   # Sir David Home, 3rd of Wedderburn, d. 1513-09-09
-  gen:father <#George_Home_of_Wedderburn> .
+  gen:father <#George_Home_of_Wedderburn> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76168104> .
   # oo Isobel Hoppringle, daughter of David Hoppringle of Smailholm
 <https://www.wikidata.org/wiki/Q76307509> # -> Hume of Polwarth
   # Alexander Hume of Polwarth, d. 1532-05
   gen:father <#Patrick_Home_(died_1503)> ;
-  gen:mother <#Margaret_St._Clair> .
+  gen:mother <https://www.wikidata.org/wiki/Q76168108> .
 <#Janet_Home_1>
   # Janet Home
   gen:father <#Patrick_Home_(died_1503)> ;
@@ -1469,7 +1473,7 @@
 <https://www.wikidata.org/wiki/Q76307509>
   # Alexander Hume of Polwarth, d. 1532-05
   gen:father <#Patrick_Home_(died_1503)> ;
-  gen:mother <#Margaret_St._Clair> .
+  gen:mother <https://www.wikidata.org/wiki/Q76168108> .
   # oo Margaret Crichton (stuart.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q76307509> , <https://www.wikidata.org/wiki/Q76307693> ;
@@ -1689,24 +1693,6 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75242687> , <https://www.wikidata.org/wiki/Q6469914> ;
 	gen:startDate "1511-08-28~" .
-
-# ----
-#<#John_St._Clair_of_Herdmandston_and_Polwarth>
-  # John St. Clair of Herdmandston and Polwarth, d. 1466-12-20b
-  # oo Katharine Home
-  []
-    gen:spouse <#John_St._Clair_of_Herdmandston_and_Polwarth> , <#Katharine_Home> .
-
-<#Marian_St._Clair>
-  # Marian St. Clair
-  gen:father <#John_St._Clair_of_Herdmandston_and_Polwarth> ;
-  gen:mother <#Katharine_Home> .
-  # oo George Home of Wedderburn, d. 1497-05-18, #George_Home_of_Wedderburn
-<#Margaret_St._Clair>
-  # Margaret St. Clair, d. 1490
-  gen:father <#John_St._Clair_of_Herdmandston_and_Polwarth> ;
-  gen:mother <#Katharine_Home> .
-  # oo 1490b Patrick Home, 1434 - 1503-11, #Patrick_Home_(died_1503)
 
 # ----
 #<https://www.wikidata.org/wiki/Q5345509>
