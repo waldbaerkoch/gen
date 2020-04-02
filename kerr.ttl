@@ -4,31 +4,45 @@
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
-#<#Andrew_Kerr_of_Altonburn_and_Cessford>
+#<https://www.wikidata.org/wiki/Q75254919>
   # Andrew Kerr of Auldtounburn and Cessford, 1405 - 1481-05-08a
-  # oo (1) ??? Douglas, daughter of douglas.ttl#William_Douglas,_2nd_of_Cavers
+  # oo (1) Isobel Douglas, b. 1425~, daughter of douglas.ttl#William_Douglas,_2nd_of_Cavers and Egidia Stewart
   # oo (2) Margaret Tweedie, daughter of James Tweedie of Drummelzier
 
 <#Walter_Kerr_of_Cessford> # -> Kerr of Cessford
   # Walter Kerr of Cessford, d. 1501-11-25
-  gen:father <#Andrew_Kerr_of_Altonburn_and_Cessford> ;
-  gen:mother <#?_Douglas> .
+  gen:father <https://www.wikidata.org/wiki/Q75254919> ;
+  gen:mother <#Isobel_Douglas> .
 <#Thomas_Kerr,_1st_of_Ferniehirst> # -> Kerr of Ferniehirst
   # Thomas Kerr, 1st of Ferniehirst, d. 1484-06-24
-  gen:father <#Andrew_Kerr_of_Altonburn_and_Cessford> ;
+  gen:father <https://www.wikidata.org/wiki/Q75254919> ;
   gen:mother <#Margaret_Tweedie> .
 <#Margaret_Kerr_(died_1532)>
   # Margaret Kerr, d. 1532-07-09b
-  gen:father <#Andrew_Kerr_of_Altonburn_and_Cessford> ;
+  gen:father <https://www.wikidata.org/wiki/Q75254919> ;
   gen:mother <#Margaret_Tweedie> .
   # oo 1509-05-17~ William Hay, 4th Earl of Erroll, d. 1513-09-09, https://www.wikidata.org/wiki/Q19873053
+
+<https://www.wikidata.org/wiki/Q75389677>
+  # George Ker of Samuelston, b. 1457
+  gen:father <https://www.wikidata.org/wiki/Q75254919> ;
+  gen:mother <#Isobel_Douglas> .
+  # oo Marian St. Clair, 1445~ - 1496
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75389677> , <https://www.wikidata.org/wiki/Q76168104> .
+
+<https://www.wikidata.org/wiki/Q75389676>
+  # Nichole Ker, 1468~ - 1528-01-02b
+  gen:father <https://www.wikidata.org/wiki/Q75389677> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76168104> .
+  # oo 1492-03-22b Alexander Home, 2nd Lord Home, 1468~ – 1506-09-05, https://www.wikidata.org/wiki/Q4719149
 
 
 # Kerr of Cessford
 <#Walter_Kerr_of_Cessford>
   # Walter Kerr of Cessford
   gen:deathDate "1501-11-25" ;
-  gen:father <#Andrew_Kerr_of_Altonburn_and_Cessford> ;
+  gen:father <https://www.wikidata.org/wiki/Q75254919> ;
   gen:mother <#?_Douglas> .
   # oo Isabel Hay
   []
@@ -250,6 +264,11 @@
   gen:father <https://www.wikidata.org/wiki/Q6768368> ;
   gen:mother <#Margaret_Maxwell_(died_1617)> .
   # oo 1598~ Alexander Hamilton of Innerwick, younger, d. 1600~, hamilton.ttl#Alexander_Hamilton,_of_Innerwick,_younger
+<https://www.wikidata.org/wiki/Q76226725>
+  # Lady Mary Kerr
+  gen:father <https://www.wikidata.org/wiki/Q6768368> ;
+  gen:mother <#Margaret_Maxwell_(died_1617)> .
+  # oo Sir James Richardson of Smeaton, https://www.wikidata.org/wiki/Q76168132
 
 <#Lady_Anne_Kerr_(died_1667)>
   gen:name "Lady Anne Kerr"@en ;
@@ -263,7 +282,7 @@
 <#Thomas_Kerr,_1st_of_Ferniehirst>
   # Thomas Kerr, 1st of Ferniehirst
   gen:deathDate "1484-06-24" ;
-  gen:father <#Andrew_Kerr_of_Altonburn_and_Cessford> ;
+  gen:father <https://www.wikidata.org/wiki/Q75254919> ;
   gen:mother <#Margaret_Tweedie> .
   # oo Margaret Ker, daughter of Sir Thomas Ker of Ferniehurst
   []
@@ -2197,3 +2216,14 @@
 	gen:startDate "1609~" .
 
 # ----
+#<https://www.wikidata.org/wiki/Q76168132>
+  # Sir James Richardson of Smeaton
+  # oo Lady Mary Kerr
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76168132> , <https://www.wikidata.org/wiki/Q76226725> .
+
+<https://www.wikidata.org/wiki/Q76168133>
+  # Mary Richardson
+  gen:father <https://www.wikidata.org/wiki/Q76168132> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76226725> .
+  # oo Sir John St. Clair of Hermanstoun, 1583a - 1630, https://www.wikidata.org/wiki/Q76168126
