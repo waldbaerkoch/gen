@@ -4,8 +4,6 @@
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
-# https://www.wikidata.org/wiki/Q19326013
-
 #<https://www.wikidata.org/wiki/Q5930838>
   # Hugh Fraser, 1st Lord (Fraser of) Lovat, d. 1499-11-01a/1501-04-30b
   # son of Hugh Fraser, 8th of Lovat and Janet Dunbar
@@ -28,13 +26,13 @@
   # Hugh Fraser, 3rd Lord (Fraser of) Lovat, 1494 - 1544-07-15
   gen:father <https://www.wikidata.org/wiki/Q41752298> ;
   gen:mother <https://www.wikidata.org/wiki/Q75404339> .
-  # oo Anne Grant, d. 1536b (ogilvy.ttl)
+  # oo Anne Grant, d. 1536b
   []
     gen:spouse <https://www.wikidata.org/wiki/Q41450386> , <https://www.wikidata.org/wiki/Q75516247> ;
 	gen:startDate "1512~" .
   # oo Janet Ross, d. 1565, daughter of Walter Ross of Balnagowan and Marion Grant
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q41450386> , <#Janet_Ross> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q41450386> , <https://www.wikidata.org/wiki/Q75934679> ;
 	gen:startDate "1536-07-19b" .
 <https://www.wikidata.org/wiki/Q76007690>
   # Janet Fraser
@@ -45,10 +43,18 @@
 <https://www.wikidata.org/wiki/Q42297154>
   # Alexander Fraser, 4th Lord (Fraser of) Lovat, 1527 - 1557-12
   gen:father <https://www.wikidata.org/wiki/Q41450386> ;
-  gen:mother <#Janet_Ross> .
+  gen:mother <https://www.wikidata.org/wiki/Q75934679> .
   # oo Janet Campbell, daughter of Sir John Campbell, 1st of Calder
   []
     gen:spouse <https://www.wikidata.org/wiki/Q42297154> , <campbell.ttl#Janet_Campbell> .
+<https://www.wikidata.org/wiki/Q76057235>
+  # William Fraser, 1st of Struy, b. 1537~
+  gen:father <https://www.wikidata.org/wiki/Q41450386> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75934679> .
+  # oo Janet Grant, b. 1535
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76057235> , <https://www.wikidata.org/wiki/Q76057237> ;
+	gen:startDate "1561" .
 
 <https://www.wikidata.org/wiki/Q75268295>
   # Hugh Fraser, 5th Lord (Fraser of) Lovat, d. 1576/1577
