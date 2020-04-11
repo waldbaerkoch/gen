@@ -4,8 +4,6 @@
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
-# https://www.wikidata.org/wiki/Q19326013
-
 #<https://www.wikidata.org/wiki/Q5930838>
   # Hugh Fraser, 1st Lord (Fraser of) Lovat, d. 1499-11-01a/1501-04-30b
   # son of Hugh Fraser, 8th of Lovat and Janet Dunbar
@@ -21,26 +19,42 @@
   gen:mother <https://www.wikidata.org/wiki/Q50824515> .
   # oo Janet Gordon, d. 1501-11a
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q41752298> , <gordon.ttl#Janet_Gordon_(died_1501)> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q41752298> , <https://www.wikidata.org/wiki/Q75404339> ;
 	gen:startDate "1493-01" .
 
 <https://www.wikidata.org/wiki/Q41450386>
   # Hugh Fraser, 3rd Lord (Fraser of) Lovat, 1494 - 1544-07-15
   gen:father <https://www.wikidata.org/wiki/Q41752298> ;
-  gen:mother <gordon.ttl#Janet_Gordon_(died_1501)> .
-  # oo 1512~ Anne Grant, d. 1536b , daughter of John Grant, 2nd of Freuchie and Margaret Ogilvy
+  gen:mother <https://www.wikidata.org/wiki/Q75404339> .
+  # oo Anne Grant, d. 1536b
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q41450386> , <https://www.wikidata.org/wiki/Q75516247> ;
+	gen:startDate "1512~" .
   # oo Janet Ross, d. 1565, daughter of Walter Ross of Balnagowan and Marion Grant
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q41450386> , <#Janet_Ross> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q41450386> , <https://www.wikidata.org/wiki/Q75934679> ;
 	gen:startDate "1536-07-19b" .
+<https://www.wikidata.org/wiki/Q76007690>
+  # Janet Fraser
+  gen:father <https://www.wikidata.org/wiki/Q41752298> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75404339> .
+  # oo 1556-05-15b Thomas Ogilvy of Westercraig, 1547b - 1577b, https://www.wikidata.org/wiki/Q75240543
 
 <https://www.wikidata.org/wiki/Q42297154>
   # Alexander Fraser, 4th Lord (Fraser of) Lovat, 1527 - 1557-12
   gen:father <https://www.wikidata.org/wiki/Q41450386> ;
-  gen:mother <#Janet_Ross> .
+  gen:mother <https://www.wikidata.org/wiki/Q75934679> .
   # oo Janet Campbell, daughter of Sir John Campbell, 1st of Calder
   []
     gen:spouse <https://www.wikidata.org/wiki/Q42297154> , <campbell.ttl#Janet_Campbell> .
+<https://www.wikidata.org/wiki/Q76057235>
+  # William Fraser, 1st of Struy, b. 1537~
+  gen:father <https://www.wikidata.org/wiki/Q41450386> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75934679> .
+  # oo Janet Grant, b. 1535
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76057235> , <https://www.wikidata.org/wiki/Q76057237> ;
+	gen:startDate "1561" .
 
 <https://www.wikidata.org/wiki/Q75268295>
   # Hugh Fraser, 5th Lord (Fraser of) Lovat, d. 1576/1577
@@ -60,7 +74,7 @@
   # Simon Fraser, 6th Lord (Fraser of) Lovat, 1569~ - 1633
   gen:father <https://www.wikidata.org/wiki/Q75268295> ;
   gen:mother <https://www.wikidata.org/wiki/Q75243276> .
-  # oo Katherine Mackenzie, daughter of Sir Colin Mackenzie, 11th of Kintail and Barbara Grant
+  # oo Katherine Mackenzie, 1593-05, daughter of Sir Colin Mackenzie, 11th of Kintail and Barbara Grant
   []
     gen:spouse <https://www.wikidata.org/wiki/Q58175576> , <#Katherine_Mackenzie> ;
 	gen:startDate "1589-12" .
@@ -69,12 +83,17 @@
     gen:spouse <https://www.wikidata.org/wiki/Q58175576> , <https://www.wikidata.org/wiki/Q75268486> ;
 	gen:startDate "1596-04-04" .
   # oo Katherine Rose, 1581~ - 1658-09-19, daughter of William Rose, 11th of Kilravock and Lilias Hay
-<#Thomas_Fraser,_2nd_of_Strichen>
+<https://www.wikidata.org/wiki/Q75592757>
   # Thomas Fraser, 2nd of Strichen, d. 1648-03
   gen:father <#Thomas_Fraser,_1st_of_Strichen> ;
   gen:mother <#Isobel_Forbes> .
-  # oo Christian Forbes, d. 1628-08b, daughter of William Forbes, 8th of Tolquhoun and Janet Ogilvy
-  # oo 1629-02-17~ Margaret Macleod, daughter of Torquil 'Conanach' MacLeod
+  # oo Christian Forbes, d. 1628-08b (ogilvy.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75592757> , <https://www.wikidata.org/wiki/Q76057341> .
+  # oo Margaret Macleod, daughter of Torquil 'Conanach' MacLeod
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75592757> , <#Margaret_Macleod> ;
+	gen:startDate "1629-02-17~" .
 
 <#Hugh_Fraser,_7th_Lord_Lovat>
   # Hugh Fraser, 7th Lord (Fraser of) Lovat, 1592 - 1646-02-16
@@ -95,8 +114,8 @@
   # oo 1617-04-29 Sir Robert Arbuthnott of that Ilk, d. 1633-03-16, gordon.ttl#Sir_Robert_Arbuthnott_of_that_Ilk
 <#Thomas_Fraser,_3rd_of_Strichen>
   # Thomas Fraser, 3rd of Strichen, d. 1656
-  gen:father <#Thomas_Fraser,_2nd_of_Strichen> ;
-  gen:mother <#Christian_Forbes_(died_1628)> .
+  gen:father <https://www.wikidata.org/wiki/Q75592757> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76057341> .
   # oo Christian Forbes, daughter of Sir John Forbes of Pitsligo, in 1628
 
 <#Catherine_Fraser_(died_1663)>
@@ -144,10 +163,15 @@
   # Simon Fraser, 11th Lord Lovat, 1667~ – 1747-04-09
   gen:father <https://www.wikidata.org/wiki/Q7789796> ;
   gen:mother <#Sibylla_MacLeod> .
-  # oo 1716-12 Margaret Grant, d. 1729, daughter of Ludovic Grant, 8th of Freuchie and 1st of Grant and Janet Brodie
-  # oo 1733-07-01 (sep 1736) Primrose Campbell, 1710~ - 1796-05-23
+  # oo Margaret Grant, 1691 - 1729
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q320286> , <campbell.ttl#Primrose_Cambell_(died_1796)> .
+    gen:spouse <https://www.wikidata.org/wiki/Q320286> , <https://www.wikidata.org/wiki/Q75516401> ;
+	gen:startDate "1716-12" .
+  # oo Primrose Campbell, 1710~ - 1796-05-23
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q320286> , <campbell.ttl#Primrose_Cambell_(died_1796)> ;
+	gen:startDate "1733-07-01" ;
+	gen:separatedDate "1736" .
 <https://www.wikidata.org/wiki/Q76057351>
   # Alexander Fraser, 5th of Strichen, d. 1699-11-03
   gen:father <#Thomas_Fraser,_4th_of_Strichen> ;
@@ -552,15 +576,27 @@
 
 
 # ====
-#<https://www.wikidata.org/wiki/Q18592916>
-  # Sir Alexander Fraser of Philorth, 1537~ - 1623
+<https://www.wikidata.org/wiki/Q18592916>
+  owl:sameAs <https://www.wikidata.org/wiki/Q76096945> .
+  # Sir Alexander Fraser, 8th of Philorth, 1537~ - 1623-07-12
+  # oo Magdalen Ogilvy, 1541 - 1606
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q18592916> , <https://www.wikidata.org/wiki/Q76096946> ;
+	gen:startDate "1559" .
 
-#<#Alexander_Fraser,_9th_of_Philorth>
+<#Alexander_Fraser,_9th_of_Philorth>
   # Alexander Fraser, 9th of Philorth, 1579~ - 1637~
+  gen:father <https://www.wikidata.org/wiki/Q18592916> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76096946> .
   # oo Hon. Margaret Abernethy
   []
     gen:spouse <#Alexander_Fraser,_9th_of_Philorth> , <#Margaret_Abernethy> ;
 	gen:startDate "1596-01-04" .
+<https://www.wikidata.org/wiki/Q76159324>
+  # Barbara Fraser
+  gen:father <https://www.wikidata.org/wiki/Q18592916> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76096946> .
+  # oo George Ogilvy, of Carnousie, d. 1625-02-01, https://www.wikidata.org/wiki/Q76159325
 
 <https://www.wikidata.org/wiki/Q4718887>
   # Alexander Fraser, 11th Lord Saltoun of Abernethy, 1604-03 - 1693-08-11
@@ -627,11 +663,11 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75262980> , <https://www.wikidata.org/wiki/Q75262977> ;
 	gen:startDate "1726-03" .
-<#Helen_Fraser>
+<https://www.wikidata.org/wiki/Q76159431>
   # Hon. Helen Fraser
   gen:father <https://www.wikidata.org/wiki/Q8009354> ;
   gen:mother <https://www.wikidata.org/wiki/Q75275370> .
-  # oo 1709 Sir James Gordon of Park, 2nd Baronet, 1680~ - 1727-12-15, duff.ttl#Sir_James_Gordon_of_Park,_2nd_Baronet
+  # oo 1709 Sir James Gordon of Park, 2nd Baronet, 1680~ - 1727-12-15, https://www.wikidata.org/wiki/Q76159435 (ogilvy.ttl)
 
 <https://www.wikidata.org/wiki/Q4718888>
   # Alexander Fraser, 14th Lord Saltoun of Abernethy, 1710 - 1751-10-10
@@ -828,46 +864,57 @@
   gen:father <#John_Balfour,_7th_of_Balbirnie> ;
   gen:mother <campbell.ttl#Lady_Georgiana_Isabel_Campbell> .
   # oo 1861-02 Rt. Hon. George Henry Finch, of Burley-on-the-Hill, 1835-02-20 - 1907-05-22, https://www.wikidata.org/wiki/Q5539274
-<#Edward_Balfour,_8th_of_Balbirnie>
+<https://www.wikidata.org/wiki/Q75529866>
   # Edward Balfour, 8th of Balbirnie, 1849 - 1927
   gen:father <#John_Balfour,_7th_of_Balbirnie> ;
   gen:mother <campbell.ttl#Lady_Georgiana_Isabel_Campbell> .
   # oo Isabella Weyman Hooper, d. 1938
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75529866> , <https://www.wikidata.org/wiki/Q76253371> .
 <#Georgiana_Elizabeth_Balfour>
   # Georgiana Elizabeth Balfour, d. 1919-01-12
   gen:father <#John_Balfour,_7th_of_Balbirnie> ;
   gen:mother <campbell.ttl#Lady_Georgiana_Isabel_Campbell> .
   # oo 1870-07-26 Arthur Wills Blundell Trumbull Sandys Roden Hill, 5th Marquess of Downshire, 1844-12-24 – 1874-03-31, https://www.wikidata.org/wiki/Q21548480
 
-<#Edward_Balfour,_9th_of_Balbirnie>
+<https://www.wikidata.org/wiki/Q75257797>
   # Edward William Sturgis Balfour, 9th of Balbirnie, 1884 - 1955-12-23
-  gen:father <#Edward_Balfour,_8th_of_Balbirnie> .
-  # and Isabella Weyman Hooper
-  # oo Lady Ruth Balfour, d. 1967-08-30
+  gen:father <https://www.wikidata.org/wiki/Q75529866> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76253371> .
+  # oo Lady Ruth Balfour, 1889 - 1967-08-30
   []
-    gen:spouse <#Edward_Balfour,_9th_of_Balbirnie> , <#Lady_Ruth_Balfour> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75257797> , <https://www.wikidata.org/wiki/Q75329440> ;
 	gen:startDate "1914-12-26" .
 
+<https://www.wikidata.org/wiki/Q75256994>
+  # Peter Edward Gerald Balfour, 1921-07-08 - 2013-07-19
+  gen:father <https://www.wikidata.org/wiki/Q75257797> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75329440> .
+  # oo Lady Griselda Davinia Roberta Ogilvy, 1924-06-12 - 1977-06-08
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75256994> , <https://www.wikidata.org/wiki/Q75256914> ;
+	gen:startDate "1948-11-06" ;
+	gen:divorceDate "1968" .
 <https://www.wikidata.org/wiki/Q26502389>
   # Anne Balfour, 1923-08-10 - 2016-07-26
-  gen:father <#Edward_Balfour,_9th_of_Balbirnie> ;
-  gen:mother <#Lady_Ruth_Balfour> .
+  gen:father <https://www.wikidata.org/wiki/Q75257797> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75329440> .
   # oo 1947 (div 1952) Sir David William Fraser, 1920-12-30 - 2012-07-15, https://www.wikidata.org/wiki/Q3703184
 # ----
 #<https://www.wikidata.org/wiki/Q2917086>
   # Gerald William Balfour, 2nd Earl of Balfour, 1853-04-09 - 1945-01-14
   # oo Lady Elizabeth Edith Bulwer-Lytton, 1903-03-27 – 1977-11-04
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q2917086> , <#Lady_Elizabeth_Edith_Bulwer-Lytton> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q2917086> , <https://www.wikidata.org/wiki/Q30596533> ;
 	gen:startDate "1887-12-21" .
 
-<#Lady_Ruth_Balfour>
-  # Lady Ruth Balfour, d. 1967-08-30
+<https://www.wikidata.org/wiki/Q75329440>
+  # Lady Ruth Balfour, 1889 - 1967-08-30
   gen:father <https://www.wikidata.org/wiki/Q2917086> ;
-  gen:mother <#Lady_Elizabeth_Edith_Bulwer-Lytton> .
-  # oo 1914-12-26 Edward William Sturgis Balfour, 9th of Balbirnie, 1884 - 1955-12-23, #Edward_Balfour,_9th_of_Balbirnie
+  gen:mother <https://www.wikidata.org/wiki/Q30596533> .
+  # oo 1914-12-26 Edward William Sturgis Balfour, 9th of Balbirnie, 1884-12-06 - 1955-12-23, https://www.wikidata.org/wiki/Q75257797
 # ----
-<#Lady_Elizabeth_Edith_Bulwer-Lytton>
+<https://www.wikidata.org/wiki/Q30596533>
   # Lady Elizabeth Edith Bulwer-Lytton, 1903-03-27 – 1977-11-04
   gen:father <https://www.wikidata.org/wiki/Q335493> .
   # and Edith Villiers
@@ -899,11 +946,11 @@
   # oo unknown daughter Stewart
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75512579> , <https://www.wikidata.org/wiki/Q75512583> .
-<#Janet_Abernethy>
+<https://www.wikidata.org/wiki/Q75938504>
   # Janet Abernethy
   gen:father <#James_Abernethy,_3rd_Lord_Saltoun> .
   # and unknown wife (?)
-  # oo Alexander Ogilvy, 4th of Deskford and Findlater, d. 1544-07, #Alexander_Ogilvy,_4th_of_Deskford
+  # oo Alexander Ogilvy, 4th of Deskford and Findlater, 1494 - 1544-07, https://www.wikidata.org/wiki/Q75935004
 <#Elizabeth_Abernethy>
   # Elizabeth Abernethy
   gen:father <#James_Abernethy,_3rd_Lord_Saltoun> .
@@ -988,21 +1035,6 @@
   # 10th Lady Saltoun of Abernethy 1668-12-14~, de jure
   gen:father <https://www.wikidata.org/wiki/Q75390095> ;
   gen:mother <https://www.wikidata.org/wiki/Q75390092> .
-
-# ----
-#<#James_Ogilvy,_3rd_of_Deskford>
-  # James Ogilvy, 3rd of Deskford and Findlater, d. 1506-02-01
-  # oo Lady Agnes Gordon
-  []
-    gen:spouse <#James_Ogilvy,_3rd_of_Deskford> , <gordon.ttl#Lady_Agnes_Gordon> .
-
-<#Alexander_Ogilvy,_4th_of_Deskford>
-  # Alexander Ogilvy, 4th of Deskford and Findlater, d. 1544-07
-  gen:father <#James_Ogilvy,_3rd_of_Deskford> ;
-  gen:mother <gordon.ttl#Lady_Agnes_Gordon> .
-  # oo Janet Abernethy
-  []
-    gen:spouse <#Alexander_Ogilvy,_4th_of_Deskford> , <#Janet_Abernethy> .
 
 # ----
 #<#John_Udny_of_that_Ilk>
