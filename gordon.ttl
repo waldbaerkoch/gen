@@ -1083,9 +1083,10 @@
 <#George_Gordon>
   gen:father <https://www.wikidata.org/wiki/Q6235759> ;
   gen:mother <#Antoinette_de_Marolles> .
-<#Lucie_Gordon>
+<https://www.wikidata.org/wiki/Q75255838>
   gen:name "Lucie Gordon"@en ;
   gen:birthDate "1597-12-20" ;
+  gen:deathDate "1680-09" ;
   gen:father <https://www.wikidata.org/wiki/Q6235759> ;
   gen:mother <https://www.wikidata.org/wiki/Q5533109> .
   # oo 1613-02-16 Sir Robert Gordon, 1st Baronet of Gordonstoun, 1580 - 1656, https://www.wikidata.org/wiki/Q18163101
@@ -1763,6 +1764,11 @@
   # Sir Robert Gordon, 1st Baronet of Gordonstoun, 1580-05-14 - 1654-03/1556
   gen:father <https://www.wikidata.org/wiki/Q18526380> ;
   gen:mother <https://www.wikidata.org/wiki/Q3807670> .
+<https://www.wikidata.org/wiki/Q75255835>
+  # Lady Jane Gordon, d. 1574-11-01
+  gen:father <https://www.wikidata.org/wiki/Q18526380> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3807670> .
+  # oo 1589-12 Hugh 'Du' Mackay of Farr, Tongue and Strathnaver, d. 1614-09-11, https://www.wikidata.org/wiki/Q5935236, son of Iye 'Du' Mackay and Christian Sinclair
 
 <https://www.wikidata.org/wiki/Q6235733>
   gen:name "John Gordon, 14th Earl of Sutherland"@en ;
@@ -1885,21 +1891,27 @@
 
 # Gordon Baronet of Gordonstoun
 <https://www.wikidata.org/wiki/Q18163101>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75255832> ;
   gen:name "Sir Robert Gordon, 1st Baronet of Gordonstoun"@en ;
   # 1st Baronet Gordon, of Gordonstoun 1625-05-28
   gen:birthDate "1580-05-14" ;
   gen:deathDate "1654-03/1556" ;
   gen:father <https://www.wikidata.org/wiki/Q18526380> ;
   gen:mother <https://www.wikidata.org/wiki/Q3807670> .
-  # oo Lucie Gordon, b. 1597-12-20
+  # oo Lucie Gordon, 1597-12-20 - 1680-09
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q18163101> , <#Lucie_Gordon> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q18163101> , <https://www.wikidata.org/wiki/Q75255838> ;
 	gen:startDate "1613-02-16" .
 
+<https://www.wikidata.org/wiki/Q76062664>
+  # Jean Gordon, b. 1615~
+  gen:father <https://www.wikidata.org/wiki/Q18163101> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75255838> .
+  # oo Sir Alexander Mackenzie of Coul, 2nd Baronet, 1655~ - 1702, https://www.wikidata.org/wiki/Q76062662
 <#Sir_Ludovick_Gordon,_2nd_Baronet>
   # Sir Ludovick Gordon, 2nd Baronet, 1624-10-15 – 1685-09~
   gen:father <https://www.wikidata.org/wiki/Q18163101> ;
-  gen:mother <#Lucie_Gordon> .
+  gen:mother <https://www.wikidata.org/wiki/Q75255838> .
   # oo Elizabeth Farquhar, daughter of Sir Robert Farquhar of Mounie
   # oo Jane Stewart
 
@@ -3137,7 +3149,7 @@
   gen:father <https://www.wikidata.org/wiki/Q75587209> ;
   gen:mother <https://www.wikidata.org/wiki/Q75501259> .
   # oo Sir William Douglas of Drumlanrig, younger, d. 1572-09-25, douglas.ttl#Sir_William_Douglas_of_Drumlanrig,_younger
-<#Janet_Gordon_of_Lochinvar>
+<https://www.wikidata.org/wiki/Q50824547>
   # Janet Gordon, 1535 - 1596-11-18
   gen:father <https://www.wikidata.org/wiki/Q75587209> ;
   gen:mother <https://www.wikidata.org/wiki/Q75501259> .
@@ -4153,8 +4165,14 @@
   # William Cuninghame, 6th Earl of Glencairn, 1535 - 1578~
   # oo Janet Gordon, 1535 - 1596-11-18
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q7613285> , <#Janet_Gordon_of_Lochinvar> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q7613285> , <https://www.wikidata.org/wiki/Q50824547> ;
 	gen:startDate "1549-08-24" .
+
+<https://www.wikidata.org/wiki/Q75772676>
+  # Lady Margaret Cuninghame, 1563 - 1604
+  gen:father <https://www.wikidata.org/wiki/Q7613285> ;
+  gen:mother <https://www.wikidata.org/wiki/Q50824547> .
+  # oo 1577-12-30 Sir Lachlan 'Mor' Maclean, 10th of Duart and Morvern, 1558 - 1598-08-05, https://www.wikidata.org/wiki/Q7528231 (macdonald.ttl)
 
 # ----
 <#Lady_Isabel_Ruthven>
@@ -4627,3 +4645,24 @@
   gen:father <https://www.wikidata.org/wiki/Q17309135> ;
   gen:mother <https://www.wikidata.org/wiki/Q75969848> .
   # oo 1827-08-15 John Shaw Shaw-Stewart, 1793-07-24 - 1840-06, https://www.wikidata.org/wiki/Q75969949
+
+# ----
+#<https://www.wikidata.org/wiki/Q5935236>
+  # Hugh 'Du' Mackay of Farr, Tongue and Strathnaver, d. 1614-09-11
+  # son of Iye 'Du' Mackay
+  # and Christian Sinclair
+  # oo Lady Jane Gordon, d. 1574-11-01
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5935236> , <https://www.wikidata.org/wiki/Q75255835> ;
+	gen:startDate "1589-12" .
+
+<https://www.wikidata.org/wiki/Q5294771>
+  # Donald Mackay, 1st Lord Reay, 1591-03 - 1649-12
+  # 1st Baronet Mackay 1627-05-18
+  # 1st Lord Reay, of Reay, co. Caithness 1628-06-20
+  gen:father <https://www.wikidata.org/wiki/Q5935236> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75255835> .
+  # oo Barbara Mackenzie, 1593~ - 1630~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5294771> , <https://www.wikidata.org/wiki/Q75592694> ;
+	gen:startDate "1610-08" .
