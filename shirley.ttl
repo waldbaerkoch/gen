@@ -365,9 +365,9 @@
   # Sewallis Evelyn Shirley, 1844-07-15 - 1904-03-07
   gen:father <https://www.wikidata.org/wiki/Q5416444> ;
   gen:mother <#Mary_Clara_Elizabeth_Lechmere> .
-  # oo Emily Jean Macdonald, d. 1918-07-12
+  # oo Emily Jean Macdonald, d. 1918-07-12 (hamilton.ttl)
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q7458155> , <#Emily_Jean_Macdonald> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q7458155> , <https://www.wikidata.org/wiki/Q75673872> ;
 	gen:startDate "1884-09-23" .
 <#Katherine_Shirley>
   # Katherine Shirley, d. 1945-04-25
@@ -399,7 +399,7 @@
 <#Evelyn_Charles_Shirley>
   # Evelyn Charles Shirley, 1889-02-27 - 1956-08-09
   gen:father <https://www.wikidata.org/wiki/Q7458155> ;
-  gen:mother <#Emily_Jean_Macdonald> .
+  gen:mother <https://www.wikidata.org/wiki/Q75673872> .
   # oo Kathleen Mary Phyllis Cardew, d. 1977-03-23
   []
     gen:spouse <#Evelyn_Charles_Shirley> , <#Kathleen_Mary_Phyllis_Cardew> ;
@@ -481,17 +481,19 @@
 # ----
 <https://www.wikidata.org/wiki/Q7608108>
   # Richard Bourke, 4th Earl of Clanricarde, 1572 - 1635-11-12
-  gen:father <https://www.wikidata.org/wiki/Q7878966> ;
-  gen:mother <https://www.wikidata.org/wiki/Q21055142> .
+  gen:father <https://www.wikidata.org/wiki/Q7878966> ; # Ulick Burke, 3rd Earl of Clanricarde
+  gen:mother <https://www.wikidata.org/wiki/Q75283994> . # Honora Burke
   # oo Frances Walsingham, 1567 – 1633-02-17
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7608108> , <https://www.wikidata.org/wiki/Q1983356> ;
 	gen:startDate "1603-04-08b" .
-<#Sir_William_Bourke>
+<https://www.wikidata.org/wiki/Q75280697>
   # Sir William Bourke, d. 1626-02-02
   gen:father <https://www.wikidata.org/wiki/Q7878966> ;
-  gen:mother <https://www.wikidata.org/wiki/Q21055142> .
+  gen:mother <https://www.wikidata.org/wiki/Q75283994> .
   # oo Joan O'Shaughnessy, daughter of Sir Dermot O'Shaughnessy
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75280697> , <https://www.wikidata.org/wiki/Q75280699> .
 
 <#Honora_de_Burgh>
   # Honora de Burgh, 1610-08-19 - 1662-03-10
@@ -500,11 +502,39 @@
   # oo 1633-10-04~ John Paulet, 5th Marquess of Winchester, 1598~ - 1675-03-05, https://www.wikidata.org/wiki/Q6252310
 <https://www.wikidata.org/wiki/Q4019950>
   # William Bourke, 7th Earl of Clanricarde, d. 1687-10
-  gen:father <#Sir_William_Bourke> .
-  # and Joan O'Shaughnessy
+  gen:father <https://www.wikidata.org/wiki/Q75280697> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75280699> .
   # oo Lettice Shirley, 1617~ - 1655-09-22~
   []
     gen:spouse <https://www.wikidata.org/wiki/Q4019950> , <#Lettice_Shirley> .
+  # oo Lady Helen MacCarty, d. 1732-02-15
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4019950> , <https://www.wikidata.org/wiki/Q75246724> .
+
+<https://www.wikidata.org/wiki/Q21055142>
+  # Lady Honora Bourke, 1674-01-16 - 1698-01-16
+  gen:father <https://www.wikidata.org/wiki/Q4019950> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75246724> .
+  # oo 1695-03-26 James FitzJames, 1st Duke of Berwick-Upon-Tweed, 1670-08-21 - 1734-06-12, https://www.wikidata.org/wiki/Q166023 (stuart.ttl)
+<https://www.wikidata.org/wiki/Q75285759>
+  # Lady Margaret Bourke, d. 1744-07-19
+  gen:father <https://www.wikidata.org/wiki/Q4019950> ;
+  gen:mother <https://www.wikidata.org/wiki/Q22084132> .
+  # oo Thomas Butler of Garryricken, d. 1730/1738~, https://www.wikidata.org/wiki/Q7788092
+# ----
+<https://www.wikidata.org/wiki/Q7788092>
+  # Colonel Thomas Butler of Garryricken, d. 1730/1738~
+  gen:father <https://www.wikidata.org/wiki/Q75285755> ; # Walter Butler
+  gen:mother <https://www.wikidata.org/wiki/Q75285756> . # Mary Plunkett
+  # oo Lady Margaret Bourke, d. 1744-07-19
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7788092> , <https://www.wikidata.org/wiki/Q75285759> .
+
+<https://www.wikidata.org/wiki/Q75285770>
+  # Honora Butler, d. 1730
+  gen:father <https://www.wikidata.org/wiki/Q7788092> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75285759> .
+  # oo 1720-11 Sir Valentine Browne, "3rd Viscount Kenmare", 1695-03 - 1736-06-30, https://www.wikidata.org/wiki/Q7529345
 
 # ----
 #<https://www.wikidata.org/wiki/Q40757076>
@@ -730,52 +760,6 @@
   # Francesco Sforza Cesarini, VI principe di Genzano, 1773-01-20 – 1816-02-16
   []
     gen:spouse <https://www.wikidata.org/wiki/Q44485035> , <#Gertrude_Conti> .
-
-# ----
-#<#William_Macdonald>
-  # William Macdonald
-  # oo Hon. Clara Anne Jane Brownlow
-  []
-    gen:spouse <#William_Macdonald> , <#Clara_Anne_Jane_Brownlow> .
-
-<#Emily_Jean_Macdonald>
-  # Emily Jean Macdonald, d. 1918-07-12
-  gen:father <#William_Macdonald> ;
-  gen:mother <#Clara_Anne_Jane_Brownlow> .
-  # oo 1884-09-23 Sewallis Evelyn Shirley, 1844-07-15 - 1904-03-07, https://www.wikidata.org/wiki/Q7458155
-# ----
-#<https://www.wikidata.org/wiki/Q5075839>
-  # Charles Brownlow, 1st Baron Lurgan, 1795-04-17 - 1877-09-02
-  # 1st Baron Lurgan, of Lurgon, co. Armagh 1839-05-14
-  # son of Charles Brownlow
-  # and Caroline Ashe
-  # oo Jane Macneill, d. 1878-06-06, daughter of Roderick Macneill of Barra and Jean Cameron
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q5075839> , <#Jane_Macneill> ;
-	gen:startDate "1828-07-15" .
-
-<https://www.wikidata.org/wiki/Q5075840>
-  # Charles Brownlow, 2nd Baron Lurgan, 1831-04-10 – 1882-01-15
-  gen:father <https://www.wikidata.org/wiki/Q5075839> ;
-  gen:mother <#Jane_Macneill> .
-  # oo Hon. Emily Anne Browne, d. 1923-09-29
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q5075840> , <https://www.wikidata.org/wiki/Q75327833> ;
-	gen:startDate "1853-06-20" .
-<#Clara_Anne_Jane_Brownlow>
-  # Hon. Clara Anne Jane Brownlow
-  gen:father <https://www.wikidata.org/wiki/Q5075839> ;
-  gen:mother <#Jane_Macneill> .
-  # oo William Macdonald, #William_Macdonald
-
-<https://www.wikidata.org/wiki/Q20638848>
-  # William Brownlow, 3rd Baron Lurgan, 1858-02-11 - 1937-02-09
-  gen:father <https://www.wikidata.org/wiki/Q5075840> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75327833> .
-  # oo Lady Emily Julia Cadogan, 1871-04-11 - 1909-12-12
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q20638848> , <cadogan.ttl#Lady_Emily_Julia_Cadogan> ;
-	gen:startDate "1893-02-07" .
 
 # ----
 <#Sir_George_Joseph_Palmer,_3rd_Baronet>
