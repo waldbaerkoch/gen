@@ -254,11 +254,11 @@
   gen:father <https://www.wikidata.org/wiki/Q7324046> ;
   gen:mother <#Elizabeth_Stafford> .
   # oo 1495-02-28b Robert Willoughby, 2nd Baron Willoughby de Broke, 1472 - 1522, https://www.wikidata.org/wiki/Q7351142
-#<https://www.wikidata.org/wiki/Q75400617>
+<https://www.wikidata.org/wiki/Q75400617>
   # Anne Beauchamp, d. 1534-07-22
-#  gen:father <https://www.wikidata.org/wiki/Q7324046> ;
-#  gen:mother <#Elizabeth_Stafford> .
-  # oo 1490b Richard Lygon, of Madresfield Court, https://www.wikidata.org/wiki/Q75400619 (see cecil.ttl), d. 1512-05-01, son of Thomas Lygon
+  gen:father <https://www.wikidata.org/wiki/Q7324046> ;
+  gen:mother <#Elizabeth_Stafford> .
+  # oo 1490b Richard Lygon, of Madresfield Court, d. 1512-05-01, https://www.wikidata.org/wiki/Q75400619
 
 
 # Baron Beauchamp of Bletso
@@ -679,6 +679,127 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q437571> , <https://www.wikidata.org/wiki/Q543019> ;
 	gen:startDate "1449" .
+
+# ====
+#<https://www.wikidata.org/wiki/Q75400619>
+  # Richard Lygon, of Madresfield Court, d. 1512-05-01
+  # son of Thomas Lygon
+  # Anne Beauchamp, d. 1534-07-22
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75400619> , <https://www.wikidata.org/wiki/Q75400617> .
+
+<#Sir_Richard_Lygon>
+  # Sir Richard Lygon, 1491~ - 1556-03-20
+  gen:father <https://www.wikidata.org/wiki/Q75400619> ;
+  gen:father <https://www.wikidata.org/wiki/Q75400617> .
+  # oo Margaret Greville, d. 1542, daughter of Sir William Greville
+  []
+    gen:spouse <#Sir_Richard_Lygon> , <#Margaret_Greville> ;
+	gen:startDate "1511b" .
+
+<#William_Lygon_(died_1567)>
+  # William Lygon, 1512~ - 1567-09-29
+  gen:father <#Sir_Richard_Lygon> ;
+  gen:mother <#Margaret_Greville> .
+  # oo Aleanor/Eleanor Dennis
+  []
+    gen:spouse <#William_Lygon_(died_1567)> , <berkeley.ttl#Eleanor_Dennis> ;
+	gen:startDate "1529" .
+
+<#Richard_Lygon>
+  # Richard Lygon, 1537b - 1584-10-02
+  gen:father <#William_Lygon_(died_1567)> ;
+  gen:mother <berkeley.ttl#Eleanor_Dennis> .
+  # oo 2nd 1579-04~ Margaret Talbot daughter of John Talbot
+
+<#William_Lygon_(died_1619)>
+  # William Lygon, 1567 - 1619
+  gen:father <#Richard_Lygon> .
+  # oo 1st Mary Russell, d. 1578-12-14b, daughter of Sir Thomas Russell
+  []
+    gen:spouse <#William_Lygon_(died_1619)> , <#Mary_Russell> ;
+	gen:startDate "1560-09-24b" .
+
+<#Sir_William_Lygon>
+  # Sir William Lygon, 1590~ - 1619-01-30
+  gen:father <#William_Lygon_(died_1619)> ;
+  gen:mother <#Mary_Russell> .
+  # oo Elizabeth Harewell, d. 1631-04, daughter of Edmund Harewell
+  []
+    gen:spouse <#Sir_William_Lygon> , <#Elizabeth_Harewell> ;
+	gen:startDate "1586" .
+
+<#William_Lygon,_of_Madresfield_Court>
+  # William Lygon of Madresfield Court, 1613-10-21 - 1681-01-29
+  gen:father <#Sir_William_Lygon> ;
+  gen:mother <#Elizabeth_Harewell> .
+  # oo Elizabeth Playdell, daughter of John Playdell and oo 1583 Elizabeth Andrewe
+  []
+    gen:spouse <#William_Lygon,_of_Madresfield_Court> , <#Elizabeth_Playdell> ;
+	gen:startDate "1611-07~" .
+  # oo Mary Edgiock, d. 1668, daughter of Sir Francis Egiocke
+  []
+    gen:spouse <#William_Lygon,_of_Madresfield_Court> , <#Mary_Edgiock> ;
+	gen:startDate "1636-05-10b" .
+
+<https://www.wikidata.org/wiki/Q75400519>
+  # William Lygon, of Madresfield Court, 1642-09 - 1721-03-16
+  gen:father <#William_Lygon,_of_Madresfield_Court> ;
+  gen:mother <#Mary_Edgiock> .
+  # oo 1678-09-19 Elizabeth Bridges
+  # oo Margaret Corbyn, 1657 - 1699, daughter of Thomas Corbyn
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75400519> , <https://www.wikidata.org/wiki/Q75439484> ;
+	gen:startDate "1688-08-07" .
+
+<https://www.wikidata.org/wiki/Q75400518>
+  # Margaret Lygon, 1690~ - 1734
+  gen:father <https://www.wikidata.org/wiki/Q75400519> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75439484> .
+  # oo 1713-06-25 Reginald Pyndar, 1687~ - 1721, https://www.wikidata.org/wiki/Q75400516
+
+# ----
+#<https://www.wikidata.org/wiki/Q75400516>
+  # Reginald Pyndar, 1687~ - 1721
+  # oo Margaret Lygon, 1690~ - 1734
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75400516> , <https://www.wikidata.org/wiki/Q75400518> ;
+	gen:startDate "1713-06-25" .
+
+<https://www.wikidata.org/wiki/Q75400508>
+  # Reginald Lygon, 1712/1714-05-24 - 1788-12-25
+  gen:father <https://www.wikidata.org/wiki/Q75400516> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75400518> .
+  # oo Susanna Hanmer, 1711-12-04~ - 1784, daughter of William Hanmer and Esther Jennens
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75400508> , <https://www.wikidata.org/wiki/Q75400510> .
+
+<https://www.wikidata.org/wiki/Q8014807>
+  gen:name "William Lygon, 1st Earl Beauchamp"@en ;
+  # 1st Baron Beauchamp of Powyk, co. Gloucestershire 1806-02-26
+  # 1st Earl Beauchamp, 1st Viscount Elmley 1815-12-01
+  gen:birthDate "1747-07-25" ;
+  gen:deathDate "1816-10-21" ;
+  gen:father <https://www.wikidata.org/wiki/Q75400508> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75400510> .
+  # oo Catharine Denn, 1760 - 1844-03-02, daughter of James Denn and Margaret Brice
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8014807> , <https://www.wikidata.org/wiki/Q75271840> ;
+	gen:startDate "1780-11-01" .
+
+<https://www.wikidata.org/wiki/Q75251923>
+  # Hon. Emma Susanna Lygon, d. 1810-08-08
+  gen:father <https://www.wikidata.org/wiki/Q8014807> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75271840> .
+  # oo 1808-01-16 George Coventry, 8th Earl of Coventry, 1784-10-16 – 1843-05-15, https://www.wikidata.org/wiki/Q5538165
+<https://www.wikidata.org/wiki/Q75326097>
+  gen:name "Lady Georgiana Emma Charlotte Lygon"@en ;
+  gen:deathDate "1880-02-12" ;
+  gen:father <https://www.wikidata.org/wiki/Q8014807> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75271840> .
+  # oo 1817-01-23 Thomas Pakenham, 2nd Earl of Longford, 1774-05-14 - 1835-05-28, https://www.wikidata.org/wiki/Q7792977 (boyle.ttl)
+
+# ====
 
 # ----
 <https://www.wikidata.org/wiki/Q61927355>
