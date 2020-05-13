@@ -2,7 +2,7 @@
 @prefix gen: <http://jjkoch.de/gen#> .
 @prefix wdata: <https://www.wikidata.org/wiki/> .
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
-
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 #<https://www.wikidata.org/wiki/Q8014452>
   # William Legge, 1608 – 1670-10-13
@@ -52,12 +52,13 @@
     gen:spouse <#George_Legge,_Viscount_Lewisham> , <#Elizabeth_Kaye> ;
 	gen:startDate "1722-03-27~" .
 <https://www.wikidata.org/wiki/Q18528215>
-  # Hon Heneage Legge, 1704-03-12b - 1759-08-29
+  owl:sameAs <https://www.wikidata.org/wiki/Q75273449> ;
+  # Hon. Heneage Legge, 1704-03-12b - 1759-08-29
   gen:father <https://www.wikidata.org/wiki/Q9374853> ;
   gen:mother <finch.ttl#Lady_Anne_Finch_(died_1751)> .
   # oo Catherine Fogg, d. 1759-11-12, daughter of Jonathan Fogg
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q18528215> , <#Catherine_Fogg> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q18528215> , <https://www.wikidata.org/wiki/Q75273451> ;
 	gen:startDate "1740-06-02" .
 <https://www.wikidata.org/wiki/Q75273445>
   # Lady Barbara Legge, 1709 - 1765-10-29
@@ -95,6 +96,11 @@
   gen:father <#George_Legge,_Viscount_Lewisham> ;
   gen:mother <#Elizabeth_Kaye> .
   # oo 1760-11-24 James Brudenell, 5th Earl of Cardigan, 1725-04-20 - 1811-02-24, https://www.wikidata.org/wiki/Q6130391
+<https://www.wikidata.org/wiki/Q75273448>
+  # Catherine Legge, 1741 - 1819-03-31
+  gen:father <https://www.wikidata.org/wiki/Q18528215> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75273451> .
+  # oo 1765-10-05 Charles Chester, 1730-09-01 - 1793-04-02, https://www.wikidata.org/wiki/Q75273444
 <https://www.wikidata.org/wiki/Q5718192>
   # Henry Bilson-Legge, 2nd Baron Stawel of Somerton, 1757-02-22 - 1820-08-25
   gen:father <https://www.wikidata.org/wiki/Q5718189> ;
