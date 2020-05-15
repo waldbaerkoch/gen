@@ -2,6 +2,7 @@
 @prefix gen: <http://jjkoch.de/gen#> .
 @prefix wdata: <https://www.wikidata.org/wiki/> .
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 #<https://www.wikidata.org/wiki/Q18527814>
   # Gilbert Talbot, 1st Baron Talbot, 1276-10-18 - 1346-02-13
@@ -73,7 +74,7 @@
   gen:mother <#Ankaret_Lestrange,_Baroness_Strange_of_Blackmere> .
   # oo Maud Neville, 6th Baroness Furnivall, d. 1422-05-31
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q561173> , <neville.ttl#Maud_Neville,_6th_Baroness_Furnivall> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q561173> , <https://www.wikidata.org/wiki/Q75251739> ;
 	gen:startDate "1407-03-12b" .
   # oo Lady Margaret Beauchamp, 1404 – 1468-06-14
   []
@@ -88,7 +89,7 @@
 <https://www.wikidata.org/wiki/Q75252175>
   # Lady Joan Talbot
   gen:father <https://www.wikidata.org/wiki/Q561173> ;
-  gen:mother <neville.ttl#Maud_Neville,_6th_Baroness_Furnivall> .
+  gen:mother <https://www.wikidata.org/wiki/Q75251739> .
   # oo 1457-07-25 James de Berkeley, 1st Baron Berkeley, 1394~ - 1463-11, https://www.wikidata.org/wiki/Q3806461
   # oo 1474-03-26b Edmund Hungerford
 <https://www.wikidata.org/wiki/Q72087>
@@ -96,7 +97,7 @@
   gen:birthDate "1417~" ;
   gen:deathDate "1460-07-10" ;
   gen:father <https://www.wikidata.org/wiki/Q561173> ;
-  gen:mother <neville.ttl#Maud_Neville,_6th_Baroness_Furnivall> .
+  gen:mother <https://www.wikidata.org/wiki/Q75251739> .
   # oo Lady Elizabeth Butler, d. 1473-09-08
   []
     gen:spouse <https://www.wikidata.org/wiki/Q72087> , <butler.ttl#Lady_Elizabeth_Butler> ;
@@ -1376,33 +1377,6 @@
   # oo 1383-08-23b Richard Talbot, 4th Baron Talbot, 1361~ - 1396-09-09~, #Richard_Talbot,_4th_Baron_Talbot
 
 # ----
-# neville.ttl:
-<#Thomas_Neville,_5th_Baron_Furnivall>
-  # Thomas Neville, 5th Baron Furnivall, d. 1407-03-24
-  gen:father <https://www.wikidata.org/wiki/Q6250305> ;
-  gen:mother <https://www.wikidata.org/wiki/Q61278543> .# ?
-  # oo Joan de Furnivalle, 5th Baroness Furnivalle, 1369~ - 1400b, daughter of William de Furnivalle, 4th Baron Furnivalle and Thomasine (?)
-  []
-    gen:spouse <#Thomas_Neville,_5th_Baron_Furnivall> , <#Joan_de_Furnivalle,_5th_Baroness_Furnivalle> ;
-	gen:startDate "1379-07-01b" .
-
-<neville.ttl#Maud_Neville,_6th_Baroness_Furnivall>
-  # Maud Neville, 6th Baroness Furnivall, d. 1422-05-31
-  gen:father <#Thomas_Neville,_5th_Baron_Furnivall> ;
-  gen:mother <#Joan_de_Furnivalle,_5th_Baroness_Furnivalle> .
-  # oo 1407-03-12b John Talbot, 1st Earl of Shrewsbury, 1384/1387 - 1453-07-17, https://www.wikidata.org/wiki/Q561173
-
-#<https://www.wikidata.org/wiki/Q5726277>
-  # Henry Neville, 7th (or 9th) Baron Abergavenny, 1580b - 1641-12~
-  # oo Catherine Vaux
-
-<neville.ttl#Elizabeth_Neville>
-  # Elizabeth Neville, b. 1641~
-  gen:father <https://www.wikidata.org/wiki/Q5726277> .
-  # and Catherine Vaux
-  # oo 1651 Thomas Stonor, 1626 - 1683, talbot.ttl#Thomas_Stonor
-
-# ----
 #<https://www.wikidata.org/wiki/Q7287258>
   # Ralph le Botiler, 7th Baron Sudeley, 1389 - 1473-05-02
   # oo Elizabeth de Norbury
@@ -1838,16 +1812,20 @@
 	gen:startDate "1611-08-12" .
 
 <https://www.wikidata.org/wiki/Q40177179>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75280376> ;
   # Charles Longueville, 12th Lord Grey (of Ruthin), 1612-04-21 - 1643-06-17
   # 12th Lord Grey, of Ruthin 1641-02-05
   gen:father <#Sir_Michael_Longueville> ;
   gen:mother <grey.ttl#Susan_Grey> .
   # oo Frances Nevill, d. 1668-05-22, daughter of Edward Nevill
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q40177179> , <https://www.wikidata.org/wiki/Q75280378> .
 
 <https://www.wikidata.org/wiki/Q30277493>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75280375> ;
   # Susan Longueville, 13th Baroness Grey (of Ruthin), 1634 - 1676-01-28
-  gen:father <https://www.wikidata.org/wiki/Q40177179> .
-  # and Frances Nevill
+  gen:father <https://www.wikidata.org/wiki/Q40177179> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75280378> .
   # oo Sir Henry Yelverton, 2nd Baronet, 1633-07-03 –  1670-10-30, https://www.wikidata.org/wiki/Q7527235
 
 # ----
@@ -2032,17 +2010,17 @@
     gen:spouse <https://www.wikidata.org/wiki/Q5083029> , <#Henrietta_Maria_Talbot> .
 
 # ----
-#<#Thomas_Stonor>
+#<https://www.wikidata.org/wiki/Q75238609>
   # Thomas Stonor, 1626 - 1683
   # oo 1651 Elizabeth Neville, b. 1641~
   []
-    gen:spouse <#Thomas_Stonor> , <neville.ttl#Elizabeth_Neville> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75238609> , <https://www.wikidata.org/wiki/Q75238606> ;
 	gen:startDate "1651" .
 
 <#John_Stonor,_of_Stonor>
   # John Stonor, of Stonor, 1656-03-22 - 1687
-  gen:father <#Thomas_Stonor> ;
-  gen:mother <neville.ttl#Elizabeth_Neville> .
+  gen:father <https://www.wikidata.org/wiki/Q75238609> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75238606> .
   # oo Lady Mary Talbot
   []
     gen:spouse <#John_Stonor,_of_Stonor> , <#Lady_Mary_Talbot_2> ;
