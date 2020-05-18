@@ -4,42 +4,73 @@
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
-#<https://www.wikidata.org/wiki/Q17355709>
-  # Robert I de Neville, 1223 - 1282-08-29
-#  gen:father <https://www.wikidata.org/wiki/Q75106263> ; # Geoffrey VI de Neville
-#  gen:mother <https://www.wikidata.org/wiki/Q75106566> . # Joan de Monmouth
-#<https://www.wikidata.org/wiki/Q75261236>
-  # Geoffrey (VIII) de Neville
-#  gen:father <https://www.wikidata.org/wiki/Q75106263> ;
-#  gen:mother <https://www.wikidata.org/wiki/Q75106566> .
-  # oo Margaret de Lungvilliers
-#  []
-#    gen:spouse <https://www.wikidata.org/wiki/Q75261236> , <https://www.wikidata.org/wiki/Q75261237> .
+<https://www.wikidata.org/wiki/Q75106263>
+  # Geoffrey VI de Neville, 1197~ - 1242-09-29b
+  gen:father <https://www.wikidata.org/wiki/Q75105409> ; # Robert fitz Maldred, Lord of Raby, 1170~ - 1242-06-25a/1248-05-26b, son of Maldred fitz Dolfin, Lord of Raby and ??? de Stuteville
+  gen:mother <https://www.wikidata.org/wiki/Q75105726> . # Isabel de Neville, 1176~ - 1254-05b, daughter of Geoffrey (VI) de Neville and Emma de Bulmer
+  # oo Joan de Monmouth, 1201~ - 1247-11a, daughter of John de Monmouth
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75106263> , <https://www.wikidata.org/wiki/Q75106566> ;
+	gen:startDate "1222~" .
 
-#<https://www.wikidata.org/wiki/Q17426568>
-  # Robert II de Neville, 1240 - 1271
-#  gen:father <https://www.wikidata.org/wiki/Q17355709> .
-  # oo Mary fitz Ranulf
-#  []
-#    gen:spouse <https://www.wikidata.org/wiki/Q17426568> , <https://www.wikidata.org/wiki/Q75100560> .
-#<https://www.wikidata.org/wiki/Q75267206>
-  # Sir Robert (I) de Neville
-#  gen:father <https://www.wikidata.org/wiki/Q75261236> ;
-#  gen:mother <https://www.wikidata.org/wiki/Q75261237> .
+<https://www.wikidata.org/wiki/Q17355709>
+  # Robert I de Neville, Lord of Raby, 1223 - 1282-08-29
+  gen:father <https://www.wikidata.org/wiki/Q75106263> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75106566> .
+  # oo ???
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q17355709> , <https://www.wikidata.org/wiki/Q75463884> .
+  # oo Isabel de Bruce, d. 1315-05-18a, daughter of https://www.wikidata.org/wiki/Q187312 Robert I Bruce, King of Scotland
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q17355709> , <https://www.wikidata.org/wiki/Q75238197> ;
+	gen:startDate "1273-04-13b" .
+<https://www.wikidata.org/wiki/Q75261236>
+  # Geoffrey (VIII) de Neville, 1225~ - 1285-03-26b
+  gen:father <https://www.wikidata.org/wiki/Q75106263> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75106566> .
+  # oo Margaret de Lungvilliers, 1252b - 1319-02~, daughter of John de Lungvilliers
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75261236> , <https://www.wikidata.org/wiki/Q75261237> ;
+	gen:startDate "1267-02b" .
 
-#<https://www.wikidata.org/wiki/Q7287905>
-  # Ralph Neville, 1st Baron Neville de Raby, d. 1331-04-18
-#  gen:father <https://www.wikidata.org/wiki/Q17426568> ;
-#  gen:mother <https://www.wikidata.org/wiki/Q75100560> .
-  # oo Euphemia de Clavering
-#  []
-#    gen:spouse <https://www.wikidata.org/wiki/Q7287905> , <https://www.wikidata.org/wiki/Q75095304> .
-#<https://www.wikidata.org/wiki/Q75267201>
-  # Sir Robert (II) de Neville, Lord of Hornby
-#  gen:father <https://www.wikidata.org/wiki/Q75267206> .
-  # oo Joan de Atherton
-#  []
-#    gen:spouse <https://www.wikidata.org/wiki/Q75267201> , <https://www.wikidata.org/wiki/Q75267203> .
+<https://www.wikidata.org/wiki/Q17426568>
+  # Robert II de Neville, 1240~ - 1271
+  gen:father <https://www.wikidata.org/wiki/Q17355709> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75463884> .
+  # oo Mary fitz Ranulf, 1244 - 1320-04-11b, daughter of Ralf fitz Ranulf, Lord of Middleham and Anastasia de Percy
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q17426568> , <https://www.wikidata.org/wiki/Q75100560> ;
+	gen:startDate "1260~" .
+<https://www.wikidata.org/wiki/Q75267206>
+  # Sir Robert (I) de Neville, 1271~ - 1313~
+  gen:father <https://www.wikidata.org/wiki/Q75261236> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75261237> .
+  # oo Isabel Byron, b. 1270, daughter of John Byron and Alice Banastre
+
+<https://www.wikidata.org/wiki/Q7287905>
+  # Ranulph Neville, 1st Baron Neville de Raby, 1262-10-18 - 1331-04-18~
+  # 1st Lord Neville, of Raby 1295-06-24
+  gen:father <https://www.wikidata.org/wiki/Q17426568> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75100560> .
+  # oo Euphemia FitzRoger, 1267~ - 1329, sister of John de Clavering, 1st Lord Clavering (1266~ - 1332-01-23b, 1st Lord Clavering 1299-07-16) and daughter of Robert FitzRoger, 1st Lord FitzRoger (1249~ - 1310, 1st Lord FitzRoger 1295-11-02, son of Roger FitzJohn) and Margaret de la Zouche (daughter of Sir Alan de la Zouche)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7287905> , <https://www.wikidata.org/wiki/Q75095304> ;
+	gen:startDate "1282" .
+  # oo Margery de Thweng, b. 1295~, daughter of John de Thweng and Joan Mauley
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7287905> , <https://www.wikidata.org/wiki/Q75238205> ;
+	gen:startDate "1331b" .
+<https://www.wikidata.org/wiki/Q75267201>
+  # Sir Robert (II) de Neville, Lord of Hornby, 1312b - 1373-07~
+  gen:father <https://www.wikidata.org/wiki/Q75267206> .
+  # oo Joan de Atherton, 1304 - 1353, daughter of Henry de Atherton and Emma ???
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75267201> , <https://www.wikidata.org/wiki/Q75267203> ;
+	gen:startDate "1322/1328b" .
+  # oo Elizabeth de St. Laurence, d. 1373-07a, daughter of Thomas de St. Laurence
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75267201> , <https://www.wikidata.org/wiki/Q75238169> ;
+	gen:startDate "1373b" .
 
 <https://www.wikidata.org/wiki/Q4389604>
   # Ralph de Neville, 2nd Lord Neville de Raby, 1291~ - 1367-08-05
@@ -49,17 +80,24 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q4389604> , <https://www.wikidata.org/wiki/Q61971022> ;
 	gen:startDate "1327-01-14a" .
-#<https://www.wikidata.org/wiki/Q75267198>
+<https://www.wikidata.org/wiki/Q75261257>
+  # Anastasia de Neville, b. 1285~ - 1315a
+  gen:father <https://www.wikidata.org/wiki/Q7287905> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75095304> .
+  # oo 1307 Sir Walter de Faucomberge, d. 1314-06-24, https://www.wikidata.org/wiki/Q75238208, son of Walter de Faucomberge, 2nd Lord Faucomberge (1260 - 1318-12-31/1356b, https://www.wikidata.org/wiki/Q75238210) and oo Isabel de Ros (b. 1256~, https://www.wikidata.org/wiki/Q75869882, daughter of Sir Robert de Ros and Isabel d'Aubigny)
+<https://www.wikidata.org/wiki/Q75267198>
   # Sir Robert (III) de Neville, Lord of Hornby, 1328b - 1413-04-04
-#  gen:father <https://www.wikidata.org/wiki/Q75267201> ;
-#  gen:mother <https://www.wikidata.org/wiki/Q75267203> .
-  # oo Margaret de la Pole, daughter of Sir William de la Pole
-#  []
-#    gen:spouse <https://www.wikidata.org/wiki/Q75267198> , <https://www.wikidata.org/wiki/Q75267200> ;
-#	gen:startDate "1344~" .
+  gen:father <https://www.wikidata.org/wiki/Q75267201> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75267203> .
+  # oo Margaret de la Pole, 1327~ - 1404-04-17a, daughter of Sir William de la Pole and Katherine Norwich
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75267198> , <https://www.wikidata.org/wiki/Q75267200> ;
+	gen:startDate "1344-09b" .
 
 <https://www.wikidata.org/wiki/Q68109318>
-  # Margaret de Neville, 1341-02-12 - 1372-05-11a/-13b
+  gen:name "Margaret de Neville"@en ;
+  gen:birthDate "1329-02-12" ;
+  gen:deathDate "1372-05-11a/-13b" ;
   gen:father <https://www.wikidata.org/wiki/Q4389604> ;
   gen:mother <https://www.wikidata.org/wiki/Q61971022> .
   # oo 1339-08-28~ William de Ros, 3rd Baron de Ros of Helmsley, 1329-05-19 - 1352-12-03~, https://www.wikidata.org/wiki/Q8020819
@@ -69,6 +107,8 @@
   gen:father <https://www.wikidata.org/wiki/Q4389604> ;
   gen:mother <https://www.wikidata.org/wiki/Q61971022> .
   # oo 1343-04-01a/-20b Robert de Clifford, 4th Baron de Clifford, 1328a/1331b - 1345, https://www.wikidata.org/wiki/Q7351393
+  # oo 1347 Reynold de Lucy, d. 1365b, https://www.wikidata.org/wiki/Q75238222, son of https://www.wikidata.org/wiki/Q23062150 Thomas de Lucy, 2nd Lord Lucy and and https://www.wikidata.org/wiki/Q75248044 Margaret Multon
+  # oo 1347a Sir Walter de Heselarton, https://www.wikidata.org/wiki/Q75238228
 <https://www.wikidata.org/wiki/Q6250305>
   # John de Neville, 3rd Lord Neville, 1330~ - 1388-10-17
   gen:father <https://www.wikidata.org/wiki/Q4389604> ;
@@ -77,10 +117,31 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q6250305> , <https://www.wikidata.org/wiki/Q61278543> ;
 	gen:startDate "1364" .
-  # oo Elizabeth Latimer, Baroness Latimer (of Corby), 1356~ - 1395-11-05 (willoughby.ttl)
+  # oo Elizabeth Latimer, 4th/5th Baroness Latimer (of Corby), 1356~ - 1395-11-05 (fitzalan.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q6250305> , <https://www.wikidata.org/wiki/Q18593028> ;
 	gen:startDate "1381-10-09b" .
+<https://www.wikidata.org/wiki/Q75254084>
+  # Katherine de Neville, 1330 - 1361-07~
+  gen:father <https://www.wikidata.org/wiki/Q4389604> ;
+  gen:mother <https://www.wikidata.org/wiki/Q61971022> .
+  # oo 1339-04-20b William de Dacre, 2nd Lord Dacre, 1322b - 1361-07, https://www.wikidata.org/wiki/Q8007529
+<https://www.wikidata.org/wiki/Q18736112>
+  gen:name "Sir William Neville"@en ;
+  gen:birthDate "1336~" ;
+  gen:deathDate "1391-10-19" ;
+  gen:father <https://www.wikidata.org/wiki/Q4389604> ;
+  gen:mother <https://www.wikidata.org/wiki/Q61971022> .
+  # oo (1) Elizabeth Le Waleys
+  # oo (2) Alice de St. Philbert
+<https://www.wikidata.org/wiki/Q2833909>
+  gen:name "Alexander Neville"@en ;
+  # Archbishop of Durham 1369 - 1371
+  # Archbishop of York 1374 - 1388
+  gen:birthDate "1340~" ;
+  gen:deathDate "1392-05-16" ;
+  gen:father <https://www.wikidata.org/wiki/Q4389604> ;
+  gen:mother <https://www.wikidata.org/wiki/Q61971022> .
 <https://www.wikidata.org/wiki/Q75253975>
   # Sir Ralph de Neville, d. 1380~
   gen:father <https://www.wikidata.org/wiki/Q4389604> ;
@@ -89,11 +150,11 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75253975> , <https://www.wikidata.org/wiki/Q75463831> ;
 	gen:startDate "1356~" .
-<https://www.wikidata.org/wiki/Q75254084>
-  # Katherine de Neville, d. 1361-07~
+<https://www.wikidata.org/wiki/Q75254083>
+  # Eleanor de Neville, b. 1340~
   gen:father <https://www.wikidata.org/wiki/Q4389604> ;
   gen:mother <https://www.wikidata.org/wiki/Q61971022> .
-  # oo 1339-04-20b William de Dacre, 2nd Lord Dacre, 1322b - 1361-07, https://www.wikidata.org/wiki/Q8007529
+  # oo 1362b Sir Geoffrey le Scrope, 1335~ - 1362, https://www.wikidata.org/wiki/Q75257696, son of Henry le Scrope, 1st Lord Scrope (of Masham) (1312-09-29 - 1392-07-31, https://www.wikidata.org/wiki/Q16204119, 1st Lord Scrope, of Masham 1350-11) and Joan ???
 <https://www.wikidata.org/wiki/Q75387454>
   # Sir Thomas de Neville, d. 1387b
   gen:father <https://www.wikidata.org/wiki/Q75267198> ;
@@ -102,13 +163,34 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75387454> , <https://www.wikidata.org/wiki/Q75387455> .
 
+<https://www.wikidata.org/wiki/Q75254410>
+  # Alice de Neville, 1359 - 1433-06-20
+  gen:father <https://www.wikidata.org/wiki/Q6250305> ;
+  gen:mother <https://www.wikidata.org/wiki/Q61278543> .
+  # oo 1380-06-24b William Deincourt, 3rd Lord Deincourt, 1357-12-26 - 1381-10-15, https://www.wikidata.org/wiki/Q75238235, on of William Deincourt and Margaret Welles
+<https://www.wikidata.org/wiki/Q75251731>
+  # Thomas Neville, 5th Baron Furnivall, 1362 - 1407-03-24
+  # 1st Baron Neville of Halumshire 1383-08-20
+  gen:father <https://www.wikidata.org/wiki/Q6250305> ;
+  gen:mother <https://www.wikidata.org/wiki/Q61278543> .
+  # oo Joan de Furnivalle, 5th Baroness Furnivalle, 1369~ - 1400b, daughter of https://www.wikidata.org/wiki/Q75257699 William de Furnivalle, 4th Baron Furnivalle and https://www.wikidata.org/wiki/Q75922606 Thomasine ???
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75251731> , <https://www.wikidata.org/wiki/Q75253978> ;
+	gen:startDate "1379-07-01b" .
+  # oo Ankaret Lestrange, 4th Baroness Strange (of Blackmere), 1361~ - 1413-06-01, daughter of John Lestrange, 1st Lord Strange (of Blackmere) (1332~ - 1361-05-12, talbot.ttl#John_Lestrange,_1st_Baron_Strange https://www.wikidata.org/wiki/Q75266645, 1st Lord Strange, of Blackmere 1360-04-03, son of https://www.wikidata.org/wiki/Q75598159 John Lestrange, 2nd Lord Strange (of Blackmere) and https://www.wikidata.org/wiki/Q76154592 Ankaret Boteler) and fitzalan.ttl#Lady_Mary_FitzAlan https://www.wikidata.org/wiki/Q75251079 Lady Mary FitzAlan
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75251731> , <https://www.wikidata.org/wiki/Q75248207> ;
+	gen:startDate "1401-07-04b" .
 <https://www.wikidata.org/wiki/Q1972589>
-  # Ralph de Neville, 1st Earl of Westmorland, 1364~ - 1425-10-21
+  gen:name "Ralph de Neville, 1st Earl of Westmorland"@en ;
   # 4th Baron Neville, of Raby 1388-10-17
   # 1st Earl of Westmorland 1397-09-29
+  gen:birthDate "1364~" ;
+  gen:deathDate "1452-10-21" ;
   gen:father <https://www.wikidata.org/wiki/Q6250305> ;
   gen:mother <https://www.wikidata.org/wiki/Q61278543> .
   # oo Lady Margaret de Stafford, 1364 - 1396-06-09 (de_ros.ttl)
+  # TODO move to plantagenet.ttl
   []
     gen:spouse <https://www.wikidata.org/wiki/Q1972589> , <https://www.wikidata.org/wiki/Q6760059> ;
 	gen:startDate "1387b" .
@@ -116,21 +198,23 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q1972589> , <https://www.wikidata.org/wiki/Q535583> ;
 	gen:startDate "1396-11" .
-<https://www.wikidata.org/wiki/Q75251731>
-  # Thomas Neville, 5th Baron Furnivall, d. 1407-03-24
+<https://www.wikidata.org/wiki/Q75254413>
+  gen:name "Eleanor de Neville"@en ;
+  gen:birthDate "1365~" ;
+  gen:deathDate "1447-07-16" ;
   gen:father <https://www.wikidata.org/wiki/Q6250305> ;
   gen:mother <https://www.wikidata.org/wiki/Q61278543> .
-  # oo Joan de Furnivalle, 5th Baroness Furnivalle, 1369~ - 1400b, daughter of https://www.wikidata.org/wiki/Q75257699 William de Furnivalle, 4th Baron Furnivalle and https://www.wikidata.org/wiki/Q75922606 Thomasine ???
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q75251731> , <https://www.wikidata.org/wiki/Q75253978> ;
-	gen:startDate "1379-07-01b" .
+  # oo 1380~ Ralph de Lumley, 1st Baron Lumley, 1360~ – 1400-01, https://www.wikidata.org/wiki/Q7288318, 1st Lord Lumley 1384-09-28, son of Marmaduke de Lumley and Margaret de Holand
 <https://www.wikidata.org/wiki/Q75244979>
-  # Elizabeth de Neville
+  # Elizabeth de Neville, b. 1381-10-09a
   gen:father <https://www.wikidata.org/wiki/Q6250305> ;
   gen:mother <https://www.wikidata.org/wiki/Q18593028> .
-  # oo Sir Thomas de Willoughby, d. 1417, https://www.wikidata.org/wiki/Q75257135
+  # oo 1396-05-27b Sir Thomas de Willoughby, d. 1417-08-20b, https://www.wikidata.org/wiki/Q75257135
 <https://www.wikidata.org/wiki/Q45841190>
-  # John de Neville, 5th/6th Lord Latimer (of Corby), 1382 - 1430-12-10
+  gen:name "John de Neville, 5th/6th Lord Latimer (of Corby)"@en ;
+  # 6th Lord Latimer, of Corby [1290], 5th Lord Latimer, of Corby [1299] 1395-11-05
+  gen:birthDate "1382~" ;
+  gen:deathDate "1430-12-10" ;
   gen:father <https://www.wikidata.org/wiki/Q6250305> ;
   gen:mother <https://www.wikidata.org/wiki/Q18593028> .
   # oo Matilda/Maud de Clifford, d. 1446-08-26
@@ -153,18 +237,36 @@
   gen:mother <https://www.wikidata.org/wiki/Q75387455> .
   # oo 1404-02-15 Thomas Beaufort, 1st Duke of Exeter, 1377~ - 1426-12-31~, https://www.wikidata.org/wiki/Q660630
 
+<https://www.wikidata.org/wiki/Q75251739>
+  # Maud Neville, 6th Baroness Furnivall, 1392~ - 1422-05-31
+  # 6th Baroness Furnivalle, suo jure
+  gen:father <https://www.wikidata.org/wiki/Q75251731> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75253978> .
+  # oo 1407-03-12b John Talbot, 1st Earl of Shrewsbury, 1384/1387 - 1453-07-17, https://www.wikidata.org/wiki/Q561173
 <https://www.wikidata.org/wiki/Q17139117>
-  # Lady Alice Neville, b. 1384~
+  # Lady Alice Neville, 1384~ - 1453-08-22a
   gen:father <https://www.wikidata.org/wiki/Q1972589> ;
   gen:mother <https://www.wikidata.org/wiki/Q6760059> .
   # oo 1402b Sir Thomas Grey, 1384-11-30 - 1415-08-03, https://www.wikidata.org/wiki/Q7790197
+  # oo 1415 Sir Gilbert Lancaster, 1380~ - 1457a, https://www.wikidata.org/wiki/Q75238351
+<https://www.wikidata.org/wiki/Q75254046>
+  # Lady Maud Neville, 1384 - 1438-10
+  gen:father <https://www.wikidata.org/wiki/Q1972589> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6760059> .
+  # oo 1400-08-06b Piers de Mauley, 5th Lord de Mauley, d. 1415-09-06, https://www.wikidata.org/wiki/Q75238349, son of Piers de Mauley (1350~ - 1383b, https://www.wikidata.org/wiki/Q75806380, son of Piers de Mauley, 4th Lord Mauley (1330 - 1382-03-20, https://www.wikidata.org/wiki/Q75806385) and 1356-11-18b and Elizabeth Meinill (1331-10-15 - 1368-07-09)) and oo Margery Sutton (1350 - 1392-10-10, daughter of Thomas de Sutton and Agnes De Holtom)
 <https://www.wikidata.org/wiki/Q26972986>
   # John Neville, Lord Neville, 1387~ - 1420-05-20
   gen:father <https://www.wikidata.org/wiki/Q1972589> ;
   gen:mother <https://www.wikidata.org/wiki/Q6760059> .
-  # oo Elizabeth Holland
+  # oo Lady Elizabeth de Holand, d. 1423-01-04, daughter of https://www.wikidata.org/wiki/Q933789 Thomas de Holand, 2nd/5th Earl of Kent and https://www.wikidata.org/wiki/Q1702633 Lady Alice FitzAlan
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q26972986> , <https://www.wikidata.org/wiki/Q5362986> .
+    gen:spouse <https://www.wikidata.org/wiki/Q26972986> , <https://www.wikidata.org/wiki/Q5362986> ;
+	gen:startDate "1394-08-29a".
+<https://www.wikidata.org/wiki/Q7184744>
+  # Lady Philippa de Neville, 1390~ - 1453-07-08a/1458-01-05
+  gen:father <https://www.wikidata.org/wiki/Q1972589> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6760059> .
+  # oo 1399-07-20b Thomas Dacre, 6th Baron Dacre, 1387-10-27 - 1458-01-05, https://www.wikidata.org/wiki/Q7788808
 <https://www.wikidata.org/wiki/Q61971898>
   # Ralph de Neville, 1392~ - 1458-02-25
   gen:father <https://www.wikidata.org/wiki/Q1972589> ;
@@ -173,15 +275,19 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q61971898> , <https://www.wikidata.org/wiki/Q61971885> ;
 	gen:startDate "1413~" .
-<https://www.wikidata.org/wiki/Q7184744>
-  # Lady Philippa de Neville, d. 1453-07-08a/1458-01-05
+<https://www.wikidata.org/wiki/Q75254053>
+  gen:name "Lady Margaret Neville"@en ;
+  gen:birthDate "1396" ;
+  gen:deathDate "1464-03-04a/1465-03-03b" ;
   gen:father <https://www.wikidata.org/wiki/Q1972589> ;
   gen:mother <https://www.wikidata.org/wiki/Q6760059> .
-  # oo 1399-07-20b Thomas Dacre, 6th Baron Dacre, 1387-10-27 - 1458-01-05, https://www.wikidata.org/wiki/Q7788808
+  # oo 1413-12-31b Richard Scrope, 3rd Baron Scrope of Bolton, 1394-05-31 – 1420-08-29, https://www.wikidata.org/wiki/Q27493872, son of Roger Scrope, 2nd Baron Scrope of Bolton (1348~ - 1403-12-03, https://www.wikidata.org/wiki/Q75558097, son of Richard le Scrope, 1st Baron Scrope of Bolton (1327~ – 1403-05-30, https://www.wikidata.org/wiki/Q7330227, son of Henry Scrope and Margaret de Ros) and Blanche de la Pole (https://www.wikidata.org/wiki/Q75883873, daughter of Sir William de la Pole and Katheirne de Norwich)) and oo 1385-04-23b Margaret Tiptoft (1366 – 1431-05-14b, https://www.wikidata.org/wiki/Q75403332, daughter of Robert Tiptoft and Margaret Deincourt)
+  # oo 1420a/1427-11-05b William Cressener, 1392~ - 1454~, https://www.wikidata.org/wiki/Q75238352
 <https://www.wikidata.org/wiki/Q5354354>
   # Lady Eleanor de Neville, 1397~ - 1472
   gen:father <https://www.wikidata.org/wiki/Q1972589> ;
   gen:mother <https://www.wikidata.org/wiki/Q535583> .
+  # oo 1412-05-23a Richard le Despenser, 4th Lord Burghersh, 1396-11-30 - 1414-10-07, https://www.wikidata.org/wiki/Q7330224
   # oo 1414-10a Henry Percy, 1st (2nd) Earl of Northumberland, 1393-02-03 - 1455-05-22, https://www.wikidata.org/wiki/Q1395951
 <https://www.wikidata.org/wiki/Q252569>
   # Lady Katherine Neville, 1397~ - 1483a
@@ -190,41 +296,50 @@
   # oo 1412-01-12 John de Mowbray, 2nd Duke of Norfolk, 1392 - 1432-10-19, https://www.wikidata.org/wiki/Q1701151
   # oo 1442-01-27b Sir Thomas Strangways, 1395~ - 1442b, https://www.wikidata.org/wiki/Q75387470
   # oo 1442a John de Beaumont, 1st Viscount Beaumont, 1410-08-16 - 1460-07-10, https://www.wikidata.org/wiki/Q1699294 (brienne.ttl)
+  # oo 1465-01 Sir John Woodville, 1445~ – 1469-08-12, https://www.wikidata.org/wiki/Q1263495, son of https://www.wikidata.org/wiki/Q934384 (plantagenet.ttl) Richard Woodville, 1st Earl Rivers and https://www.wikidata.org/wiki/Q448289 Jacquetta de Luxembourg
 <https://www.wikidata.org/wiki/Q384856> # -> Earl of Salisbury
   # Richard Neville, 5th Earl of Salisbury, 1400 - 1460-12-31
   gen:father <https://www.wikidata.org/wiki/Q1972589> ;
   gen:mother <https://www.wikidata.org/wiki/Q535583> .
-#<https://www.wikidata.org/wiki/Q5542842> # -> Baron Latimer
+<https://www.wikidata.org/wiki/Q6013428>
+  gen:name "Robert Neville"@en ;
+  # Bishop of Salisbury 1427-10-26 - 1438-01-26
+  # Bishop of Durham 1438-01-26
+  gen:birthDate "1404" ;
+  gen:deathDate "1457-06-09~" ;
+  gen:father <https://www.wikidata.org/wiki/Q1972589> ;
+  gen:mother <https://www.wikidata.org/wiki/Q535583> .
+<https://www.wikidata.org/wiki/Q5542842> # -> Baron Latimer
   # George Neville, 1st Baron Latimer, 1407 - 1469-12-30
-#  gen:father <https://www.wikidata.org/wiki/Q1972589> ;
-#  gen:mother <https://www.wikidata.org/wiki/Q535583> .
-#<https://www.wikidata.org/wiki/Q2364228>
-  # William Neville, 1st Earl of Kent, 1410 - 1463-01-09
-#  gen:father <https://www.wikidata.org/wiki/Q1972589> ;
-#  gen:mother <https://www.wikidata.org/wiki/Q535583> .
-  # oo Joan Fauconberge, Baroness Fauconberge
-#  []
-#    gen:spouse <https://www.wikidata.org/wiki/Q2364228> , <https://www.wikidata.org/wiki/Q75387460> .
+  gen:father <https://www.wikidata.org/wiki/Q1972589> ;
+  gen:mother <https://www.wikidata.org/wiki/Q535583> .
+<https://www.wikidata.org/wiki/Q2364228>
+  # William Neville, 1st Earl of Kent, 1405~/1410 - 1463-01-09
+  # 1st Earl of Kent 1461-11-01
+  gen:father <https://www.wikidata.org/wiki/Q1972589> ;
+  gen:mother <https://www.wikidata.org/wiki/Q535583> .
+  # oo Joan Fauconberge, 6th Baroness Fauconberge, 1406-10-18 - 1490-12-11, 6th Baroness Fauconberge 1429, daughter of Thomas de Fauconberg, 5th Baron Fauconberg (1345-07-20 – 1407-09-09, https://www.wikidata.org/wiki/Q16836436) and Joan Brounflete (1384 - 1409-03-04)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2364228> , <https://www.wikidata.org/wiki/Q75387460> ;
+	gen:startDate "1422-04-28b" .
 <https://www.wikidata.org/wiki/Q5344605> # -> Baron Bergavenny
   # Edward Neville, 3rd Baron Bergavenny, 1414~ - 1476-10-18
   gen:father <https://www.wikidata.org/wiki/Q1972589> ;
   gen:mother <https://www.wikidata.org/wiki/Q535583> .
-<https://www.wikidata.org/wiki/Q238004>
-  # Lady Cecily Neville, 1415-05-03 - 1495-05-31
-  gen:father <https://www.wikidata.org/wiki/Q1972589> ;
-  gen:mother <https://www.wikidata.org/wiki/Q535583> .
-  # oo 1429-10 Richard of York, 3rd Duke of York, 1411-09-21 - 1460-12-30, https://www.wikidata.org/wiki/Q312137
 <https://www.wikidata.org/wiki/Q565662>
-  # Lady Anne Neville, d. 1480-09-20
+  # Lady Anne Neville, 1414 - 1480-09-20
   gen:father <https://www.wikidata.org/wiki/Q1972589> ;
   gen:mother <https://www.wikidata.org/wiki/Q535583> .
   # oo 1424-10-18b Humphrey Stafford, 1st Duke of Buckingham, 1402-08-15 - 1460-07-10, https://www.wikidata.org/wiki/Q1265605 (talbot.ttl)
-  # TODO move here
-<https://www.wikidata.org/wiki/Q75251739>
-  # Maud Neville, 6th Baroness Furnivall, d. 1422-05-31
-  gen:father <https://www.wikidata.org/wiki/Q75251731> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75253978> .
-  # oo 1407-03-12b John Talbot, 1st Earl of Shrewsbury, 1384/1387 - 1453-07-17, https://www.wikidata.org/wiki/Q561173
+  # TODO move to plantagenet.ttl
+  # oo 1467-11-25b Walter Blount, 1st Lord Mountjoy, 1420~ - 1474-08-01, https://www.wikidata.org/wiki/Q7964321, 1st Lord Mountjoy 1465, son of Thomas Blount and Margaret Gresley
+<https://www.wikidata.org/wiki/Q238004>
+  # Lady Cecily Neville
+  gen:birthDate "1415-05-03" ;
+  gen:deathDate "1495-05-31" ;
+  gen:father <https://www.wikidata.org/wiki/Q1972589> ;
+  gen:mother <https://www.wikidata.org/wiki/Q535583> .
+  # oo 1429-10 Richard of York, 3rd Duke of York, 1411-09-21 - 1460-12-30, https://www.wikidata.org/wiki/Q312137
 <https://www.wikidata.org/wiki/Q76286891>
   # Humphrey Neville
   gen:father <https://www.wikidata.org/wiki/Q75463825> ;
@@ -238,25 +353,42 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q4389601> , <https://www.wikidata.org/wiki/Q6470129> ;
 	gen:startDate "1426-07-20" .
-#<https://www.wikidata.org/wiki/Q6250310>
-  # John Neville, Baron Neville, 1410 - 1461-03-29
-#  gen:father <https://www.wikidata.org/wiki/Q26972986> ;
-#  gen:mother <https://www.wikidata.org/wiki/Q5362986> .
-  # oo Lady Anne Holand
-#  []
-#    gen:spouse <https://www.wikidata.org/wiki/Q6250310> , <https://www.wikidata.org/wiki/Q75389783> .
-#<https://www.wikidata.org/wiki/Q75254029>
-  # Sir Thomas Neville, d. 1458-02-22
-#  gen:father <https://www.wikidata.org/wiki/Q26972986> ;
-#  gen:mother <https://www.wikidata.org/wiki/Q5362986> .
+  # oo Margaret de Cobham, 4th Baroness Cobham, d. 1466-11-20a/1471-04-26, 4th Baroness Cobham, of Sterborough, in Lingfield, Surrey 1446, de jure, suo jure, daughter of https://www.wikidata.org/wiki/Q75238273 Reginald Cobham, 3rd Baron Sterborough, 3rd Lord Cobham and https://www.wikidata.org/wiki/Q76296373 Thomasine Chideocke
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4389601> , <https://www.wikidata.org/wiki/Q75238272> ;
+	gen:startDate "1442-02b" .
+<https://www.wikidata.org/wiki/Q6250310>
+  # Sir John Neville, 1st Baron Neville, 1410 - 1461-03-29
+  # 1st Lord Neville 1459-11-20 - 1461-11-04 (attainted)
+  gen:father <https://www.wikidata.org/wiki/Q26972986> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5362986> .
+  # oo Lady Anne Holand, 1432b - 1486-12-26, daughter of https://www.wikidata.org/wiki/Q3172556 John de Holand, 2nd Duke of Exeter and https://www.wikidata.org/wiki/Q75387312 Lady Anne Stafford
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6250310> , <https://www.wikidata.org/wiki/Q75389783> ;
+	gen:startDate "1442-02-05b" .
+<https://www.wikidata.org/wiki/Q75254029>
+  # Sir Thomas Neville, 1407a/1420-05-20b - 1458-02-22
+  gen:father <https://www.wikidata.org/wiki/Q26972986> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5362986> .
   # oo Elizabeth Beaumont, d. 1447-07, https://www.wikidata.org/wiki/Q75254036
-#  []
-#    gen:spouse <https://www.wikidata.org/wiki/Q75254029> , <brienne.ttl#Elizabeth_Beaumont_(died_1447)> .
-<https://www.wikidata.org/wiki/Q75517102>
-  # Lady Alice Neville
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75254029> , <brienne.ttl#Elizabeth_Beaumont_(died_1447)> ;
+	gen:startDate "1436-11-07a" .
+<https://www.wikidata.org/wiki/Q4925349>
+  gen:name "Sir Thomas Neville"@en ;
+  gen:birthDate "1429" ;
+  gen:deathDate "1471-09-22" ;
+  gen:father <https://www.wikidata.org/wiki/Q2364228> .
+<https://www.wikidata.org/wiki/Q75597304>
+  # Lady Elizabeth Neville, 1435 - 1490-12-11
   gen:father <https://www.wikidata.org/wiki/Q2364228> ;
   gen:mother <https://www.wikidata.org/wiki/Q75387460> .
-  # oo Sir John Conyers, Jr., d. 1469, https://www.wikidata.org/wiki/Q18159808 (grey.ttl)
+  # oo 1455b Sir Richard Strangways, 1433 - 1488-04-13, https://www.wikidata.org/wiki/Q75597369, son of https://www.wikidata.org/wiki/Q75811444 Sir James Strangways and grey.ttl#Elizabeth_Darcy or https://www.wikidata.org/wiki/Q75811441 Elizabeth Darcy
+<https://www.wikidata.org/wiki/Q75517102>
+  # Lady Alice Neville, 1437 - 1490
+  gen:father <https://www.wikidata.org/wiki/Q2364228> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75387460> .
+  # oo 1468b Sir John Conyers, Jr., d. 1469, https://www.wikidata.org/wiki/Q18159808 (grey.ttl)
 <https://www.wikidata.org/wiki/Q61971926>
   # John Neville, 1416~ - 1482-03-17
   gen:father <https://www.wikidata.org/wiki/Q61971898> ;
@@ -270,13 +402,24 @@
   gen:father <https://www.wikidata.org/wiki/Q76286891> .
   # oo Sir Richard Percy, 1426~ - 1461-03-29, https://www.wikidata.org/wiki/Q76286556
 
-#<https://www.wikidata.org/wiki/Q7287907>
+<https://www.wikidata.org/wiki/Q75253984>
+  # Sir John Neville, d. 1451-03-16b
+  gen:father <https://www.wikidata.org/wiki/Q4389601> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6470129> .
+  # oo Lady Anne Holand, 1432b - 1486-12-26, daughter of https://www.wikidata.org/wiki/Q3172556 John de Holand, 2nd Duke of Exeter and https://www.wikidata.org/wiki/Q75387312 Lady Anne Stafford
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75253984> , <https://www.wikidata.org/wiki/Q75389783> ;
+	gen:startDate "1441-02-18b" .
+<https://www.wikidata.org/wiki/Q7287907>
   # Ralph Neville, 3rd Earl of Westmorland, 1456 - 1499-02-06
-#  gen:father <https://www.wikidata.org/wiki/Q6250310> ;
-#  gen:mother <https://www.wikidata.org/wiki/Q75389783> .
-  # oo Isabel Booth
-#  []
-#    gen:spouse <https://www.wikidata.org/wiki/Q7287907> , <https://www.wikidata.org/wiki/Q75253991> .
+  # 2nd Lord Neville 1472-10-06
+  # 3rd Earl of Westmorland, 6th Lord Neville, of Raby 1484-11-03
+  gen:father <https://www.wikidata.org/wiki/Q6250310> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75389783> .
+  # oo Isabel Booth, 1455~ - 1483-03-20a, daughter of Sir Roger Booth, Esq. (1396 - 1497, https://www.wikidata.org/wiki/Q75774908) and https://www.wikidata.org/wiki/Q75238280 Catherine Hatton
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7287907> , <https://www.wikidata.org/wiki/Q75253991> ;
+	gen:startDate "1473-02-20b" .
 <https://www.wikidata.org/wiki/Q61971938>
   # Joan Neville, b. 1443~
   gen:father <https://www.wikidata.org/wiki/Q61971926> ;
@@ -285,36 +428,39 @@
   # TODO move here
 
 <https://www.wikidata.org/wiki/Q75273386>
-  # Lady Anne Neville
+  # Lady Anne Neville, 1468-12-21 - 1525a
   gen:father <https://www.wikidata.org/wiki/Q7287907> ;
   gen:mother <https://www.wikidata.org/wiki/Q75253991> .
-  # oo William Conyers, 1st Lord Conyers, 1468-12-21 - 1524, https://www.wikidata.org/wiki/Q4803719 (grey.ttl)
-#<https://www.wikidata.org/wiki/Q75253994>
+  # oo 1498-02-06b William Conyers, 1st Lord Conyers, 1468-12-21 - 1524-04-14, https://www.wikidata.org/wiki/Q4803719 (grey.ttl)
+  # oo 1525-04-29a Anthony Saltmarsh, of Langton by Wragby, 1473 - 1550, https://www.wikidata.org/wiki/Q75811452
+<https://www.wikidata.org/wiki/Q75253994>
   # Ralph Neville, Lord Neville, d. 1498
-#  gen:father <https://www.wikidata.org/wiki/Q7287907> ;
-#  gen:mother <https://www.wikidata.org/wiki/Q75253991> .
-  # oo Edith Sandys
-#  []
-#    gen:spouse <https://www.wikidata.org/wiki/Q75253994> , <https://www.wikidata.org/wiki/Q75253996> .
+  gen:father <https://www.wikidata.org/wiki/Q7287907> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75253991> .
+  # oo Mary Paston, 1470-01-19 - 1489-12-25~, daughter of Sir William Paston (1436 – 1496-09-07b, talbot.ttl#Sir_William_Paston or https://www.wikidata.org/wiki/Q75387431) and Lady Anne Beaufort (1435 - 1496-11-28b, beaufort.ttl#Anne_Beaufort or https://www.wikidata.org/wiki/Q75382592)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75253994> , <https://www.wikidata.org/wiki/Q75238283> ;
+	gen:startDate "1489b" .
+  # oo Edith Sandys, 1471~ - 1529-08-22, sister of William Sandys, 1st Baron Sandys (1470 – 1540-12-04, https://www.wikidata.org/wiki/Q8018111, 1st Baron Sandys, of the Vyne 1523-04-27) and daughter of Sir William Sandys (1440 - 1496-10-26, https://www.wikidata.org/wiki/Q75238284) and Margaret Cheney (b. 1453, https://www.wikidata.org/wiki/Q75238286)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75253994> , <https://www.wikidata.org/wiki/Q75253996> ;
+	gen:startDate "1489a" .
 
-#<https://www.wikidata.org/wiki/Q7287908>
+<https://www.wikidata.org/wiki/Q7287908>
   # Ralph Neville, 4th Earl of Westmorland, 1497-02-21 - 1549-04-24
-#  gen:father <https://www.wikidata.org/wiki/Q75253994> ;
-#  gen:mother <https://www.wikidata.org/wiki/Q75253996> .
-  # oo Lady Catherine Stafford
-#  []
-#    gen:spouse <https://www.wikidata.org/wiki/Q7287908> , <https://www.wikidata.org/wiki/Q75253997> .
+  gen:father <https://www.wikidata.org/wiki/Q75253994> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75253996> .
+  # oo Lady Catherine Stafford, 1499~ - 1555-05-14, daughter of https://www.wikidata.org/wiki/Q726243 (cecil.ttl) and https://www.wikidata.org/wiki/Q5354355
+  # TODO move (talbot.ttl, hastings.ttl, cecil.ttl) to plantagenet.ttl
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7287908> , <https://www.wikidata.org/wiki/Q75253997> ;
+	gen:startDate "1520-06b" .
 
 <https://www.wikidata.org/wiki/Q75251097>
-  # Lady Dorothy Neville, d. 1545-12-17a/1547-06-27
+  # Lady Dorothy Neville, 1515~ - 1545-12-17a/1547-06-27
   gen:father <https://www.wikidata.org/wiki/Q7287908> ;
   gen:mother <https://www.wikidata.org/wiki/Q75253997> .
   # oo 1536-07-03 1548-08-01 John de Vere, 16th Earl of Oxford, 1516 - 1562-08-03, https://www.wikidata.org/wiki/Q1773578
-<https://www.wikidata.org/wiki/Q75248098>
-  # Lady Margaret Neville, d. 1559-10-13
-  gen:father <https://www.wikidata.org/wiki/Q7287908> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75253997> .
-  # oo 1536-07-03 Henry Manners, 2nd Earl of Rutland, 1526-09-23 - 1563-09-17, https://www.wikidata.org/wiki/Q3784972
 <https://www.wikidata.org/wiki/Q7611360>
   # Henry Neville, 5th Earl of Westmorland, 1525~ - 1564-02-10
   gen:father <https://www.wikidata.org/wiki/Q7287908> ;
@@ -323,100 +469,141 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7611360> , <https://www.wikidata.org/wiki/Q75253998> ;
 	gen:startDate "1536-07-03" .
-<https://www.wikidata.org/wiki/Q75257524>
-  # Lady Anne Neville, d. 1583
+  # oo Jane Cholmley, d. 1558-12b, daughter of https://www.wikidata.org/wiki/Q75238293 Sir Roger Cholmley and https://www.wikidata.org/wiki/Q75238294 Katherine Constable
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7611360> , <https://www.wikidata.org/wiki/Q75238292> ;
+	gen:startDate "1549a" .
+  # oo Margaret Cholmley, d. 1570-03~, daughter of https://www.wikidata.org/wiki/Q75238293 Sir Roger Cholmley and https://www.wikidata.org/wiki/Q75238294 Katherine Constable
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7611360> , <https://www.wikidata.org/wiki/Q75238297> ;
+	gen:startDate "1560-06-21b" .
+<https://www.wikidata.org/wiki/Q75248098>
+  # Lady Margaret Neville, 1526~ - 1559-10-13
   gen:father <https://www.wikidata.org/wiki/Q7287908> ;
   gen:mother <https://www.wikidata.org/wiki/Q75253997> .
-  # oo 1553~ Sir Fulke Greville, 4th Lord Willoughby de Broke, 1536 - 1606-11-15, https://www.wikidata.org/wiki/Q7526799
+  # oo 1536-07-03 Henry Manners, 2nd Earl of Rutland, 1526-09-23 - 1563-09-17, https://www.wikidata.org/wiki/Q3784972
 <https://www.wikidata.org/wiki/Q75254023>
-  # Lady Elizabeth Neville
+  # Lady Elizabeth Neville, 1527~ - 1550b
   gen:father <https://www.wikidata.org/wiki/Q7287908> ;
   gen:mother <https://www.wikidata.org/wiki/Q75253997> .
   # oo 1546b Thomas Dacre, 4th Lord Dacre (of Gilsland), 1527 - 1566-07-01, https://www.wikidata.org/wiki/Q7788807
+<https://www.wikidata.org/wiki/Q75257524>
+  # Lady Anne Neville, 1533 - 1583-07-17
+  gen:father <https://www.wikidata.org/wiki/Q7287908> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75253997> .
+  # oo 1553~ Sir Fulke Greville, 4th Lord Willoughby de Broke, 1536 - 1606-11-15, https://www.wikidata.org/wiki/Q7526799
 <https://www.wikidata.org/wiki/Q75254025>
-  # Lady Eleanor Neville
+  # Lady Eleanor Neville, b. 1517
   gen:father <https://www.wikidata.org/wiki/Q7287908> ;
   gen:mother <https://www.wikidata.org/wiki/Q75253997> .
   # oo Brian Stapleton, d. 1606-12-13, https://www.wikidata.org/wiki/Q75254034 (brienne.ttl)
 
-#<https://www.wikidata.org/wiki/Q4572973>
+<https://www.wikidata.org/wiki/Q4572973>
   # Charles Neville, 6th Earl of Westmorland, 1542-08-18 - 1601-11-16
-#  gen:father <https://www.wikidata.org/wiki/Q7611360> ;
-#  gen:mother <https://www.wikidata.org/wiki/Q75253998> .
-  # oo Lady Jane Howard, 1533/1537 - 1593-06-27~
-#  []
-#    gen:spouse <https://www.wikidata.org/wiki/Q4572973> , <https://www.wikidata.org/wiki/Q246072> ;
-#	gen:startDate "1564-08-28" .
-<#Lady_Eleanor_Neville>
-  # Lady Eleanor Neville, d. 1574
+  # 6th Earl of Westmorland, 9th Lord Neville, of Raby, 6th Lord Neville 1564-02-10 - 1571 (attainted)
   gen:father <https://www.wikidata.org/wiki/Q7611360> ;
   gen:mother <https://www.wikidata.org/wiki/Q75253998> .
+  # oo Lady Jane Howard, 1533/1537 - 1593-06-27~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4572973> , <https://www.wikidata.org/wiki/Q246072> ;
+	gen:startDate "1564-08-28" .
+<#Eleanor_Neville>
+  # Lady Eleanor Neville, d. 1574
+  gen:father <https://www.wikidata.org/wiki/Q7611360> .
   # oo 1568b Sir William Pelham, of Brocklesby, 1527~ - 1587-11-24, https://www.wikidata.org/wiki/Q8016735
 
 
 # Earl of Salisbury
 <https://www.wikidata.org/wiki/Q384856>
   gen:name "Richard Neville, 5th Earl of Salisbury"@en ;
+  # 5th Earl of Salisbury, jure uxoris, 1428-11-03
   gen:birthDate "1400" ;
   gen:deathDate "1460-12-31" ;
   gen:father <https://www.wikidata.org/wiki/Q1972589> ;
   gen:mother <https://www.wikidata.org/wiki/Q535583> .
-  # oo Alice Montacute, 1407 - 1462-12-09b
+  # oo Alice Montacute, 5th Countess of Salisbury, 1407 - 1462-12-09b
+  # TODO move to plantagenet.ttl
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q384856> , <https://www.wikidata.org/wiki/Q4726013> .
+    gen:spouse <https://www.wikidata.org/wiki/Q384856> , <https://www.wikidata.org/wiki/Q4726013> ;
+	gen:startDate "1421-02" .
 
+<https://www.wikidata.org/wiki/Q75254072>
+  # Lady Joan Neville, 1423~ - 1462-09-09b
+  gen:father <https://www.wikidata.org/wiki/Q384856> ;
+  gen:mother <https://www.wikidata.org/wiki/Q4726013> .
+  # oo 1438-08-12a William Fitzalan, 9th/16th Earl of Arundel, 1417-11-23 - 1487, https://www.wikidata.org/wiki/Q7606631
 <https://www.wikidata.org/wiki/Q5056518>
-  # Cecily Neville, 1425 - 1450-07-26
+  # Lady Cecily Neville, 1425 - 1450-07-26
   gen:father <https://www.wikidata.org/wiki/Q384856> ;
   gen:mother <https://www.wikidata.org/wiki/Q4726013> .
   # oo 1434 Henry de Beauchamp, 1st Duke of Warwick, 1425-03-21 - 1446-06-11, https://www.wikidata.org/wiki/Q1521796
+  # oo 1449-04-03a John Tiptoft, 1st Earl of Worcester, 1427-05-08 - 1470-10-18, https://www.wikidata.org/wiki/Q1701944, 2nd Lord Tiptoft 1443-01-27, 1st Earl of Worcester 1449-07-16, son of John Tiptoft, 1st Lord Tiptoft (1400~ - 1443-01-27, https://www.wikidata.org/wiki/Q6260910, 1st Lord Tiptoft 1426-01-07, son of Sir Payn Tiptoft and Agnes Wroth) and oo 1422-02-28 Joyce de Cherleton (1403~ - 1446-09-22, https://www.wikidata.org/wiki/Q75387308, daughter of https://www.wikidata.org/wiki/Q5342275 Edward Cherleton, 5th Baron Cherleton and https://www.wikidata.org/wiki/Q4725569 Alianore de Holand, Countess of March)
 <https://www.wikidata.org/wiki/Q437571>
-  # Richard Neville, 6th Earl of Salisbury, 1428-11-22 - 1471-04-14
+  gen:name "Richard Neville, 6th Earl of Salisbury"@en ;
+  # 1st Earl of Warwick 1450-03-02 - 1459-11-20 (attainted)
+  # 6th Earl of Salisbury 1462-12-09b
+  gen:birthDate "1428-11-22" ;
+  gen:deathDate "1471-04-14" ;
   gen:father <https://www.wikidata.org/wiki/Q384856> ;
   gen:mother <https://www.wikidata.org/wiki/Q4726013> .
-  # oo Anne Neville, 16th Countess of Warwick, 1426-07-13 - 1492-09-20
+  # oo Anne Beauchamp, 16th Countess of Warwick, 1426-07-13 - 1492-09-20
   []
     gen:spouse <https://www.wikidata.org/wiki/Q437571> , <https://www.wikidata.org/wiki/Q543019> ;
-	gen:startDate "1449" .
+	gen:startDate "1434" .
+<https://www.wikidata.org/wiki/Q4726026>
+  # Lady Alice Neville, 1430 - 1503-11-22a
+  gen:father <https://www.wikidata.org/wiki/Q384856> ;
+  gen:mother <https://www.wikidata.org/wiki/Q4726013> .
+  # oo 1472b Henry FitzHugh, 5th Lord FitzHugh, 1429~ - 1472-06-03, https://www.wikidata.org/wiki/Q23661898
+  # TODO move to grey.ttl
+<https://www.wikidata.org/wiki/Q25956555>
+  # Sir Thomas Neville, 1429~ - 1460-12-30
+  gen:father <https://www.wikidata.org/wiki/Q384856> ;
+  gen:mother <https://www.wikidata.org/wiki/Q4726013> .
+  # oo Maud Stanhope, 1425 - 1497-08-30
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q25956555> , <https://www.wikidata.org/wiki/Q75254060> ;
+	gen:startDate "1453-08~" .
 <https://www.wikidata.org/wiki/Q719793>
   # Sir John Neville, 1st Marquess of Montagu, 1431~ - 1471-04-14
   # 1st Lord Montagu 1461-05-23
-  # 1st Earl of Northumberland 1464-05-27
+  # 1st Earl of Northumberland 1464-05-27 - 1470-03-25
   # 1st Marquess of Montagu 1470-03-25
   gen:father <https://www.wikidata.org/wiki/Q384856> ;
   gen:mother <https://www.wikidata.org/wiki/Q4726013> .
-  # oo Isabel Ingaldesthorpe, d. 1476-05-20
+  # oo Isabel Ingaldesthorpe, 1441~ - 1476-05-20
   []
     gen:spouse <https://www.wikidata.org/wiki/Q719793> , <https://www.wikidata.org/wiki/Q75254063> ;
 	gen:startDate "1457-04-25" .
+<https://www.wikidata.org/wiki/Q1507982>
+  gen:name "George Neville"@en ;
+  # Archbishop of York 1465-09
+  gen:birthDate "1432~" ;
+  gen:deathDate "1476-06-08" ;
+  gen:father <https://www.wikidata.org/wiki/Q384856> ;
+  gen:mother <https://www.wikidata.org/wiki/Q4726013> .
 <https://www.wikidata.org/wiki/Q6376498>
-  gen:name "Katherine Neville"@en ;
+  gen:name "Lady Katherine Neville"@en ;
   gen:birthDate "1442" ;
   gen:deathDate "1503-11-22b" ;
   gen:father <https://www.wikidata.org/wiki/Q384856> ;
   gen:mother <https://www.wikidata.org/wiki/Q4726013> .
   # oo 1458 William Bonville, 6th Baron Harington, 1442 - 1460-12-30, https://www.wikidata.org/wiki/Q8005700 (grey.ttl)
   # oo 1462-02-06b William Hastings, 1st Baron Hastings, 1431~ - 1483-06-13, https://www.wikidata.org/wiki/Q1396340
-<https://www.wikidata.org/wiki/Q75254072>
-  # Lady Joan Neville, d. 1462-09-09b
-  gen:father <https://www.wikidata.org/wiki/Q384856> ;
-  gen:mother <https://www.wikidata.org/wiki/Q4726013> .
-  # oo 1438-08-12a William Fitzalan, 9th/16th Earl of Arundel, 1417-11-23 - 1487, https://www.wikidata.org/wiki/Q7606631
 <https://www.wikidata.org/wiki/Q75251083>
-  # Lady Margaret Neville, d. 1506-11-20a
+  gen:name "Lady Margaret Neville"@en ;
+  gen:birthDate "1444" ;
+  gen:deathDate "1506-11-20a" ;
   gen:father <https://www.wikidata.org/wiki/Q384856> ;
   gen:mother <https://www.wikidata.org/wiki/Q4726013> .
   # oo 1506b John de Vere, 13th Earl of Oxford, 1442-09-08 - 1513-03-10, https://www.wikidata.org/wiki/Q1332495
 <https://www.wikidata.org/wiki/Q75240012>
-  # Lady Eleanor Neville, 1447 - 1472 (1482-11b)
+  gen:name "Lady Eleanor Neville"@en ;
+  gen:birthDate "1438/1447" ;
+  gen:deathDate "1472/1482-11b" ;
   gen:father <https://www.wikidata.org/wiki/Q384856> ;
   gen:mother <https://www.wikidata.org/wiki/Q4726013> .
   # oo 1457-05-10a Thomas Stanley, 1st Earl of Derby, 1435 - 1504-07-29, https://www.wikidata.org/wiki/Q335295
-<https://www.wikidata.org/wiki/Q4726026>
-  # Lady Alice Neville, d. 1503-11-22a
-  gen:father <https://www.wikidata.org/wiki/Q384856> ;
-  gen:mother <https://www.wikidata.org/wiki/Q4726013> .
-  # oo 1472b Henry FitzHugh, 5th Lord FitzHugh, 1429~ - 1472-06-03, https://www.wikidata.org/wiki/Q23661898
 
 <https://www.wikidata.org/wiki/Q436627>
   # Lady Isabel Neville, 1451-09-05 - 1476-12-22
@@ -424,21 +611,38 @@
   gen:mother <https://www.wikidata.org/wiki/Q543019> .
   # oo 1469-07-11 George Plantagenet, 1st Duke of Clarence, 1449-10-21 - 1478-02-18, https://www.wikidata.org/wiki/Q356173
 <https://www.wikidata.org/wiki/Q229218>
-  # Lady Anne Beauchamp Neville, 1456-06-11 - 1485-03-16
+  # Lady Anne Neville, 1456-06-11 - 1485-03-16
   gen:father <https://www.wikidata.org/wiki/Q437571> ;
   gen:mother <https://www.wikidata.org/wiki/Q543019> .
-  # oo 1470-12-13 Edward of Westminster, Prince of Wales, 1453-10-13 - 1471-05-01, https://www.wikidata.org/wiki/Q313262
-  # oo 1472-07-12 Richard III, King of England, 1452-10-02 - 1485-08-22, https://www.wikidata.org/wiki/Q133028
+  # oo 1470-12-13 Edward of Westminster, Prince of Wales, 1453-10-13 - 1471-05-01, https://www.wikidata.org/wiki/Q313262 (plantagenet.ttl)
+  # oo 1472-07-12 Richard III, King of England, 1452-10-02 - 1485-08-22, https://www.wikidata.org/wiki/Q133028 (plantagenet.ttl)
+<https://www.wikidata.org/wiki/Q5542845>
+  gen:name "George Neville, 1st Duke of Bedford"@en ;
+  # 1st Duke of Bedford 1470-01-05 - 1478-03a
+  # 2nd Marquess of Montagu, 2nd Lord Montagu 1471-04-14 - 1478-03a
+  gen:birthDate "1461" ;
+  gen:deathDate "1483-05-04" ;
+  gen:father <https://www.wikidata.org/wiki/Q719793> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75254063> .
 <https://www.wikidata.org/wiki/Q75254424>
   # Lady Anne Neville, 1464b - 1486b
   gen:father <https://www.wikidata.org/wiki/Q719793> ;
   gen:mother <https://www.wikidata.org/wiki/Q75254063> .
   # oo 1482b Sir William Stonor, 1449 - 1494, https://www.wikidata.org/wiki/Q18577237
-<https://www.wikidata.org/wiki/Q75254430>
-  # Lady Margaret Neville, b. 1466
+<https://www.wikidata.org/wiki/Q75254426>
+  # Lady Elizabeth Neville, 1464 - 1517-09
   gen:father <https://www.wikidata.org/wiki/Q719793> ;
   gen:mother <https://www.wikidata.org/wiki/Q75254063> .
+  # oo 1477b Thomas le Scrope, 6th Lord Scrope of Masham, 1459~ - 1493-04-23, https://www.wikidata.org/wiki/Q75238386, son of https://www.wikidata.org/wiki/Q23770663 Thomas le Scrope, 5th Baron Scrope of Masham and https://www.wikidata.org/wiki/Q75251747 Elizabeth Greystoke
+  # oo 1494-10-22a Sir Henry Wentworth, 1448~ - 1499-08-17a/1501-02-27b, https://www.wikidata.org/wiki/Q5730011
+<https://www.wikidata.org/wiki/Q75254430>
+  # Lady Margaret Neville, 1466 - 1528-01-31
+  gen:father <https://www.wikidata.org/wiki/Q719793> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75254063> .
+  # oo 1504b Thomas Horne, https://www.wikidata.org/wiki/Q75238387
+  # oo 1504-11-12b Sir John Mortimer, b. 1457~ - 1504, https://www.wikidata.org/wiki/Q75238388
   # oo 1507-02-07b (annulled 1528-05-12) Charles Brandon, 1st Duke of Suffolk, 1484~ - 1545-08-22, https://www.wikidata.org/wiki/Q337635 (clifford.ttl)
+  # oo 1522-02~ Robert Downes, https://www.wikidata.org/wiki/Q75238390
 <https://www.wikidata.org/wiki/Q75254427>
   # Lady Lucy Neville, 1466a - 1534~
   gen:father <https://www.wikidata.org/wiki/Q719793> ;
@@ -448,36 +652,38 @@
 
 
 # Baron Latimer
-#<https://www.wikidata.org/wiki/Q5542842>
+<https://www.wikidata.org/wiki/Q5542842>
   # George Neville, 1st Baron Latimer, 1407 - 1469-12-30
-#  gen:father <https://www.wikidata.org/wiki/Q1972589> ;
-#  gen:mother <https://www.wikidata.org/wiki/Q535583> .
-  # oo Lady Elizabeth Beauchamp, daughter of https://www.wikidata.org/wiki/Q592988 and https://www.wikidata.org/wiki/Q16834998
-#  []
-#    gen:spouse <https://www.wikidata.org/wiki/Q5542842> , <https://www.wikidata.org/wiki/Q75387464> .
+  # 1st Lord Latymer 1432-02-25
+  gen:father <https://www.wikidata.org/wiki/Q1972589> ;
+  gen:mother <https://www.wikidata.org/wiki/Q535583> .
+  # oo Lady Elizabeth Beauchamp, 1417~ - 1480-10-02b, daughter of https://www.wikidata.org/wiki/Q592988 and https://www.wikidata.org/wiki/Q16834998
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5542842> , <https://www.wikidata.org/wiki/Q75387464> ;
+	gen:startDate "1437" .
 
-#<https://www.wikidata.org/wiki/Q75257184>
-  # Sir Henry Neville, d. 1469-07-26
-#  gen:father <https://www.wikidata.org/wiki/Q5542842> ;
-#  gen:mother <https://www.wikidata.org/wiki/Q75387464> .
-  # oo Joanna Bourchier
-#  []
-#    gen:spouse <https://www.wikidata.org/wiki/Q75257184> , <https://www.wikidata.org/wiki/Q75257186> .
+<https://www.wikidata.org/wiki/Q75257184>
+  # Sir Henry Neville, 1437~ - 1469-07-26
+  gen:father <https://www.wikidata.org/wiki/Q5542842> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75387464> .
+  # oo Joanna Bourchier, 1442 - 1470-10-07, daughter of John Bourchier, 1st Lord Berners (1415~ - 1474-05, https://www.wikidata.org/wiki/Q7466342, 1st Lord Berners 1455-05-26, son of Sir William Bourchier, 1st Count of Eu (1374 - 1420-05-28, https://www.wikidata.org/wiki/Q4470065, 1st Count of Eu 1419-06-10, son of Sir William Bourchier (1330-06-01 - 1375, https://www.wikidata.org/wiki/Q75435319, son of Robert Bourchier, 1st Baron Bourchier (1306a - 1349-08-20, https://www.wikidata.org/wiki/Q2686624, 1st Baron Bourchier 1348-11-20, son of John Bourchier and Helen of Colchester) and oo 1329b Margaret Prayers (1307~ - 1360-06-01, https://www.wikidata.org/wiki/Q75435290, daughter of Sir Thomas Prayers and Anne of Essex)) and oo 1359-06b Eleanor of Louvain (1345-03-27 – 1397-10-05, https://www.wikidata.org/wiki/Q75435331, daughter of Sir John de Louvain (d.1347) and Margaret de Weston)) and oo 1405-11-20b Anne of Woodstock, Countess of Buckingham (1383-04 - 1438-10-16a/-24b, https://www.wikidata.org/wiki/Q537104 plantagenet.ttl)) and oo 1441-10-10a Marjorie Berners (1408-11-30a - 1475-12-18, https://www.wikidata.org/wiki/Q75387525, daughter of Sir Richard Berners and Philippe Dalyngridge)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75257184> , <https://www.wikidata.org/wiki/Q75257186> ;
+	gen:startDate "1463" .
 
 <https://www.wikidata.org/wiki/Q7328033>
   # Richard Neville, 2nd Lord Latymer, 1468 - 1530-12-28
   gen:father <https://www.wikidata.org/wiki/Q75257184> ;
   gen:mother <https://www.wikidata.org/wiki/Q75257186> .
-  # oo Anne Stafford, daughter of Sir Humphrey Stafford
+  # oo Anne Stafford, 1471~ - 1522b, daughter of Sir Humphrey Stafford of Grafton (1427~ - 1486-07-08, https://www.wikidata.org/wiki/Q20065311, son of Sir Humphrey Stafford (1400~ - 1450-06-18) and oo 1424 Eleanor Aylesbury (1406~ - 1481-06-15a)) and oo 1465 Katherine Fray (1447 - 1482-05-12, daughter of Sir John Fray (1419 - 1461-07-03, https://www.wikidata.org/wiki/Q16198725) and oo 1435-08-22a Agnes Danvers (1408~ - 1478-06, daughter of Sir John Danvers (d. 1448~) and Alice Verney))
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7328033> , <https://www.wikidata.org/wiki/Q75251444> ;
 	gen:startDate "1490~" .
+  # oo Margaret Danby (d. 1521-12-16)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7328033> , <#Margaret_Danby> ;
+	gen:startDate "1502-07-05" .
 
-<https://www.wikidata.org/wiki/Q75257180>
-  # Margaret Neville, b. 1494-03-09
-  gen:father <https://www.wikidata.org/wiki/Q7328033> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75251444> .
-  # oo Edward Willoughby, 1484a/1487b - 1517, https://www.wikidata.org/wiki/Q5345935
 <https://www.wikidata.org/wiki/Q15281133>
   # John Neville, 3rd Baron Latimer, 1493-11-17 - 1543-03-02
   gen:father <https://www.wikidata.org/wiki/Q7328033> ;
@@ -486,284 +692,492 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q15281133> , <https://www.wikidata.org/wiki/Q75251445> ;
 	gen:startDate "1520b" .
+  # oo Elizabeth Musgrave, 1498 - 1533b, daughter of Sir Edward Musgrave and Joan Ward
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q15281133> , <https://www.wikidata.org/wiki/Q75240211> ;
+	gen:startDate "1528-06-20" .
+  # oo Catherine Parr, 1512 – 1548-09-07, daughter of Sir Thomas Parr and Maud Green
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q15281133> , <https://www.wikidata.org/wiki/Q192943> ;
+	gen:startDate "1534" .
+<https://www.wikidata.org/wiki/Q75257180>
+  # Margaret Neville, 1494-03-09 - 1532-10-23
+  gen:father <https://www.wikidata.org/wiki/Q7328033> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75251444> .
+  # oo 1505-11-22 Edward Willoughby, 1484a/1487b - 1517, https://www.wikidata.org/wiki/Q5345935
+<https://www.wikidata.org/wiki/Q8016086>
+  gen:name "William Neville"@en ;
+  gen:birthDate "1497-07-15" ;
+  gen:deathDate "1545~" ;
+  gen:father <https://www.wikidata.org/wiki/Q7328033> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75251444> .
+  # oo Elizabeth Greville, b. 1501, daughter of Sir Giles Greville (d. 1528-04-01, https://www.wikidata.org/wiki/Q76124479, son of Richard Greville (b. 1431) and Elena Herbert (b. 1440, daughter of William ap Thomas and Gwladus ferch Dafydd)) and Anne Rede (daughter of Sir William Rede of Boarstall)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8016086> , <https://www.wikidata.org/wiki/Q76147461> ;
+	gen:startDate "1529-04-01b" .
+<https://www.wikidata.org/wiki/Q75257205>
+  # Elizabeth Neville, b. 1500-04-28
+  gen:father <https://www.wikidata.org/wiki/Q7328033> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75251444> .
+  # oo 1531b Sir Christopher Danby, 1505~ – 1571-06-14, https://www.wikidata.org/wiki/Q5112197, son of Christopher Danby (1470~ - 1518-03-17, https://www.wikidata.org/wiki/Q18527088, son of James Danby and Agnes Langton) and oo 1493-11 Margaret Scrope (d. 1531-03-25, https://www.wikidata.org/wiki/Q76354471, daughter of https://www.wikidata.org/wiki/Q23770663 and https://www.wikidata.org/wiki/Q75251747)
 
-#<https://www.wikidata.org/wiki/Q6250307>
+<https://www.wikidata.org/wiki/Q6250307>
   # John Neville, 4th Baron Latimer, 1520 - 1577-04-22
-#  gen:father <https://www.wikidata.org/wiki/Q15281133> ;
-#  gen:mother <https://www.wikidata.org/wiki/Q75251445> .
+  gen:father <https://www.wikidata.org/wiki/Q15281133> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75251445> .
   # oo Lady Lucy Somerset, 1524 - 1583-02-23
   []
     gen:spouse <https://www.wikidata.org/wiki/Q6250307> , <https://www.wikidata.org/wiki/Q6485877> ;
-	gen:startDate "1545" .
+	gen:startDate "1545~" .
+<https://www.wikidata.org/wiki/Q75238318>
+  gen:name "Richard Neville"@en ;
+  gen:birthDate "1523" ;
+  gen:deathDate "1590-05-27" ;
+  gen:father <https://www.wikidata.org/wiki/Q8016086> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76147461> .
+  # oo Barbara Arden, b. 1528~, daughter of William Arden of Park Hall and Elizabeth Conway (daughter of Edward Conway of Arrow)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75238318> , <https://www.wikidata.org/wiki/Q75238323> .
 
 <https://www.wikidata.org/wiki/Q5362658>
-  # Elizabeth Neville, 1545 - 1630-06-21~
+  # Elizabeth Neville, 1545/1550~ - 1630-06-21~
   gen:father <https://www.wikidata.org/wiki/Q6250307> ;
   gen:mother <https://www.wikidata.org/wiki/Q6485877> .
   # oo Sir John Danvers, 1540 - 1594-12-10, https://www.wikidata.org/wiki/Q16828870 (temple.ttl)
   # TODO move here
+  # oo 1594a Sir Edmund Carey, 1558 - 1637-09-12, https://www.wikidata.org/wiki/Q5339365, son of Henry Carey, 1st Baron Hunsdon of Hunsdon (1526-03-04 - 1596-07-23, https://www.wikidata.org/wiki/Q2553789, 1st Baron Hunsdon of Hunsdon, co. Hertford 1559-01-13, son of https://www.wikidata.org/wiki/Q2577246 William Cary and https://www.wikidata.org/wiki/Q209502 Lady Mary Boleyn) and oo 1545-05-21a Ann Morgan (1529 - 1607-01-19, https://www.wikidata.org/wiki/Q4768660, daughter of Sir Thomas Morgan and Anne Whitney)
+<https://www.wikidata.org/wiki/Q75249631>
+  # Katherine Neville, 1546 - 1596-10-28
+  gen:father <https://www.wikidata.org/wiki/Q6250307> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6485877> .
+  # oo 1562-01-25b Henry Percy, 2nd (8th) Earl of Northumberland, 1532~ - 1585-06-21, https://www.wikidata.org/wiki/Q1790391
+  # oo 1588 Francis Fitton of Binfield, d. 1608-06-17, https://www.wikidata.org/wiki/Q75252821
 <https://www.wikidata.org/wiki/Q75256837>
   # Dorothy Neville, 1547 – 1609-03-23
   gen:father <https://www.wikidata.org/wiki/Q6250307> ;
   gen:mother <https://www.wikidata.org/wiki/Q6485877> .
   # oo 1564-11-27 Thomas Cecil, 1st Earl of Exeter, 1542-05-05 - 1623-02-08, https://www.wikidata.org/wiki/Q1920626
-<https://www.wikidata.org/wiki/Q75249631>
-  # Katherine Neville, d. 1596-10-28
+<https://www.wikidata.org/wiki/Q75257223>
+  gen:name "Lucy Neville"@en ;
+  gen:birthDate "1549~" ;
+  gen:deathDate "1608-04-30" ;
   gen:father <https://www.wikidata.org/wiki/Q6250307> ;
   gen:mother <https://www.wikidata.org/wiki/Q6485877> .
-  # oo 1562-01-25b Henry Percy, 2nd (8th) Earl of Northumberland, 1532~ - 1585-06-21, https://www.wikidata.org/wiki/Q1790391
+  # oo 1570~ Sir William Cornwallis, of Brome, 1549~ – 1611-11-13, https://www.wikidata.org/wiki/Q26791205 or https://www.wikidata.org/wiki/Q75257229, son of Sir Thomas Cornwallis (1518/1519 – 1604, https://www.wikidata.org/wiki/Q7788620https://www.wikidata.org/wiki/Q75258313) and Anne Jerningham (https://www.wikidata.org/wiki/Q75398288)
+<https://www.wikidata.org/wiki/Q5339693>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75238321> ;
+  gen:name "Edmund Neville"@en ;
+  gen:birthDate "1555b" ;
+  gen:deathDate "1620~" ;
+  gen:father <https://www.wikidata.org/wiki/Q75238318> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75238323> .
+  # oo Jane Martignis, Dame de Colombe, d. 1583-11-02a
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5339693> , <https://www.wikidata.org/wiki/Q75238325> ;
+	gen:startDate "1583b" .
+  # oo Jane Smyth, d. 1647, daughter of Richard Smyth
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5339693> , <https://www.wikidata.org/wiki/Q75238327> ;
+	gen:startDate "1588-01-07" .
+
+<#Francesina_Neville>
+  # Francesina Neville, b. 1605~
+  gen:father <https://www.wikidata.org/wiki/Q5339693> .
+  # and Francesina Townshend, b. 1583-12-12b, sister of Aurelian Townshend (1583-12-12b - 1649, https://www.wikidata.org/wiki/Q4822234) and daughter of John Townshend, of Dereham (b. 1540~, son of George Townshend (b. 1510~, son of https://www.wikidata.org/wiki/Q7359022 Roger Townsend and Anne deBrewse)) and Elizabeth Catlin
+  # oo Hayward Townshend, 1577~ - 1621-04-02b, https://www.wikidata.org/wiki/Q5749825, son of Henry Townshend (1537~ - 1621~, https://www.wikidata.org/wiki/Q22998075, son of https://www.wikidata.org/wiki/Q7350445 Robert Townsend and oo 1516-11-01 Dame Alice Poppy (1500 - 1576-11-13, daughter of Robert Poppy and Anne Mordox)) and oo Susan Hayward (1547~ - 1592~, daughter of Rowland Hayward and Joan Tillesworth)
 
 
 # Baron Bergavenny
+# 2nd creation
 <https://www.wikidata.org/wiki/Q5344605>
-  # Edward Neville, 3rd Baron Bergavenny, 1414~ - 1476-10-18
+  # Edward Neville, de facto 3rd (de jure 1st) Baron Bergavenny, 1414~ - 1476-10-18
   # 1st Lord Abergavenny 1450-09-05
   gen:father <https://www.wikidata.org/wiki/Q1972589> ;
   gen:mother <https://www.wikidata.org/wiki/Q535583> .
-  # oo Elizabeth de Beauchamp, 1415-09-16 - 1448-06-18
+  # oo Elizabeth de Beauchamp, 3rd Baroness Bergavenny, 1415-09-16 - 1448-06-18
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5344605> , <https://www.wikidata.org/wiki/Q5363790> ;
 	gen:startDate "1436" .
+  # oo Katherine Howard, 1414~ - 1478-06-29a, daughter of https://www.wikidata.org/wiki/Q75382602 and https://www.wikidata.org/wiki/Q75239847
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5344605> , <https://www.wikidata.org/wiki/Q75382599> ;
+	gen:startDate "1448-10-15a" .
 
+<https://www.wikidata.org/wiki/Q75238411>
+  # Alice Neville, 1435a - 1500~
+  gen:father <https://www.wikidata.org/wiki/Q5344605> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5363790> .
+  # oo 1460-02-04 Sir Thomas Grey, 1435a - 1460a, https://www.wikidata.org/wiki/Q75238412
 <https://www.wikidata.org/wiki/Q5542841>
-  # George Nevill, 4th Baron Bergavenny
-  # George Neville, 4th and de jure 2nd Baron Abergavenny
+  # George Neville, de facto 4th (de jure 2nd) Baron Abergavenny
   gen:birthDate "1440~" ;
   gen:deathDate "1492-09-20" ;
   gen:father <https://www.wikidata.org/wiki/Q5344605> ;
   gen:mother <https://www.wikidata.org/wiki/Q5363790> .
-  # oo Margaret Fenne, d. 1485-09-28
+  # oo Margaret Fenne, 1444 - 1485-09-28
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5542841> , <https://www.wikidata.org/wiki/Q19302315> ;
 	gen:startDate "1469b/1471-04-01b" .
-<https://www.wikidata.org/wiki/Q75238411>
-  # Alice Neville, b. 1425a/1448b
+  # oo Elizabeth Brent, 1440 - 1500
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5542841> , <https://www.wikidata.org/wiki/Q75237953> ;
+	gen:startDate "1485a" .
+<https://www.wikidata.org/wiki/Q75251176>
+  gen:name "Margaret Neville"@en ;
+  gen:birthDate "1448a" ;
+  gen:deathDate "1506-09-30" ;
   gen:father <https://www.wikidata.org/wiki/Q5344605> ;
-  gen:mother <https://www.wikidata.org/wiki/Q5363790> .
-  # oo 1460-02-04 Sir Thomas Grey, b. 1435a, https://www.wikidata.org/wiki/Q75238412
+  gen:mother <https://www.wikidata.org/wiki/Q75382599> .
+  # oo 1469~/1481b John Brooke, 7th Baron Cobham, 1446a/1450 - 1512-03-09, https://www.wikidata.org/wiki/Q23926554, son of https://www.wikidata.org/wiki/Q5342026 Edward Brooke, 6th Lord Cobham (of Kent) and https://www.wikidata.org/wiki/Q75251174 Elizabeth Tuchet
+<https://www.wikidata.org/wiki/Q75238419>
+  # Anne Neville, 1457a - 1481-02-26a
+  gen:father <https://www.wikidata.org/wiki/Q5344605> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75382599> .
+  # oo 1475 John Lestrange, 8th Lord Strange (of Knokyn), 1444~ - 1479-10-16, https://www.wikidata.org/wiki/Q75238421, son of https://www.wikidata.org/wiki/Q76154649 Richard Lestrange, 7th Lord Strange (of Knokyn) and https://www.wikidata.org/wiki/Q76297179 Elizabeth de Cobham
 
-<https://www.wikidata.org/wiki/Q1507985>
-  # George Nevill, 5th Baron Bergavenny
-  gen:birthDate "1469~" ;
-  gen:deathDate "1535" ;
+<https://www.wikidata.org/wiki/Q75387635>
+  # Jane Neville, d. 1538-10-26b
   gen:father <https://www.wikidata.org/wiki/Q5542841> ;
   gen:mother <https://www.wikidata.org/wiki/Q19302315> .
-  # oo Lady Joan FitzAlan, d. 1508-11-14
+  # oo 1520-05b Sir Henry Pole, 1st Lord Montagu, 1492~ - 1539-01-09, https://www.wikidata.org/wiki/Q5727081 (hastings.ttl), 1st Lord Montagu 1514-10-12 - 1538-12-02, son of https://www.wikidata.org/wiki/Q7528649 (plantagenet.ttl) Sir Richard Pole and https://www.wikidata.org/wiki/Q241806 Margaret Plantagenet, Countess of Salisbury
+  # TODO move to plantagenet.ttl
+<https://www.wikidata.org/wiki/Q75238449>
+  owl:sameAs <https://www.wikidata.org/wiki/Q19302295> ;
+  # Elizabeth Neville, 1467~ - 1500a
+  gen:father <https://www.wikidata.org/wiki/Q5542841> ;
+  gen:mother <https://www.wikidata.org/wiki/Q19302315> .
+  # oo 1491-07-01b Thomas Berkeley, Esq., 1470~ - 1500~, berkelay.ttl#Thomas_Berkeley
+<https://www.wikidata.org/wiki/Q1507985>
+  gen:name "George Nevill, 5th (3rd) Baron Bergavenny"@en ;
+  gen:birthDate "1469~" ;
+  gen:deathDate "1536-01-24b" ;
+  gen:father <https://www.wikidata.org/wiki/Q5542841> ;
+  gen:mother <https://www.wikidata.org/wiki/Q19302315> .
+  # oo Lady Joan FitzAlan, 1473a - 1508-11-14
   []
     gen:spouse <https://www.wikidata.org/wiki/Q1507985> , <https://www.wikidata.org/wiki/Q75237958> ;
 	gen:startDate "1494b" .
-  # oo Margaret Brent, d. 1516-08-03a, daughter of William Brent and Anne Rosmoderes, "1495-12-21b" .
-  # oo Lady Mary Stafford, daughter of Edward Stafford, 3rd Duke of Buckingham and Lady Eleanor Percy
+  # oo Margaret Brent, d. 1516-08-03a, daughter of William Brent, of Charing and Anne Rosmoderes
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1507985> , <https://www.wikidata.org/wiki/Q75237960> ;
+	gen:startDate "1495-12-21b/1513-09-05b" .
+  # oo Lady Mary Stafford, 1500~ - 1532b, daughter of https://www.wikidata.org/wiki/Q726243 and https://www.wikidata.org/wiki/Q5354355
+  # TODO move to plantagenet.ttl
   []
     gen:spouse <https://www.wikidata.org/wiki/Q1507985> , <https://www.wikidata.org/wiki/Q75254098> ;
 	gen:startDate "1519-06~" .
-  # oo Mary Brooke, d. 1535a "1520a" .
-<https://www.wikidata.org/wiki/Q75238540>
-  # Sir Thomas Neville, 1480~ - 1542-05-29
-  gen:father <https://www.wikidata.org/wiki/Q5542841> ;
-  gen:mother <https://www.wikidata.org/wiki/Q19302315> .
-  # oo Catherine Dacre, d. 1527-08-20
+  # oo Mary Brooke, 1504a - 1535a, daughter of Thomas Brooke, 8th Baron Cobham (d. 1529-07-19, https://www.wikidata.org/wiki/Q20713855 (finch.ttl), son of https://www.wikidata.org/wiki/Q23926554 and https://www.wikidata.org/wiki/Q75251176) and oo 1495~ Dorothy Heydon (1470~ - 1566-03-29, https://www.wikidata.org/wiki/Q75251179, daughter of Sir Henry Heydon (https://www.wikidata.org/wiki/Q75258069) and Anne Boleyn (https://www.wikidata.org/wiki/Q75612048, daughter of https://www.wikidata.org/wiki/Q1502943 and https://www.wikidata.org/wiki/Q61492689))
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q75238540> , <https://www.wikidata.org/wiki/Q75238541> ;
-	gen:startDate "1527b" .
+    gen:spouse <https://www.wikidata.org/wiki/Q1507985> , <https://www.wikidata.org/wiki/Q75237963> ;
+	gen:startDate "1520a/1527" .
 <https://www.wikidata.org/wiki/Q5344604>
-  # Sir Edward Neville, of Aldington Park, d. 1538-12-08
+  gen:name "Sir Edward Neville, of Aldington Park"@en ;
+  gen:birthDate "1471" ;
+  gen:deathDate "1538-12-08" ;
   gen:father <https://www.wikidata.org/wiki/Q5542841> ;
   gen:mother <https://www.wikidata.org/wiki/Q19302315> .
   # oo Eleanor Windsor, 1479 - 1531-03-25 (de_vere.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5344604> , <https://www.wikidata.org/wiki/Q16738391> ;
 	gen:startDate "1529-04-06b" .
+<https://www.wikidata.org/wiki/Q75238540>
+  # Sir Thomas Neville, 1480~/1484~ - 1542-05-29
+  gen:father <https://www.wikidata.org/wiki/Q5542841> ;
+  gen:mother <https://www.wikidata.org/wiki/Q19302315> .
+  # oo Catherine Dacre, d. 1527-08-20
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75238540> , <https://www.wikidata.org/wiki/Q75238541> ;
+	gen:startDate "1527b" .
+  # oo Elizabeth Bryce, d. 1532, daughter of James Bryce and Elizabeth Chester (d. 1504)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75238540> , <https://www.wikidata.org/wiki/Q5362295> ;
+	gen:startDate "1532-08-28" .
 
-<https://www.wikidata.org/wiki/Q75238451>
-  # Lady Jane Neville, d. 1538-10-26b
+<https://www.wikidata.org/wiki/Q75238434>
+  # Lady Elizabeth Neville, b. 1495b
   gen:father <https://www.wikidata.org/wiki/Q1507985> ;
   gen:mother <https://www.wikidata.org/wiki/Q75237958> .
-  # oo 1510-05/1520-05b Henry Pole, 1st Baron Montagu, 1492 - 1539-01, https://www.wikidata.org/wiki/Q5727081 (hastings.ttl)
-  # TODO move to cecil.ttl
+  # oo 1517-07-16b Henry Daubeney, 1st Earl of Bridgwater, 1493-12 - 1548-04-12, https://www.wikidata.org/wiki/Q5720194, 2nd Baron Daubeney 1508-05-22, 1st Earl of Bridgwater 1538-07-19, son of Giles Daubeney, 1st Baron Daubeney (1451-06-01 - 1508-05-22, https://www.wikidata.org/wiki/Q5561632, 1st Baron Daubeney 1486-03-12, son of Sir William Daubeney and Alice Stourton) and oo Elizabeth Arundell (https://www.wikidata.org/wiki/Q75269257, daughter of https://www.wikidata.org/wiki/Q19870802 Sir John Arundell and https://www.wikidata.org/wiki/Q75269248 Katherine Chideocke)
+<https://www.wikidata.org/wiki/Q75238451>
+  # Joan Neville, 1495~ - 1538-10-26b
+  gen:father <https://www.wikidata.org/wiki/Q1507985> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75237958> .
+  # oo 1510-05/1520-05b Sir Henry Pole, 1st Lord Montagu, 1492~ - 1539-01-09, https://www.wikidata.org/wiki/Q5727081 (hastings.ttl), 1st Lord Montagu 1514-10-12 - 1538-12-02, son of https://www.wikidata.org/wiki/Q7528649 (plantagenet.ttl) Sir Richard Pole and https://www.wikidata.org/wiki/Q241806 Margaret Plantagenet, Countess of Salisbury
+  # TODO move to plantagenet.ttl
+<https://www.wikidata.org/wiki/Q75251180>
+  gen:name "Dorothy Nevill"@en ;
+  gen:birthDate "1520a" ;
+  gen:deathDate "1559-09-22" ;
+  gen:father <https://www.wikidata.org/wiki/Q1507985> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75254098> .
+  # oo William Brooke, 10th Baron Cobham, 1527-11-01 – 1597-03-06, https://www.wikidata.org/wiki/Q8005984 (cecil.ttl), son of https://www.wikidata.org/wiki/Q5537283 (finch.ttl, murray.ttl) George Brooke, 9th Lord Cobham (of Kent) and https://www.wikidata.org/wiki/Q4768189 Anne Bray
+<https://www.wikidata.org/wiki/Q75238453>
+  # Ursula Neville, 1522a - 1575
+  gen:father <https://www.wikidata.org/wiki/Q1507985> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75254098> .
+  # oo Sir Warham St. Leger, 1525~ - 1597, https://www.wikidata.org/wiki/Q7969377 or https://www.wikidata.org/wiki/Q75238455, son of Sir Anthony St. Leger and Agnes Warham
 <https://www.wikidata.org/wiki/Q6779529>
-  # Lady Mary Neville, 1524 - 1571
+  # Mary Neville, 1524/1527~ - 1565-12-18a/1571/1576
   gen:father <https://www.wikidata.org/wiki/Q1507985> ;
   gen:mother <https://www.wikidata.org/wiki/Q75254098> .
-  # oo 1536 Thomas Fiennes, 9th Baron Dacre, 1517 - 1545, https://www.wikidata.org/wiki/Q7789582
+  # oo 1536 Thomas Fiennes, 9th Baron Dacre, 1517 - 1541-06-29, https://www.wikidata.org/wiki/Q7789582 (dacre.ttl)
 <https://www.wikidata.org/wiki/Q5726274>
-  # Henry Neville, 4th (6th) Lord Abergavenny, 1527a/1535b - 1587-02-10
+  # Henry Neville, 6th (4th) Lord Abergavenny, 1527a/1535b - 1587-02-10
   gen:father <https://www.wikidata.org/wiki/Q1507985> ;
   gen:mother <https://www.wikidata.org/wiki/Q75254098> .
-  # oo Lady Frances Manners, d. 1576-09~
+  # oo Lady Frances Manners, 1532~ - 1576-09~
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5726274> , <https://www.wikidata.org/wiki/Q5478865> ;
 	gen:startDate "1556-01-31b" .
+  # oo Elizabeth Darrell, d. 1602-02a, daughter of Stephen Darrell and Philippe Weldon
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5726274> , <https://www.wikidata.org/wiki/Q75237965> ;
+	gen:startDate "1586b" .
+<https://www.wikidata.org/wiki/Q16738441>
+  # Catherine Neville, 1517~ - 1576-04-30a
+  gen:father <https://www.wikidata.org/wiki/Q5344604> ;
+  gen:mother <https://www.wikidata.org/wiki/Q16738391> .
+  # oo Clement Throckmorton, Esq., 1514~ - 1573-12-14, https://www.wikidata.org/wiki/Q5131420, son of Sir George Throckmorton and Katherine Vaux
+<https://www.wikidata.org/wiki/Q5344601>
+  gen:name "Sir Edward Nevill, de facto 7th (5th) Baron Bergavenny"@en ;
+  gen:birthDate "1518/1526~" ;
+  gen:deathDate "1588-02-10" ;
+  gen:father <https://www.wikidata.org/wiki/Q5344604> ;
+  gen:mother <https://www.wikidata.org/wiki/Q16738391> .
+  # oo Katharine Brome, 1522 - 1587, daughter of Sir John Brome and Margaret Rowse
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5344601> , <https://www.wikidata.org/wiki/Q75254284> ;
+	gen:startDate "1550b" .
+  # oo Grisold Hughes, d. 1613-06-15, daughter of Thomas Hughes and Elizabeth Dwnn
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5344601> , <https://www.wikidata.org/wiki/Q75254285> ;
+	gen:startDate "1588b" .
 <https://www.wikidata.org/wiki/Q75238531>
   # Frances Neville, 1519 - 1599-11-18
   gen:father <https://www.wikidata.org/wiki/Q5344604> ;
   gen:mother <https://www.wikidata.org/wiki/Q16738391> .
-  # oo Sir Edward Waldegrave, 1516~ – 1561-09-01, https://www.wikidata.org/wiki/Q5345772
-  # oo Lord Chidiock Paulet, 1521b - 1574-08-17, https://www.wikidata.org/wiki/Q5096614
-#<https://www.wikidata.org/wiki/Q5344601>
-  # Sir Edward Nevill, 7th Baron Bergavenny, 1526 - 1588-02-10
-#  gen:father <https://www.wikidata.org/wiki/Q5344604> ;
-#  gen:mother <https://www.wikidata.org/wiki/Q16738391> .
-  # oo Katharine Brome
-#  []
-#    gen:spouse <https://www.wikidata.org/wiki/Q5344601> , <https://www.wikidata.org/wiki/Q75254284> .
-<https://www.wikidata.org/wiki/Q5726285>
+  # oo 1551b Sir Edward Waldegrave, 1516~ – 1561-09-01, https://www.wikidata.org/wiki/Q5345772
+  # oo 1562b Lord Chidiock Paulet, 1521b - 1574-08-17, https://www.wikidata.org/wiki/Q5096614
+<https://www.wikidata.org/wiki/Q5726285> # -> Neville of Billingbere
   # Sir Henry Neville, of Billingbere, 1520~ –  1593-01-13
   gen:father <https://www.wikidata.org/wiki/Q5344604> ;
   gen:mother <https://www.wikidata.org/wiki/Q16738391> .
-  # oo Elizabeth Gresham, d. 1573-11-04
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q5726285> , <https://www.wikidata.org/wiki/Q75270757> .
+<https://www.wikidata.org/wiki/Q75238549>
+  gen:name "Margaret Neville"@en ;
+  gen:deathDate "1575-12-25" ;
+  gen:father <https://www.wikidata.org/wiki/Q75238540> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75238541> .
+  # oo 1536-05-01 Sir Robert Southwell, 1506~ - 1559, https://www.wikidata.org/wiki/Q7349929, son of Francis Southwell and Dorothy Tendring
+  # oo William Plumbe
 
 <https://www.wikidata.org/wiki/Q75254101>
   # Mary Neville, 3rd Baroness le Despenser, 1554-03-25 - 1626-06-28
   # 3rd Baroness le Despenser [1357], suo jure 1604-05-25
+  # de jure 7th and 5th Baroness Bergavenny
   gen:father <https://www.wikidata.org/wiki/Q5726274> ;
   gen:mother <https://www.wikidata.org/wiki/Q5478865> .
-  # oo 1574-12-12 Sir Thomas Fane, 1510~ – 1589-03-13, https://www.wikidata.org/wiki/Q7789512
-#<https://www.wikidata.org/wiki/Q5344603>
-  # Edward Nevill, 8th Baron Bergavenny, 1550 - 1622-12-01
-#  gen:father <https://www.wikidata.org/wiki/Q5344601> ;
-#  gen:mother <https://www.wikidata.org/wiki/Q75254284> .
-  # oo Rachel Lennard
-#  []
-#    gen:spouse <https://www.wikidata.org/wiki/Q5344603> , <https://www.wikidata.org/wiki/Q75251181> .
-<https://www.wikidata.org/wiki/Q2775812>
-  # Sir Henry Neville, of Billingbear House, 1562/1564~ - 1615-07-10
-  gen:father <https://www.wikidata.org/wiki/Q5726285> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75270757> .
-  # oo Ann Killigrew, d. 1632
+  # oo 1574-12-12 Sir Thomas Fane, 1538~ – 1589-03-13, https://www.wikidata.org/wiki/Q7789512
+  # Barons Bergavenny [1st creation 1392, 2nd creation 1450]:
+  # -> Francis Fane, 1st Earl of Westmorland, 1580-02-01 – 1629-03-23, https://www.wikidata.org/wiki/Q5480881
+<https://www.wikidata.org/wiki/Q5344603>
+  gen:name "Edward Nevill, de facto 8th (de jure 1st) Baron Bergavenny"@en ;
+  # 6th Lord Abergavenny 1589-02-10
+  # 3rd creation 1604-05-25
+  gen:birthDate "1550~" ;
+  gen:deathDate "1622-12-01" ;
+  gen:father <https://www.wikidata.org/wiki/Q5344601> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75254284> .
+  # oo Rachel Lennard, 1553 - 1616-10-15, daughter of John Lennard and Elizabeth Harman
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q2775812> , <https://www.wikidata.org/wiki/Q75270761> ;
-	gen:startDate "1584-12" .
+    gen:spouse <https://www.wikidata.org/wiki/Q5344603> , <https://www.wikidata.org/wiki/Q75251181> ;
+	gen:startDate "1580~" .
+<https://www.wikidata.org/wiki/Q75238582>
+  owl:sameAs <https://www.wikidata.org/wiki/Q16738389> ;
+  # Grisel Neville, b. 1561
+  gen:father <https://www.wikidata.org/wiki/Q5344601> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75254284> .
+  # oo Sir Henry Poole, 1564~ - 1632-11-03, https://www.wikidata.org/wiki/Q11803632 or https://www.wikidata.org/wiki/Q75238583, son of Edward Poole and Margaret Walton
 
-<https://www.wikidata.org/wiki/Q5726277>
-  # Henry Neville, 7th (or 9th) Baron Abergavenny, 1580b - 1641-12~
-  gen:father <https://www.wikidata.org/wiki/Q5344603> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75251181> .
-  # oo Catherine Vaux, daughter of https://www.wikidata.org/wiki/Q27923972 George Vaux and https://www.wikidata.org/wiki/Q76199404 Elizabeth Roper
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q5726277> , <https://www.wikidata.org/wiki/Q75254323> .
-  # oo Lady Mary Sackville
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q5726277> , <https://www.wikidata.org/wiki/Q75254322> ;
-	gen:startDate "1601b" .
-<https://www.wikidata.org/wiki/Q75238631>
-  # Mary Neville, d. 1648-07~
-  gen:father <https://www.wikidata.org/wiki/Q5344603> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75251181> .
-  # oo 1608b George Goring, 1st Earl of Norwich, 1585-04-28 – 1663-01-06, https://www.wikidata.org/wiki/Q5539826 (grey.ttl)
-<https://www.wikidata.org/wiki/Q75254288>
-  # Sir Christopher Neville, 1611b - 1649
-  gen:father <https://www.wikidata.org/wiki/Q5344603> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75251181> .
-  # oo Mary d'Arcy, daughter of Thomas d'Arcy and Camilla Guicciardini
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q75254288> , <https://www.wikidata.org/wiki/Q75254315> .
 <https://www.wikidata.org/wiki/Q75238626>
   # Elizabeth Nevill, 1577 - 1642-08-09
   gen:father <https://www.wikidata.org/wiki/Q5344603> ;
   gen:mother <https://www.wikidata.org/wiki/Q75251181> .
   # oo 1594-03-04 Sir John Grey, 1570~ - 1611-11, https://www.wikidata.org/wiki/Q54313284
-#<https://www.wikidata.org/wiki/Q75270764>
-  # Sir Henry Neville, of Billingbere, d. 1629-06-29
-#  gen:father <https://www.wikidata.org/wiki/Q2775812> ;
-#  gen:mother <https://www.wikidata.org/wiki/Q75270761> .
-  # Elizabeth Smythe
-#  []
-#    gen:spouse <https://www.wikidata.org/wiki/Q75270764> , <https://www.wikidata.org/wiki/Q75270765> .
-<https://www.wikidata.org/wiki/Q75238508>
-  # Elizabeth Nevill, 1610 – 1657-01-04
-  gen:father <https://www.wikidata.org/wiki/Q2775812> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75270761> .
-  # oo Sir Henry Berkeley, 1579 – 1667, https://www.wikidata.org/wiki/Q5718104
-<https://www.wikidata.org/wiki/Q75238520>
-  # Mary Neville, 1613 – 1642-10-28
-  gen:father <https://www.wikidata.org/wiki/Q2775812> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75270761> .
-  # oo Sir Edward Lewknor, 1587-01-04 - 1618-03-01, https://www.wikidata.org/wiki/Q53742435 (townshend.ttl)
-  # TODO move here
+  # oo 1617 Sir John Bingley, 1572 - 1638, https://www.wikidata.org/wiki/Q20708122 or https://www.wikidata.org/wiki/Q75238629
+<https://www.wikidata.org/wiki/Q5726277>
+  # Henry Neville, de facto 9th (de jure 2nd) Baron Abergavenny, 1580b - 1641-12~
+  gen:father <https://www.wikidata.org/wiki/Q5344603> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75251181> .
+  # oo Lady Mary Sackville
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5726277> , <https://www.wikidata.org/wiki/Q75254322> ;
+	gen:startDate "1601b" .
+  # oo Catherine Vaux, 1592a - 1649-07-07~, daughter of https://www.wikidata.org/wiki/Q27923972 (brienne.ttl) George Vaux and https://www.wikidata.org/wiki/Q76199404 Elizabeth Roper
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5726277> , <https://www.wikidata.org/wiki/Q75254323> ;
+	gen:startDate "1616b" .
+<https://www.wikidata.org/wiki/Q75238631>
+  # Mary Neville, 1590 - 1648-07~
+  gen:father <https://www.wikidata.org/wiki/Q5344603> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75251181> .
+  # oo 1608b George Goring, 1st Earl of Norwich, 1585-04-28 – 1663-01-06, https://www.wikidata.org/wiki/Q5539826 (grey.ttl)
+<https://www.wikidata.org/wiki/Q75254288>
+  gen:name "Sir Christopher Neville, of Newton St. Loe"@en ;
+  gen:birthDate "1581/1611b" ;
+  gen:deathDate "1649-06-07" ;
+  gen:father <https://www.wikidata.org/wiki/Q5344603> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75251181> .
+  # oo Mary d'Arcy, b. 1580b, daughter of Thomas d'Arcy and Camilla Guicciardini
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75254288> , <https://www.wikidata.org/wiki/Q75254315> .
 
 <https://www.wikidata.org/wiki/Q75238606>
   # Elizabeth Neville, b. 1641~
   gen:father <https://www.wikidata.org/wiki/Q5726277> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75254323> .
-  # oo 1651 Thomas Stonor, 1626 - 1683, https://www.wikidata.org/wiki/Q75238609
+  gen:mother <https://www.wikidata.org/wiki/Q75254322> .
+  # oo 1651 Thomas Stonor, 1626 - 1683, https://www.wikidata.org/wiki/Q75238609 (talbot.ttl)
   # TODO move here
-#<https://www.wikidata.org/wiki/Q5542836>
-  # George Nevill, 11th Baron Bergavenny, d. 1666-06-02
-#  gen:father <https://www.wikidata.org/wiki/Q5726277> ;
-#  gen:mother <https://www.wikidata.org/wiki/Q75254323> .
-  # oo Mary Gifford
-#  []
-#    gen:spouse <https://www.wikidata.org/wiki/Q5542836> , <https://www.wikidata.org/wiki/Q75254326> .
+<https://www.wikidata.org/wiki/Q75238590>
+  # Cecily Neville, 1604~ - 1652a
+  gen:father <https://www.wikidata.org/wiki/Q5726277> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75254322> .
+  # oo 1617-07-12 FitzWilliam Coningsby, of Hampton Court, 1589~ - 1666-08-23b, https://www.wikidata.org/wiki/Q8563474, son of https://www.wikidata.org/wiki/Q7788561 Sir Thomas Coningsby and https://www.wikidata.org/wiki/Q7184715 Phillipa Fitzwilliam
+  # -> Humphrey Coningsby, 1622-09-22b - 1671-07-02/1692a, https://www.wikidata.org/wiki/Q5941345
+  #   oo Lettice Loftus, d. 1674a, https://www.wikidata.org/wiki/Q75757696, daughter of Arthur Loftus and Dorothy Boyle
+  #   -> Thomas Coningsby, 1st Earl of Coningsby, 1656-11-02 - 1729-05-01, https://www.wikidata.org/wiki/Q7788563 (fitzgerald.ttl)
+<https://www.wikidata.org/wiki/Q75254330>
+  # Sir Thomas Neville, d. 1628-05~
+  gen:father <https://www.wikidata.org/wiki/Q5726277> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75254322> .
+  # oo Hon. Frances Mordaunt, daughter of https://www.wikidata.org/wiki/Q75238589 Henry Mordaunt, 4th Lord Mordaunt and https://www.wikidata.org/wiki/Q75497878 Hon. Margaret Compton
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75254330> , <https://www.wikidata.org/wiki/Q75238587> .
+<https://www.wikidata.org/wiki/Q6250300>
+  gen:name "John Nevill, 10th Baron Bergavenny"@en ;
+  gen:birthDate "1614~" ;
+  gen:deathDate "1662-10-23" ;
+  gen:father <https://www.wikidata.org/wiki/Q5726277> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75254323> .
+  # oo Elizabeth Chamberlaine, 1614 - 1669-11a/1693b, daughter of John Chamberlaine and Katharine Plowden
+  []
+	gen:spouse <https://www.wikidata.org/wiki/Q6250300>, <https://www.wikidata.org/wiki/Q75237982> .
+<https://www.wikidata.org/wiki/Q75238602>
+  gen:name "Catherine Neville"@en ;
+  gen:deathDate "1654a" ;
+  gen:father <https://www.wikidata.org/wiki/Q5726277> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75254323> .
+  # oo Sir Robert Howard, 1585 – 1653-04-22, https://www.wikidata.org/wiki/Q7345639, son of https://www.wikidata.org/wiki/Q335457 and https://www.wikidata.org/wiki/Q5052734
+  # oo John Berry, https://www.wikidata.org/wiki/Q75238605
+<https://www.wikidata.org/wiki/Q5542836>
+  # George Nevill, de facto 11th Baron Bergavenny, d. 1666-06-02
+  gen:father <https://www.wikidata.org/wiki/Q5726277> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75254323> .
+  # oo Mary Gifford, 1630 - 1669-11-10a/-13b (oo 1666a Sir Charles Shelley, 2nd Baronet, d. 1681, https://www.wikidata.org/wiki/Q75238000, son of Sir William Shelley and Christiana Maria Vantelet), daughter of Dr. Thomas Gifford and Anne Brooksby
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5542836> , <https://www.wikidata.org/wiki/Q75254326> .
 <https://www.wikidata.org/wiki/Q75238620>
   # Anne Neville, 1611~ - 1660-08-22
   gen:father <https://www.wikidata.org/wiki/Q75254288> ;
   gen:mother <https://www.wikidata.org/wiki/Q75254315> .
   # oo 1628-12-17 John Lucas, 1st Baron Lucas of Shenfield, 1606-10-23 - 1671-07-02, https://www.wikidata.org/wiki/Q15994594 (cavendish.ttl)
-#<https://www.wikidata.org/wiki/Q75254310>
-  # Richard Neville
-#  gen:father <https://www.wikidata.org/wiki/Q75254288> ;
-#  gen:mother <https://www.wikidata.org/wiki/Q75254315> .
-  # oo Sophia Carew
-#  []
-#    gen:spouse <https://www.wikidata.org/wiki/Q75254310> , <https://www.wikidata.org/wiki/Q75254312> .
-#<https://www.wikidata.org/wiki/Q7328035>
-  # Richard Neville, of Billingbere, 1615-05-30 - 1676-10-07
-#  gen:father <https://www.wikidata.org/wiki/Q75270764> ;
-#  gen:mother <https://www.wikidata.org/wiki/Q75270765> .
-  # oo Anne Heydon
-#  []
-#    gen:spouse <https://www.wikidata.org/wiki/Q7328035> , <https://www.wikidata.org/wiki/Q75270730> .
+<https://www.wikidata.org/wiki/Q75254310>
+  # Richard Neville, of Newton St. Loe, d. 1643~
+  gen:father <https://www.wikidata.org/wiki/Q75254288> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75254315> .
+  # oo Sophia Carew, daughter of Sir George Carew
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75254310> , <https://www.wikidata.org/wiki/Q75254312> .
 
+<https://www.wikidata.org/wiki/Q5542837>
+  gen:name "George Nevill, 12th Baron Bergavenny"@en ;
+  gen:birthDate "1665-04-21" ;
+  gen:deathDate "1695-03-26" ;
+  gen:father <https://www.wikidata.org/wiki/Q5542836> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75254326> .
+  # oo Hon. Honora Belasyse, 1665 - 1706-01-01, daughter of https://www.wikidata.org/wiki/Q6221390 (murray.ttl) and https://www.wikidata.org/wiki/Q75238002
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5542837>, <https://www.wikidata.org/wiki/Q16738384> .
 <https://www.wikidata.org/wiki/Q75238004>
-  # Bridget Neville
+  gen:name "Bridget/Winifred Neville"@en ;
+  gen:deathDate "1687-05-24b" ;
   gen:father <https://www.wikidata.org/wiki/Q5542836> ;
   gen:mother <https://www.wikidata.org/wiki/Q75254326> .
   # oo Sir John Shelley, 3rd Baronet, d. 1703-04-25, https://www.wikidata.org/wiki/Q75238005 (noel.ttl)
   # TODO move here
-#<https://www.wikidata.org/wiki/Q75254307>
+<https://www.wikidata.org/wiki/Q75254307>
   # George Neville, d. 1665
-#  gen:father <https://www.wikidata.org/wiki/Q75254310> ;
-#  gen:mother <https://www.wikidata.org/wiki/Q75254312> .
-  # oo Mary Whitelock
-#  []
-#    gen:spouse <https://www.wikidata.org/wiki/Q75254307> , <https://www.wikidata.org/wiki/Q75254309> .
-#<https://www.wikidata.org/wiki/Q75270733>
-  # Catherine Neville, 1659-06-23 - 1720
-#  gen:father <https://www.wikidata.org/wiki/Q7328035> ;
-#  gen:mother <https://www.wikidata.org/wiki/Q75270730> .
-  # oo 1714 Richard Aldworth, of Stanlake, 1685 - 1738, https://www.wikidata.org/wiki/Q75270734
+  gen:father <https://www.wikidata.org/wiki/Q75254310> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75254312> .
+  # oo Mary Whitelock, daughter of Sir Bulstrode Whitelock
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75254307> , <https://www.wikidata.org/wiki/Q75254309> .
 
-#<https://www.wikidata.org/wiki/Q75254305>
+<https://www.wikidata.org/wiki/Q5542838>
+  gen:name "George Nevill, 13th Baron Bergavenny"@en ;
+  gen:birthDate "1659~" ;
+  gen:deathDate "1721-03-11" ;
+  gen:father <https://www.wikidata.org/wiki/Q75254307> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75254309> .
+  # oo Anne Walker, d. 1748-06-26, daughter of Nehemiah Walker
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5542838> , <https://www.wikidata.org/wiki/Q75254327> ;
+	gen:startDate "1698-10-22" ;
+	gen:separatedDate "1712-01-08a" .
+<https://www.wikidata.org/wiki/Q75254305>
   # Edward Neville, d. 1701-09-12
-#  gen:father <https://www.wikidata.org/wiki/Q75254307> ;
-#  gen:mother <https://www.wikidata.org/wiki/Q75254309> .
-  # oo Hannah Thorp
-#  []
-#    gen:spouse <https://www.wikidata.org/wiki/Q75254305> , <https://www.wikidata.org/wiki/Q75254306> .
+  gen:father <https://www.wikidata.org/wiki/Q75254307> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75254309> .
+  # oo Hannah Thorp, daughter of Jervoise Thorp
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75254305> , <https://www.wikidata.org/wiki/Q75254306> .
 
+<https://www.wikidata.org/wiki/Q5542839>
+  gen:name "George Nevill, 14th Baron Bergavenny"@en ;
+  gen:birthDate "1702-05-16" ;
+  gen:deathDate "1723-11-15" ;
+  gen:father <https://www.wikidata.org/wiki/Q5542838> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75254327> .
+  # oo Elizabeth Thornicroft, d. 1778-03-04, daughter of Edward Thornicroft and Mary Delaune
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5542839>, <https://www.wikidata.org/wiki/Q75254334> ;
+	gen:startDate "1723-02-21" .
+<https://www.wikidata.org/wiki/Q75238543>
+  # Hon. Jane Neville, 1703-03-08 - 1786-03-17
+  gen:father <https://www.wikidata.org/wiki/Q5542838> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75254327> .
+  # oo 1729-01-27 John Abel Walter, of Busbridge, 1701~ - 1767-10, https://www.wikidata.org/wiki/Q75238613, son of John Walter and Lucy Alleyne
+<https://www.wikidata.org/wiki/Q5344600>
+  gen:name "Edward Nevill, 15th Baron Bergavenny"@en ;
+  gen:birthDate "1705~" ;
+  gen:deathDate "1724-10-09" ;
+  gen:father <https://www.wikidata.org/wiki/Q5542838> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75254327> .
+  # oo Katharine Tatton, 1702 - 1729-12-04, daughter of Lt.-Gen. William Tatton
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5344600>, <https://www.wikidata.org/wiki/Q75254336> ;
+	gen:startDate "1724-05-06" .
 <https://www.wikidata.org/wiki/Q8016085>
-  # William Neville, 14th Lord Abergavenny, 1701b - 1744-09-21
+  gen:name "William Neville, de facto 16th (de jure 1st) Lord Abergavenny"@en ;
+  # 7th creation 1724
+  gen:birthDate "1701b" ;
+  gen:deathDate "1744-09-21" ;
   gen:father <https://www.wikidata.org/wiki/Q75254305> ;
   gen:mother <https://www.wikidata.org/wiki/Q75254306> .
+  # oo Katharine Tatton, 1702 - 1729-12-04, daughter of Lt.-Gen. William Tatton
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8016085> , <https://www.wikidata.org/wiki/Q75254336> ;
+	gen:startDate "1725-05-20" .
   # oo Lady Rebecca Herbert, d. 1758-10-20
   []
     gen:spouse <https://www.wikidata.org/wiki/Q8016085> , <https://www.wikidata.org/wiki/Q75254303> ;
 	gen:startDate "1732-05-25" .
-#<https://www.wikidata.org/wiki/Q8016085>
-  # William Nevill, 16th Baron Bergavenny, 1705 - 1744-09-31
-#  gen:father <https://www.wikidata.org/wiki/Q75254305> ;
-#  gen:mother <https://www.wikidata.org/wiki/Q75254306> .
-  # oo Katharine Tatton
-#  []
-#    gen:spouse <https://www.wikidata.org/wiki/Q8016085> , <https://www.wikidata.org/wiki/Q75254336> .
 
 <https://www.wikidata.org/wiki/Q5542840>
-  # George Neville, 1st Earl of Abergavenny, 1727-06-24 - 1785-09-09
-  # 15th Lord Abergavenny 1744-09-21
+  gen:name "George Neville, 1st Earl of Abergavenny"@en ;
+  # de facto 15th (de jure 2nd) Lord Abergavenny 1744-09-21
   # 1st Viscount Nevill, of Birling, Kent, 1st Earl of Abergavenny, co. Monmouth 1784-05-17
+  gen:birthDate "1727-06-24" ;
+  gen:deathDate "1785-09-09" ;
   gen:father <https://www.wikidata.org/wiki/Q8016085> ;
   gen:mother <https://www.wikidata.org/wiki/Q75254336> .
   # oo Henrietta Pelham, 1730-08-01 - 1768-08-31
@@ -771,21 +1185,60 @@
     gen:spouse <https://www.wikidata.org/wiki/Q5542840> , <https://www.wikidata.org/wiki/Q47318166> ;
 	gen:startDate "1753-02-05" .
 
-#<https://www.wikidata.org/wiki/Q7611230>
+<https://www.wikidata.org/wiki/Q7611230>
   # Henry Nevill, 2nd Earl of Abergavenny, 1755-02-22 - 1843-03-27
-#  gen:father <https://www.wikidata.org/wiki/Q5542840> ;
-#  gen:mother <https://www.wikidata.org/wiki/Q47318166> .
-  # oo Mary Robinson
-#  []
-#    gen:spouse <https://www.wikidata.org/wiki/Q7611230> , <https://www.wikidata.org/wiki/Q75254300> .
+  gen:birthDate "1755-02-22" ;
+  gen:deathDate "1843-03-27" ;
+  gen:father <https://www.wikidata.org/wiki/Q5542840> ;
+  gen:mother <https://www.wikidata.org/wiki/Q47318166> .
+  # oo Mary Robinson, 1759-03-24b - 1796-10-26, daughter of John Robinson (1727-07-15 - 1802-12-23, https://www.wikidata.org/wiki/Q16858299 or https://www.wikidata.org/wiki/Q75254355) and oo Elizabeth Smith (https://www.wikidata.org/wiki/Q75238029, daughter of Richard Smith and Elizabeth ???) or and oo 1759 Mary Crowe
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7611230> , <https://www.wikidata.org/wiki/Q75254300> ;
+	gen:startDate "1781-10-03" .
+<https://www.wikidata.org/wiki/Q75254338>
+  # Lady Henrietta Nevill, 1756-05-24 - 1833-04-02
+  gen:father <https://www.wikidata.org/wiki/Q5542840> ;
+  gen:mother <https://www.wikidata.org/wiki/Q47318166> .
+  # oo 1779-09-09 Sir John Berney, 7th Baronet, 1757~ - 1825-09-04, https://www.wikidata.org/wiki/Q75254467, son of https://www.wikidata.org/wiki/Q75435470 Sir Hanson Berney, 6th Baronet and https://www.wikidata.org/wiki/Q75435471 Catharine Woolball
+<https://www.wikidata.org/wiki/Q75254337>
+  # Rev. Hon. George Henry Nevill, of Flower Place, 1760-12-06 - 1844-08-07
+  gen:father <https://www.wikidata.org/wiki/Q5542840> ;
+  gen:mother <https://www.wikidata.org/wiki/Q47318166> .
+  # oo Caroline Walpole, 1765-07-16b - 1841-12-21, daughter of Hon. Richard Walpole (1728-12-05 - 1789-08-18, https://www.wikidata.org/wiki/Q75254341, son of Horatio Walpole, 1st Baron Walpole of Wolterton (1678-12-08 - 1757-02-05, https://www.wikidata.org/wiki/Q5902829 (manners.ttl), 1st Baron Walpole of Wolterton, co. Norfolk 1756-06-04, son of Robert Walpole and Mary Burwell) and oo 1720-07-21 Mary Magdalen Lombard (1695-04-03~ - 1783-03-09b, https://www.wikidata.org/wiki/Q75285345, daughter of Peter Lombard)) and oo 1758-11-22 Margaret Vanneck (1742b - 1818-05-09, https://www.wikidata.org/wiki/Q75285362, daughter of Sir Joshua Vanneck, 1st Baronet (d. 1777-03-06, https://www.wikidata.org/wiki/Q7528207, 1st Baronet Vanneck, of Putney, co. Surrey 1751-12-14, son of Cornelius Vanneck) and oo 1732-02-20 Mary Anne Daubuz (d. 1750-12-01, https://www.wikidata.org/wiki/Q75285372, daughter of Stephen Daubuz))
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75254337> , <https://www.wikidata.org/wiki/Q75254340> ;
+	gen:startDate "1787-05-12" .
 
-<https://www.wikidata.org/wiki/Q7611188>
-  # William Nevill, 4th Earl of Abergavenny, 1702-06-28 - 1868-08-17
+<https://www.wikidata.org/wiki/Q6250302>
+  # Rev. John Nevill, 3rd Earl of Abergavenny, 1789-12-25 - 1845-04-12
   gen:father <https://www.wikidata.org/wiki/Q7611230> ;
   gen:mother <https://www.wikidata.org/wiki/Q75254300> .
-  # oo Caroline Leeke
+<https://www.wikidata.org/wiki/Q7611188>
+  gen:name "William Nevill, 4th Earl of Abergavenny"@en ;
+  gen:birthDate "1792-06-28" ;
+  gen:deathDate "1868-08-17" ;
+  gen:father <https://www.wikidata.org/wiki/Q7611230> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75254300> .
+  # oo Caroline Leeke, 1791 - 1873-05-19, daughter of Ralph Leeke and Honora Frances Harvey Thursby
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q7611188> , <https://www.wikidata.org/wiki/Q75254299> .
+    gen:spouse <https://www.wikidata.org/wiki/Q7611188> , <https://www.wikidata.org/wiki/Q75254299> ;
+	gen:startDate "1824-09-07" .
+<https://www.wikidata.org/wiki/Q75254344>
+  # Rev. Henry Walpole Nevill, 1803-11-10 - 1837-03-03
+  gen:father <https://www.wikidata.org/wiki/Q75254337> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75254340> .
+  # oo Frances Bacon, 1808-05-20 - 1892-10-04, daughter of https://www.wikidata.org/wiki/Q75254349 Sir Edmund Bacon, 9th and 10th Baronet and https://www.wikidata.org/wiki/Q75271192 Mary Anne Elizabeth Bacon
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75254344> , <https://www.wikidata.org/wiki/Q75254347> ;
+	gen:startDate "1833-05-28" .
+<https://www.wikidata.org/wiki/Q75254345>
+  # Reginald Henry Nevill, 1807-09-14 - 1878-09-01
+  gen:father <https://www.wikidata.org/wiki/Q75254337> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75254340> .
+  # oo Lady Dorothy Fanny Walpole, d. 1913-03-24, daughter of Horatio Walpole, 3rd Earl of Orford (1783-06-14 - 1858-12-29, https://www.wikidata.org/wiki/Q5902822 (manners.ttl), son of https://www.wikidata.org/wiki/Q16741839 Horatio Walpole, 2nd Earl of Orford and spencer.ttl#Sophia_Churchill or https://www.wikidata.org/wiki/Q75285340 Sophia Churchill) and oo 1812-07-23 Mary Fawkener (1788 - 1860-02-04, https://www.wikidata.org/wiki/Q75242592, daughter of William Augustus Fawkener and Elizabeth Wright)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75254345> , <https://www.wikidata.org/wiki/Q75254351> ;
+	gen:startDate "1847-12-02" .
 
 <https://www.wikidata.org/wiki/Q8016084>
   gen:name "William Nevill, 1st Marquess of Abergavenny"@en ;
@@ -799,23 +1252,77 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q8016084> , <https://www.wikidata.org/wiki/Q75254295> ;
 	gen:startDate "1848-05-02" .
+<https://www.wikidata.org/wiki/Q16062798>
+  # Lady Caroline Emily Nevill, 1829-05-31 - 1887-02-23
+  gen:father <https://www.wikidata.org/wiki/Q7611188> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75254299> .
+<https://www.wikidata.org/wiki/Q19827984>
+  # Lady Henrietta Augusta Nevill, 1830-06-18 - 1912-01-25
+  gen:father <https://www.wikidata.org/wiki/Q7611188> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75254299> .
+  # oo 1855-07-19 Hon. Thomas Edward Lloyd-Mostyn, 1830-01-23 - 1861-05-08, https://www.wikidata.org/wiki/Q7791887, son of https://www.wikidata.org/wiki/Q5344181 Edward Lloyd-Mostyn, 2nd Baron Mostyn of Mostyn and https://www.wikidata.org/wiki/Q75271127 Lady Harriet Margaret Scott
+<https://www.wikidata.org/wiki/Q75254365>
+  # Lady Isabel Mary Frances Nevill, 1831-09-06 - 1915-12-18
+  gen:father <https://www.wikidata.org/wiki/Q7611188> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75254299> .
+  # oo 1854-02-23 Rev. Hon. Edward Vesey Bligh, 1829-02-28 - 1908-04-22, https://www.wikidata.org/wiki/Q18875715, son of https://www.wikidata.org/wiki/Q5341921 Edward Bligh, 5th Earl of Darnley and https://www.wikidata.org/wiki/Q41352242 Hon. Emma Jane Parnell
 <https://www.wikidata.org/wiki/Q45844089>
   # Hon. Ralph Pelham Nevill, of Birling Manor, 1832-11-28 - 1914-08-17
   gen:father <https://www.wikidata.org/wiki/Q7611188> ;
   gen:mother <https://www.wikidata.org/wiki/Q75254299> .
-  # oo Louisa Marianne Maclean, d. 1919-07-06 (marsham.ttl)
+  # oo Louisa Marianne Maclean, 1833-06-11b - 1919-07-06 (marsham.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q45844089> , <https://www.wikidata.org/wiki/Q75254379> ;
 	gen:startDate "1860-07-12" .
 
+<https://www.wikidata.org/wiki/Q75254369>
+  # Lady Cicely Louisa Nevill, 1851-09-10 - 1932-05-01
+  gen:father <https://www.wikidata.org/wiki/Q8016084> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75254295> .
+  # oo 1872-04-16 Hon. Charles Gathorne Gathorne-Hardy, 1841-05-11 - 1919-02-17, https://www.wikidata.org/wiki/Q75254399, son of https://www.wikidata.org/wiki/Q5527395 (clinton.ttl) Gathorne Gathorne-Hardy, 1st Earl of Cranbrook and https://www.wikidata.org/wiki/Q75269296 Jane Orr
+<https://www.wikidata.org/wiki/Q7308826>
+  # Reginald William Bransby Nevill, 2nd Marquess of Abergavenny, 1853-03-04 - 1927-10-13
+  gen:father <https://www.wikidata.org/wiki/Q8016084> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75254295> .
+<https://www.wikidata.org/wiki/Q5726272>
+  gen:name "Henry Nevill, 3rd Marquess of Abergavenny"@en ;
+  gen:birthDate "1854-09-02" ;
+  gen:deathDate "1938-01-10" ;
+  gen:father <https://www.wikidata.org/wiki/Q8016084> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75254295> .
+  # oo Violet Streatfeild, 1855-10-30 - 1880-12-25, daughter of Henry Dorrien Streatfeild and Marion Henrietta Smith
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5726272>, <https://www.wikidata.org/wiki/Q75254375> ;
+	gen:startDate "1876-09-12" .
+  # oo Maud Augusta Beckett-Denison, 1864-06-12 - 1927-07-15, daughter of https://www.wikidata.org/wiki/Q8005295 William Beckett-Denison and https://www.wikidata.org/wiki/Q75662172 Hon. Helen Duncombe
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5726272>, <https://www.wikidata.org/wiki/Q75254376> ;
+	gen:startDate "1886-10-20" .
+  # oo Mary Frances Nevill, 1869-04-05 - 1954-10-31
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5726272>, <https://www.wikidata.org/wiki/Q75254378> ;
+	gen:startDate "1928-10-18" .
 <https://www.wikidata.org/wiki/Q75254292>
-  # Lord George Montacute Nevill, 1856-09-23 - 1920-08-10
+  gen:name "Lord George Montacute Nevill"@en ;
+  gen:birthDate "1856-09-23" ;
+  gen:deathDate "1920-08-10" ;
   gen:father <https://www.wikidata.org/wiki/Q8016084> ;
   gen:mother <https://www.wikidata.org/wiki/Q75254295> .
   # oo Florence Mary Soanes, d. 1929-12-19, daughter of Temple Soanes and Alice Burford Womersley
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75254292> , <https://www.wikidata.org/wiki/Q75254293> ;
 	gen:startDate "1882-10-19" .
+<https://www.wikidata.org/wiki/Q75254372>
+  # Lady Idina Mary Nevill, 1865-05-05 - 1951-02-21
+  gen:father <https://www.wikidata.org/wiki/Q8016084> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75254295> .
+  # oo 1889-02-28 Thomas Allnutt Brassey, 2nd Earl Brassey, 1863-03-07 - 1919-11-12, https://www.wikidata.org/wiki/Q7787848, son of https://www.wikidata.org/wiki/Q337691 (egerton.ttl) Thomas Brassey, 1st Earl Brassey and https://www.wikidata.org/wiki/Q435426 Anna Allnutt
+<https://www.wikidata.org/wiki/Q75250550>
+  # Lady Rose Nevill, 1866-12-07 - 1913-05-02
+  gen:father <https://www.wikidata.org/wiki/Q8016084> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75254295> .
+  # oo 1887-06-14 (div 1899) John Blundell Leigh, 1858-12-13 - 1931-07-27, https://www.wikidata.org/wiki/Q75254296, son of Henry Blundell Leigh and Henrietta Dorothy Hawkes
+  # oo 1899-11-29 Kenelm Charles Edward Pepys, 4th Earl of Cottenham, 1874-05-18 - 1919-04-22, https://www.wikidata.org/wiki/Q25863449, son of https://www.wikidata.org/wiki/Q26386420 William John Pepys, 3rd Earl of Cottenham and https://www.wikidata.org/wiki/Q75250549 Theodosia Selina Dallas
 <https://www.wikidata.org/wiki/Q75254374>
   gen:name "Lady Violet Nevill"@en ;
   gen:birthDate "1866-12-07" ;
@@ -835,6 +1342,12 @@
   gen:father <https://www.wikidata.org/wiki/Q45844089> ;
   gen:mother <https://www.wikidata.org/wiki/Q75254379> .
   # oo 1891-07-08 Henry Charles Hardinge, 3rd Viscount Hardinge of Lahore and Kings Newton, 1857-08-01 - 1924-04-30, https://www.wikidata.org/wiki/Q21648139 (bingham.ttl)
+  # oo 1928-10-18 Henry Nevill, 3rd Marquess of Abergavenny, 1854-09-02 - 1938-01-10, https://www.wikidata.org/wiki/Q5726272
+<https://www.wikidata.org/wiki/Q75254390>
+  # Eleanor Georgiana Nevill, 1873~ - 1966-11-12
+  gen:father <https://www.wikidata.org/wiki/Q45844089> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75254379> .
+  # oo 1901-05-15 Rowland Francis Meyrick, 1867-09-10 - 1053-03-18, https://www.wikidata.org/wiki/Q75254396, son of Sir Thomas Charlton Meyrick, 1st Baronet (1837-03-14 - 1921-07-30, https://www.wikidata.org/wiki/Q16037832, 1st Baronet Meyrick, of Bush, co. Pembroke 1880-05-05, son of St. John Chiverton Charlton and Jane Sophia Meyrick) and oo 1960-04-10 Mary Rhoda Hill (d. 1924-10-04, https://www.wikidata.org/wiki/Q75303675, daughter of Richard Frederick Hill and Maria Jane Bringhurst)
 <https://www.wikidata.org/wiki/Q75254382>
   # Percy Llewelyn Nevill, 1877-05-11 1927-04-24
   gen:father <https://www.wikidata.org/wiki/Q45844089> ;
@@ -844,13 +1357,28 @@
     gen:spouse <https://www.wikidata.org/wiki/Q75254382> , <https://www.wikidata.org/wiki/Q75254383> ;
 	gen:startDate "1905-06-10" .
 
-#<https://www.wikidata.org/wiki/Q5622406>
-  # Guy Larnach-Nevill, 4th Marquess of Abergavenny, 1883-07-15 - 1954-03-30
-#  gen:father <https://www.wikidata.org/wiki/Q75254292> ;
-#  gen:mother <https://www.wikidata.org/wiki/Q75254293> .
-  # oo Isabel Nellie Larnach
-#  []
-#    gen:spouse <https://www.wikidata.org/wiki/Q5622406> , <https://www.wikidata.org/wiki/Q75254291> .
+<https://www.wikidata.org/wiki/Q75254406>
+  gen:name "Lady Joan Marion Nevill"@en ;
+  gen:birthDate "1877-07-16" ;
+  gen:deathDate "1952-07-04" ;
+  gen:father <https://www.wikidata.org/wiki/Q5726272> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75254375> .
+  # oo 1898-06-02 John Pratt, 4th Marquess Camden, 1872-02-09 – 1943-12-15, https://www.wikidata.org/wiki/Q6253321
+<https://www.wikidata.org/wiki/Q75254407>
+  # Lady Marguerite Helen Nevill, 1887-09-30 - 1975-06-07
+  gen:father <https://www.wikidata.org/wiki/Q5726272> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75254376> .
+  # oo 1907-02-11 Sir Albert Edward Delavel Astley, 21st Lord Hastings, 1882-11-24 - 1956-01-18, https://www.wikidata.org/wiki/Q26480844, son of Sir George Manners Astley, 20th Lord Hastings (1857-04-04 - 1904-09-18, https://www.wikidata.org/wiki/Q15990025, son of Sir Delaval Loftus Astley, 18th Lord Hastings (1825-03-24 - 1872-09-28, https://www.wikidata.org/wiki/Q26245178, son of Sir Jacob Astley, 16th Lord Hastings (1797-11-13 - 1859-12-27, https://www.wikidata.org/wiki/Q6118310, son of Sir Jacob Henry Astley, 5th Baronet (1756-09-12 - 1817-04-28, https://www.wikidata.org/wiki/Q26265928, son of Sir Edward Astley, 4th Baronet (1729-12-26 - 1802-03-27, https://www.wikidata.org/wiki/Q11802423, son of Sir Jacob Astley, 3rd Baronet (1692-01-03 - 1760-01-05, https://www.wikidata.org/wiki/Q61995980, son of https://www.wikidata.org/wiki/Q75413778 Sir Philip Astley, 2nd Baronet and https://www.wikidata.org/wiki/Q75413782 Elizabeth Bransby) and oo 1721 Lucy le Strange (1699-01-23 - 1739-06-25, https://www.wikidata.org/wiki/Q75413788 daughter of Sir Nicholas le Strange, 4th Baronet (1661-12-02 - 1724-12-18, https://www.wikidata.org/wiki/Q16240267, son of Sir Nicholas le Strange, 3rd Baronet (1732-10-17 - 1669-12-13, https://www.wikidata.org/wiki/Q75407754, son of Sir Nicholas le Strange, 1st Baronet (1604-03-27 - 1655-07-24, https://www.wikidata.org/wiki/Q75757760, 1st Baronet le Strange, of Hunstanton, co. Norfolk 1629-06-01, son of Sir Hamon le Strange (1583 - 1654-05-31, https://www.wikidata.org/wiki/Q5645928, son of Sir Nicholas le Strange (1562~ - 1591-12-15, https://www.wikidata.org/wiki/Q75757744, son of Hamon le Strange (d. 1580-10-07, https://www.wikidata.org/wiki/Q75757741, son of https://www.wikidata.org/wiki/Q7025738 Sir Nicholas le Strange and https://www.wikidata.org/wiki/Q76328218 Ellen FitzWilliam) and oo Elizabeth Hastings (1533 - 1580, https://www.wikidata.org/wiki/Q75746161, daughter of Sir Hugh Hastings (1505~ - 1540-12-29, https://www.wikidata.org/wiki/Q75757737, 14th Lord Hastings 1514-02-10, de jure, son of https://www.wikidata.org/wiki/Q75757733 Sir George Hastings and https://www.wikidata.org/wiki/Q75746143 Joan Brabason) and oo 1523-04-24 Katherine le Strange (d. 1558-01~, https://www.wikidata.org/wiki/Q75746150, daughter of https://www.wikidata.org/wiki/Q75746153 Robert le Strange and https://www.wikidata.org/wiki/Q75857194 Ann le Strange))) and oo 1582 Mary Bell (https://www.wikidata.org/wiki/Q75757745, daughter of Sir Robert Bell)) and oo 1601 Alice Stubbe (https://www.wikidata.org/wiki/Q75757755, daughter of Richard Stubbe)) and oo 1630-08-26 Ann Lewkenor (1612 - 1663-07-15, https://www.wikidata.org/wiki/Q75757762, daughter of Sir Edward Lewknor (1587-01-04 - 1618-03-01, https://www.wikidata.org/wiki/Q75238521, son of Sir Edward Lewknor and Susan Heigham) and oo 1610 Mary Neville (1586a/1596b - 1642-10, https://www.wikidata.org/wiki/Q75238520))) and oo Mary Coke (1617~ - 1662-06b, https://www.wikidata.org/wiki/Q75407760, daughter of Sir John Coke (1590 - 1661, https://www.wikidata.org/wiki/Q75407762, son of https://www.wikidata.org/wiki/Q332435 (coke.ttl) Sir Edward Coke and https://www.wikidata.org/wiki/Q75258784 Bridget Paston) and oo Merial Wheatley (1595~ - 1636-07-04,  https://www.wikidata.org/wiki/Q75258798, daughter of Anthony Wheatley))) and oo 1685-12-02 Anne Wodehouse (d. 1727, https://www.wikidata.org/wiki/Q75413792, daughter of Sir Thomas Wodehouse and Anne Armyne))) and oo 1751 Rhoda Delaval (1726~ - 1757-10~, https://www.wikidata.org/wiki/Q19575043, daughter of Francis Blake Delaval and Rhoda Apreece)) and oo 1789-01-14 Hester Browne (1767-11-27 - 1955-01-13, https://www.wikidata.org/wiki/Q75272736, daughter of Samuel Browne)) and oo 1819-03-22 Georgiana Caroline Dashwood (1796-03-16 - 1835-06-28, https://www.wikidata.org/wiki/Q75272710, daughter of https://www.wikidata.org/wiki/Q7527124 Sir Henry Watkin Dashwood, 3rd Baronet and https://www.wikidata.org/wiki/Q75272751 Mary Helen Graham)) and oo 1848-08-08 Hon. Frances Diana Manners-Sutton (1829-12-17 - 1874-06-01, https://www.wikidata.org/wiki/Q58866621, daughter of https://www.wikidata.org/wiki/Q334203 Charles Manners-Sutton, 1st Viscount Canterbury and https://www.wikidata.org/wiki/Q75256332 Ellen Power)) and oo 1880-04-17 Hon. Elizabeth Evelyn Harbord (1869-02-23 - 1956-02-19, https://www.wikidata.org/wiki/Q75272718, daughter of https://www.wikidata.org/wiki/Q5078754 Charles Harbord, 5th Baron Suffield and https://www.wikidata.org/wiki/Q3664096 Cecilia Annetta Baring)
+<https://www.wikidata.org/wiki/Q5622406>
+  # Guy Temple Montacute Larnach-Nevill, 4th Marquess of Abergavenny, 1883-07-15 - 1954-03-30
+  # Guy Temple Montacute Nevill
+  # Guy Temple Montacute Larnach-Nevill 1919-06-17
+  gen:father <https://www.wikidata.org/wiki/Q75254292> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75254293> .
+  # oo Isabel Nellie Larnach, 1890 - 1953-11-05, daughter of James Walker Larnach (d. 1919-01-24, https://www.wikidata.org/wiki/Q75257757, son of Donald Larnach) and oo 1889-06-29 Lady Isabel Lettice Theodosia Boyle (1859~ - 1904-04-06, https://www.wikidata.org/wiki/Q75257759, daughter of https://www.wikidata.org/wiki/Q2904392 and https://www.wikidata.org/wiki/Q47088445)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5622406> , <https://www.wikidata.org/wiki/Q75254291> ;
+	gen:startDate "1909-10-30" .
 <https://www.wikidata.org/wiki/Q75254383>
   # Marjorie Nevill, 1886-10-11 - 1945-03-08
   gen:father <https://www.wikidata.org/wiki/Q75254292> ;
@@ -862,26 +1390,207 @@
   gen:mother <https://www.wikidata.org/wiki/Q75254383> .
   # oo 1935-02-14 Charles Austin Field-Marsham, 1910-11-03 - 1941-01-15, https://www.wikidata.org/wiki/Q75254479 (marsham.ttl)
   # oo 1950-10-02 Robert Edward Field-Marsham, 1905-08-03 - 1996-11-23, https://www.wikidata.org/wiki/Q75254482 (marsham.ttl)
+<https://www.wikidata.org/wiki/Q75254478>
+  # Rosemary Nevill, 1912-02-08 - 1979-03-11
+  gen:father <https://www.wikidata.org/wiki/Q75254382> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75254383> .
+  # oo 1945-11-17 (div 1963) Sir John Weston Brooke, 3rd Baronet, 1911-09-26 - 1983-07-19, https://www.wikidata.org/wiki/Q75254485, son of https://www.wikidata.org/wiki/Q75272144 Sir Robert Weston Brooke, 2nd Baronet and https://www.wikidata.org/wiki/Q75272145 Margery Jean Geddes
+<https://www.wikidata.org/wiki/Q75254472>
+  # Michael George Ralph Nevill, 1917-06-19 - 1943-04-28
+  gen:father <https://www.wikidata.org/wiki/Q75254382> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75254383> .
+  # oo Maureen Ethné David Rhodes, 1920-10-12 - 2002-12-31b, daughter of Arthur Tahu Gravenor Rhodes (d. 1947-03-11, https://www.wikidata.org/wiki/Q75307431, son of Arthur Edgar Gravenor Rhodes) and oo 1916-01-24 Hon. Helen Cecil Olive Plunket (1895-04-15 - 1968-02-24, https://www.wikidata.org/wiki/Q75348164, daughter of https://www.wikidata.org/wiki/Q8016968 (guinness.ttl) William Lee Plunket, 5th Baron Plunket of Newton and https://www.wikidata.org/wiki/Q75315620 Lady Victoria Alexandrina Hamilton-Temple-Blackwood)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75254472> , <https://www.wikidata.org/wiki/Q75348157> ;
+	gen:startDate "1940-07-27" .
 
+<https://www.wikidata.org/wiki/Q75250551>
+  # Lady Angela Isabel Nellie Larnach-Nevill, 1910-08-03 - 1980-05-26
+  gen:father <https://www.wikidata.org/wiki/Q5622406> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75254291> .
+  # oo 1930-10-20 (div 1933) Sir Mark Vane Milbank, 4th Baronet, 1907-01-11 - 1984-04-04, https://www.wikidata.org/wiki/Q21208148, son of https://www.wikidata.org/wiki/Q75307945 Sir Frederick Richard Milbank, 3rd Baronet and https://www.wikidata.org/wiki/Q75307946 Harriet Anne Dorothy Wilson
+  # oo 1933-10-03 John Digby Thomas Pepys, 7th Earl of Cottenham, 1907-06-14 - 1968-05-12, https://www.wikidata.org/wiki/Q21624098, son of https://www.wikidata.org/wiki/Q25863449 Kenelm Charles Edward Pepys, 4th Earl of Cottenham and https://www.wikidata.org/wiki/Q75250550 Lady Rose Nevill
+<https://www.wikidata.org/wiki/Q3676062>
+  # Sir John Henry Guy Nevill, 5th Marquess of Abergavenny, 1914-11-08 - 2000-02-23
+  gen:father <https://www.wikidata.org/wiki/Q5622406> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75254291> .
+  # oo Mary Patricia Harrison, 1915-10-20 - 2005-02-22, daughter of John Fenwick Harrison (d. 1966-10-25, https://www.wikidata.org/wiki/Q75353725, son of Thomas Fenwick Harrison) and oo 1910-04-14 Hon. Margaret Olive Edith Levy-Lawson (1889 - 1969-03-21, https://www.wikidata.org/wiki/Q75237950, daughter of https://www.wikidata.org/wiki/Q26239555 William Arnold Webster Levy-Lawson, 3rd Baron Burnham and https://www.wikidata.org/wiki/Q75263348 Sybil Mary Marshall)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3676062> , <https://www.wikidata.org/wiki/Q7145767> ;
+	gen:startDate "1938-01-04" .
 <https://www.wikidata.org/wiki/Q6679939>
-  # Lord Rupert Charles Montecute Nevill, 1923-01-20 - 1982-07-19
+  gen:name "Lord Rupert Charles Montecute Nevill"@en ;
+  gen:birthDate "1923-01-29" ;
+  gen:deathDate "1982-07-19" ;
   gen:father <https://www.wikidata.org/wiki/Q5622406> ;
   gen:mother <https://www.wikidata.org/wiki/Q75254291> .
   # oo Lady Anne Camilla Evelyn Wallop, b. 1925-07-12
   []
     gen:spouse <https://www.wikidata.org/wiki/Q6679939> , <https://www.wikidata.org/wiki/Q75254318> ;
 	gen:startDate "1944-04-22" .
+<https://www.wikidata.org/wiki/Q75348160>
+  # David Michael Ralph Nevill, b. 1941-06-20
+  gen:father <https://www.wikidata.org/wiki/Q75254472> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75348157> .
+  # oo Katherine Mary Westenra, daughter of Rossmore Derrick Westenra
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75348160> , <https://www.wikidata.org/wiki/Q75238690> ;
+	gen:startDate "1972-03-16" .
+
+<https://www.wikidata.org/wiki/Q75254320>
+  # Guy Rupert Gerard Nevill, 1945-03-29 - 1993-02-05
+  gen:father <https://www.wikidata.org/wiki/Q6679939> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75254318> .
+  # oo Lady Beatrix Mary Lambton, b. 1949-07-23, daughter of Lord Antony Claude Frederick Lambton (1922-07-10 - 2006-12-30, https://www.wikidata.org/wiki/Q608103, son of https://www.wikidata.org/wiki/Q6243897 John Frederick Lambton, 5th Earl of Durham and https://www.wikidata.org/wiki/Q75250832 Diana Mary Farquhar) and oo 1942-08-10 Belinda Bridget Blew-Jones (1921-12-23 - 2003-02-13, https://www.wikidata.org/wiki/Q75355412, daughter of Douglas Holden Blew-Jones and Violet Hilda Margaret Birkin)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75254320> , <https://www.wikidata.org/wiki/Q75355423> ;
+	gen:startDate "1982-02-18" .
+<https://www.wikidata.org/wiki/Q16727287>
+  gen:name "Christopher George Charles Nevill, 6th Marquess of Abergavenny"@en ;
+  gen:birthDate "1955-04-23" ;
+  gen:father <https://www.wikidata.org/wiki/Q6679939> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75254318> .
+  # oo Venetia V. Maynard, daughter of Frederick Gerard Maynard
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16727287> , <https://www.wikidata.org/wiki/Q75238727> ;
+	gen:startDate "1985" .
+<https://www.wikidata.org/wiki/Q75238699>
+  # Guy Michael Rossmore Nevill, b. 1973-11-12
+  gen:father <https://www.wikidata.org/wiki/Q75348160> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75238690> .
+  # oo Jemima E. James, daughter of Roland James
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75238699> , <https://www.wikidata.org/wiki/Q76098746> .
+
+<https://www.wikidata.org/wiki/Q75238732>
+  # George Rupert Gerard Nevill, 1990-06-27 - 1990-09-15
+  gen:father <https://www.wikidata.org/wiki/Q16727287> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75238727> .
+<https://www.wikidata.org/wiki/Q75238733>
+  # Sophie Alice Augusta Nevill, b. 1990-06-27
+  gen:father <https://www.wikidata.org/wiki/Q16727287> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75238727> .
+<https://www.wikidata.org/wiki/Q76098748>
+  # George David Roland Nevill, b. 2010-03-20
+  gen:father <https://www.wikidata.org/wiki/Q75238699> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76098746> .
+<https://www.wikidata.org/wiki/Q76098747>
+  # Frederick Guy James Nevill, b. 2012-02-07
+  gen:father <https://www.wikidata.org/wiki/Q75238699> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76098746> .
+<https://www.wikidata.org/wiki/Q76361200>
+  # Ralph William James Nevill, b. 2015-04-29
+  gen:father <https://www.wikidata.org/wiki/Q75238699> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76098746> .
 
 
+# Neville of Billingbere
+<https://www.wikidata.org/wiki/Q5726285>
+  # Sir Henry Neville, of Billingbere, 1520~ –  1593-01-13
+  gen:father <https://www.wikidata.org/wiki/Q5344604> ;
+  gen:mother <https://www.wikidata.org/wiki/Q16738391> .
+  # oo Elizabeth Gresham, 1542 - 1573-11-04
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5726285> , <https://www.wikidata.org/wiki/Q75270757> ;
+	gen:startDate "1567-01-26" .
+  # oo Elizabeth Bacon, 1541~ - 1621-05-03, daughter of Sir Nicholas Bacon and Jane Fernley
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5726285> , <https://www.wikidata.org/wiki/Q16153254> ;
+	gen:startDate "1578-05" .
 
+<https://www.wikidata.org/wiki/Q2775812>
+  # Sir Henry Neville, of Billingbere, 1564-05-20b - 1615-07-10
+  gen:father <https://www.wikidata.org/wiki/Q5726285> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75270757> .
+  # oo Ann Killigrew, 1559~ - 1632
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2775812> , <https://www.wikidata.org/wiki/Q75270761> ;
+	gen:startDate "1584-12-22" .
 
+<https://www.wikidata.org/wiki/Q75270764>
+  # Sir Henry Neville, of Billingbere, 1588-03-10 - 1629-06-29
+  gen:father <https://www.wikidata.org/wiki/Q2775812> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75270761> .
+  # oo Elizabeth Smythe, d. 1669, daughter of Sir John Smythe and Elizabeth Fineux
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75270764> , <https://www.wikidata.org/wiki/Q75270765> ;
+	gen:startDate "1609-05-02" .
+<https://www.wikidata.org/wiki/Q75238514>
+  # Frances Neville, 1592~ - 1659-10-18a/1661-05-27b
+  gen:father <https://www.wikidata.org/wiki/Q2775812> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75270761> .
+  # oo 1610~ Sir Richard Worsley, 1st Baronet, 1570~ - 1621-06-27, https://www.wikidata.org/wiki/Q11801684, 1st Baronet Worsley, of Appuldercrombe, Isle of Wight 1611, son of Thomas Worsley and Barbara St John
+  # oo 1621a Jerome Brett, d. 1640a, https://www.wikidata.org/wiki/Q75238517
+<https://www.wikidata.org/wiki/Q75238518>
+  # Katherine Neville, 1592-01-02 - 1650
+  gen:father <https://www.wikidata.org/wiki/Q2775812> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75270761> .
+  # oo Sir Richard Brooke, 1571-03-14 - 1632-04-10, https://www.wikidata.org/wiki/Q75238519, son of Thomas Brooke and Anne Tuchet
+  # -> Sir Henry Brooke, 1st Baronet, 1611 - 1664, https://www.wikidata.org/wiki/Q75499953, 1st Baronet Brooke, of Norton Priory, co. Chester 1662-12-12
+<https://www.wikidata.org/wiki/Q75238508>
+  # Elizabeth Nevill, 1610 – 1657-01-04
+  gen:father <https://www.wikidata.org/wiki/Q2775812> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75270761> .
+  # oo William Glover, https://www.wikidata.org/wiki/Q75238511
+  # oo 1608~ Sir Henry Berkeley, of Yardington, 1579 – 1667-08-31, https://www.wikidata.org/wiki/Q5718104
+  # oo Thomas Dyke, https://www.wikidata.org/wiki/Q75238513
+<https://www.wikidata.org/wiki/Q75238520>
+  # Mary Neville, 1613 – 1642-10-28
+  gen:father <https://www.wikidata.org/wiki/Q2775812> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75270761> .
+  # oo Sir Edward Lewknor, 1587-01-04 - 1618-03-01, https://www.wikidata.org/wiki/Q53742435 (townshend.ttl)
+  # TODO move here
 
+<https://www.wikidata.org/wiki/Q7328035>
+  # Richard Neville, of Billingbere, 1615-05-30 - 1676-10-07
+  gen:father <https://www.wikidata.org/wiki/Q75270764> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75270765> .
+  # oo Anne Heydon, d. 1678, daughter of Sir John Heydon
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7328035> , <https://www.wikidata.org/wiki/Q75270730> ;
+	gen:startDate "1646b" .
+#<https://www.wikidata.org/wiki/Q75238499>
+  # Philippa Neville
+#  gen:father <https://www.wikidata.org/wiki/Q75270764> ;
+#  gen:mother <https://www.wikidata.org/wiki/Q75270765> .
+  # oo John Jephson, b. 1638~, https://www.wikidata.org/wiki/Q76333575 ?
+
+<https://www.wikidata.org/wiki/Q7328036>
+  # Richard Neville, of Billingbere, 1655-10-12 - 1723-07-01
+  gen:father <https://www.wikidata.org/wiki/Q7328035> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75270730> .
+  # oo Katherine Grey, 1654~ - 1683-08-17a, daughter of grey.ttl#Ralph_Grey,_2nd_Baron_Grey_of_Warke https://www.wikidata.org/wiki/Q21557207 Ralph Grey, 2nd Baron Grey of Warke and https://www.wikidata.org/wiki/Q76250715 Catherine Ford
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7328036> , <https://www.wikidata.org/wiki/Q75238465> ;
+	gen:startDate "1676~" .
+<https://www.wikidata.org/wiki/Q75270733>
+  # Catherine Neville, 1659-06-23 - 1720
+  gen:father <https://www.wikidata.org/wiki/Q7328035> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75270730> .
+  # oo 1714 Richard Aldworth, of Stanlake, 1685 - 1738, https://www.wikidata.org/wiki/Q75270734
+<https://www.wikidata.org/wiki/Q75238479>
+  # Frances Neville, b. 1664-05-19
+  gen:father <https://www.wikidata.org/wiki/Q7328035> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75270730> .
+  # oo 1688 Sir Richard Cocks, 2nd Baronet, son of Richard Cocks, 1659~ - 1726, https://www.wikidata.org/wiki/Q18674385 or https://www.wikidata.org/wiki/Q75238480
+
+<https://www.wikidata.org/wiki/Q5722242>
+  # Henry Grey, 1683-08-17 - 1740
+  # Henry Neville
+  gen:father <https://www.wikidata.org/wiki/Q7328036> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75238465> .
+  # oo Elizabeth Griffin, 1691-11-30 - 1762-07-13 (wallop.ttl), sister of Anne Griffin (1684a - 1770, https://www.wikidata.org/wiki/Q75270719 oo 1717 William Whitwell (https://www.wikidata.org/wiki/Q75270720 -> John Griffin Griffin, 4th Baron Howard de Walden (1719-03-13 - 1797-05-25, https://www.wikidata.org/wiki/Q4470201, 4th Lord Howard de Walden 1784-08-03, 1st Lord Braybrooke, Baron of Braybrooke, co. Northampton 1788-09-05 oo Anna Maria Baronin von Schutz (d. 1764-08-18, https://www.wikidata.org/wiki/Q75262157, daughter of John Baron von Schutz) 1749-03-09 oo Catherine Clayton (1748~ - 1807-08-15, https://www.wikidata.org/wiki/Q75262159, daughter of William Clayton and Mary Warde) 1765-06-11))) and Edward Griffin, 3rd Baron Griffin of Braybrooke (1693-10-17 - 1742-06, https://www.wikidata.org/wiki/Q75270768 oo 1713 Mary Welden (https://www.wikidata.org/wiki/Q76162804, daughter of Anthony Welden)) and daughter of James Griffin, 2nd Baron Griffin of Braybrooke (1667-12-15 - 1715-10-31, https://www.wikidata.org/wiki/Q26213319, son of https://www.wikidata.org/wiki/Q75284316 Edward Griffin, 1st Baron Griffin of Braybrooke (1651b - 1710-11-10, 1st Baron Griffin of Braybrooke 1688-12-03, son of Edward Griffin and Frances (Uvedale) and howard.ttl#Lady_Essex_Howard https://www.wikidata.org/wiki/Q75284315 Lady Essex Howard) and oo 1684-11-29 Ann Raynsford (d. 1707, https://www.wikidata.org/wiki/Q75270722, daughter of Richard Raynsford (d. 1703-03-17, https://www.wikidata.org/wiki/Q51354811, son of Sir Richard Raynsford and Catherine Clerke) and oo Anne Neville (1647-02-14 - 1700, https://www.wikidata.org/wiki/Q75270724, daughter of Richard Neville and Anne Heydon))
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5722242> , <https://www.wikidata.org/wiki/Q18819416> ;
+	gen:startDate "1740b" .
 
 
 # ----
 #<https://www.wikidata.org/wiki/Q23661898>
   # Henry FitzHugh, 5th Lord FitzHugh, 1429~ - 1472-06-03
-  # oo Lady Alice Neville, d. 1503-11-22a
+  # son of William FitzHugh, 4th Lord FitzHugh of Ravensworth, 1399~ - 1452-10-22, https://www.wikidata.org/wiki/Q8009090, son of https://www.wikidata.org/wiki/Q5721272 (grey.ttl) and https://www.wikidata.org/wiki/Q75933581
+  # and oo 1406-11-18 Margery Willoughby, 1399~ - 1452-10-22b, daughter of William Willoughby, 5th Lord Willoughby of Eresby and Lucy le Strange
+  # oo Lady Alice Neville, 1430 - 1503-11-22a
   []
     gen:spouse <https://www.wikidata.org/wiki/Q23661898> , <https://www.wikidata.org/wiki/Q4726026> ;
 	gen:startDate "1472b" .
@@ -904,6 +1613,7 @@
 # ----
 #<https://www.wikidata.org/wiki/Q75387470>
   # Sir Thomas Strangways, 1395~ - 1442b
+  # son of Henry Strangeways and Matilda Cheswyk
   # oo Lady Katherine Neville, 1397~ - 1483a
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75387470>, <https://www.wikidata.org/wiki/Q252569> ;
@@ -930,15 +1640,16 @@
 # ----
 <https://www.wikidata.org/wiki/Q4726013>
   gen:name "Alice Montacute, 5th Countess of Salisbury"@en ;
+  # 5th Countess of Salisbury, 7th Baroness Montagu 1428-11-03
   gen:birthDate "1407" ;
   gen:deathDate "1462-12-09b" ;
-  gen:father <https://www.wikidata.org/wiki/Q1000874> ;
-  gen:mother <https://www.wikidata.org/wiki/Q1325720> .
-  # oo Richard Neville, 5th Earl of Salisbury, 1400 - 1460-12-31, https://www.wikidata.org/wiki/Q384856
+  gen:father <https://www.wikidata.org/wiki/Q1000874> ; # Thomas Montagu, 4th Earl of Salisbury
+  gen:mother <https://www.wikidata.org/wiki/Q1325720> . # Lady Eleanor Holland (plantagenet.ttl)
+  # oo 1421-02 Richard Neville, 5th Earl of Salisbury, 1400 - 1460-12-31, https://www.wikidata.org/wiki/Q384856
 
 # ----
 <https://www.wikidata.org/wiki/Q75254063>
-  # Isabel Ingaldesthorpe, d. 1476-05-20
+  # Isabel Ingaldesthorpe, 1441~ - 1476-05-20
   gen:father <https://www.wikidata.org/wiki/Q75254065> ; # Sir Edmund Ingaldesthorpe
   gen:mother <https://www.wikidata.org/wiki/Q75254067> . # Joan Tiptoft
   # oo 1457-04-25 Sir John Neville, 1st Marquess of Montagu, 1431~ - 1471-04-14, https://www.wikidata.org/wiki/Q719793
@@ -979,19 +1690,22 @@
 
 # ----
 <https://www.wikidata.org/wiki/Q28867801>
-  # Hugh Fenn
+  gen:name "Hugh Fenn"@en ;
   gen:birthDate "1418~" ;
   gen:deathDate "1476" .
 
 <https://www.wikidata.org/wiki/Q19302315>
-  # Margaret Fenn
+  gen:name "Margaret Fenn"@en ;
+  gen:birthDate "1444" ;
   gen:deathDate "1485-09-28" ;
   gen:father <https://www.wikidata.org/wiki/Q28867801> .
   # oo 1471-04-01b George Nevill, 4th Baron Bergavenny, 1440~ - 1492-09-20, https://www.wikidata.org/wiki/Q5542841
 
 # ----
-#<https://www.wikidata.org/wiki/Q5345772>
+<https://www.wikidata.org/wiki/Q5345772>
   # Sir Edward Waldegrave, 1516~ – 1561-09-01
+  gen:father <https://www.wikidata.org/wiki/Q75241381> ; # John Waldegrave
+  gen:mother <https://www.wikidata.org/wiki/Q76336201> . # Lora Rochester
   # oo Frances Neville, 1519 - 1599-11-18
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5345772> , <https://www.wikidata.org/wiki/Q75238531> .
@@ -1024,27 +1738,28 @@
     gen:spouse <https://www.wikidata.org/wiki/Q15452496> , <https://www.wikidata.org/wiki/Q17484485> .
 
 <https://www.wikidata.org/wiki/Q75270761>
-  # Anne Killigrew, d. 1632
+  # Anne Killigrew, 1559~ - 1632
   gen:father <https://www.wikidata.org/wiki/Q15452496> ;
   gen:mother <https://www.wikidata.org/wiki/Q17484485> .
-  # oo 1584-12 Sir Henry Neville, of Billingbear House, 1562/1564~ - 1615-07-10, https://www.wikidata.org/wiki/Q2775812
+  # oo 1584-12-22 Sir Henry Neville, of Billingbear House, 1564-05-20b - 1615-07-10, https://www.wikidata.org/wiki/Q2775812
 
 # ----
 #<https://www.wikidata.org/wiki/Q75270734>
   # Richard Aldworth, of Stanlake, 1685 - 1738
-  # son of Richard Aldworth
+  # http://www.thepeerage.com/p2691.htm#i26903
+  # son of Richard Aldworth (1645~ - 1706~, son of Richard Aldworth (1614~ – 1680-10-05, https://www.wikidata.org/wiki/Q7323667 or https://www.wikidata.org/wiki/Q7323669) and oo 1646b Anne Gwynn (daughter of William Gwynn))
   # oo Catherine Neville, 1659-06-23 - 1720
-#  []
-#    gen:spouse <https://www.wikidata.org/wiki/Q75270734> , <https://www.wikidata.org/wiki/Q75270733>> ;
-#	gen:startDate "1714" .
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75270734> , <https://www.wikidata.org/wiki/Q75270733> ;
+	gen:startDate "1714" .
 
-#<https://www.wikidata.org/wiki/Q17424033>
+<https://www.wikidata.org/wiki/Q17424033>
   # Richard Neville Aldworth Neville, 1717-09-09 - 1793-07-17
-#  gen:father <https://www.wikidata.org/wiki/Q75270734> ;
-#  gen:mother <https://www.wikidata.org/wiki/Q75270733> .
+  gen:father <https://www.wikidata.org/wiki/Q75270734> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75270733> .
   # oo Magdalen Calendrini
-#  []
-#    gen:spouse <https://www.wikidata.org/wiki/Q17424033> , <https://www.wikidata.org/wiki/Q75270736> .
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q17424033> , <https://www.wikidata.org/wiki/Q75270736> .
 
 # grenville.ttl
 <https://www.wikidata.org/wiki/Q17423462>
@@ -1057,6 +1772,22 @@
     gen:spouse <https://www.wikidata.org/wiki/Q17423462> , <https://www.wikidata.org/wiki/Q75252001> ;
 	gen:startDate "1780-06-19" .
 
+<https://www.wikidata.org/wiki/Q7326083>
+  # Richard Griffin, 3rd Baron Braybrooke, 1783-09-26 - 1858-03-13
+  gen:father <https://www.wikidata.org/wiki/Q17423462> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75252001> .
+  # oo Lady Jane Cornwallis
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7326083> , <https://www.wikidata.org/wiki/Q75270739> .
+# hay.ttl
+<https://www.wikidata.org/wiki/Q5542846>
+  # Very Rev. Hon. George Neville-Grenville, 1789-08-17 - 1854-06-10
+  gen:father <https://www.wikidata.org/wiki/Q17423462> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75252001> .
+  # oo Lady Charlotte Legge, 1789-02-12 - 1877-06-15
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5542846> , <https://www.wikidata.org/wiki/Q24760732> ;
+	gen:startDate "1816-05-09" .
 # grenville.ttl
 <https://www.wikidata.org/wiki/Q47486897>
   # Hon. Caroline Neville, 1790 - 1868-05-02
@@ -1069,16 +1800,14 @@
   gen:father <https://www.wikidata.org/wiki/Q17423462> ;
   gen:mother <https://www.wikidata.org/wiki/Q75252001> .
   # oo Sir Stephen Richard Glynne, 8th Baronet, 1780-05-19 - 1815-03-05, https://www.wikidata.org/wiki/Q27231740 (lyttelton.ttl)
-# hay.ttl
-<https://www.wikidata.org/wiki/Q5542846>
-  # Very Rev. Hon. George Neville-Grenville, 1789-08-17 - 1854-06-10
-  gen:father <https://www.wikidata.org/wiki/Q17423462> ; # Richard Griffin, 2nd Baron Braybrooke
-  gen:mother <https://www.wikidata.org/wiki/Q75252001> . # Catherine Grenville
-  # oo Lady Charlotte Legge, 1789-02-12 - 1877-06-15
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q5542846> , <https://www.wikidata.org/wiki/Q24760732> ;
-	gen:startDate "1816-05-09" .
 
+<https://www.wikidata.org/wiki/Q25939128>
+  # Latimer Neville, 6th Baron Braybrooke, 1827-04-22 - 1904-01-12
+  gen:father <https://www.wikidata.org/wiki/Q7326083> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75270739> .
+  # oo Lucy Frances Le Marchant
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q25939128> , <https://www.wikidata.org/wiki/Q75270741> .
 # hay.ttl
 <https://www.wikidata.org/wiki/Q75281240>
   # Harriet Louisa Neville-Grenville, d. 1907-04-21
@@ -1086,12 +1815,27 @@
   gen:mother <https://www.wikidata.org/wiki/Q24760732> .
   # oo 1854-01-17 Rev. Charles Arundell St. John-Mildmay, 1820-06-21 - 1904-03-05, https://www.wikidata.org/wiki/Q24170113 (hay.ttl)
 
+<https://www.wikidata.org/wiki/Q75270742>
+  # Rev. Hon. Grey Neville, 1857-12-04 - 1920-12-28
+  gen:father <https://www.wikidata.org/wiki/Q25939128> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75270741> .
+  # oo Mary Peele Slater
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75270742> , <https://www.wikidata.org/wiki/Q75270801> .
+
+<https://www.wikidata.org/wiki/Q21647829>
+  # Henry Seymour Neville, 9th Baron Braybrooke, 1897 - 1990
+  gen:father <https://www.wikidata.org/wiki/Q75270742> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75270801> .
+  # oo Muriel Evelyn Manning
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q21647829> , <https://www.wikidata.org/wiki/Q75270744> .
 
 # stanley.ttl
 <https://www.wikidata.org/wiki/Q26215688>
   # Robin Henry Charles Neville, 10th Lord Braybrooke, Baron of Braybrooke, 1932-01-29 - 2017-06-05
-  gen:father <https://www.wikidata.org/wiki/Q21647829> ; # Henry Seymour Neville, 9th Baron Braybrooke
-  gen:mother <https://www.wikidata.org/wiki/Q75270744> . # Muriel Evelyn Manning
+  gen:father <https://www.wikidata.org/wiki/Q21647829> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75270744> .
   # oo Robin Helen Brockhoff, daughter of Thomas Adolph Brockhoff
   []
     gen:spouse <https://www.wikidata.org/wiki/Q26215688> , <https://www.wikidata.org/wiki/Q75270749> ;
