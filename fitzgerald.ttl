@@ -334,13 +334,13 @@
   # oo Elisabeth Plunkett
   []
     gen:spouse <#Walter_FitzGerald> , <#Elisabeth_Plunkett> .
-<#Sir_Thomas_FitzGerald>
+<https://www.wikidata.org/wiki/Q75850028>
   # Sir Thomas FitzGerald, d. 1532
   gen:father <https://www.wikidata.org/wiki/Q1509868> ;
   gen:mother <https://www.wikidata.org/wiki/Q75443636> .
-  # oo unknown daughter Stafford
+  # oo unknown daughter Stafford (ferrers.ttl)
   []
-    gen:spouse <#Sir_Thomas_FitzGerald> , <#???_Stafford> .
+    gen:spouse <https://www.wikidata.org/wiki/Q75850028> , <https://www.wikidata.org/wiki/Q75850030> .
 
 <https://www.wikidata.org/wiki/Q387208>
   gen:name "Thomas Fitzgerald, 10th Earl of Kildare"@en ;
@@ -1269,7 +1269,7 @@
   # Lady Arabella FitzMaurice, 1707 – 1792-03-18
   gen:father <https://www.wikidata.org/wiki/Q7789618> ;
   gen:mother <https://www.wikidata.org/wiki/Q16943786> .
-  # oo 1727-08-26 Arthur Denny, d. 1742, https://www.wikidata.org/wiki/Q75464479 (loftus.ttl)
+  # oo 1727-08-26 Arthur Denny, d. 1742, https://www.wikidata.org/wiki/Q75464479 (neville.ttl)
 <#Mary_FitzMaurice_(died_1780)>
   # Mary FitzMaurice, d. 1780-12-09
   gen:father <#William_FitzMaurice_(died_1710)> ;
@@ -1427,11 +1427,11 @@
   gen:father <https://www.wikidata.org/wiki/Q3784987> ;
   gen:mother <https://www.wikidata.org/wiki/Q75267176> .
   # oo 1950-06-27 Charles William Lambton, 1921-08-22 - 2005-05-03, #Charles_William_Lambton
-<#Lady_Mary_Margaret_Elizabeth_Petty-FitzMaurice>
+<https://www.wikidata.org/wiki/Q75328416>
   # Lady Mary Margaret Elizabeth Petty-FitzMaurice, 1910-02-06 - 2003-03-04
   gen:father <https://www.wikidata.org/wiki/Q6679055> ;
   gen:mother <https://www.wikidata.org/wiki/Q7933213> .
-  # oo 1931-07-27 Ririd Myddelton, 1902-02-25 - 1988-02-07, https://www.wikidata.org/wiki/Q7335781
+  # oo 1931-07-27 Ririd Myddelton, 1902-02-25 - 1988-02-07, https://www.wikidata.org/wiki/Q7335781 (howard.ttl)
 <https://www.wikidata.org/wiki/Q5543376>
   # George John Charles Mercer Nairne Petty-FitzMaurice, 8th Marquess of Lansdowne, 1912-11-27 - 1999-08-25
   gen:father <https://www.wikidata.org/wiki/Q6679055> ;
@@ -1786,7 +1786,7 @@
   gen:deathDate "1358" ;
   gen:father <https://www.wikidata.org/wiki/Q6793089> ;
   gen:mother <#Lady_Catherine_de_Burgh> .
-  # oo Beatrice de Stafford, d. 1415-04-14
+  # oo Lady Beatrice de Stafford, d. 1415-04-14 (ferrers.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q6793090> , <https://www.wikidata.org/wiki/Q56372108> ;
 	gen:startDate "1350" .
@@ -2903,6 +2903,12 @@
   gen:mother <https://www.wikidata.org/wiki/Q18759265> .
   # oo 1662-10-26 William Cavendish, 1st Duke of Devonshire, 1641-01-25 - 1707-08-18, https://www.wikidata.org/wiki/Q2697139
 
+<https://www.wikidata.org/wiki/Q75624118>
+  # Lady Charlotte Butler, 1679 – 1725-08-08
+  gen:father <https://www.wikidata.org/wiki/Q7324496> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75261133> . # Dorothy Ferrers
+  # oo 1699-06-06 Charles Cornwallis, 4th Baron Cornwallis, 1675 – 1722-01-20, https://www.wikidata.org/wiki/Q5076482 (scott.ttl)
+
 
 <butler.ttl#Lady_Eleanor_Butler>
   # Lady Eleanor Butler, d. 1392/1404
@@ -3160,12 +3166,6 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q6702266> , <https://www.wikidata.org/wiki/Q5363359> ;
 	gen:startDate "1611b" .
-
-# ----
-<#???_Stafford>
-  # unknown daughter Stafford
-  gen:father <https://www.wikidata.org/wiki/Q726243> .
-  # oo Sir Thomas FitzGerald, d. 1532, #Sir_Thomas_FitzGerald
 
 # ----
 #<https://www.wikidata.org/wiki/Q7349023>
@@ -3849,23 +3849,6 @@
   []
     gen:spouse <#Charles_William_Lambton> , <#Lady_Elizabeth_Mary_Petty-FitzMaurice> ;
 	gen:startDate "1950-06-27" .
-
-# ----
-#<#Robert_Edward_Myddelton>
-  # Robert Edward Myddelton, 1866 - 1949-08-12
-  # oo Lady Violet Nevill, 1866-12-07 - 1910-03-28
-  []
-    gen:spouse <#Robert_Edward_Myddelton> , <https://www.wikidata.org/wiki/Q75254374> ;
-	gen:startDate "1898-08-19" .
-
-<https://www.wikidata.org/wiki/Q7335781>
-  # Ririd Myddelton, 1902-02-25 - 1988-02-07
-  gen:father <#Robert_Edward_Myddelton> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75254374> .
-  # oo Lady Mary Margaret Elizabeth Petty-FitzMaurice, 1910-02-06 - 2003-03-04
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q7335781> , <#Lady_Mary_Margaret_Elizabeth_Petty-FitzMaurice> ;
-	gen:startDate "1931-07-27" .
 
 # ----
 #<https://www.wikidata.org/wiki/Q332914>
