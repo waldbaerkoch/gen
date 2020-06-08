@@ -71,7 +71,7 @@
   gen:mother <https://www.wikidata.org/wiki/Q61962936> .
   # oo Lucy Lestrange
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q2581065> , <#Lucy_Lestrange> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q2581065> , <https://www.wikidata.org/wiki/Q61962932> ;
 	gen:startDate "1383-01-03a" .
   # oo Lady Joan Holland, 1380~ – 1434-04-12
   []
@@ -90,7 +90,7 @@
   gen:birthDate "1385~" ;
   gen:deathDate "1452-07-25" ;
   gen:father <https://www.wikidata.org/wiki/Q2581065> ;
-  gen:mother <#Lucy_Lestrange> .
+  gen:mother <https://www.wikidata.org/wiki/Q61962932> .
   # oo Lady Elizabeth Montagu
   []
     gen:spouse <https://www.wikidata.org/wiki/Q2159225> , <#Lady_Elizabeth_Montagu> ;
@@ -99,17 +99,19 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q2159225> , <https://www.wikidata.org/wiki/Q75254060> ;
 	gen:startDate "1449-01-08b" .
-<#Sir_Thomas_Willoughby_1>
+<https://www.wikidata.org/wiki/Q61962934>
   gen:name "Sir Thomas Willoughby"@en ;
+  gen:birthDate "1387~" ;
+  gen:deathDate "1439-07-01b" ;
   gen:father <https://www.wikidata.org/wiki/Q2581065> ;
-  gen:mother <#Lucy_Lestrange> .
-  # oo daughter and co-heiress of Sir Richard Arundel and Alice ???
+  gen:mother <https://www.wikidata.org/wiki/Q61962932> .
+  # oo Jane Arundel, daughter of https://www.wikidata.org/wiki/Q61962946 Sir Richard Arundel and https://www.wikidata.org/wiki/Q61962947 Alice Burley
   []
-    gen:spouse <#Sir_Thomas_Willoughby_1> , <#Joan_Arundell> .
+    gen:spouse <https://www.wikidata.org/wiki/Q61962934> , <https://www.wikidata.org/wiki/Q61962935> .
 <#Elizabeth_Willoughby_of_Eresby>
   # Elizabeth Willoughby of Eresby, 1384~ - 1428-11-12b
   gen:father <https://www.wikidata.org/wiki/Q2581065> ;
-  gen:mother <#Lucy_Lestrange> .
+  gen:mother <https://www.wikidata.org/wiki/Q61962932> .
   # oo 1405-07b Henry Beaumont, 5th Baron Beaumont, 1380~ - 1413-06, brienne.ttl#Henry_Beaumont,_5th_Baron_Beaumont
 <#John_Willoughby>
   # John Willoughby, 1400~ - 1437-02-24
@@ -130,11 +132,19 @@
 <#Sir_Robert_Willoughby>
   gen:name "Sir Robert Willoughby"@en ;
   gen:deathDate "1465" ;
-  gen:father <#Sir_Thomas_Willoughby_1> ;
-  gen:mother <#Joan_Arundell> .
+  gen:father <https://www.wikidata.org/wiki/Q61962934> ;
+  gen:mother <https://www.wikidata.org/wiki/Q61962935> .
   # oo Cicely Welles
   []
     gen:spouse <#Sir_Robert_Willoughby> , <#Cicely_Welles> .
+<https://www.wikidata.org/wiki/Q75240542>
+  # Sir William Willoughby, 1432~ - 1468-11b
+  gen:father <https://www.wikidata.org/wiki/Q61962934> ;
+  gen:mother <https://www.wikidata.org/wiki/Q61962935> .
+  # oo Joan Strangeways, 1427 - 1485-02-24 (percy.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75240542> , <https://www.wikidata.org/wiki/Q75418799> ;
+	gen:startDate "1461-07-29b" .
 <#Sir_John_Willoughby_(died_1477)>
   # Sir John Willoughby, 1421~ - 1477-08-28b
   gen:father <#John_Willoughby> .
@@ -155,6 +165,11 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5113440> , <#Margaret_or_Marjery_Jenney> ;
 	gen:startDate "1482-03-28b" .
+<https://www.wikidata.org/wiki/Q75240540>
+  # Cicely Willoughby, 1466~ - 1539-08
+  gen:father <https://www.wikidata.org/wiki/Q75240542> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75418799> .
+  # oo 1484 Edward Sutton, 2nd Baron Dudley, 1456~ - 1531-01-31, https://www.wikidata.org/wiki/Q16833892
 <https://www.wikidata.org/wiki/Q7351141> # -> Willoughby de Broke
   # Robert Willoughby, 1st Baron Willoughby de Broke, 1452~ - 1502-08-23
   gen:father <#Sir_John_Willoughby_(died_1477)> ;
@@ -844,7 +859,7 @@
     gen:spouse <#Roger_Lestrange,_5th_Lord_Strange> , <fitzalan.ttl#Lady_Aline_Fitzalan> ;
 	gen:startDate "1338b" .
 
-<#Lucy_Lestrange>
+<https://www.wikidata.org/wiki/Q61962932>
   # Lucy Lestrange, daughter of Roger Lestrange, 5th Lord Strange (of Knokyn) (1326~ - 1382-08-23)
   gen:father <#Roger_Lestrange,_5th_Lord_Strange> ;
   gen:mother <fitzalan.ttl#Lady_Aline_Fitzalan> .
@@ -875,6 +890,21 @@
   gen:father <https://www.wikidata.org/wiki/Q3020313> .
   # and Maud Francis
   # oo 1421-02-21b Robert Willoughby, 6th Baron Willoughby de Eresby, 1385~ - 1452-07-25, https://www.wikidata.org/wiki/Q2159225
+
+
+# ----
+#<https://www.wikidata.org/wiki/Q16833892>
+  # Edward Sutton, 2nd Baron Dudley, 1456~ - 1531-01-31
+  # oo Cicely Willoughby, 1466~ - 1539-08
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16833892> , <https://www.wikidata.org/wiki/Q75240540> ;
+	gen:startDate "1484" .
+
+<#Alice_Sutton>
+  # Alice Sutton, 1505 - 1601
+  gen:father <https://www.wikidata.org/wiki/Q16833892> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75240540> .
+  # oo Edward Loftus, 1500 - 1541, https://www.wikidata.org/wiki/Q75654801
 
 # ----
 #<https://www.wikidata.org/wiki/Q8012720>
@@ -1219,11 +1249,11 @@
   gen:father <https://www.wikidata.org/wiki/Q7326921> ;
   gen:mother <willoughby.ttl#Elizabeth_Willoughby_(died_1695)> .
   # oo 1684-06-12 John FitzGerald, 18th Earl of Kildare, 1661 - 1707-11-09, https://www.wikidata.org/wiki/Q15440117
-<#Lady_Frances_Jones>
+<https://www.wikidata.org/wiki/Q75607521>
   # Lady Frances Jones, 1674 - 1715-02-19
   gen:father <https://www.wikidata.org/wiki/Q7326921> ;
   gen:mother <willoughby.ttl#Elizabeth_Willoughby_(died_1695)> .
-  # oo 1688-04-23 Thomas Coningsby, 1st Earl of Coningsby, 1656-11-02 - 1729-05-01, https://www.wikidata.org/wiki/Q7788563 (fitzgerald.ttl)
+  # oo 1688-04-23 Thomas Coningsby, 1st Earl of Coningsby, 1656-11-02 - 1729-05-01, https://www.wikidata.org/wiki/Q7788563 (loftus.ttl)
 
 # ----
 #<https://www.wikidata.org/wiki/Q8005897>
