@@ -1735,11 +1735,13 @@
 	gen:startDate "1616-11-22" .
 
 # --------
-#<https://www.wikidata.org/wiki/Q5076481>
+<https://www.wikidata.org/wiki/Q5076481>
   # Charles Cornwallis, 3rd Baron Cornwallis of Eye, 1655-12-28 – 1698-04-29
-  # oo 1673-12-27 Elizabeth Fox, 1655~ - 1681-02-28
+  gen:father <https://www.wikidata.org/wiki/Q5076480> ; # Charles Cornwallis, 2nd Baron Cornwallis
+  gen:mother <https://www.wikidata.org/wiki/Q75624112> . # Margaret Playsted
+  # oo Elizabeth Fox, 1655~ - 1681-02-28
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q5076481> , <#Elizabeth_Fox> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q5076481> , <https://www.wikidata.org/wiki/Q75252786> ;
 	gen:startDate "1673-12-27" .
   # oo Anne Scott, 4th Countess of Buccleuch, 1651-02-11 - 1732-02-06
   []
@@ -1749,10 +1751,10 @@
 <https://www.wikidata.org/wiki/Q5076482>
   # Charles Cornwallis, 4th Baron Cornwallis, 1675 – 1722-01-20
   gen:father <https://www.wikidata.org/wiki/Q5076481> ;
-  gen:mother <#Elizabeth_Fox> .
-  # oo Lady Charlotte Butler, 1679 – 1725-08-08
+  gen:mother <https://www.wikidata.org/wiki/Q75252786> .
+  # oo Lady Charlotte Butler, 1679 – 1725-08-08 (fitzgerald.ttl)
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q5076482> , <butler.ttl#Lady_Charlotte_Butler> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q5076482> , <https://www.wikidata.org/wiki/Q75624118> ;
 	gen:startDate "1699-06-06" .
 
 <https://www.wikidata.org/wiki/Q5076478>
@@ -1760,36 +1762,48 @@
   # 5th Baronet Cornwallis, 5th Baron Cornwallis of Eye, Suffolk 1722-01-20
   # 1st Viscount Brome, of co. Suffolk, 1st Earl of Cornwallis 1753-06-30
   gen:father <https://www.wikidata.org/wiki/Q5076482> ;
-  gen:mother <butler.ttl#Lady_Charlotte_Butler> .
+  gen:mother <https://www.wikidata.org/wiki/Q75624118> .
   # oo Hon. Elizabeth Townshend, d. 1785-12-01
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q5076478> , <townshend.ttl#Elizabeth_Townshend> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q5076478> , <https://www.wikidata.org/wiki/Q75531576> ;
 	gen:startDate "1722-11-28" .
 <https://www.wikidata.org/wiki/Q3048487>
   # Hon. Edward Cornwallis, 1713-02-22 - 1776-01-14
   gen:father <https://www.wikidata.org/wiki/Q5076482> ;
-  gen:mother <butler.ttl#Lady_Charlotte_Butler> .
+  gen:mother <https://www.wikidata.org/wiki/Q75624118> .
   # oo Hon. Mary Townshend, d. 1776-12-29
   []
     gen:spouse <https://www.wikidata.org/wiki/Q3048487> , <townshend.ttlMary_Townshend_(died_1776)> ;
 	gen:startDate "1763" .
 
-<#Lady_Mary_Cornwall>
+<https://www.wikidata.org/wiki/Q75280495>
   # Lady Mary Cornwall, 1736-06-06 - 1770-12-27
   gen:father <https://www.wikidata.org/wiki/Q5076478> ;
-  gen:mother <townshend.ttl#Elizabeth_Townshend> .
-  # oo 1769-08-13 Samuel Whitbread, 1720-08-30 - 1796-06-11, https://www.wikidata.org/wiki/Q3471265
-# ----
-<#Elizabeth_Fox>
-  # Elizabeth Fox, 1655~ - 1681-02-28
-  gen:father <https://www.wikidata.org/wiki/Q3498549> .
-  # and Elizabeth Whittle
-  # oo 1673-12-27 Charles Cornwallis, 3rd Baron Cornwallis of Eye, 1655-12-28 – 1698-04-29, https://www.wikidata.org/wiki/Q5076481
-# ----
-<butler.ttl#Lady_Charlotte_Butler>
-  # Lady Charlotte Butler, 1679 – 1725-08-08
-  gen:father <https://www.wikidata.org/wiki/Q7324496> .
-  # oo 1699-06-06 Charles Cornwallis, 4th Baron Cornwallis, 1675 – 1722-01-20, https://www.wikidata.org/wiki/Q5076482
+  gen:mother <https://www.wikidata.org/wiki/Q75531576> .
+  # oo 1769-08-13 Samuel Whitbread, 1720-08-30 - 1796-06-11, https://www.wikidata.org/wiki/Q3471265 (grey.ttl)
+<https://www.wikidata.org/wiki/Q164723>
+  # Sir Charles Cornwallis, 1st Marquess Cornwallis, 1738-12-31 - 1805-10-05
+  gen:father <https://www.wikidata.org/wiki/Q5076478> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75531576> .
+  # oo Jemima Tulikens Jones, 1747~ - 1779-02-13, daughter of James Jones
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q164723> , <https://www.wikidata.org/wiki/Q43066804> ;
+	gen:startDate "1768-07-14" .
+
+<https://www.wikidata.org/wiki/Q5076479>
+  # Charles Cornwallis, 2nd Marquess Cornwallis, 1774-10-19 – 1823-08-09
+  gen:father <https://www.wikidata.org/wiki/Q164723> ;
+  gen:mother <https://www.wikidata.org/wiki/Q43066804> .
+  # oo Lady Louisa Gordon, 1776-09-12 - 1850-12-05
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5076479> , <https://www.wikidata.org/wiki/Q75269653> ;
+	gen:startDate "1797-04-17" .
+
+<https://www.wikidata.org/wiki/Q75270739>
+  # Lady Jane Cornwallis, 1798-10-05 - 1856-09-23
+  gen:father <https://www.wikidata.org/wiki/Q5076479> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75269653> .
+  # oo 1819-05-13 Richard Griffin, 3rd Baron Braybrooke, 1783-09-26 - 1858-03-13, https://www.wikidata.org/wiki/Q7326083 (neville.ttl)
 
 # ----
 <https://www.wikidata.org/wiki/Q272539>
@@ -1801,12 +1815,22 @@
   gen:mother <#Elizabeth_Protheroe> .
 
 # ----
-#<https://www.wikidata.org/wiki/Q6143716>
-  # James George Stopford, 3d Earl of Courtown, 1765-08-15 - 1835-06-15
+<https://www.wikidata.org/wiki/Q6143716>
+  # James George Stopford, 3rd Earl of Courtown, 1765-08-15 - 1835-06-15
+  gen:father <https://www.wikidata.org/wiki/Q6143710> ; # James Stopford, 2nd Earl of Courtown
+  gen:mother <https://www.wikidata.org/wiki/Q75273130> . # Mary Powys
   # oo Lady Mary Scott, 1769-05-21 - 1823-04-21
   []
     gen:spouse <https://www.wikidata.org/wiki/Q6143716> , <https://www.wikidata.org/wiki/Q16773606> ;
 	gen:startDate "1791-01-29" .
+<https://www.wikidata.org/wiki/Q7884480>
+  # Hon. Sir Robert Stopford, 1768-02-05 - 1847-06-25
+  gen:father <https://www.wikidata.org/wiki/Q6143710> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75273130> .
+  # oo Mary Fanshawe, 1788 - 1866-06-05, daughter of Robert Fanshawe and Christiana Gennys
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7884480> , <https://www.wikidata.org/wiki/Q75273133> ;
+	gen:startDate "1809-06-29" .
 
 <https://www.wikidata.org/wiki/Q6143718>
   # James Thomas Stopford, 4th Earl of Courtown, 1794-03-27 - 1858-11-20
@@ -1821,6 +1845,14 @@
   gen:father <https://www.wikidata.org/wiki/Q6143716> ;
   gen:mother <https://www.wikidata.org/wiki/Q16773606> .
   # oo 1833-04-11 Rev. Abel John Ram, d. 1883-08-18, https://www.wikidata.org/wiki/Q75284915
+<https://www.wikidata.org/wiki/Q7344254>
+  # Robert Fanshawe Stopford, 1811-12-19 - 1891-01-04
+  gen:father <https://www.wikidata.org/wiki/Q7884480> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75273133> .
+  # oo Emily Anna Wilbraham, d. 1862-10-06, daughter of Captain William Wilbraham)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7344254> , <https://www.wikidata.org/wiki/Q75284692> ;
+	gen:startDate "1843-08-31" .
 
 <https://www.wikidata.org/wiki/Q11716795>
   # James George Henry Stopford, 5th Earl of Courtown, 1823-04-24 - 1914-11-28
@@ -1830,7 +1862,23 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q11716795> , <https://www.wikidata.org/wiki/Q75273139> ;
 	gen:startDate "1846-09-03" .
+<https://www.wikidata.org/wiki/Q75284691>
+  # Robert Wilbraham Stopford, 1844-06-24 - 1911-06-09
+  gen:father <https://www.wikidata.org/wiki/Q7344254> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75284692> .
+  # oo Ethelreda Neville-Grenville, d. 1938-06-20 (neville.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75284691> , <https://www.wikidata.org/wiki/Q75284689> ;
+	gen:startDate "1885-09-23" .
 
+<https://www.wikidata.org/wiki/Q11716797>
+  # James Walter Milles Stopford, 6th Earl of Courtown, 1853-03-03 - 1933-07-18
+  gen:father <https://www.wikidata.org/wiki/Q11716795> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75273139> .
+  # oo Hon. Catherine Elizabeth Neville, 1855-08-08 - 1884-08-12 (neville.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q11716797> , <https://www.wikidata.org/wiki/Q44502305> ;
+	gen:startDate "1876-04-27" .
 <https://www.wikidata.org/wiki/Q75283968>
   # Lady Lily Francis Stopford, 1862-01-11 - 1950-01-25
   gen:father <https://www.wikidata.org/wiki/Q11716795> ;
@@ -2857,7 +2905,7 @@
   # Rt. Hon. Sir Stephen Fox, 1627-03-27 - 1718-10-28
   # oo Elizabeth Whittle, d. 1696-08-11, daughter of William Whittle
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q3498549> , <#Elizabeth_Whittle> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q3498549> , <https://www.wikidata.org/wiki/Q75318856> ;
 	gen:startDate "1651-12-08" .
   # oo Christiana Hope, d. 1719-02-17, daughter of Rev. Francis Hope and Christian Palfeyman
   []
@@ -2867,8 +2915,13 @@
 <#Jane_Fox>
   # Jane Fox, d. 1721-07-11
   gen:father <https://www.wikidata.org/wiki/Q3498549> ;
-  gen:mother <#Elizabeth_Whittle> .
+  gen:mother <https://www.wikidata.org/wiki/Q75318856> .
   # oo 1686-05-09 George Compton, 4th Earl of Northampton, 1664-10-18 - 1727-04-15, https://www.wikidata.org/wiki/Q5538076
+<https://www.wikidata.org/wiki/Q75252786>
+  # Elizabeth Fox, 1655~ - 1681-02-28
+  gen:father <https://www.wikidata.org/wiki/Q3498549> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75318856> .
+  # oo 1673-12-27 Charles Cornwallis, 3rd Baron Cornwallis of Eye, 1655-12-28 – 1698-04-29, https://www.wikidata.org/wiki/Q5076481
 <https://www.wikidata.org/wiki/Q7609225>
   # Stephen Fox-Strangways, 1st Earl of Ilchester, 1704-09-12 – 1776-09-26
   # 1st Lord Ilchester, co. Somerset, Baron of Woodford Strangways, co. Dorset 1741-05-11

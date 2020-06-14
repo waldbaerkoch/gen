@@ -2,6 +2,7 @@
 @prefix gen: <http://jjkoch.de/gen#> .
 @prefix wdata: <https://www.wikidata.org/wiki/> .
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 <https://www.wikidata.org/wiki/Q3132264>
   # Henry de Ferrers, d. 1093
@@ -183,9 +184,9 @@
   # John de Ferrers, 3rd Baron Ferrers of Chartley, 1331~ – 1367-04-03
   gen:father <https://www.wikidata.org/wiki/Q7351399> ;
   gen:mother <https://www.wikidata.org/wiki/Q61971426> .
-  # oo Lady Elizabeth de Stafford, 1342 – 1375-08-07
+  # oo Lady Elizabeth de Stafford, 1334~/1342 – 1376-08-07
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q6265542> , <de_ros.ttl#Lady_Elizabeth_de_Stafford> .
+    gen:spouse <https://www.wikidata.org/wiki/Q6265542> , <https://www.wikidata.org/wiki/Q75653855> .
 <https://www.wikidata.org/wiki/Q27891061> # -> Baron Ferrers of Wem
   # Sir Robert Ferrers, 1st Baron Ferrers of Wem, 1341~ - 1380-12
   gen:father <https://www.wikidata.org/wiki/Q7351399> ;
@@ -194,7 +195,7 @@
 <https://www.wikidata.org/wiki/Q7351398>
   # Robert de Ferrers, 4th Baron Ferrers of Chartley, 1358~ – 1413
   gen:father <https://www.wikidata.org/wiki/Q6265542> ;
-  gen:mother <de_ros.ttl#Lady_Elizabeth_de_Stafford> .
+  gen:mother <https://www.wikidata.org/wiki/Q75653855> .
   # oo Margaret Le Despenser, 1360~ - 1415-11-03
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7351398> , <https://www.wikidata.org/wiki/Q75241239> .
@@ -350,7 +351,7 @@
   gen:father <https://www.wikidata.org/wiki/Q61913231> ;
   gen:mother <https://www.wikidata.org/wiki/Q26221371> .
   # oo Edward Grey, 1st Baron Ferrers (of Groby), 1415 - 1457-12-18, https://www.wikidata.org/wiki/Q4529808
-  # oo 1462-05-02b Sir John Bourchier, 1438~ - 1495, https://www.wikidata.org/wiki/Q6222586
+  # oo 1462-05-02b Sir John Bourchier, 1438~ - 1495, https://www.wikidata.org/wiki/Q6222586 (plantagenet.ttl)
 
 
 #<https://www.wikidata.org/wiki/Q6233028>
@@ -410,7 +411,7 @@
   gen:mother <https://www.wikidata.org/wiki/Q3638894> .
   # oo 1174~ William de Ferrers, 3rd Earl of Derby, 1140 - 1189-12-11a, https://www.wikidata.org/wiki/Q1683480
 
-# ----
+# ====
 #<https://www.wikidata.org/wiki/Q61896220>
   # Hervey de Stafford, d. 1214-08-25
   # oo Millicent de Stafford, d. 1225-01
@@ -449,24 +450,334 @@
   # oo Margaret Basset, 1280~ - 1337-03-17
   []
     gen:spouse <https://www.wikidata.org/wiki/Q4441326> , <https://www.wikidata.org/wiki/Q56373801> .
+
+<https://www.wikidata.org/wiki/Q942577>
+  # Ralph de Stafford, 1st Earl of Stafford, 1301-09-24 - 1372-08-31
+  # 2nd Lord Stafford 1308-08-12
+  # 1st Earl of Stafford 1351-03-05
+  gen:father <https://www.wikidata.org/wiki/Q4441326> ;
+  gen:mother <https://www.wikidata.org/wiki/Q56373801> .
+  # oo Margaret Audley, 2nd Baroness Audley, 1318 - 1347a/1351b
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q942577> , <https://www.wikidata.org/wiki/Q15040852> ;
+	gen:startDate "1336-07-06b" .
+
+<https://www.wikidata.org/wiki/Q4441325>
+  # Hugh de Stafford, 2nd Earl of Stafford, 1336 - 1386-10-16
+  gen:father <https://www.wikidata.org/wiki/Q942577> ;
+  gen:mother <https://www.wikidata.org/wiki/Q15040852> .
+  # oo Philippa de Beauchamp, 1344b - 1386-04-06
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4441325> , <https://www.wikidata.org/wiki/Q7184742> ;
+	gen:startDate "1350-03-01b" .
+<https://www.wikidata.org/wiki/Q75266693>
+  # Lady Joan de Stafford, b. 1336
+  gen:father <https://www.wikidata.org/wiki/Q942577> ;
+  gen:mother <https://www.wikidata.org/wiki/Q15040852> .
+  # oo John Charleton, 3rd Baron Cherleton, 1336~ - 1374-07-13, https://www.wikidata.org/wiki/Q2657771
+<https://www.wikidata.org/wiki/Q56372108>
+  # Lady Beatrice de Stafford, 1341~ - 1415-04-13
+  gen:father <https://www.wikidata.org/wiki/Q942577> ;
+  gen:mother <https://www.wikidata.org/wiki/Q15040852> .
+  # oo 1350 Maurice fitz Maurice, 2nd Earl of Desmond, d. 1358, https://www.wikidata.org/wiki/Q6793090
+  # oo 1363-04-12 Thomas de Ros, 4th Baron de Ros of Helmsley, 1335-01-13 - 1384-06-08, https://www.wikidata.org/wiki/Q7795496
+<https://www.wikidata.org/wiki/Q75653855>
+  # Lady Elizabeth de Stafford, 1334~/1342 - 1376-08-07
+  gen:father <https://www.wikidata.org/wiki/Q942577> ;
+  gen:mother <https://www.wikidata.org/wiki/Q15040852> .
+  # oo 1346-03-12 Fulk Lestrange, 3rd Lord Strange (of Blackmere), 1330~ - 1349-08-30, https://www.wikidata.org/wiki/Q75653857 (talbot.ttl)
+  # oo John de Ferrers, 3rd Baron Ferrers of Chartley, 1331~ – 1367-04-03, https://www.wikidata.org/wiki/Q6265542
+<https://www.wikidata.org/wiki/Q75266693>
+  # Lady Joan de Stafford, 1336 - 1397b
+  gen:father <https://www.wikidata.org/wiki/Q942577> ;
+  gen:mother <https://www.wikidata.org/wiki/Q15040852> .
+  # oo 1379-11-16b Gilbert Talbot, 3rd Baron Talbot, 1332~ - 1387-04-24, https://www.wikidata.org/wiki/Q61835588
+
+<https://www.wikidata.org/wiki/Q6760059>
+  # Lady Margaret de Stafford, 1364 - 1396-06-09
+  gen:father <https://www.wikidata.org/wiki/Q4441325> ;
+  gen:mother <https://www.wikidata.org/wiki/Q7184742> .
+  # oo 1387b Ralph de Neville, 1st Earl of Westmorland, 1364 - 1425-10-21, https://www.wikidata.org/wiki/Q1972589
+<https://www.wikidata.org/wiki/Q4441321>
+  # Thomas Stafford, 3rd Earl of Stafford, 1368~ - 1392-07-04
+  gen:father <https://www.wikidata.org/wiki/Q4441325> ;
+  gen:mother <https://www.wikidata.org/wiki/Q7184742> .
+  # oo Anne of Gloucester, 1383-04-30 - 1438-10-16 (plantagenet.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4441321> , <https://www.wikidata.org/wiki/Q537104> ;
+	gen:startDate "1390~" .
+<https://www.wikidata.org/wiki/Q1286864>
+  # Edmund Stafford, 5th Earl of Stafford, 1378-03-02 - 1403-07-21
+  gen:father <https://www.wikidata.org/wiki/Q4441325> ;
+  gen:mother <https://www.wikidata.org/wiki/Q7184742> .
+  # oo Anne of Gloucester, 1383-04-30 - 1438-10-16 (plantagenet.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1286864> , <https://www.wikidata.org/wiki/Q537104> ;
+	gen:startDate "1398-07-28" .
+
+<https://www.wikidata.org/wiki/Q75387312>
+  # Lady Anne Stafford, 1398a/1403b - 1432-09-20
+  gen:father <https://www.wikidata.org/wiki/Q1286864> ;
+  gen:mother <https://www.wikidata.org/wiki/Q537104> .
+  # oo 1415~ Edmund de Mortimer, 5th Earl of March, 1391-11-06 - 1425-01-18~, https://www.wikidata.org/wiki/Q1286673>
+  # oo 1427-03-06 John Holland, 2nd Duke of Exeter, 1395-03-29 - 1447-08-05, https://www.wikidata.org/wiki/Q3172556
+<https://www.wikidata.org/wiki/Q1265605>
+  # Humphrey Stafford, 1st Duke of Buckingham, 1402-08-15 - 1460-07-10
+  # 6th Earl of Stafford 1403-07-21
+  # 1st Count of Perche 1431
+  # 3rd Earl of Buckingham 1438-10-16
+  # 1st Duke of Buckingham 1444-09-14
+  gen:father <https://www.wikidata.org/wiki/Q1286864> ;
+  gen:mother <https://www.wikidata.org/wiki/Q537104> .
+  # oo Lady Anne Neville, d. 1480-09-20
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1265605> , <https://www.wikidata.org/wiki/Q565662> ;
+	gen:startDate "1424-10-18b" .
+
+<https://www.wikidata.org/wiki/Q1637267>
+  # Humphrey Stafford, Earl of Stafford
+  gen:birthDate "1425~" ;
+  gen:deathDate "1458-05-22~" ;
+  gen:father <https://www.wikidata.org/wiki/Q1265605> ;
+  gen:mother <https://www.wikidata.org/wiki/Q565662> .
+  # oo Lady Margaret Beaufort, 1437~ - 1474
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1637267> , <https://www.wikidata.org/wiki/Q273111> .
+<https://www.wikidata.org/wiki/Q15088507>
+  # Sir Henry Stafford, 1425 - 1471
+  gen:father <https://www.wikidata.org/wiki/Q1265605> ;
+  gen:mother <https://www.wikidata.org/wiki/Q565662> .
+  # oo Lady Margaret Beaufort, 1443-05-31 - 1509-06-29
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q15088507> , <https://www.wikidata.org/wiki/Q229202> ;
+	gen:startDate "1458-01-03" .
+<https://www.wikidata.org/wiki/Q75653864>
+  # Lady Anne Stafford, 1446 - 1472-04-14~
+  gen:father <https://www.wikidata.org/wiki/Q1265605> ;
+  gen:mother <https://www.wikidata.org/wiki/Q565662> .
+  # oo 1460-04 Sir Aubrey de Vere, d. 1462-02-20, https://www.wikidata.org/wiki/Q26260198
+<https://www.wikidata.org/wiki/Q75251744>
+  # Lady Catherine Stafford, d. 1476-12-26
+  gen:father <https://www.wikidata.org/wiki/Q1265605> ;
+  gen:mother <https://www.wikidata.org/wiki/Q565662> .
+  # oo 1467~ John Talbot, 3rd Earl of Shrewsbury, 1448-12-12 - 1473-06-28, https://www.wikidata.org/wiki/Q80259
+<https://www.wikidata.org/wiki/Q75268060>
+  # Lady Joan Stafford
+  gen:father <https://www.wikidata.org/wiki/Q1265605> ;
+  gen:mother <https://www.wikidata.org/wiki/Q565662> .
+  # oo 1461-03-04b (annulled 1477b) Sir William de Beaumont, 2nd Viscount Beaumont, 1438-04 – 1507-12-19, https://www.wikidata.org/wiki/Q2578004 (brienne.ttl)
+
+<https://www.wikidata.org/wiki/Q714480>
+  # Henry Stafford, 2nd Duke of Buckingham
+  gen:birthDate "1454-09-04" ;
+  gen:deathDate "1483-11-02" ;
+  gen:father <https://www.wikidata.org/wiki/Q1637267> ;
+  gen:mother <https://www.wikidata.org/wiki/Q273111> .
+  # oo Catherine Woodville, 1458 - 1497-05-18 (plantagenet.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q714480> , <https://www.wikidata.org/wiki/Q533098> ;
+	gen:startDate "1483-11-02" .
+
+<https://www.wikidata.org/wiki/Q726243>
+  gen:name "Edward Stafford, 3rd Duke of Buckingham"@en ;
+  gen:birthDate "1478-02-03" ;
+  gen:deathDate "1521-05-17" ;
+  gen:father <https://www.wikidata.org/wiki/Q714480> ;
+  gen:mother <https://www.wikidata.org/wiki/Q533098> .
+  # oo Lady Eleanor Percy, 1474 - 1531-02-13
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q726243> , <https://www.wikidata.org/wiki/Q5354355> ;
+	gen:startDate "1490-12-14~" .
+<https://www.wikidata.org/wiki/Q5363546>
+  # Lady Elizabeth Stafford, 1479 - 1532-05-11
+  gen:father <https://www.wikidata.org/wiki/Q714480> ;
+  gen:mother <https://www.wikidata.org/wiki/Q533098> .
+  # oo 1505-07-23a Robert Radcliffe, 1st Earl of Sussex, 1483 - 1542-11-27, https://www.wikidata.org/wiki/Q7349136 (stanley.ttl)
+<https://www.wikidata.org/wiki/Q2562413>
+  # Lady Anne Stafford
+  gen:birthDate "1483~" ;
+  gen:deathDate "1544" ;
+  gen:father <https://www.wikidata.org/wiki/Q714480> ;
+  gen:mother <https://www.wikidata.org/wiki/Q533098> .
+  # oo 1503 Sir Walter Herbert, 1452~ - 1507-09-16, https://www.wikidata.org/wiki/Q75387604
+  # oo 1509-12~ George Hastings, 1st Earl of Huntingdon, 1488 - 1544-03-24, https://www.wikidata.org/wiki/Q5540308
+
+<https://www.wikidata.org/wiki/Q4252416>
+  # Lady Elizabeth Stafford, 1499 - 1558-11-11
+  gen:father <https://www.wikidata.org/wiki/Q726243> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5354355> .
+  # oo 1512-01-08 Thomas Howard, 3rd Duke of Norfolk, 1473-03-10 - 1554-08-25, https://www.wikidata.org/wiki/Q503816
+<https://www.wikidata.org/wiki/Q75253997>
+  # Lady Catherine Stafford, 1499~ - 1555-05-14
+  gen:father <https://www.wikidata.org/wiki/Q726243> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5354355> .
+  # oo 1520-06b Ralph Neville, 4th Earl of Westmorland, 1497-02-21 - 1549-04-24, https://www.wikidata.org/wiki/Q7287908
+<https://www.wikidata.org/wiki/Q75254098>
+  # Lady Mary Stafford, 1500~ - 1532b
+  gen:father <https://www.wikidata.org/wiki/Q726243> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5354355> .
+  # oo 1519-06~ George Nevill, 5th (3rd) Baron Bergavenny, 1469~ - 1536-01-24b, https://www.wikidata.org/wiki/Q1507985
+<https://www.wikidata.org/wiki/Q5728604>
+  gen:name "Henry Stafford, 1st Baron Stafford"@en ;
+  gen:birthDate "1501-09-18" ;
+  gen:deathDate "1563-04-30" ;
+  gen:father <https://www.wikidata.org/wiki/Q726243> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5354355> .
+  # oo Ursula Pole, 1504~ - 1570-08-12
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5728604> , <https://www.wikidata.org/wiki/Q7901273> ;
+	gen:startDate "1519-02-16".
+<https://www.wikidata.org/wiki/Q75850030>
+  # unknown daughter Stafford
+  gen:father <https://www.wikidata.org/wiki/Q726243> .
+  # oo Sir Thomas FitzGerald, d. 1532, https://www.wikidata.org/wiki/Q75850028
+
+<https://www.wikidata.org/wiki/Q1184760>
+  gen:name "Dorothy Stafford"@en ;
+  gen:birthDate "1526-10-01" ;
+  gen:deathDate "1604-09-22" ;
+  gen:father <https://www.wikidata.org/wiki/Q5728604> ;
+  gen:mother <https://www.wikidata.org/wiki/Q7901273> .
+  # oo William Stafford, 1500~ - 1556-05-05, https://www.wikidata.org/wiki/Q4020158 (cecil.ttl)
+<https://www.wikidata.org/wiki/Q3048681>
+  # Edward Stafford, 3rd Baron Stafford, 1536-01-17 - 1603-10-18
+  gen:father <https://www.wikidata.org/wiki/Q5728604> ;
+  gen:mother <https://www.wikidata.org/wiki/Q7901273> .
+  # oo Lady Mary Stanley, d. 1609-09-03
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3048681> , <https://www.wikidata.org/wiki/Q75616918> ;
+	gen:startDate "1566-11-23b" .
+
+<https://www.wikidata.org/wiki/Q5345400>
+  # Edward Stafford, 4th Baron Stafford, 1572 – 1625-09-16
+  gen:father <https://www.wikidata.org/wiki/Q3048681> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75616918> .
+  # oo Isabel Forster, daughter of Thomas Forster
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5345400> , <https://www.wikidata.org/wiki/Q76174406> ;
+	gen:startDate "1595-11-22" .
+
+<https://www.wikidata.org/wiki/Q76174408>
+  # Edward Stafford, 1601-07-09 - 1621-04-06
+  gen:father <https://www.wikidata.org/wiki/Q5345400> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76174406> .
+  # oo Ann Wilford, daughter of James Wilford
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76174408> , <https://www.wikidata.org/wiki/Q76174410> ;
+	gen:startDate "1617-05-15" .
+
+<https://www.wikidata.org/wiki/Q75257629>
+  # Mary Stafford, 1st Countess of Stafford, 1620~ - 1694-01-13
+  # 1st Baroness Stafford, co. Stafford 1640-09-12
+  # 1st Countess of Stafford 1688-10-05
+  gen:father <https://www.wikidata.org/wiki/Q76174408> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76174410> .
+  # oo 1637-10-12 William Howard, 1st Viscount Stafford, 1612-11-30 - 1680-12-29, https://www.wikidata.org/wiki/Q423078
+
 # ----
 <https://www.wikidata.org/wiki/Q61896215>
   # Alice Corbet
   gen:father <https://www.wikidata.org/wiki/Q61896281> ;
   gen:mother <https://www.wikidata.org/wiki/Q61896284> .
   # oo Robert de Stafford, d. 1261-06-04b, https://www.wikidata.org/wiki/Q61896214
+
 # ----
 <https://www.wikidata.org/wiki/Q61896210>
   # ??? de Langley
   gen:father <https://www.wikidata.org/wiki/Q61896302> ;
   gen:mother <https://www.wikidata.org/wiki/Q61896304> .
   # oo Nicholas de Stafford, d. 1287-08-01~, https://www.wikidata.org/wiki/Q61896209
+
 # ----
 <https://www.wikidata.org/wiki/Q56373801>
   # Margaret Basset, 1280~ - 1337-03-17
   gen:father <https://www.wikidata.org/wiki/Q16198167> ;
   gen:mother <https://www.wikidata.org/wiki/Q61896325> .
   # oo Edmund de Stafford, 1st Baron Stafford, 1273-07-15 - 1308-08-12b, https://www.wikidata.org/wiki/Q4441326
+
+# ----
+<https://www.wikidata.org/wiki/Q2657771>
+  # John Charleton, 3rd Baron Cherleton, 1336~ - 1374-07-13
+  gen:father <https://www.wikidata.org/wiki/Q2657719> ; # John Cherleton, 2nd Lord Cherleton
+  gen:mother <https://www.wikidata.org/wiki/Q75565527> . # Maud de Mortimer
+  # oo Lady Joan de Stafford, b. 1336
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2657771> , <https://www.wikidata.org/wiki/Q75266693> .
+
+<https://www.wikidata.org/wiki/Q2657811>
+  # John Cherleton, 4th BAron Cherleton, 1362-04-25 - 1401-10-19
+  gen:father <https://www.wikidata.org/wiki/Q2657771> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75266693> .
+  # oo Lady Alice FitzAlan, 1382 - 1415b
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2657811> , <https://www.wikidata.org/wiki/Q4725858> ;
+	gen:startDate "1392-03b" .
+<https://www.wikidata.org/wiki/Q5342275>
+  # Edward Cherleton, 5th Baron Cherleton, 1371~ - 1421-03-14
+  gen:father <https://www.wikidata.org/wiki/Q2657771> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75266693> .
+  # oo Lady Alianore de Holand, 1370-10-13 - 1405-10-23
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5342275> , <https://www.wikidata.org/wiki/Q4725569> ;
+	gen:startDate "1399-06-19a" .
+
+<https://www.wikidata.org/wiki/Q75384693>
+  # Joan de Cherleton, 1400~ - 1425-09-17
+  gen:father <https://www.wikidata.org/wiki/Q5342275> ;
+  gen:mother <https://www.wikidata.org/wiki/Q4725569> .
+  # oo 1418 Sir John Grey, 1st Comte de Tancarville, 1384a - 1421-03-22, https://www.wikidata.org/wiki/Q6236303
+<https://www.wikidata.org/wiki/Q75387308>
+  # Joyce de Cherleton, 1403~ - 1446-09-22
+  gen:father <https://www.wikidata.org/wiki/Q5342275> ;
+  gen:mother <https://www.wikidata.org/wiki/Q4725569> .
+  # oo 1422-02-28 John Tiptoft, 1st Lord Tiptoft, 1400~ - 1443-01-27, https://www.wikidata.org/wiki/Q6260910
+# ----
+#<https://www.wikidata.org/wiki/Q6260910>
+  # John Tiptoft, 1st Lord Tiptoft, 1400~ - 1443-01-27
+  # 1st Lord Tiptoft 1426-01-07
+  # son of Sir Payn Tiptoft
+  # and Agnes Wroth
+  # oo Joyce de Cherleton, 1403~ - 1446-09-22
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6260910> , <https://www.wikidata.org/wiki/Q75387308> ;
+	gen:startDate "1422-02-28" .
+
+<https://www.wikidata.org/wiki/Q75387401>
+  # Philippa Tiptoft, 1423~ – 1487-01-30a
+  gen:father <https://www.wikidata.org/wiki/Q6260910> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75387308> .
+  # oo Thomas de Ros, 9th Baron de Ros of Helmsley, 1427-09-09 - 1464-05-17, https://www.wikidata.org/wiki/Q7795498
+<https://www.wikidata.org/wiki/Q1701944>
+  # John Tiptoft, 1st Earl of Worcester, 1427-05-08 - 1470-10-18
+  # 2nd Lord Tiptoft 1443-01-27
+  # 1st Earl of Worcester 1449-07-16
+  gen:father <https://www.wikidata.org/wiki/Q6260910> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75387308> .
+  # oo Lady Cecily Neville, 1425 - 1450-07-26
+  []
+    gen:spouse  <https://www.wikidata.org/wiki/Q1701944>, <https://www.wikidata.org/wiki/Q5056518> ;
+	gen:startDate "1449-04-03a" .
+<https://www.wikidata.org/wiki/Q75254067>
+  # Joan Tiptoft, b. 1425~
+  gen:father <https://www.wikidata.org/wiki/Q6260910> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75387308> .
+  # oo Sir Edmund Ingaldesthorpe, https://www.wikidata.org/wiki/Q75254065
+# ----
+#<https://www.wikidata.org/wiki/Q75254065>
+  # Sir Edmund Ingaldesthorpe
+  # son of Thomas Ingoldsthorpe
+  # and Margaret de la Pole
+  # oo Joan Tiptoft, b. 1425~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75254065> , <https://www.wikidata.org/wiki/Q75254067> .
+
+<https://www.wikidata.org/wiki/Q75254063>
+  # Isabel Ingaldesthorpe, 1441~ - 1476-05-20
+  gen:father <https://www.wikidata.org/wiki/Q75254065> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75254067> .
+  # oo 1457-04-25 Sir John Neville, 1st Marquess of Montagu, 1431~ - 1471-04-14, https://www.wikidata.org/wiki/Q719793
+
+# ====
 
 # ----
 <https://www.wikidata.org/wiki/Q3940122>
@@ -647,52 +958,3 @@
   gen:deathDate "1368-04-02" ;
   gen:father <#Sir_Walter_de_Norwich> ;
   gen:mother <#Katherine_de_Hedersete> .
-
-# ----
-#<https://www.wikidata.org/wiki/Q4470065>
-  # William Bourchier, 1374 - 1420-05-28
-  # oo Anne of Gloucester, 1383-04-30 - 1438-10-16
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q4470065> , <https://www.wikidata.org/wiki/Q537104> ;
-	gen:startDate "1405-11-10b" .
-
-<https://www.wikidata.org/wiki/Q5718412>
-  # Henry Bourchier, 1st Earl of Essex, 1409~ - 1483-04-04
-  # 2nd Count of Eu 1420-05-28
-  # 5th Lord Bourchier 1433-07-01
-  # 1st Viscount Bourchier 1446-12-14
-  # 1st Earl of Essex 1461-06-30
-  gen:father <https://www.wikidata.org/wiki/Q4470065> ;
-  gen:mother <https://www.wikidata.org/wiki/Q537104> .
-  # oo Isabella Plantagenet, 1409 - 1484-10-02
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q5718412> , <https://www.wikidata.org/wiki/Q4267233> ;
-	gen:startDate "1426-04-25b" .
-<#Eleanor_Bourchier>
-  # Eleanor Bourchier, 1417~ - 1474-11
-  gen:father <https://www.wikidata.org/wiki/Q4470065> ;
-  gen:mother <https://www.wikidata.org/wiki/Q537104> .
-  # oo 1444 John de Mowbray, 3rd Duke of Norfolk, 1415 - 1461-11-06, https://www.wikidata.org/wiki/Q326769
-
-<#William_Bourchier,_Viscount_Bourchier>
-  # William Bourchier, Viscount Bourchier, d. 1480
-  gen:father <https://www.wikidata.org/wiki/Q5718412> ;
-  gen:mother <https://www.wikidata.org/wiki/Q4267233> .
-  # oo Lady Anne Woodville, 1438~ – 1489-07-30
-  []
-    gen:spouse <#William_Bourchier,_Viscount_Bourchier> , <https://www.wikidata.org/wiki/Q4768899> ;
-	gen:startDate "1467-08-15b" .
-<https://www.wikidata.org/wiki/Q6222586>
-  # Sir John Bourchier, 1438~ - 1495
-  gen:father <https://www.wikidata.org/wiki/Q5718412> ;
-  gen:mother <https://www.wikidata.org/wiki/Q4267233> .
-  # oo Elizabeth Ferrers, Baroness Ferrers (of Groby), 1419~ - 1483-01-23~
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q6222586> , <https://www.wikidata.org/wiki/Q26218366> ;
-	gen:startDate "1462-05-02b" .
-
-<#Cicely_Bourchier>
-  # Cicely Bourchier, d. 1493-06b
-  gen:father <#William_Bourchier,_Viscount_Bourchier> ;
-  gen:mother <https://www.wikidata.org/wiki/Q4768899> .
-  # oo John Devereux, 8th Baron Ferrers of Chartley, 1461~ – 1501-05-07, https://www.wikidata.org/wiki/Q6229276
