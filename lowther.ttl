@@ -1,0 +1,664 @@
+@base <lowther.ttl> .
+@prefix gen: <http://jjkoch.de/gen#> .
+@prefix wdata: <https://www.wikidata.org/wiki/> .
+@prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+#<https://www.wikidata.org/wiki/Q75463623>
+  # Sir Richard Lowther, 1532-02-14 - 1607-01-27
+  # oo Frances Midleton
+#  []
+#    gen:spouse <https://www.wikidata.org/wiki/Q75463623> , <https://www.wikidata.org/wiki/Q75463624> .
+
+#<https://www.wikidata.org/wiki/Q75251655>
+  # Sir Christopher Lowther, 1557-09-08 - 1617
+#  gen:father <https://www.wikidata.org/wiki/Q75463623> ;
+#  gen:mother <https://www.wikidata.org/wiki/Q75463624> .
+  # oo Eleanor Middleton
+  # oo Eleanor Musgrave
+#  []
+#    gen:spouse <https://www.wikidata.org/wiki/Q75251655> , <https://www.wikidata.org/wiki/Q75251658> .
+  # oo Mary Wilson
+#<https://www.wikidata.org/wiki/Q75456456> # -> Lowther of Ingleton
+  # William Lowther, of Ingleton, 1574-01-30 - 1641-07-21
+#  gen:father <https://www.wikidata.org/wiki/Q75463623> ;
+#  gen:mother <https://www.wikidata.org/wiki/Q75463624> .
+
+#<https://www.wikidata.org/wiki/Q75251651>
+  # Sir John Lowther, d. 1637-09-15
+#  gen:father <https://www.wikidata.org/wiki/Q75251655> ;
+#  gen:mother <https://www.wikidata.org/wiki/Q75251658> .
+  # oo Eleanor Fleming
+#  []
+#    gen:spouse <https://www.wikidata.org/wiki/Q75251651> , <https://www.wikidata.org/wiki/Q75251652> .
+#<https://www.wikidata.org/wiki/Q75251661>
+  # Robert Lowther, d. 1655
+#  gen:father <https://www.wikidata.org/wiki/Q75251655> ;
+#  gen:mother <https://www.wikidata.org/wiki/Q75251658> .
+  # oo Margaret Cutler
+  # oo Elizabeth Holcroft, gdau of Lord Sandys of the Vyne
+  # oo Mrs Mary Davis
+
+<https://www.wikidata.org/wiki/Q7527897> # -> Lowther of Lowther
+  # Sir John Lowther, 1st Baronet, 1605-02-20 – 1675-11-30
+  gen:father <https://www.wikidata.org/wiki/Q75251651> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75251652> .
+#<https://www.wikidata.org/wiki/Q8014751> # -> Lowther of Swillington
+  # William Lowther, of Swillington, d. 1687-02
+#  gen:father <https://www.wikidata.org/wiki/Q75251651> ;
+#  gen:mother <https://www.wikidata.org/wiki/Q75251652> .
+  # oo Jane Busfeild
+#<https://www.wikidata.org/wiki/Q4772964> # -> Lowther of Marske
+  # Anthony Lowther, of Marske, d. 1692-01-27
+#  gen:father <https://www.wikidata.org/wiki/Q75251661> .
+  # and Elizabeth Holcroft
+
+
+# Lowther of Lowther
+<https://www.wikidata.org/wiki/Q7527897>
+  # Sir John Lowther, 1st Baronet, 1605-02-20 – 1675-11-30
+  # 1st Baronet Lowther, of Lowther, co. Westmorland 1638
+  gen:father <https://www.wikidata.org/wiki/Q75251651> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75251652> .
+  # oo Mary Fletcher, daughter of Sir Richard Fletcher and Barbara Crackanthorpe
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7527897> , <https://www.wikidata.org/wiki/Q75251647> ;
+	gen:startDate "1655b" .
+
+<https://www.wikidata.org/wiki/Q6245448>
+  # John Lowther, 1628 - 1668-03b
+  gen:father <https://www.wikidata.org/wiki/Q7527897> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75251647> .
+  # oo Elizabeth Bellingham (wentworth.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6245448> , <https://www.wikidata.org/wiki/Q75253251> ;
+	gen:startDate "1665" .
+<https://www.wikidata.org/wiki/Q7327485>
+  # Richard Lowther, 1638 – 1703
+  gen:father <https://www.wikidata.org/wiki/Q7527897> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75251647> .
+  # oo Barbara Prickett, daughter of Robert Prickett
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7327485> , <https://www.wikidata.org/wiki/Q75254836> .
+<https://www.wikidata.org/wiki/Q75551242>
+  # Eleanor Lowther
+  gen:father <https://www.wikidata.org/wiki/Q7527897> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75251647> .
+  # oo Sir Christopher Wandesford, 1st Baronet, 1628 - 1687-02, https://www.wikidata.org/wiki/Q75551240 (montagu.ttl)
+  # TODO move to osborne.ttl
+
+<https://www.wikidata.org/wiki/Q6245447>
+  # John Lowther, 1st Viscount Lonsdale, 1655-04-25 - 1700-07-10
+  # 2nd Baronet Lowther, of Lowther, co. Westmorland 1675-11-30
+  # 1st Viscount Lonsdale, co. Westmorland, 1st Baron Lowther of Lowther, co. Westmorland 1696-05-28
+  gen:father <https://www.wikidata.org/wiki/Q6245448> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75253251> .
+  # oo Katherine Thynne, 1653-09-21 - 1713-06-25a
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6245447> , <https://www.wikidata.org/wiki/Q18762022> ;
+	gen:startDate "1664-12-03" .
+<https://www.wikidata.org/wiki/Q7347027>
+  # Robert Lowther, 1681-12-13 – 1745-09
+  gen:father <https://www.wikidata.org/wiki/Q7327485> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75254836> .
+  # oo Catherine Pennington, d. 1764-12-07
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7347027> , <https://www.wikidata.org/wiki/Q75254847> ;
+	gen:startDate "1731-06-22" .
+
+<https://www.wikidata.org/wiki/Q75254839>
+  # Hon. Mary Lowther, d. 1706-04-16
+  gen:father <https://www.wikidata.org/wiki/Q6245447> ;
+  gen:mother <https://www.wikidata.org/wiki/Q18762022> .
+  # oo 1692 Sir John Wentworth, 1st Baronet, 1673-11-18b – 1720-04-25, https://www.wikidata.org/wiki/Q75619053
+<https://www.wikidata.org/wiki/Q75254843>
+  # Hon. Margaret Lowther, d. 1738-09-15
+  gen:father <https://www.wikidata.org/wiki/Q6245447> ;
+  gen:mother <https://www.wikidata.org/wiki/Q18762022> .
+  # oo 1706-03-20 Sir Joseph Pennington, 2nd Baronet, 1677-10-04 - 1744-12-03, https://www.wikidata.org/wiki/Q30322514
+<https://www.wikidata.org/wiki/Q75254844>
+  # Hon. Barbara Lowther, d. 1716
+  gen:father <https://www.wikidata.org/wiki/Q6245447> ;
+  gen:mother <https://www.wikidata.org/wiki/Q18762022> .
+  # oo 1703~ Thomas Howard, d. 1740, https://www.wikidata.org/wiki/Q75319464
+<https://www.wikidata.org/wiki/Q75254850>
+  # Margaret Lowther, 1728 - 1800-09-04
+  gen:father <https://www.wikidata.org/wiki/Q7347027> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75254847> .
+  # oo 1757-03-19 Henry Vane, 2nd Earl of Darlington, 1726 – 1792-09-08, https://www.wikidata.org/wiki/Q337878 (fane.ttl)
+<https://www.wikidata.org/wiki/Q6138273>
+  # James Lowther, 1st Earl of Lonsdale, 1736-08-05 - 1802-05-24
+  # 5th Baronet Lowther, of Lowther, co. Westmorland 1751-03-12
+  # 1st Baron Lowther, of Lowther, co. Westmoreland, 1st Earl of Lonsdale, co. Westmorland and co. Palatine of Lancaster, 1st Baron of the Barony of Kendal, co. Westmorland, 1st Viscount of Lowther, co. Westmorland, 1st Viscount of Lonsdale, co. Westmorland and co. Palatine of Lancaster, 1st Baron of the Barony of Burgh, co. Cumberland 1784-05-24
+  # 1st Viscount Lowther of Whitehaven, 1st Baron Lowther of Whitehaven 1797-10-26
+  gen:father <https://www.wikidata.org/wiki/Q7347027> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75254847> .
+  # oo Lady Mary Stuart, 1740-01-20 - 1824-04-05
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6138273> , <https://www.wikidata.org/wiki/Q75254855> ;
+	gen:startDate "1761-09-07" .
+<https://www.wikidata.org/wiki/Q75254852>
+  # Katherine Lowther, 1736~ - 1809-03-21
+  gen:father <https://www.wikidata.org/wiki/Q7347027> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75254847> .
+  # oo 1765-04-08 Harry Powlett, 6th Duke of Bolton, 1720-11-06 – 1794-12-25, https://www.wikidata.org/wiki/Q7585528
+
+
+# Lowther of Swillington
+#<https://www.wikidata.org/wiki/Q8014751>
+  # William Lowther, of Swillington, d. 1687-02
+#  gen:father <https://www.wikidata.org/wiki/Q75251651> ;
+#  gen:mother <https://www.wikidata.org/wiki/Q75251652> .
+  # oo Jane Busfeild
+
+<https://www.wikidata.org/wiki/Q8014748>
+  # Sir William Lowther, 1639-08 - 1705-12-07
+  gen:father <https://www.wikidata.org/wiki/Q8014751> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76006334> . # Margaret Adams
+  # oo Catherine Harrison
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8014748> , <https://www.wikidata.org/wiki/Q75251643> .
+
+<https://www.wikidata.org/wiki/Q7529666>
+  # Sir William Lowther, 1st Baronet, of Swillington, 1663-06-08 – 1729-03-06
+  # 1st Baronet Lowther, of Swillington 1715
+  gen:father <https://www.wikidata.org/wiki/Q8014748> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75251643> .
+  # oo 1691 Hon. Amabella Maynard, d. 1734-08-08
+<#John_Lowther>
+  # John Lowther
+  gen:father <https://www.wikidata.org/wiki/Q8014748> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75251643> .
+#<https://www.wikidata.org/wiki/Q75251639> # -> Lowther of Little Preston
+  # Christopher Lowther, of Little Preston, d. 1718
+#  gen:father <https://www.wikidata.org/wiki/Q8014748> ;
+#  gen:mother <https://www.wikidata.org/wiki/Q75251643> .
+
+<#Annabella_Lowther>
+  # Annabella Lowther
+  gen:father <#John_Lowther> .
+  # oo Ven. Henry Egerton, 1729 – 1795, https://www.wikidata.org/wiki/Q43303863
+
+
+# Lowther of Little Preston
+#<https://www.wikidata.org/wiki/Q75251639>
+  # Christopher Lowther, of Little Preston, d. 1718
+#  gen:father <https://www.wikidata.org/wiki/Q8014748> ;
+#  gen:mother <https://www.wikidata.org/wiki/Q75251643> .
+  # oo Elizabeth Maude
+#  []
+#    gen:spouse <https://www.wikidata.org/wiki/Q75251639> , <https://www.wikidata.org/wiki/Q75251640> .
+
+<https://www.wikidata.org/wiki/Q15990144>
+  # Rev. Sir William Lowther, 1st Baronet, 1707-07-10 – 1788-06-15
+  # 1st Baronet Lowther, of Little Preston 1764-08-22
+  gen:father <https://www.wikidata.org/wiki/Q75251639> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75251640> .
+  # oo Anne Zouch, d. 1759-04-03, daughter of Rev. Charles Zouch
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q15990144> , <https://www.wikidata.org/wiki/Q75251636> ;
+	gen:startDate "1753-08-31" .
+
+<https://www.wikidata.org/wiki/Q8014746>
+  # William Lowther, 1st Earl of Lonsdale, 1757-12-29 - 1844-03-19
+  # 2nd Baronet Lowther 1788-06-15
+  # 2nd Viscount Lowther of Whitehaven, 2nd Baron Lowther of Whitehaven 1802-05-24
+  # 1st Earl of Lonsdale, co. Westmorland 1807-04-07
+  gen:father <https://www.wikidata.org/wiki/Q15990144> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75251636> .
+  # oo Lady Augusta Fane, 1761-09-18 - 1838-03-06
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8014746> , <https://www.wikidata.org/wiki/Q28541791> ;
+	gen:startDate "1781-07-12" .
+<https://www.wikidata.org/wiki/Q7527899>
+  # Sir John Lowther, 1st Baronet, 1759-04-01 - 1844-05-11
+  # 1st Baronet Lowther, of Swillington, co. York 1824-11-03
+  gen:father <https://www.wikidata.org/wiki/Q15990144> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75251636> .
+  # oo Lady Elizabeth Fane, 1770-01-07 - 1844-05-19
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7527899> , <https://www.wikidata.org/wiki/Q75266365> ;
+	gen:startDate "1790-09-04" .
+
+<https://www.wikidata.org/wiki/Q75248661>
+  # Lady Mary Lowther, 1785-10-28 - 1862-10-21
+  gen:father <https://www.wikidata.org/wiki/Q8014746> ;
+  gen:mother <https://www.wikidata.org/wiki/Q28541791> .
+  # oo 1820-09-16 Lord William _Frederick_ Guy Cavendish-Bentinck, 1781-11-02 - 1828-02-11, https://www.wikidata.org/wiki/Q24254732 (bentinck.ttl)
+<https://www.wikidata.org/wiki/Q5725113>
+  # Hon. Henry Cecil Lowther, 1790-07-27 – 1867-12-06
+  gen:father <https://www.wikidata.org/wiki/Q8014746> ;
+  gen:mother <https://www.wikidata.org/wiki/Q28541791> .
+  # oo Lady Lucy Eleanor Sherard, d. 1848-06-08
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5725113> , <https://www.wikidata.org/wiki/Q75250934> ;
+	gen:startDate "1817-05-19" .
+<https://www.wikidata.org/wiki/Q75250907>
+  # Lady Grace Caroline Lowther, 1792-02-17 - 1883-11-01
+  gen:father <https://www.wikidata.org/wiki/Q8014746> ;
+  gen:mother <https://www.wikidata.org/wiki/Q28541791> .
+  # oo 1815-07-03 William John Frederick Vane, 3rd Duke of Cleveland, 1792-04-03 – 1864-09-06, https://www.wikidata.org/wiki/Q338053 (fane.ttl)
+#<https://www.wikidata.org/wiki/Q7526244>
+  # Sir Charles Hugh Lowther, 3rd Baronet, 1803-09-26 - 1894-11-06
+#  gen:father <https://www.wikidata.org/wiki/Q7527899> ;
+#  gen:mother <https://www.wikidata.org/wiki/Q75266365> . # or https://www.wikidata.org/wiki/Q75266365
+  # oo Isabella Morehead, d. 1887-07-02, daughter of Rev. Robert Morehead
+#  []
+#    gen:spouse <https://www.wikidata.org/wiki/Q7526244> , <https://www.wikidata.org/wiki/Q75953382> ;
+#	gen:startDate "1834-05-10" .
+
+#<https://www.wikidata.org/wiki/Q5725106>
+  # Henry Lowther, 3rd Earl of Lonsdale, 1818-03-27 - 1867-08-15
+#  gen:father <https://www.wikidata.org/wiki/Q5725113> ;
+#  gen:mother <https://www.wikidata.org/wiki/Q75250934> .
+  # oo Emily Susan Caulfeild, d. 1917-07-15
+#  []
+#    gen:spouse <https://www.wikidata.org/wiki/Q5725106> , <https://www.wikidata.org/wiki/Q75388696> .
+<https://www.wikidata.org/wiki/Q8014752>
+  # William Lowther, 1821-12-14 – 1912-01-23
+  gen:father <https://www.wikidata.org/wiki/Q5725113> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75250934> .
+  # oo Hon. Charlotte Alice Parke, 1828 - 1908-01-05
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8014752> , <https://www.wikidata.org/wiki/Q75251621> ;
+	gen:startDate "1853-12-17" .
+<https://www.wikidata.org/wiki/Q75251632>
+  # Lady Eleanor Cecily Lowther, 1822-12-20 - 1894-11-24
+  gen:father <https://www.wikidata.org/wiki/Q5725113> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75250934> .
+  # oo 1844-04-22 John Talbot Clifton, 1819-03-05 - 1882-04-16, https://www.wikidata.org/wiki/Q6260189 (hastings.ttl)
+<https://www.wikidata.org/wiki/Q75251634>
+  # Lady Augusta Mary Lowther, 1825-12-23 - 1916-01-11
+  gen:father <https://www.wikidata.org/wiki/Q5725113> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75250934> .
+  # oo 1863-06-30 Rt. Hon. Gerard James Noel, 1823-08-28 - 1911-05-19, https://www.wikidata.org/wiki/Q13530009 (douglas.ttl)
+#<https://www.wikidata.org/wiki/Q75358011>
+  # George William Lowther, 1837-03-28 - 1890-02-06
+#  gen:father <https://www.wikidata.org/wiki/Q7526244> ;
+#  gen:mother <https://www.wikidata.org/wiki/Q75953382> .
+  # oo Mary Frances Alice Bingham, d. 1921-12-02, daughter of Charles Bingham
+#  []
+#    gen:spouse <https://www.wikidata.org/wiki/Q75358011> , <https://www.wikidata.org/wiki/Q75358013> ;
+#	gen:startDate "1872-08-29" .
+
+<https://www.wikidata.org/wiki/Q7593228>
+  # St. George Henry Lowther, 4th Earl of Lonsdale, 1855-10-04 – 1882-02-08
+  gen:father <https://www.wikidata.org/wiki/Q5725106> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75388696> .
+  # oo Lady Constance Gwladys Herbert, 1859-04-24 - 1917-10-27
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7593228> , <https://www.wikidata.org/wiki/Q5623705> ;
+	gen:startDate "1878-07-06" .
+#<https://www.wikidata.org/wiki/Q6483626>
+  # Lancelot Lowther, 6th Earl of Lonsdale, 1867-06-25 - 1953-03-11
+#  gen:father <https://www.wikidata.org/wiki/Q5725106> ;
+#  gen:mother <https://www.wikidata.org/wiki/Q75388696> .
+  # oo Gwendoline Sophia Alice Sheffield, d. 1921-11-04, daughter of https://www.wikidata.org/wiki/Q61087159 Sir Robert Sheffield, 5th Baronet and https://www.wikidata.org/wiki/Q75271767 Priscilla Isabel Laura Dumaresq
+#  []
+#    gen:spouse <https://www.wikidata.org/wiki/Q6483626> , <https://www.wikidata.org/wiki/Q75250892> .
+<https://www.wikidata.org/wiki/Q75388695>
+  # Lady Verena Maud Lowther, 1865-04-06 - 1938-12-25
+  gen:father <https://www.wikidata.org/wiki/Q5725106> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75388696> .
+  # oo 1887-01-01 (div 1927) Victor Albert Francis Charles Spencer, 1st Viscount Churchill, 1864-10-23 – 1934-01-03, https://www.wikidata.org/wiki/Q7926362
+<https://www.wikidata.org/wiki/Q7526954>
+  # Rt. Hon. Sir Gerald Augustus Lowther, 1st Baronet, 1858-02-16 – 1916-04-05
+  # 1st Baronet Lowther 1914-01-19
+  gen:father <https://www.wikidata.org/wiki/Q8014752> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75251621> .
+  # oo Alice Blight, d. 1939-11-20, daughter of Atherton Blight
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7526954> , <https://www.wikidata.org/wiki/Q75251626> ;
+	gen:startDate "1905-02-28" .
+#<https://www.wikidata.org/wiki/Q75310258>
+  # John George Lowther, 1885-08-09 - 1977-03-19
+#  gen:father <https://www.wikidata.org/wiki/Q75358011> ;
+#  gen:mother <https://www.wikidata.org/wiki/Q75358013> .
+  # oo 1911-06-01 Hon. Lilah Charlotte Sarah White, 1889-12-22 - 1976-12-20, daughter of https://www.wikidata.org/wiki/Q21705473 (coke.ttl) and https://www.wikidata.org/wiki/Q75310254 Hon. Lilah Georgiana Augusta Constance Agar-Ellis
+#  []
+#    gen:spouse <https://www.wikidata.org/wiki/Q75310258> , <https://www.wikidata.org/wiki/Q75310257> ;
+#	gen:startDate "" .
+
+<https://www.wikidata.org/wiki/Q75250883>
+  # Lady Gladys Mary Juliet Lowther, 1881-04-09 - 1965-09-23
+  gen:father <https://www.wikidata.org/wiki/Q7593228> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5623705> .
+  # oo 1903-06-09 Sir Robert George Vivian Duff, 2nd Baronet, of Vaynol, 1876-11-14 - 1914-10-16, https://www.wikidata.org/wiki/Q75250885 (paget.ttl)
+  # TODO move here
+<https://www.wikidata.org/wiki/Q75250898>
+  # Lady Barbara Lowther, 1890-04-08 - 1979
+  gen:father <https://www.wikidata.org/wiki/Q6483626> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75250892> .
+  # oo 1914-04-18 (div 1921) James Archibald Innes, 1875 - 1948-08-16, https://www.wikidata.org/wiki/Q75312886 (percy.ttl)
+  # TODO move here
+<https://www.wikidata.org/wiki/Q75266361>
+  # Gladys Mabel Lowther, b. 1908-10-22
+  gen:father <https://www.wikidata.org/wiki/Q7526954> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75251626> .
+  # oo 1933-12-20 Charles Nevile Fane, 1911-02-07 - 1940-05-21, https://www.wikidata.org/wiki/Q75266350
+#<https://www.wikidata.org/wiki/Q75310276>
+  # Bridget Elizabeth Lowther, 1921-05-23 - 1999-12-13
+#  gen:father <https://www.wikidata.org/wiki/Q75310258> ;
+#  gen:mother <https://www.wikidata.org/wiki/Q75310257> .
+  # oo 1947-06-14 Robert Alistair Henderson, d. 1999-11-25, https://www.wikidata.org/wiki/Q75307074
+
+
+# Lowther of Marske
+#<https://www.wikidata.org/wiki/Q4772964>
+  # Anthony Lowther, of Marske, d. 1692-01-27
+#  gen:father <https://www.wikidata.org/wiki/Q75251661> .
+  # oo Margaret Penn
+#  []
+#    gen:spouse <https://www.wikidata.org/wiki/Q4772964> , <https://www.wikidata.org/wiki/Q75251665> ;
+#	gen:startDate "1667-02" .
+
+<https://www.wikidata.org/wiki/Q7529665>
+  # Sir William Lowther, 1st Baronet, 1670 - 1705-04
+  # 1st Baronet Lowther, of Marske, co. Yorks 1697-06-15
+  gen:father <https://www.wikidata.org/wiki/Q4772964> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75251665> .
+  # oo Catherine Preston, daughter of Thomas Preston
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7529665> , <https://www.wikidata.org/wiki/Q75251667> .
+
+<https://www.wikidata.org/wiki/Q7529194>
+  # Sir Thomas Lowther, 2nd Baronet, 1699-04-20 - 1745-03-23
+  gen:father <https://www.wikidata.org/wiki/Q7529665> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75251667> .
+  # oo Lady Elizabeth Cavendish, 1700-09-27 – 1747-11-07
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7529194> , <https://www.wikidata.org/wiki/Q75251610> ;
+	gen:startDate "1723-07-02" .
+
+
+
+# Lowther of Ingleton
+#<https://www.wikidata.org/wiki/Q75456456>
+  # William Lowther, of Ingleton, 1574-01-30 - 1641-07-21
+#  gen:father <https://www.wikidata.org/wiki/Q75463623> ;
+#  gen:mother <https://www.wikidata.org/wiki/Q75463624> .
+  # oo Elinor Welbury, 1578~ - 1620-08-27, daughter of Anthony Welbury
+#  []
+#    gen:spouse <https://www.wikidata.org/wiki/Q75456456> , <https://www.wikidata.org/wiki/Q75456459> .
+
+#<https://www.wikidata.org/wiki/Q75456468>
+  # Sir Richard, of Ingleton and Wolsley Castle, 1602-04-30 - 1645-08-15
+#  gen:father <https://www.wikidata.org/wiki/Q75456456> ;
+#  gen:mother <https://www.wikidata.org/wiki/Q75456459> .
+  # oo Isabel Fletcher, b. 1604~, daughter of Richard Fletcher and Barbara Crakenthorp, "1625-06-16" .
+
+  # George Lowther, of Skrine Abbey, b. 1640~
+#  gen:father <https://www.wikidata.org/wiki/Q75456468> .
+  # oo Frances Piers, b. 1640~
+ 
+  # Edward Lowther, of Kilrue, b. 1665~
+  # oo Mary Cusac, b. 1665~
+
+#<https://www.wikidata.org/wiki/Q75546426>
+  # Gorges Lowther, of Kilrue, d. 1716-06-11
+  # oo Jane Beresford, d. 1764-10-20
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75546426> , <https://www.wikidata.org/wiki/Q75546424> ;
+	gen:startDate "1711-03-30~" .
+  # oo Jane Power
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75546426> , <https://www.wikidata.org/wiki/Q75773987> .
+
+<https://www.wikidata.org/wiki/Q16859378>
+  # Gorges Lowther, of Kilrue, 1713-11-05 - 1792-02-21
+  gen:father <https://www.wikidata.org/wiki/Q75546426> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75546424> .
+  # oo Judith Ussher (beresford.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16859378> , <https://www.wikidata.org/wiki/Q75789080> ;
+	gen:startDate "1738" .
+<https://www.wikidata.org/wiki/Q75291853>
+  # Sir Marcus Lowther-Crofton, 1st Baronet, d. 1784-01-16
+  gen:father <https://www.wikidata.org/wiki/Q75546426> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75546424> .
+  # oo Catherine Crofton, d. 1767-04-09 (hill.ttl)
+  # TODO move to beresford.ttl
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75291853> , <https://www.wikidata.org/wiki/Q75562765> ;
+	gen:startDate "1743-09-09" .
+<https://www.wikidata.org/wiki/Q75973206>
+  # Sophia Beresford Lowther
+  gen:father <https://www.wikidata.org/wiki/Q75546426> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75546424> .
+  # oo 1726-02-09 Rowley Hill, https://www.wikidata.org/wiki/Q75973205
+
+<https://www.wikidata.org/wiki/Q76301014>
+  # Sophia Lowther
+  gen:father <https://www.wikidata.org/wiki/Q16859378> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75789080> .
+  # oo William Irvine, d. 1814-05, https://www.wikidata.org/wiki/Q75659655 (hill.ttl)
+  # TODO move here
+<https://www.wikidata.org/wiki/Q7526537>
+  # Sir Edward Crofton, 2nd Baronet, 1748-10-11 - 1797-09-30
+  gen:father <https://www.wikidata.org/wiki/Q75291853> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75562765> .
+  # oo Anne Croker, 1st Baroness Crofton of Mote, 1751-01-11 - 1817-08-12
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7526537> , <https://www.wikidata.org/wiki/Q4768250> ;
+	gen:startDate "1767-04-13" .
+
+<https://www.wikidata.org/wiki/Q75270679>
+  # Hon. Sir Edward Crofton, 3rd Baronet, 1778-10-23 - 1816-01-08
+  gen:father <https://www.wikidata.org/wiki/Q7526537> ;
+  gen:mother <https://www.wikidata.org/wiki/Q4768250> .
+  # oo Lady Charlotte Stewart, d. 1842-05
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75270679> , <https://www.wikidata.org/wiki/Q75270680> ;
+	gen:startDate "1801-09-12" .
+
+<https://www.wikidata.org/wiki/Q75563976>
+  # Hon. Susannah Anne Crofton, 1802~ - 1894-01-10
+  gen:father <https://www.wikidata.org/wiki/Q75270679> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75270680> .
+  # oo 1830-08-17 Francis St. George Caulfeild, 1806-03-08 - 1896-10-28, https://www.wikidata.org/wiki/Q75388697
+<https://www.wikidata.org/wiki/Q5342459>
+  # Edward Crofton, 2nd Baron Crofton of Mote, 1806-08-01 - 1869-12-27
+  # 4th Baronet Lowther-Crofton, of The Moate, co. Roscommon 1816-01-08
+  # 2nd Baron Crofton of Mote, co. Roscommon 1817-08-12
+  gen:father <https://www.wikidata.org/wiki/Q75270679> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75270680> .
+  # oo Lady Georgina Paget, 1800-08-29 - 1875-11-09
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5342459> , <https://www.wikidata.org/wiki/Q75302924> ;
+	gen:startDate "1833-10-19" .
+<https://www.wikidata.org/wiki/Q75315818>
+  # Hon. Frances Crofton, d. 1881-12-20
+  gen:father <https://www.wikidata.org/wiki/Q75270679> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75270680> .
+  # oo 1825-03-03 Daniel Bunbury-Tighe, 1796 - 1874-03-26, https://www.wikidata.org/wiki/Q75315816
+
+<https://www.wikidata.org/wiki/Q75308552>
+  # Hon. Charles St. George Crofton, 1836-02-01 - 1895-02-02
+  gen:father <https://www.wikidata.org/wiki/Q5342459> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75302924> .
+  # oo Theresa Augusta Bunbury-Tighe
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75308552> , <https://www.wikidata.org/wiki/Q75308553> ;
+	gen:startDate "1864-10-19" .
+
+<https://www.wikidata.org/wiki/Q75375324>
+  # Hon. Theresa Diana Crofton, d. 1923-03-26
+  gen:father <https://www.wikidata.org/wiki/Q75308552> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75308553> .
+  # oo 1912-12-28 Reginald de Blaquiere Chichester, 1862-08-15 - 1923-09-11, https://www.wikidata.org/wiki/Q75619164
+
+
+
+
+
+
+
+
+# ----
+#<https://www.wikidata.org/wiki/Q30322514>
+  # Sir Joseph Pennington, 2nd Baronet, 1677-10-04 - 1744-12-03
+  # oo Hon. Margaret Lowther, d. 1738-09-15
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q30322514> , <https://www.wikidata.org/wiki/Q75254843> ;
+	gen:startDate "1706-03-20" .
+
+<https://www.wikidata.org/wiki/Q75275752>
+  # Sir Joseph Pennington, 4th Baronet, d. 1793
+  gen:father <https://www.wikidata.org/wiki/Q30322514> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75254843> .
+  # oo Sarah Moore, daughter of John Moore
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75275752> , <https://www.wikidata.org/wiki/Q75605319> .
+<https://www.wikidata.org/wiki/Q75254847>
+  # Catherine Pennington, d. 1764-12-07
+  gen:father <https://www.wikidata.org/wiki/Q30322514> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75254843> .
+  # oo 1731-06-22 Robert Lowther, 1681-12-13 – 1745-09, https://www.wikidata.org/wiki/Q7347027
+
+<https://www.wikidata.org/wiki/Q18528721>
+  # Lowther Pennington, 2nd Baron Muncaster, 1745 - 1818-07-29
+  gen:father <https://www.wikidata.org/wiki/Q75275752> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75605319> .
+  # oo Esther Barry, d. 1827-10-07, daughter of Thomas Barry
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q18528721> , <https://www.wikidata.org/wiki/Q75275754> ;
+	gen:startDate "1802-01-13" .
+
+<https://www.wikidata.org/wiki/Q65116983>
+  # Lowther Augustus John Pennington, 3rd Baron Muncaster, 1802-12-14 - 1838-04-30
+  gen:father <https://www.wikidata.org/wiki/Q18528721> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75275754> .
+  # oo Frances Catherine Ramsden, 1806-06-03 - 1853-01-30 (hervey.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q65116983> , <https://www.wikidata.org/wiki/Q75269910> ;
+	gen:startDate "1828-12-15" .
+
+<https://www.wikidata.org/wiki/Q75605418>
+  # Hon. Louisa Theodosia Pennington, d. 1886-06-17
+  gen:father <https://www.wikidata.org/wiki/Q65116983> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75269910> .
+  # oo 1858-11-25 Edgar Atheling Drummond, 1825-08-21 - 1893-05-10, https://www.wikidata.org/wiki/Q75605420
+
+# ----
+<https://www.wikidata.org/wiki/Q75250934>
+  # Lady Lucy Eleanor Sherard, d. 1848-06-08
+  gen:father <https://www.wikidata.org/wiki/Q66364727> ; # Philip Sherard, 5th Earl of Harborough
+  gen:mother <https://www.wikidata.org/wiki/Q75261161> . # Eleanor Monckton
+  # oo 1817-05-19 Hon. Henry Lowther, 1790-07-27 – 1867-12-06, https://www.wikidata.org/wiki/Q5725113
+
+# ----
+#<https://www.wikidata.org/wiki/Q75388697>
+  # Francis St. George Caulfeild, 1806-03-08 - 1896-10-28
+  # oo Hon. Susannah Anne Crofton, 1802~ - 1894-01-10
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75388697> , <https://www.wikidata.org/wiki/Q75563976> ;
+	gen:startDate "1830-08-17" .
+
+<https://www.wikidata.org/wiki/Q75385961>
+  # Alfred Henry Caulfeild, 1834-12-29 - 1904-07-14
+  gen:father <https://www.wikidata.org/wiki/Q75388697> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75563976> .
+  # oo Hon. Augusta Chichester, 1831-01-15 - 1873-04-01
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75385961> , <https://www.wikidata.org/wiki/Q75296887> ;
+	gen:startDate "1872-11-14" .
+<https://www.wikidata.org/wiki/Q75563994>
+  # Fanny Florence Caulfeild, d. 1876-07-28
+  gen:father <https://www.wikidata.org/wiki/Q75388697> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75563976> .
+  # oo 1862-08-18 Owen Lewis Cope Williams, 1836-07-13 - 1904-10-02/1913-01-15, https://www.wikidata.org/wiki/Q7114546 (wellesley.ttl)
+<https://www.wikidata.org/wiki/Q75388696>
+  # Emily Susan Caulfeild, d. 1917-07-15
+  gen:father <https://www.wikidata.org/wiki/Q75388697> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75563976> .
+  # oo Henry Lowther, 3rd Earl of Lonsdale, 1818-03-27 - 1867-08-15, https://www.wikidata.org/wiki/Q5725106
+
+# ----
+#<https://www.wikidata.org/wiki/Q6140926>
+  # James Parke, 1st Baron Wensleydale of Walton, 1782-03-22 - 1868-02-25
+  # Baron Wensleydale, of Wensleydale, in the North Riding of Yorkshire 1856-01-16
+  # 1st Baron Wensleydale of Walton, in the County Palatine of Lancaster 1856-07-23
+  # son of Thomas Parke
+  # and Anne Preston
+  # oo Cecilia Arabella Frances Barlow, 1794~ - 1879-05-10
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6140926> , <https://www.wikidata.org/wiki/Q46357544> ;
+	gen:startDate "1817-04-08" .
+
+<https://www.wikidata.org/wiki/Q75251621>
+  # Hon. Charlotte Alice Parke, 1828 - 1908-01-05
+  gen:father <https://www.wikidata.org/wiki/Q6140926> ;
+  gen:mother <https://www.wikidata.org/wiki/Q46357544> .
+  # oo 1853-12-17 William Lowther, 1821-12-14 – 1912-01-23, https://www.wikidata.org/wiki/Q8014752
+# ----
+<https://www.wikidata.org/wiki/Q46357544>
+  # Cecilia Arabella Frances Barlow, 1794~ - 1879-05-10
+  gen:father <https://www.wikidata.org/wiki/Q46360415> . # Samuel Francis Barlow
+  # oo 1817-04-08 James Parke, 1st Baron Wensleydale of Walton, 1782-03-22 - 1868-02-25, https://www.wikidata.org/wiki/Q6140926
+
+# ----
+<https://www.wikidata.org/wiki/Q75546469>
+  # John Power, 5th Baron le Power and Coroghmore, 1599 - 1662
+  gen:father <https://www.wikidata.org/wiki/Q75447022> ; # John 'Og' Power
+  gen:mother <https://www.wikidata.org/wiki/Q75401086> . # Helen Barry
+  # oo Ruth Pypho, d. 1642-06-17b, daughter of Robert Pypho
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75546469> , <https://www.wikidata.org/wiki/Q75546470> .
+
+<https://www.wikidata.org/wiki/Q75773987>
+  # Jane Power
+  gen:father <https://www.wikidata.org/wiki/Q75546469> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75546470> .
+  # oo Gorges Lowther, d. 1716-06-11, https://www.wikidata.org/wiki/Q75546426
+
+# ----
+#<https://www.wikidata.org/wiki/Q75307074>
+  # Robert Alistair Henderson, d. 1999-11-25
+  # son of Robert Evelyn Henderson
+  # oo Bridget Elizabeth Lowther, 1921-05-23 - 1999-12-13
+#  []
+#    gen:spouse <https://www.wikidata.org/wiki/Q75307074> , <https://www.wikidata.org/wiki/Q75310276> ;
+#	gen:startDate "1947-06-14" .
+
+# seymour.ttl
+<https://www.wikidata.org/wiki/Q75308150>
+  # Emma Mary Henderson, b. 1950-11-05
+  gen:father <https://www.wikidata.org/wiki/Q75307074> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75310276> .
+  # oo 1971-01-06 (div 1978) Hugh Leopold Seymour, b. 1943-07-02, https://www.wikidata.org/wiki/Q75308144
+
+# ----
+#<https://www.wikidata.org/wiki/Q4768250>
+  # Anne Croker, 1st Baroness Crofton of Mote, 1751-01-11 - 1817-08-12
+  # 1st Baroness Crofton of Mote, co. Roscommon 1798-03-08
+  # daughter of Thomas Croker
+  # and Anne Ryves
+  # oo 1767-04-13 Sir Edward Crofton, 2nd Baronet, 1748-10-11 - 1797-09-30, https://www.wikidata.org/wiki/Q7526537
+
+# ----
+<https://www.wikidata.org/wiki/Q75315816>
+  # Daniel Bunbury-Tighe, 1796 - 1874-03-26
+  gen:father <https://www.wikidata.org/wiki/Q75267160> . # William Tighe
+  # oo Hon. Frances Crofton, d. 1881-12-20
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75315816> , <https://www.wikidata.org/wiki/Q75315818> ;
+	gen:startDate "1825-03-03" .
+
+<https://www.wikidata.org/wiki/Q75435976>
+  # Frederick Edward Banbury Tighe, 1826-06 - 1891-01-06
+  gen:father <https://www.wikidata.org/wiki/Q75315816> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75315818> .
+  # oo Lady Kathleen Louisa Georgina Ponsonby, 1826-08-30 - 1863-07-09
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75435976> , <https://www.wikidata.org/wiki/Q75435973> ;
+	gen:startDate "1858-08-10" .
+<https://www.wikidata.org/wiki/Q75315815>
+  # Frances Marianne Tighe, d. 1912-06-06
+  gen:father <https://www.wikidata.org/wiki/Q75315816> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75315818> .
+  # oo 1852-08-07 Hon. Frederick Arthur Henry Chichester, 1824-02-22 - 1863-05-18, https://www.wikidata.org/wiki/Q75315814
+<https://www.wikidata.org/wiki/Q75308553>
+  # Theresa Augusta Bunbury-Tighe
+  gen:father <https://www.wikidata.org/wiki/Q75315816> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75315818> .
+  # oo 1864-10-19 Hon. Charles St. George Crofton, 1836-02-01 - 1895-02-02, https://www.wikidata.org/wiki/Q75308552
