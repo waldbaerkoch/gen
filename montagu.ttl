@@ -266,7 +266,7 @@
   gen:deathDate "1729-02-25" ;
   gen:father <https://www.wikidata.org/wiki/Q335182> ;
   gen:mother <#Jemima_Crew> .
-<#Lady_Anne_Montagu_(died_1729)>
+<https://www.wikidata.org/wiki/Q76025032>
   gen:name "Lady Anne Montagu"@en ;
   gen:birthDate "1656~" ;
   gen:deathDate "1729-03-14" ;
@@ -422,7 +422,7 @@
   gen:deathDate "1818-05-21" ;
   gen:father <https://www.wikidata.org/wiki/Q6249175> ;
   gen:mother <paulet.ttl#Lady_Mary_Henrietta_Powlett> .
-  # oo Lady Louisa Mary Ann Julia Harriet Lowry-Corry, 1781-04-03 - 1862-04-19
+  # oo Lady Louisa Mary Ann Julia Harriet Lowry-Corry, 1781-04-03 - 1862-04-19 (egerton.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5542572> , <https://www.wikidata.org/wiki/Q6688543> ;
 	gen:startDate "1804-07-09" .
@@ -760,7 +760,7 @@
   gen:mother <paget.ttl#Elizabeth_Irby> .
   # oo Lady Anne Montagu, 1656~ - 1729-03-14
   []
-    gen:spouse <#Christopher_Montagu> , <#Lady_Anne_Montagu_(died_1729)> ;
+    gen:spouse <#Christopher_Montagu> , <https://www.wikidata.org/wiki/Q76025032> ;
 	gen:startDate "1688a" .
 <https://www.wikidata.org/wiki/Q75551315>
   # Elizabeth Montagu, 1660 - 1731-11-13
@@ -1508,7 +1508,7 @@
   # George Augustus North, 3rd Earl of Guilford, 1757-09-11 - 1802-04-20
   gen:father <https://www.wikidata.org/wiki/Q312593> ;
   gen:mother <https://www.wikidata.org/wiki/Q17453130> .
-  # oo Lady Maria Frances Mary Hobart, 1762~ - 1794-04-23 (bertie.ttl)
+  # oo Lady Maria Frances Mary Hobart, 1762~ - 1794-04-23 (egerton.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5542932> , <https://www.wikidata.org/wiki/Q16753016> ;
 	gen:startDate "1785-09-30" .
@@ -1734,13 +1734,53 @@
 
 # ----
 <https://www.wikidata.org/wiki/Q7325442>
-  # oo Sir Richard Edgcumbe, 1640-02-13 - 1688-04-03
-  gen:father <https://www.wikidata.org/wiki/Q14881713> .
-  # and Mary Glanville
+  # Sir Richard Edgcumbe, 1640-02-13 - 1688-04-03
+  gen:father <https://www.wikidata.org/wiki/Q14881713> ; # Piers Edgcumbe
+  gen:mother <https://www.wikidata.org/wiki/Q75590213> . # Mary Glanville
   # Lady Anne Montagu, 1656~ - 1729-03-14
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q7325442> , <#Lady_Anne_Montagu_(died_1729)> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q7325442> , <https://www.wikidata.org/wiki/Q76025032> ;
 	gen:startDate "1670" .
+
+<https://www.wikidata.org/wiki/Q367875>
+  # Richard Edgcumbe, 1st Baron Edgcumbe of Mount-Edgcumbe, 1680-04-23 - 1758
+  # 1st Baron Edgcumbe of Mount-Edgcumbe 1742-04-20
+  gen:father <https://www.wikidata.org/wiki/Q7325442> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76025032> .
+  # oo Matilda Furnese, d. 1721, daughter of Sir Henry Furnese, 1st Baronet (https://www.wikidata.org/wiki/Q7527139, 1st Baronet Furnese, of Waldershare, co. Kent)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q367875> , <https://www.wikidata.org/wiki/Q76025886> ;
+	gen:startDate "1715-03-12" .
+
+<https://www.wikidata.org/wiki/Q3101548>
+  # George Edgcumbe, 1st Earl of Mount Edgcumbe, 1720 - 1795-02-04
+  # 3rd Baron Edgcumbe of Mount-Edgcumbe 1761
+  # 1st Viscount Mount Edgcumbe and Valletort 1781-03-05
+  # 1st Earl of Mount Edgcumbe 1789-08-31
+  gen:father <https://www.wikidata.org/wiki/Q367875> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76025886> .
+  # oo Emma Gilbert, 1729-07-28 - 1807-12-22, daughter of Most Rev. John Gilbert and Margaret Sherard
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3101548> , <https://www.wikidata.org/wiki/Q38520177> ;
+	gen:startDate "1761-08-16" .
+
+<https://www.wikidata.org/wiki/Q4285555>
+  # Richard Edgcumbe, 2nd Earl of Mount Edgcumbe, 1764-09-13 - 1839-09-26
+  gen:father <https://www.wikidata.org/wiki/Q3101548> ;
+  gen:mother <https://www.wikidata.org/wiki/Q38520177> .
+  # oo Lady Sophia Hobart, 1768-03-26 - 1806-08-17 (egerton.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4285555> , <https://www.wikidata.org/wiki/Q56641417> ;
+	gen:startDate "1789-02-21" .
+
+<https://www.wikidata.org/wiki/Q6814689>
+  # Ernest Augustus Edgcumbe, 3rd Earl of Mount Edgcumbe, 1797-03-23 - 1861-09-03
+  gen:father <https://www.wikidata.org/wiki/Q4285555> ;
+  gen:mother <https://www.wikidata.org/wiki/Q56641417> .
+  # oo Caroline Augusta Feilding, 1808 - 1881-11-02
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6814689> , <https://www.wikidata.org/wiki/Q3660556> ;
+	gen:startDate "1831-12-06" .
 
 # ----
 #<#Sir_Nicholas_Bacon>
@@ -1811,31 +1851,6 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q20204071> , <https://www.wikidata.org/wiki/Q26454503> ;
 	gen:startDate "1789-10-24" .
-
-# ----
-#<https://www.wikidata.org/wiki/Q4792879>
-  # Armar Lowry-Corry, 1st Earl of Belmore, 1740-04-07 – 1802-02-02
-  # 1st Baron Belmore of Castle Coole, co. Fermanagh 1781-01-06
-  # 1st Viscount Belmore 1789-12-06
-  # 1st Earl of Belmore 1797-11-30
-  # oo Lady Harriet Hobart, 1762-04-07 - 1805-07-14
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q4792879> , <https://www.wikidata.org/wiki/Q47468414> ;
-	gen:startDate "1780-03-02" ;
-	gen:divorceDate "1793-04" .
-  
-<https://www.wikidata.org/wiki/Q6688543>
-  # Lady Louisa Mary Ann Julia Harriet Lowry-Corry, 1781-04-03 - 1862-04-19
-  gen:father <https://www.wikidata.org/wiki/Q4792879> ;
-  gen:mother <https://www.wikidata.org/wiki/Q47468414> .
-  # oo 1804-07-09 George John Montagu, 6th Earl of Sandwich, 1773-02-04 - 1818-05-21, https://www.wikidata.org/wiki/Q5542572
-# ----
-<https://www.wikidata.org/wiki/Q47468414>
-  # Lady Harriet Hobart, 1762-04-07 - 1805-07-14
-  gen:father <https://www.wikidata.org/wiki/Q3560278> .
-  # and Mary Ann Drury
-  # oo 1780-03-02 (div 1793-04) Armar Lowry-Corry, 1st Earl of Belmore, 1740-04-07 – 1802-02-02, https://www.wikidata.org/wiki/Q4792879
-  # oo 1793-04-14 William Kerr, 6th Marquess of Lothian, 1763-10-04 - 1824-04-27, https://www.wikidata.org/wiki/Q2782378
 
 # ----
 <https://www.wikidata.org/wiki/Q435375>

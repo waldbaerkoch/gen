@@ -2,6 +2,7 @@
 @prefix gen: <http://jjkoch.de/gen#> .
 @prefix wdata: <https://www.wikidata.org/wiki/> .
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 #<#Philip_Egerton_(died_1474)>
   # Philip Egerton, d. 1474
@@ -116,8 +117,8 @@
   gen:father <https://www.wikidata.org/wiki/Q6231481> ;
   gen:mother <https://www.wikidata.org/wiki/Q18534153> .
   # oo 1628-03b Oliver St John, 5th Baron St John of Bletso, 1603 – 1642-10-23, https://www.wikidata.org/wiki/Q7087849 (pelham.ttl)
-<#Lady_Frances_Egerton>
-  # Lady Frances Egerton, d. 1664-11-27
+<https://www.wikidata.org/wiki/Q75493708>
+  # Lady Frances Egerton, 1603~ - 1664-11-27
   gen:father <https://www.wikidata.org/wiki/Q6231481> ;
   gen:mother <https://www.wikidata.org/wiki/Q18534153> .
   # oo 1621-02 Sir John Hobart, 2nd Baronet, 1593-04-19 – 1647-04-20, https://www.wikidata.org/wiki/Q11802483
@@ -778,29 +779,274 @@
   # and Margaret Daniell
   # oo 1597-10 Thomas Egerton, 1st Viscount Brackley, 1540 - 1617-03-15, https://www.wikidata.org/wiki/Q2017342
 
-# ----
+# ====
 #<https://www.wikidata.org/wiki/Q7527153>
   # Sir Henry Hobart, 1st Baronet, 1560~ – 1625-12-29
   # 1st Baronet Hobart, of Intwood, Norfolk 1611-05-11
+  # son of Thomas Hobart
+  # and Audrey Hare
   # oo Dorothy Bell, 1572-10-19 - 1641-04~
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q7527153> , <#Dorothy_Bell> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q7527153> , <https://www.wikidata.org/wiki/Q75493696> ;
 	gen:startDate "1590-04-21" .
 
 <https://www.wikidata.org/wiki/Q11802483>
   # Sir John Hobart, 2nd Baronet, 1593-04-19 – 1647-04-20
   gen:father <https://www.wikidata.org/wiki/Q7527153> ;
-  gen:mother <#Dorothy_Bell> .
-  # oo Lady Frances Egerton, d. 1664-11-27
+  gen:mother <https://www.wikidata.org/wiki/Q75493696> .
+  # oo Lady Philippa Sydney, d. 1620-09-24 (cecil.ttl)
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q11802483> , <#Lady_Frances_Egerton> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q11802483> , <https://www.wikidata.org/wiki/Q75493705> ;
 	gen:startDate "1621-02" .
+  # oo Lady Frances Egerton, 1603~ - 1664-11-27
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q11802483> , <https://www.wikidata.org/wiki/Q75493708> ;
+	gen:startDate "1621-02" .
+<https://www.wikidata.org/wiki/Q75493709>
+  # Sir Miles Hobart, b. 1595-04-12
+  gen:father <https://www.wikidata.org/wiki/Q7527153> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75493696> .
+  # oo Frances Peyton, 1595 - 1631 (osborne.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75493709> , <https://www.wikidata.org/wiki/Q75493712> .
+
+<https://www.wikidata.org/wiki/Q75493714>
+  # Philippa Hobart, 1635-10-12 - 1655-01~
+  gen:father <https://www.wikidata.org/wiki/Q11802483> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75493705> .
+  # oo 1647 Sir John Hobart, 3rd Baronet, 1628-03-20 - 1683-08-22, https://www.wikidata.org/wiki/Q11802488
+<https://www.wikidata.org/wiki/Q11802488>
+  # Sir John Hobart, 3rd Baronet, 1628-03-20 - 1683-08-22
+  gen:father <https://www.wikidata.org/wiki/Q75493709> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75493712> .
+  # oo Philippa Hobart, 1635-10-12 - 1655-01~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q11802488> , <https://www.wikidata.org/wiki/Q75493714> ;
+	gen:startDate "1647" .
+  # oo Mary Hampden, 1630-05-01b - 1689-05-02b
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q11802488> , <https://www.wikidata.org/wiki/Q75493717> ;
+	gen:startDate "1656-06-03" .
+
+<https://www.wikidata.org/wiki/Q7527155>
+  # Sir Henry Hobart, 4th Baronet, 1658~ - 1698-08-21
+  gen:father <https://www.wikidata.org/wiki/Q11802488> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75493717> .
+  # oo Elizabeth Maynard, 1667~ - 1701-08-22, daughter of Joseph Maynard and Mary Mosley
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7527155> , <https://www.wikidata.org/wiki/Q75278650> ;
+	gen:startDate "1684-07-09" .
+
+<https://www.wikidata.org/wiki/Q75514553>
+  # Catherine Hobart, d. 1725-06-02
+  gen:father <https://www.wikidata.org/wiki/Q7527155> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75278650> .
+  # oo George Churchill, d. 1745, https://www.wikidata.org/wiki/Q75514555
+<https://www.wikidata.org/wiki/Q275065>
+  # Henrietta Hobart, 1688~ - 1767-07-26
+  gen:father <https://www.wikidata.org/wiki/Q7527155> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75278650> .
+  # oo 1706-03-02 Charles Howard, 9th Earl of Suffolk, 1675 - 1733-09-28, https://www.wikidata.org/wiki/Q5079169
+  # oo 1735-06-26 Hon. George Berkeley, 1680a/1683~ – 1746-10-29, https://www.wikidata.org/wiki/Q5536926
+<https://www.wikidata.org/wiki/Q3560055>
+  # John Hobart, 1st Earl of Buckinghamshire, 1693-10-11 - 1756-09-22
+  # 5th Baronet Hobart, of Intwood, Norfolk 1698-08-21
+  # 1st Baron Hobart of Blickling, Norfolk 1728-05-28
+  # 1st Earl of Buckinghamshire 1746-09-05
+  gen:father <https://www.wikidata.org/wiki/Q7527155> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75278650> .
+  # oo Judith Britiffe, d. 1727-02-07, daughter of Robert Britiffe and Judith Edgar
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3560055> , <https://www.wikidata.org/wiki/Q75272332> ;
+	gen:startDate "1717-11-08" .
+  # oo Elizabeth Bristow, d. 1762-09-12, daughter of Robert Bristow and Elizabeth Woolley
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3560055> , <https://www.wikidata.org/wiki/Q75272335> ;
+	gen:startDate "1728-02-10" .
+
+<https://www.wikidata.org/wiki/Q3560278>
+  # John Hobart, 2nd Earl of Buckinghamshire, 1723-08-17 – 1793-08-03
+  gen:father <https://www.wikidata.org/wiki/Q3560055> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75272332> .
+  # oo Mary Ann Drury, 1740-06-29 - 1769-12-30
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3560278> , <https://www.wikidata.org/wiki/Q75250788> ;
+	gen:startDate "1761-07-14" .
+  # oo Caroline Conolly, 1755~ - 1817-01-26 (wentworth.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3560278> , <https://www.wikidata.org/wiki/Q75250789> ;
+	gen:startDate "1770-09-24" .
+<https://www.wikidata.org/wiki/Q5540642>
+  # George Hobart, 3rd Earl of Buckinghamshire, 1731-09-08 - 1804-11-14
+  gen:father <https://www.wikidata.org/wiki/Q3560055> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75272335> .
+  # oo Albinia Bertie, d. 1816-03-11
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5540642> , <https://www.wikidata.org/wiki/Q75272338> ;
+	gen:startDate "1757-05-16" .
+
+<https://www.wikidata.org/wiki/Q47468414>
+  # Lady Harriet Hobart, 1762-04-07 - 1805-07-14
+  gen:father <https://www.wikidata.org/wiki/Q3560278> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75250788> .
+  # oo 1780-03-02 (div 1793-04) Armar Lowry-Corry, 1st Earl of Belmore, 1740-04-07 – 1802-02-02, https://www.wikidata.org/wiki/Q4792879
+  # oo 1793-04-14 William Kerr, 6th Marquess of Lothian, 1763-10-04 - 1824-04-27, https://www.wikidata.org/wiki/Q2782378
+<https://www.wikidata.org/wiki/Q56641417>
+  # Lady Sophia Hobart, 1768-03-26 - 1806-08-17
+  gen:father <https://www.wikidata.org/wiki/Q3560278> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75250788> .
+  # oo 1789-02-21 Richard Edgcumbe, 2nd Earl of Mount Edgcumbe, 1764-09-13 - 1839-09-26, https://www.wikidata.org/wiki/Q4285555 (montagu.ttl)
+<https://www.wikidata.org/wiki/Q4742307>
+  # Lady Amelia Anne Hobart, 1772-02-20 – 1829-02-12
+  gen:father <https://www.wikidata.org/wiki/Q3560278> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75250789> .
+  # oo 1794-06-09 Robert Stewart, 2nd Marquess of Londonderry, 1769-06-18 - 1822-08-12, https://www.wikidata.org/wiki/Q333050 (fane.ttl)
+<https://www.wikidata.org/wiki/Q76255226>
+  # Lady Albinia Hobart, 1759-04-19 - 1850-08-02
+  gen:father <https://www.wikidata.org/wiki/Q5540642> ;
+  gen:mother <https://www.wikidata.org/wiki/Q19324900> .
+  # oo 1784-07-14 Richard Cumberland, https://www.wikidata.org/wiki/Q76255227
+<https://www.wikidata.org/wiki/Q333417>
+  # Robert Hobart, 4th Earl of Buckinghamshire, 1760-05-06 - 1816-02-04
+  gen:father <https://www.wikidata.org/wiki/Q5540642> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75272338> .
+  # oo Margaretta Bourke, d. 1796-08-07, daughter of Edmund Bourke
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q333417> , <https://www.wikidata.org/wiki/Q75272937> ;
+	gen:startDate "1792-01-04" .
+<https://www.wikidata.org/wiki/Q27868456>
+  # Hon. George Vere Hobart, 1761 - 1802-12-05
+  gen:father <https://www.wikidata.org/wiki/Q5540642> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75272338> .
+  # oo Jane Cataneo, daughter of Horace Cataneo
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q27868456> , <https://www.wikidata.org/wiki/Q75272340> .
+<https://www.wikidata.org/wiki/Q16753016>
+  # Lady Maria Frances Mary Hobart, 1762~ - 1794-04-23
+  gen:father <https://www.wikidata.org/wiki/Q5540642> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75272338> .
+  # oo 1785-09-30 George Augustus North, 3rd Earl of Guilford, 1757-09-11 - 1802-04-20, https://www.wikidata.org/wiki/Q5542932 (montagu.ttl)
+<https://www.wikidata.org/wiki/Q75452957>
+  # Lady Henrietta Anne Barbara Hobart, 1762~ - 1828-12-12
+  gen:father <https://www.wikidata.org/wiki/Q5540642> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75272338> .
+  # oo 1789-05-24 Rt. Hon. John Sullivan, 1749-04-07 - 1839-10-31, https://www.wikidata.org/wiki/Q18527646
+<https://www.wikidata.org/wiki/Q5723072>
+  # Very Rev. Hon. Henry Lewis Hobart, 1774 - 1846-05-08
+  # Dean of Windsor 1816
+  gen:father <https://www.wikidata.org/wiki/Q5540642> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75272338> .
+  # oo Charlotte Selina Moore, d. 1867-01-12, daughter of Richard Moore and Selina Kirby
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5723072> , <https://www.wikidata.org/wiki/Q75514777> ;
+	gen:startDate "1824-10-05" .
+
+<https://www.wikidata.org/wiki/Q75275760>
+  # Lady Sarah Albinia Louisa Hobart, 1793-02-22 - 1867-04-09
+  gen:father <https://www.wikidata.org/wiki/Q333417> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75272937> .
+  # oo 1814-09-01 Frederick John Robinson, 1st Earl of Ripon, 1782-11-01 - 1859-01-28, https://www.wikidata.org/wiki/Q312591 (campbell.ttl)
+<https://www.wikidata.org/wiki/Q75514767>
+  # Lady Albinia Jane Hobart, d. 1867-04-28
+  gen:father <https://www.wikidata.org/wiki/Q27868456> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75272340> .
+  # oo 1815-03-18 Sir Augustus John Foster, 1st Baronet, 1780-12-04 - 1848-08-01, https://www.wikidata.org/wiki/Q7526089 (hervey.ttl)
+<https://www.wikidata.org/wiki/Q75514789>
+  # Sophia Anne Eleanor Hobart, d. 1919-10-20
+  gen:father <https://www.wikidata.org/wiki/Q5723072> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75514777> .
+  # oo 1864-10-25 Algernon Augustus Stewart, 1839-01-31 - 1905-07-23, https://www.wikidata.org/wiki/Q75514791 (stuart.ttl)
+
 # ----
-<#Dorothy_Bell>
+<https://www.wikidata.org/wiki/Q75493696>
   # Dorothy Bell, 1572-10-19 - 1641-04~
   gen:father <https://www.wikidata.org/wiki/Q7342001> .
   # and Dorothy Beaupre
   # oo 1590-04-21 Sir Henry Hobart, 1st Baronet, 1560~ – 1625-12-29, https://www.wikidata.org/wiki/Q7527153
+
+# ----
+<https://www.wikidata.org/wiki/Q75493717>
+  # Mary Hampden, 1630-05-01b - 1689-05-02b
+  gen:father <https://www.wikidata.org/wiki/Q329843> ; # John Hampden
+  gen:mother <https://www.wikidata.org/wiki/Q75514522> . # Elizabeth Simeon
+  # oo 1656-06-03 Sir John Hobart, 3rd Baronet, 1628-03-20 - 1683-08-22, https://www.wikidata.org/wiki/Q11802488
+
+# ----
+#<https://www.wikidata.org/wiki/Q21592422>
+  # Sir Thomas Drury, 1st Baronet, 1712-11-12 - 1759-01-19
+  # 1st Baronet Drury, of Overstone, co. Northampton 1739-02-16
+  # son of Richard Drury
+  # and Joyce Beacon
+  # oo Martha Tyrrell, d. 1768-06
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q21592422> , <https://www.wikidata.org/wiki/Q75495308> ;
+	gen:startDate "1737-10" .
+
+<https://www.wikidata.org/wiki/Q75250788>
+  # Mary Ann Drury, 1740-06-29 - 1769-12-30
+  gen:father <https://www.wikidata.org/wiki/Q21592422> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75495308> .
+  # oo 1761-07-14 John Hobart, 2nd Earl of Buckinghamshire, 1723-08-17 – 1793-08-03, https://www.wikidata.org/wiki/Q3560278
+# ----
+<https://www.wikidata.org/wiki/Q75495308>
+  # Martha Tyrrell, d. 1768-06
+  gen:father <https://www.wikidata.org/wiki/Q75495342> ; # Sir John Tyrrell, 3rd Baronet
+  gen:mother <https://www.wikidata.org/wiki/Q75495344> . # Mary Dolliffe
+  # oo 1737-10 Sir Thomas Drury, 1st Baronet, 1712-11-12 - 1759-01-19, https://www.wikidata.org/wiki/Q21592422
+
+# ----
+#<https://www.wikidata.org/wiki/Q4792879>
+  # Armar Lowry-Corry, 1st Earl of Belmore, 1740-04-07 – 1802-02-02
+  # 1st Baron Belmore of Castle Coole, co. Fermanagh 1781-01-06
+  # 1st Viscount Belmore 1789-12-06
+  # 1st Earl of Belmore 1797-11-30
+  # oo Lady Harriet Hobart, 1762-04-07 - 1805-07-14
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4792879> , <https://www.wikidata.org/wiki/Q47468414> ;
+	gen:startDate "1780-03-02" ;
+	gen:divorceDate "1793-04" .
+  
+<https://www.wikidata.org/wiki/Q6688543>
+  # Lady Louisa Mary Ann Julia Harriet Lowry-Corry, 1781-04-03 - 1862-04-19
+  gen:father <https://www.wikidata.org/wiki/Q4792879> ;
+  gen:mother <https://www.wikidata.org/wiki/Q47468414> .
+  # oo 1804-07-09 George John Montagu, 6th Earl of Sandwich, 1773-02-04 - 1818-05-21, https://www.wikidata.org/wiki/Q5542572
+
+# ----
+#<https://www.wikidata.org/wiki/Q76255227>
+  # Richard Cumberland
+  # oo Lady Albinia Hobart, 1759-04-19 - 1850-08-02
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76255227> , <https://www.wikidata.org/wiki/Q76255226> ;
+	gen:startDate "1784-07-14" .
+
+<https://www.wikidata.org/wiki/Q76255228>
+  # Albinia Elizabeth Cumberland, 1791 - 1848
+  gen:father <https://www.wikidata.org/wiki/Q76255227> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76255226> .
+  # oo 1811-05-20 Alexander Gordon, 1781 - 1873-03-21, https://www.wikidata.org/wiki/Q4718975
+
+# ----
+<https://www.wikidata.org/wiki/Q18527646>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75267150> .
+  # Rt. Hon. John Sullivan, 1749-04-07 - 1839-10-31
+  # oo Lady Henrietta Anne Barbara Hobart, 1762~ - 1828-12-12
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q18527646> , <https://www.wikidata.org/wiki/Q75452957> ;
+	gen:startDate "1789-05-24" .
+
+<https://www.wikidata.org/wiki/Q75267149>
+  # Albinia Sullivan, d. 1827-06-03
+  gen:father <https://www.wikidata.org/wiki/Q18527646> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75452957> .
+  # oo 1807-09-26 John James Stuart, 1782-08-29 - 1811-03-18, https://www.wikidata.org/wiki/Q75267147
+<https://www.wikidata.org/wiki/Q75341265>
+  # Harriet Margaret Sullivan
+  gen:father <https://www.wikidata.org/wiki/Q18527646> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75452957> .
+  # oo 1819-09-21 Sir George Tyler, 1792-12-28 – 1862-06-04, https://www.wikidata.org/wiki/Q16886998 (roper.ttl)
+
+# ====
 
 # ----
 #<https://www.wikidata.org/wiki/Q6261851>
@@ -967,7 +1213,7 @@
   # and oo Johanna Radclyffe (b. 1555~, daughter of Edward Radclyffe)
   # oo Dorothy Bellingham, b. 1580~, daughter of Sir James Bellingham and Agnes Curwen
   []
-    gen:spouse <#Sir_Ralph_Assheton,_of_Lever,_1st_Baronet> , <#Dorothy_Bellingham> ;
+    gen:spouse <#Sir_Ralph_Assheton,_of_Lever,_1st_Baronet> , <https://www.wikidata.org/wiki/Q75493696ingham> ;
 	gen:startDate "1604-08-19~" .
   # oo Eleanor Shuttleworth, d. 1648, daughter of Thomas Shuttleworth and Anne Lever
   []
