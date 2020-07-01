@@ -331,7 +331,7 @@
   # oo Margaret Carryl, daughter of Sir John Carryl
   []
     gen:spouse <#Sir_Philip_Howard> , <#Margaret_Carryl> .
-<#Sir_Francis_Howard_(died_1660)> # -> Howard of Corby Castle
+<https://www.wikidata.org/wiki/Q75251500> # -> Howard of Corby Castle
   # Sir Francis Howard, of Corby Castle, 1588-08-29 - 1660-04-11
   gen:father <https://www.wikidata.org/wiki/Q5814924> ;
   gen:mother <https://www.wikidata.org/wiki/Q75251499> .
@@ -343,11 +343,11 @@
   # oo Mary Eure
   []
     gen:spouse <#Sir_William_Howard> , <#Mary_Eure> .
-<#Alathea_Howard>
+<https://www.wikidata.org/wiki/Q75964327>
   # Alathea Howard, d. 1677-09-03
   gen:father <#Sir_Philip_Howard> ;
   gen:mother <#Margaret_Carryl> .
-  # oo Thomas Fairfax, 2nd Viscount Fairfax of Emley, 1599~ - 1641-09-24, #Thomas_Fairfax,_2nd_Viscount_Fairfax
+  # oo Thomas Fairfax, 2nd Viscount Fairfax of Emley, 1599~ - 1641-09-24, https://www.wikidata.org/wiki/Q75485036
 
 <https://www.wikidata.org/wiki/Q338284> # -> Howard of Carlisle
   # Charles Howard, 1st Earl of Carlisle, 1629b - 1685-02-24
@@ -805,21 +805,21 @@
 
 
 # Howard of Corby Castle
-<#Sir_Francis_Howard_(died_1660)>
+<https://www.wikidata.org/wiki/Q75251500>
   # Sir Francis Howard, of Corby Castle, 1588-08-29 - 1660-04-11
   gen:father <https://www.wikidata.org/wiki/Q5814924> ;
   gen:mother <https://www.wikidata.org/wiki/Q75251499> .
   # oo Margeret Preston, d. 1625-09-07, daughter of John Preston
   []
-    gen:spouse <#Sir_Francis_Howard_(died_1660)> , <#Margeret_Preston> .
-  # oo Mary Widdrington, d. 1672-07-22, daughter of Sir Henry Widdrington
+    gen:spouse <https://www.wikidata.org/wiki/Q75251500> , <#Margeret_Preston> .
+  # oo Mary Widdrington, d. 1672-07-22 (stanley.ttl)
   []
-    gen:spouse <#Sir_Francis_Howard_(died_1660)> , <#Mary_Widdrington> .
+    gen:spouse <https://www.wikidata.org/wiki/Q75251500> , <https://www.wikidata.org/wiki/Q75319449> .
 
 <#William_Howard_(died_1708)>
   # William Howard, d. 1708
-  gen:father <#Sir_Francis_Howard_(died_1660)> ;
-  gen:mother <#Mary_Widdrington> .
+  gen:father <https://www.wikidata.org/wiki/Q75251500> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75319449> .
   # oo Jane Dalston, daughter of John Dalston
 
 <https://www.wikidata.org/wiki/Q75319464>
@@ -3552,21 +3552,44 @@
   # oo Sir William Howard, #Sir_William_Howard
 
 # ----
-#<https://www.wikidata.org/wiki/Q7789494>
+<https://www.wikidata.org/wiki/Q7789494>
   # Thomas Fairfax, 1st Viscount Fairfax of Emley, 1574~ - 1636-12-23
   # 1st Viscount Fairfax of Emley, co. Tipperary 1629-02-10
+  gen:father <https://www.wikidata.org/wiki/Q75537622> ; # Sir William Fairfax
+  gen:mother <https://www.wikidata.org/wiki/Q75964288> . # Jane Stapleton
   # oo Catharine Constable, daughter of Sir Henry Constable and Margaret Dormer
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q7789494> , <#Catharine_Constable> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q7789494> , <https://www.wikidata.org/wiki/Q75496901> ;
 	gen:startDate "1594~" .
 
-<#Thomas_Fairfax,_2nd_Viscount_Fairfax>
+<https://www.wikidata.org/wiki/Q75485036>
   # Thomas Fairfax, 2nd Viscount Fairfax of Emley, 1599~ - 1641-09-24
   gen:father <https://www.wikidata.org/wiki/Q7789494> ;
-  gen:mother <#Catharine_Constable> .
+  gen:mother <https://www.wikidata.org/wiki/Q75496901> .
   # oo Alathea Howard, d. 1677-09-03
   []
-    gen:spouse <#Thomas_Fairfax,_2nd_Viscount_Fairfax> , <#Alathea_Howard> .
+    gen:spouse <https://www.wikidata.org/wiki/Q75485036> , <https://www.wikidata.org/wiki/Q75964327> .
+
+<https://www.wikidata.org/wiki/Q5077585>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75964328> ;
+  # Charles Fairfax, 5th Viscount Fairfax of Emley, 1621a - 1671-07-06
+  gen:father <https://www.wikidata.org/wiki/Q75485036> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75964327> .
+  # oo Abigail Yate
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5077585> , <https://www.wikidata.org/wiki/Q75930710> ;
+	gen:startDate "1664-03-18b" .
+
+<https://www.wikidata.org/wiki/Q75964354>
+  # Hon. Alathea Fairfax
+  gen:father <https://www.wikidata.org/wiki/Q5077585> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75930710> .
+  # oo 1677-01 William Widdrington, 3rd Baron Widdrington, https://www.wikidata.org/wiki/Q75964355 (stanley.ttl)
+# ----
+<https://www.wikidata.org/wiki/Q75930710>
+  # Abigail Yate
+  gen:father <https://www.wikidata.org/wiki/Q75930712> . # Sir John Yate, 2nd Baronet
+  # oo 1664-03-18b Charles Fairfax, 5th Viscount Fairfax of Emley, 1621a - 1671-07-06, https://www.wikidata.org/wiki/Q5077585
 
 # ----
 #<https://www.wikidata.org/wiki/Q1335492>
