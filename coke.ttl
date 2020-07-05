@@ -97,11 +97,11 @@
     gen:spouse <#Edward_Coke> , <#Cary_Newton> ;
 	gen:startDate "1696~" .
 
-<#Anne_Coke>
+<https://www.wikidata.org/wiki/Q75258540>
   # Anne Coke
   gen:father <https://www.wikidata.org/wiki/Q75258536> ;
   gen:mother <#Cary_Newton> .
-  # oo Philip Roberts, #Philip_Roberts
+  # oo Philip Roberts, d. 1779, https://www.wikidata.org/wiki/Q75258542
 <https://www.wikidata.org/wiki/Q75264498>
   # Robert Coke, of Langford, d. 1750
   gen:father <https://www.wikidata.org/wiki/Q75258536> ;
@@ -131,16 +131,26 @@
 
 
 # ====
-#<#Philip_Roberts>
-  # Philip Roberts
+#<https://www.wikidata.org/wiki/Q28062052>
+  # Gabriel Roberts, Esq., 1665~ - 1734~
+  # son of William Roberts
+  # and Martha Dashwood
+  # oo Mary Wenman
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q28062052> , <west.ttl#Mary_Wenman> .
+
+<https://www.wikidata.org/wiki/Q75258542>
+  # Philip Roberts, d. 1779
+  gen:father <https://www.wikidata.org/wiki/Q28062052> ;
+  gen:mother <west.ttl#Mary_Wenman> .
   # oo Anne Coke
   []
-    gen:spouse <#Philip_Roberts> , <#Anne_Coke> .
+    gen:spouse <https://www.wikidata.org/wiki/Q75258542> , <https://www.wikidata.org/wiki/Q75258540> .
 
 <https://www.wikidata.org/wiki/Q5610526>
   # Wenman Coke, 1717~ - 1776-04-11
-  gen:father <#Philip_Roberts> ;
-  gen:mother <#Anne_Coke> .
+  gen:father <https://www.wikidata.org/wiki/Q75258542> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75258540> .
   # oo Elizabeth Chamberlayne, d. 1810
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5610526> , <#Elizabeth_Chamberlayne> .
