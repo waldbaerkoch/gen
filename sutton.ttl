@@ -4,11 +4,85 @@
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
-#<https://www.wikidata.org/wiki/Q11803259>
+<https://www.wikidata.org/wiki/Q75880050>
+  # Rowland de Sutton, 1190~ - 1258
+  gen:father <https://www.wikidata.org/wiki/Q75880051> . # Hervey de Sutton
+  # and Elizabeth Clonard
+  # oo Alice de Lexington, daughter of Richard de Lexinton
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75880050> , <https://www.wikidata.org/wiki/Q75880070> ;
+	gen:startDate "1215" .
+
+<https://www.wikidata.org/wiki/Q75880048>
+  # William de Sutton, 1217-01 - 1267-08-18
+  gen:father <https://www.wikidata.org/wiki/Q75880050> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75880070> .
+<https://www.wikidata.org/wiki/Q75880432> # -> Sutton of Averham
+  # Sir Robert de Sutton, b. 1220~
+  gen:father <https://www.wikidata.org/wiki/Q75880050> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75880070> .
+
+<https://www.wikidata.org/wiki/Q75880047>
+  # Robert de Sutton, 1240 - 1274
+  gen:father <https://www.wikidata.org/wiki/Q75880048> .
+  # oo Johanna ???
+
+<https://www.wikidata.org/wiki/Q75240765>
+  # Richard de Sutton, b. 1266-09-29
+  gen:father <https://www.wikidata.org/wiki/Q75880047> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75880462> . # Johanna ???
+  # oo Isobel Patrick, daughter of William Patrick and Beatrice de Malpas
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75240765> , <https://www.wikidata.org/wiki/Q75248946> .
+
+<https://www.wikidata.org/wiki/Q75240761>
+  # Sir John de Sutton
+  gen:father <https://www.wikidata.org/wiki/Q75240765> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75248946> .
+  # oo Margaret de Somery, daughter of Roger de Somery
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75240761> , <https://www.wikidata.org/wiki/Q75240762> .
+
+<https://www.wikidata.org/wiki/Q75240756>
+  # John de Sutton II, 1310 - 1359-11-23
+  # 1st Baron Sutton of Dudley 1342
+  gen:father <https://www.wikidata.org/wiki/Q75240761> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75240762> .
+  # oo Isabella de Cherleton, 1308~ - 1397-04-10, daughter of John Cherleton, 1st Lord Cherleton (1268~ - 1353, https://www.wikidata.org/wiki/Q2657664, 1st Lord Cherleton 1313-07-26, son of Robert Cherleton) and oo 1309 Hawyse ap Owen (1290-07-25 - 1345-08a/1353b, https://www.wikidata.org/wiki/Q20201367, daughter of Owen ap Gruffydd ap Wenwynwyn and Joan Corbet)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75240756> , <https://www.wikidata.org/wiki/Q75240758> .
+
+<https://www.wikidata.org/wiki/Q75240747>
+  # Sir John de Sutton III, 1338 – 1370~
+  gen:father <https://www.wikidata.org/wiki/Q75240756> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75240758> .
+  # oo Lady Catherine de Stafford, d. 1361-12-06a, daughter of https://www.wikidata.org/wiki/Q942577 (ferrers.ttl) and https://www.wikidata.org/wiki/Q15040852
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75240747> , <https://www.wikidata.org/wiki/Q75240749> ;
+	gen:startDate "1357-12-25" .
+
+<https://www.wikidata.org/wiki/Q6259736>
+  # John Sutton IV, 1361-12-06 - 1396-03-11
+  gen:father <https://www.wikidata.org/wiki/Q75240747> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75240749> .
+  # oo Alice le Despencer, 1364~ - 1392, daughter of Philip le Despencer (1342-10-18 - 1401-08-04, https://www.wikidata.org/wiki/Q7184613) and oo 1362b Elizabeth ???
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6259736> , <https://www.wikidata.org/wiki/Q75248942> .
+
+<https://www.wikidata.org/wiki/Q6259742>
+  # Sir John de Sutton V, 1380 - 1406-08-28
+  gen:father <https://www.wikidata.org/wiki/Q6259736> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75248942> .
+  # oo Constance Blount, d. 1432-09, daughter of Sir Walter Blount and Sancha de Toledo de Ayala
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6259742> , <https://www.wikidata.org/wiki/Q75240505> ;
+	gen:startDate "1401-12-10b" .
+
+<https://www.wikidata.org/wiki/Q11803259>
   # John Sutton, 1st Lord Dudley, 1400-12-25 - 1487-09-30
   # 1st Lord Dudley 1440-02-15
-  # son of Sir John de Sutton
-  # and Constance Blount
+  gen:father <https://www.wikidata.org/wiki/Q6259742> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75240505> .
   # oo Elizabeth Berkeley, d. 1478-12-08~
   []
     gen:spouse <https://www.wikidata.org/wiki/Q11803259> , <https://www.wikidata.org/wiki/Q61912339> ;
@@ -18,7 +92,7 @@
   # Sir Edmund Sutton, 1425 – 1485~
   gen:father <https://www.wikidata.org/wiki/Q11803259> ;
   gen:mother <https://www.wikidata.org/wiki/Q61912339> .
-  # oo Joyce Tiptoft, 1425a - 1485b, daughter of John Tiptoft, 1st Lord Tiptoft and Joyce de Cherleton
+  # oo Joyce Tiptoft, 1425a - 1485b, daughter of https://www.wikidata.org/wiki/Q6260910 John Tiptoft, 1st Lord Tiptoft and https://www.wikidata.org/wiki/Q75387308 Joyce de Cherleton
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5339846> , <https://www.wikidata.org/wiki/Q75240520> ;
 	gen:startDate "1450" .
@@ -26,6 +100,20 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5339846> , <https://www.wikidata.org/wiki/Q75617032> ;
 	gen:startDate "1460a" .
+<https://www.wikidata.org/wiki/Q61912322>
+  # John Dudley, 1440~ - 1501-02-06
+  gen:father <https://www.wikidata.org/wiki/Q11803259> ;
+  gen:mother <https://www.wikidata.org/wiki/Q61912339> .
+  # oo Elizabeth Bramshot, d. 1498-10-12, daughter of John Bramshot and Catherine Pelham
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q61912322> , <https://www.wikidata.org/wiki/Q61912325> ;
+	gen:startDate "1462b" .
+<https://www.wikidata.org/wiki/Q8008049>
+  # William Dudley, 1476 – 1483-11-29
+  # Dean of Windsor
+  # Bishop of Durham 
+  gen:father <https://www.wikidata.org/wiki/Q11803259> ;
+  gen:mother <https://www.wikidata.org/wiki/Q61912339> .
 
 <https://www.wikidata.org/wiki/Q16833892>
   # Edward Sutton, 2nd Baron Dudley, 1456~ - 1531-01-31
@@ -35,6 +123,26 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q16833892> , <https://www.wikidata.org/wiki/Q75240540> ;
 	gen:startDate "1484" .
+<https://www.wikidata.org/wiki/Q75240531>
+  # Dorothy Sutton, 1452~ - 1517
+  gen:father <https://www.wikidata.org/wiki/Q5339846> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75617032> .
+  # oo 1472b Richard Wrottesley, Esq., 1457 - 1521, https://www.wikidata.org/wiki/Q75507861, son of Sir Walter Wrottesley and Jane Baron
+  # -> Walter Wrottesley, Esq., 1483~ - 1563-07-01~, https://www.wikidata.org/wiki/Q75255491
+  #   oo Elizabeth Harcourt, https://www.wikidata.org/wiki/Q75507860, daughter of John Harcourt
+  #   -> Elizabeth Wrottesley, d. 1558-05-10, https://www.wikidata.org/wiki/Q75251758
+  #     oo 1521a Sir John Talbot, of Albrighton, 1485~ - 1549-09-10, https://www.wikidata.org/wiki/Q23614588
+<https://www.wikidata.org/wiki/Q548613>
+  # Edmund Dudley, 1462~ - 1510-08-18
+  gen:father <https://www.wikidata.org/wiki/Q61912322> ;
+  gen:mother <https://www.wikidata.org/wiki/Q61912325> .
+  # oo Anne Windsor, 1479 - 1500, daughter of Thomas Windsor
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q548613> , <https://www.wikidata.org/wiki/Q96075920> .
+  # oo Elizabeth Grey, 6th Baroness Lisle, 1470~ - 1526
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q548613> , <https://www.wikidata.org/wiki/Q5362877> ;
+	gen:startDate "1500a/1503b" .
 
 <https://www.wikidata.org/wiki/Q6259721>
   # John Sutton, 3rd Lord Dudley, 1494~ – 1553-09~
@@ -44,21 +152,67 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q6259721> , <https://www.wikidata.org/wiki/Q75240493> ;
 	gen:startDate "1519-10-30a" .
+<https://www.wikidata.org/wiki/Q75261188>
+  # Eleanor Sutton, 1481 - 1532-05-24b/1549b
+  gen:father <https://www.wikidata.org/wiki/Q16833892> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75240540> .
+  # oo 1514a Charles Somerset, 1st Earl of Worcester, 1460~ - 1526-04-15, https://www.wikidata.org/wiki/Q549866 (beaufort.ttl)
+  # oo 1527-07-27a Leonard Grey, 1st Viscount Grane, 1490 - 1541-07-28, https://www.wikidata.org/wiki/Q6525326
+<https://www.wikidata.org/wiki/Q75882873>
+  # Joyce Sutton
+  gen:father <https://www.wikidata.org/wiki/Q16833892> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75240540> .
+  # oo John Leighton, 1500~ - 1532~, https://www.wikidata.org/wiki/Q76052622, son of Sir Thomas Leighton (1443/1454 - 1519, https://www.wikidata.org/wiki/Q75977980, son of John Leighton and Ankaret Burgh) and oo 1495b Elizabeth Devereux (1452 - 1516, https://www.wikidata.org/wiki/Q75969268, daughter of https://www.wikidata.org/wiki/Q7964675 and https://www.wikidata.org/wiki/Q75969263 Anne Ferrers)
+  # -> Sir Edward Leighton, 1525~ – 1593-09-10, https://www.wikidata.org/wiki/Q5344113
+  #   oo Elizabeth Edwards
+  #   oo Anne Darrell, b. 1535~, https://www.wikidata.org/wiki/Q76052627, daughter of Paul Darrell "1553b" .
+  #   -> Thomas Leighton, 1554~ – 1600-05-17, https://www.wikidata.org/wiki/Q7791801
+  #     oo Elizabeth Gerrard, https://www.wikidata.org/wiki/Q76052631, daughter of Sir William Gerrard
+  # -> Sir Thomas Leighton, 1530~ – 1610, https://www.wikidata.org/wiki/Q3525344
+  #   oo Elizabeth Knollys, 1549-06-15 - 1605, https://www.wikidata.org/wiki/Q5363082, daughter of https://www.wikidata.org/wiki/Q333870 Sir Francis Knollys (devereux.ttl) and https://www.wikidata.org/wiki/Q241550 Katherine Carey, "1578" .
+  #   -> Anne Leighton, d. 1628-07
+  #     oo 1604-07-09 Sir John St. John, 1st Baronet, 1585~ - 1648, https://www.wikidata.org/wiki/Q7528081, 1st Baronet St. John, of Lidiard Tregoze, co. Wilts 1611-05-22, son of Sir John St. John and Lucy Hungerford
+  # oo 1532a/1538b Richard Lee, b. 1501~, son of Fulk Lee and Alice Cornwall
+<https://www.wikidata.org/wiki/Q75272767>
+  # Joan de Sutton, 1490 - 1539-08-09b
+  gen:father <https://www.wikidata.org/wiki/Q16833892> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75240540> .
+  # oo 1514 Sir Thomas Fiennes, d. 1528-10-26, https://www.wikidata.org/wiki/Q75272765
+<https://www.wikidata.org/wiki/Q75897028>
+  # Geoffrey Dudley, 1507~ - 1571-02-26
+  gen:father <https://www.wikidata.org/wiki/Q16833892> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75240540> .
+  # oo Eleanor Talbot, 1506~ - 1583-05-29~, daughter of https://www.wikidata.org/wiki/Q16863515 and https://www.wikidata.org/wiki/Q75251747 Elizabeth Greystoke
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75897028> , <https://www.wikidata.org/wiki/Q75897192> .
 <#Alice_Sutton>
   # Alice Sutton, 1505 - 1601
   gen:father <https://www.wikidata.org/wiki/Q16833892> ;
   gen:mother <https://www.wikidata.org/wiki/Q75240540> .
   # oo Edward Loftus, 1500 - 1541, https://www.wikidata.org/wiki/Q75654801
+<https://www.wikidata.org/wiki/Q75272897>
+  # Elizabeth Dudley, 1500~ - 1560-08-19
+  gen:father <https://www.wikidata.org/wiki/Q548613> ;
+  gen:mother <https://www.wikidata.org/wiki/Q96075920> .
+  # oo 1524b William Stourton, 7th Baron Stourton, 1505~ – 1548, https://www.wikidata.org/wiki/Q16847609
+<https://www.wikidata.org/wiki/Q347125> # -> Duke of Northumberland
+  # John Dudley, 1st Duke of Northumberland, 1502 - 1553-08-22
+  gen:father <https://www.wikidata.org/wiki/Q548613> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5362877> .
 
 <https://www.wikidata.org/wiki/Q5345508>
   # Edward Sutton, 4th Lord Dudley, 1525 - 1586-07-08
   gen:father <https://www.wikidata.org/wiki/Q6259721> ;
   gen:mother <https://www.wikidata.org/wiki/Q75240493> .
-  # oo Lady Jane Stanley, d. 1569-08~
+  # oo Katherine Brydges, 1524 - 1566-04~, daughter of https://www.wikidata.org/wiki/Q6223695 John Brydges, 1st Baron Chandos of Sudeley and https://www.wikidata.org/wiki/Q75253218 Elizabeth Grey
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5345508> , <https://www.wikidata.org/wiki/Q75240550> ;
+	gen:startDate "1556" .
+  # oo Lady Jane Stanley, 1540 - 1569-08~
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5345508> , <https://www.wikidata.org/wiki/Q75240552> ;
 	gen:startDate "1567" .
-  # oo Mary Howard, d. 1600-08-21
+  # oo Mary Howard, 1544~ - 1600-08-21
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5345508> , <https://www.wikidata.org/wiki/Q75240554> ;
 	gen:startDate "1570" .
@@ -67,10 +221,10 @@
   # Edward Sutton, 5th Baron Dudley, 1567 – 1643-06-23
   gen:father <https://www.wikidata.org/wiki/Q5345508> ;
   gen:mother <https://www.wikidata.org/wiki/Q75240552> .
-  # oo Theodosia Harington, d. 1650-01~
+  # oo Theodosia Harington, 1565 - 1650-01-12
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5345509> , <https://www.wikidata.org/wiki/Q65934511> ;
-	gen:startDate "1586~" .
+	gen:startDate "1581-06-12" .
 <https://www.wikidata.org/wiki/Q6230252>
   # Hon. John Dudley, 1569-11 – 1645
   gen:father <https://www.wikidata.org/wiki/Q5345508> ;
@@ -81,7 +235,7 @@
 	gen:startDate "1590b" .
 
 <https://www.wikidata.org/wiki/Q47005751>
-  # Mary Dudley, b. 1586-10-02
+  # Mary Dudley, 1586-10-02 - 1645
   gen:father <https://www.wikidata.org/wiki/Q5345509> ;
   gen:mother <https://www.wikidata.org/wiki/Q65934511> .
   # oo 1607-06-28b Alexander Home, 1st Earl of Home, 1566~ - 1619-04-05, https://www.wikidata.org/wiki/Q16844561
@@ -93,6 +247,19 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75240561> , <https://www.wikidata.org/wiki/Q75382845> ;
 	gen:startDate "1610-07-09" .
+<https://www.wikidata.org/wiki/Q75240574>
+  # Anne Dudley, 1589 - 1615-12-08
+  gen:father <https://www.wikidata.org/wiki/Q5345509> ;
+  gen:mother <https://www.wikidata.org/wiki/Q65934511> .
+  # oo 1615-03-22 Hans Meinhardt Graf von Schönberg auf Wesel, 1582-08-28 - 1616-08-03, https://www.wikidata.org/wiki/Q99511, son of https://www.wikidata.org/wiki/Q1411448 Meinhard I Freiherr von Schönberg auf Wesel and https://www.wikidata.org/wiki/Q75939027 Dorothea Riedesel zu Bellersheim
+  # -> Friedrich Hermann von Schönberg, 1st Duke of Schomberg, 1615-12-06 - 1690-07-11, https://www.wikidata.org/wiki/Q61718, 1st Conde de Mértola [PT] 1663, 1st Duke of Schomberg 1689
+  #  oo Johanna Elisabeth Schönberg auf Wesel, 1617 - 1664-03-21, https://www.wikidata.org/wiki/Q76265125, daughter of Heinrich Dietrich Graf von Schönberg auf Wesel (1597 - 1621, https://www.wikidata.org/wiki/Q76265122, son of https://www.wikidata.org/wiki/Q1411448 and https://www.wikidata.org/wiki/Q75939027) and oo Elisabeth Freiin Ketteler von Nesselrode (b. 1600, https://www.wikidata.org/wiki/Q76265124), "1638-04-30" .
+  #  oo Suzanne d'Aumale, Dame d'Aucourt, d. 1688-07, https://www.wikidata.org/wiki/Q76265126, daughter of https://www.wikidata.org/wiki/Q76265127 Daniël, Comte d Aumale Seigneur d'Aucourt, de Rieu et de Marchée and https://www.wikidata.org/wiki/Q76265129 Françoise de Conflans, Dame de Villiers-Outreaux, "1669-04-14" .
+<https://www.wikidata.org/wiki/Q75240567>
+  # Margaret Dudley, b. 1597
+  gen:father <https://www.wikidata.org/wiki/Q5345509> ;
+  gen:mother <https://www.wikidata.org/wiki/Q65934511> .
+  # oo Sir Miles Hobart, 1595-04-12 - 1639-12~, https://www.wikidata.org/wiki/Q75493709, son of Sir Henry Hobart, 1st Baronet (1560~ – 1625-12-29, https://www.wikidata.org/wiki/Q7527153, 1st Baronet Hobart, of Intwood, Norfolk 1611-05-11, son of Thomas Hobart and Audrey Hare) and oo 1590-04-21 Dorothy Bell (1572-10-19 - 1641-04~, https://www.wikidata.org/wiki/Q75493696, daughter of https://www.wikidata.org/wiki/Q7342001 Sir Robert Bell and Dorothy Beaupre)
 <https://www.wikidata.org/wiki/Q75248756>
   # Anne Gardiner Dudley, b. 1574
   gen:father <https://www.wikidata.org/wiki/Q6230252> ;
@@ -109,10 +276,603 @@
   # oo 1628-02-17 Humble Ward, 1st Baron Ward of Birmingham, 1614~ - 1670-10-14, https://www.wikidata.org/wiki/Q5940213
 
 
+# Duke of Northumberland
+<https://www.wikidata.org/wiki/Q347125>
+  # John Dudley, 1st Duke of Northumberland, 1502 - 1553-08-22
+  # 1st Viscount Lisle 1542-03-12
+  # 1st Earl of Warwick 1547-02-15
+  # 1st Duke of Northumberland 1551-10-11
+  gen:father <https://www.wikidata.org/wiki/Q548613> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5362877> .
+  # oo Jane Guilford, 1509~ - 1555-01-15
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q347125> , <https://www.wikidata.org/wiki/Q6152156> .
+
+<https://www.wikidata.org/wiki/Q3809223>
+  # John Dudley, 2nd Earl of Warwick, 1527~ - 1554-10-21
+  # 2nd Earl of Warwick 1553-01-05 - 1553
+  gen:father <https://www.wikidata.org/wiki/Q347125> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6152156> .
+  # oo Lady Anne Seymour, 1538 - 1588-01-17b
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3809223> , <https://www.wikidata.org/wiki/Q3601055> ;
+	gen:startDate "1550-06-03" .
+<https://www.wikidata.org/wiki/Q339752>
+  # Ambrose Dudley, 1st Earl of Warwick, 1528~ - 1590-02-21
+  # 1st Earl of Warwick, 1st Baron Lisle 1561-12-26
+  gen:father <https://www.wikidata.org/wiki/Q347125> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6152156> .
+  # oo Anne Whorwood, 1525 - 1552, or https://www.wikidata.org/wiki/Q75382773, daughter of William Whorwood and Cassandra Grey
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q339752> , <https://www.wikidata.org/wiki/Q76013802> ;
+	gen:startDate "1546-03-04b" .
+  # oo Elizabeth Tailboys, 4th Baroness Tailboys, 1520 - 1563-03-28b, daughter of Gilbert Tailboys, 1st Baron Tailboys of Kyme (1497 - 1530-04-30, https://www.wikidata.org/wiki/Q5561234 or https://www.wikidata.org/wiki/Q96075978, 1st Baron Tailboys of Kyme 1529, son of Sir George Tailboys and Elizabeth Gascoigne) and oo 1519~ Elizabeth Blount (1500 - 1539, https://www.wikidata.org/wiki/Q237170, daughter of John Blount and Catherine Pershall)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q339752> , <https://www.wikidata.org/wiki/Q5363598> ;
+	gen:startDate "1553-09-10b" .
+  # oo Lady Anne Russell, 1548-12 - 1604-02-09 
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q339752> , <https://www.wikidata.org/wiki/Q3617953> ;
+	gen:startDate "1565-11-11" .
+<https://www.wikidata.org/wiki/Q18528505>
+  # Sir Henry Dudley, 1531~ – 1557-08-10
+  gen:father <https://www.wikidata.org/wiki/Q347125> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6152156> .
+  # oo Hon. Margaret Audley, 1539 - 1564-01-10 (howard.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q18528505> , <https://www.wikidata.org/wiki/Q6759536> ;
+	gen:startDate "1554~" .
+  # oo Winifred Rich, d. 1578-11a, daughter of https://www.wikidata.org/wiki/Q6315297 Richard Rich, 1st Baron Rich and https://www.wikidata.org/wiki/Q67471709 Elizabeth Jenks
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q18528505> , <https://www.wikidata.org/wiki/Q75274534> ;
+	gen:startDate "1555" .
+<https://www.wikidata.org/wiki/Q3850456>
+  # Lady Mary Dudley, 1531 - 1586
+  gen:father <https://www.wikidata.org/wiki/Q347125> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6152156> .
+  # oo 1551-03-29 Sir Henry Sydney, 1529 - 1586-05-05, https://www.wikidata.org/wiki/Q2077157, son of Sir William Sydney and Anne Pakenham
+  # -> Robert Sydney, 1st Earl of Leicester, 1563-11-19 - 1626-07-13, https://www.wikidata.org/wiki/Q2158828
+<https://www.wikidata.org/wiki/Q318017>
+  # Robert Dudley, 1st Earl of Leicester, 1532-06-24 - 1588-09-04
+  # 1st Earl of Leicester 1564
+  gen:father <https://www.wikidata.org/wiki/Q347125> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6152156> .
+  # oo Amy Robsart, 1532 - 1560-09-08, daughter of https://www.wikidata.org/wiki/Q61910921 Sir John Robsart and https://www.wikidata.org/wiki/Q61910923
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q318017> , <https://www.wikidata.org/wiki/Q261734> ;
+	gen:startDate "1550" .
+  # oo Hon. Douglas Howard, 1537a - 1608-12-08~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q318017> , <https://www.wikidata.org/wiki/Q5301972> ;
+	gen:startDate "1573" .
+  # oo Lettice Knollys, 1541 - 1634-12-25 (devereux.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q318017> , <https://www.wikidata.org/wiki/Q269329> ;
+	gen:startDate "1578-09-21" .
+<https://www.wikidata.org/wiki/Q453480>
+  # Lord Guilford Dudley, 1536 - 1554-02-12
+  gen:father <https://www.wikidata.org/wiki/Q347125> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6152156> .
+  # oo Lady Jane Grey, 1537-10 - 1554-02-12
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q453480> , <https://www.wikidata.org/wiki/Q162356> ;
+	gen:startDate "1553-05-21" .
+<https://www.wikidata.org/wiki/Q6376404>
+  # Lady Catherine Dudley, 1538~/1544-11 - 1620-08-04/-14
+  gen:father <https://www.wikidata.org/wiki/Q347125> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6152156> .
+  # oo 1553-05-25 Henry Hastings, 3rd Earl of Huntingdon, 1535~ - 1595-12-14, https://www.wikidata.org/wiki/Q5722729
+
+<https://www.wikidata.org/wiki/Q1764693>
+  # Sir Robert Dudley, Earl of Warwick, 1574-08-07 - 1649-09-06
+  gen:father <https://www.wikidata.org/wiki/Q318017> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5301972> .
+  # oo Margaret Cavendish, d. 1595, daughter of Richard Cavendish (1530~ - 1601, son of Sir Richard Cavendish and Beatrice Golde)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1764693> , <#Margaret_Cavendish> ;
+	gen:startDate "1591~" .
+  # oo Alice Leigh, Duchess Dudley, 1579 – 1669-01-22, Duchess Dudley 1644-05-23, daughter of Sir Thomas Leigh, 1st Baronet (d. 1626-02-01, https://www.wikidata.org/wiki/Q75385154, 1st Baronet Leigh, of Stoneleigh, co. Warwick 1611-06-29, son of Sir Thomas Leigh and Alice Barker) and oo 1570 Katherine Spencer (d. 1639, https://www.wikidata.org/wiki/Q75385152, daughter of https://www.wikidata.org/wiki/Q5790026 Sir John Spencer and https://www.wikidata.org/wiki/Q75385141 Katherine Kitson)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1764693> , <https://www.wikidata.org/wiki/Q16257355> ;
+	gen:startDate "1596-09-11" .
+  # oo Elizabeth Southwell, daughter of Sir Robert Southwell (d. 1599-10-12, https://www.wikidata.org/wiki/Q75776227, howard.ttl) and https://www.wikidata.org/wiki/Q66107420 Elizabeth Howard
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1764693> , <https://www.wikidata.org/wiki/Q75463979> ;
+	gen:startDate "1607-01-27b" .
+
+<https://www.wikidata.org/wiki/Q76333442>
+  # Carlo Dudley
+  gen:father <https://www.wikidata.org/wiki/Q1764693> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75463979> .
+
+<https://www.wikidata.org/wiki/Q76333441>
+  # Maria Cristina Dudley
+  gen:father <https://www.wikidata.org/wiki/Q76333442> .
+  # oo Andrea Paleotti, Marchese di Palliotti, https://www.wikidata.org/wiki/Q75259994
+  # -> Adelhida Palliotti, 1660-07-24 – 1726-06-29, https://www.wikidata.org/wiki/Q24969569 (see talbot.ttl) or https://www.wikidata.org/wiki/Q75251819
+
+
+# Sutton of Averham
+<https://www.wikidata.org/wiki/Q75880432>
+  # Sir Robert de Sutton, b. 1220~
+  gen:father <https://www.wikidata.org/wiki/Q75880050> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75880070> .
+  # oo Isabella Pigott, 1220~ - 1281a, daughter of Sir Hugh Pigott
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75880432> , <https://www.wikidata.org/wiki/Q76184896> ;
+	gen:startDate "1240~" .
+
+<https://www.wikidata.org/wiki/Q76184897>
+  # Sir James Sutton, d. 1304
+  gen:father <https://www.wikidata.org/wiki/Q75880432> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76184896> .
+  # oo Agnes Barry, 1260~ - 1306a/1326~, daughter of Sir John Barry
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76184897> , <https://www.wikidata.org/wiki/Q76184902> .
+
+<https://www.wikidata.org/wiki/Q76184904>
+  # Richard Sutton, d. 1339
+  gen:father <https://www.wikidata.org/wiki/Q76184897> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76184902> .
+  # oo Alice Bingham, 1306~ - 1340a, daughter of Sir Richard Bingham
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76184904> , <https://www.wikidata.org/wiki/Q76184905> .
+
+<https://www.wikidata.org/wiki/Q76184907>
+  # John Sutton, d. 1369
+  gen:father <https://www.wikidata.org/wiki/Q76184904> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76184905> .
+  # oo Johanna Musters, 1349a - 1369a, daughter of Henry Musters
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76184907> , <https://www.wikidata.org/wiki/Q76184909> .
+
+<https://www.wikidata.org/wiki/Q76184910>
+  # Sir Rowland Sutton, 1358~ - 1397
+  gen:father <https://www.wikidata.org/wiki/Q76184907> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76184909> .
+  # oo Catherine Hasty, 1350~ - 1397a, daughter of Sir Henry Hasty
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76184910> , <https://www.wikidata.org/wiki/Q76184914> ;
+	gen:startDate "1368~" .
+
+<https://www.wikidata.org/wiki/Q76184916>
+  # Henry Sutton, d. 1416
+  gen:father <https://www.wikidata.org/wiki/Q76184910> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76184914> .
+  # oo Margaret Hussy, 1364~ - 1416a, daughter of Sir Hugo Hussy
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76184916> , <https://www.wikidata.org/wiki/Q76184920> .
+
+<https://www.wikidata.org/wiki/Q76184922>
+  # Richard Sutton, d. 1468
+  gen:father <https://www.wikidata.org/wiki/Q76184916> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76184920> .
+  # oo Catherine FitzWilliams, 1390~ - 1468b, daughter of Edmund FitzWilliams and Maud Hotham
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76184922> , <https://www.wikidata.org/wiki/Q76184927> .
+
+<https://www.wikidata.org/wiki/Q76184928>
+  # Robert Sutton, d. 1500
+  gen:father <https://www.wikidata.org/wiki/Q76184922> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76184927> .
+  # oo Elizabeth Stanley, 1430~ - 1500b, daughter of Thomas Stanley
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76184928> , <https://www.wikidata.org/wiki/Q76184932> ;
+	gen:startDate "1450" .
+
+<https://www.wikidata.org/wiki/Q76184933>
+  # Henry Sutton, d. 1492
+  gen:father <https://www.wikidata.org/wiki/Q76184928> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76184932> .
+  # oo Alice Byron, 1450~ - 1500a, daughter of Sir Nicholas Byron and Alice Boteler
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76184933> , <https://www.wikidata.org/wiki/Q76184937> .
+
+<https://www.wikidata.org/wiki/Q76184939>
+  # Sir Thomas Sutton, d. 1520
+  gen:father <https://www.wikidata.org/wiki/Q76184933> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76184937> .
+  # oo Catherine Basset, 1470~ - 1520a, daughter of Sir Thomas Basset
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76184939> , <https://www.wikidata.org/wiki/Q76184943> .
+
+<https://www.wikidata.org/wiki/Q76184944>
+  # Sir Henry Sutton, d. 1559
+  gen:father <https://www.wikidata.org/wiki/Q76184939> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76184943> .
+  # oo Alice Hall, 1510~ - 1559a, daughter of Francis Hall
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76184944> , <https://www.wikidata.org/wiki/Q76184949> .
+
+<https://www.wikidata.org/wiki/Q76184950>
+  # William Sutton
+  gen:father <https://www.wikidata.org/wiki/Q76184944> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76184949> .
+  # oo Anna Rodney, 1540~ - 1585~, daughter of John Rodney and Ann Mordaunt
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76184950> , <https://www.wikidata.org/wiki/Q76184953> ;
+	gen:startDate "1558~" .
+
+<https://www.wikidata.org/wiki/Q76184955>
+  # Sir William Sutton, 1559~ - 1611
+  gen:father <https://www.wikidata.org/wiki/Q76184950> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76184953> .
+  # oo Susan Cony, 1560~ - 1611a, daughter of Thomas Cony and Alice Leigh
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76184955> , <https://www.wikidata.org/wiki/Q76184960> ;
+	gen:startDate "1584" .
+
+<https://www.wikidata.org/wiki/Q7350164>
+  # Robert Sutton, 1st Baron Lexinton of Aram, 1594-12-21 - 1668-10-13
+  # 1st Baron Lexinton of Aram, co. Nottingham 1645-11-21
+  gen:father <https://www.wikidata.org/wiki/Q76184955> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76184960> .
+  # oo Elizabeth Manners, d. 1635-04-16~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7350164> , <https://www.wikidata.org/wiki/Q96079138> ;
+	gen:startDate "1616" .
+  # oo Annie Palmes, 1600~ - 1661b (paulet.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7350164> , <https://www.wikidata.org/wiki/Q75508686> ;
+	gen:startDate "1635-04-16a" .
+  # oo Mary St. Leger, d. 1669-09-03, daughter of Sir Anthony St. Leger and Bridget Mayney
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7350164> , <https://www.wikidata.org/wiki/Q75237278> ;
+	gen:startDate "1661-02-21" .
+<https://www.wikidata.org/wiki/Q76184978>
+  # Henry Sutton, 1584a - 1635~
+  gen:father <https://www.wikidata.org/wiki/Q76184955> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76184960> .
+  # oo Mabel Faunt, 1590~ - 1635~, daughter of Henry Faunt
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76184978> , <https://www.wikidata.org/wiki/Q76184986> ;
+	gen:startDate "1608~" .
+
+<https://www.wikidata.org/wiki/Q7350166>
+  # Robert Sutton, 2nd Baron Lexinton of Aram, 1662-01-06 - 1723-09-19
+  gen:father <https://www.wikidata.org/wiki/Q7350164> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75237278> .
+  # oo Margaret Hungerford, 1673~ - 1703-04, daughter of Sir Giles Hungerford and Margaret ?
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7350166> , <https://www.wikidata.org/wiki/Q75508821> ;
+	gen:startDate "1691-09-14~" .
+<https://www.wikidata.org/wiki/Q75272257>
+  # Bridget Sutton, b. 1665~
+  gen:father <https://www.wikidata.org/wiki/Q7350164> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75237278> .
+  # oo Hon. John Darcy, 1659-11-05 - 1688-06-07, https://www.wikidata.org/wiki/Q75272256 (howard.ttl)
+<https://www.wikidata.org/wiki/Q76184987>
+  # Robert Sutton, 1630~ - 1674a
+  gen:father <https://www.wikidata.org/wiki/Q76184978> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76184986> .
+  # oo Katherine Sherborne, daughter of Rev. William Sherborne
+
+<https://www.wikidata.org/wiki/Q75255437>
+  # Hon. Bridget Sutton, 1699-11-30 - 1734-06-16
+  gen:father <https://www.wikidata.org/wiki/Q7350166> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75508821> .
+  # oo 1717-08-27 John Manners, 3rd Duke of Rutland, 1696-10-21 - 1779-05-29, https://www.wikidata.org/wiki/Q3809451
+<https://www.wikidata.org/wiki/Q7350170>
+  # Rt. Hon. Sir Robert Sutton, 1671 - 1746-08-13
+  gen:father <https://www.wikidata.org/wiki/Q76184987> .
+  # and Katherine Sherborne
+  # oo Judith Tichborne, 1702~ - 1749-05-17, daughter of Benjamin Tichborne and Elizabeth Gibbs
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7350170> , <https://www.wikidata.org/wiki/Q75385177> ;
+	gen:startDate "1724-12-10" .
+<https://www.wikidata.org/wiki/Q76184992>
+  # Richard Sutton, 1674 - 1737-07
+  gen:father <https://www.wikidata.org/wiki/Q76184987> .
+  # and Katherine Sherborne
+  # oo Catherine de Tolmer
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76184992> , <https://www.wikidata.org/wiki/Q76184993> .
+
+<https://www.wikidata.org/wiki/Q7528664>
+  # Sir Richard Sutton, 1st Baronet, 1733-07-31 - 1802-01-10
+  # 1st Baronet Sutton, of Norwood Park, co. Nottingham 1772-10-14
+  gen:father <https://www.wikidata.org/wiki/Q7350170> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75385177> .
+  # oo Susan Champion de Crespigny, 1735-11-13 - 1766-06-12 (dzff.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7528664> , <https://www.wikidata.org/wiki/Q76185013> ;
+	gen:startDate "1765-06-28" .
+  # oo Ann Williams, 1769~ - 1787-12-02, daughter of William Peere Williams
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7528664> , <https://www.wikidata.org/wiki/Q76308372> ;
+	gen:startDate "1770-02-07" .
+  # oo Margaret Porter, 1775~ - 1824-01-03, daughter of John Porter
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7528664> , <https://www.wikidata.org/wiki/Q96074669> ;
+	gen:startDate "1793-04-08" .
+<https://www.wikidata.org/wiki/Q76184995>
+  # Robert Sutton, 1700 - 1776-11-13
+  gen:father <https://www.wikidata.org/wiki/Q76184992> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76184993> .
+  # oo Anne Throckmorton, daughter of C. Throckmorton
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76184995> , <https://www.wikidata.org/wiki/Q76185000> ;
+	gen:startDate "1720" .
+
+<https://www.wikidata.org/wiki/Q54941176>
+  # Elizabeth Evelyn Sutton, 1767 - 1856
+  gen:father <https://www.wikidata.org/wiki/Q7528664> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76308372> .
+  # oo 1789-06-06 (div 1803) Very Rev. George Markham, 1763-03-30 - 1822-09-30, https://www.wikidata.org/wiki/Q5542143, Dean of York 1802, son of Most Rev. Rt. Hon. Dr. William Markham (1719 – 1807-11-03, https://www.wikidata.org/wiki/Q3568809, Bishop of Chester 1771, Archbishop of York 1777-01-17, son of William Markham and Elizabeth née Markham) and oo 1759-06-16 Sarah Goddard (1738 - 1814-01-26, https://www.wikidata.org/wiki/Q76104345, daughter of John Goddard and Elizabeth Smith)
+  # oo 1803-08-08 John Fawcett, 1770~ - 1849~
+<https://www.wikidata.org/wiki/Q75308217>
+  # John Sutton, 1770 - 1801-09-15
+  gen:father <https://www.wikidata.org/wiki/Q7528664> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76308372> .
+  # oo Sophia Frances Chaplin, 1783~ - 1844-02-09, daughter of Charles Chaplin
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75308217> , <https://www.wikidata.org/wiki/Q75308218> .
+<https://www.wikidata.org/wiki/Q28063779>
+  # Robert Nassau Sutton, 1776-08-01 - 1833-04-07
+  gen:father <https://www.wikidata.org/wiki/Q7528664> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76308372> .
+  # oo Mary Georgiana Manners-Sutton, 1790 - 1846-11-10 (manners.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q28063779> , <https://www.wikidata.org/wiki/Q75262114> ;
+	gen:startDate "1812-05-20" .
+<https://www.wikidata.org/wiki/Q76024578>
+  # Anne Sutton, 1737 - 1770-06-30
+  gen:father <https://www.wikidata.org/wiki/Q76184995> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76185000> .
+  # oo 1757-02-14 Sir Robert Gunning, 1st Baronet, 1731-06-08 - 1816-09-22, https://www.wikidata.org/wiki/Q7528786, (bridgeman.ttl)
+  # TODO move here
+
+<https://www.wikidata.org/wiki/Q18880201>
+  # Sir Richard Sutton, 2nd Baronet, 1799-12-16 - 1855-11-13
+  gen:father <https://www.wikidata.org/wiki/Q75308217> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75308218> .
+  # oo Mary Elizabeth Burton, 1797-11-02 - 1842-01-01, daughter of https://www.wikidata.org/wiki/Q75304139 Benjamin Burton and https://www.wikidata.org/wiki/Q75859668 Anne Mainwaring
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q18880201> , <https://www.wikidata.org/wiki/Q75304138> ;
+	gen:startDate "1819-12-19" .
+<https://www.wikidata.org/wiki/Q75418262>
+  # Mary Isabella Sutton, d. 1855-05-06
+  gen:father <https://www.wikidata.org/wiki/Q28063779> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75262114> .
+  # oo 1840-06-02 Sir George Baker, 3rd Baronet, 1816-06-16 - 1882-08-27, https://www.wikidata.org/wiki/Q75287917, son of https://www.wikidata.org/wiki/Q21166382 Sir Frederick Francis Baker, 2nd Baronet and https://www.wikidata.org/wiki/Q75418255 Harriet Simeon
+<https://www.wikidata.org/wiki/Q76167743>
+  # Rev. Robert Sutton, 1813-03-01 - 1885-03-10
+  gen:father <https://www.wikidata.org/wiki/Q28063779> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75262114> .
+  # oo Charlotte Nelthorpe, 1817-03-06~ - 1872-11-11, daughter of https://www.wikidata.org/wiki/Q75304166 (anderson.ttl) and https://www.wikidata.org/wiki/Q76245982
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76167743> , <https://www.wikidata.org/wiki/Q76185027> ;
+	gen:startDate "1847-05-04" .
+<https://www.wikidata.org/wiki/Q76185148>
+  # Frederick Sutton, 1817-02-26 - 1900-06-02
+  gen:father <https://www.wikidata.org/wiki/Q28063779> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75262114> .
+  # oo Eliza Jones, d. 1844, daughter of Rev. W. M. Jones
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76185148> , <https://www.wikidata.org/wiki/Q76185151> ;
+	gen:startDate "1841-05-12" .
+  # oo Georgina Croft, d. 1898-03-20, daughter of Venerable James Croft (1784-07-02 - 1869-05-09, https://www.wikidata.org/wiki/Q75256328, son of Rev. Robert Nicholas Croft and Elizabeth Wanley Bowes) and oo 1812-10-05 Charlotte Manners-Sutton (d. 1825-02-14, https://www.wikidata.org/wiki/Q75256326, daughter of https://www.wikidata.org/wiki/Q907436 Most Rev. Charles Manners-Sutton and https://www.wikidata.org/wiki/Q40743640 Mary Thoroton)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76185148> , <https://www.wikidata.org/wiki/Q76185160> ;
+	gen:startDate "1847-10-19" .
+
+<https://www.wikidata.org/wiki/Q75304280>
+  # Mary Emily Sutton, d. 1855-01-24
+  gen:father <https://www.wikidata.org/wiki/Q18880201> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75304138> .
+  # oo 1848-06-27 Arthur Edwin Hill-Trevor, 1st Baron Trevor of Brynkinalt, 1819-11-04 – 1894-12-25, https://www.wikidata.org/wiki/Q5346516 (hill.ttl)
+<https://www.wikidata.org/wiki/Q75343802>
+  # Frances Amelia Victoria Sutton, d. 1871-04-26
+  gen:father <https://www.wikidata.org/wiki/Q18880201> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75304138> .
+  # oo 1861-10-23 Ambrose Charles Lisle March Phillipps de Lisle, 1834-05-10 - 1883-11-27, https://www.wikidata.org/wiki/Q75343800, son of https://www.wikidata.org/wiki/Q4741818 (howard.ttl, move to clifford.ttl) Ambrose Lisle March Phillipps de Lisle and https://www.wikidata.org/wiki/Q75343794 Laura Maria Clifford
+<https://www.wikidata.org/wiki/Q1288736>
+  # Sir John Sutton, 3rd Baronet, 1820-10-18 - 1873-06-05
+  gen:father <https://www.wikidata.org/wiki/Q18880201> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75304138> .
+  # oo Emma Helena Sherlock, 1826~ - 1845-01, daughter of Colonel Francis Sherlock
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1288736> , <https://www.wikidata.org/wiki/Q75304143> ;
+	gen:startDate "1844-08-23" .
+<https://www.wikidata.org/wiki/Q75276988>
+  # Sir Richard Sutton, 4th Baronet, 1821-10-21 - 1878-10-02
+  gen:father <https://www.wikidata.org/wiki/Q18880201> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75304138> .
+  # oo Anna Houson, 1822-05-31b - 1846-07-08, daughter of Rev. Henry Houson and Frances Ann Chaplin
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75276988> , <https://www.wikidata.org/wiki/Q76185562> ;
+	gen:startDate "1845-05-18" .
+  # oo Harriet Anne Burton, 1828-08-19 - 1901-03-12, daughter of William Fitzwilliam Burton (1796-09-22 - 1844-11-15, https://www.wikidata.org/wiki/Q75859669, son of https://www.wikidata.org/wiki/Q75304139 Benjamin Burton and https://www.wikidata.org/wiki/Q75859668 Anne Mainwaring) and oo 1825-07-18 Mary Power (d. 1839-01-25, https://www.wikidata.org/wiki/Q75859624, daughter of Sir John Power, 1st Baronet (https://www.wikidata.org/wiki/Q75875044, 1st Baronet Power, of Kilfane, co. Kilkenny))
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75276988> , <https://www.wikidata.org/wiki/Q75276989> ;
+	gen:startDate "1851-07-29" .
+<https://www.wikidata.org/wiki/Q75304146>
+  # Francis Sutton, 1822-09-02 - 1906-11-26
+  gen:father <https://www.wikidata.org/wiki/Q18880201> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75304138> .
+  # oo Lady Evelyn Mary Stuart Dawson-Damer, d. 1899-10-27, daughter of https://www.wikidata.org/wiki/Q5538434 (erskine.ttl) Rt. Hon. George Lionel Dawson-Damer and https://www.wikidata.org/wiki/Q20748087 Mary Georgiana Emma Seymour
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75304146> , <https://www.wikidata.org/wiki/Q75304147> ;
+	gen:startDate "1855-04-19" .
+<https://www.wikidata.org/wiki/Q75304188>
+  # Charles Sutton, 1823-08-16 - 1892-01-21
+  gen:father <https://www.wikidata.org/wiki/Q18880201> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75304138> .
+  # oo Alicia Frances Anna Dixie, 1842 - 1903-06-17 (oo 1893-05-18 Hon. Robert Needham, 1816-05-10 - 1899-11-11, https://www.wikidata.org/wiki/Q75806580, son of https://www.wikidata.org/wiki/Q5482016 Francis Needham, 2nd Earl of Kilmorey and https://www.wikidata.org/wiki/Q75513113 Jane Gun), daughter of https://www.wikidata.org/wiki/Q75285917 (see home.ttl) Sir Willoughby Wolstan Dixie, 8th Baronet and https://www.wikidata.org/wiki/Q75303605 Louisa Anne Lloyd
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75304188> , <https://www.wikidata.org/wiki/Q75806469> ;
+	gen:startDate "1861-07-10" .
+<https://www.wikidata.org/wiki/Q75281947>
+  # Rev. Augustus Sutton, 1825-01-13 - 1885-06-10
+  gen:father <https://www.wikidata.org/wiki/Q18880201> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75304138> .
+  # oo Charlotte Robina Carter, 1826-03-01 - 1888-10-10, daughter of John Carter (1795-05-03 - 1847-10-16, https://www.wikidata.org/wiki/Q75316332) and oo 1819-01-09 Mary Ann Daniel-Tyssen (1796-12-08 - 1847-12-21, https://www.wikidata.org/wiki/Q75922966, daughter of https://www.wikidata.org/wiki/Q75244469 (cecil.ttl) and https://www.wikidata.org/wiki/Q75244468)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75281947> , <https://www.wikidata.org/wiki/Q75316304> ;
+	gen:startDate "1851-10-02" .
+<https://www.wikidata.org/wiki/Q76185030>
+  # Robert Nassau Sutton-Nelthorpe, 1850-05-13 - 1937-11-17
+  gen:father <https://www.wikidata.org/wiki/Q76167743> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76185027> .
+  # oo Hon. Dulcibella Eden, 1860-04-23 - 1925-04-06, daughter of https://www.wikidata.org/wiki/Q62086191 William George Eden, 4th Baron Auckland and https://www.wikidata.org/wiki/Q75272872 Lucy Walbanke-Childers
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76185030> , <https://www.wikidata.org/wiki/Q75280981> ;
+	gen:startDate "1885-01-01" .
+<https://www.wikidata.org/wiki/Q76185270>
+  # Amy Georgina Sutton, d. 1923-04-17
+  gen:father <https://www.wikidata.org/wiki/Q76185148> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76185160> .
+  # oo 1875-06-09 Francis Hay Chapman, d. 1943-04-12, https://www.wikidata.org/wiki/Q76185272, son of William Greenwood Chapman (d. 1884-06-23, https://www.wikidata.org/wiki/Q75812902) and oo 1840-05-01 Elizabeth Catherine Drummond-Hay (d. 1911-02-15, https://www.wikidata.org/wiki/Q75812899, daughter of https://www.wikidata.org/wiki/Q75281109 (hay.ttl) and https://www.wikidata.org/wiki/Q75281111)
+
+<https://www.wikidata.org/wiki/Q76048449>
+  # Georgina Mary Sutton, d. 1901-12-16
+  gen:father <https://www.wikidata.org/wiki/Q75276988> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75276989> .
+  # oo 1889-07-11 Hercules Edward Rowley, 4th Baron Langford of Summerhill, 1848-06-01 - 1919-10-29, https://www.wikidata.org/wiki/Q76048447 (taylour.ttl)
+<https://www.wikidata.org/wiki/Q76185648>
+  # Winifred Aline Sutton, d. 1945-05-05
+  gen:father <https://www.wikidata.org/wiki/Q75276988> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75276989> .
+  # oo 1893-02-21 (div) Algernon Seymour Bernard Oakley, 1861-03-18 - 1909-02-28, https://www.wikidata.org/wiki/Q76185651, son of Rev. Charles Edward Oakley (d. 1865-09-15, https://www.wikidata.org/wiki/Q75628216) and oo 1856-01-29 Lady Georgina Mary Louisa Reynolds-Moreton (d. 1867-10-20, https://www.wikidata.org/wiki/Q75628215, daughter of https://www.wikidata.org/wiki/Q5727490 (herbert.ttl) Henry George Francis Reynolds-Moreton, 2nd Earl of Ducie and https://www.wikidata.org/wiki/Q75277773 Hon. Elizabeth Dutton)
+  # oo 1906-01-30 Major Cecil William Wilson, d. 1937-04-07, https://www.wikidata.org/wiki/Q76361557, son of James Wilson
+<https://www.wikidata.org/wiki/Q75733456>
+  # Sir Richard Francis Sutton, 5th Baronet, 1853-12-20 - 1891-02-25
+  gen:father <https://www.wikidata.org/wiki/Q75276988> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75276989> .
+  # oo Constance Edith Corbet, 1866 - 1940-09-01, daughter of https://www.wikidata.org/wiki/Q75259081 (bridgeman.ttl) Sir Vincent Rowland Corbet, 3rd Baronet and https://www.wikidata.org/wiki/Q75273112 Caroline Elizabeth Anne Agnes Bridgeman
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75733456> , <https://www.wikidata.org/wiki/Q75733458> ;
+	gen:startDate "1888-04-05" .
+<https://www.wikidata.org/wiki/Q75282981>
+  # Anna Harriet Mary Sutton, 1854~ - 1924-05-09
+  gen:father <https://www.wikidata.org/wiki/Q75276988> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75276989> .
+  # oo 1874-07-25 Augustus Henry Moreton Macdonald, 1848-11-03 - 1918-08-06, https://www.wikidata.org/wiki/Q75260160, son of Hon. Augustus Henry Moreton Macdonald of Largie (1804-06-24 - 1862-02-14, https://www.wikidata.org/wiki/Q4821488, Augustus Henry Moreton, son of https://www.wikidata.org/wiki/Q16833879 (herbert.ttl) Thomas Reynolds-Moreton, 1st Earl of Ducie and https://www.wikidata.org/wiki/Q75269301 Lady Frances Herbert) and oo 1837-09-15 Mary Jane Macdonald Lockhart (1821-04-23 - 1851-12-10, https://www.wikidata.org/wiki/Q75352623, daughter of https://www.wikidata.org/wiki/Q75352622 Sir Charles Macdonald Lockhart, 20th of the Lee and 7th of Carnwath, 2nd Baronet and https://www.wikidata.org/wiki/Q75352621 Emilia Olivia Ross)
+<https://www.wikidata.org/wiki/Q75276987>
+  # Emily Judith Sutton, 1855-12-09 - 1921-01-12
+  gen:father <https://www.wikidata.org/wiki/Q75276988> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75276989> .
+  # oo 1876-11-02 Sir William Henry Levinge, 9th Baronet, 1840-05-21 - 1900-04-17, https://www.wikidata.org/wiki/Q75276985, son of William James Levinge (1821-01-22 - 1867-10-22, https://www.wikidata.org/wiki/Q75887290, son of Sir Richard Levinge, 6th Baronet (1785-10-29 - 1848-09-12, https://www.wikidata.org/wiki/Q75887288, son of https://www.wikidata.org/wiki/Q75245635 Sir Charles Levinge, 5th Baronet and https://www.wikidata.org/wiki/Q76053868 Elizabeth Frances Reynell) and oo 1810-12-03 Hon. Elizabeth Anne Parkyns (1786-12-26 - 1853-10-28, https://www.wikidata.org/wiki/Q76053878, daughter of https://www.wikidata.org/wiki/Q19282434 (cavendish.ttl) Thomas Boothby Parkyns, 1st Baron Rancliffe and https://www.wikidata.org/wiki/Q76275060 Elizabeth Anne James)) and oo 1848-08-15 Hon. Anna Maria Fock (1821-07 - 1868-07-02, https://www.wikidata.org/wiki/Q75887286, daughter of John Michael Henry Fock, 3rd Baron de Robeck (1789-07-13 - 1846-10/1856, https://www.wikidata.org/wiki/Q75887285, son of https://www.wikidata.org/wiki/Q75887283 John Henry Fock, 2nd Baron de Robeck and https://www.wikidata.org/wiki/Q75887284 Anne Fitz-Patrick) and oo 1820-09-30 (div 1828) Hon. Margaret Lawless (b. 1803, https://www.wikidata.org/wiki/Q75944127, daughter of https://www.wikidata.org/wiki/Q7910977 Valentine Browne Lawless, 2nd Baron Cloncurry and https://www.wikidata.org/wiki/Q75276068 Elizabeth Georgiana Morgan))
+<https://www.wikidata.org/wiki/Q75352029>
+  # Sir Arthur Edwin Sutton, 7th Baronet, 1857-09-24 - 1948-02-04
+  gen:father <https://www.wikidata.org/wiki/Q75276988> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75276989> .
+  # oo Cecil Blanche Dumbleton, d. 1948-01-07, daughter of Walter Douglas Dumbleton
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75352029> , <https://www.wikidata.org/wiki/Q76185661> ;
+	gen:startDate "1885-09-11" .
+<https://www.wikidata.org/wiki/Q1142601>
+  # Henry Cecil Sutton, 1868-09-26 - 1936-05-24
+  gen:father <https://www.wikidata.org/wiki/Q75276988> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75276989> .
+  # oo Constance Diana Agar, 1874-02-14 - 1960-03-14, daughter of Hon. Herbert Welbore Ellis Agar (1823-09-19 - 1901-08-09, https://www.wikidata.org/wiki/Q75315153, son of https://www.wikidata.org/wiki/Q51180294 (herbert.ttl) Welbore Ellis Agar, 2nd Earl of Normanton and https://www.wikidata.org/wiki/Q75280057 Lady Diana Herbert) and oo 1871-08-10 Helen Millicent Gibson (d. 1932-04-08, https://www.wikidata.org/wiki/Q75315156, daughter of James A. Gibson)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1142601> , <https://www.wikidata.org/wiki/Q75315161> ;
+	gen:startDate "1913-11-06" .
+<https://www.wikidata.org/wiki/Q75304149>
+  # Francis Richard Hugh Seymour Sutton, 1858-07-22 - 1926-03-28
+  gen:father <https://www.wikidata.org/wiki/Q75304146> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75304147> .
+  # oo Lady Susan Elizabeth Lascelles, 1860-05-21 - 1925-01-22, daughter of https://www.wikidata.org/wiki/Q5724686 (murray.ttl) Henry Thynne Lascelles, 4th Earl of Harewood and https://www.wikidata.org/wiki/Q75248871 Diana Elizabeth Smyth
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75304149> , <https://www.wikidata.org/wiki/Q75248933> ;
+	gen:startDate "1881-07-21" .
+<https://www.wikidata.org/wiki/Q75316323>
+  # Catherine Mabel Sutton, 1861-01-27 - 1900-09-21
+  gen:father <https://www.wikidata.org/wiki/Q75281947> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75316304> .
+  # oo 1888-08-01 William Henry Dudley Ryder, 1865-01-07 - 1933-02-24, https://www.wikidata.org/wiki/Q75299073, son of Dudley Henry Ryder (1830-02-07 - 1911-09-08, https://www.wikidata.org/wiki/Q75316308, son of Hon. Granville Dudley Ryder (https://www.wikidata.org/wiki/Q5596937 (beaufort.ttl), son of https://www.wikidata.org/wiki/Q333011 (grey.ttl) Dudley Ryder, 1st Earl of Harrowby and https://www.wikidata.org/wiki/Q75249093 Lady Susan Leveson-Gower) and https://www.wikidata.org/wiki/Q75316324 Lady Georgiana Augusta Somerset) and oo 1857-12-01 Georgiana Emily Calcraft (d. 1915-07-10, https://www.wikidata.org/wiki/Q75316327, daughter of https://www.wikidata.org/wiki/Q24254779 John Hales Calcraft and https://www.wikidata.org/wiki/Q50133584 Lady Caroline Catherine Montagu)
+<https://www.wikidata.org/wiki/Q76185058>
+  # Griffith Sutton-Nelthorpe, 1892-08-21 - 1947-11-23
+  gen:father <https://www.wikidata.org/wiki/Q76185030> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75280981> .
+  # oo Constance Adine Maud Drummond, 1895-01-15 - 1923-12-10, daughter of https://www.wikidata.org/wiki/Q75301169 Allan Harvey Drummond and https://www.wikidata.org/wiki/Q75301168 Lady Katherine Adine Geraldine Hervey
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76185058> , <https://www.wikidata.org/wiki/Q76185061> ;
+	gen:startDate "1922-12-19" .
+
+<https://www.wikidata.org/wiki/Q75733460>
+  # Sir Richard Vincent Sutton, 6th Baronet, 1891-04-26 - 1918-11-29
+  gen:father <https://www.wikidata.org/wiki/Q75733456> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75733458> .
+<https://www.wikidata.org/wiki/Q75352027>
+  # Esmé Sutton, 1886 - 1977
+  gen:father <https://www.wikidata.org/wiki/Q75352029> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76185661> .
+  # oo 1912-05-23 William Denman Croft, 1879-03-15 - 1968-07-14, https://www.wikidata.org/wiki/Q8007763, son of https://www.wikidata.org/wiki/Q7527244 Sir Herbert George Denman Croft, 9th Baronet and https://www.wikidata.org/wiki/Q75351942 Georgiana Eliza Lucy Marsh
+<https://www.wikidata.org/wiki/Q76185663>
+  # Sir Robert Lexington Sutton, 8th Baronet, 1897-01-18 - 1981
+  gen:father <https://www.wikidata.org/wiki/Q75352029> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76185661> .
+  # oo Gwynneth Gwladys Gover, 1918~ - 2003a, daughter of Major Arnold Charles Gover
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76185663> , <https://www.wikidata.org/wiki/Q76185666> ;
+	gen:startDate "1936-06-23" .
+
+<https://www.wikidata.org/wiki/Q76184866>
+  # Sir Richard Lexington Sutton, 9th Baronet, b. 1937-04-27
+  gen:father <https://www.wikidata.org/wiki/Q76185663> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76185666> .
+  # oo Fiamma Ferrari, daughter of Giuseppe Marzio Ferrari
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76184866> , <https://www.wikidata.org/wiki/Q76184868> ;
+	gen:startDate "1959-03-02" .
+<https://www.wikidata.org/wiki/Q76185671>
+  # James Anthony Sutton, b. 1940-03-11
+  gen:father <https://www.wikidata.org/wiki/Q76185663> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76185666> .
+  # oo Dale Stevens, daughter of Captain Cecil William Stevens
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76185671> , <https://www.wikidata.org/wiki/Q76185674> ;
+	gen:startDate "1964-10-24" .
+
+<https://www.wikidata.org/wiki/Q76184870>
+  # David Robert Sutton, b. 1960-02-26
+  gen:father <https://www.wikidata.org/wiki/Q76184866> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76184868> .
+  # oo Annette David, daughter of B. David
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76184870> , <https://www.wikidata.org/wiki/Q76184873> ;
+	gen:startDate "1992-06-06" .
+<https://www.wikidata.org/wiki/Q76185675>
+  # Tristan Antony Sutton, b. 1966-02-26
+  gen:father <https://www.wikidata.org/wiki/Q76185671> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76185674> .
+  # oo Catherine Louise Masters, daughter of David Masters
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76185675> , <https://www.wikidata.org/wiki/Q76185680> ;
+	gen:startDate "1995-07-29" .
+
+<https://www.wikidata.org/wiki/Q76184874>
+  # Charlotte Emily Sutton, b. 1994-05-17
+  gen:father <https://www.wikidata.org/wiki/Q76184870> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76184873> .
+<https://www.wikidata.org/wiki/Q76184876>
+  # Harriet Eugenie Sutton, b. 1995-12-30
+  gen:father <https://www.wikidata.org/wiki/Q76184870> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76184873> .
+<https://www.wikidata.org/wiki/Q76184877>
+  # Eleanor Rose Sutton, b. 1998-02-15
+  gen:father <https://www.wikidata.org/wiki/Q76184870> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76184873> .
+<https://www.wikidata.org/wiki/Q76185681>
+  # William Oliver Sutton, b. 1998-03-31
+  gen:father <https://www.wikidata.org/wiki/Q76185675> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76185680> .
+<https://www.wikidata.org/wiki/Q76185683>
+  # Thomas Henry Sutton, b. 2000-06-24
+  gen:father <https://www.wikidata.org/wiki/Q76185675> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76185680> .
+<https://www.wikidata.org/wiki/Q76185685>
+  # Frederick Charles Sutton, b. 2002-06-01
+  gen:father <https://www.wikidata.org/wiki/Q76185675> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76185680> .
+
+
 # ====
 #<https://www.wikidata.org/wiki/Q5940213>
   # Humble Ward, 1st Baron Ward of Birmingham, 1614~ - 1670-10-14
-  # 1st Baron Ward of Birmingham 1644-03-23
+  # 1st Baron Ward of Birmingham, co. Warwick 1644-03-23
   # son of William Ward
   # and Elizabeth Humble
   # oo Frances Dudley, 6th Baroness Dudley, 1611-07-23 - 1697-07-11
@@ -147,6 +907,12 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75240616> , <https://www.wikidata.org/wiki/Q75240618> ;
 	gen:startDate "1672-12-30" .
+<https://www.wikidata.org/wiki/Q75240644>
+  # Theodosia Ward, 1642-05-15 - 1677-01
+  gen:father <https://www.wikidata.org/wiki/Q5940213> ;
+  gen:mother <https://www.wikidata.org/wiki/Q58806800> .
+  # oo 1664b Sir Thomas Brereton, 2nd Baronet, 1632 - 1674-01-07, https://www.wikidata.org/wiki/Q75240646, son of https://www.wikidata.org/wiki/Q1955282 Sir William Brereton, 1st Baronet and https://www.wikidata.org/wiki/Q75497506 Susan Booth
+  # oo 1677-02b Charles Brereton, https://www.wikidata.org/wiki/Q75240647
 
 <https://www.wikidata.org/wiki/Q75240658>
   # Hon. William Ward, 1660-01-05 - 1692-05~
@@ -177,11 +943,36 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q59623134> , <https://www.wikidata.org/wiki/Q75240676> ;
 	gen:startDate "1703-04-09" .
+<https://www.wikidata.org/wiki/Q75240670>
+  # William Ward, 10th Lord Dudley, 1685-10-16 - 1740-05-20
+  gen:father <https://www.wikidata.org/wiki/Q75240658> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75240626> .
 <https://www.wikidata.org/wiki/Q75240671>
   # Frances Ward, 1687-12-05 - 1737-01-24
   gen:father <https://www.wikidata.org/wiki/Q75240658> ;
   gen:mother <https://www.wikidata.org/wiki/Q75240626> .
   # oo 1709-11-09 William Lea, 1677~ - 1741-01-21, https://www.wikidata.org/wiki/Q75240673
+  # -> Ferdinando Dudley Lea, 11th Baron Dudley, 1710-09-14 - 1757-10-21, https://www.wikidata.org/wiki/Q60793150
+  #    (abeyant 1757-10-21 - 1916-05-09)
+  # -> Anne Lea, 1714-03-24 - 1762-04-29, https://www.wikidata.org/wiki/Q75248801
+  #   -> Ferdinando Smith, 1747-01-23 - 1794-01~, https://www.wikidata.org/wiki/Q75248817
+  #     -> Ferdinano Smith, 1779-03-26 - 1841-07-20, https://www.wikidata.org/wiki/Q75248827
+  #       -> Ferdinando Dudley Lea Smith, 1834-06-15 - 1905-02-08, https://www.wikidata.org/wiki/Q75248832
+  #         -> Ferdinando Dudley William Lea Smith, 12th Lord Dudley, 1872-04-04 - 1936-12-05, https://www.wikidata.org/wiki/Q75248835
+<https://www.wikidata.org/wiki/Q6262971>
+  # John Ward, 1st Viscount Dudley and Ward of Dudley, 1704-03-06 1774-05-06
+  # 6th Baron Ward of Birmingham, co. Warwick 1740-05-20
+  # 1st Viscount Dudley and Ward of Dudley, co. Worcester 1763-04-21
+  gen:father <https://www.wikidata.org/wiki/Q8019999> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75240683> .
+  # oo Anna Maria Bourchier, d. 1725-12-12, daughter of Charles Bourchier
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6262971> , <https://www.wikidata.org/wiki/Q75240687> ;
+	gen:startDate "1723-12-26" .
+  # oo Mary Carver, d. 1782-05-31, daughter of John Carver
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6262971> , <https://www.wikidata.org/wiki/Q75240690> ;
+	gen:startDate "1745-01-01" .
 <https://www.wikidata.org/wiki/Q75240686>
   # Rev. William Ward, d. 1758-07-21
   gen:father <https://www.wikidata.org/wiki/Q8019999> ;
@@ -190,6 +981,26 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75240686> , <https://www.wikidata.org/wiki/Q75240701> .
 
+<https://www.wikidata.org/wiki/Q5345802>
+  # Edward Ward, 9th Lord Dudley, 1704-06-16 - 1731-09-06
+  gen:father <https://www.wikidata.org/wiki/Q59623134> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75240676> .
+<https://www.wikidata.org/wiki/Q16833884>
+  # John Ward, 2nd Viscount Dudley and Ward of Dudley, 1725-02-22 - 1788-10-10
+  gen:father <https://www.wikidata.org/wiki/Q6262971> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75240687> .
+  # oo Mary Fair, d. 1810-05~, daughter of Gamaliel Fair
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16833884> , <https://www.wikidata.org/wiki/Q75240696> ;
+	gen:startDate "1788-07-15" .
+<https://www.wikidata.org/wiki/Q8019993>
+  # William Ward, 3rd Viscount Dudley and Ward of Dudley, 1750-01-21 - 1823-04-25
+  gen:father <https://www.wikidata.org/wiki/Q6262971> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75240690> .
+  # oo Julia Bosville, d. 1833-06-23, daughter of Godfrey Bosville
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8019993> , <https://www.wikidata.org/wiki/Q75240698> ;
+	gen:startDate "1780-08-01" .
 <https://www.wikidata.org/wiki/Q75240705>
   # Frances Ward, d. 1812-03-04
   gen:father <https://www.wikidata.org/wiki/Q75240686> ;
@@ -204,6 +1015,17 @@
     gen:spouse <https://www.wikidata.org/wiki/Q75240704> , <https://www.wikidata.org/wiki/Q75240707> ;
 	gen:startDate "1779~" .
 
+<https://www.wikidata.org/wiki/Q75510297>
+  # Hon. Anna Maria Ward, 1778-04-27 - 1837-01-26
+  gen:father <https://www.wikidata.org/wiki/Q16833884> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75240696> .
+  # oo 1803-05-14 Sir Horace David Cholwell St. Paul, 1st Baronet, 1775-01-06 - 1840-10-08, https://www.wikidata.org/wiki/Q16741853 (see talbot.ttl), 1st Baronet St. Paul, of Ewart Park, Northumberland 1813-11-17, son of Horace St. Paul and Anne Weston
+<https://www.wikidata.org/wiki/Q334108>
+  # John William Ward, 1st Earl of Dudley of Dudley Castle, 1781-08-09 - 1833-03-06
+  # 9th Baron Ward of Birmingham, co. Warwick, 4th Viscount Dudley and Ward of Dudley, co. Worcester 1823-04-25
+  # 1st Viscount Ednam, of Ednam, co. Roxburgh, 1st Earl of Dudley of Dudley Castle 1827-10-05
+  gen:father <https://www.wikidata.org/wiki/Q8019993> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75240698> .
 <https://www.wikidata.org/wiki/Q20741565>
   # William Humble Ward, 10th Baron Ward of Birmingham, 1781-01-09 - 1835-12-06
   # 10th Baron Ward of Birmingham, co. Warwick 1833-03-06
@@ -222,6 +1044,10 @@
   gen:deathDate "1885-05-07" ;
   gen:father <https://www.wikidata.org/wiki/Q20741565> ;
   gen:mother <https://www.wikidata.org/wiki/Q75240708> .
+  # oo Selina Constance de Burgh, 1829-11-11 - 1851-11-14, daughter of Hubert de Burgh (d. 1875, https://www.wikidata.org/wiki/Q75240716) and oo 1827-09-06 Marianne Tollemache (d. 1880-07-24, https://www.wikidata.org/wiki/Q76192946, daughter of https://www.wikidata.org/wiki/Q75269047 (manners.ttl) John Richard Delap Tollemache and https://www.wikidata.org/wiki/Q75279119 Lady Elizabeth Stratford)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8019995> , <#Selina_Constance_de_Burgh> ;
+	gen:startDate "1851-04-24" .
   # oo Georgina Elisabeth Moncreiffe, 1846-08-09 - 1929-02-02 (hay.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q8019995> , <https://www.wikidata.org/wiki/Q5548308> ;
@@ -234,6 +1060,12 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75240711> , <https://www.wikidata.org/wiki/Q75248995> ;
 	gen:startDate "1843-12-17" .
+<https://www.wikidata.org/wiki/Q75240712>
+  # Hon. Julia Susannah Ward, 1818-08-12b - 1902-05-28
+  gen:father <https://www.wikidata.org/wiki/Q20741565> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75240708> .
+  # oo 1842-06-14 Rt. Rev. Thomas Legh Claughton, 1808-11-06 - 1892-07-25, https://www.wikidata.org/wiki/Q7788452, Bishop of St. Albans 1877, son of Thomas Claughton and Maria ???
+  # -> Sir Gilbert Henry Claughton, 1st Baronet, 1856-02-21 - 1921-06-27, https://www.wikidata.org/wiki/Q16037676, 1st Baronet Claughton, of The Priory in the Parish of Dudley in the County of Worcester, 1912-07-04
 
 <https://www.wikidata.org/wiki/Q335388>
   # William Humnble Ward, 2nd Earl of Dudley, 1867-05-25 - 1932-06-29
@@ -243,6 +1075,26 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q335388> , <https://www.wikidata.org/wiki/Q21536177> ;
 	gen:startDate "1891-09-14" .
+  # oo Gertrude Millar, 1879-02-21 - 1952-04-25, daughter of John Millar and Elizabeth Miller
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q335388> , <https://www.wikidata.org/wiki/Q5553243> ;
+	gen:startDate "1924-04-30" .
+<https://www.wikidata.org/wiki/Q17627114>
+  # Sir Hon. John Hubert Ward, 1870-03-20 - 1938-12-02
+  gen:father <https://www.wikidata.org/wiki/Q8019995> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5548308> .
+  # oo Jean Templeton Reid, 1884-07-13 - 1962-05-01, daughter of Whitelaw Reid (1837-10-27 – 1912-12-15, https://www.wikidata.org/wiki/Q1386012) and oo 1881-04-26 Elisabeth Mills (1857 – 1931, daughter of Darius Ogden Mills (1825-09-25 – 1910-01-03, https://www.wikidata.org/wiki/Q5222952, son of James Mills and Hannah Ogden) and oo 1854-09-05 Jane Templeton Cunningham ((1832–1888, daughter of James C. Cunningham and Elizabeth Griffiths))
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q17627114> , <https://www.wikidata.org/wiki/Q75240719> ;
+	gen:startDate "1908-06-23" .
+<https://www.wikidata.org/wiki/Q7350854>
+  # Hon. Robert Arthur Ward, 1871-02-23 - 1942-06-14
+  gen:father <https://www.wikidata.org/wiki/Q8019995> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5548308> .
+  # oo Lady Mary Acheson, b. 1881, daughter of https://www.wikidata.org/wiki/Q4786192 Archibald Brabazon Sparrow Acheson, 4th Earl of Gosford and https://www.wikidata.org/wiki/Q859838 Lady Louisa Augusta Beatrice Montagu
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7350854> , <https://www.wikidata.org/wiki/Q75240721> ;
+	gen:startDate "1906-07-24" .
 <https://www.wikidata.org/wiki/Q75240723>
   gen:name "Lady Edith Amelia Ward"@en ;
   gen:birthDate "1872-09-16" ;
@@ -250,6 +1102,14 @@
   gen:father <https://www.wikidata.org/wiki/Q8019995> ;
   gen:mother <https://www.wikidata.org/wiki/Q5548308> .
   # oo 1895-01-05 Frederick Glyn, 4th Baron Wolverton, 1864-09-24 - 1932-10-03, https://www.wikidata.org/wiki/Q5497863 (grosvenor.ttl)
+<https://www.wikidata.org/wiki/Q75240730>
+  # Hon. Gerald Ernest Francis Ward, 1877-11-09 - 1914-10-30
+  gen:father <https://www.wikidata.org/wiki/Q8019995> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5548308> .
+  # oo Lady Evelyn Selina Louisa Crichton, 1877-11-09 - 1914-10-30, daughter of https://www.wikidata.org/wiki/Q6227624 (obrien.ttl) John Henry Crichton, 4th Earl Erne of Crom Castle and https://www.wikidata.org/wiki/Q75248746 Lady Florence Mary Cole
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75240730> , <https://www.wikidata.org/wiki/Q75248764> ;
+	gen:startDate "1899-11-07" .
 <https://www.wikidata.org/wiki/Q75249002>
   # Henrietta Maria Ward, d. 1935-03-30
   gen:father <https://www.wikidata.org/wiki/Q75240711> ;
@@ -264,7 +1124,7 @@
   # William Humble Dudley Ward, 1849-02-19 - 1903-05-29
   gen:father <https://www.wikidata.org/wiki/Q75240711> ;
   gen:mother <https://www.wikidata.org/wiki/Q75248995> .
-  # oo Hon. Eugenie Violet Adele Brett, d. 1938-03-13
+  # oo Hon. Eugenie Violet Adele Brett, 1855~ - 1938-03-13
   []
     gen:spouse <https://www.wikidata.org/wiki/Q58866982> , <https://www.wikidata.org/wiki/Q75249005> ;
 	gen:startDate "1876-10-24" .
@@ -282,14 +1142,49 @@
     gen:spouse <https://www.wikidata.org/wiki/Q8019994> , <https://www.wikidata.org/wiki/Q20679426> ;
 	gen:startDate "1943-02-25" ;
 	gen:divorceDate "1954" .
+  # oo Grace Maria Kolin, 1923-01-11 - 2016-12-29 (oo 1946-05-02 (div 1958) Stanisław Albrecht Radziwiłł, 1914-07-21 - 1976-07-27, https://www.wikidata.org/wiki/Q5176153, son of https://www.wikidata.org/wiki/Q1398057 Janusz Radziwiłł and https://www.wikidata.org/wiki/Q75330562 Princess Anna María Lubomirski), daughter of Dr. Michael Kolin
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8019994> , <https://www.wikidata.org/wiki/Q75248990> ;
+	gen:startDate "1961-07-17" .
 <https://www.wikidata.org/wiki/Q75240740>
   # Hon. Edward Frederick Ward, 1907-11-20 - 1987
   gen:father <https://www.wikidata.org/wiki/Q335388> ;
   gen:mother <https://www.wikidata.org/wiki/Q21536177> .
+  # oo Pauline Katharine Winn, b. 1920-07-18 (paget.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75240740> , <https://www.wikidata.org/wiki/Q75248797> ;
+	gen:startDate "1940-11-30" ;
+	gen:divorceDate "1947" .
   # oo Hon. Alathea Gwendoline Alys Mary Fitzalan-Howard, 1923-11-24 - 2001-03-05 (howard.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75240740> , <https://www.wikidata.org/wiki/Q75248798> ;
 	gen:startDate "1953-07-02" .
+<https://www.wikidata.org/wiki/Q5545875>
+  # George Reginald Ward, 1st Viscount Ward of Witley, 1907-11-20 - 1988-06-15
+  # 1st Viscount Ward of Witley, of Great Witley in the County of Worcester 1960
+  gen:father <https://www.wikidata.org/wiki/Q335388> ;
+  gen:mother <https://www.wikidata.org/wiki/Q21536177> .
+  # oo Anne Diana France Ayesha Capel, 1919-04-28 - 2008-05-04, daughter of Arthur Edward Capel (1881-12 - 1919-12-22, https://www.wikidata.org/wiki/Q2084103 or https://www.wikidata.org/wiki/Q75335839, son of Arthur Joseph Capel and Berthe Andrée A. E. Lorin) and oo 1918 Hon. Diana Lister (1893-05-07 - 1983-12-03, https://www.wikidata.org/wiki/Q75301652 (fane.ttl))
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5545875> , <https://www.wikidata.org/wiki/Q75249982> ;
+	gen:startDate "1940-05-30" ;
+	gen:divorceDate "1951" .
+  # oo Barbara Mary Colonsay McNeill, 1921-10-25 - 1980 (oo 1942-11-28 Hon. Michael Langhorne Astor, 1916-04-10 - 1980, https://www.wikidata.org/wiki/Q6828289, son of https://www.wikidata.org/wiki/Q2619726 Waldorf Astor, 2nd Viscount Astor and https://www.wikidata.org/wiki/Q195013 Nancy Witcher Langhorne), daughter of Ronald Frank Rous McNeill and Kathleen Beart
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5545875> , <https://www.wikidata.org/wiki/Q75249985> ;
+	gen:startDate "1962-03-15" .
+<https://www.wikidata.org/wiki/Q75248782>
+  # Edward John Sutton Ward, 1909-03-24 - 1990-11
+  gen:father <https://www.wikidata.org/wiki/Q17627114> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75240719> .
+  # oo Margaret Susan Corbett, d. 1981, daughter of Geoffrey Robert Josceline Corbett
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75248782> , <https://www.wikidata.org/wiki/Q75248786> ;
+	gen:startDate "1934-08-02" .
+  # oo Marion Elizabeth Jessie Clover, d. 1997-09-07, or https://www.wikidata.org/wiki/Q96083934 (oo 1941 Lionel Gascoyne-Cecil, 1907-07-26 - 1963-03-31, https://www.wikidata.org/wiki/Q75257080, son of Lt.-Col. Reginald Edward Gascoyne-Cecil (1878-11-15 - 1931-12-22, https://www.wikidata.org/wiki/Q75257075, son of https://www.wikidata.org/wiki/Q75256942 Lord Arthur Gascoyne-Cecil and https://www.wikidata.org/wiki/Q75256948 Elizabeth Ann Wilson) and oo 1902-02-01 Mary Beatrice Pilcher (d. 1940-01-27, https://www.wikidata.org/wiki/Q75257078, daughter of Henry Drayson Pilcher); oo 1966-07-18 William Gaspard Guy Romilly, 4th Baron Romilly, 1899-03-08 - 1983-06-29, https://www.wikidata.org/wiki/Q22019320 or https://www.wikidata.org/wiki/Q96083868, son of https://www.wikidata.org/wiki/Q63221537 or https://www.wikidata.org/wiki/Q96083933 (egerton.ttl) John Gaspard le Marchant Romilly, 3rd Baron Romilly and https://www.wikidata.org/wiki/Q75263627 Violet Edith Grey-Egerton; oo Geoffrey Adams, https://www.wikidata.org/wiki/Q75605953), daughter of Charles M. Clover
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75248782> , <https://www.wikidata.org/wiki/Q75257086> ;
+	gen:startDate "1986" .
 <https://www.wikidata.org/wiki/Q3442343>
   # Rt. Hon. William Dudley Ward, 1877-10-14 – 1946-11-11
   gen:father <https://www.wikidata.org/wiki/Q58866982> ;
@@ -304,7 +1199,32 @@
   gen:father <https://www.wikidata.org/wiki/Q58866982> ;
   gen:mother <https://www.wikidata.org/wiki/Q75249005> .
   # oo 1908-02-18 Rt. Hon. Sir William Augustus Forbes Erskine, 1871-10-30 - 1952-07-17, https://www.wikidata.org/wiki/Q15998221
+<https://www.wikidata.org/wiki/Q75249015>
+  # Eugenie Sybil Ward, d. 1950-11-01
+  gen:father <https://www.wikidata.org/wiki/Q58866982> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75249005> .
+  # oo 1901-06-15 Dermot Howard Blundell-Hollinshead-Blundell, 1874-02-27 - 1910-10-26, https://www.wikidata.org/wiki/Q61720513, son of Richard Blundell-Hollinshead-Blundell and Henrietta Frances Kirwan
+  # oo 1911-12-30 Maximillian David Francis Wood, d. 1915-08-22, https://www.wikidata.org/wiki/Q75254667, son of Charles Watkins Arthur Harcourt Wood
+  # oo 1919-03-25 Charles Evelyn Seymour, 1882 - 1943-01-05, https://www.wikidata.org/wiki/Q75254668, son of Sir George Evelyn Seymour (1848-11-15 - 1884-08-11, https://www.wikidata.org/wiki/Q75310849, son of Rt. Hon. Sir George Hamilton Seymour (1797-09-21 - 1880-02-02, https://www.wikidata.org/wiki/Q3432393, son of https://www.wikidata.org/wiki/Q6679281 Lord George Seymour and https://www.wikidata.org/wiki/Q75256776 Isabella Hamilton) and oo 1831-07-21 Hon. Gertrude Trevor (d. 1883-08-30, https://www.wikidata.org/wiki/Q75260855, daughter of https://www.wikidata.org/wiki/Q5729308 Henry Otway Trevor, 21st Lord Dacre and https://www.wikidata.org/wiki/Q75274299 Pyne Crosbie)) and oo 1874-12-03 Evelyn Elizabeth Campbell (d. 1929-09-22, https://www.wikidata.org/wiki/Q75310850, daughter of Archibald J. Campbell)
+<https://www.wikidata.org/wiki/Q75249019>
+  # Enid Violet Ida Ward, 1897-10-21 - 1984
+  gen:father <https://www.wikidata.org/wiki/Q58866982> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75249005> .
+  # oo 1919-04-28 Sir Allan Henry Shafto Adair, 6th Baronet, 1897-11-03 - 1988-08-04, https://www.wikidata.org/wiki/Q2837714, son of https://www.wikidata.org/wiki/Q75270638 Sir Robert Shafto Adair, 5th Baronet and https://www.wikidata.org/wiki/Q75270639 Mary Bosanquet
 
+<https://www.wikidata.org/wiki/Q7619979>
+  # William Humble David Ward, 4th Earl of Dudley, 1920-01-05 - 2013-11-16
+  gen:father <https://www.wikidata.org/wiki/Q8019994> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75248974> .
+  # oo Stella Carcano y Morra, daughter of Dr. Don Miguel Ángel Cárcano (1889-07-18 – 1978-05-09, https://www.wikidata.org/wiki/Q4215111 or https://www.wikidata.org/wiki/Q75248975, son of Ramon Carcano y Cezar and Ana Saenz de Zumaran) and Stella de Morra (b. 1893-11-14, https://www.wikidata.org/wiki/Q75351752, daughter of https://www.wikidata.org/wiki/Q75573102 Don Carlos de Morra, Marques de Monterochetta and https://www.wikidata.org/wiki/Q75573104 Dona Ines Victorica)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7619979> , <https://www.wikidata.org/wiki/Q75248949> ;
+	gen:startDate "1946-01-10" ;
+	gen:divorceDate "1961" .
+  # oo Maureen Swanson, 1932-11-25 - 2011-11-16, daughter of James Swanson
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7619979> , <https://www.wikidata.org/wiki/Q6792760> ;
+	gen:startDate "1961-08-24" .
 <https://www.wikidata.org/wiki/Q75248980>
   # Hon. Peter Alistair Ward, 1926-02-08 - 2008-03-24
   gen:father <https://www.wikidata.org/wiki/Q8019994> ;
@@ -312,18 +1232,84 @@
   # oo Claire Leonora Baring, b. 1936-02-29
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75248980> , <https://www.wikidata.org/wiki/Q75248981> ;
-	gen:startDate "1956-11-21" .
+	gen:startDate "1956-11-21" ;
+	gen:divorceDate "1974" .
+  # oo Elizabeth Rose Westmacott, daughter of Richard Victor Charles Westmacott
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75248980> , <https://www.wikidata.org/wiki/Q75264760> ;
+	gen:startDate "1974-04-18" .
+<https://www.wikidata.org/wiki/Q75249984>
+  # Hon. Georgina Anne Ward, b. 1941-03-13
+  gen:father <https://www.wikidata.org/wiki/Q5545875> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75249982> .
+  # oo 1966 (div 1971) Alastair Cameron Forbes, https://www.wikidata.org/wiki/Q75605972
+  # oo 1978 Patrick Claude Henry Tritton, 1934-05-18 - 1998-02-01, https://www.wikidata.org/wiki/Q76196601, son of Patrick Arthur Tritton and Judith Alice Mabel Hurt
 <https://www.wikidata.org/wiki/Q75249012>
   # Lady Clare Angela Louise Ward, 1916-05-25 - 1999-12-01
   gen:father <https://www.wikidata.org/wiki/Q3442343> ;
   gen:mother <https://www.wikidata.org/wiki/Q531153> .
   # oo 1935-01-24 Sir Robert Edward Laycock, 1907-04-18 - 1968-03-10, https://www.wikidata.org/wiki/Q3099865 (temple.ttl)
+<https://www.wikidata.org/wiki/Q3544351>
+  # Penelope Anne Rachel Dudley Ward, 1914-08-04 – 1982-01-22
+  gen:father <https://www.wikidata.org/wiki/Q3442343> ;
+  gen:mother <https://www.wikidata.org/wiki/Q531153> .
+  # oo 1939-12-29 (div 1944) Harry Anthony Compton Pélissier, 1912-07-27 - 1988-04-02, https://www.wikidata.org/wiki/Q4773264, son of Harry Gabriel Pélissier (1874-04-27 – 1913-09-25, https://www.wikidata.org/wiki/Q5628245, son of Jean Frederic Antoine Pélissier and Jane Keen) and oo 1911-09 Virginia Lilian Eumeline Mackenzie "Fay Compton" (1894-09-18 - 1978-12-12, https://www.wikidata.org/wiki/Q449753, daughter of Edward Montague Compton Mackenzie (1854-01-14 – 1918-07-16, https://www.wikidata.org/wiki/Q18810671, son of Henry Compton Mackenzie and Emmeline Catherine Montague) and oo 1882-06-12 Virginia Frances Bateman (1853-01-01 – 1940-05-04, https://www.wikidata.org/wiki/Q18762113, daughter of Hezekiah Linthicum Bateman (1812-12-06 – 1875-03-22, https://www.wikidata.org/wiki/Q5750026, son of Amzi Bateman and Catherine Schaeffer) and oo 1839~ Sidney Frances Cowell (1823-03-29 – 1881-01-13, https://www.wikidata.org/wiki/Q7509062, daughter of Joseph Leathley Hawkins-Witshed "Joseph Cowell" (1792-08-07 – 1863-11-13, https://www.wikidata.org/wiki/Q18546666) and oo Frances Sheppard (https://www.wikidata.org/wiki/Q96086812))))
+  # -> Clare Tracy Compton Pélissier, 1942-09-21 - 2012-05-02, https://www.wikidata.org/wiki/Q4974291
+  #  oo 1958 (div 1961) Edward Charles Morice Fox, b. 1937-04-13, https://www.wikidata.org/wiki/Q309980, son of Major Robin Fox and Angela Muriel Darita Worthington
+  #  oo 1961a (div 1973-12-02) John W. Neil "Neil Hallett", 1924-06-30 - 2004-12-05, https://www.wikidata.org/wiki/Q26997706
+  #  oo 1974-04-17 (div 1982) William Nicholson Simpson, 1931-09-11 - 1986-12-21, https://www.wikidata.org/wiki/Q4910878
+  #  oo 1982 (div 1983) Christopher M. McCabe, https://www.wikidata.org/wiki/Q75946559
+  # oo 1948-01-24 Sir Carol Reed, 1906-12-30 – 1976-04-25, https://www.wikidata.org/wiki/Q95143, son of Sir Herbert Beerbohm Tree and Beatrice May Pinney
 
+<https://www.wikidata.org/wiki/Q16117112>
+  # William Humble David Jeremy Ward, 5th Earl of Dudley, b. 1947-03-27
+  gen:father <https://www.wikidata.org/wiki/Q7619979> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75248949> .
+  # oo Sarah Mary Coats, b. 1948-08-18, daughter of https://www.wikidata.org/wiki/Q75347747 Sir Alastair Francis Stuart Coats, 4th Baronet and https://www.wikidata.org/wiki/Q75347750 Lukyn Gordon
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16117112> , <https://www.wikidata.org/wiki/Q75347742> ;
+	gen:startDate "1972-07-03" ;
+	gen:divorceDate "1976" .
+  # oo Debra Louise Pinney, daughter of George Robert Pinney
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16117112> , <https://www.wikidata.org/wiki/Q75347744> ;
+	gen:startDate "1976" ;
+	gen:divorceDate "1980" .
+<https://www.wikidata.org/wiki/Q75273070>
+  # Hon. Leander Grenville Dudley Ward, b. 1971-10-30
+  gen:father <https://www.wikidata.org/wiki/Q7619979> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6792760> .
+  # oo Laura Juliet Sevier, b. 1979, daughter of Roy J. R. Sevier and Patricia Margaret Sanderson
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75273070> , <https://www.wikidata.org/wiki/Q76245074> .
+<https://www.wikidata.org/wiki/Q271948>
+  # Rachel Claire Ward, b. 1957-09-12
+  gen:father <https://www.wikidata.org/wiki/Q75248980> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75248981> .
+  # oo 1983 Bryan Neathway Brown, b. 1947-06-23, https://www.wikidata.org/wiki/Q363659
+  # -> Matilda Brown, b. 1987, https://www.wikidata.org/wiki/Q17279196
 <https://www.wikidata.org/wiki/Q1109138>
   # Tracy Louise Ward, b. 1958-12-22
   gen:father <https://www.wikidata.org/wiki/Q75248980> ;
   gen:mother <https://www.wikidata.org/wiki/Q75248981> .
   # oo 1987-06-13 (div 2018) Henry John Fitzroy Somerset, 12th Duke of Beaufort, b. 1952-05-22, https://www.wikidata.org/wiki/Q5728512
+<https://www.wikidata.org/wiki/Q75248984>
+  # Alexander Evelyn Giles Ward, b. 1961-07-01
+  gen:father <https://www.wikidata.org/wiki/Q75248980> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75248981> .
+  # oo Lucy Rose Lycett Green, b. 1964-12-15, daughter of Rupert William Lycett Green and Candida Rose Betjeman
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75248984> , <https://www.wikidata.org/wiki/Q75605976> ;
+	gen:startDate "1988" .
+
+<https://www.wikidata.org/wiki/Q75605979>
+  # Jasmine Carrie Ward, b. 1990
+  gen:father <https://www.wikidata.org/wiki/Q75248984> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75605976> .
+<https://www.wikidata.org/wiki/Q75605978>
+  # Archibald Rupert William Ward, b. 1993
+  gen:father <https://www.wikidata.org/wiki/Q75248984> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75605976> .
 
 
 # ====
@@ -367,15 +1353,19 @@
   # Ferdinano Smith, 1779-03-26 - 1841-07-20
   gen:father <https://www.wikidata.org/wiki/Q75248817> ;
   gen:mother <https://www.wikidata.org/wiki/Q75248826> .
+  # oo Eloisa Knudson, d. 1805-02-14, daughter of Maj.-Gen. St. George Knudson
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75248827> , <https://www.wikidata.org/wiki/Q75248829> ;
+	gen:startDate "1802-07-01" .
   # oo Elizabeth Grazebrook, d. 1875-01-23, daughter of Michael Grazebrook
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q75248827> , <#Elizabeth_Grazebrook> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75248827> , <https://www.wikidata.org/wiki/Q75248830> ;
 	gen:startDate "1830-10-05" .
 
 <https://www.wikidata.org/wiki/Q75248832>
   # Ferdinando Dudley Lea Smith, 1834-06-15 - 1905-02-08
   gen:father <https://www.wikidata.org/wiki/Q75248827> ;
-  gen:mother <#Elizabeth_Grazebrook> .
+  gen:mother <https://www.wikidata.org/wiki/Q75248830> .
   # oo Amy Sophia Leigh, daughter of James Heath Leigh and Frances Mosley
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75248832> , <https://www.wikidata.org/wiki/Q75248833> ;
@@ -391,6 +1381,50 @@
     gen:spouse <https://www.wikidata.org/wiki/Q75248835> , <https://www.wikidata.org/wiki/Q75248837> ;
 	gen:startDate "1904-02-03" .
 
+<https://www.wikidata.org/wiki/Q19959747>
+  # Barbara Amy Felicity Smith, 14h Baroness Dudley, 1907-04-23 - 2002-05-27
+  gen:father <https://www.wikidata.org/wiki/Q75248835> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75248837> .
+  # oo 1929-08-22 Guy Raymond Hill Wallace, d. 1967-03-16, https://www.wikidata.org/wiki/Q75248840, son of Maj.-Gen. Hill Wallace
+  # oo 1980-02-22 Charles Anthony Crosse Hamilton, https://www.wikidata.org/wiki/Q75248968
+<https://www.wikidata.org/wiki/Q75248839>
+  # Ferdinando Dudley Henry Lea Smith, 13th Lord Dudley, 1910-06-18 - 1972-04-19
+  gen:father <https://www.wikidata.org/wiki/Q75248835> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75248837> .
+  # oo Kirsten Laura Hedvig Albrechtsen, daughter of Lars Anton Albrechtsen
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75248839> , <https://www.wikidata.org/wiki/Q75249026> ;
+	gen:startDate "1941-07" ;
+	gen:divorceDate "1965" .
+
+
+# ====
+#<https://www.wikidata.org/wiki/Q75248840>
+  # Guy Raymond Hill Wallace, d. 1967-03-16
+  # son of Maj.-Gen. Hill Wallace
+  # oo Barbara Amy Felicity Smith, 14h Baroness Dudley, 1907-04-23 - 2002-05-27
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75248840> , <https://www.wikidata.org/wiki/Q19959747> ;
+	gen:startDate "1929-08-22" .
+
+<https://www.wikidata.org/wiki/Q75248970>
+  # Jim Anthony Hill Wallace, 15th Lord Dudley, b. 1930-11-09
+  gen:father <https://www.wikidata.org/wiki/Q75248840> ;
+  gen:mother <https://www.wikidata.org/wiki/Q19959747> .
+  # oo Nicola Jane Dunsterville, daughter of Lt.-Col. Philip William Edward Leslie Dunsterville
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75248970> , <https://www.wikidata.org/wiki/Q75249033> ;
+	gen:startDate "1962-06-16" .
+
+<https://www.wikidata.org/wiki/Q75249034>
+  # Hon. Jeremy William Guilford Wallace, b. 1964-09-12
+  gen:father <https://www.wikidata.org/wiki/Q75248970> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75249033> .
+<https://www.wikidata.org/wiki/Q75249036>
+  # Hon. Nicholas John Hill Wallace, b. 1967-01-31
+  gen:father <https://www.wikidata.org/wiki/Q75248970> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75249033> .
+
 
 # ----
 <https://www.wikidata.org/wiki/Q75248778>
@@ -401,16 +1435,26 @@
 
 # ----
 <https://www.wikidata.org/wiki/Q65934511>
-  # Theodosia Harington, d. 1650-01~
+  # Theodosia Harington, 1565 - 1650-01-12
   gen:father <https://www.wikidata.org/wiki/Q6135580> ; # James Harington
   gen:mother <https://www.wikidata.org/wiki/Q75240560> . # Lucy Sydney
-  # oo 1586~ Edward Sutton, 5th Baron Dudley, 1567 – 1643-06-23, https://www.wikidata.org/wiki/Q5345509
+  # oo 1581-06-12 Edward Sutton, 5th Baron Dudley, 1567 – 1643-06-23, https://www.wikidata.org/wiki/Q5345509
+
+# ----
+<https://www.wikidata.org/wiki/Q6152156>
+  # Jane Guilford, 1509~ - 1555-01-15
+  gen:father <https://www.wikidata.org/wiki/Q5343206> ; # Sir Edward Guilford
+  gen:mother <https://www.wikidata.org/wiki/Q61911811> . # Eleanor West
+  # oo John Dudley, 1st Duke of Northumberland, 1502 - 1553-08-22, https://www.wikidata.org/wiki/Q347125
 
 
 # ----
-#<https://www.wikidata.org/wiki/Q1955282>
+<https://www.wikidata.org/wiki/Q1955282>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75240652> .
   # Sir William Brereton, 1st Baronet, 1604-09-13 - 1661-04-07
   # 1st Baronet Brereton, of Hanforde, co. Chester 1627-03-10
+  # son of  son of William Brereton
+  # and Margaret Holland
   # oo Susan Booth, 1601 - 1637
   []
     gen:spouse <https://www.wikidata.org/wiki/Q1955282> , <https://www.wikidata.org/wiki/Q75497506> ;
@@ -437,9 +1481,9 @@
 
 # ----
 <https://www.wikidata.org/wiki/Q75249005>
-  # Hon. Eugenie Violet Adele Brett, d. 1938-03-13
-  gen:father <https://www.wikidata.org/wiki/Q328035> ; # William Brett, 1st Viscount Esher
-  gen:mother <https://www.wikidata.org/wiki/Q75251131> . # Eugenie Mayer
+  # Hon. Eugenie Violet Adele Brett, 1855~ - 1938-03-13
+  gen:father <https://www.wikidata.org/wiki/Q328035> ; # William Brett, 1st Viscount Esher, 1815-08-13 - 1899-05-24, 1st Baron Esher, of Esher, Surrey 1885-07-24, 1st Viscount Esher, of Esher, Surrey 1897-11-11, son of Reverend Joseph George Brett and Dorothy Best
+  gen:mother <https://www.wikidata.org/wiki/Q75251131> . # oo 1850-04-03 Eugénie Mayer, 1823~ - 1904-06-04, daughter of Louis Mayer and and Finette Kreilssamner
   # oo 1876-10-24 William Humble Dudley Ward, 1849-02-19 - 1903-05-29, https://www.wikidata.org/wiki/Q58866982
 
 # ----

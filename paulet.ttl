@@ -97,7 +97,7 @@
 	gen:startDate "1640-03" .
   # oo Anne Browne, 1635-07-10 - 1711
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q14945629> , <#Anne_Browne> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q14945629> , <https://www.wikidata.org/wiki/Q75272034> ;
 	gen:startDate "1653-01-30" .
 <#Florence_Poulett>
   # Florence Poulett, d. 1677
@@ -835,23 +835,36 @@
   gen:mother <#Elizabeth_Poulett> .
 
 # ----
-#<#Sir_Thomas_Browne,_2nd_Baronet>
-  # Sir Thomas Browne, 2nd Baronet, d. 1635-04-16
-  # oo Annie Palmes, d. 1661b
+#<https://www.wikidata.org/wiki/Q75508646>
+  # Sir Robert Browne, 1st Baronet, 1570~ - 1624~
+  # 1st Baronet Browne, of Walcott, co. Northampton 1621-09-21
+  # son of Robert Browne
+  # and Margaret Barnard
+  # oo Elizabeth Cope, d. 1633a/1658-06-14b, daughter of Edward Cope and Elizabeth Mohun
   []
-    gen:spouse <#Sir_Thomas_Browne,_2nd_Baronet> , <#Annie_Palmes> .
+    gen:spouse <https://www.wikidata.org/wiki/Q75508646> , <https://www.wikidata.org/wiki/Q75508673> ;
+	gen:startDate "1607a" .
 
-<#Anne_Browne>
+<https://www.wikidata.org/wiki/Q75272035>
+  # Sir Thomas Browne, 2nd Baronet, 1624b - 1635-04-15
+  gen:father <https://www.wikidata.org/wiki/Q75508646> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75508673> .
+  # oo Annie Palmes, 1600~ - 1661b
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75272035> , <https://www.wikidata.org/wiki/Q75508686> .
+
+<https://www.wikidata.org/wiki/Q75272034>
   # Anne Browne, 1635-07-10 - 1711
-  gen:father <#Sir_Thomas_Browne,_2nd_Baronet> ;
-  gen:mother <#Annie_Palmes> .
+  gen:father <https://www.wikidata.org/wiki/Q75272035> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75508686> .
   # oo 1653-01-30 John Poulett, 2nd Baron Poulett, 1615 - 1665-09-15, https://www.wikidata.org/wiki/Q14945629
 # ----
-<#Annie_Palmes>
+<https://www.wikidata.org/wiki/Q75508686>
+  owl:sameAs <https://www.wikidata.org/wiki/Q96079139> ; # ?
   # Annie Palmes, d. 1661b
-  gen:father <https://www.wikidata.org/wiki/Q5622524> .
-  # and Anne Stafford
-  # oo Sir Thomas Browne, 2nd Baronet, d. 1635-04-16, #Sir_Thomas_Browne,_2nd_Baronet
+  gen:father <https://www.wikidata.org/wiki/Q5622524> ; # Sir Guy Palmes
+  gen:mother <https://www.wikidata.org/wiki/Q75508688> . # Anne Stafford
+  # oo Sir Thomas Browne, 2nd Baronet, d. 1635-04-16, https://www.wikidata.org/wiki/Q75272035
 
 # ----
 #<https://www.wikidata.org/wiki/Q7794042>
