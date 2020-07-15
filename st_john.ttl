@@ -4,12 +4,91 @@
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
+#<#Robert_St_John>
+  # Robert St. John
+  # oo Agnes Cantilupe
+
+<https://www.wikidata.org/wiki/Q18810849>
+  # John de St. John, 1225 - 1302-09-29
+  gen:father <#Robert_St_John> .
+  # and Agnes Cantilupe
+  # oo Alice FitzPiers, daughter of Reynold FitzPiers
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q18810849> , <https://www.wikidata.org/wiki/Q75248216> .
+<#William_de_St_John>
+  # William de St John, 1230 - 1305
+  gen:father <#Robert_St_John> .
+  # and Agnes Cantilupe
+  # oo Isabel Cobmartin
+
+<https://www.wikidata.org/wiki/Q75400640>
+  # John de Saint John, 1st Baron St John of Basing, 1273-10 - 1329-05-14
+  # 1st Baron St John of Basing 1299-12-29
+  gen:father <https://www.wikidata.org/wiki/Q18810849> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75248216> .
+  # oo Isabel de Courtenay
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75400640> , <https://www.wikidata.org/wiki/Q75400642> .
+<https://www.wikidata.org/wiki/Q75248213>
+  # Agnes de St. John, 1275 - 1345-06-11
+  gen:father <https://www.wikidata.org/wiki/Q18810849> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75248216> .
+  # oo 1292 Hugh de Courtenay, 1st/9th Earl of Devon, 1276-09-14 – 1340-12-23, https://www.wikidata.org/wiki/Q2392256
+<#John_St_John_(died_1316)>
+  # John St John, 1253-03-09 - 1316
+  gen:father <#William_de_St_John> .
+  # and Isabel Cobmartin
+
+<https://www.wikidata.org/wiki/Q75827157>
+  # Hugh St. John, 2nd Lord St. John of Basing, 1310-05-26 - 1337b
+  gen:father <https://www.wikidata.org/wiki/Q75400640> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75400642> .
+  # oo Mirabel Wake, 1307 - 1355-06, daughter of Hugh Wake (?) and Joan Belauney
+<#Alexander_St_John>
+  # Alexander St John, d. 1339-11-02a
+  gen:father <#John_St_John_(died_1316)> .
+
+<#Margaret_de_St_John>
+  # Margaret de St John, 1329 - 1361-10-19
+  gen:father <https://www.wikidata.org/wiki/Q75827157> .
+  # and Mirabel Wake
+  # oo John St Philibert, b. 1325~
+  # -> John de St Philibert, 1358~ - 1361-11-13~
+<https://www.wikidata.org/wiki/Q75754918>
+  # Edmund St. John, 3rd Lord St. John of Basing, 1331~ - 1348
+  gen:father <https://www.wikidata.org/wiki/Q75827157> .
+  # and Mirabel Wake
+  # oo 1347-08-18b Elizabeth le Strange, d. 1362-09-15~ (oo 1349-07-29 Gerard de Lisle; oo 1360-06-09a Richard Pembridge), daughter of John le Strange and Ankaret Boteler
+<https://www.wikidata.org/wiki/Q75905780>
+  # Isabella St. John, 4th Baroness St John, 1333~ - 1393
+  gen:father <https://www.wikidata.org/wiki/Q75827157> .
+  # and Mirabel Wake
+  # oo 1347-09-26b Henry de Burghersh, 1326a - 1348-11-10, son of Bartholomew de Burghersh and Elizabeth Verdun
+  # oo 1349-02-19b Luke de Poynings, Baron St. John, 1323~ - 1385~, https://www.wikidata.org/wiki/Q75754916
+<#Oliver_St_John>
+  # Oliver St John, 1315~ - 1373-08
+  gen:father <#Alexander_St_John> .
+  # oo Elizabeth Luccombe, b. 1320-05-20, daughter of Hugh Luccombe
+
+<#John_St_John_(died_1373)>
+  # John St John, d. 1373-08b
+  gen:father <#Oliver_St_John> .
+  # and Elizabeth Luccombe
+  # oo Elizabeth Bere, b. 1345b, daughter of John de la Bere and Agnes Turberville
+
+<https://www.wikidata.org/wiki/Q75558205>
+  # John St. John, 1360a - 1424-12-26~
+  gen:father <#John_St_John_(died_1373)> .
+  # and Elizabeth Bere
+  # oo Elizabeth Paullett, b. 1387, daughter of William Paulet and Eleanor Mare  or of Sir John Paveley
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75558205> , <https://www.wikidata.org/wiki/Q75558206> .
 
 <https://www.wikidata.org/wiki/Q75387375>
   gen:name "Sir Oliver St. John"@en ;
   gen:deathDate "1437" ;
-  gen:father <https://www.wikidata.org/wiki/Q75558205> ; # John St. John
-  gen:mother <https://www.wikidata.org/wiki/Q75558206> . # Elizabeth Paullett, daughter of Sir John Paveley
+  gen:father <https://www.wikidata.org/wiki/Q75558205> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75558206> .
   # oo Margaret Beauchamp, 1410~ – 1482-06-03b
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75387375> , <https://www.wikidata.org/wiki/Q2075948> ;
@@ -24,14 +103,20 @@
   # oo Alice Bradshaigh, daughter of Sir Thomas Bradshagh
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75238488> , <https://www.wikidata.org/wiki/Q75387377> .
+<https://www.wikidata.org/wiki/Q75387386>
+  # Edith St. John, b. 1430~
+  gen:father <https://www.wikidata.org/wiki/Q75387375> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2075948> .
+  # oo Sir Geoffrey Poole, Esq., 1416b - 1474, https://www.wikidata.org/wiki/Q75387388 (see plantagenet.ttl)
+  # TODO move here
 <https://www.wikidata.org/wiki/Q75387389>
-  # Elizabeth St. John, d. 1491-02b
+  # Elizabeth St. John, 1432~ - 1491-02b
   gen:father <https://www.wikidata.org/wiki/Q75387375> ;
   gen:mother <https://www.wikidata.org/wiki/Q2075948> .
   # oo 1450-04-02b William la Zouche, 5th Lord Zouche (of Haryngworth), fitzgerald.ttl#William_la_Zouche,_5th_Lord_Zouche
   # oo 1471-12-10b John Scrope, 5th Lord Scrope of Bolton, 1437-07-22 - 1498-08-17, https://www.wikidata.org/wiki/Q6257143
 <https://www.wikidata.org/wiki/Q75387380> # -> St. John of Lydiard Tregoze
-  # Oliver St. John, of Lydiard Tregoze, d. 1497-04-10b
+  # Oliver St. John, of Lydiard Tregoze, 1435~ - 1497-04-10b
   gen:father <https://www.wikidata.org/wiki/Q75387375> ;
   gen:mother <https://www.wikidata.org/wiki/Q2075948> .
 
@@ -52,7 +137,7 @@
   # Sir John St. John, of Bletso, d. 1562-08-27
   gen:father <https://www.wikidata.org/wiki/Q75431509> ;
   gen:mother <https://www.wikidata.org/wiki/Q76155984> .
-  # oo Margaret Waldegrave
+  # oo Margaret Waldegrave, 1485-11-12~ - 1564-04~, daughter of Sir William Waldegrave and Margery Wentworth
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75271474> , <https://www.wikidata.org/wiki/Q75403983> .
 
@@ -60,6 +145,12 @@
   # Oliver St. John, 1st Baron Saint John of Bletso, 1522~ – 1582-04-21
   gen:father <https://www.wikidata.org/wiki/Q75271474> ;
   gen:mother <https://www.wikidata.org/wiki/Q75403983> .
+<https://www.wikidata.org/wiki/Q30281470>
+  # Margaret St. John, d. 1562-08-27
+  gen:father <https://www.wikidata.org/wiki/Q75271474> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75403983> .
+  # oo 1555b William Gostwick, d. 1556b, https://www.wikidata.org/wiki/Q75403982, son of Sir John Gostwick
+  # oo 1556b Francis Russell, 2nd Earl of Bedford, 1527 - 1585-07-28, https://www.wikidata.org/wiki/Q2084556
 
 
 # Baron Saint John of Bletso
@@ -68,36 +159,43 @@
   # 1st Baron Saint John of Bletso, co. Bedford 1559-01-13
   gen:father <https://www.wikidata.org/wiki/Q75271474> ;
   gen:mother <https://www.wikidata.org/wiki/Q75403983> .
-  # oo Agnes Fisher, b. 1520~, daughter of Sir John Fisher and Anne Mordaunt
+  # oo Agnes Fisher, 1522-09-11~ - 1570-11-28, daughter of Sir John Fisher and Anne Mordaunt
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7087845> , <https://www.wikidata.org/wiki/Q75275729> ;
 	gen:startDate "1542-02-08b" .
-  # oo 1572-08-28b Elizabeth Chamber, daughter of Geoffrey Chamber, and widow of Sir Francis Stonor, of Reynold Conyers, and of Edward Griffin
+  # oo Elizabeth Chamber, 1515~ - 1602-12-08a, daughter of Geoffrey Chamber, and widow of Sir Francis Stonor, of Reynold Conyers, and of Edward Griffin
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7087845> , <https://www.wikidata.org/wiki/Q76260438> ;
+	gen:startDate "1572-08-28b" .
 
 <https://www.wikidata.org/wiki/Q6258749>
   # John St John, 2nd Baron Saint John of Bletso, d. 1596-10-23
   gen:father <https://www.wikidata.org/wiki/Q7087845> ;
   gen:mother <https://www.wikidata.org/wiki/Q75275729> .
-  # oo Catherine Dormer, d. 1615-03-23
+  # oo Catherine Dormer, d. 1615-03-23, daughter of Sir William Dormer and Dorothy Catesby
   []
     gen:spouse <https://www.wikidata.org/wiki/Q6258749> , <https://www.wikidata.org/wiki/Q75776920> ;
 	gen:startDate "1575-02a" .
+<https://www.wikidata.org/wiki/Q7087848>
+  # Oliver St. John, 3rd Baron Saint John of Bletso, 1540 - 1618
+  gen:father <https://www.wikidata.org/wiki/Q7087845> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75275729> .
+  # oo Dorothy Read, 1561~ - 1605-06-25~, daughter of Sir John Read and Margaret Pauncefoot
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7087848> , <https://www.wikidata.org/wiki/Q75275727> ;
+	gen:startDate "1584b" .
 <https://www.wikidata.org/wiki/Q75570743>
   # Hon. Judith St. John, 1545 - 1607
   gen:father <https://www.wikidata.org/wiki/Q7087845> ;
   gen:mother <https://www.wikidata.org/wiki/Q75275729> .
   # oo Sir John Pelham, 1537 - 1580-10-13, https://www.wikidata.org/wiki/Q26452380
-<https://www.wikidata.org/wiki/Q7087848>
-  # Oliver St. John, 3rd Baron Saint John of Bletso, 1540 - 1618
+<https://www.wikidata.org/wiki/Q75443675>
+  # Hon. Thomas St. John, 1550~ - 1618-06-28~
   gen:father <https://www.wikidata.org/wiki/Q7087845> ;
   gen:mother <https://www.wikidata.org/wiki/Q75275729> .
-  # oo Dorothy Read, d. 1605-06-25~, daughter of Sir John Read and Margaret Pauncefoot
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q7087848> , <https://www.wikidata.org/wiki/Q75275727> ;
-	gen:startDate "1584b" .
 
 <https://www.wikidata.org/wiki/Q75431512>
-  # Hon. Ann St. John, d. 1638-06-07
+  # Hon. Ann St. John, 1575~ - 1638-06-07
   gen:father <https://www.wikidata.org/wiki/Q6258749> ;
   gen:mother <https://www.wikidata.org/wiki/Q75776920> .
   # oo 1597-02-07 William Howard, 3rd Baron Howard of Effingham, 1577-12-27 - 1615-11-28, https://www.wikidata.org/wiki/Q8012556
@@ -112,15 +210,15 @@
   # 1st Earl of Bolingbroke 1624-12-28
   gen:father <https://www.wikidata.org/wiki/Q7087848> ;
   gen:mother <https://www.wikidata.org/wiki/Q75275727> .
-  # oo Elizabeth Paulet, d. 1655-10~
+  # oo Elizabeth Paulet, 1580~ - 1655-10~
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7087846> , <https://www.wikidata.org/wiki/Q75241406> ;
 	gen:startDate "1602-04" .
 <https://www.wikidata.org/wiki/Q75407930>
-  # Sir Rowland St. John, d. 1645-08
+  # Hon. Sir Rowland St. John, 1588-10-06b - 1645-08
   gen:father <https://www.wikidata.org/wiki/Q7087848> ;
   gen:mother <https://www.wikidata.org/wiki/Q75275727> .
-  # oo Sybella Vaughan
+  # oo Sybella Vaughan, daughter of John Vaughan
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75407930> , <https://www.wikidata.org/wiki/Q75407934> .
 <https://www.wikidata.org/wiki/Q75425840>
@@ -128,10 +226,17 @@
   gen:father <https://www.wikidata.org/wiki/Q7087848> ;
   gen:mother <https://www.wikidata.org/wiki/Q75275727> .
   # oo Sir Robert Chernock, d. 1670-07-26, https://www.wikidata.org/wiki/Q75569993
+<https://www.wikidata.org/wiki/Q75443674>
+  # Oliver St. John
+  gen:father <https://www.wikidata.org/wiki/Q75443675> ;
+  gen:mother <https://www.wikidata.org/wiki/Q89351311> . # Jane Neale
+  # oo Sarah Bulkeley, 1580 - 1611, daughter of Edward Buckley and Olive Irby
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75443674> , <https://www.wikidata.org/wiki/Q76156010> .
 
 <https://www.wikidata.org/wiki/Q7087849>
   # Oliver St John, 5th Baron St John of Bletso, 1603 – 1642-10-23
-  # 5th Baron Saint John of Bletso 1641
+  # 5th Baron Saint John of Bletso 1641-05-14
   gen:father <https://www.wikidata.org/wiki/Q7087846> ;
   gen:mother <https://www.wikidata.org/wiki/Q75241406> .
   # oo Lady Arabella Egerton, d. 1669~
@@ -139,17 +244,49 @@
     gen:spouse <https://www.wikidata.org/wiki/Q7087849> , <https://www.wikidata.org/wiki/Q75431497> ;
 	gen:startDate "1628-03b" .
 <https://www.wikidata.org/wiki/Q75431499>
-  # Sir Paulet St. John, 1608-07-24 - 1538-05-03a/-06-27b
+  # Sir Paulet St. John, 1608-07-24 - 1638-05-03a/-06-27b
   gen:father <https://www.wikidata.org/wiki/Q7087846> ;
   gen:mother <https://www.wikidata.org/wiki/Q75241406> .
   # oo Elizabeth Vaughan, 1615~ - 1655-10-23~, daughter of Sir Rowland Vaughan
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75431499> , <https://www.wikidata.org/wiki/Q75431500> ;
 	gen:startDate "1632-12-10" .
+<https://www.wikidata.org/wiki/Q75241405>
+  # Lady Dorothy St. John, 1611-02-23 - 1628-06-28
+  gen:father <https://www.wikidata.org/wiki/Q7087846> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75241406> .
+  # oo 1628-05-09 John Carey, 2nd Earl of Dover, 1608~ - 1677-05-26, https://www.wikidata.org/wiki/Q15438988 (oo Abigail Cokayne, 1610-08-26 - 1688-02-10, https://www.wikidata.org/wiki/Q75241409, daughter of Sir William Cokayne and Mary Morris, 1630-12-02), son of https://www.wikidata.org/wiki/Q7608383 Henry Carey, 1st Earl of Dover and https://www.wikidata.org/wiki/Q75241384 Judith Pelham
 <https://www.wikidata.org/wiki/Q75407932> # -> St. John baronets of Woodford
   # Sir Oliver St. John, 1st Baronet, d. 1661-01-03
   gen:father <https://www.wikidata.org/wiki/Q75407930> ;
   gen:mother <https://www.wikidata.org/wiki/Q75407934> .
+<https://www.wikidata.org/wiki/Q75407929>
+  # Elizabeth St. John, 1605 - 1677-09-08
+  gen:father <https://www.wikidata.org/wiki/Q75407930> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75407934> .
+  # oo 1650b Sir Thomas Alston, 1st Baronet, 1609~ - 1678-07-11b, https://www.wikidata.org/wiki/Q75407918, 1st Baronet Alston, of Odell, co. Bedford 1642-06-13, son of Thomas Alston and Frances Blundevill
+<#Judith_St._John>
+  # Judith St. John, d. 1663-06-15b
+  gen:father <https://www.wikidata.org/wiki/Q75407930> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75407934> .
+  # oo 1633 John Percival
+  # oo Sir Edward Nicolls, 2nd Baronet, 1619~ -- 1683-02-28, son of Sir Francis Nicolls, 1st Baronet (1586 – 1642-03-04, https://www.wikidata.org/wiki/Q18730289, 1st Baronet Nicolls, of Hardwick 1641-07-28, son of Francis Nichols) and oo Mary Bagshawe (daughter of Edward Bagshawe)
+<https://www.wikidata.org/wiki/Q3374708>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75434836> ;
+  # Sir Oliver St. John, of Longthorpe, 1598~ - 1673-12-31
+  gen:father <https://www.wikidata.org/wiki/Q75443674> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76156010> .
+  # oo Johanna Altham, daughter of Sir James Altham and Elizabeth Barrington
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3374708> , <https://www.wikidata.org/wiki/Q75443626> .
+  # oo Elizabeth Cromwell, daughter of Henry Cromwell
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3374708> , <https://www.wikidata.org/wiki/Q75304443> ;
+	gen:startDate "1638-01-21" .
+  # oo Elizabeth Oxenbridge, 1604~ - 1680-03-01, daughter of Daniel Oxenbridge and Katherine Harby
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3374708> , <https://www.wikidata.org/wiki/Q76156042> ;
+	gen:startDate "1645-10-01" .
 
 <https://www.wikidata.org/wiki/Q21674887>
   # Oliver St. John, 2nd Earl of Bolingbroke, 1634 - 1688-03-18
@@ -159,15 +296,59 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q21674887> , <https://www.wikidata.org/wiki/Q75431505> ;
 	gen:startDate "1654-11-24" .
+<https://www.wikidata.org/wiki/Q7154833>
+  # Paulet St. John, 3rd Earl of Bolingbroke, 1634a - 1711-10-05
+  gen:father <https://www.wikidata.org/wiki/Q75431499> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75431500> .
+<https://www.wikidata.org/wiki/Q75275174>
+  # Johanna St John, 1631 - 1705-02
+  gen:father <https://www.wikidata.org/wiki/Q3374708> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75443626> .
+  # oo 1651b Sir Walter St. John, 3rd Baronet, 1622-05 – 1708-07-03, https://www.wikidata.org/wiki/Q7529409
+<https://www.wikidata.org/wiki/Q5482495>
+  owl:sameAs <https://www.wikidata.org/wiki/Q76156015> ;
+  # Francis St. John, of Longthorpe, 1634~ - 1705-07-29
+  gen:father <https://www.wikidata.org/wiki/Q3374708> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75443626> .
+  # oo Mary Wakering, daughter of Dionise Wakering of Wakering Hall
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5482495> , <#Mary_Wakering> .
+  # oo Mary Forth, daughter of Dannet Forth
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5482495> , <#Mary_Forth> ;
+	gen:startDate "1674-05-14a" .
+<https://www.wikidata.org/wiki/Q75434833>
+  # Elizabeth St. John, b. 1640b
+  gen:father <https://www.wikidata.org/wiki/Q3374708> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75304443> .
+  # oo 1656-02-26 Sir John Bernard, 2nd Baronet, 1630-11 - 1679-06, https://www.wikidata.org/wiki/Q7527601, son of Sir Robert Bernard, 1st Baronet (1601 - 1666, https://www.wikidata.org/wiki/Q7528720, 1st Baronet Bernard, of Huntingdon, Hunts. 1662-07-01, son of Francis Bernard and Mary Woodhouse) and oo 1630b Elizabeth Tolcarne (https://www.wikidata.org/wiki/Q75434822, daughter of Sir John Tolcarne)
+  # -> Sir Robert Bernard, 3rd Baronet, 1670b - 1703b, https://www.wikidata.org/wiki/Q75434842
+  #   oo 1692-05-26 Anne Weldon, d. 1746-12-05, https://www.wikidata.org/wiki/Q59175476 or https://www.wikidata.org/wiki/Q75434843 (oo 1704-09-25 Thomas Trevor, 1st Baron Trevor of Bromham 1712, 1658-03-08 - 1730-06-19, https://www.wikidata.org/wiki/Q7794565 or https://www.wikidata.org/wiki/Q75434847, 1st Baron Trevor of Bromham, son of https://www.wikidata.org/wiki/Q6261237 Sir John Trevor and https://www.wikidata.org/wiki/Q75466984 Ruth Hampden), daughter of Robert Weldon
+
+<https://www.wikidata.org/wiki/Q75434854>
+  # Sir Francis St. John, 1st Baronet, of Longthorpe, 1680~ - 1756-09
+  # 1st Baronet St. John, of Longthorpe 1715-09-10
+  gen:father <https://www.wikidata.org/wiki/Q5482495> ;
+  gen:mother <#Mary_Forth> .
+  # oo Mary Gould, d. 1720-12-08
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75434854> , <https://www.wikidata.org/wiki/Q75434855> ;
+	gen:startDate "1712" .
+
+<https://www.wikidata.org/wiki/Q75434851>
+  # Mary St. John, d. 1793-09-21
+  gen:father <https://www.wikidata.org/wiki/Q75434854> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75434855> .
+  # oo 1737-01 Sir John Bernard, 4th Baronet, 1695~ -- 1766-12-15, https://www.wikidata.org/wiki/Q75434848, son of https://www.wikidata.org/wiki/Q75434842 and https://www.wikidata.org/wiki/Q59175476
 
 
 # St. John baronets of Woodford
 <https://www.wikidata.org/wiki/Q75407932>
-  # Sir Oliver St. John, 1st Baronet, d. 1661-01-03
-  # 1st Baronet St. John, of Woodford 1660
+  # Sir Oliver St. John, 1st Baronet, 1624~ - 1662-01-03
+  # 1st Baronet St. John, of Woodford 1660-06-28
   gen:father <https://www.wikidata.org/wiki/Q75407930> ;
   gen:mother <https://www.wikidata.org/wiki/Q75407934> .
-  # oo Barbara St. Andrew
+  # oo Barbara St. Andrew, daughter of John St. Andrew
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75407932> , <https://www.wikidata.org/wiki/Q76156085> ;
 	gen:startDate "1648~" .
@@ -176,11 +357,30 @@
   # Sir Andrew St. John, 2nd Baronet, 1658-10-16b - 1709-02-10
   gen:father <https://www.wikidata.org/wiki/Q75407932> ;
   gen:mother <https://www.wikidata.org/wiki/Q76156085> .
-  # oo Jane Blois, 1667~ - 1711
+  # oo Jane Blois, 1667~ - 1711-01-23, daughter of Sir William Blois and Jane Barnardiston
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75431513> , <https://www.wikidata.org/wiki/Q76103442> ;
 	gen:startDate "1681-03-10" .
 
+<https://www.wikidata.org/wiki/Q76156090>
+  # Sir St. Oliver St. John, 3rd Baronet, 1683~ - 1710~
+  gen:father <https://www.wikidata.org/wiki/Q75431513> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76103442> .
+<https://www.wikidata.org/wiki/Q76156092>
+  # Sir St. Andrew St. John, 4th Baronet, 1685~ - 1711
+  gen:father <https://www.wikidata.org/wiki/Q75431513> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76103442> .
+  # oo Anne James, d. 1739-01-10, daughter of Sir William James
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76156092> , <https://www.wikidata.org/wiki/Q76156095> .
+<https://www.wikidata.org/wiki/Q76156100>
+  # William St. John, 9th Baron Saint John of Bletso, 1686a - 1720-10-11
+  gen:father <https://www.wikidata.org/wiki/Q75431513> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76103442> .
+<https://www.wikidata.org/wiki/Q76156101>
+  # Rowland St. John, 10th Baron Saint John of Bletso, 1687a - 1722-07-04
+  gen:father <https://www.wikidata.org/wiki/Q75431513> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76103442> .
 <https://www.wikidata.org/wiki/Q6258745>
   # John St. John, 11th Baron Saint John of Bletso, 1688a - 1757-06-24
   # 8th Baronet St. John, of Woodford, Northamptonshire 1722-07-04
@@ -192,21 +392,40 @@
     gen:spouse <https://www.wikidata.org/wiki/Q6258745> , <https://www.wikidata.org/wiki/Q62027802> ;
 	gen:startDate "1725-03-06" .
 
+<https://www.wikidata.org/wiki/Q7154835>
+  # Paulet St. Andrew St. John, 8th Baron Saint John of Bletso, 1711 - 1714-05-10
+  # 5th Baronet St. John, of Woodford, Northamptonshire 1711
+  # 8th Baron Saint John of Bletso, co. Bedford 1711-10-05
+  gen:father <https://www.wikidata.org/wiki/Q76156092> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76156095> .
 <https://www.wikidata.org/wiki/Q16859528>
   # John St. John, 12th Baron Saint John of Bletso, 1725-11-15 - 1767-04-20
   gen:father <https://www.wikidata.org/wiki/Q6258745> ;
   gen:mother <https://www.wikidata.org/wiki/Q62027802> .
-  # oo Susanne Louise Simond, d. 1805-10-17, daughter of Peter Simond and Susanne Groteste de la Buffiere
+  # oo Susanne Louise Simond, 1725 - 1805-10-17, daughter of Peter Simond and Susanne Groteste de la Buffiere
   []
     gen:spouse <https://www.wikidata.org/wiki/Q16859528> , <https://www.wikidata.org/wiki/Q76157229> ;
 	gen:startDate "1755-12-13" .
+<#Mary_St._John>
+  # Hon. Mary St. John, 1728-11-21 - 1789-11?
+  gen:father <https://www.wikidata.org/wiki/Q6258745> ;
+  gen:mother <https://www.wikidata.org/wiki/Q62027802> .
+  # oo 1754-10-16 Thomas Erle-Drax, of Charborough, 1721~ - 1789-12, https://www.wikidata.org/wiki/Q26791895 or https://www.wikidata.org/wiki/Q89531394, son of Henry Drax (1693?~- 1755-05-24, https://www.wikidata.org/wiki/Q24260312, son of Thomas Drax né Shatterden (https://www.wikidata.org/wiki/Q76267964) and oo Elizabeth Ernle (daughter of Edward Ernle)) and oo 1720 Elizabeth Ernle (https://www.wikidata.org/wiki/Q75299446, daughter of https://www.wikidata.org/wiki/Q16239486 Sir Edward Ernle, 3rd Baronet and https://www.wikidata.org/wiki/Q75591818 Frances Erle)
+<https://www.wikidata.org/wiki/Q14945464>
+  # Very Rev. Hon. St. Andrew St. John, 1732-01-17 - 1795-03-23
+  # Dean of Worcester 1783
+  gen:father <https://www.wikidata.org/wiki/Q6258745> ;
+  gen:mother <https://www.wikidata.org/wiki/Q62027802> .
+  # oo Sarah Chase, 1734 - 1775-07-17, daughter of Thomas Chase
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q14945464> , <https://www.wikidata.org/wiki/Q76156113> .
 <https://www.wikidata.org/wiki/Q75281337>
   # Hon. Barbara St. John, 1737-09-19 - 1804-11-25
   gen:father <https://www.wikidata.org/wiki/Q6258745> ;
   gen:mother <https://www.wikidata.org/wiki/Q62027802> .
   # oo 1764-09-27 George William Coventry, 6th Earl of Coventry, 1722-04-26 - 1809-09-03, https://www.wikidata.org/wiki/Q5538164
 <https://www.wikidata.org/wiki/Q75586963>
-  # Hon. Anne St. John, 1739-01-31 - 1776-03
+  # Hon. Anne St. John, 1739-01-31 - 1776-03-07
   gen:father <https://www.wikidata.org/wiki/Q6258745> ;
   gen:mother <https://www.wikidata.org/wiki/Q62027802> .
   # oo Robert Cotton Trefusis, 1742b - 1778-08-04~, https://www.wikidata.org/wiki/Q75586959 (clinton.ttl)
@@ -215,12 +434,25 @@
   # Henry Beauchamp St. John, 13th Baron St. John of Bletso, 1758-08-02 - 1805-12-18
   gen:father <https://www.wikidata.org/wiki/Q16859528> ;
   gen:mother <https://www.wikidata.org/wiki/Q76157229> .
-  # oo Emma Maria Elizabeth Whitbread, d. 1825-07-10 (grey.ttl)
+  # oo Emma Maria Elizabeth Whitbread, 1760~ - 1825-07-10 (grey.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5728589> , <https://www.wikidata.org/wiki/Q76157234> ;
 	gen:startDate "1780-12-02" .
+<https://www.wikidata.org/wiki/Q7592420>
+  # St. Andrew St. John, 14th Baron Saint John of Bletso, 1759-08-22 - 1817-10-15
+  gen:father <https://www.wikidata.org/wiki/Q16859528> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76157229> .
+  # oo Louise Rouse-Boughton, 1785 - 1860-07-09, daughter of Sir Charles William Rouse-Boughton, 1st and 9th Baronet (1742a - 1821-02-26, https://www.wikidata.org/wiki/Q5082190, 1st Baronet Boughton-Rouse, of Rouse Lench, co. Worcester and Downton Hall, co. Salop 1791-07-28, 9th Baronet Boughton, of Lawford Parva, co. Warwick 1794-02-26, son of Shuckburgh Boughton (1703~ - 1763-05-10b, https://www.wikidata.org/wiki/Q75272020, son of https://www.wikidata.org/wiki/Q40746269 Sir William Boughton, 4th Baronet and https://www.wikidata.org/wiki/Q75266752 Catherine Shuckburgh) and oo 1734-04-19 Mary Greville (1713-12-20 - 1786-03-01, https://www.wikidata.org/wiki/Q75493227, daughter of https://www.wikidata.org/wiki/Q75315565 Hon. Algernon Greville and https://www.wikidata.org/wiki/Q75315566 Mary Somerset)) and oo 1782-06-03 Catharine Pearce (d. 1808-08-14, https://www.wikidata.org/wiki/Q75493235, daughter of William Pearce)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7592420> , <https://www.wikidata.org/wiki/Q96081072> ;
+	gen:startDate "1807-07-16" .
+<https://www.wikidata.org/wiki/Q76320169>
+  # Hon. Mathilda St. John, 1761-01-30 - 1820-07-14
+  gen:father <https://www.wikidata.org/wiki/Q16859528> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76157229> .
+  # oo 1788-01-12 Villiers William Villiers, Villiers William Lewis, Villiers William Villiers 1790, https://www.wikidata.org/wiki/Q75514367, son of Very Rev. John Lewis (1717 - 1783-06-28, https://www.wikidata.org/wiki/Q75514356, Dean of Ossory 1755) and oo Catharine Villiers (1723 - 1756-04-13, https://www.wikidata.org/wiki/Q75514360, daughter of Rev. George Villiers (1690-04-11 - 1748-03-30a/-05-10b, son of Edward Villiers (1661-03-28 - 1691~, son of https://www.wikidata.org/wiki/Q7343392 Robert Danvers and howard.ttl#Elizabeth_Danvers Elizabeth Danvers) and oo 1685-07-10 Joan Heming (b. 1663~, daughter of William Heming)) and oo 1724b Katherine Stephens (d. 1760~, daughter of Thomas Stephens))
 <https://www.wikidata.org/wiki/Q76157286>
-  # Elizabeth Barbara St. John, 1762-02-22 - 1833-06-17
+  # Hon. Elizabeth Barbara St. John, 1762-02-22 - 1833-06-17
   gen:father <https://www.wikidata.org/wiki/Q16859528> ;
   gen:mother <https://www.wikidata.org/wiki/Q76157229> .
   # oo 1796-03-31 Sir Henry Vaughan Halford, 1st Baronet, 1766-10-02 - 1844-03-09, https://www.wikidata.org/wiki/Q5722464
@@ -233,27 +465,141 @@
     gen:spouse <https://www.wikidata.org/wiki/Q76157255> , <https://www.wikidata.org/wiki/Q76157258> ;
 	gen:startDate "1795-05-10" .
 
+<https://www.wikidata.org/wiki/Q76157239>
+  # Hon. Augusta St. John, 1782-12-03 - 1813-01-30
+  gen:father <https://www.wikidata.org/wiki/Q5728589> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76157234> .
+  # oo 1803-12-20 Rt. Hon. Sir John Vaughan, 1768-02-11 - 1839-09-25, https://www.wikidata.org/wiki/Q6261875 (oo Louise Rouse-Boughton, 1785 - 1860-07-09, https://www.wikidata.org/wiki/Q96081072, daughter of https://www.wikidata.org/wiki/Q5082190 Sir Charles William Rouse-Boughton, 1st and 9th Baronet and https://www.wikidata.org/wiki/Q75493235 Catharine Pearce, on 1823-08-11), son of https://www.wikidata.org/wiki/Q76286691 James Vaughan and https://www.wikidata.org/wiki/Q76286692 Hester Smalley
 <https://www.wikidata.org/wiki/Q76157241>
   # Hon. Margaret Letitia Matilda St. John, 1785-10-31 - 1868-03-05
   gen:father <https://www.wikidata.org/wiki/Q5728589> ;
   gen:mother <https://www.wikidata.org/wiki/Q76157234> .
   # oo 1813-04-20 Sir Albert Pell, d. 1832-09-06, https://www.wikidata.org/wiki/Q76157243
+<https://www.wikidata.org/wiki/Q7592421>
+  # St. Andrew Beauchamp St. John, 15th Baron Saint John, 1811-11-08 - 1874-01-27
+  gen:father <https://www.wikidata.org/wiki/Q7592420> ;
+  gen:mother <https://www.wikidata.org/wiki/Q96081072> .
+  # oo Eleanor Hussey, 1818~ - 1899-11-28, daughter of Vice-Admiral Sir Richard Hussey Hussey and Emma Hobson
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7592421> , <https://www.wikidata.org/wiki/Q75278979> ;
+	gen:startDate "1838-03-12" .
+<https://www.wikidata.org/wiki/Q76065113>
+  # Hon. Louisa Barbara St. John, 1818-06-14 – 1880-10-27
+  gen:father <https://www.wikidata.org/wiki/Q7592420> ;
+  gen:mother <https://www.wikidata.org/wiki/Q96081072> .
+  # oo 1837-07-15 Norman Macleod, 25th of MacLeod, 1812-07-18 - 1895-02-04, https://www.wikidata.org/wiki/Q7052542 (gordon.ttl)
+
+<https://www.wikidata.org/wiki/Q7592424>
+  # St. Andrew St. John, 16th Baron Saint John of Bletso, 1840-10-05 - 1887-11-02
+  gen:father <https://www.wikidata.org/wiki/Q7592421> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75278979> .
+  # oo Ellen Georgiana Senior, d. 1890-12-26, daughter of Edward Senior
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7592424> , <https://www.wikidata.org/wiki/Q76157291> ;
+	gen:startDate "1868-04-25" .
+<https://www.wikidata.org/wiki/Q4877420>
+  # Beauchamp Moubray St. John, 17th Baron Saint John of Bletso, 1844-12-04 - 1912-05-10
+  gen:father <https://www.wikidata.org/wiki/Q7592421> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75278979> .
+  # oo Helen Charlotte Thornton, 1848-04-02 - 1909-03-23, daughter of Harry Thornton
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4877420> , <https://www.wikidata.org/wiki/Q76157412> ;
+	gen:startDate "1869-02-04" .
+  # oo Ethel Susan Lutley, d. 1945-01-03, daughter of John Hablington Lutley
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4877420> , <https://www.wikidata.org/wiki/Q76327626> ;
+	gen:startDate "1911-04-26" .
+
+<https://www.wikidata.org/wiki/Q5728591>
+  # Henry Beauchamp Oliver St. John, 18th Baron Saint John of Bletso, 1876-06-24 - 1920-10-17
+  gen:father <https://www.wikidata.org/wiki/Q4877420> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76157412> .
+<https://www.wikidata.org/wiki/Q6918863>
+  # Moubray St. Andrew Thornton St. John, 19th Baron Saint John of Bletso, 1877-11-05 - 1934-10-28
+  gen:father <https://www.wikidata.org/wiki/Q4877420> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76157412> .
+  # oo Evelyn Geraldine Russell, 1885-06-24 - 1918-12-07, daughter of Captain Andrew Hamilton Russell
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6918863> , <https://www.wikidata.org/wiki/Q76157414> ;
+	gen:startDate "1905-10-04" .
+  # oo Elizabeth May Griffith, 1885~ - 1978-10-25, daughter of Lloyd Walter Griffith
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6918863> , <https://www.wikidata.org/wiki/Q75334510> ;
+	gen:startDate "1923-09-26" .
+<https://www.wikidata.org/wiki/Q76008729>
+  # Hon. Edith Laura St. John, 1879-09-08 - 1941-08-02
+  gen:father <https://www.wikidata.org/wiki/Q4877420> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76157412> .
+  # oo 1902-12-04 George Lawson Johnston, 1st Baron Luke, 1873-09-09 - 1943-02-23, https://www.wikidata.org/wiki/Q5541587, 1st Baron Luke, of Pavenham, co. Bedford 1929-07-09, son of John Lawson Johnston and Elizabeth ???
+<https://www.wikidata.org/wiki/Q76157443>
+  # Hon. Rowland Tudor St. John, 1882-05-01 - 1948-11-17
+  gen:father <https://www.wikidata.org/wiki/Q4877420> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76157412> .
+  # oo Katherine Madge Lockwood, 1884 - 1954-11-24, daughter of Sir Frank Lockwood and Julia Rosetta Schwabe
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76157443> , <https://www.wikidata.org/wiki/Q76157447> ;
+	gen:startDate "1912-10-17" .
+<https://www.wikidata.org/wiki/Q76157499>
+  # Hon. Charles Paulet St. John, 1886-10-11 - 1945-06-21
+  gen:father <https://www.wikidata.org/wiki/Q4877420> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76157412> .
+  # oo Noreen Mary Hay Milliken-Napier, 1895-02-06 - 1977-08-28, daughter of Robert Francis Ladeveze Milliken-Napier (1856-12-03 - 1898-05-23, https://www.wikidata.org/wiki/Q76112590, son of Sir Robert John Milliken-Napier of Merchistoun, 9th Baronet (1818-11-07 - 1884-12-04, https://www.wikidata.org/wiki/Q76112561 (see hay.ttl), son of Sir William John Milliken Napier of Merchistoun, 8th Baronet (1788 - 1852-02-04, https://www.wikidata.org/wiki/Q23617376, 8th Baronet Napier, of Merchistoun (1808 de jure) 1817-03-17, son of Robert John Milliken Napier of Culcreuch (1765 - 1808, https://www.wikidata.org/wiki/Q76112554, son of William Napier of Culcreuch (https://www.wikidata.org/wiki/Q76112551, son of John Napier of Culcreuch (b. 1686, https://www.wikidata.org/wiki/Q76112549, son of Alexander Napier (d. 1702, https://www.wikidata.org/wiki/Q76112545, 4th Baronet Napier, of Merchistoun 1683-08-07, de jure, son of Robert Napier (1580 - 1655, https://www.wikidata.org/wiki/Q76112534, son of https://www.wikidata.org/wiki/Q159592 John Napier, 8th of Merchistoun and https://www.wikidata.org/wiki/Q76112529 Agnes Chisholm) and oo Anna Drummond (https://www.wikidata.org/wiki/Q76112540, daughter of Sir William Drummond of Riccartoun)) and oo Margaret Lennox of Woodhead (https://www.wikidata.org/wiki/Q76279954)) and oo Margaret Lennox (https://www.wikidata.org/wiki/Q76112550)) and oo Jean Milliken (https://www.wikidata.org/wiki/Q76112553, daughter of James Milliken of Milliken and Jean Macdowall)) and oo 1786 Anne Campbell (https://www.wikidata.org/wiki/Q76112557, daughter of Robert Campbell of Downie)) and oo 1815-11-11 Eliza Christian Stirling (d. 1860-03-03, https://www.wikidata.org/wiki/Q76112560, daughter of John Stirling, 6th of Kippendavie and Mary Graham)) and oo 1850-04-04 Anne Salisbury Meliora Ladaveze Adlercron (d. 1902-01-05, https://www.wikidata.org/wiki/Q76112587, daughter of John Ladaveze Adlercron and Dorothea Catherine Routh)) and oo 1887-07-25 Emily Norrie Moke (1868-01-09 - 1961-04-17, https://www.wikidata.org/wiki/Q76112592, daughter of George Louis Augustus Moke and Margaret Norrie)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76157499> , <https://www.wikidata.org/wiki/Q76112599> ;
+	gen:startDate "1914-04-18" .
+
+<https://www.wikidata.org/wiki/Q6258747>
+  # John Moubray Russell St. John, 20th Baron Saint John of Bletso, 1917-08-03 - 1976-04-13
+  gen:father <https://www.wikidata.org/wiki/Q6918863> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76157414> .
+<https://www.wikidata.org/wiki/Q4758624>
+  # Andrew Beauchamp St. John, 21st Baron Saint John of Bletso, 1918-08-23 - 1978-02-11
+  gen:father <https://www.wikidata.org/wiki/Q76157443> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76157447> .
+  # oo Katherine Berg, daughter of Alfred G. Berg
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4758624> , <https://www.wikidata.org/wiki/Q76157525> ;
+	gen:startDate "1955-12-10" .
+
+<https://www.wikidata.org/wiki/Q574015>
+  # Anthony Tudor St. John, 22nd Baron Saint John of Bletso, b. 1957-05-16
+  gen:father <https://www.wikidata.org/wiki/Q4758624> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76157525> .
+  # oo Dr. Helen Jane Westlake, daughter of Michael Westlake
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q574015> , <https://www.wikidata.org/wiki/Q76155945> ;
+	gen:startDate "1994-09-16" ;
+	gen:divorceDate "2012" .
+
+<https://www.wikidata.org/wiki/Q76155947>
+  # Hon. Oliver Beauchamp St. John, b. 1995-07-11
+  gen:father <https://www.wikidata.org/wiki/Q574015> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76155945> .
+<https://www.wikidata.org/wiki/Q76155949>
+  # Hon. Alexander Andrew St. John, b. 1996-08-29
+  gen:father <https://www.wikidata.org/wiki/Q574015> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76155945> .
+<https://www.wikidata.org/wiki/Q76155951>
+  # Hon. Athene Emma St. John, b. 1998-02-24
+  gen:father <https://www.wikidata.org/wiki/Q574015> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76155945> .
 
 
 # St. John of Lydiard Tregoze
 <https://www.wikidata.org/wiki/Q75387380>
-  # Oliver St. John, of Lydiard Tregoze, d. 1497-04-10b
+  # Oliver St. John, of Lydiard Tregoze, 1435~ - 1497-04-10b
   gen:father <https://www.wikidata.org/wiki/Q75387375> ;
   gen:mother <https://www.wikidata.org/wiki/Q2075948> .
   # oo Elizabeth Scrope, d. 1503-06-12
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q75387380> , <https://www.wikidata.org/wiki/Q75387382> .
+    gen:spouse <https://www.wikidata.org/wiki/Q75387380> , <https://www.wikidata.org/wiki/Q75387382> ;
+	gen:startDate "1470-10-25" .
 
 <https://www.wikidata.org/wiki/Q75431515>
   # Sir John St. John, of Lydiard Tregoze, 1473 - 1512-09-01
   gen:father <https://www.wikidata.org/wiki/Q75387380> ;
   gen:mother <https://www.wikidata.org/wiki/Q75387382> .
-  # oo Joan Iwardby
+  # oo Joan Iwardby, 1478~ - 1544a, daughter of Sir John Iwardby
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75431515> , <https://www.wikidata.org/wiki/Q75443643> .
 <https://www.wikidata.org/wiki/Q75443641>
@@ -266,27 +612,33 @@
   gen:father <https://www.wikidata.org/wiki/Q75387380> ;
   gen:mother <https://www.wikidata.org/wiki/Q75387382> .
   # oo 1496 Gerald FitzGerald, 8th Earl of Kildare, 1456~ - 1513-09-03~, https://www.wikidata.org/wiki/Q1509868
-  # oo Sir John Wallop, d. 1551-07-07
+  # oo Sir John Wallop, d. 1551-07-07, https://www.wikidata.org/wiki/Q75443639, son of Stephen Wallop and ??? Ashley
 
 <https://www.wikidata.org/wiki/Q75431516>
-  # John St. John, of Lydiard Tregoze and of Farley-Chamberlayne, d. 1576-04-05
+  # John St. John, of Lydiard Tregoze and of Farley-Chamberlayne, 1505~ - 1576-04-05
   gen:father <https://www.wikidata.org/wiki/Q75431515> ;
   gen:mother <https://www.wikidata.org/wiki/Q75443643> .
-  # oo Margaret Carew
+  # oo Margaret Carew, b. 1510~, daughter of Sir Richard Carew and Malyn Oxenbridge
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q75431516> , <https://www.wikidata.org/wiki/Q75443645> .
+    gen:spouse <https://www.wikidata.org/wiki/Q75431516> , <https://www.wikidata.org/wiki/Q75443645> ;
+	gen:startDate "1526b" .
+  # oo Elizabeth Whettle, 1504-11~ - 1543~, daughter of Sir Richard Whettle and Elizabeth Muston
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75431516> , <https://www.wikidata.org/wiki/Q75443650> ;
+	gen:startDate "1535-11b" .
 
 <https://www.wikidata.org/wiki/Q7026242>
   # Nicholas St. John, of Lydiard Tregoze, 1526b – 1589-11-08
   gen:father <https://www.wikidata.org/wiki/Q75431516> ;
   gen:mother <https://www.wikidata.org/wiki/Q75443645> .
-  # oo Elizabeth Blount, daughter of Sir Richard Blount
+  # oo Elizabeth Blount, 1535 - 1587-08-11, daughter of Sir Richard Blount and Elizabeth Lister
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q7026242> , <https://www.wikidata.org/wiki/Q75275194> .
+    gen:spouse <https://www.wikidata.org/wiki/Q7026242> , <https://www.wikidata.org/wiki/Q75275194> ;
+	gen:startDate "1548" .
 <https://www.wikidata.org/wiki/Q75443657> # -> St. John of Farley-Chamberlayne
   # William St. John, of Farley-Chamberlayne, 1538-08-01 - 1609-04-18
   gen:father <https://www.wikidata.org/wiki/Q75431516> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75443650> . # Elizabeth Whettle
+  gen:mother <https://www.wikidata.org/wiki/Q75443650> .
 
 <https://www.wikidata.org/wiki/Q75275164>
   gen:name "Sir John St John, of Lydiard Tregoze"@en ;
@@ -294,23 +646,20 @@
   gen:deathDate "1594-09-20" ;
   gen:father <https://www.wikidata.org/wiki/Q7026242> ;
   gen:mother <https://www.wikidata.org/wiki/Q75275194> .
-  # oo Lucy Hungerford, 1560 - 1598 (courtenay.ttl)
+  # oo Lucy Hungerford, 1560 - 1598-06-04 (courtenay.ttl)
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q75275164> , <https://www.wikidata.org/wiki/Q75275166> .
+    gen:spouse <https://www.wikidata.org/wiki/Q75275164> , <https://www.wikidata.org/wiki/Q75275166> ;
+	gen:startDate "1582-10-24" .
 <https://www.wikidata.org/wiki/Q7087847>
   # Sir Oliver St John, 1st Viscount Grandison of Limerick, 1559 – 1630-12-30
   # 1st Viscount Grandison of Limerick, co. Leitrim 1621-01-03
   # 1st Baron Tregoz of Highworth, co. Wiltshire 1626-05-21
   gen:father <https://www.wikidata.org/wiki/Q7026242> ;
   gen:mother <https://www.wikidata.org/wiki/Q75275194> .
-  # oo Joan Roydon, Lady Holcroft [or Rycroft], d. 1631-02
+  # oo Joan Roydon, d. 1631-02 (oo 1 Sir William Holcroft, https://www.wikidata.org/wiki/Q75443668), daughter of Henry Roydon
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7087847> , <https://www.wikidata.org/wiki/Q75443666> .
 
-<https://www.wikidata.org/wiki/Q75385404>
-  gen:name "Barbara St. John"@en ;
-  gen:deathDate "1672-09~" ;
-  gen:father <https://www.wikidata.org/wiki/Q75275164> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75275166> .
-  # oo 1612~ Sir Edward Villiers, 1585~ - 1626-09-07, https://www.wikidata.org/wiki/Q5345730
 <https://www.wikidata.org/wiki/Q7528081>
   # Sir John St. John, 1st Baronet, 1585-11-05 - 1648
   # 1st Baronet St. John, of Lidiard Tregoze, co. Wilts 1611-05-22
@@ -318,8 +667,19 @@
   gen:mother <https://www.wikidata.org/wiki/Q75275166> .
   # oo Anne Leighton, d. 1628-07 (devereux.ttl)
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q7528081> , <https://www.wikidata.org/wiki/Q75275169> .
-  # oo Margaret ???, Lady Gresham, d. 1637-11-24b
+    gen:spouse <https://www.wikidata.org/wiki/Q7528081> , <https://www.wikidata.org/wiki/Q75275169> ;
+	gen:startDate "1604-07-09" .
+  # oo Margaret Whitmore, 1576 - 1637-11-24b (oo Sir Richard Grubham, https://www.wikidata.org/wiki/Q76212812), daughter of William Whitmore and Anne Bond
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7528081> , <https://www.wikidata.org/wiki/Q75443553> ;
+	gen:startDate "1630-10-23" .
+<https://www.wikidata.org/wiki/Q75385404>
+  gen:name "Barbara St. John"@en ;
+  gen:birthDate "1592" ;
+  gen:deathDate "1672-09-16" ;
+  gen:father <https://www.wikidata.org/wiki/Q75275164> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75275166> .
+  # oo 1612~ Sir Edward Villiers, 1585~ - 1626-09-07, https://www.wikidata.org/wiki/Q5345730
 
 <https://www.wikidata.org/wiki/Q75266675>
   # Oliver St. John, 1613~ - 1641-11
@@ -327,22 +687,39 @@
   gen:mother <https://www.wikidata.org/wiki/Q75275169> .
   # oo Hon. Catharine de Vere, 1613~ - 1648-03-27a
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q75266675> , <https://www.wikidata.org/wiki/Q75252528> .
+    gen:spouse <https://www.wikidata.org/wiki/Q75266675> , <https://www.wikidata.org/wiki/Q75252528> ;
+	gen:startDate "1633-11-30" .
 <https://www.wikidata.org/wiki/Q17355638>
-  # Anne St. John, 1614-11-05 - 1696-03~
+  # Anne St. John, 1614-11-05 - 1696-03-18
   gen:father <https://www.wikidata.org/wiki/Q7528081> ;
   gen:mother <https://www.wikidata.org/wiki/Q75275169> .
-  # oo Sir Francis Henry Lee, of Quarendon, and later of Ditchley, 2nd Baronet, 1616-03-03b - 1639-07-23
+  # oo 1632-10-02 Francis Henry Lee, 2nd Baronet, 1616-03-03b - 1639-07-13, https://www.wikidata.org/wiki/Q75782793 (berkelay.ttl)
   # oo 1644 Henry Wilmot, 1st Earl of Rochester, 1613-10-26 - 1658-02-19, https://www.wikidata.org/wiki/Q15502383 (wellesley.ttl)
+<#Lucy_St._John>
+  # Lucy St. John, 1621 - 1658
+  gen:father <https://www.wikidata.org/wiki/Q7528081> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75275169> .
+  # oo 1642 Richard Grobham Howe, 2nd Baronet, 1621-08-28 - 1793-05-03, https://www.wikidata.org/wiki/Q7528590
 <https://www.wikidata.org/wiki/Q7529409>
   # Sir Walter St. John, 3rd Baronet, 1622-05 – 1708-07-03
   gen:father <https://www.wikidata.org/wiki/Q7528081> ;
   gen:mother <https://www.wikidata.org/wiki/Q75275169> .
-  # oo Joanna St John, 1631 - 1705
+  # oo Joanna St John, 1631 - 1705-02
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7529409> , <https://www.wikidata.org/wiki/Q75275174> ;
 	gen:startDate "1651b" .
+<https://www.wikidata.org/wiki/Q76009007>
+  # Henry St. John, 1638 - 1679
+  gen:father <https://www.wikidata.org/wiki/Q7528081> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75275169> .
+  # oo Catherine St. John, daughter of https://www.wikidata.org/wiki/Q3374708 Sir Oliver St. John and https://www.wikidata.org/wiki/Q75443626 Johanna Altham
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76009007> , <https://www.wikidata.org/wiki/Q76156023> .
 
+<https://www.wikidata.org/wiki/Q75443624>
+  # Sir John St. John, 2nd Baronet, 1637~ - 1657
+  gen:father <https://www.wikidata.org/wiki/Q75266675> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75252528> .
 <https://www.wikidata.org/wiki/Q75826599>
   # Anne St. John, 1650 - 1742-12-01
   gen:father <https://www.wikidata.org/wiki/Q7529409> ;
@@ -354,27 +731,54 @@
   # 1st Viscount St John, 1st Baron Saint John of Battersea 1716
   gen:father <https://www.wikidata.org/wiki/Q7529409> ;
   gen:mother <https://www.wikidata.org/wiki/Q75275174> .
-  # oo Lady Mary Rich, d. 1678-09-30 "1673-12-11" .
-  # oo Angelica Magdalena Pelissary, d. 1736-08-05
+  # oo Lady Mary Rich, 1652~ - 1678-09-30, daughter of https://www.wikidata.org/wiki/Q377318 (cavendish.ttl) Robert Rich, 3rd Earl of Warwick and https://www.wikidata.org/wiki/Q47236638 Anne Cheeke
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16847367> , <https://www.wikidata.org/wiki/Q47238190> ;
+	gen:startDate "1673-12-11" .
+  # oo Angelica Magdalena Pelissary, 1664~ - 1736-08-05, daughter of George Pelissary and Magdalen Bibaud
   []
     gen:spouse <https://www.wikidata.org/wiki/Q16847367> , <https://www.wikidata.org/wiki/Q75275178> ;
 	gen:startDate "1688-01-01" .
 
+<https://www.wikidata.org/wiki/Q332470>
+  # Henry St. John, 1st Viscount Bolingbroke, 1678-10-10 - 1751-12-12
+  # 1st Baron St. John of Lydiard Tregoze, co. Wilts, 1st Viscount Bolingbroke, co. Lincoln 1712-07-07 - 1715-09-10 (attainted)
+  # 5th Baronet St. John, of Lidiard Tregoze, co. Wilts 1742-04-08
+  gen:father <https://www.wikidata.org/wiki/Q16847367> ;
+  gen:mother <https://www.wikidata.org/wiki/Q47238190> .
+  # oo Frances Winchcombe, 1680-12-15 - 1718-10-25, daughter of https://www.wikidata.org/wiki/Q24238936 Sir Henry Winchcombe, 2nd Baronet and https://www.wikidata.org/wiki/Q75431519 Elizabeth Hungerford
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q332470> , <https://www.wikidata.org/wiki/Q17032734> ;
+	gen:startDate "1701-05-22" .
+  # oo Marie Claire des Champs, 1675-12-09 - 1750-03-18, or https://www.wikidata.org/wiki/Q96079037, daughter of Armand des Champs, Seigneur de Marcilly and Elisabeth Indrot
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q332470> , <https://www.wikidata.org/wiki/Q75431521> ;
+	gen:startDate "1720-05" .
 <https://www.wikidata.org/wiki/Q36692149>
   # John St John, 2nd Viscount St John, 1702-05-03 - 1748-11-26/1749-02-27
+  # 2nd Viscount St. John, of Battersea, co. Surrey, 2nd Baron St. John of Battersea, co. Surrey 1742-04-08
   gen:father <https://www.wikidata.org/wiki/Q16847367> ;
   gen:mother <https://www.wikidata.org/wiki/Q75275178> .
-  # oo Anne Furnese, d. 1747-07-14, daughter of Sir Robert Furnese, 2nd Baronet
+  # oo Anne Furnese, d. 1747-07-14, daughter of https://www.wikidata.org/wiki/Q7528773 Sir Robert Furnese, 2nd Baronet and https://www.wikidata.org/wiki/Q75443684 Anne Balam
   []
     gen:spouse <https://www.wikidata.org/wiki/Q36692149> , <https://www.wikidata.org/wiki/Q75273413> ;
 	gen:startDate "1729-04-17" .
-  # oo Hester Clarke, 1723-02-25 - 1752-03-08 "1748-06-19" .
+  # oo Hester Clarke, 1723-02-25 - 1752-03-08, daughter of James Clarke
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q36692149> , <https://www.wikidata.org/wiki/Q75273416> ;
+	gen:startDate "1748-06-19" .
+<https://www.wikidata.org/wiki/Q75333097>
+  # Hon. Henrietta St. John, 1699-07-15 - 1756-03-26
+  gen:father <https://www.wikidata.org/wiki/Q16847367> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75275178> .
+  # oo 1727-06-10 Robert Knight, 1st Earl of Catherlough, 1702-12-17 - 1772-03-30, https://www.wikidata.org/wiki/Q7346414, 1st Baron Luxborough of Shannon 1745-08-08, 1st Viscount Barrells, co. Catherlough, 1st Earl of Catherlough 1763-05-14, son of Robert Knight
 
 <https://www.wikidata.org/wiki/Q5498767>
   owl:sameAs <https://www.wikidata.org/wiki/Q75385913> ;
   # Frederick St John, 2nd Viscount Bolingbroke, 1732-12-21 - 1787-05-05
-  # 3rd Viscount St.John 1749-02-27
-  # 2nd Viscount Bolingbroke 1751-12-12
+  # 3rd Baron St. John of Battersea, co. Surrey 1748-06-19
+  # 3rd Viscount St. John, of Battersea, co. Surrey 1748-11-26/1749-02-27
+  # 2nd Viscount Bolingbroke, co. Lincoln, 6th Baronet St. John, of Lidiard Tregoze, co. Wilts, 2nd Baron St. John of Lydiard Tregoze, co. Wilts 1751-12-12
   gen:father <https://www.wikidata.org/wiki/Q36692149> ;
   gen:mother <https://www.wikidata.org/wiki/Q75273413> .
   # oo Lady Diana Spencer, 1734-03-24 - 1808-08-01
@@ -392,8 +796,11 @@
   # George Richard St John, 3rd Viscount Bolingbroke, 1761-03-05 - 1824-12-11
   gen:father <https://www.wikidata.org/wiki/Q5498767> ;
   gen:mother <https://www.wikidata.org/wiki/Q3706764> .
-  # oo Charlotte Collins, d. 1803-01-11 "1783-02-26" .
-  # oo Isabella Charlotte Antoinette Sophia Freiin von Hompesch, d. 1848-07
+  # oo Charlotte Collins, 1759~ - 1803-01-11, daughter of Rev. Thomas Collins
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5544760> , <https://www.wikidata.org/wiki/Q75281227> ;
+	gen:startDate "1783-02-26" .
+  # oo Isabella Charlotte Antoinette Sophia Freiin von Hompesch zu Bolheim, 1776~ - 1848-07, daughter of Frank Carl Freiherr von Hompesch zu Bolheim and Antonia Freiin von Hacke
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5544760> , <https://www.wikidata.org/wiki/Q75340486> ;
 	gen:startDate "1804" .
@@ -405,26 +812,68 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q16230500> , <https://www.wikidata.org/wiki/Q75254969> ;
 	gen:startDate "1788-12-08" .
-  # oo Hon. Arabella Craven, d. 1819-06-09 "1793-04-06" .
-  # oo Caroline Elizabeth Parsons, d. 1869-05-27 "1821-11-14" .
-
-<https://www.wikidata.org/wiki/Q75340489>
-  # Hon. Ferdinand St. John, 1804-10-16 - 1865-10-10
-  gen:father <https://www.wikidata.org/wiki/Q5544760> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75340486> .
-  # oo Selina Charlotte Keatinge, d. 1897-03-23, daughter of Maurice St. Leger Keatinge and Lady Martha Brabazon
+  # oo Hon. Arabella Craven, 1774 - 1819-06-09, daughter of https://www.wikidata.org/wiki/Q2152349 William Craven, 6th Baron Craven of Hampsted Marshall and https://www.wikidata.org/wiki/Q449738 Lady Elizabeth Berkeley
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q75340489> , <https://www.wikidata.org/wiki/Q75340491> ;
-	gen:startDate "1826-02-08" .
+    gen:spouse <https://www.wikidata.org/wiki/Q16230500> , <https://www.wikidata.org/wiki/Q75262874> ;
+	gen:startDate "1793-04-06" .
+  # oo Caroline Elizabeth Parsons, d. 1869-05-27, daughter of J. Parsons
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16230500> , <https://www.wikidata.org/wiki/Q75372738> ;
+	gen:startDate "1821-11-14" .
+
+<https://www.wikidata.org/wiki/Q17183588>
+  # Henry St. John, 4th Viscount Bolingbroke, 1786-03-06 - 1851-10-01
+  gen:father <https://www.wikidata.org/wiki/Q5544760> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75281227> .
+  # oo Maria St. John-Mildmay, 1790-04-02 - 1836-12-21
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q17183588> , <https://www.wikidata.org/wiki/Q75281225> ;
+	gen:startDate "1812-06-03" .
 <https://www.wikidata.org/wiki/Q75721558>
-  # Hon. Henry Joseph St. John, d. 1857-01-02
+  # Hon. Henry Joseph St. John, 1799-01-15 - 1857-01-02
   gen:father <https://www.wikidata.org/wiki/Q5544760> ;
   gen:mother <https://www.wikidata.org/wiki/Q75340486> .
   # oo Lady Isabella Frances FitzRoy, 1792-05-06 - 1875-08-27
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75721558> , <https://www.wikidata.org/wiki/Q75249781> ;
 	gen:startDate "1829-08-29" .
+<https://www.wikidata.org/wiki/Q75340489>
+  # Hon. Ferdinand St. John, 1804-10-16 - 1865-10-10
+  gen:father <https://www.wikidata.org/wiki/Q5544760> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75340486> .
+  # oo Selina Charlotte Keatinge, d. 1897-03-23, daughter of Maurice St. Leger Keatinge (https://www.wikidata.org/wiki/Q75340492) and oo Lady Martha Brabazon (d. 1820, https://www.wikidata.org/wiki/Q75443784, daughter of https://www.wikidata.org/wiki/Q25344533 Anthony Brabazon, 8th Earl of Meath and https://www.wikidata.org/wiki/Q75273398 Grace Leigh)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75340489> , <https://www.wikidata.org/wiki/Q75340491> ;
+	gen:startDate "1826-02-08" .
+<https://www.wikidata.org/wiki/Q75354251>
+  # George Frederick Berkeley St. John, 1797-10-02 - 1866-07-24
+  gen:father <https://www.wikidata.org/wiki/Q16230500> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75262874> .
+  # oo Henrietta Louisa Maria Jephson, d. 1887-02, daughter of Rev. John Jephson
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75354251> , <https://www.wikidata.org/wiki/Q75354252> ;
+	gen:startDate "1836-01-18" .
 
+<https://www.wikidata.org/wiki/Q17309207>
+  # Henry St. John, 5th Viscount Bolingbroke, 1820-03-30 - 1899-11-07
+  gen:father <https://www.wikidata.org/wiki/Q17183588> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75281225> .
+  # oo Ellen Medex, 1836~ - 1885-05-07, daughter of Charles Medex and Miriam Graham
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q17309207> , <https://www.wikidata.org/wiki/Q75431528> ;
+	gen:startDate "1869" .
+  # oo Mary Emily Elizabeth Howard, d. 1940-02-22, daughter of Robert Howard
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q17309207> , <https://www.wikidata.org/wiki/Q75357460> ;
+	gen:startDate "1893-01-05" .
+<https://www.wikidata.org/wiki/Q75340484>
+  # Rev. Canon Maurice William Ferdinand St. John, 1827-11-14 - 1914-02-18
+  gen:father <https://www.wikidata.org/wiki/Q75340489> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75340491> .
+  # oo Charlotte Lucy Hamilton Dalyell, d. 1902-04-28, daughter of John Dalyell
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75340484> , <https://www.wikidata.org/wiki/Q75340493> ;
+	gen:startDate "1853-06-30" .
 <https://www.wikidata.org/wiki/Q1452986>
   # Sir Frederic Robert St. John, 1831-03-02 - 1923-02-27
   gen:father <https://www.wikidata.org/wiki/Q75340489> ;
@@ -433,7 +882,39 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q1452986> , <https://www.wikidata.org/wiki/Q75444021> ;
 	gen:startDate "1882-04-18" .
+<https://www.wikidata.org/wiki/Q75354266>
+  # Aubrey Beauclerk Lennox St. John, 1846-10-20 - 1917
+  gen:father <https://www.wikidata.org/wiki/Q75354251> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75354252> .
+  # oo Clara Constance Wilson, d. 1896, daughter of Dr. James Wilson
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75354266> , <https://www.wikidata.org/wiki/Q75354267> ;
+	gen:startDate "1876-09-12" .
+<https://www.wikidata.org/wiki/Q75354273>
+  # Henry Augustus Bolingbroke St. John, 1847-12-20 - 1921-03-09
+  gen:father <https://www.wikidata.org/wiki/Q75354251> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75354252> .
+  # oo Anna Henderson, d. 1933-04-22, daughter of Major ??? Henderson
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75354273> , <https://www.wikidata.org/wiki/Q75354274> .
 
+<https://www.wikidata.org/wiki/Q17309208>
+  # Vernon Henry St. John, 6th Viscount Bolingbroke, 1896-03-15 - 1974-05-01
+  gen:father <https://www.wikidata.org/wiki/Q17309207> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75357460> .
+  # oo Valezina Frohawk, daughter of Frederick William Frohawk (1861-07-16 – 1946-12-10, https://www.wikidata.org/wiki/Q485761) and oo 1909 Mabel Jane Hart Bowman
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q17309208> , <https://www.wikidata.org/wiki/Q75357464> ;
+	gen:startDate "1950-06-15" ;
+	gen:divorceDate "1952" .
+<https://www.wikidata.org/wiki/Q63157390>
+  # Henry Percy St. John, 1854-03-23 - 1921-09-09
+  gen:father <https://www.wikidata.org/wiki/Q75340484> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75340493> .
+  # oo Maud Louisa Glyn, d. 1938-10-28, daughter of Hon. Pascoe Charles Glyn (1833-04-12 - 1904-11-03, https://www.wikidata.org/wiki/Q7141836, son of https://www.wikidata.org/wiki/Q5539756 George Carr Glyn, 1st Baron Wolverton and https://www.wikidata.org/wiki/Q75269830 Marianne Grenfell) and oo 1861-02-19 Carolina Henrietta Hale (d. 1912-08-22, https://www.wikidata.org/wiki/Q75276231, daughter of Captain William Amhurst Hale)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q63157390> , <https://www.wikidata.org/wiki/Q75308523> ;
+	gen:startDate "1887-10-12" .
 <https://www.wikidata.org/wiki/Q75444023>
   # Frederick Oliver St. John, 1886-10-13 - 1977-02-10
   gen:father <https://www.wikidata.org/wiki/Q1452986> ;
@@ -447,7 +928,47 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75444023> , <https://www.wikidata.org/wiki/Q75444028> ;
 	gen:startDate "1931-11-11" .
+<https://www.wikidata.org/wiki/Q75354271>
+  # James Frederick St. John, 1881-08-20 - 1956-05
+  gen:father <https://www.wikidata.org/wiki/Q75354266> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75354267> .
+  # oo Henrietta St. John, 1883 - 1957-07-26
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75354271> , <https://www.wikidata.org/wiki/Q75354277> .
+<https://www.wikidata.org/wiki/Q75354277>
+  # Henrietta St. John, 1883 - 1957-07-26
+  gen:father <https://www.wikidata.org/wiki/Q75354273> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75354274> .
+  # oo James Frederick St. John, 1881-08-20 - 1956-05, https://www.wikidata.org/wiki/Q75354271
 
+<https://www.wikidata.org/wiki/Q75351172>
+  # Geoffrey Robert St. John, 1889-01-04 - 1972-10-04
+  gen:father <https://www.wikidata.org/wiki/Q63157390> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75308523> .
+  # oo Gwendolen Isabel Okeden, daughter of Herbert George Okeden
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75351172> , <https://www.wikidata.org/wiki/Q75351174> ;
+	gen:startDate "1914-12-10" ;
+	gen:divorceDate "1925" .
+  # oo Katharine Mary Musgrave, d. 1958-04-22, daughter of A. S. J. Musgrave
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75351172> , <https://www.wikidata.org/wiki/Q75351178> ;
+	gen:startDate "1925-12-05" ;
+	gen:divorceDate "1940" .
+  # oo Mary Violet Handley, 1926b - 1951-08-29, daughter of John Mills
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75351172> , <https://www.wikidata.org/wiki/Q75351186> ;
+	gen:startDate "1941-03-04" .
+  # oo Brynhildr Archdall Viccars, daughter of Harold Archdall Viccars
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75351172> , <https://www.wikidata.org/wiki/Q75351187> ;
+	gen:startDate "1957" .
+<https://www.wikidata.org/wiki/Q75340482>
+  # Ursula Mary St. John, 1891-10-11 - 1971-02-18
+  gen:father <https://www.wikidata.org/wiki/Q63157390> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75308523> .
+  # oo 1912-07-10 Cyril Francis Hawley, 1878-06-24 - 1914-11-02, https://www.wikidata.org/wiki/Q75340481, son of https://www.wikidata.org/wiki/Q46103799 Sir Henry Michael Hawley, 5th Baronet and https://www.wikidata.org/wiki/Q75279294 Frances Charlotte Wingfield-Stratford
+  # -> Sir David Henry Hawley, 7th Baronet, 1913-05-13 - 1988-03-19, https://www.wikidata.org/wiki/Q75340475
 <https://www.wikidata.org/wiki/Q55767373>
   # Oliver Peter St. John, 9th Earl of Orkney, b. 1938-02-27
   # 9th Baron Dechmont, 9th Viscount Kirkwall, 9th Earl of Orkney 1998-02-05
@@ -463,6 +984,20 @@
     gen:spouse <https://www.wikidata.org/wiki/Q55767373> , <https://www.wikidata.org/wiki/Q76293976> ;
 	gen:startDate "1985" .
 
+<https://www.wikidata.org/wiki/Q26129060>
+  # Kenneth Oliver Musgrave St. John, 7th Viscount Bolingbroke, 1927-03-22 - 2010-07-05
+  gen:father <https://www.wikidata.org/wiki/Q75351172> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75351178> .
+  # oo Patricia Mary McKenna, daughter of B. J. McKenna
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q26129060> , <https://www.wikidata.org/wiki/Q75351182> ;
+	gen:startDate "1953" ;
+	gen:divorceDate "1972" .
+  # oo Jainey Anne McRae, daughter of Alexander Duncan McRae
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q26129060> , <https://www.wikidata.org/wiki/Q75351193> ;
+	gen:startDate "1972-12-25" ;
+	gen:divorceDate "1987" .
 <https://www.wikidata.org/wiki/Q76293971>
   # Lady Juliet St. John, b. 1964-09-24
   gen:father <https://www.wikidata.org/wiki/Q55767373> ;
@@ -480,13 +1015,27 @@
   gen:father <https://www.wikidata.org/wiki/Q55767373> ;
   gen:mother <https://www.wikidata.org/wiki/Q76123151> .
 
+<https://www.wikidata.org/wiki/Q75351184>
+  # Henry FitzRoy St. John, 8th Viscount Bolingbroke, 1957-05-18 - 2011-05
+  gen:father <https://www.wikidata.org/wiki/Q26129060> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75351182> .
+<https://www.wikidata.org/wiki/Q46455241>
+  # Nicholas Alexander Mowbray St. John, 9th Viscount Bolingbroke, b. 1974-06-20
+  gen:father <https://www.wikidata.org/wiki/Q26129060> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75351193> .
+  # oo Helen Macdougall, b. 1983-09-02, daughter of Dr. Colin Neil Macdougall and Mary Elizabeth Parker
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q46455241> , <https://www.wikidata.org/wiki/Q76289119> ;
+	gen:startDate "2012-06-22" ;
+	gen:divorceDate "2014" .
+
 
 # St. John of Farley-Chamberlayne
 <https://www.wikidata.org/wiki/Q75443657>
   # William St. John, of Farley-Chamberlayne, 1538-08-01 - 1609-04-18
   gen:father <https://www.wikidata.org/wiki/Q75431516> ;
   gen:mother <https://www.wikidata.org/wiki/Q75443650> .
-  # oo Barbara Gore, d. 1614-01-03b
+  # oo Barbara Gore, d. 1614-01-03b, daughter of Thomas Gore
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75443657> , <https://www.wikidata.org/wiki/Q76157646> .
 
@@ -494,7 +1043,7 @@
   # Henry St. Johny, of Farley-Chamberlayne, 1586 - 1621-04
   gen:father <https://www.wikidata.org/wiki/Q75443657> ;
   gen:mother <https://www.wikidata.org/wiki/Q76157646> .
-  # oo Ursula Stukeley
+  # oo Ursula Stukeley, daughter of Hugh Stukeley
   []
     gen:spouse <https://www.wikidata.org/wiki/Q76157647> , <https://www.wikidata.org/wiki/Q76157650> .
 
@@ -502,38 +1051,74 @@
   # Oliver St. John, of Farley-Chamberlayne, 1680-02-27 - 1665-07-31
   gen:father <https://www.wikidata.org/wiki/Q76157647> ;
   gen:mother <https://www.wikidata.org/wiki/Q76157650> .
-  # oo Constance Dawley, d. 1666-09-14
+  # oo Constance Dawley, d. 1666-09-14, daughter of Walter Dawley
   []
     gen:spouse <https://www.wikidata.org/wiki/Q76157654> , <https://www.wikidata.org/wiki/Q76157658> .
 
+<https://www.wikidata.org/wiki/Q76157659>
+  # Oliver St. John, of Farley-Chamberlayne, 1642~ - 1689-08-26
+  gen:father <https://www.wikidata.org/wiki/Q76157654> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76157658> .
+  # oo Margery Rivett, d. 1681-06-27, daughter of Francis Rivet
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76157659> , <https://www.wikidata.org/wiki/Q76157660> ;
+	gen:startDate "1663~" .
 <https://www.wikidata.org/wiki/Q76157662>
-  # Christian St. John, b. 1643-10-16
+  # Christian St. John, 1643-10-16 - 1680-02-12
   gen:father <https://www.wikidata.org/wiki/Q76157654> ;
   gen:mother <https://www.wikidata.org/wiki/Q76157658> .
   # oo 1666-10-04 Ellis Mews, d. 1680-02-12, https://www.wikidata.org/wiki/Q76157664
 
+<https://www.wikidata.org/wiki/Q76327945>
+  # Frances St. John, d. 1700-03-15
+  gen:father <https://www.wikidata.org/wiki/Q76157659> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76157660> .
+  # oo 1699-12-06 Ellis St. John, 1670 - 1729-01-19, https://www.wikidata.org/wiki/Q76157665, son of https://www.wikidata.org/wiki/Q76157664 Ellis Mews and https://www.wikidata.org/wiki/Q76157662 Christian St. John
 
 
-<https://www.wikidata.org/wiki/Q3374708>
-  owl:sameAs <https://www.wikidata.org/wiki/Q75434836> .
-  # Sir Oliver St. John, of Longthorpe, 1598~ - 1673-12-31
-  # oo Johanna Altham
+
+
+# ====
+#<https://www.wikidata.org/wiki/Q75754916>
+  # Luke de Poynings, Baron St. John, 1323~ - 1385~
+  # son of Sir Thomas de Poynings
+  # oo Isabella St. John, 4th Baroness St John, 1333~ - 1393
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q3374708> , <https://www.wikidata.org/wiki/Q75443626> .
+    gen:spouse <https://www.wikidata.org/wiki/Q75754916> , <https://www.wikidata.org/wiki/Q75905780> ;
+	gen:startDate "1349-02-19b" .
 
-<https://www.wikidata.org/wiki/Q75275174>
-  # Johanna St John, 1631 - 1705
-  gen:father <https://www.wikidata.org/wiki/Q3374708> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75443626> .
-  # oo 1651b Sir Walter St. John, 3rd Baronet, 1622-05 – 1708-07-03, https://www.wikidata.org/wiki/Q7529409
+<https://www.wikidata.org/wiki/Q75387315>
+  # Thomas Poynings, 5th Lord St. John of Basing, 1355~ - 1429-03-07
+  gen:father <https://www.wikidata.org/wiki/Q75754916> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75905780> .
+  # oo Philippa de Mortimer, 1375-11-21 - 1401-09-24
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75387315> , <mortimer.ttl#Philippa_de_Mortimer> ;
+	gen:startDate "1398-04a/1399-11-24b" .
 
+<#Sir_Hugh_de_Poynings>
+  # Sir Hugh de Poynings , 1381~ - 1426-12-26
+  gen:father <https://www.wikidata.org/wiki/Q75387315> ;
+  gen:mother <mortimer.ttl#Philippa_de_Mortimer> .
+  # oo Eleanor Welles, 1389~ - 1458-11-07, daughter of John de Welles, 5th Baron Welles (1352-04-20 - 1421-08-26, https://www.wikidata.org/wiki/Q6265670) and oo 1386b Eleanor de Mowbray (1364-03-25 - 1417-08-13b, https://www.wikidata.org/wiki/Q5354429)
+  []
+    gen:spouse <#Sir_Hugh_de_Poynings> , <https://www.wikidata.org/wiki/Q75445606> .
+
+<https://www.wikidata.org/wiki/Q92567909>
+  # Constance de Poynings, 1409~ - 1442-11-18
+  gen:father <#Sir_Hugh_de_Poynings> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75445606> .
+  # oo 1428-01-31~ Sir John Paulet, 1400~ - 1437-01-11, paulet.ttl#Sir_John_Paulet
+  # -> John Paulet, Esq., 1428~ - 1492-10-05, https://www.wikidata.org/wiki/Q92567914
+  #   -> Sir John Paulet, 1460~ - 1525-01-05, https://www.wikidata.org/wiki/Q18756876
+  #     -> William Paulet, 1st Marquess of Winchester, 1st Baron St. John, 1483~ - 1572, https://www.wikidata.org/wiki/Q8016685
 
 # ----
 <https://www.wikidata.org/wiki/Q6257143>
   # John Scrope, 5th Lord Scrope of Bolton, 1437-07-22 - 1498-08-17
   gen:father <https://www.wikidata.org/wiki/Q27493876> ; # Henry Scrope, 4th Baron Scrope of Bolton
   gen:mother <https://www.wikidata.org/wiki/Q75507767> . # Elizabeth Scrope
-  # oo Elizabeth St. John, d. 1491-02b
+  # oo Elizabeth St. John, 1432~ - 1491-02b
   []
     gen:spouse <https://www.wikidata.org/wiki/Q6257143> , <https://www.wikidata.org/wiki/Q75387389> ;
 	gen:startDate "1471-12-10b" .
@@ -541,7 +1126,7 @@
   # Elizabeth Scrope, d. 1503-06-12
   gen:father <https://www.wikidata.org/wiki/Q27493876> ;
   gen:mother <https://www.wikidata.org/wiki/Q75507767> .
-  # oo Oliver St. John, d. 1497-04-10b, https://www.wikidata.org/wiki/Q75387380
+  # oo 1470-10-25 Oliver St. John, 1435~ - 1497-04-10b, https://www.wikidata.org/wiki/Q75387380
 <https://www.wikidata.org/wiki/Q75387616>
   # Sir Richard Scrope
   gen:father <https://www.wikidata.org/wiki/Q27493876> ;
@@ -612,9 +1197,19 @@
 
 
 # ----
-#<https://www.wikidata.org/wiki/Q5722464>
+#<https://www.wikidata.org/wiki/Q76286691>
+  # Dr. James Vaughan, 1740-03-27 – 1813-08-19
+  # oo Hester Smalley, d. 1791-04-02/-07
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76286691> , <https://www.wikidata.org/wiki/Q76286692> .
+
+<https://www.wikidata.org/wiki/Q5722464>
   # Sir Henry Vaughan Halford, 1st Baronet, 1766-10-02 - 1844-03-09
-  # oo Elizabeth Barbara St. John, d. 1833-06-17
+  # Henry Vaughan
+  # 1st Baronet Halford, of Wistow, co Leicester 1809-09-27
+  gen:father <https://www.wikidata.org/wiki/Q76286691> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76286692> .
+  # oo Hon. Elizabeth Barbara St. John, d. 1833-06-17
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5722464> , <https://www.wikidata.org/wiki/Q76157286> ;
 	gen:startDate "1796-03-31" .
@@ -701,6 +1296,11 @@
   gen:father <https://www.wikidata.org/wiki/Q24568849> ;
   gen:mother <https://www.wikidata.org/wiki/Q75272610> .
   # oo 1814-05-24 William Pleydell-Bouverie, 3rd Earl of Radnor, 1779-05-11 - 1869-04-09, https://www.wikidata.org/wiki/Q8016955 (bouverie.ttl)
+<https://www.wikidata.org/wiki/Q75281225>
+  # Maria St. John-Mildmay, 1790-04-02 - 1836-12-21
+  gen:father <https://www.wikidata.org/wiki/Q24568849> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75272610> .
+  # oo 1812-06-03 Henry St. John, 4th Viscount Bolingbroke, 1786-03-06 - 1851-10-01, https://www.wikidata.org/wiki/Q17183588
 <https://www.wikidata.org/wiki/Q24568662>
   # Paulet St. John-Mildmay, 1791-04-08 - 1845-05-19
   gen:father <https://www.wikidata.org/wiki/Q24568849> ;
