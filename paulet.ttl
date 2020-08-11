@@ -29,11 +29,11 @@
   # oo Laura Kellaway, daughter of William Kellaway
   []
     gen:spouse <https://www.wikidata.org/wiki/Q18670717> , <#Laura_Kellaway> .
-<#Alice_Paulett>
+<https://www.wikidata.org/wiki/Q75484579>
   # Alice Paulett
   gen:father <https://www.wikidata.org/wiki/Q75562045> .
   # and Elizabeth Denehand
-  # oo Sir John Paulet, https://www.wikidata.org/wiki/Q18756876
+  # oo 1458-06b Sir John Paulet, https://www.wikidata.org/wiki/Q18756876
 <https://www.wikidata.org/wiki/Q75619744>
   # Christina Paulet, 1449 - 1505a
   gen:father <https://www.wikidata.org/wiki/Q75562045> .
@@ -93,7 +93,7 @@
   gen:mother <#Elizabeth_Kenn> .
   # oo Hon. Catharine de Vere, 1613~ - 1648-03-27a
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q14945629> , <de_vere.ttl#Catharine_de_Vere> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q14945629> , <https://www.wikidata.org/wiki/Q75252528> ;
 	gen:startDate "1640-03" .
   # oo Anne Browne, 1635-07-10 - 1711
   []
@@ -119,7 +119,7 @@
 <https://www.wikidata.org/wiki/Q6253264>
   # John Poulett, 3rd Baron Poulett, 1641~ – 1679-06
   gen:father <https://www.wikidata.org/wiki/Q14945629> ;
-  gen:mother <de_vere.ttl#Catharine_de_Vere> .
+  gen:mother <https://www.wikidata.org/wiki/Q75252528> .
   # oo Essex Popham, 1642~ - 1679-07b (sutton.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q6253264> , <https://www.wikidata.org/wiki/Q76223849> ;
@@ -131,7 +131,7 @@
 <#Elizabeth_Poulett_(died_1669)>
   # Elizabeth Poulett, d. 1669
   gen:father <https://www.wikidata.org/wiki/Q14945629> ;
-  gen:mother <de_vere.ttl#Catharine_de_Vere> .
+  gen:mother <https://www.wikidata.org/wiki/Q75252528> .
   # oo Sir John Sydenham, 2nd Baronet, 1643 – 1696, https://www.wikidata.org/wiki/Q7528111
 
 <#Catherine_Poulett_(died_1687~)>
@@ -284,30 +284,40 @@
 <#Sir_John_Paulet>
   # Sir John Paulet
   gen:father <#William_Paulet_(died_1435)> .
-  # oo Constance de Poynings
+  # oo Constance de Poynings (st_john.ttl)
+  []
+    gen:spouse <#Sir_John_Paulet> , <https://www.wikidata.org/wiki/Q92567909> .
 
-<#John_Paulet>
-  # John Paulet
-  gen:father <#Sir_John_Paulet> .
-  # oo Eleanor Roos
+<https://www.wikidata.org/wiki/Q92567914>
+  # John Paulet, Esq., 1428~ - 1492-10-05
+  gen:father <#Sir_John_Paulet> ;
+  gen:mother <https://www.wikidata.org/wiki/Q92567909> .
+  # oo Eleanor Roos, 1432-06-23 - 1504-08-02, daughter of Robert de Roos and Joan Skelton
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q92567914> , <#Eleanor_Roos> ;
+	gen:startDate "1458-12-01~" .
 
 <https://www.wikidata.org/wiki/Q18756876>
+  owl:sameAs <https://www.wikidata.org/wiki/Q92567916> ;
   # Sir John Paulet, 1454~ - 1525
-  gen:father <#John_Paulet> .
-  # and Eleanor Roos
+  gen:father <https://www.wikidata.org/wiki/Q92567914> ;
+  gen:mother <#Eleanor_Roos> .
   # oo Alice Poulett
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q18756876> , <#Alice_Paulett> .
+    gen:spouse <https://www.wikidata.org/wiki/Q18756876> , <https://www.wikidata.org/wiki/Q75484579> ;
+	gen:startDate "1458-06b" .
 <#Margaret_Paulet>
   # Margaret Paulet
-  gen:father <#John_Paulet> .
-  # and Eleanor Roos
+  gen:father <https://www.wikidata.org/wiki/Q92567914> ;
+  gen:mother <#Eleanor_Roos> .
 
 <https://www.wikidata.org/wiki/Q8016685>
   # William Paulet, 1st Marquess of Winchester, 1483~ - 1572
+  # 1st Baron St. John 1539-03-09
+  # 1st Earl of Wiltshire 1550-01-19
   # 1st Marquess of Winchester 1551-10-11
   gen:father <https://www.wikidata.org/wiki/Q18756876> ;
-  gen:mother <#Alice_Paulett> .
+  gen:mother <https://www.wikidata.org/wiki/Q75484579> .
   # oo Elizabeth Capell, d. 1558-12-25
   []
     gen:spouse <https://www.wikidata.org/wiki/Q8016685> , <https://www.wikidata.org/wiki/Q75666117> ;
@@ -315,7 +325,7 @@
 <#Sir_George_Paulet>
   # Sir George Paulet, d. 1558
   gen:father <https://www.wikidata.org/wiki/Q18756876> ;
-  gen:mother <#Alice_Paulett> .
+  gen:mother <https://www.wikidata.org/wiki/Q75484579> .
   # oo Jane Larke
   # oo Barbara Hamden, d. 1552
   # oo Elizabeth Windsor
@@ -400,10 +410,10 @@
   # and Jane Lambert
   # oo Elizabeth Seymour, daughter of Sir John Seymour
 <https://www.wikidata.org/wiki/Q75241406>
-  # Elizabeth Paulet, d. 1655-10~
+  # Elizabeth Paulet, 1580~ - 1655-10~
   gen:father <#William_Paulet,_of_Ewalden> .
   # and Elizabeth Codingham
-  # oo 1602-04 Oliver St. John, 1st Earl of Bolingbroke, 1584~ - 1646-06, https://www.wikidata.org/wiki/Q7087846 (pelham.ttl)
+  # oo 1602-04 Oliver St. John, 1st Earl of Bolingbroke, 1584~ - 1646-06, https://www.wikidata.org/wiki/Q7087846
 
 <https://www.wikidata.org/wiki/Q75268843>
   # William Paulet, Viscount St. John, 1588 - 1621-08
