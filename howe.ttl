@@ -4,15 +4,20 @@
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
-
-#<https://www.wikidata.org/wiki/Q7527848>
+<https://www.wikidata.org/wiki/Q7527848>
   # Sir John Howe, 1st Baronet, d. 1671
   # 1st Baronet Howe 1660-09-22
-  # son of John Howe
+  gen:father <https://www.wikidata.org/wiki/Q76363558> . # Sir John Howe, the elder
   # and Jane Grobham, daughter of Nicholas Grobham
   # oo Bridget Rich, daughter of Thomas Rich
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7527848> , <https://www.wikidata.org/wiki/Q75761367> .
+<https://www.wikidata.org/wiki/Q76363526>
+  # George Howe, d. 1647
+  gen:father <https://www.wikidata.org/wiki/Q76363558> .
+  # oo Dorothy Clarke
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76363526> , <https://www.wikidata.org/wiki/Q76363529> .
 
 <https://www.wikidata.org/wiki/Q7528590>
   owl:sameAs <https://www.wikidata.org/wiki/Q75761365> ;
@@ -29,6 +34,15 @@
   # oo Lady Annabella Scrope, 1629 - 1703-03-21 (manners.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q6236456> , <https://www.wikidata.org/wiki/Q75502033> .
+<https://www.wikidata.org/wiki/Q7526889>
+  # Sir George Grubham Howe, 1st Baronet, 1627~ - 1676-09-26
+  # 1st Baronet Howe, of Cold Barwick, Wiltshire 1660-06-20
+  gen:father <https://www.wikidata.org/wiki/Q76363526> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76363529> .
+  # oo Elizabeth Grimston, 1632~ - 1709-05-11b
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7526889> , <https://www.wikidata.org/wiki/Q76363517> ;
+	gen:startDate "1650" .
 
 <https://www.wikidata.org/wiki/Q16843257>
   # Sir Richard Grobham Howe, 3rd Baronet, 1651~ - 1730-07-03
@@ -74,6 +88,18 @@
   gen:father <https://www.wikidata.org/wiki/Q6236456> ;
   gen:mother <https://www.wikidata.org/wiki/Q75502033> .
   # oo 1674 Sir John Guise, 2nd Baronet, 1654~ – 1695-11, https://www.wikidata.org/wiki/Q26262856
+<https://www.wikidata.org/wiki/Q76363521>
+  # Sir James Howe, 2nd Baronet, of Berwick St Leonard, 1669~ – 1736-01-19
+  gen:father <https://www.wikidata.org/wiki/Q7526889> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76363517> .
+  # oo Elizabeth Nutt, d. 1691, daughter of Edward Nutt of Nackington Kent
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76363521> , <#Elizabeth_Nutt> ;
+	gen:startDate "1689" .
+  # oo Elizabeth Stratford, daughter of Henry Stratford of Halling Gloucester
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76363521> , <#Elizabeth_Stratford> ;
+	gen:startDate "1694-08" .
 
 <https://www.wikidata.org/wiki/Q6240105> # -> Baron of Chedworth
   # John Howe, 1st Lord Chedworth, Baron of Chedworth, d. 1742-04-03
