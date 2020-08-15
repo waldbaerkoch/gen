@@ -442,7 +442,7 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q6260181> , <#Elizabeth_Keyt> ;
 	gen:startDate "1653-12-11" .
-  # oo Barbara Slingsby
+  # oo Barbara Slingsby, b. 1633~ (belasyse.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q6260181> , <https://www.wikidata.org/wiki/Q75252242> .
 <https://www.wikidata.org/wiki/Q76113690>
@@ -651,7 +651,7 @@
   gen:father <https://www.wikidata.org/wiki/Q75251824> ;
   gen:mother <https://www.wikidata.org/wiki/Q75251825> .
   # oo 1749-08-09 Charles Dormer, 8th Baron Dormer of Wyng, 1725-04-30 - 1804-03-30, https://www.wikidata.org/wiki/Q21548504 (brudenell.ttl)
-<#Francis_Jerome_Talbot>
+<https://www.wikidata.org/wiki/Q75251833>
   gen:name "Francis Jerome Talbot"@en ;
   gen:birthDate "1728-09-30" ;
   gen:deathDate "1813-11-22" ;
@@ -659,11 +659,11 @@
   gen:mother <https://www.wikidata.org/wiki/Q75251825> .
   # oo Lady Anne Belasyse, 1746b - 1768-09-13
   []
-    gen:spouse <#Francis_Jerome_Talbot> , <murray.ttl#Lady_Anne_Belasyse> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75251833> , <https://www.wikidata.org/wiki/Q75251847> ;
 	gen:startDate "1761-04-20" .
   # oo Margaret Frances Sheldon, daughter of William Sheldon
   []
-    gen:spouse <#Francis_Jerome_Talbot> , <#Margaret_Frances_Sheldon> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75251833> , <#Margaret_Frances_Sheldon> ;
 	gen:startDate "1772-05-18" .
 <https://www.wikidata.org/wiki/Q5056379>
   gen:name "Cecil de Cardonnel, 2nd Baroness Dynevor of Dynevor"@en ;
@@ -731,7 +731,7 @@
   gen:name "Charles Thomas Talbot"@en ;
   gen:birthDate "1782-11-24" ;
   gen:deathDate "1838-04-30" ;
-  gen:father <#Francis_Jerome_Talbot> ;
+  gen:father <https://www.wikidata.org/wiki/Q75251833> ;
   gen:mother <#Margaret_Frances_Sheldon> .
   # oo Julia Tichborne, d. 1892-06-04, daughter of Sir Henry Joseph Tichborne, 8th Baronet and Anne Burke
   []
@@ -1823,27 +1823,37 @@
 <https://www.wikidata.org/wiki/Q7529462>
   # Sir William Armyne, 1st Baronet, 1593-12-11 - 1651-04-10
   # 1st Baronet Armyne, of Osgodby, co. Lincoln 1619-11-28
-  gen:father <https://www.wikidata.org/wiki/Q8004551> .
-  # and Martha Eure
+  gen:father <https://www.wikidata.org/wiki/Q8004551> ; # William Armyn
+  gen:mother <https://www.wikidata.org/wiki/Q75411827> . # Martha Eure
+  # oo Elizabeth Hicks, daughter of Michael Hicks and Elizabeth Coulson
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7529462> , <https://www.wikidata.org/wiki/Q75411830> ;
+	gen:startDate "1619-12-14" .
   # oo Mary Talbot, 1595b - 1675-03-06
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7529462> , <https://www.wikidata.org/wiki/Q16197310> ;
 	gen:startDate "1628-08-28" .
 
-# ----
-#<https://www.wikidata.org/wiki/Q7527214>
-  # Sir Henry Slingsby, 1st Baronet, 1602-01-14 - 1658-06-08
-  # 1st Baronet Slingsby, of Scriven 1638-03-02
-  # oo Barbara Bellasyse, d. 1641
+<https://www.wikidata.org/wiki/Q7529465>
+  # Sir William Airmine, 2nd Baronet, 1622-07-14 - 1658-01-02
+  gen:father <https://www.wikidata.org/wiki/Q7529462> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75411830> .
+  # oo Anne Crane, 1631-10-17 - 1662-08-11 (cecil.ttl)
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q7527214> , <https://www.wikidata.org/wiki/Q17362283> ;
-	gen:startDate "1631-07-07" .
+    gen:spouse <https://www.wikidata.org/wiki/Q7529465> , <https://www.wikidata.org/wiki/Q75411845> ;
+	gen:startDate "1649-08-26" .
 
-<https://www.wikidata.org/wiki/Q75252242>
-  # Barbara Slingsby
-  gen:father <https://www.wikidata.org/wiki/Q7527214> ;
-  gen:mother <https://www.wikidata.org/wiki/Q17362283> .
-  # oo Sir John Talbot, of Lacock, 1630 - 1714-02, https://www.wikidata.org/wiki/Q6260181
+<https://www.wikidata.org/wiki/Q75411849>
+  # Susan Armyne, Baroness Belasyse of Osgodby, 1649~ - 1712/1713-03-06
+  # Baroness Belasyse of Osgodby, co. Lincoln 1674-04-01, suo jure
+  gen:father <https://www.wikidata.org/wiki/Q7529465> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75411845> .
+  # 1662-10-20 Sir Henry Belasyse, 1639~ - 1667-08-06a/15b, https://www.wikidata.org/wiki/Q5717992
+<https://www.wikidata.org/wiki/Q75261194>
+  # Anne Armyne, 1652 - 1719
+  gen:father <https://www.wikidata.org/wiki/Q7529465> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75411845> .
+  # oo 1674 Thomas Crew, 2nd Baron Crew of Stene, 1624~ - 1697-09-30, https://www.wikidata.org/wiki/Q7788699 (montagu.ttl)
 
 # ----
 #<https://www.wikidata.org/wiki/Q76104356>
