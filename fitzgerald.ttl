@@ -1851,7 +1851,7 @@
     gen:spouse <https://www.wikidata.org/wiki/Q6133923> , <#Móre_O'Carroll> .
   # oo (3) Lady Katherine Butler, 1506 – 1553-03-17
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q6133923> , <butler.ttl#Lady_Katherine_Butler> .
+    gen:spouse <https://www.wikidata.org/wiki/Q6133923> , <https://www.wikidata.org/wiki/Q75546552> .
   # oo (4) Evelyn Mór MacCarthy, d. 1581
   []
     gen:spouse <https://www.wikidata.org/wiki/Q6133923> , <https://www.wikidata.org/wiki/Q75278668> ;
@@ -1925,10 +1925,10 @@
   gen:father <https://www.wikidata.org/wiki/Q6133923> ;
   gen:mother <#Móre_O'Carroll> .
   # oo 1563b Thomas FitzMaurice, 14th Baron of Kerry and Lixnaw, 1520~ - 1590-12-16, https://www.wikidata.org/wiki/Q7789631
-<#Lady_Eleanor_FitzGerald_2>
+<https://www.wikidata.org/wiki/Q75546523>
   # Lady Eleanor FitzGerald
   gen:father <https://www.wikidata.org/wiki/Q6133923> .
-  # oo John Power, 3rd Baron le Power and Coroghmore, 1529~ - 1592-11-08, #John_Power,_3rd_Baron_le_Power
+  # oo John Power, 3rd Baron le Power and Coroghmore, 1529~ - 1592-11-08, https://www.wikidata.org/wiki/Q75397174
 <#Sir_Séamus-Sussex_FitzGerald>
   gen:name "Sir Séamus-Sussex FitzGerald"@en ;
   gen:deathDate "1580" ;
@@ -2673,11 +2673,11 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q208822> , <https://www.wikidata.org/wiki/Q208810> ;
 	gen:startDate "1532-12-21b" .
-<butler.ttl#Lady_Katherine_Butler>
+<https://www.wikidata.org/wiki/Q75546552>
   # Lady Katherine Butler, 1506 – 1553-03-17
   gen:father <https://www.wikidata.org/wiki/Q197540> ;
   gen:mother <https://www.wikidata.org/wiki/Q208901> .
-  # oo 1526b Richard Power, 1st Baron le Power and Coroghmore, d. 1538-11-10, #Richard_Power,_1st_Baron_le_Power
+  # oo 1526b Richard Power, 1st Baron le Power and Coroghmore, d. 1538-11-10, https://www.wikidata.org/wiki/Q75533275
   # oo James FitzJohn FitzGerald, 14th Earl of Desmond, d. 1558-10-27, https://www.wikidata.org/wiki/Q6133923
 <https://www.wikidata.org/wiki/Q75278675>
   # Lady Ellen Butler, 1523 - 1597-07-02
@@ -3612,17 +3612,6 @@
   # oo 1940-08-31 (div 1949) Hon. Charles Dudley Anthony Ross, 1907-10-05 - 1976, #Charles_Dudley_Anthony_Ross
 
 # ----
-#<#Richard_Power,_4th_Baron_le_Power>
-  # Richard Power, 4th Baron le Power and Coroghmore, 1553~ - 1607-08-08
-  # oo Hon. Katherine Barry, daughter of James fitz John Barry, 3rd Viscount Barry and Ellen MacCartie
-
-<https://www.wikidata.org/wiki/Q75446955>
-  # Gille Power
-  gen:father <#Richard_Power,_4th_Baron_le_Power> .
-  # and Hon. Katherine Barry
-  # oo 1615 Thomas FitzMaurice, 16th Baron of Kerry and Lixnaw, 1574 - 1630-06-03, https://www.wikidata.org/wiki/Q7789633
-
-# ----
 #<https://www.wikidata.org/wiki/Q278699>
   # Sir William Petty, 1623-05-26 - 1687-12-16
   # oo Elizabeth Waller, Baroness Shelburne, 1636~ - 1708-02
@@ -4109,18 +4098,89 @@
     gen:spouse <#Donald_MacCarthy_Mor,_1st_Earl_of_Clancare> , <#Lady_Honora_FitzGerald> .
 
 # ----
-#<#Richard_Power,_1st_Baron_le_Power>
+<https://www.wikidata.org/wiki/Q75533275>
   # Richard Power, 1st Baron le Power and Coroghmore, d. 1538-11-10
+  gen:father <https://www.wikidata.org/wiki/Q75533233> ; # Sir Piers Power
+  gen:mother <https://www.wikidata.org/wiki/Q75546575> . # Katherine FitzGerald
   # 1st Baron le Power and Coroghmore, co. Waterford 1535-09-13
   # oo Lady Katherine Butler, 1506 – 1553-03-17
   []
-    gen:spouse <#Richard_Power,_1st_Baron_le_Power> , <butler.ttl#Lady_Katherine_Butler> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75533275> , <https://www.wikidata.org/wiki/Q75546552> ;
 	gen:startDate "1526b" .
 
-<#John_Power,_3rd_Baron_le_Power>
+<https://www.wikidata.org/wiki/Q75397174>
   # John Power, 3rd Baron le Power and Coroghmore, 1529~ - 1592-11-08
-  gen:father <#Richard_Power,_1st_Baron_le_Power> ;
-  gen:mother <butler.ttl#Lady_Katherine_Butler> .
+  gen:father <https://www.wikidata.org/wiki/Q75533275> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75546552> .
   # oo Lady Eleanor FitzGerald
   []
-    gen:spouse <#John_Power,_3rd_Baron_le_Power> , <#Lady_Eleanor_FitzGerald_2> .
+    gen:spouse <https://www.wikidata.org/wiki/Q75397174> , <https://www.wikidata.org/wiki/Q75546523> .
+
+<https://www.wikidata.org/wiki/Q75397172>
+  # Richard Power, 4th Baron le Power and Coroghmore, 1553~ - 1607-08-08
+  gen:father <https://www.wikidata.org/wiki/Q75397174> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75546523> .
+  # oo Hon. Katherine Barry (boyle.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75397172> , <https://www.wikidata.org/wiki/Q75397171> .
+
+<https://www.wikidata.org/wiki/Q75446955>
+  # Gille Power
+  gen:father <https://www.wikidata.org/wiki/Q75397172> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75397171> .
+  # oo 1615 Thomas FitzMaurice, 16th Baron of Kerry and Lixnaw, 1574 - 1630-06-03, https://www.wikidata.org/wiki/Q7789633
+<https://www.wikidata.org/wiki/Q75447022>
+  # John 'Og' Power, d. 1600
+  gen:father <https://www.wikidata.org/wiki/Q75397172> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75397171> .
+  # oo Hon. Helen Barry, d. 1642 (boyle.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75447022> , <https://www.wikidata.org/wiki/Q75401086> .
+
+<https://www.wikidata.org/wiki/Q75546469>
+  # John Power, 5th Baron le Power and Coroghmore, 1599 - 1662
+  gen:father <https://www.wikidata.org/wiki/Q75447022> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75401086> .
+  # oo Ruth Pypho, d. 1642-06-17b, daughter of Robert Pypho
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75546469> , <https://www.wikidata.org/wiki/Q75546470> .
+
+<https://www.wikidata.org/wiki/Q16863560>
+  # Richard Power, 1st Earl of Tyrone, 1630 - 1690-10-14
+  # 6th Baron le Power and Coroghmore, co. Waterford 1662
+  # 1st Viscount Decies, 1st Earl of Tyrone 1672-10-09
+  gen:father <https://www.wikidata.org/wiki/Q75546469> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75546470> .
+  # oo Lady Dorothy Annesley
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16863560> , <https://www.wikidata.org/wiki/Q75546460> ;
+	gen:startDate "1654" .
+  # oo Katherine FitzGerald, 1660-08 - 1725-12-26 (villiers.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16863560> , <https://www.wikidata.org/wiki/Q6376371> ;
+	gen:startDate "1673-05-20" .
+<https://www.wikidata.org/wiki/Q75773987>
+  # Jane Power
+  gen:father <https://www.wikidata.org/wiki/Q75546469> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75546470> .
+  # oo Gorges Lowther, d. 1716-06-11, https://www.wikidata.org/wiki/Q75546426
+
+<https://www.wikidata.org/wiki/Q75270656>
+  gen:name "James Power, 3rd Earl of Tyrone"@en ;
+  gen:birthDate "1667" ;
+  gen:deathDate "1704-08-19" ;
+  gen:father <https://www.wikidata.org/wiki/Q16863560> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75546460> .
+  # oo Anne Rickards, d. 1729-09-26, daughter of Andrew Rickards
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75270656> , <https://www.wikidata.org/wiki/Q75270658> ;
+	gen:startDate "1692-12-13" .
+
+<https://www.wikidata.org/wiki/Q75270655>
+  gen:name "Catherine Power, Baroness la Poer"@en ;
+  # Baroness la Poer 1767-11-16
+  gen:birthDate "1701-11-29" ;
+  gen:deathDate "1769-07-27" ;
+  gen:father <https://www.wikidata.org/wiki/Q75270656> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75270658> .
+  # oo 1717-07-18 Marcus Beresford, 1st Earl of Tyrone, 1694-07-16 - 1763-04-04, https://www.wikidata.org/wiki/Q886223
