@@ -2161,11 +2161,11 @@
   gen:father <https://www.wikidata.org/wiki/Q60559509> ;
   gen:mother <https://www.wikidata.org/wiki/Q75574005> .
   # oo 1431-11-20 Sir James Strangways, d. 1480-08-20~, https://www.wikidata.org/wiki/Q75811444
-<#Margery_Darcy>
-  # Margery Darcy,  1418-09-01 - 1469
+<https://www.wikidata.org/wiki/Q75811446>
+  # Margery Darcy,  1418-09-01 - 1469-03-20/-04-20
   gen:father <https://www.wikidata.org/wiki/Q60559509> ;
   gen:mother <https://www.wikidata.org/wiki/Q75574005> .
-  # oo 1431-11-20b Sir John Conyers, d. 1490-03-14, https://www.wikidata.org/wiki/Q18159808
+  # oo 1431-11-20b Sir John Conyers, 1416~ - 1490-03-14, #Sir_John_Conyers
 
 # ----
 #<https://www.wikidata.org/wiki/Q75811444>
@@ -2185,27 +2185,42 @@
 	gen:startDate "1455b" .
 
 # ----
-<https://www.wikidata.org/wiki/Q18159808>
-  # Sir John Conyers, d. 1490-03-14
-  gen:father <https://www.wikidata.org/wiki/Q18575993> .
-  # oo Margery Darcy,  1418-09-01 - 1469
+<https://www.wikidata.org/wiki/Q18575993>
+  # Sir Christopher Conyers, of Hornby, 1395~ - 1459a
+  gen:father <https://www.wikidata.org/wiki/Q18575993> ; # John Conyers, of Hornby, d. 1438-07-14b
+  gen:mother <https://www.wikidata.org/wiki/Q97570394> . # oo Margaret St. Quintin
+  # oo Eleanor Rolleston, d. 1444-08-06
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q18159808> , <#Margery_Darcy> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q18575993> , <#Eleanor_Rolleston> ;
+	gen:startDate "1415-09b" .
+
+<#Sir_John_Conyers>
+  # Sir John Conyers, 1416~ - 1490-03-14
+  gen:father <https://www.wikidata.org/wiki/Q18575993> ;
+  gen:mother <#Eleanor_Rolleston> .
+  # oo Margery Darcy,  1418-09-01 - 1469-03-20/-04-20
+  []
+    gen:spouse <#Sir_John_Conyers> , <https://www.wikidata.org/wiki/Q75811446> ;
 	gen:startDate "1431-11-20b" .
 
 <https://www.wikidata.org/wiki/Q18159808>
-  # Sir John Conyers, Jr., d. 1469
-  gen:father <https://www.wikidata.org/wiki/Q18159808> ;
-  gen:mother <#Margery_Darcy> .
+  # Sir John Conyers, Jr., of Hornby Castle, 1432~ - 1469
+  gen:father <#Sir_John_Conyers> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75811446> .
   # oo Lady Alice Neville, 1437 - 1490
   []
     gen:spouse <https://www.wikidata.org/wiki/Q18159808> , <https://www.wikidata.org/wiki/Q75517102> ;
 	gen:startDate "1468b" .
+<https://www.wikidata.org/wiki/Q75510312>
+  # Richard Conyers, of Horden Manor 1444 - 1490-02-20
+  gen:father <#Sir_John_Conyers> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75811446> .
+  # oo Elizabeth Claxton, d. 1507~, daughter of Sir Robert Claxton and Anne Stapleton
 <https://www.wikidata.org/wiki/Q4803719>
   # William Conyers, 1st Lord Conyers, 1468-12-21 - 1524-04-14
   # 1st Lord Conyers 1509-10-17
-  gen:father <https://www.wikidata.org/wiki/Q18159808> ;
-  gen:mother <#Margery_Darcy> .
+  gen:father <#Sir_John_Conyers> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75811446> .
   # oo Mary Scrope (st_john.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q4803719> , <https://www.wikidata.org/wiki/Q75811450> ;
@@ -2214,6 +2229,66 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q4803719> , <https://www.wikidata.org/wiki/Q75273386> ;
 	gen:startDate "1498-02-06b" .
+
+<https://www.wikidata.org/wiki/Q76329303>
+  # Anne Conyers, 1468~ - 1520~
+  gen:father <https://www.wikidata.org/wiki/Q18159808> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75517102> .
+  # oo 1489-01-28~ Richard Lumley, 3rd Lord Lumley, 1477~ - 1510-05-26, https://www.wikidata.org/wiki/Q76329261
+<https://www.wikidata.org/wiki/Q76358274>
+  # Robert Conyers
+  gen:father <https://www.wikidata.org/wiki/Q75510312> .
+  # and Elizabeth Claxton
+  # oo Margaret Bamforth
+
+<https://www.wikidata.org/wiki/Q76373748>
+  # Christopher Conyers
+  gen:father <https://www.wikidata.org/wiki/Q76358274> .
+  # and Margaret Bamforth
+  # oo Elizabeth Jackson
+
+<https://www.wikidata.org/wiki/Q76358277>
+  # Richard Conyers
+  gen:father <https://www.wikidata.org/wiki/Q76373748> .
+  # and Elizabeth Jackson
+  # oo Isabel Lumley
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76358277> , <https://www.wikidata.org/wiki/Q76373749> .
+
+<https://www.wikidata.org/wiki/Q76373750>
+  # Christopher Conyers, d. 1608-09-23
+  gen:father <https://www.wikidata.org/wiki/Q76358277> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76373749> .
+  # oo Anne Hedworth, b. 1561~, daughter of John Hedworth, Esq.
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76373750> , <#Anne_Hedworth> ;
+	gen:startDate "1586-11-04" .
+
+<https://www.wikidata.org/wiki/Q18671704>
+  # Sir John Conyers, 1st Baronet, 1599 - 1664-12
+  # 1st Baronet Conyers, of Horden 1628-07-14
+  gen:father <https://www.wikidata.org/wiki/Q76373750> ;
+  gen:mother <#Anne_Hedworth> .
+  # oo Frances Groves, 1596 - 1635-01-24, daughter of Thomas Groves
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q18671704> , <https://www.wikidata.org/wiki/Q76252846> ;
+	gen:startDate "1606~" .
+
+<https://www.wikidata.org/wiki/Q19288262>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75441207> ;
+  # Sir Christopher Conyers, 2nd Baronet, 1621 – 1693-10-12
+  gen:father <https://www.wikidata.org/wiki/Q18671704> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76252846> .
+  # oo Hon. Julia Lumley, 1624b - 1691-05-21
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75441207> , <https://www.wikidata.org/wiki/Q75300576> ;
+	gen:startDate "1666-11-03" .
+
+<https://www.wikidata.org/wiki/Q75441204>
+  # Julia Conyers, 1669~ - 1722-08-16
+  gen:father <https://www.wikidata.org/wiki/Q19288262> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75300576> .
+  # oo 1685-01-27 Sir William Blackett, 1st Baronet, of Newcastle-upon-Tyne, 1657-06-14 - 1705-12, https://www.wikidata.org/wiki/Q7529497 (erskine.ttl)
 
 # ====
 
