@@ -175,11 +175,13 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q16866586> , <hastings.ttl#Lady_Dorothea_Hastings> ;
 	gen:startDate "1536-07-01" .
-<#Sir_William_Devereux>
+<https://www.wikidata.org/wiki/Q75768256>
   # Sir William Devereux
   gen:father <https://www.wikidata.org/wiki/Q16154520> ;
   gen:mother <grey.ttl#Lady_Mary_Grey_(died_1534)> .
   # oo Jane Scudamore, daughter of John Scudamore
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75768256> , <https://www.wikidata.org/wiki/Q75787359> .
 <https://www.wikidata.org/wiki/Q16866639>
   # Sir Edward Devereux, 1st Baronet, 1544~ - 1622~
   # 1st Baronet Devereux, of Castle Bromwich 1611-11-25
@@ -202,10 +204,15 @@
 	gen:startDate "1560a/1565b" .
 <#Barbara_Devereux>
   # Barbara Devereux, d. 1618a
-  gen:father <#Sir_William_Devereux> .
-  # and Jane Scudamore
+  gen:father <https://www.wikidata.org/wiki/Q75768256> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75787359> .
   # oo Edward Cave
   # oo 1567 Sir Edward Hastings, 1542 - 1603, https://www.wikidata.org/wiki/Q5343363
+<https://www.wikidata.org/wiki/Q75787363>
+  # Margaret Devereux
+  gen:father <https://www.wikidata.org/wiki/Q75768256> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75787359> .
+  # oo Sir Edward Littleton, https://www.wikidata.org/wiki/Q75599941
 <https://www.wikidata.org/wiki/Q7964674>
   # Sir Walter Devereux, 5th Viscount Hereford, 1575~ - 1656
   # 2nd Baronet Devereux of Castle Bromwich 1622~
@@ -656,6 +663,44 @@
   # oo 1565-07-16 Henry Knollys, 1542~ - 1582-12-21, https://www.wikidata.org/wiki/Q5724427
 
 # ----
+#<https://www.wikidata.org/wiki/Q75599941>
+  # Sir Edward Littleton
+  # son of Sir Edward Littleton
+  # and Alice Cockayne
+  # oo Margaret Devereux
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75599941> , <https://www.wikidata.org/wiki/Q75787363> .
+
+<https://www.wikidata.org/wiki/Q75243538>
+  # Sir Edward Littleton
+  gen:father <https://www.wikidata.org/wiki/Q75599941> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75787363> .
+  # oo Mary Fisher, daughter of Clement Fisher and Mary Repington
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75243538> , <https://www.wikidata.org/wiki/Q75962408> ;
+	gen:startDate "1598-01-16" .
+
+<https://www.wikidata.org/wiki/Q7526585>
+  # Sir Edward Littleton, 1st Baronet, 1599-12-19 - 1657~
+  # 1st Baronet Littleton, of Pillaton Hall, co. Staffs 1627-06-28
+  gen:father <https://www.wikidata.org/wiki/Q75243538> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75962408> .
+  # Hester Courteen, daughter of Sir William Courten and ??? Tryon
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7526585> , <https://www.wikidata.org/wiki/Q75962443> .
+<https://www.wikidata.org/wiki/Q75243537>
+  # Anne Littleton, d. 1697-11-02
+  gen:father <https://www.wikidata.org/wiki/Q75243538> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75962408> .
+  # oo Hon. Charles Leigh, 1625 - 1704-07-30, https://www.wikidata.org/wiki/Q75243530
+
+<https://www.wikidata.org/wiki/Q76089183>
+  # Margaret Littleton
+  gen:father <https://www.wikidata.org/wiki/Q7526585> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75962443> .
+  # oo Sir Robert Napier, 3rd Baronet, d. 1675, https://www.wikidata.org/wiki/Q76089184
+
+# ----
 #<https://www.wikidata.org/wiki/Q2058500>
   # Sir John Perrot, 1528-11-11 - 1592-11-03
   # oo Anne Cheyne, 1530~ - 1553-09, daughter of Thomas Cheyne and Frideswide Frowich
@@ -844,13 +889,12 @@
     gen:spouse <https://www.wikidata.org/wiki/Q7791798> , <egerton.ttl#Mary_Egerton_(died_1669)> ;
 	gen:startDate "1610-11-11" .
 <https://www.wikidata.org/wiki/Q5481704>
-  # Francis Leigh, 1st Earl of Chichester, 1598-04-28 - 1653-12-21
   gen:name "Francis Leigh, 1st Earl of Chichester"@en ;
+  gen:birthDate "1598-04-28" ;
+  gen:deathDate "1653-12-21" ;
   # 1st Baronet Leigh 1618-12-24
   # 1st Baron Dunsmore, co. Warwick 1628-07-31
   # 1st Earl of Chichester, co. Sussex 1644-06-03
-  gen:birthDate "1598-04-28" ;
-  gen:deathDate "1653-12-21" ;
   gen:father <https://www.wikidata.org/wiki/Q5481711> ;
   gen:mother <egerton.ttl#Mary_Egerton_(died_1612)> .
   # oo Hon. Audrey Boteler, 1595 - 1652-09-16
@@ -858,13 +902,13 @@
     gen:spouse <https://www.wikidata.org/wiki/Q5481704> , <howard.ttl#Audrey_Boteler> ;
 	gen:startDate "1617~" .
 
-<#Sir_Thomas_Leigh>
+<https://www.wikidata.org/wiki/Q75258329>
   # Hon. Sir Thomas Leigh, 1616~ - 1662-04-05
   gen:father <https://www.wikidata.org/wiki/Q7791798> ;
   gen:mother <egerton.ttl#Mary_Egerton_(died_1669)> .
-  # oo Jane FitzMaurice
+  # oo Jane FitzMaurice (fitzgerald.ttl)
   []
-    gen:spouse <#Sir_Thomas_Leigh> , <fitzgerald.ttl#Jane_FitzMaurice> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75258329> , <https://www.wikidata.org/wiki/Q75463977> ;
 	gen:startDate "1650" .
 <https://www.wikidata.org/wiki/Q75243530>
   # Hon. Charles Leigh, 1625 - 1704-07-30
@@ -872,7 +916,7 @@
   gen:mother <egerton.ttl#Mary_Egerton_(died_1669)> .
   # oo Anne Littleton, d. 1697-11-02
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q75243530> , <#Anne_Littleton> .
+    gen:spouse <https://www.wikidata.org/wiki/Q75243530> , <https://www.wikidata.org/wiki/Q75243537> .
 <#Elizabeth_Leigh>
   # Hon. Elizabeth Leigh, d. 1688
   gen:father <https://www.wikidata.org/wiki/Q7791798> ;
@@ -891,20 +935,31 @@
 
 <#Honora_Leigh>
   # Honora Leigh, 1649-05-17 - 1730-09-11
-  gen:father <#Sir_Thomas_Leigh> ;
-  gen:mother <fitzgerald.ttl#Jane_FitzMaurice> .
+  gen:father <https://www.wikidata.org/wiki/Q75258329> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75463977> .
   # oo 1674 Sir William Egerton, 1649-08-15 - 1691-12, egerton.ttl#Sir_William_Egerton
+<https://www.wikidata.org/wiki/Q75266907>
+  # Thomas Leigh, 2nd Baron Leigh of Stoneleigh, 1652-06-17 - 1710-11-12
+  gen:father <https://www.wikidata.org/wiki/Q75258329> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75463977> .
+  # oo Eleanor Watson, d. 1705 (manners.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75266907> , <https://www.wikidata.org/wiki/Q75776278> ;
+	gen:startDate "1679-10-25" .
 <https://www.wikidata.org/wiki/Q75243528>
   # Alicia Leigh, 1661~ - 1684-06-04
   gen:father <https://www.wikidata.org/wiki/Q75243530> ;
-  gen:mother <#Anne_Littleton> .
+  gen:mother <https://www.wikidata.org/wiki/Q75243537> .
   # oo 1678-09-03 Altham Annesley, 1st Baron Altham, 1650b - 1699-04-26, https://www.wikidata.org/wiki/Q75243523
-# ----
-<#Anne_Littleton>
-  # Anne Littleton, d. 1697-11-02
-  gen:father <https://www.wikidata.org/wiki/Q75243538> .
-  # and Mary Fisher
-  # oo Hon. Charles Leigh, 1625 - 1704-07-30, https://www.wikidata.org/wiki/Q75243530
+
+<https://www.wikidata.org/wiki/Q76357279>
+  # Hon. Charles Leigh, 1686-03-28b - 1749-07-28
+  gen:father <https://www.wikidata.org/wiki/Q75266907> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75776278> .
+  # oo Lady Barbara Lumley, d. 1755-01-04
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76357279> , <https://www.wikidata.org/wiki/Q76357275> ;
+	gen:startDate "1716" .
 
 # ----
 #<https://www.wikidata.org/wiki/Q7526008>
