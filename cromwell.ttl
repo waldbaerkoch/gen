@@ -1,0 +1,816 @@
+@base <cromwell.ttl> .
+@prefix gen: <http://jjkoch.de/gen#> .
+@prefix wdata: <https://www.wikidata.org/wiki/> .
+@prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://www.wikidata.org/wiki/Q75771229>
+  # Ralph de Cromwell
+  gen:father <https://www.wikidata.org/wiki/Q75771225> ; # Ralph de Cromwell
+  gen:mother <https://www.wikidata.org/wiki/Q75771227> . # Joan de la Mare
+  # oo Anice de Bellers
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75771229> , <https://www.wikidata.org/wiki/Q75771231> .
+
+<https://www.wikidata.org/wiki/Q7288314> # -> Baron Cromwell [1375]
+  gen:father <https://www.wikidata.org/wiki/Q75771229> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75771231> .
+<#Richard_Cromwell>
+  # Richard Cromwell, b. 1338~
+  gen:father <https://www.wikidata.org/wiki/Q75771229> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75771231> .
+
+<#John_Cromwell_(born_1364~)>
+  # John Cromwell, 1364~ - 1461~
+  gen:father <#Richard_Cromwell> .
+  # oo Margaret de Cromwell, 1364 - 1434-08-10
+  []
+    gen:spouse <#John_Cromwell_(born_1364~)> , <#Margaret_de_Cromwell> ;
+	gen:startDate "1384" .
+
+<#Robert_Cromwell>
+  # Robert Cromwell, 1390~ - 1461-03-29
+  gen:father <#John_Cromwell_(born_1364~)> ;
+  gen:mother <#Margaret_de_Cromwell> .
+  # oo Joan Smythe, 1395 - 1434-08-10
+  []
+    gen:spouse <#Robert_Cromwell> , <#Joan_Smythe_(died_1434)> .
+
+<#William_Cromwell>
+  # William Cromwell, 1400~ - 1460~
+  gen:father <#Robert_Cromwell> ;
+  gen:mother <#Joan_Smythe_(died_1434)> .
+  # oo Margaret Smyth, 1400~ - 1450~, daughter of John Smythe and Joan Smyth
+  []
+    gen:spouse <#William_Cromwell> , <#Margaret_Smyth> .
+
+<#John_Cromwell_(born_1425~)>
+  # John Cromwell, 1425~ - 1480~
+  gen:father <#William_Cromwell> ;
+  gen:mother <#Margaret_Smyth> .
+  # oo Joan Smyth, 1425~ - 1475, aughter of William Smyth and Margaret Cromwell
+  []
+    gen:spouse <#John_Cromwell_(born_1425~)> , <#Joan_Smyth_(died_1475)> ;
+	gen:startDate "1445~" .
+
+<https://www.wikidata.org/wiki/Q75421066>
+  # Walter Cromwell, 1450~ - 1516~
+  gen:father <#John_Cromwell_(born_1425~)> ;
+  gen:mother <#Joan_Smyth_(died_1475)> .
+  # oo Katherine Glossop, 1455~ - 1500~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75421066> , <#Katherine_Glossop> .
+
+<https://www.wikidata.org/wiki/Q294435>
+  # Thomas Cromwell, 1st Earl of Essex, 1485~ - 1540-07-28
+  # 1st Baron Cromwell, of Wimbledon in the County of Surrey 1536
+  # 1st Earl of Essex 1540
+  gen:father <https://www.wikidata.org/wiki/Q75421066> ;
+  gen:mother <#Katherine_Glossop> .
+  # oo Elizabeth Wykes, 1489 - 1527/1528, daughter of Henry Wykes
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q294435> , <https://www.wikidata.org/wiki/Q5363761> ;
+	gen:startDate "1513" .
+<https://www.wikidata.org/wiki/Q75421064> # -> Williams/Cromwell
+  # Catherine Cromwell, 1477~ - 1520b
+  gen:father <https://www.wikidata.org/wiki/Q75421066> ;
+  gen:mother <#Katherine_Glossop> .
+  # oo 1494~ Morgan Williams, 1470~ - 1516-05, https://www.wikidata.org/wiki/Q75421063
+
+<https://www.wikidata.org/wiki/Q5606868> # -> Baron Cromwell [1540]
+  # Gregory Cromwell, 1st Baron Cromwell, d. 1551-07-04
+  gen:father <https://www.wikidata.org/wiki/Q294435> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5363761> .
+
+
+# Baron Cromwell [1540]
+<https://www.wikidata.org/wiki/Q5606868>
+  # Gregory Cromwell, 1st Baron Cromwell, d. 1551-07-04
+  # 1st Baron Cromwell 1540
+  gen:father <https://www.wikidata.org/wiki/Q294435> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5363761> .
+  # oo Elizabeth Seymour, 1511 - 1563
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5606868> , <https://www.wikidata.org/wiki/Q2059605> ;
+	gen:startDate "1538b" .
+
+<https://www.wikidata.org/wiki/Q5719975>
+  # Henry Cromwell, 2nd Baron Cromwell, 1538 - 1592-11-20
+  gen:father <https://www.wikidata.org/wiki/Q5606868> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2059605> .
+  # oo Lady Mary Paulet, 1540~ – 1592-10-10
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5719975> , <https://www.wikidata.org/wiki/Q15378578> ;
+	gen:startDate "1560b" .
+
+<https://www.wikidata.org/wiki/Q5342462>
+  # Edward Cromwell, 3rd Baron Cromwell, 1560~ - 1607-09-24
+  gen:father <https://www.wikidata.org/wiki/Q5719975> ;
+  gen:mother <https://www.wikidata.org/wiki/Q15378578> .
+  # oo Frances Rugge, d. 1631-11-30b, daughter of William Rugge
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5342462> , <https://www.wikidata.org/wiki/Q75279216> ;
+	gen:startDate "1593~" .
+<https://www.wikidata.org/wiki/Q15623776>
+  # Katharine Cromwell, 1562 - 1620-03-24
+  gen:father <https://www.wikidata.org/wiki/Q5719975> ;
+  gen:mother <https://www.wikidata.org/wiki/Q15378578> .
+  # oo 1581-02-10 Sir Lionel Tollemache, 1st Baronet, 1562-12-14 - 1617a/1621b, https://www.wikidata.org/wiki/Q16848106
+
+<https://www.wikidata.org/wiki/Q7788714>
+  # Thomas Cromwell, 1st Earl of Ardglass, 1594-06-11 - 1653
+  # 4th Baron Cromwell 1607-09-24
+  # 1st Viscount Lecale, in Ulster 1624-11-22
+  # 1st Earl of Ardglass 1645-04-15
+  gen:father <https://www.wikidata.org/wiki/Q5342462> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75279216> .
+  # oo Elizabeth Meverell, d. 1653, daughter of Robert Meverell and Elizabeth Fleming
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7788714> , <https://www.wikidata.org/wiki/Q75260831> .
+<https://www.wikidata.org/wiki/Q75276819>
+  # Anne Cromwell, 1592~ - 1636-07-11
+  gen:father <https://www.wikidata.org/wiki/Q5342462> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75279216> .
+  # oo 1610b Sir Edward Wingfield, 1590~ - 1638-04-22, https://www.wikidata.org/wiki/Q75276817
+
+<https://www.wikidata.org/wiki/Q8025198>
+  # Wingfield Cromwell, 2nd Earl of Ardglass, 1624-09-12 - 1668-10-03
+  gen:father <https://www.wikidata.org/wiki/Q7788714> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75260831> .
+  # oo Mary Russell, 1634b - 1687-09-12a
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8025198> , <https://www.wikidata.org/wiki/Q75260837> .
+
+<https://www.wikidata.org/wiki/Q7788715>
+  # Thomas Cromwell, 3rd Earl of Ardglass, 1653-11-29 - 1682-04-11
+  gen:father <https://www.wikidata.org/wiki/Q8025198> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75260837> .
+  # oo Honora Boyle, d. 1710-11~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7788715> , <https://www.wikidata.org/wiki/Q75260846> .
+
+
+# Williams/Cromwell
+#<https://www.wikidata.org/wiki/Q75421063>
+  # Morgan Williams, 1470~ - 1516-05
+  # oo Catherine Cromwell, 1477~ - 1520b
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75421063> , <https://www.wikidata.org/wiki/Q75421064> ;
+	gen:startDate "1494~" .
+
+<https://www.wikidata.org/wiki/Q11801889>
+  # Sir Richard Williams, 1510~ - 1544
+  gen:father <https://www.wikidata.org/wiki/Q75421063> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75421064> .
+  # oo Frances Murfyn, daughter of Thomas Murfyn and Elizabeth Donne
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q11801889> , <https://www.wikidata.org/wiki/Q75421060> ;
+	gen:startDate "1518" .
+
+<https://www.wikidata.org/wiki/Q11801886>
+  # Sir Henry Williams, of Hinchinbroke, 1535 - 1604-01-07
+  # Henry Cromwell
+  gen:father <https://www.wikidata.org/wiki/Q11801889> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75421060> .
+  # oo Joan Warren, 1545 - 1584-08-22, daughter of Ralph Warren and Joan Trelake
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q11801886> , <https://www.wikidata.org/wiki/Q75425823> .
+
+<https://www.wikidata.org/wiki/Q16867826>
+  # Robert Cromwell, 1560 - 1617-06-24
+  gen:father <https://www.wikidata.org/wiki/Q11801886> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75425823> .
+  # oo Elizabeth Steward, 1565-10-28b - 1654-11-18, daughter of William Steward and Catherine Payne
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16867826> , <https://www.wikidata.org/wiki/Q75421057> ;
+	gen:startDate "1592~" .
+
+<https://www.wikidata.org/wiki/Q18530068>
+  # Joan Cromwell, 1589 - 1641
+  gen:father <https://www.wikidata.org/wiki/Q11801886> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75425823> .
+  # oo Francis Barrington, 1st Baronet, 1573~ - 1623-07-03, https://www.wikidata.org/wiki/Q5480147
+
+<https://www.wikidata.org/wiki/Q44279>
+  # Oliver Cromwell, 1599-04-25 - 1658-09-03
+  gen:father <https://www.wikidata.org/wiki/Q16867826> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75421057> .
+  # oo Elizabeth Bouchier, 1598 - 1665-11-19, daughter of Sir James Bouchier and Frances Crane
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q44279> , <https://www.wikidata.org/wiki/Q3375118> ;
+	gen:startDate "1620" .
+
+<https://www.wikidata.org/wiki/Q6779266>
+  # Mary Cromwell, 1637-02-09b – 1713-03-14
+  gen:father <https://www.wikidata.org/wiki/Q44279> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3375118> .
+  # oo 1657-11-18 Thomas Belasyse, 1st Earl of Fauconberg, 1628-03-16 - 1700-12-31, https://www.wikidata.org/wiki/Q7787543
+<https://www.wikidata.org/wiki/Q17362794>
+  # Frances Cromwell, 1638 - 1720
+  gen:father <https://www.wikidata.org/wiki/Q44279> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3375118> .
+  # oo 1663-05-07 Sir John Russell, 3rd Baronet, 1632 - 1669/1672-03-24, https://www.wikidata.org/wiki/Q7528044 (belasyse.ttl)
+
+
+# Baron Cromwell [1375]
+<https://www.wikidata.org/wiki/Q7288314>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75382825> ;
+  # Ralph de Cromwell, 1st Lord Cromwell, 1335~ - 1398-08-27
+  # 1st Lord Cromwell 1375-12-28
+  gen:father <https://www.wikidata.org/wiki/Q75771229> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75771231> .
+  # oo Maud de Bernake, d. 1419-04-10 (berkeley.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7288314> , <https://www.wikidata.org/wiki/Q75382827> ;
+	gen:startDate "1366-06-20b" .
+  # -> Maud de Cromwell, 1355~ - 1418, https://www.wikidata.org/wiki/Q75771262
+  #   -> Sir John Fitzwilliam, d. 1418-07, https://www.wikidata.org/wiki/Q75771265
+  #     -> Sir John Fitzwilliam, d. 1418-07, https://www.wikidata.org/wiki/Q75771265
+  #       -> Sir John Fitzwilliam, d. 1421, https://www.wikidata.org/wiki/Q75771276
+  #         -> Sir William Fitzwilliam, d. 1474-12-01, https://www.wikidata.org/wiki/Q75771282
+  #           -> Sir William Fitzwilliam, d. 1494-12-01, https://www.wikidata.org/wiki/Q75771290
+  #             -> Dorothy Fitzwilliam, d. 1529b, https://www.wikidata.org/wiki/Q75771308
+  #               -> Philip Copley, 1526 - 1577-10-19, https://www.wikidata.org/wiki/Q75771312
+  #                 -> Averley Copley, 1545 - 1605, https://www.wikidata.org/wiki/Q75771324
+  #                   -> William Copley, d. 1644, https://www.wikidata.org/wiki/Q75771331
+  #                     -> Sir Godfrey Copley, 1st Baronet, 1623-02-21 - 1678-02, https://www.wikidata.org/wiki/Q75468116
+  #                       -> Sir Godfrey Copley, 2nd Baronet, 1653~ - 1709-04-09, https://www.wikidata.org/wiki/Q981207
+  #                         -> Catherine Copley, b. 1680~, https://www.wikidata.org/wiki/Q75468113
+  #                           -> Sir Joseph Copley, 1st Baronet, 1715-01-08 - 1781-04-16, https://www.wikidata.org/wiki/Q27089498
+  #                             -> Juliana Copley, 1762~ - 1834-05-24, https://www.wikidata.org/wiki/Q75412749
+  #                               -> Sir Charles Wager Watson, 2nd Baronet, 1800-01-04 - 1852-12-30, https://www.wikidata.org/wiki/Q75771393
+  #                                 -> Sir Charles Watson-Copley, 3rd Baronet, 1828-04-06 - 1888-04, https://www.wikidata.org/wiki/Q75771395
+  #                                   -> Selina Frances Watson-Copley, 1861~ - 1923-06-23, https://www.wikidata.org/wiki/Q75771413
+  #                                     -> Robert Godfrey Wolseley Bewicke-Copley, 5th Lord Cromwell, 1893-05-23 - 1966-10-21, https://www.wikidata.org/wiki/Q26196776
+  #                                       -> David Godfrey Bewicke-Copley, 6th Lord Cromwell, 1929-05-29 - 1982-08-19, https://www.wikidata.org/wiki/Q21684958
+  #                                         -> Godfrey John Bewicke-Copley, 7th Lord Cromwell, b. 1960-03-04, https://www.wikidata.org/wiki/Q16729331
+  # -> Ralph de Cromwell, 2nd Lord Cromwell, 1362 - 1417-05-02, https://www.wikidata.org/wiki/Q75446938
+  #   -> Maud de Cromwell, https://www.wikidata.org/wiki/Q75446937
+  #     -> Maud Stanhope, 4th Baroness Cromwell, d. 1497-08-30, https://www.wikidata.org/wiki/Q75254060
+
+<https://www.wikidata.org/wiki/Q75587674>
+  # Elizabeth de Cromwell, 1350~ - 1394
+  gen:father <https://www.wikidata.org/wiki/Q7288314> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75382827> .
+  # oo John de Clifton, 1st Lord Clifton, 1353~ - 1388-08-10, https://www.wikidata.org/wiki/Q75488616
+  # oo 1388a Sir Edward Bensted, https://www.wikidata.org/wiki/Q75587675
+<https://www.wikidata.org/wiki/Q75771262>
+  # Maud de Cromwell, 1355~ - 1418
+  gen:father <https://www.wikidata.org/wiki/Q7288314> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75382827> .
+  # oo Sir William Fitzwilliam, https://www.wikidata.org/wiki/Q75771264
+
+<https://www.wikidata.org/wiki/Q75446938>
+  # Ralph de Cromwell, 2nd Lord Cromwell, 1362 - 1417-05-02
+  gen:father <https://www.wikidata.org/wiki/Q7288314> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75382827> .
+  # Joan Grey ???, 1362~ - 1434, daughter of Thomas Gray le Fitz and Margaret Pressene
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75446938> , <https://www.wikidata.org/wiki/Q75771238> ;
+	gen:startDate "1387-09-29" .
+<https://www.wikidata.org/wiki/Q75382824>
+  # Anice de Cromwell, 1363~ - 1421-07-01
+  gen:father <https://www.wikidata.org/wiki/Q7288314> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75382827> .
+  # oo 1382-07-08b Thomas Bardolf, 5th Lord Bardolf, d. 1408-02-19, https://www.wikidata.org/wiki/Q7787379
+
+<https://www.wikidata.org/wiki/Q75771242>
+  # Ralph de Cromwell, 3rd Lord Cromwell, 1403~ - 1455-01-04
+  gen:father <https://www.wikidata.org/wiki/Q75446938> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75771238> .
+  # oo Margaret Deincourt, d. 1454-09-15 (neville.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75771242> , <https://www.wikidata.org/wiki/Q75771244> ;
+	gen:startDate "1424-07-04b" .
+<https://www.wikidata.org/wiki/Q75446937>
+  # Maud de Cromwell
+  gen:father <https://www.wikidata.org/wiki/Q75446938> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75771238> .
+  # oo 1425 Sir Richard Stanhope, 1374~ - 1436, https://www.wikidata.org/wiki/Q51862573
+
+
+# ----
+<https://www.wikidata.org/wiki/Q7529758>
+  # Sir William Russell, 1st Baronet, 1602~ - 1669-11-30
+  # 1st Baronet Russell, of Strensham, co. Worcester 1627-03-12
+  gen:father <https://www.wikidata.org/wiki/Q7793684> . # Thomas Russell, 1577 - 1632
+  # and Elizabeth Spencer
+  # oo Frances Reade, daughter of Sir Thomas Reade and Mary Brocket
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7529758> , <https://www.wikidata.org/wiki/Q75260840> ;
+	gen:startDate "1624-12-01" .
+
+<https://www.wikidata.org/wiki/Q75260837>
+  # Mary Russell, 1634b - 1687-09-12a
+  gen:father <https://www.wikidata.org/wiki/Q7529758> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75260840> .
+  # oo Wingfield Cromwell, 2nd Earl of Ardglass, 1624-09-12 - 1668-10-03, https://www.wikidata.org/wiki/Q8025198
+
+# ====
+<https://www.wikidata.org/wiki/Q5480147>
+  # Francis Barrington, 1st Baronet, 1573~ - 1623-07-03
+  # 1st Baronet Barrington, of Barrington Hall [in Hatfield Broadoak], co. Essex 1611-06-29
+  gen:father <https://www.wikidata.org/wiki/Q53234043> ; # Thomas Barrington
+  gen:mother <https://www.wikidata.org/wiki/Q75238355> . # Winifred Pole
+  # oo Joan Cromwell, 1589 - 1641
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5480147> , <https://www.wikidata.org/wiki/Q18530068> .
+
+<https://www.wikidata.org/wiki/Q7529046>
+  # Sir Thomas Barrington, 2nd Baronet, d. 1644-09~
+  gen:father <https://www.wikidata.org/wiki/Q5480147> ;
+  gen:mother <https://www.wikidata.org/wiki/Q18530068> .
+  # oo Francis Gobert, daughter of John Gobert
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7529046> , <https://www.wikidata.org/wiki/Q75425828> ;
+	gen:startDate "1605b" .
+<#Joan_Barrington>
+  # Joan Barrington, 1621~ - 1653
+  gen:father <https://www.wikidata.org/wiki/Q5480147> ;
+  gen:mother <https://www.wikidata.org/wiki/Q18530068> .
+  # oo Sir Richard Everard, 1st Baronet, d. 1680, https://www.wikidata.org/wiki/Q7528573
+
+<https://www.wikidata.org/wiki/Q76341817>
+  # Sir Gobart Barrington
+  gen:father <https://www.wikidata.org/wiki/Q7529046> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75425828> .
+
+<https://www.wikidata.org/wiki/Q75395674>
+  # Francis Barrington
+  gen:father <https://www.wikidata.org/wiki/Q76341817> .
+  # oo Elizabeth Shute
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75395674> , <https://www.wikidata.org/wiki/Q75395639> .
+
+# ----
+<https://www.wikidata.org/wiki/Q7528573>
+  # Sir Richard Everard, 1st Baronet, d. 1680
+  # 1st Baronet Everard, of Much Waltham in the County of Essex 1629-01-29
+  gen:father <https://www.wikidata.org/wiki/Q97930114> ; # Hugh Everard
+  gen:mother <https://www.wikidata.org/wiki/Q97930115> . # Mary Brand
+  # oo Joan Barrington, 1621~ - 1653
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7528573> , <#Joan_Barrington> .
+
+<#Winifred_Everard>
+  # Winifred Everard
+  gen:father <https://www.wikidata.org/wiki/Q7528573> ;
+  gen:mother <#Joan_Barrington> .
+  # oo 1661 Sir William Luckyn, of Little Waltham, 1st Baronet, 1633~ - 1678b, grimston.ttl#Sir_William_Luckyn,_of_Little_Waltham,_1st_Baronet
+
+# ----
+#<https://www.wikidata.org/wiki/Q75395609>
+  # Francis Shute
+  # son of Robert Shute
+  # and Thomasine Burgoyne
+
+<https://www.wikidata.org/wiki/Q75395606>
+  # Benjamin Shute, d. 1683
+  gen:father <https://www.wikidata.org/wiki/Q75395609> .
+  # oo Elizabeth Caryl, 1650 - 1717, daughter of Rev. Joseph Caryl
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75395606> , <https://www.wikidata.org/wiki/Q75395615> .
+<https://www.wikidata.org/wiki/Q75395624>
+  # Samuel Shute
+  gen:father <https://www.wikidata.org/wiki/Q75395609> .
+
+<https://www.wikidata.org/wiki/Q6220874>
+  # John Barrington, 1st Viscount Barrington of Ardglass, 1678 - 1734-12-14
+  # John Shute
+  # John Barrington 1716
+  # 1st Viscount Barrington of Ardglass, co. Down, 1st Baron Barrington of Newcastle, co. Limerick 1720-07-01
+  gen:father <https://www.wikidata.org/wiki/Q75395606> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75395615> .
+  # oo Anne Daines, 1690 - 1763-02-08, daughter of Sir William Daines and Elizabeth Harris
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6220874> , <https://www.wikidata.org/wiki/Q75261347> ;
+	gen:startDate "1713-06-23" .
+<https://www.wikidata.org/wiki/Q75395639>
+  # Elizabeth Shute
+  gen:father <https://www.wikidata.org/wiki/Q75395624> .
+  # oo Francis Barrington, https://www.wikidata.org/wiki/Q75395674
+
+<https://www.wikidata.org/wiki/Q8005116>
+  # William Wildman Barrington-Shute, 2nd Viscount Barrington of Ardglass, 1717-01-15 - 1793-02-01
+  gen:father <https://www.wikidata.org/wiki/Q6220874> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75261347> .
+  # oo Mary Lovell, d. 1764-09-24 (grimson.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8005116> , <https://www.wikidata.org/wiki/Q75395718> ;
+	gen:startDate "1740-09-16" .
+<https://www.wikidata.org/wiki/Q16197352>
+  # Hon. John Barrington, 1722~ - 1764-04-02
+  gen:father <https://www.wikidata.org/wiki/Q6220874> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75261347> .
+  # oo Elizabeth Vassal, daughter of Florentius Vassal
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16197352> , <https://www.wikidata.org/wiki/Q75271372> .
+
+<https://www.wikidata.org/wiki/Q69360150>
+  # Rev. George Barrington, 5th Viscount Barrington of Ardglass, 1761-07-16 - 1829-03-04
+  gen:father <https://www.wikidata.org/wiki/Q16197352> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75271372> .
+  # oo Elizabeth Adair, 1769~ - 1841-03-02 (keppel.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q69360150> , <https://www.wikidata.org/wiki/Q75261348> ;
+	gen:startDate "1788-02-12" .
+
+<https://www.wikidata.org/wiki/Q8005118>
+  # William Barrington, 6th Viscount Barrington of Ardglass, 1793-10-06 - 1867-02-09
+  gen:father <https://www.wikidata.org/wiki/Q69360150> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75261348> .
+  # oo Hon. Jane Elizabeth Liddell, 1804-09-29 - 1883-03-22
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8005118> , <https://www.wikidata.org/wiki/Q75255913> ;
+	gen:startDate "1823-04-21" .
+<https://www.wikidata.org/wiki/Q5536758>
+  # Hon. George Barrington, 1794-11-20 - 1835-06-02
+  gen:father <https://www.wikidata.org/wiki/Q69360150> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75261348> .
+  # oo Lady Caroline Grey, 1799-08-30 - 1875-04-28
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5536758> , <https://www.wikidata.org/wiki/Q75350356> ;
+	gen:startDate "1827-01-15" .
+<https://www.wikidata.org/wiki/Q75253372>
+  # Hon. Frances Barrington, 1802-10-20 - 1849-08-12
+  gen:father <https://www.wikidata.org/wiki/Q69360150> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75261348> .
+  # oo 1828-10-25 William Legge, 4th Earl of Dartmouth, 1784-11-29 - 1853-11-22, https://www.wikidata.org/wiki/Q7613834
+<https://www.wikidata.org/wiki/Q75355846>
+  # Rev. Hon. Lowther John Barrington, 1805-07-17 - 1897-03-10
+  gen:father <https://www.wikidata.org/wiki/Q69360150> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75261348> .
+  # oo Lady Catherine Georgiana Pelham, 1814-07-21 1885-01-18
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75355846> , <https://www.wikidata.org/wiki/Q75355848> ;
+	gen:startDate "1837-10-26" .
+
+<https://www.wikidata.org/wiki/Q26160687>
+  # Percy Barrington, 8th Viscount Barrington of Ardglass, 1825-04-22 - 1901-04-29
+  gen:father <https://www.wikidata.org/wiki/Q8005118> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75255913> .
+  # oo Louisa Higgins, d. 1884-06-17, daughter of Tully Higgins
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q26160687> , <https://www.wikidata.org/wiki/Q75316691> ;
+	gen:startDate "1845-07-03" .
+<https://www.wikidata.org/wiki/Q75248490>
+  # Hon. Charlotte Maria Barrington, 1826-12-29 - 1854-11-03
+  gen:father <https://www.wikidata.org/wiki/Q8005118> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75255913> .
+  # oo 1850-03-30 Thomas Lyon-Bowes, 12th Earl of Strathmore and Kinghorne, 1822-09-28 - 1865-09-13, https://www.wikidata.org/wiki/Q3990678 (lyon.ttl)
+<https://www.wikidata.org/wiki/Q28315916>
+  gen:name "Hon. Caroline Susan Augusta Barrington"@en ;
+  gen:birthDate "1834-10-21" ;
+  gen:deathDate "1915-01-13" ;
+  gen:father <https://www.wikidata.org/wiki/Q8005118> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75255913> .
+  # oo 1856-04-09 James Charles Herbert Welbore Ellis Agar, 3rd Earl of Normanton, 1818-09-17 - 1896-12-19, https://www.wikidata.org/wiki/Q6128405 (herbert.ttl)
+<https://www.wikidata.org/wiki/Q75258428>
+  # Hon. Augusta Anne Barrington, 1836 - 1915
+  gen:father <https://www.wikidata.org/wiki/Q8005118> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75255913> .
+  # oo 1878-11-12 Rt. Hon. and Most Rev. William Dalrymple Maclagan, 1826-06-18 - 1910-09-19, https://www.wikidata.org/wiki/Q335819
+
+<https://www.wikidata.org/wiki/Q7964256>
+  # Walter Bulkeley Barrington, 9th Viscount Barrington of Ardglass, 1848-04-20 - 1933-09-12
+  gen:father <https://www.wikidata.org/wiki/Q26160687> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75316691> .
+  # oo Mary Isabella Bogue, d. 1903-11-16, daughter of Richard Bogue and Sophia Elizabeth Mudge
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7964256> , <https://www.wikidata.org/wiki/Q75285015> .
+
+<https://www.wikidata.org/wiki/Q75285046>
+  # Maude Louisa Barrington, 1871-01-25 - 1924-08-26
+  gen:father <https://www.wikidata.org/wiki/Q7964256> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75285015> .
+  # oo 1889-08-06 Hon. Eustace Robert Southwell FitzGerald, 1863-04-02 - 1944-01-24, https://www.wikidata.org/wiki/Q75285048
+# ----
+#<https://www.wikidata.org/wiki/Q335819>
+  # Rt. Hon. and Most Rev. William Dalrymple Maclagan, 1826-06-18 - 1910-09-19
+  # Bishop of Lichfield 1878
+  # Archbishop of York between 1891 - 1908
+  # son of David Maclagan
+  # oo Hon. Augusta Anne Barrington, 1836 - 1915
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q335819> , <https://www.wikidata.org/wiki/Q75258428> ;
+	gen:startDate "1878-11-12" .
+
+<https://www.wikidata.org/wiki/Q5387022>
+  # Sir Eric Robert Dalrymple Maclagan, 1879 - 1951-09-14
+  gen:father <https://www.wikidata.org/wiki/Q335819> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75258428> .
+  # oo Helen Elizabeth Lascelles, 1879-10-10 - 1942-10-19
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5387022> , <https://www.wikidata.org/wiki/Q75258427> ;
+	gen:startDate "1913-07-08" .
+
+# ====
+
+# ----
+<https://www.wikidata.org/wiki/Q75488616>
+  # John de Clifton, 1st Lord Clifton, 1353~ - 1388-08-10
+  # 1st Lord Clifton 1376-12-01
+  gen:father <https://www.wikidata.org/wiki/Q75587520> ; # Constantine de Clifton
+  gen:mother <https://www.wikidata.org/wiki/Q75587665> . # Catherine de la Pole
+  # oo Elizabeth de Cromwell, 1350~ - 1394
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75488616> , <https://www.wikidata.org/wiki/Q75587674> .
+
+# ----
+#<https://www.wikidata.org/wiki/Q75587675>
+  # Sir Edward Bensted
+  # oo Elizabeth de Cromwell, 1350~ - 1394
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75587675> , <https://www.wikidata.org/wiki/Q75587674> ;
+	gen:startDate "1388a" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q75771264>
+  # Sir William Fitzwilliam
+  # oo Maud de Cromwell, 1355~ - 1418
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75771264> , <https://www.wikidata.org/wiki/Q75771262> .
+
+<https://www.wikidata.org/wiki/Q75771265>
+  # Sir John Fitzwilliam, d. 1418-07
+  gen:father <https://www.wikidata.org/wiki/Q75771264> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75771262> .
+  # oo Eleanor Green, daughter of Sir Henry Green
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75771265> , <https://www.wikidata.org/wiki/Q75771274> .
+
+<https://www.wikidata.org/wiki/Q75771276>
+  # Sir John Fitzwilliam, d. 1421
+  gen:father <https://www.wikidata.org/wiki/Q75771265> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75771274> .
+  # oo Margaret Clarell, daughter of Sir Thomas Clarell
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75771276> , <https://www.wikidata.org/wiki/Q75771281> .
+
+<https://www.wikidata.org/wiki/Q75771282>
+  # Sir William Fitzwilliam, d. 1474-12-01
+  gen:father <https://www.wikidata.org/wiki/Q75771276> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75771281> .
+  # oo Elizabeth Chaworth, daughter of Sir Thomas Chaworth
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75771282> , <https://www.wikidata.org/wiki/Q75771287> .
+
+<https://www.wikidata.org/wiki/Q75771290>
+  # Sir William Fitzwilliam, d. 1494-12-01
+  gen:father <https://www.wikidata.org/wiki/Q75771282> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75771287> .
+  # oo Elizabeth Conyers, daughter of Sir John Conyers
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75771290> , <https://www.wikidata.org/wiki/Q75771293> .
+
+<https://www.wikidata.org/wiki/Q75771308>
+  # Dorothy Fitzwilliam, d. 1529b
+  gen:father <https://www.wikidata.org/wiki/Q75771290> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75771293> .
+  # oo Sir William Copley, https://www.wikidata.org/wiki/Q75771311
+
+# ----
+#<https://www.wikidata.org/wiki/Q75771311>
+  # Sir William Copley
+  # oo Dorothy Fitzwilliam, d. 1529b
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75771311> , <https://www.wikidata.org/wiki/Q75771308> .
+
+<https://www.wikidata.org/wiki/Q75771312>
+  # Philip Copley, 1526 - 1577-10-19
+  gen:father <https://www.wikidata.org/wiki/Q75771311> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75771308> .
+  # oo Mary Hastings, 1539 - 1597-06-08
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75771312> , <https://www.wikidata.org/wiki/Q75771314> ;
+	gen:startDate "1549b" .
+
+<https://www.wikidata.org/wiki/Q75771324>
+  # Averley Copley, 1545 - 1605
+  gen:father <https://www.wikidata.org/wiki/Q75771312> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75771314> .
+  # oo Joan Gunby, daughter of Simon Gunby
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75771324> , <https://www.wikidata.org/wiki/Q75771329> ;
+	gen:startDate "1566~" .
+
+<https://www.wikidata.org/wiki/Q75771331>
+  # William Copley, d. 1644
+  gen:father <https://www.wikidata.org/wiki/Q75771324> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75771329> .
+  # oo Dorothy Booth, d. 1637, daughter of William Booth
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75771331> , <https://www.wikidata.org/wiki/Q75771335> .
+
+<https://www.wikidata.org/wiki/Q75468116>
+  # Sir Godfrey Copley, 1st Baronet, 1623-02-21 - 1678-02
+  # 1st Baronet Copley, of Sprotborough, co. Yorks 1661-06-17
+  gen:father <https://www.wikidata.org/wiki/Q75771331> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75771335> .
+  # oo Eleanor Walmesley, d. 1649-11~, daughter of Sir Thomas Walmesley and Johana Molyneux
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75468116> , <https://www.wikidata.org/wiki/Q75468117> .
+
+<https://www.wikidata.org/wiki/Q981207>
+  # Sir Godfrey Copley, 2nd Baronet, 1653~ - 1709-04-09
+  gen:father <https://www.wikidata.org/wiki/Q75468116> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75468117> .
+  # oo Catherine Purcell, 1657 - 1699, daughter of John Purcell
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q981207> , <https://www.wikidata.org/wiki/Q75771345> ;
+	gen:startDate "1681" .
+
+<https://www.wikidata.org/wiki/Q75468113>
+  # Catherine Copley, b. 1680~
+  gen:father <https://www.wikidata.org/wiki/Q981207> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75771345> .
+  # oo 1681-10-16 Joseph Moyle, b. 1679-09-11, https://www.wikidata.org/wiki/Q75468112
+
+# ----
+#<https://www.wikidata.org/wiki/Q75468112>
+  # Joseph Moyle, b. 1679-09-11
+  # son of Sir Water Moyle
+  # oo Catherine Copley, b. 1680~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75468112> , <https://www.wikidata.org/wiki/Q75468113> ;
+	gen:startDate "1681-10-16" .
+
+<https://www.wikidata.org/wiki/Q27089498>
+  # Sir Joseph Copley, 1st Baronet, 1715-01-08 - 1781-04-16
+  # Joseph Moyle
+  # Joseph Copley 1768
+  # 1st Baronet Copley, of Sprotbrough, Yorks 1778-08-15
+  gen:father <https://www.wikidata.org/wiki/Q75468112> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75468113> .
+  # oo Mary Buller, 1726-08-18 - 1787-03-03
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q27089498> , <https://www.wikidata.org/wiki/Q75390761> ;
+	gen:startDate "1757-09-23" .
+
+<https://www.wikidata.org/wiki/Q75412752>
+  # Anne Copley, d. 1814-08-05
+  gen:father <https://www.wikidata.org/wiki/Q27089498> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75390761> .
+  # oo 1803-11-04 Thomas Manners-Sutton, 1st Baron Manners of Foston, 1756-02-24 - 1842-05-31, https://www.wikidata.org/wiki/Q7792153
+<https://www.wikidata.org/wiki/Q75390757>
+  # Catharine Copley, 1759-11-23 - 1791-09-13
+  gen:father <https://www.wikidata.org/wiki/Q27089498> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75390761> .
+  # oo 1779-06-20 John James Hamilton, 1st Marquess of Abercorn, 1756-07 - 1818-01-27, https://www.wikidata.org/wiki/Q3809310
+<https://www.wikidata.org/wiki/Q75412749>
+  # Juliana Copley, 1762~ - 1834-05-24
+  gen:father <https://www.wikidata.org/wiki/Q27089498> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75390761> .
+  # oo 1789-07-16 Sir Charles Watson, 1st Baronet, 1751-06-09 - 1844-08-26, https://www.wikidata.org/wiki/Q75771391
+<https://www.wikidata.org/wiki/Q75321483>
+  # Sir Joseph Copley, 3rd Baronet, 1769~ - 1838-05-21
+  gen:father <https://www.wikidata.org/wiki/Q27089498> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75390761> .
+  # oo Lady Cecil Hamilton, 1770-03-15 - 1819-06-19
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75321483> , <https://www.wikidata.org/wiki/Q75390763> ;
+	gen:startDate "1799-05-23" .
+
+<https://www.wikidata.org/wiki/Q75321481>
+  # Maria Copley, 1803-03-04 - 1879-09-14
+  gen:father <https://www.wikidata.org/wiki/Q75321483> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75390763> .
+  # oo 1832-08-09 Henry George Grey, 3rd Earl Grey, 1802-12-28 - 1894-10-09, https://www.wikidata.org/wiki/Q320291
+<https://www.wikidata.org/wiki/Q75771366>
+  # Sir Joseph William Copley, 4th Baronet, 1804-07-27 - 1883-01-03
+  gen:father <https://www.wikidata.org/wiki/Q75321483> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75390763> .
+  # oo Lady Charlotte Anderson-Pelham, 1810-10-20/-22 - 1875-08-10 (anderson.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75771366> , <https://www.wikidata.org/wiki/Q75771371> ;
+	gen:startDate "1831-11-19" .
+# ----
+<https://www.wikidata.org/wiki/Q76232437>
+  # Rebecca Buller, b. 1718-09-24
+  gen:father <https://www.wikidata.org/wiki/Q24254937> ; # John Francis Buller
+  gen:mother <https://www.wikidata.org/wiki/Q75412759> . # Rebecca Trelawny
+  # oo 1741/1747-02-22 Sir Charles Watson , 1714 – 1757-08-16, https://www.wikidata.org/wiki/Q5083387
+<https://www.wikidata.org/wiki/Q75390761>
+  # Mary Buller, 1726-08-18 - 1787-03-03
+  gen:father <https://www.wikidata.org/wiki/Q24254937> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75412759> .
+  # oo 1757-09-23 Sir Joseph Copley, 1st Baronet, 1715-01-08 - 1781-04-16, https://www.wikidata.org/wiki/Q27089498
+
+# ----
+#<https://www.wikidata.org/wiki/Q5083387>
+  # Sir Charles Watson , 1714 – 1757-08-16
+  # son of John Watson
+  # oo Rebecca Buller, b. 1718-09-24
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5083387> , <https://www.wikidata.org/wiki/Q76232437> ;
+	gen:startDate "1741/1747-02-22" .
+
+<https://www.wikidata.org/wiki/Q75771391>
+  # Sir Charles Watson, 1st Baronet, 1751-06-09 - 1844-08-26
+  # 1st Baronet Watson, of Fulmer in the County of Buckingham 1760-03-22
+  gen:father <https://www.wikidata.org/wiki/Q5083387> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76232437> .
+  # oo Juliana Copley, 1762~ - 1834-05-24
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75771391> , <https://www.wikidata.org/wiki/Q75412749> ;
+	gen:startDate "1789-07-16" .
+
+<https://www.wikidata.org/wiki/Q75771393>
+  # Sir Charles Wager Watson, 2nd Baronet, 1800-01-04 - 1852-12-30
+  gen:father <https://www.wikidata.org/wiki/Q75771391> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75412749> .
+  # oo Jemima Charlotte Colleton, d. 1877-04-16, daughter of Charles Garth Colleton
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75771393> , <https://www.wikidata.org/wiki/Q75771239> ;
+	gen:startDate "1827-06-19" .
+
+<https://www.wikidata.org/wiki/Q75771395>
+  # Sir Charles Watson-Copley, 3rd Baronet, 1828-04-06 - 1888-04
+  # Charles Watson
+  # Charles Watson-Copley
+  gen:father <https://www.wikidata.org/wiki/Q75771393> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75771239> .
+  # oo Georgina Tredcroft, 1828-04-28 - 1892-01-27, , daughter of Rev. Robert Tredcroft and Frances Katherine Pechell
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75771395> , <https://www.wikidata.org/wiki/Q75771398> ;
+	gen:startDate "1854-05-12" .
+
+<https://www.wikidata.org/wiki/Q75771413>
+  # Selina Frances Watson-Copley, 1861~ - 1923-06-23
+  gen:father <https://www.wikidata.org/wiki/Q75771395> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75771398> .
+  # oo 1886-02-02 Sir Robert Calverley Alington Bewicke-Copley, b. 1855~, https://www.wikidata.org/wiki/Q75771401
+
+# ----
+#<https://www.wikidata.org/wiki/Q75771401>
+  # Sir Robert Calverley Alington Bewicke-Copley, b. 1855~
+  # Robert Calverley Alington Bewicke
+  # Robert Calverley Alington Bewicke-Copley 1892-04-05
+  # son of Robert Calverley Bewicke
+  # and Mary Teresa Gooch
+  # oo Selina Frances Watson-Copley, 1861~ - 1923-06-23
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75771401> , <https://www.wikidata.org/wiki/Q75771413> ;
+	gen:startDate "1886-02-02" .
+
+<https://www.wikidata.org/wiki/Q26196776>
+  # Robert Godfrey Wolseley Bewicke-Copley, 5th Lord Cromwell, 1893-05-23 - 1966-10-21
+  # 5th Lord Cromwell 1923-07-16
+  gen:father <https://www.wikidata.org/wiki/Q75771401> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75771413> .
+  # oo Freda Constance Cripps, 1898-09-11 - 1979, daughter of Sir Frederick William Beresford Cripps and Constance Agnes Wykeham
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q26196776> , <https://www.wikidata.org/wiki/Q75771433> ;
+	gen:startDate "1925-02-12" .
+
+<https://www.wikidata.org/wiki/Q21684958>
+  # David Godfrey Bewicke-Copley, 6th Lord Cromwell, 1929-05-29 - 1982-08-19
+  gen:father <https://www.wikidata.org/wiki/Q26196776> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75771433> .
+  # oo Doris Vivian Penfold, daughter of Hugh de Lisle Penfold
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q21684958> , <https://www.wikidata.org/wiki/Q75771441> ;
+	gen:startDate "1954-01-16" .
+
+<https://www.wikidata.org/wiki/Q16729331>
+  # Godfrey John Bewicke-Copley, 7th Lord Cromwell, b. 1960-03-04
+  gen:father <https://www.wikidata.org/wiki/Q21684958> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75771441> .
+  # oo Elizabeth Ann Hawksley, daughter of John Hawksley
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16729331> , <https://www.wikidata.org/wiki/Q75771194> ;
+	gen:startDate "1990-06-23" .
+
+<https://www.wikidata.org/wiki/Q75771203>
+  # Hon. Helen Tatiana Bewicke-Copley, b. 1995-03-18
+  gen:father <https://www.wikidata.org/wiki/Q16729331> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75771194> .
+<https://www.wikidata.org/wiki/Q75771195>
+  # Hon. David Godfrey Bewicke-Copley, b. 1997-09-21
+  gen:father <https://www.wikidata.org/wiki/Q16729331> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75771194> .
+<https://www.wikidata.org/wiki/Q75771198>
+  # Hon. John William Bewicke-Copley, b. 2000-11-14
+  gen:father <https://www.wikidata.org/wiki/Q16729331> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75771194> .
+<https://www.wikidata.org/wiki/Q75771200>
+  # Hon. Ralph Thomas Bewicke-Copley, b. 2000-11-14
+  gen:father <https://www.wikidata.org/wiki/Q16729331> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75771194> .
+
+# ----
+<https://www.wikidata.org/wiki/Q7787379>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75268059> ;
+  # Thomas Bardolf, 5th Lord Bardolf, d. 1408-02-19
+  gen:father <https://www.wikidata.org/wiki/Q8005048> .
+  # and Agnes de Poynings
+  # oo Anice de Cromwell, d. 1421-07-01
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7787379> , <https://www.wikidata.org/wiki/Q75382824> ;
+	gen:startDate "1382-07-08b" .
+
+<https://www.wikidata.org/wiki/Q75382842>
+  # Anne Bardolf, 1389-06-24 - 1453-11-06
+  gen:father <https://www.wikidata.org/wiki/Q7787379> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75382824> .
+  # oo Sir William de Clifford, 1364a - 1419~, https://www.wikidata.org/wiki/Q75382850
