@@ -1467,7 +1467,7 @@
   # Hon. Philadelphia Carey, 1552 - 1626-02-03
   gen:father <https://www.wikidata.org/wiki/Q2553789> ;
   gen:mother <https://www.wikidata.org/wiki/Q4768660> .
-  # oo 1584~ Thomas Scrope, 10th Baron Scrope of Bolton, 1567~ - 1609-09-02, https://www.wikidata.org/wiki/Q7793844 (st_john.ttl)
+  # oo 1584~ Thomas Scrope, 10th Baron Scrope of Bolton, 1567~ - 1609-09-02, https://www.wikidata.org/wiki/Q7793844 (neville.ttl)
 <https://www.wikidata.org/wiki/Q6225119>
   # John Carey, 3rd Baron Hunsdon, 1556~ - 1617-04-04~
   gen:father <https://www.wikidata.org/wiki/Q2553789> ;
@@ -1659,14 +1659,102 @@
 # ====
 
 # ----
-#<https://www.wikidata.org/wiki/Q7287471>
+<https://www.wikidata.org/wiki/Q7287471>
   # Ralph Eure, 3rd Lord Eure, 1558-09-24 - 1617-04-01
-  # son of William Eure, 2nd Lord Eure
-  # and Margaret Dymoke
+  gen:father <https://www.wikidata.org/wiki/Q75411828> ; # William Eure, 2nd Lord Eure, 1529-05-10 - 1594-09-12
+  gen:mother <https://www.wikidata.org/wiki/Q76317432> . # oo Margaret Dymoke, daughter of Sir Edward Dymoke
   # oo Elizabeth Spencer, 1552-06-29 - 1618-02-25
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7287471> , <https://www.wikidata.org/wiki/Q5363536> ;
 	gen:startDate "1612-03a" .
+<#Sir_William_Eure>
+  # Hon. Sir William Eure, of Bradley, 1586-01-21b - 1629-03-18b
+  gen:father <https://www.wikidata.org/wiki/Q75411828> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76317432> .
+  # oo Catherine Bowes, 1570~ - 1644
+  []
+    gen:spouse <#Sir_William_Eure> , <neville.ttl#Catherine_Bowes> ;
+	gen:startDate "1603b" .
+
+<#Margaret_Eure>
+  # Margaret Eure, b. 1603~
+  gen:father <#Sir_William_Eure> ;
+  gen:mother <neville.ttl#Catherine_Bowes> .
+  # oo Sir Thomas Howard, of Tursdale, 1596-10-14 - 1642-12-13, howard.ttl##Sir_Thomas_Howard,_of_Tursdale
+<#William_Eure>
+  # William Eure, 1613~ - 1685
+  gen:father <#Sir_William_Eure> ;
+  gen:mother <neville.ttl#Catherine_Bowes> .
+  # oo Mary Forger, d. 1670
+  []
+    gen:spouse <#William_Eure> , <#Mary_Forger> .
+
+<#Mary_Eure>
+  # Mary Eure, 1651~ - 1731
+  # 16th Baroness Scrope of Bolton de jure
+  # abeyant 1731
+  gen:father <#William_Eure> ;
+  gen:mother <#Mary_Forger> .
+  # oo 1686 Michael Johnson, d. 1714, #Michael_Johnson
+# ----
+#<#Michael_Johnson>
+  # Michael Johnson, d. 1714
+  # oo Mary Eure, 1651~ - 1731
+  []
+    gen:spouse <#Michael_Johnson> , <#Mary_Eure> .
+
+<#Mary_Johnson>
+  # Mary Johnson, 1689 - 1730-06-08
+  gen:father <#Michael_Johnson> ;
+  gen:mother <#Mary_Eure> .
+  # oo 1716-10 John Brockholes, 1645 - 1719-03-06, https://www.wikidata.org/wiki/Q75274354
+  # oo 1724-01 Richard Jones, d. 1732-11-23, #Richard_Jones
+# ----
+#<https://www.wikidata.org/wiki/Q75274354>
+  # John Brockholes, 1645 - 1719-03-06
+  # son of Thomas Brockholes, 1613 - 1668, son of John Brockholes
+  # and Mary Holden, daughter of John Holden
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75274354> , <#Mary_Johnson> ;
+	gen:startDate "1716-10" .
+
+<https://www.wikidata.org/wiki/Q75257658>
+  # Catherine Brockholes, 1718-04-30 - 1784-11-21
+  gen:father <https://www.wikidata.org/wiki/Q75274354> ;
+  gen:mother <#Mary_Johnson> .
+  # oo 1739-11-08 Charles Howard, 10th Duke of Norfolk, 1720-12-01 - 1786-08-31, https://www.wikidata.org/wiki/Q968911
+# ----
+#<#Richard_Jones>
+  # Richard Jones, d. 1732-11-23
+  # oo Mary Johnson, 1689 - 1730-06-08
+  []
+    gen:spouse <#Richard_Jones> , <#Mary_Johnson> ;
+	gen:startDate "1724-01" .
+
+<#Michael_Jones>
+  # Michael Jones, 1729-11-23 - 1801-07-24
+  gen:father <#Richard_Jones> ;
+  gen:mother <#Mary_Johnson> .
+  # oo Mary Smith, d. 1814-10
+  []
+    gen:spouse <#Michael_Jones> , <#Mary_Smith> ;
+	gen:startDate "1773-10-14" .
+
+<#Charles_Jones>
+  # Charles Jones, 1774~ - 1840-01-28
+  # 17th Baron Scrope of Bolton de jure 1814
+  gen:father <#Michael_Jones> ;
+  gen:mother <#Mary_Smith> .
+  # oo Catherine Yates
+  []
+    gen:spouse <#Charles_Jones> , <#Catherine_Yates> ;
+	gen:startDate "1807" .
+
+<#Henry_James_Jones>
+  # Henry James Jones, b. 1812-09-13
+  # 18th Baron Scrope of Bolton de jure 1840-01-28
+  gen:father <#Charles_Jones> ;
+  gen:mother <#Catherine_Yates> .
 
 # ----
 #<https://www.wikidata.org/wiki/Q5482808>
