@@ -2,6 +2,7 @@
 @prefix gen: <http://jjkoch.de/gen#> .
 @prefix wdata: <https://www.wikidata.org/wiki/> .
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 # Sir Maurice Buchanan, 9th of Buchanan, d. 1290~
 
@@ -371,7 +372,7 @@
   gen:mother <https://www.wikidata.org/wiki/Q75514301> .
   # oo Frances Katherine Mellish, 1815~ - 1854-12-01
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q7525998> , <#Frances_Katherine_Mellish> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q7525998> , <https://www.wikidata.org/wiki/Q75348945> ;
 	gen:startDate "1839-04-04" .
   # oo Hon. Georgiana Eliza Stuart, 1821 - 1904-03-21
   []
@@ -389,13 +390,13 @@
 <https://www.wikidata.org/wiki/Q7527378>
   # Sir James Buchanan, 2nd Baronet, 1840-08-07 - 1901-10-16
   gen:father <https://www.wikidata.org/wiki/Q7525998> ;
-  gen:mother <#Frances_Katherine_Mellish> .
+  gen:mother <https://www.wikidata.org/wiki/Q75348945> .
   # oo 1873-02-19 Arabella Catherine Colquitt-Craven, 1850~ - 1935-10-25
 <https://www.wikidata.org/wiki/Q7526645>
   # http://www.clanmacfarlanegenealogy.info/genealogy/TNGWebsite/getperson.php?personID=I9915&tree=CC
   # Sir Eric Alexander Buchanan, 3rd Baronet, 1848-08-19 - 1928-07-29
   gen:father <https://www.wikidata.org/wiki/Q7525998> ;
-  gen:mother <#Frances_Katherine_Mellish> .
+  gen:mother <https://www.wikidata.org/wiki/Q75348945> .
   # oo Constance Augusta Tennant, 1870~ - 1914-12-26, daughter of Charles Edmund Tennant
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7526645> , <https://www.wikidata.org/wiki/Q7526645> ;
@@ -403,16 +404,16 @@
 #<#Andrew_Archibald_Buchanan>
   # Andrew Archibald Buchanan, 1850-01-16 – 1932-10-05
 #  gen:father <https://www.wikidata.org/wiki/Q7525998> ;
-#  gen:mother <#Frances_Katherine_Mellish> .
+#  gen:mother <https://www.wikidata.org/wiki/Q75348945> .
 <#Louisa_Buchanan>
   # Louisa Buchanan, 1852~ - 1923-01-19
   gen:father <https://www.wikidata.org/wiki/Q7525998> ;
-  gen:mother <#Frances_Katherine_Mellish> .
+  gen:mother <https://www.wikidata.org/wiki/Q75348945> .
   # oo 1871-08-23 Sir George Francis Bonham, 2nd Baronet, 1847-08-28 - 1927-07-31, https://www.wikidata.org/wiki/Q7526839
 <https://www.wikidata.org/wiki/Q731050>
   # Sir George William Buchanan, 1854-11-25 – 1924-12-20
   gen:father <https://www.wikidata.org/wiki/Q7525998> ;
-  gen:mother <#Frances_Katherine_Mellish> .
+  gen:mother <https://www.wikidata.org/wiki/Q75348945> .
   # oo Lady Georgiana Meriel Bathurst, 1863-07-25 – 1922-04-25 (courtenay.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q731050> , <https://www.wikidata.org/wiki/Q75348877> ;
@@ -486,7 +487,8 @@
   # James Buchanan, 1st Baron Woolavington, 1849-08-16 – 1935-08-09
   # 1st Baronet Buchanan, of Lavington, co. Sussex 1920-02-06
   # 1st Baron Woolavington, of Lavington, co. Sussex 1922-01-24
-  # son of Alexander Buchanan and oo 1830-11-21 Catherine McLean
+  # son of Alexander Buchanan
+  # and oo 1830-11-21 Catherine McLean
   # oo Anne Annie Eliza Pounder, d. 1918-10-05, daughter of Thomas Pounder
   []
     gen:spouse <https://www.wikidata.org/wiki/Q6130430> , <#Anne_Annie_Eliza_Pounder> ;
@@ -524,13 +526,17 @@
   # oo Rev. Edward Young Buchanan, 1811-05-30 - 1895-01-20, https://www.wikidata.org/wiki/Q21403361
 
 # ----
-#<https://www.wikidata.org/wiki/Q55639635>
+<https://www.wikidata.org/wiki/Q55639635>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75348930> .
   # Very Rev. Edward Mellish, 1766-06-21 – 1830-12-11
   # Dean of Hereford
-  # oo Elizabeth Jane Leigh
+  # oo Elizabeth Jane Leigh, d. 1826-05-09
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q55639635> , <https://www.wikidata.org/wiki/Q76272485> ;
+	gen:startDate "1811" .
 
-<#Frances_Katherine_Mellish>
+<https://www.wikidata.org/wiki/Q75348945>
   # Frances Katherine Mellish, 1815~ - 1854-12-01
-  gen:father <https://www.wikidata.org/wiki/Q55639635> .
-  # and Elizabeth Jane Leigh
+  gen:father <https://www.wikidata.org/wiki/Q55639635> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76272485> .
   # oo 1839-04-04 Sir Andrew Buchanan, of Craigend, 1st Baronet of Dunburgh, 1807-05-07 - 1882-11-13, https://www.wikidata.org/wiki/Q7525998

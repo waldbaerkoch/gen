@@ -2,6 +2,7 @@
 @prefix gen: <http://jjkoch.de/gen#> .
 @prefix wdata: <https://www.wikidata.org/wiki/> .
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 #<https://www.wikidata.org/wiki/Q18529093>
   # Sir THomas Coventry, 1547 - 1606-12-12
@@ -563,23 +564,81 @@
 
 
 # ----
-#<https://www.wikidata.org/wiki/Q16239817>
-  # Sir John Hare, 1603 – 1637
+#<#John_Hare>
+  # John Hare, of Stow-Bardolph
+  # son of John Hare, of London and Homersfield 
+
+<#Richard_Hare>
+  # Richard Hare, of Stow-Bardolph
+  gen:father <#John_Hare> .
+  # oo Elizabeth Barnes, d. 1655-12-02, daughter of Richard Barnes
+<https://www.wikidata.org/wiki/Q23731472>
+  # John Hare, 1575 - 1613
+  gen:father <#John_Hare> .
+  # oo Margaret Crouch, 1582~ - 1653-12
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q23731472> , <https://www.wikidata.org/wiki/Q75563979> ;
+	gen:startDate "1602" .
+
+<#Sir_Ralph_Hare>
+  # Sir Ralph Hare, d. 1623-08
+  gen:father <#Richard_Hare> .
+  # and Elizabeth Barnes
+  # oo Mary Holmden, d. 1623b, daughter of Sir Edward Holmden
+<https://www.wikidata.org/wiki/Q16827361>
+  # Hugh Hare, 1st Baron Coleraine, 1606 - 1667-10-19
+  # 1st Baron Coleraine 1625
+  gen:father <https://www.wikidata.org/wiki/Q23731472> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75563979> .
+  # oo Lady Lucy Montagu, d. 1682-02
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16827361> , <https://www.wikidata.org/wiki/Q75414333> ;
+	gen:startDate "1632" .
+
+<https://www.wikidata.org/wiki/Q16239817>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75258568> ;
+  # Sir John Hare, of Stow Bardolph, 1603 – 1637
+  gen:father <#Sir_Ralph_Hare> .
+  # and Mary Holmden
   # oo Hon. Elizabeth Coventry
   []
     gen:spouse <https://www.wikidata.org/wiki/Q16239817> , <https://www.wikidata.org/wiki/Q75281368> .
+<https://www.wikidata.org/wiki/Q75414331>
+  # Alice Hare, b. 1633-10-20
+  gen:father <https://www.wikidata.org/wiki/Q16827361> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75414333> .
+  # oo 1655-02-27 Sir George Fletcher, 2nd Baronet, 1633~ - 1700-07-23, https://www.wikidata.org/wiki/Q7526881 (hope.ttl)
 
 <https://www.wikidata.org/wiki/Q7287600>
   # Sir Ralph Hare, 1st Baronet, 1623-03-24 – 1672-02-28
   # 1st Baronet Hare, of Stow Bardolph, Norfolk 1641-07-23
   gen:father <https://www.wikidata.org/wiki/Q16239817> ;
   gen:mother <https://www.wikidata.org/wiki/Q75281368> .
+  # oo Mary Crane, 1629-03-19b - 1660-08-30 (cecil.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7287600> , <https://www.wikidata.org/wiki/Q75495378> ;
+	gen:startDate "1647-10-26~" .
 <https://www.wikidata.org/wiki/Q75251649>
   # Elizabeth Hare, 1630~, - 1699-10-21b
   gen:father <https://www.wikidata.org/wiki/Q16239817> ;
   gen:mother <https://www.wikidata.org/wiki/Q75281368> .
   # oo Woolley Leigh, https://www.wikidata.org/wiki/Q75266353
   # oo Sir John Lowther, 1st Baronet, 1605-02-20 – 1675-11-30, https://www.wikidata.org/wiki/Q7527897
+
+<https://www.wikidata.org/wiki/Q75813384>
+  # Sir Thomas Hare, 2nd Baronet, 1658~ - 1693-01-01
+  gen:father <https://www.wikidata.org/wiki/Q7287600> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75495378> .
+  # oo Elizabeth Dashwood, d. 1750, daughter of George Dashwood and Margaret Perry
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75813384> , <https://www.wikidata.org/wiki/Q75813381> ;
+	gen:startDate "1680-04-20" .
+
+<https://www.wikidata.org/wiki/Q75904545>
+  # Mary Hare, b. 1688~
+  gen:father <https://www.wikidata.org/wiki/Q75813384> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75813381> .
+  # oo Thomas Leigh, b. 1688~, https://www.wikidata.org/wiki/Q75776730
 # ----
 #<https://www.wikidata.org/wiki/Q75266353>
   # Woolley Leigh
