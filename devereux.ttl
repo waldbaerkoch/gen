@@ -2,6 +2,7 @@
 @prefix gen: <http://jjkoch.de/gen#> .
 @prefix wdata: <https://www.wikidata.org/wiki/> .
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 #<https://www.wikidata.org/wiki/Q18159895>
   # Walter Devereux, 1173 - 1197~
@@ -316,7 +317,7 @@
   # Hon. Frances Devereux, 1659 - 1687-03-20
   gen:father <https://www.wikidata.org/wiki/Q6519176> ;
   gen:mother <https://www.wikidata.org/wiki/Q75257247> .
-  # oo 1679-07-12~ William Tracy, 4th Viscount Tracy of Rathcoole, 1657~ – 1712-04-18, https://www.wikidata.org/wiki/Q75257252
+  # oo 1679-07-12~ William Tracy, 4th Viscount Tracy of Rathcoole, 1657~ – 1712-04-18, https://www.wikidata.org/wiki/Q75257252 (leigh.ttl)
 <https://www.wikidata.org/wiki/Q6519177>
   # Leicester Devereux, 7th Viscount Hereford, 1674~ – 1683-02~
   gen:father <https://www.wikidata.org/wiki/Q6519176> ;
@@ -391,9 +392,9 @@
   # Edward Devereux, 12th Viscount Hereford, 1740-02-19 - 1783-08-01
   gen:father <https://www.wikidata.org/wiki/Q5342577> ;
   gen:mother <#Catherine_Mytton> .
-  # oo Henrietta Charlotte Keck, b. 1740/1741
+  # oo Henrietta Charlotte Keck, b. 1740/1741 (leigh.ttl)
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q16152631> , <wemyss.ttl#Henrietta_Charlotte_Keck> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q16152631> , <https://www.wikidata.org/wiki/Q75969338> ;
 	gen:startDate "1774-06-02" .
 <https://www.wikidata.org/wiki/Q5538504>
   # George Devereux, 13th Viscount Hereford, 1744-04-25 - 1804-12-31
@@ -784,195 +785,6 @@
   gen:father <https://www.wikidata.org/wiki/Q3568523> .
   # and Anne Tryon
   # oo 1634-06 Essex Devereux, 1615 – 1639, #Essex_Devereux
-
-# ----
-<#John_Tracy,_3rd_Viscount_Tracy>
-  # John Tracy, 3rd Viscount Tracy of Rathcoole, 1617 - 1688-03-08
-  gen:father <https://www.wikidata.org/wiki/Q7350448>.
-  # and Bridget Lyttelton
-  # oo Hon. Elizabeth Leigh, d. 1688
-  []
-    gen:spouse <#John_Tracy,_3rd_Viscount_Tracy> , <#Elizabeth_Leigh> ;
-	gen:startDate "1655~" .
-
-<https://www.wikidata.org/wiki/Q75257252>
-  # William Tracy, 4th Viscount Tracy of Rathcoole, 1657~ – 1712-04-18,
-  gen:father <#John_Tracy,_3rd_Viscount_Tracy> ;
-  gen:mother <#Elizabeth_Leigh> .
-  # oo Hon. Frances Devereux, 1659 - 1687-03-20
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q75257252> , <https://www.wikidata.org/wiki/Q75257250> ;
-	gen:startDate "1679-07-12~" .
-
-<https://www.wikidata.org/wiki/Q75257254>
-  # Hon. Elizabeth Tracy, 1680-03-19 - 1747-05-27
-  gen:father <https://www.wikidata.org/wiki/Q75257252> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75257250> .
-  # oo 1704-11-11 Robert Burdett, d. 1716-01-02, https://www.wikidata.org/wiki/Q75257256
-# ----
-#<https://www.wikidata.org/wiki/Q7791799>
-  # Sir Thomas Leigh, 1509 - 1571-11-17
-  # oo Alice Barker, d. 1603, daughter of John Barker
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q7791799> , <#Alice_Barker> ;
-	gen:startDate "1536-03-13b" .
-
-<https://www.wikidata.org/wiki/Q75385154>
-  # Sir Thomas Leigh, 1st Baronet, d. 1626-02-01
-  # 1st Baronet Leigh, of Stoneleigh, co. Warwick 1611-06-29
-  gen:father <https://www.wikidata.org/wiki/Q7791799> ;
-  gen:mother <#Alice_Barker> .
-  # oo Katherine Spencer, d. 1639
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q75385154> , <spencer.ttlhttps://www.wikidata.org/wiki/Q75385152> ;
-	gen:startDate "1570" .
-<#Sir_William_Leigh>
-  # Sir William Leigh, d. 1628
-  gen:father <https://www.wikidata.org/wiki/Q7791799> ;
-  gen:mother <#Alice_Barker> .
-  # oo Frances Harington
-  []
-    gen:spouse <#Sir_William_Leigh> , <#Frances_Harington> ;
-	gen:startDate "1578" .
-
-<#Sir_John_Leigh>
-  # Sir John Leigh, d. 1625
-  gen:father <https://www.wikidata.org/wiki/Q75385154> ;
-  gen:mother <spencer.ttlhttps://www.wikidata.org/wiki/Q75385152> .
-  # oo Ursula Hoddesdon, d. 1597, daughter of Sir Christopher Hoddesdon
-  []
-    gen:spouse <#Sir_John_Leigh> , <#Ursula_Hoddesdon> ;
-	gen:startDate "1588" .
-  # oo Anna Cope
-  []
-    gen:spouse <#Sir_John_Leigh> , <#Anna_Cope> ;
-	gen:startDate "1599-12-05" .
-<https://www.wikidata.org/wiki/Q16257355>
-  # Alice Leigh, Duchess Dudley, 1579 – 1669-01-22
-  # Duchess Dudley 1644-05-23
-  gen:father <https://www.wikidata.org/wiki/Q75385154> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75385152> .
-  # oo 1596-09-11 Sir Robert Dudley, Earl of Warwick, 1574-08-07 - 1649-09-06, https://www.wikidata.org/wiki/Q1764693 (sutton.ttl)
-<https://www.wikidata.org/wiki/Q5481711>
-  # Sir Francis Leigh, 1579~ – 1625-08-01
-  gen:father <#Sir_William_Leigh> ;
-  gen:mother <#Frances_Harington> .
-  # oo Hon. Mary Egerton, d. 1612-04-03
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q5481711> , <egerton.ttl#Mary_Egerton_(died_1612)> ;
-	gen:startDate "1597-06-09" .
-
-<https://www.wikidata.org/wiki/Q7791798>
-  # Thomas Leigh, 1st Baron Leigh of Stoneleigh, 1595 - 1671-02-22
-  # 2nd Baronet Leigh, of Stoneleigh, co. Warwick 1626-02-01
-  # 1st Baron Leigh of Stoneleigh, co. Warwick 1643-07-01
-  gen:father <#Sir_John_Leigh> ;
-  gen:mother <#Ursula_Hoddesdon> .
-  # oo Mary Egerton, d. 1669
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q7791798> , <egerton.ttl#Mary_Egerton_(died_1669)> ;
-	gen:startDate "1610-11-11" .
-<https://www.wikidata.org/wiki/Q5481704>
-  gen:name "Francis Leigh, 1st Earl of Chichester"@en ;
-  gen:birthDate "1598-04-28" ;
-  gen:deathDate "1653-12-21" ;
-  # 1st Baronet Leigh 1618-12-24
-  # 1st Baron Dunsmore, co. Warwick 1628-07-31
-  # 1st Earl of Chichester, co. Sussex 1644-06-03
-  gen:father <https://www.wikidata.org/wiki/Q5481711> ;
-  gen:mother <egerton.ttl#Mary_Egerton_(died_1612)> .
-  # oo Hon. Audrey Boteler, 1595 - 1652-09-16
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q5481704> , <howard.ttl#Audrey_Boteler> ;
-	gen:startDate "1617~" .
-
-<https://www.wikidata.org/wiki/Q75258329>
-  # Hon. Sir Thomas Leigh, 1616~ - 1662-04-05
-  gen:father <https://www.wikidata.org/wiki/Q7791798> ;
-  gen:mother <egerton.ttl#Mary_Egerton_(died_1669)> .
-  # oo Jane FitzMaurice (fitzgerald.ttl)
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q75258329> , <https://www.wikidata.org/wiki/Q75463977> ;
-	gen:startDate "1650" .
-<https://www.wikidata.org/wiki/Q75243530>
-  # Hon. Charles Leigh, 1625 - 1704-07-30
-  gen:father <https://www.wikidata.org/wiki/Q7791798> ;
-  gen:mother <egerton.ttl#Mary_Egerton_(died_1669)> .
-  # oo Anne Littleton, d. 1697-11-02
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q75243530> , <https://www.wikidata.org/wiki/Q75243537> .
-<#Elizabeth_Leigh>
-  # Hon. Elizabeth Leigh, d. 1688
-  gen:father <https://www.wikidata.org/wiki/Q7791798> ;
-  gen:mother <egerton.ttl#Mary_Egerton_(died_1669)> .
-  # oo 1655~ John Tracy, 3rd Viscount Tracy of Rathcoole, 1617 - 1688-03-08, #John_Tracy,_3rd_Viscount_Tracy
-<#Lady_Elizabeth_Leigh>
-  # Lady Elizabeth Leigh, d. 1655
-  gen:father <https://www.wikidata.org/wiki/Q5481704> ;
-  gen:mother <howard.ttl#Audrey_Boteler> .
-  # oo 1642-04-24~ Thomas Wriothesley, 4th Earl of Southampton, 1607 - 1667-05-16, https://www.wikidata.org/wiki/Q1986689
-<#Lady_Mary_Leigh>
-  # Lady Mary Leigh, d. 1671-07-07
-  gen:father <https://www.wikidata.org/wiki/Q5481704> ;
-  gen:mother <howard.ttl#Audrey_Boteler> .
-  # oo 1660 George Villiers, 4th Viscount Grandison, 1617~ - 1699-12-16, https://www.wikidata.org/wiki/Q56611885
-
-<#Honora_Leigh>
-  # Honora Leigh, 1649-05-17 - 1730-09-11
-  gen:father <https://www.wikidata.org/wiki/Q75258329> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75463977> .
-  # oo 1674 Sir William Egerton, 1649-08-15 - 1691-12, egerton.ttl#Sir_William_Egerton
-<https://www.wikidata.org/wiki/Q75266907>
-  # Thomas Leigh, 2nd Baron Leigh of Stoneleigh, 1652-06-17 - 1710-11-12
-  gen:father <https://www.wikidata.org/wiki/Q75258329> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75463977> .
-  # oo Eleanor Watson, d. 1705 (manners.ttl)
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q75266907> , <https://www.wikidata.org/wiki/Q75776278> ;
-	gen:startDate "1679-10-25" .
-<https://www.wikidata.org/wiki/Q75243528>
-  # Alicia Leigh, 1661~ - 1684-06-04
-  gen:father <https://www.wikidata.org/wiki/Q75243530> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75243537> .
-  # oo 1678-09-03 Altham Annesley, 1st Baron Altham, 1650b - 1699-04-26, https://www.wikidata.org/wiki/Q75243523
-
-<https://www.wikidata.org/wiki/Q75776583>
-  # Edward Leigh, 3rd Baron Leigh of Stoneleigh, 1684-01-13 - 1738-03-09
-  gen:father <https://www.wikidata.org/wiki/Q75266907> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75776278> .
-  # oo Mary Holbech, daughter of Thomas Holbech and Elizabeth Paulet
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q75776583> , <https://www.wikidata.org/wiki/Q75776586> ;
-	gen:startDate "1705-09-11" .
-<https://www.wikidata.org/wiki/Q76357279>
-  # Hon. Charles Leigh, 1686-03-28b - 1749-07-28
-  gen:father <https://www.wikidata.org/wiki/Q75266907> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75776278> .
-  # oo Lady Barbara Lumley, d. 1755-01-04
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q76357279> , <https://www.wikidata.org/wiki/Q76357275> ;
-	gen:startDate "1716" .
-
-<https://www.wikidata.org/wiki/Q75591662>
-  # Thomas Leigh, 4th Baron Leigh of Stoneleigh, 1713-04-29 - 1749-11-30b
-  gen:father <https://www.wikidata.org/wiki/Q75776583> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75776586> .
-  # oo Maria Rebecca Craven, 1705~ - 1746-12-09b
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q75591662> , <https://www.wikidata.org/wiki/Q75262875> ;
-	gen:startDate "1736~" .
-
-# ----
-#<https://www.wikidata.org/wiki/Q7526008>
-  # Sir Anthony Cope, 1st Baronet, 1549 - 1615
-  # 1st Baronet Cope, of Hanwell, Oxfordshire 1611
-  # oo Frances Lytton, daughter of Rowland Lytton
-
-<#Anna_Cope>
-  # Anna Cope
-  gen:father <https://www.wikidata.org/wiki/Q7526008> .
-  # and Frances Lytton
-  # oo 1599-12-05 Sir John Leigh, d. 1625, #Sir_John_Leigh
 
 # ----
 <#Frances_Elizabeth_Cornewall>

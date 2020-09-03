@@ -309,10 +309,11 @@
   gen:father <https://www.wikidata.org/wiki/Q1620547> ;
   gen:mother <https://www.wikidata.org/wiki/Q3978238> .
   # oo 1625-02-27 Robert Dormer, 1st Earl of Carnarvon, 1610~ - 1643-09-20, https://www.wikidata.org/wiki/Q3938254
-<#Vere_Herbert>
+<https://www.wikidata.org/wiki/Q75916423>
   # Vere Herbert, 1627-08-29 - 1707-12~
-  gen:father <https://www.wikidata.org/wiki/Q2683087> .
-  # oo Sir Henry Every, 2nd Baronet, 1629-11-15 - 1700-09-29, #Sir_Henry_Every,_2nd_Baronet
+  gen:father <https://www.wikidata.org/wiki/Q2683087> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76305050> . # Susan Slyford
+  # oo Sir Henry Every, 2nd Baronet, 1629-11-15 - 1700-09-29, https://www.wikidata.org/wiki/Q75916421
 <https://www.wikidata.org/wiki/Q5722869> # -> Baron Herbert of Cherbury (2)
   # Henry Herbert, 1st Baron Herbert of Chirbury, 1654-07-24 - 1709-01-22
   gen:father <https://www.wikidata.org/wiki/Q2683087> ;
@@ -1776,15 +1777,28 @@
 #<https://www.wikidata.org/wiki/Q7518707>
   # Sir Simon Every, 1st Baronet, 1602 - 1647~
   # 1st Baronet Every, of Egginton, co. Derby 1641-05-26
-  # oo Anne Leigh, d. 1673, daughter of Sir Henry Leigh
+  # son of John Every
+  # and Elizabeth Lambert
+  # oo Anne Leigh, 1610~ - 1673~, daughter of Sir Henry Leigh and Catherine Horton
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7518707> , <https://www.wikidata.org/wiki/Q75916420> .
 
-<#Sir_Henry_Every,_2nd_Baronet>
+<https://www.wikidata.org/wiki/Q75916421>
   # Sir Henry Every, 2nd Baronet, 1629-11-15 - 1700-09-29
-  gen:father <https://www.wikidata.org/wiki/Q7518707> .
-  # and Anne Leigh
+  gen:father <https://www.wikidata.org/wiki/Q7518707> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75916420> .
   # oo Vere Herbert, 1627-08-29 - 1707-12~
   []
-    gen:spouse <#Sir_Henry_Every,_2nd_Baronet> , <#Vere_Herbert> .
+    gen:spouse <https://www.wikidata.org/wiki/Q75916421> , <https://www.wikidata.org/wiki/Q75916423> .
+
+<https://www.wikidata.org/wiki/Q75916424>
+  # Sir Henry Every, 3rd Baronet, 1649 - 1709-09-01
+  gen:father <https://www.wikidata.org/wiki/Q75916421> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75916423> .
+  # oo Mary Tracy, d. 1735-02-22 (leigh.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75916424> , <https://www.wikidata.org/wiki/Q75916426> ;
+	gen:startDate "1685-04-30" .
 
 # ----
 <https://www.wikidata.org/wiki/Q7529332>
