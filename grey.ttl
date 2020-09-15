@@ -1030,7 +1030,7 @@
   # 3rd Earl of Tankerville 1450-01-13 - 1453
   gen:father <https://www.wikidata.org/wiki/Q7611333> ;
   gen:mother <https://www.wikidata.org/wiki/Q4774763> .
-  # oo Margaret Tuchet, 1431~ - 1481-02-02b
+  # oo Margaret Tuchet, 1431~ - 1481-02-02b (audley.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7326078> , <https://www.wikidata.org/wiki/Q17140202> ;
 	gen:startDate "1459-01-12b" .
@@ -1038,7 +1038,7 @@
   # Humphrey Grey
   gen:father <https://www.wikidata.org/wiki/Q7611333> ;
   gen:mother <https://www.wikidata.org/wiki/Q4774763> .
-  # oo Eleanor Touchet, b. 1442~
+  # oo Eleanor Touchet, b. 1442~ (audley.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q17140268> , <https://www.wikidata.org/wiki/Q17140263> .
 <https://www.wikidata.org/wiki/Q17140298>
@@ -1164,23 +1164,28 @@
   gen:father <https://www.wikidata.org/wiki/Q6236305> ;
   gen:mother <https://www.wikidata.org/wiki/Q61911129> .
 
-<#Reynold_Grey,_4th_Lord_Grey_of_Wilton>
+<https://www.wikidata.org/wiki/Q99085795>
   # Reynold Grey, 4th Lord Grey (of Wilton), 1311-11-01 - 1370-06-04
   gen:father <https://www.wikidata.org/wiki/Q53628941> .
   # and Anne de Rockley
-  # oo Maud de Botetourt, d. 1391-09-14, daughter of Sir John de Botetourt
+  # oo Maud de la Vache, d. 1391-09-14, daughter of Sir Richard de la Vache (or de Botetourt, daughter of Sir John de Botetourt)
   []
-    gen:spouse <#Reynold_Grey,_4th_Lord_Grey_of_Wilton> , <#Maud_de_Botetourt> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q99085795> , <https://www.wikidata.org/wiki/Q99085819> ;
 	gen:startDate "1328-01-10b" .
 
 <#Henry_Grey,_5th_Lord_Grey_of_Wilton>
   # Henry Grey, 5th Lord Grey (of Wilton), 1340~ - 1396-04-22
-  gen:father <#Reynold_Grey,_4th_Lord_Grey_of_Wilton> ;
-  gen:mother <#Maud_de_Botetourt> .
+  gen:father <https://www.wikidata.org/wiki/Q99085795> ;
+  gen:mother <https://www.wikidata.org/wiki/Q99085819> .
   # oo Elizabeth Talbot, d. 1401-01-10
   []
     gen:spouse <#Henry_Grey,_5th_Lord_Grey_of_Wilton> , <talbot.ttl#Elizabeth_Talbot> ;
 	gen:startDate "1380-02-03b" .
+<https://www.wikidata.org/wiki/Q99085788>
+  # Maud de Grey
+  gen:father <https://www.wikidata.org/wiki/Q99085795> ;
+  gen:mother <https://www.wikidata.org/wiki/Q99085819> .
+  # oo John Tuchet, https://www.wikidata.org/wiki/Q75299035 (audley.ttl)
 
 <https://www.wikidata.org/wiki/Q18528946>
   # Margaret Grey, 1370~ - 1454-06-01
@@ -2688,6 +2693,13 @@
     gen:spouse <https://www.wikidata.org/wiki/Q1788801> , <https://www.wikidata.org/wiki/Q55496692> ;
 	gen:startDate "1538-04-22" .
 
+<https://www.wikidata.org/wiki/Q6759536>
+  # Hon. Margaret Audley, 1539 - 1564-01-10
+  gen:father <https://www.wikidata.org/wiki/Q1788801> ;
+  gen:mother <https://www.wikidata.org/wiki/Q55496692> .
+  # oo 1554~ Sir Henry Dudley, 1531~ – 1557-08-10, https://www.wikidata.org/wiki/Q18528505
+  # oo 1558-12-10a/1589-03-02b Thomas Howard, 4th Duke of Norfolk, 1538-03-10 - 1572-06-02, https://www.wikidata.org/wiki/Q278130
+
 # ----
 #<https://www.wikidata.org/wiki/Q7791510>
   # Thomas Keyes, 1523 - 1571
@@ -3783,74 +3795,6 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q21033453> , <#Katherine_Grey> ;
 	gen:startDate "1667-04-06" .
-
-# ----
-#<#Sir_John_Tuchet>
-  # Sir John Tuchet, 1327 — 1371
-  # oo Joan Audley, 1331 - 1393
-  []
-    gen:spouse <#Sir_John_Tuchet> , <plantagenet.ttl#Joan_Audley> .
-
-<#John_Tuchet>
-  # John Tuchet
-  gen:father <#Sir_John_Tuchet> ;
-  gen:mother <plantagenet.ttl#Joan_Audley> .
-  # oo Maud
-
-<https://www.wikidata.org/wiki/Q16150122>
-  # John Tuchet 4th Lord Audley (of Heleigh), 1371-04-23 - 1408-12-19
-  # 1st Baron Tuchet 1403
-  # 4th Lord Audley, of Heleigh 1403-10-20
-  gen:father <#John_Tuchet> .
-  # and Maud
-  # oo Elizabeth Stafford, daughter of Sir Humphrey Stafford and Alice Grenville
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q16150122> , <#Elizabeth_Stafford> ;
-	gen:startDate "1398b" .
-
-<https://www.wikidata.org/wiki/Q646476>
-  # James Tuchet, 5th Baron Audley, 1398~ – 1459-09-23
-  gen:father <https://www.wikidata.org/wiki/Q16150122> ;
-  gen:mother <#Elizabeth_Stafford> .
-  # oo Margaret de Ros, d. 1423-09a
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q646476> , <de_ros.ttl#Margaret_de_Ros_(died_1423a)> ;
-	gen:startDate "1415-03" .
-  # oo Eleanor Holland, b. 1407~
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q646476> , <#Eleanor_Holland> ;
-	gen:startDate "1430-09-14" .
-
-<https://www.wikidata.org/wiki/Q17140202>
-  # Margaret Tuchet, 1431~ - 1481-02-02b
-  gen:father <https://www.wikidata.org/wiki/Q646476> ;
-  gen:mother <#Eleanor_Holland> .
-  # oo 1459-01-12b Richard Grey, 3rd Earl of Tankerville, 1436-11-05 – 1466~, https://www.wikidata.org/wiki/Q7326078
-<https://www.wikidata.org/wiki/Q17140263>
-  # Eleanor Touchet, b. 1442~
-  gen:father <https://www.wikidata.org/wiki/Q646476> .
-  # oo Humphrey Grey, https://www.wikidata.org/wiki/Q17140268
-<https://www.wikidata.org/wiki/Q75299060>
-  # Sir Humphrey Tuchet, 1430a - 1471-05-04
-  gen:father <https://www.wikidata.org/wiki/Q646476> ;
-  gen:mother <#Eleanor_Holland> .
-  # oo Elizabeth Courtenay
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q75299060> , <https://www.wikidata.org/wiki/Q76297293> ;
-	gen:startDate "1462" .
-
-<https://www.wikidata.org/wiki/Q76297291>
-  # Elizabeth Touchet, 1472 - 1530-10-08
-  gen:father <https://www.wikidata.org/wiki/Q75299060> ;
-  gen:mother <https://www.wikidata.org/wiki/Q76297293> .
-  # oo John Sydenham, 1469~ - 1542-12-06, https://www.wikidata.org/wiki/Q76297290 (poyntz.ttl)
-
-# ----
-<#Eleanor_Holland>
-  # Eleanor Holland, b. 1407~
-  gen:father <https://www.wikidata.org/wiki/Q2589610> ; # illegitimate
-  gen:mother <https://www.wikidata.org/wiki/Q1620487> .
-  # oo 1430-09-14 James Tuchet, 5th Baron Audley, 1398~ – 1459-09-23, https://www.wikidata.org/wiki/Q646476
 
 # ----
 #<https://www.wikidata.org/wiki/Q7528887>
