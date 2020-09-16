@@ -1922,10 +1922,12 @@
 <https://www.wikidata.org/wiki/Q7527627>
   gen:name "Sir John Brownlow, 3rd Baronet"@en ;
   gen:birthDate "1659-06-26" ;
-  gen:deathDate "1697-07-16" .
+  gen:deathDate "1697-07-16" ;
+  gen:father <https://www.wikidata.org/wiki/Q66606963> ; # Sir Richard Brownlow, 2nd Baronet
+  gen:mother <https://www.wikidata.org/wiki/Q75510263> . # Elizabeth Freke
   # oo Alice Sherard, 1659 - 1721-07-27
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q7527627> , <#Alice_Sherard> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q7527627> , <https://www.wikidata.org/wiki/Q75272157> ;
 	gen:startDate "1676-03-27" .
 
 <#Elizabeth_Brownlow>
@@ -1933,21 +1935,44 @@
   gen:birthDate "1681-05-18" ;
   gen:deathDate "1723-11-28" ;
   gen:father <https://www.wikidata.org/wiki/Q7527627> ;
-  gen:mother <#Alice_Sherard> .
+  gen:mother <https://www.wikidata.org/wiki/Q75272157> .
   # oo 1699-09-19 John Cecil, 6th Earl of Exeter, 1674-05-15 - 1721-12-24, https://www.wikidata.org/wiki/Q6225597
+<https://www.wikidata.org/wiki/Q75274536>
+  # Alicia Brownlow, 1684 - 1727-08-22
+  gen:father <https://www.wikidata.org/wiki/Q7527627> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75272157> .
+  # oo 1703-07-08 Francis North, 2nd Baron Guilford, 1673-12-14 - 1729-10-17, https://www.wikidata.org/wiki/Q5482070 (montagu.ttl)
 <#Jane_Brownlow>
   gen:name "Jane Brownlow"@en ;
   gen:deathDate "1736-08-26" ;
   gen:father <https://www.wikidata.org/wiki/Q7527627> ;
-  gen:mother <#Alice_Sherard> .
+  gen:mother <https://www.wikidata.org/wiki/Q75272157> .
   # oo 1711-06 Peregrine Bertie, 2nd Duke of Ancaster and Kesteven, 1686-04-29 - 1742-01-01, https://www.wikidata.org/wiki/Q16145961
 # ----
-<#Alice_Sherard>
+<https://www.wikidata.org/wiki/Q75744589>
+  # Elizabeth Sherard, d. 1680
+  gen:father <https://www.wikidata.org/wiki/Q75272158> ; # Richard Sherard
+  gen:mother <https://www.wikidata.org/wiki/Q75509937> . # Margaret Dewe
+  # oo Peter Whitcombe, d. 1704-09-02a/-12b, https://www.wikidata.org/wiki/Q75321300
+<https://www.wikidata.org/wiki/Q75272157>
   gen:name "Alice Sherard"@en ;
   gen:birthDate "1659" ;
   gen:deathDate "1721-07-27" ;
-  gen:father <#Richard_Sherard> .
+  gen:father <https://www.wikidata.org/wiki/Q75272158> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75509937> .
   # oo 1676-03-27 Sir John Brownlow, 3rd Baronet, 1659-06-26 - 1697-07-16, https://www.wikidata.org/wiki/Q7527627
+# ----
+#<https://www.wikidata.org/wiki/Q75321300>
+  # Peter Whitcombe, d. 1704-09-02a/-12b
+  # oo Elizabeth Sherard, d. 1680
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75321300> , <https://www.wikidata.org/wiki/Q75744589> .
+
+<https://www.wikidata.org/wiki/Q75321298>
+  # Mary Whitcombe, d. 1741-02-15
+  gen:father <https://www.wikidata.org/wiki/Q75321300> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75744589> .
+  # oo Thomas Paget, d. 1741-05-28, https://www.wikidata.org/wiki/Q7792970
 
 # --------
 <#Hannah_Sophia_Chambers>
