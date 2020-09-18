@@ -2,6 +2,7 @@
 @prefix gen: <http://jjkoch.de/gen#> .
 @prefix wdata: <https://www.wikidata.org/wiki/> .
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 #<https://www.wikidata.org/wiki/Q75422184>
   # Sir Robert Innes, 11th of that Ilk, 1410~ - 1464-02-01b
@@ -12,7 +13,7 @@
   gen:father <https://www.wikidata.org/wiki/Q75422184> .
   # oo Janet Gordon
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q75533423> , <gordon.ttl#Janet_Gordon> .
+    gen:spouse <https://www.wikidata.org/wiki/Q75533423> , <https://www.wikidata.org/wiki/Q75778467> .
   # oo 1473~ Margaret Culane
 <#Walter_Innes,_1st_of_Invermarkie> # -> Innes of Invermarkie
   # Walter Innes, 1st of Invermarkie, 1451 - 1499-11-03b
@@ -26,12 +27,17 @@
 <#Alexander_Innes,_13th_of_that_Ilk>
   # Alexander Innes, 13th of that Ilk
   gen:father <https://www.wikidata.org/wiki/Q75533423> ;
-  gen:mother <gordon.ttl#Janet_Gordon> .
+  gen:mother <https://www.wikidata.org/wiki/Q75778467> .
   # oo 1493 Christian Dunbar, daughter of Sir James Dunbar and Eupheme Dunbar
+<https://www.wikidata.org/wiki/Q75935890>
+  # Elizabeth Innes, b. 1469~
+  gen:father <https://www.wikidata.org/wiki/Q75533423> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75778467> .
+  # oo John Forbes of Pitsligo, d. 1556-05-16, https://www.wikidata.org/wiki/Q75935888
 <https://www.wikidata.org/wiki/Q75533421>
   # Janet Innes, 1473 - 1517
   gen:father <https://www.wikidata.org/wiki/Q75533423> ;
-  gen:mother <gordon.ttl#Janet_Gordon> .
+  gen:mother <https://www.wikidata.org/wiki/Q75778467> .
   # oo William Sutherland, 5th of Duffus, b. 1470~, https://www.wikidata.org/wiki/Q75532448
 <#Robert_Innes_of_Rothmakenzie_and_Cromey>
   # Robert Innes of Rothmakenzie and Cromey, d. 1536-03-06b
@@ -39,17 +45,17 @@
   gen:mother <#Margaret_Culane> .
   # oo Margaret Ann Meldrum, d. 1508-11-17, daughter of Sir William Meldrum of Fyvie
 
-<#Alexander_Innes,_14th_of_that_Ilk>
+<https://www.wikidata.org/wiki/Q75922008>
   # Alexander Innes, 14th of that Ilk, 1494 - 1553-09
   gen:father <#Alexander_Innes,_13th_of_that_Ilk> .
   # and Christian Dunbar
-  # oo Elizabeth Abernethy
+  # oo Elizabeth Abernethy (fraser.ttl)
   []
-    gen:spouse <#Alexander_Innes,_14th_of_that_Ilk> , <fraser.ttl#Elizabeth_Abernethy_1> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75922008> , <https://www.wikidata.org/wiki/Q76159112> ;
 	gen:startDate "1529b" .
-  # oo Elizabeth Forbes, d. 1570-12, daughter of John Forbes, 6th Lord Forbes and Christian Lundie
+  # oo Elizabeth Forbes, d. 1570-12
   []
-    gen:spouse <#Alexander_Innes,_14th_of_that_Ilk> , <#Elizabeth_Forbes> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75922008> , <https://www.wikidata.org/wiki/Q75728144> ;
 	gen:startDate "1541b" .
 <#James_Innes,_2nd_of_Cromey>
   # James Innes, 2nd of Cromey, d. 1547-09-10
@@ -64,13 +70,13 @@
 
 <#William_Innes,_15th_of_that_Ilk>
   # William Innes, 15th of that Ilk, d. 1565-04
-  gen:father <#Alexander_Innes,_14th_of_that_Ilk> ;
-  gen:mother <fraser.ttl#Elizabeth_Abernethy_1> .
+  gen:father <https://www.wikidata.org/wiki/Q75922008> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76159112> .
   # oo 1544 Elizabeth Hepburn
 <#Margaret_Innes>
   # Margaret Innes
-  gen:father <#Alexander_Innes,_14th_of_that_Ilk> ;
-  gen:mother <#Elizabeth_Forbes> .
+  gen:father <https://www.wikidata.org/wiki/Q75922008> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75728144> .
   # oo 1553-06 (div 1574-11-19) Robert Innes, 3rd of Invermarkie, 1532 - 1584-09
 <#Alexander_Innes,_18th_of_that_Ilk>
   # Alexander Innes, 18th of that Ilk and 3rd of Cromey, 1537 - 1580-04-13
@@ -502,7 +508,7 @@
   gen:mother <https://www.wikidata.org/wiki/Q75516330> .
   # oo Janet Gordon
   []
-    gen:spouse <#Sir_Robert_Innes_of_Balvenie,_3rd_Baronet> , <gordon.ttl#Janet_Gordon_of_Haddo> .
+    gen:spouse <#Sir_Robert_Innes_of_Balvenie,_3rd_Baronet> , <https://www.wikidata.org/wiki/Q75778467_of_Haddo> .
 <#Sir_George_Innes_of_Balvenie,_4th_Baronet>
   # Rev. Sir George Innes of Balvenie and Denoone, 4th Baronet, d. 1698-02-02
   gen:father <#James_Innes_(died_1670)> .
@@ -1175,13 +1181,20 @@
 	gen:startDate "1635-10-28" .
 
 <https://www.wikidata.org/wiki/Q19871603>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75499410> ;
   # James Brodie, 16th of Brodie, 1637-09-15 - 1708-03
   gen:father <https://www.wikidata.org/wiki/Q18526368> ;
   gen:mother <#Elizabeth_Innes_(died_1640)> .
   # oo Lady Mary Kerr, 1640-03-28 - 1708-03
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q19871603> , <kerr.ttl#Lady_Mary_Kerr_(died_1708)> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q19871603> , <https://www.wikidata.org/wiki/Q75499412> ;
 	gen:startDate "1659-07-28" .
+
+<https://www.wikidata.org/wiki/Q75499413>
+  # Anne Brodie, 1661 - 1710
+  gen:father <https://www.wikidata.org/wiki/Q75499410> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75499412> .
+  # oo 1680 William Forbes, 12th Lord Forbes, d. 1716-07, https://www.wikidata.org/wiki/Q75499415
 
 # ----
 #<https://www.wikidata.org/wiki/Q2277355>
@@ -1377,40 +1390,6 @@
   # daughter of Thomas Urquhart of Fischerie
   gen:mother <#Helen_Abernethy> .
   # oo James Innes of Toux, 1514 - 1588, #James_Innes_of_Toux
-
-# ----
-#<https://www.wikidata.org/wiki/Q16212261>
-  # James Forbes, 16th Lord Forbes, 1725~ - 1804-07-29
-  # oo Catherine Innes, d. 1805-04-16
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q16212261> , <https://www.wikidata.org/wiki/Q75273859> ;
-	gen:startDate "1760-01" .
-
-<https://www.wikidata.org/wiki/Q6134032>
-  # James Ochoncar Forbes, 17th Lord Forbes, 1765-03-07 - 1843-05-04
-  gen:father <https://www.wikidata.org/wiki/Q16212261> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75273859> .
-  # oo Elizabeth Hunter, 1775 - 1830-10-11 (macdonald.ttl)
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q6134032> , <https://www.wikidata.org/wiki/Q21549269> ;
-	gen:startDate "1792-06-02" .
-<https://www.wikidata.org/wiki/Q75264734>
-  # Hon. Margery Forbes, 1761-02-03 - 1842-10-03
-  gen:father <https://www.wikidata.org/wiki/Q16212261> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75273859> .
-  # oo 1786-06-04 John Mackenzie, Lord MacLeod, 1727 - 1789-04-02, https://www.wikidata.org/wiki/Q16859387
-  # oo 1794-03-11 John Murray, 4th Duke of Atholl, 1755-06-30 - 1830-09-29, https://www.wikidata.org/wiki/Q390589
-<https://www.wikidata.org/wiki/Q75283564>
-  # Hon. Mary Elizabeth Forbes, d. 1803-11-02
-  gen:father <https://www.wikidata.org/wiki/Q16212261> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75273859> .
-  # oo 1785-07-09 Sir John Hay, 5th Baronet, 1755-01-15 - 1830-05-23, https://www.wikidata.org/wiki/Q75967872
-
-<#Charlotte_Elizabeth_Forbes>
-  # Hon. Charlotte Elizabeth Forbes, 1801-05-28 - 1883-11-05
-  gen:father <https://www.wikidata.org/wiki/Q6134032> ;
-  gen:mother <https://www.wikidata.org/wiki/Q21549269> .
-  # oo 1825-09-15 Sir John Forbes of Craigievar, 7th Baronet, 1785-07-02 - 1846-02-16, #Sir_John_Forbes_of_Craigievar,_7th_Baronet
 
 # ----
 <#Ann_Katherine_Leith>
