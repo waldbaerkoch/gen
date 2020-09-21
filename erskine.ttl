@@ -114,7 +114,7 @@
   # Thomas Erskine, Master of Erskine, d. 1551-10-07a
   gen:father <https://www.wikidata.org/wiki/Q6231896> ;
   gen:mother <campbell.ttl#Lady_Margaret_Campbell,_Lady_Erskine> .
-  # oo Margaret Fleming, , 1536 - 1584-08-15a
+  # oo Margaret Fleming, 1536 - 1584-08-15a
   []
     gen:spouse <https://www.wikidata.org/wiki/Q50823902> , <https://www.wikidata.org/wiki/Q10325581> ;
 	gen:startDate "1549-01-30" .
@@ -679,13 +679,6 @@
   # oo Sir Matthew Stewart of Minto, d. 1606-07a, https://www.wikidata.org/wiki/Q75614197
 
 # ----
-<https://www.wikidata.org/wiki/Q10325581>
-  # Margaret Fleming, 1536 - 1584-08-15a
-  gen:father <https://www.wikidata.org/wiki/Q1886996> ;
-  gen:mother <https://www.wikidata.org/wiki/Q461721> .
-  # oo 1549-01-30 Thomas Erskine, Master of Erskine, d. 1551-10-07a, https://www.wikidata.org/wiki/Q50823902
-
-# ----
 <#Magdalen_Livingston>
   # Magdalen Livingston
   gen:father <https://www.wikidata.org/wiki/Q4719421> .
@@ -746,12 +739,17 @@
   # oo 1637-10-19 David Carnegie, 2nd Earl of Northesk, 1627- - 1679-12-12, https://www.wikidata.org/wiki/Q3703131
 
 <https://www.wikidata.org/wiki/Q75263472>
-  # Hon. Harry Maule of Kellie, d. 1731
+  # Hon. Harry Maule of Kellie, 1659 - 1731/1734-06-23
   gen:father <https://www.wikidata.org/wiki/Q75266328> ;
   gen:mother <https://www.wikidata.org/wiki/Q76332561> .
-  # oo Anne Lindsay-Crawford
+  # oo Lady Mary Fleming, d. 1702-03
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q75263472> , <https://www.wikidata.org/wiki/Q75263470> .
+    gen:spouse <https://www.wikidata.org/wiki/Q75263472> , <https://www.wikidata.org/wiki/Q76026493> ;
+	gen:startDate "1695-03-30" .
+  # oo Anne Lindsay-Crawford, 1670 - 1729-08-12 (lindsay.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75263472> , <https://www.wikidata.org/wiki/Q75263470> ;
+	gen:startDate "1704~" .
 <#Lady_Mary_Maule>
   gen:name "Lady Mary Maule"@en ;
   gen:father <https://www.wikidata.org/wiki/Q75266328> ;
@@ -1914,8 +1912,9 @@
   gen:deathDate "1664-10" ;
   gen:father <https://www.wikidata.org/wiki/Q6133500> ;
   gen:mother <https://www.wikidata.org/wiki/Q17325081> .
+  # oo Lady Marjory Ramsay (douglas.ttl)
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q17322514> , <#Lady_Marjory_Ramsay> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q17322514> , <https://www.wikidata.org/wiki/Q75272282> ;
 	gen:startDate "1655-04-11" .
 <https://www.wikidata.org/wiki/Q75512621>
   # Lady Mary Erskine
@@ -1952,7 +1951,7 @@
   gen:name "William Erskine, 8th Earl of Buchan"@en ;
   gen:deathDate "1695" ;
   gen:father <https://www.wikidata.org/wiki/Q17322514> ;
-  gen:mother <#Lady_Marjory_Ramsay> .
+  gen:mother <https://www.wikidata.org/wiki/Q75272282> .
   # oo Marjory Foulis, d. 1690-02-19b
   []
     gen:spouse <https://www.wikidata.org/wiki/Q17327024> , <#Marjory_Foulis> ;
@@ -1960,7 +1959,7 @@
 <#Lady_Marjory_Mary_Erskine>
   # Lady Marjory Mary Erskine
   gen:father <https://www.wikidata.org/wiki/Q17322514> ;
-  gen:mother <#Lady_Marjory_Ramsay> .
+  gen:mother <https://www.wikidata.org/wiki/Q75272282> .
   # oo 1669 Simon Fraser, 2nd of Inverallochy, fraser.ttl#Simon_Fraser,_2nd_of_Inverallochy
   # oo 1683 Charles Fraser, 4th Lord Fraser, 1662-09b - 1716-10-12, #Charles_Fraser,_4th_Lord_Fraser
 <https://www.wikidata.org/wiki/Q2574065>
@@ -2868,33 +2867,6 @@
   gen:father <#Sir_James_Bellenden_of_Broughton> ;
   gen:mother <kerr.ttl#Elizabeth_Ker> .
   # oo 1626-04-18 Henry Erskine, Master of Cardross, d. 1628, #Henry_Erskine,_Master_of_Cardross
-
-# --------
-#<https://www.wikidata.org/wiki/Q15440848>
-  # Sir George Ramsay, 1st Lord Ramsay of Dalhousie, 1570a - 1629-07-22b
-  # 1st Lord Ramsay of Melrose 1618-08-25
-  # 1st Lord Ramsay of Dalhousie 1619-01-05
-  # oo Margaret Douglas, d. 1615-09-12a
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q15440848> , <douglas.ttl#Margaret_Douglas_(died_1615)> ;
-	gen:startDate "1593" .
-
-<https://www.wikidata.org/wiki/Q2580340>
-  gen:name "William Ramsay, 1st Earl of Dalhousie"@en ;
-  # 2nd Lord Ramsay of Dalhousie 1629-07-22b
-  # 1st Earl of Dalhousie, co. Midlothian 1633-06-29
-  gen:deathDate "1672-11" ;
-  gen:father <https://www.wikidata.org/wiki/Q15440848> ;
-  gen:mother <douglas.ttl#Margaret_Douglas_(died_1615)> .
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q2580340> , <https://www.wikidata.org/wiki/Q56043078> ;
-	gen:startDate "1617-10-03" .
-
-<#Lady_Marjory_Ramsay>
-  gen:name "Lady Marjory Ramsay"@en ;
-  gen:father <https://www.wikidata.org/wiki/Q2580340> ;
-  gen:mother <https://www.wikidata.org/wiki/Q56043078> .
-  # oo 1655-04-11 James Erskine, 7th Earl of Buchan, d. 1664-10, https://www.wikidata.org/wiki/Q17322514
 
 # ----
 #<#Andrew_Fraser,_3rd_Lord_Fraser>
