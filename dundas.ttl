@@ -4,12 +4,18 @@
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
+#<https://www.wikidata.org/wiki/Q75902510>
+  # John de Dundas, of Fingask, 1330~ - 1350a
+  # oo Lady Eleanor Douglas, d. 1400
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75902510> , <douglas.ttl#Lady_Eleanor_Douglas> .
+
 <https://www.wikidata.org/wiki/Q66384762>
   # James Dundas, 11th of Dundas, d. 1431
-  gen:father <https://www.wikidata.org/wiki/Q75902510> . # John de Dundas, of Fingask, 1330~ - 1350a
-#  gen:mother <> . #  Eleanor (Douglas, d. 1400, daughter of Archibald Douglas, 3rd Earl of Douglas and Joanna Moray
+  gen:father <https://www.wikidata.org/wiki/Q75902510> ;
+  gen:mother <douglas.ttl#Lady_Eleanor_Douglas> . 
   # oo Euphemia Oliphant, b. 1365
-  # oo Christian Stewart, 1379~, daughter of https://www.wikidata.org/wiki/Q67123585 Sir John Stewart of Innermeath, 3rd of Lorn and https://www.wikidata.org/wiki/Q75268350 Isabella Macdougall
+  # oo Christian Stewart, b. 1379~
   []
     gen:spouse <https://www.wikidata.org/wiki/Q66384762> , <https://www.wikidata.org/wiki/Q75268599> ;
 	gen:startDate "1400" .
@@ -25,13 +31,13 @@
 <https://www.wikidata.org/wiki/Q66384763>
   # James Dundas, 12th of Dundas
   gen:father <https://www.wikidata.org/wiki/Q66384762> .
-  # oo Elizabeth Livingston, daughter of Sir Alexander Livingston of Callendar and Janet Dundas
+  # oo Elizabeth Livingston
   []
     gen:spouse <https://www.wikidata.org/wiki/Q66384763> , <https://www.wikidata.org/wiki/Q75902592> .
 <https://www.wikidata.org/wiki/Q75902515>
   # Sir Archibald Dundas, 13th of Dundas, 1397 - 1470
   gen:father <https://www.wikidata.org/wiki/Q66384762> .
-  # oo Agnes Borthwick, 1432~ - 1482a, daughter of Sir William Borthwick, 1st Lord Borthwick
+  # oo Agnes Borthwick, 1432~ - 1482a (sinclair.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75902515> , <https://www.wikidata.org/wiki/Q75902595> ;
 	gen:startDate "1452-12-23b".
@@ -62,7 +68,7 @@
   # Sir James Dundas, 16th of Dundas, 1494a - 1553
   gen:father <https://www.wikidata.org/wiki/Q75902599> ;
   gen:mother <https://www.wikidata.org/wiki/Q43445932> .
-  # oo Margaret Sandilands, b. 1530~, daughter of Sir James Sandilands, 7th of Calder (1482 - 1559-12, https://www.wikidata.org/wiki/Q75902840, son of John Sandilands, 6th of Calder and Elizabeth Scrymgeour) and oo 1508-02b Mariot Forrester (1486 - 1562-03, https://www.wikidata.org/wiki/Q76193417, daughter of Archibald Forrester, 5th of Corstorphine and Margaret Hepburn; oo 1493-06-14b William Drummond, Master of Drummond, https://www.wikidata.org/wiki/Q75272106, son of John Drummond, 1st Lord Drummond and Lady Elizabeth Lindsay)
+  # oo Margaret Sandilands, b. 1530~ (drummond.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q66384765> , <https://www.wikidata.org/wiki/Q75902909> .
 <https://www.wikidata.org/wiki/Q75902604>
@@ -80,14 +86,14 @@
   # oo Margaret Boswell, b. 1538~, daughter of David Boswell, 4th of Balmuto and Elizabeth Moncreiffe
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75902910> , <https://www.wikidata.org/wiki/Q75902915> .
-  # oo Catherine Oliphant, 1534 - 1612, daughter of Lawrence Oliphant, 3rd Lord Oliphant and Margaret Sandilands
+  # oo Catherine Oliphant, 1534 - 1612
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75902910> , <https://www.wikidata.org/wiki/Q75902921> .
 <https://www.wikidata.org/wiki/Q75902608>
   # David Dundas
   gen:father <https://www.wikidata.org/wiki/Q75902604> ;
   gen:mother <https://www.wikidata.org/wiki/Q75902605> .
-  # oo Marjory Hamilton, daughter of https://www.wikidata.org/wiki/Q75902609 John Hamilton, 3rd of Orbiston and https://www.wikidata.org/wiki/Q75957995 Margaret Hamilton
+  # oo Marjory Hamilton
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75902608> , <https://www.wikidata.org/wiki/Q75902612> .
 
@@ -125,7 +131,7 @@
   # Isabel Dundas, b. 1592a
   gen:father <https://www.wikidata.org/wiki/Q75902917> ;
   gen:mother <https://www.wikidata.org/wiki/Q75902930> .
-  # oo 1634-02-28, John Sandilands, 4th Lord Torphichen, 1593-08-19 - 1654-06-28, https://www.wikidata.org/wiki/Q75902941 (see lindsay.ttl), son of https://www.wikidata.org/wiki/Q76193432 James Sandilands, 2nd Lord Torphichen and https://www.wikidata.org/wiki/Q76193482 Elizabeth Heriot
+  # oo 1634-02-28, John Sandilands, 4th Lord Torphichen, 1593-08-19 - 1654-06-28, https://www.wikidata.org/wiki/Q75902941
 <https://www.wikidata.org/wiki/Q75902944>
   # George Dundas, 19th of Dundas, 1600~ - 1689a
   gen:father <https://www.wikidata.org/wiki/Q75902917> ;
@@ -149,7 +155,7 @@
   # George Dundas, 1612 - 1684
   gen:father <https://www.wikidata.org/wiki/Q75902613> ;
   gen:mother <https://www.wikidata.org/wiki/Q75902615> .
-  # oo Catherine Monypenny, d. 1694, daughter of Hon. John Monypenny (d. 1617-08-01, https://www.wikidata.org/wiki/Q75516644, son of James Monypenny, 17th of Pitmilly and Euphame Colville) and oo 1609-09-11 Susanna Colville (https://www.wikidata.org/wiki/Q75516646, daughter of https://www.wikidata.org/wiki/Q18526377 and https://www.wikidata.org/wiki/Q75615044)
+  # oo Catherine Monypenny, d. 1694
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75515393> , <https://www.wikidata.org/wiki/Q75515394> ;
 	gen:startDate "1636" .
@@ -252,7 +258,6 @@
   gen:father <https://www.wikidata.org/wiki/Q26857627> ;
   gen:mother <https://www.wikidata.org/wiki/Q75903098> .
   # oo 1780-12-27 John Wedderburn, 1729-02-21 - 1803-06-14, https://www.wikidata.org/wiki/Q6263346
-  # TODO move here from hope.ttl?
 
 <https://www.wikidata.org/wiki/Q66384761>
   # James Dundas, 26th of Dundas, 1793-01-14 - 1881-03-09
@@ -260,7 +265,7 @@
   # 26th Chief of the Name and Arms of Dundas 1793
   gen:father <https://www.wikidata.org/wiki/Q75781268> ;
   gen:mother <https://www.wikidata.org/wiki/Q75903119> .
-  # oo Hon. Mary Tufton Duncan, 1795~ - 1867-05-24 (dalrymple.ttl, here?)
+  # oo Hon. Mary Tufton Duncan, 1795~ - 1867-05-24
   []
     gen:spouse <https://www.wikidata.org/wiki/Q66384761> , <https://www.wikidata.org/wiki/Q75741739> ;
 	gen:startDate "1813-07-20" .
@@ -300,7 +305,7 @@
   # George Dundas of Duddingston, b. 1672
   gen:father <https://www.wikidata.org/wiki/Q75544842> ;
   gen:mother <https://www.wikidata.org/wiki/Q75544839> .
-  # oo Magdalen Lindsay-Crawford, 1677 - 1717, daughter of https://www.wikidata.org/wiki/Q75263448 Hon. Patrick Crawford and https://www.wikidata.org/wiki/Q75263449 Margaret Crawfurd
+  # oo Magdalen Lindsay-Crawford, 1677 - 1717 (lindsay.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75866637> , <https://www.wikidata.org/wiki/Q75263474> .
 
@@ -334,7 +339,7 @@
   # Ralph Dundas of Manour, 1675 - 1729
   gen:father <https://www.wikidata.org/wiki/Q75902662> ;
   gen:mother <https://www.wikidata.org/wiki/Q75902664> .
-  # oo Helen Burnett, daughter of Sir Thomas Burnett of Crimond and Janet Bruce (, daughter of Robert Bruce, Lord Broomhall and Helen Skene)
+  # oo Helen Burnett (bruce.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75236958> , <https://www.wikidata.org/wiki/Q75902666> .
 
@@ -342,8 +347,7 @@
   # Mary Dundas
   gen:father <https://www.wikidata.org/wiki/Q75236958> ;
   gen:mother <https://www.wikidata.org/wiki/Q75902666> .
-  # oo George Abercromby of Tullibody, d. 1800-06-08, https://www.wikidata.org/wiki/Q75236813, son of Alexander Abercromby and Mary Duff
-  # -> Sir Ralph Abercromby, 1734-10-25 - 1801-03-28, https://www.wikidata.org/wiki/Q278399
+  # oo George Abercromby of Tullibody, d. 1800-06-08, https://www.wikidata.org/wiki/Q75236813
 <https://www.wikidata.org/wiki/Q75741101>
   # John Dundas of Manour, 1701-10-16 - 1780
   gen:father <https://www.wikidata.org/wiki/Q75236958> ;
@@ -399,7 +403,7 @@
   # Lord Manour 1868
   gen:father <https://www.wikidata.org/wiki/Q75902730> ;
   gen:mother <https://www.wikidata.org/wiki/Q75902734> .
-  # oo Elizabeth MacKenzie, daughter of Colin MacKenzie, 2nd of Portmore (https://www.wikidata.org/wiki/Q75902743, son of Alexander Mackenzie, 1st of Portmore and Ann Mackenzie) and oo 1803 Elizabeth Forbes (b. 1781-03-02, https://www.wikidata.org/wiki/Q75968069, daughter of Sir William Forbes of Monymusk, 6th Baronet and Elizabeth Hay)
+  # oo Elizabeth MacKenzie, b. 1810~
   []
     gen:spouse <https://www.wikidata.org/wiki/Q23585426> , <https://www.wikidata.org/wiki/Q75902745> ;
 	gen:startDate "1840-07-17" .
@@ -457,7 +461,7 @@
   # Sir James Dundas of Arniston, b. 1570
   gen:father <https://www.wikidata.org/wiki/Q75902910> ;
   gen:mother <https://www.wikidata.org/wiki/Q75902921> .
-  # oo Marie Home
+  # oo Marie Home, b. 1578a
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75902922> , <https://www.wikidata.org/wiki/Q96080591> .
 
@@ -488,11 +492,11 @@
   # Robert Dundas, Lord Arniston, 1650 - 1726
   gen:father <https://www.wikidata.org/wiki/Q6132938> ;
   gen:mother <https://www.wikidata.org/wiki/Q76101444> .
-  # oo Margaret Sinclair
+  # oo Margaret Sinclair, b. 1665-07~
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7343688> , <https://www.wikidata.org/wiki/Q76030393> .
 <https://www.wikidata.org/wiki/Q76251620>
-  # Christian Dundas
+  # Christian Dundas, b. 1640~
   gen:father <https://www.wikidata.org/wiki/Q6132938> ;
   gen:mother <https://www.wikidata.org/wiki/Q76101444> .
   # oo 1670 Sir Charles Erskine of Alva, 1st Baronet, 1643-07-04 - 1690-06-04, https://www.wikidata.org/wiki/Q43283820
@@ -542,8 +546,7 @@
   # Helen Dundas, b. 1690~
   gen:father <https://www.wikidata.org/wiki/Q75308633> ;
   gen:mother <https://www.wikidata.org/wiki/Q96085221> .
-  # oo 1723-11-03 Robert Middleton, 1693 - 1768, https://www.wikidata.org/wiki/Q75308631, son of George Middleton
-  # TODO move here from douglas.ttl
+  # oo 1723-11-03 Robert Middleton, 1693 - 1768, https://www.wikidata.org/wiki/Q75308631
 <#Robert_Dundas_(died_1768)>
   # Robert Dundas, 1694-12-10 - 1768
   gen:father <https://www.wikidata.org/wiki/Q76101452> ;
@@ -556,7 +559,7 @@
   # Rt. Hon. Robert Dundas of Arniston, 1713-07-18 – 1787-12-13
   gen:father <https://www.wikidata.org/wiki/Q3938258> ;
   gen:mother <https://www.wikidata.org/wiki/Q76101454> .
-  # oo Henrietta Carmichael, d. 1775-05-13, daughter of Sir James Carmichael and Margaret Baillie
+  # oo Henrietta Carmichael, d. 1775-05-13 (douglas.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q3938260> , <https://www.wikidata.org/wiki/Q75536027> ;
 	gen:startDate "1741-10-17" .
@@ -579,20 +582,21 @@
   # Sir David Dundas, 1736-05-26 - 1820-02-18
   gen:father <#Robert_Dundas_(died_1768)> ;
   gen:mother <#Margaret_Watson> .
-  # oo 1807 Charlotte De Lancey, daughter of General Oliver De Lancey (1749~ – 1822-09-03, https://www.wikidata.org/wiki/Q7087492)
+  # oo Charlotte De Lancey
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3017816> , <#Charlotte_De_Lancey> ;
+	gen:startDate "1807" .
 
 <https://www.wikidata.org/wiki/Q75485086>
   # Margaret Dundas, 1747 - 1797-08-23
   gen:father <https://www.wikidata.org/wiki/Q3938260> ;
   gen:mother <https://www.wikidata.org/wiki/Q75536027> .
-  # oo 1773-06-05 John Scott, 1725 - 1775-12-20, https://www.wikidata.org/wiki/Q6257051
-  # TODO move from boyd.ttl to gordon.ttl
+  # oo 1773-06-05 John Scott, 1725 - 1775-12-20, https://www.wikidata.org/wiki/Q6257051 (gordon.ttl)
 <https://www.wikidata.org/wiki/Q75536021>
   # Henrietta Dundas, 1748 - 1832-12-08
   gen:father <https://www.wikidata.org/wiki/Q3938260> ;
   gen:mother <https://www.wikidata.org/wiki/Q75536027> .
   # oo 1777-06-06 Adam Duncan, 1st Viscount Duncan of Camperdown, 1731-07-01 - 1804-08-04, https://www.wikidata.org/wiki/Q335334
-  # TODO move here from dalrymple.ttl
 <https://www.wikidata.org/wiki/Q75543805>
   # Elizabeth Dundas
   gen:father <https://www.wikidata.org/wiki/Q3938260> ;
@@ -678,7 +682,7 @@
   # Sir Robert Dundas of Arniston, 2nd Baronet, 1857-07-28 - 1910-12-12
   gen:father <https://www.wikidata.org/wiki/Q75784324> ;
   gen:mother <https://www.wikidata.org/wiki/Q75784400> .
-  # oo Evelyn Henrietta Graham-Montgomery, d. 1930-08-29, daughter of https://www.wikidata.org/wiki/Q7526999 Sir Graham Graham-Montgomery, 3rd Baronet and https://www.wikidata.org/wiki/Q75292861 Alice Hope Johnstone
+  # oo Evelyn Henrietta Graham-Montgomery, d. 1930-08-29 (montgomery.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75637578> , <https://www.wikidata.org/wiki/Q75637576> ;
 	gen:startDate "1893-04-22" .
@@ -686,13 +690,13 @@
   # Alice Dundas, 1863~ - 1929-08-05
   gen:father <https://www.wikidata.org/wiki/Q75784324> ;
   gen:mother <https://www.wikidata.org/wiki/Q75784400> .
-  # oo 1889-07-03 Sir William George Knox, 1847-10-20 - 1916-12-14, https://www.wikidata.org/wiki/Q8014089, son of General Thomas Edmond Knox (1820-03-16 - 1898-05-27, https://www.wikidata.org/wiki/Q75784309, son of Admiral Hon. Edmund Sexton Pery Knox (1787-07-21 - 1867-03-24, https://www.wikidata.org/wiki/Q75283318, son of <https://www.wikidata.org/wiki/Q7791582> (vesey.ttl) , <https://www.wikidata.org/wiki/Q75283320>) and oo 1813-07-03 Jane Sophia Hope-Vere (1790-12-15 - 1875-06-11, https://www.wikidata.org/wiki/Q75283317, daughter of https://www.wikidata.org/wiki/Q56232997 William Hope-Vere and https://www.wikidata.org/wiki/Q75283281 Sophia Corrie)) and oo 1846-10-22 Lucy Diana Maunsell (d. 1888-03-01, https://www.wikidata.org/wiki/Q75784313, daughter of Venerable William Wray Maunsell and Charlotte Warburton)
+  # oo Sir William George Knox, 1847-10-20 - 1916-12-14, https://www.wikidata.org/wiki/Q8014089 (vesey.ttl)
 <https://www.wikidata.org/wiki/Q75815244>
   # Ellen Mary Charlotte Dundas, 1864~ - 1927-05-23
   gen:father <https://www.wikidata.org/wiki/Q75784324> ;
   gen:mother <https://www.wikidata.org/wiki/Q75784400> .
-  # oo 1894-05-23 Gerald Lionel Joseph Goff, 1855-03-08 - 1899-12-11, https://www.wikidata.org/wiki/Q75815240, son of Joseph Goff (1817-10-28 - 1872-12-26, , son of Joseph Goff and Jane Stannus) and oo 1850-09-26 Lady Adelaide Henrietta Louisa Hortense Knox (1834~ - 1911-08-28, daughter of <https://www.wikidata.org/wiki/Q7791584> , <https://www.wikidata.org/wiki/Q75267887> )
-  # oo 1903-03-09 Edward Robert Thompson, https://www.wikidata.org/wiki/Q75815211, son of Charles Thompson
+  # oo 1894-05-23 Gerald Lionel Joseph Goff, 1855-03-08 - 1899-12-11, https://www.wikidata.org/wiki/Q75815240 (vesey.ttl)
+  # oo 1903-03-09 Edward Robert Thompson, https://www.wikidata.org/wiki/Q75815211
 <https://www.wikidata.org/wiki/Q45592318>
   # Sir Henry Herbert Philip Dundas of Arniston, 3rd Baronet, 1866-09-04 - 1930-02-05
   gen:father <https://www.wikidata.org/wiki/Q75784324> ;
@@ -726,7 +730,7 @@
   # Jean Dundas, 1909-07-26 - 1971-12-07
   gen:father <https://www.wikidata.org/wiki/Q45592318> ;
   gen:mother <https://www.wikidata.org/wiki/Q75306244> .
-  # oo 1933-04-19 Sir John Peter Lorne Reid, 1903-01-10 - 1973-09-26, https://www.wikidata.org/wiki/Q7176562, son of https://www.wikidata.org/wiki/Q7527480 (baring.ttl) Sir James Reid, 1st Baronet and https://www.wikidata.org/wiki/Q75271365 Hon. Susan Baring
+  # oo 1933-04-19 Sir John Peter Lorne Reid, 1903-01-10 - 1973-09-26, https://www.wikidata.org/wiki/Q7176562 (baring.ttl)
 
 <https://www.wikidata.org/wiki/Q75306168>
   # Sir Henry Matthew Dundas, 5th Baronet, 1937-05-17 - 1963-06-24
@@ -736,7 +740,7 @@
   # Davina Margaret Dundas, b. 1939-12-09
   gen:father <https://www.wikidata.org/wiki/Q75306256> ;
   gen:mother <https://www.wikidata.org/wiki/Q75306258> .
-  # oo 1966 Martin Charles Findlay, b. 1935, https://www.wikidata.org/wiki/Q75612912, son of Commander Noel Charles Mansfeldt Findlay (1899 - 1976-04-09, https://www.wikidata.org/wiki/Q75340096, son of https://www.wikidata.org/wiki/Q15971082 Sir Mansfeldt de Cardonnel Findlay and https://www.wikidata.org/wiki/Q76337800 Cora Sybil Alexander) and oo 1929-10-17 Lady Mary Cecilia Legge (1906-10-27 - 2003-03-31, https://www.wikidata.org/wiki/Q75340091, daughter of https://www.wikidata.org/wiki/Q8014459 William Legge, 7th Earl of Dartmouth and https://www.wikidata.org/wiki/Q75257372 Lady Ruperta Wynn-Carington)
+  # oo 1966 Martin Charles Findlay, b. 1935, https://www.wikidata.org/wiki/Q75612912 (legge.ttl)
 
 
 # Baronet Dundas of Beechwood
@@ -759,7 +763,7 @@
   # Sir David Barnett Dundas, 2nd Baronet, 1803-08-28 – 1877-03-30
   gen:father <https://www.wikidata.org/wiki/Q23585434> ;
   gen:mother <https://www.wikidata.org/wiki/Q75412507> .
-  # oo Catherine Margaret Whyte-Melville, d. 1856-04-23, daughter of murray.ttl.ttl#John_Whyte-Melville https://www.wikidata.org/wiki/Q75372139 and https://www.wikidata.org/wiki/Q46216078 Lady Catherine Anne Sarah Osborne
+  # oo Catherine Margaret Whyte-Melville, d. 1856-04-23 (osborne.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5233115> , <https://www.wikidata.org/wiki/Q75372138> ;
 	gen:startDate "1841-11-29" .
@@ -816,7 +820,7 @@
   gen:father <https://www.wikidata.org/wiki/Q335351> ;
   gen:mother <https://www.wikidata.org/wiki/Q56594847> .
   # oo 1786-02-13 Henry Drummond, 1762-01-13 - 1794-07-04, https://www.wikidata.org/wiki/Q16239452
-  # oo 1798-12-18 James Charles Edward Stuart Strange, 1754 - 1840-10-06, https://www.wikidata.org/wiki/Q26204011, son of Sir Robert Strange of Balcaskie and Isabella Lumisden
+  # oo 1798-12-18 James Charles Edward Stuart Strange, 1754 - 1840-10-06, https://www.wikidata.org/wiki/Q26204011
 <https://www.wikidata.org/wiki/Q76073733>
   # Hon. Elizabeth Dundas, 1770~ - 1852-03-18
   gen:father <https://www.wikidata.org/wiki/Q335351> ;
@@ -828,7 +832,7 @@
   # Robert Saunders-Dundas 1775-12-14a
   gen:father <https://www.wikidata.org/wiki/Q335351> ;
   gen:mother <https://www.wikidata.org/wiki/Q56594847> .
-  # oo Anne Huck-Saunders, d. 1841-09, sister of Jane Huck-Sanders (1780~ - 1857-03-26, https://www.wikidata.org/wiki/Q56036877; oo 1800-03-24 https://www.wikidata.org/wiki/Q5949661 John Fane, 10th Earl of Westmorland) daughter of Dr. Richard Huck-Saunders (1720 - 1785-07-24, https://www.wikidata.org/wiki/Q75647446, Richard Huck) and oo 1777 Jane Kinsey (d. 1780, https://www.wikidata.org/wiki/Q75720716, daughter of Peter Kinsey (https://www.wikidata.org/wiki/Q76073742) and oo Anne Sanders (https://www.wikidata.org/wiki/Q76073747, daughter of https://www.wikidata.org/wiki/Q76073749 ??? Sanders and sister of Sir Charles Saunders (1715~ – 1775-12-07, https://www.wikidata.org/wiki/Q534372 or https://www.wikidata.org/wiki/Q76073751)))
+  # oo Anne Huck-Saunders, d. 1841-09
   []
     gen:spouse <https://www.wikidata.org/wiki/Q267061> , <https://www.wikidata.org/wiki/Q55979335> ;
 	gen:startDate "1796-08-29" .
@@ -854,7 +858,7 @@
   # Rev. Hon. Charles Dundas, 1806-09-11 - 1883-02-24
   gen:father <https://www.wikidata.org/wiki/Q267061> ;
   gen:mother <https://www.wikidata.org/wiki/Q55979335> .
-  # oo Louisa Maria Boothby, 1806-01-19 - 1895-09-06, daughter of https://www.wikidata.org/wiki/Q38661078 (savile.ttl) and https://www.wikidata.org/wiki/Q75488525
+  # oo Louisa Maria Boothby, 1806-01-19 - 1895-09-06 (savile.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75912335> , <https://www.wikidata.org/wiki/Q76073750> ;
 	gen:startDate "1833-08-01" .
@@ -863,7 +867,7 @@
   # Henry Dundas, 5th Viscount Melville of Melville, 1835-03-08 - 1904-11-03
   gen:father <https://www.wikidata.org/wiki/Q75912335> ;
   gen:mother <https://www.wikidata.org/wiki/Q76073750> .
-  # oo Hon. Violet Marie Louise Cochrane-Wishart-Baillie, 1870~ - 1943-03-31, daughter of https://www.wikidata.org/wiki/Q3610747 (cochrane.ttl) Alexander Dundas Ross Cochrane-Wishart-Baillie, 1st Baron Lamington and https://www.wikidata.org/wiki/Q75271498 Annabella Mary Elizabeth Drummond
+  # oo Hon. Violet Marie Louise Cochrane-Wishart-Baillie, 1870~ - 1943-03-31 (cochrane.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q45594994> , <https://www.wikidata.org/wiki/Q76016211> ;
 	gen:startDate "1891-06-18" .
@@ -896,19 +900,18 @@
   # Hon. Selina Louisa Grace Dundas, 1874-10-23 - 1945-12-03
   gen:father <https://www.wikidata.org/wiki/Q64216452> ;
   gen:mother <https://www.wikidata.org/wiki/Q76073769> .
-  # oo 1899-09-05 Sir Richard Harington, 12th Baronet, 1861-03-03 - 1931-02-01, https://www.wikidata.org/wiki/Q75961147, son of https://www.wikidata.org/wiki/Q75260294 Sir Richard Harington, 11th Baronet and https://www.wikidata.org/wiki/Q75257806 Frances Agnata Biscoe
+  # oo 1899-09-05 Sir Richard Harington, 12th Baronet, 1861-03-03 - 1931-02-01, https://www.wikidata.org/wiki/Q75961147
 <https://www.wikidata.org/wiki/Q76073943>
   # Hon. Hilda Guilhermina Dundas, 1877-05-19 - 1971-12-18
   gen:father <https://www.wikidata.org/wiki/Q64216452> ;
   gen:mother <https://www.wikidata.org/wiki/Q76073769> .
   # oo 1903-09-22 William Ingham Whitaker, d. 1936-07-10, https://www.wikidata.org/wiki/Q75381220
-  # TODO move here from compton.ttl
 
 <https://www.wikidata.org/wiki/Q75611589>
   # Hon. Diana Pearl Dundas, 1902-08-07 - 1979
   gen:father <https://www.wikidata.org/wiki/Q45596471> ;
   gen:mother <https://www.wikidata.org/wiki/Q76073947> .
-  # oo 1929-04-15 Morogh Wyndham Percy Bernard, 1902-02-05 - 1977-02-16, https://www.wikidata.org/wiki/Q75334104, son of Percy Brodrick Bernard (1844-09-17 - 1912-07-18, https://www.wikidata.org/wiki/Q7167250, son of Rt. Rev. and Hon. Charles Brodrick Bernard (1811-01-04 - 1890-01-31, https://www.wikidata.org/wiki/Q5075569, Bishop of Tuam, son of https://www.wikidata.org/wiki/Q6129718 James Bernard, 2nd Earl of Bandon and https://www.wikidata.org/wiki/Q75298588 Mary Susan Albinia Brodrick) and oo 1843-07-25 Hon. Jane Grace Dorothea Evans-Freke (d. 1892-06-05, https://www.wikidata.org/wiki/Q75282793, daughter of Percy Evans-Freke (1774-04 - 1844-09-09, https://www.wikidata.org/wiki/Q75342021 (noel.ttl)) and oo 1797 Dorothea Harvey (d. 1835-03-26, https://www.wikidata.org/wiki/Q75539158, daughter of Rev. Christopher Harvey and Rachel Nickson))) and oo 1900-06-02 Evangeline Hoare (d. 1950-02-17, https://www.wikidata.org/wiki/Q75298582, daughter of Henry Hoare (1838 - 1898, https://www.wikidata.org/wiki/Q75353844, son of https://www.wikidata.org/wiki/Q75262094 and https://www.wikidata.org/wiki/Q27942532) and oo 1865-01-31 Beatrice Anne Paley (1838-08-06 - 1898-08-05, https://www.wikidata.org/wiki/Q76113225, daughter of Rev. George Barber Paley and Catherine Anne Robertson))
+  # oo 1929-04-15 Morogh Wyndham Percy Bernard, 1902-02-05 - 1977-02-16, https://www.wikidata.org/wiki/Q75334104 (boyle.ttl)
 <https://www.wikidata.org/wiki/Q52329549>
   # Henry Charles Patric Brouncker Dundas Dundas, 8th Viscount Melville of Melville, 1909-03-05 - 1971-03-26
   gen:father <https://www.wikidata.org/wiki/Q45596471> ;
@@ -942,7 +945,7 @@
   # Alexander Dundas of Fingask, 1410~ - 1451
   gen:father <https://www.wikidata.org/wiki/Q66384762> ;
   gen:mother <https://www.wikidata.org/wiki/Q75268599> .
-  # oo Eupham Livingston, 1410~ - 1451a, daughter of https://www.wikidata.org/wiki/Q4719422 and https://www.wikidata.org/wiki/Q75558359
+  # oo Eupham Livingston, 1410~ - 1451a
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75902521> , <https://www.wikidata.org/wiki/Q75902524> ;
 	gen:startDate "1451" .
@@ -951,7 +954,7 @@
   # Alexander Dundas of Fingask, 1451b - 1513-09-09
   gen:father <https://www.wikidata.org/wiki/Q75902521> ;
   gen:mother <https://www.wikidata.org/wiki/Q75902524> .
-  # oo Hon. Isabel Oliphant, b. 1472a, daughter of https://www.wikidata.org/wiki/Q16863398 Laurence Oliphant, 1st Lord Oliphant and https://www.wikidata.org/wiki/Q75556747 Lady Isabel Hay
+  # oo Hon. Isabel Oliphant, b. 1472a (hay.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75902525> , <https://www.wikidata.org/wiki/Q75902527> .
 
@@ -979,8 +982,7 @@
   # Nicola Dundas, b. 1547b
   gen:father <https://www.wikidata.org/wiki/Q75263583> ;
   gen:mother <https://www.wikidata.org/wiki/Q75654097> .
-  # oo 1572~ Alexander Colville, 1536 - 1597-05, https://www.wikidata.org/wiki/Q18526377, son of James Colville and Alison Bruce
-  # -> Grizel Colville, 1578~ - 1629~, https://www.wikidata.org/wiki/Q75488502 (see bruce.ttl)
+  # oo 1572~ Alexander Colville, 1536 - 1597-05, https://www.wikidata.org/wiki/Q18526377
 
 <https://www.wikidata.org/wiki/Q75902556>
   # Archibald Dundas of Fingask, 1560~ - 1624
@@ -996,7 +998,7 @@
   # Sir John Dundas of Fingask, 1612~ - 1670
   gen:father <https://www.wikidata.org/wiki/Q75902556> ;
   gen:mother <https://www.wikidata.org/wiki/Q75902540> .
-  # oo Anne Moncreiffe, daughter of https://www.wikidata.org/wiki/Q75662201 and https://www.wikidata.org/wiki/Q75662206
+  # oo Anne Moncreiffe
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75902541> , <https://www.wikidata.org/wiki/Q75902542> .
   # oo Margaret Dundas, 1613b - 1640a
@@ -1084,7 +1086,7 @@
   # 1st Baronet Dundas, of Kerse, co. Stirling 1762-11-23
   gen:father <https://www.wikidata.org/wiki/Q19325572> ;
   gen:mother <https://www.wikidata.org/wiki/Q76099780> .
-  # oo Margaret Bruce, 1716-10-04 - 1802-10-11, daughter of Alexander Bruce (1691-06 - 1747-08-08, https://www.wikidata.org/wiki/Q75329722, son of James Bruce, 6th of Kennet and Mary Swinton) and 1714-07-05 Hon. Mary Balfour (1690-06-07 - 1758-11-07, https://www.wikidata.org/wiki/Q75329720, daughter of https://www.wikidata.org/wiki/Q75329692 Robert Balfour, 4th Lord Balfour of Burleigh and https://www.wikidata.org/wiki/Q75329693 Margaret Melville)
+  # oo Margaret Bruce, 1716-10-04 - 1802-10-11 (leslie.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7016183> , <https://www.wikidata.org/wiki/Q75332653> ;
 	gen:startDate "1738-04-09" .
@@ -1095,7 +1097,7 @@
   # 1st Baron Dundas of Aske, co. York 1794-08-13
   gen:father <https://www.wikidata.org/wiki/Q7016183> ;
   gen:mother <https://www.wikidata.org/wiki/Q75332653> .
-  # oo Lady Charlotte FitzWilliam, 1746 - 1833-02-11
+  # oo Lady Charlotte FitzWilliam, 1746-07-14 - 1833-02-11 (ponsonby.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7018876> , <https://www.wikidata.org/wiki/Q75248347> ;
 	gen:startDate "1764-05-14" .
@@ -1110,19 +1112,32 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q6504003> , <https://www.wikidata.org/wiki/Q75239733> ;
 	gen:startDate "1794-04-21" .
-#<>
+<https://www.wikidata.org/wiki/Q26265789>
   # Hon. Charles Lawrence Dundas, 1771-07-18 – 1810-01-25
-#  gen:father <https://www.wikidata.org/wiki/Q7018876> ;
-#  gen:mother <https://www.wikidata.org/wiki/Q75248347> .
+  gen:father <https://www.wikidata.org/wiki/Q7018876> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75248347> .
+  # oo Lady Caroline Beauclerk, 1775~ - 1838-11-23
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q26265789> , <https://www.wikidata.org/wiki/Q75251396> ;
+	gen:startDate "1797-02-16" .
+<https://www.wikidata.org/wiki/Q76099850>
+  # Hon. Charlotte Dundas, 1774-06-18 - 1855-01-05
+  gen:father <https://www.wikidata.org/wiki/Q7018876> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75248347> .
+  # oo 1808-04-19 Rev. William Wharton, d. 1842-05-26, https://www.wikidata.org/wiki/Q76099853 (lambton.ttl)
 <https://www.wikidata.org/wiki/Q76014444>
   # Hon. Frances Laura Dundas, 1777-05-24 – 1844-11-27
   gen:father <https://www.wikidata.org/wiki/Q7018876> ;
   gen:mother <https://www.wikidata.org/wiki/Q75248347> .
-  # oo 1805-01-24 Robert Chaloner, 1776-09-23 – 1842-10-07, https://www.wikidata.org/wiki/Q21165607, Lord Mayor of York, son of William Chaloner and Emma Harvey
-#<>
-  # George Heneage Lawrence Dundas, 1778 – 1834
-#  gen:father <https://www.wikidata.org/wiki/Q7018876> ;
-#  gen:mother <https://www.wikidata.org/wiki/Q75248347> .
+  # oo 1805-01-24 Robert Chaloner, 1776-09-23 – 1842-10-07, https://www.wikidata.org/wiki/Q21165607
+<https://www.wikidata.org/wiki/Q3024302>
+  # George Heneage Lawrence Dundas, 1778-09-08 – 1834-10-07
+  gen:father <https://www.wikidata.org/wiki/Q7018876> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75248347> .
+<https://www.wikidata.org/wiki/Q26213078>
+  # Hon. Sir Robert Lawrence Dundas, 1780-07-27 – 1844-11-23
+  gen:father <https://www.wikidata.org/wiki/Q7018876> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75248347> .
 <https://www.wikidata.org/wiki/Q75271000>
   # Hon. Mary Dundas, 1787-05-30 - 1830-11-01
   gen:father <https://www.wikidata.org/wiki/Q7018876> ;
@@ -1138,7 +1153,7 @@
   # Thomas Dundas, 2nd Earl of Zetland, 1795-02-05 - 1873-05-06
   gen:father <https://www.wikidata.org/wiki/Q6504003> ;
   gen:mother <https://www.wikidata.org/wiki/Q75239733> .
-  # oo Sophia Jane Williamson, 1803-11-21 - 1865-05-21, daughter of https://www.wikidata.org/wiki/Q75347720 Sir Hedworth Williamson, 6th Baronet and https://www.wikidata.org/wiki/Q75347721 Maria Hamilton
+  # oo Sophia Jane Williamson, 1803-11-21 - 1865-05-21 (liddell.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q6593713> , <https://www.wikidata.org/wiki/Q76099855> ;
 	gen:startDate "1823-09-06" .
@@ -1150,12 +1165,25 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q6230399> , <https://www.wikidata.org/wiki/Q75343513> ;
 	gen:startDate "1843-03-27" .
+<https://www.wikidata.org/wiki/Q5497686>
+  # Frederick Dundas, 1802-01-14 - 1872-10-26
+  gen:father <https://www.wikidata.org/wiki/Q26265789> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75251396> .
+  # oo Grace Gore, d. 1868-01-15 (maxwell.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5497686> , <https://www.wikidata.org/wiki/Q75346021> ;
+	gen:startDate "1847-06-02" .
+<https://www.wikidata.org/wiki/Q75346019>
+  # Catherine Elizabeth, 1805-01-17 – 1876-02-12
+  gen:father <https://www.wikidata.org/wiki/Q26265789> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75251396> .
+  # oo 1832-08-21 Freeman Murray, 1804-11-16 – 1885-04-14, https://www.wikidata.org/wiki/Q24969625
 
 <https://www.wikidata.org/wiki/Q75343509>
   # Lady Laura Octavia Dundas, d. 1881-01-19
   gen:father <https://www.wikidata.org/wiki/Q6230399> ;
   gen:mother <https://www.wikidata.org/wiki/Q75343513> .
-  # oo 1877-02-08 Arthur French, 4th Baron de Freyne of Coolavin, 1855-07-09 - 1913-09-23, https://www.wikidata.org/wiki/Q19408644, son of https://www.wikidata.org/wiki/Q75441851 Charles French, 3rd Baron de Freyne of Coolavin and https://www.wikidata.org/wiki/Q75822618 Catherine Maree
+  # oo 1877-02-08 Arthur French, 4th Baron de Freyne of Coolavin, 1855-07-09 - 1913-09-23, https://www.wikidata.org/wiki/Q19408644
 <https://www.wikidata.org/wiki/Q3828136>
   # Lawrence Dundas, 1st Marquess of Zetland, 1844-08-16 - 1929-03-11
   # 3rd Earl of Zetland, 4th Baron Dundas of Aske, co. York, 5th Baronet Dundas, of Kerse, co. Stirling 1873-05-06
@@ -1170,7 +1198,7 @@
   # Hon. John Charles Dundas, 1845-09-21 - 1892-09-13
   gen:father <https://www.wikidata.org/wiki/Q6230399> ;
   gen:mother <https://www.wikidata.org/wiki/Q75343513> .
-  # oo Hon. Alice Louisa Wood, d. 1934-06-03, daughter of https://www.wikidata.org/wiki/Q333354 (grey.ttl) and https://www.wikidata.org/wiki/Q75269606 Lady Mary Grey
+  # oo Hon. Alice Louisa Wood, d. 1934-06-03 (grey.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q6230401> , <https://www.wikidata.org/wiki/Q75662375> ;
 	gen:startDate "1870-08-02" .
@@ -1178,7 +1206,7 @@
   # Hon. Cospatrick Thomas Dundas, 1862-11-05 - 1906-11-23
   gen:father <https://www.wikidata.org/wiki/Q6230399> ;
   gen:mother <https://www.wikidata.org/wiki/Q75343513> .
-  # oo Maud FitzWilliam, 1871-02-27 - 1949-07-15
+  # oo Maud FitzWilliam, 1871-02-27 - 1949-07-15 (ponsonby.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75271102> , <https://www.wikidata.org/wiki/Q75271104> ;
 	gen:startDate "1892-07-18" .
@@ -1197,10 +1225,10 @@
     gen:spouse <https://www.wikidata.org/wiki/Q6504006> , <https://www.wikidata.org/wiki/Q75351143> ;
 	gen:startDate "1907-12-03" .
 <https://www.wikidata.org/wiki/Q75271004>
-  # Lady Maud Frederica Elizabeth Dundas, 1877-07-09 - d1967-03-15
+  # Lady Maud Frederica Elizabeth Dundas, 1877-07-09 - 1967-03-15
   gen:father <https://www.wikidata.org/wiki/Q3828136> ;
   gen:mother <https://www.wikidata.org/wiki/Q75271007> .
-  # oo 1896-06-24 William Charles de Meuron FitzWilliam, 7th Earl Fitzwilliam, 1872-07-25 - 1943-02-15, https://www.wikidata.org/wiki/Q7614395, son of https://www.wikidata.org/wiki/Q8020193 William FitzWilliam, Viscount Milton and https://www.wikidata.org/wiki/Q75255378 Laura Maria Theresa Beauclerk
+  # oo 1896-06-24 William Charles de Meuron FitzWilliam, 7th Earl Fitzwilliam, 1872-07-25 - 1943-02-15, https://www.wikidata.org/wiki/Q7614395 (ponsonby.ttl)
 <https://www.wikidata.org/wiki/Q75756425>
   # Frederick James Dundas, 1877-01-09 - 1950-06-16
   gen:father <https://www.wikidata.org/wiki/Q6230401> ;
@@ -1228,7 +1256,7 @@
   # Lawrence Aldred Mervyn Dundas, 3rd Marquess of Zetland, 1908-11-12 - 1989-10-05
   gen:father <https://www.wikidata.org/wiki/Q6504006> ;
   gen:mother <https://www.wikidata.org/wiki/Q75351143> .
-  # oo Katherine Mary Penelope Pike, 1914~ - 2003-08-19, younger sister of Helena Christian Olive Pike (d. 2006-03-09, https://www.wikidata.org/wiki/Q69091662 oo 1935-10-22 Lionel Gordon Baliol Brett, 4th Viscount Esher, 1913-07-18 - 2004-07-09, https://www.wikidata.org/wiki/Q6555554, son of https://www.wikidata.org/wiki/Q21556662 Oliver Sylvain Baliol Brett, 3rd Viscount Esher and https://www.wikidata.org/wiki/Q75334098 Antoinette Heckscher) and daughter of Ebenezer John Lecky Pike (1884 - 1965, https://www.wikidata.org/wiki/Q69078373) and oo 1913-04-16 Olive Constance Snell (1888-04-03 – 1962-05-23, https://www.wikidata.org/wiki/Q21461447)
+  # oo Katherine Mary Penelope Pike, 1914~ - 2003-08-19
   []
     gen:spouse <https://www.wikidata.org/wiki/Q13512831> , <https://www.wikidata.org/wiki/Q52696676> ;
 	gen:startDate "1936-12-02" .
@@ -1236,25 +1264,17 @@
   # Lady Jean Agatha Dundas, 1916-05-04 - 1995-05-13
   gen:father <https://www.wikidata.org/wiki/Q6504006> ;
   gen:mother <https://www.wikidata.org/wiki/Q75351143> .
-  # oo 1939-09-02 Hector Lorenzo Christie, 1907-08-22 - 1969-10-18, https://www.wikidata.org/wiki/Q75667776, son of William Lorenzo Christie and Eglantine Marie-Corinne Limoges
-  # -> Carolyn Anne Christie, b. 1946-12-27, https://www.wikidata.org/wiki/Q5045500
-  #   oo 1966-08-24 (div 1970) John Julian Reynolds, 1942-02-25 - 1995-10, https://www.wikidata.org/wiki/Q75667821, son of https://www.wikidata.org/wiki/Q75985861 Sir John Francis Roskell Reynolds, 2nd Baronet and https://www.wikidata.org/wiki/Q76139132 Eleanor Constance Holford
-  #   oo 1974 (div 1981) Robert Scully, 1941-08-01 – 2014-12-16, https://www.wikidata.org/wiki/Q15493070
-  #   oo 1986 (div 1992) George Roger Waters, b. 1943-09-06, https://www.wikidata.org/wiki/Q180861, son of Eric Fletcher Waters and Mary D. Whyte
-  # -> William Lawrence Christie, b. 1948-11-14, https://www.wikidata.org/wiki/Q16120478
-  #   oo Pamela Rosalind Grace Coddington, b. 1941-04-20, https://www.wikidata.org/wiki/Q981330, daughter of William R. D. Coddington, "1976 divorced 1979" .
-  #   oo Amanda Kate Victoria Nimmo, b. 1959, https://www.wikidata.org/wiki/Q75334589, daughter of Derek Robert Nimmo and Patricia S. Brown, "1991" .
+  # oo 1939-09-02 Hector Lorenzo Christie, 1907-08-22 - 1969-10-18, https://www.wikidata.org/wiki/Q75667776
 <https://www.wikidata.org/wiki/Q76082869>
   # Elizabeth Mary Dundas, b. 1914-01-01
   gen:father <https://www.wikidata.org/wiki/Q75756425> ;
   gen:mother <https://www.wikidata.org/wiki/Q75756423> .
   # oo 1936-10-24 Sir John Harling Muir, 3rd Baronet, 1910-11-07 - 1994-05-31, https://www.wikidata.org/wiki/Q75269232
-  # TODO move here from burrell.ttl
 <https://www.wikidata.org/wiki/Q11803262>
   # Sir Hugh Spencer Lisle Dundas, 1920-07-22 – 1995-07-10
   gen:father <https://www.wikidata.org/wiki/Q75756425> ;
   gen:mother <https://www.wikidata.org/wiki/Q75756423> .
-  # oo Hon. Enid Rosamond Lawrence, b. 1924-06-19, daughter of Geoffrey Lawrence Lawrence, 3rd Baron Trevethin (1880-12-02 - 1971-08-28, https://www.wikidata.org/wiki/Q336459, 1st Baron Oaksey, of Oaksey, co. Wilts. 1947-01-13, 3rd Baron Trevethin, of Blaengawney, co. Monmouth 1959-06-25, son of Alfred Tristram Lawrence, 1st Baron Trevethin (1843-11-24 - 1936-08-03, https://www.wikidata.org/wiki/Q1756405, 1st Baron Trevethin, of Blaengawney, co. Monmouth 1921-08-24, son of David Lawrence) and oo 1875-08-25 Jessie Elizabeth Lawrence (1852 - 1931-07-15, https://www.wikidata.org/wiki/Q75919276, daughter of George Lawrence and Catherine Lewis)) and oo 1921-12-22 Marjorie Frances Alice Robinson (d. 1984, https://www.wikidata.org/wiki/Q75919284, daughter of Charles Napier Robinson)
+  # oo Hon. Enid Rosamond Lawrence, b. 1924-06-19
   []
     gen:spouse <https://www.wikidata.org/wiki/Q11803262> , <https://www.wikidata.org/wiki/Q75919297> ;
 	gen:startDate "1950-01-28" .
@@ -1289,7 +1309,7 @@
     gen:spouse <https://www.wikidata.org/wiki/Q75351152> , <https://www.wikidata.org/wiki/Q75627436> ;
 	gen:startDate "1974-06-15" ;
 	gen:divorceDate "1981" .
-  # oo Sophie Caroline Lascelles, b. 1958-10-31, daughter of Henry Giles Francis Lascelles (1931-10-02 - 1998-04-20, https://www.wikidata.org/wiki/Q75266155, son of https://www.wikidata.org/wiki/Q5482786 Sir Francis William Lascelles and https://www.wikidata.org/wiki/Q75249272 Esmée Marion Bury) and oo 1957-06-01 Caroline Venetia Baring (b. 1937-01-29, https://www.wikidata.org/wiki/Q75266156, daughter of https://www.wikidata.org/wiki/Q75253794 Esmond Charles Baring and https://www.wikidata.org/wiki/Q75253795 Zalia Snagge)
+  # oo Sophie Caroline Lascelles, b. 1958-10-31
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75351152> , <https://www.wikidata.org/wiki/Q75266160> ;
 	gen:startDate "1983-04-09" ;
@@ -1319,12 +1339,12 @@
   # Lady Henrietta Kate Dundas, b. 1970-02-09
   gen:father <https://www.wikidata.org/wiki/Q6767432> ;
   gen:mother <https://www.wikidata.org/wiki/Q75351155> .
-  # oo 1994-12-10 James Mark Ptarmigan Douglas Stroyan, https://www.wikidata.org/wiki/Q76099775, son of Ronald Stroyan
+  # oo 1994-12-10 James Mark Ptarmigan Douglas Stroyan, https://www.wikidata.org/wiki/Q76099775
 <https://www.wikidata.org/wiki/Q75351164>
   # Lady Victoria Clare Dundas, b. 1973-01-02
   gen:father <https://www.wikidata.org/wiki/Q6767432> ;
   gen:mother <https://www.wikidata.org/wiki/Q75351155> .
-  # oo Christopher William Madel, https://www.wikidata.org/wiki/Q75544659, son of Sir William David Madel and Susan Catherine Carew
+  # oo Christopher William Madel, https://www.wikidata.org/wiki/Q75544659
 
 <https://www.wikidata.org/wiki/Q76073434>
   # Eliza Constance Dundas, b. 1998-03-31
@@ -1407,7 +1427,7 @@
   # Sir John Dundas, of Newliston, d. 1644a/1655
   gen:father <https://www.wikidata.org/wiki/Q75902934> ;
   gen:mother <https://www.wikidata.org/wiki/Q75902932> .
-  # oo Agnes Gray, 1622-12-05 - 1699, daughter of Sir William Gray of Pittendrum and Egidia Smith)
+  # oo Agnes Gray, 1622-12-05 - 1699, daughter of Sir William Gray of Pittendrum and Egidia Smith
   []
     gen:spouse <#Sir_John_Dundas,_of_Newliston> , <https://www.wikidata.org/wiki/Q75634475> .
 
@@ -1418,6 +1438,293 @@
   gen:mother <https://www.wikidata.org/wiki/Q75634475> .
   # oo 1669-01-18~ John Dalrymple, 1st Earl of Stair, 1648 – 1707-01-08, https://www.wikidata.org/wiki/Q5931857
 
+
+# ----
+<https://www.wikidata.org/wiki/Q75902921>
+  # Catherine Oliphant, 1534 - 1612
+  gen:father <https://www.wikidata.org/wiki/Q75497754> ; # Lawrence Oliphant, 3rd Lord Oliphant
+  gen:mother <https://www.wikidata.org/wiki/Q75497757> . # Margaret Sandilands
+  # oo George Dundas, 17th of Dundas, 1553b - 1613~, https://www.wikidata.org/wiki/Q75902910
+
+# ----
+<https://www.wikidata.org/wiki/Q75902941>
+  # John Sandilands, 4th Lord Torphichen, 1593-08-19 - 1654-06-28,  (see lindsay.ttl)
+  gen:father <https://www.wikidata.org/wiki/Q76193432> ; # James Sandilands, 2nd Lord Torphichen
+  gen:mother <https://www.wikidata.org/wiki/Q76193482> . # Elizabeth Heriot
+  # oo Isabel Dundas, b. 1592a
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75902941> , <https://www.wikidata.org/wiki/Q75902939> ;
+	gen:startDate "1634-02-28" .
+
+<https://www.wikidata.org/wiki/Q75389779>
+  # Walter Sandilands, 6th Lord Torphichen, 1629-05-12 - 1696-05
+  gen:father <https://www.wikidata.org/wiki/Q75902941> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75902939> .
+  # oo Jean Lindsay, d. 1655-06-13a
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75389779> , <https://www.wikidata.org/wiki/Q75262546> ;
+	gen:startDate "1651-05-27~" .
+<https://www.wikidata.org/wiki/Q76193503>
+  # Hon. Isabel Sandilands
+  gen:father <https://www.wikidata.org/wiki/Q75902941> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75902939> .
+  # oo 1666-04-25 Sir Thomas Kirkpatrick of Closeburn, 1st Baronet, d. 1695~, https://www.wikidata.org/wiki/Q76045753
+# ----
+#<https://www.wikidata.org/wiki/Q76045753>
+  # Sir Thomas Kirkpatrick of Closeburn, 1st Baronet, d. 1695~
+  # 1st Baronet Kirkpatrick, of Closeburn 1685-03-26
+  # son of Robert Kirkpatrick of Closeburn
+  # and Grizel Baillie
+  # oo Hon. Isabel Sandilands
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76045753> , <https://www.wikidata.org/wiki/Q76193503> ;
+	gen:startDate "1666-04-25" .
+
+<https://www.wikidata.org/wiki/Q75715190>
+  # Sir Thomas Kirkpatrick of Closeburn, 2nd Baronet, d. 1730~
+  gen:father <https://www.wikidata.org/wiki/Q76045753> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76193503> .
+  # oo Isobel Lockhart (boyd.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75715190> , <https://www.wikidata.org/wiki/Q76045760> ;
+	gen:startDate "1702" .
+
+# ----
+<https://www.wikidata.org/wiki/Q75516646>
+  # Susanna Colville
+  gen:father <https://www.wikidata.org/wiki/Q18526377> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75615044> .
+  # oo 1609-09-11 Hon. John Monypenny, d. 1617-08-01, https://www.wikidata.org/wiki/Q75516644
+# ----
+#<https://www.wikidata.org/wiki/Q75516644>
+  # Hon. John Monypenny, d. 1617-08-01
+  # son of James Monypenny, 17th of Pitmilly
+  # and Euphame Colville
+  # oo Susanna Colville
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75516644> , <https://www.wikidata.org/wiki/Q75516646> ;
+	gen:startDate "1609-09-11" .
+
+<https://www.wikidata.org/wiki/Q75515394>
+  # Catherine Monypenny, d. 1694
+  gen:father <https://www.wikidata.org/wiki/Q75516644> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75516646> .
+  # oo 1636 George Dundas, 1612 - 1684, https://www.wikidata.org/wiki/Q75515393
+
+# ====
+<https://www.wikidata.org/wiki/Q7528136>
+  # Sir John Wedderburn of Blackness, 5th Baronet, 1704-08-04 - 1746-11-28
+  # 5th Baronet Wedderburn 1744-09-21
+  gen:father <https://www.wikidata.org/wiki/Q75628805> ; # Sir Alexander Wedderburn of Blackness, 4th Baronet
+  gen:mother <https://www.wikidata.org/wiki/Q76120045> . # Katharine Scott
+  # oo Jean Fullarton, daughter of John Fullarton of that Ilk
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7528136> , <https://www.wikidata.org/wiki/Q76120342> ;
+	gen:startDate "1724-10-22" .
+<https://www.wikidata.org/wiki/Q75628807>
+  # Katherine Wedderburn, 1715-01-19~ - 1796-03-19a
+  gen:father <https://www.wikidata.org/wiki/Q75628805> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76120045> .
+  # oo 1720~ David Scrymgeour of Birkhill, 1698b - 1750a, https://www.wikidata.org/wiki/Q75628803
+
+<https://www.wikidata.org/wiki/Q6263346>
+  # Sir John Wedderburn of Ballendean, 1729-02-21 - 1803-06-14
+  gen:father <https://www.wikidata.org/wiki/Q7528136> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76120342> .
+  # oo Margaret Ogilvy, 1748-06-23 - 1775-03-23
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6263346> , <https://www.wikidata.org/wiki/Q75240869> ;
+	gen:startDate "1769-11-25" .
+  # oo Alice Dundas, 1762~ - 1831-06-24
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6263346> , <https://www.wikidata.org/wiki/Q75903109> ;
+	gen:startDate "1780-12-27" .
+
+<https://www.wikidata.org/wiki/Q76003808>
+  # Margaret Wedderburn, 1772-06-01 - 1807
+  gen:father <https://www.wikidata.org/wiki/Q6263346> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75240869> .
+  # oo 1803-05-05 Philip Dundas, 1762-05-07b - 1807-04-08, https://www.wikidata.org/wiki/Q7183477
+<https://www.wikidata.org/wiki/Q75292909>
+  # Louisa Dorothea Wedderburn, 1786-06-08 - 1836-07-16
+  gen:father <https://www.wikidata.org/wiki/Q6263346> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75903109> .
+  # oo 1803-02-09 John Hope, 4th Earl of Hopetoun, 1765-08-17 - 1823-08-27, https://www.wikidata.org/wiki/Q336953
+<https://www.wikidata.org/wiki/Q76003813>
+  # Anne Wedderburn, 1788-02-14 - 1867-03-17
+  gen:father <https://www.wikidata.org/wiki/Q6263346> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75903109> .
+  # oo 1805-06-17 Sir John Hope of Craighall, 11th Baronet, 1781-04-13 - 1853-06-05, https://www.wikidata.org/wiki/Q26695941
+<https://www.wikidata.org/wiki/Q76031249>
+  # Sir John Wedderburn, 2nd Baronet, 1789-05-01 - 1862-07-02
+  # 2nd Baronet Wedderburn, of Ballindean, Perthshire 1858-04-07
+  gen:father <https://www.wikidata.org/wiki/Q6263346> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75903109> .
+  # oo Henrietta Louisa Milburn, d. 1881-04-07, daughter of William Milburn
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76031249> , <https://www.wikidata.org/wiki/Q76120365> ;
+	gen:startDate "1822-09-07" .
+
+<https://www.wikidata.org/wiki/Q8020135>
+  # Sir William Wedderburn, 4th Baronet, 1838-03-25 - 1918-02-25
+  gen:father <https://www.wikidata.org/wiki/Q76031249> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76120365> .
+  # oo Mary Blanche Hoskyns, d. 1933-10-07, daughter of Henry William Hoskyns
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8020135> , <https://www.wikidata.org/wiki/Q76120374> ;
+	gen:startDate "1878-09-12" .
+<https://www.wikidata.org/wiki/Q76031251>
+  # Alicia Henrietta Wedderburn, d. 1901-06-19
+  gen:father <https://www.wikidata.org/wiki/Q76031249> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76120365> .
+  # oo 1862-01-22 Sir William Hope of Craighall, 14th Baronet, 1819-01-12 - 1898-09-05, https://www.wikidata.org/wiki/Q19664539
+
+<https://www.wikidata.org/wiki/Q76120375>
+  # Dorothy Hope Wedderburn, 1879-06-24 - 1960-02-16
+  gen:father <https://www.wikidata.org/wiki/Q8020135> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76120374> .
+  # oo 1904-02-11 Hugh Courtenay Fownes-Luttrell, d. 1918-01-14, https://www.wikidata.org/wiki/Q76120378
+
+# ----
+#<https://www.wikidata.org/wiki/Q75628803>
+  # David Scrymgeour of Birkhill, 1698b - 1750a
+  # son of Alexander Scrymgeour
+  # and Janet Falconer
+  # oo Katherine Wedderburn, 1715-01-19~ - 1796-03-19a
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75628803> , <https://www.wikidata.org/wiki/Q75628807> ;
+	gen:startDate "1720~" .
+
+<https://www.wikidata.org/wiki/Q75628814>
+  # Henry Scrymgeour-Wedderburn, 1750~ - 1841-12-30
+  gen:father <https://www.wikidata.org/wiki/Q75628803> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75628807> .
+  # oo Mary Turner Maitland, 1768-10-28 - 1809a
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75628814> , <https://www.wikidata.org/wiki/Q75628818> ;
+	gen:startDate "1793-04-05" .
+
+<https://www.wikidata.org/wiki/Q75628819>
+  # Frederick Lewis Scrymgeour-Wedderburn, 1808-03-04 - 1874-08-16
+  gen:father <https://www.wikidata.org/wiki/Q75628814> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75628818> .
+  # oo Hon. Helen Arbuthnott, 1815-04-10 - 1840-04-23 (ogilby.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75628819> , <https://www.wikidata.org/wiki/Q75628820> ;
+	gen:startDate "1839-04-26" .
+
+<https://www.wikidata.org/wiki/Q75628821>
+  # Henry Scrymgeour-Wedderburn of Wedderburn and Birkhill, 1840-04-18 - 1914-02-01
+  # 9th Earl of Dundee, 11th Viscount Dudhope, de jure 1874-08-16
+  gen:father <https://www.wikidata.org/wiki/Q75628819> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75628820> .
+  # oo Juliana Braddell, d. 1921-05-28, daughter of Thomas Braddell
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75628821> , <https://www.wikidata.org/wiki/Q75628831> ;
+	gen:startDate "1869-03-31" .
+
+<https://www.wikidata.org/wiki/Q75255461>
+  # Henry Scrymgeour-Wedderburn of Wedderburn and Birkhill, 1872-06-28 - 1924-05-12
+  gen:father <https://www.wikidata.org/wiki/Q75628821> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75628831> .
+  # oo Edith Moffat, 1877~ - 1968-10-16, daughter of John Moffat and Jessie Fulton Arthur
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75255461> , <https://www.wikidata.org/wiki/Q75255463> ;
+	gen:startDate "1901-07-30" .
+<https://www.wikidata.org/wiki/Q75628833>
+  # Frederick Lewis Scrymgeour-Wedderburn, 1874-06-27 - 1936-05-22
+  gen:father <https://www.wikidata.org/wiki/Q75628821> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75628831> .
+  # oo Zaida Grace Erskine, 1882-01-26 - 1943-02-27
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75628833> , <https://www.wikidata.org/wiki/Q75628837> ;
+	gen:startDate "1913-12-17" .
+
+<https://www.wikidata.org/wiki/Q5728164>
+  # Henry James Scrymgeour-Wedderburn, 11th Earl of Dundee, 1902-05-03 - 1983-06-29
+  gen:father <https://www.wikidata.org/wiki/Q75255461> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75255463> .
+  # oo Patricia Katherine Montagu Douglas Scott, 1910-10-09 - 2012-12-03 (scott.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5728164> ,<https://www.wikidata.org/wiki/Q75253803>  ;
+	gen:startDate "1946-10-30" .
+<https://www.wikidata.org/wiki/Q75266606>
+  # Hon. David Scrymgeour-Wedderburn, 1912-04-02 - 1944-03-01
+  gen:father <https://www.wikidata.org/wiki/Q75255461> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75255463> .
+  # oo Patricia Katherine Montagu Douglas Scott, 1910-10-09 - 2012-12-03 (scott.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75266606> , <https://www.wikidata.org/wiki/Q75253803> ;
+	gen:startDate "1940-09-09" .
+
+<https://www.wikidata.org/wiki/Q75331334>
+  # Janet Mary Scrymgeour-Wedderburn, b. 1941-08-14
+  gen:father <https://www.wikidata.org/wiki/Q75266606> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75253803> .
+  # oo 1962-01-18 Edward Arthur Mervyn Lane Fox-Pitt, b. 1935-11-26, https://www.wikidata.org/wiki/Q75331349 (compton.ttl)
+<https://www.wikidata.org/wiki/Q75331330>
+  # Elizabeth Scrymgeour-Wedderburn, b. 1943-10-05
+  gen:father <https://www.wikidata.org/wiki/Q75266606> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75253803> .
+  # oo 1964-10-11 John Christopher Ingram Roper-Curzon, 20th Baron Teynham, b. 1928-12-25, https://www.wikidata.org/wiki/Q75303282 (roper.ttl)
+
+# ----
+#<https://www.wikidata.org/wiki/Q76120378>
+  # Hugh Courtenay Fownes-Luttrell, d. 1918-01-14
+  # son of George Fownes-Luttrell
+  # and Anne Elizabeth Periam Hood
+  # oo Dorothy Hope Wedderburn, 1879-06-24 - 1960-02-16
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76120378> , <https://www.wikidata.org/wiki/Q76120375> ;
+	gen:startDate "1904-02-11" .
+
+<https://www.wikidata.org/wiki/Q75674218>
+  # John Fownes-Luttrell, d. 1985
+  gen:father <https://www.wikidata.org/wiki/Q76120378> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76120375> .
+  # oo Lady Elizabeth Hermione Shirley, d. 1997-10-07
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75674218> , <https://www.wikidata.org/wiki/Q75674212> ;
+	gen:startDate "1959-10-24" .
+
+# ====
+
+# ----
+<https://www.wikidata.org/wiki/Q335334>
+  # Adam Duncan, 1st Viscount Duncan of Camperdown, 1731-07-01 - 1804-08-04
+  # 1st Viscount Duncan of Camperdown, 1st Baron Duncan of Lundie, co. Perth 1797-10-30
+  gen:father <https://www.wikidata.org/wiki/Q75536012> ; # Alexander Duncan, 3rd of Lundie
+  gen:mother <https://www.wikidata.org/wiki/Q75536014> . # Helen Haldane
+  # oo Henrietta Dundas, 1748 - 1832-12-08
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q335334> , <https://www.wikidata.org/wiki/Q75536021> ;
+	gen:startDate "1777-06-06" .
+
+<https://www.wikidata.org/wiki/Q26037185>
+  # Robert Dundas Duncan-Haldane, 1st Earl of Camperdown of Lundie, 1785-03-21 - 1859-12-22
+  # 2nd Viscount Duncan of Camperdown, 2nd Baron Duncan of Lundie, co. Perth 1804-08-04
+  # 1st Earl of Camperdown of Lundie, co. Forfar and of Gleneagles, co. Perth 1831-09-12
+  gen:father <https://www.wikidata.org/wiki/Q335334> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75536021> .
+  # oo Janet Hamilton-Dalrymple, 1783-05-19 - 1867-05-17 (dalrymple.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q26037185> , <https://www.wikidata.org/wiki/Q75514500> ;
+	gen:startDate "1805-01-08" .
+<https://www.wikidata.org/wiki/Q75269694>
+  # Hon. Adamina Duncan, d. 1857-08-01
+  gen:father <https://www.wikidata.org/wiki/Q335334> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75536021> .
+  # oo 1825-06-08 John Hamilton Dalrymple, 8th Earl of Stair, 1771-06-14 – 1853-01-10, https://www.wikidata.org/wiki/Q6228445
+<https://www.wikidata.org/wiki/Q75741739>
+  # Hon. Mary Tufton Duncan, 1795~ - 1867-05-24
+  gen:father <https://www.wikidata.org/wiki/Q335334> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75536021> .
+  # oo 1813-07-20 James Dundas, 26th of Dundas, 1793-01-14 - 1881-03-09, https://www.wikidata.org/wiki/Q66384761
+<https://www.wikidata.org/wiki/Q76026938>
+  # Hon. Jane Duncan, d. 1852-03-07
+  gen:father <https://www.wikidata.org/wiki/Q335334> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75536021> .
+  # oo 1800-05-19 Sir Hew Dalrymple-Hamilton of Bargany, 4th Baronet, 1774-01-03 - 1834-02-23, https://www.wikidata.org/wiki/Q7527271 (dalrymple.ttl)
 
 # ----
 #<https://www.wikidata.org/wiki/Q75342374>
@@ -1474,29 +1781,33 @@
 	gen:startDate "2005-08-30" .
 
 # ----
-#<https://www.wikidata.org/wiki/Q26857655>
-  # Sir William Gordon of Invergordon, 1st Baronet, d. 1742-06-09
-  # 1st Baronet Gordon, of Invergordon in 1704
-  # oo Christian Hamilton
+#<https://www.wikidata.org/wiki/Q75902636>
+  # Gabriel Hamilton
+  # son of Archibald Hamilton
+  # oo Agnes Dundas, 1710 - 1792~
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q26857655> , <https://www.wikidata.org/wiki/Q75592633> .
+    gen:spouse <https://www.wikidata.org/wiki/Q75902636> , <https://www.wikidata.org/wiki/Q75902633> ;
+	gen:startDate "1731-04-30" .
 
-<https://www.wikidata.org/wiki/Q75882958>
-  # Anne Gordon
-  gen:father <https://www.wikidata.org/wiki/Q26857655> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75592633> .
-  # oo 1734-06-03 Robert Dundas, Lord Arniston, 1685-09-09 - 1753-08-26, https://www.wikidata.org/wiki/Q3938258
+<https://www.wikidata.org/wiki/Q76101589>
+  # Christian Hamilton, d. 1814
+  gen:father <https://www.wikidata.org/wiki/Q75902636> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75902633> .
+  # oo 1777-07-02 Hon. Charles Napier, 1731-11-19 - 1807-12-09, https://www.wikidata.org/wiki/Q75465508 (scott.ttl)
 
 # ----
-#<https://www.wikidata.org/wiki/Q6778772>
-  # Mary Anne Menzies, Baroness Abercromby of Aboukir and Tullibody, d. 1821-02-11
-  # 1st Baroness Abercromby of Aboukir and Tullibody, co. Clackmannan 1801-05-28
-  # daughter of John Menzies
-  # and Ann Campbell
-  # oo 1767-11-17 Sir Ralph Abercromby, 1734-10-25 - 1801-03-28, https://www.wikidata.org/wiki/Q278399
-# ----
-#<https://www.wikidata.org/wiki/Q278399>
+#<https://www.wikidata.org/wiki/Q75236813>
+  # George Abercromby of Tullibody, d. 1800-06-08
+  # son of Alexander Abercromby
+  # and Mary Duff
+  # oo Mary Dundas
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75236813> , <https://www.wikidata.org/wiki/Q75236946> .
+
+<https://www.wikidata.org/wiki/Q278399>
   # Sir Ralph Abercromby, 1734-10-25 - 1801-03-28
+  gen:father <https://www.wikidata.org/wiki/Q75236813> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75236946> .
   # oo Mary Anne Menzies, Baroness Abercromby of Aboukir and Tullibody, d. 1821-02-11
   []
     gen:spouse <https://www.wikidata.org/wiki/Q278399> , <https://www.wikidata.org/wiki/Q6778772> ;
@@ -1531,6 +1842,13 @@
   gen:mother <https://www.wikidata.org/wiki/Q75237194> .
   # oo 1856-04-29 George Boyle, 6th Earl of Glasgow, 1825-10-09 - 1890-04-23, https://www.wikidata.org/wiki/Q5537179
 # ----
+#<https://www.wikidata.org/wiki/Q6778772>
+  # Mary Anne Menzies, Baroness Abercromby of Aboukir and Tullibody, d. 1821-02-11
+  # 1st Baroness Abercromby of Aboukir and Tullibody, co. Clackmannan 1801-05-28
+  # daughter of John Menzies
+  # and Ann Campbell
+  # oo 1767-11-17 Sir Ralph Abercromby, 1734-10-25 - 1801-03-28, https://www.wikidata.org/wiki/Q278399
+# ----
 #<https://www.wikidata.org/wiki/Q5294122>
   # Donald Cameron of Lochiel, 22nd Chief of Clan Cameron, 1769 - 1832
   # son of Charles Cameron of Lochiel
@@ -1547,6 +1865,183 @@
   # oo 1846-09-02 Lord John Hay, 1793-04-01 - 1851-08-26, https://www.wikidata.org/wiki/Q6679447
 
 # ----
+#<https://www.wikidata.org/wiki/Q26857655>
+  # Sir William Gordon of Invergordon, 1st Baronet, d. 1742-06-09
+  # 1st Baronet Gordon, of Invergordon in 1704
+  # oo Christian Hamilton
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q26857655> , <https://www.wikidata.org/wiki/Q75592633> .
+
+<https://www.wikidata.org/wiki/Q75882958>
+  # Anne Gordon
+  gen:father <https://www.wikidata.org/wiki/Q26857655> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75592633> .
+  # oo 1734-06-03 Robert Dundas, Lord Arniston, 1685-09-09 - 1753-08-26, https://www.wikidata.org/wiki/Q3938258
+
+# ----
+#<https://www.wikidata.org/wiki/Q75308631>
+  # Robert Middleton, 1693 - 1768
+  # son of George Middleton
+  # oo Helen Dundas, b. 1690~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75308631> , <https://www.wikidata.org/wiki/Q75297092> ;
+	gen:startDate "1723-11-03" .
+
+<https://www.wikidata.org/wiki/Q1617371>
+  # Charles Middleton, 1st Baron Barham, 1726-10-14 - 1813-06-17
+  # 1st Baronet Middleton, of Barham Court and Teston, Kent 1781-10-23
+  # 1st Baron Barham, of Barham Court and Teston, Kent 1805-05-01
+  gen:father <https://www.wikidata.org/wiki/Q75308631> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75297092> .
+  # oo Margaret Gambier, d. 1792-10-10, daughter of James Gambier and Mary Mead
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1617371> , <https://www.wikidata.org/wiki/Q75308635> ;
+	gen:startDate "1761-12-21" .
+
+<https://www.wikidata.org/wiki/Q18559715>
+  # Diana Middleton, 2nd Baroness Barham, 1762-09-18 - 1823-04-12
+  gen:father <https://www.wikidata.org/wiki/Q1617371> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75308635> .
+  # oo 1780-12-20 Sir Gerard Noel Noel, 2nd Baronet, 1759-07-17 - 1838-02-25, https://www.wikidata.org/wiki/Q7526957 (douglas.ttl)
+
+# ----
+#<https://www.wikidata.org/wiki/Q7087492>
+  # Oliver De Lancey, 1749~ – 1822-09-03
+
+<#Charlotte_De_Lancey>
+  # Charlotte De Lancey
+  gen:father <https://www.wikidata.org/wiki/Q7087492> .
+  # oo 1807 Sir David Dundas, 1736-05-26 - 1820-02-18, https://www.wikidata.org/wiki/Q3017816
+
+# ----
+#<https://www.wikidata.org/wiki/Q75815211>
+  # Edward Robert Thompson
+  # son of Charles Thompson
+  # oo Ellen Mary Charlotte Dundas, 1864~ - 1927-05-23
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75815211> , <https://www.wikidata.org/wiki/Q75815244> ;
+	gen:startDate "1903-03-09" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q26204011>
+  # James Charles Edward Stuart Strange, 1754 - 1840-10-06
+  # son of Sir Robert Strange of Balcaskie
+  # and Isabella Lumisden
+  # oo Hon. Anne Dundas, 1768-09-28 - 1852-01
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q26204011> , <https://www.wikidata.org/wiki/Q75275003> ;
+	gen:startDate "1798-12-18" .
+
+# ----
+<https://www.wikidata.org/wiki/Q534372>
+  owl:sameAs <https://www.wikidata.org/wiki/Q76073751> ;
+  # Sir Charles Saunders, 1715~ – 1775-12-07
+  gen:father <https://www.wikidata.org/wiki/Q76073749> . # ??? Sanders
+<https://www.wikidata.org/wiki/Q76073747>
+  # Anne Sanders
+  gen:father <https://www.wikidata.org/wiki/Q76073749> .
+  # oo Peter Kinsey, https://www.wikidata.org/wiki/Q76073742
+# ----
+#<https://www.wikidata.org/wiki/Q76073742>
+  # Peter Kinsey
+  # oo Anne Sanders
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76073742> , <https://www.wikidata.org/wiki/Q76073747> .
+
+<https://www.wikidata.org/wiki/Q75720716>
+  # Jane Kinsey, d. 1780
+  gen:father <https://www.wikidata.org/wiki/Q76073742> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76073747> .
+  # oo 1777 Dr. Richard Huck-Saunders, 1720 - 1785-07-24, https://www.wikidata.org/wiki/Q75647446
+# ----
+#<https://www.wikidata.org/wiki/Q75647446>
+  # Dr. Richard Huck-Saunders, 1720 - 1785-07-24
+  # Richard Huck
+  # oo Jane Kinsey, d. 1780
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75647446> , <https://www.wikidata.org/wiki/Q75720716> ;
+	gen:startDate "1777" .
+
+<https://www.wikidata.org/wiki/Q56036877>
+  # Jane Huck-Sanders, 1780~ - 1857-03-26
+  gen:father <https://www.wikidata.org/wiki/Q75647446> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75720716> .
+  # oo 1800-03-24 John Fane, 10th Earl of Westmorland, 1759-06-01 - 1841-12-15, https://www.wikidata.org/wiki/Q5949661
+<https://www.wikidata.org/wiki/Q55979335>
+  # Anne Huck-Saunders, d. 1841-09
+  gen:father <https://www.wikidata.org/wiki/Q75647446> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75720716> .
+  # oo 1796-08-29 Robert Saunders-Dundas, 2nd Viscount Melville of Melville, 1771-03-13 - 1851-06-10, https://www.wikidata.org/wiki/Q267061
+
+# ----
+<https://www.wikidata.org/wiki/Q75961147>
+  # Sir Richard Harington, 12th Baronet, 1861-03-03 - 1931-02-01
+  gen:father <https://www.wikidata.org/wiki/Q75260294> ; # Sir Richard Harington, 11th Baronet
+  gen:mother <https://www.wikidata.org/wiki/Q75257806> . # Frances Agnata Biscoe
+  # oo Hon. Selina Louisa Grace Dundas, 1874-10-23 - 1945-12-03
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75961147> , <https://www.wikidata.org/wiki/Q75961150> ;
+	gen:startDate "1899-09-05" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q75381220>
+  # William Ingham Whitaker, d. 1936-07-10
+  # son of William Ingham Whitaker
+  # and Louisa Katharine Ewing
+  # oo Hon. Hilda Guilhermina Dundas, 1877-05-19 - 1971-12-18
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75381220> , <https://www.wikidata.org/wiki/Q76073943> ;
+	gen:startDate "1903-09-22" .
+
+<https://www.wikidata.org/wiki/Q27924016>
+  # Katherine Jean Whitaker, 1915-01-16 - 2008-07-15
+  gen:father <https://www.wikidata.org/wiki/Q75381220> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76073943> .
+  # oo 1944-02-04 Terence Marne O'Neill, Baron O'Neill of the Maine, 1914-09-10 - 1990-06-12, https://www.wikidata.org/wiki/Q336512 (chichester.ttl)
+<https://www.wikidata.org/wiki/Q75303279>
+  # Elspeth Grace Whitaker, d. 1976-05-14
+  gen:father <https://www.wikidata.org/wiki/Q75381220> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76073943> .
+  # oo 1927-10-19 (div 1955) Christopher John Henry Roper-Curzon, 19th Baron Teynham, 1896-05-06 – 1972-05-05, https://www.wikidata.org/wiki/Q44490903 (roper.ttl)
+  # oo 1958-12-02 William Bingham Compton, 6th Marquess of Northampton, 1885-08-06 – 1978-01-30, https://www.wikidata.org/wiki/Q8007036
+
+# ----
+#<https://www.wikidata.org/wiki/Q18526377>
+  # Alexander Colville, 1536 - 1597-05
+  # son of James Colville
+  # and Alison Bruce
+  # oo Nicola Dundas, b. 1547b
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q18526377> , <https://www.wikidata.org/wiki/Q75615044> ;
+	gen:startDate "1572~" .
+
+<https://www.wikidata.org/wiki/Q75488502>
+  # Grizel Colville, 1578~ - 1629~ (see bruce.ttl)
+  gen:father <https://www.wikidata.org/wiki/Q18526377> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75615044> .
+  # oo 1602-06-24 Sir John Preston, 4th of Valleyfield, b. 1570~, https://www.wikidata.org/wiki/Q75488496
+# ----
+#<https://www.wikidata.org/wiki/Q75488496>
+  # Sir John Preston, 4th of Valleyfield, b. 1570~
+  # son of James Preston, 3rd of Valleyfield
+  # and Jean Erskine
+  # oo Grizel Colville, 1578~ - 1629~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75488496> , <https://www.wikidata.org/wiki/Q75488502> ;
+	gen:startDate "1602-06-24" .
+
+<https://www.wikidata.org/wiki/Q75825037>
+  # Sir George Preston of Valleyfield, 1st Baronet, 1614 - 1679-11-26
+  # 1st Baronet Preston, of Valleyfield, Fife, 1637-03-31
+  gen:father <https://www.wikidata.org/wiki/Q75488496> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75488502> .
+<https://www.wikidata.org/wiki/Q75283499>
+  # Mary Preston
+  gen:father <https://www.wikidata.org/wiki/Q75488496> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75488502> .
+  # oo Sir George Bruce, of Carnock, https://www.wikidata.org/wiki/Q75272296
+
+# ----
 #<https://www.wikidata.org/wiki/Q75283226>
   # Vincenzo Bartolucci, d. 1885-12-28
   # oo Clementina Dundas, 1825-05-12 - 1867-06-13
@@ -1561,16 +2056,189 @@
   # oo 1878-05-18 William Montagu Hay, 10th Marquess of Tweeddale, 1826-01-27 - 1911-11-25, https://www.wikidata.org/wiki/Q8011045
 
 # ----
-#<https://www.wikidata.org/wiki/Q75902636>
-  # Gabriel Hamilton
-  # son of Archibald Hamilton
-  # oo Agnes Dundas, 1710 - 1792~
+#<https://www.wikidata.org/wiki/Q21165607>
+  # Robert Chaloner, 1776-09-23 – 1842-10-07
+  # Lord Mayor of York
+  # son of William Chaloner
+  # and Emma Harvey
+  # oo Hon. Frances Laura Dundas, 1777-05-24 – 1844-11-27
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q75902636> , <https://www.wikidata.org/wiki/Q75902633> ;
-	gen:startDate "1731-04-30" .
+    gen:spouse <https://www.wikidata.org/wiki/Q21165607> , <https://www.wikidata.org/wiki/Q76014444> ;
+	gen:startDate "1805-01-24" .
 
-<https://www.wikidata.org/wiki/Q76101589>
-  # Christian Hamilton, d. 1814
-  gen:father <https://www.wikidata.org/wiki/Q75902636> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75902633> .
-  # oo 1777-07-02 Hon. Charles Napier, 1731-11-19 - 1807-12-09, https://www.wikidata.org/wiki/Q75465508 (scott.ttl)
+# ----
+<https://www.wikidata.org/wiki/Q6249939>
+  owl:sameAs <https://www.wikidata.org/wiki/Q76342283> .
+  # John Murray, 1739~ – 1824-05-04
+  # son of James Murray
+  # and Nikola Anna Johnstone
+  # oo Maria Pascoe
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6249939> , <https://www.wikidata.org/wiki/Q76365163> ;
+	gen:startDate "1801-09-06" .
+
+<https://www.wikidata.org/wiki/Q24969625>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75346017> ;
+  # Freeman Murray, 1804-11-16 – 1885-04-14
+  gen:father <https://www.wikidata.org/wiki/Q6249939> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76365163> .
+  # oo Catherine Elizabeth, 1805-01-17 – 1876-02-12
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q24969625> , <https://www.wikidata.org/wiki/Q75346019> ;
+	gen:startDate "1832-08-21" .
+
+# ----
+<https://www.wikidata.org/wiki/Q19408644>
+  # Arthur French, 4th Baron de Freyne of Coolavin, 1855-07-09 - 1913-09-23
+  gen:father <https://www.wikidata.org/wiki/Q75441851> ; # Charles French, 3rd Baron de Freyne of Coolavin
+  gen:mother <https://www.wikidata.org/wiki/Q75822618> . # Catherine Maree
+  # oo Lady Laura Octavia Dundas, d. 1881-01-19
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q19408644> , <https://www.wikidata.org/wiki/Q75343509> ;
+	gen:startDate "1877-02-08" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q69078373>
+  # Ebenezer John Lecky Pike, 1884 - 1965
+  # oo Olive Constance Snell, 1888-04-03 – 1962-05-23
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q69078373> , <https://www.wikidata.org/wiki/Q21461447> ;
+	gen:startDate "1913-04-16" .
+
+<https://www.wikidata.org/wiki/Q69091662>
+  # Helena Christian Olive Pike, d. 2006-03-09
+  gen:father <https://www.wikidata.org/wiki/Q69078373> ;
+  gen:mother <https://www.wikidata.org/wiki/Q21461447> .
+  # oo 1935-10-22 Lionel Gordon Baliol Brett, 4th Viscount Esher, 1913-07-18 - 2004-07-09, https://www.wikidata.org/wiki/Q6555554
+<https://www.wikidata.org/wiki/Q52696676>
+  # Katherine Mary Penelope Pike, 1914~ - 2003-08-19
+  gen:father <https://www.wikidata.org/wiki/Q69078373> ;
+  gen:mother <https://www.wikidata.org/wiki/Q21461447> .
+  # oo 1936-12-02 Lawrence Aldred Mervyn Dundas, 3rd Marquess of Zetland, 1908-11-12 - 1989-10-05, https://www.wikidata.org/wiki/Q13512831
+# ----
+<https://www.wikidata.org/wiki/Q6555554>
+  # Lionel Gordon Baliol Brett, 4th Viscount Esher, 1913-07-18 - 2004-07-09
+  gen:father <https://www.wikidata.org/wiki/Q21556662> ; # Oliver Sylvain Baliol Brett, 3rd Viscount Esher
+  gen:mother <https://www.wikidata.org/wiki/Q75334098> . # Antoinette Heckscher
+  # oo Helena Christian Olive Pike, d. 2006-03-09
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6555554> , <https://www.wikidata.org/wiki/Q69091662> ;
+	gen:startDate "1935-10-22" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q75667776>
+  # Hector Lorenzo Christie, 1907-08-22 - 1969-10-18
+  # son of William Lorenzo Christie
+  # and Eglantine Marie-Corinne Limoges
+  # oo Lady Jean Agatha Dundas, 1916-05-04 - 1995-05-13
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75667776> , <https://www.wikidata.org/wiki/Q75667778> ;
+	gen:startDate "1939-09-02" .
+
+<https://www.wikidata.org/wiki/Q5045500>
+  # Carolyn Anne Christie, b. 1946-12-27
+  gen:father <https://www.wikidata.org/wiki/Q75667776> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75667778> .
+  # oo 1966-08-24 (div 1970) John Julian Reynolds, 1942-02-25 - 1995-10, https://www.wikidata.org/wiki/Q75667821
+  # oo 1974 (div 1981) Robert Scully, 1941-08-01 – 2014-12-16, https://www.wikidata.org/wiki/Q15493070
+  # oo 1986 (div 1992) George Roger Waters, b. 1943-09-06, https://www.wikidata.org/wiki/Q180861
+<https://www.wikidata.org/wiki/Q16120478>
+  # William Lawrence Christie, b. 1948-11-14
+  gen:father <https://www.wikidata.org/wiki/Q75667776> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75667778> .
+  # oo Pamela Rosalind Grace Coddington, b. 1941-04-20, daughter of William R. D. Coddington
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16120478> , <https://www.wikidata.org/wiki/Q981330> ;
+	gen:startDate "1976" ;
+	gen:divorceDate "1979" .
+  # oo Amanda Kate Victoria Nimmo, b. 1959, daughter of Derek Robert Nimmo and Patricia S. Brown
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16120478> , <https://www.wikidata.org/wiki/Q75334589> ;
+	gen:startDate "1991" .
+# ----
+<https://www.wikidata.org/wiki/Q75667821>
+  # John Julian Reynolds, 1942-02-25 - 1995-10
+  gen:father <https://www.wikidata.org/wiki/Q75985861> ; # Sir John Francis Roskell Reynolds, 2nd Baronet
+  gen:mother <https://www.wikidata.org/wiki/Q76139132> . # Eleanor Constance Holford
+  # oo Carolyn Anne Christie, b. 1946-12-27
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75667821> , <https://www.wikidata.org/wiki/Q5045500> ;
+	gen:startDate "1966-08-24" ;
+	gen:divorceDate "1970" .
+# ----
+#<https://www.wikidata.org/wiki/Q15493070>
+  # Robert Scully, 1941-08-01 – 2014-12-16
+  # oo Carolyn Anne Christie, b. 1946-12-27
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q15493070> , <https://www.wikidata.org/wiki/Q5045500> ;
+	gen:startDate "1974" ;
+	gen:divorceDate "1981" .
+# ----
+#<https://www.wikidata.org/wiki/Q180861>
+  # George Roger Waters, b. 1943-09-06
+  # son of Eric Fletcher Waters and Mary D. Whyte
+  # oo Carolyn Anne Christie, b. 1946-12-27
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q180861> , <https://www.wikidata.org/wiki/Q5045500> ;
+	gen:startDate "1986" ;
+	gen:divorceDate "1992" .
+# ----
+#<https://www.wikidata.org/wiki/Q75269232>
+  # Sir John Harling Muir, 3rd Baronet, 1910-11-07 - 1994-05-31
+  # son of James Finlay Muir
+  # and Charlotte Escudier Turner
+  # oo Elizabeth Mary Dundas, b. 1914-01-01
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75269232> , <https://www.wikidata.org/wiki/Q76082869> ;
+	gen:startDate "1936-10-24" .
+
+<https://www.wikidata.org/wiki/Q75269231>
+  # Margaret Elizabeth Muir, b. 1946-08-01
+  gen:father <https://www.wikidata.org/wiki/Q75269232> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76082869> .
+  # 1968-08-31 Sir George John Aird, 4th Baronet, b. 1940-01-30, https://www.wikidata.org/wiki/Q7527550 (burrell.ttl)
+
+# ----
+#<https://www.wikidata.org/wiki/Q1756405>
+  # Alfred Tristram Lawrence, 1st Baron Trevethin, 1843-11-24 - 1936-08-03
+  # 1st Baron Trevethin, of Blaengawney, co. Monmouth 1921-08-24
+  # son of David Lawrence
+  # oo Jessie Elizabeth Lawrence, 1852 - 1931-07-15, daughter of George Lawrence and Catherine Lewis
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1756405> , <https://www.wikidata.org/wiki/Q75919276> ;
+	gen:startDate "1875-08-25" .
+
+<https://www.wikidata.org/wiki/Q336459>
+  # Geoffrey Lawrence Lawrence, 3rd Baron Trevethin, 1880-12-02 - 1971-08-28
+  # 1st Baron Oaksey, of Oaksey, co. Wilts. 1947-01-13
+  # 3rd Baron Trevethin, of Blaengawney, co. Monmouth 1959-06-25
+  gen:father <https://www.wikidata.org/wiki/Q1756405> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75919276> .
+  # oo Marjorie Frances Alice Robinson, d. 1984, daughter of Charles Napier Robinson
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q336459> , <https://www.wikidata.org/wiki/Q75919284> ;
+	gen:startDate "1921-12-22" .
+
+<https://www.wikidata.org/wiki/Q75919297>
+  # Hon. Enid Rosamond Lawrence, b. 1924-06-19
+  gen:father <https://www.wikidata.org/wiki/Q336459> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75919284> .
+  # oo 1950-01-28 Sir Hugh Spencer Lisle Dundas, 1920-07-22 – 1995-07-10, https://www.wikidata.org/wiki/Q11803262
+
+# ----
+#<https://www.wikidata.org/wiki/Q76099775>
+  # James Mark Ptarmigan Douglas Stroyan
+  # son of Ronald Stroyan
+  # oo Lady Henrietta Kate Dundas, b. 1970-02-09
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76099775> , <https://www.wikidata.org/wiki/Q75351163> ;
+	gen:startDate "1994-12-10" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q75544659>
+  # Christopher William Madel
+  # son of Sir William David Madel
+  # and Susan Catherine Carew
+  # oo Lady Victoria Clare Dundas, b. 1973-01-02
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75544659> , <https://www.wikidata.org/wiki/Q75351164> .
