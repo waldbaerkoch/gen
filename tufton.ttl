@@ -4,22 +4,29 @@
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
-#<#Sir_John_Tufton,_1st_Baronet>
+#<https://www.wikidata.org/wiki/Q75397032>
   # Sir John Tufton, 1st Baronet, 1544 - 1624-04-02
   # 1st Baronet Tufton, of Hothfield, Kent 1611-06-29
   # son of John Tufton
   # and Mary Baker
-  # oo Olympia Blore, daughter of Christopher Blore
+  # oo Olympia Blore, d. 1575, daughter of Christopher Blore
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75397032> , <https://www.wikidata.org/wiki/Q76289056> .
   # oo Christian Browne, daughter of Sir Humphrey Browne and Ann Hussey
   []
-    gen:spouse <#Sir_John_Tufton,_1st_Baronet> , <#Christian_Browne> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75397032> , <#Christian_Browne> ;
 	gen:startDate "1575-12-10" .
 
+<https://www.wikidata.org/wiki/Q76289053>
+  # Mary Tufton, 1575 - 1656-07-01
+  gen:father <https://www.wikidata.org/wiki/Q75397032> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76289056> .
+  # oo Thomas Caryll, d. 1617-01-13, https://www.wikidata.org/wiki/Q76288999
 <https://www.wikidata.org/wiki/Q7026329>
   # Nicholas Tufton, 1st Earl of Thanet, 1578-01-19 – 1631-07-01
   # 1st Baron Tufton, of Tufton, 1626-11-01
   # 1st Earl of the Isle of Thanet, co. Kent 1628-08-05
-  gen:father <#Sir_John_Tufton,_1st_Baronet> ;
+  gen:father <https://www.wikidata.org/wiki/Q75397032> ;
   gen:mother <#Christian_Browne> .
   # oo Lady Frances Cecil, 1581-02-28 - 1653-06-12
   []
@@ -27,13 +34,13 @@
 	gen:startDate "1602-09-03b" .
 <#Cecily_Tufton>
   # Cecily Tufton, 1587 - 1653-09-09~
-  gen:father <#Sir_John_Tufton,_1st_Baronet> ;
+  gen:father <https://www.wikidata.org/wiki/Q75397032> ;
   gen:mother <#Christian_Browne> .
   # oo 1608-10-26a Francis Manners, 6th Earl of Rutland, 1578 - 1632-12-17, https://www.wikidata.org/wiki/Q3749346
 <https://www.wikidata.org/wiki/Q16848298>
   # Sir William Tufton, 1st Baronet, 1589 - 1650
   # 1st Baronet Tufton, of Vintners, co. Kent 1622
-  gen:father <#Sir_John_Tufton,_1st_Baronet> ;
+  gen:father <https://www.wikidata.org/wiki/Q75397032> ;
   gen:mother <#Christian_Browne> .
   # oo Anne Cave, d. 1649-03-31~, daughter of Cecil Cave
   []
@@ -42,12 +49,12 @@
 <https://www.wikidata.org/wiki/Q5940771>
   # Sir Humfrey Tufton, 1st Baronet, 1584 – 1659-10
   # 1st Baronet Tufton, of The Mote, Kent 1641-12-24
-  gen:father <#Sir_John_Tufton,_1st_Baronet> ;
+  gen:father <https://www.wikidata.org/wiki/Q75397032> ;
   gen:mother <#Christian_Browne> .
   # oo Margaret Morley, 1586~ - 1667~, daughter of Herbert Morley
 <https://www.wikidata.org/wiki/Q7329568>
   # Richard Tufton, 1585 – 1631-10-04
-  gen:father <#Sir_John_Tufton,_1st_Baronet> ;
+  gen:father <https://www.wikidata.org/wiki/Q75397032> ;
   gen:mother <#Christian_Browne> .
 
 <https://www.wikidata.org/wiki/Q6261376>
@@ -355,7 +362,26 @@
   # Christian Browne
   gen:father <#Sir_Humphrey_Browne> ;
   gen:mother <manners.ttl#Ann_Hussey> .
-  # oo 1575-12-10 Sir John Tufton, 1st Baronet, 1544 - 1624-04-02, #Sir_John_Tufton,_1st_Baronet
+  # oo 1575-12-10 Sir John Tufton, 1st Baronet, 1544 - 1624-04-02, https://www.wikidata.org/wiki/Q75397032
+
+# ----
+#<https://www.wikidata.org/wiki/Q76288999>
+  # Thomas Caryll, d. 1617-01-13
+  # son of Sir Edward Caryll
+  # oo Mary Tufton, 1575 - 1656-07-01
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76288999> , <https://www.wikidata.org/wiki/Q76289053> .
+
+<https://www.wikidata.org/wiki/Q76289063>
+  # Mary Caryll, 1596-08-23 - 1639-06-21b
+  gen:father <https://www.wikidata.org/wiki/Q76288999> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76289053> .
+  # oo 1614-12-07a Richard Molyneux, 1st Viscount Molyneux, 1594-02-21 - 1636-05-08, https://www.wikidata.org/wiki/Q7327860 (seymour.ttl)
+<https://www.wikidata.org/wiki/Q76288998>
+  # Philippa Caryll, 1600-10-05 - 1660~
+  gen:father <https://www.wikidata.org/wiki/Q76288999> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76289053> .
+  # oo 1619~ Henry Parker, 14th Lord Morley, 1600~ - 1655-05-10, https://www.wikidata.org/wiki/Q76288994 (zouche.ttl)
 
 # ====
 #<https://www.wikidata.org/wiki/Q7529058>
