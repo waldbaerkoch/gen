@@ -1940,16 +1940,19 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q18154294> , <https://www.wikidata.org/wiki/Q75596299> ;
 	gen:startDate "1676-02-23" .
-  # oo Elizabeth Dunbar, d. 1756-03-11, daughter of Sir William Dunbar of Hempriggs, 1st Baronet and Margaret Sinclair
+  # oo Elizabeth Dunbar, d. 1756-03-11 (sinclair.ttl)
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q18154294> , <#Elizabeth_Dunbar> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q18154294> , <https://www.wikidata.org/wiki/Q75596314> ;
 	gen:startDate "1701".
 
 <https://www.wikidata.org/wiki/Q29033041>
   # Sir Robert Gordon, 4th Baronet, 1696 - 1772-01-08
   gen:father <https://www.wikidata.org/wiki/Q18154294> ;
-  gen:mother <#Elizabeth_Dunbar> .
-  # oo 1734-04-26 Agnes Maxwell, daughter of Sir William Maxwell, 4th Baronet, of Calderwood, Lanark
+  gen:mother <https://www.wikidata.org/wiki/Q75596314> .
+  # oo Agnes Maxwell
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q29033041> , <maxwell.ttl#Agnes_Maxwell> ;
+	gen:startDate "1734-04-26" .
 <#Lucy_Gordon>
   # Lucy Gordon
   gen:father <https://www.wikidata.org/wiki/Q18154294> .
@@ -2018,19 +2021,19 @@
   # and Marion Maule
   # oo Margaret Cornwall, daughter of Walter Cornwall
 
-<#Sir_Walter_Seton_of_Abercorn,_1st_Baronet>
+<https://www.wikidata.org/wiki/Q76164011>
   # Sir Walter Seton of Abercorn, 1st Baronet, d. 1692-02-20
   # 1st Baronet Seton, of Abercorn, co. Linlithgow 1663-06-03
   gen:father <#Alexander_Seton_of_Kilcreuch> .
   # and Margaret Cornwall
   # oo Christian Dundas
   []
-    gen:spouse <#Sir_Walter_Seton_of_Abercorn,_1st_Baronet> , <hamilton.ttl#Christian_Dundas> .
+    gen:spouse <https://www.wikidata.org/wiki/Q76164011> , <https://www.wikidata.org/wiki/Q75903023> .
 
 <#Sir_Walter_Seton_of_Abercorn,_2nd_Baronet>
   # Sir Walter Seton of Abercorn, 2nd Baronet, d. 1708-01-03
-  gen:father <#Sir_Walter_Seton_of_Abercorn,_1st_Baronet> ;
-  gen:mother <hamilton.ttl#Christian_Dundas> .
+  gen:father <https://www.wikidata.org/wiki/Q76164011> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75903023> .
   # oo Euphemia Murray, daughter of Sir Robert Murray of Priestfield and Melgum
   []
     gen:spouse <#Sir_Walter_Seton_of_Abercorn,_2nd_Baronet> , <#Euphemia_Murray> ;
@@ -3899,6 +3902,70 @@
   # Elizabeth de Moravia, 10th Countess of Sutherland, d. 1535-09
   gen:father <https://www.wikidata.org/wiki/Q6265594> .
   # oo 1500~ Adam Gordon of Aboyne, d. 1538-03-17, #Adam_Gordon_of_Aboyne
+
+# ----
+#<https://www.wikidata.org/wiki/Q5239589>
+  # David Scott, of Scotstarvit, 1689 – 1766-12-01
+  # son of David Scott of Scotstarvit, d. 1718
+  # oo Lucy Gordon
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5239589> , <#Lucy_Gordon> .
+
+<https://www.wikidata.org/wiki/Q6257051>
+  # John Scott, 1725~ – 1775-12-07
+  gen:father <https://www.wikidata.org/wiki/Q5239589> ;
+  gen:mother <gordon.ttl#Lucy_Gordon> .
+  # oo Lady Mary Hay, b. 1754-07-24
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6257051> , <https://www.wikidata.org/wiki/Q75274115> ;
+	gen:startDate "1770-11-05" ;
+	gen:divorceDate "1771" .
+  # oo Margaret Dundas, 1747 - 1797-08-23
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6257051> , <https://www.wikidata.org/wiki/Q75485086> ;
+	gen:startDate "1773-96-05" .
+
+<https://www.wikidata.org/wiki/Q50383618>
+  # Henrietta Scott, 1774 - 1844-04-24
+  gen:father <https://www.wikidata.org/wiki/Q6257051> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75485086> . 
+  # oo 1795-08-04 William Henry Cavendish-Scott-Bentinck, 4th Duke of Portland, 1768-06-24 - 1854-03-27, https://www.wikidata.org/wiki/Q128336 (bentinck.ttl)
+<https://www.wikidata.org/wiki/Q75268712>
+  # Lucy Scott, 1775-03-28 - 1798-08-03
+  gen:father <https://www.wikidata.org/wiki/Q6257051> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75485086> .
+  # oo 1795-02-26 Francis Stuart, 10th Earl of Moray, 1771-02-02 - 1848-01-12, https://www.wikidata.org/wiki/Q5482523
+<https://www.wikidata.org/wiki/Q6204918>
+  # Joan Scott, 1st Viscountess Canning of Kilbrahan, 1776-03-15 - 1837-03-14
+  # 1st Viscountess Canning of Kilbrahan, co. Kilkenny 1828-01-22
+  gen:father <https://www.wikidata.org/wiki/Q6257051> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75485086> .
+  # oo 1800-07-08 Rt. Hon. George Canning, 1770-04-11 - 1827-08-08, https://www.wikidata.org/wiki/Q219731
+# ----
+<https://www.wikidata.org/wiki/Q219731>
+  # Rt. Hon. George Canning, 1770-04-11 - 1827-08-08
+  gen:father <https://www.wikidata.org/wiki/Q75485080> ; # George Canning
+  gen:mother <https://www.wikidata.org/wiki/Q56055550> . # Mary Ann Costello
+  # oo Joan Scott, 1st Viscountess Canning of Kilbrahan, 1776-03-15 - 1837-03-14
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q219731> , <https://www.wikidata.org/wiki/Q6204918> ;
+	gen:startDate "1800-07-08" .
+
+<https://www.wikidata.org/wiki/Q75257544>
+  # Hon. Harriet Canning, 1804-04-13 - 1876-01-08
+  gen:father <https://www.wikidata.org/wiki/Q219731> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6204918> .
+  # oo 1825-04-04 Sir Ulick John de Burgh, 1st Marquess of Clanricarde, 1802-12-20 – 1874-04-10, https://www.wikidata.org/wiki/Q7878978 (burke.ttl)
+<https://www.wikidata.org/wiki/Q335786>
+  # Charles John Canning, 1st Earl Canning, 1812-12-14 - 1862-06-17
+  # 2nd Viscount Canning of Kilbrahan, co. Kilkenny 1837-03-23
+  # 1st Earl Canning 1859-05-21
+  gen:father <https://www.wikidata.org/wiki/Q219731> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6204918> .
+  # oo Hon. Charlotte Stuart, 1817-03-31 - 1861-11-18
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q335786> , <https://www.wikidata.org/wiki/Q275145> ;
+	gen:startDate "1835-09-05" .
 
 # ----
 <https://www.wikidata.org/wiki/Q91562>

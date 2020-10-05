@@ -247,8 +247,8 @@
   # Henry Erskine, Master of Cardross, d. 1628
   gen:father <https://www.wikidata.org/wiki/Q6540282> ;
   gen:mother <https://www.wikidata.org/wiki/Q50824401> .
-<#Sir_Charles_Erskine_of_Alva> # -> Erskine of Alva
-  # Sir Charles Erskine of Alva, d. 1663-07-08
+<https://www.wikidata.org/wiki/Q75590129> # -> Erskine of Alva
+  # Sir Charles Erskine of Alva, 1611-01-07 - 1663-07-08
   gen:father <https://www.wikidata.org/wiki/Q6540282> ;
   gen:mother <https://www.wikidata.org/wiki/Q50824401> .
 <#Lady_Catherine_Erskine>
@@ -1515,22 +1515,29 @@
 	gen:startDate "1768-10-01" .
 
 # ----
-#<https://www.wikidata.org/wiki/Q7528701>
+<https://www.wikidata.org/wiki/Q7528701>
   # Sir Robert Anstruther of Balcaskie, 1st Baronet, 1658-09-24 - 1737-03
   # 1st Baronet Anstruther, of Wrae, co. Linlithgow 1694-11-28
-  # oo Jean Monteith, daughter of William Monteith and Margaret Dundas
+  gen:father <https://www.wikidata.org/wiki/Q75408423> ; # Sir Philip Anstruther
+  gen:mother <https://www.wikidata.org/wiki/Q75408425> . # Christian Lumsden
+  # oo Jean Monteith, d. 1691a, daughter of William Monteith and Margaret Dundas
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q7528701> , <#Jean_Monteith> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q7528701> , <https://www.wikidata.org/wiki/Q75408441> ;
 	gen:startDate "1687-03-12" .
 
 <https://www.wikidata.org/wiki/Q23580966>
   # Sir Philip Anstruther of Balcaskie, 2nd Baronet, 1688 - 1763-05-27
   gen:father <https://www.wikidata.org/wiki/Q7528701> ;
-  gen:mother <#Jean_Monteith> .
+  gen:mother <https://www.wikidata.org/wiki/Q75408441> .
   # oo Catherine Hay, d. 1759-02-11
   []
     gen:spouse <https://www.wikidata.org/wiki/Q23580966> , <hay.ttl#Catherine_Hay> ;
 	gen:startDate "1738-08-21~" .
+<https://www.wikidata.org/wiki/Q75408913>
+  # Jean Anstruther
+  gen:father <https://www.wikidata.org/wiki/Q7528701> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75408441> .
+  # oo 1720-01-20 James Makgill of Rankeillour, d. 1747-09-26b, https://www.wikidata.org/wiki/Q75408915 (maitland.ttl)
 
 <https://www.wikidata.org/wiki/Q21182858>
   # Sir Robert Anstruther of Balcaskie, 3rd Baronet, 1733-04-19 - 1818-08-02
@@ -1778,11 +1785,11 @@
   []
     gen:spouse <#Sir_Thomas_Wilfred_Erskine_of_Cambo,_4th_Baronet> , <#Magdalen_Janet_Anstruther> ;
 	gen:startDate "1911-08-14" .
-<#Zaida_Grace_Erskine>
+<https://www.wikidata.org/wiki/Q75628837>
   # Zaida Grace Erskine, 1882-01-26 - 1943-02-27
   gen:father <#Sir_ffolliott_William_Erskine_of_Cambo,_3rd_Baronet> ;
   gen:mother <#Grace_Hargreaves> .
-  # oo 1913-12-17 Frederick Lewis Scrymgeour-Wedderburn, 1874-06-27 - 1936-05-22, scott.ttl#Frederick_Lewis_Scrymgeour-Wedderburn
+  # oo 1913-12-17 Frederick Lewis Scrymgeour-Wedderburn, 1874-06-27 - 1936-05-22, https://www.wikidata.org/wiki/Q75628833 (dundas.ttl)
 
 <#Sir_Thomas_David_Erskine_of_Cambo,_5th_Baronet>
   gen:name "Sir Thomas David Erskine of Cambo, 5th Baronet"@en ;
@@ -3337,11 +3344,11 @@
     gen:spouse <https://www.wikidata.org/wiki/Q75825156> , <#Christian_Erskine_(died_1788)> ;
 	gen:startDate "1762-04-17" .
 
-<#Christian_Stirling>
+<https://www.wikidata.org/wiki/Q75903119>
   # Christian Stirling, 1761~ - 1832-09-14
   gen:father <https://www.wikidata.org/wiki/Q75825156> ;
   gen:mother <#Christian_Erskine_(died_1788)> .
-  # oo 1784-12-24 George Dundas of Dundas, 1752 - 1792-08-22, hamilton.ttl#George_Dundas_of_Dundas_(died_1792)
+  # oo 1784-12-24 George Dundas of Dundas, 1752 - 1792-08-22, https://www.wikidata.org/wiki/Q75781268
 
 # ----
 <#Rosemary_Freda_Baird>
@@ -3356,35 +3363,40 @@
 
 # ========
 # Erskine of Alva
-<#Sir_Charles_Erskine_of_Alva>
+<https://www.wikidata.org/wiki/Q75590129>
   gen:name "Sir Charles Erskine of Alva"@en ;
+  gen:birthDate "1611-01-07" ;
   gen:deathDate "1663-07-08" ;
   gen:father <https://www.wikidata.org/wiki/Q6540282> ;
   gen:mother <https://www.wikidata.org/wiki/Q50824401> .
   # oo Mary Hope, d. 1629
   []
-    gen:spouse <#Sir_Charles_Erskine_of_Alva> , <hope.ttl#Mary_Hope> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75590129> , <hope.ttl#Mary_Hope> ;
 	gen:startDate "1639-01-10" .
+  # oo Helen Skene, 1619-10-24b - 1691 (bruce.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75590129> , <https://www.wikidata.org/wiki/Q75283490> ;
+	gen:startDate "1660b" .
 
 <https://www.wikidata.org/wiki/Q43283820>
   gen:name "Sir Charles Erskine of Alva, 1st Baronet"@en ;
   # 1st Baronet Erskine, of Alva 1666-04-30
   gen:birthDate "1643-07-04" ;
   gen:deathDate "1690-06-04" ;
-  gen:father <#Sir_Charles_Erskine_of_Alva> ;
+  gen:father <https://www.wikidata.org/wiki/Q75590129> ;
   gen:mother <hope.ttl#Mary_Hope> .
-  # oo Christian Dundas
+  # oo Christian Dundas, b. 1640~
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q43283820> , <boyd.ttl#Christian_Dundas> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q43283820> , <https://www.wikidata.org/wiki/Q76251620> ;
 	gen:startDate "1670" .
 <#John_Erskine_of_Alva>
   # John Erskine
-  gen:father <#Sir_Charles_Erskine_of_Alva> ;
+  gen:father <https://www.wikidata.org/wiki/Q75590129> ;
   gen:mother <hope.ttl#Mary_Hope> .
   # oo Lady Mary Maule, daughter of George Maule, 2nd Earl of Panmure, 1697-04-29
 <#Mary_Erskine_of_Alva>
   # Mary Erskine
-  gen:father <#Sir_Charles_Erskine_of_Alva> ;
+  gen:father <https://www.wikidata.org/wiki/Q75590129> ;
   gen:mother <hope.ttl#Mary_Hope> .
   # oo 1676-08-31 William Hamilton, 3rd of Wishaw, d. 1724, https://www.wikidata.org/wiki/Q18531351
 
@@ -3393,18 +3405,18 @@
   gen:birthDate "1670~" ;
   gen:deathDate "1693-07-23" ;
   gen:father <https://www.wikidata.org/wiki/Q43283820> ;
-  gen:mother <boyd.ttl#Christian_Dundas> .
+  gen:mother <https://www.wikidata.org/wiki/Q76251620> .
 <#Helen_Erskine_(born_1671)>
   # Helen Erskine, b. 1671-07
   gen:father <https://www.wikidata.org/wiki/Q43283820> ;
-  gen:mother <boyd.ttl#Christian_Dundas> .
+  gen:mother <https://www.wikidata.org/wiki/Q76251620> .
   # oo 1691-02 John Haldane, 14th of Gleneagles, 1660-03-31 - 1721-06-26, https://www.wikidata.org/wiki/Q26455552
 <https://www.wikidata.org/wiki/Q75532402>
   gen:name "Sir John Erskine of Alva, 3rd Baronet"@en ;
   gen:birthDate "1672" ;
   gen:deathDate "1739-03-12" ;
   gen:father <https://www.wikidata.org/wiki/Q43283820> ;
-  gen:mother <boyd.ttl#Christian_Dundas> .
+  gen:mother <https://www.wikidata.org/wiki/Q76251620> .
   # oo Catherine St. Clair, 1680a - 1740a (sinclair.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75532402> , <https://www.wikidata.org/wiki/Q75532401> ;
@@ -3414,7 +3426,7 @@
   gen:birthDate "1680" ;
   gen:deathDate "1763-04-05" ;
   gen:father <https://www.wikidata.org/wiki/Q43283820> ;
-  gen:mother <boyd.ttl#Christian_Dundas> .
+  gen:mother <https://www.wikidata.org/wiki/Q76251620> .
   # oo 1712-12-21 Grizel Grierson
   # oo 1753-08-26 Elizabeth Hairstanes, d. 1806-10-24, daughter of William Hairstanes
 <https://www.wikidata.org/wiki/Q75262201>
