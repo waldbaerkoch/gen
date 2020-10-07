@@ -295,9 +295,10 @@
   # Sir John Noel, 4th Baronet, 1668~ - 1697-07-01
   gen:father <https://www.wikidata.org/wiki/Q75240638> ;
   gen:mother <https://www.wikidata.org/wiki/Q76019996> .
-  # oo Mary Clobery, daughter of Sir John Clobery
+  # oo Mary Clobery
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q76020006> , <https://www.wikidata.org/wiki/Q76020007> .
+    gen:spouse <https://www.wikidata.org/wiki/Q76020006> , <https://www.wikidata.org/wiki/Q76020007> ;
+	gen:startDate "1690" .
 <https://www.wikidata.org/wiki/Q75240640>
   # Frances Noel, 1673-04-14 - 1751-02
   gen:father <https://www.wikidata.org/wiki/Q75240638> ;
@@ -307,6 +308,11 @@
   # oo 1714-04 Sir John Chester, 4th Baronet, 1666-06-24 - 1726-02-06, https://www.wikidata.org/wiki/Q75462099
   # oo 1726a Charles Adderley, of Hams Hall, 1667-09-28 - 1746-02-02, https://www.wikidata.org/wiki/Q75467879
 
+<#Anne_Noel>
+  # Anne Noel, b. 1690~
+  gen:father <https://www.wikidata.org/wiki/Q76020006> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76020007> .
+  # oo Francis Mundy, 1690 - 1720-02-29, #Francis_Mundy
 <https://www.wikidata.org/wiki/Q7526352>
   owl:sameAs <https://www.wikidata.org/wiki/Q76020010> ;
   # Sir Clobery Noel, 5th Baronet, 1695~ - 1733-07-30
@@ -764,6 +770,35 @@
   gen:father <https://www.wikidata.org/wiki/Q75736570> ; # Sir John Clobery
   gen:mother <https://www.wikidata.org/wiki/Q75736572> . # Anne Cranmer
   # oo 1690 Sir Thomas Trollope, 3rd Baronet, d. 1729-11-22, https://www.wikidata.org/wiki/Q75736622
+<https://www.wikidata.org/wiki/Q76020007>
+  # Mary Clobery
+  gen:father <https://www.wikidata.org/wiki/Q75736570> .
+  # oo 1690 Sir John Noel, 4th Baronet, 1668~ - 1697-07-01, https://www.wikidata.org/wiki/Q76020006
+
+# ----
+#<#Francis_Mundy>
+  # Francis Mundy, 1690 - 1720-02-29
+  # son of Francis Mundy
+  # and Philippa Wrightson
+  # oo Anne Noel, b. 1690~
+  []
+    gen:spouse <#Francis_Mundy> , <#Anne_Noel> .
+
+<https://www.wikidata.org/wiki/Q4280314>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75673723> ;
+  # Wrightson Mundy, 1715 - 1762-06-18
+  gen:father <#Francis_Mundy> ;
+  gen:mother <#Anne_Noel> .
+  # oo Anne Burdett, b. 1715~ (howard.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4280314> , <https://www.wikidata.org/wiki/Q75856089> ;
+	gen:startDate "1736-04-01" .
+
+<https://www.wikidata.org/wiki/Q75673727>
+  # Elizabeth Mundy, d. 1827-02-22
+  gen:father <https://www.wikidata.org/wiki/Q4280314> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75856089> .
+  # oo 1799-09-28 Robert Shirley, 7th Earl Ferrers, 1756-09-21 – 1827-05-02, https://www.wikidata.org/wiki/Q16836620
 
 # ----
 #<https://www.wikidata.org/wiki/Q75271930>

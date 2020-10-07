@@ -176,11 +176,11 @@
   # Augustus Frederick Arthur Sandys, 4th Lord Sandys, Baron of Ombersley, 1840-03-02 - 1940-07-26
   gen:father <https://www.wikidata.org/wiki/Q6758436> ;
   gen:mother <#Louisa_Blake> .
-<#Anna_Maria_Frances_Sandys>
+<https://www.wikidata.org/wiki/Q76161409>
   # Hon. Anna Maria Frances Sandys, 1841-10-21 - 1876-05-27
   gen:father <https://www.wikidata.org/wiki/Q6758436> ;
   gen:mother <#Louisa_Blake> .
-  # oo 1868-08-25 Sir Herbert Hay Langham, 12th Baronet, 1840-04-28 - 1909-12-13, #Sir_Herbert_Hay_Langham,_12th_Baronet
+  # oo 1868-08-25 Sir Herbert Hay Langham, 12th Baronet, 1840-04-28 - 1909-12-13, https://www.wikidata.org/wiki/Q76048696
 <https://www.wikidata.org/wiki/Q57860563>
   # Michael Edwin Marcus Sandys, 5th Lord Sandys, Baron of Ombersley, 1855-12-31 - 1948-08-04
   gen:father <https://www.wikidata.org/wiki/Q6758436> ;
@@ -582,20 +582,20 @@
 # ----
 <https://www.wikidata.org/wiki/Q75823725>
   # Herbert Langham, 1804-06-12 - 1874-02-27
-  gen:father <https://www.wikidata.org/wiki/Q26265486> .
-  # and Elizabeth Burdett
+  gen:father <https://www.wikidata.org/wiki/Q26265486> ; # howard.ttl
+  gen:mother <https://www.wikidata.org/wiki/Q76048688> .
   # oo Laura Charlotte Micklethwait, 1819 - 1861-09-03
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75823725> , <https://www.wikidata.org/wiki/Q76048694> ;
 	gen:startDate "1839-06-25" .
 
-<#Sir_Herbert_Hay_Langham,_12th_Baronet>
+<https://www.wikidata.org/wiki/Q76048696>
   # Sir Herbert Hay Langham, 12th Baronet, 1840-04-28 - 1909-12-13
   gen:father <https://www.wikidata.org/wiki/Q75823725> ;
   gen:mother <https://www.wikidata.org/wiki/Q76048694> .
   # oo Hon. Anna Maria Frances Sandys, 1841-10-21 - 1876-05-27
   []
-    gen:spouse <#Sir_Herbert_Hay_Langham,_12th_Baronet> , <#Anna_Maria_Frances_Sandys> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q76048696> , <https://www.wikidata.org/wiki/Q76161409> ;
 	gen:startDate "1868-08-25" .
 <https://www.wikidata.org/wiki/Q75293074>
   # Henry Algernon Langham, 1850-01-11 - 1874-12-20
@@ -608,11 +608,11 @@
 
 <https://www.wikidata.org/wiki/Q7526236>
   # Sir Herbert Charles Arthur Langham, 13th Baronet, 1870-05-24 - 1951-10-03
-  gen:father <#Sir_Herbert_Hay_Langham,_12th_Baronet> ;
-  gen:mother <#Anna_Maria_Frances_Sandys> .
+  gen:father <https://www.wikidata.org/wiki/Q76048696> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76161409> .
   # oo Ethel Sarah Emerson-Tennent, 1871-10-26 - 1951-11-19
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q7526236> , <#Ethel_Sarah_Emerson-Tennent> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q7526236> , <https://www.wikidata.org/wiki/Q76048714> ;
 	gen:startDate "1893-06-01" .
 # ----
 #<#Nathaniel_Micklethwait>
@@ -626,7 +626,7 @@
   # Laura Charlotte Micklethwait, 1819 - 1861-09-03
   gen:father <#Nathaniel_Micklethwait> ;
   gen:mother <#Lady_Charlotte_Marianne_Harriet_Rous> .
-  # oo 1839-06-25 Herbert Langham, 1804-06-12 - 1874-02-27, #Herbert_Langham
+  # oo 1839-06-25 Herbert Langham, 1804-06-12 - 1874-02-27, https://www.wikidata.org/wiki/Q75823725
 # ----
 #<https://www.wikidata.org/wiki/Q26905880>
   # Sir John Rous, 5th Baronet, d. 1771-10-31
@@ -704,16 +704,24 @@
   # 1st Baronet Emerson-Tennent, of Tempo Manor in the Chapelry of Tempo in the County of Fermanagh 1867-02-14
   # son of William Emerson
   # and Sarah Arbuthnot
-  # oo Letitia Tennent, daughter of William Tennent
+  # oo Letitia Tennent, 1806~ - 1883-04-21, daughter of William Tennent and Eleanor Jackson
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3161065> , <#Letitia_Tennent> ;
+	gen:startDate "1831" .
 
-<#Sir_William_Emerson-Tennent,_2nd_Baronet>
-  # Sir William Emerson-Tennent, 2nd Baronet
-  gen:father <https://www.wikidata.org/wiki/Q3161065> .
-  # and Letitia Tennent
+<https://www.wikidata.org/wiki/Q76048713>
+  # Sir William Emerson-Tennent, 2nd Baronet, 1835-05-14 - 1876-11-14
+  gen:father <https://www.wikidata.org/wiki/Q3161065> ;
+  gen:mother <#Letitia_Tennent> .
+  # oo Sara Armstrong, 1847~ - 1883a, daughter of Thomas Armstrong
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76048713>,  <#Sara_Armstrong> ;
+	gen:startDate "1870-10-11" .
 
-<#Ethel_Sarah_Emerson-Tennent>
+<https://www.wikidata.org/wiki/Q76048714>
   # Ethel Sarah Emerson-Tennent, 1871-10-26 - 1951-11-19
-  gen:father <#Sir_William_Emerson-Tennent,_2nd_Baronet> .
+  gen:father <https://www.wikidata.org/wiki/Q76048713> ;
+  gen:mother <#Sara_Armstrong> .
   # oo 1893-06-01 Sir Herbert Charles Arthur Langham, 13th Baronet, 1870-05-24 - 1951-10-03, https://www.wikidata.org/wiki/Q7526236
 
 # ====
