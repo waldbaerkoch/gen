@@ -561,11 +561,11 @@
   gen:deathDate "1779" ;
   gen:father <https://www.wikidata.org/wiki/Q11716794> ;
   gen:mother <https://www.wikidata.org/wiki/Q75253628> .
-<#Lady_Lucy_Smith-Stanley>
+<https://www.wikidata.org/wiki/Q73427057>
   # Lady Lucy Smith-Stanley, d. 1833-02-10
   gen:father <https://www.wikidata.org/wiki/Q11716794> ;
   gen:mother <https://www.wikidata.org/wiki/Q75253628> .
-  # oo 1772-04-25 Rev. Geoffrey Hornby, of Scale Hall, 1750 - 1812-07-31, #Geoffrey_Hornby
+  # oo 1772-04-25 Rev. Geoffrey Hornby, of Scale Hall, 1750 - 1812-07-31, https://www.wikidata.org/wiki/Q47167478
 <#Henrietta_Smith-Stanley>
   # Henrietta Smith-Stanley, 1756 - 1830
   gen:father <https://www.wikidata.org/wiki/Q11716794> ;
@@ -656,11 +656,11 @@
   gen:father <https://www.wikidata.org/wiki/Q335754> ;
   gen:mother <#Charlotte_Margaret_Hornby> .
   # oo 1825-04-18 Samuel Long, 1799-05-18 - 1881-08-31, https://www.wikidata.org/wiki/Q75300662 (maitland.ttl)
-<#Lady_Eleanor_Mary_Smith-Stanley>
-  # Lady Eleanor Mary Smith-Stanley, 1807-05-02
+<https://www.wikidata.org/wiki/Q75920310>
+  # Lady Eleanor Mary Smith-Stanley, b. 1807-05-02
   gen:father <https://www.wikidata.org/wiki/Q335754> ;
   gen:mother <#Charlotte_Margaret_Hornby> .
-  # oo 1835-06-11 Rev. Canon Frank George Hopwood, #Frank_George_Hopwood
+  # oo 1835-06-11 Rev. Canon Frank George Hopwood, https://www.wikidata.org/wiki/Q75882978 (byng.ttl)
 <#Charles_James_Fox_Stanley>
   # Hon. Charles James Fox Stanley, 1808-04-25 - 1884-10-13
   gen:father <https://www.wikidata.org/wiki/Q335754> ;
@@ -2117,37 +2117,55 @@
   # oo 1814-12-28 Sir Phipps Hornby, 1785-04-27 - 1867-03-19, https://www.wikidata.org/wiki/Q5087502
 
 # --------
-#<#Geoffrey_Hornby>
+#<https://www.wikidata.org/wiki/Q47167478>
   # Rev. Geoffrey Hornby, of Scale Hall, 1750 - 1812-07-31
   # son of Edmund Hornby
   # and Margaret Winckley
   # oo Lady Lucy Smith-Stanley, d. 1833-02-10
   []
-    gen:spouse <#Geoffrey_Hornby> , <#Lady_Lucy_Smith-Stanley> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q47167478> , <https://www.wikidata.org/wiki/Q73427057> ;
 	gen:startDate "1772-04-25" .
 
 <https://www.wikidata.org/wiki/Q24157433>
   # Edmund Hornby, of Dalton Hall, 1773-06-16 - 1857-11-18
-  gen:father <#Geoffrey_Hornby> ;
-  gen:mother <#Lady_Lucy_Smith-Stanley> .
+  gen:father <https://www.wikidata.org/wiki/Q47167478> ;
+  gen:mother <https://www.wikidata.org/wiki/Q73427057> .
   # oo Lady Charlotte Stanley, 1776-10-17 - 1805-11-25
   []
     gen:spouse <https://www.wikidata.org/wiki/Q24157433> , <#Lady_Charlotte_Stanley_(died_1805)> ;
 	gen:startDate "1796-08-22" .
 <#Charlotte_Margaret_Hornby>
   # Charlotte Margaret Hornby, 1778-10-20 - 1817-06-16
-  gen:father <#Geoffrey_Hornby> ;
-  gen:mother <#Lady_Lucy_Smith-Stanley> .
+  gen:father <https://www.wikidata.org/wiki/Q47167478> ;
+  gen:mother <https://www.wikidata.org/wiki/Q73427057> .
   # 1798-06-30 Edward Smith-Stanley, 13th Earl of Derby, 1775-04-21 - 1851-06-30, https://www.wikidata.org/wiki/Q335754
+<https://www.wikidata.org/wiki/Q76194058>
+  # Rev. Geoffrey Hornby, 1780 – 1850-03-04
+  gen:father <https://www.wikidata.org/wiki/Q47167478> ;
+  gen:mother <https://www.wikidata.org/wiki/Q73427057> .
+  # oo Hon. Georgiana Byng, 1786 – 1856-07-23
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76194058> , <https://www.wikidata.org/wiki/Q76194056> .
 <https://www.wikidata.org/wiki/Q5087502>
   # Sir Phipps Hornby, 1785-04-27 - 1867-03-19
-  gen:father <#Geoffrey_Hornby> ;
-  gen:mother <#Lady_Lucy_Smith-Stanley> .
+  gen:father <https://www.wikidata.org/wiki/Q47167478> ;
+  gen:mother <https://www.wikidata.org/wiki/Q73427057> .
   # oo Maria Sophia Burgoyne, 1790~ - 1860-12-25
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5087502> , <#Maria_Sophia_Burgoyne> ;
 	gen:startDate "1814-12-28" .
 
+<#Sir_William_Windham_Hornby>
+  # Sir William Windham Hornby, 1812-07-23 - 1899
+  gen:father <https://www.wikidata.org/wiki/Q76194058> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76194056> .
+  # oo Augusta Call
+  []
+    gen:spouse <#Sir_William_Windham_Hornby> , <spencer.ttl#Augusta_Call> .
+  # oo Catherine Tottenham, b. 1842
+  []
+    gen:spouse <#Sir_William_Windham_Hornby> , <loftus.ttl#Catherine_Tottenham> ;
+	gen:startDate "1897" .
 <https://www.wikidata.org/wiki/Q10977621>
   # Phipps John Hornby, 1820-04-20 - 1848-04-08
   gen:father <https://www.wikidata.org/wiki/Q5087502> ;
@@ -2180,29 +2198,6 @@
   # oo Elizabeth Smith-Stanley
   []
     gen:spouse <#Sir_Thomas_Horton,_3rd_Baronet> , <#Elizabeth_Smith-Stanley> .
-
-# ----
-#<#Robert_Gregge_Hopwood>
-  # Robert Gregge Hopwood, 1773 – 1854
-  # oo Hon. Cecilia Elizabeth Byng, 1770-08-15 – 1843-07
-  []
-    gen:spouse <#Robert_Gregge_Hopwood> , <#Cecilia_Elizabeth_Byng> ;
-	gen:startDate "1805-10-31" .
-
-<#Frank_George_Hopwood>
-  # Rev. Canon Frank George Hopwood
-  gen:father <#Robert_Gregge_Hopwood> ;
-  gen:mother <#Cecilia_Elizabeth_Byng> .
-  # oo Lady Eleanor Mary Smith-Stanley, 1807-05-02
-  []
-    gen:spouse <#Frank_George_Hopwood> , <#Lady_Eleanor_Mary_Smith-Stanley> ;
-	gen:startDate "1835-06-11" .
-# ----
-<#Cecilia_Elizabeth_Byng>
-  # Hon. Cecilia Elizabeth Byng, 1770-08-15 – 1843-07
-  gen:father <https://www.wikidata.org/wiki/Q6224208> .
-  # and Bridget Forrest
-  # oo 1805-10-31 Robert Gregge Hopwood, 1773 – 1854, #Robert_Gregge_Hopwood
 
 # ----
 #<https://www.wikidata.org/wiki/Q334290>
