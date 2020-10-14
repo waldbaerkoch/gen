@@ -833,7 +833,7 @@
   gen:father <https://www.wikidata.org/wiki/Q35829040> ;
   gen:mother <montagu.ttl#Elizabeth_North> .
   # oo 1825-12-03 Brownlow North Garnier, 1803-07-09 - 1847-06-28, montagu.ttl#Brownlow_North_Garnier
-<#Georgiana_de_Grey>
+<https://www.wikidata.org/wiki/Q75372449>
   # Hon. Georgiana de Grey, 1813-07-07 - 1874-04-22
   gen:father <https://www.wikidata.org/wiki/Q35829040> ;
   gen:mother <montagu.ttl#Elizabeth_North> .
@@ -3700,80 +3700,175 @@
   # oo 1847-10-25 Thomas de Grey, 5th Baron Walsingham, 1804-07-06 – 1870-12-31, https://www.wikidata.org/wiki/Q35829065
 
 # ----
-#<https://www.wikidata.org/wiki/Q6662537>
+<https://www.wikidata.org/wiki/Q40764890>
+  owl:sameAs <https://www.wikidata.org/wiki/Q76043046> .
+  # Roger Kenyon, of Peel, 1627-07~ - 1698
+  # son of Roger Kenyon
+  # and Jane Ashton
+  # oo Alice Rigby, b. 1634-01-02, daughter of George Rigby and Beatrix Hulton
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q40764890> , <https://www.wikidata.org/wiki/Q76043047> .
+
+<#George_Kenyon>
+  # George Kenyon, 1666-02-15b - 1728, son of Roger Kenyon
+  gen:father <https://www.wikidata.org/wiki/Q40764890> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76043047> .
+  # oo Anne Kenyon, daughter of Rev. Edward Kenyon
+  []
+    gen:spouse <#George_Kenyon> , <#Anne_Kenyon> ;
+	gen:startDate "1696-09-21" .
+<https://www.wikidata.org/wiki/Q76043051>
+  # Thomas Kenyon, 1668 - 1731
+  gen:father <https://www.wikidata.org/wiki/Q40764890> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76043047> .
+  # oo Catherine Lloyd, b. 1660, daughter of Luke Lloyd (d. 1695)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76043051> , <https://www.wikidata.org/wiki/Q76043053> .
+
+<https://www.wikidata.org/wiki/Q76043061>
+  # George Kenyon, of Peel Hall
+  gen:father <#George_Kenyon> ;
+  gen:mother <#Anne_Kenyon> .
+  # oo Peregrina Eddowes
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76043061> , <https://www.wikidata.org/wiki/Q76129554> .
+<https://www.wikidata.org/wiki/Q76043055>
+  # Lloyd Kenyon, of The Bryn, 1696-03-17 - 1773-09-30
+  gen:father <https://www.wikidata.org/wiki/Q76043051> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76043053> .
+  # oo Jane Eddowes
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76043055> , <https://www.wikidata.org/wiki/Q76043057> ;
+	gen:startDate "1730-11" .
+
+<https://www.wikidata.org/wiki/Q76043062>
+  # Mary Kenyon, 1741-07-21 - 1808-08-08
+  gen:father <https://www.wikidata.org/wiki/Q76043061> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76129554> .
+  # oo 1773-10-16 Lloyd Kenyon, 1st Baron Kenyon, Baron of Gredington, 1732-10-05 - 1802-04-04, https://www.wikidata.org/wiki/Q6662537
+<https://www.wikidata.org/wiki/Q75347452>
+  # George Kenyon
+  gen:father <https://www.wikidata.org/wiki/Q76043061> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76129554> .
+<https://www.wikidata.org/wiki/Q6662537>
   # Lloyd Kenyon, 1st Baron Kenyon, Baron of Gredington, 1732-10-05 - 1802-04-04
   # 1st Baronet Kenyon, of Gredington, co. Flint 1784-07-28
   # 1st Baron Kenyon, Baron of Gredington, co. Flint 1788-06-09
-  # son of Lloyd Kenyon
-  # and Jane Eddowes
-  # oo Mary Kenyon, d. 1808-08-08, daughter of George Kenyon and Peregrina Eddowes
+  gen:father <https://www.wikidata.org/wiki/Q76043055> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76043057> .
+  # oo Mary Kenyon, 1741-07-21 - 1808-08-08
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q6662537> , <#Mary_Kenyon> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q6662537> , <https://www.wikidata.org/wiki/Q76043062> ;
 	gen:startDate "1773-10-16" .
 
+<https://www.wikidata.org/wiki/Q75347451>
+  # Margaret Kenyon, 1748 - 1830-11-06
+  gen:father <https://www.wikidata.org/wiki/Q75347452> .
+  # oo 1779-12-03 Sir Thomas Hanmer, 2nd Baronet, 1747-04-05 - 1828-10-04, https://www.wikidata.org/wiki/Q21166240 (savile.ttl)
 <https://www.wikidata.org/wiki/Q18527444>
   # George Kenyon, 2nd Baron Kenyon, Baron of Gredington, 1776-07-22 - 1855-02-25
   gen:father <https://www.wikidata.org/wiki/Q6662537> ;
-  gen:mother <#Mary_Kenyon> .
-  # oo Margaret Emma Hanmer, d. 1816-02-24
+  gen:mother <https://www.wikidata.org/wiki/Q76043062> .
+  # oo Margaret Emma Hanmer, 1785-07-07~ - 1816-02-24 (savile.ttl)
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q18527444> , <#Margaret_Emma_Hanmer> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q18527444> , <https://www.wikidata.org/wiki/Q75273957> ;
 	gen:startDate "1803-02-01" .
+<https://www.wikidata.org/wiki/Q75615970>
+  # Hon. Thomas Kenyon, 1780-09-27 - 1851-11
+  gen:father <https://www.wikidata.org/wiki/Q6662537> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76043062> .
+  # oo Louisa Charlotte Lloyd, d. 1869-04-11, daughter of Rev. John Robert Lloyd
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75615970> , <https://www.wikidata.org/wiki/Q76043068> ;
+	gen:startDate "1803-04-21" .
 
 <https://www.wikidata.org/wiki/Q6662539>
   # Lloyd Kenyon, 3rd Baron Kenyon, Baron of Gredington, 1805-04-01 – 1869-07-14
   gen:father <https://www.wikidata.org/wiki/Q18527444> ;
-  gen:mother <#Margaret_Emma_Hanmer> .
+  gen:mother <https://www.wikidata.org/wiki/Q75273957> .
   # oo Hon. Georgiana de Grey, 1813-07-07 - 1874-04-22
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q6662539> , <#Georgiana_de_Grey> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q6662539> , <https://www.wikidata.org/wiki/Q75372449> ;
 	gen:startDate "1833-06-29" .
-<#Edward_Kenyon>
+<https://www.wikidata.org/wiki/Q75259422>
   # Hon. Edward Kenyon, 1810-06-11 - 1894-10-21
   gen:father <https://www.wikidata.org/wiki/Q18527444> ;
-  gen:mother <#Margaret_Emma_Hanmer> .
+  gen:mother <https://www.wikidata.org/wiki/Q75273957> .
   # oo Catherine Elizabeth Marsham, 1838-01-12 - 1903-06-16
   []
-    gen:spouse <#Edward_Kenyon> , <#Catherine_Elizabeth_Marsham> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75259422> , <https://www.wikidata.org/wiki/Q75259419> ;
 	gen:startDate "1880-05-11" .
   # oo Caroline Susan Catherine Beresford, 1814-03-29 - 1866-03-08
   []
-    gen:spouse <#Edward_Kenyon> , <beresford.ttl#Caroline_Susan_Catherine_Beresford> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75259422> , <https://www.wikidata.org/wiki/Q75273959> ;
 	gen:startDate "1840-09-19" .
+<https://www.wikidata.org/wiki/Q76043482>
+  # William Kenyon-Slaney, 1815-02-20 - 1884-12-10
+  gen:father <https://www.wikidata.org/wiki/Q75615970> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76043068> .
+  # oo Frances Catherine Slaney, d. 1896-10-18, daughter of Robert Aglionby Slaney and Elizabeth Muckleston
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76043482> , <https://www.wikidata.org/wiki/Q76043483> ;
+	gen:startDate "1845-10-09" .
 
-<#John_George_Kenyon>
+<https://www.wikidata.org/wiki/Q75258703>
   # John George Kenyon, 1843-10-11 - 1914-07-24
-  gen:father <#Edward_Kenyon> ;
-  gen:mother <beresford.ttl#Caroline_Susan_Catherine_Beresford> .
+  gen:father <https://www.wikidata.org/wiki/Q75259422> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75273959> .
   # oo Mary D'Arcy Kerr, 1848-01-16 - 1937-02-02
   []
-    gen:spouse <#John_George_Kenyon> , <kerr.ttl#Mary_D'Arcy_Kerr> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75258703> , <https://www.wikidata.org/wiki/Q75255011> ;
 	gen:startDate "1871-10-04" .
-<#Emma_Jane_Anne_Kenyon>
+<https://www.wikidata.org/wiki/Q75322086>
   # Emma Jane Anne Kenyon, d. 1933-05-17
-  gen:father <#Edward_Kenyon> ;
-  gen:mother <beresford.ttl#Caroline_Susan_Catherine_Beresford> .
-  # oo 1877-04-26 Rev. Hon. Algernon Robert Parker, 1849-11-17 - 1940-05-20, grosvenor.ttl#Algernon_Robert_Parker
-# ----
-#<https://www.wikidata.org/wiki/Q26857700>
-  # Sir Walden Hanmer, 1st Baronet, 1717-03-19 - 1783-10-20
-  # 1st Baronet Hanmer, of Hanmer, co. Flint 1774-05-21
-  # oo Anne Graham, d. 1778-02-02, daughter of Henry Vere Graham
-
-<https://www.wikidata.org/wiki/Q21166240>
-  # Sir Thomas Hanmer, 2nd Baronet, 1747-04-05 - 1828-10-04
-  gen:father <https://www.wikidata.org/wiki/Q26857700> .
-  # and Anne Graham
-  # oo Margaret Kenyon, d. 1830-11-06, daughter of George Kenyon
+  gen:father <https://www.wikidata.org/wiki/Q75259422> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75273959> .
+  # oo 1877-04-26 Rev. Hon. Algernon Robert Parker, 1849-11-17 - 1940-05-20, https://www.wikidata.org/wiki/Q75321747 (grosvenor.ttl)
+<https://www.wikidata.org/wiki/Q2374406>
+  # Rt. Hon. William Slaney Kenyon-Slaney, 1847-08-24 - 1908-04-24
+  gen:father <https://www.wikidata.org/wiki/Q76043482> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76043483> .
+  # oo Lady Mabel Selina Bridgeman, 1855-11-13 - 1933-01-28
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q21166240> , <#Margaret_Kenyon> ;
-	gen:startDate "1779-12-03" .
+    gen:spouse <https://www.wikidata.org/wiki/Q2374406> , <https://www.wikidata.org/wiki/Q75271751> ;
+	gen:startDate "1887-02-22" .
 
-<#Margaret_Emma_Hanmer>
-  # Margaret Emma Hanmer, d. 1816-02-24
-  gen:father <https://www.wikidata.org/wiki/Q21166240> ;
-  gen:mother <#Margaret_Kenyon> .
-  # oo 1803-02-01 George Kenyon, 2nd Baron Kenyon, Baron of Gredington, 1776-07-22 - 1855-02-25, https://www.wikidata.org/wiki/Q18527444
+<https://www.wikidata.org/wiki/Q75263294>
+  # Robert Orlando Rodolph Kenyon-Slaney, 1892-01-13 - 1965-01-14
+  gen:father <https://www.wikidata.org/wiki/Q2374406> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75271751> .
+  # oo Lady Mary Cecilia Rhodesia Hamilton, 1896-01-21 - 1984-09-05
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75263294> , <https://www.wikidata.org/wiki/Q75263293> ;
+	gen:startDate "1917-05-24" ;
+	gen:divorceDate "1930" .
+
+<https://www.wikidata.org/wiki/Q75298397>
+  # Vivien Kenyon-Slaney, 1918-03-29 - 1963-09-23
+  gen:father <https://www.wikidata.org/wiki/Q75263294> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75263293> .
+  # oo 1939-07-24 Charles William Frederick Hope, 3rd Marquess of Linlithgow, 1912-04-07 - 1987-04-07, https://www.wikidata.org/wiki/Q5079109
+<https://www.wikidata.org/wiki/Q75265883>
+  # Ursula Jane Kenyon-Slaney, 1920-01-15 - 2012-04-07
+  gen:father <https://www.wikidata.org/wiki/Q75263294> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75263293> .
+  # oo 1951-07-05 Robert Edward John Compton, 1922-07-11 - 2009-11-14, https://www.wikidata.org/wiki/Q75333161
+# ----
+#<https://www.wikidata.org/wiki/Q76043056>
+  # Robert Eddowes, of Eagle Hall
+  # oo Anne Hilton, daughter of Rev. Richard Hilton (d. 1706)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76043056> , <https://www.wikidata.org/wiki/Q76112932> .
+
+<https://www.wikidata.org/wiki/Q76043057>
+  # Jane Eddowes
+  gen:father <https://www.wikidata.org/wiki/Q76043056> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76112932> .
+  # oo 1730-11 Lloyd Kenyon, of The Bryn, 1696-03-17 - 1773-09-30, https://www.wikidata.org/wiki/Q76043055
+<https://www.wikidata.org/wiki/Q76129554>
+  # Peregrina Eddowes
+  gen:father <https://www.wikidata.org/wiki/Q76043056> .
+  # oo George Kenyon, of Peel Hall, https://www.wikidata.org/wiki/Q76043061
 
 # ----
 #<https://www.wikidata.org/wiki/Q7526593>
