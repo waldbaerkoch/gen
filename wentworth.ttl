@@ -294,7 +294,9 @@
   # John Wentworth, 1423-06-26 - 1465-06-11
   gen:father <#John_Wentworth,_of_North_Elmsall> .
   # and Joan Elizabeth Beaumont
-  # oo Joan Calverley, b. 1420, daughter of Walter Calverley and Elizabeth Markinfield
+  # oo Joan Calverley, b. 1420
+  []
+    gen:spouse <#John_Wentworth_(died_1465)> , <#Joan_Calverley> .
 <https://www.wikidata.org/wiki/Q7184538>
   # Philip Wentworth, 1424 - 1464-05-18
   gen:father <https://www.wikidata.org/wiki/Q75241284> ;
@@ -321,8 +323,8 @@
 
 <#Thomas_Wentworth_I>
   # Thomas Wentworth, I, 1447~ - 1522
-  gen:father <#John_Wentworth_(died_1465)> .
-  # and Joan Calverley
+  gen:father <#John_Wentworth_(died_1465)> ;
+  gen:mother <#Joan_Calverley> .
   # oo Jane Mirfield, 1451~ - 1522-04, daughter of Oliver Mirfield and Isabel Savile
 <https://www.wikidata.org/wiki/Q5730011>
   # Sir Henry Wentworth, 1448~ - 1499-08-17a/1501-02-27b
@@ -441,7 +443,7 @@
   # Thomas Wentworth, of Elmsall, 1534 - 1590
   gen:father <https://www.wikidata.org/wiki/Q75939647> ;
   gen:mother <https://www.wikidata.org/wiki/Q75939637> .
-  # oo Anne Calverley, b. 1530~, daughter of William Calverley and Elizabeth Middleton
+  # oo Anne Calverley, b. 1530~
   []
     gen:spouse <https://www.wikidata.org/wiki/Q76092771> , <#Anne_Calverley> .
 <https://www.wikidata.org/wiki/Q3009522>
@@ -679,7 +681,7 @@
   # Sir William Wentworth, 4th Baronet, 1686-10-29 - 1763-03-01
   gen:father <https://www.wikidata.org/wiki/Q75497820> ;
   gen:mother <https://www.wikidata.org/wiki/Q75497834> .
-  # oo Diana Blackett, d. 1742-04~ (erskine.ttl)
+  # oo Diana Blackett, 1703 - 1742-04~ (erskine.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q28062234> , <https://www.wikidata.org/wiki/Q75497818> ;
 	gen:startDate "1720-06-23" .
@@ -878,6 +880,194 @@
   gen:father <https://www.wikidata.org/wiki/Q53647286> .
   # and Alice Marteney
   # oo Richard Wentworth, 1395 - 1449-05-29, #Richard_Wentworth
+
+# ----
+#<#Walter_Calverley>
+  # Walter Calverley, 1402 - 1467-03-05
+  # son of Walter de Calverly
+  # and Joan Bigod
+  # oo Elizabeth Markenfield, 1406~ - 1442a, daughter of Thomas Markenfield and Beatrice Sothill
+  []
+    gen:spouse <#Walter_Calverley> , <#Elizabeth_Markenfield> ;
+	gen:startDate "1415-03-01" .
+
+<#Joan_Calverley>
+  # Joan Calverley, b. 1420
+  gen:father <#Walter_Calverley> ;
+  gen:mother <#Elizabeth_Markenfield> .
+  # oo John Wentworth, 1423-06-26 - 1465-06-11, #John_Wentworth_(died_1465)
+<https://www.wikidata.org/wiki/Q76281831>
+  # Sir William Calverley, 1428~ - 1488-04-12
+  gen:father <#Walter_Calverley> ;
+  gen:mother <#Elizabeth_Markenfield> .
+  # oo Agnes Tempest, 1421-11-01 - 1467-09-12, daughter of John Tempest and Alice Sherburne
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76281831> , <https://www.wikidata.org/wiki/Q76281833> ;
+	gen:startDate "1442-01-07" .
+
+<https://www.wikidata.org/wiki/Q76362103>
+  # Sir William Calverley, 1445~ - 1507~
+  gen:father <https://www.wikidata.org/wiki/Q76281831> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76281833> .
+  # oo Alice Savile, 1460~ - 1529
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76362103> , <savile.ttl#Alice_Savile> .
+<https://www.wikidata.org/wiki/Q76281830>
+  # Joan Calverley, 1438 - 1467
+  gen:father <https://www.wikidata.org/wiki/Q76281831> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76281833> .
+  # oo 1453-09-20 Christopher Lister, 1434 - 1467, https://www.wikidata.org/wiki/Q76281824
+
+<#Sir_Walter_Calverley>
+  # Sir Walter Calverley, 1483 - 1536~
+  gen:father <https://www.wikidata.org/wiki/Q76362103> ;
+  gen:mother <savile.ttl#Alice_Savile> .
+  # oo Isabel Drax, b. 1492~, daughter of John Drax and Margaret Amyas
+  []
+    gen:spouse <#Sir_Walter_Calverley> , <#Isabel_Drax> ;
+	gen:startDate "1500-04-30" .
+
+<https://www.wikidata.org/wiki/Q76363610>
+  # Sir William Calverley, 1509 - 1572-06-13
+  gen:father <#Sir_Walter_Calverley> ;
+  gen:mother <#Isabel_Drax> .
+  # oo Elizabeth Middleton, 1510~ - 1574-10-31~, daughter of William Middleton and Isabella Dighton
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76363610> , <#Elizabeth_Middleton> .
+
+<#Anne_Calverley>
+  # Anne Calverley, b. 1530~
+  gen:father <https://www.wikidata.org/wiki/Q76363610> ;
+  gen:mother <#Elizabeth_Middleton> .
+  # oo Thomas Wentworth, of Elmsall, 1534 - 1590, https://www.wikidata.org/wiki/Q76092771
+<https://www.wikidata.org/wiki/Q76362106>
+  # Walter Calverley, b. 1535~
+  gen:father <https://www.wikidata.org/wiki/Q76363610> ;
+  gen:mother <#Elizabeth_Middleton> .
+  # oo Anne Danby, b. 1536~ (neville.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76362106> , <https://www.wikidata.org/wiki/Q76362107> .
+
+<https://www.wikidata.org/wiki/Q17484611>
+  # William Calverley, 1557 - 1596
+  gen:father <https://www.wikidata.org/wiki/Q76362106> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76362107> .
+  # oo Katherine Thorneholme, daughter of John Thorneholme of Haysthorpe
+
+<https://www.wikidata.org/wiki/Q7964491>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75519254> ;
+  # Walter Calverley , 1582~ - 1605-08-05
+  gen:father <https://www.wikidata.org/wiki/Q17484611> .
+  # and Katherine Thorneholme
+  # oo Phillipa Brooke, 1585~ - 1613-09 (despencer.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7964491> , <https://www.wikidata.org/wiki/Q75422705> .
+
+<https://www.wikidata.org/wiki/Q18528432>
+  # Henry Calverley, 1604 - 1651-01-01
+  gen:father <https://www.wikidata.org/wiki/Q7964491> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75422705> .
+  # oo Joyce Pye, b. 1606~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q18528432> , <#Joyce_Pye> ;
+	gen:startDate "1628-07-28" .
+
+<https://www.wikidata.org/wiki/Q75535542>
+  # Walter Calverley, 1629~ - 1691
+  gen:father <https://www.wikidata.org/wiki/Q18528432> ;
+  gen:mother <#Joyce_Pye> .
+  # oo Frances Thompson, daughter of Henry Thompson of Esholt
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75535542> , <https://www.wikidata.org/wiki/Q75535543> .
+
+<https://www.wikidata.org/wiki/Q7529376>
+  # Sir Walter Calverley, 1st Baronet, 1670-01-16 - 1749-10-15
+  # 1st Baronet Calverley, of Calverley, co. York 1711-12-11
+  gen:father <https://www.wikidata.org/wiki/Q75535542> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75535543> .
+  # oo Julia Blackett, 1686-05-18 - 1736-09-17 (erskine.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7529376> , <https://www.wikidata.org/wiki/Q75535546> ;
+	gen:startDate "1707-01-07" .
+
+<https://www.wikidata.org/wiki/Q76194807>
+  # Julia Calverley, 1713 - 1787-12-28
+  gen:father <https://www.wikidata.org/wiki/Q7529376> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75535546> .
+  # oo 1733 Sir George Trevelyan, 3rd Baronet, 1707-11-18 - 1768-09-11, https://www.wikidata.org/wiki/Q75550314
+# ----
+<https://www.wikidata.org/wiki/Q75550314>
+  # Sir George Trevelyan, 3rd Baronet, 1707-11-18 - 1768-09-11
+  gen:father <https://www.wikidata.org/wiki/Q7528119> ; # Sir John Trevelyan, 2nd Baronet
+  gen:mother <https://www.wikidata.org/wiki/Q76241097> . # Susanna Warren
+  # oo Julia Calverley, 1713 - 1787-12-28
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75550314> , <https://www.wikidata.org/wiki/Q76194807> ;
+	gen:startDate "1733" .
+
+<https://www.wikidata.org/wiki/Q7528122>
+  # Sir John Trevelyan, 4th Baronet, 1735-02-06 - 1828-04-18
+  gen:father <https://www.wikidata.org/wiki/Q75550314> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76194807> .
+  # oo Louisa Marianne Simond, d. 1772-02-29, daughter of Peter Simond
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7528122> , <https://www.wikidata.org/wiki/Q76097710> ;
+	gen:startDate "1757-04-20" .
+<https://www.wikidata.org/wiki/Q75550312>
+  # Susanna Trevelyan, b. 1736
+  gen:father <https://www.wikidata.org/wiki/Q75550314> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76194807> .
+  # oo 1764 John Hudson, https://www.wikidata.org/wiki/Q75547383
+
+<https://www.wikidata.org/wiki/Q76195243>
+  # Ven. George Trevelyan, 1764-11-23 - 1827-10-13
+  gen:father <https://www.wikidata.org/wiki/Q7528122> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76097710> .
+  # oo Harriet Neave, 1772~ - 1854-02-15 (digby.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76195243> , <https://www.wikidata.org/wiki/Q76195246> ;
+	gen:startDate "1795-02-09" .
+
+<https://www.wikidata.org/wiki/Q3249693>
+  # Sir Charles Edward Trevelyan, 1st Baronet, 1807-04-02 - 1886-06-19
+  # 1st Baronet Trevelyan, of Wallington, Northumberland 1874-03-13
+  gen:father <https://www.wikidata.org/wiki/Q76195243> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76195246> .
+  # oo Hannah More Macaulay, 1810-01-01 - 1873-08-05, daughter of Zachary Macaulay and Selina Anne Mills
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3249693> , <https://www.wikidata.org/wiki/Q75981912> ;
+	gen:startDate "1834-12-23" .
+
+<https://www.wikidata.org/wiki/Q75901409>
+  # Alice Frances Trevelyan, 1843-05-27 - 1902-01-02
+  gen:father <https://www.wikidata.org/wiki/Q3249693> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75981912> .
+  # oo 1871-12-14 William Stratford Dugdale, 1828-05-02 - 1882-05-09, https://www.wikidata.org/wiki/Q75329429 (curzon.ttl)
+# ----
+#<https://www.wikidata.org/wiki/Q75547383>
+  # John Hudson
+  # oo Susanna Trevelyan, b. 1736
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75547383> , <https://www.wikidata.org/wiki/Q75550312> ;
+	gen:startDate "1764" .
+
+<https://www.wikidata.org/wiki/Q76257833>
+  # Harrington Hudson, 1772 - 1826-11
+  gen:father <https://www.wikidata.org/wiki/Q75547383> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75550312> .
+  # oo Lady Anne Townshend, 1775-02-01 - 1826-11-29
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76257833> , <https://www.wikidata.org/wiki/Q76255865> ;
+	gen:startDate "1795-10-26" .
+
+<https://www.wikidata.org/wiki/Q75292839>
+  # Rev. Charles Walter Hudson, 1807 - 1900-10-26
+  gen:father <https://www.wikidata.org/wiki/Q76257833> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76255865> .
+  # oo Hon. Julia Bosville Macdonald, 1805-10-30 - 1884-06-11
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75292839> , <https://www.wikidata.org/wiki/Q75292837> ;
+	gen:startDate "1838-10-11" .
 
 # ----
 #<#Elizabeth_Howard>
