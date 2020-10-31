@@ -1532,11 +1532,13 @@
   []
     gen:spouse <#Sir_Patrick_Hume,_1st_Baronet> , <hamilton.ttl#Christian_Hamilton> ;
 	gen:startDate "1640b" .
-<#George_Hume,_1st_Baronet>
+<https://www.wikidata.org/wiki/Q54841523>
   # George Hume, 1st Baronet, d. 1657~
-  # Baronet Hume, of Castle Hume
+  # 1st Baronet Hume, of Castle Hume
   gen:father <#Sir_John_Hume> .
-  # oo Mary Maynard, d. 1699-08-30a/1705-07-12b, daughter of Sir William Maynard and Mary Newce
+  # oo Mary Maynard, d. 1699-08-30a/1705-07-12b
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q54841523> , <https://www.wikidata.org/wiki/Q75608475> .
 
 <https://www.wikidata.org/wiki/Q7619037>
   # Patrick Hume, 1st Earl of Marchmont, 1641-01-13 - 1724-08-02
@@ -1551,16 +1553,16 @@
 	gen:startDate "1660-01-29" .
 <#Sir_John_Hume,_2nd_Baronet>
   # Sir John Hume, 2nd Baronet, d. 1695
-  gen:father <#George_Hume,_1st_Baronet> .
-  # and Mary Maynard
+  gen:father <https://www.wikidata.org/wiki/Q54841523> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75608475> .
   # oo Sidney Hamilton, 1648 - 1686-01-10
   []
     gen:spouse <#Sir_John_Hume,_2nd_Baronet> , <hamilton.ttl#Sidney_Hamilton> ;
 	gen:startDate "1675-03b" .
 <#Phoebe_Hume>
   # Phoebe Hume, d. 1710
-  gen:father <#George_Hume,_1st_Baronet> .
-  # and Mary Maynard
+  gen:father <https://www.wikidata.org/wiki/Q54841523> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75608475> .
   # oo 1664 Henry Blennerhassett, d. 1677
 
 <#Patrick_Hume,_Lord_Polwarth>
@@ -1568,7 +1570,7 @@
   gen:father <https://www.wikidata.org/wiki/Q7619037> ;
   gen:mother <#Grizel_Ker> .
   # oo Elizabeth Hume, daughter of Sir John Hume, Baronet, 1697-12-02
-  # oo Jean Home, daughter of Charles Home, 6th Earl of Home and Anne Purvis
+  # oo Jean Home
   []
     gen:spouse <#Patrick_Hume,_Lord_Polwarth> , <#Jean_Home> ;
 	gen:startDate "1703-04-02" .
@@ -2045,6 +2047,13 @@
   gen:father <https://www.wikidata.org/wiki/Q75285917> ;
   gen:mother <https://www.wikidata.org/wiki/Q75303605> .
   # oo 1866-12-18 Cecil Theodore Weld Forester, 5th Baron Forester of Willey Park, 1842-08-03 - 1917-11-20, https://www.wikidata.org/wiki/Q5056352
+
+# ----
+<https://www.wikidata.org/wiki/Q75608475>
+  # Mary Maynard, d. 1699-08-30a/1705-07-12b
+  gen:father <https://www.wikidata.org/wiki/Q75628289> ; # Sir William Maynard
+  gen:mother <https://www.wikidata.org/wiki/Q75864898> . # Mary Newce
+  # oo George Hume, 1st Baronet, d. 1657~, https://www.wikidata.org/wiki/Q54841523
 
 # ----
 #<https://www.wikidata.org/wiki/Q16838667>
