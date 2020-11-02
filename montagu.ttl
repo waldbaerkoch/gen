@@ -883,13 +883,13 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q76024772> , <https://www.wikidata.org/wiki/Q76024774> ;
 	gen:startDate "1671-05-30" .
-<#Edward_Montagu_(born_1649)>
-  # Edward Montagu, b. 1649
+<https://www.wikidata.org/wiki/Q5344491>
+  # Edward Montagu, of Horton, b. 1649
   gen:father <https://www.wikidata.org/wiki/Q5542576> ;
   gen:mother <paget.ttl#Elizabeth_Irby> .
   # oo Elizabeth Pelham, d. 1723-07-13
   []
-    gen:spouse <#Edward_Montagu_(born_1649)> , <pelham.ttl#Elizabeth_Pelham_(died_1723)> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q5344491> , <https://www.wikidata.org/wiki/Q75272911> ;
 	gen:startDate "1678-05-30" .
 <#Christopher_Montagu>
   # Christopher Montagu, b. 1660~
@@ -973,14 +973,19 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q26212970> , <https://www.wikidata.org/wiki/Q76024778> ;
 	gen:startDate "1716" .
+<https://www.wikidata.org/wiki/Q75493902>
+  # Lucy Montagu, 1679 - 1720
+  gen:father <https://www.wikidata.org/wiki/Q5344491> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75272911> .
+  # oo John Morley Trevor, 1681 - 1719-04-12, https://www.wikidata.org/wiki/Q75905307
 <https://www.wikidata.org/wiki/Q5542570>
   gen:name "George Montagu, 1st Earl of Halifax"@en ;
   # 2nd Baron Halifax, co. York 1715-05-19
   # 1st Earl of Halifax, 1st Viscount Sunbury, co. Middlesex 1715-06-14
   gen:birthDate "1684~" ;
   gen:deathDate "1739-05-09" ;
-  gen:father <#Edward_Montagu_(born_1649)> ;
-  gen:mother <pelham.ttl#Elizabeth_Pelham_(died_1723)> .
+  gen:father <https://www.wikidata.org/wiki/Q5344491> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75272911> .
   # oo Ricarda Postuma Saltonstall, 1689~ - 1711-04~, daughter of Richard Saltonstall and Silence Parkhurst
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5542570> , <#Ricarda_Posthuma_Saltonstale> ;
@@ -991,14 +996,16 @@
 	gen:startDate "1711a" .
 <#Grace_Montague>
   # Grace Montague, 1687~ - 1767-12-23
-  gen:father <#Edward_Montagu_(born_1649)> ;
-  gen:mother <pelham.ttl#Elizabeth_Pelham_(died_1723)> .
+  gen:father <https://www.wikidata.org/wiki/Q5344491> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75272911> .
   # oo 1711 William Cosby, 1690–1736, https://www.wikidata.org/wiki/Q8007142
-<#Edward_Montagu_(died_1738)>
+<https://www.wikidata.org/wiki/Q75493900>
   # Edward Montagu, d. 1738
-  gen:father <#Edward_Montagu_(born_1649)> ;
-  gen:mother <pelham.ttl#Elizabeth_Pelham_(died_1723)> .
-  # oo Arabella Trevor, d. 1734
+  gen:father <https://www.wikidata.org/wiki/Q5344491> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75272911> .
+  # oo Arabella Trevor, 1714 - 1734
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75493900> , <#Arabella_Trevor> .
 
 <https://www.wikidata.org/wiki/Q7585576>
   gen:name "William Montagu, 2nd Duke of Manchester"@en ;
@@ -1066,8 +1073,8 @@
   gen:mother <https://www.wikidata.org/wiki/Q75272915> .
 <#Sir_Charles_Montagu>
   # Sir Charles Montagu, d. 1777
-  gen:father <#Edward_Montagu_(died_1738)> .
-  # and Arabella Trevor
+  gen:father <https://www.wikidata.org/wiki/Q75493900> ;
+  gen:mother <#Arabella_Trevor> .
   # oo Elizabeth Villiers, Countess Grandison, d. 1782-05-29
   []
     gen:spouse <#Sir_Charles_Montagu> , <https://www.wikidata.org/wiki/Q75270016> ;
@@ -2176,6 +2183,27 @@
   # oo Lady Lucy Montagu
   []
     gen:spouse <#John_Bright> , <#Lady_Lucy_Montagu> .
+
+# ----
+<https://www.wikidata.org/wiki/Q75905307>
+  owl:sameAs <https://www.wikidata.org/wiki/Q28092031> ;
+  # John Morley Trevor, 1681 - 1719-04-12
+  gen:father <#John_Trevor> . # John Trevor, of Trevallyn
+  # and Elizabeth Clark
+  # oo Lucy Montagu, 1679 - 1720
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75905307> , <https://www.wikidata.org/wiki/Q75493902> .
+<#Arabella_Trevor>
+  # Arabella Trevor, 1714 - 1734
+  gen:father <#John_Trevor> .
+  # and Elizabeth Clark
+  # oo Edward Montagu, d. 1738, https://www.wikidata.org/wiki/Q75493900
+
+<https://www.wikidata.org/wiki/Q75274294>
+  # Gertrude Trevor, d. 1780-07-13
+  gen:father <https://www.wikidata.org/wiki/Q75905307> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75493902> .
+  # oo 1744-06-27 Hon. Charles Roper, 1721-05-21 - 1754-02-04, https://www.wikidata.org/wiki/Q75274293
 
 # ----
 <#Harriet_Dunch>
