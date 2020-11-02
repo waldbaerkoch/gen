@@ -83,10 +83,10 @@
     gen:spouse <https://www.wikidata.org/wiki/Q8007836> , <https://www.wikidata.org/wiki/Q75318846> ;
 	gen:startDate "1686-05-22" .
 <https://www.wikidata.org/wiki/Q75321351>
-  # John Digby
+  # John Digby, b. 1695
   gen:father <https://www.wikidata.org/wiki/Q7518618> ;
   gen:mother <https://www.wikidata.org/wiki/Q75321349> .
-  # oo May Marsh, d. 1731-03-17
+  # oo May Marsh, 1700~ - 1731-03-17
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75321351> , <https://www.wikidata.org/wiki/Q75321353> ;
 	gen:startDate "1717-03-20" .
@@ -94,9 +94,14 @@
   # Rev. William Digby
   gen:father <https://www.wikidata.org/wiki/Q7518618> ;
   gen:mother <https://www.wikidata.org/wiki/Q75321349> .
-  # oo Olivia French (browne.ttl)
+  # oo Olivia French (gore.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75321356> , <https://www.wikidata.org/wiki/Q75822522> .
+<#Elizabeth_Digby>
+  # Elizabeth Digby, 1678 - 1712-09-02
+  gen:father <https://www.wikidata.org/wiki/Q7518618> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75321349> .
+  # oo Very Rev. Jeremy William Marsh, 1667 - 1734-06-03, https://www.wikidata.org/wiki/Q75321355
 
 <https://www.wikidata.org/wiki/Q75318843>
   # Hon. Frances Digby, d. 1729-05-03
@@ -531,14 +536,46 @@
 	gen:startDate "1600-11-11" .
 
 # ----
-#<https://www.wikidata.org/wiki/Q75321355>
-  # Very Rev. Jeremy Marsh
-  # Dean of Kilmore
+#<https://www.wikidata.org/wiki/Q669076>
+  # Rt. Rev. Jeremy Taylor, 1613 – 1667-08-13
+  # Bishop of Down and Connor 1661-01-27
+  # oo Phoebe Langsdale
+
+<#Mary_Taylor>
+  # Mary Taylor
+  gen:father <https://www.wikidata.org/wiki/Q669076> .
+  # and Phoebe Langsdale
+  # oo Most Rev. Francis Marsh, 1626-10-23 – 1693-11-16, https://www.wikidata.org/wiki/Q5481862
+# ----
+#<https://www.wikidata.org/wiki/Q5481862>
+  # Most Rev. Francis Marsh, 1626-10-23 – 1693-11-16
+  # Dean of Connor 1660 – 1661
+  # Dean of Armagh 1661 – 1667
+  # Bishop of Limerick, Ardfert and Aghadoe 1667 – 1673
+  # Bishop of Kilmore and Ardagh 1673 – 1782
+  # Archbishop of Dublin 1682-02-14
+  # oo Mary Taylor
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5481862> , <#Mary_Taylor> .
+
+<https://www.wikidata.org/wiki/Q75321355>
+  # Very Rev. Jeremy William Marsh, 1667 - 1734-06-03
+  # Dean of Kilmore 1700-12-24
+  gen:father <https://www.wikidata.org/wiki/Q5481862> ;
+  gen:mother <#Mary_Taylor> .
+  # oo Elizabeth Digby, 1678 - 1712-09-02
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75321355> , <#Elizabeth_Digby> .
 
 <https://www.wikidata.org/wiki/Q75321353>
-  # May Marsh, d. 1731-03-17
+  # May Marsh, 1700~ - 1731-03-17
   gen:father <https://www.wikidata.org/wiki/Q75321355> .
-  # oo 1717-03-20 John Digby, https://www.wikidata.org/wiki/Q75321351
+  # oo 1717-03-20 John Digby, b. 1695, https://www.wikidata.org/wiki/Q75321351
+<https://www.wikidata.org/wiki/Q75822516>
+  # Arabella Frances Marsh, b. 1710~
+  gen:father <https://www.wikidata.org/wiki/Q75321355> ;
+  gen:mother <#Elizabeth_Digby> .
+  # oo 1732-02-20 Very Rev. William French, 1704-09-26 - 1785-01-16, https://www.wikidata.org/wiki/Q47542021 (gore.ttl)
 
 # ----
 #<https://www.wikidata.org/wiki/Q6142883>
