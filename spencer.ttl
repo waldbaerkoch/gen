@@ -916,7 +916,7 @@
   gen:mother <fitzroy.ttl#Lady_Frances_FitzRoy> .
   # oo Helen Maria Campbell, 1813 - 1899-07-17
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q16062247> , <#Helen_Maria_Campbell> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q16062247> , <https://www.wikidata.org/wiki/Q75388074> ;
 	gen:startDate "1836-02-06" .
 <#William_Henry_Spencer>
   # Rev. Hon. William Henry Spencer, 1810-04-12 - 1900-08-21
@@ -996,12 +996,12 @@
 <#Helen_Frances_Spencer>
   # Helen Frances Spencer, 1843-03-31 - 1932-08-29
   gen:father <https://www.wikidata.org/wiki/Q16062247> ;
-  gen:mother  <#Helen_Maria_Campbell> .
+  gen:mother <https://www.wikidata.org/wiki/Q75388074> .
   # oo 1870-10-10 Robert Spencer Liddell, d. 1903-06-16, #Robert_Spencer_Liddell
 <#Augustus_Campbell_Spencer>
   # Augustus Campbell Spencer, 1851-04-19 - 1912-02-27
   gen:father <https://www.wikidata.org/wiki/Q16062247> ;
-  gen:mother  <#Helen_Maria_Campbell> .
+  gen:mother  <https://www.wikidata.org/wiki/Q75388074> .
   # oo Hilda Grant-Thorold, 1865-05-10 - 1952-07-10, daughter of Alexander William Thorold Grant-Thorold and Anna Hamilton Stirling
   []
     gen:spouse <#Augustus_Campbell_Spencer> , <#Hilda_Grant-Thorold> ;
@@ -2387,19 +2387,56 @@
   # oo 1834-01-17 Hon. George Augustus Spencer, 1804-02-06 - 1877-01-18, #George_Augustus_Spencer
 
 # ----
+#<#Archibald_Campbell>
+  # Archibald Campbell, b. 1707~
+  # oo Margaret Small, 1748 - 1811
+  []
+    gen:spouse <#Archibald_Campbell> , <#Margaret_Small> .
+
 <https://www.wikidata.org/wiki/Q633084>
-  owl:sameAs <https://www.wikidata.org/wiki/Q75388075> .
   # Sir Archibald Campbell, 1st Baronet, 1769-03-12 – 1843-10-06
   # 1st Baronet Campbell, of New Brunswick 1831
+  gen:father <#Archibald_Campbell> ;
+  gen:mother <#Margaret_Small> .
+  # oo Helen MacDonald, 1783 - 1848-10-12
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q633084> , <#Helen_MacDonald> ;
+	gen:startDate "1801-07-06" .
 
-<#Helen_Maria_Campbell>
+<https://www.wikidata.org/wiki/Q75388074>
   # Helen Maria Campbell, 1813 - 1899-07-17
-  gen:father <https://www.wikidata.org/wiki/Q633084> .
+  gen:father <https://www.wikidata.org/wiki/Q633084> ;
+  gen:mother <#Helen_MacDonald> .
   # oo 1836-02-06 Hon. Sir Augustus Almeric Spencer, 1807-03-25 - 1893-08-28, https://www.wikidata.org/wiki/Q16062247
 <https://www.wikidata.org/wiki/Q76261114>
-  # Laura Susanna Campbell
-  gen:father <https://www.wikidata.org/wiki/Q633084> .
+  # Laura Susanna Campbell, 1815 - 1894-09-01
+  gen:father <https://www.wikidata.org/wiki/Q633084> ;
+  gen:mother <#Helen_MacDonald> .
   # oo 1848-07-26 Lyndoch Douglas, 1818-10-28 - 1859-05-15, https://www.wikidata.org/wiki/Q76261187 (mackenzie.ttl)
+# ----
+<#Margaret_Small>
+  # Margaret Small, 1748 - 1811
+  gen:father <#James_Small> ; # James Small
+  gen:mother <#Katherine_Wilson> . # Katherine Wilson
+  # oo Archibald Campbell, b. 1707~, #Archibald_Campbell
+<#Magdalen_Small>
+  # Magdalen Small, 1750 - 1788~
+  gen:father <#James_Small> ;
+  gen:mother <#Katherine_Wilson> .
+  # oo 1764-05-13 John MacDonald, b. 1749~, #John_MacDonald
+# ----
+#<#John_MacDonald>
+  # John MacDonald, b. 1749~
+  # oo Magdalen Small, 1750 - 1788~
+  []
+    gen:spouse <#John_MacDonald> , <#Magdalen_Small> ;
+	gen:startDate "1764-05-13" .
+
+<#Helen_MacDonald>
+  # Helen MacDonald, 1783 - 1848-10-12
+  gen:father <#John_MacDonald> ;
+  gen:mother <#Magdalen_Small> .
+  # oo 1801-07-06 Sir Archibald Campbell, 1st Baronet, 1769-03-12 – 1843-10-06, https://www.wikidata.org/wiki/Q633084
 
 # ----
 #<https://www.wikidata.org/wiki/Q7527640>
