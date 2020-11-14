@@ -865,7 +865,7 @@
   gen:father <https://www.wikidata.org/wiki/Q2702018> ;
   gen:mother <https://www.wikidata.org/wiki/Q50230551> .
   # oo 1668-04b Robert Rich, 5th Earl of Warwick, 1620 - 1675-04-16, https://www.wikidata.org/wiki/Q3938405
-<#Lady_Essex_Montagu>
+<https://www.wikidata.org/wiki/Q75803645>
   # Lady Essex Montagu, 1643 - 1677
   gen:father <https://www.wikidata.org/wiki/Q2702018> ;
   gen:mother <cavendish.ttl#Essex_Cheeke> .
@@ -2160,12 +2160,76 @@
 <https://www.wikidata.org/wiki/Q34370736>
   # Henry Ingram, 1st Viscount Irvine, 1640 - 1666
   # 1st Viscount Irvine, 1st Lord Ingram 1661-05-23
-  gen:father <https://www.wikidata.org/wiki/Q4799166> .
-  # and Eleonor Slingsby
+  gen:father <https://www.wikidata.org/wiki/Q4799166> ; # Sir Arthur Ingram
+  gen:mother <https://www.wikidata.org/wiki/Q76266479> . # Eleonor Slingsby
   # oo Lady Essex Montagu, 1643 - 1677
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q34370736> , <#Lady_Essex_Montagu> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q34370736> , <https://www.wikidata.org/wiki/Q75803645> ;
 	gen:startDate "1660" .
+
+<https://www.wikidata.org/wiki/Q4799168>
+  # Arthur Ingram, 3rd Viscount Irvine, 1666-01-25 - 1702-06-21
+  gen:father <https://www.wikidata.org/wiki/Q34370736> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75803645> .
+  # oo Isabella Machell, 1670-10-25 - 1764-07-21, daughter of John Machell
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4799168> , <#Isabella_Machell> ;
+	gen:startDate "1685-10-06" .
+
+<https://www.wikidata.org/wiki/Q7326681>
+  # Richard Ingram, 5th Viscount Irvine, 1688-01-06 - 1721-04-10
+  gen:father <https://www.wikidata.org/wiki/Q4799168> ;
+  gen:mother <#Isabella_Machell> .
+  # oo Lady Anne Howard, 1696 - 1764-12
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7326681> , <https://www.wikidata.org/wiki/Q4768469> ;
+	gen:startDate "1717" .
+<https://www.wikidata.org/wiki/Q5079290>
+  # Hon. Charles Ingram, 1696-03-27 - 1748-11-28
+  gen:father <https://www.wikidata.org/wiki/Q4799168> ;
+  gen:mother <#Isabella_Machell> .
+  # oo Elizabeth Scarburgh, b. 1700b, daughter of Charles Scarborough and Catherine Fraser
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5079290> , <https://www.wikidata.org/wiki/Q76113687> ;
+	gen:startDate "1727b" .
+
+<https://www.wikidata.org/wiki/Q5079287>
+  # Charles Ingram, 9th Viscount Irvine, 1727-03-19 - 1778-06-19
+  gen:father <https://www.wikidata.org/wiki/Q5079290> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76113687> .
+  # oo Frances Shepheard, 1730~ - 1807-11-20
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5079287> , <https://www.wikidata.org/wiki/Q75269414> ;
+	gen:startDate "1758-06-28" .
+
+<https://www.wikidata.org/wiki/Q1673614>
+  # Hon. Isabella Anne Ingram-Shepheard, 1760 - 1834-04-12
+  gen:father <https://www.wikidata.org/wiki/Q5079287> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75269414> .
+  # oo 1776-05-20 Francis Seymour-Ingram, 2nd Marquess of Hertford, 1743-02-12 - 1822-06-28, https://www.wikidata.org/wiki/Q4297289 (seymour.ttl)
+<https://www.wikidata.org/wiki/Q75269411>
+  # Hon. Frances Ingram-Shepheard, 1761 - 1841
+  gen:father <https://www.wikidata.org/wiki/Q5079287> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75269414> .
+  # oo 1781-03-01 Lord William Gordon, 1744 - 1823-05-01, https://www.wikidata.org/wiki/Q16857899
+<https://www.wikidata.org/wiki/Q75455242> 
+  # Hon. Harriet Ingram-Shepheard, b. 1765-04-16
+  gen:father <https://www.wikidata.org/wiki/Q5079287> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75269414> .
+  # oo 1789-09-16 Henry Hervey Hervey-Aston, 1760 - 1798-12-23, https://www.wikidata.org/wiki/Q75455241 (hervey.ttl)
+<https://www.wikidata.org/wiki/Q75269912>
+  # Hon. Louisa Susan Ingram-Shepheard, 1766~ - 1857-11-22
+  gen:father <https://www.wikidata.org/wiki/Q5079287> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75269414> .
+  # oo 1787-07-07 Sir John Ramsden, 4th Baronet, 1755 – 1839-07-15, https://www.wikidata.org/wiki/Q26451743 (lowther.ttl)
+# ----
+#<https://www.wikidata.org/wiki/Q17318931>
+  # Samuel Shepheard, of Exning, 1677 - 1748
+
+<https://www.wikidata.org/wiki/Q75269414>
+  # Frances Shepheard, 1730~ - 1807-11-20
+  gen:father <https://www.wikidata.org/wiki/Q17318931> . # illegitimate
+  # oo 1758-06-28 Charles Ingram, 9th Viscount Irvine, 1727-03-19 - 1778-06-19, https://www.wikidata.org/wiki/Q5079287
 
 # ----
 #<https://www.wikidata.org/wiki/Q7527620>
