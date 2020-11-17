@@ -101,7 +101,7 @@
   # Arthur Hill, 2nd Marquess of Downshire, 1753-03-03 - 1801-09-07
   gen:father <https://www.wikidata.org/wiki/Q4020235> ;
   gen:mother <fitzgerald.ttl#Lady_Margaretta_Fitzgerald> .
-  # oo Mary Sandys, 1st Lady Sandys, Baroness of Ombersley, 1764-02-19 – 1836-08-01 (west.ttl)
+  # oo Mary Sandys, 1st Lady Sandys, Baroness of Ombersley, 1764-02-19 – 1836-08-01 (compton.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q4799069> , <https://www.wikidata.org/wiki/Q59557482> ;
 	gen:startDate "1786-06-29" .
@@ -916,6 +916,14 @@
   gen:father <https://www.wikidata.org/wiki/Q75304619> ;
   gen:mother <https://www.wikidata.org/wiki/Q75304620> .
   # oo 1628 Sir Richard Grosvenor, 2nd Baronet, 1604~ - 1665-01-31, https://www.wikidata.org/wiki/Q7528592
+<https://www.wikidata.org/wiki/Q76082233>
+  # William Mostyn, d. 1671
+  # Archdeacon of Bangor 1663
+  gen:father <https://www.wikidata.org/wiki/Q75304619> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75304620> .
+  # oo Anne Lewis, daughter of John Lewis, of Chwaen Wen and Elin verch Hugh
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76082233> , <#Anne_Lewis> .
 
 <https://www.wikidata.org/wiki/Q18734615>
   # Sir Roger Mostyn, 1st Baronet, 1620~ - 1690-10-04
@@ -930,6 +938,13 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q18734615> , <https://www.wikidata.org/wiki/Q76082255> ;
 	gen:startDate "1651b" .
+<#John_Mostyn>
+  # Rev. John Mostyn, 1652 - 1724
+  gen:father <https://www.wikidata.org/wiki/Q76082233> ;
+  gen:mother <#Anne_Lewis> .
+  # oo Anne Price, 1650 - 1722
+  []
+    gen:spouse <#John_Mostyn> , <#Anne_Price> .
 
 <https://www.wikidata.org/wiki/Q75283138>
   # Jane Mostyn
@@ -943,6 +958,13 @@
   # oo Bridget Savage, daughter of Darcy Savage
   []
     gen:spouse <https://www.wikidata.org/wiki/Q76082258> , <https://www.wikidata.org/wiki/Q76273868> .
+<#William_Mostyn_(died_1729)>
+  # William Mostyn, 1687 - 1729-12
+  gen:father <#John_Mostyn> ;
+  gen:mother <#Anne_Price> .
+  # oo Mary Kynaston, 1693 - 1725, daughter of Humphrey Kynaston, Esq. of Bryngwyn and Martha Owen (daughter of Robert Owen, Esq. of Woodhouse)
+  []
+    gen:spouse <#William_Mostyn_(died_1729)> , <#Mary_Kynaston> .
 
 <https://www.wikidata.org/wiki/Q14945669>
   # Sir Roger Mostyn, 3rd Baronet, 1673-07-31 - 1739-05-05
@@ -952,6 +974,13 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q14945669> , <https://www.wikidata.org/wiki/Q75282506> ;
 	gen:startDate "1703-07-20" .
+<#William_Mostyn_(died_1786)>
+  # William Mostyn of Bryngwyn, 1715 - 1786
+  gen:father <#William_Mostyn_(died_1729)> ;
+  gen:mother <#Mary_Kynaston> .
+  # oo Grace Wynn, 1715 - 1791-04, daughter of Robert Wynne and Elizabeth Davies
+  []
+    gen:spouse <#William_Mostyn_(died_1786)> , <#Grace_Wynn> .
 
 <https://www.wikidata.org/wiki/Q75282517>
   # Essex Mostyn, d. 1764-12-07
@@ -966,6 +995,16 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q26898961> , <https://www.wikidata.org/wiki/Q75282512> ;
 	gen:startDate "1735" .
+<https://www.wikidata.org/wiki/Q75328438>
+  owl:sameAs <https://www.wikidata.org/wiki/Q19282430> ;
+  # William Mostyn-Owen, 1742~ - 1795-03-11
+  # William Mostyn
+  # William Mostyn-Owen
+  gen:father <#William_Mostyn_(died_1786)> ;
+  gen:mother <#Grace_Wynn> .
+  # oo Rebecca Dod, 1768 - 1862, daughter of Thomas Dod
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75328438> , <https://www.wikidata.org/wiki/Q75420762> .
 
 <https://www.wikidata.org/wiki/Q75568782>
   # Sir Roger Mostyn, 5th Baronet, d. 1796-07-26
@@ -975,12 +1014,25 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75568782> , <https://www.wikidata.org/wiki/Q75568784> ;
 	gen:startDate "1776-05-19" .
+<https://www.wikidata.org/wiki/Q75615774>
+  # William Mostyn-Owen, 1770 - 1849-11-17
+  gen:father <https://www.wikidata.org/wiki/Q75328438> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75420762> .
+  # oo Harriet Elizabeth Gordon-Cumming, 1784 - 1865, daughter of Major T. Gordon-Cumming
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75615774> , <https://www.wikidata.org/wiki/Q75615775> ;
+	gen:startDate "1802~" .
 
 <https://www.wikidata.org/wiki/Q76082019>
   # Elizabeth Mostyn, d. 1842-11-08
   gen:father <https://www.wikidata.org/wiki/Q75568782> ;
   gen:mother <https://www.wikidata.org/wiki/Q75568784> .
   # oo 1794-02-11 Sir Edward Pryce Lloyd, 1st Baron Mostyn of Mostyn, 1768-09-17 - 1854-04-03, https://www.wikidata.org/wiki/Q5344180
+<https://www.wikidata.org/wiki/Q75328437>
+  # Francis Mostyn-Owen, 1814 - 1891
+  gen:father <https://www.wikidata.org/wiki/Q75615774> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75615775> .
+  # oo 1832-05-31 Robert Myddelton-Biddulph, 1805-06-20 - 1872-03-21, https://www.wikidata.org/wiki/Q7347908 (biddulph.ttl)
 
 # ----
 #<https://www.wikidata.org/wiki/Q5344180>
