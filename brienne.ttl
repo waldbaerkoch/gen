@@ -518,6 +518,8 @@
   gen:father <https://www.wikidata.org/wiki/Q5480168> ;
   gen:mother <https://www.wikidata.org/wiki/Q75403335> .
   # oo Elizabeth Fortescue, d. 1652-04-16a, daughter of John Fortescue
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7527596> , <https://www.wikidata.org/wiki/Q75403357> .
 
 <https://www.wikidata.org/wiki/Q15989835>
   # Sir Henry Beaumont, 1545~ – 1607-03-31
@@ -543,12 +545,17 @@
   # oo 1629 Sir Wolstan Dixie, 1st Baronet, d. 1682-02-13, willoughby.ttl#Sir_Wolstan_Dixie,_1st_Baronet
 <#Sir_John_Beaumont,_2nd_Baronet>
   # Sir John Beaumont, 2nd Baronet, 1607-06-24 - 1643-09
-  gen:father <https://www.wikidata.org/wiki/Q7527596> .
-  # and Elizabeth Fortescue
+  gen:father <https://www.wikidata.org/wiki/Q7527596> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75403357> .
+<https://www.wikidata.org/wiki/Q75403395>
+  # Mary Beaumont, b. 1617-07-07
+  gen:father <https://www.wikidata.org/wiki/Q7527596> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75403357> .
+  # oo Sir Edmund Williams, 1st Baronet, d. 1644, https://www.wikidata.org/wiki/Q75584704
 <#Sir_Thomas_Beaumont,_3rd_Baronet_(died_1686)>
   # Sir Thomas Beaumont, 3rd Baronet, 1620-04-29 - 1686-07-07
-  gen:father <https://www.wikidata.org/wiki/Q7527596> .
-  # and Elizabeth Fortescue
+  gen:father <https://www.wikidata.org/wiki/Q7527596> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75403357> .
   # oo Vere Tufton
   []
     gen:spouse <#Sir_Thomas_Beaumont,_3rd_Baronet_(died_1686)> , <tufton.ttl#Vere_Tufton> .
@@ -1325,6 +1332,72 @@
   # Catherine Farnham, d. 1621
   gen:father <https://www.wikidata.org/wiki/Q7789529> .
   # oo Sir Thomas Beaumont, d. 1614-11-27, https://www.wikidata.org/wiki/Q16203518
+
+# ----
+<https://www.wikidata.org/wiki/Q75584704>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75403397> .
+  # Sir Edmund Williams, 1st Baronet, d. 1644
+  # 1st Baronet Williams, of Marnhull in the County of Dorset 1642-04-19
+  # son of John Williams
+  # oo Mary Beaumont, b. 1617-07-07
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75584704> , <https://www.wikidata.org/wiki/Q75403395> .
+
+<https://www.wikidata.org/wiki/Q75301556>
+  # Sir John Williams, 2nd Baronet, 1642 - 1680
+  gen:father <https://www.wikidata.org/wiki/Q75584704> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75403395> .
+  # oo Susan Skipwith, d. 1689
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75301556> , <#Susan_Skipwith> .
+
+<https://www.wikidata.org/wiki/Q75301555>
+  # Mary Williams, 1672 - 1710-12-18
+  gen:father <https://www.wikidata.org/wiki/Q75301556> ;
+  gen:mother <#Susan_Skipwith> .
+  # oo 1690-06-04 Charles Petty, 1st Baron Shelburne, 1672 - 1696-04, https://www.wikidata.org/wiki/Q75301554 (fitzgerald.ttl)
+  # oo 1696-12-09 Henry Conyngham, 1660b - 1706/1707-04-02, https://www.wikidata.org/wiki/Q5719769
+# ----
+#<https://www.wikidata.org/wiki/Q7529268>
+  # Sir Thomas Skipwith, 1st Baronet, 1620~ - 1694-06-02
+  # 1st Baronet Skipwith, of Metheringham in the County of Lincoln 1678-07-27
+  # oo Mary Lathom, daughter of Ralph Lathom
+
+<#Susan_Skipwith>
+  # Susan Skipwith, d. 1689
+  gen:father <https://www.wikidata.org/wiki/Q7529268> .
+  # and Mary Lathom
+  # oo Sir John Williams, 2nd Baronet, 1642 - 1680, https://www.wikidata.org/wiki/Q75301556
+# ----
+#<https://www.wikidata.org/wiki/Q5719769>
+  # Henry Conyngham, 1660b - 1706/1707-04-02
+  # son of Sir Albert Conyngham
+  # and Margaret Leslie
+  # oo Mary Williams, 1672 - 1710-12-18
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5719769> , <https://www.wikidata.org/wiki/Q75301555> ;
+	gen:startDate "1696-12-09" .
+
+<https://www.wikidata.org/wiki/Q75588222>
+  # Mary Conyngham, 1705b - 1737
+  gen:father <https://www.wikidata.org/wiki/Q5719769> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75301555> .
+  # oo 1730b Rt. Hon. Francis Burton, 1696-12-01 - 1744-03-20, https://www.wikidata.org/wiki/Q5480382
+# ----
+#<https://www.wikidata.org/wiki/Q5480382>
+  # Rt. Hon. Francis Burton, 1696-12-01 - 1744-03-20
+  # son of Francis Burton
+  # and Alice Tilson
+  # oo Mary Conyngham, 1705b - 1737
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5480382> , <https://www.wikidata.org/wiki/Q75588222> ;
+	gen:startDate "1730b" .
+
+<https://www.wikidata.org/wiki/Q75949760>
+  # Alice Burton, 1724a - 1746a
+  gen:father <https://www.wikidata.org/wiki/Q5480382> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75588222> .
+  # oo 1743-09-22 Sir St. George St. George, 5th Baronet, 1725b - 1746-09-25, https://www.wikidata.org/wiki/Q7593221 (gore.ttl)
 
 # ----
 #<https://www.wikidata.org/wiki/Q7793526>
