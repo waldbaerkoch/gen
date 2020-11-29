@@ -1155,13 +1155,13 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7789618> , <https://www.wikidata.org/wiki/Q16943786> ;
 	gen:startDate "1693-01-14" .
-<#William_FitzMaurice_(died_1710)>
+<https://www.wikidata.org/wiki/Q75285517>
   # Hon. William FitzMaurice, 1670-07-30 - 1710
   gen:father <https://www.wikidata.org/wiki/Q8009093> ;
   gen:mother <#Constance_Long> .
   # oo Deborah Brookes
   []
-    gen:spouse <#William_FitzMaurice_(died_1710)> , <#Deborah_Brookes> .
+    gen:spouse <https://www.wikidata.org/wiki/Q75285517> , <https://www.wikidata.org/wiki/Q75285519> .
 
 <#Lady_Elizabeth_Anne_FitzMaurice>
   # Lady Elizabeth Anne FitzMaurice, d. 1757-12-17
@@ -1194,8 +1194,8 @@
   # oo 1727-08-26 Arthur Denny, d. 1742, https://www.wikidata.org/wiki/Q75464479 (neville.ttl)
 <#Mary_FitzMaurice_(died_1780)>
   # Mary FitzMaurice, d. 1780-12-09
-  gen:father <#William_FitzMaurice_(died_1710)> ;
-  gen:mother <#Deborah_Brookes> .
+  gen:father <https://www.wikidata.org/wiki/Q75285517> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75285519> .
   # oo 1734-02-16 John Petty, 1st Earl of Shelburne, 1706 - 1761-05-14, https://www.wikidata.org/wiki/Q6252711
 
 <https://www.wikidata.org/wiki/Q15039951>
@@ -3254,18 +3254,52 @@
 # ====
 
 # ----
+<https://www.wikidata.org/wiki/Q75538520>
+  # James Waller, 1632~ - 1702~
+  gen:father <https://www.wikidata.org/wiki/Q5656287> ; # Sir Hardress Waller
+  gen:mother <https://www.wikidata.org/wiki/Q5362692> . # Elizabeth Dowdall
+  # oo Dorothy Clayton, b. 1632~, daughter of Sir Randall Clayton and Judith Perceval
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75538520> , <https://www.wikidata.org/wiki/Q76026561> .
 <https://www.wikidata.org/wiki/Q21070455>
   # Elizabeth Waller, Baroness Shelburne, 1636~ - 1708-02
   # Baroness Shelburne 1688-12-13, suo jure
-  gen:father <https://www.wikidata.org/wiki/Q5656287> ; # Hardress Waller
-  gen:mother <https://www.wikidata.org/wiki/Q5362692> . # Elizabeth Dowdall
+  gen:father <https://www.wikidata.org/wiki/Q5656287> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5362692> .
   # oo 1653-10-23 Sir Maurice Fenton, 1st Baronet, 1622~ – 1664, 1st Baronet Fenton, of Mitchelstown 1661, https://www.wikidata.org/wiki/Q75464294
   # oo 1667 Sir William Petty, 1623-05-26 - 1687-12-16, https://www.wikidata.org/wiki/Q278699
-<#Mary_Waller>
+<https://www.wikidata.org/wiki/Q75404725>
   # Mary Waller
   gen:father <https://www.wikidata.org/wiki/Q5656287> ;
   gen:mother <https://www.wikidata.org/wiki/Q5362692> .
   # oo 1670~ Sir John Brookes, 1st Baronet, d. 1691-11-18, https://www.wikidata.org/wiki/Q19587144
+<https://www.wikidata.org/wiki/Q75269613>
+  # Bridget Waller, d. 1721-12
+  gen:father <https://www.wikidata.org/wiki/Q5656287> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5362692> .
+  # oo 1671-07-31~ Henry Cadogan, 1642 – 1713/14, https://www.wikidata.org/wiki/Q4400917
+
+<https://www.wikidata.org/wiki/Q76026558>
+  # John Waller, b. 1668~
+  gen:father <https://www.wikidata.org/wiki/Q75538520> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76026561> .
+  # oo Elizabeth Dickson, b. 1698~
+
+<https://www.wikidata.org/wiki/Q75709849>
+  # John Thomas Waller, b. 1730~
+  gen:father <https://www.wikidata.org/wiki/Q76026558> .
+  # and Elizabeth Dickson
+  # oo Elizabeth Maunsell, 1730a - 1768a, daughter of Rev. Richard Maunsell and ??? Burscough
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75709849> , <https://www.wikidata.org/wiki/Q75464751> ;
+	gen:startDate "1762-11-04" .
+
+<https://www.wikidata.org/wiki/Q75598200>
+  # Katharine Waller, 1762a - 1853-09-30
+  gen:father <https://www.wikidata.org/wiki/Q75709849> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75464751> .
+  # oo 1790 Standish O'Grady, 1st Viscount Guillamore, 1766 - 1840-04-21, https://www.wikidata.org/wiki/Q7598649
+  # TODO move here from paget.ttl
 # ----
 #<https://www.wikidata.org/wiki/Q75464294>
   # Sir Maurice Fenton, 1st Baronet, 1622~ – 1664
@@ -3312,16 +3346,22 @@
 #<https://www.wikidata.org/wiki/Q19587144>
   # Sir John Brookes, 1st Baronet, d. 1691-11-18
   # 1st Baronet Brookes, of York 1676-06-13
+  # son of James Brookes
   # oo Mary Waller
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q19587144> , <#Mary_Waller> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q19587144> , <https://www.wikidata.org/wiki/Q75404725> ;
 	gen:startDate "1670~" .
 
-<#Deborah_Brookes>
+<https://www.wikidata.org/wiki/Q75285519>
   # Deborah Brookes
   gen:father <https://www.wikidata.org/wiki/Q19587144> ;
-  gen:mother <#Mary_Waller> .
-  # oo Hon. William FitzMaurice, 1670-07-30 - 1710, #William_FitzMaurice_(died_1710)
+  gen:mother <https://www.wikidata.org/wiki/Q75404725> .
+  # oo Hon. William FitzMaurice, 1670-07-30 - 1710, https://www.wikidata.org/wiki/Q75285517
+<https://www.wikidata.org/wiki/Q75502397>
+  # Henrietta Brookes
+  gen:father <https://www.wikidata.org/wiki/Q19587144> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75404725> .
+  # oo John Pratt, d. 1740, https://www.wikidata.org/wiki/Q75502401 (stuart.ttl)
 
 # ----
 #<https://www.wikidata.org/wiki/Q6792982>
