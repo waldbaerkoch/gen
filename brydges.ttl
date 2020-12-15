@@ -20,45 +20,71 @@
     gen:spouse <#Sir_Thomas_Chaundos,_2nd_Lord_Chaundos> , <#Lucy_???> ;
 	gen:startDate "1336-07-01" .
 
-<#Elizabeth_Chaundos>
+<https://www.wikidata.org/wiki/Q75565153>
   # Elizabeth Chaundos
   gen:father <#Sir_Thomas_Chaundos,_2nd_Lord_Chaundos> ;
   gen:mother <#Lucy_???> .
-  # oo Thomas Berkeley, d. 1405-04-12, #Thomas_Berkeley
+  # oo Thomas Berkeley, d. 1405-04-12, https://www.wikidata.org/wiki/Q75565155
 
 # ====
 
-#<#Thomas_Berkeley>
+#<https://www.wikidata.org/wiki/Q75565155>
   # Thomas Berkeley, d. 1405-04-12
   # oo Elizabeth Chaundos
   []
-    gen:spouse <#Thomas_Berkeley> , <#Elizabeth_Chaundos> .
+    gen:spouse <https://www.wikidata.org/wiki/Q75565155> , <https://www.wikidata.org/wiki/Q75565153> .
 
-<#Alice_Berkeley>
+<https://www.wikidata.org/wiki/Q75565164>
   # Alice Berkeley, 1379b - 1414-05-12
-  gen:father <#Thomas_Berkeley> ;
-  gen:mother <#Elizabeth_Chaundos> .
-  # oo Thomas Brugge, d. 1408-04-07, #Thomas_Brugge
+  gen:father <https://www.wikidata.org/wiki/Q75565155> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75565153> .
+  # oo Thomas Brugge, 1355 - 1408-04-07, https://www.wikidata.org/wiki/Q75565166
 
 # ====
 
-#<#Thomas_Brugge>
-  # Thomas Brugge, d. 1408-04-07
+<https://www.wikidata.org/wiki/Q75565166>
+  # Thomas Brugge, of Haresfield, 1355 - 1408-04-07
+  gen:father <#Baldwin_Brugge> ; # Baldwin Brugge
+  gen:mother <#Isabel_Grandison> . # Isabel Grandison
   # oo Alice Berkeley, 1379b - 1414-05-12
   []
-    gen:spouse <#Thomas_Brugge> , <#Alice_Berkeley> .
+    gen:spouse <#Thomas_Brugge> , <https://www.wikidata.org/wiki/Q75565164> ;
+	gen:startDate "1396" .
+<#John_Brugge>
+  # John Brugge, of Standen, 1363~ - 1436-09-30
+  gen:father <#Baldwin_Brugge> ;
+  gen:mother <#Isabel_Grandison> .
+  # oo Joan ???, b. 1366
+  []
+    gen:spouse <#John_Brugge> , <#Joan_???> ;
+	gen:startDate "1383~" .
 
 <#Giles_Brugge,_4th_Lord_Chaundos>
   # Giles Brugge, 4th Lord Chaundos, 1396-12-21 - 1467-04-13
-  gen:father <#Thomas_Brugge> ;
-  gen:mother <#Alice_Berkeley> .
+  gen:father <https://www.wikidata.org/wiki/Q75565166> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75565164> .
   # oo Katherine Clifford, daughter of James Clifford
+<#Thomas_Brugge_(died_1457~)>
+  # Thomas Brugge, 1390~ - 1457~
+  gen:father <#John_Brugge> ;
+  gen:mother <#Joan_???> .
+  # oo Alice Hackluyt, b. 1400~, daughter of Hugh Hackluyt
+  []
+    gen:spouse <#Thomas_Brugge_(died_1457~)> , <#Alice_Hackluyt> .
 
 <https://www.wikidata.org/wiki/Q7787982>
   # Thomas Brugge, 5th Lord Chaundos, 1427b - 1493-01-30
   gen:father <#Giles_Brugge,_4th_Lord_Chaundos> .
   # and Katherine Clifford
   # oo Florence Darrell, daughter of William Darrell and Elizabeth Calstone
+<#Thomas_Brydges>
+  # Thomas Brydges, 1431 - 1457a
+  gen:father <#Thomas_Brugge_(died_1457~)> ;
+  gen:mother <#Alice_Hackluyt> .
+  # oo Maud Henborough, 1436 - 1457a, daughter of Thomas Henborough
+  []
+    gen:spouse <#Thomas_Brydges> , <#Maud_Henborough> ;
+	gen:startDate "1457b" .
 
 <https://www.wikidata.org/wiki/Q5561611>
   # Sir Giles Brugge, 6th Lord Chaundos, 1462b - 1511-12-01
@@ -68,6 +94,15 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5561611> , <https://www.wikidata.org/wiki/Q75563511> ;
 	gen:startDate "1490~" .
+<https://www.wikidata.org/wiki/Q24254940>
+  # Sir John Brydges, 1470 - 1530-04-14a
+  # Lord Mayor of London
+  gen:father <#Thomas_Brydges> ;
+  gen:mother <#Maud_Henborough> .
+  # Agnes Ayloffe, 1475 - 1530b, daughter of Thomas Ayloffe and Agnes Birch
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q24254940> , <#Agnes_Ayloffe> ;
+	gen:startDate "1493" .
 
 <https://www.wikidata.org/wiki/Q6223695>
   # John Brydges, 1st Baron Chandos of Sudeley, 1492-03-09 - 1557-04-12
@@ -84,6 +119,12 @@
   gen:father <https://www.wikidata.org/wiki/Q5561611> ;
   gen:mother <https://www.wikidata.org/wiki/Q75563511> .
   # oo 1515 Sir John Sydenham, 1494~ - 1557-04-16, https://www.wikidata.org/wiki/Q75620473 (poyntz.ttl)
+<https://www.wikidata.org/wiki/Q75268838>
+  # Winifred Brydges, 1507/1515~ - 1586-06-16
+  gen:father <https://www.wikidata.org/wiki/Q24254940> ;
+  gen:mother <#Agnes_Ayloffe> .
+  # oo 1535 Sir Richard Sackville, 1507~ - 1566-04-21, https://www.wikidata.org/wiki/Q6087831
+  # oo 1568-09-30b John Paulet, 2nd Marquess of Winchester, 1510~ – 1576-11-04, https://www.wikidata.org/wiki/Q6252308
 
 <https://www.wikidata.org/wiki/Q5339327>
   # Edmund Brydges, 2nd Baron Chandos of Sudeley, 1522b - 1573-03-11
