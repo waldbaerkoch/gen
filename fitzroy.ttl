@@ -167,7 +167,7 @@
   gen:mother <gower.ttl#Elizabeth_Wrottesley> .
   # oo Caroline Pigot, d. 1835-01-01
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q43551344> , <#Caroline_Pigot> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q43551344> , <https://www.wikidata.org/wiki/Q75249766> ;
 	gen:startDate "1800-09-10" .
 <#Lady_Elizabeth_FitzRoy>
   gen:name "Lady Elizabeth FitzRoy"@en ;
@@ -307,7 +307,7 @@
 <#Henry_Fitzroy>
   # Henry Fitzroy, 1806-08-22 - 1877-12-05
   gen:father <https://www.wikidata.org/wiki/Q43551344> ;
-  gen:mother <#Caroline_Pigot> .
+  gen:mother <https://www.wikidata.org/wiki/Q75249766> .
   # oo Jane Elizabeth Beauclerk, 1807 - 1892-07-15
   []
     gen:spouse <#Henry_Fitzroy> , <beauclerk.ttl#Jane_Elizabeth_Beauclerk> ;
@@ -315,7 +315,7 @@
 <https://www.wikidata.org/wiki/Q75249767>
   # Hugh FitzRoy, 1808-05-14 - 1879-02-27
   gen:father <https://www.wikidata.org/wiki/Q43551344> ;
-  gen:mother <#Caroline_Pigot> .
+  gen:mother <https://www.wikidata.org/wiki/Q75249766> .
   # oo Lucy Sarah Lethbridge, 1811 - 1855-05-02
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75249767> , <https://www.wikidata.org/wiki/Q75252869> ;
@@ -327,10 +327,10 @@
 <#Francis_Charles_FitzRoy>
   # Francis Charles FitzRoy, 1811-03-15 - 1874-11-21
   gen:father <https://www.wikidata.org/wiki/Q43551344> ;
-  gen:mother <#Caroline_Pigot> .
+  gen:mother <https://www.wikidata.org/wiki/Q75249766> .
   # oo Caroline Octavia Pigot, d. 1854-09-02
   []
-    gen:spouse <#Francis_Charles_FitzRoy> , <#Caroline_Octavia_Pigot> ;
+    gen:spouse <#Francis_Charles_FitzRoy> , <https://www.wikidata.org/wiki/Q75252876> ;
 	gen:startDate "1835-07-11" .
   # oo Harriet Anne Musgrave, d. 1883-01-24, daughter of Christopher Musgrave
   []
@@ -425,7 +425,7 @@
 <https://www.wikidata.org/wiki/Q75264439>
   # Lavinia FitzRoy, 1837-05-17 - 1912-05-16
   gen:father <#Francis_Charles_FitzRoy> ;
-  gen:mother <#Caroline_Octavia_Pigot> .
+  gen:mother <https://www.wikidata.org/wiki/Q75252876> .
   # oo 1882-10-24 Charles Clitheroe Gore, 1839-09-07 - 1926-08-13, https://www.wikidata.org/wiki/Q75264433
 <https://www.wikidata.org/wiki/Q75250951>
   # Esmé Fitzroy, 1859-02-21 - 1939-05-25
@@ -1061,42 +1061,48 @@
   # oo 1858-04-21 Henry Thynne Lascelles, 4th Earl of Harewood, 1824-06-18 - 1892-06-24, https://www.wikidata.org/wiki/Q5724686
 
 # ----
-#<#Richard_Pigot>
-  # Richard Pigot
-  # oo Frances Goode
-
+<https://www.wikidata.org/wiki/Q5543413>
+  # George Pigot, 1st Baron Pigot of Patshull, 1719-03-04 - 1777-05-11
+  # 1st Baronet Pigot, of Patshull, Staffordshire 1764-12-05
+  # 1st Baron Pigot of Patshull, co. Dublin 1766-01-18
+  gen:father <https://www.wikidata.org/wiki/Q75711940> ; # Richard Pigot
+  gen:mother <https://www.wikidata.org/wiki/Q75711944> . # Frances Goode
 <https://www.wikidata.org/wiki/Q2158497>
   # Sir Robert Pigot, 2nd Baronet, 1720-09-20 - 1796-08-11
-  gen:father <#Richard_Pigot> .
-  # and Frances Goode
+  gen:father <https://www.wikidata.org/wiki/Q75711940> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75711944> .
   # oo Anne Johnson, d. 1772-07, daughter of Allen Johnson and Olivia Walsh
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q2158497> , <#Anne_Johnson> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q2158497> , <https://www.wikidata.org/wiki/Q75711995> ;
 	gen:startDate "1765-02-18" .
 <https://www.wikidata.org/wiki/Q5932297>
   # Hugh Pigot, 1722-05-28 – 1792-12-15
-  gen:father <#Richard_Pigot> .
-  # and Frances Goode
-  # oo Frances Wrottesley, d. 1811-04-13
+  gen:father <https://www.wikidata.org/wiki/Q75711940> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75711944> .
+  # oo Frances Wrottesley, d. 1811-04-13 (gower.ttl)
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q5932297> , <gower.ttl#Frances_Wrottesley> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q5932297> , <https://www.wikidata.org/wiki/Q75711976> ;
 	gen:startDate "1769-06-20" .
 
+<https://www.wikidata.org/wiki/Q75280131>
+  # Sophia Pigot, 1763~ - 1834-01-01
+  gen:father <https://www.wikidata.org/wiki/Q5543413> . # illegitimate
+  # oo 1776-03-14 Hon. Edward Monckton, 1744-11-03 - 1832-07-21, https://www.wikidata.org/wiki/Q5344483 (manners.ttl)
 <https://www.wikidata.org/wiki/Q75261791>
   # Sir George Pigot, 3rd Baronet, 1766-10-19 - 1841-06-24
   gen:father <https://www.wikidata.org/wiki/Q2158497> ;
-  gen:mother <#Anne_Johnson> .
+  gen:mother <https://www.wikidata.org/wiki/Q75711995> .
   # oo Mary Anne Monckton, d. 1833-11-20 (manners.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75261791> , <https://www.wikidata.org/wiki/Q75708415> ;
 	gen:startDate "1796-07-18" .
-<#Caroline_Pigot>
+<https://www.wikidata.org/wiki/Q75249766>
   # Caroline Pigot, d. 1835-01-01
   gen:father <https://www.wikidata.org/wiki/Q5932297> ;
-  gen:mother <gower.ttl#Frances_Wrottesley> .
+  gen:mother <https://www.wikidata.org/wiki/Q75711976> .
   # 1800-09-10 Rev. Lord Henry Fitzroy, 1770-04-09 - 1828-06-07, https://www.wikidata.org/wiki/Q43551344
 
-<#Caroline_Octavia_Pigot>
+<https://www.wikidata.org/wiki/Q75252876>
   # Caroline Octavia Pigot, d. 1854-09-02
   gen:father <https://www.wikidata.org/wiki/Q75261791> ;
   gen:mother <https://www.wikidata.org/wiki/Q75708415> .
