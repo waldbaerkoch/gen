@@ -359,11 +359,11 @@
   gen:father <https://www.wikidata.org/wiki/Q337638> ;
   gen:mother <russell.ttl#Catherine_Russell> .
   # oo 1726-10-29 Rt. Hon. Henry Pelham, 1694-09-25 - 1754-03-06, https://www.wikidata.org/wiki/Q244766
-<#Lady_Frances_Manners>
-  # Lady Frances Manners
+<https://www.wikidata.org/wiki/Q75256336>
+  # Lady Frances Manners, b. 1710~
   gen:father <https://www.wikidata.org/wiki/Q337638> ;
   gen:mother <russell.ttl#Catherine_Russell> .
-  # oo 1732-09-02 Hon. Richard Arundell, 1696~ - 1759-01-20, https://www.wikidata.org/wiki/Q26451764
+  # oo 1732-09-02 Hon. Richard Arundell, of Allerton Mauleverer, 1696~ - 1759-01-20, https://www.wikidata.org/wiki/Q26451764
 <https://www.wikidata.org/wiki/Q15665890>
   # Lady Elizabeth Manners, 1709~ - 1730-03-22
   gen:father <https://www.wikidata.org/wiki/Q337638> ;
@@ -1852,21 +1852,61 @@
 	gen:startDate "1693a" .
 
 # ----
-<https://www.wikidata.org/wiki/Q26451764>
-  # Hon. Richard Arundell, 1696~ - 1759-01-20
-  gen:father <https://www.wikidata.org/wiki/Q3809048> .
-  # and Barbara Slingsby
-  # oo Lady Frances Manners
+#<https://www.wikidata.org/wiki/Q7323798>
+  # Richard Arundell, 1st Baron Arundell of Trerice, 1622b - 1687-10~
+  # 1st Baron Arundell of Trerice, co. Cornwall 1665-03-23
+  # son of Sir John Arundell
+  # and Mary Cary
+  # oo Gertrude Bagge, 1614~ - 1691-11~, daughter of Sir James Bagge and Grace Fortescue
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q26451764> , <#Lady_Frances_Manners> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q7323798> , <https://www.wikidata.org/wiki/Q75397130> ;
+	gen:startDate "1648b" .
+
+<https://www.wikidata.org/wiki/Q3809048>
+  # John Arundell, 2nd Baron Arundell of Trerice, 1649-09-01 - 1697-09-07
+  gen:father <https://www.wikidata.org/wiki/Q7323798> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75397130> .
+  # oo Margaret Acland, d. 1691-03-26
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3809048> , <https://www.wikidata.org/wiki/Q75276122> ;
+	gen:startDate "1675-03-10" .
+  # oo Barbara Slingsby, 1668~ - 1721-08-01 (belasyse.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3809048> , <https://www.wikidata.org/wiki/Q45773352> ;
+	gen:startDate "1693-02-14" .
+
+<https://www.wikidata.org/wiki/Q75266718>
+  # John Arundell, 3rd Baron Arundell of Trerice, 1678-02-25 - 1706-09-24
+  gen:father <https://www.wikidata.org/wiki/Q3809048> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75276122> .
+  # oo Jane Beaw, 1674~ - 1744-06-20, daughter of William Beaw and Frances Bowsie
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75266718> , <https://www.wikidata.org/wiki/Q75266765> .
+<https://www.wikidata.org/wiki/Q26451764>
+  # Hon. Richard Arundell, of Allerton Mauleverer, 1696~ - 1759-01-20
+  gen:father <https://www.wikidata.org/wiki/Q3809048> ;
+  gen:mother <https://www.wikidata.org/wiki/Q45773352> .
+  # oo Lady Frances Manners, b. 1710~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q26451764> , <https://www.wikidata.org/wiki/Q75256336> ;
 	gen:startDate "1732-09-02" .
 
-# ----
+<https://www.wikidata.org/wiki/Q29675085>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75266779> ;
+  # John Arundell, 4th Baron Arundell of Trerice, 1701-11-21 - 1768-08-10~
+  gen:father <https://www.wikidata.org/wiki/Q75266718> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75266765> .
+  # oo Elizabeth Wentworth, 1697~ - 1750-03-21
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q29675085> , <https://www.wikidata.org/wiki/Q75266780> ;
+	gen:startDate "1722-06-02" .
+
+# ====
 <https://www.wikidata.org/wiki/Q6249138>
   # John Monckton, 1st Viscount Galway, 1695 - 1751-07-15
   # 1st Viscount Galway, co. Galway, 1st Baron of Killard, co. Clare 1727-07-17
-  gen:father <https://www.wikidata.org/wiki/Q7347746> .
-  # and Theodosia Fountaine
+  gen:father <https://www.wikidata.org/wiki/Q7347746> ; # Robert Monckton
+  gen:mother <https://www.wikidata.org/wiki/Q75940755> . # Theodosia Fountaine
   # oo Lady Elizabeth Manners, 1709~ - 1730-03-22
   []
     gen:spouse <https://www.wikidata.org/wiki/Q6249138> , <https://www.wikidata.org/wiki/Q15665890> ;
@@ -1876,6 +1916,16 @@
     gen:spouse <https://www.wikidata.org/wiki/Q6249138> , <https://www.wikidata.org/wiki/Q75272031> ;
 	gen:startDate "1734-11" .
 
+<https://www.wikidata.org/wiki/Q23822685>
+  # William Monckton-Arundell, 2nd Viscount Galway, 1725 - 1772-11-18
+  # William Monckton
+  # William Monckton-Arundell 1769
+  gen:father <https://www.wikidata.org/wiki/Q6249138> ;
+  gen:mother <https://www.wikidata.org/wiki/Q15665890> .
+  # oo Elizabeth Villa-Real, 1728 - 1792-01-02, daughter of Joseph Isaac Villa-Real and Catherine Rachel da Costa
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q23822685> , <https://www.wikidata.org/wiki/Q27959715> ;
+	gen:startDate "1747-08-12" .
 <https://www.wikidata.org/wiki/Q75261163>
   # Hon. John Monckton, 1739-08-02 - 1830-01-03
   gen:father <https://www.wikidata.org/wiki/Q6249138> ;
@@ -1887,9 +1937,9 @@
   # Hon. Edward Monckton, 1744-11-03 - 1832-07-21
   gen:father <https://www.wikidata.org/wiki/Q6249138> ;
   gen:mother <https://www.wikidata.org/wiki/Q75272031> .
-  # oo Sophia Pigot, 1763~ - 1834-01-01
+  # oo Sophia Pigot, 1763~ - 1834-01-01 (fitzroy.ttl)
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q5344483> , <#Sophia_Pigot> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q5344483> , <https://www.wikidata.org/wiki/Q75280131> ;
 	gen:startDate "1776-03-14" .
 <https://www.wikidata.org/wiki/Q6779104>
   # Hon. Mary Monckton, 1748-05-21 - 1840-05-30
@@ -1897,6 +1947,18 @@
   gen:mother <https://www.wikidata.org/wiki/Q75272031> .
   # oo 1786-06-17 Edmund Boyle, 7th Earl of Cork, 1742-11-21 - 1796-05-30, https://www.wikidata.org/wiki/Q2849925
 
+<https://www.wikidata.org/wiki/Q7347745>
+  # Robert Monckton-Arundell, 4th Viscount Galway, 1758-07-04 - 1810-07-23
+  gen:father <https://www.wikidata.org/wiki/Q23822685> ;
+  gen:mother <https://www.wikidata.org/wiki/Q27959715> .
+  # oo Elizabeth Mathew, 1759 - 1801-11-19, daughter of Daniel Mathew, of Felix Hall and Mary Bryam
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7347745> , <https://www.wikidata.org/wiki/Q75281081> ;
+	gen:startDate "1779-03-01" .
+  # oo Mary Bridget Milnes, 1750~ - 1835-11-15
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7347745> , <https://www.wikidata.org/wiki/Q75281083> ;
+	gen:startDate "1803-05-24" .
 <https://www.wikidata.org/wiki/Q75708415>
   # Mary Anne Monckton, d. 1833-11-20
   gen:father <https://www.wikidata.org/wiki/Q75261163> ;
@@ -1907,79 +1969,179 @@
   gen:father <https://www.wikidata.org/wiki/Q75261163> ;
   gen:mother <https://www.wikidata.org/wiki/Q75261164> .
   # oo 1791-07-04 Philip Sherard, 5th Earl of Harborough, 1767-10-10 - 1807-12-10, https://www.wikidata.org/wiki/Q66364727 (noel.ttl)
-<#Henry_Monckton>
+<https://www.wikidata.org/wiki/Q75280127>
   # Henry Monckton, 1780-12-11 - 1854-06-29
   gen:father <https://www.wikidata.org/wiki/Q5344483> ;
-  gen:mother <#Sophia_Pigot> .
-  # oo Anne Smythe, d. 1878-04-10, daughter of John Groome Smythe
+  gen:mother <https://www.wikidata.org/wiki/Q75280131> .
+  # oo Anne Smythe, 1824~ - 1878-04-10, daughter of John Groome Smythe
   []
-    gen:spouse <#Henry_Monckton> , <#Anne_Smythe> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75280127> , <https://www.wikidata.org/wiki/Q75280128> ;
 	gen:startDate "1839-12-23" .
-<#Philip_Monckton>
+<https://www.wikidata.org/wiki/Q75280339>
   # Philip Monckton, 1787-03-03 - 1820-01-06
   gen:father <https://www.wikidata.org/wiki/Q5344483> ;
-  gen:mother <#Sophia_Pigot> .
+  gen:mother <https://www.wikidata.org/wiki/Q75280131> .
   # oo Henrietta Carter, daughter of Michael Carter
   []
-    gen:spouse <#Philip_Monckton> , <#Henrietta_Carter> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75280339> , <https://www.wikidata.org/wiki/Q75280340> ;
 	gen:startDate "1811" .
 <https://www.wikidata.org/wiki/Q75280343>
   # William Monckton, 1796-04-19 - 1874-01-23
   gen:father <https://www.wikidata.org/wiki/Q5344483> ;
-  gen:mother <#Sophia_Pigot> .
+  gen:mother <https://www.wikidata.org/wiki/Q75280131> .
   # oo Ellen Richards, 1810~ - 1883-07-14, daughter of Goddard Richards
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q75280343> , <#Ellen_Richards> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75280343> , <https://www.wikidata.org/wiki/Q75280344> ;
 	gen:startDate "1825-03-29" .
 
-<#Arthur_Monckton>
-  # Arthur Monckton, 1845-07-20 - 1917-05-02
-  gen:father <#Henry_Monckton> ;
-  gen:mother <#Anne_Smythe> .
-  # oo Lady Gertrude Pleydell-Bouverie, 1858-04-19 - 1940-01-11
+<https://www.wikidata.org/wiki/Q75594267>
+  # Hon. Henrietta Maria Monckton-Arundell, 1780 - 1847-05-01
+  gen:father <https://www.wikidata.org/wiki/Q7347745> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75281081> .
+  # oo 1808-08-22 Robert Pemberton Milnes, 1784-05-20 - 1858-11, https://www.wikidata.org/wiki/Q7348817
+<https://www.wikidata.org/wiki/Q27959704>
+  # William George Monckton, 5th Viscount Galway, 1782-03-28 - 1834-02-02
+  gen:father <https://www.wikidata.org/wiki/Q7347745> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75281081> .
+  # oo Catherine Elizabeth Handfield, 1783-09-08 - 1862-04-07, daughter of Captain George Handfield and Elizabeth Smyth
   []
-    gen:spouse <#Arthur_Monckton> , <bouverie.ttl#Lady_Gertrude_Pleydell-Bouverie> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q27959704> , <https://www.wikidata.org/wiki/Q75941456> ;
+	gen:startDate "1804-06-04" .
+<https://www.wikidata.org/wiki/Q75280125>
+  # Arthur Monckton, 1845-07-20 - 1917-05-02
+  gen:father <https://www.wikidata.org/wiki/Q75280127> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75280128> .
+  # oo Lady Gertrude Pleydell-Bouverie, 1858-04-19 - 1940-01-11 (bouverie.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75280125> , <https://www.wikidata.org/wiki/Q75280118> ;
 	gen:startDate "1896-08-28" .
-<#Edward_Henry_Cradock_Monckton>
+<https://www.wikidata.org/wiki/Q75291582>
   # Edward Henry Cradock Monckton, 1812-09-12 - 1878-07-14
-  gen:father <#Philip_Monckton> ;
-  gen:mother <#Henrietta_Carter> .
+  gen:father <https://www.wikidata.org/wiki/Q75280339> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75280340> .
   # oo Maria Catherine Tydd, d. 1896-10-07, daughter of H. W. Tydd
   []
-    gen:spouse <#Edward_Henry_Cradock_Monckton> , <#Maria_Catherine_Tydd> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75291582> , <https://www.wikidata.org/wiki/Q75291590> ;
 	gen:startDate "1839-10-07" .
 <https://www.wikidata.org/wiki/Q75941426>
   # Anna Maria Monckton, d. 1927-12-13
   gen:father <https://www.wikidata.org/wiki/Q75280343> ;
-  gen:mother <#Ellen_Richards> .
+  gen:mother <https://www.wikidata.org/wiki/Q75280344> .
   # oo 1874-03-17 Rev. Henry Arthur Annesley, 1841-07-22 - 1924-09-01, https://www.wikidata.org/wiki/Q75941427
 
-<#Edward_Philip_Monckton>
+<https://www.wikidata.org/wiki/Q5542558>
+  # George Edward Arundell Monckton-Arundell, 6th Viscount Galway, 1805-03-01 - 1876-02-06
+  gen:father <https://www.wikidata.org/wiki/Q27959704> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75941456> .
+  # oo Henrietta Maria Eliza Milnes, 1811 - 1891-09-10
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5542558> , <https://www.wikidata.org/wiki/Q75594270> ;
+	gen:startDate "1838-04-25" .
+<https://www.wikidata.org/wiki/Q26387054>
   # Edward Philip Monckton, 1840-07-18 - 1916-04-17
-  gen:father <#Edward_Henry_Cradock_Monckton> ;
-  gen:mother <#Maria_Catherine_Tydd> .
+  gen:father <https://www.wikidata.org/wiki/Q75291582> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75291590> .
   # oo Christabel Francis, d. 1899-05-23, daughter of Rev. C. D. Francis
   []
-    gen:spouse <#Edward_Philip_Monckton> , <#Christabel_Francis> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q26387054> , <https://www.wikidata.org/wiki/Q75291580> ;
 	gen:startDate "1866-09-25" .
 
-<#Frances_Leonora_Monckton>
+<https://www.wikidata.org/wiki/Q5542557>
+  # George Edward Milnes Monckton-Arundell, 7th Viscount Galway, 1844-11-18 - 1931-03-07
+  gen:father <https://www.wikidata.org/wiki/Q5542558> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75594270> .
+  # oo Vere Gosling, 1859 - 1921-01-03, daughter of Ellis Gosling and Emma Susan Duncombe
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5542557> , <https://www.wikidata.org/wiki/Q75603575> ;
+	gen:startDate "1879-07-24" .
+<https://www.wikidata.org/wiki/Q75291578>
   # Frances Leonora Monckton, 1882-03-16 - 1956-11-16
-  gen:father <#Edward_Philip_Monckton> ;
-  gen:mother <#Christabel_Francis> .
+  gen:father <https://www.wikidata.org/wiki/Q26387054> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75291580> .
   # oo 1908-07-15 Walter John Marsham, 1869-10-24 - 1945-03-08, https://www.wikidata.org/wiki/Q15995765
-# ----
-#<https://www.wikidata.org/wiki/Q5543413> # see fitzroy.ttl
-  # George Pigot, 1st Baron Pigot of Patshull, 1719-03-04 - 1777-05-11
-  # 1st Baronet Pigot, of Patshull, Staffordshire 1764-12-05
-  # 1st Baron Pigot of Patshull, co. Dublin 1766-01-18
-  # son of Richard Pigot
-  # and Frances Goode
 
-<#Sophia_Pigot>
-  # Sophia Pigot, 1763~ - 1834-01-01
-  gen:father <https://www.wikidata.org/wiki/Q5543413> . # illegitimate
-  # oo 1776-03-14 Hon. Edward Monckton, 1744-11-03 - 1832-07-21, https://www.wikidata.org/wiki/Q5344483
+<https://www.wikidata.org/wiki/Q5542564>
+  # George Vere Arundell Monckton-Arundell, 8th Viscount Galway, 1882-03-24 - 1943-03-27
+  gen:father <https://www.wikidata.org/wiki/Q5542557> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75603575> .
+  # oo Hon. Lucia Emily Margaret White, b. 1890-12-03
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5542564> , <https://www.wikidata.org/wiki/Q75310282> ;
+	gen:startDate "1922-06-24" .
+
+<https://www.wikidata.org/wiki/Q75310284>
+  # Hon. Mary Victoria Monckton-Arundell, 1924-01-05 - 2010
+  gen:father <https://www.wikidata.org/wiki/Q5542564> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75310282> .
+  # oo 1947-08-29 (div 1972) David Henry Fetherstonhaugh, d. 1994, https://www.wikidata.org/wiki/Q75310288
+
+# ----
+<https://www.wikidata.org/wiki/Q75594225>
+  # Robert Milnes, 1726~ - 1771-04~
+  gen:father <https://www.wikidata.org/wiki/Q75594220> ; # Richard Milnes
+  gen:mother <https://www.wikidata.org/wiki/Q75594222> . # Bridget Pemberton
+  # oo Joice Slater, 1730~ - 1764~, daughter of Adam Slater
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75594225> , <https://www.wikidata.org/wiki/Q56692381> ;
+	gen:startDate "1757-02-17" .
+<https://www.wikidata.org/wiki/Q18530574>
+  # Pemberton Milnes, b. 1729-09-27
+  gen:father <https://www.wikidata.org/wiki/Q75594220> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75594222> .
+  # oo Jane Slater
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q18530574> , <https://www.wikidata.org/wiki/Q96078629> .
+
+<https://www.wikidata.org/wiki/Q24205998>
+  # Richard Slater Milnes, 1759-12-12 - 1804-06-02
+  gen:father <https://www.wikidata.org/wiki/Q75594225> ;
+  gen:mother <https://www.wikidata.org/wiki/Q56692381> .
+  # oo Rachael Busk, 1760-01-31 - 1835-06-27, daughter of Hans Busk and Martha Rodes
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q24205998> , <https://www.wikidata.org/wiki/Q75594233> ;
+	gen:startDate "1781-05-30" .
+<https://www.wikidata.org/wiki/Q75281083>
+  # Mary Bridget Milnes, 1750~ - 1835-11-15
+  gen:father <https://www.wikidata.org/wiki/Q18530574> ;
+  gen:mother <https://www.wikidata.org/wiki/Q96078629> .
+  # oo 1775-12-28 Peter Auriol Hay-Drummond, 1754-01-21 - 1799-03-21, https://www.wikidata.org/wiki/Q75281086 (hay.ttl)
+  # oo 1803-05-24 Robert Monckton-Arundell, 4th Viscount Galway, 1758-07-04 - 1810-07-23, https://www.wikidata.org/wiki/Q7347745
+
+<https://www.wikidata.org/wiki/Q7348817>
+  # Robert Pemberton Milnes, 1784-05-20 - 1858-11
+  gen:father <https://www.wikidata.org/wiki/Q24205998> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75594233> .
+  # oo Hon. Henrietta Maria Monckton-Arundell, 1780 - 1847-05-01
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7348817> , <https://www.wikidata.org/wiki/Q75594267> ;
+	gen:startDate "1808-08-22" .
+
+<https://www.wikidata.org/wiki/Q75594270>
+  # Henrietta Maria Eliza Milnes, 1811 - 1891-09-10
+  gen:father <https://www.wikidata.org/wiki/Q7348817> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75594267> .
+  # oo 1838-04-25 George Edward Arundell Monckton-Arundell, 6th Viscount Galway, 1805-03-01 - 1876-02-06, https://www.wikidata.org/wiki/Q5542558
+
+# ----
+#<https://www.wikidata.org/wiki/Q75310288>
+  # David Henry Fetherstonhaugh, d. 1994
+  # son of Timothy Fetherstonhaugh
+  # oo Hon. Mary Victoria Monckton-Arundell, 1924-01-05 - 2010
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75310288> , <https://www.wikidata.org/wiki/Q75310284> ;
+	gen:startDate "1947-08-29" ;
+	gen:divorceDate "1972" .
+
+<https://www.wikidata.org/wiki/Q75310292>
+  # Hugh Simon Fetherstonhaugh, b. 1949-01-25
+  gen:father <https://www.wikidata.org/wiki/Q75310288> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75310284> .
+  # oo Louise Philipps, 1946-04-29 - 2013-11-04 (hastings.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75310292> , <https://www.wikidata.org/wiki/Q75941459> ;
+	gen:startDate "1971-03-27".
+
+# ====
 
 # ----
 #<https://www.wikidata.org/wiki/Q17285400>
