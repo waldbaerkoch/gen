@@ -2,6 +2,7 @@
 @prefix gen: <http://jjkoch.de/gen#> .
 @prefix wdata: <https://www.wikidata.org/wiki/> .
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 #<https://www.wikidata.org/wiki/Q745977>
   # John Russell, 1st Earl of Bedford, 1485 - 1555-03-14
@@ -1015,10 +1016,19 @@
   # oo 1834-04-02 Lord Charles James Fox Russell, 1807-02-10 - 1894-06-29, https://www.wikidata.org/wiki/Q6679056
 
 # ----
-<https://www.wikidata.org/wiki/Q16062807>
-  # Charles Romilly, 1808 - 1887-08-29
+<https://www.wikidata.org/wiki/Q6255541>
+  # John Romilly, 1st Baron Romilly, 1802-01-10 - 1874-12-23
+  # 1st Baron Romilly 1866-01-03
   gen:father <https://www.wikidata.org/wiki/Q3471216> ; # Samuel Romilly
   gen:mother <https://www.wikidata.org/wiki/Q63221613> . # Anne Garbett
+  # oo Caroline Charlotte Otter, 1809 - 1856-12-30, daughter of Rt. Rev. William Otter and Nancy Sadleir Bruère
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6255541> , <https://www.wikidata.org/wiki/Q75263640> ;
+	gen:startDate "1833-10-22" .
+<https://www.wikidata.org/wiki/Q16062807>
+  # Charles Romilly, 1808 - 1887-08-29
+  gen:father <https://www.wikidata.org/wiki/Q3471216> ;
+  gen:mother <https://www.wikidata.org/wiki/Q63221613> .
   # oo Lady Georgiana Elizabeth Russell, 1810-06-23 - 1867-03-22
   []
     gen:spouse <https://www.wikidata.org/wiki/Q16062807> , <https://www.wikidata.org/wiki/Q63221901> ;
@@ -1032,6 +1042,18 @@
     gen:spouse <https://www.wikidata.org/wiki/Q5498658> , <https://www.wikidata.org/wiki/Q75263651> ;
 	gen:startDate "1848-11-28" .
 
+<https://www.wikidata.org/wiki/Q63221414>
+  # William Romilly, 2nd Baron Romilly, 1835-04-12 - 1891-05-23
+  gen:father <https://www.wikidata.org/wiki/Q6255541> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75263640> .
+  # oo Emily Idonea Sophia Le Marchant, 1842~ - 1866-03-17, daughter of General Sir John Gaspard Le Marchant
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q63221414> , <https://www.wikidata.org/wiki/Q75263630> ;
+	gen:startDate "1865-02-09" .
+  # oo Helen Jemima Denison, 1845 - 1889-03-21, daughter of Edward Hanson Denison
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q63221414> , <https://www.wikidata.org/wiki/Q75263633> ;
+	gen:startDate "1872-11-06" .
 <https://www.wikidata.org/wiki/Q63224865>
   # Samuel Henry Romilly, of Huntington Park, 1849 - 1940-03-14
   gen:father <https://www.wikidata.org/wiki/Q5498658> ;
@@ -1045,6 +1067,31 @@
   gen:father <https://www.wikidata.org/wiki/Q5498658> ;
   gen:mother <https://www.wikidata.org/wiki/Q75263651> .
   # oo 1880-02-17 Sir Horace Alfred Damer Seymour, 1843-04-09 - 1902-06-25, https://www.wikidata.org/wiki/Q75310187
+
+<https://www.wikidata.org/wiki/Q63221537>
+  owl:sameAs <https://www.wikidata.org/wiki/Q96083933> ;
+  # John Gaspard le Marchant Romilly, 3rd Baron Romilly, 1866-03-01 - 1905-06-23
+  gen:father <https://www.wikidata.org/wiki/Q63221414> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75263630> .
+  # oo Violet Edith Grey-Egerton, 1870-03-01 - 1906-03-01 (egerton.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q63221537> , <https://www.wikidata.org/wiki/Q75263627> ;
+	gen:startDate "1897-08-03" .
+
+<https://www.wikidata.org/wiki/Q22019320>
+  owl:sameAs <https://www.wikidata.org/wiki/Q96083868> ;
+  # William Gaspard Guy Romilly, 4th Baron Romilly, 1899-03-08 - 1983-06-29
+  gen:father <https://www.wikidata.org/wiki/Q63221537> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75263627> .
+  # oo Hon. Diana Joan Sackville-West, 1906-10-19 - 1975-06-23 (west.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q22019320> , <https://www.wikidata.org/wiki/Q63223657> ;
+	gen:startDate "1929-12-03" ;
+	gen:divorceDate "1944" .
+  # oo Marion Elizabeth Jessie Clover, d. 1997-09-07 (sutton.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q22019320> , <https://www.wikidata.org/wiki/Q75257086> ;
+	gen:startDate "1966-07-18" .
 
 # ----
 <https://www.wikidata.org/wiki/Q1292927>
