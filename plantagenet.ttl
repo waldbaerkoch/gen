@@ -5,10 +5,32 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 #@prefix wen: <https://en.wikipedia.org/wiki/> .
 
-#<https://www.wikidata.org/wiki/Q312904>
+<https://www.wikidata.org/wiki/Q1310403>
+  # Geoffroy II Ferréol, comte de Gâtinais, 1000~ - 1046-04-01
+  gen:father <https://www.wikidata.org/wiki/Q3142767> ; # Hugues du Perche
+  gen:mother <https://www.wikidata.org/wiki/Q2929506> . # Béatrice de Mâcon
+  # oo Ermengarde d’Anjou, 1018 - 1076-03-18
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1310403> , <https://www.wikidata.org/wiki/Q263343> ;
+	gen:startDate "1035~" .
+
+<https://www.wikidata.org/wiki/Q48115>
+  # Foulques IV le Réchin, comte d’Anjou, 1043 - 1109-04-14
+  gen:father <https://www.wikidata.org/wiki/Q1310403> ;
+  gen:mother <https://www.wikidata.org/wiki/Q263343> .
+  # oo Bertrade de Montfort, 1070~ - 1117-02-14
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q48115> , <https://www.wikidata.org/wiki/Q242601> ;
+	gen:startDate "1089~" .
+
+<https://www.wikidata.org/wiki/Q312904>
   # Fulk, King of Jerusalem
-#  gen:birthDate "1089/92" ;
-#  gen:deathDate "1143-11-13" .
+  gen:birthDate "1089/92" ;
+  gen:deathDate "1143-11-13" ;
+  # comte d’Anjou (V) et de Tours 1109
+  # König von Jerusalem 1131
+  gen:father <https://www.wikidata.org/wiki/Q48115> ;
+  gen:mother <https://www.wikidata.org/wiki/Q242601> .
   # oo Erembourg, comtesse du Maine, 1096 - 1126
   []
     gen:spouse <https://www.wikidata.org/wiki/Q312904> , <https://www.wikidata.org/wiki/Q2506063> ;
@@ -18,12 +40,17 @@
     gen:spouse <https://www.wikidata.org/wiki/Q312904> , <https://www.wikidata.org/wiki/Q232151> ;
 	gen:startDate "1129" .
 
+<https://www.wikidata.org/wiki/Q466230>
+  # Sibylle d’Anjou, 1112 - 1165
+  gen:father <https://www.wikidata.org/wiki/Q312904> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2506063> .
+  # oo 1134 Thierry de Lorraine, comte de Flandre, 1100 - 1168-01-17, https://www.wikidata.org/wiki/Q224958 (capet.ttl)
 <https://www.wikidata.org/wiki/Q111490> # -> Plantagenet
-  # Geoffroy V Plantagenet, comte d'Anjou, 1113-08-24 - 1151-09-07
+  # Geoffroy V Plantagenet, comte d’Anjou, 1113-08-24 - 1151-09-07
   gen:father <https://www.wikidata.org/wiki/Q312904> ;
   gen:mother <https://www.wikidata.org/wiki/Q2506063> .
 <https://www.wikidata.org/wiki/Q311808>
-  # Almaric I, King of Jerusalem, 1136 - 1174-11
+  # Amaury Ier, roi de Jérusalem, 1136 - 1174-11
   gen:father <https://www.wikidata.org/wiki/Q312904> ;
   gen:mother <https://www.wikidata.org/wiki/Q232151> .
   # oo Agnes de Courtenay, Lady of Toron, b. 1133~
@@ -31,14 +58,25 @@
     gen:spouse <https://www.wikidata.org/wiki/Q311808> , <https://www.wikidata.org/wiki/Q241228> ;
 	gen:startDate "1157" ;
 	gen:divorceDate "1162" .
+  # oo Maria Komnene, 1154 - 1208
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q311808> , <https://www.wikidata.org/wiki/Q255737> ;
+	gen:startDate "1167-08-29" .
+
+<https://www.wikidata.org/wiki/Q235629>
+  # Isabelle Ire, reine de Jérusalem, 1172 - 1205-04-05
+  gen:father <https://www.wikidata.org/wiki/Q311808> ;
+  gen:mother <https://www.wikidata.org/wiki/Q255737> .
+  # oo 1192-05-05 Henri II, comte de Champagne, 1166-07-29 - 1197-09-10, https://www.wikidata.org/wiki/Q354422 (capet.ttl)
+  # oo 1198-10 Amaury II de Lusignan, roi de Chypre, 1172 - 1205-04-01, https://www.wikidata.org/wiki/Q453325 (capet.ttl)
 
 
 
 # Plantagenet
 <https://www.wikidata.org/wiki/Q111490>
-  # Geoffroy V Plantagenet, comte d'Anjou
+  # Geoffroy V Plantagenet, comte d’Anjou
   # comte du Maine 1126
-  # comte d'Anjou 1129
+  # comte d’Anjou 1129
   # comte de Mortain 1141-1144
   # duc de Normandy 1144-1150
 #  gen:birthDate "1113-08-24" ;
@@ -53,20 +91,20 @@
 <https://www.wikidata.org/wiki/Q102140>
   # Henry II Curtmantle, King of England
   # duc de Normandy 1150
-  # comte d'Anjou 1151-09-07
+  # comte d’Anjou 1151-09-07
   # comte du Maine 1151-09-07-1156, 1158 - 1169
-  # duc d'Aquitaine 1152-05-18
+  # duc d’Aquitaine 1152-05-18
   # King of England 1154-12-19
 #  gen:birthDate "1133-03-05" ;
 #  gen:deathDate "1189-07-06" ;
   gen:father <https://www.wikidata.org/wiki/Q111490> ;
   gen:mother <https://www.wikidata.org/wiki/Q150872> .
-  # oo Aliénor, duchesse d'Aquitaine, 1122 – 1204-04-01
+  # oo Aliénor, duchesse d’Aquitaine, 1122 – 1204-04-01 (barcelona.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q102140> , <https://www.wikidata.org/wiki/Q178525> ;
 	gen:startDate "1152-05-18" .
 <https://www.wikidata.org/wiki/Q556911>
-  # Geoffroy VI d'Anjou, comte de Nantes
+  # Geoffroy VI d’Anjou, comte de Nantes
   # conte de Nantes 1156
 #  gen:birthDate "1134-06-01" ;
 #  gen:deathDate "1158-07-27" ;
@@ -106,7 +144,7 @@
 #  gen:deathDate "1183-06-11" ;
   gen:father <https://www.wikidata.org/wiki/Q102140> ;
   gen:mother <https://www.wikidata.org/wiki/Q178525> .
-  # oo Marguerite de France, 1158 - 1197-09-18
+  # oo Marguerite de France, 1158 - 1197-09-18 (capet.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q235238> , <https://www.wikidata.org/wiki/Q231723> ;
 	gen:startDate "1160-11-02" .
@@ -121,13 +159,13 @@
   # Richard I the Lionheart, King of England
   # comte de Poitiers 1169 - 1196, 1198
   # comte du Maine 1183-06-11
-  # King of England, duc de Normandie, comte d'Anjou 1189-07-06
-  # duc d'Aquitaine 1189-07-06 - 1196, 1199
+  # King of England, duc de Normandie, comte d’Anjou 1189-07-06
+  # duc d’Aquitaine 1189-07-06 - 1196, 1199
 #  gen:birthDate "1157-09-08" ;
 #  gen:deathDate "1199-04-06" ;
   gen:father <https://www.wikidata.org/wiki/Q102140> ;
   gen:mother <https://www.wikidata.org/wiki/Q178525> .
-  # oo Berenguela de Navarra, 1165 - 1230-12-23
+  # oo Berenguela de Navarra, 1165 - 1230-12-23 (ivrea.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q42305> , <https://www.wikidata.org/wiki/Q229807> ;
 	gen:startDate "1191-05-12" .
@@ -138,7 +176,7 @@
 #  gen:deathDate "1186-08-19" ;
   gen:father <https://www.wikidata.org/wiki/Q102140> ;
   gen:mother <https://www.wikidata.org/wiki/Q178525> .
-  # oo Constance, duchesse de Bretagne, 1161-06-12 - 1201-09-05
+  # oo Constance de Penthièvre, duchesse de Bretagne, 1161-06-12 - 1201-09-05 (capet.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q314550> , <https://www.wikidata.org/wiki/Q234317> ;
 	gen:startDate "1181-07" .
@@ -148,7 +186,7 @@
 #  gen:deathDate "1214-10-31" ;
   gen:father <https://www.wikidata.org/wiki/Q102140> ;
   gen:mother <https://www.wikidata.org/wiki/Q178525> .
-  # oo 1170-09 Alfonso VIII, Rey de Castilla, 1155-11-11 - 1214-10-05, https://www.wikidata.org/wiki/Q295268
+  # oo 1170-09 Alfonso VIII, Rey de Castilla, 1155-11-11 - 1214-10-05, https://www.wikidata.org/wiki/Q295268 (ivrea.ttl)
 <https://www.wikidata.org/wiki/Q235418>
   # Joan of England
 #  gen:birthDate "1165-10" ;
@@ -156,9 +194,9 @@
   gen:father <https://www.wikidata.org/wiki/Q102140> ;
   gen:mother <https://www.wikidata.org/wiki/Q178525> .
   # oo 1177-02-13 Guglielmo II il Buono, Re di Sicilia, 1153 - 1189-11-18, https://www.wikidata.org/wiki/Q367387
-  # oo 1196-10 Raymond VI, comte de Toulouse, 1156-10-27 - 1222-08-02, https://www.wikidata.org/wiki/Q356564
+  # oo 1196-10 Raymond VI, comte de Toulouse, 1156-10-27 - 1222-08-02, https://www.wikidata.org/wiki/Q356564 (capet.ttl)
 <https://www.wikidata.org/wiki/Q129308>
-  # John I 'Lackland', King of England
+  # John I 'Lackland’, King of England
 #  gen:birthDate "1166-12-24" ;
 #  gen:deathDate "1216-10-19" ;
   gen:father <https://www.wikidata.org/wiki/Q102140> ;
@@ -168,7 +206,7 @@
     gen:spouse <https://www.wikidata.org/wiki/Q129308> , <https://www.wikidata.org/wiki/Q242636> ;
 	gen:startDate "1189-08-29" ;
 	gen:annulledDate "1199" .
-  # oo Isabelle d'Angoulême, 1186/1188 – 1246-06-04
+  # oo Isabelle d’Angoulême, 1186/1188 – 1246-06-04 (capet.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q129308> , <https://www.wikidata.org/wiki/Q231788> ;
 	gen:startDate "1200-08-24" .
@@ -203,7 +241,7 @@
 <https://www.wikidata.org/wiki/Q363800>
   # Arthur Ier, duc de Bretagne
   # duc de Bretagne, 4th Earl of Richmond 1196
-  # comte d'Anjou 1199-04-18
+  # comte d’Anjou 1199-04-18
 #  gen:birthDate "1187-03-29" ;
 #  gen:deathDate "1203-04-03" ;
   gen:father <https://www.wikidata.org/wiki/Q314550> ;
@@ -235,7 +273,7 @@
 #  gen:deathDate "1272-11-16" ;
   gen:father <https://www.wikidata.org/wiki/Q129308> ;
   gen:mother <https://www.wikidata.org/wiki/Q231788> .
-  # oo Éléonore de Provence, c. 1223 – 1291-06-24/25
+  # oo Éléonore de Provence, c. 1223 – 1291-06-24/25 (barcelona.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q160311> , <https://www.wikidata.org/wiki/Q228885> ;
 	gen:startDate "1236-01-14" .
@@ -250,7 +288,7 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q314527> , <https://www.wikidata.org/wiki/Q449884> ;
 	gen:startDate "1231-03-30" .
-  # oo Sancie de Provence, 1228 - 1261-11-09
+  # oo Sancie de Provence, 1228 - 1261-11-09 (barcelona.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q314527> , <https://www.wikidata.org/wiki/Q267295> ;
 	gen:startDate "1243-11-22" .
@@ -264,14 +302,14 @@
 #  gen:deathDate "1238-03-04" ;
   gen:father <https://www.wikidata.org/wiki/Q129308> ;
   gen:mother <https://www.wikidata.org/wiki/Q231788> .
-  # oo 1221-06-21 Alexander II of Scotland, 1198-08-24 – 1249-07-06, https://www.wikidata.org/wiki/Q237889 (beauchamp.ttl)
+  # oo 1221-06-21 Alexander II of Scotland, 1198-08-24 – 1249-07-06, https://www.wikidata.org/wiki/Q237889 (capet.ttl)
 <https://www.wikidata.org/wiki/Q237858>
   # Isabella of England
 #  gen:birthDate "1214" ;
 #  gen:deathDate "1241-12-01" ;
   gen:father <https://www.wikidata.org/wiki/Q129308> ;
   gen:mother <https://www.wikidata.org/wiki/Q231788> .
-  # oo 1235-07-20 Friedrich II., König von Sizilien, Römisch-deutscher König und Kaiser, 1194-12-26 - 1250-12-13, https://www.wikidata.org/wiki/Q130221
+  # oo 1235-07-20 Friedrich II., König von Sizilien, Römisch-deutscher König und Kaiser, 1194-12-26 - 1250-12-13, https://www.wikidata.org/wiki/Q130221 (ivrea.ttl)
 <https://www.wikidata.org/wiki/Q271382>
   # Eleanor of England
 #  gen:birthDate "1215" ;
@@ -287,11 +325,11 @@
 #  gen:deathDate "1307-07-07" ;
   gen:father <https://www.wikidata.org/wiki/Q160311> ;
   gen:mother <https://www.wikidata.org/wiki/Q228885> .
-  # oo Leonor de Castilla, 1241 - 1290-11-28
+  # oo Leonor de Castilla, 1241 - 1290-11-28 (ivrea.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q57798> , <https://www.wikidata.org/wiki/Q59604> ;
 	gen:startDate "1254-11-01" .
-  # oo Marguerite de France, 1282 - 1318-02-14
+  # oo Marguerite de France, 1282 - 1318-02-14 (capet.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q57798> , <https://www.wikidata.org/wiki/Q235480> ;
 	gen:startDate "1299-09-08" .
@@ -301,14 +339,14 @@
 #  gen:deathDate "1275-02-26" ;
   gen:father <https://www.wikidata.org/wiki/Q160311> ;
   gen:mother <https://www.wikidata.org/wiki/Q228885> .
-  # oo 1251-12-26 Alexander III, King of Scotland, 1241-09-04/-11 - 1286-03-19/-25, https://www.wikidata.org/wiki/Q211109 (beauchamp.ttl)
+  # oo 1251-12-26 Alexander III, King of Scotland, 1241-09-04/-11 - 1286-03-19/-25, https://www.wikidata.org/wiki/Q211109 (capet.ttl)
 <https://www.wikidata.org/wiki/Q242344>
   # Beatrice of England
 #  gen:birthDate "1242-06-24" ;
 #  gen:deathDate "1275-03-24" ;
   gen:father <https://www.wikidata.org/wiki/Q160311> ;
   gen:mother <https://www.wikidata.org/wiki/Q228885> .
-  # oo 1260-10-13 Jean II, duc de Bretagne, 1239-01-03 - 1305-11-16/-18, https://www.wikidata.org/wiki/Q453989
+  # oo 1260-10-13 Jean II, duc de Bretagne, 1239-01-03 - 1305-11-16/-18, https://www.wikidata.org/wiki/Q453989 (capet.ttl)
 <https://www.wikidata.org/wiki/Q447802>
   # Edmund Crouchback, 1st Earl of Lancaster
   # 1st Earl of Leicester 1265-10-26
@@ -321,7 +359,7 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q447802> , <https://www.wikidata.org/wiki/Q4827995> ;
 	gen:startDate "1269-04-08" .
-  # oo Blanche d'Artois, 1248 - 1302-05-02
+  # oo Blanche d’Artois, 1248 - 1302-05-02 (capet.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q447802> , <https://www.wikidata.org/wiki/Q242769> ;
 	gen:startDate "1276-02-03" .
@@ -364,7 +402,7 @@
 #  gen:deathDate "1297-10-12" ;
   gen:father <https://www.wikidata.org/wiki/Q57798> ;
   gen:mother <https://www.wikidata.org/wiki/Q59604> .
-  # oo 1293-09-20 Henri III, comte de Bar, 1259 - 1302-09, https://www.wikidata.org/wiki/Q558233
+  # oo 1293-09-20 Henri III, comte de Bar, 1259 - 1302-09, https://www.wikidata.org/wiki/Q558233 (capet.ttl)
 <https://www.wikidata.org/wiki/Q257968>
   # Joan of Acre
 #  gen:birthDate "1272" ;
@@ -386,7 +424,7 @@
 #  gen:deathDate "1333" ;
   gen:father <https://www.wikidata.org/wiki/Q57798> ;
   gen:mother <https://www.wikidata.org/wiki/Q59604> .
-  # oo 1290-07-08/-09 Johannn II, Herzog von Brabant und Limburg, 1275-09-27 - 1312-10-27, https://www.wikidata.org/wiki/Q703470, son of https://www.wikidata.org/wiki/Q545424 and https://www.wikidata.org/wiki/Q921825
+  # oo 1290-07-08/-09 Jan II, hertog van Brabant en Limburg, 1275-09-27 - 1312-10-27, https://www.wikidata.org/wiki/Q703470 (capet.ttl)
 <https://www.wikidata.org/wiki/Q4216185>
   # Mary of Woodstock
 #  gen:birthDate "1278-03-11" ;
@@ -407,7 +445,7 @@
 #  gen:deathDate "1327-09-21" ;
   gen:father <https://www.wikidata.org/wiki/Q57798> ;
   gen:mother <https://www.wikidata.org/wiki/Q59604> .
-  # oo Isabelle de France, 1295~ - 1358-08-23
+  # oo Isabelle de France, 1295~ - 1358-08-23 (capet.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5236> , <https://www.wikidata.org/wiki/Q228642> ;
 	gen:startDate "1308-01-25" .
@@ -484,7 +522,7 @@
 #  gen:deathDate "1377-06-21" ;
   gen:father <https://www.wikidata.org/wiki/Q5236> ;
   gen:mother <https://www.wikidata.org/wiki/Q228642> .
-  # oo Philippa de Hainaut, 1314-06-24 - 1369-08-15
+  # oo Philippa de Hainaut, 1314-06-24 - 1369-08-15 (capet.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q129247> , <https://www.wikidata.org/wiki/Q229279> ;
 	gen:startDate "1328-01-24/-25" .
@@ -579,7 +617,7 @@
   gen:father <https://www.wikidata.org/wiki/Q950456> ;
   gen:mother <https://www.wikidata.org/wiki/Q3852373> .
   # oo 1327-05-01a William Donn de Burgh, 3rd Earl of Ulster, 1312-09-13/17 - 1333-06-13, https://www.wikidata.org/wiki/Q3568561 (burke.ttl)
-  # oo 1343-08-08b Sir Ralph de Ufford, d. 1346-04-09, son of Sir Robert d'Ufford, Lord Ufford and Cecily de Valoignes
+  # oo 1343-08-08b Sir Ralph de Ufford, d. 1346-04-09, son of Sir Robert d’Ufford, Lord Ufford and Cecily de Valoignes
 <https://www.wikidata.org/wiki/Q225604>
   # Henry of Grosmont, 1st Duke of Lancaster
   # Earl of Derby 1337-03-16
@@ -675,7 +713,7 @@
 #  gen:deathDate "1361-09-13" ;
   gen:father <https://www.wikidata.org/wiki/Q129247> ;
   gen:mother <https://www.wikidata.org/wiki/Q229279> .
-  # oo J1355 Jean IV, duc de Bretagne, 1339 - 1399-11-01, https://www.wikidata.org/wiki/Q449008
+  # oo 1355 Jean de Montfort (IV, duc de Bretagne), 1339 - 1399-11-01, https://www.wikidata.org/wiki/Q449008 (capet.ttl)
 <https://www.wikidata.org/wiki/Q1796668>
   # Margaret of England
 #  gen:birthDate "1346-07-20" ;
@@ -738,7 +776,7 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q81000> , <https://www.wikidata.org/wiki/Q170202> ;
 	gen:startDate "1382-01-14" .
-  # oo Isabelle de France, 1389-11-09 - 1409-09-13
+  # oo Isabelle de France, 1389-11-09 - 1409-09-13 (capet.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q81000> , <https://www.wikidata.org/wiki/Q229901> ;
 	gen:startDate "1396-10-31" .
@@ -784,7 +822,7 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q193752> , <https://www.wikidata.org/wiki/Q238334> ;
 	gen:startDate "1359-05-13" .
-  # oo Constanza de Castilla, Reina de Castilla, 1354 - 1394-03-24
+  # oo Constanza de Castilla, Reina de Castilla, 1354 - 1394-03-24 (ivrea.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q193752> , <https://www.wikidata.org/wiki/Q237018> ;
 	gen:startDate "1371-09-21" .
@@ -800,7 +838,7 @@
 #  gen:deathDate "1415-07-19" ;
   gen:father <https://www.wikidata.org/wiki/Q193752> ;
   gen:mother <https://www.wikidata.org/wiki/Q238334> .
-  # oo 1387-02-11 João I de Aviz, Rei de Portugal, 1358-04-11 - 1433-08-14, https://www.wikidata.org/wiki/Q201575
+  # oo 1387-02-11 João I de Aviz, Rei de Portugal, 1358-04-11 - 1433-08-14, https://www.wikidata.org/wiki/Q201575 (capet.ttl)
 <https://www.wikidata.org/wiki/Q456462>
   # Elizabeth of Lancaster
 #  gen:birthDate "1363-02-21b" ;
@@ -822,7 +860,7 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q161866> , <https://www.wikidata.org/wiki/Q236287> ;
 	gen:startDate "1380-07-27" .
-  # oo Jeanne d'Evreux, Princesse de Navarre, 1368~ - 1437-07-09
+  # oo Jeanne d’Evreux, Princesse de Navarre, 1368~ - 1437-07-09 (capet.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q161866> , <https://www.wikidata.org/wiki/Q231476> ;
 	gen:startDate "1403-02-07" .
@@ -832,7 +870,7 @@
 #  gen:deathDate "1418-06-02" ;
   gen:father <https://www.wikidata.org/wiki/Q193752> ;
   gen:mother <https://www.wikidata.org/wiki/Q237018> .
-  # oo 1388-09 Enrique III, Rey de Castilla y León, 1379-08-04/-10-04 - 1406-12-25, https://www.wikidata.org/wiki/Q312104
+  # oo 1388-09 Enrique III, Rey de Castilla y León, 1379-08-04/-10-04 - 1406-12-25, https://www.wikidata.org/wiki/Q312104 (ivrea.ttl)
 
 <https://www.wikidata.org/wiki/Q131581>
   # Henry V, King of England
@@ -843,7 +881,7 @@
 #  gen:deathDate "1422-08-31" ;
   gen:father <https://www.wikidata.org/wiki/Q161866> ;
   gen:mother <https://www.wikidata.org/wiki/Q236287> .
-  # oo Catherine de Valois, 1401-12-27 – 1437-01-03
+  # oo Catherine de Valois, 1401-10-27 – 1437-01-03 (capet.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q131581> , <https://www.wikidata.org/wiki/Q229192> ;
 	gen:startDate "1420-06-02" .
@@ -866,7 +904,7 @@
 #  gen:deathDate "1435-09-14" ;
   gen:father <https://www.wikidata.org/wiki/Q161866> ;
   gen:mother <https://www.wikidata.org/wiki/Q236287> .
-  # oo Anne de Bourgogne, 1404-09-30 – 1432-11-14
+  # oo Anne de Bourgogne, 1404-09-30 – 1432-11-14 (capet.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q348441> , <https://www.wikidata.org/wiki/Q536307> ;
 	gen:startDate "1423-05-13" .
@@ -910,7 +948,7 @@
 #  gen:deathDate "1471-05-21" ;
   gen:father <https://www.wikidata.org/wiki/Q131581> ;
   gen:mother <https://www.wikidata.org/wiki/Q229192> .
-  # oo Marguerite d'Anjou, 1430-03-23 – 1482-08-25
+  # oo Marguerite d’Anjou, 1430-03-23 – 1482-08-25 (capet.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q160337> , <https://www.wikidata.org/wiki/Q231145> ;
 	gen:startDate "1445-04-22" .
@@ -944,7 +982,7 @@
 #  gen:deathDate "1402-08-01" ;
   gen:father <https://www.wikidata.org/wiki/Q129247> ;
   gen:mother <https://www.wikidata.org/wiki/Q229279> .
-  # oo Isabella de Castilla, 1355 - 1392-12-23
+  # oo Isabella de Castilla, 1355 - 1392-12-23 (ivrea.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q305002> , <https://www.wikidata.org/wiki/Q434485> ;
 	gen:startDate "1372-03-01~" .
@@ -962,7 +1000,7 @@
 #  gen:deathDate "1415-10-25" ;
   gen:father <https://www.wikidata.org/wiki/Q305002> ;
   gen:mother <https://www.wikidata.org/wiki/Q434485> .
-  # oo Beatriz de Bourgogne, Princeza de Portugal, 1373-02 - 1420~
+  # oo Beatriz de Bourgogne, Princeza de Portugal, 1373-02 - 1420~ (capet.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q452639> , <https://www.wikidata.org/wiki/Q233745> ;
 	gen:startDate "1381-07" ;
@@ -1070,7 +1108,7 @@
 #  gen:deathDate "1503-11-23" ;
   gen:father <https://www.wikidata.org/wiki/Q312137> ;
   gen:mother <https://www.wikidata.org/wiki/Q238004> .
-  # oo 1468-07-03 Charles le Téméraire, duc de Bourgogne, 1433-11-10 - 1477-01-05, https://www.wikidata.org/wiki/Q151120
+  # oo 1468-07-03 Charles le Téméraire, duc de Bourgogne, 1433-11-10 - 1477-01-05, https://www.wikidata.org/wiki/Q151120 (capet.ttl)
 <https://www.wikidata.org/wiki/Q356173>
   # George Plantagenet, 1st Duke of Clarence
   # 1st Duke of Clarence 1461-06-28
@@ -1102,7 +1140,7 @@
 #  gen:deathDate "1503-02-11" ;
   gen:father <https://www.wikidata.org/wiki/Q160341> ;
   gen:mother <https://www.wikidata.org/wiki/Q229214> .
-  # oo 1486-01-18 Henry VII., King of England, 1457-01-28 - 1509-04-21, https://www.wikidata.org/wiki/Q675493 (beaufort.ttl)
+  # oo 1486-01-18 Henry VII., King of England, 1457-01-28 - 1509-04-21, https://www.wikidata.org/wiki/Q675493 (capet.ttl)
 <https://www.wikidata.org/wiki/Q755721>
   # Mary of York
 #  gen:birthDate "1467-08-11" ;
@@ -1345,9 +1383,9 @@
 #  gen:deathDate "1240-05-27" ;
   gen:father <https://www.wikidata.org/wiki/Q524181> ;
   gen:mother <https://www.wikidata.org/wiki/Q516503> .
-  # oo Matilda d'Aubigny
+  # oo Matilda d’Aubigny
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q1344508> , <fitzalan.ttl#Matilda_d'Aubigny> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q1344508> , <fitzalan.ttl#Matilda_d’Aubigny> ;
 	gen:startDate "1207b" .
   # oo Maud Marshal, 1192 - 1248-03-27
   []
@@ -1357,12 +1395,12 @@
   # Clemence (aka Adela) de Warenne
   gen:father <https://www.wikidata.org/wiki/Q524181> ;
   gen:mother <https://www.wikidata.org/wiki/Q516503> .
-<#Matilda_de_Warenne>
+<https://www.wikidata.org/wiki/Q75386757>
   # Matilda de Warenne, 1163 - 1212a/1228b
   gen:father <https://www.wikidata.org/wiki/Q524181> ;
   gen:mother <https://www.wikidata.org/wiki/Q516503> .
   # oo Henry II, Count of Eu and Lord of Hastings, d. 1191, https://www.wikidata.org/wiki/Q2515665
-  # oo Henry d'Estouteville, Seigneur de Valmont, d. 1231a, #Henry_d'Estouteville
+  # oo Henry d’Estouteville, Seigneur de Valmont, d. 1231a, #Henry_d’Estouteville
 
 <https://www.wikidata.org/wiki/Q976367>
   # John de Warenne, 6th Earl of Surrey
@@ -1370,7 +1408,7 @@
 #  gen:deathDate "1304-09-29" ;
   gen:father <https://www.wikidata.org/wiki/Q1344508> ;
   gen:mother <https://www.wikidata.org/wiki/Q1237240> .
-  # oo Alice de Lusignan, 1224 - 1256-02-09
+  # oo Alice de Lusignan, 1224 - 1256-02-09 (capet.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q976367> , <https://www.wikidata.org/wiki/Q4726170> ;
 	gen:startDate "1247-08~" .
@@ -1412,7 +1450,7 @@
 #  gen:deathDate "1347-06" ;
   gen:father <https://www.wikidata.org/wiki/Q16863340> ;
   gen:mother <de_vere.ttl#Joan_de_Vere> .
-  # oo Jeanne de Bar, 1297 - 1361
+  # oo Jeanne de Bar, 1297 - 1361 (capet.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q6265668> , <https://www.wikidata.org/wiki/Q6205625> ;
 	gen:startDate "1306-05-25" .
@@ -1425,6 +1463,67 @@
   # oo 1305 Edmund FitzAlan, 2nd/9th Earl of Arundel, 1285-05-01 - 1326-11-17, https://www.wikidata.org/wiki/Q2004845
 
 
+# ----
+<https://www.wikidata.org/wiki/Q472561>
+  # Foulques II, comte d’Anjou, 920 - 960-11-11
+  gen:father <https://www.wikidata.org/wiki/Q526100> ; # Fulk I, Count of Anjou
+  gen:mother <https://www.wikidata.org/wiki/Q3442311> . # Roscille de Loches
+  # oo Gerberga
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q472561> , <https://www.wikidata.org/wiki/Q54087509> .
+
+<https://www.wikidata.org/wiki/Q712580>
+  # Geoffroy Ier d’Anjou, comte d’Anjou et de Chalon-sur-Saone, 938~/940 - 987-07-21
+  gen:father <https://www.wikidata.org/wiki/Q472561> ;
+  gen:mother <https://www.wikidata.org/wiki/Q54087509> .
+  # oo Adèle de Meaux, 934 - 982
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q712580> , <https://www.wikidata.org/wiki/Q2038405> .
+<https://www.wikidata.org/wiki/Q261934>
+  # Adélaïde-Blanche d’Anjou, 945~ - 1026
+  gen:father <https://www.wikidata.org/wiki/Q472561> ;
+  gen:mother <https://www.wikidata.org/wiki/Q54087509> .
+  # oo Guillaume Ier, comte de Provence, 950~ - 993-08-29a, https://www.wikidata.org/wiki/Q465555
+
+<https://www.wikidata.org/wiki/Q454017>
+  # Foulques III d’Anjou, comte d’Anjou, 970 - 1040-06-21
+  gen:father <https://www.wikidata.org/wiki/Q712580> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2038405> .
+  # oo Hildegard of Sundgau, d. 1046-04-01
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q454017> , <https://www.wikidata.org/wiki/Q7152634> ;
+	gen:startDate "1000" .
+
+<https://www.wikidata.org/wiki/Q263343>
+  # Ermengarde d’Anjou, 1018 - 1076-03-18
+  gen:father <https://www.wikidata.org/wiki/Q454017> ;
+  gen:mother <https://www.wikidata.org/wiki/Q7152634> .
+  # oo 1035~ Geoffroy II Ferréol, comte de Gâtinais, 1000~ - 1046-04-01, https://www.wikidata.org/wiki/Q1310403 (plantagenet.ttl)
+# ----
+<https://www.wikidata.org/wiki/Q2038405>
+  # Adèle de Meaux, 934 - 982
+  gen:father <https://www.wikidata.org/wiki/Q772443> ; # Robert of Vermandois
+  gen:mother <https://www.wikidata.org/wiki/Q6701449> . # Adelaide of Chalon
+  # oo Geoffroy Ier d’Anjou, comte d’Anjou et de Chalon-sur-Saone, 938~/940 - 987-07-21, https://www.wikidata.org/wiki/Q712580
+# ----
+<https://www.wikidata.org/wiki/Q465555>
+  # Guillaume Ier, comte de Provence, 950~ - 993-08-29a
+  gen:father <https://www.wikidata.org/wiki/Q782238> ; # Boso II of Arles
+  gen:mother <https://www.wikidata.org/wiki/Q2994830> . # Constança de Viena
+  # oo Adélaïde-Blanche d’Anjou, 945~ - 1026
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q465555> , <https://www.wikidata.org/wiki/Q261934> .
+
+<https://www.wikidata.org/wiki/Q231068>
+  # Constance d’Arles, 974-03-27 - 1032-07-25
+  gen:father <https://www.wikidata.org/wiki/Q465555> ;
+  gen:mother <https://www.wikidata.org/wiki/Q261934> .
+  # oo 1003 Robert II, roi de France, 972-03-27 - 1031-07-20, https://www.wikidata.org/wiki/Q178918 (capet.ttl)
+# ----
+<https://www.wikidata.org/wiki/Q7152634>
+  # Hildegard of Sundgau, d. 1046-04-01
+  gen:father <https://www.wikidata.org/wiki/Q576692> . # Theodoric I, Duke of Upper Lorraine
+  # oo 1000 Foulques III d’Anjou, comte d’Anjou, 970 - 1040-06-21, https://www.wikidata.org/wiki/Q454017
 
 # ----
 <https://www.wikidata.org/wiki/Q2506063>
@@ -1432,14 +1531,22 @@
   # comtesse du Maine 1110
   gen:father <https://www.wikidata.org/wiki/Q1329089> ;
   gen:mother <https://www.wikidata.org/wiki/Q56285210> .
-  # oo 1110~ Fulk d'Anjou, King of Jerusalem, 1089/92 - 1143-11-13, https://www.wikidata.org/wiki/Q312904
+  # oo 1110~ Fulk d’Anjou, King of Jerusalem, 1089/92 - 1143-11-13, https://www.wikidata.org/wiki/Q312904
 
 # ----
 <https://www.wikidata.org/wiki/Q232151>
-  # Melisende, Queen of Jerusalem, 1105-01-01 - 1161-09-11
-  gen:father <https://www.wikidata.org/wiki/Q51718> ;
-  gen:mother <https://www.wikidata.org/wiki/Q53116> .
-  # oo 1129 Fulk d'Anjou, King of Jerusalem, 1089/92 - 1143-11-13, https://www.wikidata.org/wiki/Q312904
+  # Mélisende, reine de Jérusalem, 1105-01-01 - 1161-09-11
+  gen:father <https://www.wikidata.org/wiki/Q51718> ; # Baldwin II of Jerusalem
+  gen:mother <https://www.wikidata.org/wiki/Q53116> . # Morphia of Melitene
+  # oo 1129 Fulk d’Anjou, King of Jerusalem, 1089/92 - 1143-11-13, https://www.wikidata.org/wiki/Q312904
+
+# ----
+<https://www.wikidata.org/wiki/Q255737>
+  # Maria Komnene, 1154 - 1208
+  gen:father <https://www.wikidata.org/wiki/Q6229938> ; # John Doukas Komnenos
+  gen:mother <https://www.wikidata.org/wiki/Q61704768> . # Maria Taronitissa
+  # oo 1167-08-29 Amaury Ier, roi de Jérusalem, 1136 - 1174-11, https://www.wikidata.org/wiki/Q311808
+  # oo 1177 Balian d’Ibelin, 1143 - 1193, https://www.wikidata.org/wiki/Q374385 (capet.ttl)
 
 # ----
 #<https://www.wikidata.org/wiki/Q37594>
@@ -1461,7 +1568,7 @@
   gen:father <https://www.wikidata.org/wiki/Q101384> ;
   gen:mother <https://www.wikidata.org/wiki/Q232761> .
   # oo 1114-01-07 Heinrich V., 1086-08-11~ - 1125-05-23, https://www.wikidata.org/wiki/Q151707
-  # oo 1128-06-17 Geoffroy V Plantagenet, comte d'Anjou, 1113-08-24 - 1151-09-07, https://www.wikidata.org/wiki/Q111490
+  # oo 1128-06-17 Geoffroy V Plantagenet, comte d’Anjou, 1113-08-24 - 1151-09-07, https://www.wikidata.org/wiki/Q111490
 <https://www.wikidata.org/wiki/Q57610871>
   # Constance FitzRoy, d. 1173a
   gen:father <https://www.wikidata.org/wiki/Q101384> .
@@ -1492,171 +1599,13 @@
   # oo Malcolm III, King of Scotland, 1031-03-26 – 1093-11-13, https://www.wikidata.org/wiki/Q68508
 # ----
 <https://www.wikidata.org/wiki/Q151707>
-  # Heinrich V., 1086-08-11~ - 1125-05-23
+  # Heinrich V., Kaiser des Heiligen Römischen Reiches, 1086-08-11~ - 1125-05-23
   gen:father <https://www.wikidata.org/wiki/Q60094> ;
   gen:mother <https://www.wikidata.org/wiki/Q237709> .
   # oo Matilda of England, 1102-02-07~ – 1167-09-10
   []
     gen:spouse <https://www.wikidata.org/wiki/Q151707> , <https://www.wikidata.org/wiki/Q150872> ;
 	gen:startDate "1114-01-07" .
-
-# ----
-#<https://www.wikidata.org/wiki/Q453121>
-  # Guillaume X, duc d'Aquitaine, 1099 – 1137-04-09
-  # comte de Poitou
-  # duc d'Aquitaine 1126
-  # oo Aenor de Châtellerault, 1103~ - 1130-03
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q453121> , <https://www.wikidata.org/wiki/Q507801> .
-
-<https://www.wikidata.org/wiki/Q178525>
-  # Aliénor, duchesse d'Aquitaine, 1122 – 1204-04-01
-  # duchesse d'Aquitaine, comtesse de Bordeaux, d'Agen, d'Auvergne, de Saintone, de Limousin, d'Angoumais 1137-04-09
-  gen:father <https://www.wikidata.org/wiki/Q453121> ;
-  gen:mother <https://www.wikidata.org/wiki/Q507801> .
-  # oo 1137-07-25 (div 1152) Louis VII, roi des Francs, 1120 – 1180-09-18, https://www.wikidata.org/wiki/Q134259
-  # oo 1152-05-18 Henry II, King of England, 1133-03-05 - 1189-07-06, https://www.wikidata.org/wiki/Q102140
-
-# ----
-<https://www.wikidata.org/wiki/Q507801>
-  # Aenor de Châtellerault, 1103~ - 1130-03
-  gen:father <https://www.wikidata.org/wiki/Q3437872> ;
-  gen:mother <https://www.wikidata.org/wiki/Q5216054> .
-  # oo Guillaume X, duc d'Aquitaine, 1099 – 1137-04-09, https://www.wikidata.org/wiki/Q453121
-
-# ----
-<https://www.wikidata.org/wiki/Q134259>
-  # Louis VII, roi des Francs, 1120 – 1180-09-18
-  gen:father <https://www.wikidata.org/wiki/Q165883> ;
-  gen:mother <https://www.wikidata.org/wiki/Q230561> .
-  # oo Aliénor, duchesse d'Aquitaine, 1122 – 1204-04-01
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q134259> , <https://www.wikidata.org/wiki/Q178525> ;
-	gen:startDate "1137-07-25" ;
-	gen:divorceDate "1152" .
-  # oo Constanza de Castilla, 1136/1140 - 1160-10-04
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q134259> , <https://www.wikidata.org/wiki/Q231769> ;
-	gen:startDate "1154" .
-<https://www.wikidata.org/wiki/Q377480>
-  # Robert Ier, comte de Dreux, 1123 - 1188-10-11
-  gen:father <https://www.wikidata.org/wiki/Q165883> ;
-  gen:mother <https://www.wikidata.org/wiki/Q230561> .
-  # oo Agnès de Baudement, 1130 - 1204-07-24
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q377480> , <https://www.wikidata.org/wiki/Q2827019> ;
-	gen:startDate "1152" .
-<https://www.wikidata.org/wiki/Q531495>
-  # Pierre I Capet, Prince de France, 1126~ – 1183-04-10
-  gen:father <https://www.wikidata.org/wiki/Q165883> ;
-  gen:mother <https://www.wikidata.org/wiki/Q230561> .
-  # oo Elizabeth de Courtenay, 1127 - 1205-09
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q531495> , <https://www.wikidata.org/wiki/Q3587931> ;
-	gen:startDate "1150~" .
-  # -> https://www.wikidata.org/wiki/Q354672
-  # -> https://www.wikidata.org/wiki/Q527404
-  # -> https://www.wikidata.org/wiki/Q645953
-<https://www.wikidata.org/wiki/Q1186147>
-  # Constance de France, 1128 - 1180-08-16
-  gen:father <https://www.wikidata.org/wiki/Q165883> ;
-  gen:mother <https://www.wikidata.org/wiki/Q230561> .
-  # oo 1140-02 Eustache IV, comte de Boulogne, 1129~ - 1153-08-17, https://www.wikidata.org/wiki/Q447522
-  # oo 1154~ Raymond V, comte de Toulouse, 1134 - 1194-12, https://www.wikidata.org/wiki/Q478057
-
-<https://www.wikidata.org/wiki/Q231723>
-  # Marguerite de France, 1158 - 1197-09-18
-  gen:father <https://www.wikidata.org/wiki/Q134259> ;
-  gen:mother <https://www.wikidata.org/wiki/Q231769> .
-  # oo 1160-11-02 Henry the Young, King of England, 1155-02-28 - 1183-06-11, https://www.wikidata.org/wiki/Q235238
-  # oo 1186 Béla III., König von Ungarn, 1148~ – 1196-04-23, https://www.wikidata.org/wiki/Q86978
-
-<https://www.wikidata.org/wiki/Q172203>
-  # Philippe III, roi de France
-#  gen:birthDate "1245-04-30" ;
-#  gen:deathDate "1285-10-05" ;
-  gen:father <https://www.wikidata.org/wiki/Q346> ;
-  gen:mother <https://www.wikidata.org/wiki/Q230889> .
-  # oo Marie van Brabant, 1254-05-13 - 1322-01-12
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q172203> , <https://www.wikidata.org/wiki/Q230906> ;
-	gen:startDate "1274-08-21" .
-
-<https://www.wikidata.org/wiki/Q235480>
-  # Marguerite de France
-#  gen:birthDate "1279~/1282" ;
-#  gen:deathDate "1318-02-14" ;
-  gen:father <https://www.wikidata.org/wiki/Q172203> ;
-  gen:mother <https://www.wikidata.org/wiki/Q230906> .
-  # oo 1299-09-08 Edward I Longshanks, King of England, 1239-06-17/18 - 1307-07-07, https://www.wikidata.org/wiki/Q57798
-
-<https://www.wikidata.org/wiki/Q228642>
-  # Isabelle de France
-#  gen:birthDate "1295" ;
-#  gen:deathDate "1358-08-22" ;
-  gen:father <https://www.wikidata.org/wiki/Q130969> ;
-  gen:mother <https://www.wikidata.org/wiki/Q229189> .
-  # oo Edward II, King of England, 1284-04-25 - 1327-09-21, https://www.wikidata.org/wiki/Q5236
-
-<https://www.wikidata.org/wiki/Q229901>
-  # Isabelle de France, 1389-11-09 - 1409-09-13
-  gen:father <https://www.wikidata.org/wiki/Q160349> ;
-  gen:mother <https://www.wikidata.org/wiki/Q154064> .
-  # oo 1396-10-31 Richard II, King of England, 1367-01-06 - 1400-02-14~, https://www.wikidata.org/wiki/Q81000
-
-# ----
-<https://www.wikidata.org/wiki/Q231769>
-  # Constanza de Castilla, 1136/1140 - 1160-10-04
-  gen:father <https://www.wikidata.org/wiki/Q312767> ;
-  gen:mother <https://www.wikidata.org/wiki/Q113021> .
-  # oo 1154 Louis VII, roi des Francs, 1120 – 1180-09-18, https://www.wikidata.org/wiki/Q134259
-
-<https://www.wikidata.org/wiki/Q295268>
-  # Alfonso VIII, Rey de Castilla, 1155-11-11 - 1214-10-05
-  gen:father <https://www.wikidata.org/wiki/Q315076> ;
-  gen:mother <https://www.wikidata.org/wiki/Q220444> .
-  # oo Eleanor of England, 1162-10-13 - 1214-10-31
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q295268> , <https://www.wikidata.org/wiki/Q232144> ;
-	gen:startDate "1170-09" .
-
-<https://www.wikidata.org/wiki/Q59604>
-  # Leonor de Castilla
-#  gen:birthDate "1241" ;
-#  gen:deathDate "1290-11-28" ;
-  gen:father <https://www.wikidata.org/wiki/Q243122> ;
-  gen:mother <https://www.wikidata.org/wiki/Q603883> .
-  # oo 1254-11-01 Edward I Longshanks, King of England, 1239-06-17/18 - 1307-07-07, https://www.wikidata.org/wiki/Q57798
-
-# ----
-<https://www.wikidata.org/wiki/Q447522>
-  # Eustache IV, comte de Boulogne, 1129~ - 1153-08-17
-  gen:father <https://www.wikidata.org/wiki/Q60849> ;
-  gen:mother <https://www.wikidata.org/wiki/Q229592> .
-  # oo Constance de France, 1128 - 1180-08-16
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q447522> , <https://www.wikidata.org/wiki/Q1186147> ;
-	gen:startDate "1140-02" .
-
-# ----
-<https://www.wikidata.org/wiki/Q86978>
-  # Béla III of Hungary, 1148~ – 1196-04-23
-  # König von Ungarn, von Kroatien, Dalmatien und Rama 1172
-  gen:father <https://www.wikidata.org/wiki/Q86940> ;
-  gen:mother <https://www.wikidata.org/wiki/Q238341> .
-  # oo Marguerite de France, 1158 - 1197-09-18
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q86978> , <https://www.wikidata.org/wiki/Q231723> ;
-	gen:startDate "1186" .
-
-# --------
-<https://www.wikidata.org/wiki/Q230906>
-  # Marie van Brabant
-#  gen:birthDate "1254-05-13" ;
-#  gen:deathDate "1322-01-12" ;
-  gen:father <https://www.wikidata.org/wiki/Q703296> ;
-  gen:mother <https://www.wikidata.org/wiki/Q377613> .
-  # oo 1274-08-21 Philippe III, roi de France, 1245-04-30 - 1285-10-05, https://www.wikidata.org/wiki/Q172203
 
 # ----
 <https://www.wikidata.org/wiki/Q105378>
@@ -1669,21 +1618,6 @@
 	gen:startDate "1168-02-01" .
 
 # ----
-<https://www.wikidata.org/wiki/Q229807>
-  # Berenguela de Navarra, 1165 - 1230-12-23
-  gen:father <https://www.wikidata.org/wiki/Q318258> ;
-  gen:mother <https://www.wikidata.org/wiki/Q939696> .
-  # oo 1191-05-12 Richard I the Lionheart, King of England, 1157-09-08 - 1199-04-06, https://www.wikidata.org/wiki/Q42305
-
-# ----
-<https://www.wikidata.org/wiki/Q234317>
-  # Constance, duchesse de Bretagne, 1161-06-12 - 1201-09-05
-  # duchesse de Bretagne 1166
-  gen:father <https://www.wikidata.org/wiki/Q338985> ;
-  gen:mother <https://www.wikidata.org/wiki/Q3182333> .
-  # oo 1181-07 Geoffroy II, duc de Bretagne, 1158-09-23 - 1186-08-19, https://www.wikidata.org/wiki/Q314550
-
-# ----
 <https://www.wikidata.org/wiki/Q367387>
   # Guglielmo II il Buono, Re di Sicilia, 1153 - 1189-11-18
   gen:father <https://www.wikidata.org/wiki/Q367415> ;
@@ -1692,92 +1626,6 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q367387> , <https://www.wikidata.org/wiki/Q235418> ;
 	gen:startDate "1177-02-13" .
-
-# ----
-<https://www.wikidata.org/wiki/Q478057>
-  # Raymond V, comte de Toulouse, 1134 - 1194-12
-  gen:father <https://www.wikidata.org/wiki/Q561182> ;
-  gen:mother <#Faydive_d'Uzès> .
-  # oo Constance de France, 1128 - 1180-08-16
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q478057> , <https://www.wikidata.org/wiki/Q1186147> ;
-	gen:startDate "1154~" .
-
-<https://www.wikidata.org/wiki/Q356564>
-  # Raymond VI, comte de Toulouse, 1156-10-27 - 1222-08-02
-  gen:father <https://www.wikidata.org/wiki/Q478057> ;
-  gen:mother <https://www.wikidata.org/wiki/Q1186147> .
-  # oo Joan of England, 1165-10 - 1199-09-04
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q356564> , <https://www.wikidata.org/wiki/Q235418> ;
-	gen:startDate "1196-10" .
-
-# ----
-<https://www.wikidata.org/wiki/Q277612>
-  # Aymar Taillefer, comte d'Angoulême, 1160 – 1202-06-16
-  gen:father <https://www.wikidata.org/wiki/Q2249854> .
-  # and Margaret de Turenne
-  # oo Alice de Courtenay, 1160 – 1218-02-12, daughter of https://www.wikidata.org/wiki/Q531495 and https://www.wikidata.org/wiki/Q3587931
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q277612> , <https://www.wikidata.org/wiki/Q527404> ;
-	gen:startDate "1180a" .
-
-<https://www.wikidata.org/wiki/Q231788>
-  # Isabelle d'Angoulême, 1186/1188 – 1246-06-04
-  gen:father <https://www.wikidata.org/wiki/Q277612> ;
-  gen:mother <https://www.wikidata.org/wiki/Q527404> .
-  # oo 1200-08-24 John I 'Lackland', King of England, 1166-12-24 - 1216-10-19, https://www.wikidata.org/wiki/Q129308
-  # oo 1220-03~ Hugues X de Lusignan, 1185~ - 1249-01-15/-06-05, https://www.wikidata.org/wiki/Q257036
-# ----
-<https://www.wikidata.org/wiki/Q257036>
-  # Hugues X de Lusignan, 1185~ - 1249-01-15/-06-05
-  # comte de la Marche, seigneur de Lusignan 1219-11-05
-  # comte d'Angoulême 1220-03~
-  gen:father <https://www.wikidata.org/wiki/Q939520> ;
-  gen:mother <https://www.wikidata.org/wiki/Q1908742> .
-  # oo Isabelle d'Angoulême, 1186/1188 – 1246-06-04
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q257036> , <https://www.wikidata.org/wiki/Q231788> ;
-	gen:startDate "1220-03~" .
-
-<https://www.wikidata.org/wiki/Q1385956>
-  # Hugues XI de Lusignan, Comte de la Marche, 1201 - 1250-04-06
-  gen:father <https://www.wikidata.org/wiki/Q257036> ;
-  gen:mother <https://www.wikidata.org/wiki/Q231788> .
-  # oo Yolande de Bretagne, Comtesse de Penthièvre et Porhoët, 1218 - 1272-10-10
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q1385956> , <https://www.wikidata.org/wiki/Q2262964> .
-<https://www.wikidata.org/wiki/Q4726170>
-  # Alice de Lusignan, 1224 - 1256-02-09
-  gen:father <https://www.wikidata.org/wiki/Q257036> ;
-  gen:mother <https://www.wikidata.org/wiki/Q231788> .
-  # oo 1247-08~ John de Warenne, 6th Earl of Surrey, 1231 - 1304-09-29, https://www.wikidata.org/wiki/Q976367
-
-<https://www.wikidata.org/wiki/Q432429>
-  # Hugues XII of Lusignan, Comte de la Marche, c. 1235/1240 – 1270-08-25a
-  gen:father <https://www.wikidata.org/wiki/Q1385956> ;
-  gen:mother <https://www.wikidata.org/wiki/Q2262964> .
-  # oo Jeanne de Fougères, Countess of La Marche and of Angoulême, d. 1273a
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q432429> , <https://www.wikidata.org/wiki/Q6172243> .
-
-<https://www.wikidata.org/wiki/Q10795576>
-  # Jeanne de Lusignan, 1260 – 1323-04-13
-  gen:father <https://www.wikidata.org/wiki/Q432429> ;
-  gen:mother <https://www.wikidata.org/wiki/Q6172243> .
-  # oo 1283-10-11b Sir Piers de Geneville, 1256 - 1292-06b, #Sir_Piers_de_Geneville
-# ----
-<https://www.wikidata.org/wiki/Q2262964>
-  # Yolande de Bretagne, Comtesse de Penthièvre et Porhoët, 1218 - 1272-10-10
-  gen:father <https://www.wikidata.org/wiki/Q465182> ;
-  gen:mother <https://www.wikidata.org/wiki/Q241627> .
-  # oo Hugues XI de Lusignan, Comte de la Marche, 1201 - 1250-04-06, https://www.wikidata.org/wiki/Q1385956
-# ----
-<https://www.wikidata.org/wiki/Q6172243>
-  # Jeanne de Fougères, Countess of La Marche and of Angoulême, d. 1273a
-  gen:father <https://www.wikidata.org/wiki/Q48755659> ;
-  gen:mother <https://www.wikidata.org/wiki/Q6078292> .
-  # oo Hugues XII of Lusignan, Comte de la Marche, c. 1235/1240 – 1270-08-25a, https://www.wikidata.org/wiki/Q432429
 
 # ----
 <https://www.wikidata.org/wiki/Q18576784>
@@ -1801,62 +1649,11 @@
   # oo 1230~ Ralph de Mortimer, 1198b - 1246-08-06b, https://www.wikidata.org/wiki/Q7288322
 
 # ----
-<https://www.wikidata.org/wiki/Q381837>
-  # Raimond Bérenger IV, comte de Provence, 1196a/1200b - 1245-08-26
-  gen:father <https://www.wikidata.org/wiki/Q465451> ;
-  gen:mother <https://www.wikidata.org/wiki/Q2375130> .
-  # oo Beatrice di Savoia, 1196~ - 1267b
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q381837> , <https://www.wikidata.org/wiki/Q254275> ;
-	gen:startDate "1220-12" .
-
-<https://www.wikidata.org/wiki/Q228885>
-  # Éléonore de Provence, 1223~ – 1291-06-24/25
-  gen:father <https://www.wikidata.org/wiki/Q381837> ;
-  gen:mother <https://www.wikidata.org/wiki/Q254275> .
-  # oo 1236-01-14 Henry III, King of England, 1207-10-01 - 1272-11-16, https://www.wikidata.org/wiki/Q160311
-<https://www.wikidata.org/wiki/Q267295>
-  # Sancie de Provence, 1228 - 1261-11-09
-  gen:father <https://www.wikidata.org/wiki/Q381837> ;
-  gen:mother <https://www.wikidata.org/wiki/Q254275> .
-  # oo 1243-11-22 Richard Plantagenet, 1st Earl of Cornwall, 1209-01-05 - 1272-04-02, https://www.wikidata.org/wiki/Q314527
-# ----
-<https://www.wikidata.org/wiki/Q254275>
-  # Beatrice di Savoia, 1196~ - 1267b
-  gen:father <https://www.wikidata.org/wiki/Q548051> ;
-  gen:mother <https://www.wikidata.org/wiki/Q2359709> .
-  # oo 1220-12 Raimond Bérenger IV, comte de Provence, 1196a/1200b - 1245-08-26, https://www.wikidata.org/wiki/Q381837
-
-# ----
 <https://www.wikidata.org/wiki/Q813298>
   # Beatrix von Falkenburg, 1253 - 1277-10-17
   gen:father <https://www.wikidata.org/wiki/Q2405176> ;
   gen:mother <#Bertha_van_Limburg> .
   # oo 1269-06-16 Richard Plantagenet, 1st Earl of Cornwall, 1209-01-05 - 1272-04-02, https://www.wikidata.org/wiki/Q314527
-
-# ----
-<https://www.wikidata.org/wiki/Q130221>
-  # Friedrich II., König von Sizilien, Römisch-deutscher König und Kaiser, 1194-12-26 - 1250-12-13
-  gen:father <https://www.wikidata.org/wiki/Q150953> ;
-  gen:mother <https://www.wikidata.org/wiki/Q170335> .
-  # oo Isabelle II, reine de Jérusalem, 1212-04 - 1228-04-25/-05-08
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q130221> , <https://www.wikidata.org/wiki/Q233809> ;
-	gen:startDate "1225-11-09" .
-  # oo Isabella of England, 1214 - 1241-12-01
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q130221> , <https://www.wikidata.org/wiki/Q237858> ;
-	gen:startDate "1235-07-20" .
-
-# ----
-<https://www.wikidata.org/wiki/Q453989>
-  # Jean II, duc de Bretagne, 1239-01-03 - 1305-11-16/-18
-  gen:father <https://www.wikidata.org/wiki/Q381851> ;
-  gen:mother <https://www.wikidata.org/wiki/Q2269615> .
-  # oo Beatrice of England, 1242-06-24 - 1275-03-24
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q453989> , <https://www.wikidata.org/wiki/Q242344> ;
-	gen:startDate "1260-10-13" .
 
 # ----
 <https://www.wikidata.org/wiki/Q4827995>
@@ -1866,36 +1663,11 @@
   # oo 1269-04-08 Edmund Crouchback, 1st Earl of Lancaster, 1245-01-16 - 1296-06-05, https://www.wikidata.org/wiki/Q447802
 
 # ----
-<https://www.wikidata.org/wiki/Q242769>
-  # Blanche d'Artois
-#  gen:birthDate "1248~" ;
-#  gen:deathDate "1302-05-02" ;
-  gen:father <https://www.wikidata.org/wiki/Q375325> ;
-  gen:mother <https://www.wikidata.org/wiki/Q264017> .
-  # oo 1276-02-03 Edmund Crouchback, 1st Earl of Lancaster, 1245-01-16 - 1296-06-05, https://www.wikidata.org/wiki/Q447802
-
-# ----
 <https://www.wikidata.org/wiki/Q1877403>
   # Constance de Moncade, comtesse de Bigorre, 1245 - 1310-04-26
   gen:father <https://www.wikidata.org/wiki/Q2329686> ;
   gen:mother <https://www.wikidata.org/wiki/Q3298511> .
   # oo 1269-05-15 Henry of Almain, 1235-11-02 - 1271-03-13, https://www.wikidata.org/wiki/Q949207
-
-# ----
-<https://www.wikidata.org/wiki/Q558233>
-  # Henri III, comte de Bar, 1259 - 1302-09
-  gen:father <https://www.wikidata.org/wiki/Q558318> ;
-  gen:mother <https://www.wikidata.org/wiki/Q18619795> .
-  # oo Eleanor of England, 1269-06-18 - 1297-10-12
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q558233> , <https://www.wikidata.org/wiki/Q292321> ;
-	gen:startDate "1293-09-20" .
-
-<https://www.wikidata.org/wiki/Q6205625>
-  # Jeanne de Bar, 1297 - 1361
-  gen:father <https://www.wikidata.org/wiki/Q558233> ;
-  gen:mother <https://www.wikidata.org/wiki/Q292321> .
-  # oo 1306-05-25 John de Warenne, 7th Earl of Surrey, 1286-06-30 - 1347-06, https://www.wikidata.org/wiki/Q6265668
 
 # ----
 #<https://www.wikidata.org/wiki/Q5992313>
@@ -1904,16 +1676,6 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5992313> , <https://www.wikidata.org/wiki/Q257968> ;
 	gen:startDate "1297-01" .
-
-# ----
-<https://www.wikidata.org/wiki/Q703470>
-  # Johannn II, Herzog von Brabant und Limburg, 1275-09-27 - 1312-10-27
-  gen:father <https://www.wikidata.org/wiki/Q545424> ;
-  gen:mother <https://www.wikidata.org/wiki/Q921825> .
-  # oo Margaret of England, 1275-09-11 - 1333
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q703470> , <https://www.wikidata.org/wiki/Q2667593> ;
-	gen:startDate "1290-07-08/-09" .
 
 # ----
 #<https://www.wikidata.org/wiki/Q77249>
@@ -1998,15 +1760,6 @@
   gen:father <https://www.wikidata.org/wiki/Q328747> ;
   gen:mother <https://www.wikidata.org/wiki/Q22678439> .
   # oo John of Lancaster, 1286-05b - 1317/1327, https://www.wikidata.org/wiki/Q53681602
-
-# ----
-<https://www.wikidata.org/wiki/Q229279>
-  # Philippa de Hainaut
-#  gen:birthDate "1314-06-24" ;
-#  gen:deathDate "1369-08-15" ;
-  gen:father <https://www.wikidata.org/wiki/Q617496> ;
-  gen:mother <https://www.wikidata.org/wiki/Q916305> .
-  # oo Edward III, King of England, 1312-11-13 - 1377-06-21, https://www.wikidata.org/wiki/Q129247
 
 # ----
 <https://www.wikidata.org/wiki/Q314383>
@@ -2130,7 +1883,7 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q3172556> , <https://www.wikidata.org/wiki/Q75387312> ;
 	gen:startDate "1427-03-06" .
-  # oo Beatrice de Aviz, 1395b - 1439-10-23
+  # oo Beatrice de Aviz, 1395b - 1439-10-23 (capet.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q3172556> , <https://www.wikidata.org/wiki/Q1766277> ;
 	gen:startDate "1433-01-20" .
@@ -2201,16 +1954,6 @@
   # oo 1368-05-28 Lionel of Antwerp, 1st Duke of Clarence, 1338-11-29 - 1368-10-17, https://www.wikidata.org/wiki/Q313846
 
 # ----
-<https://www.wikidata.org/wiki/Q449008>
-  # Jean IV, duc de Bretagne, 1339 - 1399-11-01
-  gen:father <https://www.wikidata.org/wiki/Q544055> ;
-  gen:mother <https://www.wikidata.org/wiki/Q288219> .
-  # oo Mary Plantagenet, 1344-10-10 - 1361-09-13
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q449008> , <https://www.wikidata.org/wiki/Q2575533> ;
-	gen:startDate "1355" .
-
-# ----
 <https://www.wikidata.org/wiki/Q6500641>
   # Laurence Hastings, 1st Earl of Pembroke, 1319-03-20 - 1348-08-20
   gen:father <https://www.wikidata.org/wiki/Q16841566> .
@@ -2277,7 +2020,7 @@
   # Margarete von Bayern, 1363 - 1423-01
   gen:father <https://www.wikidata.org/wiki/Q77253> ;
   gen:mother <https://www.wikidata.org/wiki/Q1641845> .
-  # oo Jean Ier, duc de Bourgogne, 1371-05-28 – 1419-09-10, https://www.wikidata.org/wiki/Q298901
+  # oo 1385-04-09 Jean Ier, duc de Bourgogne, 1371-05-28 – 1419-09-10, https://www.wikidata.org/wiki/Q298901 (capet.ttl)
 
 <https://www.wikidata.org/wiki/Q63171>
   # Stephan III., Herzog von Bayern-Ingolstadt, 1337 – 1413-09-26
@@ -2291,7 +2034,7 @@
   # Isabella von Bayern, 1370 – 1435-09-24
   gen:father <https://www.wikidata.org/wiki/Q63171> ;
   gen:mother <https://www.wikidata.org/wiki/Q271801> .
-  # oo Charles VI, roi de France, 1368-12-03 – 1422-10-21, https://www.wikidata.org/wiki/Q160349
+  # oo Charles VI, roi de France, 1368-12-03 – 1422-10-21, https://www.wikidata.org/wiki/Q160349 (capet.ttl)
 
 <https://www.wikidata.org/wiki/Q467007>
   # Jakobäa von Bayern, 1401-07-15 - 1436-10-08
@@ -2325,6 +2068,20 @@
   gen:father <https://www.wikidata.org/wiki/Q480192> ;
   gen:mother <https://www.wikidata.org/wiki/Q9142193> .
   # oo Albrecht I., Herzog von Bayern-Straubing, 1336-07-25 – 1404-12-13, https://www.wikidata.org/wiki/Q77253
+# ----
+<https://www.wikidata.org/wiki/Q663073>
+  # Charles II de Lorraine, duc de Lorraine, 1364-09-11 – 1431-01-25
+  gen:father <https://www.wikidata.org/wiki/Q562106> ; # John I, Duke of Lorraine
+  gen:mother <https://www.wikidata.org/wiki/Q22329050> . # Sophie of Württemberg
+  # oo Margarete von der Pfalz, 1376 – 1434-08-26
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q663073> , <https://www.wikidata.org/wiki/Q70936> .
+
+<https://www.wikidata.org/wiki/Q237263>
+  # Isabelle de Lorraine, duchesse de Lorraine, 1400 – 1453-20-28
+  gen:father <https://www.wikidata.org/wiki/Q663073> ;
+  gen:mother <https://www.wikidata.org/wiki/Q70936> .
+  # oo René d’Anjou, roi de Naples, 1400-01-16 – 1480-07-10, https://www.wikidata.org/wiki/Q170353 (capet.ttl)
 
 # ----
 <https://www.wikidata.org/wiki/Q170202>
@@ -2332,56 +2089,6 @@
   gen:father <https://www.wikidata.org/wiki/Q155669> ;
   gen:mother <https://www.wikidata.org/wiki/Q266519> .
   # oo 1382-01-14 Richard II, King of England, 1367-01-06 - 1400-02-14~, https://www.wikidata.org/wiki/Q81000
-
-# ----
-<https://www.wikidata.org/wiki/Q298808>
-  # Alfonso XI, Rey de Castilla y León, 1311-08-13 - 1350-03-27~
-  gen:father <https://www.wikidata.org/wiki/Q316859> ;
-  gen:mother <https://www.wikidata.org/wiki/Q2081231> .
-  # oo Maria de Portugal, 1313 - 1357, daughter of https://www.wikidata.org/wiki/Q272903 and https://www.wikidata.org/wiki/Q236981
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q298808> , <https://www.wikidata.org/wiki/Q235657> ;
-	gen:startDate "1328" .
-
-<https://www.wikidata.org/wiki/Q310963>
-  # Pedro I, Rey de Castilla y León, 1334-08-30 - 1369
-  gen:father <https://www.wikidata.org/wiki/Q298808> ;
-  gen:mother <https://www.wikidata.org/wiki/Q235657> .
-  # oo Maria de Padilla, 1334~ - 1361-07
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q310963> , <https://www.wikidata.org/wiki/Q268050> ;
-	gen:startDate "1352" .
-
-<https://www.wikidata.org/wiki/Q237018>
-  # Constanza de Castilla, Reina de Castilla, 1354 - 1394-03-24
-  gen:father <https://www.wikidata.org/wiki/Q310963> ;
-  gen:mother <https://www.wikidata.org/wiki/Q268050> .
-  # oo 1371-09-21 John of Gaunt, 1st Duke of Lancaster, 1340-03-06 - 1399-02-03, https://www.wikidata.org/wiki/Q193752
-<https://www.wikidata.org/wiki/Q434485>
-  # Isabella de Castilla
-#  gen:birthDate "1355" ;
-#  gen:deathDate "1392-12-23" ;
-  gen:father <https://www.wikidata.org/wiki/Q310963> ;
-  gen:mother <https://www.wikidata.org/wiki/Q268050> .
-  # oo Edmund of Langley, 1st Duke of York, 1341-06-05 - 1402-08-01, https://www.wikidata.org/wiki/Q305002
-
-<https://www.wikidata.org/wiki/Q312104>
-  # Enrique III, Rey de Castilla y León, 1379-08-04/-10-04 - 1406-12-25
-  gen:father <https://www.wikidata.org/wiki/Q310421> ;
-  gen:mother <https://www.wikidata.org/wiki/Q2016585> .
-  # oo Catherine of Lancaster, 1373-03-31 - 1418-06-02
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q312104> , <https://www.wikidata.org/wiki/Q231150> ;
-	gen:startDate "1388-09" .
-
-# ----
-<https://www.wikidata.org/wiki/Q268050>
-  # Maria de Padilla
-  gen:birthDate "1334~" ;
-  gen:deathDate "1361-07" ;
-  gen:father <https://www.wikidata.org/wiki/Q61282919> ;
-  gen:mother <https://www.wikidata.org/wiki/Q44640674> .
-  # oo 1352 Pedro I, Rey de Castilla y León, 1334-08-30 - 1369, https://www.wikidata.org/wiki/Q310963
 
 # ----
 #<https://www.wikidata.org/wiki/Q15327330>
@@ -2397,16 +2104,6 @@
   # oo 1396-01-13 John of Gaunt, 1st Duke of Lancaster, 1340-03-06 - 1399-02-03, https://www.wikidata.org/wiki/Q193752
 
 # ----
-<https://www.wikidata.org/wiki/Q201575>
-  # João I de Aviz, Rei de Portugal, 1358-04-11 - 1433-08-14
-  gen:father <https://www.wikidata.org/wiki/Q295824> ;
-  gen:mother <https://www.wikidata.org/wiki/Q4756354> .
-  # oo Philippa of Lancaster, 1360-03-31 - 1415-07-19
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q201575> , <https://www.wikidata.org/wiki/Q236911> ;
-	gen:startDate "1387-02-11" .
-
-# ----
 #<https://www.wikidata.org/wiki/Q6227170>
   # John Cornwall, 1st Baron Fanhope, 1364 - 1443-12-11
   # 1st Baron Fanhope, co. Hereford 1432-07-17
@@ -2420,51 +2117,7 @@
   # Constance Cornwall, d. 1429
   gen:father <https://www.wikidata.org/wiki/Q6227170> ;
   gen:mother <https://www.wikidata.org/wiki/Q456462> .
-  # oo John d'Arundel, 7th/14th Earl of Arundel, 1408-02-14 - 1435-06-12, https://www.wikidata.org/wiki/Q3809262
-
-# ----
-<https://www.wikidata.org/wiki/Q231476>
-  # Jeanne d'Evreux, Princesse de Navarre, 1368~ - 1437-07-09
-  gen:father <https://www.wikidata.org/wiki/Q43082> ;
-  gen:mother <https://www.wikidata.org/wiki/Q917090> .
-  # oo 1403-02-07 Henry IV, King of England, 1367-04-15 - 1413-03-20, https://www.wikidata.org/wiki/Q161866
-
-# ----
-<https://www.wikidata.org/wiki/Q160349>
-  # Charles VI, roi de France, 1368-12-03 – 1422-10-21
-  gen:father <https://www.wikidata.org/wiki/Q167782> ;
-  gen:mother <https://www.wikidata.org/wiki/Q231794> .
-  # oo Isabella von Bayern, 1370 – 1435-09-24
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q160349> , <https://www.wikidata.org/wiki/Q154064> .
-
-<https://www.wikidata.org/wiki/Q229192>
-  # Catherine de Valois, 1401-12-27 – 1437-01-03
-  gen:father <https://www.wikidata.org/wiki/Q160349> ;
-  gen:mother <https://www.wikidata.org/wiki/Q154064> .
-  # oo 1420-06-02 Henry V, King of England, 1386-08-09 - 1422-08-31, https://www.wikidata.org/wiki/Q131581
-
-# ----
-#<https://www.wikidata.org/wiki/Q298901>
-  # Jean Ier, duc de Bourgogne, 1371-05-28 – 1419-09-10
-  # oo Margarete von Bayern, 1363 - 1423-01
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q298901> , <https://www.wikidata.org/wiki/Q271914> .
-
-<https://www.wikidata.org/wiki/Q536307>
-  # Anne de Bourgogne, 1404-09-30 – 1432-11-14
-  gen:father <https://www.wikidata.org/wiki/Q298901> ;
-  gen:mother <https://www.wikidata.org/wiki/Q271914> .
-  # oo 1423-05-13 John of Lancaster, Duke of Bedford, 1389-06-20 - 1435-09-14, https://www.wikidata.org/wiki/Q348441
-
-<https://www.wikidata.org/wiki/Q151120>
-  # Charles le Téméraire, duc de Bourgogne, 1433-11-10 - 1477-01-05
-  gen:father <https://www.wikidata.org/wiki/Q239337> ;
-  gen:mother <https://www.wikidata.org/wiki/Q466268> .
-  # oo Margaret of York, 1446-05-03 - 1503-11-23
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q151120> , <https://www.wikidata.org/wiki/Q465991> ;
-	gen:startDate "1468-07-03" .
+  # oo John d’Arundel, 7th/14th Earl of Arundel, 1408-02-14 - 1435-06-12, https://www.wikidata.org/wiki/Q3809262
 
 # ----
 <https://www.wikidata.org/wiki/Q474571>
@@ -2588,43 +2241,6 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q161958> , <https://www.wikidata.org/wiki/Q235447> ;
 	gen:startDate "1406-10-26" .
-
-# ----
-<https://www.wikidata.org/wiki/Q170353>
-  # René d'Anjou, roi de Naples, 1400-01-16 – 1480-07-10
-  # duc d'Anjou et de Lorraine, comte de Provence
-  gen:father <https://www.wikidata.org/wiki/Q453529> ;
-  gen:mother <https://www.wikidata.org/wiki/Q235174> .
-  # oo Isabelle de Lorraine, duchesse de Lorraine, 1400 – 1453-20-28
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q170353> , <https://www.wikidata.org/wiki/Q237263> .
-
-<https://www.wikidata.org/wiki/Q231145>
-  # Marguerite d'Anjou, 1430-03-23 – 1482-08-25
-  gen:father <https://www.wikidata.org/wiki/Q170353> ;
-  gen:mother <https://www.wikidata.org/wiki/Q237263> .
-  # oo 1445-04-22 Henry VI, King of England, 1421-12-06 - 1471-05-21, https://www.wikidata.org/wiki/Q160337
-# ----
-<https://www.wikidata.org/wiki/Q663073>
-  # Charles II de Lorraine, duc de Lorraine, 1364-09-11 – 1431-01-25
-  gen:father <https://www.wikidata.org/wiki/Q562106> ;
-  gen:mother <https://www.wikidata.org/wiki/Q22329050> .
-  # oo Margarete von der Pfalz, 1376 – 1434-08-26
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q663073> , <https://www.wikidata.org/wiki/Q70936> .
-
-<https://www.wikidata.org/wiki/Q237263>
-  # Isabelle de Lorraine, duchesse de Lorraine, 1400 – 1453-20-28
-  gen:father <https://www.wikidata.org/wiki/Q663073> ;
-  gen:mother <https://www.wikidata.org/wiki/Q70936> .
-  # oo René d'Anjou, roi de Naples, 1400-01-16 – 1480-07-10, https://www.wikidata.org/wiki/Q170353
-
-# ----
-<https://www.wikidata.org/wiki/Q233745>
-  # Beatriz de Bourgogne, Princeza de Portugal, 1373-02 - 1420~
-  gen:father <https://www.wikidata.org/wiki/Q108442> ;
-  gen:mother <https://www.wikidata.org/wiki/Q237747> .
-  # oo 1381-07 (annulled 1382a) Edward of Norwich, 2nd Duke of York, 1373 - 1415-10-25, https://www.wikidata.org/wiki/Q452639
 
 # ----
 <https://www.wikidata.org/wiki/Q6486877>
@@ -2805,29 +2421,35 @@
 
 # ----
 <https://www.wikidata.org/wiki/Q3175211>
-  # Jean d'Eu, Comte d'Eu, 1130~ - 1170-06-26
+  # Jean d’Eu, Comte d’Eu, 1130~ - 1170-06-26
   gen:father <https://www.wikidata.org/wiki/Q1597711> .
   # and Margaret de Blois, Dame de Sully
-  # oo Alice d'Aubigny, 1141 - 1188-09-11
+  # oo Alice d’Aubigny, 1141 - 1188-09-11
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q3175211> , <fitzalan.ttl#Alice_d'Aubigny> .
+    gen:spouse <https://www.wikidata.org/wiki/Q3175211> , <fitzalan.ttl#Alice_d’Aubigny> .
 
 <https://www.wikidata.org/wiki/Q2515665>
-  # Henry II, Comte d'Eu and Lord of Hastings, d. 1191
+  # Henry II, Comte d’Eu and Lord of Hastings, d. 1191
   gen:father <https://www.wikidata.org/wiki/Q3175211> ;
-  gen:mother <fitzalan.ttl#Alice_d'Aubigny> .
+  gen:mother <fitzalan.ttl#Alice_d’Aubigny> .
   # oo Matilda de Warenne, 1163 - 1212a/1228b
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q2515665> , <#Matilda_de_Warenne> .
+    gen:spouse <https://www.wikidata.org/wiki/Q2515665> , <https://www.wikidata.org/wiki/Q75386757> .
+
+<https://www.wikidata.org/wiki/Q1924925>
+  # Alix, comtesse d’Eu, 1180 - 1245-05-14
+  gen:father <https://www.wikidata.org/wiki/Q2515665> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75386757> .
+  # oo 1191 Raoul Ier de Lusignan, comte d’Eu, 1169 - 1219-05-01, https://www.wikidata.org/wiki/Q435204 (capet.ttl)
 
 # ----
-#<#Henry_d'Estouteville>
-  # Henry d'Estouteville, Seigneur de Valmont, d. 1231a
-  # son of Robert d'Estouteville
+#<#Henry_d’Estouteville>
+  # Henry d’Estouteville, Seigneur de Valmont, d. 1231a
+  # son of Robert d’Estouteville
   # and Leonia of Salisbury
   # oo Matilda de Warenne, 1163 - 1212a/1228b
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q2515665> , <#Matilda_de_Warenne> .
+    gen:spouse <#Henry_d’Estouteville> , <https://www.wikidata.org/wiki/Q75386757> .
 
 # ----
 <https://www.wikidata.org/wiki/Q310065>
