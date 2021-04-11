@@ -4,11 +4,84 @@
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
+<https://www.wikidata.org/wiki/Q201540>
+  # Adolf I., Graf von Berg, 1045~ - 1106-07-31~
+  # Graf von Berg 1101
+  gen:father <https://www.wikidata.org/wiki/Q17049771> . # Adolf II. von Berg
+  # oo Adelheid von Lauffen, b. 1075
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q201540> , <https://www.wikidata.org/wiki/Q354829> ;
+	gen:startDate "1090a" .
+
+<https://www.wikidata.org/wiki/Q4684117>
+  # Adolf II., Graf von Berg, 1100 - 1170-10-12
+  # Graf von Berg 1106 - 1160
+  gen:father <https://www.wikidata.org/wiki/Q201540> ;
+  gen:mother <https://www.wikidata.org/wiki/Q354829> .
+  # oo Irmengarde von Dießen-Schwarzenberg, b. 1100~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4684117> , <https://www.wikidata.org/wiki/Q76185517> ;
+	gen:startDate "1131b" .
+
+<https://www.wikidata.org/wiki/Q75487> # -> Altena
+  # Eberhard I. von Berg, Graf von Altena, 1130~ - 1180-01-23
+  gen:father <https://www.wikidata.org/wiki/Q4684117> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76185517> .
+<https://www.wikidata.org/wiki/Q97072> # -> Berg
+  # Engelbert I., Graf von Berg, d. 1189-07
+  gen:father <https://www.wikidata.org/wiki/Q4684117> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76185517> .
+
+
+# Altena
+<https://www.wikidata.org/wiki/Q75487>
+  # Eberhard I. von Berg, Graf von Altena, 1130~ - 1180-01-23
+  # Graf von Altena 1161
+  gen:father <https://www.wikidata.org/wiki/Q4684117> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76185517> .
+  # oo Adelheid van Cuyk-Arnsberg, 1120 - 1160
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75487> , <https://www.wikidata.org/wiki/Q76051910> .
+
+<https://www.wikidata.org/wiki/Q76081>
+  # Friedrich I. von Berg, Graf von Altena, 1160 - 1199
+  gen:father <https://www.wikidata.org/wiki/Q75487> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76051910> .
+  # oo Alvarade von Krieckenbeck, 1155~ - 1220a, daughter of Reiner, Graf von Krieckenbeck-Millendonk
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76081> , <https://www.wikidata.org/wiki/Q76185864> ;
+	gen:startDate "1185" .
+
 # Mark
+<https://www.wikidata.org/wiki/Q95646>
+  # Adolf I., Graf von der Mark, 1182b - 1249-06-28
+  # Graf von Altena 1199~
+  # Graf von der Mark 1226
+  # Graf von Krieckenbeck 1199~ - 1243-03-03
+  gen:father <https://www.wikidata.org/wiki/Q76081> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76185864> .
+  # oo Irmengarde van Gelre, b. 1185
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q95646> , <https://www.wikidata.org/wiki/Q23861949> ;
+	gen:startDate "1200" .
+
+<https://www.wikidata.org/wiki/Q75896>
+  # Engelbert I., Graf von der Mark, 1225 - 1277-11-16
+  gen:father <https://www.wikidata.org/wiki/Q95646> ;
+  gen:mother <https://www.wikidata.org/wiki/Q23861949> .
+  # oo Kunigunde von Blieskastel, 1220~ - 1265
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75896> , <https://www.wikidata.org/wiki/Q55443425> ;
+	gen:startDate "1251-05-01" .
+  # oo Isabelle Elisabeth von Kleve-Valkenburg, 1250 - 1280
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75896> , <https://www.wikidata.org/wiki/Q76185899> ;
+	gen:startDate "1265" .
+
 <https://www.wikidata.org/wiki/Q54812244>
   # Agnes von der Mark, d. 1258-06-09
-  gen:father <https://www.wikidata.org/wiki/Q75896> ; # Engelbert I, Count of the Mark
-  gen:mother <https://www.wikidata.org/wiki/Q55443425> . # Kunigunde of Blieskastel
+  gen:father <https://www.wikidata.org/wiki/Q75896> ;
+  gen:mother <https://www.wikidata.org/wiki/Q55443425> .
   # oo Heinrich von Berg, Herr von Windeck, 1247 - 1298, https://www.wikidata.org/wiki/Q4529099
 <https://www.wikidata.org/wiki/Q75728>
   # Eberhard I., Graf von der Mark, 1277 - 1308-07-04
@@ -20,8 +93,8 @@
 	gen:startDate "1273-01-29" .
 <https://www.wikidata.org/wiki/Q54829791>
   # Adelheid von der Mark, b. 1275
-  gen:father <https://www.wikidata.org/wiki/Q75896> ; # Engelbert I, Count of the Mark
-  gen:mother <https://www.wikidata.org/wiki/Q76185899> . # Isabelle Elisabeth von Kleve-Valkenburg
+  gen:father <https://www.wikidata.org/wiki/Q75896> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76185899> .
   # oo 1295 Otto, Graf von Kleve, 1278 - 1310-10-29, https://www.wikidata.org/wiki/Q592021
 
 <https://www.wikidata.org/wiki/Q69622>
@@ -343,6 +416,52 @@
   # oo 1558-01-06 Jacques de Clèves, duc de Nevers, 1544-10-01 - 1564, https://www.wikidata.org/wiki/Q3160268
 
 
+# Berg
+<https://www.wikidata.org/wiki/Q97072>
+  # Engelbert I., Graf von Berg, d. 1189-07
+  # Graf von Berg 1161
+  gen:father <https://www.wikidata.org/wiki/Q4684117> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76185517> .
+  # oo Margaretha van Gelre, 1158~ - 1185
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q97072> , <https://www.wikidata.org/wiki/Q2335735> ;
+	gen:startDate "1175b" .
+
+<https://www.wikidata.org/wiki/Q86368>
+  # Adolf III., Graf von Berg, 1175b - 1218-08-07
+  gen:father <https://www.wikidata.org/wiki/Q97072> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2335735> .
+  # oo Bertha von Sayn, b. 1180~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q86368> , <https://www.wikidata.org/wiki/Q76185749> ;
+	gen:startDate "1204b" .
+<https://www.wikidata.org/wiki/Q64802>
+  # Engelbert I. von Berg, Erzbischof von Köln, 1185~ - 1225-11-07
+  # Erzbischof von Köln 1216
+  # Graf von Berg (II.) 1218-08-07
+  gen:father <https://www.wikidata.org/wiki/Q97072> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2335735> .
+
+<https://www.wikidata.org/wiki/Q1673032>
+  # Irmgard von Berg, 1204 - 1240~
+  gen:father <https://www.wikidata.org/wiki/Q86368> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76185749> .
+  # oo 1218 Hendrik IV, hertog van Limburg, 1195 - 1247-02-25, https://www.wikidata.org/wiki/Q202239
+
+
+# ----
+<https://www.wikidata.org/wiki/Q354829>
+  # Adelheid von Lauffen, b. 1075
+  gen:father <https://www.wikidata.org/wiki/Q55552788> . # Heinrich II., Graf von Lauffen
+  # oo 1090a Adolf I., Graf von Berg, 1045~ - 1106-07-31~, https://www.wikidata.org/wiki/Q201540
+
+# ----
+<https://www.wikidata.org/wiki/Q55443425>
+  # Kunigunde von Blieskastel, 1220~ - 1265
+  gen:father <https://www.wikidata.org/wiki/Q44191846> ; # Heinrich, Graf von Blieskastel, d. 1237-12-17a
+  gen:mother <https://www.wikidata.org/wiki/Q96271839> . # Agnes von Sayn
+  # oo 1251-05-01 Engelbert I., Graf von der Mark, 1225 - 1277-11-16, https://www.wikidata.org/wiki/Q75896
+
 # ----
 <https://www.wikidata.org/wiki/Q2359280>
   # Dietrich II von Sponheim Graaf van Loon en Chiny, 1300 - 1361-01
@@ -626,6 +745,12 @@
   gen:father <https://www.wikidata.org/wiki/Q832596> ;
   gen:mother <https://www.wikidata.org/wiki/Q75292069> .
   # oo 1275~ Heinrich I., Landgraf von Hessen, 1244-06-24 - 1308-12-21, https://www.wikidata.org/wiki/Q76968 (reginare.ttl)
+<https://www.wikidata.org/wiki/Q1272477>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75292156> ;
+  # Irmgard von Kleve, d. 1319-04-20
+  gen:father <https://www.wikidata.org/wiki/Q832596> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75292069> .
+  # oo Wilhelm I., Graf von Berg, 1296b - 1308-04-21/-05-11, https://www.wikidata.org/wiki/Q604952
 
 <https://www.wikidata.org/wiki/Q592021>
   # Otto, Graf von Kleve, 1278 - 1310-10-29
@@ -651,6 +776,11 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q76233> , <https://www.wikidata.org/wiki/Q95412> ;
 	gen:startDate "1348" .
+<https://www.wikidata.org/wiki/Q75292138>
+  # Agnes von Kleve, 1295 - 1360
+  gen:father <https://www.wikidata.org/wiki/Q832610> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75292067> .
+  # oo 1312 Adolf VI., Graf von Berg, d. 1348-04-03, https://www.wikidata.org/wiki/Q97047
 
 <https://www.wikidata.org/wiki/Q76189607>
   # Irmengarde von Kleve, 1307 - 1362-08-06
@@ -709,6 +839,11 @@
   gen:father <https://www.wikidata.org/wiki/Q73998> ;
   gen:mother <https://www.wikidata.org/wiki/Q76192300> .
   # oo 1168 Henri IV, comte de Luxembourg, 1113 - 1196-08-14, https://www.wikidata.org/wiki/Q76907
+<https://www.wikidata.org/wiki/Q2335735>
+  # Margaretha van Gelre, 1158~ - 1185
+  gen:father <https://www.wikidata.org/wiki/Q73998> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76192300> .
+  # oo 1175b Engelbert I., Graf von Berg, d. 1189-07, https://www.wikidata.org/wiki/Q97072
 
 <https://www.wikidata.org/wiki/Q450041>
   # Gerard III, graaf van Gelre, 1185 - 1229-10-22
@@ -718,6 +853,11 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q450041> , <https://www.wikidata.org/wiki/Q14852996> ;
 	gen:startDate "1206" .
+<https://www.wikidata.org/wiki/Q23861949>
+  # Irmengarde van Gelre, b. 1185
+  gen:father <https://www.wikidata.org/wiki/Q74016> ;
+  gen:mother <https://www.wikidata.org/wiki/Q1840149> .
+  # oo 1200 Adolf I., Graf von der Mark, 1182b - 1249-06-28, https://www.wikidata.org/wiki/Q95646
 <https://www.wikidata.org/wiki/Q2168134>
   # Aleid van Gelre, 1187~ - 1218-02-04
   gen:father <https://www.wikidata.org/wiki/Q74016> ;
@@ -728,6 +868,7 @@
   # Margareta van Gelre, 1210 - 1250
   gen:father <https://www.wikidata.org/wiki/Q450041> ;
   gen:mother <https://www.wikidata.org/wiki/Q14852996> .
+  # oo 1235 (div 1236) Dirk II van Valkenburg, 1221 - 1268-10-15, https://www.wikidata.org/wiki/Q2405176
   # oo 1237-03-12 Wilhelm IV., Graf von Jülich, 1210 - 1278-03-16, https://www.wikidata.org/wiki/Q137639
 <https://www.wikidata.org/wiki/Q78398>
   # Otto II, graaf van Gelre, 1215 - 1271-01-10
@@ -747,6 +888,11 @@
   gen:mother <https://www.wikidata.org/wiki/Q14852996> .
   # oo 1250 Wilhelm IV., Graf von Jülich, 1210 - 1278-03-16, https://www.wikidata.org/wiki/Q137639
 
+<https://www.wikidata.org/wiki/Q76192909>
+  # Elisabeth van Gelre, 1240 - 1331-03-31
+  gen:father <https://www.wikidata.org/wiki/Q78398> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75292087> .
+  # oo 1249-03-17 Adolf V., Graf von Berg, d. 1296-09-28~, https://www.wikidata.org/wiki/Q92234
 <https://www.wikidata.org/wiki/Q71384>
   # Reinoud I, graaf van Gelre, 1255 - 1326-10-09
   # graaf van Gelre en Zutphen 1271-01-10 - 1318
@@ -949,6 +1095,38 @@
   # oo 1290 Dietrich VI./VIII. (VII), Graf von Kleve, 1256 - 1305-10-04, https://www.wikidata.org/wiki/Q832610
 
 # ----
+<https://www.wikidata.org/wiki/Q2405176>
+  # Dirk II van Valkenburg, 1221 - 1268-10-15
+  gen:father <https://www.wikidata.org/wiki/Q1827260> ; # Dirk I van Valkenburg
+  gen:mother <https://www.wikidata.org/wiki/Q75292162> . # Beatrix von Kyrburg Wildgräfin von Dhaun
+  # oo Margareta van Gelre, 1210 - 1250
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2405176> , <https://www.wikidata.org/wiki/Q75292323> ;
+	gen:startDate "1235" ;
+	gen:divorceDate "1236" .
+  # oo Bertha van Limburg Edelfrau von Monschau, 1225 - 1254-04-20
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2405176> , <https://www.wikidata.org/wiki/Q75292170> ;
+	gen:startDate "1245" .
+
+<https://www.wikidata.org/wiki/Q76185899>
+  # Isabelle Elisabeth von Kleve-Valkenburg, 1250 - 1280
+  gen:father <https://www.wikidata.org/wiki/Q2405176> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75292170> .
+  # oo 1265 Engelbert I., Graf von der Mark, 1225 - 1277-11-16, https://www.wikidata.org/wiki/Q75896
+<https://www.wikidata.org/wiki/Q813298>
+  # Beatrix von Kleve-Valkenburg, 1253 - 1277-10-17
+  gen:father <https://www.wikidata.org/wiki/Q2405176> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75292170> .
+  # oo 1269-06-16 Richard Plantagenet, 1st Earl of Cornwall, 1209-01-05 - 1272-04-02, https://www.wikidata.org/wiki/Q314527 (plantagenet.ttl)
+# ----
+<https://www.wikidata.org/wiki/Q75292170>
+  # Bertha van Limburg Edelfrau von Monschau, 1225 - 1254-04-20
+  gen:father <https://www.wikidata.org/wiki/Q1720680> ; # Waleran von Monschau
+  gen:mother <https://www.wikidata.org/wiki/Q76207817> . # Elisabeth de Bar-Mousson
+  # oo 1245 Dirk II van Valkenburg, 1221 - 1268-10-15, https://www.wikidata.org/wiki/Q2405176
+
+# ----
 <https://www.wikidata.org/wiki/Q75387279>
   # Sophie Berthout Vrouwe van Mechelen, 1295 - 1329-05-06
   gen:father <https://www.wikidata.org/wiki/Q105939041> ; # Floris Berthout, Heer van Mechelen
@@ -1031,7 +1209,7 @@
   # Gerhard VI. von Jülich, Graf von Berg und Ravensberg, 1327 - 1360-05-18
   gen:father <https://www.wikidata.org/wiki/Q322852> ;
   gen:mother <https://www.wikidata.org/wiki/Q2168025> .
-  # oo Margarete von Ravensberg-Berg, Gräfin von Berg und Ravensberg, 1320 - 1389-02-19
+  # oo Margarete von Ravensberg, Gräfin von Berg und Ravensberg, 1320 - 1389-02-19
   []
     gen:spouse <https://www.wikidata.org/wiki/Q343243> , <https://www.wikidata.org/wiki/Q1895069> ;
 	gen:startDate "1344~" .
@@ -1061,8 +1239,8 @@
   # oo 1376-10-18 Jan V van Arkel, 1362-09-11 - 1428-08-25, https://www.wikidata.org/wiki/Q1883952
 <https://www.wikidata.org/wiki/Q464594>
   # Wilhelm II. von Jülich, Herzog von Berg, 1348 - 1408-06-25
-  # Graf von Berg, Graf von Ravensberg (I.) 1360
-  # Herzog von Berg (II.) 1380
+  # Graf von Berg (II.), Graf von Ravensberg (I.) 1360
+  # Herzog von Berg (I.) 1380
   gen:father <https://www.wikidata.org/wiki/Q343243> ;
   gen:mother <https://www.wikidata.org/wiki/Q1895069> .
   # oo Anna von der Pfalz, 1346 - 1415-11-30 (wittelsbacher.ttl)
@@ -1274,7 +1452,7 @@
 	gen:startDate "1218" .
 
 <https://www.wikidata.org/wiki/Q95992>
-  # Adolf IV. (VII), Graf von Berg, 1220 - 1259-04-22
+  # Adolf IV., Graf von Berg, 1220 - 1259-04-22
   gen:father <https://www.wikidata.org/wiki/Q202239> ;
   gen:mother <https://www.wikidata.org/wiki/Q1673032> .
   # oo Margarete von Hochstaden, 1214~ - 1314-01-30
@@ -1290,6 +1468,22 @@
     gen:spouse <https://www.wikidata.org/wiki/Q1369274> , <https://www.wikidata.org/wiki/Q61140345> ;
 	gen:startDate "1250" .
 
+<https://www.wikidata.org/wiki/Q92234>
+  # Adolf V., Graf von Berg, d. 1296-09-28~
+  gen:father <https://www.wikidata.org/wiki/Q95992> ;
+  gen:mother <https://www.wikidata.org/wiki/Q1895064> .
+  # oo Elisabeth van Gelre, 1240 - 1331-03-31
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q92234> , <https://www.wikidata.org/wiki/Q76192909> ;
+	gen:startDate "1249-03-17" .
+<https://www.wikidata.org/wiki/Q604952>
+  owl:sameAs <https://www.wikidata.org/wiki/Q76207832> ;
+  # Wilhelm I., Graf von Berg, 1296b - 1308-04-21/-05-11
+  gen:father <https://www.wikidata.org/wiki/Q95992> ;
+  gen:mother <https://www.wikidata.org/wiki/Q1895064> .
+  # oo Irmgard von Kleve, d. 1319-04-20
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q604952> , <https://www.wikidata.org/wiki/Q1272477> .
 <https://www.wikidata.org/wiki/Q4529099>
   # Heinrich von Berg, Herr von Windeck, 1247 - 1298
   gen:father <https://www.wikidata.org/wiki/Q95992> ;
@@ -1308,8 +1502,16 @@
   gen:mother <https://www.wikidata.org/wiki/Q61140345> .
   # oo 1275~ Reinoud I van Gelre, graaf van Gelre en Zutphen, 1255 - 1326-10-09, https://www.wikidata.org/wiki/Q71384
 
+<https://www.wikidata.org/wiki/Q97047>
+  # Adolf VI., Graf von Berg, d. 1348-04-03
+  gen:father <https://www.wikidata.org/wiki/Q4529099> ;
+  gen:mother <https://www.wikidata.org/wiki/Q54812244> .
+  # oo Agnes von Kleve, 1295 - 1360
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q97047> , <https://www.wikidata.org/wiki/Q75292138> ;
+	gen:startDate "1312" .
 <https://www.wikidata.org/wiki/Q1895101>
-  # Margaret von Berg-Windeck, 1275 - 1339~
+  # Margarete von Berg-Windeck, 1275 - 1339~
   gen:father <https://www.wikidata.org/wiki/Q4529099> ;
   gen:mother <https://www.wikidata.org/wiki/Q54812244> .
   # oo 1313 Otto IV., Graf von Ravensberg, 1276 - 1328-02-25, https://www.wikidata.org/wiki/Q2039351
@@ -1612,13 +1814,6 @@
   # oo 1535 Bernhard III., Markgraf von Baden-Baden, 1474-10-07 - 1536-06-29, https://www.wikidata.org/wiki/Q72923
 
 # ----
-<https://www.wikidata.org/wiki/Q1673032>
-  # Irmgard von Berg, 1204 - 1240~
-  gen:father <https://www.wikidata.org/wiki/Q86368> ; # Adolf VI, Count of Berg
-  gen:mother <https://www.wikidata.org/wiki/Q76185749> . # Bertha von Sayn
-  # oo 1218 Hendrik IV, hertog van Limburg, 1195 - 1247-02-25, https://www.wikidata.org/wiki/Q202239
-
-# ----
 <https://www.wikidata.org/wiki/Q1895064>
   # Margarete von Hochstaden, 1214~ - 1314-01-30
   gen:father <https://www.wikidata.org/wiki/Q31191279> ; # Lothar I of Are-Hochstaden
@@ -1626,20 +1821,35 @@
   # oo 1240 Adolf IV. (VII), Graf von Berg, 1220 - 1259-04-22, https://www.wikidata.org/wiki/Q95992
 
 # ----
+<https://www.wikidata.org/wiki/Q2456279>
+  # Otto III., Graf von Ravensberg, 1246 - 1306-03-05
+  gen:father <https://www.wikidata.org/wiki/Q1874128> . # Ludwig, Graf von Ravensberg
+  # and oo Adelheid von Dassel, 1263-09-14 "1244-05-06b" .
+  # oo Hedwig zur Lippe, 1238 - 1315-03-05
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2456279> , <https://www.wikidata.org/wiki/Q55087366> ;
+	gen:startDate "1269-11-08b" .
+
 <https://www.wikidata.org/wiki/Q2039351>
   # Otto IV., Graf von Ravensberg, 1276 - 1328-02-25
-  gen:father <https://www.wikidata.org/wiki/Q2456279> ; # Otto III of Ravensberg
-  gen:mother <https://www.wikidata.org/wiki/Q55087366> . # Hedwig zur Lippe
-  # oo Margaret von Berg-Windeck, 1275 - 1339~
+  gen:father <https://www.wikidata.org/wiki/Q2456279> ;
+  gen:mother <https://www.wikidata.org/wiki/Q55087366> .
+  # oo Margarete von Berg-Windeck, 1275 - 1339~
   []
     gen:spouse <https://www.wikidata.org/wiki/Q2039351> , <https://www.wikidata.org/wiki/Q1895101> ;
 	gen:startDate "1313" .
 
 <https://www.wikidata.org/wiki/Q1895069>
-  # Margarete von Ravensberg-Berg, Gräfin von Berg und Ravensberg, 1320 - 1389-02-19
+  # Margarete von Ravensberg, Gräfin von Berg und Ravensberg, 1320 - 1389-02-19
   gen:father <https://www.wikidata.org/wiki/Q2039351> ;
   gen:mother <https://www.wikidata.org/wiki/Q1895101> .
   # oo 1344~ Gerhard VI. von Jülich, Graf von Berg und Ravensberg, 1327 - 1360-05-18, https://www.wikidata.org/wiki/Q343243
+# ----
+<https://www.wikidata.org/wiki/Q55087366>
+  # Hedwig zur Lippe, 1238 - 1315-03-05
+  gen:father <https://www.wikidata.org/wiki/Q825338> ; # Bernard III., Herr zur Lippe
+  gen:mother <https://www.wikidata.org/wiki/Q55443305> . # Sophie of Cuijck-Arnsberg
+  # oo 1269-11-08b Otto III., Graf von Ravensberg, 1246 - 1306-03-05, https://www.wikidata.org/wiki/Q2456279
 
 # ----
 <https://www.wikidata.org/wiki/Q20680020>
