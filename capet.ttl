@@ -4,11 +4,34 @@
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
+<https://www.wikidata.org/wiki/Q208082>
+  # Robert Ier, roi des Francs, 850-08-15 - 923-06-15
+  gen:father <https://www.wikidata.org/wiki/Q433440> ; # Robert the Strong
+  gen:mother <https://www.wikidata.org/wiki/Q354934> . # Adelheid van Tours
+  # oo Béatrice de Vermandois, 880 - 931-03-26a
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q208082> , <https://www.wikidata.org/wiki/Q263266> .
+
+<https://www.wikidata.org/wiki/Q6051215>
+  # Adèle de France, b. 897~
+  gen:father <https://www.wikidata.org/wiki/Q208082> ;
+  gen:mother <https://www.wikidata.org/wiki/Q263266> .
+  # oo Herbert II, comte de Vermandois, 880 - 943-02-23, https://www.wikidata.org/wiki/Q513843
+<https://www.wikidata.org/wiki/Q317933>
+  # Hugues le Grand, duc des Francs, 898~ - 956-06-14
+  # duc des Francs
+  # comte de Paris
+  gen:father <https://www.wikidata.org/wiki/Q208082> ;
+  gen:mother <https://www.wikidata.org/wiki/Q263266> .
+  # oo Hadwig von Sachsen, d. 965-05-10
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q317933> , <https://www.wikidata.org/wiki/Q43961> .
+
 <https://www.wikidata.org/wiki/Q159575>
   # Hugh Capet, roi des Francs, 940 - 996-10-24
-  gen:father <https://www.wikidata.org/wiki/Q317933> ; # Hugh the Great
-  gen:mother <https://www.wikidata.org/wiki/Q43961> . # Hedwig of Saxony
-  # oo Adélaïde d’Aquitaine, 950~ - 1004-06-15
+  gen:father <https://www.wikidata.org/wiki/Q317933> ;
+  gen:mother <https://www.wikidata.org/wiki/Q43961> .
+  # oo Adélaïde d’Aquitaine, 950~ - 1004-06-15 (barcelona.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q159575> , <https://www.wikidata.org/wiki/Q232425> ;
 	gen:startDate "969~" .
@@ -1872,6 +1895,10 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q346934> , <https://www.wikidata.org/wiki/Q30728996> ;
 	gen:startDate "1038" .
+  # oo Ermengarde d’Anjou, 1018 - 1076-03-18 (plantagenet.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q346934> , <https://www.wikidata.org/wiki/Q263343> ;
+	gen:startDate "1055" .
 
 <https://www.wikidata.org/wiki/Q2351549>
   # Henri de Bourgogne, 1035 - 1074-01-27
@@ -1886,6 +1913,12 @@
   gen:father <https://www.wikidata.org/wiki/Q346934> ;
   gen:mother <https://www.wikidata.org/wiki/Q30728996> .
   # oo 1079 Alfonso VI, rey de León y Castilla, 1040-06 - 1109-07-01, https://www.wikidata.org/wiki/Q235080 (ivrea.ttl)
+<https://www.wikidata.org/wiki/Q5761624>
+  # Hildegarde de Bourgogne, 1056 - 1104-09-09
+  gen:father <https://www.wikidata.org/wiki/Q346934> ;
+  gen:mother <https://www.wikidata.org/wiki/Q263343> .
+  # oo Geoffroy II, comte d’Anjou, 1006-10-14 - 1060-11-14, https://www.wikidata.org/wiki/Q526815 (plantagenet.ttl)
+  # oo 1068~ Guillaume VIII, duc d’Aquitaine, 1024 - 1086-09-25, https://www.wikidata.org/wiki/Q462896 (barcelona.ttl)
 
 <https://www.wikidata.org/wiki/Q544125>
   # Eudes Ier, duc de Bourgogne, 1058-12 - 1103-03-23
@@ -2314,20 +2347,6 @@
 
 
 # ----
-<https://www.wikidata.org/wiki/Q232425>
-  # Adélaïde d’Aquitaine, 950~ - 1004-06-15
-  gen:father <https://www.wikidata.org/wiki/Q543880> ; # William III, Duke of Aquitaine
-  gen:mother <https://www.wikidata.org/wiki/Q440574> . # Gerloc
-  # oo 969~ Hugh Capet, roi des Francs, 940 - 996-10-24, https://www.wikidata.org/wiki/Q159575
-
-# ----
-<https://www.wikidata.org/wiki/Q230073>
-  # Anna Jaroslawna von Kiew, 1025~ - 1075-09-05
-  gen:father <https://www.wikidata.org/wiki/Q188943> ; # Yaroslav the Wise
-  gen:mother <https://www.wikidata.org/wiki/Q2332287> . # Ingegerd Olofsdotter of Sweden
-  # oo 1049-05-20 Henri Ier, roi de France, 1008-05-04 - 1060-08-04, https://www.wikidata.org/wiki/Q178908
-
-# ----
 #<https://www.wikidata.org/wiki/Q333319>
   # Bernhard, König von Italien, 797 - 818-04-17
   # oo Kunigunde, d. 835a
@@ -2353,6 +2372,10 @@
   # oo Adèle de France, b. 897~
   []
     gen:spouse <https://www.wikidata.org/wiki/Q513843> , <https://www.wikidata.org/wiki/Q6051215> .
+<https://www.wikidata.org/wiki/Q263266>
+  # Béatrice de Vermandois, 880 - 931-03-26a
+  gen:father <https://www.wikidata.org/wiki/Q961145> .
+  # oo Robert Ier, roi des Francs, 850-08-15 - 923-06-15, https://www.wikidata.org/wiki/Q208082
 
 <https://www.wikidata.org/wiki/Q506720>
   # Adèle de Vermandois, 916 - 960-10-10
@@ -2363,7 +2386,7 @@
   # Albert Ier, comte de Vermandois, 931~ - 987-09-08
   gen:father <https://www.wikidata.org/wiki/Q513843> ;
   gen:mother <https://www.wikidata.org/wiki/Q6051215> .
-  # oo Gerberge de Lotharingie, 935 - 978
+  # oo Gerberge de Lotharingie, 935 - 978 (reginare.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q347441> , <https://www.wikidata.org/wiki/Q2014256> .
 
@@ -2392,22 +2415,6 @@
   gen:father <https://www.wikidata.org/wiki/Q288034> ;
   gen:mother <https://www.wikidata.org/wiki/Q2825474> .
   # oo Hugues Ier, comte de Vermandois, 1057 - 1101-10-18, https://www.wikidata.org/wiki/Q328755
-# ----
-<https://www.wikidata.org/wiki/Q208082>
-  # Robert Ier, roi des Francs, 850-08-15 - 923-06-15
-  gen:father <https://www.wikidata.org/wiki/Q433440> ;
-  gen:mother <https://www.wikidata.org/wiki/Q354934> .
-
-<https://www.wikidata.org/wiki/Q6051215>
-  # Adèle de France, b. 897~
-  gen:father <https://www.wikidata.org/wiki/Q208082> .
-  # oo Herbert II, comte de Vermandois, 880 - 943-02-23, https://www.wikidata.org/wiki/Q513843
-# ----
-<https://www.wikidata.org/wiki/Q2014256>
-  # Gerberge de Lotharingie, 935 - 978
-  gen:father <https://www.wikidata.org/wiki/Q505005> ;
-  gen:mother <https://www.wikidata.org/wiki/Q168669> .
-  # oo Albert Ier, comte de Vermandois, 931~ - 987-09-08, https://www.wikidata.org/wiki/Q347441
 # ----
 #<https://www.wikidata.org/wiki/Q3142162>
   # Hucbald de Gouy, d. 890a
@@ -2586,6 +2593,56 @@
   # oo William de Warenne, 3rd Earl of Surrey, 1119~ - 1148, https://www.wikidata.org/wiki/Q716129
 
 # ====
+
+# ----
+<https://www.wikidata.org/wiki/Q43961>
+  # Hadwig von Sachsen, d. 965-05-10
+  gen:father <https://www.wikidata.org/wiki/Q150620> ; # Henry I the Fowler
+  gen:mother <https://www.wikidata.org/wiki/Q234246> . # Matilda of Ringelheim
+  # oo Hugues le Grand, duc des Francs, 898~ - 956-06-14, https://www.wikidata.org/wiki/Q317933
+<https://www.wikidata.org/wiki/Q168669>
+  # Gerberga von Sachsen, 913 - 969a/984b
+  gen:father <https://www.wikidata.org/wiki/Q150620> ;
+  gen:mother <https://www.wikidata.org/wiki/Q234246> .
+  # oo 928~ Gislebert, duc de Lotharingie, 890~ - 939-10-02, https://www.wikidata.org/wiki/Q505005 (reginare.ttl)
+  # oo 939 Louis IV, roi des Francs, 920-09 - 954-09-10, https://www.wikidata.org/wiki/Q193658
+# ----
+<https://www.wikidata.org/wiki/Q193658>
+  # Louis IV, roi des Francs, 920-09 - 954-09-10
+  gen:father <https://www.wikidata.org/wiki/Q187519> ; # Charles the Simple
+  gen:mother <https://www.wikidata.org/wiki/Q268105> . # Eadgifu of Wessex
+  # oo Gerberga von Sachsen, 913 - 969a/984b
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q193658> , <https://www.wikidata.org/wiki/Q168669> ;
+	gen:startDate "939" .
+
+<https://www.wikidata.org/wiki/Q3053247>
+  # Mathilde de France, 943 - 992-01-27
+  gen:father <https://www.wikidata.org/wiki/Q193658> ;
+  gen:mother <https://www.wikidata.org/wiki/Q168669> .
+  # oo 964 Conrad I de Bourgogne, 925 - 993-10-19, https://www.wikidata.org/wiki/Q506442
+# ----
+<https://www.wikidata.org/wiki/Q506442>
+  # Conrad I, roi de Bourgogne, 925 - 993-10-19
+  gen:father <https://www.wikidata.org/wiki/Q442257> ; # Rudolph II of Burgundy
+  gen:mother <https://www.wikidata.org/wiki/Q270395> . # Bertha of Swabia
+  # oo Mathilde de France, 943 - 992-01-27
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q506442> , <https://www.wikidata.org/wiki/Q3053247> ;
+	gen:startDate "964" .
+
+<https://www.wikidata.org/wiki/Q232522>
+  # Berthe de Bourgogne, 964 - 1010-01-16
+  gen:father <https://www.wikidata.org/wiki/Q506442> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3053247> .
+  # oo 983~ Eudes Ier, comte de Blois, 950~ - 996-03-12, https://www.wikidata.org/wiki/Q543922
+
+# ----
+<https://www.wikidata.org/wiki/Q230073>
+  # Anna Jaroslawna von Kiew, 1025~ - 1075-09-05
+  gen:father <https://www.wikidata.org/wiki/Q188943> ; # Yaroslav the Wise
+  gen:mother <https://www.wikidata.org/wiki/Q2332287> . # Ingegerd Olofsdotter of Sweden
+  # oo 1049-05-20 Henri Ier, roi de France, 1008-05-04 - 1060-08-04, https://www.wikidata.org/wiki/Q178908
 
 # ----
 <https://www.wikidata.org/wiki/Q220806>
