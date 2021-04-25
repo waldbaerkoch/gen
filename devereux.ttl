@@ -4,8 +4,28 @@
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
-#<https://www.wikidata.org/wiki/Q18159895>
+# see normandie.ttl
+#<https://www.wikidata.org/wiki/Q8007795>
+  # William Devereux, d. 1110a
+  # oo Hawise de Lacy, daughter of https://www.wikidata.org/wiki/Q1243052 Walter de Lacy
+
+<#Walter_Devereux,_of_Lyonshall>
+  # Walter Devereux, of Lyonshall
+  gen:father <https://www.wikidata.org/wiki/Q8007795> .
+
+<#Walter_Devereux>
+  # Walter Devereux
+  gen:father <#Walter_Devereux,_of_Lyonshall> .
+  # oo Constance
+
+<#John_Devereux>
+  # John Devereux, d. 1187
+  gen:father <#Walter_Devereux> .
+  # and Constance
+
+<https://www.wikidata.org/wiki/Q18159895>
   # Walter Devereux, 1173 - 1197~
+  gen:father <#John_Devereux> .
   # oo Cecilia de Longchamp, sister of https://www.wikidata.org/wiki/Q684958 and daughter of Sir Hugh de Longchamp
 
 <https://www.wikidata.org/wiki/Q16863321>
