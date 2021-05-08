@@ -1,0 +1,963 @@
+@base <welfen.ttl> .
+@prefix gen: <http://jjkoch.de/gen#> .
+@prefix wdata: <https://www.wikidata.org/wiki/> .
+@prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://www.wikidata.org/wiki/Q329106>
+  # Elisabeth von Braunschweig-Lüneburg, 1230 - 1266-05-27
+  gen:father <https://www.wikidata.org/wiki/Q703249> ; # Otto I., Herzog zu Braunschweig und Lüneburg
+  gen:mother <https://www.wikidata.org/wiki/Q1309296> . # Matilda von Brandenburg
+  # oo 1252-01-25 Willem II, graaf van Holland, 1228-02/-07-19 - 1256-01-28, https://www.wikidata.org/wiki/Q77255 (gerulfinger.ttl)
+# Altes Haus Braunschweig
+<https://www.wikidata.org/wiki/Q62647>
+  # Albrecht I., Herzog zu Braunschweig und Lüneburg, Fürst von Braunschweig, 1236 - 1279-08-15
+  gen:father <https://www.wikidata.org/wiki/Q703249> ;
+  gen:mother <https://www.wikidata.org/wiki/Q1309296> .
+  # oo Elisabeth van Brabant, 1243 - 1261 (reginare.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q62647> , <https://www.wikidata.org/wiki/Q2513872> ;
+	gen:startDate "1254-07-13" .
+  # oo Alessia del Monferrato, 1237 - 1285-02-05~ (savoyen.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q62647> , <https://www.wikidata.org/wiki/Q20498563> ;
+	gen:startDate "1263-11-01" .
+<https://www.wikidata.org/wiki/Q20498571>
+  # Adelheid von Braunschweig-Lüneburg, 1250~ - 1274-06-12
+  gen:father <https://www.wikidata.org/wiki/Q703249> ;
+  gen:mother <https://www.wikidata.org/wiki/Q1309296> .
+  # oo 1263-09-10 Heinrich I., Landgraf von Hessen, 1244-06-24 - 1308-12-21, https://www.wikidata.org/wiki/Q76968 (reginare.ttl)
+
+<https://www.wikidata.org/wiki/Q70828> # -> Braunschweig-Grubenhagen
+  # Heinrich I., Herzog von Braunschweig, Fürst von Braunschweig-Grubenhagen, 1267-08 - 1322-09-07
+  gen:father <https://www.wikidata.org/wiki/Q62647> ;
+  gen:mother <https://www.wikidata.org/wiki/Q20498563> .
+<https://www.wikidata.org/wiki/Q75877> # -> Braunschweig-Wolfenbüttel
+  # Albrecht II., Herzog zu Braunschweig-Lüneburg, Fürst von Braunschweig-Wolfenbüttel-Göttingen, 1268~ - 1318-09-22
+  gen:father <https://www.wikidata.org/wiki/Q62647> ;
+  gen:mother <https://www.wikidata.org/wiki/Q20498563> .
+
+
+# Braunschweig-Grubenhagen
+<https://www.wikidata.org/wiki/Q70828>
+  # Heinrich I. "der Wunderliche" Herzog von Braunschweig, Fürst von Braunschweig-Grubenhagen, 1267-08 - 1322-09-07
+  # Fürst von Braunschweig-Grubenhagen 1286/1290
+  gen:father <https://www.wikidata.org/wiki/Q62647> ;
+  gen:mother <https://www.wikidata.org/wiki/Q20498563> .
+  # oo Agnes von Meißen, 1264 - 1332
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q70828> , <https://www.wikidata.org/wiki/Q110845> ;
+	gen:startDate "1282" .
+
+<https://www.wikidata.org/wiki/Q553112>
+  # Heinrich II. Herzog von Braunschweig, Fürst von Braunschweig-Grubenhagen, 1289~ - 1351
+  gen:father <https://www.wikidata.org/wiki/Q70828> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110845> .
+  # oo Heloise d’Ibelin, d. 1347-05-25a
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q553112> , <https://www.wikidata.org/wiki/Q75246355> ;
+	gen:startDate "1330-08-23" .
+<https://www.wikidata.org/wiki/Q553100>
+  # Ernst I., Herzog von Braunschweig, Fürst von Braunschweig-Grubenhagen, 1297 - 1361-03-09
+  gen:father <https://www.wikidata.org/wiki/Q70828> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110845> .
+  # oo Adelheid Gräfin von Everstein, d. 1373-09-29
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q553100> , <https://www.wikidata.org/wiki/Q59866476> ;
+	gen:startDate "1335a".
+
+<https://www.wikidata.org/wiki/Q28498723>
+  # Philipp von Braunschweig-Grubenhagen, 1332 - 1369-08-04
+  gen:father <https://www.wikidata.org/wiki/Q553112> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75246355> .
+  # oo Helisia de Dampierre, daughter of Eudes de Dampierre
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q28498723> , <https://www.wikidata.org/wiki/Q56043109> ;
+	gen:startDate "1352~" .
+  # oo Alice d’Ibelin, d. 1386-08-06
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q28498723> , <https://www.wikidata.org/wiki/Q841801> ;
+	gen:startDate "1368~" .
+<https://www.wikidata.org/wiki/Q73505>
+  # Albrecht I., Herzog von Braunschweig, Fürst von Braunschweig-Grubenhagen, 1339 - 1383
+  gen:father <https://www.wikidata.org/wiki/Q553100> ;
+  gen:mother <https://www.wikidata.org/wiki/Q59866476> .
+  # oo Agnes von Braunschweig-Lüneburg, 1357 - 1410-03-21
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q73505> , <https://www.wikidata.org/wiki/Q54810667> ;
+	gen:startDate "1371~" .
+
+<https://www.wikidata.org/wiki/Q745800>
+  # Helisia von Braunschweig-Grubenhagen, 1353~ - 1421-01-15
+  gen:father <https://www.wikidata.org/wiki/Q28498723> ;
+  gen:mother <https://www.wikidata.org/wiki/Q56043109> .
+  # oo 1365 Jacques Ier de Lusignan, roi de Chypre, 1334 - 1398-09-09, https://www.wikidata.org/wiki/Q546626 (barcelona.ttl)
+<https://www.wikidata.org/wiki/Q73452>
+  # Erich I., Herzog von Braunschweig-Grubenhagen, 1380 - 1427-05-28
+  gen:father <https://www.wikidata.org/wiki/Q73505> ;
+  gen:mother <https://www.wikidata.org/wiki/Q54810667> .
+  # oo Elisabeth von Braunschweig-Göttingen, 1390 - 1444
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q73452> , <https://www.wikidata.org/wiki/Q21479573> ;
+	gen:startDate "1405-07~" .
+
+<https://www.wikidata.org/wiki/Q265723>
+  # Anna von Braunschweig-Grubenhagen-Einbeck, 1414 - 1474-04-14
+  gen:father <https://www.wikidata.org/wiki/Q73452> ;
+  gen:mother <https://www.wikidata.org/wiki/Q21479573> .
+  # oo 1436-11-06 Albrecht III. der Fromme, Herzog von Bayern-München, 1401-03-27 - 1460-02-29, https://www.wikidata.org/wiki/Q61796 (wittelsbacher.ttl)
+  # oo 1463-02-01 Friedrich III. der Unruhige, Herzog von Braunschweig-Lüneburg, 1424 - 1495-03-05, https://www.wikidata.org/wiki/Q354354
+<https://www.wikidata.org/wiki/Q73485>
+  # Albrecht II., Herzog von Braunschweig, Fürst von Braunschweig-Grubenhagen, 1419-11-01 - 1485-08-15
+  gen:father <https://www.wikidata.org/wiki/Q73452> ;
+  gen:mother <https://www.wikidata.org/wiki/Q21479573> .
+  # oo Elisabeth Gräfin von Waldeck, d. 1513-03-15a
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q73485> , <https://www.wikidata.org/wiki/Q75246388> ;
+	gen:startDate "1471-10-15" .
+
+<https://www.wikidata.org/wiki/Q78143>
+  # Philipp I., Herzog von Braunschweig, Fürst von Braunschweig-Grubenhagen, 1476 - 1551-09-04
+  gen:father <https://www.wikidata.org/wiki/Q73485> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75246388> .
+  # oo Katharina Gräfin von Mansfeld, 1501-10-01 - 1535
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q78143> , <https://www.wikidata.org/wiki/Q75246396> ;
+	gen:startDate "1517~" .
+
+<https://www.wikidata.org/wiki/Q89419>
+  # Ernst III., Herzog von Braunschweig und Lüneburg (1566), Fürst von Braunschweig-Grubenhagen, 1518-12-17 - 1567-04-02
+  gen:father <https://www.wikidata.org/wiki/Q78143> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75246396> .
+  # oo Margarete von Pomerania-Wolgast, 1518-05 - 1569-06-24 (wittelsbacher.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q89419> , <https://www.wikidata.org/wiki/Q2477842> ;
+	gen:startDate "1547-10-09" .
+
+<https://www.wikidata.org/wiki/Q7828080>
+  # Elisabeth von Braunschweig-Grubenhagen, 1550-04-14 - 1586-02-11
+  gen:father <https://www.wikidata.org/wiki/Q89419> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2477842> .
+  # oo 1568-08-19 Johann, Herzog von Schleswig-Holstein-Sonderburg, 1545-03-25 - 1622-10-09, https://www.wikidata.org/wiki/Q708265
+
+
+# Braunschweig-Wolfenbüttel
+<https://www.wikidata.org/wiki/Q75877>
+  # Albrecht II. "der Fette", Herzog zu Braunschweig-Lüneburg, Fürst von Braunschweig-Wolfenbüttel-Göttingen, 1268~ - 1318-09-22
+  # Fürst von Göttingen 1291
+  # Fürst von Braunschweig-Wolfenbüttel 1292
+  gen:father <https://www.wikidata.org/wiki/Q62647> ;
+  gen:mother <https://www.wikidata.org/wiki/Q20498563> .
+  # oo Rixa von Werle, 1270 - 1317-11-26
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75877> , <https://www.wikidata.org/wiki/Q537508> ;
+	gen:startDate "1284-01-10" .
+
+<https://www.wikidata.org/wiki/Q658249>
+  # Magnus I. "der Fromme", Herzog zu Braunschweig-Lüneburg, Fürst von Braunschweig-Wolfenbüttel, 1304~ - 1369-06-15/08-15
+  # Fürst von Braunschweig-Wolfenbüttel 1344
+  gen:father <https://www.wikidata.org/wiki/Q75877> ;
+  gen:mother <https://www.wikidata.org/wiki/Q537508> .
+  # oo Sophia von Brandenburg-Stendal, 1300 - 1356 (wittelsbacher.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q658249> , <https://www.wikidata.org/wiki/Q3078144> ;
+	gen:startDate "1327~" .
+<https://www.wikidata.org/wiki/Q553091>
+  # Ernst I., Herzog von Braunschweig-Lüneburg, Fürst von Göttingen, 1305 - 1367-04-24
+  # Fürst von Göttingen 1344
+  gen:father <https://www.wikidata.org/wiki/Q75877> ;
+  gen:mother <https://www.wikidata.org/wiki/Q537508> .
+  # oo Elisabeth von Hessen, 1320 - 1390-03-07
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q553091> , <https://www.wikidata.org/wiki/Q25160179> ;
+	gen:startDate "1339~" .
+
+<https://www.wikidata.org/wiki/Q657947>
+  # Magnus II. "Torquatus", Fürst von Lüneburg und Braunschweig-Wolfenbüttel, 1324 - 1373-07-25
+  # Fürst von Braunschweig-Wolfenbüttel 1369-06-15/08-15
+  # Fürst von Lüneburg 1369-11-23
+  gen:father <https://www.wikidata.org/wiki/Q658249> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3078144> .
+  # oo Katharina von Anhalt-Bernburg, 1330 - 1390-01-30
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q657947> , <https://www.wikidata.org/wiki/Q21503271> ;
+	gen:startDate "1356-10-06" .
+<https://www.wikidata.org/wiki/Q75243366>
+  # Matilde von Braunschweig, d. 1354-06-28a
+  gen:father <https://www.wikidata.org/wiki/Q658249> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3078144> .
+  # oo 1343~ Bernhard III., Fürst von Anhalt-Bernburg, d. 1348-08-20, https://www.wikidata.org/wiki/Q2402337
+<https://www.wikidata.org/wiki/Q468063>
+  # Otto I. der Quade, Herzog von Braunschweig-Lüneburg, Fürst von Göttingen, 1340 - 1394-12-13
+  gen:father <https://www.wikidata.org/wiki/Q553091> ;
+  gen:mother <https://www.wikidata.org/wiki/Q25160179> .
+  # oo Margarete von Julich-Berg, 1364 - 1442-07-18 (mark.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q468063> , <https://www.wikidata.org/wiki/Q21648170> ;
+	gen:startDate "1379~" .
+
+<https://www.wikidata.org/wiki/Q658714> # -> Mittleres Haus Braunschweig
+  # Heinrich I. der Milde, Herzog von Braunschweig und Lüneburg, Fürst von Wolfenbüttel, 1355~ - 1416-10-14
+  gen:father <https://www.wikidata.org/wiki/Q657947> ;
+  gen:mother <https://www.wikidata.org/wiki/Q21503271> .
+<https://www.wikidata.org/wiki/Q67180>
+  # Friedrich I., Herzog zu Braunschweig und Lüneburg, 1357~ - 1400-06-05
+  # Fürst von Braunschweig-Wolfenbüttel 1373-07-25
+  gen:father <https://www.wikidata.org/wiki/Q657947> ;
+  gen:mother <https://www.wikidata.org/wiki/Q21503271> .
+  # oo Anna von Sachsen-Wittenberg, d. 1426-04-18
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q67180> , <https://www.wikidata.org/wiki/Q269289> ;
+	gen:startDate "1386~" .
+<https://www.wikidata.org/wiki/Q54810667>
+  # Agnes von Braunschweig-Lüneburg, 1357 - 1410-03-21
+  gen:father <https://www.wikidata.org/wiki/Q657947> ;
+  gen:mother <https://www.wikidata.org/wiki/Q21503271> .
+  # oo 1371~ Albrecht I., Herzog von Braunschweig, Fürst von Braunschweig-Grubenhagen, 1339 - 1383, https://www.wikidata.org/wiki/Q73505
+<https://www.wikidata.org/wiki/Q689386> # -> Mittleres Haus Lüneburg
+  # Bernhard I., Herzog zu Braunschweig-Lüneburg, Fürst von Lüneburg und Braunschweig-Wolfenbüttel, 1358a/1364b - 1434-06-11
+  gen:father <https://www.wikidata.org/wiki/Q657947> ;
+  gen:mother <https://www.wikidata.org/wiki/Q21503271> .
+<https://www.wikidata.org/wiki/Q21479573>
+  # Elisabeth von Braunschweig-Göttingen, 1390 - 1444
+  gen:father <https://www.wikidata.org/wiki/Q468063> ;
+  gen:mother <https://www.wikidata.org/wiki/Q21648170> .
+  # oo 1405-07~ Erich I., Herzog von Braunschweig-Grubenhagen, 1380 - 1427-05-28, https://www.wikidata.org/wiki/Q73452
+
+<https://www.wikidata.org/wiki/Q10825976>
+  # Anne von Braunschweig-Lüneburg, 1390~ - 1432-08-10
+  gen:father <https://www.wikidata.org/wiki/Q67180> ;
+  gen:mother <https://www.wikidata.org/wiki/Q269289> .
+  # oo 1410 Friedrich IV. Erzherzog von Österreich, 1382 - 1439-06-24, https://www.wikidata.org/wiki/Q550692 (habsburg.ttl)
+
+
+# Mittleres Haus Braunschweig
+<https://www.wikidata.org/wiki/Q658714>
+  # Heinrich I. der Milde, Herzog von Braunschweig und Lüneburg, Fürst von Wolfenbüttel, 1355~ - 1416-10-14
+  # Fürst von Lüneburg 1388-05-15
+  # Fürst von Braunschweig-Wolfenbüttel 1400-06-05
+  gen:father <https://www.wikidata.org/wiki/Q657947> ;
+  gen:mother <https://www.wikidata.org/wiki/Q21503271> .
+  # oo Sophie von Pommern, 1376 - 1406-06-28
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q658714> , <https://www.wikidata.org/wiki/Q6301142> ;
+	gen:startDate "1388-11-11" .
+
+<https://www.wikidata.org/wiki/Q667966>
+  # Wilhelm I. der Siegreiche, Herzog von Braunschweig-Lüneburg, 1392 - 1482-07-25
+  # Fürst von Lüneburg 1416 - 1428
+  # Fürst von Braunschweig-Wolfenbüttel 1428 - 1432, 1473
+  # Fürst von Calenberg 1432 - 1473
+  # Fürst von Göttingen 1463 - 1473
+  gen:father <https://www.wikidata.org/wiki/Q658714> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6301142> .
+  # oo Cäcilie von Brandenburg, 1405 - 1449-01-04 (wittelsbacher.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q667966> , <https://www.wikidata.org/wiki/Q299925> ;
+	gen:startDate "1423-05-30" .
+  # oo Mathilde von Holstein-Schauenburg, d. 1468-07-22
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q667966> , <https://www.wikidata.org/wiki/Q55362186> ;
+	gen:startDate "1466" .
+<https://www.wikidata.org/wiki/Q326613>
+  # Katharina von Braunschweig-Lüneburg, 1395 - 1442-12-28
+  gen:father <https://www.wikidata.org/wiki/Q658714> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6301142> .
+  # oo 1402-02-07 Friedrich I., Kurfürst von Sachsen, Markgraf von Meißen, 1370-04-11 - 1428-01-04, https://www.wikidata.org/wiki/Q704939
+
+<https://www.wikidata.org/wiki/Q354354>
+  # Friedrich III. der Unruhige, Herzog von Braunschweig-Lüneburg, 1424 - 1495-03-05
+  # Fürst von Calenberg-Göttingen 1473 - 1484-12-10
+  gen:father <https://www.wikidata.org/wiki/Q667966> ;
+  gen:mother <https://www.wikidata.org/wiki/Q299925> .
+  # oo Anna von Braunschweig-Grubenhagen-Einbeck, 1414 - 1474-04-14
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q354354> , <https://www.wikidata.org/wiki/Q265723> ;
+	gen:startDate "1463-02-01" .
+  # oo Margarete Gräfin von Rietberg, d. 1519a
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q354354> , <https://www.wikidata.org/wiki/Q75246144> ;
+	gen:startDate "1483-11-16" .
+<https://www.wikidata.org/wiki/Q471836>
+  # Wilhelm II., Herzog von Braunschweig-Lüneburg, Fürst von Braunschweig-Wolfenbüttel und Göttingen, 1425 - 1503-07-07
+  # Fürst von Calenberg-Göttingen 1473 - 1495-03-06
+  # Fürst von Braunschweig-Wolfenbüttel 1482-07-25 - 1491
+  gen:father <https://www.wikidata.org/wiki/Q667966> ;
+  gen:mother <https://www.wikidata.org/wiki/Q299925> .
+  # oo Elisabeth von Stolberg-Wernigerode, 1438~ - 1520-09-07
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q471836> , <https://www.wikidata.org/wiki/Q40227060> ;
+	gen:startDate "1444-05-07" .
+
+<https://www.wikidata.org/wiki/Q26877297>
+  # Anna von Braunschweig-Wolfenbüttel, 1460 - 1520-05-16
+  gen:father <https://www.wikidata.org/wiki/Q471836> ;
+  gen:mother <https://www.wikidata.org/wiki/Q40227060> .
+  # oo 1488-02-17 Wilhelm I., Landgraf von Hessen (Niederhessen), 1466-07-04 - 1515-02-08, https://www.wikidata.org/wiki/Q542751
+<https://www.wikidata.org/wiki/Q567039>
+  # Heinrich I., der Ältere, der Friedfertige, Herzog zu Braunschweig und Lüneburg, Fürst von Braunschweig-Wolfenbüttel, 1463-06-24 - 1514-06-23
+  # Fürst von Braunschweig-Wolfenbüttel 1503-07-07
+  gen:father <https://www.wikidata.org/wiki/Q471836> ;
+  gen:mother <https://www.wikidata.org/wiki/Q40227060> .
+  # oo Katharina von Pommern, 1465 - 1526
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q567039> , <https://www.wikidata.org/wiki/Q3663541> ;
+	gen:startDate "1486-08" .
+<https://www.wikidata.org/wiki/Q66274>
+  # Erich I., Herzog zu Braunschweig-Lüneburg, Fürst von Calenberg, 1470-02-16 - 1540-07-30
+  # Fürst von Calenberg-Göttingen 1495-03-06
+  gen:father <https://www.wikidata.org/wiki/Q471836> ;
+  gen:mother <https://www.wikidata.org/wiki/Q40227060> .
+  # oo Elisabeth von Brandenburg, 1510-08-24 - 1558-05-25
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q66274> , <https://www.wikidata.org/wiki/Q542899> ;
+	gen:startDate "1525-07-07" .
+
+<https://www.wikidata.org/wiki/Q434771>
+  # Katharina von Braunschweig-Wolfenbüttel, 1488 - 1563-06-29
+  gen:father <https://www.wikidata.org/wiki/Q567039> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3663541> .
+  # oo 1509-11-20 Magnus I., Herzog von Sachsen-Lauenburg, 1470-01-01 - 1543-08-01, https://www.wikidata.org/wiki/Q567378
+<https://www.wikidata.org/wiki/Q61435>
+  # Heinrich II., der Jüngere, Herzog von Braunschweig-Lüneburg, Fürst von Braunschweig-Wolfenbüttel, 1489-11-10 - 1568-06-11
+  gen:father <https://www.wikidata.org/wiki/Q567039> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3663541> .
+  # oo Maria Gräfin von Württemberg, 1496-07-15 - 1541-12-28
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q61435> , <https://www.wikidata.org/wiki/Q20499041> ;
+	gen:startDate "1515-01-01" .
+<https://www.wikidata.org/wiki/Q68304>
+  # Erich II. „der Jüngere“, Herzog zu Braunschweig-Lüneburg, Fürst von Calenberg, 1528-08-10 - 1584-11-17
+  # Fürst von Calenberg-Göttingen 1540-07-30
+  gen:father <https://www.wikidata.org/wiki/Q66274> ;
+  gen:mother <https://www.wikidata.org/wiki/Q542899> .
+  # oo Sidonie von Sachsen, 1518-03-08 - 1575-01-04
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q68304> , <https://www.wikidata.org/wiki/Q539111> ;
+	gen:startDate "1545-05-17" .
+  # oo Dorothée de Lorraine, 1545-05-24 - 1621-06-02 (lothringen.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q68304> , <https://www.wikidata.org/wiki/Q20036771> ;
+	gen:startDate "1575-11-26" .
+<https://www.wikidata.org/wiki/Q463669>
+  # Anna Maria von Braunschweig-Lüneburg, 1532-04-23 - 1568-03-20
+  gen:father <https://www.wikidata.org/wiki/Q66274> ;
+  gen:mother <https://www.wikidata.org/wiki/Q542899> .
+  # oo 1550 Albrecht von Brandenburg-Ansbach, Herzog von Preußen, 1490-07-08 - 1568-03-20, https://www.wikidata.org/wiki/Q40433 (mark.ttl)
+
+<https://www.wikidata.org/wiki/Q62953>
+  # Julius, Herzog von Braunschweig-Lüneburg, Fürst von Braunschweig-Wolfenbüttel und Calenberg, 1528-06-29 - 1589-05-03
+  # Bischof von Minden 1553-04-23 - 1554-02
+  # Fürst von Braunschweig-Wolfenbüttel 1568-06-11
+  # Fürst von Calenberg-Göttingen 1584-11-17
+  gen:father <https://www.wikidata.org/wiki/Q61435> ;
+  gen:mother <https://www.wikidata.org/wiki/Q20499041> .
+  # oo Hedwig von Brandenburg, 1540-02-23 - 1602-10-21
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q62953> , <https://www.wikidata.org/wiki/Q525125> ;
+	gen:startDate "1560-02-25" .
+
+<https://www.wikidata.org/wiki/Q77557>
+  # Heinrich Julius, Herzog von Braunschweig-Lüneburg, Fürst von Braunschweig-Wolfenbüttel und Calenberg, 1564-10-15 - 1613-07-30
+  # Fürst von Braunschweig-Wolfenbüttel und Calenberg 1589-05-03
+  gen:father <https://www.wikidata.org/wiki/Q62953> ;
+  gen:mother <https://www.wikidata.org/wiki/Q525125> .
+  # oo Elisabeth af Danmark, 1573-09-04 - 1626-07-19
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q77557> , <https://www.wikidata.org/wiki/Q2616482> ;
+	gen:startDate "1590-04-19" .
+
+<https://www.wikidata.org/wiki/Q63536>
+  # Friedrich Ulrich, Herzog von Braunschweig-Lüneburg, Fürst von Braunschweig-Wolfenbüttel und Calenberg, 1591-04-05 - 1634-08-11
+  # Fürst von Braunschweig-Wolfenbüttel und Calenberg 1613-07-30
+  gen:father <https://www.wikidata.org/wiki/Q77557> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2616482> .
+  # oo Anna Sophia von Brandenburg, 1598-03-18 - 1659-12-29 (mark.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q63536> , <https://www.wikidata.org/wiki/Q563331> ;
+	gen:startDate "1614-09-04" .
+<https://www.wikidata.org/wiki/Q71436>
+  # Sophie Hedwig von Braunschweig-Wolfenbüttel, 1592-06-13 - 1642-01-23
+  gen:father <https://www.wikidata.org/wiki/Q77557> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2616482> .
+  # oo 1607-06-08 Ernst Casimir I., Graf von Nassau-Dietz, 1583-12-22 - 1632-06-02, https://www.wikidata.org/wiki/Q71444
+<https://www.wikidata.org/wiki/Q8557454>
+  # Anne Auguste von Braunschweig-Wolfenbüttel, 1612-05-19 - 1673-02-17
+  gen:father <https://www.wikidata.org/wiki/Q77557> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2616482> .
+  # oo 1638-04-29 Georg Ludwig, Fürst von Nassau-Dillenburg, 1618-03-04 - 1656-05-19, https://www.wikidata.org/wiki/Q2734202
+
+
+# Mittleres Haus Lüneburg
+<https://www.wikidata.org/wiki/Q689386>
+  # Bernhard I., Herzog zu Braunschweig-Lüneburg, Fürst von Lüneburg und Braunschweig-Wolfenbüttel, 1358a/1364b - 1434-06-11
+  # Fürst von Lüneburg 1388 - 1409, 1428
+  # Fürst von Braunschweig-Wolfenbüttel 1400 - 1428
+  gen:father <https://www.wikidata.org/wiki/Q657947> ;
+  gen:mother <https://www.wikidata.org/wiki/Q21503271> .
+  # oo Margarete von Sachsen-Wittenberg, d. 1429
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q689386> , <https://www.wikidata.org/wiki/Q21503260> ;
+	gen:startDate "1386~" .
+
+<https://www.wikidata.org/wiki/Q64548>
+  # Friedrich II., der Fromme, Herzog zu Braunschweig-Lüneburg, 1418 - 1478-03-19
+  # Fürst von Lüneburg 1434-06-11 - 1457, 1472
+  gen:father <https://www.wikidata.org/wiki/Q689386> ;
+  gen:mother <https://www.wikidata.org/wiki/Q21503260> .
+  # oo Magdalene von Brandenburg, 1412 - 1454-10-27 (wittelsbacher.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q64548> , <https://www.wikidata.org/wiki/Q325842> ;
+	gen:startDate "1429-07-03" .
+
+<https://www.wikidata.org/wiki/Q73514>
+  # Bernhard II., Herzog zu Braunschweig-Lüneburg, Fürst von Lüneburg, 1452b - 1464
+  # Bischof von Hildesheim 1452 - 1458
+  # Fürst von Lüneburg 1457
+  gen:father <https://www.wikidata.org/wiki/Q64548> ;
+  gen:mother <https://www.wikidata.org/wiki/Q325842> .
+  # oo Mathilde von Holstein-Schauenburg, d. 1468-07-22
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q73514> , <https://www.wikidata.org/wiki/Q55362186> ;
+	gen:startDate "1463~" .
+<https://www.wikidata.org/wiki/Q70820>
+  # Otto V., der Siegreiche, Herzog zu Braunschweig-Lüneburg, Fürst von Lüneburg, 1439 - 1471-01-09
+  # Fürst von Lüneburg 1464
+  gen:father <https://www.wikidata.org/wiki/Q64548> ;
+  gen:mother <https://www.wikidata.org/wiki/Q325842> .
+  # oo Anna von Nassau-Dillenburg, 1440 - 1514-04-08, Regentin von Lüneburg 1478-03-19 - 1486 (nassau.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q70820> , <https://www.wikidata.org/wiki/Q90978> ;
+	gen:startDate "1467-09-28" .
+
+<https://www.wikidata.org/wiki/Q64595>
+  # Heinrich I., der Mittlere, Herzog zu Braunschweig-Lüneburg, Fürst von Lüneburg, 1468 - 1532-02-19
+  # Fürst von Lüneburg 1486 - 1520
+  gen:father <https://www.wikidata.org/wiki/Q70820> ;
+  gen:mother <https://www.wikidata.org/wiki/Q90978> .
+  # oo Margarete von Sachsen, 1469-08-04 - 1528-12-07
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q64595> , <https://www.wikidata.org/wiki/Q527324> ;
+	gen:startDate "1487-02-27" .
+
+<https://www.wikidata.org/wiki/Q700441>
+  # Ernst I., der Bekenner, Herzog zu Braunschweig-Lüneburg, Fürst von Lüneburg-Celle, 1497-06-27 - 1546-01-11
+  # Fürst von Lüneburg 1520
+  gen:father <https://www.wikidata.org/wiki/Q64595> ;
+  gen:mother <https://www.wikidata.org/wiki/Q527324> .
+  # oo Sophie von Mecklenburg-Schwerin, 1508-04-14 - 1541-06-17
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q700441> , <https://www.wikidata.org/wiki/Q6198423> ;
+	gen:startDate "1528-06-02" .
+<https://www.wikidata.org/wiki/Q67167>
+  # Otto, Herzog zu Braunschweig-Lüneburg, Fürst von Lüneburg, 1495-08-24 - 1549-08-11
+  # Fürst von Lüneburg 1520 - 1527
+  # Herr von Harburg 1527
+  gen:father <https://www.wikidata.org/wiki/Q64595> ;
+  gen:mother <https://www.wikidata.org/wiki/Q527324> .
+  # oo Meta von Campe, d. 1580-10-16
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q67167> , <https://www.wikidata.org/wiki/Q75246042> ;
+	gen:startDate "1524~/1527" .
+<https://www.wikidata.org/wiki/Q70811>
+  # Franz, Herzog von Braunschweig-Lüneburg, 1508-11-23 - 1549-11-23
+  # Fürst von Lüneburg 1536 - 1539
+  # Herzog von Gifhorn 1539
+  gen:father <https://www.wikidata.org/wiki/Q64595> ;
+  gen:mother <https://www.wikidata.org/wiki/Q527324> .
+  # oo Klara von Sachsen-Lauenburg, 1518-12-13 - 1576-03-27
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q70811> , <https://www.wikidata.org/wiki/Q1744428> ;
+	gen:startDate "1547-09-29" .
+
+<https://www.wikidata.org/wiki/Q72936>
+  # Franz Otto, Herzog zu Braunschweig-Lüneburg, Fürst von Lüneburg, 1530-06-20 - 1559-04-29
+  # Fürst von Lüneburg 1555
+  gen:father <https://www.wikidata.org/wiki/Q700441> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6198423> .
+  # oo Elisabeth Magdalene von Brandenburg, 1537-11-06 - 1595-09-01
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q72936> , <https://www.wikidata.org/wiki/Q1330110> ;
+	gen:startDate "1559-02-05" .
+<https://www.wikidata.org/wiki/Q65819>
+  # Heinrich, Herzog zu Braunschweig und Lüneburg, 1533-06-04 - 1598-01-19
+  # Fürst von Lüneburg 1559-04-29 - 1569
+  # Herr von Dannenberg 1569
+  gen:father <https://www.wikidata.org/wiki/Q700441> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6198423> .
+  # oo Ursula von Sachsen-Lauenburg, 1552 - 1620-10-12
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q65819> , <https://www.wikidata.org/wiki/Q2501962> ;
+	gen:startDate "1569-03-30" .
+<https://www.wikidata.org/wiki/Q62481> # -> Neues Haus Lüneburg
+  # Wilhelm, der Jüngere, Herzog von Braunschweig-Lüneburg, Fürst von Lüneburg, 1535-07-04 - 1592-08-20
+  gen:father <https://www.wikidata.org/wiki/Q700441> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6198423> .
+
+
+# Neues Haus Lüneburg
+<https://www.wikidata.org/wiki/Q62481>
+  # Wilhelm, der Jüngere, Herzog von Braunschweig-Lüneburg, Fürst von Lüneburg, 1535-07-04 - 1592-08-20
+  # Fürst von Lüneburg 1559-04-29
+  gen:father <https://www.wikidata.org/wiki/Q700441> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6198423> .
+  # oo Dorothea af Danmark, 1546-06-29 - 1617-01-06
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q62481> , <https://www.wikidata.org/wiki/Q2086776> ;
+	gen:startDate "1561-10-12" .
+
+<https://www.wikidata.org/wiki/Q67190>
+  # Ernst II., Herzog zu Braunschweig-Lüneburg, Fürst von Lüneburg, 1564-12-31 - 1611-03-02
+  # Fürst von Lüneburg 1592-08-20
+  gen:father <https://www.wikidata.org/wiki/Q62481> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2086776> .
+<https://www.wikidata.org/wiki/Q529521>
+  # Christian der Ältere, Herzog von Braunschweig und Lüneburg, 1566-11-09 - 1633-11-08
+  # Bischof von Minden 1599 - 1625
+  # Fürst von Lüneburg 1611-03-02
+  gen:father <https://www.wikidata.org/wiki/Q62481> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2086776> .
+<https://www.wikidata.org/wiki/Q67352>
+  # August I. der Ältere, Herzog von Braunschweig-Lüneburg, Fürst von Lüneburg, 1568-11-19 - 1636-10-01
+  # Administrator des Stifts Ratzeburg 1610
+  # Fürst von Lüneburg 1633-11-08
+  # Fürst von Calenberg-Göttingen 1635
+  gen:father <https://www.wikidata.org/wiki/Q62481> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2086776> .
+<https://www.wikidata.org/wiki/Q68652>
+  # Friedrich IV., Herzog zu Braunschweig und Lüneburg, Fürst von Lüneburg, 1574-08-28 - 1648-12-10
+  # Fürst von Lüneburg 1636-10-01
+  gen:father <https://www.wikidata.org/wiki/Q62481> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2086776> .
+<https://www.wikidata.org/wiki/Q61829>
+  # Georg, Herzog von Braunschweig-Lüneburg, Fürst von Calenberg, 1582-02-17 - 1641-04-02
+  # Fürst von Calenberg 1636-10-01
+  gen:father <https://www.wikidata.org/wiki/Q62481> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2086776> .
+  # oo Anne Eleanore Prinzessin von Hessen-Darmstadt, 1601-07-30 - 1659-05-06
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q61829> , <https://www.wikidata.org/wiki/Q270110> ;
+	gen:startDate "1617-12-14" .
+
+<https://www.wikidata.org/wiki/Q69987>
+  # Christian Ludwig, Herzog zu Braunschweig-Lüneburg, Fürst von Lüneburg von Calenberg und Lüneburg, 1622-02-25 - 1665-03-15
+  # Fürst von Calenberg 1641-04-02 - 1648-12-10
+  # Fürst von Lüneburg 1648-12-10
+  gen:father <https://www.wikidata.org/wiki/Q61829> ;
+  gen:mother <https://www.wikidata.org/wiki/Q270110> .
+  # oo Dorothea Sophie Prinzessin von Schleswig-Holstein-Sonderburg-Glücksburg, 1636-09-28 - 1689-08-16
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q69987> , <https://www.wikidata.org/wiki/Q65933> ;
+	gen:startDate "1653-10-09" .
+<https://www.wikidata.org/wiki/Q61574>
+  # Georg Wilhelm von Braunschweig-Lüneburg, Fürst von Calenberg und Lüneburg, 1624-01-26 - 1705-08-28
+  # Fürst von Calenberg 1648-12-10 - 1665-09~
+  # Fürst von Lüneburg 1665-09~
+  gen:father <https://www.wikidata.org/wiki/Q61829> ;
+  gen:mother <https://www.wikidata.org/wiki/Q270110> .
+  # oo Éléonore Desmier d’Olbreuse, 1639-02-03 - 1722-02-05
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q61574> , <https://www.wikidata.org/wiki/Q65304> ;
+	gen:startDate "1665-09-15" .
+<https://www.wikidata.org/wiki/Q62800>
+  # Johann Friedrich, Herzog von Braunschweig-Lüneburg, Fürst von Lüneburg und Calenberg, 1625-04-25 - 1679-12-28
+  # Fürst von Lüneburg 1665-03-15 - 1665-09~
+  # Fürst von Calenberg 1665-09~
+  gen:father <https://www.wikidata.org/wiki/Q61829> ;
+  gen:mother <https://www.wikidata.org/wiki/Q270110> .
+  # oo Benedicta Henriette von der Pfalz, 1652-03-14 - 1730-08-12 (wittelsbacher.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q62800> , <https://www.wikidata.org/wiki/Q63933> ;
+	gen:startDate "1668-11-30" .
+<https://www.wikidata.org/wiki/Q372190> # -> Hannover
+  # Ernst August I, Kurfürst von Hannover, 1629-11-20 - 1698-01-25
+  # Fürstbischof von Osnabrück 1661 - 1698
+  # Herzog von Braunschweig-Lüneburg, Fürst von Calenberg 1679-12-28
+  # Kurfürst von Braunschweig-Lüneburg 1692-12-19
+  gen:father <https://www.wikidata.org/wiki/Q61829> ;
+  gen:mother <https://www.wikidata.org/wiki/Q270110> .
+
+<https://www.wikidata.org/wiki/Q231876>
+  # Sophie Dorothea von Braunschweig-Lüneburg, 1666-09-15 - 1726-11-13
+  gen:father <https://www.wikidata.org/wiki/Q61574> ;
+  gen:mother <https://www.wikidata.org/wiki/Q65304> .
+  # oo 1682-11-21 George I Louis, King of Great Britain, 1660-05-28 - 1727-01-11, https://www.wikidata.org/wiki/Q130805
+
+
+# Hannover
+<https://www.wikidata.org/wiki/Q372190>
+  # Ernst August I, Kurfürst von Hannover, 1629-11-20 - 1698-01-25
+  # Fürstbischof von Osnabrück 1661 - 1698
+  # Herzog von Braunschweig-Lüneburg, Fürst von Calenberg 1679-12-28
+  # Kurfürst von Braunschweig-Lüneburg 1692-12-19
+  gen:father <https://www.wikidata.org/wiki/Q61829> ;
+  gen:mother <https://www.wikidata.org/wiki/Q270110> .
+  # oo Sophie Dorothea Prinzessin von der Pfalz, 1630-10-13 - 1714-06-08 (wittelsbacher.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q372190> , <https://www.wikidata.org/wiki/Q57224> ;
+	gen:startDate "1658-09-30" .
+
+<https://www.wikidata.org/wiki/Q130805>
+  # George I Louis, King of Great Britain, 1660-05-28 - 1727-01-11
+  # Kurfürst von Braunschweig-Lüneburg 1698-01-25
+  # Kurfürst von Hannover 1708-09-07
+  # King of Great Britain, King of Ireland 1714-08-01
+  gen:father <https://www.wikidata.org/wiki/Q372190> ;
+  gen:mother <https://www.wikidata.org/wiki/Q57224> .
+  # oo Sophie Dorothea von Braunschweig-Lüneburg, 1666-09-15 - 1726-11-13
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q130805> , <https://www.wikidata.org/wiki/Q231876> ;
+	gen:startDate "1682-11-21" .
+<https://www.wikidata.org/wiki/Q74001>
+  # Charlotte Sophia von Platen-Hallermund, Countess of Darlington, 1675-04-10 - 1725-04-20
+  # Countess of Leinster 1721
+  # Countess of Darlington, Baroness Brentford 1722
+  gen:father <https://www.wikidata.org/wiki/Q372190> ; # illegitimate
+  gen:mother <https://www.wikidata.org/wiki/Q77931> .
+  # oo 1701 Johann Adolph Freiherr von Kielmansegg, 1668-09-30 - 1717-11-25, https://www.wikidata.org/wiki/Q34151403 (howe.ttl)
+
+<https://www.wikidata.org/wiki/Q131981>
+  # George II Augustus, King of Great Britain, 1683-11-10 - 1760-10-25
+  gen:father <https://www.wikidata.org/wiki/Q130805> ;
+  gen:mother <https://www.wikidata.org/wiki/Q231876> .
+  # oo Wilhelmina Charlotte _Caroline_ Prinzessin von Brandenburg-Ansbach, 1683-03-01 - 1737-12-01
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q131981> , <https://www.wikidata.org/wiki/Q76961> ;
+	gen:startDate "1705-08-22" .
+
+<https://www.wikidata.org/wiki/Q239487>
+  # Anne, Princess Royal, 1709-11-02 - 1759-01-12
+  gen:father <https://www.wikidata.org/wiki/Q131981> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76961> .
+  # oo 1734-03-25 Willem IV Carl Heinrich Friso van Oranje-Nassau, Fürst von Oranien-Nassau, 1711-09-01 - 1751-10-22, https://www.wikidata.org/wiki/Q380949 (nassau.ttl)
+
+
+# ----
+<https://www.wikidata.org/wiki/Q110845>
+  # Agnes von Meißen, 1264 - 1332
+  gen:father <https://www.wikidata.org/wiki/Q61508> ; # Albrecht II., Markgraf von Meißen
+  gen:mother <https://www.wikidata.org/wiki/Q72589> . # Margaret of Sicily
+  # oo 1282 Heinrich I. "der Wunderliche" Herzog von Braunschweig, Fürst von Braunschweig-Grubenhagen, 1267-08 - 1322-09-07, https://www.wikidata.org/wiki/Q70828
+
+# ----
+<https://www.wikidata.org/wiki/Q59866476>
+  # Adelheid Gräfin von Everstein, d. 1373-09-29
+  gen:father <https://www.wikidata.org/wiki/Q61139733> . # Hermann II., Graf von Everstein
+  # oo 1335a Ernst I., Herzog von Braunschweig, Fürst von Braunschweig-Grubenhagen, 1297 - 1361-03-09, https://www.wikidata.org/wiki/Q553100
+
+# ----
+<https://www.wikidata.org/wiki/Q75246388>
+  # Elisabeth Gräfin von Waldeck, d. 1513-03-15a
+  gen:father <https://www.wikidata.org/wiki/Q75246390> ; # Volrath, Graf von Waldeck
+  gen:mother <https://www.wikidata.org/wiki/Q75246392> . # Barbara von Wertheim
+  # oo 1471-10-15 Albrecht II., Herzog von Braunschweig, Fürst von Braunschweig-Grubenhagen, 1419-11-01 - 1485-08-15, https://www.wikidata.org/wiki/Q73485
+
+# ----
+<https://www.wikidata.org/wiki/Q75246396>
+  # Katharina Gräfin von Mansfeld, 1501-10-01 - 1535
+  gen:father <https://www.wikidata.org/wiki/Q75246404> ; # Ernst II., Graf von Mansfeld
+  gen:mother <https://www.wikidata.org/wiki/Q75246405> . # Barbara von Querfurt
+  # oo 1517~ Philipp I., Herzog von Braunschweig, Fürst von Braunschweig-Grubenhagen, 1476 - 1551-09-04, https://www.wikidata.org/wiki/Q78143
+
+# ----
+<https://www.wikidata.org/wiki/Q708265>
+  # Johann, Herzog von Schleswig-Holstein-Sonderburg, 1545-03-25 - 1622-10-09
+  gen:father <https://www.wikidata.org/wiki/Q154998> ; # Christian III of Denmark
+  gen:mother <https://www.wikidata.org/wiki/Q234549> . # Dorothea of Saxe-Lauenburg
+  # oo Elisabeth von Braunschweig-Grubenhagen, 1550-04-14 - 1586-02-11
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q708265> , <https://www.wikidata.org/wiki/Q7828080> ;
+	gen:startDate "1568-08-19" .
+<https://www.wikidata.org/wiki/Q2086776>
+  # Dorothea af Danmark, 1546-06-29 - 1617-01-06
+  gen:father <https://www.wikidata.org/wiki/Q154998> ; # Christian III of Denmark
+  gen:mother <https://www.wikidata.org/wiki/Q234549> . # Dorothea of Saxe-Lauenburg
+  # oo 1561-10-12 Wilhelm, der Jüngere, Herzog von Braunschweig-Lüneburg, Fürst von Lüneburg, 1535-07-04 - 1592-08-20, https://www.wikidata.org/wiki/Q62481 (welfen.ttl)
+
+<https://www.wikidata.org/wiki/Q20202476>
+  # Margarethe Prinzessin von Schleswig-Holstein-Sonderburg, 1583-02-24 - 1658-04-10
+  gen:father <https://www.wikidata.org/wiki/Q708265> ;
+  gen:mother <https://www.wikidata.org/wiki/Q7828080> .
+  # oo 1603-08-27 Johann VII., Graf zu Nassau-Siegen, 1561-06-07 - 1623-09-27, https://www.wikidata.org/wiki/Q819521 (nassau.ttl)
+
+
+<https://www.wikidata.org/wiki/Q2616482>
+  # Elisabeth af Danmark, 1573-09-04 - 1626-07-19
+  gen:father <https://www.wikidata.org/wiki/Q154041> ; # Frederick II of Denmark
+  gen:mother <https://www.wikidata.org/wiki/Q57654> . # Sophie von Mecklenburg-Güstrow
+  # oo 1590-04-19 Heinrich Julius, Herzog von Braunschweig-Lüneburg, Fürst von Braunschweig-Wolfenbüttel und Calenberg, 1564-10-15 - 1613-07-30, https://www.wikidata.org/wiki/Q77557 (welfen.ttl)
+
+
+<https://www.wikidata.org/wiki/Q65933>
+  # Dorothea Sophie Prinzessin von Schleswig-Holstein-Sonderburg-Glücksburg, 1636-09-28 - 1689-08-16
+  gen:father <https://www.wikidata.org/wiki/Q570998> ; # Philip, Duke of Schleswig-Holstein-Sonderburg-Glücksburg
+  gen:mother <https://www.wikidata.org/wiki/Q6492129> . # Sophie Hedwig of Saxe-Lauenburg
+  # oo 1653-10-09 Christian Ludwig, Herzog zu Braunschweig-Lüneburg, Fürst von Lüneburg von Calenberg und Lüneburg, 1622-02-25 - 1665-03-15, https://www.wikidata.org/wiki/Q69987 (welfen.ttl)
+
+# ----
+<https://www.wikidata.org/wiki/Q537508>
+  # Rixa von Werle, 1270 - 1317-11-26
+  gen:father <https://www.wikidata.org/wiki/Q95549> ; # Heinrich I. von Werle
+  gen:mother <https://www.wikidata.org/wiki/Q441785> . # Rikissa Birgersdotter
+  # oo 1284-01-10 Albrecht II. "der Fette", Herzog zu Braunschweig-Lüneburg, Fürst von Braunschweig-Wolfenbüttel-Göttingen, 1268~ - 1318-09-22, https://www.wikidata.org/wiki/Q75877
+
+# ----
+<https://www.wikidata.org/wiki/Q25160179>
+  # Elisabeth von Hessen, 1320 - 1390-03-07
+  gen:father <https://www.wikidata.org/wiki/Q76256> ; # Henry II, Landgrave of Hesse
+  gen:mother <https://www.wikidata.org/wiki/Q75243382> . # Elisabeth von Meißen
+  # oo 1339~ Ernst I., Herzog von Braunschweig-Lüneburg, Fürst von Göttingen, 1305 - 1367-04-24, https://www.wikidata.org/wiki/Q553091
+
+
+<https://www.wikidata.org/wiki/Q542751>
+  # Wilhelm I., Landgraf von Hessen (Niederhessen), 1466-07-04 - 1515-02-08
+  gen:father <https://www.wikidata.org/wiki/Q320101> ; # Louis II
+  gen:mother <https://www.wikidata.org/wiki/Q20499516> . # Mechthild of Württemberg-Urach
+  # oo Anna von Braunschweig-Wolfenbüttel, 1460 - 1520-05-16 (welfen.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q542751> , <https://www.wikidata.org/wiki/Q26877297> ;
+	gen:startDate "1488-02-17" .
+
+<https://www.wikidata.org/wiki/Q823004>
+  # Elisabeth von Hessen, 1503-03-04 - 1563-01-04
+  gen:father <https://www.wikidata.org/wiki/Q542751> ;
+  gen:mother <https://www.wikidata.org/wiki/Q26877297> .
+  # oo 1525-10-16 Ludwig II., Pfalzgraf und Herzog von Pfalz-Zweibrücken, 1502-09-14 - 1532-12-03, https://www.wikidata.org/wiki/Q65894 (wittelsbacher.ttl)
+
+
+<https://www.wikidata.org/wiki/Q270110>
+  # Anne Eleanore Prinzessin von Hessen-Darmstadt, 1601-07-30 - 1659-05-06
+  gen:father <https://www.wikidata.org/wiki/Q267331> ; # Ludwig V., Landgraf von Hessen-Darmstadt
+  gen:mother <https://www.wikidata.org/wiki/Q290616> . # Magdalene von Brandenburg
+  # oo 1617-12-14 Georg, Herzog von Braunschweig-Lüneburg, Fürst von Calenberg, 1582-02-17 - 1641-04-02, https://www.wikidata.org/wiki/Q61829
+
+# ----
+<https://www.wikidata.org/wiki/Q2402337>
+  # Bernhard III., Fürst von Anhalt-Bernburg, d. 1348-08-20
+  gen:father <https://www.wikidata.org/wiki/Q95399> ; # Bernhard II, Prince of Anhalt-Bernburg
+  gen:mother <https://www.wikidata.org/wiki/Q75290580> . # Helene von Rügen
+  # oo Agnes von Sachsen-Wittenberg, 1310~ - 1338-01-04
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2402337> , <https://www.wikidata.org/wiki/Q21499473> ;
+	gen:startDate "1328" .
+  # oo Matilde von Braunschweig, d. 1354-06-28a
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2402337> , <https://www.wikidata.org/wiki/Q75243366> ;
+	gen:startDate "1343~" .
+
+<https://www.wikidata.org/wiki/Q21503271>
+  # Katharina von Anhalt-Bernburg, 1330 - 1390-01-30
+  gen:father <https://www.wikidata.org/wiki/Q2402337> ;
+  gen:mother <https://www.wikidata.org/wiki/Q21499473> .
+  # oo 1356-10-06 Magnus II. "Torquatus", Fürst von Lüneburg und Braunschweig-Wolfenbüttel, 1324 - 1373-07-25, https://www.wikidata.org/wiki/Q657947 (welfen.ttl)
+# ----
+<https://www.wikidata.org/wiki/Q21499473>
+  # Agnes von Sachsen-Wittenberg, 1310~ - 1338-01-04
+  gen:father <https://www.wikidata.org/wiki/Q699820> ; # Rudolf I., Kurfürst und Herzog von Sachsen-Wittenberg
+  gen:mother <https://www.wikidata.org/wiki/Q3487816> . # Kunigunde of Poland
+  # oo 1328 Bernhard III., Fürst von Anhalt-Bernburg, d. 1348-08-20, https://www.wikidata.org/wiki/Q2402337
+<https://www.wikidata.org/wiki/Q598379>
+  # Wenzel I., Kurfürst und Herzog von Sachsen-Wittenberg, 1337~ - 1388-05-15
+  # Kurfürst und Herzog von Sachsen-Wittenberg 1370
+  # Fürst von Lüneburg 1370
+  gen:father <https://www.wikidata.org/wiki/Q699820> .
+  # and Agnes von Lindow
+  # oo Cecilia da Carrara, 1356 - 1432
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q598379> , <https://www.wikidata.org/wiki/Q21272287> ;
+	gen:startDate "1367" .
+
+<https://www.wikidata.org/wiki/Q21503260>
+  # Margarete von Sachsen-Wittenberg, d. 1429
+  gen:father <https://www.wikidata.org/wiki/Q598379> ;
+  gen:mother <https://www.wikidata.org/wiki/Q21272287> .
+  # oo 1386~ Bernhard I., Herzog zu Braunschweig-Lüneburg, Fürst von Lüneburg und Braunschweig-Wolfenbüttel, 1358a/1364b - 1434-06-11, https://www.wikidata.org/wiki/Q689386 (welfen.ttl)
+<https://www.wikidata.org/wiki/Q269289>
+  # Anna von Sachsen-Wittenberg, d. 1426-04-18
+  gen:father <https://www.wikidata.org/wiki/Q598379> ;
+  gen:mother <https://www.wikidata.org/wiki/Q21272287> .
+  # oo 1386~ Friedrich I., Herzog zu Braunschweig und Lüneburg, 1357~ - 1400-06-05, https://www.wikidata.org/wiki/Q67180 (welfen.ttl)
+# ----
+<https://www.wikidata.org/wiki/Q21272287>
+  # Cecilia da Carrara, 1356 - 1432
+  gen:father <https://www.wikidata.org/wiki/Q3081129> ; # Francesco I da Carrara
+  gen:mother <https://www.wikidata.org/wiki/Q102538410> . # Fina Buzzacarini
+  # oo 1367 Wenzel I., Kurfürst und Herzog von Sachsen-Wittenberg, 1337~ - 1388-05-15, https://www.wikidata.org/wiki/Q598379
+
+# ----
+<https://www.wikidata.org/wiki/Q6301142>
+  # Sophie von Pommern, 1376 - 1406-06-28
+  gen:father <https://www.wikidata.org/wiki/Q320937> ; # Wartislaw VI, Duke of Pomerania
+  gen:mother <https://www.wikidata.org/wiki/Q60312492> . # Anna of Mecklenburg-Stargard
+  # oo 1388-11-11 Heinrich I. der Milde, Herzog von Braunschweig und Lüneburg, Fürst von Wolfenbüttel, 1355~ - 1416-10-14, https://www.wikidata.org/wiki/Q658714
+
+
+<https://www.wikidata.org/wiki/Q3663541>
+  # Katharina von Pommern, 1465 - 1526
+  gen:father <https://www.wikidata.org/wiki/Q452699> ; # Eric II, Duke of Pomerania
+  gen:mother <https://www.wikidata.org/wiki/Q2073514> . # Sophie of Pomerania
+  # oo 1486-08 Heinrich I., der Ältere, der Friedfertige, Herzog zu Braunschweig und Lüneburg, Fürst von Braunschweig-Wolfenbüttel, 1463-06-24 - 1514-06-23, https://www.wikidata.org/wiki/Q567039
+
+# ----
+<https://www.wikidata.org/wiki/Q55362186>
+  # Mathilde von Holstein-Schauenburg, d. 1468-07-22
+  gen:father <https://www.wikidata.org/wiki/Q2039318> ; # Otto II of Holstein
+  gen:mother <https://www.wikidata.org/wiki/Q75246033> . # Elisabeth Gräfin von Hohenstein
+  # oo 1463~ Bernhard II., Herzog zu Braunschweig-Lüneburg, Fürst von Lüneburg, 1452b - 1464, https://www.wikidata.org/wiki/Q73514
+  # oo 1466 Wilhelm I. der Siegreiche, Herzog von Braunschweig-Lüneburg, 1392 - 1482-07-25, https://www.wikidata.org/wiki/Q667966
+
+# ----
+<https://www.wikidata.org/wiki/Q704939>
+  # Friedrich I., Kurfürst von Sachsen, Markgraf von Meißen, 1370-04-11 - 1428-01-04
+  gen:father <https://www.wikidata.org/wiki/Q702473> ; # Frederick III
+  gen:mother <https://www.wikidata.org/wiki/Q122857> . # Catherine of Henneberg
+  # oo Katharina von Braunschweig-Lüneburg, 1395 - 1442-12-28 (welfen.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q704939> , <https://www.wikidata.org/wiki/Q326613> ;
+	gen:startDate "1402-02-07" .
+
+<https://www.wikidata.org/wiki/Q702602>
+  # Friedrich II. der Sanftmütige, Kurfürst von Sachsen, 1412-08-22 - 1464-09-07
+  # Kurfürst von Sachsen
+  # Landgraf von Thüringen
+  gen:father <https://www.wikidata.org/wiki/Q704939> ;
+  gen:mother <https://www.wikidata.org/wiki/Q326613> .
+  # oo Margaretha von Österreich, 1416 - 1486-02-12 (habsburg.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q702602> , <https://www.wikidata.org/wiki/Q79176> ;
+	gen:startDate "1431-06-03" .
+
+<https://www.wikidata.org/wiki/Q452976>
+  # Amalia von Sachsen, 1436-08-04 - 1501-11-19
+  gen:father <https://www.wikidata.org/wiki/Q702602> ;
+  gen:mother <https://www.wikidata.org/wiki/Q79176> .
+  # oo 1452-02-21 Ludwig IX. der Reiche, Herzog von Bayern-Landshut, 1417-02-23 -1479-01-18, https://www.wikidata.org/wiki/Q61974 (wittelsbacher.ttl)
+<https://www.wikidata.org/wiki/Q682736>
+  # Ernst von Sachsen, Kurfürst von Sachsen, 1441-03-24 - 1486-08-26
+  # Kurfürst von Sachsen, Landgraf in Thüringen und Markgraf zu Meißen
+  gen:father <https://www.wikidata.org/wiki/Q702602> ;
+  gen:mother <https://www.wikidata.org/wiki/Q79176> .
+  # oo Elisabeth von Bayern, 1443-02-02 - 1484-03-05 (wittelsbacher.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q682736> , <https://www.wikidata.org/wiki/Q68285> ;
+	gen:startDate "1460-11-19" .
+
+<https://www.wikidata.org/wiki/Q527324>
+  # Margarete von Sachsen, 1469-08-04 - 1528-12-07
+  gen:father <https://www.wikidata.org/wiki/Q682736> ;
+  gen:mother <https://www.wikidata.org/wiki/Q68285> .
+  # oo 1487-02-27 Heinrich I., der Mittlere, Herzog zu Braunschweig-Lüneburg, Fürst von Lüneburg, 1468 - 1532-02-19, https://www.wikidata.org/wiki/Q64595 (welfen.ttl)
+
+
+<https://www.wikidata.org/wiki/Q539111>
+  # Sidonie von Sachsen, 1518-03-08 - 1575-01-04
+  gen:father <https://www.wikidata.org/wiki/Q719501> ; # Henry IV
+  gen:mother <https://www.wikidata.org/wiki/Q69462> . # Catherine of Mecklenburg
+  # oo 1545-05-17 Erich II. „der Jüngere“, Herzog zu Braunschweig-Lüneburg, Fürst von Calenberg, 1528-08-10 - 1584-11-17, https://www.wikidata.org/wiki/Q68304 (welfen.ttl)
+
+# ----
+<https://www.wikidata.org/wiki/Q75246144>
+  # Margarete Gräfin von Rietberg, d. 1519a
+  gen:father <https://www.wikidata.org/wiki/Q1782350> ; # Konrad V., Graf von Rietberg
+  gen:mother <https://www.wikidata.org/wiki/Q75246147> . # Jacoba Gräfin von Neuenahr
+  # oo 1483-11-16 Friedrich III. der Unruhige, Herzog von Braunschweig-Lüneburg, 1424 - 1495-03-05, https://www.wikidata.org/wiki/Q354354
+
+# ----
+<https://www.wikidata.org/wiki/Q40227060>
+  # Elisabeth von Stolberg-Wernigerode, 1438~ - 1520-09-07
+  gen:father <https://www.wikidata.org/wiki/Q894730> ; # Bodo VII, Count of Stolberg-Wernigerode
+  gen:mother <https://www.wikidata.org/wiki/Q75246131> . # Anne von Schwarzburg-Sondershausen
+  # oo 1444-05-07 Wilhelm II., Herzog von Braunschweig-Lüneburg, Fürst von Braunschweig-Wolfenbüttel und Göttingen, 1425 - 1503-07-07, https://www.wikidata.org/wiki/Q471836
+
+# ----
+<https://www.wikidata.org/wiki/Q542899>
+  # Elisabeth von Brandenburg, 1510-08-24 - 1558-05-25
+  gen:father <https://www.wikidata.org/wiki/Q61814> ; # Joachim I. Nestor, Kurfürst von Brandenburg
+  gen:mother <https://www.wikidata.org/wiki/Q66516> . # Elisabeth af Danmark
+  # oo 1525-07-07 Erich I., Herzog zu Braunschweig-Lüneburg, Fürst von Calenberg, 1470-02-16 - 1540-07-30, https://www.wikidata.org/wiki/Q66274 (welfen.ttl)
+
+
+<https://www.wikidata.org/wiki/Q1330110>
+  # Elisabeth Magdalene von Brandenburg, 1537-11-06 - 1595-09-01
+  gen:father <https://www.wikidata.org/wiki/Q506527> ; # Joachim II Hector, Kurfürst von Brandenburg
+  gen:mother <https://www.wikidata.org/wiki/Q271509> . # Hedwig Jagiellon
+  # oo 1559-02-05 Franz Otto, Herzog zu Braunschweig-Lüneburg, Fürst von Lüneburg, 1530-06-20 - 1559-04-29, https://www.wikidata.org/wiki/Q72936 (welfen.ttl)
+<https://www.wikidata.org/wiki/Q525125>
+  # Hedwig von Brandenburg, 1540-02-23 - 1602-10-21
+  gen:father <https://www.wikidata.org/wiki/Q506527> ;
+  gen:mother <https://www.wikidata.org/wiki/Q271509> .
+  # oo 1560-02-25 Julius, Herzog von Braunschweig-Lüneburg, Fürst von Braunschweig-Wolfenbüttel und Calenberg, 1528-06-29 - 1589-05-03, https://www.wikidata.org/wiki/Q62953 (welfen.ttl)
+
+
+<https://www.wikidata.org/wiki/Q76961>
+  # Wilhelmina Charlotte _Caroline_ Prinzessin von Brandenburg-Ansbach, 1683-03-01 - 1737-12-01
+  gen:father <https://www.wikidata.org/wiki/Q819667> ; # Johann Friedrich, Markgraf von Brandenburg-Ansbach
+  gen:mother <https://www.wikidata.org/wiki/Q445211> . # Eleonore Erdmuthe Prinzessin von Sachsen-Eisenach
+  # oo 1705-08-22 George II Augustus, King of Great Britain, 1683-11-10 - 1760-10-25, https://www.wikidata.org/wiki/Q131981
+
+# ----
+<https://www.wikidata.org/wiki/Q567378>
+  # Magnus I., Herzog von Sachsen-Lauenburg, 1470-01-01 - 1543-08-01
+  gen:father <https://www.wikidata.org/wiki/Q69242> ; # John V, Duke of Saxe-Lauenburg
+  gen:mother <https://www.wikidata.org/wiki/Q145241> . # Dorothea of Brandenburg
+  # oo Katharina von Braunschweig-Wolfenbüttel, 1488 - 1563-06-29
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q567378> , <https://www.wikidata.org/wiki/Q434771> ;
+	gen:startDate "1509-11-20" .
+
+<https://www.wikidata.org/wiki/Q1744428>
+  # Klara von Sachsen-Lauenburg, 1518-12-13 - 1576-03-27
+  gen:father <https://www.wikidata.org/wiki/Q567378> ;
+  gen:mother <https://www.wikidata.org/wiki/Q434771> .
+  # oo 1547-09-29 Franz, Herzog von Braunschweig-Lüneburg, 1508-11-23 - 1549-11-23, https://www.wikidata.org/wiki/Q70811
+
+
+<https://www.wikidata.org/wiki/Q2501962>
+  # Ursula von Sachsen-Lauenburg, 1552 - 1620-10-12
+  gen:father <https://www.wikidata.org/wiki/Q553550> ; # Francis I, Duke of Saxe-Lauenburg
+  gen:mother <https://www.wikidata.org/wiki/Q465382> . # Sibylle of Saxony
+  # oo 1569-03-30 Heinrich, Herzog zu Braunschweig und Lüneburg, 1533-06-04 - 1598-01-19, https://www.wikidata.org/wiki/Q65819
+
+# ----
+<https://www.wikidata.org/wiki/Q20499041>
+  # Maria Gräfin von Württemberg, 1496-07-15 - 1541-12-28
+  gen:father <https://www.wikidata.org/wiki/Q552999> ; # Henry, Count of Württemberg
+  gen:mother <https://www.wikidata.org/wiki/Q61723902> . # Eva of Salm
+  # oo 1515-01-01 Heinrich II., der Jüngere, Herzog von Braunschweig-Lüneburg, Fürst von Braunschweig-Wolfenbüttel, 1489-11-10 - 1568-06-11, https://www.wikidata.org/wiki/Q61435
+
+# ----
+<https://www.wikidata.org/wiki/Q6198423>
+  # Sophie von Mecklenburg-Schwerin, 1508-04-14 - 1541-06-17
+  gen:father <https://www.wikidata.org/wiki/Q567163> ; # Henry V, Duke of Mecklenburg
+  gen:mother <https://www.wikidata.org/wiki/Q456916> . # Ursula of Brandenburg
+  # oo 1528-06-02 Ernst I., der Bekenner, Herzog zu Braunschweig-Lüneburg, Fürst von Lüneburg-Celle, 1497-06-27 - 1546-01-11, https://www.wikidata.org/wiki/Q700441
+
+# ----
+<https://www.wikidata.org/wiki/Q75246042>
+  # Meta von Campe, d. 1580-10-16
+  gen:father <https://www.wikidata.org/wiki/Q75246043> ; # Johann III. von Campe
+  gen:mother <https://www.wikidata.org/wiki/Q104550062> . # Hille von Hodenberg
+  # oo 1524~/1527 Otto, Herzog zu Braunschweig-Lüneburg, Fürst von Lüneburg, 1495-08-24 - 1549-08-11, https://www.wikidata.org/wiki/Q67167
+
+# ----
+<https://www.wikidata.org/wiki/Q65304>
+  # Éléonore Desmier d’Olbreuse, 1639-02-03 - 1722-02-05
+  gen:father <https://www.wikidata.org/wiki/Q61866195> ; # Alexandre Desmier d’Olbreuse
+  gen:mother <https://www.wikidata.org/wiki/Q61866199> . # Jacquette Poussard du Bas-Vandré et de Saint-Marc
+  # oo 1665-09-15 Georg Wilhelm von Braunschweig-Lüneburg, Fürst von Calenberg und Lüneburg, 1624-01-26 - 1705-08-28, https://www.wikidata.org/wiki/Q61574
+
+# ----
+#<https://www.wikidata.org/wiki/Q77931>
+  # Clara Elisabeth von Meisenburg, 1648-01-14 - 1700-01-30
+  # daughter of Georg Philipp von Meysenbug, 1620 – 1669
+  # and oo Anna Elisabeth von Meysenbug, 1625 – 1680
+  # oo 1673-09 Franz Ernst Graf von Platen, 1631 - 1709-06-14, https://www.wikidata.org/wiki/Q1445768
+# ----
+#<https://www.wikidata.org/wiki/Q1445768>
+  # Franz Ernst Graf von Platen, 1631 - 1709-06-14
+  # Freiherr von Platen
+  # Graf von Platen 1689
+  # oo Clara Elisabeth von Meisenburg, 1648-01-14 - 1700-01-30
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1445768> , <https://www.wikidata.org/wiki/Q77931> ;
+	gen:startDate "1673-09" .
