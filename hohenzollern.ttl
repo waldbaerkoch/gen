@@ -4,10 +4,24 @@
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
+<https://www.wikidata.org/wiki/Q55830004>
+  # Maria von Nürnberg, 1249~ - 1299-03-28b
+  gen:father <https://www.wikidata.org/wiki/Q370902> ; # Friedrich III., Burggraf von Nürnberg
+  gen:mother <https://www.wikidata.org/wiki/Q55445613> . # Elisabeth of Andechs-Merania
+  # oo 1313-03-03b Ludwig V. von Oettingen, 1245~ - 1313-11-09, https://www.wikidata.org/wiki/Q44191955
+<https://www.wikidata.org/wiki/Q64084>
+  # Friedrich IV., Burggraf von Nürnberg, 1287 - 1332-05-19
+  gen:father <https://www.wikidata.org/wiki/Q370902> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75289133> . # Helene von Sachsen
+  # oo Margaretha von Görz und Tirol, daughter of Albrecht II. von Görz und Tirol and Agnes von Hohenberg
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q64084> , <https://www.wikidata.org/wiki/Q66818919> ;
+	gen:startDate "1307-08-02" .
+
 <https://www.wikidata.org/wiki/Q62804>
   # Johann II., Burggraf von Nürnberg, 1309? - 1357-10-07
-  gen:father <https://www.wikidata.org/wiki/Q64084> ; # Friedrich IV., Burggraf von Nürnberg
-  gen:mother <https://www.wikidata.org/wiki/Q66818919> . # Margaret of Görz-Tyrol
+  gen:father <https://www.wikidata.org/wiki/Q64084> ;
+  gen:mother <https://www.wikidata.org/wiki/Q66818919> .
   # oo Elisabeth von Henneberg, d. 1377
   []
     gen:spouse <https://www.wikidata.org/wiki/Q62804> , <https://www.wikidata.org/wiki/Q66818837> .
@@ -27,7 +41,7 @@
 
 <https://www.wikidata.org/wiki/Q63886>
   # Friedrich V., Burggraf von Nürnberg, 1332 - 1398-01-21
-  # Burggraf von Nürnberg 1357-10-07
+  # Burggraf von Nürnberg 1357-10-07 - 1397
   gen:father <https://www.wikidata.org/wiki/Q62804> ;
   gen:mother <https://www.wikidata.org/wiki/Q66818837> .
   # oo Elisabeth von Meißen, 1329-11-22 - 1375-04-21 (wettiner.ttl)
@@ -55,6 +69,16 @@
   gen:father <https://www.wikidata.org/wiki/Q63886> ;
   gen:mother <https://www.wikidata.org/wiki/Q465426> .
   # oo 1383-10-15 Hermann II. der Gelehrte, Landgraf von Hessen, 1342~ - 1413-06-10, https://www.wikidata.org/wiki/Q469389 (reginare.ttl)
+<https://www.wikidata.org/wiki/Q63884>
+  # Johann III., Burggraf von Nürnberg, Markgraf von Brandenburg-Kulmbach, 1369 - 1420-06-11
+  # Burggraf von Nürnberg 1397
+  # Markgraf von Brandenburg-Kulmbach 1398
+  gen:father <https://www.wikidata.org/wiki/Q63886> ;
+  gen:mother <https://www.wikidata.org/wiki/Q465426> .
+  # oo Margarethe von Böhmen, 1373-09-29 - 1410-06-04 (mark.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q63884> , <https://www.wikidata.org/wiki/Q2057054> ;
+	gen:startDate "1381" .
 <https://www.wikidata.org/wiki/Q61336>
   # Friedrich I., Kurfürst von Brandenburg, 1371-09-21 - 1440-09-20
   # Burggraf von Nürnberg (VI.) 1397 - 1427
@@ -69,6 +93,11 @@
     gen:spouse <https://www.wikidata.org/wiki/Q61336> , <https://www.wikidata.org/wiki/Q71173> ;
 	gen:startDate "1401-09-18" .
 
+<https://www.wikidata.org/wiki/Q10787418>
+  # Elisabeth von Nürnberg, d. 1429
+  gen:father <https://www.wikidata.org/wiki/Q63884> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2057054> .
+  # oo 1412 Eberhard III. "der Milde", Graf von Württemberg, 1364 - 1417-05-16, https://www.wikidata.org/wiki/Q62959
 <https://www.wikidata.org/wiki/Q299925>
   # Cäcilie von Brandenburg, 1405 - 1449-01-04
   gen:father <https://www.wikidata.org/wiki/Q61336> ;
@@ -283,6 +312,11 @@
   gen:father <https://www.wikidata.org/wiki/Q57920> ;
   gen:mother <https://www.wikidata.org/wiki/Q267483> .
   # oo 1597-11-27 Christian 4., Konge af Danmark og Norge, 1577-04-12 - 1648-02-28, https://www.wikidata.org/wiki/Q153586 (oldenburg.ttl)
+<https://www.wikidata.org/wiki/Q65871>
+  # Barbara Sophia Markgräfin von Brandenburg, 1584-11-16 - 1636-02-13
+  gen:father <https://www.wikidata.org/wiki/Q57920> ;
+  gen:mother <https://www.wikidata.org/wiki/Q267483> .
+  # oo 1609-11-05 Johann Friedrich, Herzog von Württemberg, 1582-05-05 - 1628-07-18, https://www.wikidata.org/wiki/Q302942
 
 <https://www.wikidata.org/wiki/Q166675>
   # Georg Wilhelm, Kurfürst von Brandenburg, 1595-11-13 - 1640-12-01
@@ -438,7 +472,7 @@
   # Markgraf von Brandenburg-Ansbach 1634-09-06
   gen:father <https://www.wikidata.org/wiki/Q182779> ;
   gen:mother <https://www.wikidata.org/wiki/Q469741> .
-  # oo Sophie Margarete zu Oettingen-Oettingen, 1634-12-19 - 1664-08-05
+  # oo Sophie Margarete zu Oettingen-Oettingen, 1634-12-19 - 1664-08-05 (württemberg.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q657578> , <https://www.wikidata.org/wiki/Q6411815> ;
 	gen:startDate "1651-10-15" .
@@ -567,7 +601,7 @@
   # Anna Maria von Brandenburg-Ansbach, 1526-12-28 - 1589-05-20
   gen:father <https://www.wikidata.org/wiki/Q384941> ;
   gen:mother <https://www.wikidata.org/wiki/Q524093> .
-  # oo 1544-02-24 Christoph, Herzog von Württemberg, 1515-05-12 - 1568-12-28, https://www.wikidata.org/wiki/Q694197 (wittelsbacher.ttl)
+  # oo 1544-02-24 Christoph, Herzog von Württemberg, 1515-05-12 - 1568-12-28, https://www.wikidata.org/wiki/Q694197
 <https://www.wikidata.org/wiki/Q509574>
   # Sabina von Brandenburg-Ansbach, 1529-05-12 - 1575-11-02
   gen:father <https://www.wikidata.org/wiki/Q384941> ;
@@ -605,6 +639,30 @@
 
 
 # ----
+<https://www.wikidata.org/wiki/Q44191955>
+  # Ludwig V. von Oettingen, 1245~ - 1313-11-09
+  gen:father <https://www.wikidata.org/wiki/Q44191941> . # Ludwig III. von Oettingen
+  # oo Maria von Nürnberg, 1249~ - 1299-03-28b
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q44191955> , <https://www.wikidata.org/wiki/Q55830004> ;
+	gen:startDate "1313-03-03b" .
+
+<https://www.wikidata.org/wiki/Q44191969>
+  # Ludwig VI. von Oettingen, 1288 - 1347-09-29
+  gen:father <https://www.wikidata.org/wiki/Q44191955> ;
+  gen:mother <https://www.wikidata.org/wiki/Q55830004> .
+  # oo Agnes von Württemberg, 1295 - 1317-01-18
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q44191969> , <https://www.wikidata.org/wiki/Q44191723> ;
+	gen:startDate "1313-03-03" .
+
+<https://www.wikidata.org/wiki/Q1426441>
+  # Irmengard von Oettingen, 1304 - 1389-11-06
+  gen:father <https://www.wikidata.org/wiki/Q44191969> ;
+  gen:mother <https://www.wikidata.org/wiki/Q44191723> .
+  # oo 1320 Adolf, Titular-Pfalzgraf bei Rhein, 1300-09-27 - 1327-01-29, https://www.wikidata.org/wiki/Q66882 (wittelsbacher.ttl)
+
+# ----
 <https://www.wikidata.org/wiki/Q26214199>
   # Heinrich VIII., Graf von Henneberg-Schleusingen, d. 1347-09-10
   gen:father <https://www.wikidata.org/wiki/Q121846> ; # Berthold VII., Graf von Henneberg-Schleusingen
@@ -619,6 +677,11 @@
   gen:mother <https://www.wikidata.org/wiki/Q55579391> .
   # oo Johann II., Burggraf von Nürnberg, 1309? - 1357-10-07, https://www.wikidata.org/wiki/Q62804
 
+<https://www.wikidata.org/wiki/Q1313570>
+  # Elizabeth von Henneberg-Schleusingen, 1319 - 1389-03-30
+  gen:father <https://www.wikidata.org/wiki/Q26214199> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75245771> .
+  # oo 1372-09-17b Eberhard II., Graf von Württemberg, 1315 - 1392-03-15, https://www.wikidata.org/wiki/Q69359
 <https://www.wikidata.org/wiki/Q122857>
   # Katharina von Henneberg, 1334~ - 1397-07-15
   gen:father <https://www.wikidata.org/wiki/Q26214199> ;
@@ -727,30 +790,6 @@
   gen:father <https://www.wikidata.org/wiki/Q25484320> ; # Johann Georg von Solms-Laubach
   gen:mother <https://www.wikidata.org/wiki/Q54913408> . # Marguerite of Schönburg-Glauchau
   # oo 1612-10-14 Joachim Ernst, Markgraf von Brandenburg-Ansbach, 1583-06-22 - 1625-03-07, https://www.wikidata.org/wiki/Q182779
-
-# ----
-<https://www.wikidata.org/wiki/Q6411815>
-  # Sophie Margarete zu Oettingen-Oettingen, 1634-12-19 - 1664-08-05
-  gen:father <https://www.wikidata.org/wiki/Q11928089> ; # Joachim Ernst zu Oettingen-Oettingen
-  gen:mother <https://www.wikidata.org/wiki/Q54864014> . # Anne Sybille de Solms-Sonnenwalde
-  # oo 1651-10-15 Albrecht II., Markgraf von Brandenburg-Ansbach, 1620-09-28 - 1667-01-01, https://www.wikidata.org/wiki/Q657578
-
-# ----
-<https://www.wikidata.org/wiki/Q63472>
-  # Friedrich Carl Herzog von Württemberg-Winnental, 1652-09-12 - 1697-12-20
-  gen:father <https://www.wikidata.org/wiki/Q61362> ; # Eberhard III, Duke of Württemberg
-  gen:mother <https://www.wikidata.org/wiki/Q6066434> . # Anna Katharina Dorothea of Salm-Kyrburg
-  # oo Eleonore Juliane von Brandenburg-Ansbach, 1663-10-23 - 1724-03-04
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q63472> , <https://www.wikidata.org/wiki/Q433399> ;
-	gen:startDate "1682-10-31" .
-
-<https://www.wikidata.org/wiki/Q461515>
-  # Christiane Charlotte von Württemberg-Winnental, 1694-08-20 - 1729-12-25
-  # Regentin von Brandenburg-Ansbach 1723-01-07 - 1729
-  gen:father <https://www.wikidata.org/wiki/Q63472> ;
-  gen:mother <https://www.wikidata.org/wiki/Q433399> .
-  # oo 1709-08-28 Wilhelm Friedrich, Markgraf von Brandenburg-Ansbach, 1686-01-08 - 1723-01-07, https://www.wikidata.org/wiki/Q568415
 
 # ----
 <https://www.wikidata.org/wiki/Q66845>
