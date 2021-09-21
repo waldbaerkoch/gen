@@ -1,0 +1,389 @@
+@base <schönburg.ttl> .
+@prefix gen: <http://jjkoch.de/gen#> .
+@prefix wdata: <https://www.wikidata.org/wiki/> .
+@prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://www.wikidata.org/wiki/Q21415803>
+  # Ernst III., Freiherr von Schönburg-Waldenburg-Lichtenstein, 1486 - 1534-09-12
+  gen:father <https://www.wikidata.org/wiki/Q21415799> ; # Ernst I. Freiherr von Schönburg-Waldenburg
+  gen:mother <#Anna_von_Rieneck> . # Anna Gräfin von Rieneck
+  # oo Amalie Burggräfin von Leisnig, Heiress of Penig, 1508-07-22 - 1560-02-23, daughter of Hugo, Burggraf von Leisnig and Dorothea Schenk von Landsberg
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q21415803> , <https://www.wikidata.org/wiki/Q99689790> ;
+	gen:startDate "1526" .
+
+<https://www.wikidata.org/wiki/Q21415930> # -> Schönburg-Glauchau
+  # Georg I., Freiherr von Schönburg-Glauchau, 1529 - 1585-09-13
+  gen:father <https://www.wikidata.org/wiki/Q21415803> ;
+  gen:mother <https://www.wikidata.org/wiki/Q99689790> .
+<https://www.wikidata.org/wiki/Q21415648> # -> Schönburg-Waldenburg
+  # Hugo I., Herr von Schönburg zu Lichtenstein und Neu-Schönburg, 1530-09-08 - 1566-02-04
+  gen:father <https://www.wikidata.org/wiki/Q21415803> ;
+  gen:mother <https://www.wikidata.org/wiki/Q99689790> .
+  # oo Anna Gräfin von Gleichen-Remda, 1532 - 1570-04-22
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q21415648> , <https://www.wikidata.org/wiki/Q99689791> ;
+	gen:startDate "1556-04-22" .
+<https://www.wikidata.org/wiki/Q21416211> # -> Schönburg-Penig
+  # Wolf II., Herr von Schönburg zu Glauchau, Waldenburg und Wechselburg, 1532-10-30 - 1581-09-18
+  gen:father <https://www.wikidata.org/wiki/Q21415803> ;
+  gen:mother <https://www.wikidata.org/wiki/Q99689790> .
+
+
+# Schönburg-Glauchau
+<https://www.wikidata.org/wiki/Q21415930>
+  # Georg I., Freiherr von Schönburg-Glauchau, 1529 - 1585-09-13
+  gen:father <https://www.wikidata.org/wiki/Q21415803> ;
+  gen:mother <https://www.wikidata.org/wiki/Q99689790> .
+  # oo Dorothea Reuß zu Greiz, 1523 - 1572-08-21
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q21415930> , <https://www.wikidata.org/wiki/Q99689822> ;
+	gen:startDate "1551-02-12" .
+
+<https://www.wikidata.org/wiki/Q54913408>
+  # Margarete von Schönburg-Glauchau, 1554 - 1606-06-29
+  gen:father <https://www.wikidata.org/wiki/Q21415930> ;
+  gen:mother <https://www.wikidata.org/wiki/Q99689822> .
+  # oo 1572-12-07 Johann Georg I., Graf zu Solms-Laubach, 1546-11-26 - 1600-08-19, https://www.wikidata.org/wiki/Q25484320
+
+
+# Schönburg-Waldenburg
+<https://www.wikidata.org/wiki/Q21415648>
+  # Hugo I., Herr von Schönburg zu Lichtenstein und Neu-Schönburg, 1530-09-08 - 1566-02-04
+  gen:father <https://www.wikidata.org/wiki/Q21415803> ;
+  gen:mother <https://www.wikidata.org/wiki/Q99689790> .
+  # oo Anna Gräfin von Gleichen-Remda, 1532 - 1570-04-22
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q21415648> , <https://www.wikidata.org/wiki/Q99689791> ;
+	gen:startDate "1556-04-22" .
+
+<https://www.wikidata.org/wiki/Q61141044>
+  # Georg II., Freiherr von Schönburg-Waldenburg, 1558-10-05 - 1611-06-02
+  # Herr von Waldenburg 1582
+  gen:father <https://www.wikidata.org/wiki/Q21415648> ;
+  gen:mother <https://www.wikidata.org/wiki/Q99689791> .
+  # oo Eva Schenk von Landsberg, d. 1613-08-31
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q61141044> , <reuß.ttl#Eva_Schenk_von_Landsberg> ;
+	gen:startDate "1579-11-23" .
+<https://www.wikidata.org/wiki/Q21415650>
+  # Hugo II., Freiherr von Schönburg zu Hartenstein und Oelsnitz, 1559-12-13 - 1606-10-23
+  # Herr von Hartenstein 1582
+  gen:father <https://www.wikidata.org/wiki/Q21415648> ;
+  gen:mother <https://www.wikidata.org/wiki/Q99689791> .
+  # oo Agnes Reuß zu Gera, 1567-06-26 - 1588-08-01
+  []
+    gen:startDate <https://www.wikidata.org/wiki/Q21415650> , <reuß.ttl#Agnes_Reuß_zu_Gera> ;
+	gen:startDate "1582-12-03" .
+  # oo Katharina Wild- und Rheingräfin von Salm-Kyrburg-Mörchingen, 1574-02-02 - 1654-01-09 (rheingrafen.ttl)
+  []
+    gen:startDate <https://www.wikidata.org/wiki/Q21415650> , <https://www.wikidata.org/wiki/Q66317300> ;
+	gen:startDate "1590-07-13" .
+<https://www.wikidata.org/wiki/Q21416150> # -> Schönburg-Lichtenstein
+  # Veit III. von Schönburg-Lichtenstein, 1563-06-15 - 1622-05-29
+  # Herr von Lichtenstein 1582
+  gen:father <https://www.wikidata.org/wiki/Q21415648> ;
+  gen:mother <https://www.wikidata.org/wiki/Q99689791> .
+<https://www.wikidata.org/wiki/Q75579314>
+  # Marie von Schönburg-Waldenburg, 1565-08-20 - 1628-03-09
+  gen:father <https://www.wikidata.org/wiki/Q21415648> ;
+  gen:mother <https://www.wikidata.org/wiki/Q99689791> .
+  # oo 1583-11-25 Heinrich V. Reuß zu Greiz, 1549-11-04 - 1604-10-09, https://www.wikidata.org/wiki/Q75391838
+
+<#Anna_Magdalene_von_Schönburg-Glauchau>
+  # Anna Magdalene von Schönburg-Glauchau, 1582-02-01 - 1615-01-07
+  gen:father <https://www.wikidata.org/wiki/Q61141044> ;
+  gen:mother <reuß.ttl#Eva_Schenk_von_Landsberg> .
+  # oo 1602-02-21 Heinrich III. Reuß zu Burgk, 1578-12-22 - 1616-06-24, https://www.wikidata.org/wiki/Q105688079
+<https://www.wikidata.org/wiki/Q21415961>
+  # Otto Albrecht, Freiherr von Schönburg-Waldenburg-Hartenstein, 1601-06-02 - 1681-06-25
+  gen:father <https://www.wikidata.org/wiki/Q21415650> ;
+  gen:mother <https://www.wikidata.org/wiki/Q66317300> .
+  # oo Ernestine Reuß zu Gera, 1618-03-19 - 1650-02-23
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q21415961> , <https://www.wikidata.org/wiki/Q75454498> ;
+	gen:startDate "1639-10-20" .
+
+<https://www.wikidata.org/wiki/Q75454645>
+  # Ernestine Freiin von Schönburg-Waldenburg-Hartenstein, 1642-09-06 - 1713-03-03
+  gen:father <https://www.wikidata.org/wiki/Q21415961> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75454498> .
+  # oo 1666-10-21 Friedrich Sigismund I. Graf zu Solms-Baruth, 1627-06-28 - 1696-01-07, https://www.wikidata.org/wiki/Q26206160
+<https://www.wikidata.org/wiki/Q21415981>
+  # Otto Ludwig, Graf von Schönburg-Waldenburg zu Hartenstein, 1643-09-16 - 1701-11-22
+  # Herr zu Waldenburg, Hartenstein, Stein und Lichtenstein
+  # Graf von Schönburg zu Hartenstein 1700-08-07
+  gen:father <https://www.wikidata.org/wiki/Q21415961> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75454498> .
+  # oo Sophie Magdalena Gräfin von Leiningen-Westerburg, 1651-03-23 - 1726-10-17 (lippe.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q21415981> , <https://www.wikidata.org/wiki/Q54960645> ;
+	gen:startDate "1688-01-12" .
+
+<https://www.wikidata.org/wiki/Q21415907> # -> Schönburg-Hartenstein
+  # Georg Albrecht, Graf von Schönburg zu Hartenstein, 1673-05-25 - 1716-08-15
+  gen:father <https://www.wikidata.org/wiki/Q21415981> ;
+  gen:mother <https://www.wikidata.org/wiki/Q54960645> .
+<#Ernestine_Eleonore_von_Schönburg-Waldenburg>
+  # Ernestine Eleonore Gräfin von Schönburg-Waldenburg, 1677-11-02 - 1741-08-02
+  gen:father <https://www.wikidata.org/wiki/Q21415981> ;
+  gen:mother <https://www.wikidata.org/wiki/Q54960645> .
+  # oo 1701-07-21 Heinrich XV., Graf Reuß zu Lobenstein, 1674-09-24 - 1739-05-12, https://www.wikidata.org/wiki/Q55875293
+<https://www.wikidata.org/wiki/Q21415855> # -> Schönburg-Stein
+  # Ludwig Friedrich Graf von Schönburg zu Stein und Förbau, 1681-11-04 - 1736-04-03
+  gen:father <https://www.wikidata.org/wiki/Q21415981> ;
+  gen:mother <https://www.wikidata.org/wiki/Q54960645> .
+<https://www.wikidata.org/wiki/Q52554727>
+  # Louise Albertine Gräfin von Schönburg-Wechselburg, 1686-03-09 - 1740-12-07
+  gen:father <https://www.wikidata.org/wiki/Q21415981> ;
+  gen:mother <https://www.wikidata.org/wiki/Q54960645> .
+  # oo 1703-11-10 Karl Otto Graf zu Solms-Laubach-Utphe und Tecklenburg, 1673-09-13 - 1743-02-16, https://www.wikidata.org/wiki/Q27103957
+
+
+# Schönburg-Hartenstein
+<https://www.wikidata.org/wiki/Q21415907>
+  # Georg Albrecht, Graf von Schönburg zu Hartenstein, 1673-05-25 - 1716-08-15
+  gen:father <https://www.wikidata.org/wiki/Q21415981> ;
+  gen:mother <https://www.wikidata.org/wiki/Q54960645> .
+  # oo Sophie Sabine Gräfin zu Wied, 1677-11-10 - 1710-02-17
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q21415907> , <https://www.wikidata.org/wiki/Q75454564> ;
+	gen:startDate "1698-08-25" .
+
+<https://www.wikidata.org/wiki/Q75454562>
+  # Johanna Sophie Elisabeth Gräfin von Schönburg-Hartenstein, 1699-05-29 - 1739-09-25
+  gen:father <https://www.wikidata.org/wiki/Q21415907> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75454564> .
+  # oo 1720-07-20 Franz Heinrich, Graf und Herr von Schönburg-Wechselburg zu Glauchau und Waldenburg, 1682-05-15 - 1746-09-03, https://www.wikidata.org/wiki/Q21415831
+
+
+# Schönburg-Stein
+<https://www.wikidata.org/wiki/Q21415855>
+  # Ludwig Friedrich Graf von Schönburg zu Stein und Förbau, 1681-11-04 - 1736-04-03
+  gen:father <https://www.wikidata.org/wiki/Q21415981> ;
+  gen:mother <https://www.wikidata.org/wiki/Q54960645> .
+  # oo Sophie Freiin von Stein zu Nord und Ostheim, 1688-11-13 - 1748-01-23
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q21415855> , <https://www.wikidata.org/wiki/Q75454501> ;
+	gen:startDate "1706-01-27" .
+
+<https://www.wikidata.org/wiki/Q21415592>
+  # Albrecht Carl Friedrich Graf von Schönburg zu Stein und Förbau, 1710-11-20 - 1765-06-07
+  gen:father <https://www.wikidata.org/wiki/Q21415855> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75454501> .
+  # oo Friederike Karoline Henriette von der Marwitz, 1720-08-04 - 1763-04-22
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q21415592> , <https://www.wikidata.org/wiki/Q75454510> ;
+	gen:startDate "1743-10-28" .
+
+<https://www.wikidata.org/wiki/Q21415969>
+  # Otto Carl Friedrich, Fürst von Schönburg, 1758-02-02 - 1800-01-29
+  # Graf und Herr von Schönburg
+  # Fürst von Schönburg 1790-10-09
+  gen:father <https://www.wikidata.org/wiki/Q21415592> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75454510> .
+  # oo Henriette Eleonore Elisabeth Gräfin Reuß zu Köstritz, 1755-03-28 - 1829-09-14
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q21415969> , <https://www.wikidata.org/wiki/Q61889381> ;
+	gen:startDate "1779-12-08" .
+
+<https://www.wikidata.org/wiki/Q61737350>
+  # Caroline Alexandrine Henriette Jeanette von Schönburg-Waldenburg, 1780-10-04 - 1809-08-29
+  gen:father <https://www.wikidata.org/wiki/Q21415969> ;
+  gen:mother <https://www.wikidata.org/wiki/Q61889381> .
+  # oo 1799-07-04 Henrich, Graf zu Stolberg-Wernigerode, 1772-09-25 - 1854-02-16, https://www.wikidata.org/wiki/Q99638
+
+
+# Schönburg-Penig
+<https://www.wikidata.org/wiki/Q21416211>
+  # Wolf II., Herr von Schönburg zu Glauchau, Waldenburg und Wechselburg, 1532-10-30 - 1581-09-18
+  gen:father <https://www.wikidata.org/wiki/Q21415803> ;
+  gen:mother <https://www.wikidata.org/wiki/Q99689790> .
+  # oo Anna Schenk von Landsberg, d. 1568-09-13
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q21416211> , <reuß.ttl#Anna_Schenk_von_Landsberg> ;
+	gen:startDate "1556b" .
+  # oo Johanna von Schärffenberg, 1553-04-30 - 1582, daughter of Ulrich von Schärffenberg und Johanna von Polheim
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q21416211> , <#Johanna_von_Schärffenberg> ;
+	gen:startDate "1570-08-13" .
+
+# jüngeren Linie Schönburg-Glauchau
+<https://www.wikidata.org/wiki/Q21416213>
+  # Wolf III., Herr von Schönburg, 1556-09-08 - 1612-08-17
+  gen:father <https://www.wikidata.org/wiki/Q21416211> ;
+  gen:mother <reuß.ttl#Anna_Schenk_von_Landsberg> .
+  # oo Elisabeth Tschernembl, 1563-09-15 - 1601-03-28, daughter of Johann Tschernembl and Barbara von Starchenberg
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q21416213> , <#Elisabeth_Tschernembl> ;
+	gen:startDate "1581-08-27" .
+  # oo Anna Barbara Reuß zu Greiz, 1585-04-22 - 1629-05-05
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q21416213> , <reuß.ttl#Anna_Barbara_Reuß-Greiz> ;
+	gen:startDate "1601-11-16" .
+
+<https://www.wikidata.org/wiki/Q75454560>
+  # Johann Kaspar von Schönburg-Forderglauchau-Penig, 1594-12-27 - 1644-01-23
+  gen:father <https://www.wikidata.org/wiki/Q21416213> ;
+  gen:mother <#Elisabeth_Tschernembl> .
+  # oo Sophie Marie Reuß zu Burgk, 1614-06-18 - 1690-05-21
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75454560> , <https://www.wikidata.org/wiki/Q75454561> ;
+	gen:startDate "1636-10-02" .
+<https://www.wikidata.org/wiki/Q21416204>
+  # Wolf Heinrich I., Herr von Schönburg-Glauchau und Waldenburg und Wechselburg, 1605-11-07 - 1657-12-05
+  gen:father <https://www.wikidata.org/wiki/Q21416213> ;
+  gen:mother <reuß.ttl#Anna_Barbara_Reuß-Greiz> .
+  # oo Judith Eva Reuß zu Burgk, 1614-12-26 - 1666-11-18
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q21416204> , <https://www.wikidata.org/wiki/Q75454556> ;
+	gen:startDate "1636-07-03" .
+
+<https://www.wikidata.org/wiki/Q75454557>
+  # Elisabeth Magdalene Sophie von Schönburg-Penig, 1642-08-18 - 1716-03-12
+  gen:father <https://www.wikidata.org/wiki/Q75454560> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75454561> .
+  # oo 1675-02-14 Samuel Heinrich, Graf von Schönburg-Wechselburg zu Glauchau und Waldenburg, 1642-09-26 - 1706-06-20, https://www.wikidata.org/wiki/Q21416104
+<https://www.wikidata.org/wiki/Q21416104>
+  # Samuel Heinrich, Graf von Schönburg-Wechselburg zu Glauchau und Waldenburg, 1642-09-26 - 1706-06-20
+  # Reichsgraf 1700-08-07
+  # Graf von Schönburg, zu Wechselburg 1700
+  gen:father <https://www.wikidata.org/wiki/Q21416204> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75454556> .
+  # oo Elisabeth Magdalene Sophie von Schönburg-Penig, 1642-08-18 - 1716-03-12
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q21416104> , <https://www.wikidata.org/wiki/Q75454557> ;
+	gen:startDate "1675-02-14" .
+
+<https://www.wikidata.org/wiki/Q21415831>
+  # Franz Heinrich, Graf und Herr von Schönburg-Wechselburg zu Glauchau und Waldenburg, 1682-05-15 - 1746-09-03
+  gen:father <https://www.wikidata.org/wiki/Q21416104> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75454557> .
+  # oo Johanna Sophie Elisabeth Gräfin von Schönburg-Hartenstein, 1699-05-29 - 1739-09-25
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q21415831> , <https://www.wikidata.org/wiki/Q75454562> ;
+	gen:startDate "1720-07-20" .
+
+<https://www.wikidata.org/wiki/Q21415702>
+  # Karl Heinrich II., Graf und Herr von Schönburg-Wechselburg zu Glauchau, 1729-10-23 - 1800-06-04
+  gen:father <https://www.wikidata.org/wiki/Q21415831> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75454562> .
+  # oo Christiane Wilhelmine Gräfin von Einsiedel, 1726-09-24 - 1798-12-13
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q21415702> , <#Christiane_Wilhelmine_von_Einsiedel> ;
+	gen:startDate "1756-06-21" .
+<https://www.wikidata.org/wiki/Q75454549>
+  # Ernestine Henriette Sophie Gräfin von Schönburg zu Forderglauchau und Wechselburg, 1736-12-02 - 1768-12-10
+  gen:father <https://www.wikidata.org/wiki/Q21415831> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75454562> .
+  # oo 1754-02-13 Heinrich XXIII. Graf Reuß zu Köstritz, 1722-12-09 - 1787-09-03, https://www.wikidata.org/wiki/Q75391843
+
+<https://www.wikidata.org/wiki/Q9374417>
+  # Wilhelm Albrecht Heinrich, Graf von Schönburg zu Forderglauchau, 1762-01-26 - 1815-09-02
+  gen:father <https://www.wikidata.org/wiki/Q21415702> ;
+  gen:mother <#Christiane_Wilhelmine_von_Einsiedel> .
+  # oo Anna _Albertine_ Leopoldina Wilhelmina Gräfin von Wartensleben, 1775-09-11 - 1826-12-21, daughter of Ferdinand Moritz Graf von Wartensleben and Andreatte Auguste von Kleist
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q9374417> , <#Albertine_von_Wartensleben> ;
+	gen:startDate "1799-05-16" .
+
+<https://www.wikidata.org/wiki/Q75346559>
+  owl:sameAs <https://www.wikidata.org/wiki/Q21415588> ;
+  # Karl Heinrich Alban Graf von Schönburg-Forderglauchau, 1804-11-18 - 1864-03-23
+  gen:father <https://www.wikidata.org/wiki/Q9374417> ;
+  gen:mother <#Albertine_von_Wartensleben> .
+  # oo Amalie Raugräfin von Jenison-Walworth, 1806-01-11 - 1880-04-02 (beauclerk.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75346559> , <https://www.wikidata.org/wiki/Q75346561> ;
+	gen:startDate "1824-01-15" .
+
+<https://www.wikidata.org/wiki/Q75346987>
+  # Olga Clara Gräfin von Schönburg-Glauchau, 1831-01-28 - 1868
+  gen:father <https://www.wikidata.org/wiki/Q75346559> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75346561> .
+  # oo 1852-04-20 Wilhelm Paul Ludwig, Fürst zu Löwenstein-Wertheim-Freudenberg, 1817-03-19 - 1887-03-10, https://www.wikidata.org/wiki/Q7244276 (wittelsbacher.ttl)
+
+
+# Schönburg-Lichtenstein
+<https://www.wikidata.org/wiki/Q21416150>
+  # Veit III. von Schönburg-Lichtenstein, 1563-06-15 - 1622-05-29
+  # Herr von Lichtenstein 1582
+  gen:father <https://www.wikidata.org/wiki/Q21415648> ;
+  gen:mother <https://www.wikidata.org/wiki/Q99689791> .
+  # oo Katharina Gräfin von Everstein, 1579-07-26 - 1617-09-21 (lippe.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q21416150> , <https://www.wikidata.org/wiki/Q99689873> ;
+	gen:startDate "1598-05-07" .
+
+<https://www.wikidata.org/wiki/Q21415918>
+  # Georg Ernst, Herr von Schönburg-Lichtenstein, 1601-03-13 - 1664-03-23
+  gen:father <https://www.wikidata.org/wiki/Q21416150> ;
+  gen:mother <https://www.wikidata.org/wiki/Q99689873> .
+  # oo Benigna Freiin zu Schwanenberg, 1599-04-18 - 1648-12-17
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q21415918> , <https://www.wikidata.org/wiki/Q99689876> ;
+	gen:startDate "1623-11-16" .
+
+<https://www.wikidata.org/wiki/Q99689867>
+  # Katharina Elisabeth von Schönburg-Lichtenstein, 1625-04-27 - 1650-10-10
+  gen:father <https://www.wikidata.org/wiki/Q21415918> ;
+  gen:mother <https://www.wikidata.org/wiki/Q99689876> .
+  # oo 1647 Siegmund Seyfried Graf von Promnitz, 1595-07-16 - 1654-01-30, https://www.wikidata.org/wiki/Q99689843 (hohenzollern.ttl)
+
+
+# ----
+<#Hedwig_Reuß_von_Gera>
+  # Hedwig von Gera, d. 1531
+  gen:father <https://www.wikidata.org/wiki/Q105968889> . # Heinrich XIII., Herr zu Gera und Hartenstein, d. 1538-04-12
+  # and oo Magdalene von Minicz
+  # oo Johann II. Graf von Gleichen-Rembda, 1504b - 1545-07-16, https://www.wikidata.org/wiki/Q61139105
+# ----
+<https://www.wikidata.org/wiki/Q61139105>
+  # Johann II. Graf von Gleichen-Rembda, 1504b - 1545-07-16
+  gen:father <https://www.wikidata.org/wiki/Q61138566> . # Ernst XIII (XI, XIV) von Gleichen-Remda
+  # and Margarethe Schenkin von Tautenburg
+  # oo Hedwig von Gera, d. 1531
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q61139105> , <#Hedwig_Reuß_von_Gera> .
+
+<https://www.wikidata.org/wiki/Q99689791>
+  # Anna Gräfin von Gleichen-Remda, 1532 - 1570-04-22
+  gen:father <https://www.wikidata.org/wiki/Q61139105> ;
+  gen:mother <#Hedwig_Reuß_von_Gera> .
+  # oo 1556-04-22 Hugo I., Herr von Schönburg zu Lichtenstein und Neu-Schönburg, 1530-09-08 - 1566-02-04, https://www.wikidata.org/wiki/Q21415648
+
+# ----
+<https://www.wikidata.org/wiki/Q75454564>
+  # Sophie Sabine Gräfin zu Wied, 1677-11-10 - 1710-02-17
+  gen:father <https://www.wikidata.org/wiki/Q75454566> ; # Georg Hermann Graf zu Wied
+  gen:mother <https://www.wikidata.org/wiki/Q75454568> . # Johanna Elisabeth Gräfin zu Leiningen-Westerburg
+  # oo 1698-08-25 Georg Albrecht, Graf von Schönburg zu Hartenstein, 1673-05-25 - 1716-08-15, https://www.wikidata.org/wiki/Q21415907
+
+# ----
+<https://www.wikidata.org/wiki/Q75454501>
+  # Sophie Freiin von Stein zu Nord und Ostheim, 1688-11-13 - 1748-01-23
+  gen:father <https://www.wikidata.org/wiki/Q29880042> ; # Erdmann Freiherr von Stein zu Nord und Ostheim
+  gen:mother <https://www.wikidata.org/wiki/Q75454505> . # Erdmuthe Sophie Freiin von Stein zu Nord und Ostheim
+  # oo 1706-01-27 Ludwig Friedrich Graf von Schönburg zu Stein und Förbau, 1681-11-04 - 1736-04-03, https://www.wikidata.org/wiki/Q21415855
+
+# ----
+<https://www.wikidata.org/wiki/Q75454510>
+  # Friederike Karoline Henriette von der Marwitz, 1720-08-04 - 1763-04-22
+  gen:father <https://www.wikidata.org/wiki/Q1412091> ; # Heinrich Karl von der Marwitz
+  gen:mother <https://www.wikidata.org/wiki/Q75454521> . # Albertine Eleonore Freiin von Wittenhorst-Sonsfeld
+  # oo 1743-10-28 Albrecht Carl Friedrich Graf von Schönburg zu Stein und Förbau, 1710-11-20 - 1765-06-07, https://www.wikidata.org/wiki/Q21415592
+
+# ----
+<#Christiane_Wilhelmine_von_Einsiedel>
+  # Christiane Wilhelmine Gräfin von Einsiedel, 1726-09-24 - 1798-12-13
+  gen:father <https://www.wikidata.org/wiki/Q1411884> . # Johann Georg Graf von Einsiedel
+  # and  Charlotte Gräfin von Flemming
+  # oo 1756-06-21 Karl Heinrich II., Graf und Herr von Schönburg-Wechselburg zu Glauchau, 1729-10-23 - 1800-06-04, https://www.wikidata.org/wiki/Q21415702
+
+# ----
+<https://www.wikidata.org/wiki/Q99689876>
+  # Benigna Freiin zu Schwanenberg, 1599-04-18 - 1648-12-17
+  gen:father <https://www.wikidata.org/wiki/Q99689877> ; # Jan Georg Freiherr zu Schwanenberg auf Ronsperg
+  gen:mother <https://www.wikidata.org/wiki/Q99689880> . # Elisabeth Freiin Colonna von Völs
+  # oo 1623-11-16 Georg Ernst, Herr von Schönburg-Lichtenstein, 1601-03-13 - 1664-03-23, https://www.wikidata.org/wiki/Q21415918
