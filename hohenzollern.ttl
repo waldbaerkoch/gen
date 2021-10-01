@@ -4,15 +4,56 @@
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
+#<https://www.wikidata.org/wiki/Q566478>
+  # Friedrich I. Graf von Zollern, Burggraf von Nürnberg, 1139 - 1201-07-14
+  # oo Sofie von Raabs, d. 1218~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q566478> , <https://www.wikidata.org/wiki/Q75288751> ;
+	gen:startDate "1184" .
+
+<https://www.wikidata.org/wiki/Q66597> # -> fränkische Linie
+  # Konrad I., Burggraf von Nürnberg, 1186~ - 1260~
+  # Burggraf von Nürnberg 1218
+  gen:father <https://www.wikidata.org/wiki/Q566478> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75288751> .
+<https://www.wikidata.org/wiki/Q66579> # -> schwäbische Linie
+  # Friedrich IV., Graf von Zollern, 1188~ - 1255-12-30
+  gen:father <https://www.wikidata.org/wiki/Q566478> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75288751> .
+
+
+# fränkische Linie
+<https://www.wikidata.org/wiki/Q66597>
+  # Konrad I., Burggraf von Nürnberg, 1186~ - 1260~
+  # Burggraf von Nürnberg 1218
+  gen:father <https://www.wikidata.org/wiki/Q566478> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75288751> .
+  # oo Adelheid von Frontenhausen
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q66597> , <https://www.wikidata.org/wiki/Q75288754> .
+
+<https://www.wikidata.org/wiki/Q370902>
+  # Friedrich III., Burggraf von Nürnberg, 1220~ - 1297-08-14
+  gen:father <https://www.wikidata.org/wiki/Q66597> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75288754> .
+  # oo Elisabeth von Andechs-Meran, d. 1272-12-18 (ivrea.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q370902> , <https://www.wikidata.org/wiki/Q55445613> ;
+	gen:startDate "1246" .
+  # oo Helene von Sachsen, 1247 - 1309-06-12 (askanier.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q370902> , <https://www.wikidata.org/wiki/Q75289133> ;
+	gen:startDate "1275" .
+
 <https://www.wikidata.org/wiki/Q55830004>
   # Maria von Nürnberg, 1249~ - 1299-03-28b
-  gen:father <https://www.wikidata.org/wiki/Q370902> ; # Friedrich III., Burggraf von Nürnberg
-  gen:mother <https://www.wikidata.org/wiki/Q55445613> . # Elisabeth of Andechs-Merania
+  gen:father <https://www.wikidata.org/wiki/Q370902> ;
+  gen:mother <https://www.wikidata.org/wiki/Q55445613> .
   # oo 1313-03-03b Ludwig V. von Oettingen, 1245~ - 1313-11-09, https://www.wikidata.org/wiki/Q44191955
 <https://www.wikidata.org/wiki/Q64084>
   # Friedrich IV., Burggraf von Nürnberg, 1287 - 1332-05-19
   gen:father <https://www.wikidata.org/wiki/Q370902> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75289133> . # Helene von Sachsen
+  gen:mother <https://www.wikidata.org/wiki/Q75289133> .
   # oo Margaretha von Görz und Tirol, daughter of Albrecht II. von Görz und Tirol and Agnes von Hohenberg
   []
     gen:spouse <https://www.wikidata.org/wiki/Q64084> , <https://www.wikidata.org/wiki/Q66818919> ;
@@ -221,7 +262,7 @@
   # Magdalena von Brandenburg, 1460 - 1496-06-17
   gen:father <https://www.wikidata.org/wiki/Q325948> ;
   gen:mother <https://www.wikidata.org/wiki/Q6310203> .
-  # oo 1482-06-17 Eitel Friedrich II., Graf von Hohenzollern, 1452 - 1512-06-18, https://www.wikidata.org/wiki/Q324754 (oettingen.ttl)
+  # oo 1482-06-17 Eitel Friedrich II., Graf von Hohenzollern, 1452 - 1512-06-18, https://www.wikidata.org/wiki/Q324754
 
 <https://www.wikidata.org/wiki/Q61814>
   # Joachim I. Nestor, Kurfürst von Brandenburg, 1484-02-21 - 1535-07-11
@@ -809,6 +850,11 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q40433> , <https://www.wikidata.org/wiki/Q463669> ;
 	gen:startDate "1550" .
+<https://www.wikidata.org/wiki/Q1330408>
+  # Elisabeth Markgräfin von Brandenburg-Ansbach-Kulmbach, 1494-03-25 - 1518-05-31
+  gen:father <https://www.wikidata.org/wiki/Q700425> ;
+  gen:mother <https://www.wikidata.org/wiki/Q457586> .
+  # oo 1510-09-29 Ernst, Markgraf von Baden-Durlach, 1482-10-07 - 1553-02-06, https://www.wikidata.org/wiki/Q70183 (zähringer.ttl)
 <https://www.wikidata.org/wiki/Q807710>
   # Barbara von Brandenburg-Ansbach-Kulmbach, 1495-09-24 - 1552-09-23
   gen:father <https://www.wikidata.org/wiki/Q700425> ;
@@ -865,6 +911,145 @@
   gen:mother <https://www.wikidata.org/wiki/Q432727> .
   # oo 1607-07-19 John Georg I., Kurfürst von Sachsen, 1585-03-05 - 1656-10-08, https://www.wikidata.org/wiki/Q366652 (wettiner.ttl)
 
+
+# schwäbische Linie
+<https://www.wikidata.org/wiki/Q66579>
+  # Friedrich IV., Graf von Zollern, 1188~ - 1255-12-30
+  # Burggraf von Nürnberg (II.) 1200 - 1218
+  # Graf von Zollern (IV.) 1218
+  gen:father <https://www.wikidata.org/wiki/Q566478> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75288751> .
+  # oo Elisabeth von Habsburg
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q66579> , <https://www.wikidata.org/wiki/Q75394004> ;
+	gen:startDate "1220" .
+
+<https://www.wikidata.org/wiki/Q86052>
+  # Friedrich V., Graf von Zollern, d. 1289-05-24
+  gen:father <https://www.wikidata.org/wiki/Q66579> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75394004> .
+  # oo Udilhild von Dillingen, d. 1289-05-12a
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q86052> , <https://www.wikidata.org/wiki/Q75288826> ;
+	gen:startDate "1258-01-13" .
+
+<https://www.wikidata.org/wiki/Q73981>
+  # Friedrich VI., Graf von Zollern, d. 1298-05-04
+  gen:father <https://www.wikidata.org/wiki/Q86052> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75288826> .
+  # oo Kunigunde von Baden, 1265 - 1310-07-22 (zähringer.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q73981> , <https://www.wikidata.org/wiki/Q75288823> ;
+	gen:startDate "1281-12-20" .
+
+<https://www.wikidata.org/wiki/Q74020>
+  # Friedrich VIII., Graf von Zollern, d. 1333
+  gen:father <https://www.wikidata.org/wiki/Q73981> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75288823> .
+
+<https://www.wikidata.org/wiki/Q97974>
+  # Friedrich „der Straßburger“ Graf von Hohenzollern, 1333 - 1365-03-09
+  gen:father <https://www.wikidata.org/wiki/Q74020> .
+  # oo Margarete von Hohenberg, daughter of Burchard V. Graf von Hohenberg-Wildberg
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q97974> , <https://www.wikidata.org/wiki/Q75288819> ;
+	gen:startDate "1342" .
+
+<https://www.wikidata.org/wiki/Q90956>
+  # Friedrich XI., Graf von Hohenzollern(-Hechingen), 1368 - 1401-11-26
+  gen:father <https://www.wikidata.org/wiki/Q97974> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75288819> .
+  # oo Adelheid von Fürstenberg, 1356 - 1413-03-19, daughter of Hugo Graf von Fürstenberg in Zindelstein (d. 1371-05-24) and Adelheid von Krenkingen (d. 1359-07-15)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q90956> , <https://www.wikidata.org/wiki/Q44192557> ;
+	gen:startDate "1377-01-12" .
+
+<https://www.wikidata.org/wiki/Q828486>
+  # Eitel Friedrich I., Graf von Hohenzollern, 1384 - 1439
+  gen:father <https://www.wikidata.org/wiki/Q90956> ;
+  gen:mother <https://www.wikidata.org/wiki/Q44192557> .
+  # oo Ursula Freiin von Razuns, d. 1477
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q828486> , <https://www.wikidata.org/wiki/Q75288815> ;
+	gen:startDate "1432" .
+
+<https://www.wikidata.org/wiki/Q84657>
+  # Jobst Nikolaus I., Graf von Hohenzollern, 1433 - 1488-02-09
+  gen:father <https://www.wikidata.org/wiki/Q828486> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75288815> .
+  # oo Agnes von Werdenberg-Heiligenberg, 1434 - 1467 (württemberg.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q84657> , <https://www.wikidata.org/wiki/Q75288812> ;
+	gen:startDate "1448" .
+
+<https://www.wikidata.org/wiki/Q324754>
+  # Eitel Friedrich II., Graf von Hohenzollern, 1452 - 1512-06-18
+  gen:father <https://www.wikidata.org/wiki/Q84657> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75288812> .
+  # oo Magdalena von Brandenburg, 1460 - 1496-06-17
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q324754> , <https://www.wikidata.org/wiki/Q179193> ;
+	gen:startDate "1482-06-17" .
+<https://www.wikidata.org/wiki/Q1601917>
+  # Helena Gräfin von Hohenzollern, 1462 - 1514-11-11
+  gen:father <https://www.wikidata.org/wiki/Q84657> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75288812> .
+  # oo 1484-10-20 Johann III. Truchsess von Waldburg-Zeil und Waldsee, 1458 - 1511-10-12, https://www.wikidata.org/wiki/Q93521356
+
+<https://www.wikidata.org/wiki/Q55809564>
+  owl:sameAs <https://www.wikidata.org/wiki/Q99689803> ;
+  # Maria Salome Gräfin von Hohenzollern, 1488-05-01 - 1548-08-04
+  gen:father <https://www.wikidata.org/wiki/Q324754> ;
+  gen:mother <https://www.wikidata.org/wiki/Q179193> .
+  # oo 1507-03-15 Ludwig XV., Graf von Oettingen, 1486-04-15 - 1557-03-24, https://www.wikidata.org/wiki/Q44191912
+<https://www.wikidata.org/wiki/Q325041>
+  # Eitel Friedrich III., Graf von Hohenzollern, 1494 - 1525-01-15
+  gen:father <https://www.wikidata.org/wiki/Q324754> ;
+  gen:mother <https://www.wikidata.org/wiki/Q179193> .
+  # oo Johanna van Witthem, 1471 - 1523/1544
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q325041> , <https://www.wikidata.org/wiki/Q2309561> ;
+	gen:startDate "1515" .
+
+<https://www.wikidata.org/wiki/Q464877>
+  # Karl I., Graf von Hohenzollern und Haigerloch, 1516 - 1576-03-18
+  gen:father <https://www.wikidata.org/wiki/Q325041> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2309561> .
+  # oo Anna Markgräfin von Baden-Durlach, 1512-04 - 1579 (zähringer.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q464877> , <https://www.wikidata.org/wiki/Q25478304> ;
+	gen:startDate "1537-02-11" .
+
+<https://www.wikidata.org/wiki/Q479382>
+  # Eitel Friedrich IV., Graf von Hohenzollern-Hechingen, 1545-09-07 - 1605-01-16
+  gen:father <https://www.wikidata.org/wiki/Q464877> ;
+  gen:mother <https://www.wikidata.org/wiki/Q25478304> .
+  # oo Sibylle Gräfin von Zimmern, 1558-10-08 – 1599-10-08 (fürstenberg.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q479382> , <https://www.wikidata.org/wiki/Q31988704> ;
+	gen:startDate "1574-11-14" .
+
+<https://www.wikidata.org/wiki/Q479510>
+  # Johann Georg I., Fürst von Hohenzollern-Hechingen, 1577 - 1623-09-28
+  gen:father <https://www.wikidata.org/wiki/Q479382> ;
+  gen:mother <https://www.wikidata.org/wiki/Q31988704> .
+  # oo Franziska Wild- und Rheingräfin von Salm-Neufville, 1580 - 1619-12-14 (rheingrafen.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q479510> , <https://www.wikidata.org/wiki/Q31192097> ;
+	gen:startDate "1598-10-11" .
+
+<https://www.wikidata.org/wiki/Q61912776>
+  # Anna Maria Prinzessin von Hohenzollern-Hechingen, 1603-09-08 - 1652-08-23
+  gen:father <https://www.wikidata.org/wiki/Q479510> ;
+  gen:mother <https://www.wikidata.org/wiki/Q31192097> .
+  # oo 1619-06-09 Egon VIII., Reichsgraf von Fürstenberg-Heiligenberg, 1588-05-21 - 1635-08-24, https://www.wikidata.org/wiki/Q73351
+
+
+# ----
+<https://www.wikidata.org/wiki/Q75288751>
+  # Sofie von Raabs, d. 1218~
+  gen:father <https://www.wikidata.org/wiki/Q76263828> . # Konrad II. von Raabs, Burggraf von Nürnberg
+  # oo 1184 Friedrich I. Graf von Zollern, Burggraf von Nürnberg, 1139 - 1201-07-14, https://www.wikidata.org/wiki/Q566478
 
 # ----
 <https://www.wikidata.org/wiki/Q26214199>
@@ -1301,3 +1486,46 @@
   gen:father <https://www.wikidata.org/wiki/Q177095> ;
   gen:mother <https://www.wikidata.org/wiki/Q4979691> .
   # oo 1708-04-13 Friedrich Wilhelm I. Adolf, Fürst von Nassau-Siegen, 1680-02-20 - 1722-02-13, https://www.wikidata.org/wiki/Q831490
+
+# ----
+<https://www.wikidata.org/wiki/Q75288826>
+  owl:sameAs <https://www.wikidata.org/wiki/Q61140548> ;
+  # Udilhild von Dillingen, d. 1289-05-12a
+  gen:father <https://www.wikidata.org/wiki/Q55216403> ; # Hartmann IV von Dillingen
+  gen:mother <https://www.wikidata.org/wiki/Q55216513> . # Willibirg von Truhendingen
+  # oo 1258-01-13 Friedrich V., Graf von Zollern, d. 1289-05-24, https://www.wikidata.org/wiki/Q86052
+
+# ----
+<https://www.wikidata.org/wiki/Q93521356>
+  # Johann III. Truchsess von Waldburg-Zeil und Waldsee, 1458 - 1511-10-12
+  gen:father <https://www.wikidata.org/wiki/Q93521333> . # Georg II., Truchsess von Waldburg-Zeil und Waldsee
+  # oo Helena Gräfin von Hohenzollern, 1462 - 1514-11-11
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q93521356> , <https://www.wikidata.org/wiki/Q1601917> ;
+	gen:startDate "1484-10-20" .
+<#Anna_von_Waldburg-Waldsee>
+  # Anna von Waldburg-Waldsee, d. 1507-03-26
+  gen:father <https://www.wikidata.org/wiki/Q93521333> .
+  # and Anna Gräfin von Kirchberg
+  # oo 1482 Wolfgang I., Graf von Oettingen, 1455-05-16 - 1522-01-29, https://www.wikidata.org/wiki/Q460544
+
+<https://www.wikidata.org/wiki/Q107686>
+  # Georg, Truchsess von Waldburg zu Wolfegg und Zeil, 1488-01-25 - 1531-05-29
+  gen:father <https://www.wikidata.org/wiki/Q93521356> ;
+  gen:mother <https://www.wikidata.org/wiki/Q1601917> .
+  # oo Maria Gräfin von Oettingen-Flochberg, 1498-04-11 - 1555-08-18
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q107686> , <https://www.wikidata.org/wiki/Q76264283> ;
+	gen:startDate "1514" .
+
+<https://www.wikidata.org/wiki/Q66682303>
+  # Helena Truchessin von Waldburg, 1514-10-12 - 1567-04-03
+  gen:father <https://www.wikidata.org/wiki/Q107686> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76264283> .
+  # oo 1529 Georg I., Graf von Hohenlohe-Waldenburg, 1488-01-17 - 1551-03-16, https://www.wikidata.org/wiki/Q26882167
+
+# ----
+<https://www.wikidata.org/wiki/Q2309561>
+  # Johanna van Witthem, 1471 - 1523/1544
+  gen:father <https://www.wikidata.org/wiki/Q2236330> . # Filips Corsselaar, Heer van Beersel en Bautershem
+  # oo 1515 Eitel Friedrich III., Graf von Hohenzollern, 1494 - 1525-01-15, https://www.wikidata.org/wiki/Q325041
