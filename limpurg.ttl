@@ -5,10 +5,60 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 # Limpurg-Gaildorf
+<https://www.wikidata.org/wiki/Q56071668>
+  # Albrecht II, Schenk von Limpurg zu Gaildorf, 1440 - 1506-12-04
+  gen:father <https://www.wikidata.org/wiki/Q56071685> . # Konrad IV Schenk von Limpurg
+  # and Klara Gräfin von Montfort-Tettnang
+  # oo Elisabeth von Oettingen, 1449-03-07 - 1509-07-28
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q56071668> , <oettingen.ttl#Elisabeth_von_Oettingen> ;
+	gen:startDate "1472" .
+
+<https://www.wikidata.org/wiki/Q56071619>
+  # Christoph I. Schenk von Limpurg zu Gaildorf, d. 1515-11-30
+  gen:father <https://www.wikidata.org/wiki/Q56071668> ;
+  gen:mother <oettingen.ttl#Elisabeth_von_Oettingen> .
+  # oo Agnes Gräfin von Werdenberg-Sargans, d. 1541
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q56071619> , <württemberg.ttl#Agnes_von_Werdenberg-Sargans> ;
+	gen:startDate "1483-07-01" .
+
+<https://www.wikidata.org/wiki/Q56071616>
+  # Wilhelm III. (I) Schenk von Limpurg zu Gaildorf, 1498-04-12 - 1552-03-09
+  gen:father <https://www.wikidata.org/wiki/Q56071619> ;
+  gen:mother <württemberg.ttl#Agnes_von_Werdenberg-Sargans> .
+  # oo Anna della Scala (von der Leiter), d. 1560, daughter of Giovanni della Scala and Margaretha von Laiming
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q56071616> , <#Anna_della_Scala> ;
+	gen:startDate "1530-08-28" .
+<#Barbara_von_Limpurg-Gaildorf>
+  # Barbara von Limpurg-Gaildorf, 1500 - 1561-04-29
+  gen:father <https://www.wikidata.org/wiki/Q56071619> ;
+  gen:mother <württemberg.ttl#Agnes_von_Werdenberg-Sargans> .
+  # oo 1528-02-25 Georg II., Graf von Wertheim, 1487-02-08 - 1530-04-17, https://www.wikidata.org/wiki/Q31191411
+
+<https://www.wikidata.org/wiki/Q56071623>
+  # Christoph III. (II) Schenk zu Limpurg in Gaildorf, 1531-07-12 - 1574-09-03
+  gen:father <https://www.wikidata.org/wiki/Q56071616> ;
+  gen:mother <#Anna_della_Scala> .
+  # oo Maria Gräfin von Wied, 1505~ - 1563-03-15 (runkel.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q56071623> , <https://www.wikidata.org/wiki/Q26480220> ;
+	gen:startDate "1554-06-22" .
+
+<https://www.wikidata.org/wiki/Q61140447>
+  # Albrecht III. (VII) Schenk von Limpurg-Gaildorf, 1568-05-02a/-10-02b - 1619-09-06a/-11-06b
+  gen:father <https://www.wikidata.org/wiki/Q56071623> ;
+  gen:mother <https://www.wikidata.org/wiki/Q26480220> .
+  # oo Emilie Freiin von Rogendorf, 1579~ - 1650-03-03
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q61140447> , <runkel.ttl#Emilie_von_Rogendorf> ;
+	gen:startDate "1595-03-31" .
+
 <https://www.wikidata.org/wiki/Q61140453>
   # Joachim Gottfried, Schenk von Limpurg zu Gaildorf, 1597-06-29 - 1651-03-19
-  gen:father <https://www.wikidata.org/wiki/Q61140447> ; # Albrecht III (VII) Schenk von Limpurg-Gaildorf
-  gen:mother <#Emilie_von_Rogendorf> . # oo Emilie Freiin von Rogendorf
+  gen:father <https://www.wikidata.org/wiki/Q61140447> ;
+  gen:mother <runkel.ttl#Emilie_von_Rogendorf> .
   # oo Barbara Dorothea Gräfin von Oettingen-Oettingen, 1605-03-10 - 1651-03-19
   []
     gen:spouse <https://www.wikidata.org/wiki/Q61140453> , <https://www.wikidata.org/wiki/Q44192104> ;
@@ -16,7 +66,7 @@
 <https://www.wikidata.org/wiki/Q61140451>
   # Johann Wilhelm, Schenk von Limpurg zu Schmiedelfeld, 1607-12-13 - 1655-11-07
   gen:father <https://www.wikidata.org/wiki/Q61140447> ;
-  gen:mother <#Emilie_von_Rogendorf> .
+  gen:mother <runkel.ttl#Emilie_von_Rogendorf> .
   # oo Maria Juliana Gräfin zu Hohenlohe-Langenburg, 1623-06-06 - 1695-01-14
   []
     gen:spouse <https://www.wikidata.org/wiki/Q61140451> , <https://www.wikidata.org/wiki/Q65224761> ;
