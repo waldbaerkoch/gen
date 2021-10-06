@@ -304,6 +304,10 @@
   # Georg I., Fürst von Anhalt-Zerbst, 1390~ - 1474-09-21
   gen:father <https://www.wikidata.org/wiki/Q2599025> ;
   gen:mother <https://www.wikidata.org/wiki/Q75289188> .
+  # oo Euphemia von Oels, d. 1444
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q78145> , <https://www.wikidata.org/wiki/Q1374064> ;
+	gen:startDate "1432b" .
   # oo Sofie von Hohenstein, d. 1451, daughter of Sigismund Graf von Hohenstein
   []
     gen:spouse <https://www.wikidata.org/wiki/Q78145> , <https://www.wikidata.org/wiki/Q75289216> ;
@@ -312,15 +316,25 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q78145> , <https://www.wikidata.org/wiki/Q75244654> ;
 	gen:startDate "1453" .
+<https://www.wikidata.org/wiki/Q75289267>
+  # Elisabeth Prinzessin von Anhalt-Zerbst, d. 1413-11-19
+  gen:father <https://www.wikidata.org/wiki/Q2599025> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75289188> .
+  # oo 1402b Albrecht II. Graf von Mansfeld, 1376~ - 1416-04-05, https://www.wikidata.org/wiki/Q31191296
 <https://www.wikidata.org/wiki/Q4711367>
   # Albrecht VI., Fürst von Anhalt-Köthen, d. 1475-01-09
   gen:father <https://www.wikidata.org/wiki/Q2300285> ;
   gen:mother <https://www.wikidata.org/wiki/Q61140294> .
   # oo Elisabeth Gräfin von Mansfeld-Querfurt, d. 1482-09-18
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q4711367> , <#Elisabeth_von_Mansfeld-Querfurt> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q4711367> , <mansfeld.ttl#Elisabeth_von_Mansfeld-Querfurt> ;
 	gen:startDate "1454-03-27" .
 
+<#Anna_von_Anhalt-Zerbst>
+  # Anna/Agnes Prinzessin von Anhalt-Zerbst, 1435~ - 1492-04-08
+  gen:father <https://www.wikidata.org/wiki/Q78145> ;
+  gen:mother <https://www.wikidata.org/wiki/Q1374064> .
+  # oo 1467 Johann I. (II.) Graf von Hohnstein, 1420 - 1498-11-30, https://www.wikidata.org/wiki/Q1694691
 <https://www.wikidata.org/wiki/Q92179>
   # Waldemar VI., Fürst von Anhalt-Köthen, 1450 - 1508-11-01
   gen:father <https://www.wikidata.org/wiki/Q78145> ;
@@ -345,7 +359,7 @@
 <#Dorothea_von_Anhalt-Köthen>
   # Dorothea Prinzessin von Anhalt-Köthen, 1472~ - 1505-08-03
   gen:father <https://www.wikidata.org/wiki/Q4711367> ;
-  gen:mother <#Elisabeth_von_Mansfeld-Querfurt> .
+  gen:mother <mansfeld.ttl#Elisabeth_von_Mansfeld-Querfurt> .
   # oo 1496-06-26 Joachim Graf von Oettingen-Flochberg, 1470 - 1520-07-07, https://www.wikidata.org/wiki/Q55394778
 
 <https://www.wikidata.org/wiki/Q1895056>
@@ -980,6 +994,10 @@
   # Rudolf III., Kurfürst und Herzog von Sachsen-Wittenberg, 1373~ - 1419-06-11
   gen:father <https://www.wikidata.org/wiki/Q598379> ;
   gen:mother <https://www.wikidata.org/wiki/Q21272287> .
+  # oo Anna von Meißen, d. 1395-07-04 (wettiner.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q651948> , <https://www.wikidata.org/wiki/Q21207211> ;
+	gen:startDate "1387" .
   # oo Barbara von Liegnitz, 1372a/1384b - 1436-05-09
   []
     gen:spouse <https://www.wikidata.org/wiki/Q651948> , <https://www.wikidata.org/wiki/Q9165680> ;
@@ -996,6 +1014,11 @@
   # oo 1386~ Friedrich I., Herzog zu Braunschweig und Lüneburg, 1357~ - 1400-06-05, https://www.wikidata.org/wiki/Q67180 (welfen.ttl)
   # oo 1404-07-14 Balthasar, Markgraf von Meißen, 1336-12-21 - 1406-05-18, https://www.wikidata.org/wiki/Q179421 (wettiner.ttl)
 
+<https://www.wikidata.org/wiki/Q2205951>
+  # Scholastika von Sachsen-Wittenberg, 1391 - 1461-05-12
+  gen:father <https://www.wikidata.org/wiki/Q651948> ;
+  gen:mother <https://www.wikidata.org/wiki/Q21207211> .
+  # oo 1405/1409 Jan (Johann) I., Herzog von Schlesien-Glogau-Sagan, 1385 - 1439-04-12, https://www.wikidata.org/wiki/Q442562
 <https://www.wikidata.org/wiki/Q16742959>
   # Barbara von Sachsen-Wittenberg, 1405 - 1465
   gen:father <https://www.wikidata.org/wiki/Q651948> ;
@@ -1095,51 +1118,26 @@
   # oo 1687-07-23 Johann Ludwig I. von Anhalt-Zerbst, Fürst von Anhalt-Dornburg, 1656-05-04 - 1704-11-01, https://www.wikidata.org/wiki/Q67776
 
 # ----
-<https://www.wikidata.org/wiki/Q64615>
-  # Günther IX.(XXI.), Graf von Schwarzburg-Blankenburg, 1304 - 1349-06-14
-  gen:father <https://www.wikidata.org/wiki/Q99923> ; # Heinrich VII., Graf von Schwarzburg-Blankenburg
-  gen:mother <https://www.wikidata.org/wiki/Q105978477> . # Christina Gräfin von Gleichen-Tonna
-  # oo Elisabeth Gräfin von Honstein-Klettenberg, d. 1380-04-04~, daughter of Dietrich Graf von Honstein
+<https://www.wikidata.org/wiki/Q1694691>
+  # Johann I. (II.) Graf von Hohnstein, 1420 - 1498-11-30
+  gen:father <https://www.wikidata.org/wiki/Q31192877> . # Heinrich VI (IX) von Honstein-Kelbra
+  # and Margareta von Weinsberg
+  # oo Anna/Agnes Prinzessin von Anhalt-Zerbst, 1435~ - 1492-04-08
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q64615> , <#Elisabeth_von_Honstein-Klettenberg> ;
-	gen:startDate "1331-09-09" .
+    gen:spouse <https://www.wikidata.org/wiki/Q1694691> , <#Anna_von_Anhalt-Zerbst> ;
+	gen:startDate "1467" .
 
-<#Mathilde_von_Schwarzburg-Blankenburg>
-  # Mathilde Gräfin von Schwarzburg-Blankenburg, d. 1373/81
-  gen:father <https://www.wikidata.org/wiki/Q64615> ;
-  gen:mother <#Elisabeth_von_Honstein-Klettenberg> .
-  # oo 1357-11-29 Gebhard III., Graf von Mansfeld, Herr zu Querfurt, d. 1382-11-05, https://www.wikidata.org/wiki/Q31191304
+<#Margarethe_von_Hohnstein>
+  # Margarethe Gräfin von Hohnstein-Vierraden, 1476 - 1508-10-15
+  gen:father <https://www.wikidata.org/wiki/Q1694691> ;
+  gen:mother <#Anna_von_Anhalt-Zerbst> .
+  # oo 1467b Volrad II. (III.), Graf von Mansfeld, 1443 - 1499-11-27, https://www.wikidata.org/wiki/Q31191967
+
 # ----
-#<https://www.wikidata.org/wiki/Q31191304>
-  # Gebhard III., Graf von Mansfeld, Herr zu Querfurt, d. 1382-11-05
-  # oo Mathilde Gräfin von Schwarzburg-Blankenburg, d. 1373/81
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q31191304> , <#Mathilde_von_Schwarzburg-Blankenburg> ;
-	gen:startDate "1357-11-29" .
-  # oo Elisabeth Gräfin von Käfernburg, d. 1382-03-15b, daughter of Günther Graf von Käfernburg
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q31191304> , <#Elisabeth_von_Käfernburg> ;
-	gen:startDate "1375~" .
-
-<https://www.wikidata.org/wiki/Q55155595>
-  # Günther I. Graf von Mansfeld, 1360~ - 1412-03-04
-  gen:father <https://www.wikidata.org/wiki/Q31191304> ; 
-  gen:mother <#Mathilde_von_Schwarzburg-Blankenburg> .
-  # oo Elisabeth Gräfin von Honstein, d. 1412a, daughter of https://www.wikidata.org/wiki/Q59393144 Heinrich VII. Graf von Honstein-Klettenberg
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q55155595> , <https://www.wikidata.org/wiki/Q59392296> ;
-	gen:startDate "1393-03-12" .
-<https://www.wikidata.org/wiki/Q61140294>
-  # Elisabeth Gräfin von Mansfeld, d. 1403-06-06a
-  gen:father <https://www.wikidata.org/wiki/Q31191304> ;
-  gen:mother <#Elisabeth_von_Käfernburg> .
-  # oo 1398b Albrecht IV., Fürst von Anhalt-Köthen, d. 1423-11-24, https://www.wikidata.org/wiki/Q2300285
-
-<#Elisabeth_von_Mansfeld-Querfurt>
-  # Elisabeth Gräfin von Mansfeld-Querfurt, d. 1482-09-18
-  gen:father <https://www.wikidata.org/wiki/Q55155595> ;
-  gen:mother <https://www.wikidata.org/wiki/Q59392296> .
-  # oo 1454-03-27 Albrecht VI., Fürst von Anhalt-Köthen, d. 1475-01-09, https://www.wikidata.org/wiki/Q4711367
+<https://www.wikidata.org/wiki/Q1374064>
+  # Euphemia von Oels, d. 1444
+  gen:father <https://www.wikidata.org/wiki/Q374340> . # Konrad III., Herzog von Oels
+  # oo 1432b Georg I., Fürst von Anhalt-Zerbst, 1390~ - 1474-09-21, https://www.wikidata.org/wiki/Q78145
 
 # ----
 <https://www.wikidata.org/wiki/Q75244654>
@@ -1219,3 +1217,19 @@
   gen:father <https://www.wikidata.org/wiki/Q367271> ; # Ruprecht I. von Liegnitz
   gen:mother <https://www.wikidata.org/wiki/Q462616> . # Hedwig von Sagan
   # oo 1396-03-06 Rudolf III., Kurfürst und Herzog von Sachsen-Wittenberg, 1373~ - 1419-06-11, https://www.wikidata.org/wiki/Q651948
+
+# ----
+<https://www.wikidata.org/wiki/Q442562>
+  # Jan (Johann) I., Herzog von Schlesien-Glogau-Sagan, 1385 - 1439-04-12
+  gen:father <https://www.wikidata.org/wiki/Q442158> ; # Henry VIII the Sparrow
+  gen:mother <https://www.wikidata.org/wiki/Q2271013> . # Katharina of Opole
+  # oo Scholastika von Sachsen-Wittenberg, 1391 - 1461-05-12
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q442562> , <https://www.wikidata.org/wiki/Q2205951> ;
+	gen:startDate "1405/1409" .
+
+<https://www.wikidata.org/wiki/Q101518891>
+  # Malgorzata Herzogin von Schlesien-Glogau in Sagan, 1415/1422 - 1491-05-09
+  gen:father <https://www.wikidata.org/wiki/Q442562> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2205951> .
+  # oo 1435 Volrath II., Graf von Mansfeld, 1380 - 1450-12-14, https://www.wikidata.org/wiki/Q28056364
