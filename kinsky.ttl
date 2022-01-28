@@ -4,6 +4,11 @@
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
+<https://www.wikidata.org/wiki/Q110457904>
+  # Marie Eliska Kinská z Vchynic a Tetova, 1640~ - 1680~
+  gen:father <https://www.wikidata.org/wiki/Q19969136> ; # Johann Octavian Graf Kinsky von Wchinitz und Tettau
+  gen:mother <https://www.wikidata.org/wiki/Q108927297> . # oo Margaretha Magdalena Gräfin von Porcia und Brugnera
+  # oo Jiri Stepán, Graf von Wrbna und Freudenthal, d. 1682-02-09, https://www.wikidata.org/wiki/Q110152116
 <https://www.wikidata.org/wiki/Q2559778>
   # Wenzel-Norbert Oktavian Graf Kinsky von Wchinitz und Tettau, 1642-06-11 - 1719-01-03
   gen:father <https://www.wikidata.org/wiki/Q19969136> ; # Johann Octavian Graf Kinsky von Wchinitz und Tettau
@@ -282,6 +287,40 @@
 
 
 # ----
+<https://www.wikidata.org/wiki/Q110152116>
+  # Jiri Stepán, Graf von Wrbna und Freudenthal, d. 1682-02-09
+  gen:father <https://www.wikidata.org/wiki/Q110457901> ; # Stepán von Wrbna und Freudenthal
+  gen:mother <https://www.wikidata.org/wiki/Q110457903> . # Anna von Oppersdorf
+  # oo Marie Eliska Gräfin Kinsky von Wchinitz und Tettau, 1640~ - 1680~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110152116> , <https://www.wikidata.org/wiki/Q110457904> .
+
+<https://www.wikidata.org/wiki/Q110457899>
+  # Wenzel Albrecht Graf von Wrbna und Freudenthal, d. 1732-09-11
+  gen:father <https://www.wikidata.org/wiki/Q110152116> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110457904> .
+  # oo Maria Augusta Prinzessin zu Fürstenberg, 1695-05-07 - 1770-02-18
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110457899> , <https://www.wikidata.org/wiki/Q110457905> ;
+	gen:startDate "1714-09-16" .
+
+<https://www.wikidata.org/wiki/Q110503613>
+  # Karl _Wenzel Ulrich_ Graf von Wrbna und Freudenthal, 1716-09-13 - 1757-11-22
+  # Karel Václav Oldrich
+  gen:father <https://www.wikidata.org/wiki/Q110457899> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110457905> .
+  # oo Maria Eleonore Gräfin von Mansfeld, 1710-08-28 - 1761-09-10
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110503613> , <https://www.wikidata.org/wiki/Q110503614> ;
+	gen:startDate "1735-02-06" .
+
+<https://www.wikidata.org/wiki/Q110503612>
+  # Marie Eleonore Gräfin von Wrbna und Freudenthal, 1740-01-02 - 1789-04-17
+  gen:father <https://www.wikidata.org/wiki/Q110503613> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110503614> .
+  # oo 1762-04-19 Franz Karl Graf von Colloredo, 1736-05-23 - 1806-03-10, https://www.wikidata.org/wiki/Q110503606 (czernin.ttl)
+
+# ----
 <https://www.wikidata.org/wiki/Q108927129>
   # Anna Maria Franziska Barbara Gräfin Borita z Martinic, 1650 - 1694-12
   gen:father <https://www.wikidata.org/wiki/Q26255012> ; # Maxmilián Valentin z Martinic
@@ -326,27 +365,6 @@
   gen:father <https://www.wikidata.org/wiki/Q75396531> ; # Franz Georg Ludwig Josef Ferdinand Johann Freiherr von Kerpen
   gen:mother <https://www.wikidata.org/wiki/Q75396532> . # Marie Antonette Franziska Carol Hornstein
   # oo 1801-06-08 Ferdinand Fürst Kinsky von Wchinitz und Tettau, 1781-12-05 - 1812-11-03, https://www.wikidata.org/wiki/Q1405988
-
-# ----
-<https://www.wikidata.org/wiki/Q24069265>
-  # Maria Henriette Francisca Berta Gräfin Czernin von und zu Chudenitz, 1806-08-12 - 1872-12-20
-  gen:father <https://www.wikidata.org/wiki/Q21012558> ; # Wolfgang Maria Graf Czernin von und zu Chudenitz
-  gen:mother <https://www.wikidata.org/wiki/Q60447409> . # Antonie von Salm-Neuburg
-  # oo 1828-11-10 Joseph Sidonius Graf Kinsky von Wchinitz und Tettau, 1806-10-25 - 1862-07-17, https://www.wikidata.org/wiki/Q33144304
-<https://www.wikidata.org/wiki/Q19825566>
-  # Ottokar Eugen Rudolph Gabriel Graf Czernin von und zu Chudenitz, 1809-10-03 - 1886-06-29
-  gen:father <https://www.wikidata.org/wiki/Q21012558> ;
-  gen:mother <https://www.wikidata.org/wiki/Q60447409> .
-  # oo Rosina Josepha Eleonora Aloysia Elisabeth Theresia Viktoria Maria Anna Gräfin von Colloredo-Wallsee, 1815-08-01 - 1874-02-12
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q19825566> , <#Rosina_von_Colloredo-Wallsee> ;
-	gen:startDate "1833-08-01" .
-
-<#Rosine_Czernin>
-  # Rosine Josepha Friderica Irenäa Gräfin Czernin von und zu Chudenitz, 1837-12-15 - 1904-01-18
-  gen:father <https://www.wikidata.org/wiki/Q19825566> ;
-  gen:mother <#Rosina_von_Colloredo-Wallsee> .
-  # oo 1863-05-05 Friedrich Wilhelm Graf von Westphalen zu Fürstenberg, 1830-04-21 - 1900-05-09, https://www.wikidata.org/wiki/Q94692187 (croÿ.ttl)
 
 # ----
 <https://www.wikidata.org/wiki/Q23540446>
@@ -467,4 +485,4 @@
   # Johanna d’Arc Paula Alphonsa Josepha Antonia Huberta Maria de Mercede Cosmas und Damian Gräfin von Galen, 1936-09-24 - 2016-01-21
   gen:father <https://www.wikidata.org/wiki/Q1084582> ;
   gen:mother <https://www.wikidata.org/wiki/Q75392217> .
-  # oo 1956-09-08 Clemens August Graf von Westphalen zu Fürstenberg, 1927-03-23 - 2014-10-18, https://www.wikidata.org/wiki/Q75378468 (croÿ.ttl)
+  # oo 1956-09-08 Clemens August Graf von Westphalen zu Fürstenberg, 1927-03-23 - 2014-10-18, https://www.wikidata.org/wiki/Q75378468 (czernin.ttl)
