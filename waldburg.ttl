@@ -1,0 +1,1417 @@
+@base <waldburg.ttl> .
+@prefix gen: <http://jjkoch.de/gen#> .
+@prefix wdata: <https://www.wikidata.org/wiki/> .
+@prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://www.wikidata.org/wiki/Q1697752>
+  owl:sameAs <https://www.wikidata.org/wiki/Q110153927> .
+  # Johann II. Truchsess von Waldburg zu Trauchburg
+  # oo Ursula von Abensberg, 1375-12-16b - 1422-01-30, daughter of Ulrich IV. von Abensberg and Agnes von Liechtenstein
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1697752> , <https://www.wikidata.org/wiki/Q110153930> .
+
+<https://www.wikidata.org/wiki/Q29380947>
+  # Eberhard Truchsess von Waldburg, Graf von Sonnenberg, d. 1479-09-22
+  gen:father <https://www.wikidata.org/wiki/Q1697752> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110153930> .
+  # oo Kunigunde Gräfin von Montfort-Tettnang
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q29380947> , <https://www.wikidata.org/wiki/Q97208177> ;
+	gen:startDate "1432-12-21" .
+<https://www.wikidata.org/wiki/Q70450175> # -> # Jakobische Linie
+  # Jakob I. 'der Goldene Ritter' Truchsess von Waldburg zu Trauchburg, 1393~ - 1460-05-05
+  gen:father <https://www.wikidata.org/wiki/Q1697752> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110153930> .
+<https://www.wikidata.org/wiki/Q66898186> # -> # Georgische Linie
+  # Georg I. Truchsess von Waldburg-Zeil, d. 1467-03-10
+  gen:father <https://www.wikidata.org/wiki/Q1697752> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110153930> .
+
+<https://www.wikidata.org/wiki/Q1696871>
+  # Johann von Waldburg, Graf von Sonnenberg zu Wolfegg, d. 1510-06-24
+  gen:father <https://www.wikidata.org/wiki/Q29380947> ;
+  gen:mother <https://www.wikidata.org/wiki/Q97208177> .
+  # oo Johanna Gräfin zu Salm, d. 1510-06-28
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1696871> , <https://www.wikidata.org/wiki/Q110370562> ;
+	gen:startDate "1488" .
+
+<#Sibylle_von_Waldburg-Sonnenberg>
+  # Sibylle von Waldburg-Sonnenberg, 1491 - 1536-07-24/-11-06
+  gen:father <https://www.wikidata.org/wiki/Q1696871> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110370562> .
+  # oo 1507 Wilhelm, Freiherr Truchsess von Waldburg, 1470 - 1557-03-17, https://www.wikidata.org/wiki/Q1653445
+
+
+# Jakobische Linie
+<https://www.wikidata.org/wiki/Q70450175>
+  # Jakob I. 'der Goldene Ritter' Truchsess von Waldburg zu Trauchburg, 1393~ - 1460-05-05
+  gen:father <https://www.wikidata.org/wiki/Q1697752> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110153930> .
+  # oo Magdalena von Hohenberg
+
+<https://www.wikidata.org/wiki/Q70450237>
+  # Johann der Ältere Truchsess von Waldburg zu Trauchburg, 1438 - 1504-12-26
+  gen:father <https://www.wikidata.org/wiki/Q70450175> .
+  # oo Anna Gräfin von Oettingen, 1450-08-06 - 1517
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q70450237> , <oettingen.ttl#Anna_von_Oettingen> ;
+	gen:startDate "1464-01-03" .
+
+<#Jakob_III._Freiherr_von_Waldburg>
+  # Jakob III., d. 1505-02-11
+  gen:father <https://www.wikidata.org/wiki/Q70450237> ;
+  gen:mother <oettingen.ttl#Anna_von_Oettingen> .
+<https://www.wikidata.org/wiki/Q1653445> # -> Waldburg-Trauchburg
+  # Wilhelm, Freiherr Truchsess von Waldburg, 1470 - 1557-03-17
+  gen:father <https://www.wikidata.org/wiki/Q70450237> ;
+  gen:mother <oettingen.ttl#Anna_von_Oettingen> .
+<https://www.wikidata.org/wiki/Q70450276> # -> Waldburg-Capustigall
+  # Friedrich von Waldburg zu Trauchburg (-Capustigall), 1484 – 1554
+  gen:father <https://www.wikidata.org/wiki/Q70450237> ;
+  gen:mother <oettingen.ttl#Anna_von_Oettingen> .
+
+
+# Waldburg-Trauchburg
+<https://www.wikidata.org/wiki/Q1653445>
+  # Wilhelm, Freiherr Truchsess von Waldburg, 1470 - 1557-03-17
+  gen:father <https://www.wikidata.org/wiki/Q70450237> ;
+  gen:mother <oettingen.ttl#Anna_von_Oettingen> .
+  # oo Sibylle von Waldburg-Sonnenberg, 1491 - 1536-07-24/-11-06
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1653445> , <#Sibylle_von_Waldburg-Sonnenberg> ;
+	gen:startDate "1507" .
+
+<https://www.wikidata.org/wiki/Q55896830>
+  # Wilhelm, Freiherr Truchsess von Waldburg, 1518-03-06 - 1566-01-17
+  gen:father <https://www.wikidata.org/wiki/Q1653445> ;
+  gen:mother <#Sibylle_von_Waldburg-Sonnenberg> .
+  # oo Johanna Gräfin von Fürstenberg, 1529-05-12 - 1589-09-03
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q55896830> , <fürstenberg.ttl#Johanna_von_Fürstenberg> ;
+	gen:startDate "1545" .
+
+<https://www.wikidata.org/wiki/Q66683523>
+  # Christoph, Freiherr Truchsess von Waldburg in Friedberg, Scheer und Trauchburg, 1551-08-24 - 1612-02-28
+  gen:father <https://www.wikidata.org/wiki/Q55896830> ;
+  gen:mother <fürstenberg.ttl#Johanna_von_Fürstenberg> .
+  # oo Anna Maria Gräfin von Fürstenberg, 1562-02-03 - 1611-10-02
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q66683523> , <fürstenberg.ttl#Anna_Maria_von_Fürstenberg> ;
+	gen:startDate "1577-10-16" .
+
+<https://www.wikidata.org/wiki/Q66683407> # -> jüngere Linie Waldburg-Trauchburg
+  # Friedrich Truchsess Graf von Waldburg, 1592-01-15 - 1636-11-17
+  gen:father <https://www.wikidata.org/wiki/Q66683523> ;
+  gen:mother <fürstenberg.ttl#Anna_Maria_von_Fürstenberg> .
+
+
+# jüngere Linie Waldburg-Trauchburg
+<https://www.wikidata.org/wiki/Q66683407>
+  # Friedrich Truchsess Graf von Waldburg, 1592-01-15 - 1636-11-17
+  # in Trauchburg 1612-02-28
+  gen:father <https://www.wikidata.org/wiki/Q66683523> ;
+  gen:mother <fürstenberg.ttl#Anna_Maria_von_Fürstenberg> .
+  # oo Susanna Gräfin Khuen von Belasi, 1610 - 1669-11-15
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q66683407> , <https://www.wikidata.org/wiki/Q109686933> ;
+	gen:startDate "1625-11-16" .
+
+<https://www.wikidata.org/wiki/Q55238264>
+  # Johann Heinrich Ernst I. Erbtruchsess Graf zu Friedberg-Trauchburg, Freiherr auf Waldburg, 1630 - 1687-02-08
+  gen:father <https://www.wikidata.org/wiki/Q66683407> ;
+  gen:mother <https://www.wikidata.org/wiki/Q109686933> .
+  # oo Maria Monika Gräfin von Königsegg-Aulendorf, 1644 - 1713-12-17 (zähringer.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q55238264> , <https://www.wikidata.org/wiki/Q110635047> ;
+	gen:startDate "1661" .
+
+<#Maria_Anna_von_Waldburg-Trauchburg>
+  # Maria Anna Freiin von Waldburg, Gräfin zu Trauchburg, 1663-04-13 - 1682-07-14
+  gen:father <https://www.wikidata.org/wiki/Q55238264> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110635047> .
+  # oo 1682-04-13 Johann Graf von Waldburg zu Wolfegg und Waldsee, 1661-10-13 - 1724-12-25, https://www.wikidata.org/wiki/Q66682990
+<https://www.wikidata.org/wiki/Q94692315>
+  # Christoph Franz Graf von Waldburg zu Trauchburg, 1669-01-20 - 1717-03-07
+  gen:father <https://www.wikidata.org/wiki/Q55238264> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110635047> .
+  # oo Maria Sophia Gräfin zu Oettingen-Wallerstein, 1666-05-29 - 1743-01-06
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q94692315> , <https://www.wikidata.org/wiki/Q110635048> ;
+	gen:startDate "1590-02-05" .
+
+<https://www.wikidata.org/wiki/Q19629929>
+  # Maria Theresia Gräfin von Waldburg-Trauchburg, 1696-03-03 - 1761-05-07
+  gen:father <https://www.wikidata.org/wiki/Q94692315> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110635048> .
+  # oo 1743-10-22 Joseph Friedrich Ernst, Fürst von Hohenzollern-Sigmaringen, 1702-05-24 - 1769-12-08, https://www.wikidata.org/wiki/Q472221
+<https://www.wikidata.org/wiki/Q110153202>
+  # Friedrich Anton Marquard Freiherr von Waldburg, Graf in Trauchburg und Kisslegg, 1700-07-05 - 1744-11-10
+  gen:father <https://www.wikidata.org/wiki/Q94692315> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110635048> .
+  # oo Maria Karoline Gräfin von Khuenburg, 1705-04-11 - 1782-05-04, daughter of https://www.wikidata.org/wiki/Q110635055 Johann Christoph Graf von Khuenburg and https://www.wikidata.org/wiki/Q110635064 Maria Theresia Gräfin von Khuenburg
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110153202> , <https://www.wikidata.org/wiki/Q110153203> ;
+	gen:startDate "1725-02-11" .
+
+<https://www.wikidata.org/wiki/Q110153201>
+  # Maria Anna Sophia Theresa Gräfin von Waldburg zu Trauchburg, 1728-11-30 - 1782-01-25
+  gen:father <https://www.wikidata.org/wiki/Q110153202> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110153203> .
+  # oo 1748-10-14 Franz Anton Graf von Waldburg zu Zeil und Trauchburg, 1714-05-28 - 1790-03-20, https://www.wikidata.org/wiki/Q66683315
+
+
+# Waldburg-Capustigall
+<https://www.wikidata.org/wiki/Q70450276>
+  # Friedrich von Waldburg zu Trauchburg (-Capustigall), 1484 – 1554
+  gen:father <https://www.wikidata.org/wiki/Q70450237> ;
+  gen:mother <oettingen.ttl#Anna_von_Oettingen> .
+
+<#Johannes_Jakob_von_Waldburg>
+  # Johannes Jakob von Waldburg, d. 1585
+  gen:father <https://www.wikidata.org/wiki/Q70450276> .
+
+<#Wolfgang_Heinrich_von_Waldburg>
+  # Wolfgang Heinrich von Waldburg, d. 1637
+  gen:father <#Johannes_Jakob_von_Waldburg> .
+
+<https://www.wikidata.org/wiki/Q109807640>
+  # Johannes Albrecht Graf Truchsess von Waldburg, Herr von Friedrichstein und Barthen, d. 1655-01-06
+  gen:father <#Wolfgang_Heinrich_von_Waldburg> .
+  # oo Anna Sibylle von Packmohr, d. 1652, daughter of Christoph Joachim von Packmohr and Dorothea von Landorf
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q109807640> , <https://www.wikidata.org/wiki/Q109807642> .
+
+<https://www.wikidata.org/wiki/Q2589383>
+  # Wolfgang Christoph Ernst Graf Truchsess von Waldburg, 1643-02-11 - 1688-01-29
+  # Reichsgraf 1686
+  gen:father <https://www.wikidata.org/wiki/Q109807640> ;
+  gen:mother <https://www.wikidata.org/wiki/Q109807642> .
+  # oo Luise Katharina von Rautter, 1650-02-17 - 1703-06-04
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2589383> , <https://www.wikidata.org/wiki/Q21032215> ;
+	gen:startDate "1679" .
+
+<https://www.wikidata.org/wiki/Q110324338>
+  # Helena Dorothea Truchessin von Waldburg, 1680-05-02 - 1712-07-15
+  gen:father <https://www.wikidata.org/wiki/Q2589383> ;
+  gen:mother <https://www.wikidata.org/wiki/Q21032215> .
+  # oo 1703-03-12 Otto Heinrich Wilhelm Graf zu Solms-Wildenfels, 1675-05-16 - 1741-09-15, https://www.wikidata.org/wiki/Q1599302
+
+
+# Georgische Linie
+<https://www.wikidata.org/wiki/Q66898186>
+  owl:sameAs <https://www.wikidata.org/wiki/Q110572199> ;
+  # Georg I. Truchsess von Waldburg-Zeil, d. 1467-03-10
+  gen:father <https://www.wikidata.org/wiki/Q1697752> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110153930> .
+  # oo Eva von Bickenbach
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q66898186> , <https://www.wikidata.org/wiki/Q110572252> .
+
+<https://www.wikidata.org/wiki/Q93521333>
+  owl:sameAs <https://www.wikidata.org/wiki/Q110458694> ;
+  # Georg II. Truchsess von Waldburg-Zeil und Waldsee, d. 1482-03-10
+  gen:father <https://www.wikidata.org/wiki/Q66898186> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110572252> .
+  # oo Anna Gräfin von Kirchberg, d. 1484-03-10
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q93521333> , <https://www.wikidata.org/wiki/Q110458695> .
+
+<https://www.wikidata.org/wiki/Q93521356>
+  # Johann III. Truchsess von Waldburg-Zeil und Waldsee, 1458 - 1511-10-12
+  gen:father <https://www.wikidata.org/wiki/Q93521333> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110458695> .
+  # oo Helena Gräfin von Hohenzollern, 1462 - 1514-11-11
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q93521356> , <https://www.wikidata.org/wiki/Q1601917> ;
+	gen:startDate "1484-10-20" .
+<https://www.wikidata.org/wiki/Q110458693>
+  # Anna von Waldburg-Waldsee, d. 1507-03-26
+  gen:father <https://www.wikidata.org/wiki/Q93521333> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110458695> .
+  # oo 1482 Wolfgang I., Graf von Oettingen, 1455-05-16 - 1522-01-29, https://www.wikidata.org/wiki/Q460544
+
+<https://www.wikidata.org/wiki/Q107686>
+  # Georg, Truchsess von Waldburg zu Wolfegg und Zeil, 1488-01-25 - 1531-05-29
+  gen:father <https://www.wikidata.org/wiki/Q93521356> ;
+  gen:mother <https://www.wikidata.org/wiki/Q1601917> .
+  # oo Maria Gräfin von Oettingen-Flochberg, 1498-04-11 - 1555-08-18
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q107686> , <https://www.wikidata.org/wiki/Q76264283> ;
+	gen:startDate "1514" .
+<https://www.wikidata.org/wiki/Q110152661>
+  # Dorothea Anna Johanna von Waldburg, d. 1513-01-30
+  gen:father <https://www.wikidata.org/wiki/Q93521356> ;
+  gen:mother <https://www.wikidata.org/wiki/Q1601917> .
+  # oo 1505-08-28 Johann (VI.) Freiherr von Königsegg zu Aulendorf, d. 1544-09-03, https://www.wikidata.org/wiki/Q93521096
+
+<https://www.wikidata.org/wiki/Q66682303>
+  # Helena Truchessin von Waldburg, 1514-10-12 - 1567-04-03
+  gen:father <https://www.wikidata.org/wiki/Q107686> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76264283> .
+  # oo 1529 Georg I., Graf von Hohenlohe-Waldenburg, 1488-01-17 - 1551-03-16, https://www.wikidata.org/wiki/Q26882167
+<https://www.wikidata.org/wiki/Q66682383>
+  # Georg IV., Erbtruchsess von Waldburg-Zeil und Waldsee, 1523 - 1556/1557
+  gen:father <https://www.wikidata.org/wiki/Q107686> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76264283> .
+  # oo Johanna von Rappoltstein, 1525-05-29 - 1569-10-30 (zähringer.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q66682383> , <https://www.wikidata.org/wiki/Q76264284> ;
+	gen:startDate "1543-11-06" .
+
+<https://www.wikidata.org/wiki/Q66682468>
+  # Jakob V. Erbtruchsess von Waldburg-Zeil und Wolfegg, 1546-12-06 - 1589-05-20
+  gen:father <https://www.wikidata.org/wiki/Q66682383> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76264284> .
+  # oo Johanna Gräfin von Zimmern, 1548-05-07 - 1613-08-30 (fürstenberg.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q66682468> , <https://www.wikidata.org/wiki/Q110152677> ;
+	gen:startDate "1566-02-25" .
+
+<https://www.wikidata.org/wiki/Q66682510> # -> Waldburg-Wolfegg
+  # Heinrich Truchsess von Waldburg zu Wolfegg, 1568-03-08 - 1637-08-16
+  gen:father <https://www.wikidata.org/wiki/Q66682468> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110152677> .
+<https://www.wikidata.org/wiki/Q55238198> # -> Waldburg-Zeil
+  # Froben Freiherr von Waldburg zu Zeil, 1569-08-19 - 1614-05-04
+  gen:father <https://www.wikidata.org/wiki/Q66682468> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110152677> .
+
+
+# Waldburg-Wolfegg
+<https://www.wikidata.org/wiki/Q66682510>
+  # Heinrich Truchsess von Waldburg zu Wolfegg, 1568-03-08 - 1637-08-16
+  # in Wolfegg 1595
+  gen:father <https://www.wikidata.org/wiki/Q66682468> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110152677> .
+  # oo Maria Jakobe Gräfin von Hohenzollern-Sigmaringen, 1577-01-03 - 1650-03-20
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q66682510> , <https://www.wikidata.org/wiki/Q110152860> ;
+	gen:startDate "1595-04-14" .
+<https://www.wikidata.org/wiki/Q110152670>
+  # Kunigunde von Waldburg-Zeil-Wolfegg, 1570 - 1604-11-24
+  gen:father <https://www.wikidata.org/wiki/Q66682468> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110152677> .
+  # oo 1589-04-23 Johann Georg Freiherr von Königsegg und Aulendorf, d. 1622-08-29, https://www.wikidata.org/wiki/Q66317334 (hohenzollern.ttl)
+
+<https://www.wikidata.org/wiki/Q1914131>
+  owl:sameAs <https://www.wikidata.org/wiki/Q110503637> ;
+  # Maximilian Willibald Graf von Waldburg zu Wolfegg, 1604-09-18 - 1667-01-30
+  gen:father <https://www.wikidata.org/wiki/Q66682510> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110152860> .
+  # oo Magdalena Juliana Gräfin zu Hohenlohe-Waldenburg, 1619-08-12 - 1645-11-21
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1914131> , <https://www.wikidata.org/wiki/Q110503639> ;
+	gen:startDate "1637" .
+  # oo Claire Isabelle Princesse d’Arenberg, 1629-11-02 - 1670-09-07
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1914131> , <ligne.ttl#Claire_Isabelle_d’Arenberg> ;
+	gen:startDate "1648-12-26" .
+
+<https://www.wikidata.org/wiki/Q66682988> # -> Waldburg-Wolfegg-Wolfegg
+  # Maximilian Franz Eusebius Reichserbtruchsess und Graf von Waldburg zu Wolfegg, 1641-01-08 - 1681-08-21
+  gen:father <https://www.wikidata.org/wiki/Q1914131> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110503639> .
+<https://www.wikidata.org/wiki/Q66682990> # -> Waldburg-Wolfegg-Waldsee
+  # Johann Maria Franz Eusebius Graf von Waldburg zu Wolfegg und Waldsee, 1661-10-13 - 1724-12-25
+  gen:father <https://www.wikidata.org/wiki/Q1914131> ;
+  gen:mother <ligne.ttl#Claire_Isabelle_d’Arenberg> .
+
+
+# Waldburg-Wolfegg-Wolfegg
+<https://www.wikidata.org/wiki/Q66682988>
+  owl:sameAs <https://www.wikidata.org/wiki/Q110503636> ;
+  # Maximilian Franz Eusebius Reichserbtruchsess und Graf von Waldburg zu Wolfegg, 1641-01-08 - 1681-08-21
+  # in Wolfegg 1672
+  gen:father <https://www.wikidata.org/wiki/Q1914131> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110503639> .
+  # oo Maria Ernestine Altgräfin zu Salm-Reifferscheidt in Dyck, 1657-06-30 - 1723-03-13 (reifferscheidt.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q66682988> , <https://www.wikidata.org/wiki/Q110503641> ;
+	gen:startDate "1676-03-11" .
+
+<https://www.wikidata.org/wiki/Q63107069>
+  # Ferdinand Ludwig Graf von Waldburg zu Wolfegg, 1678-07-19 - 1735-04-06
+  gen:father <https://www.wikidata.org/wiki/Q66682988> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110503641> .
+  # oo Maria Anna Amalia Freiin von Schellenberg, 1681-10-31 - 1754-08-13, daughter of Franz Christoph Freiherr von Schellenberg
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q63107069> , <#Maria_Anna_von_Schellenberg> ;
+	gen:startDate "1700-02-14" .
+<https://www.wikidata.org/wiki/Q105873150>
+  # Anna Luise Freiin von Waldburg, Gräfin zu Wolfegg, 1679-09-13 - 1736-03-25
+  gen:father <https://www.wikidata.org/wiki/Q66682988> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110503641> .
+  # oo 1702-10-12 Ernst Jakob Graf von Waldburg zu Zeil und Wurzach, 1673-10-28 - 1734-06-08, https://www.wikidata.org/wiki/Q60710254
+
+<https://www.wikidata.org/wiki/Q66682999>
+  # Franz Joseph (Joseph Franz Leodegar Anton Eusebius) Truchsess und Graf von Waldburg zu Wolfegg, 1704-09-14 - 1774-04-29
+  gen:father <https://www.wikidata.org/wiki/Q63107069> ;
+  gen:mother <#Maria_Anna_von_Schellenberg> .
+  # oo Anna Maria Luise Charlotte Altgräfin zu Salm-Reifferscheidt in Dyck, 1712-05-25 - 1760-11-10
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q66682999> , <reifferscheidt.ttl#Anna_Maria_zu_Salm-Reifferscheidt-Dyck> ;
+	gen:startDate "1735-10-29" .
+
+<https://www.wikidata.org/wiki/Q66683029>
+  # Ferdinand Maria Ludwig Wunibald Eusebius Freiherr von Waldburg Graf zu Wolfegg, 1736-09-25 - 1779-01-24
+  gen:father <https://www.wikidata.org/wiki/Q66682999> ;
+  gen:mother <reifferscheidt.ttl#Anna_Maria_zu_Salm-Reifferscheidt-Dyck> .
+  # oo Maria Karolina Gräfin von Waldburg zu Zeil und Wurzach, 1738-06-22 - 1779-02-22
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q66683029> , <#Maria_Karolina_von_Waldburg-Zeil-Wurzach> ;
+	gen:startDate "1763-07-26" .
+<#Maria_Walpurgis_von_Waldburg-Wolfegg>
+  # Maria Walpurgis Freiin von Waldburg Gräfin zu Wolfegg, 1740-07-05 - 1796-11-27
+  gen:father <https://www.wikidata.org/wiki/Q66682999> ;
+  gen:mother <reifferscheidt.ttl#Anna_Maria_zu_Salm-Reifferscheidt-Dyck> .
+  # oo 1762-01-24 Anselm Viktorian Jakob Raymund Johann Nepomuck, zu Babenhausen, 1729-08-14 - 1793-07-07, https://www.wikidata.org/wiki/Q58214746
+
+<#Maria_Anna_von_Waldburg-Wolfegg>
+  # Maria Anna Bernhardina Crescentia Walpurgis Aloysia Felicitas Eusebia Freiin von Waldburg Gräfin zu Wolfegg, 1772-01-11 - 1835-07-06
+  gen:father <https://www.wikidata.org/wiki/Q66683029> ;
+  gen:mother <#Maria_Karolina_von_Waldburg-Zeil-Wurzach> .
+  # oo 1798-02-18 Maximilian, Fürst von Waldburg zu Zeil und Trauchburg, 1750-08-20 - 1818-05-16, https://www.wikidata.org/wiki/Q108320
+
+
+# Waldburg-Wolfegg-Waldsee
+<https://www.wikidata.org/wiki/Q66682990>
+  # Johann Maria Franz Eusebius Graf von Waldburg zu Wolfegg und Waldsee, 1661-10-13 - 1724-12-25
+  # in Waldsee 1672
+  gen:father <https://www.wikidata.org/wiki/Q1914131> ;
+  gen:mother <ligne.ttl#Claire_Isabelle_d’Arenberg> .
+  # oo Maria Anna Freiin von Waldburg, Gräfin zu Trauchburg, 1663-04-13 - 1682-07-14
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q66682990> , <#Maria_Anna_von_Waldburg-Trauchburg> ;
+	gen:startDate "1682-04-13" .
+  # oo Maria Anna Gräfin Fugger von Kirchheim, 1659-03-16 - 1725-07-12
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q66682990> , <#Maria_Anna_Fugger> ;
+	gen:startDate "1684-02-20" .
+
+<https://www.wikidata.org/wiki/Q110260702>
+  # Maximilian Maria Freiherr von Waldburg, Graf zu Wolfegg in Waldsee, 1684-11-28 - 1748-04-03
+  gen:father <https://www.wikidata.org/wiki/Q66682990> ;
+  gen:mother <#Maria_Anna_Fugger> .
+  # oo Maria Ernestina Gräfin von Thun, 1697-01-12 - 1718-11-25, daughter of Franz Wenzeslaus Graf von Thun
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110260702> , <#Maria_Ernestina_von_Thun> ;
+	gen:startDate "1714-10-22" .
+  # oo Marie Eleonore Freiin von Ulm zu Erbach, 1696-10-21 - 1780-08-16, daughter of Franz Anton Freiherr von Ulm zu Erbach and Maria Anna Klara Freiin von und zu Elsenheim
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110260702> , <#Marie_Eleonore_von_Ulm-Erbach> ;
+	gen:startDate "1719-09-24" .
+
+<https://www.wikidata.org/wiki/Q110261799>
+  # Gebhard Xaver Johann Joseph Ignaz Willibald Eusebius Freiherr von Waldburg, Reichserbtruchsess Graf zu Wolfegg in Waldsee, 1727-06-24 - 1791-02-26
+  gen:father <https://www.wikidata.org/wiki/Q110260702> ;
+  gen:mother <#Marie_Eleonore_von_Ulm-Erbach> .
+  # oo Maria Klara Gräfin von Königsegg-Aulendorf, 1733-02-11 - 1796-06-28
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110261799> , <oettingen.ttl#Maria_Klara_von_Königsegg-Aulendorf> ;
+	gen:startDate "1752-10-13" .
+
+<https://www.wikidata.org/wiki/Q1453434>
+  # Joseph Anton Xaver Eusebius Maria Wunibald, Fürst von Waldburg zu Wolfegg in Waldsee, 1766-02-21 - 1833-04-03
+  # 1. Fürst von Waldburg zu Wolfegg in Waldsee 1803-03-21
+  gen:father <https://www.wikidata.org/wiki/Q110261799> ;
+  gen:mother <oettingen.ttl#Maria_Klara_von_Königsegg-Aulendorf> .
+  # oo Maria Josepha Gräfin Fugger von Babenhausen, 1770-08-02 - 1848-12-27
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1453434> , <https://www.wikidata.org/wiki/Q59131177> ;
+	gen:startDate "1791-01-09" .
+
+<#Maria_Walburga_von_Waldburg-Wolfegg-Waldsee>
+  # Maria Walburga Josepha Theresia Karolina Gräfin von Waldburg zu Wolfegg und Waldsee, 1791-12-06 - 1853-06-05
+  gen:father <https://www.wikidata.org/wiki/Q1453434> ;
+  gen:mother <https://www.wikidata.org/wiki/Q59131177> .
+  # oo 1810-08-26 Franz Joseph August Fürst und Altgraf zu Salm-Reifferscheidt-Dyck, 1775-10-16 - 1826-12-26, https://www.wikidata.org/wiki/Q110261798
+<https://www.wikidata.org/wiki/Q1464051>
+  # Friedrich Karl Joseph Fürst von Waldburg zu Wolfegg in Waldsee, 1808-08-13 - 1871-04-22
+  # 2. Fürst von Waldburg zu Wolfegg in Waldsee 1833-04-03
+  gen:father <https://www.wikidata.org/wiki/Q1453434> ;
+  gen:mother <https://www.wikidata.org/wiki/Q59131177> .
+  # oo Elisabeth Gräfin zu Königsegg-Aulendorf, 1812-04-14 - 1886-05-29 (oettingen.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1464051> , <https://www.wikidata.org/wiki/Q70345446> ;
+	gen:startDate "1832-10-09" .
+
+<https://www.wikidata.org/wiki/Q1423890>
+  # Franz Xaver Joseph Friedrich Fürst von Waldburg zu Wolfegg und Waldsee, 1833-09-11 - 1906-12-14
+  # 3. Fürst von Waldburg zu Wolfegg und Waldsee 1871-04-22
+  gen:father <https://www.wikidata.org/wiki/Q1464051> ;
+  gen:mother <https://www.wikidata.org/wiki/Q70345446> .
+  # oo Sophie Leopoldine Gräfin von und zu Arco-Zinneberg, 1836-11-14 - 1909-12-21 (lothringen.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1423890> , <https://www.wikidata.org/wiki/Q75365029> ;
+	gen:startDate "1860-04-19" .
+<#Maria_Josepha_von_Waldburg-Wolfegg-Waldsee>
+  # Maria Josepha Gräfin von Waldburg zu Wolfegg und Waldsee, 1840-04-20 - 1885-05-11
+  gen:father <https://www.wikidata.org/wiki/Q1464051> ;
+  gen:mother <https://www.wikidata.org/wiki/Q70345446> .
+  # oo 1862-02-24 Wilhelm Fürst von Waldburg zu Zeil und Trauchburg, 1835-11-26 - 1906-07-20, https://www.wikidata.org/wiki/Q1797256
+
+<https://www.wikidata.org/wiki/Q1674265>
+  # Maximilian Wunibald Maria Josef Servatius Fürst von Waldburg zu Wolfegg und Waldsee, 1863-05-13 - 1950-09-27
+  # 4. Fürst von Waldburg zu Wolfegg und Waldsee 1906-12-14
+  gen:father <https://www.wikidata.org/wiki/Q1423890> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75365029> .
+  # oo Sidonie Prinzessin von Lobkowitz, 1869-08-12 - 1941-07-24
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1674265> , <https://www.wikidata.org/wiki/Q70345091> ;
+	gen:startDate "1890-07-26" .
+<https://www.wikidata.org/wiki/Q75366295>
+  # Elizabeth Bona von Waldburg Gräfin zu Wolfegg und Waldsee, 1867-12-03 - 1947-02-16
+  gen:father <https://www.wikidata.org/wiki/Q1423890> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75365029> .
+  # oo 1893-09-05 Anton Graf zu Stolberg-Wernigerode, 1864-08-23 - 1905-02-04, https://www.wikidata.org/wiki/Q75366296
+<https://www.wikidata.org/wiki/Q75366191>
+  # Ludwig Maria Josef Wunibald Petrus Pius von Waldburg Graf zu Wolfegg und Waldsee, 1871-10-27 - 1906-06-24
+  gen:father <https://www.wikidata.org/wiki/Q1423890> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75365029> .
+  # oo Anna Elisabeth Gräfin von Galen, 1881-11-17 - 1970-06-22
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75366191> , <https://www.wikidata.org/wiki/Q75366193> ;
+	gen:startDate "1902-04-17" .
+
+<https://www.wikidata.org/wiki/Q1448116>
+  # _Franz_ Xaver Maria _Ludwig_ Josef Andreas Willibald Aloysius Alfons Graf von Waldburg zu Wolfegg und Waldsee, 1892-08-25 - 1989-05-01
+  # Chef des Hauses Waldburg-Wolfegg-Waldsee 1950-09-27
+  gen:father <https://www.wikidata.org/wiki/Q1674265> ;
+  gen:mother <https://www.wikidata.org/wiki/Q70345091> .
+  # oo Adelheid Gräfin von Schönburg-Glauchau, 1900-07-28 - 1987-01-07
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1448116> , <https://www.wikidata.org/wiki/Q75346613> ;
+	gen:startDate "1920-05-06" .
+<https://www.wikidata.org/wiki/Q75366079>
+  # Johannes Nepomuck Maria Wunibald Anton Laurentius Graf von Waldburg zu Wolfegg und Waldsee, 1904-08-10 - 1966-05-17
+  gen:father <https://www.wikidata.org/wiki/Q1674265> ;
+  gen:mother <https://www.wikidata.org/wiki/Q70345091> .
+  # oo Franziska Gräfin von Ledebur-Wicheln, 1913-06-18 - 2002-04-09
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75366079> , <https://www.wikidata.org/wiki/Q75366081> ;
+	gen:startDate "1938-09-19" .
+<https://www.wikidata.org/wiki/Q75392098>
+  # Maria Elisabetha Bona Walburga Josefa Laurentia Gräfin von Waldburg zu Wolfegg und Waldsee, 1904-08-10 - 1993-03-13
+  gen:father <https://www.wikidata.org/wiki/Q1674265> ;
+  gen:mother <https://www.wikidata.org/wiki/Q70345091> .
+  # oo 1926-11-16 Maximilian Herzog von Hohenberg, 1902-09-29 - 1962-01-08, https://www.wikidata.org/wiki/Q78596 (lothringen.ttl)
+<https://www.wikidata.org/wiki/Q75366135>
+  # _Heinrich Maria_ Willibald Benedikt Albrecht Philipp Ulrich Graf von Waldburg zu Wolfegg und Waldsee, 1911-09-15 - 1972-05-25
+  gen:father <https://www.wikidata.org/wiki/Q1674265> ;
+  gen:mother <https://www.wikidata.org/wiki/Q70345091> .
+  # oo Benedikta Prinzessin von Hohenzollern, 1921-02-19 - 2011-10-11
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75366135> , <https://www.wikidata.org/wiki/Q106685129> ;
+	gen:startDate "1942-01-04" .
+<https://www.wikidata.org/wiki/Q75347030>
+  # Hubert Maria Aloysius Wunibald Pius von Waldburg Graf zu Wolfegg und Waldsee, 1906-01-07 - 1976-01-30
+  gen:father <https://www.wikidata.org/wiki/Q75366191> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75366193> .
+  # oo Anna Elisabeth Gräfin von Arco auf Valley, 1909-08-10 - 1981-12-31 (lothringen.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75347030> , <https://www.wikidata.org/wiki/Q75347031> ;
+	gen:startDate "1933-09-12" .
+
+<https://www.wikidata.org/wiki/Q75346624>
+  # Maximilian (_Max_) _Willibald_ Maria Franz Xaver Benedikt Johann Baptist Graf von Waldburg zu Wolfegg und Waldsee, 1924-06-22 - 1998-09-05
+  # Chef des Hauses Waldburg-Wolfegg-Waldsee 1989-05-01
+  gen:father <https://www.wikidata.org/wiki/Q1448116> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75346613> .
+  # oo Ida Franziska Gräfin Khuen von Belasi, 1928-05-01 - 1987-06-06 (lobkowicz.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75346624> , <https://www.wikidata.org/wiki/Q75346625> ;
+	gen:startDate "1955-02-08" .
+  # oo Elisabeth Mérey von Kaposmérö und Kisdovorán, b. 1948-08-12, daughter of George Merey von Kaposmere und Kisdovoran and Elisabeth Baroness Ullmann von Baranyavar
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75346624> , <https://www.wikidata.org/wiki/Q75374179> ;
+	gen:startDate "1991-11-30" .
+<https://www.wikidata.org/wiki/Q75346693>
+  # Ferdinand Ludwig Josef Maria Wunibald Konrad von Parzham Christophorus Graf von Waldburg zu Wolfegg und Waldsee, 1933-12-17 - 2001-06-12
+  gen:father <https://www.wikidata.org/wiki/Q1448116> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75346613> .
+  # oo (rel 1964-06-08) Emma Rosanne Prinzessin von Croÿ, b. 1943-12-30
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75346693> , <https://www.wikidata.org/wiki/Q75346695> ;
+	gen:startDate "1964-05-20" .
+<https://www.wikidata.org/wiki/Q75296181>
+  # Franz Willibald Ignatius Omnes Sancti Graf von Waldburg zu Wolfegg und Waldsee, b. 1946-11-01
+  gen:father <https://www.wikidata.org/wiki/Q75366079> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75366081> .
+  # oo Veronika Gräfin Hoyos Freiin zu Stichsenstein, b. 1955-07-10 (hohenlohe.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75296181> , <https://www.wikidata.org/wiki/Q75296186> ;
+	gen:startDate "1983-06-12" .
+<https://www.wikidata.org/wiki/Q75366141>
+  # Maria Sidonia Margareta Elisabeth Walburga Caspara Meinrad Barbara Gräfin von Waldburg zu Wolfegg und Waldsee, b. 1942-12-04
+  gen:father <https://www.wikidata.org/wiki/Q75366135> ;
+  gen:mother <https://www.wikidata.org/wiki/Q106685129> .
+  # oo 1970-09-12 (rel 1970-10-10) Sándor Esterházy, 1943-07-15 - 2017-08-30, https://www.wikidata.org/wiki/Q75366142
+<https://www.wikidata.org/wiki/Q75325819>
+  # Ludwig Karl Maximilian Hubert Willibald Modestus von Waldburg Graf zu Wolfegg und Waldsee, 1934-06-15 - 2017-04-23
+  gen:father <https://www.wikidata.org/wiki/Q75347030> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75347031> .
+  # oo (rel 1960-09-07) Stephanie Prinzessin von Schönburg-Waldenburg, b. 1938-09-22
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75325819> , <https://www.wikidata.org/wiki/Q75325817> ;
+	gen:startDate "1960-08-17" .
+
+<https://www.wikidata.org/wiki/Q75346636>
+  # Johannes Franz Xaver Willibald Maria Josef Philipp Jeningen Leonhard von Waldburg Graf zu Wolfegg und Waldsee, b. 1957-03-09
+  # Chef des Hauses Waldburg-Wolfegg-Waldsee 1998-09-05
+  gen:father <https://www.wikidata.org/wiki/Q75346624> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75346625> .
+  # oo Viviana dei Conti Rimbotti, b. 1963-02-11, daughter of Vittorio Emmanuele dei Conti Rimbotti and Donna Maria Vittoria Colonna di Summonte
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75346636> , <https://www.wikidata.org/wiki/Q75346638> ;
+	gen:startDate "1989-04-29" .
+<https://www.wikidata.org/wiki/Q75346647>
+  # Jakob Heinrich Wunibald Maria Josef Rupert Leonhard von Waldburg Graf zu Wolfegg und Waldsee, b. 1957-03-09
+  gen:father <https://www.wikidata.org/wiki/Q75346624> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75346625> .
+  # oo (rel 1991-05-11) Eilika Gräfin zu Solms-Baruth, b. 1966-08-08
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75346647> , <https://www.wikidata.org/wiki/Q75298925> ;
+	gen:startDate "1991-04-28" .
+<https://www.wikidata.org/wiki/Q75346704>
+  # Richard Heinrich Gebhard Wunibald Bernhard Graf von Waldburg zu Wolfegg und Waldsee, b. 1965-05-20
+  gen:father <https://www.wikidata.org/wiki/Q75346693> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75346695> .
+  # oo Cynthia Prinzessin zu Solms-Hohensolms-Lich, b. 1967-11-24
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75346704> , <solms.ttl#Cynthia_zu_Solms-Hohensolms-Lich> ;
+	gen:startDate "2003-07-19" .
+<https://www.wikidata.org/wiki/Q75296184>
+  # Clara Maria Johanna Hemma Gräfin von Waldburg zu Wolfegg und Waldsee, b. 1985
+  gen:father <https://www.wikidata.org/wiki/Q75296181> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75296186> .
+  # oo 2014-08-02 Alexander Prinz von Schönburg-Hartenstein, b. 1979-08-02, schönburg.ttl#Alexander_von_Schönburg-Hartenstein
+<https://www.wikidata.org/wiki/Q75325785>
+  # Elisabeth Pauline Anna Amelie Maria Walburga von Waldburg Gräfin zu Wolfegg und Waldsee, b. 1962-06-07
+  gen:father <https://www.wikidata.org/wiki/Q75325819> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75325817> .
+  # oo 1987-08-04 (rel 1987-09-12) Ludwig Prinz zu Löwenstein-Wertheim-Freudenberg, b. 1951-05-24, https://www.wikidata.org/wiki/Q75325782 (wittelsbacher.ttl)
+<https://www.wikidata.org/wiki/Q75325820>
+  # Hubertus Georg Karl Maria Willibald Johannes von Waldburg Graf zu Wolfegg und Waldsee, b. 1964-05-15
+  gen:father <https://www.wikidata.org/wiki/Q75325819> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75325817> .
+  # oo (rel 1993-06-19) Melanie Gräfin von Khevenhüller-Metsch, b. 1967-04-22
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75325820> , <https://www.wikidata.org/wiki/Q75325822> ;
+	gen:startDate "1993-06-07" .
+
+<https://www.wikidata.org/wiki/Q75346643>
+  # Ludwig Franz Willibald Maria Josef Leonhard von Waldburg Graf zu Wolfegg und Waldsee, b. 1990-07-12
+  gen:father <https://www.wikidata.org/wiki/Q75346636> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75346638> .
+  # oo (registered 2014-01-08) Jessica Iskandar, b. 1988-01-29
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75346643> , <https://www.wikidata.org/wiki/Q3391654> ;
+	gen:startDate "2013-12-11" ;
+	gen:divorceDate "2015-10-15" .
+<https://www.wikidata.org/wiki/Q75346645>
+  # Vittoria Ida Walburga Maria Josefa Leonhardo von Waldburg Gräfin zu Wolfegg und Waldsee, b. 1992-04-04
+  gen:father <https://www.wikidata.org/wiki/Q75346636> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75346638> .
+  # oo 2020-09-26 Ferdinand Lovrek, b. 1985-05-21, czernin.ttl#Ferdinand_Lovrek
+<https://www.wikidata.org/wiki/Q75346646>
+  # Leonardo Maximilian Wunibald Maria Josef Bruno von Waldburg Graf zu Wolfegg und Waldsee, b. 1995-10-06
+  gen:father <https://www.wikidata.org/wiki/Q75346636> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75346638> .
+
+<https://www.wikidata.org/wiki/Q107274214>
+  # El Barack Alexander, b. 2014-07-21
+  gen:father <https://www.wikidata.org/wiki/Q75346643> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3391654> .
+
+
+# Waldburg-Zeil
+<https://www.wikidata.org/wiki/Q55238198>
+  # Froben Freiherr von Waldburg zu Zeil, 1569-08-19 - 1614-05-04
+  # in Zeil 1595
+  gen:father <https://www.wikidata.org/wiki/Q66682468> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110152677> .
+  # oo Katharina Johanna von Toerring, d. 1593
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q55238198> , <#Katharina_von_Toerring> ;
+	gen:startDate "1592" .
+  # oo Anna Maria Freiin von Toerring, 1578 - 1636
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q55238198> , <https://www.wikidata.org/wiki/Q110367087> ;
+	gen:startDate "1596" .
+
+<https://www.wikidata.org/wiki/Q66682828>
+  # Johann Jakob I. Freiherr von Waldburg, Graf von Zeil, 1602-08-02 - 1674-04-18
+  # Reichsgraf 1628-09-07
+  gen:father <https://www.wikidata.org/wiki/Q55238198> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110367087> .
+  # oo Johanna Gräfin von Wolkenstein-Trostburg, d. 1680-08-20
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q66682828> , <https://www.wikidata.org/wiki/Q110503717> ;
+	gen:startDate "1621-11-22" .
+
+<https://www.wikidata.org/wiki/Q66682948> # -> Waldburg-Zeil-Zeil
+  # Paul/Paris Jacob Freiherr von Waldburg, Graf von Zeil, 1624-01-18 - 1684-03-24
+  gen:father <https://www.wikidata.org/wiki/Q66682828> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110503717> .
+<https://www.wikidata.org/wiki/Q66682978> # -> Waldburg-Zeil-Wurzach
+  # Sebastian Wunibald Truchsess und Graf von Waldburg zu Zeil und Wurzach, 1636-01-31 - 1700-06-15
+  gen:father <https://www.wikidata.org/wiki/Q66682828> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110503717> .
+
+
+# Waldburg-Zeil-Zeil
+<https://www.wikidata.org/wiki/Q66682948>
+  # Paul/Paris Jacob Freiherr von Waldburg, Graf von Zeil, 1624-01-18 - 1684-03-24
+  # in Zeil 1675
+  gen:father <https://www.wikidata.org/wiki/Q66682828> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110503717> .
+  # oo Amalia Lucia Gravin van den Bergh, 1633-04-25 - 1711-03-15 (mark.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q66682948> , <https://www.wikidata.org/wiki/Q76263183> ;
+	gen:startDate "1657-01-26" .
+
+<https://www.wikidata.org/wiki/Q93521614>
+  # Johann Christoph Freiherr von Waldburg, Graf zu Zeil, 1660-06-19 - 1720-02-14
+  gen:father <https://www.wikidata.org/wiki/Q66682948> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76263183> .
+  # oo Maria Franziska Elisabeth Gräfin von Montfort, 1668-01-13 - 1726-08-21
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q93521614> , <#Maria_Franziska_von_Montfort> ;
+	gen:startDate "1685-08-05" .
+
+<https://www.wikidata.org/wiki/Q93521679>
+  # Johann Jakob II., Freiherr von Waldburg, Graf zu Zeil, 1686-11-23 - 1750-10-16
+  gen:father <https://www.wikidata.org/wiki/Q93521614> ;
+  gen:mother <#Maria_Franziska_von_Montfort> .
+  # oo Maria Elisabeth Gräfin von Khüenburg, 1693-05-30 - 1719-03-06 (harrach.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q93521679> , <https://www.wikidata.org/wiki/Q110153200> ;
+	gen:startDate "1711-09-14" .
+<#Maria_Anna_von_Waldburg-Zeil>
+  # Maria Anna Gräfin von Waldburg zu Zeil, 1692-05-06 - 1762-02-20
+  gen:father <https://www.wikidata.org/wiki/Q93521614> ;
+  gen:mother <#Maria_Franziska_von_Montfort> .
+  # oo 1722-10-24 Wolfgang Heinrich Wilhelm, Graf von Manderscheid-Kayl, 1678-06-29 - 1742-07-17, https://www.wikidata.org/wiki/Q93521782
+<https://www.wikidata.org/wiki/Q75289032>
+  # Marie Katharina Gräfin von Waldburg zu Zeil, 1702-09-28 - 1739-02-24
+  gen:father <https://www.wikidata.org/wiki/Q93521614> ;
+  gen:mother <#Maria_Franziska_von_Montfort> .
+  # oo 1724-05-14 Franz Wilhelm Prinz von Hohenzollern-Sigmaringen, Graaf van den Bergh-s’-Heerenberg, 1704-12-07 - 1737-02-10, https://www.wikidata.org/wiki/Q1449495
+
+<https://www.wikidata.org/wiki/Q66683315> # -> Waldburg-Zeil-Trauchburg
+  # _Franz Anton_ Joseph Johann Wilhelm Graf von Waldburg zu Zeil und Trauchburg, 1714-05-28 - 1790-03-20
+  gen:father <https://www.wikidata.org/wiki/Q93521679> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110153200> .
+
+
+# Waldburg-Zeil-Trauchburg
+<https://www.wikidata.org/wiki/Q66683315>
+  # _Franz Anton_ Joseph Johann Wilhelm Graf von Waldburg zu Zeil und Trauchburg, 1714-05-28 - 1790-03-20
+  # Freiherr von Waldburg, Graf zu Zeil, Herr zu Trauchburg
+  # Trauchburg 1772-07-06
+  gen:father <https://www.wikidata.org/wiki/Q93521679> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110153200> .
+  # oo Maria Anna Gräfin von Waldburg zu Trauchburg, 1728-11-30 - 1782-01-25
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q66683315> , <https://www.wikidata.org/wiki/Q110153201> ;
+	gen:startDate "1748-10-14" .
+
+<https://www.wikidata.org/wiki/Q108320>
+  # Maximilian Wunibald Ferdinand Jacob Bernhard, Fürst von Waldburg zu Zeil und Trauchburg, 1750-08-20 - 1818-05-16
+  # Reichserbtruchseß, Freiherr zu Waldburg, Graf zu Zeil und Trauchburg 1790-03-20
+  # 1. Reichsfürst von Waldburg zu Zeil und Trauchburg 1803-03-21 (- 1806)
+  gen:father <https://www.wikidata.org/wiki/Q66683315> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110153201> .
+  # oo Maria Freiin von Hornstein zu Weiterdingen, 1752-11-30 - 1797-10-30
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q108320> , <https://www.wikidata.org/wiki/Q110153205> ;
+	gen:startDate "1774-11-07" .
+  # oo Maria Anna Freiin von Waldburg Gräfin zu Wolfegg, 1772-01-11 - 1835-07-06
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q108320> , <#Maria_Anna_von_Waldburg-Wolfegg> ;
+	gen:startDate "1798-02-18" .
+
+<https://www.wikidata.org/wiki/Q1450020>
+  # _Franz Thaddäus_ Joseph Fürst von Waldburg zu Zeil und Trauchburg, 1778-10-15 - 1845-12-05
+  # 2. Fürst von Waldburg zu Zeil und Trauchburg 1818-05-16
+  gen:father <https://www.wikidata.org/wiki/Q108320> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110153205> .
+  # oo Christiane Polyxene Prinzessin zu Löwenstein-Wertheim-Rosenberg, 1782-05-16 - 1811-07-05 (wittelsbacher.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1450020> , <https://www.wikidata.org/wiki/Q110153213> ;
+	gen:startDate "1805-07-25" .
+  # oo Antoinette Freiin von der Wenge zu Beck, 1790-04-08 - 1819-02-12
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1450020> , <#Antoinette_von_der_Wenge> ;
+	gen:startDate "1818-01-27" .
+  # oo Maria Theresia Freiin von der Wenge zu Beck, 1788-03-14 - 1864-03-04
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1450020> , <#Maria_von_der_Wenge> ;
+	gen:startDate "1820-10-03" .
+<https://www.wikidata.org/wiki/Q106462864> # -> Waldburg-Zeil-Hohenems
+  # Maximilian Klemens Graf von Waldburg zu Zeil und Trauchburg, 1799-10-08 - 1868-05-29
+  gen:father <https://www.wikidata.org/wiki/Q108320> ;
+  gen:mother <#Maria_Anna_von_Waldburg-Wolfegg> .
+
+<https://www.wikidata.org/wiki/Q1127997>
+  # Konstantin Maximilian Fürst von Waldburg zu Zeil und Trauchburg, 1807-01-08 - 1862-12-17
+  # Fürst von Waldburg zu Zeil und Trauchburg 1845-12-05
+  gen:father <https://www.wikidata.org/wiki/Q1450020> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110153213> .
+  # oo Maximiliane Gräfin von Quadt zu Wykradt und Isny, 1813-05-18 - 1874-05-08
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1127997> , <#Maximiliane_von_Quadt-Wykradt-Isny> ;
+	gen:startDate "1833-09-30" .
+<https://www.wikidata.org/wiki/Q70346281>
+  # Leopoldine Gräfin von Waldburg zu Zeil und Trauchburg, 1811-06-27 - 1886-02-10
+  gen:father <https://www.wikidata.org/wiki/Q1450020> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110153213> .
+  # oo 1833-06-03 Maximilian Graf von und zu Arco-Zinneberg, 1811-12-13 - 1885-11-13, https://www.wikidata.org/wiki/Q1914128 (lothringen.ttl)
+
+<https://www.wikidata.org/wiki/Q1797256>
+  # Wilhelm Franz Maria Christian Fürst von Waldburg zu Zeil und Trauchburg, 1835-11-26 - 1906-07-20
+  # Fürst von Waldburg zu Zeil und Trauchburg 1862-12-17
+  gen:father <https://www.wikidata.org/wiki/Q1127997> ;
+  gen:mother <#Maximiliane_von_Quadt-Wykradt-Isny> .
+  # oo Maria Josepha Gräfin von Waldburg zu Wolfegg und Waldsee, 1840-04-20 - 1885-05-11
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1797256> , <#Maria_Josepha_von_Waldburg-Wolfegg-Waldsee> ;
+	gen:startDate "1862-02-24" .
+  # oo Marie Georgine Prinzessin von Thurn und Taxis, 1857-12-25 - 1909-02-13
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1797256> , <https://www.wikidata.org/wiki/Q75761699> ;
+	gen:startDate "1889-05-23" .
+
+<https://www.wikidata.org/wiki/Q1435246>
+  # Maria Friedrich _Georg_ Maximilian Wunibald Pius Petrus Canisius Fürst von Waldburg zu Zeil und Trauchburg, 1867-05-29 - 1918-09-02
+  # Fürst von Waldburg zu Zeil und Trauchburg 1906-07-20
+  gen:father <https://www.wikidata.org/wiki/Q1797256> ;
+  gen:mother <#Maria_Josepha_von_Waldburg-Wolfegg-Waldsee> .
+  # oo Marie Therese Altgräfin zu Salm-Reifferscheidt-Raitz, 1869-10-31 - 1930-08-27 (reifferscheidt.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1435246> , <https://www.wikidata.org/wiki/Q75392347> ;
+	gen:startDate "1897-05-08" .
+<https://www.wikidata.org/wiki/Q75767677>
+  # Maria _Wilhelm_ Karl Maximilian Graf von Waldburg zu Zeil und Trauchburg, 1890-01-19 - 1927-07-28
+  gen:father <https://www.wikidata.org/wiki/Q1797256> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75761699> .
+  # oo Marie-Therese Altgräfin zu Salm-Reifferscheidt-Raitz, 1896-02-28 - 1985-01-17
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75767677> , <reifferscheidt.ttl#Marie-Therese_zu_Salm-Reifferscheidt-Raitz> ;
+	gen:startDate "1921-09-28" .
+
+<https://www.wikidata.org/wiki/Q1353623>
+  # Maria _Erich August_ Wunibald Anton Joseph Reinhard, Fürst von Waldburg zu Zeil und Trauchburg, 1899-08-21 - 1953-05-24
+  # Fürst von Waldburg zu Zeil und Trauchburg 1918-09-02
+  gen:father <https://www.wikidata.org/wiki/Q1435246> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75392347> .
+  # oo (rel 1926-04-06) Monika Prinzessin zu Löwenstein-Wertheim-Rosenberg, 1905-02-25 - 1992-12-28 (wittelsbacher.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1353623> , <https://www.wikidata.org/wiki/Q75365859> ;
+	gen:startDate "1926-04-05" .
+<https://www.wikidata.org/wiki/Q75392308>
+  # Maria Theresa Gräfin von Waldburg zu Zeil und Trauchburg, 1901-10-18 - 1967-07-17
+  gen:father <https://www.wikidata.org/wiki/Q1435246> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75392347> .
+  # oo 1926-07-28 Theodor Salvator Erzherzog von Österreich, 1899-10-09 - 1978-04-08, https://www.wikidata.org/wiki/Q75392306 (lothringen.ttl)
+<https://www.wikidata.org/wiki/Q75392956>
+  # Maria _Konstantin_ Friedrich Georg Wunibald Wilhelm Josef Anton Graf von Waldburg zu Zeil und Trauchburg, 1909-03-15 - 1972-02-27
+  gen:father <https://www.wikidata.org/wiki/Q1435246> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75392347> .
+  # oo (rel 1951-08-14) Eleonore Prinzessin von Bayern, 1918-09-11 - 2009-08-19 (wittelsbacher.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75392956> , <https://www.wikidata.org/wiki/Q75392954> ;
+	gen:startDate "1951-08-02" .
+<https://www.wikidata.org/wiki/Q75391182>
+  # Maria _Gabriele_ Anna Georgine Walburga Antonia Josepha Gräfin von Waldburg zu Zeil und Trauchburg, 1910-04-26 - 2005-04-06
+  gen:father <https://www.wikidata.org/wiki/Q1435246> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75392347> .
+  # oo 1940-06-20 Karl Gero Herzog von Urach, 1899-08-19 - 1981-08-15, https://www.wikidata.org/wiki/Q72566 (württemberg.ttl)
+
+<https://www.wikidata.org/wiki/Q1506717>
+  # Maria _Georg_ Konstantin Ignatius Antonius Felix Augustinus Wunibald Kilian Bonifacius Fürst von Waldburg zu Zeil und Trauchburg, 1928-06-05 - 2015-12-02
+  # Fürst von Waldburg zu Zeil und Trauchburg 1953-05-24
+  gen:father <https://www.wikidata.org/wiki/Q1353623> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75365859> .
+  # oo (rel 1957-10-23) Marie Gabriele Prinzessin von Bayern, b. 1931-05-30 (wittelsbacher.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1506717> , <https://www.wikidata.org/wiki/Q75392926> ;
+	gen:startDate "1957-08-31" .
+<https://www.wikidata.org/wiki/Q75366889>
+  # Maria Immakula _Josephine_ Walburga Theresia Lucia Coletta Gräfin von Waldburg zu Zeil und Trauchburg, 1929-12-13 - 1999-03-12
+  gen:father <https://www.wikidata.org/wiki/Q1353623> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75365859> .
+  # oo 1953-07-11 (rel 1953-08-28) Nikolaus Prinz von Lobkowicz, 1931-07-09 - 2019-09-19, https://www.wikidata.org/wiki/Q1991580
+<https://www.wikidata.org/wiki/Q75295357>
+  # Maria Theresia Walburga Elisabeth Antonia Gräfin von Waldburg zu Zeil und Trauchburg, 1931-08-08 - 2021-09-25
+  gen:father <https://www.wikidata.org/wiki/Q1353623> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75365859> .
+  # oo 1962-08-07 (rel 1962-09-12) Alois Graf von Nostitz-Rieneck, 1925-08-12 - 2003-04-22, https://www.wikidata.org/wiki/Q75295355 (lothringen.ttl)
+<https://www.wikidata.org/wiki/Q1304832>
+  # Alois (Maria Aloysius Willibald Eustachius Matthäus Franziskus vom Kreuz) Graf von Waldburg zu Zeil und Trauchburg, 1933-09-20 - 2014-12-14
+  gen:father <https://www.wikidata.org/wiki/Q1353623> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75365859> .
+  # oo (rel 1956-06-21) Clarissa Gräfin von Schönborn-Wiesentheid, 1936-10-14 - 2020-09-27 (liechtenstein.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1304832> , <https://www.wikidata.org/wiki/Q75366896> ;
+	gen:startDate "1956-05-23" .
+<https://www.wikidata.org/wiki/Q75377409>
+  # Maria Eberhard Willibald Konstantin Josef Franz Konrad Graf von Waldburg zu Zeil und Trauchburg, 1940-04-30 - 2013-03-03
+  gen:father <https://www.wikidata.org/wiki/Q1353623> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75365859> .
+  # oo Johanna Gräfin von Harrach zu Rohrau und Thannhausen, b. 1944-07-10
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75377409> , <https://www.wikidata.org/wiki/Q75379588> ;
+	gen:startDate "1966-09-10" .
+<https://www.wikidata.org/wiki/Q75294288>
+  # Maria Elisabeth Therese Eleonore Walburga Monika Gräfin von Waldburg zu Zeil und Trauchburg, b. 1954-01-06
+  gen:father <https://www.wikidata.org/wiki/Q75392956> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75392954> .
+  # oo 1980-04-30 (rel 1980-05-23) Hans-Kaspar Graf zu Toerring-Jettenbach, b. 1953-07-22, https://www.wikidata.org/wiki/Q75294290
+
+<https://www.wikidata.org/wiki/Q22694533>
+  # Maria _Erich_ Wunibald Aloysius Georg Fürst von Waldburg zu Zeil und Trauchburg, b. 1962-11-21
+  # Chef des Hauses Waldburg-Zeil-Trauchburg 2015-12-02
+  gen:father <https://www.wikidata.org/wiki/Q1506717> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75392926> .
+  # oo (rel 1988-11-19) Mathilde Herzogin von Württemberg, b. 1962-07-11
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q22694533> , <https://www.wikidata.org/wiki/Q75391258> ;
+	gen:startDate "1988-11-17" .
+<https://www.wikidata.org/wiki/Q75294169>
+  # Maria Elisabeth Walburga Priscilla Wiltrud Gräfin von Waldburg zu Zeil und Trauchburg, b. 1966-07-30
+  gen:father <https://www.wikidata.org/wiki/Q1506717> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75392926> .
+  # oo 1990-04-16 (rel 1990-07-07) Engelbert Prinz von Croÿ, b. 1962-06-05, https://www.wikidata.org/wiki/Q75368529
+<https://www.wikidata.org/wiki/Q75295273>
+  # Maria Monika Walburga Dorothea Gabriele Gräfin von Waldburg zu Zeil und Trauchburg, b. 1957-05-26
+  gen:father <https://www.wikidata.org/wiki/Q1304832> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75366896> .
+  # oo 1978-03-14 (rel 1978-04-29) Franz Joseph Graf Wolff Metternich zur Gracht, b. 1947-10-07, https://www.wikidata.org/wiki/Q75295272 (rheingrafen.ttl)
+<https://www.wikidata.org/wiki/Q75359265>
+  # Maria _Clemens_ Franz Erich Thomas Wunibald Graf von Waldburg zu Zeil und Trauchburg, b. 1960-04-13
+  gen:father <https://www.wikidata.org/wiki/Q1304832> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75366896> .
+  # oo (rel 1985-11-23) Georgina Prinzessin von und zu Liechtenstein, b. 1962-11-13
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75359265> , <https://www.wikidata.org/wiki/Q75293505> ;
+	gen:startDate "1985-10-10" .
+
+<https://www.wikidata.org/wiki/Q75293737>
+  # Marie-Thérèse Walburga Gabrielle Diana Georgina Franziska Gräfin von Waldburg zu Zeil und Trauchburg, b. 1989-10-04
+  gen:father <https://www.wikidata.org/wiki/Q22694533> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75391258> .
+<https://www.wikidata.org/wiki/Q75293739>
+  # Maria Elisabeth Walburga Apollonia Alexandra Friederike Gräfin von Waldburg zu Zeil und Trauchburg, b. 1990-12-31
+  gen:father <https://www.wikidata.org/wiki/Q22694533> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75391258> .
+<https://www.wikidata.org/wiki/Q75293741>
+  # Marie Charlotte Walburga Antonia Adelheid Viktoria Henriette Gräfin von Waldburg zu Zeil und Trauchburg, b. 1992-05-10
+  gen:father <https://www.wikidata.org/wiki/Q22694533> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75391258> .
+<https://www.wikidata.org/wiki/Q75293742>
+  # Marie Hélène Walburga Yolande Christiana Michaela Gräfin von Waldburg zu Zeil und Trauchburg, b. 1993-11-29
+  gen:father <https://www.wikidata.org/wiki/Q22694533> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75391258> .
+<https://www.wikidata.org/wiki/Q75317325>
+  # Marie Gabrielle Walburga Angelika Antonia Friederike Fleur Gräfin von Waldburg zu Zeil und Trauchburg, b. 1996-11-23
+  gen:father <https://www.wikidata.org/wiki/Q22694533> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75391258> .
+
+
+# Waldburg-Zeil-Hohenems
+<https://www.wikidata.org/wiki/Q106462864>
+  # Maximilian Klemens Graf von Waldburg zu Zeil und Trauchburg (-Hohenems), 1799-10-08 - 1868-05-29
+  gen:father <https://www.wikidata.org/wiki/Q108320> ;
+  gen:mother <#Maria_Anna_von_Waldburg-Wolfegg> .
+  # oo Maria Josepha Freiin von Enzberg, 1814-06-13 - 1892-08-17
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q106462864> , <#Maria_Josepha_von_Enzberg> ;
+	gen:startDate "1841-11-25" .
+
+<https://www.wikidata.org/wiki/Q106462925>
+  # Klemens Maximilian Sigmund Ferdinand Graf von Waldburg zu Zeil und Trauchburg (-Hohenems), 1842-10-21 - 1904-08-13
+  gen:father <https://www.wikidata.org/wiki/Q106462864> ;
+  gen:mother <#Maria_Josepha_von_Enzberg> .
+  # oo Klementine Prinzessin zu Oettingen-Oettingen und Oettingen-Spielberg, 1844-09-23 - 1894-03-06
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q106462925> , <oettingen.ttl#Klementine_zu_Oettingen-Oettingen> ;
+	gen:startDate "1870-02-22" .
+
+<https://www.wikidata.org/wiki/Q1827933>
+  # Georg Julius Kaspar Konrad Graf von Waldburg zu Zeil und Trauchburg (-Hohenems), 1878-01-07 - 1955-10-26
+  gen:father <https://www.wikidata.org/wiki/Q106462925> ;
+  gen:mother <oettingen.ttl#Klementine_zu_Oettingen-Oettingen> .
+  # oo Elisabeth Franziska Erzherzogin von Österreich Prinzessin von Toskana, 1892-01-27 - 1930-01-29 (lothringen.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1827933> , <https://www.wikidata.org/wiki/Q437964> ;
+	gen:startDate "1912-09-19" .
+  # oo Gertrud Erzherzogin von Österreich, 1900-11-19 - 1962-12-20 (lothringen.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1827933> , <https://www.wikidata.org/wiki/Q85302> ;
+	gen:startDate "1931-12-29" .
+
+<https://www.wikidata.org/wiki/Q75392225>
+  # Marie Valerie Klementine Franziska Elisabeth Walburga Gräfin von Waldburg zu Zeil und Trauchburg (-Hohenems), 1913-06-28 - 2011-07-08
+  gen:father <https://www.wikidata.org/wiki/Q1827933> ;
+  gen:mother <https://www.wikidata.org/wiki/Q437964> .
+  # oo 1936-04-29 Georg Erzherzog von Österreich Prinz von Toskana, 1905-08-22 - 1952-03-21, https://www.wikidata.org/wiki/Q14923852 (lothringen.ttl)
+<https://www.wikidata.org/wiki/Q75295162>
+  # Franz Josef Vitus Xaver Georg Wunibald Graf von Waldburg zu Zeil und Trauchburg (-Hohenems), b. 1927-03-07
+  gen:father <https://www.wikidata.org/wiki/Q1827933> ;
+  gen:mother <https://www.wikidata.org/wiki/Q437964> .
+  # oo Priscilla Gräfin von Schönborn-Wiesentheid, 1934-02-05 - 2019-05-31 (liechtenstein.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75295162> , <https://www.wikidata.org/wiki/Q75366846> ;
+	gen:startDate "1956-06-21" .
+<https://www.wikidata.org/wiki/Q75295323>
+  # Joseph Klemens Georg Vitus Willibald Konrad von Parzham Graf von Waldburg zu Zeil und Trauchburg, b. 1934-04-12
+  gen:father <https://www.wikidata.org/wiki/Q1827933> ;
+  gen:mother <https://www.wikidata.org/wiki/Q85302> .
+  # oo (rel 1960-05-08) Maria Benedikta Baronin von Redwitz, b. 1937-04-12
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75295323> , <https://www.wikidata.org/wiki/Q75295324> ;
+	gen:startDate "1960-05-08" .
+
+<https://www.wikidata.org/wiki/Q75368360>
+  # Philippa Charlotte Gertrud Walburga Maximiliana Gräfin von Waldburg zu Zeil und Trauchburg (-Hohenems), b. 1968-12-02
+  gen:father <https://www.wikidata.org/wiki/Q75295162> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75366846> .
+  # oo 1990-05-23 (rel 1990-07-14) Markus Graf zu Königsegg-Aulendorf, b. 1963-05-16, https://www.wikidata.org/wiki/Q75368359 (oettingen.ttl)
+<https://www.wikidata.org/wiki/Q75295333>
+  # Marie-Christine Sophie Eugenie Walburga Benedikta Josefa Gräfin von Waldburg-Zeil-Hohenems (von Waldburg zu Zeil und Trauchburg), b. 1962-07-02
+  gen:father <https://www.wikidata.org/wiki/Q75295323> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75295324> .
+  # oo 1989-03-10 (rel 1989-05-20) Christian Alfred Prinz von und zu Liechtenstein, b. 1961-11-14, https://www.wikidata.org/wiki/Q75295334
+
+
+# Waldburg-Zeil-Wurzach
+<https://www.wikidata.org/wiki/Q66682978>
+  # Sebastian Wunibald Truchsess und Graf von Waldburg zu Zeil und Wurzach, 1636-01-31 - 1700-06-15
+  # in Wurzach 1675
+  gen:father <https://www.wikidata.org/wiki/Q66682828> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110503717> .
+  # oo Maria Katharina Altgräfin zu Salm-Reifferscheidt, 1651-04-02 - 1687-03-22
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q66682978> , <https://www.wikidata.org/wiki/Q110503633> ;
+	gen:startDate "1673-01-24" .
+
+<https://www.wikidata.org/wiki/Q60710254>
+  # Ernst Jakob Graf von Waldburg zu Zeil und Wurzach, 1673-10-28 - 1734-06-08
+  gen:father <https://www.wikidata.org/wiki/Q66682978> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110503633> .
+  # oo Anna Luise Freiin von Waldburg, Gräfin zu Wolfegg, 1679-09-13 - 1736-03-25
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q60710254> , <https://www.wikidata.org/wiki/Q105873150> ;
+	gen:startDate "1702-10-12" .
+
+<https://www.wikidata.org/wiki/Q59328432>
+  # Franz Ernst Joseph Anton Graf von Waldburg zu Zeil-Wurzach und Friedberg, 1704-12-07 - 1781-04-05
+  gen:father <https://www.wikidata.org/wiki/Q60710254> ;
+  gen:mother <https://www.wikidata.org/wiki/Q105873150> .
+  # oo Maria Eleonore Gräfin von Königsegg-Rothenfels, 1711-07-04 - 1766-12-15
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q59328432> , <https://www.wikidata.org/wiki/Q105873151> ;
+	gen:startDate "1729-02-26" .
+
+<https://www.wikidata.org/wiki/Q110503531>
+  owl:sameAs <https://www.wikidata.org/wiki/Q55896837> ;
+  # Eberhard Ernst Wunibald, Fürst von Waldburg-Zeil und Wurzach, 1730-12-20 - 1807-09-23
+  # 1. Fürst von Waldburg-Zeil und Wurzach 1803-09-23
+  gen:father <https://www.wikidata.org/wiki/Q59328432> ;
+  gen:mother <https://www.wikidata.org/wiki/Q105873151> .
+  # oo Maria Katharina Gräfin Fugger von Glött, 1744-06-09 - 1796-04-04
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110503531> , <https://www.wikidata.org/wiki/Q59326281> ;
+	gen:startDate "1767-05-06" .
+<#Maria_Theresia_von_Waldburg-Zeil-Wurzach>
+  # Maria Theresia Gräfin von Waldburg zu Zeil und Wurzach, 1732-01-26 - 1802-01-17
+  gen:father <https://www.wikidata.org/wiki/Q59328432> ;
+  gen:mother <https://www.wikidata.org/wiki/Q105873151> .
+  # oo 1751-12-25 Josef Friedrich Wilhelm, Fürst von Hohenzollern-Hechingen, 1717-11 - 1798-04-09, https://www.wikidata.org/wiki/Q631175
+<https://www.wikidata.org/wiki/Q76259395>
+  # Eleonore Maria Walburga Saloma Gräfin von Waldburg zu Zeil und Wurzach, 1735-10-22 - 1804-01-14
+  gen:father <https://www.wikidata.org/wiki/Q59328432> ;
+  gen:mother <https://www.wikidata.org/wiki/Q105873151> .
+  # oo 1764-07-21 Sigismund Altgraf zu Salm-Reifferscheidt-Bedburg, 1735-06-23 - 1798-03-27, https://www.wikidata.org/wiki/Q97207667 (reifferscheidt.ttl)
+<#Maria_Karolina_von_Waldburg-Zeil-Wurzach>
+  # Maria Karolina Antonia Johanna Gräfin von Waldburg zu Zeil und Wurzach, 1738-06-22 - 1779-02-22
+  gen:father <https://www.wikidata.org/wiki/Q59328432> ;
+  gen:mother <https://www.wikidata.org/wiki/Q105873151> .
+  # oo 1763-07-26 Ferdinand Maria Ludwig Wunibald Eusebius Freiherr von Waldburg Graf zu Wolfegg, 1736-09-25 - 1779-01-24, https://www.wikidata.org/wiki/Q66683029
+<#Augusta_von_Waldburg-Zeil-Wurzach>
+  # Augusta Maria Friederike Josepha Anna Theresia Regula Gräfin von Waldburg zu Zeil und Wurzach, 1743-09-11 - 1776-01-06
+  gen:father <https://www.wikidata.org/wiki/Q59328432> ;
+  gen:mother <https://www.wikidata.org/wiki/Q105873151> .
+  # oo 1769-02-07 Johann Franz Wilhelm Altgraf zu Salm-Reifferscheidt in Dyck, 1714-11-28 - 1775-08-17, https://www.wikidata.org/wiki/Q16739547 (reifferscheidt.ttl)
+<#Maria_Crescentia_von_Waldburg-Zeil-Wurzach>
+  # Maria Crescentia Josepha Theresia Aloysia Anastasia Gräfin von Waldburg zu Zeil und Wurzach, 1752-04-25 - 1784-04-09
+  gen:father <https://www.wikidata.org/wiki/Q59328432> ;
+  gen:mother <https://www.wikidata.org/wiki/Q105873151> .
+  # oo 1771-06-25 Franz Fidelis Anton Graf zu Königsegg-Rothenfels, 1750-02-19 - 1804-09-10, https://www.wikidata.org/wiki/Q81826982
+<https://www.wikidata.org/wiki/Q63799137>
+  # Maria Antonia Monika Gräfin von Waldburg zu Zeil und Wurzach, 1753-06-06 - 1814-10-25
+  gen:father <https://www.wikidata.org/wiki/Q59328432> ;
+  gen:mother <https://www.wikidata.org/wiki/Q105873151> .
+  # oo 1772-11-01 Josef Anton Graf zu Oettingen-Baldern, 1720-03-04 - 1778-04-20, oettingen.ttl#Joseph_Anton_zu_Oettingen-Baldern
+  # oo 1779-07-26 Hermann, Fürst von Hohenzollern-Hechingen, 1748-11-06 - 1810-11-02, https://www.wikidata.org/wiki/Q317031
+
+<https://www.wikidata.org/wiki/Q110503530>
+  owl:sameAs <https://www.wikidata.org/wiki/Q59326221> ;
+  # Leopold Erbgraf von Waldburg zu Zeil-Wurzach, 1769-06-21 - 1800-06-18
+  gen:father <https://www.wikidata.org/wiki/Q110503531> ;
+  gen:mother <https://www.wikidata.org/wiki/Q59326281> .
+  # oo Maria Walpurga Gräfin Fugger von Babenhausen, 1771-10-23 - 1841-07-18
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110503530> , <https://www.wikidata.org/wiki/Q110503533> ;
+	gen:startDate "1793-10-15" .
+<#Maria_Antonia_von_Waldburg-Zeil-Wurzach>
+  # Maria Antonia Elisabetha Gräfin von Waldburg zu Zeil und Wurzach, 1774-03-08 - 1814-10-05
+  gen:father <https://www.wikidata.org/wiki/Q110503531> ;
+  gen:mother <https://www.wikidata.org/wiki/Q59326281> .
+  # oo 1793-10-15 Anselm Maria Fürst Fugger von Babenhausen, 1766-02-01 - 1821-11-22, https://www.wikidata.org/wiki/Q569571
+<#Eberhard_von_Waldburg-Zeil-Wurzach>
+  # Eberhard Graf von Waldburg zu Zeil und Wurzach, 1778-06-14 - 1814-01-18
+  gen:father <https://www.wikidata.org/wiki/Q110503531> ;
+  gen:mother <https://www.wikidata.org/wiki/Q59326281> .
+  # oo Maximiliane Antonie Prinzessin von Hohenzollern-Hechingen, 1787-11-03 - 1865-03-30
+  []
+    gen:spouse <#Eberhard_von_Waldburg-Zeil-Wurzach> , <hohenzollern.ttl#Maximiliane_Antonie_von_Hohenzollern-Hechingen> ;
+	gen:startDate "1811-02-25" .
+
+<#Maria_Walpurga_von_Waldburg-Zeil-Wurzach>
+  # Maria Walpurga Katharina Gräfin von Waldburg zu Zeil und Wurzach, 1794-09-13 - 1823-10-09
+  gen:father <https://www.wikidata.org/wiki/Q110503530> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110503533> .
+  # oo 1820-07-09 Karl Fürst zu Hohenlohe-Bartenstein-Jagstberg, 1766-12-12 - 1838-07-06, https://www.wikidata.org/wiki/Q60711109
+<https://www.wikidata.org/wiki/Q60710604>
+  # Leopold Maria Karl Eberhard Fürst von Waldburg zu Zeil-Wurzach, 1795-11-11 - 1861-04-26
+  # Fürst von Waldburg zu Zeil-Wurzach 1807-09-23
+  gen:father <https://www.wikidata.org/wiki/Q110503530> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110503533> .
+  # oo Maria Josepha Gräfin Fugger von Babenhausen, 1798-06-19 - 1831-05-09
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q60710604> , <#Maria_Josepha_Fugger_von_Babenhausen> ;
+	gen:startDate "1821-12-18" .
+
+<#Karl_Fürst_von_Waldburg_zu_Zeil-Wurzach>
+  # Karl Maria Eberhard Fürst von Waldburg zu Zeil-Wurzach, 1825-12-08 - 1907-03-06
+  # Fürst von Waldburg zu Zeil-Wurzach 1861-04-26 - 1865
+  # Freiherr von Wurzach by the King of Württemberg 1888
+  gen:father <https://www.wikidata.org/wiki/Q60710604> ;
+  gen:mother <#Maria_Josepha_Fugger_von_Babenhausen> .
+  # oo Marie Luise Laib, 1839-03-09 - 1907-01-29
+  []
+    gen:spouse <#Karl_Fürst_von_Waldburg_zu_Zeil-Wurzach> , <#Marie_Luise_Laib> .
+<https://www.wikidata.org/wiki/Q1279107>
+  # Eberhard Franz Leopold Maria Fürst von Waldburg zu Zeil-Wurzach, 1828-05-17 - 1903-08-01
+  # Fürst von Waldburg zu Zeil-Wurzach 1865
+  gen:father <https://www.wikidata.org/wiki/Q60710604> ;
+  gen:mother <#Maria_Josepha_Fugger_von_Babenhausen> .
+  # oo Sophie Gräfin Dubsky, 1835-10-28 - 1857-07-15
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1279107> , <#Sophie_Dubsky> ;
+	gen:startDate "1856-08-28" .
+  # oo Julie Gräfin Dubsky, 1841-04-27 - 1914-12-07
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1279107> , <https://www.wikidata.org/wiki/Q94692015> ;
+	gen:startDate "1858-08-05" .
+
+
+# ----
+<https://www.wikidata.org/wiki/Q97208177>
+  # Kunigunde Gräfin von Montfort-Tettnang
+  # Erbin der Grafschaften Friedberg und Scheer
+  gen:father <https://www.wikidata.org/wiki/Q62732286> . # Wilhelm IV.(V.) Graf von Montfort-Tettnang, d. 1439-09-08
+  # and Kunigunde Gräfin von Werdenberg
+  # oo 1432-12-21 Eberhard Truchsess von Waldburg, Graf von Sonnenberg, d. 1479-09-22, https://www.wikidata.org/wiki/Q29380947
+
+# ----
+<https://www.wikidata.org/wiki/Q110370562>
+  # Johanna Gräfin zu Salm, d. 1510-06-28
+  gen:father <https://www.wikidata.org/wiki/Q110370563> ; # Johann V., Graf von Salm
+  gen:mother <https://www.wikidata.org/wiki/Q110370564> . # Anne d’Haraucourt, Dame de Brandenbourg
+  # oo 1488 Johann von Waldburg, Graf von Sonnenberg zu Wolfegg, d. 1510-06-24, https://www.wikidata.org/wiki/Q1696871
+
+# ----
+<https://www.wikidata.org/wiki/Q109686933>
+  # Susanna Gräfin Khuen von Belasi, 1610 - 1669-11-15
+  gen:father <https://www.wikidata.org/wiki/Q110152684> ; # Hans Georg Khuen von Belasi Graf von Lichtenberg
+  gen:mother <https://www.wikidata.org/wiki/Q110152697> . # Veronica Gentilia Gräfin von Lodron
+  # oo 1625-11-16 Friedrich Truchsess Graf von Waldburg, 1592-01-15 - 1636-11-17, https://www.wikidata.org/wiki/Q66683407
+
+# ----
+<https://www.wikidata.org/wiki/Q21032215>
+  # Luise Katharina von Rautter, 1650-02-17 - 1703-06-04
+  gen:father <https://www.wikidata.org/wiki/Q109807644> ; # Ludwig von Rautter
+  gen:mother <https://www.wikidata.org/wiki/Q109807645> . # Barbara von Podewils
+  # oo 1679 Wolfgang Christoph Ernst Graf Truchsess von Waldburg, 1643-02-11 - 1688-01-29, https://www.wikidata.org/wiki/Q2589383
+
+# ----
+<https://www.wikidata.org/wiki/Q110572252>
+  # Eva von Bickenbach
+  gen:father <https://www.wikidata.org/wiki/Q61140383> ; # Konrad VI. von Bickenbach
+  gen:mother <https://www.wikidata.org/wiki/Q110572260> . # Jutta von Runkel
+  # oo Georg I. Truchsess von Waldburg-Zeil, d. 1467-03-10, https://www.wikidata.org/wiki/Q66898186
+
+# ----
+<https://www.wikidata.org/wiki/Q110458695>
+  # Anna Gräfin von Kirchberg, d. 1484-03-10
+  gen:father <https://www.wikidata.org/wiki/Q110572318> ; # Konrad VIII. Graf von Kirchberg
+  gen:mother <https://www.wikidata.org/wiki/Q110572349> . # Anna von Fürstenberg-Baar
+  # oo Georg II. Truchsess von Waldburg-Zeil und Waldsee, d. 1482-03-10, https://www.wikidata.org/wiki/Q93521333
+
+# ====
+<https://www.wikidata.org/wiki/Q93521096>
+  # Johann (VI.) Freiherr von Königsegg zu Aulendorf, d. 1544-09-03
+  gen:father <https://www.wikidata.org/wiki/Q110152659> ; # Marquard, Freiherr von Königsegg zu Aulendorf
+  gen:mother <https://www.wikidata.org/wiki/Q110152660> . # Magdalena Marschallin von Pappenheim
+  # oo Dorothea Anna Johanna von Waldburg, d. 1513-01-30
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q93521096> , <https://www.wikidata.org/wiki/Q110152661> ;
+	gen:startDate "1505-08-28" .
+
+<https://www.wikidata.org/wiki/Q94855636>
+  # Johann Jakob, Herr zu Königsegg und Rothenfels, 1508~ - 1567-07-27
+  # kauft Grafschaft Rothenfels 1565
+  gen:father <https://www.wikidata.org/wiki/Q93521096> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110152661> .
+  # oo Elisabeth Gräfin von Montfort, daughter of Hugo XIV., Graf von Montfort in Tettnang and Maria Magdalena zu Schwarzenberg und Hohenlandsberg
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q94855636> , <#Elisabeth_von_Montfort> ;
+	gen:startDate "1556-05-11" .
+<https://www.wikidata.org/wiki/Q110457961>
+  # Helena von Königsegg, 1509-03-15 - 1566-04-20
+  gen:father <https://www.wikidata.org/wiki/Q93521096> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110152661> .
+  # oo 1524-06-16 Friedrich I., Graf von Löwenstein, 1502-08-19 - 1541-02-03, https://www.wikidata.org/wiki/Q55068500 (wittelsbacher.ttl)
+
+<https://www.wikidata.org/wiki/Q66317334>
+  # Johann Georg Freiherr von Königsegg und Aulendorf, d. 1622-08-29
+  gen:father <https://www.wikidata.org/wiki/Q94855636> ;
+  gen:mother <#Elisabeth_von_Montfort> .
+  # oo Kunigunde von Waldburg-Zeil-Wolfegg, 1570 - 1604-11-24
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q66317334> , <https://www.wikidata.org/wiki/Q110152670> ;
+	gen:startDate "1589-04-23" .
+
+<https://www.wikidata.org/wiki/Q55238225>
+  # Hugo, Graf von Königsegg-Rothenfels, 1596-02-26 - 1666-12-01
+  # Freiherr von Königsegg-Rothenfels 1622-08-29
+  # Graf von Königsegg-Rothenfels 1629-07-29
+  gen:father <https://www.wikidata.org/wiki/Q66317334> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110152670> .
+  # oo Maria Renata Prinzessin von Hohenzollern-Hechingen, 1607b - 1637-01-12
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q55238225> , <https://www.wikidata.org/wiki/Q108927309> ;
+	gen:startDate "1625" .
+
+<https://www.wikidata.org/wiki/Q1819881>
+  # Leopold Wilhelm Graf von Königsegg-Rothenfels, 1630-05-25 - 1694-02-05
+  gen:father <https://www.wikidata.org/wiki/Q55238225> ;
+  gen:mother <https://www.wikidata.org/wiki/Q108927309> .
+  # oo Maria Polyxena Gräfin von Schärffenberg, d. 1683-09-09 (harrach.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1819881> , <https://www.wikidata.org/wiki/Q108927124> ;
+	gen:startDate "1658-10-13" .
+
+<https://www.wikidata.org/wiki/Q66317333>
+  # Albert Eusebius Franz Graf von Königsegg-Rothenfels, 1669-01-04 - 1736-05-23
+  gen:father <https://www.wikidata.org/wiki/Q1819881> ;
+  gen:mother <https://www.wikidata.org/wiki/Q108927124> .
+  # oo Klara Philippina Felicitas Gräfin von Manderscheid-Blankenheim, 1667-09-16 - 1751-08-17
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q66317333> , <https://www.wikidata.org/wiki/Q105873153> ;
+	gen:startDate "1694-10-21" .
+<https://www.wikidata.org/wiki/Q105873124>
+  # Sophie Gräfin von Königsegg-Rothenfels, 1674-07-23 - 1731-01-17
+  gen:father <https://www.wikidata.org/wiki/Q1819881> ;
+  gen:mother <https://www.wikidata.org/wiki/Q108927124> .
+  # oo 1690-11-30 Prosper Ferdinand Landgraf zu Fürstenberg-Stühlingen, 1662-09-12 - 1704-11-21, https://www.wikidata.org/wiki/Q58743031
+<#Johanna_von_Königsegg-Rothenfels>
+  # Maria Johanna Gräfin von Königsegg-Rothenfels, 1679-08-13 - 1755-12-10
+  gen:father <https://www.wikidata.org/wiki/Q1819881> ;
+  gen:mother <https://www.wikidata.org/wiki/Q108927124> .
+  # oo 1698-02-02 Franz Georg, Graf von Manderscheid-Blankenheim-Gerolstein, 1669-04-26 - 1731-03-25, https://www.wikidata.org/wiki/Q55898627
+
+<https://www.wikidata.org/wiki/Q107293267>
+  # Franz Hugo Graf von Königsegg-Rothenfels, 1698-10-02 - 1771-01-25
+  gen:father <https://www.wikidata.org/wiki/Q66317333> ;
+  gen:mother <https://www.wikidata.org/wiki/Q105873153> .
+  # oo Maria Franziska Gräfin von Hohenzollern-Haigerloch, 1697-03-13 - 1767-03-29
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q107293267> , <https://www.wikidata.org/wiki/Q110503688> ;
+	gen:startDate "1720-06-24" .
+<https://www.wikidata.org/wiki/Q105873151>
+  # Maria Eleonore Gräfin von Königsegg-Rothenfels, 1711-07-04 - 1766-12-15
+  gen:father <https://www.wikidata.org/wiki/Q66317333> ;
+  gen:mother <https://www.wikidata.org/wiki/Q105873153> .
+  # oo 1729-02-26 Franz Ernst Graf von Waldburg zu Zeil-Wurzach und Friedberg, 1704-12-07 - 1781-04-05, https://www.wikidata.org/wiki/Q59328432
+
+<#Joseph_Lothar_Graf_von_Königsegg-Rothenfels>
+  # Joseph Lothar Franz Graf von Königsegg-Rothenfels, 1722-07-07 - 1761-03-07
+  gen:father <https://www.wikidata.org/wiki/Q107293267> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110503688> .
+  # oo Maria Amalie Gräfin von Königsegg-Aulendorf, 1729-04-11 - 1795-06-08
+  []
+    gen:spouse <#Joseph_Lothar_Graf_von_Königsegg-Rothenfels> , <oettingen.ttl#Maria_Amalie_von_Königsegg-Aulendorf> ;
+	gen:startDate "1747-10-02" .
+<https://www.wikidata.org/wiki/Q110503683>
+  # Maria Eleonora Gräfin von Königsegg-Rothenfels, 1728-12-20 - 1793-02-28
+  gen:father <https://www.wikidata.org/wiki/Q107293267> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110503688> .
+  # oo 1750-09-17 Hermann Friedrich Graf von Königsegg-Aulendorf, 1723-06-28 - 1786-10-01, https://www.wikidata.org/wiki/Q107294839 (oettingen.ttl)
+
+<https://www.wikidata.org/wiki/Q81826982>
+  # Franz Fidelis Anton Graf zu Königsegg-Rothenfels, 1750-02-19 - 1804-09-10
+  gen:father <#Joseph_Lothar_Graf_von_Königsegg-Rothenfels> ;
+  gen:mother <oettingen.ttl#Maria_Amalie_von_Königsegg-Aulendorf> .
+  # oo Maria Crescentia Gräfin von Waldburg zu Zeil und Wurzach, 1752-04-25 - 1784-04-09
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q81826982> , <#Maria_Crescentia_von_Waldburg-Zeil-Wurzach> ;
+	gen:startDate "1771-06-25" .
+
+# ====
+
+# ----
+<#Maria_Anna_Fugger>
+  # Maria Anna Gräfin Fugger von Kirchheim, 1659-03-16 - 1725-07-12
+  gen:father <https://www.wikidata.org/wiki/Q110366517> . # Sebastian Fugger, Graf von Kirchheim
+  # and Maria Claudia Hundbiss von Waltrams
+  # oo 1684-02-20 Johann Graf von Waldburg zu Wolfegg und Waldsee, 1661-10-13 - 1724-12-25, https://www.wikidata.org/wiki/Q66682990
+
+
+<https://www.wikidata.org/wiki/Q59326281>
+  # Maria Katharina Gräfin Fugger von Glött, 1744-06-09 - 1796-04-04
+  gen:father <https://www.wikidata.org/wiki/Q58762502> ; # or https://www.wikidata.org/wiki/Q110503780 Sebastian Xaver Joseph Fugger, Herr zu Glött, Hilgartsberg und Obendorf
+  gen:mother <https://www.wikidata.org/wiki/Q58234418> . # Elisabeth Gabriele von Firmian
+  # oo 1767-05-06 Eberhard Ernst Wunibald, Fürst von Waldburg-Zeil und Wurzach, 1730-12-20 - 1807-09-23, https://www.wikidata.org/wiki/Q110503531
+
+
+#<https://www.wikidata.org/wiki/Q58214746>
+  # Anselm Viktorian Jakob Raymund Johann Nepomuck Graf Fugger, zu Babenhausen, 1729-08-14 - 1793-07-07
+  # oo Maria Walpurgis Freiin von Waldburg Gräfin zu Wolfegg, 1740-07-05 - 1796-11-27
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q58214746> , <#Maria_Walpurgis_von_Waldburg-Wolfegg> ;
+	gen:startDate "1762-01-24" .
+
+<https://www.wikidata.org/wiki/Q569571>
+  # Anselm Maria Joseph Christoph Johann Baptist Johann Nepomuk Rupert Theodor Aloys Karl Fürst Fugger von Babenhausen, 1766-02-01 - 1821-11-22
+  # Fürst Fugger von Babenhausen 1803
+  gen:father <https://www.wikidata.org/wiki/Q58214746> ;
+  gen:mother <#Maria_Walpurgis_von_Waldburg-Wolfegg> .
+  # oo Maria Antonia Elisabetha Gräfin von Waldburg zu Zeil und Wurzach, 1774-03-08 - 1814-10-05
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q569571> , <#Maria_Antonia_von_Waldburg-Zeil-Wurzach> ;
+	gen:startDate "1793-10-15" .
+<https://www.wikidata.org/wiki/Q59131177>
+  # Maria Josepha Creszentia Walburga Katharina Adelheidis Gräfin Fugger von Babenhausen, 1770-08-02 - 1848-12-27
+  gen:father <https://www.wikidata.org/wiki/Q58214746> ;
+  gen:mother <#Maria_Walpurgis_von_Waldburg-Wolfegg> .
+  # oo 1791-01-09 Joseph Anton, Fürst von Waldburg zu Wolfegg in Waldsee, 1766-02-21 - 1833-04-03, https://www.wikidata.org/wiki/Q1453434
+<https://www.wikidata.org/wiki/Q110503533>
+  # Maria Walpurga Franziska Gräfin Fugger von Babenhausen, 1771-10-23 - 1841-07-18
+  gen:father <https://www.wikidata.org/wiki/Q58214746> ;
+  gen:mother <#Maria_Walpurgis_von_Waldburg-Wolfegg> .
+  # oo 1793-10-15 Leopold Erbgraf von Waldburg zu Zeil-Wurzach, 1769-06-21 - 1800-06-18, https://www.wikidata.org/wiki/Q110503530
+
+<#Maria_Josepha_Fugger_von_Babenhausen>
+  # Maria Josepha Gräfin Fugger von Babenhausen, 1798-06-19 - 1831-05-09
+  gen:father <https://www.wikidata.org/wiki/Q569571> ;
+  gen:mother <#Maria_Antonia_von_Waldburg-Zeil-Wurzach> .
+  # oo 1821-12-18 Leopold Fürst von Waldburg zu Zeil-Wurzach, 1795-11-11 - 1861-04-26, https://www.wikidata.org/wiki/Q60710604
+<https://www.wikidata.org/wiki/Q58214857>
+  # Antonius de Padua Anselm Maria Joseph Johannes Nepomuk Carl Hilarius Fürst Fugger von Babenhausen, 1800-01-13 - 1836-05-28
+  gen:father <https://www.wikidata.org/wiki/Q569571> ;
+  gen:mother <#Maria_Antonia_von_Waldburg-Zeil-Wurzach> .
+  # oo Franziska Prinzessin zu Hohenlohe-Jagstberg, 1807-08-29 - 1873-10-27
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q58214857> , <hohenlohe.ttl#Franziska_zu_Hohenlohe-Jagstberg> ;
+	gen:startDate "1825-10-20" .
+
+# ----
+<https://www.wikidata.org/wiki/Q75366193>
+  # Anna Elisabeth Gräfin von Galen, 1881-11-17 - 1970-06-22
+  gen:father <https://www.wikidata.org/wiki/Q75366194> ; # Hubert Anton Max Friedrich Graf von Galen
+  gen:mother <https://www.wikidata.org/wiki/Q75366197> . # Therese Gräfin von Bocholtz-Asseburg
+  # oo 1902-04-17 Ludwig von Waldburg Graf zu Wolfegg und Waldsee, 1871-10-27 - 1906-06-24, https://www.wikidata.org/wiki/Q75366191
+
+# ----
+<https://www.wikidata.org/wiki/Q75366081>
+  # Franziska Marie Hedwig Eleonore Gräfin von Ledebur-Wicheln, 1913-06-18 - 2002-04-09
+  gen:father <https://www.wikidata.org/wiki/Q11885220> ; # Eugen Rudolf Maria Graf von Ledebur-Wicheln
+  gen:mother <https://www.wikidata.org/wiki/Q75359812> . # Eleonore Marie Henriette Ernestine Gräfin Larisch von Mönnich
+  # oo 1938-09-19 Johannes Graf von Waldburg zu Wolfegg und Waldsee, 1904-08-10 - 1966-05-17, https://www.wikidata.org/wiki/Q75366079
+
+# ----
+<https://www.wikidata.org/wiki/Q75325822>
+  # Maria _Melanie_ Anna Teresa Gräfin von Khevenhüller-Metsch, b. 1967-04-22
+  gen:father <https://www.wikidata.org/wiki/Q15879243> ; # Max von Khevenhüller-Metsch
+  gen:mother <https://www.wikidata.org/wiki/Q75347037> . # Wilhelmina Gräfin Henckel von Donnersmarck
+  # oo 1993-06-07 (rel 1993-06-19) Hubertus von Waldburg Graf zu Wolfegg und Waldsee, b. 1964-05-15, https://www.wikidata.org/wiki/Q75325820
+
+# ----
+<https://www.wikidata.org/wiki/Q110367087>
+  # Anna Maria Freiin von Toerring, 1578 - 1636
+  gen:father <https://www.wikidata.org/wiki/Q110367088> ; # Hans Veit Freiherr von Törring zu Jettenbach zu Tussling, Jettenbach und Mödling
+  gen:mother <https://www.wikidata.org/wiki/Q110367095> . # Anna Sibylla Freiin von Lamberg
+  # oo 1596 Froben Freiherr von Waldburg zu Zeil, 1569-08-19 - 1614-05-04, https://www.wikidata.org/wiki/Q55238198
+
+<https://www.wikidata.org/wiki/Q75294290>
+  # Hans-Kaspar Heribert Veit Friedrich Graf zu Toerring-Jettenbach, b. 1953-07-22
+  gen:father <https://www.wikidata.org/wiki/Q75270429> ; # Hans Heribert Wilhelm Veit Adolf Graf zu Törring-Jettenbach
+  gen:mother <https://www.wikidata.org/wiki/Q75368316> . # Maria Imakulata Freiin Waldbott von Bassenheim
+  # oo (rel 1980-05-23) Maria Gräfin von Waldburg zu Zeil und Trauchburg, b. 1954-01-06
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75294290> , <https://www.wikidata.org/wiki/Q75294288> ;
+	gen:startDate "1980-04-30" .
+
+# ----
+<https://www.wikidata.org/wiki/Q110503717>
+  # Johanna Gräfin von Wolkenstein-Trostburg, d. 1680-08-20
+  gen:father <https://www.wikidata.org/wiki/Q55905551> ; # Christoph Franz Graf von Wolckenstein
+  gen:mother <https://www.wikidata.org/wiki/Q110503725> . # Marie Gräfin zu Eberstein
+  # oo 1621-11-22 Johann Jakob I. Freiherr von Waldburg, Graf von Zeil, 1602-08-02 - 1674-04-18, https://www.wikidata.org/wiki/Q66682828
+
+# ----
+<#Maria_Franziska_von_Montfort>
+  # Maria Franziska Elisabeth Gräfin von Montfort, 1668-01-13 - 1726-08-21
+  gen:father <https://www.wikidata.org/wiki/Q50850509> . # Johann VIII. Graf von Montfort in Tettnang
+  # and Maria Anna Eusebia Gräfin von Königsegg-Aulendorf
+  # oo 1685-08-05 Johann Christoph Freiherr von Waldburg, Graf zu Zeil, 1660-06-19 - 1720-02-14, https://www.wikidata.org/wiki/Q93521614
+
+# ----
+<https://www.wikidata.org/wiki/Q110153205>
+  # Maria Freiin von Hornstein zu Weiterdingen, 1752-11-30 - 1797-10-30
+  gen:father <https://www.wikidata.org/wiki/Q110153206> ; # Leopold Thaddäus, Freiherr von Hornstein zu Weiterdingen
+  gen:mother <https://www.wikidata.org/wiki/Q110153209> . # Maria Anna Gräfin von Welsperg zu Raitenau und Primör
+  # oo 1774-11-07 Maximilian, Fürst von Waldburg zu Zeil und Trauchburg, 1750-08-20 - 1818-05-16, https://www.wikidata.org/wiki/Q108320
+
+# ----
+<#Maria_von_der_Wenge>
+  # Maria Theresia Freiin von der Wenge zu Beck, 1788-03-14 - 1864-03-04
+  gen:father <https://www.wikidata.org/wiki/Q1099895> . # Clemens August Freiherr von der Wenge zu Beck, 1740-09-22 - 1818-05-09
+  # and Maria Ludovica Wilhelmina Freiin von Ainaten, 1748 - 1803
+  # oo 1820-10-03 Franz Thaddäus Fürst von Waldburg zu Zeil und Trauchburg, 1778-10-15 - 1845-12-05, https://www.wikidata.org/wiki/Q1450020
+<#Antoinette_von_der_Wenge>
+  # Antoinette Freiin von der Wenge zu Beck, 1790-04-08 - 1819-02-12
+  gen:father <https://www.wikidata.org/wiki/Q1099895> .
+  # and Maria Ludovica Wilhelmina Freiin von Ainaten
+  # oo 1818-01-27 Franz Thaddäus Fürst von Waldburg zu Zeil und Trauchburg, 1778-10-15 - 1845-12-05, https://www.wikidata.org/wiki/Q1450020
+
+# ----
+<#Maximiliane_von_Quadt-Wykradt-Isny>
+  # Maximiliane Gräfin von Quadt zu Wykradt und Isny, 1813-05-18 - 1874-05-08
+  gen:father <https://www.wikidata.org/wiki/Q23788022> . # Wilhelm Otto Friedrich Albert Graf von Quadt zu Wykradt und Isny
+  # and Maria Anna Gräfin von Thurn und Valsássina
+  # oo 1833-09-30 Konstantin Maximilian Fürst von Waldburg zu Zeil und Trauchburg, 1807-01-08 - 1862-12-17, https://www.wikidata.org/wiki/Q1127997
+
+# ----
+<https://www.wikidata.org/wiki/Q75295324>
+  # Maria Benedikta Baronin von Redwitz, b. 1937-04-12
+  gen:father <https://www.wikidata.org/wiki/Q75317872> ; # Alfons Baron von Redwitz
+  gen:mother <https://www.wikidata.org/wiki/Q75295171> . # Helga Gräfin von Moy
+  # oo 1960-05-08 (rel 1960-05-08) Joseph Klemens Graf von Waldburg zu Zeil und Trauchburg, b. 1934-04-12, https://www.wikidata.org/wiki/Q75295323
