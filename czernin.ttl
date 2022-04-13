@@ -4,12 +4,34 @@
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
+<https://www.wikidata.org/wiki/Q65736824>
+  # Humprecht Czernin von Chudenitz, 1525 - 1610
+  gen:father <https://www.wikidata.org/wiki/Q109502906> ; # Divis Czernin von Chudenitz (Diviš Černín z Chudenic), d. 1548-12-24
+  gen:mother <https://www.wikidata.org/wiki/Q109503741> . # Elisabeth Bochuwal von Hradek (Eliška Bohuchvalová z Hrádku), d. 1566a
+  # oo Ludmila Kotz von Dobr, d. 1583
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q65736824> , <#Ludmila_Kotz> .
+<https://www.wikidata.org/wiki/Q103292341>
+  # Johann Czernin von Chudenitz, 1548~ - 1580-08-24
+  gen:father <https://www.wikidata.org/wiki/Q109502906> ;
+  gen:mother <https://www.wikidata.org/wiki/Q109503741> .
+  # oo Maria Anna von Rziczan, d. 1578, daughter of Jan von Rziczan and Ludmilla Karel von Swárow
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q103292341> , <https://www.wikidata.org/wiki/Q110371081> .
+
+<#Adam_Czernin>
+  # Adam Czernin von Chudenitz, d. 1622
+  gen:father <https://www.wikidata.org/wiki/Q65736824> ;
+  gen:mother <#Ludmila_Kotz> .
+  # oo Johanna Lokschan von Lokschan, daughter of Ferdinand Lokschan von Lokschan and Ursula Freiin Swihowsky von Riesenberg
+  []
+    gen:spouse <#Adam_Czernin> , <#Johanna_Lokschan> .
 <https://www.wikidata.org/wiki/Q1637308>
   # Humprecht III. (der Ältere) Freiherr Czernin von Chudenitz, 1570-04-15 - 1632-05-22
   # Burggraf von Königgrätz 1623, von Karlstein 1624
   # Freiherr 1629
-  gen:father <https://www.wikidata.org/wiki/Q103292341> ; # Johann Czernin von Chudenitz
-  gen:mother <https://www.wikidata.org/wiki/Q110371081> . # Maria Anna von Rziczan
+  gen:father <https://www.wikidata.org/wiki/Q103292341> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110371081> .
   # oo Eva Polixena Woraczicky von Pabienicz, d. 1632-06-02
   []
     gen:spouse <https://www.wikidata.org/wiki/Q1637308> , <https://www.wikidata.org/wiki/Q107611949> ;
@@ -28,6 +50,13 @@
     gen:spouse <https://www.wikidata.org/wiki/Q1610872> , <https://www.wikidata.org/wiki/Q563409> ;
 	gen:startDate "1633-04-18" .
 
+<#Theobald_Czernin>
+  # Theobald, Freiherr Czernin von Chudenitz, d. 1660-12-02
+  gen:father <#Adam_Czernin> ;
+  gen:mother <#Johanna_Lokschan> .
+  # oo Anna Magdalena Hrzan von Haras, d. 1683
+  []
+    gen:spouse <#Theobald_Czernin> , <#Anna_Hrzan> .
 <https://www.wikidata.org/wiki/Q29575947>
   # Johann Baptist Adam Freiherr Czernin von Chudenitz, 1597-08-16 - 1642-11-22
   gen:father <https://www.wikidata.org/wiki/Q1637308> ;
@@ -37,6 +66,13 @@
     gen:spouse <https://www.wikidata.org/wiki/Q29575947> , <https://www.wikidata.org/wiki/Q21055426> ;
 	gen:startDate "1621" .
 
+<https://www.wikidata.org/wiki/Q110458236>
+  # Franz Max Ottonis Graf Czernin von Chudenitz, d. 1701/1699
+  gen:father <#Theobald_Czernin> ;
+  gen:mother <#Anna_Hrzan> .
+  # oo Even Franciscen Freiin Prichovska z Prichovic
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110458236> , <#Even_Prichovska> .
 <https://www.wikidata.org/wiki/Q1637312>
   # Humprecht Johann Joseph Graf Czernin von Chudenitz, 1628-02-14 - 1682-03-03
   # Graf 1651-02-06
@@ -47,6 +83,13 @@
     gen:spouse <https://www.wikidata.org/wiki/Q1637312> , <https://www.wikidata.org/wiki/Q61350842> ;
 	gen:startDate "1655-03-31" .
 
+<https://www.wikidata.org/wiki/Q110458235>
+  # Johann Wenzel Graf Czernin von Chudenitz, 1667 - 1743-05-28
+  gen:father <https://www.wikidata.org/wiki/Q110458236> ;
+  gen:mother <#Even_Prichovska> .
+  # oo Maria Theresia Gräfin von Morzin
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110458235> , <https://www.wikidata.org/wiki/Q110458238> .
 <https://www.wikidata.org/wiki/Q18745973>
   # Hermann Jakub Gottlieb Graf Czernin von Chudenitz, 1659-07-05 - 1710-08-08
   gen:father <https://www.wikidata.org/wiki/Q1637312> ;
@@ -60,11 +103,19 @@
     gen:spouse <https://www.wikidata.org/wiki/Q18745973> , <https://www.wikidata.org/wiki/Q108927180> ;
 	gen:startDate "1709-10-06" .
 
+<https://www.wikidata.org/wiki/Q81212833>
+  # Hermann Jakob Graf Czernin von Chudenitz, 1706-02-01 - 1784-11-14
+  gen:father <https://www.wikidata.org/wiki/Q110458235> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110458238> .
+  # oo Maria Ernestine Gräfin von Sternberg, 1718-05-09 - 1747-02-07
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q81212833> , <https://www.wikidata.org/wiki/Q65672371> ;
+	gen:startDate "1740-05-09" .
 <https://www.wikidata.org/wiki/Q21074089>
   # Marie Markéta Gräfin Czernin von Chudenitz, 1689-07-11 - 1725-07-04
   gen:father <https://www.wikidata.org/wiki/Q18745973> ;
   gen:mother <https://www.wikidata.org/wiki/Q47366002> .
-  # oo 1704-11-17 Franz Johann Joseph Graf von Waldstein Herr von Wartenberg, 1680-10-25 - 1722-02-24, https://www.wikidata.org/wiki/Q28004096 (fürstenberg.ttl)
+  # oo 1704-11-17 Franz Johann Joseph Graf von Waldstein, 1680-10-25 - 1722-02-24, https://www.wikidata.org/wiki/Q28004096
 <https://www.wikidata.org/wiki/Q16159439>
   # Franz Josef Graf Czernin von und zu Chudenitz, 1697-03-06 - 1733-03-04
   # František Josef Czernin z Chudenic
@@ -84,6 +135,11 @@
     gen:spouse <https://www.wikidata.org/wiki/Q95152614> , <https://www.wikidata.org/wiki/Q108927135> ;
 	gen:startDate "1735-05-31" .
 
+<https://www.wikidata.org/wiki/Q65672350>
+  # Maria Antonia Josepha Czernin von Chudenitz, 1744-07-29 - 1805-11-16
+  gen:father <https://www.wikidata.org/wiki/Q81212833> ;
+  gen:mother <https://www.wikidata.org/wiki/Q65672371> .
+  # oo 1767-08-25 Franz Anton Graf Des Fours zu Mont und Athienville, 1730-06-23 - 1822-03-24, https://www.wikidata.org/wiki/Q65562328
 <https://www.wikidata.org/wiki/Q101508460>
   # _Maria Anna_ Gabriela Josepha Ludmilla Wenceslawa Francisca de Paula Johanna Nepomucena Walburgis Ferdinanda Gräfin Czernin von und zu Chudenitz, 1722-01-19 - 1772-01-15
   gen:father <https://www.wikidata.org/wiki/Q16159439> ;
@@ -358,12 +414,34 @@
   # oo 1655-03-31 Humprecht Johann Joseph Graf Czernin von Chudenitz, 1628-02-14 - 1682-03-03, https://www.wikidata.org/wiki/Q1637312
 
 # ----
+<https://www.wikidata.org/wiki/Q110458238>
+  # Maria Theresia Gräfin von Morzin
+  gen:father <https://www.wikidata.org/wiki/Q110458239> . # Franz Nicolaus Graf von Morzin
+  # oo Johann Wenzel Graf Czernin von Chudenitz, 1667 - 1743-05-28, https://www.wikidata.org/wiki/Q110458235
+
+# ----
 <https://www.wikidata.org/wiki/Q108927135>
   # Isabella Johanna Maria Comtesse de Mérode, 1703-10-13 - 1780-04-01
   gen:father <https://www.wikidata.org/wiki/Q315203> ; # Jean Philippe Eugène, Comte de Merode, Marquis de Westerloo
   gen:mother <https://www.wikidata.org/wiki/Q108927136> . # Maria Teresa Pignatelli, Duchessa di Monteleone (see mansfeld.ttl)
   # oo 1717-05-12 Franz Josef Graf Czernin von und zu Chudenitz, 1697-03-06 - 1733-03-04, https://www.wikidata.org/wiki/Q16159439
   # oo 1735-05-31 Franz Anton Graf Czernin von und zu Chudenitz, 1710-06-30 - 1739-12-20, https://www.wikidata.org/wiki/Q95152614
+
+# ----
+<https://www.wikidata.org/wiki/Q65562328>
+  # Franz Anton Graf Des Fours zu Mont und Athienville, 1730-06-23 - 1822-03-24
+  gen:father <https://www.wikidata.org/wiki/Q67312691> ; # Carl Josef Graf Des Fours zu Mont und Athienville
+  gen:mother <https://www.wikidata.org/wiki/Q110458234> . # Caroline Josepha Gräfin Colonna von Völs
+  # oo Maria Antonia Josepha Czernin von Chudenitz, 1744-07-29 - 1805-11-16
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q65562328> , <https://www.wikidata.org/wiki/Q65672350> ;
+	gen:startDate "1767-08-25" .
+
+<https://www.wikidata.org/wiki/Q110458216>
+  # Antonie Gräfin Des Fours zu Mont und Athienville, 1772-05-10 - 1813-01-01
+  gen:father <https://www.wikidata.org/wiki/Q65562328> ;
+  gen:mother <https://www.wikidata.org/wiki/Q65672350> .
+  # oo 1789-09-20 Ernst Philipp Graf von Waldstein Herr von Wartenberg, 1764-10-26 - 1832-08-13, https://www.wikidata.org/wiki/Q56061848
 
 # ----
 <https://www.wikidata.org/wiki/Q108337738>
