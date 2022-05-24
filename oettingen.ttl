@@ -226,7 +226,7 @@
   # Maria Magdelena Gräfin von Oettingen-Oettingen, 1600-08-28 - 1636-05-29
   gen:father <https://www.wikidata.org/wiki/Q44192068> ;
   gen:mother <https://www.wikidata.org/wiki/Q54960204> .
-  # oo 1620-04-23 Heinrich Wilhelm, Graf zu Solms-Sonnenwalde und Pouch, 1583-03-21 - 1631-03-21, https://www.wikidata.org/wiki/Q25487354
+  # oo 1620-04-23 Heinrich Wilhelm Graf zu Solms-Sonnenwalde und Pouch, 1583-03-21 - 1631-03-21, https://www.wikidata.org/wiki/Q25487354
   # oo 1633-08-27 Georg Friedrich Graf von Hohenlohe-Neuenstein in Weikersheim, 1569-09-06 - 1645-07-07, https://www.wikidata.org/wiki/Q75345735
 <https://www.wikidata.org/wiki/Q11928045>
   # Johanna Gräfin zu Oettingen-Oettingen, 1602-08-30/09-10 - 1639-09-17
@@ -1293,9 +1293,41 @@
 # ----
 <https://www.wikidata.org/wiki/Q110634765>
   # Amalia Auguste Fürstin von Wrede, 1796-01-15 - 1871-09-11
-  gen:father <https://www.wikidata.org/wiki/Q64759> . # or https://www.wikidata.org/wiki/Q110634675 Carl Philipp Joseph, 1.Fürst von Wrede
-  # and Sophie Aloysia Agathe Gräfin von Wiser
+  gen:father <https://www.wikidata.org/wiki/Q64759> ; # Carl Philipp Joseph, 1.Fürst von Wrede
+  gen:mother <https://www.wikidata.org/wiki/Q110634681> . # and Sophie Aloysia Agathe Gräfin von Wiser
   # oo 1813-08-31 Johann Aloys III., Fürst zu Oettingen-Oettingen und Oettingen-Spielberg, 1788-05-09 - 1855-05-07, https://www.wikidata.org/wiki/Q18616155
+<https://www.wikidata.org/wiki/Q15449118>
+  # Eugen Franz Fürst von Wrede, 1806-03-04 - 1845-05-01
+  gen:father <https://www.wikidata.org/wiki/Q64759> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110634681> .
+  # oo Mathilde Freiin von Schaumberg, 1811-09-13 - 1887-12-15
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q15449118> , <#Mathilde_von_Schaumberg> ;
+	gen:startDate "1835-04-04" .
+
+<#Eugen_Adolf_von_Wrede>
+  # Eugen Adolf Fürst von Wrede, 1839-01-06 - 1909-10-18
+  gen:father <https://www.wikidata.org/wiki/Q15449118> ;
+  gen:mother <#Mathilde_von_Schaumberg> .
+  # oo Maria von Gutmannsthal-Benvenuti, 1853-12-03 - 1936-05-30
+  []
+    gen:spouse <#Eugen_Adolf_von_Wrede> , <#Maria_von_Gutmannsthal-Benvenuti> ;
+	gen:startDate "1875-09-29" .
+
+<#Edmund_von_Wrede>
+  # Edmund Alexander Nikolaus Maria Fürst von Wrede, 1878-08-21 - 1963-03-14
+  gen:father <#Eugen_Adolf_von_Wrede> ;
+  gen:mother <#Maria_von_Gutmannsthal-Benvenuti> .
+  # oo Edda de Benitez y Alvear, 1880-11-03 - 1958-11-21
+  []
+    gen:spouse <#Edmund_von_Wrede> , <#Edda_de_Benitez> ;
+	gen:startDate "1903-05-20" .
+
+<#Carmen_von_Wrede>
+  # Carmen Adolfine Nicolette Elvira Dolores Elli Charlotte Maria Fürstin von Wrede, 1904-03-28 - 1994-03-25
+  gen:father <#Edmund_von_Wrede> ;
+  gen:mother <#Edda_de_Benitez> .
+  # oo 1946-09-07 (rel 1946-09-24) Alexander Prinz zu Solms-Braunfels, 1903-08-05 - 1989-10-08, solms.ttl#Alexander_zu_Solms-Braunfels
 
 # ----
 <#Johann_Nepomuk_Fugger>
@@ -1353,10 +1385,15 @@
   # oo 2016-06-04 (rel 2016-07-09) Franz-Albrecht Prinz zu Oettingen-Oettingen und Oettingen-Spielberg, b. 1982-09-16, https://www.wikidata.org/wiki/Q75376770
 
 # ----
+<#Bergit_Oetker>
+  # Bergit Oetker, b. 1946-11-26
+  gen:father <https://www.wikidata.org/wiki/Q66430> ; # Rudolf August Oetker, 1916-09-20 – 2007-01-16
+  gen:mother <#Susanne_Jantsch> . # oo Susanne Jantsch, 1922-07-21 – 2012-11-24
+  # oo 1972-07-19 Christoph von Luttitz, b. 1936-12-10, #Christoph_von_Luttitz
 <https://www.wikidata.org/wiki/Q1669093>
   # Richard Oetker, b. 1951-01-04
-  gen:father <https://www.wikidata.org/wiki/Q66430> . # Rudolf August Oetker, 1916-09-20 – 2007-01-16
-  # and Susanne Jantsch, 1922 – 2012
+  gen:father <https://www.wikidata.org/wiki/Q66430> ;
+  gen:mother <#Susanne_Jantsch> .
 
 <https://www.wikidata.org/wiki/Q76331751>
   # Carl-Christian Oetker, b. 1982~
@@ -1365,6 +1402,19 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q76331751> , <https://www.wikidata.org/wiki/Q75376772> ;
 	gen:startDate "2014-07-12" .
+# ----
+#<#Christoph_von_Luttitz>
+  # Christoph von Luttitz, b. 1936-12-10
+  # oo Bergit Oetker, b. 1946-11-26
+  []
+    gen:spouse <#Christoph_von_Luttitz> , <#Bergit_Oetker> ;
+	gen:startDate "1972-07-19" .
+
+<#Celina_von_Luttitz>
+  # Celina von Luttitz
+  gen:father <#Christoph_von_Luttitz> ;
+  gen:mother <#Bergit_Oetker> .
+  # oo 2012-06-11 Karl Graf zu Solms-Laubach, b. 1963-12-01, https://www.wikidata.org/wiki/Q75325904
 
 # ----
 <https://www.wikidata.org/wiki/Q102536918>
