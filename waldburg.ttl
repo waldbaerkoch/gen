@@ -301,7 +301,7 @@
   # Katharina von Waldburg zu Wolfegg und Zeil, 1545-06-06 - 1690-11-12
   gen:father <https://www.wikidata.org/wiki/Q66682383> ;
   gen:mother <https://www.wikidata.org/wiki/Q76264284> .
-  # oo 1571 Ulrich III. Graf zu Ortenburg, 1532 - 1586-07-14, https://www.wikidata.org/wiki/Q54919845
+  # oo 1571 Ulrich III. Graf zu Ortenburg, 1532 - 1586-07-14, https://www.wikidata.org/wiki/Q54919845 (sponheim.ttl)
 <https://www.wikidata.org/wiki/Q66682468>
   # Jakob V. Erbtruchsess von Waldburg-Zeil und Wolfegg, 1546-12-06 - 1589-05-20
   gen:father <https://www.wikidata.org/wiki/Q66682383> ;
@@ -1312,26 +1312,7 @@
   gen:mother <https://www.wikidata.org/wiki/Q110572349> . # Anna von Fürstenberg-Baar
   # oo Georg II. Truchsess von Waldburg-Zeil und Waldsee, d. 1482-03-10, https://www.wikidata.org/wiki/Q93521333
 
-# ----
-<https://www.wikidata.org/wiki/Q54919845>
-  # Ulrich III. Graf zu Ortenburg, 1532 - 1586-07-14
-  gen:father <https://www.wikidata.org/wiki/Q54919906> ; # Alexander von Ortenburg
-  gen:mother <https://www.wikidata.org/wiki/Q76264278> . # Regina Bianca Freiin von Wolkenstein
-  # oo Katharina von Waldburg zu Wolfegg und Zeil, 1545-06-06 - 1690-11-12
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q54919845> , <https://www.wikidata.org/wiki/Q76264280> ;
-	gen:startDate "1571" .
-
-<https://www.wikidata.org/wiki/Q1355968>
-  # Georg IV. Graf zu Ortenburg, 1573-10-07 - 1627-04-12
-  gen:father <https://www.wikidata.org/wiki/Q54919845> ;
-  gen:mother <https://www.wikidata.org/wiki/Q76264280> .
-  # oo Anna Maria Gräfin von Leiningen-Dagsburg-Falkenburg, d. 1631a
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q1355968> , <https://www.wikidata.org/wiki/Q65224525> ;
-	gen:startDate "1602-09-26" .
-
-# ----
+# ====
 <https://www.wikidata.org/wiki/Q89685>
   # Otto Heinrich Fugger Graf zu Kirchberg und Weißenhorn, 1592-01-12 - 1644-10-12
   gen:father <https://www.wikidata.org/wiki/Q58098616> ; # Christoph Fugger von Glött, 1566-11-11 - 1615-12-29
@@ -1363,9 +1344,14 @@
 
 <https://www.wikidata.org/wiki/Q59326281>
   # Maria Katharina Gräfin Fugger von Glött, 1744-06-09 - 1796-04-04
-  gen:father <https://www.wikidata.org/wiki/Q58762502> ; # or https://www.wikidata.org/wiki/Q110503780 Sebastian Xaver Joseph Fugger, Herr zu Glött, Hilgartsberg und Obendorf
-  gen:mother <https://www.wikidata.org/wiki/Q58234418> . # Elisabeth Gabriele von Firmian
+  gen:father <https://www.wikidata.org/wiki/Q58762502> ; # or https://www.wikidata.org/wiki/Q110503780 Sebastian Xaver Joseph Fugger, Herr zu Glött, Hilgartsberg und Obendorf, 1715-01-26 - 1763-09-01
+  gen:mother <https://www.wikidata.org/wiki/Q58234418> . # oo 1742-07-16 Elisabeth Gabriele Gräfin von Firmian, 1722-07-19 - 1782-04-01
   # oo 1767-05-06 Eberhard Ernst Wunibald, Fürst von Waldburg-Zeil und Wurzach, 1730-12-20 - 1807-09-23, https://www.wikidata.org/wiki/Q110503531
+<#Anna_Theresia_Michaela_Fugger>
+  # Maria Anna Theresia Michaela Johanna Nepomucena Fugger von Kirchberg-Weißenhorn, 1746-11-01 - 1783-06-27
+  gen:father <https://www.wikidata.org/wiki/Q58762502> ;
+  gen:mother <https://www.wikidata.org/wiki/Q58234418> .
+  # oo 1780 Maximilian Graf von Tauffkirchen-Kleeberg, 1730 - 1800-01-03, #Maximilian_von_Tauffkirchen-Kleeberg
 
 
 #<https://www.wikidata.org/wiki/Q58214746>
@@ -1408,6 +1394,25 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q58214857> , <hohenlohe.ttl#Franziska_zu_Hohenlohe-Jagstberg> ;
 	gen:startDate "1825-10-20" .
+
+# ----
+#<#Maximilian_von_Tauffkirchen-Kleeberg>
+  # Maximilian Ferdinand Franz Nepomuk Josef Felix Adam Franz de Paula Graf von Tauffkirchen-Kleeberg, 1730 - 1800-01-03
+  # oo Maria Anna Theresia Fugger von Kirchberg-Weißenhorn, 1746-11-01 - 1783-06-27
+  []
+    gen:spouse <#Maximilian_von_Tauffkirchen-Kleeberg> , <#Anna_Theresia_Michaela_Fugger> ;
+	gen:startDate "1780" .
+
+<https://www.wikidata.org/wiki/Q87903140>
+  # Leopold Ernst Graf von Tauffkirchen zu Kleeberg, 1781-08-21 - 1860-03-12
+  gen:father <#Maximilian_von_Tauffkirchen-Kleeberg> ;
+  gen:mother <#Anna_Theresia_Michaela_Fugger> .
+  # oo Sophie Gräfin zu Ortenburg, 1784-11-16 - 1854-01-31
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q87903140> , <sponheim.ttl#Sophie_zu_Ortenburg> ;
+	gen:startDate "1802-06-21" .
+
+# ====
 
 # ----
 <https://www.wikidata.org/wiki/Q110365906>
