@@ -313,15 +313,15 @@
   # Guillaume VII de Châlon, prince d’Orange, 1415 - 1475
   gen:father <https://www.wikidata.org/wiki/Q3262240> ;
   gen:mother <https://www.wikidata.org/wiki/Q2730171> .
-  # oo Catherine de Bretagne, 1428 - 1476a
+  # oo Catherine de Bretagne, 1428 - 1476a (capet.ttl)
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q2523562> , <capet.ttl#Catherine_de_Bretagne> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q2523562> , <https://www.wikidata.org/wiki/Q106939358> ;
 	gen:startDate "1438-08-19" .
 
 <https://www.wikidata.org/wiki/Q2374240>
   # Jean IV de Chalon-Arlay, prince d’Orange, 1443 - 1502-04-08
   gen:father <https://www.wikidata.org/wiki/Q2523562> ;
-  gen:mother <capet.ttl#Catherine_de_Bretagne> .
+  gen:mother <https://www.wikidata.org/wiki/Q106939358> .
   # oo Philiberte de Luxembourg, 1475 - 1539 (limburg.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q2374240> , <https://www.wikidata.org/wiki/Q76207901> ;
@@ -821,7 +821,7 @@
   # Carlotta di Napoli, 1480-02 - 1506-10-16
   gen:father <https://www.wikidata.org/wiki/Q264060> ;
   gen:mother <https://www.wikidata.org/wiki/Q756332> .
-  # oo Guy XVI de Laval, 1476-10-01 - 1531-05-20, https://www.wikidata.org/wiki/Q3122216
+  # oo 1500-06-10~ Guy XVI de Laval, 1476-10-01 - 1531-05-20, https://www.wikidata.org/wiki/Q3122216
 <https://www.wikidata.org/wiki/Q774819>
   # Ferdinando d’Aragona, Duca di Calabria, 1488-12-17 - 1550-10-26
   gen:father <https://www.wikidata.org/wiki/Q264060> ;
@@ -1715,13 +1715,19 @@
 # ----
 <https://www.wikidata.org/wiki/Q3122216>
   gen:name "Guy XVI de Laval"@en ;
+  # Comte de Laval, de Montfort et de St. Quintin
   gen:birthDate "1476-10-01" ;
   gen:deathDate "1531-05-20" ;
   gen:father <https://www.wikidata.org/wiki/Q3175522> ; # Jean de Laval
   gen:mother <#Jeanne_du_Perrier> .
   # oo Carlotta di Napoli, 1480-02 - 1506-10-16
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q3122216> , <https://www.wikidata.org/wiki/Q750559> .
+    gen:spouse <https://www.wikidata.org/wiki/Q3122216> , <https://www.wikidata.org/wiki/Q750559> ;
+	gen:startDate "1500-06-10~" .
+  # oo Anne de Montmorency, d. 1525-06-29
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3122216> , <https://www.wikidata.org/wiki/Q2851363> ;
+	gen:startDate "1517-05-03" .
 
 <https://www.wikidata.org/wiki/Q585343>
   gen:name "Anne de Laval"@en ;
@@ -1730,6 +1736,18 @@
   gen:father <https://www.wikidata.org/wiki/Q3122216> ;
   gen:mother <https://www.wikidata.org/wiki/Q750559> .
   # oo François II de La Trémoille, 1505 - 1541, https://www.wikidata.org/wiki/Q2599824
+<https://www.wikidata.org/wiki/Q110521307>
+  # Marguerite de Laval, Dame de Perrier, b. 1523~
+  gen:father <https://www.wikidata.org/wiki/Q3122216> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2851363> .
+  # oo 1529-05-18 Louis V de Rohan, Seigneur de Guéméné, de Montbazon, 1513~ - 1557-05-14, https://www.wikidata.org/wiki/Q110521303
+# ----
+<https://www.wikidata.org/wiki/Q2851363>
+  # Anne de Montmorency, d. 1525-06-29
+  gen:father <https://www.wikidata.org/wiki/Q3120397> ; # Guillaume de Montmorency
+  gen:mother <https://www.wikidata.org/wiki/Q61736314> . # Anne Pot
+  # oo 1517-05-03 Guy XVI de Laval, 1476-10-01 - 1531-05-20, https://www.wikidata.org/wiki/Q3122216
+
 # ----
 <https://www.wikidata.org/wiki/Q2599824>
   gen:name "François II de La Trémoille"@en ;

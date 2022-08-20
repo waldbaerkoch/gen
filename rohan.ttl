@@ -1,0 +1,779 @@
+@base <rohan.ttl> .
+@prefix gen: <http://jjkoch.de/gen#> .
+@prefix wdata: <https://www.wikidata.org/wiki/> .
+@prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://www.wikidata.org/wiki/Q2830332>
+  # Alain VIII de Rohan, Vicomte de Rohan, Sire de Leon, etc, d. 1429-07-25
+  gen:father <https://www.wikidata.org/wiki/Q428002> ; # Jean I de Rohan, Vicomte de Rohan, 1330~ - 1396-02-24a
+  gen:mother <https://www.wikidata.org/wiki/Q56681941> . # oo 1349 Jeanne de Léon, d. 1372-09-10, daughter of Hervé VII de Léon, Vicomte de Léon and Marguerite d’Avaugour
+  # oo Béatrix|Isabelle de Clisson, Comtesse de Porhöet, d. 1448, daughter of Olivier de Clisson, Comte de Porhöet and Catherine de Laval
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2830332> , <https://www.wikidata.org/wiki/Q96243684> .
+<https://www.wikidata.org/wiki/Q62019088> # -> Rohan-Guéméné
+  # Charles de Rohan, Comte de Guéméné, d. 1438-12-29
+  gen:father <https://www.wikidata.org/wiki/Q428002> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3754007> . # oo 1373-10 Jeanne de Navarre, 1338/1339~ - 1403-11-20, daughter of https://www.wikidata.org/wiki/Q505112 and https://www.wikidata.org/wiki/Q230031
+
+<https://www.wikidata.org/wiki/Q363843>
+  # Alain IX de Rohan, Vicomte de Rohan et de Léon, 1384b - 1462-03-20
+  gen:father <https://www.wikidata.org/wiki/Q2830332> ;
+  gen:mother <https://www.wikidata.org/wiki/Q96243684> .
+  # oo Marguerite de Bretagne, Dame de Guillac, 1392 - 1428-04-13 (capet.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q363843> , <https://www.wikidata.org/wiki/Q6660250> ;
+	gen:startDate "1407-06-26" .
+  # oo Marie de Lorraine, d. 1455-04-23 (lothringen.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q363843> , <https://www.wikidata.org/wiki/Q22227462> ;
+	gen:startDate "1450-11-16" .
+
+<https://www.wikidata.org/wiki/Q9245790>
+  # Catherine de Rohan, 1414 - 1471-03-24
+  gen:father <https://www.wikidata.org/wiki/Q363843> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6660250> .
+  # oo Jean Ier d’Albret, 1425 - 1468-01-03, https://www.wikidata.org/wiki/Q2361985
+<https://www.wikidata.org/wiki/Q57748605>
+  # Jeanne de Rohan, d. 1459-06-25a
+  gen:father <https://www.wikidata.org/wiki/Q363843> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6660250> .
+  # oo 1442-02-11 François, Seigneur de Rieux et de Rochefort, 1418-08-11 - 1458-11-20, https://www.wikidata.org/wiki/Q1951885
+<https://www.wikidata.org/wiki/Q57707473>
+  # Marguerite de Rohan, 1425~ - 1496a
+  gen:father <https://www.wikidata.org/wiki/Q363843> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6660250> .
+  # oo 1449-08-31 Jean de Valois, comte d’Angoulême, 1399-06-26 - 1467-04-30, https://www.wikidata.org/wiki/Q705176 (capet.ttl)
+<https://www.wikidata.org/wiki/Q3172657>
+  # Jean II de Rohan, Vicomte de Rohan et de Leon, 1452-11-16 - 1516
+  gen:father <https://www.wikidata.org/wiki/Q363843> ;
+  gen:mother <https://www.wikidata.org/wiki/Q22227462> .
+  # oo Marie de Bretagne, 1446 - 1506-11-02/1511-11-17 (capet.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3172657> , <https://www.wikidata.org/wiki/Q951401> ;
+	gen:startDate "1461-03-08" .
+
+<https://www.wikidata.org/wiki/Q2851375>
+  # Anne de Rohan, vicomtesse de Rohan, 1485~ - 1529-04-05
+  # Comtesse de Porhoët, 16e/17e Vicomtesse de León, Heiress of Rohan
+  gen:father <https://www.wikidata.org/wiki/Q3172657> ;
+  gen:mother <https://www.wikidata.org/wiki/Q951401> .
+  # oo 1515 Pierre II de Rohan, seigneur de Frontenay, de la Marche et de Gié, Vicomte de Carentan, d. 1525-02, https://www.wikidata.org/wiki/Q602881
+<https://www.wikidata.org/wiki/Q110521305>
+  # Marie de Rohan, d. 1542-06-09
+  gen:father <https://www.wikidata.org/wiki/Q3172657> ;
+  gen:mother <https://www.wikidata.org/wiki/Q951401> .
+  # oo 1511-11-17 Louis IV de Rohan, Seigneur de Guéméné, de Montbazon, d. 1527-06-14, https://www.wikidata.org/wiki/Q110521304
+
+
+# Rohan-Guéméné
+<https://www.wikidata.org/wiki/Q62019088>
+  # Charles de Rohan, Comte de Guéméné, d. 1438-12-29
+  gen:father <https://www.wikidata.org/wiki/Q428002> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3754007> .
+  # oo Catherine du Guesclin, Dame du Verger, d. 1461a, daughter of Bertrand II du Guesclin, Seigneur de La Morelière and Isabeau d’Ancenis, Dame de L'Isle d’Aurillé
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q62019088> , <https://www.wikidata.org/wiki/Q102837145> ;
+	gen:startDate "1405-03-10" .
+
+<https://www.wikidata.org/wiki/Q3262274>
+  # Louis I de Rohan-Guéméné, seigneur de Guéméné, de Guincamp, etc, d. 1457-12-15
+  gen:father <https://www.wikidata.org/wiki/Q62019088> ;
+  gen:mother <https://www.wikidata.org/wiki/Q102837145> .
+  # oo Marie de Montauban, 1433b - 1477-02-25/1497-05, daughter of Jean, Seigneur de Montauban, de Landal, de Romilly and Anne de Kerenrais, Dame de Kerenrais et de La Rigaudière
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3262274> , <https://www.wikidata.org/wiki/Q3292923> ;
+	gen:startDate "1443-04-24" .
+
+<https://www.wikidata.org/wiki/Q110455791>
+  # Louis II de Rohan, Seigneur de Guéméné, de Montauban, de Landal, d. 1508-05-25
+  gen:father <https://www.wikidata.org/wiki/Q3262274> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3292923> .
+  # oo Louise de Rieux, b. 1446-03-01
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110455791> , <https://www.wikidata.org/wiki/Q110455831> ;
+	gen:startDate "1455-11-24/1463-06-12" .
+<https://www.wikidata.org/wiki/Q1599703> # -> Rohan-Gié
+  # Pierre I. de Rohan-Gié, Prince de Rohan, seigneur de Gie, 1451 - 1513-04-22
+  gen:father <https://www.wikidata.org/wiki/Q3262274> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3292923> .
+
+<https://www.wikidata.org/wiki/Q110521323>
+  # Louis III de Rohan, Seigneur de Guéméné, de Montbazon, d. 1498-08-29
+  gen:father <https://www.wikidata.org/wiki/Q110455791> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110455831> .
+  # oo Renée du Fou, Dame de Montbazon, daughter of Jean du Fou, Seigneur de Rostrenen and Jeanne de La Rochefoucauld, Dame de Montbazon et de Saint-Maure
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110521323> , <https://www.wikidata.org/wiki/Q110521327> ;
+	gen:startDate "1492-05-12" .
+
+<https://www.wikidata.org/wiki/Q110521304>
+  # Louis IV de Rohan, Seigneur de Guéméné, de Montbazon, d. 1527-06-14
+  gen:father <https://www.wikidata.org/wiki/Q110521323> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110521327> .
+  # oo Marie de Rohan, d. 1542-06-09
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110521304> , <https://www.wikidata.org/wiki/Q110521305> ;
+	gen:startDate "1511-11-17" .
+
+<https://www.wikidata.org/wiki/Q110521303>
+  # Louis V de Rohan, Seigneur de Guéméné, de Montbazon, 1513~ - 1557-05-14
+  gen:father <https://www.wikidata.org/wiki/Q110521304> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110521305> .
+  # oo Marguerite de Laval, Dame de Perrier, b. 1523~ (ivrea.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110521303> , <https://www.wikidata.org/wiki/Q110521307> ;
+	gen:startDate "1529-05-18" .
+
+<https://www.wikidata.org/wiki/Q3263236>
+  # Louis VI de Rohan, Prince of Guéméné, Comte de Montbazon, 1540-04-03 - 1611-05-04
+  # 1er Comte de Montbazon 1547
+  # 1er Prince de Guémené 1570/1571
+  gen:father <https://www.wikidata.org/wiki/Q110521303> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110521307> .
+  # oo Eléonore de Rohan-Gié, Dame du Verger, Comtesse de Rochefort, 1539-01-10 - 1583-09-20
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3263236> , <https://www.wikidata.org/wiki/Q62653626> ;
+	gen:startDate "1561-07-22" .
+  # oo Françoise de Laval, d. 1614-12-16
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3263236> , <https://www.wikidata.org/wiki/Q110588187> ;
+	gen:startDate "1586" .
+
+<https://www.wikidata.org/wiki/Q3263234>
+  # Louis VII de Rohan, Duc de Montbazon, Prince de Guéméné, 1562 - 1589-11-01
+  # 1er Duc de Montbazon 1588-05
+  # Prince de Guéméné
+  gen:father <https://www.wikidata.org/wiki/Q3263236> ;
+  gen:mother <https://www.wikidata.org/wiki/Q62653626> .
+  # oo Madeleine de Lenoncourt, Dame de Coupvray, 1576 - 1602-08-28
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3263234> , <https://www.wikidata.org/wiki/Q102861131> ;
+	gen:startDate "1581" .
+<https://www.wikidata.org/wiki/Q3387678>
+  # Pierre de Rohan, Prince de Guéméné, Comte de Montauban, 1567 - 1622
+  gen:father <https://www.wikidata.org/wiki/Q3263236> ;
+  gen:mother <https://www.wikidata.org/wiki/Q62653626> .
+  # oo Madeleine de Rieux, daughter of Guy de Rieux, Seigneur de Châteauneuf and Madeleine d’Espinay
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3387678> , <https://www.wikidata.org/wiki/Q110588191> .
+<https://www.wikidata.org/wiki/Q673298>
+  # Hercule de Rohan, Duc de Montbazon, 1568-08-27 - 1654-10-16
+  # Prince de Guéméné
+  # 2e Duc de Montbazon 1594-03
+  gen:father <https://www.wikidata.org/wiki/Q3263236> ;
+  gen:mother <https://www.wikidata.org/wiki/Q62653626> .
+  # oo Madeleine de Lenoncourt, Dame de Coupvray, 1576 - 1602-08-28
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q673298> , <https://www.wikidata.org/wiki/Q102861131> ;
+	gen:startDate "1594-10-24" .
+  # oo Marie de Bretagne d’Avaugour, 1610~/1612 - 1657-04-28 (capet.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q673298> , <https://www.wikidata.org/wiki/Q1152648> ;
+	gen:startDate "1628" .
+
+<https://www.wikidata.org/wiki/Q2851374>
+  # Anne de Rohan, Princesse de Guéméné, 1604 - 1685-03-14
+  gen:father <https://www.wikidata.org/wiki/Q3387678> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110588191> .
+  # oo 1619-02-02 Louis VIII de Rohan, Duc de Montbazon, Prince de Guéméné, 1598-08-05 - 1667-02-18, https://www.wikidata.org/wiki/Q3263232
+<https://www.wikidata.org/wiki/Q3263232>
+  # Louis VIII de Rohan, Duc de Montbazon, Prince de Guéméné, 1598-08-05 - 1667-02-18
+  # 3e Duc de Montbazon, Prince de Guéméné 1654-10-16
+  gen:father <https://www.wikidata.org/wiki/Q673298> ;
+  gen:mother <https://www.wikidata.org/wiki/Q102861131> .
+  # oo Anne de Rohan Princesse de Guéméné, 1604 - 1685-03-14
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3263232> , <https://www.wikidata.org/wiki/Q2851374> ;
+	gen:startDate "1619-02-02" .
+<https://www.wikidata.org/wiki/Q438615>
+  # Marie Aimée de Rohan, Mademoiselle de Montbazon, 1600-12 - 1679-08-12
+  gen:father <https://www.wikidata.org/wiki/Q673298> ;
+  gen:mother <https://www.wikidata.org/wiki/Q102861131> .
+  # oo 1617-09-13 Charles Honoré d’Albert, Duc de Luynes, 1578 - 1621-12-15, https://www.wikidata.org/wiki/Q577795
+  # oo 1622-04-20 Claude de Lorraine, Duc de Chevreuse, 1578-06-05 - 1657-01-24, https://www.wikidata.org/wiki/Q1747977 (lothringen.ttl)
+<https://www.wikidata.org/wiki/Q3086314> # -> Rohan-Soubise
+  # François de Rohan, Prince de Soubise, 1630 - 1712-08-24
+  gen:father <https://www.wikidata.org/wiki/Q673298> ;
+  gen:mother <https://www.wikidata.org/wiki/Q1152648> .
+<https://www.wikidata.org/wiki/Q20437739>
+  # Anne de Rohan-Montbazon, 1640 - 1684-10-29
+  gen:father <https://www.wikidata.org/wiki/Q673298> ;
+  gen:mother <https://www.wikidata.org/wiki/Q1152648> .
+  # oo 1661-10 Louis Charles d’Albert, Duc de Luynes et de Chevreuse, 1620-12-25 - 1690-10-02, https://www.wikidata.org/wiki/Q3261489
+
+<https://www.wikidata.org/wiki/Q65967231>
+  # Charles II de Rohan, Duc de Montbazon, Prince de Guéméné, 1633 - 1699-07-03
+  # 4e Duc de Montbazon, Prince de Guéméné 1667-02-18
+  gen:father <https://www.wikidata.org/wiki/Q3263232> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2851374> .
+  # oo Jeanne Armande de Schomberg, 1633b - 1706-07-10
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q65967231> , <https://www.wikidata.org/wiki/Q95404336> ;
+	gen:startDate "1653-01-10" .
+
+<https://www.wikidata.org/wiki/Q2959401>
+  # Charles III de Rohan, Duc de Montbazon, Prince de Guéméné, 1655-09-30 - 1727-10-10
+  # 5e Duc de Montbazon, Prince de Guéméné 1699-07-03
+  gen:father <https://www.wikidata.org/wiki/Q65967231> ;
+  gen:mother <https://www.wikidata.org/wiki/Q95404336> .
+  # oo Marie Anne d’Albert de Luynes, 1663-03-07 - 1679-08-20
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2959401> , <https://www.wikidata.org/wiki/Q112111043> ;
+	gen:startDate "1678-02-19" .
+  # oo Charlotte Elizabeth de Cochefilet, d. 1719-12-24, daughter of Charles de Cochefilet de Vaucelas, Comte de Vauvineux and Françoise Angelique Aubry
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2959401> , <https://www.wikidata.org/wiki/Q112111056> ;
+	gen:startDate "1679-11-30" .
+
+<https://www.wikidata.org/wiki/Q3133940>
+  # Hercule Mériadec de Rohan, Duc de Montbazon, Prince de Guéméné, 1688-11-13 - 1757-12-21
+  # 6e Duc de Montbazon, Prince de Guéméné 1727
+  gen:father <https://www.wikidata.org/wiki/Q2959401> ;
+  gen:mother <https://www.wikidata.org/wiki/Q112111056> .
+  # oo Louise Gabrielle Julie de Rohan, 1704-08-11 - 1741-03-12a
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3133940> , <https://www.wikidata.org/wiki/Q3837647> ;
+	gen:startDate "1718-08-04" .
+<https://www.wikidata.org/wiki/Q5074707> # -> Rohan-Rochefort
+  # Charles de Rohan Prince de Rohan-Montauban Prince de Rochefort, 1693-08-07 - 1766-02-25
+  gen:father <https://www.wikidata.org/wiki/Q2959401> ;
+  gen:mother <https://www.wikidata.org/wiki/Q112111056> .
+
+<https://www.wikidata.org/wiki/Q357889>
+  # Jules Hercule Mériadec de Rohan, Duc de Montbazon, Prince de Guéméné, 1726-03-25 - 1800-12-10
+  # 7e Duc de Montbazon, Prince de Guéméné 1757-12-21
+  gen:father <https://www.wikidata.org/wiki/Q3133940> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3837647> .
+  # oo Marie Louise Henriette Jeanne de La Tour d’Auvergne, 1725-08-15 - 1793 (capet.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q357889> , <https://www.wikidata.org/wiki/Q3292096> ;
+	gen:startDate "1743-02-19" .
+
+<https://www.wikidata.org/wiki/Q3131517>
+  # Henri Louis Marie de Rohan, Duc de Montbazon, Prince de Guéméné, 1745-08-31 - 1809-04-24
+  # 8e Duc de Montbazon, Prince de Guéméné 1800-12-10
+  # Fürst von Rohan-Guéméné [Böhmen] 1808
+  gen:father <https://www.wikidata.org/wiki/Q357889> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3292096> .
+  # oo Victoire Armande Josephine de Rohan, 1743-12-28 - 1807-09-20
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3131517> , <https://www.wikidata.org/wiki/Q2322485> ;
+	gen:startDate "1761-01-15" .
+
+<https://www.wikidata.org/wiki/Q23773477>
+  # Marie Louise Joséphine de Rohan-Guéméné, 1765-04-13 - 1839-09-21
+  gen:father <https://www.wikidata.org/wiki/Q3131517> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2322485> .
+  # oo 1780-07-12 Charles Louis Gaspard de Rohan, 1765-11-01 - 1843-03-07, https://www.wikidata.org/wiki/Q23759025
+<https://www.wikidata.org/wiki/Q2088774>
+  # Charles Alain Gabriel de Rohan, Duc de Montbazon et de Bouillon, Prince de Guéméné, 1764-01-18 - 1836-04-24
+  # Fürst von Rohan [Österreich] 1808
+  # Fürst von Guéméné [Österreich] 1809-04-24
+  # 9e Duc de Montbazon, Prince de Guéméné 1809-04-24
+  # Duc de Bouillon 1816-07-01
+  gen:father <https://www.wikidata.org/wiki/Q3131517> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2322485> .
+  # oo Louise Aglaee de Conflans d’Armentieres, 1763 - 1819-05-06, daughter of Louis Henri Gabriel de Conflans, Marquis d’Armentieres and Antoinette Madeleine Jeanne Portail, Dame de Vaudreuil
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2088774> , <https://www.wikidata.org/wiki/Q112114499> ;
+	gen:startDate "1781-05-29" .
+<https://www.wikidata.org/wiki/Q17516277>
+  # Louis Victor Mériadec de Rohan, Duc de Rohan, de Bouillon et de Montbazon, 1766-07-20 - 1846-12-10
+  # Fürst von Rohan-Guéméné [Österreich] 1830
+  # Duc de Rohan, Duc de Bouillon et 10e Duc de Montbazon 1836
+  gen:father <https://www.wikidata.org/wiki/Q3131517> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2322485> .
+  # oo Princess Berthe de Rohan-Guéménée, 1782-05-04 - 1841-02-22
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q17516277> , <https://www.wikidata.org/wiki/Q112114502> ;
+	gen:startDate "1800-07-23" .
+<https://www.wikidata.org/wiki/Q17516320>
+  # Jules Armand Louis Prince de Rohan-Guéméné, 1781-10-20 - 1836-01-13
+  gen:father <https://www.wikidata.org/wiki/Q3131517> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2322485> .
+  # oo Wilhelmine Prinzessin Biron von Kurland Herzogin von Sagan, 1781-02-08 - 1839-11-29 (waldeck.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q17516320> , <https://www.wikidata.org/wiki/Q272289>;
+	gen:startDate "1800-06-23" ;
+	gen:divorceDate "1805" .
+
+<https://www.wikidata.org/wiki/Q112114502>
+  # Princess Berthe de Rohan-Guéménée, 1782-05-04 - 1841-02-22
+  gen:father <https://www.wikidata.org/wiki/Q2088774> ;
+  gen:mother <https://www.wikidata.org/wiki/Q112114499> .
+  # oo 1800-07-23 Louis Victor Mériadec de Rohan, Duc de Rohan, de Bouillon et de Montbazon, 1766-07-20 - 1846-12-10, https://www.wikidata.org/wiki/Q17516277
+<https://www.wikidata.org/wiki/Q106352930>
+  # Marie von Steinach, 1805-12-08 - 1893-01-06
+  gen:father <https://www.wikidata.org/wiki/Q17516277> ; # illegitimate
+  gen:mother <https://www.wikidata.org/wiki/Q327893> . # (waldeck.ttl)
+  # oo 1829-07-25 Fabian Burggraf und Graf zu Dohna-Schlodien, 1802-08-05 - 1871-05-04, https://www.wikidata.org/wiki/Q19502266
+
+
+# Rohan-Rochefort
+<https://www.wikidata.org/wiki/Q5074707>
+  # Charles de Rohan Prince de Rohan-Montauban Prince de Rochefort, 1693-08-07 - 1766-02-25
+  gen:father <https://www.wikidata.org/wiki/Q2959401> ;
+  gen:mother <https://www.wikidata.org/wiki/Q112111056> .
+  # oo Eléonore Eugénie de Béthisy de Mézières, 1706 - 1757-08-29, daughter of Eugène Marie de Béthisy, Marquis de Mézières and Eléonore Oglethorpe
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5074707> , <https://www.wikidata.org/wiki/Q112111621> ;
+	gen:startDate "1722-09-23" .
+
+<https://www.wikidata.org/wiki/Q102421868>
+  # Eléonore Louise Constance de Rohan Princesse de Rohan-Rochefort, 1728-01-15 - 1792
+  gen:father <https://www.wikidata.org/wiki/Q5074707> ;
+  gen:mother <https://www.wikidata.org/wiki/Q112111621> .
+  # oo 1742-07-04 Jean Guillaume Augustin comte de Mérode, Marquis de Westerloo, 1722-06-16 - 1763-01-06, https://www.wikidata.org/wiki/Q2466996 (nassau.ttl)
+<https://www.wikidata.org/wiki/Q5079629>
+  # Charles Jules Armand de Rohan, Prince de Rohan-Rochefort et de Montauban, 1729-08-29 - 1811-05-18
+  gen:father <https://www.wikidata.org/wiki/Q5074707> ;
+  gen:mother <https://www.wikidata.org/wiki/Q112111621> .
+  # oo (div) Marie Henriette Charlotte d’Orléans-Rothelin, 1744-02-03 - 1792a
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5079629> , <https://www.wikidata.org/wiki/Q112113341> ;
+	gen:startDate "1762-05-20" .
+<https://www.wikidata.org/wiki/Q55875093>
+  # Louise Julie Constance de Rohan-Rochefort, 1734-03-05 - 1815-03-20
+  gen:father <https://www.wikidata.org/wiki/Q5074707> ;
+  gen:mother <https://www.wikidata.org/wiki/Q112111621> .
+  # oo 1748-10-03 Louis-Charles de Lorraine, Prince de Lambesc, 1725-09-10 - 1761-06-28, https://www.wikidata.org/wiki/Q3840294 (lothringen.ttl)
+
+<https://www.wikidata.org/wiki/Q23759025>
+  # Charles Louis Gaspard de Rohan Prince de Rochefort et de Montaubon, 1765-11-01 - 1843-03-07
+  gen:father <https://www.wikidata.org/wiki/Q5079629> ;
+  gen:mother <https://www.wikidata.org/wiki/Q112113341> .
+  # oo Marie Louise Joséphine de Rohan-Guéméné, 1765-04-13 - 1839-09-21
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q23759025> , <https://www.wikidata.org/wiki/Q23773477> ;
+	gen:startDate "1780-07-12" .
+<https://www.wikidata.org/wiki/Q2961032>
+  # Charlotte Louise Dorothée de Rohan, 1767-10-25 - 1841-05-01
+  gen:father <https://www.wikidata.org/wiki/Q5079629> ;
+  gen:mother <https://www.wikidata.org/wiki/Q112113341> .
+  # oo 1804-02-18 Louis Antoine Henri de Bourbon-Condé, Duc d’Enghien, 1772-08-02 - 1804-03-21, https://www.wikidata.org/wiki/Q222606 (capet.ttl)
+
+<https://www.wikidata.org/wiki/Q55792088>
+  # Gasparine de Rohan-Rochefort, 1798-09-27 - 1871-07-27
+  gen:father <https://www.wikidata.org/wiki/Q23759025> ;
+  gen:mother <https://www.wikidata.org/wiki/Q23773477> .
+  # oo 1822-01-07 Heinrich XIX., Fürst Reuß zu Greiz, 1790-03-01 - 1836-10-31, https://www.wikidata.org/wiki/Q571666
+<https://www.wikidata.org/wiki/Q4750543>
+  # Camille Philippe Joseph Ildesbald de Rohan-Rochefort-Guéméné Fürst Rohan, 1800-12-19/1801-12-19 - 1892-09-13
+  # 11e Duc de Montbazon, Duc de Bouillon, Prince de Guéméné, Prince de Rochefort et de Montauban 1846-12-10
+  # Fürst Rohan 1846-12-10
+  gen:father <https://www.wikidata.org/wiki/Q23759025> ;
+  gen:mother <https://www.wikidata.org/wiki/Q23773477> ;
+  gen:adoptedBy <https://www.wikidata.org/wiki/Q17516277> . # 1833
+  # oo Adelheid Prinzessin zu Löwenstein-Wertheim-Rosenberg, 1806-12-19 - 1884-11-06 (wittelsbacher.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4750543> , <https://www.wikidata.org/wiki/Q101625981> ;
+	gen:startDate "1826-05-28" .
+<https://www.wikidata.org/wiki/Q47536808>
+  # Benjamin Armand Jules Meriadec Prince de Rohan-Rochefort-Guéménée, 1804-06-13 - 1846-08-05
+  gen:father <https://www.wikidata.org/wiki/Q23759025> ;
+  gen:mother <https://www.wikidata.org/wiki/Q23773477> .
+  # oo Stéphanie Princesse de Croÿ, 1805-06-05 - 1884-09-27
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q47536808> , <https://www.wikidata.org/wiki/Q47545747> ;
+	gen:startDate "1825-10-03" .
+
+<https://www.wikidata.org/wiki/Q47537068>
+  # Arthur Carl Benjamin Victor Louis de Rohan, 1826-06-13 - 1885-02-17
+  gen:father <https://www.wikidata.org/wiki/Q47536808> ;
+  gen:mother <https://www.wikidata.org/wiki/Q47545747> .
+  # oo Gabriele Gräfin von Waldstein Herrin zu Wartenberg, 1827-09-10 - 1890-01-14
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q47537068> , <https://www.wikidata.org/wiki/Q56084379> ;
+	gen:startDate "1850-06-18" .
+<https://www.wikidata.org/wiki/Q76012957>
+  # Ludwig Anton Benjamin Maria Prince de Rohan-Rochefort, 1833-06-17 – 1891-01-27
+  gen:father <https://www.wikidata.org/wiki/Q47536808> ;
+  gen:mother <https://www.wikidata.org/wiki/Q47545747> .
+  # oo Helena Maria Gräfin von Auersperg, 1835-01-09 -  1897-10-03
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76012957> , <https://www.wikidata.org/wiki/Q76012958> ;
+	gen:startDate "1860-01-09" .
+
+<https://www.wikidata.org/wiki/Q13217417>
+  # Alain Benjamin Prince de Rohan, 1853-01-08 - 1914-02-23
+  # 2. Fürst Rohan, 12e Duc de Montbazon, Duc de Bouillon, Prince de Guéméné, Prince de Rochefort et de Montauban 1892-09-13
+  gen:father <https://www.wikidata.org/wiki/Q47537068> ;
+  gen:mother <https://www.wikidata.org/wiki/Q56084379> .
+  # oo Johanna Prinzessin von Auersperg, 1860-09-17 - 1922-02-17
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q13217417> , <https://www.wikidata.org/wiki/Q47545822> ;
+	gen:startDate "1885-10-10" .
+<https://www.wikidata.org/wiki/Q3291578>
+  # Marie-Berthe Françoise Felicie Jeanne de Rohan, 1860-05-21 - 1945-01-12
+  gen:father <https://www.wikidata.org/wiki/Q47537068> ;
+  gen:mother <https://www.wikidata.org/wiki/Q56084379> .
+  # oo 1894-04-28 Carlos de Borbón y Austria-Este Infante de España, Duque de Madrid, 1848-03-30 - 1909-07-18, https://www.wikidata.org/wiki/Q358875 (capet.ttl)
+
+
+# Rohan-Soubise
+<https://www.wikidata.org/wiki/Q3086314>
+  # François de Rohan, Prince de Soubise, 1630 - 1712-08-24
+  gen:father <https://www.wikidata.org/wiki/Q673298> ;
+  gen:mother <https://www.wikidata.org/wiki/Q1152648> .
+  # oo Anne Julie de Rohan-Chabot, Princesse de Soubise, Dame de Frontenay, 1648 - 1709-02-04
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3086314> , <https://www.wikidata.org/wiki/Q448589> ;
+	gen:startDate "1663-04-17" .
+
+<https://www.wikidata.org/wiki/Q2059392>
+  # Hercule Mériadec de Rohan, Duc de Rohan-Rohan, 1669-05-08 - 1749-01-26
+  # 1er Duc de Rohan-Rohan 1714
+  gen:father <https://www.wikidata.org/wiki/Q3086314> ;
+  gen:mother <https://www.wikidata.org/wiki/Q448589> .
+  # oo Anne-Geneviève de Lévis, 1673-02 - 1724-03-21
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2059392> , <https://www.wikidata.org/wiki/Q2851113> ;
+	gen:startDate "1694-02-15" .
+
+<https://www.wikidata.org/wiki/Q2058648>
+  # Jules François Louis de Rohan, Prince de Soubise, 1697-01-16 - 1724-05-06
+  gen:father <https://www.wikidata.org/wiki/Q2059392> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2851113> .
+  # oo Anne Julie Adelaide de Melun, 1698 - 1724-05-18 (mark.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2058648> , <https://www.wikidata.org/wiki/Q2056633> ;
+	gen:startDate "1714-09-16" .
+<https://www.wikidata.org/wiki/Q3837647>
+  # Louise Gabrielle Julie de Rohan, 1704-08-11 - 1741-03-12a
+  gen:father <https://www.wikidata.org/wiki/Q2059392> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2851113> .
+  # oo 1718-08-04 Hercule Mériadec de Rohan, 6e Duc de Montbazon, Prince de Guéméné, 1688-11-13 - 1757-12-21, https://www.wikidata.org/wiki/Q3133940
+
+<https://www.wikidata.org/wiki/Q658916>
+  # Charles de Rohan, Prince de Soubise, Duc de Rohan-Rohan, 1715-07-16 - 1787-07-01
+  # 6e Duc de Ventadour 1717
+  # prince de Maubuisson, prince de Soubise 1724
+  # Prince d’Epinoy 1724-07-31 - 1739, 1742
+  # 2e Duc de Rohan-Rohan 1749-01-26
+  gen:father <https://www.wikidata.org/wiki/Q2058648> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2056633> .
+  # oo Anne Marie Louise de La Tour-d’Auvergne, 1722-08-01 - 1739-09-19 (capet.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q658916> , <https://www.wikidata.org/wiki/Q2054142> ;
+	gen:startDate "1734" .
+  # oo Anna Teresa de Savoie-Carignano, 1717-11-01 - 1745-04-05 (savoyen.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q658916> , <https://www.wikidata.org/wiki/Q1996040> ;
+	gen:startDate "1741-11-06" .
+  # oo Anna Victoria Landgräfin von Hessen-Rheinfels-Rotenburg, 1728-02-25 - 1792-07-01 (reginare.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q658916> , <https://www.wikidata.org/wiki/Q2850041> ;
+	gen:startDate "1745-12-23" .
+<https://www.wikidata.org/wiki/Q2057108>
+  # Marie Louise Genevieve de Rohan-Soubise, Comtesse de Walhain, 1720-01-07 - 1803-03-04
+  gen:father <https://www.wikidata.org/wiki/Q2058648> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2056633> .
+  # oo Gaston Jean Baptiste Charles de Lorraine, Comte de Marsan, 1721-02-07 - 1743-05-02, https://www.wikidata.org/wiki/Q5526700 (lothringen.ttl)
+
+<https://www.wikidata.org/wiki/Q2856180>
+  # Charlotte Godefride Elizabeth de Rohan, 1737-10-07 - 1760-03-04
+  gen:father <https://www.wikidata.org/wiki/Q658916> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2054142> .
+  # oo 1753-05-03 Louis Joseph de Bourbon, prince de Condé, 1736-08-09 - 1818-05-13, https://www.wikidata.org/wiki/Q430775 (capet.ttl)
+<https://www.wikidata.org/wiki/Q2322485>
+  # Victoire Armande Josephine de Rohan, 1743-12-28 - 1807-09-20
+  gen:father <https://www.wikidata.org/wiki/Q658916> ;
+  gen:mother <https://www.wikidata.org/wiki/Q1996040> .
+  # oo 1761-01-15 Henri de Rohan, Duc de Montbazon, Prince de Guéméné, 1745-08-31 - 1809-04-24, https://www.wikidata.org/wiki/Q3131517
+
+
+# Rohan-Gié
+<https://www.wikidata.org/wiki/Q1599703>
+  # Pierre I. de Rohan-Gié, Prince de Rohan, seigneur de Gie, 1451 - 1513-04-22
+  # Prince de Rohan 1485
+  gen:father <https://www.wikidata.org/wiki/Q3262274> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3292923> .
+  # oo Françoise de Penhoët, 1455 - 1498
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1599703> , <https://www.wikidata.org/wiki/Q21094793> .
+  # oo Marguerite d’Armagnac, Duchesse de Nemours, d. 1503-11 (capet.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1599703> , <https://www.wikidata.org/wiki/Q2308146> ;
+	gen:startDate "1503-06-15" .
+
+<https://www.wikidata.org/wiki/Q2960688>
+  # Charles de Rohan, seigneur de Gie, Comte de Guise et d’Orbec, 1478 - 1528-05-06
+  # Comte de Guise 1503 - 1520
+  # Comte d’Orbec 1520
+  gen:father <https://www.wikidata.org/wiki/Q1599703> ;
+  gen:mother <https://www.wikidata.org/wiki/Q21094793> .
+  # oo Charlotte d’Armagnac, Duchesse de Nemours, Comtesse de Guise, d. 1504 (capet.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2960688> , <https://www.wikidata.org/wiki/Q1885295> ;
+	gen:startDate "1504-02-24" .
+  # oo Giovanna di Sanseverino, daughter of Bernardino Sanseverino, Principe di Bisgnano
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2960688> , <https://www.wikidata.org/wiki/Q21094888> .
+<https://www.wikidata.org/wiki/Q602881>
+  # Pierre II de Rohan, seigneur de Frontenay, de la Marche et de Gié, Vicomte de Carentan, d. 1525-02
+  gen:father <https://www.wikidata.org/wiki/Q1599703> ;
+  gen:mother <https://www.wikidata.org/wiki/Q21094793> .
+  # oo Anne de Rohan, vicomtesse de Rohan, 1485~ - 1529-04-05
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q602881> , <https://www.wikidata.org/wiki/Q2851375> ;
+	gen:startDate "1515" .
+
+<https://www.wikidata.org/wiki/Q15967085>
+  # François de Rohan-Gié, seigneur de Gié, Vicomte de Fronsac, etc, d. 1559-12-29
+  gen:father <https://www.wikidata.org/wiki/Q2960688> ;
+  gen:mother <https://www.wikidata.org/wiki/Q21094888> .
+  # oo Catherine de Silly, Comtesse de Rochefort, Dame de La Roche-Guyon (mark.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q15967085> , <https://www.wikidata.org/wiki/Q105815727> ;
+	gen:startDate "1536-03-25" .
+<https://www.wikidata.org/wiki/Q3157825>
+  # Jacqueline de Rohan-Gié, 1520~ - 1587
+  gen:father <https://www.wikidata.org/wiki/Q2960688> ;
+  gen:mother <https://www.wikidata.org/wiki/Q21094888> .
+  # oo 1536-07-19 François d’Orléans-Longueville, marquis de Rothelin, 1513-03-02 - 1548-10-25, https://www.wikidata.org/wiki/Q3086109 (capet.ttl)
+<https://www.wikidata.org/wiki/Q3008722>
+  # René Ier de Rohan-Gié, Vicomte de Rohan, 1516 - 1552-10-20
+  # 17e Vicomte de Rohan, Comte de Porhoët 1529-04-05
+  # Prince de Léon 1530~
+  gen:father <https://www.wikidata.org/wiki/Q602881> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2851375> .
+  # oo Isabeau d’Albret pricesse de Navarre, 1512 - 1560
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3008722> , <https://www.wikidata.org/wiki/Q1424485> ;
+	gen:startDate "1534" .
+
+<https://www.wikidata.org/wiki/Q62653626>
+  # Eléonore de Rohan-Gié, Dame du Verger, Comtesse de Rochefort, 1539-01-10 - 1583-09-20
+  gen:father <https://www.wikidata.org/wiki/Q15967085> ;
+  gen:mother <https://www.wikidata.org/wiki/Q105815727> .
+  # oo 1561-07-22 Louis VI de Rohan, Prince of Guéméné, Comte de Montbazon, 1540-04-03 - 1611-05-04, https://www.wikidata.org/wiki/Q3263236
+<https://www.wikidata.org/wiki/Q3131315>
+  # Henri Ier, Vicomte de Rohan, 1535 - 1575-06-25
+  # First Prince of the Blood in Navarre
+  # 18e Vicomte de Rohan, Prince de Léon, Comte de Porhoët 1552-10-20
+  gen:father <https://www.wikidata.org/wiki/Q3008722> ;
+  gen:mother <https://www.wikidata.org/wiki/Q1424485> .
+  # oo Françoise de Tournemine, d. 1609-01-28, daughter of René de Tournemine
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3131315> , <https://www.wikidata.org/wiki/Q112099558> ;
+	gen:startDate "1566" .
+<https://www.wikidata.org/wiki/Q2008935>
+  # René II de Rohan-Gié, Vicomte de Rohan, 1550~ - 1586
+  # 19e Vicomte de Rohan, Prince de Léon, Comte de Porhoët 1575-06-25
+  gen:father <https://www.wikidata.org/wiki/Q3008722> ;
+  gen:mother <https://www.wikidata.org/wiki/Q1424485> .
+  # oo Catherine de Parthenay-L’Archeveque, 1553/1554 - 1631-10-26, daughter of Jean V de Parthenay and Antoinette d’Aubeterre
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2008935> , <https://www.wikidata.org/wiki/Q2942125> ;
+	gen:startDate "1578~" .
+
+<https://www.wikidata.org/wiki/Q75579159>
+  # Catherine de Rohan, 1578-06-20 - 1607-05-10
+  gen:father <https://www.wikidata.org/wiki/Q2008935> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2942125> .
+  # oo 1604-08-28 Johann II., Herzog von Pfalz-Zweibrücken-Veldenz, 1584-03-26 - 1635-08-09, https://www.wikidata.org/wiki/Q65796 (wittelsbacher.ttl)
+<https://www.wikidata.org/wiki/Q701048>
+  # Henri II de Rohan, Duc de Rohan, 1579-08-21 - 1639-04-13
+  # Vicomte de Rohan 1586
+  # Duc de Rohan 1603
+  # Duc de Frontenay 1626
+  # leader of the Huguenots 1621 - 1629
+  gen:father <https://www.wikidata.org/wiki/Q2008935> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2942125> .
+  # oo Marguerite de Béthune, 1595 - 1660-10-21
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q701048> , <https://www.wikidata.org/wiki/Q6760831> ;
+	gen:startDate "1605-02-13" .
+
+<https://www.wikidata.org/wiki/Q3290803>
+  # Marguerite de Rohan, Duchesse de Rohan, Princesse de Léon, 1616/1617 - 1684-04-09
+  # Duchesse de Rohan 1639-04-13
+  # princesse de Léon, dame de Soubise, dame du duché de Frontenay, comtesse de Porhoët, marquise de Blain et de La Garnache, dame des Lorges etc.
+  gen:father <https://www.wikidata.org/wiki/Q701048> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6760831> .
+  # oo 1645-06-13 Henri Chabot, Seigneur de Saint-Aulaye, Duc de Rohan, d. 1655-02-27, https://www.wikidata.org/wiki/Q3132252
+
+
+# ----
+<https://www.wikidata.org/wiki/Q1951885>
+  # François, Seigneur de Rieux et de Rochefort, 1418-08-11 - 1458-11-20
+  gen:father <https://www.wikidata.org/wiki/Q96243593> ; # Jean III, Seigneur de Rieux et de Rochefort
+  gen:mother <https://www.wikidata.org/wiki/Q2068338> . # Jeanne, Comtesse d’Harcourt
+  # oo Jeanne de Rohan, d. 1459-06-25a
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1951885> , <https://www.wikidata.org/wiki/Q57748605> ;
+	gen:startDate "1442-02-11" .
+
+<https://www.wikidata.org/wiki/Q110455831>
+  # Louise de Rieux, b. 1446-03-01
+  gen:father <https://www.wikidata.org/wiki/Q1951885> ;
+  gen:mother <https://www.wikidata.org/wiki/Q57748605> .
+  # oo 1455-11-24/1463-06-12 Louis II de Rohan, Seigneur de Guéméné, de Montauban, de Landal, d. 1508-05-25, https://www.wikidata.org/wiki/Q110455791
+
+# ----
+<https://www.wikidata.org/wiki/Q110588187>
+  # Françoise de Laval, d. 1614-12-16
+  gen:father <https://www.wikidata.org/wiki/Q110588189> ; # René II de Laval, Seigneur de Bois-Dauphin
+  gen:mother <https://www.wikidata.org/wiki/Q110588190> . # Catherine de Baif
+  # oo Henri II de Lenoncourt, Baron de Vignory, 1537~ - 1584, https://www.wikidata.org/wiki/Q110588183
+  # oo 1586 Louis VI de Rohan, Prince of Guéméné, Comte de Montbazon, 1540-04-03 - 1611-05-04, https://www.wikidata.org/wiki/Q3263236
+# ----
+<https://www.wikidata.org/wiki/Q110588183>
+  # Henri II de Lenoncourt, Baron de Vignory, 1537~ - 1584
+  gen:father <https://www.wikidata.org/wiki/Q110588184> ; # Henri de Lenoncourt, Seigneur de Lenoncourt
+  gen:mother <https://www.wikidata.org/wiki/Q110588186> . # Marguerite de Broyes
+  # oo Françoise de Laval, d. 1614-12-16
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110588183> , <https://www.wikidata.org/wiki/Q110588187> .
+
+<https://www.wikidata.org/wiki/Q102861131>
+  # Madeleine de Lenoncourt, Dame de Coupvray, 1576 - 1602-08-28
+  gen:father <https://www.wikidata.org/wiki/Q110588183> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110588187> .
+  # oo 1581 Louis VII de Rohan, Duc de Montbazon, Prince de Guéméné, 1562 - 1589-11-01, https://www.wikidata.org/wiki/Q3263234
+  # oo 1594-10-24 Hercule de Rohan, Duc de Montbazon, 1568-08-27 - 1654-10-16, https://www.wikidata.org/wiki/Q673298
+
+# ----
+<https://www.wikidata.org/wiki/Q577795>
+  # Charles Honoré d’Albert, Duc de Luynes, 1578 - 1621-12-15
+  # 1er Duc de Luynes 1619-11-14
+  gen:father <https://www.wikidata.org/wiki/Q22084148> ; # Honoré d’Albert, Seigneur de Luynes, de Cadenet, de Brantes
+  gen:mother <https://www.wikidata.org/wiki/Q22084192> . # Anne de Rodulf
+  # oo Marie Aimée de Rohan, Mademoiselle de Montbazon, 1600-12 - 1679-08-12
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q577795> , <https://www.wikidata.org/wiki/Q438615> ;
+	gen:startDate "1617-09-13" .
+
+<https://www.wikidata.org/wiki/Q3261489>
+  # Louis Charles d’Albert, Duc de Luynes et de Chevreuse, 1620-12-25 - 1690-10-02
+  # 2e duc de Luynes 1621-12-15
+  # duc de Chevreuse 1657-01-24/1679-08-12
+  gen:father <https://www.wikidata.org/wiki/Q577795> ;
+  gen:mother <https://www.wikidata.org/wiki/Q438615> .
+  # oo Anne de Rohan-Montbazon, 1640 - 1684-10-29
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3261489> , <https://www.wikidata.org/wiki/Q20437739> ;
+	gen:startDate "1661-10" .
+
+<https://www.wikidata.org/wiki/Q112111043>
+  # Marie Anne d’Albert de Luynes, 1663-03-07 - 1679-08-20
+  gen:father <https://www.wikidata.org/wiki/Q3261489> ;
+  gen:mother <https://www.wikidata.org/wiki/Q20437739> .
+  # oo 1678-02-19 Charles III de Rohan, 5e Duc de Montbazon, Prince de Guéméné, 1655-09-30 - 1727-10-10, https://www.wikidata.org/wiki/Q2959401
+<https://www.wikidata.org/wiki/Q293356>
+  # Jeanne Baptiste d’Albert de Luynes, 1670-01-18 - 1736-11-18
+  gen:father <https://www.wikidata.org/wiki/Q3261489> ;
+  gen:mother <https://www.wikidata.org/wiki/Q20437739> .
+  # with Vittorio Amedeo II Francesco di Savoia, Re di Sardegna, 1666-05-14 - 1732-10-31, https://www.wikidata.org/wiki/Q209579 (savoyen.ttl)
+
+# ----
+<https://www.wikidata.org/wiki/Q95404336>
+  # Jeanne Armande de Schomberg, 1633b - 1706-07-10
+  gen:father <https://www.wikidata.org/wiki/Q348079> ; # Henri de Schomberg, Comte de Nanteuil et de Duretal
+  gen:mother <https://www.wikidata.org/wiki/Q110588197> . # Anne de La Guiche
+  # oo 1653-01-10 Charles II de Rohan, 4e Duc de Montbazon, Prince de Guéméné, 1633 - 1699-07-03, https://www.wikidata.org/wiki/Q65967231
+
+# ----
+<https://www.wikidata.org/wiki/Q112113341>
+  # Marie Henriette Charlotte d’Orléans-Rothelin, 1744-02-03 - 1792a
+  gen:father <https://www.wikidata.org/wiki/Q107293655> ; # Alexandre d’Orléans Marquis de Rothelin
+  gen:mother <https://www.wikidata.org/wiki/Q107293656> . # Marie-Catherine de Roncherolles
+  # oo 1762-05-20 Charles Jules Armand de Rohan, Prince de Rohan-Rochefort et de Montauban, 1729-08-29 - 1811-05-18, https://www.wikidata.org/wiki/Q5079629
+
+# ----
+<https://www.wikidata.org/wiki/Q2851113>
+  # Anne-Geneviève de Lévis, 1673-02 - 1724-03-21
+  gen:father <https://www.wikidata.org/wiki/Q3260433> ; # Louis Charles de Lévis, 5e Duc de Ventadour
+  gen:mother <https://www.wikidata.org/wiki/Q1218519> . # Charlotte Eleonore de La Mothe-Houdancourt
+  # oo 1694-02-15 Hercule Mériadec de Rohan, Duc de Rohan-Rohan, 1669-05-08 - 1749-01-26, https://www.wikidata.org/wiki/Q2059392
+
+# ----
+<https://www.wikidata.org/wiki/Q21094793>
+  # Françoise de Penhoët, 1455 - 1498
+  gen:father <https://www.wikidata.org/wiki/Q102837391> ; # Guillaume de Penhoët, Comte de Penhoët, Vicomte de Fronsac
+  gen:mother <https://www.wikidata.org/wiki/Q102837444> . # Françoise de Maillé
+  # oo Pierre I. de Rohan-Gié, Prince de Rohan, seigneur de Gie, 1451 - 1513-04-22, https://www.wikidata.org/wiki/Q1599703
+
+# ----
+<https://www.wikidata.org/wiki/Q6760831>
+  # Marguerite de Béthune, 1595 - 1660-10-21
+  gen:father <https://www.wikidata.org/wiki/Q379953> ; # Maximilien de Béthune, Duc de Sully
+  gen:mother <https://www.wikidata.org/wiki/Q102815341> . # Rachel de Cochefilet
+  # oo 1605-02-13 Henri II de Rohan, Duc de Rohan, 1579-08-21 - 1639-04-13, https://www.wikidata.org/wiki/Q701048
+
+# ====
+<https://www.wikidata.org/wiki/Q3132252>
+  # Henri Chabot, Seigneur de Saint-Aulaye, Duc de Rohan, d. 1655-02-27
+  # Duc de Rohan 1648
+  gen:father <https://www.wikidata.org/wiki/Q102814961> ; # Charles Chabot, Seigneur de Saint-Gelais
+  gen:mother <https://www.wikidata.org/wiki/Q102815055> . # Henriette de Lur-Saluces
+  # oo Marguerite de Rohan, Duchesse de Rohan, Princesse de Léon, 1616/1617 - 1684-04-09
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3132252> , <https://www.wikidata.org/wiki/Q3290803> ;
+	gen:startDate "1645-06-13" .
+
+<https://www.wikidata.org/wiki/Q448589>
+  # Anne Julie de Rohan-Chabot, Princesse de Soubise, Dame de Frontenay, 1648 - 1709-02-04
+  gen:father <https://www.wikidata.org/wiki/Q3132252> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3290803> .
+  # oo 1663-04-17 François de Rohan, Prince de Soubise, 1630 - 1712-08-24, https://www.wikidata.org/wiki/Q3086314
+<https://www.wikidata.org/wiki/Q109349146>
+  # Jeanne Pélagie de Rohan-Chabot, 1659~ - 1698-08-18
+  gen:father <https://www.wikidata.org/wiki/Q3132252> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3290803> .
+  # oo 1668-05-29 Alexandre Guillaume de Melun, 6e Prince d’Epinoy, d. 1679-02-16, https://www.wikidata.org/wiki/Q2833728 (mark.ttl)
+<https://www.wikidata.org/wiki/Q3263552>
+  # Louis de Rohan-Chabot, Duc de Rohan, 1652-11-03 - 1727-08-17
+  # Duc de Rohan, Prince de Léon, Comte de Porhoët et de Moret, Marquis de Blain, etc
+  gen:father <https://www.wikidata.org/wiki/Q3132252> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3290803> .
+  # oo Marie Elisabeth du Bec-Crespin de Grimaldi, 1661-04-04 - 1743-03-27
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3263552> , <https://www.wikidata.org/wiki/Q102536865> ;
+	gen:startDate "1678-07-18" .
+
+<https://www.wikidata.org/wiki/Q102536857>
+  # Marie Marguerite Françoise de Rohan-Chabot, Mademoiselle de Rohan, 1680-12-25 - 1706-01-28
+  gen:father <https://www.wikidata.org/wiki/Q3263552> ;
+  gen:mother <https://www.wikidata.org/wiki/Q102536865> .
+  # oo 1700-05-23 Louis Pierre Engelbert Comte de La Marck, Graf von Schleiden, 1674-07-03 - 1750-11-04, https://www.wikidata.org/wiki/Q102536847 (manderscheid.ttl)
+<https://www.wikidata.org/wiki/Q3121456>
+  # Guy Auguste de Rohan-Chabot, Comte de Maillé-Seizploue, 1683-08-18 - 1760-09-13
+  gen:father <https://www.wikidata.org/wiki/Q3263552> ;
+  gen:mother <https://www.wikidata.org/wiki/Q102536865> .
+  # oo Yvonne Sylvie du Breil de Rays, 1712~ - 1740-07-15
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3121456> , <https://www.wikidata.org/wiki/Q102815563> ;
+	gen:startDate "1729-03-08" .
+  # oo Lady Mary Apollonia Scholastica Stafford, 1721-02-17 - 1769-05-16 (howard.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3121456> , <https://www.wikidata.org/wiki/Q76174430> ;
+	gen:startDate "1744-05-25" .
+
+<https://www.wikidata.org/wiki/Q2960149>
+  # Marie Charles Rosalie de Rohan-Chabot, Comte de Jarnac, 1740-07-09 - 1813
+  gen:father <https://www.wikidata.org/wiki/Q3121456> ;
+  gen:mother <https://www.wikidata.org/wiki/Q102815563> .
+  # oo Elizabeth Smith, 1758 - 1843-11-23, daughter of James Smith and Mary Ajor
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2960149> , <https://www.wikidata.org/wiki/Q102815594> ;
+	gen:startDate "1776-12-29" .
+
+<https://www.wikidata.org/wiki/Q75281547>
+  # Louis Guy Charles Guillaume de Rohan-Chabot, Comte de Jarnac, Vicomte de Chabot, 1780-10-07 – 1875-07-12
+  gen:father <https://www.wikidata.org/wiki/Q2960149> ;
+  gen:mother <https://www.wikidata.org/wiki/Q102815594> .
+  # oo Lady Isabella Charlotte FitzGerald, 1784-07-16 - 1868-04-09
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75281547> , <https://www.wikidata.org/wiki/Q56754438> ;
+	gen:startDate "1809-06-01" .
+
+# ----
+<https://www.wikidata.org/wiki/Q102815563>
+  # Yvonne Sylvie du Breil de Rays, 1712~ - 1740-07-15
+  gen:father <https://www.wikidata.org/wiki/Q102815576> ; # Charles du Breil, Marquis de Rays
+  gen:mother <https://www.wikidata.org/wiki/Q102815587> . # Sylvie de La Boissiere de Brantonnet
+  # oo 1729-03-08 Guy Auguste de Rohan-Chabot, Comte de Maillé-Seizploue, 1683-08-18 - 1760-09-13, https://www.wikidata.org/wiki/Q3121456
+
+# ====
