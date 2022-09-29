@@ -4,17 +4,49 @@
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
+<https://www.wikidata.org/wiki/Q714980>
+  # Obizzo II d’Este, Marchese di Ferrara, 1247 - 1293-02-12
+  # Marchese di Ferrara 1264
+  # Signore di Modena e Reggio 1288/1289
+  gen:father <https://www.wikidata.org/wiki/Q3432156> ; # Rinaldo I d’Este
+  gen:mother <https://www.wikidata.org/wiki/Q110457603> . # NN
+  # oo Jacopina Fieschi
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q714980> , <#Jacopina_Fieschi> .
+  # oo Costanza della Scala, 1263~ - 1306
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q714980> , <https://www.wikidata.org/wiki/Q3695639> ;
+	gen:startDate "1289-07" .
+
+<https://www.wikidata.org/wiki/Q2272714>
+  # Aldobrandino II d’Este, Marchese di Ferrara, d. 1326-07-26
+  # Marchese di Ferrara 1317
+  gen:father <https://www.wikidata.org/wiki/Q714980> ;
+  gen:mother <#Jacopina_Fieschi> .
+  # oo Alda Rangoni, 1270 - 1325, daughter of Tobia Rangoni
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2272714> , <https://www.wikidata.org/wiki/Q19985076> ;
+	gen:startDate "1289" .
 <https://www.wikidata.org/wiki/Q2929489>
   # Beatrice d’Este, 1268 - 1334-09-15
-  gen:father <https://www.wikidata.org/wiki/Q714980> . # Obizzo II d’Este, Marchese di Ferrara
-  # and Jacopina Fieschi
+  gen:father <https://www.wikidata.org/wiki/Q714980> ;
+  gen:mother <#Jacopina_Fieschi> .
   # oo 1300 Galeazzo I Visconti, Signore di Milano, 1277-01-21 - 1328-08-06, https://www.wikidata.org/wiki/Q456873 (savoyen.ttl)
 
+<https://www.wikidata.org/wiki/Q1843646>
+  # Obizzo III d’Este, Marchese di Ferrara, 1294-07-14 - 1352-03-20
+  # Marchese di Ferrara 1326-07-26
+  gen:father <https://www.wikidata.org/wiki/Q2272714> ;
+  gen:mother <https://www.wikidata.org/wiki/Q19985076> .
+  # oo Lippa Ariosti, 1310~ - 1347-11-27, daughter of Iacopo Ariosti
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1843646> , <https://www.wikidata.org/wiki/Q24205978> ;
+	gen:startDate "1347-11-27" .
 
 <https://www.wikidata.org/wiki/Q3609057>
   # Alda d’Este, 1333-07-18 - 1391-09-26
-  gen:father <https://www.wikidata.org/wiki/Q1843646> ; # Obizzo III d’Este, Marchese di Ferrara
-  gen:mother <https://www.wikidata.org/wiki/Q24205978> . # Lippa Ariosti
+  gen:father <https://www.wikidata.org/wiki/Q1843646> ;
+  gen:mother <https://www.wikidata.org/wiki/Q24205978> .
   # oo 1356 Ludovico I Gonzaga, 1334 - 1382-10-04, https://www.wikidata.org/wiki/Q1376938
 <https://www.wikidata.org/wiki/Q2551650>
   # Alberto d'Este, Marchese di Ferrara, Modena e Reggio, 1347-02-27 - 1393-07-30
@@ -506,6 +538,13 @@
   gen:father <https://www.wikidata.org/wiki/Q29545623> ;
   gen:mother <#Thérese_de_Mesmes> .
 
+
+# ----
+<https://www.wikidata.org/wiki/Q3695639>
+  # Costanza della Scala, 1263~ - 1306
+  gen:father <https://www.wikidata.org/wiki/Q322158> ; # Alberto I della Scala
+  gen:mother <https://www.wikidata.org/wiki/Q4009898> . # Verde di Salizzole
+  # oo 1289-07 Obizzo II d’Este, Marchese di Ferrara, 1247 - 1293-02-12, https://www.wikidata.org/wiki/Q714980
 
 # ----
 <https://www.wikidata.org/wiki/Q648609>
