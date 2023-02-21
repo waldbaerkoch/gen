@@ -4,15 +4,13 @@
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
-<https://www.wikidata.org/wiki/Q1697752>
-  owl:sameAs <https://www.wikidata.org/wiki/Q110153927> .
+#<https://www.wikidata.org/wiki/Q1697752>
   # Johann II. Truchsess von Waldburg zu Trauchburg
   # oo Ursula von Abensberg, 1375-12-16b - 1422-01-30, daughter of Ulrich IV. von Abensberg and Agnes von Liechtenstein
   []
     gen:spouse <https://www.wikidata.org/wiki/Q1697752> , <https://www.wikidata.org/wiki/Q110153930> .
 
 <https://www.wikidata.org/wiki/Q29380947>
-  owl:sameAs <https://www.wikidata.org/wiki/Q110153926> ;
   # Eberhard Truchsess von Waldburg, Graf von Sonnenberg, d. 1479-09-22
   gen:father <https://www.wikidata.org/wiki/Q1697752> ;
   gen:mother <https://www.wikidata.org/wiki/Q110153930> .
@@ -37,7 +35,6 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q109534002> , <https://www.wikidata.org/wiki/Q109534003> .
 <https://www.wikidata.org/wiki/Q1696871>
-  owl:sameAs <https://www.wikidata.org/wiki/Q110370561> ;
   # Johann von Waldburg, Graf von Sonnenberg zu Wolfegg, d. 1510-06-24
   gen:father <https://www.wikidata.org/wiki/Q29380947> ;
   gen:mother <https://www.wikidata.org/wiki/Q97208177> .
@@ -45,6 +42,11 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q1696871> , <https://www.wikidata.org/wiki/Q110370562> ;
 	gen:startDate "1488" .
+<https://www.wikidata.org/wiki/Q116169292>
+  # Kunigunde von Waldburg-Sonnenberg, d. 1485a
+  gen:father <https://www.wikidata.org/wiki/Q29380947> ;
+  gen:mother <https://www.wikidata.org/wiki/Q97208177> .
+  # oo 1465-10-21 Jakob I. von Moers, Graf von Saarwerden, 1447 - 1483-04-11, https://www.wikidata.org/wiki/Q44192712 (mark.ttl)
 
 <https://www.wikidata.org/wiki/Q109534001>
   # Kunigunde Gräfin von Waldburg-Sonnenberg, 1482 - 1536-09-25
@@ -846,13 +848,13 @@
   gen:mother <https://www.wikidata.org/wiki/Q76263183> .
   # oo Maria Franziska Elisabeth Gräfin von Montfort, 1668-01-13 - 1726-08-21
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q93521614> , <#Maria_Franziska_von_Montfort> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q93521614> , <https://www.wikidata.org/wiki/Q112328253> ;
 	gen:startDate "1685-08-05" .
 
 <https://www.wikidata.org/wiki/Q93521679>
   # Johann Jakob II., Freiherr von Waldburg, Graf zu Zeil, 1686-11-23 - 1750-10-16
   gen:father <https://www.wikidata.org/wiki/Q93521614> ;
-  gen:mother <#Maria_Franziska_von_Montfort> .
+  gen:mother <https://www.wikidata.org/wiki/Q112328253> .
   # oo Maria Elisabeth Gräfin von Khüenburg, 1693-05-30 - 1719-03-06 (harrach.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q93521679> , <https://www.wikidata.org/wiki/Q110153200> ;
@@ -860,12 +862,12 @@
 <#Maria_Anna_von_Waldburg-Zeil>
   # Maria Anna Gräfin von Waldburg zu Zeil, 1692-05-06 - 1762-02-20
   gen:father <https://www.wikidata.org/wiki/Q93521614> ;
-  gen:mother <#Maria_Franziska_von_Montfort> .
+  gen:mother <https://www.wikidata.org/wiki/Q112328253> .
   # oo 1722-10-24 Wolfgang Heinrich Wilhelm, Graf von Manderscheid-Kayl, 1678-06-29 - 1742-07-17, https://www.wikidata.org/wiki/Q93521782
 <https://www.wikidata.org/wiki/Q75289032>
   # Marie Katharina Gräfin von Waldburg zu Zeil, 1702-09-28 - 1739-02-24
   gen:father <https://www.wikidata.org/wiki/Q93521614> ;
-  gen:mother <#Maria_Franziska_von_Montfort> .
+  gen:mother <https://www.wikidata.org/wiki/Q112328253> .
   # oo 1724-05-14 Franz Wilhelm Prinz von Hohenzollern-Sigmaringen, Graaf van den Bergh-s’-Heerenberg, 1704-12-07 - 1737-02-10, https://www.wikidata.org/wiki/Q1449495
 
 <https://www.wikidata.org/wiki/Q66683315> # -> Waldburg-Zeil-Trauchburg
@@ -1307,18 +1309,107 @@
 	gen:startDate "1858-08-05" .
 
 
-# ----
+# ====
+<https://www.wikidata.org/wiki/Q70450318>
+  # Ulrich IV., Graf von Montfort-Tettnang, 1440~ - 1495-10-29
+  gen:father <https://www.wikidata.org/wiki/Q62732286> ;
+  gen:mother <https://www.wikidata.org/wiki/Q73800724> .
+  # oo Ursula Markgräfin von Baden-Hochberg, d. 1485-04-26b (zähringer.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q70450318> , <https://www.wikidata.org/wiki/Q116029926> ;
+	gen:startDate "1467-06-28" .
 <https://www.wikidata.org/wiki/Q97208177>
-  owl:sameAs <https://www.wikidata.org/wiki/Q110153934> ;
   # Kunigunde Gräfin von Montfort-Tettnang
   # Erbin der Grafschaften Friedberg und Scheer
-  gen:father <https://www.wikidata.org/wiki/Q62732286> ; # or https://www.wikidata.org/wiki/Q110153937 Wilhelm IV.(V.) Graf von Montfort-Tettnang, d. 1439-09-08
-  gen:mother <https://www.wikidata.org/wiki/Q110153941> . # and Kunigunde Gräfin von Werdenberg
+  gen:father <https://www.wikidata.org/wiki/Q62732286> ; # Wilhelm IV.(V.) Graf von Montfort-Tettnang, d. 1439-06-20/-09-08
+  gen:mother <https://www.wikidata.org/wiki/Q110153941> . # and Kunigunde Gräfin von Werdenberg-Bludenz, d. 1443-11-06b
   # oo 1432-12-21 Eberhard Truchsess von Waldburg, Graf von Sonnenberg, d. 1479-09-22, https://www.wikidata.org/wiki/Q29380947
+<https://www.wikidata.org/wiki/Q110414716>
+  # Klara Gräfin von Montfort-Tettnang, d. 1440
+  gen:father <https://www.wikidata.org/wiki/Q62732286> ;
+  gen:mother <https://www.wikidata.org/wiki/Q73800724> .
+  # oo Konrad IV. Schenk von Limpurg in Gaildorf, 1396~ - 1482-04-02, https://www.wikidata.org/wiki/Q56071685
+<https://www.wikidata.org/wiki/Q66196220>
+  # Hugo XIII./XI., Graf von Montfort-Rothenfels-Argen-Wasserburg, d. 1491-10-16~
+  gen:father <https://www.wikidata.org/wiki/Q62732286> ;
+  gen:mother <https://www.wikidata.org/wiki/Q73800724> .
+  # oo Elisabeth von Werdenberg-Trochtelfingen, d. 1488-02-09 (württemberg.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q66196220> , <https://www.wikidata.org/wiki/Q116170736> ;
+	gen:startDate "1455-01-09" .
+
+<https://www.wikidata.org/wiki/Q1554308>
+  # Ulrich VII. (V.), Graf von Montfort-Tettnang, d. 1520
+  gen:father <https://www.wikidata.org/wiki/Q70450318> ;
+  gen:mother <https://www.wikidata.org/wiki/Q116029926> .
+  # oo Magdalena von Oettingen-Wallerstein, 1473 - 1525-04-22
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1554308> , <https://www.wikidata.org/wiki/Q94768124> ;
+	gen:startDate "1485-02-24" .
+<https://www.wikidata.org/wiki/Q66196189>
+  # Hugo XV./XII., Graf von Montfort-Rothenfels-Wasserburg, d. 1519-04-24b
+  gen:father <https://www.wikidata.org/wiki/Q66196220> ;
+  gen:mother <https://www.wikidata.org/wiki/Q116170736> .
+  # oo Anna von Zweibrücken-Bitsch, d. 1531-03-03 (zähringer.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q66196189> , <https://www.wikidata.org/wiki/Q110152666> ;
+	gen:startDate "1487-02" .
+<#Elisabeth_von_Montfort>
+  # Elisabeth von Montfort, d. 1503-01-13
+  gen:father <https://www.wikidata.org/wiki/Q66196220> ;
+  gen:mother <https://www.wikidata.org/wiki/Q116170736> .
+  # oo 1488 Ludwig I., Graf von Löwenstein, 1463-09-29 - 1523-03-28, https://www.wikidata.org/wiki/Q96844 (wittelsbacher.ttl)
+
+<https://www.wikidata.org/wiki/Q110152669>
+  # Eva von Montfort-Tettnang, 1494-11-09 - 1527-03-26
+  gen:father <https://www.wikidata.org/wiki/Q1554308> ;
+  gen:mother <https://www.wikidata.org/wiki/Q94768124> .
+  # oo 1509-05-12 Christoph, Herr zu Schwarzenberg und Hohenlandsberg, 1488-07-28 - 1538-01-09, https://www.wikidata.org/wiki/Q110152668
+<https://www.wikidata.org/wiki/Q66115865>
+  # Hugo XVI. Graf von Montfort-Rothenfels-Wasserburg, d. 1564-11-21
+  gen:father <https://www.wikidata.org/wiki/Q66196189> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110152666> .
+  # oo Maria Magdalena zu Schwarzenberg und Hohenlandsberg, 1510-03 - 1543
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q66115865> , <https://www.wikidata.org/wiki/Q110152667> .
+
+<https://www.wikidata.org/wiki/Q95190619>
+  # Barbara Gräfin von Montfort-Rothenfels, d. 1592-12-02
+  gen:father <https://www.wikidata.org/wiki/Q66115865> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110152667> .
+  # oo 1556-01-02a/-06b Christoph I. von Fürstenberg, 1534-08-24 - 1559-08-17, https://www.wikidata.org/wiki/Q31988222
+<https://www.wikidata.org/wiki/Q110152665>
+  # Elisabeth Gräfin von Montfort
+  gen:father <https://www.wikidata.org/wiki/Q66115865> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110152667> .
+  # oo 1556-05-11 Johann Jakob, Herr zu Königsegg und Rothenfels, 1508~ - 1567-07-27, https://www.wikidata.org/wiki/Q94855636
 
 
-#<https://www.wikidata.org/wiki/Q55238304>
-  # Jakob, Graf von Montfort in Pfannberg, d. 1572-05-03
+<https://www.wikidata.org/wiki/Q109533673>
+  # Hermann, Graf von Montfort-Pfannberg, d. 1483-02-13
+  gen:father <https://www.wikidata.org/wiki/Q109533675> ; # Hermann, Graf von Montfort-Pfannberg, d. 1434-01-24a/1435-07-24b
+  gen:mother <https://www.wikidata.org/wiki/Q527455> . # Margarethe von Cilli
+  # oo Cecilia von Liechtenstein
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q109533673> , <https://www.wikidata.org/wiki/Q109533687> .
+
+<https://www.wikidata.org/wiki/Q87483681>
+  # Georg II./III. Graf von Montfort-Bregenz-Pfannberg, d. 1544-05-30
+  gen:father <https://www.wikidata.org/wiki/Q109533673> ;
+  gen:mother <https://www.wikidata.org/wiki/Q109533687> .
+  # oo Katharina von Polen, 1503 - 1548 (habsburg.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q87483681> , <https://www.wikidata.org/wiki/Q1699533> .
+
+<https://www.wikidata.org/wiki/Q110503671>
+  # Franziska Gräfin von Montfort, 1514/1515 - 1544-10-16
+  gen:father <https://www.wikidata.org/wiki/Q87483681> ;
+  gen:mother <https://www.wikidata.org/wiki/Q1699533> .
+  # oo 1523-05-07 Gerhard, Graf von Manderscheid-Blankenheim-Gerolstein, 1491-11-01 - 1548-07-30, https://www.wikidata.org/wiki/Q93521848
+<https://www.wikidata.org/wiki/Q55238304>
+  # Jakob, Graf von Montfort in Pfannberg, 1530 - 1572-05-03
+  gen:father <https://www.wikidata.org/wiki/Q87483681> ;
+  gen:mother <https://www.wikidata.org/wiki/Q1699533> .
   # oo Katharina Fugger von Kirchberg, 1532-11-06 - 1585-02-23
   []
     gen:spouse <https://www.wikidata.org/wiki/Q55238304> , <https://www.wikidata.org/wiki/Q55238126> ;
@@ -1359,12 +1450,25 @@
   gen:father <https://www.wikidata.org/wiki/Q50850515> ;
   gen:mother <https://www.wikidata.org/wiki/Q110152858> .
   # oo 1646 Christoph Rudolf Graf Fugger Herr zu Glött, Stettenfels, Bollweiler, 1615-02-08b - 1673-11-05, https://www.wikidata.org/wiki/Q55228839
+<https://www.wikidata.org/wiki/Q66682920>
+  # Johann Anton I., Graf von Montfort-Tettnang, 1635-10-14 - 1708-06-04
+  gen:father <https://www.wikidata.org/wiki/Q50850515> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110152858> .
+  # oo Maria Viktorina Gräfin von Spaur und Flavon, 1651 - 1688-05-16, daughter of Franz Graf zu Spaur und Flavon and Maria Helena Freiin von Tannberg
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q66682920> , <#Maria_Viktorina_von_Spaur-Flavon> ;
+	gen:startDate "1677" .
 
 <#Maria_Anna_von_Montfort>
   # Maria Anna Katharina Gräfin von Montfort, d. 1686-12-23
   gen:father <https://www.wikidata.org/wiki/Q50850509> ;
   gen:mother <königsegg.ttl#Maria_Anna_von_Königsegg> .
   # oo 1679 Anton Eusebius, Graf von Königsegg-Aulendorf, 1639-05-25 - 1692-06-01, https://www.wikidata.org/wiki/Q98703733
+<https://www.wikidata.org/wiki/Q112328253>
+  # Maria Franziska Elisabeth Gräfin von Montfort, 1668-01-13 - 1726-08-21
+  gen:father <https://www.wikidata.org/wiki/Q50850509> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110560680> .
+  # oo 1685-08-05 Johann Christoph Freiherr von Waldburg, Graf zu Zeil, 1660-06-19 - 1720-02-14, https://www.wikidata.org/wiki/Q93521614
 <https://www.wikidata.org/wiki/Q590489>
   # Johann _Anton_ III., Graf von Montfort zu Tettnang, 1670-11-26 - 1733-12-07
   # Herr von Tettnang 1686-09-12 - 1727
@@ -1374,7 +1478,31 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q590489> , <https://www.wikidata.org/wiki/Q108828688> ;
 	gen:startDate "1693-05-16" .
+<https://www.wikidata.org/wiki/Q1696957>
+  # _Johanna Katharina_ Viktoria Gräfin von Montfort, 1678-10-09 - 1759-01-26
+  # Regentin von Hohenzollern-Sigmaringen 1715-10-20 - 1720
+  gen:father <https://www.wikidata.org/wiki/Q66682920> ;
+  gen:mother <#Maria_Viktorina_von_Spaur-Flavon> .
+  # oo 1700-11-22 Meinrad II., Fürst von Hohenzollern-Sigmaringen, 1673-11-01 - 1715-10-20, https://www.wikidata.org/wiki/Q551361
+<#Felizitas_Maria_von_Montfort>
+  # Felizitas Maria Theresia Gräfin von Montfort, 1680-07-11 - 1764-03
+  gen:father <https://www.wikidata.org/wiki/Q66682920> ;
+  gen:mother <#Maria_Viktorina_von_Spaur-Flavon> .
+  # oo 1701-02-06 Karl Georg Franz Anton Graf von Closen Freiherr von Arnstorf, d. 1739-11-28
+<https://www.wikidata.org/wiki/Q95985713>
+  # Sebastian Graf von Montfort-Tettnang, 1684-10-07 - 1728-02-06
+  gen:father <https://www.wikidata.org/wiki/Q66682920> ;
+  gen:mother <#Maria_Viktorina_von_Spaur-Flavon> .
+  # oo Friederike Christiane Maria Prinzessin von Hohenzollern-Sigmaringen, 1688-11-12 - 1745-09-14
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q95985713> , <#Friederike_von_Hohenzollern-Sigmaringen> ;
+	gen:startDate "1718-06-06" .
 
+<#Maria_Theresia_von_Montfort-Tettnang>
+  # Maria Theresia Ernestina Magdalene Gräfin von Montfort-Tettnang, 1698-02-01 - 1751-04-02
+  gen:father <https://www.wikidata.org/wiki/Q590489> ;
+  gen:mother <https://www.wikidata.org/wiki/Q108828688> .
+  # oo 1717-03-10 Anselm Franz Graf von Schönborn-Buchheim, zu Wolfpassing, 1681-06-04 - 1726-07-10, https://www.wikidata.org/wiki/Q62732476
 <https://www.wikidata.org/wiki/Q50828388>
   # Maximilian Joseph _Ernst_, Graf von Montfort in Tettnang, 1700-01-20 - 1759-03-17
   # Herr von Tettnang 1727
@@ -1393,6 +1521,54 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q15453831> , <königsegg.ttl#Maria_Josepha_von_Königsegg-Aulendorf> ;
 	gen:startDate "1752-08-27" .
+
+# ----
+<https://www.wikidata.org/wiki/Q110367079>
+  # Johann 'der Starke', Herr zu Schwarzenberg und Hohenlandsberg, 1463-12-26 - 1528-10-21
+  gen:father <https://www.wikidata.org/wiki/Q116029621> ; # Sigmund, Herr zu Schwarzenberg und Hohenlandsberg
+  gen:mother <https://www.wikidata.org/wiki/Q116029622> . # Eva Schenkin von Erbach
+  # oo Kunigunde Gräfin von Rieneck, 1469-09-28 - 1502-10-28 (loon.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110367079> , <https://www.wikidata.org/wiki/Q110367081> ;
+	gen:startDate "1485-08-24" .
+
+<https://www.wikidata.org/wiki/Q110152668>
+  # Christoph, Herr zu Schwarzenberg und Hohenlandsberg, 1488-07-28 - 1538-01-09
+  gen:father <https://www.wikidata.org/wiki/Q110367079> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110367081> .
+  # oo Eva von Montfort-Tettnang, 1494-11-09 - 1527-03-26
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110152668> , <https://www.wikidata.org/wiki/Q110152669> ;
+	gen:startDate "1509-05-12" .
+
+<https://www.wikidata.org/wiki/Q110152667>
+  # Maria Magdalena zu Schwarzenberg und Hohenlandsberg, 1510-03 - 1543
+  gen:father <https://www.wikidata.org/wiki/Q110152668> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110152669> .
+  # oo Hugo XVI. Graf von Montfort-Rothenfels-Wasserburg, d. 1564-11-21, https://www.wikidata.org/wiki/Q66115865
+
+# ----
+<https://www.wikidata.org/wiki/Q109533687>
+  # Cecilia von Liechtenstein
+  gen:father <https://www.wikidata.org/wiki/Q55193546> ; # Niclas von Liechtenstein
+  gen:mother <https://www.wikidata.org/wiki/Q75395355> . # Anna Herrin und Gräfin von Stubenberg
+  # oo Hermann, Graf von Montfort-Pfannberg, d. 1483-02-13, https://www.wikidata.org/wiki/Q109533673
+
+# ----
+#<#Karl_Georg_von_Closen>
+  # Karl Georg Franz Anton Graf von Closen Freiherr von Arnstorf, d. 1739-11-28
+  # oo Felizitas Maria Gräfin von Montfort, 1680-07-11 - 1764-03
+  []
+    gen:spouse <#Karl_Georg_von_Closen> , <#Felizitas_Maria_von_Montfort> ;
+	gen:startDate "1701-02-06" .
+
+<https://www.wikidata.org/wiki/Q19629930>
+  # Maria _Judith_ Katharina Philippina Gräfin von Closen, 1718-04-30 - 1743-05-08
+  gen:father <#Karl_Georg_von_Closen> ;
+  gen:mother <#Felizitas_Maria_von_Montfort> .
+  # oo 1738-07-05 Joseph Friedrich Ernst, Fürst von Hohenzollern-Sigmaringen, 1702-05-24 - 1769-12-08, https://www.wikidata.org/wiki/Q472221
+
+# ====
 
 # ----
 <https://www.wikidata.org/wiki/Q110370562>
@@ -1486,13 +1662,6 @@
   gen:father <https://www.wikidata.org/wiki/Q55905551> ; # Christoph Franz Graf von Wolckenstein
   gen:mother <https://www.wikidata.org/wiki/Q110503725> . # Marie Gräfin zu Eberstein
   # oo 1621-11-22 Johann Jakob I. Freiherr von Waldburg, Graf von Zeil, 1602-08-02 - 1674-04-18, https://www.wikidata.org/wiki/Q66682828
-
-# ----
-<#Maria_Franziska_von_Montfort>
-  # Maria Franziska Elisabeth Gräfin von Montfort, 1668-01-13 - 1726-08-21
-  gen:father <https://www.wikidata.org/wiki/Q50850509> . # Johann VIII. Graf von Montfort in Tettnang
-  # and Maria Anna Eusebia Gräfin von Königsegg-Aulendorf
-  # oo 1685-08-05 Johann Christoph Freiherr von Waldburg, Graf zu Zeil, 1660-06-19 - 1720-02-14, https://www.wikidata.org/wiki/Q93521614
 
 # ----
 <https://www.wikidata.org/wiki/Q110153205>
