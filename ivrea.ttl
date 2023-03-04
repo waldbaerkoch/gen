@@ -4,10 +4,23 @@
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
+<https://www.wikidata.org/wiki/Q928859>
+  # Otte-Guillaume, comte de Bourgogne, 958 - 1026-09-21/-10-23
+  # comte de Bourgogne 982
+  # comte de Mâcon 982 - 1002
+  gen:father <https://www.wikidata.org/wiki/Q347480> ; # Adalbert II., Markgraf von Ivrea, Mitkönig in Italien
+  gen:mother <https://www.wikidata.org/wiki/Q2159249> ; # Gerberga de Chalon
+  gen:adoptedBy <https://www.wikidata.org/wiki/Q709699> .
+  # oo Ermentrude de Roucy, 959 - 1004-03-05
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q928859> , <https://www.wikidata.org/wiki/Q1913065> ;
+	gen:startDate "981/982" .
+
 <https://www.wikidata.org/wiki/Q723932>
   # Renaud Ier, comte de Bourgogne, 986 - 1057-09-03
-  gen:father <https://www.wikidata.org/wiki/Q928859> ; # Otte-Guillaume de Bourgogne
-  gen:mother <https://www.wikidata.org/wiki/Q1913065> . # Ermentrude de Roucy
+  # comte de Bourgogne 1026-09-21/-10-23
+  gen:father <https://www.wikidata.org/wiki/Q928859> ;
+  gen:mother <https://www.wikidata.org/wiki/Q1913065> .
   # oo Adélaïde de Normandie, 1002~ - 1038~ (normandie.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q723932> , <https://www.wikidata.org/wiki/Q2728803> .
@@ -20,11 +33,12 @@
   # Gerberge de Bourgogne, d. 1020/1023
   gen:father <https://www.wikidata.org/wiki/Q928859> ;
   gen:mother <https://www.wikidata.org/wiki/Q1913065> .
-  # oo Guillaume II, comte de Provence et d’Arles, 982 - 1018-03-04, https://www.wikidata.org/wiki/Q1582803 (capet.ttl)
+  # oo Guillaume II, comte de Provence et d’Arles, 982 - 1018-03-04, https://www.wikidata.org/wiki/Q1582803 (bosoniden.ttl)
 
 <https://www.wikidata.org/wiki/Q519641>
   # Guillaume Ier, comte de Bourgogne, 1020 - 1087-11-12
-  # comte de Bourgogne et Mâcon
+  # comte de Bourgogne 1057-09-03
+  # comte de Mâcon 1078
   gen:father <https://www.wikidata.org/wiki/Q723932> ;
   gen:mother <https://www.wikidata.org/wiki/Q2728803> .
   # oo Étiennette de Bourgogne, 1035~ - 1088-10-19a
@@ -36,8 +50,17 @@
   gen:father <https://www.wikidata.org/wiki/Q519641> ;
   gen:mother <https://www.wikidata.org/wiki/Q2878505> .
   # oo 1065 Thierry Ier, comte de Montbéliard, 1045~ - 1103-01-02, https://www.wikidata.org/wiki/Q558299
+<https://www.wikidata.org/wiki/Q145112>
+  # Renaud II, comte de Bourgogne, 1056-12 - 1097
+  # comte de Bourgogne et de Mâcon 1087-11-12
+  gen:father <https://www.wikidata.org/wiki/Q519641> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2878505> .
+  # oo Regina Gräfin von Oltingen
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q145112> , <#Regina_von_Oltingen> .
 <https://www.wikidata.org/wiki/Q1339109>
-  # Étienne Ier, comte de Bourgogne, 1065 - 1102-05-27
+  # Étienne Ier de Bourgogne, comte de Mâcon, 1065 - 1102-05-27
+  # comte de Mâcon et de Vienne 1085
   gen:father <https://www.wikidata.org/wiki/Q519641> ;
   gen:mother <https://www.wikidata.org/wiki/Q2878505> .
   # oo Béatrice de Lorraine, 1044 - 1116~ (lothringen.ttl)
@@ -68,9 +91,18 @@
   gen:mother <https://www.wikidata.org/wiki/Q2878505> .
   # oo 1121 Godfried I van Leuven, 1063 - 1139-01-25, https://www.wikidata.org/wiki/Q126237 (reginare.ttl)
 
+<https://www.wikidata.org/wiki/Q2065822>
+  # Guillaume II, comte de Bourgogne, 1075 - 1125
+  # comte de Bourgogne et de Mâcon 1097
+  gen:father <https://www.wikidata.org/wiki/Q145112> ;
+  gen:mother <#Regina_von_Oltingen> .
+  # oo Agnes von Zähringen
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2065822> , <#Agnes_von_Zähringen> .
 <https://www.wikidata.org/wiki/Q144473>
   # Renaud III de Bourgogne, comte de Bourgogne, 1093~ - 1148
-  # comte de Mâcon, Vienne et Bourgogne
+  # comte de Mâcon et de Vienne 1102-05-27
+  # comte de Bourgogne 1127-03-01
   gen:father <https://www.wikidata.org/wiki/Q1339109> ;
   gen:mother <https://www.wikidata.org/wiki/Q22328248> .
   # oo Agathe de Lorraine, d. 1147 (lothringen.ttl)
@@ -78,6 +110,8 @@
     gen:spouse <https://www.wikidata.org/wiki/Q144473> , <https://www.wikidata.org/wiki/Q4691505> .
 <https://www.wikidata.org/wiki/Q667122>
   # Guillaume III, comte de Mâcon et de Vienne, 1095 - 1155-09-27
+  # comte de Mâcon et de Vienne 1102-05-27
+  # comte d’Auxonne 1127
   gen:father <https://www.wikidata.org/wiki/Q1339109> ;
   gen:mother <https://www.wikidata.org/wiki/Q22328248> .
   # oo Adala/Poncette de Trèves, b. 1090~, daughter of Theobald de Trèves
@@ -89,35 +123,77 @@
   gen:father <https://www.wikidata.org/wiki/Q562630> ;
   gen:mother <https://www.wikidata.org/wiki/Q128701> .
 
+<https://www.wikidata.org/wiki/Q2065832>
+  # Guillaume III, comte de Bourgogne, 1110 - 1127-03-01
+  # comte de Bourgogne 1125
+  gen:father <https://www.wikidata.org/wiki/Q2065822> ;
+  gen:mother <#Agnes_von_Zähringen> .
 <https://www.wikidata.org/wiki/Q234219>
   # Béatrice Ire, comtesse de Bourgogne, 1143 - 1184-11-15
+  # comtesse de Bourgogne 1148
   gen:father <https://www.wikidata.org/wiki/Q144473> ;
   gen:mother <https://www.wikidata.org/wiki/Q4691505> .
   # oo 1156-06-17 Friedrich I. Barbarossa, 1122 - 1190-06-10, https://www.wikidata.org/wiki/Q79789
+<https://www.wikidata.org/wiki/Q1944387>
+  # Géraud Ier, comte de Mâcon, 1125 - 1184-09-15
+  # comte de Mâcon et de Vienne 1155-09-27
+  gen:father <https://www.wikidata.org/wiki/Q667122> ;
+  gen:mother <https://www.wikidata.org/wiki/Q61196696> .
+  # oo Maurette de Salins, d. 1218a, daughter of Gaucher III de Salins
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1944387> , <https://www.wikidata.org/wiki/Q61865662> ;
+	gen:startDate "1160~" .
 <https://www.wikidata.org/wiki/Q11920998>
   # Étienne I d’Auxonne, comte d’Auxonne, d. 1173
+  # comte d’Auxonne 1155-09-27
   gen:father <https://www.wikidata.org/wiki/Q667122> ;
   gen:mother <https://www.wikidata.org/wiki/Q61196696> .
   # oo Judith de Lorraine, 1140 - 1173 (lothringen.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q11920998> , <https://www.wikidata.org/wiki/Q50825950> .
 
+<https://www.wikidata.org/wiki/Q3119950>
+  # Guillaume IV, comte de Mâcon, 1155 - 1224
+  # comte de Mâcon et de Vienne 1184-09-15
+  gen:father <https://www.wikidata.org/wiki/Q1944387> ;
+  gen:mother <https://www.wikidata.org/wiki/Q61865662> .
+  # oo Scholastique de Champagne, 1170~ - 1219 (blois.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3119950> , <https://www.wikidata.org/wiki/Q7185768> ;
+	gen:startDate "1183~" .
+<https://www.wikidata.org/wiki/Q2929516>
+  # Béatrice de Viennois, 1160 - 1230
+  gen:father <https://www.wikidata.org/wiki/Q1944387> ;
+  gen:mother <https://www.wikidata.org/wiki/Q61865662> .
+  # oo 1177 Humbert III, comte de Savoie, 1136-08-04 - 1189-03-04, https://www.wikidata.org/wiki/Q664561
 <https://www.wikidata.org/wiki/Q2343373>
   # Étienne II d’Auxonne, comte d’Auxonne, 1172 - 1241-03-16
+  # comte d’Auxonne 1173
   gen:father <https://www.wikidata.org/wiki/Q11920998> ;
   gen:mother <https://www.wikidata.org/wiki/Q50825950> .
   # oo Béatrice de Chalon, comtesse de Chalon-sur-Saône, 1174 - 1227-04-07
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q2343373> , <https://www.wikidata.org/wiki/Q2182635> .
-<#Agnès_d’Auxonne>
-  # Agnès d’Auxonne
+    gen:spouse <https://www.wikidata.org/wiki/Q2343373> , <https://www.wikidata.org/wiki/Q2182635> ;
+	gen:startDate "1186" .
+<https://www.wikidata.org/wiki/Q112647556>
+  # Agnès d’Auxonne, d. 1223a
   gen:father <https://www.wikidata.org/wiki/Q11920998> ;
   gen:mother <https://www.wikidata.org/wiki/Q50825950> .
-  # oo Richard III de Montfaucon, comte de Montbéliard, d. 1227-06~, https://www.wikidata.org/wiki/Q2218210
+  # oo 1205~ Richard III de Montfaucon, comte de Montbéliard, d. 1227-06~, https://www.wikidata.org/wiki/Q2218210
 
+<https://www.wikidata.org/wiki/Q3124450>
+  # Géraud II, comte de Mâcon, d. 1224
+  # comte de Mâcon et de Vienne 1224
+  gen:father <https://www.wikidata.org/wiki/Q3119950> ;
+  gen:mother <https://www.wikidata.org/wiki/Q7185768> .
+  # oo Alix Guigone de Forez, 1190~ - 1240~ (capet.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3124450> , <https://www.wikidata.org/wiki/Q96245284> ;
+	gen:startDate "1212a" .
 <https://www.wikidata.org/wiki/Q943867>
   # Jean Ier, comte de Chalon, 1190 - 1267-09-30
-  # comte de Chalon-sur-Saône et Auxonne
+  # comte de Chalon-sur-Saône 1213 - 1237-06-15
+  # comte d’Auxonne 1241-03-16
   gen:father <https://www.wikidata.org/wiki/Q2343373> ;
   gen:mother <https://www.wikidata.org/wiki/Q2182635> .
   # oo Mahaut de Bourgogne, 1190 - 1242 (capet.ttl)
@@ -131,12 +207,25 @@
   # oo Laurette de Commercy, d. 1275-10-03
   []
     gen:spouse <https://www.wikidata.org/wiki/Q943867> , <https://www.wikidata.org/wiki/Q101466938> .
+<https://www.wikidata.org/wiki/Q2929485>
+  # Beatrice d’Auxonne, 1195 - 1261
+  gen:father <https://www.wikidata.org/wiki/Q2343373> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2182635> .
+  # oo 1210~ Aymon II, baron de Faucigny, d. 1253, https://www.wikidata.org/wiki/Q16034220 (savoyen.ttl)
 
+<https://www.wikidata.org/wiki/Q670096>
+  # Alix, comtesse de Mâcon, d. 1260
+  # comtesse de Mâcon 1224 - 1239
+  # comtesse de Vienne 1224 - 1240
+  gen:father <https://www.wikidata.org/wiki/Q3124450> ;
+  gen:mother <https://www.wikidata.org/wiki/Q96245284> .
+  # oo Jean de Braine, 1198 - 1239-11, https://www.wikidata.org/wiki/Q937887 (capet.ttl)
 <https://www.wikidata.org/wiki/Q1635933>
   # Hugues de Chalon, 1220 - 1266-11-12
+  # comte de Bourgogne (iure uxoris) 1248-06-19
   gen:father <https://www.wikidata.org/wiki/Q943867> ;
   gen:mother <https://www.wikidata.org/wiki/Q76065608> .
-  # oo Adelheid von Andechs-Meran, comtesse de Bourgogne, 1218 - 1279-03-08
+  # oo Adelheid von Andechs-Meran, Pfalzgräfin von Burgund, 1218 - 1279-03-08
   []
     gen:spouse <https://www.wikidata.org/wiki/Q1635933> , <https://www.wikidata.org/wiki/Q598906> ;
 	gen:startDate "1236-11-01" .
@@ -161,6 +250,7 @@
 
 <https://www.wikidata.org/wiki/Q1494018>
   # Othon IV, comte palatin de Bourgogne, 1248 - 1303-03-17
+  # comte palatin de Bourgogne 1279-03-08
   gen:father <https://www.wikidata.org/wiki/Q1635933> ;
   gen:mother <https://www.wikidata.org/wiki/Q598906> .
   # oo Mahaut, comtesse d’Artois, 1269~ - 1329-10-27 (capet.ttl)
@@ -183,8 +273,8 @@
   # oo 1274-05 Thomas III de Savoie, seigneur de Piémont, 1248 - 1282-05-16, https://www.wikidata.org/wiki/Q3525226 (savoyen.ttl)
 
 <https://www.wikidata.org/wiki/Q231760>
-  # Jeanne de Bourgogne, comtesse de Bourgogne, 1288~ - 1330-01-21
-  # comtesse de Bourgogne 1303-03-17
+  # Jeanne de Bourgogne, comtesse de Bourgogne et d’Artois, 1288~ - 1330-01-21
+  # comtesse de Bourgogne 1315
   # comtesse d’Artois 1329-10-27
   gen:father <https://www.wikidata.org/wiki/Q1494018> ;
   gen:mother <https://www.wikidata.org/wiki/Q1166728> .
@@ -194,6 +284,11 @@
   gen:father <https://www.wikidata.org/wiki/Q1494018> ;
   gen:mother <https://www.wikidata.org/wiki/Q1166728> .
   # oo 1308-02-10 Charles IV, roi de France, 1294-06-18 - 1328-02-01, https://www.wikidata.org/wiki/Q174964 (capet.ttl)
+<https://www.wikidata.org/wiki/Q528666>
+  # Robert, comte de Bourgogne, 1300 - 1315
+  # comte de Bourgogne 1303-03-17
+  gen:father <https://www.wikidata.org/wiki/Q1494018> ;
+  gen:mother <https://www.wikidata.org/wiki/Q1166728> .
 <https://www.wikidata.org/wiki/Q2008585>
   # Jeanne de Bourgogne, d. 1349
   gen:father <https://www.wikidata.org/wiki/Q2345626> ;
@@ -1079,6 +1174,13 @@
 
 
 # ----
+<https://www.wikidata.org/wiki/Q1913065>
+  # Ermentrude de Roucy, 959 - 1004-03-05
+  gen:father <https://www.wikidata.org/wiki/Q1857117> ; # Renaud de Roucy
+  gen:mother <https://www.wikidata.org/wiki/Q48925645> . # Alberade de Lorraine
+  # oo 981/982 Otte-Guillaume, comte de Bourgogne, 958 - 1026-09-21/-10-23, https://www.wikidata.org/wiki/Q928859
+
+# ----
 <https://www.wikidata.org/wiki/Q2878505>
   # Étiennette de Bourgogne, 1035~ - 1088-10-19a
   # gen:father <https://www.wikidata.org/wiki/Q2344475> ; # Bernard II, Count of Bigorre
@@ -1093,6 +1195,13 @@
   # gen:father <https://www.wikidata.org/wiki/Q347275> ; # Adalbert, Duke of Lorraine
   gen:mother <https://www.wikidata.org/wiki/Q75587940> .
   # oo Guillaume VII, duc d’Aquitaine, 1023 - 1058, https://www.wikidata.org/wiki/Q385211 (ramnulfiden.ttl)
+
+# ----
+<#Agnes_von_Zähringen>
+  # Agnes von Zähringen
+  gen:father <https://www.wikidata.org/wiki/Q650325> ; # Berthold II von Zähringen, Herzog von Schwaben
+  gen:mother <https://www.wikidata.org/wiki/Q394777> . # Agnes von Rheinfelden
+  # oo Guillaume II, comte de Bourgogne, 1075 - 1125, https://www.wikidata.org/wiki/Q2065822
 
 # ====
 # Scarpone
@@ -1364,9 +1473,10 @@
   # Richard III de Montfaucon, comte de Montbéliard, d. 1227-06~
   gen:father <https://www.wikidata.org/wiki/Q451904> ;
   gen:mother <https://www.wikidata.org/wiki/Q61272245> .
-  # oo Agnès d’Auxonne
+  # oo Agnès d’Auxonne, d. 1223a
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q2218210> , <#Agnès_d’Auxonne> .
+    gen:spouse <https://www.wikidata.org/wiki/Q2218210> , <https://www.wikidata.org/wiki/Q112647556> ;
+	gen:startDate "1205~" .
 
 <https://www.wikidata.org/wiki/Q58622764>
   # Eschiva de Montfaucon, 1206a/1212b - 1239-04~
@@ -1376,14 +1486,14 @@
 <https://www.wikidata.org/wiki/Q101469667>
   # Thierry III, comte de Montbéliard, 1205 - 1283
   gen:father <https://www.wikidata.org/wiki/Q2218210> ;
-  gen:mother <#Agnès_d’Auxonne> .
+  gen:mother <https://www.wikidata.org/wiki/Q112647556> .
   # oo Alix von Pfirt, Dame de Belfort, d. 1268~, daughter of Friedrich II. von Pfirt
   []
     gen:spouse <https://www.wikidata.org/wiki/Q101469667> , <https://www.wikidata.org/wiki/Q101469671> .
 <https://www.wikidata.org/wiki/Q2583563>
   # Amédée III de Montfaucon, d. 1280-01-15
   gen:father <https://www.wikidata.org/wiki/Q2218210> ;
-  gen:mother <#Agnès_d’Auxonne> .
+  gen:mother <https://www.wikidata.org/wiki/Q112647556> .
   # oo Mathilde, Gräfin von Saarbrücken, d. 1276-08-30
   []
     gen:spouse <https://www.wikidata.org/wiki/Q2583563> , <https://www.wikidata.org/wiki/Q101466995> ;
@@ -1489,6 +1599,7 @@
   # Herzog von Schwaben (III.) 1147-04-06 - 1152-03-04
   # römisch-deutscher König 1152-03-04
   # römisch-deutscher Kaiser 1155-06-18
+  # Graf von Burgund (iure uxoris 1256), 1184-11-15
   gen:father <https://www.wikidata.org/wiki/Q552414> ; # Frederick II, Duke of Swabia
   gen:mother <https://www.wikidata.org/wiki/Q2039212> . # Judith of Bavaria, Duchess of Swabia
   # oo Béatrice Ire, comtesse de Bourgogne, 1143 - 1184-11-15
@@ -1518,7 +1629,8 @@
     gen:spouse <https://www.wikidata.org/wiki/Q150953> , <https://www.wikidata.org/wiki/Q170335> ;
 	gen:startDate "1186-01-27" .
 <https://www.wikidata.org/wiki/Q544114>
-  # Otto I. von Hohenstaufen, Pfalzgraf von Burgund, 1170 - 1200-01-13
+  # Otto I. von Hohenstaufen, Graf von Burgund, 1170 - 1200-01-13
+  # Graf von Burgund 1190-06-10
   gen:father <https://www.wikidata.org/wiki/Q79789> ;
   gen:mother <https://www.wikidata.org/wiki/Q234219> .
   # oo Marguerite, comtesse de Blois, 1164 - 1230-07-12 (blois.ttl)
@@ -1556,7 +1668,8 @@
     gen:spouse <https://www.wikidata.org/wiki/Q130221> , <https://www.wikidata.org/wiki/Q237858> ;
 	gen:startDate "1235-07-20" .
 <https://www.wikidata.org/wiki/Q1970878>
-  # Béatrice II, comtesse de Bourgogne, 1191 - 1231-05-07
+  # Beatrix II., Gräfin von Burgund, 1191 - 1231-05-07
+  # Gräfin von Burgund 1200-01-13/1205
   gen:father <https://www.wikidata.org/wiki/Q544114> ;
   gen:mother <https://www.wikidata.org/wiki/Q288946> .
   # oo 1208-06-21 Otto I, Herzog von Meranien, 1180 - 1234-05-07, https://www.wikidata.org/wiki/Q63175
@@ -1654,7 +1767,7 @@
 
 # ----
 <https://www.wikidata.org/wiki/Q61454>
-  # Berthold IV., Herzog von Meran, 1153 - 1204-08-12
+  # Berthold IV., Herzog von Meranien, 1153 - 1204-08-12
   gen:father <https://www.wikidata.org/wiki/Q68632> ; # Berthold I. von Istrien
   gen:mother <https://www.wikidata.org/wiki/Q80909567> . # Hedwig von Wittelsbach
   # oo Agnes von Rochlitz, 1152 - 1195-03-25 (piasten.ttl)
@@ -1679,10 +1792,12 @@
   # oo 1196-06-08 Philippe II, roi de France, 1165-08-21 - 1223-07-14, https://www.wikidata.org/wiki/Q34428 (capet.ttl)
 <https://www.wikidata.org/wiki/Q63175>
   # Otto I, Herzog von Meranien, 1180 - 1234-05-07
-  # Herzog von Meranien, Pfalzgraf von Burgund, Markgraf von Istrien
+  # Herzog von Meranien 1204-08-12
+  # Markgraf von Istrien 1228 - 1230
+  # Pfalzgraf von Burgund 1211 (iure uxoris), 1231-05-07
   gen:father <https://www.wikidata.org/wiki/Q61454> ;
   gen:mother <https://www.wikidata.org/wiki/Q3488841> .
-  # oo Béatrice II, comtesse de Bourgogne, 1191 - 1231-05-07
+  # oo Beatrix II., comtesse de Bourgogne, 1191 - 1231-05-07
   []
     gen:spouse <https://www.wikidata.org/wiki/Q63175> , <https://www.wikidata.org/wiki/Q1970878> ;
 	gen:startDate "1208-06-21" .
@@ -1692,16 +1807,23 @@
   gen:mother <https://www.wikidata.org/wiki/Q3488841> .
   # oo Andreas II., König von Ungarn, 1175 - 1235-10-26, https://www.wikidata.org/wiki/Q271104 (capet.ttl)
 
+<https://www.wikidata.org/wiki/Q1386401>
+  # Otto II., Herzog von Meranien, Pfalzgraf von Burgund, 1208 - 1248-06-19
+  # Herzog von Meranien, Pfalzgraf von Burgund (III.) 1234-05-07
+  gen:father <https://www.wikidata.org/wiki/Q63175> ;
+  gen:mother <https://www.wikidata.org/wiki/Q1970878> .
 <https://www.wikidata.org/wiki/Q74788>
   # Agnes von Andechs-Meran, 1215~ - 1263-01-07
   gen:father <https://www.wikidata.org/wiki/Q63175> ;
   gen:mother <https://www.wikidata.org/wiki/Q1970878> .
   # oo 1229 (div 1240/1243) Friedrich II., Herzog von Österreich, 1211-04-25 - 1246-06-15, https://www.wikidata.org/wiki/Q280338 (reginare.ttl)
 <https://www.wikidata.org/wiki/Q598906>
-  # Adelheid von Andechs-Meran, comtesse de Bourgogne, 1218 - 1279-03-08
+  # Adelheid von Andechs-Meran, Pfalzgräfin von Burgund, 1218 - 1279-03-08
+  # Pfalzgräfin von Burgund 1248-06-19
   gen:father <https://www.wikidata.org/wiki/Q63175> ;
   gen:mother <https://www.wikidata.org/wiki/Q1970878> .
   # oo 1236-11-01 Hugues de Chalon, 1220 - 1266-11-12, https://www.wikidata.org/wiki/Q1635933
+  # oo 1267-06-03 Philippe Ier, comte de Savoie, 1207 - 1285-08-15, https://www.wikidata.org/wiki/Q548285 (savoyen.ttl)
 <https://www.wikidata.org/wiki/Q55445677>
   # Margarethe von Andechs-Meran, 1220 - 1271-10-15
   gen:father <https://www.wikidata.org/wiki/Q63175> ;
@@ -1796,9 +1918,9 @@
 # ----
 <https://www.wikidata.org/wiki/Q2182635>
   # Béatrice de Chalon, comtesse de Chalon-sur-Saône, 1174 - 1227-04-07
-  gen:father <https://www.wikidata.org/wiki/Q1608007> ; # William II, Count of Chalon
+  gen:father <https://www.wikidata.org/wiki/Q1608007> ; # Guillaume II, comte de Chalon-sur-Saône
   gen:mother <https://www.wikidata.org/wiki/Q61196718> . # Beatrice Schwäbische
-  # oo Étienne II d’Auxonne, comte d’Auxonne, 1172 - 1241-03-16, https://www.wikidata.org/wiki/Q2343373
+  # oo 1186 Étienne II d’Auxonne, comte d’Auxonne, 1172 - 1241-03-16, https://www.wikidata.org/wiki/Q2343373
 
 # ----
 <https://www.wikidata.org/wiki/Q2287570>
