@@ -4,10 +4,23 @@
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
+<https://www.wikidata.org/wiki/Q451920>
+  # Amédée II de Savoie, comte de Maurienne, 1046~ - 1080-01-26
+  gen:father <https://www.wikidata.org/wiki/Q451377> ; # Otto, comte de Savoie
+  gen:mother <https://www.wikidata.org/wiki/Q275998> . # Adelaide of Susa
+  # oo Jeanne de Genève, d. 1095
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q451920> , <https://www.wikidata.org/wiki/Q623233> .
+<https://www.wikidata.org/wiki/Q2825471>
+  # Adélaïde de Savoie, 1052 - 1079
+  gen:father <https://www.wikidata.org/wiki/Q451377> ;
+  gen:mother <https://www.wikidata.org/wiki/Q275998> .
+  # oo 1062 Rudolf von Rheinfelden, Herzog von Schwaben, 1025~ - 1080-10-15/-16, https://www.wikidata.org/wiki/Q438435
+
 <https://www.wikidata.org/wiki/Q553289>
   # Humbert II, comte de Savoie, 1065a - 1103-10-14
-  gen:father <https://www.wikidata.org/wiki/Q451920> ; # Amadeus II, Count of Savoy
-  gen:mother <https://www.wikidata.org/wiki/Q623233> . # Joan of Geneva
+  gen:father <https://www.wikidata.org/wiki/Q451920> ;
+  gen:mother <https://www.wikidata.org/wiki/Q623233> .
   # oo Gisèle de Bourgogne, 1075~ - 1133~ (ivrea.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q553289> , <https://www.wikidata.org/wiki/Q623188> ;
@@ -1169,18 +1182,41 @@
 
 
 # ----
-<https://www.wikidata.org/wiki/Q338638>
-  # Mahaut d’Albon, 1112 - 1148
-  gen:father <https://www.wikidata.org/wiki/Q3119515> ; # Guigues III d’Albon
-  gen:mother <https://www.wikidata.org/wiki/Q76045238> . # Mathilde de Hauteville
-  # oo 1123 Amédée III, comte de Savoie, 1095 - 1148, https://www.wikidata.org/wiki/Q451940
+<https://www.wikidata.org/wiki/Q623233>
+  # Jeanne de Genève, d. 1095
+  gen:father <https://www.wikidata.org/wiki/Q650148> ; # Gérold, comte de Genève
+  gen:mother <https://www.wikidata.org/wiki/Q100326691> . # Gisele
+  # oo Amédée II de Savoie, comte de Maurienne, 1046~ - 1080-01-26, https://www.wikidata.org/wiki/Q451920
 
-# ----
 <https://www.wikidata.org/wiki/Q2359709>
   # Marguerite de Genève, 1180 - 1252
   gen:father <https://www.wikidata.org/wiki/Q2400853> ; # William I of Geneva
   gen:mother <https://www.wikidata.org/wiki/Q61865650> . # Beatrix
   # oo 1196-05 Thomas Ier, comte de Savoie, 1178-05-27 - 1233-03-01, https://www.wikidata.org/wiki/Q548051
+
+# ----
+<https://www.wikidata.org/wiki/Q438435>
+  # Rudolf von Rheinfelden, Herzog von Schwaben, römisch-deutscher Gegenkönig, 1025~ - 1080-10-15/-16
+  # Herzog von Schwaben 1057 - 1077
+  # römisch-deutscher Gegenkönig 1077-03-15
+  gen:father <https://www.wikidata.org/wiki/Q75424105> . # Kuno Graf von Rheinfelden
+  # oo Adélaïde de Savoie, 1052 - 1079
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q438435> , <https://www.wikidata.org/wiki/Q2825471> ;
+	gen:startDate "1062" .
+
+<https://www.wikidata.org/wiki/Q354918>
+  # Adelheid von Rheinfelden, 1065 - 1090-05
+  gen:father <https://www.wikidata.org/wiki/Q438435> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2825471> .
+  # oo 1078 Ladislaus I., König von Ungarn, 1040-06-27 - 1095-07-29, https://www.wikidata.org/wiki/Q26486 (arpaden.ttl)
+
+# ----
+<https://www.wikidata.org/wiki/Q338638>
+  # Mahaut d’Albon, 1112 - 1148
+  gen:father <https://www.wikidata.org/wiki/Q3119515> ; # Guigues III d’Albon
+  gen:mother <https://www.wikidata.org/wiki/Q76045238> . # Mathilde de Hauteville
+  # oo 1123 Amédée III, comte de Savoie, 1095 - 1148, https://www.wikidata.org/wiki/Q451940
 
 # ----
 <https://www.wikidata.org/wiki/Q3009819>
@@ -1303,7 +1339,7 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q312369> , <https://www.wikidata.org/wiki/Q51885885> ;
 	gen:startDate "1170" .
-  # oo Margarethe von Ungarn, 1175 - 1229a (capet.ttl)
+  # oo Margarethe von Ungarn, 1175 - 1229a (arpaden.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q312369> , <https://www.wikidata.org/wiki/Q774723> ;
 	gen:startDate "1204" .
