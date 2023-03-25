@@ -219,7 +219,7 @@
   gen:mother <https://www.wikidata.org/wiki/Q75292437> .
   # oo Walpurgis Anna von Daun Gräfin von Falkenstein, 1580-11-13 - 1618-06-29
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q698917> , <nassau.ttl#Walpurgis_von_Daun-Falkenstein> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q698917> , <leiningen.ttl#Walpurgis_von_Daun-Falkenstein> ;
 	gen:startDate "1612-05-26" .
 
 <https://www.wikidata.org/wiki/Q89317>
@@ -1140,7 +1140,7 @@
   # duc de Bouillon, seigneur de Sedan et de Fleuranges
   gen:father <https://www.wikidata.org/wiki/Q2157659> ;
   gen:mother <https://www.wikidata.org/wiki/Q66088338> .
-  # oo Guillemette de Sarrebruck, comtesse de Braine, 1490~ - 1571
+  # oo Guillemette de Sarrebruck, comtesse de Braine, 1490~ - 1571 (leiningen.ttl)
   []
     gen:startDate <https://www.wikidata.org/wiki/Q569959> , <https://www.wikidata.org/wiki/Q15967051> ;
 	gen:startDate "1510-04-01" .
@@ -1254,6 +1254,13 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q76261802> , <https://www.wikidata.org/wiki/Q76261803> ;
 	gen:startDate "1499-11-26" .
+<#Guillaume_de_la_Marck>
+  # Guillaume « le jeune » de la Marck, seigneur d’Aigremont, d. 1516-05-20
+  gen:father <https://www.wikidata.org/wiki/Q448016> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76165620> .
+  # oo Renée du Fou, Dame de Montbazon (see rohan.ttl)
+  []
+    gen:spouse <#Guillaume_de_la_Marck> , <https://www.wikidata.org/wiki/Q110521327> .
 
 <https://www.wikidata.org/wiki/Q76261801>
   # Johan II von Arenberg Heer van Lummen, 1510 - 1552
@@ -1263,6 +1270,11 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q76261801> , <https://www.wikidata.org/wiki/Q76261800> ;
 	gen:startDate "1534-08-18" .
+<#Renée_de_la_Marck>
+  # Renée de la Marck
+  gen:father <#Guillaume_de_la_Marck> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110521327> .
+  # oo 1520-07-18/-27 Amé III de Sarrebruck-Commercy, comte de Braine, 1495-10-20 - 1525-11-19, https://www.wikidata.org/wiki/Q2844609 (leiningen.ttl)
 
 <https://www.wikidata.org/wiki/Q110314132>
   # Magdalena von der Marck, 1535-08-17 - 1591-09-13
@@ -2136,7 +2148,7 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q105829> , <https://www.wikidata.org/wiki/Q75290229> ;
 	gen:startDate "1536" .
-  # oo Amöna Gräfin von Daun-Falkenstein, 1520~ - 1582~ (nassau.ttl)
+  # oo Amöna Gräfin von Daun-Falkenstein, 1520~ - 1582~ (leiningen.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q105829> , <https://www.wikidata.org/wiki/Q110304428> ;
 	gen:startDate "1542-11-20" .
@@ -2448,33 +2460,6 @@
   gen:father <https://www.wikidata.org/wiki/Q31192200> . # Eberhard VII. von Kirchberg
   # and Kunigunde von Wertheim
   # oo 1476a Évrard III de La Marck, seigneur d’Arenberg, 1435~ - 1496-06-19, https://www.wikidata.org/wiki/Q3592902
-
-# ----
-<https://www.wikidata.org/wiki/Q15967051>
-  # Guillemette de Sarrebruck, comtesse de Braine, 1490~ - 1571
-  gen:father <https://www.wikidata.org/wiki/Q2388017> ; # Robert II de Sarrebruck-Commercy
-  gen:mother <https://www.wikidata.org/wiki/Q102822792> . # Marie d’Amboise
-  # oo 1510-04-01 Robert III de La Marck, duc de Bouillon, 1491 - 1536-12-21, https://www.wikidata.org/wiki/Q569959
-<https://www.wikidata.org/wiki/Q3381041>
-  # Philippine de Sarrebruck-Commercy, 1490~ - 1551-06-08
-  gen:father <https://www.wikidata.org/wiki/Q2388017> ;
-  gen:mother <https://www.wikidata.org/wiki/Q102822792> .
-  # oo 1504 Charles de Silly, Seigneur de La Roche-Guyon, d. 1516-08-04, https://www.wikidata.org/wiki/Q105815798
-# ----
-#<https://www.wikidata.org/wiki/Q105815798>
-  # Charles de Silly, Seigneur de La Roche-Guyon, d. 1516-08-04
-  # son of Bertin de Silly, Bailli de Cotentin
-  # and Marie Roche-Guyon
-  # oo Philippine de Sarrebruck-Commercy, 1490~ - 1551-06-08
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q105815798> , <https://www.wikidata.org/wiki/Q3381041> ;
-	gen:startDate "1504" .
-
-<https://www.wikidata.org/wiki/Q105815727>
-  # Catherine de Silly, Comtesse de Rochefort, Dame de La Roche-Guyon
-  gen:father <https://www.wikidata.org/wiki/Q105815798> ;
-  gen:mother <https://www.wikidata.org/wiki/Q3381041> .
-  # oo 1536-03-25 François de Rohan-Gié, seigneur de Gié, Vicomte de Fronsac, etc, d. 1559-12-29, https://www.wikidata.org/wiki/Q15967085
 
 # ----
 <https://www.wikidata.org/wiki/Q102862328>
