@@ -4,9 +4,11 @@
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
-#<https://www.wikidata.org/wiki/Q1697752>
-  # Johann II. Truchsess von Waldburg zu Trauchburg
-  # oo Ursula von Abensberg, 1375-12-16b - 1422-01-30, daughter of Ulrich IV. von Abensberg and Agnes von Liechtenstein
+<https://www.wikidata.org/wiki/Q1697752>
+  # Johann II. Truchsess von Waldburg zu Trauchburg, 1344 - 1424-03-22/-31
+  gen:father <https://www.wikidata.org/wiki/Q61140434> ; # Eberhard III von Waldburg
+  gen:mother <https://www.wikidata.org/wiki/Q110153929> . # Agnes von Teck
+  # oo Ursula von Abensberg, 1375-12-16b - 1422-01-30
   []
     gen:spouse <https://www.wikidata.org/wiki/Q1697752> , <https://www.wikidata.org/wiki/Q110153930> .
 
@@ -26,6 +28,12 @@
   # Georg I. Truchsess von Waldburg-Zeil, d. 1467-03-10
   gen:father <https://www.wikidata.org/wiki/Q1697752> ;
   gen:mother <https://www.wikidata.org/wiki/Q110153930> .
+<https://www.wikidata.org/wiki/Q116117404>
+  # Agnes von Waldburg, d. 1460-01-10
+  gen:father <https://www.wikidata.org/wiki/Q1697752> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110153930> .
+  # oo 1417-11-17b Johann I von Heideck, Herr zu Heideck, d. 1426-03-10a, https://www.wikidata.org/wiki/Q116117365
+  # oo 1428-09-08 Alram II., Graf von Ortenburg, d. 1460, https://www.wikidata.org/wiki/Q2651362 (sponheim.ttl)
 
 <https://www.wikidata.org/wiki/Q55740557>
   # Eberhard II., Truchsess von Waldburg, Graf von Sonnenberg, 1440~ - 1483-04-22
@@ -1314,6 +1322,13 @@
 	gen:startDate "1858-08-05" .
 
 
+# ----
+<https://www.wikidata.org/wiki/Q110153930>
+  # Ursula von Abensberg, 1375-12-16b - 1422-01-30
+  gen:father <https://www.wikidata.org/wiki/Q110153931> ; # Ulrich IV. von Abensberg
+  gen:mother <https://www.wikidata.org/wiki/Q110153933> . # Agnes von Liechtenstein
+  # oo Johann II. Truchsess von Waldburg zu Trauchburg, 1344 - 1424-03-22/-31, https://www.wikidata.org/wiki/Q1697752
+
 # ====
 <https://www.wikidata.org/wiki/Q70450318>
   # Ulrich IV., Graf von Montfort-Tettnang, 1440~ - 1495-10-29
@@ -1574,6 +1589,16 @@
   # oo 1738-07-05 Joseph Friedrich Ernst, Fürst von Hohenzollern-Sigmaringen, 1702-05-24 - 1769-12-08, https://www.wikidata.org/wiki/Q472221
 
 # ====
+
+# ----
+<https://www.wikidata.org/wiki/Q116117365>
+  # Johann I. von Heideck, Herr zu Heideck, d. 1426-03-10a
+  gen:father <https://www.wikidata.org/wiki/Q116117368> ; # Friedrich II. von Heideck, Herr zu Heideck
+  gen:mother <https://www.wikidata.org/wiki/Q116117385> . # Beatrix von Teck in Mindelheim
+  # oo Agnes von Waldburg, d. 1460-01-10
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q116117365> , <https://www.wikidata.org/wiki/Q116117404> ;
+	gen:startDate "1417-11-17b" .
 
 # ----
 <https://www.wikidata.org/wiki/Q110370563>

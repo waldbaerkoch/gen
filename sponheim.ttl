@@ -4,16 +4,51 @@
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
+#<https://www.wikidata.org/wiki/Q75929998>
+  # Eberhard I. Graf von Sponheim, 990 - 1045
+  # oo Hedwig von Nellenburg, b. 995
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75929998> , <https://www.wikidata.org/wiki/Q76155998> .
+
+<https://www.wikidata.org/wiki/Q7608137>
+  # Stephan I., Graf von Sponheim, 1001 - 1080
+  gen:father <https://www.wikidata.org/wiki/Q75929998> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76155998> .
+
+<https://www.wikidata.org/wiki/Q25486722>
+  # Stephan II., Graf von Sponheim, d. 1096
+  # Graf von Sponheim 1080
+  gen:father <https://www.wikidata.org/wiki/Q7608137> .
+  # oo Sophia von Hamm
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q25486722> , <https://www.wikidata.org/wiki/Q76105304> .
+
+<https://www.wikidata.org/wiki/Q15834727>
+  # Meginhard I., Graf von Sponheim, 1085~ - 1135~
+  # Graf von Sponheim 1096
+  # Graf von Mörsberg
+  gen:father <https://www.wikidata.org/wiki/Q25486722> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76105304> .
+  # oo Mechtild Gräfin von Mörsberg, d. 1165, daughter of Adalbert von Mörsberg and Mechtild von Bar
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q15834727> , <https://www.wikidata.org/wiki/Q76263847> ;
+	gen:startDate "1118-02-24b" .
+  # oo Adelheid Gravin van Vianden, b. 1080
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q15834727> , <https://www.wikidata.org/wiki/Q76162138> .
+
 <https://www.wikidata.org/wiki/Q25896133>
-  # Gottfried I., Graf von Sponheim, 1115 - 1183
-  gen:father <https://www.wikidata.org/wiki/Q15834727> ; # Meginhard I, Count of Sponheim
-  gen:mother <https://www.wikidata.org/wiki/Q76162138> . # Adelheid Gravin van Vianden
+  # Gottfried I., Graf von Sponheim, 1115 - 1159~
+  # Graf von Sponheim 1135~
+  gen:father <https://www.wikidata.org/wiki/Q15834727> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76162138> .
   # oo Mathilde de Haute-Lorraine, b. 1115 (lothringen.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q25896133> , <https://www.wikidata.org/wiki/Q76196133> .
 
 <https://www.wikidata.org/wiki/Q25487256>
   # Gottfried II., Graf von Sponheim, 1133 - 1183
+  # Graf von Sponheim 1159~
   gen:father <https://www.wikidata.org/wiki/Q25896133> ;
   gen:mother <https://www.wikidata.org/wiki/Q76196133> .
   # oo ??? von Veldenz, 1145 - 1205
@@ -22,6 +57,7 @@
 
 <https://www.wikidata.org/wiki/Q1121214>
   # Gottfried III., Graf von Sponheim, 1175 - 1218
+  # Graf von Sponheim 1183
   gen:father <https://www.wikidata.org/wiki/Q25487256> ;
   gen:mother <https://www.wikidata.org/wiki/Q76263848> .
   # oo Adelheid Gräfin von Sayn, d. 1263
@@ -29,9 +65,25 @@
     gen:spouse <https://www.wikidata.org/wiki/Q1121214> , <https://www.wikidata.org/wiki/Q76263850> ;
 	gen:startDate "1202" .
 
+<https://www.wikidata.org/wiki/Q1694682> # -> Sponheim-Starkenburg
+  # Johann I., Graf von Sponheim (Hintere Grafschaft), 1206 - 1266
+  gen:father <https://www.wikidata.org/wiki/Q1121214> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76263850> .
+<https://www.wikidata.org/wiki/Q1597709> # -> Heinsberg
+  # Heinrich I. Graf von Sponheim, Edelherr von Hülchrath, Blankenberg, Löwenberg und Saffenberg, 1208 - 1259
+  gen:father <https://www.wikidata.org/wiki/Q1121214> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76263850> .
+<https://www.wikidata.org/wiki/Q1468617> # -> Sponheim-Kreuznach
+  # Simon I., Graf von Sponheim (Vordere Grafschaft), 1210 - 1264-04-08
+  gen:father <https://www.wikidata.org/wiki/Q1121214> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76263850> .
+
+
+# Sponheim-Starkenburg
 <https://www.wikidata.org/wiki/Q1694682>
   # Johann I., Graf von Sponheim, 1206 - 1266
-  # Graf von Sponheim, Herr zu Sayn und Starkenburg
+  # Graf von Sponheim (Hintere Grafschaft), Herr zu Starkenburg 1237b
+  # Graf von Sayn 1247-01-01
   gen:father <https://www.wikidata.org/wiki/Q1121214> ;
   gen:mother <https://www.wikidata.org/wiki/Q76263850> .
   # oo Maria van Gelre, 1200 - 1230 (wassenberg.ttl)
@@ -42,33 +94,91 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q1694682> , <https://www.wikidata.org/wiki/Q76185869> ;
 	gen:startDate "1233" .
-<https://www.wikidata.org/wiki/Q1597709> # -> Heinsberg
-  # Heinrich I. Graf von Sponheim, Edelherr von Hülchrath, Blankenberg, Löwenberg und Saffenberg, 1208 - 1259
-  gen:father <https://www.wikidata.org/wiki/Q1121214> ;
-  gen:mother <https://www.wikidata.org/wiki/Q76263850> .
-<https://www.wikidata.org/wiki/Q1468617> # -> Sponheim-Kreuznach
-  # Simon I., Graf von Sponheim-Kreuznach, 1210 - 1264-04-08
-  gen:father <https://www.wikidata.org/wiki/Q1121214> ;
-  gen:mother <https://www.wikidata.org/wiki/Q76263850> .
 
 <https://www.wikidata.org/wiki/Q26877217> # -> Sayn
-  # Gottfried I., Graf von Sponheim-Sayn, d. 1283-10-31
+  # Gottfried I. von Sponheim, Graf von Sayn, d. 1283-10-31
   gen:father <https://www.wikidata.org/wiki/Q1694682> ;
   gen:mother <https://www.wikidata.org/wiki/Q76185869> .
-<https://www.wikidata.org/wiki/Q1597719> # -> Sponheim-Starkenburg
+<https://www.wikidata.org/wiki/Q1597719>
   # Heinrich I., Graf von Sponheim-Starkenburg, 1235 - 1289-08-01
+  # Graf von Sponheim (Hintere Grafschaft) 1266
   gen:father <https://www.wikidata.org/wiki/Q1694682> ;
   gen:mother <https://www.wikidata.org/wiki/Q76185869> .
+  # oo Blancheflore von Jülich, b. 1240
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1597719> , <https://www.wikidata.org/wiki/Q75292343> ;
+	gen:startDate "1265" .
 <https://www.wikidata.org/wiki/Q75292436>
   # Adelheid von Sponheim-Starkenburg und Sayn, 1228 - 1297
   gen:father <https://www.wikidata.org/wiki/Q1694682> ;
   gen:mother <https://www.wikidata.org/wiki/Q76185869> .
   # oo Dietrich von Altena, Graf von Isenberg, 1215~ - 1301, https://www.wikidata.org/wiki/Q108559 (mark.ttl)
 
+<https://www.wikidata.org/wiki/Q1694717>
+  # Johann II., Graf von Sponheim-Starkenburg, 1265 - 1324-03-29
+  # Graf von Sponheim (Hintere Grafschaft) 1289-08-01
+  gen:father <https://www.wikidata.org/wiki/Q1597719> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75292343> .
+  # oo Katharina von Ochsenstein, d. 1315/1324
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1694717> , <#Katharina_von_Ochsenstein> .
+
+<https://www.wikidata.org/wiki/Q1597760>
+  # Heinrich II., Graf von Sponheim-Starkenburg, 1292a/1295b - 1323-10-11
+  # Graf von Sponheim (Hintere Grafschaft) 1289-08-01
+  gen:father <https://www.wikidata.org/wiki/Q1694717> ;
+  gen:mother <#Katharina_von_Ochsenstein> .
+  # oo Loretta von Salm, 1300 - 1346, Regentin der Hinteren Grafschaft Sponheim 1324 - 1331
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1597760> , <https://www.wikidata.org/wiki/Q1870280> ;
+	gen:startDate "1314-01-20" .
+
+<https://www.wikidata.org/wiki/Q1284596>
+  # Johann III., Graf von Sponheim-Starkenburg, 1315 - 1398-12-30
+  # Graf von Sponheim (Hintere Grafschaft) (1323-10-11) 1331
+  gen:father <https://www.wikidata.org/wiki/Q1597760> ;
+  gen:mother <https://www.wikidata.org/wiki/Q1870280> .
+  # oo Mechtild von der Pfalz, 1312 - 1375 (wittelsbacher.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1284596> , <https://www.wikidata.org/wiki/Q97785392> ;
+	gen:startDate "1331-09b" .
+
+<https://www.wikidata.org/wiki/Q1457701>
+  # Johann IV., Graf von Sponheim-Starkenburg, 1338b - 1413-10-16/1414-04-12
+  # Graf von Sponheim (Hintere Grafschaft) 1398-12-30
+  gen:father <https://www.wikidata.org/wiki/Q1284596> ;
+  gen:mother <https://www.wikidata.org/wiki/Q97785392> .
+  # oo Elisabeth von Sponheim, d. 1395-04-18a
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1457701> , <#Elisabeth_von_Sponheim> ;
+	gen:startDate "1346" .
+<https://www.wikidata.org/wiki/Q31191585>
+  # Mathilde Gräfin von Sponheim, d. 1410-11-01
+  gen:father <https://www.wikidata.org/wiki/Q1284596> ;
+  gen:mother <https://www.wikidata.org/wiki/Q97785392> .
+  # oo 1356 Rudolf VI., Markgraf von Baden, d. 1372-03-21, https://www.wikidata.org/wiki/Q77854 (zähringer.ttl)
+<https://www.wikidata.org/wiki/Q110153598>
+  # Loretta Gräfin von Sponheim-Starkenburg, 1347~ - 1374a
+  gen:father <https://www.wikidata.org/wiki/Q1284596> ;
+  gen:mother <https://www.wikidata.org/wiki/Q97785392> .
+  # oo 1374~ Heinrich III., Graf von Veldenz, d. 1389, https://www.wikidata.org/wiki/Q25356678
+
+<https://www.wikidata.org/wiki/Q1696442>
+  # Johann V., Graf von Sponheim-Starkenburg, 1359 - 1437-10-24
+  # Graf von Sponheim (Hintere Grafschaft) 1413-10-16/1414-04-12
+  # Vordere Grafschaft 1417-07-31
+  gen:father <https://www.wikidata.org/wiki/Q1457701> ;
+  gen:mother <#Elisabeth_von_Sponheim> .
+  # oo Walpurga Gräfin von Leiningen-Rixingen, d. 1447
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1696442> , <leiningen.ttl#Walpurga_von_Leiningen-Rixingen> ;
+	gen:startDate "1415" .
+
 
 # Sayn
 <https://www.wikidata.org/wiki/Q26877217>
-  # Gottfried I., Graf von Sponheim-Sayn, d. 1283-10-31
+  # Gottfried I. von Sponheim, Graf von Sayn, d. 1283-10-31
+  # Graf von Sayn 1266
   # Herr zu Sayn, Hachenburg, Weltensberg, Vesprecht und Holstein
   gen:father <https://www.wikidata.org/wiki/Q1694682> ;
   gen:mother <https://www.wikidata.org/wiki/Q76185869> .
@@ -90,22 +200,34 @@
 # Sayn-Sayn
 <https://www.wikidata.org/wiki/Q26959921>
   # Johann I., Graf von Sayn, d. 1324-11-23
+  # Graf von Sayn 1283-10-31
   gen:father <https://www.wikidata.org/wiki/Q26877217> ;
   gen:mother <https://www.wikidata.org/wiki/Q55091659> .
+  # oo Elisabeth von Hessen, 1270~ - 1293-02-19 (reginare.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q26959921> , <https://www.wikidata.org/wiki/Q75290563> ;
+	gen:startDate "1287" .
   # oo Kunigunde von Neuerburg-Kobern, d. 1347-04-27b
   []
     gen:spouse <https://www.wikidata.org/wiki/Q26959921> , <https://www.wikidata.org/wiki/Q76263854> ;
 	gen:startDate "1297" .
 
+<https://www.wikidata.org/wiki/Q26959544>
+  # Gottfried III., Graf von Sayn, d. 1327
+  # Mitregent von Sayn 1314 - 1324-11-23
+  # Graf von Sayn 1324-11-23
+  gen:father <https://www.wikidata.org/wiki/Q26959921> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75290563> .
 <https://www.wikidata.org/wiki/Q26959922>
   # Johann II., Graf von Sayn, d. 1367-11-26a
+  # Graf von Sayn 1327
   gen:father <https://www.wikidata.org/wiki/Q26959921> ;
   gen:mother <https://www.wikidata.org/wiki/Q76263854> .
   # oo Elisabeth von Jülich, 1310 - 1380a
   []
     gen:spouse <https://www.wikidata.org/wiki/Q26959922> , <https://www.wikidata.org/wiki/Q75292403> ;
 	gen:startDate "1330" .
-<#Jutta_von_Sayn-Sayn>
+<https://www.wikidata.org/wiki/Q110110513>
   # Jutta von Sayn-Sayn, d. 1380~
   gen:father <https://www.wikidata.org/wiki/Q26959921> ;
   gen:mother <https://www.wikidata.org/wiki/Q76263854> .
@@ -118,6 +240,7 @@
   # oo 1353b Johann I., Herr von Westerburg, 1332 - 1370-07-11, https://www.wikidata.org/wiki/Q26959925 (runkel.ttl)
 <https://www.wikidata.org/wiki/Q26959926>
   # Johann III., Graf von Sayn, 1350 - 1409-02-25
+  # Graf von Sayn 1367-11-26a
   gen:father <https://www.wikidata.org/wiki/Q26959922> ;
   gen:mother <https://www.wikidata.org/wiki/Q75292403> .
   # oo Adelheid von Westerburg, d. 1373-12-05a (runkel.ttl)
@@ -127,6 +250,7 @@
 
 <https://www.wikidata.org/wiki/Q26959535>
   # Gerhard I., Graf von Sayn, d. 1419-09-15
+  # Graf von Sayn 1409-02-25
   gen:father <https://www.wikidata.org/wiki/Q26959926> ;
   gen:mother <https://www.wikidata.org/wiki/Q54833828> .
   # oo Anna Gräfin von Solms-Braunfels, d. 1433-11-25
@@ -135,7 +259,8 @@
 	gen:startDate "1409-06-09b" .
 
 <https://www.wikidata.org/wiki/Q26959559>
-  # Dietrich I. Graf von Sayn, 1415-08-07 - 1452-08-02
+  # Dietrich I., Graf von Sayn, 1415-08-07 - 1452-08-02
+  # Graf von Sayn 1419-09-15
   gen:father <https://www.wikidata.org/wiki/Q26959535> ;
   gen:mother <https://www.wikidata.org/wiki/Q59387515> .
   # oo Margarete Gräfin von Nassau-Dillenburg, 1415 - 1467-05-27
@@ -144,6 +269,7 @@
 	gen:startDate "1435" .
 <https://www.wikidata.org/wiki/Q26959562>
   # Gerhard II., Graf von Sayn, 1417 - 1493-01
+  # Graf von Sayn 1452-08-02
   gen:father <https://www.wikidata.org/wiki/Q26959535> ;
   gen:mother <https://www.wikidata.org/wiki/Q59387515> .
   # oo Elisabeth von Sirck, 1435-01-02 - 1489-07-20, daughter of Arnold VII. von Sirck, Graf von Moncler and Eva von Dhaun
@@ -153,6 +279,7 @@
 
 <https://www.wikidata.org/wiki/Q26959566>
   # Gerhard III., Graf von Sayn, 1454-02-09 - 1506-01-26
+  # Graf von Sayn 1493-01
   gen:father <https://www.wikidata.org/wiki/Q26959562> ;
   gen:mother <https://www.wikidata.org/wiki/Q76263861> .
   # oo Johanna Gräfin zu Wied, 1480~ - 1529 (runkel.ttl)
@@ -165,14 +292,14 @@
   gen:mother <https://www.wikidata.org/wiki/Q76263861> .
   # oo 1457~ Heinrich IV., Graf von Nassau-Beilstein, 1449 - 1499-05-26, https://www.wikidata.org/wiki/Q2052154
 <https://www.wikidata.org/wiki/Q31191221>
-  # Sebastian, Graf von Sayn, 1464 - 1498-01-12
+  # Sebastian Graf von Sayn, 1464 - 1498-01-12
   gen:father <https://www.wikidata.org/wiki/Q26959562> ;
   gen:mother <https://www.wikidata.org/wiki/Q76263861> .
   # oo Maria von Limburg-Broich, 1465 - 1525-06-07 (mark.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q31191221> , <https://www.wikidata.org/wiki/Q76198922> ;
 	gen:startDate "1482-05-08" .
-<#Zymeria_von_Sayn>
+<https://www.wikidata.org/wiki/Q110549131>
   # Zymeria Gräfin von Sayn, 1469 - 1499-02-26
   gen:father <https://www.wikidata.org/wiki/Q26959562> ;
   gen:mother <https://www.wikidata.org/wiki/Q76263861> .
@@ -190,6 +317,7 @@
   # oo 1505-11-14 Wirich V. Graf von Daun-Falkenstein, 1473 - 1544~/1546, https://www.wikidata.org/wiki/Q2585590 (leiningen.ttl)
 <https://www.wikidata.org/wiki/Q26205753>
   # Johann V., Graf von Sayn, 1491 - 1529
+  # Graf von Sayn 1506-01-26
   gen:father <https://www.wikidata.org/wiki/Q31191221> ;
   gen:mother <https://www.wikidata.org/wiki/Q76198922> .
   # oo Ottilie Gräfin von Nassau-Saarbrücken, 1492-12-26 - 1554-03-01
@@ -199,6 +327,7 @@
 
 <https://www.wikidata.org/wiki/Q26205746>
   # Johann VI., Graf von Sayn, 1518 - 1560-03-20
+  # Graf von Sayn 1529
   gen:father <https://www.wikidata.org/wiki/Q26205753> ;
   gen:mother <https://www.wikidata.org/wiki/Q76263125> .
   # oo Elisabeth Gräfin von Holstein-Schaumburg, 1522-08-28 - 1545-01-15 (schauenburg.ttl)
@@ -207,15 +336,27 @@
 	gen:startDate "1537-02-13" .
 
 <https://www.wikidata.org/wiki/Q55168917>
-  # Adolf Graf von Sayn, 1538 - 1568-06-30
+  # Adolf, Graf von Sayn, 1538 - 1568-06-30
+  # Graf von Sayn 1560-03-20
   gen:father <https://www.wikidata.org/wiki/Q26205746> ;
   gen:mother <https://www.wikidata.org/wiki/Q53930833> .
   # oo Maria Gräfin von Mansfeld-Eisleben, 1545-03-12 - 1588
   []
     gen:spouse <https://www.wikidata.org/wiki/Q55168917> , <https://www.wikidata.org/wiki/Q54920023> ;
 	gen:startDate "1560-09-01" .
+<https://www.wikidata.org/wiki/Q1597817>
+  # Heinrich IV., Graf von Sayn, 1539 - 1606-01-17
+  # Graf von Sayn 1560-03-20 - 1605-09-12
+  # Herr zu Homburg, Montclair und Meinsberg
+  gen:father <https://www.wikidata.org/wiki/Q26205746> ;
+  gen:mother <https://www.wikidata.org/wiki/Q53930833> .
+  # oo Jutta von Mallinkrodt, d. 1608-02-28
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1597817> , <#Jutta_von_Mallinkrodt> ;
+	gen:startDate "1574-02" .
 <https://www.wikidata.org/wiki/Q26878179>
-  # Hermann Graf zu Sayn, 1543 - 1588-03-17
+  # Hermann, Graf zu Sayn, 1543 - 1588-03-17
+  # Graf von Sayn 1560-03-20
   gen:father <https://www.wikidata.org/wiki/Q26205746> ;
   gen:mother <https://www.wikidata.org/wiki/Q53930833> .
   # oo Elisabeth Gräfin von Erbach, 1542-08-16 - 1598-08-03
@@ -257,6 +398,7 @@
 # Sayn-Wittgenstein
 <https://www.wikidata.org/wiki/Q31191561>
   # Salentin von Sayn, d. 1392b
+  # Graf von Wittgenstein 1361
   gen:father <https://www.wikidata.org/wiki/Q31192006> ;
   gen:mother <#Sofie_von_Volmerstein> .
   # oo Adelheid von Wittgenstein, 1345b - 1362-06-23b
@@ -264,23 +406,25 @@
     gen:spouse <https://www.wikidata.org/wiki/Q31191561> , <https://www.wikidata.org/wiki/Q54833804> .
   # oo Elisabeth von Hirschhorn
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q31191561> , <#Elisabeth_von_Hirschhorn> .
+    gen:spouse <https://www.wikidata.org/wiki/Q31191561> , <https://www.wikidata.org/wiki/Q110572304> .
 
 <https://www.wikidata.org/wiki/Q31191141>
   # Johann V. von Sayn, Graf von Wittgenstein, d. 1422
+  # Graf von Wittgenstein 1392b
   gen:father <https://www.wikidata.org/wiki/Q31191561> ;
   gen:mother <https://www.wikidata.org/wiki/Q54833804> .
   # oo Katharina von Solms, d. 1415
   []
     gen:spouse <https://www.wikidata.org/wiki/Q31191141> , <https://www.wikidata.org/wiki/Q55179517> .
-<#Jutta_von_Sayn>
+<https://www.wikidata.org/wiki/Q101518977>
   # Jutta von Sayn, 1375b - 1421-05-25a
   gen:father <https://www.wikidata.org/wiki/Q31191561> ;
-  gen:mother <#Elisabeth_von_Hirschhorn> .
+  gen:mother <https://www.wikidata.org/wiki/Q110572304> .
   # oo 1375a Dietrich III., Herr von Runkel, 1352~ - 1402, https://www.wikidata.org/wiki/Q31191269
 
 <https://www.wikidata.org/wiki/Q26958595>
   # Georg I. von Sayn, Graf von Wittgenstein, 1420~ - 1472-05-07
+  # Graf von Wittgenstein 1422
   gen:father <https://www.wikidata.org/wiki/Q31191141> ;
   gen:mother <https://www.wikidata.org/wiki/Q55179517> .
   # oo Elisabeth von der Mark-Arenberg, 1400~ - 1472 (mark.ttl)
@@ -289,7 +433,8 @@
 	gen:startDate "1436-03-01" .
 
 <https://www.wikidata.org/wiki/Q24801295>
-  # Eberhard von Sayn-Wittgenstein, d. 1494
+  # Eberhard von Sayn, Graf von Wittgenstein, d. 1494
+  # Graf von Wittgenstein 1472-05-07
   gen:father <https://www.wikidata.org/wiki/Q26958595> ;
   gen:mother <https://www.wikidata.org/wiki/Q76142610> .
   # oo Margareta von Rodemachern, 1445 - 1509-06-22
@@ -302,7 +447,8 @@
   # oo 1453 Wilhelm II. von Reichenstein, 1439~ - 1474-11-19, https://www.wikidata.org/wiki/Q97206813
 
 <https://www.wikidata.org/wiki/Q26882139>
-  # Wilhelm I. zu Sayn und Wittgenstein, 1488-08-24 - 1570-04-18
+  # Wilhelm I. zu Sayn, Graf von Wittgenstein, 1488-08-24 - 1570-04-18
+  # Graf von Wittgenstein 1494
   gen:father <https://www.wikidata.org/wiki/Q24801295> ;
   gen:mother <https://www.wikidata.org/wiki/Q76264326> .
   # oo Johannette Gräfin von Isenburg-Grenzau, 1500 - 1563-08-05
@@ -312,6 +458,7 @@
 
 <https://www.wikidata.org/wiki/Q119050>
   # Ludwig I. von Sayn-Wittgenstein, Graf von Wittgenstein, 1532-12-07 - 1605-07-02
+  # Graf von Wittgenstein 1570-04-18
   gen:father <https://www.wikidata.org/wiki/Q26882139> ;
   gen:mother <https://www.wikidata.org/wiki/Q76264327> .
   # oo Anna Gräfin von Solms-Braunfels, 1538 - 1565-05-10
@@ -547,9 +694,9 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q44192606> , <https://www.wikidata.org/wiki/Q75454686> ;
 	gen:startDate "1761-03-21" .
-  # oo Wilhelmine Gräfin von Pückler und Limpurg, 1746-08-30 - 1800-03-20
+  # oo Wilhelmine Gräfin von Pückler und Limpurg, 1746-08-30 - 1800-03-20 (wittelsbacher.ttl)
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q44192606> , <wittelsbacher.ttl#Wilhelmine_von_Pückler-Limpurg> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q44192606> , <https://www.wikidata.org/wiki/Q112217363> ;
 	gen:startDate "1772-11-09" .
 <#Karoline_zu_Sayn-Wittgenstein-Hohenstein>
   # Karoline Leopoldine Gräfin zu Sayn-Wittgenstein-Hohenstein, 1755-07-18 - 1809
@@ -591,7 +738,7 @@
   gen:father <https://www.wikidata.org/wiki/Q44192606> ;
   gen:mother <https://www.wikidata.org/wiki/Q75454686> .
   # oo 1791-05-26 Emil Friedrich I. Fürst zu Bentheim-Tecklenburg, 1765-05-11 - 1837-04-17, https://www.wikidata.org/wiki/Q1336084
-<#Wilhelmine_zu_Sayn-Wittgenstein-Hohenstein>
+<https://www.wikidata.org/wiki/Q112217356>
   # Wilhelmine Elisabeth Karoline Gräfin zu Sayn-Wittgenstein-Hohenstein, 1773-09-02 - 1856-05-07
   gen:father <https://www.wikidata.org/wiki/Q44192606> ;
   gen:mother <https://www.wikidata.org/wiki/Q75454686> .
@@ -600,13 +747,12 @@
   # Johann Franz Karl Ludwig Fürst zu Sayn-Wittgenstein-Hohenstein, 1779-09-20 - 1815-10-06
   gen:father <https://www.wikidata.org/wiki/Q44192606> ;
   gen:mother <https://www.wikidata.org/wiki/Q75454686> .
-  # oo Karoline von Rohde, 1784-05-31 - 1821-04-27
+  # oo Dorothea Karoline von Rohde, 1784-05-31 - 1821-04-27
   []
     gen:spouse <https://www.wikidata.org/wiki/Q61140400> , <#Karoline_von_Rohde> ;
 	gen:startDate "1804-10-15" .
 
 <https://www.wikidata.org/wiki/Q57263394>
-  owl:sameAs <https://www.wikidata.org/wiki/Q61140407> ;
   # Alexander Karl August Franz Ludwig Fürst zu Sayn-Wittgenstein-Hohenstein, 1801-08-16 - 1874-04-07
   # Fürst zu Sayn-Wittgenstein-Hohenstein 1837-04-08
   gen:father <https://www.wikidata.org/wiki/Q20827197> ;
@@ -640,12 +786,12 @@
     gen:spouse <https://www.wikidata.org/wiki/Q1504627> , <bentheim.ttl#Marie_zu_Bentheim-Steinfurt> ;
 	gen:startDate "1867-05-16" .
 <#Agnes_zu_Sayn-Wittgenstein-Hohenstein>
-  # Agnes Prinzessin zu Sayn-Wittgenstein-Hohenstein, 1834-04-18 - 1886-02-18
+  # Agnes Karoline Therese Prinzessin zu Sayn-Wittgenstein-Hohenstein, 1834-04-18 - 1886-02-18
   gen:father <https://www.wikidata.org/wiki/Q57263394> ;
   gen:mother <bentheim.ttl#Amalie_Louise_zu_Bentheim-Tecklenburg-Rheda> .
   # oo 1858-08-03 Adalbert Graf zu Waldeck und Pyrmont in Bergheim, 1833-02-19 - 1893-07-24, https://www.wikidata.org/wiki/Q75259219
 <#Ida_zu_Sayn-Wittgenstein-Hohenstein>
-  # Ida Prinzessin zu Sayn-Wittgenstein-Hohenstein, 1837-02-25 - 1922-05-07
+  # Ida Charlotte Elisabeth Franziska Alexandra Prinzessin zu Sayn-Wittgenstein-Hohenstein, 1837-02-25 - 1922-05-07
   gen:father <https://www.wikidata.org/wiki/Q57263394> ;
   gen:mother <bentheim.ttl#Amalie_Louise_zu_Bentheim-Tecklenburg-Rheda> .
   # oo 1887-10-18 Adalbert Graf zu Waldeck und Pyrmont in Bergheim, 1833-02-19 - 1893-07-24, https://www.wikidata.org/wiki/Q75259219
@@ -755,7 +901,6 @@
   gen:mother <https://www.wikidata.org/wiki/Q75454638> .
   # oo 1685-07-01 Ferdinand Maximilian I., Graf zu Isenburg und Büdingen in Wächtersbach, 1661-12-24 - 1703-03-14, https://www.wikidata.org/wiki/Q5443879 (isenburg.ttl)
 <https://www.wikidata.org/wiki/Q55713414>
-  owl:sameAs <https://www.wikidata.org/wiki/Q110086457> ;
   # Amalia Henriëtte Gräfin zu Sayn-Wittgenstein-Berleburg, 1664-02-24 - 1733-02-09
   gen:father <https://www.wikidata.org/wiki/Q31191805> ;
   gen:mother <https://www.wikidata.org/wiki/Q75454638> .
@@ -1094,7 +1239,6 @@
     gen:spouse <https://www.wikidata.org/wiki/Q60615298> , <https://www.wikidata.org/wiki/Q75325978> ;
 	gen:startDate "1975-09-06" .
 <https://www.wikidata.org/wiki/Q27301121>
-  owl:sameAs <https://www.wikidata.org/wiki/Q75373726> ;
   # Hubertus Maximilian Casimir Thomas Maria Prinz zu Sayn-Wittgenstein-Berleburg, b. 1948-12-21
   gen:father <https://www.wikidata.org/wiki/Q75375245> ;
   gen:mother <https://www.wikidata.org/wiki/Q75375243> .
@@ -1189,9 +1333,9 @@
   # Georg Ernst Graf zu Sayn-Wittgenstein-Berleburg, 1735-09-22 - 1792-09-02
   gen:father <https://www.wikidata.org/wiki/Q29443817> ;
   gen:mother <https://www.wikidata.org/wiki/Q55317243> .
-  # oo Caroline Joséphine de Kaempfer, 1755-07-15 - 1839a
+  # oo Caroline Joséphine de Kaempfer, 1755-07-15 - 1839a, daughter of Jean Baptiste de Kaempfer and Anne Françoise de Saintnais
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q20723055> , <#Caroline_Joséphine_de_Kaempfer> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q20723055> , <https://www.wikidata.org/wiki/Q116054084> ;
 	gen:startDate "1775-05" .
 <https://www.wikidata.org/wiki/Q55317161>
   # Helene Charlotte Sophie Gräfin zu Sayn-Wittgenstein-Berleburg, 1739-12-08 - 1805-11-04
@@ -1212,7 +1356,7 @@
 <https://www.wikidata.org/wiki/Q75373567>
   # Ludwig Joseph Graf zu Sayn-Wittgenstein-Berleburg, 1784-04-10 - 1857-07-07
   gen:father <https://www.wikidata.org/wiki/Q20723055> ;
-  gen:mother <#Caroline_Joséphine_de_Kaempfer> .
+  gen:mother <https://www.wikidata.org/wiki/Q116054084> .
   # oo Pauline Gräfin von Degenfeld-Schonburg, 1803-07-03 - 1961-12-18 (wittelsbacher.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75373567> , <https://www.wikidata.org/wiki/Q75373522> ;
@@ -1413,7 +1557,7 @@
   # Wilhelm II., Graf zu Sayn-Wittgenstein-Hachenburg, 1569-03-14 - 1623-10-29
   # Graf zu Sayn-Wittgenstein-Hachenburg 1603
   # in Hachenburg und Neumagen
-  # Grafschaft Sayn
+  # Grafschaft Sayn 1605-09-12
   gen:father <https://www.wikidata.org/wiki/Q119050> ;
   gen:mother <https://www.wikidata.org/wiki/Q26882160> .
   # oo Anne Elisabeth Gräfin zu Sayn, 1572-02-01 - 1608-03-11
@@ -1467,6 +1611,7 @@
 <https://www.wikidata.org/wiki/Q19288300>
   # Ernestine Salentine Gräfin zu Sayn-Wittgenstein-Sayn, 1626-04-23 - 1661-10-13
   # Erbin von Hachenburg
+  # Grafschaft Sayn-Hachenburg 1636/1649
   gen:father <https://www.wikidata.org/wiki/Q26878187> ;
   gen:mother <https://www.wikidata.org/wiki/Q1872168> .
   # oo 1651-10-31 Salentin Ernst, Graf von Manderscheid-Blankenheim, 1630-08-16 - 1705-02-18, https://www.wikidata.org/wiki/Q27055446
@@ -1479,6 +1624,8 @@
   gen:mother <https://www.wikidata.org/wiki/Q1872168> .
 <https://www.wikidata.org/wiki/Q6332311>
   # Johannette Gräfin zu Sayn-Wittgenstein, 1632-08-27 - 1701-09-28
+  # Erbin von Altenkirchen
+  # Grafschaft Sayn-Altenkirchen 1636/1652
   gen:father <https://www.wikidata.org/wiki/Q26878187> ;
   gen:mother <https://www.wikidata.org/wiki/Q1872168> .
   # oo 1647-09-30 Johann, Landgraf von Hessen-Braubach, 1609-06-17 - 1651-04-01, https://www.wikidata.org/wiki/Q455525 (reginare.ttl)
@@ -1579,54 +1726,6 @@
   # oo 1875-12-01 Otto Emil Karl Prinz zu Sayn-Wittgenstein-Berleburg, 1842-11-23 - 1911-05-09, https://www.wikidata.org/wiki/Q63390162
 
 
-# Sponheim-Starkenburg
-<https://www.wikidata.org/wiki/Q1597719>
-  # Heinrich I., Graf von Sponheim-Starkenburg, 1235 - 1289-08-01
-  gen:father <https://www.wikidata.org/wiki/Q1694682> ;
-  gen:mother <https://www.wikidata.org/wiki/Q76185869> .
-  # oo Blancheflore von Jülich, b. 1240
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q1597719> , <https://www.wikidata.org/wiki/Q75292343> ;
-	gen:startDate "1265" .
-
-<https://www.wikidata.org/wiki/Q1694717>
-  # Johann II., Graf von Sponheim-Starkenburg, 1265 - 1324-03-29
-  gen:father <https://www.wikidata.org/wiki/Q1597719> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75292343> .
-  # oo Katharina von Ochsenstein, d. 1315/1324
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q1694717> , <#Katharina_von_Ochsenstein> .
-
-<https://www.wikidata.org/wiki/Q1597760>
-  # Heinrich II., Graf von Sponheim-Starkenburg, 1292a/1295b - 1323-10-11
-  gen:father <https://www.wikidata.org/wiki/Q1694717> ;
-  gen:mother <#Katharina_von_Ochsenstein> .
-  # oo Loretta von Salm, 1300 - 1346
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q1597760> , <https://www.wikidata.org/wiki/Q1870280> ;
-	gen:startDate "1314-01-20" .
-
-<https://www.wikidata.org/wiki/Q1284596>
-  # Johann III., Graf von Sponheim-Starkenburg, 1315 - 1398-12-30
-  gen:father <https://www.wikidata.org/wiki/Q1597760> ;
-  gen:mother <https://www.wikidata.org/wiki/Q1870280> .
-  # oo Mechtild von der Pfalz, 1312 - 1375 (wittelsbacher.ttl)
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q1284596> , <https://www.wikidata.org/wiki/Q97785392> ;
-	gen:startDate "1331-09b" .
-
-<https://www.wikidata.org/wiki/Q110153598>
-  # Loretta Gräfin von Sponheim-Starkenburg, 1347~ - 1374a
-  gen:father <https://www.wikidata.org/wiki/Q1284596> ;
-  gen:mother <https://www.wikidata.org/wiki/Q97785392> .
-  # oo 1374~ Heinrich III., Graf von Veldenz, d. 1389, https://www.wikidata.org/wiki/Q25356678
-<https://www.wikidata.org/wiki/Q31191585>
-  # Mathilde von Sponheim, d. 1410-11-01
-  gen:father <https://www.wikidata.org/wiki/Q1284596> ;
-  gen:mother <https://www.wikidata.org/wiki/Q97785392> .
-  # oo 1356 Rudolf VI., Markgraf von Baden, d. 1372-03-21, https://www.wikidata.org/wiki/Q77854 (zähringer.ttl)
-
-
 # Heinsberg
 <https://www.wikidata.org/wiki/Q1597709>
   # Heinrich I. Graf von Sponheim, Edelherr von Hülchrath, Blankenberg, Löwenberg und Saffenberg, 1208 - 1259
@@ -1661,6 +1760,11 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q31192013> , <https://www.wikidata.org/wiki/Q76263869> ;
 	gen:startDate "1299~" .
+<https://www.wikidata.org/wiki/Q76639375>
+  # Adelheid von Heinsberg und Blankenberg, d. 1343-05-21a
+  gen:father <https://www.wikidata.org/wiki/Q2050213> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76263862> .
+  # oo 1302 Heinrich I., Graf von Nassau-Siegen, 1270~ - 1343-07-13a/-08-14b, https://www.wikidata.org/wiki/Q317019
 
 <https://www.wikidata.org/wiki/Q2359280>
   # Dietrich II. von Sponheim, Graaf van Loon en Chiny, 1300 - 1361-01
@@ -1673,7 +1777,6 @@
     gen:spouse <https://www.wikidata.org/wiki/Q2359280> , <https://www.wikidata.org/wiki/Q76185922> ;
 	gen:startDate "1320" .
 <https://www.wikidata.org/wiki/Q76189625>
-  owl:sameAs <https://www.wikidata.org/wiki/Q101518546> ;
   # Johann I. Graf von Sponheim, Herr von Heinsberg und Dalenbroich, 1300 - 1334-07-25
   gen:father <https://www.wikidata.org/wiki/Q31192013> ;
   gen:mother <https://www.wikidata.org/wiki/Q76263869> .
@@ -1707,9 +1810,9 @@
   # Herr von Dalenbroich und Heinsberg 1395
   gen:father <https://www.wikidata.org/wiki/Q1814379> ;
   gen:mother <https://www.wikidata.org/wiki/Q75292387> .
-  # oo Margareta von Gennep, d. 1419-10-04
+  # oo Margareta van Gennep, d. 1419-10-04, daughter of Johan van Gennep and Johanna van der Eem
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q26222371> , <#Margareta_von_Gennep> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q26222371> , <https://www.wikidata.org/wiki/Q116007073> ;
 	gen:startDate "1395-05b" .
   # oo Anna Gräfin von Solms-Braunfels, d. 1433-11-25
   []
@@ -1725,7 +1828,7 @@
   # Johann III. von Loen, Herr zu Heinsberg und Löwenberg, d. 1441b
   # Herr zu Heinsberg 1438
   gen:father <https://www.wikidata.org/wiki/Q26222371> ;
-  gen:mother <#Margareta_von_Gennep> .
+  gen:mother <https://www.wikidata.org/wiki/Q116007073> .
   # oo Walpurga Gräfin von Moers-Saarwerden, d. 1453-04-20 (mark.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75394810> , <https://www.wikidata.org/wiki/Q116007084> ;
@@ -1741,25 +1844,26 @@
   gen:father <https://www.wikidata.org/wiki/Q75394810> ;
   gen:mother <https://www.wikidata.org/wiki/Q116007084> .
   # oo 1440-09-25 Philipp II., Graf von Nassau-Weilburg, 1418-03-12 - 1492-03-19, https://www.wikidata.org/wiki/Q445947
-<#Johann_IV_van_Heinsberg>
+<https://www.wikidata.org/wiki/Q116007021>
   # Johann IV van Heinsberg, Graf von Loon, Herr von Heinsberg und Sichem, d. 1448-01-27
   # Herr von Heinsberg und Sichem 1441b
   gen:father <https://www.wikidata.org/wiki/Q75394810> ;
   gen:mother <https://www.wikidata.org/wiki/Q116007084> .
   # oo Johanna van Diest, heiress of Diest, Sichem, Meerhout, Weyer, 1423 - 1472-04-10, daughter of Johan, Heer van Diest and Johanna van Hoorne
   []
-    gen:spouse <#Johann_IV_van_Heinsberg> , <#Johanna_van_Diest> .
+    gen:spouse <https://www.wikidata.org/wiki/Q116007021> , <https://www.wikidata.org/wiki/Q116007022> .
 
 <https://www.wikidata.org/wiki/Q76181424>
   # Johanna von Loen zu Heinsberg, 1443-06-29 - 1469-09-03
-  gen:father <#Johann_IV_van_Heinsberg> ;
-  gen:mother <#Johanna_van_Diest> .
+  gen:father <https://www.wikidata.org/wiki/Q116007021> ;
+  gen:mother <https://www.wikidata.org/wiki/Q116007022> .
   # oo 1456-11-30 Johann II. von Nassau, Graf von Saarbrücken, 1423-04-04 - 1472-07-25, https://www.wikidata.org/wiki/Q819814
 
 
 # Sponheim-Kreuznach
 <https://www.wikidata.org/wiki/Q1468617>
   # Simon I., Graf von Sponheim-Kreuznach, 1210 - 1264-04-08
+  # Graf von Sponheim (Vordere Grafschaft) 1223
   gen:father <https://www.wikidata.org/wiki/Q1121214> ;
   gen:mother <https://www.wikidata.org/wiki/Q76263850> .
   # oo Margarete von Hengebach, 1225 - 1290 (jülich.ttl)
@@ -1769,6 +1873,7 @@
 
 <https://www.wikidata.org/wiki/Q1694681>
   # Johann I., Graf von Sponheim-Kreuznach, 1245 - 1290-01-28
+  # Graf von Sponheim (Vordere Grafschaft) 1264-04-08
   gen:father <https://www.wikidata.org/wiki/Q1468617> ;
   gen:mother <https://www.wikidata.org/wiki/Q76122658> .
   # oo Adelheid von Leiningen-Landeck, d. 1296-09-20a/1301-05-12b
@@ -1780,34 +1885,24 @@
   gen:father <https://www.wikidata.org/wiki/Q1468617> ;
   gen:mother <https://www.wikidata.org/wiki/Q76122658> .
   # oo 1268b Friedrich IV., Graf von Leiningen, 1254b - 1316, https://www.wikidata.org/wiki/Q28056792
-<https://www.wikidata.org/wiki/Q31192838>
-  # Heinrich I Graf von Sponheim-Kreuznach in Dannenfels, 1255 - 1310/1314
+<https://www.wikidata.org/wiki/Q31192838> # -> Sponheim-Bolanden
+  # Heinrich I. Graf von Sponheim-Kreuznach in Dannenfels, 1255 - 1310/1314
   gen:father <https://www.wikidata.org/wiki/Q1468617> ;
   gen:mother <https://www.wikidata.org/wiki/Q76122658> .
-  # oo Kunigunde von Bolanden, b. 1260, daughter of Philipp V von Bolanden and Lukard von Hohenfels
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q31192838> , <https://www.wikidata.org/wiki/Q76263873> ;
-	gen:startDate "1277~" .
 
 <https://www.wikidata.org/wiki/Q196264>
   # Simon II., Graf von Sponheim-Kreuznach, 1270/1275 - 1336/1340
+  # Graf von Sponheim (Vordere Grafschaft) 1290-01-28
   gen:father <https://www.wikidata.org/wiki/Q1694681> ;
   gen:mother <https://www.wikidata.org/wiki/Q76250670> .
   # oo Elisabeth von Kleve Vrouwe van Valkenburg en Monschau, 1285 - 1325 (wassenberg.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q196264> , <https://www.wikidata.org/wiki/Q55180949> ;
 	gen:startDate "1303" .
-<https://www.wikidata.org/wiki/Q44192307>
-  # Philipp Graf von Sponheim in Bolanden, d. 1338-05-31
-  gen:father <https://www.wikidata.org/wiki/Q31192838> ;
-  gen:mother <https://www.wikidata.org/wiki/Q76263873> .
-  # oo Elisabeth von Katzenelnbogen (reginare.ttl)
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q44192307> , <https://www.wikidata.org/wiki/Q76263876> ;
-	gen:startDate "1320" .
 
 <https://www.wikidata.org/wiki/Q2543224>
   # Walram, Graf von Sponheim-Kreuznach, 1305~ - 1380-02-13
+  # Graf von Sponheim (Vordere Grafschaft) 1336/1340
   gen:father <https://www.wikidata.org/wiki/Q196264> ;
   gen:mother <https://www.wikidata.org/wiki/Q55180949> .
   # oo Elisabeth von Katzenelnbogen, d. 1368/1383-05-25a (reginare.ttl)
@@ -1824,57 +1919,386 @@
   gen:father <https://www.wikidata.org/wiki/Q196264> ;
   gen:mother <https://www.wikidata.org/wiki/Q55180949> .
   # oo Heinrich II., Graf von Veldenz, d. 1376, https://www.wikidata.org/wiki/Q25356239
-<https://www.wikidata.org/wiki/Q116029811>
-  # Kunigunde von Sponheim
-  gen:father <https://www.wikidata.org/wiki/Q44192307> ;
-  gen:mother <https://www.wikidata.org/wiki/Q76263876> .
-  # oo Ludwig VI. von Rieneck, d. 1408-03-29, https://www.wikidata.org/wiki/Q28056799 (loon.ttl)
 
 <https://www.wikidata.org/wiki/Q2287572>
   # Simon III., Graf von Sponheim-Kreuznach, 1330a - 1414-08-30
+  # Graf von Sponheim (Vordere Grafschaft) 1380-02-13
   gen:father <https://www.wikidata.org/wiki/Q2543224> ;
   gen:mother <https://www.wikidata.org/wiki/Q75785225> .
-  # oo Maria von Vianden, 1337~ - 1400
-  # TODO move to dampierre.ttl from nassau.ttl
+  # oo Maria von Vianden, 1337~ - 1400 (nassau.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q2287572> , <https://www.wikidata.org/wiki/Q76263871> ;
 	gen:startDate "1348~" .
+<#Elisabeth_von_Sponheim>
+  # Elisabeth von Sponheim, d. 1395-04-18a
+  gen:father <https://www.wikidata.org/wiki/Q2543224> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75785225> .
+  # oo 1346 Johann IV., Graf von Sponheim-Starkenburg, 1338b - 1413-10-16/1414-04-12, https://www.wikidata.org/wiki/Q1457701
 
 <https://www.wikidata.org/wiki/Q18221805>
   # Elisabeth, Gräfin von Sponheim-Kreuznach und Vianden, 1360/1365 - 1417-07-31
   # Gräfin von Vianden (1400) 1414-08-30
-  # Gräfin von Sponheim-Kreuznach 1414-08-30
+  # Gräfin von Sponheim (Vordere Grafschaft) 1414-08-30
   gen:father <https://www.wikidata.org/wiki/Q2287572> ;
   gen:mother <https://www.wikidata.org/wiki/Q76263871> .
   # oo 1381-04-05 Engelbert III., Graf von der Mark, 1333-02-28 - 1391-12-21, https://www.wikidata.org/wiki/Q97048 (mark.ttl)
   # oo 1392-08-29 Ruprecht Pipan von der Pfalz, 1375-02-20 - 1397-01-25, https://www.wikidata.org/wiki/Q97053 (wittelsbacher.ttl)
 
 
+# Sponheim-Bolanden
+<https://www.wikidata.org/wiki/Q31192838>
+  # Heinrich I. Graf von Sponheim-Kreuznach in Dannenfels, 1255 - 1310/1314
+  gen:father <https://www.wikidata.org/wiki/Q1468617> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76122658> .
+  # oo Kunigunde von Bolanden, b. 1260, daughter of Philipp V von Bolanden and Lukard von Hohenfels
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q31192838> , <https://www.wikidata.org/wiki/Q76263873> ;
+	gen:startDate "1277~" .
+
+<https://www.wikidata.org/wiki/Q44192307>
+  # Philipp Graf von Sponheim in Bolanden, d. 1338-05-31
+  gen:father <https://www.wikidata.org/wiki/Q31192838> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76263873> .
+  # oo Elisabeth von Katzenelnbogen (reginare.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q44192307> , <https://www.wikidata.org/wiki/Q76263876> ;
+	gen:startDate "1320" .
+
+<https://www.wikidata.org/wiki/Q20752712>
+  # Heinrich II. Graf von Sponheim in Bolanden, 1330 - 1393
+  gen:father <https://www.wikidata.org/wiki/Q44192307> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76263876> .
+  # oo Adelheid Gräfin von Katzenelnbogen, 1341 - 1397, daughter of https://www.wikidata.org/wiki/Q31192665 and https://www.wikidata.org/wiki/Q76263881
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q20752712> , <https://www.wikidata.org/wiki/Q76263879> ;
+	gen:startDate "1350" .
+<https://www.wikidata.org/wiki/Q116029811>
+  # Kunigunde von Sponheim
+  gen:father <https://www.wikidata.org/wiki/Q44192307> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76263876> .
+  # oo Ludwig VI. von Rieneck, d. 1408-03-29, https://www.wikidata.org/wiki/Q28056799 (loon.ttl)
+
+<https://www.wikidata.org/wiki/Q75382949>
+  # Elisabeth Gräfin von Sponheim in Bolanden, 1350 -  1381
+  gen:father <https://www.wikidata.org/wiki/Q20752712> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76263879> .
+  # oo 1373-03-23b Kraft IV. Graf von Hohenlohe-Weikersheim, d. 1399-11-24, https://www.wikidata.org/wiki/Q28058817
+
+
+
+<https://www.wikidata.org/wiki/Q324175>
+  # Siegfried I. von Sponheim, 1010~ - 1065-02-07
+  gen:father <https://www.wikidata.org/wiki/Q75929998> ; # ?
+  gen:mother <https://www.wikidata.org/wiki/Q76155998> . # ?
+  # oo Richardis von Lavant, d. 1072-07-09
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q324175> , <https://www.wikidata.org/wiki/Q75891334> .
+
+<https://www.wikidata.org/wiki/Q473487>
+  # Engelbert I. von Sponheim, Markgraf von Istrien, 1065a - 1096-04-01
+  # Graf im Pustertal 1065 - 1091
+  # Graf im Lavanttal 1065
+  # Markgraf von Istrien 1090
+  gen:father <https://www.wikidata.org/wiki/Q324175> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75891334> .
+  # Hedwig von Sachsen, 1030~/1035 - 1112-07-17~ (gerulfinger.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q473487> , <https://www.wikidata.org/wiki/Q18507913> .
+
+<https://www.wikidata.org/wiki/Q473500>
+  # Heinrich IV., Herzog von Kärnten, 1065~/1070 - 1123-12-14
+  # Herzog von Kärnten, Markgraf von Verona 1122
+  gen:father <https://www.wikidata.org/wiki/Q473487> ;
+  gen:mother <https://www.wikidata.org/wiki/Q18507913> .
+<https://www.wikidata.org/wiki/Q691897>
+  # Engelbert, Herzog von Kärnten, d. 1141-04-13
+  # Graf von Kraiburg und Marquartstein 1108 - 1124
+  # Markgraf von Istrien 1108 - 1124
+  # Herzog von Kärnten, Markgraf von Verona 1123-12-14 - 1135
+  gen:father <https://www.wikidata.org/wiki/Q473487> ;
+  gen:mother <https://www.wikidata.org/wiki/Q18507913> .
+  # oo Uta von Passau, 1080 - 1150-02-09
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q691897> , <https://www.wikidata.org/wiki/Q58824947> ;
+	gen:startDate "1103" .
+<https://www.wikidata.org/wiki/Q2283424> # -> Lebenau
+  # Siegfried I., Graf von Lebenau, d. 1132-05-06
+  gen:father <https://www.wikidata.org/wiki/Q473487> ;
+  gen:mother <https://www.wikidata.org/wiki/Q18507913> .
+
+<https://www.wikidata.org/wiki/Q473502>
+  # Ulrich I., Herzog von Kärnten, d. 1144-04-07
+  # Herzog von Kärnten, Markgraf von Verona 1135
+  gen:father <https://www.wikidata.org/wiki/Q691897> ;
+  gen:mother <https://www.wikidata.org/wiki/Q58824947> .
+  # oo Judith von Baden, d. 1162 (zähringer.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q473502> , <https://www.wikidata.org/wiki/Q123846> .
+<https://www.wikidata.org/wiki/Q638721>
+  # Engelbert III., Markgraf von Istrien, 1124b - 1173-10-06
+  # Markgraf von Istrien 1124
+  # Markgraf von Tuscien 1135 - 1136
+  # Graf von Kraiburg und Marquartstein 1124
+  gen:father <https://www.wikidata.org/wiki/Q691897> ;
+  gen:mother <https://www.wikidata.org/wiki/Q58824947> .
+  # oo Mathilde von Sulzbach, d. 1165-11-03 (byzanz.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q638721> , <https://www.wikidata.org/wiki/Q6403864> ;
+	gen:startDate "1140" .
+<https://www.wikidata.org/wiki/Q2131588> # -> Ortenburg
+  # Rapoto I., Graf von Ortenburg, d. 1186-08-26
+  gen:father <https://www.wikidata.org/wiki/Q691897> ;
+  gen:mother <https://www.wikidata.org/wiki/Q58824947> .
+<https://www.wikidata.org/wiki/Q434632>
+  # Mathilde von Spanheim, 1108 - 1160-12-13
+  gen:father <https://www.wikidata.org/wiki/Q691897> ;
+  gen:mother <https://www.wikidata.org/wiki/Q58824947> .
+  # oo 1123 Thibaut IV de Blois, comte de Blois et de Champagne, 1093 - 1152-01-10, https://www.wikidata.org/wiki/Q361369
+
+<https://www.wikidata.org/wiki/Q551463>
+  # Heinrich V., Herzog von Kärnten, Markgraf von Verona, d. 1161-12-12
+  # Herzog von Kärnten 1144-04-07
+  # Markgraf von Verona 1144-04-07 - 1151
+  gen:father <https://www.wikidata.org/wiki/Q473502> ;
+  gen:mother <https://www.wikidata.org/wiki/Q123846> .
+<https://www.wikidata.org/wiki/Q570497>
+  # Hermann II., Herzog von Kärnten, d. 1181-10-04
+  # Herzog von Kärnten 1161-12-12
+  gen:father <https://www.wikidata.org/wiki/Q473502> ;
+  gen:mother <https://www.wikidata.org/wiki/Q123846> .
+  # oo Agnes von Österreich, 1151/1154 - 1182-01-13 (reginare.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q570497> , <https://www.wikidata.org/wiki/Q80879> ;
+	gen:startDate "1173" .
+
+<https://www.wikidata.org/wiki/Q473490>
+  # Ulrich II., Herzog von Kärnten, 1176~ - 1202-08-10
+  # Herzog von Kärnten (1181-10-04) 1194
+  gen:father <https://www.wikidata.org/wiki/Q570497> ;
+  gen:mother <https://www.wikidata.org/wiki/Q80879> .
+<https://www.wikidata.org/wiki/Q558946>
+  # Bernhard, Herzog von Kärnten, 1180 - 1256-01-04
+  # Herzog von Kärnten 1202-08-10
+  gen:father <https://www.wikidata.org/wiki/Q570497> ;
+  gen:mother <https://www.wikidata.org/wiki/Q80879> .
+  # oo Judith von Böhmen, 1201 - 1230-06-02 (reginare.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q558946> , <https://www.wikidata.org/wiki/Q2385877> ;
+	gen:startDate "1213" .
+
+<https://www.wikidata.org/wiki/Q575523>
+  # Ulrich III., Herzog von Kärnten, 1220 - 1269-10-27
+  gen:father <https://www.wikidata.org/wiki/Q558946> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2385877> .
+  # oo Agnes von Andechs-Meran, 1215~ - 1263-01-07 (ivrea.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q575523> , <https://www.wikidata.org/wiki/Q74788> ;
+	gen:startDate "1250b" .
+  # oo Agnes von Baden, 1250 - 1295-01-02 (zähringer.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q575523> , <https://www.wikidata.org/wiki/Q394697> ;
+	gen:startDate "1263" .
+<https://www.wikidata.org/wiki/Q321080>
+  # Philipp von Spanheim, Patriarch von Aquileia, d. 1279-07-22
+  # Elekt (Erwählter zum Erzbischof) von Salzburg 1247 – 1257
+  # Patriarch von Aquileia 1269 – 1271
+  # Graf von Lebenau 1254
+  # nomineller Herzog von Kärnten
+  gen:father <https://www.wikidata.org/wiki/Q558946> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2385877> .
+
+
 # Ortenburg
+<https://www.wikidata.org/wiki/Q2131588>
+  # Rapoto I., Graf von Ortenburg, d. 1186-08-26
+  # Graf von Ortenburg 1134
+  # Graf von Murach 1163
+  # Graf von Kraiburg und Marquartstein 1173-10-06
+  gen:father <https://www.wikidata.org/wiki/Q691897> ;
+  gen:mother <https://www.wikidata.org/wiki/Q58824947> .
+  # oo Elisabeth von Sulzbach, d. 1206-01-23 (byzanz.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2131588> , <https://www.wikidata.org/wiki/Q76174915> .
+
+<https://www.wikidata.org/wiki/Q1451288>
+  # Rapoto II. Graf von Ortenburg, Pfalzgraf von Bayern, d. 1231-03-19
+  # Graf von Kraiburg und Marquartstein 1186-08-26
+  # Pfalzgraf von Bayern 1208
+  gen:father <https://www.wikidata.org/wiki/Q2131588> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76174915> .
+  # oo Udilhilde von Dillingen, d. 1231-03-19 (wittelsbacher.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1451288> , <https://www.wikidata.org/wiki/Q76174925> .
 <https://www.wikidata.org/wiki/Q1597717>
-  # Heinrich I Graf von Ortenburg, 1170~ - 1241-02-15
-  gen:father <https://www.wikidata.org/wiki/Q2131588> ; # Rapoto I., Graf von Ortenburg
-  gen:mother <https://www.wikidata.org/wiki/Q76174915> . # Elisabeth von Sulzbach
+  # Heinrich I., Graf von Ortenburg und Murach, 1170~ - 1241-02-15
+  # Graf von Ortenburg 1186-08-26
+  # Graf von Murach 1186-08-26 - 1238
+  gen:father <https://www.wikidata.org/wiki/Q2131588> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76174915> .
   # oo Božislava von Böhmen, d. 1238-05-13 (reginare.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q1597717> , <https://www.wikidata.org/wiki/Q523863> .
+  # oo Richgarde von Hohenburg, d. 1266-08-10
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1597717> , <https://www.wikidata.org/wiki/Q76263834> ;
+	gen:startDate "1237" .
 
+<https://www.wikidata.org/wiki/Q2131598>
+  # Rapoto III. Graf von Ortenburg, Pfalzgraf von Bayern, d. 1248-06-04
+  # Pfalzgraf von Bayern 1231-03-19
+  # Graf von Kraiburg und Marquartstein 1231-03-19
+  gen:father <https://www.wikidata.org/wiki/Q1451288> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76174925> .
+  # oo Adelheid von Nürnberg, d. 1304 (hohenzollern.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2131598> , <https://www.wikidata.org/wiki/Q76174962> .
+<https://www.wikidata.org/wiki/Q1597755>
+  # Heinrich II., Graf von Ortenburg, d. 1257
+  # Graf von Ortenburg 1241-02-15
+  gen:father <https://www.wikidata.org/wiki/Q1597717> ;
+  gen:mother <https://www.wikidata.org/wiki/Q523863> .
 <https://www.wikidata.org/wiki/Q44192400>
   # Elisabeth von Ortenburg, 1215 - 1272
   gen:father <https://www.wikidata.org/wiki/Q1597717> ;
   gen:mother <https://www.wikidata.org/wiki/Q523863> .
   # oo Gebhard IV., Landgraf von Leuchtenberg, 1210 - 1279-09-02, https://www.wikidata.org/wiki/Q31192695 (hohenzollern.ttl)
+<https://www.wikidata.org/wiki/Q1496886>
+  # Gebhard, Graf von Ortenburg und Murach, d. 1275~
+  # Graf von Murach 1238 - 1272
+  # Graf von Ortenburg 1257
+  gen:father <https://www.wikidata.org/wiki/Q1597717> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76263834> .
+<https://www.wikidata.org/wiki/Q2131594>
+  # Rapoto IV., Graf von Ortenburg und Murach, d. 1296
+  # Graf von Murach 1238 - 1272
+  # Graf von Ortenburg 1275~
+  gen:father <https://www.wikidata.org/wiki/Q1597717> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76263834> .
+  # oo Kunigunde von Bruckberg, daughter of Diethelm von Bruckberg and Liutgarde von Hals
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2131594> , <https://www.wikidata.org/wiki/Q76263839> .
+<https://www.wikidata.org/wiki/Q1221203>
+  # Diepold von Ortenburg, Graf von Murach, d. 1285-08
+  # Graf von Murach 1238 - 1272
+  gen:father <https://www.wikidata.org/wiki/Q1597717> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76263834> .
 
-#<https://www.wikidata.org/wiki/Q2262808>
-  # Sebastian I., Graf von Ortenburg, d. 1490-11-11
+<https://www.wikidata.org/wiki/Q1384333>
+  # Heinrich III., Graf von Ortenburg, d. 1345
+  # Graf von Ortenburg 1296
+  gen:father <https://www.wikidata.org/wiki/Q2131594> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76263839> .
+  # oo Adelheid von Schaunberg, d. 1328-07-04/1334
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1384333> , <https://www.wikidata.org/wiki/Q116131920> .
+  # oo Sophie von Henneberg-Aschach, d. 1340
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1384333> , <https://www.wikidata.org/wiki/Q76256410> ;
+	gen:startDate "1335-07-29" .
+
+<https://www.wikidata.org/wiki/Q1597818>
+  # Heinrich IV., Graf von Ortenburg, 1328b - 1395-04-08/1400
+  # Graf von Ortenburg 1345
+  gen:father <https://www.wikidata.org/wiki/Q1384333> ;
+  gen:mother <https://www.wikidata.org/wiki/Q116131920> .
+  # oo Agnes von Kamm-Hals, d. 1391
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1597818> , <https://www.wikidata.org/wiki/Q76264270> ;
+	gen:startDate "1346b" .
+
+<https://www.wikidata.org/wiki/Q1493043> # -> Dorfbach
+  # Alram I. Graf von Ortenburg in Dorfbach, d. 1399b
+  gen:father <https://www.wikidata.org/wiki/Q1597818> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76264270> .
+<https://www.wikidata.org/wiki/Q1504818> # -> Neu-Ortenburg
+  # Georg I., Graf zu Ortenburg in Neu-Ortenburg, 1348b - 1422-03-04b
+  gen:father <https://www.wikidata.org/wiki/Q1597818> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76264270> .
+<https://www.wikidata.org/wiki/Q1371983>
+  # Etzel I., Graf von Ortenburg in Alt-Ortenburg, d. 1446-05-17
+  # Graf von Ortenburg 1422-03-04b - 1444
+  # Reichsgraf 1431-03-23
+  gen:father <https://www.wikidata.org/wiki/Q1597818> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76264270> .
+  # oo Katharina von Anserweiler (d’Ancerville), d. 1401~
+  # oo 1405~ mit Siguna (Sigaun) von Rohrbach
+  # -> Margarethe Gräfin von Ortenburg, d. 1448-04-19; oo 1413-02-06b Heinrich III. Notthaft zu Wernberg, d. 1471-11-26
+
+
+# Dorfbach
+<https://www.wikidata.org/wiki/Q1493043>
+  # Alram I. Graf von Ortenburg in Dorfbach, d. 1399b
+  gen:father <https://www.wikidata.org/wiki/Q1597818> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76264270> .
+  # oo Barbara von Rottau
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1493043> , <#Barbara_von_Rottau> ;
+	gen:startDate "1381" .
+
+<https://www.wikidata.org/wiki/Q2651362>
+  # Alram II., Graf von Ortenburg, d. 1460
+  # Reichsgraf von Ortenburg 1444-07-23
+  gen:father <https://www.wikidata.org/wiki/Q1493043> ;
+  gen:mother <#Barbara_von_Rottau> .
+  # oo Agnes von Waldburg, d. 1460-01-10
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2651362> , <https://www.wikidata.org/wiki/Q116117404> ;
+	gen:startDate "1428-09-08" .
+
+<#Veronika_von_Ortenburg>
+  # Veronika Gräfin von Ortenburg, d. 1461-10-31
+  gen:father <https://www.wikidata.org/wiki/Q2651362> ;
+  gen:mother <https://www.wikidata.org/wiki/Q116117404> .
+  # oo Wolfgang V. von Walsee zu Enns, d. 1466-10-04, https://www.wikidata.org/wiki/Q66102954
+
+
+# Neu-Ortenburg
+<https://www.wikidata.org/wiki/Q1504818>
+  # Georg I. Graf zu Ortenburg in Neu-Ortenburg, 1348b - 1422-03-04b
+  gen:father <https://www.wikidata.org/wiki/Q1597818> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76264270> .
+  # oo Siguna von Buchberg zu Winzer
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1504818> , <https://www.wikidata.org/wiki/Q76264274> .
+
+<https://www.wikidata.org/wiki/Q1599105>
+  # Heinrich V. Graf von Ortenburg in Neu-Ortenburg, d. 1449-07-04/-10-06
+  gen:father <https://www.wikidata.org/wiki/Q1504818> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76264274> .
+  # oo Ursula Ecker zu Saldenburg, d. 1436
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1599105> , <https://www.wikidata.org/wiki/Q76264275> .
+  # oo Elisabeth von Törring zu Neudegg, daughter of Seyfried II von Törring auf Neudegg und Pertenstein and Klara von Fraunberg zu Haidenburg
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1599105> , <https://www.wikidata.org/wiki/Q116131939> ;
+	gen:startDate "1436-10-03" .
+
+<https://www.wikidata.org/wiki/Q1504825>
+  # Georg II., Graf von Ortenburg, d. 1489-02b
+  # Reichsgraf von Ortenburg 1460
+  gen:father <https://www.wikidata.org/wiki/Q1599105> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76264275> .
+  # oo Anastasia von Fraunberg, d. 1502
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1504825> , <#Anastasia_von_Fraunberg> .
+<https://www.wikidata.org/wiki/Q2262808>
+  # Sebastian I., Graf von Ortenburg, 1429?/1434-08 - 1490-11-11
+  # Graf von Ortenburg 1488
+  gen:father <https://www.wikidata.org/wiki/Q1599105> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76264275> .
   # oo Maria von Rohrbach Gräfin zu Neuburg am Inn, d. 1496-05-08a
   []
     gen:spouse <https://www.wikidata.org/wiki/Q2262808> , <https://www.wikidata.org/wiki/Q76264276> ;
 	gen:startDate "1467" .
 
+<https://www.wikidata.org/wiki/Q2589051>
+  # Wolfgang, Graf von Ortenburg, d. 1519-07-29
+  # Graf von Ortenburg 1490-11-11
+  gen:father <https://www.wikidata.org/wiki/Q1504825> ;
+  gen:mother <#Anastasia_von_Fraunberg> .
 <https://www.wikidata.org/wiki/Q1790226>
   # Ulrich II., Graf von Ortenburg, 1480b - 1524
-  # Graf von Ortenburg 1490-11-11
+  # Graf von Ortenburg 1519-07-29
   gen:father <https://www.wikidata.org/wiki/Q2262808> ;
   gen:mother <https://www.wikidata.org/wiki/Q76264276> .
   # oo Veronika von Aichberg, 1487 - 1511/1517, daughter of Johann Freiherr von Aichberg and Siguna Freiin von Kraig
@@ -2060,7 +2484,9 @@
 
 <https://www.wikidata.org/wiki/Q1706730>
   # _Joseph Carl_ Leopold Friedrich Ludwig, Graf zu Ortenburg, 1780-08-30 - 1831-03-28
-  # Graf zu Ortenburg 1787-02-05
+  # Reichsgraf zu Ortenburg (1787-02-05) 1801 - 1805-08-14
+  # Reichsgraf zu Ortenburg-Tambach 1805-08-14 - 1806-09-25
+  # Standesherr 1806-09-25
   gen:father <https://www.wikidata.org/wiki/Q15822850> ;
   gen:mother <https://www.wikidata.org/wiki/Q75569115> .
   # oo Karoline Gräfin zu Erbach-Erbach, 1779-11-21 - 1825-12-06
@@ -2084,8 +2510,8 @@
   # oo 1806-10-09 (div 1824) Karl Alexander Graf von Pückler und Limpurg, 1782-10-11 - 1843-12-28, https://www.wikidata.org/wiki/Q82071655 (wittelsbacher.ttl)
 
 <https://www.wikidata.org/wiki/Q55858220>
-  # _Franz Karl_ Rudolf Graf zu Ortenburg, 1801-08-04 - 1876-02-23
-  # Graf zu Ortenburg 1831-03-28
+  # _Franz Karl_ Rudolf Graf zu Ortenburg-Tambach, 1801-08-04 - 1876-02-23
+  # Graf zu Ortenburg-Tambach 1831-03-28
   gen:father <https://www.wikidata.org/wiki/Q1706730> ;
   gen:mother <https://www.wikidata.org/wiki/Q76264305> .
   # oo Julie Karoline Wilhelmine Luise Sophie Freiin von Woellwarth-Lauterburg, 1819-12-20 - 1883-01-13, daughter of Friedrich Ludwig Wilhelm Freiherr von Wöllwarth and Sophie von Thumb zu Neuberg
@@ -2107,8 +2533,8 @@
 	gen:startDate "1830-09-10" .
 
 <https://www.wikidata.org/wiki/Q76264311>
-  # Friedrich Carl Hermann Albrecht Graf zu Ortenburg, 1841-12-13 - 1894-02-25
-  # Graf zu Ortenburg 1876-02-23
+  # Friedrich Carl Hermann Albrecht Graf zu Ortenburg-Tambach, 1841-12-13 - 1894-02-25
+  # Graf zu Ortenburg-Tambach 1876-02-23
   gen:father <https://www.wikidata.org/wiki/Q55858220> ;
   gen:mother <https://www.wikidata.org/wiki/Q76264310> .
   # oo Karoline Gräfin von Giech, 1850-05-22 - 1923-11-28 (erbach.ttl)
@@ -2125,8 +2551,8 @@
 	gen:startDate "1870-05-30" .
 
 <https://www.wikidata.org/wiki/Q75266443>
-  # _Franz Carl_ Julius Albrecht Graf zu Ortenburg, 1875-08-16 - 1936-12-03
-  # Graf zu Ortenburg 1894-02-25
+  # _Franz Carl_ Julius Albrecht Graf zu Ortenburg-Tambach, 1875-08-16 - 1936-12-03
+  # Graf zu Ortenburg-Tambach 1894-02-25 - 1918
   gen:father <https://www.wikidata.org/wiki/Q76264311> ;
   gen:mother <https://www.wikidata.org/wiki/Q76264313> .
   # oo Ily (Helene) Ignatia Róza Aurélia Mária Margit Johanna Gräfin Semsey de Semse, 1895-05-16 - 1978-10-16, daughter of László Lajos Ferenc Graf Semsey und Mária (Rolla) Karolina Gräfin Dessewffy
@@ -2212,6 +2638,51 @@
   gen:mother <https://www.wikidata.org/wiki/Q1778313> .
 
 
+# Lebenau
+<https://www.wikidata.org/wiki/Q2283424>
+  # Siegfried I., Graf von Lebenau, d. 1132-05-06
+  # Graf von Lebenau 1104
+  gen:father <https://www.wikidata.org/wiki/Q473487> ;
+  gen:mother <https://www.wikidata.org/wiki/Q18507913> .
+  # oo Adelheid von Dießen, d. 1145-01-23~
+
+<https://www.wikidata.org/wiki/Q2283427>
+  # Siegfried II., Graf von Lebenau, d. 1163-12-16
+  # Graf von Lebenau und Hohenburg 1132-05-06
+  gen:father <https://www.wikidata.org/wiki/Q2283424> .
+  # and Adelheid von Dießen
+  # oo Mathilde von Valley, d. 1195
+
+<https://www.wikidata.org/wiki/Q2283435>
+  # Siegfried III., Graf von Lebenau, d. 1190-03-12
+  # Graf von Lebenau (1163-12-16) 1174~
+  gen:father <https://www.wikidata.org/wiki/Q2283427> .
+  # and Mathilde von Valley
+  # oo Kunigunde
+<https://www.wikidata.org/wiki/Q1687873>
+  # Otto I., Graf von Lebenau, d. 1205-03-08
+  # Graf von Lebenau 1190-03-12
+  gen:father <https://www.wikidata.org/wiki/Q2283427> .
+  # and Mathilde von Valley
+  # oo Eufemia von Dornberg
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1687873> , <#Eufemia_von_Dornberg> .
+  # oo Sophie von Plain
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1687873> , <#Sophie_von_Plain> .
+
+<https://www.wikidata.org/wiki/Q2283442>
+  # Siegfried IV., Graf von Lebenau, d. 1210-12-17
+  # Graf von Lebenau 1205-03-08
+  gen:father <https://www.wikidata.org/wiki/Q1687873> ;
+  gen:mother <#Eufemia_von_Dornberg> .
+<https://www.wikidata.org/wiki/Q825308>
+  # Bernhard I., Graf von Lebenau, d. 1229-04-17
+  # Graf von Lebenau 1210-12-17
+  gen:father <https://www.wikidata.org/wiki/Q1687873> ;
+  gen:mother <#Sophie_von_Plain> .
+
+
 # ----
 <https://www.wikidata.org/wiki/Q76263850>
   # Adelheid Gräfin von Sayn, d. 1263
@@ -2224,6 +2695,15 @@
   gen:father <https://www.wikidata.org/wiki/Q26877277> ;
   gen:mother <https://www.wikidata.org/wiki/Q76263852> .
   # oo 1204b Adolf III., Graf von Berg, 1175b - 1218-08-07, https://www.wikidata.org/wiki/Q86368 (mark.ttl)
+<https://www.wikidata.org/wiki/Q993481>
+  # Heinrich III., Graf von Sayn, 1185~ - 1247-01-01
+  # Graf von Sayn 1202
+  gen:father <https://www.wikidata.org/wiki/Q26877277> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76263852> .
+  # oo Mechthild von Landsberg, 1203~ - 1291~ (wettiner.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q993481> , <https://www.wikidata.org/wiki/Q1915628> ;
+	gen:startDate "1215~" .
 <https://www.wikidata.org/wiki/Q96271839>
   # Agnes von Sayn, 1202b - 1259-09-05/1266-08-07b
   gen:father <https://www.wikidata.org/wiki/Q26877277> ;
@@ -2423,6 +2903,7 @@
 # ----
 <https://www.wikidata.org/wiki/Q1870280>
   # Loretta von Salm, 1300 - 1346
+  # Regentin der Hinteren Grafschaft Sponheim 1324 - 1331
   gen:father <https://www.wikidata.org/wiki/Q31192745> ; # Johann I. von Salm
   gen:mother <https://www.wikidata.org/wiki/Q69756781> . # Jeanne de Joinville
   # oo 1314-01-20 Heinrich II., Graf von Sponheim-Starkenburg, 1292a/1295b - 1323-10-11, https://www.wikidata.org/wiki/Q1597760
@@ -2506,6 +2987,62 @@
   gen:father <https://www.wikidata.org/wiki/Q75292124> ; # Gerard Heer van Voorne Burggraf van Zeeland
   gen:mother <https://www.wikidata.org/wiki/Q76116920> . # Hedwig van Borselen
   # oo 1324 Johann I. Graf von Sponheim, Herr von Heinsberg und Dalenbroich, 1300 - 1334-07-25, https://www.wikidata.org/wiki/Q76189625
+
+# ----
+<https://www.wikidata.org/wiki/Q75891334>
+  # Richardis von Lavant, d. 1072-07-09
+  gen:father <https://www.wikidata.org/wiki/Q1312249> ; # Engelbert IV.
+  gen:mother <https://www.wikidata.org/wiki/Q102393975> . # Liutgard
+  # oo Siegfried I. von Sponheim, 1010~ - 1065-02-07, https://www.wikidata.org/wiki/Q324175
+
+# ----
+<https://www.wikidata.org/wiki/Q58824947>
+  # Uta von Passau, 1080 - 1150-02-09
+  gen:father <https://www.wikidata.org/wiki/Q2477068> ; # Ulrich von Passau
+  gen:mother <https://www.wikidata.org/wiki/Q75247513> . # Adelheid von Megling-Frontenhausen
+  # oo 1103 Engelbert, Herzog von Kärnten, d. 1141-04-13, https://www.wikidata.org/wiki/Q691897
+
+# ----
+<https://www.wikidata.org/wiki/Q76263834>
+  # Richgarde von Hohenburg, d. 1266-08-10
+  gen:father <https://www.wikidata.org/wiki/Q76263836> ; # Diepold VII., Markgraf von Hohenburg
+  gen:mother <https://www.wikidata.org/wiki/Q76263838> . # Mechtild von Wasserburg
+  # oo 1237 Heinrich I., Graf von Ortenburg und Murach, 1170~ - 1241-02-15, https://www.wikidata.org/wiki/Q1597717
+
+# ----
+<https://www.wikidata.org/wiki/Q116131920>
+  # Adelheid von Schaunberg, d. 1328-07-04/1334
+  gen:father <https://www.wikidata.org/wiki/Q55394643> ; # Heinrich IV. von Schaunberg
+  gen:mother <https://www.wikidata.org/wiki/Q110562198> . # Agnes von Neuhaus
+  # oo Heinrich III., Graf von Ortenburg, d. 1345, https://www.wikidata.org/wiki/Q1384333
+
+# ----
+<https://www.wikidata.org/wiki/Q76256410>
+  # Sophie von Henneberg-Aschach, d. 1340
+  gen:father <https://www.wikidata.org/wiki/Q44192303> ; # Hermann II. Graf von Henneberg-Aschach
+  gen:mother <https://www.wikidata.org/wiki/Q76264269> . # Adelheid von Trimberg
+  # oo 1335-07-29 Heinrich III., Graf von Ortenburg, d. 1345, https://www.wikidata.org/wiki/Q1384333
+
+# ----
+#<https://www.wikidata.org/wiki/Q76264272>
+  # Alram IV. von Kamm, Graf von Hals, d. 1331
+  # oo Agnes von Glogau, d. 1361-12-25 (piasten.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76264272> , <https://www.wikidata.org/wiki/Q175920> .
+
+<https://www.wikidata.org/wiki/Q76264270>
+  # Agnes von Kamm-Hals, d. 1391
+  gen:father <https://www.wikidata.org/wiki/Q76264272> ;
+  gen:mother <https://www.wikidata.org/wiki/Q175920> .
+  # oo 1346b Heinrich IV., Graf von Ortenburg, 1328b - 1395-04-08/1400, https://www.wikidata.org/wiki/Q1597818
+
+# ----
+<https://www.wikidata.org/wiki/Q66102954>
+  # Wolfgang V. von Walsee zu Enns, d. 1466-10-04
+  gen:father <https://www.wikidata.org/wiki/Q66124126> . # Reinprecht IV. von Walsee
+  # oo Veronika Gräfin von Ortenburg, d. 1461-10-31
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q66102954> , <#Veronika_von_Ortenburg> .
 
 # ----
 <https://www.wikidata.org/wiki/Q76264276>
