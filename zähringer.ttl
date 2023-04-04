@@ -4,12 +4,49 @@
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
+<https://www.wikidata.org/wiki/Q700087>
+  # Berthold I. von Zähringen, Herzog von Kärnten, 1000 - 1078-11-06
+  # Herzog von Kärnten, Markgraf von Verona 1061 - 1077
+  gen:father <https://www.wikidata.org/wiki/Q2896942> ; # Berchtillon von Ortenau
+  gen:mother <https://www.wikidata.org/wiki/Q76299817> . # Luitgard von Habsburg
+  # oo Richwara von Kärnten
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q700087> , <https://www.wikidata.org/wiki/Q61812352> .
+  # oo Beatrice de Mousson, d. 1092-10-26 (ivrea.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q700087> , <https://www.wikidata.org/wiki/Q22674508> .
+
+<https://www.wikidata.org/wiki/Q69325>
+  # Hermann I., Markgraf von Verona, 1040~ - 1074-04-25
+  # Markgraf von Verona 1061
+  # Graf im Breisgau
+  gen:father <https://www.wikidata.org/wiki/Q700087> ;
+  gen:mother <https://www.wikidata.org/wiki/Q22674508> .
+  # oo Judith die Ältere
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q69325> , <https://www.wikidata.org/wiki/Q1711096> .
+<https://www.wikidata.org/wiki/Q650325> # -> Zähringen
+  # Berthold II., Herzog von Schwaben, 1050~ - 1111-04-12
+  gen:father <https://www.wikidata.org/wiki/Q700087> ;
+  gen:mother <https://www.wikidata.org/wiki/Q22674508> .
+
+<https://www.wikidata.org/wiki/Q450244>
+  # Hermann II., Markgraf von Baden, 1060 - 1130-10-07
+  # Graf im Breisgau 1087
+  # Markgraf von Baden 1112
+  gen:father <https://www.wikidata.org/wiki/Q69325> ;
+  gen:mother <https://www.wikidata.org/wiki/Q1711096> .
+  # oo Judith von Backnang, 1080 - 1123
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q450244> , <https://www.wikidata.org/wiki/Q98803> ;
+	gen:startDate "1111" .
+
 <https://www.wikidata.org/wiki/Q69353>
   # Hermann III., Markgraf von Baden, 1105 - 1160-01-16
-  # Markgraf von Baden 1130
+  # Markgraf von Baden 1130-10-07
   # Markgraf von Verona 1151
-  gen:father <https://www.wikidata.org/wiki/Q450244> ; # Hermann II, Markgraf von Baden
-  gen:mother <https://www.wikidata.org/wiki/Q98803> . # Judith von Backnang
+  gen:father <https://www.wikidata.org/wiki/Q450244> ;
+  gen:mother <https://www.wikidata.org/wiki/Q98803> .
   # oo Bertha de Lorraine, 1116 - 1162 (lothringen.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q69353> , <https://www.wikidata.org/wiki/Q95184> ;
@@ -56,7 +93,7 @@
 	gen:startDate "1248" .
 <https://www.wikidata.org/wiki/Q77858>
   # Rudolf I., Markgraf von Baden, 1230 - 1288-11-19
-  # Markgraf von Baden 1249
+  # Markgraf von Baden 1243-01-16/1247
   # in Pforzheim 1257
   gen:father <https://www.wikidata.org/wiki/Q69332> ;
   gen:mother <https://www.wikidata.org/wiki/Q112936> .
@@ -66,8 +103,8 @@
 	gen:startDate "1257-05-20" .
 
 <https://www.wikidata.org/wiki/Q558049>
-  # Friedrich I., Markgraf von Baden, 1249 - 1268-10-29
-  # Markgraf von Baden (Titularmarkgraf von Verona) 1250-10-04
+  # Friedrich I. Markgraf von Baden, 1249 - 1268-10-29
+  # Titularmarkgraf von Baden und von Verona 1250-10-04
   # Herzog von Österreich 1250-10-04 - 1251
   gen:father <https://www.wikidata.org/wiki/Q548107> ;
   gen:mother <https://www.wikidata.org/wiki/Q454796> .
@@ -83,33 +120,67 @@
   # oo 1281-12-20 Friedrich VI., Graf von Zollern, d. 1298-05-04, https://www.wikidata.org/wiki/Q73981 (hohenzollern.ttl)
 <https://www.wikidata.org/wiki/Q77873>
   # Hermann VII., Markgraf von Baden, 1266 - 1291-07-12
+  # Markgraf von Baden 1288-11-19
   gen:father <https://www.wikidata.org/wiki/Q77858> ;
   gen:mother <https://www.wikidata.org/wiki/Q75290483> .
   # oo Agnes von Truhendingen, d. 1309-03-15 (ivrea.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q77873> , <https://www.wikidata.org/wiki/Q54819628> ;
 	gen:startDate "1278-10-06b" .
+<https://www.wikidata.org/wiki/Q77867>
+  # Rudolf II., Markgraf von Baden, d. 1295-02-14
+  # Markgraf von Baden 1288-11-19
+  gen:father <https://www.wikidata.org/wiki/Q77858> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75290483> .
+  # oo Adelheid von Ochsenstein, d. 1314-05-17
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q77867> , <https://www.wikidata.org/wiki/Q354859> ;
+	gen:startDate "1258" .
 <https://www.wikidata.org/wiki/Q1397735>
   # Hesso, Markgraf von Baden, 1268 - 1297-02-13
+  # Markgraf von Baden 1288-11-19
   gen:father <https://www.wikidata.org/wiki/Q77858> ;
   gen:mother <https://www.wikidata.org/wiki/Q75290483> .
   # oo Adelheid von Rieneck, 1265a - 1320b (loon.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q1397735> , <https://www.wikidata.org/wiki/Q54826245> ;
 	gen:startDate "1295b" .
+<https://www.wikidata.org/wiki/Q2721192>
+  # Rudolf III., Markgraf von Baden, d. 1332-02-02
+  # Markgraf von Baden 1288-11-19
+  gen:father <https://www.wikidata.org/wiki/Q77858> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75290483> .
 <https://www.wikidata.org/wiki/Q44192342>
   # Irmgard von Baden, 1270 - 1320-02-08
   gen:father <https://www.wikidata.org/wiki/Q77858> ;
   gen:mother <https://www.wikidata.org/wiki/Q75290483> .
   # oo 1296-06-21 Eberhard I., Graf von Württemberg, 1265-03-13 - 1325-06-05, https://www.wikidata.org/wiki/Q650606
 
+<https://www.wikidata.org/wiki/Q458062>
+  # Friedrich II., Markgraf von Baden, d. 1333-06-22
+  # Markgraf von Baden 1291-07-12
+  # in Baden-Baden und Eberstein
+  gen:father <https://www.wikidata.org/wiki/Q77873> ;
+  gen:mother <https://www.wikidata.org/wiki/Q54819628> .
+  # oo Agnes von Weinsberg, d. 1320-05-03
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q458062> , <#Agnes_von_Weinsberg> ;
+	gen:startDate "1312-10-16" .
+  # oo Margarete von Vaihingen, d. 1348
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q458062> , <#Margarete_von_Vaihingen> .
 <https://www.wikidata.org/wiki/Q77850>
   # Rudolf IV., Markgraf von Baden, d. 1348-06-25
+  # Markgraf von Baden 1291-07-12
   # in Pforzheim, Weissenstein und Stein 1309
   # Markgraf von Baden-Pforzheim
   # Markgraf von Baden-Baden
   gen:father <https://www.wikidata.org/wiki/Q77873> ;
   gen:mother <https://www.wikidata.org/wiki/Q54819628> .
+  # oo Luitgard von Bolanden, d. 1324/1325
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q77850> , <https://www.wikidata.org/wiki/Q61139783> ;
+	gen:startDate "1318-02-28b" .
   # oo Maria Gräfin von Oettingen, 1299b - 1369-06-10
   []
     gen:spouse <https://www.wikidata.org/wiki/Q77850> , <https://www.wikidata.org/wiki/Q55453455> ;
@@ -117,6 +188,7 @@
 <https://www.wikidata.org/wiki/Q1399912>
   owl:sameAs <https://www.wikidata.org/wiki/Q116005648> ;
   # Rudolf Hesso, Markgraf von Baden, 1290~ - 1335-08-17
+  # Markgraf von Baden 1297-02-13
   gen:father <https://www.wikidata.org/wiki/Q1397735> ;
   gen:mother <https://www.wikidata.org/wiki/Q54826245> .
   # oo Jeanne de Bourgogne, d. 1349 (ivrea.ttl)
@@ -124,8 +196,19 @@
     gen:spouse <https://www.wikidata.org/wiki/Q1399912> , <https://www.wikidata.org/wiki/Q2008585> ;
 	gen:startDate "1324a" .
 
+<https://www.wikidata.org/wiki/Q75902>
+  # Hermann IX., Markgraf von Baden, d. 1353-04-13
+  # Markgraf von Baden 1333-06-22
+  # in Eberstein
+  gen:father <https://www.wikidata.org/wiki/Q458062> ;
+  gen:mother <#Agnes_von_Weinsberg> .
+  # oo Matilde von Vaihingen, d. 1381-04-13
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75902> , <#Matilde_von_Vaihingen> ;
+	gen:startDate "1341-06-03b" .
 <https://www.wikidata.org/wiki/Q77866>
   # Friedrich III., Markgraf von Baden, 1327 - 1353-09-02
+  # Markgraf von Baden 1348-06-25
   # in Baden
   gen:father <https://www.wikidata.org/wiki/Q77850> ;
   gen:mother <https://www.wikidata.org/wiki/Q55453455> .
@@ -157,9 +240,9 @@
 
 <https://www.wikidata.org/wiki/Q77854>
   # Rudolf VI., Markgraf von Baden, d. 1372-03-21
-  # Graf von Eberstein 1353
-  # Markgraf von Baden 1353-09-02
-  # in Pforzheim 1358
+  # Markgraf von Baden in Eberstein 1353-04-13
+  # in Baden 1353-09-02
+  # in Pforzheim 1361-08-28
   # Graf von Löwenstein 1365
   gen:father <https://www.wikidata.org/wiki/Q77866> ;
   gen:mother <https://www.wikidata.org/wiki/Q116004885> .
@@ -172,9 +255,11 @@
   gen:father <https://www.wikidata.org/wiki/Q77866> ;
   gen:mother <https://www.wikidata.org/wiki/Q116004885> .
   # oo 1363-11-10b Gottfried II. von Leiningen-Rixingen, d. 1380b, https://www.wikidata.org/wiki/Q27127276
+  # oo 1380a Heinrich Graf von Lützelstein, d. 1394, https://www.wikidata.org/wiki/Q27131588
 
 <https://www.wikidata.org/wiki/Q77875>
   # Bernhard I., Markgraf von Baden, 1364 - 1431-04-05
+  # Markgraf von Baden 1372-03-21
   # in Pforzheim, Durlach, Eberstein und Kuppenheim
   # in Hachberg und Höhingen 1415
   gen:father <https://www.wikidata.org/wiki/Q77854> ;
@@ -195,6 +280,7 @@
   # oo 1376-07-04 Heinrich XIII., Graf von Henneberg-Schleusingen, 1352-06-19 - 1405-08-03a/-12-26b, https://www.wikidata.org/wiki/Q61139173 (hohenzollern.ttl)
 <https://www.wikidata.org/wiki/Q98792>
   # Rudolf VII., Markgraf von Baden, 1372~ - 1391-01-14
+  # Markgraf von Baden 1372-03-21
   # in Baden
   gen:father <https://www.wikidata.org/wiki/Q77854> ;
   gen:mother <https://www.wikidata.org/wiki/Q31191585> .
@@ -220,7 +306,6 @@
   # Markgraf von Baden 1431-04-05
   # Graf zu Sponheim 1437
   # in Eberstein und Gernsbach 1425
-  # in parts of Sponheim 1437
   # in Lahr und Mahlberg 1442
   gen:father <https://www.wikidata.org/wiki/Q77875> ;
   gen:mother <https://www.wikidata.org/wiki/Q44191988> .
@@ -250,8 +335,13 @@
     gen:spouse <https://www.wikidata.org/wiki/Q86389> , <https://www.wikidata.org/wiki/Q114431> ;
 	gen:startDate "1447-07-15" .
 <https://www.wikidata.org/wiki/Q523903>
-  # Bernhard II., Markgraf von Baden, 1428 - 1458-07-15
-  # in Pforzheim 1453
+  # Bernhard II. Markgraf von Baden, 1428 - 1458-07-15
+  gen:father <https://www.wikidata.org/wiki/Q74019> ;
+  gen:mother <https://www.wikidata.org/wiki/Q540767> .
+<https://www.wikidata.org/wiki/Q86386>
+  # Georg, Markgraf von Baden, Bischof von Metz, 1433/1436 - 1484-02-11
+  # regierender Markgraf von Baden 1453-10-13 - 1454
+  # Bischof in Metz 1459-07-02
   gen:father <https://www.wikidata.org/wiki/Q74019> ;
   gen:mother <https://www.wikidata.org/wiki/Q540767> .
 <https://www.wikidata.org/wiki/Q443876>
@@ -261,7 +351,7 @@
   # oo 1446 Albrecht III. Achilles, Kurfürst von Brandenburg, 1414-11-09 - 1486-03-11, https://www.wikidata.org/wiki/Q453771 (hohenzollern.ttl)
 
 <https://www.wikidata.org/wiki/Q1665189>
-  # Katherina Markgräfin von Baden, 1449-01-15 - 1484-05-08
+  # Katharina Markgräfin von Baden, 1449-01-15 - 1484-05-08
   gen:father <https://www.wikidata.org/wiki/Q86389> ;
   gen:mother <https://www.wikidata.org/wiki/Q114431> .
   # oo 1464-05-19 Georg III., Graf von Werdenberg-Sargans, 1445~ - 1500-03-12, https://www.wikidata.org/wiki/Q28839696 (württemberg.ttl)
@@ -277,7 +367,7 @@
   # in Baden, Pforzheim, Durlach und ½ Eberstein 1482
   # in Rodemachern, Bolchen, Reichersberg, Hesperingen und Useldingen 1492
   # in Lahr und Mahlberg 1497
-  # in Sausenberg, Rötteln und Badenweiler 1503
+  # in Sausenberg, Rötteln und Badenweiler 1503-09-09
   gen:father <https://www.wikidata.org/wiki/Q86389> ;
   gen:mother <https://www.wikidata.org/wiki/Q114431> .
   # oo Ottilie Gräfin von Katzenelnbogen, 1451 - 1517-08-15 (reginare.ttl)
@@ -285,8 +375,8 @@
     gen:spouse <https://www.wikidata.org/wiki/Q66602> , <https://www.wikidata.org/wiki/Q95593> ;
 	gen:startDate "1468-12-19" .
 <https://www.wikidata.org/wiki/Q110752>
-  # Albrecht, Markgraf von Baden, 1456-01-25 - 1488-07-23
-  # in Hachberg 1482
+  # Albrecht Markgraf von Baden, 1456-01-25 - 1488-07-23
+  # (in Hachberg 1482)
   gen:father <https://www.wikidata.org/wiki/Q86389> ;
   gen:mother <https://www.wikidata.org/wiki/Q114431> .
 
@@ -319,7 +409,7 @@
   gen:father <https://www.wikidata.org/wiki/Q66602> ;
   gen:mother <https://www.wikidata.org/wiki/Q95593> .
   # oo 1503b Franz Wolfgang, Graf von Hohenzollern, 1483 - 1517-06-16, https://www.wikidata.org/wiki/Q1449533
-  # oo 1526-12-17b Johann von Ow zu Wachendorf
+  # oo 1526-12-17b Johann von Ow zu Wachendorf, d. 1571-10-29
 <https://www.wikidata.org/wiki/Q107693>
   # Beatrix Markgräfin von Baden, 1492-01-22 - 1535-04-04
   gen:father <https://www.wikidata.org/wiki/Q66602> ;
@@ -342,16 +432,16 @@
   # in Baden, Eberstein, Lahr und Mahlberg 1535
   gen:father <https://www.wikidata.org/wiki/Q66602> ;
   gen:mother <https://www.wikidata.org/wiki/Q95593> .
-  # oo Françoise de Luxembourg, d. 1566-06-17
+  # oo Françoise de Luxembourg, d. 1566-06-17 (limburg.ttl)
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q72923> , <limburg.ttl#Françoise_de_Luxembourg> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q72923> , <https://www.wikidata.org/wiki/Q104795024> ;
 	gen:startDate "1535" .
 
 <https://www.wikidata.org/wiki/Q71813>
   # Philibert, Markgraf von Baden-Baden, 1536-01-22 - 1569-10-03
   # Markgraf von Baden-Baden 1536-06-29
   gen:father <https://www.wikidata.org/wiki/Q72923> ;
-  gen:mother <limburg.ttl#Françoise_de_Luxembourg> .
+  gen:mother <https://www.wikidata.org/wiki/Q104795024> .
   # oo Mechthild von Bayern, 1532-07-12 - 1565-11-02 (wittelsbacher.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q71813> , <https://www.wikidata.org/wiki/Q86349> ;
@@ -359,7 +449,7 @@
 <https://www.wikidata.org/wiki/Q64984> # -> Baden-Rodemachern 1
   # Christoph II., Markgraf von Baden-Rodemachern, 1537-02-26 - 1575-08-02
   gen:father <https://www.wikidata.org/wiki/Q72923> ;
-  gen:mother <limburg.ttl#Françoise_de_Luxembourg> .
+  gen:mother <https://www.wikidata.org/wiki/Q104795024> .
 
 <https://www.wikidata.org/wiki/Q87072>
   # Jakobe Markgräfin von Baden-Baden, 1558-01-16 - 1597-09-03
@@ -371,6 +461,11 @@
   # Markgraf von Baden-Baden 1569-10-03
   gen:father <https://www.wikidata.org/wiki/Q71813> ;
   gen:mother <https://www.wikidata.org/wiki/Q86349> .
+<https://www.wikidata.org/wiki/Q10826855>
+  # Anna Maria Markgräfin von Baden, 1562-05-22 - 1583-04-25
+  gen:father <https://www.wikidata.org/wiki/Q71813> ;
+  gen:mother <https://www.wikidata.org/wiki/Q86349> .
+  # oo 1578-01-27 Wilhelm von Rosenberg, 1535-03-10 - 1592-08-31, https://www.wikidata.org/wiki/Q1357841 (welfen.ttl)
 <https://www.wikidata.org/wiki/Q25160495>
   # Marie Salome Markgräfin von Baden, 1563-02-01 - 1600-04-19
   gen:father <https://www.wikidata.org/wiki/Q71813> ;
@@ -384,7 +479,7 @@
   # Markgraf von Baden-Rodemachern 1556
   # in Useldingen, Pittingen und Roussy 1566
   gen:father <https://www.wikidata.org/wiki/Q72923> ;
-  gen:mother <mark.ttl#Françoise_de_Luxembourg> .
+  gen:mother <https://www.wikidata.org/wiki/Q104795024> .
   # oo Cecilia Vasa prinsessa av Sverige, 1540-11-16 - 1627-01-27 (vasa.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q64984> , <https://www.wikidata.org/wiki/Q271940> ;
@@ -427,7 +522,7 @@
   gen:mother <https://www.wikidata.org/wiki/Q1896504> .
 
 <https://www.wikidata.org/wiki/Q65809>
-  # Ferdinand Maximilian, Erbprinz von Baden-Baden, 1625-09-23 - 1669-11-04
+  # Ferdinand Maximilian Erbprinz von Baden-Baden, 1625-09-23 - 1669-11-04
   gen:father <https://www.wikidata.org/wiki/Q66842> ;
   gen:mother <https://www.wikidata.org/wiki/Q97022> .
   # oo Luisa Cristina di Savoia-Carignano, 1627-08-01 - 1689-07-07 (savoyen.ttl)
@@ -465,6 +560,7 @@
 
 <https://www.wikidata.org/wiki/Q64971>
   # Ludwig Georg Simpert, Markgraf von Baden-Baden, 1702-06-07 - 1761-10-22
+  # Markgraf von Baden-Baden (1707-01-04) 1727
   # in 2/5 Grafschaft Sponheim
   # in Grafschaft Eberstein 1705
   # Herr zu Lobositz, etc 1716
@@ -485,12 +581,19 @@
   # oo 1724-07-13 Louis Ier de Bourbon, duc d’Orléans, 1703-08-04 - 1752-02-04, https://www.wikidata.org/wiki/Q363992 (capet.ttl)
 <https://www.wikidata.org/wiki/Q302561>
   # August Georg Simpert, Markgraf von Baden-Baden, 1706-01-04 - 1771-10-21
+  # Markgraf von Baden-Baden
   gen:father <https://www.wikidata.org/wiki/Q58755> ;
   gen:mother <https://www.wikidata.org/wiki/Q70787> .
   # oo Marie Victoire Pauline Princesse d’Arenberg, 1714-10-26 - 1793-04-13 (ligne.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q302561> , <https://www.wikidata.org/wiki/Q70771> ;
 	gen:startDate "1735-12-07" .
+
+<https://www.wikidata.org/wiki/Q1329751>
+  # _Elisabeth Augusta_ Franziska Eleonore Markgräfin von Baden-Baden, 1726-03-16 - 1789--01-07
+  gen:father <https://www.wikidata.org/wiki/Q64971> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3847125> .
+  # oo 1775-02-02 Michael Wenzel Graf von Althann, 1743-07-22 - 1810-01-22, https://www.wikidata.org/wiki/Q11778414 (lobkowitz.ttl)
 
 
 # Baden-Rodemachern 2
@@ -518,7 +621,7 @@
   gen:father <https://www.wikidata.org/wiki/Q95620> ;
   gen:mother <https://www.wikidata.org/wiki/Q109686936> .
   # oo 1662-11-12 Philipp, Fürst von Hohenzollern-Hechingen, 1616-06-24 - 1671-01-24, https://www.wikidata.org/wiki/Q479537
-<#Maria_Eleonore_Sophia_von_Baden-Rodemachern>
+<https://www.wikidata.org/wiki/Q110260611>
   # Maria Eleonore Sophia Markgräfin von Baden-Rodemachern, 1641-08-23 - 1668-04-18
   gen:father <https://www.wikidata.org/wiki/Q95620> ;
   gen:mother <leiningen.ttl#Marie_Sidonia_von_Daun-Falkenstein> .
@@ -575,12 +678,19 @@
 <https://www.wikidata.org/wiki/Q110047>
   # Bernhard von Baden-Durlach, Markgraf von Baden-Pforzheim, 1517 - 1553-01-20
   # Markgraf von Baden-Pforzheim 1552-09-26
+  # in Pforzheim, Durlach
   gen:father <https://www.wikidata.org/wiki/Q70183> ;
   gen:mother <https://www.wikidata.org/wiki/Q102509> .
+<#Margarete_von_Baden-Durlach>
+  # Margarete Markgräfin von Baden-Durlach, 1519 - 1571
+  gen:father <https://www.wikidata.org/wiki/Q70183> ;
+  gen:mother <https://www.wikidata.org/wiki/Q102509> .
+  # oo 1538-11-12 Wolfgang II. Graf von Oettingen, 1511 - 1573-03-01, https://www.wikidata.org/wiki/Q44192039
 <https://www.wikidata.org/wiki/Q513315>
   # Karl II., Markgraf von Baden-Durlach, 1529-07-24 - 1577-03-23
-  # Markgraf von Baden-Durlach 1553-02-06
-  # in Pforzheim, Durlach und Hochberg
+  # Markgraf von Baden-Pforzheim 1553-02-06, Baden-Durlach 1565
+  # in obere Markgrafschaft 1552-09-26
+  # in Pforzheim, Durlach 1553-02-06
   gen:father <https://www.wikidata.org/wiki/Q70183> ;
   gen:mother <https://www.wikidata.org/wiki/Q102509> .
   # oo Kunigunde Markgräfin von Brandenburg-Kulmbach, 1523-06-17 - 1558-02-27 (hohenzollern.ttl)
@@ -770,7 +880,7 @@
   gen:mother <https://www.wikidata.org/wiki/Q3629556> .
   # oo 1697-05-16 Eberhard IV. Ludwig, Herzog von Württemberg, 1676-09-19 - 1733-10-31, https://www.wikidata.org/wiki/Q61169
 <https://www.wikidata.org/wiki/Q2670667>
-  # Albertina Friederike Markgräfin von Baden-Durlach, 1682-07-03 - 1755-12-22
+  # Albertine Friederike Markgräfin von Baden-Durlach, 1682-07-03 - 1755-12-22
   gen:father <https://www.wikidata.org/wiki/Q62231> ;
   gen:mother <https://www.wikidata.org/wiki/Q3629556> .
   # oo 1704-09-02 Christian August von Schleswig-Holstein-Gottorf, Fürstbischof von Eutin, 1673-01-11 - 1726-04-24, https://www.wikidata.org/wiki/Q62259 (oldenburg.ttl)
@@ -829,7 +939,7 @@
   # Friedrich Prinz von Baden, 1756-08-29 - 1817-05-28
   # zu Salmansweiler und Petershausen
   gen:father <https://www.wikidata.org/wiki/Q213671> ;
-  gen:mother <https://www.wikidata.org/wiki/Q542719> .
+  gen:mother <https://www.wikidata.org/wiki/Q288703> .
   # oo Luise Prinzessin von Nassau-Usingen, 1776-08-16 - 1829-02-19
   []
     gen:spouse <https://www.wikidata.org/wiki/Q1463561> , <nassau.ttl#Luise_von_Nassau-Usingen> ;
@@ -838,7 +948,7 @@
   # Ludwig I. Wilhelm August, Großherzog von Baden, 1763-02-09 - 1830-03-30
   # Großherzog von Baden 1818-12-08
   gen:father <https://www.wikidata.org/wiki/Q213671> ;
-  gen:mother <https://www.wikidata.org/wiki/Q542719> .
+  gen:mother <https://www.wikidata.org/wiki/Q288703> .
 <https://www.wikidata.org/wiki/Q57795>
   # Karl _Leopold_ Friedrich, Großherzog von Baden, 1790-08-29 - 1852-04-24
   # Großherzog von Baden 1830-03-30
@@ -887,7 +997,7 @@
   # Großherzog von Baden 1811-06-10
   gen:father <https://www.wikidata.org/wiki/Q60522> ;
   gen:mother <https://www.wikidata.org/wiki/Q237730> .
-  # oo Stéphanie de Beauharnais, 1789-08-28 - 1860-01-29
+  # oo Stéphanie de Beauharnais, 1789-08-28 - 1860-01-29 (wittelsbacher.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q57799> , <https://www.wikidata.org/wiki/Q62024> ;
 	gen:startDate "1806-04-08" .
@@ -985,7 +1095,7 @@
   # oo 1889-07-02 Friedrich II., Herzog von Anhalt, 1856-08-19 - 1918-04-21, https://www.wikidata.org/wiki/Q657137 (askanier.ttl)
 <https://www.wikidata.org/wiki/Q76908>
   # _Maximilian_ Alexander Friedrich Wilhelm Prinz von Baden, 1867-07-10 - 1929-11-06
-  # Prinz von Baden 1928-08-09
+  # Chef des Hauses Baden 1928-08-09
   gen:father <https://www.wikidata.org/wiki/Q215872> ;
   gen:mother <https://www.wikidata.org/wiki/Q270516> .
   # oo Marie Louise Prinzessin von Hannover und Cumberland, 1879-10-11 - 1948-01-31 (welfen.ttl)
@@ -1000,9 +1110,10 @@
   # oo 1924-09-17 Wolfgang Prinz von Hessen, 1896-11-06 - 1989-07-12, https://www.wikidata.org/wiki/Q67038 (reginare.ttl)
 <https://www.wikidata.org/wiki/Q62602>
   # Berthold Friedrich Wilhelm Ernst August Heinrich Karl Markgraf von Baden, 1906-02-24 - 1963-10-27
-  # Markgraf von Baden 1929-11-06
+  # Chef des Hauses Baden 1929-11-06
   gen:father <https://www.wikidata.org/wiki/Q76908> ;
-  gen:mother <https://www.wikidata.org/wiki/Q271998> .
+  gen:mother <https://www.wikidata.org/wiki/Q271998> ;
+  gen:adoptedBy <https://www.wikidata.org/wiki/Q57414> , <https://www.wikidata.org/wiki/Q236176> . # 1927-08-08
   # oo Theodora Prinzessin von Griechenland und Dänemark, 1906-05-30 - 1969-10-16
   []
     gen:spouse <https://www.wikidata.org/wiki/Q62602> , <https://www.wikidata.org/wiki/Q255382> ;
@@ -1014,7 +1125,8 @@
   gen:mother <https://www.wikidata.org/wiki/Q255382> .
   # oo 1957-06-05 (rel 1957-06-06) (div 1981) Tomislav Karađorđević Prinz von Jugoslawien, 1928-01-09 - 2000-07-12, https://www.wikidata.org/wiki/Q594386 (oldenburg.ttl)
 <https://www.wikidata.org/wiki/Q1913939>
-  # Maximilian (_Max_) Andreas Friedrich Gustav Ernst August Bernhard Markgraf von Baden Herzog von Zähringen, b. 1933-07-03
+  # Maximilian (_Max_) Andreas Friedrich Gustav Ernst August Bernhard Markgraf von Baden, 1933-07-03 - 2022-12-29
+  # Chef des Hauses Baden 1963-10-27
   gen:father <https://www.wikidata.org/wiki/Q62602> ;
   gen:mother <https://www.wikidata.org/wiki/Q255382> .
   # oo (rel 1966-09-30) Valerie Isabella Habsburg-Lothringen (Erzherzogin von Österreich), b. 1941-05-23 (lothringen.ttl)
@@ -1031,12 +1143,13 @@
 	gen:startDate "1967-09-21" .
 
 <https://www.wikidata.org/wiki/Q75383612>
-  # Marie Louise Elisabeth Mathilde Theodora Cecilie Sarah Charlotte Prinzessin von Baden, b. 1969-07-03
+  # Marie _Louise_ Elisabeth Mathilde Theodora Cecilie Sarah Charlotte Prinzessin von Baden, b. 1969-07-03
   gen:father <https://www.wikidata.org/wiki/Q1913939> ;
   gen:mother <https://www.wikidata.org/wiki/Q6425396> .
   # oo 1999-09-15 (rel 1999-09-25) Richard Dudley Baker, b. 1936-03-30, https://www.wikidata.org/wiki/Q75566258
 <https://www.wikidata.org/wiki/Q96731>
-  # Bernhard Max Friedrich August Gustav Louis Kraft Prinz von Baden, b. 1970-05-27
+  # Bernhard Max Friedrich August Gustav Louis Kraft Markgraf von Baden, b. 1970-05-27
+  # Chef des Hauses Baden 2022-12-29
   gen:father <https://www.wikidata.org/wiki/Q1913939> ;
   gen:mother <https://www.wikidata.org/wiki/Q6425396> .
   # oo (rel 2001-06-23) Stephanie Anne Kaul, b. 1966-06-27
@@ -1082,16 +1195,70 @@
 
 <https://www.wikidata.org/wiki/Q77849>
   # Heinrich II., Markgraf von Baden-Hachberg, 1231b - 1297a
+  # Markgraf von Baden-Hachberg 1231-07-02
   gen:father <https://www.wikidata.org/wiki/Q98780> ;
   gen:mother <https://www.wikidata.org/wiki/Q44191491> .
-  # oo Anna von Üsenberg, daughter of Rudolf von Üsenberg
+  # oo Anna von Üsenberg
   []
     gen:spouse <https://www.wikidata.org/wiki/Q77849> , <#Anna_von_Üsenberg> .
 
+<https://www.wikidata.org/wiki/Q1418503>
+  # Heinrich III., Markgraf von Baden-Hachberg, d. 1330
+  # Markgraf von Baden-Hachberg 1297a
+  gen:father <https://www.wikidata.org/wiki/Q77849> ;
+  gen:mother <#Anna_von_Üsenberg> .
+  # oo Agnes von Hohenberg, d. 1310-04-14, daughter of Ulrich von Hohenberg († 1281)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1418503> , <#Agnes_von_Hohenberg> ;
+	gen:startDate "1307-02-12" .
 <https://www.wikidata.org/wiki/Q78393> # -> Hachberg-Sausenberg
   # Rudolf I., Markgraf von Hachberg-Sausenberg, d. 1313
   gen:father <https://www.wikidata.org/wiki/Q77849> ;
   gen:mother <#Anna_von_Üsenberg> .
+
+<https://www.wikidata.org/wiki/Q1597813>
+  # Heinrich IV., Markgraf von Baden-Hachberg, d. 1369
+  # Markgraf von Baden-Hachberg 1330
+  gen:father <https://www.wikidata.org/wiki/Q1418503> ;
+  gen:mother <#Agnes_von_Hohenberg> .
+  # oo Anna von Üsenberg, d. 1356-07-12
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1597813> , <#Anna_von_Üsenberg_d._1356> .
+
+<https://www.wikidata.org/wiki/Q685758>
+  # Otto I., Markgraf von Baden-Hachberg, d. 1386-07-09
+  # Markgraf von Baden-Hachberg 1369
+  gen:father <https://www.wikidata.org/wiki/Q1597813> ;
+  gen:mother <#Anna_von_Üsenberg_d._1356> .
+  # oo Elisabeth Malterer, daughter of Johann Malterer
+<https://www.wikidata.org/wiki/Q1692192>
+  # Johann, Markgraf von Baden-Hachberg, d. 1409
+  # Markgraf von Baden-Hachberg 1386-07-09
+  gen:father <https://www.wikidata.org/wiki/Q1597813> ;
+  gen:mother <#Anna_von_Üsenberg_d._1356> .
+<https://www.wikidata.org/wiki/Q1616012>
+  # Hesso, Markgraf von Baden-Hachberg, d. 1410
+  # Markgraf von Baden-Hachberg 1386-07-09
+  gen:father <https://www.wikidata.org/wiki/Q1597813> ;
+  gen:mother <#Anna_von_Üsenberg_d._1356> .
+  # oo Agnes von Geroldseck, 1365 - 1404
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1616012> , <#Agnes_von_Geroldseck> .
+  # oo Margaretha von Tübingen
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1616012> , <#Margaretha_von_Tübingen> ;
+	gen:startDate "1381-04-20" .
+
+<https://www.wikidata.org/wiki/Q2800255>
+  # Otto II., Markgraf von Baden-Hachberg, d. 1418
+  # Markgraf von Baden-Hachberg 1410 - 1415-07-25
+  gen:father <https://www.wikidata.org/wiki/Q1616012> ;
+  gen:mother <#Agnes_von_Geroldseck> .
+<#Margaretha_von_Hachberg>
+  # Margaretha Markgräfin von Hachberg, d. 1417/1426
+  gen:father <https://www.wikidata.org/wiki/Q1616012> ;
+  gen:mother <#Margaretha_von_Tübingen> .
+  # oo 1405-07-25 Friedrich IX. (VII.), Graf von Leiningen-Dagsburg, d. 1434/1437, https://www.wikidata.org/wiki/Q26878057
 
 
 # Hachberg-Sausenberg
@@ -1101,54 +1268,71 @@
   # Landgraf im Breisgau, Mitherr zu Rötteln
   gen:father <https://www.wikidata.org/wiki/Q77849> ;
   gen:mother <#Anna_von_Üsenberg> .
-  # oo Agnes von Rötteln, daughter of Otto von Rötteln
+  # oo Agnes von Rötteln
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q78393> , <#Agnes_von_Rötteln> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q78393> , <https://www.wikidata.org/wiki/Q116006773> ;
 	gen:startDate "1299b" .
 
+<https://www.wikidata.org/wiki/Q77870>
+  # Heinrich, Markgraf von Hachberg-Sausenberg , 1300 - 1318
+  # Markgraf von Hachberg-Sausenberg 1313
+  gen:father <https://www.wikidata.org/wiki/Q78393> ;
+  gen:mother <https://www.wikidata.org/wiki/Q116006773> .
 <https://www.wikidata.org/wiki/Q98795>
   # Rudolf II., Markgraf von Hachberg-Sausenberg, 1301 - 1352
   # in Rötteln 1326
   # Landgraf im Breisgau 1334
   # Landgraf von Sausenberg 1347
   gen:father <https://www.wikidata.org/wiki/Q78393> ;
-  gen:mother <#Agnes_von_Rötteln> .
-  # oo Katharina von Thierstein, d. 1385-03-21, daughter of Walram II., Graf von Thierstein, Pfalzgraf von Basel and Agnes von Hohenburg-Ahrburg
+  gen:mother <https://www.wikidata.org/wiki/Q116006773> .
+  # oo Katharina von Thierstein, d. 1385-03-21
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q98795> , <#Katharina_von_Thierstein> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q98795> , <https://www.wikidata.org/wiki/Q116006774> ;
 	gen:startDate "1341-01-13" .
+<https://www.wikidata.org/wiki/Q77879>
+  # Otto I., Markgraf von Hachberg-Sausenberg, 1302 - 1384
+  # Markgraf von Hachberg-Sausenberg 1318
+  gen:father <https://www.wikidata.org/wiki/Q78393> ;
+  gen:mother <https://www.wikidata.org/wiki/Q116006773> .
 
 <https://www.wikidata.org/wiki/Q97064>
   # Rudolf III., Markgraf von Hachberg-Sausenberg, 1343 - 1428-02-08
+  # Markgraf von Hachberg-Sausenberg (1352) 1364
   # in ½ Sausenberg, Brombach und Lörrach 1366
   # Landgraf im Breisgau 1395
   gen:father <https://www.wikidata.org/wiki/Q98795> ;
-  gen:mother <#Katharina_von_Thierstein> .
+  gen:mother <https://www.wikidata.org/wiki/Q116006774> .
   # oo Anna von Freiburg-Neuenburg, 1374 – 1427
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q97064> , <#Anna_von_Freiburg-Neuenburg> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q97064> , <https://www.wikidata.org/wiki/Q116006776> ;
 	gen:startDate "1387-02-13" .
 
 <https://www.wikidata.org/wiki/Q105350>
   # Wilhelm, Markgraf von Hachberg-Sausenberg, 1406-07-11 - 1482-08-15
+  # Markgraf von Hachberg-Sausenberg 1428-02-08 - 1441-06-21
   # in ½ Bregenz und Burg Hoheneck
   # Landgraf im Breisgau 1437
   # Landgraf im Elsass 1437/44
   gen:father <https://www.wikidata.org/wiki/Q97064> ;
-  gen:mother <#Anna_von_Freiburg-Neuenburg> .
+  gen:mother <https://www.wikidata.org/wiki/Q116006776> .
   # oo Elisabeth von Montfort-Bregenz, d. 1457-06-07
   []
     gen:spouse <https://www.wikidata.org/wiki/Q105350> , <https://www.wikidata.org/wiki/Q28648665> ;
 	gen:startDate "1425~" .
 
+<https://www.wikidata.org/wiki/Q2195384>
+  # Hugo, Markgraf von Hachberg-Sausenberg, 1424~ - 1444
+  # Markgraf von Hachberg-Sausenberg 1441-06-21
+  gen:father <https://www.wikidata.org/wiki/Q105350> ;
+  gen:mother <https://www.wikidata.org/wiki/Q28648665> .
 <https://www.wikidata.org/wiki/Q95397>
-  # Rudolf IV., Markgraf von Hachberg-Sausenberg, 1427 - 1487-04-12
-  # Markgraf von Hachberg-Sausenberg 1444
-  # Graf von Neuenburg 1447
+  # Rudolf IV., Markgraf von Hachberg-Sausenberg, 1427~ - 1487-04-12
+  # Markgraf von Hachberg-Sausenberg 1441-06-21
+  # Graf von Neuenburg 1458-02-19
   # Herr von Badenweiler
   gen:father <https://www.wikidata.org/wiki/Q105350> ;
   gen:mother <https://www.wikidata.org/wiki/Q28648665> .
-  # oo Marguerite de Vienne, d. 1477, daughter of Guillaume de Vienne, Sire de Saint-Georges, d'Arc-en-Barrois and Alix de Châlons, Dame de Bussy
+  # oo Marguerite de Vienne, d. 1477
   []
     gen:spouse <https://www.wikidata.org/wiki/Q95397> , <#Marguerite_de_Vienne> ;
 	gen:startDate "1447-08-03" .
@@ -1170,10 +1354,228 @@
 
 <https://www.wikidata.org/wiki/Q2741304>
   # Johanna von Hachberg-Sausenberg, 1485 - 1543-09-23
+  # Gräfin von Neuenburg 1503-09-09 - 1512, 1529-08-10
   gen:father <https://www.wikidata.org/wiki/Q90409> ;
   gen:mother <https://www.wikidata.org/wiki/Q64495717> .
   # oo 1504 Louis I d’Orléans, duc de Longueville, 1480 - 1516-08-11, https://www.wikidata.org/wiki/Q2059325 (capet.ttl)
 
+
+# Zähringen
+<https://www.wikidata.org/wiki/Q650325>
+  # Berthold II., Herzog von Schwaben, 1050~ - 1111-04-12
+  # Herzog von Schwaben 1092 - 1098
+  # Herzog von Zähringen 1098
+  gen:father <https://www.wikidata.org/wiki/Q700087> ;
+  gen:mother <https://www.wikidata.org/wiki/Q22674508> .
+  # oo Agnes von Rheinfelden, 1065 - 1111-12-19 (savoyen.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q650325> , <https://www.wikidata.org/wiki/Q394777> .
+
+<https://www.wikidata.org/wiki/Q650536>
+  # Berthold III., Herzog von Zähringen, 1085 - 1122-05-03
+  # Herzog von Zähringen 1111-04-12
+  gen:father <https://www.wikidata.org/wiki/Q650325> ;
+  gen:mother <https://www.wikidata.org/wiki/Q394777> .
+  # oo Sophie von Bayern, 1105~ - 1045-07-10~ (welfen.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q650536> , <https://www.wikidata.org/wiki/Q14365916> .
+<https://www.wikidata.org/wiki/Q650499>
+  # Konrad I., Herzog von Zähringen, 1090~ - 1152-01-08
+  # Herzog von Zähringen 1122-05-03
+  gen:father <https://www.wikidata.org/wiki/Q650325> ;
+  gen:mother <https://www.wikidata.org/wiki/Q394777> .
+  # oo Clemence de Namur, d. 1158-12-28 (wassenberg.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q650499> , <https://www.wikidata.org/wiki/Q61577460> .
+<https://www.wikidata.org/wiki/Q117353944>
+  # Agnes von Zähringen
+  gen:father <https://www.wikidata.org/wiki/Q650325> ;
+  gen:mother <https://www.wikidata.org/wiki/Q394777> .
+  # oo Guillaume II, comte de Bourgogne, 1075 - 1125, https://www.wikidata.org/wiki/Q2065822 (ivrea.ttl)
+
+<https://www.wikidata.org/wiki/Q464064>
+  # Clementia von Zähringen, d. 1167/1173
+  gen:father <https://www.wikidata.org/wiki/Q650499> ;
+  gen:mother <https://www.wikidata.org/wiki/Q61577460> .
+  # oo 1150~ (div 1162) Heinrich der Löwe, Herzog von Sachsen und von Bayern, 1129 - 1195-08-06, https://www.wikidata.org/wiki/Q105378 (welfen.ttl)
+  # oo 1164 Humbert III, comte de Savoie, 1136-08-04 - 1189-03-04, https://www.wikidata.org/wiki/Q664561 (savoyen.ttl)
+<https://www.wikidata.org/wiki/Q69334>
+  # Berthold IV., Herzog von Zähringen und Burgund, 1125 - 1186-12-08
+  # Herzog von Zähringen 1152-01-08
+  gen:father <https://www.wikidata.org/wiki/Q650499> ;
+  gen:mother <https://www.wikidata.org/wiki/Q61577460> .
+  # oo Heilwig von Froburg
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q69334> , <https://www.wikidata.org/wiki/Q61577490> .
+  # oo Ide de Lorraine, comtesse de Boulogne, 1160 - 1216 (lothringen.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q69334> , <https://www.wikidata.org/wiki/Q2419674> ;
+	gen:startDate "1183" .
+<https://www.wikidata.org/wiki/Q25034> # -> Teck
+  # Adalbert I., Herzog von Teck, 1035~ - 1195~
+  gen:father <https://www.wikidata.org/wiki/Q650499> ;
+  gen:mother <https://www.wikidata.org/wiki/Q61577460> .
+
+<https://www.wikidata.org/wiki/Q20498538>
+  # Agnes von Zähringen, 1158 - 1239-05-10
+  gen:father <https://www.wikidata.org/wiki/Q69334> ;
+  gen:mother <https://www.wikidata.org/wiki/Q61577490> .
+  # oo 1181 Egino IV., Graf von Urach, 1160~ - 1230-01-12, https://www.wikidata.org/wiki/Q1298026
+<https://www.wikidata.org/wiki/Q690990>
+  # Berthold V., Herzog von Zähringen, 1160~ - 1218-02-18
+  # Herzog von Zähringen 1186-12-08
+  gen:father <https://www.wikidata.org/wiki/Q69334> ;
+  gen:mother <https://www.wikidata.org/wiki/Q61577490> .
+  # oo Clémence d’Auxonne (ivrea.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q690990> , <https://www.wikidata.org/wiki/Q117358189> .
+
+
+# Teck
+<https://www.wikidata.org/wiki/Q25034>
+  # Adalbert I., Herzog von Teck, 1035~ - 1195~
+  # Herzog von Teck 1187a
+  gen:father <https://www.wikidata.org/wiki/Q650499> ;
+  gen:mother <https://www.wikidata.org/wiki/Q61577460> .
+  # oo Adelheid
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q25034> , <https://www.wikidata.org/wiki/Q110562365> .
+
+<https://www.wikidata.org/wiki/Q347467>
+  # Adalbert II., Herzog von Teck, d. 1219-09-08b
+  # Herzog von Teck 1195~
+  gen:father <https://www.wikidata.org/wiki/Q25034> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110562365> .
+
+<https://www.wikidata.org/wiki/Q1782079>
+  # Konrad I., Herzog von Teck, 1195~ - 1244/1249
+  # Herzog von Teck 1219-09-08b
+  gen:father <https://www.wikidata.org/wiki/Q347467> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110562127> . # ???
+  # oo ??? von Henneberg (askanier.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1782079> , <https://www.wikidata.org/wiki/Q110562128> .
+
+<https://www.wikidata.org/wiki/Q1874596>
+  owl:sameAs <https://www.wikidata.org/wiki/Q110572218> ;
+  # Ludwig I., Herzog von Teck, d. 1283
+  # Herzog von Teck 1244/1249
+  gen:father <https://www.wikidata.org/wiki/Q1782079> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110562128> .
+<https://www.wikidata.org/wiki/Q1782105>
+  # Konrad II., Herzog von Teck, 1235~ - 1292-05-01/-02
+  # Herzog von Teck
+  gen:father <https://www.wikidata.org/wiki/Q1782079> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110562128> .
+  # oo Uta von Zweibrücken, Erbin von Bretten, d. 1290b (leiningen.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1782105> , <https://www.wikidata.org/wiki/Q55080607> ;
+	gen:startDate "1282b" .
+  # oo Adelheid von Burgau, d. 1310-09-10a
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1782105> , <#Adelheid_von_Burgau> ;
+	gen:startDate "1290a" .
+
+<https://www.wikidata.org/wiki/Q28102057>
+  owl:sameAs <https://www.wikidata.org/wiki/Q110572217> ;
+  # Hermann, Herzog von Teck, 1260~ - 1313-12-20/1314-04-17
+  # Herzog von Teck 1282
+  gen:father <https://www.wikidata.org/wiki/Q1874596> .
+  # oo Beatrix von Geroldseck über Rheim, d. 1302a
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q28102057> , <https://www.wikidata.org/wiki/Q110572221> .
+<https://www.wikidata.org/wiki/Q116004980>
+  # Agnes von Teck, d. 1296-03-07
+  gen:father <https://www.wikidata.org/wiki/Q1874596> .
+  # oo Konrad I., Herr von Lichtenberg, 1251 - 1294-02-26/1305-01-18b, https://www.wikidata.org/wiki/Q44191605 (leiningen.ttl)
+<https://www.wikidata.org/wiki/Q31192742>
+  # Ludwig III. von Teck, 1285~ - 1334-01-28
+  gen:father <https://www.wikidata.org/wiki/Q1782105> ;
+  gen:mother <https://www.wikidata.org/wiki/Q55080607> .
+  # oo Margarete Gräfin von Truhendingen, 1290~ - 1348-08-10 (ivrea.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q31192742> , <https://www.wikidata.org/wiki/Q75956028> ;
+	gen:startDate "1322-02-02b" .
+
+<https://www.wikidata.org/wiki/Q110572215>
+  # Hermann II., Herzog von Teck, d. 1319-06-10a
+  gen:father <https://www.wikidata.org/wiki/Q28102057> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110572221> .
+  # oo Willibirgis von Tübingen
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110572215> , <https://www.wikidata.org/wiki/Q110572222> .
+<https://www.wikidata.org/wiki/Q31192740>
+  # Friedrich III., Herzog von Teck, 1325~ - 1390-09-28
+  gen:father <https://www.wikidata.org/wiki/Q31192742> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75956028> .
+  # oo Anna Gräfin von Helfenstein-Blaubeuren, d. 1392-11-18
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q31192740> , <https://www.wikidata.org/wiki/Q75956066> ;
+	gen:startDate "1359-03-17b" .
+
+<https://www.wikidata.org/wiki/Q110153929>
+  # Agnes von Teck, d. 1359a
+  gen:father <https://www.wikidata.org/wiki/Q110572215> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110572222> .
+  # oo 1345-01-04b Eberhard III. Truchsess von Waldburg, d. 1361-05-05/1362-03-14, https://www.wikidata.org/wiki/Q61140434
+<https://www.wikidata.org/wiki/Q31192739>
+  # Ulrich II. Herzog von Teck, d. 1432-08-07
+  gen:father <https://www.wikidata.org/wiki/Q31192740> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75956066> .
+  # oo Anna von Polen, 1366 - 1425 (piasten.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q31192739> , <https://www.wikidata.org/wiki/Q4767657> ;
+	gen:startDate "1394-09-16b" .
+  # oo Ursula Markgräfin von Baden, 1409-10-24 - 1429-03-24
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q31192739> , <https://www.wikidata.org/wiki/Q61140533> ;
+	gen:startDate "1426-04-16" .
+  # oo Agnes von Thierstein, d. 1470
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q31192739> , <#Agnes_von_Thierstein> ;
+	gen:startDate "1430-03-20" .
+<https://www.wikidata.org/wiki/Q110537894>
+  # Guta von Teck, d. 1409-01-10
+  gen:father <https://www.wikidata.org/wiki/Q31192740> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75956066> .
+  # oo 1391-01-29 Johann I., Graf von Wertheim, 1340 - 1407-06-23, https://www.wikidata.org/wiki/Q31191156 (hohenzollern.ttl)
+
+
+# ----
+<https://www.wikidata.org/wiki/Q61812352>
+  # Richwara von Kärnten
+  gen:father <https://www.wikidata.org/wiki/Q76299895> . # Konrad II., Herzog von Kärnten
+  # oo Berthold I. von Zähringen, Herzog von Kärnten, 1000 - 1078-11-06, https://www.wikidata.org/wiki/Q700087
+
+# ----
+<https://www.wikidata.org/wiki/Q98803>
+  # Judith von Backnang, 1080 - 1123
+  gen:father <https://www.wikidata.org/wiki/Q1616018> . # Hesso II., auch Hesso der Jüngere, von Backnang (1067b - 1111a)
+  # and Judith ???
+  # oo 1111 Hermann II., Markgraf von Baden, 1060 - 1130-10-07, https://www.wikidata.org/wiki/Q450244
+
+# ----
+<https://www.wikidata.org/wiki/Q354859>
+  # Adelheid von Ochsenstein, d. 1314-05-17
+  gen:father <https://www.wikidata.org/wiki/Q60797878> ; # Otto III. von Ochsenstein
+  gen:mother <https://www.wikidata.org/wiki/Q26251004> . # Kunigunde von Habsburg
+  # oo 1258 Rudolf II., Markgraf von Baden, d. 1295-02-14, https://www.wikidata.org/wiki/Q77867
+
+# ----
+<https://www.wikidata.org/wiki/Q61139783>
+  # Luitgard von Bolanden, d. 1324/1325
+  gen:father <https://www.wikidata.org/wiki/Q29424584> . # Philipp V. von Bolanden
+  # oo 1318-02-28b Rudolf IV., Markgraf von Baden, d. 1348-06-25, https://www.wikidata.org/wiki/Q77850
+
+# ----
+<https://www.wikidata.org/wiki/Q27131588>
+  # Heinrich Graf von Lützelstein, d. 1394
+  gen:father <https://www.wikidata.org/wiki/Q61140681> . # Vollmar Graf von Lützelstein, d. 1367
+  # and Adelheid von Finstingen, d. 1340
+  # oo Margareta von Baden, Dame d’Héricourt
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q27131588> , <#Margareta_von_Baden> ;
+	gen:startDate "1380a" .
 
 # ----
 <https://www.wikidata.org/wiki/Q44192395>
@@ -1217,16 +1619,6 @@
   # oo Simon IV. Wecker, Graf von Zweibrücken-Bitsch, 1446 - 1499-07-22, https://www.wikidata.org/wiki/Q26878170 (leiningen.ttl)
 
 # ----
-<https://www.wikidata.org/wiki/Q31192739>
-  # Ulrich II. Herzog von Teck, d. 1432-08-07
-  gen:father <https://www.wikidata.org/wiki/Q31192740> . # Friedrich III., Herzog von Teck
-  # and Anna Gräfin von Helfenstein
-  # oo Ursula Markgräfin von Baden, 1409-10-24 - 1429-03-24
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q31192739> , <https://www.wikidata.org/wiki/Q61140533> ;
-	gen:startDate "1426-04-16" .
-
-# ----
 #<https://www.wikidata.org/wiki/Q563409>
   # Anna Silvia Katharina Carretto Contessa di Millesimo, 1607-02-06 - 1664-02-29
   # daughter of Francesco Antonio Carretto Conte di Millesimo
@@ -1266,7 +1658,9 @@
 # ----
 <https://www.wikidata.org/wiki/Q16406835>
   # Heinrich Matthias Graf von Thurn und Valsássina, 1628 - 1656-08-19
-  gen:father <https://www.wikidata.org/wiki/Q88781678> . # Franz Bernhard Graf von Thurn und Valsássina
+  gen:father <https://www.wikidata.org/wiki/Q88781678> . # Franz Bernhard Graf von Thurn und Valsássina, 1592 – 1628
+  # and Magdalena Gräfin von Hardeck, d. 1646a
+  # oo Anna Margatea Haugwitz-Biskupitz
   # oo Johanna Markgräfin von Baden-Durlach, 1623-12-05 - 1661-01-01
   []
     gen:spouse <https://www.wikidata.org/wiki/Q16406835> , <https://www.wikidata.org/wiki/Q61139374> ;
@@ -1280,13 +1674,6 @@
   gen:father <https://www.wikidata.org/wiki/Q56706761> ; # Ludwig Heinrich Philipp Freiherr Geyer von Geyersberg
   gen:mother <https://www.wikidata.org/wiki/Q56706762> . # Maximiliana Christina Gräfin von Sponeck
   # oo 1787-11-24 Karl Friedrich, Großherzog von Baden, 1728-11-22 - 1811-06-10, https://www.wikidata.org/wiki/Q213671
-
-# ----
-<https://www.wikidata.org/wiki/Q62024>
-  # Stéphanie Louise Adrienne de Beauharnais, 1789-08-28 - 1860-01-29
-  gen:father <https://www.wikidata.org/wiki/Q2978315> ; # Claude de Beauharnais
-  gen:mother <https://www.wikidata.org/wiki/Q20169591> . # Adrienne de Lezay-Marnésia
-  # oo 1806-04-08 Karl, Großherzog von Baden, 1786-07-08 - 1818-12-08, https://www.wikidata.org/wiki/Q57799
 
 # ----
 <https://www.wikidata.org/wiki/Q5624085>
@@ -1375,17 +1762,74 @@
   # oo 2015-07-04 Michael Max Andreas Prinz von Baden, b. 1976-03-11, https://www.wikidata.org/wiki/Q75383718
 
 # ----
+#<https://www.wikidata.org/wiki/Q75566258>
+  # Richard Dudley Baker, b. 1936-03-30
+  # oo (rel 1999-09-25) Louise Prinzessin von Baden, b. 1969-07-03
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75566258> , <https://www.wikidata.org/wiki/Q75383612> ;
+	gen:startDate "1999-09-15" .
+
+# ----
+<https://www.wikidata.org/wiki/Q1298026>
+  # Egino IV., Graf von Urach, 1160~ - 1230-01-12
+  gen:father <https://www.wikidata.org/wiki/Q2804147> ; # Egino III, Graf von Urach
+  gen:mother <https://www.wikidata.org/wiki/Q108838903> . # Kunigunde von Wasserburg
+  # oo Agnes von Zähringen, 1158 - 1239-05-10
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1298026> , <https://www.wikidata.org/wiki/Q20498538> ;
+	gen:startDate "1181" .
+
 <https://www.wikidata.org/wiki/Q44191491>
   # Agnes von Urach, d. 1231
-  gen:father <https://www.wikidata.org/wiki/Q1298026> ; # Egino IV.
-  gen:mother <https://www.wikidata.org/wiki/Q20498538> . # Agnes von Zähringen
+  gen:father <https://www.wikidata.org/wiki/Q1298026> ;
+  gen:mother <https://www.wikidata.org/wiki/Q20498538> .
   # oo Heinrich I., Markgraf von Baden-Hachberg, d. 1231-07-02, https://www.wikidata.org/wiki/Q98780
 
 # ----
-<#Anna_von_Freiburg-Neuenburg>
+<#Anna_von_Üsenberg>
+  # Anna von Üsenberg
+  gen:father <https://www.wikidata.org/wiki/Q61140122> . # Rudolf II. Graf von Üsenberg
+  # and Kunigunde von Katzenelnbogen
+  # oo Heinrich II., Markgraf von Baden-Hachberg, 1231b - 1297a, https://www.wikidata.org/wiki/Q77849
+
+<#Anna_von_Üsenberg_d._1356>
+  # Anna von Üsenberg, d. 1356-07-12
+  gen:father <https://www.wikidata.org/wiki/Q97206693> . # Burkard IV. von Üsenberg, d. 1336
+  # oo Heinrich IV., Markgraf von Baden-Hachberg, d. 1369, https://www.wikidata.org/wiki/Q1597813
+
+# ----
+<#Agnes_von_Geroldseck>
+  # Agnes von Geroldseck, 1365 - 1404
+  gen:father <https://www.wikidata.org/wiki/Q44191600> . # Heinrich III. von Geroldseck-Tübingen, d. 1376/1378
+  # and Katharina von Horburg, d. 1336
+  # oo Hesso, Markgraf von Baden-Hachberg, d. 1410, https://www.wikidata.org/wiki/Q1616012
+
+# ----
+<#Margaretha_von_Tübingen>
+  # Margaretha von Tübingen
+  gen:father <https://www.wikidata.org/wiki/Q70450517> . # Konrad II. Pfalzgraf von Tübingen-Herenberg, d. 1382/1391
+  # and Verena von Fürstenberg-Baar, d. 1391
+  # oo 1381-04-20 Hesso, Markgraf von Baden-Hachberg, d. 1410, https://www.wikidata.org/wiki/Q1616012
+
+# ----
+<https://www.wikidata.org/wiki/Q116006773>
+  # Agnes von Rötteln
+  gen:father <https://www.wikidata.org/wiki/Q116006819> . # Otto von Rötteln
+  # and Richenza
+  # oo 1299b Rudolf I., Markgraf von Hachberg-Sausenberg, d. 1313, https://www.wikidata.org/wiki/Q78393
+
+# ----
+<https://www.wikidata.org/wiki/Q116006774>
+  # Katharina von Thierstein, d. 1385-03-21
+  gen:father <https://www.wikidata.org/wiki/Q116004927> ; # Walram II., Graf von Thierstein, Pfalzgraf von Basel
+  gen:mother <https://www.wikidata.org/wiki/Q116004928> . # Agnes von Hohenburg-Ahrburg
+  # oo 1341-01-13 Rudolf II., Markgraf von Hachberg-Sausenberg, 1301 - 1352, https://www.wikidata.org/wiki/Q98795
+
+# ----
+<https://www.wikidata.org/wiki/Q116006776>
   # Anna von Freiburg-Neuenburg, 1374 – 1427
-  gen:father <https://www.wikidata.org/wiki/Q1298020> . # Egon III, comte de Fribourg
-  # and Vera von Neuenburg
+  gen:father <https://www.wikidata.org/wiki/Q1298020> ; # Egon III, comte de Fribourg
+  gen:mother <https://www.wikidata.org/wiki/Q116006779> . # Verena von Neuenburg
   # oo 1387-02-13 Rudolf III., Markgraf von Hachberg-Sausenberg, 1343 - 1428-02-08, https://www.wikidata.org/wiki/Q97064
 
 # ----
@@ -1395,3 +1839,55 @@
   gen:father <https://www.wikidata.org/wiki/Q66115871> ; # Wilhelm V Graf von Montfort-Bregenz
   gen:mother <https://www.wikidata.org/wiki/Q116029931> . # Kunigunde von Toggenburg
   # oo 1425~ Wilhelm, Markgraf von Hachberg-Sausenberg, 1406-07-11 - 1482-08-15, https://www.wikidata.org/wiki/Q105350
+
+# ----
+<#Marguerite_de_Vienne>
+  # Marguerite de Vienne, d. 1477
+  gen:father <https://www.wikidata.org/wiki/Q27837190> . # Guillaume IV de Vienne, Sire de Saint-Georges, d’Arc-en-Barrois
+  # and Alix de Châlons, Dame de Bussy
+  # oo 1447-08-03 Rudolf IV., Markgraf von Hachberg-Sausenberg, 1427~ - 1487-04-12, https://www.wikidata.org/wiki/Q95397
+
+# ----
+<https://www.wikidata.org/wiki/Q61577490>
+  # Heilwig von Froburg
+  gen:father <https://www.wikidata.org/wiki/Q61577609> . # ???
+  # oo Berthold IV., Herzog von Zähringen und Burgund, 1125 - 1186-12-08, https://www.wikidata.org/wiki/Q69334
+
+# ----
+<https://www.wikidata.org/wiki/Q110572222>
+  # Willibirgis von Tübingen
+  gen:father <https://www.wikidata.org/wiki/Q110572223> ; # Gottfried I., Graf von Tübingen
+  gen:mother <https://www.wikidata.org/wiki/Q55524170> . # Elisabeth von Fürstenberg
+  # oo Hermann II., Herzog von Teck, d. 1319-06-10a, https://www.wikidata.org/wiki/Q110572215
+
+# ----
+<#Adelheid_von_Burgau>
+  # Adelheid von Burgau, d. 1310-09-10a
+  gen:father <https://www.wikidata.org/wiki/Q55532780> . # Heinrich V. (III.) Markgraf von Burgau, d. 1283-01-25a
+  # and Agnes N.N. (–3. Februar 12??)
+  # oo 1290a Konrad II., Herzog von Teck, 1235~ - 1292-05-01/-02, https://www.wikidata.org/wiki/Q1782105
+
+# ----
+<https://www.wikidata.org/wiki/Q75956066>
+  # Anna Gräfin von Helfenstein-Blaubeuren, d. 1392-11-18
+  # Erbin von Falkenstein (–1390) und Faimingen (–1381)
+  gen:father <https://www.wikidata.org/wiki/Q61138389> ; # Ulrich V. (VI.) Graf von Helfenstein-Blaubeuren, d. 1361
+  gen:mother <https://www.wikidata.org/wiki/Q110537996> . # Beatrix von Schlüsselberg, d. 1355
+  # oo 1359-03-17b Friedrich III., Herzog von Teck, 1325~ - 1390-09-28, https://www.wikidata.org/wiki/Q31192740
+
+# ----
+<#Agnes_von_Thierstein>
+  # Agnes von Thierstein, d. 1470
+  gen:father <https://www.wikidata.org/wiki/Q61140610> . # Johann II. Graf von Thierstein, d. 1455
+  # and Gertrud von Wineck, d. 1445
+  # oo 1430-03-20 Ulrich II. Herzog von Teck, d. 1432-08-07, https://www.wikidata.org/wiki/Q31192739
+  # oo 1433-03-30b Hugo von Rechberg, d. 1468-03-13/-04-19, https://www.wikidata.org/wiki/Q59426893
+# ----
+<https://www.wikidata.org/wiki/Q59426893>
+  # Hugo von Rechberg, d. 1468-03-13/-04-19
+  gen:father <https://www.wikidata.org/wiki/Q59426866> . # Albrecht von Rechberg, d. 1426
+  # and Margarethe von Werdenberg-Sargans, d. 1422/1451
+  # oo Agnes von Thierstein, d. 1470
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q59426893> , <#Agnes_von_Thierstein> ;
+	gen:startDate "1433-03-30b" .
