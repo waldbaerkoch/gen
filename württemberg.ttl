@@ -4,15 +4,34 @@
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
+<https://www.wikidata.org/wiki/Q247786>
+  # Ulrich I., Graf von Württemberg, 1226 - 1265-02-25
+  # Graf von Württemberg 1241~
+  gen:father <https://www.wikidata.org/wiki/Q69304> . # Ludwig III., Graf von Württemberg
+  # oo Mechtild von Baden, 1225a - 1258a (zähringer.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q247786> , <https://www.wikidata.org/wiki/Q123875> ;
+	gen:startDate "1251-04-04b" .
+  # oo Agnes von Schlesien-Liegnitz, d. 1265-03-13 (piasten.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q247786> , <https://www.wikidata.org/wiki/Q394781> ;
+	gen:startDate "1259" .
+
+<https://www.wikidata.org/wiki/Q247817>
+  # Ulrich II., Graf von Württemberg, 1254~ - 1279-09-18
+  # Graf von Württemberg 1265-02-25
+  gen:father <https://www.wikidata.org/wiki/Q247786> ;
+  gen:mother <https://www.wikidata.org/wiki/Q123875> .
 <https://www.wikidata.org/wiki/Q394800>
   # Agnes von Württemberg, 1264b - 1305-09-27
-  gen:father <https://www.wikidata.org/wiki/Q247786> ; # Ulrich I., Graf von Württemberg
-  gen:mother <https://www.wikidata.org/wiki/Q123875> . # Mechtild von Baden
+  gen:father <https://www.wikidata.org/wiki/Q247786> ;
+  gen:mother <https://www.wikidata.org/wiki/Q123875> .
   # oo 1282-01-11 Friedrich II. von Truhendingen, 1253~ - 1290-03-15, https://www.wikidata.org/wiki/Q44192326 (ivrea.ttl)
 <https://www.wikidata.org/wiki/Q650606>
   # Eberhard I., Graf von Württemberg, 1265-03-13 - 1325-06-05
+  # Graf von Württemberg 1279-09-18
   gen:father <https://www.wikidata.org/wiki/Q247786> ;
-  gen:mother <https://www.wikidata.org/wiki/Q394781> . # Agnes von Schlesien-Liegnitz
+  gen:mother <https://www.wikidata.org/wiki/Q394781> .
   # oo Marguerite de Lorraine
   []
     gen:spouse <https://www.wikidata.org/wiki/Q650606> , <lothringen.ttl#Marguerite_de_Lorraine> .
@@ -23,9 +42,10 @@
 
 <https://www.wikidata.org/wiki/Q247795>
   # Ulrich III., Graf von Württemberg, 1291a/1296b - 1344-07-11
+  # Graf von Württemberg 1325-06-05
   gen:father <https://www.wikidata.org/wiki/Q650606> ;
   gen:mother <lothringen.ttl#Marguerite_de_Lorraine> .
-  # oo Sophie von Pfirt-Mousson
+  # oo Sophie von Pfirt-Mousson, d. 1344-03-25 (ivrea.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q247795> , <https://www.wikidata.org/wiki/Q101342047> .
 <https://www.wikidata.org/wiki/Q44191723>
@@ -36,6 +56,7 @@
 
 <https://www.wikidata.org/wiki/Q69359>
   # Eberhard II., Graf von Württemberg, 1315 - 1392-03-15
+  # Graf von Württemberg 1344-07-11
   gen:father <https://www.wikidata.org/wiki/Q247795> ;
   gen:mother <https://www.wikidata.org/wiki/Q101342047> .
   # oo Elizabeth von Henneberg-Schleusingen, 1319 - 1389-03-30 (hohenzollern.ttl)
@@ -59,6 +80,8 @@
 
 <https://www.wikidata.org/wiki/Q62959>
   # Eberhard III. "der Milde", Graf von Württemberg, 1364 - 1417-05-16
+  # Graf von Württemberg 1392-03-15
+  # Graf von Mömpelgard 1397-11-01 - 1409
   gen:father <https://www.wikidata.org/wiki/Q642040> ;
   gen:mother <https://www.wikidata.org/wiki/Q78071> .
   # oo Antonia Visconti, 1350~ - 1405-03-26 (savoyen.ttl)
@@ -72,6 +95,8 @@
 
 <https://www.wikidata.org/wiki/Q64333>
   # Eberhard IV. "der Jüngere", Graf von Württemberg, 1388-08-23 - 1419-07-02
+  # Graf von Mömpelgard 1409
+  # Graf von Württemberg 1417-05-16
   gen:father <https://www.wikidata.org/wiki/Q62959> ;
   gen:mother <https://www.wikidata.org/wiki/Q273018> .
   # oo Henriette de Montfaucon, comtesse de Montbéliard, 1384 - 1444-02-14 (ivrea.ttl)
@@ -91,7 +116,9 @@
   # oo 1422-02-22 Philipp I., Graf von Katzenelnbogen, 1402 - 1479, https://www.wikidata.org/wiki/Q1122672 (reginare.ttl)
 <https://www.wikidata.org/wiki/Q566378>
   # Ludwig I., Graf von Württemberg-Urach, 1412-10-31b - 1450-09-23
-  # 1442 in der Grafschaft ob der Steige, Mömpelgard, Horburg und Reichenweiler
+  # Graf von Württemberg-Urach 1441-04-23 (1442-01-25 Nürtinger Vertrag)
+  # in der Grafschaft ob der Steige, Mömpelgard, Horburg und Reichenweiler
+  # in Grafschaft Mömpelgard 1444-02-14
   gen:father <https://www.wikidata.org/wiki/Q64333> ;
   gen:mother <https://www.wikidata.org/wiki/Q273028> .
   # oo Mechthild von der Pfalz, 1419-03-07 - 1482-08-22 (wittelsbacher.ttl)
@@ -100,9 +127,10 @@
 	gen:startDate "1436-10-21" .
 <https://www.wikidata.org/wiki/Q247209>
   # Ulrich V., Graf von Württemberg, 1413 - 1480-09-01
-  # Graf von Württemberg 1433 - 1441
-  # Graf von Württemberg-Stuttgart 1441–1480
-  # 1442 in der Grafschaft unter der Steige
+  # Graf von Württemberg 1433 - 1441-04-23 (1442-01-25 Nürtinger Vertrag)
+  # Graf von Württemberg-Stuttgart 1441-04-23 (1442-01-25 Nürtinger Vertrag)
+  # in der Grafschaft unter der Steige
+  # in Grafschaft Mömpelgard 1444-02-14 - 1446
   gen:father <https://www.wikidata.org/wiki/Q64333> ;
   gen:mother <https://www.wikidata.org/wiki/Q273028> .
   # oo Margarete von Kleve, 1416-02-23 - 1444-05-20 (mark.ttl)
@@ -125,13 +153,14 @@
   # oo 1454-09-01 Ludwig II., Landgraf von Niederhessen, 1438-09-07 - 1471-11-08, https://www.wikidata.org/wiki/Q320101 (reginare.ttl)
 <https://www.wikidata.org/wiki/Q530947>
   # Ludwig II., Graf von Württemberg-Urach, 1439-04-03 - 1457-11-03
+  # Graf von Württemberg-Urach, in Grafschaft Mömpelgard 1450-09-23
   gen:father <https://www.wikidata.org/wiki/Q566378> ;
   gen:mother <https://www.wikidata.org/wiki/Q97124> .
 <https://www.wikidata.org/wiki/Q62168>
   # Eberhard I., Herzog von Württemberg und Teck, 1445-12-11 - 1496-02-25
-  # Graf von Württemberg-Urach 1457-11-03 - 1482
-  # Graf von Württemberg-Mömpelgard 1457-11-03 - 1473, 1482
-  # Graf von Württemberg 1482
+  # Graf von Württemberg-Urach 1457-11-03 - 1482-04-26 (Vertrag von Reichenweier)
+  # Graf von Württemberg-Mömpelgard 1457-11-03 - 1473-07-31 (Uracher Vertrag), 1482-04-26 (Vertrag von Reichenweier), 1482-12-14 (Münsinger Vertrag)
+  # Graf von Württemberg 1482-04-26 (Vertrag von Reichenweier), 1482-12-14 (Münsinger Vertrag)
   # Herzog von Württemberg und Teck 1495-07-21
   gen:father <https://www.wikidata.org/wiki/Q566378> ;
   gen:mother <https://www.wikidata.org/wiki/Q97124> .
@@ -148,8 +177,8 @@
   # oo 1474-11-04b Heinrich IX. der Ältere, Graf zu Stolberg, 1433/1436-05-12 - 1511-09-17, https://www.wikidata.org/wiki/Q20748781
 <https://www.wikidata.org/wiki/Q547225>
   # Eberhard II., Herzog von Württemberg, 1447-02-01 - 1504-02-17
-  # Graf von Württemberg-Stuttgart 1457-11-03 - 1482
-  # Herzog von Württemberg 1496-02-25 - 1498
+  # Graf von Württemberg-Stuttgart 1457-11-03 - 1482-04-26 (Vertrag von Reichenweier), 1482-12-14 (Münsinger Vertrag)
+  # Herzog von Württemberg 1496-02-25 - 1498-06-11
   gen:father <https://www.wikidata.org/wiki/Q247209> ;
   gen:mother <https://www.wikidata.org/wiki/Q3723280> .
   # oo Elisabeth Markgräfin von Brandenburg, 1451-11-29 - 1524-03-28 (hohenzollern.ttl)
@@ -158,7 +187,7 @@
 	gen:startDate "1467" .
 <https://www.wikidata.org/wiki/Q552999>
   # Heinrich von Württemberg, Graf von Mömpelgard, 1448-09-07 - 1519-04-15
-  # Graf von Mömpelgard 1473 - 1482
+  # Graf von Mömpelgard 1473-07-31 (Uracher Vertrag) - 1482-04-26 (Vertrag von Reichenweier), 1482-12-14 (Münsinger Vertrag)
   gen:father <https://www.wikidata.org/wiki/Q247209> ;
   gen:mother <https://www.wikidata.org/wiki/Q3723280> .
   # oo Elisabeth Gräfin von Zweibrücken-Bitsch, 1465~ - 1487-02-17 (leiningen.ttl)
@@ -182,8 +211,8 @@
 
 <https://www.wikidata.org/wiki/Q61671>
   # Ulrich, Herzog von Württemberg, 1487-02-08 - 1550-11-06
-  # Herzog von Württemberg 1498 – 1519, 1534
-  # Graf von Mömpelgard 1498 - 1526, 1534 - 1542
+  # Herzog von Württemberg 1498-06-11 – 1519-01, 1534-05
+  # Graf von Mömpelgard 1498-06-11 - 1526-09-02, 1534-05 - 1542 (Vertrag von Reichenweier)
   gen:father <https://www.wikidata.org/wiki/Q552999> ;
   gen:mother <https://www.wikidata.org/wiki/Q76030437> .
   # oo Sabina von Bayern, 1492-05-04 - 1564-08-30 (wittelsbacher.ttl)
@@ -197,7 +226,7 @@
   # oo 1515-01-01 Heinrich II., der Jüngere, Herzog von Braunschweig-Lüneburg, Fürst von Braunschweig-Wolfenbüttel, 1489-11-10 - 1568-06-11, https://www.wikidata.org/wiki/Q61435 (welfen.ttl)
 <https://www.wikidata.org/wiki/Q571597>
   # Georg I. von Württemberg, Graf von Mömpelgard, 1498-02-04 - 1558-07-17
-  # Graf von Mömpelgard 1526 - 1534, 1553
+  # Graf von Mömpelgard 1526-09-02 - 1534-05, 1553 (nach Passauer Vertrag 1552-08-02)
   gen:father <https://www.wikidata.org/wiki/Q552999> ;
   gen:mother <https://www.wikidata.org/wiki/Q61723902> .
   # oo Barbara von Hessen, 1536-04-08 - 1597-06-08 (reginare.ttl)
@@ -207,8 +236,8 @@
 
 <https://www.wikidata.org/wiki/Q694197>
   # Christoph, Herzog von Württemberg, 1515-05-12 - 1568-12-28
-  # Herzog von Württemberg 1534
-  # Graf von Mömpelgard 1542 - 1553
+  # Herzog von Württemberg 1550-11-06
+  # Graf von Mömpelgard 1542 (Vertrag von Reichenweier) - 1553 (nach Passauer Vertrag 1552-08-02)
   gen:father <https://www.wikidata.org/wiki/Q61671> ;
   gen:mother <https://www.wikidata.org/wiki/Q69427> .
   # oo Anna Maria Markgräfin von Brandenburg-Ansbach, 1526-12-28 - 1589-05-20 (hohenzollern.ttl)
@@ -217,7 +246,7 @@
 	gen:startDate "1544-02-24" .
 <https://www.wikidata.org/wiki/Q702746>
   # Friedrich I., Herzog von Württemberg, 1557-08-19 - 1608-01-29
-  # Graf von Mömpelgard 1558-07-17
+  # Graf von Mömpelgard 1558-07-17 - 1593-08-28
   # Herzog von Württemberg 1593-08-28
   gen:father <https://www.wikidata.org/wiki/Q571597> ;
   gen:mother <https://www.wikidata.org/wiki/Q327750> .
@@ -277,7 +306,7 @@
 <https://www.wikidata.org/wiki/Q302942>
   # Johann Friedrich, Herzog von Württemberg, 1582-05-05 - 1628-07-18
   # Herzog von Württemberg 1608-01-29
-  # Graf von Mömpelgard 1608-01-29 - 1617-05-28
+  # in Grafschaft Mömpelgard 1608-01-29 - 1617-05-28
   gen:father <https://www.wikidata.org/wiki/Q702746> ;
   gen:mother <https://www.wikidata.org/wiki/Q451164> .
   # oo Barbara Sophia Markgräfin von Brandenburg, 1584-11-16 - 1636-02-13 (hohenzollern.ttl)
@@ -413,7 +442,7 @@
 <https://www.wikidata.org/wiki/Q61169>
   # Eberhard IV. Ludwig, Herzog von Württemberg, 1676-09-19 - 1733-10-31
   # Herzog von Württemberg 1677-06-23
-  # in Mömpelgard 1724
+  # in gefürsteter Grafschaft Mömpelgard 1723-03-25
   gen:father <https://www.wikidata.org/wiki/Q61212> ;
   gen:mother <https://www.wikidata.org/wiki/Q62217> .
   # oo Johanna Elisabeth Markgräfin von Baden-Durlach, 1680-10-03 - 1757-07-02 (zähringer.ttl)
