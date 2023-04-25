@@ -4,6 +4,46 @@
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
+<https://www.wikidata.org/wiki/Q48603674>
+  # István Graf Zichy de Zich et Vásonkeö, 1616-09-08 - 1693-03-15
+  # Graf 1679
+  gen:father <https://www.wikidata.org/wiki/Q110363240> ; # Pál Zichy de Zich et Vásonkeö
+  gen:mother <https://www.wikidata.org/wiki/Q110363260> . # Sara Csáby de Csáb
+  # oo Maria Magdalena Baranyai de Vedred et Eögzeny, 1618~ - 1650~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q48603674> , <https://www.wikidata.org/wiki/Q102070336> ;
+	gen:startDate "1638~" .
+
+<https://www.wikidata.org/wiki/Q110412513>
+  # Pál Gyorgy Graf Zichy de Zich et Vásonkeö, 1640 - 1684
+  gen:father <https://www.wikidata.org/wiki/Q48603674> ;
+  gen:mother <https://www.wikidata.org/wiki/Q102070336> .
+  # oo Katalin Baronesse Károlyi de Nagykároly, 1650~ - 1694~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110412513> , <https://www.wikidata.org/wiki/Q110412516> ;
+	gen:startDate "1670~" .
+<https://www.wikidata.org/wiki/Q94936420>
+  # István Graf Zichy de Zich et Vásonkeö, 1660 - 1700-05-04
+  gen:father <https://www.wikidata.org/wiki/Q48603674> ;
+  gen:mother <https://www.wikidata.org/wiki/Q102070336> .
+  # oo Maria-Klara Melith de Briber, b. 1655b
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q94936420> , <https://www.wikidata.org/wiki/Q102070249> .
+
+<https://www.wikidata.org/wiki/Q58608165>
+  # János Graf Zichy de Zich et Vásonkeö, 1673 - 1724
+  gen:father <https://www.wikidata.org/wiki/Q110412513> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110412516> .
+  # oo Maria Anna Theresa Freiin von Thalheim, 1691 - 1742-10-01
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q58608165> , <https://www.wikidata.org/wiki/Q105873134> ;
+	gen:startDate "1709" .
+<https://www.wikidata.org/wiki/Q102070244>
+  # Júlia Gräfin Zichy de Zich et Vasonykeö, d. 1746
+  gen:father <https://www.wikidata.org/wiki/Q94936420> ;
+  gen:mother <https://www.wikidata.org/wiki/Q102070249> .
+  # oo Ferenc Graf Barkóczy de Szala et Tavarna, d. 1707/1711, https://www.wikidata.org/wiki/Q790496
+
 <https://www.wikidata.org/wiki/Q116779972>
   # János Nepomuk Graf Zichy de Zich et Vásonkeö, 1710 - 1764
   gen:father <https://www.wikidata.org/wiki/Q58608165> ; # János Zichy
@@ -61,9 +101,9 @@
   # István Graf Zichy de Zich et Vásonkeö, 1757-07-14 - 1841-06-30
   gen:father <https://www.wikidata.org/wiki/Q23769759> ;
   gen:mother <https://www.wikidata.org/wiki/Q87720187> .
-  # oo Mária Terézia Gräfin Pálffy ab Erdöd, 1760-01-12 - 1833-03-06, daughter of Miklos Graf Pálffy ab Erdöd and Maria Anna Sidonia Gräfin von Althann
+  # oo Mária Terézia Gräfin Pálffy ab Erdöd, 1760-01-12 - 1833-03-06
   []
-    gen:spouse <#István_Zichy_(b._1757)> , <#Terézia_Pálffy> ;
+    gen:spouse <#István_Zichy_(b._1757)> , <pálffy.ttl#Terézia_Pálffy> ;
 	gen:startDate "1777-02-25" .
 
 <#János_Nepomucen_Zichy>
@@ -96,7 +136,7 @@
   # Károly József Graf Zichy de Zich et Vásonkeö, 1785-10-11 - 1876-06-01
   gen:father <https://www.wikidata.org/wiki/Q49397534> ;
   gen:mother <https://www.wikidata.org/wiki/Q88538958> .
-  # oo Antonia Gräfin Batthyány de Német-Ujvár, 1789-06-08 - 1825-06-15
+  # oo Antonia Gräfin Batthyány de Német-Ujvár, 1788-06-08 - 1825-06-15
   []
     gen:spouse <https://www.wikidata.org/wiki/Q88538243> , <https://www.wikidata.org/wiki/Q88538383> ;
 	gen:startDate "1807-01-20" .
@@ -169,7 +209,7 @@
 <https://www.wikidata.org/wiki/Q75381206>
   # István Graf Zichy de Zich et Vásonkeö, 1780-04-13 - 1853-06-08
   gen:father <#István_Zichy_(b._1757)> ;
-  gen:mother <#Terézia_Pálffy> .
+  gen:mother <pálffy.ttl#Terézia_Pálffy> .
   # oo Franziska Gräfin von Starhemberg, 1787-01-06 - 1864-12-21
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75381206> , <https://www.wikidata.org/wiki/Q75381204> ;
@@ -181,7 +221,7 @@
   gen:mother <#Franziska_von_Colloredo-Wallsee> .
   # oo Ludovika Gräfin Pálffy ab Erdöd, 1804-01-01 - 1866-01-17
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q29910112> , <lobkowicz.ttl#Ludovika_Pálffy> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q29910112> , <pálffy.ttl#Ludovika_Pálffy> ;
 	gen:startDate "1826-10-24" .
 <#László_Zichy_(b._1799)>
   # László Graf Zichy de Zich et Vásonkeö, 1799-08-11 - 1868-01-09
@@ -221,6 +261,11 @@
   gen:father <https://www.wikidata.org/wiki/Q88538243> ;
   gen:mother <https://www.wikidata.org/wiki/Q88538383> .
   # oo 1827-11-18 Principe Don Augusto Odescalchi, 1808-01-01 - 1848-10-15, #Augusto_Odescalchi
+<https://www.wikidata.org/wiki/Q109687232>
+  # Mária Gräfin Zichy de Zich et Vásonkeö, 1811-02-02 - 1901-03-08
+  gen:father <https://www.wikidata.org/wiki/Q88538243> ;
+  gen:mother <https://www.wikidata.org/wiki/Q88538383> .
+  # oo 1838-05-28 Wilhelm Karl Johann Freiherr von Walterskirchen Freiherr zu Wolfsthal, 1808-07-23 - 1884-10-21, https://www.wikidata.org/wiki/Q109687208
 <https://www.wikidata.org/wiki/Q76368153>
   # Jozsef Graf Zichy de Zich et Vásonkeö, 1814-07-09 - 1897-01-14
   gen:father <https://www.wikidata.org/wiki/Q88538243> ;
@@ -348,7 +393,7 @@
 <https://www.wikidata.org/wiki/Q1467345>
   # Ferdinánd Lipót János György Gergely Graf Zichy de Zich et Vásonkeö, 1829-11-17 - 1911-12-24
   gen:father <https://www.wikidata.org/wiki/Q29910112> ;
-  gen:mother <lobkowicz.ttl#Ludovika_Pálffy> .
+  gen:mother <pálffy.ttl#Ludovika_Pálffy> .
   # oo Livia Gräfin Zichy de Zich et Vásonkeö, 1840-10-04 - 1913-07-16
   []
     gen:spouse <https://www.wikidata.org/wiki/Q1467345> , <https://www.wikidata.org/wiki/Q94692169> ;
@@ -356,7 +401,7 @@
 <https://www.wikidata.org/wiki/Q29910173>
   # János Baptist Graf Zichy de Zich et Vásonkeö, 1835-12-31 - 1905-11-28
   gen:father <https://www.wikidata.org/wiki/Q29910112> ;
-  gen:mother <lobkowicz.ttl#Ludovika_Pálffy> .
+  gen:mother <pálffy.ttl#Ludovika_Pálffy> .
   # oo Marie Gräfin von Redern, 1840-01-22 - 1910-09-26
   []
     gen:spouse <https://www.wikidata.org/wiki/Q29910173> , <#Marie_von_Redern> ;
@@ -407,7 +452,7 @@
   # Margit Antónia
   gen:father <#Ferenc_Zichy> ;
   gen:mother <#Anna_Kornis> .
-  # oo 1885-02-15 Miklós Antal Maria 4. Fürst Pálffy ab Erdöd, 1861-11-11 - 1935-03-08, son of Pál József Miklós Graf Pálffy ab Erdöd (1827-06-27 - 1866-04-04, https://www.wikidata.org/wiki/Q1242075) and oo 1855-05-09 Geraldine Gräfin Károlyi de Nagy-Károly (1836-11-23 - 1915-03-16)
+  # oo 1885-02-15 Miklós Fürst Pálffy ab Erdöd, 1861-11-11 - 1935-03-08, pálffy.ttl#Miklós_Fürst_Pálffy
 <#Ödon_Zichy_(b._1874)>
   # Ödön Graf Zichy de Zich et Vásonkeö, 1874-09-23 - 1967-01-23
   # Edmund
@@ -525,7 +570,7 @@
   # Lívia Felicie Henriette Eleonore Klara Philomene Maria Josepha Gräfin Zichy de Zich et Vásonkeő, 1895-08-08 - 1971-12-22
   gen:father <https://www.wikidata.org/wiki/Q1467305> ;
   gen:mother <#Henriette_Hunyady> .
-  # oo 1918-10-15 Anton (Antal) Heinrich Oswald Maria Graf von Wenckheim, 1891-03-15 - 1976-02-25, son of Istvan Anton Maria Elias Graf von Wenckheim (1858-07-20 - 1923-02-26, son of <wittelsbacher.ttl#Antal_von_Wenckheim> , <zichy.ttl#Mária_Maximiliana_Zichy>) and oo 1887-08-22 Marie Margaretha Therese Gabrielle Gräfin Pálffy ab Erdöd (1863-07-10 - 1954-08-07)
+  # oo 1918-10-15 Anton (Antal) Heinrich Oswald Maria Graf von Wenckheim, 1891-03-15 - 1976-02-25, wittelsbacher.ttl#Anton_von_Wenckheim
 <#Mária_Henriette_Zichy>
   # Mária Henriette Gräfin Zichy de Zich et Vásonkeő, 1896-08-21 - 1973-07-29
   gen:father <https://www.wikidata.org/wiki/Q1467305> ;
@@ -546,6 +591,42 @@
   gen:mother <https://www.wikidata.org/wiki/Q75403963> .
   # oo 1939-06-27 Josef Graf Batthyány de Német-Ujvár, 1912-09-29 - 1994-05-30, batthyány.ttl#Josef_Batthyány
 
+
+# ----
+<https://www.wikidata.org/wiki/Q102070336>
+  # Maria Magdalena Baranyai de Vedred et Eögzeny, 1618~ - 1650~
+  gen:father <https://www.wikidata.org/wiki/Q110363261> ; # Pal Baranyai de Vedred et Eögzeny
+  gen:mother <https://www.wikidata.org/wiki/Q110363262> . # Judith Koháry de Kohár
+  # oo 1638~ István Graf Zichy de Zich et Vásonkeö, 1616-09-08 - 1693-03-15, https://www.wikidata.org/wiki/Q48603674
+
+# ----
+<https://www.wikidata.org/wiki/Q110412516>
+  # Katalin Baronesse Károlyi de Nagykároly, 1650~ - 1694~
+  gen:father <https://www.wikidata.org/wiki/Q1123492> ; # László Károlyi
+  gen:mother <https://www.wikidata.org/wiki/Q109686870> . # Erzsébet Sennyey
+  # oo 1670 Pál Gyorgy Graf Zichy de Zich et Vásonkeö, 1640 - 1684, https://www.wikidata.org/wiki/Q110412513
+
+# ----
+<https://www.wikidata.org/wiki/Q105873134>
+  # Maria Anna Theresa Freiin von Thalheim, 1691 - 1742-10-01
+  gen:father <https://www.wikidata.org/wiki/Q110412527> ; # Wolfgang Freiherr von Thalheim
+  gen:mother <https://www.wikidata.org/wiki/Q110412528> . # Maria Anna Freiin Betz von Betzenau
+  # oo 1709 János Graf Zichy de Zich et Vásonkeö, 1673 - 1724, https://www.wikidata.org/wiki/Q58608165
+
+# ----
+<https://www.wikidata.org/wiki/Q790496>
+  # Ferenc Graf Barkóczy de Szala et Tavarna, d. 1707/1711
+  gen:father <https://www.wikidata.org/wiki/Q790498> ; # Ferenc Graf Barkóczy de Szala et Tavarna
+  gen:mother <https://www.wikidata.org/wiki/Q102070241> . # Zsuzsanna Gräfin Pethö de Gerse
+  # oo Júlia Gräfin Zichy de Zich et Vasonykeö, d. 1746
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q790496> , <https://www.wikidata.org/wiki/Q102070244> .
+
+<https://www.wikidata.org/wiki/Q102070324>
+  # Zsuzsanna Gräfin Barkóczy de Szala et Tavarna, d. 1782-12-14
+  gen:father <https://www.wikidata.org/wiki/Q790496> ;
+  gen:mother <https://www.wikidata.org/wiki/Q102070244> .
+  # oo 1738-11-23 Antal Graf Széchényi de Sárvár-Felsövidék, 1714-03-11 - 1767-08-29, https://www.wikidata.org/wiki/Q94621045
 
 # ----
 <https://www.wikidata.org/wiki/Q87720187>
@@ -739,6 +820,22 @@
   gen:father <https://www.wikidata.org/wiki/Q112647916> ;
   gen:mother <https://www.wikidata.org/wiki/Q112647914> .
   # oo 1893-09-10 Aladár Graf Zichy de Zich et Vásonkeö, 1864-09-04 - 1937-11-16, https://www.wikidata.org/wiki/Q1467305
+
+# ----
+<https://www.wikidata.org/wiki/Q109687208>
+  # Wilhelm Karl Johann Freiherr von Walterskirchen Freiherr zu Wolfsthal, 1808-07-23 - 1884-10-21
+  gen:father <https://www.wikidata.org/wiki/Q109687210> ; # Johann Georg Wilhelm Edler Herr von Walterskirchen, Freiherr zu Wolfstahl
+  gen:mother <https://www.wikidata.org/wiki/Q109687221> . # Eleonore Perényi de Perény
+  # oo Mária Gräfin Zichy de Zich et Vásonkeö, 1811-02-02 - 1901-03-08
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q109687208> , <https://www.wikidata.org/wiki/Q109687232> ;
+	gen:startDate "1838-05-28" .
+
+<https://www.wikidata.org/wiki/Q109687206>
+  # Maria Eleonora Freiin von Walterskirchen Freiin zu Wolfsthal, 1842-07-23 - 1916-07-06
+  gen:father <https://www.wikidata.org/wiki/Q109687208> ;
+  gen:mother <https://www.wikidata.org/wiki/Q109687232> .
+  # oo 1864-04-24 Karl Ede Graf Pálffy ab Erdöd, 1836-09-18 - 1915-06-12, https://www.wikidata.org/wiki/Q17311830 (esterházy.ttl)
 
 # ----
 #<https://www.wikidata.org/wiki/Q75392923>
