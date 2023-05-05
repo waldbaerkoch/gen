@@ -139,6 +139,11 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q105711039> , <https://www.wikidata.org/wiki/Q110370681> ;
 	gen:startDate "1749-09-25" .
+<#Mária_Anna_Batthyány>
+  # Mária Anna Gräfin Batthyány de Német-Ujvár, 1747 - 1772
+  gen:father <https://www.wikidata.org/wiki/Q96289288> ;
+  gen:mother <https://www.wikidata.org/wiki/Q96289291> .
+  # oo 1769 Maximilian Graf Batthyány de Német-Ujvár, 1739 - 1805, #Maximilian_Batthyány
 <https://www.wikidata.org/wiki/Q56388672>
   # Nepomuk János Josef Anton Graf Batthyány de Német-Ujvár, 1747-11-16 - 1831-06-11
   gen:father <https://www.wikidata.org/wiki/Q96289288> ;
@@ -191,6 +196,17 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q117302074> , <https://www.wikidata.org/wiki/Q117302076> ;
 	gen:startDate "1795-11-23" .
+<#Maximilian_Batthyány>
+  # Maximilian Graf Batthyány de Német-Ujvár, 1739 - 1805
+  gen:father <https://www.wikidata.org/wiki/Q110370615> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110370616> .
+  # oo Mária Anna Gräfin Batthyány de Német-Ujvár, 1747 - 1772
+  []
+    gen:spouse <#Maximilian_Batthyány> , <#Mária_Anna_Batthyány> ;
+	gen:startDate "1769" .
+  # oo Magdalena Flässer
+  []
+    gen:spouse <#Maximilian_Batthyány> , <#Magdalena_Flässer> .
 <#Philipp_Batthyány>
   # Philipp Georg Graf Batthyány de Német-Ujvár, 1745 - 1795
   gen:father <https://www.wikidata.org/wiki/Q110370615> ;
@@ -271,6 +287,13 @@
   []
     gen:spouse <#Sigmund_Batthyány> , <#Maria_Agnes_Batthyány> ;
 	gen:startDate "1834-10-15" .
+<#Joseph_Batthyány>
+  # Joseph Graf Batthyány de Német-Ujvár, 1777 - 1812
+  gen:father <#Maximilian_Batthyány> ;
+  gen:mother <#Magdalena_Flässer> .
+  # oo Barbara Skerlecz de Loronicza, 1782 - 1834
+  []
+    gen:spouse <#Joseph_Batthyány> , <#Barbara_Skerlecz> .
 <#Christoph_Batthyány>
   # Christoph Graf Batthyány de Német-Ujvár, 1793 - 1878
   gen:father <#Philipp_Batthyány> ;
@@ -331,6 +354,15 @@
   gen:father <#Sigmund_Batthyány> ;
   gen:mother <#Maria_Agnes_Batthyány> .
   # oo 1861-09-12 (div 1879) József Graf Batthyány de Német-Ujvár, 1836-06-26 - 1897-08-24, https://www.wikidata.org/wiki/Q25468456
+<https://www.wikidata.org/wiki/Q702016>
+  # Lajos Graf Batthyány de Német-Ujvár, 1807-02-11 - 1849-10-06
+  # Ludwig Franz Joseph
+  gen:father <#Joseph_Batthyány> ;
+  gen:mother <#Barbara_Skerlecz> .
+  # oo Antónia Gräfin Zichy de Zich et Vásonkeö, 1816-07-14 - 1888-09-28
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q702016> , <https://www.wikidata.org/wiki/Q1467306> ;
+	gen:startDate "1834-12-04" .
 <#Maria_Agnes_Batthyány>
   # Maria Agnes Gräfin Batthyány de Német-Ujvár, 1815-12-19 - 1853-09-17
   gen:father <#Christoph_Batthyány> ;
@@ -367,10 +399,15 @@
   # Tamás
   gen:father <#Sigmund_Karl_Batthyány> ;
   gen:mother <erdődy.ttl#Johanna_Erdődy> .
-  # oo Helene Gräfin Keglevich de Buzin, 1885-06-21 - 1941-08-29, daughter of Adalbert Graf Keglevich de Buzin (1862-04-25 - 1924-06-05) and oo 1884-09 Paula Popovits (1864 - 1920-08)
+  # oo Helene Gräfin Keglevich de Buzin, 1885-06-21 - 1941-08-29
   []
-    gen:spouse <#Thomas_Batthyány> , <#Helene_Keglevich> ;
+    gen:spouse <#Thomas_Batthyány> , <zichy.ttl#Helene_Keglevich> ;
 	gen:startDate "1913-01-18" .
+<https://www.wikidata.org/wiki/Q24931896>
+  # Ilona Gräfin Batthyány de Német-Ujvár, 1842 - 1929-03-21
+  gen:father <https://www.wikidata.org/wiki/Q702016> ;
+  gen:mother <https://www.wikidata.org/wiki/Q1467306> .
+  # oo 1860-08-15 Béla Graf Keglevich de Buzin, 1833-03-10 - 1896-11-13, https://www.wikidata.org/wiki/Q20436263 (zichy.ttl)
 
 <#Ladislaus_Batthyány-Strattmann>
   # Ladislaus Iwan Karl Josef Maria Fürst Batthyány-Strattmann von Német-Ujvár, 1904-06-23 - 1966-03-28
@@ -402,7 +439,7 @@
 <#Ilona_Batthyány>
   # Ilona Antonia Maria Gobertine Johanna Gräfin Batthyány de Német-Ujvár, 1913-11-07 - 1978-03-21
   gen:father <#Thomas_Batthyány> ;
-  gen:mother <#Helene_Keglevich> .
+  gen:mother <zichy.ttl#Helene_Keglevich> .
   # oo 1942 Lajos Graf Széchényi de Sárvár-Felsövidék, 1902-10-28 - 1963-01-14/-06-21, széchényi.ttl#Lajos_Széchényi
 
 <https://www.wikidata.org/wiki/Q75944909>
@@ -562,6 +599,11 @@
   # oo Borbála Gräfin Berényi de Karáns-Berényi, 1755-04-08 - 1819-12-30
   []
     gen:spouse <https://www.wikidata.org/wiki/Q12815575> , <https://www.wikidata.org/wiki/Q96244157> .
+<#Teréz_Orczy>
+  # Teréz Baronesse Orczy de Orczi, 1758 - 1813-04-14
+  gen:father <https://www.wikidata.org/wiki/Q1225286> ;
+  gen:mother <#Anna-Maria_von_Laffert> . # oo 1759-10-01 Anna-Maria Baronesse von Laffert, 1729-04-09 - 1792-08-12
+  # oo 1783-11-21 Adam Graf Keglevich de Buzin, 1748 - 1820-04-21, zichy.ttl#Adam_Keglevich
 
 <https://www.wikidata.org/wiki/Q116775298>
   # József Baron Orczy de Orczi, 1779-08-15 - 1811-11-11
@@ -608,6 +650,11 @@
   gen:father <#György_Orczy> ;
   gen:mother <#Erzsébet_Berényi> .
   # oo 1842-07-09 László Graf Esterházy de Galántha, 1810-10-08 - 1891-11-22, esterházy.ttl#László_Esterházy
+<#Georgine_Orczy>
+  # Georgine Baronesse Orczy de Orczi, 1827-01-26 - 1894-11-26
+  gen:father <#György_Orczy> ;
+  gen:mother <#Erzsébet_Berényi> .
+  # oo 1845-11-08 Gyula Graf Keglevich de Buzin, 1824-12-20 - 1865-11-25, zichy.ttl#Gyula_Keglevich
 
 # ----
 #<#Gábor_Splényi>
