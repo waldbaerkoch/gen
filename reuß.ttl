@@ -570,13 +570,13 @@
   # Graf und Herr von Plauen 1673-08-26
   gen:father <https://www.wikidata.org/wiki/Q11919314> ;
   gen:mother <https://www.wikidata.org/wiki/Q75454533> .
-  # oo Esther Gräfin zu Hardegg auf Glatz und im Marchlande, 1634-12-06 - 1676-09-21
+  # oo Esther Gräfin zu Hardegg auf Glatz und im Machlande, 1634-12-06 - 1676-09-21
   []
     gen:spouse <https://www.wikidata.org/wiki/Q11919318> , <https://www.wikidata.org/wiki/Q75244752> ;
 	gen:startDate "1662-02-09" .
   # oo Maximiliane Gräfin von Hardegg, 1644-03-16 - 1678-08-27
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q11919318> , <#Maximiliane_von_Hardegg> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q11919318> , <hardegg.ttl#Maximiliane_von_Hardegg> ;
 	gen:startDate "1677-10-22" .
   # oo Marie Elisabeth Gräfin von Sinzendorf, 1659-05-12 - 1683-10-08
   []
@@ -1742,40 +1742,19 @@
   # oo 1717-02-21 Heinrich XXV., Graf Reuß zu Gera, 1681-08-27 - 1748-03-13, https://www.wikidata.org/wiki/Q28113667
 
 # ----
-<https://www.wikidata.org/wiki/Q75244752>
-  # Esther Gräfin zu Hardegg auf Glatz und im Marchlande, 1634-12-06 - 1676-09-21
-  gen:father <https://www.wikidata.org/wiki/Q75244753> . # Julius III Graf zu Hardegg auf Glatz und im Marchlande
-  # and Johanna Susanna von Hardegg
-  # oo 1662-02-09 Heinrich I., Graf Reuß zu Schleiz, 1639-03-26 - 1692-03-18, https://www.wikidata.org/wiki/Q11919318
-
-#<https://www.wikidata.org/wiki/Q110262116>
-  # Maximilian Philipp Graf von Hardegg, d. 1663
-  # son of Georg Friedrich Graf von Hardegg
-  # and Sinonie von Herberstein
-  # oo Eva Maria Gräfin von Sinzendorf, d. 1652
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q110262116> , <#Eva_Maria_von_Sinzendorf> ;
-	gen:startDate "1643~" .
-
-<#Maximiliane_von_Hardegg>
-  # Maximiliane Gräfin von Hardegg, 1644-03-16 - 1678-08-27
-  gen:father <https://www.wikidata.org/wiki/Q110262116> ;
-  gen:mother <#Eva_Maria_von_Sinzendorf> .
-  # oo 1677-10-22 Heinrich I., Graf Reuß zu Schleiz, 1639-03-26 - 1692-03-18, https://www.wikidata.org/wiki/Q11919318
-
-# ----
 <https://www.wikidata.org/wiki/Q55238481>
-  owl:sameAs <https://www.wikidata.org/wiki/Q110262034> .
-  # August Freiherr von Sinzendorf, 1590 - 1637
-  # son of Joachim I. Reichsfreiherr von Sinzendorf Herr von Goggitsch
-  # and Maria Rueber Reichsgrafin von Pichsendorf
+  owl:sameAs <https://www.wikidata.org/wiki/Q110262034> ;
+  # August Freiherr von Sinzendorf, 1590 - 1637/1642
+  gen:father <https://www.wikidata.org/wiki/Q94576491> ; # Joachim I. Reichsfreiherr von Sinzendorf Herr von Goggitsch
+  gen:mother <https://www.wikidata.org/wiki/Q110303740> . # Maria Rueber Reichsgrafin von Pichsendorf
   # oo Elisabeth Freiin von und zu Trauttmansdorff, 1587-05-05 - 1652-05-29
   []
     gen:spouse <https://www.wikidata.org/wiki/Q55238481> , <https://www.wikidata.org/wiki/Q110303744> .
 
 <#Eva_Maria_von_Sinzendorf>
   # Eva Maria Gräfin von Sinzendorf, d. 1652
-  gen:father <https://www.wikidata.org/wiki/Q55238481> .
+  gen:father <https://www.wikidata.org/wiki/Q55238481> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110303744> .
   # oo 1643~ Maximilian Philipp Graf von Hardegg, d. 1663, https://www.wikidata.org/wiki/Q110262116
 <https://www.wikidata.org/wiki/Q19691745>
   # Rudolf Graf von Sinzendorf zu Rheineck, 1620-03-29/1636-03-28 - 1677-09-02
@@ -1795,11 +1774,16 @@
   # Sigismund Rudolph Graf von Sinzendorf, 1670 - 1747-01-08
   gen:father <https://www.wikidata.org/wiki/Q19691745> ;
   gen:mother <https://www.wikidata.org/wiki/Q75454537> .
-  # oo Johanna Katharina Gräfin von Nostitz-Rieneck, 1685~ - 1735-04-25, daughter of Christoph Wenzel Graf von Nostitz-Rieneck and Maria Juliana Gräfin von Mettich Freiin von Czeczow
+  # oo Johanna Katharina Gräfin von Nostitz-Rieneck (-Rokinitz), 1685~ - 1735-04-25, daughter of Christoph Wenzel Graf von Nostitz-Rieneck and Maria Juliana Gräfin von Mettich Freiin von Czeczow
   []
     gen:spouse <https://www.wikidata.org/wiki/Q94505913> , <#Johanna_von_Nostitz-Rieneck> ;
 	gen:startDate "1709-10-03" .
 
+<https://www.wikidata.org/wiki/Q110412638>
+  # Maria Elisabeth Gräfin von Sinzendorf, 1714-04-05 - 1772-01-27
+  gen:father <https://www.wikidata.org/wiki/Q94505913> ;
+  gen:mother <#Johanna_von_Nostitz-Rieneck> .
+  # oo 1731-04-02 Johann Karl Graf zu Hardegg auf Glatz und im Machlande, 1703-09-02 - 1752-01-26, https://www.wikidata.org/wiki/Q110412623
 <https://www.wikidata.org/wiki/Q75396858>
   # Maria Franziska Gräfin von Sinzendorf, 1717-04-21 - 1778-10-29
   gen:father <https://www.wikidata.org/wiki/Q94505913> ;
