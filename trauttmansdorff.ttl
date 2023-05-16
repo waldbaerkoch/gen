@@ -682,12 +682,20 @@
   gen:mother <https://www.wikidata.org/wiki/Q110412442> . # Vorsila Polyxena Gräfin Borita z Martinic
   # oo 1676-01-27 Johann Friedrich Ludwig Graf von und zu Trauttmansdorff Freiherr von Gleichenberg, 1619-01-05 - 1696-01-07, https://www.wikidata.org/wiki/Q26868362
 
-# ----
+# ====
 <https://www.wikidata.org/wiki/Q108317035>
   # Renata Gräfin von Wildenstein, 1643-10-12 - 1708-12-17
   gen:father <https://www.wikidata.org/wiki/Q110363584> ; # Johann Franz Graf von Wildenstein, d. 1678-10-18
   gen:mother <https://www.wikidata.org/wiki/Q110363592> . # Barbara Konstantia Freiin Scheidt von Leitersdorf, d. 1645-12-31
   # oo 1665-04-30 Sigmund Georg Graf von und zu Trauttmansdorff, 1638-08-22 - 1708-10-16, https://www.wikidata.org/wiki/Q89475364
+<#Franz_Christoph_von_Wildenstein>
+  # Franz Christoph Graf von Wildenstein, 1645 - 1676
+  gen:father <https://www.wikidata.org/wiki/Q110363584> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110363592> .
+  # oo Anna Theresia von Mindorf
+  []
+    gen:spouse <#Franz_Christoph_von_Wildenstein> , <#Anna_Theresia_von_Mindorf> ;
+	gen:startDate "1664" .
 <https://www.wikidata.org/wiki/Q110369800>
   # Johann Joseph Graf von Wildenstein, 1668-02-12 - 1747-03-06
   gen:father <https://www.wikidata.org/wiki/Q110363584> ;
@@ -696,6 +704,22 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q110369800> , <https://www.wikidata.org/wiki/Q110369802> .
 
+<#Johann_Christoph_von_Wildenstein_(d._1742)>
+  # Johann Christoph Graf von Wildenstein, 1670 - 1742-01-07
+  gen:father <#Franz_Christoph_von_Wildenstein> ;
+  gen:mother <#Anna_Theresia_von_Mindorf> .
+  # oo Maria Felicitas Gräfin von Steinpeiss, 1676-04-14 - 1699-03-21
+  []
+    gen:spouse <#Johann_Christoph_von_Wildenstein_(d._1742)> , <#Maria_Felicitas_von_Steinpeiss> ;
+	gen:startDate "1693-10-02" .
+<https://www.wikidata.org/wiki/Q110370732>
+  # Franz Augustin Graf von und zu Wildenstein Freiherr auf Wildbach und Kaisdorf, 1671-08-21 - 1744-03-28
+  gen:father <#Franz_Christoph_von_Wildenstein> ;
+  gen:mother <#Anna_Theresia_von_Mindorf> .
+  # oo Maria Anna Theresia Gräfin von Tattenbach, 1682-07-26 - 1767-10-08, daughter of https://www.wikidata.org/wiki/Q110370735 Otto Friedrich Graf von Tattenbach, 1644 - 1683-07-26 and https://www.wikidata.org/wiki/Q110370736 oo 1681-02-10 Eleonora Eusebia von Schrattenbach, 1663-06-24 - 1731-10-30, daughter of https://www.wikidata.org/wiki/Q109533461 and https://www.wikidata.org/wiki/Q109533465
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110370732> , <https://www.wikidata.org/wiki/Q110370734> ;
+	gen:startDate "1699-05-04" .
 <https://www.wikidata.org/wiki/Q110415547>
   # Johann Max Probus Graf von Wildenstein, 1702-11-10 - 1779-03-14
   gen:father <https://www.wikidata.org/wiki/Q110369800> ;
@@ -705,6 +729,19 @@
     gen:spouse <https://www.wikidata.org/wiki/Q110415547> , <https://www.wikidata.org/wiki/Q110415548> ;
 	gen:startDate "1726-04-28" .
 
+<#Johann_Joseph_von_Wildenstein>
+  # Johann Joseph Graf von Wildenstein, 1697 - 1739
+  gen:father <#Johann_Christoph_von_Wildenstein_(d._1742)> ;
+  gen:mother <#Maria_Felicitas_von_Steinpeiss> .
+  # oo Maria Anna Schätzl von Hörmannsberg
+  []
+    gen:spouse <#Johann_Joseph_von_Wildenstein> , <#Maria_Anna_Schätzl> ;
+	gen:startDate "1731" .
+<https://www.wikidata.org/wiki/Q110370730>
+  # Maria Anna Theresia Sabina Gräfin von und zu Wildenstein, 1700-02-17 - 1790-01-01
+  gen:father <https://www.wikidata.org/wiki/Q110370732> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110370734> .
+  # oo 1731-07-28 Leopold Sigmund Graf von Wurmbrand-Stuppach, 1701-02-05 - 1759-10-18, https://www.wikidata.org/wiki/Q110370724
 <https://www.wikidata.org/wiki/Q110415546>
   # Maria Christina Juliana Gräfin von Wildenstein, 1727-04-22 - 1794-01-30
   gen:father <https://www.wikidata.org/wiki/Q110415547> ;
@@ -714,22 +751,69 @@
   # Ferdinand Graf von Wildenstein, 1736-12-08 - 1801-03-11
   gen:father <https://www.wikidata.org/wiki/Q110415547> ;
   gen:mother <https://www.wikidata.org/wiki/Q110415548> .
-  # oo Maria Aloisia von Stubenberg, 1754-12-31 - 1830 (wurmbrand.ttl)
+  # oo Maria Aloisia von Stubenberg, 1754-12-31 - 1830
   []
     gen:spouse <#Ferdinand_von_Wildenstein> , <https://www.wikidata.org/wiki/Q75395906> ;
 	gen:startDate "1782-08-25" .
 
+<#Johann_Christoph_von_Wildenstein_(d._1794)>
+  # Johann Christoph Graf von Wildenstein, 1732 - 1794-02-03
+  gen:father <#Johann_Joseph_von_Wildenstein> ;
+  gen:mother <#Maria_Anna_Schätzl> .
+  # oo Anna Theresia Gräfin und Herrin zu Stubenberg, 1736-12-08 - 1763-07-01
+  []
+    gen:spouse <#Johann_Christoph_von_Wildenstein_(d._1794)> , <https://www.wikidata.org/wiki/Q75396069> ;
+	gen:startDate "1762" .
+<https://www.wikidata.org/wiki/Q75395875>
+  # Theresia Gräfin von Wildenstein, 1734-07-06 - 1769-12-15
+  gen:father <#Johann_Joseph_von_Wildenstein> ;
+  gen:mother <#Maria_Anna_Schätzl> .
+  # oo 1765-02-19 Wolfgang Herr und Graf von Stubenberg, 1730-10-09 - 1800-06-07, https://www.wikidata.org/wiki/Q75395872
 <#Juliana_von_Wildenstein>
   # Juliana Gräfin von Wildenstein auf Wildbach, 1786-12-08 - 1849-09-17
   gen:father <#Ferdinand_von_Wildenstein> ;
   gen:mother <https://www.wikidata.org/wiki/Q75395906> .
   # oo 1804-04-24 Franz Xaver Graf von Kolowrat-Krakowsky, 1783-10-10 - 1855-12-13, https://www.wikidata.org/wiki/Q32997254 (kolowrat.ttl)
+
+<#Maria_Theresia_von_Wildenstein>
+  # Maria Theresia Gräfin von Wildenstein, 1763-06-23 - 1835-11-16
+  gen:father <#Johann_Christoph_von_Wildenstein_(d._1794)> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75396069> .
+  # oo 1787-01-22 Friedrich Franz Xaver Prinz von Hohenzollern-Hechingen, 1757-05-31 - 1844-04-06, https://www.wikidata.org/wiki/Q474448
+
 # ----
 <https://www.wikidata.org/wiki/Q110369802>
   # Juliana Freiin Zollner von Massenberg, 1672-03-30 - 1708-09-28
   gen:father <https://www.wikidata.org/wiki/Q110369803> ; # Hans Ludwig Freiherr Zollner von Massenberg
   gen:mother <https://www.wikidata.org/wiki/Q110369804> . # Marianne Gräfin von Attems
   # oo Johann Joseph Graf von Wildenstein, 1668-02-12 - 1747-03-06, https://www.wikidata.org/wiki/Q110369800
+
+# ----
+<https://www.wikidata.org/wiki/Q110635095>
+  # Eva Eleonore Gräfin von Mörsberg und Beffort, 1656-11-09b - 1687
+  gen:father <https://www.wikidata.org/wiki/Q110412532> ; # Georg Friedrich Graf von Mörsperg und Beffort
+  gen:mother <https://www.wikidata.org/wiki/Q110412572> . # Maria Eleonore Freiin von Offenheim
+  # oo 1675-01-13 Georg Christoph Graf von Steinpeiss, d. 1679-10-25, #Georg_Christoph_von_Steinpeiss
+<https://www.wikidata.org/wiki/Q75395997>
+  # Maria Cäcilia Gräfin von Mörsperg und Beffort, 1669-04-08 - 1734-08-03
+  gen:father <https://www.wikidata.org/wiki/Q110412532> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110412572> .
+  # oo 1691-01-23 Karl Herr und Graf von Stubenberg Herr auf Kapfenberg, 1666-05-17 - 1723-11-06, https://www.wikidata.org/wiki/Q75395995
+# ----
+#<#Georg_Christoph_von_Steinpeiss>
+  # Georg Christoph Graf von Steinpeiss, d. 1679-10-25
+  # oo Eva Eleonore Gräfin von Mörsberg und Beffort, 1656-11-09b - 1687
+  []
+    gen:spouse <#Georg_Christoph_von_Steinpeiss> , <https://www.wikidata.org/wiki/Q110635095> ;
+	gen:startDate "1675-01-13" .
+
+<#Maria_Felicitas_von_Steinpeiss>
+  # Maria Felicitas Gräfin von Steinpeiss, 1676-04-14 - 1699-03-21
+  gen:father <#Georg_Christoph_von_Steinpeiss> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110635095> .
+  # oo 1693-10-02 Johann Christoph Graf von Wildenstein, 1670 - 1742-01-07, #Johann_Christoph_von_Wildenstein
+
+# ====
 
 # ----
 <https://www.wikidata.org/wiki/Q108927156>
