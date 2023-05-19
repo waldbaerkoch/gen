@@ -4,11 +4,107 @@
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
+<https://www.wikidata.org/wiki/Q110103024>
+  # Heinrich VI. Burggraf von Dohna zu Kraschen und Peterwitz, d. 1484a
+  gen:father <https://www.wikidata.org/wiki/Q110103026> ; # Heinrich V. Burggraf und Herr zu Dohna
+  gen:mother <https://www.wikidata.org/wiki/Q110103042> . # oo Anna von Thader
+  # oo Magdalena von Krumnau, b. 1425~, daughter of Stanislaus von Krumnau
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110103024> , <https://www.wikidata.org/wiki/Q110103048> .
+
+<https://www.wikidata.org/wiki/Q110556147> # -> schlesische Linie
+  # Christopher Burggraf von Dohna zu Kraschen, auf Kraschen, d. 1509-08-04
+  gen:father <https://www.wikidata.org/wiki/Q110103024> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110103048> .
+<https://www.wikidata.org/wiki/Q110103022> # -> preußische Linie
+  # Stanislaus Burggraf und Herr zu Dohna, 1433~ - 1504/1505
+  gen:father <https://www.wikidata.org/wiki/Q110103024> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110103048> .
+
+
+# schlesische Linie
+<https://www.wikidata.org/wiki/Q110556147>
+  # Christopher Burggraf von Dohna zu Kraschen, auf Kraschen, d. 1509-08-04
+  gen:father <https://www.wikidata.org/wiki/Q110103024> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110103048> .
+  # oo ??? von Czirn
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110556147> , <https://www.wikidata.org/wiki/Q110556150> .
+
+<https://www.wikidata.org/wiki/Q110556146>
+  # Caspar Burggraf von Dohna zu Kraschen und Heinzendorf, auf Kraschen, d. 1544a/1562b
+  gen:father <https://www.wikidata.org/wiki/Q110556147> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110556150> .
+  # oo Rosina Gräfin zu Dohna, daughter of Heinrich VIII. Burggraf zu Dohna and Katharina von Nostitz
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110556146> , <https://www.wikidata.org/wiki/Q110556152> .
+
+<https://www.wikidata.org/wiki/Q108928631>
+  # Abraham von Dohna zu Kraschen, d. 1587~
+  gen:father <https://www.wikidata.org/wiki/Q110556146> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110556152> .
+  # oo Marianne von Borschnitz, d. 1594a, daughter of Melchior von Borschnitz and Margarete von Colditz
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q108928631> , <https://www.wikidata.org/wiki/Q108928632> .
+
+<https://www.wikidata.org/wiki/Q102423>
+  # Abraham II. Burggraf und Graf zu Dohna-Kraschen, 1561-12-11 - 1613-05-01
+  # Freiherr auf Wartenberg und Brallin
+  gen:father <https://www.wikidata.org/wiki/Q108928631> ;
+  gen:mother <https://www.wikidata.org/wiki/Q108928632> .
+  # oo Eleonora von Sauermann-Jeltsch, 1565~ - 1634
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q102423> , <#Eleonora_von_Sauermann> .
+
+<https://www.wikidata.org/wiki/Q1731412>
+  # Carl Hannibal Burggraf und Graf zu Dohna-Kraschen, 1588-08-08 - 1633-02-21
+  gen:father <https://www.wikidata.org/wiki/Q102423> ;
+  gen:mother <#Eleonora_von_Sauermann> .
+  # oo Maria Anna Elisabeth Zapsky von Zaps, 1590~ - 1659-04-13
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1731412> , <#Maria_Anna_Zapsky> .
+
+<https://www.wikidata.org/wiki/Q102062820>
+  # Eleonora Eusebia Burggräfin und Herrin zu Dohna-Kraschen, 1610~ - 1676-11-22
+  gen:father <https://www.wikidata.org/wiki/Q1731412> ;
+  gen:mother <#Maria_Anna_Zapsky> .
+  # oo 1634 Johann Balthasar Graf von Dietrichstein, d. 1634, dietrichstein.ttl#Johann_Balthasar_von_Dietrichstein
+  # oo 1636-01-28 Johann Rudolf von Wagensperg, 1613-01-08 - 1679-07-01, https://www.wikidata.org/wiki/Q102062818 (dietrichstein.ttl)
+
+
+# preußische Linie
+<https://www.wikidata.org/wiki/Q110103022>
+  # Stanislaus Burggraf und Herr zu Dohna, 1433~ - 1504/1505
+  gen:father <https://www.wikidata.org/wiki/Q110103024> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110103048> .
+  # oo Ursula von Greysing
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110103022> , <https://www.wikidata.org/wiki/Q110103056> ;
+	gen:startDate "1477" .
+
+<https://www.wikidata.org/wiki/Q108410165>
+  # Peter Burggraf und Herr zu Dohna, 1482/1483 - 1553-01-18
+  gen:father <https://www.wikidata.org/wiki/Q110103022> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110103056> .
+  # oo Catharina von Zehmen, 1513~ - 1558-09-20, daughter of Achatius von Zehmen and Helene von Tolck von Merchlichenrade
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q108410165> , <https://www.wikidata.org/wiki/Q18411072> ;
+	gen:startDate "1532-06-07" .
+
+<https://www.wikidata.org/wiki/Q101228639>
+  # Achatius Burggraf und Graf zu Dohna, 1533-05-17 - 1601-10-18
+  gen:father <https://www.wikidata.org/wiki/Q108410165> ;
+  gen:mother <https://www.wikidata.org/wiki/Q18411072> .
+  # oo Barbara von Wernsdorff, 1547 - 1607-10-21, daughter of Wolf Dietrich von Wernsdorff and Katharina von der Oelsnitz
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q101228639> , <https://www.wikidata.org/wiki/Q101228642> ;
+	gen:startDate "1569-10-18" .
+
 <#Fabian_zu_Dohna-Reichertswalde> # -> Reichertswalder Linie
   # Fabian zu Dohna, zu Reichertswalde und Ebersbach, 1577-02-25 - 1631-08-12
   # zu Reichertswalde und Ebersbach
-  gen:father <https://www.wikidata.org/wiki/Q101228639> ; # Achatius, Burggraf und Graf zu Dohna
-  gen:mother <https://www.wikidata.org/wiki/Q101228642> . # Barbara von Wernsdorff
+  gen:father <https://www.wikidata.org/wiki/Q101228639> ;
+  gen:mother <https://www.wikidata.org/wiki/Q101228642> .
 <https://www.wikidata.org/wiki/Q315846> # -> Vianische Linie
   # Christoph II. Burggraf und Graf zu Dohna, 1583-06-27 - 1637-07-01
   # Edelherr von Schlobitten, Carwinden, Stockenfels und Fischbach
