@@ -1,0 +1,393 @@
+@base <arco.ttl> .
+@prefix gen: <http://jjkoch.de/gen#> .
+@prefix wdata: <https://www.wikidata.org/wiki/> .
+@prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+# Andreasischer Stamm
+<https://www.wikidata.org/wiki/Q110371217>
+  # Vinciguerra Graf von Arco, 1642-12-20 - 1721-01-27
+  gen:father <https://www.wikidata.org/wiki/Q110371218> ; # Franz Leopold Graf von Arco
+  gen:mother <https://www.wikidata.org/wiki/Q110371228> . # oo Portia Caterina Castelbarco
+  # oo Felicitas Pulcheria Gräfin von Thun und Hohenstein, 1665-11-11 - 1732-05-31
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110371217> , <https://www.wikidata.org/wiki/Q110371230> .
+
+<https://www.wikidata.org/wiki/Q110371215>
+  # Georg Anton Felix Graf von Arco, 1705-04-24 - 1792-09-02
+  gen:father <https://www.wikidata.org/wiki/Q110371217> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110371230> .
+  # oo Maria Ernestina Gräfin von Khüenburg, 1704 - 1731-04-17b (harrach.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110371215> , <https://www.wikidata.org/wiki/Q110371236> .
+  # oo Maria Josepha Victoria Gräfin zu Hardegg auf Glatz und im Machlande, 1710-03-02 - 1775-12-31
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110371215> , <hardegg.ttl#Maria_Josepha_zu_Hardegg> .
+
+<https://www.wikidata.org/wiki/Q110370652>
+  # Josepha Gräfin von Arco, 1730-01-11 - 1790-02-11
+  gen:father <https://www.wikidata.org/wiki/Q110371215> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110371236> .
+  # oo Alois Ernst Graf Podstatzky-Lichstenstein, 1723-07-08 - 1793-12-04, https://www.wikidata.org/wiki/Q33376942 (kolowrat.ttl)
+<https://www.wikidata.org/wiki/Q3618999>
+  # Antonia Massimiliana Maria Josepha Gräfin von Arco, 1738-10-17 - 1788-12-15
+  gen:father <https://www.wikidata.org/wiki/Q110371215> ;
+  gen:mother <hardegg.ttl#Maria_Josepha_zu_Hardegg> .
+  # oo Ernst Maria Joseph Graf von Lodron-Laterno, 1716-05-40 - 1779-04-18, https://www.wikidata.org/wiki/Q55855159 (rosenberg.ttl)
+
+
+# Odalricischer Stamm
+<https://www.wikidata.org/wiki/Q55677098>
+  # Ignaz Joseph Philipp Neri Johann Baptist, Graf von und zu Arco, 1741-05-13 - 1812-05-12
+  gen:father <https://www.wikidata.org/wiki/Q79076062> ; # Philipp Neri Johannes Sigmund Joseph Franz Anton Graf von und zu Arco
+  gen:mother <https://www.wikidata.org/wiki/Q110153184> . # Maria Anna Theresia Adelheid Freiin Mandl von und zu Deutenhofen
+  # oo Rupertina Gräfin Trauner von Adlstetten Haus und Furth, 1744-12-15 - 1830-12-20
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q55677098> , <https://www.wikidata.org/wiki/Q110153188> ;
+	gen:startDate "1767-10-18" .
+
+<https://www.wikidata.org/wiki/Q26933326>
+  # Karl Maria Rupert Graf von und zu Arco, 1769-05-08 - 1856-08-03
+  gen:father <https://www.wikidata.org/wiki/Q55677098> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110153188> .
+  # oo Maria Anna Gräfin von Seinsheim, 1774-08-31 - 1847-04-23
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q26933326> , <https://www.wikidata.org/wiki/Q110507972> ;
+	gen:startDate "1801-10-26" .
+<https://www.wikidata.org/wiki/Q55848177>
+  # Ludwig Joseph Johann Baptist Franz von Sales Johann Nepomuk Graf von und zu Arco, 1773-01-30 - 1854-08-20
+  gen:father <https://www.wikidata.org/wiki/Q55677098> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110153188> .
+  # oo Maria Leopoldine Erzherzogin von Österreich-Este, 1776-12-10 - 1848-06-23 (lothringen.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q55848177> , <https://www.wikidata.org/wiki/Q261852> ;
+	gen:startDate "1804-11-14" .
+
+<https://www.wikidata.org/wiki/Q1914165> # -> Arco auf Valley
+  # Maximilian Josef Maria Philipp Clemens Graf von Arco auf Valley, 1806-04-08 - 1875-12-23
+  gen:father <https://www.wikidata.org/wiki/Q26933326> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110507972> .
+<https://www.wikidata.org/wiki/Q75295026>
+  # Aloys Nikolaus Ambros Graf von Arco, 1808-12-06 - 1891-09-10
+  gen:father <https://www.wikidata.org/wiki/Q55848177> ;
+  gen:mother <https://www.wikidata.org/wiki/Q261852> .
+  # oo Irene Markgräfin und Gräfin Pallavicini, 1811-09-02 - 1877-01-31 (fürstenberg.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75295026> , <https://www.wikidata.org/wiki/Q75295027> ;
+	gen:startDate "1830-10-22" .
+  # oo Pauline Oswald, 1851-03-31 - 1902-02-07
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75295026> , <https://www.wikidata.org/wiki/Q75295029> ;
+	gen:startDate "1877-07-30" .
+<https://www.wikidata.org/wiki/Q1914128> # -> Arco-Zinneberg
+  # Maximilian Joseph Bernhard Graf von und zu Arco-Zinneberg, 1811-12-13 - 1885-11-13
+  gen:father <https://www.wikidata.org/wiki/Q55848177> ;
+  gen:mother <https://www.wikidata.org/wiki/Q261852> .
+
+
+# Arco auf Valley
+<https://www.wikidata.org/wiki/Q1914165>
+  # Maximilian Josef Maria Philipp Clemens Graf von Arco auf Valley, 1806-04-08 - 1875-12-23
+  # Graf von Arco auf Valley 1827
+  gen:father <https://www.wikidata.org/wiki/Q26933326> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110507972> .
+  # oo Anna Margareta Contessa Marescalachi, 1813-08-28 - 1885-07-22
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1914165> , <https://www.wikidata.org/wiki/Q75238977> ;
+	gen:startDate "1832-06-11" .
+
+<https://www.wikidata.org/wiki/Q76351005>
+  # Karl Maria Heinrich Raphael Lorenz Ulrich Graf von Arco auf Valley, 1836-08-10 - 1904-12-27
+  gen:father <https://www.wikidata.org/wiki/Q1914165> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75238977> .
+  # oo Charlotte Anna Sophie Gräfin von Schönborn-Buchheim, 1843-11-26 - 1910-11-22
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76351005> , <schönborn.ttl#Charlotte_von_Schönborn-Buchheim> ;
+	gen:startDate "1863-06-06" ;
+	gen:divorceDate "1869-04-19" .
+<https://www.wikidata.org/wiki/Q20024846>
+  # Maximilian Maria Graf von Arco auf Valley, 1849-08-25 - 1911-05-02
+  gen:father <https://www.wikidata.org/wiki/Q1914165> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75238977> .
+  # oo Emily Henriette Melanie Freiin von Oppenheim, 1869-10-16 - 1957-07-26
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q20024846> , <https://www.wikidata.org/wiki/Q20024854> ;
+	gen:startDate "1892-10-01" .
+
+<https://www.wikidata.org/wiki/Q75347033>
+  # Maximilian Karl Graf von Arco auf Valley, 1866-06-05 - 1934-12-25
+  gen:father <https://www.wikidata.org/wiki/Q76351005> ;
+  gen:mother <schönborn.ttl#Charlotte_von_Schönborn-Buchheim> .
+  # oo Adelheid Freiin von Aretin, 1883-06-25 - 1957-10-28 (schönborn.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75347033> , <https://www.wikidata.org/wiki/Q75347034> ;
+	gen:startDate "1905-09-18" .
+<https://www.wikidata.org/wiki/Q75365063>
+  # Anton von Padua Alfred Emil Hubert Georg Graf von Arco auf Valley, 1897-02-05 - 1945-06-29
+  gen:father <https://www.wikidata.org/wiki/Q20024846> ;
+  gen:mother <https://www.wikidata.org/wiki/Q20024854> .
+  # oo Marie-Gabrielle Gräfin von Arco-Zinneberg, 1910-08-25 - 1987-11-27
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75365063> , <https://www.wikidata.org/wiki/Q75365061> ;
+	gen:startDate "1934-07-10" .
+
+<https://www.wikidata.org/wiki/Q75347031>
+  # _Anna Elisabeth_ Maria Eugenie Sophie Philomena Gräfin von Arco auf Valley, 1909-08-10 - 1981-12-31
+  gen:father <https://www.wikidata.org/wiki/Q75347033> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75347034> .
+  # oo 1933-09-12 Hubert von Waldburg Graf zu Wolfegg und Waldsee, 1906-01-07 - 1976-01-30, https://www.wikidata.org/wiki/Q75347030
+<https://www.wikidata.org/wiki/Q75365065>
+  # Maria Wilhelmine Emilie Gabriele Leopoldine Franziska Gräfin von Arco auf Valley, 1935-12-03 - 1987-09-25
+  gen:father <https://www.wikidata.org/wiki/Q75365063> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75365061> .
+  # oo 1974-09-15 Rudolf Apponyi, 1940-08-24 - 2003-12-27, https://www.wikidata.org/wiki/Q75365067 (zichy.ttl)
+
+
+# Arco-Zinneberg
+<https://www.wikidata.org/wiki/Q1914128>
+  # Maximilian Joseph Bernhard Graf von und zu Arco-Zinneberg, 1811-12-13 - 1885-11-13
+  # 1854
+  gen:father <https://www.wikidata.org/wiki/Q55848177> ;
+  gen:mother <https://www.wikidata.org/wiki/Q261852> .
+  # oo Leopoldine Gräfin von Waldburg zu Zeil und Trauchburg, 1811-06-27 - 1886-02-10
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1914128> , <https://www.wikidata.org/wiki/Q70346281> ;
+	gen:startDate "1833-06-03" .
+
+<https://www.wikidata.org/wiki/Q75365024>
+  # Marie Christiane Franziska Gräfin von und zu Arco-Zinneberg, 1834-05-23 - 1892-03-31
+  gen:father <https://www.wikidata.org/wiki/Q1914128> ;
+  gen:mother <https://www.wikidata.org/wiki/Q70346281> .
+  # oo 1856-07-27 Karl Wenzeslaus Graf zu Leiningen-Billigheim, 1823-03-07 - 1900-07-23, https://www.wikidata.org/wiki/Q16604073
+<https://www.wikidata.org/wiki/Q75365029>
+  # Sophie Leopoldine Gräfin von und zu Arco-Zinneberg, 1836-11-14 - 1909-12-21
+  gen:father <https://www.wikidata.org/wiki/Q1914128> ;
+  gen:mother <https://www.wikidata.org/wiki/Q70346281> .
+  # oo 1860-04-19 Franz Fürst von Waldburg zu Wolfegg und Waldsee, 1833-09-11 - 1906-12-14, https://www.wikidata.org/wiki/Q1423890
+<https://www.wikidata.org/wiki/Q1726250>
+  # Ludwig Graf von und zu Arco-Zinneberg, 1840-01-03 - 1882-11-20
+  gen:father <https://www.wikidata.org/wiki/Q1914128> ;
+  gen:mother <https://www.wikidata.org/wiki/Q70346281> .
+  # oo Adolfine Gräfin von Schaesberg, 1854-08-06 - 1874-05-23, daughter of Julius Maximilian Hubertus Maria Graf von Schaesberg, 1819-11-02 - 1870-07-25 and oo 1853-09-03 Thekla Gräfin von Hompesch-Bollheim, 1834-12-24 - 1857-08-07
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1726250> , <https://www.wikidata.org/wiki/Q75365038> ;
+	gen:startDate "1872-10-30" .
+  # oo Josephine Prinzessin von Lobkowicz, 1853-02-10 - 1898-11-24
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1726250> , <https://www.wikidata.org/wiki/Q75365040> ;
+	gen:startDate "1879-02-10" .
+<https://www.wikidata.org/wiki/Q75365017>
+  # Karl Maria Rupert Ludwig Theobal Graf von und zu Arco-Zinneberg, 1841-07-01 - 1873-08-25
+  gen:father <https://www.wikidata.org/wiki/Q1914128> ;
+  gen:mother <https://www.wikidata.org/wiki/Q70346281> .
+  # oo Mathilde Gräfin Wolff Metternich zur Gracht, 1840-05-14 - 1925-06-03 (rheingrafen.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75365017> , <https://www.wikidata.org/wiki/Q75365355> ;
+	gen:startDate "1867-07-20" .
+<https://www.wikidata.org/wiki/Q75365034>
+  # Anna Christiane Irene Renate Gräfin von Arco-Zinneberg, 1844-02-28 - 1927-04-17
+  gen:father <https://www.wikidata.org/wiki/Q1914128> ;
+  gen:mother <https://www.wikidata.org/wiki/Q70346281> .
+  # oo 1866-05-12 Alfred Graf zu Stolberg-Stolberg, 1835-11-18 - 1880-10-01, https://www.wikidata.org/wiki/Q1425152
+<https://www.wikidata.org/wiki/Q75365020>
+  # Maximilian Konstantin Friedrich Alfons Graf von und zu Arco-Zinneberg, 1850-02-19 - 1916-01-24
+  gen:father <https://www.wikidata.org/wiki/Q1914128> ;
+  gen:mother <https://www.wikidata.org/wiki/Q70346281> .
+  # oo Olga Freiin von Werther, 1853-04-12 - 1937-01-31
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75365020> , <https://www.wikidata.org/wiki/Q75365362> ;
+	gen:startDate "1875-06-28" .
+<https://www.wikidata.org/wiki/Q1082887>
+  # Christiane Maximiliane Gräfin von und zu Arco-Zinneberg, 1852-11-27 - 1923-09-30
+  gen:father <https://www.wikidata.org/wiki/Q1914128> ;
+  gen:mother <https://www.wikidata.org/wiki/Q70346281> .
+  # oo 1878-05-04 Johann Konrad von Preysing-Lichtenegg-Moos, 1843-03-16 - 1903-06-06, https://www.wikidata.org/wiki/Q1127067
+
+<https://www.wikidata.org/wiki/Q75365043>
+  # Maria _Joseph_ Maximilian Antonius Petrus Canisius Magnus Melchior Graf von und zu Arco-Zinneberg, 1881-09-03 - 1924-11-23
+  gen:father <https://www.wikidata.org/wiki/Q1726250> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75365040> .
+  # oo Wilhelmine Prinzessin von Auersperg, 1884-06-14 - 1919-12-01
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75365043> , <https://www.wikidata.org/wiki/Q75365044> ;
+	gen:startDate "1907-04-29" .
+  # oo Christiane Gräfin von Clam und Gallas, 1886-09-05 - 1947-10-26 (dietrichstein.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75365043> , <https://www.wikidata.org/wiki/Q55768925> ;
+	gen:startDate "1921-06-02" .
+<https://www.wikidata.org/wiki/Q75365120>
+  # Ferdinand Maria Joseph Maximilian Ludwig Antonius Aemilian Balthasar Graf von und zu Arco-Zinneberg, 1882-09-10 - 1940-05-02
+  gen:father <https://www.wikidata.org/wiki/Q1726250> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75365040> .
+  # oo Maria Angela Gräfin von Spee, 1890-06-01 - 1928-02-17 (stolberg.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75365120> , <https://www.wikidata.org/wiki/Q75365122> ;
+	gen:startDate "1922-08-15" .
+  # oo Maria Gräfin Fugger von Glött, 1894-04-29 - 1935-03-13
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75365120> , <https://www.wikidata.org/wiki/Q75365124> ;
+	gen:startDate "1929-10-03" .
+<https://www.wikidata.org/wiki/Q75365408>
+  # Leopoldine Sophie Maria Gräfin von und zu Arco-Zinneberg, 1876-04-18 - 1956-02-07
+  gen:father <https://www.wikidata.org/wiki/Q75365020> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75365362> .
+  # oo 1902-04-15 Anton Graf von Spee, 1866-08-05 - 1924-02-12, https://www.wikidata.org/wiki/Q75365409 (stolberg.ttl)
+<https://www.wikidata.org/wiki/Q75365423>
+  # Helene Maria Gräfin von und zu Arco-Zinneberg, 1877-10-26 - 1961-12-22
+  gen:father <https://www.wikidata.org/wiki/Q75365020> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75365362> .
+  # oo 1899-10-23 Hans-Albrecht Graf von Harrach zu Rohrau und Thannhausen, 1873-02-11 - 1963-10-22, https://www.wikidata.org/wiki/Q17322112
+<https://www.wikidata.org/wiki/Q95272>
+  # Mechtilde Christiane Maria Gräfin von und zu Arco-Zinneberg, 1879-03-08 - 1958-06-04
+  gen:father <https://www.wikidata.org/wiki/Q75365020> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75365362> .
+  # oo 1904-08-22 Karl Max Fürst von Lichnowsky, 1860-03-08 - 1928-02-27, https://www.wikidata.org/wiki/Q213732 (althann.ttl)
+  # oo 1937-02-01 Sir Ralph Harding Peto, 1877-02-11 - 1945-09-05, https://www.wikidata.org/wiki/Q55858680
+
+<https://www.wikidata.org/wiki/Q75365048>
+  # Maria _Engelbert_ Servatius Ignatius Stanislaus Ludwig Johannes Nepomuk Melchior Graf von Arco-Zinneberg, 1909-05-13 - 1972-05-01
+  gen:father <https://www.wikidata.org/wiki/Q75365043> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75365044> .
+  # oo Eugenie Gräfin Schaffgotsch genannt Semperfrei von und zu Kynast und Greiffenstein, 1921-02-10 - 1978-03-02
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75365048> , <https://www.wikidata.org/wiki/Q75365050> ;
+	gen:startDate "1946-05-02" .
+<https://www.wikidata.org/wiki/Q75365061>
+  # Marie-Gabrielle Ludwiga Josephine Sidonia Walpurga Elisabeth Franziska Sophie Monika Balthasare Gräfin von Arco-Zinneberg, 1910-08-25 - 1987-11-27
+  gen:father <https://www.wikidata.org/wiki/Q75365043> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75365044> .
+  # oo 1934-07-10 Anton Graf von Arco auf Valley, 1897-02-05 - 1945-06-29, https://www.wikidata.org/wiki/Q75365063
+<https://www.wikidata.org/wiki/Q75294365>
+  # Maria _Ludwig_ Gottfried Engelbert Ignatius Franziskus Konrad Aloysius Judas Thaddäus Katharina Melchior Graf von und zu Arco-Zinneberg, 1913-11-25 - 1942-02-18
+  gen:father <https://www.wikidata.org/wiki/Q75365043> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75365044> .
+  # oo Maria Theresia Gräfin von Preysing-Lichtenegg-Moos, 1922-03-23 - 2003-09-14
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75294365> , <https://www.wikidata.org/wiki/Q75294364> ;
+	gen:startDate "1940-01-25" .
+<https://www.wikidata.org/wiki/Q10290846>
+  # Maria _Ulrich-Philipp_ Kaspar Graf von und zu Arco-Zinneberg, 1917-12-12 - 1980-12-31
+  gen:father <https://www.wikidata.org/wiki/Q75365043> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75365044> .
+  # oo Maria Theresia Gräfin von Preysing-Lichtenegg-Moos, 1922-03-23 - 2003-09-14
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q10290846> , <https://www.wikidata.org/wiki/Q75294364> ;
+	gen:startDate "1943-09-26" .
+<https://www.wikidata.org/wiki/Q75365090>
+  # Maria _Sophie_ Wilhelmine Josephine Franziska Clotilde Anna Elisabeth Eusebia Baltasara Gräfin von und zu Arco-Zinneberg, 1922-12-15 - 1994-10-22
+  gen:father <https://www.wikidata.org/wiki/Q75365043> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75365044> .
+  # oo 1946-06-09 Adolf Trauttmansdorff, 1925-06-01 - 2003-12-13, https://www.wikidata.org/wiki/Q75365093
+<https://www.wikidata.org/wiki/Q75365129>
+  # Karl Antonius von Padua Maria Ernst Ludwig Joseph Ferdinand Konrad von Parzham Petrus Canisius Kaspar Ansatasius Bernhardus Graf von Arco-Zinneberg, 1931-08-18 - 1990-10-06
+  gen:father <https://www.wikidata.org/wiki/Q75365120> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75365124> .
+  # oo (rel 1961-04-06) Hedwig Gräfin Henckel von Donnersmarck, b. 1935-06-16
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75365129> , <https://www.wikidata.org/wiki/Q75366267> ;
+	gen:startDate "1961-04-06" .
+
+<https://www.wikidata.org/wiki/Q75294367>
+  # Rupprecht-Maximilian Maria Ludwig Joseph Georg Konrad Thaddäus Hubertus Felix Sebastian Kaspar Graf von und zu Arco-Zinneberg, b. 1941-01-14
+  gen:father <https://www.wikidata.org/wiki/Q75294365> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75294364> .
+  # oo (rel 1968-07-11) Katharina Gräfin Henckel von Donnersmarck, b. 1943-06-17
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75294367> , <https://www.wikidata.org/wiki/Q75294370> ;
+	gen:startDate "1968-07-06" .
+<https://www.wikidata.org/wiki/Q75294377>
+  # Riprand Maria Franz Ulrich Gaspare del Buffalo Christophorus Jakob Kaspar Graf von Arco-Zinneberg, 1955-07-25 - 2021-08-24
+  gen:father <https://www.wikidata.org/wiki/Q10290846> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75294364> .
+  # oo Maria Beatrix Habsburg-Lothringen, b. 1954-12-11
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75294377> , <https://www.wikidata.org/wiki/Q21198012> ;
+	gen:startDate "1980-03-31" .
+
+<https://www.wikidata.org/wiki/Q71582125>
+  # Olympia Elena Maria Gräfin von und zu Arco-Zinneberg, b. 1988-01-04
+  gen:father <https://www.wikidata.org/wiki/Q75294377> ;
+  gen:mother <https://www.wikidata.org/wiki/Q21198012> .
+  # oo 2019-10-17 (civ) 2019-10-19 Jean-Christophe Bonaparte, b. 1986-07-11, https://www.wikidata.org/wiki/Q620337 (württemberg.ttl)
+
+
+# ----
+<https://www.wikidata.org/wiki/Q110153188>
+  # Maria Antonia _Rupertina_ Josepha Gräfin Trauner von Adlstetten Haus und Furth, 1744-12-15 - 1830-12-20
+  gen:father <https://www.wikidata.org/wiki/Q110153190> ; # Karl-Joseph Graf Trauner von Adlstetten Haus und Furth
+  gen:mother <https://www.wikidata.org/wiki/Q110153193> . # Eleonore Freiin von Mayerhofen zu Aulenbach
+  # oo 1767-10-18 Ignaz Graf von und zu Arco, 1741-05-13 - 1812-05-12, https://www.wikidata.org/wiki/Q55677098
+
+# ----
+<https://www.wikidata.org/wiki/Q110507972>
+  # Maria Anna Gräfin von Seinsheim, 1774-08-31 - 1847-04-23
+  gen:father <https://www.wikidata.org/wiki/Q110457333> ; # Maximilian Klemens Joseph Franz Maria Graf von Seinsheim, 1751-10-10 - 1803-09-12
+  gen:mother <https://www.wikidata.org/wiki/Q110457336> . # oo 1772-05-25 Anna Maria Walburgis Freiin von Franckenstein, 1754-06-06 - 1832-03-13
+  # oo 1801-10-26 Karl Maria Rupert Graf von und zu Arco, 1769-05-08 - 1856-08-03, https://www.wikidata.org/wiki/Q26933326
+
+# ----
+<https://www.wikidata.org/wiki/Q75238977>
+  # Anna Margareta Maria Juliana Pelina Contessa Marescalachi, 1813-08-28 - 1885-07-22
+  gen:father <https://www.wikidata.org/wiki/Q110507982> ; # Carlo Alfonso Marcello Marescalchi 2. Conte Marescalchi
+  gen:mother <https://www.wikidata.org/wiki/Q110508000> . # Caterina Angela Maria Brignole-Sale
+  # oo 1832-06-11 Maximilian Graf von Arco auf Valley, 1806-04-08 - 1875-12-23, https://www.wikidata.org/wiki/Q1914165
+
+# ----
+<https://www.wikidata.org/wiki/Q20024854>
+  # Emily Henriette Melanie Freiin von Oppenheim, 1869-10-16 - 1957-07-26
+  gen:father <https://www.wikidata.org/wiki/Q15436126> . # Eduard Salomon Freiherr von Oppenheim
+  # and Amalie Aurelia Heuser
+  # oo 1892-10-01 Maximilian Maria Graf von Arco auf Valley, 1849-08-25 - 1911-05-02, https://www.wikidata.org/wiki/Q20024846
+
+# ----
+<https://www.wikidata.org/wiki/Q94760998>
+  # Maximilian Joseph Franz Ignaz Graf von Preysing-Lichtenegg-Moos, 1810-09-13 - 1881-01-11
+  gen:father <https://www.wikidata.org/wiki/Q55859153> ; # Ignaz Ludwig Graf von Preysing, 1766 - 1836
+  gen:mother <#Maria_Creszentia_von_Enzberg> . # Maria Creszentia von Enzberg, 1782 - 1851
+  # oo Anna Gräfin von Waldburg zu Zeil und Trauchburg, 1821-07-30 - 1849-01-15
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q94760998> , <https://www.wikidata.org/wiki/Q110155149> ;
+	gen:startDate "1840-05-04" .
+
+<https://www.wikidata.org/wiki/Q1127067>
+  # _Johann Konrad_ Friedrich Franz Leopold Konstantin Heribert von Preysing-Lichtenegg-Moos, 1843-03-16 - 1903-06-06
+  gen:father <https://www.wikidata.org/wiki/Q94760998> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110155149> .
+  # oo Christiane Gräfin von und zu Arco-Zinneberg, 1852-11-27 - 1923-09-30
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1127067> , <https://www.wikidata.org/wiki/Q1082887> ;
+	gen:startDate "1878-05-04" .
+
+<https://www.wikidata.org/wiki/Q75392912>
+  # Johann Georg Graf von Preysing-Lichtenegg-Moos, 1887-12-17 - 1924-05-17
+  gen:father <https://www.wikidata.org/wiki/Q1127067> ;
+  gen:mother <https://www.wikidata.org/wiki/Q1082887> .
+  # oo Gundelinde Prinzessin von Bayern, 1891-08-26 - 1983-08-16 (wittelsbacher.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75392912> , <https://www.wikidata.org/wiki/Q13476154> ;
+	gen:startDate "1919-02-23" .
+
+<https://www.wikidata.org/wiki/Q75294364>
+  # _Maria Theresia_ Christiane Anna Leopoldine Auguste Elisabeth Notburga Thaddäa Creszentia Walburga Josepha Angela Annunciata Gräfin von Preysing-Lichtenegg-Moos, 1922-03-23 - 2003-09-14
+  gen:father <https://www.wikidata.org/wiki/Q75392912> ;
+  gen:mother <https://www.wikidata.org/wiki/Q13476154> .
+  # oo 1940-01-25 Ludwig Graf von und zu Arco-Zinneberg, 1913-11-25 - 1942-02-18, https://www.wikidata.org/wiki/Q75294365
+  # oo 1943-09-26 Ulrich-Philipp Graf von und zu Arco-Zinneberg, 1917-12-12 - 1980-12-31, https://www.wikidata.org/wiki/Q10290846
+
+# ----
+<https://www.wikidata.org/wiki/Q75365362>
+  # Olga Freiin von Werther, 1853-04-12 - 1937-01-31
+  gen:father <https://www.wikidata.org/wiki/Q6236879> ; # Karl Anton Philipp Freiherr von Werther
+  gen:mother <https://www.wikidata.org/wiki/Q112327884> . # Mathilde Sophie Adelheid Lobo da Silveira Gräfin von Oriola
+  # oo 1875-06-28 Maximilian Konstantin Friedrich Alfons Graf von und zu Arco-Zinneberg, 1850-02-19 - 1916-01-24, https://www.wikidata.org/wiki/Q75365020
+
+# ----
+<https://www.wikidata.org/wiki/Q55858680>
+  # Sir Ralph Harding Peto, 1877-02-11 - 1945-09-05
+  # of the Baronets
+  gen:father <https://www.wikidata.org/wiki/Q75592226> ; # William Herbert Peto
+  gen:mother <https://www.wikidata.org/wiki/Q76125887> . # Kate Harding
+  # oo Mechtilde Christiane Maria Gräfin von und zu Arco-Zinneberg, 1879-03-08 - 1958-06-04
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q55858680> , <https://www.wikidata.org/wiki/Q95272> ;
+	gen:startDate "1937-02-01" .
