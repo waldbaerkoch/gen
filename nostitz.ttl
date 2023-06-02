@@ -1,0 +1,564 @@
+@base <nostitz.ttl> .
+@prefix gen: <http://jjkoch.de/gen#> .
+@prefix wdata: <https://www.wikidata.org/wiki/> .
+@prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+# Böhmischer Zweig
+<https://www.wikidata.org/wiki/Q19357685>
+  # Johann Nicholas von Nostitz, Herr auf Seifersdorf, Heidersdorf, 1562 – 1619-07-29
+  gen:father <https://www.wikidata.org/wiki/Q94758400> . # Abraham von Nostitz, auf Tschochau, 1529 - 1592
+  # and Helene von Seydlitz
+  # oo Sophia von Nostitz-Rottenburg auf Neundorf, 1582-12-15 – 1656-03-23, daughter of Hieronymus von Nostitz, auf Kaltwasser und Nieder-Neuendorf, Landeshauptmann von Görlitz and Katharina von Temritz
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q19357685> , <#Sophia_von_Nostitz-Rottenburg> .
+
+<https://www.wikidata.org/wiki/Q55857887> # -> Nostitz-Rokitnitz
+  # Otto II. Wenzel Freiherr von Nostitz-Rokitnitz, 1608-05-23 - 1664-11-14
+  gen:father <https://www.wikidata.org/wiki/Q19357685> ;
+  gen:mother <#Sophia_von_Nostitz-Rottenburg> .
+<https://www.wikidata.org/wiki/Q13434433> # -> Nostitz-Rieneck
+  # Johann Hartwig Graf von Nostitz-Rieneck, Graf von Rieneck, 1610 - 1683-03-27
+  gen:father <https://www.wikidata.org/wiki/Q19357685> ;
+  gen:mother <#Sophia_von_Nostitz-Rottenburg> .
+
+
+# Nostitz-Rokitnitz
+<https://www.wikidata.org/wiki/Q55857887>
+  # Otto II. Wenzel Freiherr von Nostitz-Rokitnitz, 1608-05-23 - 1664-11-14
+  # Herrschaft Rokitnitz 1629-12-05
+  # Freiherr 1631-05-18
+  gen:father <https://www.wikidata.org/wiki/Q19357685> ;
+  gen:mother <#Sophia_von_Nostitz-Rottenburg> .
+  # oo Barbara Maria Katharina Elisabeth von Wachtel und Panthenau, 1610~ - 1675-04, daughter of Johann Heinrich Wachtel auf Panthenau und Barbara Freiin von Bees
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q55857887> , <#Barbara_von_Wachtel> .
+
+<https://www.wikidata.org/wiki/Q12031698>
+  # Christoph Wenzel Graf von Nostitz-Rieneck, 1643 - 1712-02-08
+  # Kryštof Václav z Nostic
+  # Freiherrenstand 1681
+  # böhmischer Grafenstand 1675-07-27
+  # Reichsgrafenstand 1692-11-27
+  gen:father <https://www.wikidata.org/wiki/Q55857887> ;
+  gen:mother <#Barbara_von_Wachtel> .
+  # oo Maria Juliana Gräfin von Mettich Freiin von Czeczow, 1645 - 1706-05-07a/-09-17b, daughter of Karl Joachim Graf von Mettich and Anna Maria Gräfin von Proskau
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q12031698> , <#Maria_Juliana_von_Mettich> .
+  # oo Ester Wratislavová z Mitrowicz, 1688~ - 1710~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q12031698> , <kinsky.ttl#Ester_Wratislavová> .
+
+<https://www.wikidata.org/wiki/Q107608647>
+  # Johann Karl Martin Christoph Graf von Nostitz-Rokitnitz, auf Rokitnitz, Neuland, Wiesau, 1673 - 1740-04-17
+  gen:father <https://www.wikidata.org/wiki/Q12031698> ;
+  gen:mother <#Maria_Juliana_von_Mettich> .
+  # oo Maria Maximiliane Gräfin von Sinzendorf, 1675-11-02 - 1718-10-06 (reuß.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q107608647> , <https://www.wikidata.org/wiki/Q117242291> ;
+	gen:startDate "1705-09-02" .
+  # oo 1719 Marie Anna Charlotta Gräfin Fuchs von Bimbach und Dornheim, 1690 - 1768
+<#Johanna_von_Nostitz>
+  # Johanna Katharina Henrietta Gräfin von Nostitz-Rokitnitz, 1685~ - 1735-04-25
+  gen:father <https://www.wikidata.org/wiki/Q12031698> ;
+  gen:mother <#Maria_Juliana_von_Mettich> .
+  # oo 1709-10-03 Sigismund Rudolph Graf von Sinzendorf, 1670 - 1747-01-08, https://www.wikidata.org/wiki/Q94505913 (reuß.ttl)
+
+<https://www.wikidata.org/wiki/Q28031263>
+  # Joseph Wilhelm Graf von Nostitz, 1706-07-27 - 1787-01-10
+  # Josef Vilém Nostic
+  gen:father <https://www.wikidata.org/wiki/Q107608647> ;
+  gen:mother <https://www.wikidata.org/wiki/Q117242291> .
+  # oo Maria Luise Gräfin von Metsch, 1720-07-27 - 1762-11-19 (khevenhüller.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q28031263> , <https://www.wikidata.org/wiki/Q108927367> ;
+	gen:startDate "1740-10-12" .
+<#Maria_Susanna_von_Nostitz>
+  # Maria Susanna Juliana Gräfin von Nostitz-Rokitnitz, 1707-10-14 - 1758
+  gen:father <https://www.wikidata.org/wiki/Q107608647> ;
+  gen:mother <https://www.wikidata.org/wiki/Q117242291> .
+  # oo František Michal Graf Bořita z Martinitz, 1704 - 1773-01-27, https://www.wikidata.org/wiki/Q55855843 (kinsky.ttl)
+<#Maria_Elisabeth_von_Nostitz>
+  # Maria Elisabeth Amalia Gräfin von Nostitz-Rokitnitz, 1710-05-26 - 1736-10-27
+  gen:father <https://www.wikidata.org/wiki/Q107608647> ;
+  gen:mother <https://www.wikidata.org/wiki/Q117242291> .
+  # oo František Ferdinand Josej Andreas Graf von Schrattenbach, 1707-11-29 - 1785-05-10, https://www.wikidata.org/wiki/Q110540071 (kinsky.ttl)
+<#Maria_Johanna_von_Nostitz>
+  # Maria Johanna Barbara Gräfin von Nostitz-Rokitnitz, 1713-12-07 - 1779
+  gen:father <https://www.wikidata.org/wiki/Q107608647> ;
+  gen:mother <https://www.wikidata.org/wiki/Q117242291> .
+  # oo Karel Josef Leopold Graf Lichnovský z Voštic, 1702 - 1739-02-24 #Karel_Lichnovský
+  # oo 1750-12-02 Ferdinand Karl Gobert Graf von Aspremont-Lynden, 1689-09-17 - 1772-08-14, https://www.wikidata.org/wiki/Q2483142 (fürstenberg.ttl)
+<#Maria_Karolina_von_Nostitz>
+  # Maria Karolina Gräfin von Nostitz-Rokitnitz, 1716-09-15 - 1780-11-04
+  gen:father <https://www.wikidata.org/wiki/Q107608647> ;
+  gen:mother <https://www.wikidata.org/wiki/Q117242291> .
+  # oo Franz Sylvius Graf von Pückler Freiherr von Groditz, 1691-04-18 - 1754-08-15, https://www.wikidata.org/wiki/Q111989852
+
+<https://www.wikidata.org/wiki/Q107608572>
+  # Johann Nepomuk Joseph Graf von Nostitz-Rieneck, 1740-10-24 - 1808-02-22
+  gen:father <https://www.wikidata.org/wiki/Q28031263> ;
+  gen:mother <https://www.wikidata.org/wiki/Q108927367> .
+  # oo Marie Josephe Gräfin von Kaunitz, 1739-12-09 - 1796-12-02
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q107608572> , <https://www.wikidata.org/wiki/Q108927368> ;
+	gen:startDate "1763-10-24" .
+
+<https://www.wikidata.org/wiki/Q55845287>
+  # Josef I. Maria Johann Graf von Nostitz-Rieneck, 1764-09-03 - 1849-07-03
+  gen:father <https://www.wikidata.org/wiki/Q107608572> ;
+  gen:mother <https://www.wikidata.org/wiki/Q108927368> .
+  # oo Johanna Gräfin von Beess, 1770-11-30 - 1821-06-03 (reuß.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q55845287> , <https://www.wikidata.org/wiki/Q112652254> ;
+	gen:startDate "1787-07-09" .
+
+<https://www.wikidata.org/wiki/Q107608531>
+  # Jan Václav Graf von Nostitz-Rokitnitz, 1791-01-25 - 1852-10-21
+  # Johann Wenzel
+  gen:father <https://www.wikidata.org/wiki/Q55845287> ;
+  gen:mother <https://www.wikidata.org/wiki/Q112652254> .
+  # oo Karolina Gräfin von Clam und Gallas, 1798-12-18 - 1863-02-20 (dietrichstein.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q107608531> , <https://www.wikidata.org/wiki/Q99029866> ;
+	gen:startDate "1818-01-28" .
+<https://www.wikidata.org/wiki/Q95152704>
+  # Maria Rosina Gräfin von Nostitz-Rieneck, 1795-08-31 - 1867-01-11
+  gen:father <https://www.wikidata.org/wiki/Q55845287> ;
+  gen:mother <https://www.wikidata.org/wiki/Q112652254> .
+  # oo 1817-05-17 Johann Nepomuk Altgraf zu Salm-Reifferscheidt-Hainspach, 1780-04-07 - 1847-04-03, https://www.wikidata.org/wiki/Q95109577
+
+<https://www.wikidata.org/wiki/Q95152680>
+  # Johanna Gräfin von Nostitz-Rieneck, 1819-01-22 - 1870-10-10
+  gen:father <https://www.wikidata.org/wiki/Q107608531> ;
+  gen:mother <https://www.wikidata.org/wiki/Q99029866> .
+  # oo 1838-01-22 Adolf Graf von Ledebur-Wicheln, 1812-06-14 - 1886-10-20, https://www.wikidata.org/wiki/Q95138001 (czernin.ttl)
+<https://www.wikidata.org/wiki/Q94758434>
+  # Josef II. Graf von Nostitz-Rokitnitz, 1821-12-05 - 1890-10-16
+  gen:father <https://www.wikidata.org/wiki/Q107608531> ;
+  gen:mother <https://www.wikidata.org/wiki/Q99029866> .
+  # oo Ernestina Gräfin von Waldstein Herrin zu Wartenberg, 1829-09-24 - 1857-11-02
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q94758434> , <waldstein.ttl#Ernestina_von_Waldstein-Wartenberg> ;
+	gen:startDate "1850-04-04" .
+<https://www.wikidata.org/wiki/Q108798537>
+  # Wilhelmine Rosita Adelhaid Aloysia Gräfin von Nostitz-Rieneck, 1827-04-23 - 1897-04-25
+  # Vilemína z Nostic
+  gen:father <https://www.wikidata.org/wiki/Q107608531> ;
+  gen:mother <https://www.wikidata.org/wiki/Q99029866> .
+  # oo 1853-06-02 August Joseph Prinz zu Windisch-Graetz, 1828-07-24 - 1910-08-29, https://www.wikidata.org/wiki/Q94692285
+
+<https://www.wikidata.org/wiki/Q76369009>
+  # Marie Anna Carolina Gräfin von Nostitz-Rokitnitz, 1853-04-30 - 1928-10-17
+  gen:father <https://www.wikidata.org/wiki/Q94758434> ;
+  gen:mother <waldstein.ttl#Ernestina_von_Waldstein-Wartenberg> .
+  # oo 1874-06-26 Carl Erwein Graf von Nostitz-Rieneck, 1850-06-22 - 1911-10-02, https://www.wikidata.org/wiki/Q55857884
+<#Ernestine_von_Nostitz-Rokitnitz>
+  # Ernestine Karoline Gräfin von Nostitz-Rokitnitz, 1857-10-30 - 1930-11-07
+  gen:father <https://www.wikidata.org/wiki/Q94758434> ;
+  gen:mother <waldstein.ttl#Ernestina_von_Waldstein-Wartenberg> .
+  # oo 1878-04-30 Engelhard Graf von Wolkenstein-Trostburg, 1848-12-14 - 1922-02-23, fürstenberg.ttl#Engelhard_von_Wolkenstein-Trostburg
+
+
+# Nostitz-Rieneck
+<https://www.wikidata.org/wiki/Q13434433>
+  # Johann Hartwig Graf von Nostitz-Rieneck, Graf von Rieneck, 1610 - 1683-03-27
+  # böhmischer Freiherrenstand 1631-01-29
+  # böhmischer Grafenstand 1646-05-06
+  # Titularrreichsgraf 1651-05-09
+  # Grafschaft Rieneck 1673
+  gen:father <https://www.wikidata.org/wiki/Q19357685> ;
+  gen:mother <#Sophia_von_Nostitz-Rottenburg> .
+  # oo Eleonora Maria Popel von Lobkowitz, 1615~ - 1681
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q13434433> , <https://www.wikidata.org/wiki/Q94731590> .
+
+<https://www.wikidata.org/wiki/Q94758436>
+  # Wenzel Desiderius Graf von Nostitz-Rieneck, 1665-05-24 - 1700-12-10
+  gen:father <https://www.wikidata.org/wiki/Q13434433> ;
+  gen:mother <https://www.wikidata.org/wiki/Q94731590> .
+  # oo Marie Alzbeta Gräfin Kinsky von Wchinitz und Tettau, 1670 - 1737-03-26
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q94758436> , <https://www.wikidata.org/wiki/Q110504388> ;
+	gen:startDate "1692-02-29" .
+
+<https://www.wikidata.org/wiki/Q55857877>
+  # Franz Wenzel Graf von Nostitz-Rieneck, 1697 - 1765-09-20
+  gen:father <https://www.wikidata.org/wiki/Q94758436> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110504388> .
+  # oo Katharina Elisabeth Gräfin von Schönborn-Buchheim, 1692-03-17 - 1777-02-26
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q55857877> , <schönborn.ttl#Katharina_von_Schönborn-Buchheim> ;
+	gen:startDate "1719-07-26" .
+
+<https://www.wikidata.org/wiki/Q1430751>
+  # _Franz_ de Paula _Anton_ Joseph Johann Nepomuk Wenzel Philipp Graf von Nostitz-Rieneck, 1725-05-17 - 1794-09-29
+  gen:father <https://www.wikidata.org/wiki/Q55857877> ;
+  gen:mother <schönborn.ttl#Katharina_von_Schönborn-Buchheim> .
+  # oo Marie Elisabetha Gräfin Krakovská z Kolovrat Freiin von Ujezd, 1728-04-08 - 1815-08-25 (kolowrat.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1430751> , <https://www.wikidata.org/wiki/Q107307781> ;
+	gen:startDate "1757-05-15" .
+
+<https://www.wikidata.org/wiki/Q55857879>
+  # Friedrich Maria Chrysoganus Johann Nepomuk Graf von Nostitz-Rieneck, 1762-11-24 - 1819-04-09
+  gen:father <https://www.wikidata.org/wiki/Q1430751> ;
+  gen:mother <https://www.wikidata.org/wiki/Q107307781> .
+  # oo Anna Nancy Periez de Burdett, 1777-01-30 - 1820-12-30, daughter of Peter Perez Burdett and Hannah Wansell
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q55857879> , <https://www.wikidata.org/wiki/Q96088075> .
+<#Maria_Philippine_von_Nostitz-Rieneck>
+  # Maria Philippine Ludmilla Justina Gräfin von Nostitz-Rieneck, 1765-04-14 - 1813-10-16
+  gen:father <https://www.wikidata.org/wiki/Q1430751> ;
+  gen:mother <https://www.wikidata.org/wiki/Q107307781> .
+  # oo 1781-02-11 Joseph Heinrich Graf von Schlik zu Bassano und Weisskirchen, 1754-10-11 - 1807-12-13, https://www.wikidata.org/wiki/Q55883386
+<https://www.wikidata.org/wiki/Q16230439>
+  # Johann Nepomuk Graf von Nostitz-Rieneck, 1768-03-24 - 1840-10-22
+  gen:father <https://www.wikidata.org/wiki/Q1430751> ;
+  gen:mother <https://www.wikidata.org/wiki/Q107307781> .
+  # oo Antonie Josepha Gräfin von Schlick-Bassano-Weisskirchen, 1783-03-18 - 1830-08-18
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16230439> , <https://www.wikidata.org/wiki/Q107307818> ;
+	gen:startDate "1803-06-28" .
+
+<#Ludowika_von_Nostitz-Rieneck>
+  # Ludowika Gräfin von Nostitz-Rieneck, 1805-06-27 - 1849-04-24
+  gen:father <https://www.wikidata.org/wiki/Q55857879> ;
+  gen:mother <https://www.wikidata.org/wiki/Q96088075> .
+  # oo 1832 Michael Karl Graf von Althann, 1801-05-02 - 1881-05-16, https://www.wikidata.org/wiki/Q1313116
+<https://www.wikidata.org/wiki/Q94758427>
+  # Erwein Maria Graf von Nostitz-Rieneck, 1806-09-08 - 1872-02-07
+  gen:father <https://www.wikidata.org/wiki/Q55857879> ;
+  gen:mother <https://www.wikidata.org/wiki/Q96088075> .
+  # oo Maria Philippina Gräfin von Nostitz, 1804-11-27 - 1876-02-18
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q94758427> , <#Maria_Philippina_von_Nostitz-Rieneck> ;
+	gen:startDate "1829-09-17" .
+<https://www.wikidata.org/wiki/Q23899441>
+  # Hugo Maria Graf von Nostitz-Rieneck, 1814-06-14 - 1884-01-24
+  gen:father <https://www.wikidata.org/wiki/Q55857879> ;
+  gen:mother <https://www.wikidata.org/wiki/Q96088075> .
+  # oo Marie Kristina Gräfin von und zu Clam-Martinic, 1827-07-24 - 1910-10-26 (dietrichstein.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q23899441> , <https://www.wikidata.org/wiki/Q76369012> ;
+	gen:startDate "1849-06-30" .
+<#Bertha_von_Nostitz-Rieneck>
+  # Bertha Gräfin von Nostitz-Rieneck, 1816-01-03 - 1888-09-08
+  gen:father <https://www.wikidata.org/wiki/Q55857879> ;
+  gen:mother <https://www.wikidata.org/wiki/Q96088075> .
+  # oo 1834-11-16 Wilhelm Graf von Wurmbrand-Stuppach, 1806-09-05 - 1884-09-08, https://www.wikidata.org/wiki/Q94524245
+<#Maria_Philippina_von_Nostitz-Rieneck>
+  # Maria Philippina Gräfin von Nostitz, 1804-11-27 - 1876-02-18
+  gen:father <https://www.wikidata.org/wiki/Q16230439> ;
+  gen:mother <https://www.wikidata.org/wiki/Q107307818> .
+  # oo 1829-09-17 Erwein Maria Graf von Nostitz-Rieneck, 1806-09-08 - 1872-02-07, https://www.wikidata.org/wiki/Q94758427
+<https://www.wikidata.org/wiki/Q2639166>
+  # Albert Franz Graf von Nostitz-Rieneck, 1807-08-23 - 1871-01-25
+  gen:father <https://www.wikidata.org/wiki/Q16230439> ;
+  gen:mother <https://www.wikidata.org/wiki/Q107307818> .
+  # oo Adelheid Freiin von Puteani, 1823-03-26 – 1904-11-28
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2639166> , <#Adelheid_von_Puteani> ;
+	gen:startDate "1862-02-27" .
+<https://www.wikidata.org/wiki/Q15195850>
+  # Hermann Franz de Paula Graf von Nostitz-Rieneck, 1812-07-29- 1895-12-27
+  gen:father <https://www.wikidata.org/wiki/Q16230439> ;
+  gen:mother <https://www.wikidata.org/wiki/Q107307818> .
+  # oo Wilhelmina Prinzessin von Auersperg, 1813-04-02 - 1886-02-16
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q15195850> , <auersperg.ttl#Wilhelmina_von_Auersperg> ;
+	gen:startDate "1839-04-10" .
+<#Sigmund_von_Nostitz-Rieneck>
+  # Sigmund Graf von Nostitz-Rieneck, 1815-08-01 - 1890-08-04
+  gen:father <https://www.wikidata.org/wiki/Q16230439> ;
+  gen:mother <https://www.wikidata.org/wiki/Q107307818> .
+  # oo Henriette Freiin von Uechtritz, 1820-12-10 - 1909-03-25
+  []
+    gen:spouse <#Sigmund_von_Nostitz-Rieneck> , <#Henriette_von_Uechtritz> ;
+	gen:startDate "1845-05-10" .
+
+<#Mathilde_von_Nostitz-Rieneck>
+  # Mathilde Gräfin von Nostitz-Rieneck, 1831-12-29 - 1910-05-17
+  gen:father <https://www.wikidata.org/wiki/Q94758427> ;
+  gen:mother <#Maria_Philippina_von_Nostitz-Rieneck> .
+  # oo 1855-07-10 Sigismund Ignaz Graf von Thun und Hohenstein, 1827-06-11 - 1897-09-07, https://www.wikidata.org/wiki/Q2285044
+<https://www.wikidata.org/wiki/Q94758431>
+  # Friedrich Maria Graf von Nostitz-Rieneck, 1835-09-11 - 1866-06-12
+  gen:father <https://www.wikidata.org/wiki/Q94758427> ;
+  gen:mother <#Maria_Philippina_von_Nostitz-Rieneck> .
+  # oo "Sitta" Gräfin von Thun und Hohenstein, 1837-11-11 - 1908-01-23
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q94758431> , <thun.ttl#Sitta_von_Thun-Hohenstein> ;
+	gen:startDate "1861-06-04" .
+<https://www.wikidata.org/wiki/Q55857884>
+  # Carl Erwein Maria Graf von Nostitz-Rieneck, 1850-06-22 - 1911-10-02
+  gen:father <https://www.wikidata.org/wiki/Q23899441> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76369012> .
+  # oo Marie Anna Gräfin von Nostitz-Rokitnitz, 1853-04-30 - 1928-10-17
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q55857884> , <https://www.wikidata.org/wiki/Q76369009> ;
+	gen:startDate "1874-06-26" .
+<#Selina_von_Nostitz-Rieneck>
+  # Selina Gräfin von Nostitz-Rieneck, 1852-01-01 - 1888-12-04
+  gen:father <https://www.wikidata.org/wiki/Q23899441> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76369012> .
+  # oo 1874-04-20 Albert Karl Graf von Nostitz-Rieneck, 1843-04-19 - 1929-02-03, https://www.wikidata.org/wiki/Q55857874
+<https://www.wikidata.org/wiki/Q112001452>
+  # Heinrich Maria Graf von Nostitz-Rieneck, 1854-06-08 - 1895-08-21
+  gen:father <https://www.wikidata.org/wiki/Q23899441> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76369012> .
+  # oo Marie Sofie Gräfin Chotek von Chotkowa und Wognin, 1855-08-24 - 1941-12-22 (kinsky.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q112001452> , <https://www.wikidata.org/wiki/Q112001487> ;
+	gen:startDate "1885-02-15" .
+<https://www.wikidata.org/wiki/Q75377279>
+  # Maria Antonia Gabriela Gräfin von Nostitz-Rieneck, 1863-01-31 - 1934-07-23
+  gen:father <https://www.wikidata.org/wiki/Q2639166> ;
+  gen:mother <#Adelheid_von_Puteani> .
+  # oo 1885-06-16 Ernst Emanuel Graf von Silva-Tarouca, 1860-01-03 - 1936-08-15, https://www.wikidata.org/wiki/Q87769 (oldenburg.ttl)
+<https://www.wikidata.org/wiki/Q55857874>
+  # Albert Karl Werner Ferdinand Graf von Nostitz-Rieneck, 1843-04-19 - 1929-02-03
+  gen:father <https://www.wikidata.org/wiki/Q15195850> ;
+  gen:mother <auersperg.ttl#Wilhelmina_von_Auersperg> .
+  # oo Selina Gräfin von Nostitz-Rieneck, 1852-01-01 - 1888-12-04
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q55857874> , <#Selina_von_Nostitz-Rieneck> ;
+	gen:startDate "1874-04-20" .
+<https://www.wikidata.org/wiki/Q55857880>
+  # Johann Wilhelm Hermann Graf von Nostitz-Rieneck, 1847-04-06 - 1915-10-15
+  gen:father <#Sigmund_von_Nostitz-Rieneck> ;
+  gen:mother <#Henriette_von_Uechtritz> .
+  # oo Mauritia Gräfin von Walderdorff, 1861-02-27 - 1949-03-01
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q55857880> , <schönborn.ttl#Mauritia_von_Walderdorff> ;
+	gen:startDate "1885-11-18" .
+
+<https://www.wikidata.org/wiki/Q1362658>
+  # Erwein Felix Maria Graf von Nostitz-Rieneck, 1863-05-20 - 1931-11-03
+  gen:father <https://www.wikidata.org/wiki/Q94758431> ;
+  gen:mother <thun.ttl#Sitta_von_Thun-Hohenstein> .
+  # oo Amalia Gräfin Podstatzky-Lichenstein, 1867-12-14 - 1956-12-01 (kolowrat.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1362658> , <https://www.wikidata.org/wiki/Q75439195> ;
+	gen:startDate "1891-06-25" .
+<https://www.wikidata.org/wiki/Q55857886>
+  # Leopold Abraham Maria Graf von Nostitz-Rieneck, 1865-07-08 - 1945-10-05
+  gen:father <https://www.wikidata.org/wiki/Q94758431> ;
+  gen:mother <thun.ttl#Sitta_von_Thun-Hohenstein> .
+  # oo Karoline Gräfin Chotek von Chotkowa und Wognin, 1865-11-19 - 1919-11-29
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q55857886> , <kinsky.ttl#Karoline_Chotek> ;
+	gen:startDate "1886-10-02" .
+  # oo Marie Henriette Gräfin Chotek von Chotkowa und Wognin, 1880-07-09 - 1964-03-19
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q55857886> , <kinsky.ttl#Marie_Henriette_Chotek> ;
+	gen:startDate "1921-03-01" .
+<https://www.wikidata.org/wiki/Q76369000>
+  # Caroline Marie Ernestine Josephine Wilhelmine Franziska Salesia Agnes Bohemica Gräfin von Nostitz-Rieneck, 1876-01-29 - 1950-01-06
+  gen:father <https://www.wikidata.org/wiki/Q55857884> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76369009> .
+  # oo 1895-06-10 (div 1916-04-11) Karl Erwin Graf von Wurmbrand-Stuppach, 1866-05-30 - 1942-01-22, wurmbrand.ttl#Karl_Erwin_von_Wurmbrand-Stuppach
+  # oo 1916-06-26 Carl Graf von Abensperg und Traun, 1877-02-11 - 1965-09-25, https://www.wikidata.org/wiki/Q76368999 (castell.ttl)
+<https://www.wikidata.org/wiki/Q55857882>
+  # Maria _Josef_ Hartwig Matthias Graf von Nostitz-Rieneck, 1878-02-21 - 1946-05-26
+  gen:father <https://www.wikidata.org/wiki/Q55857884> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76369009> .
+  # oo Rosa Maria Prinzessin von Lobkowicz, 1879-03-15 - 1957-08
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q55857882> , <https://www.wikidata.org/wiki/Q115794404> ;
+	gen:startDate "1900-05-08" .
+<https://www.wikidata.org/wiki/Q75377787>
+  # Elisabeth Maria Christine Gräfin von Nostitz-Rieneck, 1890-05-18 - 1984-03-19
+  gen:father <https://www.wikidata.org/wiki/Q112001452> ;
+  gen:mother <https://www.wikidata.org/wiki/Q112001487> .
+  # oo 1914-06-09 (div 1920) Karl Johann Graf von Schönborn, 1890-11-28 - 1952-08-31, https://www.wikidata.org/wiki/Q55885399
+<#Eleonore_von_Nostitz-Rieneck>
+  # Eleonore Gräfin von Nostitz-Rieneck, 1886-10-04 - 1922-05-19
+  gen:father <https://www.wikidata.org/wiki/Q55857880> ;
+  gen:mother <schönborn.ttl#Mauritia_von_Walderdorff> .
+  # oo 1917-04-24 Ferdinand Maria Graf von Attems, 1885-08-14 - 1946-01~, #Ferdinand_von_Attems
+<#Wanda_von_Nostitz-Rieneck>
+  # Wanda Maria Theresia Gräfin von Nostitz-Rieneck, 1887-10-07 - 1946-01
+  gen:father <https://www.wikidata.org/wiki/Q55857880> ;
+  gen:mother <schönborn.ttl#Mauritia_von_Walderdorff> .
+  # oo 1923-09-17 Ferdinand Maria Graf von Attems, 1885-08-14 - 1946-01~, #Ferdinand_von_Attems
+
+<#Therese_von_Nostitz-Rieneck>
+  # Therese Gabrielle Marie Cyrilla Methodia Amalia Gräfin von Nostitz-Rieneck, 1892-07-05 - 1963
+  gen:father <https://www.wikidata.org/wiki/Q1362658> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75439195> .
+  # oo 1912-10-16 Johann Nepomuk Graf von Wilczek, b. 1884-11-17, wilczek.ttl#Johann_Nepomuk_von_Wilczek
+<https://www.wikidata.org/wiki/Q75392096>
+  # Friedrich Leopold Joseph Hubertus Maria Graf von Nostitz-Rieneck, 1893-11-01 - 1973-12-29
+  gen:father <https://www.wikidata.org/wiki/Q1362658> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75439195> .
+  # oo Sophie Prinzessin von Hohenberg, 1901-07-24 - 1990-10-27 (lothringen.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75392096> , <https://www.wikidata.org/wiki/Q112102> ;
+	gen:startDate "1920-09-08" .
+<#Mena_von_Nostitz-Rieneck>
+  # Franziska Ida _Mena_ Gräfin von Nostitz-Rieneck, 1902-03-28 - 1961-05-20
+  gen:father <https://www.wikidata.org/wiki/Q1362658> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75439195> .
+  # oo 1921-04-26 Karl Egon (V.) Prinz und Landgraf zu Fürstenberg, 1891-05-06 - 1973-09-23, https://www.wikidata.org/wiki/Q1167773
+<https://www.wikidata.org/wiki/Q55845285>
+  # _Erwein-Hartwig_ Johann Maria Graf von Nostitz-Rieneck, 1887-09-13 - 1942-04-06
+  gen:father <https://www.wikidata.org/wiki/Q55857886> ;
+  gen:mother <kinsky.ttl#Karoline_Chotek> .
+  # oo Anna-Bertha Gräfin von Neipperg, 1893-09-01 - 1961-11-28
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q55845285> , <neipperg.ttl#Anna-Bertha_von_Neipperg> ;
+	gen:startDate "1918-10-14" .
+<https://www.wikidata.org/wiki/Q75377476>
+  # Karl Maria Joseph Friedrich Thomas Graf von Nostitz-Rieneck, 1901-03-06 - 1961-06-05
+  gen:father <https://www.wikidata.org/wiki/Q55857882> ;
+  gen:mother <https://www.wikidata.org/wiki/Q115794404> .
+  # oo Sophia Gräfin von Brühl, 1908-08-04/1909-08-04 - 1998-10-05 (sternberg.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75377476> , <https://www.wikidata.org/wiki/Q75377474> ;
+	gen:startDate "1935-09-03" .
+<https://www.wikidata.org/wiki/Q75377501>
+  # Georg Maria Longinus Graf von Nostitz-Rieneck, 1904-03-13 - 1992-10-11
+  gen:father <https://www.wikidata.org/wiki/Q55857882> ;
+  gen:mother <https://www.wikidata.org/wiki/Q115794404> .
+  # oo Maria de Viktoria von Brühl, 1914-09-14 - 2001-07-23 (sternberg.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75377501> , <https://www.wikidata.org/wiki/Q75377498> ;
+	gen:startDate "1940-04-09" .
+<https://www.wikidata.org/wiki/Q75299477>
+  # Anna Maria Josefina Filipa Rosa Gräfin von Nostitz-Rieneck, 1905-08-23 - 1934-02-10
+  gen:father <https://www.wikidata.org/wiki/Q55857882> ;
+  gen:mother <https://www.wikidata.org/wiki/Q115794404> .
+  # oo 1928-06-05 Friedrich Graf von Wuthenau-Hohenthurm, 1897-10-19 - 1983-01-04, https://www.wikidata.org/wiki/Q75299475 (württemberg.ttl)
+<#Christof_von_Nostitz-Rieneck>
+  # Christof Wenzel Friedrich Pius Josef Maria Bernardus Graf von Nostitz-Rieneck, 1914-08-20 - 1988-04-19
+  gen:father <https://www.wikidata.org/wiki/Q55857882> ;
+  gen:mother <https://www.wikidata.org/wiki/Q115794404> .
+  # oo Elisabeth Gräfin von und zu Trauttmansdorff-Weinsberg, 1918-03-29 - 1999-07-14
+  []
+    gen:spouse <#Christof_von_Nostitz-Rieneck> , <trauttmansdorff.ttl#Elisabeth_Trauttmansdorff-Weinsberg> ;
+	gen:startDate "1942-06-30" .
+
+<https://www.wikidata.org/wiki/Q75295355>
+  # Alois Karl Josef Maria Graf von Nostitz-Rieneck, 1925-08-12 - 2003-04-22
+  gen:father <https://www.wikidata.org/wiki/Q75392096> ;
+  gen:mother <https://www.wikidata.org/wiki/Q112102> .
+  # oo (rel 1962-09-12) Maria Theresia Gräfin von Waldburg zu Zeil und Trauchburg, 1931-08-08 - 2021-09-25
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75295355> , <https://www.wikidata.org/wiki/Q75295357> ;
+	gen:startDate "1962-08-07" .
+<https://www.wikidata.org/wiki/Q75377486>
+  # Rosa Maria Anna Susanna Coletta Gräfin von Nostitz-Rieneck, b. 1945-08-09
+  gen:father <https://www.wikidata.org/wiki/Q75377476> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75377474> .
+  # oo 1968-03-09 Georg Freiherr von und zu Brenken, b. 1941-05-19, https://www.wikidata.org/wiki/Q98107 (schönborn.ttl)
+<#Elisabeth_Nostitz-Rieneck>
+  # Maria Anna Rosa _Elisabeth_ "Sissi" Nostitz-Rieneck, b. 1949-01-13
+  gen:father <#Christof_von_Nostitz-Rieneck> ;
+  gen:mother <trauttmansdorff.ttl#Elisabeth_Trauttmansdorff-Weinsberg> .
+  # oo 1976-06-17 László Pejácsevich de Veröcze, b. 1941-03-06, esterházy.ttl#László_Pejácsevich
+
+<https://www.wikidata.org/wiki/Q75295361>
+  # Monika Maria Theresia Walburga Henriette Gräfin von Nostitz-Rieneck, b. 1965-04-15
+  gen:father <https://www.wikidata.org/wiki/Q75295355> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75295357> .
+  # oo 1985-07-11 (rel 1985-07-14) Friedrich Freiherr Mayr von Melnhof, b. 1952-11-10, https://www.wikidata.org/wiki/Q75287783 (hohenlohe.ttl)
+
+
+# ----
+<https://www.wikidata.org/wiki/Q110152089>
+  owl:sameAs <https://www.wikidata.org/wiki/Q94990408> .
+  # Franz Bernhard Graf von Lichnowsky, 1664-04-25 - 1747-04-15
+  # böhmischer Freiherr als Edler Herr von Woschtitz 1702
+  # böhmischer Graf 1721
+  # Reichsgraf 1727-01-01
+  # oo Ewa Helena Freiin Dubravka z Jasene, 1664~ - 1727
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110152089> , <#Ewa_Dubravka> .
+
+<#Karel_Lichnovský>
+  # Karel Josef Leopold Graf Lichnovský z Voštic, 1702 - 1739-02-24
+  gen:father <https://www.wikidata.org/wiki/Q110152089> ;
+  gen:mother <#Ewa_Dubravka> .
+  # oo Maria Johanna Gräfin von Nostitz-Rokitnitz, 1713-12-07 - 1779
+  []
+    gen:spouse <#Karel_Lichnovský> , <#Maria_Johanna_von_Nostitz> .
+
+# ----
+<https://www.wikidata.org/wiki/Q110504884>
+  # August Sylvius Graf von Pückler Freiherr von Groditz, 1657-08-14 - 1748-03-18
+  gen:father <https://www.wikidata.org/wiki/Q75454692> ; # Georg Freiherr von Pückler von Grodlitz, 1623-12-22 - 1679-08-23
+  gen:mother <https://www.wikidata.org/wiki/Q75454693> . # oo 1646-07-03 Salomea Freiin von Frankenberg und Proschlitz, 1630-07-03 - 1678-12-12
+  # oo Louise Maximiliane Freiin von Nowak und Hermsdorf, 1658-06-06 - 1735-12-29
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110504884> , <https://www.wikidata.org/wiki/Q110504894> ;
+	gen:startDate "1682-07-15" .
+
+<https://www.wikidata.org/wiki/Q111989852>
+  # Franz Sylvius Graf von Pückler Freiherr von Groditz, 1691-04-18 - 1754-08-15
+  gen:father <https://www.wikidata.org/wiki/Q110504884> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110504894> .
+  # oo Eva Francisca Wilhelmine Gräfin von Burghauss, 1687-04-14 - 1740-01-25
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q111989852> , <https://www.wikidata.org/wiki/Q111989853> ;
+	gen:startDate "1714-11-15" .
+  # oo Maria Karolina Gräfin von Nostitz-Rokitnitz, 1716-09-15 - 1780-11-04
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q111989852> , <#Maria_Karolina_von_Nostitz> ;
+	gen:startDate "1743" .
+# ----
+<https://www.wikidata.org/wiki/Q110504894>
+  # Louise Maximiliane Freiin von Nowak und Hermsdorf, 1658-06-06 - 1735-12-29
+  gen:father <https://www.wikidata.org/wiki/Q110504896> ; # Heinrich Wenzel Freiherr von Nowak und Hermsdorf
+  gen:mother <https://www.wikidata.org/wiki/Q110504897> . # Eva Marie Freiin von Skal und Gross-Ellguth
+  # oo 1682-07-15 August Sylvius Graf von Pückler Freiherr von Groditz, 1657-08-14 - 1748-03-18, https://www.wikidata.org/wiki/Q110504884
+<https://www.wikidata.org/wiki/Q110504906>
+  # Eva Marie Freiin von Nowak und Hermsdorff, 1662-12-20 - 1719-05-30
+  gen:father <https://www.wikidata.org/wiki/Q110504896> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110504897> .
+  # oo 1677-02-15 Nicolaus Conrad Graf von Burghauss, 1659-04-09 - 1697-12-15, https://www.wikidata.org/wiki/Q110504901
+# ----
+<https://www.wikidata.org/wiki/Q110504901>
+  # Nicolaus Conrad Graf von Burghauss, 1659-04-09 - 1697-12-15
+  gen:father <https://www.wikidata.org/wiki/Q110504902> ; # Carl Nicolaus Freiherr von Burghauss, d. 1664-02-19
+  gen:mother <https://www.wikidata.org/wiki/Q110504905> . # oo 1658 Anna Elisabeth Burggräfin und Gräfin zu Dohna (zu Sulau), 1631 - 1666-01-29
+  # oo Eva Marie Freiin von Nowak und Hermsdorff, 1662-12-20 - 1719-05-30
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110504901> , <https://www.wikidata.org/wiki/Q110504906> ;
+	gen:startDate "1677-02-15" .
+
+<https://www.wikidata.org/wiki/Q111989853>
+  # Eva Francisca Wilhelmine Gräfin von Burghauss, 1687-04-14 - 1740-01-25
+  gen:father <https://www.wikidata.org/wiki/Q110504901> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110504906> .
+  # oo 1714-11-15 Franz Sylvius Graf von Pückler Freiherr von Groditz, 1691-04-18 - 1754-08-15, https://www.wikidata.org/wiki/Q111989852
+
+# ----
+<https://www.wikidata.org/wiki/Q55883386>
+  # _Joseph_ Franz Xaver Johann Nepomuk _Heinrich_ Adam Franz de Paula Graf von Schlik zu Bassano und Weisskirchen, 1754-10-11 - 1807-12-13
+  gen:father <https://www.wikidata.org/wiki/Q56034422> . # Leopold Graf von Schlik zu Bassano und Weisskirchen
+  # and _Antonia_ Jakoba Charlotte Josepha Franziska de Paula Freiin von Schellendorf
+  # oo Maria Philippine Gräfin von Nostitz-Rieneck, 1765-04-14 - 1813-10-16
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q55883386> , <#Maria_Philippine_von_Nostitz-Rieneck> ;
+	gen:startDate "1781-02-11" .
+
+<https://www.wikidata.org/wiki/Q107307818>
+  # Antonie Josepha Gräfin von Schlick-Bassano-Weisskirchen, 1783-03-18 - 1830-08-18
+  gen:father <https://www.wikidata.org/wiki/Q55883386> ;
+  gen:mother <#Maria_Philippine_von_Nostitz-Rieneck> .
+  # oo 1803-06-28 Johann Nepomuk Graf von Nostitz-Rieneck, 1768-03-24 - 1840-10-22, https://www.wikidata.org/wiki/Q16230439
+
+# ----
+<#Ferdinand_von_Attems>
+  # Ferdinand Maria Graf von Attems Freiherr zu Heiligenkreuz, 1885-08-14 - 1946-01~
+  gen:father <https://www.wikidata.org/wiki/Q55843395> . # Emil Graf von Attems Freiherr zu Heiligenkreuz, 1857-10-01 - 1921-01-13
+  # and oo 1881-10-08 Therese Gräfin O'Donell von Tyrconell, 1861-07-28 - 1906-10-01
+  # oo Eleonore Gräfin von Nostitz-Rieneck, 1886-10-04 - 1922-05-19
+  []
+    gen:spouse <#Ferdinand_von_Attems> , <#Eleonore_von_Nostitz-Rieneck> ;
+	gen:startDate "1917-04-24" .
+  # oo Wanda Gräfin von Nostitz-Rieneck, 1887-10-07 - 1946-01
+  []
+    gen:spouse <#Ferdinand_von_Attems> , <#Wanda_von_Nostitz-Rieneck> ;
+	gen:startDate "1923-09-17" .
