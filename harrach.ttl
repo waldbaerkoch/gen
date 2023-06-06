@@ -697,10 +697,58 @@
   # oo Franz Ernst Graf von Thürheim, b. 1688, https://www.wikidata.org/wiki/Q96289267
 
 # ----
-#<https://www.wikidata.org/wiki/Q12728575>
+#<https://www.wikidata.org/wiki/Q94936789>
+  # Olivier Wallis Freiherr von Carighmain, 1600 - 1667-06-21
+  # Freiherr 1651-12-12
+
+<https://www.wikidata.org/wiki/Q72988386> # -> Kolleschowitz
+  # Ernst Georg Olivier Wallis Freiherr von Carighmain, 1637 - 1689-09-06
+  gen:father <https://www.wikidata.org/wiki/Q94936789> .
+<#Franz_Ernst_von_Wallis> # -> Budwitz
+  # Franz Ernst Freiherr von Wallis, d. 1702-12-12
+  gen:father <https://www.wikidata.org/wiki/Q94936789> .
+
+
+# Kolleschowitz
+<https://www.wikidata.org/wiki/Q72988386>
+  # Ernst Georg Olivier Wallis Freiherr von Carighmain, 1637 - 1689-09-06
+  gen:father <https://www.wikidata.org/wiki/Q94936789> .
+  # oo Maria Magdalene Gräfin von Attems-Petzenstein, 1657 – 1712
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q72988386> , <#Maria_Magdalene_von_Attems-Petzenstein> .
+
+<https://www.wikidata.org/wiki/Q470335>
+  # Georg Olivier Graf von Wallis Freiherr von Carighmain, 1673-01-08 - 1744-12-19
+  # erbländisch-österreichischer sowie böhmischer Grafenstand 1706-03-18
+  gen:father <https://www.wikidata.org/wiki/Q72988386> ;
+  gen:mother <#Maria_Magdalene_von_Attems-Petzenstein> .
+  # oo Maximiliana Gräfin Kinksy von Wchinitz und Tettau, 1721-09-13 - 1751-08-13
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q470335> , <kinsky.ttl#Maximiliana_Kinksy> ;
+	gen:startDate "1743-08-18" .
+
+<#Stephan_Olivier_Wallis>
+  # Stephan Olivier Graf Wallis von Karighmain, 1744-07-19 - 1832-02-05
+  gen:father <https://www.wikidata.org/wiki/Q470335> ;
+  gen:mother <kinsky.ttl#Maximiliana_Kinksy> .
+  # oo Maria Franziska Gräfin von Colloredo, 1746-04-02 - 1795-01-25
+  []
+    gen:spouse <#Stephan_Olivier_Wallis> , <mansfeld.ttl#Maria_Franziska_von_Colloredo> ;
+	gen:startDate "1765-11-27" .
+
+
+# Budwitz
+<#Franz_Ernst_von_Wallis>
+  # Franz Ernst Freiherr von Wallis, d. 1702-12-12
+  gen:father <https://www.wikidata.org/wiki/Q94936789> .
+  # oo Anna Marie Tereza Freiin von Rziczan, d. 1722
+  []
+    gen:spouse <#Franz_Ernst_von_Wallis> , <#Anna_Marie_von_Rziczan> .
+
+<https://www.wikidata.org/wiki/Q12728575>
   # Franz Wenzel Graf von Wallis, 1696-10-04 - 1774-01-14
-  # son of Franz Ernst Freiherr von Wallis, d. 1702-12-12
-  # and oo Anna Marie Tereza Freiin von Rziczan, d. 1722
+  gen:father <#Franz_Ernst_von_Wallis> ;
+  gen:mother <#Anna_Marie_von_Rziczan> .
   # oo Maria Rosa Regina Gräfin von Thürheim, 1705-09-07 - 1770-03-20
   []
     gen:spouse <https://www.wikidata.org/wiki/Q12728575> , <#Maria_Rosa_von_Thürheim> ;
@@ -709,7 +757,7 @@
 <https://www.wikidata.org/wiki/Q110152543>
   # Franz Ernst Oliver Richard Graf von Wallis, 1729-02-24 - 1784-07-18
   gen:father <https://www.wikidata.org/wiki/Q12728575> ;
-  gen:mother <harrach.ttl#Maria_Rosa_von_Thürheim> .
+  gen:mother <#Maria_Rosa_von_Thürheim> .
   # oo Maria Anna Maximiliana Gräfin von Schaffgotsch Freiin zu Kynast und Greiffenstein, 1741-02-06 - 1814-12-26
   []
     gen:spouse <https://www.wikidata.org/wiki/Q110152543> , <https://www.wikidata.org/wiki/Q110152544> ;
