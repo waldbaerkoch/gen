@@ -4,12 +4,19 @@
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
-#<https://www.wikidata.org/wiki/Q110154620>
+<https://www.wikidata.org/wiki/Q110154620>
   # Friedrich von Westphalen zu Fürstenberg, 1499 - 1574
   # Herr auf Dringenberg
+  gen:father <https://www.wikidata.org/wiki/Q110154621> ; # Raban Friedrich von Westphalen zu Lichtenau und Wünnenberg, d. 1541-11-16
+  gen:mother <https://www.wikidata.org/wiki/Q110154624> . # oo 1498 Helene von Hörde, d. 1538-11-16
   # oo Clara von Meschede, 1525 - 1603
   []
     gen:spouse <https://www.wikidata.org/wiki/Q110154620> , <https://www.wikidata.org/wiki/Q110154632> .
+<https://www.wikidata.org/wiki/Q110415655>
+  # Anna Maria von Westphalen, d. 1583-06-24
+  gen:father <https://www.wikidata.org/wiki/Q110154621> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110154624> .
+  # oo 1538-08-24 Friedrich von Fürstenberg, 1510 - 1567-03-21, https://www.wikidata.org/wiki/Q110415654
 
 <#Raban_von_Westphalen>
   # Raban von Westphalen, 1550~ - 1598
@@ -44,31 +51,55 @@
   []
     gen:spouse <#Friedrich_von_Westphalen> , <#Agatha_von_Haxthausen> ;
 	gen:startDate "1623" .
+<#Heinrich_Leo_von_Westphalen>
+  # Heinrich Leo von Westphalen zu Fürstenberg, 1591 - 1640-09-19
+  gen:father <https://www.wikidata.org/wiki/Q110539710> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110539712> .
+  # oo Theodora von Plettenberg zu Nehlen, 1596-04-26 - 1645-04-03
+  []
+    gen:spouse <#Heinrich_Leo_von_Westphalen> , <#Theodora_von_Plettenberg> ;
+	gen:startDate "1625" .
 
 <https://www.wikidata.org/wiki/Q110539593>
-  # Maria Catharina von Westphalen zu Fürstenberg, 1637 - 1663-05-09
+  owl:sameAs <https://www.wikidata.org/wiki/Q110539354> ;
+  # Maria Catharina von Westphalen zu Fürstenberg zu Laer, 1637 - 1663-05-09
   gen:father <#Wilhelm_von_Westphalen> ;
   gen:mother <wolff.ttl#Anna_Maria_von_der_Recke> .
   # oo 1655-10-03 Wilhelm von Westphalen zu Fürstenberg, 1624 - 1711-06-21, https://www.wikidata.org/wiki/Q110539592
 <https://www.wikidata.org/wiki/Q110539592>
-  owl:sameAs <https://www.wikidata.org/wiki/Q110538212> ;
+  owl:sameAs <https://www.wikidata.org/wiki/Q110538212> , <https://www.wikidata.org/wiki/Q110539352> ;
   # Wilhelm von Westphalen zu Fürstenberg, 1624 - 1711-06-21
   gen:father <#Friedrich_von_Westphalen> ;
   gen:mother <#Agatha_von_Haxthausen> .
-  # oo Maria Catharina von Westphalen zu Fürstenberg, 1637 - 1663-05-09
+  # oo Maria Catharina / Brigitte von Westphalen zu Fürstenberg, 1637 - 1663-05-09
   []
     gen:spouse <https://www.wikidata.org/wiki/Q110539592> , <https://www.wikidata.org/wiki/Q110539593> ;
 	gen:startDate "1655-10-03" .
+<https://www.wikidata.org/wiki/Q110539567>
+  # Juliana von Westphalen zu Fürstenberg, 1630 - 1695
+  gen:father <#Heinrich_Leo_von_Westphalen> ;
+  gen:mother <#Theodora_von_Plettenberg> .
+  # oo 1648-05-29 Jobst Bernard von Korff zu Harkotten, 1621 - 1682, https://www.wikidata.org/wiki/Q110539561 (wolff.ttl)
 
 <https://www.wikidata.org/wiki/Q110539591>
-  # Friedrich Wilhelm Freiherr von Westphalen zu Fürstenberg
+  # Friedrich Wilhelm Freiherr von Westphalen zu Fürstenberg, 1658-01-02 - 1729-03-18
   gen:father <https://www.wikidata.org/wiki/Q110539592> ;
   gen:mother <https://www.wikidata.org/wiki/Q110539593> .
   # oo Lucia Elisabeth von Ledebur, 1657 - 1725-04-19
   []
     gen:spouse <https://www.wikidata.org/wiki/Q110539591> , <https://www.wikidata.org/wiki/Q110539595> ;
 	gen:startDate "1689-07-24" .
+<https://www.wikidata.org/wiki/Q110539351>
+  # Maria Theresia Freiin von Westphalen zu Fürstenberg, 1663-05-01 - 1737-01-29
+  gen:father <https://www.wikidata.org/wiki/Q110539592> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110539593> .
+  # oo 1682-11-15 Ferdinand Freiherr von Fürstenberg, 1661-08-22 - 1718-03-14, https://www.wikidata.org/wiki/Q110539337 (wolff.ttl)
 
+<https://www.wikidata.org/wiki/Q110539589>
+  # _Catharina Franziska_ Bernardina Freiin von Westphalen zu Fürstenberg, 1693b - 1771
+  gen:father <https://www.wikidata.org/wiki/Q110539591> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110539595> .
+  # oo 1721-07-15 Wilhelm Friedrich Anton von Korff zu Harkotten, 1688-05-02~ - 1727-11-02, https://www.wikidata.org/wiki/Q110539581 (wolff.ttl)
 <https://www.wikidata.org/wiki/Q110540487>
   # Wilhelm Ferdinand Freiherr von Westphalen zu Fürstenberg, 1697 - 1739-02-23
   gen:father <https://www.wikidata.org/wiki/Q110539591> ;
@@ -82,7 +113,7 @@
   # Clemens August Freiherr von Westphalen zu Fürstenberg, 1726 - 1778-10-12
   gen:father <https://www.wikidata.org/wiki/Q110540487> ;
   gen:mother <https://www.wikidata.org/wiki/Q110540489> .
-  # oo Isabella von Brabeck (hatzfeld.ttl)
+  # oo Isabella von Brabeck, 1732~ - 1754-02-24 (hatzfeld.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q110540485> , <https://www.wikidata.org/wiki/Q110540490> ;
 	gen:startDate "1751-09-19" .
@@ -182,13 +213,13 @@
   gen:mother <https://www.wikidata.org/wiki/Q110540500> .
   # oo Lidwine Freiin und Edle Herrin von und zu Eltz-Rübenach, 1870-11-29 - 1951-11-21
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q1446972> , <lobkowicz.ttl#Lidwine_von_und_zu_Eltz> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q1446972> , <lobkowicz.ttl#Lidwine_von_und_zu_Eltz-Rübenach> ;
 	gen:startDate "1895-05-07" .
 <https://www.wikidata.org/wiki/Q28554954>
   # Otto Joseph Hubert Graf von Westphalen zu Fürstenberg, 1875-03-14 - 1927-05-20
   gen:father <https://www.wikidata.org/wiki/Q1099891> ;
   gen:mother <https://www.wikidata.org/wiki/Q110540500> .
-  # oo Wilhelmine Maria Freiin von Haxthausen, 1882-08-19 - 1920-06-17
+  # oo Wilhelmine Maria Freiin von Haxthausen, 1882-08-19 - 1920-06-17 (wolff.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q28554954> , <https://www.wikidata.org/wiki/Q110540507> ;
 	gen:startDate "1906-07-21" .
@@ -250,11 +281,19 @@
 <https://www.wikidata.org/wiki/Q99703>
   # Karl Kuno Lubbert Graf von Westphalen zu Fürstenberg, 1898-08-12 - 1975-10-18
   gen:father <https://www.wikidata.org/wiki/Q1446972> ;
-  gen:mother <lobkowicz.ttl#Lidwine_von_und_zu_Eltz> .
+  gen:mother <lobkowicz.ttl#Lidwine_von_und_zu_Eltz-Rübenach> .
   # oo Therese Freiin von Locquenghien, b. 1901-03-04, daughter of Ernst Freiherr von Locquenghien 1866 - 1904 and oo Konstanze Freiin von Hövel, b. 1874
   []
     gen:spouse <https://www.wikidata.org/wiki/Q99703> , <#Therese_von_Locquenghien> ;
 	gen:startDate "1926-08-07" .
+<#Karl_von_Westphalen-Fürstenberg>
+  # Karl Wilhelm Clemens Joseph Graf von Westphalen zu Fürstenberg, 1907-12-10 – 1982-01-08
+  gen:father <https://www.wikidata.org/wiki/Q28554954> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110540507> .
+  # oo "Wisa" Freiin von Spiegel zu Peckelsheim, 1910-10-12 - 1993-01-16 (wolff.ttl)
+  []
+    gen:spouse <#Karl_von_Westphalen-Fürstenberg> , <https://www.wikidata.org/wiki/Q26260414> ;
+	gen:startDate "1945-01-11" .
 <#Franz_von_Westphalen-Fürstenberg>
   # Franz Hermengild Joseph Ludger Graf von Westphalen zu Fürstenberg, 1909-03-10 - 1944-05-28
   gen:father <https://www.wikidata.org/wiki/Q28554954> ;
@@ -268,10 +307,14 @@
   # Friedrich Carl Graf von Westphalen zu Fürstenberg, 1898-04-22 - 1992-07-23
   gen:father <https://www.wikidata.org/wiki/Q75380169> ;
   gen:mother <https://www.wikidata.org/wiki/Q75380167> .
-  # oo Maria Felicitas Ferdinanda Elisabeth Antonia Freiin von Fürstenberg, 1898-09-27 - 1939-12-24, daughter of Engelbert-Egon von Fürstenberg-Herdringen and Maria Pia von Praschma zu Bilkau
+  # oo Maria Felicitas Freiin von Fürstenberg, 1898-09-27 - 1939-12-24 (wolff.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75380170> , <https://www.wikidata.org/wiki/Q75380172> ;
-	gen:startDate "1923" .
+	gen:startDate "1923-06-20" .
+  # oo Maria Zdenka Freiin von Twickel, 1901-12-08 - 1981-07-21 (wolff.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75380170> , <https://www.wikidata.org/wiki/Q75365288> ;
+	gen:startDate "1943-09-02" .
 <https://www.wikidata.org/wiki/Q1405070>
   # Ferdinand Alois Graf von Westphalen zu Fürstenberg, 1899-02-07 - 1989-06-11
   gen:father <https://www.wikidata.org/wiki/Q75438380> ;
@@ -290,10 +333,15 @@
   # Clemens August Graf von Westphalen zu Fürstenberg, 1927-03-23 - 2014-10-18
   gen:father <https://www.wikidata.org/wiki/Q75380170> ;
   gen:mother <https://www.wikidata.org/wiki/Q75380172> .
-  # oo Johanna Gräfin von Galen, 1936-09-24 - 2016-01-21 (kinsky.ttl)
+  # oo Johanna Gräfin von Galen, 1936-09-24 - 2016-01-21 (wolff.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75378468> , <https://www.wikidata.org/wiki/Q75378467> ;
 	gen:startDate "1956-09-08" .
+<https://www.wikidata.org/wiki/Q75380221>
+  # Monika Josepha Gräfin von Westphalen zu Fürstenberg, b. 1932-05-11
+  gen:father <https://www.wikidata.org/wiki/Q75380170> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75380172> .
+  # oo 1955-05-12 Dieter Graf von Landsberg-Velen und Gemen, 1925-12-17 - 2012-04-15, https://www.wikidata.org/wiki/Q1223091 (wolff.ttl)
 
 <https://www.wikidata.org/wiki/Q75369009>
   # Marie Elisabeth Gräfin von Westphalen zu Fürstenberg, b. 1963-08-07
@@ -307,7 +355,7 @@
   # Lucia Elisabeth von Ledebur, 1657 - 1725-04-19
   gen:father <https://www.wikidata.org/wiki/Q110539596> ; # Johann Moritz von Ledebur zu Brockmühlen
   gen:mother <https://www.wikidata.org/wiki/Q110539597> . # Elisabeth von und zu Niehausen
-  # oo 1689-07-24 Friedrich Wilhelm Freiherr von Westphalen zu Fürstenberg, https://www.wikidata.org/wiki/Q110539591
+  # oo 1689-07-24 Friedrich Wilhelm Freiherr von Westphalen zu Fürstenberg, 1658-01-02 - 1729-03-18, https://www.wikidata.org/wiki/Q110539591
 
 # ----
 <https://www.wikidata.org/wiki/Q110458168>
@@ -330,13 +378,6 @@
   gen:mother <https://www.wikidata.org/wiki/Q110560479> . # Auguste Christiane Caroline Luise von Schmerfeld
   # oo 1845-02-02 Otto Franz Graf von Westphalen zu Fürstenberg, 1807-09-26 - 1856-10-13, https://www.wikidata.org/wiki/Q55897349
   # oo 1864-02-01 Friedrich Joseph Graf von Westphalen zu Fürstenberg, 1824-01-17 - 1865-08-22, https://www.wikidata.org/wiki/Q94530132
-
-# ----
-<https://www.wikidata.org/wiki/Q110540507>
-  # Wilhelmine Maria Freiin von Haxthausen, 1882-08-19 - 1920-06-17
-  gen:father <https://www.wikidata.org/wiki/Q110540509> ; # Karl Freiherr von Haxthausen
-  gen:mother <https://www.wikidata.org/wiki/Q110540510> . # Hermenegilde Gräfin von Bocholtz-Asseburg
-  # oo 1906-07-21 Otto Joseph Graf von Westphalen zu Fürstenberg, 1875-03-14 - 1927-05-20, https://www.wikidata.org/wiki/Q28554954
 
 # ----
 <https://www.wikidata.org/wiki/Q1567568>
