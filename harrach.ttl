@@ -21,6 +21,10 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q55851393> , <https://www.wikidata.org/wiki/Q75288968> ;
 	gen:startDate "1563-08-08" .
+  # oo Anna Gräfin zu Ortenburg, d. 1602, daughter of Ferdinand de Salamanca Graf zu Ortenburg, d. 1570 and oo 1549 Eva Hofmann Freiin zu Grünpichl und Strechau
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q55851393> , <#Anna_zu_Ortenburg> ;
+	gen:startDate "1578-09-15" .
 <https://www.wikidata.org/wiki/Q109533490>
   # Susanna Veronica Freiin von Harrach, 1558 - 1617-06-12a
   gen:father <https://www.wikidata.org/wiki/Q55851392> ;
@@ -46,6 +50,11 @@
   gen:father <https://www.wikidata.org/wiki/Q55851393> ;
   gen:mother <https://www.wikidata.org/wiki/Q75288968> .
   # oo 1595-11-19 Johann Graf Breuner von Asparn, 1570 – 1633-10-03, breunner.ttl#Johann_Breuner-Asparn
+<#Barbara_von_Harrach>
+  # Barbara Freiin von Harrach zu Rohrau, 1589 - 1634
+  gen:father <https://www.wikidata.org/wiki/Q55851393> ;
+  gen:mother <#Anna_zu_Ortenburg> .
+  # oo 1622-12-21 Georg Sigmund Friedrich Graf von Salburg Freiherr von Falkenstein und Rannariedl, d. 1669-05-08, https://www.wikidata.org/wiki/Q110370981
 
 <https://www.wikidata.org/wiki/Q55228865>
   # Leonhard VII. Karl Graf von Harrach zu Rohrau, 1594-06-04 - 1645-06-30
@@ -541,7 +550,9 @@
 # ====
 <https://www.wikidata.org/wiki/Q95124486>
   # Franz Leopold Graf von Thürheim, 1624-04-23 - 1700-11-12
-  gen:father <https://www.wikidata.org/wiki/Q94528981> ; # Johann Christoph Freiherr von Thürheim, 1589-11-02 - 1634-08-14
+  # Reichsgraf 1666
+  # böhmischer Herrenstand 1683
+  gen:father <https://www.wikidata.org/wiki/Q94528981> ; # Johann Christoph Freiherr von Thürheim, 1589-11-02 - 1634-08-14, Reichsfreiherr 1623
   gen:mother <https://www.wikidata.org/wiki/Q110370977> . # oo 1619-06-09 Maria Anna Tauffkircher, 1595-12-09 - 1661
   # oo Mária Zsuzsanna Franziska Gräfin von Brandis, 1628~ - 1676-12-31
   []
@@ -551,6 +562,11 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q95124486> , <https://www.wikidata.org/wiki/Q108927147> ;
 	gen:startDate "1681-11-25" .
+<https://www.wikidata.org/wiki/Q108927140>
+  # Maria Elisabeth Freiin von Thürheim, 1626-03-18 - 1700
+  gen:father <https://www.wikidata.org/wiki/Q94528981> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110370977> .
+  # oo Hans Christof Freiherr Perger von Clam, d. 1697, https://www.wikidata.org/wiki/Q90922819 (dietrichstein.ttl)
 <https://www.wikidata.org/wiki/Q94530049>
   # Christoph Leopold Graf von Thürheim Freiherr von Bibrachzell, 1629-12-10 - 1689-08-09
   gen:father <https://www.wikidata.org/wiki/Q94528981> ;
@@ -690,10 +706,44 @@
   # oo 1662-11-05 Franz Leopold Graf von Thürheim, 1624-04-23 - 1700-11-12, https://www.wikidata.org/wiki/Q95124486
 
 # ----
+#<https://www.wikidata.org/wiki/Q110370983>
+  # Heinrich Freiherr von Salburg, d. 1629-12-15
+  # oo Judith von Freysing
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110370983> , <https://www.wikidata.org/wiki/Q110370990> ;
+	gen:startDate "1591-05-31" .
+  # oo Maria Katherina von Berwang, 1587 - 1625-11-18
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110370983> , <#Maria_Katherina_von_Berwang> ;
+	gen:startDate "1616-05-15" .
+
+<https://www.wikidata.org/wiki/Q110370981>
+  owl:sameAs <https://www.wikidata.org/wiki/Q94871286> ;
+  # Georg Sigmund Friedrich Graf von Salburg Freiherr von Falkenstein und Rannariedl, 1600~ - 1669-05-08
+  # Graf 1665-11-03
+  gen:father <https://www.wikidata.org/wiki/Q110370983> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110370990> .
+  # oo Barbara Freiin von Harrach zu Rohrau, 1589 - 1634
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110370981> , <#Barbara_von_Harrach> ;
+	gen:startDate "1622-12-21" .
+  # oo Sidonia Elisabeth Freiin von Schärffenberg, 1614-11-19 - 1699
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110370981> , <https://www.wikidata.org/wiki/Q110370991> ;
+	gen:startDate "1635-09-02" .
+<#Siegmund_Friedrich_von_Salburg>
+  # Siegmund Friedrich Freiherr von Salburg, 1620b - 1665
+  gen:father <https://www.wikidata.org/wiki/Q110370983> ;
+  gen:mother <#Maria_Katherina_von_Berwang> .
+  # oo Maria Elisabeth Freiin von Schärffenberg, 1622-08-13 - 1690-06-10b
+  []
+    gen:spouse <#Siegmund_Friedrich_von_Salburg> , <#Maria_Elisabeth_von_Schärffenberg> ;
+	gen:startDate "1644-04-22" .
+
 <#Gotthard_Heinrich_von_Salburg>
   # Gotthard Heinrich Graf von Salburg Freiherr von Falkenstein und Rannariedl, 1639-10-29 - 1707-07-30
-  gen:father <https://www.wikidata.org/wiki/Q110370981> ; # Georg Sigmund Friedrich Graf von Salburg Freiherr von Falkenstein und Rannariedl, d. 1669-05-08
-  gen:mother <https://www.wikidata.org/wiki/Q110370991> . # oo 1635-09-02 Sidonia Elisabeth Freiin von Schärffenberg, 1614-11-19 - 1699
+  gen:father <https://www.wikidata.org/wiki/Q110370981> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110370991> .
   # oo Barbara Polyxena Gräfin von Althann, 1642a - 1670-09-03
   []
     gen:spouse <#Gotthard_Heinrich_von_Salburg> , <althann.ttl#Barbara_Polyxena_von_Althann> ;
@@ -703,12 +753,57 @@
   gen:father <https://www.wikidata.org/wiki/Q110370981> ;
   gen:mother <https://www.wikidata.org/wiki/Q110370991> .
   # oo 1657-07-04 Christoph Leopold Graf von Thürheim Freiherr von Bibrachzell, 1629-12-10 - 1689-08-09, https://www.wikidata.org/wiki/Q94530049
+<https://www.wikidata.org/wiki/Q108927141>
+  # Johann Ferdinand Graf von Salburg, 1647b - 1723-12-27
+  gen:father <#Siegmund_Friedrich_von_Salburg> ;
+  gen:mother <#Maria_Elisabeth_von_Schärffenberg> .
+  # oo Maria Elisabeth Freiin von Fünfkirchen, 1645-03-02 - 1682-07-18
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q108927141> , <https://www.wikidata.org/wiki/Q108927142> ;
+	gen:startDate "1672" .
 
 <#Maria_Maximiliana_von_Salburg>
   # Maria Maximiliana Rebecca Gräfin von Salburg, 1668~ - 1746
   gen:father <#Gotthard_Heinrich_von_Salburg> ;
   gen:mother <althann.ttl#Barbara_Polyxena_von_Althann> .
   # oo Franz Joseph Sebastian von Thürheim, 1665-02-02 - 1726-04-10, https://www.wikidata.org/wiki/Q94530830
+
+<https://www.wikidata.org/wiki/Q96289262>
+  # Maria Franziska Gräfin von Salburg, b. 1682b
+  gen:father <https://www.wikidata.org/wiki/Q108927141> ;
+  gen:mother <https://www.wikidata.org/wiki/Q108927142> .
+  # oo 1699 Johann Leopold Freiherr von Clam, 1665~ - 1727-09-11, https://www.wikidata.org/wiki/Q51036642 (dietrichstein.ttl)
+# ----
+<https://www.wikidata.org/wiki/Q110370991>
+  # Sidonia Elisabeth Freiin von Schärffenberg, 1614-11-19 - 1699
+  gen:father <https://www.wikidata.org/wiki/Q110370992> ; # Gotthard von Schärffenberg, 1584 - 1634-11-30
+  gen:mother <https://www.wikidata.org/wiki/Q110370997> . # oo Anna Susanna von Kielmansegg, 1596 - 1642-01-21
+  # oo 1635-09-02 Georg Sigmund Friedrich Graf von Salburg Freiherr von Falkenstein und Rannariedl, 1600~ - 1669-05-08, https://www.wikidata.org/wiki/Q110370981
+<#Anna_Polyxena_von_Schärffenberg>
+  # Anna Polyxena Elisabeth Freiin von Schärffenberg, 1617-08-31 - 1658-02-15
+  gen:father <https://www.wikidata.org/wiki/Q110370992> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110370997> .
+  # oo 1637 Johann Siegmund Freiherr von Fünfkirchen zu Steinabrunn und Matzem, 1608 - 1650-04-21, #Johann_Siegmund_von_Fünfkirchen
+<#Maria_Elisabeth_von_Schärffenberg>
+  # Maria Elisabeth Freiin von Schärffenberg, 1622-08-13 - 1690-06-10b
+  gen:father <https://www.wikidata.org/wiki/Q110370992> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110370997> .
+  # oo 1644-04-22 Siegmund Friedrich Freiherr von Salburg, 1620b - 1665, #Siegmund_Friedrich_von_Salburg
+# ----
+<#Johann_Siegmund_von_Fünfkirchen>
+  # Johann Siegmund Freiherr von Fünfkirchen zu Steinabrunn und Matzem, 1608 - 1650-04-21
+  gen:father <https://www.wikidata.org/wiki/Q87786> . # Johann Bernhard Freiherr von Fünfkirchen, 1561 - 1621
+  # and oo Barbara von Teuffenbach-Maierhofen
+  # oo Anna Polyxena Elisabeth Freiin von Schärffenberg, 1617-08-31 - 1658-02-15
+  []
+    gen:spouse <#Johann_Siegmund_von_Fünfkirchen> , <#Anna_Polyxena_von_Schärffenberg> ;
+	gen:startDate "1637" .
+
+<https://www.wikidata.org/wiki/Q108927142>
+  # Maria Elisabeth Freiin von Fünfkirchen, 1645-03-02 - 1682-07-18
+  gen:father <#Johann_Siegmund_von_Fünfkirchen> ;
+  gen:mother <#Anna_Polyxena_von_Schärffenberg> .
+  # oo 1672 Johann Ferdinand Graf von Salburg, 1647b - 1723-12-27, https://www.wikidata.org/wiki/Q108927141
 
 # ----
 <https://www.wikidata.org/wiki/Q96289268>
