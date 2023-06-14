@@ -1,0 +1,276 @@
+@base <goëss.ttl> .
+@prefix gen: <http://jjkoch.de/gen#> .
+@prefix wdata: <https://www.wikidata.org/wiki/> .
+@prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://www.wikidata.org/wiki/Q1696799>
+  # Johann Franz Freiherr von Goëss, 1612-02-10 – 1696-10-19
+  # Johann de Troch a Goëssen
+  # Reichsfreiherrenstand bestätigt 1654-04-18
+  # böhmisches Inkolat 1668-11-07
+  # Fürstbischof von Gurk 1675-10-05
+  # Kardinal 1686-09-02
+  gen:father <#Peter_de_Trooch> ; # son of Peter de Trooch
+  gen:mother <#Franziska_Goëssen> . # and Franziska Goëssen
+<#Elisabeth_de_Trooch>
+  # Elisabeth de Trooch
+  gen:father <#Peter_de_Trooch> ;
+  gen:mother <#Franziska_Goëssen> .
+  # oo NN de Gheteren
+# ----
+<https://www.wikidata.org/wiki/Q55850550>
+  # Johann _Peter_ Graf von Goëss Freiherr zu Carlsberg und Moosburg, 1667-03-23 - 1716-03-13
+  # Reichsfreiherrenstand 1672-06-02
+  # Reichsgrafenstand 1693-08-02
+  gen:father <#NN_de_Gheteren> ; # NN de Gheteren
+  gen:mother <#Elisabeth_de_Trooch> ;
+  gen:adoptedBy <https://www.wikidata.org/wiki/Q1696799> .
+  # oo Maria Anna Gräfin von Sinzendorf, 1672-05-09 - 1709-02-06
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q55850550> , <reuß.ttl#Maria_Anna_von_Sinzendorf> ;
+	gen:startDate "1693-10-13" .
+
+<https://www.wikidata.org/wiki/Q95023348>
+  # Johann Anton Oswald von Graf von Goëss Freiherr zu Carlsberg und Moosburg, 1694-11-03/1695-08-05 - 1764-08-08/-09
+  gen:father <https://www.wikidata.org/wiki/Q55850550> ;
+  gen:mother <reuß.ttl#Maria_Anna_von_Sinzendorf> .
+  # oo Maria Anna Gräfin von Thürheim, 1696-01-03 - 1769-12-05
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q95023348> , <harrach.ttl#Maria_Anna_von_Thürheim> ;
+	gen:startDate "1720-08-20" .
+
+<#Maria_Maximiliana_von_Goëss>
+  # Maria Maximiliana Gräfin von Goëss, 1725-03-03 - 1755-08-24
+  gen:father <https://www.wikidata.org/wiki/Q95023348> ;
+  gen:mother <harrach.ttl#Maria_Anna_von_Thürheim> .
+  # oo 1746-06 Karl Theodor Graf Christalnigg von und zu Gillitzstein, 1721-11-10 - 1764-08-21, #Karl_Theodor_Christalnigg
+<https://www.wikidata.org/wiki/Q55850548>
+  # Johann _Karl_ Anton Graf von Goëss Freiherr zu Carlsberg und Moosburg, 1728-08-18 - 1798-05-11
+  gen:father <https://www.wikidata.org/wiki/Q95023348> ;
+  gen:mother <harrach.ttl#Maria_Anna_von_Thürheim> .
+  # oo Maria Anna Gräfin Christalnigg von und zu Gilitzstein, 1751-08-23 - 1809-05-09
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q55850548> , <#Maria_Anna_Christalnigg> ;
+	gen:startDate "1768-05-10" .
+
+<https://www.wikidata.org/wiki/Q86911>
+  # Johann _Peter_ Leopold Graf von Goëss Freiherr zu Carlsberg und Moosburg, 1774-02-08 - 1846-07-11
+  gen:father <https://www.wikidata.org/wiki/Q55850548> ;
+  gen:mother <#Maria_Anna_Christalnigg> .
+  # oo Isabella Gräfin von Thürheim, 1784-07-11 - 1855-10-06 (harrach.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q86911> , <https://www.wikidata.org/wiki/Q94528153> ;
+	gen:startDate "1807-10-27" .
+<https://www.wikidata.org/wiki/Q113131010>
+  # Johann _Karl_ Graf von Goëss, 1775-09-08 - 1843-06-07
+  gen:father <https://www.wikidata.org/wiki/Q55850548> ;
+  gen:mother <#Maria_Anna_Christalnigg> .
+  # oo Maria Karoline Gräfin Katzianer von Katzenstein, 1775-04-06 - 1864-11-08
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q113131010> , <#Maria_Karoline_Katzianer> ;
+	gen:startDate "1803-02-03" .
+
+<https://www.wikidata.org/wiki/Q1686868>
+  # Johann _Anton_ Graf von Goëss, 1816-08-04 - 1887-05-20
+  gen:father <https://www.wikidata.org/wiki/Q86911> ;
+  gen:mother <https://www.wikidata.org/wiki/Q94528153> .
+  # oo Maria Therese Gräfin von Wilczek, 1823-05-22 - 1898-06-23
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1686868> , <wilczek.ttl#Maria_Therese_von_Wilczek> ;
+	gen:startDate "1848-05-14" .
+<#Anna_Maria_von_Goëss>
+  # Anna Maria Theresia Karoline Gräfin von Goëss, 1806-01-06 - 1880-11-20
+  gen:father <https://www.wikidata.org/wiki/Q113131010> ;
+  gen:mother <#Maria_Karoline_Katzianer> .
+  # oo 1829-06-23 Zeno Graf von Saurau, 1792-07-09 - 1846-08-28/1846-09, dietrichstein.ttl#Zeno_von_Saurau
+<https://www.wikidata.org/wiki/Q113130945>
+  # Johann _Peter_ Anton Karl Graf von Goëss, 1807-12-17 - 1852-02-26
+  gen:father <https://www.wikidata.org/wiki/Q113131010> ;
+  gen:mother <#Maria_Karoline_Katzianer> .
+  # oo Maria Johanna Gräfin Welser von Welsersheimb Freiin zu Gumpenstein, 1824-05-06 - 1896-12-04 (szápáry.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q113130945> , <https://www.wikidata.org/wiki/Q55850549> ;
+	gen:startDate "1845-04-02" .
+
+<https://www.wikidata.org/wiki/Q1819904>
+  # Leopold Peter Graf von Goëss, 1848-10-28 - 1922-07-22
+  gen:father <https://www.wikidata.org/wiki/Q113130945> ;
+  gen:mother <https://www.wikidata.org/wiki/Q55850549> .
+  # oo Marianne Gräfin von Thurn und Valsássina-Como-Vercelli, 1869-09-10 - 1940-04-21
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1819904> , <https://www.wikidata.org/wiki/Q75370707> ;
+	gen:startDate "1889-07-24" .
+
+<https://www.wikidata.org/wiki/Q113131275>
+  # Johann _Zeno_ Otto Joseph Graf von Goëss Freiherr zu Karlsberg und Moosburg, 1890-05-19 - 1974-09-17
+  gen:father <https://www.wikidata.org/wiki/Q1819904> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75370707> .
+  # oo Emma Gräfin Welser von Welsersheimb Freiin zu Gumpenstein, 1884-01-06 - 1972-08-07 (szápáry.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q113131275> , <https://www.wikidata.org/wiki/Q113135867> ;
+	gen:startDate "1913-09-16" .
+<https://www.wikidata.org/wiki/Q75287572>
+  # Johann _Anton_ Douglas Graf von Goëss, 1892-01-31 - 1970-10-25
+  gen:father <https://www.wikidata.org/wiki/Q1819904> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75370707> .
+  # oo Marie Valerie Gräfin von Meran, 1902-10-14 - 1990-02-02 (lothringen.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75287572> , <https://www.wikidata.org/wiki/Q75287571> ;
+	gen:startDate "1921-08-01" .
+<https://www.wikidata.org/wiki/Q75359189>
+  # Maria _Anna_ Leopoldine Josepha Gräfin von Goëss, 1895-07-28 - 1972-07-27
+  gen:father <https://www.wikidata.org/wiki/Q1819904> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75370707> .
+  # oo 1917-07-30 Alfred Prinz zur Lippe-Weißenfeld, 1881-05-26 - 1960-03-14, https://www.wikidata.org/wiki/Q75359187
+
+<https://www.wikidata.org/wiki/Q75287778>
+  # Johann _Leopold Zeno_ Maria Peter Douglas Franz Joseph Stephan Ernst Graf von Goëss Freiherr zu Karlsberg und Moosburg, 1916-09-02 - 2005-12-25
+  gen:father <https://www.wikidata.org/wiki/Q113131275> ;
+  gen:mother <https://www.wikidata.org/wiki/Q113135867> .
+  # oo Theodora Gräfin Kottulinsky Freiin von Kottulin, 1921-10-06 - 2006-01-13 (capet.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75287778> , <https://www.wikidata.org/wiki/Q75287777> ;
+	gen:startDate "1944-07-04" .
+<https://www.wikidata.org/wiki/Q113131327>
+  # Johann Baptist _Carl-Anton_ Hubertus Maria Zeno Corbinian Desiderius Peter Paul Graf von Goëss-Saurau, 1921-06-23 - 2015-12-06
+  gen:father <https://www.wikidata.org/wiki/Q113131275> ;
+  gen:mother <https://www.wikidata.org/wiki/Q113135867> .
+  # oo Maria Mathilde Freiin Mayr von Melnhof, 1921-08-27 - 1996 (hohenlohe.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q113131327> , <https://www.wikidata.org/wiki/Q113127840> ;
+	gen:startDate "1948-05-14" .
+<https://www.wikidata.org/wiki/Q75296201>
+  # Johann Ulrich Anton Maria Josef Konrad Nikolaus (Graf von) Goëss, 1926-11-26 - 2018-12-13
+  gen:father <https://www.wikidata.org/wiki/Q75287572> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75287571> .
+  # oo Maria Margarete (Gräfin von) Abensperg und Traun, 1937-05-14 - 2010-10-11 (castell.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75296201> , <https://www.wikidata.org/wiki/Q75296202> ;
+	gen:startDate "1960-08-11" .
+  # oo Margherita Paola (Gräfin von) Cassis-Faraone, 1931-10-05 - 2018-12-13 (thun.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75296201> , <https://www.wikidata.org/wiki/Q76366890> ;
+	gen:startDate "2011" .
+<https://www.wikidata.org/wiki/Q75368766>
+  # Eleonore Maria Antonia Josefa Nepomucena Philippine (Gräfin von) Goëss, 1928-05-16 - 2004-05-21
+  gen:father <https://www.wikidata.org/wiki/Q75287572> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75287571> .
+  # oo 1947-07-20 Heinrich Orsini-Rosenberg, 1925-01-29 - 2011-12-11, https://www.wikidata.org/wiki/Q12363610 (rosenberg.ttl)
+<https://www.wikidata.org/wiki/Q75368753>
+  # Ernst-Friedrich Johann Anton Maria Josef Benedictus Adam Zeno Gregor (Graf von) Goëss, 1932-03-12 - 1999-07-30
+  gen:father <https://www.wikidata.org/wiki/Q75287572> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75287571> .
+  # oo Gabriele Altgräfin zu Salm-Reifferscheidt-Krautheim und Dyck, 1941-11-09 - 1985-04-27 (reifferscheid.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75368753> , <https://www.wikidata.org/wiki/Q75296209> ;
+	gen:startDate "1961-10-12" .
+  # oo Elisabeth Constantinides, b. 1943-11-02
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75368753> , <https://www.wikidata.org/wiki/Q75296211> ;
+	gen:startDate "1988-10-29" .
+<https://www.wikidata.org/wiki/Q75368760>
+  # Andreas Anton (Graf von) Goëss, 1946-09-09 - 1994-10-12
+  gen:father <https://www.wikidata.org/wiki/Q75287572> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75287571> .
+  # oo Maria Theresia Lovrek, b. 1947-07-08 (czernin.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75368760> , <https://www.wikidata.org/wiki/Q75368761> ;
+	gen:startDate "1971-05-20" .
+
+<https://www.wikidata.org/wiki/Q75296070>
+  # Maria Theresia Theodora Hemma Ladislaja Elisabeth Johanna Erasma Gräfin von Goëss, b. 1945-05-24
+  gen:father <https://www.wikidata.org/wiki/Q75287778> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75287777> .
+  # oo 1968-07-27 Eugen Prinz von und zu Liechtenstein, b. 1939-03-20, https://www.wikidata.org/wiki/Q75296071
+<https://www.wikidata.org/wiki/Q75296086>
+  # Hemma-Christiane Marie Theodora Ignazia Gregoria Guidobaldine Gräfin von Goëss, b. 1957-03-12
+  gen:father <https://www.wikidata.org/wiki/Q75287778> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75287777> .
+  # oo 1983-06-03 Sylvester Prinz zu Isenburg und Büdingen in Wächtersbach, b. 1949-12-31, https://www.wikidata.org/wiki/Q75296088
+<https://www.wikidata.org/wiki/Q75551980>
+  # Franz Karl Anton Maria Peter Freiherr Mayr von Melnhof-Saurau, 1949-02-22 - 1993-06-14
+  # Graf von Goëss-Saurau
+  # Freiherr Mayr von Melnhof-Saurau 1986
+  gen:father <https://www.wikidata.org/wiki/Q113131327> ;
+  gen:mother <https://www.wikidata.org/wiki/Q113127840> ;
+  gen:adoptedBy <https://www.wikidata.org/wiki/Q55856050> .
+  # oo Erzsébet (Gräfin) Andrássy (de Csik-Szent-Király et Kraszna-Horka), b. 1947-04-12
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75551980> , <https://www.wikidata.org/wiki/Q75551522> ;
+	gen:startDate "1971-10-06" ;
+	gen:divorceDate "1983" .
+  # oo Ursula Haase, b. 1961-06-11
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75551980> , <#Ursula_Haase> ;
+	gen:startDate "1983-12-21" .
+<https://www.wikidata.org/wiki/Q75295202>
+  # Johann _Konrad_ Zeno Maria Julian Graf von Goëss-Saurau, b. 1952-01-09
+  gen:father <https://www.wikidata.org/wiki/Q113131327> ;
+  gen:mother <https://www.wikidata.org/wiki/Q113127840> .
+  # oo Antoinette Gräfin zu Stolberg-Stolberg, b. 1960-09-08
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75295202> , <https://www.wikidata.org/wiki/Q75295200> ;
+	gen:startDate "1980-05-24" ;
+	gen:divorceDate "1996" .
+  # oo Susi Williams, b. 1962-05-13
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75295202> , <#Susi_Williams> ;
+	gen:startDate "1996-05-03" .
+<https://www.wikidata.org/wiki/Q16187003>
+  # Cecilie Antoinette Maria Philippine Gräfin von Goëss-Saurau, b. 1956-08-23
+  gen:father <https://www.wikidata.org/wiki/Q113131327> ;
+  gen:mother <https://www.wikidata.org/wiki/Q113127840> .
+  # oo 1988-04-01 (rel 1988-05-19) Wittekind Prinz zu Waldeck und Pyrmont, b. 1936-03-09, https://www.wikidata.org/wiki/Q70797
+<https://www.wikidata.org/wiki/Q75368282>
+  # Moritz Louis (Graf von) Goëss, b. 1966-06-05
+  gen:father <https://www.wikidata.org/wiki/Q75368753> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75296209> .
+  # oo (rel 2003-08-09) Fleur Herzogin von Württemberg, b. 1977-11-04
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75368282> , <https://www.wikidata.org/wiki/Q75293743> ;
+	gen:startDate "2003-08-08" .
+<https://www.wikidata.org/wiki/Q75368808>
+  # Elisabeth Maria-Luise Gräfin von Goëss, b. 1982-04-02
+  gen:father <https://www.wikidata.org/wiki/Q75368760> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75368761> .
+  # oo 2013-10-19 Anselm Casimir Graf und Edler Herr von und zu Eltz genannt Faust von Stromberg, b. 1981-12-08, https://www.wikidata.org/wiki/Q75305471 (lobkowicz.ttl)
+
+<https://www.wikidata.org/wiki/Q75780451>
+  # Katharina Barbara Elisabeth Maria Josefine Freiin Mayr von Melnhof-Saurau, b. 1974-03-19
+  gen:father <https://www.wikidata.org/wiki/Q75551980> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75551522> .
+  # oo 2000-07-24 Stephan Prinz von Altenburg, b. 1971-08-20, https://www.wikidata.org/wiki/Q75287318 (lothringen.ttl)
+
+
+# ----
+<https://www.wikidata.org/wiki/Q116775670>
+  # Georg _Andreas_ Graf Christalnigg von und zu Gillitzstein, 1697-03-27 - 1765-02-09
+  gen:father <https://www.wikidata.org/wiki/Q110369810> ; # Georg Balthasar Graf Christalnigg von und zu Gillitzstein, 1666-03-26 - 1734-11-07
+  gen:mother <https://www.wikidata.org/wiki/Q110369813> . # oo 1694-11-17 Maria Beatrix Freiin von Schoberg, 1675-03-12 - 1733-03-21
+  # oo Maria Theresia Gräfin von Dietrichstein zu Weichselstadt und Rabenstein, 170-01-10 - 1735-06-06
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q116775670> , <https://www.wikidata.org/wiki/Q116775671> ;
+	gen:startDate "1719-08-12" .
+
+<#Karl_Theodor_Christalnigg>
+  # Karl Theodor Graf Christalnigg von und zu Gillitzstein, 1721-11-10 - 1764-08-21
+  gen:father <https://www.wikidata.org/wiki/Q116775670> ;
+  gen:mother <https://www.wikidata.org/wiki/Q116775671> .
+  # oo Maria Maximiliana Gräfin von Goëss, 1725-03-03 - 1755-08-24
+  []
+    gen:spouse <#Karl_Theodor_Christalnigg> , <#Maria_Maximiliana_von_Goëss> ;
+	gen:startDate "1746-06" .
+
+<#Maria_Anna_Christalnigg>
+  # Maria Anna Gräfin Christalnigg von und zu Gilitzstein, 1751-08-23 - 1809-05-09
+  gen:father <#Karl_Theodor_Christalnigg> ;
+  gen:mother <#Maria_Maximiliana_von_Goëss> .
+  # oo 1768-05-10 Karl Graf von Goëss Freiherr zu Carlsberg und Moosburg, 1728-08-18 - 1798-05-11, https://www.wikidata.org/wiki/Q55850548
+
+# ----
+<#Maria_Karoline_Katzianer>
+  # Maria Karoline Gräfin Katzianer von Katzenstein, 1775-04-06 - 1864-11-08
+  gen:father <https://www.wikidata.org/wiki/Q110369789> ; # Joseph Alois Graf Katzianer von Katzenstein, 1740-01-13 - 1822-12-11
+  gen:mother <https://www.wikidata.org/wiki/Q110369805> . # oo 1769-03-06 Maria Theresia Freiin von Rechbach, 1747-09-08 - 1823-08-02
+  # oo 1803-02-03 Karl Graf von Goëss, 1775-09-08 - 1843-06-07, https://www.wikidata.org/wiki/Q113131010
