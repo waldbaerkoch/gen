@@ -183,6 +183,14 @@
   []
     gen:spouse <#Agoston_Festetics> , <almásy.ttl#Etelka_Almásy> ;
 	gen:startDate "1831-09-07" .
+<#Sámuel_Festetics>
+  # Sámuel Graf Festetics de Tolna, 1806-08-04 - 1862-09-04
+  gen:father <https://www.wikidata.org/wiki/Q116184216> ;
+  gen:mother <https://www.wikidata.org/wiki/Q116184217> .
+  # oo Wanda Gräfin Raczyńska, 1819-01-21 - 1845-05-16
+  []
+    gen:spouse <#Sámuel_Festetics> , <#Wanda_Raczynska> ;
+	gen:startDate "1842-06-11" .
 <https://www.wikidata.org/wiki/Q116184215>
   # Dénes Graf Festetics de Tolna, 1813-01-12 - 1891-07-15
   gen:father <https://www.wikidata.org/wiki/Q116184216> ;
@@ -248,6 +256,14 @@
   []
     gen:spouse <#Andor_Festetics> , <esterházy.ttl#Lenke_Pejácsevich> ;
 	gen:startDate "1870-10-01" .
+<#Imre_Festetics>
+  # Imre Athanasius Graf Festetics de Tolna, 1844-04-14 - 1909-12-19
+  gen:father <#Sámuel_Festetics> ;
+  gen:mother <#Wanda_Raczynska> .
+  # oo Bertha Adamovits, 1849-01-07 - 1905-09-12, daughter of Nicolaus Adamovits and Maria Apfelpek
+  []
+    gen:spouse <#Imre_Festetics> , <#Bertha_Adamovits> ;
+	gen:startDate "1870-05-12" .
 <https://www.wikidata.org/wiki/Q116184214>
   # Maria Felicie Gräfin Festetics de Tolna, 1850-11-12 - 1946-07-29
   gen:father <https://www.wikidata.org/wiki/Q116184215> ;
@@ -276,6 +292,11 @@
   []
     gen:spouse <#Sándor_Festetics> , <károlyi.ttl#Julie_Károlyi> ;
 	gen:startDate "1911-10-09" .
+<#Wanda_Festetics>
+  # Wanda Bertha Maria Gräfin Festetics de Tolna, 1882-09-28 - 1968-09-29
+  gen:father <#Imre_Festetics> ;
+  gen:mother <#Bertha_Adamovits> .
+  # oo 1905-05-20 Ernst Graf von Seilern und Aspang, 1878-08-22 - 1927-06-27, seilern.ttl#Ernst_von_Seilern
 
 <https://www.wikidata.org/wiki/Q20169340>
   # Maria Matilda Georgine Gräfin Festetics de Tolna, 1881-05-24 - 1953-03-02
@@ -469,3 +490,32 @@
   gen:father <https://www.wikidata.org/wiki/Q111034954> ;
   gen:mother <kinsky.ttl#Marie_Kinsky> .
   # oo 1896-06-13 Adolf Maria Graf von Ledebur-Wicheln, 1870-01-02 - 1949-02-20, https://www.wikidata.org/wiki/Q75379217 (czernin.ttl)
+
+# ----
+<#Dominicus_Radziwiłł>
+  # Dominicus Prinz Radziwiłł, 1747-07-23 - 1803
+  gen:father <https://www.wikidata.org/wiki/Q2616770> ; # Marcin Mikołaj Radziwiłł, 7. Ordinat of Kleck, 1705-11-11 - 1782-01-11
+  gen:mother <https://www.wikidata.org/wiki/Q62896430> . # oo 1737-02 Martha Trembicka, d. 1812
+  # oo Marianna Czechnicka, daughter of Jakob Czechnicki and Anna Owsiany
+  []
+    gen:spouse <#Dominicus_Radziwiłł> , <#Marianna_Czechnicka> .
+
+<#Anna_Elisabeth_Radziwiłł>
+  # Anna Elisabeth Prinzessin Radziwiłł, 1785 - 1879-03-14
+  gen:father <#Dominicus_Radziwiłł> ;
+  gen:mother <#Marianna_Czechnicka> .
+  # oo 1816-11-03 Atanazy Graf Raczyński, 1788-05-02 - 1874-08-21, https://www.wikidata.org/wiki/Q215697
+# ----
+<https://www.wikidata.org/wiki/Q215697>
+  # Atanazy Graf Raczyński, 1788-05-02 - 1874-08-21
+  gen:father <https://www.wikidata.org/wiki/Q9259607> . # Filip Nereusz Raczyński
+  # oo Anna Elisabeth Prinzessin Radziwiłł, 1785 - 1879-03-14
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q215697> , <#Anna_Elisabeth_Radziwiłł> ;
+	gen:startDate "1816-11-03" .
+
+<#Wanda_Raczynska>
+  # Wanda Gräfin Raczyńska, 1819-01-21 - 1845-05-16
+  gen:father <https://www.wikidata.org/wiki/Q215697> ;
+  gen:mother <#Anna_Elisabeth_Radziwiłł> .
+  # oo 1842-06-11 Sámuel Graf Festetics de Tolna, 1806-08-04 - 1862-09-04, #Sámuel_Festetics
