@@ -946,10 +946,10 @@
 	gen:startDate "1537-01-28" .
 
 <#Otto_Bernhard_von_Traun>
-  # Otto Bernhard von Traun, d. 1605
+  # Otto Bernhard von Traun, 1559~ - 1605
   gen:father <#Otto_von_Traun> ;
   gen:mother <#Herzeleide_Schiffer> .
-  # oo Judith von Polheim, 1559 - 1613, daughter of Maximilian von Polheim und Judith von Weisspriach
+  # oo Judith von Polheim, 1559-03-05 - 1613, daughter of Maximilian von Polheim und Judith von Weisspriach
   []
     gen:spouse <#Otto_Bernhard_von_Traun> , <#Judith_von_Polheim> ;
 	gen:startDate "1585-01-06" .
@@ -962,6 +962,13 @@
     gen:spouse <https://www.wikidata.org/wiki/Q110370185> , <https://www.wikidata.org/wiki/Q110370192> ;
 	gen:startDate "1569-01-18" .
 
+<#Otto_Maximilian_von_Abensperg>
+  # Otto Maximilian Graf von Abensperg und Traun-Eschelberg, 1597-04-29 - 1658
+  gen:father <#Otto_Bernhard_von_Traun> ;
+  gen:mother <#Judith_von_Polheim> .
+  # oo Rebecca Schrott von Kindberg, d. 1659-08-01
+  []
+    gen:spouse <#Otto_Maximilian_von_Abensperg> , <#Rebecca_Schrott> .
 <#Johann_Cyriak_von_Traun>
   # Johann Cyriak von Traun Herr auf Wildberg, 1599 - 1652
   gen:father <#Otto_Bernhard_von_Traun> ;
@@ -978,6 +985,18 @@
     gen:spouse <https://www.wikidata.org/wiki/Q110370184> , <https://www.wikidata.org/wiki/Q110370197> ;
 	gen:startDate "1594-02-20" .
 
+<#Otto_Lorenz_von_Abensperg>
+  # Otto Lorenz Graf von Abensperg und Traun-Eschelberg, 1638-11-04 - 1695
+  gen:father <#Otto_Maximilian_von_Abensperg> ;
+  gen:mother <#Rebecca_Schrott> .
+  # oo Anna Dorothea von Geyersberg, d. 1672
+  []
+    gen:spouse <#Otto_Lorenz_von_Abensperg> , <#Anna_von_Geyersberg> .
+<#Judith_von_Abensperg>
+  # Judith Sidonia von Abensperg und Traun, d. 1668-07-07
+  gen:father <#Otto_Maximilian_von_Abensperg> ;
+  gen:mother <#Rebecca_Schrott> .
+  # oo 1650-02-07 Sigmund Reichardt von Tattenbach-Gaildorf, 1621-01-21 - 1693-09-30, https://www.wikidata.org/wiki/Q94885397
 <https://www.wikidata.org/wiki/Q110370220>
   # Susanna Catharina Gräfin von Abensperg und Traun, 1629 - 1657
   gen:father <#Johann_Cyriak_von_Traun> ;
@@ -992,6 +1011,11 @@
     gen:spouse <https://www.wikidata.org/wiki/Q110370183> , <https://www.wikidata.org/wiki/Q110370198> ;
 	gen:startDate "1638-11-03" .
 
+<#Eva_von_Abensperg>
+  # Eva Maria Gräfin von Abensperg und Traun, 1668-08-12 - 1690-09-15
+  gen:father <#Otto_Lorenz_von_Abensperg> ;
+  gen:mother <#Anna_von_Geyersberg> .
+  # oo 1688-02-15 Johann Ernst von Tattenbach, 1661-01-22 - 1738-10, #Johann_Ernst_von_Tattenbach
 <https://www.wikidata.org/wiki/Q94527070>
   # Otto Ehrenreich Graf von Abensperg und Traun, 1644-03-13 - 1715-09-08
   gen:father <https://www.wikidata.org/wiki/Q110370183> ;
@@ -1157,6 +1181,82 @@
   gen:father <#Johann_Adam_von_Abensperg> ;
   gen:mother <#Margarete_Lentz> .
   # oo 1960-08-11 Johann Ulrich (Graf von) Goëss, 1926-11-26 - 2018-12-13, https://www.wikidata.org/wiki/Q75296201
+
+# ---
+<https://www.wikidata.org/wiki/Q94885397>
+  # Sigmund Reichardt von Tattenbach-Gaildorf, 1621-01-21 - 1693-09-30
+  gen:father <https://www.wikidata.org/wiki/Q110371352> ; # Gotthard Graf von Tattenbach, 1581-05-01 - 1649-01-22
+  gen:mother <https://www.wikidata.org/wiki/Q110371355> . # oo 1613-01-30 Sarah Sophia von Hoheneck, 1597 - 1635-08-03
+  # oo Judith Sidonia von Abensperg und Traun, d. 1668-07-07
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q94885397> , <#Judith_von_Abensperg> ;
+	gen:startDate "1650-02-07" .
+  # oo Susanna Eleonora von Prösing, 1631-01-10 - 1692-10-01, daughter of Johann Heinrich Freiherr von Prösing and Maximiliana Ennenkl zu Albrechtsberg
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q94885397> , <https://www.wikidata.org/wiki/Q116136570> ;
+	gen:startDate "1669-09-07" .
+
+<#Johann_Ernst_von_Tattenbach>
+  # Johann Ernst von Tattenbach, 1661-01-22 - 1738-10
+  gen:father <https://www.wikidata.org/wiki/Q94885397> ;
+  gen:mother <#Judith_von_Abensperg> .
+  # oo Eva Maria Gräfin von Abensperg und Traun, 1668-08-12 - 1690-09-15 (castell.ttl)
+  []
+    gen:spouse <#Johann_Ernst_von_Tattenbach> , <#Eva_von_Abensperg> ;
+	gen:startDate "1688-02-15" .
+<https://www.wikidata.org/wiki/Q55883246>
+  # Johanna Dorothea von Tattenbach, 1675-03-03 - 1714-10-26
+  gen:father <https://www.wikidata.org/wiki/Q94885397> ;
+  gen:mother <https://www.wikidata.org/wiki/Q116136570> .
+  # oo 1692-09-01 Heinrich XI., Graf Reuß zu Schleiz, 1669-04-12 - 1726-07-28, https://www.wikidata.org/wiki/Q75346037
+
+<#Johann_Wilhelm_von_Tattenbach>
+  # Johann Wilhelm von Tattenbach, 1697-01-09 - 1737-03-16
+  gen:father <#Johann_Ernst_von_Tattenbach> ;
+  gen:mother <#Eva_von_Abensperg> .
+  # oo Maria Sidonia von Beulwitz
+  []
+    gen:spouse <#Johann_Wilhelm_von_Tattenbach> , <#Maria_von_Beulwitz> ;
+	gen:startDate "1729-05-05" .
+
+<#Leopold_Franz_von_Tattenbach>
+  # Leopold Franz von Tattenbach, 1735-10-20 - 1820-12-22
+  gen:father <#Johann_Wilhelm_von_Tattenbach> ;
+  gen:mother <#Maria_von_Beulwitz> .
+  # oo Franziska Stadler, d. 1785-02-08
+  []
+    gen:spouse <#Leopold_Franz_von_Tattenbach> , <#Franziska_Stadler> .
+
+<https://www.wikidata.org/wiki/Q55895276>
+  # Johann _Franz_ Graf von Tattenbach, 1769-07-04 - 1854-09-18
+  gen:father <#Leopold_Franz_von_Tattenbach> ;
+  gen:mother <#Franziska_Stadler> .
+  # oo Wilhelmine Fleischhauer, 1792-03-28 - 1869-04-09
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q55895276> , <#Wilhelmine_Fleischhauer> ;
+	gen:startDate "1813-07-04" .
+
+<https://www.wikidata.org/wiki/Q55895295>
+  # Johann _Ludwig_ August Franz Wilhelm Graf von Tattenbach, 1816-09-26 - 1904-02-06
+  gen:father <https://www.wikidata.org/wiki/Q55895276> ;
+  gen:mother <#Wilhelmine_Fleischhauer> .
+  # oo Emma von Yrsch, 1818-12-26 - 1908-04-16, daughter of Carl August von Yrsch, 1769-02-21 - 1846-07-30 and oo Karoline von Pienzenau
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q55895295> , <#Emma_von_Yrsch> ;
+	gen:startDate "1836-11-22" .
+
+<https://www.wikidata.org/wiki/Q94884701>
+  # Franz August Ludwig Graf von Tattenbach, 1840-09-15 - 1884-06-06
+  gen:father <https://www.wikidata.org/wiki/Q55895295> ;
+  gen:mother <#Emma_von_Yrsch> .
+  # oo Mathilde Gräfin von Rechberg und Rothenlöwen, 1847-10-17 - 1880-10-30
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q94884701> , <rechberg.ttl#Mathilde_von_Rechberg> ;
+	gen:startDate "1869-08-09" .
+  # oo Sophie Gräfin von Rechberg und Rothenlöwen, 1843-07-13 - 1914-07-26
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q94884701> , <rechberg.ttl#Sophie_von_Rechberg> ;
+	gen:startDate "1882-09-26" .
 
 # ----
 <https://www.wikidata.org/wiki/Q110369777>
