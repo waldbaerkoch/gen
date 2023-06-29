@@ -4,10 +4,40 @@
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
+#<https://www.wikidata.org/wiki/Q102070109>
+  # Adam Eusebius von Hoyos Freiherr zu Stichsenstein, 1587 - 1640
+  # oo Sophia Elisabeth Freiin von Rodern
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q102070109> , <https://www.wikidata.org/wiki/Q102070112> ;
+	gen:startDate "1627" .
+
+<https://www.wikidata.org/wiki/Q102070107>
+  # Hans Ferdinand Albrecht von Hoyos Freiherr zu Stichsenstein, 1632-10-16 - 1659-04-10
+  gen:father <https://www.wikidata.org/wiki/Q102070109> ;
+  gen:mother <https://www.wikidata.org/wiki/Q102070112> .
+  # oo Esther Susanna Gräfin von und zu Trauttmansdorff, 1641 - 1694-02-20
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q102070107> , <https://www.wikidata.org/wiki/Q102070114> ;
+	gen:startDate "1656" .
+<#Cäcilie_von_Hoyos>
+  # Maria Cäcilie von Hoyos, d. 1699-02-07
+  gen:father <https://www.wikidata.org/wiki/Q102070109> ;
+  gen:mother <https://www.wikidata.org/wiki/Q102070112> .
+  # oo 1661~ Johann Ludwig Adam Graf von Starhemberg, 1616 - 1666-09-29, https://www.wikidata.org/wiki/Q110366852
+
+<https://www.wikidata.org/wiki/Q94622982>
+  # Leopold Karl Graf Hoyos Freiherr zu Stichsenstein, 1651 - 1699-08-25
+  gen:father <https://www.wikidata.org/wiki/Q102070107> ;
+  gen:mother <https://www.wikidata.org/wiki/Q102070114> .
+  # oo Regina Gräfin und Herrin von und zu Sprinzenstein und Neuhaus, 1662 - 1704-11-28
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q94622982> , <https://www.wikidata.org/wiki/Q94617583> ;
+	gen:startDate "1681-01-26" .
+
 <https://www.wikidata.org/wiki/Q94577242>
   # Philipp Joseph Innocenz Graf Hoyos Freiherr zu Stichsenstein, 1695-04-22 - 1762-04-28
-  gen:father <https://www.wikidata.org/wiki/Q94622982> ; # Leopold Karl Graf Hoyos, 1651 - 1699-08-25
-  gen:mother <https://www.wikidata.org/wiki/Q94617583> . # oo Maria Regina Gräfin von Sprinzenstein, d. 1704-11-28
+  gen:father <https://www.wikidata.org/wiki/Q94622982> ;
+  gen:mother <https://www.wikidata.org/wiki/Q94617583> .
   # oo Maria Magdalena Gräfin von Hohenfeld, 1695-07-22 - 1760-09-29 (starhemberg.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q94577242> , <https://www.wikidata.org/wiki/Q102070129> ;
@@ -86,7 +116,7 @@
   # Maria Christiane Ernestine Hypolita Gräfin Hoyos Freiin zu Stichsenstein, 1809-08-13 - 1884-02-24
   gen:father <https://www.wikidata.org/wiki/Q1675434> ;
   gen:mother <https://www.wikidata.org/wiki/Q63306873> .
-  # oo 1832-07-22 Gordian Heinrich Freiherr von Gudenus, 1798-05-10 - 1894-04-21, https://www.wikidata.org/wiki/Q75396420 (schönborn.ttl)
+  # oo 1832-07-22 Gordian Heinrich Freiherr von Gudenus, 1798-05-10 - 1894-04-21, https://www.wikidata.org/wiki/Q75396420
 <https://www.wikidata.org/wiki/Q60843966>
   # Maria Charlotte (Caroline) Henriette Helene Gräfin Hoyos Freiin zu Stichsenstein, 1811-05-03 - 1875-04-19
   gen:father <https://www.wikidata.org/wiki/Q1675434> ;
@@ -97,6 +127,11 @@
   gen:father <https://www.wikidata.org/wiki/Q1675434> ;
   gen:mother <https://www.wikidata.org/wiki/Q63306873> .
   # oo Rudolf Johann Graf von Lamberg, 1802-02-11 - 1880-04-05, lamberg.ttl#Rudolf_Johann_von_Lamberg
+<#Julie_Hoyos>
+  # Julie Gräfin Hoyos Freiin zu Stichsenstein, 1816-07-08 - 1871-12-16
+  gen:father <https://www.wikidata.org/wiki/Q1675434> ;
+  gen:mother <https://www.wikidata.org/wiki/Q63306873> .
+  # oo 1840-11-21 Richard Graf von Mirbach-Harff, 1810-08-24 - 1853-12-14, https://www.wikidata.org/wiki/Q1372663
 <https://www.wikidata.org/wiki/Q56489395>
   # Sidonia Gräfin Hoyos Freiin zu Stichsenstein, 1818-07-24 - 1898-05-24
   gen:father <https://www.wikidata.org/wiki/Q1675434> ;
@@ -293,36 +328,18 @@
 
 
 # ----
+<https://www.wikidata.org/wiki/Q94617583>
+  # Maria _Regina_ Gräfin und Herrin von und zu Sprinzenstein und Neuhaus, 1662 - 1704-11-28
+  gen:father <https://www.wikidata.org/wiki/Q28939297> ; # Ferdinand Maximilian Graf und Herr von und zu Sprinzenstein und Neuhaus
+  gen:mother <https://www.wikidata.org/wiki/Q102070126> . # oo Maria Eleonore Gräfin Kurtz von Valley Freiin zu Thurn und Senftenau
+  # oo 1681-01-26 Leopold Karl Graf Hoyos Freiherr zu Stichsenstein, 1651 - 1699-08-25, https://www.wikidata.org/wiki/Q94622982
+
+# ----
 <https://www.wikidata.org/wiki/Q63306873>
   # Maria Theresia Constantina Gräfin von Schlabrendorf, 1781-08-16 - 1862-11-07
   gen:father <https://www.wikidata.org/wiki/Q11763638> ; # Ludwig Friedrich Wilhelm Heinrich Graf von Schlabrendorf
   gen:mother <https://www.wikidata.org/wiki/Q75396519> . # Maria Anna Theresia Franziska de Paula Magdalena Stanislawa Gräfin von Nimptsch Freiin von Fürst und Oelse
   # oo 1799-06-03 Johann Ernst Graf Hoyos Freiherr zu Stichsenstein, 1779-02-24 - 1849-10-28, https://www.wikidata.org/wiki/Q1675434
-
-# ----
-<https://www.wikidata.org/wiki/Q75396420>
-  # Gordian Heinrich Freiherr von Gudenus, 1798-05-10 - 1894-04-21
-  gen:father <https://www.wikidata.org/wiki/Q75396461> ; # Ferdinand Sigismund Valentin Heinrich Freiherr von Gudenus
-  gen:mother <https://www.wikidata.org/wiki/Q75396463> . # Maria Sophia Ignatia Catharina Freiin von Schrottenberg
-  # oo Christiane Gräfin Hoyos Freiin zu Stichsenstein, 1809-08-13 - 1884-02-24
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q75396420> , <https://www.wikidata.org/wiki/Q75396422> ;
-	gen:startDate "1832-07-22" .
-
-<https://www.wikidata.org/wiki/Q20427970>
-  # Ernst Ferdinand Freiherr von Gudenus, 1833-09-08 - 1914-10-28
-  gen:father <https://www.wikidata.org/wiki/Q75396420> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75396422> .
-  # oo Anna Maria Augusta Gräfin von Schönborn-Wiesentheid, 1845-06-20 - 1909-11-16
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q20427970> , <https://www.wikidata.org/wiki/Q75396400> ;
-	gen:startDate "1866-01-31" .
-
-<https://www.wikidata.org/wiki/Q75378198>
-  # Christine Freiin von Gudenus, 1870-08-16 - 1959-01-19
-  gen:father <https://www.wikidata.org/wiki/Q20427970> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75396400> .
-  # oo 1895-10-02 Carl Graf von und zu Eltz genannt Faust von Stromberg, 1867-05-13 - 1940-02-01, https://www.wikidata.org/wiki/Q75378199 (lobkowicz.ttl)
 
 # ----
 #<https://www.wikidata.org/wiki/Q75314932>
@@ -343,6 +360,24 @@
   gen:father <https://www.wikidata.org/wiki/Q75314932> ;
   gen:mother <https://www.wikidata.org/wiki/Q75314934> .
   # oo 1936-10-22 Albrecht Fürst zu Hohenlohe-Jagstberg, 1906-09-09 - 1996-01-23, https://www.wikidata.org/wiki/Q75393190
+
+# ----
+#<https://www.wikidata.org/wiki/Q1372663>
+  # Richard Joseph Hubert Graf von Mirbach-Harff, 1810-08-24 - 1853-12-14
+  # Freiherr von Vorst-Gudenau
+  # Richard Josef Freiherr von Mirbach-Harff 1850
+  # son of Maximilian Friedrich Freiherr von der Vorst-Lombeck zur Gudenau, 1767-08-13 - 1855-06-13
+  # and oo 1800-08-15 Ottilia Freiin von Mirbach zu Harff, 1778-03-19 - 1846-05-01
+  # oo Julie Gräfin Hoyos Freiin zu Stichsenstein, 1816-07-08 - 1871-12-16
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1372663> , <#Julie_Hoyos> ;
+	gen:startDate "1840-11-21" .
+
+<#Antonia_von_Mirbach>
+  # Antonia Freiin von Mirbach-Harff, 1846-06-05 - 1921-04-18
+  gen:father <https://www.wikidata.org/wiki/Q1372663> ;
+  gen:mother <#Julie_Hoyos> .
+  # oo 1865-07-25 Wilderich Graf von Spee, 1830-10-19 - 1890-03-16, https://www.wikidata.org/wiki/Q2570672 (stolberg.ttl)
 
 # ----
 <https://www.wikidata.org/wiki/Q59904>
