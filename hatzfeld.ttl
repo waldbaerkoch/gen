@@ -4,7 +4,6 @@
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
-
 <https://www.wikidata.org/wiki/Q110557188>
   # Johann IV 'der Rauhe' von Hatzfeld, 1412 - 1476-04-25
   gen:father <https://www.wikidata.org/wiki/Q107211482> ; # Gottfried VII. 'der Rauhe' von Hatzfeldt, d. 1422b
@@ -781,14 +780,10 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q55844666> , <https://www.wikidata.org/wiki/Q112860703> ;
 	gen:startDate "1816-05-14" .
-<https://www.wikidata.org/wiki/Q2516502>
+<https://www.wikidata.org/wiki/Q2516502> # ->Baron de Loë-Imstenraedt
   # Franciscus Carolus Antonius Baron de Loë-Imstenraedt, 1789-06-22 - 1838-06-17
   gen:father <https://www.wikidata.org/wiki/Q2057431> ;
   gen:mother <https://www.wikidata.org/wiki/Q110153160> .
-  # oo Eugenia Maria Louisa Comtesse de Marchant et d’Ansembourg, 1788-03-06 - 1873-06-03, daughter of Claude Romain Joseph Maximilien Francois de Paul Comte de Marchant et d’Ansembourg, 1745-05-14 - 1798-02-10 and oo 1779-05-16 Marie Anne Victoire Baronesse de Hayme, 1751-04-21 - 1806-03-01
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q2516502> , <#Eugenia_de_Marchant> ;
-	gen:startDate "1817-05-01" .
 <#Auguste_von_Loë>
   # Auguste Freiin von Loë, 1791-10-12 - 1857-03-18
   gen:father <https://www.wikidata.org/wiki/Q2057431> ;
@@ -838,11 +833,11 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q1913921> , <https://www.wikidata.org/wiki/Q75365026> ;
 	gen:startDate "1854-06-06" .
-<#Emma_de_Loë>
-  # Emma Maria Francisca Frederica Huberta Barones de Loë, 1818-02-27 - 1902-09-06
-  gen:father <https://www.wikidata.org/wiki/Q2516502> ;
-  gen:mother <#Eugenia_de_Marchant> .
-  # oo 1838-10-18 Clemens Maria Hubertus (Clemens Marie Alexander Augustiunus Wenzeslaus Nereus) Baron de Weichs de Wenne, 1807-05-12 - 1893-12-27, https://www.wikidata.org/wiki/Q2567124 (wolff.ttl)
+<#Mathilde_von_Loë>
+  # Mathilde Franziska Freiin von Loë, 1821-08-10 - 1903-12-19
+  gen:father <https://www.wikidata.org/wiki/Q55844666> ;
+  gen:mother <https://www.wikidata.org/wiki/Q112860703> .
+  # oo 1840-04-05 Franz Egon Graf von und zu Hoensbroech, 1805-06-01 - 1874-12-19, schönborn.ttl#Franz_Egon_von_und_zu_Hoensbroech
 <https://www.wikidata.org/wiki/Q109364>
   # Friedrich Karl _Walter_ Degenhard Freiherr von Loë, 1828-09-09 - 1908-07-06
   gen:father <https://www.wikidata.org/wiki/Q1365881> ;
@@ -861,6 +856,18 @@
   gen:father <https://www.wikidata.org/wiki/Q1365881> ;
   gen:mother <https://www.wikidata.org/wiki/Q117246016> .
   # oo 1861-08-06 Leopold Freiherr von Fürstenberg, 1831-08-21 - 1913-02-26, https://www.wikidata.org/wiki/Q117246003 (wolff.ttl)
+<#Kaspar_von_Loë>
+  # Kaspar Melchior Balthasar Freiherr von Loë, 1835-02-11 - 1914-09-16
+  gen:father <https://www.wikidata.org/wiki/Q1100186> ;
+  gen:mother <wolff.ttl#Maria_Theresia_von_Weichs> .
+  # oo Eugenia Gräfin von Goltstein, 1839-04-11 - 1880-06-18
+  []
+    gen:spouse <#Kaspar_von_Loë> , <schönborn.ttl#Eugenia_von_Goltstein> ;
+	gen:startDate "1869-08-10" .
+  # oo Antonia Gräfin von Korff genannt Schmising-Kerssenbrock, 1856-03-13 - 1942-10-23
+  []
+    gen:spouse <#Kaspar_von_Loë> , <wolff.ttl#Antonia_von_Korff> ;
+	gen:startDate "1883-05-01" .
 <https://www.wikidata.org/wiki/Q1373011>
   # Eugen Maximilian Freiherr von Loë, 1839-10-25 - 1911-11-30
   gen:father <https://www.wikidata.org/wiki/Q1100186> ;
@@ -891,6 +898,16 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75366066> , <https://www.wikidata.org/wiki/Q75365733> ;
 	gen:startDate "1902-11-26" .
+<#Maria_Clementia_von_Loë>
+  # Maria Clementia Helene Hubertine Freiin von Loë, 1860-03-02 - 1902-10-12
+  gen:father <https://www.wikidata.org/wiki/Q109364> ;
+  gen:mother <#Franziska_von_Hatzfeldt> .
+  # oo 1883-02-05 Franz Levin Baron de Loë-Imstenraedt, 1857-09-22 - 1938-08-22, #Franz_Levin_de_Loë
+<#Leonie_von_Loë>
+  # Leonie Freiin von Loë, 1876-07-08 - 1919-10-26
+  gen:father <#Kaspar_von_Loë> ;
+  gen:mother <schönborn.ttl#Eugenia_von_Goltstein> .
+  # oo 1910-11-22 Ferdinand Graf von Spee, 1871-05-13 - 1936-05-10, spee.ttl#Ferdinand_von_Spee
 <https://www.wikidata.org/wiki/Q75377572>
   # Alexia Freiin von Loë, 1889-07-11 - 1963-03-25
   gen:father <https://www.wikidata.org/wiki/Q1373011> ;
@@ -911,6 +928,50 @@
   gen:father <https://www.wikidata.org/wiki/Q75365737> ;
   gen:mother <https://www.wikidata.org/wiki/Q75295912> .
   # oo 1949-08-30 Johannes Prinz zu Löwenstein-Wertheim-Rosenberg, 1919-07-08 - 2000-12-01, https://www.wikidata.org/wiki/Q75365814 (wittelsbacher.ttl)
+
+
+# Baron de Loë-Imstenraedt
+<https://www.wikidata.org/wiki/Q2516502>
+  # Franciscus Carolus Antonius Baron de Loë-Imstenraedt, 1789-06-22 - 1838-06-17
+  gen:father <https://www.wikidata.org/wiki/Q2057431> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110153160> .
+  # oo Eugenia Maria Louisa Comtesse de Marchant et d’Ansembourg, 1788-03-06 - 1873-06-03, daughter of Claude Romain Joseph Maximilien Francois de Paul Comte de Marchant et d’Ansembourg, 1745-05-14 - 1798-02-10 and oo 1779-05-16 Marie Anne Victoire Baronesse de Hayme, 1751-04-21 - 1806-03-01
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2516502> , <#Eugenia_de_Marchant> ;
+	gen:startDate "1817-05-01" .
+
+<#Emma_de_Loë>
+  # Emma Maria Francisca Frederica Huberta Barones de Loë, 1818-02-27 - 1902-09-06
+  gen:father <https://www.wikidata.org/wiki/Q2516502> ;
+  gen:mother <#Eugenia_de_Marchant> .
+  # oo 1838-10-18 Clemens Maria Hubertus (Clemens Marie Alexander Augustiunus Wenzeslaus Nereus) Baron de Weichs de Wenne, 1807-05-12 - 1893-12-27, https://www.wikidata.org/wiki/Q2567124 (wolff.ttl)
+<https://www.wikidata.org/wiki/Q2098719>
+  # Otto Napoleon Maximilian Hubert Maria Baron de Loë-Imstenraedt, 1821-08-29 - 1897-10-27
+  gen:father <https://www.wikidata.org/wiki/Q2516502> ;
+  gen:mother <#Eugenia_de_Marchant> .
+  # oo Maria Antonia Theodora Franzisca Freiin von Boeselager, 1827-03-01 - 1847-10-12, daughter of Carl Clemens Anton Clara Hubert Freiherr von Boeselager, 1782 – 1859 and oo 1822 Josephina Augusta Caroline Antonetta Gräfin von Belderbusch, 1804 – 1834
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2098719> , <#Maria_Antonia_von_Boeselager> ;
+	gen:startDate "1846-07-08" .
+  # oo Johanna Gräfin Wolff-Metternich zur Gracht, 1836-07-31 - 1864-02-25
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2098719> , <wolff.ttl#Johanna_Wolff-Metternich> ;
+	gen:startDate "1854-05-13" .
+
+<#Franz_Levin_de_Loë>
+  # Franz Levin Eugene Marie Hubert Baron de Loë-Imstenraedt, 1857-09-22 - 1938-08-22
+  gen:father <https://www.wikidata.org/wiki/Q2098719> ;
+  gen:mother <wolff.ttl#Johanna_Wolff-Metternich> .
+  # oo Maria Clementia Freiin von Loë, 1860-03-02 - 1902-10-12
+  []
+    gen:spouse <#Franz_Levin_de_Loë> , <#Maria_Clementia_von_Loë> ;
+	gen:startDate "1883-02-05" .
+
+<#Helene_de_Loë>
+  # Helene Maria Magdalena Huberta Maria Barones de Loë, 1896-11-06 - 1933-07-14
+  gen:father <#Franz_Levin_de_Loë> ;
+  gen:mother <#Maria_Clementia_von_Loë> .
+  # oo 1919-07-24 Franz Lothar Graf von und zu Hoensbroech, 1889-03-27 - 1951-01-08, schönborn.ttl#Franz_Lothar_von_und_zu_Hoensbroech
 
 # ----
 <https://www.wikidata.org/wiki/Q110604232>
@@ -1001,7 +1062,7 @@
   # Anna Elisabeth Augusta Freiin von Hompesch-Bollheim, 1763-02-22 - 1785-05-21
   gen:father <https://www.wikidata.org/wiki/Q1447711> ; # _Franz Karl_ Joseph Anton Freiherr von Hompesch-Bollheim
   gen:mother <https://www.wikidata.org/wiki/Q110604662> . # Antoinette Freiin von Hacke
-  # oo 1780-11-06 Carl-Wilhelm Graf von Spee, 1758-05-22 - 1810-07-18, https://www.wikidata.org/wiki/Q20183672 (stolberg.ttl)
+  # oo 1780-11-06 Carl-Wilhelm Graf von Spee, 1758-05-22 - 1810-07-18, https://www.wikidata.org/wiki/Q20183672
 <https://www.wikidata.org/wiki/Q75459541>
   owl:sameAs <https://www.wikidata.org/wiki/Q116181688> ;
   # Ferdinand Ludwig Joseph Anton Graf von Hompesch-Bollheim, 1766-07-17 - 1831-06-24
