@@ -4,13 +4,36 @@
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
+<https://www.wikidata.org/wiki/Q101347492>
+  # Friedrich Georg von Schönborn, 1574 - 1615-04-16
+  gen:father <https://www.wikidata.org/wiki/Q101347506> ; # Philipp von Schönborn, 1548 - 1589
+  gen:mother <https://www.wikidata.org/wiki/Q101347528> . # oo 1572 Agathe Donner von Lohrheim, d. 1599-09-12
+  # oo Maria Barbara von der Leyen, d. 1631
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q101347492> , <https://www.wikidata.org/wiki/Q101347554> ;
+	gen:startDate "1604-08-24" .
+
+<https://www.wikidata.org/wiki/Q2793768>
+  # Philipp Erwein Freiherr von Schönborn, 1607 - 1668-11-04
+  gen:father <https://www.wikidata.org/wiki/Q101347492> ;
+  gen:mother <https://www.wikidata.org/wiki/Q101347554> .
+  # oo Maria Ursula Greiffenclau von Vollrads, 1612-07-15 - 1688-08-28
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2793768> , <https://www.wikidata.org/wiki/Q101346100> ;
+	gen:startDate "1635-11-19" .
+<https://www.wikidata.org/wiki/Q110539831>
+  # Agatha Maria von Schönborn
+  gen:father <https://www.wikidata.org/wiki/Q101347492> ;
+  gen:mother <https://www.wikidata.org/wiki/Q101347554> .
+  # oo 1633-09-18 Georg Anton Waldbott von Bassenheim, d. 1675-07-29, https://www.wikidata.org/wiki/Q110261677
+
 <https://www.wikidata.org/wiki/Q1919128>
   # Melchior Friedrich Graf von Schönborn, 1644-03-16 - 1717-05-19
   # Freiherr von Schönborn
   # Reichsgraf von Schönborn 1701-08-05
   # Graf von Schönborn-Buchheim 1711-02-19
-  gen:father <https://www.wikidata.org/wiki/Q2793768> ; # Philipp Erwein Freiherr von Schönborn, 1607 - 1668-11-04
-  gen:mother <https://www.wikidata.org/wiki/Q101346100> . # oo 1635-11-19 Maria Ursula Greiffenclau von Vollrads, 1612-07-15 - 1688-08-28, daughter of Heinrich Greiffenclau von Vollrads and Anna Maria von und zu Eltz
+  gen:father <https://www.wikidata.org/wiki/Q2793768> ;
+  gen:mother <https://www.wikidata.org/wiki/Q101346100> .
   # oo Maria Anna Sophie Johanna Freiin von Boineburg-Lengsfeld, 1652-10-16 - 1726-04-11
   []
     gen:spouse <https://www.wikidata.org/wiki/Q1919128> , <https://www.wikidata.org/wiki/Q19245495> ;
@@ -30,6 +53,14 @@
   gen:father <https://www.wikidata.org/wiki/Q2793768> ;
   gen:mother <https://www.wikidata.org/wiki/Q101346100> .
   # oo 1670-11-25 Heinrich Graf von Gleichen und Hatzfeldt, d. 1683-08-06, https://www.wikidata.org/wiki/Q110383801
+<https://www.wikidata.org/wiki/Q94886905>
+  # Johann Erwein Freiherr von Schönborn, 1654 - 1705-11-29
+  gen:father <https://www.wikidata.org/wiki/Q2793768> ;
+  gen:mother <https://www.wikidata.org/wiki/Q101346100> .
+  # oo Maria Anna Magdalena Freiin Waldbott von Bassenheim, d. 1719-03-05
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q94886905> , <waldbott.ttl#Maria_Anna_Magdalena_Waldbott> ;
+	gen:startDate "1702" .
 <https://www.wikidata.org/wiki/Q71715>
   # Lothar Franz Freiherr von Schönborn, 1655-10-04 - 1729-01-30
   # Fürstbischof von Bamberg 1693
@@ -47,6 +78,11 @@
   gen:father <https://www.wikidata.org/wiki/Q1919128> ;
   gen:mother <https://www.wikidata.org/wiki/Q19245495> .
   # oo 1687-02-16 Johann Karl Kaspar Graf von der Leyen, 1655-07-19 - 1739-12-30, https://www.wikidata.org/wiki/Q15098326
+<https://www.wikidata.org/wiki/Q1919128>
+  # Anna Charlotte Maria Gräfin von Schönborn, 1671-10-03 - 1746-02-07
+  gen:father <https://www.wikidata.org/wiki/Q1919128> ;
+  gen:mother <https://www.wikidata.org/wiki/Q19245495> .
+  # oo 1687-01-12 Johann Franz Sebastian Graf von Ostein, 1652-11-04 - 1718-06-24, https://www.wikidata.org/wiki/Q55684375
 <https://www.wikidata.org/wiki/Q86957>
   # Johann Philipp Franz Graf von Schönborn, 1673-02-15 - 1724-08-18
   # Fürstbischof von Würzburg 1719
@@ -631,42 +667,150 @@
 
 
 # ----
+#<https://www.wikidata.org/wiki/Q60845112>
+  # Heinrich Greiffenclau von Vollrads, 1577-10-30 - 1638-05-29
+  # oo Anna Maria von und zu Eltz, 1575 - 1640-01-27
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q60845112> , <https://www.wikidata.org/wiki/Q101347684> ;
+	gen:startDate "1604-05-31" .
+
+<https://www.wikidata.org/wiki/Q101346100>
+  # Maria Ursula Greiffenclau von Vollrads, 1612-07-15 - 1688-08-28
+  gen:father <https://www.wikidata.org/wiki/Q60845112> ;
+  gen:mother <https://www.wikidata.org/wiki/Q101347684> .
+  # oo 1635-11-19 Philipp Erwein Freiherr von Schönborn, 1607 - 1668-11-04, https://www.wikidata.org/wiki/Q2793768
+<https://www.wikidata.org/wiki/Q15448561>
+  # Georg Philipp Freiherr von Greiffenclau zu Vollrads, 1620-08-20 - 1689-07-06
+  gen:father <https://www.wikidata.org/wiki/Q60845112> ;
+  gen:mother <https://www.wikidata.org/wiki/Q101347684> .
+  # oo Anna Margarethe von Buseck, d. 1696-12-08, daughter of Henrich Reinhard von Buseck, 1613b - 1641b and oo 1630-02-11 Anna Elisabeth von Rheinberg, 1593 - 1645-01-24
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q15448561> , <https://www.wikidata.org/wiki/Q110352425> ;
+	gen:startDate "1659-11-19" .
+
+<https://www.wikidata.org/wiki/Q15821215>
+  owl:sameAs <https://www.wikidata.org/wiki/Q107302231> ;
+  # Johann Erwein Freiherr von Greiffenclau zu Vollrads, 1663 - 1727-03-01
+  gen:father <https://www.wikidata.org/wiki/Q15448561> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110352425> .
+  # oo Anna Lioba Freiin von Sickingen, 1666 - 1704-09-12
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q15821215> , <https://www.wikidata.org/wiki/Q107302232> ;
+	gen:startDate "1688-06-29" .
+  # oo Maria Catharina Kottwitz von Aulenbach, d. 1715-10-27
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q15821215> , <#Maria_Catharina_Kottwitz> .
+  # oo Maria Anna Magdalena Freiin Waldbott von Bassenheim, d. 1719-03-05
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q15821215> , <waldbott.ttl#Maria_Anna_Magdalena_Waldbott> ;
+	gen:startDate "1716" .
+
+<https://www.wikidata.org/wiki/Q110508245>
+  # Maria Anna Freiin von Greiffenclau zu Vollrads, 1695-11-09 - 1768-10-08
+  gen:father <https://www.wikidata.org/wiki/Q107302231> ;
+  gen:mother <https://www.wikidata.org/wiki/Q107302232> .
+  # oo 1713-01-08 Wolfgang Eberhard Kämmerer von Worms, Freiherr von Dalberg, 1679-05-30 - 1737-12-12, https://www.wikidata.org/wiki/Q110508170
+
+# ----
 <https://www.wikidata.org/wiki/Q19245495>
   # Maria Anna Sophie Johanna Freiin von Boineburg-Lengsfeld, 1652-10-16 - 1726-04-11
   gen:father <https://www.wikidata.org/wiki/Q95435> ; # Johann Christian Freiherr von Boineburg und Lengsfeld
   gen:mother <https://www.wikidata.org/wiki/Q101346160> . # Anna Christine Schütz von Holzhausen
   # oo 1668-04-13 Melchior Friedrich Graf von Schönborn, 1644-03-16 - 1717-05-19, https://www.wikidata.org/wiki/Q1919128
 
-# ----
-<https://www.wikidata.org/wiki/Q110383632>
+# ====
+<https://www.wikidata.org/wiki/Q110508315>
+  # Katharina Kämmerer von Worms genannt von Dalberg, 1533~ - 1615-08-05
+  gen:father <https://www.wikidata.org/wiki/Q110383640> ; # Friedrich von Dalberg, 1499/1500 - 1574-02-21
+  gen:mother <https://www.wikidata.org/wiki/Q110383646> . # oo 1536 Anna von Fleckenstein, d. 1564-12-12
+  # oo 1553-06-03 Johann Waldbott von Bassenheim, Herr zu Olbrück und Königsfeld, d. 1589, https://www.wikidata.org/wiki/Q110261933
+<https://www.wikidata.org/wiki/Q110383636>
+  # Johann Kämmerer von Worms genannt Dalberg, d. 1607-07-29
+  gen:father <https://www.wikidata.org/wiki/Q110383640> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110383646> .
+  # oo Katharina Waldbott von Bassenheim, 1543~/1544 - 1596-08-05
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110383636> , <https://www.wikidata.org/wiki/Q110383648> ;
+	gen:startDate "1569-08-04" .
+<https://www.wikidata.org/wiki/Q110383681>
+  # Friedrich von Dalberg, d. 1577b
+  gen:father <https://www.wikidata.org/wiki/Q110383640> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110383646> .
+  # oo Barbara von Rosenberg, d. 1578, daughter of Balthasar von Rosenberg and Anna Krantz von Geispolzheim
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110383681> , <https://www.wikidata.org/wiki/Q110383682> ;
+	gen:startDate "1560~" .
+
+<https://www.wikidata.org/wiki/Q110261917>
+  # Wolf Dietrich Kämmerer von Worms, Freiherr zu Dalberg, 1570~ - 1618-07-01
+  gen:father <https://www.wikidata.org/wiki/Q110383636> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110383648> .
+  # oo Magdalena von Cronberg, d. 1616-08-29, daughter of Hartmut von Kronberg and Margareta Brendel von Homburg
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110261917> , <https://www.wikidata.org/wiki/Q110383651> ;
+	gen:startDate "1604-08-17" .
+  # oo Anna Ursula von Wallbrunn, daughter of Hans Gottfried von Wallbrunn and Maria Elisabeth Wolf von Sponheim
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110261917> , <#Anna_Ursula_von_Wallbrunn> ;
+	gen:startDate "1618-02-26" .
+<https://www.wikidata.org/wiki/Q110383680>
+  # Wolfgang Friedrich von Dalberg, Herr zu Herrnsheim und Dalberg, d. 1621-01-09
+  gen:father <https://www.wikidata.org/wiki/Q110383681> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110383682> .
+  # oo Ursula von Kerpen, 1580~/1581 - 1611-01-28, daughter of Johann (Hans) von Kerpen, Herr zu Illingen and Anna von Schauenburg
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110383680> , <https://www.wikidata.org/wiki/Q110383683> .
+
+<https://www.wikidata.org/wiki/Q60461125>
   # Wolfgang Hartmann Kämmerer von Worms genannt Dalberg, d. 1654
-  gen:father <https://www.wikidata.org/wiki/Q110383633> ; # Wolf Dietrich Kämmerer von Worms, Freiherr zu Dalberg
-  gen:mother <https://www.wikidata.org/wiki/Q110383651> . # Magdalena von Cronberg
+  gen:father <https://www.wikidata.org/wiki/Q110261917> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110383651> .
   # oo Maria Echter von Mespelbrunn
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q110383632> , <https://www.wikidata.org/wiki/Q110383666> .
+    gen:spouse <https://www.wikidata.org/wiki/Q60461125> , <https://www.wikidata.org/wiki/Q110383666> .
 <https://www.wikidata.org/wiki/Q110383806>
   # Maria Katharina Kämmerer von Worms, Freiin zu Dalberg
-  gen:father <https://www.wikidata.org/wiki/Q110383633> ;
+  gen:father <https://www.wikidata.org/wiki/Q110261917> ;
   gen:mother <https://www.wikidata.org/wiki/Q110383651> .
   # oo 1634-08-18 Hermann Graf von Hatzfeld Graf von Gleichen, 1603-07-12 - 1673-10-23, https://www.wikidata.org/wiki/Q110383802
+<https://www.wikidata.org/wiki/Q110508219>
+  # Johann Kämmerer von Worms genannt Dalberg, 1618~ - 1670-01-13
+  gen:father <https://www.wikidata.org/wiki/Q110261917> ;
+  gen:mother <#Anna_Ursula_von_Wallbrunn> .
+  # oo Anna Antonetta von der Leyen, 1626 - 1659-09-18
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110508219> , <https://www.wikidata.org/wiki/Q110508221> ;
+	gen:startDate "1644-01-31" .
+<https://www.wikidata.org/wiki/Q110508173>
+  # Philipp Balthasar von Dalberg, 1597 - 1639-04-10
+  gen:father <https://www.wikidata.org/wiki/Q110383680> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110383683> .
+  # oo Magdalena von Warsberg, 1604~/1605 - 1647-12-26, daughter of Samson von Warsberg, Burggraf von Rheineck and Regina von Rollingen
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110508173> , <https://www.wikidata.org/wiki/Q110508194> ;
+	gen:startDate "1621" .
 
 <https://www.wikidata.org/wiki/Q110604855>
   # Friedrich Dietrich Kämmerer von Worms Freiherr von Dalberg, d. 1712-07-07
-  gen:father <https://www.wikidata.org/wiki/Q110383632> ;
+  gen:father <https://www.wikidata.org/wiki/Q60461125> ;
   gen:mother <https://www.wikidata.org/wiki/Q110383666> .
   # oo Maria Klara Freiin von Schönborn, 1647-09-26 - 1716
   []
     gen:spouse <https://www.wikidata.org/wiki/Q110604855> , <https://www.wikidata.org/wiki/Q110604856> ;
 	gen:startDate "1667" .
-
+<https://www.wikidata.org/wiki/Q110508217>
+  # Anna Katharina Franziska Kämmerer von Worms genannt Dalberg, 1644-12-04 - 1679-07-30
+  gen:father <https://www.wikidata.org/wiki/Q110508219> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110508221> .
+  # oo 1662-11-19 Philipp Franz Eberhard von Dalberg, 1635-03-15 - 1693-12-24, https://www.wikidata.org/wiki/Q19298529
 <https://www.wikidata.org/wiki/Q19298529>
-  # Philipp Franz Eberhard von Dalberg, 1635 - 1693
-  gen:father <https://www.wikidata.org/wiki/Q110508173> ; # Philipp Balthasar von Dalberg
-  gen:mother <https://www.wikidata.org/wiki/Q110508194> . # Magdalena von Warsberg
+  # Philipp Franz Eberhard von Dalberg, 1635-03-15 - 1693-12-24
+  gen:father <https://www.wikidata.org/wiki/Q110508173> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110508194> .
   # oo Anna Katharina Franziska Kämmerer von Worms genannt Dalberg, 1644-12-04 - 1679-07-30
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q19298529> , <https://www.wikidata.org/wiki/Q110508217> .
+    gen:spouse <https://www.wikidata.org/wiki/Q19298529> , <https://www.wikidata.org/wiki/Q110508217> ;
+	gen:startDate "1662-11-19" .
 
 <https://www.wikidata.org/wiki/Q110508170>
   # Wolfgang Eberhard Kämmerer von Worms, Freiherr von Dalberg, 1679-05-30 - 1737-12-12
@@ -686,34 +830,41 @@
     gen:spouse <https://www.wikidata.org/wiki/Q1447168> , <https://www.wikidata.org/wiki/Q110507933> ;
 	gen:startDate "1743-03-19" .
 
+<https://www.wikidata.org/wiki/Q61353>
+  # Karl Theodor Anton Maria Kämmerer von Worms Freiherr von und zu Dalberg, 1744-02-08 - 1817-02-10
+  # Bischofsweihe 1788-08-31
+  # Bischof von Konstanz 1800-01-17
+  # Fürstbischof von Worms 1802-07-25 - 1803
+  # Erzbischof und Kurfürst von Mainz 1802-07-25 - 1803
+  # regierender Fürst im Fürstentum Aschaffenburg 1803
+  # Bischof von Regensburg 1805-02-01
+  # Fürstprimas der Rheinbundstaaten 1806 - 1813
+  # Großherzog von Frankfurt 1810 - 1813
+  gen:father <https://www.wikidata.org/wiki/Q1447168> ;
+  gen:father <https://www.wikidata.org/wiki/Q110507933> .
 <https://www.wikidata.org/wiki/Q109609>
   owl:sameAs <https://www.wikidata.org/wiki/Q112001388> ;
   # Maria Anna Helene Josephina Freiin von Dalberg, 1745-03-21 - 1804-07-10
   gen:father <https://www.wikidata.org/wiki/Q1447168> ;
   gen:father <https://www.wikidata.org/wiki/Q110507933> .
   # oo 1765-09-13 Franz Karl Graf von der Leyen und zu Hohengeroldseck, 1736-08-26 - 1775-09-26, https://www.wikidata.org/wiki/Q1447730
-# ----
-<https://www.wikidata.org/wiki/Q110508245>
-  # Maria Anna Freiin von Greiffenclau zu Vollrads, 1695-11-09 - 1768-10-08
-  gen:father <https://www.wikidata.org/wiki/Q107302231> ; # Johann Erwein Freiherr von Greiffenclau zu Vollrads
-  gen:mother <https://www.wikidata.org/wiki/Q107302232> . # Anna Lioba Freiin von Sickingen
-  # oo 1713-01-08 Wolfgang Eberhard Kämmerer von Worms, Freiherr von Dalberg, 1679-05-30 - 1737-12-12, https://www.wikidata.org/wiki/Q110508170
-# ----
-<https://www.wikidata.org/wiki/Q110508217>
-  # Anna Katharina Franziska Kämmerer von Worms genannt Dalberg, 1644-12-04 - 1679-07-30
-  gen:father <https://www.wikidata.org/wiki/Q110508219> ; # Johann Kämmerer von Worms genannt Dalberg
-  gen:mother <https://www.wikidata.org/wiki/Q110508221> . # Anna Antonetta von der Leyen
-  # oo Philipp Franz Eberhard von Dalberg, 1635 - 1693, https://www.wikidata.org/wiki/Q19298529
 
 # ====
+#<https://www.wikidata.org/wiki/Q94865461>
+  # Johann Christoph Freiherr von Stadion, 1610-09-15 - 1666
+  # oo Maria Magdalena von Ostein
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q94865461> , <https://www.wikidata.org/wiki/Q101345953> ;
+	gen:startDate "1632-07-06" .
+
 <https://www.wikidata.org/wiki/Q55891513>
   # Johann Philipp Joseph Graf von Stadion zu Warthausen und Thannhausen, 1652-10-06 - 1742-01-02
   # Herrschaft Warthausen 1696 (- 1826)
   # Böhmisches Inkolat 1696-12-31
   # Herrschaft Thannhausen 1705
   # Reichsgraf 1705-12-01/1711
-  gen:father <https://www.wikidata.org/wiki/Q94865461> ; # Johann Christoph Freiherr von Stadion
-  gen:mother <https://www.wikidata.org/wiki/Q101345953> . # Maria Magdalena von Ostein
+  gen:father <https://www.wikidata.org/wiki/Q94865461> ;
+  gen:mother <https://www.wikidata.org/wiki/Q101345953> .
   # oo Maria Anna Gräfin von Schönborn, 1669-07-11 - 1703-11-26
   []
     gen:spouse <https://www.wikidata.org/wiki/Q55891513> , <https://www.wikidata.org/wiki/Q101346039> ;
@@ -1131,10 +1282,20 @@
 # ====
 
 # ====
+<https://www.wikidata.org/wiki/Q107302239>
+  owl:sameAs <https://www.wikidata.org/wiki/Q107302213> ; # ?
+  # Friedrich Heinrich Freiherr Wambolt von Umstadt, 1628-07-15 - 1688-12-14
+  gen:father <https://www.wikidata.org/wiki/Q110383544> ; # Friedrich Wambolt von Umstadt
+  gen:mother <https://www.wikidata.org/wiki/Q110383545> . # Maria Jacobea von Metzsch
+  # oo Eva Maria Freiin von Hoheneck, 1655-05-22 - 1696a
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q107302239> , <https://www.wikidata.org/wiki/Q107302240> ;
+	gen:startDate "1678-04-24" .
+
 <https://www.wikidata.org/wiki/Q107302212>
   # Helena Catharina Freiin Wambolt von Umstadt, 1680-04-01 - 1763-11-30
-  gen:father <https://www.wikidata.org/wiki/Q107302239> ; # or https://www.wikidata.org/wiki/Q107302213? Friedrich Heinrich Freiherr Wambolt von Umstadt, 1628-07-15 - 1688-12-14
-  gen:mother <https://www.wikidata.org/wiki/Q107302240> . # or https://www.wikidata.org/wiki/Q107302214? Eva Maria Freiin von Hoheneck, 1655-05-22 - 1696a
+  gen:father <https://www.wikidata.org/wiki/Q107302239> ;
+  gen:mother <https://www.wikidata.org/wiki/Q107302240> .
   # oo 1699-09-22 Karl Anton Graf und Edler Herr von und zu Eltz-Kempenich, 1671-05-06 - 1736-07-19, https://www.wikidata.org/wiki/Q107274633
 <https://www.wikidata.org/wiki/Q107302252>
   # Maria Anna Freiin Wambolt von Umstadt, 1687-07-01 - 1764-08-12
@@ -1185,12 +1346,12 @@
   # Charlotte Freiin Wambolt von Umstadt, 1793-08-17 - 1870-03-19
   gen:father <https://www.wikidata.org/wiki/Q107302236> ;
   gen:mother <https://www.wikidata.org/wiki/Q107302251> .
-  # oo 1809-02-09 Friedrich Graf Waldbott von Bassenheim, 1779-08-10 - 1830-05-06, https://www.wikidata.org/wiki/Q1462719 (oettingen.ttl)
+  # oo 1809-02-09 Friedrich Graf Waldbott von Bassenheim, 1779-08-10 - 1830-05-06, https://www.wikidata.org/wiki/Q1462719
 <https://www.wikidata.org/wiki/Q76259416>
   # Maria Anna Freiin Wambolt von Umstadt, 1796-06-13 - 1852-09-13
   gen:father <https://www.wikidata.org/wiki/Q107302236> ;
   gen:mother <https://www.wikidata.org/wiki/Q107302251> .
-  # oo 1813-05-20 Johann Philipp Jakob Nepomuk Graf und Edler Herr von und zu Eltz gen. Faust von Stromberg, 1779-05-05 - 1844-04-22, https://www.wikidata.org/wiki/Q1695865 (lobkowicz.ttl)
+  # oo 1813-05-20 Johann Philipp Graf und Edler Herr von und zu Eltz genannt Faust von Stromberg, 1779-05-05 - 1844-04-22, https://www.wikidata.org/wiki/Q1695865 (lobkowicz.ttl)
 
 <https://www.wikidata.org/wiki/Q55685370>
   # Philipp Freiherr Wambolt von Umstadt, 1828-09-16 - 1887-07-01
@@ -1206,6 +1367,11 @@
   gen:father <https://www.wikidata.org/wiki/Q55685370> ;
   gen:mother <https://www.wikidata.org/wiki/Q107294349> .
   # oo 1883-01-30 Wilhelm Freiherr von Ketteler, 1845-12-04 - 1904-01-18, https://www.wikidata.org/wiki/Q107294336 (wolff.ttl)
+<#Adolphine_Wambolt>
+  # Adolphine Maria Huberta Gabriele Freiin Wambolt von Umstadt, 1859-01-28 - 1919-06-30
+  gen:father <https://www.wikidata.org/wiki/Q55685370> ;
+  gen:mother <https://www.wikidata.org/wiki/Q107294349> .
+  # oo 1880-06-19 Sigismund Theodor Graf von Berckheim, 1851-03-23 - 1927-07-08, https://www.wikidata.org/wiki/Q2284115
 <https://www.wikidata.org/wiki/Q55673838>
   # Philipp Franz Freiherr Wambolt von Umstadt, 1860-06-20 - 1924-07-08
   gen:father <https://www.wikidata.org/wiki/Q55685370> ;
@@ -1233,6 +1399,42 @@
     gen:spouse <https://www.wikidata.org/wiki/Q75325938> , <https://www.wikidata.org/wiki/Q75325937> ;
 	gen:startDate "1966-09-19" ;
 	gen:divorceDate "1973" .
+
+# ----
+<https://www.wikidata.org/wiki/Q110540697>
+  # Lothar Friedrich Freiherr von Hoheneck, 1654-06-07 - 1705-05-03
+  gen:father <https://www.wikidata.org/wiki/Q110383548> ; # Johann Reinhard Freiherr von Hoheneck, d. 1672
+  gen:mother <https://www.wikidata.org/wiki/Q110383549> . # oo Martha Helena Edle Tochter von und zu Eltz, d. 1681-08-21
+  # oo Eva Maria Freiin von Bernhausen, 1673-09-14 - 1729
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110540697> , <https://www.wikidata.org/wiki/Q110540700> ;
+	gen:startDate "1685" .
+<https://www.wikidata.org/wiki/Q107302240>
+  owl:sameAs <https://www.wikidata.org/wiki/Q107302214> ; # ?
+  # Eva Maria Freiin von Hoheneck, 1655-05-22 - 1696a
+  gen:father <https://www.wikidata.org/wiki/Q110383548> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110383549> .
+  # oo 1678-04-24 Friedrich Heinrich Freiherr Wambolt von Umstadt, 1628-07-15 - 1688-12-14, https://www.wikidata.org/wiki/Q107302239
+
+<https://www.wikidata.org/wiki/Q110540497>
+  # Damian Anton Maria Freiherr von Hoheneck
+  gen:father <https://www.wikidata.org/wiki/Q110540697> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110540700> .
+  # oo Maria Antoinetta von Wittberg
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110540497> , <https://www.wikidata.org/wiki/Q110540499> .
+
+<https://www.wikidata.org/wiki/Q110540496>
+  # Eleonore Walburga Ernestine Freiin von Hoheneck, 1735-06-22 - 1760-04-24
+  gen:father <https://www.wikidata.org/wiki/Q110540497> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110540499> .
+  # oo 1755-09-22 Rudolf Graf Waldbott von Bassenheim, 1731-06-29 - 1805-02-15, https://www.wikidata.org/wiki/Q66619366
+# ----
+<https://www.wikidata.org/wiki/Q110540700>
+  # Eva Maria Freiin von Bernhausen, 1673-09-14 - 1729
+  gen:father <https://www.wikidata.org/wiki/Q110540701> ; # Johann Jacob Freiherr von Bernhausen, d. 1700-06-15
+  gen:mother <https://www.wikidata.org/wiki/Q110540709> . # oo Anna Veronika von Ega, 1638 - 1672
+  # oo 1685 Lothar Friedrich Freiherr von Hoheneck, 1654-06-07 - 1705-05-03, https://www.wikidata.org/wiki/Q110540697
 
 # ----
 <https://www.wikidata.org/wiki/Q107274633>
@@ -1270,6 +1472,41 @@
   gen:father <https://www.wikidata.org/wiki/Q107294350> ; # Karl Wilhelm Graf zu Boineburg und Lengsfeld
   gen:mother <https://www.wikidata.org/wiki/Q107294351> . # Louise Freiin Pergler von Perglas
   # oo 1856-08-27 Philipp Freiherr Wambolt von Umstadt, 1828-09-16 - 1887-07-01, https://www.wikidata.org/wiki/Q55685370
+
+# ----
+#<https://www.wikidata.org/wiki/Q2284115>
+  # Sigismund Theodor Graf von Berckheim, 1851-03-23 - 1927-07-08
+  # son of Christian Friedrich Gustav Freiherr von Berckheim
+  # and Ida Gräfin Waldner von Freundstein
+  # oo Adolphine Maria Huberta Gabriele Freiin Wambolt von Umstadt, 1859-01-28 - 1919-06-30
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2284115> , <#Adolphine_Wambolt> ;
+	gen:startDate "1880-06-19" .
+
+<https://www.wikidata.org/wiki/Q2086636>
+  # Philipp Christian Paul Graf von Berckheim, 1883-01-08 - 1945-11-13
+  gen:father <https://www.wikidata.org/wiki/Q2284115> ;
+  gen:mother <#Adolphine_Wambolt> .
+  # oo Irene Gräfin von Schönborn-Wiesentheid, 1895-07-17 - 1969-12-21
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2086636> , <https://www.wikidata.org/wiki/Q75304841> ;
+	gen:startDate "1918-09-25" ;
+	gen:divorceDate "1938" .
+<#Christian_von_Berckheim>
+  # Christian Theodor Anton Freiherr von Berckheim, 1890-07-03 - 1925-09-01
+  gen:father <https://www.wikidata.org/wiki/Q2284115> ;
+  gen:mother <#Adolphine_Wambolt> .
+  # oo Maria Katharina Gräfin von Schönborn-Wiesentheid, 1896-09-08 - 1994-05-07
+  []
+    gen:spouse <#Christian_von_Berckheim> , <https://www.wikidata.org/wiki/Q76291754> ;
+	gen:startDate "1918-03-19" ;
+	gen:divorceDate "1924" .
+
+<#Marietta_von_Berckheim>
+  # Marietta Rosario Margarethe Adolfine Irene Philippine Gisela Freiin von Berckheim, b. 1920-05-07
+  gen:father <https://www.wikidata.org/wiki/Q2086636> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75304841> .
+  # oo 1960-12-20 Bodo von Bruemmer, 1911 - 2016-11-26, https://www.wikidata.org/wiki/Q75438255 (hatzfeld.ttl)
 
 # ====
 
@@ -1395,11 +1632,108 @@
 # ====
 
 # ====
+<https://www.wikidata.org/wiki/Q101347554>
+  # Maria Barbara von der Leyen, d. 1631
+  gen:father <https://www.wikidata.org/wiki/Q101347571> ; # Philipp Erwein von der Leyen, d. 1593-03-10
+  gen:mother <https://www.wikidata.org/wiki/Q101347601> . # oo 1572 Anna von Heppenheim genannt vom Saal
+  # oo 1604-08-24 Friedrich Georg von Schönborn, 1574 - 1615-04-16, https://www.wikidata.org/wiki/Q101347492
+
+<https://www.wikidata.org/wiki/Q110508385>
+  # Bartholomäus von der Leyen, Herr von Gondorf, Saffig und Adendorf, 1485 – 1539-08-21/1540
+  gen:father <https://www.wikidata.org/wiki/Q110556999> ; # Georg I von der Leyen, d. 1509-04-30
+  gen:mother <https://www.wikidata.org/wiki/Q110557005> . # oo 1456 Eva Mauchenheimer von Zweibrücken, d. 1512-02-27
+  # oo Katharina von Palandt, 1490 – 1554
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110508385> , <https://www.wikidata.org/wiki/Q110508387> ;
+	gen:startDate "1508-09-04" .
+
+<https://www.wikidata.org/wiki/Q110415678>
+  # Georg II. von der Leyen
+  gen:father <https://www.wikidata.org/wiki/Q110508385> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110508387> .
+  # oo Anna Waldbott von Bassenheim, d. 1550
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110415678> , <https://www.wikidata.org/wiki/Q110415679> ;
+	gen:startDate "1537-03-17" .
+<https://www.wikidata.org/wiki/Q110508225>
+  # Johann Kaspar _Michael_ von der Leyen, d. 1577-11-27/1578-03
+  gen:father <https://www.wikidata.org/wiki/Q110508385> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110508387> .
+  # oo Eva von Palant, d. 1569-04-29
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110508225> , <https://www.wikidata.org/wiki/Q110508227> ;
+	gen:startDate "1560" .
+<https://www.wikidata.org/wiki/Q572386>
+  # Johann von der Leyen, 1510~ - 1567-02-10
+  # Erzbischof und Kurfürst von Trier 1556-02-18/-04-25
+  gen:father <https://www.wikidata.org/wiki/Q110508385> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110508387> .
+<https://www.wikidata.org/wiki/Q110415687>
+  # Katharina von der Leyen zu Adendorf, 1528 – 1567
+  gen:father <https://www.wikidata.org/wiki/Q110508385> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110508387> .
+  # oo 1547-02-17 Hans von Metternich, Herr zu Vettelhoven, 1500 - 1562, https://www.wikidata.org/wiki/Q110415686 (runkel.ttl)
+
+<https://www.wikidata.org/wiki/Q110415677>
+  # Georg IV. von der Leyen, zu Eltz und Leiningen, d. 1611~
+  gen:father <https://www.wikidata.org/wiki/Q110415678> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110415679> .
+  # oo Katharina von Eltz, d. 1598-08-24a, daughter of Heinrich von Eltz, Herr zu Pirmont und Rübenach, d. 1557 and oo 1551-06-10 Johanna von Elter
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110415677> , <https://www.wikidata.org/wiki/Q110415680> ;
+	gen:startDate "1582-02-16" .
+<https://www.wikidata.org/wiki/Q110508223>
+  # Damian von der Leyen, 1567 - 1636-03-17/1639
+  gen:father <https://www.wikidata.org/wiki/Q110508225> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110508227> .
+  # oo Anna Katharina Waldbott von Bassenheim, 1587-12-22 - 1666-08-06
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110508223> , <https://www.wikidata.org/wiki/Q110508229> ;
+	gen:startDate "1609-06-15" .
+
+<https://www.wikidata.org/wiki/Q110415676>
+  # Hans Kaspar von der Leyen zu Gondorf, 1592 - 1640-01-19
+  gen:father <https://www.wikidata.org/wiki/Q110415677> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110415680> .
+  # oo Katharina von Metternich (runkel.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110415676> , <https://www.wikidata.org/wiki/Q110415684> .
+<https://www.wikidata.org/wiki/Q110539491>
+  owl:sameAs <https://www.wikidata.org/wiki/Q19245609> ;
+  # Hugo Ernst von der Leyen Freiherr zu Adendorf, 1617 - 1665-05-01
+  gen:father <https://www.wikidata.org/wiki/Q110508223> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110508229> .
+  # oo Sophia Maria Quad (waldbott.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110539491> , <https://www.wikidata.org/wiki/Q110539495> ;
+	gen:startDate "1652-01-10" .
+<https://www.wikidata.org/wiki/Q1636147>
+  # Karl Kaspar Freiherr von der Leyen, 1618-12-18 - 1676-06-01
+  # Erzbischof und Kurfürst von Trier 1652-03-12/-09-15
+  gen:father <https://www.wikidata.org/wiki/Q110508223> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110508229> .
+<https://www.wikidata.org/wiki/Q73830>
+  # Damian Hartard Freiherr von der Leyen, 1624-03-12 - 1678-12-06
+  # Erzbischof und Kurfürst von Mainz 1676-02-24/-09-08
+  # Bischof von Worms 1676-10-31
+  gen:father <https://www.wikidata.org/wiki/Q110508223> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110508229> .
+<https://www.wikidata.org/wiki/Q110508221>
+  # Anna Antonetta von der Leyen, 1626 - 1659-09-18
+  gen:father <https://www.wikidata.org/wiki/Q110508223> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110508229> .
+  # oo 1644-01-31 Johann Kämmerer von Worms genannt Dalberg, 1618~ - 1670-01-13, https://www.wikidata.org/wiki/Q110508219
+
+<https://www.wikidata.org/wiki/Q110415674>
+  # Anna Catharina Freiin von der Leyen, 1618-07-01 - 1658-03-12
+  gen:father <https://www.wikidata.org/wiki/Q110415676> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110415684> .
+  # oo 1645-12-23 Friedrich Freiherr von Fürstenberg, 1618-10-31 - 1662-07-07, https://www.wikidata.org/wiki/Q1463718 (wolff.ttl)
 <https://www.wikidata.org/wiki/Q15098326>
   # Johann Karl Kaspar Graf von der Leyen, 1655-07-19 - 1739-12-30
   # Graf von der Leyen von und zu Hohengeroldseck 1711
-  gen:father <https://www.wikidata.org/wiki/Q110539491> ; # or https://www.wikidata.org/wiki/Q19245609 Hugo Ernst von der Leyen Freiherr zu Adendorf
-  gen:mother <https://www.wikidata.org/wiki/Q110539495> . # Sophia Maria Quad
+  gen:father <https://www.wikidata.org/wiki/Q110539491> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110539495> .
   # oo Maria Sophia Gräfin von Schönborn, 1670-09-11 - 1742-09-16
   []
     gen:spouse <https://www.wikidata.org/wiki/Q15098326> , <https://www.wikidata.org/wiki/Q110539516> ;
@@ -1557,7 +1891,7 @@
   # Georg Prinz von der Leyen und zu Hohengeroldseck, b. 1992-01-27
   gen:father <https://www.wikidata.org/wiki/Q76342058> ;
   gen:mother <https://www.wikidata.org/wiki/Q76342060> .
-  # oo (rel 2015-09-06) Nathalie Gräfin zu Konigsegg-Aulendorf, b. 1991-11-22
+  # oo (rel 2015-09-06) Nathalie Gräfin zu Königsegg-Aulendorf, b. 1991-11-22
   []
     gen:spouse <#Georg_von_der_Leyen-Hohengeroldseck> , <https://www.wikidata.org/wiki/Q75368361> ;
 	gen:startDate "2015-08-01" .
@@ -1565,36 +1899,47 @@
 # ====
 
 # ----
+#<https://www.wikidata.org/wiki/Q101345997> 
+  # Johann Georg von Ostein, 1579~ - 1635
+  # oo Agnes Faust von Stromberg, daughter of Salentin Faust von Stromberg and oo Magdalena von Schönau
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q101345997> , <https://www.wikidata.org/wiki/Q101346012> ;
+	gen:startDate "1602-10-07" .
+
+<https://www.wikidata.org/wiki/Q110540782>
+  # Johann Jacob von Ostein, d. 1664-11-13
+  gen:father <https://www.wikidata.org/wiki/Q101345997> ;
+  gen:mother <https://www.wikidata.org/wiki/Q101346012> .
+  # oo Anna Magdalena Kämmerer von Worms genannt Dalberg, Heiress of Rüdesheim, d. 1672-04-07
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110540782> , <https://www.wikidata.org/wiki/Q110540786> ;
+	gen:startDate "1641~" .
+<https://www.wikidata.org/wiki/Q101345953>
+  # Maria Magdalena von Ostein
+  gen:father <https://www.wikidata.org/wiki/Q101345997> ;
+  gen:mother <https://www.wikidata.org/wiki/Q101346012> .
+  # oo 1632-07-06 Johann Christoph Freiherr von Stadion, 1610-09-15 - 1666, https://www.wikidata.org/wiki/Q94865461
+
+<https://www.wikidata.org/wiki/Q55684375>
+  # Johann Franz Sebastian Graf von Ostein, 1652-11-04 - 1718-06-24
+  gen:father <https://www.wikidata.org/wiki/Q110540782> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110540786> .
+  # oo Anna Charlotte Maria Gräfin von Schönborn, 1671-10-03 - 1746-02-07
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q55684375> , <https://www.wikidata.org/wiki/Q1919128> ;
+	gen:startDate "1687-01-12" .
+
+<https://www.wikidata.org/wiki/Q110383473>
+  # Maria Antonia Franziska Gräfin von Ostein, 1710-06-08 - 1788-10-08
+  gen:father <https://www.wikidata.org/wiki/Q55684375> ;
+  gen:mother <https://www.wikidata.org/wiki/Q1919128> .
+  # oo 1726~ Rudolf Johann Graf Waldbott von Bassenheim, 1686 - 1731-01-29, https://www.wikidata.org/wiki/Q110383469
+
+# ----
 <https://www.wikidata.org/wiki/Q75369422>
   # Donna Ernestina Ruffo, 1880-10-18 - 1965-08-19
   gen:father <https://www.wikidata.org/wiki/Q76342063> . # Don Antonio Ruffo, 10° Principe della Scaletta
   # oo 1913-10-29 Erwein Graf von Schönborn-Wiesentheid, 1877-10-06 - 1942-11-12, https://www.wikidata.org/wiki/Q75369420
-
-# ----
-<https://www.wikidata.org/wiki/Q2086636>
-  # Philipp Christian Paul Graf von Berckheim, 1883-01-08 - 1945-11-13
-  gen:father <https://www.wikidata.org/wiki/Q2284115> . # Siegmund Theodor Friedrich Graf von Berckheim, 1851-03-23 - 1927-07-08
-  # and oo 1880-06-19 Adolphine Maria Huberta Gabriele Freiin Wambolt von Umstadt, 1859-01-28 - 1919-06-30
-  # oo Irene Gräfin von Schönborn-Wiesentheid, 1895-07-17 - 1969-12-21
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q2086636> , <https://www.wikidata.org/wiki/Q75304841> ;
-	gen:startDate "1918-09-25" ;
-	gen:divorceDate "1938" .
-<#Christian_von_Berckheim>
-  # Christian Theodor Anton Freiherr von Berckheim, 1890-07-03 - 1925-09-01
-  gen:father <https://www.wikidata.org/wiki/Q2284115> .
-  # and Adolphine Freiin Wambolt von Umstadt
-  # oo Maria Katharina Gräfin von Schönborn-Wiesentheid, 1896-09-08 - 1994-05-07
-  []
-    gen:spouse <#Christian_von_Berckheim> , <https://www.wikidata.org/wiki/Q76291754> ;
-	gen:startDate "1918-03-19" ;
-	gen:divorceDate "1924" .
-
-<#Marietta_von_Berckheim>
-  # Marietta Rosario Margarethe Adolfine Irene Philippine Gisela Freiin von Berckheim, b. 1920-05-07
-  gen:father <https://www.wikidata.org/wiki/Q2086636> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75304841> .
-  # oo 1960-12-20 Bodo von Bruemmer, 1911 - 2016-11-26, https://www.wikidata.org/wiki/Q75438255 (hatzfeld.ttl)
 
 # ----
 <https://www.wikidata.org/wiki/Q75396470>
