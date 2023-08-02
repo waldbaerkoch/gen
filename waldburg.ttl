@@ -437,6 +437,11 @@
   # Froben Freiherr von Waldburg zu Zeil, 1569-08-19 - 1614-05-04
   gen:father <https://www.wikidata.org/wiki/Q66682468> ;
   gen:mother <https://www.wikidata.org/wiki/Q110152677> .
+<#Johanna_von_Waldburg-Zeil-Wolfegg>
+  # Johanna Freiin von Waldburg-Zeil-Wolfegg, d. 1641-05-08
+  gen:father <https://www.wikidata.org/wiki/Q66682468> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110152677> .
+  # oo 1593-05-16 Wolf Veit I. Freiherr von Maxlrain, d. 1616-12-10, #Wolf_Veit_I._von_Maxlrain
 
 
 # Waldburg-Wolfegg
@@ -844,11 +849,11 @@
   # in Zeil 1595
   gen:father <https://www.wikidata.org/wiki/Q66682468> ;
   gen:mother <https://www.wikidata.org/wiki/Q110152677> .
-  # oo Katharina Johanna von Toerring, d. 1593
+  # oo Katharina Johanna von Toerring, 1577 - 1593
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q55238198> , <#Katharina_von_Toerring> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q55238198> , <toerring.ttl#Katharina_von_Toerring> ;
 	gen:startDate "1592" .
-  # oo Anna Maria Freiin von Toerring, 1578 - 1636
+  # oo Anna Maria Freiin von Toerring, 1578 - 1636-11-25
   []
     gen:spouse <https://www.wikidata.org/wiki/Q55238198> , <https://www.wikidata.org/wiki/Q110367087> ;
 	gen:startDate "1596" .
@@ -1114,7 +1119,7 @@
   # Maria Elisabeth Therese Eleonore Walburga Monika Gräfin von Waldburg zu Zeil und Trauchburg, b. 1954-01-06
   gen:father <https://www.wikidata.org/wiki/Q75392956> ;
   gen:mother <https://www.wikidata.org/wiki/Q75392954> .
-  # oo 1980-04-30 (rel 1980-05-23) Hans-Kaspar Graf zu Toerring-Jettenbach, b. 1953-07-22, https://www.wikidata.org/wiki/Q75294290 (wittelsbacher.ttl)
+  # oo 1980-04-30 (rel 1980-05-23) Hans-Kaspar Graf zu Toerring-Jettenbach, b. 1953-07-22, https://www.wikidata.org/wiki/Q75294290
 
 <https://www.wikidata.org/wiki/Q22694533>
   # Maria _Erich_ Wunibald Aloysius Georg Fürst von Waldburg zu Zeil und Trauchburg, b. 1962-11-21
@@ -1858,9 +1863,9 @@
   # Maximilian Graf Khuen von Belasi, Graf zu Lichtenberg, Freiherr von Neuen-Lempach, 1608 - 1647/1659
   gen:father <https://www.wikidata.org/wiki/Q110152684> ;
   gen:mother <https://www.wikidata.org/wiki/Q110152697> .
-  # oo Barbara Gräfin von Törring, 1619-03-17 - 1659-10-13
+  # oo Barbara Gräfin von Toerring, 1619-03-17 - 1659-10-13
   []
-    gen:spouse <#Maximilian_Khuen> , <#Barbara_von_Törring> ;
+    gen:spouse <#Maximilian_Khuen> , <toerring.ttl#Barbara_von_Toerring> ;
 	gen:startDate "1640-11-21" .
 <https://www.wikidata.org/wiki/Q109686933>
   # Susanna Gräfin Khuen von Belasi, 1610 - 1669-11-15
@@ -1889,7 +1894,7 @@
 <#Hans_Georg_Khuen>
   # Hans Georg Graf Khuen von Belasi, 1641 - 1690-08-25
   gen:father <#Maximilian_Khuen> ;
-  gen:mother <#Barbara_von_Törring> .
+  gen:mother <toerring.ttl#Barbara_von_Toerring> .
   # oo Eleonore Khuen von Auer, 1642 - 1671/1675
   []
     gen:spouse <#Hans_Georg_Khuen> , <#Eleonore_Khuen> ;
@@ -2065,13 +2070,6 @@
   gen:father <https://www.wikidata.org/wiki/Q110370531> ; # Matthäus Freiherr von Annenberg
   gen:mother <https://www.wikidata.org/wiki/Q110370532> . # Maximiliana Freiin von Lamberg
   # oo 1614-08-31 Jakob Freiherr Khuen von Belasi, 1589-03-25 - 1639-09-21, https://www.wikidata.org/wiki/Q61912793
-
-# ----
-#<#Barbara_von_Törring>
-  # Barbara Gräfin von Törring, 1619-03-17 - 1659-10-13
-  # daughter of Ladislaus Oswald Graf von Törring und Tengling zum Stein, 1566-07-20 - 1638-12-12
-  # and oo 1613-05-13 Maria Katharina Freiin von Gumppenberg, d. 1662-03-25
-  # oo 1640-11-21 Maximilian Graf Khuen von Belasi, Graf zu Lichtenberg, Freiherr von Neuen-Lempach, 1608 - 1647/1659, #Maximilian_Khuen
 
 # ----
 # 3. Hauptlinie
@@ -2516,18 +2514,27 @@
   # oo Georg II. Truchsess von Waldburg-Zeil und Waldsee, d. 1482-03-10, https://www.wikidata.org/wiki/Q93521333
 
 # ----
+#<#Wolf_Veit_I._von_Maxlrain>
+  # Wolf Veit I. Freiherr von Maxlrain, d. 1616-12-10
+  # son of Wolf Wilhelm Freiherr von Maxlrain, 1527b - 1595-07
+  # and oo 1560-02-25 Johanna Perner, d. 1606-06-29a
+  # oo Johanna Freiin von Waldburg-Zeil-Wolfegg, d. 1641-05-08
+  []
+    gen:spouse <#Wolf_Veit_I._von_Maxlrain> , <#Johanna_von_Waldburg-Zeil-Wolfegg> ;
+	gen:startDate "1593-05-16" .
+
+<#Johanna_Renata_von_Maxlrain>
+  # Johanna Renata Freiin von Maxlrain, 1595~ - 1643-02-10
+  gen:father <#Wolf_Veit_I._von_Maxlrain> ;
+  gen:mother <#Johanna_von_Waldburg-Zeil-Wolfegg> .
+  # oo 1613-01-20 Hans Sigmund Graf von Toerring und Tengling, 1582 - 1636-11-07, toerring.ttl#Hans_Sigmund_Graf_von_Toerring
+
+# ----
 <https://www.wikidata.org/wiki/Q75346686>
   # Birgit Riedesel Freiin zu Eisenbach, 1942-03-12 - 2020
   gen:father <https://www.wikidata.org/wiki/Q75346688> ; # Max Moritz Riedesel Freiherr zu Eisenbach
   gen:mother <https://www.wikidata.org/wiki/Q75346689> . # Claire Kuck
   # oo 1968-08-31 (rel 1968-09-14) Gebhard Graf von Waldburg zu Wolfegg und Waldsee, 1930-12-08 - 2013-11-14, https://www.wikidata.org/wiki/Q75346685
-
-# ----
-<https://www.wikidata.org/wiki/Q110367087>
-  # Anna Maria Freiin von Toerring, 1578 - 1636
-  gen:father <https://www.wikidata.org/wiki/Q110367088> ; # Hans Veit Freiherr von Törring zu Jettenbach zu Tussling, Jettenbach und Mödling
-  gen:mother <https://www.wikidata.org/wiki/Q110367095> . # Anna Sibylla Freiin von Lamberg
-  # oo 1596 Froben Freiherr von Waldburg zu Zeil, 1569-08-19 - 1614-05-04, https://www.wikidata.org/wiki/Q55238198
 
 # ----
 <https://www.wikidata.org/wiki/Q55905551>
