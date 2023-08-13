@@ -3,33 +3,35 @@
 @prefix wdata: <https://www.wikidata.org/wiki/> .
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
 
-#<#Edward_Bruce,_1st_of_Blairhall>
+#<https://www.wikidata.org/wiki/Q75500962>
   # Edward Bruce, 1st of Blairhall, 1505 - 1565
   # son of Sir David Bruce, 7th of Clackmannan
   # and Janet Blackadder
   # oo Alison Reid, daughter of William Reid
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75500962> , <https://www.wikidata.org/wiki/Q75500963> .
 
-<#Robert_Bruce,_2nd_of_Blairhall>
+<https://www.wikidata.org/wiki/Q75654106>
   # Robert Bruce, 2nd of Blairhall
-  gen:father <#Edward_Bruce,_1st_of_Blairhall> .
-  # and Alison Reid
+  gen:father <https://www.wikidata.org/wiki/Q75500962> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75500963> .
   # oo Margaret Hamilton, d. 1614
   []
-    gen:spouse <#Robert_Bruce,_2nd_of_Blairhall> , <hamilton.ttl#Margaret_Hamilton_(died_1614)> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75654106> , <https://www.wikidata.org/wiki/Q75654111> ;
 	gen:startDate "1593" .
 <https://www.wikidata.org/wiki/Q5342040> # -> Bruce of Kinloss
   # Edward Bruce, 1st Baron Bruce of Kinlosse, 1548 - 1611-01-14
-  gen:father <#Edward_Bruce,_1st_of_Blairhall> .
-  # and Alison Reid
+  gen:father <https://www.wikidata.org/wiki/Q75500962> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75500963> .
 <https://www.wikidata.org/wiki/Q3101439> # -> Bruce of Carnock/Kincardine
   # Sir George, of Carnock, 1550~ - 1625-05-06
-  gen:father <#Edward_Bruce,_1st_of_Blairhall> .
-  # and Alison Reid
+  gen:father <https://www.wikidata.org/wiki/Q75500962> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75500963> .
 
 <https://www.wikidata.org/wiki/Q75510280>
   # Robert Bruce, of Blairhall, d. 1633a
-  gen:father <#Robert_Bruce,_2nd_of_Blairhall> ;
-  gen:mother <hamilton.ttl#Margaret_Hamilton_(died_1614)> .
+  gen:father <https://www.wikidata.org/wiki/Q75654106> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75654111> .
   # oo Katherine Preston (douglas.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75510280> , <https://www.wikidata.org/wiki/Q75510286> .
@@ -81,11 +83,11 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q9012407> , <leslie.ttl#Lady_Christian_Leslie_(died_1710)> ;
 	gen:startDate "1687-05" .
-<#Anne_Bruce>
+<https://www.wikidata.org/wiki/Q75510361>
   # Anne Bruce
   gen:father <https://www.wikidata.org/wiki/Q2634167> ;
   gen:mother <hope.ttl#Mary_Halkett> .
-  # oo Sir Thomas Hope of Craighall, 4th Baronet, d. 1686~, hope.ttl#Sir_Thomas_Hope_of_Craighall,_4th_Baronet
+  # oo Sir Thomas Hope of Craighall, 4th Baronet, d. 1686~, https://www.wikidata.org/wiki/Q75510382
   # oo Sir John Carstairs, of Kilconquhar
 
 <https://www.wikidata.org/wiki/Q75654107>
@@ -101,7 +103,7 @@
   # 1st Lord Kinloss 1602-02-02
   # 1st Baron Bruce of Kinlosse 1604-07-08
   # 1st Lord Bruce of Kinloss 1608-05-03
-  gen:father <#Edward_Bruce,_1st_of_Blairhall> .
+  gen:father <https://www.wikidata.org/wiki/Q75500962> .
   # and Alison Reid
   # oo Magdalene Clerk, d. 1630a, daughter of Alexander Clerk
 
@@ -244,7 +246,7 @@
 # Bruce of Carnock/Kincardine
 <https://www.wikidata.org/wiki/Q3101439>
   # Sir George, of Carnock, 1550~ - 1625-05-06
-  gen:father <#Edward_Bruce,_1st_of_Blairhall> .
+  gen:father <https://www.wikidata.org/wiki/Q75500962> .
   # and Alison Reid
   # oo Margaret Primrose, daughter of Archibald Primrose
 
