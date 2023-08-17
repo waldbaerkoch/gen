@@ -174,10 +174,12 @@
   # oo 1435 William Sinclair, 1st Earl of Caithness, 1405~ - 1480-05-21b, https://www.wikidata.org/wiki/Q3568958
 <https://www.wikidata.org/wiki/Q8007949> # -> Douglas of Drumlanrig
   # Sir William Douglas of Drumlanrig, d. 1427
-  gen:father <https://www.wikidata.org/wiki/Q586953> .
-<#Archibald_Douglas,_1st_of_Cavers> # -> Douglas of Cavers
+  gen:father <https://www.wikidata.org/wiki/Q586953> ; # illegitimate
+  gen:mother <https://www.wikidata.org/wiki/Q110638005> . # Margaret
+<https://www.wikidata.org/wiki/Q75389772> # -> Douglas of Cavers
   # Archibald Douglas, 1st of Cavers, b. 1373a
-  gen:father <https://www.wikidata.org/wiki/Q586953> .
+  gen:father <https://www.wikidata.org/wiki/Q586953> ;
+  gen:mother <https://www.wikidata.org/wiki/Q105826451> .
 <https://www.wikidata.org/wiki/Q2578481>
   gen:name "William Douglas, 2nd Earl of Angus"@en ;
   gen:birthDate "1398-02-24" ;
@@ -186,7 +188,7 @@
   gen:mother <https://www.wikidata.org/wiki/Q75385107> .
   # oo Margaret Hay, d. 1484-04-22a
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q2578481> , <hay.ttl#Margaret_Hay_(died_1484)> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q2578481> , <https://www.wikidata.org/wiki/Q75388475> ;
 	gen:startDate "1425" .
 <https://www.wikidata.org/wiki/Q75388478>
   # Lady Elizabeth Douglas
@@ -212,30 +214,30 @@
 <https://www.wikidata.org/wiki/Q1680289>
   # James Douglas, 3rd Earl of Angus, 1426 - 1446
   gen:father <https://www.wikidata.org/wiki/Q2578481> ;
-  gen:mother <hay.ttl#Margaret_Hay_(died_1484)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75388475> .
 <https://www.wikidata.org/wiki/Q359632>
   # George Douglas, 4th Earl of Angus, 1427~ - 1463-03-12
   gen:father <https://www.wikidata.org/wiki/Q2578481> ;
-  gen:mother <hay.ttl#Margaret_Hay_(died_1484)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75388475> .
   # oo Isabel Sibbald, d. 1497-02-21b, daughter of Sir John Sibbald
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q359632> , <#Isabel_Sibbald> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q359632> , <https://www.wikidata.org/wiki/Q61466215> ;
 	gen:startDate "1446b" .
 <https://www.wikidata.org/wiki/Q8007948>
   # William Douglas of Cluny, 1428~ - 1475~
   gen:father <https://www.wikidata.org/wiki/Q2578481> ;
-  gen:mother <hay.ttl#Margaret_Hay_(died_1484)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75388475> .
 <https://www.wikidata.org/wiki/Q75389894>
   # Lady Helen Douglas, d. 1486-11-20a
   gen:father <https://www.wikidata.org/wiki/Q2578481> ;
-  gen:mother <hay.ttl#Margaret_Hay_(died_1484)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75388475> .
   # oo (1) William Graham, 2nd Lord Graham, d. 1471, https://www.wikidata.org/wiki/Q21300144
   # oo (2) James Ogilvy, 1st Lord Ogilvy of Airlie, 1430~ - 1504-09-25b, https://www.wikidata.org/wiki/Q75237281
 
 <https://www.wikidata.org/wiki/Q633145>
   # Archibald Douglas, 5th Earl of Angus, 1453 - 1513-10
   gen:father <https://www.wikidata.org/wiki/Q359632> ;
-  gen:mother <#Isabel_Sibbald> .
+  gen:mother <https://www.wikidata.org/wiki/Q61466215> .
   # oo Elizabeth Boyd, d. 1497-02-21b
   []
     gen:spouse <https://www.wikidata.org/wiki/Q633145> , <https://www.wikidata.org/wiki/Q61466197> ;
@@ -244,14 +246,16 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q633145> , <https://www.wikidata.org/wiki/Q75388599> ;
 	gen:startDate "1500-06-01" .
-<#Lady_Janet_Douglas>
+<https://www.wikidata.org/wiki/Q75389898>
   # Lady Janet Douglas
   gen:father <https://www.wikidata.org/wiki/Q359632> ;
-  gen:mother <#Isabel_Sibbald> .
-  # oo David Scott of Buccleuch, younger, d. 1491b, scott.ttl#David_Scott_of_Buccleuch,_younger
-<#Margaret_Douglas_1>
+  gen:mother <https://www.wikidata.org/wiki/Q61466215> .
+  # oo 1472 David Scott of Buccleuch, younger, d. 1491b, https://www.wikidata.org/wiki/Q75389900
+  # oo 1492-10~ George Leslie, 2nd Earl of Rothes, d. 1513-03-31b, https://www.wikidata.org/wiki/Q5541685
+<https://www.wikidata.org/wiki/Q75451715>
   # Margaret Douglas
-  gen:father <https://www.wikidata.org/wiki/Q359632> .
+  gen:father <https://www.wikidata.org/wiki/Q359632> ;
+  gen:mother <https://www.wikidata.org/wiki/Q61466215> .
   # oo 1479 Sir Duncan Campbell, 2nd of Glenorchy, 1443~ - 1513-09-09, https://www.wikidata.org/wiki/Q18576062
 
 <https://www.wikidata.org/wiki/Q5262858>
@@ -260,7 +264,7 @@
   gen:mother <https://www.wikidata.org/wiki/Q61466197> .
   # oo Elizabeth Drummond, d. 1514-08-21a
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q5262858> , <drummond.ttl#Elizabeth_Drummond_(died_1514)> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q5262858> , <https://www.wikidata.org/wiki/Q61268442> ;
 	gen:startDate "1488" .
 <https://www.wikidata.org/wiki/Q75390052>
   # Lady Marjory/Mariot/Marion Douglas, 1470 - 1541-03-06
@@ -271,6 +275,10 @@
   # Sir William Douglas of Glenbervie, 1471 - 1513-09-09
   gen:father <https://www.wikidata.org/wiki/Q633145> ;
   gen:mother <https://www.wikidata.org/wiki/Q61466197> .
+  # oo Elizabeth Auchinleck
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8007950> , <https://www.wikidata.org/wiki/Q75389928> ;
+	gen:startDate "1501" .
 <https://www.wikidata.org/wiki/Q389096>
   # Gavin Douglas, b. 1474 - 1522
   gen:father <https://www.wikidata.org/wiki/Q633145> ;
@@ -283,7 +291,7 @@
 <https://www.wikidata.org/wiki/Q633149>
   # Archibald Douglas, 6th Earl of Angus, 1489 - 1557
   gen:father <https://www.wikidata.org/wiki/Q5262858> ;
-  gen:mother <drummond.ttl#Elizabeth_Drummond_(died_1514)> .
+  gen:mother <https://www.wikidata.org/wiki/Q61268442> .
   # oo 1509 Margaret or Mary Hepburn, d. 1513~
   # oo Margaret Tudor, 1489-11-28 - 1541-10-18 (capet.ttl)
   []
@@ -296,33 +304,38 @@
 <https://www.wikidata.org/wiki/Q5538609>
   # George Douglas of Pittendreich, d. 1552
   gen:father <https://www.wikidata.org/wiki/Q5262858> ;
-  gen:mother <drummond.ttl#Elizabeth_Drummond_(died_1514)> .
+  gen:mother <https://www.wikidata.org/wiki/Q61268442> .
   # oo Elizabeth Douglas, the daughter and heir of David Douglas of Pittendreich
-<#Elizabeth_Douglas>
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5538609> , <https://www.wikidata.org/wiki/Q75389855> .
+<https://www.wikidata.org/wiki/Q75388617>
   # Elizabeth Douglas
   gen:father <https://www.wikidata.org/wiki/Q5262858> ;
-  gen:mother <drummond.ttl#Elizabeth_Drummond_(died_1514)> .
-  # oo John Hay, 3rd Lord Hay of Yester, d. 1543
+  gen:mother <https://www.wikidata.org/wiki/Q61268442> .
+  # oo John Hay, 3rd Lord Hay of Yester, d. 1543, https://www.wikidata.org/wiki/Q70010478
 <https://www.wikidata.org/wiki/Q6153306>
   # Janet Douglas, 1498 - 1537-07-17
   gen:father <https://www.wikidata.org/wiki/Q5262858> ;
-  gen:mother <drummond.ttl#Elizabeth_Drummond_(died_1514)> .
+  gen:mother <https://www.wikidata.org/wiki/Q61268442> .
   # oo J1527-12-12b ohn Lyon, 6th Lord Glamis, d. 1528, https://www.wikidata.org/wiki/Q16200022
   # oo 1535~ Archibald Campbell, 1st of Skipness, d. 1537-07-18, https://www.wikidata.org/wiki/Q75389925
-<#Margaret_Douglas_2>
+<https://www.wikidata.org/wiki/Q75389926>
   # Margaret Douglas
   gen:father <https://www.wikidata.org/wiki/Q5262858> ;
-  gen:mother <drummond.ttl#Elizabeth_Drummond_(died_1514)> .
+  gen:mother <https://www.wikidata.org/wiki/Q61268442> .
   # oo James Douglas, 7th of Drumlanrig, d. 1578, https://www.wikidata.org/wiki/Q6132756
-<#Alison_Douglas>
+<https://www.wikidata.org/wiki/Q75389917>
   # Alison Douglas
   gen:father <https://www.wikidata.org/wiki/Q5262858> ;
-  gen:mother <drummond.ttl#Elizabeth_Drummond_(died_1514)> .
-  # oo Sir David Home, 4th of Wedderburn, d. 1524, home.ttl#Sir_David_Home,_4th_of_Wedderburn
+  gen:mother <https://www.wikidata.org/wiki/Q61268442> .
+  # oo Sir David Home, 4th of Wedderburn, d. 1524, https://www.wikidata.org/wiki/Q75389920
 <https://www.wikidata.org/wiki/Q4786298>
   # Sir Archibald Douglas of Glenbervie, 1513 - 1570-09-18
   gen:father <https://www.wikidata.org/wiki/Q8007950> ;
-  gen:mother <#Elizabeth_Auchinleck> .
+  gen:mother <https://www.wikidata.org/wiki/Q75389928> .
+  # oo Lady Agnes Keith
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4786298> , <https://www.wikidata.org/wiki/Q75260936> .
 
 <https://www.wikidata.org/wiki/Q433161>
   # Margaret Douglas, 1515-10-08 - 1578-03-07
@@ -339,21 +352,22 @@
 <https://www.wikidata.org/wiki/Q5233044>
   # David Douglas, 7th Earl of Angus, 1515 - 1558
   gen:father <https://www.wikidata.org/wiki/Q5538609> ;
-  gen:mother <#Elizabeth_Douglas_of_Pittendreich> .
+  gen:mother <https://www.wikidata.org/wiki/Q75389855> .
   # oo Margaret Hamilton, 1525 - 1596-05-25
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5233044> , <https://www.wikidata.org/wiki/Q75389858> .
 <https://www.wikidata.org/wiki/Q1266779>
   # James Douglas, 4th Earl of Morton, 1516 - 1581-06-02
   gen:father <https://www.wikidata.org/wiki/Q5538609> ;
-  gen:mother <#Elizabeth_Douglas_of_Pittendreich> .
-  # oo 1543 Lady Elizabeth Douglas
+  gen:mother <https://www.wikidata.org/wiki/Q75389855> .
+  # oo Lady Elizabeth Douglas
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q1266779> , <#Elizabeth_Douglas,_Countess_of_Morton> .
+    gen:spouse <https://www.wikidata.org/wiki/Q1266779> , <https://www.wikidata.org/wiki/Q75389911> ;
+	gen:startDate "1543" .
 <https://www.wikidata.org/wiki/Q2578484>
   # William Douglas, 9th Earl of Angus, 1532 - 1591-07-01
   gen:father <https://www.wikidata.org/wiki/Q4786298> ;
-  gen:mother <#Agnes_Keith> .
+  gen:mother <https://www.wikidata.org/wiki/Q75260936> .
   # oo Egidia Gille Graham, daughter of Sir Robert Graham of Morphie
   []
     gen:spouse <https://www.wikidata.org/wiki/Q2578484> , <https://www.wikidata.org/wiki/Q75389885> .
@@ -366,11 +380,11 @@
   gen:mother <https://www.wikidata.org/wiki/Q75389858> .
   # oo Lady Mary Erskine, d. 1575-05-03
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q360323> , <erskine.ttl#Lady_Mary_Erskine_(died_1575)> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q360323> , <https://www.wikidata.org/wiki/Q75389869> ;
 	gen:startDate "1573-06-13" .
   # oo Lady Margaret Leslie
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q360323> , <leslie.ttl#Lady_Margaret_Leslie> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q360323> , <https://www.wikidata.org/wiki/Q75389874> ;
 	gen:startDate "1575-12-25" ;
 	gen:divorceDate "1587-07-12" .
   # oo Jean Lyon
@@ -393,9 +407,10 @@
   # William Douglas, 10th Earl of Angus, 1552 - 1611-03-03
   gen:father <https://www.wikidata.org/wiki/Q2578484> ;
   gen:mother <https://www.wikidata.org/wiki/Q75389885> .
-  # oo 1585 Lady Elizabeth Oliphant
+  # oo Elizabeth Oliphant (hay.ttl)
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q1677658> , <#Lady_Elizabeth_Oliphant> .
+    gen:spouse <https://www.wikidata.org/wiki/Q1677658> , <https://www.wikidata.org/wiki/Q75389788> ;
+	gen:startDate "1585-04-12" .
 <https://www.wikidata.org/wiki/Q75390009>
   # Lady Margaret Douglas, b. 1552~
   gen:father <https://www.wikidata.org/wiki/Q2578484> ;
@@ -411,46 +426,37 @@
   # 11th Earl of Angus 1611-03-03
   # Marquess of Douglas 1633
   gen:father <https://www.wikidata.org/wiki/Q1677658> ;
-  gen:mother <#Lady_Elizabeth_Oliphant> .
+  gen:mother <https://www.wikidata.org/wiki/Q75389788> .
   # oo Margaret Hamilton, d. 1623-09-11
   []
     gen:spouse <https://www.wikidata.org/wiki/Q663154> , <https://www.wikidata.org/wiki/Q75389792> ;
 	gen:startDate "1601" .
   # oo Lady Mary Gordon, d. 1674
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q663154> , <gordon.ttl#Lady_Mary_Gordon_(died_1674)> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q663154> , <https://www.wikidata.org/wiki/Q75389707> ;
 	gen:startDate "1632-09-15" .
-<https://www.wikidata.org/wiki/Q6132753>
+<https://www.wikidata.org/wiki/Q6132753> # -> Lord Mordington
   # James Douglas, 1st Lord Mordington, 1591 - 1656-02-11
-  # Lord Mordington 1641
   gen:father <https://www.wikidata.org/wiki/Q1677658> ;
-  gen:mother <#Lady_Elizabeth_Oliphant> .
-  # oo Lady Anne Oliphant, daughter of Laurence Oliphant, 5th Lord Oliphant
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q6132753> , <#Lady_Anne_Oliphant> ;
-	gen:startDate "1624" .
-  # oo Lady Elizabeth Hay
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q6132753> , <https://www.wikidata.org/wiki/Q75390854> ;
-	gen:startDate "1643-05-20b" .
-<#Sir_Francis_Douglas_of_Sandilands>
+  gen:mother <https://www.wikidata.org/wiki/Q75389788> .
+<https://www.wikidata.org/wiki/Q75389988>
   # Sir Francis Douglas of Sandilands, b. 1593
   gen:father <https://www.wikidata.org/wiki/Q1677658> ;
-  gen:mother <#Lady_Elizabeth_Oliphant> .
-<#Lady_Catherine_Douglas_(born_1595)>
+  gen:mother <https://www.wikidata.org/wiki/Q75389788> .
+<https://www.wikidata.org/wiki/Q75389989>
   # Lady Catherine Douglas, b. 1595
   gen:father <https://www.wikidata.org/wiki/Q1677658> ;
-  gen:mother <#Lady_Elizabeth_Oliphant> .
+  gen:mother <https://www.wikidata.org/wiki/Q75389788> .
   # oo Sir Andrew Kerr
 <https://www.wikidata.org/wiki/Q75389992)>
   # Lady Mary Douglas, b. 1597
   gen:father <https://www.wikidata.org/wiki/Q1677658> ;
-  gen:mother <#Lady_Elizabeth_Oliphant> .
+  gen:mother <https://www.wikidata.org/wiki/Q75389788> .
   # oo 1616a Alexander Livingstone, 2nd Earl of Linlithgow, 1583~ - 1648-06-11a/-12-10b, https://www.wikidata.org/wiki/Q66722186 (livingston.ttl)
-<#Lady_Elizabeth_Douglas_(born_1599)>
+<https://www.wikidata.org/wiki/Q75389993>
   # Lady Elizabeth Douglas, b. 1599
   gen:father <https://www.wikidata.org/wiki/Q1677658> ;
-  gen:mother <#Lady_Elizabeth_Oliphant> .
+  gen:mother <https://www.wikidata.org/wiki/Q75389788> .
   # oo Sir John Campbell, of Cawdor, 1576~ - 1642~, https://www.wikidata.org/wiki/Q75389995
 
 <https://www.wikidata.org/wiki/Q633128>
@@ -464,7 +470,7 @@
 	gen:startDate "1628" .
   # oo Lady Jean Wemyss, 1629-06-19 - 1715-01-05
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q633128> , <wemyss.ttl#Lady_Jean_Wemyss> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q633128> , <https://www.wikidata.org/wiki/Q75389802> ;
 	gen:startDate "1649-04-26" .
 <https://www.wikidata.org/wiki/Q75389964>
   # Lady Grizel Douglas, b. 1616-04-14
@@ -492,58 +498,48 @@
   # oo 1635-03-23 William Carmichael, Master of Carmichael, 1620b - 1657-08, https://www.wikidata.org/wiki/Q75389966
 <https://www.wikidata.org/wiki/Q4896>
   # William Douglas-Hamilton, Duke of Hamilton, 1634-12-24 - 1694-04-18
-  # Earl of Selkirk 1646 - 1688
-  # Duke of Hamilton 1660
+  # William Douglas
+  # William Douglas-Hamilton 1660-09-20
+  # 1st Earl of Selkirk [Scotland], 1st Lord Daer and Shortcleuch [Scotland] 1646-08-04 - 1688-10-06
+  # styled Duke of Hamilton 1660-09-20
   gen:father <https://www.wikidata.org/wiki/Q663154> ;
-  gen:mother <gordon.ttl#Lady_Mary_Gordon_(died_1674)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75389707> .
   # oo 1656-04-29 Anne Hamilton, 3rd Duchess of Hamilton, 1631-01-06/1632-01-16 - 1716-10-17 -> hamilton.ttl
   []
     gen:spouse <https://www.wikidata.org/wiki/Q4896> , <https://www.wikidata.org/wiki/Q529415> .
 <https://www.wikidata.org/wiki/Q5538593>
   # George Douglas, 1st Earl of Dumbarton, 1635 - 1692-03-20
-  # Earl of Dumbarton 1675
+  # 1st Earl of Dunbarton [Scotland], 1st Lord Douglas of Ettrick [Scotland] 1675-03-09
   gen:father <https://www.wikidata.org/wiki/Q663154> ;
-  gen:mother <gordon.ttl#Lady_Mary_Gordon_(died_1674)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75389707> .
   # oo Anne Wheatley, d. 1691-04-25, daughter of George Wheatley
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q5538593> , <#Anne_Wheatley> .
+    gen:spouse <https://www.wikidata.org/wiki/Q5538593> , <https://www.wikidata.org/wiki/Q75389969> .
 <https://www.wikidata.org/wiki/Q75388714>
   # Lady Henrietta Douglas, 1633~ - 1673-06-01
   gen:father <https://www.wikidata.org/wiki/Q663154> ;
-  gen:mother <gordon.ttl#Lady_Mary_Gordon_(died_1674)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75389707> .
   # oo 1645-05-29 James Johnstone, 1st Earl of Annandale and Hartfell, 1625 - 1672-07-17, hope.ttl#James_Johnstone,_1st_Earl_of_Annandale_and_Hartfell
 <https://www.wikidata.org/wiki/Q75389973>
   # Lady Catherine Douglas, b. 1629~
   gen:father <https://www.wikidata.org/wiki/Q663154> ;
-  gen:mother <gordon.ttl#Lady_Mary_Gordon_(died_1674)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75389707> .
   # oo Sir William Ruthven of Dunglas, https://www.wikidata.org/wiki/Q75389974
-<#Lady_Isabel_Douglas_(died_1691)>
+<https://www.wikidata.org/wiki/Q75389976>
   # Lady Isabel Douglas, 1642 - 1691-12-02
   gen:father <https://www.wikidata.org/wiki/Q663154> ;
-  gen:mother <gordon.ttl#Lady_Mary_Gordon_(died_1674)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75389707> .
   # oo 1657 William Douglas, 1st Duke of Queensberry, 1637 - 1695-03-28, https://www.wikidata.org/wiki/Q336126
-<#Lady_Jane_Douglas>
-  # Lady Jane Douglas
+<https://www.wikidata.org/wiki/Q75389977>
+  # Lady Jean Douglas
   gen:father <https://www.wikidata.org/wiki/Q663154> ;
-  gen:mother <gordon.ttl#Lady_Mary_Gordon_(died_1674)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75389707> .
   # oo 1670-01-10 James Drummond, 4th Earl of Perth, 1648 - 1716-05-11, https://www.wikidata.org/wiki/Q2679370
 <https://www.wikidata.org/wiki/Q75389979>
   # Lady Lucy Douglas, d. 1713-01-08
   gen:father <https://www.wikidata.org/wiki/Q663154> ;
-  gen:mother <gordon.ttl#Lady_Mary_Gordon_(died_1674)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75389707> .
   # oo 1668-05-23 Robert Maxwell, 4th Earl of Nithsdale, 1628 - 1683/1696, https://www.wikidata.org/wiki/Q42657553
-<https://www.wikidata.org/wiki/Q8007923>
-  # William Douglas, 2nd Lord Mordington, 1626-09-27 - 1677/1693
-  gen:father <https://www.wikidata.org/wiki/Q6132753> ;
-  gen:mother <#Lady_Anne_Oliphant> .
-  # oo Hon. Elizabeth Sempill (hamilton.ttl)
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q8007923> , <https://www.wikidata.org/wiki/Q76163712> .
-<#Anne_Douglas>
-  # Anne Douglas, d. 1688
-  gen:father <https://www.wikidata.org/wiki/Q6132753> ;
-  gen:mother <#Lady_Anne_Oliphant> .
-  # oo Robert Sempill, 7th Lord Sempill, d. 1675-01
 
 <https://www.wikidata.org/wiki/Q1680288>
   # James Douglas, 2nd Marquess of Douglas, 1646~ - 1700-02-25
@@ -551,45 +547,45 @@
   gen:mother <https://www.wikidata.org/wiki/Q75389799> .
   # oo Lady Barbara Erskine, d. 1690-08
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q1680288> , <erskine.ttl#Lady_Barbara_Erskine> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q1680288> , <https://www.wikidata.org/wiki/Q75389808> ;
 	gen:startDate "1670" .
   # oo Lady Mary Kerr, 1674 - 1736-01-22
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q1680288> , <kerr.ttl#Lady_Mary_Kerr_(died_1736)> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q1680288> , <https://www.wikidata.org/wiki/Q75389815> ;
 	gen:startDate "1692" .
 <https://www.wikidata.org/wiki/Q75389955>
   # Lady Margaret Douglas, 1651-09 - 1699-10
   gen:father <https://www.wikidata.org/wiki/Q633128> ;
-  gen:mother <wemyss.ttl#Lady_Jean_Wemyss> .
+  gen:mother <https://www.wikidata.org/wiki/Q75389802> .
   # oo 1686-08-03 Alexander Seton, 1st Viscount of Kingston, 1620-03-13 - 1691-10-21, https://www.wikidata.org/wiki/Q4720058
 <https://www.wikidata.org/wiki/Q4786287>
   # Archibald Douglas, 1st Earl of Forfar, 1653-05-03 - 1712-11-11
   # 1st Earl of Forfar 1661
   gen:father <https://www.wikidata.org/wiki/Q633128> ;
-  gen:mother <wemyss.ttl#Lady_Jean_Wemyss> .
+  gen:mother <https://www.wikidata.org/wiki/Q75389802> .
   # oo Robina Lockhart, d. 1741-03-20 (boyd.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q4786287> , <https://www.wikidata.org/wiki/Q75389946> .
 <https://www.wikidata.org/wiki/Q335625>
   # James Hamilton, 4th Duke of Hamilton, 1658-04-11 - 1712-11-15
-  # 4th Duke of Hamilton, Marquess of Clydesdale, Earl of Arran, etc
-  # Duke of Brandon, etc 1711
+  # 4th Duke of Hamilton, 4th Marquess of Clydesdale, 3rd Earl of Lanark, 3rd Lord Machansyre and Polmont, 4th Lord Aven and Innerdale, 4th Earl of Arran and Cambridge 1698-07-09
+  # 1st Duke of Brandon [Great Britain], 1st Baron of Dutton [Great Britain] 1711-09-10
   gen:father <https://www.wikidata.org/wiki/Q4896> ;
   gen:mother <https://www.wikidata.org/wiki/Q529415> .
   # oo Lady Anne Spencer, 1666-06-24 - 1690-07-02
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q335625> , <spencer.ttl#Lady_Anne_Spencer_(died_1690)> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q335625> , <https://www.wikidata.org/wiki/Q75385678> ;
 	gen:startDate "1687-01-05b" .
   # oo Hon. Elizabeth Gerard, 1680~ - 1744-02-13
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q335625> , <#Elizabeth_Gerard> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q335625> , <https://www.wikidata.org/wiki/Q75389650> ;
 	gen:startDate "1698-07-17" .
 <https://www.wikidata.org/wiki/Q50824042>
   # Lady Catherine Hamilton, 1662-10-24b - 1707-01-11
   gen:father <https://www.wikidata.org/wiki/Q4896> ;
   gen:mother <https://www.wikidata.org/wiki/Q529415> .
   # oo 1683-05-24 John Murray, 1st Duke of Atholl, 1660-02-24 - 1724-11-14, https://www.wikidata.org/wiki/Q331302
-<#Charles_Douglas,_2nd_Earl_of_Selkirk>
+<https://www.wikidata.org/wiki/Q56457928>
   # Charles Douglas, 2nd Earl of Selkirk, 1663-02-03 - 1739-03-13
   gen:father <https://www.wikidata.org/wiki/Q4896> ;
   gen:mother <https://www.wikidata.org/wiki/Q529415> .
@@ -601,7 +597,7 @@
   gen:mother <https://www.wikidata.org/wiki/Q529415> .
   # oo Lady Anne Kennedy, 1679b - 1700,
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q44838378> , <kennedy.ttl#Lady_Anne_Kennedy_(died_1700)> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q44838378> , <https://www.wikidata.org/wiki/Q75390160> ;
 	gen:startDate "1694-06-21a" .
   # oo 1701-03-22 Elizabeth, Lady Kennedy, née Hutchinson, 1677~ - 1734-03-10
 <https://www.wikidata.org/wiki/Q2558529>
@@ -613,22 +609,25 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q2558529> , <https://www.wikidata.org/wiki/Q275268> ;
 	gen:startDate "1695-11-25" .
-<#Lady_Susannah_Hamilton>
+<https://www.wikidata.org/wiki/Q75390220>
   # Lady Susannah Hamilton, 1667 - 1737-02-07
   gen:father <https://www.wikidata.org/wiki/Q4896> ;
   gen:mother <https://www.wikidata.org/wiki/Q529415> .
   # oo 1684-11-17a John Cochrane, 2nd Earl of Dundonald, 1660~ - 1690-05-16, https://www.wikidata.org/wiki/Q47035589
   # oo 1694~ Charles Hay, 3rd Marquess of Tweeddale, 1667-11-11~ - 1715-12-17, https://www.wikidata.org/wiki/Q42655850
-<#Lady_Margaret_Hamilton>
+<https://www.wikidata.org/wiki/Q75390221>
   # Lady Margaret Hamilton, d. 1731-12-06
   gen:father <https://www.wikidata.org/wiki/Q4896> ;
   gen:mother <https://www.wikidata.org/wiki/Q529415> .
-  # oo 1687-02-05 James Maule, 4th Earl of Panmure, 1658~ - 1723-04-22, https://www.wikidata.org/wiki/Q6139101
-<#Lord_Basil_Hamilton>
+  # oo 1687-02-05 James Maule, 4th Earl of Panmure, 1658~ - 1723-04-22, https://www.wikidata.org/wiki/Q6139101 (erskine.ttl)
+<https://www.wikidata.org/wiki/Q75390106>
   # Lord Basil Hamilton, 1671-12~ - 1701-08-27
   gen:father <https://www.wikidata.org/wiki/Q4896> ;
   gen:mother <https://www.wikidata.org/wiki/Q529415> .
-  # oo 1691 Mary Dunbar, 1677 - 1760-05-15
+  # oo Mary Dunbar, 1677 - 1760-05-15
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75390106> , <https://www.wikidata.org/wiki/Q75390108> ;
+	gen:startDate "1691" .
 <https://www.wikidata.org/wiki/Q6678919>
   # Rev. Lord Archibald Hamilton, of Riccartoun, 1673-02-17 - 1754-04-05
   gen:father <https://www.wikidata.org/wiki/Q4896> ;
@@ -647,29 +646,22 @@
 <https://www.wikidata.org/wiki/Q5538594>
   # George Douglas, 2nd Earl of Dumbarton, 1687-04~ - 1749~
   gen:father <https://www.wikidata.org/wiki/Q5538593> ;
-  gen:mother <#Anne_Wheatley> .
-<https://www.wikidata.org/wiki/Q6132754>
-  # James Douglas, 3rd Lord Mordington, 1651 -1706/1707
-  gen:father <https://www.wikidata.org/wiki/Q8007923> ;
-  gen:mother <https://www.wikidata.org/wiki/Q76163712> .
-  # oo Hon. Ann Seton, b. 1651-04-24
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q6132754> , <gordon.ttl#Ann_Seton> .
+  gen:mother <https://www.wikidata.org/wiki/Q75389969> .
 
 <https://www.wikidata.org/wiki/Q6132758>
   # James Douglas, Earl of Angus, 1671 - 1692-08-03
   gen:father <https://www.wikidata.org/wiki/Q1680288> ;
-  gen:mother <erskine.ttl#Lady_Barbara_Erskine> .
-<#William_Douglas>
+  gen:mother <https://www.wikidata.org/wiki/Q75389808> .
+<https://www.wikidata.org/wiki/Q75389818>
   # William, Earl of Angus, 1693-10-15 - 1694-05-20
   gen:father <https://www.wikidata.org/wiki/Q1680288> ;
-  gen:mother <kerr.ttl#Lady_Mary_Kerr_(died_1736)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75389815> .
 <https://www.wikidata.org/wiki/Q633119>
   # Archibald Douglas, 1st Duke of Douglas, 1694-10-15 - 1761-07-21
   # 3rd Marquess of Douglas 1700-02-25
   # 1st Duke of Douglas, Marquess of Angus and Abernethy, etc. 1703
   gen:father <https://www.wikidata.org/wiki/Q1680288> ;
-  gen:mother <kerr.ttl#Lady_Mary_Kerr_(died_1736)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75389815> .
   # oo 1758-03-01 Margaret Douglas, d. 1774-10-24
   []
     gen:spouse <https://www.wikidata.org/wiki/Q633119> , <https://www.wikidata.org/wiki/Q19325975> .
@@ -678,7 +670,7 @@
   gen:birthDate "1698-03-17" ;
   gen:deathDate "1753-11-21" ;
   gen:father <https://www.wikidata.org/wiki/Q1680288> ;
-  gen:mother <kerr.ttl#Lady_Mary_Kerr_(died_1736)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75389815> .
   # oo 1746-08-04 Sir John Stewart, of Grandtully, 3rd Baronet, 1687 – 1764-06-14
 <https://www.wikidata.org/wiki/Q4786291>
   # Archibald Douglas, 2nd Earl of Forfar, 1692-05-25 - 1715-12-08
@@ -695,7 +687,7 @@
 <https://www.wikidata.org/wiki/Q336645>
   # James Hamilton, 5th Duke of Hamilton, 1703-01-05 - 1743-03-02
   gen:father <https://www.wikidata.org/wiki/Q335625> ;
-  gen:mother <spencer.ttl#Lady_Anne_Spencer_(died_1690)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75385678> .
   # oo Lady Anne Cochrane, 1707-02-22 - 1724-08-14
   []
     gen:spouse <https://www.wikidata.org/wiki/Q336645> , <https://www.wikidata.org/wiki/Q47035554> ;
@@ -711,7 +703,7 @@
 <https://www.wikidata.org/wiki/Q16859376>
   # Lord William Hamilton, 1706~ - 1734-07-11
   gen:father <https://www.wikidata.org/wiki/Q335625> ;
-  gen:mother <spencer.ttl#Lady_Anne_Spencer_(died_1690)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75385678> .
   # oo Frances Anne Hawes, 1715-01~ - 1788-03-31, daughter of Francis Hawes
   []
     gen:spouse <https://www.wikidata.org/wiki/Q16859376> , <https://www.wikidata.org/wiki/Q5478989> ;
@@ -719,26 +711,30 @@
 <https://www.wikidata.org/wiki/Q2579891>
   # Lord Anne Hamilton, 1709-10-12 - 1748-12-25
   gen:father <https://www.wikidata.org/wiki/Q335625> ;
-  gen:mother <spencer.ttl#Lady_Anne_Spencer_(died_1690)> .
-  # oo 1731b Mary Edwards, d. 1743-08-23
-  # oo 1742-10 Anna Charlotte Maria Powell, d. 1791-07-26
+  gen:mother <https://www.wikidata.org/wiki/Q75385678> .
+  # oo Mary Edwardes, d. 1743-08-23
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q2579891> , <#Anna_Charlotte_Maria_Powell> .
+    gen:spouse <https://www.wikidata.org/wiki/Q2579891> , <https://www.wikidata.org/wiki/Q75389725> ;
+	gen:startDate "1731b" .
+  # oo Anna Charlotte Maria Powell, d. 1791-07-26, daughter of Charles Powell and Mary Powell
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2579891> , <https://www.wikidata.org/wiki/Q75389746> ;
+	gen:startDate "1742-10" .
 <https://www.wikidata.org/wiki/Q75390530>
   # Lady Susan Hamilton, 1702a/1712b - 1755-06-03
   gen:father <https://www.wikidata.org/wiki/Q335625> ;
-  gen:mother <#Elizabeth_Gerard> .
+  gen:mother <https://www.wikidata.org/wiki/Q75389650> .
   # oo 1736-08-03 Anthony Tracy-Keck, d. 1769-05-30, https://www.wikidata.org/wiki/Q17285420 (leigh.ttl)
 <https://www.wikidata.org/wiki/Q16318368>
   # Anne Hamilton, 2nd Countess of Ruglen, 1698-04-05 - 1748-04-21
   gen:father <https://www.wikidata.org/wiki/Q44838378> ;
-  gen:mother <kennedy.ttl#Lady_Anne_Kennedy_(died_1700)> .
-  # oo 1705 William Douglas, 2nd Earl of March, 1696 - 1731-03-07, #William_Douglas,_2nd_Earl_of_March
+  gen:mother <https://www.wikidata.org/wiki/Q75390160> .
+  # oo 1705 William Douglas, 2nd Earl of March, 1696 - 1731-03-07, https://www.wikidata.org/wiki/Q75390168
   # oo 1747-01-02 Anthony Sawyer, d. 1764a
-<#Lady_Susan_Hamilton_(died_1763)>
+<https://www.wikidata.org/wiki/Q75390171>
   # Lady Susan Hamilton, 1699-11-01 - 1763-02-08
   gen:father <https://www.wikidata.org/wiki/Q44838378> ;
-  gen:mother <kennedy.ttl#Lady_Anne_Kennedy_(died_1700)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75390160> .
   # oo 1738-10-24 John Kennedy, 8th Earl of Cassillis, 1700-04 - 1759-08-07, https://www.wikidata.org/wiki/Q6242828
 <https://www.wikidata.org/wiki/Q4768688>
   # Anne Douglas-Hamilton, 2nd Countess of Orkney, 1696 - 1756-12-06
@@ -757,17 +753,17 @@
   # oo 1728-05-09 John Boyle, 5th Earl of Cork, 1707-01-13 - 1762-11-23, https://www.wikidata.org/wiki/Q1032335
 <https://www.wikidata.org/wiki/Q28955339>
   # Basil Hamilton, of Baldoon, 1696-09-09 - 1742-11-14
-  gen:father <#Lord_Basil_Hamilton> ;
-  gen:mother <#Mary_Dunbar> .
+  gen:father <https://www.wikidata.org/wiki/Q75390106> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75390108> .
   # oo Isabella Mackenzie, d. 1725-04-06
   []
     gen:spouse <https://www.wikidata.org/wiki/Q28955339> , <https://www.wikidata.org/wiki/Q75390103> ;
 	gen:startDate "1719-03-14" .
-<#Catherine_Hamilton>
+<https://www.wikidata.org/wiki/Q75390189>
   # Catherine Hamilton, 1692a/1701b - 1779-04-13
-  gen:father <#Lord_Basil_Hamilton> ;
-  gen:mother <#Mary_Dunbar> .
-  # oo 1727-10 Thomas [Cochrane], 6th Earl of Dundonald, 1702 - 1737-05-28
+  gen:father <https://www.wikidata.org/wiki/Q75390106> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75390108> .
+  # oo 1727-10 Thomas Cochrane, 6th Earl of Dundonald, 1702 - 1737-05-28, https://www.wikidata.org/wiki/Q66828254
 <https://www.wikidata.org/wiki/Q3723398>
   # Elizabeth Hamilton, 1721~ - 1800-02-24
   gen:father <https://www.wikidata.org/wiki/Q6678919> ;
@@ -779,13 +775,13 @@
   gen:father <https://www.wikidata.org/wiki/Q6678919> ;
   gen:mother <https://www.wikidata.org/wiki/Q3807008> .
   # oo 1753-07-24 Charles Schaw Cathcart, 9th Lord Cathcart, 1721-03-21 - 1776-08-14, https://www.wikidata.org/wiki/Q748303 (stuart.ttl)
-<#Frederick_Hamilton>
+<https://www.wikidata.org/wiki/Q75390100>
   # Rev. Frederick Hamilton, 1728 - 1811-02-19
   gen:father <https://www.wikidata.org/wiki/Q6678919> ;
   gen:mother <https://www.wikidata.org/wiki/Q3807008> .
   # oo Rachael Daniel
   []
-    gen:spouse <#Frederick_Hamilton> , <#Rachael_Daniel> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75390100> , <https://www.wikidata.org/wiki/Q75390205> ;
 	gen:startDate "1757-06-11" .
 <https://www.wikidata.org/wiki/Q15462>
   # Sir William Hamilton, 1730-12-13 - 1803-04-06
@@ -795,15 +791,6 @@
   # oo (2) 1791-12-06 Emma Hart, d. 1815-01-16
   []
     gen:spouse <https://www.wikidata.org/wiki/Q15462> , <https://www.wikidata.org/wiki/Q234811> .
-<https://www.wikidata.org/wiki/Q5538595>
-  # George Douglas, 4th Lord Mordington, d. 1741-05-13
-  gen:father <https://www.wikidata.org/wiki/Q6132754> ;
-  gen:mother <#Anne_Setton> .
-  # oo? 1704-11-16 Mary Dillon
-  # oo Catherine Lauder, d. 1741-06-03, daughter of Dr. Robert Lauder
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q5538595> , <#Catherine_Lauder> ;
-	gen:startDate "1715" .
 
 <https://www.wikidata.org/wiki/Q336942>
   # James Hamilton, 6th Duke of Hamilton and Brandon, 1724-07-05 - 1758-01-17
@@ -826,26 +813,26 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q336976> , <https://www.wikidata.org/wiki/Q25706583> ;
 	gen:startDate "1765-05-25" .
-<#James_Hamilton_(died_1804)>
+<https://www.wikidata.org/wiki/Q75389724> # -> Noel of Gainborough
+  # Gerard Anne Edwardes, 1734-03-28 - 1773-10-29
+  gen:father <https://www.wikidata.org/wiki/Q2579891> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75389725> .
+<https://www.wikidata.org/wiki/Q75385643>
   # James Hamilton, 1746-01-18 - 1804-01-22
   gen:father <https://www.wikidata.org/wiki/Q2579891> ;
-  gen:mother <#Anna_Charlotte_Maria_Powell> .
+  gen:mother <https://www.wikidata.org/wiki/Q75389746> .
   # oo Lucy Lloyd, 1741~ - 1790-09, daughter of Sir Richard Lloyd
   []
-    gen:spouse <#James_Hamilton_(died_1804)> , <#Lucy_Lloyd> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75385643> , <https://www.wikidata.org/wiki/Q75390257> ;
 	gen:startDate "1767-07-29" .
 <https://www.wikidata.org/wiki/Q2579421>
   # Charles Powell Hamilton, 1747-12-26 - 1825-03-12
   gen:father <https://www.wikidata.org/wiki/Q2579891> ;
-  gen:mother <#Anna_Charlotte_Maria_Powell> .
+  gen:mother <https://www.wikidata.org/wiki/Q75389746> .
   # oo Lucretia Prosser, 1754 - 1825
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q2579421> , <#Lucretia_Prosser> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q2579421> , <https://www.wikidata.org/wiki/Q75390265> ;
 	gen:startDate "1777-05" .
-<https://www.wikidata.org/wiki/Q75389724> # -> Noel of Gainborough
-  # Gerard Anne Edwardes, 1734-03-28 - 1773-10-29
-  gen:father <https://www.wikidata.org/wiki/Q2579891> .
-  # and Mary Edwardes
 <https://www.wikidata.org/wiki/Q3041208>
   # Dunbar Douglas, 4th Earl of Selkirk, 1722-12-01 - 1799-06-24
   gen:father <https://www.wikidata.org/wiki/Q28955339> ;
@@ -856,13 +843,9 @@
 	gen:startDate "1758-12-03" .
 <https://www.wikidata.org/wiki/Q75390207>
   # Elizabeth Hamilton, d. 1811-02/1846-01-29
-  gen:father <#Frederick_Hamilton> ;
-  gen:mother <#Rachael_Daniel> .
+  gen:father <https://www.wikidata.org/wiki/Q75390100> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75390205> .
   # oo 1777-04 John Stratford, 3rd Earl of Aldborough, 1742a/1745b 1823-03-07, https://www.wikidata.org/wiki/Q16154082 (herbert.ttl)
-<https://www.wikidata.org/wiki/Q5076935>
-  # Charles Douglas, 5th Lord Mordington, d. 1755
-  gen:father <https://www.wikidata.org/wiki/Q5538595> ;
-  gen:mother <#Catherine_Lauder> .
 
 <https://www.wikidata.org/wiki/Q4725>
   # Lady Elizabeth Hamilton, 1753-01-26 - 1797-03-14
@@ -900,7 +883,7 @@
   # Lord Archibald Hamilton, 1770-03-06 - 1827-08-28
   gen:father <https://www.wikidata.org/wiki/Q336976> ;
   gen:mother <https://www.wikidata.org/wiki/Q25706583> .
-<#Lady_Charlotte_Hamilton>
+<https://www.wikidata.org/wiki/Q65656812>
   # Lady Charlotte Hameldon, 1772-04-06 - 1827-06-10
   gen:father <https://www.wikidata.org/wiki/Q336976> ;
   gen:mother <https://www.wikidata.org/wiki/Q25706583> .
@@ -910,18 +893,18 @@
   gen:father <https://www.wikidata.org/wiki/Q336976> ;
   gen:mother <https://www.wikidata.org/wiki/Q25706583> .
   # oo 1803-08-04 George Murray, 5th Earl of Dunmore, 1762-04-30 - 1836-11-11, https://www.wikidata.org/wiki/Q5542711
-<#Lucy_Charlotte_Hamilton>
+<https://www.wikidata.org/wiki/Q75390261>
   # Lucy Charlotte Hamilton, b. 1768a/1784b
-  gen:father <#James_Hamilton_(died_1804)> ;
-  gen:mother <#Lucy_Lloyd> .
-  # oo 1799-03-16 Robert Anstruther, 1768-03-03 - 1809-01-14, https://www.wikidata.org/wiki/Q7341540
-<#Augustus_Douglas-Hamilton>
+  gen:father <https://www.wikidata.org/wiki/Q75385643> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75390257> .
+  # oo 1799-03-16 Robert Anstruther, 1768-03-03 - 1809-01-14, https://www.wikidata.org/wiki/Q7341540 (erskine.ttl)
+<https://www.wikidata.org/wiki/Q75389753>
   # Augstus Barrington Price Anne Powell Douglas-Hamilton, 1781-05-22 - 1849-08-27
   gen:father <https://www.wikidata.org/wiki/Q2579421> ;
-  gen:mother <#Lucretia_Prosser> .
-  # oo Maria Catherine Hyde, 1783 - 1865-08-19
+  gen:mother <https://www.wikidata.org/wiki/Q75390265> .
+  # oo Maria Catherine Hyde, 1783 - 1865-08-19 (seymour.ttl)
   []
-    gen:spouse <#Augustus_Douglas-Hamilton> , <seymour.ttl#Maria_Catherine_Hyde> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75389753> , <https://www.wikidata.org/wiki/Q75390273> ;
 	gen:startDate "1805-04-02" .
 <https://www.wikidata.org/wiki/Q18526613>
   # Basil William Douglas, Lord Daer, 1763-03-16 - 1794-11-09
@@ -931,12 +914,15 @@
   # Thomas Douglas, 5th Earl of Selkirk, 1771-06-20 - 1820-04-08
   gen:father <https://www.wikidata.org/wiki/Q3041208> ;
   gen:mother <https://www.wikidata.org/wiki/Q75390112> .
-  # oo 1807-11-24 Joan Wedderburn-Colvile, d. 1871-06-10
+  # oo Joan Wedderburn-Colvile, d. 1871-06-10, daughter of James Wedderburn and Isabella Blackburn
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q335434> , <https://www.wikidata.org/wiki/Q75390122> ;
+	gen:startDate "1807-11-24" .
 <https://www.wikidata.org/wiki/Q21650513>
   # Lady Helena Douglas, 1768 - 1837-07-12
   gen:father <https://www.wikidata.org/wiki/Q3041208> ;
   gen:mother <https://www.wikidata.org/wiki/Q75390112> .
-  # oo 1786-11-09 Sir James Hall, of Dunglas, 4th Baronet, 1761-01-17 - 1832-06-23, https://www.wikidata.org/wiki/Q1248034
+  # oo 1786-11-09 Sir James Hall, of Dunglas, 4th Baronet, 1761-01-17 - 1832-06-23, https://www.wikidata.org/wiki/Q1248034 (hope.ttl)
 <https://www.wikidata.org/wiki/Q75390178>
   # Lady Elizabeth Douglas, 1789b - 1814-10-28
   gen:father <https://www.wikidata.org/wiki/Q3041208> ;
@@ -964,45 +950,45 @@
   # oo 1860-01-02 Jean Alexis Op de Beeck
 <https://www.wikidata.org/wiki/Q21094813>
   # Charles Henry Douglas-Hamilton, 1808-10-07 - 1873-11-30
-  gen:father <#Augustus_Douglas-Hamilton> ;
-  gen:mother <seymour.ttl#Maria_Catherine_Hyde> .
+  gen:father <https://www.wikidata.org/wiki/Q75389753> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75390273> .
   # oo Anna Apthorp, 1826 - 1856-02
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q21094813> , <#Anna_Apthorp> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q21094813> , <https://www.wikidata.org/wiki/Q75390280> ;
 	gen:startDate "1854-12-01" .
   # oo Elizabeth Ann Hill, 1831 - 1867-06-27
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q21094813> , <#Elizabeth_Ann_Hill> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q21094813> , <https://www.wikidata.org/wiki/Q75389755> ;
 	gen:startDate "1860-01-31" .
   # oo Sarah Julia Spence, 1852 - 1880-02-29
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q21094813> , <#Sarah_Julia_Spence> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q21094813> , <https://www.wikidata.org/wiki/Q75390290> ;
 	gen:startDate "1873-10-21" .
-<#Alfred_Douglas-Hamilton>
+<https://www.wikidata.org/wiki/Q75390446>
   # Alfred Douglas-Hamilton, 1818-04-21 - 1895-03-25
-  gen:father <#Augustus_Douglas-Hamilton> ;
-  gen:mother <seymour.ttl#Maria_Catherine_Hyde> .
+  gen:father <https://www.wikidata.org/wiki/Q75389753> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75390273> .
   # oo Adelaide Black, 1818-07-23 - 1870-04-17, daughter of Alexander Black and Alice Waynman
   []
-    gen:spouse <#Alfred_Douglas-Hamilton> , <#Adelaide_Black> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75390446> , <https://www.wikidata.org/wiki/Q75390447> ;
 	gen:startDate "1845-07-17" .
 <https://www.wikidata.org/wiki/Q5314138>
   # Dunbar Douglas, 6th Earl of Selkirk, 1809-04-22 - 1885-04-11
   gen:father <https://www.wikidata.org/wiki/Q335434> ;
-  gen:mother <#Jean_Wedderburn-Colville> .
-  # oo Cicely Louisa Grey-Egerton, d. 1920-06-10
+  gen:mother <https://www.wikidata.org/wiki/Q75390122> .
+  # oo Cicely Louisa Grey-Egerton, d. 1920-06-10 (egerton.ttl)
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q5314138> , <egerton.ttl#Cicely_Louisa_Grey-Egerton> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q5314138> , <https://www.wikidata.org/wiki/Q75390133> ;
 	gen:startDate "1878-06-29" .
-<#Lady_Isabella_Helen_Douglas>
+<https://www.wikidata.org/wiki/Q75390139>
   # Lady Isabella Helen Douglas, 1811-01-08 – 1893-07-04
   gen:father <https://www.wikidata.org/wiki/Q335434> ;
-  gen:mother <#Jean_Wedderburn-Colville> .
+  gen:mother <https://www.wikidata.org/wiki/Q75390122> .
   # oo 1841-10-26 Charles Hope, 1808-09-11 – 1893-10-31, https://www.wikidata.org/wiki/Q5079116
 <https://www.wikidata.org/wiki/Q75390176>
   # Lady Katherine Jean Douglas, 1817-01-04 – 1863-09-30
   gen:father <https://www.wikidata.org/wiki/Q335434> ;
-  gen:mother <#Jean_Wedderburn-Colville> .
+  gen:mother <https://www.wikidata.org/wiki/Q75390122> .
   # oo 1849-01-23 Loftus Tottenham Wigram, 1803-11-06 – 1889-09-19, https://www.wikidata.org/wiki/Q6666722 (loftus.ttl)
 
 <https://www.wikidata.org/wiki/Q336666>
@@ -1012,7 +998,7 @@
   gen:mother <https://www.wikidata.org/wiki/Q62264> .
   # oo Lady Mary Louise Elizabeth Montagu, 1854-12-27 - 1934-02-10
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q336666> , <montagu.ttl#Lady_Mary_Louise_Elizabeth_Montagu> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q336666> , <https://www.wikidata.org/wiki/Q75381628> ;
 	gen:startDate "1873-12-10" .
 <https://www.wikidata.org/wiki/Q1064511>
   # Charles George Archibald Douglas-Hamilton, 7th Earl of Selkirk, 1847-05-18 - 1886-05-02
@@ -1028,7 +1014,7 @@
 <https://www.wikidata.org/wiki/Q336632>
   # Alfred Douglas-Hamilton, 13th Duke of Hamilton and Brandon, 9th Earl of Selkirk, 1862-03-06 - 1940-03-16
   gen:father <https://www.wikidata.org/wiki/Q21094813> ;
-  gen:mother <#Elizabeth_Ann_Hill> .
+  gen:mother <https://www.wikidata.org/wiki/Q75389755> .
   # oo Nina Mary Benita Poore, 1878-05-13 - 1951-01-12
   []
     gen:spouse <https://www.wikidata.org/wiki/Q336632> , <https://www.wikidata.org/wiki/Q2644917> ;
@@ -1036,21 +1022,21 @@
 <https://www.wikidata.org/wiki/Q21094869>
   # Flora Mary Ida Douglas-Hamilton, 1866-02-22 - 1957-01-27
   gen:father <https://www.wikidata.org/wiki/Q21094813> ;
-  gen:mother <#Elizabeth_Ann_Hill> .
+  gen:mother <https://www.wikidata.org/wiki/Q75389755> .
   # oo 1898-09-29 Robert Montagu Poore, 1866-03-20 - 1938-07-14, https://www.wikidata.org/wiki/Q7348969
-<#William_Arthur_Douglas-Hamilton>
-  # 1923-04-12 Rev. William Arthur Douglas-Hamilton, 1864-09-06 - 1948-04-17
-  gen:father <#Alfred_Douglas-Hamilton> ;
-  gen:mother <#Adelaide_Black> .
+<https://www.wikidata.org/wiki/Q75390456>
+  # Rev. William Arthur Douglas-Hamilton, 1864-09-06 - 1948-04-17
+  gen:father <https://www.wikidata.org/wiki/Q75390446> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75390447> .
   # oo Alice Georgina Legge, 1875-06-10 - 1958-02-01
   []
-    gen:spouse <#William_Arthur_Douglas-Hamilton> , <legge.ttl#Alice_Georgina_Legge> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75390456> , <https://www.wikidata.org/wiki/Q75390457> ;
 	gen:startDate "1923-04-12" .
 
-<#Lady_Mary_Louise_Douglas-Hamilton>
+<https://www.wikidata.org/wiki/Q75390234>
   # Lady Mary Louise Douglas-Hamilton, 1884-11-01 - 1957-02-21
   gen:father <https://www.wikidata.org/wiki/Q336666> ;
-  gen:mother <#Lady_Mary_Montagu> .
+  gen:mother <https://www.wikidata.org/wiki/Q75381628> .
   # oo 1906-06-14 James Graham, 6th Duke of Montrose, 1878-05-01 - 1954-01-20, https://www.wikidata.org/wiki/Q6134815
 <https://www.wikidata.org/wiki/Q332941>
   # Douglas Douglas-Hamilton, 14th Duke of Hamilton and Brandon, 1903-02-03 - 1973-03-30
@@ -1060,13 +1046,13 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q332941> , <https://www.wikidata.org/wiki/Q5362691> ;
 	gen:startDate "1937-12-02" .
-<#Lady_Jean_Douglas-Hamilton>
+<https://www.wikidata.org/wiki/Q75390626>
   # Lady Jean Douglas-Hamilton, 1904-06-11 - 1987
   gen:father <https://www.wikidata.org/wiki/Q336632> ;
   gen:mother <https://www.wikidata.org/wiki/Q2644917> .
-  # oo 1927-04-08 (div 1946) Charles Ernest Whistler Mackintosh, b. 1903-10-31
-  # oo 1947-05-24 Leo Zinovieff, 1905-02-15 - 1951-09-21
-  # oo 1972-10-20 Vivian Norton Bell
+  # oo 1927-04-08 (div 1946) Charles Ernest Whistler Mackintosh, 1903-10-31 - 1974-01-12, https://www.wikidata.org/wiki/Q3675525
+  # oo 1947-05-24 Leo Zinovieff, 1905-02-15 - 1951-09-21, https://www.wikidata.org/wiki/Q75390631
+  # oo 1972-10-20 Vivian Norton Bell, 1904-02-08 - 1978-04-22, https://www.wikidata.org/wiki/Q75390634
 <https://www.wikidata.org/wiki/Q336192>
   # George Nigel Douglas-Hamilton, 10th Earl of Selkirk, 1906-01-04 - 1994-11-24
   # 10th Earl of Selkirk 1940-03-16
@@ -1079,10 +1065,15 @@
   # Lord Malcolm Avondale Douglas-Hamilton, 1909-11-12 - 1964-07-21
   gen:father <https://www.wikidata.org/wiki/Q336632> ;
   gen:mother <https://www.wikidata.org/wiki/Q2644917> .
-  # oo 1931-04-18 (div 1952) Clodagh Pamela Bowes-Lyon, 1908-07-15 - 2003-05-10
+  # oo Clodagh Pamela Bowes-Lyon, 1908-07-15 - 2003-05-10 (lyon.ttl)
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q6679747> , <lyon.ttl#Clodagh_Pamela_Bowes-Lyon> .
-  # oo 1953-01-04 Natalie Wales, d. 2013-01-14
+    gen:spouse <https://www.wikidata.org/wiki/Q6679747> , <https://www.wikidata.org/wiki/Q75390535> ;
+	gen:startDate "1931-04-18" ;
+	gen:divorceDate "1952" .
+  # oo Natalie Wales, d. 2013-01-14
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6679747> , <https://www.wikidata.org/wiki/Q64667814> ;
+	gen:startDate "1953-01-04" .
 <https://www.wikidata.org/wiki/Q6679152>
   # Lord David Douglas-Hamilton, 1912-11-08 - 1944-08-02
   gen:father <https://www.wikidata.org/wiki/Q336632> ;
@@ -1096,18 +1087,29 @@
   # Angus Alan Douglas Douglas-Hamilton, 15th Duke of Hamilton and Brandon, 1938-09-13 - 2010-06-05
   gen:father <https://www.wikidata.org/wiki/Q332941> ;
   gen:mother <https://www.wikidata.org/wiki/Q5362691> .
-  # oo 1972-06-23 (div 1987) Sarah Jane Scott, 1945-10-28 - 1994-02-17, daughter of Major Sir Walter Scott of Beauclerc, 4th Baronet
-  # oo 1988 (div 1995) Mrs Jillian Hulton, née Robertson, 1940-01-30 - 2018-04-22
-  # oo 1998-07-17~ Mrs Kay Carmichael
+  # oo Sarah Jane Scott, 1945-10-28 - 1994-02-17
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q335417> , <https://www.wikidata.org/wiki/Q75390662> ;
+	gen:startDate "1972-06-23" ;
+	gen:divorceDate "1987" .
+  # oo Jillian Robertson, 1940-01-30 - 2018-04-22
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q335417> , <https://www.wikidata.org/wiki/Q75390670> ;
+	gen:startDate "1988" ;
+	gen:divorceDate "1995" .
+  # oo Mrs Kay Carmichael
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q335417> , <https://www.wikidata.org/wiki/Q75347929> ;
+	gen:startDate "1998-07-17~" .
 <https://www.wikidata.org/wiki/Q333795>
   # James Alexander Douglas-Hamilton, Baron Selkirk of Douglas, b. 1942-07-31
   # 11th Earl of Selkirk 1994 - 1994
   # Lord Selkirk of Douglas 1997
   gen:father <https://www.wikidata.org/wiki/Q332941> ;
   gen:mother <https://www.wikidata.org/wiki/Q5362691> .
-  # oo Hon. Priscilla Susan Buchan, b. 1949-08-22
+  # oo Hon. Priscilla Susan Buchan, b. 1949-08-22 (grant.ttl)
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q333795> , <#Priscilla_Susan_Buchan> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q333795> , <https://www.wikidata.org/wiki/Q75390680> ;
 	gen:startDate "1974-08-24" .
 <https://www.wikidata.org/wiki/Q21094779>
   # Diarmaid Hugh Douglas-Hamilton, b. 1940-06-17
@@ -1126,14 +1128,15 @@
 <https://www.wikidata.org/wiki/Q4718747>
   # Alexander Douglas-Hamilton, 16th Duke of Hamilton and Brandon, b. 1978-03-31
   gen:father <https://www.wikidata.org/wiki/Q335417> ;
-  gen:mother <#Sarah_Jane_Scott> .
-  # oo 2011-05-07 Sophie Ann Rutherford
+  gen:mother <https://www.wikidata.org/wiki/Q75390662> .
+  # oo Sophie Ann Rutherford, b. 1976-12-08, daughter of Hubert Rutherford and Isabel Waters Taylor
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q4718747> , <#Sophie_Ann_Rutherford> .
-<#John_Andrew_Douglas-Hamilton,_Lord_Daer_and_Master_of_Selkirk>
+    gen:spouse <https://www.wikidata.org/wiki/Q4718747> , <https://www.wikidata.org/wiki/Q64748220> ;
+	gen:startDate "2011-05-07" .
+<https://www.wikidata.org/wiki/Q75390683>
   # John Andrew Douglas-Hamilton, Lord Daer, Master of Selkirk, b. 1978-02-08
   gen:father <https://www.wikidata.org/wiki/Q333795> ;
-  gen:mother <#Priscilla_Susan_Buchan> .
+  gen:mother <https://www.wikidata.org/wiki/Q75390680> .
 <https://www.wikidata.org/wiki/Q2733305>
   # Saba Iassa Douglas-Hamilton, b. 1970
   gen:father <https://www.wikidata.org/wiki/Q2757690> ;
@@ -1144,18 +1147,70 @@
   gen:father <https://www.wikidata.org/wiki/Q2757690> ;
   gen:mother <https://www.wikidata.org/wiki/Q21094771> .
 
-<#Douglas_Charles_Douglas-Hamilton,_Marquess_of_Douglas_and_Clydesdale>
+<https://www.wikidata.org/wiki/Q76211527>
   # Douglas Charles, Marquess of Douglas and Clydesdale b. 2012-07-09
   gen:father <https://www.wikidata.org/wiki/Q4718747> ;
-  gen:mother <#Sophie_Ann_Rutherford> .
-<#Lord_William_Frederick_Douglas-Hamilton>
+  gen:mother <https://www.wikidata.org/wiki/Q64748220> .
+<https://www.wikidata.org/wiki/Q76259849>
   # Lord William Frederick Douglas-Hamilton, b. 2014-05-11
   gen:father <https://www.wikidata.org/wiki/Q4718747> ;
-  gen:mother <#Sophie_Ann_Rutherford> .
-<#Lord_Basil_George_Douglas-Hamilton>
+  gen:mother <https://www.wikidata.org/wiki/Q64748220> .
+<https://www.wikidata.org/wiki/Q76312672>
   # Lord Basil George Douglas-Hamilton, b. 2016-04-04
   gen:father <https://www.wikidata.org/wiki/Q4718747> ;
-  gen:mother <#Sophie_Ann_Rutherford> .
+  gen:mother <https://www.wikidata.org/wiki/Q64748220> .
+
+
+# Lord Mordington
+<https://www.wikidata.org/wiki/Q6132753>
+  # James Douglas, 1st Lord Mordington, 1591 - 1656-02-11
+  # 1st Lord Mordington [Scotland] 1641-11-14
+  gen:father <https://www.wikidata.org/wiki/Q1677658> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75389788> .
+  # oo Anne Oliphant (hay.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6132753> , <https://www.wikidata.org/wiki/Q75389983> ;
+	gen:startDate "1624" .
+  # oo Lady Elizabeth Hay
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6132753> , <https://www.wikidata.org/wiki/Q75390854> ;
+	gen:startDate "1643-05-20b" .
+
+<https://www.wikidata.org/wiki/Q8007923>
+  # William Douglas, 2nd Lord Mordington, 1626-09-27 - 1677/1693
+  gen:father <https://www.wikidata.org/wiki/Q6132753> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75389983> .
+  # oo Hon. Elizabeth Sempill (hamilton.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8007923> , <https://www.wikidata.org/wiki/Q76163712> .
+<https://www.wikidata.org/wiki/Q76163718>
+  # Anne Douglas, d. 1688-02-20b
+  gen:father <https://www.wikidata.org/wiki/Q6132753> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75389983> .
+  # oo 1648-02-08 Robert Sempill, 7th Lord Sempill, 1622a - 1675-09-08, https://www.wikidata.org/wiki/Q75647743 (hamilton.ttl)
+
+<https://www.wikidata.org/wiki/Q6132754>
+  # James Douglas, 3rd Lord Mordington, 1651 -1706/1707
+  gen:father <https://www.wikidata.org/wiki/Q8007923> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76163712> .
+  # oo Hon. Ann Seton, b. 1651-04-24
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6132754> , <gordon.ttl#Ann_Seton> .
+
+<https://www.wikidata.org/wiki/Q5538595>
+  # George Douglas, 4th Lord Mordington, d. 1741-05-13
+  gen:father <https://www.wikidata.org/wiki/Q6132754> ;
+  gen:mother <gordon.ttl#Ann_Seton> .
+  # oo? 1704-11-16 Mary Dillon
+  # oo Catherine Lauder, d. 1741-06-03, daughter of Dr. Robert Lauder
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5538595> , <#Catherine_Lauder> ;
+	gen:startDate "1715" .
+
+<https://www.wikidata.org/wiki/Q5076935>
+  # Charles Douglas, 5th Lord Mordington, d. 1755
+  gen:father <https://www.wikidata.org/wiki/Q5538595> ;
+  gen:mother <#Catherine_Lauder> .
 
 
 # ====
@@ -1163,7 +1218,7 @@
 <https://www.wikidata.org/wiki/Q75389724>
   # Gerard Anne Edwardes, 1734-03-28 - 1773-10-29
   gen:father <https://www.wikidata.org/wiki/Q2579891> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75389725> . # Mary Edwardes, d. 1743-08-23, daughter of Francis Edwardes (https://www.wikidata.org/wiki/Q75389728)
+  gen:mother <https://www.wikidata.org/wiki/Q75389725> .
   # oo Lady Jane Noel, 1733 - 1811
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75389724> , <https://www.wikidata.org/wiki/Q75389729> ;
@@ -1645,24 +1700,30 @@
   gen:father <https://www.wikidata.org/wiki/Q4170054> ;
   gen:mother <#Margaret_Crawford> .
 
-<#William_Douglas_of_Hermiston>
+<https://www.wikidata.org/wiki/Q76191841>
   # William Douglas, of Hermiston
   gen:father <https://www.wikidata.org/wiki/Q4756829> .
 
-<#James_Douglas>
-  # James Douglas
-  gen:father <#William_Douglas_of_Hermiston> .
+<https://www.wikidata.org/wiki/Q75389480>
+  # Sir James Douglas of Lothian
+  gen:father <https://www.wikidata.org/wiki/Q76191841> .
   # oo Joan
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75389480> , <https://www.wikidata.org/wiki/Q76191840> .
 
-<#Sir_John_Douglas>
+<https://www.wikidata.org/wiki/Q75389487>
   # Sir John Douglas
-  gen:father <#James_Douglas> .
+  gen:father <https://www.wikidata.org/wiki/Q75389480> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76191840> .
   # oo Agnes
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75389487> , <https://www.wikidata.org/wiki/Q76196445> .
 
 <https://www.wikidata.org/wiki/Q19324945>
   owl:sameAs <https://www.wikidata.org/wiki/Q75388072> ;
   # Sir James Douglas, of Dalkeith, d. 1420
-  gen:father <#Sir_John_Douglas> .
+  gen:father <https://www.wikidata.org/wiki/Q75389487> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76196445> .
   # oo Agnes Dunbar
   []
     gen:spouse <https://www.wikidata.org/wiki/Q19324945> , <https://www.wikidata.org/wiki/Q394505> ;
@@ -1673,7 +1734,7 @@
 	gen:startDate "1378-10" .
 <https://www.wikidata.org/wiki/Q75388332> # -> Douglas of Lochleven
   # Sir Henry Douglas, of Lugton and Lochleven
-  gen:father <#Sir_John_Douglas> .
+  gen:father <https://www.wikidata.org/wiki/Q75389487> .
 
 <https://www.wikidata.org/wiki/Q6132751>
   # James Douglas, 1st Lord Dalkeith, d. 1439/1441
@@ -1689,17 +1750,19 @@
     gen:spouse <https://www.wikidata.org/wiki/Q6132751> , <https://www.wikidata.org/wiki/Q75444234> ;
 	gen:startDate "1411" .
 
-<#James_Douglas,_2nd_Lord_of_Dalkeith>
-  # James, 2nd Lord Dalkeith, d. 1456/1458
+<https://www.wikidata.org/wiki/Q75388508>
+  # James Douglas, 2nd Lord Dalkeith, d. 1456/1458
   gen:father <https://www.wikidata.org/wiki/Q6132751> ;
   gen:mother <https://www.wikidata.org/wiki/Q75385105> .
   # oo Elizabeth Gifford
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75388508> , <https://www.wikidata.org/wiki/Q75388509> .
 
 <https://www.wikidata.org/wiki/Q7617653>
   # James Douglas, 1st Earl of Morton, 1426 - 1493-10-22~
-  # Earl of Morton 1458
-  gen:father <#James_Douglas,_2nd_Lord_of_Dalkeith> ;
-  gen:mother <#Elizabeth_Gifford_of_Sheriffhall> .
+  # 1st Earl of Morton 1458-03-14
+  gen:father <https://www.wikidata.org/wiki/Q75388508> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75388509> .
   # oo Joan Stewart, Princess of Scotland, 1428 - 1486-10-16
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7617653> , <https://www.wikidata.org/wiki/Q4770176> ;
@@ -1709,17 +1772,21 @@
   # John Douglas, 2nd Earl of Morton, d. 1513-09-09
   gen:father <https://www.wikidata.org/wiki/Q7617653> ;
   gen:mother <https://www.wikidata.org/wiki/Q4770176> .
-  # oo 1493-06-22b Janet Crichton of Cranston-Riddel
+  # oo Janet Crichton of Cranston-Riddel
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7617702> , <https://www.wikidata.org/wiki/Q75274011> ;
+	gen:startDate "1493-06-22b" .
 <https://www.wikidata.org/wiki/Q75388536>
   # Lady Janet Douglas, d. 1490
-  gen:father <https://www.wikidata.org/wiki/Q7617653> .
+  gen:father <https://www.wikidata.org/wiki/Q7617653> ;
+  gen:mother <https://www.wikidata.org/wiki/Q4770176> .
   # oo 1480-02-01b Patrick Hepburn, 1st Earl of Bothwell, 1455 - 1508-10-18, https://www.wikidata.org/wiki/Q7146716 (borthwick.ttl)
 
 <https://www.wikidata.org/wiki/Q1680291>
   gen:name "James Douglas, 3rd Earl of Morton"@en ;
   gen:deathDate "1548" ;
   gen:father <https://www.wikidata.org/wiki/Q7617702> ;
-  gen:mother <#Janet_Crichton_of_Cranston-Riddel> .
+  gen:mother <https://www.wikidata.org/wiki/Q75274011> .
   # oo Catherine Stewart, d. 1554a
   []
     gen:spouse <https://www.wikidata.org/wiki/Q1680291> , <https://www.wikidata.org/wiki/Q75382144> ;
@@ -1727,24 +1794,24 @@
 <https://www.wikidata.org/wiki/Q76059017>
   # Lady Agnes Douglas, 1489/1495~ - 1548
   gen:father <https://www.wikidata.org/wiki/Q7617702> ;
-  gen:mother <#Janet_Crichton_of_Cranston-Riddel> .
+  gen:mother <https://www.wikidata.org/wiki/Q75274011> .
   # oo 1515~ Alexander Livingstone, 5th Lord Livingston of Callendar, 1500~ - 1551-01-04b, https://www.wikidata.org/wiki/Q4719421 (livingston.ttl)
-<#Lady_Elizabeth_Douglas_(died_1527)>
+<https://www.wikidata.org/wiki/Q75274008>
   # Lady Elizabeth Douglas, d. 1527-05-02
   gen:father <https://www.wikidata.org/wiki/Q7617702> ;
-  gen:mother <#Janet_Crichton_of_Cranston-Riddel> .
-  # oo 1505-01-08b Robert Keith, Master of Marischal, d. 1524-08-24a/1525-04-22b, keith.ttl#Robert_Keith,_Master_of_Marischal
+  gen:mother <https://www.wikidata.org/wiki/Q75274011> .
+  # oo 1505-01-08b Robert Keith, Master of Marischal, d. 1524-08-24a/1525-04-22b, https://www.wikidata.org/wiki/Q75257545
 
 <https://www.wikidata.org/wiki/Q75382161>
   # Lady Margaret Douglas of Morton
   gen:father <https://www.wikidata.org/wiki/Q1680291> ;
   gen:mother <https://www.wikidata.org/wiki/Q75382144> .
   # oo 1532 James Hamilton, 2nd Earl of Arran, Duc de Chatellerault, 1516~ - 1575-01-22, https://www.wikidata.org/wiki/Q1680516
-<#Elizabeth_Douglas,_Countess_of_Morton>
-  # Lady Elizabeth Douglas, Countess of Morton
+<https://www.wikidata.org/wiki/Q75389911>
+  # Lady Elizabeth Douglas
   gen:father <https://www.wikidata.org/wiki/Q1680291> ;
   gen:mother <https://www.wikidata.org/wiki/Q75382144> .
-  # oo 1543 James Douglas, https://www.wikidata.org/wiki/Q1266779
+  # oo 1543 James Douglas, 4th Earl of Morton, 1516 - 1581-06-02, https://www.wikidata.org/wiki/Q1266779
 <https://www.wikidata.org/wiki/Q75269580>
   # Lady Beatrix Douglas
   gen:father <https://www.wikidata.org/wiki/Q1680291> ;
@@ -1756,101 +1823,129 @@
 # Douglas of Drumlanrig (Dukes of Queensberry, Marquesses of Queensberry, Earls of Queensberry)
 <https://www.wikidata.org/wiki/Q8007949>
   # Sir William Douglas, 1st of Drumlanrig, d. 1427
-  gen:father <https://www.wikidata.org/wiki/Q586953> . # illegitimate
+  gen:father <https://www.wikidata.org/wiki/Q586953> ; # illegitimate
+  gen:mother <https://www.wikidata.org/wiki/Q110638005> . # Margaret
   # oo Elizabeth Stewart, daughter of Sir Robert Stewart of Durisdeer
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q8007949> , <https://www.wikidata.org/wiki/Q75262230> .
 
-<#Sir_William_Douglas,_2nd_of_Drumlanrig>
+<https://www.wikidata.org/wiki/Q75262235>
   # Sir William Douglas, 2nd of Drumlanrig, d. 1458
-  gen:father <https://www.wikidata.org/wiki/Q8007949> .
+  gen:father <https://www.wikidata.org/wiki/Q8007949> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75262230> .
   # oo Jane Maxwell
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75262235> , <https://www.wikidata.org/wiki/Q75262236> .
 
-<#William_Douglas,_3rd_of_Drumlanrig>
+<https://www.wikidata.org/wiki/Q75262239>
   # William Douglas, 3rd of Drumlanrig, d. 1464
-  gen:father <#Sir_William_Douglas,_2nd_of_Drumlanrig> .
+  gen:father <https://www.wikidata.org/wiki/Q75262235> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75262236> .
   # oo Margaret Carlyle
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75262239> , <https://www.wikidata.org/wiki/Q75262240> .
 
-<#William_Douglas,_4th_of_Drumlanrig>
+<https://www.wikidata.org/wiki/Q75262244>
   # William Douglas, 4th of Drumlanrig, d. 1484-07-22
-  gen:father <#William_Douglas,_3rd_of_Drumlanrig> .
+  gen:father <https://www.wikidata.org/wiki/Q75262239> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75262240> .
+  # oo Elizabeth Crichton, daughter of Sir Robert Crichton of Sanquhar and Christian Erskine
+#  []
+#    gen:spouse <https://www.wikidata.org/wiki/Q75262244> , <https://www.wikidata.org/wiki/Q76373901> .
+  # oo 1482-06-07 Elizabeth Crichton, of Sanquhar, d. 1539-10a, daughter of Sir Robert Crichton of Sanquhar and Elizabeth Erskine
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75262244> , <https://www.wikidata.org/wiki/Q109335050> .
 
-<#James_Douglas,_5th_of_Drumlanrig>
+<https://www.wikidata.org/wiki/Q75262245>
   # James Douglas, 5th of Drumlanrig, d. 1498
-  gen:father <#William_Douglas,_4th_of_Drumlanrig> .
+  gen:father <https://www.wikidata.org/wiki/Q75262244> ;
+  gen:mother <https://www.wikidata.org/wiki/Q109335050> .
   # oo Janet Scott
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75262245> , <https://www.wikidata.org/wiki/Q75262247> ;
+	gen:startDate "1470" .
 
-<#Sir_William_Douglas,_6th_of_Drumlanrig>
+<https://www.wikidata.org/wiki/Q75389850>
   # Sir William Douglas, 6th of Drumlanrig, d. 1513-09-09
-  gen:father <#James_Douglas,_5th_of_Drumlanrig> .
+  gen:father <https://www.wikidata.org/wiki/Q75262245> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75262247> .
   # oo Elizabeth Gordon
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75389850> , <https://www.wikidata.org/wiki/Q75262251> .
 
 <https://www.wikidata.org/wiki/Q6132756>
   # Sir James Douglas, 7th of Drumlanrig, d. 1578
-  gen:father <#Sir_William_Douglas,_6th_of_Drumlanrig> .
-  # oo 1513 (div) Margaret Douglas
+  gen:father <https://www.wikidata.org/wiki/Q75389850> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75262251> .
+  # oo (div) Margaret Douglas
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q6132756> , <#Margaret_Douglas_2> .
+    gen:spouse <https://www.wikidata.org/wiki/Q6132756> , <https://www.wikidata.org/wiki/Q75389926> ;
+	gen:startDate "1513" .
   # oo Christian Montgomery
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q6132756> , <#Christian_Montgomery> .
+    gen:spouse <https://www.wikidata.org/wiki/Q6132756> , <https://www.wikidata.org/wiki/Q75262255> .
 <https://www.wikidata.org/wiki/Q75389849>
   # Janet Douglas
-  gen:father <#Sir_William_Douglas,_6th_of_Drumlanrig> .
-  # and Elizabeth Gordon
+  gen:father <https://www.wikidata.org/wiki/Q75389850> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75262251> .
   # oo 1509-07-04 Robert Maxwell, 5th Lord Maxwell, 1493~ - 1546-07-09, https://www.wikidata.org/wiki/Q13972091
 
-<#Sir_William_Douglas_of_Drumlanrig,_younger>
+<https://www.wikidata.org/wiki/Q75262260>
   # Sir William Douglas of Drumlanrig, younger, d. 1572-09-25
   gen:father <https://www.wikidata.org/wiki/Q6132756> ;
-  gen:mother <#Christian_Montgomery> .
+  gen:mother <https://www.wikidata.org/wiki/Q75262255> .
   # oo Margaret Gordon, d. 1581-01
   []
-    gen:spouse <#Sir_William_Douglas_of_Drumlanrig,_younger> , <gordon.ttl#Margaret_Gordon_(died_1581)> .
+    gen:spouse <https://www.wikidata.org/wiki/Q75262260> , <https://www.wikidata.org/wiki/Q75262261> .
 <https://www.wikidata.org/wiki/Q75267131>
   # Margaret Douglas, b. 1548~
   gen:father <https://www.wikidata.org/wiki/Q6132756> ;
-  gen:mother <#Christian_Montgomery> .
+  gen:mother <https://www.wikidata.org/wiki/Q75262255> .
   # oo 1561-06-04~ Edward Crichton, 7th Lord Crichton of Sanquhar, 1545~ - 1569-05-23, https://www.wikidata.org/wiki/Q75266511 (dalrymple.ttl)
   # oo 1571-05-16~ William Graham, 5th Earl of Menteith, 1555~ - 1578-09, https://www.wikidata.org/wiki/Q7619343
-<#Janet_Douglas>
+<https://www.wikidata.org/wiki/Q75501169>
   # Janet Douglas
   gen:father <https://www.wikidata.org/wiki/Q6132756> ;
-  gen:mother <#Christian_Montgomery> .
-  # oo 1563/1564-03-03 Sir William Ker of Cessford, d. 1599/1600-02, kerr.ttl#Sir_William_Kerr_of_Cessford
+  gen:mother <https://www.wikidata.org/wiki/Q75262255> .
+  # oo James Tweedie of Drumelzier
+  # oo 1563/1564-03-03 Sir William Ker of Cessford, d. 1599/1600-02, https://www.wikidata.org/wiki/Q75262732
 
 <https://www.wikidata.org/wiki/Q75262265>
   # Sir James Douglas, 8th of Drumlanrig, d. 1615-10-16
-  gen:father <#Sir_William_Douglas_of_Drumlanrig,_younger> ;
-  gen:mother <gordon.ttl#Margaret_Gordon_(died_1581)> .
+  gen:father <https://www.wikidata.org/wiki/Q75262260> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75262261> .
   # oo Mary Fleming, 1566 - 1635
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75262265> , <https://www.wikidata.org/wiki/Q75262266> .
-<#Margaret_Douglas_(died_1624)>
+<https://www.wikidata.org/wiki/Q75266495>
   # Margaret Douglas, 1562 - 1624
-  gen:father <#Sir_William_Douglas_of_Drumlanrig,_younger> ;
-  gen:mother <gordon.ttl#Margaret_Gordon_(died_1581)> .
-  # oo Sir Robert Montgomery of Skelmorlie, 1st Baronet, d. 1651-11, montgomerie.ttl#Sir_Robert_Montgomery_of_Skelmorlie,_1st_Baronet
-<#Christian_Douglas>
+  gen:father <https://www.wikidata.org/wiki/Q75262260> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75262261> .
+  # oo Sir Robert Montgomery of Skelmorlie, 1st Baronet, d. 1651-11, https://www.wikidata.org/wiki/Q76305451 (montgomerie.ttl)
+<https://www.wikidata.org/wiki/Q75304383>
   # Christian Douglas
-  gen:father <#Sir_William_Douglas_of_Drumlanrig,_younger> ;
-  gen:mother <gordon.ttl#Margaret_Gordon_(died_1581)> .
-  # oo Robert Dalzell, 1st Earl of Carnwath, d. 1654-06~, https://www.wikidata.org/wiki/Q16828800
+  gen:father <https://www.wikidata.org/wiki/Q75262260> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75262261> .
+  # oo Robert Dalzell, 1st Earl of Carnwath, d. 1654-06~, https://www.wikidata.org/wiki/Q16828800 (erskine.ttl)
 
 <https://www.wikidata.org/wiki/Q18577170>
   gen:name "William Douglas, 1st Earl of Queensberry"@en ;
   # Viscount Drumlanrig and Lord Douglas of Hawick and Tibberis 1628
   # Earl of Queensberry 1633
   gen:deathDate "1640-03-08" ;
-  gen:father <https://www.wikidata.org/wiki/Q75262265> .
+  gen:father <https://www.wikidata.org/wiki/Q75262265> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75262266> .
   # oo Lady Isobel Ker, d. 1628
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q18577170> , <kerr.ttl#Lady_Isabel_Kerr_(died_1628)> .
+    gen:spouse <https://www.wikidata.org/wiki/Q18577170> , <https://www.wikidata.org/wiki/Q75254901> ;
+	gen:startDate "1603-07-20~" .
 
 <https://www.wikidata.org/wiki/Q18576385>
   gen:name "James Douglas, 2nd Earl of Queensberry"@en ;
   gen:birthDate "1622-01b" ;
   gen:deathDate "1671" ;
   gen:father <https://www.wikidata.org/wiki/Q18577170> ;
-  gen:mother <kerr.ttl#Lady_Isabel_Kerr_(died_1628)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75254901> .
   # oo Lady Mary Hamilton, d. 1633-10-29
   []
     gen:spouse <https://www.wikidata.org/wiki/Q18576385> , <https://www.wikidata.org/wiki/Q75390089> ;
@@ -1859,18 +1954,23 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q18576385> , <https://www.wikidata.org/wiki/Q75262170> ;
 	gen:startDate "1635-03-26" .
-<#Sir_William_Douglas>
+<https://www.wikidata.org/wiki/Q17984927>
   gen:name "Hon. Sir William Douglas"@en ;
   gen:deathDate "1673b" ;
   gen:father <https://www.wikidata.org/wiki/Q18577170> ;
-  gen:mother <kerr.ttl#Lady_Isabel_Kerr_(died_1628)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75254901> .
   # oo Agnes Fawside
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q17984927> , <https://www.wikidata.org/wiki/Q75262183> .
   # oo Mrs Jean Riddell, née Stewart
-<#Lady_Margaret_Douglas_(died_1640a)>
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q17984927> , <https://www.wikidata.org/wiki/Q75262185> ;
+	gen:startDate "1649" .
+<https://www.wikidata.org/wiki/Q75262305>
   # Lady Margaret Douglas, d. 1640a
   gen:father <https://www.wikidata.org/wiki/Q18577170> ;
-  gen:mother <kerr.ttl#Lady_Isabel_Kerr_(died_1628)> .
-  # oo 1622-11-29 James Johnstone, 1st Earl of Hartfell, 1602 - 1653-04, https://www.wikidata.org/wiki/Q6136932
+  gen:mother <https://www.wikidata.org/wiki/Q75254901> .
+  # oo 1622-11-29 James Johnstone, 1st Earl of Hartfell, 1602 - 1653-04, https://www.wikidata.org/wiki/Q6136932 (hope.ttl)
 
 <https://www.wikidata.org/wiki/Q336126>
   gen:name "William Douglas, 1st Duke of Queensberry"@en ;
@@ -1883,13 +1983,13 @@
   gen:mother <https://www.wikidata.org/wiki/Q75262170> .
   # oo Lady Isabel Douglas, 1642 - 1691-12-02
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q336126> , <#Lady_Isabel_Douglas_(died_1691)> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q336126> , <https://www.wikidata.org/wiki/Q75389976> ;
 	gen:startDate "1657" .
-<#Lady_Catherine_Douglas>
+<https://www.wikidata.org/wiki/Q75262197>
   # Lady Catherine Douglas
   gen:father <https://www.wikidata.org/wiki/Q18576385> ;
   gen:mother <https://www.wikidata.org/wiki/Q75262170> .
-  # oo 1667-10-28~ Sir James Douglas, 1st Baronet of Kelhead, 1639-09-19 - 1708-04b, #Sir_James_Douglas,_1st_Baronet_of_Kelhead
+  # oo 1667-10-28~ Sir James Douglas, 1st Baronet of Kelhead, 1639-09-19 - 1708-04b, https://www.wikidata.org/wiki/Q69994133
 <https://www.wikidata.org/wiki/Q75455006>
   # Lady Mary Douglas
   gen:father <https://www.wikidata.org/wiki/Q18576385> ;
@@ -1905,56 +2005,58 @@
   gen:father <https://www.wikidata.org/wiki/Q18576385> ;
   gen:mother <https://www.wikidata.org/wiki/Q75262170> .
   # oo 1675b Sir Alexander Jardine of Applegirth, 1st Baronet, 1645 - 1689b, https://www.wikidata.org/wiki/Q75735057
-<#Sir_James_Douglas,_1st_Baronet_of_Kelhead>
+<https://www.wikidata.org/wiki/Q69994133>
   gen:name "Sir James Douglas, 1st Baronet of Kelhead"@en ;
+  # 1st Baronet Douglas, of Kelhead [Nova Scotia] 1668-02-26
   gen:birthDate "1639-09-19" ;
   gen:deathDate "1708-04b" ;
-  gen:father <#Sir_William_Douglas> .
-  # oo 1667-10-28~ Lady Catherine Douglas
+  gen:father <https://www.wikidata.org/wiki/Q17984927> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75262183> .
+  # oo Lady Catherine Douglas
   []
-    gen:spouse <#Sir_James_Douglas,_1st_Baronet_of_Kelhead> , <#Lady_Catherine_Douglas> .
+    gen:spouse <https://www.wikidata.org/wiki/Q69994133> , <https://www.wikidata.org/wiki/Q75262197> ;
+	gen:startDate "1667-10-28~" .
 
-<#Lady_Anne_Douglas_(died_1700)>
+<https://www.wikidata.org/wiki/Q75250114>
   # Lady Anne Douglas, d. 1700-02-23
   gen:father <https://www.wikidata.org/wiki/Q336126> ;
-  gen:mother <#Lady_Isabel_Douglas_(died_1691)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75389976> .
   # oo 1697-08-13~ David Wemyss, 4th Earl of Wemyss, 1678-04-29 - 1720-03-15, https://www.wikidata.org/wiki/Q7620366
 <https://www.wikidata.org/wiki/Q335636>
   gen:name "James Douglas, 2nd Duke of Queensberry"@en ;
   # 2nd Duke of Queensberry, 2nd Lord Douglas of Kinmouth, Midlebie, and Dornock, 2nd Marquess of Queensberry, 2nd Earl of Drumlanrig and Sanchar, 2nd Viscount of Nith, Torthorwald and Ross, 4th Lord Douglas of Hawick and Tibberis, 2nd Marquess of Dumfriesshire, 4th Earl of Queensberry, 4th Viscount of Drumlanrig 1695-03-28
-  # Duke of Dover, Marquess of Beverley and Baron Ripon 1708
   # 1st Duke of Dover, 1st Marquess of Beverley, co. York, 1st Baron Ripon, co. York 1708-05-26
   gen:birthDate "1662-12-18" ;
   gen:deathDate "1711-07-06" ;
   gen:father <https://www.wikidata.org/wiki/Q336126> ;
-  gen:mother <#Lady_Isabel_Douglas_(died_1691)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75389976> .
   # oo Hon. Mary Boyle, 1664~ – 1709-10-02
   []
     gen:spouse <https://www.wikidata.org/wiki/Q335636> , <https://www.wikidata.org/wiki/Q75251143> ;
 	gen:startDate "1685-12-01" .
-<#William_Douglas,_1st_Earl_of_March>
+<https://www.wikidata.org/wiki/Q75252075>
   gen:name "William Douglas, 1st Earl of March"@en ;
   # Earl of March, Viscount of Peebles, Lord Douglas of Neidpath, Lyne and Munard 1697
   gen:birthDate "1665~" ;
   gen:deathDate "1705-09-09" ;
   gen:father <https://www.wikidata.org/wiki/Q336126> ;
-  gen:mother <#Lady_Isabel_Douglas_(died_1691)> .
-  # oo 1693-10-12 Lady Jane Hay, d. 1729-07-05
+  gen:mother <https://www.wikidata.org/wiki/Q75389976> .
+  # oo Lady Jane Hay, d. 1729-07-05
   []
-    gen:spouse <#William_Douglas,_1st_Earl_of_March> , <hay.ttl#Lady_Jane_Hay_(died_1729)> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75252075> , <https://www.wikidata.org/wiki/Q75262178> ;
 	gen:startDate "1693-10-12" .
 <https://www.wikidata.org/wiki/Q21165975>
   gen:name "Lord George Douglas"@en ;
   gen:birthDate "1657" ;
   gen:deathDate "1693-07-31" ;
   gen:father <https://www.wikidata.org/wiki/Q336126> ;
-  gen:mother <#Lady_Isabel_Douglas_(died_1691)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75389976> .
 <https://www.wikidata.org/wiki/Q75262199>
   gen:name "Sir William Douglas, 2nd Baronet of Kelhead"@en ;
   gen:birthDate "1675~" ;
   gen:deathDate "1733-10-10" ;
-  gen:father <#Sir_James_Douglas,_1st_Baronet_of_Kelhead> ;
-  gen:mother <#Lady_Catherine_Douglas> .
+  gen:father <https://www.wikidata.org/wiki/Q69994133> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75262197> .
   # oo Helen Erskine, d. 1754-07-20
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75262199> , <https://www.wikidata.org/wiki/Q75262201> ;
@@ -1984,29 +2086,30 @@
   gen:father <https://www.wikidata.org/wiki/Q335636> ;
   gen:mother <https://www.wikidata.org/wiki/Q75251143> .
   # oo 1720-04-05 Francis Scott, 2nd Duke of Buccleuch, 1695-01-11 - 1751-04-22, https://www.wikidata.org/wiki/Q335289
-<#Lady_Anne_Douglas_(died_1741)>
+<https://www.wikidata.org/wiki/Q76259810>
   # Lady Anne Douglas, d, 1741-10-26
   gen:father <https://www.wikidata.org/wiki/Q335636> ;
   gen:mother <https://www.wikidata.org/wiki/Q75251143> .
   # oo 1733-01-23 Hon. William Finch, 1691-01-18 - 1766-12-25, https://www.wikidata.org/wiki/Q8009036
-<#William_Douglas,_2nd_Earl_of_March>
+<https://www.wikidata.org/wiki/Q75390168>
   gen:name "William Douglas, 2nd Earl of March"@en ;
   gen:birthDate "1696" ;
   gen:deathDate "1731-03-07" ;
-  gen:father <#William_Douglas,_1st_Earl_of_March> ;
-  gen:mother <hay.ttl#Lady_Jane_Hay_(died_1729)> .
-  # oo 1705 Lady Anne Hamilton, Countess of Ruglen, 1698-04-05 - 1748-04-21
+  gen:father <https://www.wikidata.org/wiki/Q75252075> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75262178> .
+  # oo Lady Anne Hamilton, Countess of Ruglen, 1698-04-05 - 1748-04-21
   []
-    gen:spouse <#William_Douglas,_2nd_Earl_of_March> , <https://www.wikidata.org/wiki/Q16318368> .
+    gen:spouse <https://www.wikidata.org/wiki/Q75390168> , <https://www.wikidata.org/wiki/Q16318368> ;
+	gen:startDate "1705" .
 <https://www.wikidata.org/wiki/Q16200179>
   gen:name "Sir John Douglas, 3rd Baronet of Kelhead"@en ;
   gen:birthDate "1708~" ;
   gen:deathDate "1778-11-13" ;
   gen:father <https://www.wikidata.org/wiki/Q75262199> ;
   gen:mother <https://www.wikidata.org/wiki/Q75262201> .
-  # oo Christian Cunningham, d. 1741-11, daughter of Sir William Cunningham of Caprington, 2nd Baronet
+  # oo Christian Cunningham, d. 1741-11 (sinclair.ttl)
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q16200179> , <#Christian_Cunningham> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q16200179> , <https://www.wikidata.org/wiki/Q75262208> ;
 	gen:startDate "1730~" .
 <https://www.wikidata.org/wiki/Q75266546>
   # Catherine Douglas, d. 1761-09-29
@@ -2021,13 +2124,13 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75266538> , <https://www.wikidata.org/wiki/Q75969788> .
 
-<#Henry_Douglas,_Earl_of_Drumlanrig>
+<https://www.wikidata.org/wiki/Q56742775>
   # Henry Douglas, Earl of Drumlanrig, 1722-10-30 - 1754-10-19
   gen:father <https://www.wikidata.org/wiki/Q335630> ;
   gen:mother <https://www.wikidata.org/wiki/Q5052743> .
   # oo Lady Elizabeth Hope, 1736-03-01 - 1756-04-07
   []
-    gen:spouse <#Henry_Douglas,_Earl_of_Drumlanrig> , <hope.ttl#Lady_Elizabeth_Hope_(died_1756)> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q56742775> , <https://www.wikidata.org/wiki/Q75263613> ;
 	gen:startDate "1754-07-24" .
 <https://www.wikidata.org/wiki/Q336604>
   gen:name "William Douglas, 4th Duke of Queensberry"@en ;
@@ -2036,155 +2139,168 @@
   # Duke of Queensberry 1778-10-22
   gen:birthDate "1724-12-16" ;
   gen:deathDate "1810-12-23" ;
-  gen:father <#William_Douglas,_2nd_Earl_of_March> ;
+  gen:father <https://www.wikidata.org/wiki/Q75390168> ;
   gen:mother <https://www.wikidata.org/wiki/Q16318368> .
 <https://www.wikidata.org/wiki/Q7529563>
   gen:name "Sir William Douglas, 4th Baronet of Kelhead"@en ;
   gen:birthDate "1730~" ;
   gen:deathDate "1783-05-16" ;
   gen:father <https://www.wikidata.org/wiki/Q16200179> ;
-  gen:mother <#Christian_Cunningham> .
-  # oo 1772-03-21 Dame Grace Johnstone, d. 1836-03-25, daughter of William Johnstone
-<#Charles_James_Sholto_Douglas>
+  gen:mother <https://www.wikidata.org/wiki/Q75262208> .
+  # oo Dame Grace Johnstone, d. 1836-03-25, daughter of William Johnstone
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7529563> , <https://www.wikidata.org/wiki/Q75262210> ;
+	gen:startDate "1772-03-21" .
+<https://www.wikidata.org/wiki/Q75262213>
   # Charles James Sholto Douglas
   gen:father <https://www.wikidata.org/wiki/Q16200179> ;
-  gen:mother <#Christian_Cunningham> .
+  gen:mother <https://www.wikidata.org/wiki/Q75262208> .
   # oo Basilia Dawes, daughter of James Dawes
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75262213> , <https://www.wikidata.org/wiki/Q75262215> .
 
 <https://www.wikidata.org/wiki/Q3847262>
   gen:name "Maria Emilia Fagnani"@en ;
   gen:birthDate "1771-08-24" ;
   gen:deathDate "1856-03-02" ;
-  gen:father <https://www.wikidata.org/wiki/Q336604> ;
-  gen:mother <#Costanza_Brusati,_Marchesa_Fagnani> .
+  gen:father <https://www.wikidata.org/wiki/Q336604> ; # illegitimate
+  gen:mother <https://www.wikidata.org/wiki/Q75759148> . # Donna Costanza Brusati
   # oo 1798-05-18 Francis Seymour-Conway, 3rd Marquess of Hertford, 1777-03-11 - 1842-03-01, https://www.wikidata.org/wiki/Q4356938
 <https://www.wikidata.org/wiki/Q5076938>
   gen:name "Charles Douglas, 6th Marquess of Queensberry"@en ;
   # 5th Baronet of Kelhead 1783-05-16
-  # 6th Marquess of Queensberry 1810
+  # 6th Marquess of Queensberry [S., 1681], 8th Earl of Queensberry [S., 1633], 6th Earl of Drumlanrig [S., 1681], 8th Viscount of Drumlanrig [S., 1628], 6th Viscount of Nith, Torthorwald and Ross [S., 1681], 8th Lord Douglas of Hawick and Tibberis [S., 1628], 6th Lord Douglas of Kinmouth, Midlebie, and Dornock [S., 1681] 1810-12-23
+  # 1st Baron Solway of Kinmount, co. Dumfries [U.K.] 1833-06-07
   gen:birthDate "1777-03" ;
   gen:deathDate "1837-12-03" ;
   gen:father <https://www.wikidata.org/wiki/Q7529563> ;
-  gen:mother <#Dame_Grace_Johnstone> .
+  gen:mother <https://www.wikidata.org/wiki/Q75262210> .
   # oo Lady Caroline Scott, 1774-07-06 - 1854-04-29
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q5076938> , <scott.ttl#Lady_Caroline_Scott> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q5076938> , <https://www.wikidata.org/wiki/Q75250057> ;
 	gen:startDate "1803-08-13" .
 <https://www.wikidata.org/wiki/Q6229871>
   gen:name "John Douglas, 7th Marquess of Queensberry"@en ;
   gen:birthDate "1779" ;
   gen:deathDate "1856-12-19" ;
   gen:father <https://www.wikidata.org/wiki/Q7529563> ;
-  gen:mother <#Dame_Grace_Johnstone> .
+  gen:mother <https://www.wikidata.org/wiki/Q75262210> .
   # oo Sarah Douglas, d. 1864-11-13
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q6229871> , <#Sarah_Douglas> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q6229871> , <https://www.wikidata.org/wiki/Q75262220> ;
 	gen:startDate "1817-07-16" .
-<#Henry_Alexander_Douglas>
+<https://www.wikidata.org/wiki/Q75262287>
   # Henry Alexander Douglas, 1781-10-07 - 1837-03-16
   gen:father <https://www.wikidata.org/wiki/Q7529563> ;
-  gen:mother <#Dame_Grace_Johnstone> .
+  gen:mother <https://www.wikidata.org/wiki/Q75262210> .
   # oo Elizabeth Dalzell, 1790-10-20 - 1837-03b
   []
-    gen:spouse <#Henry_Alexander_Douglas> , <#Elizabeth_Dalzell> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75262287> , <https://www.wikidata.org/wiki/Q75262288> ;
 	gen:startDate "1812-08-31" .
 <https://www.wikidata.org/wiki/Q15994409>
   gen:name "Lord William Robert Keith Douglas"@en ;
   gen:birthDate "1783" ;
   gen:deathDate "1859-12-05" ;
   gen:father <https://www.wikidata.org/wiki/Q7529563> ;
-  gen:mother <#Dame_Grace_Johnstone> .
+  gen:mother <https://www.wikidata.org/wiki/Q75262210> .
   # oo Elizabeth Irvine, d. 1864-04-25, daughter of Walter Irvine
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q15994409> , <#Elizabeth_Irvine> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q15994409> , <https://www.wikidata.org/wiki/Q75262293> ;
 	gen:startDate "1824-11-24" .
-<#James_Sholto_Douglas>
+<https://www.wikidata.org/wiki/Q75262630>
   # James Sholto Douglas, 1757-07-03 - 1830-01-12
-  gen:father <#Charles_James_Sholto_Douglas> .
-  # and Basilia Dawes
+  gen:father <https://www.wikidata.org/wiki/Q75262213> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75262215> .
   # oo Sarah Dawes, d. 1829-08, daughter of James Dawes
   []
-    gen:spouse <#James_Sholto_Douglas> , <#Sarah_Dawes> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75262630> , <https://www.wikidata.org/wiki/Q75262632> ;
 	gen:startDate "1784-03-13" .
-<#Stair_Douglas>
+<https://www.wikidata.org/wiki/Q75263603>
   # Stair Douglas, 1764-10-27 - 1826-11-22
-  gen:father <#Charles_James_Sholto_Douglas> .
-  # and Basilia Dawes
+  gen:father <https://www.wikidata.org/wiki/Q75262213> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75262215> .
   # oo Anne Payne, d. 1865-06-04, daughter of John Payne
   []
-    gen:spouse <#Stair_Douglas> , <#Anne_Payne> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75263603> , <https://www.wikidata.org/wiki/Q75263604> ;
 	gen:startDate "1802-07-24" .
 
-<#Lady_Jane_Margaret_Mary_Douglas>
+<https://www.wikidata.org/wiki/Q75262282>
   # Lady Jane Margaret Mary Douglas, 1811-01-15 - 1881-04-15
   gen:father <https://www.wikidata.org/wiki/Q5076938> ;
-  gen:mother <scott.ttl#Lady_Caroline_Scott> .
-  # oo 1841-01-27 Robert Johnstone-Douglas of Lockerbie, 1814-04-06 - 1866-10-12, #Robert_Johnstone-Douglas_of_Lockerbie
-<#Lady_Anne_Georgina_Douglas>
+  gen:mother <https://www.wikidata.org/wiki/Q75250057> .
+  # oo 1841-01-27 Robert Johnstone-Douglas of Lockerbie, 1814-04-06 - 1866-10-12, https://www.wikidata.org/wiki/Q75262291
+<https://www.wikidata.org/wiki/Q75262285>
   # Lady Anne Georgina Douglas, 1817-04-26 - 1899-11-28
   gen:father <https://www.wikidata.org/wiki/Q5076938> ;
-  gen:mother <scott.ttl#Lady_Caroline_Scott> .
-  # oo 1845-12-11 Charles Stirling-Home-Drummond-Moray, 9th of Blair Drummond and 19th of Abercairny, 1816-04-17 - 1891-09-25, home.ttl#Charles_Stirling-Home-Drummond-Moray,_9th_of_Blair_Drummond
+  gen:mother <https://www.wikidata.org/wiki/Q75250057> .
+  # oo 1845-12-11 Charles Stirling-Home-Drummond-Moray, 9th of Blair Drummond and 19th of Abercairny, 1816-04-17 - 1891-09-25, https://www.wikidata.org/wiki/Q75306884 (home.ttl)
 <https://www.wikidata.org/wiki/Q75262276>
   # Lady Harriet Christian Douglas, d. 1902-07-26
   gen:father <https://www.wikidata.org/wiki/Q5076938> ;
-  gen:mother <scott.ttl#Lady_Caroline_Scott> .
+  gen:mother <https://www.wikidata.org/wiki/Q75250057> .
   # oo 1841-05-13 Very Rev. Augustus Duncombe, 1814-11-02 - 1880-01-26, https://www.wikidata.org/wiki/Q4821410 (fane.ttl)
 <https://www.wikidata.org/wiki/Q4786292>
   gen:name "Archibald Douglas, 8th Marquess of Queensberry"@en ;
   gen:birthDate "1818-04-18" ;
   gen:deathDate "1858-08-06" ;
   gen:father <https://www.wikidata.org/wiki/Q6229871> ;
-  gen:mother <#Sarah_Douglas> .
-  # oo 1840-05-28 Caroline Margaret Clayton, 1821-07-14 - 1904-02-14 (nugent.ttl)
+  gen:mother <https://www.wikidata.org/wiki/Q75262220> .
+  # oo Caroline Margaret Clayton, 1821-07-14 - 1904-02-14 (nugent.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q4786292> , <https://www.wikidata.org/wiki/Q56190046> ;
 	gen:startDate "1840-05-28" .
-<#Robert_Johnstone-Douglas_of_Lockerbie> # -> Johnstone-Douglas
+<https://www.wikidata.org/wiki/Q75262291> # -> Johnstone-Douglas
   # Robert Johnstone-Douglas of Lockerbie, 1814-04-06 - 1866-10-12
-  gen:father <#Henry_Alexander_Douglas> ;
-  gen:mother <#Elizabeth_Dalzell> .
+  gen:father <https://www.wikidata.org/wiki/Q75262287> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75262288> .
 <https://www.wikidata.org/wiki/Q3181373>
   # John Douglas, 1828-03-06 – 1904-07-23
-  gen:father <#Henry_Alexander_Douglas> ;
-  gen:mother <#Elizabeth_Dalzell> .
+  gen:father <https://www.wikidata.org/wiki/Q75262287> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75262288> .
   # oo Mary Simpson, d. 1876-11-23, daughter of Reverend J. Simpson
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q3181373> , <#Mary_Simpson> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q3181373> , <https://www.wikidata.org/wiki/Q75262668> ;
 	gen:startDate "1861-01" .
   # oo Sarah Hickey, 1844-03 - 1931-03-19, daughter of Michael Hickey and Margaret Coffee
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q3181373> , <#Sarah_Hickey> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q3181373> , <https://www.wikidata.org/wiki/Q75262671> ;
 	gen:startDate "1877" .
-<#William_Douglas_Irvine>
+<https://www.wikidata.org/wiki/Q75266526>
   gen:name "William Douglas Irvine"@en ;
   gen:birthDate "1824" ;
-  gen:deathDate "1868" ;
+  gen:deathDate "1868-08-05" ;
   gen:father <https://www.wikidata.org/wiki/Q15994409> ;
-  gen:mother <#Elizabeth_Irvine> .
-<#Walter_Douglas_Irvine>
+  gen:mother <https://www.wikidata.org/wiki/Q75262293> .
+<https://www.wikidata.org/wiki/Q75266527>
   gen:name "Walter Douglas Irvine"@en ;
-  gen:birthDate "1825" ;
-  gen:deathDate "1901" ;
+  gen:birthDate "1825-07-07" ;
+  gen:deathDate "1901-03-07" ;
   gen:father <https://www.wikidata.org/wiki/Q15994409> ;
-  gen:mother <#Elizabeth_Irvine> .
-  # oo Anne Frances Lloyd
-<#Charles_Douglas_Irvine>
+  gen:mother <https://www.wikidata.org/wiki/Q75262293> .
+  # oo Anne Frances Lloyd, d. 1917-02-19, daughter of Robert Jones Lloyd
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75266527> , <https://www.wikidata.org/wiki/Q75266529> ;
+	gen:startDate "1870-01-13" .
+<https://www.wikidata.org/wiki/Q75266531>
   gen:name "Charles Douglas Irvine"@en ;
-  gen:birthDate "1837" ;
-  gen:deathDate "1918" ;
+  gen:birthDate "1837-07-29" ;
+  gen:deathDate "1918-02-19" ;
   gen:father <https://www.wikidata.org/wiki/Q15994409> ;
-  gen:mother <#Elizabeth_Irvine> .
-<#Sarah_Douglas>
+  gen:mother <https://www.wikidata.org/wiki/Q75262293> .
+  # oo Margaret Elizabeth Holmested, d. 1920-08-17, daughter of Arthur Holmested
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75266531> , <https://www.wikidata.org/wiki/Q75266533> ;
+	gen:startDate "1862-03-04" .
+<https://www.wikidata.org/wiki/Q75262220>
   # Sarah Douglas, d. 1864-11-13
-  gen:father <#James_Sholto_Douglas> ;
-  gen:mother <#Sarah_Dawes> .
+  gen:father <https://www.wikidata.org/wiki/Q75262630> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75262632> .
   # oo 1817-07-16 John Douglas, 7th Marquess of Queensberry, 1779 - 1856-12-19, https://www.wikidata.org/wiki/Q6229871
-<#Elizabeth_Louisa_Douglas>
+<https://www.wikidata.org/wiki/Q75612638>
   # Elizabeth Louisa Douglas, 1803-07-07 - 1840-10-28
-  gen:father <#Stair_Douglas> ;
-  gen:mother <#Anne_Payne> .
-  # oo 1830-05-04 Rev. Henry Legge, 1803-06-29 - 1879-11-08, legge.ttl#Henry_Legge_(died_1879)
+  gen:father <https://www.wikidata.org/wiki/Q75263603> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75263604> .
+  # oo 1830-05-04 Rev. Henry Legge, 1803-06-29 - 1879-11-08, https://www.wikidata.org/wiki/Q75612637
 
 <https://www.wikidata.org/wiki/Q335896>
   gen:name "John Sholto Douglas, 9th Marquess of Queensberry"@en ;
@@ -2194,12 +2310,12 @@
   gen:mother <https://www.wikidata.org/wiki/Q56190046> .
   # oo Sybil Montgomery, d. 1935-10-31
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q335896> , <montgomery.ttl#Sybil_Montgomery> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q335896> , <https://www.wikidata.org/wiki/Q75262675> ;
 	gen:startDate "1866-02-26" ;
 	gen:divorceDate "1887".
-  # oo Ethel Weedon
+  # oo Ethel Weedon, b. 1873, daughter of Edward Charles Weeden
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q335896> , <#Ethel_Weedon> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q335896> , <https://www.wikidata.org/wiki/Q75262679> ;
 	gen:startDate "1893-11-07" ;
 	gen:annulledDate "1894" .
 <https://www.wikidata.org/wiki/Q540800>
@@ -2224,92 +2340,100 @@
 <https://www.wikidata.org/wiki/Q24087724>
   # Edward Archibald Douglas, 1877-11-02 - 1947-08-27
   gen:father <https://www.wikidata.org/wiki/Q3181373> ;
-  gen:mother <#Sarah_Hickey> .
+  gen:mother <https://www.wikidata.org/wiki/Q75262671> .
   # oo Annette Eileen Power, d. 1966-07-13, daughter of Virgil Power
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q24087724> , <#Annette_Eileen_Power> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q24087724> , <https://www.wikidata.org/wiki/Q76305898> ;
 	gen:startDate "1907" .
 <https://www.wikidata.org/wiki/Q18716164>
   # Henry Alexander Cecil Douglas, 1879-04-08 - 1952-08-30
   gen:father <https://www.wikidata.org/wiki/Q3181373> ;
-  gen:mother <#Sarah_Hickey> .
+  gen:mother <https://www.wikidata.org/wiki/Q75262671> .
   # oo Flora Isabel Macdonald, d. 1910, daughter of Charles Hugh Macdonald
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q18716164> , <#Flora_Isabel_Macdonald> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q18716164> , <https://www.wikidata.org/wiki/Q76305965> ;
 	gen:startDate "1910" .
   # oo Catherine Cecilia Beirne, d. 1977
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q18716164> , <#Catherine_Cecilia_Beirne> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q18716164> , <https://www.wikidata.org/wiki/Q76305968> ;
 	gen:startDate "1914" .
 <https://www.wikidata.org/wiki/Q24044933>
   # Robert Johnstone Douglas, 1883-04-13 - 1972
   gen:father <https://www.wikidata.org/wiki/Q3181373> ;
-  gen:mother <#Sarah_Hickey> .
+  gen:mother <https://www.wikidata.org/wiki/Q75262671> .
   # oo Alice May Ball, d. 1954-11-21
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q24044933> , <#Alice_May_Ball> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q24044933> , <https://www.wikidata.org/wiki/Q76306190> ;
 	gen:startDate "1912-01-15" .
 <https://www.wikidata.org/wiki/Q5702158>
   # Helen Florence Douglas-Irvine, 1880-02-29 - 1946-05-22
-  gen:father <#Walter_Douglas_Irvine> .
-  # and Anne Frances Lloyd
+  gen:father <https://www.wikidata.org/wiki/Q75266527> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75266529> .
 
 <https://www.wikidata.org/wiki/Q5480759>
   gen:name "Francis Archibald Douglas, Viscount Drumlanrig"@en ;
   gen:birthDate "1867-02-03" ;
   gen:deathDate "1894-10-18" ;
   gen:father <https://www.wikidata.org/wiki/Q335896> ;
-  gen:mother <montgomery.ttl#Sybil_Montgomery> .
+  gen:mother <https://www.wikidata.org/wiki/Q75262675> .
 <https://www.wikidata.org/wiki/Q7167311>
   gen:name "Percy Sholto Douglas, 10th Marquess of Queensberry"@en ;
   gen:birthDate "1868-10-13" ;
   gen:deathDate "1920-08-01" ;
   gen:father <https://www.wikidata.org/wiki/Q335896> ;
-  gen:mother <montgomery.ttl#Sybil_Montgomery> .
-  # oo 1893-09-11 Anna Maria Walters, d. 1917-04-25
-  # oo 1918-12-04 Marie Louisa Bickel, d. 1956-04-04
+  gen:mother <https://www.wikidata.org/wiki/Q75262675> .
+  # oo Anna Maria Walters, 1866-03-02 - 1917-04-25, daughter of Thomas Walters and Sarah Frances Knowles
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7167311> , <https://www.wikidata.org/wiki/Q75262682> ;
+	gen:startDate "1893-09-11" .
+  # oo Marie Louisa Bickel, d. 1956-04-04, daughter of Richard Bickel
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7167311> , <https://www.wikidata.org/wiki/Q75263617> ;
+	gen:startDate "1918-12-04" .
 <https://www.wikidata.org/wiki/Q460660>
   gen:name "Lord Alfred Bruce Douglas"@en ;
   gen:birthDate "1870-10-22" ;
   gen:deathDate "1945-03-20" ;
   gen:father <https://www.wikidata.org/wiki/Q335896> ;
-  gen:mother <montgomery.ttl#Sybil_Montgomery> .
-  # oo 1902-03-04 Olive Eleanor Custance, 1874-02-07 1944-02-12
+  gen:mother <https://www.wikidata.org/wiki/Q75262675> .
+  # oo Olive Eleanor Custance, 1874-02-07 1944-02-12
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q460660> , <https://www.wikidata.org/wiki/Q7087146> .
-<#Lord_Sholto_George_Douglas>
+    gen:spouse <https://www.wikidata.org/wiki/Q460660> , <https://www.wikidata.org/wiki/Q7087146> ;
+	gen:startDate "1902-03-04" .
+<https://www.wikidata.org/wiki/Q75266595>
   # Lord Sholto George Douglas, 1872 - 1942-04-06
   gen:father <https://www.wikidata.org/wiki/Q335896> ;
-  gen:mother <montgomery.ttl#Sybil_Montgomery> .
-  # oo Loretta Mooney
+  gen:mother <https://www.wikidata.org/wiki/Q75262675> .
+  # oo Loretta Mooney, 1876-05-20 - 1936
   []
-    gen:spouse <#Lord_Sholto_George_Douglas> , <#Loretta_Mooney> ;
-	gen:startDate "1895" ;
-	gen:divorceDate "1920" .
+    gen:spouse <https://www.wikidata.org/wiki/Q75266595> , <https://www.wikidata.org/wiki/Q75266597> ;
+	gen:startDate "1895-05-31" ;
+	gen:divorceDate "1920-05-20" .
   # oo Georgina Leonora Mosselmans, d. 1969-04-30, daughter of Richard Frederick Hendrik Mosselmans
   []
-    gen:spouse <#Lord_Sholto_George_Douglas> , <#Georgina_Leonora_Mosselmans> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75266595> , <https://www.wikidata.org/wiki/Q75266599> ;
 	gen:startDate "1921-04-23" ;
 	gen:divorceDate "1925" .
   # oo Lily Louise Edmunds, daughter of Charles Edmunds
   []
-    gen:spouse <#Lord_Sholto_George_Douglas> , <#Lily_Louise_Edmunds> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75266595> , <https://www.wikidata.org/wiki/Q75266600> ;
 	gen:startDate "1926-10-11" .
-<#Alexander_Michael_Douglas>
+<https://www.wikidata.org/wiki/Q75935893>
   # Alexander Michael Douglas, 1926-11-11 - 2008
   gen:father <https://www.wikidata.org/wiki/Q18716164> ;
-  gen:mother <#Catherine_Cecilia_Beirne> .
+  gen:mother <https://www.wikidata.org/wiki/Q76305968> .
   # oo Morna Therese O'Rourke, daughter of Michael Patrick O'Rourke
   []
-    gen:spouse <#Alexander_Michael_Douglas> , <#Morna_Therese_O'Rourke> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75935893> , <https://www.wikidata.org/wiki/Q76305972> ;
 	gen:startDate "1954-09-15" .
 
 <https://www.wikidata.org/wiki/Q5480753>
   gen:name "Francis Archibald Kelhead Douglas, 11th Marquess of Queensberry"@en ;
   gen:birthDate "1896-01-17" ;
   gen:deathDate "1954-04-27" ;
-  gen:father <https://www.wikidata.org/wiki/Q7167311> .
-  # oo Irene Clarice Richards, d. 1977-10-24
+  gen:father <https://www.wikidata.org/wiki/Q7167311> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75262682> .
+  # oo Irene Clarice Richards, d. 1977-10-24, daughter of Henry William Richards
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5480753> , <https://www.wikidata.org/wiki/Q75262685> ;
 	gen:startDate "1917-12-04" ;
@@ -2319,91 +2443,105 @@
     gen:spouse <https://www.wikidata.org/wiki/Q5480753> , <https://www.wikidata.org/wiki/Q15999282> ;
 	gen:startDate "1926-03-18" ;
 	gen:divorceDate "1946" .
-  # oo 1947-04-23 Muriel Beatrice Margaret Thornett, d. 1992
+  # oo Muriel Beatrice Margaret Thornett, d. 1992, daughter of Arthur John Rowe Thornett
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5480753> , <https://www.wikidata.org/wiki/Q75262689> ;
+	gen:startDate "1947-04-23" .
 <https://www.wikidata.org/wiki/Q4716928>
   # Alexander Rodney Douglas, b. 1958-11-24
-  gen:father <#Alexander_Michael_Douglas> ;
-  gen:mother <#Morna_Therese_O'Rourke> .
+  gen:father <https://www.wikidata.org/wiki/Q75935893> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76305972> .
   # oo Susan Kim Primmer, daughter of C. Primmer
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q4716928> , <#Susan_Kim_Primmer> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q4716928> , <https://www.wikidata.org/wiki/Q76306078> ;
 	gen:startDate "1983" .
 
-<#Lady_Patricia_Sybil_Douglas>
+<https://www.wikidata.org/wiki/Q75266562>
   gen:name "Lady Patricia Sybil Douglas"@en ;
   gen:birthDate "1918-12-24" ;
   gen:father <https://www.wikidata.org/wiki/Q5480753> ;
   gen:mother <https://www.wikidata.org/wiki/Q75262685> .
-  # oo 1938-01-27 (div 1950) Count John Gerard de Bendern, 1907-03-31 – 1997-04-10, https://www.wikidata.org/wiki/Q30106712
-  # oo 1950 (div 1960) Hermann Hornak
+  # oo 1938-01-27 (div 1950) John Gerard de Forest, 1907-03-31 – 1997-04-10, https://www.wikidata.org/wiki/Q30106712
+  # oo 1950 (div 1960) Hermann Hornak, https://www.wikidata.org/wiki/Q75266567
 <https://www.wikidata.org/wiki/Q5233046>
   gen:name "David Harrington Angus Douglas, 12th Marquess of Queensberry"@en ;
   gen:birthDate "1929-12-19" ;
   gen:father <https://www.wikidata.org/wiki/Q5480753> ;
   gen:mother <https://www.wikidata.org/wiki/Q15999282> .
-  # oo 1956-07-08 (div 1969) Anne Jones
-  # oo 1969-07-10 (div 1986) Alexandra Mary Clare Wyndham Sich
-  # oo 2000-07-03 Hsueh-Chun Liao
+  # oo Anne Jones, daughter of Maurice Sinnett Jones
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5233046> , <https://www.wikidata.org/wiki/Q75262695> ;
+	gen:startDate "1956-07-08" ;
+	gen:divorceDate "1969" .
+  # oo Alexandra Mary Clare Wyndham Sich, daughter of Guy Wyndham Sich
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5233046> , <https://www.wikidata.org/wiki/Q75262699> ;
+	gen:startDate "1969-07-10" ;
+	gen:divorceDate "1986" .
+  # oo Hsueh-Chun Liao
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5233046> , <https://www.wikidata.org/wiki/Q76305314> ;
+	gen:startDate "2000-07-03" .
 
-<#Lady_Emma_Cathleen_Douglas>
+<https://www.wikidata.org/wiki/Q75263624>
   # Lady Emma Cathleen Douglas, b. 1956-09-13
   gen:father <https://www.wikidata.org/wiki/Q5233046> ;
-  gen:mother <#Anne_Jones> .
+  gen:mother <https://www.wikidata.org/wiki/Q75262695> .
   # oo 1986 Damon Lewis Vincent Heath
-<#Lady_Alice_Douglas>
+<https://www.wikidata.org/wiki/Q75263626>
   # Lady Alice Douglas, b. 1965-07-23
   gen:father <https://www.wikidata.org/wiki/Q5233046> ;
-  gen:mother <#Anne_Jones> .
-  # oo Ali Ugan
-  # oo 1995-07-28 Simon Melia, b. 1968~
-<#Sholto_Francis_Guy_Douglas,_Viscount_Drumlanrig>
+  gen:mother <https://www.wikidata.org/wiki/Q75262695> .
+  # oo 1989 (div) Ali Ugan
+  # oo 1995-07-28 (div) Simon Melia, b. 1968~
+<https://www.wikidata.org/wiki/Q76014655>
   # Sholto Francis Guy Douglas, Viscount Drumlanrig, b. 1967-06-01
   gen:father <https://www.wikidata.org/wiki/Q5233046> ;
-  gen:mother <#Alexandra_Mary_Clare_Wyndham_Sich> .
-<#Lady_Kate_Cordelia_Sasha_Douglas>
+  gen:mother <https://www.wikidata.org/wiki/Q75262699> .
+<https://www.wikidata.org/wiki/Q76305310>
   # Lady Kate Cordelia Sasha Douglas, b. 1969-11-21
   gen:father <https://www.wikidata.org/wiki/Q5233046> ;
-  gen:mother <#Alexandra_Mary_Clare_Wyndham_Sich> .
+  gen:mother <https://www.wikidata.org/wiki/Q75262699> .
   # oo 1999 Tom Weisselberg
-<#Lord_Milo_Luke_Dickon_Douglas>
+<https://www.wikidata.org/wiki/Q76089363>
   # Lord Milo Luke Dickon Douglas, 1975-04-06 - 2009-07-21
   gen:father <https://www.wikidata.org/wiki/Q5233046> ;
-  gen:mother <#Alexandra_Mary_Clare_Wyndham_Sich> .
-<#Lord_Torquil_Oberon_Tobias_Douglas>
+  gen:mother <https://www.wikidata.org/wiki/Q75262699> .
+<https://www.wikidata.org/wiki/Q76305307>
   # Lord Torquil Oberon Tobias Douglas, b. 1978-11-02
   gen:father <https://www.wikidata.org/wiki/Q5233046> ;
-  gen:mother <#Alexandra_Mary_Clare_Wyndham_Sich> .
-<#Lady_Beth_Shan_Ling_Douglas>
+  gen:mother <https://www.wikidata.org/wiki/Q75262699> .
+<https://www.wikidata.org/wiki/Q76305316>
   # Lady Beth Shan Ling Douglas, 1999-08-07 - 2018-03-07
   gen:father <https://www.wikidata.org/wiki/Q5233046> ;
-  gen:mother <#Hsueh-Chun_Liao> .
+  gen:mother <https://www.wikidata.org/wiki/Q76305314> .
 
 
 # Johnstone-Douglas
-<#Robert_Johnstone-Douglas_of_Lockerbie>
+<https://www.wikidata.org/wiki/Q75262291>
   # Robert Johnstone-Douglas of Lockerbie, 1814-04-06 - 1866-10-12
-  gen:father <#Henry_Alexander_Douglas> ;
-  gen:mother <#Elizabeth_Dalzell> .
+  gen:father <https://www.wikidata.org/wiki/Q75262287> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75262288> .
   # oo Lady Jane Margaret Mary Douglas, 1811-01-15 - 1881-04-15
   []
-    gen:spouse <#Robert_Johnstone-Douglas_of_Lockerbie> , <#Lady_Jane_Margaret_Mary_Douglas> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75262291> , <https://www.wikidata.org/wiki/Q75262282> ;
 	gen:startDate "1841-01-27" .
 
 <https://www.wikidata.org/wiki/Q75262625>
   # Grace Elizabeth Johnstone-Douglas, d. 1910-01-19
-  gen:father <#Robert_Johnstone-Douglas_of_Lockerbie> ;
-  gen:mother <#Lady_Jane_Margaret_Mary_Douglas> .
+  gen:father <https://www.wikidata.org/wiki/Q75262291> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75262282> .
   # oo 1867-09-19 William Edwardes, 4th Baron Kensington, 1835-05-11 - 1896-10-07, https://www.wikidata.org/wiki/Q8008474 # -> ponsonby.ttl
 <https://www.wikidata.org/wiki/Q75262616>
   # Arthur Henry Johnstone-Douglas, 1846-06-23 - 1923-03-26
-  gen:father <#Robert_Johnstone-Douglas_of_Lockerbie> ;
-  gen:mother <#Lady_Jane_Margaret_Mary_Douglas> .
+  gen:father <https://www.wikidata.org/wiki/Q75262291> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75262282> .
   # oo Jane Maitland Hathorn-Stewart, d. 1930-05-26
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75262616> , <https://www.wikidata.org/wiki/Q75262617> ;
 	gen:startDate "1869-07-14" .
 
-<#Margaret_Jean_Johnstone-Douglas>
+<https://www.wikidata.org/wiki/Q21557730>
   # Margaret Jean Johnstone-Douglas, 1872-12-21 - 1960-07-31
   gen:father <https://www.wikidata.org/wiki/Q75262616> ;
   gen:mother <https://www.wikidata.org/wiki/Q75262617> .
@@ -2416,45 +2554,59 @@
 
 
 # Douglas of Cavers
-<#Archibald_Douglas,_1st_of_Cavers>
+<https://www.wikidata.org/wiki/Q75389772>
   # Archibald Douglas, 1st of Cavers, b. 1373a
-  gen:father <https://www.wikidata.org/wiki/Q586953> .
-
-<#William_Douglas,_2nd_of_Cavers>
-  # William Douglas, 2nd of Cavers, d. 1464-01-08
-  gen:father <#Archibald_Douglas,_1st_of_Cavers> .
-
-<#Sir_Archibald_Douglas,_3rd_of_Cavers>
-  # Sir Archibald Douglas, 3rd of Cavers, d. 1486
-  gen:father <#William_Douglas,_2nd_of_Cavers> .
-
-<#William_Douglas,_4th_of_Cavers>
-  # William Douglas, 4th of Cavers, d. 1506-10-26
-  gen:father <#Sir_Archibald_Douglas,_3rd_of_Cavers> .
-
-<#Sir_James_Douglas,_5th_of_Cavers>
-  # Sir James Douglas, 5th of Cavers, d. 1545-09-28
-  gen:father <#William_Douglas,_4th_of_Cavers> .
-  # oo 1537 Elizabeth Murray
-
-<#Sir_James_Douglas,_6th_of_Cavers>
-  # Sir James Douglas, 6th of Cavers, d. 1558-07
-  gen:father <#Sir_James_Douglas,_5th_of_Cavers> .
-  # and Elizabeth Murray
-  # oo Christian Kerr
-
-<#Sir_William_Douglas,_7th_of_Cavers>
-  # Sir William Douglas, 7th of Cavers
-  gen:father <#Sir_James_Douglas,_6th_of_Cavers> .
-  # and Christian Kerr
-  # oo Euphemia Ker, daughter of Sir William Ker of Cessford and Janet Douglas
+  gen:father <https://www.wikidata.org/wiki/Q586953> ;
+  gen:mother <https://www.wikidata.org/wiki/Q105826451> .
+  # oo Margaret (?)
   []
-    gen:spouse <#Sir_William_Douglas,_7th_of_Cavers> , <kerr.ttl#Euphemia_Ker> .
+    gen:spouse <https://www.wikidata.org/wiki/Q75389772> , <https://www.wikidata.org/wiki/Q76251841> .
+
+<https://www.wikidata.org/wiki/Q76016823>
+  # William Douglas, 2nd of Cavers, d. 1464-01-08
+  gen:father <https://www.wikidata.org/wiki/Q75389772> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76251841> .
+
+<https://www.wikidata.org/wiki/Q75715045>
+  # Sir Archibald Douglas, 3rd of Cavers, d. 1486
+  gen:father <https://www.wikidata.org/wiki/Q76016823> .
+
+<https://www.wikidata.org/wiki/Q76037660>
+  # William Douglas, 4th of Cavers, d. 1506-10-26
+  gen:father <https://www.wikidata.org/wiki/Q75715045> .
+<https://www.wikidata.org/wiki/Q75715039>
+  # Elizabeth Douglas
+  gen:father <https://www.wikidata.org/wiki/Q75715045> .
+  # oo Sir Alexander Stewart, 3rd of Garlies, d. 1500~, https://www.wikidata.org/wiki/Q75268585 (stuart.ttl)
+
+<https://www.wikidata.org/wiki/Q76251503>
+  # Sir James Douglas, 5th of Cavers, d. 1545-09-28
+  gen:father <https://www.wikidata.org/wiki/Q76037660> .
+  # oo Elizabeth Murray
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76251503> , <https://www.wikidata.org/wiki/Q76251842> ;
+	gen:startDate "1537" .
+
+<https://www.wikidata.org/wiki/Q76251843>
+  # Sir James Douglas, 6th of Cavers, d. 1558-07
+  gen:father <https://www.wikidata.org/wiki/Q76251503> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76251842> .
+  # oo Christian Kerr
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76251843> , <https://www.wikidata.org/wiki/Q76251848> .
+
+<https://www.wikidata.org/wiki/Q76251849>
+  # Sir William Douglas, 7th of Cavers
+  gen:father <https://www.wikidata.org/wiki/Q76251843> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76251848> .
+  # oo Euphemia Ker
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76251849> , <https://www.wikidata.org/wiki/Q76251850> .
 
 <https://www.wikidata.org/wiki/Q76251851>
   # Sir James Douglas, 8th of Cavers, d. 1612
-  gen:father <#Sir_William_Douglas,_7th_of_Cavers> ;
-  gen:mother <kerr.ttl#Euphemia_Ker> .
+  gen:father <https://www.wikidata.org/wiki/Q76251849> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76251850> .
   # oo Margaret Cranstoun (lindsay.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q76251851> , <https://www.wikidata.org/wiki/Q76251852> ;
@@ -2469,18 +2621,18 @@
     gen:spouse <https://www.wikidata.org/wiki/Q75940529> , <https://www.wikidata.org/wiki/Q76251509> ;
 	gen:startDate "1630b" .
 
-<#Euphemia_Douglas>
+<https://www.wikidata.org/wiki/Q75940530>
   # Euphemia Douglas
   gen:father <https://www.wikidata.org/wiki/Q75940529> ;
   gen:mother <https://www.wikidata.org/wiki/Q76251509> .
-  # oo 1693 Sir James Scott, 4th of Gala, d. 1721a, scott.ttl#Sir_James_Scott,_4th_of_Gala
+  # oo 1693 Sir James Scott, 4th of Gala, d. 1721a, https://www.wikidata.org/wiki/Q75940512
 
 
 # ========
 # Douglas of Lochleven (Earls of Morton, Barons Penrhyn)
 <https://www.wikidata.org/wiki/Q75388332>
   # Sir Henry Douglas, of Lugton and Lochleven
-  gen:father <#Sir_John_Douglas> .
+  gen:father <https://www.wikidata.org/wiki/Q75389487> .
   # oo Marjory Stewart, d. 1438
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75388332> , <https://www.wikidata.org/wiki/Q75243145> ;
@@ -2497,50 +2649,56 @@
   gen:father <https://www.wikidata.org/wiki/Q75388332> .
   # oo Walter Hamilton of Darngaber, https://www.wikidata.org/wiki/Q75284194
 
-<#Sir_Henry_Douglas_of_Lochleven>
+<https://www.wikidata.org/wiki/Q75615012>
   # Sir Henry Douglas, of Lochleven
   gen:father <https://www.wikidata.org/wiki/Q76006578> ;
   gen:mother <https://www.wikidata.org/wiki/Q75388331> .
   # oo Elizabeth Erskine, daughter of Sir Robert Erskine of Erskine
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75615012> , <https://www.wikidata.org/wiki/Q76169330> .
 
-<#Sir_Robert_Douglas_of_Lochleven_(died_1513)>
+<https://www.wikidata.org/wiki/Q75389834>
   # Sir Robert Douglas, of Lochleven, d. 1513-09-09
-  gen:father <#Sir_Henry_Douglas_of_Lochleven> .
+  gen:father <https://www.wikidata.org/wiki/Q75615012> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76169330> .
   # oo Elizabeth Boswell, daughter of David Boswell, 1st of Boswell and Elizabeth Melville
   []
-    gen:spouse <#Sir_Robert_Douglas_of_Lochleven_(died_1513)> , <#Elizabeth_Boswell> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75389834> , <https://www.wikidata.org/wiki/Q76193117> ;
 	gen:startDate "1445-04-10" .
   # oo Isabel Sibbald, d. 1497-02-21b, daughter of Sir John Sibbald
   []
-    gen:spouse <#Sir_Robert_Douglas_of_Lochleven_(died_1513)> , <#Isabel_Sibbald> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75389834> , <https://www.wikidata.org/wiki/Q61466215> ;
 	gen:startDate "1479a" .
-  # oo 1500a/1503b Mary Baillie, daughter of Sir William Baillie of Lamington
-
-<#Sir_Robert_Douglas_of_Lochleven>
-  # Sir Robert Douglas, of Lochleven
-  gen:father <#Sir_Robert_Douglas_of_Lochleven_(died_1513)> ;
-  gen:mother <#Elizabeth_Boswell> .
-  # oo 1500b Margaret Balfour, daughter of David Balfour of Burleigh and Agnes Forrester
+  # oo Mary Baillie, daughter of Sir William Baillie of Lamington
   []
-    gen:spouse <#Sir_Robert_Douglas_of_Lochleven> , <#Margaret_Balfour> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75389834> , <https://www.wikidata.org/wiki/Q75389582> ;
+	gen:startDate "1500a/1503b" .
+
+<https://www.wikidata.org/wiki/Q75263446>
+  # Sir Robert Douglas, of Lochleven
+  gen:father <https://www.wikidata.org/wiki/Q75389834> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76193117> .
+  # oo Margaret Balfour, daughter of David Balfour of Burleigh and Agnes Forrester
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75263446> , <https://www.wikidata.org/wiki/Q75330489> ;
 	gen:startDate "1500b" .
   # oo Lady Margaret Hay, 1453 – 1500a
   []
-    gen:spouse <#Sir_Robert_Douglas_of_Lochleven> , <https://www.wikidata.org/wiki/Q75573513> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75263446> , <https://www.wikidata.org/wiki/Q75573513> ;
 	gen:startDate "1500-01" .
 
-<#Thomas_Douglas,_younger_of_Lochleven>
+<https://www.wikidata.org/wiki/Q76169327>
   # Thomas Douglas, younger of Lochleven
-  gen:father <#Sir_Robert_Douglas_of_Lochleven> ;
-  gen:mother <#Margaret_Balfour> .
+  gen:father <https://www.wikidata.org/wiki/Q75263446> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75330489> .
   # oo Elizabeth Boyd
   []
-    gen:spouse <#Thomas_Douglas,_younger_of_Lochleven> , <boyd.ttl#Elizabeth_Boyd> .
+    gen:spouse <https://www.wikidata.org/wiki/Q76169327> , <https://www.wikidata.org/wiki/Q76193119> .
 
 <https://www.wikidata.org/wiki/Q75330526>
   # Sir Robert Douglas, of Lochleven, d. 1547-09-10
-  gen:father <#Thomas_Douglas,_younger_of_Lochleven> ;
-  gen:mother <boyd.ttl#Elizabeth_Boyd> .
+  gen:father <https://www.wikidata.org/wiki/Q76169327> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76193119> .
   # oo Margaret Erskine, 1513 - 1572-05-05
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75330526> , <https://www.wikidata.org/wiki/Q532354> ;
@@ -2570,7 +2728,7 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7617726> , <https://www.wikidata.org/wiki/Q4693073> ;
 	gen:startDate "1554-08-19" .
-<#Sir_George_Douglas>
+<https://www.wikidata.org/wiki/Q75605559>
   # Sir George Douglas
   gen:father <https://www.wikidata.org/wiki/Q75330526> ;
   gen:mother <https://www.wikidata.org/wiki/Q532354> .
@@ -2601,12 +2759,12 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q17322511> , <https://www.wikidata.org/wiki/Q75272202> ;
 	gen:startDate "1598" .
-<#Lady_Christian_Douglas>
+<https://www.wikidata.org/wiki/Q75543193>
   # Lady Christian Douglas
   gen:father <https://www.wikidata.org/wiki/Q7617726> ;
   gen:mother <https://www.wikidata.org/wiki/Q4693073> .
-  # oo Laurence, Master of Oliphant, d. 1585-03
-  # oo Alexander Home, 1st Earl of Home, 1566~ - 1619-04-05, https://www.wikidata.org/wiki/Q16844561
+  # oo Laurence Oliphant, Master of Oliphant, d. 1585-03/1584, https://www.wikidata.org/wiki/Q75389985 (hay.ttl)
+  # oo 1585-12-14~ Alexander Home, 1st Earl of Home, 1566~ - 1619-04-05, https://www.wikidata.org/wiki/Q16844561
 <https://www.wikidata.org/wiki/Q75389882>
   gen:name "Robert Douglas, Master of Morton"@en ;
   gen:deathDate "1585-03" ;
@@ -2616,12 +2774,12 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75389882> , <https://www.wikidata.org/wiki/Q75388586> ;
 	gen:startDate "1583-03-19" .
-<#Lady_Elizabeth_Douglas,_Countess_of_Erroll>
+<https://www.wikidata.org/wiki/Q75390858>
   # Lady Elizabeth Douglas
   gen:father <https://www.wikidata.org/wiki/Q7617726> ;
   gen:mother <https://www.wikidata.org/wiki/Q4693073> .
   # oo 1590 Francis Hay, 9th Earl of Erroll, 1564-04-30 - 1631-07-16, https://www.wikidata.org/wiki/Q5481257
-<#Lady_Euphemia_Douglas>
+<https://www.wikidata.org/wiki/Q75266786>
   # Lady Euphemia Douglas
   gen:father <https://www.wikidata.org/wiki/Q7617726> ;
   gen:mother <https://www.wikidata.org/wiki/Q4693073> .
@@ -2631,7 +2789,7 @@
   gen:father <https://www.wikidata.org/wiki/Q7617726> ;
   gen:mother <https://www.wikidata.org/wiki/Q4693073> .
   # oo 1592-07-24 Archibald Campbell, 7th Earl of Argyll, 1575 - 1638, https://www.wikidata.org/wiki/Q2102021
-<#Sir_George_Douglas,_1st_of_Kirkness_and_Kynnesswood> # -> Douglas of Kirkness
+<https://www.wikidata.org/wiki/Q76196457> # -> Douglas of Kirkness
   # Sir George Douglas, 1st of Kirkness and Kynnesswood, d. 1609-12-09~
   gen:father <https://www.wikidata.org/wiki/Q7617726> ;
   gen:mother <https://www.wikidata.org/wiki/Q4693073> .
@@ -2642,7 +2800,7 @@
   # oo 1582 Walter Ogilvy, 1st Lord Ogilvy of Deskford, d. 1625-07-06a/1627-02-14b, https://www.wikidata.org/wiki/Q75240609
 <https://www.wikidata.org/wiki/Q75605558>
   # Margaret Douglas, d. 1615-09-12a
-  gen:father <#Sir_George_Douglas> .
+  gen:father <https://www.wikidata.org/wiki/Q75605559> .
   # oo 1593 Sir George Ramsay, 1st Lord Ramsay of Dalhousie, 1570a - 1629-07-22b, https://www.wikidata.org/wiki/Q15440848
 
 <https://www.wikidata.org/wiki/Q17325081>
@@ -2659,44 +2817,44 @@
   gen:mother <https://www.wikidata.org/wiki/Q75388586> .
   # oo Lady Anne Keith, d. 1648-05-30
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q7617765> , <keith.ttl#Lady_Anne_Keith_(died_1648)> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q7617765> , <https://www.wikidata.org/wiki/Q75269339> ;
 	gen:startDate "1604-03-28" .
 
 <https://www.wikidata.org/wiki/Q7343605>
   # Robert Douglas, 8th Earl of Morton, 1616b - 1649-11-12
   gen:father <https://www.wikidata.org/wiki/Q7617765> ;
-  gen:mother <keith.ttl#Lady_Anne_Keith_(died_1648)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75269339> .
   # oo Elizabeth/Anne Villiers, 1610 - 1654-12-15
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7343605> , <https://www.wikidata.org/wiki/Q4768865> ;
 	gen:startDate "1627-04" .
-<#James_Douglas,_10th_Earl_of_Morton>
+<https://www.wikidata.org/wiki/Q75269585>
   # James Douglas, 10th Earl of Morton, d. 1686-08-25
   gen:father <https://www.wikidata.org/wiki/Q7617765> ;
-  gen:mother <keith.ttl#Lady_Anne_Keith_(died_1648)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75269339> .
   # oo Anne Hay, d. 1700-02-14~
   []
-    gen:spouse <#James_Douglas,_10th_Earl_of_Morton> , <hay.ttl#Anne_Hay_(died_1700)> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75269585> , <https://www.wikidata.org/wiki/Q75269587> ;
 	gen:startDate "1649-02-10" .
-<#Lady_Margaret_Douglas_(died_1678)>
+<https://www.wikidata.org/wiki/Q75264617>
   # Lady Margaret Douglas, 1610 - 1678-03-13
   gen:father <https://www.wikidata.org/wiki/Q7617765> ;
-  gen:mother <keith.ttl#Lady_Anne_Keith_(died_1648)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75269339> .
   # oo 1626-08-07 Archibald Campbell, 1st Marquess of Argyll, 1607 - 1661-05-27, https://www.wikidata.org/wiki/Q977300
-<#Lady_Anne_Douglas_(died_1667)>
+<https://www.wikidata.org/wiki/Q75274017>
   # Lady Anne Douglas, d. 1667-12~
   gen:father <https://www.wikidata.org/wiki/Q7617765> ;
-  gen:mother <keith.ttl#Lady_Anne_Keith_(died_1648)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75269339> .
   # oo 1622-09-07a George Hay, 2nd Earl of Kinnoull, 1596 - 1644-10-05, https://www.wikidata.org/wiki/Q19874922
 <https://www.wikidata.org/wiki/Q75274765>
   # Lady Mary Douglas
   gen:father <https://www.wikidata.org/wiki/Q7617765> ;
-  gen:mother <keith.ttl#Lady_Anne_Keith_(died_1648)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75269339> .
   # oo 1632-11-09 Charles Seton, 2nd Earl of Dunfermline, 1615-11 - 1672-05-11, https://www.wikidata.org/wiki/Q5082443 (gordon.ttl)
-<#Lady_Isabel_Douglas_(died_1672)>
+<https://www.wikidata.org/wiki/Q75269316>
   # Lady Isabel Douglas, 1630 – 1672-12-16
   gen:father <https://www.wikidata.org/wiki/Q7617765> ;
-  gen:mother <keith.ttl#Lady_Anne_Keith_(died_1648)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75269339> .
   # oo 1643a Robert Ker, 1st Earl of Roxburghe, 1569 - 1650-01-18, https://www.wikidata.org/wiki/Q7346327
   # oo 1656-12-20 James Graham, 2nd Marquess of Montrose, 1631~ - 1669-02, https://www.wikidata.org/wiki/Q16839861
 
@@ -2706,59 +2864,67 @@
   gen:mother <https://www.wikidata.org/wiki/Q4768865> .
   # oo Lady Grizel Middleton, 1642~ - 1666
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q56040886> , <#Lady_Grizel_Middleton> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q56040886> , <https://www.wikidata.org/wiki/Q75274015> ;
 	gen:startDate "1662-06-12" .
   # oo Marjory Foulis
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q56040886> , <https://www.wikidata.org/wiki/Q75513741> .
 <https://www.wikidata.org/wiki/Q75421164>
   # Lady Mary/Margaret Douglas
   gen:father <https://www.wikidata.org/wiki/Q7343605> ;
   gen:mother <https://www.wikidata.org/wiki/Q4768865> .
   # oo 1662-07-24 Sir Donald Macdonald, 10th of Sleat, 3rd Baronet, d. 1695-02-05, https://www.wikidata.org/wiki/Q75421163
-<#Lady_Jean_Douglas>
+<https://www.wikidata.org/wiki/Q75569764>
   # Lady Jean Douglas
   gen:father <https://www.wikidata.org/wiki/Q7343605> .
   # oo 1640-07-16b James Home, 3rd Earl of Home, 1615~ - 1666-12, https://www.wikidata.org/wiki/Q18671582
 <https://www.wikidata.org/wiki/Q42904317>
   # James Douglas, 11th Earl of Morton, 1652~ - 1715-12-10
-  gen:father <#James_Douglas,_10th_Earl_of_Morton> ;
-  gen:mother <hay.ttl#Anne_Hay_(died_1700)> .
+  gen:father <https://www.wikidata.org/wiki/Q75269585> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75269587> .
 <https://www.wikidata.org/wiki/Q15842660>
   # Robert Douglas, 12th Earl of Morton, d. 1730-01-22
-  gen:father <#James_Douglas,_10th_Earl_of_Morton> ;
-  gen:mother <hay.ttl#Anne_Hay_(died_1700)> .
+  gen:father <https://www.wikidata.org/wiki/Q75269585> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75269587> .
 <https://www.wikidata.org/wiki/Q5538591>
   # George Douglas, 13th Earl of Morton, 1662 - 1738-01-04
-  gen:father <#James_Douglas,_10th_Earl_of_Morton> ;
-  gen:mother <hay.ttl#Anne_Hay_(died_1700)> .
+  gen:father <https://www.wikidata.org/wiki/Q75269585> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75269587> .
   # oo ??? Muirhead
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5538591> , <https://www.wikidata.org/wiki/Q76196466> .
   # oo Frances Adderley
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5538591> , <https://www.wikidata.org/wiki/Q75269593> .
 
 <https://www.wikidata.org/wiki/Q377335>
   # James Douglas, 14th Earl of Morton, 1702 - 1768-10-12
-  gen:father <https://www.wikidata.org/wiki/Q5538591> .
+  gen:father <https://www.wikidata.org/wiki/Q5538591> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75269593> .
   # oo Agatha Halyburton, d. 1748-12-11
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q377335> , <#Agatha_Halyburton> .
+    gen:spouse <https://www.wikidata.org/wiki/Q377335> , <https://www.wikidata.org/wiki/Q75250692> .
   # oo Bridget Heathcote, 1723 - 1805-03-02 (burrell.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q377335> , <https://www.wikidata.org/wiki/Q75250693> ;
 	gen:startDate "1755-07-31" .
 <https://www.wikidata.org/wiki/Q18546401>
   # Robert Douglas, 1703 - 1745-04-30
-  gen:father <https://www.wikidata.org/wiki/Q5538591> .
+  gen:father <https://www.wikidata.org/wiki/Q5538591> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75269593> .
 
 <https://www.wikidata.org/wiki/Q7500258>
   # Sholto Charles Douglas, 15th Earl of Morton, 1732 - 1774-09-25
   gen:father <https://www.wikidata.org/wiki/Q377335> ;
-  gen:mother <#Agatha_Halyburton> .
+  gen:mother <https://www.wikidata.org/wiki/Q75250692> .
   # oo Katherine Hamilton, 1736-12 - 1823-04-25
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7500258> , <https://www.wikidata.org/wiki/Q75250695> ;
 	gen:startDate "1758-11-19" .
-<#Lady_Mary_Douglas_(died_1816)>
+<https://www.wikidata.org/wiki/Q75264520>
   # Lady Mary Douglas, d. 1816-12-25
   gen:father <https://www.wikidata.org/wiki/Q377335> ;
-  gen:mother <#Agatha_Halyburton> .
+  gen:mother <https://www.wikidata.org/wiki/Q75250692> .
   # oo 1774-04-13 Charles Gordon, 4th Earl of Aboyne, 1726~ - 1794-12-28, https://www.wikidata.org/wiki/Q5078300
 <https://www.wikidata.org/wiki/Q75390775>
   # Hon. John Douglas, 1756-07-01 - 1818-05-01
@@ -2768,7 +2934,7 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75390775> , <https://www.wikidata.org/wiki/Q27929304> ;
 	gen:startDate "1784-10-04" .
-<#Lady_Bridget_Douglas>
+<https://www.wikidata.org/wiki/Q75272676>
   # Lady Bridget Douglas, 1758-05-03 - 1842-02-26
   gen:father <https://www.wikidata.org/wiki/Q377335> ;
   gen:mother <https://www.wikidata.org/wiki/Q75250693> .
@@ -2779,7 +2945,10 @@
   # Baron Douglas of Loch Leven 1791-08
   gen:father <https://www.wikidata.org/wiki/Q7500258> ;
   gen:mother <https://www.wikidata.org/wiki/Q75250695> .
-  # oo 1814-08-13 Susan Elizabeth Buller-Yarde-Buller, 1793-01-22 - 1849-07-23
+  # oo Susan Elizabeth Buller-Yarde-Buller, 1793-01-22 - 1849-07-23
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5538590> , <https://www.wikidata.org/wiki/Q75250697> ;
+	gen:startDate "1814-08-13" .
 <https://www.wikidata.org/wiki/Q5644908>
   # Hamilton Douglas Halyburton, 1763-10-10 - 1783-12-31
   gen:father <https://www.wikidata.org/wiki/Q7500258> ;
@@ -2803,37 +2972,28 @@
   gen:mother <https://www.wikidata.org/wiki/Q27929304> .
   # oo 1809-11-25 James Hamilton, Viscount Hamilton, 1786-10-07 - 1814-05-27, https://www.wikidata.org/wiki/Q3806594
   # oo 1815-07-08 George Hamilton-Gordon, 4th Earl of Aberdeen, 1784-01-28 - 1860-12-14, https://www.wikidata.org/wiki/Q24631
-<#Lady_Elizabeth_Emma_Douglas>
+<https://www.wikidata.org/wiki/Q75277904>
   # Lady Elizabeth Emma Douglas, 1794-10-08 - 1857-02-02
   gen:father <https://www.wikidata.org/wiki/Q75390775> ;
   gen:mother <https://www.wikidata.org/wiki/Q27929304> .
-  # oo 1827-07-10 William Hamilton Ash, 1803 - 1867-02-02, beresford.ttl#William_Hamilton_Ash
+  # oo 1827-07-10 William Hamilton Ash, 1803 - 1867-02-02, https://www.wikidata.org/wiki/Q75277902 (beresford.ttl)
 <https://www.wikidata.org/wiki/Q75271993>
   # Lady Caroline Douglas, 1796-12-17 - 1873-11-07
   gen:father <https://www.wikidata.org/wiki/Q75390775> ;
   gen:mother <https://www.wikidata.org/wiki/Q27929304> .
   # oo 1817-12-31 William Augustus Lane Fox, 1796 - 1832-02-11, https://www.wikidata.org/wiki/Q75271991 (fox.ttl)
-<https://www.wikidata.org/wiki/Q3401219>
+<https://www.wikidata.org/wiki/Q3401219> # -> Baron Penrhyn of Llandegai
   # Edward Gordon Douglas-Pennant, 1st Baron Penrhyn of Llandegai, 1800-06-20 - 1886-03-31
-  # 1st Baron Penrhyn of Llandegai, co. Carnavon 1866-08-03
   gen:father <https://www.wikidata.org/wiki/Q75390775> ;
   gen:mother <https://www.wikidata.org/wiki/Q27929304> .
-  # oo 1833-08-06 Juliana Isabella Mary Dawkins-Pennant, 1808-04-09 - 1842-04-24
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q3401219> , <#Juliana_Isabella_Mary_Dawkins-Pennant> ;
-	gen:startDate "1833-08-06" .
-  # oo 1846-01-26 Lady Maria Louisa Fitzroy, 1818-04-18 - 1912-05-10
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q3401219> , <https://www.wikidata.org/wiki/Q53735058> ;
-	gen:startDate "1846-01-26" .
 
 <https://www.wikidata.org/wiki/Q42904301>
   # Sholto John Douglas, 18th Earl of Morton, 1818-04-13 - 1994-12-24
   gen:father <https://www.wikidata.org/wiki/Q5538592> ;
   gen:mother <https://www.wikidata.org/wiki/Q75271003> .
-  # oo Helen Watson, d. 1850-12-23
+  # oo Helen Watson, d. 1850-12-23, daughter of James Watson and Janet Ramsay
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q42904301> , <#Helen_Watson> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q42904301> , <https://www.wikidata.org/wiki/Q75273055> ;
 	gen:startDate "1844-01-21" .
   # oo Lady Alice Anne Caroline Lambton, 1831-04-16 - 1907-01-15
   []
@@ -2873,33 +3033,155 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75332867> , <https://www.wikidata.org/wiki/Q76198660> ;
 	gen:startDate "1857-07-16" .
-  # oo Hon. Evelyn Anne Trefusis, 1841 - 1911-02-28
+  # oo Hon. Evelyn Anne Trefusis, 1841 - 1911-02-28 (clinton.ttl)
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q75332867> , <clinton.ttl#Evelyn_Anne_Trefusis> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75332867> , <https://www.wikidata.org/wiki/Q75332866> ;
 	gen:startDate "1881-09-27" .
 <https://www.wikidata.org/wiki/Q4798494>
   # Rt. Rev. Hon. Arthur Gascoigne Douglas, Bishop of Aberdeen and Orkney, 1827-01-05 - 1905-07-19
   gen:father <https://www.wikidata.org/wiki/Q5538592> ;
   gen:mother <https://www.wikidata.org/wiki/Q75271003> .
-  # oo Anna Maria Harriet Richards, d. 1915-05-13
+  # oo Anna Maria Harriet Richards, d. 1915-05-13, daughter of Richard Richards
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q4798494> , <#Anna_Maria_Harriet_Richards> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q4798494> , <https://www.wikidata.org/wiki/Q76198662> ;
 	gen:startDate "1855-04-17" .
-<#Lady_Ellen_Susan_Anne_Douglas>
+<https://www.wikidata.org/wiki/Q75268040>
   # Lady Ellen Susan Anne Douglas, d. 1914-01-22
   gen:father <https://www.wikidata.org/wiki/Q5538592> ;
   gen:mother <https://www.wikidata.org/wiki/Q75271003> .
-  # oo 1851-07-15 Rev. Hon. Douglas Hamilton-Gordon, 1824-03-13 - 1901-12-06, gordon.ttl#Douglas_Hamilton-Gordon
-<#Lady_Gertrude_Jane_Douglas>
+  # oo 1851-07-15 Rev. Hon. Douglas Hamilton-Gordon, 1824-03-13 - 1901-12-06, https://www.wikidata.org/wiki/Q75268042 (gordon.ttl)
+<https://www.wikidata.org/wiki/Q75332856>
   # Lady Gertrude Jane Douglas, d. 1924-03-21
   gen:father <https://www.wikidata.org/wiki/Q5538592> ;
   gen:mother <https://www.wikidata.org/wiki/Q75271003> .
-  # oo 1860-10-06 Hon. Mark George Kerr Rolle, 1835-11-13 - 1907-04-27, https://www.wikidata.org/wiki/Q6769493
+  # oo 1860-10-06 Hon. Mark George Kerr Rolle, 1835-11-13 - 1907-04-27, https://www.wikidata.org/wiki/Q6769493 (clinton.ttl)
+
+<https://www.wikidata.org/wiki/Q7617812>
+  # Sholto George Watson Douglas, 19th Earl of Morton, 1844-11-05 - 1935-10-08
+  gen:father <https://www.wikidata.org/wiki/Q42904301> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75273055> .
+  # oo Hon. Helen Geraldine Ponsonby, 1852 - 1949-01-05
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7617812> , <https://www.wikidata.org/wiki/Q75280791> ;
+	gen:startDate "1877-07-25" .
+<https://www.wikidata.org/wiki/Q75259883>
+  # Blanche Douglas, d. 1922-03-19
+  gen:father <https://www.wikidata.org/wiki/Q75259885> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75265757> .
+  # oo 1887-09-29 George Ponsonby Talbot, 1853-04-29 - 1924-02-28, https://www.wikidata.org/wiki/Q75255553
+<https://www.wikidata.org/wiki/Q75259703>
+  # George Sholto Douglas, 1858-04-27 - 1916-02-10
+  gen:father <https://www.wikidata.org/wiki/Q75259885> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75265757> .
+  # oo Lady Laura Mary Wentworth-Fitzwilliam, 1869-02-01 - 1936-03-02 (cromwell.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75259703> , <https://www.wikidata.org/wiki/Q75314812> ;
+	gen:startDate "1889-04-30" .
+
+<https://www.wikidata.org/wiki/Q75282574>
+  # Sholto Charles Douglas, Lord Aberdour, 1878-12-04 - 1911-09-29
+  gen:father <https://www.wikidata.org/wiki/Q7617812> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75280791> .
+  # oo Minnie Christina Brenda Hay, 1880-05-31 - 1954-08-27
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75282574> , <https://www.wikidata.org/wiki/Q75282575> ;
+	gen:startDate "1905-06-05" .
+<https://www.wikidata.org/wiki/Q75282580>
+  # Hon. Charles William Sholto Douglas, 1881-07-19 - 1960-10-10
+  gen:father <https://www.wikidata.org/wiki/Q7617812> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75280791> .
+  # oo Alice Agnes Fox-Pitt, 1899-12-11 - 1924-01-19 (fox.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75282580> , <https://www.wikidata.org/wiki/Q75313088> ;
+	gen:startDate "1920-12-11" .
+  # oo Florence Timson, 1897-05-25 - 1985
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75282580> , <https://www.wikidata.org/wiki/Q75282584> ;
+	gen:startDate "1926-04-15" .
+<https://www.wikidata.org/wiki/Q75280789>
+  # Hon. William Sholto Douglas, 1886-06-11 - 1932-11-16
+  gen:father <https://www.wikidata.org/wiki/Q7617812> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75280791> .
+  # oo Ethel Georgiana Frances Somerset, 1889-06-04 - 1981-10-10 (beaufort.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75280789> , <https://www.wikidata.org/wiki/Q75280788> ;
+	gen:startDate "1914-11-26" .
+<https://www.wikidata.org/wiki/Q75314865>
+  # Katharine Charlotte Douglas
+  gen:father <https://www.wikidata.org/wiki/Q75259703> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75314812> .
+  # oo 1921-02-07 Sir Henry Walter Houldsworth, 1896-01-28 - 1963-10-09, https://www.wikidata.org/wiki/Q19933995
+
+<https://www.wikidata.org/wiki/Q75282597>
+  # Sholto Charles John Hay Douglas, 20th Earl of Morton, 1907-04-12 - 1976-02-13
+  gen:father <https://www.wikidata.org/wiki/Q75282574> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75282575> .
+<https://www.wikidata.org/wiki/Q75282605>
+  # Helen Alice Douglas, 1921-10-07 - 2009-06-04
+  gen:father <https://www.wikidata.org/wiki/Q75282580> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75313088> .
+  # oo 1947-10-20 Brian Eric Leslie Abdy Collins, 1913-05-29 - 1952-12-22, https://www.wikidata.org/wiki/Q75282606
+  # oo 1954-11-16 Gerald John Ponsonby, 6th Baron de Mauley of Canford, 1921-12-19 - 2002-10-17, https://www.wikidata.org/wiki/Q26259773
+<https://www.wikidata.org/wiki/Q6229867>
+  # John Charles Sholto Douglas, 21st Earl of Morton, 1927-03-19 - 2016-03-05
+  gen:father <https://www.wikidata.org/wiki/Q75282580> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75282584> .
+  # oo Mary Sheila Gibbs, 1927-03-08 - 2016-05-01
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6229867> , <https://www.wikidata.org/wiki/Q75282610> ;
+	gen:startDate "1949-09-20" .
+
+<https://www.wikidata.org/wiki/Q23304314>
+  # John Stewart Sholto Douglas, 22nd Earl of Morton, b. 1952-01-17
+  gen:father <https://www.wikidata.org/wiki/Q6229867> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75282610> .
+  # oo Amanda Kirsten Mitchell, daughter of David John Macfarlane Mitchell
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q23304314> , <https://www.wikidata.org/wiki/Q76191578> ;
+	gen:startDate "1985-07-20" .
+
+<https://www.wikidata.org/wiki/Q76191582>
+  # John David Sholto Douglas, Lord Aberdour, b. 1986-05-28
+  gen:father <https://www.wikidata.org/wiki/Q23304314> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76191578> .
+  # oo Sarah Rosemary Rizzo, daughter of Salvatore Rizzo
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76191582> , <https://www.wikidata.org/wiki/Q76364006> .
+<https://www.wikidata.org/wiki/Q61715008>
+  # Katherine Florence Douglas, b. 1989-08-03
+  gen:father <https://www.wikidata.org/wiki/Q23304314> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76191578> .
+<https://www.wikidata.org/wiki/Q76191601>
+  # Jennifer Mary Douglas, b. 1991-03-29
+  gen:father <https://www.wikidata.org/wiki/Q23304314> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76191578> .
+
+<https://www.wikidata.org/wiki/Q76364012>
+  # John Archibald Sholto Douglas, b. 2018-03-07
+  gen:father <https://www.wikidata.org/wiki/Q76191582> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76364006> .
+
+
+# Baron Penrhyn of Llandegai
+<https://www.wikidata.org/wiki/Q3401219>
+  # Edward Gordon Douglas-Pennant, 1st Baron Penrhyn of Llandegai, 1800-06-20 - 1886-03-31
+  # 1st Baron Penrhyn of Llandegai, co. Carnavon 1866-08-03
+  gen:father <https://www.wikidata.org/wiki/Q75390775> ;
+  gen:mother <https://www.wikidata.org/wiki/Q27929304> .
+  # oo Juliana Isabella Mary Dawkins-Pennant, 1808-04-09 - 1842-04-24 (savile.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3401219> , <https://www.wikidata.org/wiki/Q75256398> ;
+	gen:startDate "1833-08-06" .
+  # oo Lady Maria Louisa Fitzroy, 1818-04-18 - 1912-05-10
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3401219> , <https://www.wikidata.org/wiki/Q53735058> ;
+	gen:startDate "1846-01-26" .
+
 <https://www.wikidata.org/wiki/Q3401240>
   # Hon. George Sholto Gordon Douglas-Pennant, 2nd Baron Penrhyn of Llandegai, 1836-09-30 - 1907-03-10
   gen:father <https://www.wikidata.org/wiki/Q3401219> ;
-  gen:mother <#Juliana_Isabella_Mary_Dawkins-Pennant> .
-  # oo Pamela Blanche Rushout, 1839-03-16 - 1870-02-05
+  gen:mother <https://www.wikidata.org/wiki/Q75256398> .
+  # oo Pamela Blanche Rushout, 1839-03-16 - 1870-02-05 (compton.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q3401240> , <https://www.wikidata.org/wiki/Q75292181> ;
 	gen:startDate "1860-08-23" .
@@ -2910,38 +3192,17 @@
 <https://www.wikidata.org/wiki/Q75249463>
   # Hon. Archibald Charles Henry Douglas-Pennant, 1837-11-22 – 1884-09-07
   gen:father <https://www.wikidata.org/wiki/Q3401219> ;
-  gen:mother <#Juliana_Isabella_Mary_Dawkins-Pennant> .
+  gen:mother <https://www.wikidata.org/wiki/Q75256398> .
   # oo Hon. Harriet Ella Gifford, 1847 - 1942-02-12 (berkeley.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75249463> , <https://www.wikidata.org/wiki/Q75348359> ;
 	gen:startDate "1865-01-05" .
-<#Eva_Anna_Caroline_Douglas-Pennant>
-  # Hon. Eva Anna Caroline Douglas-Pennant, 1851~ - 1934-01-03
+<https://www.wikidata.org/wiki/Q75297073>
+  # Hon. Eva Anna Caroline Douglas-Pennant, 1852-01-12 - 1934-01-03
   gen:father <https://www.wikidata.org/wiki/Q3401219> ;
   gen:mother <https://www.wikidata.org/wiki/Q53735058> .
   # oo 1871-08-31 Lord William Frederick Ernest Seymour, 1838-12-08 - 1915-02-09, https://www.wikidata.org/wiki/Q16059080
 
-<https://www.wikidata.org/wiki/Q7617812>
-  # Sholto George Watson Douglas, 19th Earl of Morton, 1844-11-05 - 1935-10-08
-  gen:father <https://www.wikidata.org/wiki/Q42904301> ;
-  gen:mother <#Helen_Watson> .
-  # oo Hon. Helen Geraldine Ponsonby, 1852 - 1949-01-05
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q7617812> , <ponsonby.ttl#Helen_Geraldine_Ponsonby> ;
-	gen:startDate "1877-07-25" .
-<#Blanche_Douglas>
-  # Blanche Douglas, d. 1922-03-19
-  gen:father <https://www.wikidata.org/wiki/Q75259885> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75265757> .
-  # oo 1887-09-29 George Ponsonby Talbot, 1853-04-29 - 1924-02-28, talbot.ttl#George_Ponsonby_Talbot
-<https://www.wikidata.org/wiki/Q75259703>
-  # George Sholto Douglas, 1858-04-27 - 1916-02-10
-  gen:father <https://www.wikidata.org/wiki/Q75259885> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75265757> .
-  # oo Lady Laura Mary Wentworth-Fitzwilliam, 1869-02-01 - 1936-03-02 (cromwell.ttl)
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q75259703> , <https://www.wikidata.org/wiki/Q75314812> ;
-	gen:startDate "1889-04-30" .
 <https://www.wikidata.org/wiki/Q5342629>
   # Hon. Edward Douglas-Pennant, 3rd Baron Penrhyn of Llandegai, 1864-06-10 - 1927-08-22
   gen:father <https://www.wikidata.org/wiki/Q3401240> ;
@@ -2955,13 +3216,13 @@
   gen:father <https://www.wikidata.org/wiki/Q3401240> ;
   gen:mother <https://www.wikidata.org/wiki/Q75292181> .
   # oo 1886-10-19 Evelyn Edward Thomas Boscawen, 7th Viscount Falmouth, 1847-07-24 – 1918-10-01, https://www.wikidata.org/wiki/Q16823915 (gower.ttl)
-<#Margaret_Douglas-Pennant>
+<https://www.wikidata.org/wiki/Q75288344>
   gen:name "Hon. Margaret Douglas-Pennant"@en ;
   gen:birthDate "1886" ;
   gen:deathDate "1967-10-23" ;
   gen:father <https://www.wikidata.org/wiki/Q3401240> ;
   gen:mother <https://www.wikidata.org/wiki/Q75296914> .
-  # oo 1999-07-29 Sir Andrew Thorne, 1885-09-20 - 1970-09-25, https://www.wikidata.org/wiki/Q3438209
+  # oo 1999-07-29 Sir Andrew Thorne, 1885-09-20 - 1970-09-25, https://www.wikidata.org/wiki/Q3438209 (erskine.ttl)
 <https://www.wikidata.org/wiki/Q75307692>
   # Hon. Nesta Douglas-Pennant, 1888-03-21 - 1970-03-04
   gen:father <https://www.wikidata.org/wiki/Q3401240> ;
@@ -2971,14 +3232,14 @@
   # Frank Douglas-Pennant, 5th Baron Penrhyn of Llandegai, 1865-11-21 - 1967-02-03
   gen:father <https://www.wikidata.org/wiki/Q75249463> ;
   gen:mother <https://www.wikidata.org/wiki/Q75348359> .
-  # oo Maud Eleonora Hardy, d. 1936-12-12
+  # oo Maud Eleonora Hardy, d. 1936-12-12, daughter of John Hardy
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q43378348> , <#Maud_Eleonora_Hardy> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q43378348> , <https://www.wikidata.org/wiki/Q75330975> ;
 	gen:startDate "1892-04-25" ;
 	gen:divorceDate "1903" .
   # oo Alice Nellie Cooper, d. 1965-12-17
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q43378348> , <#Alice_Nellie_Cooper> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q43378348> , <https://www.wikidata.org/wiki/Q75331036> ;
 	gen:startDate "1905-04-18" .
 <https://www.wikidata.org/wiki/Q6938619>
   # Muriel Douglas-Pennant, 1st Viscountess Daventry, 1869-08-08 - 1962-07-08
@@ -2987,39 +3248,6 @@
   gen:mother <https://www.wikidata.org/wiki/Q75348359> .
   # oo 1891-11-19 Rt. Hon. Edward Algernon FitzRoy, 1869-07-24, 1943-03-03, https://www.wikidata.org/wiki/Q332927
 
-<#Sholto_Charles_Douglas,_Lord_Aberdour>
-  # Sholto Charles Douglas, Lord Aberdour, 1878-12-04 - 1911-09-29
-  gen:father <https://www.wikidata.org/wiki/Q7617812> ;
-  gen:mother <ponsonby.ttl#Helen_Geraldine_Ponsonby> .
-  # oo Minnie Christina Brenda Hay, 1880-05-31 - 1954-08-27
-  []
-    gen:spouse <#Sholto_Charles_Douglas,_Lord_Aberdour> , <hay.ttl#Minnie_Christina_Brenda_Hay> ;
-	gen:startDate "1905-06-05" .
-<https://www.wikidata.org/wiki/Q75282580>
-  # Hon. Charles William Sholto Douglas, 1881-07-19 - 1960-10-10
-  gen:father <https://www.wikidata.org/wiki/Q7617812> ;
-  gen:mother <ponsonby.ttl#Helen_Geraldine_Ponsonby> .
-  # oo Alice Agnes Fox-Pitt, 1899-12-11 - 1924-01-19 (fox.ttl)
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q75282580> , <https://www.wikidata.org/wiki/Q75313088> ;
-	gen:startDate "1920-12-11" .
-  # oo Florence Timson, 1897-05-25 - 1985
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q75282580> , <#Florence_Timson> ;
-	gen:startDate "1926-04-15" .
-<#William_Sholto_Douglas>
-  # Hon. William Sholto Douglas, 1886-06-11 - 1932-11-16
-  gen:father <https://www.wikidata.org/wiki/Q7617812> ;
-  gen:mother <ponsonby.ttl#Helen_Geraldine_Ponsonby> .
-  # oo Ethel Georgiana Frances Somerset, 1889-06-04 - 1981-10-10
-  []
-    gen:spouse <#William_Sholto_Douglas> , <beaufort.ttl#Ethel_Georgiana_Frances_Somerset> ;
-	gen:startDate "1914-11-26" .
-<#Katharine_Charlotte_Douglas>
-  # Katharine Charlotte Douglas
-  gen:father <https://www.wikidata.org/wiki/Q75259703> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75314812> .
-  # oo 1921-02-07 Sir Henry Walter Houldsworth, 1896-01-28 - 1963-10-09, #Sir_Henry_Walter_Houldsworth
 <https://www.wikidata.org/wiki/Q43377756>
   # Alan George Sholto Douglas-Pennant, 1890-06-11 - 1914-10-29
   gen:father <https://www.wikidata.org/wiki/Q5342629> ;
@@ -3033,11 +3261,11 @@
     gen:spouse <https://www.wikidata.org/wiki/Q43378068> , <https://www.wikidata.org/wiki/Q75275878> ;
 	gen:startDate "1922-04-25" ;
 	gen:divorceDate "1941" .
-<#Pamela_Douglas-Pennant>
+<https://www.wikidata.org/wiki/Q75296401>
   # Hon. Pamela Douglas-Pennant, 1896-05-11 - 1968-01-31
   gen:father <https://www.wikidata.org/wiki/Q5342629> ;
   gen:mother <https://www.wikidata.org/wiki/Q75275870> .
-  # oo 1919-09-03 Marcus Herbert Pelham, 6th Earl of Yarborough, 1893-06-30 - 1966-12-02, https://www.wikidata.org/wiki/Q21705482
+  # oo 1919-09-03 Marcus Herbert Pelham, 6th Earl of Yarborough, 1893-06-30 - 1966-12-02, https://www.wikidata.org/wiki/Q21705482 (anderson.ttl)
 <https://www.wikidata.org/wiki/Q75275868>
   # Hon. Sybil Mary Douglas-Pennant, 1901-01-19 - 1975-07-05
   gen:father <https://www.wikidata.org/wiki/Q5342629> ;
@@ -3046,154 +3274,131 @@
 <https://www.wikidata.org/wiki/Q5200688>
   # Hon. Cyril Eustace Douglas-Pennant, 1894-04-07 - 1961-04-07
   gen:father <https://www.wikidata.org/wiki/Q43378348> ;
-  gen:mother <#Maud_Eleonora_Hardy> .
-  # oo Phyllis Constance Leigh
+  gen:mother <https://www.wikidata.org/wiki/Q75330975> .
+  # oo Phyllis Constance Leigh, daughter of Oswald Mosley Leigh and Florence Louisa Reiss
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q5200688> , <#Phyllis_Constance_Leigh> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q5200688> , <https://www.wikidata.org/wiki/Q75348381> ;
 	gen:startDate "1917-01-06" ;
 	gen:divorceDate "1936" .
-  # oo Sheila Brotherhood, d. 1988
+  # oo Sheila Brotherhood, 1903-07-12 - 1988-10-23, daughter of Stanley Brotherhood and Vera Kemp-Welch
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q5200688> , <#Sheila_Brotherhood> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q5200688> , <https://www.wikidata.org/wiki/Q75348384> ;
 	gen:startDate "1937-04-05" .
 <https://www.wikidata.org/wiki/Q6742286>
   # Malcolm Frank Douglas-Pennant, 6th Baron Penrhyn of Llandegai, 1908-07-11 - 2003-11-08
   gen:father <https://www.wikidata.org/wiki/Q43378348> ;
-  gen:mother <#Alice_Nellie_Cooper> .
-  # oo Elizabeth Rosemary Laurie, d. 2002-12b
+  gen:mother <https://www.wikidata.org/wiki/Q75331036> .
+  # oo Elizabeth Rosemary Laurie, d. 2002-12b, daughter of Percy Laurie and Ethel Frances Lawson Johnston
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q6742286> , <#Elizabeth_Rosemary_Laurie> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q6742286> , <https://www.wikidata.org/wiki/Q75348405> ;
 	gen:startDate "1954-06-09" .
-<#Nigel_Douglas-Pennant>
+<https://www.wikidata.org/wiki/Q75348424>
   # Hin. Nigel Douglas-Pennant, 1909-12-22 – 2000-01-16
   gen:father <https://www.wikidata.org/wiki/Q43378348> ;
-  gen:mother <#Alice_Nellie_Cooper> .
-  # oo Margaret Dorothy Kirkham, d. 1938-10-02
+  gen:mother <https://www.wikidata.org/wiki/Q75331036> .
+  # oo Margaret Dorothy Kirkham, d. 1938-10-02, daughter of Thomas George Kirkham
   []
-    gen:spouse <#Nigel_Douglas-Pennant> , <#Margaret_Dorothy_Kirkham> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75348424> , <https://www.wikidata.org/wiki/Q75348425> ;
 	gen:startDate "1935-09-06" .
-  # oo Eleanor Stewart Craig, d. 1987
+  # oo Eleanor Stewart Craig, d. 1987, daughter of Very Reverend Herbert Newcome Craig
   []
-    gen:spouse <#Nigel_Douglas-Pennant> , <#Eleanor_Stewart_Craig> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75348424> , <https://www.wikidata.org/wiki/Q75348429> ;
 	gen:startDate "1940-07-20" .
-  # oo Stella Bradwell
+  # oo Stella Bradwell, d. 2019-01-08, daughter of Stanley Bradwell
   []
-    gen:spouse <#Nigel_Douglas-Pennant> , <#Stella_Bradwell> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75348424> , <https://www.wikidata.org/wiki/Q76229580> ;
 	gen:startDate "1993-10-21" .
 
-<#Sholto_Charles_John_Hay_Douglas,_20th_Earl_of_Morton>
-  # Sholto Charles John Hay Douglas, 20th Earl of Morton, 1907-04-12 - 1976-02-13
-  gen:father <#Sholto_Charles_Douglas,_Lord_Aberdour> ;
-  gen:mother <hay.ttl#Minnie_Christina_Brenda_Hay> .
-<#Helen_Alice_Douglas>
-  # Helen Alice Douglas, 1921-10-07 - 2009-06-04
-  gen:father <https://www.wikidata.org/wiki/Q75282580> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75313088> .
-  # oo 1954-11-16 Gerald John Ponsonby, 6th Baron de Mauley of Canford, 1921-12-19 - 2002-10-17, ponsonby.ttl#Gerald_Ponsonby,_6th_Baron_de_Mauley
-<https://www.wikidata.org/wiki/Q6229867>
-  # John Charles Sholto Douglas, 21st Earl of Morton, 1927-03-19 - 2016-03-05
-  gen:father <https://www.wikidata.org/wiki/Q75282580> ;
-  gen:mother <#Florence_Timson> .
-  # oo Mary Sheila Gibbs, 1927-03-08 - 2016-05-01
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q6229867> , <#Mary_Sheila_Gibbs> ;
-	gen:startDate "1949-09-20" .
 <https://www.wikidata.org/wiki/Q43378908>
   # Simon Douglas-Pennant, 7th Baron Penrhyn, b. 1938-06-28
-  gen:father <#Nigel_Douglas-Pennant> ;
-  gen:mother <#Margaret_Dorothy_Kirkham> .
-  # oo Josephine Upcott
+  gen:father <https://www.wikidata.org/wiki/Q75348424> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75348425> .
+  # oo Josephine Upcott, daughter of Robert Upcott
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q43378908> , <#Josephine_Upcott> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q43378908> , <https://www.wikidata.org/wiki/Q75348435> ;
 	gen:startDate "1963-10-05" .
 
-<https://www.wikidata.org/wiki/Q23304314>
-  # John Stewart Sholto Douglas, 22nd Earl of Morton, b. 1952-01-17
-  gen:father <https://www.wikidata.org/wiki/Q6229867> ;
-  gen:mother <#Mary_Sheila_Gibbs> .
-  # oo Amanda Kirsten Mitchell
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q23304314> , <#Amanda_Kirsten_Mitchell> ;
-	gen:startDate "1985-07-20" .
-<#Edward_Sholto_Douglas-Pennant>
+<https://www.wikidata.org/wiki/Q75348436>
   # Hon. Edward Sholto Douglas-Pennant, b. 1966-06-06
   gen:father <https://www.wikidata.org/wiki/Q43378908> ;
-  gen:mother <#Josephine_Upcott> .
-
-<#John_David_Sholto_Douglas,_Lord_Aberdour>
-  # John David Sholto Douglas, Lord Aberdour, b. 1986-05-28
-  gen:father <https://www.wikidata.org/wiki/Q23304314> ;
-  gen:mother <#Amanda_Kirsten_Mitchell> .
-  # oo Sarah Rosemary Rizzo
-  []
-    gen:spouse <#John_David_Sholto_Douglas,_Lord_Aberdour> , <#Sarah_Rosemary_Rizzo> .
-<#Katherine_Florence_Douglas>
-  # Katherine Florence Douglas, b. 1989-08-03
-  gen:father <https://www.wikidata.org/wiki/Q23304314> ;
-  gen:mother <#Amanda_Kirsten_Mitchell> .
-<#Jennifer_Mary_Douglas>
-  # Jennifer Mary Douglas, b. 1991-03-29
-  gen:father <https://www.wikidata.org/wiki/Q23304314> ;
-  gen:mother <#Amanda_Kirsten_Mitchell> .
-
-<#John_Archibald_Sholto_Douglas>
-  # John Archibald Sholto Douglas, b. 2018-03-07
-  gen:father <#John_David_Sholto_Douglas,_Lord_Aberdour> ;
-  gen:mother <#Sarah_Rosemary_Rizzo> .
+  gen:mother <https://www.wikidata.org/wiki/Q75348435> .
 
 
 # Douglas of Kirkness
-<#Sir_George_Douglas,_1st_of_Kirkness_and_Kynnesswood>
+<https://www.wikidata.org/wiki/Q76196457>
   # Sir George Douglas, 1st of Kirkness and Kynnesswood, d. 1609-12-09~
   gen:father <https://www.wikidata.org/wiki/Q7617726> ;
   gen:mother <https://www.wikidata.org/wiki/Q4693073> .
-  # oo 1597 Margaret Forrester, daughter of Thomas Forrester of Strathendry and Isobel Learmonth
+  # oo Margaret Forrester, daughter of Thomas Forrester of Strathendry and Isobel Learmonth
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76196457> , <https://www.wikidata.org/wiki/Q76196459> ;
+	gen:startDate "1597" .
 
-<#Archibald_Douglas,_of_Kirkness>
-  # Archibald Douglas, of Kirkness, b. 1600
-  gen:father <#Sir_George_Douglas,_1st_of_Kirkness_and_Kynnesswood> ;
-  gen:mother <#Margaret_Forrester> .
+<https://www.wikidata.org/wiki/Q76372178>
+  # Archibald Douglas, 2nd of Kirkness, b. 1600
+  gen:father <https://www.wikidata.org/wiki/Q76196457> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76196459> .
   # oo Elizabeth Brown, d. 1645, daughter of Robert Broun, of Balquharn
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76372178> , <https://www.wikidata.org/wiki/Q76372179> .
 
-<#Sir_William_Douglas,_of_Kirkness>
-  # Sir William Douglas, of Kirkness, 1621~ - 1650
-  gen:father <#Archibald_Douglas,_of_Kirkness> ;
-  gen:father <#Elizabeth_Brown> .
-  # oo Isabel Elizabeth Hay, b. 1645~, daughter of George Hay, of Kirkland
+<https://www.wikidata.org/wiki/Q76310583>
+  # Sir William Douglas, 3rd of Kirkness, 1621~ - 1650
+  gen:father <https://www.wikidata.org/wiki/Q76372178> ;
+  gen:father <https://www.wikidata.org/wiki/Q76372179> .
+  # oo Isabel Kennedy
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76310583> , <https://www.wikidata.org/wiki/Q76372180> .
 
-<#William_Douglas,_of_Kirkness_(died_1669)>
-  # William Douglas, of Kirkness, 1644 - 1669
-  gen:father <#Sir_William_Douglas,_of_Kirkness> ;
-  gen:mother <#Isabel_Elizabeth_Hay> .
+<https://www.wikidata.org/wiki/Q76310582>
+  # William Douglas, 4th of Kirkness, 1644 - 1669/1683
+  gen:father <https://www.wikidata.org/wiki/Q76310583> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76372180> .
   # oo Elizabeth Kirkcaldy, b. 1644-12-24, daughter of Robert Kirkaldie of Grange und Anna Leslie
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76310582> , <https://www.wikidata.org/wiki/Q76310580> .
 
-<#William_Douglas,_of_Kinglasse>
+<https://www.wikidata.org/wiki/Q76372185>
   # William Douglas, of Kinglasse
-  gen:father <#William_Douglas,_of_Kirkness_(died_1669)> ;
-  gen:mother <#Elizabeth_Kirkcaldy> .
+  gen:father <https://www.wikidata.org/wiki/Q76310582> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76310580> .
+  # oo Helen Margaret Ayton, d. 1701, daughter of Andrew Ayton
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76372185> , <https://www.wikidata.org/wiki/Q76372186> .
 
-<#Charles_Ayton_Douglas>
+<https://www.wikidata.org/wiki/Q76275566>
   # Charles Ayton Douglas
-  gen:father <#William_Douglas,_of_Kinglasse> .
-  # oo Christine Hepburn of Kinglassie
+  gen:father <https://www.wikidata.org/wiki/Q76372185> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76372186> .
+  # oo Christine Hepburn of Kinglassie, d. 1778-09-10
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76275566> , <https://www.wikidata.org/wiki/Q76275567> .
 
 <https://www.wikidata.org/wiki/Q7526205>
   # Sir Charles Douglas, 1st Baronet of Carr, 1727 - 1780-03-17
   # 1st Baronet Douglas, of Carr, co. Perth 1777-01-23
-  gen:father <#Charles_Ayton_Douglas> ;
-  gen:mother <#Christine_Hepburn_of_Kinglassie> .
-  # oo 1763b Uranie Lidie Marteilhe, d. 1769
-  # oo 1769a Sarah Wood, daughter of John Wood
+  gen:father <https://www.wikidata.org/wiki/Q76275566> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76275567> .
+  # oo Uranie Lidie Marteilhe, d. 1769
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7526205> , <https://www.wikidata.org/wiki/Q76275424> ;
+	gen:startDate "1763b" .
+  # oo Sarah Wood, daughter of John Wood
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7526205> , <https://www.wikidata.org/wiki/Q76055521> ;
+	gen:startDate "1769a" .
   # oo Jane Baillie, daughter of John Baillie
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7526205> , <https://www.wikidata.org/wiki/Q76275563> .
 
-<#Sir_William_Henry_Douglas,_2nd_Baronet>
+<https://www.wikidata.org/wiki/Q76275409>
   # Sir William Henry Douglas, 2nd Baronet, 1761-07-28 - 1809-05-23
   gen:father <https://www.wikidata.org/wiki/Q7526205> ;
-  gen:mother <#Uranie_Lidie_Marteilhe> .
+  gen:mother <https://www.wikidata.org/wiki/Q76275424> .
 <https://www.wikidata.org/wiki/Q516738>
   # Sir Howard Douglas, 3rd Baronet, 1776-01-23 – 1861-11-09
   gen:father <https://www.wikidata.org/wiki/Q7526205> ;
-  gen:mother <#Sarah_Wood> .
+  gen:mother <https://www.wikidata.org/wiki/Q76055521> .
   # oo Anne Dundas, d. 1854-10-22, daughter of James Dundas
   []
     gen:spouse <https://www.wikidata.org/wiki/Q516738> , <https://www.wikidata.org/wiki/Q76055307> ;
@@ -3205,7 +3410,7 @@
   gen:mother <https://www.wikidata.org/wiki/Q76055307> .
   # oo Anne Duckworth, 1812 - 1855, daughter of Colonel George Henry Duckworth and Penelope Fanshawe
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q7348836> , <#Anne_Duckworth> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q7348836> , <https://www.wikidata.org/wiki/Q76100821> ;
 	gen:startDate "1840" .
   # oo Louisa Lang, b. 1821~, daughter of Robert Lang
   []
@@ -3217,15 +3422,18 @@
   gen:mother <https://www.wikidata.org/wiki/Q76055307> .
   # oo 1836-08-11 John Murray-Gartshore, 1804-10-05 - 1884-06-22. https://www.wikidata.org/wiki/Q76084023 (murray.ttl)
 
-<#Sir_Arthur_Percy_Douglas,_5th_Baronet>
+<https://www.wikidata.org/wiki/Q76265771>
   # Sir Arthur Percy Douglas, 5th Baronet, 1845-10-15 - 1913-09-06
   gen:father <https://www.wikidata.org/wiki/Q7348836> ;
-  gen:mother <#Anne_Duckworth> .
-<#Sir_James_Stewart_Douglas,_6th_Baronet>
+  gen:mother <https://www.wikidata.org/wiki/Q76100821> .
+<https://www.wikidata.org/wiki/Q76266221>
   # Sir James Stewart Douglas, 6th Baronet, 1859-03-25 - 1940-11-05
   gen:father <https://www.wikidata.org/wiki/Q7348836> ;
   gen:mother <https://www.wikidata.org/wiki/Q76266220> .
-  # oo 1891-12-05 Ada Constance Fisher, daughter of Lt.-Gen. E. H. Fisher
+  # oo Ada Constance Fisher, daughter of Lt.-Gen. E. H. Fisher
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76266221> , <https://www.wikidata.org/wiki/Q76266223> ;
+	gen:startDate "1891-12-05" .
 <https://www.wikidata.org/wiki/Q75301079>
   # Margaret Augusta Douglas, 1866~ - 1924-02-08
   gen:father <https://www.wikidata.org/wiki/Q7348836> ;
@@ -3238,65 +3446,90 @@
 <https://www.wikidata.org/wiki/Q75389996>
   # Sir Robert Douglas, 3rd of Glenbervie, 1552a - 1611
   gen:father <https://www.wikidata.org/wiki/Q2578484> ;
-  gen:mother <#Gille_Graham> .
+  gen:mother <https://www.wikidata.org/wiki/Q75389885> .
   # oo Elizabeth Auchinleck
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75389996> , <https://www.wikidata.org/wiki/Q75519005> .
 
-<#Sir_William_Douglas,_1st_Baronet>
+<https://www.wikidata.org/wiki/Q76261115>
   # Sir William Douglas of Glenbervie, 1st Baronet, d. 1653-03-24a
   # 1st Baronet Douglas, of Glenbervie, co. Kincardine 1625-05-28
   gen:father <https://www.wikidata.org/wiki/Q75389996> ;
   gen:mother <https://www.wikidata.org/wiki/Q75519005> .
-  # oo 1624b Janet Irvine, daughter of Alexander Irvine of Drum
-<#Rev._George_Douglas>
+  # oo Janet Irvine, daughter of Alexander Irvine of Drum
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76261115> , <https://www.wikidata.org/wiki/Q76261128> ;
+	gen:startDate "1624b" .
+<https://www.wikidata.org/wiki/Q76261055>
   # Rev. George Douglas
   gen:father <https://www.wikidata.org/wiki/Q75389996> ;
   gen:mother <https://www.wikidata.org/wiki/Q75519005> .
   # oo Cecilia Drury, daughter of Sir Robert Drury
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76261055> , <https://www.wikidata.org/wiki/Q76261117> .
 <https://www.wikidata.org/wiki/Q75518894>
   # Margaret Douglas, 1600 - 1621
   gen:father <https://www.wikidata.org/wiki/Q75389996> ;
   gen:mother <https://www.wikidata.org/wiki/Q75519005> .
   # oo Sir Thomas Burnett, 1st Baronet, 1580 - 1653-06-27, https://www.wikidata.org/wiki/Q7529069
 
-<#Sir_William_Douglas,_2nd_Baronet>
+<https://www.wikidata.org/wiki/Q75518905>
   # Sir William Douglas of Glenbervie, 2nd Baronet, d. 1688-01-11b
-  gen:father <#Sir_William_Douglas,_1st_Baronet> .
-  # oo 1642 Anne Douglas, daughter of James Douglas
-<#William_Douglas>
+  gen:father <https://www.wikidata.org/wiki/Q76261115> .
+  # oo Anne Douglas, daughter of James Douglas
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75518905> , <https://www.wikidata.org/wiki/Q76261131> ;
+	gen:startDate "1642" .
+<https://www.wikidata.org/wiki/Q76261103>
   # William Douglas
-  gen:father <#Rev._George_Douglas> .
+  gen:father <https://www.wikidata.org/wiki/Q76261055> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76261117> .
   # oo Agnes Scott, daughter of Patrick Scott of Ancrum
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76261103> , <https://www.wikidata.org/wiki/Q76261121> .
 
-<#Sir_Robert_Douglas,_3rd_Baronet>
+<https://www.wikidata.org/wiki/Q23018892>
   # Sir Robert Douglas of Glenbervie, 3rd Baronet, d. 1692-07-24
-  gen:father <#Sir_William_Douglas,_2nd_Baronet> .
+  gen:father <https://www.wikidata.org/wiki/Q75518905> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76261131> .
   # oo Jane
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q23018892> , <https://www.wikidata.org/wiki/Q23018892> .
 <https://www.wikidata.org/wiki/Q76261125>
   # Sir Robert Douglas of Glenbervie, 4th Baronet, 1661 – 1748-01-27
-  gen:father <#William_Douglas> .
+  gen:father <https://www.wikidata.org/wiki/Q76261103> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76261121> .
   # oo Mary Ruthven, 1672b - 1694b
   []
     gen:spouse <https://www.wikidata.org/wiki/Q76261125> , <https://www.wikidata.org/wiki/Q76261140> ;
 	gen:startDate "1690~" .
-  # oo 1694~ Janet Patterson, Lady Dunmure, d. 1750-02-09
+  # oo Janet Patterson of Dunmure, d. 1750-02-09
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76261125> , <https://www.wikidata.org/wiki/Q76261142> ;
+	gen:startDate "1694~" .
 
-<#Sir_William_Douglas,_5th_Baronet>
+<https://www.wikidata.org/wiki/Q76261143>
   # Sir William Douglas of Glenbervie, 5th Baronet, d. 1764-07-23
   gen:father <https://www.wikidata.org/wiki/Q76261125> ;
   gen:mother <https://www.wikidata.org/wiki/Q76261140> .
-  # oo Isabel Douglas, d. 1777-05-11
+  # oo Isabel Douglas, d. 1777-05-11, daughter of John Douglas
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76261143> , <https://www.wikidata.org/wiki/Q76261146> ;
+	gen:startDate "1718~" .
 <https://www.wikidata.org/wiki/Q7528758>
   # Sir Robert Douglas of Glenbervie, 6th Baronet, 1694 – 1770-04-24
   gen:father <https://www.wikidata.org/wiki/Q76261125> ;
-  gen:mother <#Janet_Patterson> .
+  gen:mother <https://www.wikidata.org/wiki/Q76261142> .
   # oo Dorothea Chester, daughter of Anthony Chester
-  # oo Margaret Macdonald, d. 1723, daughter of Sir James Macdonald, 3rd Lord Sleat and 6th Baronet
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7528758> , <https://www.wikidata.org/wiki/Q76261148> .
+  # oo Margaret Macdonald, d. 1723
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7528758> , <https://www.wikidata.org/wiki/Q75446838> ;
 	gen:startDate "1738~" .
   # oo Anne Hay, daughter of Alexander Hay
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7528758> , <https://www.wikidata.org/wiki/Q76261152> .
 
 <https://www.wikidata.org/wiki/Q18572177>
   # Sir Alexander Douglas of Glenbervie, 7th Baronet, 1738~ - 1812-11-28
@@ -3304,7 +3537,7 @@
   gen:mother <https://www.wikidata.org/wiki/Q75446838> .
   # oo Barbara Carnegie, d. 1815-12-03
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q18572177> , <carnegie.ttl#Barbara_Carnegie> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q18572177> , <https://www.wikidata.org/wiki/Q76261159> ;
 	gen:startDate "1775" .
 <https://www.wikidata.org/wiki/Q76261156>
   # Janet Douglas, b. 1740~
@@ -3318,12 +3551,6 @@
   # Margaret, Countess of Mar, d. 1391
   gen:father <https://www.wikidata.org/wiki/Q1237391> .
   # oo William Douglas, 1st Earl of Douglas, 1330~ - 1384-04-24b, https://www.wikidata.org/wiki/Q2033364
-
-# ----
-<#Lady_Elizabeth_Oliphant>
-  # Lady Elizabeth Oliphant
-  gen:father <https://www.wikidata.org/wiki/Q16863477> .
-  # oo 1585 William Douglas, 10th Earl of Angus, 1552 - 1611-03-03, https://www.wikidata.org/wiki/Q1677658
 
 # ----
 <https://www.wikidata.org/wiki/Q18529799>
@@ -3435,26 +3662,17 @@
   # oo 1741-10-17 Rt. Hon. Robert Dundas of Arniston, 1713-07-18 – 1787-12-13, https://www.wikidata.org/wiki/Q3938260
 
 # ----
-<#Elizabeth_Gerard>
+<https://www.wikidata.org/wiki/Q75389650>
   # Hon. Elizabeth Gerard, 1680~ - 1744-02-13
-  gen:father <https://www.wikidata.org/wiki/Q26722746> .
+  gen:father <https://www.wikidata.org/wiki/Q26722746> ; # Digby Gerard, 5th Baron Gerard
+  gen:mother <https://www.wikidata.org/wiki/Q75389713> . # Lady Elizabeth Gerard
   # oo 1698-07-17 James Hamilton, 4th Duke of Hamilton, 1658-04-11 - 1712-11-15, https://www.wikidata.org/wiki/Q335625
 
 # ----
-#<https://www.wikidata.org/wiki/Q6139101>
-  # James Maule, 4th Earl of Panmure, 1658~ - 1723-04-22
-  # oo Lady Margaret Hamilton, d. 1731-12-06
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q6139101>  , <douglas.ttl#Lady_Margaret_Hamilton> ;
-	gen:startDate "1687-02-05" .
-
-# ----
-#<https://www.wikidata.org/wiki/Q1248034>
-  # Sir James Hall, of Dunglas, 4th Baronet, 1761-01-17 - 1832-06-23
-  # oo Lady Helena Douglas, 1768 - 1837-07-12
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q1248034> , <https://www.wikidata.org/wiki/Q21650513> ;
-	gen:startDate "1786-11-09" .
+<https://www.wikidata.org/wiki/Q75389725>
+  # Mary Edwardes, d. 1743-08-23
+  gen:father <https://www.wikidata.org/wiki/Q75389728> . # Francis Edwardes
+  # oo 1731b Lord Anne Hamilton, 1709-10-12 - 1748-12-25, https://www.wikidata.org/wiki/Q2579891
 
 # ----
 <https://www.wikidata.org/wiki/Q7348969>
@@ -3472,6 +3690,31 @@
   # oo 1901-12-04 Alfred Douglas-Hamilton, 13th Duke of Hamilton and Brandon, 9th Earl of Selkirk, 1862-03-06 - 1940-03-16, https://www.wikidata.org/wiki/Q336632
 
 # ----
+#<https://www.wikidata.org/wiki/Q3675525>
+  # Charles Ernest Whistler Mackintosh, 1903-10-31 - 1974-01-12
+  # oo Lady Jean Douglas-Hamilton, 1904-06-11 - 1987
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3675525> , <https://www.wikidata.org/wiki/Q75390626> ;
+	gen:startDate "1927-04-08" ;
+	gen:divorceDate "1946" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q75390631>
+  # Leo Zinovieff, 1905-02-15 - 1951-09-21
+  # oo Lady Jean Douglas-Hamilton, 1904-06-11 - 1987
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75390631> , <https://www.wikidata.org/wiki/Q75390626> ;
+	gen:startDate "1947-05-24" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q75390634>
+  # Vivian Norton Bell, 1904-02-08 - 1978-04-22
+  # oo Lady Jean Douglas-Hamilton, 1904-06-11 - 1987
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75390634> , <https://www.wikidata.org/wiki/Q75390626> ;
+	gen:startDate "1972-10-20" .
+
+# ----
 <https://www.wikidata.org/wiki/Q7253044>
   # Ann Prunella Stack, 1914-07-28 - 2010-12-30
   gen:father <https://www.wikidata.org/wiki/Q21094839> ;
@@ -3479,10 +3722,20 @@
   # oo 1938-10-15 Lord David Douglas-Hamilton, 1912-11-08 - 1944-08-02, https://www.wikidata.org/wiki/Q6679152
 
 # ----
-<#Priscilla_Susan_Buchan>
-  # Hon. Priscilla Susan Buchan, b. 1949-08-22
-  gen:father <https://www.wikidata.org/wiki/Q1699445> .
-  # oo 1974-08-24 James Alexander Douglas-Hamilton, Baron Selkirk of Douglas, b. 1942-07-31, https://www.wikidata.org/wiki/Q333795
+<https://www.wikidata.org/wiki/Q76162076>
+  # Sir Walter Scott of Beauclerc, 4th Baronet, 1918-07-29 - 1992-11-29
+  gen:father <https://www.wikidata.org/wiki/Q76161879> ; # Sir Walter Scott, 3rd Baronet
+  gen:mother <https://www.wikidata.org/wiki/Q76162074> . # Nancie Margaret March
+  # oo Diana Mary Owen, d. 1985, daughter of James Richard Owen
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76162076> , <https://www.wikidata.org/wiki/Q75253904> ;
+	gen:startDate "1944-01-15" .
+
+<https://www.wikidata.org/wiki/Q75390662>
+  # Sarah Jane Scott, 1945-10-28 - 1994-02-17
+  gen:father <https://www.wikidata.org/wiki/Q76162076> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75253904> .
+  # oo 1972-06-23 (div 1987) Angus Alan Douglas Douglas-Hamilton, 15th Duke of Hamilton and Brandon, 1938-09-13 - 2010-06-05, https://www.wikidata.org/wiki/Q335417
 
 # ----
 #<https://www.wikidata.org/wiki/Q14949005>
@@ -3493,19 +3746,60 @@
 	gen:startDate "2006" .
 
 # ----
+<https://www.wikidata.org/wiki/Q75262685>
+  # Irene Clarice Richards, d. 1977-10-24
+  gen:father <https://www.wikidata.org/wiki/Q75308476> . # Henry William Richards
+  # oo 1917-12-04 (div 1925) Francis Archibald Kelhead Douglas, 11th Marquess of Queensberry, 1896-01-17 - 1954-04-27, https://www.wikidata.org/wiki/Q5480753
+  # oo 1926-01-18 (div 1942) Sir James Hamet Dunn, 1st Baronet, 1874-10-29 - 1956-01-01, https://www.wikidata.org/wiki/Q6135424
+  # oo 1942-06-03 (div 1951) Murrough Richard O'Brien, 1910-05-25 - 2000-09, https://www.wikidata.org/wiki/Q76035266
+# ----
+#<https://www.wikidata.org/wiki/Q6135424>
+  # Sir James Hamet Dunn, 1st Baronet, 1874-10-29 - 1956-01-01
+  # 1st Baronet Dunn, of Bathurst in the province of New Brunswick and Dominion of Canada [U.K.] 1921-01-13
+  # son of Robert Dunn
+  # and Elizabeth Abrahams Joudrey
+  # oo Gertrude Paterson Price, daughter of Herbert Molesworth Price
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6135424> , <https://www.wikidata.org/wiki/Q75308473> ;
+	gen:startDate "1901-08-28" ;
+	gen:divorceDate "1926" .
+  # oo Irene Clarice Richards, d. 1977-10-24
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6135424> , <https://www.wikidata.org/wiki/Q75262685> ;
+	gen:startDate "1926-01-18" ;
+	gen:divorceDate "1942" .
+  # oo Marcia Anastasia Christoforides, 1910-07-27 - 1994-10-28, daughter of John Christoforides and Mildred Nightingale-Boys
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6135424> , <https://www.wikidata.org/wiki/Q6757084> ;
+	gen:startDate "1942" .
+
+# ----
 <https://www.wikidata.org/wiki/Q15999282>
   # Cathleen Sabine Mann, d. 1959-09-09
-  gen:father <https://www.wikidata.org/wiki/Q5664616> .
+  gen:father <https://www.wikidata.org/wiki/Q5664616> ; # Harrington Mann
+  gen:mother <https://www.wikidata.org/wiki/Q76125325> . # Florence Sabine Pasley
   # oo 1926-03-18 (div 1946) Francis Archibald Kelhead Douglas, 11th Marquess of Queensberry, 1896-01-17 - 1954-04-27, https://www.wikidata.org/wiki/Q5480753
 
 # ----
-#<https://www.wikidata.org/wiki/Q30106712>
-  # Count John Gerard de Bendern, 1907-03-31 – 1997-04-10
+<https://www.wikidata.org/wiki/Q30106712>
+  # John Gerard de Bendern, 1907-03-31 – 1997-04-10
+  # John Gerard de Forest
+  # John de Bendern 1937
+  gen:father <https://www.wikidata.org/wiki/Q6792833> . # Maurice Arnold de Forest
   # oo Lady Patricia Sybil Douglas, b. 1918-12-24
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q30106712> , <#Lady_Patricia_Sybil_Douglas> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q30106712> , <https://www.wikidata.org/wiki/Q75266562> ;
 	gen:startDate "1938-01-27" ;
 	gen:divorceDate "1950" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q75266567>
+  # Hermann Hornak
+  # oo Lady Patricia Sybil Douglas, b. 1918-12-24
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75266567> , <https://www.wikidata.org/wiki/Q75266562> ;
+	gen:startDate "1950" ;
+	gen:divorceDate "1960" .
 
 # ====
 #<https://www.wikidata.org/wiki/Q15440848>
@@ -3735,39 +4029,72 @@
 # ====
 
 # ----
-<#Lady_Grizel_Middleton>
-  # Lady Grizel Middleton, 1642~ - 1666
-  gen:father <https://www.wikidata.org/wiki/Q4292811> .
-  # oo 1662-06-12 William Douglas, 9th Earl of Morton, d. 1681-11-01b, https://www.wikidata.org/wiki/Q56040886
+<https://www.wikidata.org/wiki/Q75250697>
+  # Susan Elizabeth Buller-Yarde-Buller, 1793-01-22 - 1849-07-23
+  gen:father <https://www.wikidata.org/wiki/Q26405029> ; # Sir Francis Buller Yarde
+  gen:mother <https://www.wikidata.org/wiki/Q75516658> . # oo Elizabeth Lydia Hallidat
+  # oo 1814-08-13 George Douglas, 16th Earl of Morton, 1761-04-03 - 1827-07-17, https://www.wikidata.org/wiki/Q5538590
 
 # ----
-<#Juliana_Isabella_Mary_Dawkins-Pennant>
-  # Juliana Isabella Mary Dawkins-Pennant, 1808-04-09 - 1842-04-24
-  gen:father <https://www.wikidata.org/wiki/Q16239402> .
-  # oo 1833-08-06 Edward Gordon Douglas-Pennant, 1st Baron Penrhyn, 1800-06-20 - 1886-03-31, https://www.wikidata.org/wiki/Q3401219
+<https://www.wikidata.org/wiki/Q75388509>
+  # Elizabeth Gifford
+  gen:father <https://www.wikidata.org/wiki/Q75388511> . # James Gifford of Sheriffhall> .
 
 # ----
-<#Elizabeth_Gifford_of_Sheriffhall>
-  gen:father <#James_Gifford_of_Sheriffhall> .
-
-# ----
-#<#Sir_Henry_Walter_Houldsworth>
+#<https://www.wikidata.org/wiki/Q19933995>
   # Sir Henry Walter Houldsworth, 1896-01-28 - 1963-10-09
   # son of James Hamilton Houldsworth
   # oo Katharine Charlotte Douglas
   []
-    gen:spouse <#Sir_Henry_Walter_Houldsworth> , <#Katharine_Charlotte_Douglas> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q19933995> , <https://www.wikidata.org/wiki/Q75314865> ;
 	gen:startDate "1921-02-07" .
 
-<#Diana_Mary_Houldsworth>
+<https://www.wikidata.org/wiki/Q75314883>
   # Diana Mary Houldsworth, 1929-08-07 - 2017-11-25
-  gen:father <#Sir_Henry_Walter_Houldsworth> ;
-  gen:mother <#Katharine_Charlotte_Douglas> .
-  # oo 1955-04-30 Hon. George David Leslie-Melville, 1924-05-13 - 1997-06-23, leslie.ttl#George_David_Leslie-Melville
+  gen:father <https://www.wikidata.org/wiki/Q19933995> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75314865> .
+  # oo 1955-04-30 Hon. George David Leslie-Melville, 1924-05-13 - 1997-06-23, https://www.wikidata.org/wiki/Q75314885 (leslie.ttl)
 
 # ----
-<#Janet_Crichton_of_Cranston-Riddel>
-  gen:father <#Patrick_Crichton_of_Cranston-Riddel> .
+#<https://www.wikidata.org/wiki/Q75282606>
+  # Brian Eric Leslie Abdy Collins, 1913-05-29 - 1952-12-22
+  # son of Bernard Collins
+  # and Beryl Bishop Lynch
+  # oo Helen Alice Douglas, 1921-10-07 - 2009-06-04
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75282606> , <https://www.wikidata.org/wiki/Q75282605> ;
+	gen:startDate "1947-10-20" .
+
+# ----
+<https://www.wikidata.org/wiki/Q7526378>
+  # Sir Daniel Cooper, 1st Baronet, 1821-07-01 - 1902-06-05
+  # 1st Baronet Cooper, of Woollahra, New South Wales [U.K.] 1863-01-26
+  gen:father <https://www.wikidata.org/wiki/Q75622985> ; # Thomas Cooper
+  gen:mother <https://www.wikidata.org/wiki/Q75622985> . # Jane Ramsden
+  # oo Elizabeth Hill, d. 1906-04-01, daughter of William Hill
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7526378> , <https://www.wikidata.org/wiki/Q75623008> ;
+	gen:startDate "1846-09-03" .
+
+<https://www.wikidata.org/wiki/Q75347776>
+  # Sir William Charles Cooper, 3rd Baronet, 1851-10-22 - 1925-09-02
+  gen:father <https://www.wikidata.org/wiki/Q7526378> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75623008> .
+  # oo Alice Helen Hill, d. 1937-08-02, daughter of George Hill
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75347776> , <https://www.wikidata.org/wiki/Q75348212> ;
+	gen:startDate "1876-11-18" .
+
+<https://www.wikidata.org/wiki/Q75331036>
+  # Alice Nellie Cooper, d. 1965-12-17
+  gen:father <https://www.wikidata.org/wiki/Q75347776> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75348212> .
+  # oo 1905-04-18 Frank Douglas-Pennant, 5th Baron Penrhyn of Llandegai, 1865-11-21 - 1967-02-03, https://www.wikidata.org/wiki/Q43378348
+
+# ----
+<https://www.wikidata.org/wiki/Q75274011>
+  # Janet Crichton of Cranston-Riddel
+  gen:father <https://www.wikidata.org/wiki/Q75258189> . # Sir Patrick Crichton
 
 # ----
 <https://www.wikidata.org/wiki/Q8008474>
@@ -3861,41 +4188,57 @@
   # oo 1869-08-04 John Blair Balfour, 1st Baron Kinross, 1837-07-11 - 1905-01-22, https://www.wikidata.org/wiki/Q16031236
 
 # ----
-<#Catherine_Cecilia_Beirne>
+<https://www.wikidata.org/wiki/Q76305968>
   # Catherine Cecilia Beirne, d. 1977
-  gen:father <https://www.wikidata.org/wiki/Q15997739> .
+  gen:father <https://www.wikidata.org/wiki/Q15997739> . # T. C. Beirne
   # oo 1914 Henry Alexander Cecil Douglas, 1879-04-08 - 1952-08-30, https://www.wikidata.org/wiki/Q18716164
 
 # ----
-<#Alice_May_Ball>
+<https://www.wikidata.org/wiki/Q76306190>
   # Alice May Ball, d. 1954-11-21
-  gen:father <https://www.wikidata.org/wiki/Q23581413> .
+  gen:father <https://www.wikidata.org/wiki/Q23581413> . # Andrew Ball
   # oo 1912-01-15 Robert Johnstone Douglas, 1883-04-13 - 1972, https://www.wikidata.org/wiki/Q24044933
 
 # ----
-<#Alexander_Dalzell>
+<https://www.wikidata.org/wiki/Q75759148>
+  # Donna Costanza Brusati, 1747-12-06 - 1805-01-24
+  gen:father <https://www.wikidata.org/wiki/Q110421948> ; # Don Pietro Maria Brusati, 2. Marchese di Settala, 1691 - 1748
+  gen:mother <https://www.wikidata.org/wiki/Q110421949> . # Donna Antonia Solari
+  # oo 1767-01-14 Don Giacomo Fagnani, 4. Marchese di Gerenzano, 1740-09-01 - 1785-06-17, https://www.wikidata.org/wiki/Q110421944
+# ----
+<https://www.wikidata.org/wiki/Q110421944>
+  # Don Giacomo Fagnani, 4. Marchese di Gerenzano, 1740-09-01 - 1785-06-17
+  gen:father <https://www.wikidata.org/wiki/Q110421945> ; # Don Federico Fagnani, 3. Marchese di Gerenzano, 1702-10-14 - 1782-05-18
+  gen:mother <https://www.wikidata.org/wiki/Q110421946> . # oo 1737-10-21 Donna Rosa Clerici, 1722-04-15 - 1807-07-29
+  # oo Donna Costanza Brusati, 1747-12-06 - 1805-01-24
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110421944> , <https://www.wikidata.org/wiki/Q75759148> ;
+	gen:startDate "1767-01-14" .
+
+# ----
+<https://www.wikidata.org/wiki/Q75244204>
   # Alexander Dalzell, 1722-02-02 - 1787-04-03
-  gen:father <https://www.wikidata.org/wiki/Q16828807> .
-  # and Grizell Urquhart
+  gen:father <https://www.wikidata.org/wiki/Q16828807> ; # Robert Dalzell, 5th Earl of Carnwath, 1687 - 1737-08-04
+  gen:mother <https://www.wikidata.org/wiki/Q75244198> . # oo 1720-06-03 Grizell Urquhart, daughter of Alexander Urquhart
   # oo Elizabeth Jackson
   []
-    gen:spouse <#Alexander_Dalzell> , <#Elizabeth_Jackson> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75244204> , <https://www.wikidata.org/wiki/Q75246539> ;
 	gen:startDate "1753b" .
 
-<#Robert_Dalzell>
+<https://www.wikidata.org/wiki/Q75262290>
   # Robert Dalzell, 1755 - 1808-02-13
-  gen:father <#Alexander_Dalzell> ;
-  gen:mother <#Elizabeth_Jackson> .
+  gen:father <https://www.wikidata.org/wiki/Q75244204> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75246539> .
   # oo Anne Armstrong, d. 1797-02-21, daughter of David Armstrong
   []
-    gen:spouse <#Robert_Dalzell> , <#Anne_Armstrong> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75262290> , <https://www.wikidata.org/wiki/Q75251886> ;
 	gen:startDate "1783-03-18" .
 
-<#Elizabeth_Dalzell>
+<https://www.wikidata.org/wiki/Q75262288>
   # Elizabeth Dalzell, 1790-10-20 - 1837-03b
-  gen:father <#Robert_Dalzell> ;
-  gen:mother <#Anne_Armstrong> .
-  # oo 1812-08-31 Henry Alexander Douglas, 1781-10-07 - 1837-03-16, #Henry_Alexander_Douglas
+  gen:father <https://www.wikidata.org/wiki/Q75262290> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75251886> .
+  # oo 1812-08-31 Henry Alexander Douglas, 1781-10-07 - 1837-03-16, https://www.wikidata.org/wiki/Q75262287
 
 # ----
 #<https://www.wikidata.org/wiki/Q75422217>
