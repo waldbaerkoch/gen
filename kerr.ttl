@@ -4,9 +4,12 @@
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
-#<https://www.wikidata.org/wiki/Q75254919>
+<https://www.wikidata.org/wiki/Q75254919>
   # Andrew Kerr of Auldtounburn and Cessford, 1405 - 1481-05-08a
-  # oo (1) Isobel Douglas, b. 1425~, daughter of douglas.ttl#William_Douglas,_2nd_of_Cavers and Egidia Stewart
+  gen:father <https://www.wikidata.org/wiki/Q76016814> . # Andrew Kerr of Auldtounburn
+  # oo (1) Isobel Douglas, b. 1425~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75254919> , <https://www.wikidata.org/wiki/Q76016822> .
   # oo (2) Margaret Tweedie, daughter of James Tweedie of Drummelzier
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75254919> , <https://www.wikidata.org/wiki/Q75254920> .
@@ -14,8 +17,15 @@
 <https://www.wikidata.org/wiki/Q75254916> # -> Kerr of Cessford
   # Walter Kerr of Cessford, d. 1501-11-25
   gen:father <https://www.wikidata.org/wiki/Q75254919> ;
-  gen:mother <#Isobel_Douglas> .
-<#Thomas_Kerr,_1st_of_Ferniehirst> # -> Kerr of Ferniehirst
+  gen:mother <https://www.wikidata.org/wiki/Q76016822> .
+<https://www.wikidata.org/wiki/Q75389677>
+  # George Ker of Samuelston, b. 1457
+  gen:father <https://www.wikidata.org/wiki/Q75254919> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76016822> .
+  # oo Marian St. Clair, 1445~ - 1496
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75389677> , <https://www.wikidata.org/wiki/Q76168104> .
+<https://www.wikidata.org/wiki/Q75254923> # -> Kerr of Ferniehirst
   # Thomas Kerr, 1st of Ferniehirst, d. 1484-06-24
   gen:father <https://www.wikidata.org/wiki/Q75254919> ;
   gen:mother <https://www.wikidata.org/wiki/Q75254920> .
@@ -25,14 +35,6 @@
   gen:mother <https://www.wikidata.org/wiki/Q75254920> .
   # oo Sir James Sandilands, 5th of Calder, https://www.wikidata.org/wiki/Q75408741
   # oo 1509-05-17~ William Hay, 4th Earl of Erroll, d. 1513-09-09, https://www.wikidata.org/wiki/Q19873053
-
-<https://www.wikidata.org/wiki/Q75389677>
-  # George Ker of Samuelston, b. 1457
-  gen:father <https://www.wikidata.org/wiki/Q75254919> ;
-  gen:mother <#Isobel_Douglas> .
-  # oo Marian St. Clair, 1445~ - 1496
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q75389677> , <https://www.wikidata.org/wiki/Q76168104> .
 
 <https://www.wikidata.org/wiki/Q75389676>
   # Nichole Ker, 1468~ - 1528-01-02b
@@ -46,7 +48,7 @@
   # Walter Kerr of Cessford
   gen:deathDate "1501-11-25" ;
   gen:father <https://www.wikidata.org/wiki/Q75254919> ;
-  gen:mother <#?_Douglas> .
+  gen:mother <https://www.wikidata.org/wiki/Q76016822> .
   # oo Isabel Hay
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75254916> , <https://www.wikidata.org/wiki/Q75759692> ;
@@ -56,83 +58,78 @@
     gen:spouse <https://www.wikidata.org/wiki/Q75254916> , <https://www.wikidata.org/wiki/Q75263554> ;
 	gen:startDate "1487-10-20" .
 
-<#Sir_Robert_Kerr,_younger_of_Cessford>
+<https://www.wikidata.org/wiki/Q75254913>
   # Sir Robert Kerr, younger of Cessford
   gen:deathDate "1500-11-06a" ;
   gen:father <https://www.wikidata.org/wiki/Q75254916> ;
   gen:mother <https://www.wikidata.org/wiki/Q75263554> .
   # oo Christian Rutherfoord
   []
-    gen:spouse <#Sir_Robert_Kerr,_younger_of_Cessford> , <#Christian_Rutherfoord> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75254913> , <https://www.wikidata.org/wiki/Q75254914> ;
 	gen:startDate "1484-02-12" .
 <https://www.wikidata.org/wiki/Q75262709>
   # Elizabeth Kerr, d. 1548-10-19
   gen:father <https://www.wikidata.org/wiki/Q75254916> ;
   gen:mother <https://www.wikidata.org/wiki/Q75263554> .
-  # oo 1484/1485-02-12 Philip Rutherfoord of that Ilk, younger
+  # oo 1484/1485-02-12 Philip Rutherfoord of that Ilk, younger, https://www.wikidata.org/wiki/Q75512326
   # oo Sir Walter Scott, 2nd of Buccleuch, https://www.wikidata.org/wiki/Q75262707
 
-<#Sir_Andrew_Kerr_of_Cessford>
+<https://www.wikidata.org/wiki/Q75254910>
   # Sir Andrew Kerr of Cessford
   gen:deathDate "1526-07-18" ;
-  gen:father <#Sir_Robert_Kerr,_younger_of_Cessford> ;
-  gen:mother <#Christian_Rutherfoord> .
+  gen:father <https://www.wikidata.org/wiki/Q75254913> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75254914> .
   # oo Agnes Crichton, daughter of Sir Patrick Crichton
   []
-    gen:spouse <#Sir_Andrew_Kerr_of_Cessford> , <#Agnes_Crichton_2> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75254910> , <https://www.wikidata.org/wiki/Q75252055> ;
 	gen:startDate "1487-10-20" .
 
 <https://www.wikidata.org/wiki/Q75251676>
   # Catherine Kerr
-  gen:father <#Sir_Andrew_Kerr_of_Cessford> ;
-  gen:mother <#Agnes_Crichton_2> .
+  gen:father <https://www.wikidata.org/wiki/Q75254910> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75252055> .
   # oo Sir John Kerr of Ferniehirst, d. 1562, https://www.wikidata.org/wiki/Q75251674
 <https://www.wikidata.org/wiki/Q7965340>
   # Sir Walter Kerr of Cessford, 1526~ - 1583b
-  gen:father <#Sir_Andrew_Kerr_of_Cessford> ;
-  gen:mother <#Agnes_Crichton_2> .
+  gen:father <https://www.wikidata.org/wiki/Q75254910> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75252055> .
   # oo Isabel Kerr, 1543b - 1585-05-01
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q7965340> , <#Isabel_Kerr_of_Ferniehirst> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q7965340> , <https://www.wikidata.org/wiki/Q76017001> ;
 	gen:startDate "1543-09-27b" .
-<#Mark_Kerr>
+<https://www.wikidata.org/wiki/Q75254905>
   # Mark Kerr
   gen:birthDate "1510~" ;
   gen:deathDate "1584-08-29" ;
-  gen:father <#Sir_Andrew_Kerr_of_Cessford> ;
-  gen:mother <#Agnes_Crichton_2> .
+  gen:father <https://www.wikidata.org/wiki/Q75254910> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75252055> .
   # oo Lady Helen Leslie, 1525~ - 1594-10-28
   []
-    gen:spouse <#Mark_Kerr> , <https://www.wikidata.org/wiki/Q75254906> .
-<#Margaret_Kerr>
-  # Margaret Kerr
-  gen:father <#Sir_Andrew_Kerr_of_Cessford> ;
-  gen:mother <#Agnes_Crichton_2> .
-  # oo Sir John Home, of Cowdenknows, d. 1573-11b, #Sir_John_Home_(died_1573)
+    gen:spouse <https://www.wikidata.org/wiki/Q75254905> , <https://www.wikidata.org/wiki/Q75254906> .
 
 <https://www.wikidata.org/wiki/Q75262732>
   # Sir William Ker of Cessford
   gen:deathDate "1599/1600-02" ;
   gen:father <https://www.wikidata.org/wiki/Q7965340> ;
-  gen:mother <#Isabel_Kerr_of_Ferniehirst> .
+  gen:mother <https://www.wikidata.org/wiki/Q76017001> .
   # oo Janet Douglas
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75262732> , <https://www.wikidata.org/wiki/Q75501169> ;
 	gen:startDate "1563/1564-03-03" .
-<#Margaret_Kerr_of_Cessford>
+<https://www.wikidata.org/wiki/Q75272067>
   # Margaret Kerr, d. 1565b
   gen:father <https://www.wikidata.org/wiki/Q7965340> ;
-  gen:mother <#Isabel_Kerr_of_Ferniehirst> .
+  gen:mother <https://www.wikidata.org/wiki/Q76017001> .
   # oo 1557/1558-02-04 Alexander Home, 5th Lord Home, 1525 - 1575, https://www.wikidata.org/wiki/Q4719150
   # oo 1575a Patrick Gray, 4th Lord Gray, 1518~ - 1584, https://www.wikidata.org/wiki/Q7146599
 <https://www.wikidata.org/wiki/Q75263578>
   # Catherine Kerr, d. 1600-03
-  gen:father <#Mark_Kerr> ;
+  gen:father <https://www.wikidata.org/wiki/Q75254905> ;
   gen:mother <https://www.wikidata.org/wiki/Q75254906> .
   # oo 1592-07-01b William Maxwell, 5th Lord Herries of Terregles, d. 1603-10-10, https://www.wikidata.org/wiki/Q75263580
 <https://www.wikidata.org/wiki/Q6768368> # -> Kerr of Lothian
   # Mark Kerr, 1st Earl of Lothian, 1553 - 1690-04-08
-  gen:father <#Mark_Kerr> ;
+  gen:father <https://www.wikidata.org/wiki/Q75254905> ;
   gen:mother <https://www.wikidata.org/wiki/Q75254906> .
 
 <https://www.wikidata.org/wiki/Q7346327>
@@ -171,22 +168,22 @@
   gen:mother <https://www.wikidata.org/wiki/Q75501169> .
   # oo Sir William Douglas, 7th of Cavers, https://www.wikidata.org/wiki/Q76251849
 
-<#Lady_Jean_Ker>
+<https://www.wikidata.org/wiki/Q75268310>
   # Lady Jean Ker
   gen:father <https://www.wikidata.org/wiki/Q7346327> ;
   gen:mother <https://www.wikidata.org/wiki/Q75268312> .
   # oo 1613-08-28 John Drummond, 2nd Earl of Perth, 1584~  1662-06-11, https://www.wikidata.org/wiki/Q3809221
-<#Lady_Mary_Ker_(died_1650)>
+<https://www.wikidata.org/wiki/Q75269942>
   # Lady Mary Ker, d. 1650-04
   gen:father <https://www.wikidata.org/wiki/Q7346327> ;
   gen:mother <https://www.wikidata.org/wiki/Q75268312> .
-  # oo 1629b Sir James Haliburton of Pitcur, d. 1629b
+  # oo 1629b Sir James Haliburton of Pitcur, d. 1629b, https://www.wikidata.org/wiki/Q75704253 (carnegie.ttl)
   # oo 1629-02-21 James Carnegie, 2nd Earl of Southesk, 1583b - 1669-03, https://www.wikidata.org/wiki/Q6131050
-<#Lady_Isabella_Ker>
+<https://www.wikidata.org/wiki/Q75628767>
   # Lady Isabella Ker
   gen:father <https://www.wikidata.org/wiki/Q7346327> ;
   gen:mother <https://www.wikidata.org/wiki/Q75268312> .
-  # oo 1618-08-04 James Scrymgeour, 2nd Viscount Dudhope, d. 1644-07-23, https://www.wikidata.org/wiki/Q19862679
+  # oo 1618-08-04 James Scrymgeour, 2nd Viscount Dudhope, d. 1644-07-23, https://www.wikidata.org/wiki/Q19862679 (carnegie.ttl)
 <https://www.wikidata.org/wiki/Q75267431>
   # Henry Ker, Lord Ker
   gen:deathDate "1643-02-01" ;
@@ -197,7 +194,7 @@
     gen:spouse <https://www.wikidata.org/wiki/Q75267431> , <https://www.wikidata.org/wiki/Q75267432> ;
 	gen:startDate "1638-02-03" .
 
-<#Jean_Ker>
+<https://www.wikidata.org/wiki/Q75248013>
   # Jean Ker
   gen:father <https://www.wikidata.org/wiki/Q75267431> ;
   gen:mother <https://www.wikidata.org/wiki/Q75267432> .
@@ -207,12 +204,12 @@
   gen:father <https://www.wikidata.org/wiki/Q75267431> ;
   gen:mother <https://www.wikidata.org/wiki/Q75267432> .
   # oo 1660-12-05 John Fleming, 4th Earl of Wigton, d. 1668-04, https://www.wikidata.org/wiki/Q75276084
-<#Margaret_Ker>
+<https://www.wikidata.org/wiki/Q76320148>
   # Margaret Ker
   gen:deathDate "1681-01-08" ;
   gen:father <https://www.wikidata.org/wiki/Q75267431> ;
   gen:mother <https://www.wikidata.org/wiki/Q75267432> .
-  # oo 1666-07-18 Sir James Innes of that Ilk, 3rd Baronet, d. 1700~, innes.ttl#Sir_James_Innes,_3rd_Baronet
+  # oo 1666-07-18 Sir James Innes of that Ilk, 3rd Baronet, d. 1700~, https://www.wikidata.org/wiki/Q76320147
 
 
 # Kerr of Lothian
@@ -222,7 +219,7 @@
   # 1st Earl of Lothian 1606-07-10
   gen:birthDate "1553" ;
   gen:deathDate "1690-04-08" ;
-  gen:father <#Mark_Kerr> ;
+  gen:father <https://www.wikidata.org/wiki/Q75254905> ;
   gen:mother <https://www.wikidata.org/wiki/Q75254906> .
   # oo Margaret Maxwell, d. 1617-01-08
   []
@@ -267,7 +264,7 @@
   gen:mother <https://www.wikidata.org/wiki/Q75254894> .
   # oo 1595b Robert Boyd, Master of Boyd, 1579b - 1597-05, https://www.wikidata.org/wiki/Q75275072
   # oo 1606-03-04a/1610-04-16b (div 1610a/1618b) David Lindsay, 12th Earl of Crawford, 1575/1576-03-08 - 1620-06, https://www.wikidata.org/wiki/Q5236625
-  # oo 1618-02-16b Thomas Hamilton of Roberton, d. 1632-08-17
+  # oo 1618-02-16b Thomas Hamilton of Roberton, d. 1632-08-17, https://www.wikidata.org/wiki/Q75447282
 <https://www.wikidata.org/wiki/Q76294272>
   # Lady Elizabeth Kerr
   gen:father <https://www.wikidata.org/wiki/Q6768368> ;
@@ -288,20 +285,20 @@
 
 
 # Kerr of Ferniehirst
-<#Thomas_Kerr,_1st_of_Ferniehirst>
+<https://www.wikidata.org/wiki/Q75254923>
   # Thomas Kerr, 1st of Ferniehirst
   gen:deathDate "1484-06-24" ;
   gen:father <https://www.wikidata.org/wiki/Q75254919> ;
   gen:mother <https://www.wikidata.org/wiki/Q75254920> .
   # oo Margaret Ker, daughter of Sir Thomas Ker of Ferniehurst
   []
-    gen:spouse <#Thomas_Kerr,_1st_of_Ferniehirst> , <#Margaret_Ker_of_Ferniehirst> .
+    gen:spouse <https://www.wikidata.org/wiki/Q75254923> , <https://www.wikidata.org/wiki/Q75254929> .
 
 <https://www.wikidata.org/wiki/Q75251679>
   # Sir Andrew Kerr of Ferniehirst
   gen:deathDate "1545-10-04~" ;
-  gen:father <#Thomas_Kerr,_1st_of_Ferniehirst> ;
-  gen:mother <#Margaret_Ker_of_Ferniehirst> .
+  gen:father <https://www.wikidata.org/wiki/Q75254923> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75254929> .
   # oo Janet Home
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75251679> , <https://www.wikidata.org/wiki/Q75251681> ;
@@ -315,15 +312,15 @@
   # oo Catherine Kerr
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75251674> , <https://www.wikidata.org/wiki/Q75251676> .
-<#Robert_Ker>
+<https://www.wikidata.org/wiki/Q75251682>
   # Robert Kerr
   gen:deathDate "1588-02~" ;
   gen:father <https://www.wikidata.org/wiki/Q75251679> ;
   gen:mother <https://www.wikidata.org/wiki/Q75251681> .
   # oo Isabel Home
   []
-    gen:spouse <#Robert_Ker> , <home.ttl#Isabel_Home_2> .
-<#Isabel_Kerr_of_Ferniehirst>
+    gen:spouse <https://www.wikidata.org/wiki/Q75251682> , <https://www.wikidata.org/wiki/Q75251699> .
+<https://www.wikidata.org/wiki/Q76017001>
   # Isabel Kerr, 1543b - 1585-05-01
   gen:father <https://www.wikidata.org/wiki/Q75251679> ;
   gen:mother <https://www.wikidata.org/wiki/Q75251681> .
@@ -343,13 +340,13 @@
   # Sir Thomas Kerr of Ferniehirst, d. 1636-03
   gen:father <https://www.wikidata.org/wiki/Q75251674> ;
   gen:mother <https://www.wikidata.org/wiki/Q75251676> .
-  # oo Janet Kirkcaldy, daughter of Sir William Kirkcaldy
+  # oo Janet Kirkcaldy, daughter of Sir William Kirkcaldy of Grange
   []
     gen:spouse <https://www.wikidata.org/wiki/Q18529274> , <https://www.wikidata.org/wiki/Q75251673> ;
 	gen:startDate "1561/1562-02-10" .
-  # oo Janet Scott, daughter of Sir William Scott of Kirkurd and Buccleuch, younger
+  # oo Janet Scott
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q18529274> , <scott.ttl#Janet_Scott> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q18529274> , <https://www.wikidata.org/wiki/Q75251672> ;
 	gen:startDate "1569~" .
 <https://www.wikidata.org/wiki/Q76001296>
   # Margaret Kerr
@@ -359,7 +356,8 @@
 <https://www.wikidata.org/wiki/Q75251701>
   gen:name "William Kerr of Ancram"@en ;
   gen:deathDate "1590-12-20" ;
-  gen:father <#Robert_Ker> .
+  gen:father <https://www.wikidata.org/wiki/Q75251682> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75251699> .
   # oo Margaret Dundas, d. 1578~
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75251701> , <https://www.wikidata.org/wiki/Q75251702> .
@@ -374,16 +372,20 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75251683> , <https://www.wikidata.org/wiki/Q75251685> ;
 	gen:startDate "1584-10-20" .
-  # oo 1621-07-02~ Katherine McCulloch, d. 1645/1647
-<#William_Kirkcaldy_of_Grange>
+  # oo Katherine McCulloch, d. 1645/1647
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75251683> , <https://www.wikidata.org/wiki/Q76016907> ;
+	gen:startDate "1621-07-02~" .
+<https://www.wikidata.org/wiki/Q75251686>
   # William Kirkcaldy of Grange, d. 1598/1599-01-13~
+  # William Kerr
   gen:father <https://www.wikidata.org/wiki/Q18529274> ;
   gen:mother <https://www.wikidata.org/wiki/Q75251673> .
   # oo Elizabeth Lyon, 1562~ - 1607a
   []
-    gen:spouse <#William_Kirkcaldy_of_Grange> , <https://www.wikidata.org/wiki/Q75251687> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75251686> , <https://www.wikidata.org/wiki/Q75251687> ;
 	gen:startDate "1586/1587-02-14" .
-<#Margaret_Kerr_(died_1594)>
+<https://www.wikidata.org/wiki/Q75254882>
   # Margaret Kerr, d. 1594-05-24
   gen:father <https://www.wikidata.org/wiki/Q18529274> ;
   gen:mother <https://www.wikidata.org/wiki/Q75251673> .
@@ -394,30 +396,32 @@
   gen:mother <https://www.wikidata.org/wiki/Q75251673> .
   # oo 1598-12-18b Sir Patrick Hume of Polwarth, 1550~ - 1609-06-10, https://www.wikidata.org/wiki/Q7146776
   # oo 1613-09-16~ Thomas Hamilton, 1st Earl of Haddington, 1563 - 1637-05-29, https://www.wikidata.org/wiki/Q7613963
-<#Sir_James_Kerr>
+<https://www.wikidata.org/wiki/Q75251694>
   # Sir James Kerr, d. 1645
   gen:deathDate "1645" ;
   gen:father <https://www.wikidata.org/wiki/Q18529274> ;
-  gen:mother <scott.ttl#Janet_Scott> .
+  gen:mother <https://www.wikidata.org/wiki/Q75251672> .
   # oo Mary Rutherford, daughter of James Rutherford
-<#Ann_Kerr>
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75251694> , <https://www.wikidata.org/wiki/Q75251695> .
+<https://www.wikidata.org/wiki/Q21548937>
   # Ann Kerr, d. 1650-02-15
   gen:father <https://www.wikidata.org/wiki/Q18529274> ;
-  gen:mother <scott.ttl#Janet_Scott> .
+  gen:mother <https://www.wikidata.org/wiki/Q75251672> .
   # oo 1613-08-30 John Elphinstone, 2nd Lord Balmerinoch, 1587b - 1649-02-28, https://www.wikidata.org/wiki/Q4531359
 <https://www.wikidata.org/wiki/Q336096>
   # Robert Carr, 1st and last Earl of Somerset, 1587~ - 1645-07~
-  # 1st Viscount Rochester 1611-03-25
-  # 1st Earl of Somerset, 1st Baron Brancepeth, co. Durham 1613-11-03
+  # 1st Viscount Rochester [England] 1611-03-25
+  # 1st Earl of Somerset, 1st Baron Brancepeth, co. Durham [England] 1613-11-03
   gen:father <https://www.wikidata.org/wiki/Q18529274> ;
-  gen:mother <scott.ttl#Janet_Scott> .
+  gen:mother <https://www.wikidata.org/wiki/Q75251672> .
   # oo Lady Frances Howard, 1590-05-31 - 1632-08-23
   []
     gen:spouse <https://www.wikidata.org/wiki/Q336096> , <https://www.wikidata.org/wiki/Q5478568> ;
 	gen:startDate "1613-12-26" .
 <https://www.wikidata.org/wiki/Q7342776>
   gen:name "Robert Kerr (or Carr), 1st Earl of Ancram"@en ;
-  # 1st Lord Kerr of Nisbet, Langnewton and Dolphinstoun, 1st Earl of Ancrame 1633-06-24
+  # 1st Earl of Ancrame, 1st Lord Kerr of Nisbet, Langnewton and Dolphinstoun [Scotland] 1633-06-24
   gen:birthDate "1578~" ;
   gen:deathDate "1654-12-09a" ;
   gen:father <https://www.wikidata.org/wiki/Q75251701> ;
@@ -430,6 +434,10 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7342776> , <https://www.wikidata.org/wiki/Q65559778> ;
 	gen:startDate "1621-11-06a" .
+<https://www.wikidata.org/wiki/Q75258622>
+  # William Carre/Kerr
+  gen:father <https://www.wikidata.org/wiki/Q75251701> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75251702> .
 
 <https://www.wikidata.org/wiki/Q75254886>
   # Andrew Kerr, Master of Jedburgh, d. 1628-12-20
@@ -439,19 +447,20 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75254886> , <https://www.wikidata.org/wiki/Q75254887> ;
 	gen:startDate "1609-12-15~" .
-<#Alexander_Kerr,_2nd_Lord_Jedburgh>
+<https://www.wikidata.org/wiki/Q75251691>
   # Alexander Kerr, 2nd Lord Jedburgh, 1590~ - 1650~
   # 2nd Lord Jedburgh 1633-04-20a, de jure
   gen:birthDate "1598~" ;
   gen:deathDate "1650~" ;
-  gen:father <#William_Kirkcaldy_of_Grange> ;
+  gen:father <https://www.wikidata.org/wiki/Q75251686> ;
   gen:mother <https://www.wikidata.org/wiki/Q75251687> .
 <https://www.wikidata.org/wiki/Q75251697>
   gen:name "Robert Kerr, 4th Lord Jedburgh"@en ;
   # 4th Lord Jedburgh 1670b
   gen:deathDate "1692-08-04" ;
-  gen:father <#Sir_James_Kerr> .
-  # and Mary Rutherford
+  gen:father <https://www.wikidata.org/wiki/Q75251694> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75251695> .
+  # oo Christian Hamilton, d. 1688-11-07
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75251697> , <https://www.wikidata.org/wiki/Q75468182> ;
 	gen:startDate "1656b" .
@@ -462,7 +471,7 @@
   # oo 1637-07-11 William Russell, 1st Duke of Bedford, 1616-08 - 1700-09-07, https://www.wikidata.org/wiki/Q1837471
 <https://www.wikidata.org/wiki/Q7619067>
   gen:name "William Kerr, 1st Earl of Lothian"@en ;
-  # 1st Earl of Lothian, 1st Lord Ker of Newbattle 1631-10-31
+  # 1st Earl of Lothian, 1st Lord Ker of Newbattle [Scotland] 1631-10-31
   gen:birthDate "1615b" ;
   gen:deathDate "1675-10~" ;
   gen:father <https://www.wikidata.org/wiki/Q7342776> ;
@@ -477,13 +486,25 @@
   gen:deathDate "1690-09" ;
   gen:father <https://www.wikidata.org/wiki/Q7342776> ;
   gen:mother <https://www.wikidata.org/wiki/Q65559778> .
-  # oo 1662-05-01b Francis ?
-<#Lady_Elizabeth_Kerr-Rich>
+  # oo Francis ?
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5079772> , <https://www.wikidata.org/wiki/Q75258647> ;
+	gen:startDate "1662-05-01b" .
+<https://www.wikidata.org/wiki/Q75258644>
   # Lady Elizabeth Kerr
   gen:father <https://www.wikidata.org/wiki/Q7342776> ;
   gen:mother <https://www.wikidata.org/wiki/Q65559778> .
   # oo Nathaniel Rich, d. 1701, https://www.wikidata.org/wiki/Q15990254
+<https://www.wikidata.org/wiki/Q75782775>
+  # Anne Carre/Kerr, 1623~ - 1692-08-13
+  gen:father <https://www.wikidata.org/wiki/Q75258622> .
+  # oo 1645 Edward Popham, 1610 – 1651, https://www.wikidata.org/wiki/Q5344882 (sutton.ttl)
 
+<https://www.wikidata.org/wiki/Q75251693>
+  # John Kerr, 3rd Lord Jedburgh
+  # 3rd Lord Jedburgh 1650~, de jure
+  gen:deathDate "1669-09-15a/1670b" ;
+  gen:father <https://www.wikidata.org/wiki/Q75251691> .
 <https://www.wikidata.org/wiki/Q75275364>
   gen:name "Lady Anne Kerr"@en ;
   gen:birthDate "1631-11-26" ;
@@ -501,7 +522,7 @@
   gen:name "Robert Kerr, 1st Marquess of Lothian"@en ;
   # 2nd Earl of Lothian, 2nd Lord Ker of Newbattle 1675-10
   # 3rd Earl of Ancrame, 3rd Lord Kerr of Nisbet, Langnewton and Dolphinstoun 1690-09-11
-  # 1st Marquess of Lothian, 1st Earl of Ancram, 1st Viscount of Briene, 1st Lord Ker of Newbottle, Oxnam, Jedburgh, Dolphinstoun and Nisbet 1701-06-23
+  # 1st Marquess of Lothian, 1st Earl of Ancram, 1st Viscount of Briene, 1st Lord Ker of Newbottle, Oxnam, Jedburgh, Dolphinstoun and Nisbet [Scotland] 1701-06-23
   gen:birthDate "1636-03-08" ;
   gen:deathDate "1703-02-15" ;
   gen:father <https://www.wikidata.org/wiki/Q7619067> ;
@@ -531,14 +552,10 @@
   gen:father <https://www.wikidata.org/wiki/Q7619067> ;
   gen:mother <https://www.wikidata.org/wiki/Q75251708> .
   # oo 1673-11-27 Sir Francis Scott of Thirlestone, 1st Baronet, 1645-05-11 - 1712-03-07, https://www.wikidata.org/wiki/Q75283254
-<#John_Kerr,_3rd_Lord_Jedburgh>
-  # John Kerr, 3rd Lord Jedburgh
-  # 3rd Lord Jedburgh 1650~, de jure
-  gen:deathDate "1669-09-15a/1670b" ;
-  gen:father <#Alexander_Kerr,_2nd_Lord_Jedburgh> .
-<#???_son_Kerr_of_Ancram>
+<https://www.wikidata.org/wiki/Q75244612>
   # Hon. ??? Kerr, d. 1676-02-05a/1690-09-11b
-  gen:father <https://www.wikidata.org/wiki/Q5079772> .
+  gen:father <https://www.wikidata.org/wiki/Q5079772> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75258647> .
 
 <https://www.wikidata.org/wiki/Q2741463>
   gen:name "William Kerr, 2nd Marquess of Lothian"@en ;
@@ -552,14 +569,14 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q2741463> , <https://www.wikidata.org/wiki/Q75251714> ;
 	gen:startDate "1685-06-30" .
-<#Lord_Charles_Kerr>
+<https://www.wikidata.org/wiki/Q75254944>
   gen:name "Lord Charles Kerr, of Cramond"@en ;
   gen:deathDate "1735" ;
   gen:father <https://www.wikidata.org/wiki/Q2741459> ;
   gen:mother <https://www.wikidata.org/wiki/Q75389816> .
   # oo Janet Murray, 1688~ - 1755-12-01
   []
-    gen:spouse <#Lord_Charles_Kerr> , <#Janet_Murray> .
+    gen:spouse <https://www.wikidata.org/wiki/Q75254944> , <https://www.wikidata.org/wiki/Q75258658> .
 <https://www.wikidata.org/wiki/Q75389815>
   gen:name "Lady Mary Kerr"@en ;
   gen:birthDate "1674-10" ;
@@ -567,8 +584,7 @@
   gen:father <https://www.wikidata.org/wiki/Q2741459> ;
   gen:mother <https://www.wikidata.org/wiki/Q75389816> .
   # oo 1692 James Douglas, 2nd Marquess of Douglas, 1646~ - 1700-02-25, https://www.wikidata.org/wiki/Q1680288
-<https://www.wikidata.org/wiki/Q28729576>
-  # https://www.wikidata.org/wiki/Q18529050
+<https://www.wikidata.org/wiki/Q18529050>
   gen:name "Lord Mark Kerr"@en ;
   gen:birthDate "1676-04-01" ;
   gen:deathDate "1752-02-02" ;
@@ -587,15 +603,15 @@
 	gen:startDate "1711-12-07" .
   # oo Jean Janet Kerr, d. 1787-12-26
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q2741281> , <#Jean_Janet_Kerr> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q2741281> , <https://www.wikidata.org/wiki/Q75254965> ;
 	gen:startDate "1760-10-01" .
-<#Lady_Anne_Kerr_(died_1727)>
+<https://www.wikidata.org/wiki/Q75254955>
   gen:name "Lady Anne Kerr"@en ;
   gen:deathDate "1727" ;
   gen:father <https://www.wikidata.org/wiki/Q2741463> ;
   gen:mother <https://www.wikidata.org/wiki/Q75251714> .
-  # oo Alexander Home, 7th Earl of Home, d. 1720, home.ttl#Alexander_Home,_7th_Earl_of_Home
-  # oo Henry Ogle
+  # oo Alexander Home, 7th Earl of Home, d. 1720, https://www.wikidata.org/wiki/Q75569756
+  # oo Henry Ogle, https://www.wikidata.org/wiki/Q75759828
 <https://www.wikidata.org/wiki/Q75254957>
   gen:name "Lady Jean Kerr"@en ;
   gen:birthDate "1695~" ;
@@ -618,15 +634,15 @@
   # oo Alexander Hamilton of Ballencrieff, 1685~ - 1763, https://www.wikidata.org/wiki/Q75258184
 <https://www.wikidata.org/wiki/Q76104727>
   # Robert Kerr of Newfield
-  gen:father <#Lord_Charles_Kerr> ;
-  gen:mother <#Janet_Murray> .
+  gen:father <https://www.wikidata.org/wiki/Q75254944> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75258658> .
   # oo Eleanora Nugent (kennedy.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q76104727> , <https://www.wikidata.org/wiki/Q76253564> .
-<#Jean_Janet_Kerr>
+<https://www.wikidata.org/wiki/Q75254965>
   # Jean Janet Kerr, d. 1787-12-26
-  gen:father <#Lord_Charles_Kerr> ;
-  gen:mother <#Janet_Murray> .
+  gen:father <https://www.wikidata.org/wiki/Q75254944> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75258658> .
   # oo 1760-10-01 William Kerr, 3rd Marquess of Lothian, 1690~ - 1767-07-28, https://www.wikidata.org/wiki/Q2741281
 
 <https://www.wikidata.org/wiki/Q6679915>
@@ -660,12 +676,12 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q2741288> , <https://www.wikidata.org/wiki/Q51913506> ;
 	gen:startDate "1762-07-15" .
-<#Lady_Louisa_Kerr>
+<https://www.wikidata.org/wiki/Q45892722>
   # Lady Louisa Kerr, 1738 - 1830-12-25
   gen:father <https://www.wikidata.org/wiki/Q2741277> ;
   gen:mother <https://www.wikidata.org/wiki/Q75251391> .
   # oo 1759-12-25 Lord George Henry Lennox, 1737-11-29 – 1805-03-25, https://www.wikidata.org/wiki/Q3760574
-<#Lady_Wilhelmina_Emilia_Kerr>
+<https://www.wikidata.org/wiki/Q75251392>
   # Lady Wilhelmina Frances Kerr, 1759 - 1832-09-23
   gen:father <https://www.wikidata.org/wiki/Q2741277> ;
   gen:mother <https://www.wikidata.org/wiki/Q75251391> .
@@ -699,31 +715,34 @@
   gen:father <https://www.wikidata.org/wiki/Q2741288> ;
   gen:mother <https://www.wikidata.org/wiki/Q51913506> .
   # oo 1788-12-08 Hon. Frederick St. John, 1765-12-20 - 1844-11-19, https://www.wikidata.org/wiki/Q16230500
-<#Lady_Louisa_Kerr>
+<https://www.wikidata.org/wiki/Q75976393>
   gen:name "Lady Louise Kerr"@en ;
   gen:birthDate "1768-11-30" ;
   gen:deathDate "1819-06-23" ;
   gen:father <https://www.wikidata.org/wiki/Q2741288> ;
   gen:mother <https://www.wikidata.org/wiki/Q51913506> .
   # oo 1793-06-02 Arthur Atherley, 1772-06-12 - 1844-10-01, https://www.wikidata.org/wiki/Q4797857
-<#Lord_Charles_Beauchamp_Kerr>
+<https://www.wikidata.org/wiki/Q75250733>
   gen:name "Lord Charles Beauchamp Kerr"@en ;
   gen:birthDate "1775-07-19" ;
   gen:deathDate "1816-03-02" ;
   gen:father <https://www.wikidata.org/wiki/Q2741288> ;
   gen:mother <https://www.wikidata.org/wiki/Q51913506> .
-  # oo 1799-10-10 Elizabeth Crump, d. 1830-11-10, daughter of William Crump
+  # oo Elizabeth Crump, d. 1830-11-10, daughter of William Crump
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75250733> , <https://www.wikidata.org/wiki/Q75254972> ;
+	gen:startDate "1799-10-10" .
 <https://www.wikidata.org/wiki/Q16230382>
   gen:name "Lord Mark Robert Kerr"@en ;
   gen:birthDate "1776-11-12" ;
   gen:deathDate "1840-09-09" ;
   gen:father <https://www.wikidata.org/wiki/Q2741288> ;
   gen:mother <https://www.wikidata.org/wiki/Q51913506> .
-  # oo Charlotte MacDonnell, 3rd Countess of Antrim, 1779-08-12 - 1835-10-26
+  # oo Charlotte MacDonnell, 3rd Countess of Antrim, 1779-08-12 - 1835-10-26 (macdonald.ttl)
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q16230382> , <manners.ttl#Charlotte_MacDonnell,_3rd_Countess_of_Antrim> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q16230382> , <https://www.wikidata.org/wiki/Q47318154> ;
 	gen:startDate "1799-07-18" .
-<#Lord_Robert_Kerr>
+<https://www.wikidata.org/wiki/Q75250736>
   gen:name "Lord Robert Kerr"@en ;
   gen:birthDate "1780-09-14" ;
   gen:deathDate "1843-06-23" ;
@@ -731,7 +750,7 @@
   gen:mother <https://www.wikidata.org/wiki/Q51913506> .
   # oo Mary Gilbert, d. 1861-11-27, daughter of Rev. Edmund Gilbert
   []
-    gen:spouse <#Lord_Robert_Kerr> , <#Mary_Gilbert> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75250736> , <https://www.wikidata.org/wiki/Q75250737> ;
 	gen:startDate "1806-06-14" .
 
 <https://www.wikidata.org/wiki/Q2782374>
@@ -740,23 +759,23 @@
   gen:deathDate "1841-11-14" ;
   gen:father <https://www.wikidata.org/wiki/Q2782378> ;
   gen:mother <https://www.wikidata.org/wiki/Q47468414> .
-  # oo Lady Cecil Chetwynd Chetwynd-Talbot, 1808-04-17 - 1877-05-13
+  # oo Lady Cecil Chetwynd Chetwynd-Talbot, 1808-04-17 - 1877-05-13 (talbot.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q2782374> , <https://www.wikidata.org/wiki/Q18526725> ;
 	gen:startDate "1831-07-19" .
-<#Lord_Schomberg_Robert_Kerr>
+<https://www.wikidata.org/wiki/Q75251718>
   gen:name "Lord Schomberg Robert Kerr"@en ;
   gen:birthDate "1795-08-15" ;
   gen:deathDate "1825-08-12" ;
   gen:father <https://www.wikidata.org/wiki/Q2782378> ;
   gen:mother <https://www.wikidata.org/wiki/Q47468414> .
-<#Lady_Isabella_Emily_Caroline_Kerr>
+<https://www.wikidata.org/wiki/Q75251721>
   gen:name "Lady Isabella Emily Caroline Kerr"@en ;
   gen:birthDate "1797~" ;
   gen:deathDate "1858-12-19" ;
   gen:father <https://www.wikidata.org/wiki/Q2782378> ;
   gen:mother <https://www.wikidata.org/wiki/Q47468414> .
-<#Lord_Henry_Francis_Charles_Kerr>
+<https://www.wikidata.org/wiki/Q75251720>
   gen:name "Reverend Lord Henry Francis Charles Kerr"@en ;
   gen:birthDate "1800-08-17" ;
   gen:deathDate "1882-03-07" ;
@@ -764,9 +783,9 @@
   gen:mother <https://www.wikidata.org/wiki/Q47468414> .
   # oo Louisa Dorothea Hope, 1811~ - 1884-01-18
   []
-    gen:spouse <#Lord_Henry_Francis_Charles_Kerr> , <hope.ttl#Louisa_Dorothea_Hope> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75251720> , <https://www.wikidata.org/wiki/Q75255004> ;
 	gen:startDate "1832-09-10" .
-<#Lady_Elizabeth_Georgiana_Kerr>
+<https://www.wikidata.org/wiki/Q75251723>
   gen:name "Lady Elizabeth Georgiana Kerr"@en ;
   gen:birthDate "1807-09-25" ;
   gen:deathDate "1871-03-19" ;
@@ -780,14 +799,14 @@
   gen:father <https://www.wikidata.org/wiki/Q2782378> ;
   gen:mother <https://www.wikidata.org/wiki/Q75250058> .
   # oo 1834-06-13 Sir John Stuart Hepburn-Forbes of Invermay, 8th Baronet, 1804-09-25 - 1866-05-27, https://www.wikidata.org/wiki/Q24288346
-<#Lady_Frances_Kerr>
+<https://www.wikidata.org/wiki/Q75251726>
   gen:name "Lady Frances Kerr"@en ;
   gen:birthDate "1810-10-09" ;
   gen:deathDate "1863-03-25" ;
   gen:father <https://www.wikidata.org/wiki/Q2782378> ;
   gen:mother <https://www.wikidata.org/wiki/Q75250058> .
-  # oo 1848-06-11 George Wade
-<#Lady_Anne_Katherine_Kerr>
+  # oo 1848-06-11 George Wade, https://www.wikidata.org/wiki/Q75266398
+<https://www.wikidata.org/wiki/Q75251728>
   gen:name "Lady Anne Katherine Kerr"@en ;
   gen:birthDate "1812-05-19" ;
   gen:deathDate "1829-12-06" ;
@@ -803,7 +822,7 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75250759> , <https://www.wikidata.org/wiki/Q75250760> ;
 	gen:startDate "1839-10-22" .
-<#Lord_Mark_Ralph_George_Kerr>
+<https://www.wikidata.org/wiki/Q67373382>
   gen:name "Lord Sir Mark Ralph George Kerr"@en ;
   gen:birthDate "1817-12-15" ;
   gen:deathDate "1900-05-17" ;
@@ -819,61 +838,61 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75250772> , <https://www.wikidata.org/wiki/Q75250773> ;
 	gen:startDate "1846-01-13" .
-<#Lady_Georgiana_Augusta_Kerr>
+<https://www.wikidata.org/wiki/Q75251729>
   gen:name "Lady Georgiana Augusta Kerr"@en ;
   gen:birthDate "1822-07-19" ;
   gen:deathDate "1859-02-12" ;
   gen:father <https://www.wikidata.org/wiki/Q2782378> ;
   gen:mother <https://www.wikidata.org/wiki/Q75250058> .
-  # oo 1849-07-25 Rev. Granville Hamilton Forbes
-<#Lady_Georgina_Anne_Emily_Kerr>
+  # oo 1849-07-25 Rev. Granville Hamilton Forbes, https://www.wikidata.org/wiki/Q75266400
+<https://www.wikidata.org/wiki/Q75270635>
   # Lady Georgina Anne Emily Kerr, 1806-07-03 - 1881-05-20
   gen:father <https://www.wikidata.org/wiki/Q16230382> ;
-  gen:mother <manners.ttl#Charlotte_MacDonnell,_3rd_Countess_of_Antrim> .
-  # oo 1825-10-17 Rev. Hon. Frederic Bertie, 1793-02-12 - 1868-02-04, bertie.ttl#Frederic_Bertie
+  gen:mother <https://www.wikidata.org/wiki/Q47318154> .
+  # oo 1825-10-17 Rev. Hon. Frederic Bertie, 1793-02-12 - 1868-02-04, https://www.wikidata.org/wiki/Q75270636
 <https://www.wikidata.org/wiki/Q64686648>
   # Lady Charlotte Elizabeth Kerr, 1811-01-31 - 1866-01-17
   gen:father <https://www.wikidata.org/wiki/Q16230382> ;
-  gen:mother <manners.ttl#Charlotte_MacDonnell,_3rd_Countess_of_Antrim> .
+  gen:mother <https://www.wikidata.org/wiki/Q47318154> .
   # oo 1835-08-22 Sir George Robert Osborn, 6th Baronet, 1813-10-29 - 1892-01-11, https://www.wikidata.org/wiki/Q64686642 (byng.ttl)
 <https://www.wikidata.org/wiki/Q73111278> # -> McDonnell of Antrim
   # Hugh Seymour McDonnell, 4th Earl of Antrim, 1812-08-07 - 1855-07-19
   gen:father <https://www.wikidata.org/wiki/Q16230382> ;
-  gen:mother <manners.ttl#Charlotte_MacDonnell,_3rd_Countess_of_Antrim> .
-<#Mark_McDonnell,_5th_Earl_of_Antrim> # -> McDonnell of Antrim
+  gen:mother <https://www.wikidata.org/wiki/Q47318154> .
+<https://www.wikidata.org/wiki/Q73111316> # -> McDonnell of Antrim
   # Mark McDonnell, 5th Earl of Antrim, 1814-04-03 - 1869-12-19
   gen:father <https://www.wikidata.org/wiki/Q16230382> ;
-  gen:mother <manners.ttl#Charlotte_MacDonnell,_3rd_Countess_of_Antrim> .
-<#Lady_Frederica_Augusta_Kerr>
+  gen:mother <https://www.wikidata.org/wiki/Q47318154> .
+<https://www.wikidata.org/wiki/Q75252144>
   gen:name "Lady Frederica Augusta Kerr"@en ;
   gen:birthDate "1816-06-22" ;
   gen:deathDate "1864-11-26" ;
   gen:father <https://www.wikidata.org/wiki/Q16230382> ;
-  gen:mother <manners.ttl#Charlotte_MacDonnell,_3rd_Countess_of_Antrim> .
+  gen:mother <https://www.wikidata.org/wiki/Q47318154> .
   # oo 1841-03-11 Montagu Bertie, 5th Earl of Abingdon, 1784-04-30 - 1854-10-16, https://www.wikidata.org/wiki/Q6904054
-<#Lady_Emily_Frances_Kerr>
+<https://www.wikidata.org/wiki/Q76201488>
   # Lady Emily Frances Kerr, 1817-08-23 - 1874-06-05
   gen:father <https://www.wikidata.org/wiki/Q16230382> ;
-  gen:mother <manners.ttl#Charlotte_MacDonnell,_3rd_Countess_of_Antrim> .
-  # oo 1839-01-01 Henry Richardson, d. 1849
-  # oo 1864-07-07 Sir Steuart Macnaghten, 1815-06-20 - 1895-06-28, #Sir_Steuart_Macnaghten
-<#Elizabeth_Ann_Kerr>
+  gen:mother <https://www.wikidata.org/wiki/Q47318154> .
+  # oo 1839-01-01 Henry Richardson, d. 1849, https://www.wikidata.org/wiki/Q76197162
+  # oo 1864-07-07 Sir Steuart Macnaghten, 1815-06-20 - 1895-06-28, https://www.wikidata.org/wiki/Q76066355
+<https://www.wikidata.org/wiki/Q75372691>
   # Elizabeth Ann Kerr, 1807-05-06 - 1877-11-30
-  gen:father <#Lord_Robert_Kerr> ;
-  gen:mother <#Mary_Gilbert> .
+  gen:father <https://www.wikidata.org/wiki/Q75250736> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75250737> .
   # oo 1830-01-13 Sir William Maynard Gomm, 1784-11-10 - 1875-03-15, https://www.wikidata.org/wiki/Q331448
-<#William_Walter_Raleigh_Kerr_(died_1881)>
+<https://www.wikidata.org/wiki/Q75250738>
   # William Walter Raleigh Kerr, 1809-11-26 - 1881-05-26
-  gen:father <#Lord_Robert_Kerr> ;
-  gen:mother <#Mary_Gilbert> .
+  gen:father <https://www.wikidata.org/wiki/Q75250736> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75250737> .
   # oo Mary Rouet Wilson, d. 1911-08-04, daughter of James Wilson
   []
-    gen:spouse <#William_Walter_Raleigh_Kerr_(died_1881)> , <#Mary_Rouet_Wilson> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75250738> , <https://www.wikidata.org/wiki/Q75250739> ;
 	gen:startDate "1850-02-12" .
-<#Mary_Frances_Kerr>
+<https://www.wikidata.org/wiki/Q75372695>
   # Mary Frances Kerr, 1815-07-11 - 1888-06-14
-  gen:father <#Lord_Robert_Kerr> ;
-  gen:mother <#Mary_Gilbert> .
+  gen:father <https://www.wikidata.org/wiki/Q75250736> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75250737> .
   # oo 1846-01-03 Edmund Hammond, 1st and last Baron Hammond of Kirkella, 1802-06-25 - 1890-04-29, https://www.wikidata.org/wiki/Q5339534
 
 <https://www.wikidata.org/wiki/Q21693508>
@@ -882,9 +901,9 @@
   gen:deathDate "1870-07-04" ;
   gen:father <https://www.wikidata.org/wiki/Q2782374> ;
   gen:mother <https://www.wikidata.org/wiki/Q18526725> .
-  # oo Lady Constance Harriet Mahonesa Chetwynd-Talbot, 1836-06-15 - 1901-10-10
+  # oo Lady Constance Harriet Mahonesa Chetwynd-Talbot, 1836-06-15 - 1901-10-10 (talbot.ttl)
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q21693508> , <talbot.ttl#Lady_Constance_Harriet_Mahonesa_Chetwynd-Talbot> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q21693508> , <https://www.wikidata.org/wiki/Q75250723> ;
 	gen:startDate "1857-08-12" .
 <https://www.wikidata.org/wiki/Q2782520>
   gen:name "Schomberg Henry Kerr, 9th Marquess of Lothian"@en ;
@@ -896,24 +915,24 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q2782520> , <https://www.wikidata.org/wiki/Q75250066> ;
 	gen:startDate "1865-02-23" .
-<#Lady_Cecil_Elizabeth_Kerr>
+<https://www.wikidata.org/wiki/Q75250927>
   # Lady Cecil Elizabeth Kerr, 1835-01-23 - 1866-02-13
   gen:father <https://www.wikidata.org/wiki/Q2782374> ;
   gen:mother <https://www.wikidata.org/wiki/Q18526725> .
-<#Lady_Alice_Mary_Kerr>
+<https://www.wikidata.org/wiki/Q75250929>
   # Lady Alice Mary Kerr, 1836-06-04 - 1892-01-25
   gen:father <https://www.wikidata.org/wiki/Q2782374> ;
   gen:mother <https://www.wikidata.org/wiki/Q18526725> .
-  # oo 1870-06-20 Thomas Gaisford, d. 1898-02-26, #Thomas_Gaisford
-<#Lord_Ralph_Drury_Kerr>
+  # oo 1870-06-20 Thomas Gaisford, d. 1898-02-26, https://www.wikidata.org/wiki/Q75255111
+<https://www.wikidata.org/wiki/Q75250067>
   gen:name "Lord Ralph Drury Kerr"@en ;
   gen:birthDate "1837-08-11" ;
   gen:deathDate "1916-09-18" ;
   gen:father <https://www.wikidata.org/wiki/Q2782374> ;
   gen:mother <https://www.wikidata.org/wiki/Q18526725> .
-  # oo Lady Anne Fitzalan-Howard, 1837-08-11 - 1916-09-18
+  # oo Lady Anne Fitzalan-Howard, 1837-08-11 - 1916-09-18 (howard.ttl)
   []
-    gen:spouse <#Lord_Ralph_Drury_Kerr> , <howard.ttl#Lady_Anne_Fitzalan-Howard> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75250067> , <https://www.wikidata.org/wiki/Q75250727> ;
 	gen:startDate "1878-07-24" .
 <https://www.wikidata.org/wiki/Q6680006>
   gen:name "Lord Walter Talbot Kerr"@en ;
@@ -927,27 +946,27 @@
 	gen:startDate "1873-11-18" .
 <https://www.wikidata.org/wiki/Q75255008>
   # Francis Ernest Kerr, 1840-08-10 - 1884-05-30
-  gen:father <#Lord_Henry_Francis_Charles_Kerr> ;
-  gen:mother <hope.ttl#Louisa_Dorothea_Hope> .
+  gen:father <https://www.wikidata.org/wiki/Q75251720> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75255004> .
   # oo Mary Frances Monteith, d. 1916-09-06, daughter of Robert Monteith
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75255008> , <https://www.wikidata.org/wiki/Q75372168> ;
 	gen:startDate "1870-10-04" .
 <https://www.wikidata.org/wiki/Q75255011>
   # Mary D'Arcy Kerr, 1848-01-16 - 1937-02-02
-  gen:father <#Lord_Henry_Francis_Charles_Kerr> ;
-  gen:mother <hope.ttl#Louisa_Dorothea_Hope> .
+  gen:father <https://www.wikidata.org/wiki/Q75251720> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75255004> .
   # oo 1871-10-04 John George Kenyon, 1843-10-11 - 1914-07-24, https://www.wikidata.org/wiki/Q75258703 (grey.ttl)
 <https://www.wikidata.org/wiki/Q75255020>
   # Florence Elizabeth Kerr, 1841-10-23 - 1916-09-15
   gen:father <https://www.wikidata.org/wiki/Q75250759> ;
   gen:mother <https://www.wikidata.org/wiki/Q75250760> .
   # oo 1869-04-29 Windham Thomas Wyndham-Quin, 4th Earl of Dunraven and Mount-Earl, 1841-02-12 - 1926-06-14, https://www.wikidata.org/wiki/Q12056754 (fox.ttl)
-<#Amy_Frances_Kerr>
+<https://www.wikidata.org/wiki/Q75255021>
   # Amy Frances Kerr, 1847 - 1939-08-07
   gen:father <https://www.wikidata.org/wiki/Q75250759> ;
   gen:mother <https://www.wikidata.org/wiki/Q75250760> .
-  # oo 1871-04-15 Henley Eden, 1838-03-08 - 1917-09-21, eden.ttl#Henley_Eden
+  # oo 1871-04-15 Henley Eden, 1838-03-08 - 1917-09-21, https://www.wikidata.org/wiki/Q75332511
 <https://www.wikidata.org/wiki/Q75250761>
   # Charles Wyndham Rodolph Kerr, 1849-11-09 - 1894-02-07
   gen:father <https://www.wikidata.org/wiki/Q75250759> ;
@@ -961,7 +980,7 @@
   gen:father <https://www.wikidata.org/wiki/Q75250772> ;
   gen:mother <https://www.wikidata.org/wiki/Q75250773> .
   # oo 1866-08-04 Rev. Francis Edmund Cecil Byng, 5th Earl of Strafford, 1835-01-15 - 1918-01-18, https://www.wikidata.org/wiki/Q5480392
-<#Mary_Frances_Kerr>
+<https://www.wikidata.org/wiki/Q75258731>
   # Mary Frances Kerr, 1856-03-22 - 1941-04-17
   gen:father <https://www.wikidata.org/wiki/Q75250772> ;
   gen:mother <https://www.wikidata.org/wiki/Q75250773> .
@@ -974,15 +993,15 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75255047> , <https://www.wikidata.org/wiki/Q75255048> ;
 	gen:startDate "1889-07-23" .
-<#Mark_Edward_Frederick_Kerr>
+<https://www.wikidata.org/wiki/Q6768367>
   # Mark Edward Frederick Kerr, 1864-09-26 - 1944-01-20
   gen:father <https://www.wikidata.org/wiki/Q75250772> ;
   gen:mother <https://www.wikidata.org/wiki/Q75250773> .
-  # oo Rose Margaret Gough, 1882 - 1944-12-12, daughter of Major Wilfred Arbuthnot Gough
+  # oo Rose Margaret Gough, 1882 - 1944-12-12, daughter of Major Wilfred Arbuthnot Gough and Beatrice Guthrie
   []
-    gen:spouse <#Mark_Edward_Frederick_Kerr> , <#Rose_Margaret_Gough> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q6768367> , <https://www.wikidata.org/wiki/Q7367819> ;
 	gen:startDate "1906-07-10" .
-<#Frederic_Walter_Kerr>
+<https://www.wikidata.org/wiki/Q75250775>
   gen:name "Frederick Walter Kerr"@en ;
   gen:birthDate "1867-05-20" ;
   gen:deathDate "1914-10-31" ;
@@ -990,25 +1009,25 @@
   gen:mother <https://www.wikidata.org/wiki/Q75250773> .
   # oo Lady Helen Victoria Lilian Kerr, 1872-12-09 - 1968-06-04
   []
-    gen:spouse <#Frederic_Walter_Kerr> , <#Lady_Helen_Victoria_Lilian_Kerr> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75250775> , <https://www.wikidata.org/wiki/Q75250771> ;
 	gen:startDate "1902-05-05" .
 <https://www.wikidata.org/wiki/Q75258738>
   # Cecil Nona Kerr, 1875 - 1960-12-28
   gen:father <https://www.wikidata.org/wiki/Q75250772> ;
   gen:mother <https://www.wikidata.org/wiki/Q75250773> .
   # oo 1915-01-24 Richard Edward Crichton, 1879-06-21 - 1962-11-24, https://www.wikidata.org/wiki/Q75258737 (obrien.ttl)
-<#Sophie_Mary_Frances_Kerr>
+<https://www.wikidata.org/wiki/Q75254979>
   # Sophie Mary Frances Kerr, 1854-11-06 - 1934-10-07
-  gen:father <#William_Walter_Raleigh_Kerr_(died_1881)> ;
-  gen:mother <#Mary_Rouet_Wilson> .
+  gen:father <https://www.wikidata.org/wiki/Q75250738> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75250739> .
   # oo 1877-01-15 Sir George Joseph Hamilton Evatt, 1843-11-11 – 1921-11-05, https://www.wikidata.org/wiki/Q33792574
-<#William_Walter_Raleigh_Kerr_(died_1942)>
+<https://www.wikidata.org/wiki/Q75250740>
   # William Walter Raleigh Kerr, 1863-02-08 - 1942-08-22
-  gen:father <#William_Walter_Raleigh_Kerr_(died_1881)> ;
-  gen:mother <#Mary_Rouet_Wilson> .
+  gen:father <https://www.wikidata.org/wiki/Q75250738> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75250739> .
   # oo Annabel Jarves, d. 11954-04-01
   []
-    gen:spouse <#William_Walter_Raleigh_Kerr_(died_1942)> , <#Annabel_Jarves> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75250740> , <https://www.wikidata.org/wiki/Q75250741> ;
 	gen:startDate "1888-09-22" .
 
 <https://www.wikidata.org/wiki/Q75250780>
@@ -1018,27 +1037,27 @@
   gen:father <https://www.wikidata.org/wiki/Q2782520> ;
   gen:mother <https://www.wikidata.org/wiki/Q75250066> .
   # oo 1889-06-04 John Walter Edward Douglas-Scott-Montagu, 2nd Baron Montagu of Beaulieu, 1866-06-10 – 1929-03-30, https://www.wikidata.org/wiki/Q6229878 (scott.ttl)
-<#Lady_Margaret_Isobel_Kerr>
+<https://www.wikidata.org/wiki/Q75250781>
   gen:name "Lady Margaret Isobel Kerr"@en ;
   gen:birthDate "1868-06-12" ;
   gen:deathDate "1964-09-02" ;
   gen:father <https://www.wikidata.org/wiki/Q2782520> ;
   gen:mother <https://www.wikidata.org/wiki/Q75250066> .
-<#Lady_Mary_Kerr_(died_1958)>
+<https://www.wikidata.org/wiki/Q75250781>
   gen:name "Lady Mary Kerr"@en ;
   gen:birthDate "1870-12-25" ;
   gen:deathDate "1958-12-31" ;
   gen:father <https://www.wikidata.org/wiki/Q2782520> ;
   gen:mother <https://www.wikidata.org/wiki/Q75250066> .
-  # oo 1897-12-07 Henry Kidd, d. 1923-06-23, son of Robert Charles Kidd
-<#Lady_Helen_Victoria_Lilian_Kerr>
+  # oo 1897-12-07 Henry Kidd, d. 1923-06-23, https://www.wikidata.org/wiki/Q75250930
+<https://www.wikidata.org/wiki/Q75250771>
   gen:name "Lady Helen Victoria Lilian Kerr"@en ;
   gen:birthDate "1872-12-09" ;
   gen:deathDate "1968-06-04" ;
   gen:father <https://www.wikidata.org/wiki/Q2782520> ;
   gen:mother <https://www.wikidata.org/wiki/Q75250066> .
-  # oo 1902-04-05 Frederick Walter Kerr, 1867-05-02 - 1914-10-31, #Frederic_Walter_Kerr
-<#Robert_Schomberg_Henry_Kerr,_10th_Marquess_of_Lothian>
+  # oo 1902-04-05 Frederick Walter Kerr, 1867-05-02 - 1914-10-31, https://www.wikidata.org/wiki/Q75250775
+<https://www.wikidata.org/wiki/Q75250725>
   gen:name "Robert Henry Schomberg Kerr, 10th Marquess of Lothian"@en ;
   gen:birthDate "1874-03-22" ;
   gen:deathDate "1930-03-16" ;
@@ -1062,15 +1081,15 @@
   gen:name "Philip Henry Kerr, 11th Marquess of Lothian"@en ;
   gen:birthDate "1882-04-18" ;
   gen:deathDate "1940-12-12" ;
-  gen:father <#Lord_Ralph_Drury_Kerr> ;
-  gen:mother <howard.ttl#Lady_Anne_Fitzalan-Howard> .
-<#Ralph_Francis_Kerr>
+  gen:father <https://www.wikidata.org/wiki/Q75250067> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75250727> .
+<https://www.wikidata.org/wiki/Q75250728>
   gen:name "Rev. Ralph Francis Kerr"@en ;
   gen:birthDate "1874-10-01" ;
   gen:deathDate "1932-10-16" ;
   gen:father <https://www.wikidata.org/wiki/Q6680006> ;
   gen:mother <https://www.wikidata.org/wiki/Q64685771> .
-<#Andrew_William_Kerr>
+<https://www.wikidata.org/wiki/Q75250730>
   gen:name "Andrew William Kerr"@en ;
   gen:birthDate "1877-03-23" ;
   gen:deathDate "1929-03-28" ;
@@ -1078,9 +1097,9 @@
   gen:mother <https://www.wikidata.org/wiki/Q64685771> .
   # oo Marie Constance Annabel Kerr, 1889-08-17 - 1929-03-28
   []
-    gen:spouse <#Andrew_William_Kerr> , <#Marie_Constance_Kerr> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75250730> , <https://www.wikidata.org/wiki/Q75250731> ;
 	gen:startDate "1915-07-29" .
-<#Philip_Walter_Kerr>
+<https://www.wikidata.org/wiki/Q75250920>
   gen:name "Philip Walter Kerr"@en ;
   gen:birthDate "1886-10-19" ;
   gen:deathDate "1941-02-10" ;
@@ -1088,40 +1107,30 @@
   gen:mother <https://www.wikidata.org/wiki/Q64685771> .
   # oo Dorothy Lucy Ethelreda Cave, b. 1903-08-10
   []
-    gen:spouse <#Philip_Walter_Kerr> , <#Dorothy_Lucy_Ethelreda_Cave> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75250920> , <https://www.wikidata.org/wiki/Q75255109> ;
 	gen:startDate "1936-05-12" .
-<#Wilhelmina_Mary_Henrietta_Kerr>
+<https://www.wikidata.org/wiki/Q75372207>
   # Wilhelmina Mary Henrietta Kerr, 1872-04-16 - 1944-01-08
   gen:father <https://www.wikidata.org/wiki/Q75255008> ;
   gen:mother <https://www.wikidata.org/wiki/Q75372168> .
-  # oo 1895-10-23 Charles John Philip Cave, (1871?) d. 1950-12-08, #Charles_John_Philip_Cave
+  # oo 1895-10-23 Charles John Philip Cave, (1871?) d. 1950-12-08, https://www.wikidata.org/wiki/Q75372209
 <https://www.wikidata.org/wiki/Q75372217>
   # Mary Christina Kerr, 1877-05-01 - 1980-10-21
   gen:father <https://www.wikidata.org/wiki/Q75255008> ;
   gen:mother <https://www.wikidata.org/wiki/Q75372168> .
   # oo 1906-02-22 Adrian Laurence Cave, 1874-03-31 - 1931-06-21, https://www.wikidata.org/wiki/Q75372219
-<#Henry_Francis_Hobart_Kerr>
+<https://www.wikidata.org/wiki/Q75372171>
   # Henry Francis Hobart Kerr, 1878-09-01 - 1972-12-15
   gen:father <https://www.wikidata.org/wiki/Q75255008> ;
   gen:mother <https://www.wikidata.org/wiki/Q75372168> .
   # oo Gertrude Mary Anthony, d. 1969-09-02, daughter of James Anthony
   []
-    gen:spouse <#Henry_Francis_Hobart_Kerr> , <#Gertrude_Mary_Anthony> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75372171> , <https://www.wikidata.org/wiki/Q75372172> ;
 	gen:startDate "1915-11-18" .
-<https://www.wikidata.org/wiki/Q5079771>
+<https://www.wikidata.org/wiki/Q5079771> # -> Baron Teviot
   # Charles Ian Kerr, 1st Baron Teviot, 1874-05-03 - 1968-01-07
-  # 1st Baron Teviot, of Burghclere, co. Southampton 1940-06-27
   gen:father <https://www.wikidata.org/wiki/Q75250761> ;
   gen:mother <https://www.wikidata.org/wiki/Q75250762> .
-  # oo Muriel Constance Canning, daughter of William Gordon Canning
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q5079771> , <#Muriel_Constance_Canning> ;
-	gen:startDate "1911-01-24" ;
-	gen:divorceDate "1930".
-  # oo Florence Angela Villiers, 1904-11-01 - 1979
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q5079771> , <villiers.ttl#Florence_Angela_Villiers> ;
-	gen:startDate "1930-07-31" .
 <https://www.wikidata.org/wiki/Q75255024>
   # Violet Kerr, 1877 - 1940-03-15
   gen:father <https://www.wikidata.org/wiki/Q75250761> ;
@@ -1132,43 +1141,43 @@
   gen:father <https://www.wikidata.org/wiki/Q75250761> ;
   gen:mother <https://www.wikidata.org/wiki/Q75250762> .
   # oo 1903-04-28 Hon. George Henry Edwardes, 1877-05-19 - 1930-11-25, https://www.wikidata.org/wiki/Q75255039 (douglas.ttl)
-<#Basil_Kerr>
+<https://www.wikidata.org/wiki/Q75250764>
   # Basil Kerr, 1879-09-22 - 1957-09-19
   gen:father <https://www.wikidata.org/wiki/Q75250761> ;
   gen:mother <https://www.wikidata.org/wiki/Q75250762> .
-  # oo Winifred Katherine Blezard, d. 1974-02-19
+  # oo Winifred Katherine Blezard, d. 1974-02-19 (chetwynd.ttl)
   []
-    gen:spouse <#Basil_Kerr> , <#Winifred_Katherine_Blezard> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75250764> , <https://www.wikidata.org/wiki/Q75250765> ;
 	gen:startDate "1912-02-06" .
-<#Helen_Cicely_Kerr>
+<https://www.wikidata.org/wiki/Q75255027>
   # Helen Cicely Kerr, 1884 - 1976-06-14
   gen:father <https://www.wikidata.org/wiki/Q75250761> ;
   gen:mother <https://www.wikidata.org/wiki/Q75250762> .
-  # oo 1910-07-06 Archibald Edward Butter, d. 1928-01-06, son of Colonel Archibald Butter
+  # oo 1910-07-06 Archibald Edward Butter, d. 1928-01-06, https://www.wikidata.org/wiki/Q75255041
   # oo 1939-04-28 Edward William David Baird, 1864-06-29 – 1956-08-08, https://www.wikidata.org/wiki/Q15998775
-<#Margaret_Vere_Kerr>
+<https://www.wikidata.org/wiki/Q75255051>
   # Margaret Vere Kerr, 1890-09-26 - 1958-10-25
   gen:father <https://www.wikidata.org/wiki/Q75255047> ;
   gen:mother <https://www.wikidata.org/wiki/Q75255048> .
   # oo 1917-12-12 Cecil Percival Heywood, 1880-05-17 - 1936-10-20, https://www.wikidata.org/wiki/Q5056119
 <https://www.wikidata.org/wiki/Q4727511>
   # Alix Kerr, 1907-05-10 - 1981
-  gen:father <#Mark_Edward_Frederick_Kerr> ;
-  gen:mother <#Rose_Margaret_Gough> .
+  gen:father <https://www.wikidata.org/wiki/Q6768367> ;
+  gen:mother <https://www.wikidata.org/wiki/Q7367819> .
   # oo 1937-07-28 Maurice Arthur Liddell, 1905-09-12 - 1976-05-16, https://www.wikidata.org/wiki/Q75255078
-<#Marie_Constance_Kerr>
+<https://www.wikidata.org/wiki/Q75250731>
   # Marie Constance Annabel Kerr, 1889-08-17 - 1929-03-28
-  gen:father <#William_Walter_Raleigh_Kerr_(died_1942)> ;
-  gen:mother <#Annabel_Jarves> .
-  # oo 1915-07-29 Andrew William Kerr, 1877-03-23 - 1929-03-28, #Andrew_William_Kerr
+  gen:father <https://www.wikidata.org/wiki/Q75250740> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75250741> .
+  # oo 1915-07-29 Andrew William Kerr, 1877-03-23 - 1929-03-28, https://www.wikidata.org/wiki/Q75250730
 
 <https://www.wikidata.org/wiki/Q7175172>
   gen:name "Peter Francis Walter Kerr, 12th Marquess of Lothian"@en ;
   gen:birthDate "1922-09-08" ;
   gen:deathDate "2004-10-11" ;
-  gen:father <#Andrew_William_Kerr> ;
-  gen:mother <#Marie_Constance_Kerr> .
-  # oo Loris Antonella Thomasa Reuss Newland 1922-09-08 – 2007-01-06
+  gen:father <https://www.wikidata.org/wiki/Q75250730> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75250731> .
+  # oo Loris Antonella Thomasa Reuss Newland, 1922-09-08 – 2007-01-06
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7175172> , <https://www.wikidata.org/wiki/Q4776130> ;
 	gen:startDate "1943-04-30" .
@@ -1176,40 +1185,33 @@
   gen:name "Lord John Andrew Christopher Kerr"@en ;
   gen:birthDate "1927-07-04" ;
   gen:deathDate "2018-05-03" ;
-  gen:father <#Andrew_William_Kerr> ;
-  gen:mother <#Marie_Constance_Kerr> .
+  gen:father <https://www.wikidata.org/wiki/Q75250730> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75250731> .
   # oo Isabel Marion Gurney, 1924-12-10 - 2015-06 (smith.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75250915> , <https://www.wikidata.org/wiki/Q75372147> ;
 	gen:startDate "1949-07-12" .
 <https://www.wikidata.org/wiki/Q75372177>
   # Anne Margaret D'Arcy Kerr, 1923-04-30 - 1999-10-14
-  gen:father <#Henry_Francis_Hobart_Kerr> ;
-  gen:mother <#Gertrude_Mary_Anthony> .
+  gen:father <https://www.wikidata.org/wiki/Q75372171> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75372172> .
   # oo 1948-09-16 Christopher Bartle Hugh Scott, 12th of Gala, 1924-10-03 - 1997-04-13, https://www.wikidata.org/wiki/Q75372186
-<https://www.wikidata.org/wiki/Q26035027>
-  # Charles John Kerr, 2nd Baron Teviot, b. 1934-12-16
-  gen:father <https://www.wikidata.org/wiki/Q5079771> ;
-  gen:mother <villiers.ttl#Florence_Angela_Villiers> .
-  # oo Patricia Mary Harris, daughter of Alexander Harris
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q26035027> , <#Patricia_Mary_Harris> ;
-	gen:startDate "1965-09-25" .
 
-<#Lady_Mary_Marianne_Anne_Kerr>
+<https://www.wikidata.org/wiki/Q75334721>
   gen:name "Lady Mary Marianne Anne Kerr"@en ;
   gen:birthDate "1944-03-20" ;
   gen:father <https://www.wikidata.org/wiki/Q7175172> ;
   gen:mother <https://www.wikidata.org/wiki/Q4776130> .
-  # oo 1971-04-06 Charles Patrick Paul Graf von Westenholz, 1945-03-17 - 2006-03-09, son of Henry Frederick Everhard Baron von Westenholz and Marguerite Gordon Ness
+  # oo 1971-04-06 Charles Patrick Paul Freiherr von Westenholz, 1945-03-17 - 2006-03-09, https://www.wikidata.org/wiki/Q16017617
 <https://www.wikidata.org/wiki/Q332962>
   gen:name "Michael Andrew Foster Jude Kerr, 13th Marquess of Lothian"@en ;
+  # Michael Ancram
   gen:birthDate "1945-07-07" ;
   gen:father <https://www.wikidata.org/wiki/Q7175172> ;
   gen:mother <https://www.wikidata.org/wiki/Q4776130> .
-  # oo Theresa Jane Fitzalan-Howard, 16th Lady Herries of Terregles, b. 1945-01-24
+  # oo Theresa Jane Fitzalan-Howard, 16th Lady Herries of Terregles, b. 1945-01-24 (howard.ttl)
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q332962> , <howard.ttl#Theresa_Jane_Fitzalan-Howard,_Lady_Herries_of_Terregles> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q332962> , <https://www.wikidata.org/wiki/Q75340373> ;
 	gen:startDate "1975-06-07" .
 <https://www.wikidata.org/wiki/Q75331715>
   gen:name "Lady Cecil Nennella Therese Kerr"@en ;
@@ -1251,114 +1253,146 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75372148> , <https://www.wikidata.org/wiki/Q75372158> ;
 	gen:startDate "1983-08-03" .
-<#Charles_Robert_Kerr>
-  # Hon. Charles Robert Kerr, b. 1971-09-19
-  gen:father <https://www.wikidata.org/wiki/Q26035027> ;
-  gen:mother <#Patricia_Mary_Harris> .
-  # oo Yamaleth Molina Guillen
-  []
-    gen:spouse <#Charles_Robert_Kerr> , <#Yamaleth_Molina_Guillen> ;
-	gen:startDate "2000" .
-  # oo Fiona C. Parry-Jones, daughter of David Parry-Jones
-  []
-    gen:spouse <#Charles_Robert_Kerr> , <#Fiona_C._Parry-Jones> ;
-	gen:startDate "2012-10-13" .
-<#Catherine_Harriet_Kerr>
-  # Hon. Catherine Harriet Kerr, b. 1976-01-17
-  gen:father <https://www.wikidata.org/wiki/Q26035027> ;
-  gen:mother <#Patricia_Mary_Harris> .
 
-<#Sarah_Margaret_Kerr>
+<https://www.wikidata.org/wiki/Q75402778>
   gen:name "Sarah Margaret Kerr"@en ;
   gen:birthDate "1976-06-13" ;
   gen:deathDate "1976-06-13" ;
   gen:father <https://www.wikidata.org/wiki/Q332962> ;
-  gen:mother <howard.ttl#Theresa_Jane_Fitzalan-Howard,_Lady_Herries_of_Terregles> .
-<#Lady_Clare_Therese_Kerr>
+  gen:mother <https://www.wikidata.org/wiki/Q75340373> .
+<https://www.wikidata.org/wiki/Q75340375>
   gen:name "Lady Clare Therese Kerr"@en ;
   gen:birthDate "1979-01-25" ;
   gen:father <https://www.wikidata.org/wiki/Q332962> ;
-  gen:mother <howard.ttl#Theresa_Jane_Fitzalan-Howard,_Lady_Herries_of_Terregles> .
+  gen:mother <https://www.wikidata.org/wiki/Q75340373> .
   # oo 2010-08 Hon. Nicholas Richard Hurd, b. 1962-05-13, https://www.wikidata.org/wiki/Q691299
-<#Lady_Mary_Cecil_Kerr>
+<https://www.wikidata.org/wiki/Q75340377>
   gen:name "Lady Mary Cecil Kerr"@en ;
   gen:birthDate "1981-05-28" ;
   gen:father <https://www.wikidata.org/wiki/Q332962> ;
-  gen:mother <howard.ttl#Theresa_Jane_Fitzalan-Howard,_Lady_Herries_of_Terregles> .
-  # oo 2016-05-29 Zackary Adler, son of Dr. Richard Adler
-<#John_Walter_Donald_Peter_Kerr>
+  gen:mother <https://www.wikidata.org/wiki/Q75340373> .
+  # oo 2016-05-29 Zackary Adler, https://www.wikidata.org/wiki/Q76317238
+<https://www.wikidata.org/wiki/Q75352236>
   gen:name "John Walter Donald Peter Kerr"@en ;
   gen:birthDate "1988-08-08" ;
   gen:father <https://www.wikidata.org/wiki/Q75334719> ;
   gen:mother <https://www.wikidata.org/wiki/Q75334725> .
-<#Frederick_James_Michael_Ralph_Kerr>
+<https://www.wikidata.org/wiki/Q75319909>
   gen:name "Frederick James Michael Ralph Kerr"@en ;
   gen:birthDate "1989" ;
   gen:father <https://www.wikidata.org/wiki/Q75334719> ;
   gen:mother <https://www.wikidata.org/wiki/Q75334725> .
-<#Francis_Andrew_William_George_Kerr>
+<https://www.wikidata.org/wiki/Q75352238>
   gen:name "Francis Andrew William George Kerr"@en ;
   gen:birthDate "1991" ;
   gen:father <https://www.wikidata.org/wiki/Q75334719> ;
   gen:mother <https://www.wikidata.org/wiki/Q75334725> .
-<#Amabel_Amy_Antonella_Kerr>
+<https://www.wikidata.org/wiki/Q75989735>
   gen:name "Amabel Amy Antonella Kerr"@en ;
   gen:birthDate "1995-01-05" ;
   gen:father <https://www.wikidata.org/wiki/Q75334719> ;
   gen:mother <https://www.wikidata.org/wiki/Q75334725> .
-<#Minna_Alice_Priscilla_Elizabeth_Kerr>
+<https://www.wikidata.org/wiki/Q75989765>
   gen:name "Minna Alice Priscilla Elizabeth Kerr"@en ;
   gen:birthDate "1998-03-31" ;
   gen:father <https://www.wikidata.org/wiki/Q75334719> ;
   gen:mother <https://www.wikidata.org/wiki/Q75334725> .
-<#Hugh_Alexander_Thomas_Joseph_Kerr>
+<https://www.wikidata.org/wiki/Q75989765>
   gen:name "Hugh Alexander Thomas Joseph Kerr"@en ;
   gen:birthDate "1999-08-15" ;
   gen:father <https://www.wikidata.org/wiki/Q75334719> ;
   gen:mother <https://www.wikidata.org/wiki/Q75334725> .
-<#Robert_John_Edward_Kerr>
+<https://www.wikidata.org/wiki/Q75372159>
   # Robert John Edward Kerr, b. 1987
   gen:father <https://www.wikidata.org/wiki/Q75372148> ;
   gen:mother <https://www.wikidata.org/wiki/Q75372158> .
-<#Codelia_Isabel_Marie_Kerr>
+<https://www.wikidata.org/wiki/Q75372162>
   # Codelia Isabel Marie Kerr, b. 1988
   gen:father <https://www.wikidata.org/wiki/Q75372148> ;
   gen:mother <https://www.wikidata.org/wiki/Q75372158> .
-<#Walter_William_Raleigh_Kerr>
+<https://www.wikidata.org/wiki/Q75372162>
   # Walter William Raleigh Kerr, b. 1992
   gen:father <https://www.wikidata.org/wiki/Q75372148> ;
   gen:mother <https://www.wikidata.org/wiki/Q75372158> .
-<#Isabella_Kerr>
+
+
+# Baron Teviot
+<https://www.wikidata.org/wiki/Q5079771>
+  # Charles Ian Kerr, 1st Baron Teviot, 1874-05-03 - 1968-01-07
+  # 1st Baron Teviot, of Burghclere, co. Southampton 1940-06-27
+  gen:father <https://www.wikidata.org/wiki/Q75250761> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75250762> .
+  # oo Muriel Constance Canning, daughter of William Gordon Canning
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5079771> , <https://www.wikidata.org/wiki/Q75259005> ;
+	gen:startDate "1911-01-24" ;
+	gen:divorceDate "1930".
+  # oo Florence Angela Villiers, 1904-11-01 - 1979
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5079771> , <https://www.wikidata.org/wiki/Q75259007> ;
+	gen:startDate "1930-07-31" .
+
+<https://www.wikidata.org/wiki/Q26035027>
+  # Charles John Kerr, 2nd Baron Teviot, b. 1934-12-16
+  gen:father <https://www.wikidata.org/wiki/Q5079771> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75259007> .
+  # oo Patricia Mary Harris, daughter of Alexander Harris
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q26035027> , <https://www.wikidata.org/wiki/Q75332445> ;
+	gen:startDate "1965-09-25" .
+
+<https://www.wikidata.org/wiki/Q75332446>
+  # Hon. Charles Robert Kerr, b. 1971-09-19
+  gen:father <https://www.wikidata.org/wiki/Q26035027> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75332445> .
+  # oo Yamaleth Molina Guillen
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75332446> , <https://www.wikidata.org/wiki/Q76189035> ;
+	gen:startDate "2000" .
+  # oo Fiona C. Parry-Jones, daughter of David Parry-Jones
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75332446> , <https://www.wikidata.org/wiki/Q76245093> ;
+	gen:startDate "2012-10-13" .
+<https://www.wikidata.org/wiki/Q75331282>
+  # Hon. Catherine Harriet Kerr, b. 1976-01-17
+  gen:father <https://www.wikidata.org/wiki/Q26035027> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75332445> .
+
+<https://www.wikidata.org/wiki/Q76290416>
   # Isabella Kerr, 2001 - 2006
-  gen:father <#Charles_Robert_Kerr> ;
-  gen:mother <#Yamaleth_Molina_Guillen> .
-<#Arianna_Sophia_Kerr>
+  gen:father <https://www.wikidata.org/wiki/Q75332446> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76189035> .
+<https://www.wikidata.org/wiki/Q76245095>
   # Arianna Sophia Kerr, b. 2003
-  gen:father <#Charles_Robert_Kerr> ;
-  gen:mother <#Yamaleth_Molina_Guillen> .
-<#Florence_Kerr>
+  gen:father <https://www.wikidata.org/wiki/Q75332446> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76189035> .
+<https://www.wikidata.org/wiki/Q76290415>
   # Florence Kerr, b. 2013
-  gen:father <#Charles_Robert_Kerr> ;
-  gen:mother <#Fiona_C._Parry-Jones> .
+  gen:father <https://www.wikidata.org/wiki/Q75332446> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76245093> .
 
 
 # McDonnell of Antrim
 <https://www.wikidata.org/wiki/Q73111278>
   # Hugh Seymour McDonnell, 4th Earl of Antrim, 1812-08-07 - 1855-07-19
+  # Hugh Seymour Kerr
+  # Hugh Seymour McDonnell 1836-06-27
   # 4th Viscount Dunluce, 4th Earl of Antrim 1835-10-26
   gen:father <https://www.wikidata.org/wiki/Q16230382> ;
-  gen:mother <manners.ttl#Charlotte_MacDonnell,_3rd_Countess_of_Antrim> .
+  gen:mother <https://www.wikidata.org/wiki/Q47318154> .
   # oo Lady Laura Cecilia Parker, 1809 - 1883-01-26 (fane.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q73111278> , <https://www.wikidata.org/wiki/Q75270665> ;
 	gen:startDate "1836-05-03" .
-<#Mark_McDonnell,_5th_Earl_of_Antrim>
+<https://www.wikidata.org/wiki/Q73111316>
   # Mark McDonnell, 5th Earl of Antrim, 1814-04-03 - 1869-12-19
+  # Mark Kerr
+  # Mark McDonnell 1855-11-08
   gen:father <https://www.wikidata.org/wiki/Q16230382> ;
-  gen:mother <manners.ttl#Charlotte_MacDonnell,_3rd_Countess_of_Antrim> .
+  gen:mother <https://www.wikidata.org/wiki/Q47318154> .
   # oo Jane Emma Hannah Macan, 1825~ - 1892-04-21, daughter of Turner Macan and Harriet Sneyd
   []
-    gen:spouse <#Mark_McDonnell,_5th_Earl_of_Antrim> , <#Jane_Emma_Hannah_Macan> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q73111316> , <https://www.wikidata.org/wiki/Q75269286> ;
 	gen:startDate "1849-04-27" .
 
 <https://www.wikidata.org/wiki/Q75280817>
@@ -1368,42 +1402,42 @@
   # oo 1864-10-26 Sir Malcolm Mac Gregor of Mac Gregor, 4th Baronet, 1834-08-29 - 1879-08-31, https://www.wikidata.org/wiki/Q75280815
 <https://www.wikidata.org/wiki/Q18195696>
   # William Randal McDonnell, 6th Earl of Antrim, 1851-01-08 - 1918-07-19
-  gen:father <#Mark_McDonnell,_5th_Earl_of_Antrim> ;
-  gen:mother <#Jane_Emma_Hannah_Macan> .
+  gen:father <https://www.wikidata.org/wiki/Q73111316> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75269286> .
   # oo Lady Louisa Jane Grey, 1855-02-15 - 1949-04-02
   []
     gen:spouse <https://www.wikidata.org/wiki/Q18195696> , <https://www.wikidata.org/wiki/Q3837640> ;
 	gen:startDate "1875-06-01" .
 <https://www.wikidata.org/wiki/Q75247413>
   # Hon. Mark Henry Horace McDonnell, 1852-08-18 - 1909-04-23
-  gen:father <#Mark_McDonnell,_5th_Earl_of_Antrim> ;
-  gen:mother <#Jane_Emma_Hannah_Macan> .
+  gen:father <https://www.wikidata.org/wiki/Q73111316> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75269286> .
   # oo Emily Fanny Dorothy Osborn, 1851-06-09 - 1925-07-12 (byng.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75247413> , <https://www.wikidata.org/wiki/Q64685851> ;
 	gen:startDate "1892-08-19" .
-<#Lady_Caroline_Elizabeth_McDonnell>
+<https://www.wikidata.org/wiki/Q75269290>
   # Lady Caroline Elizabeth McDonnell, 1853-11-23 - 1930-02-23
-  gen:father <#Mark_McDonnell,_5th_Earl_of_Antrim> ;
-  gen:mother <#Jane_Emma_Hannah_Macan> .
-  # oo 1881-04-27 Rev. Hon. Alberic Edward Bertie, 1846-11-14 - 1928-03-20, bertie.ttl#Alberic_Edward_Bertie
-<#Lady_Mabel_Harriet_McDonnell>
+  gen:father <https://www.wikidata.org/wiki/Q73111316> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75269286> .
+  # oo 1881-04-27 Rev. Hon. Alberic Edward Bertie, 1846-11-14 - 1928-03-20, https://www.wikidata.org/wiki/Q75269289
+<https://www.wikidata.org/wiki/Q75274432>
   # Lady Mabel Harriet McDonnell, 1858-10-27 - 1942-12-31
-  gen:father <#Mark_McDonnell,_5th_Earl_of_Antrim> ;
-  gen:mother <#Jane_Emma_Hannah_Macan> .
+  gen:father <https://www.wikidata.org/wiki/Q73111316> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75269286> .
   # oo 1878-06-06 Henry Charles Howard, of Greystoke Castle, 1850-09-17 - 1914-08-04, https://www.wikidata.org/wiki/Q16058834
-<#Lady_Jane_Grey_McDonnell>
+<https://www.wikidata.org/wiki/Q75251935>
   # Lady Jane Grey McDonnell, 1863-06-15 - 1953-08-27
-  gen:father <#Mark_McDonnell,_5th_Earl_of_Antrim> ;
-  gen:mother <#Jane_Emma_Hannah_Macan> .
-  # oo 1886-06-01 Charles John Robert Hepburn-Stuart-Forbes-Trefusis, 21st Baron Clinton, 1863-01-18 - 1957-07-05, https://www.wikidata.org/wiki/Q746464
+  gen:father <https://www.wikidata.org/wiki/Q73111316> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75269286> .
+  # oo 1886-06-01 Charles John Robert Hepburn-Stuart-Forbes-Trefusis, 21st Baron Clinton, 1863-01-18 - 1957-07-05, https://www.wikidata.org/wiki/Q746464 (clinton.ttl)
 <https://www.wikidata.org/wiki/Q75271380>
   # Lady Helena McDonnell, 1865 - 1948-01-11
-  gen:father <#Mark_McDonnell,_5th_Earl_of_Antrim> ;
-  gen:mother <#Jane_Emma_Hannah_Macan> .
+  gen:father <https://www.wikidata.org/wiki/Q73111316> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75269286> .
   # oo 1888-04-12 Charles Barrington Balfour, of Newton Don, 1862-02-20 – 1921-08-31, https://www.wikidata.org/wiki/Q5075441 (fraser.ttl)
 
-<#Lady_Sybil_Mary_McDonnell>
+<https://www.wikidata.org/wiki/Q75271584>
   # Lady Sybil Mary McDonnell, 1876-03-26 – 1959-04-16
   gen:father <https://www.wikidata.org/wiki/Q18195696> ;
   gen:mother <https://www.wikidata.org/wiki/Q3837640> .
@@ -1414,7 +1448,7 @@
   gen:mother <https://www.wikidata.org/wiki/Q3837640> .
   # oo Margaret Isabel Talbot, 1879 - 1974-04-19
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q18195675> , <talbot.ttl#Margaret_Isabel_Talbot> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q18195675> , <https://www.wikidata.org/wiki/Q75252286> ;
 	gen:startDate "1904-07-02" .
 <https://www.wikidata.org/wiki/Q4764189>
   # Hon. Angus McDonnell, 1881-06-07 – 1966-04-22
@@ -1422,31 +1456,31 @@
   gen:mother <https://www.wikidata.org/wiki/Q3837640> .
   # oo Ethelwyn Sylvia Arthur Jones, d. 1948-04-03, daughter of Henry Arthur Jones
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q4764189> , <#Ethelwyn_Sylvia_Jones> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q4764189> , <https://www.wikidata.org/wiki/Q75271581> ;
 	gen:startDate "1913-12-13" .
 
-<#Lady_Rose_Gwendolen_Louisa_McDonnell>
+<https://www.wikidata.org/wiki/Q75334384>
   # Lady Rose Gwendolen Louisa McDonnell, 1909-05-23 - 1993-11-02
   gen:father <https://www.wikidata.org/wiki/Q18195675> ;
-  gen:mother <talbot.ttl#Margaret_Isabel_Talbot> .
-  # oo 1933-04-22 Francis Anthony Baring, 1909-11-28 - 1940-06-17, baring.ttl#Francis_Anthony_Baring
+  gen:mother <https://www.wikidata.org/wiki/Q75252286> .
+  # oo 1933-04-22 Francis Anthony Baring, 1909-11-28 - 1940-06-17, https://www.wikidata.org/wiki/Q75334385
 <https://www.wikidata.org/wiki/Q18195674>
   # Randal John Somerled McDonnell, 8th Earl of Antrim, 1911-05-22 - 1977-09-26
   gen:father <https://www.wikidata.org/wiki/Q18195675> ;
-  gen:mother <talbot.ttl#Margaret_Isabel_Talbot> .
+  gen:mother <https://www.wikidata.org/wiki/Q75252286> .
   # oo Angela Christina Sykes, 1911-09-06 - 1984 (egerton.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q18195674> , <https://www.wikidata.org/wiki/Q50707753> ;
 	gen:startDate "1934-05-11" .
-<#Lady_Jean_Meriel_McDonnell>
+<https://www.wikidata.org/wiki/Q75334415>
   # Lady Jean Meriel McDonnell, 1914-09-01 - 1998-11-16
   gen:father <https://www.wikidata.org/wiki/Q18195675> ;
-  gen:mother <talbot.ttl#Margaret_Isabel_Talbot> .
-  # oo 1939-08-31 Hon. William Speke Philipps, 1908-09-17 - 1975-09-05, hastings.ttl#William_Speke_Philipps
+  gen:mother <https://www.wikidata.org/wiki/Q75252286> .
+  # oo 1939-08-31 Hon. William Speke Philipps, 1908-09-17 - 1975-09-05, https://www.wikidata.org/wiki/Q75334417 (hastings.ttl)
 <https://www.wikidata.org/wiki/Q75334357>
   # Hon. James Angus Grey McDonnell, 1917-08-03 - 2005-01
   gen:father <https://www.wikidata.org/wiki/Q18195675> ;
-  gen:mother <talbot.ttl#Margaret_Isabel_Talbot> .
+  gen:mother <https://www.wikidata.org/wiki/Q75252286> .
   # oo Jeanne Irene Barry, b. 1915-07-12 (murray.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75334357> , <https://www.wikidata.org/wiki/Q75334359> ;
@@ -1461,82 +1495,119 @@
     gen:spouse <https://www.wikidata.org/wiki/Q4719590> , <https://www.wikidata.org/wiki/Q75334332> ;
 	gen:startDate "1963-02-09" ;
 	gen:divorceDate "1974" .
-  # oo Elizabeth Hannah Sacher, daughter of Michael Moses Sacher (1917-10-17 - 1986-07-29) and oo 1938 Audrey Glucksman
+  # oo Elizabeth Hannah Sacher
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q4719590> , <#Elizabeth_Hannah_Sacher> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q4719590> , <https://www.wikidata.org/wiki/Q75334334> ;
 	gen:startDate "1977-10-21" .
 <https://www.wikidata.org/wiki/Q75334331>
   # Lady Christina Alice McDonnell, b. 1938-09-18
   gen:father <https://www.wikidata.org/wiki/Q18195674> ;
   gen:mother <https://www.wikidata.org/wiki/Q50707753> .
   # oo 1963-01-23 Joseph Andrew Christopher Hoare, 1925-03-23 - 2002-01-05, https://www.wikidata.org/wiki/Q75334351
-<#Hector_John_McDonnell>
+<https://www.wikidata.org/wiki/Q21466977>
   # Hon. Hector John McDonnell, b. 1947-03-01
   gen:father <https://www.wikidata.org/wiki/Q18195674> ;
   gen:mother <https://www.wikidata.org/wiki/Q50707753> .
   # oo Catherine Elizabeth Chapman, daughter of Ronald Chapman
   []
-    gen:spouse <#Hector_John_McDonnell> , <#Catherine_Elizabeth_Chapman> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q21466977> , <https://www.wikidata.org/wiki/Q75334347> ;
 	gen:startDate "1969-02-15" ;
 	gen:divorceDate "1974" .
 
-<#Lady_Flora_Mary_McDonnell>
+<https://www.wikidata.org/wiki/Q6470158>
   # Lady Flora Mary McDonnell, b. 1963-11-07
   gen:father <https://www.wikidata.org/wiki/Q4719590> ;
   gen:mother <https://www.wikidata.org/wiki/Q75334332> .
-  # oo 2003-04-30 Dr. Thomas Rupert Blaise Pennybacker, b. 1975, son of Joe Pennybacker and Rosalind Catherine Toynbee
-<#Lady_Alice_Angela_Jane_McDonnell>
+  # oo 2003-04-30 Dr. Thomas Rupert Blaise Pennybacker, b. 1975, https://www.wikidata.org/wiki/Q75256447
+<https://www.wikidata.org/wiki/Q75334340>
   # Lady Alice Angela Jane McDonnell, b. 1964-12-05
   gen:father <https://www.wikidata.org/wiki/Q4719590> ;
   gen:mother <https://www.wikidata.org/wiki/Q75334332> .
-  # oo 1991 Christian Gwin
-<#Randal_Alexander_McDonnell,_Viscount_Dunluce>
+  # oo 1991 Christian Gwin, https://www.wikidata.org/wiki/Q75334343
+<https://www.wikidata.org/wiki/Q75334336>
   # Randal Alexander St. John McDonnell, Viscount Dunluce, b. 1967-07-02
   gen:father <https://www.wikidata.org/wiki/Q4719590> ;
   gen:mother <https://www.wikidata.org/wiki/Q75334332> .
   # oo Aurora Gunn, b. 1971, daughter of David Gunn
   []
-    gen:spouse <#Randal_Alexander_McDonnell,_Viscount_Dunluce> , <#Aurora_Gunn> .
-<#Lady_Rachel_Frances_McDonnell>
+    gen:spouse <https://www.wikidata.org/wiki/Q75334336> , <https://www.wikidata.org/wiki/Q75496615> .
+<https://www.wikidata.org/wiki/Q75334344>
   # Lady Rachel Frances McDonnell, b. 1978-02-24
   gen:father <https://www.wikidata.org/wiki/Q4719590> ;
-  gen:mother <#Elizabeth_Hannah_Sacher> .
+  gen:mother <https://www.wikidata.org/wiki/Q75334334> .
 
-<#Alexander_David_McDonnell>
+<https://www.wikidata.org/wiki/Q75496618>
   # Hon. Alexander David Somerled McDonnell, b. 2006-06-30
-  gen:father <#Randal_Alexander_McDonnell,_Viscount_Dunluce> ;
-  gen:mother <#Aurora_Gunn> .
-<#Helena_Maeve_McDonnell>
+  gen:father <https://www.wikidata.org/wiki/Q75334336> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75496615> .
+<https://www.wikidata.org/wiki/Q75651426>
   # Hon. Helena Maeve Aurora McDonnell, b. 2008-02-19
-  gen:father <#Randal_Alexander_McDonnell,_Viscount_Dunluce> ;
-  gen:mother <#Aurora_Gunn> .
+  gen:father <https://www.wikidata.org/wiki/Q75334336> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75496615> .
 
 
 # ----
-#<#James_Rutherfoord_of_that_Ilk>
+#<https://www.wikidata.org/wiki/Q75266379>
   # James Rutherfoord of that Ilk
   # oo Margaret Erskine
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75266379> , <https://www.wikidata.org/wiki/Q76104446> .
 
-<#Christian_Rutherfoord>
+<https://www.wikidata.org/wiki/Q75254914>
   # Christian Rutherfoord
-  gen:father <#James_Rutherfoord_of_that_Ilk> .
-  # and Margaret Erskine
-  # oo 1484-02-12 Sir Robert Kerr, younger of Cessford, d. 1500-11-06a, #Sir_Robert_Kerr,_younger_of_Cessford
-<#Philip_Rutherfoord_of_that_Ilk,_younger>
+  gen:father <https://www.wikidata.org/wiki/Q75266379> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76104446> .
+  # oo 1484-02-12 Sir Robert Kerr, younger of Cessford, d. 1500-11-06a, https://www.wikidata.org/wiki/Q75254913
+<https://www.wikidata.org/wiki/Q75512326>
   # Philip Rutherfoord of that Ilk, younger
-  gen:father <#James_Rutherfoord_of_that_Ilk> .
-  # and Margaret Erskine
+  gen:father <https://www.wikidata.org/wiki/Q75266379> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76104446> .
   # oo Elizabeth Kerr, d. 1548-10-19
   []
-    gen:spouse <#Philip_Rutherfoord_of_that_Ilk,_younger> , <#Elizabeth_Kerr_(died_1548)> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75512326> , <https://www.wikidata.org/wiki/Q75262709> ;
 	gen:startDate "1484/1485-02-12" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q75447282>
+  # Thomas Hamilton of Roberton, d. 1632-08-17
+  # oo Lady Jean Kerr, d. 1633b
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75447282> , <https://www.wikidata.org/wiki/Q75275073> ;
+	gen:startDate "1618-02-16b" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q76168132>
+  # Sir James Richardson of Smeaton
+  # oo Lady Mary Kerr
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76168132> , <https://www.wikidata.org/wiki/Q76226725> .
+
+<https://www.wikidata.org/wiki/Q76168133>
+  # Mary Richardson
+  gen:father <https://www.wikidata.org/wiki/Q76168132> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76226725> .
+  # oo Sir John St. Clair of Hermanstoun, 1583a - 1630, https://www.wikidata.org/wiki/Q76168126
+
+# ----
+#<https://www.wikidata.org/wiki/Q15990254>
+  # Nathaniel Rich, d. 1701
+  # oo Lady Elizabeth Kerr
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q15990254> , <https://www.wikidata.org/wiki/Q75258644> .
+
+# ----
+#<https://www.wikidata.org/wiki/Q75759828>
+  # Henry Ogle
+  # oo Lady Anne Kerr, d. 1727
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75759828> , <https://www.wikidata.org/wiki/Q75254955> .
 
 # ----
 #<https://www.wikidata.org/wiki/Q6246307>
   # Sir John Angus McLeod, 1752-01-29 - 1833
   # oo Lady Wilhelmina Frances Kerr, 1759 - 1832-09-23
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q6246307> , <#Lady_Wilhelmina_Emilia_Kerr> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q6246307> , <https://www.wikidata.org/wiki/Q75251392> ;
 	gen:startDate "1783-01-02" .
 
 # ----
@@ -1544,17 +1615,41 @@
   # Arthur Atherley, 1772-06-12 - 1844-10-01
   # oo Lady Louise Kerr, 1768-11-30 - 1819-06-23
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q4797857> , <#Lady_Louisa_Kerr> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q4797857> , <https://www.wikidata.org/wiki/Q75976393> ;
 	gen:startDate "1793-06-02" .
 
 # ----
-<#Sir_Steuart_Macnaghten>
-  # Sir Steuart Macnaghten, 1815-06-20 - 1895-06-28
-  gen:father <https://www.wikidata.org/wiki/Q1441644> .
-  # and Letitia Dunkin
+#<https://www.wikidata.org/wiki/Q75266398>
+  # George Wade
+  # oo Lady Frances Kerr, 1810-10-09 - 1863-03-25
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75266398> , <https://www.wikidata.org/wiki/Q75251726> ;
+	gen:startDate "1848-06-11" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q75266400>
+  # Rev. Granville Hamilton Forbes
+  # oo Lady Georgiana Augusta Kerr, 1822-07-19 - 1859-02-12
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75266400> , <https://www.wikidata.org/wiki/Q75251729> ;
+	gen:startDate "1849-07-25" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q76197162>
+  # Henry Richardson, d. 1849
   # oo Lady Emily Frances Kerr, 1817-08-23 - 1874-06-05
   []
-    gen:spouse <#Sir_Steuart_Macnaghten> , <#Lady_Emily_Frances_Kerr> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q76197162> , <https://www.wikidata.org/wiki/Q76201488> ;
+	gen:startDate "1839-01-01" .
+
+# ----
+<https://www.wikidata.org/wiki/Q76066355>
+  # Sir Steuart Macnaghten, 1815-06-20 - 1895-06-28
+  gen:father <https://www.wikidata.org/wiki/Q1441644> ; # Francis Macnaghten
+  gen:mother <https://www.wikidata.org/wiki/Q76004589> . # Letitia Dunkin
+  # oo Lady Emily Frances Kerr, 1817-08-23 - 1874-06-05
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76066355> , <https://www.wikidata.org/wiki/Q76201488> ;
 	gen:startDate "1864-07-07" .
 
 # ----
@@ -1562,32 +1657,36 @@
   # Sir William Maynard Gomm, 1784-11-10 - 1875-03-15
   # oo Elizabeth Ann Kerr, 1807-05-06 - 1877-11-30
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q331448> , <#Elizabeth_Ann_Kerr> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q331448> , <https://www.wikidata.org/wiki/Q75372691> ;
 	gen:startDate "1830-01-13" .
 
 # ----
 #<https://www.wikidata.org/wiki/Q5339534>
   # Edmund Hammond, 1st Baron Hammond of Kirkella, 1802-06-25 - 1890-04-29
+  # 1st Baron Hammond of Kirkella, in the town and county of the town of Kingston-upon-Hull [U.K.] 1874-03-05
+  # son of George Hammond
+  # and Margaret Allen
   # oo Mary Frances Kerr, 1815-07-11 - 1888-06-14
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q5339534> , <#Mary_Frances_Kerr> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q5339534> , <https://www.wikidata.org/wiki/Q75372695> ;
 	gen:startDate "1846-01-03" .
 
 # ----
 #<https://www.wikidata.org/wiki/Q2424118>
   # Very Rev. Thomas Gaisford, 1779-12-22 – 1855-06-02
+  # Dean of Christ Church, Oxford 1831
   # oo Helen Margaret Douglas, 1791 - 1830, daughter of Robert Douglas
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q2424118> , <#Helen_Margaret_Douglas> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q2424118> , <https://www.wikidata.org/wiki/Q76359128> ;
 	gen:startDate "1815-05-11" .
 
-<#Thomas_Gaisford>
+<https://www.wikidata.org/wiki/Q75255111>
   # Thomas Gaisford, d. 1898-02-26
   gen:father <https://www.wikidata.org/wiki/Q2424118> ;
-  gen:mother <#Helen_Margaret_Douglas> .
+  gen:mother <https://www.wikidata.org/wiki/Q76359128> .
   # oo Lady Alice Mary Kerr, 1836-06-04 - 1892-01-25
   []
-    gen:spouse <#Thomas_Gaisford> , <#Lady_Alice_Mary_Kerr> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75255111> , <https://www.wikidata.org/wiki/Q75250929> ;
 	gen:startDate "1870-06-20" .
 
 # ----
@@ -1595,7 +1694,7 @@
   # George Henry Longman, 1852-08-03 - 1938-08-19
   # oo Mary Frances Kerr, 1856-03-22 - 1941-04-17
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q5541822> , <#Mary_Frances_Kerr> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q5541822> , <https://www.wikidata.org/wiki/Q75258731> ;
 	gen:startDate "1880-04-03" .
 
 # ----
@@ -1603,14 +1702,23 @@
   # Sir George Joseph Hamilton Evatt, 1843-11-11 – 1921-11-05
   # oo Sophie Mary Frances Kerr, 1854-11-06 - 1934-10-07
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q33792574> , <#Sophie_Mary_Frances_Kerr> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q33792574> , <https://www.wikidata.org/wiki/Q75254979> ;
 	gen:startDate "1877-01-15" .
 
 # ----
-<#Annabel_Jarves>
-  # Annabel Jarves, d. 11954-04-01
-  gen:father <https://www.wikidata.org/wiki/Q6136797> .
-  # oo 1888-09-22 William Walter Raleigh Kerr, 1863-02-08 - 1942-08-22, #William_Walter_Raleigh_Kerr_(died_1942)
+<https://www.wikidata.org/wiki/Q75250741>
+  # Annabel Jarves, d. 1954-04-01
+  gen:father <https://www.wikidata.org/wiki/Q6136797> . # James Jackson Jarves
+  # oo 1888-09-22 William Walter Raleigh Kerr, 1863-02-08 - 1942-08-22, https://www.wikidata.org/wiki/Q75250740
+
+# ----
+#<https://www.wikidata.org/wiki/Q75250930>
+  # Henry Kidd, d. 1923-06-23
+  # son of Robert Charles Kidd
+  # oo Lady Mary Kerr, 1870-12-25 - 1958-12-31
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75250930> , <https://www.wikidata.org/wiki/Q75250781> ;
+	gen:startDate "1897-12-07" .
 
 # ----
 #<https://www.wikidata.org/wiki/Q75372220>
@@ -1620,34 +1728,34 @@
     gen:spouse <https://www.wikidata.org/wiki/Q75372220> , <https://www.wikidata.org/wiki/Q75468020> ;
 	gen:startDate "1861~" .
 
-#<#Charles_John_Philip_Cave>
+#<https://www.wikidata.org/wiki/Q75372209>
   # (#94648, #160817 ?)
   # Charles John Philip Cave, (1871?) d. 1950-12-08
 #  gen:father <https://www.wikidata.org/wiki/Q75372220> ;
 #  gen:mother <https://www.wikidata.org/wiki/Q75468020> .
   # oo Wilhelmina Mary Henrietta Kerr, 1872-04-16 - 1944-01-08
   []
-    gen:spouse <#Charles_John_Philip_Cave> , <#Wilhelmina_Mary_Henrietta_Kerr> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75372209> , <https://www.wikidata.org/wiki/Q75372207> ;
 	gen:startDate "1895-10-23" .
 <https://www.wikidata.org/wiki/Q75372219>
   # Adrian Laurence Cave, 1874-03-31 - 1931-06-21
   gen:father <https://www.wikidata.org/wiki/Q75372220> ;
   gen:mother <https://www.wikidata.org/wiki/Q75468020> .
-  # oo 1906-02-22 Mary Christina Kerr, 1877-05-01 - 1980-10-21, daughter of kerr.ttl#Francis_Ernest_Kerr or https://www.wikidata.org/wiki/Q75255008 Francis Ernest Kerr and https://www.wikidata.org/wiki/Q75372168 Mary Frances Monteith
+  # oo Mary Christina Kerr, 1877-05-01 - 1980-10-21
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75372219> , <https://www.wikidata.org/wiki/Q75372217> ;
-	gen:startDate "" .
+	gen:startDate "1906-02-22" .
 <https://www.wikidata.org/wiki/Q75321129>
   # Margaret Lucy Cave, 1875 - 1954-03-20
   gen:father <https://www.wikidata.org/wiki/Q75372220> ;
   gen:mother <https://www.wikidata.org/wiki/Q75468020> .
   # oo 1899-01-24 Oswald Henry Philip Turville-Petre, 1862-05-27 - 1941-06-16, https://www.wikidata.org/wiki/Q75321128
 
-<#Dorothy_Lucy_Ethelreda_Cave>
+<https://www.wikidata.org/wiki/Q75255109>
   # Dorothy Lucy Ethelreda Cave, b. 1903-08-10
-  gen:father <#Charles_John_Philip_Cave> ;
-  gen:mother <#Wilhelmina_Mary_Henrietta_Kerr> .
-  # oo 1936-05-12 Philip Walter Kerr, 1886-10-19 - 1941-02-10, #Philip_Walter_Kerr
+  gen:father <https://www.wikidata.org/wiki/Q75372209> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75372207> .
+  # oo 1936-05-12 Philip Walter Kerr, 1886-10-19 - 1941-02-10, https://www.wikidata.org/wiki/Q75250920
 <https://www.wikidata.org/wiki/Q75372222>
   # Daniel Adrian Francis Cave, b. 1906-11-29
   gen:father <https://www.wikidata.org/wiki/Q75372219> ;
@@ -1658,72 +1766,99 @@
 	gen:startDate "1934-08-28" .
 
 # ----
-#<#George_Blezard>
-  # George Blezard, d. 1928-01-26
-  # oo Hon. Katherine Frances Chetwynd, 1865 - 1949-06-29
+#<https://www.wikidata.org/wiki/Q75255041>
+  # Archibald Edward Butter, d. 1928-01-06
+  # son of Colonel Archibald Butter
+  # oo Helen Cicely Kerr, 1884 - 1976-06-14
   []
-    gen:spouse <#George_Blezard> , <#Katherine_Frances_Chetwynd> ;
-	gen:startDate "1889-06-06" .
-
-<#Winifred_Katherine_Blezard>
-  # Winifred Katherine Blezard, d. 1974-02-19
-  gen:father <#George_Blezard> ;
-  gen:mother <#Katherine_Frances_Chetwynd> .
-  # oo 1912-02-06 Basil Kerr, 1879-09-22 - 1957-09-19, #Basil_Kerr
-# ----
-#<#Richard_Chetwynd,_7th_Viscount_Chetwynd>
-  # Richard Walter Chetwynd, 7th Viscount Chetwynd of Bearhaven, 1823-07-26 - 1911-01-23
-  # oo Harriet Johanna Campbell, 1829~ - 1898-01-12, daughter of Walter Campbell and Mary Ann King
-  []
-    gen:spouse <#Richard_Chetwynd,_7th_Viscount_Chetwynd> , <#Harriet_Johanna_Campbell> ;
-	gen:startDate "1858-03-16" .
-
-<#Katherine_Frances_Chetwynd>
-  # Hon. Katherine Frances Chetwynd, 1865 - 1949-06-29
-  gen:father <#Richard_Chetwynd,_7th_Viscount_Chetwynd> ;
-  gen:mother <#Harriet_Johanna_Campbell> .
-  # oo 1889-06-06 George Blezard, d. 1928-01-26, #George_Blezard
+    gen:spouse <https://www.wikidata.org/wiki/Q75255041> , <https://www.wikidata.org/wiki/Q75255027> ;
+	gen:startDate "1910-07-06" .
 
 # ----
 #<https://www.wikidata.org/wiki/Q15998775>
   # Edward William David Baird, 1864-06-29 – 1956-08-08
   # oo Helen Cicely Kerr, 1884 - 1976-06-14
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q15998775> , <#Helen_Cicely_Kerr> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q15998775> , <https://www.wikidata.org/wiki/Q75255027> ;
 	gen:startDate "1939-04-28" .
 
 # ----
 <https://www.wikidata.org/wiki/Q5056119>
   # Cecil Percival Heywood, 1880-05-17 - 1936-10-20
-  gen:father <https://www.wikidata.org/wiki/Q7526072> .
-  # and Margaret Effie Sumner
+  gen:father <https://www.wikidata.org/wiki/Q7526072> ; # Arthur Heywood
+  gen:mother <https://www.wikidata.org/wiki/Q75738134> . # Margaret Effie Sumner
   # oo Margaret Vere Kerr, 1890-09-26 - 1958-10-25
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q5056119> , <#Margaret_Vere_Kerr> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q5056119> , <https://www.wikidata.org/wiki/Q75255051> ;
 	gen:startDate "1917-12-12" .
 
 # ----
-#<https://www.wikidata.org/wiki/Q4776130>
-  # Loris Antonella Thomasa Reuss Newland 1922-09-08 – 2007-01-06
-  # daughter of Sir Foster Reuss Newland
-  # and Donna Nennella Salazar
+<https://www.wikidata.org/wiki/Q4776130>
+  # Loris _Antonella_ Thomasa Reuss Newland 1922-09-08 – 2007-01-06
+  gen:father <https://www.wikidata.org/wiki/Q75250744> ; # Sir Foster Reuss Newland
+  gen:mother <https://www.wikidata.org/wiki/Q76277729> . # Donna Nennella Salazar
   # oo 1943-04-30 Peter Francis Walter Kerr, 12th Marquess of Lothian, 1922-09-08 - 2004-10-11, https://www.wikidata.org/wiki/Q7175172
 
 # ----
+<https://www.wikidata.org/wiki/Q16017617>
+  # Charles Patrick Paul Freiherr von Westenholz, 1945-03-17 - 2006-03-09
+  gen:father <https://www.wikidata.org/wiki/Q75247872> ; # Henry Frederick Everhard Freiherr von Westenholz
+  gen:mother <https://www.wikidata.org/wiki/Q75827186> . # Marguerite Gordon Ness
+  # oo Lady Mary Marianne Anne Kerr, b. 1944-03-20
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16017617> , <https://www.wikidata.org/wiki/Q75334721> ;
+	gen:startDate "1971-04-06" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q4772767>
+  # Anthony Richard Hurd, Baron Hurd, 1901-05-02 - 1966-02-12
+  # Baron Hurd, of Newbury in the Royal County of Berkshire [U.K. Life Peer] 1964-08-24
+  # son of Percy Hurd
+  # and Hannah Cox
+  # Stephanie Frances Corner, d. 1985, daughter of Edred Corner
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4772767> , <https://www.wikidata.org/wiki/Q75598995> ;
+	gen:startDate "1928-09-26" .
+
+<https://www.wikidata.org/wiki/Q337375>
+  # Douglas Richard Hurd, Baron Hurd of Westwell, b. 1930-03-08
+  # Baron Hurd of Westwell, of Westwell in the County of Oxfordshire [U.K. Life Peer] 1997-06-13
+  gen:father <https://www.wikidata.org/wiki/Q4772767> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75598995> .
+  # oo Tatiana Elizabeth Michele Eyre, daughter of A. C. B. Eyre
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q337375> , <https://www.wikidata.org/wiki/Q75598999> ;
+	gen:startDate "1960-11-10" .
+  # oo Judy J. Smart, d. 2008-11-22, daughter of Sidney Smart
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q337375> , <https://www.wikidata.org/wiki/Q75989778> ;
+	gen:startDate "1982" .
+
 <https://www.wikidata.org/wiki/Q691299>
   # Hon. Nicholas Richard Hurd, b. 1962-05-13
-  gen:father <https://www.wikidata.org/wiki/Q337375> .
-  # and Tatiana Elizabeth Michele Eyre
+  gen:father <https://www.wikidata.org/wiki/Q337375> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75598999> .
   # oo Lady Clare Therese Kerr, b. 1979-01-25
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q691299> , <#Lady_Clare_Therese_Kerr> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q691299> , <https://www.wikidata.org/wiki/Q75340375> ;
 	gen:startDate "2010-08" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q76317238>
+  # Zackary Adler
+  # son of Dr. Richard Adler
+  # oo Lady Mary Cecil Kerr, b. 1981-05-28
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76317238> , <https://www.wikidata.org/wiki/Q75340377> ;
+	gen:startDate "2016-05-29" .
 
 # ----
 #<https://www.wikidata.org/wiki/Q76062344>
   # Sir John Murray MacGregor of Mac Gregor, 1st Baronet, 1745-04-10 - 1822-06-28
   # 18th Chief of the Clan Gregor 1795
   # 1st Baronet MacGregor, of Lanrick and Balquhidder 1795-07-03
+  # son of Evan MacGregor
+  # and Janet Macdonald
   # oo Anne Macleod, d. 1830-02-05, daughter of Roderick Macleod of Bernera
   []
     gen:spouse <https://www.wikidata.org/wiki/Q76062344> , <https://www.wikidata.org/wiki/Q76062346> ;
@@ -1781,14 +1916,6 @@
 	gen:startDate "1907-06-12" .
 
 # ----
-#<https://www.wikidata.org/wiki/Q7937775>
-  # Vivian Hugh Smith, 1st Baron Bicester, 1867-12-09 – 1956-02-17
-  # oo Lady Sybil Mary McDonnell, 1876-03-26 – 1959-04-16
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q7937775> , <#Lady_Sybil_Mary_McDonnell> ;
-	gen:startDate "1897-03-06" .
-
-# ----
 #<https://www.wikidata.org/wiki/Q104538263>
   # Sir David Murray, of Stanhope, d. 1645-12-17a
   # oo Lady Lilias Fleming
@@ -1805,13 +1932,13 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75249792> , <https://www.wikidata.org/wiki/Q75249789> .
 
-<#Sir_David_Murray_of_Stanhope,_2nd_Baronet>
+<https://www.wikidata.org/wiki/Q75654172>
   # Sir David Murray of Stanhope, 2nd Baronet, d. 1729-02-14
   gen:father <https://www.wikidata.org/wiki/Q75249792> ;
   gen:mother <https://www.wikidata.org/wiki/Q75249789> .
   # oo Lady Anne Bruce
   []
-    gen:spouse <#Sir_David_Murray_of_Stanhope,_2nd_Baronet> , <bruce.ttl#Lady_Anne_Bruce> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75654172> , <https://www.wikidata.org/wiki/Q75283493> ;
 	gen:startDate "1684-04-16" .
 <https://www.wikidata.org/wiki/Q75304375>
   # Harriet Murray
@@ -1819,21 +1946,33 @@
   gen:mother <https://www.wikidata.org/wiki/Q75249789> .
   # oo 1686-06-16 Sir John Dalzell, 2nd Baronet, d. 1689-03, https://www.wikidata.org/wiki/Q16976317 (erskine.ttl)
 
-<#Janet_Murray>
+<https://www.wikidata.org/wiki/Q75258658>
   # Janet Murray, 1688~ - 1755-12-01
-  gen:father <#Sir_David_Murray_of_Stanhope,_2nd_Baronet> ;
-  gen:mother <bruce.ttl#Lady_Anne_Bruce> .
-  # oo Lord Charles Kerr, of Cramond, d. 1735, #Lord_Charles_Kerr
+  gen:father <https://www.wikidata.org/wiki/Q75654172> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75283493> .
+  # oo Lord Charles Kerr, of Cramond, d. 1735, https://www.wikidata.org/wiki/Q75254944
 
 # ----
-#<https://www.wikidata.org/wiki/Q76168132>
-  # Sir James Richardson of Smeaton
-  # oo Lady Mary Kerr
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q76168132> , <https://www.wikidata.org/wiki/Q76226725> .
+<https://www.wikidata.org/wiki/Q75334334>
+  # Elizabeth Hannah Sacher
+  gen:father <https://www.wikidata.org/wiki/Q64374580> ; # Michael Moses Sacher, 1917-10-17 - 1986-07-29
+  gen:mother <https://www.wikidata.org/wiki/Q75869156> . # oo 1938 Audrey Glucksman
+  # oo 1977-10-21 Alexander Randal Mark McDonnell, 9th Earl of Antrim, b. 1935-02-03, https://www.wikidata.org/wiki/Q4719590
 
-<https://www.wikidata.org/wiki/Q76168133>
-  # Mary Richardson
-  gen:father <https://www.wikidata.org/wiki/Q76168132> ;
-  gen:mother <https://www.wikidata.org/wiki/Q76226725> .
-  # oo Sir John St. Clair of Hermanstoun, 1583a - 1630, https://www.wikidata.org/wiki/Q76168126
+# ----
+#<https://www.wikidata.org/wiki/Q75256447>
+  # Dr. Thomas Rupert Blaise Pennybacker, b. 1975
+  # son of Joe Pennybacker
+  # and Rosalind Catherine Toynbee
+  # oo Lady Flora Mary McDonnell, b. 1963-11-07
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75256447> , <https://www.wikidata.org/wiki/Q6470158> ;
+	gen:startDate "2003-04-30" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q75334343>
+  # Christian Gwin
+  # oo Lady Alice Angela Jane McDonnell, b. 1964-12-05
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75334343> , <https://www.wikidata.org/wiki/Q75334340> ;
+	gen:startDate "1991" .
