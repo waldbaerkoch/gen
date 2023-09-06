@@ -4,19 +4,24 @@
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
-#<#Sir_Malcolm_de_Drummond,_10th_Thane_of_Lennox>
+#<https://www.wikidata.org/wiki/Q75382403>
   # Sir Malcolm de Drummond, 10th Thane of Lennox, 1295a – 1346-10-17
+  # oo unknown daughter Graham
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75382403> , <https://www.wikidata.org/wiki/Q75388050> .
 
 <https://www.wikidata.org/wiki/Q16185822>
   # Sir John Drummond of Stobhall, 11th Thane of Lennox, 1318 - 1373
-  gen:father <#Sir_Malcolm_de_Drummond,_10th_Thane_of_Lennox> .
+  gen:father <https://www.wikidata.org/wiki/Q75382403> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75388050> .
   # oo Mary Montifex, 1325 - 1355a, daughter of Sir William de Montifex
   []
     gen:spouse <https://www.wikidata.org/wiki/Q16185822> , <https://www.wikidata.org/wiki/Q75382394> ;
 	gen:startDate "1337~" .
 <https://www.wikidata.org/wiki/Q257563>
   # Margaret Drummond, 1340~ - 1375-01-31
-  gen:father <#Sir_Malcolm_de_Drummond,_10th_Thane_of_Lennox> .
+  gen:father <https://www.wikidata.org/wiki/Q75382403> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75388050> .
   # oo David II, King of Scots, 1324-03-05 - 1371-02-22, https://www.wikidata.org/wiki/Q239486
 
 <https://www.wikidata.org/wiki/Q271434>
@@ -38,32 +43,36 @@
   gen:mother <https://www.wikidata.org/wiki/Q75382394> .
 <https://www.wikidata.org/wiki/Q75439066>
   # Sir John Drummond, 12th of Lennox, 1356 - 1428
-  gen:father <https://www.wikidata.org/wiki/Q16185822> .
+  gen:father <https://www.wikidata.org/wiki/Q16185822> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75382394> .
   # oo Elizabeth Sinclair, b. 1363
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75439066> , <https://www.wikidata.org/wiki/Q75439069> .
 
-<#Sir_Walter_Drummond_of_Cargill_and_Stobhall>
+<https://www.wikidata.org/wiki/Q75275013>
   # Sir Walter Drummond of Cargill and Stobhall, d. 1455
   gen:father <https://www.wikidata.org/wiki/Q75439066> ;
   gen:mother <https://www.wikidata.org/wiki/Q75439069> .
   # oo Margaret Ruthven, daughter of Sir William Ruthven of that Ilk
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75275013> , <https://www.wikidata.org/wiki/Q75275015> .
 
 <https://www.wikidata.org/wiki/Q61466220>
   # Sir Malcolm Drummond of Cargill and Stobhall, d. 1470
-  gen:father <#Sir_Walter_Drummond_of_Cargill_and_Stobhall> .
-  # and Margaret Ruthven
+  gen:father <https://www.wikidata.org/wiki/Q75275013> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75275015> .
   # oo Mariot Murray
   []
     gen:spouse <https://www.wikidata.org/wiki/Q61466220> , <https://www.wikidata.org/wiki/Q61466221> ;
 	gen:startDate "1445" .
-<#Walter_Drummond,_1st_of_Ledcrieff> # -> Drummond of Ledcrieff (and Blair)
+<https://www.wikidata.org/wiki/Q76309055> # -> Drummond of Ledcrieff (and Blair)
   # Walter Drummond, 1st of Ledcrieff, d. 1486a
-  gen:father <#Sir_Walter_Drummond_of_Cargill_and_Stobhall> .
-  # and Margaret Ruthven
+  gen:father <https://www.wikidata.org/wiki/Q75275013> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75275015> .
 
 <https://www.wikidata.org/wiki/Q6230177>
   # John Drummond, 1st Lord Drummond, 1438~ - 1519~
+  # 1st Lord Drummond [Scotland] 1488-01-29
   gen:father <https://www.wikidata.org/wiki/Q61466220> ;
   gen:mother <https://www.wikidata.org/wiki/Q61466221> .
   # oo Lady Elizabeth Lindsay, d. 1509-11-22a
@@ -88,7 +97,7 @@
   gen:father <https://www.wikidata.org/wiki/Q6230177> ;
   gen:mother <https://www.wikidata.org/wiki/Q61466200> .
   # oo 1479-11-25 William Graham, 1st Earl of Montrose, d. 1513-09-09, https://www.wikidata.org/wiki/Q419859
-<#Sir_John_Drummond,_1st_of_Innerpeffray> # -> Drummond of Innerpeffray
+<https://www.wikidata.org/wiki/Q75262526> # -> Drummond of Innerpeffray
   # Sir John Drummond, 1st of Innerpeffray, 1472~ - 1532a
   gen:father <https://www.wikidata.org/wiki/Q6230177> ;
   gen:mother <https://www.wikidata.org/wiki/Q61466200> .
@@ -150,9 +159,8 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75264073> , <https://www.wikidata.org/wiki/Q75263821> ;
 	gen:startDate "1588" .
-<https://www.wikidata.org/wiki/Q75274898> # -> Drummond Maderty
+<https://www.wikidata.org/wiki/Q6132839> # -> Lord Maderty
   # James Drummond, 1st Lord Maderty, 1551 - 1623-09
-  # 1st Lord Maderty 1608/1609-01-31
   gen:father <https://www.wikidata.org/wiki/Q61467026> ;
   gen:mother <https://www.wikidata.org/wiki/Q61467028> .
 <https://www.wikidata.org/wiki/Q75264538>
@@ -190,7 +198,7 @@
   gen:father <https://www.wikidata.org/wiki/Q75264073> ;
   gen:mother <https://www.wikidata.org/wiki/Q75264071> .
   # oo 1590a/1592-07-01b Alexander Seton, 1st Earl of Dunfermline, https://www.wikidata.org/wiki/Q4720056 (gordon.ttl)
-<#Katherine_Drummond>
+<https://www.wikidata.org/wiki/Q75257551>
   # Katherine Drummond, b. 1576
   gen:father <https://www.wikidata.org/wiki/Q75264073> ;
   gen:mother <https://www.wikidata.org/wiki/Q75264071> .
@@ -203,24 +211,24 @@
 <https://www.wikidata.org/wiki/Q75252710>
   # James Drummond, 1st Earl of Perth, 1580~ - 1611-12-18
   # 4th Lord Drummond 1602~
-  # 1st Earl of Perth 1604/1605-03-04
+  # 1st Earl of Perth [Scotland] 1605-03-04
   gen:father <https://www.wikidata.org/wiki/Q75264073> ;
   gen:mother <https://www.wikidata.org/wiki/Q75264071> .
   # oo Lady Isabel Seton, b. 1593-11-30
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75252710> , <https://www.wikidata.org/wiki/Q75263767> ;
 	gen:startDate "1606-04-19" .
-<#Elizabeth_Drummond_(died_1637)>
+<https://www.wikidata.org/wiki/Q75274749>
   # Elizabeth Drummond, 1581 - 1637-12-01
   gen:father <https://www.wikidata.org/wiki/Q75264073> ;
   gen:mother <https://www.wikidata.org/wiki/Q75264071> .
   # oo 1607-04-28 Alexander Elphinstone, 5th Lord Elphinstone, 1577-11-13 - 1648-08-27, https://www.wikidata.org/wiki/Q53870099
-<#Anne_Drummond>
+<https://www.wikidata.org/wiki/Q75422216>
   # Anne Drummond, 1583 - 1640
   gen:father <https://www.wikidata.org/wiki/Q75264073> ;
   gen:mother <https://www.wikidata.org/wiki/Q75264071> .
-  # oo 1602-06-22 Patrick Barclay of Towie, d. 1624-04-30b, son of Sir Patrick Barclay of Towie and Janet Elphinstone
-  # oo 1624a Andrew Fraser, 1st Lord Fraser, d. 1636-12-10, #Andrew_Fraser,_1st_Lord_Fraser
+  # oo 1602-06-22 Patrick Barclay of Towie, d. 1624-04-30b, https://www.wikidata.org/wiki/Q75422213
+  # oo 1624a Andrew Fraser, 1st Lord Fraser, d. 1636-12-10, https://www.wikidata.org/wiki/Q75422217 (douglas.ttl)
 <https://www.wikidata.org/wiki/Q3809221>
   # John Drummond, 2nd Earl of Perth, 1584~  1662-06-11
   gen:father <https://www.wikidata.org/wiki/Q75264073> ;
@@ -256,7 +264,7 @@
   gen:father <https://www.wikidata.org/wiki/Q3809221> ;
   gen:mother <https://www.wikidata.org/wiki/Q75268310> .
   # oo 1643-06-03 James Murray, 2nd Earl of Tullibardine, 1617-09-22 - 1669/1670-01, https://www.wikidata.org/wiki/Q75264705
-<https://www.wikidata.org/wiki/Q7618837> # -> Ker of Roxburghe
+<https://www.wikidata.org/wiki/Q7618837> # -> Earl of Roxburghe
   # William Ker, 2nd Earl of Roxburghe, 1622 - 1675-07-02
   gen:father <https://www.wikidata.org/wiki/Q3809221> ;
   gen:mother <https://www.wikidata.org/wiki/Q75268310> .
@@ -287,19 +295,19 @@
 	gen:startDate "1676-10-05~" .
   # oo Lady Mary Gordon, d. 1726
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q2679370> , <gordon.ttl#Lady_Mary_Gordon_(died_1726)> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q2679370> , <https://www.wikidata.org/wiki/Q75260963> ;
 	gen:startDate "1685/1686~" .
-<https://www.wikidata.org/wiki/Q2679267> # -> Drummond Melfort
+<https://www.wikidata.org/wiki/Q2679267> # -> Earl of Melfort
   # John Drummond, 1st Earl of Melfort, 1650-08-08 - 1714/1715-01-25
   gen:father <https://www.wikidata.org/wiki/Q3806529> ;
   gen:mother <https://www.wikidata.org/wiki/Q75274916> .
-<#William_Drummond_(died_1724)>
+<https://www.wikidata.org/wiki/Q76055523>
   # William Drummond, d. 1724-06
   gen:father <https://www.wikidata.org/wiki/Q75431811> ;
   gen:mother <https://www.wikidata.org/wiki/Q75431812>.
   # oo Elizabeth Oliphant, daughter of George Oliphant, 2nd of Clashneny
   []
-    gen:spouse <#William_Drummond_(died_1724)> , <#Elizabeth_Oliphant> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q76055523> , <https://www.wikidata.org/wiki/Q76287967> ;
 	gen:startDate "1703-05-03a" .
 
 <https://www.wikidata.org/wiki/Q2741442>
@@ -321,21 +329,24 @@
   gen:mother <https://www.wikidata.org/wiki/Q75389977> .
   # oo Marjory Fothringham, daughter of David Fothringham
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q75274919> , <#Marjory_Fothringham> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75274919> , <https://www.wikidata.org/wiki/Q75260963> ;
 	gen:startDate "1707-11-26~" .
   # oo Lady Mary Stewart, 1702-08-11 - 1773-02-04
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75274919> , <https://www.wikidata.org/wiki/Q76194422> ;
 	gen:startDate "1722-05~" .
-<#Edward_Drummond,_6th_Duke_of_Perth>
+<https://www.wikidata.org/wiki/Q75274920>
   # Edward Drummond, 6th Duke of Perth, 1679a - 1760-02-06
   gen:father <https://www.wikidata.org/wiki/Q2679370> ;
-  gen:mother <gordon.ttl#Lady_Mary_Gordon_(died_1726)> .
-  # 1709-11-25 Lady Anne Elizabeth Middleton, 1690-06-26 -
+  gen:mother <https://www.wikidata.org/wiki/Q75260963> .
+  # oo Lady Anne Elizabeth Middleton, 1690-06-26 - (lyon.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75274920> , <https://www.wikidata.org/wiki/Q76235742> ;
+	gen:startDate "1709-11-25" .
 <https://www.wikidata.org/wiki/Q75817932>
   # John Drummond, 3rd of Logie Almond, d. 1776-09-09
-  gen:father <#William_Drummond_(died_1724)> ;
-  gen:mother <#Elizabeth_Oliphant> .
+  gen:father <https://www.wikidata.org/wiki/Q76055523> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76287967> .
   # oo Lady Catherine Murray, 1739 - 1791-05
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75817932> , <https://www.wikidata.org/wiki/Q75273776> ;
@@ -356,17 +367,17 @@
   # oo Sir George Stewart of Grandtully, 5th Baronet, 1750-10-17 - 1827-12-09, https://www.wikidata.org/wiki/Q75644747
 
 
-# Drummond Melfort
+# Earl of Melfort
 <https://www.wikidata.org/wiki/Q2679267>
   # John Drummond, 1st Earl of Melfort, 1650-08-08 - 1715-01-25
-  # 1st Viscount of Melfort, 1st Lord Drummond of Gillestoun 1685-04-14
-  # 1st Lord Drummond of Riccartoun, Castlemains and Gilstoun, 1st Viscount of Forth 1686-08-12
-  # 1st Earl of Melfort 1686-08-21
-  # Jacobite: 1st Baron of Clewer 1689-08-07
-  # Jacobite: 1st Earl of Isla and Burntizland, 1st Marquess of Forth, 1st Duke of Melfort, 1st Viscount of Rickerton, 1st Lord Castlemains and Galston 1692-04-17
+  # 1st Viscount of Melfort, 1st Lord Drummond of Gillestoun [Scotland] 1685-04-14
+  # 1st Viscount of Forth, 1st Lord Drummond of Riccartoun, Castlemains and Gilstoun [Scotland] 1686-08-12
+  # 1st Earl of Melfort [Scotland] 1686-08-21
+  # Jacobite: 1st Baron of Clewer [Scotland] 1689-08-07
+  # Jacobite: 1st Duke of Melfort, 1st Marquess of Forth, 1st Earl of Isla and Burntizland, 1st Viscount of Rickerton, 1st Lord Castlemains and Galston [Scotland] 1692-04-17
   # In 1694 he was outlawed in England and Scotland.
   # On 1695-07-02 he was forfeited, when his substantive titles were removed.
-  # Duc de Melfort 1701
+  # Duc de Melfort [France] 1701
   gen:father <https://www.wikidata.org/wiki/Q3806529> ;
   gen:mother <https://www.wikidata.org/wiki/Q75274916> .
   # oo Sophia Maitland, 1652~ - 1682~
@@ -375,14 +386,14 @@
 	gen:startDate "1670-09-30" .
   # oo Euphemia Wallace, d. 1743, daughter of Sir Thomas Wallace
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q2679267> , <#Euphemia_Wallace> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q2679267> , <https://www.wikidata.org/wiki/Q75274923> ;
 	gen:startDate "1680" .
 
-<#Lady_Elizabeth_Drummond>
+<https://www.wikidata.org/wiki/Q75274429>
   # Lady Elizabeth Drummond, b. 1672-07-27
   gen:father <https://www.wikidata.org/wiki/Q2679267> ;
   gen:mother <https://www.wikidata.org/wiki/Q75274925> .
-  # oo 1687/1688-01-14b William Drummond, 2nd Viscount Strathallan, 1670-08-08 - 1702-07-07, #William_Drummond,_2nd_Viscount_Strathallan
+  # oo 1687/1688-01-14b William Drummond, 2nd Viscount Strathallan, 1670-08-08 - 1702-07-07, https://www.wikidata.org/wiki/Q75274427
 <https://www.wikidata.org/wiki/Q75274927>
   # Robert Drummond of Lundin, 1675-12-08 - 1716
   gen:father <https://www.wikidata.org/wiki/Q2679267> ;
@@ -405,85 +416,85 @@
 <https://www.wikidata.org/wiki/Q3809220>
   # John Drummond, 2nd Earl of Melfort, 1682-05-26 - 1754-01-29
   gen:father <https://www.wikidata.org/wiki/Q2679267> ;
-  gen:mother <#Euphemia_Wallace> .
+  gen:mother <https://www.wikidata.org/wiki/Q75274923> .
   # oo Marie Gabrielle d'Audibert, Comtesse de Lussan, 1675 - 1741-05-15, daughter of Jean d'Audibert, Comte de Lussan and Marie Françoise Raimond
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q3809220> , <#Marie_Gabrielle_d'Audibert_Comtesse_de_Lussan> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q3809220> , <https://www.wikidata.org/wiki/Q75385701> ;
 	gen:startDate "1707-05-25" .
 <https://www.wikidata.org/wiki/Q5817215>
   # Frances Drummond, 1696-01-01 - 1724-06
   gen:father <https://www.wikidata.org/wiki/Q2679267> ;
-  gen:mother <#Euphemia_Wallace> .
+  gen:mother <https://www.wikidata.org/wiki/Q75274923> .
   # oo 1713a José de Rozas y Meléndez de la Cueva, 1665-12-16 - 1722-07, https://www.wikidata.org/wiki/Q5946334
-<#Andrew_Drummond,_Comte_de_Melfort>
+<https://www.wikidata.org/wiki/Q76285170>
   # Andrew Drummond, Comte de Melfort
   gen:father <https://www.wikidata.org/wiki/Q2679267> ;
-  gen:mother <#Euphemia_Wallace> .
+  gen:mother <https://www.wikidata.org/wiki/Q75274923> .
   # oo Magdalene Silvie de Sainte Hermine
   []
-    gen:spouse <#Andrew_Drummond,_Comte_de_Melfort> , <#Magdalene_Silvie_de_Sainte-Hermine> .
+    gen:spouse <https://www.wikidata.org/wiki/Q76285170> , <https://www.wikidata.org/wiki/Q76285171> .
 
-<#James_Drummond_of_Lundin>
+<https://www.wikidata.org/wiki/Q75274929>
   # James Drummond of Lundin, 1707-11-06 - 1781-07-18
   # titular 7th Duke of Perth, titular 10th Earl of Perth
   gen:father <https://www.wikidata.org/wiki/Q75274927> ;
   gen:mother <https://www.wikidata.org/wiki/Q75274883> .
   # oo Lady Rachel Bruce, d. 1769-06-29
   []
-    gen:spouse <#James_Drummond_of_Lundin> , <bruce.ttl#Lady_Rachel_Bruce> .
+    gen:spouse <https://www.wikidata.org/wiki/Q75274929> , <https://www.wikidata.org/wiki/Q75274918> .
 <https://www.wikidata.org/wiki/Q3806528>
   # James Drummond, 3rd Earl of Melfort, 1708-05-16 - 1766-12-25
   gen:father <https://www.wikidata.org/wiki/Q3809220> ;
-  gen:mother <#Marie_Gabrielle_d'Audibert_Comtesse_de_Lussan> .
+  gen:mother <https://www.wikidata.org/wiki/Q75385701> .
   # oo Marie de Berenger, daughter of François de Berenger
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q3806528> , <#Marie_de_Berenger> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q3806528> , <https://www.wikidata.org/wiki/Q75274933> ;
 	gen:startDate "1755-01-29" .
-<#Louis-Hector_Drummond,_Comte_de_Melfort>
+<https://www.wikidata.org/wiki/Q3261755>
   # Louis-Hector Drummond, Comte de Melfort, 1721-11-04 - 1788-10-06
-  gen:father <#Andrew_Drummond,_Comte_de_Melfort> ;
-  gen:mother <#Magdalene_Silvie_de_Sainte-Hermine> .
+  gen:father <https://www.wikidata.org/wiki/Q76285170> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76285171> .
   # oo Jeanne-Elisabeth de la Porte, daughter of Pierre-Jean-François de la Porte, Marquis de Presles
   []
-    gen:spouse <#Louis-Hector_Drummond,_Comte_de_Melfort> , <#Jeanne-Elisabeth_de_la_Porte> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q3261755> , <https://www.wikidata.org/wiki/Q76285175> ;
 	gen:startDate "1748-01" .
 
 <https://www.wikidata.org/wiki/Q6132841>
   # James Drummond, 1st and last Lord Drummond, Baron Drummond, 1744-02-12 - 1800-07-02
   # de jure: 11th Earl of Perth, 15th Lord Drummond 1781-07-18
   # 1st Lord Perth, Baron Drummond, of Stobhall, co. Perth 1797-10-26
-  gen:father <#James_Drummond_of_Lundin> ;
-  gen:mother <bruce.ttl#Lady_Rachel_Bruce> .
+  gen:father <https://www.wikidata.org/wiki/Q75274929> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75274918> .
   # oo Hon. Clementina Elphinstone, d. 1822-08-31
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q6132841> , <elphinstone.ttl#Clementina_Elphinstone> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q6132841> , <https://www.wikidata.org/wiki/Q75274931> ;
 	gen:startDate "1785-03-31" .
-<#James_Lewis_Drummond,_4th_Earl_of_Melfort>
+<https://www.wikidata.org/wiki/Q75274936>
   # James Lewis Drummond, 4th Earl of Melfort, 1750-08-14 - 1800-09
   # 4th Lord Drummond of Riccartoun, Castlemains and Gilstoun, 4th Viscount of Melfort, 4th Lord Drummond of Gillestoun, 4th Earl of Melfort, 4th Viscount of Forth 1766-01-25
   # 6th Lord Drummond, 12th Earl of Perth 1800-07-02, de jure
   gen:father <https://www.wikidata.org/wiki/Q3806528> ;
-  gen:mother <#Marie_de_Berenger> .
+  gen:mother <https://www.wikidata.org/wiki/Q75274933> .
   # oo Aglaë Elizabeth Jacqueline d'Oms, daughter of unknown d'Oms, Marquis d'Oms
   []
-    gen:spouse <#James_Lewis_Drummond,_4th_Earl_of_Melfort> , <#Aglaë_Elizabeth_Jacqueline_d'Oms> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75274936> , <https://www.wikidata.org/wiki/Q75274936> ;
 	gen:startDate "1788-04-30" .
-<#Charles_Edward_Drummond,_5th_Earl_of_Melfort>
+<https://www.wikidata.org/wiki/Q75274938>
   # Charles Edward Drummond, 5th Earl of Melfort, 1752-01-01 - 1840-04-09
   gen:father <https://www.wikidata.org/wiki/Q3806528> ;
-  gen:mother <#Marie_de_Berenger> .
-<#Léon_Maurice_Drummond>
+  gen:mother <https://www.wikidata.org/wiki/Q75274933> .
+<https://www.wikidata.org/wiki/Q75274939>
   # Léon Maurice Drummond, 1761-04-12 - 1826-04-26
   gen:father <https://www.wikidata.org/wiki/Q3806528> ;
-  gen:mother <#Marie_de_Berenger> .
+  gen:mother <https://www.wikidata.org/wiki/Q75274933> .
   # oo Marie Elizabeth Lucie de Longemarre, d. 1824-08-12
   []
-    gen:spouse <#Léon_Maurice_Drummond> , <#Marie_Elizabeth_Lucie_de_Longemarre> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75274939> , <https://www.wikidata.org/wiki/Q75274940> ;
 	gen:startDate "1794-10-26" .
 <https://www.wikidata.org/wiki/Q75328750>
   # Louis Pierre François Malcolm Drummond, Comte de Melfort,  d. 1833~
-  gen:father <#Louis-Hector_Drummond,_Comte_de_Melfort> ;
-  gen:mother <#Jeanne-Elisabeth_de_la_Porte> .
+  gen:father <https://www.wikidata.org/wiki/Q3261755> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76285175> .
   # oo Lady Caroline Barry, b. 1768-05-17 (boyle.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75328750> , <https://www.wikidata.org/wiki/Q75328749> ;
@@ -493,44 +504,44 @@
     gen:spouse <https://www.wikidata.org/wiki/Q75328750> , <https://www.wikidata.org/wiki/Q75337886> ;
 	gen:startDate "1795-05" .
 
-<#Lady_Sarah_Clementina_Drummond>
+<https://www.wikidata.org/wiki/Q75269850>
   gen:name "Lady Sarah Clementina Drummond"@en ;
   gen:birthDate "1786-05-05" ;
   gen:deathDate "1865-01-16" ;
   gen:father <https://www.wikidata.org/wiki/Q6132841> ;
-  gen:mother <elphinstone.ttl#Clementina_Elphinstone> .
-  # oo 1807-10-19 Peter Robert Drummond-Burrell, 2nd Baron Gwydyr, 22nd Lord Willoughby de Eresby, 1782-03-19 – 1865-02-22, https://www.wikidata.org/wiki/Q7173742
+  gen:mother <https://www.wikidata.org/wiki/Q75274931> .
+  # oo 1807-10-19 Peter Robert Drummond-Burrell, 2nd Baron Gwydyr, 22nd Lord Willoughby de Eresby, 1782-03-19 – 1865-02-22, https://www.wikidata.org/wiki/Q7173742 (burrell.ttl)
 <https://www.wikidata.org/wiki/Q75266009>
   # George Drummond, 14th Earl of Perth, 1807-05-06 - 1902-02-28
-  # 6th Viscount of Melfort, 6th Lord Drummond of Gillestoun, 6th Earl of Melfort, 6th Viscount of Forth, 6th Lord Drummond of Riccartoun, Castlemains and Gilstoun 1840-04-09
+  # 6th Earl of Melfort, 6th Viscount of Forth, 6th Viscount of Melfort, 6th Lord Drummond of Gillestoun, 6th Lord Drummond of Riccartoun, Castlemains and Gilstoun 1840-04-09
   # Jacobite: Duke of Melfort 1841
   # 14th Earl of Perth, 18th Lord Drummond 1853-06-28
-  gen:father <#Léon_Maurice_Drummond> ;
-  gen:mother <#Marie_Elizabeth_Lucie_de_Longemarre> .
-  # oo Albertine Freiin von Rothberg-Rheinweiler-Coligni, d. 1842-06-02
+  gen:father <https://www.wikidata.org/wiki/Q75274939> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75274940> .
+  # oo Albertine Freiin von Rothberg-Rheinweiler-Coligni, 1797-09-02 - 1842-06-02, daughter of Friedrich August Freiherr von Rotberg and Pauline Waldner von Freundstein
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q75266009> , <#Albertine_Freiin_von_Rothberg-Rheinweiler-Coligni> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75266009> , <https://www.wikidata.org/wiki/Q75268308> ;
 	gen:startDate "1831-05-19" .
-  # oo Susanna Henrietta Bermingham Sewell, d. 1886-09-11
+  # oo Susanna Henrietta Bermingham Sewell, d. 1886-09-11 (beresford.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75266009> , <https://www.wikidata.org/wiki/Q75859381> ;
 	gen:startDate "1847-08-09" .
-<#Edward_Drummond_Comte_de_Melfort>
+<https://www.wikidata.org/wiki/Q75337901>
   # Edward Drummond Comte de Melfort, 1801 - 1844
   gen:father <https://www.wikidata.org/wiki/Q75328750> ;
   gen:mother <https://www.wikidata.org/wiki/Q75337886> .
   # oo Marie Sabina Naysmith
   []
-    gen:spouse <#Edward_Drummond_Comte_de_Melfort> , <#Marie_Sabina_Naysmith> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75337901> , <https://www.wikidata.org/wiki/Q75337902> ;
 	gen:startDate "1826-01-11" .
 
-<#George_Henry_Drummond,_Viscount_Forth>
+<https://www.wikidata.org/wiki/Q18936067>
   # George Henry Charles Francis Malcolm Drummond, Viscount Forth, 1834-05-13 - 1861-10-08
   gen:father <https://www.wikidata.org/wiki/Q75266009> ;
-  gen:mother <#Albertine_Freiin_von_Rothberg-Rheinweiler-Coligni> .
+  gen:mother <https://www.wikidata.org/wiki/Q75268308> .
   # oo Harriet Mary Capell, d. 1868-04-30
   []
-    gen:spouse <#George_Henry_Drummond,_Viscount_Forth> , <capell.ttl#Harriet_Mary_Capell> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q18936067> , <https://www.wikidata.org/wiki/Q75266007> ;
 	gen:startDate "1855-10-24" ;
 	gen:separatedDate "1858" .
 <https://www.wikidata.org/wiki/Q76285151>
@@ -540,59 +551,54 @@
   # oo 1871-04-24 Frederick Mackenzie-Fraser, 11th of Inverallochy and 7th of Castle Fraser, 1831-04-04 - 1897-05-19, https://www.wikidata.org/wiki/Q75883112
 <https://www.wikidata.org/wiki/Q75337924>
   # Cécile Drummond, d. 1914-11-01
-  gen:father <#Edward_Drummond_Comte_de_Melfort> ;
-  gen:mother <#Marie_Sabina_Naysmith> .
+  gen:father <https://www.wikidata.org/wiki/Q75337901> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75337902> .
   # oo 1851-02-22 (div 1859) Admiral Hon. Sir Fleetwood Broughton Reynolds Pellew, 1789-12-13 - 1861-07-28, https://www.wikidata.org/wiki/Q5458506 (scott.ttl)
   # oo 1860-02-22 George Lennox Rawdon Berkeley, 7th Earl of Berkeley, 1877-02-25 - 1888-08-17, https://www.wikidata.org/wiki/Q9267220
 
-<#George_Essex_Montifex_Drummond,_Lord_Drummond>
+<https://www.wikidata.org/wiki/Q76285150>
   # George Essex Montifex Drummond, Lord Drummond, 1856-09-03 - 1887-08-04
-  gen:father <#George_Henry_Drummond,_Viscount_Forth> ;
-  gen:mother <capell.ttl#Harriet_Mary_Capell> .
+  gen:father <https://www.wikidata.org/wiki/Q18936067> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75266007> .
 
 
-# Ker of Roxburghe
+# Earl of Roxburghe
 <https://www.wikidata.org/wiki/Q7618837>
   # William Ker, 2nd Earl of Roxburghe, 1622 - 1675-07-02
-  # 2nd Lord Ker of Cessford and Caverton, 2nd Earl of Roxburghe, 2nd Lord Roxburghe 1649/1650-01-18
+  # 2nd Earl of Roxburghe, 2nd Lord Ker of Cessford and Caverton, 2nd Lord Roxburghe 1650-01-18
   gen:father <https://www.wikidata.org/wiki/Q3809221> ;
   gen:mother <https://www.wikidata.org/wiki/Q75268310> .
   # oo Jean Ker
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q7618837> , <kerr.ttl#Jean_Ker> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q7618837> , <https://www.wikidata.org/wiki/Q75248013> ;
 	gen:startDate "1655-05-17" .
 
 <https://www.wikidata.org/wiki/Q75262422>
   # Lady Jean Ker
   gen:father <https://www.wikidata.org/wiki/Q7618837> ;
-  gen:mother <kerr.ttl#Jean_Ker> .
+  gen:mother <https://www.wikidata.org/wiki/Q75248013> .
   # oo 1680a Colin Lindsay, 3rd Earl of Balcarres, 1652-08-23 - 1722, https://www.wikidata.org/wiki/Q5145288
 <https://www.wikidata.org/wiki/Q66685218>
   # Robert Ker, 3rd Earl of Roxburghe, 1658~ - 1682-05-08
   gen:father <https://www.wikidata.org/wiki/Q7618837> ;
-  gen:mother <kerr.ttl#Jean_Ker> .
+  gen:mother <https://www.wikidata.org/wiki/Q75248013> .
   # oo Lady Margaret Hay, 1657 - 1753-01-22
   []
     gen:spouse <https://www.wikidata.org/wiki/Q66685218> , <https://www.wikidata.org/wiki/Q75290249> ;
 	gen:startDate "1675-10-10" .
-<https://www.wikidata.org/wiki/Q66686397>
+<https://www.wikidata.org/wiki/Q66686397> # -> Bellenden
   # John Bellenden, 2nd Lord Bellenden of Broughton, d. 1706-11-05b
-  # 2nd Lord Bellenden of Broughton, in Midlothian 1671-12-23
   gen:father <https://www.wikidata.org/wiki/Q7618837> ;
-  gen:mother <kerr.ttl#Jean_Ker> .
-  # oo Lady Mary Moore, d. 1726-03-17 (wellesley.ttl)
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q66686397> , <https://www.wikidata.org/wiki/Q75260953> ;
-	gen:startDate "1683-04-10" .
+  gen:mother <https://www.wikidata.org/wiki/Q75248013> .
 
-<#Robert_Ker,_4th_Earl_of_Roxburghe>
+<https://www.wikidata.org/wiki/Q76067981>
   # Robert Ker, 4th Earl of Roxburghe, 1677~ - 1696-07-13
   gen:father <https://www.wikidata.org/wiki/Q66685218> ;
   gen:mother <https://www.wikidata.org/wiki/Q75290249> .
 <https://www.wikidata.org/wiki/Q603499>
   # John Ker, 1st Duke of Roxburghe, 1680-04-30 - 1741-02-27
   # 5th Earl of Roxburghe, 5th Lord Ker of Cessford and Caverton, 5th Lord Roxburghe 1696-07-13
-  # 1st Duke of Roxburghe, 1st Marquess of Bowmont and Cessford, 1st Lord Ker of Cessford and Caverton, 1st Viscount of Broxmouth, 1st Earl of Kelso 1707-04-25
+  # 1st Duke of Roxburghe, 1st Marquess of Bowmont and Cessford, 1st Earl of Kelso, 1st Viscount of Broxmouth, 1st Lord Ker of Cessford and Caverton 1707-04-25
   gen:father <https://www.wikidata.org/wiki/Q66685218> ;
   gen:mother <https://www.wikidata.org/wiki/Q75290249> .
   # oo Lady Mary Finch, 1677-05-18 - 1718-09-21
@@ -602,8 +608,9 @@
 
 <https://www.wikidata.org/wiki/Q19787074>
   # Robert Ker, 2nd Duke of Roxburghe, 1709~ – 1755-08-20
-  # 1st Baron Ker of Wakefield, co. York, 1st Earl Ker of Wakefield, co. York 1722-05-22
-  # 6th Lord Roxburghe, 6th Lord Ker of Cessford and Caverton, 2nd Duke of Roxburghe, 2nd Earl of Kelso, 2nd Marquess of Bowmont and Cessford, 6th Earl of Roxburghe, 2nd Lord Ker of Cessford and Caverton, 2nd Viscount of Broxmouth 1741-02-27
+  # 1st Earl Ker of Wakefield, co. York, 1st Baron Ker of Wakefield, co. York 1722-05-22
+  # 2nd Duke of Roxburghe, 2nd Marquess of Bowmont and Cessford, 2nd Earl of Kelso, 2nd Viscount of Broxmouth, 2nd Lord Ker of Cessford and Caverton,
+  # 6th Earl of Roxburghe, 6th Lord Ker of Cessford and Caverton, 6th Lord Roxburghe 1741-02-27
   gen:father <https://www.wikidata.org/wiki/Q603499> ;
   gen:mother <https://www.wikidata.org/wiki/Q75268799> .
   # oo Essex Mostyn, d. 1764-12-07 (hill.ttl)
@@ -620,87 +627,89 @@
 # Bellenden
 <https://www.wikidata.org/wiki/Q66686397>
   # John Bellenden, 2nd Lord Bellenden of Broughton, d. 1706-11-05b
+  # John Ker
   # 2nd Lord Bellenden of Broughton, in Midlothian 1671-12-23
   gen:father <https://www.wikidata.org/wiki/Q7618837> ;
-  gen:mother <kerr.ttl#Jean_Ker> .
+  gen:mother <https://www.wikidata.org/wiki/Q75248013> .
   # oo Lady Mary Moore, d. 1726-03-17
   []
     gen:spouse <https://www.wikidata.org/wiki/Q66686397> , <https://www.wikidata.org/wiki/Q75260953> ;
 	gen:startDate "1683-04-10" .
 
-<#John_Bellenden,_3rd_Lord_Bellenden>
+<https://www.wikidata.org/wiki/Q68182957>
   # John Bellenden, 3rd Lord Bellenden of Broughton, 1685 - 1741-03-16
   gen:father <https://www.wikidata.org/wiki/Q66686397> ;
   gen:mother <https://www.wikidata.org/wiki/Q75260953> .
   # oo Mary Parnell, 1702-06-26 - 1792-11-23, daughter of John Parnell
   []
-    gen:spouse <#John_Bellenden,_3rd_Lord_Bellenden> , <#Mary_Parnell> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q68182957> , <https://www.wikidata.org/wiki/Q75418489> ;
 	gen:startDate "1722-09-03" .
 <https://www.wikidata.org/wiki/Q19324857>
   # Hon. Mary Bellenden, 1685 - 1736-12-18
   gen:father <https://www.wikidata.org/wiki/Q66686397> ;
   gen:mother <https://www.wikidata.org/wiki/Q75260953> .
   # oo 1720 John Campbell, 4th Duke of Argyll, 1693 - 1770-12-09, https://www.wikidata.org/wiki/Q335577
-<#William_Bellenden>
+<https://www.wikidata.org/wiki/Q75418551>
   # Hon. William Bellenden, 1702~ - 1759
   gen:father <https://www.wikidata.org/wiki/Q66686397> ;
   gen:mother <https://www.wikidata.org/wiki/Q75260953> .
   # oo Jacomina Farmer
   []
-    gen:spouse <#William_Bellenden> , <#Jacomina_Farmer> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75418551> , <https://www.wikidata.org/wiki/Q75418553> ;
 	gen:startDate "1726-04-16a" .
 
-<#Ker_Bellenden,_4th_Lord_Bellenden>
+<https://www.wikidata.org/wiki/Q68182988>
   # Ker Bellenden, 4th Lord Bellenden of Broughton, 1725-10-22 - 1753-03-02
-  gen:father <#John_Bellenden,_3rd_Lord_Bellenden> ;
-  gen:mother <#Mary_Parnell> .
+  gen:father <https://www.wikidata.org/wiki/Q68182957> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75418489> .
   # oo Elizabeth Brett, d. 1798-01-21, daughter of Richard Brett
   []
-    gen:spouse <#Ker_Bellenden,_4th_Lord_Bellenden> , <#Elizabeth_Brett> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q68182988> , <https://www.wikidata.org/wiki/Q75418542> ;
 	gen:startDate "1749-03-13" .
-<#Diana_Bellenden>
+<https://www.wikidata.org/wiki/Q75432862>
   # Hon. Diana Bellenden, 1731-12-17 - 1799-02
-  gen:father <#John_Bellenden,_3rd_Lord_Bellenden> ;
-  gen:mother <#Mary_Parnell> .
-  # oo 1758-11-06 Sir John Bulteel, 1733-07-22 - 1801-09-16, ponsonby.ttl#John_Bulteel
-<#Robert_Bellenden,_6th_Lord_Bellenden>
+  gen:father <https://www.wikidata.org/wiki/Q68182957> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75418489> .
+  # oo 1758-11-06 Sir John Bulteel, 1733-07-22 - 1801-09-16, https://www.wikidata.org/wiki/Q75432860 (ponsonby.ttl)
+<https://www.wikidata.org/wiki/Q68184121>
   # Robert Bellenden, 6th Lord Bellenden of Broughton, 1734-04-07 - 1797-10-13
-  gen:father <#John_Bellenden,_3rd_Lord_Bellenden> ;
-  gen:mother <#Mary_Parnell> .
+  gen:father <https://www.wikidata.org/wiki/Q68182957> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75418489> .
 <https://www.wikidata.org/wiki/Q21903483>
   # William Bellenden-Ker, 4th Duke of Roxburghe, 1728-10-20 - 1805-10-22
   # 7th Lord Bellenden of Broughton, in Midlothian, 1797-10-13
-  # 8th Lord Roxburghe, 8th Lord Ker of Cessford and Caverton, 4th Viscount of Broxmouth, 4th Earl of Kelso, 4th Marquess of Bowmont and Cessford, 4th Duke of Roxburghe, 8th Earl of Roxburghe, 4th Lord Ker of Cessford and Caverton 1804-03-19
-  gen:father <#William_Bellenden> ;
-  gen:mother <#Jacomina_Farmer> .
+  # 4th Duke of Roxburghe, 4th Marquess of Bowmont and Cessford, 4th Earl of Kelso, 4th Viscount of Broxmouth, 4th Lord Ker of Cessford and Caverton
+  # 8th Earl of Roxburghe, 8th Lord Ker of Cessford and Caverton, 8th Lord Roxburghe 1804-03-19
+  gen:father <https://www.wikidata.org/wiki/Q75418551> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75418553> .
   # oo Margaret Burroughs, daughter of Rev. Dr. unknown Burroughs
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q21903483> , <#Margaret_Burroughs> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q21903483> , <https://www.wikidata.org/wiki/Q76321126> ;
 	gen:startDate "1750-12-07" .
   # oo Mary Bechinoe, d. 1838-04-09, daughter of Captain Benjamin Bechinoe and Susanna Smith
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q21903483> , <#Mary_Bechinoe> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q21903483> , <https://www.wikidata.org/wiki/Q75634335> ;
 	gen:startDate "1789-06-29" .
 
-<#John_Ker_Bellenden,_5th_Lord_Bellenden>
+<https://www.wikidata.org/wiki/Q68183997>
   # John Ker Bellenden, 5th Lord Bellenden of Broughton, 1751-08-22 - 1796-10-20
-  gen:father <#Ker_Bellenden,_4th_Lord_Bellenden> ;
-  gen:mother <#Elizabeth_Brett> .
+  gen:father <https://www.wikidata.org/wiki/Q68182988> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75418542> .
 
 
-# Drummond Maderty
-<https://www.wikidata.org/wiki/Q75274898>
+# Lord Maderty
+<https://www.wikidata.org/wiki/Q6132839>
   # James Drummond, 1st Lord Maderty, 1551 - 1623-09
-  # 1st Lord Maderty 1608/1609-01-31
+  # 1st Lord Maderty [Scotland] 1609-01-31
   gen:father <https://www.wikidata.org/wiki/Q61467026> ;
   gen:mother <https://www.wikidata.org/wiki/Q61467028> .
   # oo Jane Chisholm, 1555-07-13 - 1589-11 (sinclair.ttl)
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q75274898> , <https://www.wikidata.org/wiki/Q75274899> .
+    gen:spouse <https://www.wikidata.org/wiki/Q6132839> , <https://www.wikidata.org/wiki/Q75274899> .
 
 <https://www.wikidata.org/wiki/Q75274902>
   # John Drummond, 2nd Lord Maderty, d. 1648a/1651b
-  gen:father <https://www.wikidata.org/wiki/Q75274898> ;
+  gen:father <https://www.wikidata.org/wiki/Q6132839> ;
   gen:mother <https://www.wikidata.org/wiki/Q75274899> .
   # oo Margaret Leslie
   []
@@ -708,19 +717,19 @@
 	gen:startDate "1609-04-30" .
 <https://www.wikidata.org/wiki/Q75274904>
   # Sir James Drummond, 1st of Machany
-  gen:father <https://www.wikidata.org/wiki/Q75274898> ;
+  gen:father <https://www.wikidata.org/wiki/Q6132839> ;
   gen:mother <https://www.wikidata.org/wiki/Q75274899> .
   # oo Catherine Hamilton
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75274904> , <https://www.wikidata.org/wiki/Q75274905> .
 <https://www.wikidata.org/wiki/Q76035519>
   # Jean Drummond
-  gen:father <https://www.wikidata.org/wiki/Q75274898> ;
+  gen:father <https://www.wikidata.org/wiki/Q6132839> ;
   gen:mother <https://www.wikidata.org/wiki/Q75274899> .
   # oo Patrick Graeme, 5th of Inchbrakie, d. 1644a, https://www.wikidata.org/wiki/Q75984177
 <https://www.wikidata.org/wiki/Q76143369>
   # Catherine Drummond
-  gen:father <https://www.wikidata.org/wiki/Q75274898> ;
+  gen:father <https://www.wikidata.org/wiki/Q6132839> ;
   gen:mother <https://www.wikidata.org/wiki/Q75274899> .
   # oo Andrew Rollo, 1st Lord Rollo of Duncrub, 1577 - 1659-05-22, https://www.wikidata.org/wiki/Q76143362 (murray.ttl)
 
@@ -730,7 +739,7 @@
   gen:mother <https://www.wikidata.org/wiki/Q75275019> .
   # oo Alison Creighton, d. 1639-03, daughter of John Creighton of Haltoun and Luncardie
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q75275002> , <#Alison_Creighton> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75275002> , <https://www.wikidata.org/wiki/Q76285182> ;
 	gen:startDate "1638-02-06" .
   # oo Lady Beatrix Graham
   []
@@ -738,7 +747,7 @@
 	gen:startDate "1641-12-10" .
 <https://www.wikidata.org/wiki/Q4167672>
   # William Drummond, 1st Viscount Strathallan, 1617 - 1688-03-23
-  # 1st Viscount Strathallan, 1st Lord Drummond of Cromlix 1686-08-16
+  # 1st Viscount Strathallan, 1st Lord Drummond of Cromlix [Scotland] 1686-08-16
   gen:father <https://www.wikidata.org/wiki/Q75274902> ;
   gen:mother <https://www.wikidata.org/wiki/Q75275019> .
   # oo Elizabeth Johnston, daughter of Sir Archibald Johnston
@@ -760,24 +769,25 @@
   gen:father <https://www.wikidata.org/wiki/Q75274904> ;
   gen:mother <https://www.wikidata.org/wiki/Q75274905> .
   # oo Mary Haliburton, daughter of Sir James Haliburton of Pitcur
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75291874> , <https://www.wikidata.org/wiki/Q76285190> .
   # oo Anne Hay (of Kellour)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75291874> , <https://www.wikidata.org/wiki/Q75274910> ;
 	gen:startDate "1645-02-11" .
-  # oo 1662 Lilias Muirhead, d. 1657-06-06
 
 <https://www.wikidata.org/wiki/Q75544660>
   # Beatrix Drummond
   gen:father <https://www.wikidata.org/wiki/Q75275002> ;
   gen:mother <https://www.wikidata.org/wiki/Q76113250> .
   # oo 1669-10-09 John Carmichael, 1st Earl of Hyndford, 1638-02-28 - 1710-09-20, https://www.wikidata.org/wiki/Q6225206 (douglas.ttl)
-<#William_Drummond,_2nd_Viscount_Strathallan>
+<https://www.wikidata.org/wiki/Q75274427>
   # William Drummond, 2nd Viscount Strathallan, 1670-08-08 - 1702-07-07
   gen:father <https://www.wikidata.org/wiki/Q4167672> ;
   gen:mother <https://www.wikidata.org/wiki/Q75274424> .
   # oo Lady Elizabeth Drummond, b. 1672-07-27
   []
-    gen:spouse <#William_Drummond,_2nd_Viscount_Strathallan> , <#Lady_Elizabeth_Drummond> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75274427> , <https://www.wikidata.org/wiki/Q75274429> ;
 	gen:startDate "1687/1688-01-14b" .
 <https://www.wikidata.org/wiki/Q75269505>
   gen:name "Hon. Margaret Drummond"@en ;
@@ -793,15 +803,16 @@
   # oo 1676-10-05 James Drummond, 4th Earl of Perth, 1649~ - 1716-05-11, https://www.wikidata.org/wiki/Q2679370
 <https://www.wikidata.org/wiki/Q75274914>
   # Sir John Drummond, 3rd of Machany, d. 1707
-  gen:father <https://www.wikidata.org/wiki/Q75291874> .
+  gen:father <https://www.wikidata.org/wiki/Q75291874> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75274910> .
   # oo Margaret Stewart
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75274914> , <https://www.wikidata.org/wiki/Q75274943> .
 
-<#James_Drummond,_3rd_Viscount_Strathallan>
+<https://www.wikidata.org/wiki/Q75274922>
   # James Drummond, 3rd Viscount Strathallan, 1694 - 1711-05-26
-  gen:father <#William_Drummond,_2nd_Viscount_Strathallan> ;
-  gen:mother <#Lady_Elizabeth_Drummond> .
+  gen:father <https://www.wikidata.org/wiki/Q75274427> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75274429> .
 <https://www.wikidata.org/wiki/Q8008009>
   # William Drummond, 4th Viscount Strathallan, d. 1746-04-16
   gen:father <https://www.wikidata.org/wiki/Q75274914> ;
@@ -810,7 +821,7 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q8008009> , <https://www.wikidata.org/wiki/Q75274947> ;
 	gen:startDate "1712-11-01~" .
-<#Andrew_Drummond,_of_Stanmore> # -> Drummond of Stanmore
+<https://www.wikidata.org/wiki/Q4756837> # -> Drummond of Stanmore
   # Andrew Drummond, of Stanmore, 1688 - 1769-02-02
   gen:father <https://www.wikidata.org/wiki/Q75274914> ;
   gen:mother <https://www.wikidata.org/wiki/Q75274943> .
@@ -830,25 +841,25 @@
   # oo Anne Nairn, d. 1782-05-31, daughter of Brig.-Gen. David Nairn
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75274955> , <https://www.wikidata.org/wiki/Q75274957> .
-<#Robert_Drummond,_of_Cadland> # -> Drummond of Cadland
+<https://www.wikidata.org/wiki/Q75271499> # -> Drummond of Cadland
   # Hon. Robert Drummond, of Cadland, 1728-11-13 - 1804
   gen:father <https://www.wikidata.org/wiki/Q8008009> ;
   gen:mother <https://www.wikidata.org/wiki/Q75274947> .
-<#Henry_Drummond_(died_1795)>
+<https://www.wikidata.org/wiki/Q19041370>
   # Hon. Henry Drummond, 1730-02-07 - 1795
   gen:father <https://www.wikidata.org/wiki/Q8008009> ;
   gen:mother <https://www.wikidata.org/wiki/Q75274947> .
   # oo Elizabeth Compton, d. 1819-03-25
   []
-    gen:spouse <#Henry_Drummond_(died_1795)> , <compton.ttl#Elizabeth_Compton> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q19041370> , <https://www.wikidata.org/wiki/Q75275001> ;
 	gen:startDate "1761-03-21" .
 
-<#James_Drummond>
+<https://www.wikidata.org/wiki/Q75274964>
   # James Drummond, 1752 - 1775-12-10
   # de jure 6th Viscount Strathallan
   gen:father <https://www.wikidata.org/wiki/Q75274950> ;
   gen:mother <https://www.wikidata.org/wiki/Q75274951> .
-<#Andrew_John_Drummond>
+<https://www.wikidata.org/wiki/Q75274949>
   # Andrew John Drummond, 1758-01-15 - 1817-01-20
   # de jure 7th Viscount Strathallan
   gen:father <https://www.wikidata.org/wiki/Q75274950> ;
@@ -863,8 +874,8 @@
 	gen:startDate "1809-01-18" .
 <https://www.wikidata.org/wiki/Q16239452>
   # Henry Drummond, 1762-01-13 - 1794-07-04
-  gen:father <#Henry_Drummond_(died_1795)> ;
-  gen:mother <compton.ttl#Elizabeth_Compton> .
+  gen:father <https://www.wikidata.org/wiki/Q19041370> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75275001> .
   # oo Hon. Anne Dundas, 1768-09-28 - 1852-01
   []
     gen:spouse <https://www.wikidata.org/wiki/Q16239452> , <https://www.wikidata.org/wiki/Q75275003> ;
@@ -874,9 +885,9 @@
   # William Henry Drummond, 7th Viscount Strathallan, 1810-03-05 - 1886-01-23
   gen:father <https://www.wikidata.org/wiki/Q21555646> ;
   gen:mother <https://www.wikidata.org/wiki/Q75264706> .
-  # oo Christina Maria Hersey Baird, d. 1867-02-14
+  # oo Christina Maria Hersey Baird, d. 1867-02-14 (kennedy.ttl)
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q8008010> , <#Christina_Maria_Hersey_Baird> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q8008010> , <https://www.wikidata.org/wiki/Q75274961> ;
 	gen:startDate "1833-07-25" .
 <https://www.wikidata.org/wiki/Q76285881>
   # Hon. Marianne Jane Drummond, 1811-07-06 - 1876-05-19
@@ -897,7 +908,7 @@
   gen:mother <https://www.wikidata.org/wiki/Q75264706> .
   # oo Julia Mary Sutherland, d. 1898-11-30, daughter of J. C. C. Sutherland
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q5339418> , <#Julia_Mary_Sutherland> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q5339418> , <https://www.wikidata.org/wiki/Q75314518> ;
 	gen:startDate "1837-11-16" .
 <https://www.wikidata.org/wiki/Q258151>
   # Henry Drummond, of Albury Park, 1786-12-05 - 1860-02-20
@@ -911,15 +922,15 @@
   # Elizabeth Drummond, d. 1877-05-21
   gen:father <https://www.wikidata.org/wiki/Q16239452> ;
   gen:mother <https://www.wikidata.org/wiki/Q75275003> .
-  # oo 1815-08-01 John Portal, 1764-04-29 - 1848-05-07, https://www.wikidata.org/wiki/Q75300594, son of Joseph Portal and Sarah Peachey
+  # oo 1815-08-01 John Portal, 1764-04-29 - 1848-05-07, https://www.wikidata.org/wiki/Q75300594
 
 <https://www.wikidata.org/wiki/Q75274884>
   # James David Drummond, 8th Viscount Strathallan, 1839-10-23 - 1893-12-05
   gen:father <https://www.wikidata.org/wiki/Q8008010> ;
-  gen:mother <#Christina_Maria_Hersey_Baird> .
+  gen:mother <https://www.wikidata.org/wiki/Q75274961> .
   # oo Ellen Thornhill, d. 1873-06-05, daughter of Cudbert B. Thornhill
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q75274884> , <#Ellen_Thornhill> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75274884> , <https://www.wikidata.org/wiki/Q75274888> ;
 	gen:startDate "1868-02-11" .
   # oo Margaret Smythe, d. 1920-12-05, daughter of William Smythe and Margaret Walker
   []
@@ -928,32 +939,33 @@
 <https://www.wikidata.org/wiki/Q54104287>
   # Hon. William Henry Drummond, 1845-08-01 - 1879-07-04
   gen:father <https://www.wikidata.org/wiki/Q8008010> ;
-  gen:mother <#Christina_Maria_Hersey_Baird> .
+  gen:mother <https://www.wikidata.org/wiki/Q75274961> .
 <https://www.wikidata.org/wiki/Q6500568>
   # Laurence George Drummond, 1861-03-13 - 1946-05-20
   gen:father <https://www.wikidata.org/wiki/Q6142200> ;
   gen:mother <https://www.wikidata.org/wiki/Q75275037> .
   # oo Katherine Mary Antrobus, d. 1947-09-09, daughter of Hugh Lindsay Antrobus and Mary Adam
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q6500568> , <#Katherine_Mary_Antrobus> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q6500568> , <https://www.wikidata.org/wiki/Q75275034> ;
 	gen:startDate "1886-05-05" .
 <https://www.wikidata.org/wiki/Q5339419>
   # Edmund Charles Drummond, 1841-08-04 – 1911-05-06
   gen:father <https://www.wikidata.org/wiki/Q5339418> ;
-  gen:mother <#Julia_Mary_Sutherland> .
+  gen:mother <https://www.wikidata.org/wiki/Q75314518> .
   # oo Dora Naylor, d. 1878-12-20, daughter of John Naylor and Georgiana Edwards
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q5339419> , <#Dora_Naylor> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q5339419> , <https://www.wikidata.org/wiki/Q75314515> ;
 	gen:startDate "1872-07-04" .
-<#Francis_Colebrooke_Beresford-Drummond>
+<https://www.wikidata.org/wiki/Q75434365>
   # Francis Colebrooke Beresford-Drummond, 1846-11-06 - 1926-04-09
+  # Francis Colebrooke Drummond
   gen:father <https://www.wikidata.org/wiki/Q5339418> ;
-  gen:mother <#Julia_Mary_Sutherland> .
+  gen:mother <https://www.wikidata.org/wiki/Q75314518> .
   # oo Marcia Mary Ann Harriet Wilhelmina de la Poer Beresford, d. 1908-06-29
   []
-    gen:spouse <#Francis_Colebrooke_Beresford-Drummond> , <beresford.ttl#Marcia_Mary_Ann_Harriet_Wilhelmina_de_la_Poer_Beresford> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75434365> , <https://www.wikidata.org/wiki/Q75434253> ;
 	gen:startDate "1875-06-23" .
-<#Louisa_Drummond>
+<https://www.wikidata.org/wiki/Q75249617>
   # Louisa Drummond, 1813-10-22 - 1890-12-18
   gen:father <https://www.wikidata.org/wiki/Q258151> ;
   gen:mother <https://www.wikidata.org/wiki/Q75275009> .
@@ -962,17 +974,17 @@
   # Adelaide Drummond, 1818-05-31 - 1883-01-08
   gen:father <https://www.wikidata.org/wiki/Q258151> ;
   gen:mother <https://www.wikidata.org/wiki/Q75275009> .
-  # oo 1850-09-16 Sir Thomas Rokewode-Gage, 8th Baronet, 1810-09-05 - 1866-06-07, de_vere.ttl#Sir_Thomas_Rokewode-Gage,_8th_Baronet
+  # oo 1850-09-16 Sir Thomas Rokewode-Gage, 8th Baronet, 1810-09-05 - 1866-06-07, https://www.wikidata.org/wiki/Q119787193 (de_vere.ttl)
 
-<William_Huntley_Drummond,_15th_Earl_of_Perth>
+<https://www.wikidata.org/wiki/Q75274891>
   # William Huntley Drummond, 15th (6th) Earl of Perth, 1871-08-05 - 1937-08-20
   # 11th Lord Maderty, 9th Lord Drummond of Cromlix, 9th Viscount Strathallan 1893-12-05
   # 15th Earl of Perth, 19th Lord Drummond 1902-02-28
   gen:father <https://www.wikidata.org/wiki/Q75274884> ;
-  gen:mother <#Ellen_Thornhill> .
+  gen:mother <https://www.wikidata.org/wiki/Q75274888> .
   # oo Anna Strauss, d. 1967-10-03, daughter of Jacob Strauss
   []
-    gen:spouse <William_Huntley_Drummond,_15th_Earl_of_Perth> , <#Anna_Strauss> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75274891> , <https://www.wikidata.org/wiki/Q75274892> ;
 	gen:startDate "1911-01" .
 <https://www.wikidata.org/wiki/Q335120>
   # James Eric Drummond, 16th (7th) Earl of Perth, 1876-08-17 - 1951-12-15
@@ -998,10 +1010,10 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5339802> , <https://www.wikidata.org/wiki/Q75285938> ;
 	gen:startDate "1910-05-11" .
-<#Stella_Katherine_Drummond>
+<https://www.wikidata.org/wiki/Q75249686>
   # Stella Katherine Drummond, 1895-05-22 - 1982-02-21
   gen:father <https://www.wikidata.org/wiki/Q6500568> ;
-  gen:mother <#Katherine_Mary_Antrobus> .
+  gen:mother <https://www.wikidata.org/wiki/Q75275034> .
   # oo 1918-12-04 Eustace Sutherland Campbell Percy, 1st Baron Percy of Newcastle, 1887-03-21 - 1958-04-03, https://www.wikidata.org/wiki/Q1241117
 
 <https://www.wikidata.org/wiki/Q6230181>
@@ -1010,13 +1022,13 @@
   gen:mother <https://www.wikidata.org/wiki/Q75274423> .
   # oo Nancy Seymour Finke, d. 1996-06-07, daughter of Reginald Finke
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q6230181> , <#Nancy_Seymour_Finke> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q6230181> , <https://www.wikidata.org/wiki/Q75274965> ;
 	gen:startDate "1934-08-04" .
-<#Myra_Drummond>
+<https://www.wikidata.org/wiki/Q75345333>
   # Myra Drummond, b. 1905-04-15
   gen:father <https://www.wikidata.org/wiki/Q6793027> ;
   gen:mother <https://www.wikidata.org/wiki/Q75345326> .
-  # oo 1935-07-23 Martin Roland Soames, b. 1903, son of Edward Roland Soames and Eleanor Corisande Astley
+  # oo 1935-07-23 Martin Roland Soames, b. 1903, https://www.wikidata.org/wiki/Q75281023
 <https://www.wikidata.org/wiki/Q75345336>
   # Monica Katharine Drummond, 1916-09-14 - 1978
   gen:father <https://www.wikidata.org/wiki/Q6793027> ;
@@ -1025,74 +1037,90 @@
   # oo 1977-07-21 Dr. Marcel Dingli-Attard dei Baroni Inguanez, https://www.wikidata.org/wiki/Q76285897
 
 <https://www.wikidata.org/wiki/Q16728671>
-  # John Eric Drummond, 18th Earl of Perth, b. 1935-07-07
+  # John Eric Drummond, 18th Earl of Perth, 1935-07-07 - 2023-03-27
   gen:father <https://www.wikidata.org/wiki/Q6230181> ;
-  gen:mother <#Nancy_Seymour_Finke> .
+  gen:mother <https://www.wikidata.org/wiki/Q75274965> .
   # oo Margaret Anne Gordon, daughter of Robin Gordon
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q16728671> , <#Margaret_Anne_Gordon> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q16728671> , <https://www.wikidata.org/wiki/Q75557170> ;
 	gen:startDate "1963-01-07" ;
 	gen:divorceDate "1972" .
-  # oo 1988 Marion (?)
+  # oo Marion (?)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16728671> , <https://www.wikidata.org/wiki/Q75557171> ;
+	gen:startDate "1988" .
 
-<#Annabella_Margaret_Drummond>
+<https://www.wikidata.org/wiki/Q75557176>
   # Annabella Margaret Drummond, 1964-06-18 - 1964-06-21
   gen:father <https://www.wikidata.org/wiki/Q16728671> ;
-  gen:mother <#Margaret_Anne_Gordon> .
-<#James_David_Drummond,_Viscount_of_Strathallan>
-  # James David Drummond, Viscount of Strathallan, b. 1965-10-24
+  gen:mother <https://www.wikidata.org/wiki/Q75557170> .
+<https://www.wikidata.org/wiki/Q75557173>
+  # James David Drummond, 19th Earl of Perth, b. 1965-10-24
   gen:father <https://www.wikidata.org/wiki/Q16728671> ;
-  gen:mother <#Margaret_Anne_Gordon> .
-<#Robert_Eric_Drummond>
+  gen:mother <https://www.wikidata.org/wiki/Q75557170> .
+<https://www.wikidata.org/wiki/Q75557175>
   # Hon. Robert Eric Drummond, b. 1967-05-07
   gen:father <https://www.wikidata.org/wiki/Q16728671> ;
-  gen:mother <#Margaret_Anne_Gordon> .
+  gen:mother <https://www.wikidata.org/wiki/Q75557170> .
+  # oo Lara Baumann
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75557175> , <#Lara_Baumann> ;
+	gen:startDate "2012" .
+
+<#Juna_Drummond>
+  # Juna Violet Drummond, b. 2012
+  gen:father <https://www.wikidata.org/wiki/Q75557175> ;
+  gen:mother <#Lara_Baumann> .
+<#Jaego_Drummond>
+  # Jaego Alexander Drummond, b. 2016
+  gen:father <https://www.wikidata.org/wiki/Q75557175> ;
+  gen:mother <#Lara_Baumann> .
 
 
 # Drummond of Cadland
-<#Robert_Drummond,_of_Cadland>
+<https://www.wikidata.org/wiki/Q75271499>
   # Hon. Robert Drummond, of Cadland, 1728-11-13 - 1804
   gen:father <https://www.wikidata.org/wiki/Q8008009> ;
   gen:mother <https://www.wikidata.org/wiki/Q75274947> .
   # oo Winifred Mary Thompson, daughter of William Thompson
   []
-    gen:spouse <#Robert_Drummond,_of_Cadland> , <#Winifred_Mary_Thompson> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75271499> , <https://www.wikidata.org/wiki/Q75274980> ;
 	gen:startDate "1753-04-22" .
 
 <https://www.wikidata.org/wiki/Q75274978>
   # Andrew Berkeley Drummond, of Cadland, 1755-09-11 - 1833-12-27
-  gen:father <#Robert_Drummond,_of_Cadland> ;
-  gen:mother <#Winifred_Mary_Thompson> .
+  gen:father <https://www.wikidata.org/wiki/Q75271499> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75274980> .
   # oo Lady Mary Perceval, d. 1839-09-18 (cecil.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75274978> , <https://www.wikidata.org/wiki/Q75271500> ;
 	gen:startDate "1781-04-02" .
-<#Charles_Drummond_(died_1823)>
+<https://www.wikidata.org/wiki/Q75275023>
   # Charles Drummond, 1759-06-24 - 1823-03-02
-  gen:father <#Robert_Drummond,_of_Cadland> ;
-  gen:mother <#Winifred_Mary_Thompson> .
+  gen:father <https://www.wikidata.org/wiki/Q75271499> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75274980> .
   # oo Frances Dorothy Lockwood, d. 1831-02-24, daughter of Rev. Edward Lockwood and Lucy Dowdeswell
   []
-    gen:spouse <#Charles_Drummond_(died_1823)> , <#Frances_Dorothy_Lockwood> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75275023> , <https://www.wikidata.org/wiki/Q75275030> ;
 	gen:startDate "1789-07-26" .
 
-<#Mary_Drummond>
+<https://www.wikidata.org/wiki/Q76284195>
   # Mary Drummond, 1793-04-20 - 1873-10-21
   gen:father <https://www.wikidata.org/wiki/Q75274978> ;
   gen:mother <https://www.wikidata.org/wiki/Q75271500> .
   # oo 1830-10-18 Rt. Rev. Francis Fulford, Bishop of Montreal, 1803-06-03 - 1868-09-09, https://www.wikidata.org/wiki/Q3081441
-<#Andrew_Robert_Drummond>
+<https://www.wikidata.org/wiki/Q75269639>
   # Andrew Robert Drummond, 1794-07-28 - 1865-06-20
   gen:father <https://www.wikidata.org/wiki/Q75274978> ;
   gen:mother <https://www.wikidata.org/wiki/Q75271500> .
   # oo Lady Elizabeth Frederica Manners, 1801-12-10 - 1886-03-20
   []
-    gen:spouse <#Andrew_Robert_Drummond> , <manners.ttl#Lady_Elizabeth_Frederica_Manners> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75269639> , <https://www.wikidata.org/wiki/Q75274977> ;
 	gen:startDate "1822-03-07" .
 <https://www.wikidata.org/wiki/Q75275024>
   # Charles Drummond, 1790-09-04 - 1858-08-28
-  gen:father <#Charles_Drummond_(died_1823)> ;
-  gen:mother <#Frances_Dorothy_Lockwood> .
+  gen:father <https://www.wikidata.org/wiki/Q75275023> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75275030> .
   # oo Hon. Mary Dulcibella Eden, 1793-09-01 - 1862-03-20
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75275024> , <https://www.wikidata.org/wiki/Q75275029> ;
@@ -1100,29 +1128,29 @@
 
 <https://www.wikidata.org/wiki/Q75271498>
   # Annabella Mary Elizabeth Drummond, 1824-04-04 - 1917-02-17
-  gen:father <#Andrew_Robert_Drummond> ;
-  gen:mother <manners.ttl#Lady_Elizabeth_Frederica_Manners> .
+  gen:father <https://www.wikidata.org/wiki/Q75269639> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75274977> .
   # oo 1844-12-04 Alexander Dundas Ross Cochrane-Wishart-Baillie, 1st Baron Lamington, 1816-11-24 - 1890-02-15, https://www.wikidata.org/wiki/Q3610747 (cochrane.ttl)
 <https://www.wikidata.org/wiki/Q75605420>
   # Edgar Atheling Drummond, 1825-08-21 - 1893-05-10
-  gen:father <#Andrew_Robert_Drummond> ;
-  gen:mother <manners.ttl#Lady_Elizabeth_Frederica_Manners> .
+  gen:father <https://www.wikidata.org/wiki/Q75269639> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75274977> .
   # oo Hon. Louisa Theodosia Pennington, d. 1886-06-17 (lowther.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75605420> , <https://www.wikidata.org/wiki/Q75605418> ;
 	gen:startDate "1858-11-25" .
 <https://www.wikidata.org/wiki/Q75248183>
   # Frederica Mary Adeliza Drummond, 1826-12-16 - 1907-04-02
-  gen:father <#Andrew_Robert_Drummond> ;
-  gen:mother <manners.ttl#Lady_Elizabeth_Frederica_Manners> .
+  gen:father <https://www.wikidata.org/wiki/Q75269639> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75274977> .
   # oo 1846-10-08 Richard George Lumley, 9th Earl of Scarbrough, 1813-05-07 - 1884-12-05, https://www.wikidata.org/wiki/Q26997638
-<https://www.wikidata.org/wiki/Q75274982>
+<https://www.wikidata.org/wiki/Q55837565>
   # Cecil George Assheton Drummond, 1839-04-14 - 1903-12-06
-  gen:father <#Andrew_Robert_Drummond> ;
-  gen:mother <manners.ttl#Lady_Elizabeth_Frederica_Manners> .
+  gen:father <https://www.wikidata.org/wiki/Q75269639> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75274977> .
   # oo Charlotte Amelia Brook, d. 1924-04-24, daughter of William Leigh Brook
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q75274982> , <https://www.wikidata.org/wiki/Q75274982> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q55837565> , <https://www.wikidata.org/wiki/Q75274982> ;
 	gen:startDate "1871-10-26" .
 <https://www.wikidata.org/wiki/Q75281952>
   # Robert Drummond, 1822-07-26 - 1881-04-29
@@ -1149,22 +1177,26 @@
     gen:spouse <https://www.wikidata.org/wiki/Q75273096> , <https://www.wikidata.org/wiki/Q75275026> ;
 	gen:startDate "1852-07-08" .
 
-<#Cyril_Augustus_Drummond>
+<https://www.wikidata.org/wiki/Q75331380>
   # Cyril Augustus Drummond, 1873-04-05 - 1945-02-07
   gen:father <https://www.wikidata.org/wiki/Q75605420> ;
   gen:mother <https://www.wikidata.org/wiki/Q75605418> .
   # oo Edith Belle Wilkins, d. 1917-10-27, daughter of L. T. Wilkins
   []
-    gen:spouse <#Cyril_Augustus_Drummond> , <#Edith_Belle_Wilkins> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75331380> , <https://www.wikidata.org/wiki/Q76284939> ;
 	gen:startDate "1897-12-13" .
-<#Winifred_Louisa_Drummond>
+  # oo Mildred Joan Harrington Humphrys, d. 1977, daughter of Horace Humphrys
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75331380> , <https://www.wikidata.org/wiki/Q76285477> ;
+	gen:startDate "1930-10-07" .
+<https://www.wikidata.org/wiki/Q76278173>
   # Winifred Louisa Drummond, d. 1941-03-18
   gen:father <https://www.wikidata.org/wiki/Q75605420> ;
   gen:mother <https://www.wikidata.org/wiki/Q75605418> .
-  # oo 1892-04-28 John Allan Maconochie-Welwood, d. 1934-03-25
+  # oo 1892-04-28 John Allan Maconochie-Welwood, d. 1934-03-25, https://www.wikidata.org/wiki/Q75260643
 <https://www.wikidata.org/wiki/Q75254117>
   # Dorothy Charlotte Drummond, 1885-09-13 - 1965-12-03
-  gen:father <https://www.wikidata.org/wiki/Q75274982> ;
+  gen:father <https://www.wikidata.org/wiki/Q55837565> ;
   gen:mother <https://www.wikidata.org/wiki/Q75274982> .
   # oo 1918-06-14 Sir David John Montagu Douglas Scott, 1887-03-07 - 1986-08-22, https://www.wikidata.org/wiki/Q43010012 (scott.ttl)
 <https://www.wikidata.org/wiki/Q75281946>
@@ -1175,38 +1207,39 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75281946> , <https://www.wikidata.org/wiki/Q75260648> ;
 	gen:startDate "1892-09-07" .
-<#Mabel_Mary_Drummond>
+<https://www.wikidata.org/wiki/Q76285629>
   # Mabel Mary Drummond, d. 1930-08-10
   gen:father <https://www.wikidata.org/wiki/Q75273096> ;
   gen:mother <https://www.wikidata.org/wiki/Q75275026> .
-  # oo 1880-03-09 Sir Vesey George Mackenzie Holt, d. 1923-12-06, herbert.ttl#Sir_Vesey_George_Mackenzie_Holt
-<#Mary_Selina_Drummond>
+  # oo 1880-03-09 Sir Vesey George Mackenzie Holt, d. 1923-12-06, https://www.wikidata.org/wiki/Q75303103
+<https://www.wikidata.org/wiki/Q75273095>
   # Mary Selina Drummond, d. 1949-12-13
   gen:father <https://www.wikidata.org/wiki/Q75273096> ;
   gen:mother <https://www.wikidata.org/wiki/Q75275026> .
-  # oo 1890-01-25 Algernon Henry Peter Strickland, 1863-12-19 - 1928-02-22, wemyss.ttl#Algernon_Henry_Peter_Strickland
+  # oo 1890-01-25 Algernon Henry Peter Strickland, 1863-12-19 - 1928-02-22, https://www.wikidata.org/wiki/Q75260466 (hoare.ttl)
 
 <https://www.wikidata.org/wiki/Q75331378>
   # Sybelle Winifred Louisa Drummond, 1898-10-29 - 1963-06-26
-  gen:father <#Cyril_Augustus_Drummond> ;
-  gen:mother <#Edith_Belle_Wilkins> .
-  # oo 1930-11-27 Hon. John de Bathe Crossley, 1893-02-03 - 1935-06-24
+  gen:father <https://www.wikidata.org/wiki/Q75331380> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76284939> .
+  # oo 1920-10-12 Gerald James Pixley, https://www.wikidata.org/wiki/Q76197142
+  # oo 1930-11-27 Hon. John de Bathe Crossley, 1893-02-03 - 1935-06-24, https://www.wikidata.org/wiki/Q16745785
 
 
 # Drummond of Stanmore
-<#Andrew_Drummond,_of_Stanmore>
+<https://www.wikidata.org/wiki/Q4756837>
   # Andrew Drummond, of Stanmore, 1688 - 1769-02-02
   gen:father <https://www.wikidata.org/wiki/Q75274914> ;
   gen:mother <https://www.wikidata.org/wiki/Q75274943> .
   # oo Isabella Strahan, d. 1731-02-13, daughter of Alexander Strahan
   []
-    gen:spouse <#Andrew_Drummond,_of_Stanmore> , <#Isabella_Strahan> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q4756837> , <https://www.wikidata.org/wiki/Q75274968> ;
 	gen:startDate "1716-11-07" .
 
 <https://www.wikidata.org/wiki/Q17308976>
   # John Drummond, of Stanmore, 1723-04-27 - 1774-07-25
-  gen:father <#Andrew_Drummond,_of_Stanmore> ;
-  gen:mother <#Isabella_Strahan> .
+  gen:father <https://www.wikidata.org/wiki/Q4756837> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75274968> .
   # oo Charlotte Beauclerk, d. 1793-03-07
   []
     gen:spouse <https://www.wikidata.org/wiki/Q17308976> , <https://www.wikidata.org/wiki/Q75251327> ;
@@ -1230,7 +1263,7 @@
 	gen:startDate "1789-06-11" .
   # oo Barbara Chester, d. 1832-08-09, daughter of Charles Chester
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q75274988> , <#Barbara_Chester> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75274988> , <https://www.wikidata.org/wiki/Q75261746> ;
 	gen:startDate "1806-05-01" .
 <https://www.wikidata.org/wiki/Q75252432>
   # Charlotte Drummond, d. 1774-03-20
@@ -1243,13 +1276,13 @@
   gen:father <https://www.wikidata.org/wiki/Q75259633> ;
   gen:mother <https://www.wikidata.org/wiki/Q75274970> .
   # oo 1803-04-19 Sir Charles Hamilton, 2nd Baronet, 1767-05-25 - 1849-09-14, https://www.wikidata.org/wiki/Q1064724
-<#George_Harley_Drummond,_of_Stanmore>
+<https://www.wikidata.org/wiki/Q26213293>
   # George Harley Drummond, of Stanmore, 1783-11-23 - 1855-03-21
   gen:father <https://www.wikidata.org/wiki/Q75259633> ;
   gen:mother <https://www.wikidata.org/wiki/Q75274970> .
   # oo Margaret Munro, d. 1853-07-28, daughter of Alexander Munro and Margaret Stark
   []
-    gen:spouse <#George_Harley_Drummond,_of_Stanmore> , <#Margaret_Munro> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q26213293> , <https://www.wikidata.org/wiki/Q75274985> ;
 	gen:startDate "1801-02-09" .
 <https://www.wikidata.org/wiki/Q75251607>
   # Andrew Mortimer Drummond, 1786-11-09 - 1864-06-01
@@ -1259,7 +1292,6 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75251607> , <https://www.wikidata.org/wiki/Q75251606> ;
 	gen:startDate "1808-07-25" .
-
 <https://www.wikidata.org/wiki/Q75274994>
   # John Drummond, 1791-01-10 - 1864-02-10
   gen:father <https://www.wikidata.org/wiki/Q75274988> ;
@@ -1268,20 +1300,20 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75274994> , <https://www.wikidata.org/wiki/Q75274996> ;
 	gen:startDate "1816-04-22" .
+
+<https://www.wikidata.org/wiki/Q109920014>
+  # George Drummond, of Stanmore, 1802-02-12 - 1851-01-05
+  gen:father <https://www.wikidata.org/wiki/Q26213293> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75274985> .
+  # oo Marianne Portman, d. 1842-12-01 (berkeley.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q109920014> , <https://www.wikidata.org/wiki/Q75252418> ;
+	gen:startDate "1831-04-14" .
 <https://www.wikidata.org/wiki/Q75274999>
   # Susan Caroline Drummond, 1818~ - 1905-02-03
   gen:father <https://www.wikidata.org/wiki/Q75251607> ;
   gen:mother <https://www.wikidata.org/wiki/Q75251606> .
   # oo 1844-04-16 Harvey Drummond, 1817-04-02 - 1875-10-01, https://www.wikidata.org/wiki/Q75253165
-
-<#George_Drummond,_of_Stanmore_(died_1851)>
-  # George Drummond, of Stanmore, 1802-02-12 - 1851-01-05
-  gen:father <#George_Harley_Drummond,_of_Stanmore> ;
-  gen:mother <#Margaret_Munro> .
-  # oo Marianne Portman, d. 1842-12-01 (berkeley.ttl)
-  []
-    gen:spouse <#George_Drummond,_of_Stanmore_(died_1851)> , <https://www.wikidata.org/wiki/Q75252418> ;
-	gen:startDate "1831-04-14" .
 <https://www.wikidata.org/wiki/Q75253165>
   # Harvey Drummond, 1817-04-02 - 1875-10-01
   gen:father <https://www.wikidata.org/wiki/Q75274994> ;
@@ -1290,14 +1322,6 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75253165> , <https://www.wikidata.org/wiki/Q75274999> ;
 	gen:startDate "1844-04-16" .
-<#Edward_Drummond_(died_1916)>
-  # Edward Drummond, 1833-03-11 - 1916-11-30
-  gen:father <https://www.wikidata.org/wiki/Q75274994> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75274996> .
-  # oo Lucy Marion Barnard, d. 1922-04-05, daughter of Rev. Charles James Barnard and Caroline Arabella Elizabeth Elwes
-  []
-    gen:spouse <#Edward_Drummond_(died_1916)> , <#Lucy_Marion_Barnard> ;
-	gen:startDate "1862-08-07" .
 <https://www.wikidata.org/wiki/Q75275039>
   # Francis Berkeley Drummond, 1825-12-16 - 1859-06-27
   gen:father <https://www.wikidata.org/wiki/Q75274994> ;
@@ -1306,14 +1330,22 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75275039> , <https://www.wikidata.org/wiki/Q75275040> ;
 	gen:startDate "1855" .
-
-<#George_James_Drummond>
-  # George James Drummond, 1835-06-22 - 1917-01-31
-  gen:father <#George_Drummond,_of_Stanmore_(died_1851)> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75252418> .
-  # oo Elizabeth Cecile Sophia Norman, d. 1921-08-04
+<https://www.wikidata.org/wiki/Q75314392>
+  # Edward Drummond, 1833-03-11 - 1916-11-30
+  gen:father <https://www.wikidata.org/wiki/Q75274994> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75274996> .
+  # oo Lucy Marion Barnard, d. 1922-04-05, daughter of Rev. Charles James Barnard and Caroline Arabella Elizabeth Elwes
   []
-    gen:spouse <#George_James_Drummond> , <manners.ttl#Elizabeth_Cecile_Sophia_Norman> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75314392> , <https://www.wikidata.org/wiki/Q75314394> ;
+	gen:startDate "1862-08-07" .
+
+<https://www.wikidata.org/wiki/Q109919051>
+  # George James Drummond, 1835-06-22 - 1917-01-31
+  gen:father <https://www.wikidata.org/wiki/Q109920014> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75252418> .
+  # oo Elizabeth Cecile Sophia Norman, d. 1921-08-04 (manners.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q109919051> , <https://www.wikidata.org/wiki/Q75274827> ;
 	gen:startDate "1876-07-06" .
 <https://www.wikidata.org/wiki/Q75301169>
   # Allan Harvey Drummond, 1845-02-07 - 1913-01-28
@@ -1323,22 +1355,22 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75301169> , <https://www.wikidata.org/wiki/Q75301168> ;
 	gen:startDate "1886-03-04" .
-<#Lilias_Caroline_Drummond>
+<https://www.wikidata.org/wiki/Q75314400>
   # Lilias Caroline Drummond, 1868-03-09 - 1959-04-05
-  gen:father <#Edward_Drummond_(died_1916)> ;
-  gen:mother <#Lucy_Marion_Barnard> .
-  # oo 1897-08-03 John Cuthbert Eyre Leslie, son of Charles Stephen Leslie of Balquhain
-  # oo 1906-07-31 William Edward Murray, d. 1914-09, hope.ttl#William_Edward_Murray
+  gen:father <https://www.wikidata.org/wiki/Q75314392> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75314394> .
+  # oo 1897-08-03 John Cuthbert Eyre Leslie, https://www.wikidata.org/wiki/Q75314405
+  # oo 1906-07-31 William Edward Murray, d. 1914-09, https://www.wikidata.org/wiki/Q75314402
 
 <https://www.wikidata.org/wiki/Q75269020>
   # Cecile Elizabeth Drummond, 1878-08-07 - 1948-09-17
-  gen:father <#George_James_Drummond> ;
-  gen:mother <manners.ttl#Elizabeth_Cecile_Sophia_Norman> .
+  gen:father <https://www.wikidata.org/wiki/Q109919051> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75274827> .
   # oo 1907-04-25 Dudley Gladstone Gordon, 3d Marquess of Aberdeen and Temair, 1883-05-06 - 1972-04-16, https://www.wikidata.org/wiki/Q3040905
 <https://www.wikidata.org/wiki/Q75345326>
   # Ida Mary Drummond, 1880-06-26 - 1966-12-11
-  gen:father <#George_James_Drummond> ;
-  gen:mother <manners.ttl#Elizabeth_Cecile_Sophia_Norman> .
+  gen:father <https://www.wikidata.org/wiki/Q109919051> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75274827> .
   # oo 1904-05-04 Hon. Sir Maurice Charles Andrew Drummond, 1877-11-30 - 1957-02-21, https://www.wikidata.org/wiki/Q6793027
 <https://www.wikidata.org/wiki/Q76185061>
   # Constance Adine Maud Drummond, 1895-01-15 - 1923-12-10
@@ -1348,23 +1380,27 @@
 
 
 # Drummond of Innerpeffray
-<#Sir_John_Drummond,_1st_of_Innerpeffray>
+<https://www.wikidata.org/wiki/Q75262526>
   # Sir John Drummond, 1st of Innerpeffray, 1472~ - 1532a
   gen:father <https://www.wikidata.org/wiki/Q6230177> ;
   gen:mother <https://www.wikidata.org/wiki/Q61466200> .
   # oo Isabella Drummond, daughter of James Drummond of Coldoch
-  # oo Eliza Douglas of Lochleven, daughter of douglas.ttl#Sir_Henry_Douglas_of_Lochleven and Elizabeth Erskine
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75262526> , <https://www.wikidata.org/wiki/Q76365016> .
+  # oo Eliza Douglas of Lochleven
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75262526> , <https://www.wikidata.org/wiki/Q75262525> .
 
 <https://www.wikidata.org/wiki/Q48816050>
   # Sir John Drummond, 2nd of Innerpeffray, b. 1486~
-  gen:father <#Sir_John_Drummond,_1st_of_Innerpeffray> .
-  # and Isabella Drummond
+  gen:father <https://www.wikidata.org/wiki/Q75262526> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76365016> .
   # oo Margaret Stewart, b. 1497~
   []
     gen:spouse <https://www.wikidata.org/wiki/Q48816050> , <https://www.wikidata.org/wiki/Q16747640> ;
 	gen:startDate "1531-01-20" .
 
-<#Margaret_Drummond_2>
+<https://www.wikidata.org/wiki/Q75273874>
   # Margaret Drummond
   gen:father <https://www.wikidata.org/wiki/Q48816050> ;
   gen:mother <https://www.wikidata.org/wiki/Q16747640> .
@@ -1388,46 +1424,84 @@
   # oo Sir Matthew Campbell of Loudoun, https://www.wikidata.org/wiki/Q75243307>
 
 
-# https://www.wikidata.org/wiki/Q6230175, John Drummond, 10th of Megginch, 15th Baron Strange (6 May 1900 – 13 April 1982
-# https://www.wikidata.org/wiki/Q29575, Victoria Alexandrina Drummond MBE (1894–1978
-# https://www.wikidata.org/wiki/Q5092338, Jean Cherry Drummond of Megginch, 16th Baroness Strange (London, 17 December 1928 – Megginch Castle, 11 March 2005
-# https://www.wikidata.org/wiki/Q5538632, George Drummond, 1688 – 1766
-# https://www.wikidata.org/wiki/Q4718764, Alexander Drummond, d. 1769
+# Drummond of Lennoch (later of Megginch)
+<https://www.wikidata.org/wiki/Q76310043>
+  # John Drummond, 4th of Lennoch, d. 1579
+  gen:father <https://www.wikidata.org/wiki/Q76310051> . # John Drummond, 3rd of Lennoch
+  # oo Dorothea Drummond, daughter of William Drummond, 3rd of Balloch and Isobella Crammond
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76310043> , <https://www.wikidata.org/wiki/Q76310045> .
 
-#<#Adam_Drummond_of_Megginch,_9th_of_Lennoch>
-  # Adam Drummond of Megginch, 9th of Lennoch, 1649 - 1709
-  # son of John Drummond, 1st of Megginch Castle (d. 1679-05, son of Patrick Drummond, 7th of Lennoch (son of John Drummond, 6th of Lennoch (d. 1601, son of William Drummond, 5th of Lennoch (son of John Drummond, 4th of Lennoch (d. 1579, son of John Drummond, 3rd of Lennoch) and Dorothea Drummond (daughter of William Drummond, 3rd of Balloch and Isobella Crammond)) and Janet Nairne (daughter of Duncan Nairne)) and Barbara Reidheugh) and Mary Erskine ()) and oo Jean Campbell (daughter of Colin Campbell of Aberuchill and unknown Colville)
+<https://www.wikidata.org/wiki/Q76308200>
+  # William Drummond, 5th of Lennoch
+  gen:father <https://www.wikidata.org/wiki/Q76310043> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76310045> .
+  # oo Janet Nairne, daughter of Duncan Nairne
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76308200> , <https://www.wikidata.org/wiki/Q76310040> .
+
+<https://www.wikidata.org/wiki/Q76222648>
+  # John Drummond, 6th of Lennoch, d. 1601
+  gen:father <https://www.wikidata.org/wiki/Q76308200> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76310040> .
+  # oo Barbara Reidheugh
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76222648> , <https://www.wikidata.org/wiki/Q76310037> .
+
+<https://www.wikidata.org/wiki/Q76309612>
+  # Patrick Drummond, 7th of Lennoch
+  gen:father <https://www.wikidata.org/wiki/Q76222648> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76310037> .
+  # oo Mary Erskine
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76309612> , <https://www.wikidata.org/wiki/Q76309612> .
+
+<https://www.wikidata.org/wiki/Q76309610>
+  # John Drummond, 1st of Megginch Castle, d. 1679-05
+  gen:father <https://www.wikidata.org/wiki/Q76309612> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76309612> .
+  # oo Jean Campbell, daughter of Colin Campbell of Aberuchill and unknown Colville
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76309610> , <https://www.wikidata.org/wiki/Q76309608> .
+
+<https://www.wikidata.org/wiki/Q76309615>
+  # Adam Drummond of Megginch, 9th of Lennoch, 2nd of Megginch Castle, 1649 - 1709
+  gen:father <https://www.wikidata.org/wiki/Q76309610> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76309608> .
   # oo Alison Hay, daughter of John Hay of Haystoun
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76309615> , <https://www.wikidata.org/wiki/Q76309617> .
 
 <https://www.wikidata.org/wiki/Q17308977>
   # John Drummond, 10th of Lennoch and 3rd of Megginch, d. 1752
-  gen:father <#Adam_Drummond_of_Megginch,_9th_of_Lennoch> .
-  # and Alison Hay
+  gen:father <https://www.wikidata.org/wiki/Q76309615> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76309617> .
   # oo Bethia Murray, daughter of James Murray of Deucar
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q17308977> , <#Bethia_Murray> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q17308977> , <https://www.wikidata.org/wiki/Q76309629> ;
 	gen:startDate "1712" .
 <https://www.wikidata.org/wiki/Q42887146>
   # Adam Drummond of Binnend, 1679 - 1758-11-30~
-  gen:father <#Adam_Drummond_of_Megginch,_9th_of_Lennoch> .
-  # and Alison Hay
+  gen:father <https://www.wikidata.org/wiki/Q76309615> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76309617> .
   # oo Margaret Spittal, daughter of Alexander Spittal of Leuchat and Elizabeth Holburn
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q42887146> , <#Margaret_Spittal> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q42887146> , <https://www.wikidata.org/wiki/Q76309858> ;
 	gen:startDate "1710-10-08" .
 
 <https://www.wikidata.org/wiki/Q4678988>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75268952> ;
   # Adam Drummond, 11th of Lennoch and 4th of Megginch, 1713-01-31 – 1786-06-17
   gen:father <https://www.wikidata.org/wiki/Q17308977> ;
-  gen:mother <#Bethia_Murray> .
-  # oo Hon Catherine Paulett, d. 1775
+  gen:mother <https://www.wikidata.org/wiki/Q76309629> .
+  # oo Hon Catherine Paulett, d. 1775 (paulet.ttl)
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q4678988> , <paulet.ttl#Catherine_Paulett> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q4678988> , <https://www.wikidata.org/wiki/Q75268949> ;
 	gen:startDate "1734" .
 <https://www.wikidata.org/wiki/Q76309624>
   # Collin Drummond, 1722 - 1776
   gen:father <https://www.wikidata.org/wiki/Q17308977> ;
-  gen:mother <#Bethia_Murray> .
+  gen:mother <https://www.wikidata.org/wiki/Q76309629> .
   # oo Katherine Oliphant, daughter of Robert Oliphant and Jean Colville
   []
     gen:spouse <https://www.wikidata.org/wiki/Q76309624> , <https://www.wikidata.org/wiki/Q76185080> ;
@@ -1435,13 +1509,13 @@
 <https://www.wikidata.org/wiki/Q75264527>
   # Jean Drummond, d. 1795-02-22
   gen:father <https://www.wikidata.org/wiki/Q17308977> ;
-  gen:mother <#Bethia_Murray> .
+  gen:mother <https://www.wikidata.org/wiki/Q76309629> .
   # oo 1749-05-07 James Murray, 2nd Duke of Atholl, 1690-09-28 – 1764-01-08, https://www.wikidata.org/wiki/Q347266
   # oo 1767-09-02 Lord Adam Gordon, 1728-01-10 - 1801-08-13, https://www.wikidata.org/wiki/Q6678888
 <https://www.wikidata.org/wiki/Q75513057>
   # Elizabeth Drummond, 1714-03-29 - 1752-11-11
   gen:father <https://www.wikidata.org/wiki/Q42887146> ;
-  gen:mother <#Margaret_Spittal> .
+  gen:mother <https://www.wikidata.org/wiki/Q76309858> .
   # oo 1737-04-17 Sir James Stuart of Binend, 1716-04-13 - 1777-06-10, https://www.wikidata.org/wiki/Q51730354
 
 <https://www.wikidata.org/wiki/Q26213289>
@@ -1450,13 +1524,17 @@
   gen:mother <https://www.wikidata.org/wiki/Q76185080> .
   # oo Lady Susan Fane, 1768-10-03 - 1793-03-08
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q26213289> , <fane.ttl#Lady_Susan_Fane> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q26213289> , <https://www.wikidata.org/wiki/Q75790484> ;
 	gen:startDate "1788-07-20" .
 <https://www.wikidata.org/wiki/Q75284299>
   # Elizabeth Drummond, 1758-03-04 - 1818-09-04
   gen:father <https://www.wikidata.org/wiki/Q76309624> ;
   gen:mother <https://www.wikidata.org/wiki/Q76185080> .
   # oo 1779-10-04 John Augustus Hervey, Lord Hervey, 1757-01-01 - 1796-01-10, https://www.wikidata.org/wiki/Q6239118
+<https://www.wikidata.org/wiki/Q76310260>
+  # Robert Drummond, 6th of Megginch Castle
+  gen:father <https://www.wikidata.org/wiki/Q76309624> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76185080> .
 <https://www.wikidata.org/wiki/Q75642469>
   # Sir Adam Drummond, 7th of Megginch Castle, 1770 - 1849-05-03
   gen:father <https://www.wikidata.org/wiki/Q76309624> ;
@@ -1471,30 +1549,106 @@
   gen:mother <https://www.wikidata.org/wiki/Q76185080> .
   # oo Margaret Russell, daughter of William Russell
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q543131> , <#Margaret_Russell> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q543131> , <https://www.wikidata.org/wiki/Q76310262> ;
 	gen:startDate "1807" .
 
-<#Eliza_Drummond>
+<https://www.wikidata.org/wiki/Q76179850>
+  # John Drummond, 8th of Megginch, 1803-04-10 - 1889-05-15
+  gen:father <https://www.wikidata.org/wiki/Q75642469> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76179848> .
+  # oo Frances Jemima Oswald, d. 1891-12-22, daughter of John Oswald
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76179850> , <https://www.wikidata.org/wiki/Q76179852> ;
+	gen:startDate "1835-11-20" .
+<https://www.wikidata.org/wiki/Q75280409>
   # Eliza Drummond, 1811~ - 1894-02-27
   gen:father <https://www.wikidata.org/wiki/Q543131> ;
-  gen:mother <#Margaret_Russell> .
+  gen:mother <https://www.wikidata.org/wiki/Q76310262> .
   # oo 1832-08-18 Henry Howard, 2nd Earl of Effingham, 1806-08-23 - 1889-02-05, https://www.wikidata.org/wiki/Q5723308
 
+<https://www.wikidata.org/wiki/Q76179854>
+  # Malcolm Drummond, 9th of Megginch and of Kilspindle, 1856-03-02 - 1924-05-29
+  gen:father <https://www.wikidata.org/wiki/Q76179850> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76179852> .
+  # oo Hon. Geraldine Margaret Tyssen-Amherst, 1867-05-02 -1956-08-24 (cecil.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76179854> , <https://www.wikidata.org/wiki/Q75326175> ;
+	gen:startDate "1890-04-30" .
+
+<https://www.wikidata.org/wiki/Q29575>
+  # Victoria Alexandrina Drummond, 1894-10-14 – 1978-12-25
+  gen:father <https://www.wikidata.org/wiki/Q76179854> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75326175> .
+<https://www.wikidata.org/wiki/Q6230175>
+  # John Drummond, 10th of Megginch, 15th Baron Strange, 1900-05-06 – 1982-04-13
+  # 15th Baron Strange 1964-12-18 out of abeyance
+  gen:father <https://www.wikidata.org/wiki/Q76179854> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75326175> .
+  # oo Violet Margaret Florence Jardine, d. 1975-10-16, daughter of Robert William Buchanan Jardine and Ethel Mary Piercy
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6230175> , <https://www.wikidata.org/wiki/Q75358209> ;
+	gen:startDate "1928-02-08" .
+
+<https://www.wikidata.org/wiki/Q5092338>
+  # Jean Cherry Drummond, 11th of Megginch, 16th Baroness Strange, 1928-12-18 - 2005-03-11
+  # 16th Baroness Strange 1986 out of abeyance
+  gen:father <https://www.wikidata.org/wiki/Q6230175> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75358209> .
+  # oo 1952-06-02 Humphrey Drummond of Megginch, https://www.wikidata.org/wiki/Q76179791
+<https://www.wikidata.org/wiki/Q75551725>
+  # Hon. Heather Mary Drummond, b. 1931-11-09
+  gen:father <https://www.wikidata.org/wiki/Q6230175> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75358209> .
+  # oo 1954-08-11 Andrew Christian Currey, 1930 - 2003-02-09, https://www.wikidata.org/wiki/Q75551722
+<https://www.wikidata.org/wiki/Q75406839>
+  # Hon. Margaret April Irene Drummond, b. 1939-04-03
+  gen:father <https://www.wikidata.org/wiki/Q6230175> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75358209> .
+  # oo 1963-12-14 Sir Quentin Charles Somerville Agnew-Somerville, 2nd Baronet, b. 1929-03-08, https://www.wikidata.org/wiki/Q75406837
+
+
+#<https://www.wikidata.org/wiki/Q76179791>
+  # Humphrey Drummond of Megginch
+  # Huphrey ap Evans
+  # Humphrey Drummond of Megginch 1966-03-14
+  # son of James John Pugh Evans
+  # oo Jean Cherry Drummond, 11th of Megginch, 16th Baroness Strange, 1928-12-18 - 2005-03-11
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76179791> , <https://www.wikidata.org/wiki/Q5092338> ;
+	gen:startDate "1952-06-02" .
+
+<https://www.wikidata.org/wiki/Q4678989>
+  # Adam Humphrey Drummond, 17th Baron Strange, b. 1953-04-20
+  gen:father <https://www.wikidata.org/wiki/Q76179791> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5092338> .
+  # oo Hon. Mary Emma Jeronima Dewar, b. 1965-06-01 (carnegie.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4678989> , <https://www.wikidata.org/wiki/Q75254561> ;
+	gen:startDate "1988" .
+
+<https://www.wikidata.org/wiki/Q75726231>
+  # Hon. Sophia Frances Drummond, b. 1991-03-19
+  gen:father <https://www.wikidata.org/wiki/Q4678989> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75254561> .
+<https://www.wikidata.org/wiki/Q75726229>
+  # Hon. John Adam Humphrey Drummond, b. 1992-11-03
+  gen:father <https://www.wikidata.org/wiki/Q4678989> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75254561> .
 
 
 # Drummond of Ledcrieff (and Blair)
-<#Walter_Drummond,_1st_of_Ledcrieff>
+<https://www.wikidata.org/wiki/Q76309055>
   # Walter Drummond, 1st of Ledcrieff, d. 1486a
-  gen:father <#Sir_Walter_Drummond_of_Cargill_and_Stobhall> .
-  # and Margaret Ruthven
+  gen:father <https://www.wikidata.org/wiki/Q75275013> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75275015> .
 
-<#John_Drummond,_of_Flaskhill_and_Ledcrieff>
-  # John Drummond, of Flaskhill and Ledcrieff, d. 1527-04-07a
-  gen:father <#Walter_Drummond,_1st_of_Ledcrieff> .
+<https://www.wikidata.org/wiki/Q76307454>
+  # John Drummond, 2nd of Ledcrieff, d. 1527-04-07a
+  gen:father <https://www.wikidata.org/wiki/Q76309055> .
 
 <https://www.wikidata.org/wiki/Q76307453>
   # George Drummond, 3rd of Ledcrieff, later of Newton of Blair, d. 1554-06-03
-  gen:father <#John_Drummond,_of_Flaskhill_and_Ledcrieff> .
+  gen:father <https://www.wikidata.org/wiki/Q76307454> .
   # oo Janet Halyburton, daughter of George Halyburton of Pitcur
   []
     gen:spouse <https://www.wikidata.org/wiki/Q76307453> , <https://www.wikidata.org/wiki/Q76307452> .
@@ -1503,42 +1657,46 @@
   # George Drummond, 1st of Newton of Blair, d. 1594-01-04
   gen:father <https://www.wikidata.org/wiki/Q76307453> ;
   gen:mother <https://www.wikidata.org/wiki/Q76307452> .
-  # oo Katherine Hay, daughter of Peter Hay, 3rd of Megginch and Margaret Crichton
+  # oo Katherine Hay
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75811939> , <https://www.wikidata.org/wiki/Q75811971> .
 
-<#George_Drummond,_2nd_of_Blair>
+<https://www.wikidata.org/wiki/Q76147094>
   # George Drummond, 2nd of Blair, d. 1596-08-11
   gen:father <https://www.wikidata.org/wiki/Q75811939> ;
   gen:mother <https://www.wikidata.org/wiki/Q75811971> .
   # oo Grizel Abercromby, daughter of Thomas Abercromby, younger of that ilk and Murthly and Elizabeth Gourlay
   []
-    gen:spouse <#George_Drummond,_2nd_of_Blair> , <#Grizel_Abercromby> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q76147094> , <https://www.wikidata.org/wiki/Q76135647> ;
 	gen:startDate "1590-04-11" .
 
-<#George_Drummond,_4th_of_Blair>
+<https://www.wikidata.org/wiki/Q76323460>
+  # John Drummond, 3rd of Blair, d. 1620
+  gen:father <https://www.wikidata.org/wiki/Q76147094> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76135647> .
+
+<https://www.wikidata.org/wiki/Q76301811>
   # George Drummond, 4th of Blair, d. 1638a
-  gen:father <#George_Drummond,_2nd_of_Blair> ;
-  gen:mother <#Grizel_Abercromby> .
+  gen:father <https://www.wikidata.org/wiki/Q76323460> .
   # oo Marjory Graham, daughter of Rev. George Graham, of Myreside, Bishop of Dunblane then Orkney and Marion Crichton
   []
-    gen:spouse <#George_Drummond,_4th_of_Blair> , <#Marjory_Graham> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q76301811> , <https://www.wikidata.org/wiki/Q76301812> ;
 	gen:startDate "1633-08-17" .
 
-<#George_Drummond,_5th_of_Blair>
+<https://www.wikidata.org/wiki/Q76301808>
   # George Drummond, 5th of Blair, 1st of Blair-Drummond, 1638-11-29 - 1717-06-24
-  gen:father <#George_Drummond,_4th_of_Blair> ;
-  gen:mother <#Marjory_Graham> .
-  # oo Elizabeth Ramsay, daughter of Sir Gilbert Ramsay, of Banff, 1st Baronet and Elizabeth Blair
+  gen:father <https://www.wikidata.org/wiki/Q76301811> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76301812> .
+  # oo Elizabeth Ramsay (ogilvy.ttl)
   []
-    gen:spouse <#George_Drummond,_5th_of_Blair> , <#Elizabeth_Ramsay> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q76301808> , <https://www.wikidata.org/wiki/Q76173402> ;
 	gen:startDate "1672" .
 
 <https://www.wikidata.org/wiki/Q76306544>
   owl:sameAs <https://www.wikidata.org/wiki/Q76168363> ;
   # James Drummond, 2nd of Blair Drummond, 1673-09-12 - 1739-03-26
-  gen:father <#George_Drummond,_5th_of_Blair> ;
-  gen:mother <#Elizabeth_Ramsay> .
+  gen:father <https://www.wikidata.org/wiki/Q76301808> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76173402> .
   # oo Jean Carre, 1681 - 1766-03-30
   []
     gen:spouse <https://www.wikidata.org/wiki/Q76306544> , <https://www.wikidata.org/wiki/Q76306545> ;
@@ -1548,15 +1706,15 @@
   # George Drummond, 3rd of Blair Drummond, 1705-06-27 - 1765-03-17
   gen:father <https://www.wikidata.org/wiki/Q76306544> ;
   gen:mother <https://www.wikidata.org/wiki/Q76306545> .
-  # oo Lady Jane Grey, d. 1762-06-29
+  # oo Lady Jane Grey, 1719 - 1762-06-29
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q75512637> , <grey.ttl#Lady_Jane_Grey_(died_1762)> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75512637> , <https://www.wikidata.org/wiki/Q76306546> ;
 	gen:startDate "1738-06-07" .
   # oo Frances Moray, d. 1793 (erskine.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75512637> , <https://www.wikidata.org/wiki/Q75512739> ;
 	gen:startDate "1764-01-01" .
-<#Agatha_Drummond,_5th_of_Blair_Drummond>
+<https://www.wikidata.org/wiki/Q76306549>
   # Agatha Drummond, 5th of Blair Drummond, 1711-05-27 - 1795-06-18
   gen:father <https://www.wikidata.org/wiki/Q76306544> ;
   gen:mother <https://www.wikidata.org/wiki/Q76306545> .
@@ -1581,23 +1739,29 @@
   gen:father <https://www.wikidata.org/wiki/Q75439074> ;
   gen:mother <https://www.wikidata.org/wiki/Q75790062> .
   # oo Marion Cunningham
+  []
+    gen:spouse <#David_Drummond,_2nd_of_Carnock> , <#Marion_Cunningham> .
 
 <#Robert_Drummond,_3rd_of_Carnock>
   # Robert Drummond, 3rd of Carnock, d. 1502-04-18b
-  gen:father <#David_Drummond,_2nd_of_Carnock> .
-  # and Marion Cunningham
+  gen:father <#David_Drummond,_2nd_of_Carnock> ;
+  gen:mother <#Marion_Cunningham> .
   # oo Marion Menteith, daughter of William Menteith, 6th of Kerse
+  []
+    gen:spouse <#Robert_Drummond,_3rd_of_Carnock> , <#Marion_Menteith> .
 
-<#Alexander_Drummond,_4th_of_Carnock>
+<https://www.wikidata.org/wiki/Q75863078>
   # Alexander Drummond, 4th of Carnock, d. 1546a
-  gen:father <#Robert_Drummond,_3rd_of_Carnock> .
-  # and Marion Menteith
+  gen:father <#Robert_Drummond,_3rd_of_Carnock> ;
+  gen:mother <#Marion_Menteith> .
   # oo Marjory Bruce, daughter of John Bruce, 2nd of Auchenbowie
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75863078> , <#Marjory_Bruce> .
 
 <https://www.wikidata.org/wiki/Q7343648>
   # Sir Robert Drummond, 5th of Carnock, 1518 - 1592
-  gen:father <#Alexander_Drummond,_4th_of_Carnock> .
-  # and Marjory Bruce
+  gen:father <https://www.wikidata.org/wiki/Q75863078> ;
+  gen:mother <#Marjory_Bruce> .
   # oo Agnes or Margaret Kirkcaldy
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7343648> , <https://www.wikidata.org/wiki/Q76091032> .
@@ -1615,7 +1779,7 @@
   # Sir John Drummond, 1st of Hawthornden, 1553 - 1609
   gen:father <https://www.wikidata.org/wiki/Q7343648> ;
   gen:mother <https://www.wikidata.org/wiki/Q75910944> .
-  # oo Susanna Fowler, daughter of Sir William Fowler (https://www.wikidata.org/wiki/Q75790076)
+  # oo Susanna Fowler, daughter of Sir William Fowler
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75790071> , <https://www.wikidata.org/wiki/Q75790073> .
 
@@ -1624,6 +1788,12 @@
   gen:father <https://www.wikidata.org/wiki/Q75790071> ;
   gen:mother <https://www.wikidata.org/wiki/Q75790073> .
   # oo Sir John Scot, of Knightspottie, later of Tarvit (Scotstarvit), 1585 - 1670, https://www.wikidata.org/wiki/Q76286087 (carnegie.ttl)
+
+
+
+
+# https://www.wikidata.org/wiki/Q5538632, George Drummond, 1688 – 1766
+# https://www.wikidata.org/wiki/Q4718764, Alexander Drummond, d. 1769
 
 
 # ----
@@ -1657,33 +1827,46 @@
   # oo Sir James Dundas, 16th of Dundas, 1494a - 1553, https://www.wikidata.org/wiki/Q66384765
 
 # ----
-#<#Andrew_Fraser,_1st_Lord_Fraser>
-  # Andrew Fraser, 1st Lord Fraser, d. 1636-12-10
-  # son of Michael Fraser
-  # and Isobel Forbes
+<https://www.wikidata.org/wiki/Q75422213>
+  # Patrick Barclay of Towie, d. 1624-04-30b
+  gen:father <https://www.wikidata.org/wiki/Q75422204> ; # Sir Patrick Barclay of Towie
+  gen:mother <https://www.wikidata.org/wiki/Q75422206> . # Janet Elphinstone
   # oo Anne Drummond, 1583 - 1640
   []
-    gen:spouse <#Andrew_Fraser,_1st_Lord_Fraser> , <#Anne_Drummond> ;
-	gen:startDate "1624a" .
+    gen:spouse <https://www.wikidata.org/wiki/Q75422213> , <https://www.wikidata.org/wiki/Q75422216> ;
+	gen:startDate "1602-06-22" .
 
-# ----
-#<#Thomas_Bermingham_Daly_Henry_Sewell>
-  # Thomas Bermingham Daly Henry Sewell, b. 1774-02-13
-  # oo Hon. Harriet Beresford, d. 1834-06-11
+<https://www.wikidata.org/wiki/Q75422220>
+  # Walter Barclay of Towie
+  gen:father <https://www.wikidata.org/wiki/Q75422213> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75422216> .
+
+<https://www.wikidata.org/wiki/Q75422222>
+  # Patrick Barclay of Towie, d. 1668-08-02
+  gen:father <https://www.wikidata.org/wiki/Q75422220> .
+  # oo Anne Douglas, daughter of Archibald Douglas, 5th of Whittinghame
   []
-    gen:spouse <#Thomas_Bermingham_Daly_Henry_Sewell> , <beresford.ttl#Harriet_Beresford> ;
-	gen:startDate "1796-01" .
+    gen:spouse <https://www.wikidata.org/wiki/Q75422222> , <https://www.wikidata.org/wiki/Q75422223> .
 
-<#Isabella_Sewell>
-  # Isabella Sewell, d. 1836-08
-  gen:father <#Thomas_Bermingham_Daly_Henry_Sewell> ;
-  gen:mother <beresford.ttl#Harriet_Beresford> .
-  # oo 1828-10 Marcus Beresford, 1800-07-28 - 1876-03-22, https://www.wikidata.org/wiki/Q6758033
-<https://www.wikidata.org/wiki/Q75859381>
-  # Susanna Henrietta Bermingham Sewell, d. 1886-09-11
-  gen:father <#Thomas_Bermingham_Daly_Henry_Sewell> ;
-  gen:mother <beresford.ttl#Harriet_Beresford> .
-  # oo 1847-08-09 George Drummond, 14th Earl of Perth, 1807-05-06 - 1902-02-28, https://www.wikidata.org/wiki/Q75266009
+<https://www.wikidata.org/wiki/Q75422231>
+  # Elizabeth Barclay, Lady of Towie, d. 1702-03-31b
+  gen:father <https://www.wikidata.org/wiki/Q75422222> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75422223> .
+  # oo John Gordon of Rothiemay, https://www.wikidata.org/wiki/Q75422232
+# ----
+#<https://www.wikidata.org/wiki/Q75422232>
+  # John Gordon of Rothiemay
+  # son of William Gordon of Rothiemay
+  # and Katherine Forbes
+  # oo Elizabeth Barclay, Lady of Towie, d. 1702-03-31b
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75422232> , <https://www.wikidata.org/wiki/Q75422231> .
+
+<https://www.wikidata.org/wiki/Q76037249>
+  # Jean Gordon
+  gen:father <https://www.wikidata.org/wiki/Q75422232> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75422231> .
+  # oo 1706-01-10 Sir George Innes of Coxton, 2nd Baronet, d. 1715-12~, https://www.wikidata.org/wiki/Q76037248
 
 # ----
 #<https://www.wikidata.org/wiki/Q16065524>
@@ -1723,7 +1906,7 @@
   # oo 1959-04-11 (div 1974) Edward Douglas-Scott-Montagu, 3rd Baron Montagu of Beaulieu, 1926-10-20 - 2015-08-31, https://www.wikidata.org/wiki/Q336243 (scott.ttl)
 # ----
 <https://www.wikidata.org/wiki/Q7527241>
-  # Sir Gerald Henry Perceval de Bathe, 4th Baronet, 
+  # Sir Gerald Henry Perceval de Bathe, 4th Baronet, 1823-06-19 - 1907-01-05
   gen:father <https://www.wikidata.org/wiki/Q75906626> ; # Sir William Plunkett de Bathe, 3rd Baronet
   gen:mother <https://www.wikidata.org/wiki/Q75906625> . # Mary Earle
   # oo Charlotte Clare, 1832 - 1928-07-21, daughter of William Clare
@@ -1736,30 +1919,6 @@
   gen:father <https://www.wikidata.org/wiki/Q7527241> ;
   gen:mother <https://www.wikidata.org/wiki/Q75518100> .
   # oo 1887-12-14 Savile Crossley, 1st Baron Somerleyton, 1857-06-14 - 1935-02-25, https://www.wikidata.org/wiki/Q7428221
-
-# ----
-#<#John_Allan_Maconochie-Welwood>
-  # John Allan Maconochie-Welwood, d. 1934-03-25
-  # oo Winifred Louisa Drummond, d. 1941-03-18
-  []
-    gen:spouse <#John_Allan_Maconochie-Welwood> , <#Winifred_Louisa_Drummond> ;
-	gen:startDate "1892-04-28" .
-
-<#Lawrence_Robert_Maconochie-Welwood>
-  # Lawrence Robert Maconochie-Welwood, b. 1902-08-13
-  gen:father <#John_Allan_Maconochie-Welwood> ;
-  gen:mother <#Winifred_Louisa_Drummond> .
-  # oo Lady Elizabeth Henrietta Howard, 1903-10-24 - 1969-01-12
-  []
-    gen:spouse <#Lawrence_Robert_Maconochie-Welwood> , <howard.ttl#Lady_Elizabeth_Henrietta_Howard> ;
-	gen:startDate "1934-09-07" .
-
-# ----
-<#Christina_Maria_Hersey_Baird>
-  # Christina Maria Hersey Baird, d. 1867-02-14
-  gen:father <https://www.wikidata.org/wiki/Q26263049> .
-  # and Hersey Christina Maria Gavin
-  # oo 1833-07-25 William Henry Drummond, 7th Viscount Strathallan, 1810-03-05 - 1886-01-23, https://www.wikidata.org/wiki/Q8008010
 
 # ----
 <https://www.wikidata.org/wiki/Q75244222>
@@ -1807,6 +1966,22 @@
   # oo 1896-04-06 Francis Walter Montagu Douglas Scott, 1860-03-05 - 1942-01-05, https://www.wikidata.org/wiki/Q75253754 (scott.ttl)
 
 # ----
+#<https://www.wikidata.org/wiki/Q75281023>
+  # Martin Roland Soames, b. 1903
+  # son of Edward Roland Soames
+  # and Eleanor Corisande Astley
+  # oo Myra Drummond, b. 1905-04-15
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75281023> , <https://www.wikidata.org/wiki/Q75345333> ;
+	gen:startDate "1935-07-23" .
+
+<https://www.wikidata.org/wiki/Q75276161>
+  # Gilian Elfrida Astley Elfin Soames, b. 1937
+  gen:father <https://www.wikidata.org/wiki/Q75281023> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75345333> .
+  # oo 1957-12-10 (div 1962) Francis Egerton Grosvenor, 8th Earl of Wilton, b. 1934-02-08, https://www.wikidata.org/wiki/Q22004678
+
+# ----
 <https://www.wikidata.org/wiki/Q76285897>
   # Dr. Marcel Dingli-Attard dei Baroni Inguanez
   gen:father <https://www.wikidata.org/wiki/Q76285898> . # Joseph Dingli-Attard, 18th Baron Hemsija e Zabbaria, 17th Baron Ortigos
@@ -1814,3 +1989,130 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q76285897> , <https://www.wikidata.org/wiki/Q75345336> ;
 	gen:startDate "1977-07-21" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q3081441>
+  # Rt. Rev. Francis Fulford, Bishop of Montreal, 1803-06-03 - 1868-09-09
+  # Bischofsweihe 1850-07-27
+  # Bishop of Montreal 1850-07-19, 1850-09-15
+  # son of Baldwin Fulford
+  # oo Mary Drummond, 1793-04-20 - 1873-10-21
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3081441> , <https://www.wikidata.org/wiki/Q76284195> ;
+	gen:startDate "1830-10-18" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q75260643>
+  # John Allan Maconochie-Welwood, d. 1934-03-25
+  # oo Winifred Louisa Drummond, d. 1941-03-18
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75260643> , <https://www.wikidata.org/wiki/Q76278173> ;
+	gen:startDate "1892-04-28" .
+
+<https://www.wikidata.org/wiki/Q75252674>
+  # Lawrence Robert Maconochie-Welwood, b. 1902-08-13
+  gen:father <https://www.wikidata.org/wiki/Q75260643> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76278173> .
+  # oo Lady Elizabeth Henrietta Howard, 1903-10-24 - 1969-01-12
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75252674> , <https://www.wikidata.org/wiki/Q75252672> ;
+	gen:startDate "1934-09-07" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q75303103>
+  # Sir Vesey George Mackenzie Holt, d. 1923-12-06
+  # oo Mabel Mary Drummond, d. 1930-08-10
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75303103> , <https://www.wikidata.org/wiki/Q76285629> ;
+	gen:startDate "1880-03-09" .
+
+<https://www.wikidata.org/wiki/Q75303101>
+  # Martin Drummond Vesey Holt, 1881 - 1956-11-02
+  gen:father <https://www.wikidata.org/wiki/Q75303103> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76285629> .
+  # oo Lady Phyllis Hedworth Camilla Herbert, 1898~ - 1972-10-08
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75303101> , <https://www.wikidata.org/wiki/Q75303097> ;
+	gen:startDate "1918-06-01" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q76197142>
+  # Gerald James Pixley
+  # son of James Aiken Pixley
+  # oo Sybelle Winifred Louisa Drummond, 1898-10-29 - 1963-06-26
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76197142> , <https://www.wikidata.org/wiki/Q75331378> ;
+	gen:startDate "1920-10-12" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q75314405>
+  # John Cuthbert Eyre Leslie
+  # son of Charles Stephen Leslie of Balquhain
+  # oo Lilias Caroline Drummond, 1868-03-09 - 1959-04-05
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75314405> , <https://www.wikidata.org/wiki/Q75314400> ;
+	gen:startDate "1897-08-03" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q75314402>
+  # William Edward Murray, d. 1914-09
+  # son of John Murray
+  # oo Lilias Caroline Drummond, 1868-03-09 - 1959-04-05
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75314402> , <https://www.wikidata.org/wiki/Q75314400> ;
+	gen:startDate "1906-07-31" .
+
+<https://www.wikidata.org/wiki/Q75314423>
+  # Edward John Drummond-Murray, 1907-06-17 - 1976-06-30
+  # Edward John Murray
+  # Edward John Drummond-Murray 1919-01-11
+  gen:father <https://www.wikidata.org/wiki/Q75314402> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75314400> .
+  # oo Eulalia Ilfdefonsa Wilhelmina Heaven, d. 1988, daughter of William Anthony Raymond Heaven and Emma Lewin
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75314423> , <https://www.wikidata.org/wiki/Q108493279> ;
+	gen:startDate "1928-12-01" ;
+	gen:divorceDate "1936" .
+  # oo Auriol Broxholm, d. 1973-08-13, daughter of Cyril Broxholm
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75314423> , <https://www.wikidata.org/wiki/Q76274712> ;
+	gen:startDate "1936-03-05" .
+
+<https://www.wikidata.org/wiki/Q7173743>
+  # William Edward _Peter_ Louis Drummond-Murray of Mastrick, 1929-11-24 - 2014-04-13
+  gen:father <https://www.wikidata.org/wiki/Q75314423> ;
+  gen:mother <https://www.wikidata.org/wiki/Q108493279> .
+  # oo Hon. Barbara Mary Hope, b. 1930-02-21
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7173743> , <https://www.wikidata.org/wiki/Q75314410> ;
+	gen:startDate "1954-01-12" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q75551722>
+  # Andrew Christian Currey, 1930 - 2003-02-09
+  # son of Harry Philip Currey
+  # and Rona Gwenthlyn Harkness
+  # oo Hon. Heather Mary Drummond, b. 1931-11-09
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75551722> , <https://www.wikidata.org/wiki/Q75551725> ;
+	gen:startDate "1954-08-11" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q7528453>
+  # Sir Peter Garrett Agnew, 1st Baronet, 1900-07-09 - 1990-08-26
+  # 1st Baronet Agnew, of Clendry, Kirkcolm, co. Wigtown [U.K.] 1957-01-31
+  # son of Charles Leonard Agnew
+  # and Alice Rowley Nelson
+  # oo Enid Frances Boan, d. 1982-12-01, daughter of Harry Boan
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7528453> , <https://www.wikidata.org/wiki/Q75406907> ;
+	gen:startDate "1928-03-26" .
+
+<https://www.wikidata.org/wiki/Q75406837>
+  # Sir Quentin Charles Somerville Agnew-Somerville, 2nd Baronet, b. 1929-03-08
+  gen:father <https://www.wikidata.org/wiki/Q7528453> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75406907> .
+  # oo Hon. Margaret April Irene Drummond, b. 1939-04-03
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75406837> , <https://www.wikidata.org/wiki/Q75406839> ;
+	gen:startDate "1963-12-14" .
