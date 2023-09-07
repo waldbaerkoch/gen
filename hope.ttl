@@ -2,18 +2,35 @@
 @prefix wdata: <https://www.wikidata.org/wiki/> .
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
 @prefix gen: <http://jjkoch.de/gen#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
-#<#>
+#<https://www.wikidata.org/wiki/Q76030853>
   # Henry Hope
   # oo Jaqueline de Tott
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76030853> , <https://www.wikidata.org/wiki/Q76030855> .
 
-#<https://www.wikidata.org/wiki/Q3012151>
+<https://www.wikidata.org/wiki/Q75949295>
+  # Henry Hope, d. 1630b
+  gen:father <https://www.wikidata.org/wiki/Q76030853> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76030855> .
+  # oo Katherine Galbreath, daughter of NN Galbreath, of Kilcroich and NN Little
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75949295> , <https://www.wikidata.org/wiki/Q105817437> .
+<https://www.wikidata.org/wiki/Q3012151>
   # Sir Thomas Hope of Craighall, 1st Baronet, 1573 - 1646-11
   # 1st Baronet Hope, of Craighall 1628-02-19
+  gen:father <https://www.wikidata.org/wiki/Q76030853> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76030855> .
   # oo Elizabeth Binning, daughter of John Binning of Wallyford
   []
     gen:spouse <https://www.wikidata.org/wiki/Q3012151> , <https://www.wikidata.org/wiki/Q76030859> .
 
+<https://www.wikidata.org/wiki/Q76271712>
+  # Anne Hope, 1609~ - 1646
+  gen:father <https://www.wikidata.org/wiki/Q75949295> ;
+  gen:mother <https://www.wikidata.org/wiki/Q105817437> .
+  # oo Sir James Steuart of Coltness, 1608 – 1681-03-31, https://www.wikidata.org/wiki/Q16205333 (maxwell.ttl)
 <https://www.wikidata.org/wiki/Q16859710>
   # Sir John Hope of Craighall, 2nd Baronet, 1605~ - 1654-04-28
   gen:father <https://www.wikidata.org/wiki/Q3012151> ;
@@ -456,7 +473,7 @@
   gen:father <https://www.wikidata.org/wiki/Q946015> ;
   gen:mother <https://www.wikidata.org/wiki/Q75283328> .
   # oo 1793-08-03 Rt. Hon. Charles Hope, Lord Granton, 1763-06-29 - 1851-10-31, https://www.wikidata.org/wiki/Q5079108
-<#Lady_Margaret_Hope>
+<https://www.wikidata.org/wiki/Q76064777>
   # Lady Margaret Hope, 1772-06-24 - 1831-09-16
   gen:father <https://www.wikidata.org/wiki/Q946015> ;
   gen:mother <https://www.wikidata.org/wiki/Q75283328> .
@@ -2010,8 +2027,18 @@
   # and Elizabeth Houstoun
   # oo Lady Margaret Hope, 1772-06-24 - 1831-09-16
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q16997149> , <#Lady_Margaret_Hope> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q16997149> , <https://www.wikidata.org/wiki/Q76064777> ;
 	gen:startDate "1793-07-10" .
+
+<https://www.wikidata.org/wiki/Q76064780>
+  owl:sameAs <https://www.wikidata.org/wiki/Q76026952> ;
+  # Alexander Maclean, 14th of Ardgour, 1799-03-01 - 1872-11-28
+  gen:father <https://www.wikidata.org/wiki/Q16997149> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76064777> .
+  # oo Helen Jane Dalrymple, d. 1882-01-04
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76064780> , <https://www.wikidata.org/wiki/Q76026951> ;
+	gen:startDate "1833-02-14" .
 
 # ----
 #<#John_Gibson_Lockhart>
