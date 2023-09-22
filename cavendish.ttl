@@ -9,16 +9,17 @@
 #  gen:birthDate "1346~" ;
 #  gen:deathDate "1381-06-15" .
 
-#<#William_Cavendish>
+#<https://www.wikidata.org/wiki/Q75618978>
   # William Cavendish, d. 1433
   # oo Joan Staventon
-
-#<#>
-  # Thomas Cavendish, d. 1477
-  # oo Katherine Scudamore, d. 1499-09-15
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75618978> , <https://www.wikidata.org/wiki/Q75618963> .
 
 <https://www.wikidata.org/wiki/Q61466312>
-  gen:father <https://www.wikidata.org/wiki/Q3809147> .
+  # Thomas Cavendish, d. 1477
+  gen:father <https://www.wikidata.org/wiki/Q75618978> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75618963> .
+  # oo Katherine Scudamore, d. 1499-09-15
   []
     gen:spouse <https://www.wikidata.org/wiki/Q61466312> , <https://www.wikidata.org/wiki/Q61466313> .
 
@@ -26,7 +27,6 @@
   gen:name "Thomas Cavendish"@en ;
   gen:birthDate "1472" ;
   gen:deathDate "1524" ;
-  # son of Thomas Cavendish and Katherine Scudamore
   gen:father <https://www.wikidata.org/wiki/Q61466312> ;
   gen:mother <https://www.wikidata.org/wiki/Q61466313> .
   # oo Alice Smith, d. 1515-11-12
@@ -46,7 +46,11 @@
   gen:father <https://www.wikidata.org/wiki/Q61466309> ;
   gen:mother <https://www.wikidata.org/wiki/Q61466310> .
   # oo Margaret Bostock, daughter of Edmund Bostock
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q762439> , <https://www.wikidata.org/wiki/Q75619003> .
   # oo Elizabeth Conyngsby, daughter of Thomas Conyngsby
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q762439> , <https://www.wikidata.org/wiki/Q75619005> .
   # oo Elizabeth Hardwick, 1527-07-27 - 1608-02-13 (Bess of Hardwick) (talbot.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q762439> , <https://www.wikidata.org/wiki/Q508447> ;
@@ -58,27 +62,27 @@
   gen:mother <https://www.wikidata.org/wiki/Q508447> .
   # oo 1562 Sir Henry Pierrepont, of Holme Pierrepont, 1546-09-18 - 1615-03-19, https://www.wikidata.org/wiki/Q5727012
 <https://www.wikidata.org/wiki/Q16011086>
-  # Henry Cavendish, 1549~ - 1616-10-12
+  # Sir Henry Cavendish, 1549~ - 1616-10-12
   gen:father <https://www.wikidata.org/wiki/Q762439> ;
   gen:mother <https://www.wikidata.org/wiki/Q508447> .
   # oo Lady Grace Talbot
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q16011086> , <talbot.ttl#Lady_Grace_Talbot> .
+    gen:spouse <https://www.wikidata.org/wiki/Q16011086> , <https://www.wikidata.org/wiki/Q75251567> .
 <https://www.wikidata.org/wiki/Q2756075>
   gen:name "William Cavendish, 1st Earl of Devonshire"@en ;
-  # 1st Baron Cavendish of Hardwick, co. Derby 1605-05-04
-  # 1st Earl of Devonshire 1618-08-07
+  # 1st Baron Cavendish of Hardwick, co. Derby [England] 1605-05-04
+  # 1st Earl of Devonshire [England] 1618-08-07
   gen:birthDate "1552-12-27" ;
   gen:deathDate "1626-03-03" ;
   gen:father <https://www.wikidata.org/wiki/Q762439> ;
   gen:mother <https://www.wikidata.org/wiki/Q508447> .
   # oo Anne Keighley, daughter of Henry Kighley of Keighley, Yorkshire
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q2756075> , <#Anne_Keighley> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q2756075> , <https://www.wikidata.org/wiki/Q75250273> ;
 	gen:startDate "1580-03-21~" .
   # oo Elizabeth Boughton, d. 1642~, daughter of Edward Boughton of Couston, Warwickshire
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q2756075> , <#Elizabeth_Boughton> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q2756075> , <https://www.wikidata.org/wiki/Q75250274> ;
 	gen:startDate "1619b" .
 <https://www.wikidata.org/wiki/Q53350479>
   # Sir Charles Cavendish, of Welbeck Abbey, 1553~ - 1617-04-04
@@ -111,7 +115,7 @@
   gen:birthDate "1590~" ;
   gen:deathDate "1628-06-20" ;
   gen:father <https://www.wikidata.org/wiki/Q2756075> ;
-  gen:mother <#Anne_Keighley> .
+  gen:mother <https://www.wikidata.org/wiki/Q75250273> .
   # oo Hon. Christian Bruce, d. 1674-06-16
   []
     gen:spouse <https://www.wikidata.org/wiki/Q2756020> , <https://www.wikidata.org/wiki/Q5109410> ;
@@ -119,7 +123,7 @@
 <https://www.wikidata.org/wiki/Q75251574>
   # Hon. Frances Cavendish, 1593~ - 1613-09-01
   gen:father <https://www.wikidata.org/wiki/Q2756075> ;
-  gen:mother <#Anne_Keighley> .
+  gen:mother <https://www.wikidata.org/wiki/Q75250273> .
   # oo William Maynard, 1st Baron Maynard, 1586-07-10 – 1640-12-17, https://www.wikidata.org/wiki/Q8015285
 <https://www.wikidata.org/wiki/Q1101373> # -> Duke of Newcastle-upon-Tyne
   # William Cavendish, 1st Duke of Newcastle-upon-Tyne, 1592-12-06 - 1676-12-25
@@ -155,7 +159,7 @@
 <https://www.wikidata.org/wiki/Q2697139>
   # William Cavendish, 1st Duke of Devonshire, 1641-01-25 - 1707-08-18
   # 4th Baron Cavendish of Hardwick, co. Derby, 4th Earl of Devonshire 1684-11-23
-  # 1st Marquess of Hartington, co. Derby, 1st Duke of Devonshire 1694-05-12
+  # 1st Duke of Devonshire, 1st Marquess of Hartington, co. Derby [England] 1694-05-12
   gen:father <https://www.wikidata.org/wiki/Q2084968> ;
   gen:mother <https://www.wikidata.org/wiki/Q16551731> .
   # oo Lady Mary Butler, 1646 - 1710-07-31
@@ -166,7 +170,7 @@
   # Lady Anne Cavendish, 1649~ – 1704
   gen:father <https://www.wikidata.org/wiki/Q2084968> ;
   gen:mother <https://www.wikidata.org/wiki/Q16551731> .
-  # oo 1662 Charles Rich, Lord Rich, 1643 - 1664-05-16, #Charles_Rich,_Lord_Rich
+  # oo 1662 Charles Rich, Lord Rich, 1643 - 1664-05-16, https://www.wikidata.org/wiki/Q75672783
   # oo 1670-05-02 John Cecil, 5th Earl of Exeter, 1648~ - 1700-08-29, https://www.wikidata.org/wiki/Q15989977
 
 <https://www.wikidata.org/wiki/Q337510>
@@ -175,7 +179,7 @@
   gen:mother <https://www.wikidata.org/wiki/Q75253892> .
   # oo Hon. Rachel Russell, 1674-01 - 1725-12-28
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q337510> , <russell.ttl#Rachel_Russell_(died_1725)> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q337510> , <https://www.wikidata.org/wiki/Q75248577> ;
 	gen:startDate "1688-06-21" .
 <https://www.wikidata.org/wiki/Q6679337>
   # Lord Henry Cavendish, 1673 - 1700-05-10
@@ -183,7 +187,7 @@
   gen:mother <https://www.wikidata.org/wiki/Q75253892> .
   # oo Rhoda Cartwright, d. 1730-01-24
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q6679337> , <#Rhoda_Cartwright> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q6679337> , <https://www.wikidata.org/wiki/Q75250266> ;
 	gen:startDate "1696-08-03" .
 <https://www.wikidata.org/wiki/Q6679415>
   # Lord James Cavendish, 1674 - 1751-12-14
@@ -191,7 +195,7 @@
   gen:mother <https://www.wikidata.org/wiki/Q75253892> .
   # oo Anne Yale, d. 1734-06-27
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q6679415> , <#Anne_Yale> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q6679415> , <https://www.wikidata.org/wiki/Q75250269> ;
 	gen:startDate "1708-07-06" .
 <https://www.wikidata.org/wiki/Q75249405>
   # Lady Elizabeth Cavendish, 1670 - 1741-08-29b
@@ -202,7 +206,7 @@
 <https://www.wikidata.org/wiki/Q2400397>
   # William Cavendish, 3rd Duke of Devonshire, 1698-09-26 - 1755-12-05
   gen:father <https://www.wikidata.org/wiki/Q337510> ;
-  gen:mother <russell.ttl#Rachel_Russell_(died_1725)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75248577> .
   # oo Catherine Hoskins, 1700 - 1777-05-08, daughter of John Hoskins and Catherine Hale
   []
     gen:spouse <https://www.wikidata.org/wiki/Q2400397> , <https://www.wikidata.org/wiki/Q56778332> ;
@@ -210,37 +214,37 @@
 <https://www.wikidata.org/wiki/Q76019049>
   # Lady Rachel Cavendish, 1699-10-04 – 1780-06-18
   gen:father <https://www.wikidata.org/wiki/Q337510> ;
-  gen:mother <russell.ttl#Rachel_Russell_(died_1725)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75248577> .
   # oo 1723-05-14 Sir William Morgan, of Tredegar, 1700-03-08 - 1731-04-24, https://www.wikidata.org/wiki/Q8015811
 <https://www.wikidata.org/wiki/Q75251610>
   # Lady Elizabeth Cavendish, 1700-09-27 – 1747-11-07
   gen:father <https://www.wikidata.org/wiki/Q337510> ;
-  gen:mother <russell.ttl#Rachel_Russell_(died_1725)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75248577> .
   # oo 1723-07-02 Sir Thomas Lowther, 2nd Baronet, 1699-04-20 - 1745-03-23, https://www.wikidata.org/wiki/Q7529194
 <https://www.wikidata.org/wiki/Q6679416>
   # Lord James Cavendish, 1699 - 1741-12-14
   gen:father <https://www.wikidata.org/wiki/Q337510> ;
-  gen:mother <russell.ttl#Rachel_Russell_(died_1725)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75248577> .
 <https://www.wikidata.org/wiki/Q2958710>
   # Lord Charles Cavendish, 1704-03-17 – 1783-04-28
   gen:father <https://www.wikidata.org/wiki/Q337510> ;
-  gen:mother <russell.ttl#Rachel_Russell_(died_1725)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75248577> .
   # oo Lady Anne Grey, d. 1733-09-20
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q2958710> , <grey.ttl#Lady_Anne_Grey_(died_1733)> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q2958710> , <https://www.wikidata.org/wiki/Q75250290> ;
 	gen:startDate "1727-01-09" .
 <https://www.wikidata.org/wiki/Q75634329>
   # Henrietta Cavendish, d. 1718-01-11
-  gen:father <https://www.wikidata.org/wiki/Q337510> ;
-  gen:mother <#Mary_Heneage> .
+  gen:father <https://www.wikidata.org/wiki/Q337510> ; # illegitimate
+  gen:mother <https://www.wikidata.org/wiki/Q75314985> . # Mary Heneage
   # oo 1706-12-06 Lionel Tollemache, Lord Huntingtower, 1682-06-06 - 1712-07-26, https://www.wikidata.org/wiki/Q15623766
-<#Mary_Cavendish>
+<https://www.wikidata.org/wiki/Q75250268>
   # Mary Cavendish, 1700-01-03 – 1778-07-29
   gen:father <https://www.wikidata.org/wiki/Q6679337> ;
-  gen:mother <#Rhoda_Cartwright> .
+  gen:mother <https://www.wikidata.org/wiki/Q75250266> .
   # oo 1716-08 John Fane, 7th Earl of Westmorland, 1686-03-24 - 1762-08-26, https://www.wikidata.org/wiki/Q7611501
 
-<#Lady_Caroline_Cavendish>
+<https://www.wikidata.org/wiki/Q75269292>
   # Lady Caroline Cavendish, 1719-05-22 - 1760-01-20
   gen:father <https://www.wikidata.org/wiki/Q2400397> ;
   gen:mother <https://www.wikidata.org/wiki/Q56778332> .
@@ -253,12 +257,12 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q238639> , <https://www.wikidata.org/wiki/Q3666720> ;
 	gen:startDate "1748-03-27" .
-<#Lady_Elizabeth_Cavendish_(died_1796)>
+<https://www.wikidata.org/wiki/Q75270993>
   # Lady Elizabeth Cavendish, 1723-04-24 - 1796
   gen:father <https://www.wikidata.org/wiki/Q2400397> ;
   gen:mother <https://www.wikidata.org/wiki/Q56778332> .
   # oo 1743-09-22 Rt. Hon. John Ponsonby, 1713-03-29 - 1787-08-16, https://www.wikidata.org/wiki/Q15521030
-<#Lady_Rachel_Cavendish_(died_1805)>
+<https://www.wikidata.org/wiki/Q75285338>
   # Lady Rachel Cavendish, 1727 – 1805-05-08
   gen:father <https://www.wikidata.org/wiki/Q2400397> ;
   gen:mother <https://www.wikidata.org/wiki/Q56778332> .
@@ -278,12 +282,13 @@
 <https://www.wikidata.org/wiki/Q131733>
   # Henry Cavendish, 1731-10-10 - 1810-03-10
   gen:father <https://www.wikidata.org/wiki/Q2958710> ;
-  gen:mother <grey.ttl#Lady_Anne_Grey_(died_1733)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75250290> .
 
 <https://www.wikidata.org/wiki/Q335425>
   # William Cavendish, 5th Duke of Devonshire, 1748-12-14 - 1811-06-29
   # 7th Lord Clifford 1754-12-24
-  # 8th Baron Cavendish of Hardwick, co. Derby, 8th Earl of Devonshire, 5th Duke of Devonshire, 5th Marquess of Hartington, co. Derby 1764-10-02
+  # 8th Earl of Devonshire, 8th Baron Cavendish of Hardwick, co. Derby,
+  # 5th Duke of Devonshire, 5th Marquess of Hartington, co. Derby 1764-10-02
   gen:father <https://www.wikidata.org/wiki/Q238639> ;
   gen:mother <https://www.wikidata.org/wiki/Q3666720> .
   # oo Lady Georgiana Spencer, 1757-06-07 - 1806-03-30
@@ -333,17 +338,17 @@
   gen:mother <https://www.wikidata.org/wiki/Q449103> .
   # oo Lady Elizabeth Frances Townshend, 1789-08-02 - 1862-04-10
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q4821399> , <townshend.ttl#Lady_Elizabeth_Frances_Townshend> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q4821399> , <https://www.wikidata.org/wiki/Q76120186> ;
 	gen:startDate "1813-10-20" .
 
-<#Sir_William_Clifford,_2nd_Baronet>
+<https://www.wikidata.org/wiki/Q76157833>
   # Sir William John Cavendish Clifford, 2nd Baronet, 1814-10-12 - 1882-04-11
   gen:father <https://www.wikidata.org/wiki/Q4821399> ;
-  gen:mother <townshend.ttl#Lady_Elizabeth_Frances_Townshend> .
+  gen:mother <https://www.wikidata.org/wiki/Q76120186> .
 <https://www.wikidata.org/wiki/Q75279833>
   # Sir Robert Cavendish Spencer Clifford, 3rd Baronet. 1815-11-03 - 1892-01
   gen:father <https://www.wikidata.org/wiki/Q4821399> ;
-  gen:mother <townshend.ttl#Lady_Elizabeth_Frances_Townshend> .
+  gen:mother <https://www.wikidata.org/wiki/Q76120186> .
   # oo Emmelina Lowe
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75279833> , <#Emmelina_Lowe> ;
@@ -351,7 +356,7 @@
 <https://www.wikidata.org/wiki/Q7526194>
   # Sir Charles Cavendish Clifford, 4th Baronet, 1821-01-07 - 1895-11-22
   gen:father <https://www.wikidata.org/wiki/Q4821399> ;
-  gen:mother <townshend.ttl#Lady_Elizabeth_Frances_Townshend> .
+  gen:mother <https://www.wikidata.org/wiki/Q76120186> .
 
 <https://www.wikidata.org/wiki/Q75279831>
   # Caroline May Clifford, d. 1951-03-18
@@ -363,38 +368,38 @@
 # Earl of Burlington
 <https://www.wikidata.org/wiki/Q337887>
   # George Cavendish, 1st Earl of Burlington, 1754-03-31 - 1834-05-09
-  # 1st Baron Cavendish of Keighley, co. York, 1st Earl of Burlington 1831-09-10
+  # 1st Earl of Burlington, 1st Baron Cavendish of Keighley, co. York [U.K.] 1831-09-10
   gen:father <https://www.wikidata.org/wiki/Q238639> ;
   gen:mother <https://www.wikidata.org/wiki/Q3666720> .
   # oo Lady Elizabeth Compton, 1760-06-25 - 1835-04-07
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q337887> , <compton.ttl#Lady_Elizabeth_Compton_(died_1835)> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q337887> , <https://www.wikidata.org/wiki/Q75248587> ;
 	gen:startDate "1782-02-27" .
 
 <https://www.wikidata.org/wiki/Q944531>
   # Hon. William Cavendish, 1783-01-10 - 1812-01-15
   gen:father <https://www.wikidata.org/wiki/Q337887> ;
-  gen:mother <compton.ttl#Lady_Elizabeth_Compton_(died_1835)> .
-  # oo Hon. Louisa O'Callaghan, 1780 - 1863-04-18
+  gen:mother <https://www.wikidata.org/wiki/Q75248587> .
+  # oo Hon. Louisa O’Callaghan, 1780 - 1863-04-18 (ponsonby.ttl)
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q944531> , <ponsonby.ttl#Louisa_O'Callaghan> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q944531> , <https://www.wikidata.org/wiki/Q73394205> ;
 	gen:startDate "1807-07-18" .
 <https://www.wikidata.org/wiki/Q5540437>
   # George Henry Compton Cavendish, 1784-10-14 - 1809-01-22
   gen:father <https://www.wikidata.org/wiki/Q337887> ;
-  gen:mother <compton.ttl#Lady_Elizabeth_Compton_(died_1835)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75248587> .
 <https://www.wikidata.org/wiki/Q75249346>
   # Lady Anne Cavendish, 1787-11-11 - 1871-05-27
   gen:father <https://www.wikidata.org/wiki/Q337887> ;
-  gen:mother <compton.ttl#Lady_Elizabeth_Compton_(died_1835)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75248587> .
   # oo 1825-10-25 Rt. Hon. Lord Charles Fitzroy, 1791-02-28 - 1865-06-17, https://www.wikidata.org/wiki/Q6679044
 <https://www.wikidata.org/wiki/Q5719237>
   # Hon. Henry Frederick Compton Cavendish, 1789-11-05 - 1873-04-05
   gen:father <https://www.wikidata.org/wiki/Q337887> ;
-  gen:mother <compton.ttl#Lady_Elizabeth_Compton_(died_1835)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75248587> .
   # oo Sarah Fawkener, 1789-05-27 - 1817-10-31
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q5719237> , <#Sarah_Fawkener> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q5719237> , <https://www.wikidata.org/wiki/Q75249410> ;
 	gen:startDate "1811-10-24" .
   # oo Frances Susan Lambton, 1794-09-07b - 1840-11-23
   []
@@ -402,32 +407,32 @@
 	gen:startDate "1819-06-16" .
   # oo Susanna Emma Byerlie, d. 1910, daughter of William Byerlie
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q5719237> , <#Susanna_Emma_Byerlie> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q5719237> , <https://www.wikidata.org/wiki/Q75249425> ;
 	gen:startDate "1873-01-28" .
 <https://www.wikidata.org/wiki/Q5076148> # -> Baron Chesham
   # Charles Compton Cavendish, 1st Baron Chesham, 1793-08-28 – 1863-11-12
   gen:father <https://www.wikidata.org/wiki/Q337887> ;
-  gen:mother <compton.ttl#Lady_Elizabeth_Compton_(died_1835)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75248587> .
 
 <https://www.wikidata.org/wiki/Q337626>
   # William Cavendish, 7th Duke of Devonshire, 1808-04-27 - 1891-12-21
   # 2nd Earl of Burlington, 2nd Baron Cavendish of Keighley, co. York 1834-05-04
   # 10th Baron Cavendish of Hardwick, co. Derby, 7th Duke of Devonshire, 7th Marquess of Hartington, co. Derby, 10th Earl of Devonshire 1858-01-18
   gen:father <https://www.wikidata.org/wiki/Q944531> ;
-  gen:mother <ponsonby.ttl#Louisa_O'Callaghan> .
+  gen:mother <https://www.wikidata.org/wiki/Q73394205> .
   # oo Lady Blanche Georgiana Howard, 1812-01-11 - 1840-04-27
   []
     gen:spouse <https://www.wikidata.org/wiki/Q337626> , <https://www.wikidata.org/wiki/Q3640850> ;
 	gen:startDate "1829-08-06" .
-<#Lady_Fanny_Cavendish>
+<https://www.wikidata.org/wiki/Q75249343>
   # Lady Fanny Cavendish, 1809~ - 1885-12-30
   gen:father <https://www.wikidata.org/wiki/Q944531> ;
-  gen:mother <ponsonby.ttl#Louisa_O'Callaghan> .
+  gen:mother <https://www.wikidata.org/wiki/Q73394205> .
   # oo 1837-07-01 Frederick John Howard, 1814-03-01 - 1897-02-28, https://www.wikidata.org/wiki/Q5498154
 <https://www.wikidata.org/wiki/Q6679279>
   # Lord George Henry Cavendish, 1810-08-19 - 1880-09-23
   gen:father <https://www.wikidata.org/wiki/Q944531> ;
-  gen:mother <ponsonby.ttl#Louisa_O'Callaghan> .
+  gen:mother <https://www.wikidata.org/wiki/Q73394205> .
   # oo Lady Louisa Lascelles, 1813~ - 1886-03-10
   []
     gen:spouse <https://www.wikidata.org/wiki/Q6679279> , <https://www.wikidata.org/wiki/Q75248859> ;
@@ -435,32 +440,32 @@
 <https://www.wikidata.org/wiki/Q30303444>
   # Lord Richard Cavendish, 1812-07-03 - 1873-11-19
   gen:father <https://www.wikidata.org/wiki/Q944531> ;
-  gen:mother <ponsonby.ttl#Louisa_O'Callaghan> .
+  gen:mother <https://www.wikidata.org/wiki/Q73394205> .
 <https://www.wikidata.org/wiki/Q75249414>
   # Sarah Mary Compton-Cavendish, 1813-08-27 - 1881-04-21
   gen:father <https://www.wikidata.org/wiki/Q5719237> ;
-  gen:mother <#Sarah_Fawkener> .
+  gen:mother <https://www.wikidata.org/wiki/Q75249410> .
   # oo 1842-06-28 John Frederick Vaughan Campbell, 2nd Earl Cawdor, 1817-06-11 - 1898-04-02, https://www.wikidata.org/wiki/Q6224958
 <https://www.wikidata.org/wiki/Q75249411>
   # William Henry Frederick Cavendish, 1817-10-31 - 1881-03-11
   gen:father <https://www.wikidata.org/wiki/Q5719237> ;
-  gen:mother <#Sarah_Fawkener> .
+  gen:mother <https://www.wikidata.org/wiki/Q75249410> .
   # oo Lady Emily Augusta Lambton, 1823-05-17 – 1886-11-02
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75249411> , <https://www.wikidata.org/wiki/Q75250293> ;
 	gen:startDate "1843-08-19" .
-<#Francis_William_Henry_Cavendish>
+<https://www.wikidata.org/wiki/Q75249417>
   # Francis William Henry Cavendish, 1820-02-06 - 1893-01-12
   gen:father <https://www.wikidata.org/wiki/Q5719237> ;
   gen:mother <https://www.wikidata.org/wiki/Q96090208> .
-  # oo Lady Eleanor Sophia Diana FitzGibbon, 1823 - 1915
+  # oo Lady Eleanor Sophia Diana FitzGibbon, 1823 - 1915 (montgomerie.ttl)
   []
-    gen:spouse <#Francis_William_Henry_Cavendish> , <#Lady_Eleanor_Sophia_Diana_FitzGibbon> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75249417> , <https://www.wikidata.org/wiki/Q75250307> ;
 	gen:startDate "1856-04-24" ;
 	gen:divorceDate "1866" .
   # oo Ianthe Florence Skyring, 1855~ - 1917-07-20, daughter of Charles Francis Skyring and Georgina Halahan
   []
-    gen:spouse <#Francis_William_Henry_Cavendish> , <#Ianthe_Florence_Skyring> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75249417> , <https://www.wikidata.org/wiki/Q75250308> ;
 	gen:startDate "1876-10-14" .
 <https://www.wikidata.org/wiki/Q75249420>
   # Charles William Cavendish, 1822-09-24 - 1890-12-21
@@ -472,11 +477,11 @@
 	gen:startDate "1847-10-27" .
   # oo Louisa C. Cockburn, 1839 - 1869-04-25
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q75249420> , <#Louisa_C._Cockburn> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75249420> , <https://www.wikidata.org/wiki/Q75252732> ;
 	gen:startDate "1863-06-25" .
   # oo Mary Gregg, d. 1900-08-26, daughter of Ivie Gregg
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q75249420> , <#Mary_Gregg> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75249420> , <https://www.wikidata.org/wiki/Q75252733> ;
 	gen:startDate "1873-06-16" .
 <https://www.wikidata.org/wiki/Q75249422>
   # George Henry Cavendish, 1824-01-09 - 1889-01-21
@@ -497,7 +502,7 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q334063> , <https://www.wikidata.org/wiki/Q74321> ;
 	gen:startDate "1892-08-16" .
-<#Lady_Louisa_Caroline_Cavendish>
+<https://www.wikidata.org/wiki/Q75249067>
   # Lady Louisa Caroline Cavendish, 1835-03-16 - 1907-09-21
   gen:father <https://www.wikidata.org/wiki/Q337626> ;
   gen:mother <https://www.wikidata.org/wiki/Q3640850> .
@@ -520,7 +525,7 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q337905> , <https://www.wikidata.org/wiki/Q75248600> ;
 	gen:startDate "1865-08-03" .
-<#Alice_Louisa_Cavendish>
+<https://www.wikidata.org/wiki/Q75249066>
   # Alice Louisa Cavendish, 1837 - 1905-03-28
   gen:father <https://www.wikidata.org/wiki/Q6679279> ;
   gen:mother <https://www.wikidata.org/wiki/Q75248859> .
@@ -535,33 +540,33 @@
   gen:father <https://www.wikidata.org/wiki/Q75249411> ;
   gen:mother <https://www.wikidata.org/wiki/Q75250293> .
   # oo 1877-07-21 Cecil George Saville Foljambe, 1st Earl of Liverpool, 1846-11-07 - 1907-03-23, https://www.wikidata.org/wiki/Q5056078 (savile.ttl)
-<#Henry_Frederick_Compton_Cavendish>
+<https://www.wikidata.org/wiki/Q75250295>
   # Henry Frederick Compton Cavendish, 1854-05-06 - 1928-01-21
   gen:father <https://www.wikidata.org/wiki/Q75249411> ;
   gen:mother <https://www.wikidata.org/wiki/Q75250293> .
   # oo Lady Harriet Castalia Godolphin Osborne, 1867-07-28 - 1922-06-16
   []
-    gen:spouse <#Henry_Frederick_Compton_Cavendish> , <osborne.ttl#Lady_Harriet_Castalia_Godolphin_Osborne> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75250295> , <https://www.wikidata.org/wiki/Q75250296> ;
 	gen:startDate "1888-07-10" .
-<#Reginald_Richard_Frederick_Cavendish>
+<https://www.wikidata.org/wiki/Q75283024>
   # Reginald Richard Frederick Cavendish, 1857-02-25 - 1941-11-03
-  gen:father <#Francis_William_Henry_Cavendish> ;
-  gen:mother <#Lady_Eleanor_Sophia_Diana_FitzGibbon> .
+  gen:father <https://www.wikidata.org/wiki/Q75249417> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75250307> .
   # oo Mary Constance Dupuis, 1858-10-19 - 1914-07-14, daughter of Rev. Henry Dupuis and Catherine Rosalie Greene
   []
-    gen:spouse <#Reginald_Richard_Frederick_Cavendish> , <#Mary_Constance_Dupuis> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75283024> , <https://www.wikidata.org/wiki/Q75283026> ;
 	gen:startDate "1880-09-11" .
   # oo Martha Douglas Reynolds, d. 1963-01-26, daughter of Thomas Henry Reynolds
   []
-    gen:spouse <#Reginald_Richard_Frederick_Cavendish> , <#Martha_Douglas_Reynolds> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75283024> , <https://www.wikidata.org/wiki/Q75283029> ;
 	gen:startDate "1922-07-04" .
-<#Alfred_Edward_John_Cavendish>
+<https://www.wikidata.org/wiki/Q4722429>
   # Alfred Edward John Cavendish, 1859-06-19 - 1943-02-02
-  gen:father <#Francis_William_Henry_Cavendish> ;
-  gen:mother <#Lady_Eleanor_Sophia_Diana_FitzGibbon> .
+  gen:father <https://www.wikidata.org/wiki/Q75249417> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75250307> .
   # oo Alice Isabella van der Byl, d. 1944-12-26, daughter of Hon. John Van der Byl
   []
-    gen:spouse <#Alfred_Edward_John_Cavendish> , <#Alice_Isabella_van_der_Byl> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q4722429> , <https://www.wikidata.org/wiki/Q75283038> ;
 	gen:startDate "1886-05-18" .
 
 <https://www.wikidata.org/wiki/Q2411883>
@@ -582,21 +587,21 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q6679906> , <https://www.wikidata.org/wiki/Q75249426> ;
 	gen:startDate "1895-07-30" .
-<#Godfrey_Lionel_John_Cavendish>
+<https://www.wikidata.org/wiki/Q75283017>
   # Godfrey Lionel John Cavendish, 1884-03-30 - 1914-12-22
-  gen:father <#Reginald_Richard_Frederick_Cavendish> ;
-  gen:mother <#Mary_Constance_Dupuis> .
+  gen:father <https://www.wikidata.org/wiki/Q75283024> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75283026> .
   # oo Cora Grace Graham Horsford, d. 1962-06-05, daughter of Joseph Alphonsus Horsford
   []
-    gen:spouse <#Godfrey_Lionel_John_Cavendish> , <#Cora_Grace_Graham_Horsford> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75283017> , <https://www.wikidata.org/wiki/Q75283019> ;
 	gen:startDate "1911-03-22" .
-<#Ralph_Henry_Voltelin_Cavendish>
+<https://www.wikidata.org/wiki/Q75283045>
   # Ralph Henry Voltelin Cavendish, 1887-03-27 - 1968-06-21
-  gen:father <#Alfred_Edward_John_Cavendish> ;
-  gen:mother <#Alice_Isabella_van_der_Byl> .
+  gen:father <https://www.wikidata.org/wiki/Q4722429> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75283038> .
   # oo Lady Gweneth Frida Ponsonby, 1888-06-15 - 1984
   []
-    gen:spouse <#Ralph_Henry_Voltelin_Cavendish> , <ponsonby.ttl#Lady_Gweneth_Frida_Ponsonby> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75283045> , <https://www.wikidata.org/wiki/Q75283047> ;
 	gen:startDate "1926-02-04 " .
 
 <https://www.wikidata.org/wiki/Q2761950>
@@ -613,13 +618,13 @@
   # Lady Maud Louisa Emma Cavendish, 1896-04-20 - 1975-03-30
   gen:father <https://www.wikidata.org/wiki/Q2411883> ;
   gen:mother <https://www.wikidata.org/wiki/Q531114> .
-  # oo 1917-11-03 Angus Alexander Mackintosh of Mackintosh, younger, 1885 - 1918-10-13, https://www.wikidata.org/wiki/Q75331286
+  # oo 1917-11-03 Angus Alexander Mackintosh of Mackintosh, younger, 1885 - 1918-10-13, https://www.wikidata.org/wiki/Q75331286 (graham.ttl)
   # oo 1923-11-15 Hon. George Evan Michael Baillie, 1894-12-19 - 1941-06-06, https://www.wikidata.org/wiki/Q75252759 (montagu.ttl)
-<#Lady_Blanche_Katherine_Cavendish>
+<https://www.wikidata.org/wiki/Q75393390>
   # Lady Blanche Katherine Cavendish, 1898-02-02 - 1987
   gen:father <https://www.wikidata.org/wiki/Q2411883> ;
   gen:mother <https://www.wikidata.org/wiki/Q531114> .
-  # oo 1919-04-30 Ivan John Murray Cobbold, 1897-01-28 - 1944-06-18, #Ivan_John_Murray_Cobbold
+  # oo 1919-04-30 Ivan John Murray Cobbold, 1897-01-28 - 1944-06-18, https://www.wikidata.org/wiki/Q75393387
 <https://www.wikidata.org/wiki/Q3037179>
   gen:name "Lady Dorothy Evelyn Cavendish"@en ;
   gen:birthDate "1900-07-28" ;
@@ -644,14 +649,14 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q6679036> , <https://www.wikidata.org/wiki/Q354381> ;
 	gen:startDate "1932-05-09" .
-<#Lady_Anne_Cavendish_(died_1981)>
+<https://www.wikidata.org/wiki/Q75249438>
   # Lady Anne Cavendish, 1909-08-20 - 1981-05-18
   gen:father <https://www.wikidata.org/wiki/Q2411883> ;
   gen:mother <https://www.wikidata.org/wiki/Q531114> .
-  # oo 1929-11-28 (div 1945) Henry Philip Hunloke, 1906-12-27 - 1978-01-13, https://www.wikidata.org/wiki/Q13529950
-  # oo 1949-07-27 Christopher John Holland-Martin, d. 1960-04-05, #Christopher_John_Holland-Martin
+  # oo 1929-11-28 (div 1945) Henry Philip Hunloke, 1906-12-27 - 1978-01-13, https://www.wikidata.org/wiki/Q13529950 (sidney.ttl)
+  # oo 1949-07-27 Christopher John Holland-Martin, d. 1960-04-05, https://www.wikidata.org/wiki/Q5112561
   # oo 1962-06-07 Alexander Victor Edward Paulet Montagu, 10th Earl of Sandwich, 1906-05-22 - 1995-02-25, https://www.wikidata.org/wiki/Q7926168
-<#Elizabeth_Vere_Cavendish>
+<https://www.wikidata.org/wiki/Q75250310>
   # Elizabeth Vere Cavendish, 1897-01-22 - 1982-06-05
   gen:father <https://www.wikidata.org/wiki/Q6679906> ;
   gen:mother <https://www.wikidata.org/wiki/Q75249426> .
@@ -678,13 +683,13 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75250754> , <https://www.wikidata.org/wiki/Q75250755> ;
 	gen:startDate "1937-12-16" .
-<#Godfrey_Herbert_Richard_Cavendish>
+<https://www.wikidata.org/wiki/Q75569089>
   # Godfrey Herbert Richard Cavendish, 1912-01-14 - 1958-08-25
-  gen:father <#Godfrey_Lionel_John_Cavendish> ;
-  gen:mother <#Cora_Grace_Graham_Horsford> .
+  gen:father <https://www.wikidata.org/wiki/Q75283017> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75283019> .
   # oo Angela Margaret Jervis Officer, d. 2015-01-05, daughter of William Gerald Officer and Winifred Margaret Mylne Kensington
   []
-    gen:spouse <#Godfrey_Herbert_Richard_Cavendish> , <#Angela_Margaret_Jervis_Officer> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75569089> , <https://www.wikidata.org/wiki/Q75569091> ;
 	gen:startDate "1950-04-15" .
 
 <https://www.wikidata.org/wiki/Q717540>
@@ -711,14 +716,14 @@
   # Lady Elizabeth Georgiana Alice Cavendish, 1926-04-24 - 2018-09-15
   gen:father <https://www.wikidata.org/wiki/Q2761950> ; 
   gen:mother <https://www.wikidata.org/wiki/Q531983> .
-<https://www.wikidata.org/wiki/Q43672811>
+<https://www.wikidata.org/wiki/Q19335528>
   # Lady Anne Evelyn Beatrice Cavendish, 1927-11-06 - 2010-08-09
   gen:father <https://www.wikidata.org/wiki/Q2761950> ; 
   gen:mother <https://www.wikidata.org/wiki/Q531983> .
-  # oo 1949-11-03 Michael Lambert Tree, 1921 - 1999, #Michael_Lambert_Tree
+  # oo 1949-11-03 Michael Lambert Tree, 1921 - 1999, https://www.wikidata.org/wiki/Q75249358
 <https://www.wikidata.org/wiki/Q201930>
   gen:name "Richard Hugh Cavendish, Baron Cavendish of Furness"@en ;
-  # Baron Cavendish of Furness, of Cartmel in the County of Cumbria 1990-05-17
+  # Baron Cavendish of Furness, of Cartmel in the County of Cumbria [U.K. Life Peer] 1990-05-17
   gen:birthDate "1941-11-02" ;
   gen:father <https://www.wikidata.org/wiki/Q75250754> ;
   gen:mother <https://www.wikidata.org/wiki/Q75250755> .
@@ -726,23 +731,23 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q201930> , <https://www.wikidata.org/wiki/Q75255265> ;
 	gen:startDate "1970-10-03" .
-<#Susan_Anne_Cavendish>
+<https://www.wikidata.org/wiki/Q75252740>
   # Susan Anne Cavendish, b. 1949-08-31
   gen:father <https://www.wikidata.org/wiki/Q75250754> ;
   gen:mother <https://www.wikidata.org/wiki/Q75250755> .
-  # oo 1970-03-05 (div 1983) Quentin Hugh Crewe, 1926-11-14 - 1998-11-14, #Quentin_Hugh_Crewe
-  # oo 1984-05-10 Christopher Nigel John Ryan, son of Charles Edmond Ryan
-<#Caroline_Elizabeth_Clare_Cavendish>
+  # oo 1970-03-05 (div 1983) Quentin Hugh Crewe, 1926-11-14 - 1998-11-14, https://www.wikidata.org/wiki/Q17279248
+  # oo 1984-05-10 Christopher Nigel John Ryan, https://www.wikidata.org/wiki/Q75619237
+<https://www.wikidata.org/wiki/Q75576015>
   # Caroline Elizabeth Clare Cavendish, b. 1956-06-16
-  gen:father <#Godfrey_Herbert_Richard_Cavendish> ;
-  gen:mother <#Angela_Margaret_Jervis_Officer> .
-  # oo 1977-07-14 Hon. Philip John Remnant, b. 1954-12-20, #Philip_John_Remnant
+  gen:father <https://www.wikidata.org/wiki/Q75569089> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75569091> .
+  # oo 1977-07-14 Philip John Remnant, 4th Baron Remnant, b. 1954-12-20, https://www.wikidata.org/wiki/Q75576111 (fitzroy.ttl)
 
-<#Lady_Emma_Cavendish>
+<https://www.wikidata.org/wiki/Q75249358>
   # Lady Emma Cavendish, b. 1943-03-26
   gen:father <https://www.wikidata.org/wiki/Q391058> ;
   gen:mother <https://www.wikidata.org/wiki/Q2019530> .
-  # oo 1963-09-03 Hon. Tobias William Tennant, b. 1941-06-01, #Tobias_William_Tennant
+  # oo 1963-09-03 Hon. Tobias William Tennant, b. 1941-06-01, https://www.wikidata.org/wiki/Q75249340
 <https://www.wikidata.org/wiki/Q7167791>
   gen:name "Peregrine Andrew Morny Cavendish, 12th Duke of Devonshire"@en ;
   gen:birthDate "1944-04-27" ;
@@ -756,43 +761,43 @@
   # Lady Sophia Louise Sydney Cavendish, b. 1957-03-18
   gen:father <https://www.wikidata.org/wiki/Q391058> ;
   gen:mother <https://www.wikidata.org/wiki/Q2019530> .
-  # oo 1979-10-20 (div 1987) Anthony William Lindsay Murphy
-  # oo 1988-07-19 (div 1999b) Alastair John Morrison, 3rd Baron Margadale, b. 1958-04-04, https://www.wikidata.org/wiki/Q4708758
-  # oo 1999-11-25 William Topley
+  # oo 1979-10-20 (div 1987) Anthony William Lindsay Murphy, https://www.wikidata.org/wiki/Q75618974
+  # oo 1988-07-19 (div 1999b) Alastair John Morrison, 3rd Baron Margadale, b. 1958-04-04, https://www.wikidata.org/wiki/Q4708758 (gower.ttl)
+  # oo 1999-11-25 William Topley, https://www.wikidata.org/wiki/Q75618975
 
 <https://www.wikidata.org/wiki/Q8006647>
   gen:name "William Cavendish, Earl of Burlington"@en ;
   gen:birthDate "1969-06-06" ;
   gen:father <https://www.wikidata.org/wiki/Q7167791> ;
   gen:mother <https://www.wikidata.org/wiki/Q75249339> .
-  # oo Laura Ann Roundell, b. 1972
+  # oo Laura Ann Roundell, b. 1972 (legge.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q8006647> , <https://www.wikidata.org/wiki/Q6498779> ;
 	gen:startDate "2007-03-31" .
-<#Lady_Celina_Imogen_Cavendish>
+<https://www.wikidata.org/wiki/Q75246547>
   gen:name "Lady Celina Imogen Cavendish"@en ;
   gen:birthDate "1971-10-04" ;
   gen:father <https://www.wikidata.org/wiki/Q7167791> ;
   gen:mother <https://www.wikidata.org/wiki/Q75249339> .
-  # oo 1995-06-03 Alexander Corfield Key Carter, b. 1971
-<#Lady_Jasmine_Nancy_Cavendish>
+  # oo 1995-06-03 Alexander Corfield Key Carter, b. 1971, https://www.wikidata.org/wiki/Q75618969
+<https://www.wikidata.org/wiki/Q75250043>
   gen:name "Lady Jasmine Nancy Cavendish"@en ;
   gen:birthDate "1973-05-04" ;
   gen:father <https://www.wikidata.org/wiki/Q7167791> ;
   gen:mother <https://www.wikidata.org/wiki/Q75249339> .
-  # oo 2003-07-25 Nicholas Dunne, b. 1970, #Nicholas_Dunne
+  # oo 2003-07-25 Nicholas Dunne, b. 1970, https://www.wikidata.org/wiki/Q75957795
 
-<#Lady_Maud_Cavendish>
+<https://www.wikidata.org/wiki/Q75767724>
   gen:name "Lady Maude Cavendish"@en ;
   gen:birthDate "2009-03" ;
   gen:father <https://www.wikidata.org/wiki/Q8006647> ;
   gen:mother <https://www.wikidata.org/wiki/Q6498779> .
-<#James_Cavendish,_Lord_Cavendish>
+<https://www.wikidata.org/wiki/Q76008646>
   gen:name "James Cavendish, Lord Cavendish"@en ;
   gen:birthDate "2010-12-12" ;
   gen:father <https://www.wikidata.org/wiki/Q8006647> ;
   gen:mother <https://www.wikidata.org/wiki/Q6498779> .
-<#Lady_Elinor_Cavendish>
+<https://www.wikidata.org/wiki/Q76333097>
   gen:name "Lady Elinor Myrtle Cavendish"@en ;
   gen:birthDate "2013" ;
   gen:father <https://www.wikidata.org/wiki/Q8006647> ;
@@ -802,9 +807,9 @@
 # Baron Chesham
 <https://www.wikidata.org/wiki/Q5076148>
   # Charles Compton Cavendish, 1st Baron Chesham, 1793-08-28 – 1863-11-12
-  # 1st Baron Chesham, of Chesham, co. Buckingham 1858-01-15
+  # 1st Baron Chesham, of Chesham, co. Buckingham [U.K.] 1858-01-15
   gen:father <https://www.wikidata.org/wiki/Q337887> ;
-  gen:mother <compton.ttl#Lady_Elizabeth_Compton_(died_1835)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75248587> .
   # oo Lady Catherine Susan Gordon, 1792-12-22 - 1866-12-14
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5076148> , <https://www.wikidata.org/wiki/Q75248736> ;
@@ -835,19 +840,19 @@
   gen:mother <https://www.wikidata.org/wiki/Q75248182> .
   # oo Lady Beatrice Constance Grosvenor, 1858-11-14 - 1911-01-12
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q712146> , <grosvenor.ttl#Lady_Beatrice_Constance_Grosvenor> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q712146> , <https://www.wikidata.org/wiki/Q75248708> ;
 	gen:startDate "1877-11-13" .
-<#Georgina_Caroline_Cavendish>
+<https://www.wikidata.org/wiki/Q75250963>
   # Hon. Georgina Caroline Cavendish, 1852-02-04 - 1937-02-26
   gen:father <https://www.wikidata.org/wiki/Q16063121> ;
   gen:mother <https://www.wikidata.org/wiki/Q75248182> .
   # oo 1875-08-26 Thomas William Coke, 2nd Earl of Leicester of Holkham, 1822-12-26 - 1909-01-24, https://www.wikidata.org/wiki/Q7612333
-<#Mary_Susan_Caroline_Cavendish>
+<https://www.wikidata.org/wiki/Q75249194>
   # Hon. Mary Susan Caroline Cavendish, 1853-03-19 - 1937-01-28
   gen:father <https://www.wikidata.org/wiki/Q16063121> ;
   gen:mother <https://www.wikidata.org/wiki/Q75248182> .
   # oo 1878-10-19 Charles George Lyttelton, 8th Viscount Cobham, 1842-10-27 - 1922-06-09, https://www.wikidata.org/wiki/Q1026930
-<#Katherine_Caroline_Cavendish>
+<https://www.wikidata.org/wiki/Q75248165>
   # Hon. Katherine Caroline Cavendish, 1857-12-03 - 1941-12-19
   gen:father <https://www.wikidata.org/wiki/Q16063121> ;
   gen:mother <https://www.wikidata.org/wiki/Q75248182> .
@@ -856,84 +861,85 @@
 <https://www.wikidata.org/wiki/Q75272347>
   # Hon. Lilah Constance Cavendish, 1884-03-20 - 1944-04-27
   gen:father <https://www.wikidata.org/wiki/Q712146> ;
-  gen:mother <grosvenor.ttl#Lady_Beatrice_Constance_Grosvenor> .
+  gen:mother <https://www.wikidata.org/wiki/Q75248708> .
   # oo 1903-07-08 Sir Mervyn Edward Manningham-Buller, 3rd Baronet, 1876-01-16 - 1956-08-22, https://www.wikidata.org/wiki/Q7528325 (courtenay.ttl)
 <https://www.wikidata.org/wiki/Q26419665>
   # John Compton Cavendish, 4th Baron Chesham, 1894-06-13 - 1952-04-26
   gen:father <https://www.wikidata.org/wiki/Q712146> ;
-  gen:mother <grosvenor.ttl#Lady_Beatrice_Constance_Grosvenor> .
+  gen:mother <https://www.wikidata.org/wiki/Q75248708> .
   # oo Margot Mills, d. 1985, daughter of John Layton Mills
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q26419665> , <#Margot_Mills> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q26419665> , <https://www.wikidata.org/wiki/Q75248739> ;
 	gen:startDate "1915-08-17" ;
 	gen:divorceDate "1937" .
   # oo Marion Caher Donoghue, d. 1973-09-06, daughter of Daniel Charles Donoghue
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q26419665> , <#Marion_Caher_Donoghue> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q26419665> , <https://www.wikidata.org/wiki/Q75248740> ;
 	gen:startDate "1938-10-20" .
 
 <https://www.wikidata.org/wiki/Q15989899>
   # John Charles Compton Cavendish, 5th Baron Chesham, 1916-06-18 - 1989-12-23
   gen:father <https://www.wikidata.org/wiki/Q26419665> ;
-  gen:mother <#Margot_Mills> .
+  gen:mother <https://www.wikidata.org/wiki/Q75248739> .
   # oo Mary Edmunds Marshall, 1917~ - 2007-03-05, daughter of David Gregory Marshall
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q15989899> , <#Mary_Edmunds_Marshall> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q15989899> , <https://www.wikidata.org/wiki/Q75253219> ;
 	gen:startDate "1937-09-28" .
 
 <https://www.wikidata.org/wiki/Q7025188>
   # Nicholas Charles Cavendish, 6th Baron Chesham, 1941-11-07 - 2009-08-27
   gen:father <https://www.wikidata.org/wiki/Q15989899> ;
-  gen:mother <#Mary_Edmunds_Marshall> .
-  # oo Susan Donne Beauchamp, b. 1944-03-14, daughter of Dr. Frederick Guy Beauchamp and oo Hon. Susan Silence North
+  gen:mother <https://www.wikidata.org/wiki/Q75253219> .
+  # oo Susan Donne Beauchamp, b. 1944-03-14 (montagu.ttl)
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q7025188> , <#Susan_Donne_Beauchamp> ;
-	gen:startDate "1965-11-04 divorced 1969" .
+    gen:spouse <https://www.wikidata.org/wiki/Q7025188> , <https://www.wikidata.org/wiki/Q75339463> ;
+	gen:startDate "1965-11-04" ;
+	gen:divorceDate "1969" .
   # oo Suzanne Adrienne Byrne, daughter of Alan Gray Byrne
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q7025188> , <#Suzanne_Adrienne_Byrne> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q7025188> , <https://www.wikidata.org/wiki/Q75334500> ;
 	gen:startDate "1973" .
 
 <https://www.wikidata.org/wiki/Q5076150>
   # Charles Grey Compton Cavendish, 7th Baron Chesham, b. 1974-11-11
   gen:father <https://www.wikidata.org/wiki/Q7025188> ;
-  gen:mother <#Suzanne_Adrienne_Byrne> .
+  gen:mother <https://www.wikidata.org/wiki/Q75334500> .
   # oo Sarah Elizabeth Dawson, daughter of Bruce Dawson
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q5076150> , <#Sarah_Elizabeth_Dawson> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q5076150> , <https://www.wikidata.org/wiki/Q75565185> ;
 	gen:startDate "2002" .
 
-<#Isabella_Alannah_Suzanne_Cavendish>
+<https://www.wikidata.org/wiki/Q75572829>
   # Hon. Isabella Alannah Suzanne Cavendish, b. 2004-04-12
   gen:father <https://www.wikidata.org/wiki/Q5076150> ;
-  gen:mother <#Sarah_Elizabeth_Dawson> .
-<#Oliver_Nicholas_Bruce_Cavendish>
+  gen:mother <https://www.wikidata.org/wiki/Q75565185> .
+<https://www.wikidata.org/wiki/Q75572827>
   # Hon. Oliver Nicholas Bruce Cavendish, b. 2007-02-15
   gen:father <https://www.wikidata.org/wiki/Q5076150> ;
-  gen:mother <#Sarah_Elizabeth_Dawson> .
-<#Ophelia_Elizabeth_Nicola_Cavendish>
+  gen:mother <https://www.wikidata.org/wiki/Q75565185> .
+<https://www.wikidata.org/wiki/Q76008161>
   # Hon. Ophelia Elizabeth Nicola Cavendish, b. 2010-09-30
   gen:father <https://www.wikidata.org/wiki/Q5076150> ;
-  gen:mother <#Sarah_Elizabeth_Dawson> .
+  gen:mother <https://www.wikidata.org/wiki/Q75565185> .
 
 
 # Duke of Newcastle-upon-Tyne
 <https://www.wikidata.org/wiki/Q1101373>
   gen:name "William Cavendish, 1st Duke of Newcastle-upon-Tyne"@en ;
   # 1st Viscount Mansfield, co. Nottingham 1620-10-29
-  # 1st Baron Cavendish of Bolsover, co. Derby, 1st Earl of Newcastle-on-Tyne 1628-03-07
+  # 1st Earl of Newcastle-on-Tyne, 1st Baron Cavendish of Bolsover, co. Derby 1628-03-07
   # 9th Baron Ogle 1629-04-18
   # 1st Marquess of Newcastle-on-Tyne 1643-10-27
-  # 1st Earl of Ogle, co. Northumberland, 1st Duke of Newcastle-upon-Tyne, co. Northumberland 1665-03-16
+  # 1st Duke of Newcastle-upon-Tyne, co. Northumberland, 1st Earl of Ogle, co. Northumberland 1665-03-16
   gen:birthDate "1592-12-06" ;
   gen:deathDate "1676-12-25" ;
   gen:father <https://www.wikidata.org/wiki/Q53350479> ;
   gen:mother <https://www.wikidata.org/wiki/Q75252113> .
-  # oo Elizabeth Basset, 1602b – 1643-04-17
+  # oo Elizabeth Basset, 1602b – 1643-04-17 (howard.ttl)
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q1101373> , <howard.ttl#Elizabeth_Bassett> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q1101373> , <https://www.wikidata.org/wiki/Q75252112> ;
 	gen:startDate "1618~" .
-  # oo Margaret Lucas, 1617 - 1673-12-15, daughter of https://www.wikidata.org/wiki/Q48170284 and Elizabeth Leighton
+  # oo Margaret Lucas, 1617 - 1673-12-15
   []
     gen:spouse <https://www.wikidata.org/wiki/Q1101373> , <https://www.wikidata.org/wiki/Q242640> ;
 	gen:startDate "1645-12~" .
@@ -941,29 +947,29 @@
 <https://www.wikidata.org/wiki/Q6151235>
   # Lady Jane Cavendish, 1621 - 1669-10-08
   gen:father <https://www.wikidata.org/wiki/Q1101373> ;
-  gen:mother <howard.ttl#Elizabeth_Bassett> .
+  gen:mother <https://www.wikidata.org/wiki/Q75252112> .
   # oo 1654 Charles Cheyne, 1st Viscount Newhaven, 1625-10-23 - 1698-06-30, https://www.wikidata.org/wiki/Q5076225
 <https://www.wikidata.org/wiki/Q5076149>
   # Charles Cavendish, Viscount Mansfield, 1626~ - 1659-06
   gen:father <https://www.wikidata.org/wiki/Q1101373> ;
-  gen:mother <howard.ttl#Elizabeth_Bassett> .
+  gen:mother <https://www.wikidata.org/wiki/Q75252112> .
   # oo Elizabeth Rogers, 1644~ - 1661-04-21
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q5076149> , <#Elizabeth_Rogers> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q5076149> , <https://www.wikidata.org/wiki/Q75243349> ;
 	gen:startDate "1659b" .
 <https://www.wikidata.org/wiki/Q5362712>
   gen:name "Lady Elizabeth Cavendish"@en ;
   gen:birthDate "1627~" ;
   gen:deathDate "1663-06-14" ;
   gen:father <https://www.wikidata.org/wiki/Q1101373> ;
-  gen:mother <howard.ttl#Elizabeth_Bassett> .
+  gen:mother <https://www.wikidata.org/wiki/Q75252112> .
   # oo 1641-07-22 John Egerton, 2nd Earl of Bridgwater, 1623-06 - 1686-10-26, https://www.wikidata.org/wiki/Q6231483
 <https://www.wikidata.org/wiki/Q3784912>
   gen:name "Henry Cavendish, 2nd Duke of Newcastle-upon-Tyne"@en ;
   gen:birthDate "1630-06-24" ;
   gen:deathDate "1691-07-26" ;
   gen:father <https://www.wikidata.org/wiki/Q1101373> ;
-  gen:mother <howard.ttl#Elizabeth_Bassett> .
+  gen:mother <https://www.wikidata.org/wiki/Q75252112> .
   # oo Frances Pierrepont, 1630-09-01 - 1695-09-23
   []
     gen:spouse <https://www.wikidata.org/wiki/Q3784912> , <https://www.wikidata.org/wiki/Q75385174> ;
@@ -971,7 +977,7 @@
 <https://www.wikidata.org/wiki/Q75431505>
   # Lady Frances Cavendish, d. 1678-08-15
   gen:father <https://www.wikidata.org/wiki/Q1101373> ;
-  gen:mother <howard.ttl#Elizabeth_Bassett> .
+  gen:mother <https://www.wikidata.org/wiki/Q75252112> .
   # oo 1654-11-24 Oliver St. John, 2nd Earl of Bolingbroke, 1634 - 1688-03-18, https://www.wikidata.org/wiki/Q21674887
 
 <https://www.wikidata.org/wiki/Q5363231>
@@ -1006,14 +1012,14 @@
   gen:father <https://www.wikidata.org/wiki/Q3784912> ;
   gen:mother <https://www.wikidata.org/wiki/Q75385174> .
   # oo 1690-03-01 John Holles, 1st Duke of Newcastle-upon-Tyne, 1662-01-09 - 1741-07-15, https://www.wikidata.org/wiki/Q6239616
-<#Lady_Catherine_Cavendish>
+<https://www.wikidata.org/wiki/Q75252772>
   gen:name "Lady Catharine Cavendish"@en ;
   gen:birthDate "1665-01-14" ;
   gen:deathDate "1712-04-20" ;
   gen:father <https://www.wikidata.org/wiki/Q3784912> ;
   gen:mother <https://www.wikidata.org/wiki/Q75385174> .
   # oo 1684-08-14 Thomas Tufton, 6th Earl of Thanet, 18th Baron de Clifford, 1644-08-30 - 1729-07-30, https://www.wikidata.org/wiki/Q7794584
-<#Lady_Arabella_Cavendish>
+<https://www.wikidata.org/wiki/Q75385172>
   gen:name "Lady Arabella Cavendish"@en ;
   gen:birthDate "1673-08-19" ;
   gen:deathDate "1698-06-04" ;
@@ -1023,18 +1029,22 @@
 
 
 # illegitimate descendants of Henry Cavendish, 1549~ - 1616-10-12
-<#Henry_Cavendish>
+<https://www.wikidata.org/wiki/Q75561558>
   # Henry Cavendish
   gen:father <https://www.wikidata.org/wiki/Q16011086> .
   # oo Bridget Willoughby
   []
-    gen:spouse <#Henry_Cavendish> , <willoughby.ttl#Bridget_Willoughby_(died_1624)> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75561558> , <https://www.wikidata.org/wiki/Q75627179> ;
 	gen:startDate "1610-10-14" .
 
 <https://www.wikidata.org/wiki/Q75504311>
   # Francis Cavendish, 1618 - 1650-06-17
-  gen:father <#Henry_Cavendish> ;
-  gen:mother <willoughby.ttl#Bridget_Willoughby_(died_1624)> .
+  gen:father <https://www.wikidata.org/wiki/Q75561558> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75627179> .
+  # oo Dorothy Bullock, daughter of John Bullock
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75504311> , <https://www.wikidata.org/wiki/Q75627167> ;
+	gen:startDate "1642-11-13" .
   # oo Dorothy Broughton, 1624 - 1658 (bagot.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75504311> , <https://www.wikidata.org/wiki/Q75504310> .
@@ -1043,17 +1053,21 @@
   # Henry Cavendish, 1648 - 1698-05-23
   gen:father <https://www.wikidata.org/wiki/Q75504311> ;
   gen:mother <https://www.wikidata.org/wiki/Q75504310> .
-  # oo Mary Tyrrell, daughter of Sir Timothy Tyrrell
+  # oo Mary Tyrrell, daughter of https://www.wikidata.org/wiki/Q75627193 Sir Timothy Tyrrell
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75488722> , <https://www.wikidata.org/wiki/Q75627165> .
 
-<#William_Cavendish_(born_1682)>
+<https://www.wikidata.org/wiki/Q75454930>
   # William Cavendish, b. 1682-09-20
   gen:father <https://www.wikidata.org/wiki/Q75488722> ;
   gen:mother <https://www.wikidata.org/wiki/Q75627165> .
   # oo Mary Tyrrell
   []
-    gen:spouse <#William_Cavendish_(born_1682)> , <#Mary_Tyrrell_2> .
+    gen:spouse <https://www.wikidata.org/wiki/Q75454930> , <https://www.wikidata.org/wiki/Q75454931> .
+  # oo Elizabeth Holt, daughter of James Holt and Dorothy Grantham
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75454930> , <https://www.wikidata.org/wiki/Q75627208> ;
+	gen:startDate "1709" .
 <https://www.wikidata.org/wiki/Q75488720>
   # Anne Cavendish, d. 1707-07-02
   gen:father <https://www.wikidata.org/wiki/Q75488722> ;
@@ -1062,12 +1076,12 @@
 
 <https://www.wikidata.org/wiki/Q16063924>
   # Sir Henry Cavendish, 1st Baronet, 1707-04-13 - 1776-05-31
-  # 1st Baronet Cavendish, of Doveridge, co. Derby 1755-05-07
-  gen:father <#William_Cavendish_(born_1682)> ;
-  gen:mother <#Mary_Tyrrell_2> .
+  # 1st Baronet Cavendish, of Doveridge, co. Derby [Great Britain] 1755-05-07
+  gen:father <https://www.wikidata.org/wiki/Q75454930> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75454931> .
   # oo Anne Pyne, 1708~ - 1748b, daughter of Henry Pyne and Anne Edgecumbe
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q16063924> , <#Anne_Pyne> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q16063924> , <https://www.wikidata.org/wiki/Q75276919> ;
 	gen:startDate "1730-01-09" .
   # oo Catherine Prittie, 1710~ - 1779-03-21 (butler.ttl)
   []
@@ -1077,20 +1091,20 @@
 <https://www.wikidata.org/wiki/Q7527113>
   # Sir Henry Cavendish, 2nd Baronet, 1732-09-13 - 1804-08-03
   gen:father <https://www.wikidata.org/wiki/Q16063924> ;
-  gen:mother <#Anne_Pyne> .
+  gen:mother <https://www.wikidata.org/wiki/Q75276919> .
   # oo Sarah Bradshaw, 1st Baroness Waterpark, 1740-04-01 - 1807-08-04
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7527113> , <https://www.wikidata.org/wiki/Q24288421> ;
 	gen:startDate "1757-08-05" .
-<#Pyne_Cavendish>
+<https://www.wikidata.org/wiki/Q75449875>
   # Pyne Cavendish
   gen:father <https://www.wikidata.org/wiki/Q16063924> ;
-  gen:mother <#Anne_Pyne> .
+  gen:mother <https://www.wikidata.org/wiki/Q75276919> .
   # oo 1766 Very Rev. Hon. Maurice Crosbie, 1733~ - 1809-06-28, https://www.wikidata.org/wiki/Q59656540 (fitzgerald.ttl)
 <https://www.wikidata.org/wiki/Q75276915>
   # Caroline Cavendish
   gen:father <https://www.wikidata.org/wiki/Q16063924> ;
-  gen:mother <#Anne_Pyne> .
+  gen:mother <https://www.wikidata.org/wiki/Q75276919> .
   # oo George Quin, 1729-02-23 - 1791, https://www.wikidata.org/wiki/Q75276914
 
 <https://www.wikidata.org/wiki/Q56867344>
@@ -1100,6 +1114,8 @@
   # oo 1783-12-20 Arthur Annesley, 1st Earl of Mountnorris, 1744-08-07 – 1816-07-04, https://www.wikidata.org/wiki/Q4797827
 <https://www.wikidata.org/wiki/Q16859199>
   # Richard Cavendish, 2nd Baron Waterpark, 1765-07-13 - 1830-06-01
+  # 3rd Baronet Cavendish, of Doveridge, co. Derby [G.B., 1755] 1804-08-03
+  # 2nd Baron Waterpark, of Waterpark, co. Cork [I., 1792] 1807-08-04
   gen:father <https://www.wikidata.org/wiki/Q7527113> ;
   gen:mother <https://www.wikidata.org/wiki/Q24288421> .
   # oo Juliana Cooper, 1767~ - 1847-10-11, daughter of Thomas Cooper
@@ -1144,10 +1160,12 @@
     gen:spouse <https://www.wikidata.org/wiki/Q75450530> , <https://www.wikidata.org/wiki/Q75450525> ;
 	gen:startDate "1917-06-18" .
 
+
 # ----
 <https://www.wikidata.org/wiki/Q61466310>
   # Alice Smith, d. 1515-11-12
-  gen:father <https://www.wikidata.org/wiki/Q61466318> .
+  gen:father <https://www.wikidata.org/wiki/Q61466318> ; # John Smith
+  gen:mother <https://www.wikidata.org/wiki/Q104471721> . # NN
   # oo Thomas Cavendish, 1472 - 1524, https://www.wikidata.org/wiki/Q61466309
 
 # ----
@@ -1157,15 +1175,16 @@
   # and Dorothy Perrot
   # oo Susan Pierson, b. 1565, daughter of William Pierson
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q5725644> , <#Susan_Pierson> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q5725644> , <https://www.wikidata.org/wiki/Q106072869> ;
 	gen:startDate "1584-02-22" .
 
 <https://www.wikidata.org/wiki/Q8015285>
   # William Maynard, 1st Baron Maynard, 1586-07-10 – 1640-12-17
-  # 1st Baronet Maynard, of Easton Parva, in the County of Essex 1611
-  # 1st Baron Maynard 1620
+  # 1st Baronet Maynard, of Easton Parva, in the County of Essex [England] 1611-06-29
+  # 1st Baron Maynard, of Wicklow [Ireland] 1620-05-30
+  # 1st Baron Maynard, of Estaines [England] 1628-03-14
   gen:father <https://www.wikidata.org/wiki/Q5725644> ;
-  gen:mother <#Susan_Pierson> .
+  gen:mother <https://www.wikidata.org/wiki/Q106072869> .
   # oo Hon. Frances Cavendish, 1593~ - 1613-09-01
   []
     gen:spouse <https://www.wikidata.org/wiki/Q8015285> , <https://www.wikidata.org/wiki/Q75251574> .
@@ -1176,7 +1195,7 @@
 <https://www.wikidata.org/wiki/Q76341924>
   # Charles Maynard, 1598~ - 1665-11-12
   gen:father <https://www.wikidata.org/wiki/Q5725644> ;
-  gen:mother <#Susan_Pierson> .
+  gen:mother <https://www.wikidata.org/wiki/Q106072869> .
   # oo Mary Corsellis, daughter of Zeager Corsellis
   []
     gen:spouse <https://www.wikidata.org/wiki/Q76341924> , <#Mary_Corsellis> .
@@ -1199,7 +1218,6 @@
   gen:mother <#Mary_Corsellis> .
 
 <https://www.wikidata.org/wiki/Q4853956>
-  owl:sameAs <https://www.wikidata.org/wiki/Q75253265> ;
   # Banastre Maynard, 3rd Baron Maynard, 1642~ - 1718-03-03
   gen:father <https://www.wikidata.org/wiki/Q24205941> ;
   gen:mother <https://www.wikidata.org/wiki/Q75261357> .
@@ -1208,16 +1226,25 @@
     gen:spouse <https://www.wikidata.org/wiki/Q4853956> , <https://www.wikidata.org/wiki/Q75261362> ;
 	gen:startDate "1665-11-09" .
 
+<https://www.wikidata.org/wiki/Q5080750>
+  # Charles Maynard, 1st Viscount Maynard, 1690 - 1775-06-30
+  # 4th Baronet Maynard [E., 1611],
+  # 4th Baron Maynard [I., 1620]
+  # 4th Baron Maynard [E., 1628] 1718-03-03
+  # 1st Viscount Maynard, of Easton Lodge in the County of Essex, Baron Maynard, of Much Easton in the County of Essex [Great Britain] 1766
+  gen:father <https://www.wikidata.org/wiki/Q4853956> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75261362> .
 <https://www.wikidata.org/wiki/Q75253263>
   # Hon. Annabella Maynard, 1675~ - 1734-08-08
   gen:father <https://www.wikidata.org/wiki/Q4853956> ;
   gen:mother <https://www.wikidata.org/wiki/Q75261362> .
   # oo 1691 Sir William Lowther, 1st Baronet, of Swillington, 1663-06-08 – 1729-03-06, https://www.wikidata.org/wiki/Q7529666
 
+
 # Baronet Maynard, of Walthamstow
 <https://www.wikidata.org/wiki/Q76341922>
   # Sir William Maynard, 1st Baronet, 1641-10-06 - 1685-11-07
-  # 1st Baronet Maynard, of Walthamstow in the County of Essex 1681-02-01
+  # 1st Baronet Maynard, of Walthamstow in the County of Essex [England] 1681-02-01
   gen:father <https://www.wikidata.org/wiki/Q76341924> ;
   gen:mother <#Mary_Corsellis> .
   # oo Mary Baynbrigg, daughter of William Baynbrigg
@@ -1258,10 +1285,12 @@
   # Rev. Henry Maynard, 1758-10-30 - 1806-05
   gen:father <https://www.wikidata.org/wiki/Q7529683> ;
   gen:mother <https://www.wikidata.org/wiki/Q76002020> .
+  # oo Susan Barnard 
 
 <https://www.wikidata.org/wiki/Q16065897>
   # Henry Maynard, 3rd Viscount Maynard, 1788-03-13 - 1865-05-19
   gen:father <https://www.wikidata.org/wiki/Q76341919> .
+  # and Susan Barnard 
   # oo Mary Rabett, 1794 - 1857-10-22 (stanhope.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q16065897> , <https://www.wikidata.org/wiki/Q75264351> ;
@@ -1296,16 +1325,50 @@
   gen:mother <https://www.wikidata.org/wiki/Q75250564> .
   # oo 1886-08-31 Lord Algernon Charles Gordon-Lennox, 1847-09-19 - 1921-10-03, https://www.wikidata.org/wiki/Q75253441 (lennox.ttl)
 
-# ----
-#<https://www.wikidata.org/wiki/Q2158611>
+# ====
+#<https://www.wikidata.org/wiki/Q6315297>
+  # Richard Rich, 1st Baron Rich, 1496~ - 1567-06-12
+  # 1st Baron Rich, of Leeze, Essex [England] 1548-02-26
+  # son of Richard Rich
+  # and Joan Dingley
+  # oo Elizabeth Jenks, 1510 - 1558-12-12, daughter of William Jenks and Elizabeth Adam
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6315297> , <https://www.wikidata.org/wiki/Q67471709> ;
+	gen:startDate "1535" .
+
+<https://www.wikidata.org/wiki/Q75497727>
+  # Frances Rich, d. 1580b
+  gen:father <https://www.wikidata.org/wiki/Q6315297> ;
+  gen:mother <https://www.wikidata.org/wiki/Q67471709> .
+  # oo John Darcy, 2nd Baron Darcy of Chiche, 1532~ - 1581-03-03, https://www.wikidata.org/wiki/Q75497721 (de_vere.ttl)
+<https://www.wikidata.org/wiki/Q75274534>
+  # Winifred Rich, d. 1578-11a
+  gen:father <https://www.wikidata.org/wiki/Q6315297> ;
+  gen:mother <https://www.wikidata.org/wiki/Q67471709> .
+  # oo 1555 Sir Henry Dudley, 1531~ – 1557-08-10, https://www.wikidata.org/wiki/Q18528505 (sutton.ttl)
+<https://www.wikidata.org/wiki/Q75495164>
+  # Robert Rich, 2nd Baron Rich, 1537 - 1581-02-27
+  gen:father <https://www.wikidata.org/wiki/Q6315297> ;
+  gen:mother <https://www.wikidata.org/wiki/Q67471709> .
+  # oo Elizabeth Baldry, d. 1591, daughter of George Baldry
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75495164> , <https://www.wikidata.org/wiki/Q75495167> .
+
+<https://www.wikidata.org/wiki/Q2158611>
   # Robert Rich, 1st Earl of Warwick, 1559-12 - 1619-03-24
-  # 1st Earl of Warwick 1618
-  # son of Robert Rich, 2nd Baron Rich and Elizabeth Baldry
+  # 3rd Baron Rich, of Leeze, Essex 1581-02-27
+  # 1st Earl of Warwick [England] 1618
+  gen:father <https://www.wikidata.org/wiki/Q75495164> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75495167> .
   # oo Lady Penelope Devereux, 1561a - 1607-07-07
   []
     gen:spouse <https://www.wikidata.org/wiki/Q2158611> , <https://www.wikidata.org/wiki/Q4275949> ;
 	gen:startDate "1581-10~" ;
 	gen:divorceDate "1605" .
+  # oo Frances Wray, d. 1634~, daughter of Sir Christopher Wray and Ann Girlington
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2158611> , <https://www.wikidata.org/wiki/Q76287129> ;
+	gen:startDate "1616-12-21" .
 
 <https://www.wikidata.org/wiki/Q47236555>
   # Essex Rich, b. 1585~
@@ -1318,12 +1381,19 @@
   gen:mother <https://www.wikidata.org/wiki/Q4275949> .
   # oo Frances Hatton, 1590 – 1623/1634-08, daughter of Sir William Hatton and Elizabeth Gundi
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q741503> , <#Frances_Hatton> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q741503> , <https://www.wikidata.org/wiki/Q75330513> ;
 	gen:startDate "1605-02" .
+  # oo Susan Rowe, d. 1645-01-16, daughter of Sir Henry Rowe
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q741503> , <https://www.wikidata.org/wiki/Q76154468> .
+  # oo Eleanor Wortley, d. 1666-01-20 (berkeley.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q741503> , <https://www.wikidata.org/wiki/Q75982049> ;
+	gen:startDate "1646-03-30" .
 <https://www.wikidata.org/wiki/Q3131912>
   # Henry Rich, 1st Earl of Holland, 1590-08-19 - 1649-03-09
-  # 1st Baron Kensington 1623-03-08
-  # 1st Earl of Holland 1624-09-15
+  # 1st Baron Kensington [England] 1623-03-08
+  # 1st Earl of Holland [England] 1624-09-15
   gen:father <https://www.wikidata.org/wiki/Q2158611> ;
   gen:mother <https://www.wikidata.org/wiki/Q4275949> .
   # oo Isabel Cope, d. 1655-08~
@@ -1339,12 +1409,12 @@
 <https://www.wikidata.org/wiki/Q50230551>
   # Lady Anne Rich, 1604 - 1642-02-14
   gen:father <https://www.wikidata.org/wiki/Q741503> ;
-  gen:mother <#Frances_Hatton> .
+  gen:mother <https://www.wikidata.org/wiki/Q75330513> .
   # oo 1625-07-01 Edward Montagu, 2nd Earl of Manchester, 1602 - 1671-05-05, https://www.wikidata.org/wiki/Q2702018
 <https://www.wikidata.org/wiki/Q377318>
   # Robert Rich, 3rd Earl of Warwick, 1611-06-28 – 1659-05-29
   gen:father <https://www.wikidata.org/wiki/Q741503> ;
-  gen:mother <#Frances_Hatton> .
+  gen:mother <https://www.wikidata.org/wiki/Q75330513> .
   # oo Lady Anne Cavendish, 1611~ - 1638-08-24
   []
     gen:spouse <https://www.wikidata.org/wiki/Q377318> , <https://www.wikidata.org/wiki/Q47237783> ;
@@ -1356,17 +1426,17 @@
 <https://www.wikidata.org/wiki/Q3666584>
   # Charles Rich, 4th Earl of Warwick, 1623~ – 1673-08-24
   gen:father <https://www.wikidata.org/wiki/Q741503> ;
-  gen:mother <#Frances_Hatton> .
+  gen:mother <https://www.wikidata.org/wiki/Q75330513> .
   # oo Lady Mary Boyle, 1625-11-08 - 1678-04-12
   []
     gen:spouse <https://www.wikidata.org/wiki/Q3666584> , <https://www.wikidata.org/wiki/Q6780600> ;
 	gen:startDate "1641-07-21" .
-<#Lady_Susan_Rich>
-  # Lady Susan Rich, d. 1649
+<https://www.wikidata.org/wiki/Q19325511>
+  # Lady Susanna Rich, 1627 - 1649-05-19
   gen:father <https://www.wikidata.org/wiki/Q3131912> ;
   gen:mother <https://www.wikidata.org/wiki/Q50322914> .
   # oo 1646-12-01 James Howard, 3rd Earl of Suffolk, 1620-02-10 - 1689-01-07, https://www.wikidata.org/wiki/Q1431407
-<#Lady_Frances_Rich>
+<https://www.wikidata.org/wiki/Q75311928>
   # Lady Frances Rich, 1617~ - 1672-11-12
   gen:father <https://www.wikidata.org/wiki/Q3131912> ;
   gen:mother <https://www.wikidata.org/wiki/Q50322914> .
@@ -1381,7 +1451,7 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q3938405> , <https://www.wikidata.org/wiki/Q75330493> ;
 	gen:startDate "1668-04b" .
-<#Lady_Isabella_Rich>
+<https://www.wikidata.org/wiki/Q75399470>
   # Lady Isabella Rich, b. 1623-10-06
   gen:father <https://www.wikidata.org/wiki/Q3131912> ;
   gen:mother <https://www.wikidata.org/wiki/Q50322914> .
@@ -1402,25 +1472,27 @@
   gen:father <https://www.wikidata.org/wiki/Q377318> ;
   gen:mother <https://www.wikidata.org/wiki/Q47236638> .
   # oo 1673-12-11 Henry St John, 1st Viscount St John, 1652-10-17b - 1742-04-08, https://www.wikidata.org/wiki/Q16847367
-<#Charles_Rich,_Lord_Rich>
+<https://www.wikidata.org/wiki/Q75672783>
   # Charles Rich, Lord Rich, 1643 - 1664-05-16
   gen:father <https://www.wikidata.org/wiki/Q3666584> ;
   gen:mother <https://www.wikidata.org/wiki/Q6780600> .
   # oo Lady Anne Cavendish, 1649~ – 1704
   []
-    gen:spouse <#Charles_Rich,_Lord_Rich> , <https://www.wikidata.org/wiki/Q45826222> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75672783> , <https://www.wikidata.org/wiki/Q45826222> ;
 	gen:startDate "1662" .
 <https://www.wikidata.org/wiki/Q75784512>
   # Lady Elizabeth Rich, d. 1725-05-14
   gen:father <https://www.wikidata.org/wiki/Q3938405> ;
   gen:mother <https://www.wikidata.org/wiki/Q75330493> .
   # oo Francis Edwardes, d. 1725, https://www.wikidata.org/wiki/Q75420534
+
 # ----
 <https://www.wikidata.org/wiki/Q50322914>
   # Isabel Cope, d. 1655-08~
-  gen:father <https://www.wikidata.org/wiki/Q7964595> .
-  # and Dorothy Grenville
+  gen:father <https://www.wikidata.org/wiki/Q7964595> ; # Walter Cope
+  gen:mother <https://www.wikidata.org/wiki/Q75495174> . # Dorothy Grenville
   # oo 1616b Henry Rich, 1st Earl of Holland, 1590-08-19 - 1649-03-09, https://www.wikidata.org/wiki/Q3131912
+
 # ----
 #<https://www.wikidata.org/wiki/Q7788373>
   # Sir Thomas Cheeke, 1570-01-07 - 1659-03
@@ -1435,11 +1507,12 @@
   # oo Richard Rogers, 1611~ – 1643, https://www.wikidata.org/wiki/Q7328719
   # oo 1638a Robert Rich, 3rd Earl of Warwick, 1611-06-28 – 1659-05-29, https://www.wikidata.org/wiki/Q377318
   # oo 1683a Richard Burke, 8th Earl of Clanricarde, 1639~ - 1702/1704, https://www.wikidata.org/wiki/Q7324460 (burke.ttl)
-<#Essex_Cheeke>
+<https://www.wikidata.org/wiki/Q75330652>
   # Essex Cheeke, d. 1658-09-28
   gen:father <https://www.wikidata.org/wiki/Q7788373> ;
   gen:mother <https://www.wikidata.org/wiki/Q47236555> .
   # oo 1642-12-30 Edward Montagu, 2nd Earl of Manchester, 1602 - 1671-05-05, https://www.wikidata.org/wiki/Q2702018
+
 # ----
 #<https://www.wikidata.org/wiki/Q75420534>
   # Francis Edwardes, d. 1725
@@ -1453,19 +1526,22 @@
   gen:mother <https://www.wikidata.org/wiki/Q75784512> .
   # oo 1744 Essex Meyrick, of Bush, d. 1762-05-21, egerton.ttl#Essex_Meyrick_(died_1762)
 
+# ====
+
 # ----
-<#Rhoda_Cartwright>
+<https://www.wikidata.org/wiki/Q75250266>
   # Rhoda Cartwright, d. 1730-01-24
-  gen:father <https://www.wikidata.org/wiki/Q8006609> .
+  gen:father <https://www.wikidata.org/wiki/Q8006609> . # William Cartwright
   # oo 1696-08-03 Lord Henry Cavendish, 1673 - 1700-05-10, https://www.wikidata.org/wiki/Q6679337
 
 # ----
-<#Anne_Yale>
+<https://www.wikidata.org/wiki/Q75250269>
   # Anne Yale, d. 1734-06-27
-  gen:father <https://www.wikidata.org/wiki/Q514846> .
+  gen:father <https://www.wikidata.org/wiki/Q514846> ; # Elihu Yale
+  gen:mother <https://www.wikidata.org/wiki/Q96075655> . # Catherine Elford
   # oo 1708-07-06 Lord James Cavendish, 1674 - 1751-12-14, https://www.wikidata.org/wiki/Q6679415
 
-# ----
+# ====
 #<https://www.wikidata.org/wiki/Q6249407>
   # John Morgan, 1670-01-04 - 1716b,
   # son of William Morgan
@@ -1501,7 +1577,7 @@
   # Sir Charles Morgan, 1st Baronet, d. 1806-12-06
   # Charles Gould
   # Charles Morgan 1792-11-16
-  # 1st Baronet Morgan 1792-11-15
+  # 1st Baronet Morgan [Great Britain] 1792-11-15
   # son of King Gould
   # oo Jane Morgan, 1731-06-10 - 1797-02-14
   []
@@ -1520,7 +1596,7 @@
 <https://www.wikidata.org/wiki/Q5081069>
   # Charles Morgan Robinson Morgan, 1st Baron Tredegar, 1792-04-10 – 1875-04-16
   # 3rd Baronet Morgan 1846-12-05
-  # 1st Baron Tredegar 1859-04-16
+  # 1st Baron Tredegar [U.K.] 1859-04-16
   gen:father <https://www.wikidata.org/wiki/Q7526262> ;
   gen:mother <https://www.wikidata.org/wiki/Q75350019> .
   # oo Rosamund Mundy, 1810~ - 1883-01-03 (compton.ttl)
@@ -1528,6 +1604,13 @@
     gen:spouse <https://www.wikidata.org/wiki/Q5081069> , <https://www.wikidata.org/wiki/Q75341374> ;
 	gen:startDate "1827-10-06" .
 
+<https://www.wikidata.org/wiki/Q5576507>
+  # Godfrey Charles Morgan, 1st Viscount Tredegar, 1831-04-28 - 1913-03-11
+  # 4th Baronet Morgan [G.B., 1792],
+  # 2nd Baron Tredegar [U.K., 1859] 1875-04-16
+  # 1st Viscount Tredegar, of Tredegar, co. Monmouth [U.K.] 1905-08-04
+  gen:father <https://www.wikidata.org/wiki/Q5081069> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75341374> .
 <https://www.wikidata.org/wiki/Q75588333>
   # Hon. Georgiana Charlotte Morgan, d. 1886-04-22
   gen:father <https://www.wikidata.org/wiki/Q5081069> ;
@@ -1555,40 +1638,74 @@
 
 <https://www.wikidata.org/wiki/Q5178471>
   # Courtenay Charles Evan Morgan, 1st Viscount Tredegar, 1867-04-10 - 1934-05-03
-  # 3rd Baron Tredegar, 5th Baronet Morgan 1913-03-11
-  # 1st Viscount Tredegar, of Tredegar, co. Monmouth 1926-08-04
+  # 5th Baronet Morgan [G.B., 1792],
+  # 3rd Baron Tredegar [U.K., 1859] 1913-03-11
+  # 1st Viscount Tredegar, of Tredegar, co. Monmouth [U.K.] 1926-08-04
   gen:father <https://www.wikidata.org/wiki/Q5497586> ;
   gen:mother <https://www.wikidata.org/wiki/Q75341371> .
   # oo Lady Katharine Agnes Blanche Carnegie, 1867-06-12 - 1949-10-04
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5178471> , <https://www.wikidata.org/wiki/Q75312669> ;
 	gen:startDate "1890-08-05" .
+<https://www.wikidata.org/wiki/Q42576396>
+  # Frederic George Morgan, 5th Baron Tredegar, 1873-11-22 - 1954-08-21
+  gen:father <https://www.wikidata.org/wiki/Q5497586> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75341371> .
+  # oo Dorothy Syssyllt Bassett, 1879 - 1929-10-01, daughter of Ralph Thurstan Bassett and Augusta Maria Tyler
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q42576396> , <https://www.wikidata.org/wiki/Q75341326> ;
+	gen:startDate "1898-04-14" ;
+	gen:divorceDate "1921" .
+
+<https://www.wikidata.org/wiki/Q5415495>
+  # Evan Frederick Morgan, 2nd Viscount Tredegar, 1893-07-13 - 1949-04-27
+  gen:father <https://www.wikidata.org/wiki/Q5178471> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75312669> .
+  # oo Hon. Lois Sturt, 1900-08-25 - 1937-09-18 (bingham.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5415495> , <https://www.wikidata.org/wiki/Q47452414> ;
+	gen:startDate "1928-04-01" .
+  # oo Olga Sergeivna Dolgorouky, 1915 - 1998, daughter of Sergey Dolgorukov and Irina Naryshkina
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5415495> , <https://www.wikidata.org/wiki/Q75785599> ;
+	gen:startDate "1939-03-13" .
+<https://www.wikidata.org/wiki/Q26434863>
+  # Frederick Charles John Morgan, 6th Baron Tredegar, 1908-10-26 - 1962-11-17
+  gen:father <https://www.wikidata.org/wiki/Q42576396> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75341326> .
+  # oo Joanna Law-Smith, 1912~ - 2002
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q26434863> , <https://www.wikidata.org/wiki/Q75341336> ;
+	gen:startDate "1954-12-05" .
 
 # ----
-<#Sarah_Fawkener>
+#<https://www.wikidata.org/wiki/Q75341336>
+  # Joanna Law-Smith, 1912~ - 2002
+  # daughter of Walter Henry Law-Smith
+  # and Agnes Giles
+  # oo 1954-12-05 Frederick Charles John Morgan, 6th Baron Tredegar, 1908-10-26 - 1962-11-17, https://www.wikidata.org/wiki/Q26434863
+  # oo 1967-09-01 Charles John Halswell Kemeys-Tynte, 9th Baron Wharton, 1908-01-12 - 1969-07-11, https://www.wikidata.org/wiki/Q6242769 (talbot.ttl)
+
+# ====
+
+# ----
+<https://www.wikidata.org/wiki/Q75249410>
   # Sarah Fawkener, 1789-05-27 - 1817-10-31
-  gen:father <https://www.wikidata.org/wiki/Q8004690> .
-  # and Elizabeth Wright
+  gen:father <https://www.wikidata.org/wiki/Q8004690> ; # William Fawkener
+  gen:mother <https://www.wikidata.org/wiki/Q76321192> . # Elizabeth Wright
   # oo 1811-10-24 Hon. Henry Frederick Compton Cavendish, 1789-11-05 - 1873-04-05, https://www.wikidata.org/wiki/Q5719237
 
 # ----
-<#Lady_Eleanor_Sophia_Diana_FitzGibbon>
-  # Lady Eleanor Sophia Diana FitzGibbon, 1823 - 1915
-  gen:father <https://www.wikidata.org/wiki/Q24568588> .
-  # and Diana Woodcock
-  # oo 1856-04-24 (div 1866) Francis William Henry Cavendish, 1820-02-06 - 1893-01-12, cavendish.ttl#Francis_William_Henry_Cavendish
-
-# ----
-<#Louisa_C._Cockburn>
+<https://www.wikidata.org/wiki/Q75252732>
   # Louisa C. Cockburn, 1839 - 1869-04-25
-  gen:father <https://www.wikidata.org/wiki/Q334467> .
-  # and Elizabeth Ann Louisa Dalley Godfrey
+  gen:father <https://www.wikidata.org/wiki/Q334467> ; # Sir Alexander Cockburn, 12th Baronet
+  gen:mother <https://www.wikidata.org/wiki/Q76111050> . # Elizabeth Ann Louisa Dalley Godfrey
   # oo 1863-06-25 Charles William Cavendish, 1822-09-24 - 1890-12-21, https://www.wikidata.org/wiki/Q75249420
 
 # ----
 #<https://www.wikidata.org/wiki/Q7529640>
   # William James, 1st Baronet, 1721~ – 1783-12-16
-  # 1st Baronet James, of Eltham Park, co. Kent 1778-07-25
+  # 1st Baronet James, of Eltham Park, co. Kent [Great Britain] 1778-07-25
   # oo Anne Goddard, d. 1789-08-09, daughter of Edmond Goddard and Elizabeth Goddard
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7529640> , <https://www.wikidata.org/wiki/Q76275215> ;
@@ -1600,9 +1717,51 @@
   gen:mother <https://www.wikidata.org/wiki/Q76275215> .
   # oo 1783-12-24 Thomas Boothby Parkyns, 1st Baron Rancliffe, 1755-07-24 - 1800-11-17, https://www.wikidata.org/wiki/Q19282434
 # ----
-#<https://www.wikidata.org/wiki/Q19282434>
+#<https://www.wikidata.org/wiki/Q76275018>
+  # Sir Thomas Parkyns, 1st Baronet, 1639-07-07 - 1684-07-15
+  # 1st Baronet Parkyns, of Bunny, co. Nottingham [England] 1681-05-18
+  # son of Isham Parkyns
+  # and Katherine Cave
+  # oo Anne Cressy, 1644~ - 1726-01-11, daughter of daughter of Thomas Cressy and Elizabeth Glemham
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76275018> , <https://www.wikidata.org/wiki/Q76275030> ;
+	gen:startDate "1662" .
+
+<https://www.wikidata.org/wiki/Q18530845>
+  # Sir Thomas Parkyns, 2nd Baronet, 1662-11-10 - 1741-03-29
+  gen:father <https://www.wikidata.org/wiki/Q76275018> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76275030> .
+  # oo Elizabeth Sampson, daughter of John Sampson
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q18530845> , <https://www.wikidata.org/wiki/Q18530845> .
+  # oo Jane Barnat, 1707 - 1740-08-27
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q18530845> , <https://www.wikidata.org/wiki/Q76275042> ;
+	gen:startDate "1728-02-07" .
+
+<https://www.wikidata.org/wiki/Q76275016>
+  # Sir Thomas Parkyns, 3rd Baronet, 1728-12-08 - 1806-03-17
+  gen:father <https://www.wikidata.org/wiki/Q18530845> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76275042> .
+  # oo Jane Parkyns, 1710 - 1760-12-24, daughter of Thomas Parkyns and Elizabeth Woodroff
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76275016> , <https://www.wikidata.org/wiki/Q76275040> ;
+	gen:startDate "1747-04-07" .
+  # oo Sarah Smith, daughter of Daniel Smith
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76275016> , <https://www.wikidata.org/wiki/Q76275051> ;
+	gen:startDate "1765" .
+  # oo Jane Boultbee, daughter of Thomas Boultbee
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76275016> , <https://www.wikidata.org/wiki/Q76275058> ;
+	gen:startDate "1796-09-01" .
+
+<https://www.wikidata.org/wiki/Q19282434>
   # Thomas Boothby Parkyns, 1st Baron Rancliffe, 1755-07-24 - 1800-11-17
-  # 1st Baron Rancliffe 1795-10-01
+  # 1st Baron Rancliffe, of Rancliffe [Ireland] 1795-10-01
+  # 4th Baronet Parkyns, of Bunny, co. Nottingham 1806-03-17
+  gen:father <https://www.wikidata.org/wiki/Q76275016> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76275040> .
   # oo Elizabeth Anne James, 1766 - 1797-01-18
   []
     gen:spouse <https://www.wikidata.org/wiki/Q19282434> , <https://www.wikidata.org/wiki/Q76275060> ;
@@ -1614,72 +1773,125 @@
   gen:mother <https://www.wikidata.org/wiki/Q76275060> .
   # oo 1810-12-03 Sir Richard Levinge, 6th Baronet, 1785-10-29 - 1848-09-12, https://www.wikidata.org/wiki/Q75887288 (hastings.ttl)
 <https://www.wikidata.org/wiki/Q76146686>
-  # Hon. Henrietta Elizabeth Parkyns. 1789-07-01 - 1830-09-08
+  # Hon. Henrietta Elizabeth Parkyns, 1789-07-01 - 1830-09-08
   gen:father <https://www.wikidata.org/wiki/Q19282434> ;
   gen:mother <https://www.wikidata.org/wiki/Q76275060> .
   # oo 1809-07-13 Sir William Rumbold, 3rd Baronet, 1787-05-22 - 1833-08-24, https://www.wikidata.org/wiki/Q76146676
 # ----
+#<https://www.wikidata.org/wiki/Q7529255>
+  # Sir Thomas Rumbold, 1st Baronet, 1736-01-15 - 1791-11-11
+  # 1st Baronet Rumbold, of Woodhall, Watton, Hertford [Great Britain] 1779-03-27
+  # son of William Rumbold
+  # and Dorothy Cheney
+  # oo Frances Berriman, d. 1764-08-19~, daughter of James Berriman and Frances Aspinwall
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7529255> , <https://www.wikidata.org/wiki/Q76146596> ;
+	gen:startDate "1756-06-22" .
+  # oo Joanna Law, 1753-11-25 - 1823-01-04, daughter of Rt. Rev. Edmund Law and Mary Christian
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7529255> , <https://www.wikidata.org/wiki/Q75490520> ;
+	gen:startDate "1772-05-02" .
+
+<https://www.wikidata.org/wiki/Q14946958>
+  # Sir George Berriman Rumbold, 2nd Baronet, 1764-08-17 - 1807-12-15
+  gen:father <https://www.wikidata.org/wiki/Q7529255> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76146596> .
+  # oo Caroline Hearn, d. 1826-05-16, daughter of James Hearn
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q14946958> , <https://www.wikidata.org/wiki/Q76146675> ;
+	gen:startDate "1783-11" .
+
 <https://www.wikidata.org/wiki/Q76146676>
   # Sir William Rumbold, 3rd Baronet, 1787-05-22 - 1833-08-24
-  gen:father <https://www.wikidata.org/wiki/Q14946958> ; # Sir George Berriman Rumbold, 2nd Baronet
-  gen:mother <https://www.wikidata.org/wiki/Q76146675> . # and Caroline Hearn
+  gen:father <https://www.wikidata.org/wiki/Q14946958> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76146675> .
   # oo Hon. Henrietta Elizabeth Parkyns. 1789-07-01 - 1830-09-08
   []
     gen:spouse <https://www.wikidata.org/wiki/Q76146676> , <https://www.wikidata.org/wiki/Q76146686> ;
 	gen:startDate "1809-07-13" .
 
+<https://www.wikidata.org/wiki/Q76146687>
+  # Sir Cavendish Stuart Rumbold, 4th Baronet, 1815-08-26 - 1853-03-27
+  gen:father <https://www.wikidata.org/wiki/Q76146676> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76146686> .
+  # oo Mary Harcourt Manby, d. 1850, daughter of unknown Manby
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76146687> , <https://www.wikidata.org/wiki/Q76146691> ;
+	gen:startDate "1836" .
+<https://www.wikidata.org/wiki/Q41539139>
+  # Sir Arthur Carlos Henry Rumbold, 5th Baronet, 1820-09-25 - 1869-06-12
+  gen:father <https://www.wikidata.org/wiki/Q76146676> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76146686> .
+  # oo Antoinette de Kerven, d. 1867-11-27, daughter of Commandant Antoine de Kerven
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q41539139> , <https://www.wikidata.org/wiki/Q76146694> ;
+	gen:startDate "1846-01" .
+  # oo Helen Eliza Hopewell, d. 1921-09-20, daughter of Edward Hopewell
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q41539139> , <https://www.wikidata.org/wiki/Q75594793> ;
+	gen:startDate "1868-08-18" .
+<https://www.wikidata.org/wiki/Q76146696>
+  # Sir Charles Hale Rumbold, 7th Baronet, 1822-10-12 - 1877-08-28
+  gen:father <https://www.wikidata.org/wiki/Q76146676> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76146686> .
 <https://www.wikidata.org/wiki/Q75619124>
   # Emily Victorine Elizabeth Rumbold, 1824-10-13 - 1904-09-11
   gen:father <https://www.wikidata.org/wiki/Q76146676> ;
   gen:mother <https://www.wikidata.org/wiki/Q76146686> .
   # oo 1848-10-16 George Henry Cavendish, 1824-01-09 - 1889-01-21, https://www.wikidata.org/wiki/Q75249422
-
-# ----
-#<https://www.wikidata.org/wiki/Q75331286>
-  # Angus Alexander Mackintosh of Mackintosh, younger, 1885 - 1918-10-13
-  # son of Alfred Donald Mackintosh, 28th of Mackintosh
-  # and Harriet Diana Arabella Mary Richards
-  # oo Lady Maud Louisa Emma Cavendish, 1896-04-20 - 1975-03-30
+<https://www.wikidata.org/wiki/Q7527276>
+  # Sir Horace Rumbold, 8th Baronet, 1829-07-02 - 1913-11-03
+  gen:father <https://www.wikidata.org/wiki/Q76146676> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76146686> .
+  # oo Caroline Barney Harrington, d. 1872-12-26, daughter of George Harrington
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q75331286> , <https://www.wikidata.org/wiki/Q75249433> ;
-	gen:startDate "1917-11-03" .
+    gen:spouse <https://www.wikidata.org/wiki/Q7527276> , <https://www.wikidata.org/wiki/Q7526016> ;
+	gen:startDate "1867-07-15" .
 
-<https://www.wikidata.org/wiki/Q75331255>
-  # Anne Peace Arabella Mackintosh, 1918-09-24 - 2002
-  gen:father <https://www.wikidata.org/wiki/Q75331286> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75249433> .
-  # oo 1954-02-03 John Henry Montagu Douglas Scott, 1911-04-12 - 1991-10-13, https://www.wikidata.org/wiki/Q75331252
+<https://www.wikidata.org/wiki/Q76146695>
+  # Sir Arthur Victor Raoul Anduze Rumbold, 6th Baronet, 1869-07-24 - 1877-06-16
+  gen:father <https://www.wikidata.org/wiki/Q41539139> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75594793> .
+<https://www.wikidata.org/wiki/Q831742>
+  # Sir Horace George Montagu Rumbold, 9th Baronet, 1869-02-05 – 1941-05-24
+  gen:father <https://www.wikidata.org/wiki/Q7527276> ;
+  gen:mother <https://www.wikidata.org/wiki/Q7526016> .
+  # oo Etheldred Constantia Fane, d. 1964-10-23
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q831742> , <https://www.wikidata.org/wiki/Q76146790> ;
+	gen:startDate "1905-07-18" .
 
 # ----
 #<https://www.wikidata.org/wiki/Q6226460>
   # John Patteson Cobbold, 1831-07-12 – 1875-12-10
   # oo Adela Harriette Dupuis, 1837 – 1917
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q6226460> , <#Adela_Harriette_Dupuis> .
+    gen:spouse <https://www.wikidata.org/wiki/Q6226460> , <https://www.wikidata.org/wiki/Q75610189> .
 
-<#John_Dupuis_Cobbold>
+<https://www.wikidata.org/wiki/Q75339949>
   # John Dupuis Cobbold, 1861 - 1929-06-12
   gen:father <https://www.wikidata.org/wiki/Q6226460> ;
-  gen:mother <#Adela_Harriette_Dupuis> .
+  gen:mother <https://www.wikidata.org/wiki/Q75610189> .
   # oo Lady Evelyn Murray, 1867 - 1963-01-25
   []
-    gen:spouse <#John_Dupuis_Cobbold> , <https://www.wikidata.org/wiki/Q2784501> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75339949> , <https://www.wikidata.org/wiki/Q2784501> ;
 	gen:startDate "1891-04-23" .
 
-<#Ivan_John_Murray_Cobbold>
+<https://www.wikidata.org/wiki/Q75393387>
   # Ivan John Murray Cobbold, 1897-01-28 - 1944-06-18
-  gen:father <#John_Dupuis_Cobbold> ;
+  gen:father <https://www.wikidata.org/wiki/Q75339949> ;
   gen:mother <https://www.wikidata.org/wiki/Q2784501> .
   # oo Lady Blanche Katherine Cavendish, 1898-02-02 - 1987
   []
-    gen:spouse <#Ivan_John_Murray_Cobbold> , <#Lady_Blanche_Katherine_Cavendish> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75393387> , <https://www.wikidata.org/wiki/Q75393390> ;
 	gen:startDate "1919-04-30" .
 
 # ----
 <https://www.wikidata.org/wiki/Q128985>
   # Maurice Harold Macmillan, 1st Earl of Stockton, 1894-02-10 - 1986-12-29
-  gen:father <https://www.wikidata.org/wiki/Q22343619> .
-  # and Helen Artie Tarleton Belles
+  # 1st Earl of Stockton, 1st Viscount Macmillan of Ovenden, of Chelwood Gate, co. East Sussex and Stockton-on-Tees, co. Cleveland [U.K.] 1984-02-24
+  gen:father <https://www.wikidata.org/wiki/Q22343619> ; # Maurice Crawford Macmillan
+  gen:mother <https://www.wikidata.org/wiki/Q75628650> . # Helen Artie Tarleton Belles
   # oo Lady Dorothy Evelyn Cavendish, 1900-07-28 - 1966-05-21
   []
     gen:spouse <https://www.wikidata.org/wiki/Q128985> , <https://www.wikidata.org/wiki/Q3037179> ;
@@ -1703,52 +1915,19 @@
   gen:mother <https://www.wikidata.org/wiki/Q16073432> .
 
 # ----
-#<https://www.wikidata.org/wiki/Q3442048>
-  # Sir Philip Hunloke, né Perceval, 1868-11-26 – 1947-04-01
-  # oo Sylvia Heseltine, daughter of John Postle Heseltine
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q3442048> , <#Sylvia_Heseltine> ;
-	gen:startDate "1892" .
-
-<https://www.wikidata.org/wiki/Q13529950>
-  # Henry Philip Hunloke, 1906-12-27 - 1978-01-13
-  gen:father <https://www.wikidata.org/wiki/Q3442048> ;
-  gen:mother <#Sylvia_Heseltine> .
-  # oo Lady Anne Cavendish, 1909-08-20 - 1981-05-18
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q13529950> , <#Lady_Anne_Cavendish_(died_1981)> ;
-	gen:startDate "1929-11-28" ;
-	gen:divorceDate "1945" .
-
-<#Nicholas_Victor_Hunloke>
-  # Nicholas Victor Hunloke, b. 1939-04-22
-  gen:father <https://www.wikidata.org/wiki/Q13529950> ;
-  gen:mother <#Lady_Anne_Cavendish_(died_1981)> .
-  # oo Lady Katherine Victoria Montagu, b. 1945-02-22
-  []
-    gen:spouse <#Nicholas_Victor_Hunloke> , <montagu.ttl#Lady_Katherine_Victoria_Montagu> ;
-	gen:startDate "1965-07-15" .
-
-<https://www.wikidata.org/wiki/Q75252797>
-  # Henrietta Yvery Hunloke, b. 1968-05-14
-  gen:father <#Nicholas_Victor_Hunloke> ;
-  gen:mother <montagu.ttl#Lady_Katherine_Victoria_Montagu> .
-  # oo 1998-10-17 Lucien Henry Valentine Thynne, b. 1965-06-02, https://www.wikidata.org/wiki/Q75267275
-
-# ----
-#<#Christopher_John_Holland-Martin>
+#<https://www.wikidata.org/wiki/Q5112561>
   # Christopher John Holland-Martin, d. 1960-04-05
   # son of Robert Martin Holland-Martin
   # and Eleanor Mary Bromley-Martin
   # oo Lady Anne Cavendish, 1909-08-20 - 1981-05-18
   []
-    gen:spouse <#Christopher_John_Holland-Martin> , <#Lady_Anne_Cavendish_(died_1981)> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q5112561> , <https://www.wikidata.org/wiki/Q75249438> ;
 	gen:startDate "1949-07-27" .
 
 # ----
 #<https://www.wikidata.org/wiki/Q334557>
   # Robert John Graham Boothby, 1st Baron Boothby, 1900-02-12 - 1986-07-16
-  # 1st Baron Boothby, of Buchan and Rattray Head, co. Aberdeen 1958-08-22
+  # 1st Baron Boothby, of Buchan and Rattray Head, co. Aberdeen [U.K.] 1958-08-22
   # son of Sir Robert Tuite Boothby
   # and Mabel Lancaster
   # oo Diana Cavendish, 1909-09-15 - 1992-07-10
@@ -1767,7 +1946,7 @@
 
 <https://www.wikidata.org/wiki/Q6039510>
   # Sir Robert Peel, 1st Baronet, 1750-04-25 - 1830-05-03
-  # 1st Baronet Peel, of Drayton, co. Stafford 1800-11-29
+  # 1st Baronet Peel, of Drayton, co. Stafford [Great Britain] 1800-11-29
   gen:father <https://www.wikidata.org/wiki/Q16859468> ;
   gen:mother <https://www.wikidata.org/wiki/Q75707547> .
   # oo Ellen Yates, 1766-03-22 - 1803-12-28, daughter of William Yates
@@ -1797,7 +1976,6 @@
     gen:spouse <https://www.wikidata.org/wiki/Q6107323> , <https://www.wikidata.org/wiki/Q75603722> ;
 	gen:startDate "1819-07-06" .
 <https://www.wikidata.org/wiki/Q75707579>
-  owl:sameAs <https://www.wikidata.org/wiki/Q96084356> ;
   # Anne Peel, b. 1796
   gen:father <https://www.wikidata.org/wiki/Q6039510> ;
   gen:mother <https://www.wikidata.org/wiki/Q75318713> .
@@ -1857,7 +2035,7 @@
 	gen:startDate "1857-08-12" .
 <https://www.wikidata.org/wiki/Q334165>
   # Arthur Wellesley Peel, 1st Viscount Peel of Sandy, 1829-08-03 – 1912-10-24
-  # 1st Viscount Peel of Sandy, co. Bedford 1895-05-09
+  # 1st Viscount Peel of Sandy, co. Bedford [U.K.] 1895-05-09
   gen:father <https://www.wikidata.org/wiki/Q181875> ;
   gen:mother <https://www.wikidata.org/wiki/Q22970377> .
   # oo Adelaide Dugdale, 1839 - 1890-12-05 (curzon.ttl)
@@ -1916,7 +2094,7 @@
 
 <https://www.wikidata.org/wiki/Q7509271>
   # Sir Sidney Cornwallis Peel, 1st Baronet, 1870-06-03 – 1938-12-19
-  # 1st Baronet Peel 1936-07-14
+  # 1st Baronet Peel [U.K.] 1936-07-14
   gen:father <https://www.wikidata.org/wiki/Q334165> ;
   gen:mother <https://www.wikidata.org/wiki/Q75357168> .
   # oo Lady Adelaide Margaret Delia Spencer, 1889-06-26 - 1981-01-16
@@ -1951,14 +2129,20 @@
 # ----
 #<https://www.wikidata.org/wiki/Q75707582>
   # Rev. Charles Wickstead Ethelston, 1798-12-26 - 1872-11-30
-  # oo Anne Peel, b. 1796, https://www.wikidata.org/wiki/Q96084356
+  # oo Anne Peel, b. 1796
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75707582> , <https://www.wikidata.org/wiki/Q75707579> .
 
 <https://www.wikidata.org/wiki/Q75358192>
   # Edmund Peel, 1826 - 1903-03-27
+  # Edmund Ethelston
+  # Edmond Peel 1831-03-29
   gen:father <https://www.wikidata.org/wiki/Q75707582> ;
   gen:mother <https://www.wikidata.org/wiki/Q75707579> .
+  # oo Anna Maria Lethbridge, d. 1860-11-28 (fitzroy.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75358192> , <https://www.wikidata.org/wiki/Q96084357> ;
+	gen:startDate "1854-02-23" .
   # oo Henrietta Margaret Williams, 1846~ - 1885-07-29 (williams.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75358192> , <https://www.wikidata.org/wiki/Q75358191> ;
@@ -1976,16 +2160,18 @@
 # ----
 #<https://www.wikidata.org/wiki/Q16837206>
   # Sir John Floyd, 1st Baronet, 1748-02-22 - 1818-01-10
-  # 1st Baronet Floyd 1816-03-30
+  # 1st Baronet Floyd [U.K.] 1816-03-30
+  # son of John Floyd
+  # and Mary Bate
   # oo Rebecca Juliana Darke, d. 1802-02-03, daughter of Charles Darke
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q16837206> , <#Rebecca_Juliana_Darke> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q16837206> , <https://www.wikidata.org/wiki/Q16837206> ;
 	gen:startDate "1791-01-29" .
 
 <https://www.wikidata.org/wiki/Q22970377>
   # Julia Floyd, d. 1859-10-27
   gen:father <https://www.wikidata.org/wiki/Q16837206> ;
-  gen:mother <#Rebecca_Juliana_Darke> .
+  gen:mother <https://www.wikidata.org/wiki/Q16837206> .
   # oo 1820-06-08 Rt. Hon. Sir Robert Peel, 2nd Baronet, 1788-02-05 - 1850-07-02, https://www.wikidata.org/wiki/Q181875
 
 # ----
@@ -1999,7 +2185,6 @@
 	gen:startDate "1816-01-09" .
 
 <https://www.wikidata.org/wiki/Q7348806>
-  owl:sameAs <https://www.wikidata.org/wiki/Q75619918> ;
   # Robert Peel Dawson, 1818 – 1877-09-02
   gen:father <https://www.wikidata.org/wiki/Q5543927> ;
   gen:mother <https://www.wikidata.org/wiki/Q75707557> .
@@ -2025,10 +2210,9 @@
 	gen:startDate "1692-03-22" .
 
 <https://www.wikidata.org/wiki/Q7610017>
-  owl:sameAs <https://www.wikidata.org/wiki/Q75603676> ;
   # Stephen Moore, 1st Viscount Mount Cashell, 1696 – 1766-02-26
-  # 1st Baron Kilworth, of Moore Park, co. Cork 1764-07-14
-  # 1st Viscount Mount Cashell, of the city of Cashell 1766-01-22
+  # 1st Baron Kilworth, of Moore Park, co. Cork [Ireland] 1764-07-14
+  # 1st Viscount Mount Cashell, of the city of Cashell [Ireland] 1766-01-22
   gen:father <https://www.wikidata.org/wiki/Q75603654> ;
   gen:mother <https://www.wikidata.org/wiki/Q75603672> .
   # oo Alicia Colville, daughter of Hugh Colville
@@ -2038,12 +2222,12 @@
 <https://www.wikidata.org/wiki/Q7610016>
   # Stephen Moore, 1st Earl Mount Cashell, 1730-07-25 - 1790-05-14
   # 2nd Viscount Mount Cashell, of the city of Cashell, 2nd Baron Kilworth, of Moore Park, co. Cork 1766
-  # 1st Earl Mount Cashell, of Cashell 1781-01-05
+  # 1st Earl Mount Cashell, of Cashell [Ireland] 1781-01-05
   gen:father <https://www.wikidata.org/wiki/Q7610017> ;
   gen:mother <https://www.wikidata.org/wiki/Q75603677> .
-  # oo Lady Helena Rawdon, 1744-03-27 - 1792-06-03
+  # oo Lady Helena Rawdon, 1744-03-27 - 1792-06-03 (hastings.ttl)
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q7610016> , <hastings.ttl#Lady_Helena_Rawdon> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q7610016> , <https://www.wikidata.org/wiki/Q75398673> ;
 	gen:startDate "1769-06-03" .
 <https://www.wikidata.org/wiki/Q75603703>
   # Hon. Mary Moore, d. 1793
@@ -2054,19 +2238,19 @@
 <https://www.wikidata.org/wiki/Q7610018>
   # Stephen Moore, 2nd Earl Mount Cashell, 1770-03-19 – 1822-10-27
   gen:father <https://www.wikidata.org/wiki/Q7610016> ;
-  gen:mother <hastings.ttl#Lady_Helena_Rawdon> .
+  gen:mother <https://www.wikidata.org/wiki/Q75398673> .
   # oo Lady Margaret King, 1773 - 1835-01-29 (gore.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7610018> , <https://www.wikidata.org/wiki/Q6759592> ;
 	gen:startDate "1791-09-12" .
 
-<#Edward_George_Moore>
+<https://www.wikidata.org/wiki/Q17332351>
   # Rev. Hon. Edward George Moore, 1798-08-18 - 1876-02-08
   gen:father <https://www.wikidata.org/wiki/Q7610018> ;
   gen:mother <https://www.wikidata.org/wiki/Q6759592> .
-  # oo Hon. Anne Matilda Trefusis, d. 1876-02-24
+  # oo Hon. Anne Matilda Trefusis, d. 1876-02-24 (clinton.ttl)
   []
-    gen:spouse <#Edward_George_Moore> , <clinton.ttl#Anne_Matilda_Trefusis> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q17332351> , <https://www.wikidata.org/wiki/Q75587051> ;
 	gen:startDate "1827-03-27" .
 <https://www.wikidata.org/wiki/Q75603722>
   # Lady Jane Elizabeth Moore, d. 1847-09-05
@@ -2079,11 +2263,21 @@
 # ----
 #<https://www.wikidata.org/wiki/Q313696>
   # Joseph Patrick Kennedy, 1888-09-06 - 1969-11-18
+  # son of Patrick Joseph Kennedy
+  # and Mary Augusta Hickey
   # oo Rose Elizabeth FitzGerald, 1890-07-22 - 1995-01-22
   []
     gen:spouse <https://www.wikidata.org/wiki/Q313696> , <https://www.wikidata.org/wiki/Q236540> ;
 	gen:startDate "1914-10-07" .
 
+<https://www.wikidata.org/wiki/Q9696>
+  # John F. (Fitzgerald) Kennedy, 1917-05-29 - 1963-11-22
+  gen:father <https://www.wikidata.org/wiki/Q313696> ;
+  gen:mother <https://www.wikidata.org/wiki/Q236540> .
+  # oo Jacqueline Lee Bouvier, 1929-07-28 - 1994-05-19, daughter of John Vernou Bouvier III and Janet Lee Bouvier
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q9696> , <https://www.wikidata.org/wiki/Q165421> ;
+	gen:startDate "1953-09-12" .
 <https://www.wikidata.org/wiki/Q268799>
   # Kathleen Kennedy, 1820-02-20 - 1948-05-13
   gen:father <https://www.wikidata.org/wiki/Q313696> ;
@@ -2092,71 +2286,67 @@
 # ----
 <https://www.wikidata.org/wiki/Q236540>
   # Rose Elizabeth FitzGerald, 1890-07-22 - 1995-01-22
-  gen:father <https://www.wikidata.org/wiki/Q966182> .
-  # and Mary Josephine Hannon
+  gen:father <https://www.wikidata.org/wiki/Q966182> ; # John Francis Fitzgerald
+  gen:mother <https://www.wikidata.org/wiki/Q75326953> . # Mary Josephine Hannon
   # oo 1914-10-07 Joseph Patrick Kennedy, 1888-09-06 - 1969-11-18, https://www.wikidata.org/wiki/Q313696
 
 # ----
-#<#Michael_Lambert_Tree>
+#<https://www.wikidata.org/wiki/Q75249358>
   # Michael Lambert Tree, 1921 - 1999
   # oo Lady Anne Evelyn Beatrice Cavendish, 1927-11-06 - 2010-08-09
   []
-    gen:spouse <#Michael_Lambert_Tree> , <https://www.wikidata.org/wiki/Q43672811> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75249358> , <https://www.wikidata.org/wiki/Q19335528> ;
 	gen:startDate "1949-11-03" .
 
 <https://www.wikidata.org/wiki/Q26935201>
   # Isabella Elizabeth Nancy Tree, b. 1964
-  gen:father <#Michael_Lambert_Tree> ;
-  gen:mother <https://www.wikidata.org/wiki/Q43672811> .
+  gen:father <https://www.wikidata.org/wiki/Q75249358> ;
+  gen:mother <https://www.wikidata.org/wiki/Q19335528> .
   # oo 1993-12-01 Sir Charles Raymond Burrell, 10th Baronet, b. 1962-08-27, https://www.wikidata.org/wiki/Q5081950
 
 # ----
 #<https://www.wikidata.org/wiki/Q75300854>
   # James Hugh Hamilton Crewe, d. 1956-07-28
+  # James Hugh Hamilton Dodds
+  # James Hugh Hamilton Crewe 1945
   # oo Lady Annabel Hungerford Crewe-Milnes, 1881-08-31 - 1948-06-14 (manners.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75300854> , <https://www.wikidata.org/wiki/Q75300848> ;
 	gen:startDate "1922-02-09" .
 
-<#James_Colin_Crewe>
+<https://www.wikidata.org/wiki/Q75386127>
   # James Colin Crewe, 1922 - 2015-04-10
   gen:father <https://www.wikidata.org/wiki/Q75300854> ;
   gen:mother <https://www.wikidata.org/wiki/Q75300848> .
-  # oo Sarah Cornelia Spencer-Churchill, b. 1935-03-26
+  # oo Sarah Cornelia Spencer-Churchill, b. 1935-03-26 (spencer.ttl)
   []
-    gen:spouse <#James_Colin_Crewe> , <spencer.ttl#Sarah_Cornelia_Spencer-Churchill> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75386127> , <https://www.wikidata.org/wiki/Q75386126> ;
 	gen:startDate "1957-11-19" .
-<#Quentin_Hugh_Crewe>
+<https://www.wikidata.org/wiki/Q17279248>
   # Quentin Hugh Crewe, 1926-11-14 - 1998-11-14
   gen:father <https://www.wikidata.org/wiki/Q75300854> ;
   gen:mother <https://www.wikidata.org/wiki/Q75300848> .
   # oo Susan Anne Cavendish, b. 1949-08-31
   []
-    gen:spouse <#Quentin_Hugh_Crewe> , <#Susan_Anne_Cavendish> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q17279248> , <https://www.wikidata.org/wiki/Q75252740> ;
 	gen:startDate "1970-03-05" ;
 	gen:divorceDate "1983" .
 
 # ----
-#<https://www.wikidata.org/wiki/Q26204019>
-  # James Wogan Remnant, 3rd Baron Remnant, b. 1930-10-23
-  # oo Serena Jane Loehnis, b. 1932-05-23
+#<https://www.wikidata.org/wiki/Q75619237>
+  # Christopher Nigel John Ryan
+  # son of Charles Edmond Ryan
+  # oo Susan Anne Cavendish, b. 1949-08-31
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q26204019> , <#Serena_Jane_Loehnis> ;
-	gen:startDate "1953-06-24" .
+    gen:spouse <https://www.wikidata.org/wiki/Q75619237> , <https://www.wikidata.org/wiki/Q75252740> ;
+	gen:startDate "1984-05-10" .
 
-<#Philip_John_Remnant>
-  # Hon. Philip John Remnant, b. 1954-12-20
-  gen:father <https://www.wikidata.org/wiki/Q26204019> ;
-  gen:mother <#Serena_Jane_Loehnis> .
-  # oo Caroline Elizabeth Clare Cavendish, b. 1956-06-16
-  []
-    gen:spouse <#Philip_John_Remnant> , <#Caroline_Elizabeth_Clare_Cavendish> ;
-	gen:startDate "1977-07-14" .
-
-# ----
+# ====
 #<https://www.wikidata.org/wiki/Q7526303>
   # Sir Charles Clow Tennant of The Glen, 1st Baronet, 1823-11-04 - 1906-06-04
-  # 1st Baronet Tennant 1885-07-17
+  # 1st Baronet Tennant [U.K.] 1885-07-17
+  # son of John Tennant
+  # and Robina Arrol
   # oo Emma Winsloe, 1821-09-06 - 1895-01-21, daughter of Richard Winsloe and Charlotte Monkton
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7526303> , <https://www.wikidata.org/wiki/Q75255433> ;
@@ -2170,20 +2360,20 @@
 <https://www.wikidata.org/wiki/Q5345573>
   # Edward Priaulx Tennant, 1st Baron Glenconner, 1859-05-31 - 1920-11-21
   # 2nd Baronet Tennant 1906-06-04
-  # 1st Baron Glenconner, of Glen, co. Peebles 1911-04-03
+  # 1st Baron Glenconner, of Glen, co. Peebles [U.K.] 1911-04-03
   gen:father <https://www.wikidata.org/wiki/Q7526303> ;
   gen:mother <https://www.wikidata.org/wiki/Q75255433> .
   # oo Pamela Adelaide Genevieve Wyndham, 1871 - 1928-11-18
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5345573> , <https://www.wikidata.org/wiki/Q47471521> ;
 	gen:startDate "1895-07-11" .
-<#Francis_John_Tennant>
+<https://www.wikidata.org/wiki/Q75191761>
   # Francis John Tennant, 1861-10-20 - 1942-09-04
   gen:father <https://www.wikidata.org/wiki/Q7526303> ;
   gen:mother <https://www.wikidata.org/wiki/Q75255433> .
   # oo Annie Geraldine Redmayne, d. 1956-07-17, daughter of John Marriner Redmayne and Jane Anne Studdert
   []
-    gen:spouse <#Francis_John_Tennant> , <#Annie_Geraldine_Redmayne> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75191761> , <https://www.wikidata.org/wiki/Q75946615> ;
 	gen:startDate "1886-06-03" .
 <https://www.wikidata.org/wiki/Q18922097>
   # Octavia Laura Mary Tennant, 1862 - 1886-04-24
@@ -2194,6 +2384,10 @@
   # Rt. Hon. Harold John Tennant, 1865-11-18 - 1935-11-09
   gen:father <https://www.wikidata.org/wiki/Q7526303> ;
   gen:mother <https://www.wikidata.org/wiki/Q75255433> .
+  # oo Helen Elizabeth Gordon-Duff, 1866-10-17 - 1892-05-09 (ogilvy.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5662543> , <https://www.wikidata.org/wiki/Q75306340> ;
+	gen:startDate "1889-10-01" .
   # oo Margaret Edith Abraham, 1869 - 1946-07-11, daughter of George Whitley Abraham
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5662543> , <https://www.wikidata.org/wiki/Q15997429> ;
@@ -2212,27 +2406,41 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q26736118> , <https://www.wikidata.org/wiki/Q62987082> ;
 	gen:startDate "1935-03-25" .
-<#David_Francis_Tennant>
+<https://www.wikidata.org/wiki/Q17403718>
   # Hon. David Francis Tennant, 1902-05-22 - 1968-04-08
   gen:father <https://www.wikidata.org/wiki/Q5345573> ;
   gen:mother <https://www.wikidata.org/wiki/Q47471521> .
-  # oo Virginia Penelope Parsons, 1917-04-09 - 2003-09-18
+  # oo Ruby _Hermione_ Clinton-Baddeley, 1906-11-13 - 1986-11-13, daughter of William Herman Clinton-Baddeley and Louise Bourdin
   []
-    gen:spouse <#David_Francis_Tennant> , <thynne.ttl#Virginia_Penelope_Parsons> ;
-	gen:startDate "1938-11-23" .
-<#Kathleen_Tennant>
+    gen:spouse <https://www.wikidata.org/wiki/Q17403718> , <https://www.wikidata.org/wiki/Q443030> ;
+	gen:startDate "1928-04-16" ;
+	gen:divorceDate "1937-05-06" .
+  # oo Virginia Penelope Parsons, 1917-04-09 - 2003-09-18 (thynne.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q17403718> , <https://www.wikidata.org/wiki/Q75298712> ;
+	gen:startDate "1938-11-23" ;
+	gen:divorceDate "1953" .
+  # oo Shelagh Anne Rainey, daughter of Sean Rainey and Joyce Marion Wallace
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q17403718> , <https://www.wikidata.org/wiki/Q75508642> ;
+	gen:startDate "1963-07-25" .
+<https://www.wikidata.org/wiki/Q64006440>
   # Kathleen Tennant, 1894-01-30 - 1989-12-04
-  gen:father <#Francis_John_Tennant> ;
-  gen:mother <#Annie_Geraldine_Redmayne> .
+  gen:father <https://www.wikidata.org/wiki/Q75191761> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75946615> .
   # oo 1916-01-27 John Henry Montagu Manners, 9th Duke of Rutland, 1886-09-21 - 1940-04-22, https://www.wikidata.org/wiki/Q6246599
-<#John_Tennant>
+<https://www.wikidata.org/wiki/Q75316284>
   # John Tennant, 1899-05-30 - 1967-06-11
   gen:father <https://www.wikidata.org/wiki/Q5662543> ;
   gen:mother <https://www.wikidata.org/wiki/Q15997429> .
   # oo Hon. Antonia Mary Roby Benson, 1903 - 1977
   []
-    gen:spouse <#John_Tennant> , <#Antonia_Mary_Roby_Benson> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75316284> , <https://www.wikidata.org/wiki/Q75316394> ;
 	gen:startDate "1929-02-12" .
+  # oo Rosemary Irene Hennessy, d. 2014-08-03, daughter of Alfred Theodore Hennessy and Margaret Isabella Moodie
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75316284> , <https://www.wikidata.org/wiki/Q76016491> ;
+	gen:startDate "1949-05-04" .
 
 <https://www.wikidata.org/wiki/Q1108694>
   # Colin Christopher Paget Tennant, 3rd Baron Glenconner, 1926-12-01 - 2010-08-27
@@ -2240,44 +2448,50 @@
   gen:mother <https://www.wikidata.org/wiki/Q62988180> .
   # oo Lady Anne Veronica Coke, b. 1932-07-16
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q1108694> , <coke.ttl#Lady_Anne_Veronica_Coke> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q1108694> , <https://www.wikidata.org/wiki/Q75331869> ;
 	gen:startDate "1956-04-21" .
-<#Tobias_William_Tennant>
+<https://www.wikidata.org/wiki/Q75249340>
   # Hon. Tobias William Tennant, b. 1941-06-01
   gen:father <https://www.wikidata.org/wiki/Q26736118> ;
   gen:mother <https://www.wikidata.org/wiki/Q62987082> .
   # oo Lady Emma Cavendish, b. 1943-03-26
   []
-    gen:spouse <#Tobias_William_Tennant> , <#Lady_Emma_Cavendish> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75249340> , <https://www.wikidata.org/wiki/Q75249358> ;
 	gen:startDate "1963-09-03" .
-<#Mark_Iain_Tennant>
+<https://www.wikidata.org/wiki/Q75304189>
   # Mark Iain Tennant, b. 1932-12-04
-  gen:father <#John_Tennant> ;
-  gen:mother <#Antonia_Mary_Roby_Benson> .
-  # oo Lady Harriot Pleydell-Bouverie, b. 1935-12-18
+  gen:father <https://www.wikidata.org/wiki/Q75316284> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75316394> .
+  # oo Lady Harriot Pleydell-Bouverie, b. 1935-12-18 (bouverie.ttl)
   []
-    gen:spouse <#Mark_Iain_Tennant> , <bouverie.ttl#Lady_Harriot_Pleydell-Bouverie> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75304189> , <https://www.wikidata.org/wiki/Q75280267> ;
 	gen:startDate "1965-12-11" .
+
 # ----
 <https://www.wikidata.org/wiki/Q62987082>
   # Elizabeth Powell
-  gen:father <https://www.wikidata.org/wiki/Q26156657> .
-  # and Phyllis Olive Barbara Pryor
+  gen:father <https://www.wikidata.org/wiki/Q26156657> ; # George Powell
+  gen:mother <https://www.wikidata.org/wiki/Q64006440> . # Phyllis Olive Barbara Pryor
   # oo 1935-03-25 Christopher Grey Tennant, 2nd Baron Glenconner, 1899-06-14 - 1983-10-04, https://www.wikidata.org/wiki/Q26736118
+
 # ----
-#<https://www.wikidata.org/wiki/Q5576380>
+<https://www.wikidata.org/wiki/Q5576380>
   # Godfrey Rathbone Benson, 1st Baron Charnwood, 1864-11-06 – 1945-02-03
-  # 1st Baron Charnwood, of Castle Donington, co. Leicester 1911-06-29
+  # 1st Baron Charnwood, of Castle Donington, co. Leicester [U.K.] 1911-06-29
+  gen:father <https://www.wikidata.org/wiki/Q75568542> ; # William Benson
+  gen:mother <https://www.wikidata.org/wiki/Q75568544> . # Elizabeth Smith
   # oo Dorothea Mary Roby Thorpe, d. 1942-04-20, daughter of Roby Thorpe and Nelly Mundella
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q5576380> , <#Dorothea_Mary_Roby_Thorpe> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q5576380> , <https://www.wikidata.org/wiki/Q75280267> ;
 	gen:startDate "1897-05-11" .
 
-<#Antonia_Mary_Roby_Benson>
+<https://www.wikidata.org/wiki/Q75316394>
   # Hon. Antonia Mary Roby Benson, 1903 - 1977
   gen:father <https://www.wikidata.org/wiki/Q5576380> ;
-  gen:mother <#Dorothea_Mary_Roby_Thorpe> .
-  # oo 1929-02-12 John Tennant, 1899-05-30 - 1967-06-11, #John_Tennant
+  gen:mother <https://www.wikidata.org/wiki/Q75280267> .
+  # oo 1929-02-12 John Tennant, 1899-05-30 - 1967-06-11, https://www.wikidata.org/wiki/Q75316284
+
+# ====
 
 # ----
 <https://www.wikidata.org/wiki/Q76026395>
@@ -2305,37 +2519,38 @@
   # oo 1967-06-28 Peregrine Andrew Morny Cavendish, 12th Duke of Devonshire, b. 1944-04-27, https://www.wikidata.org/wiki/Q7167791
 
 # ----
-<https://www.wikidata.org/wiki/Q4708758>
-  # Alastair John Morrison, 3rd Baron Margadale, b. 1958-04-04
-  gen:father <https://www.wikidata.org/wiki/Q6140040> .
-  # and Clare Barclay
+#<https://www.wikidata.org/wiki/Q75618974>
+  # Anthony William Lindsay Murphy
   # oo Lady Sophia Louise Sydney Cavendish, b. 1957-03-18
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q4708758> , <https://www.wikidata.org/wiki/Q6470541> ;
-	gen:startDate "1988-07-19" ;
-	gen:divorceDate "1999b" .
+    gen:spouse <https://www.wikidata.org/wiki/Q75618974> , <https://www.wikidata.org/wiki/Q6470541> ;
+	gen:startDate "1979-10-20" ;
+	gen:divorceDate "1987" .
 
 # ----
-#<#Richard_Charles_Roundell>
-  # Richard Charles Roundell
-  # oo Anthea Frances Legge, b. 1946-05-15
+#<https://www.wikidata.org/wiki/Q75618975>
+  # William Topley
+  # oo Lady Sophia Louise Sydney Cavendish, b. 1957-03-18
   []
-    gen:spouse <#Richard_Charles_Roundell> , <legge.ttl#Anthea_Frances_Legge> .
-
-<https://www.wikidata.org/wiki/Q6498779>
-  # Laura Ann Roundell, b. 1972
-  gen:father <#Richard_Charles_Roundell> ;
-  gen:mother <legge.ttl#Anthea_Frances_Legge> .
-  # oo 2007-03-31 William Cavendish, Earl of Burlington, b. 1969-06-06, https://www.wikidata.org/wiki/Q8006647
+    gen:spouse <https://www.wikidata.org/wiki/Q75618975> , <https://www.wikidata.org/wiki/Q6470541> ;
+	gen:startDate "1999-11-25" .
 
 # ----
-<#Nicholas_Dunne>
+#<https://www.wikidata.org/wiki/Q75618969>
+  # Alexander Corfield Key Carter, b. 1971
+  # oo Lady Celina Imogen Cavendish, b. 1971-10-04
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75618969> , <https://www.wikidata.org/wiki/Q75246547> ;
+	gen:startDate "1995-06-03" .
+
+# ----
+<https://www.wikidata.org/wiki/Q75957795>
   # Nicholas Dunne, b. 1970
-  gen:father <https://www.wikidata.org/wiki/Q431923> .
-  # and Henrietta Rose Crawley
+  gen:father <https://www.wikidata.org/wiki/Q431923> ; # Thomas Dunne
+  gen:mother <https://www.wikidata.org/wiki/Q76360217> . # Henrietta Rose Crawley
   # oo Lady Jasmine Nancy Cavendish, b. 1973-05-04
   []
-    gen:spouse <#Nicholas_Dunne> , <#Lady_Jasmine_Nancy_Cavendish> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75957795> , <https://www.wikidata.org/wiki/Q75250043> ;
 	gen:startDate "2003-07-25" .
 
 # ----
@@ -2357,7 +2572,7 @@
   # oo 1632-12-20 Sir William Walter, 1st Baronet, 1604~ – 1675-03-23, https://www.wikidata.org/wiki/Q7529812 (bruce.ttl)
 <https://www.wikidata.org/wiki/Q15994594>
   # John Lucas, 1st Baron Lucas of Shenfield, 1606-10-23 - 1671-07-02
-  # 1st Baron Lucas of Shenfield, co. Essex 1645-01-13
+  # 1st Baron Lucas of Shenfield, co. Essex [England] 1645-01-13
   gen:father <https://www.wikidata.org/wiki/Q48170284> ;
   gen:mother <https://www.wikidata.org/wiki/Q76253393> .
   # oo Anne Neville, 1611~ - 1660-08-22
@@ -2416,10 +2631,9 @@
   # oo Edward Cary, 1656-04-25 - 1692-11-24b, https://www.wikidata.org/wiki/Q40767120 (beaufort.ttl)
   # oo Rev. Lord Archibald Hamilton, of Riccartoun, 1673-02-17 - 1754-04-05, https://www.wikidata.org/wiki/Q6678919 (douglas.ttl)
 # ----
-<https://www.wikidata.org/wiki/Q7526491>
-  owl:sameAs <https://www.wikidata.org/wiki/Q75613061> .
+#<https://www.wikidata.org/wiki/Q7526491>
   # Sir Edmund Pye, 1st Baronet, 1607~ - 1673
-  # 1st Baronet Pye, of Leckamsteed 1611-04-23
+  # 1st Baronet Pye, of Leckamsteed [England] 1611-04-23
   # oo Catherine Lucas
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7526491> , <#Catherine_Lucas> ;
@@ -2432,9 +2646,16 @@
   # oo 1662-08-28 John Lovelace, 3rd Baron Lovelace of Hurley, 1640~ - 1693-09-27, https://www.wikidata.org/wiki/Q6245372 (wentworth.ttl)
 
 # ----
+<https://www.wikidata.org/wiki/Q242640>
+  # Margaret Lucas, 1617 - 1673-12-15
+  gen:father <https://www.wikidata.org/wiki/Q48170284> ; # Thomas Lucas
+  gen:mother <https://www.wikidata.org/wiki/Q76253393> . # Elizabeth Leighton
+  # oo 1645-12~ William Cavendish, 1st Duke of Newcastle-upon-Tyne, 1592-12-06 - 1676-12-25, https://www.wikidata.org/wiki/Q1101373
+
+# ----
 <https://www.wikidata.org/wiki/Q5076225>
   # Charles Cheyne, 1st Viscount Newhaven, 1625-10-23 - 1698-06-30
-  # 1st Viscount Newhaven 1681-05-17
+  # 1st Viscount Newhaven [Scotland] 1681-05-17
   gen:father <https://www.wikidata.org/wiki/Q76259811> ; # Francis Chiene of Cogenho
   gen:mother <https://www.wikidata.org/wiki/Q76259812> . # Anne Fleetwood
   # oo Lady Jane Cavendish, 1621 - 1669-10-08
@@ -2453,35 +2674,40 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7328719> , <https://www.wikidata.org/wiki/Q47236638> .
 
-<#Elizabeth_Rogers>
+<https://www.wikidata.org/wiki/Q75243349>
   # Elizabeth Rogers, 1644~ - 1661-04-21
   gen:father <https://www.wikidata.org/wiki/Q7328719> ;
   gen:mother <https://www.wikidata.org/wiki/Q47236638> .
   # oo 1659b Charles Cavendish, Viscount Mansfield, 1626~ - 1659-06, https://www.wikidata.org/wiki/Q5076149
 
 # ----
-#<#Sir_Timothy_Tyrrell>
-  # Sir Timothy Tyrrell, 1617 - 1701
+<https://www.wikidata.org/wiki/Q75627165>
+  # Mary Tyrrell
+  gen:father <https://www.wikidata.org/wiki/Q75627193> . # Sir Timothy Tyrrell
+  # oo Henry Cavendish, 1648 - 1698-05-23, https://www.wikidata.org/wiki/Q75488722
+
+#<https://www.wikidata.org/wiki/Q7807580>
+  # Sir Timothy Tyrrell, of Oakley, 1617 - 1701
   # oo Elizabeth Ussher, 1620-09-19 - 1698
   []
-    gen:spouse <#Sir_Timothy_Tyrrell> , <#Elizabeth_Ussher> .
+    gen:spouse <https://www.wikidata.org/wiki/Q7807580> , <https://www.wikidata.org/wiki/Q5363657> .
 
-<#Mary_Tyrrell_2>
+<https://www.wikidata.org/wiki/Q75454931>
   # Mary Tyrrell
-  gen:father <#Sir_Timothy_Tyrrell> ;
-  gen:mother <#Elizabeth_Ussher> .
-  # oo William Cavendish, b. 1682-09-20, #William_Cavendish_(born_1682)
+  gen:father <https://www.wikidata.org/wiki/Q7807580> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5363657> .
+  # oo William Cavendish, b. 1682-09-20, https://www.wikidata.org/wiki/Q75454930
 # ----
-<#Elizabeth_Ussher>
+<https://www.wikidata.org/wiki/Q5363657>
   # Elizabeth Ussher, 1620-09-19 - 1698
-  gen:father <https://www.wikidata.org/wiki/Q333481> .
-  # and Phoebe Challoner
-  # oo Sir Timothy Tyrrell, 1617 - 1701, #Sir_Timothy_Tyrrell
+  gen:father <https://www.wikidata.org/wiki/Q333481> ; # James Ussher
+  gen:mother <https://www.wikidata.org/wiki/Q75788063> . # Phoebe Challoner
+  # oo Sir Timothy Tyrrell, 1617 - 1701, https://www.wikidata.org/wiki/Q7807580
 
 # ----
 #<https://www.wikidata.org/wiki/Q24288421>
   # Sarah Bradshaw, 1st Baroness Waterpark, 1740-04-01 - 1807-08-04
-  # 1st Baroness Waterpark, of Waterpark, co. Cork 1792-06-15
+  # 1st Baroness Waterpark, of Waterpark, co. Cork [Ireland] 1792-06-15
   # daughter of Richard Bradshaw
   # and Deborah Thompson
   # oo 1757-08-05 Sir Henry Cavendish, 2nd Baronet, 1732-09-13 - 1804-08-03, https://www.wikidata.org/wiki/Q7527113
@@ -2500,8 +2726,18 @@
   # oo 1778-12-05 Thomas Taylour, 1st Marquess of Headfort, 1757-11-18 - 1829-10-24, https://www.wikidata.org/wiki/Q7794385
 
 # ----
-#<https://www.wikidata.org/wiki/Q7526908>
+#<https://www.wikidata.org/wiki/Q16741841>
+  # Sir George Philips, 1st Baronet, 1766-03-24 - 1847-10-03
+  # 1st Baronet Philips, of Weston, Warwickshire [U.K.] 1828-02-21
+  # son of Thomas Philips, 1728 – 1811
+  # oo Sarah-Ann Philips, daughter of Nathaniel Philips of Hollinghurst
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16741841> , <#Sarah-Ann_Philips> .
+
+<https://www.wikidata.org/wiki/Q7526908>
   # Sir George Richard Philips, 2nd Baronet, 1789 - 1883-02-22
+  gen:father <https://www.wikidata.org/wiki/Q16741841> ;
+  gen:mother <#Sarah-Ann_Philips> .
   # oo Hon. Sarah Georgiana Cavendish, 1798~ - 1874-09-19
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7526908> , <https://www.wikidata.org/wiki/Q75533433> ;
