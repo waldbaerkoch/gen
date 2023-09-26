@@ -731,7 +731,7 @@
   gen:mother <#Eloise_Lawrence_Breese> .
   # oo Hon. Nancy Phyllis Louise Astor, 1909-03-22 - 1975-03-02
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q6135821> , <#Nancy_Phyllis_Louise_Astor> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q6135821> , <https://www.wikidata.org/wiki/Q75269884> ;
 	gen:startDate "1933-07-27" .
 <#Lady_Priscilla_Heathcote-Drummond-Willoughby>
   gen:name "Lady Priscilla Heathcote-Drummond-Willoughby"@en ;
@@ -750,13 +750,13 @@
   # 28th Baroness Willoughby de Eresby, suo jure 1983-03-29
   gen:birthDate "1934-12-01" ;
   gen:father <https://www.wikidata.org/wiki/Q6135821> ;
-  gen:mother <#Nancy_Phyllis_Louise_Astor> .
+  gen:mother <https://www.wikidata.org/wiki/Q75269884> .
 <#Timothy_Gilbert_Heathcote-Drummond-Willoughby,_Lord_Willoughby>
   gen:name "Timothy Gilbert Heathcote-Drummond-Willoughby, Lord Willoughby"@en ;
   gen:birthDate "1936-03-19" ;
   gen:deathDate "1963-08-19" ;
   gen:father <https://www.wikidata.org/wiki/Q6135821> ;
-  gen:mother <#Nancy_Phyllis_Louise_Astor> .
+  gen:mother <https://www.wikidata.org/wiki/Q75269884> .
 
 
 # ----
@@ -866,13 +866,30 @@
     gen:spouse <https://www.wikidata.org/wiki/Q75338022> , <https://www.wikidata.org/wiki/Q10315514> ;
 	gen:startDate "1996-06-11" .
 
-# ----
-#<https://www.wikidata.org/wiki/Q2619726>
+# ====
+<https://www.wikidata.org/wiki/Q326229>
+  # William Waldorf Astor, 1st Viscount Astor, 1848-03-31 - 1919-10-18
+  # 1st Baron Astor, of Hever Castle, co. Kent [U.K.] 1916-01-26
+  # 1st Viscount Astor [U.K.] 1917-06-23
+  gen:father <https://www.wikidata.org/wiki/Q5561786> ; # John Jacob Astor III
+  gen:mother <https://www.wikidata.org/wiki/Q75290704> . # Charlotte Augusta Gibbes
+  # oo Mary Dahlgren Paul, d. 1894-12-22, daughter of James William Paul
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q326229> , <https://www.wikidata.org/wiki/Q75351698> ;
+	gen:startDate "1878-06-06" .
+
+<https://www.wikidata.org/wiki/Q2619726>
   # Waldorf Astor, 2nd Viscount Astor, 1879-05-19 – 1952-09-30
-  # oo Nancy Witcher Langhorne, 1879-05-19 - 1964-05-02
+  gen:father <https://www.wikidata.org/wiki/Q326229> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75351698> .
+  # oo Nancy Witcher Langhorne, 1879-05-19 - 1964-05-02, daughter of Chiswell Langhorne and Nancy Witcher Keen
   []
     gen:spouse <https://www.wikidata.org/wiki/Q2619726> , <https://www.wikidata.org/wiki/Q195013> ;
 	gen:startDate "1906-05-03" .
+<https://www.wikidata.org/wiki/Q332783> # -> Baron Astor of Hever
+  # John Jacob Astor, 1st Baron Astor of Hever, 1886-05-20 - 1971-07-19
+  gen:father <https://www.wikidata.org/wiki/Q326229> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75351698> .
 
 <https://www.wikidata.org/wiki/Q2580935>
   # William Astor, 3rd Viscount Astor, 1907-08-13 - 1966-03-07
@@ -882,7 +899,7 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q2580935> , <https://www.wikidata.org/wiki/Q4974116> ;
 	gen:startDate "1960-10-14" .
-<#Nancy_Phyllis_Louise_Astor>
+<https://www.wikidata.org/wiki/Q75269884>
   # Hon. Nancy Phyllis Louise Astor, 1909-03-22 - 1975-03-02
   gen:father <https://www.wikidata.org/wiki/Q2619726> ;
   gen:mother <https://www.wikidata.org/wiki/Q195013> .
@@ -905,6 +922,35 @@
   gen:father <https://www.wikidata.org/wiki/Q2580935> ;
   gen:mother <https://www.wikidata.org/wiki/Q4974116> .
   # oo 1991-11-30 Charles Henry Gordon-Lennox, 11th Duke of Richmond, b. 1955-01-08, https://www.wikidata.org/wiki/Q5078306 (lennox.ttl)
+
+
+# Baron Astor of Hever
+<https://www.wikidata.org/wiki/Q332783>
+  # John Jacob Astor, 1st Baron Astor of Hever, 1886-05-20 - 1971-07-19
+  # 1st Baron Astor of Hever, of Hever Castle, co. Kent [U.K.] 1956-01-21
+  gen:father <https://www.wikidata.org/wiki/Q326229> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75351698> .
+  # oo Lady Violet Mary Elliot-Murray-Kynynmound, 1889-05-28 - 1965-01-03 (elliott.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q332783> , <https://www.wikidata.org/wiki/Q7933213> ;
+	gen:startDate "1916-08-28" .
+
+<https://www.wikidata.org/wiki/Q75351685>
+  # Hon. Hugh Waldorf Astor, 1920-11-20 - 1999-06-07
+  gen:father <https://www.wikidata.org/wiki/Q332783> ;
+  gen:mother <https://www.wikidata.org/wiki/Q7933213> .
+  # oo Emily Lucy Kinloch, 1930-08-27 - 2013-12-27 (scott.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75351685> , <https://www.wikidata.org/wiki/Q75351688> ;
+	gen:startDate "1950-11-08" .
+
+<https://www.wikidata.org/wiki/Q75379820>
+  # Rachel Mary Astor, b. 1955-09-29
+  gen:father <https://www.wikidata.org/wiki/Q75351685> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75351688> .
+  # oo 1985 Hon. Edward Nicholas Ward, b. 1953-02, https://www.wikidata.org/wiki/Q75290950 (montgomerie.ttl)
+
+# ====
 
 # ----
 #<#Sir_John_Renton_Aird,_3rd_Baronet>
