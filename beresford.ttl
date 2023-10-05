@@ -4,11 +4,19 @@
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
+#<https://www.wikidata.org/wiki/Q75434332>
+  # Tristram Beresford, b. 1574
+  # son of Michael Beresford
+  # and Rose Knyvett
+  # oo Susannah Brooke
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75434332> , <https://www.wikidata.org/wiki/Q75434333> .
+
 <https://www.wikidata.org/wiki/Q7529334>
   # Sir Tristram Beresford, 1st Baronet, d. 1673-01-15
-  # 1st Baronet Beresford, of Coleraine, co. Londonderry 1665-05-05
-  gen:father <https://www.wikidata.org/wiki/Q75434332> ; # Tristram Beresford, b. 1574, son of Michael Beresford and Rose Knyvett
-  gen:mother <https://www.wikidata.org/wiki/Q75434333> . # Susannah Brooke
+  # 1st Baronet Beresford, of Coleraine, co. Londonderry [Ireland] 1665-05-05
+  gen:father <https://www.wikidata.org/wiki/Q75434332> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75434333> .
   # oo Anne Rowley, b. 1615~ (taylour.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7529334> , <https://www.wikidata.org/wiki/Q75434335> .
@@ -22,17 +30,19 @@
 
 <https://www.wikidata.org/wiki/Q7291457>
   # Sir Randal Beresford, 2nd Baronet, 1636~ - 1681-10-19
-  gen:father <https://www.wikidata.org/wiki/Q7529334> .
-  # and Anne Rowley
+  gen:father <https://www.wikidata.org/wiki/Q7529334> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75434335> .
   # oo Hon. Catherine Annesley, 1634-01-05 - 1701-04-03
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7291457> , <https://www.wikidata.org/wiki/Q75434342> ;
 	gen:startDate "1662-02-20" .
-<#Michael_Beresford>
+<https://www.wikidata.org/wiki/Q75546437>
   # Michael Beresford
   gen:father <https://www.wikidata.org/wiki/Q7529334> ;
   gen:mother <https://www.wikidata.org/wiki/Q75434340> .
   # oo Jane ???
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75546437> , <https://www.wikidata.org/wiki/Q76350970> .
 <https://www.wikidata.org/wiki/Q76319958>
   # Anne Beresford
   gen:father <https://www.wikidata.org/wiki/Q7529334> ;
@@ -53,28 +63,28 @@
   gen:mother <https://www.wikidata.org/wiki/Q75434342> .
   # oo Hon. Nichola Sophia Hamilton, 1666-02-23 - 1713-02-23
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q7529335> , <#Nichola_Sophia_Hamilton> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q7529335> , <https://www.wikidata.org/wiki/Q75398737> ;
 	gen:startDate "1687-02" .
-<#Catherine_Beresford>
+<https://www.wikidata.org/wiki/Q75255405>
   # Catherine Beresford
   gen:father <https://www.wikidata.org/wiki/Q7291457> ;
   gen:mother <https://www.wikidata.org/wiki/Q75434342> .
-  # oo 1697 Matthew Pennefather, #Matthew_Pennefather
-<#Anne_Beresford>
+  # oo 1697 Matthew Pennefather, https://www.wikidata.org/wiki/Q75255400
+<https://www.wikidata.org/wiki/Q76347522>
   # Anne Beresford, 1725 - 1820
-  gen:father <#Michael_Beresford> .
-  # and Jane ???
-  # oo 1747-10-17 Thomas Taylor, 1707 - 1763, #Thomas_Taylor
+  gen:father <https://www.wikidata.org/wiki/Q75546437> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76350970> .
+  # oo 1747-10-17 Thomas Taylor, 1707 - 1763, https://www.wikidata.org/wiki/Q75709142
 
 <https://www.wikidata.org/wiki/Q886223>
   gen:name "Marcus Beresford, 1st Earl of Tyrone"@en ;
   # 4th Baronet Beresford, of Coleraine, co. Londonderry 1701-06-16
-  # 1st Viscount Tyrone, 1st Baron Beresford, of Beresford, co. Cavan 1720-11-04
-  # 1st Earl of Tyrone 1746-07-18
+  # 1st Viscount Tyrone, 1st Baron Beresford, of Beresford, co. Cavan [Ireland] 1720-11-04
+  # 1st Earl of Tyrone [Ireland] 1746-07-18
   gen:birthDate "1694-07-16" ;
   gen:deathDate "1763-04-04" ;
   gen:father <https://www.wikidata.org/wiki/Q7529335> ;
-  gen:mother <#Nichola_Sophia_Hamilton> .
+  gen:mother <https://www.wikidata.org/wiki/Q75398737> .
   # oo Catherine Power, Baroness la Poer, 1701-11-29 - 1769-07-27 (butler.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q886223> , <https://www.wikidata.org/wiki/Q75270655> ;
@@ -82,12 +92,12 @@
 <https://www.wikidata.org/wiki/Q75546421>
   # Susanna Catherina Beresford, 1689~ - 1763-03-08
   gen:father <https://www.wikidata.org/wiki/Q7529335> ;
-  gen:mother <#Nichola_Sophia_Hamilton> .
+  gen:mother <https://www.wikidata.org/wiki/Q75398737> .
   # oo 1703 Hyacinth Richard Nugent, 1684a - 1738-03-05, https://www.wikidata.org/wiki/Q75546423
 <https://www.wikidata.org/wiki/Q75546424>
   # Jane Beresford, d. 1764-10-20
   gen:father <https://www.wikidata.org/wiki/Q7529335> ;
-  gen:mother <#Nichola_Sophia_Hamilton> .
+  gen:mother <https://www.wikidata.org/wiki/Q75398737> .
   # oo 1711-03-30~ Gorges Lowther, d. 1716-06-11, https://www.wikidata.org/wiki/Q75546426
 
 <https://www.wikidata.org/wiki/Q75270654>
@@ -99,8 +109,8 @@
   # George de la Poer Beresford, 1st Marquess of Waterford, 1735-01-08 – 1800-12-03
   # 2nd Earl of Tyrone, 2nd Baron Beresford, of Beresford, co. Cavan, 5th Baronet Beresford, of Coleraine, co. Londonderry 1763-04-04
   # 2nd Baron la Poer 1769-07-17
-  # 1st Baron Tyrone, of Haverfordwest, co. Pembroke 1786-08-21
-  # 1st Marquess of Waterford 1789-08-19
+  # 1st Baron Tyrone, of Haverfordwest, co. Pembroke [Great Britain] 1786-08-21
+  # 1st Marquess of Waterford [Ireland] 1789-08-19
   gen:father <https://www.wikidata.org/wiki/Q886223> ;
   gen:mother <https://www.wikidata.org/wiki/Q75270655> .
   # oo Elizabeth Monck, 1742 - 1816-01-15 (bentinck.ttl)
@@ -134,7 +144,7 @@
   gen:mother <https://www.wikidata.org/wiki/Q75270655> .
   # oo 1748-12-08 Thomas Christmas, d. 1749-03-28
   # oo 1754-03-29 Rt. Hon. Theophilus Jones, 1729~ – 1811-12-08, https://www.wikidata.org/wiki/Q17285412 (murray.ttl)
-<#Lady_Frances_Maria_Beresford>
+<https://www.wikidata.org/wiki/Q75277999>
   # Lady Frances Maria Beresford, 1731-10-09 - 1815
   gen:father <https://www.wikidata.org/wiki/Q886223> ;
   gen:mother <https://www.wikidata.org/wiki/Q75270655> .
@@ -145,30 +155,17 @@
   gen:mother <https://www.wikidata.org/wiki/Q75270655> .
   # oo George Paul Monck, b. 1730~, https://www.wikidata.org/wiki/Q75865233
 
-<https://www.wikidata.org/wiki/Q6661642>
+<https://www.wikidata.org/wiki/Q6661642> # -> Beresford Baronets of Bagnall
   # Sir John de la Poer Beresford, 1st Baronet, 1766 - 1844-10-02
-  # 1st Baronet Beresford, of Bagnall, co. Waterford 1814-05-21
-  gen:father <https://www.wikidata.org/wiki/Q886541> .
-  # oo Mary Molloy, d. 1813-07
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q6661642> , <#Mary_Molloy> ;
-	gen:startDate "1809-05" .
-  # oo Harriet Elizabeth Peirse, d. 1825-02-28, daughter of Henry Peirse
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q6661642> , <#Harriet_Elizabeth_Peirse> ;
-	gen:startDate "1815-08-17" .
-  # oo Amelia Baillie, d. 1862-12-17, daughter of James Baillie
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q6661642> , <#Amelia_Baillie> ;
-	gen:startDate "1836-05-26" .
+  gen:father <https://www.wikidata.org/wiki/Q886541> . # illegitimate
 <https://www.wikidata.org/wiki/Q332633>
   # William Carr Beresford, 1st Viscount Beresford, 1st Marquis of Campo Maior, 1768-10-02 – 1854-01-08
-  # Conde de Trancoso 1811-05-13
-  # Duque de Elbas
-  # Marquez de Campo Mayor 1812-12.17
-  # 1st Baron Beresford of Albuera and Dungarvan, co. Waterford 1814-05-17
-  # 1st Viscount Beresford of Beresford, co. Stafford 1823-03-28
-  gen:father <https://www.wikidata.org/wiki/Q886541> .
+  # Conde de Trancoso [Portugal] 1811-05-13
+  # Duque de Elbas [Spain]
+  # Marquez de Campo Mayor [Portugal] 1812-12.17
+  # 1st Baron Beresford of Albuera and Dungarvan, co. Waterford [U.K.] 1814-05-17
+  # 1st Viscount Beresford of Beresford, co. Stafford [U.K.] 1823-03-28
+  gen:father <https://www.wikidata.org/wiki/Q886541> . # illegitimate
   # oo Hon. Louisa de la Poer Beresford, d. 1851-07-21
   []
     gen:spouse <https://www.wikidata.org/wiki/Q332633> , <https://www.wikidata.org/wiki/Q62383951> ;
@@ -191,7 +188,7 @@
   # Archbishop of Armagh 1822 – 1862
   gen:father <https://www.wikidata.org/wiki/Q886541> ;
   gen:mother <https://www.wikidata.org/wiki/Q75268279> .
-<#Lady_Isabella_Anne_Beresford>
+<https://www.wikidata.org/wiki/Q75278014>
   # Lady Isabella Anne Beresford, 1776-05-28 - 1850-05-07
   gen:father <https://www.wikidata.org/wiki/Q886541> ;
   gen:mother <https://www.wikidata.org/wiki/Q75268279> .
@@ -202,9 +199,9 @@
   gen:mother <https://www.wikidata.org/wiki/Q75268279> .
   # oo Harriet Schutz, d. 1860-04-28, daughter of John Bacon Schutz
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q16239044> , <#Harriet_Schutz> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q16239044> , <https://www.wikidata.org/wiki/Q75278005> ;
 	gen:startDate "1808-11-22" .
-<#Lady_Elizabeth_Louisa_Beresford>
+<https://www.wikidata.org/wiki/Q75278017>
   # Lady Elizabeth Louisa Beresford, 1783-02-02 - 1856-01-06
   gen:father <https://www.wikidata.org/wiki/Q886541> ;
   gen:mother <https://www.wikidata.org/wiki/Q75268279> .
@@ -240,7 +237,7 @@
   gen:mother <https://www.wikidata.org/wiki/Q75277410> .
   # oo Elizabeth McKenzie Menzies, b. 1777, daughter of Archibald Menzies and Frances Rutherford
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q6226258> , <#Elizabeth_McKenzie_Menzies> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q6226258> , <https://www.wikidata.org/wiki/Q75277451> ;
 	gen:startDate "1795-03-03" .
 <https://www.wikidata.org/wiki/Q75267300>
   # Rev. Charles Cobbe Beresford, b. 1770-10-02
@@ -254,20 +251,20 @@
   # Annette Constantia Beresford, 1768-04-16 - 1836-08-08
   gen:father <https://www.wikidata.org/wiki/Q15039906> ;
   gen:mother <https://www.wikidata.org/wiki/Q75277410> .
-  # oo 1790 Robert Uniacke, of Woodhouse, d. 1802, #Robert_Uniacke
+  # oo 1790 Robert Uniacke, of Woodhouse, d. 1802, https://www.wikidata.org/wiki/Q75277465
   # oo 1805-07-02 Robert Doyne, 1782-03-02 - 1850-12, https://www.wikidata.org/wiki/Q75277479
 <https://www.wikidata.org/wiki/Q75277481>
   # Jane Beresford, 1769-06-13 - 1836-11-02
   gen:father <https://www.wikidata.org/wiki/Q15039906> ;
   gen:mother <https://www.wikidata.org/wiki/Q75277410> .
   # oo 1788-09-10 Rt. Hon. Sir George Fitzgerald Hill, 2nd Baronet, 1763-06-01 – 1839-03-08, https://www.wikidata.org/wiki/Q17318673 (lowther.ttl)
-<#Henry_Barré_Beresford>
+<https://www.wikidata.org/wiki/Q75277485>
   # Henry Barré Beresford, 1784-09-25 - 1837-12-15
   gen:father <https://www.wikidata.org/wiki/Q15039906> ;
   gen:mother <https://www.wikidata.org/wiki/Q75270712> .
   # oo Eliza Baily, d. 1831-12-22, daughter of John Baily
   []
-    gen:spouse <#Henry_Barré_Beresford> , <#Eliza_Baily> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75277485> , <https://www.wikidata.org/wiki/Q75277487> ;
 	gen:startDate "1812-02-29" .
 <https://www.wikidata.org/wiki/Q75297703>
   # Anne Beresford, d. 1862-11-13
@@ -276,19 +273,6 @@
   # oo 1822b Charles Gardiner, 1807b - 1822b, https://www.wikidata.org/wiki/Q75240949
   # oo 1822-10-09 Charles Manning Allen, 1799-06-04 - 1880-12-25, https://www.wikidata.org/wiki/Q20086545, son of Captain Thomas Allen and Katherine Manning
 
-<https://www.wikidata.org/wiki/Q26197699>
-  # Sir George de la Poer Beresford, 2nd Baronet, 1811-03-01 – 1873-02-11
-  gen:father <https://www.wikidata.org/wiki/Q6661642> ;
-  gen:mother <#Mary_Molloy> .
-  # oo Elizabeth Lucas, d. 1898-12-23, daughter of Davis Lucas
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q26197699> , <https://www.wikidata.org/wiki/Q75290447> ;
-	gen:startDate "1846-03-01" .
-<#Georgiana_Beresford>
-  # Georgiana Beresford, d. 1870-09-07
-  gen:father <https://www.wikidata.org/wiki/Q6661642> ;
-  gen:mother <#Harriet_Elizabeth_Peirse> .
-  # oo 1842-07-22 Rt. Rev. Reginald Courtenay, 1813-02-26 - 1906-04-13, https://www.wikidata.org/wiki/Q7308652
 <https://www.wikidata.org/wiki/Q75251146>
   # Lady Sarah Elizabeth Beresford, 1807-11-10 – 1884-10-13
   gen:father <https://www.wikidata.org/wiki/Q886239> ;
@@ -310,23 +294,23 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q6221623> , <https://www.wikidata.org/wiki/Q61994931> ;
 	gen:startDate "1843-02-20" .
-<#Elizabeth_Harriet_Georgiana_Beresford>
+<https://www.wikidata.org/wiki/Q75278008>
   # Elizabeth Harriet Georgiana Beresford, 1810-07-06 - 1889-01-25
   gen:father <https://www.wikidata.org/wiki/Q16239044> ;
-  gen:mother <#Harriet_Schutz> .
+  gen:mother <https://www.wikidata.org/wiki/Q75278005> .
   # oo 1849-02-08 Henry Eden, 1797-08-09 – 1888-01-30, https://www.wikidata.org/wiki/Q16062708
 <https://www.wikidata.org/wiki/Q75273959>
   # Caroline Susan Catherine Beresford, 1814-03-29 - 1866-03-08
   gen:father <https://www.wikidata.org/wiki/Q16239044> ;
-  gen:mother <#Harriet_Schutz> .
+  gen:mother <https://www.wikidata.org/wiki/Q75278005> .
   # oo 1840-09-19 Hon. Edward Kenyon, 1810-06-11 - 1894-10-21, https://www.wikidata.org/wiki/Q75259422 (grey.ttl)
-<#Elizabeth_Beresford>
+<https://www.wikidata.org/wiki/Q76335680>
   # Elizabeth Beresford, 1795 - 1856-12-07
   gen:father <https://www.wikidata.org/wiki/Q16239047> ;
   gen:mother <https://www.wikidata.org/wiki/Q75277493> .
-  # oo 1827-06-26 Felix Ladbroke, 1808-08-22 - 1889-11-06, #Felix_Ladbroke
+  # oo 1827-06-26 Felix Ladbroke, 1808-08-22 - 1889-11-06, https://www.wikidata.org/wiki/Q75582023
 <https://www.wikidata.org/wiki/Q8005441>
-  # Rt, Hon. William Beresford, 1797-04-17 – 1883-10-06
+  # Rt. Hon. William Beresford, 1797-04-17 – 1883-10-06
   gen:father <https://www.wikidata.org/wiki/Q16239047> ;
   gen:mother <https://www.wikidata.org/wiki/Q75277493> .
   # oo Catherine Heneage, 1807~ - 1895-06-16 (petre.ttl)
@@ -359,20 +343,20 @@
 	gen:startDate "1824-10-25" .
   # oo Elizabeth Kennedy, d. 1870-07-01, daughter of Jason Trail Kennedy
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q6758035> , <#Elizabeth_Kennedy> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q6758035> , <https://www.wikidata.org/wiki/Q75277429> ;
 	gen:startDate "1850-06-06" .
 <https://www.wikidata.org/wiki/Q75277446>
   # Frances Beresford, d. 1835-11-17
   gen:father <https://www.wikidata.org/wiki/Q5536920> ;
   gen:mother <https://www.wikidata.org/wiki/Q75277435> .
   # oo 1824-06-19 Rev. Hon. Francis Howard, 1797-01-12 - 1857-02-16, https://www.wikidata.org/wiki/Q75263676 (hamilton.ttl)
-<#John_Isaac_Beresford>
+<https://www.wikidata.org/wiki/Q75277455>
   # Rev. John Isaac Beresford, 1796-10-13 - 1847-02-09
   gen:father <https://www.wikidata.org/wiki/Q75267300> ;
   gen:mother <https://www.wikidata.org/wiki/Q75270708> .
   # oo Sophia White, d. 1858-11-27, daughter of Robert White
   []
-    gen:spouse <#John_Isaac_Beresford> , <#Sophia_White> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75277455> , <https://www.wikidata.org/wiki/Q75277456> ;
 	gen:startDate "1824-06-13" .
 <https://www.wikidata.org/wiki/Q75248770>
   # Selina Griselda Beresford, 1804-12-05 - 1884-09-06
@@ -384,17 +368,17 @@
   gen:father <https://www.wikidata.org/wiki/Q75267300> ;
   gen:mother <https://www.wikidata.org/wiki/Q75270708> .
   # oo 1824-03-02 Rev. Lord John Thynne, 1798-11-07 - 1881-02-09, https://www.wikidata.org/wiki/Q23060053
-<#George_John_Beresford>
+<https://www.wikidata.org/wiki/Q75277459>
   # George John Beresford, 1807-07-21 - 1864-02-11
   gen:father <https://www.wikidata.org/wiki/Q75267300> ;
   gen:mother <https://www.wikidata.org/wiki/Q75270708> .
   # oo Jane Charlotte Riall, d. 1842-04-06, daughter of Charles Riall
   []
-    gen:spouse <#George_John_Beresford> , <#Jane_Charlotte_Riall> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75277459> , <https://www.wikidata.org/wiki/Q75277461> ;
 	gen:startDate "1839-12-12" .
   # oo Frances Constantia Uniacke, d. 1867-10-20
   []
-    gen:spouse <#George_John_Beresford> , <#Frances_Constantia_Uniacke> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75277459> , <https://www.wikidata.org/wiki/Q75277448> ;
 	gen:startDate "1844-11-15" .
 <https://www.wikidata.org/wiki/Q75321743>
   # Emilia Katherine Beresford, d. 1869-11-19
@@ -403,8 +387,8 @@
   # oo 1831-12-16 Arthur Willoughby Cole-Hamilton, 1806-11-23 - 1891-12-16, https://www.wikidata.org/wiki/Q75321742 (hamilton.ttl)
 <https://www.wikidata.org/wiki/Q75277894>
   # John Barré Beresford, 1815-10-19 - 1895-08-30
-  gen:father <#Henry_Barré_Beresford> ;
-  gen:mother <#Eliza_Baily> .
+  gen:father <https://www.wikidata.org/wiki/Q75277485> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75277487> .
   # oo Sophia Lyons-Montgomery, 1819 - 1850-03-12 (hamilton.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75277894> , <https://www.wikidata.org/wiki/Q75277898> ;
@@ -414,11 +398,6 @@
     gen:spouse <https://www.wikidata.org/wiki/Q75277894> , <https://www.wikidata.org/wiki/Q75277901> ;
 	gen:startDate "1853-07-07" .
 
-<https://www.wikidata.org/wiki/Q75434253>
-  # Marcia Mary Ann Harriet Wilhelmina de la Poer Beresford, d. 1908-06-29
-  gen:father <https://www.wikidata.org/wiki/Q26197699> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75290447> .
-  # oo 1875-06-23 Francis Colebrooke Beresford-Drummond, 1846-11-06 - 1926-04-09, https://www.wikidata.org/wiki/Q75434365 (drummond.ttl)
 <https://www.wikidata.org/wiki/Q6221627>
   # John Henry de la Poer Beresford, 5th Marquess of Waterford, 1844-05-21 - 1895-10-23
   gen:father <https://www.wikidata.org/wiki/Q6221623> ;
@@ -433,20 +412,21 @@
 	gen:startDate "1874-07-21" .
 <https://www.wikidata.org/wiki/Q323773>
   # Charles William de la Poer Beresford, 1st Baron Beresford, 1846-02-10 - 1919-09-06
-  # 1st Baron Beresford, of Metemmeh and Curarghmore, co. Waterford 1916-01-22
+  # 1st Baron Beresford, of Metemmeh and Curarghmore, co. Waterford [U.K.] 1916-01-22
   gen:father <https://www.wikidata.org/wiki/Q6221623> ;
   gen:mother <https://www.wikidata.org/wiki/Q61994931> .
   # oo Mina Gardner, d. 1922-05-26, daughter of Richard Gardner and Lucy Mandesloh
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q323773> , <#Mina_Gardner> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q323773> , <https://www.wikidata.org/wiki/Q75268270> ;
 	gen:startDate "1878-06-25" .
 <https://www.wikidata.org/wiki/Q16030255>
   # Lord William Leslie de la Poer Beresford, 1847-07-20 - 1900-12-28
   gen:father <https://www.wikidata.org/wiki/Q6221623> ;
   gen:mother <https://www.wikidata.org/wiki/Q61994931> .
-  # oo Lilian Warren Price, 1854-06-10 - 1909-01-11
+  # oo Lilian Warren Price, 1854-06-10 - 1909-01-11 (spencer.ttl)
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q16030255> , <https://www.wikidata.org/wiki/Q15429306> .
+    gen:spouse <https://www.wikidata.org/wiki/Q16030255> , <https://www.wikidata.org/wiki/Q15429306> ;
+	gen:startDate "1895-04-30" .
 <https://www.wikidata.org/wiki/Q16031681>
   # Lord Marcus Talbot de la Poer Beresford, 1848-12-25 - 1922-12-16
   gen:father <https://www.wikidata.org/wiki/Q6221623> ;
@@ -485,26 +465,28 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5536922> , <https://www.wikidata.org/wiki/Q75277733> ;
 	gen:startDate "1860-04-24" .
-<#Henry_Marcus_Beresford>
+<https://www.wikidata.org/wiki/Q75277420>
   # Henry Marcus Beresford, 1835-03-02 - 1895-02-05
   gen:father <https://www.wikidata.org/wiki/Q6758035> ;
   gen:mother <https://www.wikidata.org/wiki/Q75277425> .
   # oo Julia Ellen Maunsell, d. 1923-10-13, daughter of Rev. Francis Richard Maunsell and Sarah Kelly
   []
-    gen:spouse <#Henry_Marcus_Beresford> , <#Julia_Ellen_Maunsell> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75277420> , <https://www.wikidata.org/wiki/Q75277421> ;
 	gen:startDate "1861-04-10" .
 <https://www.wikidata.org/wiki/Q75277843>
   # Emily Sarah Beresford, 1827-10-30 - 1893-07-29
-  gen:father <#John_Isaac_Beresford> ;
-  gen:mother <#Sophia_White> .
+  gen:father <https://www.wikidata.org/wiki/Q75277455> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75277456> .
   # oo 1851-05-06 Very Rev. John Maunsell Massy-Beresford, Dean of Kilmore, 1823-09-26 - 1886-09-22, https://www.wikidata.org/wiki/Q75277852
-<#Emily_Frances_Louisa_Beresford>
+<https://www.wikidata.org/wiki/Q75277876>
   # Emily Frances Louisa Beresford, d. 1933-02-14
-  gen:father <#George_John_Beresford> ;
-  gen:mother <#Frances_Constantia_Uniacke> .
-  # oo 1911-04-20 Sir Robert Adair Hodson, 4th Baronet, 1853-09-29 - 1921-01-03, #Sir_Robert_Adair_Hodson,_4th_Baronet
+  gen:father <https://www.wikidata.org/wiki/Q75277459> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75277448> .
+  # oo 1911-04-20 Sir Robert Adair Hodson, 4th Baronet, 1853-09-29 - 1921-01-03, https://www.wikidata.org/wiki/Q75277877
 <https://www.wikidata.org/wiki/Q75277912>
   # William Randal Hamilton Beresford-Ash, 1859-07-19 - 1938-03-08
+  # William Randal Hamilton Beresford
+  # William Randal Hamilton Beresford-Ash 1901
   gen:father <https://www.wikidata.org/wiki/Q75277894> ;
   gen:mother <https://www.wikidata.org/wiki/Q75277901> .
   # oo Lady Florence Marion Browne, 1863-01-13 - 1946-11-22
@@ -516,7 +498,7 @@
   # Henry de la Poer Beresford, 6th Marquess of Waterford, 1875-04-28 - 1911-12-01
   gen:father <https://www.wikidata.org/wiki/Q6221627> ;
   gen:mother <https://www.wikidata.org/wiki/Q75266964> .
-  # oo Lady Beatrix Frances Petty-FitzMaurice, 1877-03-25 - 1953-08-05
+  # oo Lady Beatrix Frances Petty-FitzMaurice, 1877-03-25 - 1953-08-05 (fitzgerald.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5718077> , <https://www.wikidata.org/wiki/Q4877228> ;
 	gen:startDate "1897-10-16" .
@@ -554,20 +536,20 @@
   # oo 1925-09-03 Henry Edward Harcourt Rice, 1864-12-16 - 1944-04-10, https://www.wikidata.org/wiki/Q75277802 (vernon.ttl)
 <https://www.wikidata.org/wiki/Q75276801>
   # Marcus Francis Beresford, 1862-12-26 - 1896-12-14
-  gen:father <#Henry_Marcus_Beresford> ;
-  gen:mother <#Julia_Ellen_Maunsell> .
+  gen:father <https://www.wikidata.org/wiki/Q75277420> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75277421> .
   # oo Fanny Catherine Wingfield, 1860~ - 1914-02-03
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75276801> , <https://www.wikidata.org/wiki/Q76316558> ;
 	gen:startDate "1894-04-10" .
 <https://www.wikidata.org/wiki/Q983504>
   # George Charles Beresford, 1864-07-10 – 1938-02-21
-  gen:father <#Henry_Marcus_Beresford> ;
-  gen:mother <#Julia_Ellen_Maunsell> .
+  gen:father <https://www.wikidata.org/wiki/Q75277420> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75277421> .
 <https://www.wikidata.org/wiki/Q75277833>
   # Eva Emily Beresford, d. 1960-02-18
-  gen:father <#Henry_Marcus_Beresford> ;
-  gen:mother <#Julia_Ellen_Maunsell> .
+  gen:father <https://www.wikidata.org/wiki/Q75277420> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75277421> .
   # oo 1895-04-27 Anthony Fitz Maude, 1862-08 - 1935-06-07, https://www.wikidata.org/wiki/Q75277836 (ponsonby.ttl)
 <https://www.wikidata.org/wiki/Q75277918>
   # Douglas Beresford-Ash, 1887-09-08 - 1976
@@ -596,11 +578,11 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q20714109> , <https://www.wikidata.org/wiki/Q75265873> ;
 	gen:startDate "1930-10-14" .
-<#Mary_Emily_Beresford>
+<https://www.wikidata.org/wiki/Q75277758>
   # Mary Emily Beresford, d. 1935-03-06
   gen:father <https://www.wikidata.org/wiki/Q75277753> ;
   gen:mother <https://www.wikidata.org/wiki/Q75277754> .
-  # oo 1907-08-08 Reginald Reynolds-Moreton, 1869-01-26 - 1929, herbert.ttl#Reginald_Reynolds-Moreton
+  # oo 1907-08-08 Reginald Reynolds-Moreton, 1869-01-26 - 1929, https://www.wikidata.org/wiki/Q75277760 (herbert.ttl)
 
 <https://www.wikidata.org/wiki/Q6221629>
   # John Hubert de la Poer Beresford, 8th Marquess of Waterford, 1933-07-14 – 2015-02-11
@@ -617,25 +599,119 @@
   gen:mother <https://www.wikidata.org/wiki/Q75268278> .
   # oo Amanda Thompson, daughter of Norman Thompson
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q20714114> , <#Amanda_Thompson> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q20714114> , <https://www.wikidata.org/wiki/Q76322066> ;
 	gen:startDate "1986" .
 
-<#Richard_John_Beresford,_Earl_of_Tyrone>
+<https://www.wikidata.org/wiki/Q76322068>
   # Richard John Beresford, Earl of Tyrone, b. 1987-08-19
   gen:father <https://www.wikidata.org/wiki/Q20714114> ;
-  gen:mother <#Amanda_Thompson> .
+  gen:mother <https://www.wikidata.org/wiki/Q76322066> .
   # oo Flora Richardson
   []
-    gen:spouse <#Richard_John_Beresford,_Earl_of_Tyrone> , <#Flora_Richardson> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q76322068> , <#Flora_Richardson> ;
 	gen:startDate "2017-09-30" .
-<#Lord_Marcus_Patrick_Beresford>
+<https://www.wikidata.org/wiki/Q109558347>
   # Lord Marcus Patrick Beresford, b. 1990
   gen:father <https://www.wikidata.org/wiki/Q20714114> ;
-  gen:mother <#Amanda_Thompson> .
-<#Lady_Camilla_Juliet_Beresford>
+  gen:mother <https://www.wikidata.org/wiki/Q76322066> .
+<https://www.wikidata.org/wiki/Q109558353>
   # Lady Camilla Juliet Beresford, b. 1995-07-25
   gen:father <https://www.wikidata.org/wiki/Q20714114> ;
-  gen:mother <#Amanda_Thompson> .
+  gen:mother <https://www.wikidata.org/wiki/Q76322066> .
+
+
+# Beresford Baronets of Bagnall
+<https://www.wikidata.org/wiki/Q6661642>
+  # Sir John de la Poer Beresford, 1st Baronet, 1766 - 1844-10-02
+  # 1st Baronet Beresford, of Bagnall, co. Waterford [U.K.] 1814-05-21
+  gen:father <https://www.wikidata.org/wiki/Q886541> . # illegitimate
+  # oo Mary Molloy, d. 1813-07
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6661642> , <https://www.wikidata.org/wiki/Q75434359> ;
+	gen:startDate "1809-05" .
+  # oo Harriet Elizabeth Peirse, d. 1825-02-28, daughter of Henry Peirse
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6661642> , <https://www.wikidata.org/wiki/Q75434367> ;
+	gen:startDate "1815-08-17" .
+  # oo Amelia Baillie, d. 1862-12-17, daughter of James Baillie
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6661642> , <https://www.wikidata.org/wiki/Q75434647> ;
+	gen:startDate "1836-05-26" .
+
+<https://www.wikidata.org/wiki/Q26197699>
+  # Sir George de la Poer Beresford, 2nd Baronet, 1811-03-01 – 1873-02-11
+  gen:father <https://www.wikidata.org/wiki/Q6661642> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75434359> .
+  # oo Elizabeth Lucas, d. 1898-12-23, daughter of Davis Lucas
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q26197699> , <https://www.wikidata.org/wiki/Q75290447> ;
+	gen:startDate "1846-03-01" .
+<https://www.wikidata.org/wiki/Q75249994>
+  # Georgiana Beresford, d. 1870-09-07
+  gen:father <https://www.wikidata.org/wiki/Q6661642> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75434367> .
+  # oo 1842-07-22 Rt. Rev. Reginald Courtenay, 1813-02-26 - 1906-04-13, https://www.wikidata.org/wiki/Q7308652
+<https://www.wikidata.org/wiki/Q75434357>
+  # Henry William de la Poer Beresford-Peirse, 1820-09-27 - 1859-07-24
+  gen:father <https://www.wikidata.org/wiki/Q6661642> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75434367> .
+  # oo Henrietta Anne Theodosia Monson, 1826 - 1921-10-28
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75434357> , <https://www.wikidata.org/wiki/Q75434370> ;
+	gen:startDate "1848-03-02" .
+
+<https://www.wikidata.org/wiki/Q75434253>
+  # Marcia Mary Ann Harriet Wilhelmina de la Poer Beresford, d. 1908-06-29
+  gen:father <https://www.wikidata.org/wiki/Q26197699> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75290447> .
+  # oo 1875-06-23 Francis Colebrooke Beresford-Drummond, 1846-11-06 - 1926-04-09, https://www.wikidata.org/wiki/Q75434365 (drummond.ttl)
+<https://www.wikidata.org/wiki/Q75282788>
+  # Sir Henry Monson de la Poer Beresford-Peirse, 3rd Baronet, 1850-09-25 - 1926-07-08
+  gen:father <https://www.wikidata.org/wiki/Q75434357> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75434370> .
+  # oo Lady Adelaide Mary Lucy Bernard, 1846-09-02 - 1884-09-29 (boyle.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75282788> , <https://www.wikidata.org/wiki/Q75282790> ;
+	gen:startDate "1873-11-11" .
+  # oo Henrietta Smith-Dodsworth, 1854 - 1926-11-01
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75282788> , <https://www.wikidata.org/wiki/Q75434688> ;
+	gen:startDate "1886-01-23" .
+
+<https://www.wikidata.org/wiki/Q75299294>
+  # Sir Henry Bernard de la Poer Beresford-Peirse, 4th Baronet, 1875-01-09 - 1949-05-14
+  gen:father <https://www.wikidata.org/wiki/Q75282788> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75282790> .
+  # oo Lady Mabel Marjorie Campbell, 1876-02-24 - 1966-01-13
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75299294> , <https://www.wikidata.org/wiki/Q75299292> ;
+	gen:startDate "1904-07-07" .
+
+<https://www.wikidata.org/wiki/Q41665550>
+  # Sir Henry Campbell de La Poer Beresford-Peirse, 5th Baronet, 1905-04-24 - 1972-08-11
+  gen:father <https://www.wikidata.org/wiki/Q75299294> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75299292> .
+  # oo Margaret Grant, d. 1995-02-01, daughter of Frank Morrison Seafield Grant
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q41665550> , <https://www.wikidata.org/wiki/Q75434733> ;
+	gen:startDate "1932-04-19" .
+
+<https://www.wikidata.org/wiki/Q75434347>
+  # Sir Henry Grant de la Poer Beresford-Peirse, 6th Baronet, 1933-02-07 - 2013-01-24
+  gen:father <https://www.wikidata.org/wiki/Q41665550> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75434733> .
+  # oo Jadranka Njers, daughter of Ivan Njers
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75434347> , <https://www.wikidata.org/wiki/Q75434348> ;
+	gen:startDate "1966-08-13" .
+
+<https://www.wikidata.org/wiki/Q75434352>
+  # Sir Henry Njers de la Poer Beresford-Peirse, 7th Baronet, b. 1969-03-25
+  gen:father <https://www.wikidata.org/wiki/Q75434347> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75434348> .
+  # oo Joanna Mary Tamlyn, b. 1978, daughter of Antony Johnson Tamlyn and Susannah V. Rowan
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75434352> , <https://www.wikidata.org/wiki/Q75586646> .
 
 
 # Baron Decies
@@ -645,7 +721,7 @@
   # Bishop of Dromore 1780–1782
   # Bishop of Ossory 1782–1794 
   # Archbishop of Tuam 1794
-  # 1st Baron Decies, of Decies, co. Waterford 1812-12-22
+  # 1st Baron Decies, of Decies, co. Waterford [Ireland] 1812-12-22
   gen:birthDate "1743-04-16" ;
   gen:deathDate "1819-09-06" ;
   gen:father <https://www.wikidata.org/wiki/Q886223> ;
@@ -659,15 +735,17 @@
   # Marcus Beresford, 1764-06-01 – 1803-01-06
   gen:father <https://www.wikidata.org/wiki/Q16157445> ;
   gen:mother <https://www.wikidata.org/wiki/Q75277989> .
-<#John_Horsley-Beresford,_2nd_Baron_Decies>
+<https://www.wikidata.org/wiki/Q75269058>
   gen:name "John Horsley-Beresford, 2nd Baron Decies"@en ;
+  # John Beresford
+  # John Horsley-Beresford 1810-07~
   gen:birthDate "1773-01-20" ;
   gen:deathDate "1855-03-01" ;
   gen:father <https://www.wikidata.org/wiki/Q16157445> ;
   gen:mother <https://www.wikidata.org/wiki/Q75277989> .
   # oo Charlotte Philadelphia Horsley, d. 1852-03-09, daughter of Robert Horsley
   []
-    gen:spouse <#John_Horsley-Beresford,_2nd_Baron_Decies> , <#Charlotte_Philadelphia_Horsley> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75269058> , <https://www.wikidata.org/wiki/Q75273540> ;
 	gen:startDate "1810-07-26" .
 <https://www.wikidata.org/wiki/Q62383951>
   gen:name "Hon. Louisa de la Poer Beresford"@en ;
@@ -687,13 +765,14 @@
   gen:mother <https://www.wikidata.org/wiki/Q75277989> .
   # oo 1796-01 Thomas Bermingham Daly Henry Sewell, b. 1774-02-13, https://www.wikidata.org/wiki/Q75275715 (drummond.ttl)
 <https://www.wikidata.org/wiki/Q20810827>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75278095> ;
   # Rev. Hon. George de la Poer Beresford, 1776-05-21 - 1842-08-10/-09-10
   # Provost of Tuam 1816
   gen:father <https://www.wikidata.org/wiki/Q16157445> ;
   gen:mother <https://www.wikidata.org/wiki/Q75277989> .
   # oo Susan Gorges, 1773 - 1848-01
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q20810827> , <#Susan_Gorges> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q20810827> , <https://www.wikidata.org/wiki/Q75278096> ;
 	gen:startDate "1798-05-21" .
 <https://www.wikidata.org/wiki/Q75278222>
   # Rev. Hon. William Beresford, 1780-11-20 1830-06-27
@@ -706,58 +785,58 @@
 
 <https://www.wikidata.org/wiki/Q75278250>
   # William Robert John Horsley-Beresford, 3rd Baron Decies, 1811-06 - 1893-07-03
-  gen:father <#John_Horsley-Beresford,_2nd_Baron_Decies> ;
-  gen:mother <#Charlotte_Philadelphia_Horsley> .
+  gen:father <https://www.wikidata.org/wiki/Q75269058> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75273540> .
   # oo Catherine Anne Dent, d. 1941-02-27, daughter of William Dent Dent
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75278250> , <https://www.wikidata.org/wiki/Q75278258> ;
 	gen:startDate "1860-07-31" .
-<#Louisa_Elizabeth_Horsley-Beresford>
+<https://www.wikidata.org/wiki/Q75268220>
   gen:name "Hon. Louisa Elizabeth Horsley-Beresford" ;
   gen:birthDate "1814-04" ;
   gen:deathDate "1891-10-14" ;
-  gen:father <#John_Horsley-Beresford,_2nd_Baron_Decies> ;
-  gen:mother <#Charlotta_Philadelphia_Horsley> .
+  gen:father <https://www.wikidata.org/wiki/Q75269058> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75273540> .
   # oo 1834-11-25 Ernest Augustus Charles Brudenell-Bruce, 3rd Marquess of Ailesbury, 1811-01-08 - 1886-10-18, https://www.wikidata.org/wiki/Q5392837
 <https://www.wikidata.org/wiki/Q18819378>
   # Hon. Caroline Agnes Horsley-Beresford, 1818-03-14 - 1894-11-16
-  gen:father <#John_Horsley-Beresford,_2nd_Baron_Decies> ;
-  gen:mother <#Charlotte_Philadelphia_Horsley> .
+  gen:father <https://www.wikidata.org/wiki/Q75269058> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75273540> .
   # oo 1836-10-15 James Graham, 4th Duke of Montrose, 1799-07-16 - 1874-12-30, https://www.wikidata.org/wiki/Q495977
-  # oo 1876-01-22 William Stuart Stirling-Crawford, d. 1883-02-23, #William_Stuart_Stirling-Crawford
+  # oo 1876-01-22 William Stuart Stirling-Crawford, d. 1883-02-23, https://www.wikidata.org/wiki/Q75331691
   # oo 1888-07-26 Marcus Henry Milner, 1864-04-16 - 1939-01-16, https://www.wikidata.org/wiki/Q18161454 (mordaunt.ttl)
 <https://www.wikidata.org/wiki/Q6758033>
   # Marcus Beresford, 1800-07-28 - 1876-03-22
   gen:father <https://www.wikidata.org/wiki/Q20810827> ;
-  gen:mother <#Susan_Gorges> .
+  gen:mother <https://www.wikidata.org/wiki/Q75278096> .
   # oo Isabella Sewell, d. 1836-08
   []
     gen:spouse <https://www.wikidata.org/wiki/Q6758033> , <https://www.wikidata.org/wiki/Q75278109> ;
 	gen:startDate "1828-10" .
   # oo Caroline Fane, 1818-07-07 - 1895-01-08
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q6758033> , <fane.ttl#Caroline_Fane> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q6758033> , <https://www.wikidata.org/wiki/Q75278107> ;
 	gen:startDate "1838-01-22" .
-<#George_Hamilton_de_la_Poer_Beresford>
+<https://www.wikidata.org/wiki/Q75278121>
   # Rev. George Hamilton de la Poer Beresford, 1801 - 1869-03-02
   gen:father <https://www.wikidata.org/wiki/Q20810827> ;
-  gen:mother <#Susan_Gorges> .
+  gen:mother <https://www.wikidata.org/wiki/Q75278096> .
   # oo Elizabeth Nisbet, d. 1847-11, daughter of Matthew Nisbet
   []
-    gen:spouse <#George_Hamilton_de_la_Poer_Beresford> , <#Elizabeth_Nisbet> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75278121> , <https://www.wikidata.org/wiki/Q75278122> ;
 	gen:startDate "1829-11" .
   # oo Marianne Sarah Saunderson, d. 1884-02-01, daughter of Robert Saunderson
   []
-    gen:spouse <#George_Hamilton_de_la_Poer_Beresford> , <#Marianne_Sarah_Saunderson> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75278121> , <https://www.wikidata.org/wiki/Q75278125> ;
 	gen:startDate "1853-03-02" .
 
-<#William_Horsley-Beresford,_4th_Baron_Decies>
+<https://www.wikidata.org/wiki/Q75278253>
   # William Marcus de la Poer Horsley-Beresford, 4th Baron Decies, 1865-01-12 - 1910-07-30
   gen:father <https://www.wikidata.org/wiki/Q75278250> ;
   gen:mother <https://www.wikidata.org/wiki/Q75278258> .
   # oo Maria Gertrude Willoughby, d. 1939
   []
-    gen:spouse <#William_Horsley-Beresford,_4th_Baron_Decies> , <#Maria_Gertrude_Willoughby> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75278253> , <https://www.wikidata.org/wiki/Q75278252> ;
 	gen:startDate "1901-03-12" .
 <https://www.wikidata.org/wiki/Q6221625>
   # John Graham Hope de la Poer Beresford, 5th Baron Decies, 1866-12-05 – 1944-01-31
@@ -771,112 +850,112 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q6221625> , <https://www.wikidata.org/wiki/Q1331340> ;
 	gen:startDate "1936-05-25" .
-<#Seton_Robert_de_la_Poer_Horsley-Beresford>
+<https://www.wikidata.org/wiki/Q28966253>
   # Hon. Seton Robert de la Poer Horsley-Beresford, 1868 - 1928-05-28
   gen:father <https://www.wikidata.org/wiki/Q75278250> ;
   gen:mother <https://www.wikidata.org/wiki/Q75278258> .
   # oo Delia Dorothy O'Sullivan, daughter of Daniel John O'Sullivan
   []
-    gen:spouse <#Seton_Robert_de_la_Poer_Horsley-Beresford> , <#Delia_Dorothy_O'Sullivan> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q28966253> , <https://www.wikidata.org/wiki/Q75278263> ;
 	gen:startDate "1899" ;
 	gen:divorceDate "1909" .
-  # oo Joan Rosemary Graves-Sawle
+  # oo Joan Rosemary Graves-Sawle, 1890 - 1971
   []
-    gen:spouse <#Seton_Robert_de_la_Poer_Horsley-Beresford> , <#Joan_Rosemary_Graves-Sawle> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q28966253> , <https://www.wikidata.org/wiki/Q75278267> ;
 	gen:startDate "1915-06-28" .
 <https://www.wikidata.org/wiki/Q75278340>
   # Hon. Charlotte Ernestine Horsley-Beresford, 1871-09-03 - 1923-09-28
   gen:father <https://www.wikidata.org/wiki/Q75278250> ;
   gen:mother <https://www.wikidata.org/wiki/Q75278258> .
   # oo 1892-10-08 Cameron Barclay, 1866 - 1954-08-03, https://www.wikidata.org/wiki/Q75278342
-<#William_Arthur_de_la_Poer_Horsley-Beresford>
+<https://www.wikidata.org/wiki/Q75278275>
   # Hon. William Arthur de la Poer Horsley-Beresford, 1878-08-09 - 1949-07-11
   gen:father <https://www.wikidata.org/wiki/Q75278250> ;
   gen:mother <https://www.wikidata.org/wiki/Q75278258> .
   # oo Florence Miller, d. 1969, daughter of Gardner L. Miller
   []
-    gen:spouse <#William_Arthur_de_la_Poer_Horsley-Beresford> , <#Florence_Miller> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75278275> , <https://www.wikidata.org/wiki/Q75278277> ;
 	gen:startDate "1901-06-17" ;
 	gen:divorceDate "1919" .
   # oo Laura Coventry, 1899-08-31 - 1958
   []
-    gen:spouse <#William_Arthur_de_la_Poer_Horsley-Beresford> , <coventry.ttl#Laura_Coventry> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75278275> , <https://www.wikidata.org/wiki/Q75278280> ;
 	gen:startDate "1919-07-22" ;
 	gen:divorceDate "1928" .
-  # oo Georgina Leonora Mosselmans, d. 1969-04-30
+  # oo Georgina Leonora Mosselmans, d. 1969-04-30 (douglas.ttl)
   []
-    gen:spouse <#William_Arthur_de_la_Poer_Horsley-Beresford> , <douglas.ttl#Georgina_Leonora_Mosselmans> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75278275> , <https://www.wikidata.org/wiki/Q75266599> ;
 	gen:startDate "1933-08-18" ;
 	gen:divorceDate "1940" .
   # oo Ida Kaye, d. 1990-08-20
   []
-    gen:spouse <#William_Arthur_de_la_Poer_Horsley-Beresford> , <#Ida_Kaye> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75278275> , <https://www.wikidata.org/wiki/Q75278292> ;
 	gen:startDate "1941" .
-<#Ethel_Louisa_Beresford>
+<https://www.wikidata.org/wiki/Q75389333>
   # Ethel Louisa Beresford, 1856-01-20 - 1925-11-05
   gen:father <https://www.wikidata.org/wiki/Q6758033> ;
-  gen:mother <fane.ttl#Caroline_Fane> .
-  # oo 1880-09-07 Henry Montagu Spencer, 1851-11-13 - 1924-10-26, spencer.ttl#Henry_Montagu_Spencer
-<#Henry_Tristram_de_la_Poer_Beresford>
+  gen:mother <https://www.wikidata.org/wiki/Q75278107> .
+  # oo 1880-09-07 Henry Montagu Spencer, 1851-11-13 - 1924-10-26, https://www.wikidata.org/wiki/Q75389331
+<https://www.wikidata.org/wiki/Q75278153>
   # Henry Tristram de la Poer Beresford, 1841-07-29 - 1930-08-12
-  gen:father <#George_Hamilton_de_la_Poer_Beresford> ;
-  gen:mother <#Elizabeth_Nisbet> .
+  gen:father <https://www.wikidata.org/wiki/Q75278121> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75278122> .
   # oo Louisa Margaret Coventry, d. 1933-10-01, daughter of William Coventry
   []
-    gen:spouse <#Henry_Tristram_de_la_Poer_Beresford> , <#Louisa_Margaret_Coventry> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75278153> , <https://www.wikidata.org/wiki/Q75278155> ;
 	gen:startDate "1884" .
 
-<#Arthur_Beresford,_6th_Baron_Decies>
+<https://www.wikidata.org/wiki/Q75278346>
   # Arthur George Marcus Douglas de la Poer Beresford, 6th Baron Decies, 1915-04-24 - 1992-11-07
   gen:father <https://www.wikidata.org/wiki/Q6221625> ;
   gen:mother <https://www.wikidata.org/wiki/Q1601874> .
   # oo Ann Christina Margo Trevor, d. 1945-03-28, daughter of Sidney Walter Trevor
   []
-    gen:spouse <#Arthur_Beresford,_6th_Baron_Decies> , <#Ann_Christina_Margo_Trevor> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75278346> , <https://www.wikidata.org/wiki/Q75278358> ;
 	gen:startDate "1937-10-21" .
   # oo Diana Mary Turner-Cain, d. 2004-03-14, daughter of George Turner-Cain
   []
-    gen:spouse <#Arthur_Beresford,_6th_Baron_Decies> , <#Diana_Mary_Turner-Cain> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75278346> , <https://www.wikidata.org/wiki/Q75278361> ;
 	gen:startDate "1945-09-12" .
-<#Sir_George_de_la_Poer_Beresford>
+<https://www.wikidata.org/wiki/Q75278157>
   # Sir George de la Poer Beresford, 1885-07-21 - 1964-09-29
-  gen:father <#Henry_Tristram_de_la_Poer_Beresford> ;
-  gen:mother <#Louisa_Margaret_Coventry> .
+  gen:father <https://www.wikidata.org/wiki/Q75278153> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75278155> .
   # oo Margaret Ethel Granville Thynne, 1883-10-09 - 1963-12-30
   []
-    gen:spouse <#Sir_George_de_la_Poer_Beresford> , <thynne.ttl#Margaret_Ethel_Granville_Thynne> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75278157> , <https://www.wikidata.org/wiki/Q75278159> ;
 	gen:startDate "1916-11-15" .
 
 <https://www.wikidata.org/wiki/Q6758030>
   # Marcus Hugh Tristram de la Poer Beresford, 7th Baron Decies, b. 1948-08-05
-  gen:father <#Arthur_Beresford,_6th_Baron_Decies> ;
-  gen:mother <#Diana_Mary_Turner-Cain> .
+  gen:father <https://www.wikidata.org/wiki/Q75278346> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75278361> .
   # oo Sarah Jane Gunnell, daughter of Basil Gunnell
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q6758030> , <#Sarah_Jane_Gunnell> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q6758030> , <https://www.wikidata.org/wiki/Q75821007> ;
 	gen:startDate "1970-04-11" ;
 	gen:divorceDate "1974" .
   # oo Edel Jeannette Hendron, daughter of Vincent Ambrose Hendron
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q6758030> , <#Edel_Jeannette_Hendron> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q6758030> , <https://www.wikidata.org/wiki/Q75821012> ;
 	gen:startDate "1981" .
 
-<#Louisa_Katherine_de_la_Poer_Beresford>
+<https://www.wikidata.org/wiki/Q75821020>
   # Hon. Louisa Katherine de la Poer Beresford, b. 1984-10-12
   gen:father <https://www.wikidata.org/wiki/Q6758030> ;
-  gen:mother <#Edel_Jeannette_Hendron> .
-<#Robert_Marcus_Duncan_de_la_Poer_Beresford>
+  gen:mother <https://www.wikidata.org/wiki/Q75821012> .
+<https://www.wikidata.org/wiki/Q75821016>
   # Hon. Robert Marcus Duncan de la Poer Beresford, b. 1988-07-14
   gen:father <https://www.wikidata.org/wiki/Q6758030> ;
-  gen:mother <#Edel_Jeannette_Hendron> .
-<#David_George_Morley_Hugh_de_la_Poer_Beresford>
+  gen:mother <https://www.wikidata.org/wiki/Q75821012> .
+<https://www.wikidata.org/wiki/Q75821018>
   # Hon. David George Morley Hugh de la Poer Beresford, b. 1991-05-04
   gen:father <https://www.wikidata.org/wiki/Q6758030> ;
-  gen:mother <#Edel_Jeannette_Hendron> .
-<#Jessica_Laragh_de_la_Poer_Beresford>
+  gen:mother <https://www.wikidata.org/wiki/Q75821012> .
+<https://www.wikidata.org/wiki/Q75821023>
   # Hon. Jessica Laragh de la Poer Beresford, b. 1996-11-16
   gen:father <https://www.wikidata.org/wiki/Q6758030> ;
-  gen:mother <#Edel_Jeannette_Hendron> .
+  gen:mother <https://www.wikidata.org/wiki/Q75821012> .
 
 
 # ----
@@ -944,7 +1023,7 @@
 # ====
 <https://www.wikidata.org/wiki/Q7528403>
   # Sir Oliver St. George, 1st Baronet, d. 1695-10
-  # 1st Baronet St. George, of Carrickdrumrusk, co. Leitrim 1660-09-05
+  # 1st Baronet St. George, of Carrickdrumrusk, co. Leitrim [Ireland] 1660-09-05
   gen:father <https://www.wikidata.org/wiki/Q75279224> ; # Sir George St. George
   gen:mother <https://www.wikidata.org/wiki/Q75418686> . # Katherine Gifford
   # oo Olivia Beresford
@@ -973,7 +1052,7 @@
 <https://www.wikidata.org/wiki/Q5544759>
   # George St. George, 1st Baron Saint George of Hatley Saint George, 1658~ – 1735-08-04
   # 2nd Baronet St. George, of Carrickdrumrusk, co. Leitrim 1695-10
-  # 1st Baron Saint George of Hatley Saint George, in the counties of Roscommon and Leitrim 1715-04-18
+  # 1st Baron Saint George of Hatley Saint George, in the counties of Roscommon and Leitrim [Ireland] 1715-04-18
   gen:father <https://www.wikidata.org/wiki/Q7528403> ;
   gen:mother <https://www.wikidata.org/wiki/Q75657731> .
   # oo Hon. Margaret Skeffington, d. 1711 (taylour.ttl)
@@ -1026,7 +1105,7 @@
 
 <https://www.wikidata.org/wiki/Q7526050>
   # Sir Arthur Brooke, 1st Baronet, 1726 – 1785-03-07
-  # 1st Baronet Brooke, of Colebrooke, co. Fermanagh 1764-01-03
+  # 1st Baronet Brooke, of Colebrooke, co. Fermanagh [Ireland] 1764-01-03
   gen:father <https://www.wikidata.org/wiki/Q5718685> ;
   gen:mother <https://www.wikidata.org/wiki/Q75502414> .
   # oo Margaret Fortescue, 1728-03-27 - 1756-09-22
@@ -1058,7 +1137,7 @@
   # oo 1769-04-24 Thomas Vesey, 1st Viscount de Vesci of Abbey Leix, 1735 - 1804-10-13, https://www.wikidata.org/wiki/Q23619248
 <https://www.wikidata.org/wiki/Q75381328>
   # Sir Henry Brooke, 1st Baronet, 1770-05-10 - 1834-03-24
-  # 1st Baronet Brooke, of Colebrooke, co. Fermanagh 1822-01-07
+  # 1st Baronet Brooke, of Colebrooke, co. Fermanagh [U.K.] 1822-01-07
   gen:father <https://www.wikidata.org/wiki/Q75500247> ;
   gen:mother <https://www.wikidata.org/wiki/Q75503415> .
   # oo Harriet Butler, b. 1770 (hill.ttl)
@@ -1125,7 +1204,7 @@
 <https://www.wikidata.org/wiki/Q336890>
   # Basil Stanlake Brooke, 1st Viscount Brookeborough, 1888-06-09 - 1973-08-18
   # 5th Baronet Brooke, of Colebrooke, co. Fermanagh 1907-11-27
-  # 1st Viscount Brookeborough, of Colebrooke, co. Fermanagh 1952-07-01
+  # 1st Viscount Brookeborough, of Colebrooke, co. Fermanagh [U.K.] 1952-07-01
   gen:father <https://www.wikidata.org/wiki/Q75350500> ;
   gen:mother <https://www.wikidata.org/wiki/Q75503767> .
   # oo Cynthia Mary Sergison, d. 1970-03-02 (leigh.ttl)
@@ -1154,7 +1233,7 @@
 
 <https://www.wikidata.org/wiki/Q7593231>
   # St. George Ussher St. George, 1st Baron Saint George, 1715~ – 1775-01-02
-  # 1st Baron Saint George, of Hatley St. George, co. Roscommon 1763-05-24
+  # 1st Baron Saint George, of Hatley St. George, co. Roscommon [Ireland] 1763-05-24
   gen:father <https://www.wikidata.org/wiki/Q16859615> ;
   gen:mother <https://www.wikidata.org/wiki/Q75789073> .
   # oo Elizabeth Dominick, 1732~ - 1813-02-26, daughter of Christopher Dominick
@@ -1181,74 +1260,75 @@
 # ====
 
 # ----
-#<https://www.wikidata.org/wiki/Q5786156>
+<https://www.wikidata.org/wiki/Q5786156>
   # Hugh Hamilton, 1st Viscount of Glenawly, 1600~ – 1678-04
-  # Baron Hamilton de Deserf 1654
-  # 1st Lord Hamilton, Baron of Glenawly, co. Fermanagh 1661-03-02
-  # son of Malcolm Hamilton
-  # and Mary Wilkie
+  # Baron Hamilton de Deserf [Sweden] 1654
+  # 1st Lord Hamilton, Baron of Glenawly, co. Fermanagh [Ireland] 1661-03-02
+  gen:father <https://www.wikidata.org/wiki/Q5785848> ; # Malcolm Hamilton
+  gen:mother <https://www.wikidata.org/wiki/Q75398716> . # Mary Wilkie
   # oo Susan Balfour, d. 1687-12-11, daughter of Sir William Balfour of Pitcullo and Isabella ???
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q5786156> , <#Susan_Balfour> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q5786156> , <https://www.wikidata.org/wiki/Q75398720> ;
 	gen:startDate "1659-05-11" .
 
-<#Nichola_Sophia_Hamilton>
+<https://www.wikidata.org/wiki/Q75398737>
   # Hon. Nichola Sophia Hamilton, 1666-02-23 - 1713-02-23
   gen:father <https://www.wikidata.org/wiki/Q5786156> ;
-  gen:mother <#Susan_Balfour> .
+  gen:mother <https://www.wikidata.org/wiki/Q75398720> .
   # oo 1687-02 Sir Tristram Beresford, 3rd Baronet, 1669 – 1701-06-16, https://www.wikidata.org/wiki/Q7529335
-<#Arabella_Susanna_Hamilton>
+<https://www.wikidata.org/wiki/Q75398732>
   # Hon. Arabella Susanna Hamilton, 1667-02-07 - 1708-12-10
   gen:father <https://www.wikidata.org/wiki/Q5786156> ;
-  gen:mother <#Susan_Balfour> .
+  gen:mother <https://www.wikidata.org/wiki/Q75398720> .
   # oo 1708-07-17 Hon. Henry Bertie, 1675-05-04 - 1735-12-18, https://www.wikidata.org/wiki/Q5718149
 
 # ----
-#<#Matthew_Pennefather>
+#<https://www.wikidata.org/wiki/Q75255400>
   # Matthew Pennefather
   # son of Matthew Pennefather
   # and Levina Kingsmill
   # oo Catherine Beresford
   []
-    gen:spouse <#Matthew_Pennefather> , <#Catherine_Beresford> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75255400> , <https://www.wikidata.org/wiki/Q75255405> ;
 	gen:startDate "1697" .
 
-<#Elizabeth_Pennefather>
+<https://www.wikidata.org/wiki/Q75255398>
   # Elizabeth Pennefather, 1713~ - 1737-03-18
-  gen:father <#Matthew_Pennefather> ;
-  gen:mother <#Catherine_Beresford> .
-  # oo 1735-04-10 Alexander MacDonnell, 5th Earl of Antrim, 1713-07-22 - 1775-10-13, https://www.wikidata.org/wiki/Q71680049 (manners.ttl)
+  gen:father <https://www.wikidata.org/wiki/Q75255400> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75255405> .
+  # oo 1735-04-10 Alexander MacDonnell, 5th Earl of Antrim, 1713-07-22 - 1775-10-13, https://www.wikidata.org/wiki/Q71680049 (macdonald.ttl)
 
 # ----
-#<#Thomas_Taylor>
+#<https://www.wikidata.org/wiki/Q75709142>
   # Thomas Taylor, 1707 - 1763
   # oo Anne Beresford, 1725 - 1820
   []
-    gen:spouse <#Thomas_Taylor> , <#Anne_Beresford> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75709142> , <https://www.wikidata.org/wiki/Q76347522> ;
 	gen:startDate "1747-10-17" .
 
-<#Elizabeth_Taylor>
+<https://www.wikidata.org/wiki/Q76348495>
   # Elizabeth Taylor, 1756 - 1849
-  gen:father <#Thomas_Taylor> ;
-  gen:mother <#Anne_Beresford> .
+  gen:father <https://www.wikidata.org/wiki/Q75709142> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76347522> .
   # oo Very Rev. Cadogan Keatinge, b. 1721, Dean of Clogher, https://www.wikidata.org/wiki/Q17007287
-<#Annabella_Taylor>
+<https://www.wikidata.org/wiki/Q76350983>
   # Annabella Taylor, 1767 - 1833
-  gen:father <#Thomas_Taylor> ;
-  gen:mother <#Anne_Beresford> .
+  gen:father <https://www.wikidata.org/wiki/Q75709142> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76347522> .
   # oo Sir Hugh Robert Rollo Gillespie, 1766-01-21 – 1814-10-31, https://www.wikidata.org/wiki/Q7361287
 # ----
 #<https://www.wikidata.org/wiki/Q17007287>
-  # Very Rev. Cadogan Keatinge, b. 1721, Dean of Clogher
+  # Very Rev. Cadogan Keatinge, b. 1721
+  # Dean of Clogher
   # oo Elizabeth Taylor, 1756 - 1849
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q17007287> , <#Elizabeth_Taylor> .
+    gen:spouse <https://www.wikidata.org/wiki/Q17007287> , <https://www.wikidata.org/wiki/Q76348495> .
 # ----
 #<https://www.wikidata.org/wiki/Q7361287>
   # Sir Hugh Robert Rollo Gillespie, 1766-01-21 – 1814-10-31
   # oo Annabella Taylor, 1767 - 1833
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q7361287> , <#Annabella_Taylor> .
+    gen:spouse <https://www.wikidata.org/wiki/Q7361287> , <https://www.wikidata.org/wiki/Q76350983> .
 
 # ----
 #<https://www.wikidata.org/wiki/Q7969131>
@@ -1259,7 +1339,7 @@
   gen:father <https://www.wikidata.org/wiki/Q7969131> .
   # oo Lady Frances Maria Beresford, 1731-10-09 - 1815
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q3132779> , <#Lady_Frances_Maria_Beresford> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q3132779> , <https://www.wikidata.org/wiki/Q75277999> ;
 	gen:startDate "1762-04-13" .
 
 # ----
@@ -1296,27 +1376,28 @@
   # oo 1811-05-05 Dominick Browne, 1st Baron Oranmore and Browne, 1787-05-28 – 1860-01-30, https://www.wikidata.org/wiki/Q5290904
 
 # ----
-<#Mary_Molloy>
+<https://www.wikidata.org/wiki/Q75434359>
   # Mary Molloy, d. 1813-07
   gen:father <https://www.wikidata.org/wiki/Q4772826> .
   # oo 1809-05 Sir John de la Poer Beresford, 1st Baronet, 1766 - 1844-10-02, https://www.wikidata.org/wiki/Q6661642
 
 # ----
-#<#Edward_Brydges>
+#<https://www.wikidata.org/wiki/Q75564520>
   # Edward Brydges, d. 1780
   # son of John Brydges
   # and Jane Gibbon
   # oo Jemima Egerton
   []
-    gen:spouse <#Edward_Brydges> , <egerton.ttl#Jemima_Egerton> .
+    gen:spouse <https://www.wikidata.org/wiki/Q75564520> , <https://www.wikidata.org/wiki/Q75564536> .
 
 <https://www.wikidata.org/wiki/Q24254865>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75278015> ;
   # Sir John William Head Brydges,  1764 - 1839-09-06
-  gen:father <#Edward_Brydges> ;
-  gen:mother <egerton.ttl#Jemima_Egerton> .
+  gen:father <https://www.wikidata.org/wiki/Q75564520> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75564536> .
   # oo Lady Isabella Anne Beresford, 1776-05-28 - 1850-05-07
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q24254865> , <#Lady_Isabella_Anne_Beresford> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q24254865> , <https://www.wikidata.org/wiki/Q75278014> ;
 	gen:startDate "1812-04-01" .
 
 # ----
@@ -1326,22 +1407,61 @@
   # and Catherine Sullivan
   # oo Lady Elizabeth Louisa Beresford, 1783-02-02 - 1856-01-06
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q5641356> , <#Lady_Elizabeth_Louisa_Beresford> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q5641356> , <https://www.wikidata.org/wiki/Q75278017> ;
 	gen:startDate "1816-07-10" .
 
 # ----
-#<https://www.wikidata.org/wiki/Q42586294>
+#<https://www.wikidata.org/wiki/Q7528654>
+  # Sir Richard Reynell, 1st Baronet, 1626 - 1699-10-18
+  # 1st Baronet Reynell, of Laleham in the County of Middlesex [Ireland] 1678-07-27
+  # son of Sir Richard Reynell, 1583 - 1648
+  # and oo Mary Reynell
+  # oo Hester Beckett, d. 1682, daughter of Randall Beckett of Dublin
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7528654> , <#Hester_Beckett> ;
+	gen:startDate "1660" .
+
+<https://www.wikidata.org/wiki/Q16859507>
+  # Sir Richard Reynell, 2nd Baronet, 1673 - 1723-06
+  gen:father <https://www.wikidata.org/wiki/Q7528654> ;
+  gen:mother <#Hester_Beckett> .
+  # oo Elizabeth Reynell, d. 1706, daughter of Thomas Reynell of Laleham, Middlesex and Anne Balam
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16859507> , <#Elizabeth_Reynell> .
+
+<#Sir_Thomas_Reynell,_3rd_Baronet>
+  # Sir Thomas Reynell, 3rd Baronet, 1699 – 1775
+  gen:father <https://www.wikidata.org/wiki/Q16859507> ;
+  gen:mother <#Elizabeth_Reynell> .
+
+<#Sir_Richard_Reynell,_4th_Baronet>
+  # Sir Richard Reynell, 4th Baronet, 1735~ – 1798
+  gen:father <#Sir_Thomas_Reynell,_3rd_Baronet> .
+<#Thomas_Reynell>
+  # Thomas Reynell, 1746 - 1777
+  gen:father <#Sir_Thomas_Reynell,_3rd_Baronet> .
+  # oo Anne Carty
+  []
+    gen:spouse <#Thomas_Reynell> , <#Anne_Carty> .
+
+<#Sir_Richard_Littleton_Reynell,_5th_Baronet>
+  # Sir Richard Littleton Reynell, 5th Baronet, 1772 – 1829
+  gen:father <#Thomas_Reynell> ;
+  gen:mother <#Anne_Carty> .
+<https://www.wikidata.org/wiki/Q42586294>
   # Sir Thomas Reynell, 6th Baronet, 1777-04-09 – 1848-02-10
+  gen:father <#Thomas_Reynell> ;
+  gen:mother <#Anne_Carty> .
   # oo Lady Elizabeth Louisa Beresford, 1783-02-02 - 1856-01-06
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q42586294> , <#Lady_Elizabeth_Louisa_Beresford> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q42586294> , <https://www.wikidata.org/wiki/Q75278017> ;
 	gen:startDate "1831-02-12" .
 
 # ----
 <https://www.wikidata.org/wiki/Q75277435>
   # Frances Bushe, d. 1843-05
-  gen:father <https://www.wikidata.org/wiki/Q17308857> .
-  # and Mary Grattan
+  gen:father <https://www.wikidata.org/wiki/Q17308857> ; # Gervase Parker Bushe
+  gen:mother <https://www.wikidata.org/wiki/Q75277435> . # Mary Grattan
   # oo 1794 Rt. Rev. George de la Poer Beresford, 1765-07-19 – 1841-10-16, https://www.wikidata.org/wiki/Q5536920
 
 # ----
@@ -1349,46 +1469,52 @@
   # Sir Robert Ladbroke, 1713 – 1773-10-31
   # oo Elizabeth Brown, d. 1768-10-01
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q18160477> , <#Elizabeth_Brown> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q18160477> , <https://www.wikidata.org/wiki/Q75581965> ;
 	gen:startDate "1734-11-07" .
 
 <https://www.wikidata.org/wiki/Q20737933>
   # Robert Ladbroke, 1730 - 1814-07-01
   gen:father <https://www.wikidata.org/wiki/Q18160477> ;
-  gen:mother <#Elizabeth_Brown> .
+  gen:mother <https://www.wikidata.org/wiki/Q75581965> .
   # oo Elizabeth Hannah Kingscote, b. 1751-03-22, daughter of Robert Fitzhardinge Kingscote and Mary Hammond
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q20737933> , <#Elizabeth_Hannah_Kingscote> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q20737933> , <https://www.wikidata.org/wiki/Q75567876> ;
 	gen:startDate "1769-09-19" .
 
 <https://www.wikidata.org/wiki/Q5442258>
   # Felix Calvert Ladbroke, 1771 - 1840-03-14
   gen:father <https://www.wikidata.org/wiki/Q20737933> ;
-  gen:mother <#Elizabeth_Hannah_Kingscote> .
+  gen:mother <https://www.wikidata.org/wiki/Q75567876> .
   # oo Mary Anne Shubrick
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5442258> , <https://www.wikidata.org/wiki/Q75582011> .
 
-<#Felix_Ladbroke>
+<https://www.wikidata.org/wiki/Q75582023>
   # Felix Ladbroke, 1808-08-22 - 1889-11-06
-  gen:father <https://www.wikidata.org/wiki/Q5442258> .
-  # and Mary Anne Shubrick
+  gen:father <https://www.wikidata.org/wiki/Q5442258> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75582011> .
   # oo Elizabeth Beresford, 1795 - 1856-12-07
   []
-    gen:spouse <#Felix_Ladbroke> , <#Elizabeth_Beresford> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75582023> , <https://www.wikidata.org/wiki/Q76335680> ;
 	gen:startDate "1827-06-26" .
+  # oo Selina Catherine Harriet Whyte, 1808 - 1871
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75582023> , <https://www.wikidata.org/wiki/Q75582047> ;
+	gen:startDate "1858" .
 
 # ----
-#<#Robert_Uniacke>
+#<https://www.wikidata.org/wiki/Q75277465>
   # Robert Uniacke, of Woodhouse, d. 1802
   # oo Annette Constantia Beresford, 1768-04-16 - 1836-08-08
   []
-    gen:spouse <#Robert_Uniacke> , <https://www.wikidata.org/wiki/Q75277477> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75277465> , <https://www.wikidata.org/wiki/Q75277477> ;
 	gen:startDate "1790" .
 
-<#Frances_Constantia_Uniacke>
+<https://www.wikidata.org/wiki/Q75277448>
   # Frances Constantia Uniacke, d. 1867-10-20
-  gen:father <#Robert_Uniacke> ;
+  gen:father <https://www.wikidata.org/wiki/Q75277465> ;
   gen:mother <https://www.wikidata.org/wiki/Q75277477> .
-  # oo 1844-11-15 George John Beresford, 1807-07-21 - 1864-02-11, #George_John_Beresford
+  # oo 1844-11-15 George John Beresford, 1807-07-21 - 1864-02-11, https://www.wikidata.org/wiki/Q75277459
 
 # ----
 #<https://www.wikidata.org/wiki/Q75277479>
@@ -1557,6 +1683,14 @@
     gen:spouse <https://www.wikidata.org/wiki/Q75277852> , <https://www.wikidata.org/wiki/Q75277843> ;
 	gen:startDate "1851-05-06" .
 
+<https://www.wikidata.org/wiki/Q75617696>
+  # Hugh Hamon Ingoldsby Massy, 5th Baron Massy of Duntrileague, 1827-04-14 - 1874-02-27
+  gen:father <https://www.wikidata.org/wiki/Q75617692> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75617693> .
+  # oo Isabella Nisbett, d. 1917-07-19, daughter of George More Nisbett, 7th of Cairnhill
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75617696> , <https://www.wikidata.org/wiki/Q75617698> ;
+	gen:startDate "1855-01-04" .
 <https://www.wikidata.org/wiki/Q75301460>
   # John Thomas William Massy, 6th Baron Massy of Duntrileague, 1835-08-30 - 1915-11-28
   gen:father <https://www.wikidata.org/wiki/Q75617692> ;
@@ -1573,6 +1707,51 @@
   # oo 1879-11-20 Henry Hyde Nugent Bankes, 1828-04-10 - 1883-03-26, https://www.wikidata.org/wiki/Q64685503 (nugent.ttl)
   # oo 1885-06-02 Sir Henry Style, 9th Baronet, 1826-09-03 - 1904-01-31, https://www.wikidata.org/wiki/Q5728848 (marsham.ttl)
 
+<https://www.wikidata.org/wiki/Q75617700>
+  # Hugh Somerset John Massy, 7th Baron Massy of Duntrileague, 1864-02-15 - 1926-10-20
+  gen:father <https://www.wikidata.org/wiki/Q75301460> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75301459> .
+  # oo Ellen Ida Constance Wise, d. 1922, daughter of Charles William Wise
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75617700> , <https://www.wikidata.org/wiki/Q75617701> ;
+	gen:startDate "1886-09-16" .
+
+<https://www.wikidata.org/wiki/Q75618678>
+  # Hugh Hamon Charles George Massy, 8th Baron Massy of Duntrileague, 1894-07-13 - 1958-03-20
+  gen:father <https://www.wikidata.org/wiki/Q75617700> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75617701> .
+  # oo Margaret Leonard, d. 1971-03-06, daughter of Richard Leonard
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75618678> , <https://www.wikidata.org/wiki/Q75618680> ;
+	gen:startDate "1919" .
+
+<https://www.wikidata.org/wiki/Q75618682>
+  # Hugh Hamon John Somerset Massy Massy, 9th Baron Massy of Duntrileague, 1921-06-11 - 1995-08-05
+  gen:father <https://www.wikidata.org/wiki/Q75618678> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75618680> .
+  # oo Margaret Flower, daughter of John Flower
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75618682> , <https://www.wikidata.org/wiki/Q75618684> ;
+	gen:startDate "1943-09-18" .
+
+<https://www.wikidata.org/wiki/Q75618685>
+  # David Hamon Somerset Massy, 10th Baron Massy of Duntrileague, b. 1947-03-04
+  gen:father <https://www.wikidata.org/wiki/Q75618682> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75618684> .
+<https://www.wikidata.org/wiki/Q75618687>
+  # Hon. John Hugh Somerset Massy, b. 1950-01-02
+  gen:father <https://www.wikidata.org/wiki/Q75618682> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75618684> .
+  # oo Andrea West, daughter of Alan West
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75618687> , <https://www.wikidata.org/wiki/Q75618689> ;
+	gen:startDate "1978" .
+
+<#Luke_Massy>
+  # Luke John Somerset Massy, b. 1984
+  gen:father <https://www.wikidata.org/wiki/Q75618687> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75618689> .
+
 # ----
 #<https://www.wikidata.org/wiki/Q75618359>
   # Rev. Charles Henry Barham, d. 1878-08-15, 1879-11-20
@@ -1584,14 +1763,87 @@
 # ====
 
 # ----
-#<#Sir_Robert_Adair_Hodson,_4th_Baronet>
+#<https://www.wikidata.org/wiki/Q75985131>
+  # Sir Robert Hodson, 1st Baronet, 1747 – 1809-07-19
+  # 1st Baronet Hodson, of Holybrooke House in the County of Wicklow [Ireland] 1789-08-28
+  # son of William Hodson
+  # and Eleanor Adair
+  # oo Anne Adair, daughter of Forster Adair
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75985131> , <https://www.wikidata.org/wiki/Q76098690> .
+  # oo Jane Neville, daughter of Brent Neville
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75985131> , <https://www.wikidata.org/wiki/Q75985143> ;
+	gen:startDate "1799" .
+
+<https://www.wikidata.org/wiki/Q75985144>
+  # Sir Robert Adair Hodson, 2nd Baronet, 1802-03-14 - 1831-10-19
+  gen:father <https://www.wikidata.org/wiki/Q75985131> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75985143> .
+<https://www.wikidata.org/wiki/Q75985149>
+  # Sir George Frederick John Hodson, 3rd Baronet, 1806-10-25 - 1888-04-02
+  gen:father <https://www.wikidata.org/wiki/Q75985131> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75985143> .
+  # oo Meriel Anne Neville, 1830-03-06 - 1906-03-17, daughter of Rev. Richard Neville and Anne Gore
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75985149> , <https://www.wikidata.org/wiki/Q75985149> ;
+	gen:startDate "1852-09-15" .
+
+<https://www.wikidata.org/wiki/Q75277877>
   # Sir Robert Adair Hodson, 4th Baronet, 1853-09-29 - 1921-01-03
-  # son of Sir George Frederick John Hodson, 3rd Baronet
-  # and Meriel Anne Neville
+  gen:father <https://www.wikidata.org/wiki/Q75985149> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75985149> .
   # oo Emily Frances Louisa Beresford, d. 1933-02-14
   []
-    gen:spouse <#Sir_Robert_Adair_Hodson,_4th_Baronet> , <#Emily_Frances_Louisa_Beresford> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75277877> , <https://www.wikidata.org/wiki/Q75277876> ;
 	gen:startDate "1911-04-20" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q76171477>
+  # Sir John Silvester Smith, 1st Baronet, 1734 – 1789-06-15
+  # 1st Baronet Smith, of Newland Park and Thornton Watlass, co. York [Great Britain] 1784-01-22
+  # son of John Smith
+  # and Ann Hodgson
+  # oo Henrietta Maria Dodsworth, 1735 - 1795, daughter of John Dodsworth
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76171477> , <https://www.wikidata.org/wiki/Q76171480> ;
+	gen:startDate "1761-07-20" .
+
+<https://www.wikidata.org/wiki/Q76171482>
+  # Sir Edward Dodsworth, 2nd Baronet, 1768-08-13 - 1845-12-31
+  # Edward Smith
+  # Edward Dodsworth 1821
+  gen:father <https://www.wikidata.org/wiki/Q76171477> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76171480> .
+  # oo Susannah Dawkins, d. 1830-03-13 (savile.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76171482> , <https://www.wikidata.org/wiki/Q76171484> ;
+	gen:startDate "1804-09-22" .
+<https://www.wikidata.org/wiki/Q76171487>
+  # Sir Charles Dodsworth, 3rd Baronet, 1775-08-22 - 1857-07-28
+  # Charles Smith
+  # Charles Dodsworth 1846
+  gen:father <https://www.wikidata.org/wiki/Q76171477> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76171480> .
+  # oo Elizabeth Armstrong, d. 1853-06-12, daughter of John Armstrong and unknown daughter Blayney
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76171487> , <https://www.wikidata.org/wiki/Q76171490> ;
+	gen:startDate "1808-06-08" .
+
+<https://www.wikidata.org/wiki/Q75434691>
+  # Sir Matthew Smith-Dodsworth, 4th Baronet, 1819-02-06 - 1858-04-30
+  gen:father <https://www.wikidata.org/wiki/Q76171487> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76171490> .
+  # oo Anne Julia Crowder, 1827 - 1890-02-26, daughter of John Crowder and Eliza Pulleyn Mosley
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75434691> , <https://www.wikidata.org/wiki/Q75434688> ;
+	gen:startDate "1852-09-23" .
+
+<https://www.wikidata.org/wiki/Q75434688>
+  # Henrietta Smith-Dodsworth, 1854 - 1926-11-01
+  gen:father <https://www.wikidata.org/wiki/Q75434691> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75434688> .
+  # oo 1886-01-23 Sir Henry Beresford-Peirse, 3rd Baronet, 1850-09-25 - 1926-07-08, https://www.wikidata.org/wiki/Q75282788
 
 # ----
 #<https://www.wikidata.org/wiki/Q60761514>
@@ -1626,26 +1878,50 @@
 #<https://www.wikidata.org/wiki/Q26454944>
   # Hamilton Gorges, 1739 - 1802-06-14
   # oo Anne Howard, daughter of Gorges Edmond Howard
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q26454944> , <https://www.wikidata.org/wiki/Q76363207> .
 
-<#Susan_Gorges>
+<https://www.wikidata.org/wiki/Q75278096>
   # Susan Gorges, 1773 - 1848-01
-  gen:father <https://www.wikidata.org/wiki/Q26454944> .
-  # and Anne Howard
+  gen:father <https://www.wikidata.org/wiki/Q26454944> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76363207> .
   # oo 1798-05-21 Rev. Hon. George de la Poer Beresford, 1776-05-21 - 1842-08-10/-09-10, https://www.wikidata.org/wiki/Q20810827
 
 # ----
-#<#William_Stuart_Stirling-Crawford>
+#<https://www.wikidata.org/wiki/Q75331691>
   # William Stuart Stirling-Crawford, d. 1883-02-23
   # oo Hon. Caroline Agnes Horsley-Beresford, 1818-03-14 - 1894-11-16
   []
-    gen:spouse <#William_Stuart_Stirling-Crawford> , <https://www.wikidata.org/wiki/Q18819378> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75331691> , <https://www.wikidata.org/wiki/Q18819378> ;
 	gen:startDate "1876-01-22" .
 
 # ----
-#<https://www.wikidata.org/wiki/Q7527228>
+#<https://www.wikidata.org/wiki/Q50328165>
+  # Christopher Willoughby, 1st Baronet of Baldon House, 1748-11 - 1806-02-05
+  # Baronet Willoughby of Baldon House [Great Britain] 1794-07-08
+  # son of Christopher Willoughby
+  # and Rebecca Fisher
+  # oo Juliana Burvill, b. 1755a, daughter of George Burvill
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q50328165> , <#Juliana_Burvill> ;
+	gen:startDate "1776-07-08" .
+  # oo Martha Evans, 1767-10-15 - 1848, daughter of Morris Evans and Elizabeth ???
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q50328165> , <#Martha_Evans> ;
+	gen:startDate "1789-01-25" .
+
+<#Christopher_William_Willoughby,_2nd_Baronet>
+  # Sir Christopher William Willoughby, 2nd Baronet of Baldon House, 1792-11-25b - 1813-06-24
+  gen:father <https://www.wikidata.org/wiki/Q50328165> ;
+  gen:mother <#Martha_Evans> .
+<https://www.wikidata.org/wiki/Q7527228>
   # Sir Henry Pollard Willoughby, 3rd Baronet, 1796-11-17 – 1865-03-23
-#<https://www.wikidata.org/wiki/Q26690019>
+  gen:father <https://www.wikidata.org/wiki/Q50328165> ;
+  gen:mother <#Martha_Evans> .
+<https://www.wikidata.org/wiki/Q26690019>
   # Sir John Pollard Willoughby, 4th Baronet, 1799-04-21 – 1866-09-15
+  gen:father <https://www.wikidata.org/wiki/Q50328165> ;
+  gen:mother <#Martha_Evans> .
   # oo Eliza Kennedy, d. 1852, daughter of Michael Kennedy
   []
     gen:spouse <https://www.wikidata.org/wiki/Q26690019> , <#Eliza_Kennedy> ;
@@ -1655,10 +1931,10 @@
     gen:spouse <https://www.wikidata.org/wiki/Q26690019> , <https://www.wikidata.org/wiki/Q56220523> ;
 	gen:startDate "1854" .
 
-<#Maria_Gertrude_Willoughby>
+<https://www.wikidata.org/wiki/Q75278252>
   # Maria Gertrude Willoughby, d. 1939
   gen:father <https://www.wikidata.org/wiki/Q26690019> .
-  # oo 1901-03-12 William Marcus de la Poer Horsley-Beresford, 4th Baron Decies, 1865-01-12 - 1910-07-30, #William_Horsley-Beresford,_4th_Baron_Decies
+  # oo 1901-03-12 William Marcus de la Poer Horsley-Beresford, 4th Baron Decies, 1865-01-12 - 1910-07-30, https://www.wikidata.org/wiki/Q75278253
 
 # ----
 #<https://www.wikidata.org/wiki/Q709595>
@@ -1667,13 +1943,13 @@
   # and Mary Moore
   # oo Helen Day Miller, 1838 - 1889
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q709595> , <#Helen_Day_Miller> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q709595> , <https://www.wikidata.org/wiki/Q66627003> ;
 	gen:startDate "1863" .
 
 <https://www.wikidata.org/wiki/Q3101668>
   # George Jay Gould I, 1864-02-06 – 1923-05-16
   gen:father <https://www.wikidata.org/wiki/Q709595> ;
-  gen:mother <#Helen_Day_Miller> .
+  gen:mother <https://www.wikidata.org/wiki/Q66627003> .
   # oo Edith Mary Kingdon, 1864-08-24 - 1921-11-13, daughter of Charles Dennis Kingdon and Mary Carter
   []
     gen:spouse <https://www.wikidata.org/wiki/Q3101668> , <https://www.wikidata.org/wiki/Q5338588> ;
@@ -1686,22 +1962,45 @@
   # oo 1911-02-07 John Graham Hope de la Poer Beresford, 5th Baron Decies, 1866-12-05 – 1944-01-31, https://www.wikidata.org/wiki/Q6221625
 
 # ----
-#<https://www.wikidata.org/wiki/Q5078379>
+#<https://www.wikidata.org/wiki/Q76018626>
+  # Joseph Graves-Sawle, 1st Baronet, 1793-12-10 - 1865
+  # Joseph Graves
+  # Joseph Sawle 1815-04-07
+  # Joseph Graves-Sawle 1827-11-30
+  # 1st Baronet Graves-Sawle, of Penrice in the County of Cornwall and of Barley in the County of Devon [U.K.] 1836-02-22
+  # son of John Graves
+  # and Elizabeth Sawle
+
+<https://www.wikidata.org/wiki/Q5078379>
   # Sir Charles Brune Graves-Sawle, 2nd Baronet, 1816-10-10 – 1903-04-20
+  gen:father <https://www.wikidata.org/wiki/Q76018626> .
   # oo Rose Caroline Paynter, 1818 -02-04b – 1914, daughter of David Runwa Paynter and Sophia Catherine Price
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q5078379> , <#Rose_Caroline_Paynter> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q5078379> , <https://www.wikidata.org/wiki/Q76304271> ;
 	gen:startDate "1846-02-18" .
 
+<https://www.wikidata.org/wiki/Q76304268>
+  # Sir Francis Aylmer Graves-Sawle, 3rd Baronet, 1849-01-01 - 1903-08-03
+  gen:father <https://www.wikidata.org/wiki/Q5078379> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76304271> .
+  # oo Harriet Augusta Vernon-Wentworth, 1860 - 1894-10-21 (vernon.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76304268> , <https://www.wikidata.org/wiki/Q76304265> ;
+	gen:startDate "1891-02-09" .
 <https://www.wikidata.org/wiki/Q47038434>
-  # Sir Charles John Graves-Sawle, 4th Baronet, 1851 – 1932
-  gen:father <https://www.wikidata.org/wiki/Q5078379> .
+  # Sir Charles John Graves-Sawle, 4th Baronet, 1851-04-28 – 1932-02-18
+  gen:father <https://www.wikidata.org/wiki/Q5078379> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76304271> .
   # oo Constance Mary Daniel, 1860 - 1942
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q47038434> , <#Constance_Daniel> ;
+	gen:startDate "1887-08-23" .
 
-<#Joan_Rosemary_Graves-Sawle>
-  # Joan Rosemary Graves-Sawle
-  gen:father <https://www.wikidata.org/wiki/Q47038434> .
-  # oo 1915-06-28 Hon. Seton Robert de la Poer Horsley-Beresford, 1868 - 1928-05-28, #Seton_Robert_de_la_Poer_Horsley-Beresford
+<https://www.wikidata.org/wiki/Q75278267>
+  # Joan Rosemary Graves-Sawle, 1890 - 1971
+  gen:father <https://www.wikidata.org/wiki/Q47038434> ;
+  gen:mother <#Constance_Daniel> .
+  # oo 1915-06-28 Hon. Seton Robert de la Poer Horsley-Beresford, 1868 - 1928-05-28, https://www.wikidata.org/wiki/Q28966253
 
 # ----
 #<https://www.wikidata.org/wiki/Q75278342>
@@ -1731,7 +2030,7 @@
   # Sir Mark Beresford Russell Sturgis, d. 1949-04-29
   gen:father <https://www.wikidata.org/wiki/Q3189108> ;
   gen:mother <https://www.wikidata.org/wiki/Q75277718> .
-  # oo Lady Ellen Rachel Montagu-Stuart-Wortley-Mackenzie, 1894-02-26 - 1968-05-12
+  # oo Lady Ellen Rachel Montagu-Stuart-Wortley-Mackenzie, 1894-02-26 - 1968-05-12 (stuart.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75321650> , <https://www.wikidata.org/wiki/Q75321649> ;
 	gen:startDate "1914-07-09" .
