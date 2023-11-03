@@ -3866,10 +3866,37 @@
   # 1711-03-26a/-04-28b James Hamilton, 7th Earl of Abercorn, 1686-03-22 - 1744-01-11, https://www.wikidata.org/wiki/Q3806590
 
 # ----
-#<https://www.wikidata.org/wiki/Q18526541>
+<#Eleanor_O’Dougherty>
+  # Eleanor O’Dougherty
+  gen:father <https://www.wikidata.org/wiki/Q11040372> . # Sir Cahir O’Doherty, 1587 – 1608-07-05
+  # oo Sir William Brownlow, 1591 - 1661-01-20, #Sir_William_Brownlow
+# ----
+#<#Sir_William_Brownlow>
+  # Sir William Brownlow, 1591 - 1661-01-20
+  # son of John Brownlow
+  # and Duglas Robarts
+  # oo Eleanor O’Dougherty
+  []
+    gen:spouse <#Sir_William_Brownlow> , <#Eleanor_O’Dougherty> .
+
+<#Letitia_Brownlow>
+  # Letitia Brownlow, 1612~ - 1699-01
+  gen:father <#Sir_William_Brownlow> ;
+  gen:mother <#Eleanor_O’Dougherty> .
+  # oo 1639~ Patrick Chamberlain, d. 1650~, #Patrick_Chamberlain
+# ----
+#<#Patrick_Chamberlain>
+  # Patrick Chamberlain, d. 1650~
+  # oo Letitia Brownlow, 1612~ - 1699-01
+  []
+    gen:spouse <#Patrick_Chamberlain> , <#Letitia_Brownlow> ;
+	gen:startDate "1639~" .
+
+<https://www.wikidata.org/wiki/Q18526541>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75897032> ;
   # Arthur Chamberlain Brownlow, 1645-03-20 – 1711-03-27
-  # son of Patrick Chamberlain
-  # and Letitia Brownlow
+  gen:father <#Patrick_Chamberlain> ;
+  gen:mother <#Letitia_Brownlow> .
   # oo Jane Hartstonge
   []
     gen:spouse <https://www.wikidata.org/wiki/Q18526541> , <#Jane_Hartstonge> ;

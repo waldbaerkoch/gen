@@ -530,10 +530,10 @@
   gen:mother <https://www.wikidata.org/wiki/Q75252770> .
   # oo 1899-12-16 Edward Walter Blunt-Mackenzie, 1869-05-19 - 1949-07-31, son of Charles Harris Blunt and Mary Augusta Tod
 <https://www.wikidata.org/wiki/Q5163585>
-  # Lady Constance Sutherland-Leveson-Gower, 1881-01-19 - 1932-11-24
+  # Lady Constance Sutherland-Leveson-Gower, 1881-01-19/1882-04-06/1883 - 1932-11-24
   gen:father <https://www.wikidata.org/wiki/Q25974150> ;
   gen:mother <https://www.wikidata.org/wiki/Q75252770> .
-  # oo 1904-04-19 Sir Edward Austin Stewart-Richardson of Pitfour, 15th Baronet, 1872-07-24 - 1914-11-28
+  # oo 1904-04-19 Sir Edward Austin Stewart-Richardson of Pitfour, 15th Baronet, 1872-07-24 - 1914-11-28, https://www.wikidata.org/wiki/Q75298356 (richardson.ttl)
 
 
 # ====
@@ -1141,11 +1141,11 @@
   # Sir Richard Leveson, 1598 - 1661, https://www.wikidata.org/wiki/Q7327352
 
 # ====
-#<https://www.wikidata.org/wiki/Q7328051>
+<https://www.wikidata.org/wiki/Q7328051>
   # Richard Newport, 1st Baron Newport of High Ercall, 1587-05-07 - 1651-02-08
   # 1st Baron Newport of High Ercall, co. Shropshire 1642-10-14
-  # son of Francis Newport
-  # and Beatrix Lacon
+  gen:father <https://www.wikidata.org/wiki/Q5482035> ; # Francis Newport
+  gen:mother <https://www.wikidata.org/wiki/Q75449717> . # Beatrix Lacon
   # oo Rachael Leveson, d. 1661-01-31
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7328051> , <https://www.wikidata.org/wiki/Q75449698> ;
@@ -1167,6 +1167,11 @@
   gen:father <https://www.wikidata.org/wiki/Q7328051> ;
   gen:mother <https://www.wikidata.org/wiki/Q75449698> .
   # oo Francis Forester, b. 1623, https://www.wikidata.org/wiki/Q75986824
+<#Anne_Newport>
+  # Anne Newport
+  gen:father <https://www.wikidata.org/wiki/Q7328051> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75449698> .
+  # oo Edward Corbet, d. 1653-05-30, #Edward_Corbet
 
 <https://www.wikidata.org/wiki/Q7328052>
   # Richard Newport, 2nd Earl of Bradford, 1644-09-03 - 1723-06-14
@@ -1210,6 +1215,44 @@
   gen:father <https://www.wikidata.org/wiki/Q7328052> ;
   gen:mother <https://www.wikidata.org/wiki/Q75271663> .
   # oo 1719-04-09 Sir Orlando Bridgeman, 4th Baronet, 1695-07-02 - 1764-07-25, https://www.wikidata.org/wiki/Q7528409
+
+# ----
+#<#Sir_Edward_Corbet,_1st_Baronet>
+  # Sir Edward Corbet, 1st Baronet, d. 1655
+  # 1st Baronet Corbet, of Leighton in the County of Montgomery [England] 1642-06-20
+
+<#Edward_Corbet>
+  # Edward Corbet, d. 1653-05-30
+  gen:father <#Sir_Edward_Corbet,_1st_Baronet> .
+  # oo Anne Newport
+  []
+    gen:spouse <#Edward_Corbet> , <#Anne_Newport> .
+
+<https://www.wikidata.org/wiki/Q7528562>
+  # Sir Richard Corbet, 2nd Baronet, of Leighton, 1640 - 1683-08-01
+  gen:father <#Edward_Corbet> ;
+  gen:mother <#Anne_Newport> .
+  # oo Victoria Uvedale
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7528562> , <#Victoria_Uvedale> ;
+	gen:startDate "1662-01-05" .
+
+<https://www.wikidata.org/wiki/Q75257064>
+  gen:name "Sir Uvedale Corbet, 3rd Baronet, of Leighton"@en ;
+  gen:birthDate "1668" ;
+  gen:deathDate "1701-10-15" ;
+  gen:father <https://www.wikidata.org/wiki/Q7528562> ;
+  gen:mother <#Victoria_Uvedale> .
+  # oo Lady Mildred Cecil, d. 1727-01-18
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75257064> , <https://www.wikidata.org/wiki/Q75257026> ;
+	gen:startDate "1693-08-14" .
+# ----
+<#Victoria_Uvedale>
+  # Victoria Uvedale
+  gen:father <https://www.wikidata.org/wiki/Q8019635> ; # William Uvedale
+  gen:mother <https://www.wikidata.org/wiki/Q28059797> . # Victoria Cary
+  # oo 1662-01-05 Sir Richard Corbet, 2nd Baronet, of Leighton, 1640 - 1683-08-01, https://www.wikidata.org/wiki/Q7528562
 
 # ====
 #<https://www.wikidata.org/wiki/Q75986824>

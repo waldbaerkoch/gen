@@ -3,30 +3,30 @@
 @prefix wdata: <https://www.wikidata.org/wiki/> .
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
 
-#<#Sir_William_Pelham,_of_Laughton>
+#<https://www.wikidata.org/wiki/Q75570716>
   # Sir William Pelham, 1468 - 1538
   # oo Mary Carew, daughter of Sir Richard Carew and Malyn Oxenbridge
   []
-    gen:spouse <#Sir_William_Pelham,_of_Laughton> , <#Mary_Carew> .
-  # oo Mary Sandys
+    gen:spouse <https://www.wikidata.org/wiki/Q75570716> , <#Mary_Carew> .
+  # oo Mary Sandys (neville.ttl)
   []
-    gen:spouse <#Sir_William_Pelham,_of_Laughton> , <#Mary_Sandys> .
+    gen:spouse <https://www.wikidata.org/wiki/Q75570716> , <https://www.wikidata.org/wiki/Q75570728> .
 
 <https://www.wikidata.org/wiki/Q7026038>
   # Sir Nicholas Pelham, 1513b – 1560-09-15
-  gen:father <#Sir_William_Pelham,_of_Laughton> ;
+  gen:father <https://www.wikidata.org/wiki/Q75570716> ;
   gen:mother <#Mary_Carew> .
   # oo Anne Sackville
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7026038> , <sackville.ttl#Anne_Sackville> .
 <https://www.wikidata.org/wiki/Q8016735> # -> Pelham of Brocklesby
   # Sir William Pelham, of Brocklesby, 1527~ - 1587-11-24
-  gen:father <#Sir_William_Pelham,_of_Laughton> ;
-  gen:mother <#Mary_Sandys> .
+  gen:father <https://www.wikidata.org/wiki/Q75570716> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75570728> .
 <https://www.wikidata.org/wiki/Q5339732>
   # Sir Edmund Pelham, 1533~ - 1606-06-04
-  gen:father <#Sir_William_Pelham,_of_Laughton> ;
-  gen:mother <#Mary_Sandys> .
+  gen:father <https://www.wikidata.org/wiki/Q75570716> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75570728> .
 
 <https://www.wikidata.org/wiki/Q26452380>
   # Sir John Pelham, 1537 - 1580-10-13
@@ -175,11 +175,11 @@
   gen:father <https://www.wikidata.org/wiki/Q6855629> ;
   gen:mother <https://www.wikidata.org/wiki/Q75272886> .
   # oo 1715-05-31 Christopher Wandesford, 2nd Viscount Castlecomer, 1684-03-02 - 1719-06-23, https://www.wikidata.org/wiki/Q5113381 (osborne.ttl)
-<#Margaret_Pelham_(died_1758)>
+<https://www.wikidata.org/wiki/Q75570831>
   # Hon. Margaret Pelham, d. 1758-11-23
   gen:father <https://www.wikidata.org/wiki/Q6855629> ;
   gen:mother <https://www.wikidata.org/wiki/Q75272886> .
-  # oo 1727-03-16 Sir John Shelley, 4th Baronet, 1692-03-05 - 1771-09-06, https://www.wikidata.org/wiki/Q21282907
+  # oo 1727-03-16 Sir John Shelley, 4th Baronet, 1692-03-05 - 1771-09-06, https://www.wikidata.org/wiki/Q21282907 (neville.ttl)
 
 <#Catherine_Pelham>
   # Catherine Pelham, 1727-07-24 - 1760-07-27
@@ -556,8 +556,8 @@
 # Pelham of Brocklesby
 <https://www.wikidata.org/wiki/Q8016735>
   # Sir William Pelham, of Brocklesby, 1527~ - 1587-11-24
-  gen:father <#Sir_William_Pelham,_of_Laughton> ;
-  gen:mother <#Mary_Sandys> .
+  gen:father <https://www.wikidata.org/wiki/Q75570716> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75570728> .
   # oo Lady Eleanor Nevill
   []
     gen:spouse <https://www.wikidata.org/wiki/Q8016735> , <neville.ttl#Eleanor_Neville> ;
@@ -625,21 +625,6 @@
 
 
 # ----
-#<https://www.wikidata.org/wiki/Q8018111>
-  # William Sandys, 1st Baron Sandys, 1470 – 1540-12-04
-  # 1st Baron Sandys, of the Vyne 1523-04-27
-
-<#Mary_Sandys>
-  # Mary Sandys
-  gen:father <https://www.wikidata.org/wiki/Q8018111> .
-  # oo Sir William Pelham, 1468 - 1538, #Sir_William_Pelham,_of_Laughton
-<https://www.wikidata.org/wiki/Q76154952>
-  # Alice Sandys, d. 1532b
-  gen:father <https://www.wikidata.org/wiki/Q8018111> .
-  # and Margaret Bray
-  # oo 1527 Walter Hungerford, 1st Lord Hungerford of Heytesbury, 1502~ - 1540-07-28, https://www.wikidata.org/wiki/Q7965191 (courtenay.ttl)
-
-# ----
 #<https://www.wikidata.org/wiki/Q7794863>
   # Sir Thomas Walsingham, 1526~ – 1584-01-15
   # oo Dorothy Guildford, d. 1584
@@ -664,16 +649,6 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q17180814> , <#Grace_Pelham_(died_1710)> ;
 	gen:startDate "1704-07-04" .
-
-# ----
-#<https://www.wikidata.org/wiki/Q21282907>
-  # Sir John Shelley, 4th Baronet, 1692-03-05 - 1771-09-06
-  # son of Sir John Shelley, 3rd Baronet
-  # and Mary Gage
-  # oo Hon. Margaret Pelham, d. 1758-11-23
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q21282907> , <#Margaret_Pelham_(died_1758)> ;
-	gen:startDate "1727-03-16" .
 
 # ----
 <#Frances_Bine>
