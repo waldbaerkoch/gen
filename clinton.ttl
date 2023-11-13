@@ -2,6 +2,7 @@
 @prefix gen: <http://jjkoch.de/gen#> .
 @prefix wdata: <https://www.wikidata.org/wiki/> .
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 #<https://www.wikidata.org/wiki/Q941054>
   # Geoffrey de Clinton, d. 1134~
@@ -12,51 +13,53 @@
   # Bishop of Coventry and Lichfield
 
 
-#<https://www.wikidata.org/wiki/Q6265514>
+<https://www.wikidata.org/wiki/Q6265514>
   # John de Clinton, 1st Lord Clinton, 1258~ - 1310
-  # 1st Lord Clinton 1299-02-06
-  # son of Thomas de Clinton
-  # and Maud Bracebridge
+  # 1st Lord Clinton [England by writ] 1299-02-06
+  gen:father <https://www.wikidata.org/wiki/Q75586807> ; # Thomas de Clinton
+  gen:mother <https://www.wikidata.org/wiki/Q75586821> . # Maud Bracebridge
   # oo Ida de Odingsells, b. 1270~, daughter of William de Odingsells and Ela FitzRobert
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q6265514> , <#Ida_de_Odingsells> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q6265514> , <https://www.wikidata.org/wiki/Q75586828> ;
 	gen:startDate "1290~" .
 
 <https://www.wikidata.org/wiki/Q21519986>
   # John de Clinton, 2nd Lord Clinton, 1300~ - 1335-04-01b
   gen:father <https://www.wikidata.org/wiki/Q6265514> ;
-  gen:mother <#Ida_de_Odingsells> .
+  gen:mother <https://www.wikidata.org/wiki/Q75586828> .
   # oo Margery Corbet, daughter of Sir William Corbet
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q21519986> , <#Margery_Corbet> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q21519986> , <https://www.wikidata.org/wiki/Q75586838> ;
 	gen:startDate "1329-02-24" .
 <https://www.wikidata.org/wiki/Q7610117>
   # William de Clinton, 1st Earl of Huntingdon, 1304 - 1354-08-24
-  # 1st Lord Clinton 1330-09-06
-  # 1st Earl of Huntingdon 1337-03-13
+  # 1st Lord Clinton [England by writ] 1330-09-06
+  # 1st Earl of Huntingdon [England] 1337-03-13
   gen:father <https://www.wikidata.org/wiki/Q6265514> ;
-  gen:mother <#Ida_de_Odingsells> .
+  gen:mother <https://www.wikidata.org/wiki/Q75586828> .
   # oo Juliane de Leyburn, Baroness Leyburn, d. 1367-11-01
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q7610117> , <https://www.wikidata.org/wiki/Q69787093> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q7610117> , <https://www.wikidata.org/wiki/Q18879808> ;
 	gen:startDate "1328-10-17b" .
 
 <https://www.wikidata.org/wiki/Q23061101>
   # John de Clinton, 3rd Lord Clinton, 1326-03~ - 1398-09-08
   gen:father <https://www.wikidata.org/wiki/Q21519986> ;
-  gen:mother <#Margery_Corbet> .
+  gen:mother <https://www.wikidata.org/wiki/Q75586838> .
   # oo Idonea de Say (beauchamp.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q23061101> , <https://www.wikidata.org/wiki/Q75586843> ;
 	gen:startDate "1350~" .
   # oo ???
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q23061101> , <https://www.wikidata.org/wiki/Q75586859> .
   # oo Joan ???
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q23061101> , <#Joan_???> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q23061101> , <https://www.wikidata.org/wiki/Q75586864> ;
 	gen:startDate "1367-07-06a" .
   # oo Elizabeth de la Plaunche, 1347~ - 1423-09-01a, daughter of William de la Plaunche and Elizabeth Hillary
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q23061101> , <#Elizabeth_de_la_Plaunche> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q23061101> , <https://www.wikidata.org/wiki/Q75420568> ;
 	gen:startDate "1388-10-24" .
 
 <https://www.wikidata.org/wiki/Q75586845>
@@ -72,11 +75,15 @@
   gen:father <https://www.wikidata.org/wiki/Q75586845> ;
   gen:mother <https://www.wikidata.org/wiki/Q75586849> .
   # oo Anne Trivett, daughter of Sir Thomas Trivett and Elizabeth de Limbury
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75586850> , <https://www.wikidata.org/wiki/Q75586875> .
   # oo Alice de Botreaux, d. 1420-10-17 (de_ros.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75586850> , <https://www.wikidata.org/wiki/Q75586459> ;
 	gen:startDate "1409-08-13a/-11b" .
   # oo Mary ???
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75586850> , <https://www.wikidata.org/wiki/Q75586463> .
 
 <https://www.wikidata.org/wiki/Q22893955>
   # John de Clinton, 5th Lord Clinton, 1410 - 1464-09-24
@@ -84,21 +91,23 @@
   gen:mother <https://www.wikidata.org/wiki/Q75586459> .
   # oo Joan Ferrers
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q22893955> , <ferrers.ttl#Joan_Ferrers> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q22893955> , <https://www.wikidata.org/wiki/Q75586876> ;
 	gen:startDate "1431-10-29~" .
   # oo Margaret St. Leger, d. 1496-02-01, daughter of Sir John St. Leger and Margaret Donet
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q22893955> , <#Margaret_St._Leger> .
+    gen:spouse <https://www.wikidata.org/wiki/Q22893955> , <https://www.wikidata.org/wiki/Q75586467> .
 
 <https://www.wikidata.org/wiki/Q27881212>
   # John Clinton, 6th Lord Clinton, 1429~ - 1488-02-29
   gen:father <https://www.wikidata.org/wiki/Q22893955> ;
-  gen:mother <ferrers.ttl#Joan_Ferrers> .
+  gen:mother <https://www.wikidata.org/wiki/Q75586876> .
   # oo Elizabeth Fiennes, b. 1455~
   []
     gen:spouse <https://www.wikidata.org/wiki/Q27881212> , <https://www.wikidata.org/wiki/Q5362766> ;
 	gen:startDate "1463~" .
   # oo Anne Stafford, daughter of Sir Humphrey Stafford
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q27881212> , <https://www.wikidata.org/wiki/Q75586474> .
 
 <https://www.wikidata.org/wiki/Q27881213>
   # John Clinton, 7th Lord Clinton, 1471~ - 1514-06-04
@@ -106,29 +115,29 @@
   gen:mother <https://www.wikidata.org/wiki/Q5362766> .
   # oo Elizabeth Morgan, d. 1501b, daughter of Sir John Morgan
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q27881213> , <#Elizabeth_Morgan> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q27881213> , <https://www.wikidata.org/wiki/Q75586888> ;
 	gen:startDate "1490b" .
   # oo Anne West, d. 1525
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q27881213> , <west.ttl#Anne_West_(died_1525)> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q27881213> , <https://www.wikidata.org/wiki/Q75586477> ;
 	gen:startDate "1501b" .
 
-<#Thomas_Clinton,_8th_Baron_Clinton>
+<https://www.wikidata.org/wiki/Q75492417>
   # Thomas Clinton, 8th Lord Clinton, 1490~ - 1517-08-07
   gen:father <https://www.wikidata.org/wiki/Q27881213> ;
-  gen:mother <#Elizabeth_Morgan> .
+  gen:mother <https://www.wikidata.org/wiki/Q75586888> .
   # oo Joan Poynings
   []
-    gen:spouse <#Thomas_Clinton,_8th_Baron_Clinton> , <#Joan_Poynings> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75492417> , <https://www.wikidata.org/wiki/Q75492418> ;
 	gen:startDate "1510-05-04~" .
 
 <https://www.wikidata.org/wiki/Q1291914>
   # Edward Clinton, 1st Earl of Lincoln, 1512 - 1585-01-16
-  # 9th Lord Clinton 1517-08-07
-  # 1st Earl of Lincoln 1572-05-04
-  gen:father <#Thomas_Clinton,_8th_Baron_Clinton> ;
-  gen:mother <#Joan_Poynings> .
-  # oo Elizabeth Blount, 1502~ - 1539a/1541b
+  # 9th Lord Clinton [E., 1299] 1517-08-07
+  # 1st Earl of Lincoln [England] 1572-05-04
+  gen:father <https://www.wikidata.org/wiki/Q75492417> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75492418> .
+  # oo Elizabeth Blount, 1502~ - 1539a/1541b (sutton.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q1291914> , <https://www.wikidata.org/wiki/Q237170> ;
 	gen:startDate "1530-04-15a/1535-02-12b" .
@@ -141,17 +150,17 @@
     gen:spouse <https://www.wikidata.org/wiki/Q1291914> , <https://www.wikidata.org/wiki/Q5362599> ;
 	gen:startDate "1552-10-01~" .
 
-<#Lady_Bridget_Clinton>
-  # Lady Bridget Clinton, b. 1536~
+<https://www.wikidata.org/wiki/Q96075979>
+  # Lady Bridget Clinton, 1536~ - 1580-09-12
   gen:father <https://www.wikidata.org/wiki/Q1291914> ;
   gen:mother <https://www.wikidata.org/wiki/Q237170> .
   # oo 1556~ Robert Dymoke (Dymock or Dymocke), of Scrivelsby, Lincolnshire, 1531 - 1580-09-11, https://www.wikidata.org/wiki/Q7343721
-<#Lady_Katharine_Clinton>
+<https://www.wikidata.org/wiki/Q75272367>
   # Lady Katharine Clinton, 1538~ - 1621-08-14
   gen:father <https://www.wikidata.org/wiki/Q1291914> ;
   gen:mother <https://www.wikidata.org/wiki/Q237170> .
-  # oo William Burgh, 2nd Lord Burgh, 1522~ - 1584-09-10, https://www.wikidata.org/wiki/Q26897915
-<#Lady_Margaret_Clinton_(born_1539~)>
+  # oo William Burgh, 2nd Lord Burgh, 1522~ - 1584-09-10, https://www.wikidata.org/wiki/Q26897915 (percy.ttl)
+<https://www.wikidata.org/wiki/Q75787477>
   # Lady Margaret Clinton, b. 1539~
   gen:father <https://www.wikidata.org/wiki/Q1291914> ;
   gen:mother <https://www.wikidata.org/wiki/Q237170> .
@@ -160,9 +169,9 @@
   # Henry Clinton, 2nd Earl of Lincoln, 1540 - 1616-09-29
   gen:father <https://www.wikidata.org/wiki/Q1291914> ;
   gen:mother <https://www.wikidata.org/wiki/Q75272894> .
-  # oo Lady Catherine Hastings, 1542-08-11 - 1586-10-20b
+  # oo Lady Catherine Hastings, 1542-08-11 - 1576-09-22/1586-10-20b
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q16859736> , <hastings.ttl#Lady_Catherine_Hastings_(died_1586)> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q16859736> , <https://www.wikidata.org/wiki/Q75357091> ;
 	gen:startDate "1555-12-10a/1557-04-30b" .
   # oo Elizabeth Morrison, d. 1611-07-04~ (grey.ttl)
   []
@@ -177,31 +186,33 @@
 <https://www.wikidata.org/wiki/Q7788471>
   # Thomas Clinton, 3rd Earl of Lincoln, 1568~ - 1619-01-15
   gen:father <https://www.wikidata.org/wiki/Q16859736> ;
-  gen:mother <hastings.ttl#Lady_Catherine_Hastings_(died_1586)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75357091> .
   # oo Elizabeth Knyvett, d. 1630
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7788471> , <https://www.wikidata.org/wiki/Q18576121> ;
 	gen:startDate "1584-09-21" .
-<#Sir_Edward_Clinton>
+<https://www.wikidata.org/wiki/Q75586902>
   # Sir Edward Clinton
   gen:father <https://www.wikidata.org/wiki/Q16859736> ;
-  gen:mother <hastings.ttl#Lady_Catherine_Hastings_(died_1586)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75357091> .
   # oo Mary Dighton, daughter of Thomas Dighton
-<#Lady_Elizabeth_Clinton>
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75586902> , <https://www.wikidata.org/wiki/Q75586906> .
+<https://www.wikidata.org/wiki/Q75586502>
   # Lady Elizabeth Clinton
   gen:father <https://www.wikidata.org/wiki/Q16859736> ;
   gen:mother <https://www.wikidata.org/wiki/Q75357092> .
   # oo 1597~ Sir Arthur Gorges, 1569~ - 1625-10-10, https://www.wikidata.org/wiki/Q4798858
-<#Sir_Henry_Clinton>
+<https://www.wikidata.org/wiki/Q75357101>
   # Hon. Sir Henry Clinton, alias Fynes, 1587 - 1641/1643~
   gen:father <https://www.wikidata.org/wiki/Q16859736> ;
   gen:mother <https://www.wikidata.org/wiki/Q75357092> .
   # oo Eleanor Harington, 1590 - 1624, daughter of Sir James Harington
   []
-    gen:spouse <#Sir_Henry_Clinton> , <#Eleanor_Harington> .
+    gen:spouse <https://www.wikidata.org/wiki/Q75357101> , <https://www.wikidata.org/wiki/Q75357096> .
   # oo Elizabeth Hickman, daughter of Henry Hickman and Anne Wallop
   []
-    gen:spouse <#Sir_Henry_Clinton> , <#Elizabeth_Hickman> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75357101> , <https://www.wikidata.org/wiki/Q75357098> ;
 	gen:startDate "1624" .
 
 <https://www.wikidata.org/wiki/Q15989912>
@@ -214,34 +225,39 @@
 	gen:startDate "1622~" .
   # oo Elizabeth Gorges, d. 1675-05~
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q15989912> , <#Elizabeth_Gorges> .
-<#Lady_Arabella_Clinton>
+    gen:spouse <https://www.wikidata.org/wiki/Q15989912> , <https://www.wikidata.org/wiki/Q75256549> .
+<https://www.wikidata.org/wiki/Q75586485>
   # Lady Arabella Clinton, 1597 - 1630-08
   gen:father <https://www.wikidata.org/wiki/Q7788471> ;
   gen:mother <https://www.wikidata.org/wiki/Q18576121> .
   # oo Rev. Isaac Johnson, 1601 - 1630-09-30, https://www.wikidata.org/wiki/Q6076578
-<#Lady_Susan_Clinton>
+<https://www.wikidata.org/wiki/Q75586488>
   # Lady Susan Clinton
   gen:father <https://www.wikidata.org/wiki/Q7788471> ;
   gen:mother <https://www.wikidata.org/wiki/Q18576121> .
   # oo John Humphrey, 1597 – 1661, https://www.wikidata.org/wiki/Q6240374
-<#Francis_Clinton>
+<https://www.wikidata.org/wiki/Q75586907>
   # Francis Clinton
-  gen:father <#Sir_Edward_Clinton> .
-  # and Mary Dighton
+  gen:father <https://www.wikidata.org/wiki/Q75586902> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75586906> .
   # oo Priscilla Hill, daughter of John Hill
-<#Henry_Clinton>
-  # Henry Clinton / Henry Fiennes, of Kirkstead, 1611 – 1674
-  gen:father <#Sir_Henry_Clinton> ;
-  gen:mother <#Eleanor_Harington> .
-  # oo Jane Markham, 1616 - 1689, daughter of Abraham Markham and Jane Eyre
   []
-    gen:spouse <#Henry_Clinton> , <#Jane_Markham> .
-<#Norreys_Clinton_(died_1693)>
+    gen:spouse <https://www.wikidata.org/wiki/Q75586907> , <https://www.wikidata.org/wiki/Q75586911> .
+<https://www.wikidata.org/wiki/Q75857243>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75787467> ;
+  # Henry Clinton / Henry Fiennes, of Kirkstead, 1611 – 1674
+  gen:father <https://www.wikidata.org/wiki/Q75357101> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75357096> .
+  # oo Jane Markham, 1616 - 1689
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75857243> , <https://www.wikidata.org/wiki/Q116028674> .
+<https://www.wikidata.org/wiki/Q75357103>
   # Norreys Clinton, 1617 – 1693
-  gen:father <#Sir_Henry_Clinton> ;
-  gen:mother <#Eleanor_Harington> .
+  gen:father <https://www.wikidata.org/wiki/Q75357101> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75357096> .
   # oo Margaret Raines, d. 1707-06-19
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75357103> , <https://www.wikidata.org/wiki/Q75672543> .
 
 <https://www.wikidata.org/wiki/Q5342325>
   # Edward Clinton, Lord Clinton, 1624-12-30 - 1657-04-21b
@@ -251,17 +267,17 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5342325> , <https://www.wikidata.org/wiki/Q75586928> ;
 	gen:startDate "1652-03-30~" .
-<#Lady_Catharine_Clinton>
+<https://www.wikidata.org/wiki/Q75487920>
   # Lady Catharine Clinton, d. 1643-07~
   gen:father <https://www.wikidata.org/wiki/Q15989912> ;
   gen:mother <https://www.wikidata.org/wiki/Q64748703> .
-  # oo 1639-11-30 George Booth, 1st Baron Delamer of Dunham Massey,, 1622-08 – 1684-08-08, https://www.wikidata.org/wiki/Q2679598
+  # oo 1639-11-30 George Booth, 1st Baron Delamer of Dunham Massey, 1622-08 – 1684-08-08, https://www.wikidata.org/wiki/Q2679598 (grey.ttl)
 <https://www.wikidata.org/wiki/Q75586965>
   # Lady Margaret Clinton, d. 1688-10~
   gen:father <https://www.wikidata.org/wiki/Q15989912> ;
   gen:mother <https://www.wikidata.org/wiki/Q64748703> .
   # oo Rt. Hon. Hugh Boscawen, 1625-08-21 - 1701-05-30, https://www.wikidata.org/wiki/Q5930075 (gower.ttl)
-<#Lady_Arabella_Clinton>
+<https://www.wikidata.org/wiki/Q75586485>
   # Lady Arabella Clinton, d. 1667
   gen:father <https://www.wikidata.org/wiki/Q15989912> ;
   gen:mother <https://www.wikidata.org/wiki/Q64748703> .
@@ -269,107 +285,109 @@
 <https://www.wikidata.org/wiki/Q75586913>
   # Francis Clinton, 6th Earl of Lincoln, 1635~ - 1693-08~
   # 6th Earl of Lincoln 1692-11-25
-  gen:father <#Francis_Clinton> .
-  # and Priscilla Hill
+  gen:father <https://www.wikidata.org/wiki/Q75586907> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75586911> .
   # oo Elizabeth Killigrew, d. 1677 (neville.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75586913> , <https://www.wikidata.org/wiki/Q75726734> ;
 	gen:startDate "1677b" .
   # oo Susanna Penyston, d. 1720-09-23, daughter of Anthony Penyston
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q75586913> , <#Susanna_Penyston> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75586913> , <https://www.wikidata.org/wiki/Q75784033> ;
 	gen:startDate "1683~" .
-<#Elizabeth_Clinton>
+<https://www.wikidata.org/wiki/Q75787465>
   gen:name "Elizabeth Clinton"@en ;
   gen:birthDate "1651-01-12" ;
   gen:deathDate "1679-12~" ;
-  gen:father <#Henry_Clinton> ;
-  gen:mother <#Jane_Markham> .
+  gen:father <https://www.wikidata.org/wiki/Q75857243> ;
+  gen:mother <https://www.wikidata.org/wiki/Q116028674> .
   # oo 1666-10-09 George Willoughby, 7th Baron Willoughby of Parham, 1639-03-18 - 1674, https://www.wikidata.org/wiki/Q5546392
-<#Norreys_Clinton_(died_1736)>
+<https://www.wikidata.org/wiki/Q75857147>
   # Norreys Clinton, 1651 – 1736
-  gen:father <#Norreys_Clinton_(died_1693)> .
-  # and Margaret Raines
+  gen:father <https://www.wikidata.org/wiki/Q75357103> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75672543> .
   # oo Elizabeth Kendall
   []
-    gen:spouse <#Norreys_Clinton_(died_1736)> , <#Elizabeth_Kendall> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75857147> , <https://www.wikidata.org/wiki/Q75987310> ;
 	gen:startDate "1685" .
 
-<#Edward_Clinton,_5th_Earl_of_Lincoln>
+<https://www.wikidata.org/wiki/Q75586930>
   # Edward Clinton, 5th Earl of Lincoln, d. 1692-11-25
   gen:father <https://www.wikidata.org/wiki/Q5342325> ;
   gen:mother <https://www.wikidata.org/wiki/Q75586928> .
   # oo Jeanne de Gulière, d. 1688-08-25, daughter of Pierre de Gulière, Seigneur de Verune
   []
-    gen:spouse <#Edward_Clinton,_5th_Earl_of_Lincoln> , <#Jeanne_de_Gulière> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75586930> , <https://www.wikidata.org/wiki/Q75586933> ;
 	gen:startDate "1674" .
 <https://www.wikidata.org/wiki/Q4121376>
   # Henry Clinton, 7th Earl of Lincoln, 1684 – 1728-09-07
   gen:father <https://www.wikidata.org/wiki/Q75586913> ;
-  gen:mother <#Susanna_Penyston> .
+  gen:mother <https://www.wikidata.org/wiki/Q75784033> .
   # oo Hon. Lucy Pelham, 1695 - 1736-07-20
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q4121376> , <pelham.ttl#Lucy_Pelham_(died_1736)> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q4121376> , <https://www.wikidata.org/wiki/Q75784033> ;
 	gen:startDate "1717-05-16" .
 <https://www.wikidata.org/wiki/Q5537983>
   # George Clinton, 1686 - 1761-07-10
   gen:father <https://www.wikidata.org/wiki/Q75586913> ;
-  gen:mother <#Susanna_Penyston> .
+  gen:mother <https://www.wikidata.org/wiki/Q75784033> .
   # oo Anne Carle, d. 1761-08-05
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q5537983> , <#Anne_Carle> .
-<#Kendall_Clinton>
+    gen:spouse <https://www.wikidata.org/wiki/Q5537983> , <https://www.wikidata.org/wiki/Q75784109> .
+<https://www.wikidata.org/wiki/Q75857150>
   # Kendall Clinton, 1692 - 1740
-  gen:father <#Norreys_Clinton_(died_1736)> ;
-  gen:mother <#Elizabeth_Kendall> .
+  gen:father <https://www.wikidata.org/wiki/Q75857147> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75987310> .
   # oo Frances Wilkinson, d. 1752
   []
-    gen:spouse <#Kendall_Clinton> , <#Frances_Wilkinson> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75857150> , <https://www.wikidata.org/wiki/Q75989247> ;
 	gen:startDate "1713" .
 
-<#George_Clinton,_8th_Earl_of_Lincoln>
+<https://www.wikidata.org/wiki/Q64785882>
   # George Clinton, 8th Earl of Lincoln, 1718-01-15 - 1730-04-30
   gen:father <https://www.wikidata.org/wiki/Q4121376> ;
-  gen:mother <pelham.ttl#Lucy_Pelham_(died_1736)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75784033> .
 <https://www.wikidata.org/wiki/Q4121443>
   # Henry Pelham-Clinton, 2nd Duke of Newcastle-under-Lyne, 1720-04-16 – 1794-02-22
+  # Henry Clinton
+  # Henry Pelham-Clinton 1768-12-01
   # 9th Earl of Lincoln 1730-04-30
   # 2nd Duke of Newcastle-under-Lyne 1768-11-17
   gen:father <https://www.wikidata.org/wiki/Q4121376> ;
-  gen:mother <pelham.ttl#Lucy_Pelham_(died_1736)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75784033> .
   # oo Catherine Pelham, 1727-07-24 - 1760-07-27
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q4121443> , <pelham.ttl#Catherine_Pelham> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q4121443> , <https://www.wikidata.org/wiki/Q75271997> ;
 	gen:startDate "1744-10-03" .
 <https://www.wikidata.org/wiki/Q450734>
   # Sir Henry Clinton, 1730-04-16 - 1795-12-13
   gen:father <https://www.wikidata.org/wiki/Q5537983> ;
-  gen:mother <#Anne_Carle> .
+  gen:mother <https://www.wikidata.org/wiki/Q75784109> .
   # oo Harriet Carter, d. 1772-08-29, daughter of Thomas Carter
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q450734> , <#Harriet_Carter> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q450734> , <https://www.wikidata.org/wiki/Q75857191> ;
 	gen:startDate "1767-02" .
-<#Norreys_Clinton_(died_1764)>
+<https://www.wikidata.org/wiki/Q75857168>
   # Norreys Clinton, 1720 - 1764
-  gen:father <#Kendall_Clinton> ;
-  gen:mother <#Frances_Wilkinson> .
+  gen:father <https://www.wikidata.org/wiki/Q75857150> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75989247> .
   # oo Martha Thompson
   []
-    gen:spouse <#Norreys_Clinton_(died_1764)> , <#Martha_Thompson> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75857168> , <https://www.wikidata.org/wiki/Q75989399> ;
 	gen:startDate "1741" .
 
 <https://www.wikidata.org/wiki/Q5726820>
   # Henry Fiennes Pelham-Clinton, Earl of Lincoln, 1750-11-05 - 1778-10-18
   gen:father <https://www.wikidata.org/wiki/Q4121443> ;
-  gen:mother <pelham.ttl#Catherine_Pelham> .
-  # oo Lady Frances Seymour-Conway, 1751-12-04 - 1820-11-11
+  gen:mother <https://www.wikidata.org/wiki/Q75271997> .
+  # oo Lady Frances Seymour-Conway, 1751-12-04 - 1820-11-11 (seymour.ttl)
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q5726820> , <seymour.ttl#Lady_Frances_Seymour-Conway> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q5726820> , <https://www.wikidata.org/wiki/Q75257379> ;
 	gen:startDate "1775-05-21" .
 <https://www.wikidata.org/wiki/Q4146400>
   # Thomas Pelham-Clinton, 3rd Duke of Newcastle-under-Lyne, 1752-07-01 – 1795-05-17
   gen:father <https://www.wikidata.org/wiki/Q4121443> ;
-  gen:mother <pelham.ttl#Catherine_Pelham> .
+  gen:mother <https://www.wikidata.org/wiki/Q75271997> .
   # oo Lady Anna Maria Stanhope, 1760~ - 1834-10-18
   []
     gen:spouse <https://www.wikidata.org/wiki/Q4146400> , <https://www.wikidata.org/wiki/Q75253941> ;
@@ -377,32 +395,34 @@
 <https://www.wikidata.org/wiki/Q8011942>
   # Sir William Henry Clinton, 1769-12-23 - 1846-02-15
   gen:father <https://www.wikidata.org/wiki/Q450734> ;
-  gen:mother <#Harriet_Carter> .
-  # oo Hon. Louisa Dorothea Holroyd, d. 1854-05-14
+  gen:mother <https://www.wikidata.org/wiki/Q75857191> .
+  # oo Hon. Louisa Dorothea Holroyd, 1776 - 1854-05-14 (stanley.ttl)
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q8011942> , <stanley.ttl#Louisa_Dorothea_Holroyd> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q8011942> , <https://www.wikidata.org/wiki/Q75608753> ;
 	gen:startDate "1797-03-14" .
 <https://www.wikidata.org/wiki/Q5610027>
   # Sir Henry Clinton, 1771-03-09 - 1829-12-11
   gen:father <https://www.wikidata.org/wiki/Q450734> ;
-  gen:mother <#Harriet_Carter> .
-  # oo Hon. Susan Charteris, d. 1816-08-17
+  gen:mother <https://www.wikidata.org/wiki/Q75857191> .
+  # oo Hon. Susan Charteris, 1774-08-30 - 1816-08-17 (wemyss.ttl)
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q5610027> , <wemyss.ttl#Susan_Charteris> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q5610027> , <https://www.wikidata.org/wiki/Q75250218> ;
 	gen:startDate "1799-11-23" .
-<#Charles_Fynes-Clinton>
+<https://www.wikidata.org/wiki/Q75357105>
   # Rev. Charles Fynes-Clinton, 1748 - 1827-11-13
-  gen:father <#Norreys_Clinton_(died_1764)> ;
-  gen:mother <#Martha_Thompson> .
+  # Charles Clinton
+  # Charles Fynes-Clinton 1821-04-26
+  gen:father <https://www.wikidata.org/wiki/Q75857168> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75989399> .
   # oo Emma Brough, d. 1831-08-15, daughter of Job Brough
   []
-    gen:spouse <#Charles_Fynes-Clinton> , <#Emma_Brough> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75357105> , <https://www.wikidata.org/wiki/Q75357108> ;
 	gen:startDate "1779-07-15" .
 
 <https://www.wikidata.org/wiki/Q75272608>
   # Lady Catherine Pelham-Clinton, 1776-04-06 - 1804-05-17
   gen:father <https://www.wikidata.org/wiki/Q5726820> ;
-  gen:mother <seymour.ttl#Lady_Frances_Seymour-Conway> .
+  gen:mother <https://www.wikidata.org/wiki/Q75257379> .
   # oo 1801-10-02 William Pleydell-Bouverie, 3rd Earl of Radnor, 1779-05-11 - 1869-04-09, https://www.wikidata.org/wiki/Q8016955 (bouverie.ttl)
 <https://www.wikidata.org/wiki/Q75273073>
   # Lady Anna Maria Pelham-Clinton, d. 1807-05-31
@@ -420,18 +440,18 @@
 <https://www.wikidata.org/wiki/Q75306440>
   # Frederick Clinton, 1804-08-28 - 1870-11-09
   gen:father <https://www.wikidata.org/wiki/Q8011942> ;
-  gen:mother <stanley.ttl#Louisa_Dorothea_Holroyd> .
+  gen:mother <https://www.wikidata.org/wiki/Q75608753> .
   # oo Mary Margaret Montagu-Scott, 1807-02-05 - 1885-06-30 (scott.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75306440> , <https://www.wikidata.org/wiki/Q75306439> ;
 	gen:startDate "1840-07-09" .
 <https://www.wikidata.org/wiki/Q3132788>
   # Henry Fynes-Clinton, 1781-01-14 - 1852-10-24
-  gen:father <#Charles_Fynes-Clinton> ;
-  gen:mother <#Emma_Brough> .
+  gen:father <https://www.wikidata.org/wiki/Q75357105> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75357108> .
   # oo Harriet Wylde, d. 1810-02-02, daughter of Rev. Charles Edmund Wylde
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q3132788> , <#Harriet_Wylde> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q3132788> , <https://www.wikidata.org/wiki/Q75357108> ;
 	gen:startDate "1809-06-22" .
   # oo Katharine Majendie, d. 1871-04-25
   []
@@ -439,8 +459,11 @@
 	gen:startDate "1812-01-06" .
 <https://www.wikidata.org/wiki/Q22039617>
   # Clinton James Fiennes-Clinton, 1792-12-13 - 1833-04-11
-  gen:father <#Charles_Fynes-Clinton> ;
-  gen:mother <#Emma_Brough> .
+  # Clinton James Clinton
+  # Clinton James Fynes-Clinton 1821-04-26
+  # Clinton James Fiennes-Clinton
+  gen:father <https://www.wikidata.org/wiki/Q75357105> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75357108> .
   # oo Penelope Welby, d. 1834-06-05 (lyttelton.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q22039617> , <https://www.wikidata.org/wiki/Q51167638> ;
@@ -461,14 +484,14 @@
   gen:mother <https://www.wikidata.org/wiki/Q75272000> .
   # oo Elizabeth Grant, d. 1899-11-07, daughter of William Grant
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q6679041> , <#Elizabeth_Grant> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q6679041> , <https://www.wikidata.org/wiki/Q75300909> ;
 	gen:startDate "1848-08-10" .
 <https://www.wikidata.org/wiki/Q75302847>
   # Lady Caroline Augusta Pelham-Clinton, 1818-08-23 - 1898-06-03
   gen:father <https://www.wikidata.org/wiki/Q2034202> ;
   gen:mother <https://www.wikidata.org/wiki/Q75272000> .
   # oo 1852-01-29 Sir Cornwallis Ricketts, 2nd Baronet, 1803-02-27 - 1885-01-30, https://www.wikidata.org/wiki/Q21556800 (berkeley.ttl)
-<#Lady_Henrietta_Pelham-Clinton>
+<https://www.wikidata.org/wiki/Q75302882>
   # Lady Henrietta Pelham-Clinton, 1819-08-29 - 1890-08-19
   gen:father <https://www.wikidata.org/wiki/Q2034202> ;
   gen:mother <https://www.wikidata.org/wiki/Q75272000> .
@@ -482,18 +505,18 @@
   gen:father <https://www.wikidata.org/wiki/Q3132788> ;
   gen:mother <https://www.wikidata.org/wiki/Q75357113> .
   # oo 1839-08-13 Thomas Gambier Parry, 1816-05-26 - 1888-09-28, https://www.wikidata.org/wiki/Q7789907
-<#Agnes_Fynes-Clinton>
+<https://www.wikidata.org/wiki/Q75773452>
   # Agnes Fynes-Clinton, 1827-08-22 - 1872-03-06
   gen:father <https://www.wikidata.org/wiki/Q3132788> ;
   gen:mother <https://www.wikidata.org/wiki/Q75357113> .
-  # oo 1846-11-26 Rev. Hon. Richard Godolphin Henry Hastings, 1820-03-26 - 1865-03-10, hastings.ttl#Richard_Godolphin_Henry_Hastings
-<#Henry_Fiennes-Clinton>
+  # oo 1846-11-26 Rev. Hon. Richard Godolphin Henry Hastings, 1820-03-26 - 1865-03-10, https://www.wikidata.org/wiki/Q75773448
+<https://www.wikidata.org/wiki/Q75357120>
   # Rev. Henry Fiennes-Clinton, 1826-02-05 - 1911-10-17
   gen:father <https://www.wikidata.org/wiki/Q22039617> ;
   gen:mother <https://www.wikidata.org/wiki/Q51167638> .
   # oo Sarah Katherine Smith, d. 1898-03-23, daughter of Rev. John B. Smith
   []
-    gen:spouse <#Henry_Fiennes-Clinton> , <#Sarah_Katherine_Smith> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75357120> , <https://www.wikidata.org/wiki/Q75357122> ;
 	gen:startDate "1850-07-09" .
 
 <https://www.wikidata.org/wiki/Q2034621>
@@ -524,29 +547,29 @@
 <https://www.wikidata.org/wiki/Q75300907>
   # Emily Dora Pelham-Clinton, 1849-10-20 - 1921-09-30
   gen:father <https://www.wikidata.org/wiki/Q6679041> ;
-  gen:mother <#Elizabeth_Grant> .
+  gen:mother <https://www.wikidata.org/wiki/Q75300909> .
   # oo 1881-02-09 Sir George William Hervey, 1845-07-16 - 1915-08-17, https://www.wikidata.org/wiki/Q75300906
 <https://www.wikidata.org/wiki/Q75302833>
   # Adela Harriett Pelham-Clinton, 1850-08-22 - 1915-05-21
   gen:father <https://www.wikidata.org/wiki/Q6679041> ;
-  gen:mother <#Elizabeth_Grant> .
-  # oo 1871-08-02 John Campbell of Stonefield, 1845-05-19 - 1885, #John_Campbell_of_Stonefield
+  gen:mother <https://www.wikidata.org/wiki/Q75300909> .
+  # oo 1871-08-02 John Campbell of Stonefield, 1845-05-19 - 1885, https://www.wikidata.org/wiki/Q75302835
   # oo 1903-02-24 George Hastings Brooke, 1842-06-21 - 1922-04-05, https://www.wikidata.org/wiki/Q75302839 (st_george.ttl)
-<#Henry_William_Pelham-Clinton>
+<https://www.wikidata.org/wiki/Q75302770>
   # Henry William Pelham-Clinton, 1860-10-21 - 1927-12-18
   gen:father <https://www.wikidata.org/wiki/Q6679041> ;
-  gen:mother <#Elizabeth_Grant> .
+  gen:mother <https://www.wikidata.org/wiki/Q75300909> .
   # oo Mary Wilkinson, d. 1936-10-31
   []
-    gen:spouse <#Henry_William_Pelham-Clinton> , <#Mary_Wilkinson> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75302770> , <https://www.wikidata.org/wiki/Q75302771> ;
 	gen:startDate "1886-07-21" .
-<#Charles_Edward_Fiennes-Clinton>
+<https://www.wikidata.org/wiki/Q75357127>
   # Charles Edward Fiennes-Clinton, 1855-07-27 - 1888-01-11
-  gen:father <#Henry_Fiennes-Clinton> ;
-  gen:mother <#Sarah_Katherine_Smith> .
+  gen:father <https://www.wikidata.org/wiki/Q75357120> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75357122> .
   # oo Alice Gertrude Waring, d. 1917, daughter of William Waring
   []
-    gen:spouse <#Charles_Edward_Fiennes-Clinton> , <#Alice_Gertrude_Waring> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75357127> , <https://www.wikidata.org/wiki/Q75357128> ;
 	gen:startDate "1885-04-05" .
 
 <https://www.wikidata.org/wiki/Q75321676>
@@ -554,7 +577,7 @@
   gen:father <https://www.wikidata.org/wiki/Q2034621> ;
   gen:mother <https://www.wikidata.org/wiki/Q21556758> .
   # oo 1880-09-16 Sir Cecil Edmund Lister-Kaye, 4th Baronet, 1854-01-16 - 1931-01-27, https://www.wikidata.org/wiki/Q75321679 (lister.ttl)
-<#Lady_Emily_Augusta_Mary_Pelham-Clinton>
+<https://www.wikidata.org/wiki/Q75321680>
   # Lady Emily Augusta Mary Pelham-Clinton, 1863-03-28 - 1919-12-23
   gen:father <https://www.wikidata.org/wiki/Q2034621> ;
   gen:mother <https://www.wikidata.org/wiki/Q21556758> .
@@ -569,40 +592,43 @@
 	gen:startDate "1889-02-20" .
 <https://www.wikidata.org/wiki/Q4348372>
   # Henry Francis Hope Pelham-Clinton-Hope, 8th Duke of Newcastle-under-Lyne, 1866-02-03 – 1941-04-20
+  # Henry Francis Hope Pelham-Clinton
+  # Henry Francis Hope Pelham-Clinton-Hope 1887-04-07
   gen:father <https://www.wikidata.org/wiki/Q2034621> ;
   gen:mother <https://www.wikidata.org/wiki/Q21556758> .
   # oo Mary Augusta Yohé, 1869-04-06 - 1938-08-27, daughter of William Yohé
   []
     gen:spouse <https://www.wikidata.org/wiki/Q4348372> , <https://www.wikidata.org/wiki/Q6796617> ;
-	gen:startDate "1894-11-27 divorced 1902" .
+	gen:startDate "1894-11-27" ;
+	gen:divorceDate "1902" .
   # oo Olive Muriel Thompson, d. 1912-08-30, daughter of George Horatio Thompson
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q4348372> , <#Olive_Muriel_Thompson> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q4348372> , <https://www.wikidata.org/wiki/Q75321553> ;
 	gen:startDate "1904-02-27" .
-<#Guy_Edward_Pelham-Clinton>
+<https://www.wikidata.org/wiki/Q75302785>
   # Guy Edward Pelham-Clinton, 1894-04-11 - 1934-12-18
-  gen:father <#Henry_William_Pelham-Clinton> ;
-  gen:mother <#Mary_Wilkinson> .
-  # oo Hermione Edith Agnes Talmash, 1890-07-30 - 1991-02-08
+  gen:father <https://www.wikidata.org/wiki/Q75302770> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75302771> .
+  # oo Hermione Edith Agnes Talmash, 1890-07-30 - 1991-02-08 (manners.ttl)
   []
-    gen:spouse <#Guy_Edward_Pelham-Clinton> , <manners.ttl#Hermione_Edith_Agnes_Talmash> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75302785> , <https://www.wikidata.org/wiki/Q75302786> ;
 	gen:startDate "1918-07-30" .
-<#Edward_Henry_Fiennes-Clinton>
+<https://www.wikidata.org/wiki/Q75357132>
   # Edward Henry Fiennes-Clinton, 1886-04-04 - 1916-08-17
-  gen:father <#Charles_Edward_Fiennes-Clinton> ;
-  gen:mother <#Alice_Gertrude_Waring> .
+  gen:father <https://www.wikidata.org/wiki/Q75357127> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75357128> .
   # oo Edith Annie Guest, daughter of Horace Guest
   []
-    gen:spouse <#Edward_Henry_Fiennes-Clinton> , <#Edith_Annie_Guest> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75357132> , <https://www.wikidata.org/wiki/Q75357134> ;
 	gen:startDate "1912" .
 
 <https://www.wikidata.org/wiki/Q5726821>
   # Henry Edward Hugh Pelham-Clinton-Hope, 9th Duke of Newcastle-under-Lyme, 1907-04-08 – 1988-11-04
   gen:father <https://www.wikidata.org/wiki/Q4348372> ;
-  gen:mother <#Olive_Muriel_Thompson> .
+  gen:mother <https://www.wikidata.org/wiki/Q75321553> .
   # oo Jean Austin, 1906-01-04 - 1968-09-02, daughter of Eugene Kelly Austin and Mabel Grant Hatch, adopted by of David Banks (2nd husband of Mabel Grant Hatch)
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q5726821> , <#Jean_Austin> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q5726821> , <https://www.wikidata.org/wiki/Q75321546> ;
 	gen:startDate "1931-03-23" ;
 	gen:divorceDate "1940" .
   # oo Lady Mary Diana Montagu-Stuart-Wortley, 1920-06-02 - 1997-09-19 (stuart.ttl)
@@ -612,125 +638,104 @@
 	gen:divorceDate "1959" .
   # oo Sally Ann Wemyss Anstice, 1928~ - 2015-07-09
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q5726821> , <#Sally_Ann_Wemyss_Anstice> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q5726821> , <https://www.wikidata.org/wiki/Q75321688> ;
 	gen:startDate "1959-10-23" .
 <https://www.wikidata.org/wiki/Q5344809>
   # Edward Charles Pelham-Clinton, 10th Duke of Newcastle-under-Lyne, 1920-08-18 – 1988-12-25
-  gen:father <#Guy_Edward_Pelham-Clinton> ;
-  gen:mother <manners.ttl#Hermione_Edith_Agnes_Talmash> .
+  gen:father <https://www.wikidata.org/wiki/Q75302785> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75302786> .
 <https://www.wikidata.org/wiki/Q5342894>
   # Edward Horace Fiennes-Clinton, 18th Earl of Lincoln, 1913-02-23 – 2001-07-07
   # 18th Earl of Lincoln 1988-12-25
-  gen:father <#Edward_Henry_Fiennes-Clinton> ;
-  gen:mother <#Edith_Annie_Guest> .
+  gen:father <https://www.wikidata.org/wiki/Q75357132> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75357134> .
   # oo Leila Ruth Millen, d. 1947-07-19, daughter of John James Millen
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q5342894> , <#Leila_Ruth_Millen> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q5342894> , <https://www.wikidata.org/wiki/Q75357138> ;
 	gen:startDate "1940" .
   # oo Linda Alice Creed, daughter of Charles Creed
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q5342894> , <#Linda_Alice_Creed> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q5342894> , <https://www.wikidata.org/wiki/Q75357143> ;
 	gen:startDate "1953-12-03" .
 
-<#Lady_Patricia_Pelham-Clinton-Hope>
+<https://www.wikidata.org/wiki/Q75321686>
   # Lady Patricia Pelham-Clinton-Hope, b. 1949-07-20
   gen:father <https://www.wikidata.org/wiki/Q5726821> ;
   gen:mother <https://www.wikidata.org/wiki/Q46378566> .
-  # oo 1971 (div 1974) Alan Pariser, #Alan_Pariser
+  # oo 1971 (div 1974) Alan Pariser, https://www.wikidata.org/wiki/Q75857076
   # oo 1981 (div 1983) Nick Mancuso, b. 1948-05-29, https://www.wikidata.org/wiki/Q1365438
-<#Lady_Kathleen_Marie_Gabrielle_Pelham-Clinton-Hope>
+<https://www.wikidata.org/wiki/Q75321687>
   # Lady Kathleen Marie Gabrielle Pelham-Clinton-Hope, 1951-01-01 - 2016-05-01
   gen:father <https://www.wikidata.org/wiki/Q5726821> ;
   gen:mother <https://www.wikidata.org/wiki/Q46378566> .
-  # oo 1970-02-27 (div) Edward Vernon Reynolds, son of Henry Reynolds
-  # oo 1979 (div 1980) Khun Chaiyoot Chamnanlertkit
-<#Edward_Gordon_Fiennes-Clinton>
-  # Hon. Edward Gordon Fiennes-Clinton, 1943-02-07 - 1999
+  # oo 1970-02-27 (div) Edward Vernon Reynolds, https://www.wikidata.org/wiki/Q75857081
+  # oo 1979 (div 1980) Khun Chaiyoot Chamnanlertkit, https://www.wikidata.org/wiki/Q75857133
+<https://www.wikidata.org/wiki/Q75357140>
+  # Hon. Edward Gordon Fiennes-Clinton, Lord Fynes, 1943-02-07 - 1999
   gen:father <https://www.wikidata.org/wiki/Q5342894> ;
-  gen:mother <#Leila_Ruth_Millen> .
+  gen:mother <https://www.wikidata.org/wiki/Q75357138> .
   # oo Julia Eleanor Howson, daughter of William Thomas Howson
   []
-    gen:spouse <#Edward_Gordon_Fiennes-Clinton> , <#Julia_Eleanor_Howson> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75357140> , <https://www.wikidata.org/wiki/Q75857552> ;
 	gen:startDate "1970-12-12" .
 
 <https://www.wikidata.org/wiki/Q17352782>
   # Robert Edward Fiennes-Clinton, 19th Earl of Lincoln, b. 1972-06-19
-  gen:father <#Edward_Gordon_Fiennes-Clinton> ;
-  gen:mother <#Julia_Eleanor_Howson> .
+  gen:father <https://www.wikidata.org/wiki/Q75357140> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75857552> .
 
 
 # ----
-<https://www.wikidata.org/wiki/Q69787093>
+<https://www.wikidata.org/wiki/Q18879808>
   # Juliane de Leyburn, Baroness Leyburn, d. 1367-11-01
   gen:father <https://www.wikidata.org/wiki/Q69787886> ; # Sir Thomas de Leyburn
   gen:mother <https://www.wikidata.org/wiki/Q3611715> . # Alice de Toeni
   # oo John de Hastings, 2nd Lord Hastings, 1286-09-30 - 1325-01-20, https://www.wikidata.org/wiki/Q16841566
-  # oo 1325-09-23b Thomas le Blount, 1st Lord Blount, 1328-06-12a/-09-07b, #Thomas_le_Blount,_1st_Lord_Blount
+  # oo 1325-09-23b Thomas le Blount, 1st Lord Blount, 1328-06-12a/-09-07b, https://www.wikidata.org/wiki/Q75412280
   # oo 1328-10-17b William de Clinton, 1st Earl of Huntingdon, 1304 - 1354-08-24, https://www.wikidata.org/wiki/Q7610117
 # ----
-#<#Thomas_le_Blount,_1st_Lord_Blount>
+<https://www.wikidata.org/wiki/Q75412280>
   # Thomas le Blount, 1st Lord Blount, 1328-06-12a/-09-07b
-  # 1st Lord Blount 1326-12-03
-  # son of Sir Ralph le Blount
-  # and Cicely Lovett
+  # 1st Lord Blount [England by writ] 1326-12-03
+  gen:father <https://www.wikidata.org/wiki/Q75431346> ; # Sir Ralph le Blount
+  gen:mother <https://www.wikidata.org/wiki/Q75431347> . # Cicely Lovett
   # oo Juliane de Leyburn, Baroness Leyburn, d. 1367-11-01
   []
-    gen:spouse <#Thomas_le_Blount,_1st_Lord_Blount> , <https://www.wikidata.org/wiki/Q69787093> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75412280> , <https://www.wikidata.org/wiki/Q18879808> ;
 	gen:startDate "1325-09-23b" .
-
-<https://www.wikidata.org/wiki/Q237170>
-  # Elizabeth Blount, 1502~ - 1539a/1541b
-  gen:father <https://www.wikidata.org/wiki/Q6222262> .
-  # oo 1530-04-15a/1535-02-12b Edward Clinton, 1st Earl of Lincoln, 1512 - 1585-01-16, https://www.wikidata.org/wiki/Q1291914
 
 # ----
 <https://www.wikidata.org/wiki/Q940191>
   # Sir Edward Poynings, 1459 - 1521-10-22
-  gen:father <https://www.wikidata.org/wiki/Q14942826> .
-  # and Elizabeth Paston
+  gen:father <https://www.wikidata.org/wiki/Q14942826> ; # Robert Poynings
+  gen:mother <https://www.wikidata.org/wiki/Q52514942> . # Elizabeth Paston
 
-<#Joan_Poynings>
+<https://www.wikidata.org/wiki/Q75492418>
   # Joan Poynings
-  gen:father <https://www.wikidata.org/wiki/Q940191> .
-  # oo 1510-05-04~ Thomas Clinton, 8th Lord Clinton, 1490~ - 1517-08-07, #Thomas_Clinton,_8th_Baron_Clinton
+  gen:father <https://www.wikidata.org/wiki/Q940191> ;
+  gen:mother <https://www.wikidata.org/wiki/Q111464858> . # NN
+  # oo 1510-05-04~ Thomas Clinton, 8th Lord Clinton, 1490~ - 1517-08-07, https://www.wikidata.org/wiki/Q75492417
 
 # ----
 #<https://www.wikidata.org/wiki/Q7343721>
   # Robert Dymoke (Dymock or Dymocke), of Scrivelsby, Lincolnshire, 1531 - 1580-09-11
-  # oo Lady Bridget Clinton, b. 1536~
+  # oo Lady Bridget Clinton, 1536~ - 1580-09-12
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q7343721> , <#Lady_Bridget_Clinton> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q7343721> , <https://www.wikidata.org/wiki/Q96075979> ;
 	gen:startDate "1556~" .
-
-# ----
-#<https://www.wikidata.org/wiki/Q7788051>
-  # Thomas Burgh, 1st Lord Burgh, 1488~ - 1550-02-28
-  # 1st Lord Burgh, 5th Baron Strabolgi, de jure 1529-12-02
-  # oo Agnes Tyrwhitt, daughter of Sir William Tyrwhitt and Anne Constable
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q7788051> , <#Agnes_Tyrwhitt> ;
-	gen:startDate "1496" .
-
-<https://www.wikidata.org/wiki/Q26897915>
-  # William Burgh, 2nd Lord Burgh, 1522~ - 1584-09-10
-  gen:father <https://www.wikidata.org/wiki/Q7788051> ;
-  gen:mother <#Agnes_Tyrwhitt> .
-  # oo Lady Katharine Clinton, 1538~ - 1621-08-14
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q26897915> , <#Lady_Katharine_Clinton> .
 
 # ----
 #<https://www.wikidata.org/wiki/Q4798858>
   # Sir Arthur Gorges, d. 1625-10~
   # oo Lady Elizabeth Clinton
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q4798858> , <#Lady_Elizabeth_Clinton> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q4798858> , <https://www.wikidata.org/wiki/Q75586502> ;
 	gen:startDate "1597~" .
 
-<#Elizabeth_Gorges>
+<https://www.wikidata.org/wiki/Q75256549>
   # Elizabeth Gorges, d. 1675-05~
   gen:father <https://www.wikidata.org/wiki/Q4798858> ;
-  gen:mother <#Lady_Elizabeth_Clinton> .
+  gen:mother <https://www.wikidata.org/wiki/Q75586502> .
   # oo Sir Robert Stanley, of Brickills, 1632-06-03, https://www.wikidata.org/wiki/Q7349997
   # oo Theophilus Clinton, 4th Earl of Lincoln, 1600~  1667-05-21, https://www.wikidata.org/wiki/Q15989912
 
@@ -739,20 +744,28 @@
   # Rev. Isaac Johnson, 1601 - 1630-09-30
   # oo Lady Arabella Clinton, 1597 - 1630-08
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q6076578> , <#Lady_Arabella_Clinton> .
+    gen:spouse <https://www.wikidata.org/wiki/Q6076578> , <https://www.wikidata.org/wiki/Q75586485> .
 
 # ----
 #<https://www.wikidata.org/wiki/Q6240374>
   # John Humphrey, 1597 – 1661
   # oo Lady Susan Clinton
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q6240374> , <#Lady_Susan_Clinton> .
+    gen:spouse <https://www.wikidata.org/wiki/Q6240374> , <https://www.wikidata.org/wiki/Q75586488> .
+
+# ----
+<https://www.wikidata.org/wiki/Q116028674>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75787469> .
+  # Jane Markham, 1616 - 1689
+  # daughter of Abraham Markham
+  # and Jane Eyre
+  # oo Henry Clinton / Henry Fiennes, of Kirkstead, 1611 – 1674, https://www.wikidata.org/wiki/Q75857243
 
 # ----
 #<https://www.wikidata.org/wiki/Q50369015>
   # Peter Carle, 1666 - 1730
 
-<#Anne_Carle>
+<https://www.wikidata.org/wiki/Q75784109>
   # Anne Carle, d. 1761-08-05
   gen:father <https://www.wikidata.org/wiki/Q50369015> .
   # oo George Clinton, 1686 - 1761-07-10, https://www.wikidata.org/wiki/Q5537983
@@ -760,13 +773,13 @@
 # ----
 <https://www.wikidata.org/wiki/Q75357113>
   # Katharine Majendie, d. 1871-04-25
-  gen:father <https://www.wikidata.org/wiki/Q5725387> .
-  # and Anne Routledge
+  gen:father <https://www.wikidata.org/wiki/Q5725387> ; # Henry Majendie
+  gen:mother <https://www.wikidata.org/wiki/Q76276816> . # Anne Routledge
   # oo 1812-01-06 Henry Fynes-Clinton, 1781-01-14 - 1852-10-24, https://www.wikidata.org/wiki/Q3132788
 <https://www.wikidata.org/wiki/Q76276812>
   # Isabella Mary Majendie, 1705~ - 1862-09-15
-  gen:father <https://www.wikidata.org/wiki/Q5725387> .
-  # and Anne Routledge
+  gen:father <https://www.wikidata.org/wiki/Q5725387> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76276816> .
   # oo 1822-06-05 Very Rev. Francis Lear, 1789 – 1850, https://www.wikidata.org/wiki/Q5481692
 # ----
 #<https://www.wikidata.org/wiki/Q5481692>
@@ -786,18 +799,20 @@
 # ----
 #<https://www.wikidata.org/wiki/Q5082888>
   # Rt. Hon. Charles Tennyson-d'Eyncourt, 1784-07-20 - 1861-07-21
+  # son of George Tennyson
+  # and Mary Turner
   # oo Frances Mary Hutton, d. 1878-01-26, daughter of Rev. John Hutton
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q5082888> , <#Frances_Mary_Hutton> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q5082888> , <https://www.wikidata.org/wiki/Q75302887> ;
 	gen:startDate "1808-01-01" .
 
 <https://www.wikidata.org/wiki/Q5346865>
   # Edwin Clayton Tennyson-d'Eyncourt, 1813 - 1903-01-04
   gen:father <https://www.wikidata.org/wiki/Q5082888> ;
-  gen:mother <#Frances_Mary_Hutton> .
+  gen:mother <https://www.wikidata.org/wiki/Q75302887> .
   # oo Lady Henrietta Pelham-Clinton, 1819-08-29 - 1890-08-19
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q5346865> , <#Lady_Henrietta_Pelham-Clinton> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q5346865> , <https://www.wikidata.org/wiki/Q75302882> ;
 	gen:startDate "1859-03-01" .
 
 # ----
@@ -816,7 +831,7 @@
 
 <https://www.wikidata.org/wiki/Q354250>
   # Sir Charles Hubert Hastings Parry, 1st Baronet, 1848-02-27 – 1918-10-07
-  # 1st Baronet Parry of Highnam Court, in the parish of Highnam, in the county of Gloucester 1902-07-24
+  # 1st Baronet Parry of Highnam Court, in the parish of Highnam, in the county of Gloucester [U.K.] 1902-07-24
   gen:father <https://www.wikidata.org/wiki/Q7789907> ;
   gen:mother <https://www.wikidata.org/wiki/Q75857258> .
   # oo Lady Elizabeth Maude Herbert, 1851-07-30 - 1933-02-28
@@ -831,51 +846,32 @@
   # oo 1898-04-12 Arthur Augustus William Harry Ponsonby, 1st Baron Ponsonby of Shulbrede, 1871-02-16 - 1946-03-24, https://www.wikidata.org/wiki/Q336479
 
 # ----
-#<#John_Campbell_of_Stonefield>
-  # John Campbell of Stonefield, 1845-05-19 - 1885
-  # son of Colin George Campbell, 5th of Stonefield, 1811-05-23 - 1887
-  # and oo 1839-12-10 Elizabeth Fitzgibbon, d. 1880, daughter of Gibbon Fitzgibbon
-  # oo Adela Harriett Pelham-Clinton, 1850-08-22 - 1915-05-21
-  []
-    gen:spouse <#John_Campbell_of_Stonefield> , <https://www.wikidata.org/wiki/Q75302833> ;
-	gen:startDate "1871-08-02" .
-
-<#Colin_George_Pelham_Campbell,_6th_of_Stonefield>
-  # Colin George Pelham Campbell, 6th of Stonefield, 1872-05-31 - 1955-02-08
-  gen:father <#John_Campbell_of_Stonefield> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75302833> .
-  # oo Lady Ileene Frances Cairne Hastings, 1872-05-20 - 1946-06-15
-  []
-    gen:spouse <#Colin_George_Pelham_Campbell,_6th_of_Stonefield> , <hastings.ttl#Lady_Ileene_Frances_Cairne_Hastings> ;
-	gen:startDate "1893-11-15" .
-
-# ----
-<#Mary_Wilkinson>
+<https://www.wikidata.org/wiki/Q75302771>
   # Mary Wilkinson, d. 1936-10-31
-  gen:father <https://www.wikidata.org/wiki/Q23621531> .
-  # oo 1886-07-21 Henry William Pelham-Clinton, 1860-10-21 - 1927-12-18, #Henry_William_Pelham-Clinton
+  gen:father <https://www.wikidata.org/wiki/Q23621531> . # Frederick Green Wilkinson
+  # oo 1886-07-21 Henry William Pelham-Clinton, 1860-10-21 - 1927-12-18, https://www.wikidata.org/wiki/Q75302770
 
 # ----
 #<https://www.wikidata.org/wiki/Q21079379>
   # Alfonso M. Doria-Pamphili-Landi, XIII Principe di Melfi, 1851-09-25 - 1914-12-06
   # oo Lady Emily Augusta Mary Pelham-Clinton, 1863-03-28 - 1919-12-23
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q21079379> , <#Lady_Emily_Augusta_Mary_Pelham-Clinton> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q21079379> , <https://www.wikidata.org/wiki/Q75321680> ;
 	gen:startDate "1882-06-24" .
 
 # ----
-<#Sally_Ann_Wemyss_Anstice>
+<https://www.wikidata.org/wiki/Q75321688>
   # Sally Ann Wemyss Anstice, 1928~ - 2015-07-09
-  gen:father <https://www.wikidata.org/wiki/Q12792558> .
-  # and Sydney Williamson
+  gen:father <https://www.wikidata.org/wiki/Q12792558> ; # John Anstice
+  gen:mother <https://www.wikidata.org/wiki/Q75321693> . # Sydney Williamson
   # oo 1959-10-23 Henry Edward Hugh Pelham-Clinton-Hope, 9th Duke of Newcastle-under-Lyme, 1907-04-08 – 1988-11-04, https://www.wikidata.org/wiki/Q5726821
 
 # ----
-#<#Alan_Pariser>
+#<https://www.wikidata.org/wiki/Q75857076>
   # Alan Pariser
   # oo Lady Patricia Pelham-Clinton-Hope, b. 1949-07-20
   []
-    gen:spouse <#Alan_Pariser> , <#Lady_Patricia_Pelham-Clinton-Hope> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75857076> , <https://www.wikidata.org/wiki/Q75321686> ;
 	gen:startDate "1971" ;
 	gen:divorceDate "1974" .
 
@@ -884,10 +880,27 @@
   # Nick Mancuso, b. 1948-05-29
   # oo Lady Patricia Pelham-Clinton-Hope, b. 1949-07-20
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q1365438> , <#Lady_Patricia_Pelham-Clinton-Hope> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q1365438> , <https://www.wikidata.org/wiki/Q75321686> ;
 	gen:startDate "1981" ;
 	gen:divorceDate "1983" .
 
+# ----
+#<https://www.wikidata.org/wiki/Q75857081>
+  # Edward Vernon Reynolds
+  # son of Henry Reynolds
+  # oo (div) Lady Kathleen Marie Gabrielle Pelham-Clinton-Hope, 1951-01-01 - 2016-05-01
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75857081> , <https://www.wikidata.org/wiki/Q75321687> ;
+	gen:startDate "1970-02-27" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q75857133>
+  # Khun Chaiyoot Chamnanlertkit
+  # oo Lady Kathleen Marie Gabrielle Pelham-Clinton-Hope, 1951-01-01 - 2016-05-01
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75857133> , <https://www.wikidata.org/wiki/Q75321687> ;
+	gen:startDate "1979" ;
+	gen:divorceDate "1980" .
 
 # ====
 #<https://www.wikidata.org/wiki/Q7412501>
@@ -902,34 +915,34 @@
   gen:mother <#Margaret_Wise> .
   # oo Lady Arabella Clinton, d. 1667
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q7349361> , <#Lady_Arabella_Clinton> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q7349361> , <https://www.wikidata.org/wiki/Q75586485> ;
 	gen:startDate "1643" .
 
 <https://www.wikidata.org/wiki/Q28098337>
   # Samuel Rolle, 1646-11-20 – 1719-10
   gen:father <https://www.wikidata.org/wiki/Q7349361> ;
-  gen:mother <#Lady_Arabella_Clinton> .
+  gen:mother <https://www.wikidata.org/wiki/Q75586485> .
   # oo Margaret Tuckfield, d. 1754
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q28098337> , <#Margaret_Tuckfield> .
-<#Bridget_Rolle>
+    gen:spouse <https://www.wikidata.org/wiki/Q28098337> , <https://www.wikidata.org/wiki/Q75586943> .
+<https://www.wikidata.org/wiki/Q75586950>
   # Bridget Rolle, 1648 - 1721-08-28
   gen:father <https://www.wikidata.org/wiki/Q7349361> ;
-  gen:mother <#Lady_Arabella_Clinton> .
+  gen:mother <https://www.wikidata.org/wiki/Q75586485> .
   # oo 1672-07-23 Francis Trefusis, 1650-07-08 - 1680-11-05, https://www.wikidata.org/wiki/Q39896226
 
 <https://www.wikidata.org/wiki/Q6759848>
   # Margaret Rolle, 15th Baroness Clinton, 1709-01-17 – 1781-01-13
   # 15th Baroness Clinton 1751-05-02, suo jure
   gen:father <https://www.wikidata.org/wiki/Q28098337> ;
-  gen:mother <#Margaret_Tuckfield> .
+  gen:mother <https://www.wikidata.org/wiki/Q75586943> .
   # oo 1724-03-26 Robert Walpole, 2nd Earl of Orford, 1701 – 1751-03-31, https://www.wikidata.org/wiki/Q7350828 (manners.ttl)
   # oo 1751-05-25 Hon. Sewallis Shirley, 1709-10-19 – 1765-10-31, https://www.wikidata.org/wiki/Q16859558
 # ----
 <#Margaret_Wise>
   # Margaret Wise
-  gen:father <https://www.wikidata.org/wiki/Q7795259> .
-  # and Margery Stafford
+  gen:father <https://www.wikidata.org/wiki/Q7795259> ; # Thomas Wise, d. 1629-02-21
+  gen:mother <https://www.wikidata.org/wiki/Q111506650> . # Margery Stafford
   # oo Sir Samuel Rolle, 1588~ – 1647, https://www.wikidata.org/wiki/Q7412501
 
 # ====
@@ -937,37 +950,44 @@
   # Francis Trefusis, 1650-07-08 - 1680-11-05
   # oo Bridget Rolle, 1648 - 1721-08-28
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q39896226> , <#Bridget_Rolle> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q39896226> , <https://www.wikidata.org/wiki/Q75586950> ;
 	gen:startDate "1672-07-23" .
 
 <https://www.wikidata.org/wiki/Q24260360>
   # Samuel Trefusis, 1676-10-06 - 1724-04-04
   gen:father <https://www.wikidata.org/wiki/Q39896226> ;
-  gen:mother <#Bridget_Rolle> .
+  gen:mother <https://www.wikidata.org/wiki/Q75586950> .
+  # oo Alice Cotton
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q24260360> , <https://www.wikidata.org/wiki/Q96084967> .
+  # oo Margaret Craggs
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q24260360> , <https://www.wikidata.org/wiki/Q75826328> .
 
 <https://www.wikidata.org/wiki/Q36692426>
   # Robert Trefusis, 1708-03-22 - 1742-08
-  gen:father <https://www.wikidata.org/wiki/Q24260360> .
+  gen:father <https://www.wikidata.org/wiki/Q24260360> ;
+  gen:mother <https://www.wikidata.org/wiki/Q96084967> .
   # oo Elizabeth Affleck, 1713-01-19 - 1748, daughter of Gilbert Affleck and Anna Dolben
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q36692426> , <#Elizabeth_Affleck> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q36692426> , <https://www.wikidata.org/wiki/Q75586956> ;
 	gen:startDate "1737-03-18" .
 
 <https://www.wikidata.org/wiki/Q76063897>
   # Eliza Trefusis, 1738-01-24 - 1799-12-19
   gen:father <https://www.wikidata.org/wiki/Q36692426> ;
-  gen:mother <#Elizabeth_Affleck> .
+  gen:mother <https://www.wikidata.org/wiki/Q75586956> .
   # oo 1759 Sir Herbert Mackworth, 1st Baronet, 1737-01-01 . 1791-10-25, https://www.wikidata.org/wiki/Q7527249 (digby.ttl)
 <https://www.wikidata.org/wiki/Q75586959>
   # Robert Cotton Trefusis, 1742b - 1778-08-04~
   gen:father <https://www.wikidata.org/wiki/Q36692426> ;
-  gen:mother <#Elizabeth_Affleck> .
+  gen:mother <https://www.wikidata.org/wiki/Q75586956> .
   # oo Hon. Anne St. John, 1739-01-31 - 1776-03-07
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75586959> , <https://www.wikidata.org/wiki/Q75586963> .
   # oo Mary Ann Copinger
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q75586959> , <#Mary_Ann_Copinger> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75586959> , <https://www.wikidata.org/wiki/Q76218991> ;
 	gen:startDate "1777-06-18" .
 
 <https://www.wikidata.org/wiki/Q22020566>
@@ -977,18 +997,18 @@
   gen:mother <https://www.wikidata.org/wiki/Q75586963> .
   # oo Albertina Marianna Gaulis, d. 1798-02-07, daughter of John Abraham Rodolph Gaulis
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q22020566> , <#Albertina_Marianna_Gaulis> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q22020566> , <https://www.wikidata.org/wiki/Q76218991> ;
 	gen:startDate "1786-04-29" .
 
 <https://www.wikidata.org/wiki/Q75587051>
   # Hon. Anne Matilda Trefusis, d. 1876-02-24
   gen:father <https://www.wikidata.org/wiki/Q22020566> ;
-  gen:mother <#Albertina_Marianna_Gaulis> .
+  gen:mother <https://www.wikidata.org/wiki/Q76218991> .
   # oo 1827-03-27 Rev. Hon. Edward George Moore, 1798-08-18 - 1876-02-08, https://www.wikidata.org/wiki/Q17332351 (ponsonby.ttl)
 <https://www.wikidata.org/wiki/Q75586982>
   # Robert Cotton St. John Trefusis, 18th Lord Clinton, 1787-04-28 - 1832-10
   gen:father <https://www.wikidata.org/wiki/Q22020566> ;
-  gen:mother <#Albertina_Marianna_Gaulis> .
+  gen:mother <https://www.wikidata.org/wiki/Q76218991> .
   # oo Frances Selina Isabella Poyntz, d. 1875-08-29
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75586982> , <https://www.wikidata.org/wiki/Q75273565> ;
@@ -996,27 +1016,29 @@
 <https://www.wikidata.org/wiki/Q5083023>
   # Charles Rodolph Trefusis, 19th Lord Clinton, 1791-11-09 - 1866-04-10
   gen:father <https://www.wikidata.org/wiki/Q22020566> ;
-  gen:mother <#Albertina_Marianna_Gaulis> .
+  gen:mother <https://www.wikidata.org/wiki/Q76218991> .
   # oo Lady Elizabeth Georgiana Kerr, 1807-09-25 - 1871-03-19
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5083023> , <https://www.wikidata.org/wiki/Q75251723> ;
 	gen:startDate "1831-10-25" .
-<#George_Rolle_Walpole_Trefusis>
+<https://www.wikidata.org/wiki/Q75586988>
   # Hon. George Rolle Walpole Trefusis, 1793-04-08 -. 1849-05
   gen:father <https://www.wikidata.org/wiki/Q22020566> ;
-  gen:mother <#Albertina_Marianna_Gaulis> .
+  gen:mother <https://www.wikidata.org/wiki/Q76218991> .
   # oo Margaret Frances James, d. 1848-03-06, daughter of John James
   []
-    gen:spouse <#George_Rolle_Walpole_Trefusis> , <#Margaret_Frances_James> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75586988> , <https://www.wikidata.org/wiki/Q75586991> ;
 	gen:startDate "1839-01-08" .
 <https://www.wikidata.org/wiki/Q75587057>
   # Hon. Louisa Trefusis, 1796-11-29 - 1885-11-20
   gen:father <https://www.wikidata.org/wiki/Q22020566> ;
-  gen:mother <#Albertina_Marianna_Gaulis> .
+  gen:mother <https://www.wikidata.org/wiki/Q76218991> .
   # oo 1822 John Rolle, 1st Baron Rolle of Stevenstone, 1756-10-16 - 1842-04-03, https://www.wikidata.org/wiki/Q6255491
 
 <https://www.wikidata.org/wiki/Q5078989>
   # Charles Henry Rolle Hepburn-Stuart-Forbes-Trefusis, 20th Lord Clinton, 1834-03-02 – 1904-03-29
+  # Charles Henry Rolle Trefusis
+  # Charles Henry Rolle Hepburn-Stuart-Forbes-Trefusis 1867-09-04
   gen:father <https://www.wikidata.org/wiki/Q5083023> ;
   gen:mother <https://www.wikidata.org/wiki/Q75251723> .
   # oo Harriet Williamina Hepburn-Forbes, 1835-05-17 - 1869-07-04 (forbes.ttl)
@@ -1029,6 +1051,8 @@
 	gen:startDate "1875-03-30" .
 <https://www.wikidata.org/wiki/Q6769493>
   # Hon. Mark George Kerr Rolle, 1835-11-13 - 1907-04-27
+  # Mark George Kerr Trefusis
+  # Mark George Kerr Rolle 1852-01-30
   gen:father <https://www.wikidata.org/wiki/Q5083023> ;
   gen:mother <https://www.wikidata.org/wiki/Q75251723> .
   # oo Lady Gertrude Jane Douglas, d. 1924-03-21
@@ -1048,27 +1072,27 @@
   gen:father <https://www.wikidata.org/wiki/Q5083023> ;
   gen:mother <https://www.wikidata.org/wiki/Q75251723> .
   # oo 1881-09-27 Hon. Edward William Douglas, 1825-10-19 - 1918-05-07, https://www.wikidata.org/wiki/Q75332867
-<#Gertrude_Albertina_Trefusis>
+<https://www.wikidata.org/wiki/Q75332870>
   # Hon. Gertrude Albertina Trefusis, 1846~ - 1878-04-11
   gen:father <https://www.wikidata.org/wiki/Q5083023> ;
   gen:mother <https://www.wikidata.org/wiki/Q75251723> .
-  # oo 1876-10-17 Hon. George Herbert Windsor-Clive, 1835-03-12 - 1918-04-26, https://www.wikidata.org/wiki/Q5546432
-<#John_Schomberg_Trefusis>
+  # oo 1876-10-17 Hon. George Herbert Windsor-Clive, 1835-03-12 - 1918-04-26, https://www.wikidata.org/wiki/Q5546432 (herbert.ttl)
+<https://www.wikidata.org/wiki/Q75257994>
   # Hon. John Schomberg Trefusis, 1852-06-24 - 1932-12-29
   gen:father <https://www.wikidata.org/wiki/Q5083023> ;
   gen:mother <https://www.wikidata.org/wiki/Q75251723> .
   # oo Eva Louisa Bontein, d. 1949-08-20, daughter of James Bontein and Katherine Cecilia Shelley
   []
-    gen:spouse <#John_Schomberg_Trefusis> , <#Eva_Louisa_Bontein> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75257994> , <https://www.wikidata.org/wiki/Q75332851> ;
 	gen:startDate "1883-07-19" .
 <https://www.wikidata.org/wiki/Q7350466>
   # Rt. Rev. Robert Edward Trefusis, 1843-01-24 - 1930-07-09
-  # Bishop of Crediton between 1897
-  gen:father <#George_Rolle_Walpole_Trefusis> ;
-  gen:mother <#Margaret_Frances_James> .
+  # Bishop of Crediton 1897
+  gen:father <https://www.wikidata.org/wiki/Q75586988> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75586991> .
   # oo Emma Mary Wethered, d. 1927-04-11, daughter of Owen Wethered
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q7350466> , <#Emma_Mary_Wethered> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q7350466> , <https://www.wikidata.org/wiki/Q75586999> ;
 	gen:startDate "1874-05-07" .
 
 <https://www.wikidata.org/wiki/Q746464>
@@ -1087,7 +1111,7 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q73179705> , <https://www.wikidata.org/wiki/Q28360427> ;
 	gen:startDate "1905-05-06" .
-<#Margaret_Adela_Hepburn-Stuart-Forbes-Trefusis>
+<https://www.wikidata.org/wiki/Q75332910>
   # Hon. Margaret Adela Hepburn-Stuart-Forbes-Trefusis, 1866 - 1939-03-20
   gen:father <https://www.wikidata.org/wiki/Q5078989> ;
   gen:mother <https://www.wikidata.org/wiki/Q75251937> .
@@ -1096,36 +1120,36 @@
   # Hon. John Frederick Hepburn-Stuart-Forbes-Trefusis, 1878-01-14 - 1915-10-24
   gen:father <https://www.wikidata.org/wiki/Q5078989> ;
   gen:mother <https://www.wikidata.org/wiki/Q75251937> .
-<#Walter_Alexander_Hepburn-Stuart-Forbes-Trefusis>
+<https://www.wikidata.org/wiki/Q75332843>
   # Hon. Walter Alexander Hepburn-Stuart-Forbes-Trefusis, 1879-07-01 - 1926-07-11
   gen:father <https://www.wikidata.org/wiki/Q5078989> ;
   gen:mother <https://www.wikidata.org/wiki/Q75251937> .
   # oo Marjorie Winifred Graham, d. 1937-06
   []
-    gen:spouse <#Walter_Alexander_Hepburn-Stuart-Forbes-Trefusis> , <#Marjorie_Winifred_Graham> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75332843> , <https://www.wikidata.org/wiki/Q75332844> ;
 	gen:startDate "1911-06-27" ;
 	gen:divorceDate "1919" .
-<#Schomberg_Charles_Hepburn-Stuart-Forbes-Trefusis>
+<https://www.wikidata.org/wiki/Q75332848>
   # Hon. Schomberg Charles Hepburn-Stuart-Forbes-Trefusis, 1882-03-22 - 1974-10-11
   gen:father <https://www.wikidata.org/wiki/Q5078989> ;
   gen:mother <https://www.wikidata.org/wiki/Q75251937> .
   # oo Beatrice Morwenna Trefusis, 1884-09-08 - 1962-11-18
   []
-    gen:spouse <#Schomberg_Charles_Hepburn-Stuart-Forbes-Trefusis> , <#Beatrice_Morwenna_Trefusis> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75332848> , <https://www.wikidata.org/wiki/Q75332849> ;
 	gen:startDate "1916-09-11" .
-<#Robert_Henry_Hepburn-Stuart-Forbes-Trefusis>
+<https://www.wikidata.org/wiki/Q75275430>
   # Hon. Robert Henry Hepburn-Stuart-Forbes-Trefusis, 1888-07-01 - 1958-07-01
   gen:father <https://www.wikidata.org/wiki/Q5078989> ;
   gen:mother <https://www.wikidata.org/wiki/Q75251937> .
   # oo Lady Dorothy Marguerite Elizabeth Herbert, 1894~ - 1956-12-25
   []
-    gen:spouse <#Robert_Henry_Hepburn-Stuart-Forbes-Trefusis> , <herbert.ttl#Lady_Dorothy_Marguerite_Elizabeth_Herbert> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75275430> , <https://www.wikidata.org/wiki/Q75303095> ;
 	gen:startDate "1914-08-05" .
-<#Harriet_Margaret_Hepburn-Stuart-Forbes-Trefusis>
+<https://www.wikidata.org/wiki/Q75332916>
   # Hon. Harriet Margaret Hepburn-Stuart-Forbes-Trefusis, 1891-03-20 - 1975-02-02
   gen:father <https://www.wikidata.org/wiki/Q5078989> ;
   gen:mother <https://www.wikidata.org/wiki/Q75251937> .
-  # oo 1914-08-04 Eustace Widdrington Morrison-Bell, 1874-02-10 - 1947-12-13, #Eustace_Widdrington_Morrison-Bell
+  # oo 1914-08-04 Eustace Widdrington Morrison-Bell, 1874-02-10 - 1947-12-13, https://www.wikidata.org/wiki/Q75332921
 <https://www.wikidata.org/wiki/Q75332858>
   # Gertrude Emily Rolle, d. 1954-04-14
   gen:father <https://www.wikidata.org/wiki/Q6769493> ;
@@ -1136,44 +1160,44 @@
   gen:father <https://www.wikidata.org/wiki/Q75253203> ;
   gen:mother <https://www.wikidata.org/wiki/Q46378810> .
   # oo 1906-06-13 Hon. Arthur Owen Crichton, 1876-08-15 - 1970-07-11, https://www.wikidata.org/wiki/Q75270575 (obrien.ttl)
-<#Marion_Gertrude_Trefusis>
+<https://www.wikidata.org/wiki/Q75257284>
   # Marion Gertrude Trefusis, 1882-08-03 - 1955-11-23
   gen:father <https://www.wikidata.org/wiki/Q75253203> ;
   gen:mother <https://www.wikidata.org/wiki/Q46378810> .
   # oo 1905-12-02 Thomas William Coke, 4th Earl of Leicester of Holkham, 1880-07-09 – 1949-08-21, https://www.wikidata.org/wiki/Q7612491
-<#Beatrice_Morwenna_Trefusis>
+<https://www.wikidata.org/wiki/Q75332849>
   # Beatrice Morwenna Trefusis, 1884-09-08 - 1962-11-18
-  gen:father <#John_Schomberg_Trefusis> ;
-  gen:mother <#Eva_Louisa_Bontein> .
-  # oo 1916-09-11 Hon. Schomberg Charles Hepburn-Stuart-Forbes-Trefusis, 1882-03-22 - 1974-10-11, #Schomberg_Charles_Hepburn-Stuart-Forbes-Trefusis
+  gen:father <https://www.wikidata.org/wiki/Q75257994> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75332851> .
+  # oo 1916-09-11 Hon. Schomberg Charles Hepburn-Stuart-Forbes-Trefusis, 1882-03-22 - 1974-10-11, https://www.wikidata.org/wiki/Q75332848
 <https://www.wikidata.org/wiki/Q15741514>
   # Denys Robert Trefusis, 1890-03-30 - 1929-09-02
-  gen:father <#John_Schomberg_Trefusis> ;
-  gen:mother <#Eva_Louisa_Bontein> .
+  gen:father <https://www.wikidata.org/wiki/Q75257994> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75332851> .
   # oo Violet Keppel, 1894-06-06 - 1970-03-01
   []
     gen:spouse <https://www.wikidata.org/wiki/Q15741514> , <https://www.wikidata.org/wiki/Q461957> ;
 	gen:startDate "1919-06-16" .
 
-<#Harriet_Hepburn-Stuart-Forbes-Trefusis>
+<https://www.wikidata.org/wiki/Q75251940>
   gen:name "Hon. Harriet Hepburn-Stuart-Forbes-Trefusis"@en ;
   gen:birthDate "1887-11-14" ;
   gen:deathDate "1958-03-15" ;
   gen:father <https://www.wikidata.org/wiki/Q746464> ;
   gen:mother <https://www.wikidata.org/wiki/Q75251935> .
-  # oo 1910-04-28 Henry Nevile Fane, 1883-05-24 - 1947-08-02, fane.ttl#Henry_Nevile_Fane
+  # oo 1910-04-28 Henry Nevile Fane, 1883-05-24 - 1947-08-02, https://www.wikidata.org/wiki/Q75251942
 <https://www.wikidata.org/wiki/Q75381423>
   gen:name "Hon. Fenella Hepburn-Stuart-Forbes-Trefusis"@en ;
   gen:birthDate "1889-08-19" ;
   gen:deathDate "1966-07-19" ;
   gen:father <https://www.wikidata.org/wiki/Q746464> ;
   gen:mother <https://www.wikidata.org/wiki/Q75251935> .
-  # oo 1914-09-29 John Herbert Bowes-Lyon, 1886-04-01 - 1930-02-07, https://www.wikidata.org/wiki/Q75411
-<#Helen_Beatrice_Margaret_Hepburn-Stuart-Forbes-Trefusis>
+  # oo 1914-09-29 John Herbert Bowes-Lyon, 1886-04-01 - 1930-02-07, https://www.wikidata.org/wiki/Q75411 (lyon.ttl)
+<https://www.wikidata.org/wiki/Q75332878>
   # Helen Beatrice Margaret Hepburn-Stuart-Forbes-Trefusis, 1917-05-06 - 2006-03-29
-  gen:father <#Robert_Henry_Hepburn-Stuart-Forbes-Trefusis> ;
-  gen:mother <herbert.ttl#Lady_Dorothy_Marguerite_Elizabeth_Herbert> .
-  # oo 1936-05-26 Simon Whitbread, 1904-10-12 - 1985, grey.ttl#Simon_Whitbread
+  gen:father <https://www.wikidata.org/wiki/Q75275430> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75303095> .
+  # oo 1936-05-26 Simon Whitbread, 1904-10-12 - 1985, https://www.wikidata.org/wiki/Q75332881 (grey.ttl)
 
 # ====
 #<https://www.wikidata.org/wiki/Q6255496>
@@ -1211,7 +1235,7 @@
 
 <https://www.wikidata.org/wiki/Q5727678>
   # Henry Rolle, 1st and last Baron Rolle, 1708-11-07 - 1750-08-17
-  # 1st Lord Rolle, Baron of Stevenstone, in the County of Devon 1748-01-08
+  # 1st Lord Rolle, Baron of Stevenstone, in the County of Devon [Great Britain] 1748-01-08
   gen:father <https://www.wikidata.org/wiki/Q16859514> ;
   gen:mother <bruce.ttl#Isabella_Walter> .
 <https://www.wikidata.org/wiki/Q16209710>
@@ -1224,7 +1248,7 @@
 
 <https://www.wikidata.org/wiki/Q6255491>
   # John Rolle, 1st Baron Rolle of Stevenstone, 1756-10-16 - 1842-04-03
-  # 1st Baron Rolle of Stevenstone, co. Devon 1796-06-20
+  # 1st Baron Rolle of Stevenstone, co. Devon [Great Britain] 1796-06-20
   gen:father <https://www.wikidata.org/wiki/Q16209710> ;
   gen:mother <https://www.wikidata.org/wiki/Q16859514> .
   # oo Judith Maria Walrond, 1755-01-27 - 1820-10-10, daughter of William Walrond and Sarah Oke
@@ -1254,31 +1278,35 @@
   # and Fanny Julia Ferguson Davie
   # oo Hon. Margaret Adela Hepburn-Stuart-Forbes-Trefusis, 1866 - 1939-03-20
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q6525844> , <#Margaret_Adela_Hepburn-Stuart-Forbes-Trefusis> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q6525844> , <https://www.wikidata.org/wiki/Q75332910> ;
 	gen:startDate "1897-01-18" .
 
 # ----
-#<https://www.wikidata.org/wiki/Q60792680>
+#<https://www.wikidata.org/wiki/Q44832326>
   # Sir Henry John Lowndes Graham, 1842-01-15 –  1930-12-05
+  # son of William Graham
+  # and Anna Matilda Lowndes
   # oo Lady Edith Elizabeth Gathorne-Hardy, d. 1875-01-08
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q60792680> , <https://www.wikidata.org/wiki/Q75591533> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q44832326> , <https://www.wikidata.org/wiki/Q75591533> ;
 	gen:startDate "1869-06-15" .
   # oo Lady Margaret Georgiana Compton, 1847-07-01 - 1931-11-15
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q60792680> , <compton.ttl#Lady_Margaret_Georgiana_Compton> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q44832326> , <https://www.wikidata.org/wiki/Q76099975> ;
 	gen:startDate "1884-12-30" .
 
-<#Marjorie_Winifred_Graham>
+<https://www.wikidata.org/wiki/Q75332844>
   # Marjorie Winifred Graham, d. 1937-06
-  gen:father <https://www.wikidata.org/wiki/Q60792680> ;
-  gen:mother <compton.ttl#Lady_Margaret_Georgiana_Compton> .
-  # oo 1911-06-27 (div 1919) Hon. Walter Alexander Hepburn-Stuart-Forbes-Trefusis, 1879-07-01 - 1926-07-11, #Walter_Alexander_Hepburn-Stuart-Forbes-Trefusis
+  gen:father <https://www.wikidata.org/wiki/Q44832326> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76099975> .
+  # oo 1911-06-27 (div 1919) Hon. Walter Alexander Hepburn-Stuart-Forbes-Trefusis, 1879-07-01 - 1926-07-11, https://www.wikidata.org/wiki/Q75332843
 # ----
 <https://www.wikidata.org/wiki/Q5527395>
   # Gathorne Gathorne-Hardy, 1st Earl of Cranbrook, 1814-10-01 - 1906-10-30
-  # 1st Viscount Cranbrook of Hemsted, Kent 1878-05-04
-  # 1st Baron Medway of Hemsted Park, co. Kent, 1st Earl of Cranbrook 1892-08-22
+  # Gathorne Hardy
+  # Gathorne Gathorne-Hardy 1878-05-11
+  # 1st Viscount Cranbrook of Hemsted, Kent [U.K.] 1878-05-04
+  # 1st Earl of Cranbrook, 1st Baron Medway of Hemsted Park, co. Kent [U.K.] 1892-08-22
   gen:father <https://www.wikidata.org/wiki/Q6237751> ; # John Hardy
   gen:mother <https://www.wikidata.org/wiki/Q75591514> . # Isabel Gathorne
   # oo Jane Orr, d. 1897-11-13, daughter of James Orr and Jane Stewart
@@ -1306,7 +1334,7 @@
   # Lady Edith Elizabeth Gathorne-Hardy, d. 1875-01-08
   gen:father <https://www.wikidata.org/wiki/Q5527395> ;
   gen:mother <https://www.wikidata.org/wiki/Q75269296> .
-  # oo 1869-06-15 Sir Henry John Lowndes Graham, 1842-01-15 –  1930-12-05, https://www.wikidata.org/wiki/Q60792680
+  # oo 1869-06-15 Sir Henry John Lowndes Graham, 1842-01-15 –  1930-12-05, https://www.wikidata.org/wiki/Q44832326
 
 <https://www.wikidata.org/wiki/Q36133102>
   # Gathorne Gathorne-Hardy, 3rd Earl of Cranbrook, 1870-12-18 - 1915-12-23
@@ -1371,15 +1399,68 @@
 	gen:startDate "2013-06" .
 
 # ----
-#<#Sir_Charles_William_Morrison-Bell,_1st_Baronet>
+#<https://www.wikidata.org/wiki/Q75332923>
   # Sir Charles William Morrison-Bell, 1st Baronet, 1833-03-18 - 1914-10-21
-  # 1st Baronet Morrison-Bell, of Otterburn Hall, Elsdon, Northumberland 1905-12-18
+  # 1st Baronet Morrison-Bell, of Otterburn Hall, Elsdon, Northumberland [U.K.] 1905-12-18
+  # son of William Bell
+  # and Mary Wilhelmina Morrison
+  # oo Louisa Maria Dawes, d. 1920-12-15, daughter of William Henry Dawes
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75332923> , <https://www.wikidata.org/wiki/Q75332925> ;
+	gen:startDate "1863-09-01" .
 
-<#Eustace_Widdrington_Morrison-Bell>
+<https://www.wikidata.org/wiki/Q75270581>
+  # Ernest Fitzroy Morrison-Bell, 1871-04-19 - 1960-10-20
+  gen:father <https://www.wikidata.org/wiki/Q75332923> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75332925> .
+  # oo Maud Evelyn Henry, d. 1960-03-12, daughter of Francis Henry
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75270581> , <https://www.wikidata.org/wiki/Q76081623> ;
+	gen:startDate "1902-11-12" .
+<https://www.wikidata.org/wiki/Q75332921>
   # Eustace Widdrington Morrison-Bell, 1874-02-10 - 1947-12-13
-  gen:father <#Sir_Charles_William_Morrison-Bell,_1st_Baronet> .
-  # and Louisa Maria Dawes
+  gen:father <https://www.wikidata.org/wiki/Q75332923> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75332925> .
   # oo Hon. Harriet Margaret Hepburn-Stuart-Forbes-Trefusis, 1891-03-20 - 1975-02-02
   []
-    gen:spouse <#Eustace_Widdrington_Morrison-Bell> , <#Harriet_Margaret_Hepburn-Stuart-Forbes-Trefusis> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75332921> , <https://www.wikidata.org/wiki/Q75332916> ;
 	gen:startDate "1914-08-04" .
+
+<https://www.wikidata.org/wiki/Q75270582>
+  # Louisa Monica Morrison-Bell, 1903 - 2003-11
+  gen:father <https://www.wikidata.org/wiki/Q75270581> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76081623> .
+  # oo 1929-09-24 Cecil Everard Montague Grenville-Grey, 1899-07-27 - 1973-06-05, https://www.wikidata.org/wiki/Q75256823
+<https://www.wikidata.org/wiki/Q76081637>
+  # Claire Wilhelmina Maud Morrison-Bell, 1907 -
+  gen:father <https://www.wikidata.org/wiki/Q75270581> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76081623> .
+  # oo 1928-11-08 Robert Moubray, d. 1961-12-21, https://www.wikidata.org/wiki/Q75250835
+# ----
+#<https://www.wikidata.org/wiki/Q75256823>
+  # Cecil Everard Montague Grenville-Grey, 1899-07-27 - 1973-06-05
+  # son of Grenville Grenville-Gray
+  # and Ellinor Sophia Hanbury
+  # oo Louisa Monica Morrison-Bell, 1903 - 2003-11
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75256823> , <https://www.wikidata.org/wiki/Q75270582> ;
+	gen:startDate "1929-09-24" .
+
+<https://www.wikidata.org/wiki/Q75240263>
+  # Susan Monica Grenville-Grey, b. 1932
+  gen:father <https://www.wikidata.org/wiki/Q75256823> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75270582> .
+  # oo 1951-05-26 Charles Henry Gordon-Lennox, 10th Duke of Richmond, 1929-09-19 - 2017-09-01, https://www.wikidata.org/wiki/Q336980 (lennox.ttl)
+# ----
+#<https://www.wikidata.org/wiki/Q75250835>
+  # Robert Moubray, d. 1961-12-21
+  # oo Claire Wilhelmina Maud Morrison-Bell, 1907 -
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75250835> , <https://www.wikidata.org/wiki/Q76081637> ;
+	gen:startDate "1928-11-08" .
+
+<https://www.wikidata.org/wiki/Q75250838>
+  # Evelyn Mary Moubray, b. 1929-10-20
+  gen:father <https://www.wikidata.org/wiki/Q75250835> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76081637> .
+  # oo 1979-08-16 John Sutherland Egerton, 6th Duke of Sutherland, 1915-05-10 - 2000-09-21, https://www.wikidata.org/wiki/Q2476099 (gower.ttl)
