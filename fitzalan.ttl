@@ -94,7 +94,7 @@
   gen:father <https://www.wikidata.org/wiki/Q2034626> ;
   gen:mother <https://www.wikidata.org/wiki/Q3611717> .
   # oo 1294-06b Henry de Percy, 1st Baron Percy of Alnwick, 1273-03-25~ - 1314-10, https://www.wikidata.org/wiki/Q3785021 -> percy.ttl
-<#Lady_Alice_FitzAlan_(born_1289)>
+<https://www.wikidata.org/wiki/Q75586826>
   # Lady Alice FitzAlan, b. 1289
   gen:father <https://www.wikidata.org/wiki/Q2034626> ;
   gen:mother <https://www.wikidata.org/wiki/Q3611717> .
@@ -436,20 +436,34 @@
 # ----
 <https://www.wikidata.org/wiki/Q46998171>
   # Stephen de Segrave, 3rd Lord Segrave, 1304b - 1325-12-12b
-  gen:father <https://www.wikidata.org/wiki/Q7528055> .
-  # and Christine de Plessis
+  gen:father <https://www.wikidata.org/wiki/Q7528055> ; # Sir John Segrave
+  gen:mother <https://www.wikidata.org/wiki/Q75928484> . # Christine de Plessis
   # oo Lady Alice FitzAlan, b. 1289
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q46998171> , <#Lady_Alice_FitzAlan_(born_1289)> .
+    gen:spouse <https://www.wikidata.org/wiki/Q46998171> , <https://www.wikidata.org/wiki/Q75586826> .
 
 <https://www.wikidata.org/wiki/Q16863364>
   # John Segrave, 4th Baron Segrave, 1315-05-04 - 1353-04-01
   gen:father <https://www.wikidata.org/wiki/Q46998171> ;
-  gen:mother <#Lady_Alice_FitzAlan_(born_1289)> .
-  # oo Margaret Marshall of Brotherton, Duchess of Norfolk, 1320 - 1399-03-24
+  gen:mother <https://www.wikidata.org/wiki/Q75586826> .
+  # oo Margaret Marshall of Brotherton, Duchess of Norfolk, 1321~ - 1399-03-24 (plantagenet.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q16863364> , <https://www.wikidata.org/wiki/Q2559464> ;
-	gen:startDate "1335~" .
+	gen:startDate "1327-03-03" .
+
+<#John_de_Segrave>
+  # John de Segrave, d. 1353-04-01b
+  gen:father <https://www.wikidata.org/wiki/Q16863364> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2559464> .
+  # oo Blanche de Mowbray, d. 1409
+  []
+    gen:spouse <#John_de_Segrave> , <https://www.wikidata.org/wiki/Q75386850> ;
+	gen:startDate "1353b" .
+<https://www.wikidata.org/wiki/Q17138715>
+  # Elizabeth de Segrave, Baroness Segrave, 1338-10-25 - 1368-10-09b
+  gen:father <https://www.wikidata.org/wiki/Q16863364> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2559464> .
+  # oo 1349~ John de Mowbray, 4th Baron Mowbray, 1340-06-24 - 1468-06-17, https://www.wikidata.org/wiki/Q6265603
 
 # ----
 <https://www.wikidata.org/wiki/Q3611717>
