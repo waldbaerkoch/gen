@@ -824,9 +824,9 @@
   gen:deathDate "1950-12-10" ;
   gen:father <https://www.wikidata.org/wiki/Q338427> ;
   gen:mother <https://www.wikidata.org/wiki/Q3611688> .
-  # oo Lady Maureen Helen Vane-Tempest-Stewart, 1900-12-06 - 1942-06-20
+  # oo Lady Maureen Helen Vane-Tempest-Stewart, 1900-12-06 - 1942-06-20 (stewart.ttl)
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q3497552> , <fane.ttl#Lady_Maureen_Helen_Vane-Tempest-Stewart> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q3497552> , <https://www.wikidata.org/wiki/Q34130782> ;
 	gen:startDate "1920-11-04" .
 <https://www.wikidata.org/wiki/Q75253726>
   # Frederick Arthur Stanley, 1905-03-03 - 1978-01-02
@@ -883,7 +883,7 @@
   gen:birthDate "1923-11-04" ;
   gen:deathDate "2004-03-12" ;
   gen:father <https://www.wikidata.org/wiki/Q3497552> ;
-  gen:mother <fane.ttl#Lady_Maureen_Helen_Vane-Tempest-Stewart> .
+  gen:mother <https://www.wikidata.org/wiki/Q34130782> .
   # oo 1956-07-25 Sir John Robert Stratford Dugdale, 1923-05-10 – 1994-12-13, https://www.wikidata.org/wiki/Q75258303 (curzon.ttl)
 
 <https://www.wikidata.org/wiki/Q5345408>
@@ -1472,14 +1472,13 @@
 	gen:startDate "1631-04-13" .
 
 <https://www.wikidata.org/wiki/Q2736244>
-  owl:sameAs <https://www.wikidata.org/wiki/Q75388725> ;
   # John Sheffield, 1st Duke of the County of Buckingham and of Normanby, 1647-09-08 - 1721-02-24
   # 3rd Earl of Mulgrave, co. York, 5th Baron Sheffield, of Butterwick, co. Lincoln 1658-08-24
   # 1st Marquess of Normanby, co. Lincoln 1694-05-10
   # 1st Duke of the County of Buckingham and of Normanby 1703-03-23
   gen:father <https://www.wikidata.org/wiki/Q5339824> ;
   gen:mother <https://www.wikidata.org/wiki/Q75514349> .
-  # oo Ursula Stawel, 1660~ - 1697-08-13
+  # oo Ursula Stawel, 1660~ - 1697-08-13 (darcy.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q2736244> , <https://www.wikidata.org/wiki/Q96091180> ;
 	gen:startDate "1686-03-18" .
@@ -1582,14 +1581,6 @@
   # oo 1928-12-11 Hon. Robert Henry Digby, 1903-11-24 - 1959-04-04, https://www.wikidata.org/wiki/Q75319233
 
 # ----
-<https://www.wikidata.org/wiki/Q96091180>
-  # Ursula Stawel, 1660~ - 1697-08-13
-  gen:father <https://www.wikidata.org/wiki/Q6258922> . # John George Stawel
-  # and Ursula Austen
-  # oo 1681 Edward Conway, 1st Earl of Conway, 1623~ - 1683-08-11, https://www.wikidata.org/wiki/Q5342394
-  # oo 1686-03-18 John Sheffield, 1st Duke of the County of Buckingham and of Normanby, 1647-09-08 - 1721-02-24, https://www.wikidata.org/wiki/Q2736244
-
-# ----
 <https://www.wikidata.org/wiki/Q76165616>
   # Margaret Diana Sabine, d. 1762-01-06
   gen:father <https://www.wikidata.org/wiki/Q6286786> .
@@ -1621,8 +1612,11 @@
 # ----
 <https://www.wikidata.org/wiki/Q7349136>
   # Robert Radcliffe, 1st Earl of Sussex, 1483 - 1542-11-27
-  gen:father <https://www.wikidata.org/wiki/Q18762009> . # John Ratcliffe
-  # and Margaret (?)
+  # 10th Lord FitzWalter [E., 1295] 1505-11-03, after his father's attainder was reversed
+  # 1st Viscount FitzWalter [England] 1525-06-18
+  # 1st Earl of Sussex [England] 1529-12-08
+  gen:father <https://www.wikidata.org/wiki/Q18762009> ; # John Ratcliffe, 9th Lord FitzWalter
+  gen:mother <https://www.wikidata.org/wiki/Q75981774> . # Margaret (?)
   # oo Lady Elizabeth Stafford, 1479 - 1532-05-11 (ferrers.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7349136> , <https://www.wikidata.org/wiki/Q5363546> ;
@@ -1640,6 +1634,11 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q16863513> , <https://www.wikidata.org/wiki/Q75382806> ;
 	gen:startDate "1524-05-21b" .
+  # oo Anne Calthorp, daughter of Sir Philip Calthorp
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16863513> , <https://www.wikidata.org/wiki/Q4768204> ;
+	gen:startDate "1538-11-21b" ;
+	gen:divorceDate "1555-11-13b" .
 <https://www.wikidata.org/wiki/Q6151202>
   # Lady Jane Radcliffe, 1533~ - 1552-07-22
   gen:father <https://www.wikidata.org/wiki/Q7349136> ;
@@ -1651,6 +1650,18 @@
   gen:mother <https://www.wikidata.org/wiki/Q75466863> .
   # oo 1547-05 Thomas Wharton, 2nd Baron Wharton, 1520 - 1572-06-14, https://www.wikidata.org/wiki/Q7795020 (talbot.ttl)
 
+<https://www.wikidata.org/wiki/Q3990712>
+  # Thomas Radclyffe, 3rd Earl of Sussex, 1525 - 1583-06-09
+  gen:father <https://www.wikidata.org/wiki/Q16863513> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75382806> .
+  # oo Lady Elizabeth Wriothesley, 1525~ - 1555-01 (browne.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3990712> , <https://www.wikidata.org/wiki/Q20751449> ;
+	gen:startDate "1545-11-01b" .
+  # oo Frances Sidney, 1531 - 1589-03-09
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3990712> , <https://www.wikidata.org/wiki/Q14949769> ;
+	gen:startDate "1555-04-29b" .
 <https://www.wikidata.org/wiki/Q5727335>
   # Henry Radcliffe, 4th Earl of Sussex, 1530 - 1594-12-14
   gen:father <https://www.wikidata.org/wiki/Q16863513> ;
@@ -1659,6 +1670,11 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5727335> , <https://www.wikidata.org/wiki/Q75930685> ;
 	gen:startDate "1549-02-06" .
+<https://www.wikidata.org/wiki/Q16203453>
+  # Frances Radclyffe, 1545~ - 1602
+  gen:father <https://www.wikidata.org/wiki/Q16863513> ;
+  gen:mother <https://www.wikidata.org/wiki/Q4768204> .
+  # oo 1566-07 Sir Thomas Mildmay, 1540~ - 1608-07-26, https://www.wikidata.org/wiki/Q7792447
 
 <https://www.wikidata.org/wiki/Q7349137>
   # Robert Radcliffe, 5th Earl of Sussex, 1573-06-12 - 1629-09-22
@@ -1774,7 +1790,7 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7529735> , <https://www.wikidata.org/wiki/Q76131043> ;
 	gen:startDate "1661-11-14" .
-  # oo Elizabeth Southcote, 1650~ - 1680, daughter of Sir Thomas Southcote and Alice Petre
+  # oo Elizabeth Southcote, 1650~ - 1680 (clifford.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7529735> , <https://www.wikidata.org/wiki/Q76302709> ;
 	gen:startDate "1674-10-23" .

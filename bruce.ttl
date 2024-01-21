@@ -2,6 +2,7 @@
 @prefix gen: <http://jjkoch.de/gen#> .
 @prefix wdata: <https://www.wikidata.org/wiki/> .
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 #<https://www.wikidata.org/wiki/Q75510392>
   # Sir David Bruce, 7th of Clackmannan, 1465~ - 1556-06-12a
@@ -473,7 +474,7 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q16274760> , <https://www.wikidata.org/wiki/Q75484758> ;
 	gen:startDate "1796-05-20" .
-  # oo Charlotte Sophia Dashwood, d. 1870-04-11 (bertie.ttl)
+  # oo Charlotte Sophia Dashwood, 1784 - 1870-04-11
   []
     gen:spouse <https://www.wikidata.org/wiki/Q16274760> , <https://www.wikidata.org/wiki/Q75284474> ;
 	gen:startDate "1798a" .
@@ -573,7 +574,7 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q336771> , <https://www.wikidata.org/wiki/Q75281987> ;
 	gen:startDate "1876-11-09" .
-  # oo Gertrude Lilian Sherbrooke, d. 1971-02-13 (fiennes.ttl)
+  # oo Gertrude Lilian Sherbrooke, d. 1971-02-13 (parker.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q336771> , <https://www.wikidata.org/wiki/Q75283536> ;
 	gen:startDate "1913-11-19" .
@@ -767,15 +768,35 @@
 
 
 # ----
+<https://www.wikidata.org/wiki/Q6262900>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75439141> .
+  # Sir John Walter, 1566 - 1630-11-17
+  # oo Margaret Offley, daughter of William Offley
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6262900> , <https://www.wikidata.org/wiki/Q75489547> .
+  # oo Anne Witham, d. 1630-11a, daughter of William Witham
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6262900> , <https://www.wikidata.org/wiki/Q75439138> ;
+	gen:startDate "1622-07-18" .
+
+<#Mary_Walter>
+  # Mary Walter
+  gen:father <https://www.wikidata.org/wiki/Q6262900> .
+  # oo 1626-11-11 Sir John Cope, 3rd Baronet, 1608-08-28 – 1638-10-13, https://www.wikidata.org/wiki/Q75791096
 <https://www.wikidata.org/wiki/Q7529812>
   # Sir William Walter, 1st Baronet, 1604~ – 1675-03-23
   # 1st Baronet Walter of Sarsden [England] 1641-11-20
-  gen:father <https://www.wikidata.org/wiki/Q6262900> ; # Sir John Walter
-  gen:mother <https://www.wikidata.org/wiki/Q75489547> . # Margaret Offley
+  gen:father <https://www.wikidata.org/wiki/Q6262900> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75489547> .
   # oo Elizabeth Lucas, d. 1691-05~ (cavendish.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7529812> , <https://www.wikidata.org/wiki/Q75489547> ;
 	gen:startDate "1632-12-20" .
+<https://www.wikidata.org/wiki/Q75516743>
+  # Elizabeth Walter, 1613-09 - 1701-04-17
+  gen:father <https://www.wikidata.org/wiki/Q6262900> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75489547> .
+  # oo 1635 Sir Francis Burdett, 2nd Baronet, 1608-09-10 - 1696-12-30, https://www.wikidata.org/wiki/Q75516742 (howard.ttl)
 
 <https://www.wikidata.org/wiki/Q75654171>
   # Sir William Walter, 2nd Baronet, 1635~ – 1693-03-05
