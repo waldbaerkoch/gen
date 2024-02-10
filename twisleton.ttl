@@ -1,0 +1,419 @@
+@base <twisleton.ttl> .
+@prefix gen: <http://jjkoch.de/gen#> .
+@prefix wdata: <https://www.wikidata.org/wiki/> .
+@prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+#<#Christopher_Twisleton_1>
+  # Christopher Twisleton, of Barley
+  # son of John Twisleton, d. 1525
+  # and oo Anne Beere, daughter of John Beere, Esq.
+
+#<#John_Twisleton>
+  # John Twisleton, Esq., of Drax
+  # oo Margaret Constable, d. 1626, daughter of William Constable, Esq.
+  []
+    gen:spouse <#John_Twisleton> , <#Margaret_Constable> .
+<#George_Twisleton>
+  # George Twisleton, Esq., of Barley
+  gen:father <#Christopher_Twisleton_1> .
+
+<https://www.wikidata.org/wiki/Q16859719>
+  # Sir John Twisleton, 1st Baronet, 1614~ - 1682-12-04
+  # 1st Baronet Twisleton 1658-04-10
+  gen:father <#John_Twisleton> ;
+  gen:mother <#Margaret_Constable> .
+  # oo Elizabeth Fiennes, 1631~ - 1674-03-28
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16859719> , <https://www.wikidata.org/wiki/Q75791800> ;
+	gen:startDate "1649-05" .
+<https://www.wikidata.org/wiki/Q16191399>
+  # Philip Twisleton, d. 1678
+  gen:father <#John_Twisleton> ;
+  gen:mother <#Margaret_Constable> .
+  # oo Ann Brograve, daughter of John Brograve
+<#Christopher_Twisleton_2>
+  # Christopher Twisleton, Esq., of Barley
+  gen:father <#George_Twisleton> .
+  # oo Alice ???
+
+<https://www.wikidata.org/wiki/Q75791828>
+  # Frances Twisleton, b. 1635~
+  gen:father <https://www.wikidata.org/wiki/Q16859719> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75791800> .
+  # oo Andrew Ellis, b. 1630~, https://www.wikidata.org/wiki/Q75791830
+<https://www.wikidata.org/wiki/Q75791804>
+  # Cecil Twisleton, 1650~ - 1723
+  # de jure 4th Baroness Saye and Sele [E., 1603] 1715-07-22
+  gen:father <https://www.wikidata.org/wiki/Q16859719> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75791800> .
+  # oo 1669~ George Twisleton, b. 1652-12-06, https://www.wikidata.org/wiki/Q75791807
+  # -> Fiennes Twisleton, 1670~ - 1730-09-04, de jure 5th Baron Saye and Sele, https://www.wikidata.org/wiki/Q75791809
+<https://www.wikidata.org/wiki/Q16848334>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75821483> ;
+  # Sir George Twisleton, 1st Baronet, 1605~ – 1635
+  # 1st Baronet Twisleton of Barley, Yorkshire [England] 1629-04-02
+  gen:father <#Christopher_Twisleton_2> .
+  # and Alice ???
+  # oo Catherine Stapylton/Stapleton, d. 1672-06-14b, daughter of Henry Stapylton and Mary Foestee (daughter of Sir John Foestee)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16848334> , <https://www.wikidata.org/wiki/Q76363467> .
+
+# ----
+#<https://www.wikidata.org/wiki/Q75791830>
+  # Andrew Ellis, b. 1630~
+  # oo Frances Twisleton, b. 1635~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75791830> , <https://www.wikidata.org/wiki/Q75791828> .
+
+<https://www.wikidata.org/wiki/Q75791832>
+  # Cicely Ellis, 1655~ - 1715-07-22
+  gen:father <https://www.wikidata.org/wiki/Q75791830> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75791828> .
+  # oo William Fiennes, b. 1680~, https://www.wikidata.org/wiki/Q75791864
+
+# ----
+<https://www.wikidata.org/wiki/Q75791807>
+  # George Twisleton, Esq., of Woodhall, 1652-12-06 - 1712~
+  gen:father <https://www.wikidata.org/wiki/Q75792228> . # Lt.-Col. George Twisleton, Esq., of Woodhall ??-> (1618 – 1667-05-12, https://www.wikidata.org/wiki/Q5545380, third son of John Twisleton of Barley Hall) oo Mary Glyn, daughter of William Glyn
+  # oo Cecil Twisleton, 1650~ - 1723
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75791807> , <https://www.wikidata.org/wiki/Q75791804> ;
+	gen:startDate "1669~" .
+
+<https://www.wikidata.org/wiki/Q75791809>
+  # Fiennes Twisleton, 1670~ - 1730-09-04
+  # de jure 5th Baron Saye and Sele [E., 1603]
+  gen:father <https://www.wikidata.org/wiki/Q75791807> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75791804> .
+  # oo Mary Clarke
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75791809> , <https://www.wikidata.org/wiki/Q75791810> ;
+	gen:startDate "1692" .
+
+<https://www.wikidata.org/wiki/Q75791813>
+  # John Twisleton, 1698-01-16 - 1763
+  # de jure 6th Baron Saye and Sele [E., 1603]
+  gen:father <https://www.wikidata.org/wiki/Q75791809> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75791810> .
+  # oo Anne Gardner, d. 1769-01-14, daughter of William Gardner
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75791813> , <https://www.wikidata.org/wiki/Q75791818> ;
+	gen:startDate "1733-12-30" .
+
+<https://www.wikidata.org/wiki/Q18109200>
+  # Thomas Twisleton, 7th Baron Saye and Sele, 1735~ - 1788-07-01
+  # de jure 7th Baron Saye and Sele 1763
+  # 7th Baron Saye and Sele [E., 1603] 1781-06-29
+  gen:father <https://www.wikidata.org/wiki/Q75791813> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75791818> .
+  # oo Elizabeth Turner, 1741-02-19 - 1816-04-01 (howe.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q18109200> , <https://www.wikidata.org/wiki/Q75791904> ;
+	gen:startDate "1767-12-14" .
+
+<https://www.wikidata.org/wiki/Q75791907>
+  # Gregory William Eardley-Twisleton-Fiennes, 8th Baron Saye and Sele, 1769-04-14 - 1844-11-13
+  # Gregory William Twisleton
+  # Gregory William Twisleton-Fiennes 1825-02-14
+  # Gregory William Eardley-Twisleton-Fiennes 1825-03-16
+  gen:father <https://www.wikidata.org/wiki/Q18109200> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75791904> .
+  # oo Hon. Maria Marowe Eardley, 1767-11-22 - 1834-09-05 (byng.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75791907> , <https://www.wikidata.org/wiki/Q75791909> ;
+	gen:startDate "1794-09-08" .
+<https://www.wikidata.org/wiki/Q7794614>
+  # Ven. Hon. Thomas James Twisleton, 1770-09-28 - 1824-08-15
+  gen:father <https://www.wikidata.org/wiki/Q18109200> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75791904> .
+  # oo Charlotte Ann Frances Wattell, 1770~ - 1812, daughter of John Wattell
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7794614> , <https://www.wikidata.org/wiki/Q50368681> ;
+	gen:startDate "1788-11-04" ;
+	gen:separatedDate "1794-06-17" ;
+	gen:divorceDate "1798-05-26" .
+  # oo Anne Ashe, daughter of Benjamin Ashe
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7794614> , <https://www.wikidata.org/wiki/Q75791924> ;
+	gen:startDate "1798-06-17" .
+<https://www.wikidata.org/wiki/Q75417760>
+  # Hon. Julia Judith Twisleton, 1771-10-21 - 1843-02-08
+  gen:father <https://www.wikidata.org/wiki/Q18109200> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75791904> .
+  # oo 1786-12-08 James Henry Leigh, 1765-02-08 - 1823-10-27, https://www.wikidata.org/wiki/Q26220722
+<https://www.wikidata.org/wiki/Q75568672>
+  # Hon. Mary Cassandra Twisleton, 1774-06-11 - 1843-06
+  gen:father <https://www.wikidata.org/wiki/Q18109200> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75791904> .
+  # oo 1790-01-29 (div 1799) Edward Jervis Jervis, 2nd Viscount Saint Vincent of Meaford, 1767-04-01 - 1859, https://www.wikidata.org/wiki/Q5343759 (parker.ttl)
+  # oo 1806-01-30 Richard Charles Head Graves, https://www.wikidata.org/wiki/Q75792701
+
+<https://www.wikidata.org/wiki/Q21884739>
+  # William Thomas Eardley-Twisleton-Fiennes, 9th Baron Saye and Sele, 1798-04-24 - 1847-03-31
+  gen:father <https://www.wikidata.org/wiki/Q75791907> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75791909> .
+<https://www.wikidata.org/wiki/Q16062774>
+  # Rev. Frederick Benjamin Twisleton-Wykeham-Fiennes, 10th Baron Saye and Sele, 1799-07-04 - 1887-05-26
+  # Frederick Benjamin Twisleton
+  # Frederick Benjamin Twisleton-Wykeham-Fiennes 1849-02-14
+  gen:father <https://www.wikidata.org/wiki/Q7794614> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75791924> .
+  # oo Hon. Emily Wingfield, d. 1837-06-20
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16062774> , <https://www.wikidata.org/wiki/Q75279396> ;
+	gen:startDate "1827-06-04" .
+  # oo Hon. Caroline Eliza Leigh, 1825-02-18 - 1909-07-21
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16062774> , <https://www.wikidata.org/wiki/Q75279398> ;
+	gen:startDate "1857-08-18" .
+
+<https://www.wikidata.org/wiki/Q75281148>
+  # John Twisleton-Wykeham-Fiennes, 11th Baron Saye and Sele, 1830-02-28 - 1907-10-08
+  gen:father <https://www.wikidata.org/wiki/Q16062774> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75279396> .
+  # oo Lady Augusta Sophia Hay-Drummond, 1837-10-13 - 1915-07-23 (hay.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75281148> , <https://www.wikidata.org/wiki/Q75281142> ;
+	gen:startDate "1856-04-24" .
+<https://www.wikidata.org/wiki/Q66490646>
+  # Rev. Hon. Wingfield Stratford Twisleton-Wykeham-Fiennes, 1834-05-01 - 1923-10-10
+  gen:father <https://www.wikidata.org/wiki/Q16062774> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75279396> .
+  # oo Alice Susan Yorke, 1836-05-14 - 1922-02-17
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q66490646> , <https://www.wikidata.org/wiki/Q75508584> ;
+	gen:startDate "1863-10-06" .
+
+<https://www.wikidata.org/wiki/Q5534944>
+  # Geoffrey Cecil Twisleton-Wykeham-Fiennes, 12th Baron Saye and Sele, 1858-08-03 - 1937-02-02
+  gen:father <https://www.wikidata.org/wiki/Q75281148> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75281142> .
+  # oo Marion Ruperta Murray Lawes, 1863-09-28 - 1946-07-27, daughter of Major Robert Bartholomew Lawes
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5534944> , <https://www.wikidata.org/wiki/Q75792492> ;
+	gen:startDate "1884-02-20" .
+<https://www.wikidata.org/wiki/Q7526658>
+  # Sir Eustace Edward Twisleton-Wykeham-Fiennes, 1st Baronet, 1864-02-29 - 1943-02-09
+  # 1st Baronet Twisleton-Wykeham-Fiennes, of Banbury, co. Oxford 1916-06-30
+  gen:father <https://www.wikidata.org/wiki/Q75281148> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75281142> .
+  # oo Florence Agnes Rathfelder, d. 1950-10-31, daughter of John Rathfelder
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7526658> , <https://www.wikidata.org/wiki/Q75792573> ;
+	gen:startDate "1894-11-06" .
+<https://www.wikidata.org/wiki/Q75792017>
+  # Gerard Yorke Twisleton-Wykeham-Fiennes, 1864-07-18 - 1926-01-13
+  gen:father <https://www.wikidata.org/wiki/Q66490646> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75508584> .
+  # oo Gwendolen Gisborne, d. 1968-01-20, daughter of Francis Gisborne
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75792017> , <https://www.wikidata.org/wiki/Q75792022> ;
+	gen:startDate "1905-06-28" .
+<https://www.wikidata.org/wiki/Q75508585>
+  # Alberic Arthur Twisleton-Wykeham-Fiennes, 1865-09-04 - 1919-09-28
+  gen:father <https://www.wikidata.org/wiki/Q66490646> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75508584> .
+  # oo Gertrude Theodosia Pomeroy Colley, d. 1934-11-12 (hill.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75508585> , <https://www.wikidata.org/wiki/Q75508587> ;
+	gen:startDate "1895-10-09" .
+
+<https://www.wikidata.org/wiki/Q75792494>
+  # Geoffrey Rupert Cecil Twisleton-Wykeham-Fiennes, 13th Baron Saye and Sele, 1884-12-27 - 1949-02-18
+  gen:father <https://www.wikidata.org/wiki/Q5534944> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75792492> .
+<https://www.wikidata.org/wiki/Q21647614>
+  # Ivo Murray Twisleton-Wykeham-Fiennes, 14th Baron Saye and Sele, 1885-12-15 - 1968-10-21
+  gen:father <https://www.wikidata.org/wiki/Q5534944> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75792492> .
+  # oo Hersey Cecilia Hester Butler, 1889-03 - 1968-10-31 (dalrymple.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q21647614> , <https://www.wikidata.org/wiki/Q75791298> ;
+	gen:startDate "1919-10-16" .
+<https://www.wikidata.org/wiki/Q75442363>
+  # Sir Ranulph Twisleton-Wykeham-Fiennes, 2nd Baronet, 1902-11-12 - 1943-11-24
+  gen:father <https://www.wikidata.org/wiki/Q7526658> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75792573> .
+  # oo Audrey Joan Newson, d. 1995 (scott.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75442363> , <https://www.wikidata.org/wiki/Q75442362> ;
+	gen:startDate "1931-08-07" .
+<https://www.wikidata.org/wiki/Q5552733>
+  # Gerard Francis Gisborne Twisleton-Wykeham-Fiennes, 1906-06-07 – 1985-05-25
+  gen:father <https://www.wikidata.org/wiki/Q75792017> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75792022> .
+  # oo Norah Davies, d. 1960-12-24, daughter of Thomas Davies
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5552733> , <https://www.wikidata.org/wiki/Q75792027> ;
+	gen:startDate "1934-12-22" .
+  # oo Jean Valentine, daughter of James Valentine
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5552733> , <https://www.wikidata.org/wiki/Q75792101> ;
+	gen:startDate "1962-12-15" .
+<https://www.wikidata.org/wiki/Q61781123>
+  # Celia Mary Twisleton-Wykeham-Fiennes, 1902-03-10 - 1998-09-17
+  gen:father <https://www.wikidata.org/wiki/Q75508585> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75508587> .
+  # oo 1932-12-31 Noel Rooke, 1881 – 1953-10-05, https://www.wikidata.org/wiki/Q7047192
+<https://www.wikidata.org/wiki/Q6793079>
+  # Sir Maurice Alberic Twisleton-Wykeham-Fiennes, 1907-03-01 – 1994-09-14
+  gen:father <https://www.wikidata.org/wiki/Q75508585> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75508587> .
+  # oo Sylvia Joan Finlay, 1913~ - 1996-04-11, daughter of David Finlay
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6793079> , <https://www.wikidata.org/wiki/Q75508592> ;
+	gen:startDate "1932-06-02" ;
+	gen:divorceDate "1964" .
+  # oo Erika Hueller von Huellenried, daughter of Dr. Herbert Hueller von Huellenried
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6793079> , <https://www.wikidata.org/wiki/Q75792308> ;
+	gen:startDate "1967-10-16" .
+
+<https://www.wikidata.org/wiki/Q6969608>
+  # Nathaniel Thomas Allen Fiennes Fiennes, 15th Baron Saye and Sele, b. 1920-09-22
+  gen:father <https://www.wikidata.org/wiki/Q21647614> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75791298> .
+  # oo Mariette Helena Salisbury-Jones (smith.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6969608> , <https://www.wikidata.org/wiki/Q75791609> ;
+	gen:startDate "1958-12-04" .
+<https://www.wikidata.org/wiki/Q7087536>
+  # Very Rev. Hon. Oliver William Twisleton-Wykeham-Fiennes, 1926-05-17 – 2011-06-08
+  # Dean of Lincoln 1969 – 1989
+  gen:father <https://www.wikidata.org/wiki/Q21647614> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75791298> .
+<https://www.wikidata.org/wiki/Q1331624>
+  # Sir Ranulph Twisleton-Wykeham-Fiennes, 3rd Baronet, b. 1944-03-07
+  gen:father <https://www.wikidata.org/wiki/Q75442363> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75442362> .
+  # oo Virginia Frances Pepper, 1947-07-09 - 2004-02-20, daughter of Thomas Pepper
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1331624> , <https://www.wikidata.org/wiki/Q3106787> ;
+	gen:startDate "1970-09-09" .
+  # oo Louise Millington
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1331624> , <https://www.wikidata.org/wiki/Q76236230> ;
+	gen:startDate "2005" .
+<https://www.wikidata.org/wiki/Q6767604>
+  # Mark Twisleton-Wykeham-Fiennes, 1933-11-11 – 2004-12-30
+  gen:father <https://www.wikidata.org/wiki/Q6793079> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75508592> .
+  # oo Jennifer Anne Mary Alleyne Lash, 1938-02-27 – 1993-12-28
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6767604> , <https://www.wikidata.org/wiki/Q1490388> ;
+	gen:startDate "1962-04-14" .
+  # oo Caroline Corris Evans, daughter of William Corris Evans
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6767604> , <https://www.wikidata.org/wiki/Q75508597> ;
+	gen:startDate "1996-05-18" .
+
+<https://www.wikidata.org/wiki/Q75791610>
+  # Hon. Richard Ingel Fiennes, 1959-08-19 - 2001-04-13
+  gen:father <https://www.wikidata.org/wiki/Q6969608> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75791609> .
+<https://www.wikidata.org/wiki/Q75791613>
+  # Hon. Martin Guy Fiennes, b. 1961-02-27
+  gen:father <https://www.wikidata.org/wiki/Q6969608> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75791609> .
+  # oo Kang Chai Lian, daughter of Kang Tiong Lam
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75791613> , <https://www.wikidata.org/wiki/Q75791617> ;
+	gen:startDate "1996-09-28" .
+<https://www.wikidata.org/wiki/Q75791630>
+  # Hon. Susannah Hersey Fiennes, b. 1961-02-27
+  gen:father <https://www.wikidata.org/wiki/Q6969608> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75791609> .
+  # oo 2004-10-09 Dr. John Wardlaw Hanbury-Tenison, b. 1957-12-06, https://www.wikidata.org/wiki/Q76159639 (leigh.ttl)
+<https://www.wikidata.org/wiki/Q75791625>
+  # Thomas Nathaniel Fiennes, 1965-10-11 - 1968-09-03
+  gen:father <https://www.wikidata.org/wiki/Q6969608> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75791609> .
+<https://www.wikidata.org/wiki/Q2578814>
+  # Hon. William John Fiennes, b. 1970-08-07
+  gen:father <https://www.wikidata.org/wiki/Q6969608> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75791609> .
+<https://www.wikidata.org/wiki/Q28493>
+  # Ralph Nathaniel Twisleton-Wykeham-Fiennes, b. 1962-12-22
+  gen:father <https://www.wikidata.org/wiki/Q6767604> ;
+  gen:mother <https://www.wikidata.org/wiki/Q1490388> .
+  # oo Alexandra Elizabeth Kingston, b. 1963-03-11, daughter of Anthony Kingston
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q28493> , <https://www.wikidata.org/wiki/Q232187> ;
+	gen:startDate "1993-09" ;
+	gen:divorceDate "1997-10" .
+<https://www.wikidata.org/wiki/Q458730>
+  # Martha Maria Twisleton-Wykeham-Fiennes, b. 1964-02-05
+  gen:father <https://www.wikidata.org/wiki/Q6767604> ;
+  gen:mother <https://www.wikidata.org/wiki/Q1490388> .
+<https://www.wikidata.org/wiki/Q3277239>
+  # Magnus Hubert Twisleton-Wykeham-Fiennes, b. 1965-11-21
+  gen:father <https://www.wikidata.org/wiki/Q6767604> ;
+  gen:mother <https://www.wikidata.org/wiki/Q1490388> .
+  # oo Maya Docik
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3277239> , <https://www.wikidata.org/wiki/Q75792239> ;
+	gen:startDate "1995" .
+<https://www.wikidata.org/wiki/Q371309>
+  # Sophia Victoria Twisleton-Wykeham-Fiennes, b. 1967-02-12
+  gen:father <https://www.wikidata.org/wiki/Q6767604> ;
+  gen:mother <https://www.wikidata.org/wiki/Q1490388> .
+<https://www.wikidata.org/wiki/Q223790>
+  # Joseph Alberic Twisleton-Wykeham-Fiennes, b. 1970-05-27
+  gen:father <https://www.wikidata.org/wiki/Q6767604> ;
+  gen:mother <https://www.wikidata.org/wiki/Q1490388> .
+
+<https://www.wikidata.org/wiki/Q75791619>
+  # Guy Fiennes, b. 1997-03-08
+  gen:father <https://www.wikidata.org/wiki/Q75791613> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75791617> .
+<https://www.wikidata.org/wiki/Q75791621>
+  # Ned Richard Ling Fiennes, b. 1999-02-23
+  gen:father <https://www.wikidata.org/wiki/Q75791613> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75791617> .
+<https://www.wikidata.org/wiki/Q75791624>
+  # Ivo Fiennes, b. 2000-03-19
+  gen:father <https://www.wikidata.org/wiki/Q75791613> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75791617> .
+
+# ----
+#<https://www.wikidata.org/wiki/Q75792701>
+  # Richard Charles Head Graves
+  # oo Hon. Mary Cassandra Twisleton, 1774-06-11 - 1843-06
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75792701> , <https://www.wikidata.org/wiki/Q75568672> ;
+	gen:startDate "1806-01-30" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q20966407>
+  # Thomas Matthews Rooke, 1842 – 1942
+  # oo Leonora Jones
+
+<https://www.wikidata.org/wiki/Q7047192>
+  # Noel Rooke, 1881 – 1953-10-05
+  gen:father <https://www.wikidata.org/wiki/Q20966407> .
+  # and Leonora Jones
+  # oo Celia Mary Twisleton-Wykeham-Fiennes, 1902-03-10 - 1998-09-17
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7047192> , <https://www.wikidata.org/wiki/Q61781123> ;
+	gen:startDate "1932-12-31" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q5717259>
+  # Henry Alleyne Lash, 1901-04-08 – 1975-05-13
+  # oo Joan Mary Moore, 1905-08-03 - 1994-05-30, or https://www.wikidata.org/wiki/Q76336924, daughter of Pierce Langrishe Moore and Muriel Strange
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5717259> , <https://www.wikidata.org/wiki/Q76322500> ;
+	gen:startDate "1928-04-30" .
+
+<https://www.wikidata.org/wiki/Q1490388>
+  # Jennifer Anne Mary Alleyne Lash, 1938-02-27 – 1993-12-28
+  gen:father <https://www.wikidata.org/wiki/Q5717259> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76322500> .
+  # oo 1962-04-14 Mark Twisleton-Wykeham-Fiennes, 1933-11-11 – 2004-12-30, https://www.wikidata.org/wiki/Q6767604
+
+# ----
+<https://www.wikidata.org/wiki/Q1335213>
+  # Hero Beauregard Faulkner Fiennes Tiffin, b. 1997-11-06
+  gen:father <https://www.wikidata.org/wiki/Q732482> ; # George Edward Gower Tiffin
+  gen:mother <https://www.wikidata.org/wiki/Q458730> .
