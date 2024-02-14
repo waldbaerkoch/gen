@@ -4,26 +4,88 @@
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
-#<#Sir_Robert_Jocelyn,_1st_Baronet>
+<https://www.wikidata.org/wiki/Q108912753>
+  owl:sameAs <https://www.wikidata.org/wiki/Q76316975> .
+  # John Jocelyn, of High Roding, d. 1525
+  # oo Philippa Bradbury, 1466 - 1530-10-15a OR https://www.wikidata.org/wiki/Q76317043
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q108912753> , <https://www.wikidata.org/wiki/Q106509787> .
+
+<https://www.wikidata.org/wiki/Q108912752>
+  # Jane Josselyn, 1495 - 1569
+  gen:father <https://www.wikidata.org/wiki/Q108912753> ;
+  gen:mother <https://www.wikidata.org/wiki/Q106509787> .
+  # oo Sir Nicholas Wentworth, 1480 - 1554-11-27, https://www.wikidata.org/wiki/Q108912751
+<https://www.wikidata.org/wiki/Q75584850>
+  # Sir Thomas Jocelyn, d. 1561
+  gen:father <https://www.wikidata.org/wiki/Q108912753> ;
+  gen:mother <https://www.wikidata.org/wiki/Q106509787> .
+  # oo Dorothy Gates, daughter of Sir Geoffrey Gates
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75584850> , <https://www.wikidata.org/wiki/Q75584853> .
+
+<https://www.wikidata.org/wiki/Q75584846>
+  # Richard Jocelyn, d. 1604
+  gen:father <https://www.wikidata.org/wiki/Q75584850> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75584853> .
+  # oo Anne Shelton, daughter of Sir Thomas Shelton
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75584846> , <https://www.wikidata.org/wiki/Q76317060> .
+  # oo Anne Lucas, daughter of Thomas Lucas
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75584846> , <https://www.wikidata.org/wiki/Q75584848> .
+
+<https://www.wikidata.org/wiki/Q75584841>
+  # Richard Jocelyn, d. 1625
+  gen:father <https://www.wikidata.org/wiki/Q75584846> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75584848> .
+  # oo Mary Barnes, daughter of Richard Barnes
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75584841> , <https://www.wikidata.org/wiki/Q76317063> .
+  # oo Joyce Atkinson, daughter of Robert Atkinson
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75584841> , <https://www.wikidata.org/wiki/Q75584842> .
+
+<https://www.wikidata.org/wiki/Q75495484>
+  # Sir Robert Jocelyn, 1600 -
+  gen:father <https://www.wikidata.org/wiki/Q75584841> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75584842> .
+  # oo Bridget Smith, daughter of Sir William Smith and Bridget Fleetwood
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75495484> , <https://www.wikidata.org/wiki/Q75495483> .
+
+<https://www.wikidata.org/wiki/Q75584835>
   # Sir Robert Jocelyn, 1st Baronet, 1623-01-14 - 1712-06-09~
-  # 1st Baronet Jocelyn, of Hyde Hall, co. Herts 1665-06-08
+  # 1st Baronet Jocelyn, of Hyde Hall, co. Herts [England] 1665-06-08
+  gen:father <https://www.wikidata.org/wiki/Q75495484> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75495483> .
   # oo Jane Strange, d. 1706-03-26~, daughter of Robert Strange
   []
-    gen:spouse <#Sir_Robert_Jocelyn,_1st_Baronet> , <#Jane_Strange> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75584835> , <https://www.wikidata.org/wiki/Q75584836> ;
 	gen:startDate "1650" .
 
-<#Thomas_Jocelyn>
-  # Thomas Jocelyn
-  gen:father <#Sir_Robert_Jocelyn,_1st_Baronet> ;
-  gen:mother <#Jane_Strange> .
+<https://www.wikidata.org/wiki/Q75584829>
+  # Thomas Jocelyn, 1665~ - 1724~
+  gen:father <https://www.wikidata.org/wiki/Q75584835> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75584836> .
   # oo Anne Bray, daughter of Thomas Bray
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75584829> , <https://www.wikidata.org/wiki/Q75584832> .
+<https://www.wikidata.org/wiki/Q75418726>
+  # George Jocelyn, 1676 - 1727-11
+  gen:father <https://www.wikidata.org/wiki/Q75584835> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75584836> .
+  # oo Catherine Wythens, 1680 - 1730-04 (twysden.ttl)
+  []
+    gen:startDate <https://www.wikidata.org/wiki/Q75418726> , <https://www.wikidata.org/wiki/Q75678584> ;
+	gen:startDate "1713-11-14" .
 
 <https://www.wikidata.org/wiki/Q7346112>
   # Robert Jocelyn, 1st Viscount Jocelyn, 1688~ - 1756-12-03
-  # 1st Baron Newport of Newport, co. Tipperary 1743-11-29
-  # 1st Viscount Jocelyn 1755-12-06
-  gen:father <#Thomas_Jocelyn> .
-  # and Anne Bray
+  # 1st Baron Newport of Newport, co. Tipperary [Ireland] 1743-11-29
+  # 1st Viscount Jocelyn [Ireland] 1755-12-06
+  gen:father <https://www.wikidata.org/wiki/Q75584829> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75584832> .
   # oo Charlotte Anderson, d. 1747-02-23, daughter of Charles Anderson
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7346112> , <https://www.wikidata.org/wiki/Q76317071> ;
@@ -31,9 +93,10 @@
 
 <https://www.wikidata.org/wiki/Q7346111>
   # Robert Jocelyn, 1st Earl of Roden, 1731-07-31b – 1797-06-21
-  # 2nd Viscount Jocelyn, 2nd Baron Newport of Newport, co. Tipperary 1756-12-03
-  # 1st Earl of Roden, of High Roding, co. Tipperary 1771-12-01
-  # 5th Baronet Jocelyn, of Hyde Hall, co. Herts 1778-05-24
+  # 2nd Viscount Jocelyn [I., 1755],
+  # 2nd Baron Newport of Newport, co. Tipperary [I., 1743] 1756-12-03
+  # 1st Earl of Roden, of High Roding, co. Tipperary [Ireland] 1771-12-01
+  # 5th Baronet Jocelyn, of Hyde Hall, co. Herts [E., 1665] 1778-05-24
   gen:father <https://www.wikidata.org/wiki/Q7346112> ;
   gen:mother <https://www.wikidata.org/wiki/Q76317071> .
   # oo Lady Anne Hamilton, d. 1818-01-09

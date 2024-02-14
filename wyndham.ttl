@@ -61,8 +61,8 @@
   # oo Catherine Hopton, daughter of Robert Hopton and Jane Kemeys
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75591823> , <https://www.wikidata.org/wiki/Q75591825> .
-<#Thomas_Windham,_of_Felbrigg> # -> Windham of Felbrigg
-  # Thomas Windham, of Felbrigg, 1581 - 1653-03-01
+<https://www.wikidata.org/wiki/Q75268776> # -> Windham of Felbrigg
+  # Thomas Windham, of Felbrigg, 1581/1586-02-06b - 1653-03-01
   gen:father <https://www.wikidata.org/wiki/Q6265033> ;
   gen:mother <https://www.wikidata.org/wiki/Q75908827> .
 <#George_Wyndham,_of_Uffords> # -> Wyndham of Uffords
@@ -654,24 +654,35 @@
 
 
 # Windham of Felbrigg
-<#Thomas_Windham,_of_Felbrigg>
-  # Thomas Windham, of Felbrigg, 1581 - 1653-03-01
+<https://www.wikidata.org/wiki/Q75268776>
+  owl:sameAs <https://www.wikidata.org/wiki/Q76019890> ;
+  # Thomas Windham, of Felbrigg, 1581/1586-02-06b - 1653-03-01
   gen:father <https://www.wikidata.org/wiki/Q6265033> ;
   gen:mother <https://www.wikidata.org/wiki/Q75908827> .
-  # oo Elizabeth Lytton
-  # oo Elizabeth Mede
+  # oo Elizabeth Lytton, 1606~ - 1640a, daughter of Rowland Lytton and Anne St John
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75268776> , <https://www.wikidata.org/wiki/Q76019889> ;
+	gen:startDate "1620-12-09" .
+  # oo Elizabeth Mede, 1627~ - 1675a, daughter of John Mede and Katharine Corbet
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75268776> , <https://www.wikidata.org/wiki/Q122532966> .
 
 <#John_Windham,_of_Felbrigg>
   # John Windham, of Felbrigg
-  gen:father <#Thomas_Windham,_of_Felbrigg> .
-  # and Elizabeth Lytton
+  gen:father <https://www.wikidata.org/wiki/Q75268776> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76019889> .
 <https://www.wikidata.org/wiki/Q76198609>
   # William Wyndham, of Felbrigg, d. 1689-06-09
-  gen:father <#Thomas_Windham,_of_Felbrigg> .
-  # and Elizabeth Mede
+  gen:father <https://www.wikidata.org/wiki/Q75268776> ;
+  gen:mother <https://www.wikidata.org/wiki/Q122532966> .
   # oo Katherine Ashe, d. 1729-12-24 (townshend.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q76198609> , <https://www.wikidata.org/wiki/Q76083533> .
+<https://www.wikidata.org/wiki/Q75268774>
+  # Elizabeth Wyndham, 1650 - 1696-05-10
+  gen:father <https://www.wikidata.org/wiki/Q75268776> ;
+  gen:mother <https://www.wikidata.org/wiki/Q122532966> .
+  # oo 1665~ William Finch, Viscount Maidstone, 1652-01-20b - 1672-05-28, https://www.wikidata.org/wiki/Q75268772
 
 <#Francis_Wyndham>
   # Francis Wyndham, of Felbrigg
@@ -972,10 +983,29 @@
   # oo 1689 Sir Alexander Campbell or Cawdor, younger, d. 1697-08-27, https://www.wikidata.org/wiki/Q18935967
 
 # ----
+#<https://www.wikidata.org/wiki/Q7528394>
+  # Sir Norton Knatchbull, 1st Baronet, 1602~ - 1685-02-05
+  # 1st Baronet Knatchbull, of Mersham Hatch, co. Kent [England] 1641-08-04
+  # son of Thomas Knatchbull
+  # and Eleanor Astley
+  # oo Dorothy Westrow, daughter of Thomas Westrow and Mary Aldersea
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7528394> , <https://www.wikidata.org/wiki/Q75448370> ;
+	gen:startDate "1630-10-22" .
+
+<https://www.wikidata.org/wiki/Q75448390>
+  # Sir Thomas Knatchbull, 3rd Baronet, 1640~ - 1711-12-12a
+  gen:father <https://www.wikidata.org/wiki/Q7528394> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75448370> .
+  # oo Mary Dering, d. 1724-06~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75448390> , <https://www.wikidata.org/wiki/Q75448391> ;
+	gen:startDate "1673-05-09" .
+
 <https://www.wikidata.org/wiki/Q7526581>
   # Sir Edward Knatchbull, 4th Baronet, 1674 - 1730-04-03
-  gen:father <https://www.wikidata.org/wiki/Q75448390> ; # Sir Thomas Knatchbull, 3rd Baronet
-  gen:mother <https://www.wikidata.org/wiki/Q75448391> . # Mary Dering
+  gen:father <https://www.wikidata.org/wiki/Q75448390> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75448391> .
   # oo Alice Wyndham, 1676-04-11 - 1723-04-15
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7526581> , <https://www.wikidata.org/wiki/Q75448394> ;
