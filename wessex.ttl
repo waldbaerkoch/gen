@@ -1,0 +1,332 @@
+@base <wessex.ttl> .
+@prefix gen: <http://jjkoch.de/gen#> .
+@prefix wdata: <https://www.wikidata.org/wiki/> .
+@prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+#<>
+  # 
+#  gen:father <> ;
+#  gen:mother <> .
+  # oo 
+#  []
+#    gen:spouse <> , <> .
+
+<https://www.wikidata.org/wiki/Q3567571>
+  # Eafa, 730 - 790
+  gen:father <https://www.wikidata.org/wiki/Q5381849> ; # Eoppa of Wessex
+  gen:mother <https://www.wikidata.org/wiki/Q96074770> . # unnamed wife of Eoppa of Wessex
+  # oo Unknown of Kent, 736 - 800
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3567571> , <https://www.wikidata.org/wiki/Q96074771> .
+
+<https://www.wikidata.org/wiki/Q728177>
+  # Ealhmund of Kent, 745 - 784a
+  gen:father <https://www.wikidata.org/wiki/Q3567571> ;
+  gen:mother <https://www.wikidata.org/wiki/Q96074771> .
+  # oo unnamed mother
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q728177> , <https://www.wikidata.org/wiki/Q75454860> .
+
+<https://www.wikidata.org/wiki/Q154934>
+  # Ecgberht, King of Wessex, 771 - 839
+  # King of Wessex 802
+  # King of Mercia 829 - 830
+  gen:father <https://www.wikidata.org/wiki/Q728177> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75454860> .
+  # oo unnamed wife
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q154934> , <https://www.wikidata.org/wiki/Q96074775> .
+
+<https://www.wikidata.org/wiki/Q272326>
+  # Æthelwulf, King of Wessex, 795~ - 858-01-13
+  gen:father <https://www.wikidata.org/wiki/Q154934> ;
+  gen:mother <https://www.wikidata.org/wiki/Q96074775> .
+  # oo Osburh, daughter of Oslac of Hampshire
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q272326> , <https://www.wikidata.org/wiki/Q2296250> ;
+	gen:startDate "830~" .
+  # oo Judith de Francie, 844~ - 870a (karolinger.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q272326> , <https://www.wikidata.org/wiki/Q429927> ;
+	gen:startDate "856-10-01" .
+
+<https://www.wikidata.org/wiki/Q3562315>
+  # Æthelstan, King of Kent, d. 858
+  gen:father <https://www.wikidata.org/wiki/Q272326> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2296250> .
+<https://www.wikidata.org/wiki/Q272157>
+  # Æthelbald, King of Wessex, 835~ - 860-06~
+  # King of Wessex 855/858
+  gen:father <https://www.wikidata.org/wiki/Q272326> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2296250> .
+  # oo Judith de Francie, 844~ - 870a (karolinger.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q272157> , <https://www.wikidata.org/wiki/Q429927> ;
+	gen:startDate "858~" .
+<https://www.wikidata.org/wiki/Q272177>
+  # Æthelberht, King of Wessex, 836 - 865
+  # King of Wessex 860
+  gen:father <https://www.wikidata.org/wiki/Q272326> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2296250> .
+<https://www.wikidata.org/wiki/Q3577177>
+  # Æthelswith, Queen of Mercia, 838~ - 888
+  gen:father <https://www.wikidata.org/wiki/Q272326> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2296250> .
+  # oo 853-04-02a Burgred, King of Mercia, https://www.wikidata.org/wiki/Q852077
+<https://www.wikidata.org/wiki/Q272233>
+  # Æthelred I, King of Wessex, 845/848 - 871-04
+  # King of Wessex 865
+  gen:father <https://www.wikidata.org/wiki/Q272326> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2296250> .
+  # oo Wulfthryth
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q272233> , <https://www.wikidata.org/wiki/Q17021359> ;
+	gen:startDate "868~" .
+<https://www.wikidata.org/wiki/Q83476>
+  # Alfred the Great, 849 - 899-10-26~
+  # King of the West Saxons 871-04-23 - 886~
+  # King of the Anglo-Saxons 886~
+  gen:father <https://www.wikidata.org/wiki/Q272326> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2296250> .
+  # oo Ealhswith, 852~ - 902-12-05
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q83476> , <https://www.wikidata.org/wiki/Q242670> ;
+	gen:startDate "868" .
+
+<https://www.wikidata.org/wiki/Q235250>
+  # Æthelflæd, Lady of the Mercians, 870~ - 918-06-12
+  # Lady of the Mercians 911
+  gen:father <https://www.wikidata.org/wiki/Q83476> ;
+  gen:mother <https://www.wikidata.org/wiki/Q242670> .
+  # oo 886 Æthelred, Lord of the Mercians, d. 911, https://www.wikidata.org/wiki/Q272209
+<https://www.wikidata.org/wiki/Q187114>
+  # Edward the Elder, King of Wessex, 874-06 - 924-07-17
+  # King of the Anglo-Saxons 899-10-26
+  gen:father <https://www.wikidata.org/wiki/Q83476> ;
+  gen:mother <https://www.wikidata.org/wiki/Q242670> .
+  # oo Ecgwynn
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q187114> , <https://www.wikidata.org/wiki/Q3499686> .
+  # oo Ælfflæd
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q187114> , <https://www.wikidata.org/wiki/Q3435047> ;
+	gen:startDate "901~" .
+  # oo Eadgifu of Kent, 904b - 966a
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q187114> , <https://www.wikidata.org/wiki/Q3433685> ;
+	gen:startDate "920~" .
+<https://www.wikidata.org/wiki/Q1470395>
+  # Ælfthryth, Princess of Wessex, 877 - 929-06-07
+  gen:father <https://www.wikidata.org/wiki/Q83476> ;
+  gen:mother <https://www.wikidata.org/wiki/Q242670> .
+  # oo 883 Baudouin II, comte de Flandre, 863 - 918-09-10, https://www.wikidata.org/wiki/Q366998 (flandern.ttl)
+
+<https://www.wikidata.org/wiki/Q170017>
+  # Æthelstan, King of the English, 894~ - 939-10-27
+  # King of the Anglo-Saxons 924 - 927
+  # King of the English 927
+  gen:father <https://www.wikidata.org/wiki/Q187114> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3499686> .
+<https://www.wikidata.org/wiki/Q190166>
+  # Edmund I, King of Wessex, 920~ - 946-05-26
+  # King of the English 939-10-27
+  gen:father <https://www.wikidata.org/wiki/Q187114> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3433685> .
+  # oo Ælfgifu of Shaftesbury, d. 944
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q190166> , <https://www.wikidata.org/wiki/Q2278338> ;
+	gen:startDate "940~" .
+  # oo Æthelflæd of Damerham
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q190166> , <https://www.wikidata.org/wiki/Q4129783> ;
+	gen:startDate "946~" .
+<https://www.wikidata.org/wiki/Q191767>
+  # Eadred, King of the English, 923~ - 955-11-23
+  # King of the English 946-05-26
+  gen:father <https://www.wikidata.org/wiki/Q187114> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3433685> .
+
+<https://www.wikidata.org/wiki/Q191203>
+  # Eadwig, King of the English, 940~ - 959-10-01
+  # King of the English 955-11-23
+  gen:father <https://www.wikidata.org/wiki/Q190166> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2278338> .
+  # oo Ælfgifu
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q191203> , <https://www.wikidata.org/wiki/Q4368350> ;
+	gen:startDate "959a" .
+<https://www.wikidata.org/wiki/Q192925>
+  # Edgar, King of the English, 943 - 975-07-08
+  # King of Wessex
+  # King of the English 959-10-01
+  gen:father <https://www.wikidata.org/wiki/Q190166> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2278338> .
+  # oo Æthelflæd, d. 962
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q192925> , <https://www.wikidata.org/wiki/Q5850040> ;
+	gen:startDate "961" .
+  # oo Saint Wulthryth, d. 985
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q192925> , <https://www.wikidata.org/wiki/Q1927072> .
+  # oo Ælfthryth, d. 1000-11-17
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q192925> , <https://www.wikidata.org/wiki/Q2746341> ;
+	gen:startDate "964" .
+
+<https://www.wikidata.org/wiki/Q192920>
+  # Edward the Martyr, King of the English, 962~ - 978-03-18
+  gen:father <https://www.wikidata.org/wiki/Q192925> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2746341> .
+  # King of the English 975-07-08
+<https://www.wikidata.org/wiki/Q183499>
+  # Æthelred II the Unready, King of the English, 967~ - 1016-04-23
+  # King of the English 978-03-18 - 1013, 1014 - 1016
+  gen:father <https://www.wikidata.org/wiki/Q192925> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2746341> .
+  # oo Ælfgifu of York, d. 1002
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q183499> , <https://www.wikidata.org/wiki/Q3486550> ;
+	gen:startDate "980" .
+  # oo Emma de Normandie, 985~ - 1052-03-06 (normandie.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q183499> , <https://www.wikidata.org/wiki/Q40061> ;
+	gen:startDate "1002-04-05" .
+
+<https://www.wikidata.org/wiki/Q188684>
+  # Edmund II Ironside, King of England, 988~ - 1016-11-30
+  gen:father <https://www.wikidata.org/wiki/Q183499> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3486550> .
+  # oo Ealdgyth, 992~ - 1016a
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q188684> , <https://www.wikidata.org/wiki/Q3495067> ;
+	gen:startDate "1015-08" .
+<https://www.wikidata.org/wiki/Q130005>
+  # Edward the Confessor, King of England, 1003a/1005b - 1066-01-05
+  gen:father <https://www.wikidata.org/wiki/Q183499> ;
+  gen:mother <https://www.wikidata.org/wiki/Q40061> .
+  # oo Edith (Eadgyth) of Wessex, d. 1075-12-19
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q130005> , <https://www.wikidata.org/wiki/Q259564> ;
+	gen:startDate "1045-01-23" .
+
+
+# ----
+<https://www.wikidata.org/wiki/Q96074771>
+  # Unknown of Kent, 736 - 800
+  gen:father <https://www.wikidata.org/wiki/Q96074772> ; #  Wihtred
+  gen:mother <https://www.wikidata.org/wiki/Q96074773> . # Unknown of Kent
+  # oo Eafa, 730 - 790, https://www.wikidata.org/wiki/Q3567571
+
+# ----
+<https://www.wikidata.org/wiki/Q242670>
+  # Ealhswith, 852~ - 902-12-05
+  gen:father <https://www.wikidata.org/wiki/Q16146398> ; # Æthelred Mucel
+  gen:mother <https://www.wikidata.org/wiki/Q20056457> . # Eadburh
+  # oo 868 Alfred the Great, 849 - 899-10-26~, https://www.wikidata.org/wiki/Q187114
+
+# ----
+#<https://www.wikidata.org/wiki/Q272209>
+  # Æthelred, Lord of the Mercians, d. 911
+  # oo Æthelflæd, Lady of the Mercians, 870~ - 918-06-12
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q272209> , <https://www.wikidata.org/wiki/Q235250> ;
+	gen:startDate "886" .
+
+<https://www.wikidata.org/wiki/Q1067993>
+  # Ælfwynn, Lady of the Mercians, d. 918
+  gen:mother <https://www.wikidata.org/wiki/Q235250> .
+
+# ----
+<https://www.wikidata.org/wiki/Q3435047>
+  # Ælfflæd
+  gen:father <https://www.wikidata.org/wiki/Q56368082> ; # Æthelhelm
+  gen:mother <https://www.wikidata.org/wiki/Q75386575> . # Elswitha (?)
+  # oo 901~ Edward the Elder, King of Wessex, 874-06 - 924-07-17, https://www.wikidata.org/wiki/Q187114
+
+# ----
+<https://www.wikidata.org/wiki/Q3433685>
+  # Eadgifu of Kent, 904b - 966a
+  gen:father <https://www.wikidata.org/wiki/Q21034814> . # Sigehelm
+  # oo 920~ Edward the Elder, King of Wessex, 874-06 - 924-07-17, https://www.wikidata.org/wiki/Q187114
+
+# ----
+<https://www.wikidata.org/wiki/Q2278338>
+  # Ælfgifu of Shaftesbury, d. 944
+  gen:father <https://www.wikidata.org/wiki/Q16849898> . # Wynflaed
+  # oo 940~ Edmund I, King of Wessex, 920~ - 946-05-26, https://www.wikidata.org/wiki/Q190166
+
+# ----
+<https://www.wikidata.org/wiki/Q4129783>
+  # Æthelflæd of Damerham
+  gen:father <https://www.wikidata.org/wiki/Q25711384> . # Ælfgar
+  # oo 946~ Edmund I, King of Wessex, 920~ - 946-05-26, https://www.wikidata.org/wiki/Q190166
+
+# ----
+<https://www.wikidata.org/wiki/Q4368350>
+  # Ælfgifu
+  gen:mother <https://www.wikidata.org/wiki/Q75494434> . # Æthelgifu (?)
+  # oo 959a Eadwig, King of the English, 940~ - 959-10-01, https://www.wikidata.org/wiki/Q191203
+
+# ----
+<https://www.wikidata.org/wiki/Q5850040>
+  # Æthelflæd, d. 962
+  gen:father <https://www.wikidata.org/wiki/Q75382351> ; # Ordmær, Ealdorman
+  gen:mother <https://www.wikidata.org/wiki/Q75386591> . # Ealda (?)
+  # oo 961 Edgar, King of England, 943 - 975-07-08, https://www.wikidata.org/wiki/Q192925
+
+# ----
+<https://www.wikidata.org/wiki/Q2746341>
+  # Ælfthryth, d. 1000-11-17
+  gen:father <https://www.wikidata.org/wiki/Q2536872> .# Ordgar, Ealdorman of Devon
+  # oo 962 Æthelwald, Ealdorman of East Anglia, d. 962, https://www.wikidata.org/wiki/Q16151379
+  # oo 964 Edgar, King of England, 943 - 975-07-08, https://www.wikidata.org/wiki/Q192925
+
+# ----
+<https://www.wikidata.org/wiki/Q3486550>
+  # Ælfgifu of York, d. 1002
+  gen:father <https://www.wikidata.org/wiki/Q7796194> ; # Thored Gunnarsson
+  gen:mother <https://www.wikidata.org/wiki/Q75386600> . # Hilda (?)
+  # oo 980 Æthelred II the Unready, King of England, 967~ - 1016-04-23, https://www.wikidata.org/wiki/Q183499
+
+# ----
+<https://www.wikidata.org/wiki/Q3495067>
+  # Ealdgyth, 992~ - 1016a
+  gen:father <https://www.wikidata.org/wiki/Q103560123> . # Aelfthryth
+  # oo 1015-08 Edmund II Ironside, King of England, 988~ - 1016-11-30, https://www.wikidata.org/wiki/Q188684
+
+# ----
+<https://www.wikidata.org/wiki/Q159597>
+  # Harold II Godwinson, King of England, 1022 - 1066-10-14
+  gen:father <https://www.wikidata.org/wiki/Q318142> ; # Godwin, Earl of Wessex
+  gen:mother <https://www.wikidata.org/wiki/Q2634369> . # Gytha Thorkelsdóttir
+  # oo Ealdgyth of Mercia
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q159597> , <https://www.wikidata.org/wiki/Q462856> ;
+	gen:startDate "1064~" .
+  # oo Edith the Fair, 1025~ - 1086~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q159597> , <https://www.wikidata.org/wiki/Q515160> .
+<https://www.wikidata.org/wiki/Q259564>
+  # Edith (Eadgyth) of Wessex, d. 1075-12-19
+  gen:father <https://www.wikidata.org/wiki/Q318142> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2634369> .
+  # oo 1045-01-23 Edward the Confessor, King of England, 1003a/1005b - 1066-01-05, https://www.wikidata.org/wiki/Q130005
+
+<https://www.wikidata.org/wiki/Q2995934>
+  # Gytha of Wessex, 1053 - 1098-03-10
+  gen:father <https://www.wikidata.org/wiki/Q159597> ;
+  gen:mother <https://www.wikidata.org/wiki/Q515160> .
+  # oo 1070 Wladimir II. Monomach, Großfürst von Kyiv, 1053 - 1125-05-19, https://www.wikidata.org/wiki/Q60928 (rurikiden.ttl)
+# ----
+<https://www.wikidata.org/wiki/Q271362>
+  # Ælfgar, Earl of Mercia, d. 1062~
+  gen:father <https://www.wikidata.org/wiki/Q638973> ; # Leofric, Earl of Mercia, 968 - 1057
+  gen:mother <https://www.wikidata.org/wiki/Q106077> . # Godgifu, 990~ - 1067-09-10
+  # oo Ælfgifu
+
+<https://www.wikidata.org/wiki/Q462856>
+  # Ealdgyth of Mercia
+  gen:father <https://www.wikidata.org/wiki/Q271362> .
+  # oo 1050 https://www.wikidata.org/wiki/Q727897 Gruffydd ap Llywelyn, 1000 - 1063-08-05
+  # oo 1064~ Harold II Godwinson, King of England, 1022 - 1066-10-14, https://www.wikidata.org/wiki/Q159597
