@@ -1,0 +1,182 @@
+@base <lynar.ttl> .
+@prefix gen: <http://jjkoch.de/gen#> .
+@prefix wdata: <https://www.wikidata.org/wiki/> .
+@prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://www.wikidata.org/wiki/Q1458681>
+  # Friedrich Casimir Graf von Lynar, 1673-07-23 - 1716-04-27
+  gen:father <https://www.wikidata.org/wiki/Q110154381> ; # Siegmund Casimir Graf zu Lynar
+  gen:mother <https://www.wikidata.org/wiki/Q110154382> . # Charlotte Freiin von Blumenthal
+  # oo Eva-Elisabeth Gräfin von Windisch-Graetz, 1672-07-27 - 1745-10-03
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1458681> , <https://www.wikidata.org/wiki/Q110154385> ;
+	gen:startDate "1697-07-12" .
+
+<https://www.wikidata.org/wiki/Q2160300>
+  # Rochus Friedrich Graf zu Lynar, 1708-12-16 - 1781-11-13
+  gen:father <https://www.wikidata.org/wiki/Q1458681> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110154385> .
+  # oo Sophie Maria Helena Gräfin Reuß zu Köstritz, 1712-11-30 - 1781-02-18
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2160300> , <https://www.wikidata.org/wiki/Q12336456> ;
+	gen:startDate "1735-05-27" .
+
+<#Christian_Ernst_zu_Lynar>
+  # Christian Ernst Graf zu Lynar, 1742-06-06 - 1784-04-28
+  gen:father <https://www.wikidata.org/wiki/Q2160300> ;
+  gen:mother <https://www.wikidata.org/wiki/Q12336456> .
+  # oo Augusta Gräfin von Pückler Freiin von Groditz, 1750-12-31 - 1818-09-09
+  []
+    gen:spouse <#Christian_Ernst_zu_Lynar> , <pückler.ttl#Augusta_von_Pückler> ;
+	gen:startDate "1771-12-30" ;
+	gen:divorceDate "1783" .
+<https://www.wikidata.org/wiki/Q55855457> # -> fürstliche Linie
+  # _Moritz Ludwig Ernst_ Fürst zu Lynar, 1754-12-15 - 1807-08-11
+  gen:father <https://www.wikidata.org/wiki/Q2160300> ;
+  gen:mother <https://www.wikidata.org/wiki/Q12336456> .
+
+<#Rochus_Ernst_zu_Lynar>
+  # Rochus Ernst Graf zu Lynar, 1773-04-17 - 1800-08-01
+  gen:father <#Christian_Ernst_zu_Lynar> ;
+  gen:mother <pückler.ttl#Augusta_von_Pückler> .
+  # oo Auguste Charlotte von Schönberg, 1777-05-18 - 1863-04-26, daughter of Peter August von Schönberg and Charlotte Dorothea Gräfin von Hoym
+  []
+    gen:spouse <#Rochus_Ernst_zu_Lynar> , <#Auguste_von_Schönberg> ;
+	gen:startDate "1796-05-13" .
+
+<https://www.wikidata.org/wiki/Q61692329>
+  # Hermann Rochus Graf zu Lynar, 1797-02-04 - 1878-12-31
+  gen:father <#Rochus_Ernst_zu_Lynar> ;
+  gen:mother <#Auguste_von_Schönberg> .
+  # oo Mathilde Gräfin von Voß, 1803-12-01 - 1838-01-19
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q61692329> , <finck.ttl#Mathilde_von_Voß> ;
+	gen:startDate "1821-10-11" .
+
+<https://www.wikidata.org/wiki/Q15815355>
+  # Hermann _Maximilian_ Graf zu Lynar, 1825-04-24 - 1914-08-19
+  gen:father <https://www.wikidata.org/wiki/Q61692329> ; # see windisch-graetz.ttl
+  gen:mother <finck.ttl#Mathilde_von_Voß> .
+  # oo Bertha Gräfin zu Solms-Baruth, 1832-08-14 - 1909-03-27
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q15815355> , <solms.ttl#Bertha_zu_Solms-Baruth> ;
+	gen:startDate "1853-10-26" .
+<https://www.wikidata.org/wiki/Q55855453>
+  # Hermann _Albert_ Graf zu Lynar, 1827-01-07 - 1887-11-14
+  gen:father <https://www.wikidata.org/wiki/Q61692329> ;
+  gen:mother <finck.ttl#Mathilde_von_Voß> .
+  # oo Elisabeth von Bockelberg, 1844-05-16 - 1922-05-05, daughter of Heinrich von Bockelberg and Mathilde von Werdeck
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q55855453> , <#Elisabeth_von_Bockelberg> ;
+	gen:startDate "1869-06-10" .
+
+<https://www.wikidata.org/wiki/Q94811303>
+  # Rochus Friedrich Graf zu Lynar, 1857-01-18 - 1928-03-05
+  gen:father <https://www.wikidata.org/wiki/Q15815355> ;
+  gen:mother <solms.ttl#Bertha_zu_Solms-Baruth> .
+  # oo Elma Gräfin von Klinckowstroem, 1876-08-01 - 1919-04-07, daughter of Arthur Karl Ludwig Friedrich Graf von Klinckowstroem and Elma Gräfin von Behr-Negendank
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q94811303> , <#Elma_von_Klinckowstroem> ;
+	gen:startDate "1898-05-03" .
+  # oo Elisabeth Gräfin zu Solms-Wildenfels, 1863-10-23 - 1946-10-06
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q94811303> , <solms.ttl#Elisabeth_zu_Solms-Wildenfels> ;
+	gen:startDate "1921-03-10" .
+<#Johannes_zu_Lynar>
+  # Johannes Hermann Rochus Maximilian Graf zu Lynar, 1859-12-03 - 1934-06-30
+  gen:father <https://www.wikidata.org/wiki/Q15815355> ;
+  gen:mother <solms.ttl#Bertha_zu_Solms-Baruth> .
+  # oo Anna Elisabeth Prinzessin von Solms-Hohensolms-Lich, 1868-09-20 - 1950-12-06
+  []
+    gen:spouse <#Johannes_zu_Lynar> , <solms.ttl#Anna_Elisabeth_zu_Solms-Hohensolms-Lich> ;
+	gen:startDate "1889-09-28" .
+<#Luise_zu_Lynar>
+  # Isabelle Therese Dorothea _Luise_ Gräfin zu Lynar, 1864-10-10 - 1943-12-03
+  gen:father <https://www.wikidata.org/wiki/Q15815355> ;
+  gen:mother <solms.ttl#Bertha_zu_Solms-Baruth> .
+  # oo 1885-06-25 Ludwig Anton Prinz zu Solms-Hohensolms-Lich, 1851-04-08 - 1913-10-24, solms.ttl#Ludwig_Anton_zu_Solms-Hohensolms-Lich
+<#Aribert_zu_Lynar>
+  # Felix Guerrino _Aribert_ Graf zu Lynar, 1876-04-06 - 1943-04-23
+  gen:father <https://www.wikidata.org/wiki/Q55855453> ;
+  gen:mother <#Elisabeth_von_Bockelberg> .
+  # oo Martina Gräfin zu Solms-Sonnenwalde, 1883-02-27 - 1957-12-21
+  []
+    gen:spouse <#Aribert_zu_Lynar> , <solms.ttl#Martina_zu_Solms-Sonnenwalde> ;
+	gen:startDate "1914-07-11" .
+
+<#Edelgard_zu_Lynar>
+  # Elma _Edelgard_ Mathilde Gräfin zu Lynar, b. 1900-04-11
+  gen:father <https://www.wikidata.org/wiki/Q94811303> ;
+  gen:mother <#Elma_von_Klinckowstroem> .
+  # oo 1920-09-09 Wilhelm Graf zu Lynar, 1891-08-16 - 1955-11-26, #Wilhelm_zu_Lynar
+<#Hilde_zu_Lynar>
+  # Maria Hilde Margarethe Gräfin zu Lynar, 1903-09-25 - 1985-12-01
+  gen:father <https://www.wikidata.org/wiki/Q94811303> ;
+  gen:mother <#Elma_von_Klinckowstroem> .
+  # oo 1924-05-23 Gerd Graf Finck von Finckenstein, 1892-07-26 - 1945-04-20, finck.ttl#Gerd_Finck_von_Finckenstein
+<#Wilhelm_zu_Lynar>
+  # Wilhelm Rochus Graf zu Lynar, 1891-08-16 - 1955-11-26
+  gen:father <#Johannes_zu_Lynar> ;
+  gen:mother <solms.ttl#Anna_Elisabeth_zu_Solms-Hohensolms-Lich> .
+  # oo Edelgard Gräfin zu Lynar
+  []
+    gen:spouse <#Wilhelm_zu_Lynar> , <#Edelgard_zu_Lynar> ;
+	gen:startDate "1920-09-09" .
+
+
+# fürstliche Linie
+<https://www.wikidata.org/wiki/Q55855457>
+  # _Moritz Ludwig Ernst_ Fürst zu Lynar, 1754-12-15 - 1807-08-11
+  # 1. Fürst zu Lynar 1806/1807
+  gen:father <https://www.wikidata.org/wiki/Q2160300> ;
+  gen:mother <https://www.wikidata.org/wiki/Q12336456> .
+  # oo Friedrike Juliane Gräfin von Rantzau, 1755-10-23 - 1838-05-07, daughter of Greve Otto Manderup von Rantzau zu Braheborg and Eva Margaretha von Levezau
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q55855457> , <#Friedrike_von_Rantzau> ;
+	gen:startDate "1784-10-08" .
+
+<https://www.wikidata.org/wiki/Q94909453>
+  # Rochus _Ernst_ Fürst zu Lynar, 1797-04-13 - 1869-03-24
+  # 3. Fürst zu Lynar 1860-11-09
+  gen:father <https://www.wikidata.org/wiki/Q55855457> ;
+  gen:mother <#Friedrike_von_Rantzau> .
+  # oo Luise von Löbenstein, 1812-12-02 - 1881-02-12
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q94909453> , <#Luise_von_Löbenstein> ;
+	gen:startDate "1833-11-19" .
+<https://www.wikidata.org/wiki/Q75856378>
+  owl:sameAs <https://www.wikidata.org/wiki/Q55855455> ;
+  # Ernst Manderup _Alexander_ Fürst zu Lynar, 1834-09-17 - 1886-11-03
+  # 4. Fürst zu Lynar 1869-03-24
+  gen:father <https://www.wikidata.org/wiki/Q94909453> ;
+  gen:mother <#Luise_von_Löbenstein> .
+  # oo May Amalia Parsons, 1850-06-14 - 1920-10-08, daughter of George McClellan Parsons and Jane Swan
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75856378> , <https://www.wikidata.org/wiki/Q75856376> ;
+	gen:startDate "1871-05-16" .
+
+<https://www.wikidata.org/wiki/Q75376718>
+  # Ernst Georg Hermann Robert Manderup Fürst zu Lynar, 1875-03-31 - 1934-02-04
+  # 5. Fürst zu Lynar 1886-11-03
+  # Graf von Redern 1918
+  gen:father <https://www.wikidata.org/wiki/Q75856378> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75856376> .
+  # oo Viktoria Maria Gräfin von Redern, 1889-03-12 - 1981-05-19
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75376718> , <https://www.wikidata.org/wiki/Q75376716> ;
+	gen:startDate "1917-11-28" .
+
+<https://www.wikidata.org/wiki/Q75376762>
+  # Elisabeth Gabriele Gräfin zu Lynar, 1922-05-17 - 2005-06-16
+  gen:father <https://www.wikidata.org/wiki/Q75376718> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75376716> .
+  # oo 1946-10-10 Alois Prinz zu Oettingen-Oettingen und Oettingen-Spielberg, 1920-09-03 - 1975-11-30, https://www.wikidata.org/wiki/Q75376763
+
+
+# ----
+<https://www.wikidata.org/wiki/Q75376716>
+  # Viktoria Maria Gräfin von Redern, 1889-03-12 - 1981-05-19
+  gen:father <https://www.wikidata.org/wiki/Q75376715> ; # Wilhelm Graf von Redern
+  gen:mother <https://www.wikidata.org/wiki/Q75376712> . # Maria Caroline Gräfin Lichnowsky
+  # oo 1917-11-28 Ernst Fürst zu Lynar, 1875-03-31 - 1934-02-04, https://www.wikidata.org/wiki/Q75376718

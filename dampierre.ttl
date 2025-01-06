@@ -4,11 +4,34 @@
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
+<https://www.wikidata.org/wiki/Q2461403>
+  # Guillaume Ier de Dampierre, 1130 - 1161
+  gen:father <https://www.wikidata.org/wiki/Q3229798> ; # Guy I de Dampierre
+  gen:mother <https://www.wikidata.org/wiki/Q61196688> . # Helvide de Baudémont
+  # oo Ermengarde de Mouchy, daughter of Dreux IV de Mouchy and Adelaide
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2461403> , <https://www.wikidata.org/wiki/Q75242440> .
+<https://www.wikidata.org/wiki/Q22678412>
+  # Helvide de Dampierre
+  gen:father <https://www.wikidata.org/wiki/Q3229798> ;
+  gen:mother <https://www.wikidata.org/wiki/Q61196688> .
+  # oo Geoffroy IV de Joinville, d. 1190-08, https://www.wikidata.org/wiki/Q1539272 (lothringen.ttl)
+
+<https://www.wikidata.org/wiki/Q1557512>
+  # Guy II de Dampierre, 1155 - 1216-01-18
+  gen:father <https://www.wikidata.org/wiki/Q2461403> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75242440> .
+  # oo Mathilde Ire, dame de Bourbon, 1165 - 1228-07-18 (capet.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1557512> , <https://www.wikidata.org/wiki/Q448433> ;
+	gen:startDate "1197" .
+
 <https://www.wikidata.org/wiki/Q632415>
-  # Archambaud VIII de Bourbon, 1189~ - 1242-07-21
-  gen:father <https://www.wikidata.org/wiki/Q1557512> ; # Guy II of Dampierre
-  gen:mother <https://www.wikidata.org/wiki/Q448433> . # Mathilde Ire de Bourbon
-  # oo Alix Guigone de Forez, 1190~ - 1240~
+  # Archambaud VIII, seigneur de Bourbon, 1189~ - 1242-07-21
+  # seigneur de Bourbon 1228-07-18
+  gen:father <https://www.wikidata.org/wiki/Q1557512> ;
+  gen:mother <https://www.wikidata.org/wiki/Q448433> .
+  # oo Alix Guigone de Forez, 1190~ - 1240~ (capet.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q632415> , <https://www.wikidata.org/wiki/Q96245284> ;
 	gen:startDate "1205" .
@@ -24,6 +47,11 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q2066259> , <https://www.wikidata.org/wiki/Q467014> ;
 	gen:startDate "1223" .
+<https://www.wikidata.org/wiki/Q101469404>
+  # Philippe (Mahaut) de Dampierre, d. 1223
+  gen:father <https://www.wikidata.org/wiki/Q1557512> ;
+  gen:mother <https://www.wikidata.org/wiki/Q448433> .
+  # oo Guigues IV, comte de Forez, 1200b - 1241-10-29, https://www.wikidata.org/wiki/Q351013 (capet.ttl)
 
 <https://www.wikidata.org/wiki/Q1815122>
   # Marguerite de Bourbon, 1211 - 1256-04-12
@@ -31,10 +59,11 @@
   gen:mother <https://www.wikidata.org/wiki/Q96245284> .
   # oo 1232-03 Thibaut Ier de Navarre, 1201-05-30 - 1253-07-08, https://www.wikidata.org/wiki/Q314562 (blois.ttl)
 <https://www.wikidata.org/wiki/Q632411>
-  # Archambaud IX de Bourbon, 1212 - 1249-01-22
+  # Archambaud IX, seigneur de Bourbon, 1212 - 1249-01-22
+  # seigneur de Bourbon 1242-07-21
   gen:father <https://www.wikidata.org/wiki/Q632415> ;
   gen:mother <https://www.wikidata.org/wiki/Q96245284> .
-  # oo Yolande Ire de Châtillon, comtesse de Nevers, 1221 - 1254 (chatillon.ttl)
+  # oo Yolande de Châtillon, 1221 - 1254 (chatillon.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q632411> , <https://www.wikidata.org/wiki/Q1702630> .
 <https://www.wikidata.org/wiki/Q3292873>
@@ -61,22 +90,33 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q28531> , <https://www.wikidata.org/wiki/Q2029908> ;
 	gen:startDate "1246-02-02" .
-  # oo Isabelle de Luxembourg, 1247 - 1298 (mark.ttl)
+  # oo Isabelle de Luxembourg, 1247 - 1298 (limburg.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q28531> , <https://www.wikidata.org/wiki/Q2266324> ;
 	gen:startDate "1265-03" .
+<https://www.wikidata.org/wiki/Q2788908>
+  # Jean Ier de Dampierre, Sire de Saint-Dizier, de Dampierre-sur-l’Aube, 1230 - 1258
+  gen:father <https://www.wikidata.org/wiki/Q2066259> ;
+  gen:mother <https://www.wikidata.org/wiki/Q467014> .
+  # oo Lauretta de Lorraine, 1235 - 1285/1288 (lothringen.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2788908> , <https://www.wikidata.org/wiki/Q75291421> ;
+	gen:startDate "1250-03-12" .
 
 <https://www.wikidata.org/wiki/Q223228>
   # Mathilde II de Bourbon, comtesse de Nevers, 1234 - 1262
-  # comtesse de Nevers, Auxerre et Tonnerre 1254
+  # dame de Bourbon 1249-01-22
+  # comtesse de Nevers, d’Auxerre et Tonnerre 1257-10-12
   gen:father <https://www.wikidata.org/wiki/Q632411> ;
   gen:mother <https://www.wikidata.org/wiki/Q1702630> .
   # oo 1247 Eudes de Bourgogne, 1230 - 1266-08-04, https://www.wikidata.org/wiki/Q1385987 (capet.ttl)
 <https://www.wikidata.org/wiki/Q394438>
-  # Agnès de Dampierre, 1237 - 1288-09-07
+  # Agnès de Dampierre, dame de Bourbon, 1237 - 1288-09-07
+  # dame de Bourbon 1262
   gen:father <https://www.wikidata.org/wiki/Q632411> ;
   gen:mother <https://www.wikidata.org/wiki/Q1702630> .
   # oo 1247 Jean de Bourgogne, 1231~ - 1267-09-17, https://www.wikidata.org/wiki/Q1395633 (capet.ttl)
+  # oo 1277 Robert II, comte d’Artois, 1250-09 - 1302-07-11, https://www.wikidata.org/wiki/Q262726 (capet.ttl)
 <https://www.wikidata.org/wiki/Q252724>
   # Robert III de Dampierre, comte de Flandre, 1249 - 1322-09-17
   # comte de Flandre 1305-03-07
@@ -109,20 +149,24 @@
   gen:father <https://www.wikidata.org/wiki/Q28531> ;
   gen:mother <https://www.wikidata.org/wiki/Q2266324> .
   # oo 1287 Hugues II de Châtillon, comte de Blois et de Dunois, 1258-04-09 - 1307, https://www.wikidata.org/wiki/Q285743 (chatillon.ttl)
-<https://www.wikidata.org/wiki/Q1305838>
+<https://www.wikidata.org/wiki/Q1305838> # -> Namur
   # Jean Ier de Dampierre, marquis de Namur, 1267 - 1330-01-31
   gen:father <https://www.wikidata.org/wiki/Q28531> ;
   gen:mother <https://www.wikidata.org/wiki/Q2266324> .
-  # oo Marie d’Artois, 1291 - 1365 (capet.ttl)
+<https://www.wikidata.org/wiki/Q328005>
+  # Guy de Namur, 1270~ - 1311-10-13
+  gen:father <https://www.wikidata.org/wiki/Q28531> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2266324> .
+  # oo Marguerite de Lorraine, d. 1348~ (lothringen.ttl)
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q1305838> , <https://www.wikidata.org/wiki/Q2399640> ;
-	gen:startDate "1309" .
+    gen:spouse <https://www.wikidata.org/wiki/Q328005> , <https://www.wikidata.org/wiki/Q22329002> ;
+	gen:startDate "1311-03-31" .
 <https://www.wikidata.org/wiki/Q2494042>
   # Marguerite de Flandre, 1272 - 1331
   gen:father <https://www.wikidata.org/wiki/Q28531> ;
   gen:mother <https://www.wikidata.org/wiki/Q2266324> .
   # oo 1282-11-15 Alexander, Prince of Scotland, 1264-01-28 - 1284-01-24, https://www.wikidata.org/wiki/Q2012697 (plantagenet.ttl)
-  # oo 1286-07-03 Reinoud I van Gelre, graaf van Gelre en Zutphen, 1255 - 1326-10-09, https://www.wikidata.org/wiki/Q71384 (mark.ttl)
+  # oo 1286-07-03 Reinoud I van Gelre, graaf van Gelre en Zutphen, 1255 - 1326-10-09, https://www.wikidata.org/wiki/Q71384 (wassenberg.ttl)
 <https://www.wikidata.org/wiki/Q2380352>
   # Isabeau de Dampierre, 1275 - 1333
   gen:father <https://www.wikidata.org/wiki/Q28531> ;
@@ -159,18 +203,17 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q76111174> , <https://www.wikidata.org/wiki/Q75276991> ;
 	gen:startDate "1321-10" .
-<https://www.wikidata.org/wiki/Q22876077>
-  # Marie de Namur, 1322 - 1353-10-29b
-  gen:father <https://www.wikidata.org/wiki/Q1305838> ;
-  gen:mother <https://www.wikidata.org/wiki/Q2399640> .
-  # oo 1335 Heinrich II., Graf von Vianden, 1317 - 1337, https://www.wikidata.org/wiki/Q2632412 (nassau.ttl)
-  # oo 1340 Thibaut de Bar, seigneur de Pierrepont, 1314 - 1354, https://www.wikidata.org/wiki/Q25345046 (ivrea.ttl)
+<https://www.wikidata.org/wiki/Q18615752>
+  # Marie de Flandre, d. 1350
+  gen:father <https://www.wikidata.org/wiki/Q195711> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2323048> .
+  # oo 1312 Robert VII, comte d’Auvergne et de Boulogne, 1282 - 1325-10-13, https://www.wikidata.org/wiki/Q1371283
 
 <https://www.wikidata.org/wiki/Q288219>
   # Jeanne de Flandre, 1295~ - 1374-09
   gen:father <https://www.wikidata.org/wiki/Q1394448> ;
   gen:mother <https://www.wikidata.org/wiki/Q2072149> .
-  # oo 1329 Jean de Montfort (IV, duc de Bretagne), 1294 - 1345-09-26, https://www.wikidata.org/wiki/Q544055 (capet.ttl)
+  # oo 1329 Jean IV de Montfort, duc de Bretagne, 1294 - 1345-09-26, https://www.wikidata.org/wiki/Q544055 (capet.ttl)
 <https://www.wikidata.org/wiki/Q469643>
   # Louis Ier, comte de Flandre, 1304 - 1346-08-26
   # comte de Flandre (Ire) et de Nevers (II) 1322-07-22
@@ -190,11 +233,11 @@
   # Alix de Dampierre, 1322 - 1346
   gen:father <https://www.wikidata.org/wiki/Q76111174> ;
   gen:mother <https://www.wikidata.org/wiki/Q75276991> .
-  # oo 1330-07-10 Jean Ier de Luxembourg-Ligny, 1300~/1313 - 1364-05-17, https://www.wikidata.org/wiki/Q517200 (mark.ttl)
+  # oo 1330-07-10 Jean Ier de Luxembourg-Ligny, 1300~/1313 - 1364-05-17, https://www.wikidata.org/wiki/Q517200 (limburg.ttl)
 
 <https://www.wikidata.org/wiki/Q469648>
   # Louis II, comte de Flandre, 1330-11-29 - 1384-01-30
-  # comte de Flandre (II), Nevers (III), Rethel (III) 1346-08-26
+  # comte de Flandre (II), de Nevers (III) et de Rethel (III) 1346-08-26
   # comte de Bourgogne (Ire) et d’Artois (III) 1382-05-09
   gen:father <https://www.wikidata.org/wiki/Q469643> ;
   gen:mother <https://www.wikidata.org/wiki/Q261999> .
@@ -205,17 +248,101 @@
 
 <https://www.wikidata.org/wiki/Q466252>
   # Marguerite III, comtesse de Flandre, 1350-04-13 - 1405-03-16
-  # comtesse de Flandre, d’Artois, de Nevers, de Rethel, de Bourgogne 1384-01-30
+  # comtesse de Flandre, d’Artois, de Nevers, de Rethel et de Bourgogne 1384-01-30
   gen:father <https://www.wikidata.org/wiki/Q469648> ;
   gen:mother <https://www.wikidata.org/wiki/Q2667226> .
+  # oo 1357-05-14 Philippe Ier, duc de Bourgogne, 1346-08-05 - 1361-11-21, https://www.wikidata.org/wiki/Q19254 (capet.ttl)
   # oo 1369-06-19 Philippe II, duc de Bourgogne, 1342-01-17 - 1404-04-27, https://www.wikidata.org/wiki/Q298892 (capet.ttl)
+
+
+# Namur
+<https://www.wikidata.org/wiki/Q1305838>
+  # Jean Ier de Dampierre, marquis de Namur, 1267 - 1330-01-31
+  # marquis de Namur 1297
+  gen:father <https://www.wikidata.org/wiki/Q28531> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2266324> .
+  # oo Marie d’Artois, 1291 - 1365 (capet.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1305838> , <https://www.wikidata.org/wiki/Q2399640> ;
+	gen:startDate "1309" .
+
+<https://www.wikidata.org/wiki/Q2086454>
+  # Jean II de Dampierre, marquis de Namur, 1311 - 1335-04-02
+  # marquis de Namur 1330-01-31
+  gen:father <https://www.wikidata.org/wiki/Q1305838> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2399640> .
+<https://www.wikidata.org/wiki/Q1934858>
+  # Guy II de Dampierre, marquis de Namur, 1312 - 1336-03-12
+  # marquis de Namur 1335-04-02
+  gen:father <https://www.wikidata.org/wiki/Q1305838> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2399640> .
+<https://www.wikidata.org/wiki/Q2084728>
+  # Philippe III de Dampierre, marquis de Namur, 1319 - 1337
+  # marquis de Namur 1336-03-12
+  gen:father <https://www.wikidata.org/wiki/Q1305838> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2399640> .
+<https://www.wikidata.org/wiki/Q242598>
+  # Blanche de Namur, 1320 - 1363
+  gen:father <https://www.wikidata.org/wiki/Q1305838> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2399640> .
+  # oo 1335 Magnus IV. Eriksson, Kung av Sverige, 1316 - 1374-12-01, https://www.wikidata.org/wiki/Q314457 (askanier.ttl)
+<https://www.wikidata.org/wiki/Q22876077>
+  # Marie de Namur, 1322 - 1353-10-29b
+  gen:father <https://www.wikidata.org/wiki/Q1305838> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2399640> .
+  # oo 1335 Heinrich II., Graf von Vianden, 1317 - 1337, https://www.wikidata.org/wiki/Q2632412 (nassau.ttl)
+  # oo 1340 Thibaut de Bar, seigneur de Pierrepont, 1314 - 1354, https://www.wikidata.org/wiki/Q25345046 (ivrea.ttl)
+<https://www.wikidata.org/wiki/Q527673>
+  # Guillaume Ier de Dampierre, marquis de Namur, 1324 - 1391-10-01
+  # marquis de Namur 1337
+  gen:father <https://www.wikidata.org/wiki/Q1305838> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2399640> .
+  # oo Jeanne de Hainault, comtesse de Soissons, 1323 - 1350-12 (avesnes.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q527673> , <https://www.wikidata.org/wiki/Q2020255> ;
+	gen:startDate "1348-02-13" .
+  # oo Catherine de Savoie-Vaud, 1312~ - 1388-06-18 (savoyen.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q527673> , <https://www.wikidata.org/wiki/Q16538361> ;
+	gen:startDate "1352-03-02" .
+<https://www.wikidata.org/wiki/Q1330458>
+  # Élisabeth de Namur, 1330~ - 1382-04-06
+  gen:father <https://www.wikidata.org/wiki/Q1305838> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2399640> .
+  # oo 1350 Ruprecht I. der Rote, Kurfürst von der Pfalz, 1309-06-09 - 1390-02-16, https://www.wikidata.org/wiki/Q63749 (wittelsbacher.ttl)
+
+<https://www.wikidata.org/wiki/Q1339725>
+  # Guillaume II de Dampierre, marquis de Namur, 1355-01-22 - 1418-01-10
+  # marquis de Namur 1391-10-01
+  gen:father <https://www.wikidata.org/wiki/Q527673> ;
+  gen:mother <https://www.wikidata.org/wiki/Q16538361> .
+  # oo Marie de Bar, 1374-03 - 1393b (ivrea.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1339725> , <https://www.wikidata.org/wiki/Q22674622> .
+  # oo Jeanne d’Harcourt (reginare.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1339725> , <https://www.wikidata.org/wiki/Q111310135> .
+<https://www.wikidata.org/wiki/Q958712>
+  # Jean III de Dampierre, marquis de Namur, d. 1429-03-10
+  # marquis de Namur 1418-01-10
+  gen:father <https://www.wikidata.org/wiki/Q527673> ;
+  gen:mother <https://www.wikidata.org/wiki/Q16538361> .
+  # oo Johanna van Abcoude, 1375~ - 1418b
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q958712> , <https://www.wikidata.org/wiki/Q107357124> ;
+	gen:startDate "1388-05-08" .
+<https://www.wikidata.org/wiki/Q76096273>
+  # Marie de Namur, d. 1412
+  gen:father <https://www.wikidata.org/wiki/Q527673> ;
+  gen:mother <https://www.wikidata.org/wiki/Q16538361> .
+  # oo 1370-08-22 Guy II de Blois-Châtillon, comte de Blois, d. 1397-12-22, https://www.wikidata.org/wiki/Q450776 (chatillon.ttl)
 
 
 # ----
 <https://www.wikidata.org/wiki/Q19606668>
   # Beatrice de Montluçon, 1195~ - 1238~
   gen:father <https://www.wikidata.org/wiki/Q75241457> . # Archambaud de Montlucon, Sire de Montlucon
-  # oo 1215 Archambaud VIII de Bourbon, 1189~ - 1242-07-21, https://www.wikidata.org/wiki/Q632415
+  # oo 1215 Archambaud VIII, seigneur de Bourbon, 1189~ - 1242-07-21, https://www.wikidata.org/wiki/Q632415
 
 # ----
 <https://www.wikidata.org/wiki/Q2029908>
@@ -226,9 +353,8 @@
 
 # ----
 <https://www.wikidata.org/wiki/Q2528916>
-  owl:sameAs <https://www.wikidata.org/wiki/Q76034092> ;
   # Gautier II d’Enghien, 1267~ - 1309~
-  gen:father <https://www.wikidata.org/wiki/Q2611773> . # Walter I of Enghien
+  gen:father <https://www.wikidata.org/wiki/Q2611773> . # Gautier Ier d’Enghien
   # oo Yolande de Flandre, 1270~ - 1313
   []
     gen:spouse <https://www.wikidata.org/wiki/Q2528916> , <https://www.wikidata.org/wiki/Q76034090> ;
@@ -236,6 +362,7 @@
 
 <https://www.wikidata.org/wiki/Q2194462>
   # Gautier III d’Enghien, 1302-06-05 - 1345-10-16
+  # seigneur d’Enghien
   gen:father <https://www.wikidata.org/wiki/Q2528916> ;
   gen:mother <https://www.wikidata.org/wiki/Q76034090> .
   # oo Isabelle, comtesse de Brienne, 1306 - 1360 (brienne.ttl)
@@ -243,20 +370,47 @@
     gen:spouse <https://www.wikidata.org/wiki/Q2194462> , <https://www.wikidata.org/wiki/Q469959> ;
 	gen:startDate "1321~" .
 
+<https://www.wikidata.org/wiki/Q2162483>
+  # Siger d’Enghien, comte de Brienne, 1324 - 1364-03-21
+  # seigneur d’Enghien 1345-10-16
+  # comte de Brienne, conte di Conversano 1360
+  gen:father <https://www.wikidata.org/wiki/Q2194462> ;
+  gen:mother <https://www.wikidata.org/wiki/Q469959> .
+  # oo Jeanne de Condé "Morialmé"
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2162483> , <#Jeanne_de_Condé> .
+<https://www.wikidata.org/wiki/Q3175188>
+  # Jean d’Enghien, Conte di Castro, d. 1380
+  gen:father <https://www.wikidata.org/wiki/Q2194462> ;
+  gen:mother <https://www.wikidata.org/wiki/Q469959> .
+  # oo Sanche des Baux, b. 1329-11-30 (capet.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3175188> , <https://www.wikidata.org/wiki/Q108432595> .
 <https://www.wikidata.org/wiki/Q2204486>
   # Louis d’Enghien, comte de Brienne, d. 1394-03-17
+  # comte de Brienne, conte di Conversano, seigneur d’Enghien 1381-07-18
   gen:father <https://www.wikidata.org/wiki/Q2194462> ;
   gen:mother <https://www.wikidata.org/wiki/Q469959> .
   # oo Jeanne di St. Severino, 1340 - 1393, daughter of Antonio di San Severino and Isabel de Baux
   []
     gen:spouse <https://www.wikidata.org/wiki/Q2204486> , <https://www.wikidata.org/wiki/Q75241318> .
 
+<https://www.wikidata.org/wiki/Q2599232>
+  # Gautier IV d’Enghien, comte de Brienne, 1360 - 1381-07-18
+  # comte de Brienne, conte di Conversano, seigneur d’Enghien 1364-03-21
+  gen:father <https://www.wikidata.org/wiki/Q2162483> ;
+  gen:mother <#Jeanne_de_Condé> .
+<https://www.wikidata.org/wiki/Q452270>
+  # Marie d’Enghien, 1367 - 1446-05-09
+  gen:father <https://www.wikidata.org/wiki/Q3175188> ;
+  gen:mother <https://www.wikidata.org/wiki/Q108432595> .
+  # oo 1406 Ladislao I, Re di Napoli, 1377-02-15 - 1414-08-06, https://www.wikidata.org/wiki/Q317593 (capet.ttl)
 <https://www.wikidata.org/wiki/Q1978428>
   # Marguerite d’Enghien, comtesse de Brienne, 1370 - 1397
-  # comtesse de Brienne et de Conversano
+  # comtesse de Brienne, contessa di Conversano, dame d’Enghien 1394-03-17
   gen:father <https://www.wikidata.org/wiki/Q2204486> ;
   gen:mother <https://www.wikidata.org/wiki/Q75241318> .
-  # oo 1384-04-10 Jean de Luxembourg, seigneur de Beaurevoir et Richebourg, 1370 - 1397, https://www.wikidata.org/wiki/Q479444
+  # oo 1384-04-10 Jean de Luxembourg, seigneur de Beaurevoir et Richebourg, 1370 - 1397, https://www.wikidata.org/wiki/Q479444 (limburg.ttl)
 
 # ----
 <https://www.wikidata.org/wiki/Q2072149>
@@ -271,3 +425,85 @@
   gen:father <https://www.wikidata.org/wiki/Q76111171> ; # Nicolaas III Persijn Heer van Putten
   gen:mother <https://www.wikidata.org/wiki/Q76238639> . # Aleida Vrouwe van Strijen
   # oo 1321-10 Guy de Dampierre, 1295 - 1350, https://www.wikidata.org/wiki/Q76111174
+
+# ----
+<https://www.wikidata.org/wiki/Q1371283>
+  # Robert VII, comte d’Auvergne et de Boulogne, 1282 - 1325-10-13
+  gen:father <https://www.wikidata.org/wiki/Q531337> ; # Robert VI, comte d’Auvergne et de Boulogne
+  gen:mother <https://www.wikidata.org/wiki/Q97784811> . # Béatrix de Montgascon, Dame de Vergne
+  # oo Blanche de Clermont, 1281 - 1311 (capet.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1371283> , <https://www.wikidata.org/wiki/Q18615771> ;
+	gen:startDate "1303-06-25" .
+  # oo Marie de Flandre, d. 1350
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1371283> , <https://www.wikidata.org/wiki/Q18615752> ;
+	gen:startDate "1312" .
+
+<https://www.wikidata.org/wiki/Q2006593>
+  # Guillaume XII, comte d’Auvergne et de Boulogne, 1300 - 1332
+  # comte d’Auvergne et de Boulogne 1325-10-13
+  gen:father <https://www.wikidata.org/wiki/Q1371283> ;
+  gen:mother <https://www.wikidata.org/wiki/Q18615771> .
+  # oo Marguerite d’Évreux, 1307 - 1350 (capet.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2006593> , <https://www.wikidata.org/wiki/Q4281174> ;
+	gen:startDate "1325" .
+<https://www.wikidata.org/wiki/Q1253132>
+  # Jean Ier, comte d’Auvergne et de Boulogne, 1326 - 1386-03-24
+  # comte de Montfort 1351 - 1361
+  # comte d’Auvergne et de Boulogne 1361-11-21
+  gen:father <https://www.wikidata.org/wiki/Q1371283> ;
+  gen:mother <https://www.wikidata.org/wiki/Q18615752> .
+  # oo Jeanne de Clermont, dame de Saint-Just, d. 1383-07-27, daughter of Jean de Charolais and Jeanne d’Argies
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1253132> , <https://www.wikidata.org/wiki/Q106847113> ;
+	gen:startDate "1328" .
+<https://www.wikidata.org/wiki/Q97784788>
+  # Godefroy d’Auvergne dit de Boulogne, Seigneur de Montgascon, d. 1384-01-11a/1385-08-19b
+  gen:father <https://www.wikidata.org/wiki/Q1371283> ;
+  gen:mother <https://www.wikidata.org/wiki/Q18615752> .
+  # oo Jeanne de Ventadour, d. 1376-09-19
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q97784788> , <https://www.wikidata.org/wiki/Q97784855> .
+<https://www.wikidata.org/wiki/Q18615779>
+  # Mathilde d’Auvergne, d. 1399-10-24
+  gen:father <https://www.wikidata.org/wiki/Q1371283> ;
+  gen:mother <https://www.wikidata.org/wiki/Q18615752> .
+  # oo 1334 Amédée III, comte de Genève, 1311-03-29 - 1367-01-18, https://www.wikidata.org/wiki/Q2247705 (ivrea.ttl)
+
+<https://www.wikidata.org/wiki/Q235458>
+  # Jeanne Ire, comtesse d’Auvergne et de Boulogne, 1326-05-08 - 1360-09-29
+  # comtesse d’Auvergne et de Boulogne 1332
+  gen:father <https://www.wikidata.org/wiki/Q2006593> ;
+  gen:mother <https://www.wikidata.org/wiki/Q4281174> .
+  # oo 1338-09-26 Philippe de Bourgogne, 1323-11-10 - 1346-08-10, https://www.wikidata.org/wiki/Q18715 (capet.ttl)
+  # oo 1350-02-19 Jean II, roi de France, 1319-04-16 - 1364-04-08, https://www.wikidata.org/wiki/Q169992 (capet.ttl)
+<https://www.wikidata.org/wiki/Q722806>
+  # Jean II, comte d’Auvergne et de Boulogne, d. 1404-09-28
+  # comte d’Auvergne et de Boulogne 1386-03-24
+  gen:father <https://www.wikidata.org/wiki/Q1253132> ;
+  gen:mother <https://www.wikidata.org/wiki/Q106847113> .
+  # oo Aliénor de Comminges (montfort.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q722806> , <https://www.wikidata.org/wiki/Q21953090> .
+<https://www.wikidata.org/wiki/Q1254053>
+  # Marie Ire de Montgascon, comtesse d’Auvergne, 1376-09 - 1437-08-07
+  # comtesse d’Auvergne et de Boulogne 1424
+  gen:father <https://www.wikidata.org/wiki/Q97784788> ;
+  gen:mother <https://www.wikidata.org/wiki/Q97784855> .
+  # oo 1389-01-11 Bertrand IV de la Tour, 1360b - 1423-09-07a, https://www.wikidata.org/wiki/Q2899577
+
+<https://www.wikidata.org/wiki/Q132090>
+  # Jeanne II, comtesse d’Auvergne et de Boulogne, 1378 - 1422/1424
+  # comtesse d’Auvergne et de Boulogne 1404-09-28
+  gen:father <https://www.wikidata.org/wiki/Q722806> ;
+  gen:mother <https://www.wikidata.org/wiki/Q21953090> .
+  # oo 1389-06-05 Jean duc de Berry, 1340-11-30 - 1416-06-15, https://www.wikidata.org/wiki/Q346761
+  # oo 1416 Georges de la Trémoille, 1382/1384 - 1446-05-06, https://www.wikidata.org/wiki/Q721645
+# ----
+<https://www.wikidata.org/wiki/Q97784855>
+  # Jeanne de Ventadour, d. 1376-09-19
+  gen:father <https://www.wikidata.org/wiki/Q75403183> ; # Bernard, Vicomte de Ventadour
+  gen:mother <https://www.wikidata.org/wiki/Q75403182> . # Marguerite de Beaumont
+  # oo Godefroy d’Auvergne dit de Boulogne, Seigneur de Montgascon, d. 1384-01-11a/1385-08-19b, https://www.wikidata.org/wiki/Q97784788

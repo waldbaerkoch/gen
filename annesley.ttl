@@ -4,14 +4,14 @@
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
-#<https://www.wikidata.org/wiki/Q5480011>
+<https://www.wikidata.org/wiki/Q5480011>
   # Francis Annesley, 1st Viscount of Valentia, 1584-02-01b - 1660-11-22
-  # 1st Baronet Annesley, of Mountnorris, co. Armagh 1620-08-07
-  # 1st Viscount of Valentia, co. Kerry 1622-03-11
-  # 1st Baron Mountnorris, of Mountnorris, co. Armagh 1629-02-08
-  # son of Robert Annesley
-  # and Beatrix Cornwall
-  # oo Dorothy Philipps, d. 1624-05-03 (devereux.ttl)
+  # 1st Baronet Annesley, of Mountnorris, co. Armagh[Ireland] 1620-08-07
+  # 1st Viscount of Valentia, co. Kerry[Ireland] 1622-03-11
+  # 1st Baron Mountnorris, of Mountnorris, co. Armagh[Ireland] 1629-02-08
+  gen:father <https://www.wikidata.org/wiki/Q75408402> ; # Robert Annesley
+  gen:mother <https://www.wikidata.org/wiki/Q75408404> . # Beatrix Cornwall
+  # oo Dorothy Philipps, d. 1624-05-03
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5480011> , <https://www.wikidata.org/wiki/Q75244624> ;
 	gen:startDate "1608~" .
@@ -28,7 +28,7 @@
 <https://www.wikidata.org/wiki/Q708421>
   # Arthur Annesley, 1st Earl of Anglesey, 1614-07-10 - 1686-04-06
   # 2nd Viscount of Valentia, co. Kerry, 2nd Baron Mountnorris, of Mountnorris, co. Armagh, 2nd Baronet Annesley, of Mountnorris, co. Armagh 1660-11-22
-  # 1st Earl of Anglesey, in Wales, 1st Baron Annesley, of Newport Pagnel, Buckinghamshire 1661-04-20
+  # 1st Earl of Anglesey, in Wales, 1st Baron Annesley, of Newport Pagnel, Buckinghamshire [England] 1661-04-20
   gen:father <https://www.wikidata.org/wiki/Q5480011> ;
   gen:mother <https://www.wikidata.org/wiki/Q75244624> .
   # oo Elizabeth Altham, 1620-01-09 - 1698-01~
@@ -40,11 +40,13 @@
   gen:father <https://www.wikidata.org/wiki/Q5480011> ;
   gen:mother <https://www.wikidata.org/wiki/Q75244624> .
   # oo Charity Warren, daughter of Henry Warren
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75261470> , <https://www.wikidata.org/wiki/Q76198847> .
 <https://www.wikidata.org/wiki/Q75422828>
   # Hon. Beatrice Annesley, 1619-03-27 - 1668-03-26
   gen:father <https://www.wikidata.org/wiki/Q5480011> ;
   gen:mother <https://www.wikidata.org/wiki/Q75244624> .
-  # oo James Zouche, 1615 - 1643, https://www.wikidata.org/wiki/Q75495113
+  # oo James Zouche, 1615 - 1643, https://www.wikidata.org/wiki/Q65645595
   # oo Sir John Lloyd, 1st Baronet, 1617~ – 1664-01-01, https://www.wikidata.org/wiki/Q7527894
   # oo 1664a Sir Thomas Smith, 1st Baronet, 1602~ - 1668-05-05, https://www.wikidata.org/wiki/Q75495091
 <https://www.wikidata.org/wiki/Q75608345>
@@ -77,7 +79,7 @@
   # oo 1668-07-14 John Thompson, 1st Baron Haversham, 1648~ - 1710-11-01, https://www.wikidata.org/wiki/Q75243562
 <https://www.wikidata.org/wiki/Q75243523>
   # Altham Annesley, 1st Baron Altham, 1650b - 1699-04-26
-  # 1st Baron Altham, of Altham, co. Cork 1681-02-14
+  # 1st Baron Altham, of Altham, co. Cork [Ireland] 1681-02-14
   gen:father <https://www.wikidata.org/wiki/Q708421> ;
   gen:mother <https://www.wikidata.org/wiki/Q44961429> .
   # oo Alicia Leigh, 1661~ - 1684-06-04
@@ -103,7 +105,7 @@
   gen:father <https://www.wikidata.org/wiki/Q708421> ;
   gen:mother <https://www.wikidata.org/wiki/Q44961429> .
   # oo 1654 Richard Power, 1st Earl of Tyrone, 1630 - 1690-10-14, https://www.wikidata.org/wiki/Q16863560 (butler.ttl)
-<#Lady_Philippa_Annesley>
+<https://www.wikidata.org/wiki/Q76300955>
   # Lady Philippa Annesley
   gen:father <https://www.wikidata.org/wiki/Q708421> ;
   gen:mother <https://www.wikidata.org/wiki/Q44961429> .
@@ -115,22 +117,26 @@
   # oo 1672b Alexander MacDonnell, 3rd Earl of Antrim, 1615 - 1699-12-10, https://www.wikidata.org/wiki/Q4719470
 <https://www.wikidata.org/wiki/Q75279228>
   # Maurice Annesley, of Little Rath, 1659 - 1718-02-17
-  gen:father <https://www.wikidata.org/wiki/Q75261470> .
-  # and Charity Warren
+  gen:father <https://www.wikidata.org/wiki/Q75261470> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76198847> .
   # oo Hon. Sarah Blayney, 1663 - 1705-07-05 (loftus.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75279228> , <https://www.wikidata.org/wiki/Q76198854> .
+<https://www.wikidata.org/wiki/Q75879924>
+  # Dorothea Annesley
+  gen:father <https://www.wikidata.org/wiki/Q75261470> .
+  # oo Maurice Crosbie, https://www.wikidata.org/wiki/Q75879920 (browne.ttl)
 <https://www.wikidata.org/wiki/Q21166281>
   # Francis Annesley, of Thorganby, 1663-10-24 - 1750-04-07
   gen:father <https://www.wikidata.org/wiki/Q75608345> ;
   gen:mother <https://www.wikidata.org/wiki/Q76198865> .
   # oo Elizabeth Martin, daughter of Sir Joseph Martin
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q21166281> , <#Elizabeth_Martin> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q21166281> , <https://www.wikidata.org/wiki/Q75250816> ;
 	gen:startDate "1695-07-05" .
   # oo Elizabeth Cropley, d. 1736-05-20, daughter of John Cropley
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q21166281> , <#Elizabeth_Cropley> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q21166281> , <https://www.wikidata.org/wiki/Q76268111> ;
 	gen:startDate "1732-07" .
   # oo Sarah Sloane, d. 1763-09-13
   []
@@ -187,7 +193,8 @@
 <https://www.wikidata.org/wiki/Q7323750>
   # Richard Annesley, 6th Earl of Anglesey, 1693~ – 1761-02-14
   # 5th Baron Altham, of Altham, co. Cork 1727-11-16
-  # 7th Viscount of Valentia, co. Kerry, 6th Earl of Anglesey, in Wales, 7th Baron Mountnorris, of Mountnorris, co. Armagh, 7th Baronet Annesley, of Mountnorris, co. Armagh, 6th Baron Annesley, of Newport Pagnel, Buckinghamshire 1737-04-01
+  # 6th Earl of Anglesey, in Wales, 6th Baron Annesley, of Newport Pagnel, Buckinghamshire,
+  # 7th Viscount of Valentia, co. Kerry, 7th Baron Mountnorris, of Mountnorris, co. Armagh, 7th Baronet Annesley, of Mountnorris, co. Armagh 1737-04-01
   gen:father <https://www.wikidata.org/wiki/Q7323747> ;
   gen:mother <https://www.wikidata.org/wiki/Q75243557> .
   # oo Ann Prust, 1694-09-21 - 1741-08~, daughter of John Prust and Mary Ley
@@ -197,7 +204,7 @@
 	gen:separatedDate "1719" .
   # oo Anne Simpson, 1700~ – 1765, daughter of John Simpson
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q7323750> , <#Anne_Simpson> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q7323750> , <https://www.wikidata.org/wiki/Q75244778> ;
 	gen:startDate "1715" .
   # oo Juliana Donovan, d. 1777-02-26, daughter of Richard Donovan and ??? Nixon
   []
@@ -207,8 +214,8 @@
   # Hon. Elizabeth Annesley, 1699~ - 1772-11-05
   gen:father <https://www.wikidata.org/wiki/Q7323747> ;
   gen:mother <https://www.wikidata.org/wiki/Q75243557> .
-  # oo 1737b William Green, 1722b - 1737b
-  # oo 1737-08-16 Maurice Thompson, 2nd Baron Haversham, 1675 - 1745-04-11, https://www.wikidata.org/wiki/Q6793498, son of John Thompson, 1st Baron Haversham and Lady Frances Annesley
+  # oo 1737b William Green, 1722b - 1737b, https://www.wikidata.org/wiki/Q75399136
+  # oo 1737-08-16 Maurice Thompson, 2nd Baron Haversham, 1675 - 1745-04-11, https://www.wikidata.org/wiki/Q6793498
   # oo 1747-02-15 Fitzwilliam White
   # oo 1751-03-12 Samuel Ashurst
 <https://www.wikidata.org/wiki/Q75279227>
@@ -219,14 +226,14 @@
 <https://www.wikidata.org/wiki/Q75250843>
   # Rev. Francis Annesley, 1701b - 1740-05-01
   gen:father <https://www.wikidata.org/wiki/Q21166281> ;
-  gen:mother <#Elizabeth_Martin> .
+  gen:mother <https://www.wikidata.org/wiki/Q75250816> .
   # oo Anne Gayer
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75250843> , <https://www.wikidata.org/wiki/Q76198872> .
 <https://www.wikidata.org/wiki/Q25944460>
   # Rev. Martin Annesley, 1701-10-05 - 1749-06-04
   gen:father <https://www.wikidata.org/wiki/Q21166281> ;
-  gen:mother <#Elizabeth_Martin> .
+  gen:mother <https://www.wikidata.org/wiki/Q75250816> .
   # oo Mary Hanbury, daughter of William Hanbury and Frances Cotton
   []
     gen:spouse <https://www.wikidata.org/wiki/Q25944460> , <https://www.wikidata.org/wiki/Q75762041> ;
@@ -234,7 +241,7 @@
 <https://www.wikidata.org/wiki/Q8004465> # -> Viscount Glerawly
   # William Annesley, 1st Viscount Glerawly, 1710~ - 1770-09-12
   gen:father <https://www.wikidata.org/wiki/Q21166281> ;
-  gen:mother <#Elizabeth_Martin> .
+  gen:mother <https://www.wikidata.org/wiki/Q75250816> .
 
 <https://www.wikidata.org/wiki/Q75358296>
   # Lady Catherine Annesley, 1700-01a/1701-01b - 1736-01-18
@@ -248,8 +255,8 @@
   gen:mother <https://www.wikidata.org/wiki/Q75243565> .
   # oo ??? Chester, d. 1749-12-22
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q6128757> , <#???_Chester> .
-  # oo Margaret l'Anson, d. 1727-08-23
+    gen:spouse <https://www.wikidata.org/wiki/Q6128757> , <https://www.wikidata.org/wiki/Q75243568> .
+  # oo Margaret l’Anson, d. 1727-08-23
   []
     gen:spouse <https://www.wikidata.org/wiki/Q6128757> , <https://www.wikidata.org/wiki/Q75243570> ;
 	gen:startDate "1751-09-14" .
@@ -270,8 +277,9 @@
   # oo John O'Toole, Count O'Toole, of Ballyfad, d. 1823, https://www.wikidata.org/wiki/Q76198830
 <https://www.wikidata.org/wiki/Q4797827>
   # Arthur Annesley, 1st Earl of Mountnorris, 1744-08-07 – 1816-07-04
-  # 8th Baron Mountnorris, of Mountnorris, co. Armagh, 8th Baronet Annesley, of Mountnorris, co. Armagh, 8th Viscount of Valentia, co. Kerry, 6th Baron Altham, of Altham, co. Cork 1761-02-14
-  # 1st Earl of Mountnorris 1793-12-03
+  # 8th Viscount of Valentia, co. Kerry, 8th Baron Mountnorris, of Mountnorris, co. Armagh, 8th Baronet Annesley, of Mountnorris, co. Armagh,
+  # 6th Baron Altham, of Altham, co. Cork 1761-02-14
+  # 1st Earl of Mountnorris [Ireland] 1793-12-03
   gen:father <https://www.wikidata.org/wiki/Q7323750> ;
   gen:mother <https://www.wikidata.org/wiki/Q16245117> .
   # oo Hon. Lucy Lyttelton, 1743-03-13 - 1783-05-20
@@ -294,11 +302,10 @@
   gen:father <https://www.wikidata.org/wiki/Q25944460> ;
   gen:mother <https://www.wikidata.org/wiki/Q75762041> .
 <https://www.wikidata.org/wiki/Q25939378>
-  owl:sameAs <https://www.wikidata.org/wiki/Q75762087> ;
   # Rev. Arthur Henry Annesley, 1735-05-08 - 1792
   gen:father <https://www.wikidata.org/wiki/Q25944460> ;
   gen:mother <https://www.wikidata.org/wiki/Q75762041> .
-<#Elizabeth_Annesley_(died_1816)>
+<https://www.wikidata.org/wiki/Q75762036>
   # Elizabeth Annesley, d. 1816-07-21
   gen:father <https://www.wikidata.org/wiki/Q25944460> ;
   gen:mother <https://www.wikidata.org/wiki/Q75762041> .
@@ -308,7 +315,7 @@
   # James Annesley, 1751b - 1763-11-06
   # 6th Baron Altham, 8th Viscount of Valentia and 7th Earl of Anglesey de jure
   gen:father <https://www.wikidata.org/wiki/Q6128757> ;
-  gen:mother <#???_Chester> .
+  gen:mother <https://www.wikidata.org/wiki/Q75243568> .
 <https://www.wikidata.org/wiki/Q5536270>
   # George Annesley, 2nd Earl of Mountnorris, 1770-12-04 – 1844-07-23
   gen:father <https://www.wikidata.org/wiki/Q4797827> ;
@@ -323,11 +330,10 @@
   gen:mother <https://www.wikidata.org/wiki/Q27089338> .
   # oo 1789-07-04 John Maxwell Barry Maxwell, 5th Baron Farnham, 1767-01-18 – 1838-09-20, https://www.wikidata.org/wiki/Q6247271
 <https://www.wikidata.org/wiki/Q24969377>
-  owl:sameAs <https://www.wikidata.org/wiki/Q76198819> ;
   # Lady Frances Caroline Annesley, 1793-05-28 - 1837-01-22
   gen:father <https://www.wikidata.org/wiki/Q4797827> ;
   gen:mother <https://www.wikidata.org/wiki/Q56867344> .
-  # oo 1810-10-10 Sir James Webster-Wedderburn, 1789 - 1840-08-13, https://www.wikidata.org/wiki/Q76120068
+  # oo 1810-10-10 Sir James Webster-Wedderburn, 1789 - 1840-08-13, https://www.wikidata.org/wiki/Q76120068 (wedderburn.ttl)
 <https://www.wikidata.org/wiki/Q75273953>
   # Lady Catherine Annesley, 1790-07-18/1793-07-18 - 1865-06-25
   gen:father <https://www.wikidata.org/wiki/Q4797827> ;
@@ -392,7 +398,7 @@
   gen:mother <https://www.wikidata.org/wiki/Q75762082> .
   # oo Emily Forster, daughter of Albert Forster
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q75630000> , <#Emily_Forster> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75630000> , <https://www.wikidata.org/wiki/Q75762175> ;
 	gen:startDate "1833-08-03" .
 
 <https://www.wikidata.org/wiki/Q75608338>
@@ -432,7 +438,7 @@
 <https://www.wikidata.org/wiki/Q75762170>
   # Rev. Francis Hanbury Annesley, 1837-12-19 - 1914-05-21
   gen:father <https://www.wikidata.org/wiki/Q75630000> ;
-  gen:mother <#Emily_Forster> .
+  gen:mother <https://www.wikidata.org/wiki/Q75762175> .
   # oo Maria Charlotte Annesley, 1837-04-03 - 1915-02-22
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75762170> , <https://www.wikidata.org/wiki/Q75762172> ;
@@ -442,7 +448,7 @@
   # Arthur Annesley, 11th Viscount of Valentia, 1843-08-23 – 1927-01-20
   gen:father <https://www.wikidata.org/wiki/Q75608338> ;
   gen:mother <https://www.wikidata.org/wiki/Q75969414> .
-  # oo Laura Sarah Webb, 1850-07-23 - 1933-11-16 (gower.ttl)
+  # oo Laura Sarah Webb, 1850-07-23 - 1933-11-16 (dashwood.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q4797826> , <https://www.wikidata.org/wiki/Q75299186> ;
 	gen:startDate "1878-01-30" .
@@ -476,6 +482,11 @@
   # Caryl Arthur Annesley, 12th Viscount of Valentia, 1883-07-03 - 1949-10-06
   gen:father <https://www.wikidata.org/wiki/Q4797826> ;
   gen:mother <https://www.wikidata.org/wiki/Q75299186> .
+<https://www.wikidata.org/wiki/Q75402782>
+  # Hon. Lettice Annesley, 1885-09-24 - 1988
+  gen:father <https://www.wikidata.org/wiki/Q4797826> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75299186> .
+  # oo 1911-10-18 Geoffrey Vaux Salvin Bowlby, 1883-12-01 - 1915-05-13, https://www.wikidata.org/wiki/Q75402814
 <https://www.wikidata.org/wiki/Q76198687>
   # Richard John Dighton Annesley, 15th Viscount of Valentia, 1929-08-15 - 2005
   gen:father <https://www.wikidata.org/wiki/Q76199027> ;
@@ -516,7 +527,7 @@
   gen:father <https://www.wikidata.org/wiki/Q76198692> ;
   gen:mother <https://www.wikidata.org/wiki/Q76198693> .
 <#William_Lester_Dighton_Annesley>
-  # William Lester Dighton Annesley, b.1999
+  # William Lester Dighton Annesley, b. 1999
   gen:father <https://www.wikidata.org/wiki/Q76198699> ;
   gen:mother <https://www.wikidata.org/wiki/Q76198700> .
 <#James_Richard_Dighton_Annesley>
@@ -532,26 +543,26 @@
 # Viscount Glerawly
 <https://www.wikidata.org/wiki/Q8004465>
   # William Annesley, 1st Viscount Glerawly, 1710~ - 1770-09-12
-  # 1st Baron Annesley, of Castle Wellan, co. Down 1758-09-20
-  # 1st Viscount Glerawly, of co. Fermanagh 1766-11-14
+  # 1st Baron Annesley, of Castle Wellan, co. Down [Ireland] 1758-09-20
+  # 1st Viscount Glerawly, of co. Fermanagh [Ireland] 1766-11-14
   gen:father <https://www.wikidata.org/wiki/Q21166281> ;
-  gen:mother <#Elizabeth_Martin> .
+  gen:mother <https://www.wikidata.org/wiki/Q75250816> .
   # oo Lady Anne Beresford, 1718 - 1770-05-12
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q8004465> , <beresford.ttl#Lady_Anne_Beresford> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q8004465> , <https://www.wikidata.org/wiki/Q75270654> ;
 	gen:startDate "1738-08-16" .
 
 <https://www.wikidata.org/wiki/Q75390772>
   # Hon. Catherine Annesley, 1739 - 1770-11-23
   gen:father <https://www.wikidata.org/wiki/Q8004465> ;
-  gen:mother <beresford.ttl#Lady_Anne_Beresford> .
+  gen:mother <https://www.wikidata.org/wiki/Q75270654> .
   # oo 1760-07-14 Arthur Saunders Gore, 2nd Earl of Arran of the Arran Islands, 1734-07-25 – 1809-10-08, https://www.wikidata.org/wiki/Q4798851
 <https://www.wikidata.org/wiki/Q16151251>
   # Francis Charles Annesley, 1st Earl Annesley, 1740-11-27 – 1802-12-19
   # 2nd Viscount Glerawly, of co. Fermanagh, 2nd Baron Annesley, of Castle Wellan, co. Down 1770-09-12
-  # 1st Earl Annesley, of Castlewellan, co. Down 1789-08-17
+  # 1st Earl Annesley, of Castlewellan, co. Down [Ireland] 1789-08-17
   gen:father <https://www.wikidata.org/wiki/Q8004465> ;
-  gen:mother <beresford.ttl#Lady_Anne_Beresford> .
+  gen:mother <https://www.wikidata.org/wiki/Q75270654> .
   # oo Mary Grove, d. 1791-08-25, daughter of Robert Grove and Mary Ryland
   []
     gen:spouse <https://www.wikidata.org/wiki/Q16151251> , <https://www.wikidata.org/wiki/Q75250890> ;
@@ -559,7 +570,7 @@
 <https://www.wikidata.org/wiki/Q7323748>
   # Richard Annesley, 2nd Earl Annesley, 1745-04-14 – 1824-11-09
   gen:father <https://www.wikidata.org/wiki/Q8004465> ;
-  gen:mother <beresford.ttl#Lady_Anne_Beresford> .
+  gen:mother <https://www.wikidata.org/wiki/Q75270654> .
   # oo Anne Lambert, 1752 - 1822-06-30
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7323748> , <https://www.wikidata.org/wiki/Q75352599> ;
@@ -568,14 +579,14 @@
   # Very Rev. Hon. William Annesley, 1747-03-03 - 1817-06-11
   # Dean of Down
   gen:father <https://www.wikidata.org/wiki/Q8004465> ;
-  gen:mother <beresford.ttl#Lady_Anne_Beresford> .
+  gen:mother <https://www.wikidata.org/wiki/Q75270654> .
   # oo Jane Digby, 1759 - 1761
 
 <https://www.wikidata.org/wiki/Q8004467>
   # William Richard Annesley, 3rd Earl Annesley, 1772-07-16 – 1838-08-25
   gen:father <https://www.wikidata.org/wiki/Q7323748> ;
   gen:mother <https://www.wikidata.org/wiki/Q75352599> .
-  # oo Lady Isabella St. Lawrence, 1783~ - 1827-04 (gore.ttl)
+  # oo Lady Isabella St. Lawrence, 1783~ - 1827-04 (plunkett.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q8004467> , <https://www.wikidata.org/wiki/Q75250993> ;
 	gen:startDate "1803-05-19" ;
@@ -612,7 +623,7 @@
   # Lady Catherine Annesley, d. 1830-07-10/-16
   gen:father <https://www.wikidata.org/wiki/Q7323748> ;
   gen:mother <https://www.wikidata.org/wiki/Q75352599> .
-  # oo 1802 Sir Neal O'Donnell, 2nd Baronet, d. 1827-03-01, https://www.wikidata.org/wiki/Q76103920
+  # oo 1802 Sir Neal O'Donnell, 2nd Baronet, 1780~ - 1827-03-01, https://www.wikidata.org/wiki/Q76103920
 
 <https://www.wikidata.org/wiki/Q8004468>
   # William Richard Annesley, 4th Earl Annesley, 1830-02-21 – 1874-08-10
@@ -702,17 +713,17 @@
   gen:father <https://www.wikidata.org/wiki/Q5929861> ;
   gen:mother <https://www.wikidata.org/wiki/Q75315730> .
   # oo 1915-05-06 (div 1924) William Miles Malleson, 1888-05-25 - 1969-03-15, https://www.wikidata.org/wiki/Q440360
-<#Walter_Beresford_Annesley,_7th_Earl_Annesley>
+<https://www.wikidata.org/wiki/Q23015258>
   # Walter Beresford Annesley, 7th Earl Annesley, 1861-02-10 - 1934-07-07
   gen:father <https://www.wikidata.org/wiki/Q75251200> ;
   gen:mother <https://www.wikidata.org/wiki/Q75251278> .
   # oo Maud Fleming Higginson, d. 1923-07-02
   []
-    gen:spouse <#Walter_Beresford_Annesley,_7th_Earl_Annesley> , <https://www.wikidata.org/wiki/Q75251316> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q23015258> , <https://www.wikidata.org/wiki/Q75251316> ;
 	gen:startDate "1893-06-21" .
   # oo Mabel Frances Burnett, 1866~ - 1931-07-10
   []
-    gen:spouse <#Walter_Beresford_Annesley,_7th_Earl_Annesley> , <https://www.wikidata.org/wiki/Q75251320> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q23015258> , <https://www.wikidata.org/wiki/Q75251320> ;
 	gen:startDate "1924-01-23" .
 <https://www.wikidata.org/wiki/Q75251455>
   # Arthur Adolphus Annesley, 1833-02-23 - 1887-05-04
@@ -751,7 +762,7 @@
   # Richard Arthur Grove Annesley, 1879-06-20 - 1966-02-04
   gen:father <https://www.wikidata.org/wiki/Q75252789> ;
   gen:mother <https://www.wikidata.org/wiki/Q75252805> .
-  # oo Hilda Margaret Workman-Macnaghten, 1868-12-23 - 1961-03-04
+  # oo Hilda Margaret Workman-Macnaghten, 1868-12-23 - 1961-03-04 (taylour.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75252815> , <https://www.wikidata.org/wiki/Q75252818> ;
 	gen:startDate "1907-03-07" .
@@ -772,7 +783,7 @@
 
 <https://www.wikidata.org/wiki/Q21557226>
   # Beresford Cecil Bingham Annesley, 8th Earl Annesley, 1894-04-04 - 1957-06-29
-  gen:father <#Walter_Beresford_Annesley,_7th_Earl_Annesley> ;
+  gen:father <https://www.wikidata.org/wiki/Q23015258> ;
   gen:mother <https://www.wikidata.org/wiki/Q75251316> .
   # oo Edith Constance Rawlinson, d. 1950-07-07
   []
@@ -852,7 +863,7 @@
   # Patricia Moyra Annesley, b. 1904-04-26
   gen:father <https://www.wikidata.org/wiki/Q75252492> ;
   gen:mother <https://www.wikidata.org/wiki/Q75252496> .
-  # oo 1926-02-04 Sir Henry Nigel St. Valery Norman, 2nd Baronet, 1897-05-21 – 1943-05-19, https://www.wikidata.org/wiki/Q15968671
+  # oo 1926-02-04 Sir Henry Nigel St. Valery Norman, 2nd Baronet, 1897-05-21 – 1943-05-19, https://www.wikidata.org/wiki/Q15968671 (montague.ttl)
 <https://www.wikidata.org/wiki/Q75253345>
   # Arthur Noël Grove Annesley, b. 1941-12-28
   gen:father <https://www.wikidata.org/wiki/Q75253254> ;
@@ -945,34 +956,32 @@
   # oo 1637-08-08 Richard Vaughan, 2nd Earl of Carbery, 1600 - 1686-12-03, https://www.wikidata.org/wiki/Q7329640 (egerton.ttl)
 
 # ----
-<https://www.wikidata.org/wiki/Q75495113>
-  owl:sameAs <https://www.wikidata.org/wiki/Q75398780> .
+#<https://www.wikidata.org/wiki/Q65645595>
   # Sir Edward Zouch of Woking, d. 1634
   # son of Sir Willam Zouch
   # oo Dorothea Silking, 1608b - 1640
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q75495113> , <https://www.wikidata.org/wiki/Q66371358> .
+    gen:spouse <https://www.wikidata.org/wiki/Q65645595> , <https://www.wikidata.org/wiki/Q66371358> .
 
-<https://www.wikidata.org/wiki/Q75495113>
+<https://www.wikidata.org/wiki/Q65645595>
   # James Zouche, 1615 - 1643
-  gen:father <https://www.wikidata.org/wiki/Q75495113> ;
+  gen:father <https://www.wikidata.org/wiki/Q65645595> ;
   gen:mother <https://www.wikidata.org/wiki/Q66371358> .
   # oo Hon. Beatrice Annesley, 1619-03-27 - 1668-03-26
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q75495113> , <https://www.wikidata.org/wiki/Q75422828> .
+    gen:spouse <https://www.wikidata.org/wiki/Q65645595> , <https://www.wikidata.org/wiki/Q75422828> .
 <https://www.wikidata.org/wiki/Q75257533>
   gen:name "Sophia Zouche"@en ;
   gen:birthDate "1618~" ;
   gen:deathDate "1691-11-12" ;
-  gen:father <https://www.wikidata.org/wiki/Q75495113> ;
+  gen:father <https://www.wikidata.org/wiki/Q65645595> ;
   gen:mother <https://www.wikidata.org/wiki/Q66371358> .
   # oo 1635-09 Edward Cecil, 1st Viscount Wimbledon, 1572-02-29 - 1638-11-16, https://www.wikidata.org/wiki/Q2976180
 
 # ----
-<https://www.wikidata.org/wiki/Q7527894>
-  owl:sameAs <https://www.wikidata.org/wiki/Q75422825> .
+#<https://www.wikidata.org/wiki/Q7527894>
   # Sir John Lloyd, 1st Baronet, 1617~ – 1664-01-01
-  # 1st Baronet Lloyd, of Woking Surrey, Surrey and of the Forest, co. Carmarthen 1662
+  # 1st Baronet Lloyd, of Woking Surrey, Surrey and of the Forest, co. Carmarthen [England] 1662-02-28
   # oo Hon. Beatrice Annesley, 1619-03-27 - 1668-03-26
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7527894> , <https://www.wikidata.org/wiki/Q75422828> .
@@ -980,7 +989,7 @@
 # ----
 #<https://www.wikidata.org/wiki/Q75495091>
   # Sir Thomas Smith, 1st Baronet, 1602~ - 1668-05-05
-  # 1st Baronet Smith, of Hill Hall, co. Essex 1661-11-28
+  # 1st Baronet Smith, of Hill Hall, co. Essex [England] 1661-11-28
   # son of Sir William Smith
   # and Bridget Fleetwood
   # oo Hon. Beatrice Annesley, 1619-03-27 - 1668-03-26
@@ -990,17 +999,29 @@
 
 # ----
 <https://www.wikidata.org/wiki/Q11800661>
-  owl:sameAs <https://www.wikidata.org/wiki/Q75243562> ;
   # John Thompson, 1st Baron Haversham, 1648~ - 1710-11-01
-  # 1st Baronet Thompson, of Haversham, co. Buckingham 1673-12-12
-  # 1st Baron Haversham, of Haversham, co. Buckingham 1696-05-04
-  gen:father <https://www.wikidata.org/wiki/Q18922148> .
-  # and Dorothy Vaux
+  # 1st Baronet Thompson, of Haversham, co. Buckingham [England] 1673-12-12
+  # 1st Baron Haversham, of Haversham, co. Buckingham [England] 1696-05-04
+  gen:father <https://www.wikidata.org/wiki/Q18922148> ; # Maurice Thomson
+  gen:mother <https://www.wikidata.org/wiki/Q75399128> . # Dorothy Vaux
   # oo Lady Frances Annesley, 1648~ - 1705-03-03
   []
     gen:spouse <https://www.wikidata.org/wiki/Q11800661> , <https://www.wikidata.org/wiki/Q75243564> ;
 	gen:startDate "1668-07-14" .
 
+<https://www.wikidata.org/wiki/Q6793498>
+  # Maurice Thompson, 2nd Baron Haversham, 1675 - 1745-04-11
+  gen:father <https://www.wikidata.org/wiki/Q11800661> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75243564> .
+  # oo Hon. Elizabeth Annesley, 1699~ - 1772-11-05
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6793498> , <https://www.wikidata.org/wiki/Q75399135> ;
+	gen:startDate "1737-08-16" .
+<https://www.wikidata.org/wiki/Q75399155>
+  # Hon. Martha Thompson, 1675~ - 1715-02-09
+  gen:father <https://www.wikidata.org/wiki/Q11800661> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75243564> .
+  # oo 1704-04-28 Sir John Every, 4th Baronet, 1654~ - 1729-07-01, https://www.wikidata.org/wiki/Q75399156 (herbert.ttl)
 <https://www.wikidata.org/wiki/Q75243561>
   # Hon. Phillips Thompson, d. 1704-05
   gen:father <https://www.wikidata.org/wiki/Q11800661> ;
@@ -1016,20 +1037,22 @@
 #<https://www.wikidata.org/wiki/Q16844007>
   # Reginald Mohun, of Hall and Boconnoc, 1507/1508 – 1567-04-22
   # oo Jone Trevanion, daughter of Sir William Trevanion
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16844007> , <https://www.wikidata.org/wiki/Q111506586> .
 
 <https://www.wikidata.org/wiki/Q8015707>
   # Sir William Mohun, 1540~ – 1588-04-06
-  gen:father <https://www.wikidata.org/wiki/Q16844007>.
-  # and Jone Trevanion
+  gen:father <https://www.wikidata.org/wiki/Q16844007> ;
+  gen:mother <https://www.wikidata.org/wiki/Q111506586> .
   # oo Elizabeth Horsey
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q8015707> , <#Elizabeth_Horsey> .
+    gen:spouse <https://www.wikidata.org/wiki/Q8015707> , <https://www.wikidata.org/wiki/Q111506519> .
 
 <https://www.wikidata.org/wiki/Q28322771>
   # Sir Reginald Mohun, 1st Baronet, 1565~ - 1639-12-26
-  # 1st Baronet Mohun, of Boconnock 1612-11-25
+  # 1st Baronet Mohun, of Boconnoc in the County of Cornwall [England] 1611-11-25
   gen:father <https://www.wikidata.org/wiki/Q8015707> ;
-  gen:mother <#Elizabeth_Horsey> .
+  gen:mother <https://www.wikidata.org/wiki/Q111506519> .
   # oo Phillippa Hele, 1580b - 1603b, daughter of John Hele and Mary Warwick
   []
     gen:spouse <https://www.wikidata.org/wiki/Q28322771> , <#Phillippa_Hele> ;
@@ -1037,7 +1060,8 @@
 
 <https://www.wikidata.org/wiki/Q6249082>
   # John Mohun, 1st Lord Mohun of Okehampton, 1592~ - 1641-03-28
-  # 1st Lord Mohun of Okehampton 1628-04-15
+  # 1st Lord Mohun of Okehampton [England] 1628-04-15
+  # 2nd Baronet Mohun 1639-12-26
   gen:father <https://www.wikidata.org/wiki/Q28322771> ;
   gen:mother <#Phillippa_Hele> .
   # oo Cordelia Stanhope, b. 1585
@@ -1054,27 +1078,68 @@
   # Warwick Mohun, 2nd Baron Mohun of Okehampton, 162ß-05-25 - 1665-05
   gen:father <https://www.wikidata.org/wiki/Q6249082> ;
   gen:mother <https://www.wikidata.org/wiki/Q76178198> .
+<https://www.wikidata.org/wiki/Q75535551>
+  # Hon. Theophila Mohun, 1615~ -
+  gen:father <https://www.wikidata.org/wiki/Q6249082> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76178198> .
+  # oo 1638-11-08 James Cambell, 1615 - 1659, https://www.wikidata.org/wiki/Q75535550
 
 <https://www.wikidata.org/wiki/Q75914622>
   # Charles Mohun, 3rd Baron Mohun of Okehampton, 1645~ - 1677-09-29
   gen:father <https://www.wikidata.org/wiki/Q7971159> .
   # oo Lady Philippa Annesley
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q75914622> , <#Lady_Philippa_Annesley> .
+    gen:spouse <https://www.wikidata.org/wiki/Q75914622> , <https://www.wikidata.org/wiki/Q76300955> .
 # ----
-<#Elizabeth_Horsey>
+<https://www.wikidata.org/wiki/Q111506519>
   # Elizabeth Horsey
-  gen:father <https://www.wikidata.org/wiki/Q6239915> .
+  gen:father <https://www.wikidata.org/wiki/Q6239915> ; # John Horsey
+  gen:mother <https://www.wikidata.org/wiki/Q111506555> . # Edith Phelips
   # oo Sir William Mohun, 1540~ – 1588-04-06, https://www.wikidata.org/wiki/Q8015707
+# ----
+#<https://www.wikidata.org/wiki/Q75535550>
+  # James Cambell, 1615 - 1659
+  # son of Robert Cambell
+  # and Alice Willington
+  # oo Hon. Theophila Mohun, 1615~ -
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75535550> , <https://www.wikidata.org/wiki/Q75535551> ;
+	gen:startDate "1638-11-08" .
+
+<https://www.wikidata.org/wiki/Q75535558>
+  # Theophila Cambell, d. 1672b
+  gen:father <https://www.wikidata.org/wiki/Q75535550> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75535551> .
+  # oo 1658-11-28 Sir John Corbet, 3rd Baronet, 1645~ – 1695, https://www.wikidata.org/wiki/Q75535561 (wilbraham.ttl)
 
 # ----
 #<https://www.wikidata.org/wiki/Q43012185>
   # Sarah Sloane, d. 1763-09-13
-  # daughter of William Sloane and Jane Hamilton
+  # daughter of William Sloane
+  # and Jane Hamilton
   # oo 1737b Sir Richard Fowler, 2nd Baronet, 1681 – 1731, https://www.wikidata.org/wiki/Q16887510 (paget.ttl)
   # oo 1737-08-21 Francis Annesley, of Thorganby, 1663-10-24 - 1750-04-07, https://www.wikidata.org/wiki/Q21166281
 
 # ----
+#<https://www.wikidata.org/wiki/Q75399136>
+  # William Green, 1722b - 1737b
+  # oo Hon. Elizabeth Annesley, 1699~ - 1772-11-05
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75399136> , <https://www.wikidata.org/wiki/Q75399135> ;
+	gen:startDate "1737b" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q75654168>
+  # Sir Robert Gayer, d. 1702-06-14
+  # son of John Gayer
+  # oo Mary Rich´(bertie.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75654168> , <https://www.wikidata.org/wiki/Q76294896> .
+  # oo Lady Christian Bruce, d. 1720-04-05
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75654168> , <https://www.wikidata.org/wiki/Q75654164> ;
+	gen:startDate "1689a" .
+
 <https://www.wikidata.org/wiki/Q76198741>
   # Robert Gayer, of Stoke Poges
   gen:father <https://www.wikidata.org/wiki/Q75654168> .
@@ -1100,7 +1165,7 @@
 
 <https://www.wikidata.org/wiki/Q5163841>
   # Constantine Phipps, 1st Baron Mulgrave of New Ross, 1722-08-22 - 1775-09-13
-  # 1st Baron Mulgrave of New Ross, co. Wexford 1767-09-03
+  # 1st Baron Mulgrave of New Ross, co. Wexford [Ireland] 1767-09-03
   gen:father <https://www.wikidata.org/wiki/Q75358298> ;
   gen:mother <https://www.wikidata.org/wiki/Q275061> .
   # oo Hon. Lepell Hervey, 1723-04-15 - 1780-03-11
@@ -1112,15 +1177,15 @@
   # Constantine John Phipps, 2nd Baron Mulgrave of New Ross, 1744-05-30 - 1792-10-10
   gen:father <https://www.wikidata.org/wiki/Q5163841> ;
   gen:mother <https://www.wikidata.org/wiki/Q75317274> .
-  # oo Anne Elizabeth Cholmley, d. 1788-05-22, daughter of Nathaniel Cholmley and Anne Jesse Smelt
+  # oo Anne Elizabeth Cholmley, d. 1788-05-22 (clifford.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q335143> , <https://www.wikidata.org/wiki/Q75358315> ;
 	gen:startDate "1787-06-20" .
 <https://www.wikidata.org/wiki/Q332654>
   # Henry Phipps, 1st Earl of Mulgrave, 1755-02-14 - 1831-04-07
   # 3rd Baron Mulgrave of New Ross, co. Wexford 1792-10-10
-  # 1st Baron Mulgrave of Mulgrave, co. York 1794-08-13
-  # 1st Earl of Mulgrave, co. York, 1st Viscount Normanby of Normanby, co. York 1812-09-07
+  # 1st Baron Mulgrave of Mulgrave, co. York [Great Britain] 1794-08-13
+  # 1st Earl of Mulgrave, co. York, 1st Viscount Normanby of Normanby, co. York [U.K.] 1812-09-07
   gen:father <https://www.wikidata.org/wiki/Q5163841> ;
   gen:mother <https://www.wikidata.org/wiki/Q75317274> .
   # oo Martha Sophia Maling, d. 1849-03-17, daughter of Christopher Thompson Maling
@@ -1141,7 +1206,7 @@
 <https://www.wikidata.org/wiki/Q338153>
   # Constantine Henry Phipps, 1st Marquess of Normanby, 1797-05-15 - 1863-07-28
   # 2nd Viscount Normanby of Normanby, co. York, 2nd Baron Mulgrave of Mulgrave, co. York, 2nd Earl of Mulgrave, co. York, 4th Baron Mulgrave of New Ross, co. York 1831-04-07
-  # 1st Marquess of Normanby, co. York 1838-06-25
+  # 1st Marquess of Normanby, co. York [U.K.] 1838-06-25
   gen:father <https://www.wikidata.org/wiki/Q332654> ;
   gen:mother <https://www.wikidata.org/wiki/Q41307085> .
   # oo Hon. Maria Liddell, 1798-04-20 - 1882-10-20
@@ -1217,26 +1282,72 @@
 # ====
 
 # ----
-#<https://www.wikidata.org/wiki/Q75243571>
-  # Sir Thomas l'Anson, 4th Baronet, 1702 - 1764-06-10
-  # son of Sir Thomas l'Anson, 3rd Baronet
-  # and Dorothy Rokeby
+#<https://www.wikidata.org/wiki/Q76296611>
+  # Sir Bryan l’Anson, 1st Baronet, 1590~ - 1665
+  # 1st Baronet l’Anson of Bassetbury [England] 1652-05-06
+  # son of Brian l’Anson
+  # oo Mary Byars
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76296611> , <#Mary_Byars> ;
+	gen:startDate "1616" .
+
+<https://www.wikidata.org/wiki/Q76296613>
+  # Sir Henry l’Anson, 2nd Baronet, 1617 - 1684
+  gen:father <https://www.wikidata.org/wiki/Q76296611> ;
+  gen:mother <#Mary_Byars> .
+  # oo Mary Elmes, b. 1626
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76296613> , <#Mary_Elmes> ;
+	gen:startDate "1647" .
+
+<https://www.wikidata.org/wiki/Q76241525>
+  # Sir Thomas l’Anson, 3rd Baronet, 1648 - 1707-12-28
+  gen:father <https://www.wikidata.org/wiki/Q76296613> ;
+  gen:mother <#Mary_Elmes> .
+  # oo Dorothy Rokeby, 1675-03-02 - 1744-07-27, daughter of William Rokeby of Ashwell Park and Skellow Hall in the Coun. of York, Esq. and Emma Bury
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76241525> , <https://www.wikidata.org/wiki/Q76241526> ;
+	gen:startDate "1696" .
+
+<https://www.wikidata.org/wiki/Q75243571>
+  # Sir Thomas l’Anson, 4th Baronet, 1702 - 1764-06-10
+  gen:father <https://www.wikidata.org/wiki/Q76241525> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76241526> .
   # oo Mary Bankes, 1693-12-10 - 1774-01-26, daughter of John Bankes and Margaret Parker
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q75243571> , <#Mary_Bankes> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75243571> , <https://www.wikidata.org/wiki/Q75237602> ;
 	gen:startDate "1723-03-27" .
 
 <https://www.wikidata.org/wiki/Q75243570>
-  # Margaret l'Anson, d. 1727-08-23
+  # Margaret l’Anson, d. 1727-08-23
   gen:father <https://www.wikidata.org/wiki/Q75243571> ;
-  gen:mother <#Mary_Bankes> .
+  gen:mother <https://www.wikidata.org/wiki/Q75237602> .
   # oo 1751-09-14 James Annesley, 1715 - 1760-01-05, https://www.wikidata.org/wiki/Q6128757
+<https://www.wikidata.org/wiki/Q76241528>
+  # Sir Thomas Bankes l’Anson, 5th Baronet, 1724-03-30 - 1799-01-25
+  gen:father <https://www.wikidata.org/wiki/Q75243571> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75237602> .
+  # oo Mary Hayter, 1732 - 1782
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76241528> , <https://www.wikidata.org/wiki/Q76241529> ;
+	gen:startDate "1753-05-24" .
+<https://www.wikidata.org/wiki/Q76241531>
+  # Rev. Sir John l’Anson, 6th Baronet, 1733-09-01 - 1800-03-03
+  gen:father <https://www.wikidata.org/wiki/Q75243571> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75237602> .
+  # oo Mary Fyler, 1738 - 1765-06-30
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76241531> , <https://www.wikidata.org/wiki/Q76241532> ;
+	gen:startDate "1762-03-16" .
+  # oo Mary Harper, 1745 - 1770-07-15
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76241531> , <https://www.wikidata.org/wiki/Q76241533> ;
+	gen:startDate "1766-08-16" .
 
 # ----
-<https://www.wikidata.org/wiki/Q5497778>
-  owl:sameAs <https://www.wikidata.org/wiki/Q75627216> .
+#<https://www.wikidata.org/wiki/Q5497778>
   # Sir Frederick Flood, of Newtown Ormonde, 1st Baronet, 1741 - 1824-02-01
-  # 1st Baronet Flood 1780-06-03
+  # 1st Baronet Flood [Ireland] 1780-06-03
   # son of John Flood
   # oo Hon. Juliana Annesley, d. 1768-04
   []
@@ -1251,49 +1362,39 @@
     gen:spouse <https://www.wikidata.org/wiki/Q76198830> , <https://www.wikidata.org/wiki/Q76198829> .
 
 # ----
-#<https://www.wikidata.org/wiki/Q76120068>
-  # Sir James Webster-Wedderburn, 1789 - 1840-08-13
-  # son of David Webster-Wedderburn
-  # and Elizabeth Read
-  # oo Lady Frances Caroline Annesley, 1793-05-28 - 1837-01-22
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q76120068> , <https://www.wikidata.org/wiki/Q24969377> ;
-	gen:startDate "1810-10-10" .
-
-# ----
 #<https://www.wikidata.org/wiki/Q75762030>
   # George Booth Tyndale, 1743-09-08 - 1779-12-28
   # son of George Tyndale
   # and Vere Booth
   # oo Elizabeth Annesley, d. 1816-07-21
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q75762030> , <#Elizabeth_Annesley_(died_1816)> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75762030> , <https://www.wikidata.org/wiki/Q75762036> ;
 	gen:startDate "1771-06-20" .
 
 <https://www.wikidata.org/wiki/Q75762082>
   # Elizabeth Vere Tyndale, d. 1865-06-15
   gen:father <https://www.wikidata.org/wiki/Q75762030> ;
-  gen:mother <#Elizabeth_Annesley_(died_1816)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75762036> .
   # oo 1800-01-14 Rev. Arthur Annesley, 1769-10-30 - 1845-02-09, https://www.wikidata.org/wiki/Q75762085
-<#Thomas_George_Tyndale>
+<https://www.wikidata.org/wiki/Q75762052>
   # Rev. Thomas George Tyndale, 1777-06-17 - 1865-05-19
   gen:father <https://www.wikidata.org/wiki/Q75762030> ;
-  gen:mother <#Elizabeth_Annesley_(died_1816)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75762036> .
   # oo Mary Anne Earle, d. 1826-07-22, daughter of Timothy Hare Earle and Ann Biscoe
   []
-    gen:spouse <#Thomas_George_Tyndale> , <#Mary_Anne_Earle> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75762052> , <https://www.wikidata.org/wiki/Q75762054> ;
 	gen:startDate "1809-02" .
 
 <https://www.wikidata.org/wiki/Q76002815>
   # Elizabeth Vere Tyndale, 1812-01-13 - 1902-02-10
-  gen:father <#Thomas_George_Tyndale> ;
-  gen:mother <#Mary_Anne_Earle> .
+  gen:father <https://www.wikidata.org/wiki/Q75762052> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75762054> .
   # oo 1838-06-02 Arthur Annesley, 1803-05-01 - 1883-08-11, https://www.wikidata.org/wiki/Q75608341
 
 # ----
 <https://www.wikidata.org/wiki/Q75762181>
   # Charlotte Mogg, d. 1837-06-27
-  gen:father <https://www.wikidata.org/wiki/Q75762183> .
+  gen:father <https://www.wikidata.org/wiki/Q75762183> . # Henry Hodges Mogg
   # oo 1836-05-03 Rev. Francis Annesley, 1800-12-08 - 1882-08-02, https://www.wikidata.org/wiki/Q75762179
 
 # ----
@@ -1306,19 +1407,35 @@
 # ----
 <https://www.wikidata.org/wiki/Q336750>
   # Hercules George Robert Robinson, 1st Baron Rosmead, 1824-12-19 – 1897-10-28
-  # 1st Baronet Robinson 1891-02-06
-  # 1st Baron Rosmead, of Rosmead in co. of Westmeath and of Tafeberg in South Africa 1896-08-11
-  gen:father <https://www.wikidata.org/wiki/Q18730441> .
-  # and Frances Elizabeth Wildman-Wood
+  # 1st Baronet Robinson [U.K.] 1891-02-06
+  # 1st Baron Rosmead, of Rosmead in co. of Westmeath and of Tafeberg in South Africa [U.K.] 1896-08-11
+  gen:father <https://www.wikidata.org/wiki/Q18730441> ; # Hercules Robinson
+  gen:mother <https://www.wikidata.org/wiki/Q75608331> . # Frances Elizabeth Wildman-Wood
   # oo Hon. Nea Arthur Ada Rose d'Amour Annesley, d. 1904-01-13
   []
     gen:spouse <https://www.wikidata.org/wiki/Q336750> , <https://www.wikidata.org/wiki/Q75608363> ;
 	gen:startDate "1846-04-24" .
 
 # ----
+#<https://www.wikidata.org/wiki/Q75402814>
+  # Geoffrey Vaux Salvin Bowlby, 1883-12-01 - 1915-05-13
+  # son of Edward Salvin Bowlby
+  # and Elizabeth Vans Agnew
+  # oo Hon. Lettice Annesley, 1885-09-24 - 1988
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75402814> , <https://www.wikidata.org/wiki/Q75402782> ;
+	gen:startDate "1911-10-18" .
+
+<https://www.wikidata.org/wiki/Q75280752>
+  # Elizabeth Mary Bowlby, 1913-02-03 - 2009-01-26
+  gen:father <https://www.wikidata.org/wiki/Q75402814> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75402782> .
+  # oo 1940-07-30 Anthony Brabazon, 14th Earl of Meath, 1910-11-03 - 1998-12-19, https://www.wikidata.org/wiki/Q62027438
+
+# ----
 #<https://www.wikidata.org/wiki/Q7528667>
   # Sir Richard Hilton Marler Thompson, 1st Baronet, 1912-10-05 – 1999-07-15
-  # 1st Baronet Thompson, of Reculver, Kent 1963-01-28
+  # 1st Baronet Thompson, of Reculver, Kent [U.K.] 1963-01-28
   # son of Richard Smith Thompson
   # and Kathleen Hilda Marler
   # oo Anne Christabel de Vere Annesley, 1909-01-02 - 2003-02-08
@@ -1329,52 +1446,61 @@
 # ----
 <https://www.wikidata.org/wiki/Q75352599>
   # Anne Lambert, 1752 - 1822-06-30
-  gen:father <https://www.wikidata.org/wiki/Q75352600> .
-  # and Alice Vaughan
+  gen:father <https://www.wikidata.org/wiki/Q75352600> ; # Robert Lambert
+  gen:mother <https://www.wikidata.org/wiki/Q75250989> . # Alice Vaughan
   # oo 1771-09-25 Richard Annesley, 2nd Earl Annesley, 1745-04-14 – 1824-11-09, https://www.wikidata.org/wiki/Q7323748
 
 # ----
-#<#Hugh_Moore>
+#<https://www.wikidata.org/wiki/Q75251000>
   # Hugh Moore, 1782 - 1848-07-29
   # oo Priscilla Cecilia Armitage, daughter of Robert Armitage
   []
-    gen:spouse <#Hugh_Moore> , <#Priscilla_Cecilia_Armitage> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75251000> , <https://www.wikidata.org/wiki/Q75251011> ;
 	gen:startDate "1798-11-07" .
 
-<#William_Armitage_Moore>
+<https://www.wikidata.org/wiki/Q75315731>
   # William Armitage Moore, 1806-10-07 - 1883-02-17
-  gen:father <#Hugh_Moore> ;
-  gen:mother <#Priscilla_Cecilia_Armitage> .
+  gen:father <https://www.wikidata.org/wiki/Q75251000> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75251011> .
   # oo Mary Metcalfe, daughter of W. H. Metcalfe
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75315731> , <https://www.wikidata.org/wiki/Q75251120> .
 <https://www.wikidata.org/wiki/Q75250999>
   # Priscilla Cecilia Moore, 1808-09-08 - 1891-03-29
-  gen:father <#Hugh_Moore> ;
-  gen:mother <#Priscilla_Cecilia_Armitage> .
+  gen:father <https://www.wikidata.org/wiki/Q75251000> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75251011> .
   # oo 1828-07-15 William Richard Annesley, 3rd Earl Annesley, 1772-07-16 – 1838-08-25, https://www.wikidata.org/wiki/Q8004467
 
 <https://www.wikidata.org/wiki/Q75315730>
   # Priscilla Cecilia Moore, d. 1941-10-09
-  gen:father <#William_Armitage_Moore> .
-  # and Mary Metcalfe
+  gen:father <https://www.wikidata.org/wiki/Q75315731> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75251120> .
   # oo 1892-07-02 Hugh Annesley, 5th Earl Annesley, 1831-01-26 – 1908-12-15, https://www.wikidata.org/wiki/Q5929861
 
 # ----
 <https://www.wikidata.org/wiki/Q75352594>
   # Mary Radcliffe, d. 1854-12
-  gen:father <https://www.wikidata.org/wiki/Q75352596> .
+  gen:father <https://www.wikidata.org/wiki/Q75352596> . # William Radcliffe
   # oo 1813-07-31 Francis Charles Annesley, 1775-11-21 - 1832-08-05, https://www.wikidata.org/wiki/Q75352593
 
 # ----
 #<https://www.wikidata.org/wiki/Q75584036>
   # Sir Neal O'Donnell, 1st Baronet, d. 1811
-  # 1st Baronet O'Donnell 1780-12-02
+  # 1st Baronet O'Donnell [Ireland] 1780-12-02
+  # son of Hugh Mór O'Donnell
+  # and Maud Brown
   # oo Mary Coane, daughter of William Coane
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75584036> , <https://www.wikidata.org/wiki/Q76085952> ;
 	gen:startDate "1766" .
 
+<https://www.wikidata.org/wiki/Q76261499>
+  # Margaret O'Donnell, 1765-12-26 -
+  gen:father <https://www.wikidata.org/wiki/Q75584036> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76085952> .
+  # oo 1785 Sir Capel Molyneux, 4th Baronet, 1750-03-30 - 1832-12-03, https://www.wikidata.org/wiki/Q75978525
 <https://www.wikidata.org/wiki/Q76103920>
-  # Sir Neal O'Donnell, 2nd Baronet, d. 1827-03-01
+  # Sir Neal O'Donnell, 2nd Baronet, 1780~ - 1827-03-01
   gen:father <https://www.wikidata.org/wiki/Q75584036> ;
   gen:mother <https://www.wikidata.org/wiki/Q76085952> .
   # oo Lady Catherine Annesley, d. 1830-07-10/-16
@@ -1390,21 +1516,21 @@
 # ----
 <https://www.wikidata.org/wiki/Q56867331>
   # Mabel Wilhelmina Frances Markham, 1858-04-05 - 1891-04-17
-  gen:father <https://www.wikidata.org/wiki/Q61403782> .
-  # and Ann Emily Sophia Grant
+  gen:father <https://www.wikidata.org/wiki/Q61403782> ; # William Markham
+  gen:mother <https://www.wikidata.org/wiki/Q75251075> . # Ann Emily Sophia Grant
   # oo 1877-07-04 Hugh Annesley, 5th Earl Annesley, 1831-01-26 – 1908-12-15, https://www.wikidata.org/wiki/Q5929861
 
 # ----
 <https://www.wikidata.org/wiki/Q75251278>
   # Caroline Mears, d. 1869-01-06
-  gen:father <https://www.wikidata.org/wiki/Q75251296> .
+  gen:father <https://www.wikidata.org/wiki/Q75251296> . # John Mears
   # oo 1860-05-16 Hon. William Octavius Beresford Annesley, 1838-11-29 - 1875-07-20, https://www.wikidata.org/wiki/Q75251200
 
 # ----
 <https://www.wikidata.org/wiki/Q75352590>
   # Lucy Ann Kelly, 1838 - 1874-01-14
-  gen:father <https://www.wikidata.org/wiki/Q75352591>.
-  # and Elizabeth Diana Cator
+  gen:father <https://www.wikidata.org/wiki/Q75352591> ; # Denis Kelly
+  gen:mother <https://www.wikidata.org/wiki/Q76131291> . # Elizabeth Diana Cator
   # oo 1863-05-05 William Henry Annesley, 1830-10-04 - 1875-03-28, https://www.wikidata.org/wiki/Q75352588
 
 # ----
@@ -1420,51 +1546,45 @@
 # ----
 <https://www.wikidata.org/wiki/Q75251316>
   # Maud Fleming Higginson, d. 1923-07-02
-  gen:father <https://www.wikidata.org/wiki/Q75251319> .
-  # oo 1893-06-21 Walter Beresford Annesley, 7th Earl Annesley, 1861-02-10 - 1934-07-07, #Walter_Beresford_Annesley,_7th_Earl_Annesley
+  gen:father <https://www.wikidata.org/wiki/Q75251319> . # Haynes Bingham Higginson
+  # oo 1893-06-21 Walter Beresford Annesley, 7th Earl Annesley, 1861-02-10 - 1934-07-07, https://www.wikidata.org/wiki/Q23015258
 
 # ----
 <https://www.wikidata.org/wiki/Q75251320>
   # Mabel Frances Burnett, 1866~ - 1931-07-10
-  gen:father <https://www.wikidata.org/wiki/Q75251336> .
-  # oo 1924-01-23 Walter Beresford Annesley, 7th Earl Annesley, 1861-02-10 - 1934-07-07, #Walter_Beresford_Annesley,_7th_Earl_Annesley
+  gen:father <https://www.wikidata.org/wiki/Q75251336> . # John Burnett
+  # oo 1924-01-23 Walter Beresford Annesley, 7th Earl Annesley, 1861-02-10 - 1934-07-07, https://www.wikidata.org/wiki/Q23015258
 
-# ----
-#<https://www.wikidata.org/wiki/Q75252823>
-  # Rt. Hon. Sir Francis Edmund Workman-Macnaghten of Dundarave, 3rd Baronet, 1828-07-09 - 1911-07-21
-  # oo Alice Mary Russell, daughter of William Howard Russell
+# ====
+<https://www.wikidata.org/wiki/Q334020>
+  # Hardinge Stanley Giffard, 1st Earl of Halsbury, 1823-09-03 - 1921-12-11
+  # 1st Baron Halsbury, of Halsbury, co. Devon [U.K.] 1885-06-26
+  # 1st Earl of Halsbury, 1st Viscount Tiverton, of Tiverton, co. Devon [U.K.] 1898-01-17
+  gen:father <https://www.wikidata.org/wiki/Q7599748> ; # Stanley Lees Giffard
+  gen:mother <https://www.wikidata.org/wiki/Q75718639> . # Susanna Meares Moran
+  # oo Caroline Humphreys, d. 1873-09-30, daughter of W. C. Humphreys
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q75252823> , <#Alice_Mary_Russell> ;
-	gen:startDate "1866-06-06" ;
-	gen:divorceDate "1883" .
-
-<https://www.wikidata.org/wiki/Q75252818>
-  # Hilda Margaret Workman-Macnaghten, 1868-12-23 - 1961-03-04
-  gen:father <https://www.wikidata.org/wiki/Q75252823> ;
-  gen:mother <#Alice_Mary_Russell> .
-  # oo 1907-03-07 Richard Arthur Grove Annesley, 1879-06-20 - 1966-02-04, https://www.wikidata.org/wiki/Q75252815
-
-# ----
-#<https://www.wikidata.org/wiki/Q75350974>
-  # Harry Crewe Godley, d. 1907-02-19
-  # son of H. R. C. Godley
-  # oo Elizabeth Mary Annesley, d. 1958-02-26
+    gen:spouse <https://www.wikidata.org/wiki/Q334020> , <https://www.wikidata.org/wiki/Q75718703> ;
+	gen:startDate "1852-08-28" .
+  # oo Wilhelmina Woodfall, d. 1927-12-22, daughter of Henry Woodfall
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q75350974> , <https://www.wikidata.org/wiki/Q75352587> ;
-	gen:startDate "1892-04-23" .
+    gen:spouse <https://www.wikidata.org/wiki/Q334020> , <https://www.wikidata.org/wiki/Q75718634> ;
+	gen:startDate "1874-10-14" .
 
-<https://www.wikidata.org/wiki/Q75350973>
-  # Elizabeth Adeline Faith Godley, d. 1983-06-06
-  gen:father <https://www.wikidata.org/wiki/Q75350974> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75352587> .
-  # oo 1936-12-02 John Anthony Hardinge Giffard, 3rd Earl of Halsbury, 1908-06-04 – 2000-01-14, https://www.wikidata.org/wiki/Q6235279
-# ----
+<https://www.wikidata.org/wiki/Q21648673>
+  # Hardinge Goulburn Giffard, 2nd Earl of Halsbury, 1880-06-20 - 1943-09-15
+  gen:father <https://www.wikidata.org/wiki/Q334020> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75718634> .
+  # oo Esme Wallace, 1885 - 1973-09-19 (gordon.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q21648673> , <https://www.wikidata.org/wiki/Q75718711> ;
+	gen:startDate "1907-08-07" .
+
 <https://www.wikidata.org/wiki/Q6235279>
-  owl:sameAs <https://www.wikidata.org/wiki/Q6235279> ;
   # John Anthony Hardinge Giffard, 3rd Earl of Halsbury, 1908-06-04 – 2000-01-14
-  gen:father <https://www.wikidata.org/wiki/Q21648673> ; # Hardinge Goulburn Giffard, 2nd Earl of Halsbury
-  gen:mother <https://www.wikidata.org/wiki/Q75718711> . #  Esme Wallace
-  # oo Ismay Catherine Crichton-Stuart, 1909-12-23 - 1989
+  gen:father <https://www.wikidata.org/wiki/Q21648673> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75718711> .
+  # oo Ismay Catherine Crichton-Stuart, 1909-12-23 - 1989 (stuart.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q6235279> , <https://www.wikidata.org/wiki/Q75342886> ;
 	gen:startDate "1930-10-01" ;
@@ -1481,197 +1601,28 @@
   # oo 1964-10-27 Oliver John Martin Lindsay, b. 1938-08-30, https://www.wikidata.org/wiki/Q75718761
 
 # ----
+#<https://www.wikidata.org/wiki/Q75350974>
+  # Harry Crewe Godley, d. 1907-02-19
+  # son of H. R. C. Godley
+  # oo Elizabeth Mary Annesley, d. 1958-02-26
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75350974> , <https://www.wikidata.org/wiki/Q75352587> ;
+	gen:startDate "1892-04-23" .
+
+<https://www.wikidata.org/wiki/Q75350973>
+  # Elizabeth Adeline Faith Godley, d. 1983-06-06
+  gen:father <https://www.wikidata.org/wiki/Q75350974> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75352587> .
+  # oo 1936-12-02 John Anthony Hardinge Giffard, 3rd Earl of Halsbury, 1908-06-04 – 2000-01-14, https://www.wikidata.org/wiki/Q6235279
+
+# ====
+
+# ----
 #<https://www.wikidata.org/wiki/Q75251368>
   # Edith Constance Rawlinson, d. 1950-07-07
   # daughter of Albemarle Alexander Rawlinson
   # oo 1915-10-28 (div 1918-05-09) Richard Frederick John Donough Le Poer Trench, 6th Earl of Clancarty, 1891-12-27 - 1971-06-05, https://www.wikidata.org/wiki/Q75251378 (hill.ttl)
   # oo 1921-07-30 (div 1941) Beresford Cecil Bingham Annesley, 8th Earl Annesley, 1894-04-04 - 1957-06-29, https://www.wikidata.org/wiki/Q21557226
-
-# ====
-#<https://www.wikidata.org/wiki/Q76281167>
-  # John ap Madog, son of Madog ap Hywel ap Madog (https://www.wikidata.org/wiki/Q76281168, son of Hywel ap Madog (https://www.wikidata.org/wiki/Q76281169, son of Madog ap Ieuan (https://www.wikidata.org/wiki/Q76281170, on of Ieuan ap Einion (https://www.wikidata.org/wiki/Q76281172, son of Einion ap Gruffudd (https://www.wikidata.org/wiki/Q76281173, son of Gruffudd ap Hywel (https://www.wikidata.org/wiki/Q76281175, son of Hywel ap Maredudd ab Einion (https://www.wikidata.org/wiki/Q76281176, son of Maredudd ab Einion (https://www.wikidata.org/wiki/Q76281178, son of Einion ap Caradog (d. 1210, https://www.wikidata.org/wiki/Q76281179, son of Caradog ap Gwgon (https://www.wikidata.org/wiki/Q76281180, son of Gwgon ap Merwydd Goch (https://www.wikidata.org/wiki/Q76281181, son of Merwydd 'Goch' ap Gollwyn (https://www.wikidata.org/wiki/Q76281182, son of Gollwyn ap Tangno (b. 1025~, https://www.wikidata.org/wiki/Q76281184))))))) and oo Gwellian verch Gruffudd (daughter of Grufudd ab Ednyfed Fychan)) and oo Angharad ferch Tegwared (daughter of Tegwared y Baiswen ap Llywelyn, Lord of Trefdraeth)) and oo Nest ferch Grufudd (daughter of Gruffudd ab Adda Foel)) and oo Gwenhwyfar ferch Einion (daughter of Einion ab Ynyr Fychan)) and oo Gwerful ferch Rhys (daughter of Rhys ap Tudur ap Gronwy)) and oo Erddylad ferch Gruffudd (daughter of Gruffudd ap Hywel Coetmor)) and oo Ellyw ferch Morgan (daughter of Morgan ab Ieuan)
-  # oo Jonet ferch Gruffudd, daughter of Gruffudd ap Llywelyn
-
-<https://www.wikidata.org/wiki/Q76281164>
-  # Hugh ap John ap Madog
-  gen:father <https://www.wikidata.org/wiki/Q76281167> .
-  # and Jonet ferch Gruffudd
-  # oo Catherine Salusbury, daughter of Henry Salusbury
-
-<https://www.wikidata.org/wiki/Q76281163>
-  # John Wynne ap Hugh, d. 1576-10-11a/-11-03b
-  gen:father <https://www.wikidata.org/wiki/Q76281164> .
-  # and Catherine Salusbury
-  # oo Elizabeth Puleston, daughter of Sir John Puleston
-
-<https://www.wikidata.org/wiki/Q76281162>
-  # Thomas Wynn, d. 1594-11-14a/1594-03-23b
-  gen:father <https://www.wikidata.org/wiki/Q76281163> .
-  # aod Elizabeth Puleston
-  # oo Elizabeth ferch Owain, daughter of Owain ap Gruffudd ap Morus
-
-<https://www.wikidata.org/wiki/Q76281161>
-  # John Wynn, d. 1635-06-06
-  gen:father <https://www.wikidata.org/wiki/Q76281162> .
-  # and Elizabeth ferch Owain
-  # oo Elin Rowland, daughter of Edward Rowland
-
-<https://www.wikidata.org/wiki/Q76281160>
-  # Thomas Wynne, 1602~ - 1673-02-14
-  gen:father <https://www.wikidata.org/wiki/Q76281161> .
-  # and Elin Rowland
-  # oo Susan Dayrell, daughter of Francis Dayrell
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q76281160> , <https://www.wikidata.org/wiki/Q76281250> ;
-	gen:startDate "1637-12-08a/1639-03-28b" .
-
-<https://www.wikidata.org/wiki/Q76281158>
-  # Griffith Wynn, 1646~ - 1680
-  gen:father <https://www.wikidata.org/wiki/Q76281160> ;
-  gen:mother <https://www.wikidata.org/wiki/Q76281250> .
-  # oo Catherine Vaughan, daughter of William Vaughan
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q76281158> , <https://www.wikidata.org/wiki/Q76281254> .
-
-<https://www.wikidata.org/wiki/Q24174835>
-  # Sir Thomas Wynn, 1st Baronet, 1677-03 – 1749-04-13
-  # 1st Baronet Wynn, of Boduan, co. Caernarvon 1742-10-25
-  gen:father <https://www.wikidata.org/wiki/Q76281158> ;
-  gen:mother <https://www.wikidata.org/wiki/Q76281254> .
-  # oo Frances Glynne, d. 1709-10, daughter of John Glynne and Elizabeth Owen
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q24174835> , <https://www.wikidata.org/wiki/Q75573693> ;
-	gen:startDate "1700~" .
-
-<https://www.wikidata.org/wiki/Q7528162>
-  # Sir John Wynn, 2nd Baronet, 1701-09 – 1773-02-14
-  gen:father <https://www.wikidata.org/wiki/Q24174835> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75573693> .
-  # oo Jane Wynne, d. 1784-04-24, daughter of John Wynne
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q7528162> , <https://www.wikidata.org/wiki/Q75573550> ;
-	gen:startDate "1736" .
-
-<https://www.wikidata.org/wiki/Q7795362>
-  # Thomas Wynn, 1st Baron Newborough, 1736-04 – 1807-10-12
-  # 3rd Baronet Wynn, of Boduan, co. Caernarvon 1773-02-16
-  # 1st Baron Newborough, of Bodvean, co. Caernarvon 1776-07-23
-  gen:father <https://www.wikidata.org/wiki/Q7528162> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75573550> .
-  # oo Lady Catherine Egmont Perceval, 1746~ - 1782-06 (cecil.ttl)
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q7795362> , <https://www.wikidata.org/wiki/Q75356743> ;
-	gen:startDate "1766-09-15" .
-  # oo Maria Stella Petronilla Chiappini, 1773-04-16 - 1843-12-28
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q7795362> , <https://www.wikidata.org/wiki/Q4328354> ;
-	gen:startDate "1786-10-10" .
-<https://www.wikidata.org/wiki/Q75266993>
-  # Glynn Wynn
-  gen:father <https://www.wikidata.org/wiki/Q7528162> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75573550> .
-  # oo Bridget Pugh, daughter of Edward Philip Pugh
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q75266993> , <https://www.wikidata.org/wiki/Q75573214> ;
-	gen:startDate "1766-01-11" .
-
-<https://www.wikidata.org/wiki/Q27506016>
-  # Spencer Bulkeley Wynn, 3rd Baron Newborough, 1803-05-23 – 1888-11-01
-  gen:father <https://www.wikidata.org/wiki/Q7795362> ;
-  gen:mother <https://www.wikidata.org/wiki/Q4328354> .
-  # oo Frances Maria de Winton, 1819b - 1857-11-18
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q27506016> , <https://www.wikidata.org/wiki/Q75314191> ;
-	gen:startDate "1834-05-10" .
-<https://www.wikidata.org/wiki/Q75573224>
-  # Thomas Edward Belasyse-Wynn
-  gen:father <https://www.wikidata.org/wiki/Q75266993> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75573214> .
-  # oo Lady Charlotte Belasyse, 1767-01-10 - 1825
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q75573224> , <https://www.wikidata.org/wiki/Q76250838> .
-
-<https://www.wikidata.org/wiki/Q75252478>
-  # Hon. Thomas John Wynn, 1840-12-31 - 1878-08-25
-  gen:father <https://www.wikidata.org/wiki/Q27506016> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75314191> .
-  # oo Sybil Anna Catherine Corbett, 1854~ - 1911-01-07, daughter of Edwin Corbett
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q75252478> , <https://www.wikidata.org/wiki/Q75573735> ;
-	gen:startDate "1871-07-11" .
-<https://www.wikidata.org/wiki/Q75313814>
-  # Hon. Charles Henry Wynn, 1847-04-22 - 1911-03-14
-  gen:father <https://www.wikidata.org/wiki/Q27506016> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75314191> .
-  # oo Frances Georgiana Romer, 1856 - 1919-10-27, daughter of Robert William Romer and Frances Clarissa Simons
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q75313814> , <https://www.wikidata.org/wiki/Q75314194> ;
-	gen:startDate "1876-08-31" .
-
-<https://www.wikidata.org/wiki/Q75252454>
-  # Hon. Mabel Wynn, 1872-07-19 - 1970-02-14
-  gen:father <https://www.wikidata.org/wiki/Q75252478> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75573735> .
-  # oo 1896-11-19 Francis Charles Cowper Annesley, 1866-11-25 - 1924-02-12, https://www.wikidata.org/wiki/Q75252450
-<https://www.wikidata.org/wiki/Q75297979>
-  # Robert Vaughan Wynn, 6th Baron Newborough, 1877-07-01 - 1965-10-27
-  gen:father <https://www.wikidata.org/wiki/Q75313814> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75314194> .
-  # oo Ruby Irene Severne, d. 1960-11-06, daughter of Edmund Wigley Severne and Louisa Emilia Lomax
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q75297979> , <https://www.wikidata.org/wiki/Q75297980> ;
-	gen:startDate "1913-12-16" .
-
-<https://www.wikidata.org/wiki/Q75297972>
-  # Hon. Charles Henry Romer Wynn, 1923-05-25 - 2009-10-11
-  gen:father <https://www.wikidata.org/wiki/Q75297979> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75297980> .
-  # oo Hon. Angela Hermione Ida Willoughby, b. 1924-05-05
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q75297972> , <https://www.wikidata.org/wiki/Q75297971> ;
-	gen:startDate "1947-12-16" .
-
-# ---
-#<https://www.wikidata.org/wiki/Q75356751>
-  # Lorenzo Chiappini, 1730 - 1821
-  # oo Vencenzia Viligenti, 1745 - 1820
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q75356751> , <https://www.wikidata.org/wiki/Q76170772> .
-
-<https://www.wikidata.org/wiki/Q4328354>
-  # Maria Stella Petronilla Chiappini, 1773-04-16 - 1843-12-28
-  gen:father <https://www.wikidata.org/wiki/Q75356751> ;
-  gen:mother <https://www.wikidata.org/wiki/Q76170772> .
-  # oo 1786-10-10 Thomas Wynn, 1st Baron Newborough, 1736-04 – 1807-10-12, https://www.wikidata.org/wiki/Q7795362
-<https://www.wikidata.org/wiki/Q75574412>
-  # Maria Jacoba Chiappini
-  gen:father <https://www.wikidata.org/wiki/Q75356751> ;
-  gen:mother <https://www.wikidata.org/wiki/Q76170772> .
-  # oo Rev. Walter de Winton, d. 1851-11-13, https://www.wikidata.org/wiki/Q75305006
-# ----
-#<https://www.wikidata.org/wiki/Q75305006>
-  # Rev. Walter de Winton, d. 1851-11-13
-  # oo Maria Jacoba Chiappini
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q75305006> , <https://www.wikidata.org/wiki/Q75574412> ;
-	gen:startDate "1809-09-05" .
-
-<https://www.wikidata.org/wiki/Q75314191>
-  # Frances Maria de Winton, 1819b - 1857-11-18
-  gen:father <https://www.wikidata.org/wiki/Q75305006> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75574412> .
-  # oo 1834-05-10 Spencer Bulkeley Wynn, 3rd Baron Newborough, 1803-05-23 – 1888-11-01, https://www.wikidata.org/wiki/Q27506016
-
-# ====
-
-# ----
-#<https://www.wikidata.org/wiki/Q75252690>
-  # Francis Denis Jack Annesley, 1864-06-03 - 1929-03-23
-  # oo Clementina Maude Annesley, d. 1949-04-03
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q75252690> , <https://www.wikidata.org/wiki/Q75254418> ;
-	gen:startDate "1892" ;
-	gen:divorceDate "1906" .
 
 # ----
 #<https://www.wikidata.org/wiki/Q75252692>
@@ -1685,27 +1636,19 @@
 # ----
 <https://www.wikidata.org/wiki/Q75251483>
   # Nora Harrison, d. 1992
-  gen:father <https://www.wikidata.org/wiki/Q75251485> .
+  gen:father <https://www.wikidata.org/wiki/Q75251485> . # Walter Harrison
   # oo 1922-04-19 Robert Annesley, 9th Earl Annesley, 1900-02-20 - 1979-02-21, https://www.wikidata.org/wiki/Q21743337
-
-# ----
-#<https://www.wikidata.org/wiki/Q15968671>
-  # Sir Henry Nigel St. Valery Norman, 2nd Baronet, 1897-05-21 – 1943-05-19
-  # oo Patricia Moyra Annesley, b. 1904-04-26
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q15968671> , <https://www.wikidata.org/wiki/Q75252504> ;
-	gen:startDate "1926-02-04" .
 
 # ----
 <https://www.wikidata.org/wiki/Q75251488>
   # Catherine Burgess, 1924-08-12 - 2001-02-02
-  gen:father <https://www.wikidata.org/wiki/Q75251489> .
+  gen:father <https://www.wikidata.org/wiki/Q75251489> . # John Burgess
   # oo 1947-06-21 Patrick Annesley, 10th Earl Annesley, 1924-08-12 - 2001-02-02, https://www.wikidata.org/wiki/Q23015205
 
 # ----
 <https://www.wikidata.org/wiki/Q75251492>
   # Vernon Hugh Gamester
-  gen:father <https://www.wikidata.org/wiki/Q75251493> .
+  gen:father <https://www.wikidata.org/wiki/Q75251493> . # Edward Gamester
   # oo Lady Jane Margaret Annesley, b. 1948-06-15
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75251492> , <https://www.wikidata.org/wiki/Q75251490> ;
@@ -1714,7 +1657,7 @@
 # ----
 <https://www.wikidata.org/wiki/Q75251622>
   # John Bathurst Shaw Binning
-  gen:father <https://www.wikidata.org/wiki/Q75251656> .
+  gen:father <https://www.wikidata.org/wiki/Q75251656> . # John Bathurst Shaw Binning
   # oo Lady Nora Kathleen Annesley, b. 1950-03-27
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75251622> , <https://www.wikidata.org/wiki/Q75251617> ;

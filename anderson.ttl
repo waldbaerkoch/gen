@@ -4,76 +4,78 @@
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
-#<#Sir_Edmund_Anderson>
-  # Sir Edmund Anderson
-  # oo Magdalen Smith
+#<https://www.wikidata.org/wiki/Q371968>
+  # Sir Edmund Anderson, 1530 - 1605-08-01
+  # son of Edward Anderson
+  # oo Magdalen Smith, daughter of Christopher Smith
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q371968> , <https://www.wikidata.org/wiki/Q75487915> .
 
 <https://www.wikidata.org/wiki/Q75408093>
   # Sir Francis Anderson, 1581 - 1615-12-22
-  gen:father <#Sir_Edmund_Anderson> .
-  # and Magdalen Smith
+  gen:father <https://www.wikidata.org/wiki/Q371968> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75487915> .
   # oo Judith Soame, 1586 - 1608-07-04, daughter of Sir Stephen Soame and Anne Stone
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q75408093> , <#Judith_Soame> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75408093> , <https://www.wikidata.org/wiki/Q76242359> ;
 	gen:startDate "1606" .
   # oo Hon. Audrey Boteler, 1595 - 1652-09-16 (villiers.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75408093> , <https://www.wikidata.org/wiki/Q75408094> ;
 	gen:startDate "1611" .
-<#William_Anderson>
+<https://www.wikidata.org/wiki/Q75408143>
   # William Anderson
-  gen:father <#Sir_Edmund_Anderson> .
-  # and Magdalen Smith
+  gen:father <https://www.wikidata.org/wiki/Q371968> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75487915> .
   # oo Joan Essex
   []
-    gen:spouse <#William_Anderson> , <#Joan_Essex> .
+    gen:spouse <https://www.wikidata.org/wiki/Q75408143> , <https://www.wikidata.org/wiki/Q75408145> .
   # oo Elizabeth Darnell
-<#Katharine_Anderson>
+<https://www.wikidata.org/wiki/Q75487912>
   # Katharine Anderson, d. 1639-02~
-  gen:father <#Sir_Edmund_Anderson> .
-  # and Magdalen Smith
-  # oo 1590~ Sir George Booth, 1st Baronet, 1566-010-20 - 1652-10-24, https://www.wikidata.org/wiki/Q43283468
+  gen:father <https://www.wikidata.org/wiki/Q371968> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75487915> .
+  # oo 1590~ Sir George Booth, 1st Baronet, 1566-010-20 - 1652-10-24, https://www.wikidata.org/wiki/Q43283468 (grey.ttl)
 <https://www.wikidata.org/wiki/Q75403544>
   # Margaret Anderson, d. 1630-07-31~
-  gen:father <#Sir_Edmund_Anderson> .
-  # and Magdalen Smith
+  gen:father <https://www.wikidata.org/wiki/Q371968> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75487915> .
   # oo 1590-07 Sir Thomas Monson, 1st Baronet, 1564 - 1641-05-25, https://www.wikidata.org/wiki/Q7529213
 <https://www.wikidata.org/wiki/Q76165601>
   # Grizel Anderson
-  gen:father <#Sir_Edmund_Anderson> .
+  gen:father <https://www.wikidata.org/wiki/Q371968> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75487915> .
   # oo Sir John Sheffield, d. 1641-12, https://www.wikidata.org/wiki/Q76165599 (stanley.ttl)
 
-<#Stephen_Anderson>
+<https://www.wikidata.org/wiki/Q75408232>
   # Stephen Anderson, of Eyworth, 1608 - 1774-06a
   gen:father <https://www.wikidata.org/wiki/Q75408093> ;
-  gen:mother <#Judith_Soame> .
+  gen:mother <https://www.wikidata.org/wiki/Q76242359> .
   # oo Catherine Sandys, d. 1656-03-08b, daughter of Sir Edwyn Sandys
-<#Sir_John_Anderson,_1st_Baronet>
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75408232> , <https://www.wikidata.org/wiki/Q75408234> .
+<https://www.wikidata.org/wiki/Q75408090>
   # Sir John Anderson, 1st Baronet, 1612 - 1630-07
-  # 1st Baronet Anderson, of St. Ives, co. Huntingdon 1629-01-03
+  # 1st Baronet Anderson, of St. Ives, co. Huntingdon [England] 1629-01-03
   gen:father <https://www.wikidata.org/wiki/Q75408093> ;
   gen:mother <https://www.wikidata.org/wiki/Q75408094> .
-<#Sir_Edmund_Anderson,_1st_Baronet> # -> Anderson Baronets of Broughton
+<https://www.wikidata.org/wiki/Q75408142> # -> Anderson Baronets of Broughton
   # Sir Edmund Anderson, 1st Baronet, 1605-08-10 - 1661-01~
-  gen:father <#William_Anderson> ;
-  gen:mother <#Joan_Essex> .
+  gen:father <https://www.wikidata.org/wiki/Q75408143> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75408145> .
 
 <https://www.wikidata.org/wiki/Q75408230> # -> Anderson of Eyworth
   # Sir Stephen Anderson, 1st Baronet, 1644~ - 1707-01-19
-  gen:father <#Stephen_Anderson> .
-  # and Catherine Sandys
+  gen:father <https://www.wikidata.org/wiki/Q75408232> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75408234> .
 <https://www.wikidata.org/wiki/Q75395366> # -> Anderson of Manby
   # Francis Anderson, of Manby, 1646 - 1706-04-15
-  gen:father <#Stephen_Anderson> .
-  # and Catherine Sandys
-  # oo Elizabeth Lodington, d. 1694-06-02
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q75395366> , <#Elizabeth_Lodington> ;
-	gen:startDate "1674-06" .
-<#Penelope_Anderson>
+  gen:father <https://www.wikidata.org/wiki/Q75408232> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75408234> .
+<https://www.wikidata.org/wiki/Q75573442>
   # Penelope Anderson, d. 1681
-  gen:father <#Stephen_Anderson> .
-  # and Catherine Sandys
+  gen:father <https://www.wikidata.org/wiki/Q75408232> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75408234> .
   # oo 1660~ Sir William Glynne, 1st Baronet, 1638-01-20 - 1690-09-08, https://www.wikidata.org/wiki/Q7529608
 
 
@@ -81,88 +83,99 @@
 <https://www.wikidata.org/wiki/Q75408230>
   # Sir Stephen Anderson, 1st Baronet, 1644~ - 1707-01-19
   # 1st Baronet Anderson, of Eyworth, co. Bedford 1664-07-13
-  gen:father <#Stephen_Anderson> .
-  # and Catherine Sandys
+  gen:father <https://www.wikidata.org/wiki/Q75408232> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75408234> .
   # oo Mary Glynne, 1649~ - 1668-02-24
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75408230> , <https://www.wikidata.org/wiki/Q75408238> ;
 	gen:startDate "1664-06-02" .
   # oo Judith Laurence, 1648-05-04 - 1688-05~, daughter of Sir John Laurence and Abigail Cullen
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q75408230> , <#Judith_Laurence> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75408230> , <https://www.wikidata.org/wiki/Q75408247> ;
 	gen:startDate "1673-04-08" .
 
-<#Sir_Stephen_Anderson,_2nd_Baronet>
+<#Anne_Anderson>
+  # Anne Anderson
+  gen:father <https://www.wikidata.org/wiki/Q75408230> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75408238> .
+  # oo 1683-09-11 Sir Willoughby Hickman, 3rd Baronet, 1659-08-20 – 1720-10-28, https://www.wikidata.org/wiki/Q28083102
+<https://www.wikidata.org/wiki/Q75408254>
   # Sir Stephen Anderson, 2nd Baronet, 1678-10-01 - 1741-10-21
   gen:father <https://www.wikidata.org/wiki/Q75408230> ;
-  gen:mother <#Judith_Laurence> .
-  # oo Anne Lumley, 1684-09-06 - 1719-10-27, daughter of Sir Martin Lumley, 3rd Baronet and Elizabeth Dawes
+  gen:mother <https://www.wikidata.org/wiki/Q75408247> .
+  # oo Anne Lumley, 1684-09-06 - 1719-10-27
   []
-    gen:spouse <#Sir_Stephen_Anderson,_2nd_Baronet> , <#Anne_Lumley> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75408254> , <https://www.wikidata.org/wiki/Q75257183> ;
 	gen:startDate "1707b" .
 
-<#Sir_Stephen_Anderson,_3rd_Baronet>
+<https://www.wikidata.org/wiki/Q75408259>
   # Sir Stephen Anderson, 3rd Baronet, 1708-11-15 - 1773-02-19
-  gen:father <#Sir_Stephen_Anderson,_2nd_Baronet> ;
-  gen:mother <#Anne_Lumley> .
+  gen:father <https://www.wikidata.org/wiki/Q75408254> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75257183> .
   # oo Elizabeth Barne, d. 1769-04-09, daughter of Miles Barne
   []
-    gen:spouse <#Sir_Stephen_Anderson,_3rd_Baronet> , <#Elizabeth_Barne> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75408259> , <#Elizabeth_Barne> ;
 	gen:startDate "1732-01-27" .
   # oo Mary Elsegood, d. 1808, daughter of W. Elsgood
   []
-    gen:spouse <#Sir_Stephen_Anderson,_3rd_Baronet> , <#Mary_Elsegood> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75408259> , <https://www.wikidata.org/wiki/Q75347483> ;
 	gen:startDate "1771-04-02" .
 
 
 # Anderson of Manby
 <https://www.wikidata.org/wiki/Q75395366>
   # Francis Anderson, of Manby, 1646 - 1706-04-15
-  gen:father <#Stephen_Anderson> .
-  # and Catherine Sandys
+  gen:father <https://www.wikidata.org/wiki/Q75408232> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75408234> .
   # oo Elizabeth Lodington, d. 1694-06-02
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q75395366> , <#Elizabeth_Lodington> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75395366> , <https://www.wikidata.org/wiki/Q116146237> ;
 	gen:startDate "1674-06" .
 
-<#Francis_Anderson_(died_1747)>
+<https://www.wikidata.org/wiki/Q116146234>
   # Francis Anderson, of Manby, d. 1747-09-29
   gen:father <https://www.wikidata.org/wiki/Q75395366> ;
-  gen:mother <#Elizabeth_Lodington> .
+  gen:mother <https://www.wikidata.org/wiki/Q116146237> .
   # oo Mary Pelham, 1677-04-21 - 1732
   []
-    gen:spouse <#Francis_Anderson_(died_1747)> , <https://www.wikidata.org/wiki/Q75271836> .
+    gen:spouse <https://www.wikidata.org/wiki/Q116146234> , <https://www.wikidata.org/wiki/Q75271836> .
 
-<#Francis_Anderson_(died_1758)>
+<https://www.wikidata.org/wiki/Q75990270>
   # Francis Anderson, of Manby, 1711-07-29b - 1758-10-23
-  gen:father <#Francis_Anderson_(died_1747)> ;
+  gen:father <https://www.wikidata.org/wiki/Q116146234> ;
   gen:mother <https://www.wikidata.org/wiki/Q75271836> .
   # oo Eleanor Carter, daughter of William Carter and Sarah Price
   []
-    gen:spouse <#Francis_Anderson_(died_1758)> , <#Eleanor_Carter> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75990270> , <https://www.wikidata.org/wiki/Q75990272> ;
 	gen:startDate "1747-02-02" .
 
 <https://www.wikidata.org/wiki/Q5075115>
   # Charles Anderson-Pelham, 1st Baron Yarborough, 1749-02-03 - 1823-09-22
-  # 1st Baron Yarborough, of Yarborough in the County of Lincoln 1794
-  gen:father <#Francis_Anderson_(died_1758)> ;
-  gen:mother <#Eleanor_Carter> .
+  # 1st Baron Yarborough, of Yarborough in the County of Lincoln [Great Britain] 1794-08-13
+  gen:father <https://www.wikidata.org/wiki/Q75990270> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75990272> .
   # oo Sophia Aufrère, 1752~ - 1786-01-25
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5075115> , <https://www.wikidata.org/wiki/Q33261222> ;
 	gen:startDate "1770-07-21" .
 <https://www.wikidata.org/wiki/Q26451758>
   # Francis Evelyn Anderson, 1752-04-08 – 1821
-  gen:father <#Francis_Anderson_(died_1758)> ;
-  gen:mother <#Eleanor_Carter> .
+  gen:father <https://www.wikidata.org/wiki/Q75990270> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75990272> .
   # oo Caroline Johnston, d. 1823-06-18
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q26451758> , <#Caroline_Johnston> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q26451758> , <https://www.wikidata.org/wiki/Q75990628> ;
 	gen:startDate "1795" .
 
+<https://www.wikidata.org/wiki/Q76106490>
+  # Hon. Caroline Anderson-Pelham, 1777-01-08 - 1812-07
+  gen:father <https://www.wikidata.org/wiki/Q5075115> ;
+  gen:mother <https://www.wikidata.org/wiki/Q33261222> .
+  # oo 1797-10-12 Robert Cary Elwes, 1772 - 1852-02-10, https://www.wikidata.org/wiki/Q76106488
 <https://www.wikidata.org/wiki/Q5075114>
   # Charles Anderson-Pelham, 1st Earl of Yarborough, 1781-08-08 – 1846-09-05
-  # 1st Baron Worsley, of Appuldurcombe on the Isle of Wight, 1st Earl of Yarborough 1837
+  # 2nd Baron Yarborough, of Yarborough, Lincolnshire [G.B., 1794] 1823-09-22
+  # 1st Earl of Yarborough, 1st Baron Worsley, of Appuldurcombe on the Isle of Wight [U.K.] 1837-01-30
   gen:father <https://www.wikidata.org/wiki/Q5075115> ;
   gen:mother <https://www.wikidata.org/wiki/Q33261222> .
   # oo Henrietta Anne Maria Charlotte Bridgeman Simpson, 1788-04-24 - 1813-06-30 (bridgeman.ttl)
@@ -178,6 +191,11 @@
   gen:father <https://www.wikidata.org/wiki/Q5075115> ;
   gen:mother <https://www.wikidata.org/wiki/Q33261222> .
   # oo 1802-07 Thomas Fieschi Heneage, 1771-09-28 - 1854-02-07, https://www.wikidata.org/wiki/Q75347522 (petre.ttl)
+<https://www.wikidata.org/wiki/Q75574646>
+  # Hon. Maria Charlotte Anderson Pelham, d. 1840
+  gen:father <https://www.wikidata.org/wiki/Q5075115> ;
+  gen:mother <https://www.wikidata.org/wiki/Q33261222> .
+  # oo 1804 William Tennant, https://www.wikidata.org/wiki/Q75574645
 
 <https://www.wikidata.org/wiki/Q728007>
   # Charles Anderson Worsley Anderson-Pelham, 2nd Earl of Yarborough, 1809-04-12 - 1862-01-07
@@ -191,7 +209,7 @@
   # Lady Charlotte Anderson-Pelham, 1810-10-20/-22 - 1875-08-10
   gen:father <https://www.wikidata.org/wiki/Q5075114> ;
   gen:mother <https://www.wikidata.org/wiki/Q75271691> .
-  # oo 1831-11-19 Sir Joseph William Copley, 4th Baronet, 1804-07-27 - 1883-01-03, https://www.wikidata.org/wiki/Q75771366 (cromwell.ttl)
+  # oo 1831-11-19 Sir Joseph William Copley, 4th Baronet, 1804-07-27 - 1883-01-03, https://www.wikidata.org/wiki/Q75771366 (fitzwilliam.ttl)
 <https://www.wikidata.org/wiki/Q5311943>
   # Hon. Dudley Worsley Anderson-Pelham, 1812-04-20 - 1851-04-13
   gen:father <https://www.wikidata.org/wiki/Q5075114> ;
@@ -209,42 +227,42 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5075117> , <https://www.wikidata.org/wiki/Q75271692> ;
 	gen:startDate "1858-08-03" .
-<#Lady_Sophia_Adelaide_Theodosia_Anderson-Pelham>
+<https://www.wikidata.org/wiki/Q75263940>
   # Lady Sophia Adelaide Theodosia Anderson-Pelham, 1840-07-26 - 1886-09-21
   gen:father <https://www.wikidata.org/wiki/Q728007> ;
   gen:mother <https://www.wikidata.org/wiki/Q75269761> .
   # oo 1862-12-06 Archibald William Montgomerie, 14th Earl of Eglinton, 1841-12-03 - 1892-08-30, https://www.wikidata.org/wiki/Q4786455
-<#Evelyn_Cornwallis_Anderson-Pelham>
+<https://www.wikidata.org/wiki/Q76347540>
   # Hon. Evelyn Cornwallis Anderson-Pelham, 1851-09-16 - 1908-03-06
   gen:father <https://www.wikidata.org/wiki/Q728007> ;
   gen:mother <https://www.wikidata.org/wiki/Q75269761> .
   # oo Harriet Frances Hutton, d. 1913-07-13, daughter of Rev. George Hutton
   []
-    gen:spouse <#Evelyn_Cornwallis_Anderson-Pelham> , <#Harriet_Frances_Hutton> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q76347540> , <https://www.wikidata.org/wiki/Q76177554> ;
 	gen:startDate "1872-10-24" .
 
 <https://www.wikidata.org/wiki/Q5081569>
   # Charles Alfred Worsley Pelham, 4th Earl of Yarborough, 1859-06-11 - 1936-07-12
-  # Anderson-Pelham
-  # Pelham 1905
+  # Charles Alfred Worsley Anderson-Pelham
+  # Charles Alfred Worsley Pelham 1905-10-26
   gen:father <https://www.wikidata.org/wiki/Q5075117> ;
   gen:mother <https://www.wikidata.org/wiki/Q75271692> .
   # oo Marcia Amelia Mary Lane-Fox, 13th Baroness Conyers, 1863-10-18 - 1926-11-17 (fox.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5081569> , <https://www.wikidata.org/wiki/Q6757137> ;
 	gen:startDate "1886-08-05" .
-<#Lady_Gertrude_Augusta_Anderson-Pelham>
+<https://www.wikidata.org/wiki/Q75255786>
   # Lady Gertrude Augusta Anderson-Pelham, 1861-05-11 - 1920-07-06
   gen:father <https://www.wikidata.org/wiki/Q5075117> ;
   gen:mother <https://www.wikidata.org/wiki/Q75271692> .
-  # oo 1882-06-05 Sir Francis Edmund George Astley, 4th Baronet, 1859-02-06 - 1939-02-05, #Sir_Francis_Astley,_4th_Baronet
-<#Cecil_Henry_Anderson-Pelham>
+  # oo 1882-06-05 Sir Francis Edmund George Astley, 4th Baronet, 1859-02-06 - 1939-02-05, https://www.wikidata.org/wiki/Q75345994 (byng.ttl)
+<https://www.wikidata.org/wiki/Q76102807>
   # Cecil Henry Anderson-Pelham, 1874-01-25 - 1945-11-14
-  gen:father <#Evelyn_Cornwallis_Anderson-Pelham> ;
-  gen:mother <#Harriet_Frances_Hutton> .
-  # oo Hon. Georgina Hamilton, d. 1970-12-20
+  gen:father <https://www.wikidata.org/wiki/Q76347540> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76177554> .
+  # oo Hon. Georgina Hamilton, d. 1970-12-20 (wellesley.ttl)
   []
-    gen:spouse <#Cecil_Henry_Anderson-Pelham> , <wellesley.ttl#Georgina_Hamilton> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q76102807> , <https://www.wikidata.org/wiki/Q76102806> ;
 	gen:startDate "1902-11-12" .
 
 <https://www.wikidata.org/wiki/Q5081571>
@@ -263,15 +281,15 @@
   gen:mother <https://www.wikidata.org/wiki/Q6757137> .
   # oo Nancy Brocklehurst, d. 1977-10-27, daughter of Alfred Brocklehurst
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q7396861> , <#Nancy_Brocklehurst> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q7396861> , <https://www.wikidata.org/wiki/Q75296388> ;
 	gen:startDate "1919-09-23" .
 <https://www.wikidata.org/wiki/Q21705482>
   # Marcus Herbert Pelham, 6th Earl of Yarborough, 1893-06-30 - 1966-12-02
   gen:father <https://www.wikidata.org/wiki/Q5081569> ;
   gen:mother <https://www.wikidata.org/wiki/Q6757137> .
-  # oo Hon. Pamela Douglas-Pennant, 1896-05-11 - 1968-01-31
+  # oo Hon. Pamela Douglas-Pennant, 1896-05-11 - 1968-01-31 (douglas.ttl)
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q21705482> , <douglas.ttl#Pamela_Douglas-Pennant> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q21705482> , <https://www.wikidata.org/wiki/Q75296401> ;
 	gen:startDate "1919-09-03" .
 
 <https://www.wikidata.org/wiki/Q5271238>
@@ -279,116 +297,116 @@
   # (11th) Condessa de Mértola 1948-02-07
   # 15th Lady Conyers, 8th Baroness Fauconberge 2012-05-17
   gen:father <https://www.wikidata.org/wiki/Q7396861> ;
-  gen:mother <#Nancy_Brocklehurst> .
-  # oo 1952-11-15 Robert Miller, d. 1990, #Robert_Miller
-<#Lady_June_Wendy_Pelham>
-  # Lady June Wendy Pelham+, 1924-01-06 - 2012-05-17
+  gen:mother <https://www.wikidata.org/wiki/Q75296388> .
+  # oo 1952-11-15 Robert Miller, d. 1990, https://www.wikidata.org/wiki/Q75296392
+<https://www.wikidata.org/wiki/Q75296397>
+  # Lady June _Wendy_ Pelham, 1924-01-06 - 2012-05-17
   gen:father <https://www.wikidata.org/wiki/Q7396861> ;
-  gen:mother <#Nancy_Brocklehurst> .
-  # oo 1959-10-12 Michael Hildesley Lycett, d. 2016-12-17, #Michael_Hildesley_Lycett
-<#John_Pelham,_7th_Earl_of_Yarborough>
+  gen:mother <https://www.wikidata.org/wiki/Q75296388> .
+  # oo 1959-10-12 Michael Lycett, d. 2016-12-17, https://www.wikidata.org/wiki/Q75296399
+<https://www.wikidata.org/wiki/Q23062216>
   # John Edward Pelham, 7th Earl of Yarborough, 1920-06-02 - 1991-03-21
   gen:father <https://www.wikidata.org/wiki/Q21705482> ;
-  gen:mother <douglas.ttl#Pamela_Douglas-Pennant> .
-  # oo Florence Anne Petronel Upton, 1924-01-25 - 2013-06-24, daughter of John Herbert Upton and Petronel Fursdon
+  gen:mother <https://www.wikidata.org/wiki/Q75296401> .
+  # oo Florence _Anne_ Petronel Upton, 1924-01-25 - 2013-06-24, daughter of John Herbert Upton and Petronel Fursdon
   []
-    gen:spouse <#John_Pelham,_7th_Earl_of_Yarborough> , <#Florence_Anne_Petronel_Upton> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q23062216> , <https://www.wikidata.org/wiki/Q75275892> ;
 	gen:startDate "1957-12-12" .
-<#Lady_Janet_Marcia_Rose_Pelham>
+<https://www.wikidata.org/wiki/Q75275883>
   # Lady Janet Marcia Rose Pelham, b. 1923-10-17
   gen:father <https://www.wikidata.org/wiki/Q21705482> ;
-  gen:mother <douglas.ttl#Pamela_Douglas-Pennant> .
-  # oo 1948-03-20 John Charles Harper, d. 1998-09-11, #John_Charles_Harper
+  gen:mother <https://www.wikidata.org/wiki/Q75296401> .
+  # oo 1948-03-20 John Charles Harper, d. 1998-09-11, https://www.wikidata.org/wiki/Q75275889
 
 <https://www.wikidata.org/wiki/Q5081570>
   # Abdul Mateen Pelham, 8th Earl of Yarborough, b. 1963-11-05
   # Charles John Pelham
-  gen:father <#John_Pelham,_7th_Earl_of_Yarborough> ;
-  gen:mother <#Florence_Anne_Petronel_Upton> .
+  gen:father <https://www.wikidata.org/wiki/Q23062216> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75275892> .
   # oo Anna-Karin Zecevic, daughter of George Zecevic
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q5081570> , <#Anna-Karin_Zecevic> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q5081570> , <https://www.wikidata.org/wiki/Q75308580> ;
 	gen:startDate "1990" .
 
-<#George_John_Sackville_Pelham,_Lord_Worsley>
+<https://www.wikidata.org/wiki/Q75275872>
   # George John Sackville Pelham, Lord Worsley, b. 1990-08-09
   gen:father <https://www.wikidata.org/wiki/Q5081570> ;
-  gen:mother <#Anna-Karin_Zecevic> .
-<#William_Charles_John_Walter_Pelham>
+  gen:mother <https://www.wikidata.org/wiki/Q75308580> .
+<https://www.wikidata.org/wiki/Q75308582>
   # Hon. William Charles John Walter Pelham, b. 1991
   gen:father <https://www.wikidata.org/wiki/Q5081570> ;
-  gen:mother <#Anna-Karin_Zecevic> .
-<#James_Marcus_Pelham>
+  gen:mother <https://www.wikidata.org/wiki/Q75308580> .
+<https://www.wikidata.org/wiki/Q75308583>
   # Hon. James Marcus Pelham, b. 1994
   gen:father <https://www.wikidata.org/wiki/Q5081570> ;
-  gen:mother <#Anna-Karin_Zecevic> .
-<#Lady_Margaret_Ann_Emily_Pelham>
+  gen:mother <https://www.wikidata.org/wiki/Q75308580> .
+<https://www.wikidata.org/wiki/Q104099874>
   # Lady Margaret Ann Emily Pelham, b. 1997-01
   gen:father <https://www.wikidata.org/wiki/Q5081570> ;
-  gen:mother <#Anna-Karin_Zecevic> .
-<#Edward_John_Herbert_Pelham>
+  gen:mother <https://www.wikidata.org/wiki/Q75308580> .
+<https://www.wikidata.org/wiki/Q104099914>
   # Hon. Edward John Herbert Pelham, b. 2002
   gen:father <https://www.wikidata.org/wiki/Q5081570> ;
-  gen:mother <#Anna-Karin_Zecevic> .
+  gen:mother <https://www.wikidata.org/wiki/Q75308580> .
 
 
 # Anderson Baronets of Broughton
-<#Sir_Edmund_Anderson,_1st_Baronet>
+<https://www.wikidata.org/wiki/Q75408142>
   # Sir Edmund Anderson, 1st Baronet, 1605-08-10 - 1661-01~
-  # 1st Baronet Anderson, of Broughton, co. Lincoln 1660-12-11
-  gen:father <#William_Anderson> ;
-  gen:mother <#Joan_Essex> .
+  # 1st Baronet Anderson, of Broughton, co. Lincoln [England] 1660-12-11
+  gen:father <https://www.wikidata.org/wiki/Q75408143> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75408145> .
   # oo Mary Wood, 1606a - 1637-01-30, daughter of Thomas Wood and Mary Boteler
   []
-    gen:spouse <#Sir_Edmund_Anderson,_1st_Baronet> , <#Mary_Wood> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75408142> , <https://www.wikidata.org/wiki/Q75408150> ;
 	gen:startDate "1623-12-03" .
   # oo Sybilla Egerton, 1605~ - 1661-08a/-11b
   []
-    gen:spouse <#Sir_Edmund_Anderson,_1st_Baronet> , <egerton.ttl#Sybilla_Egerton> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75408142> , <https://www.wikidata.org/wiki/Q75408155> ;
 	gen:startDate "1649-09-11" .
 
-<#Sir_John_Anderson,_2nd_Baronet>
+<https://www.wikidata.org/wiki/Q75408162>
   # Sir John Anderson, 2nd Baronet, 1628-12-23 - 1670-03-18
-  gen:father <#Sir_Edmund_Anderson,_1st_Baronet> ;
-  gen:mother <#Mary_Wood> .
+  gen:father <https://www.wikidata.org/wiki/Q75408142> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75408150> .
   # oo Elizabeth Snawsell, d. 1698-07~, daughter of Hugh Snawsell and Isabel Beaumont
   []
-    gen:spouse <#Sir_John_Anderson,_2nd_Baronet> , <#Elizabeth_Snawsell> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75408162> , <https://www.wikidata.org/wiki/Q75408163> ;
 	gen:startDate "1661b" .
-<#Sir_Edmund_Anderson,_4th_Baronet>
+<https://www.wikidata.org/wiki/Q75408172>
   # Sir Edmund Anderson, 4th Baronet, 1629-01-07 - 1702-02a/1703-03b
-  gen:father <#Sir_Edmund_Anderson,_1st_Baronet> ;
-  gen:mother <#Mary_Wood> .
+  gen:father <https://www.wikidata.org/wiki/Q75408142> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75408150> .
   # oo Mary Cox,  b. 1641~, daughter of William Cox
   []
-    gen:spouse <#Sir_Edmund_Anderson,_4th_Baronet> , <#Mary_Cox> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75408172> , <https://www.wikidata.org/wiki/Q75408174> ;
 	gen:startDate "1662-05-31" .
   # oo Elizabeth Deane, 1660~ - 1716b, daughter of Sir Anthony Deane
   []
-    gen:spouse <#Sir_Edmund_Anderson,_4th_Baronet> , <#Elizabeth_Deane> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75408172> , <https://www.wikidata.org/wiki/Q75408179> ;
 	gen:startDate "1686-03-26" .
 
-<#Sir_Edmund_Anderson,_3rd_Baronet>
+<https://www.wikidata.org/wiki/Q75408170>
   # Sir Edmund Anderson, 3rd Baronet, 1661~  1676-12-17
-  gen:father <#Sir_John_Anderson,_2nd_Baronet> ;
-  gen:mother <#Elizabeth_Snawsell> .
-<#Sir_Edmund_Anderson,_5th_Baronet>
+  gen:father <https://www.wikidata.org/wiki/Q75408162> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75408163> .
+<https://www.wikidata.org/wiki/Q75408183>
   # Sir Edmund Anderson, 5th Baronet, 1687-11-04 - 1765-05-03
-  gen:father <#Sir_Edmund_Anderson,_4th_Baronet> ;
-  gen:mother <#Elizabeth_Deane> .
-  # oo Mary Harvey, d. 1758-08-16, daughter of William Harvey and Dorothy Dycer
+  gen:father <https://www.wikidata.org/wiki/Q75408172> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75408179> .
+  # oo Mary Harvey, d. 1758-08-16
   []
-    gen:spouse <#Sir_Edmund_Anderson,_5th_Baronet> , <#Mary_Harvey> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75408183> , <https://www.wikidata.org/wiki/Q75408185> ;
 	gen:startDate "1721b" .
   # oo Frances Batty, 1729~ - 1801-09-11, daughter of J. Batty
   []
-    gen:spouse <#Sir_Edmund_Anderson,_5th_Baronet> , <#Frances_Batty> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75408183> , <https://www.wikidata.org/wiki/Q75408194> ;
 	gen:startDate "1754-02-11" .
 
 <https://www.wikidata.org/wiki/Q75273654>
   # Rev. Sir William Anderson, 6th Baronet, 1722-03-31 - 1785-03-09
-  gen:father <#Sir_Edmund_Anderson,_5th_Baronet> ;
-  gen:mother <#Mary_Harvey> .
+  gen:father <https://www.wikidata.org/wiki/Q75408183> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75408185> .
   # oo Anne Maddison, 1727~ - 1783-08-31, daughter of John Maddison
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75273654> , <https://www.wikidata.org/wiki/Q75408200> ;
@@ -399,479 +417,88 @@
   gen:father <https://www.wikidata.org/wiki/Q75273654> ;
   gen:mother <https://www.wikidata.org/wiki/Q75408200> .
   # oo 1778-01-01 Rev. Richard Vevers, 1756-03-23 - 1838-01-17, https://www.wikidata.org/wiki/Q75273651
-<#Sir_Edmund_Anderson,_7th_Baronet>
+<https://www.wikidata.org/wiki/Q75408205>
   # Sir Edmund Anderson, 7th Baronet, 1758-09-11 - 1799-05-30
   gen:father <https://www.wikidata.org/wiki/Q75273654> ;
   gen:mother <https://www.wikidata.org/wiki/Q75408200> .
   # oo Catherine Plumer, 1759~ - 1798-12-02, daughter of Thomas Plumer
-<#Sir_Charles_John_Anderson,_8th_Baronet>
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75408205> , <https://www.wikidata.org/wiki/Q75408206> .
+<https://www.wikidata.org/wiki/Q75408210>
   # Rev. Sir Charles John Anderson, 8th Baronet, 1767-10-05 - 1846-03-24
   gen:father <https://www.wikidata.org/wiki/Q75273654> ;
   gen:mother <https://www.wikidata.org/wiki/Q75408200> .
-  # oo Frances Mary Nelthorpe, 1776~ - 1836-08-18
+  # oo Frances Mary Nelthorpe, 1776~ - 1836-08-18 (beauclerk.ttl)
   []
-    gen:spouse <#Sir_Charles_John_Anderson,_8th_Baronet> , <#Frances_Mary_Nelthorpe> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75408210> , <https://www.wikidata.org/wiki/Q75408212> ;
 	gen:startDate "1802-12-13" .
 
 <https://www.wikidata.org/wiki/Q75408218>
   # Sir Charles Henry John Anderson, 9th Baronet, 1804-11-24 - 1891-10-08
-  gen:father <#Sir_Charles_John_Anderson,_8th_Baronet> ;
-  gen:mother <#Frances_Mary_Nelthorpe> .
+  gen:father <https://www.wikidata.org/wiki/Q75408210> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75408212> .
   # oo Emma Foljambe, 1803-05-07 - 1870-08-08 (savile.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75408218> , <https://www.wikidata.org/wiki/Q75408219> ;
 	gen:startDate "1832-09-11" .
-<#Frances_Maria_Anderson>
+<https://www.wikidata.org/wiki/Q76245980>
   # Frances Maria Anderson, 1809-05-04 - 1885~
-  gen:father <#Sir_Charles_John_Anderson,_8th_Baronet> ;
-  gen:mother <#Frances_Mary_Nelthorpe> .
-  # oo 1838-06-24 Sir John Nelthorpe, 8th Baronet, 1814-09-27 - 1865-11-22, #Sir_John_Nelthorpe,_8th_Baronet
+  gen:father <https://www.wikidata.org/wiki/Q75408210> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75408212> .
+  # oo 1838-06-24 Sir John Nelthorpe, 8th Baronet, 1814-09-27 - 1865-11-22, https://www.wikidata.org/wiki/Q75304173 (beauclerk.ttl)
+
 
 # ====
-#<#Robert_Miller>
+#<https://www.wikidata.org/wiki/Q75296392>
   # Robert Miller, d. 1990
   # son of Gordon Molineux Miller
   # oo Diana Mary Pelham, 15th Baroness Conyers, 1920-07-05 - 2013-03-02
   []
-    gen:spouse <#Robert_Miller> , <https://www.wikidata.org/wiki/Q5271238> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75296392> , <https://www.wikidata.org/wiki/Q5271238> ;
 	gen:startDate "1952-11-15" .
 
-<#Anthea_Theresa_Lycett>
+<https://www.wikidata.org/wiki/Q75296395>
   # Anthea Theresa Lycett, b. 1954-06-21
   # Marcia Anne Miller
-  gen:father <#Robert_Miller> ;
+  # Anthea Theresa Lycett
+  gen:father <https://www.wikidata.org/wiki/Q75296392> ;
   gen:mother <https://www.wikidata.org/wiki/Q5271238> ;
-  gen:adoptedBy <#Michael_Hildesley_Lycett> , <#Moira_???> .
-<#Beatrix_Diana_Miller>
+  gen:adoptedBy <https://www.wikidata.org/wiki/Q75296399> , <https://www.wikidata.org/wiki/Q75296397> .
+<https://www.wikidata.org/wiki/Q75296396>
   # Beatrix Diana Miller, b. 1955-08-23
-  gen:father <#Robert_Miller> ;
+  gen:father <https://www.wikidata.org/wiki/Q75296392> ;
   gen:mother <https://www.wikidata.org/wiki/Q5271238> .
-  # oo 1991 Simon William Jones Armstrong, 1957-05-25 - 2012, #Simon_William_Jones_Armstrong
+  # oo 1991 Simon William Jones Armstrong, 1957-05-25 - 2012, https://www.wikidata.org/wiki/Q75287944
 
 # ====
-#<#Michael_Hildesley_Lycett>
+#<https://www.wikidata.org/wiki/Q75296399>
   # Michael Hildesley Lycett, d. 2016-12-17
   # son of Rev. Norman Lycett Lycett
   # and Ruth Edith Burns-Lindow
   # oo Moira ???, d. 1958-08
   []
-    gen:spouse <#Michael_Hildesley_Lycett> , <#Moira_???> .
-  # oo Lady June Wendy Pelham+, 1924-01-06 - 2012-05-17
+    gen:spouse <https://www.wikidata.org/wiki/Q75296399> , <#Moira_???> .
+  # oo Lady Wendy Pelham, 1924-01-06 - 2012-05-17
   []
-    gen:spouse <#Michael_Hildesley_Lycett> , <#Lady_June_Wendy_Pelham> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75296399> , <https://www.wikidata.org/wiki/Q75296397> ;
 	gen:startDate "1959-10-12" .
 
 
 # ----
-#<#Thomas_Essex>
+#<https://www.wikidata.org/wiki/Q75408147>
   # Thomas Essex
   # oo Joan Harrison
 
 <https://www.wikidata.org/wiki/Q7529582>
-  # Sir William Essex, 1st Baronet, b. 1575
-  gen:father <#Thomas_Essex> .
+  # Sir William Essex, 1st Baronet, 1575~ - 1645~
+  # 1st Baronet Essex, of Bewcot in the County of Berkshire [England] 1611
+  gen:father <https://www.wikidata.org/wiki/Q75408147> .
   # and Joan Harrison
-<#Joan_Essex>
+<https://www.wikidata.org/wiki/Q75408145>
   # Joan Essex
-  gen:father <#Thomas_Essex> .
+  gen:father <https://www.wikidata.org/wiki/Q75408147> .
   # and Joan Harrison
-  # oo William Anderson, #William_Anderson
-
-# ====
-<https://www.wikidata.org/wiki/Q7529213>
-  # Sir Thomas Monson, 1st Baronet, 1564 - 1641-05-25
-  # 1st Baronet Monson, of Carlton 1611-06-29
-  gen:father <https://www.wikidata.org/wiki/Q56233182> ; # Sir John Monson
-  gen:mother <https://www.wikidata.org/wiki/Q76271519> . # Jane Dighton
-  # oo Margaret Anderson, d. 1630-07-31~
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q7529213> , <https://www.wikidata.org/wiki/Q75403544> ;
-	gen:startDate "1590-07" .
-<https://www.wikidata.org/wiki/Q8015736>
-  # Sir William Monson, 1569 - 1643
-  gen:father <https://www.wikidata.org/wiki/Q56233182> ; # Sir John Monson
-  gen:mother <https://www.wikidata.org/wiki/Q76271519> . # Jane Dighton
-  # oo Dorothy Wallop, 1570 - 1642, daughter of Richard Wallop and Mary Spencer
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q8015736> , <https://www.wikidata.org/wiki/Q76271526> ;
-	gen:startDate "1593" .
-
-<https://www.wikidata.org/wiki/Q7527941>
-  # Sir John Monson, 2nd Baronet, 1599 – 1683-12
-  gen:father <https://www.wikidata.org/wiki/Q7529213> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75403544> .
-  # oo Ursula Oxenbridge, d. 1692-12, daughter of Sir Robert Oxenbridge and Elizabeth Cock
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q7527941> , <https://www.wikidata.org/wiki/Q76271545> ;
-	gen:startDate "1627" .
-<https://www.wikidata.org/wiki/Q75403543>
-  # Bridget Monson, d. 1640-05~
-  gen:father <https://www.wikidata.org/wiki/Q7529213> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75403544> .
-  # oo 1632-05-28 Sapcote Beaumont, 2nd Viscount Beaumont of Swords, 1614-05-10 - 1658, https://www.wikidata.org/wiki/Q75403541 (brienne.ttl)
-<https://www.wikidata.org/wiki/Q8015735>
-  # William Monson, 1st Viscount Monson, 1600 - 1672
-  # 1st Baron Monson of Ballingard, co. Limerick, 1st Viscount Monson, of Castlemaine, co. Kerry 1628-08-23
-  gen:father <https://www.wikidata.org/wiki/Q8015736> ;
-  gen:mother <https://www.wikidata.org/wiki/Q76271526> .
-  # oo Lady Margaret Stuart, 1591 - 1639-08-04
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q8015735> , <https://www.wikidata.org/wiki/Q6759534> ;
-	gen:startDate "1625-10-23" .
-  # oo Frances Alston, d. 1651-01, daughter of Thomas Alston
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q8015735> , <https://www.wikidata.org/wiki/Q76271528> ;
-	gen:startDate "1646-05" .
-  # oo Elizabeth Reresby, 1613-02-24 - 1695, daughter of Sir George Reresby and Elizabeth Tamworth
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q8015735> , <https://www.wikidata.org/wiki/Q76012898> ;
-	gen:startDate "1661" .
-<https://www.wikidata.org/wiki/Q76271522>
-  # John Monson, b. 1604
-  gen:father <https://www.wikidata.org/wiki/Q8015736> ;
-  gen:mother <https://www.wikidata.org/wiki/Q76271526> .
-  # oo Anne Mayne, 1617 - 1667-08-29, daughter of James Mayne
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q76271522> , <https://www.wikidata.org/wiki/Q76271524> .
-<https://www.wikidata.org/wiki/Q75270888>
-  # Jane Monson, 1590 - 1691-12-06
-  gen:father <https://www.wikidata.org/wiki/Q8015736> ;
-  gen:mother <https://www.wikidata.org/wiki/Q76271526> .
-  # oo 1604-07-04 Sir Francis Howard, 1585-10-21b - 1651-07-07, https://www.wikidata.org/wiki/Q75270885
-
-<https://www.wikidata.org/wiki/Q16859764>
-  # Sir John Monson, 1628 - 1674
-  gen:father <https://www.wikidata.org/wiki/Q7527941> ;
-  gen:mother <https://www.wikidata.org/wiki/Q76271545> .
-  # oo Judith Pelham
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q16859764> , <https://www.wikidata.org/wiki/Q75425866> ;
-	gen:startDate "1647-06-07" .
-<https://www.wikidata.org/wiki/Q76271535>
-  # Hon. Elizabeth Monson
-  gen:father <https://www.wikidata.org/wiki/Q8015735> ;
-  gen:mother <https://www.wikidata.org/wiki/Q76012898> .
-  # oo Sir Philip Hungate, 3rd Baronet, 1661 – 1690, https://www.wikidata.org/wiki/Q76271537
-<https://www.wikidata.org/wiki/Q75446325>
-  # Anne Monson, 1742~ - 1728-07-23
-  gen:father <https://www.wikidata.org/wiki/Q76271522> ;
-  gen:mother <https://www.wikidata.org/wiki/Q76271524> .
-  # oo 1660b Sir Francis Throckmorton, 2nd Baronet, 1641 - 1680-11-07~, https://www.wikidata.org/wiki/Q7526738
-
-<https://www.wikidata.org/wiki/Q7529695>
-  # Sir William Monson, 4th Baronet, 1658b - 1727-03-07
-  gen:father <https://www.wikidata.org/wiki/Q16859764> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75425866> .
-  # oo Letitia Poulett, d. 1734-04-25 (paulet.ttl)
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q7529695> , <https://www.wikidata.org/wiki/Q76271560> .
-<https://www.wikidata.org/wiki/Q56232930>
-  # George Monson, of Broxbourne, 1658-02-27 - 1726
-  gen:father <https://www.wikidata.org/wiki/Q16859764> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75425866> .
-  # oo Anne Wren, d. 1726-10-16, daughter of Charles Wren
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q56232930> , <https://www.wikidata.org/wiki/Q76271562> .
-
-<https://www.wikidata.org/wiki/Q6249170>
-  # John Monson, 1st Baron Monson of Burton, 1693~ – 1748-07-18
-  # 5th Baronet Monson, of Carlton 1727-03-07
-  # 1st Baron Monson of Burton, co. Lincoln 1728-05-28
-  gen:father <https://www.wikidata.org/wiki/Q56232930> ;
-  gen:mother <https://www.wikidata.org/wiki/Q76271562> .
-  # oo Lady Margaret Watson, 1695 – 1751 (manners.ttl)
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q6249170> , <https://www.wikidata.org/wiki/Q75284240> ;
-	gen:startDate "1725-04-08" .
-
-<https://www.wikidata.org/wiki/Q16859419>
-  # John Monson, 2nd Baron Monson, 1727-07-23 - 1774-07-23
-  gen:father <https://www.wikidata.org/wiki/Q6249170> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75284240> .
-  # oo Theodosia Maddison, 1727a - 1821-02-20, daughter of John Maddison
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q16859419> , <https://www.wikidata.org/wiki/Q75284242> ;
-	gen:startDate "1752-06-23" .
-<https://www.wikidata.org/wiki/Q26857773> # -> Baron Sondes of Lees Court
-  # Lewis Watson, 1st Baron Sondes of Lees Court, 1728-11-28 – 1795-03-30
-  gen:father <https://www.wikidata.org/wiki/Q6249170> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75284240> .
-<https://www.wikidata.org/wiki/Q18527477>
-  # Hon. George Monson, 1730-04-18 - 1776-09-25
-  gen:father <https://www.wikidata.org/wiki/Q6249170> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75284240> .
-  # oo Lady Anne Vane, 1726-06-25 - 1776-02-18 (fane.ttl)
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q18527477> , <https://www.wikidata.org/wiki/Q15994645> ;
-	gen:startDate "1757" .
-
-<https://www.wikidata.org/wiki/Q56233134>
-  # John Monson, 3rd Baron Monson of Burton, 1753-05-25 - 1806-05-20
-  gen:father <https://www.wikidata.org/wiki/Q16859419> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75284242> .
-  # oo Lady Elizabeth Capell, 1755-08-10 - 1834-02-23
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q56233134> , <https://www.wikidata.org/wiki/Q56233136> ;
-	gen:startDate "1777-07-13" .
-<https://www.wikidata.org/wiki/Q18736084>
-  # Hon. William Monson, 1760-12-15 - 1807-12-26
-  gen:father <https://www.wikidata.org/wiki/Q16859419> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75284242> .
-  # oo Anne Debonnaire, 1760a - 1841, daughter of John Debonnaire
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q18736084> , <https://www.wikidata.org/wiki/Q75284251> ;
-	gen:startDate "1786-01-10" .
-
-<https://www.wikidata.org/wiki/Q56233143>
-  # John George Monson, 4th Baron Monson, 1785-02-01 - 1809-11-14
-  gen:father <https://www.wikidata.org/wiki/Q56233134> ;
-  gen:mother <https://www.wikidata.org/wiki/Q56233136> .
-  # oo Lady Sarah Elizabeth Savile, 1786-02-04 - 1851-01-30
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q56233143> , <https://www.wikidata.org/wiki/Q56612433> ;
-	gen:startDate "1807-10-30" .
-<https://www.wikidata.org/wiki/Q22117207>
-  # William Monson, 6th Baron Monson, 1796-05-14 - 1862-12-17
-  gen:father <https://www.wikidata.org/wiki/Q18736084> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75284251> .
-  # oo Eliza Larken, 1803-10-24 - 1863-01-22, daughter of Edmund Larken and Anne Greaves
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q22117207> , <https://www.wikidata.org/wiki/Q75284254> ;
-	gen:startDate "1828-05-08" .
-
-<https://www.wikidata.org/wiki/Q56240761>
-  # Debonnaire Monson, 8th Baron Monson, 1830-03-07 - 1900-06-18
-  gen:father <https://www.wikidata.org/wiki/Q22117207> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75284254> .
-  # oo Augusta Louisa Caroline Ellis, 1842~ - 1936-05-21 (hervey.ttl)
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q56240761> , <https://www.wikidata.org/wiki/Q75284276> ;
-	gen:startDate "1861-12-25" .
-
-<https://www.wikidata.org/wiki/Q56240762>
-  # Augustus Monson, 9th Baron Monson, 1868-09-22 - 1940-10-10
-  gen:father <https://www.wikidata.org/wiki/Q56240761> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75284276> .
-  # oo Romaine Stone, d. 1943-01-01, daughter of Roy Stone
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q56240762> , <https://www.wikidata.org/wiki/Q75284272> ;
-	gen:startDate "1903-07-01" .
-<https://www.wikidata.org/wiki/Q75721662>
-  # Hon. Adelaide Violet Cicely Monson, 1870-04 - 1955-04-21
-  gen:father <https://www.wikidata.org/wiki/Q56240761> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75284276> .
-  # oo 1898-06-09 Sir George Granville Leveson-Gower, 1858-05-19 - 1951-07-18, https://www.wikidata.org/wiki/Q2906438 (gower.ttl)
-<https://www.wikidata.org/wiki/Q75284238>
-  # Hon. Edomé Eliza Theodosia Monson, 1870~ - 1950-05-30
-  gen:father <https://www.wikidata.org/wiki/Q56240761> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75284276> .
-  # oo 1890-06-14 Walter Hill Chetwynd, 1856-01-13 - 1916-02-23, https://www.wikidata.org/wiki/Q75284237
-
-<https://www.wikidata.org/wiki/Q21903500>
-  # John Rosebery Monson, 10th Baron Monson, 1907-02-11 - 1958-04-07
-  gen:father <https://www.wikidata.org/wiki/Q56240762> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75284272> .
-  # oo Bettie Northrup Powell, d. 2011-06-09, daughter of E. Alexander Powell
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q21903500> , <https://www.wikidata.org/wiki/Q75284443> ;
-	gen:startDate "1931-08-04" .
-
-<https://www.wikidata.org/wiki/Q76271651>
-  # Hon. Jeremy David Alfonso John Monson, 1934-09-29 - 2007
-  gen:father <https://www.wikidata.org/wiki/Q21903500> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75284443> .
-  # oo Patricia Mary Barker, daughter of George Barker
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q76271651> , <https://www.wikidata.org/wiki/Q76271652> ;
-	gen:startDate "1958-12-04" .
-
-<https://www.wikidata.org/wiki/Q75723503>
-  # John Guy Elmhirst Monson, b. 1962-09-11
-  gen:father <https://www.wikidata.org/wiki/Q76271651> ;
-  gen:mother <https://www.wikidata.org/wiki/Q76271652> .
-  # oo Lady Olivia Rose Mildred Fitzroy, b. 1963-08-01
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q75723503> , <https://www.wikidata.org/wiki/Q75334694> ;
-	gen:startDate "1995-03-17" .
-
-
-# Baron Sondes of Lees Court
-<https://www.wikidata.org/wiki/Q26857773>
-  # Lewis Watson, 1st Baron Sondes of Lees Court, 1728-11-28 – 1795-03-30
-  # 1st Baron Sondes of Lees Court, co. Kent 1760-05-22
-  gen:father <https://www.wikidata.org/wiki/Q6249170> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75284240> .
-  # oo Grace Pelham, 1728-08-18 - 1777-07-31
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q26857773> , <https://www.wikidata.org/wiki/Q75570822> ;
-	gen:startDate "1752-10-12" .
-
-<https://www.wikidata.org/wiki/Q26419739>
-  # Lewis Thomas Watson, 2nd Baron Sondes, 1754-04-18 - 1806-06-21
-  gen:father <https://www.wikidata.org/wiki/Q26857773> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75570822> .
-  # oo Mary Elizabeth Milles, 1767 - 1818-09-02, daughter of Richard Milles and Mary Elizabeth Tanner
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q26419739> , <https://www.wikidata.org/wiki/Q75284699> ;
-	gen:startDate "1785-11-30" .
-
-<https://www.wikidata.org/wiki/Q27468382>
-  # George John Milles, 4th Baron Sondes, 1794-01-20 - 1874-12-17
-  # George John Watson
-  gen:father <https://www.wikidata.org/wiki/Q26419739> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75284699> .
-  # oo Eleanor Knatchbull, 1803-07-20 - 1883-10-30 (wyndham.ttl)
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q27468382> , <https://www.wikidata.org/wiki/Q75273143> ;
-	gen:startDate "1823-07-24" .
-<https://www.wikidata.org/wiki/Q7329841>
-  # Hon. Richard Watson, 1800-01-06 - 1852-07-24
-  gen:father <https://www.wikidata.org/wiki/Q26419739> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75284699> .
-  # oo Lavinia Jane Quin, 1816-03-21 - 1888-02-20 (taylour.ttl)
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q7329841> , <https://www.wikidata.org/wiki/Q75384941> ;
-	gen:startDate "1839-12-21" .
-
-<https://www.wikidata.org/wiki/Q5542490>
-  # George Watson Milles, 1st Earl Sondes, 1824-10-02 - 1894-09-10
-  # 5th Baron Sondes 1874-12-17
-  # 1st Viscount Throwley, of the County of Kent, 1st Earl Sondes, of Lees Court in the County of Kent 1880
-  gen:father <https://www.wikidata.org/wiki/Q27468382> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75273143> .
-  # oo Charlotte Stracey, 1837 - 1927-06-23
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q5542490> , <https://www.wikidata.org/wiki/Q75269732> ;
-	gen:startDate "1859-01-25" .
-<https://www.wikidata.org/wiki/Q75273655>
-  # Hon. Mary Julia Milles, 1825-10-08 - 1901-04-10
-  gen:father <https://www.wikidata.org/wiki/Q27468382> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75273143> .
-  # oo 1845-07-22 Edward Fellowes, 1st Baron de Ramsey of Ramsey Abbey, 1809-04-14 - 1887-08-09, https://www.wikidata.org/wiki/Q5342877 (herbert.ttl)
-<https://www.wikidata.org/wiki/Q75273139>
-  # Hon. Elizabeth Frances Milles, 1827-08-26 - 1894-03-12
-  gen:father <https://www.wikidata.org/wiki/Q27468382> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75273143> .
-  # oo 1846-09-03 James George Henry Stopford, 5th Earl of Courtown, 1823-04-24 - 1914-11-28, https://www.wikidata.org/wiki/Q11716795 (scott.ttl)
-<https://www.wikidata.org/wiki/Q75307799>
-  # Mary Georgiana Watson Watson, d. 1912-03-06
-  gen:father <https://www.wikidata.org/wiki/Q7329841> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75384941> .
-  # oo 1866-10-16 Sir Michael Culme-Seymour, 3rd Baronet, 1836-03-13 - 1920-10-11, https://www.wikidata.org/wiki/Q7528334 (seymour.ttl)
-<https://www.wikidata.org/wiki/Q75300867>
-  # George Lewis Watson, 1841-03-09 - 1899-12-31
-  gen:father <https://www.wikidata.org/wiki/Q7329841> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75384941> .
-  # oo Laura Maria Culme-Seymour, d. 1893-03-21 (seymour.ttl)
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q75300867> , <https://www.wikidata.org/wiki/Q75307673> ;
-	gen:startDate "1867-01-01" .
-
-<https://www.wikidata.org/wiki/Q75266853>
-  # Lady Constance Grace Milles, 1864 - 1941-02-28
-  gen:father <https://www.wikidata.org/wiki/Q5542490> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75269732> .
-  # oo 1885-10-01 Francis William George Gore, 1855-06-22 - 1938-07-17, https://www.wikidata.org/wiki/Q67950287
-<https://www.wikidata.org/wiki/Q28935273>
-  # Hon. Henry Augustus Milles, 1867-11-24 - 1937-07-30
-  gen:father <https://www.wikidata.org/wiki/Q5542490> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75269732> .
-  # oo Esther Benyon, daughter of Joseph Spencer Benyon
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q28935273> , <https://www.wikidata.org/wiki/Q75253741> ;
-	gen:startDate "1912-04-24" .
-
-<https://www.wikidata.org/wiki/Q75253639>
-  # Isabel Milles-Lade, 1920-10-18 - 1990
-  gen:father <https://www.wikidata.org/wiki/Q28935273> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75253741> .
-  # oo 1948-07-22 Edward John Stanley, 18th Earl of Derby, 1918-04-21 - 1994-11-28, https://www.wikidata.org/wiki/Q5345407
-
-# ----
-#<https://www.wikidata.org/wiki/Q7528856>
-  # Sir Robert Throckmorton, 1st Baronet, 1599 - 1650-01-16
-  # 1st Baronet Throckmorton, of Coughton, co. Warwick 1642-09-01
-  # son of John Throckmorton
-  # and Agnes Wilford
-  # oo Mary Smith, 1622~ - 1663, daughter of Sir Francis Smyth and Anne Markham
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q7528856> , <https://www.wikidata.org/wiki/Q75446324> ;
-	gen:startDate "1640b" .
-
-<https://www.wikidata.org/wiki/Q7526738>
-  # Sir Francis Throckmorton, 2nd Baronet, 1641 - 1680-11-07~
-  gen:father <https://www.wikidata.org/wiki/Q7528856> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75446324> .
-  # oo Anne Monson, 1742~ - 1728-07-23
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q7526738> , <https://www.wikidata.org/wiki/Q75446325> ;
-	gen:startDate "1660b" .
-
-<https://www.wikidata.org/wiki/Q75446259>
-  # Sir Robert Throckmorton, 3rd Baronet, 1662-01-10 - 1721-03-08
-  gen:father <https://www.wikidata.org/wiki/Q7526738> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75446325> .
-  # oo Mary Yate, 1668~ - 1722-05-05
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q75446259> , <https://www.wikidata.org/wiki/Q75446332> ;
-	gen:startDate "1683~" .
-
-<https://www.wikidata.org/wiki/Q75446337>
-  # Charlotte Throckmorton, 1698 - 1738-01
-  gen:father <https://www.wikidata.org/wiki/Q75446259> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75446332> .
-  # oo Sir Thomas Windsor Hunloke, 3rd Baronet, 1684 – 1752-01-30, https://www.wikidata.org/wiki/Q75446338
-<https://www.wikidata.org/wiki/Q75446258>
-  # Sir Robert Throckmorton, 4th Baronet, 1702-08-21 - 1791-12-08
-  gen:father <https://www.wikidata.org/wiki/Q75446259> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75446332> .
-  # oo Lady Theresa Herbert, 1706 - 1723-06-17
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q75446258> , <https://www.wikidata.org/wiki/Q75446342> ;
-	gen:startDate "1721b" .
-# ----
-<https://www.wikidata.org/wiki/Q75446332>
-  # Mary Yate, 1668~ - 1722-05-05
-  gen:father <https://www.wikidata.org/wiki/Q75486086> ; # Sir Charles Yate, 3rd Baronet
-  gen:mother <https://www.wikidata.org/wiki/Q75675895> . # Frances Gage
-  # oo 1683~ Sir Robert Throckmorton, 3rd Baronet, 1662-01-10 - 1721-03-08, https://www.wikidata.org/wiki/Q75446259
-# ----
-<https://www.wikidata.org/wiki/Q75446338>
-  # Sir Thomas Windsor Hunloke, 3rd Baronet, 1684 – 1752-01-30
-  gen:father <https://www.wikidata.org/wiki/Q76335936> ; # Sir Henry Hunloke, 2nd Baronet
-  gen:mother <https://www.wikidata.org/wiki/Q76335935> . # Catherine Tyrwhitt
-  # oo Charlotte Throckmorton, 1698 - 1738-01
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q75446338> , <https://www.wikidata.org/wiki/Q75446337> .
-
-<https://www.wikidata.org/wiki/Q75258825>
-  # Sir Henry Hunloke, 4th Baronet, 1724 – 1804-11-15
-  gen:father <https://www.wikidata.org/wiki/Q75446338> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75446337> .
-  # oo Margaret Coke, 1751~ - 1821-01-22
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q75258825> , <https://www.wikidata.org/wiki/Q75258823> ;
-	gen:startDate "1769-12-21" .
-
-<https://www.wikidata.org/wiki/Q75257477>
-  # Charlotte Susanna Hunloke, 1774-09-20 - 1862-10-11
-  gen:father <https://www.wikidata.org/wiki/Q75258825> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75258823> .
-  # oo 1822-02-11 William Charles Keppel, 4th Earl of Albemarle, 1772-05-14 – 1849-10-30, https://www.wikidata.org/wiki/Q8013960
-<https://www.wikidata.org/wiki/Q75273620>
-  # Henrietta Hunloke, 1784-06-13 - 1811-02-05
-  gen:father <https://www.wikidata.org/wiki/Q75258825> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75258823> .
-  # oo 1799-04-29 Sir John Shelley Sidney, 1st Baronet, 1771-12-18 - 1849-03-14, https://www.wikidata.org/wiki/Q75273619
-
-# ----
-<https://www.wikidata.org/wiki/Q75269732>
-  # Charlotte Stracey, 1837 - 1927-06-23
-  gen:father <https://www.wikidata.org/wiki/Q17180537> ; # Sir Henry Stracey, 5th Baronet
-  gen:mother <https://www.wikidata.org/wiki/Q75282883> . # Charlotte Denne
-  # oo 1859-01-25 George Watson Milles, 1st Earl Sondes, 1824-10-02 - 1894-09-10, https://www.wikidata.org/wiki/Q5542490
-
-# ====
+  # oo William Anderson, https://www.wikidata.org/wiki/Q75408143
 
 # ----
 #<https://www.wikidata.org/wiki/Q1192694>
@@ -892,12 +519,12 @@
   # oo 1652 Sir Robert Williams, 2nd Baronet, 1629 - 1680-12-10, https://www.wikidata.org/wiki/Q7528868
 <https://www.wikidata.org/wiki/Q7529608>
   # Sir William Glynne, 1st Baronet, 1638-01-20 - 1690-09-08
-  # 1st Baronet Glynne 1661
+  # 1st Baronet Glynne, of Bicester in the County of Oxford [England] 1661-05-20
   gen:father <https://www.wikidata.org/wiki/Q1192694> ;
   gen:mother <https://www.wikidata.org/wiki/Q75573207> .
   # oo Penelope Anderson, d. 1681
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q7529608> , <#Penelope_Anderson> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q7529608> , <https://www.wikidata.org/wiki/Q75573442> ;
 	gen:startDate "1660~" .
 <https://www.wikidata.org/wiki/Q75408238>
   # Mary Glynne, 1649~ - 1668-02-24
@@ -908,36 +535,173 @@
 # ----
 <https://www.wikidata.org/wiki/Q33261222>
   # Sophia Aufrère, 1753 - 1786-01-25
-  gen:father <https://www.wikidata.org/wiki/Q18671239> .
-  # and Arabella Bate
+  gen:father <https://www.wikidata.org/wiki/Q18671239> ; # George Aufrère
+  gen:mother <https://www.wikidata.org/wiki/Q75618227> . # Arabella Bate
   # oo 1770-07-21 Charles Anderson-Pelham, 1st Baron Yarborough, 1749-02-03 - 1823-09-22, https://www.wikidata.org/wiki/Q5075115
 
 # ----
-<#Caroline_Johnston>
+<https://www.wikidata.org/wiki/Q75990628>
   # Caroline Johnston, d. 1823-06-18
-  # daughter of General James Johnston
-  gen:father <https://www.wikidata.org/wiki/Q6136918> . # ?
+  gen:father <https://www.wikidata.org/wiki/Q6136918> . # General James Johnston
   # oo 1795 Francis Evelyn Anderson, 1752-04-08 – 1821, https://www.wikidata.org/wiki/Q26451758
 
-# ----
-<#Sir_Francis_Astley,_4th_Baronet>
-  # Sir Francis Edmund George Astley, 4th Baronet, 1859-02-06 - 1939-02-05
-  gen:father <https://www.wikidata.org/wiki/Q7527742> .
-  # and Eleanor Blanche Mary Corbett
-  # oo Lady Gertrude Augusta Anderson-Pelham, 1861-05-11 - 1920-07-06
+# ====
+#<https://www.wikidata.org/wiki/Q76106488>
+  # Robert Cary Elwes, 1772 - 1852-02-10
+  # son of Cary Elwes, Esq.
+  # and Elizabeth Holgate
+  # oo Hon. Caroline Anderson-Pelham, 1777-01-08 - 1812-07
   []
-    gen:spouse <#Sir_Francis_Astley,_4th_Baronet> , <#Lady_Gertrude_Augusta_Anderson-Pelham> ;
-	gen:startDate "1882-06-05" .
+    gen:spouse <https://www.wikidata.org/wiki/Q76106488> , <https://www.wikidata.org/wiki/Q76106490> ;
+	gen:startDate "1797-10-12" .
+  # oo Jane Marianne Sykes
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76106488> , <https://www.wikidata.org/wiki/Q96083984> .
+
+<https://www.wikidata.org/wiki/Q76106484>
+  # Cary Charles Elwes, 1800-11-02 - 1866-01-24
+  gen:father <https://www.wikidata.org/wiki/Q76106488> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76106490> .
+  # oo Elinor Rye, 1805-08-17 - 1859-01-08, daughter of Rear-Admiral Peter Jekyll Rye and Eleanora Elizabeth Lord
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76106484> , <https://www.wikidata.org/wiki/Q27089516> ;
+	gen:startDate "1826-08-17" .
+<https://www.wikidata.org/wiki/Q75347538>
+  # George Cary Elwes, 1806 - 1859-04-15
+  gen:father <https://www.wikidata.org/wiki/Q76106488> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76106490> .
+  # oo Arabella Elizabeth Sophia Heneage, 1806~ - 1853 (petre.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75347538> , <https://www.wikidata.org/wiki/Q75347537> ;
+	gen:startDate "1834" .
+
+<https://www.wikidata.org/wiki/Q76106482>
+  # Valentine Dudley Henry Cary Elwes, 1832-11-26 - 1908-06-16
+  gen:father <https://www.wikidata.org/wiki/Q76106484> ;
+  gen:mother <https://www.wikidata.org/wiki/Q27089516> .
+  # oo Henrietta Catharine Lane, 1829~ - 1864
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76106482> , <https://www.wikidata.org/wiki/Q76106483> ;
+	gen:startDate "1856-04-28" .
+  # oo Alice Geraldine Ward, 1844-12-08 - 1907-03-21 (montgomerie.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76106482> , <https://www.wikidata.org/wiki/Q75910708> ;
+	gen:startDate "1865-11-30" .
+<https://www.wikidata.org/wiki/Q75326130>
+  # Windsor Charles Cary Elwes, 1839-09-12 - 1916-04-11
+  gen:father <https://www.wikidata.org/wiki/Q75347538> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75347537> .
+  # oo Augusta Caroline Louisa Law, 1844 - 1920-07-18 (digby.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75326130> , <https://www.wikidata.org/wiki/Q75347541> ;
+	gen:startDate "1862-09-15" .
+
+<https://www.wikidata.org/wiki/Q5553476>
+  # Gervase Henry Elwes, 1866-11-15 - 1921-01-12
+  gen:father <https://www.wikidata.org/wiki/Q76106482> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75910708> .
+  # oo Lady Winefride Mary Elizabeth Feilding, 1868-09-24 - 1959-02-24
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5553476> , <https://www.wikidata.org/wiki/Q27912797> ;
+	gen:startDate "1889-05-11" .
+<https://www.wikidata.org/wiki/Q75320675>
+  gen:name "Charles Edward Joseph Cary-Elwes"@en ;
+  gen:birthDate "1869-10-22" ;
+  gen:deathDate "1947-08-11" ;
+  gen:father <https://www.wikidata.org/wiki/Q75326130> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75347541> .
+  # oo Edythe Isabel Parkington
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75320675> , <https://www.wikidata.org/wiki/Q75347545> ;
+	gen:startDate "1897-11-23" .
+
+<https://www.wikidata.org/wiki/Q13474828>
+  # Simon Edmund Vincent Paul Elwes, 1902-06-29 - 1975-08-06
+  gen:father <https://www.wikidata.org/wiki/Q5553476> ;
+  gen:mother <https://www.wikidata.org/wiki/Q27912797> .
+  # oo Hon. Gloria Elinor Rodd, 1901 - 1975-10-08 (bingham.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q13474828> , <https://www.wikidata.org/wiki/Q75372354> ;
+	gen:startDate "1926-11-25" .
+<https://www.wikidata.org/wiki/Q75320673>
+  gen:name "Lilian Isabel Cary-Elwes"@en ;
+  gen:birthDate "1902-06-23" ;
+  gen:deathDate "2000-09-25" ;
+  gen:father <https://www.wikidata.org/wiki/Q75320675> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75347545> .
+  # oo 1925-01-20 Francis Dayrell Montague Crackanthorpe, 1900 -, https://www.wikidata.org/wiki/Q75347558
+  # oo 1949-05-07 Hon. Arthur Michael Cosmo Bertie, 1896-09-29 - 1957-02-02, https://www.wikidata.org/wiki/Q75274420
 
 # ----
-<#John_Charles_Harper>
+#<https://www.wikidata.org/wiki/Q75347558>
+  # Francis Dayrell Montague Crackanthorpe, 1900 -
+  # oo Lilian Isabel Cary-Elwes, 1902-06-23 - 2000-09-25
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75347558> , <https://www.wikidata.org/wiki/Q75320673> ;
+	gen:startDate "1925-01-20" .
+
+# ====
+
+# ----
+#<https://www.wikidata.org/wiki/Q75574645>
+  # William Tennant
+  # son of William Tennant
+  # oo Hon. Maria Charlotte Anderson Pelham, d. 1840
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75574645> , <https://www.wikidata.org/wiki/Q75574646> ;
+	gen:startDate "1804" .
+
+<https://www.wikidata.org/wiki/Q75574632>
+  # Charlotte Ann Josephine Tennant, d. 1874-10-03
+  gen:father <https://www.wikidata.org/wiki/Q75574645> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75574646> .
+  # oo 1830-05-18 Sir Richard Henry Charles Rycroft, 3rd Baronet, 1793-12-21 - 1864-10-21, https://www.wikidata.org/wiki/Q75574631 (ogilvy.ttl)
+
+# ----
+<https://www.wikidata.org/wiki/Q75275889>
   # John Charles Harper, d. 1998-09-11
-  gen:father <https://www.wikidata.org/wiki/Q5078786> .
+  # John Charles Harper
+  # John Charles Douglas-Pennant 1950
+  gen:father <https://www.wikidata.org/wiki/Q5078786> . # Sir Charles Henry Harper
   # oo Lady Janet Marcia Rose Pelham, b. 1923-10-17
   []
-    gen:spouse <#John_Charles_Harper> , <#Lady_Janet_Marcia_Rose_Pelham> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75275889> , <https://www.wikidata.org/wiki/Q75275883> ;
 	gen:startDate "1948-03-20" .
+
 # ----
+#<https://www.wikidata.org/wiki/Q19288576>
+  # Sir Robert Dycer, 1st Baronet, 1595 - 1667-08-26
+  # 1st Baronet Dycer, of Uphall in the County of Hertford [England] 1661-03-18
+
+<https://www.wikidata.org/wiki/Q75408192>
+  # Sir Robert Dycer, 2nd Baronet, 1644~ – 1675~
+  gen:father <https://www.wikidata.org/wiki/Q19288576> .
+  # oo Judith Gulston
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75408192> , <https://www.wikidata.org/wiki/Q76016829> .
+
+<https://www.wikidata.org/wiki/Q75408189>
+  # Dorothy Dycer, 1668 - 1711-06-28
+  gen:father <https://www.wikidata.org/wiki/Q75408192> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76016829> .
+  # oo 1681 William Harvey, 1663-12 - 1734-10-31, https://www.wikidata.org/wiki/Q26213613
+# ----
+#<https://www.wikidata.org/wiki/Q26213613>
+  # William Harvey, 1663-12 - 1734-10-31
+  # son of Eliab Harvey
+  # and Dorothy Whitmore
+  # oo Dorothy Dycer, 1668 - 1711-06-28
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q26213613> , <https://www.wikidata.org/wiki/Q75408189> ;
+	gen:startDate "1681" .
+
+<https://www.wikidata.org/wiki/Q75408185>
+  # Mary Harvey, d. 1758-08-16
+  gen:father <https://www.wikidata.org/wiki/Q26213613> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75408189> .
+  # oo 1721b Sir Edmund Anderson, 5th Baronet, 1687-11-04 - 1765-05-03, https://www.wikidata.org/wiki/Q75408183
+
+# ====
 #<https://www.wikidata.org/wiki/Q75273651>
   # Rev. Richard Vevers, 1756-03-23 - 1838-01-17
   # son of Thomas Wilkinson
@@ -952,16 +716,33 @@
   gen:mother <https://www.wikidata.org/wiki/Q75273653> .
   # oo 1804-10-18 Thomas Denman, 1st Baron Denman of Dovedale, 1779-02-23 - 1854-09-22, https://www.wikidata.org/wiki/Q333102
 # ----
-<https://www.wikidata.org/wiki/Q333102>
-  # Thomas Denman, 1st Baron Denman of Dovedale, 1779-02-23 - 1854-09-22
-  # 1st Baron Denman of Dovedale, co. Derby 1834-03-28
+<https://www.wikidata.org/wiki/Q75351865>
+  # Margaret Denman, 1771-07-09 - 1847-09-04
   gen:father <https://www.wikidata.org/wiki/Q5620390> ; # Thomas Denman
   gen:mother <https://www.wikidata.org/wiki/Q75499316> . # Elizabeth Brodie
+  # oo 1789-11-13 Sir Richard Croft, 6th Baronet, 1762-01-09 - 1818-02-13, https://www.wikidata.org/wiki/Q7528567 (cowper.ttl)
+<https://www.wikidata.org/wiki/Q333102>
+  # Thomas Denman, 1st Baron Denman of Dovedale, 1779-02-23 - 1854-09-22
+  # 1st Baron Denman of Dovedale, co. Derby [U.K.] 1834-03-28
+  gen:father <https://www.wikidata.org/wiki/Q5620390> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75499316> .
   # oo Theodosia Anne Vevers, d. 1852-06-28
   []
     gen:spouse <https://www.wikidata.org/wiki/Q333102> , <https://www.wikidata.org/wiki/Q75273650> ;
 	gen:startDate "1804-10-18" .
 
+<https://www.wikidata.org/wiki/Q18528709>
+  # Thomas Aitchison-Denman, 2nd Baron Denman of Dovedale, 1805-07-30 - 1894-08-09
+  gen:father <https://www.wikidata.org/wiki/Q333102> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75273650> .
+  # oo Georgina Roe, d. 1871-04-25, daughter of Reverend Thomas Roe
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q18528709> , <https://www.wikidata.org/wiki/Q75851720> ;
+	gen:startDate "1829-08-12" .
+  # oo Marion Aitchison, d. 1902-02-27, daughter of James Aitchison
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q18528709> , <https://www.wikidata.org/wiki/Q75851587> ;
+	gen:startDate "1871-10-10" .
 <https://www.wikidata.org/wiki/Q75241007>
   # Hon. Richard Denman, 1814-01-13 - 1887-03-19
   gen:father <https://www.wikidata.org/wiki/Q333102> ;
@@ -980,19 +761,48 @@
     gen:spouse <https://www.wikidata.org/wiki/Q75266617> , <https://www.wikidata.org/wiki/Q75273645> ;
 	gen:startDate "1871-05-31" ;
 	gen:divorceDate "1878" .
+<https://www.wikidata.org/wiki/Q75851788>
+  # Elizabeth Margaret Denman, 1847-04-28 - 1929-10-31
+  gen:father <https://www.wikidata.org/wiki/Q75241007> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75241009> .
+  # oo 1870-01-20 Sir Peniston Milbanke, 9th Baronet, 1847-02-14 - 1899-11-30, https://www.wikidata.org/wiki/Q75851789 (darcy.ttl)
 
-<https://www.wikidata.org/wiki/Q75851742>
-  # Sir Richard Douglas Denman, 1st Baronet, 1876-08-24 - 1957-12-22
-  # 1st Baronet Denman, of Dovedale, co. Derby 1945-07-02
+<https://www.wikidata.org/wiki/Q335621>
+  # Thomas Denman, 3rd Baron Denman of Dovedale, 1874-11-16 - 1954-06-24
   gen:father <https://www.wikidata.org/wiki/Q75266617> ;
   gen:mother <https://www.wikidata.org/wiki/Q75273645> .
+  # oo Hon. Gertrude Mary Pearson, 1884-11-07 - 1954-06-02 (spencer.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q335621> , <https://www.wikidata.org/wiki/Q5553307> ;
+	gen:startDate "1904-11-26" .
+<https://www.wikidata.org/wiki/Q75851742>
+  # Sir Richard Douglas Denman, 1st Baronet, 1876-08-24 - 1957-12-22
+  # 1st Baronet Denman, of Dovedale, co. Derby [U.K.] 1945-07-02
+  gen:father <https://www.wikidata.org/wiki/Q75266617> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75273645> .
+  # oo Helen Christian Sutherland, 1881 - 1965, daughter of Thomas Sutherland
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75851742> , <https://www.wikidata.org/wiki/Q18528189> ;
+	gen:startDate "1904-02-11" ;
+	gen:annulledDate "1913" .
   # oo Mary Radley Spencer, d. 1974-04-01, daughter of James Spencer
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75851742> , <https://www.wikidata.org/wiki/Q75851661> ;
 	gen:startDate "1914-06-10" .
 
+<https://www.wikidata.org/wiki/Q75851737>
+  # Thomas Denman, 4th Baron Denman of Dovedale, 1905-08-02 - 1971-03-21
+  gen:father <https://www.wikidata.org/wiki/Q335621> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5553307> .
+<https://www.wikidata.org/wiki/Q75518415>
+  # Hon. Anne Judith Denman 1907-08-20 - 1987
+  gen:father <https://www.wikidata.org/wiki/Q335621> ;
+  gen:mother <https://www.wikidata.org/wiki/Q5553307> .
+  # oo 1931-08-06 Sir Walter Raymond Burrell, 8th Baronet, 1903-12-11 - 1985-05-04, https://www.wikidata.org/wiki/Q75518353
 <https://www.wikidata.org/wiki/Q75714596>
   # Charles Spencer Denman, 5th Baron Denman of Dovedale, 1916-07-07 - 2012-11-21
+  # 2nd Baronet Denman, of Dovedale, co. Derby [U.K., 1945] 1957-12-22
+  # 5th Baron Denman of Dovedale, co. Derby [U.K., 1834] 1971-03-21
   gen:father <https://www.wikidata.org/wiki/Q75851742> ;
   gen:mother <https://www.wikidata.org/wiki/Q75851661> .
   # oo Sheila Anne Stewart, 1915-02-12 - 1987
@@ -1008,94 +818,14 @@
     gen:spouse <https://www.wikidata.org/wiki/Q75761976> , <https://www.wikidata.org/wiki/Q75303356> ;
 	gen:startDate "1976-03-26" .
 
-# ----
-<https://www.wikidata.org/wiki/Q76271537>
-  # Sir Philip Hungate, 3rd Baronet, 1661 – 1690
-  gen:father <https://www.wikidata.org/wiki/Q76328149> . # Sir Francis Hungate, 2nd Baronet
-  # oo Hon. Elizabeth Monson
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q76271537> , <https://www.wikidata.org/wiki/Q76271535> .
-
-<https://www.wikidata.org/wiki/Q76328151>
-  # Sir Francis Hungate, 4th Baronet, 1683 – 1710
-  gen:father <https://www.wikidata.org/wiki/Q76271537> ;
-  gen:mother <https://www.wikidata.org/wiki/Q76271535> .
-  # oo Mary Weld
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q76328151> , <https://www.wikidata.org/wiki/Q75965361> .
-# ----
-#<https://www.wikidata.org/wiki/Q75965361>
-  # Mary Weld
-  # daughter of William Weld
-  # oo Sir Francis Hungate, 4th Baronet, 1683 – 1710, https://www.wikidata.org/wiki/Q76328151
-  # oo Nicholas Fairfax, 1665b - 1703-02-26, https://www.wikidata.org/wiki/Q75964332 (zouche.ttl)
+# ====
 
 # ----
-#<https://www.wikidata.org/wiki/Q7528856>
-  # Sir Robert Throckmorton, 1st Baronet, 1599 - 1650-01-16
-  # 1st Baronet Throckmorton, of Coughton, co. Warwick 1642-09-01
-  # son of John Throckmorton
-  # and Agnes Wilford
-  # oo Mary Smith, 1622~ - 1663, daughter of Sir Francis Smyth and Anne Markham
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q7528856> , <https://www.wikidata.org/wiki/Q75446324> ;
-	gen:startDate "1640b" .
-
-<https://www.wikidata.org/wiki/Q7526738>
-  # Sir Francis Throckmorton, 2nd Baronet, 1641 - 1680-11-07~
-  gen:father <https://www.wikidata.org/wiki/Q7528856> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75446324> .
-  # oo Anne Monson, 1742~ - 1728-07-23
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q7526738> , <https://www.wikidata.org/wiki/Q75446325> ;
-	gen:startDate "1660b" .
-
-# ----
-#<#Sir_John_Nelthorpe,_6th_Baronet>
-  # Sir John Nelthorpe, 6th Baronet, 1744 - 1799
-  # oo Anne Maria Charlotte Willoughby, daughter of Andrew Willoughby
-  []
-    gen:spouse <#Sir_John_Nelthorpe,_6th_Baronet> , <#Anne_Maria_Charlotte_Willoughby> ;
-	gen:startDate "1772-01-01" .
-
-<#Sir_Henry_Nelthorpe,_7th_Baronet>
-  # Sir Henry Nelthorpe, 7th Baronet, 1773 – 1830
-  gen:father <#Sir_John_Nelthorpe,_6th_Baronet> ;
-  gen:mother <#Anne_Maria_Charlotte_Willoughby> .
-<#Frances_Mary_Nelthorpe>
-  # Frances Mary Nelthorpe, 1776~ - 1836-08-18
-  gen:father <#Sir_John_Nelthorpe,_6th_Baronet> ;
-  gen:mother <#Anne_Maria_Charlotte_Willoughby> .
-  # oo 1802-12-13 Rev. Sir Charles John Anderson, 8th Baronet, 1767-10-05 - 1846-03-24, #Sir_Charles_John_Anderson,_8th_Baronet
-<https://www.wikidata.org/wiki/Q75304166>
-  # John Nelthorpe, 1776 - 1824-06-17~
-  gen:father <#Sir_John_Nelthorpe,_6th_Baronet> ;
-  gen:mother <#Anne_Maria_Charlotte_Willoughby> .
-  # oo Christian Brown, d. 1843-12-01
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q75304166> , <https://www.wikidata.org/wiki/Q76245982> ;
-	gen:startDate "1812-08-26" .
-
-<#Sir_John_Nelthorpe,_8th_Baronet>
-  # Sir John Nelthorpe, 8th Baronet, 1814-09-27 - 1865-11-29
-  gen:father <https://www.wikidata.org/wiki/Q75304166> ;
-  gen:mother <https://www.wikidata.org/wiki/Q76245982> .
-  # oo Frances Maria Anderson, 1809-05-04 - 1885~
-  []
-    gen:spouse <#Sir_John_Nelthorpe,_8th_Baronet> , <#Frances_Maria_Anderson> ;
-	gen:startDate "1838-05-24" .
-<https://www.wikidata.org/wiki/Q76185027>
-  # Charlotte Nelthorpe, 1817-03-06~ - 1872-11-11
-  gen:father <https://www.wikidata.org/wiki/Q75304166> ;
-  gen:mother <https://www.wikidata.org/wiki/Q76245982> .
-  # oo 1847-05-04 Rev. Robert Sutton, 1813-03-01 - 1885-03-10, https://www.wikidata.org/wiki/Q76167743
-
-# ----
-<#Simon_William_Jones_Armstrong>
+<https://www.wikidata.org/wiki/Q75287944>
   # Simon William Jones Armstrong, 1957-05-25 - 2012
   gen:father <https://www.wikidata.org/wiki/Q5006934> .
   # and Hilde Ingeburg Kolz
   # oo Beatrix Diana Miller, b. 1955-08-23
   []
-    gen:spouse <#Simon_William_Jones_Armstrong> , <#Beatrix_Diana_Miller> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75287944> , <https://www.wikidata.org/wiki/Q75296396> ;
 	gen:startDate "1991" .

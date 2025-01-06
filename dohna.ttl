@@ -1,0 +1,1268 @@
+@base <dohna.ttl> .
+@prefix gen: <http://jjkoch.de/gen#> .
+@prefix wdata: <https://www.wikidata.org/wiki/> .
+@prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://www.wikidata.org/wiki/Q110103024>
+  # Heinrich VI. Burggraf von Dohna zu Kraschen und Peterwitz, d. 1484a
+  gen:father <https://www.wikidata.org/wiki/Q110103026> ; # Heinrich V. Burggraf und Herr zu Dohna
+  gen:mother <https://www.wikidata.org/wiki/Q110103042> . # oo Anna von Thader
+  # oo Magdalena von Krumnau, b. 1425~, daughter of Stanislaus von Krumnau
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110103024> , <https://www.wikidata.org/wiki/Q110103048> .
+
+<https://www.wikidata.org/wiki/Q110556147> # -> schlesische Linie
+  # Christopher Burggraf von Dohna zu Kraschen, auf Kraschen, d. 1509-08-04
+  gen:father <https://www.wikidata.org/wiki/Q110103024> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110103048> .
+<https://www.wikidata.org/wiki/Q110103022> # -> preußische Linie
+  # Stanislaus Burggraf und Herr zu Dohna, 1433~ - 1504/1505
+  gen:father <https://www.wikidata.org/wiki/Q110103024> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110103048> .
+
+
+# schlesische Linie
+<https://www.wikidata.org/wiki/Q110556147>
+  # Christopher Burggraf von Dohna zu Kraschen, auf Kraschen, d. 1509-08-04
+  gen:father <https://www.wikidata.org/wiki/Q110103024> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110103048> .
+  # oo ??? von Czirn
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110556147> , <https://www.wikidata.org/wiki/Q110556150> .
+
+<https://www.wikidata.org/wiki/Q110556146>
+  # Caspar Burggraf von Dohna zu Kraschen und Heinzendorf, auf Kraschen, d. 1544a/1562b
+  gen:father <https://www.wikidata.org/wiki/Q110556147> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110556150> .
+  # oo Rosina Gräfin zu Dohna, daughter of Heinrich VIII. Burggraf zu Dohna and Katharina von Nostitz
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110556146> , <https://www.wikidata.org/wiki/Q110556152> .
+
+<https://www.wikidata.org/wiki/Q108928631>
+  # Abraham von Dohna zu Kraschen, d. 1587~
+  gen:father <https://www.wikidata.org/wiki/Q110556146> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110556152> .
+  # oo Marianne von Borschnitz, d. 1594a, daughter of Melchior von Borschnitz and Margarete von Colditz
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q108928631> , <https://www.wikidata.org/wiki/Q108928632> .
+
+<https://www.wikidata.org/wiki/Q102423>
+  # Abraham II. Burggraf und Graf zu Dohna-Kraschen, 1561-12-11 - 1613-05-01
+  # Freiherr auf Wartenberg und Brallin
+  gen:father <https://www.wikidata.org/wiki/Q108928631> ;
+  gen:mother <https://www.wikidata.org/wiki/Q108928632> .
+  # oo Eleonora von Sauermann-Jeltsch, 1565~ - 1634
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q102423> , <#Eleonora_von_Sauermann> .
+
+<https://www.wikidata.org/wiki/Q1731412>
+  # Carl Hannibal Burggraf und Graf zu Dohna-Kraschen, 1588-08-08 - 1633-02-21
+  gen:father <https://www.wikidata.org/wiki/Q102423> ;
+  gen:mother <#Eleonora_von_Sauermann> .
+  # oo Maria Anna Elisabeth Zapsky von Zaps, 1590~ - 1659-04-13
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1731412> , <#Maria_Anna_Zapsky> .
+
+<https://www.wikidata.org/wiki/Q102062820>
+  # Eleonora Eusebia Burggräfin und Herrin zu Dohna-Kraschen, 1610~ - 1676-11-22
+  gen:father <https://www.wikidata.org/wiki/Q1731412> ;
+  gen:mother <#Maria_Anna_Zapsky> .
+  # oo 1634 Johann Balthasar Graf von Dietrichstein, d. 1634, dietrichstein.ttl#Johann_Balthasar_von_Dietrichstein
+  # oo 1636-01-28 Johann Rudolf von Wagensperg, 1613-01-08 - 1679-07-01, https://www.wikidata.org/wiki/Q102062818 (dietrichstein.ttl)
+
+
+# preußische Linie
+<https://www.wikidata.org/wiki/Q110103022>
+  # Stanislaus Burggraf und Herr zu Dohna, 1433~ - 1504/1505
+  gen:father <https://www.wikidata.org/wiki/Q110103024> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110103048> .
+  # oo Ursula von Greysing
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110103022> , <https://www.wikidata.org/wiki/Q110103056> ;
+	gen:startDate "1477" .
+
+<https://www.wikidata.org/wiki/Q94794681>
+  # Peter Burggraf und Herr zu Dohna, 1482/1483 - 1553-01-18
+  gen:father <https://www.wikidata.org/wiki/Q110103022> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110103056> .
+  # oo Catharina von Zehmen, 1513~ - 1558-09-20, daughter of Achatius von Zehmen and Helene von Tolck von Merchlichenrade
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q94794681> , <https://www.wikidata.org/wiki/Q18411072> ;
+	gen:startDate "1532-06-07" .
+
+<https://www.wikidata.org/wiki/Q94794669>
+  # Achatius Burggraf und Graf zu Dohna, 1533-05-17 - 1601-10-18
+  gen:father <https://www.wikidata.org/wiki/Q94794681> ;
+  gen:mother <https://www.wikidata.org/wiki/Q18411072> .
+  # oo Barbara von Wernsdorff, 1547 - 1607-10-21, daughter of Wolf Dietrich von Wernsdorff and Katharina von der Oelsnitz
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q94794669> , <https://www.wikidata.org/wiki/Q101228642> ;
+	gen:startDate "1569-10-18" .
+
+<https://www.wikidata.org/wiki/Q94792194> # -> Reichertswalder Linie
+  # Fabian zu Dohna, zu Reichertswalde und Ebersbach, 1577-02-25 - 1631-08-12
+  # zu Reichertswalde und Ebersbach
+  gen:father <https://www.wikidata.org/wiki/Q94794669> ;
+  gen:mother <https://www.wikidata.org/wiki/Q101228642> .
+<https://www.wikidata.org/wiki/Q315846> # -> Vianische Linie
+  # Christoph II. Burggraf und Graf zu Dohna, 1583-06-27 - 1637-07-01
+  # Edelherr von Schlobitten, Carwinden, Stockenfels und Fischbach
+  gen:father <https://www.wikidata.org/wiki/Q94794669> ;
+  gen:mother <https://www.wikidata.org/wiki/Q101228642> .
+
+
+# Reichertswalder Linie
+<https://www.wikidata.org/wiki/Q94792194>
+  # Fabian zu Dohna, zu Reichertswalde und Ebersbach, 1577-02-25 - 1631-08-12
+  # zu Reichertswalde und Ebersbach
+  gen:father <https://www.wikidata.org/wiki/Q94794669> ;
+  gen:mother <https://www.wikidata.org/wiki/Q101228642> .
+  # oo Esther Freiin von Heydeck, 1585-04 - 1639-02-08
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q94792194> , <#Esther_von_Heydeck> ;
+	gen:startDate "1614" .
+
+<https://www.wikidata.org/wiki/Q55124091>
+  # Fabian III. Burggraf und Graf zu Dohna, 1617-08-10 - 1668-11-22
+  # Burggraf und Graf zu Dohna 1648
+  # zu Reichterswalde
+  # zu Lauck 1651
+  # zu Samrodt
+  gen:father <https://www.wikidata.org/wiki/Q94792194> ;
+  gen:mother <#Esther_von_Heydeck> .
+  # oo Henriette Amalia Burggräfin und Gräfin zu Dohna, 1626-02-26 - 1655-02-23
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q55124091> , <https://www.wikidata.org/wiki/Q66682063> ;
+	gen:startDate "1649-02-22" .
+
+<https://www.wikidata.org/wiki/Q19279953>
+  # Christoph Friedrich Burggraf und Graf zu Dohna-Lauck, 1652-10-19 - 1734-11-10
+  gen:father <https://www.wikidata.org/wiki/Q55124091> ;
+  gen:mother <https://www.wikidata.org/wiki/Q66682063> .
+  # oo Johanna Elisabeth Gräfin zur Lippe-Detmold, 1653-08-06 - 1690-04-05
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q19279953> , <https://www.wikidata.org/wiki/Q110151360> ;
+	gen:startDate "1677-05-25" .
+  # oo Elisabeth Christine Pfalzgräfin von Zweibrücken-Landsberg, 1656-10-27 - 1707-08-01 (wittelsbacher.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q19279953> , <https://www.wikidata.org/wiki/Q76265098> ;
+	gen:startDate "1692-12-22" .
+
+<https://www.wikidata.org/wiki/Q110151356>
+  # Amalie Luise Gräfin und Burggräfin zu Dohna-Lauck, 1680-01-09 - 1723-12-04
+  gen:father <https://www.wikidata.org/wiki/Q19279953> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110151360> .
+  # oo 1712-01-03 Wilhelm Moritz, Graf zu Ysenburg und Büdingen in Philippseich, 1688-07-23 - 1772-03-07, https://www.wikidata.org/wiki/Q31192772 (isenburg.ttl)
+<#Johanna_Sophia_zu_Dohna-Lauck>
+  # Johanna Sophia Burggräfin und Gräfin zu Dohna-Lauck, 1682-08-27 - 1735-04-02
+  gen:father <https://www.wikidata.org/wiki/Q19279953> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110151360> .
+  # oo 1725-12-25 Alexander Burggraf und Graf zu Dohna-Schlobitten, 1661-01-25 - 1728-02-25, https://www.wikidata.org/wiki/Q72540
+<https://www.wikidata.org/wiki/Q65037300> # -> Dohna-Lauck
+  # Adolph Christoph Burggraf und Graf zu Dohna-Lauck, 1683-07-04 - 1736-09-13
+  gen:father <https://www.wikidata.org/wiki/Q19279953> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110151360> .
+<https://www.wikidata.org/wiki/Q65037291> # -> Dohna-Reichertswalde
+  # Friedrich Ludwig Burggraf und Graf zu Dohna-Reichertswalde, 1697-06-21 - 1766-06-21
+  gen:father <https://www.wikidata.org/wiki/Q19279953> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76265098> .
+
+
+# Dohna-Lauck
+<https://www.wikidata.org/wiki/Q65037300>
+  # Adolph Christoph Burggraf und Graf zu Dohna-Lauck, 1683-07-04 - 1736-09-13
+  gen:father <https://www.wikidata.org/wiki/Q19279953> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110151360> .
+  # oo Frede-Marie Burggräfin und Gräfin zu Dohna-Schlodien, 1695-12-31 - 1772-06-30
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q65037300> , <https://www.wikidata.org/wiki/Q110426410> ;
+	gen:startDate "1714-09-17" .
+
+<https://www.wikidata.org/wiki/Q83854613>
+  # Christoph Belgicus Burggraf und Graf zu Dohna-Lauck, 1715-07-20 - 1773-07-11
+  gen:father <https://www.wikidata.org/wiki/Q65037300> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110426410> .
+  # oo Amalie Wilhelmine Gräfin Finck von Finckenstein, 1737-04-29 - 1765-04-07
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q83854613> , <finck.ttl#Amalie_Wilhelmine_Finck_von_Finckenstein> ;
+	gen:startDate "1753-07-20" .
+  # oo Sophie Louise Gräfin von Schönaich-Carolath, 1728-08-22 - 1778-05-16
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q83854613> , <schoenaich.ttl#Sophie_Louise_von_Schönaich-Carolath> ;
+	gen:startDate "1767-07-21" .
+<https://www.wikidata.org/wiki/Q110261912>
+  # Johann Friedrich Burggraf und Graf zu Dohna-Lauck, 1716-12-16 - 1761-02-07
+  gen:father <https://www.wikidata.org/wiki/Q65037300> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110426410> .
+  # oo Helene Gräfin von Reichenbach, 1738-05-13 - 1817-04-06 (solms.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110261912> , <https://www.wikidata.org/wiki/Q110426411> ;
+	gen:startDate "1754-08-12" .
+<https://www.wikidata.org/wiki/Q55902778>
+  owl:sameAs <https://www.wikidata.org/wiki/Q110261913> ;
+  # Adolf Christian Burggraf und Graf zu Dohna-Lauck, 1718-03-27 - 1780-08-15
+  gen:father <https://www.wikidata.org/wiki/Q65037300> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110426410> .
+  # oo Christiane Eleonore Gräfin zu Stolberg-Wernigerode, 1723-02-27 - 1786-11-30
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q55902778> , <https://www.wikidata.org/wiki/Q55902779> ;
+	gen:startDate "1755-02-27" .
+<https://www.wikidata.org/wiki/Q83866121>
+  # Alexander Burggraf und Graf zu Dohna-Lauck, 1719-05-18 - 1793-08-14
+  gen:father <https://www.wikidata.org/wiki/Q65037300> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110426410> .
+  # oo Wilhelmine von Rothe, 1730-05-27 - 1749-07-16, daughter of Dietrich Wilhelm von Rothe and Charlotte Luise von Kalnein
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q83866121> , <#Wilhelmine_von_Rothe> ;
+	gen:startDate "1748-05-18" .
+  # oo Johanna Sophie Dorothea von Rothe, 1731-07-15 - 1752-04-12, daughter of Dietrich Wilhelm von Rothe and Charlotte Luise von Kalnein
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q83866121> , <#Johanna_von_Rothe> ;
+	gen:startDate "1751-09-20" .
+  # oo Elisabeth Burggräfin und Gräfin zu Dohna-Reichertswalde, 1740-07-02 - 1775-06-29
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q83866121> , <#Elisabeth_zu_Dohna-Reichertswalde> ;
+	gen:startDate "1765-07-02" .
+<https://www.wikidata.org/wiki/Q15786894>
+  # August Burggraf und Graf zu Dohna-Lauck, 1729-03-28 - 1793-01-04
+  gen:father <https://www.wikidata.org/wiki/Q65037300> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110426410> .
+  # oo Sophie Friederike von Budberg, 1752-09-10 - 1796-03-19
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q15786894> , <#Sophie_von_Budberg> ;
+	gen:startDate "1776-03-20" .
+<https://www.wikidata.org/wiki/Q110261914>
+  # Ludwig Burggraf und Graf zu Dohna-Lauck, 1733-03-22 - 1787-03-31
+  gen:father <https://www.wikidata.org/wiki/Q65037300> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110426410> .
+  # oo Caroline Julie Gräfin Finck von Finckenstein, 1753-07-18 - 1774-09-05
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110261914> , <finck.ttl#Caroline_Finck_von_Finckenstein> ;
+	gen:startDate "1771-02-11" .
+  # oo Amalie Gräfin Truchsess von Waldburg, 1753-04-23 - 1793-04-12
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110261914> , <waldburg.ttl#Amalie_von_Waldburg> ;
+	gen:startDate "1776-05-16" .
+
+<#Adolph_zu_Dohna-Lauck>
+  # Carl _Adolph_ Ernst Burggraf und Graf zu Dohna-Lauck, 1756-11-09 - 1822-01-29
+  gen:father <https://www.wikidata.org/wiki/Q83854613> ;
+  gen:mother <finck.ttl#Amalie_Wilhelmine_Finck_von_Finckenstein> .
+  # oo Sophie von Glasow, 1766-02-07 - 1814-11-27, daughter of Daniel Ernst von Glasow und Sophie von Röder
+  []
+    gen:spouse <#Adolph_zu_Dohna-Lauck> , <#Sophie_von_Glasow> ;
+	gen:startDate "1792-07-18" .
+<#Sophie_zu_Dohna-Lauck>
+  # Sophie Charlotte Albertine Burggräfin und Gräfin zu Dohna-Lauck, 1760-04-05 - 1831-01-09
+  gen:father <https://www.wikidata.org/wiki/Q83854613> ;
+  gen:mother <finck.ttl#Amalie_Wilhelmine_Finck_von_Finckenstein> .
+  # oo 1784-11-23 Hans Jacob von Auerswald, 1757-07-25 - 1833-04-03, https://www.wikidata.org/wiki/Q214895
+<#Wilhelmine_zu_Dohna-Lauck>
+  # Wilhelmine Luise Ernestine Burggräfin und Gräfin zu Dohna-Lauck, 1761-10-03 - 1827-10-17
+  gen:father <https://www.wikidata.org/wiki/Q83854613> ;
+  gen:mother <finck.ttl#Amalie_Wilhelmine_Finck_von_Finckenstein> .
+  # oo 1781-10-10 Carl Ludwig Burggraf und Graf zu Dohna-Schlodien, 1758-06-30 - 1838-12-27, https://www.wikidata.org/wiki/Q55849320
+<https://www.wikidata.org/wiki/Q110426405>
+  # Amalie Wilhelmine _Caroline_ Leopoldine Burggräfin und Gräfin zu Dohna-Lauck, 1759-12-05 - 1842-07-30
+  gen:father <https://www.wikidata.org/wiki/Q110261912> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110426411> .
+  # oo 1776-10-10 Carl Graf von Kospoth, 1736-08-14 - 1799-03-02, https://www.wikidata.org/wiki/Q110426397 (erbach.ttl)
+<#Carl_zu_Dohna-Lauck>
+  # Carl Wilhelm August Burggraf und Graf zu Dohna-Lauck, 1775-05-15 - 1828-11-10
+  gen:father <https://www.wikidata.org/wiki/Q83866121> ;
+  gen:mother <#Elisabeth_zu_Dohna-Reichertswalde> .
+  # oo Friederike Liebermann von Sonnenberg, 1769-10-07 - 1852-08-03, daughter of Ludwig Liebermann von Sonnenberg and Anna Regina Thomasky
+  []
+    gen:spouse <#Carl_zu_Dohna-Lauck> , <#Friederike_Liebermann> ;
+	gen:startDate "1797-04-28" .
+<#Friederike_Eleonore_zu_Dohna-Lauck>
+  # Friederike Eleonore Sophie Helene Burggräfin und Gräfin zu Dohna-Lauck, 1777-04-01 - 1855-04-07
+  gen:father <https://www.wikidata.org/wiki/Q15786894> ;
+  gen:mother <#Sophie_von_Budberg> .
+  # oo 1795-12-13 Moritz Ludwig Wilhelm von Schoeler, 1771-09-03 - 1855-03-15, https://www.wikidata.org/wiki/Q1493013
+<https://www.wikidata.org/wiki/Q1523214>
+  # Heinrich Ludwig Adolph Burggraf und Graf zu Dohna-Lauck, 1777-05-16 - 1843-09-20
+  gen:father <https://www.wikidata.org/wiki/Q110261914> ;
+  gen:mother <waldburg.ttl#Amalie_von_Waldburg> .
+  # oo Wilhelmine Sophie Freiin von Lützow, 1784-05-12 - 1837-01-10, daughter of Johann Adolph von Lützow and Wilhelmine von Zastrow
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1523214> , <#Wilhelmine_von_Lützow> ;
+	gen:startDate "1812-08-27" .
+  # oo Constance Burggräfin und Gräfin zu Dohna-Reichertswalde, 1807-10-29 - 1882-12-29
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1523214> , <#Constance_zu_Dohna-Reichertswalde> ;
+	gen:startDate "1838-05-21" .
+<#Ottilie_zu_Dohna-Lauck>
+  # Amalie Friederike _Ottilie_ Burggrafin und Gräfin zu Donna-Lauck, 1784-02-03 - 1808-01-01
+  gen:father <https://www.wikidata.org/wiki/Q110261914> ;
+  gen:mother <waldburg.ttl#Amalie_von_Waldburg> .
+  # oo 1801-06-22 Leopold Burggraf und Graf zu Dohna-Reichertswalde, 1775-11-22 - 1842-02-04, https://www.wikidata.org/wiki/Q110262372
+<#Theophile_zu_Dohna-Lauck>
+  # Dorothea _Theophile_ Pauline Ludowika Burggräfin und Gräfin zu Dohna-Lauck, 1786-08-16 - 1855-05-23
+  gen:father <https://www.wikidata.org/wiki/Q110261914> ;
+  gen:mother <waldburg.ttl#Amalie_von_Waldburg> .
+  # oo 1814-11-10 Alexander Fabian Burggraf und Graf zu Dohna-Schlobitten, 1781-11-17 - 1850-08-26, https://www.wikidata.org/wiki/Q17122155
+
+<#Adelheid_zu_Dohna-Lauck>
+  # Freda Sophie _Adelheid_ Burggräfin und Gräfin zu Dohna-Lauck, 1795-03-31 - 1859-08-28
+  gen:father <#Adolph_zu_Dohna-Lauck> ;
+  gen:mother <#Sophie_von_Glasow> .
+  # oo 1817-07-31 Rudolf Ludwig Cäsar von Auerswald, 1795-09-01 - 1866-01-15, https://www.wikidata.org/wiki/Q545628
+<https://www.wikidata.org/wiki/Q1038162>
+  # Carl _Friedrich_ Alexander Burggraf und Graf zu Dohna-Lauck, 1799-11-03 - 1873-09-26
+  gen:father <#Carl_zu_Dohna-Lauck> ;
+  gen:mother <#Friederike_Liebermann> .
+  # oo Philippine Gräfin Truchsess zu Waldburg-Capustigall, 1814-04-18 - 1841-07-22
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1038162> , <waldburg.ttl#Philippine_zu_Waldburg-Capustigall> ;
+	gen:startDate "1834-07-12" .
+  # oo Marie Antonie Gräfin Henckel von Donnersmarck, 1818-10-24 - 1864-11-26
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1038162> , <henckel.ttl#Marie_Antonie_Henckel_von_Donnersmarck> ;
+	gen:startDate "1843-01-10" .
+<https://www.wikidata.org/wiki/Q1875183>
+  # Ludwig Wilhelm Burggraf und Graf zu Dohna-Lauck, 1805-02-24 - 1859-03-10
+  gen:father <#Carl_zu_Dohna-Lauck> ;
+  gen:mother <#Friederike_Liebermann> .
+  # oo Fanny Aronson, 1806-05-12 - 1894-01-01, daughter of Nathan Moses Aronson and Amalie ???
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1875183> , <#Fanny_Aronson> ;
+	gen:startDate "1831-06-05" .
+
+<https://www.wikidata.org/wiki/Q115863692>
+  # Friedrich Achatius Stanislaus Burggraf und Graf zu Dohna-Lauck, 1844-06-11 - 1909-07-29
+  gen:father <https://www.wikidata.org/wiki/Q1038162> ;
+  gen:mother <henckel.ttl#Marie_Antonie_Henckel_von_Donnersmarck> .
+  # oo Caroline von Saldern-Ahlimb-Ringenwalde, 1849-08-28 - 1923-03-30, daughter of Hermann Graf von Saldern-Ahlimb-Ringenwalde and Luise von Ahlimb
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q115863692> , <#Caroline_von_Saldern> ;
+	gen:startDate "1872-05-16" .
+<https://www.wikidata.org/wiki/Q17122109>
+  # Adalbert Richard Hermann Burggraf und Graf zu Dohna-Lauck, 1849-01-13 - 1912-04-19
+  gen:father <https://www.wikidata.org/wiki/Q1038162> ;
+  gen:mother <henckel.ttl#Marie_Antonie_Henckel_von_Donnersmarck> .
+<#Friederike_Emilie_zu_Dohna-Lauck>
+  # Friederike Emilie Wilhelmine Burggräfin und Gräfin zu Dohna-Lauck, 1832-12-22 - 1910-04-08
+  gen:father <https://www.wikidata.org/wiki/Q1875183> ;
+  gen:mother <#Fanny_Aronson> .
+  # oo 1873-07-28 Wilhelm von Wienskowski genannt von Salzwedel, 1820-04-16 - 1882-07-29, https://www.wikidata.org/wiki/Q1594552
+
+<https://www.wikidata.org/wiki/Q17321760>
+  # Friedrich Ludwig Burggraf und Graf zu Dohna-Lauck, 1873-04-04 - 1924-07-01
+  gen:father <https://www.wikidata.org/wiki/Q115863692> ;
+  gen:mother <#Caroline_von_Saldern> .
+  # oo Elisabeth Gräfin von Arnim, 1877-01-17 - 1945-10-30, daughter of Albrecht Graf von Arnim and Anna Gräfin von der Schulenburg
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q17321760> , <#Elisabeth_von_Arnim> ;
+	gen:startDate "1907-01-05" .
+
+
+# Dohna-Reichertswalde
+<https://www.wikidata.org/wiki/Q65037291>
+  # Friedrich Ludwig Burggraf und Graf zu Dohna-Reichertswalde, 1697-06-21 - 1766-06-21
+  gen:father <https://www.wikidata.org/wiki/Q19279953> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76265098> .
+  # oo Wilhelmine Gräfin zu Sayn-Wittgenstein-Berleburg, 1684-06-23 - 1731-06-26 (sponheim.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q65037291> , <https://www.wikidata.org/wiki/Q55637799> ;
+	gen:startDate "1727-12-04" .
+  # oo Esperance Louise Burggräfin und Gräfin zu Dohna-Ferrassières, 1705-08-02 - 1733-10-08, daughter of Johann Friedrich Burggraf und Graf zu Dohna Marquis de Ferrassières and Albertine Henriette Gräfin van Bylandt
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q65037291> , <#Esperance_zu_Dohna-Ferrassières> ;
+	gen:startDate "1732-09-17" .
+  # oo Louise Charlotte Gräfin von Dönhoff, 1711-04-19 - 1755-03-14, daughter of Bogislaw Friedrich Graf von Dönhoff and Sophie Charlotte Gräfin von Lehndorff
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q65037291> , <#Louise_von_Dönhoff> ;
+	gen:startDate "1734-12-06" .
+
+<https://www.wikidata.org/wiki/Q110262371>
+  # Friedrich Leopold Burggraf und Graf zu Dohna-Reichertswalde, 1738-03-30 - 1807-05-07
+  gen:father <https://www.wikidata.org/wiki/Q65037291> ;
+  gen:mother <#Louise_von_Dönhoff> .
+  # oo Amalie Friederike Gräfin Finck von Finckenstein, 1745-04-17 - 1818-06-04
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110262371> , <finck.ttl#Amalie_Friederike_Finck_von_Finckenstein> ;
+	gen:startDate "1769-09-07" .
+<#Elisabeth_zu_Dohna-Reichertswalde>
+  # Elisabeth Charlotte Burggräfin und Gräfin zu Dohna-Reichertswalde, 1740-07-02 - 1775-06-29
+  gen:father <https://www.wikidata.org/wiki/Q65037291> ;
+  gen:mother <#Louise_von_Dönhoff> .
+  # oo 1765-07-02 Alexander Burggraf und Graf zu Dohna-Lauck, 1719-05-18 - 1793-08-14, https://www.wikidata.org/wiki/Q83866121
+
+<https://www.wikidata.org/wiki/Q110262372>
+  # Christoph Emil Alexander _Leopold_ Burggraf und Graf zu Dohna-Reichertswalde, 1775-11-22 - 1842-02-04
+  gen:father <https://www.wikidata.org/wiki/Q110262371> ;
+  gen:mother <finck.ttl#Amalie_Friederike_Finck_von_Finckenstein> .
+  # oo Ottilie Burggrafin und Gräfin zu Donna-Lauck, 1784-02-03 - 1808-01-01
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110262372> , <#Ottilie_zu_Dohna-Lauck> ;
+	gen:startDate "1801-06-22" .
+<#Amelie_zu_Dohna-Reichterswalde>
+  # Amelie Friederike Burggräfin und Gräfin zu Dohna-Reichterswalde, 1777-08-07 - 1863-12-26
+  gen:father <https://www.wikidata.org/wiki/Q110262371> ;
+  gen:mother <finck.ttl#Amalie_Friederike_Finck_von_Finckenstein> .
+  # oo 1804-01-17 Ludwig Burggraf und Graf zu Dohna-Schlobitten, 1776-09-08 - 1814-01-19, https://www.wikidata.org/wiki/Q16573092
+
+<#Constance_zu_Dohna-Reichertswalde>
+  # Constance Herminia Burggräfin und Gräfin zu Dohna-Reichertswalde, 1807-10-29 - 1882-12-29
+  gen:father <https://www.wikidata.org/wiki/Q110262372> ;
+  gen:mother <#Ottilie_zu_Dohna-Lauck> .
+  # oo 1838-05-21 Heinrich Burggraf und Graf zu Dohna-Lauck, 1777-05-16 - 1843-09-20, https://www.wikidata.org/wiki/Q1523214
+
+
+# Vianische Linie
+<https://www.wikidata.org/wiki/Q315846>
+  # Christoph II. Burggraf und Graf zu Dohna, 1583-06-27 - 1637-07-01
+  # Edelherr von Schlobitten, Carwinden, Stockenfels und Fischbach
+  gen:father <https://www.wikidata.org/wiki/Q94794669> ;
+  gen:mother <https://www.wikidata.org/wiki/Q101228642> .
+  # oo Ursula Gräfin von Solms-Braunfels, 1594-11-24 - 1657-08-18
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q315846> , <https://www.wikidata.org/wiki/Q55849318> ;
+	gen:startDate "1620-03-23" .
+
+<https://www.wikidata.org/wiki/Q338290>
+  # Friedrich Burggraf und Graf zu Dohna-Schlobitten, 1621-02-04 - 1688-03-27
+  gen:father <https://www.wikidata.org/wiki/Q315846> ;
+  gen:mother <https://www.wikidata.org/wiki/Q55849318> .
+  # oo Espérance du Puy de Montbrun, 1638 - 1690-07-12, daughter of Jean du Puy de Montbrun, Comte de Ferrassières et de Pont-de-Vesle
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q338290> , <https://www.wikidata.org/wiki/Q109835722> ;
+	gen:startDate "1656-10-29" .
+<https://www.wikidata.org/wiki/Q104550>
+  # Christian Albrecht Burggraf und Graf zu Dohna, 1621-12-10 - 1677-12-14
+  gen:father <https://www.wikidata.org/wiki/Q315846> ;
+  gen:mother <https://www.wikidata.org/wiki/Q55849318> .
+  # oo Sofia Dorothea van Brederode, 1620-03-16 - 1678-11-23 (lippe.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q104550> , <https://www.wikidata.org/wiki/Q75581578> ;
+	gen:startDate "1644-04" .
+<https://www.wikidata.org/wiki/Q66486532>
+  # Elisabeth Charlotte Burggräfin und Gräfin von Dohna-Schlobitten, 1625-01-14 - 1691-03-18
+  gen:father <https://www.wikidata.org/wiki/Q315846> ;
+  gen:mother <https://www.wikidata.org/wiki/Q55849318> .
+  # oo 1643-06-15 Otto van Limburg Stirum, 1620 - 1679-08-27, https://www.wikidata.org/wiki/Q2041242 (mark.ttl)
+<https://www.wikidata.org/wiki/Q66682063>
+  # Henriette Amalia Burggräfin und Gräfin zu Dohna, 1626-02-26 - 1655-02-23
+  gen:father <https://www.wikidata.org/wiki/Q315846> ;
+  gen:mother <https://www.wikidata.org/wiki/Q55849318> .
+  # oo 1649-02-22 Fabian III. Burggraf und Graf zu Dohna, 1617-08-10 - 1668-11-22, https://www.wikidata.org/wiki/Q55124091
+<https://www.wikidata.org/wiki/Q315821> # -> Dohna-Carwinden
+  # Christoph Delphicus Burggraf und Graf von Dohna-Carwinden, 1628-06-04 - 1668-05-21
+  gen:father <https://www.wikidata.org/wiki/Q315846> ;
+  gen:mother <https://www.wikidata.org/wiki/Q55849318> .
+
+<https://www.wikidata.org/wiki/Q109835322>
+  # Louise Antoinette Burggräfin und Gräfin zu Dohna, 1660-10-01 - 1716-01-16
+  gen:father <https://www.wikidata.org/wiki/Q338290> ;
+  gen:mother <https://www.wikidata.org/wiki/Q109835722> .
+  # oo 1685-03-15 Friedrich Christoph Burggraf und Graf zu Dohna-Carwinden, 1664-01-07 - 1727-07-20, https://www.wikidata.org/wiki/Q109835320
+<https://www.wikidata.org/wiki/Q72540> # -> Dohna-Schlobitten
+  # Alexander Burggraf und Graf zu Dohna-Schlobitten, 1661-01-25 - 1728-02-25
+  gen:father <https://www.wikidata.org/wiki/Q338290> ;
+  gen:mother <https://www.wikidata.org/wiki/Q109835722> .
+<#Henriette_Ursula_zu_Dohna>
+  # Henriette Ursula Burggräfin und Gräfin zu Dohna, 1662-01-25 - 1712-05-02
+  gen:father <https://www.wikidata.org/wiki/Q338290> ;
+  gen:mother <https://www.wikidata.org/wiki/Q109835722> .
+  # oo 1695-03-29 Ferdinand Christian Graf zur Lippe-Detmold, 1668-09-13 - 1724-10-18, https://www.wikidata.org/wiki/Q61140588
+<https://www.wikidata.org/wiki/Q84927> # -> Dohna-Schlodien
+  # Christoph I., Burggraf und Graf zu Dohna-Schlodien, 1665-04-02 - 1733-10-11
+  gen:father <https://www.wikidata.org/wiki/Q338290> ;
+  gen:mother <https://www.wikidata.org/wiki/Q109835722> .
+<#Sophie_Albertine_zu_Dohna>
+  # Sophie Albertine Burggräfin und Gräfin zu Dohna, 1674-08-12 - 1746-09-23
+  gen:father <https://www.wikidata.org/wiki/Q338290> ;
+  gen:mother <https://www.wikidata.org/wiki/Q109835722> .
+  # oo 1713-04-16 Heinrich Wilhelm Graf zu Solms-Wildenfels, 1675-05-16 - 1741-09-15, https://www.wikidata.org/wiki/Q1599302
+<https://www.wikidata.org/wiki/Q76238411>
+  # Amalia Burggräfin und Gräfin von Dohna, (11th) Vrouwe van Vianen, 1644-02-02 - 1700-03-11
+  # Vrouwe van Vianen 1684-11-27
+  gen:father <https://www.wikidata.org/wiki/Q104550> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75581578> .
+  # oo 1666-09-15 Simon Heinrich, Graf zur Lippe-Detmold, 1649-03-13 - 1697-05-02, https://www.wikidata.org/wiki/Q95609
+<https://www.wikidata.org/wiki/Q75581575>
+  # Luisa Burggräfin und Gräfin von Dohna, 1646 - 1687-11-08
+  gen:father <https://www.wikidata.org/wiki/Q104550> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75581578> .
+  # oo 1670-02-01 Johann Ludwig, Graf zu Solms-Hohensolms, 1646 - 1707-08-24, https://www.wikidata.org/wiki/Q26959057
+<https://www.wikidata.org/wiki/Q75243619>
+  # Friederike Marie Burggräfin und Gräfin von Dohna-Vianen, 1660-12-28 - 1729-11-22
+  gen:father <https://www.wikidata.org/wiki/Q104550> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75581578> .
+  # oo 1690 Christoph I., Burggraf und Graf zu Dohna-Schlodien, 1665-04-02 - 1733-10-11, https://www.wikidata.org/wiki/Q84927
+
+
+# Dohna-Schlobitten
+<https://www.wikidata.org/wiki/Q72540>
+  # Alexander Burggraf und Graf zu Dohna-Schlobitten, 1661-01-25 - 1728-02-25
+  gen:father <https://www.wikidata.org/wiki/Q338290> ;
+  gen:mother <https://www.wikidata.org/wiki/Q109835722> .
+  # oo Amalie Louise Gräfin zu Dohna-Carwinden, 1661-07-28 - 1724-04-02
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q72540> , <https://www.wikidata.org/wiki/Q11905406> ;
+	gen:startDate "1684-09-10" .
+  # oo Johanna Sophia Burggräfin und Gräfin zu Dohna-Lauck, 1682-08-27 - 1735-04-02
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q72540> , <#Johanna_Sophia_zu_Dohna-Lauck> ;
+	gen:startDate "1725-12-25" .
+
+<https://www.wikidata.org/wiki/Q110663520>
+  # Luise Charlotte Burggräfin und Gräfin zu Dohna-Schlobitten, 1688-01-05 - 1736-05-25
+  gen:father <https://www.wikidata.org/wiki/Q72540> ;
+  gen:mother <https://www.wikidata.org/wiki/Q11905406> .
+  # oo 1704-08-24 Friedrich Wilhelm, Graf zu Wied-Neuwied, 1684-11-15 - 1737-09-17, https://www.wikidata.org/wiki/Q26218357 (runkel.ttl)
+<#Ursula_Anna_zu_Dohna-Schlobitten>
+  # Ursula Anna Burggräfin und Gräfin zu Dohna-Schlobitten, 1693-12-04 - 1737-08-15
+  gen:father <https://www.wikidata.org/wiki/Q72540> ;
+  gen:mother <https://www.wikidata.org/wiki/Q11905406> .
+  # oo 1713-04-16 Ferdinand Christian Graf zur Lippe-Detmold, 1668-09-13 - 1724-10-18, https://www.wikidata.org/wiki/Q61140588
+<#Sophie_Wilhelmine_zu_Dohna-Schlobitten>
+  # Sophie Wilhelmine Burggräfin und Gräfin zu Dohna-Schlobitten, 1697-07-08 - 1754-09-10
+  gen:father <https://www.wikidata.org/wiki/Q72540> ;
+  gen:mother <https://www.wikidata.org/wiki/Q11905406> .
+  # oo 1721-12-16 Friedrich Ludwig Burggraf und Graf zu Dohna-Carwinden, 1694-04-06 - 1749-01-06, https://www.wikidata.org/wiki/Q1460937
+<https://www.wikidata.org/wiki/Q11904762>
+  # Albrecht Christoph Burggraf und Graf zu Dohna-Leistenau, 1698-09-23 - 1752-05-13
+  gen:father <https://www.wikidata.org/wiki/Q72540> ;
+  gen:mother <https://www.wikidata.org/wiki/Q11905406> .
+  # oo Amalie Elisabeth Gräfin zur Lippe-Detmold, 1697-11-02 - 1730-02-06
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q11904762> , <lippe.ttl#Amalie_Elisabeth_zur_Lippe-Detmold> ;
+	gen:startDate "1721-09-02" .
+  # oo Dorothea Sophie Gräfin zu Solms-Braunfels, 1699-04-09 - 1733-11-15
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q11904762> , <solms.ttl#Dorothea_zu_Solms-Braunfels> ;
+	gen:startDate "1730-12-03" .
+  # oo Sophie Prinzessin von Schleswig-Holstein-Sonderburg-Beck, 1698-12-18 - 1768-01-10 (oldenburg.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q11904762> , <https://www.wikidata.org/wiki/Q11950035> ;
+	gen:startDate "1736-08-11" .
+<#Johanna_Charlotte_zu_Dohna-Schlobitten>
+  # Johanna Charlotte Burggräfin und Gräfin zu Dohna-Schlobitten, 1699-12-09 - 1726-11-12
+  gen:father <https://www.wikidata.org/wiki/Q72540> ;
+  gen:mother <https://www.wikidata.org/wiki/Q11905406> .
+  # oo 1719-12-01 Carl Florus Burggraf und Graf zu Dohna-Schlodien, 1693-12-06 - 1765-06-29, https://www.wikidata.org/wiki/Q110261911
+<https://www.wikidata.org/wiki/Q60844427>
+  # Alexander Aemilius Burggraf und Graf zu Dohna-Schlobitten, 1704-07-17 - 1745-10-06
+  gen:father <https://www.wikidata.org/wiki/Q72540> ;
+  gen:mother <https://www.wikidata.org/wiki/Q11905406> .
+  # oo Sophia Charlotte Prinzessin von Schleswig-Holstein-Sonderburg-Beck, 1722-12-31 - 1763-08-07 (oldenburg.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q60844427> , <https://www.wikidata.org/wiki/Q3963952> ;
+	gen:startDate "1738-01-05" .
+
+<https://www.wikidata.org/wiki/Q2616024>
+  # Charlotte Burggräfin und Gräfin zu Dohna-Leistenau, 1738-07-03 - 1786-04-21
+  gen:father <https://www.wikidata.org/wiki/Q11904762> ;
+  gen:mother <https://www.wikidata.org/wiki/Q11950035> .
+  # oo 1754-05-10 Karl Anton August Prinz von Schleswig-Holstein-Sonderburg-Beck, 1725-08-10 - 1759-09-12, https://www.wikidata.org/wiki/Q64223 (oldenburg.ttl)
+<https://www.wikidata.org/wiki/Q75569191>
+  # Sophie Charlotte Burggräfin und Gräfin zu Dohna-Schlobitten, 1740-01-17 - 1798-11-10
+  gen:father <https://www.wikidata.org/wiki/Q60844427> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3963952> .
+  # oo 1759-12-21 Karl Fürst zu Solms-Hohensolms-Lich, 1725-04-16 - 1803-03-22, https://www.wikidata.org/wiki/Q31191848
+<https://www.wikidata.org/wiki/Q108927385>
+  # Friedrich Alexander Burggraf und Graf zu Dohna-Schlobitten, 1741-07-06 - 1810-04-08
+  gen:father <https://www.wikidata.org/wiki/Q60844427> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3963952> .
+  # oo Luise Amalie Karoline Gräfin Finck von Finckenstein, 1746-10-23 - 1825-02-23
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q108927385> , <https://www.wikidata.org/wiki/Q108927387> ;
+	gen:startDate "1769-04-26" .
+
+<https://www.wikidata.org/wiki/Q76241>
+  # Friedrich Ferdinand Alexander Burggraf und Graf zu Dohna-Schlobitten, 1771-03-29 - 1831-03-31
+  gen:father <https://www.wikidata.org/wiki/Q108927385> ;
+  gen:mother <https://www.wikidata.org/wiki/Q108927387> .
+<https://www.wikidata.org/wiki/Q108927384>
+  # Wilhelm Heinrich Maximilian Burggraf und Graf zu Dohna-Schlobitten, 1773-04-08 - 1845-05-19
+  gen:father <https://www.wikidata.org/wiki/Q108927385> ;
+  gen:mother <https://www.wikidata.org/wiki/Q108927387> .
+  # oo Amélie Gräfin von Schlieben, 1777-12-15 - 1845-10-03
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q108927384> , <https://www.wikidata.org/wiki/Q108927390> ;
+	gen:startDate "1801-06-24" .
+<https://www.wikidata.org/wiki/Q16573092>
+  # Ludwig Moritz Achatius Burggraf und Graf zu Dohna-Schlobitten, 1776-09-08 - 1814-01-19
+  gen:father <https://www.wikidata.org/wiki/Q108927385> ;
+  gen:mother <https://www.wikidata.org/wiki/Q108927387> .
+  # oo Amelie Friederike Burggräfin und Gräfin zu Dohna-Reichterswalde, 1777-08-07 - 1863-12-26
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q16573092> , <#Amelie_zu_Dohna-Reichterswalde> ;
+	gen:startDate "1804-01-17" .
+<https://www.wikidata.org/wiki/Q17122155> # -> Dohna-Finckenstein
+  # Alexander Fabian Burggraf und Graf zu Dohna-Schlobitten (-Finckenstein), 1781-11-17 - 1850-08-26
+  gen:father <https://www.wikidata.org/wiki/Q108927385> ;
+  gen:mother <https://www.wikidata.org/wiki/Q108927387> .
+<https://www.wikidata.org/wiki/Q97638>
+  # Friedrich Karl Emil Burggraf und Graf zu Dohna-Schlobitten, 1784-03-04 - 1859-02-21
+  gen:father <https://www.wikidata.org/wiki/Q108927385> ;
+  gen:mother <https://www.wikidata.org/wiki/Q108927387> .
+  # oo Julie von Scharnhorst, 1788-07-28 - 1827-02-20
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q97638> , <#Julie_von_Scharnhorst> ;
+	gen:startDate "1809-11-10" .
+
+<https://www.wikidata.org/wiki/Q2149517>
+  # Richard Friedrich Burggraf und Graf zu Dohna-Schlobitten, 1807-05-06 - 1894-07-12
+  gen:father <https://www.wikidata.org/wiki/Q108927384> ;
+  gen:mother <https://www.wikidata.org/wiki/Q108927390> .
+  # oo Mathilde Gräfin Truchsess von Waldburg-Capustigall, 1813-01-23 - 1858-12-01
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2149517> , <https://www.wikidata.org/wiki/Q108927393> ;
+	gen:startDate "1835-06-06" .
+<https://www.wikidata.org/wiki/Q76366095>
+  # Emanuel Aloysius Burggraf und Graf zu Dohna-Schlobitten, 1809-12-01 - 1888-08-13
+  gen:father <https://www.wikidata.org/wiki/Q108927384> ;
+  gen:mother <https://www.wikidata.org/wiki/Q108927390> .
+  # oo Wilhelmine Gräfin Finck von Finckenstein, 1827-06-05 - 1895-08-16
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76366095> , <https://www.wikidata.org/wiki/Q76366096> ;
+	gen:startDate "1849-10-21" .
+<#Marianne_zu_Dohna-Schlobitten>
+  # Marianne Nancy Thora Burggräfin und Gräfin zu Dohna-Schlobitten, 1812-05-30 - 1895-04-15
+  gen:father <https://www.wikidata.org/wiki/Q108927384> ;
+  gen:mother <https://www.wikidata.org/wiki/Q108927390> .
+  # oo 1835-06-06 Emil Burggraf und Graf zu Dohna-Schlodien, 1805-11-02 - 1877-11-18, https://www.wikidata.org/wiki/Q61708641
+<https://www.wikidata.org/wiki/Q55882320>
+  # Siegmar Friedrich Burggraf und Graf zu Dohna-Schlobitten, 1818-12-29 - 1909-02-21
+  gen:father <https://www.wikidata.org/wiki/Q97638> ;
+  gen:mother <#Julie_von_Scharnhorst> .
+
+<https://www.wikidata.org/wiki/Q108927382>
+  # Antonie Amalie Marie Burggräfin und Gräfin zu Dohna-Schlobitten, 1836-06-10 - 1897-09-14
+  gen:father <https://www.wikidata.org/wiki/Q2149517> ;
+  gen:mother <https://www.wikidata.org/wiki/Q108927393> .
+  # oo 1856-01-10 Johannes von Graf von Saurma Freiherr von und zu der Jeltsch, 1832-01-23 - 1891-03-24, https://www.wikidata.org/wiki/Q16937874
+<https://www.wikidata.org/wiki/Q2151041>
+  # Richard Wilhelm Ludwig Fürst zu Dohna-Schlobitten, 1843-08-17 - 1916-08-21
+  # 1. Fürst zu Dohna-Schlobitten 1900-01-01
+  gen:father <https://www.wikidata.org/wiki/Q2149517> ;
+  gen:mother <https://www.wikidata.org/wiki/Q108927393> .
+  # oo Amelie Burggräfin und Gräfin zu Dohna-Schlodien, 1837-11-01 - 1906-08-18
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2151041> , <#Amelie_zu_Dohna-Schlodien> ;
+	gen:startDate "1868-07-20" .
+<https://www.wikidata.org/wiki/Q82069685>
+  # Eberhard Friedrich Ludwig Burggraf und Graf zu Dohna-Schlobitten, 1846-08-11 - 1905-07-02
+  gen:father <https://www.wikidata.org/wiki/Q2149517> ;
+  gen:mother <https://www.wikidata.org/wiki/Q108927393> .
+  # oo Elisabeth Gräfin von Kanitz, 1851-03-11 - 1936-11-26, daughter of Emil Karl Ferdinand Graf von Kanitz and Charlotte von Sydow
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q82069685> , <#Elisabeth_von_Kanitz> ;
+	gen:startDate "1874-09-26" .
+<#Amélie_zu_Dohna-Schlobitten>
+  # Amélie Wilhelmine Caroline Elisabeth Burggräfin und Gräfin zu Dohna-Schlobitten, 1850-09-20 - 1877-03-15
+  gen:father <https://www.wikidata.org/wiki/Q76366095> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76366096> .
+  # oo 1870-06-28 Rudolph Burggraf und Graf zu Dohna-Schlodien, 1848-06-04 - 1897-04-22, #Rudolph_zu_Dohna-Schlodien
+<#Helene_zu_Dohna-Schlobitten>
+  # Helene Marianne Agnes Mathilde Burggräfin und Gräfin zu Dohna-Schlobitten, 1854-05-27 - 1922-05-07
+  gen:father <https://www.wikidata.org/wiki/Q76366095> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76366096> .
+  # oo 1878-09-18 Rudolph Burggraf und Graf zu Dohna-Schlodien, 1848-06-04 - 1897-04-22, #Rudolph_zu_Dohna-Schlodien
+<https://www.wikidata.org/wiki/Q76366093>
+  # Mathilde Ursula Burggräfin und Gräfin zu Dohna-Schlobitten, 1861-08-20 - 1943-01-15
+  gen:father <https://www.wikidata.org/wiki/Q76366095> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76366096> .
+  # oo 1886-02-27 Hans Heinrich XI. Fürst von Pleß, 1833-09-10 - 1907-08-14, https://www.wikidata.org/wiki/Q90708 (reuß.ttl)
+
+<https://www.wikidata.org/wiki/Q17325895>
+  # Richard Emil Fürst zu Dohna-Schlobitten, 1872-10-08 - 1918-11-18
+  # 2. Fürst zu Dohna-Schlobitten 1916-08-21
+  gen:father <https://www.wikidata.org/wiki/Q2151041> ;
+  gen:mother <#Amelie_zu_Dohna-Schlodien> .
+  # oo Marie Mathilde Prinzessin zu Solms-Hohensolms-Lich, 1873-08-24 - 1953-08-07
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q17325895> , <solms.ttl#Marie_Mathilde_zu_Solms-Hohensolms-Lich> ;
+	gen:startDate "1898-04-28" .
+<https://www.wikidata.org/wiki/Q94875831>
+  # Eberhard Richard Emil Burggraf und Graf zu Dohna-Schlobitten, 1875-12-23 - 1957-12-11
+  gen:father <https://www.wikidata.org/wiki/Q82069685> ;
+  gen:mother <#Elisabeth_von_Kanitz> .
+  # oo Renata Gräfin von Hochberg Freiin zu Fürstenstein, 1883-07-07 - 1948-05-21
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q94875831> , <reuß.ttl#Renata_von_Hochberg> ;
+	gen:startDate "1907-01-10" .
+<#Eleonore_zu_Dohna-Schlobitten>
+  # Eleonore Dorothea Margarete Burggräfin und Gräfin zu Dohna-Schlobitten, 1878-10-19 - 1942-07-20
+  gen:father <https://www.wikidata.org/wiki/Q82069685> ;
+  gen:mother <#Elisabeth_von_Kanitz> .
+  # oo 1908-04-23 Friedrich Franz Graf von Hochberg Freiherr zu Fürstenstein, 1875-09-15 - 1954-03-07, reuß.ttl#Friedrich_Franz_von_Hochberg
+<#Lothar_zu_Dohna-Schlobitten>
+  # Lothar Georg Burggraf und Graf zu Dohna-Schlobitten, 1881-08-18 - 1939-06-11
+  gen:father <https://www.wikidata.org/wiki/Q82069685> ;
+  gen:mother <#Elisabeth_von_Kanitz> .
+  # oo Mathilde Gräfin von Arnim, 1879-07-26 - 1951-01-07, daughter of Dietlof Friedrich Adolf Graf von Arnim and Helene Gräfin von Schweinitz und Krain Freiin von Kauder
+  []
+    gen:spouse <#Lothar_zu_Dohna-Schlobitten> , <#Mathilde_von_Arnim> ;
+	gen:startDate "1905-10-28" .
+<https://www.wikidata.org/wiki/Q96035>
+  # Heinrich Karl Waldemar Burggraf und Graf zu Dohna-Schlobitten, 1882-10-25 - 1944-09-14
+  gen:father <https://www.wikidata.org/wiki/Q82069685> ;
+  gen:mother <#Elisabeth_von_Kanitz> .
+  # oo Maria-Agnes von Borcke, 1895-02-14 - 1983-06-25
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q96035> , <#Maria-Agnes_von_Borcke> ;
+	gen:startDate "1920-05-18" .
+
+<https://www.wikidata.org/wiki/Q102186>
+  # Wilhelm Hermann _Alexander_ Richard Fürst zu Dohna-Schlobitten, 1899-12-11 - 1997-10-29
+  # 3. Fürst zu Dohna-Schlobitten 1918-11-18
+  gen:father <https://www.wikidata.org/wiki/Q17325895> ;
+  gen:mother <solms.ttl#Marie_Mathilde_zu_Solms-Hohensolms-Lich> .
+  # oo Freda-Antoinette Gräfin von Arnim, 1905-04-19 - 1999-07-01
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q102186> , <lippe.ttl#Freda-Antoinette_von_Arnim> ;
+	gen:startDate "1926-05-29" .
+<#Christoph_zu_Dohna-Schlobitten>
+  # Reinhard _Christoph_ Hubertus Richard Burggraf und Graf zu Dohna-Schlobitten, 1904-09-17 - 1994-06-30
+  gen:father <https://www.wikidata.org/wiki/Q17325895> ;
+  gen:mother <solms.ttl#Marie_Mathilde_zu_Solms-Hohensolms-Lich> .
+  # oo Marie-Anna Margarete Franziska Prinzessin zu Solms-Hohensolms-Lich, 1910-12-19 - 2002-04-01
+  []
+    gen:spouse <#Christoph_zu_Dohna-Schlobitten> , <solms.ttl#Marie-Anna_zu_Solms-Hohensolms-Lich> ;
+	gen:startDate "1931-09-24" .
+<#Friederike_zu_Dohna-Schlobitten>
+  # Friederike Elisabeth Eleonore Mathilde Amélie Burggräfin und Gräfin zu Dohna-Schlobitten, 1909-12-01 - 1983-05-05
+  gen:father <https://www.wikidata.org/wiki/Q94875831> ;
+  gen:mother <reuß.ttl#Renata_von_Hochberg> .
+  # oo 1930-10-10 Albrecht Freiherr von Maltzahn, 1902-03-02 - 1971-03-06, #Albrecht_von_Maltzahn
+<#Hans_Hubertus_zu_Dohna-Schlobitten>
+  # Hans Hubertus Burggraf und Graf zu Dohna-Schlobitten, 1925-05-21 - 2021-01-12
+  gen:father <https://www.wikidata.org/wiki/Q94875831> ;
+  gen:mother <reuß.ttl#Renata_von_Hochberg> .
+  # oo Angelika Marie Gräfin zu Castell-Castell, b. 1933-08-03
+  []
+    gen:spouse <#Hans_Hubertus_zu_Dohna-Schlobitten> , <castell.ttl#Angelika_zu_Castell-Castell> ;
+	gen:startDate "1959-06-12" .
+<https://www.wikidata.org/wiki/Q75326030>
+  # Heinrich Burggraf und Graf zu Dohna-Schlobitten, 1907-04-24 - 1940-05-22
+  gen:father <#Lothar_zu_Dohna-Schlobitten> ;
+  gen:mother <#Mathilde_von_Arnim> .
+  # oo Amélie Gräfin zu Ortenburg, 1909-12-19 - 2011-09-11 (sponheim.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75326030> , <https://www.wikidata.org/wiki/Q75326029> ;
+	gen:startDate "1934-04-10" .
+
+<#Friedrich_zu_Dohna-Schlobitten>
+  # Friedrich Heinrich Bolko Alexander Prinz zu Dohna-Schlobitten, b. 1933-02-27
+  # Oberhaupt des Hauses Dohna-Schlobitten 1997-10-29
+  gen:father <https://www.wikidata.org/wiki/Q102186> ;
+  gen:mother <lippe.ttl#Freda-Antoinette_von_Arnim> .
+  # oo (rel 1964-06-13) Alexandra Gräfin Hahn von Burgsdorff, b. 1943-09-12
+  []
+    gen:spouse <#Friedrich_zu_Dohna-Schlobitten> , <#Alexandra_Hahn_von_Burgsdorff> ;
+	gen:startDate "1964-06-12" ;
+	gen:divorceDate "1984" .
+  # oo Gisela Mißun, b. 1944-03-17
+  []
+    gen:spouse <#Friedrich_zu_Dohna-Schlobitten> , <#Gisela_Mißun> ;
+	gen:startDate "1998-06-04" .
+<https://www.wikidata.org/wiki/Q75379340>
+  # Ernst _Ludwig_ Donatus Alexander Burggraf und Graf zu Dohna-Schlobitten, b. 1937-12-10
+  gen:father <https://www.wikidata.org/wiki/Q102186> ;
+  gen:mother <lippe.ttl#Freda-Antoinette_von_Arnim> .
+  # oo Elisabeth Gräfin Kinsky von Wchinitz und Tettau, b. 1944-01-04
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75379340> , <https://www.wikidata.org/wiki/Q75379339> ;
+	gen:startDate "1968-09-14" .
+
+
+# Dohna-Finckenstein
+<https://www.wikidata.org/wiki/Q17122155>
+  # Alexander Fabian Burggraf und Graf zu Dohna-Schlobitten (-Finckenstein), 1781-11-17 - 1850-08-26
+  gen:father <https://www.wikidata.org/wiki/Q108927385> ;
+  gen:mother <https://www.wikidata.org/wiki/Q108927387> .
+  # oo Theophile Burggräfin und Gräfin zu Dohna-Lauck, 1786-08-16 - 1855-05-23
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q17122155> , <#Theophile_zu_Dohna-Lauck> ;
+	gen:startDate "1814-11-10" .
+
+<https://www.wikidata.org/wiki/Q2161332>
+  # Heinrich Otto Fabian Rodrigo Burggraf und Graf zu Dohna-Schlobitten (-Finckenstein), 1815-11-03 - 1900-04-09
+  gen:father <https://www.wikidata.org/wiki/Q17122155> ;
+  gen:mother <#Theophile_zu_Dohna-Lauck> .
+<#Hermann_zu_Dohna-Schlobitten>
+  # Heinrich Eduard Fabian Hermann Burggraf und Graf zu Dohna-Schlobitten, 1821-06-21 - 1859-02-16
+  gen:father <https://www.wikidata.org/wiki/Q17122155> ;
+  gen:mother <#Theophile_zu_Dohna-Lauck> .
+  # oo Lydia von Auerswald, 1827-10-18 - 1898-08-15
+  []
+    gen:spouse <#Hermann_zu_Dohna-Schlobitten> , <#Lydia_von_Auerswald_(b._1827)> ;
+	gen:startDate "1851-03-14" .
+
+<https://www.wikidata.org/wiki/Q17310210>
+  # Alfred Hermann Heinrich Burggraf und Graf zu Dohna-Schlobitten, 1852-01-06 - 1929-12-16
+  gen:father <#Hermann_zu_Dohna-Schlobitten> ;
+  gen:mother <#Lydia_von_Auerswald_(b._1827)> .
+  # oo Marianne von Wallenberg, 1856-02-17 - 1931-02-03
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q17310210> , <#Marianne_von_Wallenberg> ;
+	gen:startDate "1876-09-25" .
+<https://www.wikidata.org/wiki/Q17310724>
+  # Carl Wilhelm Reinhold Burggraf und Graf zu Dohna-Schlobitten, 1857-04-28 - 1942-06-03
+  gen:father <#Hermann_zu_Dohna-Schlobitten> ;
+  gen:mother <#Lydia_von_Auerswald_(b._1827)> .
+  # oo Else Gräfin von der Schulenburg, 1867-10-14 - 1938-01-22, daughter of Werner Ludwig Ernst Karl Heinrich Achaz Graf von der Schulenburg and Mary Freiin von Maltzahn
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q17310724> , <#Else_von_der_Schulenburg> ;
+	gen:startDate "1893-10-31" .
+
+
+# Dohna-Schlodien
+<https://www.wikidata.org/wiki/Q84927>
+  # Christoph I., Burggraf und Graf zu Dohna-Schlodien, 1665-04-02 - 1733-10-11
+  gen:father <https://www.wikidata.org/wiki/Q338290> ;
+  gen:mother <https://www.wikidata.org/wiki/Q109835722> .
+  # oo Friederike Marie von Dohna-Vianen, 1660-12-28 - 1729-11-22
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q84927> , <https://www.wikidata.org/wiki/Q75243619> ;
+	gen:startDate "1690" .
+
+<https://www.wikidata.org/wiki/Q105803582>
+  # Amalie Burggräfin und Gräfin zu Dohna-Schlodien, 1692-06-24 - 1761-10-20
+  gen:father <https://www.wikidata.org/wiki/Q84927> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75243619> .
+  # oo Hans Carl, Fürst zu Carolath-Beuthen, 1689-06-15 - 1763-10-11, https://www.wikidata.org/wiki/Q105803578 (schoenaich.ttl)
+<https://www.wikidata.org/wiki/Q110261911>
+  # Carl Florus Burggraf und Graf zu Dohna-Schlodien, 1693-12-06 - 1765-06-29
+  # Majoratsherr auf Schlodien
+  gen:father <https://www.wikidata.org/wiki/Q84927> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75243619> .
+  # oo Johanna Charlotte Burggräfin und Gräfin zu Dohna-Schlobitten, 1699-12-09 - 1726-11-12
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110261911> , <#Johanna_Charlotte_zu_Dohna-Schlobitten> ;
+	gen:startDate "1719-12-01" .
+  # oo Dorothea Luise Albertine von Schwerin, 1713-08-12 - 1787-11-22, daughter of Friedrich Wilhelm von Schwerin auf Walsleben and Charlotte Louise Freiin von Heide
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110261911> , <#Dorothea_von_Schwerin> ;
+	gen:startDate "1752-11-30" .
+<https://www.wikidata.org/wiki/Q1639729>
+  # Wilhelm Alexander Burggraf und Graf zu Dohna-Schlodien, 1695-01-31 - 1749-07-09
+  gen:father <https://www.wikidata.org/wiki/Q84927> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75243619> .
+  # oo Henriette Gräfin von Roedern Freiin zu Krappitz, 1694-01-08 - 1760-02-13 (henckel.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1639729> , <https://www.wikidata.org/wiki/Q112329780> ;
+	gen:startDate "1722-11-04" .
+<https://www.wikidata.org/wiki/Q110426410>
+  # Frede-Marie Burggräfin und Gräfin zu Dohna-Schlodien, 1695-12-31 - 1772-06-30
+  gen:father <https://www.wikidata.org/wiki/Q84927> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75243619> .
+  # oo 1714-09-17 Adolph Christoph Burggraf und Graf zu Dohna-Lauck, 1683-07-04 - 1736-09-13, https://www.wikidata.org/wiki/Q65037300
+<https://www.wikidata.org/wiki/Q75243616>
+  # Ursula Anna Burggräfin und Gräfin von Dohna-Schlodien, 1700-12-31 - 1761-03-17
+  gen:father <https://www.wikidata.org/wiki/Q84927> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75243619> .
+  # oo 1721-12-03 Friedrich Wilhelm II., Herzog von Schleswig-Holstein-Sonderburg-Beck, 1687-06-18 - 1749-11-11, https://www.wikidata.org/wiki/Q89278
+<https://www.wikidata.org/wiki/Q1085211>
+  # Christoph Burggraf und Graf zu Dohna-Schlodien, 1702-10-25 - 1782-05-19
+  gen:father <https://www.wikidata.org/wiki/Q84927> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75243619> .
+  # oo Friederike Gräfin zu Solms-Wildenfels, 1714-05-28 - 1755-04-09
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1085211> , <solms.ttl#Friederike_zu_Solms-Wildenfels> ;
+	gen:startDate "1734-10-18" .
+
+<#Christoph_zu_Dohna-Schlodien>
+  # Christoph Burggraf und Graf zu Dohna-Schlodien, 1725-08-20 - 1781-04-04
+  gen:father <https://www.wikidata.org/wiki/Q110261911> ;
+  gen:mother <#Johanna_Charlotte_zu_Dohna-Schlobitten> .
+  # oo Marie Eleonore Gräfin von Schönaich-Carolath, 1729-08-31 - 1789-08-31
+  []
+    gen:spouse <#Christoph_zu_Dohna-Schlodien> , <schoenaich.ttl#Marie_Eleonore_von_Schönaich-Carolath> ;
+	gen:startDate "1750-07-32" .
+<https://www.wikidata.org/wiki/Q55849320>
+  owl:sameAs <https://www.wikidata.org/wiki/Q110261915> ;
+  # Carl Ludwig Alexander Burggraf und Graf zu Dohna-Schlodien, 1758-06-30 - 1838-12-27
+  gen:father <https://www.wikidata.org/wiki/Q110261911> ;
+  gen:mother <#Dorothea_von_Schwerin> .
+  # oo Wilhelmine Burggräfin und Gräfin zu Dohna-Lauck, 1761-10-03 - 1827-10-17
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q55849320> , <#Wilhelmine_zu_Dohna-Lauck> ;
+	gen:startDate "1781-10-10" .
+<https://www.wikidata.org/wiki/Q112329766>
+  # Wilhelm Christoph Gottlob Burggraf und Graf zu Dohna-Schlodien, 1724-11-13 - 1787-08-17
+  # auf Kotzenau
+  gen:father <https://www.wikidata.org/wiki/Q1639729> ;
+  gen:mother <https://www.wikidata.org/wiki/Q112329780> .
+  # oo Friederike Gräfin von Reichenbach, 1740-05-10 - 1814-03-17 (solms.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q112329766> , <https://www.wikidata.org/wiki/Q112329783> ;
+	gen:startDate "1760-11-10" .
+<#Sophie_Amalie_zu_Dohna-Schlodien>
+  # Sophie Amalie Burggräfin und Gräfin zu Dohna-Schlodien, 1728-07-18 - 1793-12-16
+  gen:father <https://www.wikidata.org/wiki/Q1639729> ;
+  gen:mother <https://www.wikidata.org/wiki/Q112329780> .
+  # oo 1750-11-16 Hans Gottlob Graf von Schönaich-Carolath, 1726-02-27 - 1803-12-05, schoenaich.ttl#Hans_Gottlob_von_Schönaich-Carolath
+
+<https://www.wikidata.org/wiki/Q110261916>
+  # Christoph Adolph Burggraf und Graf zu Dohna-Schlodien, 1786-11-25 - 1843-02-10
+  gen:father <https://www.wikidata.org/wiki/Q55849320> ;
+  gen:mother <#Wilhelmine_zu_Dohna-Lauck> .
+  # oo Juliane Amalie Freiin von Vietinghoff, genannt Scheel, 1787-12-19 - 1865-01-14, daughter of Christoph Engelbrecht Freiherr von Vietinghoff gen. Scheel and Friederike Amalie von Claussen
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110261916> , <#Juliane_von_Vietinghoff> ;
+	gen:startDate "1810-11-25" .
+<https://www.wikidata.org/wiki/Q24265077>
+  # Albrecht Leopold Wilhelm Burggraf und Graf zu Dohna-Schlodien, 1764-04-29 - 1813-12-30
+  gen:father <https://www.wikidata.org/wiki/Q112329766> ;
+  gen:mother <https://www.wikidata.org/wiki/Q112329783> .
+  # oo Helene Eckenberg, 1760 - 18??
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q24265077> , <#Helene_Eckenberg> ;
+	gen:startDate "1795-11-12" ;
+	gen:divorceDate "1804" .
+  # oo Elise von Benckendorf, 1780/1781 - 1852-12-20
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q24265077> , <#Elise_von_Benckendorf> ;
+	gen:startDate "1804-08-10" .
+<#Henriette_zu_Dohna-Schlodien>
+  # Henriette Friederike Amalie Burggräfin und Gräfin zu Dohna-Schlodien, 1767-11-17 - 1843-07-28
+  gen:father <https://www.wikidata.org/wiki/Q112329766> ;
+  gen:mother <https://www.wikidata.org/wiki/Q112329783> .
+  # oo 1789-05-12 Alexander Graf von Schönaich-Carolath, 1767-09-18 - 1829-12-06, schoenaich.ttl#Alexander_von_Schoenaich-Carolath
+<https://www.wikidata.org/wiki/Q112329391>
+  # Wilhelm August Gottlob Burggraf und Graf zu Dohna-Schlodien, 1769-12-15 - 1837-01-03
+  gen:father <https://www.wikidata.org/wiki/Q112329766> ;
+  gen:mother <https://www.wikidata.org/wiki/Q112329783> .
+  # oo Henriette Gräfin von Reichenbach, 1785-02-14 - 1839-02-14 (solms.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q112329391> , <https://www.wikidata.org/wiki/Q112329392> ;
+	gen:startDate "1801-06-10" .
+<https://www.wikidata.org/wiki/Q122639391>
+  # Leopold Emil _Fabian_ Burggraf und Graf zu Dohna-Schlodien auf Mallmitz, 1777-02-25 - 1839-08-28
+  gen:father <https://www.wikidata.org/wiki/Q112329766> ;
+  gen:mother <https://www.wikidata.org/wiki/Q112329783> .
+  # oo Amalie Gräfin von Kospoth, 1780-02-26 - 1834-06-24
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q122639391> , <erbach.ttl#Amalie_von_Kospoth> ;
+	gen:startDate "1800-06-18" ;
+	gen:divorceDate "1803" .
+  # oo Amélie Gräfin von Reichenbach, 1784-01-10 - 1849-01-10
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q122639391> , <solms.ttl#Amélie_von_Reichenbach> ;
+	gen:startDate "1804-10-08" .
+
+<#Carl_Ludwig_zu_Dohna-Schlodien>
+  # Carl Ludwig Alexander Erdmann Burggraf und Graf zu Dohna-Schlodien, 1814-09-29 - 1890-04-03
+  gen:father <https://www.wikidata.org/wiki/Q110261916> ;
+  gen:mother <#Juliane_von_Vietinghoff> .
+  # oo Lydia Anna von Auerswald, 1820-06-27 - 1878-07-03
+  []
+    gen:spouse <#Carl_Ludwig_zu_Dohna-Schlodien> , <#Lydia_von_Auerswald_(b._1820)> ;
+	gen:startDate "1839-11-09" .
+<#Malwina_zu_Dohna-Schlodien>
+  # Malwina Herminia Eveline Friederike Burggräfin und Gräfin zu Dohna-Schlodien, 1816-09-06 - 1887-04-07
+  gen:father <https://www.wikidata.org/wiki/Q110261916> ;
+  gen:mother <#Juliane_von_Vietinghoff> .
+  # oo 1844-06-18 Ludwig Botho Graf zu Eulenburg, 1811-02-25 - 1867-02-26, #Ludwig_Botho_zu_Eulenburg
+<https://www.wikidata.org/wiki/Q354698>
+  # Adelheid Christine Friederike Amalie Burggräfin und Gräfin zu Dohna-Schlodien, 1804-08-14 - 1881-06-07
+  gen:father <https://www.wikidata.org/wiki/Q112329391> ;
+  gen:mother <https://www.wikidata.org/wiki/Q112329392> .
+  # oo 1841-08-24 Adolph Graf Poniński, 1801-07-13 - 1878-06-14, https://www.wikidata.org/wiki/Q108814020
+<https://www.wikidata.org/wiki/Q112329390>
+  # Wilhelm _Hermann_ Albrecht Burggraf und Graf zu Dohna-Schlodien (-Kotzenau), 1809-11-11 - 1872-10-13
+  # auf Kotzenau
+  gen:father <https://www.wikidata.org/wiki/Q112329391> ;
+  gen:mother <https://www.wikidata.org/wiki/Q112329392> .
+  # oo Marie Sophie Gräfin von Nostitz, 1813-09-08 - 1888-08-13 (hatzfeld.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q112329390> , <https://www.wikidata.org/wiki/Q112329393> ;
+	gen:startDate "1835-06-10" .
+<https://www.wikidata.org/wiki/Q19502266>
+  # Fabian Burggraf und Graf zu Dohna-Schlodien, 1802-08-05 - 1871-05-04
+  gen:father <https://www.wikidata.org/wiki/Q122639391> ;
+  gen:mother <erbach.ttl#Amalie_von_Kospoth> .
+  # oo Marie von Steinach, 1805-12-08 - 1893-01-06 (rohan.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q19502266> , <https://www.wikidata.org/wiki/Q106352930> ;
+	gen:startDate "1829-07-25" .
+<https://www.wikidata.org/wiki/Q61708641>
+  # Friedrich Wilhelm _Emil_ Burggraf und Graf zu Dohna-Schlodien, 1805-11-02 - 1877-11-18
+  gen:father <https://www.wikidata.org/wiki/Q122639391> ;
+  gen:mother <solms.ttl#Amélie_von_Reichenbach> .
+  # oo Marianne Burggräfin und Gräfin zu Dohna-Schlobitten, 1812-05-30 - 1895-04-15
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q61708641> , <#Marianne_zu_Dohna-Schlobitten> ;
+	gen:startDate "1835-06-06" .
+<https://www.wikidata.org/wiki/Q2646279>
+  # Florus Leopold _Alfred_ Burggraf und Graf zu Dohna-Schlodien, 1809-01-08 - 1859-05-14
+  # auf Mallmitz
+  gen:father <https://www.wikidata.org/wiki/Q122639391> ;
+  gen:mother <solms.ttl#Amélie_von_Reichenbach> .
+  # oo Clementine Gräfin von Pückler Freiin von Groditz, 1821-12-02 - 1894-04-15
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2646279> , <pückler.ttl#Clementine_von_Pückler> ;
+	gen:startDate "1846-10-11" .
+<https://www.wikidata.org/wiki/Q55849321>
+  # Louis Abraham _Theobald_ Burggraf und Graf zu Dohna-Schlodien, 1811-11-19 - 1875-05-28
+  gen:father <https://www.wikidata.org/wiki/Q122639391> ;
+  gen:mother <solms.ttl#Amélie_von_Reichenbach> .
+  # oo Ida von Gayette, 1815-08-27 - 1893-12-07
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q55849321> , <#Ida_von_Gayette> ;
+	gen:startDate "1838-01-21" .
+<https://www.wikidata.org/wiki/Q67452563>
+  # Louis Wilhelm _Adalbert_ Burggraf und Graf zu Dohna-Schlodien, 1816-07-15 - 1889-01-20
+  gen:father <https://www.wikidata.org/wiki/Q122639391> ;
+  gen:mother <solms.ttl#Amélie_von_Reichenbach> .
+  # oo Anna Freiin von Knobelsdorff, 1842-08-27 - 1907-12-31
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q67452563> , <#Anna_von_Knobelsdorff> ;
+	gen:startDate "1875-07-15" .
+
+<https://www.wikidata.org/wiki/Q364923>
+  # Adolf Rudolf Christof Burggraf und Graf zu Dohna-Schlodien, 1846-01-30 - 1905-08-06
+  gen:father <#Carl_Ludwig_zu_Dohna-Schlodien> ;
+  gen:mother <#Lydia_von_Auerswald_(b._1820)> .
+  # oo Clara Gräfin zu Eulenburg, 1849-01-01 - 1924-04-29
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q364923> , <#Clara_zu_Eulenburg> ;
+	gen:startDate "1868-07-22" .
+<#Rudolph_zu_Dohna-Schlodien>
+  # Rudolph Achatius Christoph Burggraf und Graf zu Dohna-Schlodien, 1848-06-04 - 1897-04-22
+  gen:father <#Carl_Ludwig_zu_Dohna-Schlodien> ;
+  gen:mother <#Lydia_von_Auerswald_(b._1820)> .
+  # oo Amélie Burggräfin und Gräfin zu Dohna-Schlobitten, 1850-09-20 - 1877-03-15
+  []
+    gen:spouse <#Rudolph_zu_Dohna-Schlodien> , <#Amélie_zu_Dohna-Schlobitten> ;
+	gen:startDate "1870-06-28" .
+  # oo Helene Burggräfin und Gräfin zu Dohna-Schlobitten, 1854-05-27 - 1922-05-07
+  []
+    gen:spouse <#Rudolph_zu_Dohna-Schlodien> , <#Helene_zu_Dohna-Schlobitten> ;
+	gen:startDate "1878-09-18" .
+<https://www.wikidata.org/wiki/Q15854580>
+  # Wilhelm Karl Hannibal Vincenz Burggraf und Graf zu Dohna-Schlodien (-Kotzenau), 1841-01-10 - 1925-10-27
+  gen:father <https://www.wikidata.org/wiki/Q112329390> ;
+  gen:mother <https://www.wikidata.org/wiki/Q112329393> .
+  # oo Wilhelmine von Bagevitz, 1846-04-10 - 1937-01-21, daughter of Adolf Friedrich von Bagevitz and Emilie Gräfin von Schmettow
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q15854580> , <#Wilhelmine_von_Bagevitz> ;
+	gen:startDate "1869-09-03" .
+<#Amelie_zu_Dohna-Schlodien>
+  # Amelie Marianne Sophie Burggräfin und Gräfin zu Dohna-Schlodien, 1837-11-01 - 1906-08-18
+  gen:father <https://www.wikidata.org/wiki/Q61708641> ;
+  gen:mother <#Marianne_zu_Dohna-Schlobitten> .
+  # oo 1868-07-20 Richard Fürst zu Dohna-Schlobitten, 1843-08-17 - 1916-08-21, https://www.wikidata.org/wiki/Q2151041
+<#Alfred_zu_Dohna-Schlodien>
+  # Alfred Fabian Wilhelm Theodor Burggraf und Graf zu Dohna-Schlodien, 1849-06-07 - 1907-01-25
+  # auf Mallmitz
+  gen:father <https://www.wikidata.org/wiki/Q2646279> ;
+  gen:mother <pückler.ttl#Clementine_von_Pückler> .
+  # oo Margarethe von der Hagen, 1845-04-26 - 1932-05-27, daughter of Otto von der Hagen and Priscilla Freiin von Reitzenstein
+  []
+    gen:spouse <#Alfred_zu_Dohna-Schlodien> , <#Margarethe_von_der_Hagen> ;
+	gen:startDate "1871-10-24" .
+<https://www.wikidata.org/wiki/Q55849319>
+  # Hannibal Ludwig Fabian Wilhelm Alfred Theobald Burggraf und Graf zu Dohna-Schlodien, 1838-10-20 - 1914-02-12
+  gen:father <https://www.wikidata.org/wiki/Q55849321> ;
+  gen:mother <#Ida_von_Gayette> .
+  # oo Helene Maurokordatos, 1846-05-25 - 1924-01-03
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q55849319> , <#Helene_Maurokordatos> ;
+	gen:startDate "1874-02-05" .
+
+<#Freda-Marie_zu_Dohna-Schlodien>
+  # Freda-Marie Burggräfin und Gräfin zu Dohna-Schlodien, 1873-04-21 - 1959-06-18
+  gen:father <https://www.wikidata.org/wiki/Q364923> ;
+  gen:mother <#Clara_zu_Eulenburg> .
+  # oo 1894-05-16 Wilhelm Graf von Rothenburg, 1861-11-16 - 1929-02-17, hohenzollern.ttl#Wilhelm_von_Rothenburg
+<#Lonny_zu_Dohna-Schlodien>
+  # Lonny Freda Marie Burggräfin und Gräfin zu Dohna-Schlodien, 1873-04-10 - 1964-01-29
+  gen:father <https://www.wikidata.org/wiki/Q15854580> ;
+  gen:mother <#Wilhelmine_von_Bagevitz> .
+  # oo 1893-09-28 Karl von Borcke, 1855-10-31 - 1927-03-12, #Karl_von_Borcke
+<https://www.wikidata.org/wiki/Q71864>
+  # Nikolaus Paul Richard Burggraf und Graf zu Dohna-Schlodien, 1879-04-05 - 1956-08-21
+  gen:father <#Alfred_zu_Dohna-Schlodien> ;
+  gen:mother <#Margarethe_von_der_Hagen> .
+  # oo Hilda von Reichenau, 1888-01-31 - 1968-10-08, daughter of Karl von Reichenau and Clarita Jacobi
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q71864> , <#Hilda_von_Reichenau> ;
+	gen:startDate "1918-08-15" .
+<https://www.wikidata.org/wiki/Q1497127>
+  # Georg Theobald _Alexander_ Burggraf und Graf zu Dohna-Schlodien, 1876-06-29 - 1944-12-25
+  gen:father <https://www.wikidata.org/wiki/Q55849319> ;
+  gen:mother <#Helene_Maurokordatos> .
+  # oo Elisabeth von Pommer Esche, 1882-05-20 - 1969-08-06
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1497127> , <https://www.wikidata.org/wiki/Q94771610> ;
+	gen:startDate "1906-09-24" .
+
+
+# Dohna-Carwinden
+<https://www.wikidata.org/wiki/Q315821>
+  # Christoph Delphicus Burggraf und Graf von Dohna-Carwinden, 1628-06-04 - 1668-05-21
+  gen:father <https://www.wikidata.org/wiki/Q315846> ;
+  gen:mother <https://www.wikidata.org/wiki/Q55849318> .
+  # oo Anna Oxenstierna, 1620 – 1691
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q315821> , <https://www.wikidata.org/wiki/Q109835717> ;
+	gen:startDate "1658" .
+
+<https://www.wikidata.org/wiki/Q11905406>
+  # Amalie Louise Gräfin zu Dohna-Carwinden, 1661-07-28 - 1724-04-02
+  gen:father <https://www.wikidata.org/wiki/Q315821> ;
+  gen:mother <https://www.wikidata.org/wiki/Q109835717> .
+  # oo 1684-09-10 Alexander Burggraf und Graf zu Dohna-Schlobitten, 1661-01-25 - 1728-02-25, https://www.wikidata.org/wiki/Q72540
+<https://www.wikidata.org/wiki/Q109835320>
+  # Friedrich Christoph Burggraf und Graf zu Dohna-Carwinden, 1664-01-07 - 1727-07-20
+  gen:father <https://www.wikidata.org/wiki/Q315821> ;
+  gen:mother <https://www.wikidata.org/wiki/Q109835717> .
+  # oo Louise Antoinette Burggräfin und Gräfin zu Dohna, 1660-10-01 - 1716-01-16
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q109835320> , <https://www.wikidata.org/wiki/Q109835322> ;
+	gen:startDate "1685-03-15" .
+
+<#Ulrike_Eleonore_zu_Dohna-Carwinden>
+  # Ulrike Eleonore Burggräfin und Gräfin zu Dohna-Carwinden, 1689-04-13 - 1760-10-06
+  gen:father <https://www.wikidata.org/wiki/Q109835320> ;
+  gen:mother <https://www.wikidata.org/wiki/Q109835322> .
+  # oo 1712-11-08 Heinrich Georg Graf von Waldeck, 1683-05-24 - 1736-08-03, waldeck.ttl#Heinrich_Georg_von_Waldeck
+<https://www.wikidata.org/wiki/Q1460937>
+  # Friedrich Ludwig Burggraf und Graf zu Dohna-Carwinden, 1694-04-06 - 1749-01-06
+  gen:father <https://www.wikidata.org/wiki/Q109835320> ;
+  gen:mother <https://www.wikidata.org/wiki/Q109835322> .
+  # oo Sophie Wilhelmine Burggräfin und Gräfin zu Dohna-Schlobitten, 1697-07-08 - 1754-09-10
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1460937> , <#Sophie_Wilhelmine_zu_Dohna-Schlobitten> ;
+	gen:startDate "1721-12-16" .
+
+<#Sophia_Luise_zu_Dohna-Carwinden>
+  # Sophia Luise Burggräfin und Gräfin zu Dohna-Carwinden, 1727-10-09 - 1749-03-19
+  gen:father <https://www.wikidata.org/wiki/Q1460937> ;
+  gen:mother <#Sophie_Wilhelmine_zu_Dohna-Schlobitten> .
+  # oo 1747-09-03 Franz Karl Ludwig Graf zu Wied-Neuwied, 1710-10-19 - 1765-10-08, https://www.wikidata.org/wiki/Q1447715 (runkel.ttl)
+
+
+# ----
+<#Sophie_von_Budberg>
+  # Sophie Friederike von Budberg, 1752-09-10 - 1796-03-19
+  gen:father <https://www.wikidata.org/wiki/Q15450921> . # Alexander von Boenninghausen genannt von Budberg
+  # and Johanna Eleonore von Thielen
+  # oo 1776-03-20 August Burggraf und Graf zu Dohna-Lauck, 1729-03-28 - 1793-01-04, https://www.wikidata.org/wiki/Q15786894
+
+# ----
+<https://www.wikidata.org/wiki/Q1493013>
+  # Moritz Ludwig Wilhelm von Schoeler, 1771-09-03 - 1855-03-15
+  gen:father <https://www.wikidata.org/wiki/Q1463815> . # Johann Friedrich Wilhelm von Schoeler
+  # and Charlotte Henriette Freiin von Pelden genannt von Cloudt
+  # oo Friederike Eleonore Burggräfin und Gräfin zu Dohna-Lauck, 1777-04-01 - 1855-04-07
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1493013> , <#Friederike_Eleonore_zu_Dohna-Lauck> ;
+	gen:startDate "1795-12-13" .
+
+# ----
+<https://www.wikidata.org/wiki/Q108927390>
+  # Amélie Gräfin von Schlieben, 1777-12-15 - 1845-10-03
+  gen:father <https://www.wikidata.org/wiki/Q108927391> ; # Friedrich Wilhelm Graf von Schlieben
+  gen:mother <https://www.wikidata.org/wiki/Q108927392> . # Caroline Gräfin von Schlieben
+  # oo 1801-06-24 Wilhelm Burggraf und Graf zu Dohna-Schlobitten, 1773-04-08 - 1845-05-19, https://www.wikidata.org/wiki/Q108927384
+
+# ----
+#<https://www.wikidata.org/wiki/Q214895>
+  # Hans Jacob von Auerswald, 1757-07-25 - 1833-04-03
+  # son of Hans Adolf von Auerswald
+  # and Henriette Eleonore von Schwandes
+  # oo Sophie Burggräfin und Gräfin zu Dohna-Lauck, 1760-04-05 - 1831-01-09
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q214895> , <#Sophie_zu_Dohna-Lauck> ;
+	gen:startDate "1784-11-23" .
+
+<https://www.wikidata.org/wiki/Q545628>
+  # Rudolf Ludwig Cäsar von Auerswald, 1795-09-01 - 1866-01-15
+  gen:father <https://www.wikidata.org/wiki/Q214895> ;
+  gen:mother <#Sophie_zu_Dohna-Lauck> .
+  # oo Adelheid Burggräfin und Gräfin zu Dohna-Lauck, 1795-03-31 - 1859-08-28
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q545628> , <#Adelheid_zu_Dohna-Lauck> ;
+	gen:startDate "1817-07-31" .
+
+<#Lydia_von_Auerswald_(b._1820)>
+  # Lydia Anna von Auerswald, 1820-06-27 - 1878-07-03
+  gen:father <https://www.wikidata.org/wiki/Q545628> ;
+  gen:mother <#Adelheid_zu_Dohna-Lauck> .
+  # oo 1839-11-09 Carl Ludwig Alexander Erdmann Burggraf und Graf zu Dohna-Schlodien, 1814-09-29 - 1890-04-03, #Carl_Ludwig_zu_Dohna-Schlodien
+
+# ----
+#<https://www.wikidata.org/wiki/Q1594552>
+  # Wilhelm von Wienskowski genannt von Salzwedel, 1820-04-16 - 1882-07-29
+  # son of Reinhold von Wienskowski
+  # and Johanna von Saltzwedel
+  # oo Friederike Emilie Wilhelmine Burggräfin und Gräfin zu Dohna-Lauck, 1832-12-22 - 1910-04-08
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1594552> , <#Friederike_Emilie_zu_Dohna-Lauck> ;
+	gen:startDate "1873-07-28" .
+
+# ----
+<#Julie_von_Scharnhorst>
+  # Julie von Scharnhorst, 1788-07-28 - 1827-02-20
+  gen:father <https://www.wikidata.org/wiki/Q170340> . # Gerhard Johann David von Scharnhorst
+  # and Clara Schmalz
+  # oo 1809-11-10 Friedrich Karl Emil Burggraf und Graf zu Dohna-Schlobitten, 1784-03-04 - 1859-02-21, https://www.wikidata.org/wiki/Q97638
+
+# ----
+#<#Albrecht_von_Maltzahn>
+  # Albrecht Carl Hilmar Martin Hans Georg Freiherr von Maltzahn, 1902-03-02 - 1971-03-06
+  # son of Georg August Otto Karl Freiherr von Maltzahn
+  # and Harriett Edle von Paepcke
+  # oo Friederike Burggräfin und Gräfin zu Dohna-Schlobitten, 1909-12-01 - 1983-05-05
+  []
+    gen:spouse <#Albrecht_von_Maltzahn> , <#Friederike_zu_Dohna-Schlobitten> ;
+	gen:startDate "1930-10-10" .
+
+<https://www.wikidata.org/wiki/Q75373694>
+  # Marie Elisabeth Freiin von Maltzahn, b. 1936-07-25
+  gen:father <#Albrecht_von_Maltzahn> ;
+  gen:mother <#Friederike_zu_Dohna-Schlobitten> .
+  # oo 1957-07-19 Christian-Heinrich Prinz zu Stolberg-Wernigerode, 1922-12-21 - 2001-12-04, https://www.wikidata.org/wiki/Q75373693
+
+# ----
+#<#Ludwig_Botho_zu_Eulenburg>
+  # Ludwig Botho Graf zu Eulenburg, 1811-02-25 - 1867-02-26
+  # son of Alexander Ernst zu Eulenburg
+  # and Frederika von Rauter
+  # oo Malwina Herminia Eveline Friederike Burggräfin und Gräfin zu Dohna-Schlodien, 1816-09-06 - 1887-04-07
+  []
+    gen:spouse <#Ludwig_Botho_zu_Eulenburg> , <#Malwina_zu_Dohna-Schlodien> ;
+	gen:startDate "1844-06-18" .
+
+<#Clara_zu_Eulenburg>
+  # Clara Gräfin zu Eulenburg, 1849-01-01 - 1924-04-29
+  gen:father <#Ludwig_Botho_zu_Eulenburg> ;
+  gen:mother <#Malwina_zu_Dohna-Schlodien> .
+  # oo 1868-07-22 Adolf Burggraf und Graf zu Dohna-Schlodien, 1846-01-30 - 1905-08-06, https://www.wikidata.org/wiki/Q364923
+
+# ----
+#<https://www.wikidata.org/wiki/Q108814020>
+  # Adolph Graf Poniński, 1801-07-13 - 1878-06-14
+  # oo Adelheid Burggräfin und Gräfin zu Dohna-Schlodien, 1804-08-14 - 1881-06-07
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q108814020> , <https://www.wikidata.org/wiki/Q354698> ;
+	gen:startDate "1841-08-24" .
+
+# ----
+#<#Karl_von_Borcke>
+  # Karl von Borcke, 1855-10-31 - 1927-03-12
+  # oo Lonny Burggräfin und Gräfin zu Dohna-Schlodien, 1873-04-10 - 1964-01-29
+  []
+    gen:spouse <#Karl_von_Borcke> , <#Lonny_zu_Dohna-Schlodien> ;
+	gen:startDate "1893-09-28" .
+
+<#Maria-Agnes_von_Borcke>
+  # Maria-Agnes von Borcke, 1895-02-14 - 1983-06-25
+  gen:father <#Karl_von_Borcke> ;
+  gen:mother <#Lonny_zu_Dohna-Schlodien> .
+  # oo 1920-05-18 Heinrich Burggraf und Graf zu Dohna-Schlobitten, 1882-10-25 - 1944-09-14, https://www.wikidata.org/wiki/Q96035
+
+# ----
+<https://www.wikidata.org/wiki/Q109835717>
+  # Anna Oxenstierna, 1620 – 1691
+  gen:father <https://www.wikidata.org/wiki/Q3509294> ; # Gabriel Bengtsson Oxenstierna
+  gen:mother <https://www.wikidata.org/wiki/Q22670927> . # Anna Gustafsdotter Banér
+  # oo 1658 Christoph Delphicus Burggraf und Graf von Dohna-Carwinden, 1628-06-04 - 1668-05-21, https://www.wikidata.org/wiki/Q315821

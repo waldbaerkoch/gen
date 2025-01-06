@@ -4,10 +4,35 @@
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
+<https://www.wikidata.org/wiki/Q247786>
+  # Ulrich I., Graf von Württemberg, 1226 - 1265-02-25
+  # Graf von Württemberg 1241~
+  gen:father <https://www.wikidata.org/wiki/Q69304> . # Ludwig III., Graf von Württemberg
+  # oo Mechtild von Baden, 1225a - 1258a (zähringer.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q247786> , <https://www.wikidata.org/wiki/Q123875> ;
+	gen:startDate "1251-04-04b" .
+  # oo Agnes von Schlesien-Liegnitz, d. 1265-03-13 (piasten.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q247786> , <https://www.wikidata.org/wiki/Q394781> ;
+	gen:startDate "1259" .
+
+<https://www.wikidata.org/wiki/Q247817>
+  # Ulrich II., Graf von Württemberg, 1254~ - 1279-09-18
+  # Graf von Württemberg 1265-02-25
+  gen:father <https://www.wikidata.org/wiki/Q247786> ;
+  gen:mother <https://www.wikidata.org/wiki/Q123875> .
+<https://www.wikidata.org/wiki/Q394800>
+  # Agnes von Württemberg, 1264b - 1305-09-27
+  gen:father <https://www.wikidata.org/wiki/Q247786> ;
+  gen:mother <https://www.wikidata.org/wiki/Q123875> .
+  # oo 1282-01-11 Friedrich II. von Truhendingen, 1253~ - 1290-03-15, https://www.wikidata.org/wiki/Q44192326 (ivrea.ttl)
+  # oo 1295-07-03 Kraft I., Herr von Hohenlohe-Weikersheim, 1242 - 1313-09-19, https://www.wikidata.org/wiki/Q27031232
 <https://www.wikidata.org/wiki/Q650606>
   # Eberhard I., Graf von Württemberg, 1265-03-13 - 1325-06-05
-  gen:father <https://www.wikidata.org/wiki/Q247786> ; # Ulrich I., Graf von Württemberg
-  gen:mother <https://www.wikidata.org/wiki/Q394781> . # Agnes von Schlesien-Liegnitz
+  # Graf von Württemberg 1279-09-18
+  gen:father <https://www.wikidata.org/wiki/Q247786> ;
+  gen:mother <https://www.wikidata.org/wiki/Q394781> .
   # oo Marguerite de Lorraine
   []
     gen:spouse <https://www.wikidata.org/wiki/Q650606> , <lothringen.ttl#Marguerite_de_Lorraine> .
@@ -18,9 +43,10 @@
 
 <https://www.wikidata.org/wiki/Q247795>
   # Ulrich III., Graf von Württemberg, 1291a/1296b - 1344-07-11
+  # Graf von Württemberg 1325-06-05
   gen:father <https://www.wikidata.org/wiki/Q650606> ;
   gen:mother <lothringen.ttl#Marguerite_de_Lorraine> .
-  # oo Sophie von Pfirt-Mousson
+  # oo Sophie von Pfirt-Mousson, d. 1344-03-25 (ivrea.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q247795> , <https://www.wikidata.org/wiki/Q101342047> .
 <https://www.wikidata.org/wiki/Q44191723>
@@ -28,9 +54,15 @@
   gen:father <https://www.wikidata.org/wiki/Q650606> ;
   gen:mother <https://www.wikidata.org/wiki/Q44192342> .
   # oo 1313-03-03 Ludwig VI. von Oettingen, 1288 - 1347-09-29, https://www.wikidata.org/wiki/Q44191969 (hohenzollern.ttl)
+<https://www.wikidata.org/wiki/Q75381334>
+  # Adelheid Mechthild von Württemberg, 1295a/1300b - 1342-09-13
+  gen:father <https://www.wikidata.org/wiki/Q650606> ;
+  gen:mother <https://www.wikidata.org/wiki/Q44192342> .
+  # oo 1306~ Kraft II., Herr von Hohenlohe-Weikersheim, 1290 - 1344-05-08, https://www.wikidata.org/wiki/Q28060000
 
 <https://www.wikidata.org/wiki/Q69359>
   # Eberhard II., Graf von Württemberg, 1315 - 1392-03-15
+  # Graf von Württemberg 1344-07-11
   gen:father <https://www.wikidata.org/wiki/Q247795> ;
   gen:mother <https://www.wikidata.org/wiki/Q101342047> .
   # oo Elizabeth von Henneberg-Schleusingen, 1319 - 1389-03-30 (hohenzollern.ttl)
@@ -54,9 +86,11 @@
 
 <https://www.wikidata.org/wiki/Q62959>
   # Eberhard III. "der Milde", Graf von Württemberg, 1364 - 1417-05-16
+  # Graf von Württemberg 1392-03-15
+  # Graf von Mömpelgard 1397-11-01 - 1409
   gen:father <https://www.wikidata.org/wiki/Q642040> ;
   gen:mother <https://www.wikidata.org/wiki/Q78071> .
-  # oo Antonia Visconti, 1350~ - 1405-03-26 (wittelsbacher.ttl)
+  # oo Antonia Visconti, 1350~ - 1405-03-26 (savoyen.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q62959> , <https://www.wikidata.org/wiki/Q273018> ;
 	gen:startDate "1380-10-27" .
@@ -67,6 +101,8 @@
 
 <https://www.wikidata.org/wiki/Q64333>
   # Eberhard IV. "der Jüngere", Graf von Württemberg, 1388-08-23 - 1419-07-02
+  # Graf von Mömpelgard 1409
+  # Graf von Württemberg 1417-05-16
   gen:father <https://www.wikidata.org/wiki/Q62959> ;
   gen:mother <https://www.wikidata.org/wiki/Q273018> .
   # oo Henriette de Montfaucon, comtesse de Montbéliard, 1384 - 1444-02-14 (ivrea.ttl)
@@ -83,9 +119,12 @@
   # Anna von Württemberg, 1408 - 1471
   gen:father <https://www.wikidata.org/wiki/Q64333> ;
   gen:mother <https://www.wikidata.org/wiki/Q273028> .
-  # oo 1422-02-22 Philipp I., Graf von Katzenelnbogen, 1402 - 1479, https://www.wikidata.org/wiki/Q1122672
+  # oo 1422-02-22 Philipp I., Graf von Katzenelnbogen, 1402 - 1479, https://www.wikidata.org/wiki/Q1122672 (reginare.ttl)
 <https://www.wikidata.org/wiki/Q566378>
   # Ludwig I., Graf von Württemberg-Urach, 1412-10-31b - 1450-09-23
+  # Graf von Württemberg-Urach 1441-04-23 (1442-01-25 Nürtinger Vertrag)
+  # in der Grafschaft ob der Steige, Mömpelgard, Horburg und Reichenweiler
+  # in Grafschaft Mömpelgard 1444-02-14
   gen:father <https://www.wikidata.org/wiki/Q64333> ;
   gen:mother <https://www.wikidata.org/wiki/Q273028> .
   # oo Mechthild von der Pfalz, 1419-03-07 - 1482-08-22 (wittelsbacher.ttl)
@@ -94,41 +133,92 @@
 	gen:startDate "1436-10-21" .
 <https://www.wikidata.org/wiki/Q247209>
   # Ulrich V., Graf von Württemberg, 1413 - 1480-09-01
-  # Graf von Württemberg 1433 - 1441
-  # Graf von Württemberg-Stuttgart 1441–1480
+  # Graf von Württemberg 1433 - 1441-04-23 (1442-01-25 Nürtinger Vertrag)
+  # Graf von Württemberg-Stuttgart 1441-04-23 (1442-01-25 Nürtinger Vertrag)
+  # in der Grafschaft unter der Steige
+  # in Grafschaft Mömpelgard 1444-02-14 - 1446
   gen:father <https://www.wikidata.org/wiki/Q64333> ;
   gen:mother <https://www.wikidata.org/wiki/Q273028> .
+  # oo Margarete von Kleve, 1416-02-23 - 1444-05-20 (mark.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q247209> , <https://www.wikidata.org/wiki/Q78401> ;
+	gen:startDate "1441" .
   # oo Elisabeth von Bayern-Landshut, 1419 - 1451-01-01 (wittelsbacher.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q247209> , <https://www.wikidata.org/wiki/Q3723280> ;
 	gen:startDate "1445-02-08" .
+  # oo Marguerite de Savoie, 1420 - 1479-09-30 (savoyen.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q247209> , <https://www.wikidata.org/wiki/Q437440> ;
+	gen:startDate "1453-11-11" .
 
 <https://www.wikidata.org/wiki/Q20499516>
-  # Mechthild von Württemberg-Urach, 1436 - 1495-06-06
+  # Mechthild Gräfin von Württemberg-Urach, 1436 - 1495-06-06
   gen:father <https://www.wikidata.org/wiki/Q566378> ;
   gen:mother <https://www.wikidata.org/wiki/Q97124> .
   # oo 1454-09-01 Ludwig II., Landgraf von Niederhessen, 1438-09-07 - 1471-11-08, https://www.wikidata.org/wiki/Q320101 (reginare.ttl)
+<https://www.wikidata.org/wiki/Q530947>
+  # Ludwig II., Graf von Württemberg-Urach, 1439-04-03 - 1457-11-03
+  # Graf von Württemberg-Urach, in Grafschaft Mömpelgard 1450-09-23
+  gen:father <https://www.wikidata.org/wiki/Q566378> ;
+  gen:mother <https://www.wikidata.org/wiki/Q97124> .
+<https://www.wikidata.org/wiki/Q62168>
+  # Eberhard I., Herzog von Württemberg und Teck, 1445-12-11 - 1496-02-25
+  # Graf von Württemberg-Urach 1457-11-03 - 1482-04-26 (Vertrag von Reichenweier)
+  # Graf von Württemberg-Mömpelgard 1457-11-03 - 1473-07-31 (Uracher Vertrag), 1482-04-26 (Vertrag von Reichenweier), 1482-12-14 (Münsinger Vertrag)
+  # Graf von Württemberg 1482-04-26 (Vertrag von Reichenweier), 1482-12-14 (Münsinger Vertrag)
+  # Herzog von Württemberg und Teck 1495-07-21
+  gen:father <https://www.wikidata.org/wiki/Q566378> ;
+  gen:mother <https://www.wikidata.org/wiki/Q97124> .
+  # oo Barbara Gonzaga, 1455-12-11 - 1503-05-30
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q62168> , <https://www.wikidata.org/wiki/Q292855> ;
+	gen:startDate "1474-07-04" .
 <https://www.wikidata.org/wiki/Q76330547>
-  # Elisabeth von Württemberg-Urach, 1447-10-04 - 1505-06-03
+  # Elisabeth Gräfin von Württemberg-Urach, 1447-10-04 - 1505-06-03
   # Regentin von Saarbrücken 1472-07-25 - 1474
   gen:father <https://www.wikidata.org/wiki/Q566378> ;
   gen:mother <https://www.wikidata.org/wiki/Q97124> .
   # oo 1470-10-30 Johann II. von Nassau, Graf von Saarbrücken, 1423-04-04 - 1472-07-25, https://www.wikidata.org/wiki/Q819814
-<https://www.wikidata.org/wiki/Q552999>
-  # Heinrich, Graf von Württemberg, 1448-09-07 - 1519-04-15
+  # oo 1474-11-04b Heinrich IX. der Ältere, Graf zu Stolberg, 1433/1436-05-12 - 1511-09-17, https://www.wikidata.org/wiki/Q20748781
+<https://www.wikidata.org/wiki/Q547225>
+  # Eberhard II., Herzog von Württemberg, 1447-02-01 - 1504-02-17
+  # Graf von Württemberg-Stuttgart 1457-11-03 - 1482-04-26 (Vertrag von Reichenweier), 1482-12-14 (Münsinger Vertrag)
+  # Herzog von Württemberg 1496-02-25 - 1498-06-11
   gen:father <https://www.wikidata.org/wiki/Q247209> ;
   gen:mother <https://www.wikidata.org/wiki/Q3723280> .
-  # oo Elisabeth Gräfin von Zweibrücken-Bitsch, d. 1487-02-17
+  # oo Elisabeth Markgräfin von Brandenburg, 1451-11-29 - 1524-03-28 (hohenzollern.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q547225> , <https://www.wikidata.org/wiki/Q325824> ;
+	gen:startDate "1467" .
+<https://www.wikidata.org/wiki/Q552999>
+  # Heinrich von Württemberg, Graf von Mömpelgard, 1448-09-07 - 1519-04-15
+  # Graf von Mömpelgard 1473-07-31 (Uracher Vertrag) - 1482-04-26 (Vertrag von Reichenweier), 1482-12-14 (Münsinger Vertrag)
+  gen:father <https://www.wikidata.org/wiki/Q247209> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3723280> .
+  # oo Elisabeth Gräfin von Zweibrücken-Bitsch, 1465~ - 1487-02-17 (leiningen.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q552999> , <https://www.wikidata.org/wiki/Q76030437> ;
-	gen:startDate "1485" .
-  # oo Eva von Salm, d. 1521-04-26
+	gen:startDate "1485-01-10" .
+  # oo Eva Gräfin von Salm-Obersalm, d. 1521-04-26
   []
     gen:spouse <https://www.wikidata.org/wiki/Q552999> , <https://www.wikidata.org/wiki/Q61723902> ;
 	gen:startDate "1488-07-21" .
+<https://www.wikidata.org/wiki/Q76057260>
+  # Elisabeth von Württemberg, 1450-12-23 - 1501-04-06
+  gen:father <https://www.wikidata.org/wiki/Q247209> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3723280> .
+  # oo 1469-09-13 Friedrich II., Graf von Henneberg-Aschach, 1429 - 1488-11-17, https://www.wikidata.org/wiki/Q26270810 (hohenzollern.ttl)
+<https://www.wikidata.org/wiki/Q56586525>
+  # Helene Gräfin von Württemberg, 1453a - 1506-02-19
+  gen:father <https://www.wikidata.org/wiki/Q247209> ;
+  gen:mother <https://www.wikidata.org/wiki/Q437440> .
+  # oo 1476-02-26 Kraft VI., Graf von Hohenlohe-Weikersheim, 1452 - 1503-08-02, https://www.wikidata.org/wiki/Q1785958
 
 <https://www.wikidata.org/wiki/Q61671>
   # Ulrich, Herzog von Württemberg, 1487-02-08 - 1550-11-06
+  # Herzog von Württemberg 1498-06-11 – 1519-01, 1534-05
+  # Graf von Mömpelgard 1498-06-11 - 1526-09-02, 1534-05 - 1542 (Vertrag von Reichenweier)
   gen:father <https://www.wikidata.org/wiki/Q552999> ;
   gen:mother <https://www.wikidata.org/wiki/Q76030437> .
   # oo Sabina von Bayern, 1492-05-04 - 1564-08-30 (wittelsbacher.ttl)
@@ -142,8 +232,7 @@
   # oo 1515-01-01 Heinrich II., der Jüngere, Herzog von Braunschweig-Lüneburg, Fürst von Braunschweig-Wolfenbüttel, 1489-11-10 - 1568-06-11, https://www.wikidata.org/wiki/Q61435 (welfen.ttl)
 <https://www.wikidata.org/wiki/Q571597>
   # Georg I. von Württemberg, Graf von Mömpelgard, 1498-02-04 - 1558-07-17
-  # Graf von Mömpelgard 1526 - 1534
-  # Graf von Mömpelgard 1553
+  # Graf von Mömpelgard 1526-09-02 - 1534-05, 1553 (nach Passauer Vertrag 1552-08-02)
   gen:father <https://www.wikidata.org/wiki/Q552999> ;
   gen:mother <https://www.wikidata.org/wiki/Q61723902> .
   # oo Barbara von Hessen, 1536-04-08 - 1597-06-08 (reginare.ttl)
@@ -153,14 +242,18 @@
 
 <https://www.wikidata.org/wiki/Q694197>
   # Christoph, Herzog von Württemberg, 1515-05-12 - 1568-12-28
+  # Herzog von Württemberg 1550-11-06
+  # Graf von Mömpelgard 1542 (Vertrag von Reichenweier) - 1553 (nach Passauer Vertrag 1552-08-02)
   gen:father <https://www.wikidata.org/wiki/Q61671> ;
   gen:mother <https://www.wikidata.org/wiki/Q69427> .
-  # oo Anna Maria von Brandenburg-Ansbach, 1526-12-28 - 1589-05-20 (hohenzollern.ttl)
+  # oo Anna Maria Markgräfin von Brandenburg-Ansbach, 1526-12-28 - 1589-05-20 (hohenzollern.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q694197> , <https://www.wikidata.org/wiki/Q524491> ;
 	gen:startDate "1544-02-24" .
 <https://www.wikidata.org/wiki/Q702746>
   # Friedrich I., Herzog von Württemberg, 1557-08-19 - 1608-01-29
+  # Graf von Mömpelgard 1558-07-17 - 1593-08-28
+  # Herzog von Württemberg 1593-08-28
   gen:father <https://www.wikidata.org/wiki/Q571597> ;
   gen:mother <https://www.wikidata.org/wiki/Q327750> .
   # oo Sibylla Prinzessin von Anhalt, 1564-09-28 - 1614-10-26 (askanier.ttl)
@@ -168,89 +261,431 @@
     gen:spouse <https://www.wikidata.org/wiki/Q702746> , <https://www.wikidata.org/wiki/Q451164> ;
 	gen:startDate "1581-05-22" .
 
+<https://www.wikidata.org/wiki/Q327572>
+  # Hedwig Herzogin von Württemberg, 1547-01-15 - 1590-03-04
+  gen:father <https://www.wikidata.org/wiki/Q694197> ;
+  gen:mother <https://www.wikidata.org/wiki/Q524491> .
+  # oo 1563-06-10 Ludwig III., Landgraf von Hessen-Marburg, 1537-05-27 - 1604-10-09, https://www.wikidata.org/wiki/Q68952 (reginare.ttl)
+<https://www.wikidata.org/wiki/Q24663373>
+  # Elisabeth Herzogin von Württemberg, 1548-03-03 - 1591-02-28
+  gen:father <https://www.wikidata.org/wiki/Q694197> ;
+  gen:mother <https://www.wikidata.org/wiki/Q524491> .
+  # oo 1586-10-30 Georg Gustav, Pfalzgraf von Pfalz-Veldenz, 1564-02-06 - 1634-06-03, https://www.wikidata.org/wiki/Q97214
 <https://www.wikidata.org/wiki/Q457942>
-  # Sabine Prinzessin von Württemberg, 1549-07-02 - 1581-08-17
+  # Sabine Herzogin von Württemberg, 1549-07-02 - 1581-08-17
   gen:father <https://www.wikidata.org/wiki/Q694197> ;
   gen:mother <https://www.wikidata.org/wiki/Q524491> .
   # oo 1566-02-11 Wilhelm IV., Landgraf von Hessen-Kassel, 1532-06-24 - 1592-08-25, https://www.wikidata.org/wiki/Q696040 (reginare.ttl)
+<https://www.wikidata.org/wiki/Q20499264>
+  # Emilie Herzogin von Württemberg, 1550-08-19 - 1589-04-04
+  gen:father <https://www.wikidata.org/wiki/Q694197> ;
+  gen:mother <https://www.wikidata.org/wiki/Q524491> .
+  # oo 1578-05-29 Reichard, Pfalzgraf und Herzog von Pfalz-Simmern, 1521-07-25 - 1598-01-13/-14, https://www.wikidata.org/wiki/Q91489 (wittelsbacher.ttl)
 <https://www.wikidata.org/wiki/Q3721846>
-  # Eleonore Prinzessin von Württemberg, 1552-03-22 - 1618-01-12
+  # Eleonore Herzogin von Württemberg, 1552-03-22 - 1618-01-12
   gen:father <https://www.wikidata.org/wiki/Q694197> ;
   gen:mother <https://www.wikidata.org/wiki/Q524491> .
   # oo 1571-01-09 Joachim Ernst, Fürst von Anhalt, 1536-10-21 - 1586-12-06, https://www.wikidata.org/wiki/Q66888 (askanier.ttl)
+<https://www.wikidata.org/wiki/Q678605>
+  # Ludwig der Fromme, Herzog von Württemberg, 1554-01-01 - 1593-08-28
+  # Herzog von Württemberg 1568-12-28
+  gen:father <https://www.wikidata.org/wiki/Q694197> ;
+  gen:mother <https://www.wikidata.org/wiki/Q524491> .
+  # oo Dorothea Ursula Markgräfin von Baden-Durlach, 1559-06-20 - 1583-05-19 (zähringer.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q678605> , <https://www.wikidata.org/wiki/Q76076739> ;
+	gen:startDate "1575-11-07" .
+  # oo Ursula Pfalzgräfin von Veldenz, 1572-02-24 - 1635-02-15 (wittelsbacher.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q678605> , <https://www.wikidata.org/wiki/Q2501956> ;
+	gen:startDate "1585-05-10" .
+<https://www.wikidata.org/wiki/Q3714350>
+  # Dorothea Maria Herzogin von Württemberg, 1559-09-03 - 1639-03-13
+  gen:father <https://www.wikidata.org/wiki/Q694197> ;
+  gen:mother <https://www.wikidata.org/wiki/Q524491> .
+  # oo 1582-11-25 Otto Heinrich, Pfalzgraf und Herzog von Pfalz-Sulzbach, 1556-07-22 - 1604-08-29, https://www.wikidata.org/wiki/Q70930 (wittelsbacher.ttl)
+<https://www.wikidata.org/wiki/Q3963981>
+  # Sophie Herzogin von Württemberg, 1563-11-20 - 1590-07-21
+  gen:father <https://www.wikidata.org/wiki/Q694197> ;
+  gen:mother <https://www.wikidata.org/wiki/Q524491> .
+  # oo 1583-05-05 Friedrich Wilhelm I., Herzog von Sachsen-Weimar, 1562-04-25 - 1602-07-07, https://www.wikidata.org/wiki/Q64215 (wettiner.ttl)
 <https://www.wikidata.org/wiki/Q302942>
   # Johann Friedrich, Herzog von Württemberg, 1582-05-05 - 1628-07-18
+  # Herzog von Württemberg 1608-01-29
+  # in Grafschaft Mömpelgard 1608-01-29 - 1617-05-28
   gen:father <https://www.wikidata.org/wiki/Q702746> ;
   gen:mother <https://www.wikidata.org/wiki/Q451164> .
   # oo Barbara Sophia Markgräfin von Brandenburg, 1584-11-16 - 1636-02-13 (hohenzollern.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q302942> , <https://www.wikidata.org/wiki/Q65871> ;
 	gen:startDate "1609-11-05" .
+<https://www.wikidata.org/wiki/Q542744>
+  # Sibylle Elisabeth Herzogin von Württemberg, 1584-04-10 - 1606-01-20
+  gen:father <https://www.wikidata.org/wiki/Q702746> ;
+  gen:mother <https://www.wikidata.org/wiki/Q451164> .
+  # oo 1604-09-16 John Georg I., Kurfürst von Sachsen, 1585-03-05 - 1656-10-08, https://www.wikidata.org/wiki/Q366652 (wettiner.ttl)
+<https://www.wikidata.org/wiki/Q648471> # -> Württemberg-Mömpelgard
+  # Ludwig Friedrich, Herzog von Württemberg-Mömpelgard, 1586-01-29 - 1631-01-26
+  gen:father <https://www.wikidata.org/wiki/Q702746> ;
+  gen:mother <https://www.wikidata.org/wiki/Q451164> .
+<https://www.wikidata.org/wiki/Q72760> # -> Württemberg-Weiltingen
+  # Julius Friedrich Herzog von Württemberg-Weiltingen, 1588-06-03 - 1635-04-25
+  gen:father <https://www.wikidata.org/wiki/Q702746> ;
+  gen:mother <https://www.wikidata.org/wiki/Q451164> .
+<https://www.wikidata.org/wiki/Q3735109>
+  # Eva Christine Herzogin von Württemberg, 1590-05-16 - 1657-04-05
+  gen:father <https://www.wikidata.org/wiki/Q702746> ;
+  gen:mother <https://www.wikidata.org/wiki/Q451164> .
+  # oo 1610-06-13 Johann Georg Markgraf von Brandenburg, Herzog von Jägerndorf, 1577-12-16 - 1624-03-02, https://www.wikidata.org/wiki/Q72586 (hohenzollern.ttl)
+<https://www.wikidata.org/wiki/Q21292942>
+  # Agnes Herzogin von Württemberg, 1592-05-07 - 1629-11-25
+  gen:father <https://www.wikidata.org/wiki/Q702746> ;
+  gen:mother <https://www.wikidata.org/wiki/Q451164> .
+  # oo 1620-05-14 Franz Julius Herzog von Sachsen-Lauenburg, 1584-09-13 - 1634-10-08, https://www.wikidata.org/wiki/Q1362070 (askanier.ttl)
 <https://www.wikidata.org/wiki/Q3634700>
-  # Barbara von Württemberg, 1593-12-04 - 1627-05-18
+  # Barbara Herzogin von Württemberg, 1593-12-04 - 1627-05-18
   gen:father <https://www.wikidata.org/wiki/Q702746> ;
   gen:mother <https://www.wikidata.org/wiki/Q451164> .
   # oo 1616-12-21 Friedrich V., Markgraf von Baden-Durlach, 1594-07-06 - 1659-09-08, https://www.wikidata.org/wiki/Q84361 (zähringer.ttl)
 
 <https://www.wikidata.org/wiki/Q61362>
   # Eberhard III., Herzog von Württemberg, 1614-12-16 - 1674-07-02
+  # Herzog von Württemberg (1628-07-18) 1633-05-08
   gen:father <https://www.wikidata.org/wiki/Q302942> ;
   gen:mother <https://www.wikidata.org/wiki/Q65871> .
-  # oo Anna Katharina Dorothea Wild- und Rheingräfin von Salm-Kyrburg, 1614-01-27 - 1655-06-27
+  # oo Anna Katharina Dorothea Wild- und Rheingräfin von Salm-Kyrburg, 1614-01-27 - 1655-06-27 (rheingrafen.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q61362> , <https://www.wikidata.org/wiki/Q6066434> ;
 	gen:startDate "1637-02-26" .
+  # oo Marie Dorothea Sophie Gräfin zu Oettingen-Oettingen, 1639-12-29 - 1698-06-29
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q61362> , <https://www.wikidata.org/wiki/Q6067586> ;
+	gen:startDate "1656-07-20" .
+<https://www.wikidata.org/wiki/Q70926>
+  # Friedrich, Herzog von Württemberg-Neuenstadt, 1615-12-19 - 1682-03-24
+  gen:father <https://www.wikidata.org/wiki/Q302942> ;
+  gen:mother <https://www.wikidata.org/wiki/Q65871> .
+  # oo Klara Auguste of Braunschweig-Wolfenbüttel, 1632-06-25 - 1700-10-06 (welfen.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q70926> , <https://www.wikidata.org/wiki/Q11739616> ;
+	gen:startDate "1653-06-07" .
+<https://www.wikidata.org/wiki/Q4003107>
+  # Ulrich Herzog von Württemberg-Neuenbürg, 1617-05-15 - 1671-12-05
+  gen:father <https://www.wikidata.org/wiki/Q302942> ;
+  gen:mother <https://www.wikidata.org/wiki/Q65871> .
+  # oo Sophie Dorothea Gräfin von Solms-Sonnenwalde, 1622-06-09 - 1648-09-12
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4003107> , <https://www.wikidata.org/wiki/Q26958634> ;
+	gen:startDate "1647-10-10" .
+  # oo Isabelle-Marie-Magdalene Princesse et Duchesse d’Arenberg, 1623 - 1678-08-17 (ligne.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4003107> , <https://www.wikidata.org/wiki/Q110588396> ;
+	gen:startDate "1651-05-15" .
+<#Sibylle_von_Württemberg>
+  # Sibylle Herzogin von Württemberg, 1620-12-04 - 1707-05-21
+  gen:father <https://www.wikidata.org/wiki/Q302942> ;
+  gen:mother <https://www.wikidata.org/wiki/Q65871> .
+  # oo 1647-11-22 Leopold Friedrich, Herzog von Württemberg-Mömpelgard, 1624-05-30 - 1662-06-15, https://www.wikidata.org/wiki/Q2673938
 
+<https://www.wikidata.org/wiki/Q3819681>
+  # Sophie Luise von Württemberg, 1642-02-19 - 1702-10-03
+  gen:father <https://www.wikidata.org/wiki/Q61362> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6066434> .
+  # oo 1671-02-08 Christian Ernst, Markgraf von Brandenburg-Bayreuth, 1644-07-27 - 1712-05-10, https://www.wikidata.org/wiki/Q538128 (hohenzollern.ttl)
 <https://www.wikidata.org/wiki/Q3697531>
-  # Christine Friederike von Württemberg-Winnental, 1644-02-28 - 1674-11-09
+  # Christine Friederike von Württemberg, 1644-02-28 - 1674-11-09
   gen:father <https://www.wikidata.org/wiki/Q61362> ;
   gen:mother <https://www.wikidata.org/wiki/Q6066434> .
   # oo 1665-06-07 Albrecht Ernst I., Fürst zu Oettingen-Oettingen, 1642-05-14 - 1683-02-08, https://www.wikidata.org/wiki/Q9144277
+<https://www.wikidata.org/wiki/Q153166>
+  # Christine Charlotte Herzogin von Württemberg, 1645-10-21 - 1699-05-16
+  # Regentin von Ostfriesland 1665-06-06 - 1690
+  gen:father <https://www.wikidata.org/wiki/Q61362> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6066434> .
+  # oo 1662-05-08 Georg Christian, Fürst von Ostfriesland, 1634-02-06 - 1665-06-06, https://www.wikidata.org/wiki/Q466404 (cirksena.ttl)
+<https://www.wikidata.org/wiki/Q61212>
+  # Wilhelm Ludwig, Herzog von Württemberg, 1647-01-07 - 1677-06-23
+  # Herzog von Württemberg 1674-07-02
+  gen:father <https://www.wikidata.org/wiki/Q61362> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6066434> .
+  # oo Magdalena Sibylla Landgräfin von Hessen-Darmstadt, 1652-04-28 - 1712-08-11 (reginare.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q61212> , <https://www.wikidata.org/wiki/Q62217> ;
+	gen:startDate "1673-11-06" .
 <https://www.wikidata.org/wiki/Q63472>
   # Friedrich Carl Herzog von Württemberg-Winnental, 1652-09-12 - 1697-12-20
   # Herzog von Württemberg-Winnental 1677
   # Regent in Württemberg 1677 - 1693
   gen:father <https://www.wikidata.org/wiki/Q61362> ;
   gen:mother <https://www.wikidata.org/wiki/Q6066434> .
-  # oo Eleonore Juliane von Brandenburg-Ansbach, 1663-10-23 - 1724-03-04 (hohenzollern.ttl)
+  # oo Eleonore Juliane Markgräfin von Brandenburg-Ansbach, 1663-10-23 - 1724-03-04 (hohenzollern.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q63472> , <https://www.wikidata.org/wiki/Q433399> ;
 	gen:startDate "1682-10-31" .
+<https://www.wikidata.org/wiki/Q18201761>
+  # Sophie Charlotte von Württemberg, 1671-02-22 - 1717-09-11
+  gen:father <https://www.wikidata.org/wiki/Q61362> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6066434> .
+  # oo 1688-09-20 Johann Georg II., Herzog von Sachsen-Eisenach, 1665-07-24 - 1698-11-10, https://www.wikidata.org/wiki/Q64495 (wettiner.ttl)
+<https://www.wikidata.org/wiki/Q84661>
+  # Friedrich August Herzog von Württemberg-Neuenstadt 1654-03-12 - 1716-08-06
+  gen:father <https://www.wikidata.org/wiki/Q70926> ;
+  gen:mother <https://www.wikidata.org/wiki/Q11739616> .
+  # oo Sophie Esther Gräfin von Eberstein, 1661-05-20 - 1728-05-24
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q84661> , <hohenzollern.ttl#Sophie_Esther_von_Eberstein> ;
+	gen:startDate "1679-02-08/-09" .
+<https://www.wikidata.org/wiki/Q2302611>
+  # Sophie Dorothea Herzogin von Württemberg-Neuenstadt, 1658-09-26 - 1681-07-23
+  gen:father <https://www.wikidata.org/wiki/Q70926> ;
+  gen:mother <https://www.wikidata.org/wiki/Q11739616> .
+  # oo 1680-09-16 Ludwig Christian, Graf von Stolberg-Gedern, 1652-09-08 - 1710-08-27, https://www.wikidata.org/wiki/Q20108379
+<https://www.wikidata.org/wiki/Q74837>
+  # Karl Rudolf Herzog von Württemberg-Neuenstadt, 1667-05-19 - 1742-11-17
+  gen:father <https://www.wikidata.org/wiki/Q70926> ;
+  gen:mother <https://www.wikidata.org/wiki/Q11739616> .
 
+<https://www.wikidata.org/wiki/Q61169>
+  # Eberhard IV. Ludwig, Herzog von Württemberg, 1676-09-19 - 1733-10-31
+  # Herzog von Württemberg 1677-06-23
+  # in gefürsteter Grafschaft Mömpelgard 1723-03-25
+  gen:father <https://www.wikidata.org/wiki/Q61212> ;
+  gen:mother <https://www.wikidata.org/wiki/Q62217> .
+  # oo Johanna Elisabeth Markgräfin von Baden-Durlach, 1680-10-03 - 1757-07-02 (zähringer.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q61169> , <https://www.wikidata.org/wiki/Q456930> ;
+	gen:startDate "1697-05-16" .
+<https://www.wikidata.org/wiki/Q63541>
+  # Magdalena Wilhelmine Herzogin von Württemberg, 1677-11-07 - 1742-10-30
+  gen:father <https://www.wikidata.org/wiki/Q61212> ;
+  gen:mother <https://www.wikidata.org/wiki/Q62217> .
+  # oo 1697-06-27 Karl III. Wilhelm, Markgraf von Baden-Durlach, 1679-01-27 - 1738-05-12, https://www.wikidata.org/wiki/Q61083 (zähringer.ttl)
 <https://www.wikidata.org/wiki/Q61946>
-  # Karl Alexander, Herzog von Württemberg, 1684-01-24 - 1737-03-12
+  # Karl I. Alexander, Herzog von Württemberg, 1684-01-24 - 1737-03-12
   # Herzog von Württemberg 1733-10-31
   gen:father <https://www.wikidata.org/wiki/Q63472> ;
   gen:mother <https://www.wikidata.org/wiki/Q433399> .
-  # oo Maria Augusta Prinzessin von Thurn und Taxis, 1706-08-11 - 1756-02-01
+  # oo Augusta Prinzessin von Thurn und Taxis, 1706-08-11 - 1756-02-01 (taxis.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q61946> , <https://www.wikidata.org/wiki/Q61789> ;
 	gen:startDate "1727-05-01" .
+<https://www.wikidata.org/wiki/Q67365>
+  # Friedrich Ludwig Herzog von Württemberg-Winnental, 1690-11-05 - 1734-09-19
+  gen:father <https://www.wikidata.org/wiki/Q63472> ;
+  gen:mother <https://www.wikidata.org/wiki/Q433399> .
+  # oo Ursula Katharina von Altenbockum, 1680-11-25 - 1743-05-04 (radziwiłł.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q67365> , <https://www.wikidata.org/wiki/Q105972> ;
+	gen:startDate "1722-10-22" .
 <https://www.wikidata.org/wiki/Q461515>
   # Christiane Charlotte von Württemberg-Winnental, 1694-08-20 - 1729-12-25
   # Regentin von Brandenburg-Ansbach 1723-01-07 - 1729
   gen:father <https://www.wikidata.org/wiki/Q63472> ;
   gen:mother <https://www.wikidata.org/wiki/Q433399> .
   # oo 1709-08-28 Wilhelm Friedrich, Markgraf von Brandenburg-Ansbach, 1686-01-08 - 1723-01-07, https://www.wikidata.org/wiki/Q568415 (hohenzollern.ttl)
+<#Auguste_von_Württemberg-Neuenstadt>
+  # Auguste Sofie Herzogin von Württemberg-Neuenstadt, 1691-09-24 - 1743-03-01
+  gen:father <https://www.wikidata.org/wiki/Q84661> ;
+  gen:mother <hohenzollern.ttl#Sophie_Esther_von_Eberstein> .
+  # oo 1709-12-05 Friedrich Eberhard, Graf von Hohenlohe-Kirchberg, 1672-11-24 - 1737-08-23, https://www.wikidata.org/wiki/Q31191660
 
-<https://www.wikidata.org/wiki/Q58052>
-  # Friedrich Eugen, Herzog von Württemberg, 1732-01-21 - 1797-12-23
+<https://www.wikidata.org/wiki/Q3741794>
+  # Friedrich Ludwig Erbprinz von Württemberg, 1698-12-14 - 1731-11-23
+  gen:father <https://www.wikidata.org/wiki/Q61169> ;
+  gen:mother <https://www.wikidata.org/wiki/Q456930> .
+  # oo Henriette Marie Markgräfin von Brandenburg-Schwedt, 1702-03-02 - 1782-05-07 (hohenzollern.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3741794> , <https://www.wikidata.org/wiki/Q90196> ;
+	gen:startDate "1716-12-08" .
+<https://www.wikidata.org/wiki/Q511206>
+  # Karl II. Eugen, Herzog von Württemberg, 1728-02-11 - 1793-10-24
+  # Herzog von Württemberg (1737-03-12) 1744
   gen:father <https://www.wikidata.org/wiki/Q61946> ;
   gen:mother <https://www.wikidata.org/wiki/Q61789> .
-  # oo Friederike Dorothea Sophia Prinzessin von Brandenburg-Schwedt, 1736-12-18 - 1798-03-09 (hohenzollern.ttl)
+  # oo (getrennt 1759-07-27) Friederike Markgräfin von Brandenburg-Bayreuth, 1732-08-30 - 1780-04-06 (hohenzollern.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q511206> , <https://www.wikidata.org/wiki/Q449194> ;
+	gen:startDate "1748-09-26" .
+  # oo Franziska Therese Freiin von Bernerdin, 1748-01-10 - 1811-01-01
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q511206> , <https://www.wikidata.org/wiki/Q212506> ;
+	gen:startDate "1785-01-10/-11" .
+<https://www.wikidata.org/wiki/Q63042>
+  # _Ludwig Eugen_ Johann, Herzog von Württemberg, 1731-01-06 - 1795-05-20
+  # Herzog von Württemberg 1793-10-24
+  gen:father <https://www.wikidata.org/wiki/Q61946> ;
+  gen:mother <https://www.wikidata.org/wiki/Q61789> .
+  # oo Sophie Albertine Gräfin von Beichlingen, 1728-12-15 - 1807-05-10, daughter of August Gottfried Dietrich Graf von Beichlingen and Sophie Helene Freiin von Stöcken
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q63042> , <https://www.wikidata.org/wiki/Q108689257> ;
+	gen:startDate "1762-08-10" .
+<https://www.wikidata.org/wiki/Q58052>
+  # Friedrich II. Eugen, Herzog von Württemberg, 1732-01-21 - 1797-12-23
+  # Herzog von Württemberg 1795-05-20
+  gen:father <https://www.wikidata.org/wiki/Q61946> ;
+  gen:mother <https://www.wikidata.org/wiki/Q61789> .
+  # oo Friederike Prinzessin von Brandenburg-Schwedt, 1736-12-18 - 1798-03-09 (hohenzollern.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q58052> , <https://www.wikidata.org/wiki/Q255759> ;
 	gen:startDate "1753-11-29" .
+<https://www.wikidata.org/wiki/Q374354>
+  # Auguste Elisabeth Herzogin von Württemberg, 1734-10-30 - 1787-06-04
+  gen:father <https://www.wikidata.org/wiki/Q61946> ;
+  gen:mother <https://www.wikidata.org/wiki/Q61789> .
+  # oo 1753-09-03 Karl Anselm, Fürst von Thurn und Taxis, 1733-06-02 - 1805-11-13, https://www.wikidata.org/wiki/Q216259 (taxis.ttl)
 
+<https://www.wikidata.org/wiki/Q3840451>
+  # Luise Friederike Herzogin von Württemberg, 1722-02-03 - 1791-08-02
+  gen:father <https://www.wikidata.org/wiki/Q3741794> ;
+  gen:mother <https://www.wikidata.org/wiki/Q90196> .
+  # oo 1746-03-02 Friedrich II. Herzog zu Mecklenburg, Herzog von Mecklenburg-Schwerin, 1717-11-09 - 1785-04-24, https://www.wikidata.org/wiki/Q570989
+<https://www.wikidata.org/wiki/Q3778846>
+  # Wilhelmine Friederike Elisabeth Herzogin von Württemberg, 1764-07-03 - 1817-08-09
+  gen:father <https://www.wikidata.org/wiki/Q63042> ;
+  gen:mother <https://www.wikidata.org/wiki/Q108689257> .
+  # oo 1789-10-20 Kraft Ernst Fürst zu Oettingen-Oettingen und Oettingen-Wallerstein, 1748-08-03 - 1802-10-06, https://www.wikidata.org/wiki/Q44192252
+<https://www.wikidata.org/wiki/Q3725574>
+  # _Henriette Charlotte_ Friederike Herzogin von Württemberg, 1767-03-11 - 1817-05-23
+  gen:father <https://www.wikidata.org/wiki/Q63042> ;
+  gen:mother <https://www.wikidata.org/wiki/Q108689257> .
+  # oo 1796-07-05 _Karl_ Albrecht Philipp _Joseph_, Fürst zu Hohenlohe-Bartenstein-Jagstberg, 1766-12-12 - 1838-07-06, https://www.wikidata.org/wiki/Q60711109
+<https://www.wikidata.org/wiki/Q170179>
+  # Friedrich I. Wilhelm Karl, König von Württemberg, 1754-11-06 - 1816-10-30
+  # Herzog von Württemberg 1797-12-23
+  # Kurfürst von Württemberg 1803-05
+  # König von Württemberg 1806-01-01
+  gen:father <https://www.wikidata.org/wiki/Q58052> ;
+  gen:mother <https://www.wikidata.org/wiki/Q255759> .
+  # oo Auguste Karoline Prinzessin von Braunschweig-Wolfenbüttel, 1764-12-03 - 1788-09-27 (welfen.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q170179> , <https://www.wikidata.org/wiki/Q220823> ;
+	gen:startDate "1780-10-11" .
+  # oo Charlotte, Princess Royal of Great Britain, Ireland and Hannover, 1766-09-29 - 1828-10-06 (welfen.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q170179> , <https://www.wikidata.org/wiki/Q57536> ;
+	gen:startDate "1797-05-18" .
 <https://www.wikidata.org/wiki/Q213618>
   # Ludwig Friedrich Alexander Prinz von Württemberg, 1756-08-30 - 1817-09-20
   gen:father <https://www.wikidata.org/wiki/Q58052> ;
   gen:mother <https://www.wikidata.org/wiki/Q255759> .
+  # oo Maria Anna Prinzessin Czartoryska, 1768-03-15 - 1854-10-21 (radziwiłł.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q213618> , <https://www.wikidata.org/wiki/Q458975> ;
+	gen:startDate "1784-10-28" ;
+	gen:divorceDate "1792/1793" .
   # oo Henriette Prinzessin von Nassau-Weilburg, 1780-04-22 - 1857-01-02
   []
     gen:spouse <https://www.wikidata.org/wiki/Q213618> , <https://www.wikidata.org/wiki/Q261381> ;
 	gen:startDate "1797-01-28" .
+<https://www.wikidata.org/wiki/Q213720>
+  # Eugen Friedrich Heinrich Herzog von Württemberg, 1758-11-21 - 1822-06-20
+  gen:father <https://www.wikidata.org/wiki/Q58052> ;
+  gen:mother <https://www.wikidata.org/wiki/Q255759> .
+  # oo Louise Prinzessin zu Stolberg-Gedern, 1764-10-13 - 1834-05-24
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q213720> , <https://www.wikidata.org/wiki/Q4268359> ;
+	gen:startDate "1787-01-21" .
+<https://www.wikidata.org/wiki/Q57632>
+  # Sophia Marie Dorothea Auguste Luise Herzogin von Württemberg (Maria Feodorovna), 1759-10-25 - 1828-11-05
+  gen:father <https://www.wikidata.org/wiki/Q58052> ;
+  gen:mother <https://www.wikidata.org/wiki/Q255759> .
+  # oo 1776-10-07 Pawel I. Petrovitsch Romanov, Kaiser von Russland, Herzog von Holstein-Gottorf, 1754-09-20 - 1801-03-12, https://www.wikidata.org/wiki/Q15189 (oldenburg.ttl)
+<https://www.wikidata.org/wiki/Q72575> # -> Grafen von Württemberg
+  # Wilhelm Friedrich Philipp Herzog von Württemberg, 1761-12-27 - 1830-08-10
+  gen:father <https://www.wikidata.org/wiki/Q58052> ;
+  gen:mother <https://www.wikidata.org/wiki/Q255759> .
+<https://www.wikidata.org/wiki/Q102166>
+  # Ferdinand August Friedrich Herzog von Württemberg, 1763-10-22 - 1834-01-20
+  gen:father <https://www.wikidata.org/wiki/Q58052> ;
+  gen:mother <https://www.wikidata.org/wiki/Q255759> .
+  # oo Wilhelmine Prinzessin von Schwarzburg-Sondershausen, 1771-04-05 - 1829-04-25
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q102166> , <https://www.wikidata.org/wiki/Q75391037> ;
+	gen:startDate "1795-03-18" ;
+	gen:divorceDate "1801" .
+  # oo Pauline Prinzessin von Metternich-Winneburg, 1771-11-29 - 1855-06-23 (runkel.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q102166> , <https://www.wikidata.org/wiki/Q75391039> ;
+	gen:startDate "1817-02-23" .
+<https://www.wikidata.org/wiki/Q289520>
+  # Friederike Elisabeth Amalie Herzogin von Württemberg, 1765-07-27 - 1785-11-24
+  gen:father <https://www.wikidata.org/wiki/Q58052> ;
+  gen:mother <https://www.wikidata.org/wiki/Q255759> .
+  # oo 1781-06-06 Peter I., Großherzog von Oldenburg, 1755-01-17 - 1829-05-21, https://www.wikidata.org/wiki/Q61274 (oldenburg.ttl)
+<https://www.wikidata.org/wiki/Q233900>
+  # Elisabeth Wilhelmine Luise Herzogin von Württemberg, 1767-04-21 - 1790-02-18
+  gen:father <https://www.wikidata.org/wiki/Q58052> ;
+  gen:mother <https://www.wikidata.org/wiki/Q255759> .
+  # oo 1788-01-06 Franz II., Kaiser von Österreich, 1768-02-12 - 1835-03-02, https://www.wikidata.org/wiki/Q130834 (lothringen.ttl)
+<https://www.wikidata.org/wiki/Q215027> # -> herzogliche Linie
+  # Alexander Friedrich Karl Herzog von Württemberg, 1771-04-24 - 1833-07-04
+  gen:father <https://www.wikidata.org/wiki/Q58052> ;
+  gen:mother <https://www.wikidata.org/wiki/Q255759> .
+<https://www.wikidata.org/wiki/Q2531068>
+  # Heinrich Friedrich Karl Herzog von Württemberg, 1772-07-03 - 1838-07-28
+  # Graf von Sontheim 1802
+  gen:father <https://www.wikidata.org/wiki/Q58052> ;
+  gen:mother <https://www.wikidata.org/wiki/Q255759> .
+  # oo Christine Caroline Alexei, cr Freifrau von Hochberg und Rottenburg 1807-09, and Gräfin von Urach 1825-11-13, 1779-12-26 - 1853-08-17
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2531068> , <https://www.wikidata.org/wiki/Q75391043> ;
+	gen:startDate "1798" .
 
+<https://www.wikidata.org/wiki/Q170398>
+  # Wilhelm I. (Friedrich Wilhelm Carl), König von Württemberg, 1781-09-27 - 1864-06-25
+  # König von Württemberg 1816-10-30
+  gen:father <https://www.wikidata.org/wiki/Q170179> ;
+  gen:mother <https://www.wikidata.org/wiki/Q220823> .
+  # oo Charlotte Auguste Prinzessin von Bayern, 1792-02-08 - 1873-02-09 (wittelsbacher.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q170398> , <https://www.wikidata.org/wiki/Q57662> ;
+	gen:startDate "1808-06-08" ;
+	gen:divorceDate "1814" .
+  # oo Katharina Pawlowna Großfürstin von Russland, 1788-05-21 - 1819-01-09 (oldenburg.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q170398> , <https://www.wikidata.org/wiki/Q234257> ;
+	gen:startDate "1816-01-24" .
+  # oo Pauline Therese Herzogin von Württemberg, 1800-09-04 - 1873-03-10
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q170398> , <https://www.wikidata.org/wiki/Q234703> ;
+	gen:startDate "1820-04-15" .
+<https://www.wikidata.org/wiki/Q236184>
+  # Friederike _Katharina_ Sophie Dorothea Prinzessin von Württemberg, 1783-02-21 - 1835-11-28
+  gen:father <https://www.wikidata.org/wiki/Q170179> ;
+  gen:mother <https://www.wikidata.org/wiki/Q220823> .
+  # oo 1807-08-12 Jérôme Bonaparte, König von Westfalen, 1784-11-15 - 1860-06-24, https://www.wikidata.org/wiki/Q151087
+<https://www.wikidata.org/wiki/Q213625>
+  # Paul Heinrich Karl Friedrich August Prinz von Württemberg, 1785-01-19 - 1852-04-16
+  gen:father <https://www.wikidata.org/wiki/Q170179> ;
+  gen:mother <https://www.wikidata.org/wiki/Q220823> .
+  # oo Charlotte Prinzessin von Sachsen-Hildburghausen, 1787-06-17 - 1847-12-12 (wettiner.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q213625> , <https://www.wikidata.org/wiki/Q64462> ;
+	gen:startDate "1805-09-28" .
+  # oo Donna Magdalena Fausta Angela (Madeleine) de Creus y Ximenes, d. 1852-12-27
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q213625> , <https://www.wikidata.org/wiki/Q93499214> ;
+	gen:startDate "1848-04-26" .
+<https://www.wikidata.org/wiki/Q61103>
+  # _Marie Dorothea_ Luise Wilhelmine Karoline Herzogin von Württemberg, 1797-11-01 - 1855-03-20
+  gen:father <https://www.wikidata.org/wiki/Q213618> ;
+  gen:mother <https://www.wikidata.org/wiki/Q261381> .
+  # oo 1819-08-24 Joseph Erzherzog von Österreich, Palatin von Ungarn, 1776-03-09 - 1847-01-13, https://www.wikidata.org/wiki/Q319764 (lothringen.ttl)
+<https://www.wikidata.org/wiki/Q271080>
+  # Amalie Therese Luise Wilhelmine Philippine Herzogin von Württemberg, 1799-06-28 - 1848-11-28
+  gen:father <https://www.wikidata.org/wiki/Q213618> ;
+  gen:mother <https://www.wikidata.org/wiki/Q261381> .
+  # oo 1817-04-24 Joseph, Herzog von Sachsen-Altenburg, 1789-08-27 - 1868-11-25, https://www.wikidata.org/wiki/Q213716 (wettiner.ttl)
+<https://www.wikidata.org/wiki/Q234703>
+  # Pauline Therese Luise Herzogin von Württemberg, 1800-09-04 - 1873-03-10
+  gen:father <https://www.wikidata.org/wiki/Q213618> ;
+  gen:mother <https://www.wikidata.org/wiki/Q261381> .
+  # oo 1820-04-15 Wilhelm I., König von Württemberg, 1781-09-27 - 1864-06-25, https://www.wikidata.org/wiki/Q170398
+<https://www.wikidata.org/wiki/Q65704>
+  # _Elisabeth Alexandrine_ Konstanze Herzogin von Württemberg, 1802-02-27 - 1864-12-05
+  gen:father <https://www.wikidata.org/wiki/Q213618> ;
+  gen:mother <https://www.wikidata.org/wiki/Q261381> .
+  # oo 1830-10-16 Wilhelm Prinz von Baden, 1792-04-08 - 1859-10-11, https://www.wikidata.org/wiki/Q70589 (zähringer.ttl)
 <https://www.wikidata.org/wiki/Q61155>
   # Alexander Paul Ludwig Konstantin Prinz von Württemberg, 1804-09-09 - 1885-07-04
   gen:father <https://www.wikidata.org/wiki/Q213618> ;
@@ -259,7 +694,169 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q61155> , <https://www.wikidata.org/wiki/Q265865> ;
 	gen:startDate "1835-05-02" .
+<https://www.wikidata.org/wiki/Q706514>
+  # Friedrich _Eugen_ Karl Paul Ludwig Herzog von Württemberg, 1787-12-28 - 1857-09-04
+  gen:father <https://www.wikidata.org/wiki/Q213720> ;
+  gen:mother <https://www.wikidata.org/wiki/Q4268359> .
+  # oo Mathilde Prinzessin zu Waldeck and Pyrmont, 1801-04-10 - 1825-04-13
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q706514> , <https://www.wikidata.org/wiki/Q3851883> ;
+	gen:startDate "1817-04-20" .
+  # oo Helene Prinzessin zu Hohenlohe-Langenburg, 1807-11-22 - 1880-09-05
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q706514> , <https://www.wikidata.org/wiki/Q763577> ;
+	gen:startDate "1827-09-11" .
+<https://www.wikidata.org/wiki/Q10321820>
+  # Friederike Sophie Dorothea Marie _Luise_ Herzogin von Württemberg, 1789-06-04 - 1851-06-16
+  gen:father <https://www.wikidata.org/wiki/Q213720> ;
+  gen:mother <https://www.wikidata.org/wiki/Q4268359> .
+  # oo 1811-09-28 August Fürst zu Hohenlohe-Oehringen, 1784-11-27 - 1853-02-15, https://www.wikidata.org/wiki/Q95256
+<https://www.wikidata.org/wiki/Q202025>
+  # Friedrich _Paul Wilhelm_ Herzog von Württemberg, 1797-06-25 - 1860-11-25
+  gen:father <https://www.wikidata.org/wiki/Q213720> ;
+  gen:mother <https://www.wikidata.org/wiki/Q4268359> .
+  # oo Maria Sophia Prinzessin von Thurn und Taxis, 1800-03-04 - 1870-12-20 (taxis.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q202025> , <https://www.wikidata.org/wiki/Q3847523> ;
+	gen:startDate "1827-04-17" .
+<https://www.wikidata.org/wiki/Q75391273>
+  # Marie Freiin von Rottenburg Gräfin von Urach, 1802-12-17 - 1882-01-28
+  # Gräfin von Urach 1821-01-16
+  gen:father <https://www.wikidata.org/wiki/Q2531068> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75391043> .
+  # oo 1821-05-26 Karl Friedrich Ludwig, Fürst zu Hohenlohe-Kirchberg, 1780-11-02 - 1861-12-16, https://www.wikidata.org/wiki/Q16832359
 
+<https://www.wikidata.org/wiki/Q441251>
+  # Marie Friederike Charlotte Prinzessin von Württemberg, 1816-10-30 - 1887-01-04
+  gen:father <https://www.wikidata.org/wiki/Q170398> ;
+  gen:mother <https://www.wikidata.org/wiki/Q234257> .
+  # oo 1840-03-19 Alfred Graf und Herr von Neipperg, 1807-01-26 - 1865-11-16, https://www.wikidata.org/wiki/Q2646254
+<https://www.wikidata.org/wiki/Q168674>
+  # Sophie Friederike Mathilde Prinzessin von Württemberg, 1818-06-17 - 1877-06-03
+  gen:father <https://www.wikidata.org/wiki/Q170398> ;
+  gen:mother <https://www.wikidata.org/wiki/Q234257> .
+  # oo 1839-06-17 Willem III, Koning der Nederlanden, 1817-02-19 - 1890-11-23, https://www.wikidata.org/wiki/Q125649 (nassau.ttl)
+<https://www.wikidata.org/wiki/Q2230153>
+  # _Katharina_ Friederike Charlotte Prinzessin von Württemberg, 1821-08-24 - 1898-12-06
+  gen:father <https://www.wikidata.org/wiki/Q170398> ;
+  gen:mother <https://www.wikidata.org/wiki/Q234703> .
+  # oo 1845-11-20 Friedrich Prinz von Württemberg, 1808-02-21 - 1870-05-09, https://www.wikidata.org/wiki/Q615082
+<https://www.wikidata.org/wiki/Q57440>
+  # Karl I. Friedrich Alexander, König von Württemberg, 1823-03-06 - 1891-10-06
+  # König von Württemberg 1864-06-25
+  gen:father <https://www.wikidata.org/wiki/Q170398> ;
+  gen:mother <https://www.wikidata.org/wiki/Q234703> .
+  # oo Olga Nikolajewna Romanowa Großfürstin von Russland, 1822-08-30 - 1892-10-30 (oldenburg.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q57440> , <https://www.wikidata.org/wiki/Q234926> ;
+	gen:startDate "1846-07-13" .
+<https://www.wikidata.org/wiki/Q632966>
+  # Auguste Wilhelmine Henriette Prinzessin von Württemberg, 1826-10-04 - 1898-12-03
+  gen:father <https://www.wikidata.org/wiki/Q170398> ;
+  gen:mother <https://www.wikidata.org/wiki/Q234703> .
+  # oo 1851-06-17 Hermann Prinz von Sachsen-Weimar-Eisenach, 1825-08-04 - 1901-08-31, https://www.wikidata.org/wiki/Q555409 (wettiner.ttl)
+<https://www.wikidata.org/wiki/Q60232>
+  # Friederike _Charlotte_ Marie Prinzessin von Württemberg (Elena Pawlowna), 1807-01-09 - 1873-02-02
+  gen:father <https://www.wikidata.org/wiki/Q213625> ;
+  gen:mother <https://www.wikidata.org/wiki/Q64462> .
+  # oo 1824-02-20 Michael Pawlowitsch Romanow Großfürst von Russland, 1798-02-08 - 1849-09-09, https://www.wikidata.org/wiki/Q371731 (oldenburg.ttl)
+<https://www.wikidata.org/wiki/Q615082>
+  # _Friedrich_ Karl August Prinz von Württemberg, 1808-02-21 - 1870-05-09
+  gen:father <https://www.wikidata.org/wiki/Q213625> ;
+  gen:mother <https://www.wikidata.org/wiki/Q64462> .
+  # oo Katharina Prinzessin von Württemberg, 1821-08-24 - 1898-12-06
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q615082> , <https://www.wikidata.org/wiki/Q2230153> ;
+	gen:startDate "1845-11-20" .
+<https://www.wikidata.org/wiki/Q236501>
+  # Pauline Friederike Marie Prinzessin von Württemberg, 1810-02-25 - 1856-07-07
+  gen:father <https://www.wikidata.org/wiki/Q213625> ;
+  gen:mother <https://www.wikidata.org/wiki/Q64462> .
+  # oo 1829-04-23 Wilhelm I., Herzog von Nassau, 1792-06-14 - 1839-08-20, https://www.wikidata.org/wiki/Q705120
+<https://www.wikidata.org/wiki/Q535987> # -> Teck
+  # Franz Paul Karl Ludwig Alexander von Hohenstein Herzog von Teck, 1837-08-28 - 1900-01-21
+  gen:father <https://www.wikidata.org/wiki/Q61155> ;
+  gen:mother <https://www.wikidata.org/wiki/Q265865> .
+<https://www.wikidata.org/wiki/Q3208208>
+  # Marie Alexandrine Auguste Herzogin von Württemberg, 1818-03-25 - 1888-04-10
+  gen:father <https://www.wikidata.org/wiki/Q706514> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3851883> .
+  # oo 1845-10-09 Karl II., Landgraf von Hessen-Philippsthal, 1803-05-22 - 1868-02-12, https://www.wikidata.org/wiki/Q325816 (reginare.ttl)
+<https://www.wikidata.org/wiki/Q2175403>
+  # _Eugen_ Wilhelm Alexander Erdmann Herzog von Württemberg, 1820-12-25 - 1875-01-08
+  gen:father <https://www.wikidata.org/wiki/Q706514> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3851883> .
+  # oo Mathilde Prinzessin zu Schaumburg-Lippe, 1818-09-11 - 1891-08-14 (lippe.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2175403> , <https://www.wikidata.org/wiki/Q2008283> ;
+	gen:startDate "1843-07-15" .
+<https://www.wikidata.org/wiki/Q557491>
+  # Nikolaus Herzog von Württemberg, 1833-03-01 - 1903-02-22
+  gen:father <https://www.wikidata.org/wiki/Q706514> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3851883> .
+  # oo Wilhelmine Herzogin von Württemberg, 1844-07-11 - 1892-04-24
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q557491> , <https://www.wikidata.org/wiki/Q4111311> ;
+	gen:startDate "1868-05-08" .
+<https://www.wikidata.org/wiki/Q65680>
+  # Pauline Louise _Agnes_ Herzogin von Württemberg, 1835-10-13 - 1886-06-10
+  gen:father <https://www.wikidata.org/wiki/Q706514> ;
+  gen:mother <https://www.wikidata.org/wiki/Q763577> .
+  # oo 1858-02-06 Heinrich XIV., Fürst Reuß jüngerer Linie, 1832-05-28 - 1913-03-29, https://www.wikidata.org/wiki/Q553108
+<https://www.wikidata.org/wiki/Q1563408>
+  # Wilhelm Ferdinand _Maximilian_ Herzog von Württemberg, 1828-09-03 - 1888-07-28
+  gen:father <https://www.wikidata.org/wiki/Q202025> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3847523> .
+  # oo Hermina Prinzessin zu Schaumburg-Lippe, 1845-10-05 - 1930-12-23 (lippe.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1563408> , <https://www.wikidata.org/wiki/Q33968819> ;
+	gen:startDate "1876-02-16" .
+
+<https://www.wikidata.org/wiki/Q57263>
+  # Wilhelm II. Karl Paul Heinrich Friedrich, König von Württemberg, 1848-02-25 - 1921-10-02
+  # König von Württemberg 1891-10-06 - 1918-11-29
+  gen:father <https://www.wikidata.org/wiki/Q615082> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2230153> .
+  # oo Marie Prinzessin zu Waldeck und Pyrmont, 1857-05-23 - 1882-04-30
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q57263> , <https://www.wikidata.org/wiki/Q61487> ;
+	gen:startDate "1877-02-15" .
+  # oo Charlotte Prinzessin zu Schaumburg-Lippe, 1864-10-10 - 1946-07-16 (lippe.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q57263> , <https://www.wikidata.org/wiki/Q242867> ;
+	gen:startDate "1886-04-08" .
+<https://www.wikidata.org/wiki/Q4111311>
+  # Wilhelmine Eugenie Auguste Ida Helene Herzogin von Württemberg, 1844-07-11 - 1892-04-24
+  gen:father <https://www.wikidata.org/wiki/Q2175403> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2008283> .
+  # oo 1868-05-08 Nikolaus Herzog von Württemberg, 1833-03-01 - 1903-02-22, https://www.wikidata.org/wiki/Q557491
+<https://www.wikidata.org/wiki/Q692120>
+  # Wilhelm _Eugen_ August Georg Herzog von Württemberg, 1846-08-20 - 1877-01-27
+  gen:father <https://www.wikidata.org/wiki/Q2175403> ;
+  gen:mother <https://www.wikidata.org/wiki/Q2008283> .
+  # oo Vera Konstantinowna Romanowa Großfürstin von Russland, 1854-02-16 - 1912-04-11 (oldenburg.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q692120> , <https://www.wikidata.org/wiki/Q240282> ;
+	gen:startDate "1874-05-08" .
+
+<https://www.wikidata.org/wiki/Q268972>
+  # Pauline Olga Helene Emma Prinzessin von Württemberg, 1877-12-19 - 1965-05-07
+  gen:father <https://www.wikidata.org/wiki/Q57263> ;
+  gen:mother <https://www.wikidata.org/wiki/Q61487> .
+  # oo 1898-10-29 Friedrich, Fürst zu Wied, 1872-06-27 - 1945-06-18, https://www.wikidata.org/wiki/Q68270 (runkel.ttl)
+<https://www.wikidata.org/wiki/Q2204793>
+  # _Elsa_ Mathilde Marie Herzogin von Württemberg, 1876-03-01 - 1936-05-27
+  gen:father <https://www.wikidata.org/wiki/Q692120> ;
+  gen:mother <https://www.wikidata.org/wiki/Q240282> .
+  # oo 1897-05-06 Albrecht Prinz zu Schaumburg-Lippe, 1869-10-24 - 1942-12-25, https://www.wikidata.org/wiki/Q2090323 (lippe.ttl)
+<https://www.wikidata.org/wiki/Q2301222>
+  # _Olga_ Alexandrine Marie Herzogin von Württemberg, 1876-03-01 - 1932-10-21
+  gen:father <https://www.wikidata.org/wiki/Q692120> ;
+  gen:mother <https://www.wikidata.org/wiki/Q240282> .
+  # oo 1898-11-03 Maximilian Prinz zu Schaumburg-Lippe, 1871-03-13 - 1904-04-01, https://www.wikidata.org/wiki/Q2704019 (lippe.ttl)
+
+
+# Teck
 <https://www.wikidata.org/wiki/Q535987>
   # Franz Paul Karl Ludwig Alexander von Hohenstein Herzog von Teck, 1837-08-28 - 1900-01-21
   # Graf von Hohenstein
@@ -276,22 +873,572 @@
   # Victoria _Mary_ Augusta Louise Olga Pauline Claudine Agnes of Teck, 1867-05-26 - 1953-03-24
   gen:father <https://www.wikidata.org/wiki/Q535987> ;
   gen:mother <https://www.wikidata.org/wiki/Q233997> .
-  # oo 1936-01-20 _George_ Frederick Ernest Albert, King of the United Kingdom and the British Dominions, and Emperor of India, 1865-06-03 - 1936-01-20, https://www.wikidata.org/wiki/Q269412 (wettiner.ttl)
+  # oo 1936-01-20 George V, King of the United Kingdom and the British Dominions, and Emperor of India, 1865-06-03 - 1936-01-20, https://www.wikidata.org/wiki/Q269412 (wettiner.ttl)
+<https://www.wikidata.org/wiki/Q336084>
+  # Sir Adolphus Charles Cambridge, 1st Marquess of Cambridge, 1868-08-13 - 1927-10-24
+  # Herzog von Teck 1900-01-21
+  # 1st Marquess of Cambridge, 1st Earl of Eltham, 1st Viscount Northallerton, in the county of York 1917-07-16
+  gen:father <https://www.wikidata.org/wiki/Q535987> ;
+  gen:mother <https://www.wikidata.org/wiki/Q233997> .
+  # oo Lady Margaret Evelyn Grosvenor, 1873-04-09 - 1929-03-27
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q336084> , <https://www.wikidata.org/wiki/Q531889> ;
+	gen:startDate "1894-12-12" .
+<https://www.wikidata.org/wiki/Q335091>
+  # Alexander Augustus Frederick William Alfred George Cambridge, 1st Earl of Athlone, 1874-04-14 - 1957-01-16
+  # 1st Earl of Athlone, 1st Viscount Trematon, co. Cambridge 1917-07-16
+  gen:father <https://www.wikidata.org/wiki/Q535987> ;
+  gen:mother <https://www.wikidata.org/wiki/Q233997> .
+  # oo Princess Alice Mary Victoria Augusta Pauline of Great Britain and Ireland, 1883-02-25 - 1981-01-03 (wettiner.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q335091> , <https://www.wikidata.org/wiki/Q235521> ;
+	gen:startDate "1904-02-10" .
+
+<https://www.wikidata.org/wiki/Q6678694>
+  # Sir George Francis Hugh Cambridge, 2nd Marquess of Cambridge, 1895-10-11 - 1981-04-16
+  gen:father <https://www.wikidata.org/wiki/Q336084> ;
+  gen:mother <https://www.wikidata.org/wiki/Q531889> .
+  # oo Dorothy Isabel Westenra Hastings, 1899-05-18 - 1988-04-01
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6678694> , <https://www.wikidata.org/wiki/Q75391051> ;
+	gen:startDate "1923-04-10" .
+<https://www.wikidata.org/wiki/Q2047363>
+  # Lady Victoria Constance _Mary_ Cambridge, Princess of Teck, 1897-06-12 - 1987-06-23
+  gen:father <https://www.wikidata.org/wiki/Q336084> ;
+  gen:mother <https://www.wikidata.org/wiki/Q531889> .
+  # oo 1923-06-14 Henry Somerset, 10th Duke of Beaufort, 1900-04-04 - 1984-02-05, https://www.wikidata.org/wiki/Q5728503 (beaufort.ttl)
+
+
+# Grafen von Württemberg
+<https://www.wikidata.org/wiki/Q72575>
+  # Wilhelm Friedrich Philipp Herzog von Württemberg, 1761-12-27 - 1830-08-10
+  gen:father <https://www.wikidata.org/wiki/Q58052> ;
+  gen:mother <https://www.wikidata.org/wiki/Q255759> .
+  # oo Wilhelmine Freiin von Tunderfeld-Rhodis, 1777-01-18 - 1822-02-06
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q72575> , <https://www.wikidata.org/wiki/Q10393640> ;
+	gen:startDate "1800-08-23" .
+
+<https://www.wikidata.org/wiki/Q76263>
+  # Christian Friedrich _Alexander_ Graf von Württemberg, 1801-11-05 - 1844-07-07
+  gen:father <https://www.wikidata.org/wiki/Q72575> ;
+  gen:mother <https://www.wikidata.org/wiki/Q10393640> .
+  # oo Ilona Gräfin Festetics de Tolna, 1812-06-01 - 1886-05-11
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76263> , <https://www.wikidata.org/wiki/Q75391076> ;
+	gen:startDate "1832-07-03" .
+<https://www.wikidata.org/wiki/Q63584>
+  # Friedrich _Wilhelm_ Alexander Ferdinand Graf von Württemberg Herzog von Urach, 1810-07-06 - 1869-07-17
+  # Herzog von Urach 1867-05-28
+  gen:father <https://www.wikidata.org/wiki/Q72575> ;
+  gen:mother <https://www.wikidata.org/wiki/Q10393640> .
+  # oo Théodelinde de Beauharnais Prinzessin von Leuchtenberg, 1814-04-13 - 1857-04-01 (wittelsbacher.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q63584> , <https://www.wikidata.org/wiki/Q62261> ;
+	gen:startDate "1841-02-08" .
+  # oo Florestine Gabrielle Antoinette Princesse de Monaco, 1833-10-22 - 1897-04-24 (merode.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q63584> , <https://www.wikidata.org/wiki/Q222089> ;
+	gen:startDate "1863-01-16" .
+
+<https://www.wikidata.org/wiki/Q75391090>
+  # Pauline Wilhelmine Franziska Xaverine Josephine Marie Gräfin von Württemberg, 1836-08-08 - 1911-10-06
+  gen:father <https://www.wikidata.org/wiki/Q76263> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75391076> .
+  # oo 1857-04-25 Maximilian Graf von Wuthenau-Hohenthurm, 1834-06-21 - 1912-03-20, https://www.wikidata.org/wiki/Q75391093
+<https://www.wikidata.org/wiki/Q3629555>
+  # Augusta Eugenie Prinzessin von Urach, 1842-12-27 - 1916-03-11
+  gen:father <https://www.wikidata.org/wiki/Q63584> ;
+  gen:mother <https://www.wikidata.org/wiki/Q62261> .
+  # oo 1865-10-04 Parzival Rudolf Graf von Enzenberg zum Freyen und Jöchelsthurn, 1835-08-25 - 1874-01-01, https://www.wikidata.org/wiki/Q75391168
+  # oo 1877-06-16 Franz Graf von Thun und Hohenstein, 1826-07-27 - 1888-07-30, https://www.wikidata.org/wiki/Q1450014
+<https://www.wikidata.org/wiki/Q58010>
+  # _Wilhelm Karl_ Florestan Gero Crescentius Graf von Württemberg Herzog von Urach, 1864-05-30 - 1928-03-24
+  # gewählter König von Litauen (Mindaugas II.) 1918-07-11 - 1918-11-02
+  gen:father <https://www.wikidata.org/wiki/Q63584> ;
+  gen:mother <https://www.wikidata.org/wiki/Q222089> .
+  # oo Amalie Herzogin in Bayern, 1865-12-24 - 1912-05-26 (wittelsbacher.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q58010> , <https://www.wikidata.org/wiki/Q63532> ;
+	gen:startDate "1892-07-04" .
+  # oo Wiltrud Prinzessin von Bayern, 1884-11-10 - 1975-03-28 (wittelsbacher.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q58010> , <https://www.wikidata.org/wiki/Q2127347> ;
+	gen:startDate "1924-11-26" .
+
+<https://www.wikidata.org/wiki/Q4356070>
+  # Elisabeth Florestine Auguste Marie Luise Prinzessin von Urach Gräfin von Württemberg, 1894-08-23 - 1962-10-13
+  gen:father <https://www.wikidata.org/wiki/Q58010> ;
+  gen:mother <https://www.wikidata.org/wiki/Q63532> .
+  # oo 1921-03-31 (rel 1921-04-05) Karl Aloys Prinz von und zu Liechtenstein, 1878-09-16 - 1955-06-20, https://www.wikidata.org/wiki/Q4355295
+<https://www.wikidata.org/wiki/Q72566>
+  # Karl Gero Albrecht Joseph Wilhelm Anton Maria Herzog von Urach, 1899-08-19 - 1981-08-15
+  gen:father <https://www.wikidata.org/wiki/Q58010> ;
+  gen:mother <https://www.wikidata.org/wiki/Q63532> .
+  # oo Gabriele Gräfin von Waldburg zu Zeil und Trauchburg, 1910-04-26 - 2005-04-06
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q72566> , <https://www.wikidata.org/wiki/Q75391182> ;
+	gen:startDate "1940-06-20" .
+<https://www.wikidata.org/wiki/Q4712679>
+  # Albrecht Eberhard Karl Gero Maria Prinz von Urach, 1903-10-08 - 1969-12-11
+  gen:father <https://www.wikidata.org/wiki/Q58010> ;
+  gen:mother <https://www.wikidata.org/wiki/Q63532> .
+  # oo Rosemary Blackadder, 1901-01-20 - 1975-06-06
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4712679> , <https://www.wikidata.org/wiki/Q75391184> ;
+	gen:startDate "1931-06-01" ;
+	gen:divorceDate "1943" .
+  # oo Ute Waldschmidt, 1922-09-11 - 1984-04-25
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4712679> , <https://www.wikidata.org/wiki/Q75391186> ;
+	gen:startDate "1943-09-08" ;
+	gen:divorceDate "1960" .
+<https://www.wikidata.org/wiki/Q9250124>
+  # Rupprecht _Eberhard_ Wilhelm Gero Maria Prinz von Urach Graf von Württemberg, 1907-01-24 - 1969-08-29
+  gen:father <https://www.wikidata.org/wiki/Q58010> ;
+  gen:mother <https://www.wikidata.org/wiki/Q63532> .
+  # oo (rel 1948-05-20) Iniga Prinzessin von Thurn und Taxis, 1925-08-25 - 2008-09-17 (taxis.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q9250124> , <https://www.wikidata.org/wiki/Q4201069> ;
+	gen:startDate "1948-05-18" .
+<https://www.wikidata.org/wiki/Q30605992>
+  # Mechthilde Marie Gabriele Florestine Sophie Devota Prinzessin von Urach, 1912-05-04 - 2001-03-11
+  gen:father <https://www.wikidata.org/wiki/Q58010> ;
+  gen:mother <https://www.wikidata.org/wiki/Q63532> .
+  # oo 1932-05-12 (rel 1932-05-24) Friedrich Karl Prinz zu Hohenlohe-Waldenburg-Schillingsfürst, 1908-07-31 - 1982-10-24, https://www.wikidata.org/wiki/Q27876993
+
+<https://www.wikidata.org/wiki/Q21032126>
+  # Marie Gabriele Sophie José Elisabeth Albertine Almeria Prinzessin von Urach, 1933-09-21 - 1989-05-07
+  gen:father <https://www.wikidata.org/wiki/Q4712679> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75391184> .
+  # oo 1954-07-03 (div 1981) Hon. Desmond Walter Guinness, b. 1932-09-08, https://www.wikidata.org/wiki/Q5264735
+
+
+# herzogliche Linie
+<https://www.wikidata.org/wiki/Q215027>
+  # Alexander Friedrich Karl Herzog von Württemberg, 1771-04-24 - 1833-07-04
+  gen:father <https://www.wikidata.org/wiki/Q58052> ;
+  gen:mother <https://www.wikidata.org/wiki/Q255759> .
+  # oo Antoinette Prinzessin von Sachsen-Coburg-Saalfeld, 1779-08-28 - 1824-03-14 (wettiner.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q215027> , <https://www.wikidata.org/wiki/Q62996> ;
+	gen:startDate "1798-11-17" .
+
+<https://www.wikidata.org/wiki/Q64204>
+  # Antoinette Friederike Auguste _Marie_ Herzogin von Württemberg, 1799-09-17 - 1860-09-24
+  gen:father <https://www.wikidata.org/wiki/Q215027> ;
+  gen:mother <https://www.wikidata.org/wiki/Q62996> .
+  # oo 1832-12-23 Ernst I., Herzog von Sachsen-Coburg und Gotha, 1784-01-02 - 1844-01-29, https://www.wikidata.org/wiki/Q58770 (wettiner.ttl)
+<https://www.wikidata.org/wiki/Q700057>
+  # Friedrich Wilhelm _Alexander_ Herzog von Württemberg, 1804-12-20 - 1881-10-28
+  gen:father <https://www.wikidata.org/wiki/Q215027> ;
+  gen:mother <https://www.wikidata.org/wiki/Q62996> .
+  # oo Marie d’Orléans, 1813-04-12 - 1839-01-06 (capet.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q700057> , <https://www.wikidata.org/wiki/Q240277> ;
+	gen:startDate "1837-10-17" .
+  # oo Katharina Amalie Pfennigkäufer, Frau von Meyernberg, 1829-07-31 - 1915-03-31
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q700057> , <#Katharina_Pfennigkäufer> ;
+	gen:startDate "1868-06-11" .
+
+<https://www.wikidata.org/wiki/Q63612>
+  # Philipp Alexander Maria Ernst Herzog von Württemberg, 1838-07-30 - 1917-10-11
+  gen:father <https://www.wikidata.org/wiki/Q700057> ;
+  gen:mother <https://www.wikidata.org/wiki/Q240277> .
+  # oo Marie Theresia Erzherzogin von Österreich, 1845-07-15 - 1927-10-08 (lothringen.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q63612> , <https://www.wikidata.org/wiki/Q254629> ;
+	gen:startDate "1865-01-18" .
+
+<https://www.wikidata.org/wiki/Q60504>
+  # Albrecht Maria Alexander Philipp Joseph Herzog von Württemberg, 1865-12-23 - 1939-10-31
+  # Herzog von Württemberg 1921-10-02
+  gen:father <https://www.wikidata.org/wiki/Q63612> ;
+  gen:mother <https://www.wikidata.org/wiki/Q254629> .
+  # oo Margarete Sophie Erzherzogin von Österreich, 1870-05-13 - 1902-08-24 (lothringen.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q60504> , <https://www.wikidata.org/wiki/Q242181> ;
+	gen:startDate "1893-01-24" .
+<https://www.wikidata.org/wiki/Q2154008>
+  # Maria Isabella Philippine Theresia Mathilde Josephine Herzogin von Württemberg, 1871-08-30 - 1904-05-24
+  gen:father <https://www.wikidata.org/wiki/Q63612> ;
+  gen:mother <https://www.wikidata.org/wiki/Q254629> .
+  # oo 1894-04-05 Johann Georg Prinz von Sachsen, 1869-07-10 - 1938-11-24, https://www.wikidata.org/wiki/Q567047 (wettiner.ttl)
+<https://www.wikidata.org/wiki/Q585884>
+  # Robert Maria Klemens Philipp Joseph Herzog von Württemberg, 1873-01-14 - 1947-04-12
+  gen:father <https://www.wikidata.org/wiki/Q63612> ;
+  gen:mother <https://www.wikidata.org/wiki/Q254629> .
+  # oo Maria Immakulata Erzherzogin von Österreich, 1878-09-03 - 1968-11-25 (lothringen.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q585884> , <https://www.wikidata.org/wiki/Q952114> ;
+	gen:startDate "1900-10-29" .
+
+<https://www.wikidata.org/wiki/Q62965>
+  # Georg _Philipp Albrecht_ Carl Maria Joseph Ludwig Hubertus Stanislaus Leopold Herzog von Württemberg, 1893-11-14 - 1975-04-15
+  # Herzog von Württemberg 1939-10-31
+  gen:father <https://www.wikidata.org/wiki/Q60504> ;
+  gen:mother <https://www.wikidata.org/wiki/Q242181> .
+  # oo Helene Erzherzogin von Österreich, 1903-10-30 - 1924-09-08 (lothringen.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q62965> , <https://www.wikidata.org/wiki/Q86044> ;
+	gen:startDate "1913-10-24" .
+  # oo Rosa Erzherzogin von Österreich, 1906-09-22 - 1983-09-17 (lothringen.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q62965> , <https://www.wikidata.org/wiki/Q84971> ;
+	gen:startDate "1928-08-01" .
+<https://www.wikidata.org/wiki/Q2322343>
+  # _Albrecht Eugen_ Maria Philipp Carl Joseph Fortunatus Herzog von Württemberg, 1895-01-08 - 1954-06-24
+  gen:father <https://www.wikidata.org/wiki/Q60504> ;
+  gen:mother <https://www.wikidata.org/wiki/Q242181> .
+  # oo Nadezhda Prinzessin von Bulgarien, 1899-01-30 - 1958-02-15 (wettiner.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2322343> , <https://www.wikidata.org/wiki/Q628259> ;
+	gen:startDate "1924-01-24" .
+
+<https://www.wikidata.org/wiki/Q11768977>
+  # _Maria Christina_ Helene Philippine Albertine Margarethe Amélie Elisabeth Therese Rosa Josepha Antonia Hedwig Aloysia Herzogin von Württemberg, b. 1924-09-02
+  gen:father <https://www.wikidata.org/wiki/Q62965> ;
+  gen:mother <https://www.wikidata.org/wiki/Q86044> .
+  # oo 1948-09-23 Georg Prinz von und zu Liechtenstein, 1911-11-11 - 1998-01-18, https://www.wikidata.org/wiki/Q16582354
+<https://www.wikidata.org/wiki/Q5311290>
+  # Elisabeth Maria Margarethe Alix Helene Rosa Philippine Christine Josepha Therese vom Kinde Jesu Herzogin von Württemberg, b. 1933-02-02
+  gen:father <https://www.wikidata.org/wiki/Q62965> ;
+  gen:mother <https://www.wikidata.org/wiki/Q86044> .
+  # oo 1958-07-18 (rel 1958-07-19) Antoine di Borbone delle Due Sicilie, 1929-01-20 - 2019-11-11, https://www.wikidata.org/wiki/Q7243815 (capet.ttl)
+<https://www.wikidata.org/wiki/Q75391224>
+  # Helene Maria Christine Rosa Margarethe Albertine Philippine Amelie Therese Josepha Antonia Alix Petrine Paula Pia Herzogin von Württemberg, 1929-06-29 - 2021-04-22
+  gen:father <https://www.wikidata.org/wiki/Q62965> ;
+  gen:mother <https://www.wikidata.org/wiki/Q84971> .
+  # oo 1961-08-22 (rel 1961-08-23) Friedrich Maria Pallavicini, 1924-12-23 - 2022-08-08, https://www.wikidata.org/wiki/Q75391225 (fürstenberg.ttl)
+<https://www.wikidata.org/wiki/Q3292297>
+  # _Maria Theresa_ Nadejda Albertine Rosa Philippine Margarethe Christine Helene Josepha Martina Leopoldine Herzogin von Württemberg, b. 1934-11-12
+  gen:father <https://www.wikidata.org/wiki/Q62965> ;
+  gen:mother <https://www.wikidata.org/wiki/Q84971> .
+  # oo 1957-07-05 (div 1984-02-03) Henri d’Orléans (comte de Paris), b. 1933-06-14, https://www.wikidata.org/wiki/Q534961 (capet.ttl)
+<https://www.wikidata.org/wiki/Q62385>
+  # Carl Maria Peter Ferdinand Philipp Albrecht Joseph Michael Pius Konrad Robert Ulrich Herzog von Württemberg, b. 1936-08-01
+  # Herzog von Württemberg 1959-06-29
+  gen:father <https://www.wikidata.org/wiki/Q62965> ;
+  gen:mother <https://www.wikidata.org/wiki/Q86044> .
+  # oo (rel 1960-07-21) Diane d’Orléans, b. 1940-03-24 (capet.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q62385> , <https://www.wikidata.org/wiki/Q451724> ;
+	gen:startDate "1960-07-18" .
+<https://www.wikidata.org/wiki/Q75384082>
+  # Eugen Eberhard Albrecht Maria Joseph Ivan Rilsky Robert Ulrich Philipp Odo Carl Hubert Herzog von Württemberg, b. 1930-11-02
+  gen:father <https://www.wikidata.org/wiki/Q2322343> ;
+  gen:mother <https://www.wikidata.org/wiki/Q628259> .
+  # oo (rel 1962-09-03) Alexandra Erzherzogin von Österreich, b. 1935-05-21 (lothringen.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75384082> , <https://www.wikidata.org/wiki/Q75384081> ;
+	gen:startDate "1962-08-31" ;
+	gen:divorceDate "1972" ;
+	gen:annulledDate "1973" .
+
+<https://www.wikidata.org/wiki/Q75167>
+  # Friedrich Philipp Carl Franz Maria Herzog von Württemberg, 1961-06-01 - 2018-05-09
+  gen:father <https://www.wikidata.org/wiki/Q62385> ;
+  gen:mother <https://www.wikidata.org/wiki/Q451724> .
+  # oo (rel 1993-11-13) Marie Prinzessin zu Wied, b. 1973-12-27 (runkel.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75167> , <https://www.wikidata.org/wiki/Q75323778> ;
+	gen:startDate "1993-11-11" .
+<https://www.wikidata.org/wiki/Q75391258>
+  # Mathilde Marie-Antoinette Rosa Isabelle Herzogin von Württemberg, b. 1962-07-11
+  gen:father <https://www.wikidata.org/wiki/Q62385> ;
+  gen:mother <https://www.wikidata.org/wiki/Q451724> .
+  # oo 1988-11-17 (rel 1988-11-19) Erich Fürst von Waldburg zu Zeil und Trauchburg, b. 1962-11-21, https://www.wikidata.org/wiki/Q22694533
+<https://www.wikidata.org/wiki/Q24955726>
+  # Philipp Albrecht Christoph Ulrich Maria Herzog von Württemberg, b. 1964-11-01
+  gen:father <https://www.wikidata.org/wiki/Q62385> ;
+  gen:mother <https://www.wikidata.org/wiki/Q451724> .
+  # oo (rel 1991-07-27) Marie Caroline Prinzessin von Bayern, b. 1969-06-23 (wittelsbacher.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q24955726> , <https://www.wikidata.org/wiki/Q24955724> ;
+	gen:startDate "1991-06-28" .
+<https://www.wikidata.org/wiki/Q75293743>
+  # Eleonore _Fleur_ Juanita Charlotte Eudoxie Marie-Agne Herzogin von Württemberg, b. 1977-11-04
+  gen:father <https://www.wikidata.org/wiki/Q62385> ;
+  gen:mother <https://www.wikidata.org/wiki/Q451724> .
+  # oo 2003-08-08 (rel 2003-08-09) Moritz Louis (Graf von) Goëss, b. 1966-06-05, https://www.wikidata.org/wiki/Q75368282
+
+<https://www.wikidata.org/wiki/Q75323779>
+  # Wilhelm Friedrich Carl Philipp Albrecht Nikolaus Erich Maria Herzog von Württemberg, b. 1994-08-13
+  gen:father <https://www.wikidata.org/wiki/Q75167> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75323778> .
+<https://www.wikidata.org/wiki/Q75323781>
+  # Marie-Amélie Diane Katherine Beatrix Philippa Sophie Herzogin von Württemberg, b. 1996-03-11
+  gen:father <https://www.wikidata.org/wiki/Q75167> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75323778> .
+<https://www.wikidata.org/wiki/Q75351588>
+  # Sophie-Dorothee Martina Johanna Henriette Charitas Maria Herzogin von Württemberg, b. 1997-08-19
+  gen:father <https://www.wikidata.org/wiki/Q75167> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75323778> .
+
+
+# Württemberg-Mömpelgard
+<https://www.wikidata.org/wiki/Q648471>
+  # Ludwig Friedrich, Herzog von Württemberg-Mömpelgard, 1586-01-29 - 1631-01-26
+  # Gefürstete Grafschaft Mömpelgard 1617-05-28
+  # Regent des Herzogtums Württemberg 1628-07-28
+  gen:father <https://www.wikidata.org/wiki/Q702746> ;
+  gen:mother <https://www.wikidata.org/wiki/Q451164> .
+  # oo Elisabeth Magdalene Landgräfin von Hessen-Darmstadt, 1600-04-23 - 1624-06-09 (reginare.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q648471> , <https://www.wikidata.org/wiki/Q10303804> ;
+	gen:startDate "1617-07-13" .
+  # oo Anna Eleonore Gräfin von Nassau-Weilburg, 1602-09-09 - 1685-09-07
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q648471> , <https://www.wikidata.org/wiki/Q25425375> ;
+	gen:startDate "1625-05-14" .
+
+<https://www.wikidata.org/wiki/Q20656514>
+  # Henriette Luise Herzogin von Württemberg(-Mömpelgard), 1623-06-20 - 1650-08-24
+  gen:father <https://www.wikidata.org/wiki/Q648471> ;
+  gen:mother <https://www.wikidata.org/wiki/Q10303804> .
+  # oo 1642-08-21 Albrecht II., Markgraf von Brandenburg-Ansbach, 1620-09-28 - 1667-11-01, https://www.wikidata.org/wiki/Q657578 (hohenzollern.ttl)
+<https://www.wikidata.org/wiki/Q2673938>
+  # Leopold Friedrich, Herzog von Württemberg-Mömpelgard, 1624-05-30 - 1662-06-15
+  # Herzog von Württemberg-Mömpelgard 1631-01-26
+  gen:father <https://www.wikidata.org/wiki/Q648471> ;
+  gen:mother <https://www.wikidata.org/wiki/Q10303804> .
+  # oo Sibylle Herzogin von Württemberg, 1620-12-04 - 1707-05-21
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q2673938> , <#Sibylle_von_Württemberg> ;
+	gen:startDate "1647-11-22" .
+<https://www.wikidata.org/wiki/Q477583>
+  # Georg II., Herzog von Württemberg-Mömpelgard, 1626-10-05 - 1699-06-01
+  # Herzog von Württemberg-Mömpelgard 1662-06-15
+  gen:father <https://www.wikidata.org/wiki/Q648471> ;
+  gen:mother <https://www.wikidata.org/wiki/Q25425375> .
+  # oo Anne de Coligny, 1626-09-04 - 1680-01-13 (montmorency.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q477583> , <https://www.wikidata.org/wiki/Q105817315> ;
+	gen:startDate "1648-04-20" .
+
+<https://www.wikidata.org/wiki/Q526103>
+  # Eleonore Charlotte Herzogin von Württemberg(-Mömpelgard), 1656-11-20 - 1743-04-13
+  gen:father <https://www.wikidata.org/wiki/Q477583> ;
+  gen:mother <https://www.wikidata.org/wiki/Q105817315> .
+  # oo 1672-05-07 Sylvius II. Friedrich Herzog von Württemberg-Oels, 1651-02-21 - 1697-06-03, https://www.wikidata.org/wiki/Q478284
+<#Elisabeth_von_Württemberg-Mömpelgard>
+  # Elisabeth Herzogin von Württemberg(-Mömpelgard), 1665-03-17 - 1726-07-05
+  gen:father <https://www.wikidata.org/wiki/Q477583> ;
+  gen:mother <https://www.wikidata.org/wiki/Q105817315> .
+  # oo 1689-09-19 Friedrich Ferdinand Herzog von Württemberg-Weiltingen, 1654-10-06 - 1705-08-08, https://www.wikidata.org/wiki/Q11698971
+<https://www.wikidata.org/wiki/Q959764>
+  # Leopold Eberhard, Herzog von Württemberg-Mömpelgard, 1670-05-21 - 1723-03-25
+  # Herzog von Württemberg-Mömpelgard 1699-06-01
+  gen:father <https://www.wikidata.org/wiki/Q477583> ;
+  gen:mother <https://www.wikidata.org/wiki/Q105817315> .
+  # oo Anna Sabine von Hedwiger Gräfin von Sponeck, 1676-04-20 - 1735-11-09
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q959764> , <https://www.wikidata.org/wiki/Q105817300> ;
+	gen:startDate "1695-06-01" ;
+	gen:divorceDate "1714-10-06" .
+  # oo Elisabeth Charlotte Curie, Freiin von l'Esperance 100-09-11, 1684-06-28 - 1733-07-19
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q959764> , <#Elisabeth_Charlotte_Curie> ;
+	gen:startDate "1718" .
+
+
+# Württemberg-Weiltingen
+<https://www.wikidata.org/wiki/Q72760>
+  # Julius Friedrich Herzog von Württemberg-Weiltingen, 1588-06-03 - 1635-04-25
+  # Herrschaften Weiltingen und Brenz 1617-05-28
+  # Regent des Herzogtums Württemberg 1631-01-26 - 1633-05-08
+  gen:father <https://www.wikidata.org/wiki/Q702746> ;
+  gen:mother <https://www.wikidata.org/wiki/Q451164> .
+  # oo Anna Sabine Prinzessin von Schleswig-Holstein-Sonderburg, 1593-03-07 - 1659-07-18 (oldenburg.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q72760> , <https://www.wikidata.org/wiki/Q20202416> ;
+	gen:startDate "1618-12-11" .
+
+<https://www.wikidata.org/wiki/Q22333315>
+  # Roderich Herzog von Württemberg-Weiltingen, 1618-10-19 - 1651-11-19
+  gen:father <https://www.wikidata.org/wiki/Q72760> ;
+  gen:mother <https://www.wikidata.org/wiki/Q20202416> .
+<https://www.wikidata.org/wiki/Q31191706>
+  # Juliane Felizitas Herzogin von Württemberg(-Weiltingen), 1619-12-19 - 1661-01-03
+  gen:father <https://www.wikidata.org/wiki/Q72760> ;
+  gen:mother <https://www.wikidata.org/wiki/Q20202416> .
+  # oo 1640-05-07 Johann Herzog von Schleswig-Holstein-Gottorf, 1606-03-18 - 1655-02-21, Fürstbischof von Lübeck, https://www.wikidata.org/wiki/Q85256 (oldenburg.ttl)
+<https://www.wikidata.org/wiki/Q471228> # -> Württemberg-Oels
+  # Sylvius I. Nimrod Herzog von Württemberg-Oels, 1622-05-02 - 1664-04-26
+  gen:father <https://www.wikidata.org/wiki/Q72760> ;
+  gen:mother <https://www.wikidata.org/wiki/Q20202416> .
+<https://www.wikidata.org/wiki/Q31191705>
+  # Floriane Erneste Herzogin von Württemberg(-Weiltingen), 1623-05-08 - 1672-12-05
+  gen:father <https://www.wikidata.org/wiki/Q72760> ;
+  gen:mother <https://www.wikidata.org/wiki/Q20202416> .
+  # oo 1657-05-18 Friedrich Kraft Graf zu Hohenlohe-Pfedelbach, 1623-11-27 - 1681-04-07, https://www.wikidata.org/wiki/Q28058845
+<https://www.wikidata.org/wiki/Q11767039>
+  # Manfred Herzog von Württemberg-Weiltingen, 1626-06-05 - 1662-05-15
+  gen:father <https://www.wikidata.org/wiki/Q72760> ;
+  gen:mother <https://www.wikidata.org/wiki/Q20202416> .
+  # oo Juliane Gräfin von Oldenburg-Delmenhorst, 1615-07-02 - 1691-05-16
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q11767039> , <https://www.wikidata.org/wiki/Q24009746> ;
+	gen:startDate "1652-10-31" .
+
+<https://www.wikidata.org/wiki/Q11698971>
+  # Friedrich Ferdinand Herzog von Württemberg-Weiltingen, 1654-10-06 - 1705-08-08
+  gen:father <https://www.wikidata.org/wiki/Q11767039> ;
+  gen:mother <https://www.wikidata.org/wiki/Q24009746> .
+  # oo Elisabeth Herzogin von Württemberg-Mömpelgard, 1665-03-17 - 1726-07-05
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q11698971> , <#Elisabeth_von_Württemberg-Mömpelgard> ;
+	gen:startDate "1689-09-19" .
+
+<https://www.wikidata.org/wiki/Q37869135>
+  # Sibylle Charlotte Juliane Herzogin von Württemberg-Weiltingen, 1690-11-14 - 1735-10-30
+  gen:father <https://www.wikidata.org/wiki/Q11698971> ;
+  gen:mother <#Elisabeth_von_Württemberg-Mömpelgard> .
+  # oo 1709-04-21 Karl Friedrich, Herzog von Württemberg-Oels, 1690-02-17 - 1761-12-14, https://www.wikidata.org/wiki/Q325475
+<https://www.wikidata.org/wiki/Q122929>
+  # Hedwig Friederike Herzogin von Württemberg-Weiltingen, 1691-10-18 - 1752-08-14
+  gen:father <https://www.wikidata.org/wiki/Q11698971> ;
+  gen:mother <#Elisabeth_von_Württemberg-Mömpelgard> .
+  # oo 1715-10-08 Johann August, Fürst von Anhalt-Zerbst, 1677-07-29 - 1742-11-07, https://www.wikidata.org/wiki/Q71178 (askanier.ttl)
+
+
+# Württemberg-Oels
+<https://www.wikidata.org/wiki/Q471228>
+  # Sylvius I. Nimrod Herzog von Württemberg-Oels, 1622-05-02 - 1664-04-26
+  # Mediatsfürstentum Oels 1648-12-15
+  gen:father <https://www.wikidata.org/wiki/Q72760> ;
+  gen:mother <https://www.wikidata.org/wiki/Q20202416> .
+  # oo Elisabeth Marie Prinzessin von Münsterberg-Oels, 1625-05-11 - 1686-03-17 (podiebrad.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q471228> , <https://www.wikidata.org/wiki/Q455582> ;
+	gen:startDate "1647-05-01" .
+
+<https://www.wikidata.org/wiki/Q478284>
+  # Sylvius II. Friedrich Herzog von Württemberg-Oels, 1651-02-21 - 1697-06-03
+  # Herzog von Württemberg-Oels (1664-04-26) 1673
+  gen:father <https://www.wikidata.org/wiki/Q471228> ;
+  gen:mother <https://www.wikidata.org/wiki/Q455582> .
+  # oo Eleonore Charlotte Herzogin von Württemberg(-Mömpelgard), 1656-11-20 - 1743-04-13
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q478284> , <https://www.wikidata.org/wiki/Q526103> ;
+	gen:startDate "1672-05-07" .
+<https://www.wikidata.org/wiki/Q476219>
+  # Christian Ulrich I., Herzog von Württemberg-Bernstadt, 1652-04-09 - 1704-04-05
+  # Herzog von Württemberg-Bernstadt 1673 - 1697-06-03
+  # Herzog von Württemberg-Oels 1697-06-03 und ½ Juliusburg
+  gen:father <https://www.wikidata.org/wiki/Q471228> ;
+  gen:mother <https://www.wikidata.org/wiki/Q455582> .
+  # oo Anna Elisabeth Prinzessin von Anhalt-Bernburg, 1647-03-19 - 1680-09-03 (askanier.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q476219> , <https://www.wikidata.org/wiki/Q97991> ;
+	gen:startDate "1672-03-13" .
+  # oo Sibylle Marie Prinzessin von Sachsen-Merseburg, 1667-10-28 - 1693-10-09 (wettiner.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q476219> , <https://www.wikidata.org/wiki/Q3960009> ;
+	gen:startDate "1683-10-27" .
+  # oo Sophie Wilhelmine Prinzessin von Ostfriesland, 1659-10-17 - 1698-02-04 (cirksena.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q476219> , <https://www.wikidata.org/wiki/Q60809459> ;
+	gen:startDate "1695-12-06/-07" .
+  # oo Sophie Herzogin zu Mecklenburg Prinzessin von Mecklenburg-Güstrow, 1662-06-21 - 1738-06-07
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q476219> , <https://www.wikidata.org/wiki/Q28057662> ;
+	gen:startDate "1700-12-06" .
+<https://www.wikidata.org/wiki/Q325268>
+  # Julius Siegmund, Herzog von Württemberg-Juliusburg-Bernstadt, 1653-08-18 - 1684-10-15
+  gen:father <https://www.wikidata.org/wiki/Q471228> ;
+  gen:mother <https://www.wikidata.org/wiki/Q455582> .
+  # oo Anna Sophie Herzogin zu Mecklenburg Prinzessin von Mecklenburg-Schwerin, 1647-11-24 - 1726-08-13
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q325268> , <https://www.wikidata.org/wiki/Q107326823> ;
+	gen:startDate "1677-04-04" .
+
+<https://www.wikidata.org/wiki/Q108144>
+  # Luise Elisabeth Herzogin von Württemberg-Oels, 1673-03-04 - 1736-04-28
+  gen:father <https://www.wikidata.org/wiki/Q476219> ;
+  gen:mother <https://www.wikidata.org/wiki/Q97991> .
+  # oo 1688-08-17 Philipp Herzog von Sachsen-Merseburg-Lauchstädt, 1657-10-26 - 1690-07-01, https://www.wikidata.org/wiki/Q830110 (wettiner.ttl)
+<https://www.wikidata.org/wiki/Q18217260>
+  # Sophie Angelika Herzogin von Württemberg-Oels, 1677-05-30 - 1700-11-11
+  gen:father <https://www.wikidata.org/wiki/Q476219> ;
+  gen:mother <https://www.wikidata.org/wiki/Q97991> .
+  # oo 1699-04-23 Friedrich Heinrich Herzog von Sachsen-Zeitz-Pegau-Neustadt, 1668-07-21 - 1713-12-18, https://www.wikidata.org/wiki/Q96767 (wettiner.ttl)
+<https://www.wikidata.org/wiki/Q325475>
+  # Karl Friedrich, Herzog von Württemberg-Oels, 1690-02-17 - 1761-12-14
+  # Herzog von Württemberg-Oels (1704-04-05) 1707 - 1742 (an Preußen) (1744)
+  # Regent des Herzogtums Württemberg 1738 - 1744
+  gen:father <https://www.wikidata.org/wiki/Q476219> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3960009> .
+  # oo Sibylle Charlotte Juliane Herzogin von Württemberg-Weiltingen, 1690-11-14 - 1735-10-30
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q325475> , <https://www.wikidata.org/wiki/Q37869135> ;
+	gen:startDate "1709-04-21" .
+<https://www.wikidata.org/wiki/Q325515>
+  # Christian Ulrich II. Herzog von Württemberg-Wilhelminenort, 1691-01-07 - 1734-02-07
+  gen:father <https://www.wikidata.org/wiki/Q476219> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3960009> .
+  # oo Philippine Charlotte Gräfin von Redern, 1691-02-18 - 1758-06-17, daughter of Erdmann Graf von Redern auf Krappitz
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q325515> , <#Philippine_Charlotte_von_Redern> ;
+	gen:startDate "1711-07-13" .
+<https://www.wikidata.org/wiki/Q18324521>
+  # Auguste Luise Herzogin von Württemberg-Oels, 1698-01-21 - 1739-01-04
+  gen:father <https://www.wikidata.org/wiki/Q476219> ;
+  gen:mother <https://www.wikidata.org/wiki/Q60809459> .
+  # oo 1721-02-18 (div 1732) Georg Albert Herzog von Sachsen-Weißenfels-Barby, 1695-04-19 - 1739-06-12, https://www.wikidata.org/wiki/Q95301 (wettiner.ttl)
+<https://www.wikidata.org/wiki/Q325442>
+  # Karl Herzog von Württemberg-Juliusburg-Bernstadt, 1682-03-11 - 1745-02-08
+  # Herzog von Württemberg-Bernstadt 1697-06-03 - 1742 (an Preußen)
+  gen:father <https://www.wikidata.org/wiki/Q325268> ;
+  gen:mother <https://www.wikidata.org/wiki/Q107326823> .
+  # oo Wilhelmine Luise Prinzessin von Sachsen-Meiningen, 1686-01-19 - 1753-10-05 (wettinerl.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q325442> , <https://www.wikidata.org/wiki/Q47317997> ;
+	gen:startDate "1703-12-20" .
+
+<https://www.wikidata.org/wiki/Q479755>
+  # Karl Christian Erdmann, Herzog von Württemberg-Oels, 1716-10-26 - 1792-12-14
+  # (Herzog von Württemberg-Oels 1744)
+  # (Herzog von Württemberg-Bernstadt 1745-02-08)
+  gen:father <https://www.wikidata.org/wiki/Q325515> ;
+  gen:mother <#Philippine_Charlotte_von_Redern> .
+  # oo Marie Sophie Wilhelmine Gräfin zu Solms-Laubach, 1721-04-03 - 1793-03-25
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q479755> , <https://www.wikidata.org/wiki/Q66424236> ;
+	gen:startDate "1741-04-08" .
+
+<https://www.wikidata.org/wiki/Q75388931>
+  # Friederike Sophie Charlotte Auguste Prinzessin von Württemberg-Oels, 1751-08-01 - 1789-11-04
+  gen:father <https://www.wikidata.org/wiki/Q479755> ;
+  gen:mother <https://www.wikidata.org/wiki/Q66424236> .
+  # oo 1768-09-06 Friedrich August Herzog zu Braunschweig und Lüneburg, Herzog von Oels und Bernstadt, 1740-10-29 - 1805-10-08, https://www.wikidata.org/wiki/Q89340 (welfen.ttl)
 
 
 # ----
 <https://www.wikidata.org/wiki/Q28837254>
   # Johann III., Graf von Werdenberg, 1416~ - 1465-04-26
-  gen:father <https://www.wikidata.org/wiki/Q55904880> . # Eberhard II.
+  gen:father <https://www.wikidata.org/wiki/Q55904880> ; # Eberhard II., Graf von Werdenberg-Trochtelfingen
+  gen:mother <https://www.wikidata.org/wiki/Q116006497> . # Anna von Zimmern
   # oo Elisabeth von Württemberg, 1412a - 1476-04-29a
   []
     gen:spouse <https://www.wikidata.org/wiki/Q28837254> , <https://www.wikidata.org/wiki/Q107096> .
 
+<https://www.wikidata.org/wiki/Q75288812>
+  # Agnes Gräfin von Werdenberg-Heiligenberg, 1434 - 1467
+  gen:father <https://www.wikidata.org/wiki/Q28837254> ;
+  gen:mother <https://www.wikidata.org/wiki/Q107096> .
+  # oo 1448 Jobst Nikolaus I., Graf von Hohenzollern, 1433 - 1488-02-09, https://www.wikidata.org/wiki/Q84657 (hohenzollern.ttl)
+<https://www.wikidata.org/wiki/Q116170736>
+  # Elisabeth von Werdenberg-Heiligenberg, d. 1467
+  gen:father <https://www.wikidata.org/wiki/Q28837254> ;
+  gen:mother <https://www.wikidata.org/wiki/Q107096> .
+  # oo 1455-06-01 Hugo XIII./XI. Graf von Montfort-Rothenfels-Argen-Wasserburg, d. 1491-10-16, https://www.wikidata.org/wiki/Q66196220 (waldburg.ttl)
 <https://www.wikidata.org/wiki/Q28839696>
   # Georg III. von Werdenberg, Graf von Heiligenberg, Sigmaringen und Veringen, 1445~ - 1500-03-12
   gen:father <https://www.wikidata.org/wiki/Q28837254> ;
   gen:mother <https://www.wikidata.org/wiki/Q107096> .
-  # oo Katherina Markgräfin von Baden, 1449-01-15 - 1484-05-08 (zähringer.ttl)
+  # oo Katharina Markgräfin von Baden, 1449-01-15 - 1484-05-08 (zähringer.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q28839696> , <https://www.wikidata.org/wiki/Q1665189> ;
 	gen:startDate "1464-05-19" .
@@ -300,84 +1447,159 @@
   # Magdalena von Werdenberg-Heiligenberg, 1465 - 1528-09-09
   gen:father <https://www.wikidata.org/wiki/Q28839696> ;
   gen:mother <https://www.wikidata.org/wiki/Q1665189> .
-  # oo 1484-05 Jan III, graaf van Egmont, 1438-04-03 - 1516-08-21, https://www.wikidata.org/wiki/Q1694751 (mark.ttl)
-
-# ----
-<https://www.wikidata.org/wiki/Q1122672>
-  # Philipp I., Graf von Katzenelnbogen, 1402 - 1479
-  gen:father <https://www.wikidata.org/wiki/Q1689282> ; # Johann IV., Graf von Katzenelnbogen
-  gen:mother <https://www.wikidata.org/wiki/Q101518721> . # Anna, Gräfin von Katzenelnbogen
-  # oo Anna von Württemberg, 1408 - 1471
+  # oo 1484-05 Jan III, graaf van Egmont, 1438-04-03 - 1516-08-21, https://www.wikidata.org/wiki/Q1694751 (wassenberg.ttl)
+<https://www.wikidata.org/wiki/Q110260831>
+  # Christoph, Graf von Werdenberg-Heiligenberg, 1480 - 1534-01-29
+  gen:father <https://www.wikidata.org/wiki/Q28839696> ;
+  gen:mother <https://www.wikidata.org/wiki/Q1665189> .
+  # oo Eleonora Gonzaga, 1488 - 1512-03
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q1122672> , <https://www.wikidata.org/wiki/Q61492485> ;
-	gen:startDate "1422-02-22" .
+    gen:spouse <https://www.wikidata.org/wiki/Q110260831> , <https://www.wikidata.org/wiki/Q61139863> ;
+	gen:startDate "1500-09-30" .
+<https://www.wikidata.org/wiki/Q110414654>
+  # Agnes Gräfin von Werdenberg-Sargans, d. 1541
+  gen:father <https://www.wikidata.org/wiki/Q28839696> ;
+  gen:mother <https://www.wikidata.org/wiki/Q1665189> .
+  # oo 1483-07-01 Christoph I. Schenk von Limpurg zu Gaildorf, d. 1515-11-30, https://www.wikidata.org/wiki/Q56071619
+<https://www.wikidata.org/wiki/Q116029658>
+  # Elisabeth von Werdenberg-Trochtelfingen, d. 1536-12-20
+  gen:father <https://www.wikidata.org/wiki/Q28839696> ;
+  gen:mother <https://www.wikidata.org/wiki/Q1665189> .
+  # oo 1485-10-30 Erasmus I. von Erbach-Erbach, 1466 - 1503-09-01, https://www.wikidata.org/wiki/Q44191198
 
-<https://www.wikidata.org/wiki/Q31192666>
-  # Philipp der Jüngere, Graf von Katzenelnbogen, 1427 - 1453-02-27
-  gen:father <https://www.wikidata.org/wiki/Q1122672> ;
-  gen:mother <https://www.wikidata.org/wiki/Q61492485> .
-  # oo Ottilia von Nassau-Dillenburg, 1437-04 - 1493-07
+<https://www.wikidata.org/wiki/Q110365685>
+  # Anna Gräfin von Werdenberg-Heiligenberg, 1510~ - 1554
+  gen:father <https://www.wikidata.org/wiki/Q110260831> ;
+  gen:mother <https://www.wikidata.org/wiki/Q61139863> .
+  # oo 1516-02-19 Friedrich II. von Fürstenberg, 1496-07-19 - 1559-03-08, https://www.wikidata.org/wiki/Q31192648
+
+# ----
+<https://www.wikidata.org/wiki/Q212506>
+  # Franziska Therese Freiin von Bernerdin, 1748-01-10 - 1811-01-01
+  # Freifrau Leutrum von Ertingen 1765
+  # Gräfin von Hohenheim und Herrin von Württemberg 1774
+  gen:father <https://www.wikidata.org/wiki/Q75391032> . # Ludwig Wilhelm Freiherr von Bernerdin
+  # and Johanna Freiin von Vohenstein von Adelmansfelden
+  # oo 1785-01-10/-11 Karl II. Eugen, Herzog von Württemberg, 1728-02-11 - 1793-10-24, https://www.wikidata.org/wiki/Q511206
+
+# ====
+<https://www.wikidata.org/wiki/Q517>
+  # Napoléon I Bonaparte, Empereur des Français, 1769-08-15 - 1821-05-05
+  # Empereur des Français 1804-05-18 – 1814-04-06, 1815-03-20 – 1815-06-22
+  # Re d'Italia 1805-03-17 – 1814-04-11
+  gen:father <https://www.wikidata.org/wiki/Q151869> ; # Carlo Maria Bonaparte
+  gen:mother <https://www.wikidata.org/wiki/Q151995> . # Maria Letizia Ramolino
+  # oo Joséphine de Tascher de La Pagerie, 1763-06-23 - 1814-05-29 (wittelsbacher.ttl)
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q31192666> , <https://www.wikidata.org/wiki/Q19802246> ;
-	gen:startDate "1450" .
-<https://www.wikidata.org/wiki/Q61492430>
-  # Anna von Katzenelnbogen, 1443-09-05 - 1494-02-16
-  gen:father <https://www.wikidata.org/wiki/Q1122672> ;
-  gen:mother <https://www.wikidata.org/wiki/Q61492485> .
-  # oo 1458-08-30 Heinrich III. „der Reiche“, Landgraf von Hessen-Marburg, 1440-10-15 - 1483-01-13, https://www.wikidata.org/wiki/Q87986 (reginare.ttl)
-
-<https://www.wikidata.org/wiki/Q95593>
-  # Ottilie Gräfin von Katzenelnbogen, 1451 - 1517-08-15
-  gen:father <https://www.wikidata.org/wiki/Q31192666> ;
-  gen:mother <https://www.wikidata.org/wiki/Q19802246> .
-  # oo 1468-12-19 Christoph I., Markgraf von Baden-Baden, 1453-11-13 - 1527-04-19, https://www.wikidata.org/wiki/Q66602 (zähringer.ttl)
-
-# ----
-<https://www.wikidata.org/wiki/Q61723902>
-  # Eva von Salm, d. 1521-04-26
-  gen:father <https://www.wikidata.org/wiki/Q75246113> . # Johann VI., Graf von Ober-Salm
-  # and Margarete von Sirck
-  # oo 1488-07-21 Heinrich, Graf von Württemberg, 1448-09-07 - 1519-04-15, https://www.wikidata.org/wiki/Q552999
-
-# ----
-<https://www.wikidata.org/wiki/Q6066434>
-  # Anna Katharina Dorothea Wild- und Rheingräfin von Salm-Kyrburg, 1614-01-27 - 1655-06-27
-  gen:father <https://www.wikidata.org/wiki/Q44191523> ; # Johann Kasimir von Salm-Kyrburg
-  gen:mother <https://www.wikidata.org/wiki/Q55114521> . # Dorothea of Solms-Laubach
-  # oo 1637-02-26 Eberhard III., Herzog von Württemberg, 1614-12-16 - 1674-07-02, https://www.wikidata.org/wiki/Q61362
-
-# ----
-<https://www.wikidata.org/wiki/Q6411815>
-  # Sophie Margarete zu Oettingen-Oettingen, 1634-12-19 - 1664-08-05
-  gen:father <https://www.wikidata.org/wiki/Q11928089> ; # Joachim Ernst zu Oettingen-Oettingen
-  gen:mother <https://www.wikidata.org/wiki/Q54864014> . # Anne Sybille de Solms-Sonnenwalde
-  # oo 1651-10-15 Albrecht II., Markgraf von Brandenburg-Ansbach, 1620-09-28 - 1667-01-01, https://www.wikidata.org/wiki/Q657578 (hohenzollern.ttl)
-<https://www.wikidata.org/wiki/Q9144277>
-  # Albrecht Ernst I., Fürst zu Oettingen-Oettingen, 1642-05-14 - 1683-02-08
-  gen:father <https://www.wikidata.org/wiki/Q11928089> ;
-  gen:mother <https://www.wikidata.org/wiki/Q16166966> . # Anna Dorotea de Hohenlohe-Neuenstein
-  # oo Christine Friederike von Württemberg-Winnental, 1644-02-28 - 1674-11-09
+    gen:spouse <https://www.wikidata.org/wiki/Q517> , <https://www.wikidata.org/wiki/Q171480> ;
+	gen:startDate "1796-03-08" .
+  # oo (proxy 1810-03-11) (rel 1810-04-02) Marie Louise, Duchessa di Parma, Piacenza e Guastalla, 1791-12-12 - 1847-12-17 (lothringen.ttl)
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q9144277> , <https://www.wikidata.org/wiki/Q3697531> ;
-	gen:startDate "1665-06-07" .
+    gen:spouse <https://www.wikidata.org/wiki/Q517> , <https://www.wikidata.org/wiki/Q157491> ;
+	gen:startDate "1810-04-01" .
+<https://www.wikidata.org/wiki/Q151098>
+  # Lucien Bonaparte, Principe di Canino e Musignano, 1775-03-21 - 1840-06-29
+  # Principe di Canino e Musignano 1814-08-31
+  gen:father <https://www.wikidata.org/wiki/Q151869> ;
+  gen:mother <https://www.wikidata.org/wiki/Q151995> .
+  # oo Catherine Christine Elenore Boyer, 1773-07-06 - 1800-05-14
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q151098> , <https://www.wikidata.org/wiki/Q250928> ;
+	gen:startDate "1794-05-04" .
+<https://www.wikidata.org/wiki/Q151087>
+  # Jérôme Bonaparte, König von Westfalen, 1784-11-15 - 1860-06-24
+  # Girolamo Napoleone de Buonaparte
+  # König von Westfalen 1807-07-08 – 1813-10-26
+  gen:father <https://www.wikidata.org/wiki/Q151869> ;
+  gen:mother <https://www.wikidata.org/wiki/Q151995> .
+  # oo Katharina Prinzessin von Württemberg, 1783-02-21 - 1835-11-28
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q151087> , <https://www.wikidata.org/wiki/Q236184> ;
+	gen:startDate "1807-08-12" .
 
-<https://www.wikidata.org/wiki/Q61264>
-  # Christine Luise Prinzessin zu Oettingen-Oettingen, 1671-03-30 - 1747-11-12
-  gen:father <https://www.wikidata.org/wiki/Q9144277> ;
-  gen:mother <https://www.wikidata.org/wiki/Q3697531> .
-  # oo 1690-04-22 Ludwig Rudolf, Herzog von Braunschweig-Wolfenbüttel, Fürst von Blankenburg, 1671-07-22 - 1735-03-01, https://www.wikidata.org/wiki/Q61512 (welfen.ttl)
-<https://www.wikidata.org/wiki/Q11919402>
-  # Henriette Dorothea Prinzessin zu Oettingen-Oettingen, 1672-02-14 - 1728-05-18
-  gen:father <https://www.wikidata.org/wiki/Q9144277> ;
-  gen:mother <https://www.wikidata.org/wiki/Q3697531> .
-  # oo 1688-09-22 Georg August Samuel, Fürst von Nassau-Idstein, 1665-02-26 - 1721-10-26, https://www.wikidata.org/wiki/Q325089
+<https://www.wikidata.org/wiki/Q26791020>
+  # Christine Charlotte Alexandrine Egypta Bonaparte, 1798-10-19 - 1847-05-19
+  gen:father <https://www.wikidata.org/wiki/Q151098> ;
+  gen:mother <https://www.wikidata.org/wiki/Q250928> .
+  # oo 1824-07-20 Lord Dudley Coutts Stuart, 1803-01-11 – 1854-11-17, https://www.wikidata.org/wiki/Q6679196
+<https://www.wikidata.org/wiki/Q434077>
+  # Napoléon Joseph Charles Paul Bonaparte, 1822-09-09 - 1891-03-17
+  gen:father <https://www.wikidata.org/wiki/Q151087> ;
+  gen:mother <https://www.wikidata.org/wiki/Q236184> .
+  # oo Maria Clotilde di Savoia, 1843-03-02 - 1911-06-25 (savoyen.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q434077> , <https://www.wikidata.org/wiki/Q923098> ;
+	gen:startDate "1859-01-30" .
+
+<https://www.wikidata.org/wiki/Q1918987>
+  # Napoléon Victor Bonaparte, 1862-06-18 - 1926-05-03
+  # Prétendant au trône impérial français 1879-05-01
+  gen:father <https://www.wikidata.org/wiki/Q434077> ;
+  gen:mother <https://www.wikidata.org/wiki/Q923098> .
+  # oo Clémentine Princesse de Belgique, 1872-07-30 - 1955-03-08 (wettiner.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1918987> , <https://www.wikidata.org/wiki/Q261129> ;
+	gen:startDate "1910-11-14" .
+<https://www.wikidata.org/wiki/Q271988>
+  # Maria Letizia Bonaparte, 1866-11-20 - 1926-10-25
+  gen:father <https://www.wikidata.org/wiki/Q434077> ;
+  gen:mother <https://www.wikidata.org/wiki/Q923098> .
+  # oo 1888-09-11 Amedeo I di Savoia, Rey de España, 1845-05-30 - 1890-01-18, https://www.wikidata.org/wiki/Q32432 (savoyen.ttl)
+
+<https://www.wikidata.org/wiki/Q701093>
+  # Louis-Napoléon Bonaparte, 1914-01-23 - 1997-05-03
+  # Prétendant au trône impérial français 1926-05-03
+  gen:father <https://www.wikidata.org/wiki/Q1918987> ;
+  gen:mother <https://www.wikidata.org/wiki/Q261129> .
+  # oo Alix de Foresta, b. 1926-04-04, daughter of Albéric de Foresta, Comte de Foresta and Geneviève Fredet
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q701093> , <https://www.wikidata.org/wiki/Q303942> ;
+	gen:startDate "1949-08-16" .
+
+<https://www.wikidata.org/wiki/Q704776>
+  # Charles Marie Jérôme Victor Bonaparte, b. 1950-10-19
+  gen:father <https://www.wikidata.org/wiki/Q701093> ;
+  gen:mother <https://www.wikidata.org/wiki/Q303942> .
+  # oo Béatrice de Bourbon des Deux-Siciles, b. 1950-06-16 (capet.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q704776> , <https://www.wikidata.org/wiki/Q4925346> ;
+	gen:startDate "1978-12-19" .
+
+<https://www.wikidata.org/wiki/Q620337>
+  # Jean-Christophe Louis Ferdinand Alberic Bonaparte), b. 1986-07-11
+  # Prétendant au trône impérial français 1997-05-03
+  gen:father <https://www.wikidata.org/wiki/Q704776> ;
+  gen:mother <https://www.wikidata.org/wiki/Q4925346> .
+  # oo (civ) 2019-10-19 Olympia Gräfin von und zu Arco-Zinneberg, b. 1988-01-04
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q620337> , <https://www.wikidata.org/wiki/Q71582125> ;
+	gen:startDate "2019-10-17" .
 
 # ----
-<https://www.wikidata.org/wiki/Q61789>
-  # Maria Augusta Prinzessin von Thurn und Taxis, 1706-08-11 - 1756-02-01
-  gen:father <https://www.wikidata.org/wiki/Q318089> ; # Anselm Franz, Fürst von Thurn and Taxis
-  gen:mother <https://www.wikidata.org/wiki/Q6423363> . # Maria Ludovika Anna von Lobkowicz
-  # oo 1727-05-01 Karl Alexander, Herzog von Württemberg, 1684-01-24 - 1737-03-12, https://www.wikidata.org/wiki/Q61946
+<https://www.wikidata.org/wiki/Q250928>
+  # Catherine Christine Elenore Boyer, 1773-07-06 - 1800-05-14
+  gen:father <https://www.wikidata.org/wiki/Q75392841> ; # Pierre André Boyer
+  gen:mother <https://www.wikidata.org/wiki/Q75304892> . # Rosalie Fabre
+  # oo 1794-05-04 Lucien Bonaparte, Principe di Canino e Musignano, 1775-03-21 - 1840-06-29, https://www.wikidata.org/wiki/Q151098
+
+# ====
+
+# ----
+<https://www.wikidata.org/wiki/Q93499214>
+  # Donna Magdalena Fausta Angela (Madeleine) de Creus y Ximenes, d. 1852-12-27
+  # Gräfin von Helfenstein 1841
+  gen:father <https://www.wikidata.org/wiki/Q76363252> ; # Don Pedro de Creus y Ximenes
+  gen:mother <https://www.wikidata.org/wiki/Q76363254> . # Magdalena Soler
+  # oo 1810-01 Sir Samuel Ford („Samford“) Whittingham, 1772-01-29 – 1841-01-19, https://www.wikidata.org/wiki/Q1826672
+  # oo 1848-04-26 Paul Prinz von Württemberg, 1785-01-19 - 1852-04-16; https://www.wikidata.org/wiki/Q213625
+# ----
+#<https://www.wikidata.org/wiki/Q1826672>
+  # Sir Samuel Ford („Samford“) Whittingham, 1772-01-29 – 1841-01-19
+  # son of William Whittingham
+  # oo Donna Magdalena Fausta Angela (Madeleine) de Creus y Ximenes, d. 1852-12-27
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1826672> , <https://www.wikidata.org/wiki/Q93499214> ;
+	gen:startDate "1810-01" .
 
 # ----
 <https://www.wikidata.org/wiki/Q265865>
@@ -385,3 +1607,155 @@
   gen:father <https://www.wikidata.org/wiki/Q61611924> ; # László Rhédey de Kis-Rhéde
   gen:mother <https://www.wikidata.org/wiki/Q61611926> . # Ágnes Inczédy de Nagy-Várad
   # oo 1835-05-02 Alexander Paul Ludwig Konstantin Prinz von Württemberg, 1804-09-09 - 1885-07-04, https://www.wikidata.org/wiki/Q61155
+
+# ----
+<https://www.wikidata.org/wiki/Q10393640>
+  # Wilhelmine Freiin von Tunderfeld-Rhodis, 1777-01-18 - 1822-02-06
+  gen:father <https://www.wikidata.org/wiki/Q75391075> . # Karl August Freiherr von Tunderfeldt-Rhodis
+  # and Therese Wilhelmine Henriette Freiin Schilling von Canstatt
+  # oo 1800-08-23 Wilhelm Friedrich Philipp Herzog von Württemberg, 1761-12-27 - 1830-08-10, https://www.wikidata.org/wiki/Q72575
+
+# ----
+<https://www.wikidata.org/wiki/Q109830620>
+  # Karl Adam Traugott von Wuthenau, 1791-01-31 - 1862-12-18
+  gen:father <https://www.wikidata.org/wiki/Q26207095> ; # Ludwig Adam Christian von Wuthenau
+  gen:mother <https://www.wikidata.org/wiki/Q109830624> . # Susanna Maximiliane Augusta von Könneritz
+  # oo Isidora Gräfin von Hohenthal, 1805-01-30 - 1849-02-09 (schaffgotsch.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q109830620> , <https://www.wikidata.org/wiki/Q109830625> ;
+	gen:startDate "1824-06-09" .
+
+<https://www.wikidata.org/wiki/Q75391093>
+  # Maximilian Heinrich Adam Graf von Wuthenau-Hohenthurm, 1834-06-21 - 1912-03-20
+  gen:father <https://www.wikidata.org/wiki/Q109830620> ;
+  gen:mother <https://www.wikidata.org/wiki/Q109830625> .
+  # oo Pauline Gräfin von Württemberg, 1836-08-08 - 1911-10-06
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75391093> , <https://www.wikidata.org/wiki/Q75391090> ;
+	gen:startDate "1857-04-25" .
+
+<https://www.wikidata.org/wiki/Q17322768>
+  # Carl Adam Ludwig Johann Traugott Graf von Wuthenau-Hohenthurm, 1863-06-26 - 1946-11-13
+  gen:father <https://www.wikidata.org/wiki/Q75391093> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75391090> .
+  # oo Maria Antonia Gräfin Chotek von Chotkowa und Wognin, 1874-05-12 - 1930-06-13 (kinsky.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q17322768> , <https://www.wikidata.org/wiki/Q75299470> ;
+	gen:startDate "1893-09-27" .
+
+<https://www.wikidata.org/wiki/Q75383492>
+  # Wilhelmine Pauline Sidonie Marie Julitta von Wuthenau-Hohenthurm, 1895-07-30 - 1983-12-11
+  gen:father <https://www.wikidata.org/wiki/Q17322768> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75299470> .
+  # oo 1919-08-12 Friedrich Graf Hoyos Freiherr zu Stichsenstein, 1876-11-17 - 1951-12-09, https://www.wikidata.org/wiki/Q75383491
+<https://www.wikidata.org/wiki/Q75299473>
+  # Carl Adam Bohuslaw Maximilian Leopold Maria von Wuthenau Graf von Wuthenau-Hohenthurm, 1896-11-15 - 1972-12-10
+  gen:father <https://www.wikidata.org/wiki/Q17322768> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75299470> .
+  # oo Marie Henriette Gräfin von Waldburg zu Wolfegg und Waldsee, 1902-09-17 - 1980-05-09
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75299473> , <https://www.wikidata.org/wiki/Q75299474> ;
+	gen:startDate "1922-02-23" .
+<https://www.wikidata.org/wiki/Q75299475>
+  # Friedrich Carl Alexander Severin Antonius Maria Graf von Wuthenau-Hohenthurm, 1897-10-19 - 1983-01-04
+  gen:father <https://www.wikidata.org/wiki/Q17322768> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75299470> .
+  # oo Anna Gräfin von Nostitz-Rieneck, 1905-08-23 - 1934-02-10
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75299475> , <https://www.wikidata.org/wiki/Q75299477> ;
+	gen:startDate "1928-06-05" .
+
+<https://www.wikidata.org/wiki/Q75305449>
+  # Sidonie von Wuthenau-Hohenthurm, 1923-12-31 - 1993-03-20
+  gen:father <https://www.wikidata.org/wiki/Q75299473> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75299474> .
+  # oo 1949-07-19 Hans Ulrich Graf Schaffgotsch genannt Semperfrei von und zu Kynast und Greiffenstein, 1927-07-10 - 2009-08-03, https://www.wikidata.org/wiki/Q75305450
+
+# ----
+<https://www.wikidata.org/wiki/Q75391168>
+  # Parzival Rudolf Graf von Enzenberg zum Freyen und Jöchelsthurn, 1835-08-25 - 1874-01-01
+  gen:father <https://www.wikidata.org/wiki/Q94937079> . #  Franz Joseph III. von Enzenberg zum Freyen- und Jöchelsthurn, 1802-02-14 - 1879-09-28
+  # and oo Ottilie von Tannenberg zu Tratzberg, 1801-09-30 - 1874-05-24
+  # oo Augusta Eugenie Prinzessin von Urach, 1842-12-27 - 1916-03-11
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75391168> , <https://www.wikidata.org/wiki/Q3629555> ;
+	gen:startDate "1865-10-04" .
+<#Hugo_von_Enzenberg>
+  # Graf Hugo von Enzenberg zum Freyen- und Jöchelsthurn, 1838-11-22 - 1922-12-12
+  gen:father <https://www.wikidata.org/wiki/Q94937079> .
+  # and Ottilie von Tannenberg zu Tratzberg
+  # oo Antonie von Reinisch zu Haderburg, 1845-06-12 - 1930-02-21
+  []
+    gen:spouse <#Hugo_von_Enzenberg> , <#Antonie_von_Reinisch> .
+
+<https://www.wikidata.org/wiki/Q75299501>
+  # Rudolf Josef Franz Wilhelm Parzival Graf von Enzenberg zum Freyen und Jöchelsthurn, 1868-05-19 - 1932-12-13
+  gen:father <https://www.wikidata.org/wiki/Q75391168> ;
+  gen:mother <https://www.wikidata.org/wiki/Q3629555> .
+  # oo Donna Caroline Contessa Lucchesi-Palli, 1872-03-02 - 1905-11-04
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75299501> , <https://www.wikidata.org/wiki/Q75299502> ;
+	gen:startDate "1899-04-20" .
+  # oo Maria Gräfin zu Hardegg auf Glatz und im Machlande, 1875-07-16 - 1942-06-11
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75299501> , <https://www.wikidata.org/wiki/Q75299503> ;
+	gen:startDate "1909-07-19" .
+<https://www.wikidata.org/wiki/Q75369071>
+  # Georg Sieghard Graf von Enzenberg zum Freyen- und Jöchelsthurn, 1875-08-31 - 1966-01-10
+  gen:father <#Hugo_von_Enzenberg> ;
+  gen:mother <#Antonie_von_Reinisch> .
+  # oo Donna Maria Francesca Lucchesi Palli dei Principi di Campofranco, 1894-08-08 - 1986-06-02
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75369071> , <https://www.wikidata.org/wiki/Q75369068> ;
+	gen:startDate "1925-11-11" .
+
+<https://www.wikidata.org/wiki/Q75299525>
+  # Eugenie Augusta Maria Gräfin von Enzenberg zum Freyen und Jöchelsthurn, 1900-03-20 - 1988-02-07
+  gen:father <https://www.wikidata.org/wiki/Q75299501> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75299502> .
+  # oo 1922-06-12 Karl Graf von Blanckenstein, 1891-06-30 - 1947-04-13, https://www.wikidata.org/wiki/Q75299528
+<https://www.wikidata.org/wiki/Q75369075>
+  # Antonia Sidonie Ottilie Marie (Gräfin von) Enzenberg (zum Freyen- und Jöchelsthurn), b. 1927-11-17
+  gen:father <https://www.wikidata.org/wiki/Q75369071> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75369068> .
+  # oo 1952-04-22 Zeno Goëss, 1925-06-01 - 1974-06-24, https://www.wikidata.org/wiki/Q75368714
+<https://www.wikidata.org/wiki/Q75369079>
+  # _Maria Theresia_ Henriette Catharina (Gräfin von) Enzenberg (zum Freyen- und Jöchelsthurn), b. 1930-11-14
+  gen:father <https://www.wikidata.org/wiki/Q75369071> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75369068> .
+  # oo 1960-02-27 (rel 1960-05-02) Maximilian Graf von Spee, 1928-09-02 - 2009-09-01, https://www.wikidata.org/wiki/Q75369082
+# ----
+<https://www.wikidata.org/wiki/Q75299502>
+  # Donna Caroline Contessa Lucchesi-Palli, 1872-03-02 - 1905-11-04
+  gen:father <https://www.wikidata.org/wiki/Q3848736> ; # Don Mario Adinolfo Lucchesi-Palli 10° principe di Campofranco 5°duca della Grazia
+  gen:mother <https://www.wikidata.org/wiki/Q75369058> . # Donna Nicoletta Lucrezia Ruffo Bagnara dei Principi di Sant’Antimo
+  # oo 1899-04-20 Rudolf Graf von Enzenberg zum Freyen und Jöchelsthurn, 1868-05-19 - 1932-12-13, https://www.wikidata.org/wiki/Q75299501
+
+<https://www.wikidata.org/wiki/Q75369068>
+  # Donna Maria Francesca Lucchesi Palli dei Principi di Campofranco, 1894-08-08 - 1986-06-02
+  gen:father <https://www.wikidata.org/wiki/Q75369060> ; # Don Carlo Lucchesi-Palli, 12º principe di Campofranco, 7° Duca della Grazia
+  gen:mother <https://www.wikidata.org/wiki/Q75369061> . # Sidonie Gräfin von Fünfkirchen
+  # oo 1925-11-11 Georg Sieghard Graf von Enzenberg zum Freyen- und Jöchelsthurn, 1875-08-31 - 1966-01-10, https://www.wikidata.org/wiki/Q75369071
+
+# ----
+<https://www.wikidata.org/wiki/Q75391184>
+  # Rosemary Blackadder, 1901-01-20 - 1975-06-06
+  gen:father <https://www.wikidata.org/wiki/Q75391194> ; # John William Blackadder
+  gen:mother <https://www.wikidata.org/wiki/Q75391196> . # Anna Wilson
+  # oo 1931-06-01 (div 1943) Albrecht Prinz von Urach, 1903-10-08 - 1969-12-11, https://www.wikidata.org/wiki/Q4712679
+
+# ----
+<https://www.wikidata.org/wiki/Q75391186>
+  # Ute Waldschmidt, 1922-09-11 - 1984-04-25
+  gen:father <https://www.wikidata.org/wiki/Q696478> ; # Arnold Waldschmidt
+  gen:mother <https://www.wikidata.org/wiki/Q2019731> . # Olga Waldschmidt
+  # oo 1943-09-08 (div 1960) Albrecht Prinz von Urach, 1903-10-08 - 1969-12-11, https://www.wikidata.org/wiki/Q4712679
+
+# ----
+<https://www.wikidata.org/wiki/Q105817300>
+  # Anna Sabine von Hedwiger, 1676-04-20 - 1735-11-09
+  # Gräfin von Sponeck 1701
+  gen:father <https://www.wikidata.org/wiki/Q104414636> ; # Johann Georg Hedwiger
+  # and Katharina Clos or
+  gen:mother <https://www.wikidata.org/wiki/Q104414637> . # Anne Rosine von Pogrell
+  # oo 1695-06-01 (div 1714-10-06) Leopold Eberhard, Herzog von Württemberg-Mömpelgard, 1670-05-21 - 1723-03-25, https://www.wikidata.org/wiki/Q959764

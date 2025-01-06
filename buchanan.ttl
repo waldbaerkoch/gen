@@ -6,29 +6,40 @@
 
 # Sir Maurice Buchanan, 9th of Buchanan, d. 1290~
 
-# Sir Maurice Buchanan, 10th of Buchanan, 1290~ - 1371a
-# oo Margaret Menteith, b. 1300~, daughter of Sir Walter Menteith, of Rusky,
+#<https://www.wikidata.org/wiki/Q76313878>
+  # Sir Maurice Buchanan, 10th of Buchanan, 1290~ - 1371a
+  # oo Margaret Menteith, b. 1300~, daughter of Sir Walter Menteith, of Rusky
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76313878> , <https://www.wikidata.org/wiki/Q76285130> .
 
-#<https://www.wikidata.org/wiki/Q75580994>
-  # Sir Walter Buchanan, 11th of Buchanan, Abt 1338~ - 1373a
+<https://www.wikidata.org/wiki/Q75580994>
+  # Sir Walter Buchanan, 11th of Buchanan, 1338~ - 1373a
+  gen:father <https://www.wikidata.org/wiki/Q76313878> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76285130> .
   # oo Margaret Buchanan, b. 1352~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75580994> , <https://www.wikidata.org/wiki/Q76323514> .
 
 <https://www.wikidata.org/wiki/Q75388113>
   # Sir Walter Buchanan, 12th of Buchanan, d. 1476
-  gen:father <https://www.wikidata.org/wiki/Q75580994> .
+  gen:father <https://www.wikidata.org/wiki/Q75580994> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76323514> .
   # oo Lady Isabella Stewart, b. 1405~
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75388113> , <https://www.wikidata.org/wiki/Q75388111> .
 <#John_Buchanan,_1st_of_Leny> # -> Buchanan of Leny
   # John Buchanan, 1st of Leny
-  gen:father <#Sir_Walter_Buchanan,_11th_of_Buchanan> .
+  gen:father <https://www.wikidata.org/wiki/Q75580994> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76323514> .
 
-<#Patrick_Buchanan,_13th_of_Buchanan>
+<https://www.wikidata.org/wiki/Q76151279>
   # Patrick Buchanan, 13th of Buchanan, d. 1477b
   gen:father <https://www.wikidata.org/wiki/Q75388113> ;
   gen:mother <https://www.wikidata.org/wiki/Q75388111> .
   # oo Jonet Cunninghame
-<#Thomas_Buchanan,_of_Gartincaber,_Drumikill_and_Carbeth> # -> Buchanan of Carbeth
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76151279> , <https://www.wikidata.org/wiki/Q76323517> .
+<https://www.wikidata.org/wiki/Q76323515> # -> Buchanan of Carbeth
   # Thomas Buchanan, of Gartincaber, Drumikill and Carbeth, 1441~ - 1495a
   gen:father <https://www.wikidata.org/wiki/Q75388113> ;
   gen:mother <https://www.wikidata.org/wiki/Q75388111> .
@@ -37,67 +48,82 @@
   gen:father <https://www.wikidata.org/wiki/Q75580994> .
   # oo 1423~ Sir Andrew Gray of Broxmouth, 1355 - 1441/1445, https://www.wikidata.org/wiki/Q42159812
 
-<#Sir_Walter_Buchanan,_14th_of_Buchanan>
-  # Sir Walter Buchanan, 14th of Buchanan, 1443~ - 1526
-  gen:father <#Patrick_Buchanan,_13th_of_Buchanan> ;
-  gen:mother <#Jonet_Cunninghame> .
+<https://www.wikidata.org/wiki/Q75275140>
+  # Sir Walter Buchanan, 14th of Buchanan, 1443~ - 1526-09
+  gen:father <https://www.wikidata.org/wiki/Q76151279> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76323517> .
   # oo Isabella Graham
   []
-    gen:spouse <#Sir_Walter_Buchanan,_14th_of_Buchanan> , <graham.ttl#Isabella_Graham> .
+    gen:spouse <https://www.wikidata.org/wiki/Q75275140> , <https://www.wikidata.org/wiki/Q76112863> .
 
 <#Patrick_Buchanan,_younger_of_Buchanan>
-  # Patrick Buchanan, younger of Buchanan, 1458~ - 1513-09-09
-  gen:father <#Sir_Walter_Buchanan,_14th_of_Buchanan> ;
-  gen:mother <graham.ttl#Isabella_Graham> .
+  # Patrick Buchanan, younger of Buchanan, 1458~/1470 - 1513-09-09
+  gen:father <https://www.wikidata.org/wiki/Q75275140> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76112863> .
   # oo Margaret Campbell
   []
     gen:spouse <#Patrick_Buchanan,_younger_of_Buchanan> , <campbell.ttl#Margaret_Campbell_1> ;
 	gen:startDate "1486" .
+<https://www.wikidata.org/wiki/Q75275139>
+  # Margaret Buchanan
+  gen:father <https://www.wikidata.org/wiki/Q75275140> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76112863> .
+  # oo Alexander Graham, 2nd Earl of Menteith, 1472-05-06 - 1537~, https://www.wikidata.org/wiki/Q4718993
 
 <#George_Buchanan,_15th_of_Buchanan>
-  # George Buchanan, 15th of Buchanan, 1506 - 1561
+  # George Buchanan, 15th of Buchanan, 1490/1506 - 1560-02-15/1561
   gen:father <#Patrick_Buchanan,_younger_of_Buchanan> ;
   gen:mother <campbell.ttl#Margaret_Campbell_1> .
   # oo 1519~ Margaret Edmonstone, 1500 - 1530, daughter of Sir Archibald Edmonstone, 3rd of Duntreath (1450~ - 1502) and Janet Schaw [Shaw]
 
 <#John_Buchanan,_younger_of_Buchanan>
-  # John Buchanan, younger of Buchanan
+  # John Buchanan, younger of Buchanan, 1520-08-30 - 1561-03-27
   gen:father <#George_Buchanan,_15th_of_Buchanan> ;
   gen:mother <#Margaret_Edmonstone> .
-  # oo Elizabeth Livingston, d. 1552b
+  # oo Elizabeth Livingston, d. 1552b / 1545~ - 1599-10-04
   []
     gen:spouse <#John_Buchanan,_younger_of_Buchanan> , <livingston.ttl#Elizabeth_Livingston_(died_1552b)> ;
 	gen:startDate "1543-02-03a/1544b" .
-<#Janet_Buchanan>
+#<#Janet_Buchanan_(died_1595)>
   # Janet Buchanan, 1520 - 1595
-  gen:father <#George_Buchanan,_15th_of_Buchanan> ;
-  gen:mother <#Margaret_Edmonstone> .
+#  gen:father <#George_Buchanan,_15th_of_Buchanan> ;
+#  gen:mother <#Margaret_Edmonstone> .
+  # oo Thomas Buchanan, 3rd of Carbeth, 1500~ - 1560-02-15, https://www.wikidata.org/wiki/Q76321610
 
-<#Sir_George_Buchanan,_16th_of_Buchanan>
+<https://www.wikidata.org/wiki/Q75273063>
   # Sir George Buchanan, 16th of Buchanan, 1540~ - 1599b
   gen:father <#John_Buchanan,_younger_of_Buchanan> ;
   gen:mother <livingston.ttl#Elizabeth_Livingston_(died_1552b)> .
-  # oo Mary Graham
+  # oo Lady Mary/Margaret Graham
   []
-    gen:spouse <#Sir_George_Buchanan,_16th_of_Buchanan> , <graham.ttl#Lady_Mary_Graham> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75273063> , <https://www.wikidata.org/wiki/Q87439910> ;
 	gen:startDate "1560~" .
 
 <#Sir_John_Buchanan,_17th_of_Buchanan>
   # Sir John Buchanan, 17th of Buchanan
-  gen:father <#Sir_George_Buchanan,_16th_of_Buchanan> ;
-  gen:mother <graham.ttl#Lady_Mary_Graham> .
-  # oo Anabella (Margaret) Erskine, daughter of Adam Erskine, Lord Commendator of Cambuskenneth (son of Thomas Erskine, Master of Erskine (d. 1551-10a, son of Sir John Erskine, 5th Lord Erskine)) and Margaret Drummond
+  gen:father <https://www.wikidata.org/wiki/Q75273063> ;
+  gen:mother <https://www.wikidata.org/wiki/Q87439910> .
+  # oo Anabella (Margaret) Erskine
+  []
+    gen:spouse <#Sir_John_Buchanan,_17th_of_Buchanan> , <erskine.ttl#Anabella_Erskine> .
+<https://www.wikidata.org/wiki/Q75273062>
+  # Helen Buchanan
+  gen:father <https://www.wikidata.org/wiki/Q75273063> ;
+  gen:mother <https://www.wikidata.org/wiki/Q87439910> .
+  # oo Sir Alexander Colquhoun of Luss, https://www.wikidata.org/wiki/Q75253435 (erskine.ttl)
 
-<#Sir_George_Buchanan,_18th_of_Buchanan>
+<https://www.wikidata.org/wiki/Q5537386>
   # Sir George Buchanan, 18th of Buchanan, d. 1651
-  gen:father <#Sir_John_Buchanan,_17th_of_Buchanan> .
-  # and Anabella (Margaret) Erskine
+  gen:father <#Sir_John_Buchanan,_17th_of_Buchanan> ;
+  gen:mother <erskine.ttl#Anabella_Erskine> .
   # oo Elizabeth Preston, daughter of Sir George Preston, of Craigmillar (1560~ - 1625)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5537386> , <https://www.wikidata.org/wiki/Q76304894> .
 
 <#John_Buchanan,_19th_of_Buchanan>
   # John Buchanan, 19th of Buchanan, 1630~ - 1682-12
-  gen:father <#Sir_George_Buchanan,_18th_of_Buchanan> .
-  # and Elizabeth Preston
+  gen:father <https://www.wikidata.org/wiki/Q5537386> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76304894> .
   # oo Mary Erskine, 1630~ - 1675
   []
     gen:spouse <#John_Buchanan,_19th_of_Buchanan> , <erskine.ttl#Mary_Erskine_(died_1675)> ;
@@ -107,82 +133,214 @@
   # Elizabeth Buchanan, 1651-05-25b - 1693~
   gen:father <#John_Buchanan,_19th_of_Buchanan> ;
   gen:mother <erskine.ttl#Mary_Erskine_(died_1675)> .
-  # oo 1680b James Stewart, 4th of Ardvorlich, Governer of Doune Castle (d. 1698-12)
+  # oo 1680b James Stewart, 4th of Ardvorlich, Governer of Doune Castle, d. 1698-12, son of https://www.wikidata.org/wiki/Q117268780 Robert Stewart, 3rd of Ardvorlich and https://www.wikidata.org/wiki/Q117268790 Jean Drummond
+
+
+<#John_Buchanan,_in_Bochastel>
+  # John Buchanan, in/of Bochastel (Mochastel), 1560~ - 1590a
+  gen:father <#Alexander_Buchanan,_Bochastel> .
+
+<#Robert_Buchanan,_in_Bochastel>
+  # Robert Buchanan, in Bochastel (Mochastel) and Auchlessie, b. 1580~
+  gen:father <#John_Buchanan,_in_Bochastel> .
+
+<#Walter_Buchanan,_of_Bochastel>
+  # Walter (Roy) Buchanan, of Bochastel (Mochastel) and Auchlessie, 1600~ - 1637-04-14b
+  gen:father <#Robert_Buchanan,_in_Bochastel> .
+  # oo Janet Buchanan
+  []
+    gen:spouse <#Walter_Buchanan,_of_Bochastel> , <#Janet_Buchanan> .
+
+<#Sir_Arthur_Buchanan,_of_Auchlessie>
+  # Sir Arthur Buchanan, of Auchlessie, b. 1620~
+  gen:father <#Walter_Buchanan,_of_Bochastel> ;
+  gen:mother <#Janet_Buchanan> .
+  # oo Jean Drummond, d. 1663
+  []
+    gen:spouse <#Sir_Arthur_Buchanan,_of_Auchlessie> , <#Jean_Drummond> ;
+	gen:startDate "1659~" .
+
+<#James_Buchanan,_of_Auchlessie>
+  # James Buchanan, of Auchlessie
+  gen:father <#Sir_Arthur_Buchanan,_of_Auchlessie> ;
+  gen:mother <#Jean_Drummond> .
+  # oo Elizabeth Stewart
+  []
+    gen:spouse <#James_Buchanan,_of_Auchlessie> , <#Elizabeth_Stewart> .
+
+<#Duncan_Buchanan,_of_Auchlessie>
+  # Duncan Buchanan, of Auchlessie
+  gen:father <#James_Buchanan,_of_Auchlessie> ;
+  gen:mother <#Elizabeth_Stewart> .
+  # oo Grizel Robertson
+  []
+    gen:spouse <#Duncan_Buchanan,_of_Auchlessie> , <#Grizel_Robertson> .
+
+<#John_Buchanan,_of_Auchlessie_and_Arnpryor>
+  # John Buchanan, of Auchlessie and Arnpryor, d. 1817
+  gen:father <#Duncan_Buchanan,_of_Auchlessie> ;
+  gen:mother <#Grizel_Robertson> .
+  # oo Murray Edmonstone, daughter of Patrick Edmonston, of Newton and Helen Crawford
+  []
+    gen:spouse <#John_Buchanan,_of_Auchlessie_and_Arnpryor> , <Murray_Edmonstone> ;
+	gen:startDate "1764-11-03" .
+
+<#Alexander_Buchanan,_of_Arnpryor>
+  # Alexander Buchanan, of Arnpryor (Arnprior), 1770-01-23 - 1845
+  gen:father <#John_Buchanan,_of_Auchlessie_and_Arnpryor> ;
+  gen:mother <Murray_Edmonstone> .
+
+<https://www.wikidata.org/wiki/Q75727265>
+  # Alexander Buchanan of Arnprior and Strathyre, d. 1848
+  gen:father <#Alexander_Buchanan,_of_Arnpryor> .
+
+<https://www.wikidata.org/wiki/Q75727264>
+  # Catherine Elizabeth Grace Buchanan, d. 1932-01-13
+  gen:father <https://www.wikidata.org/wiki/Q75727265> .
+  # oo 1869-01-14 John Baillie Buchanan-Baillie-Hamilton, 1837-01-20 - 1908-03-20, https://www.wikidata.org/wiki/Q75727262 (hamilton.ttl)
 
 
 # Buchanan of Carbeth
-<#Thomas_Buchanan,_of_Gartincaber,_Drumikill_and_Carbeth>
+<https://www.wikidata.org/wiki/Q76323515>
   # Thomas Buchanan, of Gartincaber, Drumikill and Carbeth, 1441~ - 1495a
   gen:father <https://www.wikidata.org/wiki/Q75388113> ;
   gen:mother <https://www.wikidata.org/wiki/Q75388111> .
 
-<#Thomas_Buchanan,_1st_of_Carbeth>
+<https://www.wikidata.org/wiki/Q76323521>
   # Thomas Buchanan, 1st of Carbeth, d. 1493~
-  gen:father <#Thomas_Buchanan,_of_Gartincaber,_Drumikill_and_Carbeth> .
+  gen:father <https://www.wikidata.org/wiki/Q76323515> .
 
-<#John_Buchanan,_in_Easter_Ballat>
+<https://www.wikidata.org/wiki/Q76321611>
   # John Buchanan, in Easter Ballat, b. 1475
-  gen:father <#Thomas_Buchanan,_1st_of_Carbeth> .
+  gen:father <https://www.wikidata.org/wiki/Q76323521> .
 
-<#Thomas_Buchanan,_3rd_of_Carbeth>
+<https://www.wikidata.org/wiki/Q76321610>
   # Thomas Buchanan, 3rd of Carbeth, 1500~ - 1560-02-15
-  gen:father <#John_Buchanan,_in_Easter_Ballat> .
-  # oo Janet Buchanan, 1520 - 1595
+  gen:father <https://www.wikidata.org/wiki/Q76321611> .
+  # oo Janet Douglas, 1520 - 1595
   []
-    gen:spouse <#Thomas_Buchanan,_3rd_of_Carbeth> , <#Janet_Buchanan> .
+    gen:spouse <https://www.wikidata.org/wiki/Q76321610> , <#Janet_Douglas> .
 
 <#John_Buchanan,_4th_of_Carbeth,_1st_of_Gartincaber>
   # John Buchanan, 4th of Carbeth, 1st of Gartincaber, 1545-02-03 - 1619
-  gen:father <#Thomas_Buchanan,_3rd_of_Carbeth> ;
-  gen:mother <#Janet_Buchanan> .
-  # oo 1577 Elizabeth Livingston, 1545 - 1599-10-04
+  gen:father <https://www.wikidata.org/wiki/Q76321610> ;
+  gen:mother <#Janet_Douglas> .
+  # oo Elizabeth Livingston, 1545 - 1599-10-04
+  []
+    gen:spouse <#John_Buchanan,_4th_of_Carbeth,_1st_of_Gartincaber> , <#Elizabeth_Livingston> ;
+	gen:startDate "1577" .
 
 <#George_Buchanan,_2nd_of_Gartincaber>
   # George Buchanan, 2nd of Gartincaber, 1588~ - 1629~
-  gen:father <#John_Buchanan,_4th_of_Carbeth,_1st_of_Gartincaber> .
-  # oo 1605 Elizabeth Leckie, 1595 - 1670, daughter of of Walter Leckie, of Disheour and Anna Napier (b. 1650)
+  # buried Devoran, Co. Tyrone, Ireland
+  gen:father <#John_Buchanan,_4th_of_Carbeth,_1st_of_Gartincaber> ;
+  gen:mother <#Elizabeth_Livingston> .
+  # oo Elizabeth Leckie, 1595 - 1670, daughter of of Walter Leckie, of Disheour and Anna Napier (b. 1650)
+  []
+    gen:spouse <#George_Buchanan,_2nd_of_Gartincaber> , <#Elizabeth_Leckie> ;
+	gen:startDate "1605" .
 
 <#John_Buchanan,_1st_of_Blairlusk>
-  # John Buchanan, 1st of Blairlusk, 1614 - 1662b
-  gen:father <#George_Buchanan,_2nd_of_Gartincaber> .
-  # and Elizabeth Leckie
+  # John Buchanan, 1st of Blairlusk, 1614 - 1662b / 1628 (Buchanan, Stirlingshire) - 1682-12 (Blair Lush, County Tyrone)
+  gen:father <#George_Buchanan,_2nd_of_Gartincaber> ;
+  gen:mother <#Elizabeth_Leckie> .
   # oo Jean Livingston, 1605 - 1653
+  []
+    gen:spouse <#John_Buchanan,_1st_of_Blairlusk> , <#Jean_Livingston> .
 <#???_Buchanan_(born_1622)>
   # ??? Buchanan, b. 1622
-  gen:father <#George_Buchanan,_2nd_of_Gartincaber> .
-  # and Elizabeth Leckie
+  gen:father <#George_Buchanan,_2nd_of_Gartincaber> ;
+  gen:mother <#Elizabeth_Leckie> .
+  # oo Andrew Buchanan, of Gartacharne (Gartachairn), 1615~ - 1660a, #Andrew_Buchanan,_of_Gartacharne
 
 <#George_Buchanan,_2nd_of_Blairlusk,_later_of_Devoran>
-  # George Buchanan, 2nd of Blairlusk, later of Devoran, b. 1648
-  gen:father <#John_Buchanan,_1st_of_Blairlusk> .
+  # George Buchanan, 2nd of Blairlusk, later of Devoran, 1648 (Kilmarnock, East Ayrshire) - 1720
+  gen:father <#John_Buchanan,_1st_of_Blairlusk> ;
+  gen:mother <#Jean_Livingston> .
   # oo Elizabeth Mayne, 1654 - 1723
   []
     gen:spouse <#George_Buchanan,_2nd_of_Blairlusk,_later_of_Devoran> , <#Elizabeth_Mayne> ;
 	gen:startDate "1675" .
 
 <#John_Buchanan_(born_1670~)>
-  # John Buchanan, b. 1670~
+  # John Buchanan, 1670~/1680~ - 1728-01-10
   # in County Tyrone
   gen:father <#George_Buchanan,_2nd_of_Blairlusk,_later_of_Devoran> ;
   gen:mother <#Elizabeth_Mayne> .
-  # oo Catherine Black
+  # oo Catherine Black, 1680 - 1774
   []
     gen:spouse <#John_Buchanan_(born_1670~)> , <#Catherine_Black> ;
 	gen:startDate "1703" .
-<#Thomas_Buchanan,_1st_of_Ramelton>
+<#Thomas_Buchanan,_1st_of_Ramelton> # -> Ramelton
   # Thomas Buchanan, 1st of Ramelton, 1680 - 1748
   gen:father <#George_Buchanan,_2nd_of_Blairlusk,_later_of_Devoran> ;
   gen:mother <#Elizabeth_Mayne> .
-  # oo 1700 Jean ???, 1680 - 1747
 
 <#John_Buchanan_(born_1704)>
-  # John Buchanan, b. 1704
+  # John Buchanan, 1704 - 1774-01-13
   gen:father <#John_Buchanan_(born_1670~)> ;
   gen:mother <#Catherine_Black> .
   # oo Jane Nixon, d. 1736
   []
     gen:spouse <#John_Buchanan_(born_1704)> , <#Jane_Nixon> ;
 	gen:startDate "1735" .
+
+<#John_Buchanan_(died_1820)>
+  # John Buchanan, 1736 - 1820-10-13
+  # buried Donaghanie Churchyard, Omagh, Co. Tyrone, Ireland
+  gen:father <#John_Buchanan_(born_1704)> ;
+  gen:mother <#Jane_Nixon> .
+  # oo Sarah Sproule, 1751~ - 1822-04-30
+  []
+    gen:spouse <#John_Buchanan_(died_1820)> , <#Sarah_Sproule> ;
+	gen:startDate "1770" .
+
+<https://www.wikidata.org/wiki/Q52829858>
+  # James Buchanan, 1772-02-01 - 1851-10-10
+  # Strathroy, Omagh, County Tyrone, Northern Ireland - Montreal, Quebec
+  # British Consul to New York 1816 - 1843
+  gen:father <#John_Buchanan_(died_1820)> ;
+  gen:mother <#Sarah_Sproule> .
+  # oo Elizabeth Clarke, 1779-11-13 - 1852-02-01, daughter of James Clarke and Elizabeth Stockdale
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q52829858> , <#Elizabeth_Clarke> ;
+	gen:startDate "1798-12-28" .
+<#John_Buchanan,_of_Lisnamallared>
+  # John Buchanan, of Lisnamallared, 1779 - 1842-01-12
+  # buried Donaghanie Churchyard, Omagh, Co. Tyrone, Ireland
+  gen:father <#John_Buchanan_(died_1820)> ;
+  gen:mother <#Sarah_Sproule> .
+  # oo Mary Jane Blacker, d. 1857-01-06
+  []
+    gen:spouse <#John_Buchanan,_of_Lisnamallared> , <#Mary_Jane_Blacker> ;
+	gen:startDate "1820-04" .
+<#Jane_Buchanan>
+  # Jane Buchanan, b. 1788
+  gen:father <#John_Buchanan_(died_1820)> ;
+  gen:mother <#Sarah_Sproule> .
+  # oo James Robinson, 1786 - 1875, #James_Robinson
+<#Sarah_Caroline_Buchanan>
+  # Sarah Caroline Buchanan, 1793 - 1862-11-16
+  gen:father <#John_Buchanan_(died_1820)> ;
+  gen:mother <#Sarah_Sproule> .
+  # oo 1812-03-30 Joseph Orr, d. 1826-05-05-/06, #Joseph_Orr
+  # oo 1928-09-23 James Marks
+
+<#Jane_Georgina_Buchanan>
+  # Jane Georgina Buchanan, 1829-01-13 - 1885-11-17
+  # New York - St. Catharines, Niagara
+  gen:father <https://www.wikidata.org/wiki/Q52829858> ;
+  gen:mother <#Elizabeth_Clarke> .
+  # oo 1852-09-16 Joseph Orr Robinson, 1816-08-18 - 1898-04-13, #Joseph_Orr_Robinson
+
+
+# Ramelton
+<#Thomas_Buchanan,_1st_of_Ramelton>
+  # Thomas Buchanan, 1st of Ramelton, 1680 - 1748
+  gen:father <#George_Buchanan,_2nd_of_Blairlusk,_later_of_Devoran> ;
+  gen:mother <#Elizabeth_Mayne> .
+  # oo 1700 Jean ???, 1680 - 1747
+
 <#William_Alexander_Buchanan>
   # William Alexander Buchanan, 1700-01 - 1774-01-13
   gen:father <#Thomas_Buchanan,_1st_of_Ramelton> .
@@ -192,54 +350,33 @@
     gen:spouse <#William_Alexander_Buchanan> , <#Kathrine_Blair> ;
 	gen:startDate "1712-09-02".
 
-<#John_Buchanan_(died_1820)>
-  # John Buchanan, 1736 - 1820-10-13
-  gen:father <#John_Buchanan_(born_1704)> ;
-  gen:mother <#Jane_Nixon> .
-  # oo Sarah Sproute, 1751~ - 1822-04-30
-  []
-    gen:spouse <#John_Buchanan_(died_1820)> , <#Sarah_Sproute> ;
-	gen:startDate "1770" .
-<#John_Buchanan,_of_Ramelton>
+<https://www.wikidata.org/wiki/Q76348870>
   # John Buchanan, of Ramelton, 1716 - 1802
   gen:father <#William_Alexander_Buchanan> ;
   gen:mother <#Kathrine_Blair> .
-  # oo Jane Trindle Russell, 1730 - 1764, daughter of Samuel Russell (1703 - 1773) and Mary Watt (1707 - 1763)
+  # oo Jane Trindle Russell, 1730 - 1764
   []
-    gen:spouse <#John_Buchanan,_of_Ramelton> , <#Jane_Trindle_Russell> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q76348870> , <https://www.wikidata.org/wiki/Q76348900> ;
 	gen:startDate "1751" .
 
-<#James_Buchanan_(died_1851)>
-  # James Buchanan, 1772-02-01 - 1851-10-10
-  # British Consul to New York
-  gen:father <#John_Buchanan_(died_1820)> ;
-  gen:mother <#Sarah_Sproute> .
-  # oo Elizabeth Clarke, 1779-11-13 - 1852-02-01
-  []
-    gen:spouse <#James_Buchanan> , <#Elizabeth_Clarke> ;
-	gen:startDate "1798-12-28" .
 <https://www.wikidata.org/wiki/Q20767921>
-  # James Buchanan, 1761~ - 1821-06-11
-  gen:father <#John_Buchanan,_of_Ramelton> ;
-  gen:mother <#Jane_Trindle_Russell> .
+  # James Buchanan, Sr., 1761~ - 1821-06-11
+  gen:father <https://www.wikidata.org/wiki/Q76348870> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76348900> .
   # oo Elizabeth Speers, 1767 - 1833-05-14
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q20767921> , <#Elizabeth_Speers> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q20767921> , <https://www.wikidata.org/wiki/Q75766592> ;
 	gen:startDate "1788-04-16" .
 
-<#Jane_Georgina_Buchanan>
-  # Jane Georgina Buchanan, 1829-01-13 - 1885-11-17
-  gen:father <#James_Buchanan_(died_1851)> ;
-  gen:mother <#Elizabeth_Clarke> .
-  # oo 1852-09-16 Joseph Orr Robinson, 1816 - 1898-04-13, koch.ttl#Joseph_Orr_Robinson
 <https://www.wikidata.org/wiki/Q12325>
-  # James Buchanan Jr., 15th President of the United States, 1791-04-23 – 1868-06-01
+  # James Buchanan Jr., President of the United States, 1791-04-23 – 1868-06-01
+  # 15th President of the United States 1857 - 1861
   gen:father <https://www.wikidata.org/wiki/Q20767921> ;
-  gen:mother <#Elizabeth_Speers> .
+  gen:mother <https://www.wikidata.org/wiki/Q75766592> .
 <https://www.wikidata.org/wiki/Q21403361>
   # Rev. Edward Young Buchanan, 1811-05-30 - 1895-01-20
   gen:father <https://www.wikidata.org/wiki/Q20767921> ;
-  gen:mother <#Elizabeth_Speers> .
+  gen:mother <https://www.wikidata.org/wiki/Q75766592> .
   # oo Anne Eliza Foster, 1812-01-12 - 1891-04-07
   []
     gen:spouse <https://www.wikidata.org/wiki/Q21403361> , <https://www.wikidata.org/wiki/Q21403394> .
@@ -255,7 +392,8 @@
 # Buchanan of Leny
 <#John_Buchanan,_1st_of_Leny>
   # John Buchanan, 1st of Leny
-  gen:father <#Sir_Walter_Buchanan,_11th_of_Buchanan> .
+  gen:father <https://www.wikidata.org/wiki/Q75580994> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76323514> .
   # oo 1392~ Janet de Lany, Heiress of Lany, daughter of John de Lany
 
 <#Andrew_Buchanan,_2nd_of_Leny>
@@ -263,6 +401,10 @@
   gen:father <#John_Buchanan,_1st_of_Leny> .
   # oo Marion Lockhart
 
+<https://www.wikidata.org/wiki/Q76322554>
+  # John Buchanan, 3rd of Leny
+  gen:father <#Andrew_Buchanan,_2nd_of_Leny> .
+  # oo Marion Muschet, https://www.wikidata.org/wiki/Q76322556
 <#Walter_Buchanan,_in_Cammisbarcia_and_Mills_of_Achlessy>
   # Walter Buchanan, in Cammisbarcia and Mills of Achlessy, d. 1463~
   gen:father <#Andrew_Buchanan,_2nd_of_Leny> .
@@ -294,80 +436,84 @@
   []
     gen:spouse <#Andrew_Buchanan,_of_Gartacharne> , <#???_Buchanan_(born_1622)> .
 
-<#George_Buchanan,_in_Glasgow>
+<https://www.wikidata.org/wiki/Q75514251>
   # George Buchanan, in Glasgow, b. 1650~
   gen:father <#Andrew_Buchanan,_of_Gartacharne> ;
   gen:mother <#???_Buchanan_(born_1622)> .
   # oo Mary Maxwell, b. 1670~, daughter of Rev. Gabriel Maxwell (b. 1650~) and Eliza Cuming (b. 1655~)
   []
-    gen:spouse <#George_Buchanan,_in_Glasgow> , <#Mary_Maxwell> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75514251> , <https://www.wikidata.org/wiki/Q76289372> ;
 	gen:startDate "1685-07-02" .
 
-<https://www.wikidata.org/wiki/Q52357222>
+<https://www.wikidata.org/wiki/Q18526451>
   # Andrew Buchanan, 1st of Drumpellier, 1691 - 1759-12-20
-  gen:father <#George_Buchanan,_in_Glasgow> ;
-  gen:mother <#Mary_Maxwell> .
+  gen:father <https://www.wikidata.org/wiki/Q75514251> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76289372> .
   # oo Marion Montgomerie, of Bourtrehill, b. 1700~
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q52357222> , <#Marion_Montgomerie,_of_Bourtrehill> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q18526451> , <https://www.wikidata.org/wiki/Q76289375> ;
 	gen:startDate "1723-01-30" .
-<#Archibald_Buchanan,_1st_of_Auchentorlie>
+<https://www.wikidata.org/wiki/Q75514254>
   # Archibald Buchanan, 1st of Auchentorlie, b. 1701-07-20b
-  gen:father <#George_Buchanan,_in_Glasgow> ;
-  gen:mother <#Mary_Maxwell> .
-  # oo 1728-12-04 Martha Murdoch, of Rosehill, b. 1710~
+  gen:father <https://www.wikidata.org/wiki/Q75514251> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76289372> .
+  # oo Martha Murdoch, of Rosehill, b. 1710~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75514254> , <https://www.wikidata.org/wiki/Q75514262> ;
+	gen:startDate "1728-12-04" .
 
 <https://www.wikidata.org/wiki/Q52380767>
   # James Buchanan, 2nd of Drumpellier, 1726 – 1786
-  gen:father <https://www.wikidata.org/wiki/Q52357222> ;
-  gen:mother <#Marion_Montgomerie,_of_Bourtrehill> .
+  gen:father <https://www.wikidata.org/wiki/Q18526451> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76289375> .
   # oo Margaret Hamilton
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q52380767> , <hamilton.ttl#Margaret_Hamilton> .
-<#George_Buchanan,_1st_of_Mount_Vernon>
+    gen:spouse <https://www.wikidata.org/wiki/Q52380767> , <https://www.wikidata.org/wiki/Q75727825> .
+<https://www.wikidata.org/wiki/Q75327851>
   # George Buchanan, 1st of Mount Vernon, 1728 - 1762
-  gen:father <https://www.wikidata.org/wiki/Q52357222> .
-  # and Marion Montgomerie, of Bourtrehill
+  gen:father <https://www.wikidata.org/wiki/Q18526451> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76289375> .
   # oo Lillias Dunlop
   []
-    gen:spouse <#George_Buchanan,_1st_of_Mount_Vernon> , <#Lillias_Dunlop> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75327851> , <#Lillias_Dunlop> ;
 	gen:startDate "1750" .
-<#Andrew_Buchanan,_1st_of_Ardenconnal>
+<https://www.wikidata.org/wiki/Q75514270>
   # Andrew Buchanan, 1st of Ardenconnal, 1745-07-12 - 1833-07-14
-  gen:father <#Archibald_Buchanan,_1st_of_Auchentorlie> .
+  gen:father <https://www.wikidata.org/wiki/Q75514254> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75514262> .
   # oo Jean Dennistoun, 1746~ - 1832-09-15, daughter of James Dennistoun, 14th of Colgrain (d. 1796) and Janet Baird (1720~ - 1748~)
   []
-    gen:spouse <#Andrew_Buchanan,_1st_of_Ardenconnal> , <#Jean_Dennistoun> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75514270> , <https://www.wikidata.org/wiki/Q75514274> ;
 	gen:startDate "1769-07-03" .
 
-<#Helen_Buchanan>
+<https://www.wikidata.org/wiki/Q76030416>
   # Helen Buchanan, 1761 - 1824-01-13
   gen:father <https://www.wikidata.org/wiki/Q52380767> ;
-  gen:mother <hamilton.ttl#Margaret_Hamilton> .
-  # oo 1785-09-13 Sir George Home of Blackadder, 7th Baronet, d. 1803-05-02, home.ttl#Sir_George_Home_of_Blackadder,_7th_Baronet
-<#David_Carrick-Buchanan>
+  gen:mother <https://www.wikidata.org/wiki/Q75727825> .
+  # oo 1785-09-13 Sir George Home of Blackadder, 7th Baronet, d. 1803-05-02, https://www.wikidata.org/wiki/Q76030414
+<https://www.wikidata.org/wiki/Q75327852>
   # David Carrick-Buchanan, 1760 – 1827-05-20
-  gen:father <#George_Buchanan,_1st_of_Mount_Vernon> ;
+  gen:father <https://www.wikidata.org/wiki/Q75327851> ;
   gen:mother <#Lillias_Dunlop> .
 <https://www.wikidata.org/wiki/Q75514296>
   # James Buchanan, 2nd of Ardenconnal and of Blairvadick, 1776-01-26 - 1860-12-21
-  gen:father <#Andrew_Buchanan,_1st_of_Ardenconnal> ;
-  gen:mother <#Jean_Dennistoun> .
+  gen:father <https://www.wikidata.org/wiki/Q75514270> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75514274> .
   # oo Lady Janet Sinclair, 1787~ - 1867-02-24
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75514296> , <https://www.wikidata.org/wiki/Q75514301> ;
 	gen:startDate "1805-05-10" .
 
-<#Andrew_Carrick-Buchanan>
+<https://www.wikidata.org/wiki/Q75725007>
   # Andrew Carrick-Buchanan, 1799-11-28 - 1879-08-12
-  gen:father <#David_Carrick-Buchanan> .
+  gen:father <https://www.wikidata.org/wiki/Q75327852> .
   # oo Bethia Hamilton Ramsay, d. 1877, daughter of William Ramsay and Bethia Hamilton
   []
-    gen:spouse <#Andrew_Carrick-Buchanan> , <#Bethia_Hamilton_Ramsay> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75725007> , <https://www.wikidata.org/wiki/Q75724963> ;
 	gen:startDate "1826-03-27" .
 <https://www.wikidata.org/wiki/Q7525998>
   # Sir Andrew Buchanan, of Craigend, 1st Baronet of Dunburgh, 1807-05-07 - 1882-11-13
-  # 1st Baronet Buchanan, of Dunburgh 1878-12-14
+  # 1st Baronet Buchanan, of Dunburgh [U.K.] 1878-12-14
   gen:father <https://www.wikidata.org/wiki/Q75514296> ;
   gen:mother <https://www.wikidata.org/wiki/Q75514301> .
   # oo Frances Katherine Mellish, 1815~ - 1854-12-01
@@ -379,14 +525,19 @@
     gen:spouse <https://www.wikidata.org/wiki/Q7525998> , <https://www.wikidata.org/wiki/Q75348946> ;
 	gen:startDate "1857-05-26" .
 
-<#David_William_Ramsay_Carrick-Buchanan>
+<https://www.wikidata.org/wiki/Q76357875>
   # David William Ramsay Carrick-Buchanan, d. 1925-05-04
-  gen:father <#Andrew_Carrick-Buchanan> ;
-  gen:mother <#Bethia_Hamilton_Ramsay> .
-  # oo 1863-12-03 Lady Katherine Alicia Hely Hutchinson, d. 1892-04-22
+  gen:father <https://www.wikidata.org/wiki/Q75725007> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75724963> .
+  # oo 1863-12-03 Lady Katherine Alicia Hely Hutchinson, d. 1892-04-22 (villiers.ttl)
   []
-    gen:spouse <#David_William_Ramsay_Carrick-Buchanan> , <villiers.ttl#Lady_Katherine_Alicia_Hely_Hutchinson> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q76357875> , <https://www.wikidata.org/wiki/Q76012300> ;
 	gen:startDate "1863-12-03" .
+<https://www.wikidata.org/wiki/Q75327850>
+  # Bethia Hamilton Carrick-Buchanan, d. 1911-02-20
+  gen:father <https://www.wikidata.org/wiki/Q75725007> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75724963> .
+  # oo 1853-04-26 Sir John Don-Wauchope of Newton Don, 8th Baronet, 1816-07-10 - 1893-12-12, https://www.wikidata.org/wiki/Q75327847 (browne.ttl)
 <https://www.wikidata.org/wiki/Q7527378>
   # Sir James Buchanan, 2nd Baronet, 1840-08-07 - 1901-10-16
   gen:father <https://www.wikidata.org/wiki/Q7525998> ;
@@ -401,10 +552,10 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7526645> , <https://www.wikidata.org/wiki/Q7526645> ;
 	gen:startDate "1898-06-27" .
-#<#Andrew_Archibald_Buchanan>
+<https://www.wikidata.org/wiki/Q75514327>
   # Andrew Archibald Buchanan, 1850-01-16 – 1932-10-05
-#  gen:father <https://www.wikidata.org/wiki/Q7525998> ;
-#  gen:mother <https://www.wikidata.org/wiki/Q75348945> .
+  gen:father <https://www.wikidata.org/wiki/Q7525998> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75348945> .
 <https://www.wikidata.org/wiki/Q75487585>
   # Louisa Buchanan, 1852~ - 1923-01-19
   gen:father <https://www.wikidata.org/wiki/Q7525998> ;
@@ -421,12 +572,12 @@
 
 <https://www.wikidata.org/wiki/Q4799561>
   # Arthur Louis Hamilton Buchanan, 1866 – 1925-02-15
-  gen:father <#David_William_Ramsay_Carrick-Buchanan> ;
-  gen:mother <villiers.ttl#Lady_Katherine_Alicia_Hely_Hutchinson> .
+  gen:father <https://www.wikidata.org/wiki/Q76357875> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76012300> .
 <https://www.wikidata.org/wiki/Q7526224>
   # Sir Charles James Buchanan, 4th Baronet, 1899-04-16 – 1984-05-25
   gen:father <https://www.wikidata.org/wiki/Q7526645> ;
-  gen:mother <#Constance_Augusta_Tennant> .
+  gen:mother <https://www.wikidata.org/wiki/Q7526645> .
   # oo Barbara Helen Stanley, 1906-03-06 - 1986
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7526224> , <https://www.wikidata.org/wiki/Q75253735> ;
@@ -437,12 +588,12 @@
   gen:mother <https://www.wikidata.org/wiki/Q75348877> .
   # oo 1925 Major Harold Wilfred Knowling, d. 1954
 
-<#Robert_Gilliam_Buchanan>
+<https://www.wikidata.org/wiki/Q75316516>
   # Robert Gilliam Buchanan
   gen:father <https://www.wikidata.org/wiki/Q4799561> .
   # oo Lady Alexandra Mary Cadogan, 1920-03-10 - 1985
   []
-    gen:spouse <#Robert_Gilliam_Buchanan> , <cadogan.ttl#Lady_Alexandra_Mary_Cadogan> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75316516> , <https://www.wikidata.org/wiki/Q75297354> ;
 	gen:startDate "1940-08-21" ;
 	gen:divorceDate "1949" .
 <https://www.wikidata.org/wiki/Q75263071>
@@ -450,54 +601,54 @@
   gen:father <https://www.wikidata.org/wiki/Q7526224> ;
   gen:mother <https://www.wikidata.org/wiki/Q75253735> .
   # oo 1961-10-07 Hugh John Alexander Lindsay, b. 1934-07-30, https://www.wikidata.org/wiki/Q75333759
-<#Sir_Andrew_George_Buchanan,_5th_Baronet>
+<https://www.wikidata.org/wiki/Q64747283>
   # Sir Andrew George Buchanan, 5th Baronet, b. 1937-07-21
   gen:father <https://www.wikidata.org/wiki/Q7526224> ;
   gen:mother <https://www.wikidata.org/wiki/Q75253735> .
   # oo Belinda Jane Virginia Maclean, daughter of Donald Colquhoun Maclean
   []
-    gen:spouse <#Sir_Andrew_George_Buchanan,_5th_Baronet> , <#Belinda_Jane_Virginia_Maclean> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q64747283> , <https://www.wikidata.org/wiki/Q75514237> ;
 	gen:startDate "1966-04-26" .
 
-<#Laura_Evelyn_Buchanan>
+<https://www.wikidata.org/wiki/Q75514241>
   # Laura Evelyn Buchanan, b. 1967-01-13
-  gen:father <#Sir_Andrew_George_Buchanan,_5th_Baronet> ;
-  gen:mother <#Belinda_Jane_Virginia_Maclean> .
+  gen:father <https://www.wikidata.org/wiki/Q64747283> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75514237> .
   # oo 1992 A. James Mayes, son of Brigadier Andrew Mayes
-<#George_Charles_Mellish_Buchanan>
+<https://www.wikidata.org/wiki/Q75514239>
   # George Charles Mellish Buchanan, b. 1975-01-27
-  gen:father <#Sir_Andrew_George_Buchanan,_5th_Baronet> ;
-  gen:mother <#Belinda_Jane_Virginia_Maclean> .
+  gen:father <https://www.wikidata.org/wiki/Q64747283> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75514237> .
   # oo Katharine Price, daughter of Tom Price
   []
-    gen:spouse <#George_Charles_Mellish_Buchanan> , <#Katharine_Price> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75514239> , <https://www.wikidata.org/wiki/Q75514812> ;
 	gen:startDate "2002-06-29" .
 
-<#Elsa_Mamie_Buchanan>
+<https://www.wikidata.org/wiki/Q75514816>
   # Elsa Mamie Buchanan, b. 2005-09-12
-  gen:father <#George_Charles_Mellish_Buchanan> ;
-  gen:mother <#Katharine_Price> .
-<#Lawrence_Richard_Buchanan>
+  gen:father <https://www.wikidata.org/wiki/Q75514239> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75514812> .
+<https://www.wikidata.org/wiki/Q76227760>
   # Lawrence Richard Buchanan, b. 2007-09-16
-  gen:father <#George_Charles_Mellish_Buchanan> ;
-  gen:mother <#Katharine_Price> .
+  gen:father <https://www.wikidata.org/wiki/Q75514239> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75514812> .
 
 # ====
 #<https://www.wikidata.org/wiki/Q6130430>
   # James Buchanan, 1st Baron Woolavington, 1849-08-16 – 1935-08-09
-  # 1st Baronet Buchanan, of Lavington, co. Sussex 1920-02-06
-  # 1st Baron Woolavington, of Lavington, co. Sussex 1922-01-24
+  # 1st Baronet Buchanan, of Lavington, co. Sussex  [U.K.]1920-02-06
+  # 1st Baron Woolavington, of Lavington, co. Sussex [U.K.] 1922-01-24
   # son of Alexander Buchanan
   # and oo 1830-11-21 Catherine McLean
   # oo Anne Annie Eliza Pounder, d. 1918-10-05, daughter of Thomas Pounder
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q6130430> , <#Anne_Annie_Eliza_Pounder> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q6130430> , <https://www.wikidata.org/wiki/Q76023331> ;
 	gen:startDate "1891-12-05" .
 
-<#Catherine_Buchanan>
+<https://www.wikidata.org/wiki/Q75323077>
   # Hon. Catherine Buchanan, b. 1895
   gen:father <https://www.wikidata.org/wiki/Q6130430> ;
-  gen:mother <#Anne_Annie_Eliza_Pounder> .
+  gen:mother <https://www.wikidata.org/wiki/Q76023331> .
   # oo 1922-01-18 Sir Reginald Narcissus Macdonald-Buchanan, 1898 - 1981-11-18~, https://www.wikidata.org/wiki/Q21557019
 # ----
 #<https://www.wikidata.org/wiki/Q21557019>
@@ -505,25 +656,73 @@
   # son of John Macdonald
   # oo Hon. Catherine Buchanan, b. 1895
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q21557019> , <#Catherine_Buchanan> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q21557019> , <https://www.wikidata.org/wiki/Q75323077> ;
 	gen:startDate "1922-01-18" .
 
-<#John_Macdonald-Buchanan>
+<https://www.wikidata.org/wiki/Q75335883>
   # John Macdonald-Buchanan, 1925-03-15 - 2014-10-11
   gen:father <https://www.wikidata.org/wiki/Q21557019> ;
-  gen:mother <#Catherine_Buchanan> .
+  gen:mother <https://www.wikidata.org/wiki/Q75323077> .
   # oo Lady Rose Fane, 1931-01-04 - 1984
   []
-    gen:spouse <#John_Macdonald-Buchanan> , <fane.ttl#Lady_Rose_Fane> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75335883> , <https://www.wikidata.org/wiki/Q75335837> ;
 	gen:startDate "1950-11-03" ;
 	gen:divorceDate "1969" .
 
 # ----
+#<#James_Robinson>
+  # James Robinson, 1786 - 1875
+  # oo Jane Buchanan, b. 1788
+  []
+    gen:spouse <#James_Robinson> , <#Jane_Buchanan> .
+
+<#Joseph_Orr_Robinson>
+  # Joseph Orr Robinson, 1816-08-18 - 1898-04-13
+  gen:father <#James_Robinson> ;
+  gen:mother <#Jane_Buchanan> .
+  # oo Jane Georgina Buchanan, 1829-01-13 - 1885-11-17
+  []
+    gen:spouse <#Joseph_Orr_Robinson> , <#Jane_Georgina_Buchanan> ;
+	gen:startDate "1852-09-16" .
+  # oo Catherine Doherty, 1842 - 1912
+
+<#Theodora_Josephina_Robinson>
+  # Theodora Josephina Robinson, 1866-01-21 - 1900-02-05
+  gen:father <#Joseph_Orr_Robinson> ;
+  gen:mother <#Jane_Georgina_Buchanan> .
+  # oo 1889-10-30 Ewald Löwen, 1862-10-21 - 1931-05-20, koch#Ewald_Löwen
+
+# ----
+#<#Joseph_Orr>
+  # Joseph Orr, d. 1826-05-05-/06
+  # buried Donaghanie Churchyard, Omagh, Co. Tyrone, Ireland
+  # oo Sarah Caroline Buchanan, 1793 - 1862-11-16
+  []
+    gen:spouse <#Joseph_Orr> , <#Sarah_Caroline_Buchanan> ;
+	gen:startDate "1812-03-30" .
+
+# ----
+<https://www.wikidata.org/wiki/Q76348900>
+  # Jane Trindle Russell, 1730 - 1764
+  gen:father <https://www.wikidata.org/wiki/Q76348899> ; # Samuel Russell, 1703 - 1773
+  gen:mother <https://www.wikidata.org/wiki/Q76004804> . # oo Mary Watt, 1707 - 1763
+  # oo 1751 John Buchanan, of Ramelton, 1716 - 1802, https://www.wikidata.org/wiki/Q76348870
+
+# ----
 <https://www.wikidata.org/wiki/Q21403394>
   # Anne Eliza Foster, 1812-01-12 - 1891-04-07
-  gen:father <https://www.wikidata.org/wiki/Q21010523> ;
-  gen:mother <https://www.wikidata.org/wiki/Q21482838> .
+  gen:father <https://www.wikidata.org/wiki/Q21010523> ; # William B. Foster
+  gen:mother <https://www.wikidata.org/wiki/Q21482838> . # Eliza Clayland Tomlinson
   # oo Rev. Edward Young Buchanan, 1811-05-30 - 1895-01-20, https://www.wikidata.org/wiki/Q21403361
+
+# ----
+<https://www.wikidata.org/wiki/Q4718545>
+  # Alexander Johnston Cassatt, 1839-12-08 - 1906-12-28
+  gen:father <https://www.wikidata.org/wiki/Q21031097> ; # Robert S. Cassatt
+  gen:mother <https://www.wikidata.org/wiki/Q77730949> . # Katherine Kelso Johnston
+  # oo Marie Lois Buchanan, 1847 - 1920-01-09
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q4718545> , <https://www.wikidata.org/wiki/Q21403413> .
 
 # ----
 <https://www.wikidata.org/wiki/Q55639635>
@@ -544,7 +743,7 @@
 # ----
 #<https://www.wikidata.org/wiki/Q681359>
   # Sir Samuel George Bonham, 1st Baronet, 1803-09-07 - 1963-10-08
-  # 1st Baronet Bonham, of Malmesbury in the County of Wiltshire 1852-11-27
+  # 1st Baronet Bonham, of Malmesbury in the County of Wiltshire [U.K.] 1852-11-27
   # son of Captain George Bonham
   # and Isabella Baines Woodgate
   # oo Ellen Emelia Barnard, 1828 - 1859-04-03, daughter of Thomas Barnard

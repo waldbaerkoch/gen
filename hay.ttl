@@ -4,64 +4,54 @@
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
-
-#<#William_de_Haya>
- # William de Haya
- # oo Juliana de Soulis, daughter of Randulph de Soulis, Lord of Liddesdale
-
-<#William_de_la_Haye,_1st_of_Erroll> # -> Hay of Erroll
+<https://www.wikidata.org/wiki/Q75662112>
   # William de la Haye, 1st of Erroll, 1160a - 1201~
   gen:father <#William_de_Haya> .
-<#Robert_de_Haya>
-  # Robert de Haya, d. 1204a
-  gen:father <#William_de_Haya> .
+  # oo Eva Pitmilly/Steward, Celtic Heiress
 
-<#Sir_John_de_Haya,_of_Locherworth> # -> Hay of Lochorwart and Yester
-  # Sir John de Haya, of Locherworth, d. 1222
-  gen:father <#Robert_de_Haya> .
-
-
-# Hay of Erroll
-<#William_de_la_Haye,_1st_of_Erroll>
-  # William de la Haye, 1st of Erroll, 1160a - 1201~
-  gen:father <#William_de_Haya> .
-
-<#David_de_la_Haye,_2nd_of_Erroll>
+<https://www.wikidata.org/wiki/Q75662117>
+  owl:sameAs <https://www.wikidata.org/wiki/Q117378758> ;
   gen:name "David de la Haye, 2nd of Erroll"@en ;
   gen:deathDate "1241-04-27~" ;
-  gen:father <#William_de_la_Haye,_1st_of_Erroll> .
+  gen:father <https://www.wikidata.org/wiki/Q75662112> .
   # oo Ethna of Strathearn
   []
-    gen:spouse <#David_de_la_Haye,_2nd_of_Erroll> , <#Ethna_of_Strathearn> .
+    gen:spouse <https://www.wikidata.org/wiki/Q75662117> , <https://www.wikidata.org/wiki/Q75662136> .
+<https://www.wikidata.org/wiki/Q75662128> # -> Hay of Lochorwart and Yester
+  # Robert de la Haya, 1165 - 1204
+  gen:father <https://www.wikidata.org/wiki/Q75662112> .
+  # and Eva Pitmilly/Steward, Celtic Heiress
 
 <https://www.wikidata.org/wiki/Q53541226>
   gen:name "Gilbert de la Haye, 3rd of Erroll" ;
-  gen:father <#David_de_la_Haye,_2nd_of_Erroll> ;
-  gen:mother <#Ethna_of_Strathearn> .
+  gen:father <https://www.wikidata.org/wiki/Q75662117> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75662136> .
   # oo Lady Idoine Comyn, 1215~
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q53541226> , <#Lady_Idoine_Comyn> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q53541226> , <https://www.wikidata.org/wiki/Q75662144> ;
 	gen:startDate "1237" .
-<#William_de_Haya,_of_Leys> # -> Hay of Leys (Megginch and Kinnoull)
+<https://www.wikidata.org/wiki/Q75335340> # -> Hay of Leys (Megginch and Kinnoull)
   # William de Haya, of Leys, d. 1251-04-29a
-  gen:father <#David_de_la_Haye,_2nd_of_Erroll> ;
-  gen:mother <#Ethna_of_Strathearn> .
+  gen:father <https://www.wikidata.org/wiki/Q75662117> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75662136> .
 
 <https://www.wikidata.org/wiki/Q28094420>
   gen:name "Nicholas de la Haye, 4th of Erroll"@en ;
   gen:birthDate "1283-02-05~" ;
   gen:deathDate "1306-06~" ;
   gen:father <https://www.wikidata.org/wiki/Q53541226> ;
-  gen:mother <#Lady_Idoine_Comyn> .
+  gen:mother <https://www.wikidata.org/wiki/Q75662144> .
   # oo Joan ?
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q28094420> , <https://www.wikidata.org/wiki/Q75662149> .
 
 <https://www.wikidata.org/wiki/Q5561308>
   gen:name "Sir Gilbert de la Haye, 5th of Erroll" ;
   gen:deathDate "1333-04" ;
-  gen:father <https://www.wikidata.org/wiki/Q28094420> .
-  # and Joan ?
+  gen:father <https://www.wikidata.org/wiki/Q28094420> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75662149> .
 
-<#Nicholas_de_la_Haye,_younger_of_Erroll>
+<https://www.wikidata.org/wiki/Q75662155>
   gen:name "Nicholas de la Haye"@en ;
   gen:deathDate "1332" ;
   gen:father <https://www.wikidata.org/wiki/Q5561308> .
@@ -70,15 +60,17 @@
   gen:name "Sir David de la Haye, 6th of Erroll"@en ;
   gen:birthDate "1318~" ;
   gen:deathDate "1346-10-17" ;
-  gen:father <#Nicholas_de_la_Haye,_younger_of_Erroll> .
+  gen:father <https://www.wikidata.org/wiki/Q75662155> .
   # oo unknown daughter Keith, daughter of Sir John Keith of Innerpeffer
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5241482> , <https://www.wikidata.org/wiki/Q75662160> .
 
 <https://www.wikidata.org/wiki/Q7795506>
-  # https://www.wikidata.org/wiki/Q19325595
   gen:name "Sir Thomas de la Haye, 7th of Erroll"@en ;
   gen:birthDate "1342~" ;
   gen:deathDate "1406-07" ;
-  gen:father <https://www.wikidata.org/wiki/Q5241482> .
+  gen:father <https://www.wikidata.org/wiki/Q5241482> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75662160> .
   # oo Elizabeth Stewart, b. 1349a/1355b
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7795506> , <https://www.wikidata.org/wiki/Q75385096> ;
@@ -92,36 +84,37 @@
   # oo Margaret Gray, b. 1363
   []
     gen:spouse <https://www.wikidata.org/wiki/Q19325866> , <https://www.wikidata.org/wiki/Q75388222> .
-<#Elizabeth_de_la_Haye>
+<https://www.wikidata.org/wiki/Q75388227>
   # Elizabeth de la Haye
   gen:father <https://www.wikidata.org/wiki/Q7795506> ;
   gen:mother <https://www.wikidata.org/wiki/Q75385096> .
-  # oo Sir George Leslie of Rothes, 1350 - 1411/1412a, leslie.ttl#Sir_George_Leslie_of_Rothes
-<#Alice_de_la_Haye>
+  # oo Sir George Leslie of Rothes, 1350 - 1411/1412a, https://www.wikidata.org/wiki/Q75388229
+<https://www.wikidata.org/wiki/Q75248993>
   gen:name "Alice de la Haye"@en ;
   gen:father <https://www.wikidata.org/wiki/Q7795506> ;
   gen:mother <https://www.wikidata.org/wiki/Q75385096> .
-  # oo Sir David Hay of Lochorwart and Yester, d. 1478-09-02, #Sir_David_Hay_of_Lochorwart_and_Yester
-<#Sir_Gilbert_Hay_of_Dronlaw> # -> Hay of Dronlaw (of Park)
+  # oo Sir David Hay of Lochorwart and Yester, d. 1478-09-02, https://www.wikidata.org/wiki/Q75388476
+<https://www.wikidata.org/wiki/Q75388225> # -> Hay of Dronlaw (of Park)
   # Sir Gilbert Hay of Dronlaw
   gen:father <https://www.wikidata.org/wiki/Q7795506> ;
   gen:mother <https://www.wikidata.org/wiki/Q75385096> .
 
-<#Gilbert_of_the_Haye>
+<https://www.wikidata.org/wiki/Q75557629>
   # Gilbert of the Haye, d. 1436-09-07
   gen:father <https://www.wikidata.org/wiki/Q19325866> ;
   gen:mother <https://www.wikidata.org/wiki/Q75388222> .
   # oo Alicia Hay
   []
-    gen:spouse <#Gilbert_of_the_Haye> , <#Alicia_Hay> .
+    gen:spouse <https://www.wikidata.org/wiki/Q75557629> , <https://www.wikidata.org/wiki/Q75560696> .
 
 <https://www.wikidata.org/wiki/Q18821934>
   gen:name "William Hay, 1st Earl of Erroll"@en ;
-  # 2nd Lord Hay 1437, 1st Earl of Erroll 1452-06-12
+  # 2nd Lord Hay 1437
+  # 1st Earl of Erroll 1452-06-12
   gen:birthDate "1423" ;
   gen:deathDate "1462-11-15a" ;
-  gen:father <#Gilbert_of_the_Haye> ;
-  gen:mother <#Alicia_Hay> .
+  gen:father <https://www.wikidata.org/wiki/Q75557629> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75560696> .
   # oo Lady Beatrix Douglas
   []
     gen:spouse <https://www.wikidata.org/wiki/Q18821934> , <https://www.wikidata.org/wiki/Q75269343> ;
@@ -133,7 +126,7 @@
   gen:mother <https://www.wikidata.org/wiki/Q75269343> .
   # oo Lady Elizabeth Gordon, d. 1500-04-17
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q19873050> , <gordon.ttl#Lady_Elizabeth_Gordon_(died_1500)> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q19873050> , <https://www.wikidata.org/wiki/Q75389836> ;
 	gen:startDate "1461-11-15" .
 <https://www.wikidata.org/wiki/Q75556747>
   # Lady Isabel Hay, 1441 – 1509
@@ -152,10 +145,10 @@
   gen:mother <https://www.wikidata.org/wiki/Q75269343> .
   # oo Lady Isabel Gordon, d. 1485b
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q19873052> , <gordon.ttl#Lady_Isabel_Gordon> .
+    gen:spouse <https://www.wikidata.org/wiki/Q19873052> , <https://www.wikidata.org/wiki/Q75388547> .
   # oo Lady Elizabeth Leslie, d. 1509a/1511b
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q19873052> , <leslie.ttl#Lady_Elizabeth_Leslie_(died_1509a)> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q19873052> , <https://www.wikidata.org/wiki/Q75269345> ;
 	gen:startDate "1485" .
 <https://www.wikidata.org/wiki/Q75573513>
   # Lady Margaret Hay, 1453 – 1500a
@@ -163,61 +156,61 @@
   gen:mother <https://www.wikidata.org/wiki/Q75269343> .
   # oo Alexander Fraser, 4th of Philorth, d. 1486~, son of Sir Alexander Fraser, 3rd of Philorth and Marjorie Menzies
   # oo Sir Gilbert Keith, 3rd of Inverugie, 1st of Ludquhairn, https://www.wikidata.org/wiki/Q76145156 (ogilvy.ttl)
-  # oo 1500-01 Sir Robert Douglas of Lochleven, douglas.ttl#Sir_Robert_Douglas_of_Lochleven
-<#Beatrice_Hay>
+  # oo 1500-01 Sir Robert Douglas of Lochleven, https://www.wikidata.org/wiki/Q75263446
+<https://www.wikidata.org/wiki/Q75404336>
   # Beatrice Hay
   gen:father <https://www.wikidata.org/wiki/Q18821934> .
-  # oo Sir Alexander Gordon of Abergeldie, d. 1504-01b, gordon.ttl#Sir_Alexander_Seton_of_Abergeldie
+  # oo Sir Alexander Gordon of Abergeldie, d. 1504-01b, https://www.wikidata.org/wiki/Q75269389
 
 <https://www.wikidata.org/wiki/Q19873053>
   # William Hay, 4th Earl of Erroll, d. 1513-09-09
   gen:father <https://www.wikidata.org/wiki/Q19873052> ;
-  gen:mother <gordon.ttl#Lady_Isabel_Gordon> .
-  # oo Christian Lyon, daughter of John Lyon, 3rd Lord Glamis
+  gen:mother <https://www.wikidata.org/wiki/Q75388547> .
+  # oo Christian Lyon
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q19873053> , <lyon.ttl#Christian_Lyon> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q19873053> , <https://www.wikidata.org/wiki/Q75255582> ;
 	gen:startDate "1492-04-24~" .
   # oo Margaret Kerr, d. 1532-07-09b
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q19873053> , <kerr.ttl#Margaret_Kerr_(died_1532)> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q19873053> , <https://www.wikidata.org/wiki/Q75497758> ;
 	gen:startDate "1509-05-17~" .
-<#Thomas_Hay_(died_1513)>
+<https://www.wikidata.org/wiki/Q75269957>
   # Thomas Hay, d. 1513-09-09
   gen:father <https://www.wikidata.org/wiki/Q19873052> ;
-  gen:mother <gordon.ttl#Lady_Isabel_Gordon> .
+  gen:mother <https://www.wikidata.org/wiki/Q75388547> .
   # oo Margaret Logie
   []
-    gen:spouse <#Thomas_Hay_(died_1513)> , <#Margaret_Logie> .
+    gen:spouse <https://www.wikidata.org/wiki/Q75269957> , <https://www.wikidata.org/wiki/Q75269959> .
 <https://www.wikidata.org/wiki/Q75262451>
   # Lady Elizabeth Hay, 1475 - 1511-01-24
   gen:father <https://www.wikidata.org/wiki/Q19873052> ;
-  gen:mother <leslie.ttl#Lady_Elizabeth_Leslie_(died_1509a)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75269345> .
   # oo 1500-11-06b David Lindsay, 8th Earl of Crawford, d. 1542-11-27, https://www.wikidata.org/wiki/Q5236634
 
 <https://www.wikidata.org/wiki/Q19873055>
   # William Hay, 5th Earl of Erroll,  1522-07-28
   gen:father <https://www.wikidata.org/wiki/Q19873053> ;
-  gen:mother <lyon.ttl#Christian_Lyon> .
+  gen:mother <https://www.wikidata.org/wiki/Q75255582> .
   # oo Elizabeth Ruthven, 1508b - 1529-07-20~
   []
     gen:spouse <https://www.wikidata.org/wiki/Q19873055> , <https://www.wikidata.org/wiki/Q75544172> ;
 	gen:startDate "1520~" .
-<#Lady_Elizabeth_Hay_(died_1574)>
+<https://www.wikidata.org/wiki/Q75275392>
   # Lady Elizabeth Hay, d. 1574-10
   gen:father <https://www.wikidata.org/wiki/Q19873053> ;
-  gen:mother <lyon.ttl#Christian_Lyon> .
-  # oo 1512-07-23 William Abernethy, 5th Lord Saltoun of Abernethy, d. 1543-12, fraser.ttl#William_Abernethy,_5th_Lord_Saltoun
+  gen:mother <https://www.wikidata.org/wiki/Q75255582> .
+  # oo 1512-07-23 William Abernethy, 5th Lord Saltoun of Abernethy, d. 1543-12, https://www.wikidata.org/wiki/Q75389881 (fraser.ttl)
 <https://www.wikidata.org/wiki/Q983215>
   # George Hay, 7th Earl of Erroll, d. 1574-01-30
-  gen:father <#Thomas_Hay_(died_1513)> ;
-  gen:mother <#Margaret_Logie> .
+  gen:father <https://www.wikidata.org/wiki/Q75269957> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75269959> .
   # oo Margaret Robertson
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q983215> , <#Margaret_Robertson> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q983215> , <https://www.wikidata.org/wiki/Q75269954> ;
 	gen:startDate "1528-11-12~" .
   # oo Helen Bruce, d. 1608-02, daughter of Walter Bruce
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q983215> , <#Helen_Bruce> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q983215> , <https://www.wikidata.org/wiki/Q75333768> ;
 	gen:startDate "1561-06-12~" .
 
 <https://www.wikidata.org/wiki/Q20711390>
@@ -228,18 +221,18 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q20711390> , <https://www.wikidata.org/wiki/Q75388638> ;
 	gen:startDate "1540b" .
-<#Lady_Elizabeth_Hay_(born_1531)>
+<https://www.wikidata.org/wiki/Q75333767>
   # Lady Elizabeth Hay, b. 1531
   gen:father <https://www.wikidata.org/wiki/Q983215> ;
-  gen:mother <#Margaret_Robertson> .
-  # oo 1544-01-13 William Keith, Master of Marischal, d. 1580-08-09~, keith.ttl#William_Keith,_Master_of_Marischal
+  gen:mother <https://www.wikidata.org/wiki/Q75269954> .
+  # oo 1544-01-13 William Keith, Master of Marischal, d. 1580-08-09~, https://www.wikidata.org/wiki/Q75389515
 <https://www.wikidata.org/wiki/Q19901858>
   # Andrew Hay, 8th Earl of Erroll, 1531~ –  1585-10-08
   gen:father <https://www.wikidata.org/wiki/Q983215> ;
-  gen:mother <#Margaret_Robertson> .
+  gen:mother <https://www.wikidata.org/wiki/Q75269954> .
   # oo Lady Jean Hay, 1540~ - 1570-08
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q19901858> , <#Lady_Jean_Hay_(died_1570)> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q19901858> , <https://www.wikidata.org/wiki/Q75269949> ;
 	gen:startDate "1552-06-16~" .
   # oo Lady Agnes Sinclair, 1539 - 1619-11-06
   []
@@ -248,16 +241,16 @@
 <https://www.wikidata.org/wiki/Q75389888>
   # Lady Margaret Hay
   gen:father <https://www.wikidata.org/wiki/Q983215> ;
-  gen:mother <#Margaret_Robertson> .
+  gen:mother <https://www.wikidata.org/wiki/Q75269954> .
   # oo 1551-05-11a Laurence Oliphant, 4th Lord Oliphant, 1529 – 1593-01-16, https://www.wikidata.org/wiki/Q16863477
-<#Lady_Elizabeth_Hay_2>
+<https://www.wikidata.org/wiki/Q75333766>
   # Lady Elizabeth Hay
   gen:father <https://www.wikidata.org/wiki/Q983215> ;
-  gen:mother <#Helen_Bruce> .
-  # oo 1597b (div 1598-03-09) Sir John Leslie, of Balquhain
+  gen:mother <https://www.wikidata.org/wiki/Q75333768> .
+  # oo 1597b (div 1598-03-09) Sir John Leslie, of Balquhain, https://www.wikidata.org/wiki/Q75333767
   # oo 1599a James Balfour, 1st Lord Balfour, Baron of Glenawley, 1567~ - 1634-10-18, https://www.wikidata.org/wiki/Q41752315
 
-<#Lady_Jean_Hay_(died_1570)>
+<https://www.wikidata.org/wiki/Q75269949>
   # Lady Jean Hay, 1540~ - 1570-08
   gen:father <https://www.wikidata.org/wiki/Q20711390> ;
   gen:mother <https://www.wikidata.org/wiki/Q75388638> .
@@ -265,12 +258,12 @@
 <https://www.wikidata.org/wiki/Q57915814>
   # Lady Helen Hay, 1552~ - 1627
   gen:father <https://www.wikidata.org/wiki/Q19901858> ;
-  gen:mother <#Lady_Jean_Hay_(died_1570)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75269949> .
   # oo 1584-01-26 Alexander Livingstone, 1st Earl of Linlithgow, 1557~/1561 - 1621-12-24, https://www.wikidata.org/wiki/Q16859743 (leslie.ttl)
 <https://www.wikidata.org/wiki/Q5481257>
   # Francis Hay, 9th Earl of Erroll, 1564-04-30 – 1631-07-16
   gen:father <https://www.wikidata.org/wiki/Q19901858> ;
-  gen:mother <#Lady_Jean_Hay_(died_1570)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75269949> .
   # oo Lady Margaret Stewart, d. 1586
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5481257> , <https://www.wikidata.org/wiki/Q75268695> ;
@@ -281,82 +274,86 @@
 	gen:startDate "1587-01~" .
   # oo Lady Elizabeth Douglas
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q5481257> , <douglas.ttl#Lady_Elizabeth_Douglas,_Countess_of_Erroll> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q5481257> , <https://www.wikidata.org/wiki/Q75390858> ;
 	gen:startDate "1590" .
-<#George_Hay,_1st_of_Kellour>
+<https://www.wikidata.org/wiki/Q75291877>
   # George Hay, 1st of Kellour
   gen:father <https://www.wikidata.org/wiki/Q19901858> ;
   gen:mother <https://www.wikidata.org/wiki/Q75274089> .
-  # oo Isabel Cheyne, daughter of Patrick Cheyne, 8th of Essilmont and Helen Bryson
-<#William_Hay_of_Fetterletter>
+  # oo Isabel Cheyne
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75291877> , <https://www.wikidata.org/wiki/Q75274092> .
+<https://www.wikidata.org/wiki/Q75662700>
   # William Hay of Fetterletter
   gen:father <https://www.wikidata.org/wiki/Q19901858> ;
   gen:mother <https://www.wikidata.org/wiki/Q75274089> .
   # oo Lilias Gordon, daughter of Sir George Gordon of Gight
-  # oo Marie Innes, daughter of Robert Innes of that Ilk and Elizabeth Elphinstone
   []
-    gen:spouse <#William_Hay_of_Fetterletter> , <innes.ttl#Marie_Innes_1> .
+    gen:spouse <https://www.wikidata.org/wiki/Q75662700> , <https://www.wikidata.org/wiki/Q75662721> .
+  # oo Marie Innes
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75662700> , <https://www.wikidata.org/wiki/Q75662702> .
 
-<#Lady_Mary_Hay_(died_1631)>
+<https://www.wikidata.org/wiki/Q75253182>
   # Lady Mary Hay, d. 1631-04-11
   gen:father <https://www.wikidata.org/wiki/Q5481257> ;
-  gen:mother <douglas.ttl#Lady_Elizabeth_Douglas,_Countess_of_Erroll> .
+  gen:mother <https://www.wikidata.org/wiki/Q75390858> .
   # oo 1616-10-15~ Walter Scott, 1st Earl of Buccleuch, 2nd Baron Scott of Buccleuch, 1606b - 1633-11-20, https://www.wikidata.org/wiki/Q2080432
-<#Lady_Jean_Hay_(died_1668)>
+<https://www.wikidata.org/wiki/Q75269489>
   # Lady Jean Hay, d. 1668-05-24
   gen:father <https://www.wikidata.org/wiki/Q5481257> ;
-  gen:mother <douglas.ttl#Lady_Elizabeth_Douglas,_Countess_of_Erroll> .
+  gen:mother <https://www.wikidata.org/wiki/Q75390858> .
   # oo 1610-02-06 John Erskine, 20th/3rd Earl of Mar, 1585~ - 1653, https://www.wikidata.org/wiki/Q15821531
-<#Lady_Anne_Hay_(died_1623)>
+<https://www.wikidata.org/wiki/Q75263774>
   # Lady Anne Hay, d. 1623/1625
   gen:father <https://www.wikidata.org/wiki/Q5481257> ;
-  gen:mother <douglas.ttl#Lady_Elizabeth_Douglas,_Countess_of_Erroll> .
+  gen:mother <https://www.wikidata.org/wiki/Q75390858> .
   # oo 1609-04-26 George Seton, 3rd Earl of Winton, 1584-12 – 1650-12-17, https://www.wikidata.org/wiki/Q5544430
 <https://www.wikidata.org/wiki/Q75390854>
   # Lady Elizabeth Hay
   gen:father <https://www.wikidata.org/wiki/Q5481257> ;
-  gen:mother <douglas.ttl#Lady_Elizabeth_Douglas,_Countess_of_Erroll> .
+  gen:mother <https://www.wikidata.org/wiki/Q75390858> .
   # oo 1620-11-27 Hugh Sempill, 5th Lord Sempill, 1592 - 1639-09-19, https://www.wikidata.org/wiki/Q75390852 (hamilton.ttl)
   # oo 1643-05-20b James Douglas, Lord Mordington, 1591 - d. 1656-02-11, https://www.wikidata.org/wiki/Q6132753
-<#Lady_Sophia_Hay>
+<https://www.wikidata.org/wiki/Q75662134>
   # Lady Sophia Hay, d. 1642-03-12~
   gen:father <https://www.wikidata.org/wiki/Q5481257> ;
-  gen:mother <douglas.ttl#Lady_Elizabeth_Douglas,_Countess_of_Erroll> .
-  # oo 1626 John Gordon, 1st and last Viscount Melgum and Lord Aboyne, d. 1630-10-09, gordon.ttl#John_Gordon,_Viscount_Melgum
+  gen:mother <https://www.wikidata.org/wiki/Q75390858> .
+  # oo 1626 John Gordon, 1st and last Viscount Melgum and Lord Aboyne, d. 1630-10-09, https://www.wikidata.org/wiki/Q75395082
 <https://www.wikidata.org/wiki/Q19874012>
   # William Hay, 10th Earl of Erroll, 1597b - 1636-12-07
   gen:father <https://www.wikidata.org/wiki/Q5481257> ;
-  gen:mother <douglas.ttl#Lady_Elizabeth_Douglas,_Countess_of_Erroll> .
+  gen:mother <https://www.wikidata.org/wiki/Q75390858> .
   # oo Lady Anne Lyon, d. 1637-02-08
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q19874012> , <lyon.ttl#Lady_Anne_Lyon> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q19874012> , <https://www.wikidata.org/wiki/Q75266793> ;
 	gen:startDate "1618" .
-<#Anne_Hay>
+<https://www.wikidata.org/wiki/Q75274910>
   # Anne Hay
-  gen:father <#George_Hay,_1st_of_Kellour> .
-  # and Isabel Cheyne
-  # oo 1645-02-11 Sir James Drummond, 2nd of Machany, 1619a - 1675, drummond.ttl#Sir_James_Drummond,_2nd_of_Machany
+  gen:father <https://www.wikidata.org/wiki/Q75291877> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75274092> .
+  # oo 1645-02-11 Sir James Drummond, 2nd of Machany, 1619a - 1675, https://www.wikidata.org/wiki/Q75291874
 <https://www.wikidata.org/wiki/Q75274094>
   # Sir Andrew Hay, d. 1672b
-  gen:father <#George_Hay,_1st_of_Kellour> .
-  # and Isabel Cheyne
+  gen:father <https://www.wikidata.org/wiki/Q75291877> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75274092> .
   # oo Margaret Kinnaird (fraser.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75274094> , <https://www.wikidata.org/wiki/Q75274096> .
 
-<#Lady_Margaret_Hay_(died_1695)>
+<https://www.wikidata.org/wiki/Q75267432>
   # Lady Margaret Hay, d. 1695-04-19~
   gen:father <https://www.wikidata.org/wiki/Q19874012> ;
-  gen:mother <lyon.ttl#Lady_Anne_Lyon> .
-  # oo 1638-02-03 Henry Ker, Lord Ker, d. 1643/1643-02-01, kerr.ttl#Henry_Ker,_Lord_Ker
+  gen:mother <https://www.wikidata.org/wiki/Q75266793> .
+  # oo 1638-02-03 Henry Ker, Lord Ker, d. 1643/1643-02-01, https://www.wikidata.org/wiki/Q75267431 (kerr.ttl)
   # oo 1644-03-15 John Kennedy, 6th Earl of Cassilis, d. 1668-04, https://www.wikidata.org/wiki/Q6242824
 <https://www.wikidata.org/wiki/Q19874009>
   # Gilbert Hay, 11th Earl of Erroll, 1631-06-14 -  1674-10
   gen:father <https://www.wikidata.org/wiki/Q19874012> ;
-  gen:mother <lyon.ttl#Lady_Anne_Lyon> .
+  gen:mother <https://www.wikidata.org/wiki/Q75266793> .
   # oo Lady Katherine Carnegie, d. 1693-10-03
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q19874009> , <carnegie.ttl#Lady_Katherine_Carnegie> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q19874009> , <https://www.wikidata.org/wiki/Q64577102> ;
 	gen:startDate "1658-01-07" .
 <https://www.wikidata.org/wiki/Q16198517>
   # John Hay, 12th Earl of Erroll, d. 1704-12-30
@@ -364,140 +361,154 @@
   gen:mother <https://www.wikidata.org/wiki/Q75274096> .
   # oo Lady Anne Drummond, 1656-01-04~ -  1707a
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q16198517> , <drummond.ttl#Lady_Anne_Drummond_(died_1707a)> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q16198517> , <https://www.wikidata.org/wiki/Q66377913> ;
 	gen:startDate "1674-10-01~" .
 
 <https://www.wikidata.org/wiki/Q19873046>
   # Charles Hay, 13th Earl of Erroll, 1677 - 1717-10-13
   gen:father <https://www.wikidata.org/wiki/Q16198517> ;
-  gen:mother <drummond.ttl#Lady_Anne_Drummond_(died_1707a)> .
+  gen:mother <https://www.wikidata.org/wiki/Q66377913> .
 <https://www.wikidata.org/wiki/Q6779739>
   # Mary Hay, 14th Countess of Erroll, d. 1758-08-19
   gen:father <https://www.wikidata.org/wiki/Q16198517> ;
-  gen:mother <drummond.ttl#Lady_Anne_Drummond_(died_1707a)> .
-  # oo 1722-08~ Hon. Alexander Falconer (Hay of Delgaty), 1682-06 - 1745-07, keith.ttlhttps://www.wikidata.org/wiki/Q75389510
+  gen:mother <https://www.wikidata.org/wiki/Q66377913> .
+  # oo 1722-08~ Hon. Alexander Falconer (Hay of Delgaty), 1682-06 - 1745-07, https://www.wikidata.org/wiki/Q75662726 (keith.ttl)
 <https://www.wikidata.org/wiki/Q75274105>
   # Lady Margaret Hay, 1688 - 1707-05-20a
   gen:father <https://www.wikidata.org/wiki/Q16198517> ;
-  gen:mother <drummond.ttl#Lady_Anne_Drummond_(died_1707a)> .
+  gen:mother <https://www.wikidata.org/wiki/Q66377913> .
   # oo 1707-05~ James Livingston, 5th Earl of Linlithgow, 4th Earl of Callendar, d. 1723-04-25, https://www.wikidata.org/wiki/Q53672437
 
 
 
 # Hay of Dronlaw (of Delgaty, of Park)
-<#Sir_Gilbert_Hay_of_Dronlaw>
+<https://www.wikidata.org/wiki/Q75388225>
   # Sir Gilbert Hay of Dronlaw
   gen:father <https://www.wikidata.org/wiki/Q7795506> ;
   gen:mother <https://www.wikidata.org/wiki/Q75385096> .
-  # oo Elizabeth Reid in 1416
-
-<#Alexander_Hay_of_Dronlaw>
-  # Alexander Hay of Dronlaw
-  gen:father <#Sir_Gilbert_Hay_of_Dronlaw> .
-  # and Elizabeth Reid
-  # oo Marjory Fraser
-
-<#Sir_William_Hay_of_Ardendraught>
-  # Sir William Hay of Ardendraught
-  gen:father <#Alexander_Hay_of_Dronlaw> .
-  # and Marjory Fraser
-  # oo Margaret Leslie
-
-<#Sir_Gilbert_Hay_of_Ardendraught_and_Delgaty>
-  # Sir Gilbert Hay of Ardendraught and Delgaty, d. 1513-09-09
-  gen:father <#Sir_William_Hay_of_Ardendraught> .
-  # and Margaret Leslie
-  # oo Elizabeth Abernethy
+  # oo Elizabeth Reid
   []
-    gen:spouse <#Sir_Gilbert_Hay_of_Ardendraught_and_Delgaty> , <fraser.ttl#Elizabeth_Abernethy> ;
-	gen:startDate "1510-05-31" .
+    gen:spouse <https://www.wikidata.org/wiki/Q75388225> , <https://www.wikidata.org/wiki/Q75388226> ;
+	gen:startDate "1416" .
+
+<https://www.wikidata.org/wiki/Q75965074>
+  # Alexander Hay of Dronlaw
+  gen:father <https://www.wikidata.org/wiki/Q75388225> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75388226> .
+  # oo Marjory Fraser
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75965074> , <https://www.wikidata.org/wiki/Q75965076> .
+
+<https://www.wikidata.org/wiki/Q75965077>
+  # Sir William Hay of Ardendraught
+  gen:father <https://www.wikidata.org/wiki/Q75965074> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75965076> .
+  # oo Margaret Leslie
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75965077> , <https://www.wikidata.org/wiki/Q75965078> .
+
+<https://www.wikidata.org/wiki/Q75965079>
+  # Sir Gilbert Hay of Ardendraught and Delgaty, d. 1513-09-09
+  gen:father <https://www.wikidata.org/wiki/Q75965077> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75965078> .
 <https://www.wikidata.org/wiki/Q6135746>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75965092> ;
   # James Hay, d. 1538
   # Bishop of Ross 1523 - 1538
-  gen:father <#Sir_William_Hay_of_Ardendraught> .
-  # and Margaret Leslie
+  gen:father <https://www.wikidata.org/wiki/Q75965077> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75965078> .
+
+<https://www.wikidata.org/wiki/Q110929595>
+  # Alexander Hay, 4th of Delgaty
+  gen:father <https://www.wikidata.org/wiki/Q75965079> .
+  # oo Elizabeth Abernethy (fraser.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110929595> , <https://www.wikidata.org/wiki/Q75965081> ;
+	gen:startDate "1510-05-31" .
+<https://www.wikidata.org/wiki/Q75965084>
+  # William Hay of Delgaty, d. 1548
+  gen:father <https://www.wikidata.org/wiki/Q75965079> .
+  # oo Elizabeth Barclay
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75965084> , <https://www.wikidata.org/wiki/Q75965085> .
+<https://www.wikidata.org/wiki/Q75965093>
+  # Thomas Hay, 1518~ - 1580~
+  gen:father <https://www.wikidata.org/wiki/Q6135746> .
+  # oo Isobel Kennedy
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75965093> , <https://www.wikidata.org/wiki/Q75965095> ;
+	gen:startDate "1572-04b" .
+  # oo Katharine Kennedy
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75965093> , <https://www.wikidata.org/wiki/Q76091169> ;
+	gen:startDate "1579b" .
 
 <https://www.wikidata.org/wiki/Q75389510>
   # Alexander Hay of Delgaty, d. 1546
-  gen:father <#Sir_Gilbert_Hay_of_Ardendraught_and_Delgaty> ;
-  gen:mother <fraser.ttl#Elizabeth_Abernethy> .
+  gen:father <https://www.wikidata.org/wiki/Q110929595> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75965081> .
   # oo Mariota Shaw
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q75389510> , <#Mariota_Shaw> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75389510> , <https://www.wikidata.org/wiki/Q75965083> ;
 	gen:startDate "1532-03" ;
 	gen:divorceDate "1534/1535" .
   # oo Jean Forbes, 1519b - 1554-11-20a
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75389510> , <https://www.wikidata.org/wiki/Q75389505> ;
 	gen:startDate "1545-11-17a" .
-<#William_Hay_of_Delgaty>
-  # William Hay of Delgaty, d. 1548
-  gen:father <#Sir_Gilbert_Hay_of_Ardendraught_and_Delgaty> ;
-  gen:mother <fraser.ttl#Elizabeth_Abernethy> .
-  # oo Elizabeth Barclay
-<#Thomas_Hay_(died_1580~)>
-  # Thomas Hay, 1518~ - 1580~
-  gen:father <https://www.wikidata.org/wiki/Q6135746> .
-  # oo Isobel Kennedy
-  []
-    gen:spouse <#Thomas_Hay_(died_1580~)> , <#Isobel_Kennedy> ;
-	gen:startDate "1572-04b" .
-  # oo Katharine Kennedy
-  []
-    gen:spouse <#Thomas_Hay_(died_1580~)> , <kennedy.ttl#Katharine_Kennedy> ;
-	gen:startDate "1579b" .
 
-<#Thomas_Hay_of_Park_(died_1628)>
+<https://www.wikidata.org/wiki/Q75965097>
   # Thomas Hay of Park, d. 1628-09-12~
-  gen:father <#Thomas_Hay_(died_1580~)> ;
-  gen:mother <#Isobel_Kennedy> .
+  gen:father <https://www.wikidata.org/wiki/Q75965093> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75965095> .
   # oo Janet Macdowall, daughter of Uchtred Macdowall, 11th of Garthland (d. 1600-06-11)
   []
-    gen:spouse <#Thomas_Hay_of_Park_(died_1628)> , <#Janet_Macdowall> .
+    gen:spouse <https://www.wikidata.org/wiki/Q75965097> , <https://www.wikidata.org/wiki/Q75965100> .
 
-<#Thomas_Hay_of_Park_(died_1633)>
+<https://www.wikidata.org/wiki/Q75965101>
   # Thomas Hay of Park, d. 1633
-  gen:father <#Thomas_Hay_of_Park_(died_1628)> .
+  gen:father <https://www.wikidata.org/wiki/Q75965097> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75965100> .
   # oo Margaret Macdowall
   []
-    gen:spouse <#Thomas_Hay_of_Park_(died_1633)> , <#Margaret_Macdowall> .
+    gen:spouse <https://www.wikidata.org/wiki/Q75965101> , <https://www.wikidata.org/wiki/Q75965103> .
 
-<#Thomas_Hay_of_Park_(died_1683)>
+<https://www.wikidata.org/wiki/Q75406260>
   # Thomas Hay of Park, 1616~ - 1683-03a/-08b
-  gen:father <#Thomas_Hay_of_Park_(died_1633)> ;
-  gen:mother <#Margaret_Macdowall> .
+  gen:father <https://www.wikidata.org/wiki/Q75965101> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75965103> .
   # oo Jean Hamilton, d. 1656-10-24
   []
-    gen:spouse <#Thomas_Hay_of_Park_(died_1683)> , <hamilton.ttl#Jean_Hamilton_(died_1656)> .
+    gen:spouse <https://www.wikidata.org/wiki/Q75406260> , <https://www.wikidata.org/wiki/Q75406265> .
   # oo Margaret Kennedy, daughter of unknown Kennedy
   []
-    gen:spouse <#Thomas_Hay_of_Park_(died_1683)> , <#Margaret_Kennedy> .
+    gen:spouse <https://www.wikidata.org/wiki/Q75406260> , <https://www.wikidata.org/wiki/Q75965107> .
 
 <https://www.wikidata.org/wiki/Q75405167>
   # Jane Hay
-  gen:father <#Thomas_Hay_of_Park_(died_1683)> ;
-  gen:mother <hamilton.ttl#Jean_Hamilton_(died_1656)> .
-  # oo 1656-10-24 Sir Andrew Agnew of Lochnaw, 3rd Baronet, d. 1702-06~, https://www.wikidata.org/wiki/Q7525990 (stuart.ttl)
-<#Sir_Thomas_Hay_of_Park,_1st_Baronet>
+  gen:father <https://www.wikidata.org/wiki/Q75406260> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75406265> .
+  # oo 1656-10-24 Sir Andrew Agnew of Lochnaw, 3rd Baronet, d. 1702-06~, https://www.wikidata.org/wiki/Q7525990 (kennedy.ttl)
+<https://www.wikidata.org/wiki/Q75405169>
   # Sir Thomas Hay of Park younger, 1st Baronet, 1636~ - 1666-05-01a/1667-03-30b
   # 1st Baronet Hay, of Park 1663-08-25
-  gen:father <#Thomas_Hay_of_Park_(died_1683)> ;
-  gen:mother <hamilton.ttl#Jean_Hamilton_(died_1656)> .
+  gen:father <https://www.wikidata.org/wiki/Q75406260> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75406265> .
   # oo Marion Hamilton, b. 1638-05-10
   []
-    gen:spouse <#Sir_Thomas_Hay_of_Park,_1st_Baronet> , <hamilton.ttl#Marion_Hamilton_(died_1638)> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75405169> , <https://www.wikidata.org/wiki/Q75405170> ;
 	gen:startDate "1661" .
 <https://www.wikidata.org/wiki/Q75454906>
   # Elizabeth Hay, b. 1640~
-  gen:father <#Thomas_Hay_of_Park_(died_1683)> ;
-  gen:mother <#Margaret_Kennedy> .
+  gen:father <https://www.wikidata.org/wiki/Q75406260> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75965107> .
   # oo Sir William Maxwell of Monreith, 1st Baronet, 1635~ - 1709-04, https://www.wikidata.org/wiki/Q52555674
 
 <https://www.wikidata.org/wiki/Q75406257>
   # Sir Charles Hay of Park, 2nd Baronet, 1662 - 1733
-  gen:father <#Sir_Thomas_Hay_of_Park,_1st_Baronet> ;
-  gen:mother <hamilton.ttl#Marion_Hamilton_(died_1638)> .
-  # oo Grizel Agnew (stuart.ttl)
+  gen:father <https://www.wikidata.org/wiki/Q75405169> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75405170> .
+  # oo Grizel Agnew (kennedy.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75406257> , <https://www.wikidata.org/wiki/Q75406256> ;
 	gen:startDate "1685" .
@@ -510,156 +521,167 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75965116> , <https://www.wikidata.org/wiki/Q75965120> ;
 	gen:startDate "1708" .
-<#James_Hay_(died_1752)>
+<https://www.wikidata.org/wiki/Q75965134>
   # James Hay, d. 1752
   gen:father <https://www.wikidata.org/wiki/Q75406257> ;
   gen:mother <https://www.wikidata.org/wiki/Q75406256> .
   # oo Dorothea Crichton, daughter of William Crichton of Crawfordton
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75965134> , <https://www.wikidata.org/wiki/Q75965135> .
 
-<#Sir_Thomas_Hay_of_Park,_3rd_Baronet>
+<https://www.wikidata.org/wiki/Q75965123>
   # Sir Thomas Hay of Park, 3rd Baronet, 1730 - 1778
   gen:father <https://www.wikidata.org/wiki/Q75965116> ;
   gen:mother <https://www.wikidata.org/wiki/Q75965120> .
   # oo Jean Blair, daughter of John Blair of Dunskey
   []
-    gen:spouse <#Sir_Thomas_Hay_of_Park,_3rd_Baronet> , <#Jean_Blair> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75965123> , <https://www.wikidata.org/wiki/Q75965121> ;
 	gen:startDate "1747-12-09" .
-<#William_Hay_(died_1776~)>
+<https://www.wikidata.org/wiki/Q75965136>
   # William Hay, d. 1776~
-  gen:father <#James_Hay_(died_1752)> .
-  # and Dorothea Crichton
+  gen:father <https://www.wikidata.org/wiki/Q75965134> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75965135> .
   # oo Mary Cant, daughter of Ludovick Cant of Thurstone
   []
-    gen:spouse <#William_Hay_(died_1776~)> , <#Mary_Cant> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75965136> , <https://www.wikidata.org/wiki/Q75965140> ;
 	gen:startDate "1752" .
 
-<#Sir_Thomas_Hay_of_Park,_4th_Baronet>
+<https://www.wikidata.org/wiki/Q75451509>
   # Sir Thomas Hay of Park, 4th Baronet, d. 1794-04-30
-  gen:father <#Sir_Thomas_Hay_of_Park,_3rd_Baronet> ;
-  gen:mother <#Jean_Blair> .
-<#Susan_Hay>
+  gen:father <https://www.wikidata.org/wiki/Q75965123> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75965121> .
+<https://www.wikidata.org/wiki/Q75451489>
   # Susan Hay, 1749 - 1825
-  gen:father <#Sir_Thomas_Hay_of_Park,_3rd_Baronet> ;
-  gen:mother <#Jean_Blair> .
-  # oo 1779-04-15 Sir John Dalrymple-Hay of Park Place, 1st Baronet, 1749 - 1812-05-12, dalrymple.ttl#Sir_John_Dalrymple-Hay_of_Park_Place,_1st_Baronet
+  gen:father <https://www.wikidata.org/wiki/Q75965123> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75965121> .
+  # oo 1779-04-15 Sir John Dalrymple-Hay of Park Place, 1st Baronet, 1749 - 1812-05-12, https://www.wikidata.org/wiki/Q75423770 (dalrymple.ttl)
 <https://www.wikidata.org/wiki/Q75965125>
   # Alexander Hay, b. 1750~
-  gen:father <#Sir_Thomas_Hay_of_Park,_3rd_Baronet> ;
-  gen:mother <#Jean_Blair> .
+  gen:father <https://www.wikidata.org/wiki/Q75965123> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75965121> .
   # oo Susan Maxwell, d. 1792-02-22
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75965125> , <https://www.wikidata.org/wiki/Q75965129> .
-<#Sir_James_Hay_of_Park,_5th_Baronet>
+<https://www.wikidata.org/wiki/Q75965141>
   # Sir James Hay of Park, 5th Baronet, 1775~ - 1794-08
-  gen:father <#William_Hay_(died_1776~)> ;
-  gen:mother <#Mary_Cant> .
+  gen:father <https://www.wikidata.org/wiki/Q75965136> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75965140> .
   # oo Margaret Jane Campbell, 1757-01-28 - 1837-04, daughter of Colin Campbell and Margaret Foster
   []
-    gen:spouse <#Sir_James_Hay_of_Park,_5th_Baronet> , <#Margaret_Jane_Campbell> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75965141> , <https://www.wikidata.org/wiki/Q75667662> ;
 	gen:startDate "1792-10-27" .
-<#Lewis_Hay>
+<https://www.wikidata.org/wiki/Q75965146>
   # Lewis Hay, d. 1799-08-27
-  gen:father <#William_Hay_(died_1776~)> ;
-  gen:mother <#Mary_Cant> .
+  gen:father <https://www.wikidata.org/wiki/Q75965136> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75965140> .
   # oo Barbara Craigie, 1763~ - 1815-12-13, daughter of John Craigie of Glendoick
   []
-    gen:spouse <#Lewis_Hay> , <#Barbara_Craigie> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75965146> , <https://www.wikidata.org/wiki/Q75965148> ;
 	gen:startDate "1784" .
 
-<#Sir_William_Hay_of_Park,_6th_Baronet>
+<https://www.wikidata.org/wiki/Q75965144>
   # Sir William Hay of Park, 6th Baronet, 1793 - 1801-10-07
-  gen:father <#Sir_James_Hay_of_Park,_5th_Baronet> ;
-  gen:mother <#Margaret_Jane_Campbell> .
+  gen:father <https://www.wikidata.org/wiki/Q75965141> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75667662> .
 <https://www.wikidata.org/wiki/Q75965151>
   # Sir John Hay of Park, 7th Baronet, 1799-08-29 - 1862-06-15
-  gen:father <#Lewis_Hay> ;
-  gen:mother <#Barbara_Craigie> .
+  gen:father <https://www.wikidata.org/wiki/Q75965146> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75965148> .
   # oo Sarah Beresford Cossins, 1816 - 1855-12-29 (audley.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75965151> , <https://www.wikidata.org/wiki/Q75965158> ;
 	gen:startDate "1836-06-29" .
 
-<#Sir_Arthur_Hay_of_Park,_8th_Baronet>
+<https://www.wikidata.org/wiki/Q75861963>
   # Sir Arthur Graham Hay of Park, 8th Baronet, 1839-06-05 - 1889-11-18
   gen:father <https://www.wikidata.org/wiki/Q75965151> ;
   gen:mother <https://www.wikidata.org/wiki/Q75965158> .
   # oo Thomasina Isabella Johnston, d. 1918-11-30, daughter of John Brett Johnston
   []
-    gen:spouse <#Sir_Arthur_Hay_of_Park,_8th_Baronet> , <#Thomasina_Isabella_Johnston> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75861963> , <https://www.wikidata.org/wiki/Q75965176> ;
 	gen:startDate "1864-06-29" .
 
-<#Sir_Lewis_Hay_of_Park,_9th_Baronet>
+<https://www.wikidata.org/wiki/Q75965200>
   # Sir Lewis John Erroll Hay of Park, 9th Baronet, 1866-11-17 - 1923-05-14
-  gen:father <#Sir_Arthur_Hay_of_Park,_8th_Baronet> ;
-  gen:mother <#Thomasina_Isabella_Johnston> .
+  gen:father <https://www.wikidata.org/wiki/Q75861963> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75965176> .
   # oo Lizabel Annie Macdonald, d. 1957-03-27, daughter of Lachlan Macdonald of Skeabost
   []
-    gen:spouse <#Sir_Lewis_Hay_of_Park,_9th_Baronet> , <#Lizabel_Annie_Macdonald> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75965200> , <https://www.wikidata.org/wiki/Q75965203> ;
 	gen:startDate "1895-09-25" .
 
-<#Sir_Arthur_Hay_of_Park,_10th_Baronet>
+<https://www.wikidata.org/wiki/Q75965226>
   # Sir Arthur Thomas Erroll Hay of Park, 10th Baronet, 1909-04-13 - 1993-02-03
-  gen:father <#Sir_Lewis_Hay_of_Park,_9th_Baronet> ;
-  gen:mother <#Lizabel_Annie_Macdonald> .
+  gen:father <https://www.wikidata.org/wiki/Q75965200> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75965203> .
   # oo Hertha Hedwig Paula Louise Stölzle, d. 1994-01-27, daughter of Ludwig Stölzle
   []
-    gen:spouse <#Sir_Arthur_Hay_of_Park,_10th_Baronet> , <#Hertha_Hedwig_Paula_Louise_Stölzle> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75965226> , <https://www.wikidata.org/wiki/Q75965228> ;
 	gen:startDate "1935-03-04" ;
 	gen:divorceDate "1942" .
   # oo Rosemary Evelyn Anne Lambert, d. 1997-07-19, daughter of Vice-Admiral Audrey Lambert
   []
-    gen:spouse <#Sir_Arthur_Hay_of_Park,_10th_Baronet> , <#Rosemary_Evelyn_Anne_Lambert> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75965226> , <https://www.wikidata.org/wiki/Q76091269> ;
 	gen:startDate "1942-12-22" .
 
-<#Sir_John_Hay_of_Park,_11th_Baronet>
+<https://www.wikidata.org/wiki/Q75965066>
   # Sir John Erroll Audley Hay of Park, 11th Baronet, b. 1935-12-03
-  gen:father <#Sir_Arthur_Hay_of_Park,_10th_Baronet> ;
-  gen:mother <#Hertha_Hedwig_Paula_Louise_Stölzle> .
+  gen:father <https://www.wikidata.org/wiki/Q75965226> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75965228> .
 
 
 
 # Hay of Leys (Megginch and Kinnoull)
-<#William_de_Haya,_of_Leys> # -> Hay of Kinnoull
+<https://www.wikidata.org/wiki/Q75335340> # -> Hay of Kinnoull
+  owl:sameAs <https://www.wikidata.org/wiki/Q117378757> ;
   # William de Haya, of Leys, d. 1251-04-29a
-  gen:father <#David_de_la_Haye,_2nd_of_Erroll> ;
-  gen:mother <#Ethna_of_Strathearn> .
+  gen:father <https://www.wikidata.org/wiki/Q75662117> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75662136> .
 
-<#???_de_Haya,_of_Leys>
+<https://www.wikidata.org/wiki/Q117378756>
   # ??? de Haya, of Leys
-  gen:father <#William_de_Haya,_of_Leys> .
+  gen:father <https://www.wikidata.org/wiki/Q75335340> .
 
-<#Edmund_de_Haya,_of_Leys_and_Balgarvie>
-  # Edmund de Haya, of Leys and Balgarvie, d. 1312a
-  gen:father <#???_de_Haya,_of_Leys> .
+<https://www.wikidata.org/wiki/Q117378755>
+  # Edmund de Haya, of Leys
+  gen:father <https://www.wikidata.org/wiki/Q117378756> .
 
-<#???_Hay,_of_Leys_1>
+<https://www.wikidata.org/wiki/Q117378702>
+  # William de Haya, of Leys
+  gen:father <https://www.wikidata.org/wiki/Q117378755> .
+
+<https://www.wikidata.org/wiki/Q117378701>
   # ??? Hay, of Leys
-  gen:father <#Edmund_de_Haya,_of_Leys_and_Balgarvie> .
+  gen:father <https://www.wikidata.org/wiki/Q117378702> .
 
-<#???_Hay,_of_Leys_2>
+<https://www.wikidata.org/wiki/Q117378700>
   # ??? Hay, of Leys
-  gen:father <#???_Hay,_of_Leys_1> .
+  gen:father <https://www.wikidata.org/wiki/Q117378701> .
 
-<#Edmund_Hay,_of_Leys>
+<https://www.wikidata.org/wiki/Q117378699>
   # Edmund Hay, of Leys, d. 1472-06-18b
-  gen:father <#???_Hay,_of_Leys_2> .
+  gen:father <https://www.wikidata.org/wiki/Q117378700> .
 
-<#Peter_Hay,_1st_of_Megginch>
+<https://www.wikidata.org/wiki/Q75811919>
   gen:name "Peter Hay, 1st of Megginch"@en ;
   gen:deathDate "1496-11-15~" ;
-  gen:father <#Edmund_Hay,_of_Leys> .
+  gen:father <https://www.wikidata.org/wiki/Q117378699> .
 
-<#Edmund_Hay,_2nd_of_Megginch>
+<https://www.wikidata.org/wiki/Q75811923>
   gen:name "Edmund Hay, 2nd of Megginch"@en ;
   gen:deathDate "1543-11-30~" ;
-  gen:father <#Peter_Hay,_1st_of_Megginch> .
+  gen:father <https://www.wikidata.org/wiki/Q75811919> ;
+  gen:mother <https://www.wikidata.org/wiki/Q117378704> . # NN
+  # oo Janet Boyd
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75811923> , <https://www.wikidata.org/wiki/Q75811925> .
 
 <https://www.wikidata.org/wiki/Q75811929>
   gen:name "Peter Hay, 3rd of Megginch"@en ;
   gen:birthDate "1505a" ;
   gen:deathDate "1565-12-10" ;
-  gen:father <#Edmund_Hay,_2nd_of_Megginch> ;
-  gen:mother <#Janet_Boyd> .
+  gen:father <https://www.wikidata.org/wiki/Q75811923> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75811925> .
   # oo Margaret Crichton, b. 1510 (leslie.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75811929> , <https://www.wikidata.org/wiki/Q75811936> ;
@@ -671,21 +693,35 @@
   gen:deathDate "1596-09-10" ;
   gen:father <https://www.wikidata.org/wiki/Q75811929> ;
   gen:mother <https://www.wikidata.org/wiki/Q75811936> .
-  # Margaret Ogilvy, 1536~ - 1596-09-10
+  # oo Margaret Ogilvy, 1536~ - 1596-09-10
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75275257> , <https://www.wikidata.org/wiki/Q75275258> ;
 	gen:startDate "1554-05-12~" .
-<#Sir_James_Hay>
-  # Sir James Hay, d. 1610
+<https://www.wikidata.org/wiki/Q75545211>
+  # Sir James Hay, of Kingask, d. 1610
   gen:father <https://www.wikidata.org/wiki/Q75811929> ;
   gen:mother <https://www.wikidata.org/wiki/Q75811936> .
   # oo Margaret Murray, daughter of John Murray of Polmaise
-<#Katherine_Hay>
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75545211> , <https://www.wikidata.org/wiki/Q75811949> .
+<https://www.wikidata.org/wiki/Q75811971>
   # Katherine Hay
   gen:father <https://www.wikidata.org/wiki/Q75811929> ;
   gen:mother <https://www.wikidata.org/wiki/Q75811936> .
-  # oo George Drummond, 1st of Newton of Blair, d. 1594-01-04, drummond.ttl#George_Drummond,_1st_of_Newton_of_Blair
+  # oo Robert Monuer of Balluny, https://www.wikidata.org/wiki/Q75811973
+  # oo George Drummond, 1st of Newton of Blair, d. 1594-01-04, https://www.wikidata.org/wiki/Q75811939
 
+<https://www.wikidata.org/wiki/Q75662697>
+  # Patrick Hay, 5th of Megginch, d. 1603-08
+  gen:father <https://www.wikidata.org/wiki/Q75275257> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75275258> .
+  # oo Isabel Bryson, daughter of Patrick Bryson of Pitcullane
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75662697> , <https://www.wikidata.org/wiki/Q75811991> .
+  # oo Isabel Cheyne
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75662697> , <https://www.wikidata.org/wiki/Q75274092> ;
+	gen:startDate "1596-10-29" .
 <https://www.wikidata.org/wiki/Q1507538>
   gen:name "George Hay, 1st Earl of Kinnoull"@en ;
   # 1st Viscount of Dupplin, 1st Lord Hay of Kinfauns 1627-05-04
@@ -698,22 +734,24 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q1507538> , <https://www.wikidata.org/wiki/Q75451928> ;
 	gen:startDate "1595-11-15b" .
-<#Peter_Hay,_of_Kirkland>
+<https://www.wikidata.org/wiki/Q75275261>
   # Peter Hay, of Kirkland, 1629-05-29~
   gen:father <https://www.wikidata.org/wiki/Q75275257> ;
   gen:mother <https://www.wikidata.org/wiki/Q75275258> .
   # oo Margaret Boyd
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75275261> , <https://www.wikidata.org/wiki/Q75275263> .
 <https://www.wikidata.org/wiki/Q3023437>
   # James Hay, 1st Earl of Carlisle, 1580~ - 1636-04-25
   # 1st Lord Hay 1606-06-01
   # 1st Baron Hay of Sawley, co. York 1615-06-29
   # 1st Viscount Doncaster 1618-07-05
   # 1st Earl of Carlisle, co. Cumberland 1622-09-13
-  gen:father <#Sir_James_Hay> .
-  # and Margaret Murray
-  # oo Lady Honora Denny, d. 1614-08~
+  gen:father <https://www.wikidata.org/wiki/Q75545211> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75811949> .
+  # oo Lady Honora Denny, d. 1614-08~ (grey.ttl)
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q3023437> , <#Lady_Honora_Denny> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q3023437> , <https://www.wikidata.org/wiki/Q75253574> ;
 	gen:startDate "1608-01-06" .
   # oo Lady Lucy Percy, 1499 - 1660-11-05
   []
@@ -721,11 +759,18 @@
 	gen:startDate "1617-11-06" .
 <https://www.wikidata.org/wiki/Q75772692>
   # Agnes Hay
-  gen:father <#Sir_James_Hay> .
-  # and Margaret Murray
-  # oo 1612b Sir George Preston of Craigmillar, d. 1612b
+  gen:father <https://www.wikidata.org/wiki/Q75545211> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75811949> .
+  # oo 1612b Sir George Preston of Craigmillar, d. 1612b, https://www.wikidata.org/wiki/Q75772694
   # oo 1612-07-14 James Cuninghame, 7th Earl of Glencairn, 1552~ - 1630-03a, https://www.wikidata.org/wiki/Q6132032 (borthwick.ttl)
 
+<https://www.wikidata.org/wiki/Q75824578>
+  # Peter Hay, 6th of Megginch, 1576 - 1616-08-12
+  gen:father <https://www.wikidata.org/wiki/Q75662697> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75811991> .
+  # oo Elizabeth Cheyne, d. 1634b
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75824578> , <https://www.wikidata.org/wiki/Q75824943> .
 <https://www.wikidata.org/wiki/Q75264082>
   # Lady Margaret Hay, d. 1650-08-16b
   gen:father <https://www.wikidata.org/wiki/Q1507538> ;
@@ -737,96 +782,133 @@
   gen:mother <https://www.wikidata.org/wiki/Q75451928> .
   # oo Lady Anne Douglas, d. 1667-12~
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q19874922> , <douglas.ttl#Lady_Anne_Douglas_(died_1667)> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q19874922> , <https://www.wikidata.org/wiki/Q75274017> ;
 	gen:startDate "1622-09-07" .
-<#Francis_Hay,_of_Balhoussie>
+<https://www.wikidata.org/wiki/Q75275264>
   # Francis Hay, of Balhoussie and Rattray, d. 1654~
-  gen:father <#Peter_Hay,_of_Kirkland> .
-  # and Margaret Boyd
+  gen:father <https://www.wikidata.org/wiki/Q75275261> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75275263> .
   # oo Janet Halyburton, daughter of James Halyburton of Essie
   []
-    gen:spouse <#Francis_Hay,_of_Balhoussie> , <#Janet_Halyburton> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75275264> , <https://www.wikidata.org/wiki/Q75275266> ;
 	gen:startDate "1618-07-02" .
   # oo Elspeth Oliphant, daughter of John Oliphant of Bachilton
   []
-    gen:spouse <#Francis_Hay,_of_Balhoussie> , <#Elspeth_Oliphant> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75275264> , <https://www.wikidata.org/wiki/Q75812010> ;
 	gen:startDate "1637-04-26" .
+<https://www.wikidata.org/wiki/Q75812056>
+  # Agnes Hay
+  gen:father <https://www.wikidata.org/wiki/Q75275261> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75275263> .
+  # oo 1617-08-24 David Rattray of Craighall, 17th of Rattray, d. 1654, https://www.wikidata.org/wiki/Q76135656
 <https://www.wikidata.org/wiki/Q6135743>
   # James Hay, 2nd Earl of Carlisle, 1612~ - 1660-10-30
   gen:father <https://www.wikidata.org/wiki/Q3023437> ;
-  gen:mother <#Lady_Honora_Denny> .
+  gen:mother <https://www.wikidata.org/wiki/Q75253574> .
   # oo Lady Margaret Russell, d. 1676-11
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q6135743> , <russell.ttl#Lady_Margaret_Russell_(died_1676)> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q6135743> , <https://www.wikidata.org/wiki/Q55902241> ;
 	gen:startDate "1632-03-21" .
 
-<#Lady_Mary_Hay_(died_1667)>
+<https://www.wikidata.org/wiki/Q76322219>
+  # Peter Hay, 7th of Megginch
+  gen:father <https://www.wikidata.org/wiki/Q75824578> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75824943> .
+  # oo Mary Scrymgeour
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76322219> , <https://www.wikidata.org/wiki/Q76322220> ;
+	gen:startDate "1623-07-25" .
+<https://www.wikidata.org/wiki/Q75262790>
   # Lady Mary Hay, d. 1667-11~
   gen:father <https://www.wikidata.org/wiki/Q19874922> ;
-  gen:mother <douglas.ttl#Lady_Anne_Douglas_(died_1667)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75274017> .
   # oo 1662-02-06 George Keith, 7th Earl Marischal, 1614a - 1604-03, https://www.wikidata.org/wiki/Q52268554
 <https://www.wikidata.org/wiki/Q19832426>
   # George Hay, 3rd Earl of Kinnoull, d. 1649-11-20~
   gen:father <https://www.wikidata.org/wiki/Q19874922> ;
-  gen:mother <douglas.ttl#Lady_Anne_Douglas_(died_1667)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75274017> .
 <https://www.wikidata.org/wiki/Q19874923>
   # William Hay, 4th Earl of Kinnoull, d. 1677-03~
   gen:father <https://www.wikidata.org/wiki/Q19874922> ;
-  gen:mother <douglas.ttl#Lady_Anne_Douglas_(died_1667)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75274017> .
   # oo Lady Mary Brudenell, 1636-01-07 - 1665~
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q19874923> , <#Lady_Mary_Brudenell_(died_1665~)> .
+    gen:spouse <https://www.wikidata.org/wiki/Q19874923> , <https://www.wikidata.org/wiki/Q75275248> .
   # oo Lady Catherine Cecil, d. 1683~
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q19874923> , <#Lady_Catherine_Cecil_(died_1683~)> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q19874923> , <https://www.wikidata.org/wiki/Q75275250> ;
 	gen:startDate "1655a/1677b" .
-<#George_Hay,_of_Balhoussie>
+<https://www.wikidata.org/wiki/Q75275269>
   # George Hay, of Balhoussie, d. 1672-10
-  gen:father <#Francis_Hay,_of_Balhoussie> ;
-  gen:mother <#Janet_Halyburton> .
+  gen:father <https://www.wikidata.org/wiki/Q75275264> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75275266> .
   # oo Marion Nicolson, d. 1663-07~, daughter of Sir Thomas Nicolson
   []
-    gen:spouse <#George_Hay,_of_Balhoussie> , <#Marion_Nicolson> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75275269> , <https://www.wikidata.org/wiki/Q75256873> ;
 	gen:startDate "1656-04-28" .
+<https://www.wikidata.org/wiki/Q75811997>
+  # Beatrice Hay,  d. 1670
+  gen:father <https://www.wikidata.org/wiki/Q75275264> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75275266> .
+  # oo 1652-04-29 Sir George Hay of Megginch, 1632-02-13 - 1670, https://www.wikidata.org/wiki/Q76135668
 
+<https://www.wikidata.org/wiki/Q76135668>
+  # Sir George Hay of Megginch, 1632-02-13 - 1670
+  gen:father <https://www.wikidata.org/wiki/Q76322219> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76322220> .
+  # oo Beatrice Hay, d. 1670
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76135668> , <https://www.wikidata.org/wiki/Q75811997> ;
+	gen:startDate "1652-04-29" .
 <https://www.wikidata.org/wiki/Q19902310>
   # George Hay, 5th Earl of Kinnoull, d. 1687
   gen:father <https://www.wikidata.org/wiki/Q19874923> ;
-  gen:mother <#Lady_Catherine_Cecil_(died_1683~)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75275250> .
 <https://www.wikidata.org/wiki/Q20027908>
   # William Hay, 6th Earl of Kinnoull, d. 1709-05-10
   gen:father <https://www.wikidata.org/wiki/Q19874923> ;
-  gen:mother <#Lady_Catherine_Cecil_(died_1683~)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75275250> .
 <https://www.wikidata.org/wiki/Q20027902>
   # Thomas Hay, 7th Earl of Kinnoull, 1660~ - 1719-01-05
   # 1st Viscount of Dupplin, 7th Lord Hay of Kinfauns 1697-12-31
   # 7th Earl of Kinnoull 1709-05-10
-  gen:father <#George_Hay,_of_Balhoussie> ;
-  gen:mother <#Marion_Nicolson> .
+  gen:father <https://www.wikidata.org/wiki/Q75275269> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75256873> .
   # oo Hon. Margaret Drummond, d. 1696-03-21
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q20027902> , <drummond.ttl#Margaret_Drummond_(died_1696)> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q20027902> , <https://www.wikidata.org/wiki/Q75269505> ;
 	gen:startDate "1683-12-20" .
 
-<https://www.wikidata.org/wiki/Q75274105>
+<https://www.wikidata.org/wiki/Q76322222>
+  # Marie Hay, b. 1653-04-20
+  gen:father <https://www.wikidata.org/wiki/Q76135668> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75811997> .
+  # oo 1676-04-11 John Murray, 2nd of Pitcullen, https://www.wikidata.org/wiki/Q76322223
+<https://www.wikidata.org/wiki/Q76135669>
+  # Elizabeth Hay, b. 1658-11-13
+  gen:father <https://www.wikidata.org/wiki/Q76135668> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75811997> .
+  # oo 1682-12-08 James Rattray of Craighall-Rattray, 19th of Rattray, d. 1684-08-02, https://www.wikidata.org/wiki/Q76135667
+  # oo Hon. John Galloway, https://www.wikidata.org/wiki/Q76309015
+<https://www.wikidata.org/wiki/Q75269502>
   # Lady Margaret Hay, 1686-09-30 - 1707-04-25
   gen:father <https://www.wikidata.org/wiki/Q20027902> ;
-  gen:mother <drummond.ttl#Margaret_Drummond_(died_1696)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75269505> .
   # oo 1703-04-06 John Erskine, 23rd/6th Earl of Mar, 1675 - 1732-05, https://www.wikidata.org/wiki/Q936913
 <https://www.wikidata.org/wiki/Q75271276>
   # Lady Elizabeth Hay, d. 1723~
   gen:father <https://www.wikidata.org/wiki/Q20027902> ;
-  gen:mother <drummond.ttl#Margaret_Drummond_(died_1696)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75269505> .
   # oo 1714 James Ogilvy, 5th Earl of Findlater, 1689~ - 1764-07-09, https://www.wikidata.org/wiki/Q75271275
 <https://www.wikidata.org/wiki/Q5540335>
   # George Henry Hay, 8th Earl of Kinnoull, 1689-06-23 - 1758-07-28
   # 1st Baron Hay of Pedwardine, co. Hereford 1711-12-31
   # 8th Lord Hay of Kinfauns, 8th Viscount of Dupplin [S., 1633], 2nd Viscount of Dupplin [S., 1697], 8th Earl of Kinnoull 1719-01-05
   gen:father <https://www.wikidata.org/wiki/Q20027902> ;
-  gen:mother <drummond.ttl#Margaret_Drummond_(died_1696)> .
-  # oo Lady Abigail Harley, d. 1750-07-18
+  gen:mother <https://www.wikidata.org/wiki/Q75269505> .
+  # oo Lady Abigail Harley, d. 1750-07-18 (de_vere.ttl)
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q5540335> , <de_vere.ttl#Lady_Abigail_Harley> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q5540335> , <https://www.wikidata.org/wiki/Q75275273> ;
 	gen:startDate "1709-09-01~" .
 <https://www.wikidata.org/wiki/Q6238361>
   # John Hay of Cromlix, 1691 - 1740-09-24
@@ -834,19 +916,19 @@
   # 1st Baron Hay 1727-04-03, Jacobite
   # 1st Duke of Inverness 1727-04-04, Jacobite
   gen:father <https://www.wikidata.org/wiki/Q20027902> ;
-  gen:mother <drummond.ttl#Margaret_Drummond_(died_1696)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75269505> .
   # oo Hon. Marjory Murray, d. 1765~
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q6238361> , <murray.ttl#Marjory_Murray_(died_1765~)> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q6238361> , <https://www.wikidata.org/wiki/Q75812041> ;
 	gen:startDate "1715-06-02" .
 
 <https://www.wikidata.org/wiki/Q965796>
   # Thomas Hay, 9th Earl of Kinnoull, 1710-06-04 - 1787-12-27
   gen:father <https://www.wikidata.org/wiki/Q5540335> ;
-  gen:mother  <de_vere.ttl#Lady_Abigail_Harley> .
+  gen:mother <https://www.wikidata.org/wiki/Q75275273> .
   # oo Constantia Kyrle-Ernle, 1717~ - 1753-06-29, daughter of John Kyrle-Ernle and Constantia Rolt
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q965796> , <#Constantia_Kyrle-Ernle> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q965796> , <https://www.wikidata.org/wiki/Q75275274> ;
 	gen:startDate "1741-06-12" .
 <https://www.wikidata.org/wiki/Q772812>
   # Most Rev. Hon. Robert Hay-Drummond, 1711-11-10 - 1776-12-10
@@ -854,7 +936,7 @@
   # Bishop of Salisbury 1761
   # Archbishop of York 1761 - 1776
   gen:father <https://www.wikidata.org/wiki/Q5540335> ;
-  gen:mother  <de_vere.ttl#Lady_Abigail_Harley> .
+  gen:mother <https://www.wikidata.org/wiki/Q75275273> .
   # oo Henrietta Auriol, d. 1763-04-22
   []
     gen:spouse <https://www.wikidata.org/wiki/Q772812> , <https://www.wikidata.org/wiki/Q75275276> ;
@@ -862,19 +944,19 @@
 <https://www.wikidata.org/wiki/Q9250910>
   # Hon. Edward Hay, 1722 - 1779-10-21
   gen:father <https://www.wikidata.org/wiki/Q5540335> ;
-  gen:mother  <de_vere.ttl#Lady_Abigail_Harley> .
+  gen:mother <https://www.wikidata.org/wiki/Q75275273> .
   # oo Mary Flower, d. 1775-10-11, daughter of Peter Flower
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q9250910> , <#Mary_Flower> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q9250910> , <https://www.wikidata.org/wiki/Q75818537> ;
 	gen:startDate "1752" .
   # oo Mary Harbourne Barnewall
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q9250910> , <#Mary_Harbourne_Barnewall> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q9250910> , <https://www.wikidata.org/wiki/Q75818567> ;
 	gen:startDate "1779-01-24" .
-<#Lady_Mary_Hay_(died_1805)>
+<https://www.wikidata.org/wiki/Q75818570>
   # Lady Mary Hay, d. 1805-08-26
   gen:father <https://www.wikidata.org/wiki/Q5540335> ;
-  gen:mother  <de_vere.ttl#Lady_Abigail_Harley> .
+  gen:mother <https://www.wikidata.org/wiki/Q75275273> .
   # oo 1758-08-05 Rt. Rev. John Hume, Bishop of Oxford and Salisbury, 1706~ - 1782-06-26, https://www.wikidata.org/wiki/Q3950718
 
 <https://www.wikidata.org/wiki/Q7616553>
@@ -883,11 +965,11 @@
   gen:mother <https://www.wikidata.org/wiki/Q75275276> .
   # oo Julia Eyre, d. 1780-03-29, daughter of Anthony Eyre
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q7616553> , <#Julia_Eyre> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q7616553> , <https://www.wikidata.org/wiki/Q75275010> ;
 	gen:startDate "1779-04-19" .
-  # oo Sarah Harley, 1760-10-19 - 1837-02-15
+  # oo Sarah Harley, 1760-10-19 - 1837-02-15 (de_vere.ttl)
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q7616553> , <de_vere.ttl#Sarah_Harley> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q7616553> , <https://www.wikidata.org/wiki/Q75269434> ;
 	gen:startDate "1781-06-08" .
 <https://www.wikidata.org/wiki/Q75281086>
   # Peter Auriol Hay-Drummond, 1754-01-21 - 1799-03-21
@@ -908,31 +990,31 @@
 	gen:startDate "1782-12-12" .
   # oo Amelia Emily Auriol, 1762 - 1840-10-07
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q5341644> , <#Amelia_Emily_Auriol> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q5341644> , <https://www.wikidata.org/wiki/Q75281096> ;
 	gen:startDate "1791-05-24" .
 <https://www.wikidata.org/wiki/Q75323255>
   # Mary Hay, 1754-07-25 - 1799-08-17
   gen:father <https://www.wikidata.org/wiki/Q9250910> ;
-  gen:mother <#Mary_Flower> .
+  gen:mother <https://www.wikidata.org/wiki/Q75818537> .
   # oo Lewis Bagot, Bishop of St. Asaph, Bristol and Norwich, 1740-01-01 - 1802-06-04, https://www.wikidata.org/wiki/Q6536288
 
-<#Lady_Henrietta_Hay-Drummond>
+<https://www.wikidata.org/wiki/Q75275009>
   # Lady Henrietta Hay-Drummond, 1783-08-03 - 1854-10-07
   gen:father <https://www.wikidata.org/wiki/Q7616553> ;
-  gen:mother <de_vere.ttl#Sarah_Harley> .
-  # oo 1807-06-23 Henry Drummond, of Albury Park, 1786-12-05 - 1860-02-20, drummond.ttl#Henry_Drummond,_of_Albury_Park
+  gen:mother <https://www.wikidata.org/wiki/Q75269434> .
+  # oo 1807-06-23 Henry Drummond, of Albury Park, 1786-12-05 - 1860-02-20, https://www.wikidata.org/wiki/Q258151
 <https://www.wikidata.org/wiki/Q7616570>
   # Thomas Robert Hay-Drummond, 11th Earl of Kinnoull, 1785-04-05 - 1866-02-18
   gen:father <https://www.wikidata.org/wiki/Q7616553> ;
-  gen:mother <de_vere.ttl#Sarah_Harley> .
-  # oo Louisa Burton Rowley, d. 1885-03-06
+  gen:mother <https://www.wikidata.org/wiki/Q75269434> .
+  # oo Louisa Burton Rowley, 1803~ - 1885-03-06 (dalrymple.ttl)
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q7616570> , <#Louisa_Burton_Rowley> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q7616570> , <https://www.wikidata.org/wiki/Q75273566> ;
 	gen:startDate "1824-08-17" .
 <https://www.wikidata.org/wiki/Q75264723>
   # Lady Sarah Maria Hay-Drummond, 1788-06-21 - 1874-07-11
   gen:father <https://www.wikidata.org/wiki/Q7616553> ;
-  gen:mother <de_vere.ttl#Sarah_Harley> .
+  gen:mother <https://www.wikidata.org/wiki/Q75269434> .
   # oo 1811-05-08 Rt. Rev. George Murray, Bishop of Rochester, 1784-01-12 - 1860-02-16, https://www.wikidata.org/wiki/Q5542716
 <https://www.wikidata.org/wiki/Q75281109>
   # Edward William Auriol Drummond-Hay, 1785-04-04 - 1845-02
@@ -947,31 +1029,31 @@
 <https://www.wikidata.org/wiki/Q75271675>
   # Lady Louisa Hay-Drummond, 1825-06-05 - 1898-09-04
   gen:father <https://www.wikidata.org/wiki/Q7616570> ;
-  gen:mother <#Louisa_Burton_Rowley> .
+  gen:mother <https://www.wikidata.org/wiki/Q75273566> .
   # oo 1843-05-02 Sir Thomas Moncreiffe of that Ilk, 7th Baronet, 1822-01-09 - 1879-08-15, https://www.wikidata.org/wiki/Q55068554
 <https://www.wikidata.org/wiki/Q5540336>
   # George Hay-Drummond, 12th Earl of Kinnoull, 1827-07-16 - 1897-01-30
   gen:father <https://www.wikidata.org/wiki/Q7616570> ;
-  gen:mother <#Louisa_Burton_Rowley> .
-  # oo Lady Emily Blanche Charlotte Somerset, 1828-01-26 – 1895-01-27
+  gen:mother <https://www.wikidata.org/wiki/Q75273566> .
+  # oo Lady Emily Blanche Charlotte Somerset, 1828-01-26 – 1895-01-27 (beaufort.ttl)
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q5540336> , <beaufort.ttl#Lady_Emily_Blanche_Charlotte_Somerset> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q5540336> , <https://www.wikidata.org/wiki/Q75275279> ;
 	gen:startDate "1848-07-20" .
 <https://www.wikidata.org/wiki/Q75273548>
   # Lady Sarah Hay-Drummond, 1828-12-04 - 1859-02-17
   gen:father <https://www.wikidata.org/wiki/Q7616570> ;
-  gen:mother <#Louisa_Burton_Rowley> .
+  gen:mother <https://www.wikidata.org/wiki/Q75273566> .
   # oo 1848-03-23 Hugh Cholmondeley, 2nd Baron Delamere of Vale Royal, 1811-10-03 - 1887-08-01, https://www.wikidata.org/wiki/Q13529872
-<#Lady_Elizabeth_Hay-Drummond>
+<https://www.wikidata.org/wiki/Q75281141>
   # Lady Elizabeth Hay-Drummond, 1834-12-23 - 1902-02-24
   gen:father <https://www.wikidata.org/wiki/Q7616570> ;
-  gen:mother <#Louisa_Burton_Rowley> .
+  gen:mother <https://www.wikidata.org/wiki/Q75273566> .
   # oo 1856-04-24 Sir Frederick Leopold Arthur, 2nd Baronet, 1816-12-20 - 1878-06-01, https://www.wikidata.org/wiki/Q5497269
-  # oo 1883-11-22 Rev. Canon Ernest Edward Dugmore, d. 1925-03-10
+  # oo 1883-11-22 Rev. Canon Ernest Edward Dugmore, d. 1925-03-10, https://www.wikidata.org/wiki/Q75281138
 <https://www.wikidata.org/wiki/Q75280918>
   # Hon. Charles Rowley Drummond of Cromlix and Innerpefray, 1836-10-10 - 1918-05-23
   gen:father <https://www.wikidata.org/wiki/Q7616570> ;
-  gen:mother <#Louisa_Burton_Rowley> .
+  gen:mother <https://www.wikidata.org/wiki/Q75273566> .
   # oo Arabella Augusta Meyrick, d. 1899-04-07 (keppel.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75280918> , <https://www.wikidata.org/wiki/Q75280920> ;
@@ -979,71 +1061,71 @@
 <https://www.wikidata.org/wiki/Q75281142>
   # Lady Augusta Sophia Hay-Drummond, 1837-10-13 - 1915-07-23
   gen:father <https://www.wikidata.org/wiki/Q7616570> ;
-  gen:mother <#Louisa_Burton_Rowley> .
-  # oo 1856-04-24 John Twisleton-Wykeham-Fiennes, 11th Baron Saye and Sele, 1830-02-28 - 1907-10-08, https://www.wikidata.org/wiki/Q75281148 (fiennes.ttl)
-<#George_Hay-Drummond,_Viscount_Dupplin>
+  gen:mother <https://www.wikidata.org/wiki/Q75273566> .
+  # oo 1856-04-24 John Twisleton-Wykeham-Fiennes, 11th Baron Saye and Sele, 1830-02-28 - 1907-10-08, https://www.wikidata.org/wiki/Q75281148 (twisleton.ttl)
+<https://www.wikidata.org/wiki/Q75273738>
   # George Robert Hay-Drummond, Viscount Dupplin, 1849-05-27 - 1886-03-10
   gen:father <https://www.wikidata.org/wiki/Q5540336> ;
-  gen:mother <beaufort.ttl#Lady_Emily_Blanche_Charlotte_Somerset> .
+  gen:mother <https://www.wikidata.org/wiki/Q75275279> .
   # oo Lady Agnes Cecil Emmeline Duff, 1852-05-18 - 1925-01-11
   []
-    gen:spouse <#George_Hay-Drummond,_Viscount_Dupplin> , <duff.ttl#Lady_Agnes_Cecil_Emmeline_Duff> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75273738> , <https://www.wikidata.org/wiki/Q75273105> ;
 	gen:startDate "1871-10-04" .
-<#Lady_Constance_Blanche_Louisa_Hay-Drummond>
+<https://www.wikidata.org/wiki/Q75818627>
   # Lady Constance Blanche Louisa Hay-Drummond, 1851-08-15 - 1931-12-21
   gen:father <https://www.wikidata.org/wiki/Q5540336> ;
-  gen:mother <beaufort.ttl#Lady_Emily_Blanche_Charlotte_Somerset> .
+  gen:mother <https://www.wikidata.org/wiki/Q75275279> .
   # oo 1880-10-28 Walter Henry Hadow, 1849-09-25 – 1898-09-15, https://www.wikidata.org/wiki/Q16059689
 <https://www.wikidata.org/wiki/Q4786353>
   # Archibald FitzRoy George Hay-Drummond, 13th Earl of Kinnoull, 1855-06-20 - 1916-02-07
   gen:father <https://www.wikidata.org/wiki/Q5540336> ;
-  gen:mother <beaufort.ttl#Lady_Emily_Blanche_Charlotte_Somerset> .
+  gen:mother <https://www.wikidata.org/wiki/Q75275279> .
   # oo Josephine Maria Hawke, d. 1900-12-02, daughter of John M. Hawke
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q4786353> , <#Josephine_Maria_Hawke> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q4786353> , <https://www.wikidata.org/wiki/Q75356936> ;
 	gen:startDate "1877-07-13" .
   # oo Florence Mary Darell, d. 1941-07-02, daughter of Edward Tierney Gilchrist Darell and Florence Johnson
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q4786353> , <#Florence_Mary_Darell> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q4786353> , <https://www.wikidata.org/wiki/Q75356939> ;
 	gen:startDate "1903-01-24" .
-<#Alistair_George_Hay-Drummond>
+<https://www.wikidata.org/wiki/Q75424875>
   # Hon. Alistair George Hay-Drummond, 1861-04-18 - 1929-04-15
   gen:father <https://www.wikidata.org/wiki/Q5540336> ;
-  gen:mother <beaufort.ttl#Lady_Emily_Blanche_Charlotte_Somerset> .
+  gen:mother <https://www.wikidata.org/wiki/Q75275279> .
   # oo Hon. Camilla Dagmar Violet Greville, d. 1937-07-07
   []
-    gen:spouse <#Alistair_George_Hay-Drummond> , <greville.ttl#Camilla_Dagmar_Violet_Greville> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75424875> , <https://www.wikidata.org/wiki/Q75818614> ;
 	gen:startDate "1890-01-12" .
   # oo Hyacinthe Farrer, d. 1938-06-29, daughter of Captain John Farrer
   []
-    gen:spouse <#Alistair_George_Hay-Drummond> , <#Hyacinthe_Farrer> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75424875> , <https://www.wikidata.org/wiki/Q75818623> ;
 	gen:startDate "1909" .
 <https://www.wikidata.org/wiki/Q5128851>
   # Hon. Claude George Hay-Drummond, 1862-06-24 - 1920-10-24
   gen:father <https://www.wikidata.org/wiki/Q5540336> ;
-  gen:mother <beaufort.ttl#Lady_Emily_Blanche_Charlotte_Somerset> .
-<#Lady_Muriel_Henrietta_Constance_Hay-Drummond>
+  gen:mother <https://www.wikidata.org/wiki/Q75275279> .
+<https://www.wikidata.org/wiki/Q75818636>
   # Lady Muriel Henrietta Constance Hay-Drummond, 1863-08-14 - 1927-01-02
   gen:father <https://www.wikidata.org/wiki/Q5540336> ;
-  gen:mother <beaufort.ttl#Lady_Emily_Blanche_Charlotte_Somerset> .
+  gen:mother <https://www.wikidata.org/wiki/Q75275279> .
   # oo 1890-06-09 Alexander Otto Hugo Wladimir Fürst Münster v. Derneburg, 1858-09-01 - 1922-10-12, https://www.wikidata.org/wiki/Q17122160
 <https://www.wikidata.org/wiki/Q75280957>
   # Evelyn Elizabeth Vane Hay-Drummond, 1858-10-27 - 1938-01-16
   gen:father <https://www.wikidata.org/wiki/Q75280918> ;
   gen:mother <https://www.wikidata.org/wiki/Q75280920> .
   # oo 1880-04-06 Sir Robert Drummond Moncreiffe of that Ilk, 8th Baronet, 1856-11-03 - 1931-06-08, https://www.wikidata.org/wiki/Q75280964
-<#Amy_Violet_Hay-Drummond>
+<https://www.wikidata.org/wiki/Q75280917>
   # Amy Violet Hay-Drummond, 1861-03-24 - 1926-12-10
   gen:father <https://www.wikidata.org/wiki/Q75280918> ;
   gen:mother <https://www.wikidata.org/wiki/Q75280920> .
-  # oo 1888-04-10 Hon. George Eden, 1861-05-29 - 1924-06-14, eden.ttl#George_Eden
-<#Arthur_William_Henry_Drummond_of_Cromlix>
+  # oo 1888-04-10 Hon. George Eden, 1861-05-29 - 1924-06-14, https://www.wikidata.org/wiki/Q75280915
+<https://www.wikidata.org/wiki/Q75264269>
   # Arthur William Henry Drummond of Cromlix, 1862-05-04 - 1953-07-21
   gen:father <https://www.wikidata.org/wiki/Q75280918> ;
   gen:mother <https://www.wikidata.org/wiki/Q75280920> .
-  # oo Mary Scott, d. 1948-06-06, daughter of Sir Edward Henry Scott, 5th Baronet
+  # oo Mary Scott, d. 1948-06-06
   []
-    gen:spouse <#Arthur_William_Henry_Drummond_of_Cromlix> , <#Mary_Scott> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75264269> , <https://www.wikidata.org/wiki/Q75280954> ;
 	gen:startDate "1891-11-24" .
 <https://www.wikidata.org/wiki/Q15966641>
   # Sir John Drummond-Hay, 1816-06-01 – 1893-11-27
@@ -1051,7 +1133,7 @@
   gen:mother <https://www.wikidata.org/wiki/Q75281111> .
   # oo Annette Adelaide Christina Carstensen, daughter of J. A. Carstensen
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q15966641> , <#Annette_Adelaide_Christina_Carstensen> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q15966641> , <https://www.wikidata.org/wiki/Q75812353> ;
 	gen:startDate "1845-10-07" .
 <https://www.wikidata.org/wiki/Q75812899>
   # Elizabeth Catherine Drummond-Hay, d. 1911-02-15
@@ -1059,49 +1141,49 @@
   gen:mother <https://www.wikidata.org/wiki/Q75281111> .
   # oo 1840-05-01 William Greenwood Chapman, d. 1884-06-23, https://www.wikidata.org/wiki/Q75812902
 
-<#Agnes_Blanche_Marie_Hay-Drummond>
+<https://www.wikidata.org/wiki/Q15833918>
   # Agnes Blanche Marie Hay-Drummond, 1873-12-06 - 1938-12-13
-  gen:father <#George_Hay-Drummond,_Viscount_Dupplin> ;
-  gen:mother <duff.ttl#Lady_Agnes_Cecil_Emmeline_Duff> .
+  gen:father <https://www.wikidata.org/wiki/Q75273738> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75273105> .
   # oo Herbert Freiherr von Beneckendorff und Hindenburg, 1872-04-01 - 1956-07-31, https://www.wikidata.org/wiki/Q55852320
 <https://www.wikidata.org/wiki/Q75356937>
   # Edmund Alfred Rollo George Hay-Drummond, Viscount Dupplin, 1879-11-12 - 1903-05-30
   gen:father <https://www.wikidata.org/wiki/Q4786353> ;
-  gen:mother <#Josephine_Maria_Hawke> .
+  gen:mother <https://www.wikidata.org/wiki/Q75356936> .
   # oo Gladys Luz Bacon, d. 1932-01-28 (de_vere.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75356937> , <https://www.wikidata.org/wiki/Q75356934> ;
 	gen:startDate "1901-02-11" .
-<#Lady_Margaret_Florence_Grace_Hay-Drummond>
+<https://www.wikidata.org/wiki/Q75629688>
   # Lady Margaret Florence Grace Hay-Drummond, 1907-10-02 - 1976-06-12
   gen:father <https://www.wikidata.org/wiki/Q4786353> ;
-  gen:mother <#Florence_Mary_Darell> .
-  # oo 1929-02-26 (div 1942) Norman Francis William Haliburton D’Arcy, 1907-09-28 - 1976, #Norman_Francis_William_Haliburton_D’Arcy
+  gen:mother <https://www.wikidata.org/wiki/Q75356939> .
+  # oo 1929-02-26 (div 1942) Norman Francis William Haliburton D’Arcy, 1907-09-28 - 1976, https://www.wikidata.org/wiki/Q75629687
 <https://www.wikidata.org/wiki/Q75281153>
   # Violet Vane Hay-Drummond, 1897-08-07 - 1981-11-09
-  gen:father <#Arthur_William_Henry_Drummond_of_Cromlix> ;
-  gen:mother <#Mary_Scott> .
+  gen:father <https://www.wikidata.org/wiki/Q75264269> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75280954> .
   # oo 1920-12-18 (div 1933) Sir Anthony St. John-Mildmay, 8th Baronet, 1894-08-03 - 1947-10-03, https://www.wikidata.org/wiki/Q75281156 (st_john.ttl)
-<#Evelyn_Vane_Drummond_of_Cromlix>
+<https://www.wikidata.org/wiki/Q75280953>
   # Evelyn Vane Drummond of Cromlix, 1904-11-25 - 1971-11-23
-  gen:father <#Arthur_William_Henry_Drummond_of_Cromlix> ;
-  gen:mother <#Mary_Scott> .
+  gen:father <https://www.wikidata.org/wiki/Q75264269> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75280954> .
   # oo 1925-09-12 Terence Eden, 8th Baron Auckland, 1892-11-03 - 1957-09-14, https://www.wikidata.org/wiki/Q26452947
-<#George_Vane_Hay-Drummond>
+<https://www.wikidata.org/wiki/Q75264267>
   # George Vane Hay-Drummond, 1910-04-30 - 1984
-  gen:father <#Arthur_William_Henry_Drummond_of_Cromlix> ;
-  gen:mother <#Mary_Scott> .
-  # oo Lady Betty Mary Seton Montgomerie, 1912-05-08 - 1996-10-15
+  gen:father <https://www.wikidata.org/wiki/Q75264269> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75280954> .
+  # oo Lady Betty Mary Seton Montgomerie, 1912-05-08 - 1996-10-15 (gordon.ttl)
   []
-    gen:spouse <#George_Vane_Hay-Drummond> , <gordon.ttl#Lady_Betty_Mary_Seton_Montgomerie> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75264267> , <https://www.wikidata.org/wiki/Q75264266> ;
 	gen:startDate "1933-02-25" .
 <https://www.wikidata.org/wiki/Q75812356>
   # Sir Robert Hay-Drummond-Hay, 1846-07-25 - 1926-10-15
   gen:father <https://www.wikidata.org/wiki/Q15966641> ;
-  gen:mother <#Annette_Adelaide_Christina_Carstensen> .
+  gen:mother <https://www.wikidata.org/wiki/Q75812353> .
   # oo Euphemia Katherine Willis-Fleming, d. 1918-05-19, daughter of Thomas Willis-Fleming
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q75812356> , <#Euphemia_Katherine_Willis-Fleming> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75812356> , <https://www.wikidata.org/wiki/Q75812359> ;
 	gen:startDate "1868-06-02" .
   # oo Grace Margarite Lethbridge, 1895-09-01 - 1946-02-12
   []
@@ -1112,29 +1194,25 @@
   # George Harley Hay-Drummond, 14th Earl of Kinnoull, 1902-03-30 - 1938-03-18
   gen:father <https://www.wikidata.org/wiki/Q75356937> ;
   gen:mother <https://www.wikidata.org/wiki/Q75356934> .
-  # oo Enid Margaret Hamlyn Fellows
+  # oo Enid Margaret Hamlyn Fellows (cecil.ttl)
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q19874919> , <#Enid_Margaret_Hamlyn_Fellows> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q19874919> , <https://www.wikidata.org/wiki/Q75356954> ;
 	gen:startDate "1923-12-15" ;
 	gen:divorceDate "1927" .
   # oo Mary Ethel Isobel Meyrick, d. 1938-12-15 (craven.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q19874919> , <https://www.wikidata.org/wiki/Q75356957> ;
 	gen:startDate "1928-06-06" .
-<https://www.wikidata.org/wiki/Q75812375>
-  # John Waldo Edward Hay-Drummond-Hay, 1906-02-21 - 2004-01-25
+<https://www.wikidata.org/wiki/Q75812366>
+  # Edward Wilhelm Hay-Drummond-Hay, 1877-06-17 - 1941-11-03
   gen:father <https://www.wikidata.org/wiki/Q75812356> ;
-  gen:mother <#Euphemia_Katherine_Willis-Fleming> .
-  # oo Anne Rachel Prideaux, 1913-06-22 - 1975-05-06 (cholmondoley.ttl)
+  gen:mother <https://www.wikidata.org/wiki/Q75812359> .
+  # oo Margaret Meade-Waldo, d. 1954-12-14, daughter of Edmund Meade-Waldo
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q75812375> , <https://www.wikidata.org/wiki/Q75812381> ;
-	gen:startDate "1937-06-19" .
-  # oo Jennifer Bostock-Wilson, d. 1989
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q75812375> , <#Jennifer_Bostock-Wilson> ;
-	gen:startDate "1976-07-31" .
+    gen:spouse <https://www.wikidata.org/wiki/Q75812366> , <https://www.wikidata.org/wiki/Q75812372> ;
+	gen:startDate "1904-06-01" .
 
-<#Lady_June_Ann_Hay>
+<https://www.wikidata.org/wiki/Q75604065>
   # Lady June Ann Hay, d. 2002-01-28
   gen:father <https://www.wikidata.org/wiki/Q19874919> ;
   gen:mother <https://www.wikidata.org/wiki/Q75356957> .
@@ -1145,8 +1223,29 @@
   gen:mother <https://www.wikidata.org/wiki/Q75356957> .
   # oo Gay Ann Lowson, 1938-01-10 - 2016-07-08
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q15784120> , <#Gay_Ann_Lowson> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q15784120> , <https://www.wikidata.org/wiki/Q75356960> ;
 	gen:startDate "1961-06-01" .
+<https://www.wikidata.org/wiki/Q75812375>
+  # John Waldo Edward Hay-Drummond-Hay, 1906-02-21 - 2004-01-25
+  gen:father <https://www.wikidata.org/wiki/Q75812366> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75812372> .
+  # oo Anne Rachel Prideaux, 1913-06-22 - 1975-05-06 (arbuthnot.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75812375> , <https://www.wikidata.org/wiki/Q75812381> ;
+	gen:startDate "1937-06-19" .
+  # oo Jennifer Bostock-Wilson, d. 1989
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75812375> , <https://www.wikidata.org/wiki/Q75812369> ;
+	gen:startDate "1976-07-31" .
+
+<https://www.wikidata.org/wiki/Q19277257>
+  # Charles William Harley Hay, 16th Earl of Kinnoull, b. 1962-12-20
+  gen:father <https://www.wikidata.org/wiki/Q15784120> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75356960> .
+  # oo Catharine Clare Crawford, b. 1968-02-26, daughter of William Hamilton Raymund Crawford and Marilyn Jean Colville
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q19277257> , <https://www.wikidata.org/wiki/Q75609604> ;
+	gen:startDate "2002-06-15" .
 <https://www.wikidata.org/wiki/Q75591893>
   # Peter Charles Drummond-Hay, b. 1948-11-18
   gen:father <https://www.wikidata.org/wiki/Q75812375> ;
@@ -1156,79 +1255,90 @@
     gen:spouse <https://www.wikidata.org/wiki/Q75591893> , <https://www.wikidata.org/wiki/Q75262325> ;
 	gen:startDate "1975" .
 
-<https://www.wikidata.org/wiki/Q19277257>
-  # Charles William Harley Hay, 16th Earl of Kinnoull, b. 1962-12-20
-  gen:father <https://www.wikidata.org/wiki/Q15784120> ;
-  gen:mother <#Gay_Ann_Lowson> .
-  # oo Catharine Clare Crawford, b. 1968-02-26, daughter of William Hamilton Raymund Crawford and Marilyn Jean Colville
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q19277257> , <#Catharine_Clare_Crawford> ;
-	gen:startDate "2002-06-15" .
-
-<#Alice_Patricia_Helen_Hay>
+<https://www.wikidata.org/wiki/Q75818689>
   # Hon. Alice Patricia Helen Hay, b. 2003-09-25
   gen:father <https://www.wikidata.org/wiki/Q19277257> ;
-  gen:mother <#Catharine_Clare_Crawford> .
-<#Catriona_Martha_Dorothy_Hay>
+  gen:mother <https://www.wikidata.org/wiki/Q75609604> .
+<https://www.wikidata.org/wiki/Q75818692>
   # Hon. Catriona Martha Dorothy Hay, b. 2003-09-25
   gen:father <https://www.wikidata.org/wiki/Q19277257> ;
-  gen:mother <#Catharine_Clare_Crawford> .
-<#Auriol_Catharine_Rose_Hay>
+  gen:mother <https://www.wikidata.org/wiki/Q75609604> .
+<https://www.wikidata.org/wiki/Q75818686>
   # Hon. Auriol Catharine Rose Hay, b. 2007-03-15
   gen:father <https://www.wikidata.org/wiki/Q19277257> ;
-  gen:mother <#Catharine_Clare_Crawford> .
-<#William_Thomas_Charles_Hay,_Viscount_Dupplin>
+  gen:mother <https://www.wikidata.org/wiki/Q75609604> .
+<https://www.wikidata.org/wiki/Q76194218>
   # William Thomas Charles Hay, Viscount Dupplin, b. 2011-06-24
   gen:father <https://www.wikidata.org/wiki/Q19277257> ;
-  gen:mother <#Catharine_Clare_Crawford> .
+  gen:mother <https://www.wikidata.org/wiki/Q75609604> .
 
 
 
 # Hay of Lochorwart and Yester
-<#Sir_John_de_Haya,_of_Locherworth>
-  # Sir John de Haya, of Locherworth, d. 1222
-  gen:father <#Robert_de_Haya> .
-  # oo ??? de Lyne, daughter of Robert de Lyne, of Lochorworth
+<https://www.wikidata.org/wiki/Q75662128>
+  # Robert de la Haya, 1165 - 1204
+  gen:father <https://www.wikidata.org/wiki/Q75662112> .
+  # and Eva Pitmilly/Steward, Celtic Heiress
+  # oo Ethana ???
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75662128> , <#Ethana_???> .
 
-<#???_de_Haya,_of_Locherworth>
-  # ??? de Haya, of Locherworth, 1222b - 1263a
-  gen:father <#Sir_John_de_Haya,_of_Locherworth> .
+<#William_de_la_Haya_(d._1240)>
+  # William de la Haya, 1192~ - 1240
+  gen:father <https://www.wikidata.org/wiki/Q75662128> ;
+  gen:mother <#Ethana_???> .
+  # oo Eva ???
+  []
+    gen:spouse <#William_de_la_Haya_(d._1240)> , <#Eva_???> .
 
-<#Sir_William_de_Haya,_of_Locherworth_(died_1308)>
+<https://www.wikidata.org/wiki/Q76001232>
+  # John de Haya, 1190b - 1263~
+  gen:father <#William_de_la_Haya_(d._1240)> ;
+  gen:mother <#Eva_???> .
+  # oo unknown daughter (Margaret?) de Lyne
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76001232> , <https://www.wikidata.org/wiki/Q76001234> .
+
+<https://www.wikidata.org/wiki/Q76001231>
   # Sir William de Haya, of Locherworth, 1263a - 1308-10-31a
-  gen:father <#???_de_Haya,_of_Locherworth> .
+  gen:father <https://www.wikidata.org/wiki/Q76001232> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76001234> .
 
-<#Sir_Gilbert_de_Haya_of_Lochorwart>
+<https://www.wikidata.org/wiki/Q76001230>
   # Sir Gilbert de Haya of Lochorwart, 1306b - 1329a
-  gen:father <#Sir_William_de_Haya,_of_Locherworth_(died_1308)> .
+  gen:father <https://www.wikidata.org/wiki/Q76001231> .
+  # oo Margaret Fraser, daughter of Sir Simon Fraser
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76001230> , <https://www.wikidata.org/wiki/Q76001238> .
 
-<#Sir_Thomas_Haya_of_Lochorwart>
+<https://www.wikidata.org/wiki/Q75964927>
   gen:name "Sir Thomas Haya of Lochorwart"@en ;
-  gen:father <#Sir_Gilbert_de_Haya_of_Lochorwart> .
-  # and Margaret Fraser (daughter of Sir Simon Fraser)
+  gen:father <https://www.wikidata.org/wiki/Q76001230> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76001238> . 
   # oo Lora de Cuningesburgh is the daughter of Sir William de Cuningesburgh
   []
-    gen:spouse <#Sir_Thomas_Haya_of_Lochorwart> , <#Lora_de_Cuningesburgh> .
+    gen:spouse <https://www.wikidata.org/wiki/Q75964927> , <https://www.wikidata.org/wiki/Q76001241> .
 
-<#Sir_William_Haya_of_Lochorwart_(died_1392)>
+<https://www.wikidata.org/wiki/Q75964925>
   gen:name "Sir William Haya of Lochorwart" ;
   gen:deathDate "1392-08-29b" ;
-  gen:father <#Sir_Thomas_Haya_of_Lochorwart> ;
-  gen:mother <#Lora_de_Cuningesburgh> .
+  gen:father <https://www.wikidata.org/wiki/Q75964927> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76001241> .
 <#John_Hay,_of_Tullibody>
   # John Hay, of Tullibody
-  gen:father <#Sir_Thomas_Haya_of_Lochorwart> ;
-  gen:mother <#Lora_de_Cuningesburgh> .
+  gen:father <https://www.wikidata.org/wiki/Q75964927> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76001241> .
   # oo Margaret ???
 
-<#Sir_Thomas_Haya_of_Lochorwart_(died_1397a)>
+<https://www.wikidata.org/wiki/Q75875979>
   gen:name "Sir Thomas Haya of Lochorwart"@en ;
   gen:birthDate "1357b" ;
   gen:deathDate "1397a" ;
-  gen:father <#Sir_William_Haya_of_Lochorwart_(died_1392)> .
+  gen:father <https://www.wikidata.org/wiki/Q75964925> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110379298> . # NN Douglas
   # oo Jean Gifford, daughter of Hew Gifford
   []
-    gen:spouse <#Sir_Thomas_Haya_of_Lochorwart_(died_1397a)> , <#Jean_Gifford> .
+    gen:spouse <https://www.wikidata.org/wiki/Q75875979> , <https://www.wikidata.org/wiki/Q75389827> .
 <https://www.wikidata.org/wiki/Q75269386>
   # John Hay, of Tullibody, d. 1418-06b
   gen:father <#John_Hay,_of_Tullibody> .
@@ -1238,38 +1348,48 @@
     gen:spouse <https://www.wikidata.org/wiki/Q75269386> , <https://www.wikidata.org/wiki/Q75243153> ;
 	gen:startDate "1388" .
 
-<#Sir_William_Hay_of_Lochorwart_and_Yester>
+<https://www.wikidata.org/wiki/Q75388476>
   gen:name "Sir William Hay of Lochorwart and Yester"@en ;
   gen:deathDate "1421" ;
-  gen:father <#Sir_Thomas_Haya_of_Lochorwart_(died_1397a)> ;
-  gen:mother <#Jean_Gifford> .
+  gen:father <https://www.wikidata.org/wiki/Q75875979> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75389827> .
+  # oo Alice de la Haye
   []
-    gen:spouse <#Sir_William_Hay_of_Lochorwart_and_Yester> , <#Alice_de_la_Haye> .
+    gen:spouse <https://www.wikidata.org/wiki/Q75388476> , <https://www.wikidata.org/wiki/Q75248993> .
 <#Margaret_Hay_(born_1389~)>
   # Margaret Hay, b. 1389~
   gen:father <https://www.wikidata.org/wiki/Q75269386> ;
   gen:mother <https://www.wikidata.org/wiki/Q75243153> .
   # oo Alexander Stewart, of Grandtully, https://www.wikidata.org/wiki/Q76143405
+<https://www.wikidata.org/wiki/Q75269384>
+  # Egidia Hay
+  gen:father <https://www.wikidata.org/wiki/Q75269386> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75243153> .
+  # oo 1427-01-08~ (annulled) Alexander Gordon, 1st Earl of Huntly, d. 1470-07-15, https://www.wikidata.org/wiki/Q495612
 
-<#Sir_David_Hay_of_Lochorwart_and_Yester>
+<https://www.wikidata.org/wiki/Q75388481>
   gen:name "Sir David Hay of Lochorwart and Yester"@en;
   gen:deathDate "1478-09-02" ;
-  gen:father <#Sir_William_Hay_of_Lochorwart_and_Yester> ;
-  gen:mother <#Alice_de_la_Haye> .
-<#Alicia_Hay>
+  gen:father <https://www.wikidata.org/wiki/Q75388476> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75248993> .
+  # oo Lady Elizabeth Douglas
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75388481> , <https://www.wikidata.org/wiki/Q75388478> ;
+	gen:startDate "1423a" .
+<https://www.wikidata.org/wiki/Q75560696>
   gen:name "Alicia Hay"@en ;
-  gen:father <#Sir_William_Hay_of_Lochorwart_and_Yester> ;
-  gen:mother <#Alice_de_la_Haye> .
-  # oo Gilbert of the Haye, d. 1436-09-07, #Gilbert_of_the_Haye
-<#Janet_Hay>
+  gen:father <https://www.wikidata.org/wiki/Q75388476> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75248993> .
+  # oo Gilbert of the Haye, d. 1436-09-07, https://www.wikidata.org/wiki/Q75557629
+<https://www.wikidata.org/wiki/Q75242710>
   # Janet Hay
-  gen:father <#Sir_William_Hay_of_Lochorwart_and_Yester> ;
-  gen:mother <#Alice_de_la_Haye> .
-  # oo Sir Alexander Home of Home and Dunglas, 1380~ - 1424-08-17, home.ttl#Sir_Alexander_Home_of_Home_and_Dunglas
-<#Margaret_Hay_(died_1484)>
+  gen:father <https://www.wikidata.org/wiki/Q75388476> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75248993> .
+  # oo Sir Alexander Home of Home and Dunglas, 1380~ - 1424-08-17, https://www.wikidata.org/wiki/Q75242694
+<https://www.wikidata.org/wiki/Q75388475>
   # Margaret Hay, d. 1484-04-22a
-  gen:father <#Sir_William_Hay_of_Lochorwart_and_Yester> ;
-  gen:mother <#Alice_de_la_Haye> .
+  gen:father <https://www.wikidata.org/wiki/Q75388476> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75248993> .
   # oo 1414-12-03 William Douglas, 2nd Earl of Angus, 1398-02-24 - 1437-10, https://www.wikidata.org/wiki/Q2578481
 
 <https://www.wikidata.org/wiki/Q1103474>
@@ -1277,15 +1397,15 @@
   # 1st Lord Hay of Yester 1488-01-29
   gen:birthDate "1450~" ;
   gen:deathDate "1508-10a" ;
-  gen:father <#Sir_David_Hay_of_Lochorwart_and_Yester> ;
-  gen:mother <douglas.ttl#Elizabeth_Douglas_Hay> .
+  gen:father <https://www.wikidata.org/wiki/Q75388481> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75388478> .
   # oo Mary/Mariot Lindsay, d. 1467~
   []
     gen:spouse <https://www.wikidata.org/wiki/Q1103474> , <https://www.wikidata.org/wiki/Q75866454> ;
 	gen:startDate "1462-07-07b" .
   # oo Elizabeth Cunningham, d. 1529, daughter of George Cunningham of Belton
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q1103474> , <#Elizabeth_Cunningham> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q1103474> , <https://www.wikidata.org/wiki/Q75964663> ;
 	gen:startDate "1468-12-17b" .
 
 <https://www.wikidata.org/wiki/Q75389683>
@@ -1303,7 +1423,7 @@
     gen:spouse <https://www.wikidata.org/wiki/Q75389683> , <https://www.wikidata.org/wiki/Q75388564> ;
 	gen:startDate "1490b" .
 <https://www.wikidata.org/wiki/Q75759692>
-  gen:name "#Isabel Hay of Yester"@en ;
+  gen:name "Isabel Hay of Yester"@en ;
   gen:father <https://www.wikidata.org/wiki/Q1103474> ;
   gen:mother <https://www.wikidata.org/wiki/Q75866454> .
   # oo 1487b Walter Kerr of Cessford, d. 1501-11-25, https://www.wikidata.org/wiki/Q75254916
@@ -1312,17 +1432,17 @@
   gen:birthDate "1470~" ;
   gen:deathDate "1513-09-09" ;
   gen:father <https://www.wikidata.org/wiki/Q1103474> ;
-  gen:mother <#Elizabeth_Cunningham> .
-  # oo Elizabeth Crichton (stuart.ttl)
+  gen:mother <https://www.wikidata.org/wiki/Q75964663> .
+  # oo Elizabeth Crichton (dalrymple.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q21997559> , <https://www.wikidata.org/wiki/Q76001251> .
 <https://www.wikidata.org/wiki/Q75431601>
   # Margaret Hay, 1470a - 1536~
   gen:father <https://www.wikidata.org/wiki/Q1103474> ;
-  gen:mother <#Elizabeth_Cunningham> .
+  gen:mother <https://www.wikidata.org/wiki/Q75964663> .
   # oo 1491 William Borthwick, 4th Lord Borthwick, d. 1542~, https://www.wikidata.org/wiki/Q8005728
 
-<#Sir_Thomas_Hay,_Master_of_Yester_(born_1483~)>
+<https://www.wikidata.org/wiki/Q76001245>
   # Sir Thomas Hay, Master of Yester, 1483~ - 1508-10-23b
   gen:father <https://www.wikidata.org/wiki/Q75389683> ;
   gen:mother <https://www.wikidata.org/wiki/Q75389684> .
@@ -1331,31 +1451,31 @@
   gen:father <https://www.wikidata.org/wiki/Q21997559> ;
   gen:mother <https://www.wikidata.org/wiki/Q76001251> .
   # oo William Stewart, 2nd of Traquair, d. 1538a, https://www.wikidata.org/wiki/Q75268407
-<#John_Hay,_3rd_Lord_Hay_of_Yester>
+<https://www.wikidata.org/wiki/Q70010478>
   gen:name "John Hay, 3rd Lord Hay of Yester"@en ;
   gen:deathDate "1543-07-19b" ;
   gen:father <https://www.wikidata.org/wiki/Q21997559> ;
   gen:mother <https://www.wikidata.org/wiki/Q76001251> .
   # oo Elizabeth Douglas
   []
-    gen:spouse <#John_Hay,_3rd_Lord_Hay_of_Yester> , <douglas.ttl#Elizabeth_Douglas> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q70010478> , <https://www.wikidata.org/wiki/Q75388617> ;
 	gen:startDate "1509" .
-<#John_Hay_(died_1528a)> # -> Hay of Smithfield
+<https://www.wikidata.org/wiki/Q76001254> # -> Hay of Smithfield
   # John Hay, d. 1528-05-27a
   gen:father <https://www.wikidata.org/wiki/Q21997559> ;
   gen:mother <https://www.wikidata.org/wiki/Q76001251> .
 
 <https://www.wikidata.org/wiki/Q75263742>
   # Elizabeth Hay
-  gen:father <#John_Hay,_3rd_Lord_Hay_of_Yester> ;
-  gen:mother <douglas.ttl#Elizabeth_Douglas> .
+  gen:father <https://www.wikidata.org/wiki/Q70010478> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75388617> .
   # oo 1527-06-15~ George Seton, 6th Lord Seton, 1508~ - 1549-07-17, https://www.wikidata.org/wiki/Q5544434
 <https://www.wikidata.org/wiki/Q70010489>
   gen:name "John Hay, 4th Lord Hay of Yester"@en ;
   gen:birthDate "1510~" ;
   gen:deathDate "1556-01-30b" ;
-  gen:father <#John_Hay,_3rd_Lord_Hay_of_Yester> ;
-  gen:mother <douglas.ttl#Elizabeth_Douglas> .
+  gen:father <https://www.wikidata.org/wiki/Q70010478> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75388617> .
   # oo Margaret Livingston, 1510~ - 1591a
   []
     gen:spouse <https://www.wikidata.org/wiki/Q70010489> , <https://www.wikidata.org/wiki/Q76001266> ;
@@ -1369,63 +1489,63 @@
   gen:mother <https://www.wikidata.org/wiki/Q76001266> .
   # oo Margaret Kerr
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q18672794> , <kerr.ttl#Margaret_Kerr_of_Ferniehirst> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q18672794> , <https://www.wikidata.org/wiki/Q76001296> ;
 	gen:startDate "1559-10-28" .
 
 <https://www.wikidata.org/wiki/Q75431620>
   # Margaret Hay, 1570~ - 1659-12-30
   gen:father <https://www.wikidata.org/wiki/Q18672794> ;
-  gen:mother <kerr.ttl#Margaret_Kerr_of_Ferniehirst> .
+  gen:mother <https://www.wikidata.org/wiki/Q76001296> .
   # oo 1582-10-26 James Borthwick, 7th Lord Borthwick, 1570-06-24 - 1599-12, https://www.wikidata.org/wiki/Q75431618
 <https://www.wikidata.org/wiki/Q70010636>
   gen:name "William Hay, 6th Lord Hay of Yester"@en ;
   gen:birthDate "1561~" ;
   gen:deathDate "1591-05-29~" ;
   gen:father <https://www.wikidata.org/wiki/Q18672794> ;
-  gen:mother <kerr.ttl#Margaret_Kerr_of_Ferniehirst> .
+  gen:mother <https://www.wikidata.org/wiki/Q76001296> .
   # oo Mary Maxwell
   []
     gen:spouse <https://www.wikidata.org/wiki/Q70010636> , <https://www.wikidata.org/wiki/Q76001298> .
-<#James_Hay,_7th_Lord_Hay_of_Yester>
+<https://www.wikidata.org/wiki/Q70010640>
   gen:name "James Hay, 7th Lord Hay of Yester"@en ;
   gen:birthDate "1564~" ;
   gen:deathDate "1609-02-03" ;
   gen:father <https://www.wikidata.org/wiki/Q18672794> ;
-  gen:mother <kerr.ttl#Margaret_Kerr_of_Ferniehirst> .
+  gen:mother <https://www.wikidata.org/wiki/Q76001296> .
   # oo Lady Margaret Kerr, d. 1645-03-15
   []
-    gen:spouse <#James_Hay,_7th_Lord_Hay_of_Yester> , <kerr.ttl#Lady_Margaret_Kerr_(died_1645)> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q70010640> , <https://www.wikidata.org/wiki/Q75254887> ;
 	gen:startDate "1591-08-06" .
 
 <https://www.wikidata.org/wiki/Q75454348>
   # Hon. Margaret Hay, 1592~ - 1659-12-30
-  gen:father <#James_Hay,_7th_Lord_Hay_of_Yester> ;
-  gen:mother <kerr.ttl#Lady_Margaret_Kerr_(died_1645)> .
+  gen:father <https://www.wikidata.org/wiki/Q70010640> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75254887> .
   # oo 1607-11-15 Alexander Seton, 1st Earl of Dunfermline, 1555 - 1622-06-16, https://www.wikidata.org/wiki/Q4720056 (gordon.ttl)
   # oo 1633~ James Livingston, 1st Earl of Callendar, d. 1674-03~, https://www.wikidata.org/wiki/Q6138121
-<#John_Hay,_1st_Earl_of_Tweeddale>
+<https://www.wikidata.org/wiki/Q70010238>
   gen:name "John Hay, 1st Earl of Tweeddale"@en ;
   # 8th Lord Hay of Yester 1609-02-03
   # 1st Earl of Tweeddale 1646-12-01
   gen:birthDate "1595" ;
   gen:deathDate "1653-05-25" ;
-  gen:father <#James_Hay,_7th_Lord_Hay_of_Yester> ;
-  gen:mother <kerr.ttl#Lady_Margaret_Kerr_(died_1645)> .
-  # Lady Jean Seton, d. 1625-08-21
+  gen:father <https://www.wikidata.org/wiki/Q70010640> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75254887> .
+  # Lady Jean Seton, d. 1625-08-21 (gordon.ttl)
   []
-    gen:spouse <#John_Hay,_1st_Earl_of_Tweeddale> , <gordon.ttl#Lady_Jean_Seton> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q70010238> , <https://www.wikidata.org/wiki/Q75269705> ;
 	gen:startDate "1624-04-05" .
-  # oo Lady Margaret Montgomerie, 1617-02-20 - 1665-01-27
+  # oo Lady Margaret Montgomerie, 1617-02-20 - 1665-01-27 (gordon.ttl)
   []
-    gen:spouse <#John_Hay,_1st_Earl_of_Tweeddale> , <gordon.ttl#Lady_Margaret_Montgomerie_(died_1665)> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q70010238> , <https://www.wikidata.org/wiki/Q75264164> ;
 	gen:startDate "1641-12-25" .
-<#Sir_William_Hay>
+<https://www.wikidata.org/wiki/Q75283248>
   # Hon. Sir William Hay, 1596a - 1648-04-18b
-  gen:father <#James_Hay,_7th_Lord_Hay_of_Yester> ;
-  gen:mother <kerr.ttl#Lady_Margaret_Kerr_(died_1645)> .
+  gen:father <https://www.wikidata.org/wiki/Q70010640> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75254887> .
   # oo Anna Murray, d. 1658-10~
   []
-    gen:spouse <#Sir_William_Hay> , <murray.ttl#Anna_Murray> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75283248> , <https://www.wikidata.org/wiki/Q75283249> ;
 	gen:startDate "1618-11-09/-18" .
 
 <https://www.wikidata.org/wiki/Q6238332>
@@ -1434,44 +1554,44 @@
   # 1st Marquess of Tweeddale, 1st Earl of Gifford, 1st Viscount of Walden 1694-12-17
   gen:birthDate "1625-08-13~" ;
   gen:deathDate "1697-08-11" ;
-  gen:father <#John_Hay,_1st_Earl_of_Tweeddale> ;
-  gen:mother <gordon.ttl#Lady_Jean_Seton> .
+  gen:father <https://www.wikidata.org/wiki/Q70010238> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75269705> .
   # oo Lady Jane Scott, 1628/1629-02-13 - 1688-11~
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q6238332> , <scott.ttl#Lady_Jane_Scott> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q6238332> , <https://www.wikidata.org/wiki/Q75254498> ;
 	gen:startDate "1644-09-24" .
-<#William_Hay_(died_1726)> # -> Hay of Duns and Drumelzier
+<https://www.wikidata.org/wiki/Q75246543> # -> Hay of Duns and Drumelzier
   # Hon. William Hay, of Duns and Drumelzier,  1649-12 - 1726
-  gen:father <#John_Hay,_1st_Earl_of_Tweeddale> ;
-  gen:mother <gordon.ttl#Lady_Margaret_Montgomerie_(died_1665)> .
-<#Sir_James_Hay_of_Linplum,_1st_Baronet>
+  gen:father <https://www.wikidata.org/wiki/Q70010238> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75264164> .
+<https://www.wikidata.org/wiki/Q75283246>
   # Sir James Hay of Linplum, 1st Baronet, d. 1704
   # 1st Baronet Hay, of Linplum 1667-03-26
-  gen:father <#Sir_William_Hay> ;
-  gen:mother <murray.ttl#Anna_Murray> .
+  gen:father <https://www.wikidata.org/wiki/Q75283248> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75283249> .
   # oo Jean Scott, daughter of Patrick Scott of Tanlawhill (d. 1666-06-21, son of Walter Scott of Gamescleuch (d. 1609, son of Robert Scott of Thirlestane and Margaret Scott) and Janet Porteous)
   []
-    gen:spouse <#Sir_James_Hay_of_Linplum,_1st_Baronet> , <#Jean_Scott> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75283246> , <https://www.wikidata.org/wiki/Q75283252> ;
 	gen:startDate "1661-02-04" .
   # oo Anna Livingston
   []
-    gen:spouse <#Sir_James_Hay_of_Linplum,_1st_Baronet> , <#Anna_Livingston> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75283246> , <https://www.wikidata.org/wiki/Q75283256> ;
 	gen:startDate "1682-04-27" .
 <https://www.wikidata.org/wiki/Q75418013>
   # Margaret Hay
-  gen:father <#Sir_William_Hay> ;
-  gen:mother <murray.ttl#Anna_Murray> .
+  gen:father <https://www.wikidata.org/wiki/Q75283248> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75283249> .
   # oo 1648b Sir John Baird, Lord Newbyth, 1620-09-10 - 1698-04-27, https://www.wikidata.org/wiki/Q15054237
 
-<#Lady_Jane_Hay_(died_1729)>
+<https://www.wikidata.org/wiki/Q75262178>
   # Lady Jane Hay, d. 1729-07
   gen:father <https://www.wikidata.org/wiki/Q6238332> ;
-  gen:mother <scott.ttl#Lady_Jane_Scott> .
-  # oo 1693-10-12 William Douglas, 1st Earl of March, 1665~ - 1705-09-09, douglas.ttl#William_Douglas,_1st_Earl_of_March
+  gen:mother <https://www.wikidata.org/wiki/Q75254498> .
+  # oo 1693-10-12 William Douglas, 1st Earl of March, 1665~ - 1705-09-09, https://www.wikidata.org/wiki/Q75252075
 <https://www.wikidata.org/wiki/Q336675>
   # John Hay, 2nd Marquess of Tweeddale, 1645 - 1713-04-20
   gen:father <https://www.wikidata.org/wiki/Q6238332> ;
-  gen:mother <scott.ttl#Lady_Jane_Scott> .
+  gen:mother <https://www.wikidata.org/wiki/Q75254498> .
   # oo Lady Mary Maitland, 1645 - 1702-03-20
   []
     gen:spouse <https://www.wikidata.org/wiki/Q336675> , <https://www.wikidata.org/wiki/Q75269706> ;
@@ -1479,35 +1599,35 @@
 <https://www.wikidata.org/wiki/Q75283575>
   # Lord David Hay, of Belton, 1656-06 - 1726-12
   gen:father <https://www.wikidata.org/wiki/Q6238332> ;
-  gen:mother <scott.ttl#Lady_Jane_Scott> .
+  gen:mother <https://www.wikidata.org/wiki/Q75254498> .
   # oo Rachel Hayes, d. 1760-01-14, daughter of Sir James Hayes
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75283575> , <https://www.wikidata.org/wiki/Q75283577> .
-<#Lady_Margaret_Hay_(died_1753)>
+<https://www.wikidata.org/wiki/Q75290249>
   # Lady Margaret Hay, 1657 - 1753-01-22
   gen:father <https://www.wikidata.org/wiki/Q6238332> ;
-  gen:mother <scott.ttl#Lady_Jane_Scott> .
-  # oo 1675-10-10 Robert Ker, 3rd Earl of Roxburghe, 1658~ - 1682-05-08, drummond.ttl#Robert_Ker,_3rd_Earl_of_Roxburghe
-<#Lord_Alexander_Hay>
+  gen:mother <https://www.wikidata.org/wiki/Q75254498> .
+  # oo 1675-10-10 Robert Ker, 3rd Earl of Roxburghe, 1658~ - 1682-05-08, https://www.wikidata.org/wiki/Q66685218 (drummond.ttl)
+<https://www.wikidata.org/wiki/Q75408452>
   # Lord Alexander Hay, 1663-07 - 1737-07-31
   gen:father <https://www.wikidata.org/wiki/Q6238332> ;
-  gen:mother <scott.ttl#Lady_Jane_Scott> .
+  gen:mother <https://www.wikidata.org/wiki/Q75254498> .
   # oo Catherine Charteris, daughter of Laurence Charteris
   []
-    gen:spouse <#Lord_Alexander_Hay> , <#Catherine_Charteris> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75408452> , <https://www.wikidata.org/wiki/Q75408453> ;
 	gen:startDate "1697-04-22" .
 <https://www.wikidata.org/wiki/Q75937154>
   # John Hay of Linplum, younger, d. 1687-04-16b
-  gen:father <#Sir_James_Hay_of_Linplum,_1st_Baronet> ;
-  gen:mother <#Jean_Scott> .
-  # oo Jean Foulis (gray.ttl)
+  gen:father <https://www.wikidata.org/wiki/Q75283246> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75283252> .
+  # oo Jean Foulis (fairfax.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75937154> , <https://www.wikidata.org/wiki/Q75283257> ;
 	gen:startDate "1685-07-04" .
-<#Sir_Robert_Hay_of_Linplum,_2nd_Baronet>
+<https://www.wikidata.org/wiki/Q76001327>
   # Sir Robert Hay of Linplum, 2nd Baronet, 1673~ - 1751-12-20
-  gen:father <#Sir_James_Hay_of_Linplum,_1st_Baronet> ;
-  gen:mother <#Jean_Scott> .
+  gen:father <https://www.wikidata.org/wiki/Q75283246> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75283252> .
 
 <https://www.wikidata.org/wiki/Q42655850>
   # Charles Hay, 3rd Marquess of Tweeddale, 1667-11-11~ - 1715-12-17
@@ -1515,7 +1635,7 @@
   gen:mother <https://www.wikidata.org/wiki/Q75269706> .
   # oo Lady Susannah Hamilton, 1667 - 1737-02-07
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q42655850> , <douglas.ttl#Lady_Susannah_Hamilton> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q42655850> , <https://www.wikidata.org/wiki/Q75390220> ;
 	gen:startDate "1694~" .
 <https://www.wikidata.org/wiki/Q16239863>
   # Lord John Hay, 1668 - 1706-08-24
@@ -1523,10 +1643,11 @@
   gen:mother <https://www.wikidata.org/wiki/Q75269706> .
   # oo Lady Elizabeth Dalzell
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q16239863> , <#Lady_Elizabeth_Dalzell> .
-  # oo Elizabeth Orby, daughter of Sir Thomas Orby, 1st Baronet
+    gen:spouse <https://www.wikidata.org/wiki/Q16239863> , <https://www.wikidata.org/wiki/Q75283450> .
+  # oo Elizabeth Orby, d. 1716 (courtenay.ttl)
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q16239863> , <#Elizabeth_Orby> .
+    gen:spouse <https://www.wikidata.org/wiki/Q16239863> , <https://www.wikidata.org/wiki/Q76001642> ;
+	gen:startDate "1705-11-09" .
 <https://www.wikidata.org/wiki/Q70011434>
   # Lord William Hay, of Newhall, 1668a - 1723-10-31
   gen:father <https://www.wikidata.org/wiki/Q336675> ;
@@ -1540,7 +1661,7 @@
   gen:father <https://www.wikidata.org/wiki/Q336675> ;
   gen:mother <https://www.wikidata.org/wiki/Q75269706> .
   # oo William Ross, 12th Lord Ross of Halkhead, 1656~ - 1738-03-15, https://www.wikidata.org/wiki/Q8017770 (hamilton.ttl)
-<#Lady_Jean_Hay_(died_1731)>
+<https://www.wikidata.org/wiki/Q75272947>
   # Lady Jean Hay, d. 1731-09-04
   gen:father <https://www.wikidata.org/wiki/Q336675> ;
   gen:mother <https://www.wikidata.org/wiki/Q75269706> .
@@ -1553,15 +1674,15 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75283574> , <https://www.wikidata.org/wiki/Q75283570> ;
 	gen:startDate "1780-06-20" .
-<#Jean_Hay_(died_1764)>
+<https://www.wikidata.org/wiki/Q76001577>
   # Jean Hay, d. 1764-10-09
   gen:father <https://www.wikidata.org/wiki/Q75283575> ;
   gen:mother <https://www.wikidata.org/wiki/Q75283577> .
-  # oo 1752-03-21 Alexander Hay of Drumelzier, d. 1789-03-13, #Alexander_Hay_of_Drumelzier
-<#Catherine_Hay>
+  # oo 1752-03-21 Alexander Hay of Drumelzier, d. 1789-03-13, https://www.wikidata.org/wiki/Q76001330
+<https://www.wikidata.org/wiki/Q75408450>
   # Catherine Hay, d. 1759-02-11
-  gen:father <#Lord_Alexander_Hay> ;
-  gen:mother <#Catherine_Charteris> .
+  gen:father <https://www.wikidata.org/wiki/Q75408452> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75408453> .
   # oo 1738-08-21~ Sir Philip Anstruther of Balcaskie, 2nd Baronet, 1688 - 1763-05-27, https://www.wikidata.org/wiki/Q23580966
 <https://www.wikidata.org/wiki/Q75283243>
   # Margaret Hay, 1686-06-30 - 1758-10-03
@@ -1572,19 +1693,19 @@
 <https://www.wikidata.org/wiki/Q11727899>
   # John Hay, 4th Marquess of Tweeddale, 1695~ - 1762-12-09
   gen:father <https://www.wikidata.org/wiki/Q42655850> ;
-  gen:mother <douglas.ttl#Lady_Susannah_Hamilton> .
+  gen:mother <https://www.wikidata.org/wiki/Q75390220> .
   # oo Lady Frances Carteret, 1718-04-06 - 1788-12-25 (montagu.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q11727899> , <https://www.wikidata.org/wiki/Q75283447> ;
 	gen:startDate "1748-05-24" .
-<#George_Hay,_6th_Marquess_of_Tweeddale>
+<https://www.wikidata.org/wiki/Q70011077>
   # George Hay, 6th Marquess of Tweeddale, 1700~ - 1787-11-16
   gen:father <https://www.wikidata.org/wiki/Q42655850> ;
-  gen:mother <douglas.ttl#Lady_Susannah_Hamilton> .
+  gen:mother <https://www.wikidata.org/wiki/Q75390220> .
 <https://www.wikidata.org/wiki/Q5078854>
   # Lord Charles Hay, of Linplum, 1700~ - 1760-05-01
   gen:father <https://www.wikidata.org/wiki/Q42655850> ;
-  gen:mother <douglas.ttl#Lady_Susannah_Hamilton> .
+  gen:mother <https://www.wikidata.org/wiki/Q75390220> .
 <https://www.wikidata.org/wiki/Q70011506>
   # John Hay, of Newhall, d. 1765-12-10
   gen:father <https://www.wikidata.org/wiki/Q70011434> ;
@@ -1609,26 +1730,26 @@
     gen:spouse <https://www.wikidata.org/wiki/Q75816066> , <https://www.wikidata.org/wiki/Q76001584> ;
 	gen:startDate "1824-11-10" .
 
-<#Lady_Catherine_Hay>
+<https://www.wikidata.org/wiki/Q75283441>
   # Lady Catherine Hay, 1753-06-07 - 1776-07-11
   gen:father <https://www.wikidata.org/wiki/Q11727899> ;
   gen:mother <https://www.wikidata.org/wiki/Q75283447> .
-  # oo 1774-04-23 William Hay, d. 1781-07-23, #William_Hay_(died_1781)
-<#George_Hay,_5th_Marquess_of_Tweeddale>
+  # oo 1774-04-23 William Hay, d. 1781-07-23, https://www.wikidata.org/wiki/Q75283440
+<https://www.wikidata.org/wiki/Q70011199>
   # George Hay, 5th Marquess of Tweeddale, 1758-07-12 - 1770-10-04
   gen:father <https://www.wikidata.org/wiki/Q11727899> ;
   gen:mother <https://www.wikidata.org/wiki/Q75283447> .
-<#William_Hay_(died_1781)>
+<https://www.wikidata.org/wiki/Q75283440>
   # William Hay, d. 1781-07-23
   gen:father <https://www.wikidata.org/wiki/Q70011506> ;
   gen:mother <https://www.wikidata.org/wiki/Q75283458> .
   # oo Lady Catherine Hay, 1753-06-07 - 1776-07-11
   []
-    gen:spouse <#William_Hay_(died_1781)> , <#Lady_Catherine_Hay> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75283440> , <https://www.wikidata.org/wiki/Q75283441> ;
 	gen:startDate "1774-04-03" .
-  # oo Mary Nisbet
+  # oo Mary Nisbet (hamilton.ttl)
   []
-    gen:spouse <#William_Hay_(died_1781)> , <campbell.ttl#Mary_Nisbet> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75283440> , <https://www.wikidata.org/wiki/Q75418530> ;
 	gen:startDate "1779-03-06" .
 <https://www.wikidata.org/wiki/Q5540329>
   # George Hay, 7th Marquess of Tweeddale, 1753 - 1804-08-09
@@ -1660,8 +1781,8 @@
 
 <https://www.wikidata.org/wiki/Q75253723>
   # Frances Hay, 1775 - 1801-03-29
-  gen:father <#William_Hay_(died_1781)> ;
-  gen:mother <#Lady_Catherine_Hay> .
+  gen:father <https://www.wikidata.org/wiki/Q75283440> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75283441> .
   # oo 1797-08-04 Hon. Charles Tollemache, 1775-01-02 - 1850-07-26, https://www.wikidata.org/wiki/Q75269053 (manners.ttl)
 <https://www.wikidata.org/wiki/Q4494695>
   # George Hay, 8th Marquess of Tweeddale, 1787-02-01 - 1876-10-10
@@ -1669,22 +1790,22 @@
   gen:mother <https://www.wikidata.org/wiki/Q75283241> .
   # oo Lady Susan Montagu, 1797-09-18 - 1870-03-05
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q4494695> , <montagu.ttl#Lady_Susan_Montagu_(died_1870)> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q4494695> , <https://www.wikidata.org/wiki/Q75382899> ;
 	gen:startDate "1816-03-28" .
 <https://www.wikidata.org/wiki/Q6679447>
   # Lord John Hay, 1793-04-01 - 1851-08-26
   gen:father <https://www.wikidata.org/wiki/Q5540329> ;
   gen:mother <https://www.wikidata.org/wiki/Q75283241> .
-  # oo Mary Anne Cameron, d. 1850-11-30 (boyd.ttl)
+  # oo Mary Anne Cameron, d. 1850-11-30
   []
     gen:spouse <https://www.wikidata.org/wiki/Q6679447> , <https://www.wikidata.org/wiki/Q75283265> ;
 	gen:startDate "1846-09-02" .
-<#Lady_Elizabeth_Hay_(died_1868)>
+<https://www.wikidata.org/wiki/Q75283280>
   # Lady Elizabeth Hay, 1794~ - 1868-12-19
   gen:father <https://www.wikidata.org/wiki/Q5540329> ;
   gen:mother <https://www.wikidata.org/wiki/Q75283241> .
   # oo 1813-09-07 James Joseph Hope-Vere, 1785-06-03 - 1843-05-19, https://www.wikidata.org/wiki/Q26234487
-<#Lady_Julia_Tomasina_Hay>
+<https://www.wikidata.org/wiki/Q75283299>
   # Lady Julia Tomasina Hay, 1797-09-07 - 1835-04-03
   gen:father <https://www.wikidata.org/wiki/Q5540329> ;
   gen:mother <https://www.wikidata.org/wiki/Q75283241> .
@@ -1693,27 +1814,27 @@
 <https://www.wikidata.org/wiki/Q50762239>
   # Lady Susan Georgiana Hay, 1817-03-13 - 1853-05-06
   gen:father <https://www.wikidata.org/wiki/Q4494695> ;
-  gen:mother <montagu.ttl#Lady_Susan_Montagu_(died_1870)> .
-  # oo 1836-01-21 James Andrew Ramsay, 1st Marquess of Dalhousie, 1812-04-22 - 1860-12-22, https://www.wikidata.org/wiki/Q333117
-<#Lady_Hannah_Charlotte_Hay>
+  gen:mother <https://www.wikidata.org/wiki/Q75382899> .
+  # oo 1836-01-21 James Andrew Ramsay, 1st Marquess of Dalhousie, 1812-04-22 - 1860-12-19, https://www.wikidata.org/wiki/Q333117
+<https://www.wikidata.org/wiki/Q75283234>
   # Lady Hannah Charlotte Hay, 1818-04-12 -  1887-11-10
   gen:father <https://www.wikidata.org/wiki/Q4494695> ;
-  gen:mother <montagu.ttl#Lady_Susan_Montagu_(died_1870)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75382899> .
   # oo 1843-06-30 Simon Watson-Taylor, of Erlestoke Park, 1811-02-01 - 1902-12-25, https://www.wikidata.org/wiki/Q16030681
-<#Lady_Louisa_Jane_Hay>
+<https://www.wikidata.org/wiki/Q75281461>
   # Lady Louisa Jane Hay, 1819-07-29 - 1882-09-09
   gen:father <https://www.wikidata.org/wiki/Q4494695> ;
-  gen:mother <montagu.ttl#Lady_Susan_Montagu_(died_1870)> .
-  # oo 1841-06-04 Robert Balfour Wardlaw-Ramsay, of Whitehill, 1815-06-11 - 1882-06-26, #Robert_Balfour_Wardlaw-Ramsay,_of_Whitehill
+  gen:mother <https://www.wikidata.org/wiki/Q75382899> .
+  # oo 1841-06-04 Robert Balfour Wardlaw-Ramsay, of Whitehill, 1815-06-11 - 1882-06-26, https://www.wikidata.org/wiki/Q75283238 (fraser.ttl)
 <https://www.wikidata.org/wiki/Q1252263>
   # Lady Elizabeth Hay, 1820-09-27 – 1904-08-13
   gen:father <https://www.wikidata.org/wiki/Q4494695> ;
-  gen:mother <montagu.ttl#Lady_Susan_Montagu_(died_1870)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75382899> .
   # oo 1839-04-18 Arthur Richard Wellesley, 2nd Duke of Wellington, 1807-02-03 - 1884-08-13, https://www.wikidata.org/wiki/Q320296
 <https://www.wikidata.org/wiki/Q5540333>
   # George Hay, Earl of Gifford, 1822-04-26 – 1862-12-22
   gen:father <https://www.wikidata.org/wiki/Q4494695> ;
-  gen:mother <montagu.ttl#Lady_Susan_Montagu_(died_1870)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75382899> .
   # oo Helen Selina Sheridan, 1807-01-18 - 1867-06-13 (gore.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5540333> , <https://www.wikidata.org/wiki/Q5701894> ;
@@ -1721,10 +1842,10 @@
 <https://www.wikidata.org/wiki/Q709742>
   # Arthur Hay, 9th Marquess of Tweeddale, 1824-11-09 - Dec 1878-12-29
   gen:father <https://www.wikidata.org/wiki/Q4494695> ;
-  gen:mother <montagu.ttl#Lady_Susan_Montagu_(died_1870)> .
-  # oo Helene Eleanore Charlotte Auguste Gräfin von Kielmansegg, 1836-08-02 - 1871-09-30
+  gen:mother <https://www.wikidata.org/wiki/Q75382899> .
+  # oo Helene Eleanore Charlotte Auguste Gräfin von Kielmansegg, 1836-08-02 - 1871-09-30 (howe.ttl)
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q709742> , <#Helene_Eleanore_von_Kielmansegg> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q709742> , <https://www.wikidata.org/wiki/Q75283206> ;
 	gen:startDate "1857-02-18" .
   # oo Julia Charlotte Sophia Stewart-Mackenzie, 1846-06-21 - 1937-05-17 (stuart.ttl)
   []
@@ -1733,7 +1854,7 @@
 <https://www.wikidata.org/wiki/Q8011045>
   # William Montagu Hay, 10th Marquess of Tweeddale, 1826-01-27 - 1911-11-25
   gen:father <https://www.wikidata.org/wiki/Q4494695> ;
-  gen:mother <montagu.ttl#Lady_Susan_Montagu_(died_1870)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75382899> .
   # oo Candida Louise Bartolucci, 1854-05-03 - 1925-02-14 (dundas.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q8011045> , <https://www.wikidata.org/wiki/Q75283225> ;
@@ -1741,126 +1862,126 @@
 <https://www.wikidata.org/wiki/Q6679443>
   # Lord John Hay, 1827-08-23 - 1916-05-04
   gen:father <https://www.wikidata.org/wiki/Q4494695> ;
-  gen:mother <montagu.ttl#Lady_Susan_Montagu_(died_1870)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75382899> .
   # oo Annie Christina Lambert, d. 1932-10-24, daughter of Nathaniel Grace Lambert
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q6679443> , <#Annie_Christina_Lambert> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q6679443> , <https://www.wikidata.org/wiki/Q75282575> ;
 	gen:startDate "1876-06-08" .
 <https://www.wikidata.org/wiki/Q75283239>
   # Lady Jane Hay, 1830-04-01 - 1920-12-13
   gen:father <https://www.wikidata.org/wiki/Q4494695> ;
-  gen:mother <montagu.ttl#Lady_Susan_Montagu_(died_1870)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75382899> .
   # oo 1863-06-09 Sir Richard Chambré Hayes Taylour, 1819-03-19 - 1904-12-06, https://www.wikidata.org/wiki/Q7329403
 <https://www.wikidata.org/wiki/Q5372012>
   # Lady Emily Hay, 1836 - 1924-04-04
   gen:father <https://www.wikidata.org/wiki/Q4494695> ;
-  gen:mother <montagu.ttl#Lady_Susan_Montagu_(died_1870)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75382899> .
   # oo 1856-06-17 Rt. Hon. Sir Robert Peel, 3rd Baronet, 1822-05-04 – 1895-05-09, https://www.wikidata.org/wiki/Q4685934 (cavendish.ttl)
 
-<#Lady_Susan_Elizabeth_Clementine_Hay>
+<https://www.wikidata.org/wiki/Q75283410>
   # Lady Susan Elizabeth Clementine Hay, 1879-08-09 - 1964-02-15
   gen:father <https://www.wikidata.org/wiki/Q8011045> ;
   gen:mother <https://www.wikidata.org/wiki/Q75283225> .
   # oo 1901-11-04 Walter Waring, 1876 – 1930-11-16, https://www.wikidata.org/wiki/Q7966382
-<#William_Hay,_11th_Marquess_of_Tweeddale>
+<https://www.wikidata.org/wiki/Q70011676>
   # William George Montagu Hay, 11th Marquess of Tweeddale, 1884-11-04 - 1967-03-30
   gen:father <https://www.wikidata.org/wiki/Q8011045> ;
   gen:mother <https://www.wikidata.org/wiki/Q75283225> .
   # oo Marguerite Christine Ralli, d. 1944-10-15, daughter of Alexander Ralli and Helen Ralli
   []
-    gen:spouse <#William_Hay,_11th_Marquess_of_Tweeddale> , <#Marguerite_Christine_Ralli> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q70011676> , <https://www.wikidata.org/wiki/Q75278065> ;
 	gen:startDate "1912-12-07" .
   # oo Marjorie Helen Wagg, d. 1977-11-24, daughter of Henry John Wagg
   []
-    gen:spouse <#William_Hay,_11th_Marquess_of_Tweeddale> , <#Marjorie_Helen_Wagg> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q70011676> , <https://www.wikidata.org/wiki/Q75316700> ;
 	gen:startDate "1945-03-24" .
-<#Lord_Edward_Douglas_John_Hay>
+<https://www.wikidata.org/wiki/Q70011831>
   # Lord Edward Douglas John Hay, 1888-11-02 - 1944-06-18
   gen:father <https://www.wikidata.org/wiki/Q8011045> ;
   gen:mother <https://www.wikidata.org/wiki/Q75283225> .
-  # oo Violet Florence Catherine Barclay, d. 1926-03-17
+  # oo Violet Florence Catherine Barclay, d. 1926-03-17 (beresford.ttl)
   []
-    gen:spouse <#Lord_Edward_Douglas_John_Hay> , <#Violet_Florence_Catherine_Barclay> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q70011831> , <https://www.wikidata.org/wiki/Q75283358> ;
 	gen:startDate "1917-10-18" .
   # oo Audrey Clara Lilian Latham, 1899-04-04 - 1985~
   []
-    gen:spouse <#Lord_Edward_Douglas_John_Hay> , <#Audrey_Clara_Lilian_Latham> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q70011831> , <https://www.wikidata.org/wiki/Q75283376> ;
 	gen:startDate "1928-07-05" .
-<#Minnie_Christina_Brenda_Hay>
+<https://www.wikidata.org/wiki/Q75282575>
   # Minnie Christina Brenda Hay, 1880-05-31 - 1954-08-27
   gen:father <https://www.wikidata.org/wiki/Q6679443> ;
-  gen:mother <#Annie_Christina_Lambert> .
-  # oo 1905-06-05 Sholto Charles Douglas, Lord Aberdour, 1878-12-04 - 1911-09-29, douglas.ttl#Sholto_Charles_Douglas,_Lord_Aberdour
+  gen:mother <https://www.wikidata.org/wiki/Q75282575> .
+  # oo 1905-06-05 Sholto Charles Douglas, Lord Aberdour, 1878-12-04 - 1911-09-29, https://www.wikidata.org/wiki/Q75282574
 
-<#Lady_Hélène_Candida_Hay>
+<https://www.wikidata.org/wiki/Q75316698>
   # Lady Hélène Candida Hay, 1913-09-05 - 2011-01-04
-  gen:father <#William_Hay,_11th_Marquess_of_Tweeddale> ;
-  gen:mother <#Marguerite_Christine_Ralli> .
-  # oo 1933-06-21 Geoffrey Lionel Berry, 2nd Viscount Kemsley, 1909-06-29 - 1999-02-28, https://www.wikidata.org/wiki/Q6555534
+  gen:father <https://www.wikidata.org/wiki/Q70011676> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75278065> .
+  # oo 1933-06-21 Geoffrey Lionel Berry, 2nd Viscount Kemsley, 1909-06-29 - 1999-02-28, https://www.wikidata.org/wiki/Q6555534 (gordon.ttl)
 <https://www.wikidata.org/wiki/Q75611631>
   # Lady Marguerite Georgina Christine Hay, 1916-03-19 - 2003-03-25
-  gen:father <#William_Hay,_11th_Marquess_of_Tweeddale> ;
-  gen:mother <#Marguerite_Christine_Ralli> .
-  # oo 1941-09-20 Arthur Nicholas Coleridge, 1915-11-19 - 1988-05-22, https://www.wikidata.org/wiki/Q75611629 (baring.ttl)
-<#Lady_Frances_Elizabeth_Ann_Hay>
+  gen:father <https://www.wikidata.org/wiki/Q70011676> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75278065> .
+  # oo 1941-09-20 Arthur Nicholas Coleridge, 1915-11-19 - 1988-05-22, https://www.wikidata.org/wiki/Q75611629 (boyd.ttl)
+<https://www.wikidata.org/wiki/Q76001965>
   # Lady Frances Elizabeth Ann Hay, b. 1926-10-27
-  gen:father <#William_Hay,_11th_Marquess_of_Tweeddale> ;
-  gen:mother <#Marguerite_Christine_Ralli> .
-  # oo 1956-10-27 Nigel Arthur Pearson, d. 1975-12-08, #Nigel_Arthur_Pearson
-<#Lady_Marioth_Christina_Hay>
+  gen:father <https://www.wikidata.org/wiki/Q70011676> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75278065> .
+  # oo 1956-10-27 Nigel Arthur Pearson, d. 1975-12-08, https://www.wikidata.org/wiki/Q76001968
+<https://www.wikidata.org/wiki/Q75283394>
   # Lady Marioth Christina Hay, 1918-09-01 - 2006-04-29
-  gen:father <#Lord_Edward_Douglas_John_Hay> ;
-  gen:mother <#Violet_Florence_Catherine_Barclay> .
-  # oo 1940-12-18 (div 1954) George Richard Trotter, 1906-02-26 - 1970-09-24, #George_Richard_Trotter
+  gen:father <https://www.wikidata.org/wiki/Q70011831> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75283358> .
+  # oo 1940-12-18 (div 1954) George Richard Trotter, 1906-02-26 - 1970-09-24, https://www.wikidata.org/wiki/Q75283398
   # oo 1954-03-02 Sir Gifford Wheaton Grey Fox, 2nd Baronet, 1903-02-02 - 1959-02-11, https://www.wikidata.org/wiki/Q5559922
-  # oo 1963-04-02 (div 1971) Sir John Hastings James, d. 1980, son of Clement Fletcher James
-<#David_Hay,_12th_Marquess_of_Tweeddale>
+  # oo 1963-04-02 (div 1971) Sir John Hastings James, d. 1980, https://www.wikidata.org/wiki/Q75347428
+<https://www.wikidata.org/wiki/Q70011932>
   # David George Montagu Hay, 12th Marquess of Tweeddale, 1921-10-25 - 1979-01-23
-  gen:father <#Lord_Edward_Douglas_John_Hay> ;
-  gen:mother <#Violet_Florence_Catherine_Barclay> .
-  # oo Hon. Sonia Mary Peake, 1924-12-12 - 2009-07-30
+  gen:father <https://www.wikidata.org/wiki/Q70011831> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75283358> .
+  # oo Hon. Sonia Mary Peake, 1924-12-12 - 2009-07-30 (dundas.ttl)
   []
-    gen:spouse <#David_Hay,_12th_Marquess_of_Tweeddale> , <#Sonia_Mary_Peake> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q70011932> , <https://www.wikidata.org/wiki/Q75283363> ;
 	gen:startDate "1946-10-26" ;
 	gen:divorceDate "1958" .
   # oo Nella Doreen Dutton, 1920-12-14 - 2004-05-26, daughter of M. Dutton
   []
-    gen:spouse <#David_Hay,_12th_Marquess_of_Tweeddale> , <#Nella_Doreen_Dutton> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q70011932> , <https://www.wikidata.org/wiki/Q75283361> ;
 	gen:startDate "1959-01-14" .
 
 <https://www.wikidata.org/wiki/Q5343371>
   # Edward Douglas John Hay, 13th Marquess of Tweeddale, 1947-08-06 - 2005-02-01
-  gen:father <#David_Hay,_12th_Marquess_of_Tweeddale> ;
-  gen:mother <#Sonia_Mary_Peake> .
+  gen:father <https://www.wikidata.org/wiki/Q70011932> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75283363> .
 <https://www.wikidata.org/wiki/Q5234825>
   # Charles David Montagu Hay, 14th Marquess of Tweeddale, b. 1947-08-06
-  gen:father <#David_Hay,_12th_Marquess_of_Tweeddale> ;
-  gen:mother <#Sonia_Mary_Peake> .
-<#Lord_Alistair_James_Montagu_Hay>
+  gen:father <https://www.wikidata.org/wiki/Q70011932> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75283363> .
+<https://www.wikidata.org/wiki/Q21340619>
   # Lord Alistair James Montagu Hay, b. 1955-11-04
-  gen:father <#David_Hay,_12th_Marquess_of_Tweeddale> ;
-  gen:mother <#Sonia_Mary_Peake> .
-<#Lord_Andrew_Arthur_George_Hay>
+  gen:father <https://www.wikidata.org/wiki/Q70011932> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75283363> .
+<https://www.wikidata.org/wiki/Q75283373>
   # Lord Andrew Arthur George Hay, b. 1959-10-24
-  gen:father <#David_Hay,_12th_Marquess_of_Tweeddale> ;
-  gen:mother <#Nella_Doreen_Dutton> .
-  # oo Rosanna Meryl Booth, b. 1961-11-14
+  gen:father <https://www.wikidata.org/wiki/Q70011932> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75283361> .
+  # oo Rosanna Meryl Booth, b. 1961-11-14 (guinness.ttl)
   []
-    gen:spouse <#Lord_Andrew_Arthur_George_Hay> , <#Rosanna_Meryl_Booth> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75283373> , <https://www.wikidata.org/wiki/Q75720392> ;
 	gen:startDate "1986-09-06" .
   # oo S. Claire (?)
   []
-    gen:spouse <#Lord_Andrew_Arthur_George_Hay> , <#S._Claire_???> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75283373> , <https://www.wikidata.org/wiki/Q76240055> ;
 	gen:startDate "2009-12-08" .
 
-<#Angus_David_George_Hay>
+<https://www.wikidata.org/wiki/Q76001980>
   # Angus David George Hay, b. 1991
-  gen:father <#Lord_Andrew_Arthur_George_Hay> ;
-  gen:mother <#Rosanna_Meryl_Booth> .
-<#Rory_Edward_Hamish_Hay>
+  gen:father <https://www.wikidata.org/wiki/Q75283373> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75720392> .
+<https://www.wikidata.org/wiki/Q76001983>
   # Rory Edward Hamish Hay, b. 1993
-  gen:father <#Lord_Andrew_Arthur_George_Hay> ;
-  gen:mother <#Rosanna_Meryl_Booth> .
+  gen:father <https://www.wikidata.org/wiki/Q75283373> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75720392> .
 
 
 # Hay-MacKenzie
@@ -1882,7 +2003,7 @@
   # John Hay-Mackenzie, 1792~ - 1849-07-09
   gen:father <https://www.wikidata.org/wiki/Q75283547> ;
   gen:mother <https://www.wikidata.org/wiki/Q75283549> .
-  # oo Anne Gibson-Craig, 1802-07-01 - 1869-09-08
+  # oo Anne Gibson-Craig, 1802-07-01 - 1869-09-08 (gibson.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75260180> , <https://www.wikidata.org/wiki/Q75283555> ;
 	gen:startDate "1828-04-23" .
@@ -1902,163 +2023,174 @@
 
 
 # Hay of Duns and Drumelzier
-<#William_Hay_(died_1726)>
+<https://www.wikidata.org/wiki/Q75246543>
   gen:name "Hon. William Hay, of Duns and Drumelzier"@en ;
   gen:birthDate "1649-12" ;
   gen:deathDate "1726" ;
-  gen:father <#John_Hay,_1st_Earl_of_Tweeddale> ;
-  gen:mother <gordon.ttl#Lady_Margaret_Montgomerie_(died_1665)> .
-  # oo Hon. Elizabeth Seton
+  gen:father <https://www.wikidata.org/wiki/Q70010238> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75264164> .
+  # oo Hon. Elizabeth Seton (gordon.ttl)
   []
-    gen:spouse <#William_Hay_(died_1726)> , <gordon.ttl#Elizabeth_Seton> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75246543> , <https://www.wikidata.org/wiki/Q75412924> ;
 	gen:startDate "1695" .
 
 <https://www.wikidata.org/wiki/Q76001330>
   # Alexander Hay, of Drumelzier and Whittinghame, d. 1789-03-13
-  gen:father <#William_Hay_(died_1726)> ;
-  gen:mother <gordon.ttl#Elizabeth_Seton> .
+  gen:father <https://www.wikidata.org/wiki/Q75246543> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75412924> .
   # oo Hon. Anne Stewart, d. 1743
   []
     gen:spouse <https://www.wikidata.org/wiki/Q76001330> , <https://www.wikidata.org/wiki/Q76001329> ;
 	gen:startDate "1743b" .
   # oo Jean Hay, d. 1764-10-09
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q76001330> , <#Jean_Hay_(died_1764)> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q76001330> , <https://www.wikidata.org/wiki/Q76001577> ;
 	gen:startDate "1752-03-21" .
 <https://www.wikidata.org/wiki/Q75244220>
   # Margaret Hay, 1698~ - 1782-12-13
-  gen:father <#William_Hay_(died_1726)> ;
-  gen:mother <gordon.ttl#Elizabeth_Seton> .
+  gen:father <https://www.wikidata.org/wiki/Q75246543> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75412924> .
   # oo 1714a Robert Stuart, 7th Lord Blantyre, d. 1743-11-17, https://www.wikidata.org/wiki/Q75255766
 
-<#Robert_Hay,_of_Drumelzier>
+<https://www.wikidata.org/wiki/Q76001332>
   # Robert Hay, of Drumelzier, Whittinghame and Linplum, 1731-04-18 - 1807-08-21
   gen:father <https://www.wikidata.org/wiki/Q76001330> ;
   gen:mother <https://www.wikidata.org/wiki/Q76001329> .
   # oo Janet Erskine, d. 1808-08-29
   []
-    gen:spouse <#Robert_Hay,_of_Drumelzier> , <erskine.ttl#Janet_Erskine_(died_1808)> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q76001332> , <https://www.wikidata.org/wiki/Q76001334> ;
 	gen:startDate "1786-02-07" .
-<#Margaret_Hay_(died_1809)>
+<https://www.wikidata.org/wiki/Q76001574>
   # Margaret Hay, d. 1809-03-02
   gen:father <https://www.wikidata.org/wiki/Q76001330> ;
   gen:mother <https://www.wikidata.org/wiki/Q76001329> .
-  # oo 1770 Sir Henry Seton, of Abercorn, 4th Baronet, d. 1788-06-29, gordon.ttl#Sir_Henry_Seton,_of_Abercorn,_4th_Baronet
+  # oo 1770 Sir Henry Seton, of Abercorn, 4th Baronet, d. 1788-06-29, https://www.wikidata.org/wiki/Q76164024 (gordon.ttl)
 
-<#William_Hay,_of_Duns_Castle>
+<https://www.wikidata.org/wiki/Q76001338>
   # William Hay, of Duns Castle, 1788-02-29 - 1876-05-16
-  gen:father <#Robert_Hay,_of_Drumelzier> ;
-  gen:mother <erskine.ttl#Janet_Erskine_(died_1808)> .
+  gen:father <https://www.wikidata.org/wiki/Q76001332> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76001334> .
   # oo Mary Garstin, d. 1863-06-10, daughter of Major John Bradstreet Garstin
   []
-    gen:spouse <#William_Hay,_of_Duns_Castle> , <#Mary_Garstin> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q76001338> , <https://www.wikidata.org/wiki/Q76001339> ;
 	gen:startDate "1816-05-13" .
-<#Robert_Hay,_of_Linplum>
+<https://www.wikidata.org/wiki/Q3435363>
   # Robert Hay, of Linplum and Nunraw, 1799-01-06 - 1863-11-04
-  gen:father <#Robert_Hay,_of_Drumelzier> ;
-  gen:mother <erskine.ttl#Janet_Erskine_(died_1808)> .
+  gen:father <https://www.wikidata.org/wiki/Q76001332> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76001334> .
   # oo Kalitza Psaraki, d. 1885-06-05, daughter of Alexandros Psaraki
   []
-    gen:spouse <#Robert_Hay,_of_Linplum> , <#Kalitza_Psaraki> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q3435363> , <https://www.wikidata.org/wiki/Q76001508> ;
 	gen:startDate "1828" .
 
-<#Mary_Hay_(died_1855)>
+<https://www.wikidata.org/wiki/Q76001495>
   # Mary Hay, 1817 - 1855-04-04
-  gen:father <#William_Hay,_of_Duns_Castle> ;
-  gen:mother <#Mary_Garstin> .
-  # oo 1840-08-11 George Stirling Home Drummond of Blair-Drummond and Ardoch, 1813-03-01 - 1876-06-03, https://www.wikidata.org/wiki/Q23585304
-<#Kalitza_Janet_Erskine_Christian_Hay>
+  gen:father <https://www.wikidata.org/wiki/Q76001338> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76001339> .
+  # oo 1840-08-11 George Stirling Home Drummond of Blair-Drummond and Ardoch, 1813-03-01 - 1876-06-03, https://www.wikidata.org/wiki/Q23585304 (home.ttl)
+<https://www.wikidata.org/wiki/Q76001564>
   # Kalitza Janet Erskine Christian Hay, 1833 - 1914-08-06
-  gen:father <#Robert_Hay,_of_Linplum> ;
-  gen:mother <#Kalitza_Psaraki> .
-  # oo 1863-06-07 George Stirling Home Drummond of Blair-Drummond and Ardoch, 1813-03-01 - 1876-06-03, https://www.wikidata.org/wiki/Q23585304
+  gen:father <https://www.wikidata.org/wiki/Q3435363> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76001508> .
+  # oo 1863-06-07 George Stirling Home Drummond of Blair-Drummond and Ardoch, 1813-03-01 - 1876-06-03, https://www.wikidata.org/wiki/Q23585304 (home.ttl)
 
 
 
 # Hay of Smithfield
-<#John_Hay_(died_1528a)>
+<https://www.wikidata.org/wiki/Q76001254>
   # John Hay, d. 1528-05-27a
   gen:father <https://www.wikidata.org/wiki/Q21997559> ;
   gen:mother <https://www.wikidata.org/wiki/Q76001251> .
   # oo Janet Scott
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76001254> , <https://www.wikidata.org/wiki/Q76291447> .
 
-<#Thomas_Hay_(died_1570)>
+<https://www.wikidata.org/wiki/Q76291446>
   # Thomas Hay, d. 1570
-  gen:father <#John_Hay_(died_1528a)> .
-  # and Janet Scott
-<#John_Hay_(died_1570a)>
+  gen:father <https://www.wikidata.org/wiki/Q76001254> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76291447> .
+<https://www.wikidata.org/wiki/Q76291450>
   # John Hay, d. 1570a
-  gen:father <#John_Hay_(died_1528a)> .
-  # and Janet Scott
+  gen:father <https://www.wikidata.org/wiki/Q76001254> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76291447> .
   # oo Marion Ker
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76291450> , <https://www.wikidata.org/wiki/Q76291453> .
 
-<#John_Hay_(died_1628)>
+<https://www.wikidata.org/wiki/Q76291444>
   # John Hay, d. 1628
-  gen:father <#Thomas_Hay_(died_1570)> .
-<#Andrew_Hay_(died_1655)>
+  gen:father <https://www.wikidata.org/wiki/Q76291446> .
+<https://www.wikidata.org/wiki/Q76291443>
   # Andrew Hay, d. 1655
-  gen:father <#John_Hay_(died_1570a)> .
-  # and Marion Ker
+  gen:father <https://www.wikidata.org/wiki/Q76291450> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76291453> .
   # oo Janet Hay
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76291443> , <https://www.wikidata.org/wiki/Q76291456> .
 
-<#Sir_James_Hay,_1st_Baronet>
+<https://www.wikidata.org/wiki/Q75269588>
   # Sir James Hay, 1st Baronet, d. 1654
   # 1st Baronet Hay, of Smithfield, co. Peebles 1635-07-20
-  gen:father <#John_Hay_(died_1628)> .
+  gen:father <https://www.wikidata.org/wiki/Q76291444> .
   # oo Sidney Massey, d. 1655a
-<#John_Hay_(died_1669)>
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75269588> , <https://www.wikidata.org/wiki/Q75468110> .
+<https://www.wikidata.org/wiki/Q76291441>
   # John Hay, d. 1669-10-27
-  gen:father <#Andrew_Hay_(died_1655)> .
-  # and Janet Hay
+  gen:father <https://www.wikidata.org/wiki/Q76291443> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76291456> .
 
-<#Anne_Hay_(died_1700)>
+<https://www.wikidata.org/wiki/Q75269587>
   # Anne Hay, d. 1700-02-14~
-  gen:father <#Sir_James_Hay,_1st_Baronet> .
-  # and Sidney Massey
-  # oo 1649-02-10 James Douglas, 10th Earl of Morton, d. 1686-08-25, douglas.ttl#James_Douglas,_10th_Earl_of_Morton
-<#Sir_John_Hay,_2nd_Baronet>
+  gen:father <https://www.wikidata.org/wiki/Q75269588> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75468110> .
+  # oo 1649-02-10 James Douglas, 10th Earl of Morton, 1632 - 1686-08-25, https://www.wikidata.org/wiki/Q75269585
+<https://www.wikidata.org/wiki/Q76291467>
   # Sir John Hay, 2nd Baronet, d. 1659
-  gen:father <#Sir_James_Hay,_1st_Baronet> .
-  # and Sidney Massey
-<#John_Hay_(died_1689a)>
+  gen:father <https://www.wikidata.org/wiki/Q75269588> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75468110> .
+<https://www.wikidata.org/wiki/Q76291404>
   # John Hay, d. 1689a
-  gen:father <#John_Hay_(died_1669)> .
-  # oo Janet Murray, daughter of Sir Alexander Murray of Blackbarony, 2nd Baronet (d. 1667a/1669b) and Margaret Murray
+  gen:father <https://www.wikidata.org/wiki/Q76291441> .
+  # oo Janet Murray
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76291404> , <https://www.wikidata.org/wiki/Q76278929> .
 
-<#Sir_James_Hay,_3rd_Baronet>
+<https://www.wikidata.org/wiki/Q76291468>
   # Sir James Hay, 3rd Baronet, 1652 - 1683
-  gen:father <#Sir_John_Hay,_2nd_Baronet> .
+  gen:father <https://www.wikidata.org/wiki/Q76291467> .
   # oo Grace Clavering, 1657~ - 1753, daughter of Rev. Thomas Clavering
   []
-    gen:spouse <#Sir_James_Hay,_3rd_Baronet> , <#Grace_Clavering> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q76291468> , <https://www.wikidata.org/wiki/Q76291469> ;
 	gen:startDate "1678-07-23" .
-<#John_Hay_(died_1762)>
+<https://www.wikidata.org/wiki/Q76291438>
   # John Hay, d. 1762
-  gen:father <#John_Hay_(died_1689a)> .
+  gen:father <https://www.wikidata.org/wiki/Q76291404> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76278929> .
   # oo Grizel Thomson
   []
-    gen:spouse <#John_Hay_(died_1762)> , <#Grizel_Thomson> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q76291438> , <https://www.wikidata.org/wiki/Q76291440> ;
 	gen:startDate "1712-03-07" .
 
-<#Sir_James_Hay,_4th_Baronet>
+<https://www.wikidata.org/wiki/Q75967680>
   # Sir James Hay, 4th Baronet, d. 1810-10-21
   # 4th Baronet Hay, of Smithfield, co. Peebles 1805-11-09
-  gen:father <#John_Hay_(died_1762)> ;
-  gen:mother <#Grizel_Thomson> .
+  gen:father <https://www.wikidata.org/wiki/Q76291438> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76291440> .
   # oo Dorriel Campbell, d. 1770-03-28, daughter of Daniel Campbell
   []
-    gen:spouse <#Sir_James_Hay,_4th_Baronet> , <#Dorriel_Campbell> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75967680> , <https://www.wikidata.org/wiki/Q75967681> ;
 	gen:startDate "1751-12-13" .
 
 <https://www.wikidata.org/wiki/Q75967678>
   # Elizabeth Hay, 1750 - 1789-12-26/1802
-  gen:father <#Sir_James_Hay,_4th_Baronet> ;
-  gen:mother <#Dorriel_Campbell> .
+  gen:father <https://www.wikidata.org/wiki/Q75967680> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75967681> .
   # oo 1770-09-20 Sir William Forbes of Monymusk, 6th Baronet, 1739-04-05 - 1806-11-12, https://www.wikidata.org/wiki/Q12057902
 <https://www.wikidata.org/wiki/Q75967872>
   # Sir John Hay, 5th Baronet, 1755-01-15 - 1830-05-23
-  gen:father <#Sir_James_Hay,_4th_Baronet> ;
-  gen:mother <#Dorriel_Campbell> .
+  gen:father <https://www.wikidata.org/wiki/Q75967680> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75967681> .
   # oo Hon. Mary Elizabeth Forbes, d. 1803-11-02
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75967872> , <https://www.wikidata.org/wiki/Q75283564> ;
@@ -2070,7 +2202,7 @@
   gen:mother <https://www.wikidata.org/wiki/Q75283564> .
   # oo Anne Preston, d. 1882-09-02
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q7527822> , <#Anne_Preston> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q7527822> , <https://www.wikidata.org/wiki/Q76291475> ;
 	gen:startDate "1821-10-06" .
 <https://www.wikidata.org/wiki/Q75967873>
   # Mary Hay, 1792-01-23 - 1877-03-03
@@ -2081,11 +2213,11 @@
   # Sir Adam Hay, 7th Baronet, 1795-12-14 - 1867-01-18
   gen:father <https://www.wikidata.org/wiki/Q75967872> ;
   gen:mother <https://www.wikidata.org/wiki/Q75283564> .
-  # oo Henrietta Callender Grant, 1802-05-24 - 1849-06-06
+  # oo Henrietta Callender Grant, 1802-05-24 - 1849-06-06 (dalrymple.ttl)
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q17285402> , <dalrymple.ttl#Henrietta_Callender_Grant> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q17285402> , <https://www.wikidata.org/wiki/Q75565832> ;
 	gen:startDate "1823-03-23" .
-<#Elizabeth_Hay_(died_1859)>
+<https://www.wikidata.org/wiki/Q75283561>
   # Elizabeth Hay, 1797-02-04 - 1859-08-03
   gen:father <https://www.wikidata.org/wiki/Q75967872> ;
   gen:mother <https://www.wikidata.org/wiki/Q75283564> .
@@ -2096,91 +2228,98 @@
   gen:mother <https://www.wikidata.org/wiki/Q75283564> .
   # oo 1817-04-25 Charles Mackenzie-Fraser, 10th of Inverallochy and 6th of Castle Fraser, 1792-06-09 - 1871-03-07, https://www.wikidata.org/wiki/Q26257744
 
-<#Sir_Robert_Hay,_8th_Baronet>
+<https://www.wikidata.org/wiki/Q76291487>
   # Sir Robert Hay, 8th Baronet, 1825-05-08 - 1885-05-30
   gen:father <https://www.wikidata.org/wiki/Q17285402> ;
-  gen:mother <dalrymple.ttl#Henrietta_Callender_Grant> .
+  gen:mother <https://www.wikidata.org/wiki/Q75565832> .
   # oo Sarah Duncan, d. 1910-02, daughter of A. Duncan, 1853-08
   []
-    gen:spouse <#Sir_Robert_Hay,_8th_Baronet> , <#Sarah_Duncan> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q76291487> , <https://www.wikidata.org/wiki/Q76291490> ;
 	gen:startDate "1853-08" .
 <https://www.wikidata.org/wiki/Q75565828>
   # Dorothea Hay, 1828~ - 1923-04-26
   gen:father <https://www.wikidata.org/wiki/Q17285402> ;
-  gen:mother <dalrymple.ttl#Henrietta_Callender_Grant> .
+  gen:mother <https://www.wikidata.org/wiki/Q75565832> .
   # oo 1851-08-06 Henry Edwyn Chandos Scudamore-Stanhope, 9th Earl of Chesterfield, 1821-04-08 - 1887-01-21, https://www.wikidata.org/wiki/Q5728161 (stanhope.ttl)
 <https://www.wikidata.org/wiki/Q76083297>
   # Luisa Grace Hay, 1831~ - 1883-05-07
   gen:father <https://www.wikidata.org/wiki/Q17285402> ;
-  gen:mother <dalrymple.ttl#Henrietta_Callender_Grant> .
+  gen:mother <https://www.wikidata.org/wiki/Q75565832> .
   # oo 1862-11-27 James Wolfe Murray, 1814-05-11 - 1890-06-20, https://www.wikidata.org/wiki/Q47007474
 
 <https://www.wikidata.org/wiki/Q75605013>
   # Sir John Adam Hay, 9th Baronet, 1854-05-05 - 1895-05-04
-  gen:father <#Sir_Robert_Hay,_8th_Baronet> ;
-  gen:mother <#Sarah_Duncan> .
+  gen:father <https://www.wikidata.org/wiki/Q76291487> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76291490> .
   # oo Anne Salisbury Mary Meliora Milliken-Napier, d. 1941-05-13 (napier.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75605013> , <https://www.wikidata.org/wiki/Q76112638> ;
 	gen:startDate "1881-03-10" .
-<#Athole_Stanhope_Hay>
+<https://www.wikidata.org/wiki/Q76290986>
   # Athole Stanhope Hay, 1861-03-25 - 1933-07-11
-  gen:father <#Sir_Robert_Hay,_8th_Baronet> ;
-  gen:mother <#Sarah_Duncan> .
-  # oo Caroline Margaret Cunard, d. 1943-11-25
+  gen:father <https://www.wikidata.org/wiki/Q76291487> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76291490> .
+  # oo Caroline Margaret Cunard, d. 1943-11-25 (fitzroy.ttl)
   []
-    gen:spouse <#Athole_Stanhope_Hay> , <#Caroline_Margaret_Cunard> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q76290986> , <https://www.wikidata.org/wiki/Q76290984> ;
 	gen:startDate "1890-01-16" .
 <https://www.wikidata.org/wiki/Q76291515>
   # Adele Hay, d. 1931-09-19
-  gen:father <#Sir_Robert_Hay,_8th_Baronet> ;
-  gen:mother <#Sarah_Duncan> .
+  gen:father <https://www.wikidata.org/wiki/Q76291487> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76291490> .
   # oo 1900-01-23 Hon. Charles Hay Scudamore-Stanhope, 1864-08-24 1937-02-09, https://www.wikidata.org/wiki/Q76291518 (stanhope.ttl)
 
-<#Sir_Duncan_Edwyn_Hay,_10th_Baronet>
+<https://www.wikidata.org/wiki/Q76291521>
   # Sir Duncan Edwyn Hay, 10th Baronet, 1882-09-25 - 1965
   gen:father <https://www.wikidata.org/wiki/Q75605013> ;
   gen:mother <https://www.wikidata.org/wiki/Q76112638> .
   # oo Lavinia Mary Houston, daughter of Wallace Charles Houston
   []
-    gen:spouse <#Sir_Duncan_Edwyn_Hay,_10th_Baronet> , <#Lavinia_Mary_Houston> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q76291521> , <https://www.wikidata.org/wiki/Q76291522> ;
 	gen:startDate "1905-12-12" .
-<#Robert_Athole_Hay>
+<https://www.wikidata.org/wiki/Q76129763>
   # Captain Robert Athole Hay, 1890-12-12 - 1939-05-22
-  gen:father <#Athole_Stanhope_Hay> ;
-  gen:mother <#Caroline_Margaret_Cunard> .
+  gen:father <https://www.wikidata.org/wiki/Q76290986> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76290984> .
   # oo Margaret Heywood Jones, d. 1928-12-17, daughter of Richard Heywood Heywood Jones and Catherine Margaret Johnston
   []
-    gen:spouse <#Robert_Athole_Hay> , <#Margaret_Heywood_Jones> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q76129763> , <https://www.wikidata.org/wiki/Q76291492> ;
 	gen:startDate "1914-05-09" .
-<#Sir_Bache_Hay,_11th_Baronet>
+<https://www.wikidata.org/wiki/Q75592449>
   # Sir Bache McEvers Athole Hay, 11th Baronet, 1892-09-24 - 1966-04-02
-  gen:father <#Athole_Stanhope_Hay> ;
-  gen:mother <#Caroline_Margaret_Cunard> .
+  gen:father <https://www.wikidata.org/wiki/Q76290986> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76290984> .
   # oo Judith Mimi Poole, d. 1978-01-09, daughter of Bryan Davies Poole and Georgiana Mary Fenwick
   []
-    gen:spouse <#Sir_Bache_Hay,_11th_Baronet> , <#Judith_Mimi_Poole> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75592449> , <https://www.wikidata.org/wiki/Q75621645> ;
 	gen:startDate "1918-08-21" .
 
-<#Caroline_Margaret_Hay>
+<https://www.wikidata.org/wiki/Q76129764>
   # Caroline Margaret Hay, 1916-06-29 - 1982
-  gen:father <#Robert_Athole_Hay> ;
-  gen:mother <#Margaret_Heywood_Jones> .
-  # oo 1943-06-04 (div 1969) Henry Alexander Hepburne-Scott, 10th Lord Polwarth, 1916-11-17 - 2005-01-04, https://www.wikidata.org/wiki/Q15453785
+  gen:father <https://www.wikidata.org/wiki/Q76129763> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76291492> .
+  # oo 1943-06-04 (div 1969) Henry Alexander Hepburne-Scott, 10th Lord Polwarth, 1916-11-17 - 2005-01-04, https://www.wikidata.org/wiki/Q15453785 (scott.ttl)
+<https://www.wikidata.org/wiki/Q76291503>
+  # Martin John Hay, 1919-06-03 - 1941-10-11
+  gen:father <https://www.wikidata.org/wiki/Q75592449> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75621645> .
 
 
 # ----
-#<https://www.wikidata.org/wiki/Q5561986>
+<https://www.wikidata.org/wiki/Q5561986>
   # Gilbert, 3rd Earl of Strathearn, 1150b - 1223
-  # oo Maud d'Aubigny, d. 1210a
+  gen:father <https://www.wikidata.org/wiki/Q5443772> ; # Fertheth, 2nd Earl of Strathearn
+  gen:mother <https://www.wikidata.org/wiki/Q75912622> . # Ethen (?)
+  # oo Maud d'Aubigny, d. 1210a (fitzalan.ttl)
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q5561986> , <fitzalan.ttl#Maud_d'Aubigny> .
+    gen:spouse <https://www.wikidata.org/wiki/Q5561986> , <https://www.wikidata.org/wiki/Q75242509> .
 
-<#Ethna_of_Strathearn>
+<https://www.wikidata.org/wiki/Q75662136>
+  gen:father <https://www.wikidata.org/wiki/Q117378764> ;
   # Ethna of Strathearn
   gen:father <https://www.wikidata.org/wiki/Q5561986> ; 
-  gen:mother <fitzalan.ttl#Maud_d'Aubigny> .
-  # oo David de la Haye, 2nd of Erroll, d. 1241-04-27~, #David_de_la_Haye,_2nd_of_Erroll
+  gen:mother <https://www.wikidata.org/wiki/Q75242509> .
+  # oo David de la Haye, 2nd of Erroll, d. 1241-04-27~, https://www.wikidata.org/wiki/Q75662117
 
 # ----
 #<https://www.wikidata.org/wiki/Q8007041>
@@ -2189,7 +2328,7 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q8007041> , <https://www.wikidata.org/wiki/Q61493576> .
 
-<#Lady_Idoine_Comyn>
+<https://www.wikidata.org/wiki/Q75662144>
   # Lady Idoine Comyn, 1215~
   gen:father <https://www.wikidata.org/wiki/Q8007041> ;
   gen:mother <https://www.wikidata.org/wiki/Q61493576> .
@@ -2204,56 +2343,17 @@
   # oo William Comyn, Earl of Buchan, d. 1233, https://www.wikidata.org/wiki/Q8007041
 
 # ----
-#<https://www.wikidata.org/wiki/Q16863398>
-  # Laurence Oliphant, 1st Lord Oliphant, 1434~ - 1498
-  # 1st Lord Oliphant 1464-01-13b
-  # oo Lady Isabel Hay, 1441 – 1509
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q16863398> , <https://www.wikidata.org/wiki/Q75556747> .
-
-<https://www.wikidata.org/wiki/Q75902527>
-  # Hon. Isabel Oliphant, b. 1472a
-  gen:father <https://www.wikidata.org/wiki/Q16863398> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75556747> .
-  # oo Alexander Dundas of Fingask, 1451b - 1513-09-09, https://www.wikidata.org/wiki/Q75902525
-
-
-<https://www.wikidata.org/wiki/Q16863477>
-  owl:sameAs <https://www.wikidata.org/wiki/Q75389789> .
-  # Laurence Oliphant, 4th Lord Oliphant, 1529 – 1593-01-16
-  # oo Lady Margaret Hay
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q16863477> , <https://www.wikidata.org/wiki/Q75389888> ;
-	gen:startDate "1551-05-11a" .
-
-<https://www.wikidata.org/wiki/Q75824907>
-  # John Oliphant, Master of Oliphant, d. 1603b
-  gen:father <https://www.wikidata.org/wiki/Q16863477> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75389888> .
-  # oo Lilias Gray, 1550~ - 1614-03
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q75824907> , <https://www.wikidata.org/wiki/Q75824911> ;
-	gen:startDate "1592-10-20" .
-
-<https://www.wikidata.org/wiki/Q75824913>
-  # Patrick Oliphant, 1st/6th Lord Oliphant, d. 1674-05-16b
-  # 6th Lord Oliphant 1630
-  # 1st Lord Oliphant 1633
-  gen:father <https://www.wikidata.org/wiki/Q75824907> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75824911> .
-
-# ----
-#<#Lyon_Logie_of_that_Ilk>
+#<https://www.wikidata.org/wiki/Q75269960>
   # Lyon Logie of that Ilk
   # oo Euphemia Boyd
   []
-    gen:spouse <#Lyon_Logie_of_that_Ilk> , <boyd.ttl#Euphemia_Boyd> .
+    gen:spouse <https://www.wikidata.org/wiki/Q75269960> , <https://www.wikidata.org/wiki/Q76213256> .
 
-<#Margaret_Logie>
+<https://www.wikidata.org/wiki/Q75269959>
   # Margaret Logie
-  gen:father <#Lyon_Logie_of_that_Ilk> ;
-  gen:mother <boyd.ttl#Euphemia_Boyd> .
-  # oo Thomas Hay, d. 1513-09-09, #Thomas_Hay_(died_1513)
+  gen:father <https://www.wikidata.org/wiki/Q75269960> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76213256> .
+  # oo Thomas Hay, d. 1513-09-09, https://www.wikidata.org/wiki/Q75269957
 
 # ----
 #<https://www.wikidata.org/wiki/Q76141885>
@@ -2263,141 +2363,265 @@
     gen:spouse <https://www.wikidata.org/wiki/Q76141885> , <https://www.wikidata.org/wiki/Q61268438> ;
 	gen:startDate "1504-04-24b" .
 
-<#Margaret_Robertson>
+<https://www.wikidata.org/wiki/Q75269954>
   # Margaret Robertson
   gen:father <https://www.wikidata.org/wiki/Q76141885> ;
   gen:mother <https://www.wikidata.org/wiki/Q61268438> .
   # oo 1528-11-12~ George Hay, 7th Earl of Erroll, d. 1574-01-30, https://www.wikidata.org/wiki/Q983215
 
 # ----
-#<https://www.wikidata.org/wiki/Q41752315>
+<https://www.wikidata.org/wiki/Q41752315>
   # James Balfour, 1st Lord Balfour, Baron of Glenawley, 1567~ - 1634-10-18
+  # 1st Lord Balfour, Baron of Glenawley, co. Fermanagh [Ireland] 1619-11-08
+  gen:father <https://www.wikidata.org/wiki/Q6129289> ; # James Balfour, Lord Pittendreich
+  gen:mother <https://www.wikidata.org/wiki/Q75329678> . # Margaret Balfour
   # oo Lady Elizabeth Hay
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q41752315> , <#Lady_Elizabeth_Hay_2> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q41752315> , <https://www.wikidata.org/wiki/Q75333766> ;
 	gen:startDate "1599a" .
 
 # ----
-#<#Uchtred_Macdowall,_11th_of_Garthland>
+#<https://www.wikidata.org/wiki/Q75267426>
   # Uchtred Macdowall, 11th of Garthland, d. 1600-06-11
   # oo Eupham Dunbar, daughter of Sir John Dunbar of Mochrum
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75267426> , <https://www.wikidata.org/wiki/Q75994932> .
 
-<#Janet_Macdowall>
+<https://www.wikidata.org/wiki/Q75965100>
   # Janet Macdowall
-  gen:father <#Uchtred_Macdowall,_11th_of_Garthland> .
-  # oo Thomas Hay of Park, d. 1628-09-12~, #Thomas_Hay_of_Park_(died_1628)
-<#John_Macdowall,_12th_of_Garthland>
+  gen:father <https://www.wikidata.org/wiki/Q75267426> .
+  # oo Thomas Hay of Park, d. 1628-09-12~, https://www.wikidata.org/wiki/Q75965097
+<https://www.wikidata.org/wiki/Q75994933>
   # John Macdowall, 12th of Garthland, d. 1611-05
-  gen:father <#Uchtred_Macdowall,_11th_of_Garthland> .
-  # and Eupham Dunbar
-  # oo Janet Gordon, daughter of gordon.ttl#Sir_John_Gordon_of_Lochinvar_(died_1604) and Elizabeth Maxwell
+  gen:father <https://www.wikidata.org/wiki/Q75267426> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75994932> .
+  # oo Janet Gordon
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75994933> , <https://www.wikidata.org/wiki/Q75994943> .
 
-<#Margaret_Macdowall>
+<https://www.wikidata.org/wiki/Q75965103>
   # Margaret Macdowall
-  gen:father <#John_Macdowall,_12th_of_Garthland> .
-  # and Janet Gordon
-  # oo Thomas Hay of Park, d. 1633, #Thomas_Hay_of_Park_(died_1633)
+  gen:father <https://www.wikidata.org/wiki/Q75994933> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75994943> .
+  # oo Thomas Hay of Park, d. 1633, https://www.wikidata.org/wiki/Q75965101
+
+# ----
+#<https://www.wikidata.org/wiki/Q75824941>
+  # Patrick Cheyne, 8th of Essilmont
+  # oo Helen Bryson
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75824941> , <https://www.wikidata.org/wiki/Q76322215> .
+  # oo Christian Hepburn of Smeaton
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75824941> , <https://www.wikidata.org/wiki/Q76322217> .
+
+<https://www.wikidata.org/wiki/Q75274092>
+  # Isabel Cheyne
+  gen:father <https://www.wikidata.org/wiki/Q75824941> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76322215> .
+  # oo 1596-10-29 Patrick Hay, 5th of Megginch, d. 1603-08, https://www.wikidata.org/wiki/Q75662697
+  # oo George Hay, 1st of Kellour, https://www.wikidata.org/wiki/Q75291877
+<https://www.wikidata.org/wiki/Q75824943>
+  # Elizabeth Cheyne, d. 1634b
+  gen:father <https://www.wikidata.org/wiki/Q75824941> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76322217> .
+  # oo Peter Hay, 6th of Megginch, 1576 - 1616-08-12, https://www.wikidata.org/wiki/Q75824578
+  # oo Patrick Oliphant, 1st/6th Lord Oliphant, d. 1674-05-16b, https://www.wikidata.org/wiki/Q75824913
 
 # ----
 <https://www.wikidata.org/wiki/Q75451928>
   # Margaret Halyburton, d. 1633-04-04
-  gen:father <https://www.wikidata.org/wiki/Q17984554> .
+  gen:father <https://www.wikidata.org/wiki/Q17984554> . # Sir James Halyburton of Pitcur
   # oo Patrick Ogilvy of Inchmartine, younger, d. 1592-11-21, https://www.wikidata.org/wiki/Q75451929
   # oo 1595-11-15b George Hay, 1st Earl of Kinnoull, 1570 - 1634-12-16, https://www.wikidata.org/wiki/Q1507538
 
 # ----
-<#Lady_Honora_Denny>
-  # Lady Honora Denny, d. 1614-08~
-  gen:father <https://www.wikidata.org/wiki/Q5342571> ;
-  gen:mother <cecil.ttl#Lady_Mary_Cecil_(died_1638)> .
-  # oo 1608-01-06 James Hay, 1st Earl of Carlisle, 1580~ - 1636-04-25, https://www.wikidata.org/wiki/Q3023437
+#<https://www.wikidata.org/wiki/Q75772694>
+  # Sir George Preston of Craigmillar, d. 1612b
+  # oo Agnes Hay
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75772694> , <https://www.wikidata.org/wiki/Q75772692> ;
+	gen:startDate "1612b" .
 
 # ----
-#<#Elisé_Auriol>
+<https://www.wikidata.org/wiki/Q76135656>
+  # David Rattray of Craighall, 17th of Rattray, d. 1654
+  gen:father <https://www.wikidata.org/wiki/Q76135655> ; # Silvester Rattray of Craighall, 16th of Rattray
+  gen:mother <https://www.wikidata.org/wiki/Q76135655> . # Agnes Lammie
+  # oo Agnes Hay
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76135656> , <https://www.wikidata.org/wiki/Q75812056> ;
+	gen:startDate "1617-08-24" .
+
+<https://www.wikidata.org/wiki/Q76135663>
+  # Patrick Rattray of Craighall-Rattray, 18th of Rattray, d. 1677-04-10
+  gen:father <https://www.wikidata.org/wiki/Q76135656> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75812056> .
+  # oo Hon. Anne Drummond, d. 1689-05
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76135663> , <https://www.wikidata.org/wiki/Q76135666> ;
+	gen:startDate "1639-01-25" .
+
+<https://www.wikidata.org/wiki/Q76135667>
+  # James Rattray of Craighall-Rattray, 19th of Rattray, d. 1684-08-02
+  gen:father <https://www.wikidata.org/wiki/Q76135663> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76135666> .
+  # oo Elizabeth Hay, b. 1658-11-13
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76135667> , <https://www.wikidata.org/wiki/Q76135669> ;
+	gen:startDate "1682-12-08" .
+
+<https://www.wikidata.org/wiki/Q7793417>
+  # Rt. Rev. Thomas Rattray, 20th of Craighall-Rattray, 1684 – 1743
+  # Bischofsweihe 1727-06-04
+  # Bishop of Dunkeld 1731
+  # Primus of the Scottish Episcopal Church 1738
+  gen:father <https://www.wikidata.org/wiki/Q76135667> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76135669> .
+  # oo Margaret Galloway, d. 1737
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7793417> , <https://www.wikidata.org/wiki/Q76135673> ;
+	gen:startDate "1701-07-31" .
+
+<https://www.wikidata.org/wiki/Q75600432>
+  # Jean Rattray, d. 1765-09-25
+  gen:father <https://www.wikidata.org/wiki/Q7793417> .
+  # oo 1733-10-04 Sir James Elphinstone, 3rd Baronet, 1710~ - 1739-04, https://www.wikidata.org/wiki/Q75519015
+
+# ----
+#<https://www.wikidata.org/wiki/Q76322223>
+  # John Murray, 2nd of Pitcullen
+  # oo Marie Hay, b. 1653-04-20
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76322223> , <https://www.wikidata.org/wiki/Q76322222> ;
+	gen:startDate "1676-04-11" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q102252219>
+  # Sir James Galloway, 1st Lord Dunkeld, 1585~ - 1660-11
+  # 1st Lord Dunkeld [Scotland] 1645
+  # son of Patrick Galloway
+  # and Katherine Lawson
+  # oo NN Norter, daughter of Sir Robert Norter
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q102252219> , <https://www.wikidata.org/wiki/Q102252232> .
+
+<https://www.wikidata.org/wiki/Q53015077>
+  # Thomas Galloway, 2nd Lord Dunkeld, d. 1684-08-03b
+  gen:father <https://www.wikidata.org/wiki/Q102252219> ;
+  gen:mother <https://www.wikidata.org/wiki/Q102252232> .
+  # oo Margaret Thomson, 1643b - 1725-12-31a
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q53015077> , <https://www.wikidata.org/wiki/Q102252236> ;
+	gen:startDate "1662-07-29" .
+
+<https://www.wikidata.org/wiki/Q76309015>
+  # Hon. John Galloway
+  gen:father <https://www.wikidata.org/wiki/Q53015077> .
+  # oo Elizabeth Hay, b. 1658-11-13
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76309015> , <https://www.wikidata.org/wiki/Q76135669> .
+<https://www.wikidata.org/wiki/Q76135673>
+  # Margaret Galloway, d. 1737
+  gen:father <https://www.wikidata.org/wiki/Q53015077> ;
+  gen:mother <https://www.wikidata.org/wiki/Q102252236> .
+  # oo 1701-07-31 Rt. Rev. Thomas Rattray, 20th of Craighall-Rattray, 1684 – 1743, https://www.wikidata.org/wiki/Q7793417
+# ----
+#<https://www.wikidata.org/wiki/Q102252239>
+  # Sir Thomas Thomson, of Duddingstone, 1st Baronet, d. 1666-03b
+  # 1st Baronet Thomson, of Duddingston in Edinburgh [Nova Scotia] 1636-02-20
+  # son of Alexander Thomson, of Duddingstone
+  # and Margaret Preston
+  # oo Margaret Scrimgeour, d. 1654a, daughter of John Scrimgeour
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q102252239> , <https://www.wikidata.org/wiki/Q102252252> .
+
+<https://www.wikidata.org/wiki/Q102252236>
+  # Margaret Thomson, 1643b - 1725-12-31a
+  gen:father <https://www.wikidata.org/wiki/Q102252239> ;
+  gen:mother <https://www.wikidata.org/wiki/Q102252252> .
+  # oo 1662-07-29 Thomas Galloway, 2nd Lord Dunkeld, d. 1684-08-03b, https://www.wikidata.org/wiki/Q53015077
+
+# ----
+#<https://www.wikidata.org/wiki/Q75938709>
   # Elisé Auriol
   # oo Elizabeth de Belloc
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75938709> , <https://www.wikidata.org/wiki/Q75938711> .
 
-<#Peter_Auriol>
+<https://www.wikidata.org/wiki/Q75275277>
   # Peter Auriol, 1682 - 1754-10-28
-  gen:father <#Elisé_Auriol> .
-  # and Elizabeth de Belloc
-<#Jean_Louis_d'Auriol>
+  gen:father <https://www.wikidata.org/wiki/Q75938709> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75938711> .
+  # oo Frances Clies
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75275277> , <https://www.wikidata.org/wiki/Q96078633> .
+<https://www.wikidata.org/wiki/Q75938708>
   # Jean Louis d'Auriol, 1684-10-24 - 1750-01-24
-  gen:father <#Elisé_Auriol> .
-  # and Elizabeth de Belloc
-  # oo Olympe de Bonnefons
+  gen:father <https://www.wikidata.org/wiki/Q75938709> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75938711> .
+  # oo Olympe de Bonnefons, daughter of Jean-Jacques de Bonnefous and Anne de Baux
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75938708> , <https://www.wikidata.org/wiki/Q75938713> .
 
 <https://www.wikidata.org/wiki/Q75275276>
   # Henrietta Auriol, d. 1763-04-22
-  gen:father <#Peter_Auriol> .
+  gen:father <https://www.wikidata.org/wiki/Q75275277> ;
+  gen:mother <https://www.wikidata.org/wiki/Q96078633> .
   # oo 1748-01-31 Most Rev. Hon. Robert Hay-Drummond, 1711-11-10 - 1776-12-10, https://www.wikidata.org/wiki/Q772812
-<#James_Auriol>
-  # James Auriol, 1724 - 1771
-  gen:father <#Jean_Louis_d'Auriol> .
-  # and Olympe de Bonnefons
-  # oo Charlotte Russell
+<https://www.wikidata.org/wiki/Q75273245>
+  # James Peter Auriol, 1724 - 1771
+  gen:father <https://www.wikidata.org/wiki/Q75938708> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75938713> .
+  # oo Charlotte Russell, 1727 - 1808-06-18, daughter of John Russell
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75273245> , <https://www.wikidata.org/wiki/Q75938715> .
 
-<#Amelia_Emily_Auriol>
+<https://www.wikidata.org/wiki/Q75273243>
+  # Charlotte Louisa Auriol, 1755 - 1833-01-10
+  gen:father <https://www.wikidata.org/wiki/Q75273245> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75938715> .
+  # oo 1782-02-23 Thomas Dashwood, 1749-12-25 - 1825-12-20, https://www.wikidata.org/wiki/Q75264775
+<https://www.wikidata.org/wiki/Q75281096>
   # Amelia Emily Auriol, 1762 - 1840-10-07
-  gen:father <#James_Auriol> .
-  # and Charlotte Russell
+  gen:father <https://www.wikidata.org/wiki/Q75273245> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75938715> .
   # oo 1791-05-24 Very Rev. Edward Auriol Hay-Drummond, 1758-04-10 - 1829-12-30, https://www.wikidata.org/wiki/Q5341644
-
-# ----
-#<https://www.wikidata.org/wiki/Q7526287>
-  # Sir Charles Rowley, 1st Baronet, 1770-12-16 - 1845-10-13
-  # 1st Baronet Rowley, of Hill House, co. Berks 1836-03-21
-  # oo 1797-12-07 Elizabeth King, d. 1838-01-11
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q7526287> , <#Elizabeth_King> ;
-	gen:startDate "1797-12-07" .
-
-<#Louisa_Burton_Rowley>
-  # Louisa Burton Rowley, d. 1885-03-06
-  gen:father <https://www.wikidata.org/wiki/Q7526287> ;
-  gen:mother <#Elizabeth_King> .
-  # oo 1824-08-17 Thomas Robert Hay-Drummond, 11th Earl of Kinnoull, 1785-04-05 - 1866-02-18, https://www.wikidata.org/wiki/Q7616570
-# ----
-#<https://www.wikidata.org/wiki/Q7528612>
-  # Sir Richard King, 1st Baronet, d. 1806-11-07
-  # 1st Baronet King, of Bellevue, co. Kent 1792-07-18
-  # son of Curtis King
-  # and Mary Barnett
-  # oo Susannah Margaretta Coker, daughter of William Coker
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q7528612> , <#Susannah_Margaretta_Coker> ;
-	gen:startDate "1769-11-30" .
-
-<#Elizabeth_King>
-  # Elizabeth King, d. 1838-01-11
-  gen:father <https://www.wikidata.org/wiki/Q7528612> ;
-  gen:mother <#Susannah_Margaretta_Coker> .
-  # oo 1797-12-07 Sir Charles Rowley, 1st Baronet, 1770-12-16 - 1845-10-13, https://www.wikidata.org/wiki/Q7526287
 
 # ----
 #<https://www.wikidata.org/wiki/Q826766>
   # Rt. Hon. Sir George Arthur, 1st Baronet, 1784-06-21 - 1854-09-19
   # 1st Baronet Arthur, of Upper Canada 1841-06-05
+  # son of John Arthur
+  # and Catherine Cornish
   # oo Eliza Ord Ussher Smith, d. 1855-01-14, daughter of Sir John Frederick Sigismund Smith
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q826766> , <#Eliza_Ord_Ussher_Smith> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q826766> , <https://www.wikidata.org/wiki/Q75412450> ;
 	gen:startDate "1814-05" .
 
 <https://www.wikidata.org/wiki/Q5497269>
   # Sir Frederick Leopold Arthur, 2nd Baronet, 1816-12-20 - 1878-06-01
   gen:father <https://www.wikidata.org/wiki/Q826766> ;
-  gen:mother <#Eliza_Ord_Ussher_Smith> .
+  gen:mother <https://www.wikidata.org/wiki/Q75412450> .
   # oo Lady Elizabeth Hay-Drummond, 1834-12-23 - 1902-02-24
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q5497269> , <#Lady_Elizabeth_Hay-Drummond> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q5497269> , <https://www.wikidata.org/wiki/Q75281141> ;
 	gen:startDate "1856-04-24" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q75281138>
+  # Rev. Canon Ernest Edward Dugmore, d. 1925-03-10
+  # oo Lady Elizabeth Hay-Drummond, 1834-12-23 - 1902-02-24
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75281138> , <https://www.wikidata.org/wiki/Q75281141> ;
+	gen:startDate "1883-11-22" .
 
 # ----
 #<https://www.wikidata.org/wiki/Q16059689>
   # Walter Henry Hadow, 1849-09-25 – 1898-09-15
   # oo Lady Constance Blanche Louisa Hay-Drummond, 1851-08-15 - 1931-12-21
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q16059689> , <#Lady_Constance_Blanche_Louisa_Hay-Drummond> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q16059689> , <https://www.wikidata.org/wiki/Q75818627> ;
 	gen:startDate "1880-10-28" .
 
 # ----
@@ -2405,8 +2629,79 @@
   # Alexander Otto Hugo Wladimir Fürst Münster v. Derneburg, 1858-09-01 - 1922-10-12
   # oo Lady Muriel Henrietta Constance Hay-Drummond, 1863-08-14 - 1927-01-02
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q17122160> , <#Lady_Muriel_Henrietta_Constance_Hay-Drummond> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q17122160> , <https://www.wikidata.org/wiki/Q75818636> ;
 	gen:startDate "1890-06-09" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q26258035>
+  # Sir Claude Scott, 1st Baronet Scott of Lytchet Minster, 1742-05-11 - 1830-03-27
+  # 1st Baronet Scott of Lytchet Minster 1821-09-08
+  # oo Martha Eyre, d. 1831-02-22
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q26258035> , <#Martha_Eyre> .
+
+<https://www.wikidata.org/wiki/Q25991372>
+  # Sir Samuel Scott, 2nd Baronet, 1772-04-29 - 1849
+  gen:father <https://www.wikidata.org/wiki/Q26258035> ;
+  gen:mother <#Martha_Eyre> .
+  # oo Anne Ommaney
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q25991372> , <#Anne_Ommaney> .
+
+<#Sir_Claude_Scott,_3rd_Baronet>
+  # Sir Claude Edward Scott, 3rd Baronet, 1804-04-25 - 1874
+  gen:father <https://www.wikidata.org/wiki/Q25991372> ;
+  gen:mother <#Anne_Ommaney> .
+  # oo Mary Buckworth, 1820-02-06~ - 1844-12-30, daughter of Theophilus Russel Buckworth and Esther Latchford
+  []
+    gen:spouse <#Sir_Claude_Scott,_3rd_Baronet> , <#Mary_Buckworth> ;
+	gen:startDate "1838~" .
+
+<https://www.wikidata.org/wiki/Q75341770>
+  # Sir Claude Edward Scott, 4th Baronet, 1840 – 1880
+  gen:father <#Sir_Claude_Scott,_3rd_Baronet> ;
+  gen:mother <#Mary_Buckworth> .
+  # oo Maria Selina Burney, daughter of Henry Charles Burney
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75341770> , <https://www.wikidata.org/wiki/Q76322579> .
+<https://www.wikidata.org/wiki/Q75280956>
+  # Sir Edward Henry Scott, 5th Baronet of Lytchet Minster, 1842-02-19 - 1883-08-01
+  gen:father <#Sir_Claude_Scott,_3rd_Baronet> ;
+  gen:mother <#Mary_Buckworth> .
+  # oo Emilie Packe, d. 1922-04-06
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75280956> , <https://www.wikidata.org/wiki/Q75597297> ;
+	gen:startDate "1865-06-06" .
+
+<https://www.wikidata.org/wiki/Q57575715>
+  # Mabel Edith Scott, d. 1908-09-22
+  gen:father <https://www.wikidata.org/wiki/Q75341770> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76322579> .
+  # oo 1890-02-06 (div 1901) John Russell, 2nd Earl Russell, 1865-08-12 - 1931-03-03, https://www.wikidata.org/wiki/Q336699
+<https://www.wikidata.org/wiki/Q75257497>
+  # Anne Louisa Scott, d. 1936-02-05
+  gen:father <https://www.wikidata.org/wiki/Q75280956> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75597297> .
+  # oo 1890-06-12 Charles Marsham, 5th Earl of Romney, 1864-10-25 - 1933-03-13, https://www.wikidata.org/wiki/Q75257496 
+<https://www.wikidata.org/wiki/Q75280954>
+  # Mary Scott, d. 1948-06-06
+  gen:father <https://www.wikidata.org/wiki/Q75280956> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75597297> .
+  # oo 1891-11-24 Arthur William Henry Drummond of Cromlix, 1862-05-04 - 1953-07-21, https://www.wikidata.org/wiki/Q75264269
+<https://www.wikidata.org/wiki/Q7528950>
+  # Sir Samuel Scott, 6th Baronet, 1873-10-25 – 1943-02-20
+  gen:father <https://www.wikidata.org/wiki/Q75280956> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75597297> .
+  # oo Lady Sophie Beatrix Mary Cadogan, 1874-04-06 - 1937-11-08
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7528950> , <https://www.wikidata.org/wiki/Q34135060> ;
+	gen:startDate "1896-06-29" .
+# ----
+<https://www.wikidata.org/wiki/Q75597297>
+  # Emilie Packe, d. 1922-04-06
+  gen:father <https://www.wikidata.org/wiki/Q75597299> . # Henry Packe
+  # oo 1865-06-06 Sir Edward Henry Scott, 5th Baronet, 1842-02-19 - 1883-08-01, https://www.wikidata.org/wiki/Q75280956
+  # oo 1895-01-05 Horace Brand Farquhar, 1st Earl Farquhar, 1844-05-19 - 1923-08-30, https://www.wikidata.org/wiki/Q16031557 (bertie.ttl)
 
 # ----
 #<https://www.wikidata.org/wiki/Q75812902>
@@ -2430,31 +2725,33 @@
   # Herbert Freiherr von Beneckendorff und Hindenburg, 1872-04-01 - 1956-07-31
   # oo Agnes Blanche Marie Hay-Drummond, 1873-12-06 - 1938-12-13
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q55852320> , <#Agnes_Blanche_Marie_Hay-Drummond> .
+    gen:spouse <https://www.wikidata.org/wiki/Q55852320> , <https://www.wikidata.org/wiki/Q15833918> .
 
 # ----
-#<#William_Francis_D'Arcy>
+#<https://www.wikidata.org/wiki/Q75439359>
   # William Francis D'Arcy, 1873-09-14 - 1919-10-11
-  # oo 1906-05-23 Violet Nina Baring, d. 1965-11-25
+  # son of William Knox D'Arcy
+  # and Maria Colletta Elena Birkbeck
+  # oo Violet Nina Baring, d. 1965-11-25
   []
-    gen:spouse <#William_Francis_D'Arcy> , <baring#Violet_Nina_Baring> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75439359> , <https://www.wikidata.org/wiki/Q75439357> ;
 	gen:startDate "1906-05-23" .
 
-<#Norman_Francis_William_Haliburton_D’Arcy>
+<https://www.wikidata.org/wiki/Q75629687>
   # Norman Francis William Haliburton D’Arcy, 1907-09-28 - 1976
-  gen:father <#William_Francis_D'Arcy> ;
-  gen:mother <baring#Violet_Nina_Baring> .
+  gen:father <https://www.wikidata.org/wiki/Q75439359> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75439357> .
   # oo Lady Margaret Florence Grace Hay-Drummond, 1907-10-02 - 1976-06-12
   []
-    gen:spouse <#Norman_Francis_William_Haliburton_D’Arcy> , <#Lady_Margaret_Florence_Grace_Hay-Drummond> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75629687> , <https://www.wikidata.org/wiki/Q75629688> ;
 	gen:startDate "1929-02-26" ;
 	gen:divorceDate "1942" .
 
 # ----
 #<https://www.wikidata.org/wiki/Q62717138>
-  # Alice Matilda Lethbridge, 1866 – 1948-02-04
-  # son of Thomas Lethbridge
-  # and Louisa Holliday
+  # Alice Matilda Lethbridge, 1866-03 – 1948-02-04
+  # son of Thomas Lethbridge, b. 1841
+  # and oo 1862-06 Louisa Matilda Holliday, 1844~ - 1896-12
 #<https://www.wikidata.org/wiki/Q75812511>
   # Sidney Thomas Lethbridge, 1867-12-25 - 1937-02-19
   # son of Thomas Lethbridge
@@ -2463,79 +2760,49 @@
 
 <https://www.wikidata.org/wiki/Q75812514>
   # Grace Margarite Lethbridge, 1895-09-01 - 1946-02-12
-  gen:father <https://www.wikidata.org/wiki/Q62717138> .
+  gen:father <https://www.wikidata.org/wiki/Q75812511> .
   # and Grace Emily Willis
   # oo 1920-06-09 Sir Robert Hay-Drummond-Hay, 1846-07-25 - 1926-10-15, https://www.wikidata.org/wiki/Q75812356
 
 # ----
-#<#Ernest_Gaddesden_Fellows>
-  # Ernest Gaddesden Fellows
-  # oo 1903-06-10 Margaret Hamilton Wills, 1874-07-14 - 1926-08-03
+#<https://www.wikidata.org/wiki/Q5982172>
+  # James Ian Macpherson, 1st Baron Strathcarron, 1880-05-14 - 1937-08-14
+  # 1st Baron Strathcarron, of Banchor, co. Inverness 1936-01-11
+  # son of James Macpherson
+  # and Anne Stewart
+  # oo Elizabeth Marjorie Rhodes, d. 1956-08-04
   []
-    gen:spouse <#Ernest_Gaddesden_Fellows> , <#Margaret_Hamilton_Wills> ;
-	gen:startDate "1903-06-10" .
+    gen:spouse <https://www.wikidata.org/wiki/Q5982172> , <https://www.wikidata.org/wiki/Q75874132> ;
+	gen:startDate "1915-09-24" .
 
-<#Enid_Margaret_Hamlyn_Fellows>
-  # Enid Margaret Hamlyn Fellows
-  gen:father <#Ernest_Gaddesden_Fellows> ;
-  gen:mother <#Margaret_Hamilton_Wills> .
-  # oo 1923-12-15 (div 1927) George Harley Hay-Drummond, 14th Earl of Kinnoull, 1902-03-30 - 1938-03-18, https://www.wikidata.org/wiki/Q19874919
-# ----
-#<https://www.wikidata.org/wiki/Q7526796>
-  # Sir Frederick Wills, 1st Baronet, 1838-11-21 - 1909-02-18
-  # 1st Baronet Wills, of Northmoor, Somerset 1897-11-15
-  # oo Annie Hamilton, d. 1910, daughter of Rev. James Hamilton
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q7526796> , <#Annie_Hamilton> ;
-	gen:startDate "1867-07-03" .
-
-<#Margaret_Hamilton_Wills>
-  # Margaret Hamilton Wills, 1874-07-14 - 1926-08-03
-  gen:father <https://www.wikidata.org/wiki/Q7526796> ;
-  gen:mother <#Annie_Hamilton> .
-  # oo 1903-06-10 Ernest Gaddesden Fellows, #Ernest_Gaddesden_Fellows
-
-# ----
-#<https://www.wikidata.org/wiki/Q16061349>
-  # Cranley Gordon Douglas Onslow, Lord Onslow of Woking, 1926-06-08 - 2001-03-13
-  # Baron Onslow of Woking, of Woking in the County of Surrey 1997-10-31
-  # oo Lady June Ann Hay, d. 2002-01-28
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q16061349> , <#Lady_June_Ann_Hay> ;
-	gen:startDate "1955-05-07" .
-
+<https://www.wikidata.org/wiki/Q75874165>
+  # Hon. Ann Patricia Macpherson, 1919-02-14 - 2003-03-23
+  gen:father <https://www.wikidata.org/wiki/Q5982172> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75874132> .
+  # oo 1936-07-17 Sir Denys Colquhoun Flowerdew Lowson, 1st Baronet, 1906-01-22 - 1975-09-10, https://www.wikidata.org/wiki/Q18527681
 # ----
 #<https://www.wikidata.org/wiki/Q18527681>
   # Sir Denys Colquhoun Flowerdew Lowson, 1st Baronet, 1906-01-22 - 1975-09-10
   # 1st Baronet Lowson, of Westlaws, co. Perth 1951-06-27
+  # son of James Gray Flowerdew Lowson
+  # and Adelaide Louisa Scott
   # oo Hon. Ann Patricia Macpherson, 1919-02-14 - 2003-03-23
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q18527681> , <#Ann_Patricia_Macpherson> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q18527681> , <https://www.wikidata.org/wiki/Q75874165> ;
 	gen:startDate "1936-07-17" .
 
-<#Gay_Ann_Lowson>
+<https://www.wikidata.org/wiki/Q75356960>
   # Gay Ann Lowson, 1938-01-10 - 2016-07-08
   gen:father <https://www.wikidata.org/wiki/Q18527681> ;
-  gen:mother <#Ann_Patricia_Macpherson> .
+  gen:mother <https://www.wikidata.org/wiki/Q75874165> .
   # oo 1961-06-01 Arthur William George Patrick Hay, 15th Earl of Kinnoull, 1935-03-26 - 2013-06-07, https://www.wikidata.org/wiki/Q15784120
-# ----
-#<https://www.wikidata.org/wiki/Q5982172>
-  # James Ian Macpherson, 1st Baron Strathcarron, 1880-05-14 - 1937-08-14
-  # 1st Baron Strathcarron, of Banchor, co. Inverness 1936-01-11
-  # oo Elizabeth Marjorie Rhodes, d. 1956-08-04
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q5982172> , <#Elizabeth_Marjorie_Rhodes> ;
-	gen:startDate "1915-09-24" .
-
-<#Ann_Patricia_Macpherson>
-  # Hon. Ann Patricia Macpherson, 1919-02-14 - 2003-03-23
-  gen:father <https://www.wikidata.org/wiki/Q5982172> ;
-  gen:mother <#Elizabeth_Marjorie_Rhodes> .
-  # oo 1936-07-17 Sir Denys Colquhoun Flowerdew Lowson, 1st Baronet, 1906-01-22 - 1975-09-10, https://www.wikidata.org/wiki/Q18527681
 
 # ----
 #<https://www.wikidata.org/wiki/Q15054237>
   # Sir John Baird, Lord Newbyth, 1620-09-10 - 1698-04-27
+  # Lord Newbyth [Scottish Law Lord] 1664
+  # son of James Baird
+  # and Bethia Dempster
   # oo Margaret Hay
   []
     gen:spouse <https://www.wikidata.org/wiki/Q15054237> , <https://www.wikidata.org/wiki/Q75418013> ;
@@ -2549,9 +2816,9 @@
   # oo Helen Gilmour, d. 1701-04-22, daughter of Sir John Gilmour of Craigmillar and Margaret Murray
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75418016> , <https://www.wikidata.org/wiki/Q75418018> .
-  # oo Margaret St. Clair, 1686~ - 1756-12-23
+  # oo Margaret St. Clair, 1686~ - 1756-12-23 (sinclair.ttl)
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q75418016> , <sinclair.ttl#Margaret_St._Clair> .
+    gen:spouse <https://www.wikidata.org/wiki/Q75418016> , <https://www.wikidata.org/wiki/Q104738935> .
 
 <https://www.wikidata.org/wiki/Q7527573>
   # Sir John Baird of Newbyth, 2nd Baronet, 1686-10-13 - 1745-09-30
@@ -2562,23 +2829,18 @@
     gen:spouse <https://www.wikidata.org/wiki/Q7527573> , <https://www.wikidata.org/wiki/Q75418028> .
 
 # ----
-<#Lady_Elizabeth_Dalzell>
-  # Lady Elizabeth Dalzell
-  gen:father <https://www.wikidata.org/wiki/Q16849431> ;
-  gen:mother <gordon.ttl#Lady_Mary_Seton> .
-  # oo Lord John Hay, 1668 - 1706-08-24, https://www.wikidata.org/wiki/Q16239863
-
-# ----
 #<https://www.wikidata.org/wiki/Q15994515>
   # Sir Benjamin Hobhouse, 1st Baronet, 1757-03-29 - 1831-08-14
   # 1st Baronet Hobhouse, of Broughton-Gifford, Bradford-on-Avon, and Monkton Farleigh, co. Wilts 1812-12-22
+  # son of John Hobhouse
+  # and Mary Medley
   # oo Charlotte Cam, d. 1791-11-25, daughter of Samuel Cam
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q15994515> , <#Charlotte_Cam> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q15994515> , <https://www.wikidata.org/wiki/Q75346117> ;
 	gen:startDate "1785-09-12" .
-  # Amelia Parry, d. 1880-01, daughter of Rev. Joshua Parry
+  # oo Amelia Parry, d. 1880-01, daughter of Rev. Joshua Parry
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q15994515> , <#Amelia_Parry> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q15994515> , <https://www.wikidata.org/wiki/Q75346114> ;
 	gen:startDate "1793-04-18" .
 
 <https://www.wikidata.org/wiki/Q332595>
@@ -2586,42 +2848,51 @@
   # 2nd Baronet Hobhouse, of Broughton-Gifford, Bradford-on-Avon, and Monkton Farleigh, co. Wilts 1831-08-14
   # 1st Baron Broughton of Broughton-de-Gyfford, Wiltshire 1851-02-26
   gen:father <https://www.wikidata.org/wiki/Q15994515> ;
-  gen:mother <#Charlotte_Cam> .
+  gen:mother <https://www.wikidata.org/wiki/Q75346117> .
   # oo Lady Julia Tomasina Hay, 1797-09-07 - 1835-04-03
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q332595> , <#Lady_Julia_Tomasina_Hay> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q332595> , <https://www.wikidata.org/wiki/Q75283299> ;
 	gen:startDate "1828-07-28" .
-<#Harriet_Theodora_Hobhouse>
+<https://www.wikidata.org/wiki/Q75385870>
   # Harriet Theodora Hobhouse
   gen:father <https://www.wikidata.org/wiki/Q15994515> ;
-  gen:mother <#Amelia_Parry> .
+  gen:mother <https://www.wikidata.org/wiki/Q75346114> .
   # oo 1823-05-27 Rt. Rev. George John Trevor Spencer, 1799-12-11 - 1866-07-16, https://www.wikidata.org/wiki/Q5544734
-<#Joanna_Hobhouse>
+<https://www.wikidata.org/wiki/Q75336531>
+  # Catherine Hobhouse, d. 1828-11-06
+  gen:father <https://www.wikidata.org/wiki/Q15994515> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75346114> .
+  # oo 1826-11-30 John William Fane, 1804-09-01 - 1875-11-19, https://www.wikidata.org/wiki/Q6232701
+<https://www.wikidata.org/wiki/Q75346138>
   # Joanna Hobhouse, d. 1878-04-08
   gen:father <https://www.wikidata.org/wiki/Q15994515> ;
-  gen:mother <#Amelia_Parry> .
-  # oo 1834-06-10 Rev. Frederick Adrian Scrope Fane, 1810-12-08 - 1894-10-05, fane.ttl#Frederick_Adrian_Scrope_Fane
+  gen:mother <https://www.wikidata.org/wiki/Q75346114> .
+  # oo 1834-06-10 Rev. Frederick Adrian Scrope Fane, 1810-12-08 - 1894-10-05, https://www.wikidata.org/wiki/Q75385889
 
 # ----
 #<https://www.wikidata.org/wiki/Q7527442>
   # Sir James Hunter Blair of Dunskey, 1st Baronet, 1741-02-21 - 1787-07-01
+  # James Hunter
+  # James Hunter Blair 1777
   # 1st Baronet Hunter Blair, of Dunskey 1786-06-27
-  # oo Jean Blair, d. 1817-02-02, daughter of John Blair of Dunskey and Anne Kennedy (daughter of Sir John Kennedy of Culzean, 2nd Baronet and Jean Douglas)
+  # son of John Hunter of Mainholm and Brownhill
+  # and Anne Cuninghame
+  # oo Jean Blair, d. 1817-02-02 (kennedy.ttl)
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q7527442> , <#Jean_Blair> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q7527442> , <https://www.wikidata.org/wiki/Q75965121> ;
 	gen:startDate "1770" .
 
 <https://www.wikidata.org/wiki/Q75283560>
   # Sir David Hunter Blair of Blairquhan, 3rd Baronet, 1778-10-03 - 1857-12-26
   gen:father <https://www.wikidata.org/wiki/Q7527442> ;
-  gen:mother <#Jean_Blair> .
+  gen:mother <https://www.wikidata.org/wiki/Q75965121> .
   # oo Dorothea Hay-Mackenzie, 1791~ - 1820-05-22
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75283560> , <https://www.wikidata.org/wiki/Q75283558> ;
 	gen:startDate "1813-07-02" .
   # oo Elizabeth Hay, 1797-02-04 - 1859-08-03
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q75283560> , <#Elizabeth_Hay_(died_1859)> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75283560> , <https://www.wikidata.org/wiki/Q75283561> ;
 	gen:startDate "1825-01-15" .
 
 <https://www.wikidata.org/wiki/Q75356766>
@@ -2640,141 +2911,53 @@
   # oo 1873-07-23 David Boyle, 7th Earl of Glasgow, 1833-05-31 - 1915-12-13, https://www.wikidata.org/wiki/Q335705
 
 # ----
-#<https://www.wikidata.org/wiki/Q18529845>
-  # Sir James Gibson-Craig of Riccarton, 1st Baronet, 1765-10-11 - 1850-03-06
-  # 1st Baronet Gibson-Craig, of Riccarton, Midlothian 1831-09-30
-  # oo Anne Thomson, 1770~ - 1837-05-24, daughter of J. Thomson
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q18529845> , <#Anne_Thomson> ;
-	gen:startDate "1796-09-14" .
-
-<https://www.wikidata.org/wiki/Q75283555>
-  # Anne Gibson-Craig, 1802-07-01 - 1869-09-08
-  gen:father <https://www.wikidata.org/wiki/Q18529845> ;
-  gen:mother <#Anne_Thomson> .
-  # oo 1828-04-23 John Hay-Mackenzie, 1792~ - 1849-07-09, https://www.wikidata.org/wiki/Q75260180
-
-# ----
-<https://www.wikidata.org/wiki/Q333117>
-  # James Andrew Ramsay, 1st Marquess of Dalhousie, 1812-04-22 - 1860-12-22
-  # 10th Lord Ramsay of Carrington, 10th Earl of Dalhousie, co. Midlothian, 11th Lord Ramsay of Dalhousie, 2nd Baron Dalhousie of Dalhousie Castle, co. Edinburgh 1838-03-21
-  # 1st Marquess of Dalhousie of Dalhousie Castle, co. Edinburgh and of the Punjaub 1849-08-25
-  gen:father <https://www.wikidata.org/wiki/Q335381> ; # George Ramsay, 9th Earl of Dalhousie
-  gen:mother <https://www.wikidata.org/wiki/Q18670910> . # Christian Broun
-  # oo Lady Susan Georgiana Hay, 1817-03-13 - 1853-05-06
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q333117> , <https://www.wikidata.org/wiki/Q50762239> ;
-	gen:startDate "1836-01-21" .
-
-<https://www.wikidata.org/wiki/Q75593702>
-  # Lady Susan Georgina Broun-Ramsay, 1837-01-09 - 1898-01-22
-  gen:father <https://www.wikidata.org/wiki/Q333117> ;
-  gen:mother <https://www.wikidata.org/wiki/Q50762239> .
-  # oo 1863-06-21 (div 1891) Robert Bourke, 1st Baron Connemara, 1827-06-11 – 1902-09-03, https://www.wikidata.org/wiki/Q5036058 (burke.ttl)
-<https://www.wikidata.org/wiki/Q75605606>
-  # Lady Edith Christian Ramsay, 1839-10-06 - 1871-10-28
-  gen:father <https://www.wikidata.org/wiki/Q333117> ;
-  gen:mother <https://www.wikidata.org/wiki/Q50762239> .
-  # oo 1859-08-09 Rt. Hon. Sir James Fergusson of Kilkerran, 6th Baronet, 1832-03-14 – 1907-01-14, https://www.wikidata.org/wiki/Q333781 (maitland.ttl)
-
-# ----
 #<https://www.wikidata.org/wiki/Q16030681>
   # Simon Watson-Taylor, of Erlestoke Park, 1811-02-01 - 1902-12-25
   # oo Lady Hannah Charlotte Hay, 1818-04-12 -  1887-11-10
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q16030681> , <#Lady_Hannah_Charlotte_Hay> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q16030681> , <https://www.wikidata.org/wiki/Q75283234> ;
 	gen:startDate "1843-06-30" .
-
-# ----
-#<https://www.wikidata.org/wiki/Q75263046>
-  # Robert Wardlaw-Ramsay, d. 1837
-  # oo Lady Anne Lindsay, 1787-04-19 - 1846-01-14
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q75263046> , <https://www.wikidata.org/wiki/Q75263044> ;
-	gen:startDate "1811-04-16" .
-
-<#Robert_Balfour_Wardlaw-Ramsay,_of_Whitehill>
-  # Robert Balfour Wardlaw-Ramsay, of Whitehill, 1815-06-11 - 1882-06-26
-  gen:father <https://www.wikidata.org/wiki/Q75263046> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75263044> .
-  # oo Lady Louisa Jane Hay, 1819-07-29 - 1882-09-09
-  []
-    gen:spouse <#Robert_Balfour_Wardlaw-Ramsay,_of_Whitehill> , <#Lady_Louisa_Jane_Hay> ;
-	gen:startDate "1841-06-04" .
-
-<#Susan_Georgina_Wardlaw-Ramsay>
-  # Susan Georgina Wardlaw-Ramsay, 1844-07-23 - 1922-07-19
-  gen:father <#Robert_Balfour_Wardlaw-Ramsay,_of_Whitehill> ;
-  gen:mother <#Lady_Louisa_Jane_Hay> .
-  # oo 1869-06-09 Rev. Frederick Abel Leslie-Melville, 1833-09-17 - 1908-04-14, leslie.ttl#Frederick_Abel_Leslie-Melville
-
-# ----
-#<https://www.wikidata.org/wiki/Q15287149>
-  # Friedrich Otto Gebhard Graf von Kielmansegg, 1768-12-17 - 1851-07-18
-  # oo Frederike Sabine von dem Bussche-Lohe, 1776-06-16 - 1829-10-03
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q15287149> , <#Frederike_Sabine_von_dem_Bussche-Lohe> ;
-	gen:startDate "1795-08-12" .
-
-<#Adolf_August_Friedrich_von_Kielmansegg>
-  # Adolf August Friedrich Graf von Kielmansegg, b. 1796-06-28
-  gen:father <https://www.wikidata.org/wiki/Q15287149> ;
-  gen:mother <#Frederike_Sabine_von_dem_Bussche-Lohe> .
-
-<#Helene_Eleanore_von_Kielmansegg>
-  # Helene Eleanore Charlotte Auguste Gräfin von Kielmansegg, 1836-08-02 - 1871-09-30
-  gen:father <#Adolf_August_Friedrich_von_Kielmansegg> .
-  # oo 1857-02-18 Arthur Hay, 9th Marquess of Tweeddale, 1824-11-09 - 1878-12-29, https://www.wikidata.org/wiki/Q709742
 
 # ----
 #<https://www.wikidata.org/wiki/Q7966382>
   # Walter Waring, 1876 – 1930-11-16
   # oo Lady Susan Elizabeth Clementine Hay, 1879-08-09 - 1964-02-15
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q7966382> , <#Lady_Susan_Elizabeth_Clementine_Hay> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q7966382> , <https://www.wikidata.org/wiki/Q75283410> ;
 	gen:startDate "1901-11-04" .
-
-# ----
-#<#Cameron_Barclay>
-  # Cameron Barclay, 1866 - 1954-08-03
-  # oo Hon. Charlotte Ernestine Horsley-Beresford, 1871-09-03 - 1923-09-28
-  []
-    gen:spouse <#Cameron_Barclay> , <beresford.ttl#Charlotte_Ernestine_Horsley-Beresford> ;
-	gen:startDate "1892-10-08" .
-
-<#Violet_Florence_Catherine_Barclay>
-  # Violet Florence Catherine Barclay, d. 1926-03-17
-  gen:father <#Cameron_Barclay> ;
-  gen:mother <beresford.ttl#Charlotte_Ernestine_Horsley-Beresford> .
-  # oo 1917-10-18 Lord Edward Douglas John Hay, 1888-11-02 - 1944-06-18, #Lord_Edward_Douglas_John_Hay
 
 # ----
 #<https://www.wikidata.org/wiki/Q50392914>
   # Sir Thomas Paul Latham, 1st Baronet, 1855-06-19 - 1931-10-26
-  # 1st Baronet Latham, of Crow Clump, Walton-upon-Thames, Surrey 1919-05-24
+  # 1st Baronet Latham, of Crow Clump, Walton-upon-Thames, Surrey [U.K.] 1919-05-24
+  # son of Samuel Latham
   # oo Florence Clara Walley, d. 1950-12-12, daughter of William Henry Walley
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q50392914> , <#Florence_Clara_Walley> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q50392914> , <https://www.wikidata.org/wiki/Q75283379> ;
 	gen:startDate "1888" .
 
-<#Audrey_Clara_Lilian_Latham>
+<https://www.wikidata.org/wiki/Q75283376>
   # Audrey Clara Lilian Latham, 1899-04-04 - 1985~
   gen:father <https://www.wikidata.org/wiki/Q50392914> ;
-  gen:mother <#Florence_Clara_Walley> .
-  # oo 1928-07-05 Lord Edward Douglas John Hay, 1888-11-02 - 1944-06-18, #Lord_Edward_Douglas_John_Hay
-
+  gen:mother <https://www.wikidata.org/wiki/Q75283379> .
+  # oo 1921-07-12 (div 1928) Sir Henry Ralph Stanley Birkin, 3rd Baronet, 1896-07-26 - 1933-06-22, https://www.wikidata.org/wiki/Q709118 (chetwynd.ttl)
+  # oo 1928-07-05 Lord Edward Douglas John Hay, 1888-11-02 - 1944-06-18, https://www.wikidata.org/wiki/Q70011831
+  # oo 1948-02-28 (div 1952) Hon. Niall Greville Chaplin, 1908-08-02 - 1963-02-08, https://www.wikidata.org/wiki/Q75283381 (fane.ttl)
+  # oo 1952-12-12 Stewart Graham Menzies, 1890-01-30 - 1968-05-29, https://www.wikidata.org/wiki/Q2811920
 # ----
-#<https://www.wikidata.org/wiki/Q6555534>
-  # Geoffrey Lionel Berry, 2nd Viscount Kemsley, 1909-06-29 - 1999-02-28
-  # oo Lady Hélène Candida Hay, 1913-09-05 - 2011-01-04
+#<https://www.wikidata.org/wiki/Q2811920>
+  # Stewart Graham Menzies, 1890-01-30 - 1968-05-29
+  # son of John Graham Menzies
+  # and Susannah West Wilson
+  # oo Audrey Clara Lilian Latham, 1899-04-04 - 1985~
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q6555534> , <#Lady_Hélène_Candida_Hay> ;
-	gen:startDate "1933-06-21" .
+    gen:spouse <https://www.wikidata.org/wiki/Q2811920> , <https://www.wikidata.org/wiki/Q75283376> ;
+	gen:startDate "1952-12-12" .
 
 # ----
 #<https://www.wikidata.org/wiki/Q6038822>
   # Sir Cyril Arthur Pearson, 1st Baronet, 1866-02-24 – 1921-12-09
-  # 1st Baronet Pearson of St Dunstan's, London 1916-07-12
+  # 1st Baronet Pearson of St Dunstan's, London [U.K.] 1916-07-12
   # son of Rev. Arthur Cyril Pearson
   # and Philippa Massingberd Maxwell-Lyte
   # oo Dame Ethel Maud Fraser, 1870-11-03 – 1959-04-10, daughter of William John Fraser abd Jane ???
@@ -2783,7 +2966,6 @@
 	gen:startDate "1897-06-03" .
 
 <https://www.wikidata.org/wiki/Q7528365>
-  owl:sameAs <https://www.wikidata.org/wiki/Q75576961> ;
   # Sir Neville Arthur Pearson, 2nd Baronet, 1898-02-13 – 1982-11-06
   gen:father <https://www.wikidata.org/wiki/Q6038822> ;
   gen:mother <https://www.wikidata.org/wiki/Q5403054> .
@@ -2793,13 +2975,13 @@
 	gen:startDate "1922-03-29" ;
 	gen:divorceDate "1928" .
 
-<#Nigel_Arthur_Pearson>
+<https://www.wikidata.org/wiki/Q76001968>
   # Nigel Arthur Pearson, d. 1975-12-08
   gen:father <https://www.wikidata.org/wiki/Q7528365> ;
   gen:mother <https://www.wikidata.org/wiki/Q75576958> .
   # oo Lady Frances Elizabeth Ann Hay, b. 1926-10-27
   []
-    gen:spouse <#Nigel_Arthur_Pearson> , <#Lady_Frances_Elizabeth_Ann_Hay> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q76001968> , <https://www.wikidata.org/wiki/Q76001965> ;
 	gen:startDate "1956-10-27" .
 <https://www.wikidata.org/wiki/Q76116646>
   # Anne Pearson
@@ -2810,6 +2992,8 @@
 #<https://www.wikidata.org/wiki/Q333591>
   # Alfred Moritz Mond, 1st Baron Melchett, 1868-10-23 - 1930-12-27
   # 1st Baron Melchett, of Landford, co. Southampton 1928-06-15
+  # son of Ludwig Mond
+  # and Frida Mond
   # oo Violet Florence Mabel Goetze, d. 1945-09-25, daughter of James Henry Goetze
   []
     gen:spouse <https://www.wikidata.org/wiki/Q333591> , <https://www.wikidata.org/wiki/Q7933267> ;
@@ -2822,75 +3006,48 @@
   # oo 1922-03-29 (div 1928) Sir Neville Arthur Pearson, 2nd Baronet, 1898-02-13 – 1982-11-06, https://www.wikidata.org/wiki/Q7528365
 
 # ----
-#<#Algernon_Richard_Trotter,_12th_of_Mortonhall>
+#<https://www.wikidata.org/wiki/Q75331033>
   # Algernon Richard Trotter, 12th of Mortonhall and 3rd of Charterhall, 1870-06-20 - 1945-12-23
-  # oo Lady Edith Mary Montgomerie, 1877-07-21 - 1947-09-08
+  # son of Henry Trotter
+  # and Eva Gifford
+  # oo Lady Edith Mary Montgomerie, 1877-07-21 - 1947-09-08 (gordon.ttl)
   []
-    gen:spouse <#Algernon_Richard_Trotter,_12th_of_Mortonhall> , <gordon.ttl#Lady_Edith_Mary_Montgomerie> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75331033> , <https://www.wikidata.org/wiki/Q75264254> ;
 	gen:startDate "1901-07-22" .
 
-<#George_Richard_Trotter>
+<https://www.wikidata.org/wiki/Q75283398>
   # George Richard Trotter, 1906-02-26 - 1970-09-24
-  gen:father <#Algernon_Richard_Trotter,_12th_of_Mortonhall> ;
-  gen:mother <gordon.ttl#Lady_Edith_Mary_Montgomerie> .
+  gen:father <https://www.wikidata.org/wiki/Q75331033> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75264254> .
   # oo Lady Marioth Christina Hay, 1918-09-01 - 2006-04-29
   []
-    gen:spouse <#George_Richard_Trotter> , <#Lady_Marioth_Christina_Hay> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75283398> , <https://www.wikidata.org/wiki/Q75283394> ;
 	gen:startDate "1940-12-18" ;
 	gen:divorceDate "1954" .
 
 # ----
-#<https://www.wikidata.org/wiki/Q5559922>
+#<https://www.wikidata.org/wiki/Q76002418>
+  # Sir Gilbert Wheaton Fox, 1st Baronet, 1863 – 1925
+  # 1st Baronet Fox, of Liverpool in the County Palatine of Lancaster [U.K.] 1924-01-30
+
+<https://www.wikidata.org/wiki/Q5559922>
   # Sir Gifford Wheaton Grey Fox, 2nd Baronet, 1903-02-02 - 1959-02-11
+  gen:father <https://www.wikidata.org/wiki/Q76002418> .
+  # oo Hon. Myra Alice Newton, 1906-08-26 - (onslow.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5559922> , <https://www.wikidata.org/wiki/Q75283401> ;
+	gen:startDate "1927-10-20" .
   # oo Lady Marioth Christina Hay, 1918-09-01 - 2006-04-29
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q5559922> , <#Lady_Marioth_Christina_Hay> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q5559922> , <https://www.wikidata.org/wiki/Q75283394> ;
 	gen:startDate "1954-03-02" .
 
 # ----
-#<https://www.wikidata.org/wiki/Q11799507>
-  # Osbert Peake, 1st Viscount Ingleby, 1897-12-30 - 1966-10-11
-  # 1st Viscount Ingleby, of Snilesworth, North Riding of co. York 1956-01-17
-  # oo Lady Joan Rachel de Vere Capell, 1899-02-28 - 1979
+#<https://www.wikidata.org/wiki/Q75347428>
+  # Sir John Hastings James, d. 1980
+  # son of Clement Fletcher James
+  # oo Lady Marioth Christina Hay, 1918-09-01 - 2006-04-29
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q11799507> , <capell.ttl#Lady_Joan_Rachel_de_Vere_Capell> ;
-	gen:startDate "1922-06-19" .
-
-<#Sonia_Mary_Peake>
-  # Hon. Sonia Mary Peake, 1924-12-12 - 2009-07-30
-  gen:father <https://www.wikidata.org/wiki/Q11799507> ;
-  gen:mother <capell.ttl#Lady_Joan_Rachel_de_Vere_Capell> .
-  # oo 1946-10-26 (div 1958) David George Montagu Hay, 12th Marquess of Tweeddale, 1921-10-25 - 1979-01-23, #David_Hay,_12th_Marquess_of_Tweeddale
-
-# ----
-#<#John_Brabazon_Booth>
-  # John Brabazon Booth, b. 1924-02-08
-  # son of Ernest Brabazon Booth
-  # and Marguerita Agnes Currie
-  # oo Meryl Susanna Guinness, b. 1933-01-07
-  []
-    gen:spouse <#John_Brabazon_Booth> , <guinness.ttl#Meryl_Susanna_Guinness> ;
-	gen:startDate "1955-01-22" ;
-	gen:divorceDate "1972" .
-
-<#Rosanna_Meryl_Booth>
-  # Rosanna Meryl Booth, b. 1961-11-14
-  gen:father <#John_Brabazon_Booth> ;
-  gen:mother <guinness.ttl#Meryl_Susanna_Guinness> .
-  # oo 1986-09-06 Lord Andrew Arthur George Hay, b. 1959-10-24, #Lord_Andrew_Arthur_George_Hay
-
-# ----
-<#Sir_Edward_Cunard,_2nd_Baronet>
-  # Sir Edward Cunard, 2nd Baronet, 1816-01-01 - 1869-04-06
-  gen:father <https://www.wikidata.org/wiki/Q962447> .
-  # and Susan Duffus
-  # oo Mary McEvers, d. 1866-05-26, daughter of Bache McEvers
-  []
-    gen:spouse <#Sir_Edward_Cunard,_2nd_Baronet> , <#Mary_McEvers> ;
-	gen:startDate "1849-05" .
-
-<#Caroline_Margaret_Cunard>
-  # Caroline Margaret Cunard, d. 1943-11-25
-  gen:father <#Sir_Edward_Cunard,_2nd_Baronet> ;
-  gen:mother <#Mary_McEvers> .
-  # oo 1890-01-16 Athole Stanhope Hay, 1861-03-25 - 1933-07-11, #Athole_Stanhope_Hay
+    gen:spouse <https://www.wikidata.org/wiki/Q75347428> , <https://www.wikidata.org/wiki/Q75283394> ;
+	gen:startDate "1963-04-02" ;
+	gen:divorceDate "1971" .

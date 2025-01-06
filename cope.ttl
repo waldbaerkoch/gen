@@ -1,0 +1,355 @@
+@base <cope.ttl> .
+@prefix gen: <http://jjkoch.de/gen#> .
+@prefix wdata: <https://www.wikidata.org/wiki/> .
+@prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://www.wikidata.org/wiki/Q7526008>
+  # Sir Anthony Cope, 1st Baronet, 1549 - 1614-07-06
+  # 1st Baronet Cope, of Hanwell, Oxfordshire [England] 1611-06-29
+  gen:father <https://www.wikidata.org/wiki/Q75508680> ; # Edward Cope
+  gen:mother <https://www.wikidata.org/wiki/Q7964595> . # Elizabeth Mohun
+  # oo Frances Lytton, d. 1600, daughter of Rowland Lytton and Anne Carleton
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7526008> , <https://www.wikidata.org/wiki/Q76019883> .
+  # oo Anne Paston, d. 1637-07-31~, daughter of Sir William Paston and Mary Clere
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7526008> , <https://www.wikidata.org/wiki/Q75757749> ;
+	gen:startDate "1606-04-07" .
+<https://www.wikidata.org/wiki/Q7964595>
+  # Sir Walter Cope, 1553 - 1614-07-31
+  gen:father <https://www.wikidata.org/wiki/Q75508680> ;
+  gen:mother <https://www.wikidata.org/wiki/Q7964595> .
+  # oo Dorothy Grenville, 1562 - 1638, daughter of Richard Grenville and Mary Giffard
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7964595> , <https://www.wikidata.org/wiki/Q75495174> .
+
+<https://www.wikidata.org/wiki/Q7529542>
+  # Sir William Cope, 2nd Baronet, 1577 - 1637-08-02
+  gen:father <https://www.wikidata.org/wiki/Q7526008> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76019883> .
+  # oo Elizabeth Chaworth, d. 1635-08-21~, daughter of Sir George Chaworth and Anne Paston
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7529542> , <https://www.wikidata.org/wiki/Q76010818> ;
+	gen:startDate "1602-04-08" .
+<https://www.wikidata.org/wiki/Q75776226>
+  # Anna Cope, 1580~ -
+  gen:father <https://www.wikidata.org/wiki/Q7526008> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76019883> .
+  # oo 1599-12-05 Sir John Leigh, d. 1625, https://www.wikidata.org/wiki/Q75417777
+<#Anthony_Cope_(d._1634)>
+  # Anthony Cope, d. 1634
+  gen:father <https://www.wikidata.org/wiki/Q7526008> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76019883> .
+  # oo Elizabeth Sheffield
+  []
+    gen:spouse <#Anthony_Cope_(d._1634)> , <#Elizabeth_Sheffield> .
+<#Richard_Cope>
+  # Richard Cope, 1582~ - 1633a
+  gen:father <https://www.wikidata.org/wiki/Q7526008> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76019883> .
+  # oo Anne Walter, a sister of Sir William Walter of Wimbledon
+  []
+    gen:spouse <#Richard_Cope> , <#Anne_Walter> .
+<https://www.wikidata.org/wiki/Q75256846>
+  gen:name "Elizabeth Cope"@en ;
+  gen:birthDate "1580~" ;
+  gen:deathDate "1633-06-14" ;
+  gen:father <https://www.wikidata.org/wiki/Q7526008> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76019883> .
+  # oo 1603-03-23 Sir Richard Cecil, 1570-12-07 - 1633-09-04, https://www.wikidata.org/wiki/Q7324684
+<https://www.wikidata.org/wiki/Q50322914>
+  # Isabel Cope, 1598 - 1655-08~
+  gen:father <https://www.wikidata.org/wiki/Q7964595> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75495174> .
+  # oo 1614-04-30 Henry Rich, 1st Earl of Holland, 1590-08-19 - 1649-03-09, https://www.wikidata.org/wiki/Q3131912 (cavendish.ttl)
+
+<https://www.wikidata.org/wiki/Q75791096>
+  # Sir John Cope, 3rd Baronet, 1608-08-28 – 1638-10-13
+  gen:father <https://www.wikidata.org/wiki/Q7529542> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76010818> .
+  # oo Mary Walter
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75791096> , <bruce.ttl#Mary_Walter> ;
+	gen:startDate "1626-11-11" .
+  # oo Lady Elizabeth Fane, 1610~ - 1669-10-10
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75791096> , <https://www.wikidata.org/wiki/Q75791094> ;
+	gen:startDate "1631-02-14" .
+<https://www.wikidata.org/wiki/Q75791099>
+  # William Cope, of Icombe, 1612 – 1691
+  gen:father <https://www.wikidata.org/wiki/Q7529542> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76010818> .
+  # OR of <#Richard_Cope> and <#Anne_Walter>
+  # oo Lady Elizabeth Fane, 1610~ - 1669-10-10
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75791099> , <https://www.wikidata.org/wiki/Q75791094> ;
+	gen:startDate "1643-01-03" .
+<https://www.wikidata.org/wiki/Q75813467>
+  # Jonathan Cope, 1627 - 1670
+  gen:father <https://www.wikidata.org/wiki/Q7529542> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76010818> .
+  # oo Anne Farmer, 1628 - 1712
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75813467> , <https://www.wikidata.org/wiki/Q98384790> .
+<#Anthony_Cope>
+  # Anthony Cope
+  gen:father <#Anthony_Cope_(d._1634)> ;
+  gen:mother <#Elizabeth_Sheffield> .
+  # oo Dorothy Burdett
+  []
+    gen:spouse <#Anthony_Cope> , <#Dorothy_Burdett> .
+
+<https://www.wikidata.org/wiki/Q7526010>
+  # Sir Anthony Cope, 4th Baronet, 1632-11-16 - 1675-06-11
+  gen:father <https://www.wikidata.org/wiki/Q75791096> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75791094> .
+  # oo Mary Gerard, d. 1714 (courtenay.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7526010> , <https://www.wikidata.org/wiki/Q76022616> .
+<https://www.wikidata.org/wiki/Q28099595>
+  # Sir John Cope, 5th Baronet, 1634 - 1721-01-11
+  gen:father <https://www.wikidata.org/wiki/Q75791096> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75791094> .
+  # oo Anne Booth, daughter of Philip Booth
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q28099595> , <#Anne_Booth> .
+<#Henry_Cope>
+  # Henry Cope, 1644-10-28 - 1724~
+  gen:father <https://www.wikidata.org/wiki/Q75791099> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75791094> .
+  # oo Dorothy Waller
+<https://www.wikidata.org/wiki/Q28527357>
+  # Jonathan Cope, 1664-07-09 - 1694-09-14
+  gen:father <https://www.wikidata.org/wiki/Q75813467> ;
+  gen:mother <https://www.wikidata.org/wiki/Q98384790> .
+  # oo Susannah Fowle, daughter of Sir Thomas Fowle
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q28527357> , <https://www.wikidata.org/wiki/Q98384358> ;
+	gen:startDate "1688-10-19" .
+<#William_Cope_(d._1715)>
+  # William Cope, d. 1715
+  gen:father <#Anthony_Cope> ;
+  gen:mother <#Dorothy_Burdett> .
+  # oo Honora Sampey, daughter of Charles Sampey
+  []
+    gen:spouse <#William_Cope_(d._1715)> , <#Honora_Sampey> .
+
+<https://www.wikidata.org/wiki/Q28092694>
+  # Sir John Cope, 6th Baronet, 1673-12 - 1749-12-08
+  gen:father <https://www.wikidata.org/wiki/Q28099595> ;
+  gen:mother <#Anne_Booth> .
+  # oo Alice Monoux, daughter of Sir Humphrey Monoux, 2nd Baronet
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q28092694> , <https://www.wikidata.org/wiki/Q76294197> ;
+	gen:startDate "1696" .
+<#Galen_Cope>
+  # Galen Cope
+  # Rector of Eversley
+  gen:father <https://www.wikidata.org/wiki/Q28099595> ;
+  gen:mother <#Anne_Booth> .
+  # oo Anne Onslow, daughter of Richard Onslow
+  []
+    gen:spouse <#Galen_Cope> , <#Anne_Onslow> .
+<https://www.wikidata.org/wiki/Q333803>
+  # Sir John Cope, 1688-07-07 – 1760-07-28
+  gen:father <#Henry_Cope> .
+  # oo Jane Duncombe
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q333803> , <duncombe.ttl#Jane_Duncombe> ;
+	gen:startDate "1712-12" .
+  # oo Elizabeth Waple
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q333803> , <#Elizabeth_Waple> ;
+	gen:startDate "1736-08" .
+<https://www.wikidata.org/wiki/Q7528172> # -> Cope Baronets of Bruern
+  # Sir Jonathan Cope, 1st Baronet, 1691~ - 1765-03-28
+  gen:father <https://www.wikidata.org/wiki/Q28527357> ;
+  gen:mother <https://www.wikidata.org/wiki/Q98384358> .
+<#Joseph_Cope>
+  # Joseph Cope, d. 1754
+  gen:father <#William_Cope_(d._1715)> ;
+  gen:mother <#Honora_Sampey> .
+  # oo Susannah Handcock, daughter of William Handcock
+  []
+    gen:spouse <#Joseph_Cope> , <#Susannah_Handcock> ;
+	gen:startDate "1729" .
+
+<https://www.wikidata.org/wiki/Q28527739>
+  # Sir Monnoux Cope, 7th Baronet, 1696 - 1763-06-24
+  gen:father <https://www.wikidata.org/wiki/Q28092694> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76294197> .
+  # oo Penelope Mordaunt, d. 1737
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q28527739> , <https://www.wikidata.org/wiki/Q76080686> .
+<https://www.wikidata.org/wiki/Q94696933>
+  # Sir Richard Cope, 9th Baronet, 1719 - 1806-11-06
+  gen:father <#Galen_Cope> ;
+  gen:mother <#Anne_Onslow> .
+  # oo Anne Wyndham, daughter of Thomas Wyndham
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q94696933> , <#Anne_Wyndham> ;
+	gen:startDate "1754" .
+  # oo Catherine Law, daughter of John Law
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q94696933> , <#Catherine_Law> ;
+	gen:startDate "1787" .
+<#William_Cope_(d._1803)>
+  # William Cope, 1719a - 1803
+  gen:father <#Galen_Cope> ;
+  gen:mother <#Anne_Onslow> .
+  # oo Anne Greenwood, daughter of Benjamin Greenwood
+  []
+    gen:spouse <#William_Cope_(d._1803)> , <#Anne_Greenwood> .
+<#William_Cope_(d._1820)>
+  # William Cope, 1738 - 1820-11-07
+  gen:father <#Joseph_Cope> ;
+  gen:mother <#Susannah_Handcock> .
+  # oo Charlotte Hautenville, d. 1774, daughter of Samuel Hautenville
+  []
+    gen:spouse <#William_Cope_(d._1820)> , <#Charlotte_Hautenville> ;
+	gen:startDate "1764" .
+  # oo Elizabeth Cope, d. 1806-04-06, daughter of Henry Cope and Alice Jones
+  []
+    gen:spouse <#William_Cope_(d._1820)> , <#Elizabeth_Cope> ;
+	gen:startDate "1775" .
+
+<https://www.wikidata.org/wiki/Q21166075>
+  # Sir John Mordaunt Cope, 8th Baronet, 1731 - 1770-03-07
+  gen:father <https://www.wikidata.org/wiki/Q28527739> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76080686> .
+<#Sir_Denzil_Cope,_10th_Baronet>
+  # Sir Denzil Cope, 10th Baronet, 1766-06-18 - 1812-12-30
+  gen:father <#William_Cope_(d._1803)> ;
+  gen:mother <#Anne_Greenwood> .
+  # oo Elizabeth Dorothea Francis, d. 1840-02-16
+  []
+    gen:spouse <#Sir_Denzil_Cope,_10th_Baronet> , <#Elizabeth_Francis> ;
+	gen:startDate "1810-09-13" .
+<#Sir_John_Cope,_11th_Baronet>
+  # Sir John Cope, 11th Baronet, 1768-07-22 - 1851-11-18
+  gen:father <#William_Cope_(d._1803)> ;
+  gen:mother <#Anne_Greenwood> .
+<#Edmond_Cope>
+  # Edmond Reilly Cope, 1765-06-24 - 1835-08-18
+  gen:father <#William_Cope_(d._1820)> ;
+  gen:mother <#Charlotte_Hautenville> .
+  # oo Maria Fuber, 1762 - 1849-08-14, daughter of James Furber
+  []
+    gen:spouse <#Edmond_Cope> , <#Maria_Fuber> ;
+	gen:startDate "1794-08-14" .
+
+<https://www.wikidata.org/wiki/Q18508734>
+  # Sir William Henry Cope, 12th Baronet Cope, 1811-02-27 - 1892-01-07
+  gen:father <#Edmond_Cope> ;
+  gen:mother <#Maria_Fuber> .
+  # oo Marianne Garnett, 1813 - 1862-12-20, daughter of Henry Garnett
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q18508734> , <#Marianne_Garnett> ;
+	gen:startDate "1834-08-12" .
+  # oo Harriet Margaret Hautenville, 1844 - 1927-05-21, daughter of Robert Jaffray Hautenville and Jane Eleanor Ferguson
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q18508734> , <#Harriet_Hautenville> ;
+	gen:startDate "1865-08-30" .
+
+<https://www.wikidata.org/wiki/Q122873299>
+  # Sir Anthony Cope, 13th Baronet, 1842-03-09 - 1932-11-03
+  gen:father <https://www.wikidata.org/wiki/Q18508734> ;
+  gen:mother <#Marianne_Garnett> .
+  # oo Mary Leckonby Phipps, d. 1912-04-14
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q122873299> , <#Mary_Phipps> ;
+	gen:startDate "1870-10-13" .
+
+<https://www.wikidata.org/wiki/Q75951499>
+  # Sir Denzil Cope, 14th Baronet, 1873-09-18 – 1940-06-03
+  gen:father <https://www.wikidata.org/wiki/Q122873299> ;
+  gen:mother <#Mary_Phipps> .
+  # oo Edna Frances Hilton, 1892-12-31 - 1977-03-21, daughter of Edward Banker Hilton
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75951499> , <https://www.wikidata.org/wiki/Q76125923> ;
+	gen:startDate "1922-07-14" .
+<#Sir_Mordaunt_Cope,_16th_Baronet>
+  # Sir Mordaunt Leckonby Cope, 16th Baronet, 1878-02-12 – 1972
+  gen:father <https://www.wikidata.org/wiki/Q122873299> ;
+  gen:mother <#Mary_Phipps> .
+  # oo Frances Muriel Darby, d. 1935-09-12, daughter of Alfred Edmund William Darby
+  []
+    gen:spouse <#Sir_Mordaunt_Cope,_16th_Baronet> , <#Frances_Darby> ;
+	gen:startDate "1917-07-17" .
+  # oo Eveline Bishop, daughter of Alfred Eaton Bishop
+  []
+    gen:spouse <#Sir_Mordaunt_Cope,_16th_Baronet> , <#Eveline_Bishop> ;
+	gen:startDate "1936-04-18" .
+
+<https://www.wikidata.org/wiki/Q76237280>
+  # Sir Anthony Mohun Leckonby Cope, 15th Baronet, 1927-07-15 - 1966-05-13
+  gen:father <https://www.wikidata.org/wiki/Q75951499> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76125923> .
+  # oo Angela Rose Elizabeth Wright, daughter of James Alfred Snarey Wright
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76237280> , <https://www.wikidata.org/wiki/Q76237279> ;
+	gen:startDate "1956-11-08" .
+
+
+# Cope Baronets of Bruern
+<https://www.wikidata.org/wiki/Q7528172>
+  # Sir Jonathan Cope, 1st Baronet, 1691~ - 1765-03-28
+  # 1st Baronet Cope, of Bruern, Oxfordshire [Great Britain] 1714-03-01
+  gen:father <https://www.wikidata.org/wiki/Q28527357> ; # fane.ttl
+  gen:mother <https://www.wikidata.org/wiki/Q98384358> .
+  # oo Mary Jenkinson, d. 1755-02-24~ (savile.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7528172> , <https://www.wikidata.org/wiki/Q75565855> ;
+	gen:startDate "1717" .
+
+<https://www.wikidata.org/wiki/Q75252600>
+  # Jonathan Cope, d. 1763-11-02
+  gen:father <https://www.wikidata.org/wiki/Q7528172> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75565855> .
+  # oo Lady Arabella Howard, d. 1746~
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75252600> , <https://www.wikidata.org/wiki/Q75250856> .
+  # oo Renea Leighton, daughter of Lt.-Gen. Francis Leighton and Renea Pinfold
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75252600> , <https://www.wikidata.org/wiki/Q76052677> ;
+	gen:startDate "1758-01-26" .
+<https://www.wikidata.org/wiki/Q75272847>
+  # Susannah Cope, d. 1790-03-03
+  gen:father <https://www.wikidata.org/wiki/Q7528172> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75565855> .
+  # oo 1751-10-28 William Chetwynd, 4th Viscount Chetwynd of Bearhaven, 1721-11-25 - 1791-11-12, https://www.wikidata.org/wiki/Q28064462
+<https://www.wikidata.org/wiki/Q76039822>
+  # Mary Cope, d. 1765-07-30
+  gen:father <https://www.wikidata.org/wiki/Q7528172> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75565855> .
+  # oo Sir Robert Jenkinson, 5th Baronet, 1720-08-13 - 1766-08-08, https://www.wikidata.org/wiki/Q75950490 (savile.ttl)
+<https://www.wikidata.org/wiki/Q7526196>
+  # Sir Charles Cope, 2nd Baronet, 1743~ - 1781-06-14
+  gen:father <https://www.wikidata.org/wiki/Q75252600> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75250856> .
+  # oo Catherine Bishopp, 1744-11-30 - 1827-10-01 (tufton.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7526196> , <https://www.wikidata.org/wiki/Q75269713> ;
+	gen:startDate "1767" .
+<https://www.wikidata.org/wiki/Q7528175>
+  # Sir Jonathan Cope, 4th Baronet, d. 1821-12-30
+  gen:father <https://www.wikidata.org/wiki/Q75252600> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76052677> .
+
+<https://www.wikidata.org/wiki/Q47318160>
+  gen:name "Arabella Diana Cope"@en ;
+  gen:birthDate "1767" ;
+  gen:deathDate "1825-08-01" ;
+  gen:father <https://www.wikidata.org/wiki/Q7526196> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75269713> .
+  # oo 1790-01-04 John Frederick Sackville, 3rd Duke of Dorset, 1745-03-25 - 1799-07-19, https://www.wikidata.org/wiki/Q1453083 (russell.ttl)
+<https://www.wikidata.org/wiki/Q75250802>
+  # Catherine Cope, d. 1832-11-16
+  gen:father <https://www.wikidata.org/wiki/Q7526196> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75269713> .
+  # oo 1791-04-04 George Gordon, 9th Marquess of Huntly, 1761-06-28 - 1853-06-17, https://www.wikidata.org/wiki/Q761134
+<#Sir_Charles_Cope,_3rd_Baronet>
+  # Sir Charles Cope, 3rd Baronet, 1770~ – 1781
+  gen:father <https://www.wikidata.org/wiki/Q7526196> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75269713> .

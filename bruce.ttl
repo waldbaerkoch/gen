@@ -2,63 +2,144 @@
 @prefix gen: <http://jjkoch.de/gen#> .
 @prefix wdata: <https://www.wikidata.org/wiki/> .
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
-#<#Edward_Bruce,_1st_of_Blairhall>
+#<https://www.wikidata.org/wiki/Q75510392>
+  # Sir David Bruce, 7th of Clackmannan, 1465~ - 1556-06-12a
+  # son of Sir David Bruce, 6th of Clackmannan
+  # and Mariot Herries
+  # oo Janet Blackadder, 1472 - 1572, daughter of Sir Patrick Blackadder of Tulliallan
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75510392> , <https://www.wikidata.org/wiki/Q75654079> ;
+	gen:startDate "1497" .
+
+<https://www.wikidata.org/wiki/Q75654082>
+  # John Bruce, younger of Clackmannan, 1497~ -
+  gen:father <https://www.wikidata.org/wiki/Q75510392> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75654079> .
+  # oo Janet Murray, daughter of William Murray of Touchadam
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75654082> , <https://www.wikidata.org/wiki/Q76306451> .
+<https://www.wikidata.org/wiki/Q75500962> # -> Bruce of Blairhall
   # Edward Bruce, 1st of Blairhall, 1505 - 1565
-  # son of Sir David Bruce, 7th of Clackmannan
-  # and Janet Blackadder
+  gen:father <https://www.wikidata.org/wiki/Q75510392> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75654079> .
   # oo Alison Reid, daughter of William Reid
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75500962> , <https://www.wikidata.org/wiki/Q75500963> .
+<https://www.wikidata.org/wiki/Q75615010>
+  # Alison Bruce, 1506 - 1536-05-21b
+  gen:father <https://www.wikidata.org/wiki/Q75510392> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75654079> .
+  # oo Sir James Colville of Ochiltree, 1493a - 1540-12-04~, https://www.wikidata.org/wiki/Q16205024
+<https://www.wikidata.org/wiki/Q75654097>
+  # Elizabeth Bruce, b. 1520~
+  gen:father <https://www.wikidata.org/wiki/Q75510392> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75654079> .
+  # oo Alexander Dundas of Fingask, 1491a - 1547-09-10, https://www.wikidata.org/wiki/Q75263583
 
-<#Robert_Bruce,_2nd_of_Blairhall>
+<https://www.wikidata.org/wiki/Q76301071>
+  # Sir Robert Bruce, 8th of Clackmannan, 1535 - 1609
+  gen:father <https://www.wikidata.org/wiki/Q75654082> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76306451> .
+  # oo Margaret Murray, 1540~ -
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76301071> , <https://www.wikidata.org/wiki/Q76254942> ;
+	gen:startDate "1559" .
+
+<https://www.wikidata.org/wiki/Q76301061>
+  # Robert Bruce, 9th of Clackmannan, 1576-03-19b - 1645~
+  gen:father <https://www.wikidata.org/wiki/Q76301071> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76254942> .
+  # oo Janet Wardlaw, 1578-03-19b -
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76301061> , <lindsay.ttl#Janet_Wardlaw> ;
+	gen:startDate "1590-03-19" .
+  # oo Helen Durie
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76301061> , <https://www.wikidata.org/wiki/Q76298714> ;
+	gen:startDate "1620-06-18b" .
+
+<https://www.wikidata.org/wiki/Q76298211>
+  # Robert Bruce, 10th of Clackmannan, 1607-02-04 - 1654~
+  gen:father <https://www.wikidata.org/wiki/Q76301061> ;
+  gen:mother <lindsay.ttl#Janet_Wardlaw> .
+  # oo Elizabeth Halyburton (scrymgeoour.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76298211> , <https://www.wikidata.org/wiki/Q76298212> .
+
+<https://www.wikidata.org/wiki/Q76293997>
+  # Sir Henry Bruce, 11th of Clackmannan, 1620~ - 1674b
+  gen:father <https://www.wikidata.org/wiki/Q76298211> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76298212> .
+  # oo Mary Shaw, daughter of Sir Alexander Shaw and Helen Bruce
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76293997> , <https://www.wikidata.org/wiki/Q76293998> .
+  # oo Lady Anne Ramsay
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76293997> , <https://www.wikidata.org/wiki/Q75628771> ;
+	gen:startDate "1670-10-13" .
+
+
+# Bruce of Blairhall
+<https://www.wikidata.org/wiki/Q75500962>
+  # Edward Bruce, 1st of Blairhall, 1505 - 1565
+  gen:father <https://www.wikidata.org/wiki/Q75510392> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75654079> .
+  # oo Alison Reid, daughter of William Reid
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75500962> , <https://www.wikidata.org/wiki/Q75500963> .
+
+<https://www.wikidata.org/wiki/Q75654106>
   # Robert Bruce, 2nd of Blairhall
-  gen:father <#Edward_Bruce,_1st_of_Blairhall> .
-  # and Alison Reid
+  gen:father <https://www.wikidata.org/wiki/Q75500962> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75500963> .
   # oo Margaret Hamilton, d. 1614
   []
-    gen:spouse <#Robert_Bruce,_2nd_of_Blairhall> , <hamilton.ttl#Margaret_Hamilton_(died_1614)> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75654106> , <https://www.wikidata.org/wiki/Q75654111> ;
 	gen:startDate "1593" .
 <https://www.wikidata.org/wiki/Q5342040> # -> Bruce of Kinloss
   # Edward Bruce, 1st Baron Bruce of Kinlosse, 1548 - 1611-01-14
-  gen:father <#Edward_Bruce,_1st_of_Blairhall> .
-  # and Alison Reid
+  gen:father <https://www.wikidata.org/wiki/Q75500962> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75500963> .
 <https://www.wikidata.org/wiki/Q3101439> # -> Bruce of Carnock/Kincardine
-  # Sir George, of Carnock, 1550~ - 1625-05-06
-  gen:father <#Edward_Bruce,_1st_of_Blairhall> .
-  # and Alison Reid
+  # Sir George Bruce, of Carnock, 1550~ - 1625-05-06
+  gen:father <https://www.wikidata.org/wiki/Q75500962> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75500963> .
 
 <https://www.wikidata.org/wiki/Q75510280>
   # Robert Bruce, of Blairhall, d. 1633a
-  gen:father <#Robert_Bruce,_2nd_of_Blairhall> ;
-  gen:mother <hamilton.ttl#Margaret_Hamilton_(died_1614)> .
-  # oo Katherine Preston (douglas.ttl)
+  gen:father <https://www.wikidata.org/wiki/Q75654106> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75654111> .
+  # oo Katherine Preston (colville.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75510280> , <https://www.wikidata.org/wiki/Q75510286> .
 
-<#Christian_Bruce>
+<https://www.wikidata.org/wiki/Q75283480>
   # Christian Bruce
   gen:father <https://www.wikidata.org/wiki/Q75510280> ;
   gen:mother <https://www.wikidata.org/wiki/Q75510286> .
-  # oo Sir Alexander Bruce, 4th Earl of Kincardine, d. 1715-10-03, #Alexander_Bruce,_4th_Earl_of_Kincardine
+  # oo Sir Alexander Bruce, 4th Earl of Kincardine, d. 1715-10-03, https://www.wikidata.org/wiki/Q75283479
 <https://www.wikidata.org/wiki/Q75654110>
   # Thomas Bruce, of Blairhall
   gen:father <https://www.wikidata.org/wiki/Q75510280> ;
   gen:mother <https://www.wikidata.org/wiki/Q75510286> .
-  # oo Jean Henderson, daughter of Sir John Henderson, 5th of Fordell and Margaret Menteith
+  # oo Jean Henderson (hamilton.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75654110> , <https://www.wikidata.org/wiki/Q75654118> ;
 	gen:startDate "1648-04-27" .
 <https://www.wikidata.org/wiki/Q2634167>
   # Sir William Bruce of Kinross, 1st Baronet, 1630~ - 1710-01-01
-  # 1st Baronet Bruce, of Balcaskie, co. Fife 1668-10-21
+  # 1st Baronet Bruce, of Balcaskie, co. Fife [Nova Scotia] 1668-10-21
   gen:father <https://www.wikidata.org/wiki/Q75510280> ;
   gen:mother <https://www.wikidata.org/wiki/Q75510286> .
-  # oo Mary Halkett
+  # oo Mary Halkett (wedderburn.ttl)
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q2634167> , <hope.ttl#Mary_Halkett> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q2634167> , <https://www.wikidata.org/wiki/Q75510292> ;
 	gen:startDate "1660~" .
   # oo Magdalen Scott, 1670~ - 1752-06, daughter of David Scott
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q2634167> , <#Magdalen_Scott> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q2634167> , <https://www.wikidata.org/wiki/Q75510359> ;
 	gen:startDate "1700-09-09" .
 
 <https://www.wikidata.org/wiki/Q75654109>
@@ -68,7 +149,7 @@
   # oo Jean Leslie, d. 1736a
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75654109> , <https://www.wikidata.org/wiki/Q75654121> .
-<#Catherine_Bruce>
+<https://www.wikidata.org/wiki/Q75654130>
   # Catherine Bruce, d. 1692
   gen:father <https://www.wikidata.org/wiki/Q75654110> ;
   gen:mother <https://www.wikidata.org/wiki/Q75654118> .
@@ -76,16 +157,16 @@
 <https://www.wikidata.org/wiki/Q9012407>
   # Sir John Bruce, 2nd Baronet, d. 1711-03-19
   gen:father <https://www.wikidata.org/wiki/Q2634167> ;
-  gen:mother <hope.ttl#Mary_Halkett> .
+  gen:mother <https://www.wikidata.org/wiki/Q75510292> .
   # oo Lady Christian Leslie, 1661 - 1710-04-21
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q9012407> , <leslie.ttl#Lady_Christian_Leslie_(died_1710)> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q9012407> , <https://www.wikidata.org/wiki/Q75272114> ;
 	gen:startDate "1687-05" .
-<#Anne_Bruce>
+<https://www.wikidata.org/wiki/Q75510361>
   # Anne Bruce
   gen:father <https://www.wikidata.org/wiki/Q2634167> ;
-  gen:mother <hope.ttl#Mary_Halkett> .
-  # oo Sir Thomas Hope of Craighall, 4th Baronet, d. 1686~, hope.ttl#Sir_Thomas_Hope_of_Craighall,_4th_Baronet
+  gen:mother <https://www.wikidata.org/wiki/Q75510292> .
+  # oo Sir Thomas Hope of Craighall, 4th Baronet, d. 1686~, https://www.wikidata.org/wiki/Q75510382
   # oo Sir John Carstairs, of Kilconquhar
 
 <https://www.wikidata.org/wiki/Q75654107>
@@ -98,69 +179,71 @@
 # Bruce of Kinloss
 <https://www.wikidata.org/wiki/Q5342040>
   # Edward Bruce, 1st Baron Bruce of Kinlosse, 1548 - 1611-01-14
-  # 1st Lord Kinloss 1602-02-02
-  # 1st Baron Bruce of Kinlosse 1604-07-08
-  # 1st Lord Bruce of Kinloss 1608-05-03
-  gen:father <#Edward_Bruce,_1st_of_Blairhall> .
-  # and Alison Reid
+  # 1st Lord Kinloss [Scotland] 1602-02-02
+  # 1st Baron Bruce of Kinlosse [Scotland] 1604-07-08
+  # 1st Lord Bruce of Kinloss [Scotland] 1608-05-03
+  gen:father <https://www.wikidata.org/wiki/Q75500962> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75500963> .
   # oo Magdalene Clerk, d. 1630a, daughter of Alexander Clerk
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5342040> , <https://www.wikidata.org/wiki/Q75272190> .
 
 <https://www.wikidata.org/wiki/Q5109410>
   gen:name "Hon. Christian Bruce"@en ;
   gen:deathDate "1674-06-16" ;
-  gen:father <https://www.wikidata.org/wiki/Q5342040> .
-  # and Magdalene Clerk
+  gen:father <https://www.wikidata.org/wiki/Q5342040> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75272190> .
   # oo 1608-04-10 William Cavendish, 2nd Earl of Devonshire, 1590~ - 1628-06-20, https://www.wikidata.org/wiki/Q2756020
-<#Edward_Bruce,_2nd_Baron_Bruce_of_Kinlosse>
+<https://www.wikidata.org/wiki/Q75500969>
   # Edward Bruce, 2nd Baron Bruce of Kinlosse, d. 1613-08
-  gen:father <https://www.wikidata.org/wiki/Q5342040> .
-  # and Magdalene Clerk
+  gen:father <https://www.wikidata.org/wiki/Q5342040> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75272190> .
 <https://www.wikidata.org/wiki/Q7616265>
   # Thomas Bruce, 1st Earl of Elgin, 1599-02-02 - 1663-12-21
   # 3rd Baron Bruce of Kinlosse, 3rd Lord Bruce of Kinloss, 3rd Lord Kinloss 1613-08
-  # 1st Earl of Elgin, 1st Lord Bruce of Kinloss 1633-06-21
-  # 1st Baron Bruce of Whorlton, co. York 1641-07-29
-  gen:father <https://www.wikidata.org/wiki/Q5342040> .
-  # and Magdalene Clerk
+  # 1st Earl of Elgin, 1st Lord Bruce of Kinloss [Scotland] 1633-06-21
+  # 1st Baron Bruce of Whorlton, co. York [England] 1641-07-29
+  gen:father <https://www.wikidata.org/wiki/Q5342040> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75272190> .
   # oo Anne Chichester, d. 1627-03-20
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7616265> , <https://www.wikidata.org/wiki/Q75250823> ;
 	gen:startDate "1622-07-04" .
   # oo Lady Diana Cecil, 1596 - 1658-02-26
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q7616265> , <cecil.ttl#Lady_Diana_Cecil> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q7616265> , <https://www.wikidata.org/wiki/Q56176669> ;
 	gen:startDate "1629-11-12" .
 
 <https://www.wikidata.org/wiki/Q1193416>
   # Robert Bruce, 2nd Earl of Elgin, 1627-03-19 - 1685-10-20
   # 4th Lord Bruce of Kinloss, 2nd Earl of Elgin, 4th Baron Bruce of Kinlosse, 2nd Lord Bruce of Kinloss, 4th Lord Kinloss, 2nd Baron Bruce of Whorlton, co. York 1663-12-21
-  # 1st Earl of Ailesbury, Buckinghamshire, 1st Viscount Bruce of Ampthill, Bedfordshire, 1st Baron Bruce of Skelton, co. York 1665-03-18
+  # 1st Earl of Ailesbury, Buckinghamshire, 1st Viscount Bruce of Ampthill, Bedfordshire, 1st Baron Bruce of Skelton, co. York [England] 1665-03-18
   gen:father <https://www.wikidata.org/wiki/Q7616265> ;
   gen:mother <https://www.wikidata.org/wiki/Q75250823> .
   # oo Lady Diana Grey, 1625b - 1689-04-08
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q1193416> , <grey.ttl#Lady_Diana_Grey> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q1193416> , <https://www.wikidata.org/wiki/Q16549473> ;
 	gen:startDate "1646-02-16" .
 
-<#Lady_Diana_Bruce>
+<https://www.wikidata.org/wiki/Q75251135>
   # Lady Diana Bruce, d. 1672-07-15
   gen:father <https://www.wikidata.org/wiki/Q1193416> ;
   gen:mother <https://www.wikidata.org/wiki/Q16549473> .
   # oo 1666-01-29 Sir Seymour Shirley, 5th Baronet, 1647-01-23 - 1667-07-16, https://www.wikidata.org/wiki/Q27825112
   # oo 1671-11-10 John Manners, 1st Duke of Rutland, 1638-05-29 - 1711-01-10, https://www.wikidata.org/wiki/Q338020
-<#Lady_Christian_Bruce_(died_1720)>
+<https://www.wikidata.org/wiki/Q75654164>
   # Lady Christian Bruce, d. 1720-04-05
   gen:father <https://www.wikidata.org/wiki/Q1193416> ;
   gen:mother <https://www.wikidata.org/wiki/Q16549473> .
-  # oo John Rolle, d. 1689, clinton.ttl#John_Rolle
-  # oo 1689a Sir Robert Gayer, d. 1702-06-14
+  # oo John Rolle, d. 1689, https://www.wikidata.org/wiki/Q75654166 (clinton.ttl)
+  # oo 1689a Sir Robert Gayer, d. 1702-06-14, https://www.wikidata.org/wiki/Q75654168 (annesley.ttl)
 <https://www.wikidata.org/wiki/Q3524950>
   # Thomas Bruce, 3rd Earl of Elgin, 1656 - 1741-12-16
   gen:father <https://www.wikidata.org/wiki/Q1193416> ;
   gen:mother <https://www.wikidata.org/wiki/Q16549473> .
   # oo Lady Elizabeth Seymour, 1655~ - 1697-01-12
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q3524950> , <seymour.ttl#Lady_Elizabeth_Seymour_(died_1697)> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q3524950> , <https://www.wikidata.org/wiki/Q75258135> ;
 	gen:startDate "1676-10-30" .
   # oo Charlotte Jacqueline d’Argenteau, 1678-10-18 - 1710-07-23, daughter of Louis Conrad d'Argenteau, Comte d'Esneux and Marie Gilberte de Locquenghien
   []
@@ -176,7 +259,7 @@
   gen:father <https://www.wikidata.org/wiki/Q1193416> ;
   gen:mother <https://www.wikidata.org/wiki/Q16549473> .
   # oo 1672-05-28 Sir William Rich, 2nd Baronet, 1654~ – 1711, https://www.wikidata.org/wiki/Q16845879 (bertie.ttl)
-<#Lady_Anne_Charlotte_Bruce>
+<https://www.wikidata.org/wiki/Q75641061>
   # Lady Anne Charlotte Bruce, d. 1713-03-13
   gen:father <https://www.wikidata.org/wiki/Q1193416> ;
   gen:mother <https://www.wikidata.org/wiki/Q16549473> .
@@ -187,7 +270,7 @@
   gen:birthDate "1682-05-29" ;
   gen:deathDate "1747-02-10" ;
   gen:father <https://www.wikidata.org/wiki/Q3524950> ;
-  gen:mother <seymour.ttl#Lady_Elizabeth_Seymour_(died_1697)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75258135> .
   # oo Lady Anne Saville, 1691 - 1717-07-18
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5075841> , <https://www.wikidata.org/wiki/Q75253414> ;
@@ -198,20 +281,20 @@
 	gen:startDate "1720-02-02" .
   # oo Lady Caroline Campbell, 1721-01-12 - 1803-01-17
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q5075841> , <campbell.ttl#Lady_Caroline_Campbell> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q5075841> , <https://www.wikidata.org/wiki/Q75272187> ;
 	gen:startDate "1739-06-18" .
 <https://www.wikidata.org/wiki/Q48786421>
   gen:name "Lady Elizabeth Bruce"@en ;
   gen:birthDate "1689-01" ;
   gen:deathDate "1745-12" ;
   gen:father <https://www.wikidata.org/wiki/Q3524950> ;
-  gen:mother <seymour.ttl#Lady_Elizabeth_Seymour_(died_1697)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75258135> .
   # oo 1707-05-15 George Brudenell, 3rd Earl of Cardigan, 1685-09-29 - 1732-07-05, https://www.wikidata.org/wiki/Q5537353
 <https://www.wikidata.org/wiki/Q6762615>
-  # Lady Marie Thérèse Bruce, 1704-09-30 - 1736-11-30
+  # Lady Marie Thérèse Charlotte Bruce, 1704-09-30 - 1736-11-30
   gen:father <https://www.wikidata.org/wiki/Q3524950> ;
   gen:mother <https://www.wikidata.org/wiki/Q5086206> .
-  # oo 1722-06-17 Maximilian Emmanuel Prinz von Hornes, 1695-08-31 – 1763-01-12, https://www.wikidata.org/wiki/Q2581271
+  # oo 1722-06-17 Maximiliaan Emanuel van Horne, 1695-08-31 – 1763-01-12, https://www.wikidata.org/wiki/Q2581271 (nassau.ttl)
 
 <https://www.wikidata.org/wiki/Q56164503>
   gen:name "Lady Mary Bruce"@en ;
@@ -220,20 +303,20 @@
   gen:father <https://www.wikidata.org/wiki/Q5075841> ;
   gen:mother <https://www.wikidata.org/wiki/Q75253414> .
   # oo 1728-12-21 Henry Brydges, 2nd Duke of Chandos, 1708-01-17 - 1771-11-28, https://www.wikidata.org/wiki/Q7585553
-<#Robert_Bruce_(died_1738)>
+<https://www.wikidata.org/wiki/Q75397005>
   # Hon. Robert Bruce, 1714b - 1738-08-30
   gen:father <https://www.wikidata.org/wiki/Q5075841> ;
   gen:mother <https://www.wikidata.org/wiki/Q75253414> .
-  # oo Frances Blackett, d. 1750-07-16
+  # oo Frances Blackett, d. 1750-07-16 (erskine.ttl)
   []
-    gen:spouse <#Robert_Bruce_(died_1738)> , <erskine.ttl#Frances_Blackett> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75397005> , <https://www.wikidata.org/wiki/Q75397006> ;
 	gen:startDate "1729-02-08" .
 <https://www.wikidata.org/wiki/Q75399773>
   # Lady Elizabeth Bruce, d. 1796-11-05
   gen:father <https://www.wikidata.org/wiki/Q5075841> ;
   gen:mother <https://www.wikidata.org/wiki/Q75253414> .
   # oo 1732-11-26 Hon. Benjamin Bathurst, 1711-08-12 - 1767-01-23, https://www.wikidata.org/wiki/Q26265918 (courtenay.ttl)
-<#Lady_Mary_Bruce_(died_1796)>
+<https://www.wikidata.org/wiki/Q75251387>
   # Lady Mary Bruce, d. 1796-11-05
   gen:father <https://www.wikidata.org/wiki/Q5075841> ;
   gen:mother <https://www.wikidata.org/wiki/Q75253414> .
@@ -243,116 +326,120 @@
 
 # Bruce of Carnock/Kincardine
 <https://www.wikidata.org/wiki/Q3101439>
-  # Sir George, of Carnock, 1550~ - 1625-05-06
-  gen:father <#Edward_Bruce,_1st_of_Blairhall> .
-  # and Alison Reid
+  # Sir George Bruce, of Carnock, 1550~ - 1625-05-06
+  gen:father <https://www.wikidata.org/wiki/Q75500962> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75500963> .
   # oo Margaret Primrose, daughter of Archibald Primrose
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q3101439> , <https://www.wikidata.org/wiki/Q75283495> .
 
 <https://www.wikidata.org/wiki/Q75272296>
   # Sir George Bruce, of Carnock
-  gen:father <https://www.wikidata.org/wiki/Q3101439> .
-  # and Margaret Primrose
-  # oo Mary Preston (douglas.ttl)
+  gen:father <https://www.wikidata.org/wiki/Q3101439> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75283495> .
+  # oo Mary Preston (colville.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75272296> , <https://www.wikidata.org/wiki/Q75283499> .
 <https://www.wikidata.org/wiki/Q75283489>
   # Robert Bruce, of Broomhall, 1575 - 1652-06-25
-  gen:father <https://www.wikidata.org/wiki/Q3101439> .
-  # and Margaret Primrose
+  # Lord of Session as Lord Broomhall [Scottish Law Lord] 1649
+  gen:father <https://www.wikidata.org/wiki/Q3101439> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75283495> .
   # oo Helen Skene, 1619-10-24b - 1691
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75283489> , <https://www.wikidata.org/wiki/Q75283490> .
 
-<#Mary_Bruce>
+<https://www.wikidata.org/wiki/Q75272295>
   gen:name "Mary Bruce"@en ;
   gen:father <https://www.wikidata.org/wiki/Q75272296> ;
   gen:mother <https://www.wikidata.org/wiki/Q75283499> .
   # oo 1655 David Erskine, 2nd Lord Cardross, 1627-02-06 - 1671-07~, https://www.wikidata.org/wiki/Q2227936
-<#Edward_Bruce,_1st_Earl_of_Kincardine>
+<https://www.wikidata.org/wiki/Q75283501>
   # Edward Bruce, 1st Earl of Kincardine, d. 1662
-  # 1st Lord Bruce of Torry, 1st Earl of Kincardine 1647-12-26
+  # 1st Lord Bruce of Torry, 1st Earl of Kincardine [Scotland] 1647-12-26
   gen:father <https://www.wikidata.org/wiki/Q75272296> ;
   gen:mother <https://www.wikidata.org/wiki/Q75283499> .
 <https://www.wikidata.org/wiki/Q4718445>
   # Alexander Bruce, 2nd Earl of Kincardine, 1629 - 1680-07-09
   gen:father <https://www.wikidata.org/wiki/Q75272296> ;
   gen:mother <https://www.wikidata.org/wiki/Q75283499> .
-  # oo Veronica van Aerssen van Sommelsdijck, 1633-12-08 - 1702-04-28
+  # oo Veronica van Aerssen van Sommelsdijck, 1633-12-08 - 1702-04-28 (nassau.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q4718445> , <https://www.wikidata.org/wiki/Q75283504> ;
 	gen:startDate "1659-06-16~" .
-<#Alexander_Bruce,_4th_Earl_of_Kincardine>
+<https://www.wikidata.org/wiki/Q75283479>
   # Sir Alexander Bruce, 4th Earl of Kincardine, d. 1715-10-03
   # 4th Lord Bruce of Torry, 4th Earl of Kincardine 1705-11-10
   gen:father <https://www.wikidata.org/wiki/Q75283489> ;
   gen:mother <https://www.wikidata.org/wiki/Q75283490> .
   # oo Christian Bruce
   []
-    gen:spouse <#Alexander_Bruce,_4th_Earl_of_Kincardine> , <#Christian_Bruce> .
+    gen:spouse <https://www.wikidata.org/wiki/Q75283479> , <https://www.wikidata.org/wiki/Q75283480> .
 <https://www.wikidata.org/wiki/Q75654114>
   # Janet Bruce, 1638-01-18b - 1699-04-30
   gen:father <https://www.wikidata.org/wiki/Q75283489> ;
   gen:mother <https://www.wikidata.org/wiki/Q75283490> .
   # oo 1662-01-16 Sir Thomas Burnett of Crimond, b. 1637~, https://www.wikidata.org/wiki/Q16824974
 
-<#Lady_Mary_Bruce_(died_1739a)>
+<https://www.wikidata.org/wiki/Q75273752>
   # Lady Mary Bruce, d. 1739a
   gen:father <https://www.wikidata.org/wiki/Q4718445> ;
   gen:mother <https://www.wikidata.org/wiki/Q75283504> .
-  # oo 1681-04-19 William Cochrane, d. 1739a, cochrane.ttl#William_Cochrane
-<#Lady_Anne_Bruce>
+  # oo 1681-04-19 William Cochrane, d. 1739a, https://www.wikidata.org/wiki/Q75273751
+<https://www.wikidata.org/wiki/Q75283493>
   # Lady Anne Bruce
   gen:father <https://www.wikidata.org/wiki/Q4718445> ;
   gen:mother <https://www.wikidata.org/wiki/Q75283504> .
-  # oo 1684-04-16 Sir David Murray of Stanhope, 2nd Baronet, d. 1729-02-14, kerr.ttl#Sir_David_Murray_of_Stanhope,_2nd_Baronet
-<#Alexander_Bruce,_3rd_Earl_of_Kincardine>
+  # oo 1684-04-16 Sir David Murray of Stanhope, 2nd Baronet, d. 1729-02-14, https://www.wikidata.org/wiki/Q75654172 (kerr.ttl)
+<https://www.wikidata.org/wiki/Q75283503>
   # Alexander Bruce, 3rd Earl of Kincardine, 1666-06-05 - 1705-11-10
   gen:father <https://www.wikidata.org/wiki/Q4718445> ;
   gen:mother <https://www.wikidata.org/wiki/Q75283504> .
-<#Robert_Bruce,_5th_Earl_of_Kincardine>
+<https://www.wikidata.org/wiki/Q75283483>
   # Robert Bruce, 5th Earl of Kincardine, 1660~ - 1718
-  gen:father <#Alexander_Bruce,_4th_Earl_of_Kincardine> ;
-  gen:mother <#Christian_Bruce> .
-<#Alexander_Bruce,_6th_Earl_of_Kincardine>
+  gen:father <https://www.wikidata.org/wiki/Q75283479> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75283480> .
+<https://www.wikidata.org/wiki/Q75283485>
   # Alexander Bruce, 6th Earl of Kincardine, 1662-01-19 - 1721
-  gen:father <#Alexander_Bruce,_4th_Earl_of_Kincardine> ;
-  gen:mother <#Christian_Bruce> .
+  gen:father <https://www.wikidata.org/wiki/Q75283479> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75283480> .
   # oo Jean Nisbet
-<#Thomas_Bruce,_7th_Earl_of_Kincardine>
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75283485> , <https://www.wikidata.org/wiki/Q75654181> .
+<https://www.wikidata.org/wiki/Q75274930>
   # Thomas Bruce, 7th Earl of Kincardine, 1663-03-19 - 1740-04-23
-  gen:father <#Alexander_Bruce,_4th_Earl_of_Kincardine> ;
-  gen:mother <#Christian_Bruce> .
+  gen:father <https://www.wikidata.org/wiki/Q75283479> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75283480> .
   # oo Rachel Pauncefort, d. 1753-03-17, daughter of Robert Pauncefort
   []
-    gen:spouse <#Thomas_Bruce,_7th_Earl_of_Kincardine> , <#Rachel_Pauncefort> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75274930> , <https://www.wikidata.org/wiki/Q75283476> ;
 	gen:startDate "1699" .
 
-# drummond.ttl:
-<#Lady_Rachel_Bruce>
+<https://www.wikidata.org/wiki/Q75274918>
   # Lady Rachel Bruce, d. 1769-06-29
-  gen:father <#Thomas_Bruce,_7th_Earl_of_Kincardine> ;
-  gen:mother <#Rachel_Pauncefort> .
-  # oo James Drummond of Lundin, 1707-11-06 - 1781-07-18, drummond.ttl#James_Drummond_of_Lundin
+  gen:father <https://www.wikidata.org/wiki/Q75274930> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75283476> .
+  # oo James Drummond of Lundin, 1707-11-06 - 1781-07-18, https://www.wikidata.org/wiki/Q75274929
 <https://www.wikidata.org/wiki/Q7617004>
   # William Bruce, 8th Earl of Kincardine, d. 1740-09-08
-  gen:father <#Thomas_Bruce,_7th_Earl_of_Kincardine> ;
-  gen:mother <#Rachel_Pauncefort> .
+  gen:father <https://www.wikidata.org/wiki/Q75274930> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75283476> .
   # oo Janet Roberton, s. 1772-05-29, daughter of James Roberton and Euphemia Burnett
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q7617004> , <#Janet_Roberton> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q7617004> , <https://www.wikidata.org/wiki/Q75283472> ;
 	gen:startDate "1726-02-14" .
 
-# erskine.ttl:
-<#Lady_Christian_Bruce_(died_1810)>
+<https://www.wikidata.org/wiki/Q75512780>
   # Lady Christian Bruce, d. 1810-05-20
   gen:father <https://www.wikidata.org/wiki/Q7617004> ;
-  gen:mother <#Janet_Roberton> .
-  # oo 1762-04-28 James Erskine, of Cardross, 1732 - 1802-03-27, erskine.ttl#James_Erskine,_of_Cardross
+  gen:mother <https://www.wikidata.org/wiki/Q75283472> .
+  # oo 1762-04-28 James Erskine, of Cardross, 1732 - 1802-03-27, https://www.wikidata.org/wiki/Q75512776
 <https://www.wikidata.org/wiki/Q5075842>
   # Charles Bruce, 5th Earl of Elgin and 9th Earl of Kincardine, 1732-07-06 - 1771-05-14
+  # 9th Earl of Kincardine 1740-09-08
   # 5th Earl of Elgin 1747-02-10
   gen:father <https://www.wikidata.org/wiki/Q7617004> ;
-  gen:mother <#Janet_Roberton> .
+  gen:mother <https://www.wikidata.org/wiki/Q75283472> .
   # oo Martha Whyte, 1739 - 1810-06-21, daughter of Thomas Whyte
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5075842> , <https://www.wikidata.org/wiki/Q1754394> ;
@@ -360,7 +447,7 @@
 <https://www.wikidata.org/wiki/Q7787974>
   # Thomas Bruce, 1738 – 1797-12-12
   gen:father <https://www.wikidata.org/wiki/Q7617004> ;
-  gen:mother <#Janet_Roberton> .
+  gen:mother <https://www.wikidata.org/wiki/Q75283472> .
 
 <https://www.wikidata.org/wiki/Q65095654>
   # William Robert Bruce, 6th Earl of Elgin and 10th Earl of Kincardine, 1764-01-28 - 1771-07-15
@@ -385,9 +472,9 @@
   gen:mother <https://www.wikidata.org/wiki/Q1754394> .
   # oo Anna Maria Blunt, d. 1798-09-19
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q16274760> , <#Anna_Maria_Blunt> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q16274760> , <https://www.wikidata.org/wiki/Q75484758> ;
 	gen:startDate "1796-05-20" .
-  # oo Charlotte Sophia Dashwood, d. 1870-04-11 (bertie.ttl)
+  # oo Charlotte Sophia Dashwood, 1784 - 1870-04-11
   []
     gen:spouse <https://www.wikidata.org/wiki/Q16274760> , <https://www.wikidata.org/wiki/Q75284474> ;
 	gen:startDate "1798a" .
@@ -395,7 +482,7 @@
   # Hon. James Bruce, 1769-03-23 - 1798-07-10
   gen:father <https://www.wikidata.org/wiki/Q5075842> ;
   gen:mother <https://www.wikidata.org/wiki/Q1754394> .
-<#Lady_Charlotte_Martha_Bruce>
+<https://www.wikidata.org/wiki/Q75654191>
   # Lady Charlotte Martha Bruce, 1771-05-28 - 1816-02-21
   gen:father <https://www.wikidata.org/wiki/Q5075842> ;
   gen:mother <https://www.wikidata.org/wiki/Q1754394> .
@@ -411,11 +498,11 @@
   gen:father <https://www.wikidata.org/wiki/Q335098> ;
   gen:mother <https://www.wikidata.org/wiki/Q388848> .
   # oo 1839-10-14 Sir John Maxwell of Pollock, 8th Baronet, 1791-05-12 – 1865-06-06, https://www.wikidata.org/wiki/Q18534207
-<#Lady_Lucy_Bruce>
+<https://www.wikidata.org/wiki/Q75263963>
   # Lady Lucy Bruce, 1806 - 1881-09-04
   gen:father <https://www.wikidata.org/wiki/Q335098> ;
   gen:mother <https://www.wikidata.org/wiki/Q388848> .
-  # oo 1828-03-14 John Grant, 1798-06-13 - 1873-01-20, #John_Grant
+  # oo 1828-03-14 John Grant, 1798-06-13 - 1873-01-20, https://www.wikidata.org/wiki/Q52222252
 <https://www.wikidata.org/wiki/Q335230>
   # James Bruce, 8th Earl of Elgin and 12th Earl of Kincardine, 1811-07-20 – 1863-11-20
   gen:father <https://www.wikidata.org/wiki/Q335098> ;
@@ -451,7 +538,7 @@
   gen:mother <https://www.wikidata.org/wiki/Q75272397> .
   # oo Sarah Caroline Thornhill, 1836~ - 1913-07-22
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q7788337> , <#Sarah_Caroline_Thornhill> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q7788337> , <https://www.wikidata.org/wiki/Q75654224> ;
 	gen:startDate "1863-11-19" .
 <https://www.wikidata.org/wiki/Q75272395>
   # Lady Frances Anne Bruce, 1831-10-11 - 1894-08-16
@@ -470,7 +557,7 @@
   # Louisa Charlotte Bruce, 1802-04-19 - 1870-08-09
   gen:father <https://www.wikidata.org/wiki/Q16274760> ;
   gen:mother <https://www.wikidata.org/wiki/Q75284474> .
-  # oo 1835-07-14 Sir William Richard Powlett Geary, 3rd Baronet, 1810-11-13 - 1877-12-19, https://www.wikidata.org/wiki/Q13529907 (leigh.ttl)
+  # oo 1835-07-14 Sir William Richard Powlett Geary, 3rd Baronet, 1810-11-13 - 1877-12-19, https://www.wikidata.org/wiki/Q13529907 (twysden.ttl)
 
 <https://www.wikidata.org/wiki/Q75654392>
   # Lady Elma Bruce, 1842-06-19 - 1923-11-27
@@ -487,7 +574,7 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q336771> , <https://www.wikidata.org/wiki/Q75281987> ;
 	gen:startDate "1876-11-09" .
-  # oo Gertrude Lilian Sherbrooke, d. 1971-02-13
+  # oo Gertrude Lilian Sherbrooke, d. 1971-02-13 (parker.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q336771> , <https://www.wikidata.org/wiki/Q75283536> ;
 	gen:startDate "1913-11-19" .
@@ -495,13 +582,13 @@
   # Hon. Robert Preston Bruce, 1851-12-04 - 1893-12-08
   gen:father <https://www.wikidata.org/wiki/Q335230> ;
   gen:mother <https://www.wikidata.org/wiki/Q50675801> .
-<#Frederick_John_Bruce>
+<https://www.wikidata.org/wiki/Q75654394>
   # Hon. Frederick John Bruce, 1854-09-16 - 1920-01-26
   gen:father <https://www.wikidata.org/wiki/Q335230> ;
   gen:mother <https://www.wikidata.org/wiki/Q50675801> .
   # oo Katherine Fernie, 1848 - 1917-02-28, daughter of Ebeneezer Waugh Fernie and Margaret Ellis Dunlop
   []
-    gen:spouse <#Frederick_John_Bruce> , <#Katherine_Fernie> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75654394> , <https://www.wikidata.org/wiki/Q75654399> ;
 	gen:startDate "1879-06-03" .
 
 <https://www.wikidata.org/wiki/Q75281983>
@@ -520,7 +607,7 @@
   gen:mother <https://www.wikidata.org/wiki/Q75281987> .
   # oo Hon. Katherine Elizabeth Cochrane, d. 1989
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q5342041> , <cochrane.ttl#Katherine_Elizabeth_Cochrane> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q5342041> , <https://www.wikidata.org/wiki/Q75272194> ;
 	gen:startDate "1921-01-05" .
 <https://www.wikidata.org/wiki/Q75283518>
   # Hon. David Bruce, 1888-06-11 - 1964-08-26
@@ -535,68 +622,68 @@
   gen:father <https://www.wikidata.org/wiki/Q336771> ;
   gen:mother <https://www.wikidata.org/wiki/Q75281987> .
   # oo 1911-12-07 Sir Harry Calvert Williams Verney, 4th Baronet, 1881-06-07 – 1974-12-23, https://www.wikidata.org/wiki/Q7527066 (talbot.ttl)
-<#John_Bernard_Bruce>
+<https://www.wikidata.org/wiki/Q75283522>
   # Hon. John Bernard Bruce, 1892-04-09 - 1971-08-03
   gen:father <https://www.wikidata.org/wiki/Q336771> ;
   gen:mother <https://www.wikidata.org/wiki/Q75281987> .
   # oo Helen Rachel Rawstorne, d. 1983-11-04, daughter of Henry Feilden Rawstorne
   []
-    gen:spouse <#John_Bernard_Bruce> , <#Helen_Rachel_Rawstorne> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75283522> , <https://www.wikidata.org/wiki/Q75283524> ;
 	gen:startDate "1923-06-02" .
-<#Lewis_Bruce>
+<https://www.wikidata.org/wiki/Q75654397>
   # Lewis Bruce, 1880-03-12 - 1961-03-23
-  gen:father <#Frederick_John_Bruce> ;
-  gen:mother <#Katherine_Fernie> .
+  gen:father <https://www.wikidata.org/wiki/Q75654394> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75654399> .
   # oo Anne Margaret Macdonald Ranken, d. 1961-12-08, daughter of Robert Burt Ranken
   []
-    gen:spouse <#Lewis_Bruce> , <#Anne_Margaret_Macdonald_Ranken> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75654397> , <https://www.wikidata.org/wiki/Q75654395> ;
 	gen:startDate "1911-01-11" .
-<#Charles_Bruce>
+<https://www.wikidata.org/wiki/Q75654413>
   # Charles Bruce, 1883-02-03 - 1958-09-18
-  gen:father <#Frederick_John_Bruce> ;
-  gen:mother <#Katherine_Fernie> .
+  gen:father <https://www.wikidata.org/wiki/Q75654394> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75654399> .
   # oo Joan Woodiwiss, daughter of Isaac Newton Woodiwiss
   []
-    gen:spouse <#Charles_Bruce> , <#Joan_Woodiwiss> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75654413> , <https://www.wikidata.org/wiki/Q75654477> ;
 	gen:startDate "1918-08-30" .
 
-<#Lady_Jean_Christian_Bruce>
+<https://www.wikidata.org/wiki/Q77324255>
   # Lady Jean Christian Bruce, b. 1923-01-12
   gen:father <https://www.wikidata.org/wiki/Q5342041> ;
-  gen:mother <cochrane.ttl#Katherine_Elizabeth_Cochrane> .
-  # oo 1945-07-21 David Wemyss of Wemyss, 1920-02-11 - 2005-01-26, wemyss.ttl#David_Wemyss_of_Wemyss
+  gen:mother <https://www.wikidata.org/wiki/Q75272194> .
+  # oo 1945-07-21 David Wemyss of Wemyss, 1920-02-11 - 2005-01-26, https://www.wikidata.org/wiki/Q75250192
 <https://www.wikidata.org/wiki/Q4756459>
   # Andrew Bruce, 11th Earl of Elgin and 15th Earl of Kincardine, b. 1924-02-17
   gen:father <https://www.wikidata.org/wiki/Q5342041> ;
-  gen:mother <cochrane.ttl#Katherine_Elizabeth_Cochrane> .
+  gen:mother <https://www.wikidata.org/wiki/Q75272194> .
   # oo Victoria Mary Usher, daughter of Dudley George Usher and Antonia Mary Wilkinson
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q4756459> , <#Victoria_Mary_Usher> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q4756459> , <https://www.wikidata.org/wiki/Q75356755> ;
 	gen:startDate "1959-04-27" .
 <https://www.wikidata.org/wiki/Q65031384>
   # Hon. James Michael Edward Bruce, 1927-08-26 – 2013-04-22
   gen:father <https://www.wikidata.org/wiki/Q5342041> ;
-  gen:mother <cochrane.ttl#Katherine_Elizabeth_Cochrane> .
-  # oo Hon. Margaret Jean Dagbjørt Coats, 1928-10-11 - 2007-09-25
+  gen:mother <https://www.wikidata.org/wiki/Q75272194> .
+  # oo Hon. Margaret Jean Dagbjørt Coats, 1928-10-11 - 2007-09-25 (wellesley.ttl)
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q65031384> , <wellesley.ttl#Margaret_Jean_Dagbjørt_Coats> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q65031384> , <https://www.wikidata.org/wiki/Q75598044> ;
 	gen:startDate "1950-07-29" ;
 	gen:divorceDate "1974" .
   # oo Morven-Anne Macdonald, d. 1994, daughter of Alistair Macdonald
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q65031384> , <#Morven-Anne_Macdonald> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q65031384> , <https://www.wikidata.org/wiki/Q75654731> ;
 	gen:startDate "1975-04-26" .
   # oo Mary Elizabeth Walter, daughter of R. A. Walter
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q65031384> , <#Mary_Elizabeth_Walter> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q65031384> , <https://www.wikidata.org/wiki/Q75257937> ;
 	gen:startDate "2000-07" .
-<#Edward_David_Bruce>
+<https://www.wikidata.org/wiki/Q75512896>
   # Hon. Edward David Bruce, b. 1936-02-29
   gen:father <https://www.wikidata.org/wiki/Q5342041> ;
-  gen:mother <cochrane.ttl#Katherine_Elizabeth_Cochrane> .
-  # oo Sarah Elizabeth Wallop William-Powlett, 1936-06-23 - 2015-03-26
+  gen:mother <https://www.wikidata.org/wiki/Q75272194> .
+  # oo Sarah Elizabeth Wallop William-Powlett, 1936-06-23 - 2015-03-26 (wallop.ttl)
   []
-    gen:spouse <#Edward_David_Bruce> , <wallop.ttl#Sarah_Elizabeth_Wallop_William-Powlett> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75512896> , <https://www.wikidata.org/wiki/Q75654743> ;
 	gen:startDate "1960-04-30" .
 <https://www.wikidata.org/wiki/Q75654568>
   # Peter Alexander Bruce, 1925-06-21 - 1982~
@@ -606,91 +693,115 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75654568> , <https://www.wikidata.org/wiki/Q75654572> ;
 	gen:startDate "1967-03-29" .
-<#Henry_Victor_Bruce_of_Salloch>
+<https://www.wikidata.org/wiki/Q75654582>
   # Henry Victor Bruce of Salloch, 1924-04-03 - 2011-07-11
-  gen:father <#John_Bernard_Bruce> ;
-  gen:mother <#Helen_Rachel_Rawstorne> .
-  # oo Helen Vernon Wallop William-Powlett, b. 1927-12-16
+  gen:father <https://www.wikidata.org/wiki/Q75283522> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75283524> .
+  # oo Helen Vernon Wallop William-Powlett, b. 1927-12-16 (wallop.ttl)
   []
-    gen:spouse <#Henry_Victor_Bruce_of_Salloch> , <wallop.ttl#Helen_Vernon_Wallop_William-Powlett> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75654582> , <https://www.wikidata.org/wiki/Q75654584> ;
 	gen:startDate "1951-05-17" .
-<#John_Frederick_Lambton_Bruce>
+<https://www.wikidata.org/wiki/Q75654412>
   # John Frederick Lambton Bruce, 1912-10-20 - 2002-09-20
-  gen:father <#Lewis_Bruce> ;
-  gen:mother <#Anne_Margaret_Macdonald_Ranken> .
+  gen:father <https://www.wikidata.org/wiki/Q75654397> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75654395> .
   # oo Marjory Katherine Fernie Bruce, 1919-08-04 - 1994-05-15
   []
-    gen:spouse <#John_Frederick_Lambton_Bruce> , <#Marjory_Katherine_Fernie_Bruce> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75654412> , <https://www.wikidata.org/wiki/Q75654414> ;
 	gen:startDate "1941-01-11" .
-<#Marjory_Katherine_Fernie_Bruce>
+<https://www.wikidata.org/wiki/Q75654414>
   # Marjory Katherine Fernie Bruce, 1919-08-04 - 1994-05-15
-  gen:father <#Charles_Bruce> ;
-  gen:mother <#Joan_Woodiwiss> .
-  # oo 1941-01-11 John Frederick Lambton Bruce, 1912-10-20 - 2002-09-20, #John_Frederick_Lambton_Bruce
+  gen:father <https://www.wikidata.org/wiki/Q75654413> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75654477> .
+  # oo 1941-01-11 John Frederick Lambton Bruce, 1912-10-20 - 2002-09-20, https://www.wikidata.org/wiki/Q75654412
 
-<#Charles_Edward_Bruce,_Lord_Bruce>
+<https://www.wikidata.org/wiki/Q75356772>
   # Charles Edward Bruce, Lord Bruce, b. 1961-10-19
   gen:father <https://www.wikidata.org/wiki/Q4756459> ;
-  gen:mother <#Victoria_Mary_Usher> .
+  gen:mother <https://www.wikidata.org/wiki/Q75356755> .
   # oo Amanda Leigh Movius, daughter of James Movius
   []
-    gen:spouse <#Charles_Edward_Bruce,_Lord_Bruce> , <#Amanda_Leigh_Movius> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75356772> , <https://www.wikidata.org/wiki/Q75654031> ;
 	gen:startDate "1990-07-29" ;
 	gen:divorceDate "2000" .
   # oo Dr. Alice Enders
   []
-    gen:spouse <#Charles_Edward_Bruce,_Lord_Bruce> , <#Alice_Enders> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75356772> , <https://www.wikidata.org/wiki/Q75654033> ;
 	gen:startDate "2001-05-05" .
+  # oo Sheree Cosgrove
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75356772> , <#Sheree_Cosgrove> ;
+	gen:startDate "2023-08-19" .
 <https://www.wikidata.org/wiki/Q4678799>
   # Hon. Adam Robert Bruce, b. 1968-01-18
   gen:father <https://www.wikidata.org/wiki/Q4756459> ;
-  gen:mother <#Victoria_Mary_Usher> .
+  gen:mother <https://www.wikidata.org/wiki/Q75356755> .
   # oo Donna Maria-Sofia Giovanna Rose Granito Pignatelli di Belmonte, b. 1974-03-11, daughter of Don Angelo Gennaro Granito Pignatelli di Belmonte, 13th Prince of Belmonte and Sarah Elizabeth Mayhew
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q4678799> , <#Donna_Maria-Sofia_Pignatelli_di_Belmonte> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q4678799> , <https://www.wikidata.org/wiki/Q75654039> ;
 	gen:startDate "2003-05-17" .
-<#Newton_Edward_John_Bruce>
+<https://www.wikidata.org/wiki/Q75512899>
   # Newton Edward John Bruce, b. 1964-08-27
-  gen:father <#Edward_David_Bruce> ;
-  gen:mother <herbert.ttl#Sarah_Elizabeth_Wallop_William-Powlett> .
+  gen:father <https://www.wikidata.org/wiki/Q75512896> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75654743> .
   # oo Joanna Christian Erskine, b. 1968-07-06
   []
-    gen:spouse <#Newton_Edward_John_Bruce> , <erskine.ttl#Joanna_Christian_Erskine> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75512899> , <https://www.wikidata.org/wiki/Q75309617> ;
 	gen:startDate "1996" .
 
-<#Antonia_Jean_Bruce>
+<https://www.wikidata.org/wiki/Q75654038>
   # Antonia Jean Bruce, b. 1990-12-14
-  gen:father <#Charles_Edward_Bruce,_Lord_Bruce> ;
-  gen:mother <#Amanda_Leigh_Movius> .
-<#James_Bruce,_Master_of_Bruce>
+  gen:father <https://www.wikidata.org/wiki/Q75356772> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75654031> .
+<https://www.wikidata.org/wiki/Q75654034>
   # James Andrew Charles Robert Bruce, Master of Bruce, b. 1991-11-16
-  gen:father <#Charles_Edward_Bruce,_Lord_Bruce> ;
-  gen:mother <#Amanda_Leigh_Movius> .
-<#George_Benjamin_Thomas_Bruce>
+  gen:father <https://www.wikidata.org/wiki/Q75356772> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75654031> .
+<https://www.wikidata.org/wiki/Q75654036>
   # George Benjamin Thomas Bruce, b. 1993-07-05
-  gen:father <#Charles_Edward_Bruce,_Lord_Bruce> ;
-  gen:mother <#Amanda_Leigh_Movius> .
+  gen:father <https://www.wikidata.org/wiki/Q75356772> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75654031> .
 <#Benedict_Bruce>
   # Benedict Bruce
-  gen:father <#Charles_Edward_Bruce,_Lord_Bruce> ;
-  gen:mother <#Alice_Enders> .
+  gen:father <https://www.wikidata.org/wiki/Q75356772> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75654033> .
 
 
 # ----
+<https://www.wikidata.org/wiki/Q6262900>
+  owl:sameAs <https://www.wikidata.org/wiki/Q75439141> .
+  # Sir John Walter, 1566 - 1630-11-17
+  # oo Margaret Offley, daughter of William Offley
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6262900> , <https://www.wikidata.org/wiki/Q75489547> .
+  # oo Anne Witham, d. 1630-11a, daughter of William Witham
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q6262900> , <https://www.wikidata.org/wiki/Q75439138> ;
+	gen:startDate "1622-07-18" .
+
+<#Mary_Walter>
+  # Mary Walter
+  gen:father <https://www.wikidata.org/wiki/Q6262900> .
+  # oo 1626-11-11 Sir John Cope, 3rd Baronet, 1608-08-28 – 1638-10-13, https://www.wikidata.org/wiki/Q75791096
 <https://www.wikidata.org/wiki/Q7529812>
   # Sir William Walter, 1st Baronet, 1604~ – 1675-03-23
-  # 1st Baronet Walter of Sarsden 1641-11-20
-  gen:father <https://www.wikidata.org/wiki/Q6262900> .
-  # and Margaret Offley
-  # oo Elizabeth Lucas, d. 1691-05~
+  # 1st Baronet Walter of Sarsden [England] 1641-11-20
+  gen:father <https://www.wikidata.org/wiki/Q6262900> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75489547> .
+  # oo Elizabeth Lucas, d. 1691-05~ (cavendish.ttl)
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q7529812> , <cavendish.ttl#Elizabeth_Lucas> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q7529812> , <https://www.wikidata.org/wiki/Q75489547> ;
 	gen:startDate "1632-12-20" .
+<https://www.wikidata.org/wiki/Q75516743>
+  # Elizabeth Walter, 1613-09 - 1701-04-17
+  gen:father <https://www.wikidata.org/wiki/Q6262900> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75489547> .
+  # oo 1635 Sir Francis Burdett, 2nd Baronet, 1608-09-10 - 1696-12-30, https://www.wikidata.org/wiki/Q75516742 (howard.ttl)
 
 <https://www.wikidata.org/wiki/Q75654171>
   # Sir William Walter, 2nd Baronet, 1635~ – 1693-03-05
   gen:father <https://www.wikidata.org/wiki/Q7529812> ;
-  gen:mother <cavendish.ttl#Elizabeth_Lucas> .
+  gen:mother <https://www.wikidata.org/wiki/Q75489547> .
   # oo Lady Mary Bruce, 1657-12-31 - 1711-05-15b
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75654171> , <https://www.wikidata.org/wiki/Q75654169> .
@@ -705,6 +816,10 @@
   # oo Elizabeth Vernon, 1678~ - 1748-07-12
   []
     gen:spouse <https://www.wikidata.org/wiki/Q76290501> , <https://www.wikidata.org/wiki/Q75282144> .
+<#Isabella_Walter>
+  # Isabella Walter
+  gen:father <https://www.wikidata.org/wiki/Q75654171> .
+  # oo John Rolle, 1679 – 1730, https://www.wikidata.org/wiki/Q16859514
 
 # ----
 #<https://www.wikidata.org/wiki/Q17512944>
@@ -713,22 +828,12 @@
   # and Magdalen Trevor
   # oo Lady Anne Charlotte Bruce, d. 1713-03-13
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q17512944> , <#Lady_Anne_Charlotte_Bruce> .
-
-# ----
-<https://www.wikidata.org/wiki/Q2581271>
-  # Maximilian Emmanuel Prinz von Hornes, 1695-08-31 – 1763-01-12
-  gen:father <https://www.wikidata.org/wiki/Q2408761> .
-  # and Antoinette de Ligne
-  # oo Lady Marie Thérèse Bruce, 1704-09-30 - 1736-11-30
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q2581271> , <https://www.wikidata.org/wiki/Q6762615> ;
-	gen:startDate "1722-06-17" .
+    gen:spouse <https://www.wikidata.org/wiki/Q17512944> , <https://www.wikidata.org/wiki/Q75641061> .
 
 # ----
 <https://www.wikidata.org/wiki/Q18813233>
   # Sir James Skene of Curriehill, 1st Baronet, 1579~ - 1633
-  # 1st Baronet Skene, of Curriehill 1630-01-15
+  # 1st Baronet Skene, of Curriehill [Nova Scotia] 1630-01-15
   gen:father <https://www.wikidata.org/wiki/Q6258077> ; # John Skene of Curriehill
   gen:mother <https://www.wikidata.org/wiki/Q75420855> . # and Helen Somerville
   # oo Janet Johnston, daughter of Sir John Johnston of Hilton
@@ -740,34 +845,7 @@
   gen:father <https://www.wikidata.org/wiki/Q18813233> ;
   gen:mother <https://www.wikidata.org/wiki/Q76096329> .
   # oo Robert Bruce, of Broomhall, 1575 - 1652-06-25, https://www.wikidata.org/wiki/Q75283489
-  # oo 1660b Sir Charles Erskine of Alva, 1611-01-07 - 1663-07-08, https://www.wikidata.org/wiki/Q75590129
-
-# ----
-#<https://www.wikidata.org/wiki/Q1133631>
-  # Cornelis van Aerssen van Sommelsdijk, 1600 - 1662-11-19
-  # oo Lucia van Walta, 1610~ - 1674-06-18
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q1133631> , <#Lucia_van_Walta> ;
-	gen:startDate "1630-01-27" .
-
-<https://www.wikidata.org/wiki/Q75283504>
-  # Veronica van Aerssen van Sommelsdijck, 1633-12-08 - 1702-04-28
-  gen:father <https://www.wikidata.org/wiki/Q1133631> ;
-  gen:mother <#Lucia_van_Walta> .
-  # oo 1659-06-16~ Alexander Bruce, 2nd Earl of Kincardine, 1629 - 1680-07-09, https://www.wikidata.org/wiki/Q4718445
-<https://www.wikidata.org/wiki/Q172965>
-  # Cornelis van Aerssen van Sommelsdijck, 1637-08-20 - 1688-07-19
-  gen:father <https://www.wikidata.org/wiki/Q1133631> ;
-  gen:mother <#Lucia_van_Walta> .
-  # oo Marguerite du Puy-Montbrun, Marquise de Saint-André-Montbrun, d. 1695, daughter of Alexandre du Puy-Montbrun, Marquis de St.André and Marie Louise Madelaine de La Nocle de La Fin de Salins, Dame de La Nocle
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q172965> , <#Marguerite_du_Puy-Montbrun> ;
-	gen:startDate "1664-06-01" .
-<https://www.wikidata.org/wiki/Q18674902>
-  # Françoise van Aerssen van Sommelsdijk, 1642-01-12 - 1720-02-11
-  gen:father <https://www.wikidata.org/wiki/Q1133631> ;
-  gen:mother <#Lucia_van_Walta> .
-  # oo 1667-10-02 Hendrik van Nassau, graaf van Nassau-de Lek, 1640 – 1708-10-18, https://www.wikidata.org/wiki/Q571545
+  # oo 1660b Sir Charles Erskine of Alva, 1611-01-07 - 1663-07-08, https://www.wikidata.org/wiki/Q75428893
 
 # ----
 #<https://www.wikidata.org/wiki/Q16824974>
@@ -786,14 +864,37 @@
 # ----
 <https://www.wikidata.org/wiki/Q75272397>
   # Elizabeth Oswald, d. 1860-04-01
-  gen:father <https://www.wikidata.org/wiki/Q6144380> .
+  gen:father <https://www.wikidata.org/wiki/Q6144380> . # James Townsend Oswald
   # oo 1810-09-21 Thomas Bruce, 7th Earl of Elgin and 11th Earl of Kincardine, 1766-07-20 - 1841-11-14, https://www.wikidata.org/wiki/Q335098
 
-# ----
+# ====
+#<https://www.wikidata.org/wiki/Q75479741>
+  # Sir John Blunt, 1st Baronet, 1665-07-24 - 1732-01-24
+  # 1st Baronet Blunt, of London [Great Britain] 1720-06-17
+  # son of Thomas Blunt
+  # and Isabella Blacke
+  # oo Elizabeth Court, d. 1707-03-22
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75479741> , <https://www.wikidata.org/wiki/Q75479746> ;
+	gen:startDate "1689-07-16" .
+  # oo Susannah Cradock, d. 1743-09-08, daughter of Richard Cradock
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75479741> , <https://www.wikidata.org/wiki/Q75479779> ;
+	gen:startDate "1713-12-22" .
+
+<https://www.wikidata.org/wiki/Q75479747>
+  # Sir Henry Blunt, 2nd Baronet, 1696-12-06 - 1759-10-12
+  gen:father <https://www.wikidata.org/wiki/Q75479741> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75479746> .
+  # oo Dorothy Nutt, d. 1756-10-12, daughter of William Nutt and Dorothy Hawkins
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75479747> , <https://www.wikidata.org/wiki/Q75479797> ;
+	gen:startDate "1724-03" .
+
 <https://www.wikidata.org/wiki/Q75479777>
   # Sir Charles William Blunt, 3rd Baronet, 1731-09-04 - 1802-08-29
-  gen:father <https://www.wikidata.org/wiki/Q75479747> ; # Sir Henry Blunt, 2nd Baronet
-  gen:mother <https://www.wikidata.org/wiki/Q75479797> . # Dorothy Nutt
+  gen:father <https://www.wikidata.org/wiki/Q75479747> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75479797> .
   # oo Elizabeth Peers, 1745~ - 1836-01-17, daughter of Richard Peers and Anna Sophia Symons
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75479777> , <https://www.wikidata.org/wiki/Q75484696> ;
@@ -804,7 +905,7 @@
   gen:father <https://www.wikidata.org/wiki/Q75479777> ;
   gen:mother <https://www.wikidata.org/wiki/Q75484696> .
   # oo 1789-03-11 Sir Charles Cockerell, 1st Baronet, 1755-02-18 – 1837-01-06, https://www.wikidata.org/wiki/Q17180551 (compton.ttl)
-<#Anna_Maria_Blunt>
+<https://www.wikidata.org/wiki/Q75484758>
   # Anna Maria Blunt, d. 1798-09-19
   gen:father <https://www.wikidata.org/wiki/Q75479777> ;
   gen:mother <https://www.wikidata.org/wiki/Q75484696> .
@@ -813,50 +914,173 @@
   # Sir Charles Richard Blunt, 4th Baronet, 1775-12-06 - 1840-02-29
   gen:father <https://www.wikidata.org/wiki/Q75479777> ;
   gen:mother <https://www.wikidata.org/wiki/Q75484696> .
-<#Lydia_Blunt>
+  # oo Sophia Baker, d. 1862-08-14, daughter of Richard Baker
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7526176> , <https://www.wikidata.org/wiki/Q75484703> ;
+	gen:startDate "1824-03-20" .
+<https://www.wikidata.org/wiki/Q75484755>
   # Lydia Blunt, d. 1851-02-23
   gen:father <https://www.wikidata.org/wiki/Q75479777> ;
   gen:mother <https://www.wikidata.org/wiki/Q75484696> .
-  # oo 1795-05-20 Sir Alexander Seton of Abercorn, 5th Baronet, 1772-05-04 - 1810-02-04, gordon.ttl#Sir_Alexander_Seton_of_Abercorn,_5th_Baronet
+  # oo 1795-05-20 Sir Alexander Seton of Abercorn, 5th Baronet, 1772-05-04 - 1810-02-04, https://www.wikidata.org/wiki/Q76164028 (gordon.ttl)
+<https://www.wikidata.org/wiki/Q75484710>
+  # Richard Charles Blunt, 1777-01-02 - 1846-01-16
+  gen:father <https://www.wikidata.org/wiki/Q75479777> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75484696> .
+  # oo Eliza Forbes Mercer, d. 1871-04-23, daughter of William Forbes Mercer
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75484710> , <https://www.wikidata.org/wiki/Q75484711> ;
+	gen:startDate "1809-11-15" .
+<https://www.wikidata.org/wiki/Q75484719>
+  # William Blunt, 1780-12-07 - 1860-08-05
+  gen:father <https://www.wikidata.org/wiki/Q75479777> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75484696> .
+  # oo Eliza Richards, daughter of Goddard Richards
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75484719> , <https://www.wikidata.org/wiki/Q75484721> ;
+	gen:startDate "1822-01-23" .
+
+<https://www.wikidata.org/wiki/Q75484709>
+  # Sir Walter Blunt, 5th Baronet, 1826-03-16 - 1847-07-13
+  gen:father <https://www.wikidata.org/wiki/Q7526176> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75484703> .
+<https://www.wikidata.org/wiki/Q75484716>
+  # Sir Charles William Blunt, 6th Baronet, 1810-11-22 - 1890-11-05
+  gen:father <https://www.wikidata.org/wiki/Q75484710> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75484711> .
+<https://www.wikidata.org/wiki/Q75484724>
+  # Sir William Blunt, 7th Baronet, 1826-06-25 - 1902-12-27
+  gen:father <https://www.wikidata.org/wiki/Q75484719> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75484721> .
+  # oo Margaret Scott, d. 1854, daughter of Captain unknown Scott
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75484724> , <https://www.wikidata.org/wiki/Q75484725> ;
+	gen:startDate "1852" .
+  # oo Henrietta Georgina Josephine Jeston, d. 1892-02-06, daughter of Rev. Robert Green Jeston and Louisa Guise
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75484724> , <https://www.wikidata.org/wiki/Q75484729> ;
+	gen:startDate "1857-11-03" .
+<https://www.wikidata.org/wiki/Q75484733>
+  # Sir John Harvey Blunt, 8th Baronet, 1839-01-01 - 1922-01-26
+  gen:father <https://www.wikidata.org/wiki/Q75484719> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75484721> .
+  # oo Susan Hoad, d. 1917-04-01, daughter of Philip Hoad
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75484733> , <https://www.wikidata.org/wiki/Q75484761> ;
+	gen:startDate "1870-04-28" .
+
+<https://www.wikidata.org/wiki/Q75484765>
+  # Sir John Harvey Blunt, 9th Baronet, 1872-07-30 - 1938-07-11
+  gen:father <https://www.wikidata.org/wiki/Q75484733> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75484761> .
+  # oo Maud Julia Goldsmid-Stern-Salomons, d. 1935-12-24
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75484765> , <https://www.wikidata.org/wiki/Q75484818> ;
+	gen:startDate "1906-03-22" .
+
+<https://www.wikidata.org/wiki/Q75484822>
+  # Sir John Lionel Reginald Blunt, 10th Baronet, 1908-05-28 - 1969-09-29
+  gen:father <https://www.wikidata.org/wiki/Q75484765> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75484818> .
+  # oo Heather Alice Harrison-Broadley, b. 1913, daughter of John Broadley Harrison-Broadley
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75484822> , <https://www.wikidata.org/wiki/Q75484823> ;
+	gen:startDate "1932-03-31" ;
+	gen:divorceDate "1941" .
+  # oo Margaret Hunam Redhead, 1898 - 1995-09-01 (wemyss.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75484822> , <https://www.wikidata.org/wiki/Q75339497> ;
+	gen:startDate "1947" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q75561422>
+  # Levy Salomons, 1774-01-16 - 1843-01
+  # oo Matilda de Metz, d. 1838-02-19
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75561422> , <https://www.wikidata.org/wiki/Q75561425> ;
+	gen:startDate "1795" .
+
+<https://www.wikidata.org/wiki/Q7184341>
+  # Philip Salomons, 1796 - 1867
+  gen:father <https://www.wikidata.org/wiki/Q75561422> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75561425> .
+  # oo Emma Montefiore, 1833 - 1859-06-02, daughter of Jacob Montefiore
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7184341> , <https://www.wikidata.org/wiki/Q75561426> ;
+	gen:startDate "1850-04-10" .
+<https://www.wikidata.org/wiki/Q75561422>
+  # Sir David Salomons, 1st Baronet, 1797-11-22 - 1873-07-18
+  # Lord Mayor of London 1855-11-10 - 1856-11-08
+  # 1st Baronet Salomons [U.K.] 1869-10-26
+  gen:father <https://www.wikidata.org/wiki/Q75561422> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75561425> .
+  # oo Jeannette Cohen, 1803 - 1867-03, daughter of Solomon Cohen and Hannah Samuel
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75561422> , <https://www.wikidata.org/wiki/Q76204523> ;
+	gen:startDate "1825-04-18" .
+  # oo Cecily Samuel, daughter of Samuel Moses Samuel
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75561422> , <https://www.wikidata.org/wiki/Q76204525> ;
+	gen:startDate "1872" .
+
+<https://www.wikidata.org/wiki/Q5236649>
+  # Sir David Lionel Goldsmid-Stern-Salomons, 2nd Baronet, 1851-01-28 - 1925-04-19
+  gen:father <https://www.wikidata.org/wiki/Q7184341> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75561426> .
+  # oo Laura de Stern, daughter of Hermann de Stern and Julia Goldsmid
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q5236649> , <https://www.wikidata.org/wiki/Q75561430> ;
+	gen:startDate "1882-07-20" .
+
+<https://www.wikidata.org/wiki/Q75484818>
+  # Maud Julia Goldsmid-Stern-Salomons, d. 1935-12-24
+  gen:father <https://www.wikidata.org/wiki/Q5236649> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75561430> .
+  # oo 1906-03-22 Sir John Harvey Blunt, 9th Baronet, 1872-07-30 - 1938-07-11, https://www.wikidata.org/wiki/Q75484765
+
+# ====
 
 # ----
 #<https://www.wikidata.org/wiki/Q7183344>
   # Sir Philip Charles Henderson Calderwood Durham, 1763-07-29 – 1845-04-02
   # oo Lady Charlotte Martha Bruce, 1771-05-28 - 1816-02-21
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q7183344> , <#Lady_Charlotte_Martha_Bruce> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q7183344> , <https://www.wikidata.org/wiki/Q75654191> ;
 	gen:startDate "1797-03-28" .
 
 # ----
-#<#John_Grant>
-  # 1828-03-14 John Grant, 1798-06-13 - 1873-01-20
+#<https://www.wikidata.org/wiki/Q52222252>
+  # John Grant, 1798-06-13 - 1873-01-20
   # son of Francis Grant
   # and Anne Oliphant
   # oo Lady Lucy Bruce, 1806 - 1881-09-04
   []
-    gen:spouse <#John_Grant> , <#Lady_Lucy_Bruce> .
+    gen:spouse <https://www.wikidata.org/wiki/Q52222252> , <https://www.wikidata.org/wiki/Q75263963> ;
+	gen:startDate "1828-03-14" .
 
 <https://www.wikidata.org/wiki/Q75313936>
   # Lucy Grant, 1836-10-05 - 1875-01-16
-  gen:father <#John_Grant> ;
-  gen:mother <#Lady_Lucy_Bruce> .
+  gen:father <https://www.wikidata.org/wiki/Q52222252> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75263963> .
   # oo 1866-09-27 Rev. Hon. Charles William Alexander Feilding, 1833-04-28 - 1893-11-30, https://www.wikidata.org/wiki/Q75313934
 
 # ----
-#<#Thomas_Thornhill>
+#<https://www.wikidata.org/wiki/Q75340779>
   # Thomas Thornhill
   # oo Martha Mary Anne Waddington
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75340779> , <https://www.wikidata.org/wiki/Q76047384> .
 
-<#Sarah_Caroline_Thornhill>
+<https://www.wikidata.org/wiki/Q75654224>
   # Sarah Caroline Thornhill, 1836~ - 1913-07-22
-  gen:father <#Thomas_Thornhill> .
-  # and Martha Mary Anne Waddington
+  gen:father <https://www.wikidata.org/wiki/Q75340779> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76047384> .
   # oo 1863-11-19 Hon. Thomas Charles Bruce, 1825-02-15 - 1890-11-23, https://www.wikidata.org/wiki/Q7788337
 <https://www.wikidata.org/wiki/Q7794445>
   # Sir Thomas Thornhill, 1st Baronet, 1837-03-26 – 1900-04-02
-  # 1st Baronet Thornhill, of Riddlesworth Hall, Riddlesworth, co. Norfolk and of Pakenham Lodge, Pakenham, co. Suffolk 1885-08-11
-  gen:father <#Thomas_Thornhill> .
-  # and Martha Mary Anne Waddington
+  # 1st Baronet Thornhill, of Riddlesworth Hall, Riddlesworth, co. Norfolk and of Pakenham Lodge, Pakenham, co. Suffolk [U.K.] 1885-08-11
+  gen:father <https://www.wikidata.org/wiki/Q75340779> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76047384> .
   # oo Katherine Isabella Hodgson, daughter of Richard Hodgson-Huntley and Catherine Moneypenny Compton
 
 # ----
@@ -869,8 +1093,8 @@
 
 <https://www.wikidata.org/wiki/Q44599>
   # Edward Thurlow, 1st Baron Thurlow of Thurlow, 1731-12-09 - 1806-09-12
-  # 1st Baron Thurlow, of Ashfield, co. Suffolk 1778-06-03
-  # 1st Baron Thurlow of Thurlow, co. Suffolk 1792-06-12
+  # 1st Baron Thurlow, of Ashfield, co. Suffolk [Great Britain] 1778-06-03
+  # 1st Baron Thurlow of Thurlow, co. Suffolk [Great Britain] 1792-06-12
   gen:father <https://www.wikidata.org/wiki/Q76191678> ;
   gen:mother <https://www.wikidata.org/wiki/Q76191681> .
 <https://www.wikidata.org/wiki/Q7794465>
@@ -894,7 +1118,7 @@
   # Maria Thurlow, d. 1816-02-21
   gen:father <https://www.wikidata.org/wiki/Q44599> .
   # and Mrs. ??? Hervey
-  # oo 1801 Sir David Cunynghame of Milncraig, 5th Baronet, 1769-08-14 - 1854-05-19, https://www.wikidata.org/wiki/Q75349957
+  # oo 1801 Sir David Cunynghame of Milncraig, 5th Baronet, 1769-08-14 - 1854-05-19, https://www.wikidata.org/wiki/Q75349957 (dalrymple.ttl)
 <https://www.wikidata.org/wiki/Q18528191>
   # Edward Hovell-Thurlow, 2nd Baron Thurlow of Thurlow, 1781-06-10 - 1829-06-04
   # Edward Thurlow
@@ -916,6 +1140,10 @@
     gen:spouse <https://www.wikidata.org/wiki/Q76191829> , <https://www.wikidata.org/wiki/Q76191832> ;
 	gen:startDate "1836-11-08" .
 
+<https://www.wikidata.org/wiki/Q76191834>
+  # Edward Thomas Hovell-Thurlow, 4th Baron Thurlow of Thurlow, 1837-10-25 - 1874-04-22
+  gen:father <https://www.wikidata.org/wiki/Q76191829> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76191832> .
 <https://www.wikidata.org/wiki/Q7790838>
   # Thomas John Hovell-Thurlow-Cumming-Bruce, 5th Baron Thurlow of Thurlow, 1838-12-05 – 1916-03-21
   # Thomas John Hovell-Thurlow
@@ -953,29 +1181,6 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7370733> , <https://www.wikidata.org/wiki/Q75673078> ;
 	gen:startDate "1955-08-04" .
-# ----
-<https://www.wikidata.org/wiki/Q75349957>
-  # Sir David Cunynghame of Milncraig, 5th Baronet, 1769-08-14 - 1854-05-19
-  gen:father <https://www.wikidata.org/wiki/Q26455709> ; # Sir William Augustus Cunynghame of Milncraig, 4th Baronet
-  gen:mother <https://www.wikidata.org/wiki/Q75781261> . # Frances Myrton
-  # oo Maria Thurlow, d. 1816-02-21
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q75349957> , <https://www.wikidata.org/wiki/Q75781304> ;
-	gen:startDate "1801" .
-
-<https://www.wikidata.org/wiki/Q75284290>
-  # Mary Frances Thurlow Cunynghame, d. 1851-09-12
-  gen:father <https://www.wikidata.org/wiki/Q75349957> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75781304> .
-  # oo 1828-06-25 Hon. Augustus Frederick Ellis, 1800-09-17 - 1841-08-16, https://www.wikidata.org/wiki/Q19653698 (hervey.ttl)
-
-# ----
-#<https://www.wikidata.org/wiki/Q75283536>
-  # Gertrude Lilian Sherbrooke, d. 1971-02-13
-  # daughter of William Sherbrooke
-  # and Margaret McDonald Graham
-  # oo 1904-06-01 Frederick Charles Ashley Ogilvy, 1866-08-09 - 1909-12-18, https://www.wikidata.org/wiki/Q75283539
-  # oo 1913-11-19 Victor Alexander Bruce, 9th Earl of Elgin and 13th Earl of Kincardine, 1849-05-16 - 1917-01-18, https://www.wikidata.org/wiki/Q336771
 
 # ----
 #<https://www.wikidata.org/wiki/Q5717662>
@@ -987,6 +1192,14 @@
     gen:spouse <https://www.wikidata.org/wiki/Q5717662> , <https://www.wikidata.org/wiki/Q75281983> ;
 	gen:startDate "1898-09-22" .
 
+<https://www.wikidata.org/wiki/Q27995762>
+  # Michael James Babington Smith, 1901-03-20 - 1984-10-26
+  gen:father <https://www.wikidata.org/wiki/Q5717662> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75281983> .
+  # oo Lady Jean Mary Meade-Fetherstonhaugh, 1917-05-31 - 2001-11-22 (meade.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q27995762> , <https://www.wikidata.org/wiki/Q75281981> ;
+	gen:startDate "1943-09-28" .
 <https://www.wikidata.org/wiki/Q75789630>
   # Lucy Elisabeth Babington Smith, b. 1910
   gen:father <https://www.wikidata.org/wiki/Q5717662> ;

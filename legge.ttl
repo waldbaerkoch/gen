@@ -4,10 +4,26 @@
 @prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
-#<https://www.wikidata.org/wiki/Q8014452>
+#<https://www.wikidata.org/wiki/Q75290629>
+  # William Legge
+  # son of Thomas Legge
+  # and Margaret Blount
+  # oo Anne Bermingham, 1540b - (dillon.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75290629> , <https://www.wikidata.org/wiki/Q75290628> .
+
+<https://www.wikidata.org/wiki/Q75424179>
+  # Edward Legge, 1580~ - 1616
+  gen:father <https://www.wikidata.org/wiki/Q75290629> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75290628> .
+  # oo Mary Walsh, daughter of Percy Walsh
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75424179> , <https://www.wikidata.org/wiki/Q75612603> .
+
+<https://www.wikidata.org/wiki/Q8014452>
   # William Legge, 1608 – 1670-10-13
-  # son of Edward Legge, d. 1616
-  # and Mary Walsh, daughter of Percy Walsh
+  gen:father <https://www.wikidata.org/wiki/Q75424179> ;
+  gen:mother <> .
   # oo Elizabeth Washington, 1616~ – 1688
   []
     gen:spouse <https://www.wikidata.org/wiki/Q8014452> , <villiers.ttl#Elizabeth_Washington> ;
@@ -15,7 +31,7 @@
 
 <https://www.wikidata.org/wiki/Q3760572>
   # George Legge, 1st Baron Dartmouth, 1647 - 1691-10-25
-  # 1st Baron Dartmouth, of Dartmouth, Devon 1682-12-02
+  # 1st Baron Dartmouth, of Dartmouth, Devon [England] 1682-12-02
   gen:father <https://www.wikidata.org/wiki/Q8014452> ;
   gen:mother <villiers.ttl#Elizabeth_Washington> .
   # oo Barbara Archibald, 1650~ - 1718-01-28, daughter of Sir Henry Archibald
@@ -23,7 +39,7 @@
     gen:spouse <https://www.wikidata.org/wiki/Q3760572> , <#Barbara_Archibald> ;
 	gen:startDate "1667-11~" .
 <https://www.wikidata.org/wiki/Q53627073>
-  # william Legge, 1650~ - 1697~
+  # William Legge, 1650~ - 1697~
   gen:father <https://www.wikidata.org/wiki/Q8014452> ;
   gen:mother <villiers.ttl#Elizabeth_Washington> .
 
@@ -34,19 +50,19 @@
   # oo 1685 Philip Musgrave, d. 1689, https://www.wikidata.org/wiki/Q76084278
 <https://www.wikidata.org/wiki/Q9374853>
   # William Legge, 1st Earl of Dartmouth, 1672-10-14 - 1750-12-15
-  # 2nd Baron Dartmouth, of Dartmouth, Devon 1691-10-25
-  # 1st Viscount Lewisham, of co. Kent, 1st Earl of Dartmouth 1711-09-05
+  # 2nd Baron Dartmouth, of Dartmouth, Devon [England] 1691-10-25
+  # 1st Earl of Dartmouth, 1st Viscount Lewisham, of co. Kent [Great Britain] 1711-09-05
   gen:father <https://www.wikidata.org/wiki/Q3760572> ;
   gen:mother <#Barbara_Archibald> .
   # oo Lady Anne Finch, 1680~ - 1751-11-30
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q9374853> , <finch.ttl#Lady_Anne_Finch_(died_1751)> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q9374853> , <https://www.wikidata.org/wiki/Q75273438> ;
 	gen:startDate "1700-07-18" .
 
 <https://www.wikidata.org/wiki/Q75273441>
   # George Legge, Viscount Lewisham, 1705~ - 1732-08-29
   gen:father <https://www.wikidata.org/wiki/Q9374853> ;
-  gen:mother <finch.ttl#Lady_Anne_Finch_(died_1751)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75273438> .
   # oo Elizabeth Kaye, 1706-02-17b - 1745-04-21 (lister.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75273441> , <https://www.wikidata.org/wiki/Q75269350> ;
@@ -55,7 +71,7 @@
   owl:sameAs <https://www.wikidata.org/wiki/Q75273449> ;
   # Hon. Heneage Legge, 1704-03-12b - 1759-08-29
   gen:father <https://www.wikidata.org/wiki/Q9374853> ;
-  gen:mother <finch.ttl#Lady_Anne_Finch_(died_1751)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75273438> .
   # oo Catherine Fogg, d. 1759-11-12, daughter of Jonathan Fogg
   []
     gen:spouse <https://www.wikidata.org/wiki/Q18528215> , <https://www.wikidata.org/wiki/Q75273451> ;
@@ -63,17 +79,17 @@
 <https://www.wikidata.org/wiki/Q75273445>
   # Lady Barbara Legge, 1709 - 1765-10-29
   gen:father <https://www.wikidata.org/wiki/Q9374853> ;
-  gen:mother <finch.ttl#Lady_Anne_Finch_(died_1751)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75273438> .
   # oo 1724-07-27 Sir Walter Wagstaffe Bagot, 5th Baronet, 1702-08-03 - 1768-01-28, https://www.wikidata.org/wiki/Q7529360
 <#Lady_Anne_Legge>
   # Lady Anne Legge, d. 1740-07
   gen:father <https://www.wikidata.org/wiki/Q9374853> ;
-  gen:mother <finch.ttl#Lady_Anne_Finch_(died_1751)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75273438> .
   # oo 1739-10 Sir Lister Holte, of Aston Hall, 5th Baronet, 1720-04-26 - 1770-04-08, https://www.wikidata.org/wiki/Q28955323
 <https://www.wikidata.org/wiki/Q5718189>
   # Rt. Hon. Henry Bilson-Legge, 1708-05-29 - 1764-08-23
   gen:father <https://www.wikidata.org/wiki/Q9374853> ;
-  gen:mother <finch.ttl#Lady_Anne_Finch_(died_1751)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75273438> .
   # oo Mary Stawel, 1st Baroness Stawel of Somerton, 1726-01-27 - 1780-07-29
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5718189> , <https://www.wikidata.org/wiki/Q16199541> ;
@@ -81,7 +97,7 @@
 <https://www.wikidata.org/wiki/Q5344102>
   # Hon Edward Legge, 1710 – 1747-09-19
   gen:father <https://www.wikidata.org/wiki/Q9374853> ;
-  gen:mother <finch.ttl#Lady_Anne_Finch_(died_1751)> .
+  gen:mother <https://www.wikidata.org/wiki/Q75273438> .
 
 <https://www.wikidata.org/wiki/Q3568789>
   # William Legge, 2nd Earl of Dartmouth, 1731-06-20 – 1801-07-15
@@ -91,7 +107,7 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q3568789> , <#Frances_Catherine_Nicoll> ;
 	gen:startDate "1755-01-11" .
-<#Anne_Legge>
+<https://www.wikidata.org/wiki/Q75258143>
   # Hon. Anne Legge, d. 1786-11-12
   gen:father <https://www.wikidata.org/wiki/Q75273441> ;
   gen:mother <https://www.wikidata.org/wiki/Q75269350> .
@@ -107,7 +123,7 @@
   gen:mother <https://www.wikidata.org/wiki/Q16199541> .
   # oo Hon. Mary Curzon, 1760-02-11 - 1804-09-12
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q5718192> , <curzon.ttl#Mary_Curzon> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q5718192> , <https://www.wikidata.org/wiki/Q75273465> ;
 	gen:startDate "1779-07-01" .
 
 <https://www.wikidata.org/wiki/Q5541651>
@@ -141,11 +157,11 @@
   # Lady Charlotte Legge, 1774-10-05 - 1848-11-05
   gen:father <https://www.wikidata.org/wiki/Q3568789> ;
   gen:mother <#Frances_Catherine_Nicoll> .
-  # oo 1795-09-24 Charles Duncombe, 1st Baron Feversham of Duncombe Park, 1764-12-05 - 1841-07-16, https://www.wikidata.org/wiki/Q5077002 (fane.ttl)
-<#Mary_Legge_(died_1864)>
+  # oo 1795-09-24 Charles Duncombe, 1st Baron Feversham of Duncombe Park, 1764-12-05 - 1841-07-16, https://www.wikidata.org/wiki/Q5077002
+<https://www.wikidata.org/wiki/Q75273466>
   # Hon. Mary Legge, 1780 - 1864-10-21
   gen:father <https://www.wikidata.org/wiki/Q5718192> ;
-  gen:mother <curzon.ttl#Mary_Curzon> .
+  gen:mother <https://www.wikidata.org/wiki/Q75273465> .
   # oo 1803-08-11 John Dutton, 2nd Baron Sherborne, 1779-06-24 - 1862-10-18, https://www.wikidata.org/wiki/Q6230556 (coke.ttl)
 
 <https://www.wikidata.org/wiki/Q7613834>
@@ -156,7 +172,7 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7613834> , <talbot.ttl#Lady_Frances_Charlotte_Chetwynd-Talbot> ;
 	gen:startDate "1820-04-05" .
-  # oo Hon. Frances Barrington, 1802-10-20 - 1849-08-12 (cromwell.ttl)
+  # oo Hon. Frances Barrington, 1802-10-20 - 1849-08-12
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7613834> , <https://www.wikidata.org/wiki/Q75253372> ;
 	gen:startDate "1828-10-25" .
@@ -212,14 +228,14 @@
   # Charlotte Anne Legge, 1799-06-05 - 1856-06-21
   gen:father <https://www.wikidata.org/wiki/Q39079010> ;
   gen:mother <https://www.wikidata.org/wiki/Q75273476> .
-  # oo 1825-12-15 Rev. Hon. Arthur Philip Perceval, 1799-11-22 - 1853-06-11, https://www.wikidata.org/wiki/Q4799970 (cecil.ttl)
-<#Henry_Legge_(died_1879)>
+  # oo 1825-12-15 Rev. Hon. Arthur Philip Perceval, 1799-11-22 - 1853-06-11, https://www.wikidata.org/wiki/Q4799970
+<https://www.wikidata.org/wiki/Q75612637>
   # Rev. Henry Legge, 1803-06-29 - 1879-11-08
   gen:father <https://www.wikidata.org/wiki/Q39079010> ;
   gen:mother <https://www.wikidata.org/wiki/Q75273476> .
   # Elizabeth Louisa Douglas, 1803-07-07 - 1840-10-28
   []
-    gen:spouse <#Henry_Legge_(died_1879)> , <douglas.ttl#Elizabeth_Louisa_Douglas> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75612637> , <https://www.wikidata.org/wiki/Q75612638> ;
 	gen:startDate "1830-05-04" .
 
 <https://www.wikidata.org/wiki/Q7613861>
@@ -238,13 +254,13 @@
   []
     gen:spouse <#George_Barrington_Legge> , <#Sophia_Frances_Margaret_Levett> ;
 	gen:startDate "1860-10-09" .
-<#Edward_Henry_Legge>
-  # Hon. Edward Henry Legge, 1834-04-23 1900-08-16
+<https://www.wikidata.org/wiki/Q75612697>
+  # Hon. Edward Henry Legge, 1834-04-23 - 1900-08-16
   gen:father <https://www.wikidata.org/wiki/Q7613834> ;
   gen:mother <https://www.wikidata.org/wiki/Q75253372> .
-  # oo Cordelia Twysden Molesworth, d. 1915-03-19, daughter of Walter Hele Molesworth and Frances Mary Twysden
+  # oo Cordelia Twysden Molesworth, 1855-01-07 - 1915-03-19 (herbert.ttl)
   []
-    gen:spouse <#Edward_Henry_Legge> , <#Cordelia_Twysden_Molesworth> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75612697> , <https://www.wikidata.org/wiki/Q75612698> ;
 	gen:startDate "1873-01-15" .
 <https://www.wikidata.org/wiki/Q4821478>
   # Rt. Rev. Hon. Augustus Legge, 1839-11-28 - 1913-03-15
@@ -266,7 +282,7 @@
   gen:mother <https://www.wikidata.org/wiki/Q75253372> .
   # oo Mary Garnier, 1836-02-26 - 1896-12-13
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q47516729> , <#Mary_Garnier> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q47516729> , <https://www.wikidata.org/wiki/Q75354808> ;
 	gen:startDate "1868-06-02" .
 <https://www.wikidata.org/wiki/Q5714134>
   # Hon. Heneage Legge, 1845-07-03 - 1911-11-01
@@ -276,17 +292,17 @@
   # Rev. Alfred Arthur Kaye Legge, 1839-07-31 - 1906-01-22
   gen:father <https://www.wikidata.org/wiki/Q4799482> ;
   gen:mother <#Caroline_Bouwens> .
-  # oo Lydia Annie Georgiana Lambart, 1846-09-14 - 1931-11-25 (keppel.ttl)
+  # oo Lydia Annie Georgiana Lambart, 1846-09-14 - 1931-11-25
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75554562> , <https://www.wikidata.org/wiki/Q75554559> ;
 	gen:startDate "1888-10-09" .
-<#Augustus_George_Legge>
+<https://www.wikidata.org/wiki/Q75390459>
   # Rev. Augustus George Legge, 1835-01-20 - 1906-01-09
-  gen:father <#Henry_Legge_(died_1879)> ;
-  gen:mother <douglas.ttl#Elizabeth_Louisa_Douglas> .
+  gen:father <https://www.wikidata.org/wiki/Q75612637> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75612638> .
   # oo Alice Mary Greenwood, 1840 - 1885-02-21, daughter of John Greenwood and Fanny Harriet Collyns
   []
-    gen:spouse <#Augustus_George_Legge> , <#Alice_Mary_Greenwood> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75390459> , <https://www.wikidata.org/wiki/Q75612642> ;
 	gen:startDate "1864-08-25" .
 
 <https://www.wikidata.org/wiki/Q8014457>
@@ -295,36 +311,41 @@
   gen:mother <https://www.wikidata.org/wiki/Q18526579> .
   # oo Lady Mary Coke, 1849-09-18 - 1929-12-28
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q8014457> , <coke.ttl#Lady_Mary_Coke> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q8014457> , <https://www.wikidata.org/wiki/Q75253376> ;
 	gen:startDate "1879-12-18" .
 <https://www.wikidata.org/wiki/Q5724827>
   # Hon. Sir Henry Charles Legge, 1852-11-04 – 1924-06-20
   gen:father <https://www.wikidata.org/wiki/Q7613861> ;
   gen:mother <https://www.wikidata.org/wiki/Q18526579> .
-  # oo Amy Gwendoline Lambart, 1852-08-10 - 1927-01-28 (paget.ttl)
+  # oo Amy Gwendoline Lambart, 1852-08-10 - 1927-01-28
   []
     gen:spouse <https://www.wikidata.org/wiki/Q5724827> , <https://www.wikidata.org/wiki/Q75285911> ;
 	gen:startDate "1884-10-25" .
-<#Arthur_Edward_John_Legge>
+<https://www.wikidata.org/wiki/Q16943847>
   # Arthur Edward John Legge, 1863-05-25 - 1934-05-21
   gen:father <#George_Barrington_Legge> ;
   gen:mother <#Sophia_Frances_Margaret_Levett> .
-  # oo Lucy Isabel Hogg, 1867 - 1940-10-07
+  # oo Lucy Isabel Hogg, 1867 - 1940-10-07 (douglas.ttl)
   []
-    gen:spouse <#Arthur_Edward_John_Legge> , <gordon.ttl#Lucy_Isabel_Hogg> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q16943847> , <https://www.wikidata.org/wiki/Q75612668> ;
 	gen:startDate "1918-08-23" .
 <#Walter_Traversari_Legge>
   # Walter Traversari Legge, 1874-10-17 - 1949-08-19
-  gen:father <#Edward_Henry_Legge> ;
-  gen:mother <#Cordelia_Twysden_Molesworth> .
+  gen:father <https://www.wikidata.org/wiki/Q75612697> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75612698> .
   # oo Jane Agnes Maud Guinness, 1867 - 1953-10-19
   []
     gen:spouse <#Walter_Traversari_Legge> , <guinness.ttl#Jane_Agnes_Maud_Guinness> ;
 	gen:startDate "1905-07-18" .
+<https://www.wikidata.org/wiki/Q75612716>
+  # Lois Marjorie Legge, 1881-11-18 - 1961-03-09
+  gen:father <https://www.wikidata.org/wiki/Q75612697> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75612698> .
+  # oo 1906-11-07 Ernest Wriothesley Denny, 1872-02-05 - 1949-10-20, https://www.wikidata.org/wiki/Q75612717 (douglas.ttl)
 <#John_Douglas_Legge>
   # John Douglas Legge, 1886-12-05 - 1954-12-30
-  gen:father <#Edward_Henry_Legge> ;
-  gen:mother <#Cordelia_Twysden_Molesworth> .
+  gen:father <https://www.wikidata.org/wiki/Q75612697> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75612698> .
   # oo Haroldine Peck, d. 1970-10-30, daughter of Harold S. Peck
   []
     gen:spouse <#John_Douglas_Legge> , <#Haroldine_Peck> ;
@@ -337,10 +358,18 @@
   []
     gen:spouse <#Francis_Augustus_Legge> , <#Mabel_Clara_Arden_Lucena> ;
 	gen:startDate "1909-06-03" .
+<https://www.wikidata.org/wiki/Q18639435>
+  # William Kaye Legge, 1869-06-13 - 1946-03-29
+  gen:father <https://www.wikidata.org/wiki/Q47516729> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75354808> .
+  # oo Constance Adeline Palmer, d. 1964-01-01, daughter of Hon. James David Palmer
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q18639435> , <https://www.wikidata.org/wiki/Q75354812> ;
+	gen:startDate "1902-06-09" .
 <#John_Augustus_Legge>
   # John Augustus Legge, 1871-07-31 - 1945-03-21
   gen:father <https://www.wikidata.org/wiki/Q47516729> ;
-  gen:mother <#Mary_Garnier> .
+  gen:mother <https://www.wikidata.org/wiki/Q75354808> .
   # oo Grace Margaret Dunsmure, d. 1957-01-28, daughter of Alexander Henderson Dunsmure
   []
     gen:spouse <#John_Augustus_Legge> , <#Grace_Margaret_Dunsmure> ;
@@ -348,17 +377,17 @@
 <https://www.wikidata.org/wiki/Q18911367>
   # Francis Cecil Legge, 1873-09-14 - 1940-10-24
   gen:father <https://www.wikidata.org/wiki/Q47516729> ;
-  gen:mother <#Mary_Garnier> .
-<#Alice_Georgina_Legge>
+  gen:mother <https://www.wikidata.org/wiki/Q75354808> .
+<https://www.wikidata.org/wiki/Q75390457>
   # Alice Georgina Legge, 1875-06-10 - 1958-02-01
-  gen:father <#Augustus_George_Legge> ;
-  gen:mother <#Alice_Mary_Greenwood> .
-  # oo 1923-04-12 Rev. William Arthur Douglas-Hamilton, 1864-09-06 - 1948-04-17, douglas.ttl#William_Arthur_Douglas-Hamilton
+  gen:father <https://www.wikidata.org/wiki/Q75390459> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75612642> .
+  # oo 1923-04-12 Rev. William Arthur Douglas-Hamilton, 1864-09-06 - 1948-04-17, https://www.wikidata.org/wiki/Q75390456 (douglas.ttl)
 
 <https://www.wikidata.org/wiki/Q8014459>
   # William Legge, 7th Earl of Dartmouth, 1881-02-22 - 1958-02-28
   gen:father <https://www.wikidata.org/wiki/Q8014457> ;
-  gen:mother <coke.ttl#Lady_Mary_Coke> .
+  gen:mother <https://www.wikidata.org/wiki/Q75253376> .
   # oo Lady Ruperta Wynn-Carington, 1883-07-19 - 1963-06-26 (smith.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q8014459> , <https://www.wikidata.org/wiki/Q75257372> ;
@@ -366,16 +395,16 @@
 <#Lady_Dorothy_Legge>
   # Lady Dorothy Legge, 1883-06-24 - 1974-07-28
   gen:father <https://www.wikidata.org/wiki/Q8014457> ;
-  gen:mother <coke.ttl#Lady_Mary_Coke> .
+  gen:mother <https://www.wikidata.org/wiki/Q75253376> .
   # oo 1907-10-03 Francis Hugo Lindley Meynell, 1880-04-14 - 1941-12-16, grey.ttl#Francis_Hugo_Lindley_Meynell
 <https://www.wikidata.org/wiki/Q16022903>
   # Lady Joan Margaret Legge, 1885-02-21 - 1939-07-04
   gen:father <https://www.wikidata.org/wiki/Q8014457> ;
-  gen:mother <coke.ttl#Lady_Mary_Coke> .
+  gen:mother <https://www.wikidata.org/wiki/Q75253376> .
 <https://www.wikidata.org/wiki/Q7613796>
   # Humphry Legge, 8th Earl of Dartmouth, 1888-03-14 – 1962-10-16
   gen:father <https://www.wikidata.org/wiki/Q8014457> ;
-  gen:mother <coke.ttl#Lady_Mary_Coke> .
+  gen:mother <https://www.wikidata.org/wiki/Q75253376> .
   # oo Roma Ernestine Horlick, 1903-11-25 - 2003-08-18
   []
     gen:spouse <https://www.wikidata.org/wiki/Q7613796> , <#Roma_Ernestine_Horlick> ;
@@ -406,13 +435,26 @@
   gen:father <#Francis_Augustus_Legge> ;
   gen:mother <#Mabel_Clara_Arden_Lucena> .
   # oo 1940-04-04 Philip Lewis, d. 1968, howard.ttl#Philip_Lewis
-<#David_Alexander_Keppel_Legge>
+<https://www.wikidata.org/wiki/Q75354823>
+  # Peter Legge, 1910-01-28 - 2000-03
+  gen:father <https://www.wikidata.org/wiki/Q18639435> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75354812> .
+  # oo Mary Claire Dwyer, daughter of William Dwyer
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75354823> , <https://www.wikidata.org/wiki/Q75354824> ;
+	gen:startDate "1937-12-14" ;
+	gen:divorceDate "1953" .
+  # oo Violet Bertha Wallace, daughter of George Wallace
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75354823> , <https://www.wikidata.org/wiki/Q75354830> ;
+	gen:startDate "1955-12-31" .
+<https://www.wikidata.org/wiki/Q75354842>
   # David Alexander Keppel Legge, 1916-01-07 - 2001-04-01
   gen:father <#John_Augustus_Legge> ;
   gen:mother <#Grace_Margaret_Dunsmure> .
   # oo Patria Hornung, 1919 - 2014-06-01, daughter of Charles Bernard Raphael Hornung and Olive Phillpotts
   []
-    gen:spouse <#David_Alexander_Keppel_Legge> , <#Patria_Hornung> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q75354842> , <https://www.wikidata.org/wiki/Q75354844> ;
 	gen:startDate "1944-12-02" .
 
 <https://www.wikidata.org/wiki/Q75340091>
@@ -424,13 +466,13 @@
   # Lady Elizabeth Legge, 1908-03-05 - 2000-11-30
   gen:father <https://www.wikidata.org/wiki/Q8014459> ;
   gen:mother <https://www.wikidata.org/wiki/Q75257372> .
-  # oo 1931-10-31 Ronald Lambert Basset, 1898 - 1972, coke.ttl#Ronald_Lambert_Basset
-<#Lady_Diana_Legge>
+  # oo 1931-10-31 Ronald Lambert Basset, 1898-11-20 - 1972, https://www.wikidata.org/wiki/Q75340087
+<https://www.wikidata.org/wiki/Q75278743>
   # Lady Diana Legge, 1910-11-14 - 1970-02-25
   gen:father <https://www.wikidata.org/wiki/Q8014459> ;
   gen:mother <https://www.wikidata.org/wiki/Q75257372> .
-  # oo 1937-09-27 Hon. John Hamilton-Russell, 1911-04-22 - 1943-08-19, hamilton.ttl#John_Hamilton-Russell
-  # oo 1946-06-01 Brigadier Adrian Lewis Matthews, d. 1976-10-28, son of Major Barbran Henry Matthews
+  # oo 1937-09-27 Hon. John Hamilton-Russell, 1911-04-22 - 1943-08-19, https://www.wikidata.org/wiki/Q75278742 (hamilton.ttl)
+  # oo 1946-06-01 Adrian Lewis Matthews, d. 1976-10-28, https://www.wikidata.org/wiki/Q75278744
 <https://www.wikidata.org/wiki/Q75311766>
   # Lady Josceline Gabrielle Legge, 1918-05-22 - 1995-06-19
   gen:father <https://www.wikidata.org/wiki/Q8014459> ;
@@ -462,11 +504,19 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q13529968> , <https://www.wikidata.org/wiki/Q75612878> ;
 	gen:startDate "1938-06-10" .
-<#Anthea_Frances_Legge>
+<https://www.wikidata.org/wiki/Q75354828>
+  # David Anthony Legge, b. 1941-01-24
+  gen:father <https://www.wikidata.org/wiki/Q75354823> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75354824> .
+  # oo Mary Roden, daughter of Dr. D. Roden
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75354828> , <https://www.wikidata.org/wiki/Q75612819> ;
+	gen:startDate "1966" .
+<https://www.wikidata.org/wiki/Q75354848>
   # Anthea Frances Legge, b. 1946-05-15
-  gen:father <#David_Alexander_Keppel_Legge> ;
-  gen:mother <#Patria_Hornung> .
-  # oo Richard Charles Roundell, cavensish.ttl#Richard_Charles_Roundell
+  gen:father <https://www.wikidata.org/wiki/Q75354842> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75354844> .
+  # oo Richard Charles Roundell, https://www.wikidata.org/wiki/Q75410033
 
 <https://www.wikidata.org/wiki/Q336057>
   # William Legge, 10th Earl of Dartmouth, b. 1949-09-23
@@ -513,6 +563,14 @@
   []
     gen:spouse <#Heneage_Legge-Bourke> , <#Maria_Clara_de_Sá-Carneiro> ;
 	gen:startDate "1978" .
+<https://www.wikidata.org/wiki/Q75561726>
+  # Andrew William Legge, b. 1976-02-09
+  gen:father <https://www.wikidata.org/wiki/Q75354828> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75612819> .
+  # oo Hon. Serena Alexandra Brabazon, b. 1979-02-23
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75561726> , <https://www.wikidata.org/wiki/Q75306895> ;
+	gen:startDate "2013-05-18" .
 
 <#Gerald_Glen_Legge>
   # Gerald Glen Legge, b. 2005-03-19
@@ -543,12 +601,12 @@
   gen:father <#William_Nigel_Henry_Legge-Bourke> ;
   gen:mother <https://www.wikidata.org/wiki/Q7506041> .
   # oo 1999 Charles Pettifer
-<#Zara_Victoria_Legge-Bourke>
+<https://www.wikidata.org/wiki/Q75612892>
   # Zara Victoria Legge-Bourke, b. 1966-05-26
   gen:father <#William_Nigel_Henry_Legge-Bourke> ;
   gen:mother <https://www.wikidata.org/wiki/Q7506041> .
-  # oo 1985 (div 1997) Richard Grosvenor Plunkett-Ernle-Erle-Drax, b. 1958-01-29, https://www.wikidata.org/wiki/Q302187
-  # oo 2003 Angus Charles Gordon Lennox, b. 1964-02-04, lennox.ttl#Angus_Charles_Gordon_Lennox
+  # oo 1985 (div 1997) Richard Grosvenor Plunkett-Ernle-Erle-Drax, b. 1958-01-29, https://www.wikidata.org/wiki/Q302187 (plunkett.ttl)
+  # oo 2003 Angus Charles Gordon Lennox, b. 1964-02-04, https://www.wikidata.org/wiki/Q75347847 (lennox.ttl)
 <https://www.wikidata.org/wiki/Q5354320>
   # Eleanor Jean Maria Legge-Bourke, b. 1980/1981-08-01
   gen:father <#Heneage_Legge-Bourke> ;
@@ -598,7 +656,7 @@
   # Sir John Chardin Musgrave, 7th Baronet, 1757-01-15 - 1806-07-24
   gen:father <https://www.wikidata.org/wiki/Q16844278> ;
   gen:mother <https://www.wikidata.org/wiki/Q75274166> .
-  # oo Mary Filmer, 1761-03-08 - 1838-01-09
+  # oo Mary Filmer, 1761-03-08 - 1838-01-09 (courtenay.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q75283811> , <https://www.wikidata.org/wiki/Q75283812> ;
 	gen:startDate "1791" .
@@ -653,27 +711,56 @@
 	gen:startDate "1869-09-16" .
 
 # ----
-<https://www.wikidata.org/wiki/Q75283813>
-  # Rev. Sir Edmund Filmer, 6th Baronet, 1727 – 1834
-  gen:father <https://www.wikidata.org/wiki/Q76030134> ; # Sir Edward Filmer, 3rd Baronet
-  gen:mother <https://www.wikidata.org/wiki/Q76126519> . # Mary Wallis
-  # oo Annabella Christiana Honywood, d. 1798, daughter of https://www.wikidata.org/wiki/Q75421144 Sir John Honywood, 3rd Baronet and https://www.wikidata.org/wiki/Q76018815 Annabella Goodenough
+#<https://www.wikidata.org/wiki/Q76332256>
+  # Sir John Rous, 1586-06-03 - 1652
+  # son of Sir Thomas Rous
+  # and Pernell Goodwyn
+  # oo Elizabeth Yelverton
   []
-    gen:spouse <https://www.wikidata.org/wiki/Q75283813> , <https://www.wikidata.org/wiki/Q76126456> .
+    gen:spouse <https://www.wikidata.org/wiki/Q76332256> , <https://www.wikidata.org/wiki/Q76332257> .
 
-<https://www.wikidata.org/wiki/Q75283812>
-  # Mary Filmer, 1761-03-08 - 1838-01-09
-  gen:father <https://www.wikidata.org/wiki/Q75283813> ;
-  gen:mother <https://www.wikidata.org/wiki/Q76126456> .
-  # oo 1791 Sir John Chardin Musgrave, 7th Baronet, 1757-01-15 - 1806-07-24, https://www.wikidata.org/wiki/Q75283811
+<https://www.wikidata.org/wiki/Q7528040>
+  # Sir John Rous, 1st Baronet, 1608 - 1670-11-27
+  # 1st Baronet Rous, of Henham Hall [England] 1660-08-17
+  gen:father <https://www.wikidata.org/wiki/Q76332256> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76332257> .
+  # oo Anne Bacon, daughter of Nicholas Bacon and Margaret Darcy
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7528040> , <https://www.wikidata.org/wiki/Q75416782> ;
+	gen:startDate "1636-06-23" .
+  # oo Elizabeth Knyvett, d. 1670-07-07, daughter of Thomas Knyvett
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q7528040> , <https://www.wikidata.org/wiki/Q76332260> ;
+	gen:startDate "1656" .
+<https://www.wikidata.org/wiki/Q75258776>
+  # Mary Rous, 1610~ - 1650~
+  gen:father <https://www.wikidata.org/wiki/Q76332256> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76332257> .
+  # oo 1647~ Richard Coke, of Thorington, 1622-09-08b - 1669-11-11b, https://www.wikidata.org/wiki/Q52436764
 
-# ----
+<https://www.wikidata.org/wiki/Q28098348>
+  # Sir John Rous, 2nd Baronet, 1656~ - 1730-08-04
+  gen:father <https://www.wikidata.org/wiki/Q7528040> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76332260> .
+  # oo Anne Wood, 1657 - 1707, daughter of Robert Wood and Hannah Bacon
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q28098348> , <https://www.wikidata.org/wiki/Q76351729> ;
+	gen:startDate "1686-09-08" .
+
+<https://www.wikidata.org/wiki/Q76332261>
+  # Sir Robert Rous, 4th Baronet, 1687 - 1735-06-08
+  gen:father <https://www.wikidata.org/wiki/Q28098348> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76351729> .
+  # oo Lydia Smith, 1694 - 1769-10-13, daughter of John Smith and Catherine Smith
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q76332261> , <https://www.wikidata.org/wiki/Q76351738> ;
+	gen:startDate "1726" .
+
 <https://www.wikidata.org/wiki/Q26905880>
-  owl:sameAs <https://www.wikidata.org/wiki/Q75535746> ;
-  # Sir John Rous, 5th Baronet, d. 1771-10-31
-  gen:father <https://www.wikidata.org/wiki/Q76332261> ; # Sir Robert Rous, 4th Baronet
-  gen:mother <https://www.wikidata.org/wiki/Q76351738> . # Lydia Smith
-  # oo Judith Bedingfeld, d. 1794-09-10, daughter of John Bedingfeld
+  # Sir John Rous, 5th Baronet, 1727 - 1771-10-31
+  gen:father <https://www.wikidata.org/wiki/Q76332261> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76351738> .
+  # oo Judith Bedingfeld, 1728 - 1794-09-10, daughter of John Bedingfeld and Judith Kendall
   []
     gen:spouse <https://www.wikidata.org/wiki/Q26905880> , <https://www.wikidata.org/wiki/Q75600537> ;
 	gen:startDate "1749-06-05" .
@@ -688,10 +775,15 @@
   []
     gen:spouse <https://www.wikidata.org/wiki/Q6255763> , <https://www.wikidata.org/wiki/Q75653961> ;
 	gen:startDate "1788-01-26" .
-  # oo Charlotte Maria Whittaker, 1769-03-17 - 1856-01-15, daughter of Abraham Whittaker and Penelope Tempest
+  # oo Charlotte Maria Whittaker, 1769-03-17 - 1856-01-15 (williams.ttl)
   []
     gen:spouse <https://www.wikidata.org/wiki/Q6255763> , <https://www.wikidata.org/wiki/Q75653963> ;
 	gen:startDate "1792-02-23" .
+<https://www.wikidata.org/wiki/Q75535744>
+  # Frances Rous, 1750~ - 1808-05-27
+  gen:father <https://www.wikidata.org/wiki/Q26905880> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75600537> .
+  # oo 1771-12 Sir Henry Dashwood Peyton, 1st Baronet, 1736-04-13 - 1789-05, https://www.wikidata.org/wiki/Q16845226 (dashwood.ttl)
 
 <https://www.wikidata.org/wiki/Q76031952>
   # Lady Frances Anne Juliana Rous, 1790b - 1859-01-31
@@ -717,6 +809,11 @@
     gen:spouse <https://www.wikidata.org/wiki/Q7610919> , <https://www.wikidata.org/wiki/Q75336971> ;
 	gen:startDate "1857-05-26" .
 
+<https://www.wikidata.org/wiki/Q75790458>
+  # Lady Augusta Fanny Rous, 1858 - 1950-02-10
+  gen:father <https://www.wikidata.org/wiki/Q7610919> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75336971> .
+  # oo 1880-05-08 (div 1904) Cecil Francis William Fane, 1856-10-07 - 1914-01-30, https://www.wikidata.org/wiki/Q75790454
 <https://www.wikidata.org/wiki/Q1508207>
   # George Edward John Mowbray Rous, 3rd Earl of Stradbroke, 1862-11-19 - 1947-12-20
   gen:father <https://www.wikidata.org/wiki/Q7610919> ;
@@ -856,13 +953,13 @@
   gen:mother <kennedy.ttl#Sophia_Eliza_Kennedy> .
   # oo 1860-10-09 Hon. George Barrington Legge, 1831-12-19 - 1900-12-09, #George_Barrington_Legge
 
-<#Theophilus_Basil_Percy_Levett>
+<https://www.wikidata.org/wiki/Q76281531>
   # Theophilus Basil Percy Levett, of Wychnor Park, 1856-12-11 - 1929-05-26
   gen:father <https://www.wikidata.org/wiki/Q7782304> ;
   gen:mother <https://www.wikidata.org/wiki/Q75613733> .
-  # oo Lady Margaret Emily Ashley-Cooper, 1858-09-28 - 1931-10-16
+  # oo Lady Margaret Emily Ashley-Cooper, 1858-09-28 - 1931-10-16 (cooper.ttl)
   []
-    gen:spouse <#Theophilus_Basil_Percy_Levett> , <cooper.ttl#Lady_Margaret_Emily_Ashley_Cooper> ;
+    gen:spouse <https://www.wikidata.org/wiki/Q76281531> , <https://www.wikidata.org/wiki/Q76281532> ;
 	gen:startDate "1884-05-27" .
 
 # ----
@@ -884,7 +981,7 @@
     gen:spouse <https://www.wikidata.org/wiki/Q7789938> , <keppel.ttl#Lady_Caroline_Elizabeth_Keppel> ;
 	gen:startDate "1835-05-23" .
 
-<#Mary_Garnier>
+<https://www.wikidata.org/wiki/Q75354808>
   # Mary Garnier, 1836-02-26 - 1896-12-13
   gen:father <https://www.wikidata.org/wiki/Q7789938> ;
   gen:mother <keppel.ttl#Lady_Caroline_Elizabeth_Keppel> .
@@ -944,6 +1041,43 @@
 	gen:startDate "1966" .
 
 # ----
+#<https://www.wikidata.org/wiki/Q75340097>
+  # Arthur Francis Basset, 1873 - 1950-05-30
+  # son of Gustavus Lambart Basset
+  # and Charlotte Mary Elmhirst
+  # oo Rebecca Harriet Buller Salusbury-Trelawny, 1875 - 1947-11-27 (neville.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75340097> , <https://www.wikidata.org/wiki/Q76105692> ;
+	gen:startDate "1898-01-05" .
+
+<https://www.wikidata.org/wiki/Q75340087>
+  # Ronald Lambert Basset, 1898-11-20 - 1972
+  gen:father <https://www.wikidata.org/wiki/Q75340097> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76105692> .
+  # oo Lady Elizabeth Legge, 1908-03-05 - 2000-11-30
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75340087> , <https://www.wikidata.org/wiki/Q6470120> ;
+	gen:startDate "1931-10-31" .
+
+<https://www.wikidata.org/wiki/Q75331873>
+  # Bryan Ronald Basset, 1932-10-29 - 2010-11-08
+  gen:father <https://www.wikidata.org/wiki/Q75340087> ;
+  gen:mother <https://www.wikidata.org/wiki/Q6470120> .
+  # oo Lady Carey Elizabeth Coke, 1934-05-05 - 2018-05-14
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75331873> , <https://www.wikidata.org/wiki/Q75331874> ;
+	gen:startDate "1960-04-30" .
+
+# ----
+#<https://www.wikidata.org/wiki/Q75278744>
+  # Adrian Lewis Matthews, d. 1976-10-28
+  # son of Barbran Henry Matthews
+  # oo Lady Diana Legge, 1910-11-14 - 1970-02-25
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75278744> , <https://www.wikidata.org/wiki/Q75278743> ;
+	gen:startDate "1946-06-01" .
+
+# ----
 <https://www.wikidata.org/wiki/Q16018143>
   # Rognvald Richard Farrer Herschell, 3rd Baron Herschell of the City of Durban, 1923-09-13 - 2008-10-26
   gen:father <https://www.wikidata.org/wiki/Q7326429> .
@@ -954,130 +1088,22 @@
 	gen:startDate "1948-05-01" .
 
 # ----
+#<https://www.wikidata.org/wiki/Q75410033>
+  # Richard Charles Roundell
+  # oo Anthea Frances Legge, b. 1946-05-15
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q75410033> , <https://www.wikidata.org/wiki/Q75354848> .
+
+<https://www.wikidata.org/wiki/Q6498779>
+  # Laura Ann Roundell, b. 1972
+  gen:father <https://www.wikidata.org/wiki/Q75410033> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75354848> .
+  # oo 1996-08-03 (div 2002) Hon. Orlando William Montagu, b. 1971-01-16, https://www.wikidata.org/wiki/Q75410030
+  # oo 2007-03-31 William Cavendish, Earl of Burlington, b. 1969-06-06, https://www.wikidata.org/wiki/Q8006647
+
+# ----
 <https://www.wikidata.org/wiki/Q7506041>
   # Hon. Elizabeth Shân Josephine Bailey, b. 1943-09-10
   gen:father <https://www.wikidata.org/wiki/Q8001737> .
   # and Margaret Eldrydd Shoubridge
   # oo 1964-06-02 William Nigel Henry Legge-Bourke, 1939-07-12 - 2009-03-03, #William_Nigel_Henry_Legge-Bourke
-
-# ----
-#<#Randall_Plunkett,_13th_Lord_Dunsany>
-  # Randall Plunkett, 13th Lord Dunsany, 1739-03 1821-04-04
-  # oo Margaret Archdekin, d. 1791-09-13, daughter of Edward Archdekin
-  []
-    gen:spouse <#Randall_Plunkett,_13th_Lord_Dunsany> , <#Margaret_Archdekin> ;
-	gen:startDate "1771-08-12" .
-
-<https://www.wikidata.org/wiki/Q75275966>
-  # Edward Wadding Plunkett, 14th Lord Dunsany, 1773-04-07 - 1848-12-11
-  gen:father <#Randall_Plunkett,_13th_Lord_Dunsany> ;
-  gen:mother <#Margaret_Archdekin> .
-  # oo Hon. Charlotte Louisa Lawless, d. 1819-06-10 (gore.ttl)
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q75275966> , <https://www.wikidata.org/wiki/Q75275968> ;
-	gen:startDate "1803-06-20" .
-<https://www.wikidata.org/wiki/Q75804723>
-  # Hon. Anna Maria Plunkett
-  gen:father <#Randall_Plunkett,_13th_Lord_Dunsany> ;
-  gen:mother <#Margaret_Archdekin> .
-  # oo 1823 James Ryder Burton, 1795 - 1876-08-02, https://www.wikidata.org/wiki/Q20711900
-
-<https://www.wikidata.org/wiki/Q25991570>
-  # Randall Edward Plunkett, 15th Lord Dunsany, 1804-09-05 - 1852-04-07
-  gen:father <https://www.wikidata.org/wiki/Q75275966> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75275968> .
-<https://www.wikidata.org/wiki/Q17379174>
-  # Edward Plunkett, 16th Lord Dunsany, 1808-11-29 - 1889-02-22
-  gen:father <https://www.wikidata.org/wiki/Q75275966> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75275968> .
-  # oo Hon. Anne Constance Dutton, 1816-09-12 - 1858-06-27 (coke.ttl)
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q17379174> , <https://www.wikidata.org/wiki/Q75276955> ;
-	gen:startDate "1846-09-22" .
-
-<https://www.wikidata.org/wiki/Q6253068>
-  # John William Plunkett, 17th Lord Dunsany, 1853-08-31 – 1899-01-16
-  gen:father <https://www.wikidata.org/wiki/Q17379174> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75276955> .
-  # oo Ernle Elizabeth Louisa Maria Grosvenor Burton, d. 1916-02-28
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q6253068> , <https://www.wikidata.org/wiki/Q75316493> ;
-	gen:startDate "1877-04-03" .
-<https://www.wikidata.org/wiki/Q75276954>
-  # Hon. Mary Eliza Sophia Plunkett, d. 1921-07-05
-  gen:father <https://www.wikidata.org/wiki/Q17379174> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75276955> .
-  # oo 1873-10-22 Chambré Brabazon Ponsonby, 1839-12-14 - 1884-12-09, https://www.wikidata.org/wiki/Q75276952
-
-<https://www.wikidata.org/wiki/Q458658>
-  gen:name "Edward John Moreton Drax Plunkett, 18th Baron of Dunsany"@en ;
-  gen:birthDate "1878-07-24" ;
-  gen:deathDate "1957-10-25" ;
-  gen:father <https://www.wikidata.org/wiki/Q6253068> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75316493> .
-  # oo Lady Beatrice Child Villiers, 1880-10-12 - 1970-05-30
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q458658> , <https://www.wikidata.org/wiki/Q75278716> ;
-	gen:startDate "1904-09-15" .
-<https://www.wikidata.org/wiki/Q2592881>
-  # Hon. Sir Reginald Aylmer Ranfurly Plunkett-Ernle-Erle-Drax, 1880-08-28 – 1967-10-16
-  gen:father <https://www.wikidata.org/wiki/Q6253068> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75316493> .
-  # oo Kathleen Chalmers, d. 1980, daughter of Quintin Chalmers
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q2592881> , <#Kathleen_Chalmers> ;
-	gen:startDate "1916-04-15" .
-
-<#Henry_Walter_Plunkett-Ernle-Erle-Drax>
-  # Henry Walter Plunkett-Ernle-Erle-Drax, 1928-03-18 - 2017-07-04
-  gen:father <https://www.wikidata.org/wiki/Q2592881> ;
-  gen:mother <#Kathleen_Chalmers> .
-  # oo Hon. Pamela Rose Weeks, 1931-11-09 - 2019-02-22
-  []
-    gen:spouse <#Henry_Walter_Plunkett-Ernle-Erle-Drax> , <#Pamela_Rose_Weeks> ;
-	gen:startDate "1957-04-06" .
-
-<https://www.wikidata.org/wiki/Q302187>
-  # Richard Grosvenor Plunkett-Ernle-Erle-Drax, b. 1958-01-29
-  gen:father <#Henry_Walter_Plunkett-Ernle-Erle-Drax> ;
-  gen:mother <#Pamela_Rose_Weeks> .
-  # oo Zara Victoria Legge-Bourke, b. 1966-05-26
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q302187> , <#Zara_Victoria_Legge-Bourke> ;
-	gen:startDate "1985" ;
-	gen:divorceDate "1997" .
-# ----
-#<https://www.wikidata.org/wiki/Q7365386>
-  # Ronald Morce Weeks, 1st Baron Weeks, 1890-11-13 – 1960-08-10
-  # 1st Baron Weeks, of Ryton, co. Palatine of Durham 1956-05-31
-  # oo Cynthia Mary Irvine, daughter of J. W. Irvine
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q7365386> , <#Cynthia_Mary_Irvine> ;
-	gen:startDate "1931-02-03" .
-
-<#Pamela_Rose_Weeks>
-  # Hon. Pamela Rose Weeks, 1931-11-09 - 2019-02-22
-  gen:father <https://www.wikidata.org/wiki/Q7365386> ;
-  gen:mother <#Cynthia_Mary_Irvine> .
-  # oo 1957-04-06 Henry Walter Plunkett-Ernle-Erle-Drax, 1928-03-18 - 2017-07-04, #Henry_Walter_Plunkett-Ernle-Erle-Drax
-# ----
-#<https://www.wikidata.org/wiki/Q20711900>
-  # James Ryder Burton, 1795 - 1876-08-02
-  # oo Hon. Anna Maria Plunkett
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q20711900> , <https://www.wikidata.org/wiki/Q75804723> ;
-	gen:startDate "1823" .
-
-<https://www.wikidata.org/wiki/Q75316455>
-  # Francis Augustus Plunkett Burton
-  gen:father <https://www.wikidata.org/wiki/Q20711900> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75804723> .
-  # oo Sarah Frances Elizabeth Sawbridge-Erle-Drax (grosvenor.ttl)
-  []
-    gen:spouse <https://www.wikidata.org/wiki/Q75316455> , <https://www.wikidata.org/wiki/Q75911442> .
-
-<https://www.wikidata.org/wiki/Q75316493>
-  # Ernle Elizabeth Louisa Maria Grosvenor Burton, d. 1916-02-28
-  gen:father <https://www.wikidata.org/wiki/Q75316455> ;
-  gen:mother <https://www.wikidata.org/wiki/Q75911442> .
-  # oo 1877-04-03 John William Plunkett, 17th Lord Dunsany, 1853-08-31 – 1899-01-16, https://www.wikidata.org/wiki/Q6253068

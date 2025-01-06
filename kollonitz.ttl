@@ -1,0 +1,312 @@
+@base <kollonitz.ttl> .
+@prefix gen: <http://jjkoch.de/gen#> .
+@prefix wdata: <https://www.wikidata.org/wiki/> .
+@prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+#<https://www.wikidata.org/wiki/Q110370142>
+  # Siegfried (Seyfried) Kollonitz von Kollegrád, d. 1555-11-17
+  # oo Johanna von Orschon
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110370142> , <https://www.wikidata.org/wiki/Q110370144> .
+
+<#Ferdinand_Kollonitz> # -> Steierische Linie
+  # Ferdinand Kollonitz von Kollegrád, d. 1574-01-17
+  gen:father <https://www.wikidata.org/wiki/Q110370142> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110370144> .
+<https://www.wikidata.org/wiki/Q110370141> # -> Österreichische Linie
+  # Georg Seyfried Freiherr von Kollonitz, 1537 - 1599
+  gen:father <https://www.wikidata.org/wiki/Q110370142> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110370144> .
+
+
+# Steierische Linie
+<#Ferdinand_Kollonitz>
+  # Ferdinand Kollonitz von Kollegrád, d. 1574-01-17
+  gen:father <https://www.wikidata.org/wiki/Q110370142> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110370144> .
+  # oo Maria von Triebeneck
+  []
+    gen:spouse <#Ferdinand_Kollonitz> , <#Maria_von_Triebeneck> .
+
+<#Adam_von_Kollonitz>
+  # Adam Ferdinand Freiherr von Kollonitz, d. 1612
+  # Reichsfreiherrenstand 1588-09-01
+  gen:father <#Ferdinand_Kollonitz> ;
+  gen:mother <#Maria_von_Triebeneck> .
+  # oo Johanna Freiin von Stadl, daughter of Erasmus Stadl and Eva Zollner
+  []
+    gen:spouse <#Adam_von_Kollonitz> , <#Johanna_von_Stadl> .
+
+<https://www.wikidata.org/wiki/Q55853823>
+  # Otto Gottfried Graf Kollonitz von Kollograd, 1598 - 1664-06-10
+  # Reichsgrafenstand 1638-01-12
+  gen:father <#Adam_von_Kollonitz> ;
+  gen:mother <#Johanna_von_Stadl> .
+  # oo Johanna Sophie von Thurn und Valsassina
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q55853823> , <thurn.ttl#Johanna_Sophie_von_Thurn> .
+
+<https://www.wikidata.org/wiki/Q110370728>
+  # Georg Gottfried Johann/Otto Graf Kollonitz von Kollegrad, 1639 - 1672
+  gen:father <https://www.wikidata.org/wiki/Q55853823> ;
+  gen:mother <thurn.ttl#Johanna_Sophie_von_Thurn> .
+  # oo Maria Elisabeth Renata von Stubenberg, 1633-10-14 - 1663
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110370728> , <https://www.wikidata.org/wiki/Q110370729> .
+
+<https://www.wikidata.org/wiki/Q110370727>
+  # Maria Anna Antonia Gräfin Kollonitz von Kollegrad, 1662-03-05 - 1735-03-15
+  gen:father <https://www.wikidata.org/wiki/Q110370728> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110370729> .
+  # oo 1682-04-19 Wolfgang Friedrich Graf von Wurmbrand-Stuppach, 1652 - 1704-08-07, https://www.wikidata.org/wiki/Q110370725
+
+
+# Österreichische Linie
+<https://www.wikidata.org/wiki/Q110370141>
+  # Georg Seyfried Freiherr von Kollonitz, 1537 - 1599
+  # Reichsfreiherrenstand 1588-09-01
+  gen:father <https://www.wikidata.org/wiki/Q110370142> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110370144> .
+  # oo Maria Helene von Fuchs zu Fuchsberg, daughter of Christoph Valentin von Fuchs zu Fuchsberg and Helene (Anna Maria) von Welsperg
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110370141> , <https://www.wikidata.org/wiki/Q110370145> .
+
+<https://www.wikidata.org/wiki/Q110370140>
+  # Johann Georg Freiherr von Kollonitz-Kollográd, d. 1636
+  gen:father <https://www.wikidata.org/wiki/Q110370141> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110370145> .
+  # oo Ludmilla Anna Freiin Wissa von Vresovic
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110370140> , <https://www.wikidata.org/wiki/Q110370156> .
+<https://www.wikidata.org/wiki/Q110538523>
+  # Ernst Freiherr von Kollonitz-Kollográd
+  gen:father <https://www.wikidata.org/wiki/Q110370141> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110370145> .
+  # oo Anna Elisabeth von Kuefstein, d. 1673-11-25 (khevenhüller.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110538523> , <https://www.wikidata.org/wiki/Q110538524> ;
+	gen:startDate "1627-11-19" .
+
+<https://www.wikidata.org/wiki/Q20436610>
+  # Johann Ulrich Graf Kollonitz de Kollográd, 1606-01-28 - 1676
+  gen:father <https://www.wikidata.org/wiki/Q110370140> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110370156> .
+  # oo Regina Sidonia Freiin von Trauttmansdorff, b. 1614-05-17
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q20436610> , <trauttmansdorff.ttl#Regina_Sidonia_von_Trauttmansdorff> .
+  # oo Eva Katharina von Windisch-Graetz, 1622-08-11 - 1684-11-02
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q20436610> , <https://www.wikidata.org/wiki/Q110370164> ;
+	gen:startDate "1648" .
+<https://www.wikidata.org/wiki/Q55238312>
+  # Heinrich Karl Graf Kollonitz de Kollográd, 1611 - 1676
+  gen:father <https://www.wikidata.org/wiki/Q110370140> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110370156> .
+  # oo Maria Eleonora Gräfin von Meggau, 1620~ - 1691-12-16
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q55238312> , <harrach.ttl#Maria_Eleonora_von_Meggau> .
+<https://www.wikidata.org/wiki/Q110538521>
+  # Georg Wilhelm Graf von Kollonitz, 1637-05 - 1707-12-19
+  gen:father <https://www.wikidata.org/wiki/Q110538523> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110538524> .
+  # oo Cäcilia Gräfin von Verdenberg und Namiest, d. 1699 (herberstein.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110538521> , <https://www.wikidata.org/wiki/Q110538525> .
+
+<#Johann_Sigmund_Kollonitz>
+  # Johann Sigmund Graf Kollonitz von Kollegrád, 1636-07-16 - 1684-04-18
+  gen:father <https://www.wikidata.org/wiki/Q20436610> ;
+  gen:mother <trauttmansdorff.ttl#Regina_Sidonia_von_Trauttmansdorff> .
+  # oo Regina Elisabeth Freiin von Speidl
+  []
+    gen:spouse <#Johann_Sigmund_Kollonitz> , <#Regina_Elisabeth_von_Speidl> .
+<https://www.wikidata.org/wiki/Q55853821>
+  # Adam Graf Kollonitz de Kollográd, 1651-05-22 - 1726
+  gen:father <https://www.wikidata.org/wiki/Q20436610> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110370164> .
+  # oo Krisztina Gräfin Czobor de Czobor-Szentmihály, 1668-03-04 - 1746-10-27
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q55853821> , <erdődy.ttl#Krisztina_Czobor> .
+<https://www.wikidata.org/wiki/Q110369785>
+  # Maria Polyxena Gräfin Kollonitz de Kollográd, b. 1661-08-22
+  gen:father <https://www.wikidata.org/wiki/Q20436610> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110370164> .
+  # oo 1684 Lörinc Baron Zay de Csömör, 1651 - 1712, https://www.wikidata.org/wiki/Q110369784
+<https://www.wikidata.org/wiki/Q110458242>
+  # Johann Georg Graf von Kollonitz von Kollegrád, 1644 - 1688
+  gen:father <https://www.wikidata.org/wiki/Q55238312> ;
+  gen:mother <harrach.ttl#Maria_Eleonora_von_Meggau> .
+  # oo Maria Theresia Ernestine Gräfin van Aspremont-Lynden, 1654 - 1732 (fürstenberg.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110458242> , <https://www.wikidata.org/wiki/Q110458243> .
+<https://www.wikidata.org/wiki/Q110538400>
+  # Maria Franziska Gräfin von Kollonitz, 1687-07-18 - 1746-01-15
+  gen:father <https://www.wikidata.org/wiki/Q110538521> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110538525> .
+  # oo 1700-06-08 Johann Leopold Graf von Kuefstein, 1676-11-22 - 1745-11-21, https://www.wikidata.org/wiki/Q110538399 (khevenhüller.ttl)
+
+<https://www.wikidata.org/wiki/Q85031>
+  # Sigismund Graf Kollonitz von Kollegrád, 1676-05-30 - 1751-04-12
+  # Bischof von Waitzen (ungar. Vác) 1709-10-14
+  # Fürstbischof der Diözese Wien 1716-07-01 - 1722
+  # erster Fürsterzbischof von Wien 1722-06-01
+  # Kardinal 1727-11-26
+  gen:father <#Johann_Sigmund_Kollonitz> ;
+  gen:mother <#Regina_Elisabeth_von_Speidl> .
+<#Maria_Theresia_Kollonitz>
+  # Maria Theresia Gräfin Kollonitz de Kollográd, 1694-09-29 - 1754
+  gen:father <https://www.wikidata.org/wiki/Q55853821> ;
+  gen:mother <erdődy.ttl#Krisztina_Czobor> .
+  # oo 1715 Girolamo Capece Marchese di Rofrano, 1661-07-09 - 1724-06-26, https://www.wikidata.org/wiki/Q86598934
+<https://www.wikidata.org/wiki/Q110369787>
+  # Johann Heinrich Graf Kollonitz von Kollográd, 1679b - 1721
+  gen:father <https://www.wikidata.org/wiki/Q110458242> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110458243> .
+  # oo Maria Elisabeth Gräfin von Waldstein, 1679-02-03 - 1742-04-27
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110369787> , <https://www.wikidata.org/wiki/Q110369788> ;
+	gen:startDate "1701-05-30" .
+
+<https://www.wikidata.org/wiki/Q109452581>
+  # Maria Eleonore Gräfin Kollonitz de Kollegrád, 1711-10-30 - 1759-04-06
+  gen:father <https://www.wikidata.org/wiki/Q110369787> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110369788> .
+  # oo 1728-09-21 László Baron Zay de Csömör Graf Kollonitz de Kollegrád, 1705-06-04 - 1780-09-06, https://www.wikidata.org/wiki/Q94530742 (thun.ttl)
+
+
+# ----
+<https://www.wikidata.org/wiki/Q110370156>
+  # Ludmilla Anna Freiin Wissa von Vresovic
+  gen:father <https://www.wikidata.org/wiki/Q110370157> ; # Johann Adalbert Freiherr von Vresovic
+  gen:mother <https://www.wikidata.org/wiki/Q110370160> . # Maria Magdalena Bechyne von Lazan
+  # oo Johann Georg Freiherr von Kollonitz-Kollográd, d. 1636, https://www.wikidata.org/wiki/Q110370140
+
+# ----
+#<https://www.wikidata.org/wiki/Q86598934>
+  # Girolamo Pietro Luigi Capece Marchese di Rofrano, 1661-07-09 - 1724-06-26
+  # 2. Marchese di Rofrano
+  # son of Pietro Capece, 1633 - 1678
+  # and Teresa Ceva Grimaldi, 1643 - 1721
+  # oo Maria Theresia Gräfin Kollonitz de Kollográd, 1694-09-29 - 1754
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q86598934> , <#Maria_Theresia_Kollonitz> ;
+	gen:startDate "1715" .
+
+<https://www.wikidata.org/wiki/Q110383493>
+  # Maria Theresia Capece Marchesa di Rofrano, 1715-06-03 - 1778-11-12
+  # 4. Marchesa di Rofrano
+  gen:father <https://www.wikidata.org/wiki/Q86598934> ;
+  gen:mother <#Maria_Theresia_Kollonitz> .
+  # oo 1734-09-06 Leopold Ferdinand Graf Kinsky von Wchinitz und Tettau, 1713-01-17 - 1760-10-24, https://www.wikidata.org/wiki/Q33147630
+
+# ----
+<https://www.wikidata.org/wiki/Q110369784>
+  # Lörinc Baron Zay de Csömör, 1651 - 1712
+  gen:father <https://www.wikidata.org/wiki/Q110363410> ; # László Baron Zay de Csömör, 1624 - 1674
+  gen:mother <https://www.wikidata.org/wiki/Q110363427> . # Judit Baronesse Ujfalussy de Divék-Ujfalu, d. 1667
+  # oo Maria Polyxena Gräfin Kollonitz de Kollográd, b. 1661-08-22
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110369784> , <https://www.wikidata.org/wiki/Q110369785> ;
+	gen:startDate "1684" .
+
+<https://www.wikidata.org/wiki/Q94530742>
+  # László Baron Zay de Csömör Graf Kollonitz de Kollegrád, 1705-06-04 - 1780-09-06
+  # Ladislaus
+  gen:father <https://www.wikidata.org/wiki/Q110369784> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110369785> ;
+  gen:adoptedBy <https://www.wikidata.org/wiki/Q85031> .
+  # oo Maria Eleonore Gräfin Kollonitz de Kollegrád, 1711-10-30 - 1759-04-06
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q94530742> , <https://www.wikidata.org/wiki/Q109452581> ;
+	gen:startDate "1728-09-21" .
+  # oo Walburga Josepha Gräfin Hamilton, d. 1789-02-19
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q94530742> , <#Walburga_Hamilton> ;
+	gen:startDate "1750" .
+
+<https://www.wikidata.org/wiki/Q110369783>
+  # Maria Franziska Gräfin Kollonitz de Kollegrád, 1729-10-05 - 1766-12-06
+  gen:father <https://www.wikidata.org/wiki/Q94530742> ;
+  gen:mother <https://www.wikidata.org/wiki/Q109452581> .
+  # oo 1750-04-06 Nikolaus Norbert Graf von Falkenhayn, 1725-06-06 - 1777-04-30, https://www.wikidata.org/wiki/Q110369776 (castell.ttl)
+<https://www.wikidata.org/wiki/Q111907820>
+  # Karl Joseph Graf Kollonitz de Kollográd, 1730-11-21 - 1804-06-18
+  gen:father <https://www.wikidata.org/wiki/Q94530742> ;
+  gen:mother <https://www.wikidata.org/wiki/Q109452581> .
+  # oo Friederike Gräfin Cavriani Freiin zu Unter-Waltersdorf, 1743-11-14 - 1799-03-26 (harrach.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q111907820> , <https://www.wikidata.org/wiki/Q111907821> ;
+	gen:startDate "1764-05-03" .
+<https://www.wikidata.org/wiki/Q110458241>
+  # Marie Elisabeth Gräfin Kollonitz von Kollegrád, 1732-05-22 - 1854-12-18
+  gen:father <https://www.wikidata.org/wiki/Q94530742> ;
+  gen:mother <https://www.wikidata.org/wiki/Q109452581> .
+  # oo 1751-07-29 Josef Graf von Thun und Hohenstein, 1711-07-02 - 1788-05-24, https://www.wikidata.org/wiki/Q69823081
+<https://www.wikidata.org/wiki/Q83434569>
+  # Maria Theresia Gräfin von Kollonitz de Kollegrád, 1733-09-15 - 1802-07-03
+  gen:father <https://www.wikidata.org/wiki/Q94530742> ;
+  gen:mother <https://www.wikidata.org/wiki/Q109452581> .
+  # oo 1754-10-09 Eugen Wenzel Joseph Graf von Wrbna und Freudenthal, 1728-06-03 - 1789-05-23, https://www.wikidata.org/wiki/Q35071697
+<#Marie_Eleonore_Kollonitz>
+  # Marie Eleonore Gräfin Kollonitz von Kollegrád, 1738-10-20 - 1807
+  gen:father <https://www.wikidata.org/wiki/Q94530742> ;
+  gen:mother <https://www.wikidata.org/wiki/Q109452581> .
+  # oo 1759-05-15 Franz Joseph Gabriel Graf von Abensperg und Traun, 1734-07-04 - 1791-01-11, castell.ttl#Franz_Joseph_Gabriel_von_Abensperg
+<#Maria_Antonia_Kollonitz>
+  # Maria Antonia Gräfin Kollonitz von Kollegrád, 1743-06-10 - 1771-11-22
+  gen:father <https://www.wikidata.org/wiki/Q94530742> ;
+  gen:mother <https://www.wikidata.org/wiki/Q109452581> .
+  # oo 1767-06 Franz Josef Graf Kottulinsky Freiherr von Kotulin und Kržizkowitz, 1742-04-10 - 1801-03-13, https://www.wikidata.org/wiki/Q110369764 (liechtenstein.ttl)
+<#Maria_Anna_Kollonitz>
+  # Maria Anna Gräfin Kollonitz de Kollegrád, 1744-09-25 - 1802-06-28
+  gen:father <https://www.wikidata.org/wiki/Q94530742> ;
+  gen:mother <https://www.wikidata.org/wiki/Q109452581> .
+  # oo 1766-02-04 Anton Graf Schaffgotsch genannt Semperfrei von und zu Kynast und Greiffenstein, 1721-04-16 - 1811-01-01, https://www.wikidata.org/wiki/Q95043638
+<https://www.wikidata.org/wiki/Q55853822>
+  owl:sameAs <https://www.wikidata.org/wiki/Q55907916> ;
+  # Maximilian Graf Kollonitz de Kollográd, 1761-09-14 - 1872-03-04
+  gen:father <https://www.wikidata.org/wiki/Q94530742> ;
+  gen:mother <#Walburga_Hamilton> .
+  # oo Katharina Gräfin von Haugwitz, 1771 - 1827-03-07
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q55853822> , <#Katharina_von_Haugwitz> .
+
+<https://www.wikidata.org/wiki/Q111907819>
+  # _Marie Caroline_ Friederike Walburga Michaela Josefa Anna Franziska Theresa Emanuela Gräfin Kollonitz de Kollográd, 1769-03-26 - 1826-07-29
+  gen:father <https://www.wikidata.org/wiki/Q111907820> ;
+  gen:mother <https://www.wikidata.org/wiki/Q111907821> .
+  # oo 1801-08-16 Judas Thaddäus Freiherr von Reischach, 1776-12-08 - 1839-05-12, https://www.wikidata.org/wiki/Q94528329 (wilczek.ttl)
+<#Maximilian_Kollonitz>
+  # Maximilian Graf Kollonitz de Kollográd, b. 1799-01-08
+  gen:father <https://www.wikidata.org/wiki/Q55853822> ;
+  gen:mother <#Katharina_von_Haugwitz> .
+  # oo Augusta Freiin von Vorst-Lombeck und Gudenau, 1801-06-03 - 1862-07-03
+  []
+    gen:spouse <#Maximilian_Kollonitz> , <#Augusta_von_Vorst-Lombeck> ;
+	gen:startDate "1821-06-07" .
+
+<#Ladislaus_Kollonitz>
+  # Ladislaus Graf Kollonitz de Kollográd, 1833-07-12 - 1863-01-31
+  gen:father <#Maximilian_Kollonitz> ;
+  gen:mother <#Augusta_von_Vorst-Lombeck> .
+  # oo Adalberta Gräfin Podstatzky-Liechtenstein, 1834-10-26 - 1902-01-16
+  []
+    gen:spouse <#Ladislaus_Kollonitz> , <kolowrat.ttl#Adalberta_Podstatzky> ;
+	gen:startDate "1859" .
+
+# ----
+<https://www.wikidata.org/wiki/Q94528329>
+  # _Judas Thaddäus_ Anton Freiherr von Reischach, 1776-12-08 - 1839-05-12
+  gen:father <https://www.wikidata.org/wiki/Q111907812> ; # Simon Thaddäus von Reischach
+  gen:mother <https://www.wikidata.org/wiki/Q111907812> . # Gabriele Freiin von Schauenburg
+  # oo Marie Caroline Gräfin Kollonitz de Kollográd, 1769-03-26 - 1826-07-29
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q94528329> , <https://www.wikidata.org/wiki/Q111907819> ;
+	gen:startDate "1801-08-16" .
+
+<https://www.wikidata.org/wiki/Q111907805>
+  # Gabrielle Karoline Magdalene Friederike Ludovika Vincentia Josefa Freiin von Reischach, 1802-07-21 - 1890-07-11
+  gen:father <https://www.wikidata.org/wiki/Q94528329> ;
+  gen:mother <https://www.wikidata.org/wiki/Q111907819> .
+  # oo 1822-06-25 Stanislaus Graf von Wilczek, 1792-11-24 - 1847-03-23, https://www.wikidata.org/wiki/Q106315195

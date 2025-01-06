@@ -1,0 +1,264 @@
+@base <almásy.ttl> .
+@prefix gen: <http://jjkoch.de/gen#> .
+@prefix wdata: <https://www.wikidata.org/wiki/> .
+@prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://www.wikidata.org/wiki/Q658553>
+  # János Almásy de Zsadány et Török-Szent-Miklós, 1691-12-16/1693 - 1765-07-11
+  gen:father <https://www.wikidata.org/wiki/Q108927092> ; # János Almásy de Zsadány et Török-Szent-Miklós
+  gen:mother <https://www.wikidata.org/wiki/Q108927093> . # Judith Deak de Mihály
+  # oo Anna Borsy de Kucsin, 1700 - 1772-05-24
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q658553> , <https://www.wikidata.org/wiki/Q108925580> .
+
+<https://www.wikidata.org/wiki/Q658578>
+  # Pál Graf Almásy de Zsadány et Török-Szent-Miklós, 1722-01-16 - 1804-11-21
+  # Baron 1767
+  # Graf 1771
+  gen:father <https://www.wikidata.org/wiki/Q658553> ;
+  gen:mother <https://www.wikidata.org/wiki/Q108925580> .
+  # oo Franciska Kvassay de Kvassó et Brogyán, 1728 - 1797-01-09, daughter of László Kvassay de Kvassó et Brogyán and Klara Bossányi de Nagybossány
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q658578> , <#Franciska_Kvassay> .
+<https://www.wikidata.org/wiki/Q110981079>
+  # Ignác József Graf Almásy de Zsadány et Török-Szent-Miklós, 1725-05-22 - 1804-04-07
+  # Baron 1767
+  # Graf 1771
+  gen:father <https://www.wikidata.org/wiki/Q658553> ;
+  gen:mother <https://www.wikidata.org/wiki/Q108925580> .
+  # oo Terézia Baronesse Splényi de Miháld, 1745 - 1830-03-12
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110981079> , <#Terézia_Splényi> .
+<https://www.wikidata.org/wiki/Q108925577>
+  # József Jakab Graf Almásy de Zsadány et Török-Szent-Miklós, 1742-04-01 - 1788-08-19
+  # Baron 1767
+  # Graf 1771
+  gen:father <https://www.wikidata.org/wiki/Q658553> ;
+  gen:mother <https://www.wikidata.org/wiki/Q108925580> .
+  # oo Konstancia Palásthy de Palast et Keszihócz, 1752 - 1776
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q108925577> , <https://www.wikidata.org/wiki/Q108925581> .
+
+<#Imre_Ignác_Almásy>
+  # Imre Ignác Graf Almásy de Zsadány et Török-Szent-Miklós, 1751-01-15 - 1840-09-24
+  gen:father <https://www.wikidata.org/wiki/Q658578> ;
+  gen:mother <#Franciska_Kvassay> .
+  # oo Thekla Bossányi de Nagybossány et Nagyugrócz, 1758-04-12 - 1777-11-23
+  []
+    gen:spouse <#Imre_Ignác_Almásy> , <#Thekla_Bossányi> .
+  # oo Anna Semsey de Semse, 1761 - 1819-03-19
+  []
+    gen:spouse <#Imre_Ignác_Almásy> , <#Anna_de_Semsey> ;
+	gen:startDate "1779-02-20" .
+  # oo Maria Beatrix Gräfin zu Hardegg auf Glatz und im Machlande, 1772-03-19 - 1836-10-04
+  []
+    gen:spouse <#Imre_Ignác_Almásy> , <hardegg.ttl#Maria_Beatrix_zu_Hardegg> ;
+	gen:startDate "1820-01-15" .
+<#Enok_Almásy>
+  # Enok Graf Almásy de Zsadány et Török-Szent-Miklós, 1779 - 1814-12-13
+  gen:father <https://www.wikidata.org/wiki/Q110981079> ;
+  gen:mother <#Terézia_Splényi> .
+  # oo Theresia Gräfin Keglevich de Buzin, b. 1782~/1799b
+  []
+    gen:spouse <#Enok_Almásy> , <zichy.ttl#Theresia_Keglevich> .
+<#Kristóf_Almásy>
+  # Kristóf Graf Almásy de Zsadány et Török-Szent-Miklós, 1781-04-13 - 1843-04-13
+  gen:father <https://www.wikidata.org/wiki/Q110981079> ;
+  gen:mother <#Terézia_Splényi> .
+  # oo Rozália Gräfin Haller de Hallerkeö, 1782~ - 1849-08-18, daughter of Lajos Graf Haller de Hallerkeö (1791-05-07 - 1847-03-11) and Anna Mária Baronesse Bornemisza de Kászon (1794 - 1832-01-06)
+  []
+    gen:spouse <#Kristóf_Almásy> , <#Rozália_Haller> ;
+	gen:startDate "1802" .
+<https://www.wikidata.org/wiki/Q108925575>
+  # János Graf Almásy de Zsadány et Török-Szent-Miklós, 1772 - 1848
+  gen:father <https://www.wikidata.org/wiki/Q108925577> ;
+  gen:mother <https://www.wikidata.org/wiki/Q108925581> .
+  # oo Róza Teréz Horváth de Zalabér, 1781 - 1844, daughter of József Horváth de Zalabér and Franciska Bosiczai es Ledeniczi, Ugronovits
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q108925575> , <https://www.wikidata.org/wiki/Q108925587> .
+
+<#Aloys_Almásy>
+  # Aloys Mátyás János Graf Almásy de Zsadány et Török-Szent-Miklós, 1788-02-24 - 1850-12-31
+  gen:father <#Imre_Ignác_Almásy> ;
+  gen:mother <#Anna_de_Semsey> .
+  # oo Erzsébet Gräfin Festetics de Tolna, 1794-01-03 - 1822-03-20
+  []
+    gen:spouse <#Aloys_Almásy> , <festetics.ttl#Erzsébet_Festetics> ;
+	gen:startDate "1810-12-20" .
+  # oo Maria Ludovica Gräfin von Wilczek, 1800-04-10 - 1876-10-23
+  []
+    gen:spouse <#Aloys_Almásy> , <https://www.wikidata.org/wiki/Q95195262> ;
+	gen:startDate "1823-08-25" .
+<#Ottilia_Almásy>
+  # Ottilia Franciska Erzsebet Konstanca Gräfin Almásy de Zsadány et Török-Szent-Miklós, 1789/1795 - 1832-09-01
+  gen:father <#Imre_Ignác_Almásy> ;
+  gen:mother <#Anna_de_Semsey> .
+  # oo 1812 Johann Nepomuk Gebhard Graf von Königsegg-Rothenfels, 1790-01-06 - 1867-10-01, königsegg.ttl#Johann_Nepomuk_von_Königsegg-Rothenfels
+<#Lajos_Sándor_Almásy>
+  # Lajos Sándor Graf Almásy de Zsadány et Török-Szent-Miklós, 1793-02-21 - 1836-05-13
+  gen:father <#Imre_Ignác_Almásy> ;
+  gen:mother <#Anna_de_Semsey> .
+  # oo Leopoldine Gräfin von Bretzenheim, 1795-12-13 - 1844-12-04
+  []
+    gen:spouse <#Lajos_Sándor_Almásy> , <wittelsbacher.ttl#Leopoldine_von_Bretzenheim> ;
+	gen:startDate "1816-06-30" .
+<#Etelka_Almásy>
+  # Etelka Julia Johanna Gräfin Almásy de Zsadány et Török-Szent-Miklós, 1807-01-24 - 1870-03-28
+  gen:father <#Enok_Almásy> ;
+  gen:mother <zichy.ttl#Theresia_Keglevich> .
+  # oo 1831-09-07 Agoston Graf Festetics de Tolna, 1805-01-29 - 1882-01-31, festetics.ttl#Agoston_Festetics
+<https://www.wikidata.org/wiki/Q31092326>
+  # Ernö Bódog Graf Almásy de Zsadány et Török-Szent-Miklós, 1818-01-16 - 1849-05-22
+  gen:father <#Kristóf_Almásy> ;
+  gen:mother <#Rozália_Haller> .
+  # oo Mathilde Ebenberger, 1826 - 1906-02-15, daughter of Fredrich Ebenberger and Maria Ahsbahs
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q31092326> , <#Mathilde_Ebenberger> ;
+	gen:startDate "1844-11-22" .
+<https://www.wikidata.org/wiki/Q108925573>
+  # Rozália Franciska Magdolna Konstancia Gräfin Almásy de Zsadány et Török-Szent-Miklós, 1806-06-17 - 1887-05-10
+  gen:father <https://www.wikidata.org/wiki/Q108925575> ;
+  gen:mother <https://www.wikidata.org/wiki/Q108925587> .
+  # oo 1825-03-09 Ferenc Graf Szapáry de Muraszombath, Széchysziget et Szapár, 1804-01-13 - 1875-01-11, https://www.wikidata.org/wiki/Q94692184
+
+<#Kálmán_Almásy>
+  # Kálmán Ignác József Graf Almásy de Zsadány et Török-Szent-Miklós, 1815-09-02 - 1898-10-28
+  gen:father <#Aloys_Almásy> ;
+  gen:mother <festetics.ttl#Erzsébet_Festetics> .
+  # oo Stephanie Gräfin von Wenckheim, 1837-03-27 - 1917-10-13
+  []
+    gen:spouse <#Kálmán_Almásy> , <pálffy.ttl#Stephanie_von_Wenckheim> ;
+	gen:startDate "1855-07-23" .
+<#Maria_Walburga_Almásy>
+  # Maria Walburga Notgera Thecla Gräfin Almásy de Zsadány et Török-Szent-Miklós, 1818-09-23 - 1870-09-23
+  gen:father <#Lajos_Sándor_Almásy> ;
+  gen:mother <wittelsbacher.ttl#Leopoldine_von_Bretzenheim> .
+  # oo 1844-07-14 Edmund/Ödön Eduard Freiherr von Beust, 1811-09-19 - 1879-07-18, #Edmund_von_Beust
+<https://www.wikidata.org/wiki/Q56543559>
+  # Tasziló Graf Almásy de Zsadány et Török-Szent-Miklós, 1847-04-07 - 1915-07-02
+  gen:father <https://www.wikidata.org/wiki/Q31092326> ;
+  gen:mother <#Mathilde_Ebenberger> .
+  # oo Anna Baronesse Fiáth de Eörményes et Karánsebes, 1852-09-11 - 1937-03-17
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q56543559> , <https://www.wikidata.org/wiki/Q75389170> ;
+	gen:startDate "1874-04-07" .
+
+<#Mária_Jozefa_Almásy>
+  # Mária Jozefa Stefánia Emilia Borbála Gräfin Almásy de Zsadány et Török-Szent-Miklós, 1861-01-01 - 1893-10-03
+  gen:father <#Kálmán_Almásy> ;
+  gen:mother <pálffy.ttl#Stephanie_von_Wenckheim> .
+  # oo 1882-06-10 Geza Beniczky de Benicze et Micsinye, 1857-01-07 - 1934-12-24, zichy.ttl#Geza_Beniczky
+<https://www.wikidata.org/wiki/Q658549>
+  # Dénes Graf Almásy de Zsadány et Török-Szent-Miklós, 1863-03-23 - 1940-08-12
+  gen:father <#Kálmán_Almásy> ;
+  gen:mother <pálffy.ttl#Stephanie_von_Wenckheim> .
+  # oo Gabriele Gräfin Károlyi de Nagy-Károly, 1869-03-15 - 1945-03-24
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q658549> , <https://www.wikidata.org/wiki/Q75373144> ;
+	gen:startDate "1888-04-28" .
+<#György_Almásy>
+  # György Graf Almásy de Zsadány et Török-Szent-Miklós, 1864-10-15 - 1898-11-18
+  gen:father <#Kálmán_Almásy> ;
+  gen:mother <pálffy.ttl#Stephanie_von_Wenckheim> .
+  # oo Zenaïde Gräfin Zichy de Zich et Vásonkeö, 1865-03-16 - 1924-05-05
+  []
+    gen:spouse <#György_Almásy> , <zichy.ttl#Zenaïde_Zichy> ;
+	gen:startDate "1888-06-02" .
+<https://www.wikidata.org/wiki/Q24288287>
+  # Imre József István Géza Mária Graf Almásy de Zsadány et Török-Szent-Miklós, 1868-02-01 - 1929-01-25
+  gen:father <#Kálmán_Almásy> ;
+  gen:mother <pálffy.ttl#Stephanie_von_Wenckheim> .
+  # oo Kornélia Baronesse Wesselényi de Hadad, 1871-12-05 - 1952
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q24288287> , <https://www.wikidata.org/wiki/Q75382879> ;
+	gen:startDate "1892-02-08" .
+<#Anna_Wilhelmine_Almásy>
+  # Anna Wilhelmine Gräfin Almásy de Zsadány et Török-Szent-Miklós, 1875-04-15 - 1967
+  gen:father <https://www.wikidata.org/wiki/Q56543559> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75389170> .
+  # oo 1900-02-26 Heinrich Wilhelm Graf von Wilczek, 1873-05-19 - 1944-12-22, wilczek.ttl#Heinrich_Wilhelm_von_Wilczek_(b._1873)
+<https://www.wikidata.org/wiki/Q75389168>
+  # Hildegard Gräfin Almásy de Zsadány et Török-Szent-Miklós, 1879-03-10 - 1933-02-01
+  gen:father <https://www.wikidata.org/wiki/Q56543559> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75389170> .
+  # oo 1899-07-06 (div 1922) Friedrich August Prinz von Hanau zu Hořowice Graf von Schaumburg, 1864-04-14 - 1940-04-26, https://www.wikidata.org/wiki/Q13684044 (reginare.ttl)
+<#Huberta_Almásy>
+  # Huberta Gräfin Almásy de Zsadány et Török-Szent-Miklós, 1880-05-19 - 1946-02-05
+  gen:father <https://www.wikidata.org/wiki/Q56543559> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75389170> .
+  # oo 1903-04-16 Jenö Graf Széchényi de Sárvár-Felsövidék, 1872-11-30 - 1935-11-23, széchényi.ttl#Jenö_Széchényi_(b._1872)
+
+<https://www.wikidata.org/wiki/Q75373150>
+  # Emma Maria Elisabeth Gräfin Almásy de Zsadány et Török-Szent-Miklós, b. 1889-05-12
+  gen:father <https://www.wikidata.org/wiki/Q658549> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75373144> .
+  # oo 1909-11-04 Nikolaus Graf Keglevich de Buzin, 1876-07-23 - 1919-01-30, https://www.wikidata.org/wiki/Q75373152 (zichy.ttl)
+<#Georgina_Almásy>
+  # Georgina Márie Márta Gräfin Almásy de Zsadány de Török-Szent-Miklós, 1890-07-29 - 1953-11-10
+  gen:father <#György_Almásy> ;
+  gen:mother <zichy.ttl#Zenaïde_Zichy> .
+  # oo 1911-05-27 Georg Graf Mailáth de Székhely, 1883-10-30 - 1967-11-11, zichy.ttl#Georg_Mailáth
+<#Imre_Dénes_Almásy>
+  # Imre Dénes Mária Ilona Graf Almásy de Zsadány et Török-Szent-Miklós, 1896-01-29 - 1973-11-09
+  gen:father <https://www.wikidata.org/wiki/Q24288287> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75382879> .
+  # oo Antoinette Frederika Franziska Maria Gräfin Széchényi de Sárvár-Felsövidék, 1896-01-22 - 1971-12-27
+  []
+    gen:spouse <#Imre_Dénes_Almásy> , <széchényi.ttl#Antoinette_Széchényi> ;
+	gen:startDate "1920-09-15" .
+<#Mária_Ilona_Almásy>
+  # Mária Ilona Imre Dénes Gräfin Almásy de Zsadány et Török-Szent-Miklós, 1902-02-02 - 1986-10-31
+  gen:father <https://www.wikidata.org/wiki/Q24288287> ;
+  gen:mother <https://www.wikidata.org/wiki/Q75382879> .
+  # oo 1924-08-08 Ferenc Joseph Graf Széchényi de Sárvár-Felsövidék, 1901-02-09 - 1963-07-29, széchényi.ttl#Ferenc_Joseph_Széchényi
+
+
+# ----
+<https://www.wikidata.org/wiki/Q108925580>
+  # Anna Borsy de Kucsin, 1700 - 1772-05-24
+  gen:father <https://www.wikidata.org/wiki/Q108927094> ; # Mihály Borsy de Kucsin
+  gen:mother <https://www.wikidata.org/wiki/Q108927095> . # Anna Semsey de Semse
+  # oo János Almásy de Zsadány et Török-Szent-Miklós, 1691-12-16/1693 - 1765-07-11, https://www.wikidata.org/wiki/Q658553
+
+# ----
+<#Terézia_Splényi>
+  # Terézia Baronesse Splényi de Miháld, 1745 - 1830-03-12
+  gen:father <https://www.wikidata.org/wiki/Q94621573> . # Gábor Antal Baron Splényi de Miháld, 1690 - 1762-06-25
+  # and Katalin Gräfin Berényi de Karancsberény, d. 1758-12-17
+  # oo Ignác József Graf Almásy de Zsadány et Török-Szent-Miklós, 1725-05-22 - 1804-04-07, https://www.wikidata.org/wiki/Q110981079
+
+# ----
+<https://www.wikidata.org/wiki/Q108925581>
+  # Konstancia Palásthy de Palast et Keszihócz, 1752 - 1776
+  gen:father <https://www.wikidata.org/wiki/Q108925583> ; # Férénc Palásthy de Palast, 1719-11-24 - 1789-05-20
+  gen:mother <https://www.wikidata.org/wiki/Q108925585> . # Magdolna Baranyay de Bodorfalva, 1729-12-08 - 1758-07-30
+  # oo József Jakab Graf Almásy de Zsadány et Török-Szent-Miklós, 1742-04-01 - 1788-08-19, https://www.wikidata.org/wiki/Q108925577
+
+# ----
+#<#Edmund_von_Beust>
+  # Edmund/Ödön Eduard Freiherr von Beust, 1811-09-19 - 1879-07-18
+  # oo Maria Walburga Gräfin Almásy de Zsadány et Török-Szent-Miklós, 1818-09-23 - 1870-09-23
+  []
+    gen:spouse <#Edmund_von_Beust> , <#Maria_Walburga_Almásy> ;
+	gen:startDate "1844-07-14" .
+
+<https://www.wikidata.org/wiki/Q75424230>
+  # Hedwig Freiin von Beust, 1851-03-27 - 1921-09-06
+  gen:father <#Edmund_von_Beust> ;
+  gen:mother <#Maria_Walburga_Almásy> .
+  # oo 1874-11-21 Friedrich Lothar Freiherr Waldbott von Bassenheim, 1845-09-01 - 1923-06-08, https://www.wikidata.org/wiki/Q75424228
+
+# ----
+<https://www.wikidata.org/wiki/Q75389170>
+  # Anna Baronesse Fiáth de Eörményes et Karánsebes, 1852-09-11 - 1937-03-17
+  gen:father <https://www.wikidata.org/wiki/Q1001835> . # Ferenc Baron Fiáth de Eörményes et Karánsebes
+  # and Agnese Kapy de Kapivár
+  # oo 1874-04-07 Tasziló Graf Almásy de Zsadány et Török-Szent-Miklós, 1847-04-07 - 1915-07-02, https://www.wikidata.org/wiki/Q56543559
+
+# ----
+<https://www.wikidata.org/wiki/Q75382879>
+  # Kornélia Mária Franciska Baronesse Wesselényi de Hadad, 1871-12-05 - 1952
+  gen:father <https://www.wikidata.org/wiki/Q96909921> . # Miklós Baron Wesselényi de Hadad
+  # and Agnes Baronesse Bánffy de Losoncz
+  # oo 1892-02-08 Imre József Graf Almásy de Zsadány et Török-Szent-Miklós, 1868-02-01 - 1929-01-25, https://www.wikidata.org/wiki/Q24288287

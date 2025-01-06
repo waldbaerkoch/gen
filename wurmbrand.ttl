@@ -1,0 +1,432 @@
+@base <wurmbrand.ttl> .
+@prefix gen: <http://jjkoch.de/gen#> .
+@prefix wdata: <https://www.wikidata.org/wiki/> .
+@prefix ldf: <http://www.ldf.fi/service/rdf-grapher/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://www.wikidata.org/wiki/Q94505662> # -> Ehrenreich
+  # Ehrenreich Freiherr Wurmbrand von Stuppach, 1558 – 1620
+  gen:father <https://www.wikidata.org/wiki/Q94505620> ; # Matthias Wurmbrand auf Stuppach, Salloder, Sachsenbrunn und Klamm, 1521~ - 1584-04-19
+  gen:mother <https://www.wikidata.org/wiki/Q110363555> . # oo 1558-02-13 Sybilla von Zöbing, d. 1603-01-17
+<https://www.wikidata.org/wiki/Q94621664> # -> Rudolf
+  # Rudolf II. Freiherr Wurmbrand von Stuppach, 1567 - 1625
+  gen:father <https://www.wikidata.org/wiki/Q94505620> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110363555> .
+
+
+# Ehrenreich
+<https://www.wikidata.org/wiki/Q94505662>
+  # Ehrenreich Freiherr Wurmbrand von Stuppach, 1558 – 1620
+  # Freiherr Wurmbrand von Stuppach 1607
+  gen:father <https://www.wikidata.org/wiki/Q94505620> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110363555> .
+  # oo Dorothea Zwickl von Weyer und Hainfeld auf Friedau, d. 1631-11-20a
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q94505662> , <https://www.wikidata.org/wiki/Q109686877> ;
+	gen:startDate "1588-10-28" .
+
+<https://www.wikidata.org/wiki/Q94505762>
+  # Johann Ernst Ehrenreich Freiherr Wurmbrand von Stuppach, 1606 - 1691-01-22
+  # Graf 1682
+  gen:father <https://www.wikidata.org/wiki/Q94505662> ;
+  gen:mother <https://www.wikidata.org/wiki/Q109686877> .
+  # oo Johanna Eustachia Gräfin von Althann, 1610 - 1677-02-04
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q94505762> , <https://www.wikidata.org/wiki/Q109686879> ;
+	gen:startDate "1635-04-22" .
+
+<https://www.wikidata.org/wiki/Q109686874>
+  # Johann Eustach Graf Wurmbrand von Stuppach, 1642-05-06 - 1687-10-05
+  gen:father <https://www.wikidata.org/wiki/Q94505762> ;
+  gen:mother <https://www.wikidata.org/wiki/Q109686879> .
+  # oo Maria Isabella (Elisabeth) Freiin Speidel von Vatersdorf, 1647-02-02 - 1709-10-11
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q109686874> , <https://www.wikidata.org/wiki/Q109686882> ;
+	gen:startDate "1669-01-19" .
+<#Anna_Magdalena_von_Wurmbrand-Stuppach>
+  # Anna Magdalena Gräfin von Wurmbrand-Stuppach, 1648b - 1676-10-24a
+  gen:father <https://www.wikidata.org/wiki/Q94505762> ;
+  gen:mother <https://www.wikidata.org/wiki/Q109686879> .
+  # oo 1670 Johann Christoph Graf von Windisch-Graetz, d. 1682-11-29, windisch-graetz.ttl#Johann_Christoph_von_Windisch-Graetz
+<#Maria_Katharina_von_Wurmbrand-Stuppach>
+  # Maria Katharina Gräfin von Wurmbrand-Stuppach, 1649 - 1725-02-24
+  gen:father <https://www.wikidata.org/wiki/Q94505762> ;
+  gen:mother <https://www.wikidata.org/wiki/Q109686879> .
+  # oo 1688-03-31 Gotthard Quintin Graf von Tattenbach Freiherr zu Ganowitz, #Gotthard_von_Tattenbach
+
+<https://www.wikidata.org/wiki/Q55127502> # Ältere Linie
+  # Johann Joseph _Wilhelm_ Graf Wurmbrand von Stuppach, 1670-02-18 - 1750-12-27
+  # Reichsgraf 1701
+  gen:father <https://www.wikidata.org/wiki/Q109686874> ;
+  gen:mother <https://www.wikidata.org/wiki/Q109686882> .
+  # oo Susanna Sophia Maria Freiin/Gräfin von Prösing, 1673-08-19 - 1700-03-06
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q55127502> , <https://www.wikidata.org/wiki/Q76361733> ;
+	gen:startDate "1694-03-15" .
+  # oo Juliana Dorothea Luise Schenkin von Limpurg-Gaildorf, 1677-05-10 - 1734-10-04
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q55127502> , <https://www.wikidata.org/wiki/Q76361732> ;
+	gen:startDate "1700-10-05" .
+  # oo Maria Dominica Gräfin von Starhemberg, 1700-12-20 - 1736-02-29
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q55127502> , <https://www.wikidata.org/wiki/Q76361736> ;
+	gen:startDate "1735-01-11" .
+  # oo Bonaventura Gräfin von Starhemberg, 1692-11-16 - 1740-05-27
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q55127502> , <starhemberg.ttl#Bonaventura_von_Starhemberg> ;
+	gen:startDate "1736-10-29" .
+  # oo Maria Anna Cecilia Catharina Gräfin von Auersperg, 1712-07-25 - 1780-04-11
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q55127502> , <auersperg.ttl#Maria_Anna_Cecilia_von_Auersperg> ;
+	gen:startDate "1740-08-29" .
+<https://www.wikidata.org/wiki/Q44192631>
+  # Christian Sigismund Graf von Wurmbrand-Stuppach, 1673-10-09 - 1737-07-21
+  gen:father <https://www.wikidata.org/wiki/Q109686874> ;
+  gen:mother <https://www.wikidata.org/wiki/Q109686882> .
+  # oo Anna Sibylla Gräfin zu Wied, 1686-04-08 - 1722-10-13
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q44192631> , <runkel.ttl#Anna_Sibylla_zu_Wied> ;
+	gen:startDate "1715-08-28" .
+<#Anna_Theresia_von_Wurmbrand-Stuppach>
+  # Anna Theresia Gräfin von Wurmbrand-Stuppach, 1686-09-30 - 1711-03-29
+  gen:father <https://www.wikidata.org/wiki/Q109686874> ;
+  gen:mother <https://www.wikidata.org/wiki/Q109686882> .
+  # oo 1707-01-16 Christoph Ehrenreich Graf von Windisch-Grätz, d. 1732-02-12
+
+
+<https://www.wikidata.org/wiki/Q76265064>
+  # Esther Maria Polyxena Gräfin von Wurmbrand-Stuppach, 1696-12-17 - 1755-03-14
+  gen:father <https://www.wikidata.org/wiki/Q55127502> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76361733> .
+  # oo 1717-05-26 Casimir, Graf zu Sayn-Wittgenstein-Berleburg, 1687-01-31 - 1741-06-05, https://www.wikidata.org/wiki/Q31191819 (sponheim.ttl)
+<https://www.wikidata.org/wiki/Q76265071>
+  # Anna Christine Eleonore Gräfin von Wurmbrand-Stuppach, 1699-03-13 - 1763-01-04
+  gen:father <https://www.wikidata.org/wiki/Q55127502> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76361733> .
+  # oo 1723-11-26 Friedrich Magnus, Graf von Leiningen-Dagsburg-Hardenburg, 1703-03-27 - 1756-08-28, https://www.wikidata.org/wiki/Q11923062
+<https://www.wikidata.org/wiki/Q76265070>
+  # Maria Anna Magdalena Gräfin von Wurmbrand-Stuppach, 1702-07-02 - 1756-12-14
+  gen:father <https://www.wikidata.org/wiki/Q55127502> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76361732> .
+  # oo 1722-10-05 Wilhelm Carl Ludwig, Graf zu Solms-Rödelheim und Assenheim, 1699-02-03 - 1778-08-27, https://www.wikidata.org/wiki/Q31191203
+<https://www.wikidata.org/wiki/Q94527142>
+  # Gundackar Thomas Franz de Paula Johann Nepomuk Leonhard David Graf Wurmbrand von Stuppach, 1735-12-30 - 1791-05-10
+  # Teil der Grafschaft Limpurg 1774/75
+  gen:father <https://www.wikidata.org/wiki/Q55127502> ;
+  gen:mother <https://www.wikidata.org/wiki/Q76361736> .
+  # oo Maria Antonia Prinzessin von Auersperg, 1739-09-30 - 1816-06-30
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q94527142> , <https://www.wikidata.org/wiki/Q109686555> ;
+	gen:startDate "1755-01-12" .
+
+<https://www.wikidata.org/wiki/Q95122657>
+  # Heinrich Wilhelm _Gundaccar_ Vincenz Ferrerius Franz Xaver Anton de Padua Josef Aloys Felix Ferdinand Graf von Wurmbrand-Stuppach, 1762-05-30 - 1847-04-20
+  # Graf von Wurmbrand-Stuppach 1791-05-10
+  gen:father <https://www.wikidata.org/wiki/Q94527142> ;
+  gen:mother <https://www.wikidata.org/wiki/Q109686555> .
+  # oo Josepha Freiin von Ledebur-Wicheln, 1776-09-04 - 1800-06-16 (czernin.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q95122657> , <https://www.wikidata.org/wiki/Q109686559> ;
+	gen:startDate "1794-03-02" .
+  # oo Maria Sidonia Freiin von Ledebur-Wicheln, 1774-10-12 - 1833-04-28 (czernin.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q95122657> , <https://www.wikidata.org/wiki/Q109687243> ;
+	gen:startDate "1801-04-07" .
+  # oo Maria Maximiliana Gräfin von Wurmbrand, 1770-01-31 - 1838-01-13 (trauttmansdorff.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q95122657> , <https://www.wikidata.org/wiki/Q110363498> ;
+	gen:startDate "1834-02-02" .
+<#Marie_Wilhelmine_Wurmbrand-Stuppach>
+  # Marie Wilhelmine Rosalia Vincentia Gräfin Wurmbrand von Stuppach, 1764-09-03 - 1851-02-20
+  gen:father <https://www.wikidata.org/wiki/Q94527142> ;
+  gen:mother <https://www.wikidata.org/wiki/Q109686555> .
+  # oo 1786-02-20 Anton Graf Leslie, 19th of Balquhain, 1734-02-20 - 1802-02-22, leslie.ttl#Anton_Graf_Leslie,_19th_of_Balquhain
+
+<https://www.wikidata.org/wiki/Q109686527>
+  # Franziska de Paula Sydonia Christiana Gräfin von Wurmbrand-Stuppach, 1797-01-02 - 1873-05-07
+  gen:father <https://www.wikidata.org/wiki/Q95122657> ;
+  gen:mother <https://www.wikidata.org/wiki/Q109687243> .
+  # oo 1824-03-18 Lajos Graf Széchényi von Sárvár-Felsövidék, 1781-11-06 - 1855-02-06, https://www.wikidata.org/wiki/Q25467264
+<#Aloysia_von_Wurmbrand-Stuppach>
+  # Aloysia Franziska Josefa Gräfin von Wurmbrand-Stuppach, 1802-01-18 - 1870-03-04
+  gen:father <https://www.wikidata.org/wiki/Q95122657> ;
+  gen:mother <https://www.wikidata.org/wiki/Q109687243> .
+  # oo 1826-06-17 Otto Franz Graf von und zu Fünfkirchen, 1800-03-19 - 1872-04-06, https://www.wikidata.org/wiki/Q1721698 (harrach.ttl)
+<https://www.wikidata.org/wiki/Q107183164>
+  # Ernst Heinrich Gundaccar Kaspar Gregor Johann Nepomuk Erbgraf von Wurmbrand-Stuppach, 1804-03-12 - 1846-12-09
+  gen:father <https://www.wikidata.org/wiki/Q95122657> ;
+  gen:mother <https://www.wikidata.org/wiki/Q109687243> .
+  # oo Rosa Gräfin Teleki von Szék, 1818-10-18 - 1890-06-30, daughter of Ferenc Graf Teleki de Szék and Erzsébet Baronesse Bánffy de Losoncz
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q107183164> , <#Rosa_Teleki_von_Szék> ;
+	gen:startDate "1834-09-25" .
+<https://www.wikidata.org/wiki/Q94524245>
+  # Johann Baptist _Wilhelm_ Simon Laurentius Justinian Graf von Wurmbrand-Stuppach, 1806-09-05 - 1884-09-08
+  gen:father <https://www.wikidata.org/wiki/Q95122657> ;
+  gen:mother <https://www.wikidata.org/wiki/Q109687243> .
+  # oo Bertha Gräfin von Nostitz-Rieneck, 1816-01-03 - 1888-09-08
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q94524245> , <nostitz.ttl#Bertha_von_Nostitz-Rieneck> ;
+	gen:startDate "1834-11-16" .
+<https://www.wikidata.org/wiki/Q94527343>
+  # Ferdinand Heinrich August Kaspar Eduard Josef Graf von Wurmbrand-Stuppach, 1807-10-15 - 1886-05-26
+  gen:father <https://www.wikidata.org/wiki/Q95122657> ;
+  gen:mother <https://www.wikidata.org/wiki/Q109687243> .
+  # oo Alojzia Gräfin Széchényi de Sárvár-Felsövidék, 1807-08-21 - 1842-03-03
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q94527343> , <https://www.wikidata.org/wiki/Q109687248> ;
+	gen:startDate "1833-10-29" .
+  # oo Alexandrina Catharina Francisca Josepha Gräfin Amadé de Várkony, 1814-07-09 - 1894-12-05, daughter of Franz Seraphin Graf Amadé de Várkony and Josepha Gräfin von Payersberg
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q94527343> , <#Alexandrina_Amadé_de_Várkony> ;
+	gen:startDate "1846-07-16" .
+
+<https://www.wikidata.org/wiki/Q107182082>
+  # _Ferdinand Gundaccar_ Joseph Graf von Wurmbrand-Stuppach, 1835-07-23 - 1896-05-22
+  # Graf von Wurmbrand-Stuppach 1847-04-20
+  gen:father <https://www.wikidata.org/wiki/Q107183164> ;
+  gen:mother <#Rosa_Teleki_von_Szék> .
+  # oo Anna Gabrielle de Mignot Gräfin von Bussy, 1836-02-20 - 1904-08-08, daughter of Markus de Mignot Graf von Bussy and Katharina Freiin von Bartenstein
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q107182082> , <#Gabrielle_de_Mignot> ;
+	gen:startDate "1861-10-21" ;
+	gen:divorceDate "1876" .
+<https://www.wikidata.org/wiki/Q94692096>
+  owl:sameAs <https://www.wikidata.org/wiki/Q112001323> ;
+  # Heinrich Gundaccar Franz von Paula Alois Ferdinand Graf von Wurmbrand-Stuppach, 1834-12-05 - 1887-03-04
+  gen:father <https://www.wikidata.org/wiki/Q94527343> ;
+  gen:mother <https://www.wikidata.org/wiki/Q109687248> .
+  # oo Eugenie Gräfin von Schönborn-Buchheim, 1841-02-11 - 1885-05-04
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q94692096> , <https://www.wikidata.org/wiki/Q112001352> ;
+	gen:startDate "1862-03-17" .
+
+<#Ernst_von_Wurmbrand-Stuppach>
+  # Ernst Ehrenreich Marcus Maria Victor Gundaker Graf von Wurmbrand-Stuppach, 1866-03-16 - 1924-01-12
+  gen:father <https://www.wikidata.org/wiki/Q107182082> ;
+  gen:mother <#Gabrielle_de_Mignot> .
+  # oo Elisabeth Prinzessin von Schönburg-Waldenburg, 1864-04-27 - 1949-01-31
+  []
+    gen:spouse <#Ernst_von_Wurmbrand-Stuppach> , <schönburg.ttl#Elisabeth_von_Schönburg-Waldenburg> ;
+	gen:startDate "1894-02-06" ;
+	gen:divorceDate "1911" .
+<#Karl_Erwin_von_Wurmbrand-Stuppach>
+  # Karl Erwin Gundaccar Graf von Wurmbrand-Stuppach, 1866-05-30 - 1942-01-22
+  gen:father <https://www.wikidata.org/wiki/Q94692096> ;
+  gen:mother <https://www.wikidata.org/wiki/Q112001352> .
+  # oo Caroline Gräfin von Nostitz-Rieneck, 1876-01-29 - 1950-01-06
+  []
+    gen:spouse <#Karl_Erwin_von_Wurmbrand-Stuppach> , <https://www.wikidata.org/wiki/Q76369000> ;
+	gen:startDate "1895-06-10" ;
+	gen:divorceDate "1916-04-11" .
+<https://www.wikidata.org/wiki/Q75377785>
+  # Anna Aloysia Eugenia Henriette Gräfin von Wurmbrand-Stuppach, 1868-04-23 - 1938-03-02
+  gen:father <https://www.wikidata.org/wiki/Q94692096> ;
+  gen:mother <https://www.wikidata.org/wiki/Q112001352> .
+  # oo 1889-06-17 Johann Graf von Schönborn, 1864-04-03 - 1912-06-07, https://www.wikidata.org/wiki/Q75377783
+
+
+# Rudolf
+<https://www.wikidata.org/wiki/Q94621664>
+  # Rudolf II. Freiherr Wurmbrand von Stuppach, 1567 - 1625
+  # Freiherr Wurmbrand von Stuppach 1607
+  gen:father <https://www.wikidata.org/wiki/Q94505620> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110363555> .
+  # oo Elisabeth von Lamberg, d. 1630-05-01
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q94621664> , <https://www.wikidata.org/wiki/Q110363558> ;
+	gen:startDate "1610-02-21" .
+
+<https://www.wikidata.org/wiki/Q110363549>
+  # Georg Andreas Graf von Wurmbrand-Stuppach, d. 1680-09-17
+  gen:father <https://www.wikidata.org/wiki/Q94621664> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110363558> .
+  # oo Maria Susanna Freiin von Cronegk, d. 1682-11-24
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110363549> , <https://www.wikidata.org/wiki/Q110363562> ;
+	gen:startDate "1642-02-17" .
+
+<https://www.wikidata.org/wiki/Q110363547> # -> Linie Schielleiten
+  # Georg Andreas 'der Jüngere' Graf von Wurmbrand-Stuppach, 1648-09-30 - 1702-06-26
+  gen:father <https://www.wikidata.org/wiki/Q110363549> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110363562> .
+<https://www.wikidata.org/wiki/Q110370725> # -> Linie Reitenau
+  # Wolfgang Friedrich Graf von Wurmbrand-Stuppach, 1652 - 1704-08-07
+  gen:father <https://www.wikidata.org/wiki/Q110363549> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110363562> .
+<https://www.wikidata.org/wiki/Q110369821>
+  # Maria Regina Gräfin von Wurmbrand und Stuppach, 1659-06-03 - 1715-04-24
+  gen:father <https://www.wikidata.org/wiki/Q110363549> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110363562> .
+  # oo 1685-02-05 Ignaz Maria Graf von Attems, 1652-08-15 - 1732-12-11, https://www.wikidata.org/wiki/Q94761696 (waldburg.ttl)
+
+
+# Linie Schielleiten
+<https://www.wikidata.org/wiki/Q110363547>
+  # Georg Andreas 'der Jüngere' Graf von Wurmbrand-Stuppach, 1648-09-30 - 1702-06-26
+  gen:father <https://www.wikidata.org/wiki/Q110363549> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110363562> .
+  # oo Maria Anna Gräfin Galler von Schwarzeneg, 1656 - 1713-04-28 (herberstein.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110363547> , <https://www.wikidata.org/wiki/Q110363565> ;
+	gen:startDate "1675-02-14" .
+
+<https://www.wikidata.org/wiki/Q110363535>
+  # Rudolf Christian Maximilian Graf von Wurmbrand-Stuppach, 1682-10-17 - 1731-01-17
+  gen:father <https://www.wikidata.org/wiki/Q110363547> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110363565> .
+  # oo Maria Josefa Gräfin von Trauttmansdorff zum Freienthurn, 1697-04-21 - 1764-10-06
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110363535> , <https://www.wikidata.org/wiki/Q110363536> ;
+	gen:startDate "1717-05-12" .
+
+<https://www.wikidata.org/wiki/Q109830614>
+  # Georg Ehrenreich Graf von Wurmbrand-Stuppach, 1719-05-14 - 1786-05-17
+  # Maximilian Honorius Franz Johann Joseph Georg Andreas
+  gen:father <https://www.wikidata.org/wiki/Q110363535> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110363536> .
+  # oo Maria Anna Gräfin von Orsini und Rosenberg, 1717-12-10 - 1760-12-06 (rosenberg.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q109830614> , <https://www.wikidata.org/wiki/Q109830615> ;
+	gen:startDate "1743-11-12" .
+
+<https://www.wikidata.org/wiki/Q109830612>
+  # Maria _Philipp_ Nerius Kajetan Franz de Paula Joseph Johann Nepomuk Judas Thaddäus Aloys Graf von Wurmbrand-Stuppach, 1744-09-25b - 1813-04-18
+  gen:father <https://www.wikidata.org/wiki/Q109830614> ;
+  gen:mother <https://www.wikidata.org/wiki/Q109830615> .
+  # oo Maria Anna Gräfin und Herrin zu Stubenberg, 1745-08-05 - 1810-04-08
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q109830612> , <https://www.wikidata.org/wiki/Q109830616> ;
+	gen:startDate "1767-08-29" .
+
+<https://www.wikidata.org/wiki/Q110363498>
+  # Maria Maximiliana Ferdinandina Josepha Seraphina Johanna Nepomucena Gräfin von Wurmbrand, 1770-01-31 - 1838-01-13
+  gen:father <https://www.wikidata.org/wiki/Q109830612> ;
+  gen:mother <https://www.wikidata.org/wiki/Q109830616> .
+  # oo 1787-08-26 Karl Graf von Seilern und Aspang, 1756-11-30 - 1806-05-05, https://www.wikidata.org/wiki/Q110363492
+  # oo 1834-02-02 Gundaccar Graf von Wurmbrand-Stuppach, 1762-05-30 - 1847-04-20, https://www.wikidata.org/wiki/Q95122657
+<https://www.wikidata.org/wiki/Q105799532>
+  # Johanna Nepomucena Gräfin von Wurmbrand-Stuppach, 1774-01-04 - 1834-07-28
+  gen:father <https://www.wikidata.org/wiki/Q109830612> ;
+  gen:mother <https://www.wikidata.org/wiki/Q109830616> .
+  # oo 1791-07-20 Leopold Gotthard Graf Schaffgotsch genannt Semperfrei von und zu Kynast und Greiffenstein, 1764-11-02 - 1834-01-24, https://www.wikidata.org/wiki/Q105799531
+
+
+# Linie Reitenau
+<https://www.wikidata.org/wiki/Q110370725>
+  owl:sameAs <https://www.wikidata.org/wiki/Q95124003> ;
+  # Wolfgang Friedrich Graf von Wurmbrand-Stuppach, 1652 - 1704-08-07
+  gen:father <https://www.wikidata.org/wiki/Q110363549> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110363562> .
+  # oo Maria Anna Gräfin Kollonitz von Kollegrad, 1662-03-05 - 1735-03-15
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110370725> , <https://www.wikidata.org/wiki/Q110370727> ;
+	gen:startDate "1682-04-19" .
+
+<#Johann_Joseph_von_Wurmbrand-Stuppach>
+  # Johann Joseph Graf von Wurmbrand-Stuppach, 1688-05-04 - 1750-12-21
+  gen:father <https://www.wikidata.org/wiki/Q110370725> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110370727> .
+  # oo Rosina Gräfin von Khevenhüller, 1694-04-22 - 1759-03-13
+  []
+    gen:spouse <#Johann_Joseph_von_Wurmbrand-Stuppach> , <khevenhüller.ttl#Rosina_von_Khevenhüller> ;
+	gen:startDate "1714-04-28" .
+<#Franz_Karl_von_Wurmbrand-Stuppach>
+  # Franz Karl Graf von Wurmbrand-Stuppach, 1695-02-10b - 1768-09-12
+  gen:father <https://www.wikidata.org/wiki/Q110370725> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110370727> .
+  # oo Maria Josepha Gräfin von Herberstein, 1700-03-23 - 1766-08-10
+  []
+    gen:spouse <#Franz_Karl_von_Wurmbrand-Stuppach> , <herberstein.ttl#Maria_Josepha_von_Herberstein> ;
+	gen:startDate "1721-02-19" .
+<https://www.wikidata.org/wiki/Q110370724>
+  # Leopold Sigmund Graf von Wurmbrand-Stuppach, 1701-02-05 - 1759-10-18
+  gen:father <https://www.wikidata.org/wiki/Q110370725> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110370727> .
+  # oo Maria Anna Gräfin von und zu Wildenstein, 1700-02-17 - 1790-01-01 (trauttmansdorff.ttl)
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q110370724> , <https://www.wikidata.org/wiki/Q110370730> ;
+	gen:startDate "1731-07-28" .
+
+<#Josef_Rudolf_von_Wurmbrand-Stuppach>
+  # Josef Rudolf Franz Xaver Johann Nepomuk Barnabas Graf von Wurmbrand-Stuppach, 1724-06-11 - 1779-04-20
+  gen:father <#Franz_Karl_von_Wurmbrand-Stuppach> ;
+  gen:mother <herberstein.ttl#Maria_Josepha_von_Herberstein> .
+  # oo Maria Eleonora Gräfin Breunner zu Asparn, 1731-10-15 - 1754-07-17
+  []
+    gen:spouse <#Josef_Rudolf_von_Wurmbrand-Stuppach> , <breunner.ttl#Maria_Eleonora_Breunner-Asparn> ;
+	gen:startDate "1752-06-27" .
+  # oo Karola Gräfin von Clary und Aldringen, 1756-02-13 - 1843-01-16
+  []
+    gen:spouse <#Josef_Rudolf_von_Wurmbrand-Stuppach> , <clary.ttl#Karola_von_Clary-Aldringen> ;
+	gen:startDate "1772-01-09" .
+<https://www.wikidata.org/wiki/Q110370606>
+  # Maria Anna Josefa Antonia Gräfin von Wurmbrand-Stuppach, 1733-07-08 - 1807-03-01
+  gen:father <https://www.wikidata.org/wiki/Q110370724> ;
+  gen:mother <https://www.wikidata.org/wiki/Q110370730> .
+  # oo 1751-02-21 Weikhard Josef Graf von und zu Trauttmansdorff-Weinsberg, 1711-05-19 - 1788-05-11, https://www.wikidata.org/wiki/Q106393818
+
+<https://www.wikidata.org/wiki/Q1447610>
+  # Franz Joseph Johann Nepomuzen Graf von Wurmbrand-Stuppach, 1753-06-09 - 1801-06-01
+  gen:father <#Josef_Rudolf_von_Wurmbrand-Stuppach> ;
+  gen:mother <breunner.ttl#Maria_Eleonora_Breunner-Asparn> .
+  # oo Maria Anna Gräfin von Auersperg, 1765 - 1828
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q1447610> , <auersperg.ttl#Maria_Anna_von_Auersperg> ;
+	gen:startDate "1782-08-19" .
+
+<https://www.wikidata.org/wiki/Q94527048>
+  # Franz Karl Graf von Wurmbrand-Stuppach, 1790-01-27 - 1855-01-19
+  gen:father <https://www.wikidata.org/wiki/Q1447610> ;
+  gen:mother <auersperg.ttl#Maria_Anna_von_Auersperg> .
+  # oo Maria Kajetana Aloisia Anna Franziska Apollonia Seraphina Gräfin zu Gleispach, 1792-02-09 - 1863-03-13, daughter of Karl Friedrich Leopold Josef Seraphikus Graf zu Gleispach and Franziska Salesia Maria Kajetana Seraphina Andrea Avellina Gräfin Sauer von Kosiak Freiin zu Ankenstein
+  []
+    gen:spouse <https://www.wikidata.org/wiki/Q94527048> , <#Maria_Kajetana_zu_Gleispach> ;
+	gen:startDate "1812-01-22" .
+
+<#Ottilia_von_Wurmbrand-Stuppach>
+  # Ottilia Kunigunda Maria Leodegaria Gräfin von Wurmbrand-Stuppach, 1819-10-02 - 1892-02-03
+  gen:father <https://www.wikidata.org/wiki/Q94527048> ;
+  gen:mother <#Maria_Kajetana_zu_Gleispach> .
+  # oo 1844-09-14 Ferdinand Fürst von Orsini und Rosenberg, 1790-09-07 - 1859-06-18, https://www.wikidata.org/wiki/Q55858207
+<#Gabriela_von_Wurmbrand-Stuppach>
+  # Gabriela Maria Karola Theresia Gertrud Raimunda Gräfin von Wurmbrand-Stuppach, 1822-08-31 - 1887-11-28
+  gen:father <https://www.wikidata.org/wiki/Q94527048> ;
+  gen:mother <#Maria_Kajetana_zu_Gleispach> .
+  # oo 1842-06-11 Ferdinand Graf von Attems, 1809-12-04 - 1878-11-27, https://www.wikidata.org/wiki/Q100327235 (waldburg.ttl)
+
+
+# ----
+<https://www.wikidata.org/wiki/Q109686882>
+  # Maria Isabella (Elisabeth) Freiin Speidel von Vatersdorf, 1647-02-02 - 1709-10-11
+  gen:father <https://www.wikidata.org/wiki/Q109686884> ; # Siegmund Speidl Freiherr von Vatersdorff
+  gen:mother <https://www.wikidata.org/wiki/Q109686887> . # Magdalena von Cronegg
+  # oo 1669-01-19 Johann Eustach Graf Wurmbrand von Stuppach, 1642-05-06 - 1687-10-05, https://www.wikidata.org/wiki/Q109686874
+
+# ----
+#<#Gotthard_von_Tattenbach>
+  # Gotthard Quintin Graf von Tattenbach Freiherr zu Ganowitz
+  # oo Maria Katharina Gräfin von Wurmbrand-Stuppach, 1649 - 1725-02-24
+  []
+    gen:spouse <#Gotthard_von_Tattenbach> , <#Maria_Katharina_von_Wurmbrand-Stuppach> ;
+	gen:startDate "1688-03-31" .
+
+<#Juliane_von_Tattenbach>
+  # Juliane Rebekka Gräfin von Tattenbach, 1692-08-31 - 1739-09-10
+  gen:father <#Gotthard_von_Tattenbach> ;
+  gen:mother <#Maria_Katharina_von_Wurmbrand-Stuppach> .
+  # oo 1715-03-31 Heinrich XXVI. Graf Reuß zu Lobenstein, 1681-12-16 - 1730-06-21, https://www.wikidata.org/wiki/Q102118193
+
+# ----
+<https://www.wikidata.org/wiki/Q76361733>
+  # Susanna Sophia Maria Freiin/Gräfin von Prösing, 1673-08-19 - 1700-03-06
+  gen:father <https://www.wikidata.org/wiki/Q75243659> ; # Wolfgang Ehrenreich Freiherr von Prösing-Stein
+  gen:mother <https://www.wikidata.org/wiki/Q110458538> . # Susanne Eleonore von Polheim
+  # oo 1694-03-15 Wilhelm Graf Wurmbrand von Stuppach, 1670-02-18 - 1750-12-27, https://www.wikidata.org/wiki/Q55127502
+
+# ----
+<https://www.wikidata.org/wiki/Q110363562>
+  # Maria Susanna Freiin von Cronegk, d. 1682-11-24
+  gen:father <https://www.wikidata.org/wiki/Q110363563> ; # Johann Wilhelm von Cronegg Freiherr auf Moosburg
+  gen:mother <https://www.wikidata.org/wiki/Q110363564> . # Elisabeth Cremmer von Königshofen
+  # oo 1642-02-17 Georg Andreas Graf von Wurmbrand-Stuppach, d. 1680-09-17, https://www.wikidata.org/wiki/Q110363549
